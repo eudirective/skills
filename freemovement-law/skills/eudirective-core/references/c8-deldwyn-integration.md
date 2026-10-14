@@ -6,7 +6,7 @@
 
 ## 1. Activated source
 
-Source `eu:62024cj0477`, *Deldwyn*, C-477/24, ECLI:EU:C:2026:182, was decided on 12 March 2026. The 0.6.1 compatibility copy is maintained outside the skill under the source library's compatibility area and is used only for synthetic replay and its pinned digest check. Retrieve and verify the current representation from the registered EU source-library pack before relying on it. The old C1 0.6.x catalogues remain compatibility metadata, not the current inventory.
+Source `eu:62024cj0477`, *Deldwyn*, C-477/24, ECLI:EU:C:2026:182, was decided on 12 March 2026. The C1 0.6.1 test fixture is maintained under `skills/eudirective-core/tests/fixtures/core-source-pack-0.6.1/` and is used only for synthetic replay and its pinned digest check. Retrieve and verify the current representation from the registered EU source-library pack before relying on it. The old C1 0.6.x catalogues remain compatibility metadata, not the current inventory.
 
 The judgment Markdown originated from the user's PDF, whose case identity was cross-checked with EUR-Lex in the prior conversion. No independent public-server binary comparison of the supplied PDF is claimed.
 

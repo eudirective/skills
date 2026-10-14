@@ -1,6 +1,6 @@
 # C18 — Active source identity, targeted correction and persistent gaps
 
-The retained C1 0.6.1 compatibility manifest is bundled at `../eudirective-source-library/compatibility/core-source-pack/core-source-pack-0.6.1/core-source-pack-manifest-0.6.1.json`. It contains 46 logical sources represented by 47 local files. Run `scripts/verify_bundled_source_pack.py` for exact local bytes and `scripts/c18_source_integrity.py` for a source-by-source content-extent register. Both gates are deterministic and perform no network access. The C6 synthetic intake refuses older source manifests.
+The retained C1 0.6.1 compatibility manifest is bundled at `../tests/fixtures/core-source-pack-0.6.1/core-source-pack-manifest-0.6.1.json`. It contains 46 logical sources represented by 47 local files. Run `scripts/verify_bundled_source_pack.py` for exact local bytes and `scripts/c18_source_integrity.py` for a source-by-source content-extent register. Both gates are deterministic and perform no network access. The C6 synthetic intake refuses older source manifests.
 
 ## Document restoration
 

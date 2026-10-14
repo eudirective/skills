@@ -44,8 +44,9 @@ Restart the desktop app and install the plugin from that personal marketplace.
 
 ## Bundled source library
 
-The source corpus, manifests, module notes, and source-maintenance material are
-under `skills/eudirective-source-library/`. The core, Sweden, and Türkiye
-skills resolve their compatibility files and module notes from this bundled
-directory. The corpus is maintained upstream; source changes arrive through the
+The current source corpus, manifests, module notes, and source-maintenance material are
+under `skills/eudirective-source-library/`. The historical C1 compatibility test fixture
+is under `skills/eudirective-core/tests/fixtures/core-source-pack-0.6.1/`. The core
+skill resolves the fixture there; core, Sweden, and Türkiye resolve current source and
+module notes from the bundled source-library directory. The corpus is maintained upstream; source changes arrive through the
 repository mirror and a refreshed plugin package.

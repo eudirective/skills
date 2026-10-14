@@ -32,4 +32,4 @@ L1, L4, L5 remain enrolled unchanged: direct-consular access, Swedish visa appea
 **Enforcement:** all C16 extensions are typed JSON data with frozen C3 module-export digests; there are no country-to-country calls, legal decisions, live external writes or private-case inputs.
 
 ## C18 correction (2026-10-10)
-The historical warning above applies to the archived v0.6.0 source. Active v0.6.1 restores Article 2(2)(a) from an official HTML passage check. The rest of the source pack and national-law coverage have not been independently verified; do not infer legal merits from the local repair.
+The historical warning above applies to the archived v0.6.0 source. The C1 v0.6.1 test fixture contains Article 2(2)(a) from an official HTML passage check. The rest of the source pack and national-law coverage have not been independently verified; do not infer legal merits from the local repair.
