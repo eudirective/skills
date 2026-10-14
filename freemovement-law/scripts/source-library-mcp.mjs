@@ -7,7 +7,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const PLUGIN_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const PLUGIN_NAME = 'eudirective-c26';
+const PLUGIN_NAME = 'freemovement-law';
 const PLUGIN_PARENT = path.dirname(PLUGIN_ROOT);
 const VERSION_CACHE_INSTALL = path.basename(PLUGIN_PARENT).toLowerCase() === PLUGIN_NAME;
 const INSTALL_HOME = VERSION_CACHE_INSTALL ? PLUGIN_PARENT : PLUGIN_ROOT;

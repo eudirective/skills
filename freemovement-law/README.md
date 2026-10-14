@@ -15,7 +15,7 @@ It does not require the developer's project folder or a user-specific path.
 
 ## Personal installation
 
-Copy this plugin folder to `~/.codex/plugins/eudirective-c26` and add an entry
+Copy this plugin folder to `~/.codex/plugins/freemovement-law` and add an entry
 like this to `~/.agents/plugins/marketplace.json`:
 
 ```json
@@ -23,10 +23,10 @@ like this to `~/.agents/plugins/marketplace.json`:
   "name": "eudirective-local",
   "plugins": [
     {
-      "name": "eudirective-c26",
+      "name": "freemovement-law",
       "source": {
         "source": "local",
-        "path": "./.codex/plugins/eudirective-c26"
+        "path": "./.codex/plugins/freemovement-law"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -62,5 +62,5 @@ From the project checkout, rebuild the packaged retrieval runtime after
 changing source registries or retrieval scripts:
 
 ```powershell
-node .agents/plugins/eudirective-c26/scripts/build-source-runtime.mjs
+node .agents/plugins/freemovement-law/scripts/build-source-runtime.mjs
 ```
