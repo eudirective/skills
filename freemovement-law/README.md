@@ -1,17 +1,19 @@
 # freemovement-law
 
-This package provides the eudirective skills and a local MCP bridge to the
-registered EU and national legal-source packs.
+This package provides the eudirective skills and an externally maintained EU
+and national legal-source library, mirrored into the plugin package.
 
 ## Requirements
 
-- Codex or ChatGPT Desktop with local plugin marketplace support.
-- Node.js 20 or later with npm on `PATH`.
-- Network access to npm for first-use dependency setup and to the registered
-  official publishers for retrieval and updates.
+- Codex or ChatGPT Desktop with plugin and skill support.
+- Network access when checking a source directly with its official publisher.
 
-The retrieval bridge uses only the source registries bundled in this package.
-It does not require the developer's project folder or a user-specific path.
+The source library is maintained in `eudirective/public-data` and mirrored into
+`skills/eudirective-source-library/` by the repository's scheduled workflow.
+Installed copies contain the corpus version present when they were packaged;
+they do not synchronize source changes after installation. For a legal claim
+that depends on currentness, check the responsible official publisher directly
+and report the publication/version date checked.
 
 ## Personal installation
 
@@ -39,28 +41,11 @@ like this to `~/.agents/plugins/marketplace.json`:
 ```
 
 Restart the desktop app and install the plugin from that personal marketplace.
-On the first source action, the bridge initializes the bundled scripts and
-registries, then installs the exact locked Node dependencies if they are
-missing.
 
-## Where retrieved files go
+## Bundled source library
 
-Each installation has a persistent `data/` directory inside its plugin
-installation folder. In the desktop version cache, `data/` sits beside the
-versioned plugin folder so updates keep the same source packs and change
-history. The EU and national packs, converted Markdown, raw snapshots, and
-update state are stored there. No source files are downloaded into the user's
-project folder.
-
-The plugin uses local stdio tools, so source retrieval is available only in a
-compatible desktop host that can run local Node processes. A workspace-hosted
-plugin installation on web or mobile cannot access a user's local filesystem.
-
-## Maintainer rebuild
-
-From the project checkout, rebuild the packaged retrieval runtime after
-changing source registries or retrieval scripts:
-
-```powershell
-node .agents/plugins/freemovement-law/scripts/build-source-runtime.mjs
-```
+The source corpus, manifests, module notes, and source-maintenance material are
+under `skills/eudirective-source-library/`. The core, Sweden, and Türkiye
+skills resolve their compatibility files and module notes from this bundled
+directory. The corpus is maintained upstream; source changes arrive through the
+repository mirror and a refreshed plugin package.

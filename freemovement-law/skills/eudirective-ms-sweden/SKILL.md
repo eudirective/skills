@@ -6,24 +6,24 @@ description: use when creating, inspecting or validating a sweden member-state l
 # eudirective-ms-sweden
 
 ## Version and Status
-- Current version: `0.6.0`
-- Last updated: `2026-10-12`
+- Current version: `0.7.0`
+- Last updated: `2026-10-14`
 - Versioning rule: patch for factual/source clarifications, minor for contract coverage/workflow changes, major for incompatible contracts.
 
 ## Version Disclosure
-In every visible report announce: `Skill: eudirective-ms-sweden v0.6.0`.
+In every visible report announce: `Skill: eudirective-ms-sweden v0.7.0`.
 
 ## Workflow
 1. Read `references/module-manifest.json` and `references/module-export.json`. Resolve scoped module notes from `sweden/module-notes/source-notes/` in the plugin source library; these notes are not full authoritative texts.
-2. For current Swedish law or procedure, use `list_source_packs`, then check or sync and verify the registered `sweden` or `sweden-guidance` pack through `run_source_pack_action`. Never use a compatibility note as current law.
+2. Resolve module notes and Swedish source records from the bundled eudirective-source-library skill. Check current law or procedure at the responsible official publisher; installed bundles are snapshots. Never use a compatibility note as current law.
 3. Run `python scripts/verify_source_notes.py` before consuming module data; it checks the compatibility-note bytes in the source library.
 4. Run core's `scripts/module_conformance.py` on the module manifest/export pair using the pinned C3 contract 0.2.0, protocol 0.3.0, model 0.2.0.
 5. Confirm relevant country roles, source note scope and case-specific dates. Do not silently turn `candidate_interpretation` into direct statutory text or promote an attack-angle candidate to established violation.
-6. Use verified official pack content for current legal or operational claims. Produce a source-gap/completeness statement.
+6. Use a current official publication for legal or operational claims, record the check date/version, and produce a source-gap/completeness statement. The bundled source corpus is externally maintained and mirrored into the plugin.
 7. Refer to an independent human/legal review for exact procedural deadlines, disputed legislation, authority competence and case merits.
 
 ## Assumptions and Unknowns
-- Module notes are NOT full authoritative text. Their hashes bind compatibility-note bytes only; current law must come from the source library's verified official pack or a current official publication.
+- Module notes are NOT full authoritative text. Their hashes bind compatibility-note bytes only; current law must come from a current official publication. The bundled source corpus is externally maintained and versioned.
 - This is C3 conformance plus narrowly enrolled, exact-content C10 fictional C6 fixtures (eight listed case contexts only); not a production-ready country source pack or a general C6 input license.
 - C6 private input, arbitrary C7 enrolment, external transmission and decision authorisation remain prohibited. Exact C10 fixture enrolment is limited to the core policy-approved fictional case and module hashes.
 - The core bundles 47 EU representations; complete current national-law texts are not bundled and require official re-verification.
