@@ -1,0 +1,911 @@
+{
+  "schema_version": 1,
+  "pack": "hungary-national-source-system",
+  "version": "0.1.0",
+  "research_date": "2026-10-11",
+  "scope": "Only Hungarian national material represented in the supplied Hungary/OIF archive. Shared EU law and CJEU decisions remain in the EU core packs.",
+  "official_hosts": [
+    "njt.hu",
+    "oif.gov.hu",
+    "kuria-birosag.hu",
+    "birosag.hu",
+    "naih.hu",
+    "ajbh.hu",
+    "njt.jog.gov.hu",
+    "www.naih.hu",
+    "www.ajbh.hu",
+    "eakta.birosag.hu"
+  ],
+  "discovery": [
+    {
+      "id": "njt-current-law-index",
+      "url": "https://njt.jog.gov.hu/eli/kereses",
+      "kind": "catalogue",
+      "publisher": "Nemzeti Jogszabálytár",
+      "language": "hu",
+      "category": "legislation"
+    },
+    {
+      "id": "oif-public-data",
+      "url": "https://oif.gov.hu/kozerdeku-adatok",
+      "kind": "catalogue",
+      "publisher": "Országos Idegenrendészeti Főigazgatóság",
+      "language": "hu",
+      "category": "public-data"
+    },
+    {
+      "id": "oif-operations",
+      "url": "https://oif.gov.hu/tajekoztatok/tevekenysegre-mukodesre-vonatkozo-adatok",
+      "kind": "catalogue",
+      "publisher": "Országos Idegenrendészeti Főigazgatóság",
+      "language": "hu",
+      "category": "procedure"
+    },
+    {
+      "id": "oif-finance",
+      "url": "https://oif.gov.hu/index.php/tajekoztatok/gazdalkodasi-adatok",
+      "kind": "catalogue",
+      "publisher": "Országos Idegenrendészeti Főigazgatóság",
+      "language": "hu",
+      "category": "finance"
+    },
+    {
+      "id": "oif-contracts",
+      "url": "https://oif.gov.hu/tajekoztatok/5-millio-forint-feletti-szerzodesek",
+      "kind": "catalogue",
+      "publisher": "Országos Idegenrendészeti Főigazgatóság",
+      "language": "hu",
+      "category": "contracts"
+    },
+    {
+      "id": "oif-statistics",
+      "url": "https://oif.gov.hu/statisztikak-kiadvanyfuzetek",
+      "kind": "catalogue",
+      "publisher": "Országos Idegenrendészeti Főigazgatóság",
+      "language": "hu",
+      "category": "statistics"
+    },
+    {
+      "id": "oif-organization",
+      "url": "https://oif.gov.hu/index.php/szervezeti-szemelyzeti-adatok",
+      "kind": "catalogue",
+      "publisher": "Országos Idegenrendészeti Főigazgatóság",
+      "language": "hu",
+      "category": "organization"
+    },
+    {
+      "id": "oif-rules-of-organization",
+      "url": "https://oif.gov.hu/szmsz",
+      "kind": "catalogue",
+      "publisher": "Országos Idegenrendészeti Főigazgatóság",
+      "language": "hu",
+      "category": "organization"
+    },
+    {
+      "id": "oif-data-protection-hub",
+      "url": "https://oif.gov.hu/adatvedelem",
+      "kind": "catalogue",
+      "publisher": "Országos Idegenrendészeti Főigazgatóság",
+      "language": "hu",
+      "category": "data-protection"
+    },
+    {
+      "id": "oif-information-transfer-rules",
+      "url": "https://oif.gov.hu/informacioatadasi-szabalyzat",
+      "kind": "catalogue",
+      "publisher": "Országos Idegenrendészeti Főigazgatóság",
+      "language": "hu",
+      "category": "data-sharing"
+    },
+    {
+      "id": "oif-procurement",
+      "url": "https://oif.gov.hu/tajekoztatok/kozbeszerzes",
+      "kind": "catalogue",
+      "publisher": "Országos Idegenrendészeti Főigazgatóság",
+      "language": "hu",
+      "category": "contracts"
+    },
+    {
+      "id": "oif-publication-list",
+      "url": "https://oif.gov.hu/index.php/altalanos-kozzeteteli-lista",
+      "kind": "catalogue",
+      "publisher": "Országos Idegenrendészeti Főigazgatóság",
+      "language": "hu",
+      "category": "public-data"
+    },
+    {
+      "id": "naih-public-information-procedures",
+      "url": "https://naih.hu/online-ugyinditas",
+      "kind": "catalogue",
+      "publisher": "Nemzeti Adatvédelmi és Információszabadság Hatóság",
+      "language": "hu",
+      "category": "remedies"
+    },
+    {
+      "id": "kuria-decisions",
+      "url": "https://kuria-birosag.hu/hu/kuriai-dontesek-kereses",
+      "kind": "case-law-catalogue",
+      "publisher": "Kúria",
+      "language": "hu",
+      "category": "case-law"
+    },
+    {
+      "id": "national-court-decisions",
+      "url": "https://eakta.birosag.hu/anonimizalt-hatarozatok",
+      "kind": "case-law-catalogue",
+      "publisher": "Országos Bírósági Hivatal",
+      "language": "hu",
+      "category": "case-law"
+    },
+    {
+      "id": "njt-laws-current-and-prior-years",
+      "url": "https://njt.jog.gov.hu/eli/TV/{year}",
+      "year_window": 3,
+      "kind": "catalogue",
+      "publisher": "Nemzeti Jogszabálytár",
+      "language": "hu",
+      "category": "legislation"
+    },
+    {
+      "id": "njt-government-decrees-current-and-prior-years",
+      "url": "https://njt.jog.gov.hu/eli/R/{year}/KORM",
+      "year_window": 3,
+      "kind": "catalogue",
+      "publisher": "Nemzeti Jogszabálytár",
+      "language": "hu",
+      "category": "legislation"
+    },
+    {
+      "id": "njt-bm-decrees-current-and-prior-years",
+      "url": "https://njt.jog.gov.hu/eli/R/{year}/BM",
+      "year_window": 3,
+      "kind": "catalogue",
+      "publisher": "Nemzeti Jogszabálytár",
+      "language": "hu",
+      "category": "legislation"
+    }
+  ],
+  "laws": [
+    {
+      "id": "hu-act-2007-1",
+      "citation": "2007. évi I. törvény",
+      "url": "https://njt.jog.gov.hu/eli/TV/2007/1/hu/html",
+      "category": "free-movement-core"
+    },
+    {
+      "id": "hu-gov-2007-113",
+      "citation": "113/2007. (V. 24.) Korm. rendelet",
+      "url": "https://njt.jog.gov.hu/jogszabaly/2007-113-20-22",
+      "category": "free-movement-core"
+    },
+    {
+      "id": "hu-gov-2007-355",
+      "citation": "355/2007. (XII. 23.) Korm. rendelet",
+      "url": "https://njt.jog.gov.hu/jogszabaly/2007-355-20-22",
+      "category": "supporting-law"
+    },
+    {
+      "id": "hu-act-1995-66",
+      "citation": "1995. évi LXVI. törvény",
+      "url": "https://njt.jog.gov.hu/eli/TV/1995/66/hu/html",
+      "category": "records-and-archives"
+    },
+    {
+      "id": "hu-act-2003-125",
+      "citation": "2003. évi CXXV. törvény",
+      "url": "https://njt.jog.gov.hu/eli/TV/2003/125/hu/html",
+      "category": "equal-treatment"
+    },
+    {
+      "id": "hu-act-2010-130",
+      "citation": "2010. évi CXXX. törvény",
+      "url": "https://njt.jog.gov.hu/eli/TV/2010/130/hu/html",
+      "category": "procedure"
+    },
+    {
+      "id": "hu-act-2011-151",
+      "citation": "2011. évi CLI. törvény",
+      "url": "https://njt.jog.gov.hu/eli/TV/2011/151/hu/html",
+      "category": "remedies"
+    },
+    {
+      "id": "hu-act-2011-111",
+      "citation": "2011. évi CXI. törvény",
+      "url": "https://njt.jog.gov.hu/eli/TV/2011/111/hu/html",
+      "category": "remedies"
+    },
+    {
+      "id": "hu-act-2011-163",
+      "citation": "2011. évi CLXIII. törvény",
+      "url": "https://njt.jog.gov.hu/eli/TV/2011/163/hu/html",
+      "category": "remedies"
+    },
+    {
+      "id": "hu-act-2016-130",
+      "citation": "2016. évi CXXX. törvény",
+      "url": "https://njt.jog.gov.hu/eli/TV/2016/130/hu/html",
+      "category": "procedure"
+    },
+    {
+      "id": "hu-gov-2016-301",
+      "citation": "301/2016. (IX. 30.) Korm. rendelet",
+      "url": "https://njt.jog.gov.hu/jogszabaly/2016-301-20-22",
+      "category": "foi"
+    },
+    {
+      "id": "hu-gov-2024-321",
+      "citation": "321/2024. (XI. 6.) Korm. rendelet",
+      "url": "https://njt.jog.gov.hu/jogszabaly/2024-321-20-22",
+      "category": "digital-procedure"
+    },
+    {
+      "id": "hu-gov-2024-322",
+      "citation": "322/2024. (XI. 6.) Korm. rendelet",
+      "url": "https://njt.jog.gov.hu/jogszabaly/2024-322-20-22",
+      "category": "digital-procedure"
+    },
+    {
+      "id": "hu-gov-2005-335",
+      "citation": "335/2005. (XII. 29.) Korm. rendelet",
+      "url": "https://njt.jog.gov.hu/jogszabaly/2005-335-20-22",
+      "category": "records-and-archives"
+    },
+    {
+      "id": "hu-gov-2015-414",
+      "citation": "414/2015. (XII. 23.) Korm. rendelet",
+      "url": "https://njt.jog.gov.hu/jogszabaly/2015-414-20-22",
+      "category": "identity-documents"
+    },
+    {
+      "id": "hu-gov-2017-469",
+      "citation": "469/2017. (XII. 28.) Korm. rendelet",
+      "url": "https://njt.jog.gov.hu/jogszabaly/2017-469-20-22",
+      "category": "data-protection"
+    },
+    {
+      "id": "hu-gov-1998-101",
+      "citation": "101/1998. (V. 22.) Korm. rendelet",
+      "url": "https://njt.jog.gov.hu/jogszabaly/1998-101-20-22",
+      "category": "supporting-law"
+    },
+    {
+      "id": "hu-gov-2007-114",
+      "citation": "114/2007. (V. 24.) Korm. rendelet",
+      "url": "https://njt.jog.gov.hu/jogszabaly/2007-114-20-22",
+      "category": "supporting-law"
+    },
+    {
+      "id": "hu-gov-2025-196",
+      "citation": "196/2025. (VII. 8.) Korm. rendelet",
+      "url": "https://njt.jog.gov.hu/jogszabaly/2025-196-20-22",
+      "category": "supporting-law"
+    },
+    {
+      "id": "hu-act-1991-64",
+      "citation": "1991. évi LXIV. törvény",
+      "url": "https://njt.jog.gov.hu/eli/TV/1991/64/hu/html",
+      "category": "supporting-law"
+    },
+    {
+      "id": "hu-act-1993-3",
+      "citation": "1993. évi III. törvény",
+      "url": "https://njt.jog.gov.hu/eli/TV/1993/3/hu/html",
+      "category": "social-security"
+    },
+    {
+      "id": "hu-act-1996-20",
+      "citation": "1996. évi XX. törvény",
+      "url": "https://njt.jog.gov.hu/eli/TV/1996/20/hu/html",
+      "category": "identity-registers"
+    },
+    {
+      "id": "hu-act-1997-31",
+      "citation": "1997. évi XXXI. törvény",
+      "url": "https://njt.jog.gov.hu/eli/TV/1997/31/hu/html",
+      "category": "supporting-law"
+    },
+    {
+      "id": "hu-act-1998-84",
+      "citation": "1998. évi LXXXIV. törvény",
+      "url": "https://njt.jog.gov.hu/eli/TV/1998/84/hu/html",
+      "category": "supporting-law"
+    },
+    {
+      "id": "hu-act-1998-12",
+      "citation": "1998. évi XII. törvény",
+      "url": "https://njt.jog.gov.hu/eli/TV/1998/12/hu/html",
+      "category": "supporting-law"
+    },
+    {
+      "id": "hu-act-1999-100",
+      "citation": "1999. évi C. törvény",
+      "url": "https://njt.jog.gov.hu/eli/TV/1999/100/hu/html",
+      "category": "supporting-law"
+    },
+    {
+      "id": "hu-act-2007-2",
+      "citation": "2007. évi II. törvény",
+      "url": "https://njt.jog.gov.hu/eli/TV/2007/2/hu/html",
+      "category": "immigration-context"
+    },
+    {
+      "id": "hu-act-2007-80",
+      "citation": "2007. évi LXXX. törvény",
+      "url": "https://njt.jog.gov.hu/eli/TV/2007/80/hu/html",
+      "category": "immigration-context"
+    },
+    {
+      "id": "hu-act-2009-6",
+      "citation": "2009. évi VI. törvény",
+      "url": "https://njt.jog.gov.hu/eli/TV/2009/6/hu/html",
+      "category": "supporting-law"
+    },
+    {
+      "id": "hu-act-2015-42",
+      "citation": "2015. évi XLII. törvény",
+      "url": "https://njt.jog.gov.hu/eli/TV/2015/42/hu/html",
+      "category": "supporting-law"
+    },
+    {
+      "id": "hu-act-2017-28",
+      "citation": "2017. évi XXVIII. törvény",
+      "url": "https://njt.jog.gov.hu/eli/TV/2017/28/hu/html",
+      "category": "private-international-law"
+    },
+    {
+      "id": "hu-act-2019-122",
+      "citation": "2019. évi CXXII. törvény",
+      "url": "https://njt.jog.gov.hu/eli/TV/2019/122/hu/html",
+      "category": "social-security"
+    },
+    {
+      "id": "hu-act-2024-69",
+      "citation": "2024. évi LXIX. törvény",
+      "url": "https://njt.jog.gov.hu/eli/TV/2024/69/hu/html",
+      "category": "cybersecurity"
+    },
+    {
+      "id": "hu-gov-1998-223",
+      "citation": "223/1998. (XII. 30.) Korm. rendelet",
+      "url": "https://njt.jog.gov.hu/jogszabaly/1998-223-20-22",
+      "category": "supporting-law"
+    },
+    {
+      "id": "hu-gov-2007-301",
+      "citation": "301/2007. (XI. 9.) Korm. rendelet",
+      "url": "https://njt.jog.gov.hu/jogszabaly/2007-301-20-22",
+      "category": "supporting-law"
+    },
+    {
+      "id": "hu-gov-2013-445",
+      "citation": "445/2013. (XI. 28.) Korm. rendelet",
+      "url": "https://njt.jog.gov.hu/jogszabaly/2013-445-20-22",
+      "category": "supporting-law"
+    },
+    {
+      "id": "hu-gov-2024-450",
+      "citation": "450/2024. (XII. 23.) Korm. rendelet",
+      "url": "https://njt.jog.gov.hu/jogszabaly/2024-450-20-22",
+      "category": "supporting-law"
+    },
+    {
+      "id": "hu-gov-1998-37",
+      "citation": "37/1998. (VIII. 18.) BM rendelet",
+      "url": "https://njt.jog.gov.hu/eli/R/1998/BM/37/hu/html",
+      "category": "supporting-law"
+    },
+    {
+      "id": "hu-gov-2013-29",
+      "citation": "29/2013. (VI. 28.) BM rendelet",
+      "url": "https://njt.jog.gov.hu/eli/R/2013/BM/29/hu/html",
+      "category": "supporting-law"
+    },
+    {
+      "id": "hu-gov-2018-3",
+      "citation": "3/2018. (II. 21.) BM rendelet",
+      "url": "https://njt.jog.gov.hu/eli/R/2018/BM/3/hu/html",
+      "category": "records-and-archives"
+    },
+    {
+      "id": "hu-act-2011-112",
+      "citation": "2011. évi CXII. törvény",
+      "url": "https://njt.jog.gov.hu/eli/TV/2011/112/hu/html",
+      "category": "data-protection-and-foi"
+    },
+    {
+      "id": "hu-act-2016-100",
+      "citation": "2016. évi CL. törvény",
+      "url": "https://njt.jog.gov.hu/eli/TV/2016/150/hu/html",
+      "category": "administrative-procedure"
+    },
+    {
+      "id": "hu-act-2017-1",
+      "citation": "2017. évi I. törvény",
+      "url": "https://njt.jog.gov.hu/eli/TV/2017/1/hu/html",
+      "category": "administrative-court-procedure"
+    },
+    {
+      "id": "hu-act-2023-103",
+      "citation": "2023. évi CIII. törvény",
+      "url": "https://njt.jog.gov.hu/eli/TV/2023/103/hu/html",
+      "category": "digital-procedure"
+    },
+    {
+      "id": "hu-act-2023-25",
+      "citation": "2023. évi XXV. törvény",
+      "url": "https://njt.jog.gov.hu/eli/TV/2023/25/hu/html",
+      "category": "complaints"
+    },
+    {
+      "id": "hu-act-2023-90",
+      "citation": "2023. évi XC. törvény",
+      "url": "https://njt.jog.gov.hu/eli/TV/2023/90/hu/html",
+      "category": "immigration-context"
+    },
+    {
+      "id": "hu-gov-2019-126",
+      "citation": "126/2019. (V. 30.) Korm. rendelet",
+      "url": "https://njt.jog.gov.hu/jogszabaly/2019-126-20-22",
+      "category": "OIF-competence"
+    },
+    {
+      "id": "hu-gov-1993-146",
+      "citation": "146/1993. (X. 26.) Korm. rendelet",
+      "url": "https://njt.jog.gov.hu/jogszabaly/1993-146-20-22",
+      "category": "address-register"
+    },
+    {
+      "id": "hu-act-1990-93",
+      "citation": "1990. évi XCIII. törvény",
+      "url": "https://njt.jog.gov.hu/eli/TV/1990/93/hu/html",
+      "category": "fees"
+    },
+    {
+      "id": "hu-act-1992-66",
+      "citation": "1992. évi LXVI. törvény",
+      "url": "https://njt.jog.gov.hu/eli/TV/1992/66/hu/html",
+      "category": "address-register"
+    },
+    {
+      "id": "hu-act-1994-34",
+      "citation": "1994. évi XXXIV. törvény",
+      "url": "https://njt.jog.gov.hu/eli/TV/1994/34/hu/html",
+      "category": "police-powers"
+    },
+    {
+      "id": "hu-act-2023-90-implementing",
+      "citation": "35/2024. (II. 29.) Korm. rendelet",
+      "url": "https://njt.jog.gov.hu/jogszabaly/2024-35-20-22",
+      "category": "immigration-context"
+    },
+    {
+      "id": "hu-bm-2024-9",
+      "citation": "9/2024. (II. 29.) BM rendelet",
+      "category": "forms",
+      "url": "https://njt.jog.gov.hu/eli/R/2024/BM/9/hu/html"
+    },
+    {
+      "id": "hu-mk-2024-19",
+      "citation": "19/2024. (XII. 31.) MK rendelet",
+      "category": "fees",
+      "url": "https://njt.jog.gov.hu/eli/R/2024/MK/19/hu/html"
+    },
+    {
+      "id": "hu-act-2003-80",
+      "citation": "2003. évi LXXX. törvény",
+      "url": "https://njt.jog.gov.hu/eli/TV/2003/80/hu/html",
+      "category": "legal-aid"
+    },
+    {
+      "id": "hu-act-2013-5",
+      "citation": "2013. évi V. törvény",
+      "url": "https://njt.jog.gov.hu/eli/TV/2013/5/hu/html",
+      "category": "civil-code"
+    },
+    {
+      "id": "hu-act-2023-fundamental",
+      "citation": "Magyarország Alaptörvénye",
+      "url": "https://njt.jog.gov.hu/eli/Alaptv",
+      "category": "constitutional-context",
+      "special_title": [
+        "Magyarország Alaptörvénye",
+        "Alaptörvény"
+      ]
+    },
+    {
+      "id": "hu-emmi-2020-28",
+      "citation": "28/2020. (VIII. 19.) EMMI rendelet",
+      "url": "https://njt.jog.gov.hu/eli/R/2020/EMMI/28/hu/html",
+      "category": "healthcare"
+    }
+  ],
+  "oif_pages": [
+    {
+      "id": "oif-fees",
+      "url": "https://oif.gov.hu/tajekoztatok/eljarasi-dijak",
+      "category": "fees"
+    },
+    {
+      "id": "oif-free-movement-registration",
+      "url": "https://oif.gov.hu/tajekoztatok/egt-allampolgar-regisztracios-igazolas",
+      "category": "free-movement-procedure"
+    },
+    {
+      "id": "oif-free-movement-family-card",
+      "url": "https://oif.gov.hu/tajekoztatok/a-regisztracios-igazolas-es-az-egt-allampolgar-harmadik-orszagbeli-csaladtagja-reszere-kiallithato-tartozkodasi-kartya-ugyintezesben",
+      "category": "free-movement-procedure"
+    },
+    {
+      "id": "oif-forms-catalogue",
+      "url": "https://oif.gov.hu/formanyomtatvanyok",
+      "category": "forms"
+    },
+    {
+      "id": "oif-electronic-administration",
+      "url": "https://oif.gov.hu/tajekoztatok/tajekoztato-elektronikus-ugyintezes",
+      "category": "electronic-procedure"
+    },
+    {
+      "id": "oif-form-registration-pdf",
+      "url": "https://oif.gov.hu/storage/media/Formanyomtatv%C3%A1nyok/Szmtv%20magyar/1._Adatlap_a_regisztr%C3%A1ci%C3%B3s_igazol%C3%A1s_ki%C3%A1ll%C3%ADt%C3%A1s%C3%A1hoz_%C3%A9s_az_els%C5%91_lak%C3%B3hely_bejelent%C3%A9s%C3%A9hez_HU.pdf",
+      "category": "forms",
+      "format": "pdf"
+    },
+    {
+      "id": "oif-form-eu-residence-card-pdf",
+      "url": "https://oif.gov.hu/storage/media/Formanyomtatv%C3%A1nyok/Nemzeti%2C%20ideiglenes%2C%20EU%20tart%20k%C3%A1rtya/16.%20Nemzeti%2C%20ideiglenes%20illetve%20EU%20tart%C3%B3zkod%C3%A1si%20k%C3%A1rtya%20ir%C3%A1nti%20k%C3%A9relem_HU.pdf",
+      "category": "forms",
+      "format": "pdf"
+    },
+    {
+      "id": "oif-public-info-procedure",
+      "url": "https://oif.gov.hu/tajekoztatok/tevekenysegre-mukodesre-vonatkozo-adatok",
+      "category": "FOI"
+    },
+    {
+      "id": "oif-data-protection-regulation",
+      "url": "https://oif.gov.hu/storage/media/Adatkezel%C3%A9si%20t%C3%A1j%C3%A9koztat%C3%B3/20-2025-%20az%20OIF%20Adatv%C3%A9delmi%20Szab%C3%A1lyzat%C3%A1r%C3%B3l.pdf",
+      "category": "data-protection",
+      "format": "pdf"
+    },
+    {
+      "id": "naih-data-subject-rights",
+      "url": "https://www.naih.hu/erintetti-jogok",
+      "category": "data-protection",
+      "publisher": "Nemzeti Adatvédelmi és Információszabadság Hatóság"
+    },
+    {
+      "id": "naih-law-enforcement-rights",
+      "url": "https://www.naih.hu/bunuldozesi-nemzetbiztonsagi-es-honvedelmi-celu-adatkezeles-infotv",
+      "category": "data-protection",
+      "publisher": "Nemzeti Adatvédelmi és Információszabadság Hatóság"
+    },
+    {
+      "id": "naih-complaints-catalogue",
+      "url": "https://www.naih.hu/online-ugyinditas",
+      "category": "remedies",
+      "publisher": "Nemzeti Adatvédelmi és Információszabadság Hatóság",
+      "discovery_only": true
+    },
+    {
+      "id": "oif-statistics-2013-2014",
+      "url": "https://oif.gov.hu/storage/media/K%C3%B6z%C3%A9rdek%C5%B1%20adatok/Gazd%C3%A1lkod%C3%A1si%20adatok/kiadv%C3%A1nyf%C3%BCzetek/2013_2014%20statisztika.pdf",
+      "category": "statistics",
+      "publisher": "Országos Idegenrendészeti Főigazgatóság",
+      "format": "pdf"
+    },
+    {
+      "id": "oif-statistics-2014-2015",
+      "url": "https://oif.gov.hu/storage/media/K%C3%B6z%C3%A9rdek%C5%B1%20adatok/Gazd%C3%A1lkod%C3%A1si%20adatok/kiadv%C3%A1nyf%C3%BCzetek/2014-2015%20statisztik%C3%A1k.pdf",
+      "category": "statistics",
+      "publisher": "Országos Idegenrendészeti Főigazgatóság",
+      "format": "pdf"
+    },
+    {
+      "id": "oif-statistics-2015-2016",
+      "url": "https://oif.gov.hu/storage/media/K%C3%B6z%C3%A9rdek%C5%B1%20adatok/Gazd%C3%A1lkod%C3%A1si%20adatok/kiadv%C3%A1nyf%C3%BCzetek/2015-2016%20statisztik%C3%A1k.pdf",
+      "category": "statistics",
+      "publisher": "Országos Idegenrendészeti Főigazgatóság",
+      "format": "pdf"
+    },
+    {
+      "id": "oif-statistics-2017",
+      "url": "https://oif.gov.hu/storage/media/K%C3%B6z%C3%A9rdek%C5%B1%20adatok/Gazd%C3%A1lkod%C3%A1si%20adatok/kiadv%C3%A1nyf%C3%BCzetek/2017%20statisztik%C3%A1k.pdf",
+      "category": "statistics",
+      "publisher": "Országos Idegenrendészeti Főigazgatóság",
+      "format": "pdf"
+    },
+    {
+      "id": "oif-statistics-2018",
+      "url": "https://oif.gov.hu/storage/media/K%C3%B6z%C3%A9rdek%C5%B1%20adatok/Gazd%C3%A1lkod%C3%A1si%20adatok/kiadv%C3%A1nyf%C3%BCzetek/2018%20statisztik%C3%A1k.pdf",
+      "category": "statistics",
+      "publisher": "Országos Idegenrendészeti Főigazgatóság",
+      "format": "pdf"
+    },
+    {
+      "id": "oif-statistics-2019",
+      "url": "https://oif.gov.hu/storage/media/K%C3%B6z%C3%A9rdek%C5%B1%20adatok/Gazd%C3%A1lkod%C3%A1si%20adatok/kiadv%C3%A1nyf%C3%BCzetek/2019%20statisztik%C3%A1k.pdf",
+      "category": "statistics",
+      "publisher": "Országos Idegenrendészeti Főigazgatóság",
+      "format": "pdf"
+    },
+    {
+      "id": "oif-statistics-2020",
+      "url": "https://oif.gov.hu/storage/media/K%C3%B6z%C3%A9rdek%C5%B1%20adatok/Gazd%C3%A1lkod%C3%A1si%20adatok/kiadv%C3%A1nyf%C3%BCzetek/2020%20statisztik%C3%A1k.pdf",
+      "category": "statistics",
+      "publisher": "Országos Idegenrendészeti Főigazgatóság",
+      "format": "pdf"
+    },
+    {
+      "id": "oif-statistics-2021",
+      "url": "https://oif.gov.hu/storage/media/K%C3%B6z%C3%A9rdek%C5%B1%20adatok/Gazd%C3%A1lkod%C3%A1si%20adatok/kiadv%C3%A1nyf%C3%BCzetek/2021%20statisztik%C3%A1k.pdf",
+      "category": "statistics",
+      "publisher": "Országos Idegenrendészeti Főigazgatóság",
+      "format": "pdf"
+    },
+    {
+      "id": "oif-statistics-2022",
+      "url": "https://oif.gov.hu/storage/media/K%C3%B6z%C3%A9rdek%C5%B1%20adatok/Gazd%C3%A1lkod%C3%A1si%20adatok/kiadv%C3%A1nyf%C3%BCzetek/2022%20statisztik%C3%A1k.pdf",
+      "category": "statistics",
+      "publisher": "Országos Idegenrendészeti Főigazgatóság",
+      "format": "pdf"
+    },
+    {
+      "id": "oif-statistics-2023",
+      "url": "https://oif.gov.hu/storage/media/K%C3%B6z%C3%A9rdek%C5%B1%20adatok/Gazd%C3%A1lkod%C3%A1si%20adatok/kiadv%C3%A1nyf%C3%BCzetek/2023%20statisztik%C3%A1k.pdf",
+      "category": "statistics",
+      "publisher": "Országos Idegenrendészeti Főigazgatóság",
+      "format": "pdf"
+    },
+    {
+      "id": "oif-statistics-2024",
+      "url": "https://oif.gov.hu/storage/media/K%C3%B6z%C3%A9rdek%C5%B1%20adatok/Gazd%C3%A1lkod%C3%A1si%20adatok/kiadv%C3%A1nyf%C3%BCzetek/2024%20statisztik%C3%A1k.pdf",
+      "category": "statistics",
+      "publisher": "Országos Idegenrendészeti Főigazgatóság",
+      "format": "pdf"
+    },
+    {
+      "id": "oif-statistics-2025",
+      "url": "https://oif.gov.hu/storage/media/K%C3%B6z%C3%A9rdek%C5%B1%20adatok/Gazd%C3%A1lkod%C3%A1si%20adatok/kiadv%C3%A1nyf%C3%BCzetek/2025%20statisztik%C3%A1k.pdf",
+      "category": "statistics",
+      "publisher": "Országos Idegenrendészeti Főigazgatóság",
+      "format": "pdf",
+      "validation_markers": [
+        "2025. január - december",
+        "403 551",
+        "55 210"
+      ]
+    },
+    {
+      "id": "oif-contracts-2020",
+      "url": "https://oif.gov.hu/storage/media/K%C3%96ZBESZERZ%C3%89S/5%20milli%C3%B3%20ft%20feletti%20szerz%C5%91d%C3%A9sek/5_milli%C3%B3_feletti_szerz%C5%91d%C3%A9sek_2020.pdf",
+      "category": "contracts",
+      "publisher": "Országos Idegenrendészeti Főigazgatóság",
+      "format": "pdf"
+    },
+    {
+      "id": "oif-contracts-2021",
+      "url": "https://oif.gov.hu/storage/media/K%C3%96ZBESZERZ%C3%89S/5%20milli%C3%B3%20ft%20feletti%20szerz%C5%91d%C3%A9sek/5_milli%C3%B3_feletti_szerz%C5%91d%C3%A9sek_2021.pdf",
+      "category": "contracts",
+      "publisher": "Országos Idegenrendészeti Főigazgatóság",
+      "format": "pdf"
+    },
+    {
+      "id": "oif-contracts-2022",
+      "url": "https://oif.gov.hu/storage/media/K%C3%96ZBESZERZ%C3%89S/5%20milli%C3%B3%20ft%20feletti%20szerz%C5%91d%C3%A9sek/5_milli%C3%B3_feletti_szerz%C5%91d%C3%A9sek_2022.pdf",
+      "category": "contracts",
+      "publisher": "Országos Idegenrendészeti Főigazgatóság",
+      "format": "pdf"
+    },
+    {
+      "id": "oif-contracts-2023",
+      "url": "https://oif.gov.hu/storage/media/K%C3%96ZBESZERZ%C3%89S/5%20milli%C3%B3%20ft%20feletti%20szerz%C5%91d%C3%A9sek/5milli%C3%B3_feletti_szerz%C5%91d%C3%A9sek_2023.pdf",
+      "category": "contracts",
+      "publisher": "Országos Idegenrendészeti Főigazgatóság",
+      "format": "pdf"
+    },
+    {
+      "id": "oif-contracts-2024-09",
+      "url": "https://oif.gov.hu/storage/media/K%C3%96ZBESZERZ%C3%89S/5%20milli%C3%B3%20ft%20feletti%20szerz%C5%91d%C3%A9sek/5_milli%C3%B3_feletti_szerz%C5%91d%C3%A9sek_20240923.pdf",
+      "category": "contracts",
+      "publisher": "Országos Idegenrendészeti Főigazgatóság",
+      "format": "pdf"
+    },
+    {
+      "id": "oif-contracts-2025-06",
+      "url": "https://oif.gov.hu/storage/media/K%C3%96ZBESZERZ%C3%89S/5%20milli%C3%B3%20ft%20feletti%20szerz%C5%91d%C3%A9sek/5%20milli%C3%B3%20forint%20feletti%20szerz%C5%91d%C3%A9sek_2025.06.pdf",
+      "category": "contracts",
+      "publisher": "Országos Idegenrendészeti Főigazgatóság",
+      "format": "pdf"
+    },
+    {
+      "id": "oif-contracts-2026",
+      "url": "https://oif.gov.hu/storage/media/K%C3%96ZBESZERZ%C3%89S/5%20milli%C3%B3%20ft%20feletti%20szerz%C5%91d%C3%A9sek/5_milli%C3%B3_forint_feletti_szerz%C5%91d%C3%A9sek_2026.pdf",
+      "category": "contracts",
+      "publisher": "Országos Idegenrendészeti Főigazgatóság",
+      "format": "pdf",
+      "validation_markers": [
+        "106-6332-11/2026",
+        "Z1150367",
+        "83 297 404"
+      ]
+    },
+    {
+      "id": "oif-procurement-plan-2026",
+      "url": "https://oif.gov.hu/storage/media/K%C3%B6z%C3%A9rdek%C5%B1%20adatok/Gazd%C3%A1lkod%C3%A1si%20adatok/OIF%20%C3%B6ssz%202026.%20%C3%A9vi%20beszerzesi%20terv.pdf",
+      "category": "procurement",
+      "publisher": "Országos Idegenrendészeti Főigazgatóság",
+      "format": "pdf"
+    },
+    {
+      "id": "oif-procurement-disclosure-2026",
+      "url": "https://oif.gov.hu/storage/media/K%C3%B6z%C3%A9rdek%C5%B1%20adatok/Gazd%C3%A1lkod%C3%A1si%20adatok/VII.%20K%C3%B6zz%C3%A9t%C3%A9teli%20egys%C3%A9g%20%20K%C3%B6zbeszerz%C3%A9si%20inform%C3%A1ci%C3%B3k.pdf",
+      "category": "procurement",
+      "publisher": "Országos Idegenrendészeti Főigazgatóság",
+      "format": "pdf"
+    },
+    {
+      "id": "oif-public-info-procedure-pdf",
+      "url": "https://oif.gov.hu/storage/media/Adatkezel%C3%A9si%20t%C3%A1j%C3%A9koztat%C3%B3/Kozerdeku.pdf",
+      "category": "FOI",
+      "publisher": "Országos Idegenrendészeti Főigazgatóság",
+      "format": "pdf"
+    },
+    {
+      "id": "oif-foi-annual-report-2025",
+      "url": "https://oif.gov.hu/storage/media/K%C3%B6z%C3%A9rdek%C5%B1%20adatok/Gazd%C3%A1lkod%C3%A1si%20adatok/2025_eves_jelentes.pdf",
+      "category": "FOI",
+      "publisher": "Országos Idegenrendészeti Főigazgatóság",
+      "format": "pdf",
+      "validation_markers": [
+        "Adatszolgáltatás éve: 2025",
+        "2011. évi CXII. törvény",
+        "2026-01-22"
+      ]
+    },
+    {
+      "id": "oif-foi-annual-report-2023",
+      "url": "https://oif.gov.hu/storage/media/K%C3%B6z%C3%A9rdek%C5%B1%20adatok/%C3%81lt%20k%C3%B6zz%C3%A9t%C3%A9teli/2023.%20%C3%A9vi%20adatokra%20vonatkoz%C3%B3%20adatszolg%C3%A1ltat%C3%A1s.pdf",
+      "category": "FOI",
+      "publisher": "Országos Idegenrendészeti Főigazgatóság",
+      "format": "pdf",
+      "validation_markers": [
+        "2023. év",
+        "20 db",
+        "106-2024/2211-1"
+      ]
+    },
+    {
+      "id": "naih-gdpr-authority-procedure",
+      "url": "https://naih.hu/adatkezeles-erintettjekent-fordulok-a-hatosaghoz/adatvedelmi-hatosagi-eljaras-gdpr",
+      "category": "data-protection",
+      "publisher": "Nemzeti Adatvédelmi és Információszabadság Hatóság"
+    },
+    {
+      "id": "naih-gdpr-investigation-procedure",
+      "url": "https://www.naih.hu/adatkezeles-erintettjekent-fordulok-a-hatosaghoz/vizsgalati-eljaras-gdpr",
+      "category": "data-protection",
+      "publisher": "Nemzeti Adatvédelmi és Információszabadság Hatóság"
+    },
+    {
+      "id": "naih-law-enforcement-authority-procedure",
+      "url": "https://www.naih.hu/adatkezeles-erintettjekent-fordulok-a-hatosaghoz/adatvedelmi-hatosagi-eljaras-bunuldozesi-honvedelmi-es-nemzetbiztonsagi-adatkezeles",
+      "category": "data-protection",
+      "publisher": "Nemzeti Adatvédelmi és Információszabadság Hatóság"
+    },
+    {
+      "id": "naih-law-enforcement-investigation-procedure",
+      "url": "https://www.naih.hu/adatkezeles-erintettjekent-fordulok-a-hatosaghoz/vizsgalati-eljaras-bunuldozesi-honvedelmi-nemzetbiztonsagi-adatkezeles",
+      "category": "data-protection",
+      "publisher": "Nemzeti Adatvédelmi és Információszabadság Hatóság"
+    },
+    {
+      "id": "naih-public-data-access-investigation",
+      "url": "https://www.naih.hu/kozerdeku-vagy-kozerdekbol-nyilvanos-adatok-megismeresevel-kapcsolatosan-fordulok-a-hatosaghoz/hatosag-vizsgalata",
+      "category": "FOI",
+      "publisher": "Nemzeti Adatvédelmi és Információszabadság Hatóság"
+    },
+    {
+      "id": "naih-public-data-request-guidance",
+      "url": "https://naih.hu/informacioszabadsag/kozerdeku-adatigenyles-menete",
+      "category": "FOI",
+      "publisher": "Nemzeti Adatvédelmi és Információszabadság Hatóság"
+    },
+    {
+      "id": "ajbh-equal-treatment-application-submission",
+      "url": "https://www.ajbh.hu/ebff-kerelem-benyujtasa",
+      "category": "equal-treatment",
+      "publisher": "Alapvető Jogok Biztosának Hivatala",
+      "discovery_only": true
+    },
+    {
+      "id": "ajbh-equal-treatment-authority-procedure",
+      "url": "https://www.ajbh.hu/ebff-hogyan-zajlik-az-eljaras",
+      "category": "equal-treatment",
+      "publisher": "Alapvető Jogok Biztosának Hivatala",
+      "discovery_only": true
+    },
+    {
+      "id": "ajbh-equal-treatment-directorate",
+      "url": "https://www.ajbh.hu/documents/10180/806018/2.1.3.%2BHat%C3%B3s%C3%A1gi%2B%C3%BCgyek%2Bint%C3%A9z%C3%A9s%C3%A9vel%2Brendj%C3%A9vel%2Bkapcsolatos%2Badatok.pdf/3fd5fb5f-0d32-0fc3-e39a-6478ce4fc342?t=1695368471242",
+      "category": "equal-treatment",
+      "publisher": "Alapvető Jogok Biztosának Hivatala",
+      "format": "pdf",
+      "discovery_only": true
+    },
+    {
+      "id": "ajbh-general-complaint-submission",
+      "url": "https://www.ajbh.hu/documents/10180/160450/T%C3%A1j%C3%A9koztat%C3%B3%2Bf%C3%BCzet_2025.pdf/3e2af0a4-9b3c-ee2e-73cd-3777c857c2af?t=1747998995496&version=1.0",
+      "category": "remedies",
+      "publisher": "Alapvető Jogok Biztosának Hivatala",
+      "format": "pdf",
+      "discovery_only": true
+    }
+  ],
+  "archive_targets": [
+    {
+      "id": "oif-106-ti-6332-2026",
+      "title": "106-TI-6332_2026.pdf",
+      "category": "contracts",
+      "publisher": "Országos Idegenrendészeti Főigazgatóság",
+      "official_catalogue": "https://oif.gov.hu/tajekoztatok/5-millio-forint-feletti-szerzodesek",
+      "status": "official-file-resolved-and-pinned",
+      "official_file_url": "https://oif.gov.hu/storage/media/K%C3%96ZBESZERZ%C3%89S/5%20milli%C3%B3%20ft%20feletti%20szerz%C5%91d%C3%A9sek/5_milli%C3%B3_forint_feletti_szerz%C5%91d%C3%A9sek_2026.pdf",
+      "resolved_source_id": "oif-contracts-2026",
+      "official_filename": "5_millió_forint_feletti_szerződések_2026.pdf",
+      "content_match_markers": [
+        "106-6332-11/2026",
+        "Z1150367",
+        "83 297 404"
+      ]
+    },
+    {
+      "id": "oif-106-alt-201-2026",
+      "title": "106-Ált-201_2026.pdf",
+      "category": "statistics",
+      "publisher": "Országos Idegenrendészeti Főigazgatóság",
+      "official_catalogue": "https://oif.gov.hu/statisztikak-kiadvanyfuzetek",
+      "status": "official-file-resolved-and-pinned",
+      "official_file_url": "https://oif.gov.hu/storage/media/K%C3%B6z%C3%A9rdek%C5%B1%20adatok/Gazd%C3%A1lkod%C3%A1si%20adatok/kiadv%C3%A1nyf%C3%BCzetek/2025%20statisztik%C3%A1k.pdf",
+      "resolved_source_id": "oif-statistics-2025",
+      "official_filename": "2025 statisztikák.pdf",
+      "content_match_markers": [
+        "2025. január - december",
+        "403 551",
+        "55 210"
+      ]
+    },
+    {
+      "id": "ajbh-guidance-pages",
+      "title": "AJBH equal-treatment and general complaint guidance in the supplied archive",
+      "category": "guidance",
+      "publisher": "Alapvető Jogok Biztosának Hivatala",
+      "official_catalogue": "https://www.ajbh.hu/",
+      "status": "official-site-automated-fetch-blocked-by-bot-challenge"
+    },
+    {
+      "id": "oif-2023-foi-annual-report",
+      "title": "2023. évi adatokra vonatkozó adatszolgáltatás.pdf",
+      "category": "FOI",
+      "publisher": "Országos Idegenrendészeti Főigazgatóság",
+      "official_catalogue": "https://oif.gov.hu/tajekoztatok/tevekenysegre-mukodesre-vonatkozo-adatok",
+      "official_file_url": "https://oif.gov.hu/storage/media/K%C3%B6z%C3%A9rdek%C5%B1%20adatok/%C3%81lt%20k%C3%B6zz%C3%A9t%C3%A9teli/2023.%20%C3%A9vi%20adatokra%20vonatkoz%C3%B3%20adatszolg%C3%A1ltat%C3%A1s.pdf",
+      "resolved_source_id": "oif-foi-annual-report-2023",
+      "official_filename": "2023. évi adatokra vonatkozó adatszolgáltatás.pdf",
+      "status": "official-file-resolved-and-pinned"
+    }
+  ],
+  "shared_eu_ids": [
+    "CELEX 02004L0038",
+    "CELEX 12012M",
+    "CELEX 12012E",
+    "CELEX 12012P",
+    "CELEX C/2023/1392",
+    "all CJEU case-law records listed in tier 03"
+  ],
+  "archive_exclusions": [
+    "EU legislation and CJEU decisions: use existing shared EU/core packs; do not duplicate in Hungary.",
+    "HUNGARIAN_DOMESTIC_CASE_LAW_RESEARCH.md and regression-audit notes are research documents, not primary legal sources.",
+    "OIF spreadsheets, generated diagrams, user-uploaded annotations, conversion logs, and workbook previews are provenance/evidence, not authority documents."
+  ]
+}

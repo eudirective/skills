@@ -1,0 +1,13 @@
+{
+  "skill": "denmark-legal-source-system",
+  "version": "0.2.0",
+  "cases": [
+    {"id":"trigger-denmark-source-pack","prompt":"Refresh the Danish visa legal source pack from official sources and show the exact currentness and conversion checks.","should_trigger":true,"expected_signals":["Retsinformation ELI and Atom feed","official-source provenance","currentness review","stable Markdown hash"]},
+    {"id":"trigger-historical-source","prompt":"Rebuild the historical Foreign Service Act text from official Danish instruments and mark gaps.","should_trigger":true,"expected_signals":["original act and official amendments","special-case/manual verification","coverage caveat"]},
+    {"id":"trigger-structured-conversion","prompt":"Convert this pinned Danish law record into Markdown and prove it was not truncated.","should_trigger":true,"expected_signals":["pinned ELI","document ID/accession","SHA-256","coverage statement"]},
+    {"id":"trigger-new-law-discovery","prompt":"Check whether new Danish instruments have amended or consolidated the pinned laws.","should_trigger":true,"expected_signals":["official Atom feed","ELI sitemap comparison","unpromoted review candidates","retention gap remains unresolved"]},
+    {"id":"no-trigger-personal-case","prompt":"Can my spouse enter Denmark next week on this visa?","should_trigger":false,"expected_signals":["no source-pipeline invocation"]},
+    {"id":"no-trigger-general-law","prompt":"Explain the general history of Danish constitutional law.","should_trigger":false,"expected_signals":["no source-pipeline invocation"]}
+  ],
+  "risk_notes": ["A valid hash proves byte integrity, not legal completeness or currentness.", "Do not label an unreviewed consolidated text current.", "Do not reconstruct amended statutes automatically from fragments."]
+}
