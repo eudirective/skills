@@ -6,8 +6,10 @@ from contract_validate import load_json,digest_obj,validate_obj
 import c6_integration as c6
 import legal_assessment as c11
 
+from source_library_paths import compatibility_root
+
 ROOT=Path(__file__).resolve().parents[1];FIXTURES=ROOT/'references/fixtures/c10'
-SOURCE=load_json(ROOT/'references/source-pack/core-source-pack-manifest-0.6.1.json')
+SOURCE=load_json(compatibility_root()/'core-source-pack-manifest-0.6.1.json')
 
 def stage(n):
     d=FIXTURES/f'L{n}';case=load_json(d/'case.json');e=load_json(d/'elements.json');act=load_json(d/'actors.json');ctx=load_json(d/'c5c-context.json') if (d/'c5c-context.json').exists() else None

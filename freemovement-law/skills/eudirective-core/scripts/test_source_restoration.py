@@ -12,9 +12,11 @@ import c7_trust_gate as trust
 import verify_bundled_source_pack as gate
 from contract_validate import load_json
 
+from source_library_paths import compatibility_root
+
 ROOT = Path(__file__).resolve().parents[1]
 PACK = trust.BUNDLED_SOURCE_ROOT
-MANIFEST = PACK/'core-source-pack-manifest-0.6.1.json'
+MANIFEST = compatibility_root()/'core-source-pack-manifest-0.6.1.json'
 
 
 def must_block(func, text):

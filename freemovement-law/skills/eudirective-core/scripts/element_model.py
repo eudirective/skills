@@ -7,6 +7,8 @@ import sys
 
 from contract_validate import ContractError, load_json, validate_obj, digest_obj
 
+from source_library_paths import compatibility_root
+
 ROOT=Path(__file__).resolve().parents[1]
 ELEMENT_DIR=ROOT/'references'/'elements'
 
@@ -62,7 +64,7 @@ def validate_model(catalog,interactions,invariants,support=None,support_requirem
             raise ElementModelError(f'machine_rule_without_invariant:{rid}')
     if support is not None:
         known_sources=set()
-        source_manifest=ROOT/'references'/'source-pack'/'core-source-pack-manifest-0.6.1.json'
+        source_manifest=compatibility_root()/'core-source-pack-manifest-0.6.1.json'
         if source_manifest.is_file():
             sm=load_json(source_manifest); known_sources={x['source_id'] for x in sm.get('sources',[])}
         seen_support=set()

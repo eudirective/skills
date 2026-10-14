@@ -9,8 +9,10 @@ import element_model as em
 import module_conformance as mc
 import topology_engine as te
 
+from source_library_paths import compatibility_root
+
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE_PACK_FILE = ROOT / "references" / "source-pack" / "core-source-pack-manifest-0.6.1.json"
+SOURCE_PACK_FILE = compatibility_root() / "core-source-pack-manifest-0.6.1.json"
 CORE_ATTACK_CATALOG_FILE = ROOT / "references" / "attack-angles" / "core-attack-angle-catalog.json"
 ENGINE_VERSION = "0.1.0"
 RULESET_VERSION = "0.1.0"

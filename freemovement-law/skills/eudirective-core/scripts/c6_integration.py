@@ -30,8 +30,10 @@ import suggestion_ranking as ranking
 import c7_trust_gate as trust_gate
 import c7_issue_index as issue_index
 
+from source_library_paths import compatibility_root
+
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE_PACK = ROOT / 'references/source-pack/core-source-pack-manifest-0.6.1.json'
+SOURCE_PACK = compatibility_root() / 'core-source-pack-manifest-0.6.1.json'
 C6_VERSION = '0.5.0'
 STAGE_SCHEMAS = {'topology': 'topology-resolution', 'regimes': 'legal-regime-candidates',
                  'c5b': 'c5b-hierarchy-principles', 'c5c': 'c5c-evidence-deadline-authority',
@@ -40,7 +42,7 @@ CODE_PINS = [
     'scripts/case_controller.py', 'scripts/c6_integration.py', 'scripts/core_source_adapter.py',
     'scripts/c7_trust_gate.py', 'scripts/c7_issue_index.py',
     'scripts/c18_source_integrity.py', 'references/source-pack/c18-directive-art2-restoration.json',
-    'references/source-pack/core-source-pack-manifest-0.6.1.json',
+    '../eudirective-source-library/compatibility/core-source-pack/core-source-pack-0.6.1/core-source-pack-manifest-0.6.1.json',
     'references/trust/c7-trust-policy.json', 'references/contracts/c7-issue-index.schema.json',
     'scripts/contract_validate.py', 'scripts/module_conformance.py', 'scripts/element_model.py',
     'scripts/topology_engine.py', 'scripts/regime_applicability.py',

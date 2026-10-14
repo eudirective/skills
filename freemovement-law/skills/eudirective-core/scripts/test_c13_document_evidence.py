@@ -8,6 +8,8 @@ import copy,hashlib,json,sys,tempfile
 from contract_validate import load_json,validate_obj,digest_obj
 import c13_document_evidence as c13
 import c6_integration as c6
+from source_library_paths import compatibility_root
+
 ROOT=Path(__file__).resolve().parents[1]; FX=ROOT/'references/fixtures/c10'
 
 
@@ -27,7 +29,7 @@ def check_primary():
     checks=[]
     for n in (1,4,5):
         case,els,ev=setup(n)
-        source=load_json(ROOT/'references/source-pack/core-source-pack-manifest-0.6.1.json')
+        source=load_json(compatibility_root()/'core-source-pack-manifest-0.6.1.json')
         d=FX/f'L{n}';a=load_json(d/'actors.json'); ctx=load_json(d/'c5c-context.json') if (d/'c5c-context.json').exists() else None
         pairs=[];ext=[]
         for label,fam in [('sweden','member_state'),('turkiye','applicant_country')]:

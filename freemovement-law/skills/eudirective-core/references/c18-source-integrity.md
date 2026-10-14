@@ -1,12 +1,12 @@
 # C18 — Active source identity, targeted correction and persistent gaps
 
-The **active** EU/common source pack is `references/source-pack/core-source-pack-manifest-0.6.1.json`. It contains 46 logical sources represented by 47 local files. Run `scripts/verify_bundled_source_pack.py` for exact local bytes and `scripts/c18_source_integrity.py` for a source-by-source content-extent register. Both gates are deterministic and perform no network access. The C6 synthetic intake refuses older source manifests.
+The retained C1 0.6.1 compatibility manifest is bundled at `../eudirective-source-library/compatibility/core-source-pack/core-source-pack-0.6.1/core-source-pack-manifest-0.6.1.json`. It contains 46 logical sources represented by 47 local files. Run `scripts/verify_bundled_source_pack.py` for exact local bytes and `scripts/c18_source_integrity.py` for a source-by-source content-extent register. Both gates are deterministic and perform no network access. The C6 synthetic intake refuses older source manifests.
 
 ## Document restoration
 
 The restored English consolidated Directive 2004/38/EC source formerly omitted Article 2(2)(a). The new locally pinned text contains the small definition `(a) the spouse;`, placed directly after point 2 (family-member definition) and before point (b). The official reference checked was EUR-Lex consolidated `02004L0038-20110616` (version 16 June 2011), with an additional check against the original official instrument. `references/source-pack/c18-directive-art2-restoration.json` records the exact original and corrected file hashes and lengths, dates, a limited check scope, and official URLs.
 
-The unchanged v0.6.0 manifest records the **old** file digest. Historical declarations and the trust policy remain archived for provenance; the replaced active file is *not* misrepresented as satisfying v0.6.0. The 0.6.1 manifest, representation digest and separate code-root-pinned C7 policy digest are updated. The other 45 source records were not changed.
+The unchanged v0.6.0 manifest records the **old** file digest. Historical declarations and the trust policy remain archived for provenance; the replaced active file is *not* misrepresented as satisfying v0.6.0. The bundled 0.6.1 manifest, representation digest and separate code-root-pinned C7 policy digest are updated. The other 45 source records were not changed.
 
 ## What the source-level register proves
 

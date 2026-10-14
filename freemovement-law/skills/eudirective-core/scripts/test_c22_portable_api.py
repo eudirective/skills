@@ -13,6 +13,8 @@ from jsonschema import Draft202012Validator
 
 import c22_portable_api as api
 
+from source_library_paths import compatibility_root
+
 ROOT = Path(__file__).resolve().parents[1]
 CLI = ROOT / 'scripts' / 'c22_portable_api.py'
 
@@ -165,7 +167,7 @@ class C22aPortabilityTests(unittest.TestCase):
         self.assertNotIn('import mcp',script)
         self.assertNotIn('import eudirective_ms_sweden',script)
         self.assertNotIn('requests.post',script)
-        self.assertTrue((ROOT/'references/source-pack/core-source-pack-manifest-0.6.1.json').is_file())
+        self.assertTrue((compatibility_root()/'core-source-pack-manifest-0.6.1.json').is_file())
 
     def test_transport_schema_and_adapter_reject_freeform_data(self):
         schema=json.loads((ROOT/'references/contracts/c22-transport-request.schema.json').read_text())

@@ -17,7 +17,7 @@ import c7_trust_gate as trust
 from source_library_paths import compatibility_root
 
 ROOT = Path(__file__).resolve().parents[1]
-MANIFEST = ROOT / 'references/source-pack/core-source-pack-manifest-0.6.1.json'
+MANIFEST = compatibility_root() / 'core-source-pack-manifest-0.6.1.json'
 SOURCE_DIR = compatibility_root()
 
 class SourceReleaseError(Exception):
