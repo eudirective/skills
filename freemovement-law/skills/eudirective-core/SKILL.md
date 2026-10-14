@@ -425,7 +425,7 @@ Read `references/legal-engine-roadmap.md`, `references/c5a-topology-applicabilit
 
 Keep rollout narrow.
 
-- Normal v0.41.0 use includes read-only real-case C23/C24 guidance with current-source checks against official publishers when available, separately C6 synthetic controlled integration, C7 compatibility verification, and public-source development. Controlled script lanes remain bounded to synthetic/public data; the bundled source corpus is externally maintained and mirrored into plugin packages.
+- Normal v0.42.0 use includes read-only real-case C23/C24 guidance with current-source checks against official publishers when available, separately C6 synthetic controlled integration, C7 compatibility verification, and public-source development. Controlled script lanes remain bounded to synthetic/public data; the bundled source corpus is externally maintained and mirrored into plugin packages.
 - Private-case processing remains disabled in the deterministic controller foundation; read-only in-chat case guidance is separately supported under C23.
 - Do not use unverified host behavior as proof that personal data cannot bypass Python-controlled paths.
 - Do not treat `begin-delivery` as an external send. The controller only records authorization/delivery state; no network write/send/publish adapter is enabled under this version.
