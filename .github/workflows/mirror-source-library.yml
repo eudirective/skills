@@ -1,0 +1,66 @@
+name: Mirror source library
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 */6 * * *'
+  push:
+    paths:
+      - '.github/workflows/mirror-source-library.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mirror-source-library
+  cancel-in-progress: false
+
+jobs:
+  mirror:
+    name: Sync public-data/source-library
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out skills
+        uses: actions/checkout@v4
+        with:
+          path: skills
+
+      - name: Check out source-library only
+        uses: actions/checkout@v4
+        with:
+          repository: eudirective/public-data
+          ref: main
+          path: public-data
+          sparse-checkout: |
+            source-library
+          persist-credentials: false
+
+      - name: Mirror source library, preserving SKILL.md
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          source_dir="public-data/source-library"
+          destination_dir="skills/freemovement-law/skills/eudirective-source-library"
+
+          test -d "$source_dir"
+          test -f "$destination_dir/SKILL.md"
+
+          # SKILL.md belongs to the skill and must never be deleted or replaced.
+          rsync -a --delete --exclude='/SKILL.md' \
+            "$source_dir/" "$destination_dir/"
+
+          cd skills
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A freemovement-law/skills/eudirective-source-library
+          if git diff --cached --quiet; then
+            echo "Already synchronized"
+            exit 0
+          fi
+
+          git commit -m "Sync source-library from eudirective/public-data"
+          git push origin HEAD:main
