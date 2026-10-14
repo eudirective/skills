@@ -1,0 +1,379 @@
+{
+  "milestone": "C17b-c-d",
+  "mode": "fictional_review_only",
+  "case_id": "L8",
+  "procedure_stage": "pre_lodging",
+  "input_digests": {
+    "case": "7953bcf20d4dbeabc9fb4e5fe0cefccd4504aa109360e7e075690cf2cf745059",
+    "upstream_c17": "de1664f33aa184b290d3b18ab86289c3d3c32b2f396df0dbc964f5580d93f2bd",
+    "c12": "556e24c9f801ccbf5ec35773e66a436de40415cbc1dea43c00518387fb66b9b7",
+    "c13": "39f9fec801c6232e17a6b276c6a436c664b33cdc0cdd85126803c17710006a72"
+  },
+  "catalog_digests": {
+    "EU": "584291c8f04c18a1deb79289e1e0250057963568925db88c3a74de9654c26996",
+    "SE": "068d677b2269a4e53f026e2cb8bb0d0933be7caf6fe7be624bc19b6114a5da1e",
+    "TR": "8e15d05a080abfddfce6e8047b011975e9c06b7caeb1286c65e0bea6571d8440"
+  },
+  "source_assurance_warning": "National-law modules contain curated identity notes, not complete authoritative statutes; C1 active Article 2(2)(a) targeted repair does not establish full-source completeness; 21 C1 identity-only notes persist; no real-case merits review.",
+  "legal_violation_status": "not_determined",
+  "verified_legal_merits": false,
+  "send_authorized": false,
+  "requires_human_review": true,
+  "c17_questions": [
+    {
+      "rule_id": "eu:c12:entry-v-card-separation",
+      "topic": "Entry visa and residence-card procedures are not interchangeable",
+      "citations_for_human_check": [
+        {
+          "source_id": "eu:32004l0038",
+          "pinpoint_hint": "Directive 2004/38 Article 5(2) vs Articles 9-10.",
+          "assurance": "bundled_text_integrity_checked_not_completeness"
+        }
+      ],
+      "factual_items_for_verification": [
+        "case:procedure_type"
+      ],
+      "exception_questions": [
+        "Determine the legal role of each document; no entitlement is decided by procedure type alone."
+      ],
+      "question": "Please clarify the factual and procedural basis for the matter described as: Entry visa and residence-card procedures are not interchangeable.",
+      "legal_violation_status": "not_determined"
+    },
+    {
+      "rule_id": "eu:c16:electronic-proof-format",
+      "topic": "Electronic civil-record presentation versus paper-only condition",
+      "citations_for_human_check": [
+        {
+          "source_id": "eu:32004l0038",
+          "pinpoint_hint": "Article 5(2) facilitation: ascertain necessary family and mobility evidence for entry visas.",
+          "assurance": "bundled_text_integrity_checked_not_completeness"
+        },
+        {
+          "source_id": "eu:c-2023-1392",
+          "pinpoint_hint": "Commission guidance on documentary evidence; check specific passage and authenticity conditions.",
+          "assurance": "bundled_text_integrity_checked_not_completeness"
+        }
+      ],
+      "factual_items_for_verification": [
+        "element:evidence.proof_restriction_status",
+        "fact:paper_original_only_requested",
+        "fact:electronic_register_extract_offered",
+        "fact:format_rejection_claimed"
+      ],
+      "exception_questions": [
+        "Domestic recognition of an electronic record does not guarantee acceptance by a Swedish mission.",
+        "Check authenticity, translation, nationality-specific evidence rules and actual reasons for requiring a paper original."
+      ],
+      "question": "Please clarify the factual and procedural basis for the matter described as: Electronic civil-record presentation versus paper-only condition.",
+      "legal_violation_status": "not_determined"
+    },
+    {
+      "rule_id": "se:c16:electronic-format-review",
+      "topic": "Swedish handling of electronically issued foreign civil records",
+      "citations_for_human_check": [
+        {
+          "source_id": "se:src:family-visa-istanbul",
+          "pinpoint_hint": "Mission-published identity and relationship evidence categories; not acceptance of any foreign electronic record.",
+          "assurance": "country_source_summary_only"
+        },
+        {
+          "source_id": "se:src:admin-act",
+          "pinpoint_hint": "Assess investigation, proportionality and applicable immigration exceptions.",
+          "assurance": "country_source_summary_only"
+        }
+      ],
+      "factual_items_for_verification": [
+        "fact:paper_original_only_requested",
+        "fact:electronic_register_extract_offered",
+        "fact:format_rejection_claimed"
+      ],
+      "exception_questions": [
+        "Obtain a specific reason for requiring a paper original; Turkish domestic validity is a different legal question."
+      ],
+      "question": "Please clarify the factual and procedural basis for the matter described as: Swedish handling of electronically issued foreign civil records.",
+      "legal_violation_status": "not_determined"
+    },
+    {
+      "rule_id": "tr:c16:electronic-population-extract",
+      "topic": "Provenance of Turkish electronically issued population-register extract",
+      "citations_for_human_check": [
+        {
+          "source_id": "tr:src:turkiye-nvi-population",
+          "pinpoint_hint": "NVI official guidance on Turkish civil-register extracts and authenticated electronic availability.",
+          "assurance": "country_source_summary_only"
+        }
+      ],
+      "factual_items_for_verification": [
+        "fact:electronic_register_extract_offered",
+        "fact:issuer_source_claimed",
+        "fact:electronic_record_authenticity_unverified"
+      ],
+      "exception_questions": [
+        "An asserted e-Devlet origin needs actual validation; Turkish domestic status does not decide Swedish admissibility."
+      ],
+      "question": "Please clarify the factual and procedural basis for the matter described as: Provenance of Turkish electronically issued population-register extract.",
+      "legal_violation_status": "not_determined"
+    }
+  ],
+  "remedy_candidates": [
+    {
+      "remedy_id": "se:c17:mission-procedure-clarification",
+      "category": "administrative_clarification",
+      "authority_ref": "se:authority:istanbul-consulate",
+      "priority_class": "parallel_review",
+      "deadline": {
+        "kind": "not_established",
+        "rule": "No verified binding deadline in this catalogue.",
+        "trigger_event": null,
+        "calculation": "human_only"
+      },
+      "prerequisites_to_verify": [
+        "Confirm Directive 2004/38 scope and who is deciding",
+        "Verify that the reported instruction is attributable to the mission and still operative"
+      ],
+      "powers_to_verify": [
+        "Explain available application channels and procedural requirements; any correction depends on independent review"
+      ],
+      "limits": [
+        "Requesting clarification is not proof of an infringement or an appeal",
+        "No guaranteed response or interim protection",
+        "Do not treat a source note as full statutory text"
+      ],
+      "evidence_to_preserve": [
+        "Dated request, exact reply, published instruction snapshot, documentation actually offered"
+      ],
+      "source_refs": [
+        "se:src:family-visa-istanbul",
+        "se:src:admin-act"
+      ],
+      "filing_channel_for_review": "Official Swedish mission contact route: verify current address at Sweden Abroad.",
+      "intended_outcome_for_review": "Seek the mission's written explanation of the reported process and any available alternatives.",
+      "matched_rule_ids": [
+        "se:c16:electronic-format-review"
+      ],
+      "jurisdiction": "SE",
+      "status": "candidate_for_human_review",
+      "human_review_required": true,
+      "outstanding_checks": [
+        "Verify jurisdiction and present official source text",
+        "Verify factual predicates and contrary evidence",
+        "Verify current authority competence, prerequisites and deadlines",
+        "Check whether this route affects or leaves untouched other remedies"
+      ]
+    },
+    {
+      "remedy_id": "tr:c17:civil-record-authenticity-check",
+      "category": "evidence_acquisition",
+      "authority_ref": "tr:authority:turkiye-nvi",
+      "priority_class": "fact_gathering_parallel_review",
+      "deadline": {
+        "kind": "not_established",
+        "rule": "No verified binding deadline in this catalogue.",
+        "trigger_event": null,
+        "calculation": "human_only"
+      },
+      "prerequisites_to_verify": [
+        "Determine whether the alleged e-record is actually issued by the competent Turkish authority",
+        "Check authenticity/verification route for the particular document and intended use"
+      ],
+      "powers_to_verify": [
+        "Turkish records authority may provide/corroborate civil-register extracts under its own procedure"
+      ],
+      "limits": [
+        "This is not an appeal against Swedish decision-making",
+        "Verification of an electronically issued document does not itself determine whether a Swedish format requirement is lawful"
+      ],
+      "evidence_to_preserve": [
+        "Document form/version, issuer identity, verification code or other official validation path, rejection notice"
+      ],
+      "source_refs": [
+        "tr:src:turkiye-nvi-population"
+      ],
+      "filing_channel_for_review": "Use official Turkish civil registry information channels; no automatic data transfer.",
+      "intended_outcome_for_review": "Establish the origin and verifiability of the Turkish document for subsequent human legal review.",
+      "matched_rule_ids": [
+        "tr:c16:electronic-population-extract"
+      ],
+      "jurisdiction": "TR",
+      "status": "candidate_for_human_review",
+      "human_review_required": true,
+      "outstanding_checks": [
+        "Verify jurisdiction and present official source text",
+        "Verify factual predicates and contrary evidence",
+        "Verify current authority competence, prerequisites and deadlines",
+        "Check whether this route affects or leaves untouched other remedies"
+      ]
+    },
+    {
+      "remedy_id": "eu:c17:solvit",
+      "category": "informal_problem_solving",
+      "authority_ref": "eu:authority:solvit-network",
+      "priority_class": "nonbinding_parallel_review",
+      "deadline": {
+        "kind": "not_established",
+        "rule": "No verified binding deadline in this catalogue.",
+        "trigger_event": null,
+        "calculation": "human_only"
+      },
+      "prerequisites_to_verify": [
+        "Check whether the complaint presents a qualifying cross-border EU-law problem with a public authority",
+        "Confirm SOLVIT competence and any parallel formal deadline"
+      ],
+      "powers_to_verify": [
+        "Facilitate informal cross-border discussion/problem solving through SOLVIT network"
+      ],
+      "limits": [
+        "Not a court or compulsory review procedure",
+        "No guaranteed individual redress",
+        "Do not postpone a formal appeal or time-critical filing"
+      ],
+      "evidence_to_preserve": [
+        "Chronology, relevant EU free-movement basis, written conduct, official source and contrary explanation"
+      ],
+      "source_refs": [
+        "eu:32013h0461"
+      ],
+      "filing_channel_for_review": "Verify official SOLVIT eligibility and national centre channel before referral.",
+      "intended_outcome_for_review": "Explore informal EU-law problem-solving without substituting for formal remedies.",
+      "matched_rule_ids": [
+        "eu:c16:electronic-proof-format"
+      ],
+      "jurisdiction": "EU",
+      "status": "candidate_for_human_review",
+      "human_review_required": true,
+      "outstanding_checks": [
+        "Verify jurisdiction and present official source text",
+        "Verify factual predicates and contrary evidence",
+        "Verify current authority competence, prerequisites and deadlines",
+        "Check whether this route affects or leaves untouched other remedies"
+      ]
+    },
+    {
+      "remedy_id": "eu:c17:commission-complaint",
+      "category": "eu_law_enforcement_complaint",
+      "authority_ref": "eu:authority:european-commission",
+      "priority_class": "systemic_parallel_review",
+      "deadline": {
+        "kind": "not_established",
+        "rule": "No verified binding deadline in this catalogue.",
+        "trigger_event": null,
+        "calculation": "human_only"
+      },
+      "prerequisites_to_verify": [
+        "Assess whether an alleged Member State breach is substantiated and potentially relevant to Commission enforcement",
+        "Identify national procedural redress independently"
+      ],
+      "powers_to_verify": [
+        "Examine EU-law compliance at Member State level under Commission enforcement powers"
+      ],
+      "limits": [
+        "Not an individual appeal or guaranteed individual remedy",
+        "No guaranteed Commission action",
+        "Does not pause national deadlines"
+      ],
+      "evidence_to_preserve": [
+        "Specific Member State practice, comparable documented incidents if available, primary EU law basis, contrary explanations"
+      ],
+      "source_refs": [
+        "eu:commission-eu-law-complaint"
+      ],
+      "filing_channel_for_review": "Verify current official contact/submission instructions before use.",
+      "intended_outcome_for_review": "Flag a possible systemic EU-law issue for enforcement consideration, not case reversal.",
+      "matched_rule_ids": [
+        "eu:c16:electronic-proof-format"
+      ],
+      "jurisdiction": "EU",
+      "status": "candidate_for_human_review",
+      "human_review_required": true,
+      "outstanding_checks": [
+        "Verify jurisdiction and present official source text",
+        "Verify factual predicates and contrary evidence",
+        "Verify current authority competence, prerequisites and deadlines",
+        "Check whether this route affects or leaves untouched other remedies"
+      ]
+    }
+  ],
+  "excluded_routes": [],
+  "parallelism_warnings": [
+    "Candidate order is a review queue, not a recommendation or sequence of legally required steps.",
+    "Clarification, SOLVIT, Commission or JO complaints do not automatically suspend national appeal deadlines.",
+    "Do not calculate dates, send correspondence, or infer violation or eligibility from a fictional source-anchored predicate.",
+    "Review potentially urgent formal appeal independently and in parallel; no waiting step is authorized."
+  ],
+  "correspondence_drafts": [
+    {
+      "remedy_id": "se:c17:mission-procedure-clarification",
+      "format": "administrative_clarification",
+      "recipient_placeholder": "[VERIFY CURRENT COMPETENT AUTHORITY]",
+      "text": "DRAFT PROCEDURAL CLARIFICATION — FICTIONAL REVIEW ONLY / DO NOT SEND\nTo: [VERIFY CURRENT COMPETENT AUTHORITY; NO ADDRESS INSERTED]\nRe: [FICTIONAL L8 — REPLACE WITH HUMAN-VERIFIED REFERENCE ONLY IF AUTHORIZED]\n\nThe fictional review record raises the following matters for verification: Swedish handling of electronically issued foreign civil records.\nThese are unverified allegations and source-qualified questions, not findings.\n\nPlease clarify in writing the competent procedure, source of the reported requirement, any applicable exception, and available means to present relevant evidence. If the report is inaccurate, please identify the applicable procedure instead.\n\nRelevant source identifiers for a human to inspect: se:src:family-visa-istanbul, se:src:admin-act.\nDocuments and dates must be checked independently; attach only material required and lawfully shareable.\nThe recipient, competence, applicable law, filing requirements and deadline remain unverified.\n",
+      "send_authorized": false,
+      "human_review_required": true
+    },
+    {
+      "remedy_id": "tr:c17:civil-record-authenticity-check",
+      "format": "evidence_acquisition",
+      "recipient_placeholder": "[VERIFY CURRENT COMPETENT AUTHORITY]",
+      "text": "DRAFT DOCUMENT VERIFICATION REQUEST — FICTIONAL REVIEW ONLY / DO NOT SEND\nTo: [VERIFY CURRENT COMPETENT AUTHORITY; NO ADDRESS INSERTED]\nRe: [FICTIONAL L8 — REPLACE WITH HUMAN-VERIFIED REFERENCE ONLY IF AUTHORIZED]\n\nThe fictional review record raises the following matters for verification: Provenance of Turkish electronically issued population-register extract.\nThese are unverified allegations and source-qualified questions, not findings.\n\nPlease identify an official method for confirming this document's provenance and authenticity. No private documents should be disclosed without a separate lawful procedure and review.\n\nRelevant source identifiers for a human to inspect: tr:src:turkiye-nvi-population.\nDocuments and dates must be checked independently; attach only material required and lawfully shareable.\nThe recipient, competence, applicable law, filing requirements and deadline remain unverified.\n",
+      "send_authorized": false,
+      "human_review_required": true
+    },
+    {
+      "remedy_id": "eu:c17:solvit",
+      "format": "informal_problem_solving",
+      "recipient_placeholder": "[VERIFY CURRENT COMPETENT AUTHORITY]",
+      "text": "DRAFT PROCEDURAL CLARIFICATION — FICTIONAL REVIEW ONLY / DO NOT SEND\nTo: [VERIFY CURRENT COMPETENT AUTHORITY; NO ADDRESS INSERTED]\nRe: [FICTIONAL L8 — REPLACE WITH HUMAN-VERIFIED REFERENCE ONLY IF AUTHORIZED]\n\nThe fictional review record raises the following matters for verification: Electronic civil-record presentation versus paper-only condition.\nThese are unverified allegations and source-qualified questions, not findings.\n\nPlease clarify in writing the competent procedure, source of the reported requirement, any applicable exception, and available means to present relevant evidence. If the report is inaccurate, please identify the applicable procedure instead.\n\nRelevant source identifiers for a human to inspect: eu:32013h0461.\nDocuments and dates must be checked independently; attach only material required and lawfully shareable.\nThe recipient, competence, applicable law, filing requirements and deadline remain unverified.\n",
+      "send_authorized": false,
+      "human_review_required": true
+    },
+    {
+      "remedy_id": "eu:c17:commission-complaint",
+      "format": "eu_law_enforcement_complaint",
+      "recipient_placeholder": "[VERIFY CURRENT COMPETENT AUTHORITY]",
+      "text": "DRAFT SYSTEMIC EU-LAW COMPLAINT — FICTIONAL REVIEW ONLY / DO NOT SEND\nTo: [VERIFY CURRENT COMPETENT AUTHORITY; NO ADDRESS INSERTED]\nRe: [FICTIONAL L8 — REPLACE WITH HUMAN-VERIFIED REFERENCE ONLY IF AUTHORIZED]\n\nThe fictional review record raises the following matters for verification: Electronic civil-record presentation versus paper-only condition.\nThese are unverified allegations and source-qualified questions, not findings.\n\nThis is submitted as a proposed issue for EU-law enforcement review, not an individual appeal. The factual pattern, Member-State attribution and applicable Union law must be independently established.\n\nRelevant source identifiers for a human to inspect: eu:commission-eu-law-complaint.\nDocuments and dates must be checked independently; attach only material required and lawfully shareable.\nThe recipient, competence, applicable law, filing requirements and deadline remain unverified.\n",
+      "send_authorized": false,
+      "human_review_required": true
+    }
+  ],
+  "decision_gate": "blocked_pending_source_factual_and_human_review",
+  "missing_prerequisites": [
+    "Official current and operative national legislation and any exceptions",
+    "Authenticated communications and independent fact assessment",
+    "Current competent recipient and applicable court/appeal procedure",
+    "Decision service dates, extension/suspension rules and filing proof",
+    "Independent legal-semantic review including unresolved C15f, 21 incomplete C1 source notes, and independent full-source verification",
+    "Private-data authorization and trustworthy human approval before any real use"
+  ],
+  "review_facts": [
+    {
+      "rule_id": "eu:c12:entry-v-card-separation",
+      "facts_to_check": [
+        "case:procedure_type"
+      ]
+    },
+    {
+      "rule_id": "eu:c16:electronic-proof-format",
+      "facts_to_check": [
+        "element:evidence.proof_restriction_status",
+        "fact:paper_original_only_requested",
+        "fact:electronic_register_extract_offered",
+        "fact:format_rejection_claimed"
+      ]
+    },
+    {
+      "rule_id": "se:c16:electronic-format-review",
+      "facts_to_check": [
+        "fact:paper_original_only_requested",
+        "fact:electronic_register_extract_offered",
+        "fact:format_rejection_claimed"
+      ]
+    },
+    {
+      "rule_id": "tr:c16:electronic-population-extract",
+      "facts_to_check": [
+        "fact:electronic_register_extract_offered",
+        "fact:issuer_source_claimed",
+        "fact:electronic_record_authenticity_unverified"
+      ]
+    }
+  ]
+}

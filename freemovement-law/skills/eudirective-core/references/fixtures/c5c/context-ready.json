@@ -1,0 +1,56 @@
+{
+  "context_version": "0.2.0",
+  "case_id": "CASE-C5A-FRONTIER",
+  "evidence_requests": [
+    {
+      "request_id": "evidence:dependency-proof",
+      "kind": "dependency_freedom_of_proof",
+      "scope": "synthetic dependency evidence review",
+      "basis_refs": [
+        "legal_regime.directive_2004_38"
+      ]
+    },
+    {
+      "request_id": "evidence:restriction",
+      "kind": "proof_restriction_review",
+      "scope": "synthetic closed-proof assertion",
+      "basis_refs": [
+        "se:rule:fixture"
+      ]
+    }
+  ],
+  "deadline_requests": [
+    {
+      "request_id": "deadline:calendar",
+      "deadline_ref": "se:deadline:c5c-calendar",
+      "suspension_state": "none",
+      "extension_state": "none",
+      "binding_ref": "binding:calendar"
+    }
+  ],
+  "route_requests": [
+    {
+      "request_id": "route:se-fixture",
+      "route_ref": "se:route:fixture",
+      "issue_type": "fixture issue",
+      "target_authority_level": "member_state_authority"
+    }
+  ],
+  "deadline_bindings": [
+    {
+      "binding_id": "binding:calendar",
+      "deadline_ref": "se:deadline:c5c-calendar",
+      "rule_ref": "se:rule:fixture",
+      "trigger_event_ref": "event:lodged"
+    }
+  ],
+  "temporal_events": [
+    {
+      "event_id": "event:lodged",
+      "event_type": "synthetic lodgement event",
+      "event_date": "2026-10-01",
+      "event_date_source_ref": "synthetic:lodgement-record",
+      "event_date_provenance_kind": "document"
+    }
+  ]
+}

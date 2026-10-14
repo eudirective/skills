@@ -1,0 +1,330 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Core case input v0.2",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "contract_version": {
+      "const": "0.2.0"
+    },
+    "case_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$"
+    },
+    "purpose": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 500
+    },
+    "procedure_type": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 120
+    },
+    "procedure_stage": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 120
+    },
+    "user_objective": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1000
+    },
+    "geography": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "nationality": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 80
+        },
+        "residence_state": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 80
+        },
+        "work_state": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 80
+        },
+        "intended_residence_state": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 80
+        },
+        "application_country": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 80
+        },
+        "deciding_state": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 80
+        },
+        "representing_state": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 80
+        },
+        "document_issuing_country": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 80
+        },
+        "challenged_authority_state": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 80
+        }
+      }
+    },
+    "facts": {
+      "type": "array",
+      "maxItems": 500,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "fact_id",
+          "category",
+          "value",
+          "provenance",
+          "sensitivity"
+        ],
+        "properties": {
+          "fact_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$"
+          },
+          "category": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 120
+          },
+          "value": {
+            "type": [
+              "string",
+              "number",
+              "integer",
+              "boolean",
+              "null"
+            ],
+            "maxLength": 4000
+          },
+          "provenance": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "kind"
+            ],
+            "properties": {
+              "kind": {
+                "enum": [
+                  "user_assertion",
+                  "document",
+                  "authority_statement",
+                  "mechanical_calculation",
+                  "public_source",
+                  "model_inference"
+                ]
+              },
+              "source_ref": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "maxLength": 300
+              }
+            }
+          },
+          "sensitivity": {
+            "enum": [
+              "protected",
+              "analysis",
+              "public"
+            ]
+          }
+        }
+      }
+    },
+    "module_requests": {
+      "type": "array",
+      "maxItems": 30,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "request_id",
+          "family",
+          "jurisdiction",
+          "role",
+          "required"
+        ],
+        "properties": {
+          "request_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$"
+          },
+          "family": {
+            "enum": [
+              "member_state",
+              "applicant_country"
+            ]
+          },
+          "jurisdiction": {
+            "type": "string",
+            "minLength": 2,
+            "maxLength": 80
+          },
+          "role": {
+            "enum": [
+              "residence_state",
+              "work_state",
+              "intended_residence_state",
+              "deciding_state",
+              "representing_state",
+              "challenged_authority_state",
+              "document_issuing_state",
+              "application_context",
+              "mission_context"
+            ]
+          },
+          "required": {
+            "type": "boolean"
+          },
+          "freshness_requirement": {
+            "enum": [
+              "live_current",
+              "baseline_integrity"
+            ],
+            "description": "Freshness assurance required from this module. Omitted means live_current."
+          },
+          "destination_state": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 2,
+            "maxLength": 80
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "family": {
+                  "const": "member_state"
+                }
+              },
+              "required": [
+                "family"
+              ]
+            },
+            "then": {
+              "properties": {
+                "role": {
+                  "enum": [
+                    "residence_state",
+                    "work_state",
+                    "intended_residence_state",
+                    "deciding_state",
+                    "representing_state",
+                    "challenged_authority_state",
+                    "document_issuing_state"
+                  ]
+                },
+                "destination_state": {
+                  "type": "null"
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "family": {
+                  "const": "applicant_country"
+                }
+              },
+              "required": [
+                "family"
+              ]
+            },
+            "then": {
+              "required": [
+                "destination_state"
+              ],
+              "properties": {
+                "role": {
+                  "enum": [
+                    "application_context",
+                    "mission_context"
+                  ]
+                },
+                "destination_state": {
+                  "type": "string",
+                  "minLength": 2,
+                  "maxLength": 80
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "privacy_classification": {
+      "enum": [
+        "synthetic",
+        "public",
+        "private"
+      ]
+    },
+    "core_freshness_requirement": {
+      "enum": [
+        "live_current",
+        "baseline_integrity"
+      ],
+      "description": "Freshness assurance required from the implicit core_source module. Omitted means live_current."
+    }
+  },
+  "required": [
+    "contract_version",
+    "case_id",
+    "purpose",
+    "procedure_type",
+    "procedure_stage",
+    "user_objective",
+    "geography",
+    "facts",
+    "module_requests",
+    "privacy_classification"
+  ]
+}

@@ -1,0 +1,38 @@
+| # | Generalized strategy | Operational meaning |
+|---|---|---|
+| 1 | **Conceal what need not be revealed** | Do not volunteer information, intentions, capabilities, weaknesses, relationships, or strategy. Where disclosure is necessary, reveal no more than required or useful. |
+| 2 | **Pressure the weak point, not the defended point** | If the direct obstacle is strong, act elsewhere so that developments there force movement on the real objective. |
+| 3 | **Make others do the work** | Use another rule, institution, actor, dependency, incentive, or process to produce pressure or consequences that you would otherwise have to create yourself. |
+| 4 | **Make time and effort asymmetric** | Avoid exhausting yourself against resistance. Structure matters so maintaining the opposing position costs them more than maintaining yours costs you. |
+| 5 | **Exploit moments of weakness** | When disruption, overload, inconsistency, transition, mistakes, or external events weaken a position, use the temporary opening. |
+| 6 | **Control where attention goes** | Allow attention to settle on one issue or activity while the consequential action occurs elsewhere. Do not identify your decisive move unnecessarily. |
+| 7 | **Create leverage from uncertainty** | Absence, ambiguity, expectation, unanswered questions, apparent possibilities, and incomplete information can themselves change behaviour. Do not manufacture facts, but recognize that uncertainty has strategic value. |
+| 8 | **Keep an obvious route and another route** | Continue the visible or expected process while independently building an alternative that need not receive the same attention. |
+| 9 | **Let others create your advantage** | Do not intervene where conflict, delay, contradiction, mistakes, external developments, or other actors may improve your position without your involvement. |
+| 10 | **Keep cooperation and opposition separate** | Be courteous, helpful, and apparently non-confrontational without surrendering leverage, objections, remedies, or preparations. |
+| 11 | **Sacrifice what is cheaper** | Deliberately give up a lesser position, argument, entitlement, resource, or objective to preserve something substantially more important. |
+| 12 | **Take incidental advantages** | While pursuing the main objective, collect useful information, admissions, precedents, contacts, documents, commitments, procedural advantages, or concessions whenever the cost is low. |
+| 13 | **Probe to force revelation** | Make a limited move whose principal purpose is to observe the reaction. Use the response to discover hidden positions, rules, actors, weaknesses, intentions, or procedures. |
+| 14 | **Reactivate dormant resources** | Bring an overlooked rule, precedent, promise, old position, document, procedure, institution, or relationship back into active use. |
+| 15 | **Move the contest away from their advantage** | Change forum, procedure, timing, framing, decision-maker, factual setting, or route so that an existing advantage no longer protects the obstacle. |
+| 16 | **Give room so the other side commits** | Do not stop every undesirable action immediately. Controlled freedom can cause the other side to explain itself, overreach, reveal information, assume responsibility, or create a better record. |
+| 17 | **Exchange little for much** | Use a small disclosure, question, concession, proposal, test, or commitment to elicit information or action worth considerably more. |
+| 18 | **Find the controlling node** | Identify the person, assumption, authority, bottleneck, dependency, resource, or decision that holds the rest of the problem together. Target that rather than every manifestation. |
+| 19 | **Remove the basis, not the symptom** | Challenge the authority, premise, factual assumption, dependency, or enabling condition that makes the unwanted consequence possible. |
+| 20 | **Use disorder as manoeuvring space** | Fragmentation, conflicting positions, uncertainty, rapid change, poor coordination, and institutional complexity can create openings unavailable in a settled system. |
+| 21 | **Abandon the exposed shell, preserve the objective** | Withdraw from a compromised route, formulation, argument, structure, or apparent position while quietly retaining the underlying objective through another form. |
+| 22 | **Close the escape routes** | Once a useful position has emerged, narrow the questions, fix facts and statements in the record, obtain precise commitments, and make later retreat into ambiguity harder. |
+| 23 | **Build support beyond the immediate opponent** | Strengthen relationships with actors outside the immediate confrontation whose interests, authority, or influence can alter the balance nearer the objective. |
+| 24 | **Use one route to reach another objective** | Lawful access obtained through one procedure, relationship, entitlement, forum, or purpose may create opportunities that could not easily be reached directly. |
+| 25 | **Change the structure underneath the dispute** | Alter definitions, assumptions, evidence, dependencies, procedures, standards, or decision criteria until the original position can no longer operate in the same way. |
+| 26 | **Attack indirectly through principle or example** | Address a practice, analogous case, general rule, hypothetical, or systemic issue when doing so communicates pressure on the actual target without confronting it directly. |
+| 27 | **Appear less informed than you are** | Do not reveal the extent of your knowledge, evidence, preparation, intentions, or alternatives prematurely. Encourage others to explain themselves before showing your hand. |
+| 28 | **Secure commitment before exposing consequences** | Encourage the other side to state, adopt, repeat, or act upon a definite position. Once committed, test that position and make withdrawal costly or revealing. |
+| 29 | **Amplify apparent strength** | Organization, corroboration, documentation, coordination, visible preparation, and presentation can make limited resources exert greater influence. The strength must be presented, not fabricated. |
+| 30 | **Take control of someone else's process** | Enter within a framework controlled by another actor, then progressively determine the questions, evidence, agenda, standards, sequence, or required next actions. |
+| 31 | **Make the desired behaviour attractive** | Use incentives, convenience, reputation, relationships, mutual interest, or reduced cost so that the other side voluntarily chooses the result you want. |
+| 32 | **Do not expose weakness when uncertainty protects you** | If your actual position is weaker than it appears, avoid gratuitously resolving uncertainty that presently discourages challenge. Never make false factual claims about your strength. |
+| 33 | **Turn their own system against itself** | Identify conflicting statements, actors, departments, rules, interests, records, procedures, or incentives and arrange matters so those contradictions weaken the opposing position. |
+| 34 | **Accept a controlled loss to gain a larger advantage** | Voluntarily incur a limited cost, inconvenience, concession, disclosure, or setback where doing so establishes credibility, evidence, standing, commitment, or superior later leverage. |
+| 35 | **Chain mechanisms together** | Design sequences in which one move creates information, leverage, commitment, or conditions for the next. Prefer reinforcing combinations over isolated tactics. |
+| 36 | **Withdraw before the position becomes destructive** | Abandon the immediate contest, timing, forum, route, or objective when continuing would cause disproportionate loss. Preserve the ability to return by another route. |

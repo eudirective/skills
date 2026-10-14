@@ -1,0 +1,552 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "engine_version",
+    "case_id",
+    "mode",
+    "legal_violation_status",
+    "bindings",
+    "documents",
+    "observations",
+    "fact_checks",
+    "rule_links",
+    "unresolved",
+    "limitations",
+    "c14_interpretation_candidates",
+    "c14_review_targets"
+  ],
+  "properties": {
+    "engine_version": {
+      "const": "0.2.0"
+    },
+    "case_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "mode": {
+      "enum": [
+        "enrolled",
+        "not_enrolled"
+      ]
+    },
+    "legal_violation_status": {
+      "const": "not_determined"
+    },
+    "bindings": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "case_sha256",
+        "elements_sha256",
+        "c12_sha256",
+        "evidence_set_sha256",
+        "document_index_sha256",
+        "pattern_catalog_sha256",
+        "c14_grammar_sha256",
+        "c14_topic_sha256"
+      ],
+      "properties": {
+        "case_sha256": {
+          "$ref": "#/$defs/hash"
+        },
+        "elements_sha256": {
+          "$ref": "#/$defs/hash"
+        },
+        "c12_sha256": {
+          "$ref": "#/$defs/hash"
+        },
+        "evidence_set_sha256": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/hash"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "document_index_sha256": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/hash"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "pattern_catalog_sha256": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/hash"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "c14_grammar_sha256": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/hash"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "c14_topic_sha256": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/hash"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "documents": {
+      "type": "array",
+      "maxItems": 20,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "document_ref",
+          "format",
+          "sha256",
+          "extraction_warnings",
+          "segments",
+          "declared_source_kind"
+        ],
+        "properties": {
+          "document_ref": {
+            "type": "string"
+          },
+          "format": {
+            "enum": [
+              "txt",
+              "md",
+              "eml",
+              "html",
+              "pdf"
+            ]
+          },
+          "sha256": {
+            "$ref": "#/$defs/hash"
+          },
+          "extraction_warnings": {
+            "type": "array",
+            "maxItems": 20,
+            "items": {
+              "type": "string"
+            }
+          },
+          "segments": {
+            "type": "array",
+            "maxItems": 30,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "locator",
+                "segment_sha256",
+                "characters"
+              ],
+              "properties": {
+                "locator": {
+                  "type": "string"
+                },
+                "segment_sha256": {
+                  "$ref": "#/$defs/hash"
+                },
+                "characters": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 80000
+                }
+              }
+            }
+          },
+          "declared_source_kind": {
+            "type": "string",
+            "pattern": "^[a-z_]{3,100}$"
+          }
+        }
+      }
+    },
+    "observations": {
+      "type": "array",
+      "maxItems": 350,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "observation_id",
+          "fact_key",
+          "reported_value",
+          "document_ref",
+          "document_sha256",
+          "locator",
+          "segment_sha256",
+          "start",
+          "end",
+          "quote",
+          "pattern_id",
+          "evidence_assurance",
+          "authenticity_status",
+          "fact_truth_status"
+        ],
+        "properties": {
+          "observation_id": {
+            "type": "string"
+          },
+          "fact_key": {
+            "type": "string"
+          },
+          "reported_value": {
+            "type": [
+              "string",
+              "integer",
+              "boolean"
+            ]
+          },
+          "document_ref": {
+            "type": "string"
+          },
+          "document_sha256": {
+            "$ref": "#/$defs/hash"
+          },
+          "locator": {
+            "type": "string"
+          },
+          "segment_sha256": {
+            "$ref": "#/$defs/hash"
+          },
+          "start": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "end": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "quote": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 400
+          },
+          "pattern_id": {
+            "type": "string"
+          },
+          "evidence_assurance": {
+            "const": "bytes_pinned_passage_anchored_statement_only"
+          },
+          "authenticity_status": {
+            "const": "not_authenticated"
+          },
+          "fact_truth_status": {
+            "const": "not_determined"
+          }
+        }
+      }
+    },
+    "fact_checks": {
+      "type": "array",
+      "maxItems": 500,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "assessment_id",
+          "fact_key",
+          "c12_value",
+          "document_reported_values",
+          "observation_ids",
+          "status",
+          "fact_truth_status"
+        ],
+        "properties": {
+          "assessment_id": {
+            "type": "string"
+          },
+          "fact_key": {
+            "type": "string"
+          },
+          "c12_value": {
+            "type": [
+              "string",
+              "integer",
+              "boolean",
+              "null"
+            ]
+          },
+          "document_reported_values": {
+            "type": "array",
+            "maxItems": 60,
+            "items": {
+              "type": [
+                "string",
+                "integer",
+                "boolean"
+              ]
+            }
+          },
+          "observation_ids": {
+            "type": "array",
+            "maxItems": 350,
+            "items": {
+              "type": "string"
+            }
+          },
+          "status": {
+            "enum": [
+              "not_observed_in_documents",
+              "conflicting_document_statements",
+              "upstream_value_missing",
+              "document_statement_matches_upstream_value",
+              "document_statement_contradicts_upstream_value"
+            ]
+          },
+          "fact_truth_status": {
+            "const": "not_determined"
+          }
+        }
+      }
+    },
+    "rule_links": {
+      "type": "array",
+      "maxItems": 60,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "assessment_id",
+          "status",
+          "blocking_fact_keys"
+        ],
+        "properties": {
+          "assessment_id": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "not_applicable",
+              "requires_document_and_rule_review",
+              "passage_anchored_for_review"
+            ]
+          },
+          "blocking_fact_keys": {
+            "type": "array",
+            "maxItems": 40,
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "unresolved": {
+      "type": "array",
+      "maxItems": 500,
+      "items": {
+        "type": "string",
+        "maxLength": 500
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 40,
+      "items": {
+        "type": "string",
+        "maxLength": 500
+      }
+    },
+    "c14_interpretation_candidates": {
+      "type": "array",
+      "maxItems": 350,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "candidate_id",
+          "fact_key",
+          "proposed_value",
+          "document_ref",
+          "document_sha256",
+          "locator",
+          "segment_sha256",
+          "start",
+          "end",
+          "quote",
+          "language",
+          "grammar_id",
+          "interpretation_status",
+          "cautions",
+          "authenticity_status",
+          "fact_truth_status"
+        ],
+        "properties": {
+          "candidate_id": {
+            "type": "string",
+            "pattern": "^c14:candidate:[0-9]{4}$"
+          },
+          "fact_key": {
+            "type": "string",
+            "maxLength": 140
+          },
+          "proposed_value": {
+            "type": [
+              "string",
+              "boolean"
+            ]
+          },
+          "document_ref": {
+            "type": "string",
+            "maxLength": 160
+          },
+          "document_sha256": {
+            "$ref": "#/$defs/hash"
+          },
+          "locator": {
+            "type": "string",
+            "maxLength": 160
+          },
+          "segment_sha256": {
+            "$ref": "#/$defs/hash"
+          },
+          "start": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "end": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "quote": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 400
+          },
+          "language": {
+            "enum": [
+              "en",
+              "sv",
+              "tr"
+            ]
+          },
+          "grammar_id": {
+            "type": "string",
+            "maxLength": 120
+          },
+          "interpretation_status": {
+            "const": "candidate_requires_review"
+          },
+          "cautions": {
+            "type": "array",
+            "maxItems": 10,
+            "items": {
+              "type": "string",
+              "maxLength": 100
+            }
+          },
+          "authenticity_status": {
+            "const": "not_authenticated"
+          },
+          "fact_truth_status": {
+            "const": "not_determined"
+          }
+        }
+      }
+    },
+    "c14_review_targets": {
+      "type": "array",
+      "maxItems": 300,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "target_id",
+          "fact_key",
+          "document_ref",
+          "document_sha256",
+          "locator",
+          "segment_sha256",
+          "start",
+          "end",
+          "quote",
+          "topic_id",
+          "interpretation_status",
+          "proposed_value",
+          "authenticity_status",
+          "fact_truth_status"
+        ],
+        "properties": {
+          "target_id": {
+            "type": "string",
+            "pattern": "^c14:topic:[0-9]{4}$"
+          },
+          "fact_key": {
+            "type": "string",
+            "maxLength": 140
+          },
+          "document_ref": {
+            "type": "string",
+            "maxLength": 160
+          },
+          "document_sha256": {
+            "$ref": "#/$defs/hash"
+          },
+          "locator": {
+            "type": "string",
+            "maxLength": 160
+          },
+          "segment_sha256": {
+            "$ref": "#/$defs/hash"
+          },
+          "start": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "end": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "quote": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 400
+          },
+          "topic_id": {
+            "type": "string",
+            "maxLength": 120
+          },
+          "interpretation_status": {
+            "const": "requires_interpretation_review"
+          },
+          "proposed_value": {
+            "type": "null"
+          },
+          "authenticity_status": {
+            "const": "not_authenticated"
+          },
+          "fact_truth_status": {
+            "const": "not_determined"
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    }
+  }
+}

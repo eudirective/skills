@@ -1,0 +1,163 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "C5a actor-scoped context v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "context_version",
+    "case_id",
+    "actors",
+    "scoped_elements"
+  ],
+  "properties": {
+    "context_version": {
+      "const": "0.1.0"
+    },
+    "case_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "actors": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 20,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "actor_id",
+          "roles"
+        ],
+        "properties": {
+          "actor_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$"
+          },
+          "roles": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "enum": [
+                "applicant",
+                "union_citizen",
+                "family_member",
+                "sponsor",
+                "other"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "scoped_elements": {
+      "type": "array",
+      "maxItems": 100,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "element_id",
+          "actor_id",
+          "value",
+          "provenance_kind"
+        ],
+        "properties": {
+          "element_id": {
+            "enum": [
+              "person_status.eu_citizen_status",
+              "person_status.family_member_status",
+              "relationship.accompanying_or_joining"
+            ]
+          },
+          "actor_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$"
+          },
+          "related_actor_id": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1,
+            "maxLength": 160,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$"
+          },
+          "value": {
+            "type": [
+              "string",
+              "boolean"
+            ]
+          },
+          "provenance_kind": {
+            "enum": [
+              "user_assertion",
+              "document",
+              "authority_statement",
+              "mechanical_calculation",
+              "public_source",
+              "model_inference"
+            ]
+          },
+          "source_ref": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "maxLength": 300
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "element_id": {
+                  "enum": [
+                    "person_status.eu_citizen_status",
+                    "person_status.family_member_status"
+                  ]
+                }
+              },
+              "required": [
+                "element_id"
+              ]
+            },
+            "then": {
+              "properties": {
+                "value": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 160
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "element_id": {
+                  "const": "relationship.accompanying_or_joining"
+                }
+              },
+              "required": [
+                "element_id"
+              ]
+            },
+            "then": {
+              "properties": {
+                "value": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

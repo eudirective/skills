@@ -1,0 +1,195 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "C5b hierarchy/principles context v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "context_version",
+    "case_id",
+    "hierarchy_questions",
+    "principle_requests",
+    "source_use_requests"
+  ],
+  "properties": {
+    "context_version": {
+      "const": "0.1.0"
+    },
+    "case_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "hierarchy_questions": {
+      "type": "array",
+      "maxItems": 100,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "question_id",
+          "kind",
+          "scope",
+          "eu_source_refs",
+          "national_rule_refs",
+          "assertion_status",
+          "provenance_kind"
+        ],
+        "properties": {
+          "question_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$",
+            "maxLength": 160
+          },
+          "kind": {
+            "const": "eu_vs_national"
+          },
+          "scope": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          },
+          "eu_source_refs": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 20,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$"
+            }
+          },
+          "national_rule_refs": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 20,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$"
+            }
+          },
+          "assertion_status": {
+            "enum": [
+              "asserted",
+              "candidate",
+              "unknown"
+            ]
+          },
+          "provenance_kind": {
+            "enum": [
+              "module_record",
+              "user_assertion",
+              "authority_statement",
+              "model_inference",
+              "public_source"
+            ]
+          },
+          "source_ref": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "maxLength": 300
+          }
+        }
+      }
+    },
+    "principle_requests": {
+      "type": "array",
+      "maxItems": 100,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "request_id",
+          "principle_id",
+          "scope",
+          "authority_level",
+          "requested_use",
+          "basis_refs"
+        ],
+        "properties": {
+          "request_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$",
+            "maxLength": 160
+          },
+          "principle_id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9._-]{1,79}$"
+          },
+          "scope": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          },
+          "authority_level": {
+            "enum": [
+              "eu_institution",
+              "eu_body",
+              "member_state_authority",
+              "national_court",
+              "other",
+              "unknown"
+            ]
+          },
+          "requested_use": {
+            "enum": [
+              "legal_review",
+              "interpretive_review",
+              "procedural_review"
+            ]
+          },
+          "basis_refs": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 20,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160
+            }
+          }
+        }
+      }
+    },
+    "source_use_requests": {
+      "type": "array",
+      "maxItems": 100,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "request_id",
+          "source_ref",
+          "proposed_use",
+          "scope"
+        ],
+        "properties": {
+          "request_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$",
+            "maxLength": 160
+          },
+          "source_ref": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$"
+          },
+          "proposed_use": {
+            "enum": [
+              "binding_rule",
+              "interpretive_support",
+              "background"
+            ]
+          },
+          "scope": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          }
+        }
+      }
+    }
+  }
+}

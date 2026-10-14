@@ -1,0 +1,241 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "C5c evidence/deadline/authority context v0.2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "context_version",
+    "case_id",
+    "evidence_requests",
+    "deadline_requests",
+    "route_requests"
+  ],
+  "properties": {
+    "context_version": {
+      "enum": [
+        "0.1.0",
+        "0.2.0"
+      ]
+    },
+    "case_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "evidence_requests": {
+      "type": "array",
+      "maxItems": 100,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "request_id",
+          "kind",
+          "scope",
+          "basis_refs"
+        ],
+        "properties": {
+          "request_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$",
+            "maxLength": 160
+          },
+          "kind": {
+            "enum": [
+              "dependency_freedom_of_proof",
+              "proof_restriction_review"
+            ]
+          },
+          "scope": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          },
+          "basis_refs": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 20,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160
+            }
+          }
+        }
+      }
+    },
+    "deadline_requests": {
+      "type": "array",
+      "maxItems": 100,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "request_id",
+          "deadline_ref",
+          "suspension_state",
+          "extension_state"
+        ],
+        "properties": {
+          "request_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$",
+            "maxLength": 160
+          },
+          "deadline_ref": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$",
+            "maxLength": 160
+          },
+          "suspension_state": {
+            "enum": [
+              "none",
+              "possible",
+              "active",
+              "unknown"
+            ]
+          },
+          "extension_state": {
+            "enum": [
+              "none",
+              "possible",
+              "active",
+              "unknown"
+            ]
+          },
+          "binding_ref": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$",
+            "maxLength": 160
+          }
+        }
+      }
+    },
+    "route_requests": {
+      "type": "array",
+      "maxItems": 100,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "request_id",
+          "route_ref",
+          "issue_type",
+          "target_authority_level"
+        ],
+        "properties": {
+          "request_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$",
+            "maxLength": 160
+          },
+          "route_ref": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$",
+            "maxLength": 160
+          },
+          "issue_type": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 300
+          },
+          "target_authority_level": {
+            "enum": [
+              "member_state_authority",
+              "national_court",
+              "eu_institution",
+              "eu_body",
+              "other",
+              "unknown"
+            ]
+          }
+        }
+      }
+    },
+    "deadline_bindings": {
+      "type": "array",
+      "maxItems": 100,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "binding_id",
+          "deadline_ref",
+          "rule_ref",
+          "trigger_event_ref"
+        ],
+        "properties": {
+          "binding_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$",
+            "maxLength": 160
+          },
+          "deadline_ref": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$",
+            "maxLength": 160
+          },
+          "rule_ref": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$",
+            "maxLength": 160
+          },
+          "trigger_event_ref": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$",
+            "maxLength": 160
+          }
+        }
+      }
+    },
+    "temporal_events": {
+      "type": "array",
+      "maxItems": 100,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "event_id",
+          "event_type",
+          "event_date",
+          "event_date_source_ref",
+          "event_date_provenance_kind"
+        ],
+        "properties": {
+          "event_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$",
+            "maxLength": 160
+          },
+          "event_type": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 500
+          },
+          "event_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "event_date_source_ref": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 400
+          },
+          "event_date_provenance_kind": {
+            "enum": [
+              "user_assertion",
+              "document",
+              "authority_statement",
+              "public_source",
+              "mechanical_calculation",
+              "model_inference",
+              "module_export",
+              "policy"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "actors": [
+    {
+      "actor_id": "actor:applicant",
+      "roles": [
+        "applicant",
+        "family_member"
+      ]
+    },
+    {
+      "actor_id": "actor:union-citizen",
+      "roles": [
+        "union_citizen",
+        "sponsor"
+      ]
+    }
+  ],
+  "case_id": "CASE-C10-L6",
+  "context_version": "0.1.0",
+  "scoped_elements": [
+    {
+      "actor_id": "actor:applicant",
+      "element_id": "person_status.eu_citizen_status",
+      "provenance_kind": "user_assertion",
+      "value": "not_eu_citizen"
+    },
+    {
+      "actor_id": "actor:union-citizen",
+      "element_id": "person_status.eu_citizen_status",
+      "provenance_kind": "document",
+      "source_ref": "synthetic:union-citizen-passport",
+      "value": "established"
+    },
+    {
+      "actor_id": "actor:applicant",
+      "element_id": "person_status.family_member_status",
+      "provenance_kind": "document",
+      "related_actor_id": "actor:union-citizen",
+      "source_ref": "synthetic:marriage-certificate",
+      "value": "established"
+    },
+    {
+      "actor_id": "actor:applicant",
+      "element_id": "relationship.accompanying_or_joining",
+      "provenance_kind": "user_assertion",
+      "related_actor_id": "actor:union-citizen",
+      "value": true
+    }
+  ]
+}

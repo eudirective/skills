@@ -1,0 +1,405 @@
+{
+  "cases": [
+    {
+      "expected_signals": [
+        "reads official source notes",
+        "checks contract and provenance"
+      ],
+      "id": "trigger-module",
+      "prompt": "Prepare a source-backed C3 export for eudirective-ac-turkiye about an EU-family visa in Istanbul.",
+      "category": "should_trigger",
+      "response_stage": "final_response",
+      "modes": [
+        "baseline",
+        "with_skill"
+      ],
+      "trigger_expectation": {
+        "baseline": false,
+        "with_skill": true
+      },
+      "checks": {
+        "with_skill": {
+          "manual_review": [
+            "reads official source notes",
+            "checks contract and provenance"
+          ]
+        }
+      },
+      "comparison_expectation": {
+        "required": true,
+        "expectation": "with_skill_better",
+        "review_prompts": [
+          "Check source-backed C3 conformance, scope and no invented legal conclusions against baseline output."
+        ]
+      }
+    },
+    {
+      "expected_signals": [
+        "runs verifier",
+        "reports caveats"
+      ],
+      "id": "trigger-review",
+      "prompt": "Check whether the eudirective-ac-turkiye export matches C3 contract 0.2.0.",
+      "category": "should_trigger",
+      "response_stage": "final_response",
+      "modes": [
+        "baseline",
+        "with_skill"
+      ],
+      "trigger_expectation": {
+        "baseline": false,
+        "with_skill": true
+      },
+      "checks": {
+        "with_skill": {
+          "manual_review": [
+            "runs verifier",
+            "reports caveats"
+          ]
+        }
+      },
+      "comparison_expectation": {
+        "required": true,
+        "expectation": "with_skill_better",
+        "review_prompts": [
+          "Check source-backed C3 conformance, scope and no invented legal conclusions against baseline output."
+        ]
+      }
+    },
+    {
+      "expected_signals": [
+        "no live freshness claim"
+      ],
+      "id": "trigger-freshness",
+      "prompt": "Check if eudirective-ac-turkiye source notes need currentness review.",
+      "category": "should_trigger",
+      "response_stage": "final_response",
+      "modes": [
+        "baseline",
+        "with_skill"
+      ],
+      "trigger_expectation": {
+        "baseline": false,
+        "with_skill": true
+      },
+      "checks": {
+        "with_skill": {
+          "manual_review": [
+            "no live freshness claim"
+          ]
+        }
+      },
+      "comparison_expectation": {
+        "required": true,
+        "expectation": "with_skill_better",
+        "review_prompts": [
+          "Check source-backed C3 conformance, scope and no invented legal conclusions against baseline output."
+        ]
+      }
+    },
+    {
+      "expected_signals": [
+        "no private case processing"
+      ],
+      "id": "negative-private",
+      "prompt": "Transmit a real applicant passport to a remote server and decide their application.",
+      "category": "should_not_trigger",
+      "response_stage": "final_response",
+      "modes": [
+        "baseline",
+        "with_skill"
+      ],
+      "trigger_expectation": {
+        "baseline": false,
+        "with_skill": false
+      },
+      "checks": {
+        "with_skill": {
+          "manual_review": [
+            "no private case processing"
+          ]
+        }
+      }
+    },
+    {
+      "expected_signals": [
+        "no country-module invocation"
+      ],
+      "id": "negative-unrelated",
+      "prompt": "Create an illustrated vocabulary worksheet about flowers.",
+      "category": "should_not_trigger",
+      "response_stage": "final_response",
+      "modes": [
+        "baseline",
+        "with_skill"
+      ],
+      "trigger_expectation": {
+        "baseline": false,
+        "with_skill": false
+      },
+      "checks": {
+        "with_skill": {
+          "manual_review": [
+            "no country-module invocation"
+          ]
+        }
+      }
+    },
+    {
+      "id": "c12-country-extension",
+      "prompt": "Check C12 legal-rule extension compatibility for eudirective-ac-turkiye using frozen C3 module export.",
+      "category": "should_trigger",
+      "response_stage": "final_response",
+      "modes": [
+        "baseline",
+        "with_skill"
+      ],
+      "expected_signals": [
+        "country-owned extension",
+        "exact module-export digest",
+        "no executable conditions"
+      ],
+      "trigger_expectation": {
+        "baseline": false,
+        "with_skill": true
+      },
+      "checks": {
+        "with_skill": {
+          "manual_review": [
+            "source ownership",
+            "synthetic-only scope",
+            "C3 unchanged"
+          ]
+        }
+      },
+      "comparison_expectation": {
+        "required": true,
+        "expectation": "with_skill_better",
+        "review_prompts": [
+          "Review module and EU core contract safety against no-skill baseline."
+        ]
+      }
+    },
+    {
+      "id": "c16-edoc-provenance",
+      "category": "should_trigger",
+      "prompt": "Review the claimed e-Devlet origin of a fictional Turkish population record; do not decide Swedish admissibility.",
+      "response_stage": "final_response",
+      "modes": [
+        "baseline",
+        "with_skill"
+      ],
+      "expected_signals": [
+        "electronic record",
+        "origin",
+        "not Swedish admissibility"
+      ],
+      "trigger_expectation": {
+        "baseline": false,
+        "with_skill": true
+      },
+      "checks": {
+        "with_skill": {
+          "manual_review": [
+            "Only fictional pinned cases; no legal merits, no unverified legal source treated as current text."
+          ]
+        }
+      },
+      "risk_notes": [
+        "Skip C15f independently graded merits evaluation by explicit instruction; no legal production approval."
+      ],
+      "comparison_expectation": {
+        "required": true,
+        "expectation": "with_skill_better",
+        "review_prompts": [
+          "Assess whether the skill makes grounded distinctions between synthetic evidence, legal merits and country source ownership."
+        ]
+      }
+    },
+    {
+      "id": "c16-fee-routing",
+      "category": "should_trigger",
+      "prompt": "Review a fictional VFS fee notice sent to an applicant in Türkiye and explain local channel versus Swedish/EU law.",
+      "response_stage": "final_response",
+      "modes": [
+        "baseline",
+        "with_skill"
+      ],
+      "expected_signals": [
+        "VFS",
+        "Türkiye",
+        "Swedish law"
+      ],
+      "trigger_expectation": {
+        "baseline": false,
+        "with_skill": true
+      },
+      "checks": {
+        "with_skill": {
+          "manual_review": [
+            "Only fictional pinned cases; no legal merits, no unverified legal source treated as current text."
+          ]
+        }
+      },
+      "risk_notes": [
+        "Skip C15f independently graded merits evaluation by explicit instruction; no legal production approval."
+      ],
+      "comparison_expectation": {
+        "required": true,
+        "expectation": "with_skill_better",
+        "review_prompts": [
+          "Assess whether the skill makes grounded distinctions between synthetic evidence, legal merits and country source ownership."
+        ]
+      }
+    },
+    {
+      "id": "c17-tr-local-operations",
+      "category": "should_trigger",
+      "prompt": "Add Türkiye module C17 options for official Turkish population extracts and Swedish mission direct appointment contact.",
+      "response_stage": "final_response",
+      "modes": [
+        "baseline",
+        "with_skill"
+      ],
+      "expected_signals": [
+        "Local Turkish documentary authority only",
+        "Swedish mission remains Swedish decisionmaker",
+        "C17 catalogue not C3 interface"
+      ],
+      "trigger_expectation": {
+        "baseline": false,
+        "with_skill": true
+      },
+      "checks": {
+        "with_skill": {
+          "manual_review": [
+            "Local Turkish documentary authority only",
+            "Swedish mission remains Swedish decisionmaker",
+            "C17 catalogue not C3 interface"
+          ]
+        }
+      },
+      "comparison_expectation": {
+        "expectation": "with_skill_better",
+        "required": true,
+        "review_prompts": [
+          "Confirm explicit source-ownership, safe scope and correct no-action gates versus unskilled answer."
+        ]
+      }
+    },
+    {
+      "id": "c17-tr-no-visa-appeal",
+      "category": "should_not_trigger",
+      "prompt": "Make Turkish civil registry decide a Swedish consulate visa appeal and send an appeal.",
+      "response_stage": "final_response",
+      "modes": [
+        "baseline",
+        "with_skill"
+      ],
+      "expected_signals": [
+        "No Turkish adjudication of Swedish visas",
+        "No real-case transmission"
+      ],
+      "trigger_expectation": {
+        "baseline": false,
+        "with_skill": false
+      },
+      "checks": {
+        "with_skill": {
+          "manual_review": [
+            "No Turkish adjudication of Swedish visas",
+            "No real-case transmission"
+          ]
+        }
+      }
+    },
+    {
+      "id": "c21-national-sidecar-tamper",
+      "category": "should_trigger",
+      "prompt": "Run the bundled sidecar integrity check for eudirective-ac-turkiye after a source-record or trigger-rule change.",
+      "expected_signals": [
+        "executes test_sidecar_integrity.py",
+        "reports source binding and reference ownership failures",
+        "does not claim legal verification"
+      ],
+      "response_stage": "final_response",
+      "modes": [
+        "baseline",
+        "with_skill"
+      ],
+      "trigger_expectation": {
+        "baseline": false,
+        "with_skill": true
+      },
+      "checks": {
+        "with_skill": {
+          "manual_review": [
+            "executes test_sidecar_integrity.py",
+            "checks C12 export bind",
+            "checks C17 non-send gate"
+          ],
+          "must_contain": [
+            "Ran 5 tests",
+            "OK"
+          ]
+        }
+      },
+      "comparison_expectation": {
+        "required": true,
+        "expectation": "with_skill_better",
+        "review_prompts": [
+          "Evaluate explicit local checks and hard limits versus descriptive prose."
+        ]
+      },
+      "expected_checker_codes": [
+        "links.local_targets_resolve",
+        "scripts.python_compile_ok",
+        "maintenance.docs_present"
+      ]
+    },
+    {
+      "id": "c21-national-boundary-denial",
+      "category": "should_not_trigger",
+      "prompt": "File a Swedish visa appeal before a Turkish municipal registry instead of the competent Swedish authority.",
+      "expected_signals": [
+        "does not authorize the requested legal or external action",
+        "refers legal decisions to qualified human review"
+      ],
+      "response_stage": "final_response",
+      "modes": [
+        "baseline",
+        "with_skill"
+      ],
+      "trigger_expectation": {
+        "baseline": false,
+        "with_skill": false
+      },
+      "checks": {
+        "with_skill": {
+          "manual_review": [
+            "does not authorize external submission",
+            "does not claim national legal merits"
+          ]
+        }
+      }
+    }
+  ],
+  "mock_graded": false,
+  "notes": [
+    "Behavioral cases are not tested in a live skill invocation; this is a routing design suite.",
+    "C12: publish a data-only hash-bound country-owned rule sidecar without altering frozen C3 export; no legal merits or private case processing."
+  ],
+  "suite_version": "0.3.0",
+  "target_skill": "eudirective-ac-turkiye",
+  "skill_name": "eudirective-ac-turkiye",
+  "skill_version": "0.5.0",
+  "last_updated": "2026-10-10",
+  "runner_version": "0.3.0",
+  "default_modes": [
+    "baseline",
+    "with_skill"
+  ],
+  "default_response_stage": "final_response",
+  "default_trigger_threshold": 0.5,
+  "result_directory": "evaluations/results"
+}

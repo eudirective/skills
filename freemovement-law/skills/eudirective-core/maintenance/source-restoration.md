@@ -1,0 +1,11 @@
+# Physical C1 source-pack restoration — 2026-10-10
+
+Recovery provenance: the original 0.5.0 package was present in the Project Library but was not directly materializable. An authorized non-destructive Library copy of its bytes was successfully materialized; the recovered archive SHA-256 is `7f261b95744780259c3349f659c62a9f73372fd8ee673ebf4510a02067a1501c` (660735 bytes). This is the *original recovered archive*, not a synthetic reconstruction. The 0.6.0 Deldwyn delta was taken from the prior C8 conversion package.
+
+The delta's `apply_delta.py` rejected any mismatch in baseline manifest canonical digest `40a5f9247fbe4d461f436e11a139ab29754b6fe661d94ffd933aa1c28f789bf6`, all 46 baseline SHA-256 values and sizes, the target manifest canonical digest `169281bc86fe70be300495b0daa9f44d8f2c5cb690a7e2a34ca310763e70e502`, the Deldwyn Markdown hash, or the included PDF's source-provenance hash. The result contains 46 logical sources/47 representations.
+
+All 47 physical representation bytes are retained outside the skill under `eudirective-source-library-0.6.0/compatibility/core-source-pack/core-source-pack-0.6.1/sources/`. No historic file was reconstituted from language-model paraphrases. The core policy's source manifest and representation hashes were **not changed**. This preserves C7 fixed synthetic-fixture trust and the frozen C3 source-module contract while keeping the retrievable corpus in the source library.
+
+Normal runtime MUST NOT read `maintenance/`. During releases, run `python scripts/verify_bundled_source_pack.py` before and after packaging, plus `python scripts/verify_complete_source_pack.py <physical-0.6.0-source-pack-dir>` for standalone distribution. Run `python scripts/test_source_restoration.py` including missing, modified and extra-file negative cases. Do not bypass a failed check by rewriting hashes or marking incomplete packs complete.
+
+Of the 47 representations, 21 are verified *normalized source notes*, not original judgments. No restored file was independently re-downloaded and compared with EUR-Lex on 2026-10-10. The restoration proves local reproducible integrity and resolves the physical distribution gap, not current legal source status, correct legal propositions, official document authenticity, or readiness for private cases.

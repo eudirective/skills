@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "C5e suggestion candidates v0.2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "engine_version",
+    "ruleset_version",
+    "case_id",
+    "bindings",
+    "objective",
+    "generation_status",
+    "recommendation_status",
+    "candidates",
+    "analysis_returns",
+    "non_applicable",
+    "blocked",
+    "limitations"
+  ],
+  "properties": {
+    "engine_version": {
+      "const": "0.2.0"
+    },
+    "ruleset_version": {
+      "const": "0.2.0"
+    },
+    "case_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "bindings": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "handoff_sha256",
+        "context_sha256",
+        "adapted_catalog_version",
+        "adapted_catalog_sha256",
+        "original_catalog_version",
+        "original_catalog_sha256"
+      ],
+      "properties": {
+        "handoff_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "context_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "adapted_catalog_version": {
+          "const": "0.1.0"
+        },
+        "adapted_catalog_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "original_catalog_version": {
+          "const": "0.1.0"
+        },
+        "original_catalog_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "objective": {
+      "type": "object"
+    },
+    "generation_status": {
+      "enum": [
+        "ready",
+        "blocked",
+        "empty"
+      ]
+    },
+    "recommendation_status": {
+      "const": "not_ranked"
+    },
+    "candidates": {
+      "type": "array",
+      "maxItems": 200,
+      "items": {
+        "type": "object"
+      }
+    },
+    "analysis_returns": {
+      "type": "array",
+      "maxItems": 200,
+      "items": {
+        "type": "object"
+      }
+    },
+    "non_applicable": {
+      "type": "array",
+      "maxItems": 200,
+      "items": {
+        "type": "object"
+      }
+    },
+    "blocked": {
+      "type": "array",
+      "maxItems": 200,
+      "items": {
+        "type": "object"
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "maxItems": 100,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 1500
+      }
+    }
+  }
+}

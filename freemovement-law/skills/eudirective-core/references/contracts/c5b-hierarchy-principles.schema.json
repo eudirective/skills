@@ -1,0 +1,565 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "C5b hierarchy and principles candidate set v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "engine_version",
+    "ruleset_version",
+    "contract_version",
+    "element_model_version",
+    "case_id",
+    "bindings",
+    "resolution_status",
+    "final_hierarchy_resolution",
+    "source_classifications",
+    "hierarchy_relationships",
+    "charter_scope",
+    "principle_candidates",
+    "source_use_assessments",
+    "unresolved",
+    "limitations"
+  ],
+  "properties": {
+    "engine_version": {
+      "const": "0.1.0"
+    },
+    "ruleset_version": {
+      "const": "0.1.0"
+    },
+    "contract_version": {
+      "const": "0.2.0"
+    },
+    "element_model_version": {
+      "const": "0.2.0"
+    },
+    "case_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "bindings": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "case_sha256",
+        "regime_candidates_sha256",
+        "element_bundle_sha256",
+        "context_sha256",
+        "source_pack_version",
+        "source_pack_sha256",
+        "principle_catalog_version",
+        "principle_catalog_sha256",
+        "module_bindings"
+      ],
+      "properties": {
+        "case_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "regime_candidates_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "element_bundle_sha256": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "context_sha256": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "source_pack_version": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "source_pack_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "principle_catalog_version": {
+          "const": "0.1.0"
+        },
+        "principle_catalog_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "module_bindings": {
+          "type": "array",
+          "maxItems": 20,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "module_id",
+              "jurisdiction",
+              "manifest_sha256",
+              "export_sha256"
+            ],
+            "properties": {
+              "module_id": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160
+              },
+              "jurisdiction": {
+                "type": "string",
+                "minLength": 2,
+                "maxLength": 80
+              },
+              "manifest_sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "export_sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              }
+            }
+          }
+        }
+      }
+    },
+    "resolution_status": {
+      "enum": [
+        "ready",
+        "blocked"
+      ]
+    },
+    "final_hierarchy_resolution": {
+      "const": "not_determined"
+    },
+    "source_classifications": {
+      "type": "array",
+      "maxItems": 200,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "source_ref",
+          "legal_status",
+          "source_type",
+          "binding_force",
+          "hierarchy_note"
+        ],
+        "properties": {
+          "source_ref": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160
+          },
+          "legal_status": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 120
+          },
+          "source_type": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 120
+          },
+          "binding_force": {
+            "enum": [
+              "primary_law",
+              "binding_secondary_law",
+              "binding_judicial_interpretation",
+              "non_binding_guidance",
+              "non_binding_soft_law",
+              "unknown"
+            ]
+          },
+          "hierarchy_note": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          }
+        }
+      }
+    },
+    "hierarchy_relationships": {
+      "type": "array",
+      "maxItems": 200,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "relationship_id",
+          "kind",
+          "status",
+          "participant_refs",
+          "source_refs",
+          "principle_ids",
+          "rationale_codes",
+          "review_required",
+          "detail"
+        ],
+        "properties": {
+          "relationship_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160
+          },
+          "kind": {
+            "enum": [
+              "lex_specialis_overlap",
+              "eu_vs_national"
+            ]
+          },
+          "status": {
+            "enum": [
+              "candidate",
+              "blocked",
+              "not_indicated",
+              "unresolved"
+            ]
+          },
+          "participant_refs": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 40,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160
+            }
+          },
+          "source_refs": {
+            "type": "array",
+            "maxItems": 40,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160
+            }
+          },
+          "principle_ids": {
+            "type": "array",
+            "maxItems": 30,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 80
+            }
+          },
+          "rationale_codes": {
+            "type": "array",
+            "maxItems": 30,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160
+            }
+          },
+          "review_required": {
+            "type": "boolean"
+          },
+          "detail": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1500
+          }
+        }
+      }
+    },
+    "charter_scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "disposition",
+        "eu_law_scope_state",
+        "source_refs",
+        "rationale_codes",
+        "review_required",
+        "detail"
+      ],
+      "properties": {
+        "disposition": {
+          "enum": [
+            "candidate",
+            "blocked",
+            "not_indicated",
+            "unknown"
+          ]
+        },
+        "eu_law_scope_state": {
+          "enum": [
+            "established",
+            "not_established",
+            "missing"
+          ]
+        },
+        "source_refs": {
+          "type": "array",
+          "maxItems": 20,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160
+          }
+        },
+        "rationale_codes": {
+          "type": "array",
+          "maxItems": 30,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160
+          }
+        },
+        "review_required": {
+          "type": "boolean"
+        },
+        "detail": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1200
+        }
+      }
+    },
+    "principle_candidates": {
+      "type": "array",
+      "maxItems": 200,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "request_id",
+          "principle_id",
+          "disposition",
+          "scope",
+          "authority_level",
+          "source_refs",
+          "rationale_codes",
+          "review_required",
+          "limitations",
+          "basis_refs",
+          "requested_use"
+        ],
+        "properties": {
+          "request_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160
+          },
+          "principle_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "disposition": {
+            "enum": [
+              "candidate",
+              "blocked",
+              "not_indicated",
+              "unknown"
+            ]
+          },
+          "scope": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          },
+          "authority_level": {
+            "enum": [
+              "eu_institution",
+              "eu_body",
+              "member_state_authority",
+              "national_court",
+              "other",
+              "unknown"
+            ]
+          },
+          "source_refs": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 20,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160
+            }
+          },
+          "rationale_codes": {
+            "type": "array",
+            "maxItems": 30,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160
+            }
+          },
+          "review_required": {
+            "type": "boolean"
+          },
+          "limitations": {
+            "type": "array",
+            "maxItems": 20,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1000
+            }
+          },
+          "basis_refs": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 20,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160
+            }
+          },
+          "requested_use": {
+            "enum": [
+              "legal_review",
+              "interpretive_review",
+              "procedural_review"
+            ]
+          }
+        }
+      }
+    },
+    "source_use_assessments": {
+      "type": "array",
+      "maxItems": 200,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "request_id",
+          "source_ref",
+          "proposed_use",
+          "disposition",
+          "binding_force",
+          "supporting_source_refs",
+          "rationale_codes",
+          "review_required",
+          "detail"
+        ],
+        "properties": {
+          "request_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160
+          },
+          "source_ref": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160
+          },
+          "proposed_use": {
+            "enum": [
+              "binding_rule",
+              "interpretive_support",
+              "background"
+            ]
+          },
+          "disposition": {
+            "enum": [
+              "candidate",
+              "blocked",
+              "not_indicated"
+            ]
+          },
+          "binding_force": {
+            "enum": [
+              "primary_law",
+              "binding_secondary_law",
+              "binding_judicial_interpretation",
+              "non_binding_guidance",
+              "non_binding_soft_law",
+              "unknown"
+            ]
+          },
+          "supporting_source_refs": {
+            "type": "array",
+            "maxItems": 20,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160
+            }
+          },
+          "rationale_codes": {
+            "type": "array",
+            "maxItems": 30,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160
+            }
+          },
+          "review_required": {
+            "type": "boolean"
+          },
+          "detail": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1200
+          }
+        }
+      }
+    },
+    "unresolved": {
+      "type": "array",
+      "maxItems": 200,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "code",
+          "scope",
+          "detail"
+        ],
+        "properties": {
+          "code": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160
+          },
+          "scope": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 300
+          },
+          "detail": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1200
+          }
+        }
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 40,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 1200
+      }
+    }
+  }
+}

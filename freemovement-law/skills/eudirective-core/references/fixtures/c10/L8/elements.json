@@ -1,0 +1,65 @@
+{
+  "bundle_id": "c10-scenario-L8",
+  "elements": [
+    {
+      "element_id": "person_status.eu_citizen_status",
+      "provenance_kind": "user_assertion",
+      "supplied_by": "case_workspace",
+      "value": "not_eu_citizen"
+    },
+    {
+      "element_id": "person_status.family_member_status",
+      "provenance_kind": "document",
+      "source_ref": "synthetic:family-document",
+      "supplied_by": "case_workspace",
+      "value": "established"
+    },
+    {
+      "element_id": "relationship.accompanying_or_joining",
+      "provenance_kind": "user_assertion",
+      "supplied_by": "case_workspace",
+      "value": true
+    },
+    {
+      "element_id": "movement.cross_border",
+      "provenance_kind": "user_assertion",
+      "supplied_by": "case_workspace",
+      "value": true
+    },
+    {
+      "element_id": "movement.free_movement_exercised",
+      "provenance_kind": "document",
+      "source_ref": "synthetic:movement-document",
+      "supplied_by": "case_workspace",
+      "value": true
+    },
+    {
+      "element_id": "legal_regime.eu_law_scope_established",
+      "provenance_kind": "mechanical_calculation",
+      "supplied_by": "core",
+      "value": true
+    },
+    {
+      "element_id": "evidence.proof_restriction_status",
+      "provenance_kind": "authority_statement",
+      "source_ref": "synthetic:paper-original-demand",
+      "supplied_by": "case_workspace",
+      "value": "asserted"
+    },
+    {
+      "element_id": "evidence.proof_restriction_source_ref",
+      "provenance_kind": "authority_statement",
+      "source_ref": "synthetic:paper-original-demand",
+      "supplied_by": "case_workspace",
+      "value": "se:src:family-visa-istanbul"
+    },
+    {
+      "element_id": "procedure.stage",
+      "provenance_kind": "document",
+      "source_ref": "synthetic:paper-original-demand",
+      "supplied_by": "case_workspace",
+      "value": "evidence_review"
+    }
+  ],
+  "model_version": "0.2.0"
+}

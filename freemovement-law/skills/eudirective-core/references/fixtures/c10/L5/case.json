@@ -1,0 +1,44 @@
+{
+  "case_id": "CASE-C10-L5",
+  "contract_version": "0.2.0",
+  "core_freshness_requirement": "baseline_integrity",
+  "facts": [
+    {
+      "category": "procedural_event",
+      "fact_id": "fact:c10:5:01",
+      "provenance": {
+        "kind": "user_assertion",
+        "source_ref": null
+      },
+      "sensitivity": "analysis",
+      "value": "In a fictional residence-card retention decision after divorce, authority relied on inaccessible employment information of former EU spouse; applicant requested that information; former spouse refused."
+    }
+  ],
+  "geography": {
+    "application_country": "SE",
+    "challenged_authority_state": "SE",
+    "deciding_state": "SE",
+    "document_issuing_country": "TR",
+    "intended_residence_state": "SE",
+    "nationality": "TR",
+    "representing_state": null,
+    "residence_state": "SE",
+    "work_state": null
+  },
+  "module_requests": [
+    {
+      "destination_state": null,
+      "family": "member_state",
+      "freshness_requirement": "baseline_integrity",
+      "jurisdiction": "SE",
+      "request_id": "req:sweden-deciding",
+      "required": true,
+      "role": "deciding_state"
+    }
+  ],
+  "privacy_classification": "synthetic",
+  "procedure_stage": "decision_pending",
+  "procedure_type": "residence_card",
+  "purpose": "C10 reviewed fictional trace for C9-L5",
+  "user_objective": "run source-qualified C10 fictional issue recognition and limitation review"
+}

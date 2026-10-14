@@ -1,0 +1,53 @@
+{
+  "case_id": "CASE-C10-L2",
+  "contract_version": "0.2.0",
+  "core_freshness_requirement": "baseline_integrity",
+  "facts": [
+    {
+      "category": "procedural_event",
+      "fact_id": "fact:c10:2:01",
+      "provenance": {
+        "kind": "user_assertion",
+        "source_ref": null
+      },
+      "sensitivity": "analysis",
+      "value": "A qualifying fictional applicant voluntarily chose VFS; paid a VFS service charge but no visa fee."
+    }
+  ],
+  "geography": {
+    "application_country": "TR",
+    "challenged_authority_state": "SE",
+    "deciding_state": "SE",
+    "document_issuing_country": "TR",
+    "intended_residence_state": "SE",
+    "nationality": "TR",
+    "representing_state": null,
+    "residence_state": "TR",
+    "work_state": null
+  },
+  "module_requests": [
+    {
+      "destination_state": null,
+      "family": "member_state",
+      "freshness_requirement": "baseline_integrity",
+      "jurisdiction": "SE",
+      "request_id": "req:sweden-deciding",
+      "required": true,
+      "role": "deciding_state"
+    },
+    {
+      "destination_state": "SE",
+      "family": "applicant_country",
+      "freshness_requirement": "baseline_integrity",
+      "jurisdiction": "TR",
+      "request_id": "req:turkiye-application",
+      "required": true,
+      "role": "application_context"
+    }
+  ],
+  "privacy_classification": "synthetic",
+  "procedure_stage": "pre_lodging",
+  "procedure_type": "entry_visa",
+  "purpose": "C10 reviewed fictional trace for C9-L2",
+  "user_objective": "run source-qualified C10 fictional issue recognition and limitation review"
+}

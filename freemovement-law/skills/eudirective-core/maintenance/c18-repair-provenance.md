@@ -1,0 +1,14 @@
+# Modifier-only C18 source correction record
+
+Date: 2026-10-10. The target of this change was the active EU C1 physical source transcript, **not** any Swedish/Türkiye law or synthetic case evidence. Prior `0.6.0` manifest SHA-256 (canonical JSON) is `169281bc86fe70be300495b0daa9f44d8f2c5cb690a7e2a34ca310763e70e502`; original Directive Markdown SHA-256 is `f97700413b57f3f6bd21fcb7b7cdd0bbcbafc1aca081d206aacd20d853931c0e`. The only text insertion into that Directive file was a blank-separated `(a)` / `the spouse;` clause in Article 2, which is 18 UTF-8 bytes. The revised file SHA-256 is `055743ed49532cdab275cc709b3c45e0f2fe4ebf23e136908c7958df1ba7ec5e`.
+
+Source: official EUR-Lex HTML consolidation `https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02004L0038-20110616`, cross-checked with the 2004 published Directive text. Only the localised Article 2(2)(a) wording/position was manually verified; all-source byte-for-byte official authentication and legal interpretation were outside this milestone. The record `references/source-pack/c18-directive-art2-restoration.json` and the active manifest preserve old/new digest provenance. The v0.6.0 historical manifest is not rewritten and is **not valid for new C6 intakes**.
+
+The C7 trusted policy is amended only for the new active 0.6.1 inventory, with the digest independently pinned into executable code. Existing C7 synthetic fixture review files were mechanically rebound where their C5d and C5f stage digests changed due to the versioned source manifest; C5e context was unchanged. This updates synthetic test enrollment and cannot confer reviewer authenticity, competence or legal correctness.
+
+The source-completeness audit distinguishes physical hash verification, targeted wording presence, identity-only source notes, independence of official text/currentness checks, and legal-semantic review. The 21 identity-only notes are still outstanding; do not treat the `c1_source_representation_complete` manifest state as full-authoritative-text completeness.
+
+Normal skill execution must not depend on this maintenance file. Read it only while modifying, auditing or repackaging the core skill.
+
+### C15 linked fixture rebinding
+The bounded C15 pilot model-proposal object changed canonical digest from `1453f4ca0ece9ffade97b20266a219344afaf70435302d2fb395a67822cab538` to `95e64b84404ec0e3754fbf25cf2944a03dd0dafd61f21cbdce7d42cf6a3f440c`. This was required because its `retrieval_sha256` and seven quoted Directive spans refer to the new 0.6.1 source; all seven post-Article-2 source offsets shift by exactly 18 characters and were rechecked as substring quotes in new retrieval windows. A historical source-gap warning in Q01 was qualified for the repaired active source. No C15 legal assessment was independently regraded; the C15 test suite still requires complete source span coverage and `not_determined` legal status.

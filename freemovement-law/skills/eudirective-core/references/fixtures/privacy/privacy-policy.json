@@ -1,0 +1,42 @@
+{
+  "trust_profile_version": "0.1.0",
+  "policy_id": "policy:c4:test",
+  "max_linkability_score": 10,
+  "purpose_profiles": [
+    {
+      "purpose": "compliance_feedback",
+      "destination_kind": "feedback_service",
+      "action": "feedback",
+      "default_transform": "drop",
+      "allow_direct_identifiers": false,
+      "max_attempts": 2,
+      "classification_defaults": [
+        {"classification": "public", "transform": "keep"},
+        {"classification": "case_fact", "transform": "keep"},
+        {"classification": "quasi_identifier", "transform": "redact"},
+        {"classification": "direct_identifier", "transform": "drop"},
+        {"classification": "sensitive", "transform": "drop"}
+      ],
+      "field_rules": [
+        {"field_id": "event.date", "transform": "date_to_month"},
+        {"field_id": "case.topology", "transform": "presence_only"}
+      ]
+    },
+    {
+      "purpose": "render_analysis",
+      "destination_kind": "user_visible",
+      "action": "render",
+      "default_transform": "drop",
+      "allow_direct_identifiers": false,
+      "max_attempts": 1,
+      "classification_defaults": [
+        {"classification": "public", "transform": "keep"},
+        {"classification": "case_fact", "transform": "keep"},
+        {"classification": "quasi_identifier", "transform": "redact"},
+        {"classification": "direct_identifier", "transform": "drop"},
+        {"classification": "sensitive", "transform": "drop"}
+      ],
+      "field_rules": []
+    }
+  ]
+}

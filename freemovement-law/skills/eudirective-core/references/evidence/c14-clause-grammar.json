@@ -1,0 +1,355 @@
+{
+  "grammar_version": "0.1.0",
+  "scope": "synthetic_only_candidate_interpretations",
+  "limitations": [
+    "Patterns produce unreviewed lexical interpretations, not proof of speaker, origin, semantic entailment or truth.",
+    "English/Swedish/Turkish toy test constructions are not comprehensive multilingual understanding.",
+    "Only human-reviewed or explicitly independently verified meaning may support later legal findings."
+  ],
+  "rules": [
+    {
+      "id": "en-direct-denied",
+      "fact_key": "element:procedure.access_state",
+      "language": "en",
+      "pattern": "\\b(?:we (?:will not|cannot|can\\x27t)|you (?:cannot|can\\x27t|may not))\\s+(?:(?:permit|allow|accept)\\s+)?(?:a\\s+)?(?:direct\\s+(?:application|submission|appointment|lodg(?:ing|ement))|(?:lodge|submit|apply)\\s+(?:directly|in person)\\s+at (?:the )?(?:consulate|mission))\\b",
+      "reported_value": "denied",
+      "extractor": "literal"
+    },
+    {
+      "id": "en-request-denied",
+      "fact_key": "element:procedure.access_state",
+      "language": "en",
+      "pattern": "\\b(?:direct\\s+(?:appointment|application|submission|lodging)\\s+request)\\s+(?:was|has been|is)\\s+(?:denied|refused|rejected|declined)\\b",
+      "reported_value": "denied",
+      "extractor": "literal"
+    },
+    {
+      "id": "en-direct-open",
+      "fact_key": "element:procedure.access_state",
+      "language": "en",
+      "pattern": "\\b(?:we (?:accept|allow|permit)|you (?:can|may))\\s+(?:(?:a|the)\\s+)?(?:direct\\s+(?:application|submission|appointment|lodging)|(?:lodge|submit|apply)\\s+directly\\s+at (?:the )?(?:consulate|mission))\\b",
+      "reported_value": "available",
+      "extractor": "literal"
+    },
+    {
+      "id": "en-direct-request",
+      "fact_key": "fact:eu_family_direct_request",
+      "language": "en",
+      "pattern": "\\b(?:i|we)\\s+(?:(?:wish|want|would like|ask|request|seek)\\s+to\\s+)?(?:lodge|submit|file|apply for)\\s+(?:(?:a|my|our)\\s+)?(?:spouse|family|visa|application)[^\\n.;]{0,45}\\b(?:directly|at the (?:consulate|mission))\\b",
+      "reported_value": true,
+      "extractor": "literal"
+    },
+    {
+      "id": "en-vfs-only",
+      "fact_key": "fact:mission_requires_vfs_only",
+      "language": "en",
+      "pattern": "\\b(?:all\\s+(?:eu\\s+)?family\\s+applications\\s+must\\s+be\\s+handled\\s+exclusively\\s+by\\s+vfs|(?:you|applicants?)\\s+(?:must|have to|are required to)\\s+(?:apply|lodge|submit)[^\\n.;]{0,50}\\b(?:via|through|at)\\s+vfs\\s*(?:only)?|vfs\\s+is\\s+(?:the\\s+)?(?:only|sole|exclusive|mandatory|required)\\s+(?:route|channel|provider))\\b",
+      "reported_value": true,
+      "extractor": "literal"
+    },
+    {
+      "id": "en-vfs-optional",
+      "fact_key": "fact:mission_requires_vfs_only",
+      "language": "en",
+      "pattern": "\\b(?:vfs\\s+(?:remains|is|will be)\\s+(?:(?:an|a)\\s+)?(?:optional|voluntary)\\b|(?:you|applicants?)\\s+(?:do not|don\\x27t)\\s+(?:need|have)\\s+to\\s+apply\\s+through\\s+vfs\\b|vfs\\s+is\\s+not\\s+(?:mandatory|required|compulsory))",
+      "reported_value": false,
+      "extractor": "literal"
+    },
+    {
+      "id": "en-refusal-true",
+      "fact_key": "fact:visa_refusal_exists",
+      "language": "en",
+      "pattern": "\\b(?:we\\s+(?:have\\s+)?(?:refused|rejected|denied)\\s+(?:your|the|this)\\s+(?:visa\\s+)?application|(?:your|the)\\s+visa\\s+(?:application|request)\\s+(?:has been|was|is)\\s+(?:refused|rejected|denied))\\b",
+      "reported_value": true,
+      "extractor": "literal"
+    },
+    {
+      "id": "en-refusal-false",
+      "fact_key": "fact:visa_refusal_exists",
+      "language": "en",
+      "pattern": "\\b(?:your|the)\\s+visa\\s+(?:application|request)\\s+(?:has not been|was not|is not)\\s+(?:refused|rejected|denied)\\b",
+      "reported_value": false,
+      "extractor": "literal"
+    },
+    {
+      "id": "en-notice-date",
+      "fact_key": "fact:decision_notice_date",
+      "language": "en",
+      "pattern": "\\b(?:you\\s+were\\s+notified\\s+of\\s+(?:the|this)\\s+refusal|(?:the\\s+)?(?:refusal|decision)\\s+(?:was\\s+)?(?:served|communicated|notified)\\s+(?:to\\s+you)?|you\\s+received\\s+(?:the\\s+)?(?:refusal|decision))\\s+(?:on|dated)\\s+(?P<date>\\d{4}-\\d{2}-\\d{2})\\b",
+      "reported_value": null,
+      "extractor": "iso_date"
+    },
+    {
+      "id": "en-appeal-date",
+      "fact_key": "fact:appeal_submission_date",
+      "language": "en",
+      "pattern": "\\b(?:the\\s+authority\\s+received\\s+your\\s+appeal|(?:we|the\\s+office)\\s+received\\s+(?:your|the)\\s+appeal|your\\s+appeal\\s+(?:arrived|was\\s+received))\\s+on\\s+(?P<date>\\d{4}-\\d{2}-\\d{2})\\b",
+      "reported_value": null,
+      "extractor": "iso_date"
+    },
+    {
+      "id": "en-correct-office",
+      "fact_key": "fact:appeal_received_by_correct_authority",
+      "language": "en",
+      "pattern": "\\b(?:competent\\s+(?:appeals?\\s+(?:intake\\s+)?office|authority))\\s+(?:has\\s+)?(?:received|accepted)\\s+(?:your|the)\\s+appeal\\b",
+      "reported_value": true,
+      "extractor": "literal"
+    },
+    {
+      "id": "en-wrong-office",
+      "fact_key": "fact:appeal_received_by_correct_authority",
+      "language": "en",
+      "pattern": "\\b(?:appeal\\s+(?:was\\s+)?received\\s+by\\s+(?:an?\\s+)?(?:office|authority)\\s+(?:without|lacking)\\s+(?:appeal\\s+)?jurisdiction)\\b",
+      "reported_value": false,
+      "extractor": "literal"
+    },
+    {
+      "id": "en-info-held",
+      "fact_key": "fact:authority_possesses_information",
+      "language": "en",
+      "pattern": "\\b(?:we|the\\s+authority)\\s+(?:have|hold|possess|retain)\\s+(?:the\\s+)?(?:information|statement|records?)\\s+(?:provided|submitted|received)\\s+(?:by|from)\\s+(?:your|the)\\s+former\\s+spouse\\b",
+      "reported_value": true,
+      "extractor": "literal"
+    },
+    {
+      "id": "en-info-not-held",
+      "fact_key": "fact:authority_possesses_information",
+      "language": "en",
+      "pattern": "\\b(?:we|the\\s+authority)\\s+(?:do\\s+not|don\\x27t)\\s+(?:have|hold|possess|retain)\\s+(?:the\\s+)?(?:information|statement|records?)\\s+(?:provided|submitted|received)\\s+(?:by|from)\\s+(?:your|the)\\s+former\\s+spouse\\b",
+      "reported_value": false,
+      "extractor": "literal"
+    },
+    {
+      "id": "en-info-decisive",
+      "fact_key": "fact:decisive_former_spouse_information",
+      "language": "en",
+      "pattern": "\\b(?:we|the\\s+authority)\\s+(?:rely|relied)\\s+on\\s+(?:the\\s+)?(?:information|statement|evidence)\\s+from\\s+(?:your|the)\\s+former\\s+spouse\\s+as\\s+(?:decisive|determinative|essential)\\b",
+      "reported_value": true,
+      "extractor": "literal"
+    },
+    {
+      "id": "en-info-nondecisive",
+      "fact_key": "fact:decisive_former_spouse_information",
+      "language": "en",
+      "pattern": "\\b(?:we|the\\s+authority)\\s+(?:do\\s+not|did\\s+not)\\s+rely\\s+on\\s+(?:the\\s+)?(?:information|statement|evidence)\\s+from\\s+(?:your|the)\\s+former\\s+spouse\\s+as\\s+(?:decisive|determinative|essential)\\b",
+      "reported_value": false,
+      "extractor": "literal"
+    },
+    {
+      "id": "en-info-request",
+      "fact_key": "fact:information_requested_predecision",
+      "language": "en",
+      "pattern": "\\b(?:i|we)\\s+(?:requested|request|asked\\s+for|seek)\\s+(?:access\\s+to\\s+)?(?:the\\s+)?(?:former[- ]spouse\\s+statement|file|information|records?)\\s+before\\s+(?:the|a)\\s+decision\\b",
+      "reported_value": true,
+      "extractor": "literal"
+    },
+    {
+      "id": "en-info-cannot-get",
+      "fact_key": "fact:applicant_cannot_obtain_information",
+      "language": "en",
+      "pattern": "\\b(?:i|we)\\s+(?:cannot|can\\x27t|am\\s+unable\\s+to|are\\s+unable\\s+to)\\s+(?:obtain|access|get)\\s+(?:my|the|our)\\s+former\\s+spouse\\x27?s\\s+(?:statement|information|file)\\s+(?:independently|myself|ourselves)?\\b",
+      "reported_value": true,
+      "extractor": "literal"
+    },
+    {
+      "id": "en-info-can-get",
+      "fact_key": "fact:applicant_cannot_obtain_information",
+      "language": "en",
+      "pattern": "\\b(?:i|we)\\s+can\\s+(?:obtain|access|get)\\s+(?:my|the|our)\\s+former\\s+spouse\\x27?s\\s+(?:statement|information|file)\\s+(?:independently|myself|ourselves)?\\b",
+      "reported_value": false,
+      "extractor": "literal"
+    },
+    {
+      "id": "en-info-withheld",
+      "fact_key": "fact:authority_communication_state",
+      "language": "en",
+      "pattern": "\\b(?:we|the\\s+authority)\\s+(?:will\\s+not|cannot|refuse\\s+to)\\s+(?:disclose|communicate|provide|release)\\s+(?:the\\s+)?(?:information|statement|record|file)\\s+before\\s+(?:the|a)\\s+decision\\b",
+      "reported_value": "withheld",
+      "extractor": "literal"
+    },
+    {
+      "id": "en-info-shared",
+      "fact_key": "fact:authority_communication_state",
+      "language": "en",
+      "pattern": "\\b(?:we|the\\s+authority)\\s+(?:have|already)\\s+(?:disclosed|communicated|provided|shared)\\s+(?:the\\s+)?(?:information|statement|record|file)\\s+before\\s+(?:the|a)\\s+decision\\b",
+      "reported_value": "communicated",
+      "extractor": "literal"
+    },
+    {
+      "id": "en-conf-review",
+      "fact_key": "fact:confidentiality_review_state",
+      "language": "en",
+      "pattern": "\\b(?:a|an|the)\\s+(?:assessment|review)\\s+of\\s+(?:confidentiality|third[- ]party\\s+confidentiality)\\s+(?:has been|was)\\s+(?:made|completed|conducted|performed)\\b",
+      "reported_value": "considered",
+      "extractor": "literal"
+    },
+    {
+      "id": "en-conf-no-review",
+      "fact_key": "fact:confidentiality_review_state",
+      "language": "en",
+      "pattern": "\\bno\\s+(?:assessment|review)\\s+of\\s+(?:confidentiality|third[- ]party\\s+confidentiality)\\s+(?:has been|was)\\s+(?:made|completed|conducted|performed)\\b",
+      "reported_value": "not_considered",
+      "extractor": "literal"
+    },
+    {
+      "id": "sv-direct-denied",
+      "fact_key": "element:procedure.access_state",
+      "language": "sv",
+      "pattern": "(?:du\\s+(?:kan\\s+inte|får\\s+inte)|vi\\s+kan\\s+inte)\\s+(?:lämna\\s+in|ta\\s+emot)\\s+(?:en\\s+)?(?:ansökan\\s+)?direkt\\s+(?:på|hos)\\s+konsulatet",
+      "reported_value": "denied",
+      "extractor": "literal"
+    },
+    {
+      "id": "sv-direct-allowed",
+      "fact_key": "element:procedure.access_state",
+      "language": "sv",
+      "pattern": "du\\s+(?:kan|får)\\s+lämna\\s+in\\s+(?:din\\s+)?ansökan\\s+direkt\\s+(?:på|hos)\\s+konsulatet",
+      "reported_value": "available",
+      "extractor": "literal"
+    },
+    {
+      "id": "sv-vfs-only",
+      "fact_key": "fact:mission_requires_vfs_only",
+      "language": "sv",
+      "pattern": "(?:ansökan\\s+måste\\s+lämnas\\s+in\\s+via\\s+vfs|du\\s+måste\\s+ansöka\\s+via\\s+vfs|endast\\s+vfs\\s+tar\\s+emot\\s+ansökningar)",
+      "reported_value": true,
+      "extractor": "literal"
+    },
+    {
+      "id": "sv-vfs-optional",
+      "fact_key": "fact:mission_requires_vfs_only",
+      "language": "sv",
+      "pattern": "(?:vfs\\s+är\\s+frivilligt|vfs\\s+är\\s+inte\\s+obligatoriskt|du\\s+behöver\\s+inte\\s+ansöka\\s+via\\s+vfs)",
+      "reported_value": false,
+      "extractor": "literal"
+    },
+    {
+      "id": "sv-refusal",
+      "fact_key": "fact:visa_refusal_exists",
+      "language": "sv",
+      "pattern": "(?:din\\s+visumansökan\\s+har\\s+avslagits|vi\\s+har\\s+avslagit\\s+din\\s+visumansökan)",
+      "reported_value": true,
+      "extractor": "literal"
+    },
+    {
+      "id": "sv-not-refused",
+      "fact_key": "fact:visa_refusal_exists",
+      "language": "sv",
+      "pattern": "din\\s+visumansökan\\s+har\\s+inte\\s+avslagits",
+      "reported_value": false,
+      "extractor": "literal"
+    },
+    {
+      "id": "sv-notice-date",
+      "fact_key": "fact:decision_notice_date",
+      "language": "sv",
+      "pattern": "(?:du\\s+delgavs\\s+avslagsbeslutet|avslagsbeslutet\\s+delgavs\\s+dig)\\s+(?:den\\s+)?(?P<date>\\d{4}-\\d{2}-\\d{2})",
+      "reported_value": null,
+      "extractor": "iso_date"
+    },
+    {
+      "id": "sv-appeal-date",
+      "fact_key": "fact:appeal_submission_date",
+      "language": "sv",
+      "pattern": "(?:vi\\s+mottog\\s+ditt\\s+överklagande|ditt\\s+överklagande\\s+kom\\s+in)\\s+(?:den\\s+)?(?P<date>\\d{4}-\\d{2}-\\d{2})",
+      "reported_value": null,
+      "extractor": "iso_date"
+    },
+    {
+      "id": "sv-info-held",
+      "fact_key": "fact:authority_possesses_information",
+      "language": "sv",
+      "pattern": "myndigheten\\s+(?:har|innehar)\\s+(?:uppgifterna|informationen)\\s+från\\s+din\\s+före\\s+detta\\s+make",
+      "reported_value": true,
+      "extractor": "literal"
+    },
+    {
+      "id": "sv-info-withheld",
+      "fact_key": "fact:authority_communication_state",
+      "language": "sv",
+      "pattern": "vi\\s+kommer\\s+inte\\s+att\\s+lämna\\s+ut\\s+(?:informationen|uppgifterna)\\s+före\\s+beslutet",
+      "reported_value": "withheld",
+      "extractor": "literal"
+    },
+    {
+      "id": "tr-direct-denied",
+      "fact_key": "element:procedure.access_state",
+      "language": "tr",
+      "pattern": "(?:konsolosluğa\\s+doğrudan\\s+başvuru\\s+kabul\\s+edilm(?:iyor|eyecek)|doğrudan\\s+başvurunuz\\s+reddedildi)",
+      "reported_value": "denied",
+      "extractor": "literal"
+    },
+    {
+      "id": "tr-direct-allowed",
+      "fact_key": "element:procedure.access_state",
+      "language": "tr",
+      "pattern": "konsolosluğa\\s+doğrudan\\s+başvuru\\s+((?:yapabilir|kabul\\s+edilir))",
+      "reported_value": "available",
+      "extractor": "literal"
+    },
+    {
+      "id": "tr-vfs-only",
+      "fact_key": "fact:mission_requires_vfs_only",
+      "language": "tr",
+      "pattern": "(?:yalnızca\\s+vfs\\s+(?:üzerinden\\s+)?başvuru\\s+yapılabilir|vfs\\s+üzerinden\\s+başvuru\\s+yapmak\\s+zorundasınız|başvurular\\s+sadece\\s+vfs\\s+aracılığıyla\\s+alınır)",
+      "reported_value": true,
+      "extractor": "literal"
+    },
+    {
+      "id": "tr-vfs-optional",
+      "fact_key": "fact:mission_requires_vfs_only",
+      "language": "tr",
+      "pattern": "(?:vfs\\s+kullanımı\\s+isteğe\\s+bağlıdır|vfs\\s+zorunlu\\s+değildir|vfs\\s+üzerinden\\s+başvurmak\\s+zorunda\\s+değilsiniz)",
+      "reported_value": false,
+      "extractor": "literal"
+    },
+    {
+      "id": "tr-refused",
+      "fact_key": "fact:visa_refusal_exists",
+      "language": "tr",
+      "pattern": "(?:vize\\s+başvurunuz\\s+reddedilmiştir|vize\\s+başvurunuzu\\s+reddettik)",
+      "reported_value": true,
+      "extractor": "literal"
+    },
+    {
+      "id": "tr-not-refused",
+      "fact_key": "fact:visa_refusal_exists",
+      "language": "tr",
+      "pattern": "vize\\s+başvurunuz\\s+reddedilmemiştir",
+      "reported_value": false,
+      "extractor": "literal"
+    },
+    {
+      "id": "tr-notice-date",
+      "fact_key": "fact:decision_notice_date",
+      "language": "tr",
+      "pattern": "(?:ret\\s+kararı\\s+(?:size\\s+)?|vize\\s+ret\\s+kararı\\s+)(?P<date>\\d{4}-\\d{2}-\\d{2})\\s+tarihinde\\s+tebliğ\\s+edildi",
+      "reported_value": null,
+      "extractor": "iso_date"
+    },
+    {
+      "id": "tr-appeal-date",
+      "fact_key": "fact:appeal_submission_date",
+      "language": "tr",
+      "pattern": "itirazınız\\s+(?P<date>\\d{4}-\\d{2}-\\d{2})\\s+tarihinde\\s+(?:alındı|teslim\\s+alındı)",
+      "reported_value": null,
+      "extractor": "iso_date"
+    },
+    {
+      "id": "tr-info-held",
+      "fact_key": "fact:authority_possesses_information",
+      "language": "tr",
+      "pattern": "kurum\\s+eski\\s+eşinizden\\s+gelen\\s+bilgileri\\s+(?:elinde\\s+bulunduruyor|saklıyor)",
+      "reported_value": true,
+      "extractor": "literal"
+    },
+    {
+      "id": "tr-info-withheld",
+      "fact_key": "fact:authority_communication_state",
+      "language": "tr",
+      "pattern": "bilgileri\\s+karardan\\s+önce\\s+paylaşmayacağız",
+      "reported_value": "withheld",
+      "extractor": "literal"
+    }
+  ]
+}

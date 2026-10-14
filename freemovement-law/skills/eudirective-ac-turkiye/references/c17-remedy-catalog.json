@@ -1,0 +1,99 @@
+{
+  "catalog_version": "0.1.0",
+  "owner_module_id": "applicant-country-tr-sweden-pilot",
+  "jurisdiction": "TR",
+  "module_family": "applicant_country",
+  "last_compiled": "2026-10-10",
+  "catalog_status": "review_only_not_an_authoritative_filing_guide",
+  "remedies": [
+    {
+      "remedy_id": "tr:c17:sweden-istanbul-direct-contact",
+      "category": "operational_contact",
+      "trigger_rule_ids": [
+        "tr:c12:direct-channel",
+        "tr:c16:istanbul-vfs-choice"
+      ],
+      "allowed_stages": [
+        "pre_lodging"
+      ],
+      "authority_ref": "tr:authority:sweden-istanbul-mission",
+      "target_authority_level": "member_state_authority_abroad",
+      "source_refs": [
+        "tr:src:sweden-istanbul-eu-family",
+        "tr:src:sweden-istanbul-contact"
+      ],
+      "prerequisites_to_verify": [
+        "Confirm the Swedish family-member eligibility test and current consulate appointment practice",
+        "Do not treat the Turkish location as Turkish decision-making jurisdiction"
+      ],
+      "powers_to_verify": [
+        "The Swedish mission publishes a direct contact channel for eligible applicants"
+      ],
+      "limits": [
+        "A request for appointment is not the same as lodged application",
+        "Optional third-party service charges differ from the consular visa fee",
+        "This is Swedish consular activity in Türkiye, not a Turkish immigration appeal"
+      ],
+      "evidence_to_preserve": [
+        "Date of request, acknowledgment, exact current mission guidance, third-party channel terms"
+      ],
+      "deadline": {
+        "kind": "not_established",
+        "rule": "No verified binding deadline in this catalogue.",
+        "trigger_event": null,
+        "calculation": "human_only"
+      },
+      "intended_outcome_for_review": "Ask for the available direct mission appointment procedure or confirmation of channel choice.",
+      "filing_channel_for_review": "Check Sweden Abroad Istanbul migration contact page before transmission.",
+      "priority_class": "parallel_review",
+      "scope_note": "Türkiye location and Swedish mission operations only",
+      "assurance": "curated_source_note_or_official_page_not_independent_merits",
+      "requires_human_review": true,
+      "send_authorized": false,
+      "legal_violation_status": "not_determined"
+    },
+    {
+      "remedy_id": "tr:c17:civil-record-authenticity-check",
+      "category": "evidence_acquisition",
+      "trigger_rule_ids": [
+        "tr:c16:electronic-population-extract"
+      ],
+      "allowed_stages": [
+        "pre_lodging"
+      ],
+      "authority_ref": "tr:authority:turkiye-nvi",
+      "target_authority_level": "applicant_country_document_authority",
+      "source_refs": [
+        "tr:src:turkiye-nvi-population"
+      ],
+      "prerequisites_to_verify": [
+        "Determine whether the alleged e-record is actually issued by the competent Turkish authority",
+        "Check authenticity/verification route for the particular document and intended use"
+      ],
+      "powers_to_verify": [
+        "Turkish records authority may provide/corroborate civil-register extracts under its own procedure"
+      ],
+      "limits": [
+        "This is not an appeal against Swedish decision-making",
+        "Verification of an electronically issued document does not itself determine whether a Swedish format requirement is lawful"
+      ],
+      "evidence_to_preserve": [
+        "Document form/version, issuer identity, verification code or other official validation path, rejection notice"
+      ],
+      "deadline": {
+        "kind": "not_established",
+        "rule": "No verified binding deadline in this catalogue.",
+        "trigger_event": null,
+        "calculation": "human_only"
+      },
+      "intended_outcome_for_review": "Establish the origin and verifiability of the Turkish document for subsequent human legal review.",
+      "filing_channel_for_review": "Use official Turkish civil registry information channels; no automatic data transfer.",
+      "priority_class": "fact_gathering_parallel_review",
+      "scope_note": "Türkiye document acquisition only",
+      "assurance": "curated_source_note_or_official_page_not_independent_merits",
+      "requires_human_review": true,
+      "send_authorized": false,
+      "legal_violation_status": "not_determined"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "trust_profile_version": "0.1.0",
+  "case_id": "CASE-SYN-001",
+  "bound_case_revision": 0,
+  "privacy_classification": "synthetic",
+  "fields": [
+    {
+      "field_id": "person.name",
+      "value": "Synthetic Applicant",
+      "classification": "direct_identifier",
+      "analysis_required": true,
+      "risk_tags": []
+    },
+    {
+      "field_id": "event.date",
+      "value": "2026-10-06T10:15:00Z",
+      "classification": "quasi_identifier",
+      "analysis_required": true,
+      "risk_tags": ["exact_timestamp", "precise_procedural_event"]
+    },
+    {
+      "field_id": "case.issue",
+      "value": "appointment delay",
+      "classification": "case_fact",
+      "analysis_required": true,
+      "risk_tags": []
+    },
+    {
+      "field_id": "case.topology",
+      "value": "residence/work states differ",
+      "classification": "quasi_identifier",
+      "analysis_required": true,
+      "risk_tags": ["unique_topology"]
+    }
+  ]
+}

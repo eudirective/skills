@@ -1,0 +1,281 @@
+{
+  "model_version": "0.2.0",
+  "invariants": [
+    {
+      "invariant_id": "inv.supplier_allowed",
+      "statement": "Every element instance must be supplied by a family allowed by its definition.",
+      "enforcement": "mechanical",
+      "severity": "error",
+      "related_elements": [
+        "conclusion.overall",
+        "source.owner_family"
+      ],
+      "check_name": "supplier_allowed"
+    },
+    {
+      "invariant_id": "inv.deadline_requires_trigger_source",
+      "statement": "An exact calculated deadline requires both a triggering event reference and a sourced deadline rule reference.",
+      "enforcement": "mechanical",
+      "severity": "error",
+      "related_elements": [
+        "time.calculated_deadline",
+        "time.deadline_trigger_ref",
+        "time.deadline_rule_ref"
+      ],
+      "check_name": "deadline_requires_trigger_source"
+    },
+    {
+      "invariant_id": "inv.escalation_requires_competence",
+      "statement": "An escalation recommendation referencing an authority requires authority jurisdiction and competence.",
+      "enforcement": "mechanical",
+      "severity": "error",
+      "related_elements": [
+        "strategy.escalation_authority_ref",
+        "authority.jurisdiction",
+        "authority.competence"
+      ],
+      "check_name": "escalation_requires_competence"
+    },
+    {
+      "invariant_id": "inv.not_checked_not_no_problem",
+      "statement": "A non-evaluated or blocked completeness state cannot support a no-problem conclusion.",
+      "enforcement": "mechanical",
+      "severity": "error",
+      "related_elements": [
+        "completeness.status",
+        "conclusion.no_problem"
+      ],
+      "check_name": "incomplete_not_negative"
+    },
+    {
+      "invariant_id": "inv.stale_source_not_current_support",
+      "statement": "A stale source cannot silently support a current-law conclusion.",
+      "enforcement": "mechanical",
+      "severity": "error",
+      "related_elements": [
+        "source.freshness",
+        "conclusion.current_law_supported"
+      ],
+      "check_name": "stale_source_blocks_current"
+    },
+    {
+      "invariant_id": "inv.national_rule_source_linked",
+      "statement": "A national declarative rule must carry a source reference.",
+      "enforcement": "mechanical",
+      "severity": "error",
+      "related_elements": [
+        "rule.national_rule_id",
+        "rule.source_ref"
+      ],
+      "check_name": "national_rule_source_linked"
+    },
+    {
+      "invariant_id": "inv.unsupported_operator_explicit",
+      "statement": "If an automated rule operator is unsupported, completeness must record unsupported automated evaluation rather than approximation.",
+      "enforcement": "mechanical",
+      "severity": "error",
+      "related_elements": [
+        "rule.operator_supported",
+        "completeness.status"
+      ],
+      "check_name": "unsupported_operator_explicit"
+    },
+    {
+      "invariant_id": "inv.outbound_requires_purpose",
+      "statement": "Outbound eligibility may only be true for a specific recorded purpose.",
+      "enforcement": "mechanical",
+      "severity": "error",
+      "related_elements": [
+        "privacy_control.outbound_eligibility",
+        "privacy_control.purpose"
+      ],
+      "check_name": "outbound_requires_purpose"
+    },
+    {
+      "invariant_id": "inv.approval_recipient_binding",
+      "statement": "Changing the recipient invalidates a recipient-bound approval.",
+      "enforcement": "mechanical",
+      "severity": "error",
+      "related_elements": [
+        "privacy_control.approval_bound_recipient",
+        "privacy_control.current_recipient",
+        "privacy_control.approval_valid"
+      ],
+      "check_name": "approval_recipient_binding"
+    },
+    {
+      "invariant_id": "inv.case_data_not_module_asset",
+      "statement": "Case-workspace supplied elements may not be packaged into a distributable module asset.",
+      "enforcement": "mechanical",
+      "severity": "error",
+      "related_elements": [
+        "asset.kind",
+        "asset.distributable"
+      ],
+      "check_name": "case_data_not_module_asset"
+    },
+    {
+      "invariant_id": "inv.optional_local_gap_scoped",
+      "statement": "Missing optional applicant-country context creates a scoped gap and must not by itself become a global legal failure or no-problem result.",
+      "enforcement": "review",
+      "severity": "review",
+      "related_elements": [
+        "module.optional_local_available",
+        "completeness.scope"
+      ],
+      "check_name": "optional_local_gap_scoped"
+    },
+    {
+      "invariant_id": "inv.geo_roles_distinct",
+      "statement": "Residence, work, application, deciding and other geographic roles remain separately representable even when values coincide.",
+      "enforcement": "review",
+      "severity": "review",
+      "related_elements": [
+        "geography.residence_state",
+        "geography.work_state",
+        "geography.application_country",
+        "geography.deciding_state"
+      ],
+      "check_name": null
+    },
+    {
+      "invariant_id": "inv.applicant_context_no_hierarchy_override",
+      "statement": "Applicant-country operational evidence may affect facts but not redefine legal hierarchy or issue the overall case conclusion.",
+      "enforcement": "review",
+      "severity": "review",
+      "related_elements": [
+        "conclusion.overall"
+      ],
+      "check_name": null
+    },
+    {
+      "invariant_id": "inv.principle_requires_source",
+      "statement": "A legal principle asserted as applicable or materially relevant requires a source reference.",
+      "enforcement": "mechanical",
+      "severity": "error",
+      "related_elements": [
+        "legal_principle.id",
+        "legal_principle.applicability_status",
+        "legal_principle.source_ref"
+      ],
+      "check_name": "principle_requires_source"
+    },
+    {
+      "invariant_id": "inv.charter_scope_requires_eu_scope",
+      "statement": "A scoped assertion that the Charter applies requires the matter to be established within the scope of EU law.",
+      "enforcement": "mechanical",
+      "severity": "error",
+      "related_elements": [
+        "legal_regime.charter",
+        "legal_regime.eu_law_scope_established"
+      ],
+      "check_name": "charter_requires_eu_scope"
+    },
+    {
+      "invariant_id": "inv.proof_restriction_requires_source",
+      "statement": "An asserted or established evidentiary restriction requires a source reference; an authority checklist alone must not become a closed proof rule without support.",
+      "enforcement": "mechanical",
+      "severity": "error",
+      "related_elements": [
+        "evidence.proof_restriction_status",
+        "evidence.proof_restriction_source_ref"
+      ],
+      "check_name": "proof_restriction_requires_source"
+    },
+    {
+      "invariant_id": "inv.supported_attack_angle_requires_support",
+      "statement": "A supported attack angle requires both a legal source reference and a non-missing evidence state.",
+      "enforcement": "mechanical",
+      "severity": "error",
+      "related_elements": [
+        "attack_angle.assessment_status",
+        "attack_angle.evidence_state",
+        "attack_angle.source_ref"
+      ],
+      "check_name": "supported_attack_angle_requires_support"
+    },
+    {
+      "invariant_id": "inv.verified_note_not_exact_wording",
+      "statement": "An identity/version-verified source note may support source identity and modelling but not an assertion that exact wording or a pinpoint is supported.",
+      "enforcement": "mechanical",
+      "severity": "error",
+      "related_elements": [
+        "source.representation_kind",
+        "conclusion.exact_wording_supported",
+        "conclusion.pinpoint_supported"
+      ],
+      "check_name": "verified_note_not_exact_wording"
+    },
+    {
+      "invariant_id": "inv.duration_requires_typed_event",
+      "statement": "A calculated duration requires a typed dated event context.",
+      "enforcement": "mechanical",
+      "severity": "error",
+      "related_elements": [
+        "time.duration_days",
+        "time.event_type",
+        "time.event_date"
+      ],
+      "check_name": "duration_requires_typed_event"
+    },
+    {
+      "invariant_id": "inv.frontier_worker_topology_distinct",
+      "statement": "A frontier-worker context must preserve residence and work state as distinct roles rather than collapsing them into a generic Member State field.",
+      "enforcement": "review",
+      "severity": "review",
+      "related_elements": [
+        "movement.frontier_worker_context",
+        "geography.residence_state",
+        "geography.work_state"
+      ],
+      "check_name": null
+    },
+    {
+      "invariant_id": "inv.article41_member_state_boundary",
+      "statement": "Direct reliance on Charter Article 41 against a Member-State authority must be distinguished from general principles such as rights of defence/good administration that may bind within EU-law scope.",
+      "enforcement": "review",
+      "severity": "review",
+      "related_elements": [
+        "authority.level",
+        "legal_principle.id",
+        "legal_principle.application_scope"
+      ],
+      "check_name": null
+    },
+    {
+      "invariant_id": "inv.soft_law_not_binding_by_label",
+      "statement": "Recommendations, handbooks and guidance may have interpretive weight but must not be treated as binding merely because they are relevant.",
+      "enforcement": "review",
+      "severity": "review",
+      "related_elements": [
+        "rule.binding_force",
+        "rule.interpretive_weight",
+        "legal_principle.source_ref"
+      ],
+      "check_name": null
+    },
+    {
+      "invariant_id": "inv.completeness_dependency_scoped",
+      "statement": "A missing source, module or element dependency must create a scoped completeness gap tied to the affected conclusion rather than an unqualified global result.",
+      "enforcement": "review",
+      "severity": "review",
+      "related_elements": [
+        "completeness.status",
+        "completeness.scope",
+        "completeness.dependency_ref"
+      ],
+      "check_name": null
+    },
+    {
+      "invariant_id": "inv.epistemic_state_separate_from_value",
+      "statement": "Whether an assertion is known, disputed or inferred is separate from what the assertion substantively says.",
+      "enforcement": "review",
+      "severity": "review",
+      "related_elements": [
+        "evidence.epistemic_state",
+        "evidence.assertion_role"
+      ],
+      "check_name": null
+    }
+  ]
+}

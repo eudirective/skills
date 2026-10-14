@@ -1,0 +1,61 @@
+{
+  "contract_version": "0.2.0",
+  "module_family": "core_source",
+  "module_id": "eu-core-sources",
+  "jurisdiction": "EU",
+  "module_version": "0.1.0",
+  "pack_version": "0.1.0",
+  "source_records": [
+    {
+      "source_id": "eu:src:fixture",
+      "title": "Synthetic EU source",
+      "authority": "EU fixture authority",
+      "source_type": "fixture",
+      "scope": "synthetic testing only",
+      "language": "en",
+      "verified_at": "2026-10-04T20:00:00Z",
+      "effective_from": null,
+      "effective_to": null,
+      "locator": null,
+      "content_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "status": "current",
+      "content_kind": "authoritative_bundled_text",
+      "authenticity_state": "verified_official"
+    }
+  ],
+  "rule_records": [
+    {
+      "rule_id": "eu:rule:fixture",
+      "domain": "free_movement",
+      "proposition": "Synthetic rule for contract testing only.",
+      "source_refs": [
+        "eu:src:fixture"
+      ],
+      "interpretation_status": "direct_text",
+      "operators": [
+        "exists"
+      ],
+      "effective_from": null,
+      "effective_to": null,
+      "text_source_ref": "eu:src:fixture",
+      "support_scope": null,
+      "normative_layer": "eu_common"
+    }
+  ],
+  "authority_records": [],
+  "gap_records": [
+    {
+      "gap_id": "eu:gap:fixture",
+      "area": "substantive law",
+      "status": "not_implemented",
+      "detail": "fixture only",
+      "scope": "module",
+      "impact": "informational"
+    }
+  ],
+  "operational_records": [],
+  "deadline_records": [],
+  "route_records": [],
+  "id_namespace": "eu",
+  "attack_angle_records": []
+}

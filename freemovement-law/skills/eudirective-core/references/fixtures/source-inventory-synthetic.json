@@ -1,0 +1,78 @@
+{
+  "inventory_version": "0.1.0",
+  "inventory_id": "fixture:source-ownership",
+  "sources": [
+    {
+      "source_id": "eu:src:directive-2004-38",
+      "title": "Directive 2004/38/EC (fixture metadata)",
+      "authority_level": "eu",
+      "issuing_authority": "European Union",
+      "source_type": "directive",
+      "canonical_owner_family": "core",
+      "jurisdiction": null,
+      "language": "en",
+      "effective_from": null,
+      "effective_to": null,
+      "retrieved_at": null,
+      "content_sha256": null,
+      "verification_state": "staged",
+      "migration_state": "staged",
+      "propositions": [
+        {
+          "proposition_id": "eu:prop:directive-scope-fixture",
+          "owner_family": "core",
+          "scope": "fixture-only source ownership example",
+          "citation_anchor": null
+        }
+      ]
+    },
+    {
+      "source_id": "se:src:national-fixture",
+      "title": "Swedish national source (synthetic fixture)",
+      "authority_level": "member_state",
+      "issuing_authority": "Swedish authority fixture",
+      "source_type": "national_law",
+      "canonical_owner_family": "member_state",
+      "jurisdiction": "SE",
+      "language": "sv",
+      "effective_from": null,
+      "effective_to": null,
+      "retrieved_at": null,
+      "content_sha256": null,
+      "verification_state": "staged",
+      "migration_state": "staged",
+      "propositions": [
+        {
+          "proposition_id": "se:prop:national-fixture",
+          "owner_family": "member_state",
+          "scope": "synthetic national ownership example",
+          "citation_anchor": null
+        }
+      ]
+    },
+    {
+      "source_id": "xx:src:local-fixture",
+      "title": "Local appointment instruction (synthetic fixture)",
+      "authority_level": "local_operational",
+      "issuing_authority": "Mission/VAC fixture",
+      "source_type": "operational_guidance",
+      "canonical_owner_family": "applicant_country",
+      "jurisdiction": "XX",
+      "language": "en",
+      "effective_from": null,
+      "effective_to": null,
+      "retrieved_at": null,
+      "content_sha256": null,
+      "verification_state": "staged",
+      "migration_state": "staged",
+      "propositions": [
+        {
+          "proposition_id": "xx:prop:appointment-fixture",
+          "owner_family": "applicant_country",
+          "scope": "synthetic local operational example",
+          "citation_anchor": null
+        }
+      ]
+    }
+  ]
+}

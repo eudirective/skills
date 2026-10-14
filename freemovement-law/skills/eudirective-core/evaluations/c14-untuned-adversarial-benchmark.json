@@ -1,0 +1,616 @@
+{
+  "benchmark_version": "0.1.0",
+  "method": "untuned developer-authored hard challenge frozen after interpreter rulebank and before scoring; NOT independently blinded nor legal-expert verified",
+  "cases": [
+    {
+      "id": "H14-001",
+      "language": "en",
+      "scenario": "L1",
+      "format": "txt",
+      "text": "We are unable to offer a way to file your application without using the outsourcing company.",
+      "target_fact_key": "element:procedure.access_state",
+      "expected_assertion": "denied",
+      "context": "asserted"
+    },
+    {
+      "id": "H14-002",
+      "language": "en",
+      "scenario": "L1",
+      "format": "eml",
+      "text": "Direct submission at this mission has been discontinued.",
+      "target_fact_key": "element:procedure.access_state",
+      "expected_assertion": "denied",
+      "context": "asserted"
+    },
+    {
+      "id": "H14-003",
+      "language": "en",
+      "scenario": "L1",
+      "format": "html",
+      "text": "We do not handle walk-in requests on Fridays.",
+      "target_fact_key": "element:procedure.access_state",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "H14-004",
+      "language": "en",
+      "scenario": "L1",
+      "format": "txt",
+      "text": "Your spouse may hand in the application at our visa desk.",
+      "target_fact_key": "element:procedure.access_state",
+      "expected_assertion": "available",
+      "context": "asserted"
+    },
+    {
+      "id": "H14-005",
+      "language": "en",
+      "scenario": "L1",
+      "format": "eml",
+      "text": "The embassy does not provide an online form.",
+      "target_fact_key": "element:procedure.access_state",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "H14-006",
+      "language": "en",
+      "scenario": "L1",
+      "format": "html",
+      "text": "An applicant is obliged to use the external company VFS.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": true,
+      "context": "asserted"
+    },
+    {
+      "id": "H14-007",
+      "language": "en",
+      "scenario": "L1",
+      "format": "txt",
+      "text": "VFS is merely one of several possible channels.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": false,
+      "context": "asserted"
+    },
+    {
+      "id": "H14-008",
+      "language": "en",
+      "scenario": "L1",
+      "format": "eml",
+      "text": "There is no obligation to use the service provider.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": false,
+      "context": "asserted"
+    },
+    {
+      "id": "H14-009",
+      "language": "en",
+      "scenario": "L1",
+      "format": "html",
+      "text": "VFS is our preferred service provider.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "H14-010",
+      "language": "en",
+      "scenario": "L1",
+      "format": "txt",
+      "text": "Do not believe the claim that you must apply through VFS only.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "H14-011",
+      "language": "en",
+      "scenario": "L4",
+      "format": "eml",
+      "text": "I hereby refuse the requested entry visa.",
+      "target_fact_key": "fact:visa_refusal_exists",
+      "expected_assertion": true,
+      "context": "asserted"
+    },
+    {
+      "id": "H14-012",
+      "language": "en",
+      "scenario": "L4",
+      "format": "html",
+      "text": "The previous refusal was withdrawn.",
+      "target_fact_key": "fact:visa_refusal_exists",
+      "expected_assertion": false,
+      "context": "asserted"
+    },
+    {
+      "id": "H14-013",
+      "language": "en",
+      "scenario": "L4",
+      "format": "txt",
+      "text": "No decision was made about the pending visa request.",
+      "target_fact_key": "fact:visa_refusal_exists",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "H14-014",
+      "language": "en",
+      "scenario": "L4",
+      "format": "eml",
+      "text": "A copy of the decision reached the applicant on 2026-09-05.",
+      "target_fact_key": "fact:decision_notice_date",
+      "expected_assertion": "2026-09-05",
+      "context": "asserted"
+    },
+    {
+      "id": "H14-015",
+      "language": "en",
+      "scenario": "L4",
+      "format": "html",
+      "text": "The authority signed the decision on 2026-09-04.",
+      "target_fact_key": "fact:decision_notice_date",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "H14-016",
+      "language": "en",
+      "scenario": "L4",
+      "format": "txt",
+      "text": "The registry logged receipt of the appeal on 2026-09-23.",
+      "target_fact_key": "fact:appeal_submission_date",
+      "expected_assertion": "2026-09-23",
+      "context": "asserted"
+    },
+    {
+      "id": "H14-017",
+      "language": "en",
+      "scenario": "L4",
+      "format": "eml",
+      "text": "The appeal was sent by registered mail on 2026-09-22.",
+      "target_fact_key": "fact:appeal_submission_date",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "H14-018",
+      "language": "en",
+      "scenario": "L5",
+      "format": "html",
+      "text": "The agency keeps an internal file containing testimony from the ex-spouse.",
+      "target_fact_key": "fact:authority_possesses_information",
+      "expected_assertion": true,
+      "context": "asserted"
+    },
+    {
+      "id": "H14-019",
+      "language": "en",
+      "scenario": "L5",
+      "format": "txt",
+      "text": "We treated the former spouse's testimony as central to our determination.",
+      "target_fact_key": "fact:decisive_former_spouse_information",
+      "expected_assertion": true,
+      "context": "asserted"
+    },
+    {
+      "id": "H14-020",
+      "language": "en",
+      "scenario": "L5",
+      "format": "eml",
+      "text": "Your former partner's account will remain unavailable until after our ruling.",
+      "target_fact_key": "fact:authority_communication_state",
+      "expected_assertion": "withheld",
+      "context": "asserted"
+    },
+    {
+      "id": "H14-021",
+      "language": "en",
+      "scenario": "L5",
+      "format": "html",
+      "text": "I asked to review the relevant records before the matter was decided.",
+      "target_fact_key": "fact:information_requested_predecision",
+      "expected_assertion": true,
+      "context": "asserted"
+    },
+    {
+      "id": "H14-022",
+      "language": "sv",
+      "scenario": "L1",
+      "format": "txt",
+      "text": "Sökanden får inte lämna in handlingar direkt till ambassaden.",
+      "target_fact_key": "element:procedure.access_state",
+      "expected_assertion": "denied",
+      "context": "asserted"
+    },
+    {
+      "id": "H14-023",
+      "language": "sv",
+      "scenario": "L1",
+      "format": "eml",
+      "text": "Vi erbjuder nu personlig inlämning av visumansökningar.",
+      "target_fact_key": "element:procedure.access_state",
+      "expected_assertion": "available",
+      "context": "asserted"
+    },
+    {
+      "id": "H14-024",
+      "language": "sv",
+      "scenario": "L1",
+      "format": "html",
+      "text": "Det finns inga lediga tider denna vecka.",
+      "target_fact_key": "element:procedure.access_state",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "H14-025",
+      "language": "sv",
+      "scenario": "L1",
+      "format": "txt",
+      "text": "Alla ansökningar måste gå genom vår externa leverantör.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": true,
+      "context": "asserted"
+    },
+    {
+      "id": "H14-026",
+      "language": "sv",
+      "scenario": "L1",
+      "format": "eml",
+      "text": "Det är valfritt att använda VFS tjänster.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": false,
+      "context": "asserted"
+    },
+    {
+      "id": "H14-027",
+      "language": "sv",
+      "scenario": "L1",
+      "format": "html",
+      "text": "VFS kan hjälpa till med bokningen.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "H14-028",
+      "language": "sv",
+      "scenario": "L1",
+      "format": "txt",
+      "text": "Om VFS är obligatoriskt, skicka en förklaring.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": null,
+      "context": "conditional"
+    },
+    {
+      "id": "H14-029",
+      "language": "sv",
+      "scenario": "L1",
+      "format": "eml",
+      "text": "E-postmeddelandet citerade \"Du måste ansöka via VFS.\"",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": null,
+      "context": "quoted"
+    },
+    {
+      "id": "H14-030",
+      "language": "sv",
+      "scenario": "L4",
+      "format": "html",
+      "text": "Beslut om avslag på visum har fattats.",
+      "target_fact_key": "fact:visa_refusal_exists",
+      "expected_assertion": true,
+      "context": "asserted"
+    },
+    {
+      "id": "H14-031",
+      "language": "sv",
+      "scenario": "L4",
+      "format": "txt",
+      "text": "Ansökan har inte avslagits och är fortfarande under handläggning.",
+      "target_fact_key": "fact:visa_refusal_exists",
+      "expected_assertion": false,
+      "context": "asserted"
+    },
+    {
+      "id": "H14-032",
+      "language": "sv",
+      "scenario": "L4",
+      "format": "eml",
+      "text": "Man kan få avslag om handlingar saknas.",
+      "target_fact_key": "fact:visa_refusal_exists",
+      "expected_assertion": null,
+      "context": "conditional"
+    },
+    {
+      "id": "H14-033",
+      "language": "sv",
+      "scenario": "L4",
+      "format": "html",
+      "text": "Sökanden fick del av beslutet den 2026-09-05.",
+      "target_fact_key": "fact:decision_notice_date",
+      "expected_assertion": "2026-09-05",
+      "context": "asserted"
+    },
+    {
+      "id": "H14-034",
+      "language": "sv",
+      "scenario": "L4",
+      "format": "txt",
+      "text": "Beslutet upprättades den 2026-09-05.",
+      "target_fact_key": "fact:decision_notice_date",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "H14-035",
+      "language": "sv",
+      "scenario": "L4",
+      "format": "eml",
+      "text": "Överklagandet registrerades som inkommet 2026-09-25.",
+      "target_fact_key": "fact:appeal_submission_date",
+      "expected_assertion": "2026-09-25",
+      "context": "asserted"
+    },
+    {
+      "id": "H14-036",
+      "language": "sv",
+      "scenario": "L4",
+      "format": "html",
+      "text": "Överklagandet undertecknades 2026-09-23.",
+      "target_fact_key": "fact:appeal_submission_date",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "H14-037",
+      "language": "sv",
+      "scenario": "L5",
+      "format": "txt",
+      "text": "Akten innehåller uppgifter från den tidigare maken.",
+      "target_fact_key": "fact:authority_possesses_information",
+      "expected_assertion": true,
+      "context": "asserted"
+    },
+    {
+      "id": "H14-038",
+      "language": "sv",
+      "scenario": "L5",
+      "format": "eml",
+      "text": "Den tidigare makens uppgifter låg till grund för beslutet.",
+      "target_fact_key": "fact:decisive_former_spouse_information",
+      "expected_assertion": true,
+      "context": "asserted"
+    },
+    {
+      "id": "H14-039",
+      "language": "sv",
+      "scenario": "L5",
+      "format": "html",
+      "text": "Vi tänker inte visa materialet före beslutet.",
+      "target_fact_key": "fact:authority_communication_state",
+      "expected_assertion": "withheld",
+      "context": "asserted"
+    },
+    {
+      "id": "H14-040",
+      "language": "sv",
+      "scenario": "L5",
+      "format": "txt",
+      "text": "Jag bad om insyn i akten innan myndigheten avgjorde saken.",
+      "target_fact_key": "fact:information_requested_predecision",
+      "expected_assertion": true,
+      "context": "asserted"
+    },
+    {
+      "id": "H14-041",
+      "language": "sv",
+      "scenario": "L1",
+      "format": "eml",
+      "text": "Hon hävdade att VFS var enda möjliga vägen.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": null,
+      "context": "quoted"
+    },
+    {
+      "id": "H14-042",
+      "language": "tr",
+      "scenario": "L1",
+      "format": "html",
+      "text": "Başvurunuzu doğrudan büyükelçiliğe veremezsiniz.",
+      "target_fact_key": "element:procedure.access_state",
+      "expected_assertion": "denied",
+      "context": "asserted"
+    },
+    {
+      "id": "H14-043",
+      "language": "tr",
+      "scenario": "L1",
+      "format": "txt",
+      "text": "Bundan böyle başvuruları konsolosluk gişesinde kabul ediyoruz.",
+      "target_fact_key": "element:procedure.access_state",
+      "expected_assertion": "available",
+      "context": "asserted"
+    },
+    {
+      "id": "H14-044",
+      "language": "tr",
+      "scenario": "L1",
+      "format": "eml",
+      "text": "Bugün randevu bulunmamaktadır.",
+      "target_fact_key": "element:procedure.access_state",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "H14-045",
+      "language": "tr",
+      "scenario": "L1",
+      "format": "html",
+      "text": "Aracı kurum kullanılması zorunludur.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": true,
+      "context": "asserted"
+    },
+    {
+      "id": "H14-046",
+      "language": "tr",
+      "scenario": "L1",
+      "format": "txt",
+      "text": "VFS tek başvuru kanalı değildir.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": false,
+      "context": "asserted"
+    },
+    {
+      "id": "H14-047",
+      "language": "tr",
+      "scenario": "L1",
+      "format": "eml",
+      "text": "VFS randevu konusunda yardımcı olabilir.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "H14-048",
+      "language": "tr",
+      "scenario": "L1",
+      "format": "html",
+      "text": "Eğer VFS zorunluysa bunu yazılı olarak belirtin.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": null,
+      "context": "conditional"
+    },
+    {
+      "id": "H14-049",
+      "language": "tr",
+      "scenario": "L1",
+      "format": "txt",
+      "text": "Başvuran \"VFS üzerinden başvuru yapmak zorundasınız\" sözünü aktardı.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": null,
+      "context": "quoted"
+    },
+    {
+      "id": "H14-050",
+      "language": "tr",
+      "scenario": "L4",
+      "format": "eml",
+      "text": "Vize verilmesi talebini reddediyoruz.",
+      "target_fact_key": "fact:visa_refusal_exists",
+      "expected_assertion": true,
+      "context": "asserted"
+    },
+    {
+      "id": "H14-051",
+      "language": "tr",
+      "scenario": "L4",
+      "format": "html",
+      "text": "Henüz vize başvurusu hakkında karar verilmedi.",
+      "target_fact_key": "fact:visa_refusal_exists",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "H14-052",
+      "language": "tr",
+      "scenario": "L4",
+      "format": "txt",
+      "text": "Ret kararı geri alındı.",
+      "target_fact_key": "fact:visa_refusal_exists",
+      "expected_assertion": false,
+      "context": "asserted"
+    },
+    {
+      "id": "H14-053",
+      "language": "tr",
+      "scenario": "L4",
+      "format": "eml",
+      "text": "Karar başvurana 2026-09-05 günü bildirildi.",
+      "target_fact_key": "fact:decision_notice_date",
+      "expected_assertion": "2026-09-05",
+      "context": "asserted"
+    },
+    {
+      "id": "H14-054",
+      "language": "tr",
+      "scenario": "L4",
+      "format": "html",
+      "text": "Karar 2026-09-04 tarihinde imzalandı.",
+      "target_fact_key": "fact:decision_notice_date",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "H14-055",
+      "language": "tr",
+      "scenario": "L4",
+      "format": "txt",
+      "text": "İtiraz dilekçesi 2026-09-23 günü kayıt altına alındı.",
+      "target_fact_key": "fact:appeal_submission_date",
+      "expected_assertion": "2026-09-23",
+      "context": "asserted"
+    },
+    {
+      "id": "H14-056",
+      "language": "tr",
+      "scenario": "L4",
+      "format": "eml",
+      "text": "İtiraz mektubu 2026-09-23 tarihinde gönderildi.",
+      "target_fact_key": "fact:appeal_submission_date",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "H14-057",
+      "language": "tr",
+      "scenario": "L5",
+      "format": "html",
+      "text": "Dosyada eski eşin beyanları tutulmaktadır.",
+      "target_fact_key": "fact:authority_possesses_information",
+      "expected_assertion": true,
+      "context": "asserted"
+    },
+    {
+      "id": "H14-058",
+      "language": "tr",
+      "scenario": "L5",
+      "format": "txt",
+      "text": "Karar eski eşin verdiği belirleyici bilgilere dayanıyor.",
+      "target_fact_key": "fact:decisive_former_spouse_information",
+      "expected_assertion": true,
+      "context": "asserted"
+    },
+    {
+      "id": "H14-059",
+      "language": "tr",
+      "scenario": "L5",
+      "format": "eml",
+      "text": "Karar verilene kadar bu belgeleri size açıklamayacağız.",
+      "target_fact_key": "fact:authority_communication_state",
+      "expected_assertion": "withheld",
+      "context": "asserted"
+    },
+    {
+      "id": "H14-060",
+      "language": "tr",
+      "scenario": "L5",
+      "format": "html",
+      "text": "Karardan önce dosyadaki bilgilere ulaşmak için talepte bulundum.",
+      "target_fact_key": "fact:information_requested_predecision",
+      "expected_assertion": true,
+      "context": "asserted"
+    },
+    {
+      "id": "H14-061",
+      "language": "tr",
+      "scenario": "L1",
+      "format": "txt",
+      "text": "VFS hakkında bir bilgi broşürü gönderdik.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": null,
+      "context": "asserted"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Interaction rules v0.2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "model_version",
+    "rules"
+  ],
+  "properties": {
+    "model_version": {
+      "const": "0.2.0"
+    },
+    "rules": {
+      "type": "array",
+      "maxItems": 1000,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "rule_id",
+          "title",
+          "kind",
+          "inputs",
+          "statement",
+          "machine_checkable",
+          "invariant_id"
+        ],
+        "properties": {
+          "rule_id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_.:-]*$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 240
+          },
+          "kind": {
+            "enum": [
+              "composition",
+              "dependency",
+              "authority",
+              "completeness",
+              "privacy",
+              "temporal",
+              "semantic_boundary"
+            ]
+          },
+          "inputs": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]*(\\.[a-z][a-z0-9_]*)+$"
+            }
+          },
+          "statement": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2000
+          },
+          "machine_checkable": {
+            "type": "boolean"
+          },
+          "invariant_id": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "maxLength": 200
+          }
+        }
+      }
+    }
+  }
+}

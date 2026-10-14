@@ -1,0 +1,443 @@
+{
+  "milestone": "C17b-c-d",
+  "mode": "fictional_review_only",
+  "case_id": "L1",
+  "procedure_stage": "pre_lodging",
+  "input_digests": {
+    "case": "80b2b0737e539e031c9c1c26d0a3b17fce27633cf315b664ec14ea842d347559",
+    "upstream_c17": "fd183a3dcf38e701048aea6bfb519f7e75b2ebe14b3cd65471d2663d68348f3f",
+    "c12": "c38903dfa1de23801dc1b31470fd3e1dcced8863014e06932b064db641443a2a",
+    "c13": "9c0ecabf90521c64da209220426b5245a3fc615ce76a8a28f38b8f1f91b96868"
+  },
+  "catalog_digests": {
+    "EU": "584291c8f04c18a1deb79289e1e0250057963568925db88c3a74de9654c26996",
+    "SE": "068d677b2269a4e53f026e2cb8bb0d0933be7caf6fe7be624bc19b6114a5da1e",
+    "TR": "8e15d05a080abfddfce6e8047b011975e9c06b7caeb1286c65e0bea6571d8440"
+  },
+  "source_assurance_warning": "National-law modules contain curated identity notes, not complete authoritative statutes; C1 active Article 2(2)(a) targeted repair does not establish full-source completeness; 21 C1 identity-only notes persist; no real-case merits review.",
+  "legal_violation_status": "not_determined",
+  "verified_legal_merits": false,
+  "send_authorized": false,
+  "requires_human_review": true,
+  "c17_questions": [
+    {
+      "rule_id": "eu:c12:direct-consular-access",
+      "topic": "Article 5(2) assistance and direct lodging: preliminary fact review",
+      "citations_for_human_check": [
+        {
+          "source_id": "eu:32004l0038",
+          "pinpoint_hint": "Article 5(2): every facility; visa issuance as soon as possible under accelerated procedure.",
+          "assurance": "bundled_text_integrity_checked_not_completeness"
+        }
+      ],
+      "factual_items_for_verification": [
+        "element:procedure.access_state",
+        "element:procedure.channel",
+        "fact:eu_family_direct_request",
+        "fact:mission_requires_vfs_only"
+      ],
+      "exception_questions": [
+        "Confirm direct channel and application eligibility; a published channel alone is not proof of an individualized entitlement to walk-in lodging.",
+        "Consider lawful appointment logistics and available direct alternative."
+      ],
+      "question": "Please clarify the factual and procedural basis for the matter described as: Article 5(2) assistance and direct lodging: preliminary fact review.",
+      "legal_violation_status": "not_determined"
+    },
+    {
+      "rule_id": "eu:c12:entry-v-card-separation",
+      "topic": "Entry visa and residence-card procedures are not interchangeable",
+      "citations_for_human_check": [
+        {
+          "source_id": "eu:32004l0038",
+          "pinpoint_hint": "Directive 2004/38 Article 5(2) vs Articles 9-10.",
+          "assurance": "bundled_text_integrity_checked_not_completeness"
+        }
+      ],
+      "factual_items_for_verification": [
+        "case:procedure_type"
+      ],
+      "exception_questions": [
+        "Determine the legal role of each document; no entitlement is decided by procedure type alone."
+      ],
+      "question": "Please clarify the factual and procedural basis for the matter described as: Entry visa and residence-card procedures are not interchangeable.",
+      "legal_violation_status": "not_determined"
+    },
+    {
+      "rule_id": "se:c12:direct-access",
+      "topic": "Swedish published direct application route: reported exclusion",
+      "citations_for_human_check": [
+        {
+          "source_id": "se:src:family-visa-istanbul",
+          "pinpoint_hint": "Sweden Abroad Istanbul EU/EEA family-member direct submission information.",
+          "assurance": "country_source_summary_only"
+        },
+        {
+          "source_id": "se:src:admin-act",
+          "pinpoint_hint": "General administrative accessibility; check special immigration procedure.",
+          "assurance": "country_source_summary_only"
+        }
+      ],
+      "factual_items_for_verification": [
+        "element:procedure.access_state",
+        "element:procedure.channel",
+        "fact:mission_requires_vfs_only"
+      ],
+      "exception_questions": [
+        "The Swedish consular channel may require an appointment, and a refusal of walk-in service alone may not establish illegality."
+      ],
+      "question": "Please clarify the factual and procedural basis for the matter described as: Swedish published direct application route: reported exclusion.",
+      "legal_violation_status": "not_determined"
+    },
+    {
+      "rule_id": "tr:c12:direct-channel",
+      "topic": "Published Swedish direct visa application channel in Türkiye",
+      "citations_for_human_check": [
+        {
+          "source_id": "tr:src:sweden-istanbul-eu-family",
+          "pinpoint_hint": "Swedish mission EU/EEA family visa route in Türkiye; not a Turkish visa-law power.",
+          "assurance": "country_source_summary_only"
+        }
+      ],
+      "factual_items_for_verification": [
+        "element:procedure.channel",
+        "fact:mission_requires_vfs_only"
+      ],
+      "exception_questions": [
+        "Türkiye module supplies local mission operation only; the deciding law is Swedish/EU."
+      ],
+      "question": "Please clarify the factual and procedural basis for the matter described as: Published Swedish direct visa application channel in Türkiye.",
+      "legal_violation_status": "not_determined"
+    }
+  ],
+  "remedy_candidates": [
+    {
+      "remedy_id": "se:c17:mission-procedure-clarification",
+      "category": "administrative_clarification",
+      "authority_ref": "se:authority:istanbul-consulate",
+      "priority_class": "parallel_review",
+      "deadline": {
+        "kind": "not_established",
+        "rule": "No verified binding deadline in this catalogue.",
+        "trigger_event": null,
+        "calculation": "human_only"
+      },
+      "prerequisites_to_verify": [
+        "Confirm Directive 2004/38 scope and who is deciding",
+        "Verify that the reported instruction is attributable to the mission and still operative"
+      ],
+      "powers_to_verify": [
+        "Explain available application channels and procedural requirements; any correction depends on independent review"
+      ],
+      "limits": [
+        "Requesting clarification is not proof of an infringement or an appeal",
+        "No guaranteed response or interim protection",
+        "Do not treat a source note as full statutory text"
+      ],
+      "evidence_to_preserve": [
+        "Dated request, exact reply, published instruction snapshot, documentation actually offered"
+      ],
+      "source_refs": [
+        "se:src:family-visa-istanbul",
+        "se:src:admin-act"
+      ],
+      "filing_channel_for_review": "Official Swedish mission contact route: verify current address at Sweden Abroad.",
+      "intended_outcome_for_review": "Seek the mission's written explanation of the reported process and any available alternatives.",
+      "matched_rule_ids": [
+        "se:c12:direct-access"
+      ],
+      "jurisdiction": "SE",
+      "status": "candidate_for_human_review",
+      "human_review_required": true,
+      "outstanding_checks": [
+        "Verify jurisdiction and present official source text",
+        "Verify factual predicates and contrary evidence",
+        "Verify current authority competence, prerequisites and deadlines",
+        "Check whether this route affects or leaves untouched other remedies"
+      ]
+    },
+    {
+      "remedy_id": "tr:c17:sweden-istanbul-direct-contact",
+      "category": "operational_contact",
+      "authority_ref": "tr:authority:sweden-istanbul-mission",
+      "priority_class": "parallel_review",
+      "deadline": {
+        "kind": "not_established",
+        "rule": "No verified binding deadline in this catalogue.",
+        "trigger_event": null,
+        "calculation": "human_only"
+      },
+      "prerequisites_to_verify": [
+        "Confirm the Swedish family-member eligibility test and current consulate appointment practice",
+        "Do not treat the Turkish location as Turkish decision-making jurisdiction"
+      ],
+      "powers_to_verify": [
+        "The Swedish mission publishes a direct contact channel for eligible applicants"
+      ],
+      "limits": [
+        "A request for appointment is not the same as lodged application",
+        "Optional third-party service charges differ from the consular visa fee",
+        "This is Swedish consular activity in Türkiye, not a Turkish immigration appeal"
+      ],
+      "evidence_to_preserve": [
+        "Date of request, acknowledgment, exact current mission guidance, third-party channel terms"
+      ],
+      "source_refs": [
+        "tr:src:sweden-istanbul-eu-family",
+        "tr:src:sweden-istanbul-contact"
+      ],
+      "filing_channel_for_review": "Check Sweden Abroad Istanbul migration contact page before transmission.",
+      "intended_outcome_for_review": "Ask for the available direct mission appointment procedure or confirmation of channel choice.",
+      "matched_rule_ids": [
+        "tr:c12:direct-channel"
+      ],
+      "jurisdiction": "TR",
+      "status": "candidate_for_human_review",
+      "human_review_required": true,
+      "outstanding_checks": [
+        "Verify jurisdiction and present official source text",
+        "Verify factual predicates and contrary evidence",
+        "Verify current authority competence, prerequisites and deadlines",
+        "Check whether this route affects or leaves untouched other remedies"
+      ]
+    },
+    {
+      "remedy_id": "eu:c17:solvit",
+      "category": "informal_problem_solving",
+      "authority_ref": "eu:authority:solvit-network",
+      "priority_class": "nonbinding_parallel_review",
+      "deadline": {
+        "kind": "not_established",
+        "rule": "No verified binding deadline in this catalogue.",
+        "trigger_event": null,
+        "calculation": "human_only"
+      },
+      "prerequisites_to_verify": [
+        "Check whether the complaint presents a qualifying cross-border EU-law problem with a public authority",
+        "Confirm SOLVIT competence and any parallel formal deadline"
+      ],
+      "powers_to_verify": [
+        "Facilitate informal cross-border discussion/problem solving through SOLVIT network"
+      ],
+      "limits": [
+        "Not a court or compulsory review procedure",
+        "No guaranteed individual redress",
+        "Do not postpone a formal appeal or time-critical filing"
+      ],
+      "evidence_to_preserve": [
+        "Chronology, relevant EU free-movement basis, written conduct, official source and contrary explanation"
+      ],
+      "source_refs": [
+        "eu:32013h0461"
+      ],
+      "filing_channel_for_review": "Verify official SOLVIT eligibility and national centre channel before referral.",
+      "intended_outcome_for_review": "Explore informal EU-law problem-solving without substituting for formal remedies.",
+      "matched_rule_ids": [
+        "eu:c12:direct-consular-access"
+      ],
+      "jurisdiction": "EU",
+      "status": "candidate_for_human_review",
+      "human_review_required": true,
+      "outstanding_checks": [
+        "Verify jurisdiction and present official source text",
+        "Verify factual predicates and contrary evidence",
+        "Verify current authority competence, prerequisites and deadlines",
+        "Check whether this route affects or leaves untouched other remedies"
+      ]
+    },
+    {
+      "remedy_id": "se:c17:jo-supervisory-complaint",
+      "category": "supervisory_complaint",
+      "authority_ref": "se:authority:jo",
+      "priority_class": "nonbinding_parallel_review",
+      "deadline": {
+        "kind": "normally_two_year_rule",
+        "rule": "JO ordinarily declines matters over two years old; exceptions require assessment; not an appeal filing period.",
+        "trigger_event": "date_of_complained_of_conduct",
+        "calculation": "human_only"
+      },
+      "prerequisites_to_verify": [
+        "Verify that the challenged conduct was an act of an authority/official within JO jurisdiction",
+        "Check timing and whether a separate appeal is available",
+        "Review disclosure and public-record risks"
+      ],
+      "powers_to_verify": [
+        "JO may investigate and criticise maladministration"
+      ],
+      "limits": [
+        "JO cannot reverse the underlying decision, issue the visa or award damages",
+        "Not all complaints are investigated",
+        "The complaint and attachments normally become public documents subject to secrecy rules",
+        "Ordinary appeal timelines continue independently"
+      ],
+      "evidence_to_preserve": [
+        "Chronology, exact official conduct, written communications, file number, relevant decision, minimized copies"
+      ],
+      "source_refs": [
+        "se:src:jo-complaint",
+        "se:src:jo-guidance-en"
+      ],
+      "filing_channel_for_review": "JO official complaint instructions; verify current format and confidentiality treatment.",
+      "intended_outcome_for_review": "Seek independent supervisory scrutiny of alleged maladministration, not an individual visa remedy.",
+      "matched_rule_ids": [
+        "se:c12:direct-access"
+      ],
+      "jurisdiction": "SE",
+      "status": "candidate_for_human_review",
+      "human_review_required": true,
+      "outstanding_checks": [
+        "Verify jurisdiction and present official source text",
+        "Verify factual predicates and contrary evidence",
+        "Verify current authority competence, prerequisites and deadlines",
+        "Check whether this route affects or leaves untouched other remedies"
+      ]
+    },
+    {
+      "remedy_id": "eu:c17:commission-complaint",
+      "category": "eu_law_enforcement_complaint",
+      "authority_ref": "eu:authority:european-commission",
+      "priority_class": "systemic_parallel_review",
+      "deadline": {
+        "kind": "not_established",
+        "rule": "No verified binding deadline in this catalogue.",
+        "trigger_event": null,
+        "calculation": "human_only"
+      },
+      "prerequisites_to_verify": [
+        "Assess whether an alleged Member State breach is substantiated and potentially relevant to Commission enforcement",
+        "Identify national procedural redress independently"
+      ],
+      "powers_to_verify": [
+        "Examine EU-law compliance at Member State level under Commission enforcement powers"
+      ],
+      "limits": [
+        "Not an individual appeal or guaranteed individual remedy",
+        "No guaranteed Commission action",
+        "Does not pause national deadlines"
+      ],
+      "evidence_to_preserve": [
+        "Specific Member State practice, comparable documented incidents if available, primary EU law basis, contrary explanations"
+      ],
+      "source_refs": [
+        "eu:commission-eu-law-complaint"
+      ],
+      "filing_channel_for_review": "Verify current official contact/submission instructions before use.",
+      "intended_outcome_for_review": "Flag a possible systemic EU-law issue for enforcement consideration, not case reversal.",
+      "matched_rule_ids": [
+        "eu:c12:direct-consular-access"
+      ],
+      "jurisdiction": "EU",
+      "status": "candidate_for_human_review",
+      "human_review_required": true,
+      "outstanding_checks": [
+        "Verify jurisdiction and present official source text",
+        "Verify factual predicates and contrary evidence",
+        "Verify current authority competence, prerequisites and deadlines",
+        "Check whether this route affects or leaves untouched other remedies"
+      ]
+    }
+  ],
+  "excluded_routes": [
+    {
+      "remedy_id": "eu:c17:european-ombudsman",
+      "reason": "EU Ombudsman supervises EU bodies, not Swedish consulates",
+      "source_scope": "procedural"
+    }
+  ],
+  "parallelism_warnings": [
+    "Candidate order is a review queue, not a recommendation or sequence of legally required steps.",
+    "Clarification, SOLVIT, Commission or JO complaints do not automatically suspend national appeal deadlines.",
+    "Do not calculate dates, send correspondence, or infer violation or eligibility from a fictional source-anchored predicate.",
+    "Review potentially urgent formal appeal independently and in parallel; no waiting step is authorized."
+  ],
+  "correspondence_drafts": [
+    {
+      "remedy_id": "se:c17:mission-procedure-clarification",
+      "format": "administrative_clarification",
+      "recipient_placeholder": "[VERIFY CURRENT COMPETENT AUTHORITY]",
+      "text": "DRAFT PROCEDURAL CLARIFICATION — FICTIONAL REVIEW ONLY / DO NOT SEND\nTo: [VERIFY CURRENT COMPETENT AUTHORITY; NO ADDRESS INSERTED]\nRe: [FICTIONAL L1 — REPLACE WITH HUMAN-VERIFIED REFERENCE ONLY IF AUTHORIZED]\n\nThe fictional review record raises the following matters for verification: Swedish published direct application route: reported exclusion.\nThese are unverified allegations and source-qualified questions, not findings.\n\nPlease clarify in writing the competent procedure, source of the reported requirement, any applicable exception, and available means to present relevant evidence. If the report is inaccurate, please identify the applicable procedure instead.\n\nRelevant source identifiers for a human to inspect: se:src:family-visa-istanbul, se:src:admin-act.\nDocuments and dates must be checked independently; attach only material required and lawfully shareable.\nThe recipient, competence, applicable law, filing requirements and deadline remain unverified.\n",
+      "send_authorized": false,
+      "human_review_required": true
+    },
+    {
+      "remedy_id": "tr:c17:sweden-istanbul-direct-contact",
+      "format": "operational_contact",
+      "recipient_placeholder": "[VERIFY CURRENT COMPETENT AUTHORITY]",
+      "text": "DRAFT PROCEDURAL CLARIFICATION — FICTIONAL REVIEW ONLY / DO NOT SEND\nTo: [VERIFY CURRENT COMPETENT AUTHORITY; NO ADDRESS INSERTED]\nRe: [FICTIONAL L1 — REPLACE WITH HUMAN-VERIFIED REFERENCE ONLY IF AUTHORIZED]\n\nThe fictional review record raises the following matters for verification: Published Swedish direct visa application channel in Türkiye.\nThese are unverified allegations and source-qualified questions, not findings.\n\nPlease clarify in writing the competent procedure, source of the reported requirement, any applicable exception, and available means to present relevant evidence. If the report is inaccurate, please identify the applicable procedure instead.\n\nRelevant source identifiers for a human to inspect: tr:src:sweden-istanbul-eu-family, tr:src:sweden-istanbul-contact.\nDocuments and dates must be checked independently; attach only material required and lawfully shareable.\nThe recipient, competence, applicable law, filing requirements and deadline remain unverified.\n",
+      "send_authorized": false,
+      "human_review_required": true
+    },
+    {
+      "remedy_id": "eu:c17:solvit",
+      "format": "informal_problem_solving",
+      "recipient_placeholder": "[VERIFY CURRENT COMPETENT AUTHORITY]",
+      "text": "DRAFT PROCEDURAL CLARIFICATION — FICTIONAL REVIEW ONLY / DO NOT SEND\nTo: [VERIFY CURRENT COMPETENT AUTHORITY; NO ADDRESS INSERTED]\nRe: [FICTIONAL L1 — REPLACE WITH HUMAN-VERIFIED REFERENCE ONLY IF AUTHORIZED]\n\nThe fictional review record raises the following matters for verification: Article 5(2) assistance and direct lodging: preliminary fact review.\nThese are unverified allegations and source-qualified questions, not findings.\n\nPlease clarify in writing the competent procedure, source of the reported requirement, any applicable exception, and available means to present relevant evidence. If the report is inaccurate, please identify the applicable procedure instead.\n\nRelevant source identifiers for a human to inspect: eu:32013h0461.\nDocuments and dates must be checked independently; attach only material required and lawfully shareable.\nThe recipient, competence, applicable law, filing requirements and deadline remain unverified.\n",
+      "send_authorized": false,
+      "human_review_required": true
+    },
+    {
+      "remedy_id": "se:c17:jo-supervisory-complaint",
+      "format": "supervisory_complaint",
+      "recipient_placeholder": "[VERIFY CURRENT COMPETENT AUTHORITY]",
+      "text": "DRAFT SUPERVISORY COMPLAINT — FICTIONAL REVIEW ONLY / DO NOT SEND\nTo: [VERIFY CURRENT COMPETENT AUTHORITY; NO ADDRESS INSERTED]\nRe: [FICTIONAL L1 — REPLACE WITH HUMAN-VERIFIED REFERENCE ONLY IF AUTHORIZED]\n\nThe fictional review record raises the following matters for verification: Swedish published direct application route: reported exclusion.\nThese are unverified allegations and source-qualified questions, not findings.\n\nSubject to verification of competence and the underlying facts, I request supervisory examination of the described conduct. I do not seek reversal or monetary compensation from this body.\n\nRelevant source identifiers for a human to inspect: se:src:jo-complaint, se:src:jo-guidance-en.\nDocuments and dates must be checked independently; attach only material required and lawfully shareable.\nThe recipient, competence, applicable law, filing requirements and deadline remain unverified.\n",
+      "send_authorized": false,
+      "human_review_required": true
+    },
+    {
+      "remedy_id": "eu:c17:commission-complaint",
+      "format": "eu_law_enforcement_complaint",
+      "recipient_placeholder": "[VERIFY CURRENT COMPETENT AUTHORITY]",
+      "text": "DRAFT SYSTEMIC EU-LAW COMPLAINT — FICTIONAL REVIEW ONLY / DO NOT SEND\nTo: [VERIFY CURRENT COMPETENT AUTHORITY; NO ADDRESS INSERTED]\nRe: [FICTIONAL L1 — REPLACE WITH HUMAN-VERIFIED REFERENCE ONLY IF AUTHORIZED]\n\nThe fictional review record raises the following matters for verification: Article 5(2) assistance and direct lodging: preliminary fact review.\nThese are unverified allegations and source-qualified questions, not findings.\n\nThis is submitted as a proposed issue for EU-law enforcement review, not an individual appeal. The factual pattern, Member-State attribution and applicable Union law must be independently established.\n\nRelevant source identifiers for a human to inspect: eu:commission-eu-law-complaint.\nDocuments and dates must be checked independently; attach only material required and lawfully shareable.\nThe recipient, competence, applicable law, filing requirements and deadline remain unverified.\n",
+      "send_authorized": false,
+      "human_review_required": true
+    }
+  ],
+  "decision_gate": "blocked_pending_source_factual_and_human_review",
+  "missing_prerequisites": [
+    "Official current and operative national legislation and any exceptions",
+    "Authenticated communications and independent fact assessment",
+    "Current competent recipient and applicable court/appeal procedure",
+    "Decision service dates, extension/suspension rules and filing proof",
+    "Independent legal-semantic review including unresolved C15f, 21 incomplete C1 source notes, and independent full-source verification",
+    "Private-data authorization and trustworthy human approval before any real use"
+  ],
+  "review_facts": [
+    {
+      "rule_id": "eu:c12:direct-consular-access",
+      "facts_to_check": [
+        "element:procedure.access_state",
+        "element:procedure.channel",
+        "fact:eu_family_direct_request",
+        "fact:mission_requires_vfs_only"
+      ]
+    },
+    {
+      "rule_id": "eu:c12:entry-v-card-separation",
+      "facts_to_check": [
+        "case:procedure_type"
+      ]
+    },
+    {
+      "rule_id": "se:c12:direct-access",
+      "facts_to_check": [
+        "element:procedure.access_state",
+        "element:procedure.channel",
+        "fact:mission_requires_vfs_only"
+      ]
+    },
+    {
+      "rule_id": "tr:c12:direct-channel",
+      "facts_to_check": [
+        "element:procedure.channel",
+        "fact:mission_requires_vfs_only"
+      ]
+    }
+  ],
+  "c6_verified_release_binding": {
+    "status": "verified_c6_synthetic_release",
+    "case_id": "CASE-C10-L1",
+    "c6_release_sha256": "a862d91ce41959ceb576d5508cab546da422dd7414c37831897f37ebfa05bdac",
+    "c12_sha256": "c38903dfa1de23801dc1b31470fd3e1dcced8863014e06932b064db641443a2a",
+    "c13_sha256": "9c0ecabf90521c64da209220426b5245a3fc615ce76a8a28f38b8f1f91b96868",
+    "verification_assurance": "deterministic_replay_only_not_legal_validation"
+  }
+}

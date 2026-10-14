@@ -1,0 +1,298 @@
+{
+  "milestone": "C17b-c-d",
+  "mode": "fictional_review_only",
+  "case_id": "L6",
+  "procedure_stage": "pre_lodging",
+  "input_digests": {
+    "case": "613900c743cabcb170569fc605f67101ef2f249cd2a53ee636dc7a43172bbd98",
+    "upstream_c17": "06dae83b43c16a97debe73db0fbef6ab7ccc595bb823cf31b941d1490a5483c2",
+    "c12": "54ff57e90f6884a09a4349631f90eff516e4f11f25e3cf1b01d2c8fa7f2ff6b6",
+    "c13": "e4eeaa01c0811e1b64a1fd98eccb755fea6c8a5eefc40ac58b142f444ca3e5e3"
+  },
+  "catalog_digests": {
+    "EU": "584291c8f04c18a1deb79289e1e0250057963568925db88c3a74de9654c26996",
+    "SE": "068d677b2269a4e53f026e2cb8bb0d0933be7caf6fe7be624bc19b6114a5da1e",
+    "TR": "8e15d05a080abfddfce6e8047b011975e9c06b7caeb1286c65e0bea6571d8440"
+  },
+  "source_assurance_warning": "National-law modules contain curated identity notes, not complete authoritative statutes; C1 active Article 2(2)(a) targeted repair does not establish full-source completeness; 21 C1 identity-only notes persist; no real-case merits review.",
+  "legal_violation_status": "not_determined",
+  "verified_legal_merits": false,
+  "send_authorized": false,
+  "requires_human_review": true,
+  "c17_questions": [
+    {
+      "rule_id": "eu:c12:entry-v-card-separation",
+      "topic": "Entry visa and residence-card procedures are not interchangeable",
+      "citations_for_human_check": [
+        {
+          "source_id": "eu:32004l0038",
+          "pinpoint_hint": "Directive 2004/38 Article 5(2) vs Articles 9-10.",
+          "assurance": "bundled_text_integrity_checked_not_completeness"
+        }
+      ],
+      "factual_items_for_verification": [
+        "case:procedure_type"
+      ],
+      "exception_questions": [
+        "Determine the legal role of each document; no entitlement is decided by procedure type alone."
+      ],
+      "question": "Please clarify the factual and procedural basis for the matter described as: Entry visa and residence-card procedures are not interchangeable.",
+      "legal_violation_status": "not_determined"
+    },
+    {
+      "rule_id": "eu:c16:prior-card-entry-gate",
+      "topic": "Prior residence-card condition imposed at entry-visa stage",
+      "citations_for_human_check": [
+        {
+          "source_id": "eu:32004l0038",
+          "pinpoint_hint": "Articles 5(2) and 9–10 distinguish visa obligations and residence cards.",
+          "assurance": "bundled_text_integrity_checked_not_completeness"
+        }
+      ],
+      "factual_items_for_verification": [
+        "element:procedure.access_state",
+        "fact:residence_card_demanded_before_visa",
+        "fact:entry_visa_route_requested",
+        "fact:card_or_visa_exemption_unknown"
+      ],
+      "exception_questions": [
+        "Check free-movement scope, applicable entry-visa exemption, and whether a card was required as evidence or as a categorical prerequisite.",
+        "A visa may not even be needed for some card holders; an incorrectly described demand is not automatically a breach."
+      ],
+      "question": "Please clarify the factual and procedural basis for the matter described as: Prior residence-card condition imposed at entry-visa stage.",
+      "legal_violation_status": "not_determined"
+    },
+    {
+      "rule_id": "se:c16:visa-card-route",
+      "topic": "Swedish visa route versus EU-family residence-card requirement",
+      "citations_for_human_check": [
+        {
+          "source_id": "se:src:foreigners-act",
+          "pinpoint_hint": "Utlänningslag visa exemptions and EU-family residence cards; verify operative wording and special rules.",
+          "assurance": "country_source_summary_only"
+        },
+        {
+          "source_id": "se:src:family-visa-istanbul",
+          "pinpoint_hint": "Direct EU-family visa application practice in Istanbul.",
+          "assurance": "country_source_summary_only"
+        }
+      ],
+      "factual_items_for_verification": [
+        "fact:residence_card_demanded_before_visa",
+        "fact:entry_visa_route_requested"
+      ],
+      "exception_questions": [
+        "Determine whether consular communication describes a prerequisite, exemption evidence or a different procedure."
+      ],
+      "question": "Please clarify the factual and procedural basis for the matter described as: Swedish visa route versus EU-family residence-card requirement.",
+      "legal_violation_status": "not_determined"
+    }
+  ],
+  "remedy_candidates": [
+    {
+      "remedy_id": "se:c17:mission-procedure-clarification",
+      "category": "administrative_clarification",
+      "authority_ref": "se:authority:istanbul-consulate",
+      "priority_class": "parallel_review",
+      "deadline": {
+        "kind": "not_established",
+        "rule": "No verified binding deadline in this catalogue.",
+        "trigger_event": null,
+        "calculation": "human_only"
+      },
+      "prerequisites_to_verify": [
+        "Confirm Directive 2004/38 scope and who is deciding",
+        "Verify that the reported instruction is attributable to the mission and still operative"
+      ],
+      "powers_to_verify": [
+        "Explain available application channels and procedural requirements; any correction depends on independent review"
+      ],
+      "limits": [
+        "Requesting clarification is not proof of an infringement or an appeal",
+        "No guaranteed response or interim protection",
+        "Do not treat a source note as full statutory text"
+      ],
+      "evidence_to_preserve": [
+        "Dated request, exact reply, published instruction snapshot, documentation actually offered"
+      ],
+      "source_refs": [
+        "se:src:family-visa-istanbul",
+        "se:src:admin-act"
+      ],
+      "filing_channel_for_review": "Official Swedish mission contact route: verify current address at Sweden Abroad.",
+      "intended_outcome_for_review": "Seek the mission's written explanation of the reported process and any available alternatives.",
+      "matched_rule_ids": [
+        "se:c16:visa-card-route"
+      ],
+      "jurisdiction": "SE",
+      "status": "candidate_for_human_review",
+      "human_review_required": true,
+      "outstanding_checks": [
+        "Verify jurisdiction and present official source text",
+        "Verify factual predicates and contrary evidence",
+        "Verify current authority competence, prerequisites and deadlines",
+        "Check whether this route affects or leaves untouched other remedies"
+      ]
+    },
+    {
+      "remedy_id": "eu:c17:solvit",
+      "category": "informal_problem_solving",
+      "authority_ref": "eu:authority:solvit-network",
+      "priority_class": "nonbinding_parallel_review",
+      "deadline": {
+        "kind": "not_established",
+        "rule": "No verified binding deadline in this catalogue.",
+        "trigger_event": null,
+        "calculation": "human_only"
+      },
+      "prerequisites_to_verify": [
+        "Check whether the complaint presents a qualifying cross-border EU-law problem with a public authority",
+        "Confirm SOLVIT competence and any parallel formal deadline"
+      ],
+      "powers_to_verify": [
+        "Facilitate informal cross-border discussion/problem solving through SOLVIT network"
+      ],
+      "limits": [
+        "Not a court or compulsory review procedure",
+        "No guaranteed individual redress",
+        "Do not postpone a formal appeal or time-critical filing"
+      ],
+      "evidence_to_preserve": [
+        "Chronology, relevant EU free-movement basis, written conduct, official source and contrary explanation"
+      ],
+      "source_refs": [
+        "eu:32013h0461"
+      ],
+      "filing_channel_for_review": "Verify official SOLVIT eligibility and national centre channel before referral.",
+      "intended_outcome_for_review": "Explore informal EU-law problem-solving without substituting for formal remedies.",
+      "matched_rule_ids": [
+        "eu:c16:prior-card-entry-gate"
+      ],
+      "jurisdiction": "EU",
+      "status": "candidate_for_human_review",
+      "human_review_required": true,
+      "outstanding_checks": [
+        "Verify jurisdiction and present official source text",
+        "Verify factual predicates and contrary evidence",
+        "Verify current authority competence, prerequisites and deadlines",
+        "Check whether this route affects or leaves untouched other remedies"
+      ]
+    },
+    {
+      "remedy_id": "eu:c17:commission-complaint",
+      "category": "eu_law_enforcement_complaint",
+      "authority_ref": "eu:authority:european-commission",
+      "priority_class": "systemic_parallel_review",
+      "deadline": {
+        "kind": "not_established",
+        "rule": "No verified binding deadline in this catalogue.",
+        "trigger_event": null,
+        "calculation": "human_only"
+      },
+      "prerequisites_to_verify": [
+        "Assess whether an alleged Member State breach is substantiated and potentially relevant to Commission enforcement",
+        "Identify national procedural redress independently"
+      ],
+      "powers_to_verify": [
+        "Examine EU-law compliance at Member State level under Commission enforcement powers"
+      ],
+      "limits": [
+        "Not an individual appeal or guaranteed individual remedy",
+        "No guaranteed Commission action",
+        "Does not pause national deadlines"
+      ],
+      "evidence_to_preserve": [
+        "Specific Member State practice, comparable documented incidents if available, primary EU law basis, contrary explanations"
+      ],
+      "source_refs": [
+        "eu:commission-eu-law-complaint"
+      ],
+      "filing_channel_for_review": "Verify current official contact/submission instructions before use.",
+      "intended_outcome_for_review": "Flag a possible systemic EU-law issue for enforcement consideration, not case reversal.",
+      "matched_rule_ids": [
+        "eu:c16:prior-card-entry-gate"
+      ],
+      "jurisdiction": "EU",
+      "status": "candidate_for_human_review",
+      "human_review_required": true,
+      "outstanding_checks": [
+        "Verify jurisdiction and present official source text",
+        "Verify factual predicates and contrary evidence",
+        "Verify current authority competence, prerequisites and deadlines",
+        "Check whether this route affects or leaves untouched other remedies"
+      ]
+    }
+  ],
+  "excluded_routes": [
+    {
+      "remedy_id": "eu:c17:european-ombudsman",
+      "reason": "EU Ombudsman supervises EU bodies, not Swedish consulates",
+      "source_scope": "procedural"
+    }
+  ],
+  "parallelism_warnings": [
+    "Candidate order is a review queue, not a recommendation or sequence of legally required steps.",
+    "Clarification, SOLVIT, Commission or JO complaints do not automatically suspend national appeal deadlines.",
+    "Do not calculate dates, send correspondence, or infer violation or eligibility from a fictional source-anchored predicate.",
+    "Review potentially urgent formal appeal independently and in parallel; no waiting step is authorized."
+  ],
+  "correspondence_drafts": [
+    {
+      "remedy_id": "se:c17:mission-procedure-clarification",
+      "format": "administrative_clarification",
+      "recipient_placeholder": "[VERIFY CURRENT COMPETENT AUTHORITY]",
+      "text": "DRAFT PROCEDURAL CLARIFICATION — FICTIONAL REVIEW ONLY / DO NOT SEND\nTo: [VERIFY CURRENT COMPETENT AUTHORITY; NO ADDRESS INSERTED]\nRe: [FICTIONAL L6 — REPLACE WITH HUMAN-VERIFIED REFERENCE ONLY IF AUTHORIZED]\n\nThe fictional review record raises the following matters for verification: Swedish visa route versus EU-family residence-card requirement.\nThese are unverified allegations and source-qualified questions, not findings.\n\nPlease clarify in writing the competent procedure, source of the reported requirement, any applicable exception, and available means to present relevant evidence. If the report is inaccurate, please identify the applicable procedure instead.\n\nRelevant source identifiers for a human to inspect: se:src:family-visa-istanbul, se:src:admin-act.\nDocuments and dates must be checked independently; attach only material required and lawfully shareable.\nThe recipient, competence, applicable law, filing requirements and deadline remain unverified.\n",
+      "send_authorized": false,
+      "human_review_required": true
+    },
+    {
+      "remedy_id": "eu:c17:solvit",
+      "format": "informal_problem_solving",
+      "recipient_placeholder": "[VERIFY CURRENT COMPETENT AUTHORITY]",
+      "text": "DRAFT PROCEDURAL CLARIFICATION — FICTIONAL REVIEW ONLY / DO NOT SEND\nTo: [VERIFY CURRENT COMPETENT AUTHORITY; NO ADDRESS INSERTED]\nRe: [FICTIONAL L6 — REPLACE WITH HUMAN-VERIFIED REFERENCE ONLY IF AUTHORIZED]\n\nThe fictional review record raises the following matters for verification: Prior residence-card condition imposed at entry-visa stage.\nThese are unverified allegations and source-qualified questions, not findings.\n\nPlease clarify in writing the competent procedure, source of the reported requirement, any applicable exception, and available means to present relevant evidence. If the report is inaccurate, please identify the applicable procedure instead.\n\nRelevant source identifiers for a human to inspect: eu:32013h0461.\nDocuments and dates must be checked independently; attach only material required and lawfully shareable.\nThe recipient, competence, applicable law, filing requirements and deadline remain unverified.\n",
+      "send_authorized": false,
+      "human_review_required": true
+    },
+    {
+      "remedy_id": "eu:c17:commission-complaint",
+      "format": "eu_law_enforcement_complaint",
+      "recipient_placeholder": "[VERIFY CURRENT COMPETENT AUTHORITY]",
+      "text": "DRAFT SYSTEMIC EU-LAW COMPLAINT — FICTIONAL REVIEW ONLY / DO NOT SEND\nTo: [VERIFY CURRENT COMPETENT AUTHORITY; NO ADDRESS INSERTED]\nRe: [FICTIONAL L6 — REPLACE WITH HUMAN-VERIFIED REFERENCE ONLY IF AUTHORIZED]\n\nThe fictional review record raises the following matters for verification: Prior residence-card condition imposed at entry-visa stage.\nThese are unverified allegations and source-qualified questions, not findings.\n\nThis is submitted as a proposed issue for EU-law enforcement review, not an individual appeal. The factual pattern, Member-State attribution and applicable Union law must be independently established.\n\nRelevant source identifiers for a human to inspect: eu:commission-eu-law-complaint.\nDocuments and dates must be checked independently; attach only material required and lawfully shareable.\nThe recipient, competence, applicable law, filing requirements and deadline remain unverified.\n",
+      "send_authorized": false,
+      "human_review_required": true
+    }
+  ],
+  "decision_gate": "blocked_pending_source_factual_and_human_review",
+  "missing_prerequisites": [
+    "Official current and operative national legislation and any exceptions",
+    "Authenticated communications and independent fact assessment",
+    "Current competent recipient and applicable court/appeal procedure",
+    "Decision service dates, extension/suspension rules and filing proof",
+    "Independent legal-semantic review including unresolved C15f, 21 incomplete C1 source notes, and independent full-source verification",
+    "Private-data authorization and trustworthy human approval before any real use"
+  ],
+  "review_facts": [
+    {
+      "rule_id": "eu:c12:entry-v-card-separation",
+      "facts_to_check": [
+        "case:procedure_type"
+      ]
+    },
+    {
+      "rule_id": "eu:c16:prior-card-entry-gate",
+      "facts_to_check": [
+        "element:procedure.access_state",
+        "fact:residence_card_demanded_before_visa",
+        "fact:entry_visa_route_requested",
+        "fact:card_or_visa_exemption_unknown"
+      ]
+    },
+    {
+      "rule_id": "se:c16:visa-card-route",
+      "facts_to_check": [
+        "fact:residence_card_demanded_before_visa",
+        "fact:entry_visa_route_requested"
+      ]
+    }
+  ]
+}

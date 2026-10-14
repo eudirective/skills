@@ -1,0 +1,589 @@
+{
+  "case_id": "CASE-C15-PILOT-01",
+  "case_index_sha256": "2a105dcb59e609da323f9ca1c08676d70f0eec7a27c8f784e6e21c1b484682c6",
+  "facts": [
+    {
+      "attribution": "applicant_assertion",
+      "evidence": [
+        {
+          "document_id": "D01",
+          "document_sha256": "ab8c819d71eb80eda6d657932bdeb39da0d8b92a24d06b3ff63d3dc367507f34",
+          "end": 294,
+          "locator": "text:body",
+          "quote": "Citizen A states that they are a Danish national planning to move to a rented flat in Sweden in October 2026. Citizen B states that they are a Turkish national married to Citizen A and intend to accompany Citizen A to Sweden.",
+          "segment_sha256": "ab8c819d71eb80eda6d657932bdeb39da0d8b92a24d06b3ff63d3dc367507f34",
+          "start": 69
+        }
+      ],
+      "id": "F01",
+      "proposition": "The spouses assert Danish and Turkish nationality, a marriage, and a planned relocation to Sweden.",
+      "qualifications": [
+        "Nationality and marriage are applicant assertions, not checked originals."
+      ],
+      "temporal_label": "2026-08-21"
+    },
+    {
+      "attribution": "third_party_statement",
+      "evidence": [
+        {
+          "document_id": "D02",
+          "document_sha256": "6fa7f5a553efa002f70e0c38d21e2c58cd1480ba8b507b08b918baf7e5a6126c",
+          "end": 141,
+          "locator": "text:body",
+          "quote": "The flat in Malmo is reserved for Citizen A from 1 October 2026.",
+          "segment_sha256": "6fa7f5a553efa002f70e0c38d21e2c58cd1480ba8b507b08b918baf7e5a6126c",
+          "start": 77
+        }
+      ],
+      "id": "F02",
+      "proposition": "A purported landlord letter offers accommodation from 1 October, not independent proof of residence.",
+      "qualifications": [],
+      "temporal_label": "2026-08-22"
+    },
+    {
+      "attribution": "applicant_assertion",
+      "evidence": [
+        {
+          "document_id": "D03",
+          "document_sha256": "4dabb734a424abd0d5950b6230db09a0411628c6af0a414b18079b5a4f6f4700",
+          "end": 149,
+          "locator": "email:body:1",
+          "quote": "May I lodge my visa request directly at your consular office rather than via a provider?",
+          "segment_sha256": "361c14418dca6a18ef5020547260b4f7838a4884691361d24efc656398021e60",
+          "start": 61
+        }
+      ],
+      "id": "F03",
+      "proposition": "The applicant asked to lodge directly at the consular office rather than through a provider.",
+      "qualifications": [],
+      "temporal_label": "2026-08-24"
+    },
+    {
+      "attribution": "purported_official_statement",
+      "evidence": [
+        {
+          "document_id": "D04",
+          "document_sha256": "2786bc3d07290605d042ae28a49fcb939db3c33b8dce1879ab33125d796644ea",
+          "end": 140,
+          "locator": "email:body:1",
+          "quote": "At present all applications must be lodged through our external service provider. The consular office does not accept applications directly.",
+          "segment_sha256": "967f96c9344475e2b20471127ed32ed50337c49bd55e72ce4ed869b8ba6da81c",
+          "start": 0
+        }
+      ],
+      "id": "F04",
+      "proposition": "A purported mission message says all applicants must use a provider and direct applications are not accepted.",
+      "qualifications": [
+        "A later message qualifies the scope of this statement."
+      ],
+      "temporal_label": "2026-08-25"
+    },
+    {
+      "attribution": "purported_official_statement",
+      "evidence": [
+        {
+          "document_id": "D05",
+          "document_sha256": "48f4a78db3ef7af6776fdd40e4b08069cab1578182af5f74f000ffa25481b944",
+          "end": 204,
+          "locator": "html:visible_text",
+          "quote": "Family members of Union citizens may contact the mission to request an appointment to submit directly, where the mission provides this service.",
+          "segment_sha256": "db358ea02b9ff94d970d4d0424cdb4aa88000435db8af75b32510ad238352eb4",
+          "start": 61
+        }
+      ],
+      "id": "F05",
+      "proposition": "The purported public guidance describes a possible mission appointment for EU-family applicants.",
+      "qualifications": [
+        "Conditional wording does not prove a guaranteed right to an appointment."
+      ],
+      "temporal_label": "2026-08-26"
+    },
+    {
+      "attribution": "applicant_assertion",
+      "evidence": [
+        {
+          "document_id": "D06",
+          "document_sha256": "0ed97afba8799d844874f6ef6b23842af1eb41591021ce736060e3ccbb7f1c50",
+          "end": 206,
+          "locator": "email:body:1",
+          "quote": "I request an appointment by email. I have not attended your premises and was not physically refused entry.",
+          "segment_sha256": "1e879d4728183abd2157ee3d70ead64efd8cefdf429f1f69730696465dd7926e",
+          "start": 100
+        }
+      ],
+      "id": "F06",
+      "proposition": "The applicant repeated the request, noting they had not attempted a walk-in submission.",
+      "qualifications": [],
+      "temporal_label": "2026-08-27"
+    },
+    {
+      "attribution": "purported_official_statement",
+      "evidence": [
+        {
+          "document_id": "D07",
+          "document_sha256": "9cf71a2f8e8bf65e8fd00e7b817de946050bd914030d23d3cb546b5113ddf73c",
+          "end": 164,
+          "locator": "email:body:1",
+          "quote": "Our previous message was intended to explain that walk-in visits cannot be accepted. Direct appointments for qualifying EU-family cases are considered individually.",
+          "segment_sha256": "c468ab738db6ef096ec86dedba86d7f58e56a5bfe4549e348c845382339b22a3",
+          "start": 0
+        }
+      ],
+      "id": "F07",
+      "proposition": "The mission later clarified that walk-ins, not necessarily direct appointments, were unavailable.",
+      "qualifications": [
+        "The later explanation does not erase the earlier categorical wording."
+      ],
+      "temporal_label": "2026-08-30"
+    },
+    {
+      "attribution": "provider_record",
+      "evidence": [
+        {
+          "document_id": "D08",
+          "document_sha256": "045f02c6ce0e294d8a86678f970805bf83bc4befe5c3e31e4b802d90c3a516b6",
+          "end": 199,
+          "locator": "text:body",
+          "quote": "For standard short-stay visitor applicants, bank statements, employment confirmations and accommodation documents are mandatory supporting documents.",
+          "segment_sha256": "045f02c6ce0e294d8a86678f970805bf83bc4befe5c3e31e4b802d90c3a516b6",
+          "start": 50
+        }
+      ],
+      "id": "F08",
+      "proposition": "The generic visitor checklist requests bank and employment papers from ordinary tourists.",
+      "qualifications": [
+        "Document expressly targets standard visitor category, not EU family."
+      ],
+      "temporal_label": "2026-09-01"
+    },
+    {
+      "attribution": "provider_record",
+      "evidence": [
+        {
+          "document_id": "D09",
+          "document_sha256": "e015180752ade028cce95d2bf0f3fb449720882000547fbbf44d630af3805c7f",
+          "end": 331,
+          "locator": "text:body",
+          "quote": "The general tourist financial checklist is not used for EU-family applicants. A visa fee is not collected in this category.",
+          "segment_sha256": "e015180752ade028cce95d2bf0f3fb449720882000547fbbf44d630af3805c7f",
+          "start": 208
+        }
+      ],
+      "id": "F09",
+      "proposition": "The EU-family checklist says the generic financial checklist does not apply in that category.",
+      "qualifications": [],
+      "temporal_label": "2026-09-02"
+    },
+    {
+      "attribution": "provider_record",
+      "evidence": [
+        {
+          "document_id": "D10",
+          "document_sha256": "18abe6ce527c70732c50b27c2dc1f04e4e19ec498773404d4ea8c1256ecd7b60",
+          "end": 186,
+          "locator": "text:body",
+          "quote": "Consular visa fee: EUR 0. Optional provider service charge: EUR 18, paid.",
+          "segment_sha256": "18abe6ce527c70732c50b27c2dc1f04e4e19ec498773404d4ea8c1256ecd7b60",
+          "start": 113
+        }
+      ],
+      "id": "F10",
+      "proposition": "The receipt records zero consular visa fee and a paid, labeled optional provider service charge.",
+      "qualifications": [
+        "The receipt is not evidence that the service charge was unavoidable."
+      ],
+      "temporal_label": "2026-09-08"
+    },
+    {
+      "attribution": "purported_official_statement",
+      "evidence": [
+        {
+          "document_id": "D11",
+          "document_sha256": "fdbddec1d911a217a80fd89bd68a3aeab165659951b3386adeb9c89d68c00046",
+          "end": 190,
+          "locator": "email:body:1",
+          "quote": "The application was received through the provider on 10 September 2026 under the EU-family category. A short interview about the relationship may be arranged. No decision has yet been taken.",
+          "segment_sha256": "083e0464ed7822038cbd1698a1283d7126ca6efac16d81c5344dce9cc97d0dd8",
+          "start": 0
+        }
+      ],
+      "id": "F11",
+      "proposition": "The mission acknowledges lodgement on 10 September and no decision by 11 September.",
+      "qualifications": [
+        "Interview might be legitimate; record does not establish abuse."
+      ],
+      "temporal_label": "2026-09-11"
+    },
+    {
+      "attribution": "purported_official_statement",
+      "evidence": [
+        {
+          "document_id": "D12",
+          "document_sha256": "6f02bfd64f719537a7a60813a4f384441b4b3f92774ac58ec1351164b93b3648",
+          "end": 168,
+          "locator": "email:body:1",
+          "quote": "Your EU-family application remains pending and is being prioritised. We are carrying out an additional verification. No finding of abuse or fraud has been communicated.",
+          "segment_sha256": "f383c795339c6a019e7f7a5a917063c9673d2e509a52b5a0e483ffa97803cdf3",
+          "start": 0
+        }
+      ],
+      "id": "F12",
+      "proposition": "The mission says the application is pending and prioritised while additional checks continue.",
+      "qualifications": [
+        "No exact legal basis or expected date is specified in the excerpt."
+      ],
+      "temporal_label": "2026-09-29"
+    },
+    {
+      "attribution": "applicant_assertion",
+      "evidence": [
+        {
+          "document_id": "D13",
+          "document_sha256": "c6698ed1957d2a7b125dc187d3e42fa9d43db3995ee0dbb4703822fe5770d92c",
+          "end": 233,
+          "locator": "email:body:1",
+          "quote": "Please identify the formal administrative complaint pathway for an EU-family visa applicant. Please specify the legal basis for the additional verification and why the application is still pending. I have not received a visa refusal.",
+          "segment_sha256": "84ea64276637dc1afdcd5159b5e3d94e3c8e52f8746a37d572bd0dc71a024e3b",
+          "start": 0
+        }
+      ],
+      "id": "F13",
+      "proposition": "The applicant requests a formal complaint pathway and states there has been no refusal.",
+      "qualifications": [],
+      "temporal_label": "2026-09-30"
+    },
+    {
+      "attribution": "purported_official_statement",
+      "evidence": [
+        {
+          "document_id": "D14",
+          "document_sha256": "a46de292cd854e748548aa69db3cc60ceab19e616adc7f94f863e5d8a3926dbf",
+          "end": 152,
+          "locator": "email:body:1",
+          "quote": "No decision has been made on the pending EU-family visa application. The additional check is not a formal refusal and does not imply a finding of fraud.",
+          "segment_sha256": "bdfa5428a00f96eb6ab2a5045bf5854dc3e70d8a2c292f638999eb9f4c961dca",
+          "start": 0
+        }
+      ],
+      "id": "F14",
+      "proposition": "The mission states that no visa decision has been made and that the check is not a formal refusal.",
+      "qualifications": [],
+      "temporal_label": "2026-10-02"
+    },
+    {
+      "attribution": "purported_official_statement",
+      "evidence": [
+        {
+          "document_id": "D14",
+          "document_sha256": "a46de292cd854e748548aa69db3cc60ceab19e616adc7f94f863e5d8a3926dbf",
+          "end": 311,
+          "locator": "email:body:1",
+          "quote": "Your question about a separate complaint channel has been forwarded internally.",
+          "segment_sha256": "bdfa5428a00f96eb6ab2a5045bf5854dc3e70d8a2c292f638999eb9f4c961dca",
+          "start": 232
+        }
+      ],
+      "id": "F15",
+      "proposition": "The mission says it forwarded the question on the separate complaint channel.",
+      "qualifications": [],
+      "temporal_label": "2026-10-02"
+    }
+  ],
+  "legal_questions": [
+    {
+      "country_law_needed": [
+        "Current Sweden Abroad direct-lodgement procedure and any governing national regulations."
+      ],
+      "disposition": "potential_concern",
+      "exceptions_and_counterarguments": [
+        "The initial reply may have referred only to walk-in service.",
+        "Direct appointments may be available subject to scheduling."
+      ],
+      "id": "Q01",
+      "legal_analysis": "A categorical instruction to lodge solely with an external provider appears inconsistent with subsequent mission correspondence and merits examination under the Directive duty to facilitate necessary visas. Article 5(2) does not by itself establish the exact procedure for a direct consular appointment in this fictional setting, and the later clarification cuts against an unqualified denial finding.",
+      "legal_sources": [
+        {
+          "end": 4981,
+          "pinpoint_hint": "Article 5(2)",
+          "quote": "Member States shall grant such persons every facility to obtain the necessary visas. Such visas shall be issued free of charge as soon as possible and on the basis of an accelerated procedure.",
+          "relative_path": "sources/eu/CELEX_02004L0038-20110616_EN_TXT.md",
+          "source_id": "eu:32004l0038",
+          "source_sha256": "055743ed49532cdab275cc709b3c45e0f2fe4ebf23e136908c7958df1ba7ec5e",
+          "start": 4789
+        }
+      ],
+      "possible_next_steps": [
+        "Ask the mission to reconcile the two procedural statements and identify its governing rule."
+      ],
+      "qualifying_fact_ids": [
+        "F05",
+        "F07"
+      ],
+      "support_fact_ids": [
+        "F03",
+        "F04",
+        "F06"
+      ],
+      "title": "Conflicting direct consular access information",
+      "unresolved_questions": [
+        "Was a genuine direct appointment offered on request?",
+        "What published Swedish procedure governed direct filing at this location?"
+      ]
+    },
+    {
+      "country_law_needed": [
+        "Applicable national consular evidence instructions, if a demand occurred."
+      ],
+      "disposition": "no_violation_established",
+      "exceptions_and_counterarguments": [
+        "Different checklists may govern different applicant categories."
+      ],
+      "id": "Q02",
+      "legal_analysis": "The ordinary visitor checklist demands financial and employment information, but its own scope is standard visitor applications. The EU-family checklist expressly says ordinary tourist financial demands do not apply. This record does not show that the authority made those extra documents a condition of the EU-family application.",
+      "legal_sources": [
+        {
+          "end": 4981,
+          "pinpoint_hint": "Article 5(2)",
+          "quote": "Member States shall grant such persons every facility to obtain the necessary visas. Such visas shall be issued free of charge as soon as possible and on the basis of an accelerated procedure.",
+          "relative_path": "sources/eu/CELEX_02004L0038-20110616_EN_TXT.md",
+          "source_id": "eu:32004l0038",
+          "source_sha256": "055743ed49532cdab275cc709b3c45e0f2fe4ebf23e136908c7958df1ba7ec5e",
+          "start": 4789
+        }
+      ],
+      "possible_next_steps": [
+        "Avoid alleging an excessive-document demand without an applicant-specific record."
+      ],
+      "qualifying_fact_ids": [
+        "F09",
+        "F11"
+      ],
+      "support_fact_ids": [
+        "F08"
+      ],
+      "title": "Standard-tourist financial document checklist versus EU-family procedure",
+      "unresolved_questions": [
+        "Did any official make financial documents mandatory for Citizen B specifically?"
+      ]
+    },
+    {
+      "country_law_needed": [
+        "National rules and official terms governing voluntary provider services."
+      ],
+      "disposition": "no_violation_established",
+      "exceptions_and_counterarguments": [
+        "A voluntarily chosen extra service may be different from a visa fee."
+      ],
+      "id": "Q03",
+      "legal_analysis": "The Directive requires the necessary EU-family visa to be issued free of charge. The sample receipt records no consular visa fee but an optional provider service charge. A separate provider fee cannot be declared unlawful merely because it was paid; whether access to a free route was genuinely practical remains a different unresolved procedural question.",
+      "legal_sources": [
+        {
+          "end": 4981,
+          "pinpoint_hint": "Article 5(2)",
+          "quote": "Member States shall grant such persons every facility to obtain the necessary visas. Such visas shall be issued free of charge as soon as possible and on the basis of an accelerated procedure.",
+          "relative_path": "sources/eu/CELEX_02004L0038-20110616_EN_TXT.md",
+          "source_id": "eu:32004l0038",
+          "source_sha256": "055743ed49532cdab275cc709b3c45e0f2fe4ebf23e136908c7958df1ba7ec5e",
+          "start": 4789
+        }
+      ],
+      "possible_next_steps": [
+        "Ask which parts of the charge were mandatory and whether a direct route existed."
+      ],
+      "qualifying_fact_ids": [
+        "F06",
+        "F07"
+      ],
+      "support_fact_ids": [
+        "F10"
+      ],
+      "title": "Provider charge distinguished from consular visa fee",
+      "unresolved_questions": [
+        "Was the provider actually the only usable submission channel?",
+        "Was the charge mandatory to exercise Directive rights?"
+      ]
+    },
+    {
+      "country_law_needed": [
+        "Any Swedish administrative timing rule governing this specific EU-family procedure."
+      ],
+      "disposition": "potential_concern",
+      "exceptions_and_counterarguments": [
+        "Additional individual checks may be legitimate and proportionate."
+      ],
+      "id": "Q04",
+      "legal_analysis": "The application is recorded as lodged on 10 September and remains undecided on 2 October. Article 5(2) requires visa issuance as soon as possible on an accelerated basis. Elapsed time and unspecified additional verification justify asking for an explanation, but do not alone establish that the mission breached a fixed EU-family visa deadline or that a pending check is impermissible.",
+      "legal_sources": [
+        {
+          "end": 4981,
+          "pinpoint_hint": "Article 5(2)",
+          "quote": "Member States shall grant such persons every facility to obtain the necessary visas. Such visas shall be issued free of charge as soon as possible and on the basis of an accelerated procedure.",
+          "relative_path": "sources/eu/CELEX_02004L0038-20110616_EN_TXT.md",
+          "source_id": "eu:32004l0038",
+          "source_sha256": "055743ed49532cdab275cc709b3c45e0f2fe4ebf23e136908c7958df1ba7ec5e",
+          "start": 4789
+        }
+      ],
+      "possible_next_steps": [
+        "Request a reasoned status explanation and expedited handling, without inventing a statutory deadline."
+      ],
+      "qualifying_fact_ids": [
+        "F12"
+      ],
+      "support_fact_ids": [
+        "F11",
+        "F12",
+        "F14"
+      ],
+      "title": "Processing time and the accelerated-procedure obligation",
+      "unresolved_questions": [
+        "What verification was performed and why could it not be completed sooner?",
+        "Which procedure-specific timing rules apply?"
+      ]
+    },
+    {
+      "country_law_needed": [
+        "Domestic procedures for additional consular checks."
+      ],
+      "disposition": "no_violation_established",
+      "exceptions_and_counterarguments": [
+        "An evidence inquiry is not necessarily an abuse finding."
+      ],
+      "id": "Q05",
+      "legal_analysis": "The message mentions that a short relationship interview may occur, while separate correspondence explicitly states there is no finding of fraud. Article 35 permits necessary, proportionate action against abuse and requires procedural safeguards; an interview or inquiry alone cannot be classified as unlawful or as proof that the authority invoked Article 35.",
+      "legal_sources": [
+        {
+          "end": 40359,
+          "pinpoint_hint": "Article 35",
+          "quote": "Member States may adopt the necessary measures to refuse, terminate or withdraw any right conferred by this Directive in the case of abuse of rights or fraud, such as marriages of convenience.",
+          "relative_path": "sources/eu/CELEX_02004L0038-20110616_EN_TXT.md",
+          "source_id": "eu:32004l0038",
+          "source_sha256": "055743ed49532cdab275cc709b3c45e0f2fe4ebf23e136908c7958df1ba7ec5e",
+          "start": 40167
+        }
+      ],
+      "possible_next_steps": [
+        "Preserve the distinction between questions asked and a formal allegation or measure."
+      ],
+      "qualifying_fact_ids": [
+        "F14"
+      ],
+      "support_fact_ids": [
+        "F11",
+        "F12"
+      ],
+      "title": "Interview and abuse-of-rights safeguards",
+      "unresolved_questions": [
+        "Did the authority formally rely on Article 35 or take an adverse measure?"
+      ]
+    },
+    {
+      "country_law_needed": [
+        "Swedish administrative-law provisions and consular supervisory complaint instructions."
+      ],
+      "disposition": "novel_unassessed",
+      "exceptions_and_counterarguments": [
+        "Forwarding internally may be a valid initial handling step."
+      ],
+      "id": "Q06",
+      "legal_analysis": "The applicant requested a formal administrative complaint channel, but the last message only confirms internal forwarding. This presents a procedural information issue for further research. The current retrieved EU excerpts do not establish whether this response breached a specific Swedish complaint duty.",
+      "legal_sources": [],
+      "possible_next_steps": [
+        "Identify the actual complaint or oversight route from authoritative Swedish sources before alleging an infringement."
+      ],
+      "qualifying_fact_ids": [
+        "F15"
+      ],
+      "support_fact_ids": [
+        "F13"
+      ],
+      "title": "No clear separate complaint-channel answer",
+      "unresolved_questions": [
+        "What exact Swedish law or consular policy requires a named route and response time?",
+        "Was a separate response subsequently given?"
+      ]
+    },
+    {
+      "country_law_needed": [
+        "Swedish visa appeal, delay challenge and supervisory procedures."
+      ],
+      "disposition": "not_applicable",
+      "exceptions_and_counterarguments": [
+        "Other delay-related remedies might exist before a refusal decision."
+      ],
+      "id": "Q07",
+      "legal_analysis": "The record expressly states that no refusal decision exists. The extracted Article 31 safeguard concerns review of decisions on public-policy, public-security or public-health grounds; it cannot by itself be used to calculate an appeal deadline for a nonexistent visa refusal. Any other route to challenge delay must be assessed independently under applicable law.",
+      "legal_sources": [
+        {
+          "end": 37120,
+          "pinpoint_hint": "Article 31(1)",
+          "quote": "The persons concerned shall have access to judicial and, where appropriate, administrative redress procedures in the host Member State to appeal against or seek review of any decision taken against them on the grounds of public policy, public security or public health.",
+          "relative_path": "sources/eu/CELEX_02004L0038-20110616_EN_TXT.md",
+          "source_id": "eu:32004l0038",
+          "source_sha256": "055743ed49532cdab275cc709b3c45e0f2fe4ebf23e136908c7958df1ba7ec5e",
+          "start": 36851
+        }
+      ],
+      "possible_next_steps": [
+        "Do not give a refusal-appeal deadline without a decision and verified notification date."
+      ],
+      "qualifying_fact_ids": [
+        "F11",
+        "F13"
+      ],
+      "support_fact_ids": [
+        "F14"
+      ],
+      "title": "Refusal appeal not presently triggered",
+      "unresolved_questions": [
+        "Was there a later formal refusal or a deemed decision?"
+      ]
+    },
+    {
+      "country_law_needed": [
+        "Any national provisions relevant to cross-border family entry after verifying the EU definition."
+      ],
+      "disposition": "unresolved",
+      "exceptions_and_counterarguments": [
+        "Evidence of planned movement differs from proof that it occurs."
+      ],
+      "id": "Q08",
+      "legal_analysis": "The case narrative describes a Danish citizen relocating to Sweden with a claimed non-EU spouse, which would be a plausible Directive 2004/38 scenario if citizenship, marriage and the relevant movement circumstances are verified. The case documents are fictional and unauthenticated. Moreover the archived v0.6.0 Directive text omitted Article 2(2)(a) but active C1 v0.6.1 restores the targeted official-checked passage, so the spousal-definition pinpoint must be checked against a complete authoritative text before a definitive legal analysis.",
+      "legal_sources": [
+        {
+          "end": 2095,
+          "pinpoint_hint": "Article 3(1)",
+          "quote": "This Directive shall apply to all Union citizens who move to or reside in a Member State other than that of which they are a national, and to their family members as defined in point 2 of Article 2 who accompany or join them.",
+          "relative_path": "sources/eu/CELEX_02004L0038-20110616_EN_TXT.md",
+          "source_id": "eu:32004l0038",
+          "source_sha256": "055743ed49532cdab275cc709b3c45e0f2fe4ebf23e136908c7958df1ba7ec5e",
+          "start": 1870
+        }
+      ],
+      "possible_next_steps": [
+        "Verify the missing spousal-definition source text and the underlying relationship documents."
+      ],
+      "qualifying_fact_ids": [
+        "F01"
+      ],
+      "support_fact_ids": [
+        "F01",
+        "F02",
+        "F03"
+      ],
+      "title": "Potential Directive coverage remains documentary rather than proven",
+      "unresolved_questions": [
+        "Can the spouses supply authentic nationality, marriage and travel/residence evidence?",
+        "Can Article 2(2)(a) be verified independently?"
+      ]
+    }
+  ],
+  "overall_limitations": [
+    "This model-authored demonstration was produced from developer-created fictional documents; it is not a blinded or expert-graded evaluation.",
+    "A source quotation establishes only that the phrase appears in the local bundled representation, not the correct legal interpretation.",
+    "The receiving authority, translation, document originality and procedure type require fact-specific external confirmation."
+  ],
+  "proposal_version": "0.1.0",
+  "retrieval_sha256": "2ae109309130789c6de335bca5d53bd0154f8e05de32baa8d76a5ae0f968e6af",
+  "unmapped_evidence": []
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "C21 synthetic minimised preview 0.1.0",
+  "type": "object", "additionalProperties": false,
+  "required": ["c21_version", "status", "profile", "policy_id", "fields", "minimisation", "risk_flags", "external_disclosure_authorized", "human_review_required", "private_data_enabled", "limitations"],
+  "properties": {
+    "c21_version": {"const": "0.1.0"},
+    "status": {"const": "synthetic_preview_only"},
+    "profile": {"enum": ["internal_review_preview", "public_story_preview", "feedback_aggregate_preview", "c17_feedback_preview"]},
+    "policy_id": {"type": "string", "minLength": 1},
+    "fields": {"type": "object", "propertyNames": {"pattern": "^[a-z][a-z0-9_]{0,49}$"}, "maxProperties": 15, "additionalProperties": {"type": "string", "maxLength": 12000}},
+    "minimisation": {"type": "object", "additionalProperties": false, "required": ["input_fields", "retained_fields", "dropped_fields"], "properties": {"input_fields": {"type": "integer", "minimum": 0}, "retained_fields": {"type": "integer", "minimum": 0}, "dropped_fields": {"type": "integer", "minimum": 0}}},
+    "risk_flags": {"type": "array", "minItems": 1, "maxItems": 12, "uniqueItems": true, "items": {"type": "string", "minLength": 1, "maxLength": 130}},
+    "external_disclosure_authorized": {"const": false},
+    "human_review_required": {"const": true},
+    "private_data_enabled": {"const": false},
+    "limitations": {"type": "array", "minItems": 1, "maxItems": 12, "items": {"type": "string", "minLength": 1, "maxLength": 300}}
+  }
+}

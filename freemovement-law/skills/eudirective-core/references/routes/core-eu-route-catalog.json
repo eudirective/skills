@@ -1,0 +1,88 @@
+{
+  "catalog_version": "0.1.0",
+  "routes": [
+    {
+      "route_id": "eu:route:solvit",
+      "label": "SOLVIT informal problem-solving route",
+      "authority_ref": "eu:authority:solvit-network",
+      "authority_name": "SOLVIT network",
+      "authority_level": "eu_network",
+      "target_authority_levels": [
+        "member_state_authority"
+      ],
+      "issue_types": [
+        "cross_border_eu_rights",
+        "free_movement"
+      ],
+      "powers": [
+        "Informal problem-solving within the SOLVIT framework."
+      ],
+      "limits": [
+        "SOLVIT is an informal, non-judicial route and does not itself create a binding individual remedy.",
+        "The bundled Recommendation is non-binding soft law; route suitability remains case-specific."
+      ],
+      "source_refs": [
+        "eu:32013h0461"
+      ],
+      "verified_at": "2026-10-05",
+      "authority_competence": [
+        "Informal problem-solving for qualifying cross-border EU-law problems within the SOLVIT framework."
+      ]
+    },
+    {
+      "route_id": "eu:route:commission-eu-law-complaint",
+      "label": "European Commission complaint about a possible Member-State breach of EU law",
+      "authority_ref": "eu:authority:european-commission",
+      "authority_name": "European Commission",
+      "authority_level": "eu_institution",
+      "target_authority_levels": [
+        "member_state_authority"
+      ],
+      "issue_types": [
+        "possible_member_state_eu_law_breach"
+      ],
+      "powers": [
+        "EU-law enforcement assessment at Commission level."
+      ],
+      "limits": [
+        "This route is not an individual administrative appeal and does not guarantee individual redress.",
+        "The Commission page records national redress as a first-line consideration; route selection remains case-specific."
+      ],
+      "source_refs": [
+        "eu:commission-eu-law-complaint"
+      ],
+      "verified_at": "2026-10-06",
+      "authority_competence": [
+        "Complaints concerning possible breaches of EU law by Member States."
+      ]
+    },
+    {
+      "route_id": "eu:route:ombudsman",
+      "label": "European Ombudsman complaint route",
+      "authority_ref": "eu:authority:european-ombudsman",
+      "authority_name": "European Ombudsman",
+      "authority_level": "eu_body",
+      "target_authority_levels": [
+        "eu_institution",
+        "eu_body"
+      ],
+      "issue_types": [
+        "maladministration_by_eu_institution_or_body"
+      ],
+      "powers": [
+        "Complaint handling within the European Ombudsman mandate."
+      ],
+      "limits": [
+        "This route concerns EU institutions and bodies, not Member-State authorities.",
+        "Admissibility and remedy consequences remain subject to the Ombudsman framework and case-specific review."
+      ],
+      "source_refs": [
+        "eu:ombudsman-complaint"
+      ],
+      "verified_at": "2026-10-06",
+      "authority_competence": [
+        "Complaints concerning maladministration by EU institutions and bodies."
+      ]
+    }
+  ]
+}

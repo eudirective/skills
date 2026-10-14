@@ -1,0 +1,95 @@
+{
+  "review_contract": "c7-source-grounded-semantic-review/0.1.0",
+  "target_skill": "eudirective-core",
+  "target_version": "0.21.1",
+  "review_status": "pending_independent_review",
+  "source_assurance": "identity_and_version_checked_metadata_only; obtain official wording and current applicable version before substantive assessment",
+  "scope": "Synthetic prompts and source-grounded legal reasoning; no private cases or legal conclusions are certified by this file.",
+  "required_record_fields": [
+    "reviewer_identity_and_affiliation",
+    "review_time",
+    "prompt_or_claim_digest",
+    "official_primary_source_uri",
+    "verified_version_or_effective_date",
+    "passages_and_pinpoints_checked",
+    "contrary_authorities_or_negative_evidence",
+    "precise_findings_and_qualifications",
+    "failure_or_gap_category",
+    "disposition_and_rationale"
+  ],
+  "cases": [
+    {
+      "id": "semantic-01-directive-visa-code-overlap",
+      "prompt": "In a fictional EU-citizen family-member visa application, identify the legal effect of Directive 2004/38 Article 5(2), national implementation and the Visa Code. Distinguish a candidate lex-specialis question from a conclusively resolved conflict.",
+      "source_ids": [
+        "eu:32004l0038",
+        "eu:32009r0810",
+        "eu:c-2023-1392"
+      ],
+      "review_checks": [
+        "Confirm legal scope for each instrument with current official versions.",
+        "Check contrary case law or exceptions before affirming a procedural obligation.",
+        "Flag conclusions not supported by the actual texts, including impossible pinpoint citations.",
+        "Verify that unresolved overlap remains qualified, not promoted into illegality."
+      ],
+      "status": "pending_independent_review"
+    },
+    {
+      "id": "semantic-02-charter-and-addressee",
+      "prompt": "For a fictional Member-State consular procedure, analyze possible Charter scope and the distinct addressees of Charter Article 41. Do not equate a general duty of good administration with a directly applicable Article 41 right against a Member State without analysis.",
+      "source_ids": [
+        "eu:12012p",
+        "eu:62013cj0166",
+        "eu:62013cj0249"
+      ],
+      "review_checks": [
+        "Verify whether national action implements EU law before deciding Charter scope.",
+        "Check holdings, not only source titles, for addressee boundaries and the right to be heard.",
+        "Identify relevant contrary or limiting authorities.",
+        "Ensure any Article 41 assertion against national authorities remains legally qualified."
+      ],
+      "status": "pending_independent_review",
+      "external_authority_candidate": {
+        "celex": "62024CJ0477",
+        "ecli": "ECLI:EU:C:2026:182",
+        "case_name": "Deldwyn",
+        "judgment_date": "2026-03-12",
+        "official_case_uri": "https://eur-lex.europa.eu/legal-content/EN/CASE/?uri=CELEX:62024CJ0477",
+        "status": "candidate_not_in_frozen_source_pack",
+        "review_need": "Full holding, limitations and contrary authority before any rule/catalogue change."
+      }
+    },
+    {
+      "id": "semantic-03-dependency-freedom-of-proof",
+      "prompt": "In a fictional dependent-family-member procedure, evaluate an authority's insistence on one exclusive proof document. Distinguish legal conditions, permissible evidentiary assessment, and unsupported universal claims based on Jia.",
+      "source_ids": [
+        "eu:62005cj0001",
+        "eu:32004l0038"
+      ],
+      "review_checks": [
+        "Confirm relationship and dependency provisions first.",
+        "Review the exact holding and factual/procedural scope of Jia.",
+        "Test whether alternative evidence could be considered under the applicable provisions.",
+        "Mark unsupported broad proof rules as unresolved, rather than stating a violation."
+      ],
+      "status": "pending_independent_review"
+    },
+    {
+      "id": "semantic-04-clock-trigger-and-complaint-remedy",
+      "prompt": "In a fictional visa application, distinguish appointment request, lodgement, referral, prior consultation and notification dates, and evaluate potential procedural complaints without inferring unlawful delay from arithmetic alone.",
+      "source_ids": [
+        "eu:32004l0038",
+        "eu:32009r0810",
+        "eu:commission-eu-law-complaint",
+        "eu:ombudsman-complaint"
+      ],
+      "review_checks": [
+        "Check applicability, effective versions, and precise deadline triggering events.",
+        "Compare the exact language of any special acceleration obligation.",
+        "Confirm competence and binding remedial powers of each suggested complaint route.",
+        "Review adverse timing facts, extensions and exceptions before any noncompliance finding."
+      ],
+      "status": "pending_independent_review"
+    }
+  ]
+}

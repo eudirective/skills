@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Element instance bundle v0.2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "model_version",
+    "bundle_id",
+    "elements"
+  ],
+  "properties": {
+    "model_version": {
+      "const": "0.2.0"
+    },
+    "bundle_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$"
+    },
+    "elements": {
+      "type": "array",
+      "maxItems": 2000,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "element_id",
+          "value",
+          "supplied_by",
+          "provenance_kind"
+        ],
+        "properties": {
+          "element_id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]*(\\.[a-z][a-z0-9_]*)+$"
+          },
+          "value": {},
+          "supplied_by": {
+            "enum": [
+              "core",
+              "member_state",
+              "applicant_country",
+              "case_workspace",
+              "deterministic_calculation",
+              "model_candidate"
+            ]
+          },
+          "provenance_kind": {
+            "enum": [
+              "user_assertion",
+              "document",
+              "authority_statement",
+              "public_source",
+              "mechanical_calculation",
+              "model_inference",
+              "module_export",
+              "policy"
+            ]
+          },
+          "source_ref": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "maxLength": 400
+          }
+        }
+      }
+    }
+  }
+}

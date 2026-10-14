@@ -1,0 +1,28 @@
+{
+  "context_version": "0.2.0",
+  "case_id": "CASE-C5A-FRONTIER",
+  "evidence_requests": [],
+  "deadline_requests": [],
+  "route_requests": [
+    {
+      "request_id": "route:solvit",
+      "route_ref": "eu:route:solvit",
+      "issue_type": "free_movement",
+      "target_authority_level": "member_state_authority"
+    },
+    {
+      "request_id": "route:commission",
+      "route_ref": "eu:route:commission-eu-law-complaint",
+      "issue_type": "possible_member_state_eu_law_breach",
+      "target_authority_level": "member_state_authority"
+    },
+    {
+      "request_id": "route:ombudsman-wrong-target",
+      "route_ref": "eu:route:ombudsman",
+      "issue_type": "maladministration_by_eu_institution_or_body",
+      "target_authority_level": "member_state_authority"
+    }
+  ],
+  "deadline_bindings": [],
+  "temporal_events": []
+}

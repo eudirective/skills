@@ -1,0 +1,369 @@
+{
+  "milestone": "C17b-c-d",
+  "mode": "fictional_review_only",
+  "case_id": "L2",
+  "procedure_stage": "pre_lodging",
+  "input_digests": {
+    "case": "15f24f62bb1c1a27ceba748c8f2ec8853283ac5a355f54c3ff651b57ee32c63c",
+    "upstream_c17": "96b549b09b4bd4e9362c2497b053aa01976663882e827544c68454e8a7ac82d9",
+    "c12": "dc3683a0382fa270fd4dbc456cf160822a1004c61a91546f651ae135503ead82",
+    "c13": "c74982f4373609092e8ab6b48014c2768a9055b77a73b5e33e8e8c37f28a7457"
+  },
+  "catalog_digests": {
+    "EU": "584291c8f04c18a1deb79289e1e0250057963568925db88c3a74de9654c26996",
+    "SE": "068d677b2269a4e53f026e2cb8bb0d0933be7caf6fe7be624bc19b6114a5da1e",
+    "TR": "8e15d05a080abfddfce6e8047b011975e9c06b7caeb1286c65e0bea6571d8440"
+  },
+  "source_assurance_warning": "National-law modules contain curated identity notes, not complete authoritative statutes; C1 active Article 2(2)(a) targeted repair does not establish full-source completeness; 21 C1 identity-only notes persist; no real-case merits review.",
+  "legal_violation_status": "not_determined",
+  "verified_legal_merits": false,
+  "send_authorized": false,
+  "requires_human_review": true,
+  "c17_questions": [
+    {
+      "rule_id": "eu:c12:entry-v-card-separation",
+      "topic": "Entry visa and residence-card procedures are not interchangeable",
+      "citations_for_human_check": [
+        {
+          "source_id": "eu:32004l0038",
+          "pinpoint_hint": "Directive 2004/38 Article 5(2) vs Articles 9-10.",
+          "assurance": "bundled_text_integrity_checked_not_completeness"
+        }
+      ],
+      "factual_items_for_verification": [
+        "case:procedure_type"
+      ],
+      "exception_questions": [
+        "Determine the legal role of each document; no entitlement is decided by procedure type alone."
+      ],
+      "question": "Please clarify the factual and procedural basis for the matter described as: Entry visa and residence-card procedures are not interchangeable.",
+      "legal_violation_status": "not_determined"
+    },
+    {
+      "rule_id": "eu:c16:visa-fee-v-provider-charge",
+      "topic": "Visa fee waiver versus optional service-provider charge",
+      "citations_for_human_check": [
+        {
+          "source_id": "eu:32004l0038",
+          "pinpoint_hint": "Article 5(2) no-charge entry visa; distinguish consular visa fee from third-party service charge.",
+          "assurance": "bundled_text_integrity_checked_not_completeness"
+        }
+      ],
+      "factual_items_for_verification": [
+        "fact:visa_fee_waiver_claimed",
+        "fact:vfs_service_charge_recorded",
+        "fact:vfs_route_optional",
+        "fact:consular_visa_fee_collected"
+      ],
+      "exception_questions": [
+        "Check entitlement and whether the provider service was truly optional; a VFS receipt alone is not an unlawful fee.",
+        "Do not infer lawfulness of a mandatory provider fee or entitlement from labels alone."
+      ],
+      "question": "Please clarify the factual and procedural basis for the matter described as: Visa fee waiver versus optional service-provider charge.",
+      "legal_violation_status": "not_determined"
+    },
+    {
+      "rule_id": "se:c16:istanbul-service-fee",
+      "topic": "Swedish mission waiver and VFS service-charge distinction",
+      "citations_for_human_check": [
+        {
+          "source_id": "se:src:fees-istanbul",
+          "pinpoint_hint": "Sweden Abroad Istanbul fee guidance, EU-family visa fee waiver and separate VFS service charge.",
+          "assurance": "country_source_summary_only"
+        }
+      ],
+      "factual_items_for_verification": [
+        "fact:vfs_service_charge_recorded",
+        "fact:consular_visa_fee_collected",
+        "fact:vfs_route_optional"
+      ],
+      "exception_questions": [
+        "Test the actual fee payer, purpose, provider choice and whether a no-charge direct route existed."
+      ],
+      "question": "Please clarify the factual and procedural basis for the matter described as: Swedish mission waiver and VFS service-charge distinction.",
+      "legal_violation_status": "not_determined"
+    },
+    {
+      "rule_id": "tr:c16:istanbul-vfs-choice",
+      "topic": "VFS fee and channel context for applicants in Türkiye",
+      "citations_for_human_check": [
+        {
+          "source_id": "tr:src:sweden-istanbul-fees",
+          "pinpoint_hint": "Swedish mission published visa-fee/service-fee distinction in Türkiye.",
+          "assurance": "country_source_summary_only"
+        }
+      ],
+      "factual_items_for_verification": [
+        "fact:vfs_service_charge_recorded",
+        "fact:vfs_route_optional"
+      ],
+      "exception_questions": [
+        "Türkiye module reports local application practice only; fee legality derives from applicable Swedish/EU law."
+      ],
+      "question": "Please clarify the factual and procedural basis for the matter described as: VFS fee and channel context for applicants in Türkiye.",
+      "legal_violation_status": "not_determined"
+    }
+  ],
+  "remedy_candidates": [
+    {
+      "remedy_id": "se:c17:mission-procedure-clarification",
+      "category": "administrative_clarification",
+      "authority_ref": "se:authority:istanbul-consulate",
+      "priority_class": "parallel_review",
+      "deadline": {
+        "kind": "not_established",
+        "rule": "No verified binding deadline in this catalogue.",
+        "trigger_event": null,
+        "calculation": "human_only"
+      },
+      "prerequisites_to_verify": [
+        "Confirm Directive 2004/38 scope and who is deciding",
+        "Verify that the reported instruction is attributable to the mission and still operative"
+      ],
+      "powers_to_verify": [
+        "Explain available application channels and procedural requirements; any correction depends on independent review"
+      ],
+      "limits": [
+        "Requesting clarification is not proof of an infringement or an appeal",
+        "No guaranteed response or interim protection",
+        "Do not treat a source note as full statutory text"
+      ],
+      "evidence_to_preserve": [
+        "Dated request, exact reply, published instruction snapshot, documentation actually offered"
+      ],
+      "source_refs": [
+        "se:src:family-visa-istanbul",
+        "se:src:admin-act"
+      ],
+      "filing_channel_for_review": "Official Swedish mission contact route: verify current address at Sweden Abroad.",
+      "intended_outcome_for_review": "Seek the mission's written explanation of the reported process and any available alternatives.",
+      "matched_rule_ids": [
+        "se:c16:istanbul-service-fee"
+      ],
+      "jurisdiction": "SE",
+      "status": "candidate_for_human_review",
+      "human_review_required": true,
+      "outstanding_checks": [
+        "Verify jurisdiction and present official source text",
+        "Verify factual predicates and contrary evidence",
+        "Verify current authority competence, prerequisites and deadlines",
+        "Check whether this route affects or leaves untouched other remedies"
+      ]
+    },
+    {
+      "remedy_id": "tr:c17:sweden-istanbul-direct-contact",
+      "category": "operational_contact",
+      "authority_ref": "tr:authority:sweden-istanbul-mission",
+      "priority_class": "parallel_review",
+      "deadline": {
+        "kind": "not_established",
+        "rule": "No verified binding deadline in this catalogue.",
+        "trigger_event": null,
+        "calculation": "human_only"
+      },
+      "prerequisites_to_verify": [
+        "Confirm the Swedish family-member eligibility test and current consulate appointment practice",
+        "Do not treat the Turkish location as Turkish decision-making jurisdiction"
+      ],
+      "powers_to_verify": [
+        "The Swedish mission publishes a direct contact channel for eligible applicants"
+      ],
+      "limits": [
+        "A request for appointment is not the same as lodged application",
+        "Optional third-party service charges differ from the consular visa fee",
+        "This is Swedish consular activity in Türkiye, not a Turkish immigration appeal"
+      ],
+      "evidence_to_preserve": [
+        "Date of request, acknowledgment, exact current mission guidance, third-party channel terms"
+      ],
+      "source_refs": [
+        "tr:src:sweden-istanbul-eu-family",
+        "tr:src:sweden-istanbul-contact"
+      ],
+      "filing_channel_for_review": "Check Sweden Abroad Istanbul migration contact page before transmission.",
+      "intended_outcome_for_review": "Ask for the available direct mission appointment procedure or confirmation of channel choice.",
+      "matched_rule_ids": [
+        "tr:c16:istanbul-vfs-choice"
+      ],
+      "jurisdiction": "TR",
+      "status": "candidate_for_human_review",
+      "human_review_required": true,
+      "outstanding_checks": [
+        "Verify jurisdiction and present official source text",
+        "Verify factual predicates and contrary evidence",
+        "Verify current authority competence, prerequisites and deadlines",
+        "Check whether this route affects or leaves untouched other remedies"
+      ]
+    },
+    {
+      "remedy_id": "eu:c17:solvit",
+      "category": "informal_problem_solving",
+      "authority_ref": "eu:authority:solvit-network",
+      "priority_class": "nonbinding_parallel_review",
+      "deadline": {
+        "kind": "not_established",
+        "rule": "No verified binding deadline in this catalogue.",
+        "trigger_event": null,
+        "calculation": "human_only"
+      },
+      "prerequisites_to_verify": [
+        "Check whether the complaint presents a qualifying cross-border EU-law problem with a public authority",
+        "Confirm SOLVIT competence and any parallel formal deadline"
+      ],
+      "powers_to_verify": [
+        "Facilitate informal cross-border discussion/problem solving through SOLVIT network"
+      ],
+      "limits": [
+        "Not a court or compulsory review procedure",
+        "No guaranteed individual redress",
+        "Do not postpone a formal appeal or time-critical filing"
+      ],
+      "evidence_to_preserve": [
+        "Chronology, relevant EU free-movement basis, written conduct, official source and contrary explanation"
+      ],
+      "source_refs": [
+        "eu:32013h0461"
+      ],
+      "filing_channel_for_review": "Verify official SOLVIT eligibility and national centre channel before referral.",
+      "intended_outcome_for_review": "Explore informal EU-law problem-solving without substituting for formal remedies.",
+      "matched_rule_ids": [
+        "eu:c16:visa-fee-v-provider-charge"
+      ],
+      "jurisdiction": "EU",
+      "status": "candidate_for_human_review",
+      "human_review_required": true,
+      "outstanding_checks": [
+        "Verify jurisdiction and present official source text",
+        "Verify factual predicates and contrary evidence",
+        "Verify current authority competence, prerequisites and deadlines",
+        "Check whether this route affects or leaves untouched other remedies"
+      ]
+    },
+    {
+      "remedy_id": "eu:c17:commission-complaint",
+      "category": "eu_law_enforcement_complaint",
+      "authority_ref": "eu:authority:european-commission",
+      "priority_class": "systemic_parallel_review",
+      "deadline": {
+        "kind": "not_established",
+        "rule": "No verified binding deadline in this catalogue.",
+        "trigger_event": null,
+        "calculation": "human_only"
+      },
+      "prerequisites_to_verify": [
+        "Assess whether an alleged Member State breach is substantiated and potentially relevant to Commission enforcement",
+        "Identify national procedural redress independently"
+      ],
+      "powers_to_verify": [
+        "Examine EU-law compliance at Member State level under Commission enforcement powers"
+      ],
+      "limits": [
+        "Not an individual appeal or guaranteed individual remedy",
+        "No guaranteed Commission action",
+        "Does not pause national deadlines"
+      ],
+      "evidence_to_preserve": [
+        "Specific Member State practice, comparable documented incidents if available, primary EU law basis, contrary explanations"
+      ],
+      "source_refs": [
+        "eu:commission-eu-law-complaint"
+      ],
+      "filing_channel_for_review": "Verify current official contact/submission instructions before use.",
+      "intended_outcome_for_review": "Flag a possible systemic EU-law issue for enforcement consideration, not case reversal.",
+      "matched_rule_ids": [
+        "eu:c16:visa-fee-v-provider-charge"
+      ],
+      "jurisdiction": "EU",
+      "status": "candidate_for_human_review",
+      "human_review_required": true,
+      "outstanding_checks": [
+        "Verify jurisdiction and present official source text",
+        "Verify factual predicates and contrary evidence",
+        "Verify current authority competence, prerequisites and deadlines",
+        "Check whether this route affects or leaves untouched other remedies"
+      ]
+    }
+  ],
+  "excluded_routes": [],
+  "parallelism_warnings": [
+    "Candidate order is a review queue, not a recommendation or sequence of legally required steps.",
+    "Clarification, SOLVIT, Commission or JO complaints do not automatically suspend national appeal deadlines.",
+    "Do not calculate dates, send correspondence, or infer violation or eligibility from a fictional source-anchored predicate.",
+    "Review potentially urgent formal appeal independently and in parallel; no waiting step is authorized."
+  ],
+  "correspondence_drafts": [
+    {
+      "remedy_id": "se:c17:mission-procedure-clarification",
+      "format": "administrative_clarification",
+      "recipient_placeholder": "[VERIFY CURRENT COMPETENT AUTHORITY]",
+      "text": "DRAFT PROCEDURAL CLARIFICATION — FICTIONAL REVIEW ONLY / DO NOT SEND\nTo: [VERIFY CURRENT COMPETENT AUTHORITY; NO ADDRESS INSERTED]\nRe: [FICTIONAL L2 — REPLACE WITH HUMAN-VERIFIED REFERENCE ONLY IF AUTHORIZED]\n\nThe fictional review record raises the following matters for verification: Swedish mission waiver and VFS service-charge distinction.\nThese are unverified allegations and source-qualified questions, not findings.\n\nPlease clarify in writing the competent procedure, source of the reported requirement, any applicable exception, and available means to present relevant evidence. If the report is inaccurate, please identify the applicable procedure instead.\n\nRelevant source identifiers for a human to inspect: se:src:family-visa-istanbul, se:src:admin-act.\nDocuments and dates must be checked independently; attach only material required and lawfully shareable.\nThe recipient, competence, applicable law, filing requirements and deadline remain unverified.\n",
+      "send_authorized": false,
+      "human_review_required": true
+    },
+    {
+      "remedy_id": "tr:c17:sweden-istanbul-direct-contact",
+      "format": "operational_contact",
+      "recipient_placeholder": "[VERIFY CURRENT COMPETENT AUTHORITY]",
+      "text": "DRAFT PROCEDURAL CLARIFICATION — FICTIONAL REVIEW ONLY / DO NOT SEND\nTo: [VERIFY CURRENT COMPETENT AUTHORITY; NO ADDRESS INSERTED]\nRe: [FICTIONAL L2 — REPLACE WITH HUMAN-VERIFIED REFERENCE ONLY IF AUTHORIZED]\n\nThe fictional review record raises the following matters for verification: VFS fee and channel context for applicants in Türkiye.\nThese are unverified allegations and source-qualified questions, not findings.\n\nPlease clarify in writing the competent procedure, source of the reported requirement, any applicable exception, and available means to present relevant evidence. If the report is inaccurate, please identify the applicable procedure instead.\n\nRelevant source identifiers for a human to inspect: tr:src:sweden-istanbul-eu-family, tr:src:sweden-istanbul-contact.\nDocuments and dates must be checked independently; attach only material required and lawfully shareable.\nThe recipient, competence, applicable law, filing requirements and deadline remain unverified.\n",
+      "send_authorized": false,
+      "human_review_required": true
+    },
+    {
+      "remedy_id": "eu:c17:solvit",
+      "format": "informal_problem_solving",
+      "recipient_placeholder": "[VERIFY CURRENT COMPETENT AUTHORITY]",
+      "text": "DRAFT PROCEDURAL CLARIFICATION — FICTIONAL REVIEW ONLY / DO NOT SEND\nTo: [VERIFY CURRENT COMPETENT AUTHORITY; NO ADDRESS INSERTED]\nRe: [FICTIONAL L2 — REPLACE WITH HUMAN-VERIFIED REFERENCE ONLY IF AUTHORIZED]\n\nThe fictional review record raises the following matters for verification: Visa fee waiver versus optional service-provider charge.\nThese are unverified allegations and source-qualified questions, not findings.\n\nPlease clarify in writing the competent procedure, source of the reported requirement, any applicable exception, and available means to present relevant evidence. If the report is inaccurate, please identify the applicable procedure instead.\n\nRelevant source identifiers for a human to inspect: eu:32013h0461.\nDocuments and dates must be checked independently; attach only material required and lawfully shareable.\nThe recipient, competence, applicable law, filing requirements and deadline remain unverified.\n",
+      "send_authorized": false,
+      "human_review_required": true
+    },
+    {
+      "remedy_id": "eu:c17:commission-complaint",
+      "format": "eu_law_enforcement_complaint",
+      "recipient_placeholder": "[VERIFY CURRENT COMPETENT AUTHORITY]",
+      "text": "DRAFT SYSTEMIC EU-LAW COMPLAINT — FICTIONAL REVIEW ONLY / DO NOT SEND\nTo: [VERIFY CURRENT COMPETENT AUTHORITY; NO ADDRESS INSERTED]\nRe: [FICTIONAL L2 — REPLACE WITH HUMAN-VERIFIED REFERENCE ONLY IF AUTHORIZED]\n\nThe fictional review record raises the following matters for verification: Visa fee waiver versus optional service-provider charge.\nThese are unverified allegations and source-qualified questions, not findings.\n\nThis is submitted as a proposed issue for EU-law enforcement review, not an individual appeal. The factual pattern, Member-State attribution and applicable Union law must be independently established.\n\nRelevant source identifiers for a human to inspect: eu:commission-eu-law-complaint.\nDocuments and dates must be checked independently; attach only material required and lawfully shareable.\nThe recipient, competence, applicable law, filing requirements and deadline remain unverified.\n",
+      "send_authorized": false,
+      "human_review_required": true
+    }
+  ],
+  "decision_gate": "blocked_pending_source_factual_and_human_review",
+  "missing_prerequisites": [
+    "Official current and operative national legislation and any exceptions",
+    "Authenticated communications and independent fact assessment",
+    "Current competent recipient and applicable court/appeal procedure",
+    "Decision service dates, extension/suspension rules and filing proof",
+    "Independent legal-semantic review including unresolved C15f, 21 incomplete C1 source notes, and independent full-source verification",
+    "Private-data authorization and trustworthy human approval before any real use"
+  ],
+  "review_facts": [
+    {
+      "rule_id": "eu:c12:entry-v-card-separation",
+      "facts_to_check": [
+        "case:procedure_type"
+      ]
+    },
+    {
+      "rule_id": "eu:c16:visa-fee-v-provider-charge",
+      "facts_to_check": [
+        "fact:visa_fee_waiver_claimed",
+        "fact:vfs_service_charge_recorded",
+        "fact:vfs_route_optional",
+        "fact:consular_visa_fee_collected"
+      ]
+    },
+    {
+      "rule_id": "se:c16:istanbul-service-fee",
+      "facts_to_check": [
+        "fact:vfs_service_charge_recorded",
+        "fact:consular_visa_fee_collected",
+        "fact:vfs_route_optional"
+      ]
+    },
+    {
+      "rule_id": "tr:c16:istanbul-vfs-choice",
+      "facts_to_check": [
+        "fact:vfs_service_charge_recorded",
+        "fact:vfs_route_optional"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "C7 exhaustive synthetic issue index v0.2.0 (C13 stage added)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "index_version",
+    "case_id",
+    "run_id",
+    "purpose",
+    "source_stage_digests",
+    "issues",
+    "counts_by_stage_and_category",
+    "issue_count"
+  ],
+  "properties": {
+    "index_version": {
+      "const": "0.2.0"
+    },
+    "case_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "purpose": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 500
+    },
+    "source_stage_digests": {
+      "type": "object",
+      "minProperties": 9,
+      "maxProperties": 9,
+      "additionalProperties": {
+        "$ref": "#/$defs/sha256"
+      }
+    },
+    "issues": {
+      "type": "array",
+      "maxItems": 5000,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "issue_id",
+          "stage",
+          "category",
+          "pointer",
+          "stage_sha256",
+          "value_sha256",
+          "value"
+        ],
+        "properties": {
+          "issue_id": {
+            "type": "string",
+            "pattern": "^c7:issue:[0-9]{5}$"
+          },
+          "stage": {
+            "enum": [
+              "topology",
+              "regimes",
+              "c5b",
+              "c5c",
+              "c5d",
+              "c11",
+              "controller_reference_index",
+              "c12",
+              "c13"
+            ]
+          },
+          "category": {
+            "enum": [
+              "unresolved",
+              "limitations",
+              "unregistered_candidate_id",
+              "novel_unassessed",
+              "unverified_evidence"
+            ]
+          },
+          "pointer": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 500
+          },
+          "stage_sha256": {
+            "$ref": "#/$defs/sha256"
+          },
+          "value_sha256": {
+            "$ref": "#/$defs/sha256"
+          },
+          "value": {}
+        }
+      }
+    },
+    "counts_by_stage_and_category": {
+      "type": "object",
+      "maxProperties": 50,
+      "additionalProperties": {
+        "type": "integer",
+        "minimum": 1
+      }
+    },
+    "issue_count": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 5000
+    }
+  },
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  }
+}

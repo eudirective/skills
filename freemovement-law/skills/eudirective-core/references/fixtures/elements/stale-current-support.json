@@ -1,0 +1,19 @@
+{
+  "model_version": "0.2.0",
+  "bundle_id": "stale-current-support",
+  "elements": [
+    {
+      "element_id": "source.freshness",
+      "value": "stale",
+      "supplied_by": "member_state",
+      "provenance_kind": "module_export",
+      "source_ref": "fixture:module-export"
+    },
+    {
+      "element_id": "conclusion.current_law_supported",
+      "value": true,
+      "supplied_by": "core",
+      "provenance_kind": "model_inference"
+    }
+  ]
+}

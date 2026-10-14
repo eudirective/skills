@@ -1,0 +1,132 @@
+{
+  "model_version": "0.2.0",
+  "bundle_id": "c5d-attack-signals",
+  "elements": [
+    {
+      "element_id": "person_status.eu_citizen_status",
+      "value": "not_eu_citizen",
+      "supplied_by": "case_workspace",
+      "provenance_kind": "user_assertion"
+    },
+    {
+      "element_id": "person_status.family_member_status",
+      "value": "established",
+      "supplied_by": "case_workspace",
+      "provenance_kind": "document",
+      "source_ref": "synthetic:family-document"
+    },
+    {
+      "element_id": "relationship.accompanying_or_joining",
+      "value": true,
+      "supplied_by": "case_workspace",
+      "provenance_kind": "user_assertion"
+    },
+    {
+      "element_id": "movement.cross_border",
+      "value": true,
+      "supplied_by": "case_workspace",
+      "provenance_kind": "user_assertion"
+    },
+    {
+      "element_id": "movement.free_movement_exercised",
+      "value": true,
+      "supplied_by": "case_workspace",
+      "provenance_kind": "document",
+      "source_ref": "synthetic:movement-document"
+    },
+    {
+      "element_id": "movement.returnee_context",
+      "value": false,
+      "supplied_by": "case_workspace",
+      "provenance_kind": "user_assertion"
+    },
+    {
+      "element_id": "legal_regime.eu_law_scope_established",
+      "value": true,
+      "supplied_by": "core",
+      "provenance_kind": "mechanical_calculation"
+    },
+    {
+      "element_id": "relationship.dependency_status",
+      "value": "claimed",
+      "supplied_by": "case_workspace",
+      "provenance_kind": "user_assertion"
+    },
+    {
+      "element_id": "evidence.proof_restriction_status",
+      "value": "asserted",
+      "supplied_by": "case_workspace",
+      "provenance_kind": "authority_statement",
+      "source_ref": "se:src:fixture"
+    },
+    {
+      "element_id": "evidence.proof_restriction_source_ref",
+      "value": "se:src:fixture",
+      "supplied_by": "case_workspace",
+      "provenance_kind": "authority_statement",
+      "source_ref": "se:src:fixture"
+    },
+    {
+      "element_id": "time.deadline_rule_ref",
+      "value": "se:rule:fixture",
+      "supplied_by": "member_state",
+      "provenance_kind": "module_export",
+      "source_ref": "se:rule:fixture"
+    },
+    {
+      "element_id": "time.deadline_trigger_ref",
+      "value": "event:lodged",
+      "supplied_by": "member_state",
+      "provenance_kind": "module_export",
+      "source_ref": "se:deadline:c5c-calendar"
+    },
+    {
+      "element_id": "time.event_id",
+      "value": "event:lodged",
+      "supplied_by": "case_workspace",
+      "provenance_kind": "document",
+      "source_ref": "synthetic:lodgement-record"
+    },
+    {
+      "element_id": "time.event_type",
+      "value": "synthetic_lodgement_event",
+      "supplied_by": "case_workspace",
+      "provenance_kind": "document",
+      "source_ref": "synthetic:lodgement-record"
+    },
+    {
+      "element_id": "time.event_date",
+      "value": "2026-10-01",
+      "supplied_by": "case_workspace",
+      "provenance_kind": "document",
+      "source_ref": "synthetic:lodgement-record"
+    },
+    {
+      "element_id": "procedure.stage",
+      "value": "visa_application_processing",
+      "supplied_by": "case_workspace",
+      "provenance_kind": "user_assertion"
+    },
+    {
+      "element_id": "procedure.access_state",
+      "value": "appointment_unavailable",
+      "supplied_by": "case_workspace",
+      "provenance_kind": "document",
+      "source_ref": "synthetic:appointment-record"
+    },
+    {
+      "element_id": "procedure.deadline_state",
+      "value": "overdue",
+      "supplied_by": "deterministic_calculation",
+      "provenance_kind": "mechanical_calculation",
+      "source_ref": "synthetic:deadline-status"
+    },
+    {
+      "element_id": "authority.competence",
+      "value": "competence_disputed",
+      "supplied_by": "member_state",
+      "provenance_kind": "module_export",
+      "source_ref": "se:src:fixture"
+    }
+  ]
+}
