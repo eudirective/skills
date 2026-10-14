@@ -1,0 +1,169 @@
+{
+  "schema": "c25-abstract-strategy/0.3.0",
+  "mode": "synthetic_abstract_review",
+  "reported_events": [
+    "ordinary_document_demand",
+    "direct_lodgement_denied",
+    "no_procedural_receipt",
+    "reported_staff_intimidation",
+    "physical_removal"
+  ],
+  "grievances": [
+    {
+      "issue": "visa_supporting_document_grievance",
+      "disposition": "candidate_for_complaint",
+      "route": "visa_process_complaint",
+      "priority": "substantive_redress"
+    },
+    {
+      "issue": "lodgement_access_grievance",
+      "disposition": "candidate_for_complaint",
+      "route": "visa_process_complaint",
+      "priority": "substantive_redress"
+    },
+    {
+      "issue": "procedural_status_grievance",
+      "disposition": "candidate_for_complaint",
+      "route": "written_status_request",
+      "priority": "deadline_sensitive"
+    },
+    {
+      "issue": "staff_treatment_grievance",
+      "disposition": "candidate_for_complaint",
+      "route": "conduct_complaint",
+      "priority": "urgent_evidence"
+    }
+  ],
+  "defenses": [
+    {
+      "issue": "territorial_competence",
+      "authority_position": "not_invoked",
+      "authority_knowledge": "disclosed_unacknowledged",
+      "role": "potential_defense",
+      "handling": "contingency_only",
+      "attribution_basis": "applicant_disclosure_only"
+    }
+  ],
+  "available_records": [
+    "emails",
+    "email_access_metadata",
+    "appointment_records",
+    "cctv",
+    "incident_report"
+  ],
+  "evidence_actions": [
+    "gdpr_access_considered",
+    "urgent_preservation_considered",
+    "national_file_access_considered",
+    "complaint_investigation_considered"
+  ],
+  "questions": [
+    {
+      "question": "lodgement_status",
+      "impact": "changes_relief"
+    },
+    {
+      "question": "actor_or_employer",
+      "impact": "changes_competence"
+    }
+  ],
+  "event_reviews": [
+    {
+      "event": "ordinary_document_demand",
+      "issue": "visa_supporting_document_grievance",
+      "disposition": "candidate_for_complaint",
+      "route": "visa_process_complaint",
+      "priority": "substantive_redress"
+    },
+    {
+      "event": "direct_lodgement_denied",
+      "issue": "lodgement_access_grievance",
+      "disposition": "candidate_for_complaint",
+      "route": "visa_process_complaint",
+      "priority": "substantive_redress"
+    },
+    {
+      "event": "no_procedural_receipt",
+      "issue": "procedural_status_grievance",
+      "disposition": "candidate_for_complaint",
+      "route": "written_status_request",
+      "priority": "deadline_sensitive"
+    },
+    {
+      "event": "reported_staff_intimidation",
+      "issue": "staff_treatment_grievance",
+      "disposition": "candidate_for_complaint",
+      "route": "conduct_complaint",
+      "priority": "urgent_evidence"
+    },
+    {
+      "event": "physical_removal",
+      "issue": "staff_treatment_grievance",
+      "disposition": "candidate_for_complaint",
+      "route": "conduct_complaint",
+      "priority": "urgent_evidence"
+    }
+  ],
+  "evidence_plans": [
+    {
+      "route": "gdpr_article15",
+      "decision": "conditional_controller_check",
+      "controller_status": "needs_verification",
+      "records": [
+        "emails",
+        "appointment_records",
+        "cctv"
+      ],
+      "next_step": "identify_controller_then_request",
+      "limits": [
+        "personal_data_only",
+        "not_whole_files",
+        "third_party_or_security_limits",
+        "gdpr_request_not_preservation",
+        "controller_must_be_verified",
+        "no_visa_deadline_suspension"
+      ]
+    },
+    {
+      "route": "urgent_preservation",
+      "decision": "recommend_now",
+      "controller_status": "needs_verification",
+      "records": [
+        "cctv",
+        "incident_report"
+      ],
+      "next_step": "request_preservation_where_lawful",
+      "limits": [
+        "no_automatic_record_retention",
+        "controller_must_be_verified"
+      ]
+    },
+    {
+      "route": "national_file_access",
+      "decision": "recommend_now",
+      "controller_status": "needs_verification",
+      "records": [
+        "appointment_records",
+        "visa_case_notes"
+      ],
+      "next_step": "request_file_access_where_available",
+      "limits": [
+        "controller_must_be_verified"
+      ]
+    },
+    {
+      "route": "conduct_investigation",
+      "decision": "recommend_now",
+      "controller_status": "needs_verification",
+      "records": [
+        "incident_report",
+        "cctv"
+      ],
+      "next_step": "request_conduct_investigation",
+      "limits": [
+        "third_party_or_security_limits",
+        "controller_must_be_verified"
+      ]
+    }
+  ]
+}

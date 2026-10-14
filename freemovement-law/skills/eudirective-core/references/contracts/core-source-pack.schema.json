@@ -1,0 +1,413 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "manifest_version": {
+            "enum": [
+              "0.2.0",
+              "0.3.0",
+              "0.4.0",
+              "0.5.0",
+              "0.6.0",
+              "0.6.1"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "sources": {
+            "items": {
+              "required": [
+                "verification_date",
+                "verification_basis",
+                "current_version_date",
+                "coverage_tags"
+              ]
+            }
+          }
+        },
+        "required": [
+          "live_verification_date",
+          "completion_status"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "manifest_version": {
+            "enum": [
+              "0.4.0",
+              "0.5.0",
+              "0.6.0",
+              "0.6.1"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "sources": {
+            "items": {
+              "properties": {
+                "representations": {
+                  "items": {
+                    "required": [
+                      "kind",
+                      "authenticity_state",
+                      "verification_method",
+                      "acquisition_url",
+                      "final_url",
+                      "verified_at"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "text_completeness_state",
+                "trusted_ingest_sha256"
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "properties": {
+    "baseline_date": {
+      "maxLength": 40,
+      "minLength": 10,
+      "type": "string"
+    },
+    "completion_status": {
+      "maxLength": 120,
+      "minLength": 1,
+      "type": "string"
+    },
+    "freshness_claim": {
+      "maxLength": 2000,
+      "minLength": 1,
+      "type": "string"
+    },
+    "live_verification_date": {
+      "maxLength": 40,
+      "minLength": 10,
+      "type": "string"
+    },
+    "logical_source_count": {
+      "maximum": 10000,
+      "minimum": 1,
+      "type": "integer"
+    },
+    "manifest_version": {
+      "enum": [
+        "0.1.0",
+        "0.2.0",
+        "0.3.0",
+        "0.4.0",
+        "0.5.0",
+        "0.6.0",
+        "0.6.1"
+      ]
+    },
+    "ownership_rule": {
+      "maxLength": 1000,
+      "minLength": 1,
+      "type": "string"
+    },
+    "pack_name": {
+      "const": "eudirective-core-source-pack"
+    },
+    "pack_version": {
+      "maxLength": 40,
+      "minLength": 1,
+      "type": "string"
+    },
+    "representation_count": {
+      "maximum": 20000,
+      "minimum": 1,
+      "type": "integer"
+    },
+    "source_pool": {
+      "additionalProperties": false,
+      "properties": {
+        "baseline_date": {
+          "maxLength": 40,
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pack_name": {
+          "maxLength": 120,
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pack_version": {
+          "maxLength": 40,
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "pack_name",
+        "pack_version",
+        "baseline_date"
+      ],
+      "type": "object"
+    },
+    "sources": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "authority_level": {
+            "const": "eu"
+          },
+          "baseline_date": {
+            "maxLength": 40,
+            "minLength": 10,
+            "type": "string"
+          },
+          "canonical_owner_family": {
+            "const": "core"
+          },
+          "canonical_url": {
+            "maxLength": 1600,
+            "minLength": 1,
+            "type": "string"
+          },
+          "coverage_tags": {
+            "items": {
+              "maxLength": 120,
+              "minLength": 1,
+              "type": "string"
+            },
+            "maxItems": 100,
+            "type": "array",
+            "uniqueItems": true
+          },
+          "current_version_date": {
+            "maxLength": 40,
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "freshness_state": {
+            "enum": [
+              "baseline_verified_not_live_rechecked",
+              "current",
+              "fixed_verified",
+              "stale",
+              "unknown"
+            ]
+          },
+          "identity": {
+            "maxLength": 160,
+            "minLength": 1,
+            "type": "string"
+          },
+          "issuing_authority": {
+            "maxLength": 300,
+            "minLength": 1,
+            "type": "string"
+          },
+          "jurisdiction": {
+            "const": "EU"
+          },
+          "legal_status": {
+            "maxLength": 160,
+            "minLength": 1,
+            "type": "string"
+          },
+          "representations": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "acquisition_url": {
+                  "maxLength": 2000,
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "authenticity_state": {
+                  "enum": [
+                    "verified_official",
+                    "reference_only",
+                    "unverified_candidate",
+                    "verified_identity_version"
+                  ]
+                },
+                "bytes": {
+                  "minimum": 1,
+                  "type": "integer"
+                },
+                "final_url": {
+                  "maxLength": 2000,
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "kind": {
+                  "enum": [
+                    "bundled_text",
+                    "curated_reference_note",
+                    "candidate_text",
+                    "verified_source_note"
+                  ]
+                },
+                "language": {
+                  "maxLength": 20,
+                  "minLength": 2,
+                  "type": "string"
+                },
+                "original_combined_pack_path": {
+                  "maxLength": 500,
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "relative_path": {
+                  "maxLength": 500,
+                  "minLength": 1,
+                  "type": "string"
+                },
+                "sha256": {
+                  "pattern": "^[a-f0-9]{64}$",
+                  "type": "string"
+                },
+                "source_policy": {
+                  "maxLength": 160,
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "update_intent": {
+                  "maxLength": 160,
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "verification_method": {
+                  "enum": [
+                    "baseline_supplied_verified",
+                    "official_https_fetch",
+                    "pinned_sha256_match",
+                    "not_applicable",
+                    "official_identity_version_check",
+                    "manual_official_article_2_2_a_html_passage_comparison"
+                  ]
+                },
+                "verified_at": {
+                  "maxLength": 40,
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              },
+              "required": [
+                "language",
+                "relative_path",
+                "sha256",
+                "bytes",
+                "source_policy",
+                "update_intent",
+                "original_combined_pack_path"
+              ],
+              "type": "object"
+            },
+            "maxItems": 50,
+            "minItems": 1,
+            "type": "array"
+          },
+          "source_id": {
+            "maxLength": 200,
+            "minLength": 1,
+            "type": "string"
+          },
+          "source_type": {
+            "maxLength": 160,
+            "minLength": 1,
+            "type": "string"
+          },
+          "text_completeness_state": {
+            "enum": [
+              "bundled_verified",
+              "reference_only",
+              "candidate_unverified",
+              "verified_source_note"
+            ]
+          },
+          "title": {
+            "maxLength": 1000,
+            "minLength": 1,
+            "type": "string"
+          },
+          "trusted_ingest_sha256": {
+            "pattern": "^[a-f0-9]{64}$",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "verification_basis": {
+            "maxLength": 240,
+            "minLength": 1,
+            "type": "string"
+          },
+          "verification_date": {
+            "maxLength": 40,
+            "minLength": 10,
+            "type": "string"
+          }
+        },
+        "required": [
+          "source_id",
+          "identity",
+          "title",
+          "canonical_owner_family",
+          "authority_level",
+          "issuing_authority",
+          "jurisdiction",
+          "source_type",
+          "legal_status",
+          "canonical_url",
+          "freshness_state",
+          "representations"
+        ],
+        "type": "object"
+      },
+      "maxItems": 10000,
+      "minItems": 1,
+      "type": "array"
+    }
+  },
+  "required": [
+    "manifest_version",
+    "pack_name",
+    "pack_version",
+    "baseline_date",
+    "source_pool",
+    "ownership_rule",
+    "freshness_claim",
+    "logical_source_count",
+    "representation_count",
+    "sources"
+  ],
+  "title": "eudirective core source pack manifest",
+  "type": "object"
+}

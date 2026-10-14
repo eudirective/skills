@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "C5d to suggestion-layer analysis review record v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["review_version", "case_id", "c5d_sha256", "reviewer_ref", "identity_assurance", "attack_angle_reviews", "route_reviews"],
+  "properties": {
+    "review_version": {"const": "0.1.0"},
+    "case_id": {"type": "string", "minLength": 1, "maxLength": 160},
+    "c5d_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "reviewer_ref": {"type": "string", "minLength": 1, "maxLength": 200},
+    "identity_assurance": {"enum": ["unverified_local", "system_fixture"]},
+    "attack_angle_reviews": {
+      "type": "array", "maxItems": 500,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["attack_angle_id", "disposition", "rationale", "reviewed_evidence_refs", "module_value_checks"],
+        "properties": {
+          "attack_angle_id": {"type": "string", "minLength": 1, "maxLength": 160},
+          "disposition": {"enum": ["validate_for_suggestion", "reject"]},
+          "rationale": {"type": "string", "minLength": 10, "maxLength": 2000},
+          "reviewed_evidence_refs": {"type": "array", "maxItems": 200, "uniqueItems": true, "items": {"type": "string", "minLength": 1, "maxLength": 400}},
+          "module_value_checks": {
+            "type": "array", "maxItems": 200,
+            "items": {
+              "type": "object", "additionalProperties": false,
+              "required": ["role", "element_id", "operator"],
+              "properties": {
+                "role": {"enum": ["prerequisite", "disqualifier"]},
+                "element_id": {"type": "string", "pattern": "^[a-z][a-z0-9_]*(\\.[a-z][a-z0-9_]*)+$"},
+                "operator": {"enum": ["equals", "not_equals", "in", "present", "absent"]},
+                "expected_value": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "route_reviews": {
+      "type": "array", "maxItems": 100,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["route_ref", "disposition", "rationale"],
+        "properties": {
+          "route_ref": {"type": "string", "minLength": 1, "maxLength": 160},
+          "disposition": {"enum": ["validate_for_suggestion", "reject"]},
+          "rationale": {"type": "string", "minLength": 10, "maxLength": 2000}
+        }
+      }
+    },
+    "notes": {"type": "array", "maxItems": 100, "items": {"type": "string", "minLength": 1, "maxLength": 1500}}
+  }
+}

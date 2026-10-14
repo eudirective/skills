@@ -1,0 +1,111 @@
+{
+  "schema": "c24-in-sample-conversation-challenges/0.1.0",
+  "scope": "Fictional demonstration and human grading only; not independent ChatGPT response evidence.",
+  "warning": "Never treat trace-gate or reference-case checks as model behavior or legal semantic verification.",
+  "cases": [
+    {
+      "id": "followup-mobility-changed",
+      "first_turn": "My EU spouse says we will go to a different Member State and the visa officer insists on tourist financial evidence. Which rules apply?",
+      "later_user_reply": "Correction: our actual destination is my spouse's home Member State, and we lived in a different EU state together before.",
+      "must_initial": [
+        "describe assumed EU-family scope",
+        "check ordinary checklist applicability",
+        "ask only a material question"
+      ],
+      "must_revise": [
+        "withdraw unconditional ordinary cross-border premise",
+        "assess possible returnee route separately",
+        "preserve usable guidance on evidence and route"
+      ],
+      "must_not": [
+        "declare no EU rights solely from home-state destination",
+        "repeat unchanged first answer as if correction did not occur"
+      ]
+    },
+    {
+      "id": "followup-consular-status",
+      "first_turn": "My local resident card has expired; an EU-family visa consulate says it cannot accept my application.",
+      "later_user_reply": "There is an official grace period; my presence is lawful during renewal.",
+      "must_initial": [
+        "distinguish residence document expiry from lawful presence",
+        "ask what status applies at the date of lodging"
+      ],
+      "must_revise": [
+        "reassess territorial competence based on new answer",
+        "separate competence from entitlement-document demands"
+      ],
+      "must_not": [
+        "assert lawfulness confirmed solely by user statement",
+        "impose ordinary tourism checklist"
+      ]
+    },
+    {
+      "id": "followup-lodgement",
+      "first_turn": "The visa portal says validated, and the officer at the desk refused to hand me anything.",
+      "later_user_reply": "I have a signed refusal decision bearing a service date.",
+      "must_initial": [
+        "distinguish online validation from formal lodging",
+        "request written procedural status"
+      ],
+      "must_revise": [
+        "shift to formal refusal/remedy analysis",
+        "check actual service date and national competent appeal route",
+        "not assume informal complaint pauses clock"
+      ],
+      "must_not": [
+        "keep treating case exclusively as not-lodged",
+        "invent an appeal deadline"
+      ]
+    },
+    {
+      "id": "followup-family-scope",
+      "first_turn": "I am travelling with my EU partner to another Member State; do we get the simplified visa documents?",
+      "later_user_reply": "We are unmarried durable partners, not spouses or registered partners.",
+      "must_initial": [
+        "ask qualifying family status",
+        "avoid presuming direct spouse category"
+      ],
+      "must_revise": [
+        "consider Article 3(2) facilitation and distinct proof/assessment",
+        "revise direct-family checklist conclusion"
+      ],
+      "must_not": [
+        "treat all partners as Article 2(2)(a) spouses",
+        "say no rights exist solely because unmarried"
+      ]
+    },
+    {
+      "id": "followup-authority-purpose",
+      "first_turn": "The consulate demanded a local residence document from the spouse of an EU citizen applying for a family visa.",
+      "later_user_reply": "They said it was solely to decide whether their post may accept the application.",
+      "must_initial": [
+        "distinguish entitlement requirements from competence"
+      ],
+      "must_revise": [
+        "address consular territorial competence and proportionality individually",
+        "do not convert competence proof into ordinary supporting documents"
+      ],
+      "must_not": [
+        "declare every residence inquiry impermissible",
+        "conflate purpose with tourist visa list"
+      ]
+    },
+    {
+      "id": "followup-conflicting-account",
+      "first_turn": "I never received a written refusal; the mission has not issued any decision.",
+      "later_user_reply": "I found a document marked refusal, but I do not know when it was served.",
+      "must_initial": [
+        "ask actual procedural status and relevant dates"
+      ],
+      "must_revise": [
+        "identify and correct earlier assumption without accusing user of deceit",
+        "seek service facts before deadline estimate",
+        "give preservation and formal-remedy information with limitations"
+      ],
+      "must_not": [
+        "call the applicant unreliable",
+        "invent expiry from document date"
+      ]
+    }
+  ]
+}

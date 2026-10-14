@@ -1,0 +1,47 @@
+{
+  "contract_version": "0.2.0",
+  "case_id": "CASE-C5A-FRONTIER",
+  "purpose": "synthetic C5a topology/applicability fixture",
+  "procedure_type": "entry_visa",
+  "procedure_stage": "pre_lodging",
+  "user_objective": "test C5a frontier topology without collapsing state roles",
+  "geography": {
+    "nationality": "DE",
+    "residence_state": "SE",
+    "work_state": "DE",
+    "intended_residence_state": "SE",
+    "application_country": "TR",
+    "deciding_state": "SE",
+    "representing_state": null,
+    "document_issuing_country": "TR",
+    "challenged_authority_state": null
+  },
+  "facts": [],
+  "module_requests": [
+    {
+      "request_id": "req:c5a-se-res",
+      "family": "member_state",
+      "jurisdiction": "SE",
+      "role": "residence_state",
+      "required": true,
+      "destination_state": null
+    },
+    {
+      "request_id": "req:c5a-de-work",
+      "family": "member_state",
+      "jurisdiction": "DE",
+      "role": "work_state",
+      "required": true,
+      "destination_state": null
+    },
+    {
+      "request_id": "req:c5a-tr-local",
+      "family": "applicant_country",
+      "jurisdiction": "TR",
+      "role": "application_context",
+      "required": true,
+      "destination_state": "SE"
+    }
+  ],
+  "privacy_classification": "synthetic"
+}

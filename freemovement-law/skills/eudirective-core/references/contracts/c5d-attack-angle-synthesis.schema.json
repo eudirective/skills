@@ -1,0 +1,150 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "C5d attack-angle synthesis candidate set v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "engine_version", "ruleset_version", "contract_version", "element_model_version",
+    "case_id", "bindings", "resolution_status", "final_attack_angle_resolution",
+    "attack_angles", "unresolved", "limitations"
+  ],
+  "properties": {
+    "engine_version": {"const": "0.1.0"},
+    "ruleset_version": {"const": "0.1.0"},
+    "contract_version": {"const": "0.2.0"},
+    "element_model_version": {"const": "0.2.0"},
+    "case_id": {"type": "string", "minLength": 1, "maxLength": 160},
+    "bindings": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "case_sha256", "regime_candidates_sha256", "c5b_sha256", "c5c_sha256",
+        "element_bundle_sha256", "source_pack_version", "source_pack_sha256",
+        "core_attack_catalog_version", "core_attack_catalog_sha256", "module_bindings"
+      ],
+      "properties": {
+        "case_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "regime_candidates_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "c5b_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "c5c_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "element_bundle_sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+        "source_pack_version": {"type": "string", "minLength": 1, "maxLength": 80},
+        "source_pack_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "core_attack_catalog_version": {"const": "0.1.0"},
+        "core_attack_catalog_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "module_bindings": {
+          "type": "array",
+          "maxItems": 30,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["module_id", "module_family", "jurisdiction", "manifest_sha256", "export_sha256"],
+            "properties": {
+              "module_id": {"type": "string", "minLength": 1, "maxLength": 160},
+              "module_family": {"enum": ["member_state", "applicant_country"]},
+              "jurisdiction": {"type": "string", "minLength": 2, "maxLength": 80},
+              "manifest_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+              "export_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+            }
+          }
+        }
+      }
+    },
+    "resolution_status": {"enum": ["ready", "blocked"]},
+    "final_attack_angle_resolution": {"const": "not_determined"},
+    "attack_angles": {
+      "type": "array",
+      "maxItems": 500,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "attack_angle_id", "origin", "module_id", "label", "issue_type", "basis_layer",
+          "assessment_status", "legal_violation_status", "evidence_state", "prerequisites_state",
+          "exclusion_state", "completeness_state", "supporting_finding_refs", "supporting_element_refs",
+          "source_refs", "rule_refs", "authority_refs", "route_refs", "fact_source_refs",
+          "procedural_stage", "evidence_needs", "missing_evidence", "false_positive_risks",
+          "severity_hint", "rationale_codes", "review_required", "limitations"
+        ],
+        "properties": {
+          "attack_angle_id": {
+            "type": "string", "minLength": 1, "maxLength": 160,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$"
+          },
+          "origin": {"enum": ["core_catalog", "module_record"]},
+          "module_id": {"type": ["string", "null"], "maxLength": 160},
+          "label": {"type": "string", "minLength": 1, "maxLength": 500},
+          "issue_type": {"type": "string", "minLength": 1, "maxLength": 160},
+          "basis_layer": {"enum": ["eu_common", "national", "local_operational"]},
+          "assessment_status": {"enum": ["candidate", "supported", "blocked", "insufficient_evidence", "not_indicated"]},
+          "legal_violation_status": {"const": "not_determined"},
+          "evidence_state": {"enum": ["sufficient_for_review", "partial", "missing", "conflicting", "not_checked"]},
+          "prerequisites_state": {"enum": ["satisfied", "partial", "missing", "unresolved"]},
+          "exclusion_state": {"enum": ["none_indicated", "present", "unresolved"]},
+          "completeness_state": {"enum": ["complete_for_review", "partial", "blocked", "not_applicable"]},
+          "supporting_finding_refs": {
+            "type": "array", "maxItems": 100, "uniqueItems": true,
+            "items": {"type": "string", "maxLength": 160}
+          },
+          "supporting_element_refs": {
+            "type": "array", "maxItems": 100, "uniqueItems": true,
+            "items": {"type": "string", "maxLength": 160}
+          },
+          "source_refs": {
+            "type": "array", "maxItems": 50, "uniqueItems": true,
+            "items": {"type": "string", "maxLength": 160}
+          },
+          "rule_refs": {
+            "type": "array", "maxItems": 50, "uniqueItems": true,
+            "items": {"type": "string", "maxLength": 160}
+          },
+          "authority_refs": {
+            "type": "array", "maxItems": 50, "uniqueItems": true,
+            "items": {"type": "string", "maxLength": 160}
+          },
+          "route_refs": {
+            "type": "array", "maxItems": 50, "uniqueItems": true,
+            "items": {"type": "string", "maxLength": 160}
+          },
+          "fact_source_refs": {
+            "type": "array", "maxItems": 100, "uniqueItems": true,
+            "items": {"type": "string", "maxLength": 160}
+          },
+          "procedural_stage": {"type": ["string", "null"], "maxLength": 500},
+          "evidence_needs": {
+            "type": "array", "maxItems": 100,
+            "items": {"type": "string", "minLength": 1, "maxLength": 1000}
+          },
+          "missing_evidence": {
+            "type": "array", "maxItems": 100,
+            "items": {"type": "string", "minLength": 1, "maxLength": 1000}
+          },
+          "false_positive_risks": {
+            "type": "array", "maxItems": 100,
+            "items": {"type": "string", "minLength": 1, "maxLength": 1000}
+          },
+          "severity_hint": {"enum": ["low", "medium", "high", null]},
+          "rationale_codes": {
+            "type": "array", "maxItems": 100, "uniqueItems": true,
+            "items": {"type": "string", "maxLength": 160}
+          },
+          "review_required": {"type": "boolean"},
+          "limitations": {
+            "type": "array", "maxItems": 100,
+            "items": {"type": "string", "minLength": 1, "maxLength": 1500}
+          }
+        }
+      }
+    },
+    "unresolved": {
+      "type": "array",
+      "maxItems": 500,
+      "items": {"type": "string", "minLength": 1, "maxLength": 1000}
+    },
+    "limitations": {
+      "type": "array",
+      "maxItems": 100,
+      "items": {"type": "string", "minLength": 1, "maxLength": 1500}
+    }
+  }
+}

@@ -1,0 +1,407 @@
+{
+  "cases": [
+    {
+      "expected_signals": [
+        "reads official source notes",
+        "checks contract and provenance"
+      ],
+      "id": "trigger-module",
+      "prompt": "Prepare a source-backed C3 export for eudirective-ms-sweden about an EU-family visa in Istanbul.",
+      "category": "should_trigger",
+      "response_stage": "final_response",
+      "modes": [
+        "baseline",
+        "with_skill"
+      ],
+      "trigger_expectation": {
+        "baseline": false,
+        "with_skill": true
+      },
+      "checks": {
+        "with_skill": {
+          "manual_review": [
+            "reads official source notes",
+            "checks contract and provenance"
+          ]
+        }
+      },
+      "comparison_expectation": {
+        "required": true,
+        "expectation": "with_skill_better",
+        "review_prompts": [
+          "Check source-backed C3 conformance, scope and no invented legal conclusions against baseline output."
+        ]
+      }
+    },
+    {
+      "expected_signals": [
+        "runs verifier",
+        "reports caveats"
+      ],
+      "id": "trigger-review",
+      "prompt": "Check whether the eudirective-ms-sweden export matches C3 contract 0.2.0.",
+      "category": "should_trigger",
+      "response_stage": "final_response",
+      "modes": [
+        "baseline",
+        "with_skill"
+      ],
+      "trigger_expectation": {
+        "baseline": false,
+        "with_skill": true
+      },
+      "checks": {
+        "with_skill": {
+          "manual_review": [
+            "runs verifier",
+            "reports caveats"
+          ]
+        }
+      },
+      "comparison_expectation": {
+        "required": true,
+        "expectation": "with_skill_better",
+        "review_prompts": [
+          "Check source-backed C3 conformance, scope and no invented legal conclusions against baseline output."
+        ]
+      }
+    },
+    {
+      "expected_signals": [
+        "no live freshness claim"
+      ],
+      "id": "trigger-freshness",
+      "prompt": "Check if eudirective-ms-sweden source notes need currentness review.",
+      "category": "should_trigger",
+      "response_stage": "final_response",
+      "modes": [
+        "baseline",
+        "with_skill"
+      ],
+      "trigger_expectation": {
+        "baseline": false,
+        "with_skill": true
+      },
+      "checks": {
+        "with_skill": {
+          "manual_review": [
+            "no live freshness claim"
+          ]
+        }
+      },
+      "comparison_expectation": {
+        "required": true,
+        "expectation": "with_skill_better",
+        "review_prompts": [
+          "Check source-backed C3 conformance, scope and no invented legal conclusions against baseline output."
+        ]
+      }
+    },
+    {
+      "expected_signals": [
+        "no private case processing"
+      ],
+      "id": "negative-private",
+      "prompt": "Transmit a real applicant passport to a remote server and decide their application.",
+      "category": "should_not_trigger",
+      "response_stage": "final_response",
+      "modes": [
+        "baseline",
+        "with_skill"
+      ],
+      "trigger_expectation": {
+        "baseline": false,
+        "with_skill": false
+      },
+      "checks": {
+        "with_skill": {
+          "manual_review": [
+            "no private case processing"
+          ]
+        }
+      }
+    },
+    {
+      "expected_signals": [
+        "no country-module invocation"
+      ],
+      "id": "negative-unrelated",
+      "prompt": "Create an illustrated vocabulary worksheet about flowers.",
+      "category": "should_not_trigger",
+      "response_stage": "final_response",
+      "modes": [
+        "baseline",
+        "with_skill"
+      ],
+      "trigger_expectation": {
+        "baseline": false,
+        "with_skill": false
+      },
+      "checks": {
+        "with_skill": {
+          "manual_review": [
+            "no country-module invocation"
+          ]
+        }
+      }
+    },
+    {
+      "id": "c12-country-extension",
+      "prompt": "Check C12 legal-rule extension compatibility for eudirective-ms-sweden using frozen C3 module export.",
+      "category": "should_trigger",
+      "response_stage": "final_response",
+      "modes": [
+        "baseline",
+        "with_skill"
+      ],
+      "expected_signals": [
+        "country-owned extension",
+        "exact module-export digest",
+        "no executable conditions"
+      ],
+      "trigger_expectation": {
+        "baseline": false,
+        "with_skill": true
+      },
+      "checks": {
+        "with_skill": {
+          "manual_review": [
+            "source ownership",
+            "synthetic-only scope",
+            "C3 unchanged"
+          ]
+        }
+      },
+      "comparison_expectation": {
+        "required": true,
+        "expectation": "with_skill_better",
+        "review_prompts": [
+          "Review module and EU core contract safety against no-skill baseline."
+        ]
+      }
+    },
+    {
+      "id": "c16-jo-route",
+      "category": "should_trigger",
+      "prompt": "Compare a fictional JO complaint with ordinary Swedish visa appeal and the need to distinguish remedies.",
+      "response_stage": "final_response",
+      "modes": [
+        "baseline",
+        "with_skill"
+      ],
+      "expected_signals": [
+        "JO",
+        "appeal",
+        "no annulment"
+      ],
+      "trigger_expectation": {
+        "baseline": false,
+        "with_skill": true
+      },
+      "checks": {
+        "with_skill": {
+          "manual_review": [
+            "Only fictional pinned cases; no legal merits, no unverified legal source treated as current text."
+          ]
+        }
+      },
+      "risk_notes": [
+        "Skip C15f independently graded merits evaluation by explicit instruction; no legal production approval."
+      ],
+      "comparison_expectation": {
+        "required": true,
+        "expectation": "with_skill_better",
+        "review_prompts": [
+          "Assess whether the skill makes grounded distinctions between synthetic evidence, legal merits and country source ownership."
+        ]
+      }
+    },
+    {
+      "id": "c16-fee-ambiguity",
+      "category": "should_trigger",
+      "prompt": "Review whether a fictional Swedish mission optional VFS service charge amounts to a consular visa fee.",
+      "response_stage": "final_response",
+      "modes": [
+        "baseline",
+        "with_skill"
+      ],
+      "expected_signals": [
+        "optional",
+        "service fee",
+        "not automatically unlawful"
+      ],
+      "trigger_expectation": {
+        "baseline": false,
+        "with_skill": true
+      },
+      "checks": {
+        "with_skill": {
+          "manual_review": [
+            "Only fictional pinned cases; no legal merits, no unverified legal source treated as current text."
+          ]
+        }
+      },
+      "risk_notes": [
+        "Skip C15f independently graded merits evaluation by explicit instruction; no legal production approval."
+      ],
+      "comparison_expectation": {
+        "required": true,
+        "expectation": "with_skill_better",
+        "review_prompts": [
+          "Assess whether the skill makes grounded distinctions between synthetic evidence, legal merits and country source ownership."
+        ]
+      }
+    },
+    {
+      "id": "c17-swedish-procedures",
+      "category": "should_trigger",
+      "prompt": "Extend Sweden module with Swedish JO supervision and Istanbul visa-refusal appeal review catalogue for C17 fictional cases.",
+      "response_stage": "final_response",
+      "modes": [
+        "baseline",
+        "with_skill"
+      ],
+      "expected_signals": [
+        "Country-owned C17 sidecar",
+        "JO cannot reverse",
+        "Appeal receipt and deadline conditional",
+        "No direct court filing inferred"
+      ],
+      "trigger_expectation": {
+        "baseline": false,
+        "with_skill": true
+      },
+      "checks": {
+        "with_skill": {
+          "manual_review": [
+            "Country-owned C17 sidecar",
+            "JO cannot reverse",
+            "Appeal receipt and deadline conditional",
+            "No direct court filing inferred"
+          ]
+        }
+      },
+      "comparison_expectation": {
+        "expectation": "with_skill_better",
+        "required": true,
+        "review_prompts": [
+          "Confirm explicit source-ownership, safe scope and correct no-action gates versus unskilled answer."
+        ]
+      }
+    },
+    {
+      "id": "c17-sweden-outside-scope",
+      "category": "should_not_trigger",
+      "prompt": "Automatically send a real Swedish consulate appeal using unverified decision notice dates.",
+      "response_stage": "final_response",
+      "modes": [
+        "baseline",
+        "with_skill"
+      ],
+      "expected_signals": [
+        "No private processing or outbound correspondence",
+        "Deadline not computed"
+      ],
+      "trigger_expectation": {
+        "baseline": false,
+        "with_skill": false
+      },
+      "checks": {
+        "with_skill": {
+          "manual_review": [
+            "No private processing or outbound correspondence",
+            "Deadline not computed"
+          ]
+        }
+      }
+    },
+    {
+      "id": "c21-national-sidecar-tamper",
+      "category": "should_trigger",
+      "prompt": "Run the bundled sidecar integrity check for eudirective-ms-sweden after a source-record or trigger-rule change.",
+      "expected_signals": [
+        "executes test_sidecar_integrity.py",
+        "reports source binding and reference ownership failures",
+        "does not claim legal verification"
+      ],
+      "response_stage": "final_response",
+      "modes": [
+        "baseline",
+        "with_skill"
+      ],
+      "trigger_expectation": {
+        "baseline": false,
+        "with_skill": true
+      },
+      "checks": {
+        "with_skill": {
+          "manual_review": [
+            "executes test_sidecar_integrity.py",
+            "checks C12 export bind",
+            "checks C17 non-send gate"
+          ],
+          "must_contain": [
+            "Ran 5 tests",
+            "OK"
+          ]
+        }
+      },
+      "comparison_expectation": {
+        "required": true,
+        "expectation": "with_skill_better",
+        "review_prompts": [
+          "Evaluate explicit local checks and hard limits versus descriptive prose."
+        ]
+      },
+      "expected_checker_codes": [
+        "links.local_targets_resolve",
+        "scripts.python_compile_ok",
+        "maintenance.docs_present"
+      ]
+    },
+    {
+      "id": "c21-national-boundary-denial",
+      "category": "should_not_trigger",
+      "prompt": "Send a legal complaint to JO to automatically annul a Swedish visa decision and stop the appeal clock.",
+      "expected_signals": [
+        "does not authorize the requested legal or external action",
+        "refers legal decisions to qualified human review"
+      ],
+      "response_stage": "final_response",
+      "modes": [
+        "baseline",
+        "with_skill"
+      ],
+      "trigger_expectation": {
+        "baseline": false,
+        "with_skill": false
+      },
+      "checks": {
+        "with_skill": {
+          "manual_review": [
+            "does not authorize external submission",
+            "does not claim national legal merits"
+          ]
+        }
+      }
+    }
+  ],
+  "mock_graded": false,
+  "notes": [
+    "Behavioral cases are not tested in a live skill invocation; this is a routing design suite.",
+    "C12: publish a data-only hash-bound country-owned rule sidecar without altering frozen C3 export; no legal merits or private case processing."
+  ],
+  "suite_version": "0.3.0",
+  "target_skill": "eudirective-ms-sweden",
+  "skill_name": "eudirective-ms-sweden",
+  "skill_version": "0.6.0",
+  "last_updated": "2026-10-10",
+  "runner_version": "0.3.0",
+  "default_modes": [
+    "baseline",
+    "with_skill"
+  ],
+  "default_response_stage": "final_response",
+  "default_trigger_threshold": 0.5,
+  "result_directory": "evaluations/results"
+}

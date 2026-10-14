@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Validated analysis-to-suggestion handoff v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["engine_version", "case_id", "bindings", "handoff_status", "legal_conclusion_status", "eligible_attack_angles", "eligible_routes", "rejected", "unresolved", "limitations"],
+  "properties": {
+    "engine_version": {"const": "0.1.0"},
+    "case_id": {"type": "string", "minLength": 1, "maxLength": 160},
+    "bindings": {
+      "type": "object", "additionalProperties": false,
+      "required": ["case_sha256", "c5c_sha256", "c5d_sha256", "element_bundle_sha256", "review_record_sha256", "module_bindings"],
+      "properties": {
+        "case_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "c5c_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "c5d_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "element_bundle_sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+        "review_record_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "module_bindings": {"type": "array", "maxItems": 30, "items": {"type": "object"}}
+      }
+    },
+    "handoff_status": {"enum": ["ready", "blocked", "empty"]},
+    "legal_conclusion_status": {"const": "not_determined"},
+    "eligible_attack_angles": {
+      "type": "array", "maxItems": 500,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["attack_angle_id", "origin", "issue_type", "basis_layer", "supporting_finding_refs", "source_refs", "route_refs", "review_rationale"],
+        "properties": {
+          "attack_angle_id": {"type": "string", "minLength": 1, "maxLength": 160},
+          "origin": {"enum": ["core_catalog", "module_record"]},
+          "issue_type": {"type": "string", "minLength": 1, "maxLength": 160},
+          "basis_layer": {"enum": ["eu_common", "national", "local_operational"]},
+          "supporting_finding_refs": {"type": "array", "uniqueItems": true, "items": {"type": "string", "maxLength": 160}},
+          "source_refs": {"type": "array", "uniqueItems": true, "items": {"type": "string", "maxLength": 160}},
+          "route_refs": {"type": "array", "uniqueItems": true, "items": {"type": "string", "maxLength": 160}},
+          "review_rationale": {"type": "string", "minLength": 10, "maxLength": 2000}
+        }
+      }
+    },
+    "eligible_routes": {
+      "type": "array", "maxItems": 100,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["route_ref", "route_origin", "authority_ref", "authority_level", "powers", "limits", "source_refs", "review_rationale"],
+        "properties": {
+          "route_ref": {"type": "string", "minLength": 1, "maxLength": 160},
+          "route_origin": {"enum": ["core", "module"]},
+          "authority_ref": {"type": "string", "minLength": 1, "maxLength": 160},
+          "authority_level": {"type": "string", "minLength": 1, "maxLength": 100},
+          "powers": {"type": "array", "items": {"type": "string", "maxLength": 1000}},
+          "limits": {"type": "array", "items": {"type": "string", "maxLength": 1000}},
+          "source_refs": {"type": "array", "uniqueItems": true, "items": {"type": "string", "maxLength": 160}},
+          "review_rationale": {"type": "string", "minLength": 10, "maxLength": 2000}
+        }
+      }
+    },
+    "rejected": {"type": "array", "maxItems": 600, "items": {"type": "string", "minLength": 1, "maxLength": 1000}},
+    "unresolved": {"type": "array", "maxItems": 600, "items": {"type": "string", "minLength": 1, "maxLength": 1000}},
+    "limitations": {"type": "array", "maxItems": 100, "items": {"type": "string", "minLength": 1, "maxLength": 1500}}
+  }
+}

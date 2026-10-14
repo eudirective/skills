@@ -1,0 +1,58 @@
+{
+  "contract_version": "0.2.0",
+  "case_id": "CASE-C3-FRONTIER-TOPOLOGY",
+  "purpose": "C3 topology/conformance fixture only",
+  "procedure_type": "entry_visa",
+  "procedure_stage": "pre_lodging",
+  "user_objective": "test core contracts",
+  "geography": {
+    "nationality": "XX",
+    "residence_state": "SE",
+    "work_state": "DE",
+    "intended_residence_state": "SE",
+    "application_country": "XX",
+    "deciding_state": "SE",
+    "representing_state": null,
+    "document_issuing_country": "XX",
+    "challenged_authority_state": null
+  },
+  "facts": [
+    {
+      "fact_id": "fact:appointment-requested",
+      "category": "procedural_event",
+      "value": "appointment requested",
+      "provenance": {
+        "kind": "user_assertion",
+        "source_ref": null
+      },
+      "sensitivity": "analysis"
+    }
+  ],
+  "module_requests": [
+    {
+      "request_id": "req:se-res",
+      "family": "member_state",
+      "jurisdiction": "SE",
+      "role": "residence_state",
+      "required": true,
+      "destination_state": null
+    },
+    {
+      "request_id": "req:de-work",
+      "family": "member_state",
+      "jurisdiction": "DE",
+      "role": "work_state",
+      "required": true,
+      "destination_state": null
+    },
+    {
+      "request_id": "req:xx-local",
+      "family": "applicant_country",
+      "jurisdiction": "XX",
+      "role": "application_context",
+      "required": true,
+      "destination_state": "SE"
+    }
+  ],
+  "privacy_classification": "synthetic"
+}

@@ -1,0 +1,28 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "type":"object", "additionalProperties":false,
+  "required":["c21_cohort_version","status","cohort_size","count_method","minimum_visible_cell","remedy_category_case_counts","suppression","risk_flags","external_disclosure_authorized","human_review_required","private_data_enabled"],
+  "properties":{
+    "c21_cohort_version":{"const":"0.1.0"},
+    "status":{"const":"fixed_fictional_cohort_preview_only"},
+    "cohort_size":{"const":8},
+    "count_method":{"const":"case_presence_once_per_category"},
+    "minimum_visible_cell":{"const":3},
+    "remedy_category_case_counts":{"type":"object","minProperties":1,"maxProperties":7,"additionalProperties":false,
+      "properties":{
+        "administrative_appeal_then_judicial_referral":{"type":"integer","minimum":3,"maximum":8},
+        "administrative_clarification":{"type":"integer","minimum":3,"maximum":8},
+        "operational_contact":{"type":"integer","minimum":3,"maximum":8},
+        "informal_problem_solving":{"type":"integer","minimum":3,"maximum":8},
+        "supervisory_complaint":{"type":"integer","minimum":3,"maximum":8},
+        "eu_law_enforcement_complaint":{"type":"integer","minimum":3,"maximum":8},
+        "evidence_acquisition":{"type":"integer","minimum":3,"maximum":8}
+      }
+    },
+    "suppression":{"type":"string","maxLength":150},
+    "risk_flags":{"type":"array","minItems":4,"maxItems":12,"uniqueItems":true,"items":{"type":"string","minLength":1,"maxLength":150}},
+    "external_disclosure_authorized":{"const":false},
+    "human_review_required":{"const":true},
+    "private_data_enabled":{"const":false}
+  }
+}

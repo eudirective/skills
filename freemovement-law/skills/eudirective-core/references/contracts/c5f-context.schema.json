@@ -1,0 +1,384 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "C5f reviewer assessments, baseline comparison, relations and conditional chains v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "context_version",
+    "case_id",
+    "objective_id",
+    "bindings",
+    "review",
+    "baseline_comparison",
+    "candidate_assessments",
+    "relations",
+    "sequences"
+  ],
+  "properties": {
+    "context_version": {
+      "const": "0.1.0"
+    },
+    "case_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$",
+      "maxLength": 160
+    },
+    "objective_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$",
+      "maxLength": 160
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "reviewer_ref",
+        "identity_assurance",
+        "rationale"
+      ],
+      "properties": {
+        "reviewer_ref": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$",
+          "maxLength": 160
+        },
+        "identity_assurance": {
+          "const": "unverified_local"
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 15,
+          "maxLength": 2000
+        }
+      }
+    },
+    "baseline_comparison": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "baseline_kind",
+          "review_status",
+          "suggestion_id",
+          "rationale"
+        ],
+        "properties": {
+          "baseline_kind": {
+            "enum": [
+              "direct_compliance",
+              "direct_cooperation",
+              "request_clarification",
+              "waiting",
+              "no_action"
+            ]
+          },
+          "review_status": {
+            "enum": [
+              "represented",
+              "not_applicable",
+              "unresolved"
+            ]
+          },
+          "suggestion_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$",
+                "maxLength": 160
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 15,
+            "maxLength": 2000
+          }
+        }
+      }
+    },
+    "candidate_assessments": {
+      "type": "array",
+      "maxItems": 200,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "suggestion_id",
+          "disposition",
+          "assumptions_state",
+          "factual_basis_state",
+          "counterevidence_state",
+          "prerequisites_state",
+          "adverse_effects_state",
+          "ratings",
+          "rating_basis_refs",
+          "review_rationale",
+          "basis_classification"
+        ],
+        "properties": {
+          "suggestion_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$",
+            "maxLength": 160
+          },
+          "disposition": {
+            "enum": [
+              "include",
+              "defer",
+              "reject"
+            ]
+          },
+          "assumptions_state": {
+            "enum": [
+              "current",
+              "changed",
+              "unknown"
+            ]
+          },
+          "factual_basis_state": {
+            "enum": [
+              "reviewed",
+              "unverified",
+              "contradicted"
+            ]
+          },
+          "counterevidence_state": {
+            "enum": [
+              "reviewed_no_material_conflict",
+              "material_conflict",
+              "not_reviewed"
+            ]
+          },
+          "prerequisites_state": {
+            "enum": [
+              "satisfied",
+              "not_satisfied",
+              "unknown"
+            ]
+          },
+          "adverse_effects_state": {
+            "enum": [
+              "clear",
+              "risk_present",
+              "unknown"
+            ]
+          },
+          "ratings": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "urgency",
+              "evidentiary_value",
+              "reversibility",
+              "burden_cost",
+              "systemic_value",
+              "legal_support_strength",
+              "remedy_power",
+              "route_compatibility"
+            ],
+            "properties": {
+              "urgency": {
+                "enum": [
+                  "high",
+                  "medium",
+                  "low",
+                  "unknown"
+                ]
+              },
+              "evidentiary_value": {
+                "enum": [
+                  "high",
+                  "medium",
+                  "low",
+                  "unknown"
+                ]
+              },
+              "reversibility": {
+                "enum": [
+                  "high",
+                  "medium",
+                  "low",
+                  "unknown"
+                ]
+              },
+              "burden_cost": {
+                "enum": [
+                  "high",
+                  "medium",
+                  "low",
+                  "unknown"
+                ]
+              },
+              "systemic_value": {
+                "enum": [
+                  "high",
+                  "medium",
+                  "low",
+                  "unknown"
+                ]
+              },
+              "legal_support_strength": {
+                "enum": [
+                  "high",
+                  "medium",
+                  "low",
+                  "unknown",
+                  "not_applicable"
+                ]
+              },
+              "remedy_power": {
+                "enum": [
+                  "high",
+                  "medium",
+                  "low",
+                  "unknown",
+                  "not_applicable"
+                ]
+              },
+              "route_compatibility": {
+                "enum": [
+                  "compatible",
+                  "incompatible",
+                  "unknown",
+                  "not_applicable"
+                ]
+              }
+            }
+          },
+          "rating_basis_refs": {
+            "type": "array",
+            "uniqueItems": true,
+            "maxItems": 100,
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$",
+              "maxLength": 160
+            }
+          },
+          "review_rationale": {
+            "type": "string",
+            "minLength": 15,
+            "maxLength": 2000
+          },
+          "basis_classification": {
+            "enum": [
+              "documented_fact_and_review",
+              "strategic_inference",
+              "exploratory_possibility"
+            ]
+          }
+        }
+      }
+    },
+    "relations": {
+      "type": "array",
+      "maxItems": 400,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "first_id",
+          "second_id",
+          "relationship",
+          "rationale"
+        ],
+        "properties": {
+          "first_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$",
+            "maxLength": 160
+          },
+          "second_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$",
+            "maxLength": 160
+          },
+          "relationship": {
+            "enum": [
+              "conflict",
+              "compatible",
+              "precedes",
+              "response_before"
+            ]
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 15,
+            "maxLength": 2000
+          }
+        }
+      }
+    },
+    "sequences": {
+      "type": "array",
+      "maxItems": 50,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "sequence_id",
+          "steps",
+          "purpose",
+          "reassessment_trigger"
+        ],
+        "properties": {
+          "sequence_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$",
+            "maxLength": 160
+          },
+          "steps": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 10,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$",
+              "maxLength": 160
+            }
+          },
+          "purpose": {
+            "type": "string",
+            "minLength": 15,
+            "maxLength": 2000
+          },
+          "reassessment_trigger": {
+            "type": "string",
+            "minLength": 15,
+            "maxLength": 2000
+          }
+        }
+      }
+    },
+    "bindings": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "handoff_sha256",
+        "c5e_context_sha256",
+        "c5e_candidates_sha256"
+      ],
+      "properties": {
+        "handoff_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "c5e_context_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "c5e_candidates_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    }
+  }
+}

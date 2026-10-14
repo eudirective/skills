@@ -1,0 +1,42 @@
+{
+  "model_version": "0.2.0",
+  "bundle_id": "c5b-eu-scope-false",
+  "elements": [
+    {
+      "element_id": "person_status.eu_citizen_status",
+      "value": "established",
+      "supplied_by": "case_workspace",
+      "provenance_kind": "user_assertion"
+    },
+    {
+      "element_id": "movement.cross_border",
+      "value": true,
+      "supplied_by": "case_workspace",
+      "provenance_kind": "user_assertion"
+    },
+    {
+      "element_id": "movement.frontier_worker_context",
+      "value": true,
+      "supplied_by": "case_workspace",
+      "provenance_kind": "user_assertion"
+    },
+    {
+      "element_id": "movement.free_movement_exercised",
+      "value": true,
+      "supplied_by": "case_workspace",
+      "provenance_kind": "user_assertion"
+    },
+    {
+      "element_id": "movement.returnee_context",
+      "value": false,
+      "supplied_by": "case_workspace",
+      "provenance_kind": "user_assertion"
+    },
+    {
+      "element_id": "legal_regime.eu_law_scope_established",
+      "value": false,
+      "supplied_by": "core",
+      "provenance_kind": "mechanical_calculation"
+    }
+  ]
+}

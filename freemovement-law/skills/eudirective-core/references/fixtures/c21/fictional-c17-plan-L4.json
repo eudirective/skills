@@ -1,0 +1,138 @@
+{
+  "milestone": "C17b-c-d",
+  "mode": "fictional_review_only",
+  "case_id": "L4",
+  "procedure_stage": "appeal",
+  "input_digests": {
+    "case": "7949ed2dd2b57168f62140d456f64db0ca1153710e7ef9197aacaf7ed6bcef48",
+    "upstream_c17": "dd956427300673fe66d96935a4cf655f68b1d7ca3953a8a46298aa79df934fc9",
+    "c12": "51d5394f037c4e06915df8ea92a2a1c007cbabbb823e23f63354be603bab25e5",
+    "c13": "d8ac457abe413a8bdab2b7fee6def47bb160de960650cc2208b7258e0adf8b81"
+  },
+  "catalog_digests": {
+    "EU": "584291c8f04c18a1deb79289e1e0250057963568925db88c3a74de9654c26996",
+    "SE": "068d677b2269a4e53f026e2cb8bb0d0933be7caf6fe7be624bc19b6114a5da1e",
+    "TR": "8e15d05a080abfddfce6e8047b011975e9c06b7caeb1286c65e0bea6571d8440"
+  },
+  "source_assurance_warning": "National-law modules contain curated identity notes, not complete authoritative statutes; C1 active Article 2(2)(a) targeted repair does not establish full-source completeness; 21 C1 identity-only notes persist; no real-case merits review.",
+  "legal_violation_status": "not_determined",
+  "verified_legal_merits": false,
+  "send_authorized": false,
+  "requires_human_review": true,
+  "c17_questions": [
+    {
+      "rule_id": "se:c12:visa-appeal-timing",
+      "topic": "Swedish visa refusal: notice and filing-event review",
+      "citations_for_human_check": [
+        {
+          "source_id": "se:src:appeal-istanbul",
+          "pinpoint_hint": "Published appeal delivery guidance and three-week ordinary time reference; special-rule assessment required.",
+          "assurance": "country_source_summary_only"
+        },
+        {
+          "source_id": "se:src:admin-act",
+          "pinpoint_hint": "Applicable appeal, timing and service provisions subject to special law.",
+          "assurance": "country_source_summary_only"
+        }
+      ],
+      "factual_items_for_verification": [
+        "case:procedure_stage",
+        "fact:visa_refusal_exists",
+        "fact:decision_notice_date",
+        "fact:appeal_submission_date",
+        "fact:appeal_received_by_correct_authority"
+      ],
+      "exception_questions": [
+        "Confirm the operative notification/service event, exceptional extensions, governing appeal period, holidays and the decision-maker; no legal expiry is computed."
+      ],
+      "question": "Please clarify the factual and procedural basis for the matter described as: Swedish visa refusal: notice and filing-event review.",
+      "legal_violation_status": "not_determined"
+    }
+  ],
+  "remedy_candidates": [
+    {
+      "remedy_id": "se:c17:visa-refusal-appeal",
+      "category": "administrative_appeal_then_judicial_referral",
+      "authority_ref": "se:authority:istanbul-consulate",
+      "priority_class": "deadline_preservation_review_first",
+      "deadline": {
+        "kind": "conditional_published_guidance",
+        "rule": "Sweden Abroad Istanbul reports three weeks from receipt of refusal; operative statutory deadline and service rules must be checked.",
+        "trigger_event": "receipt_of_appealable_refusal",
+        "calculation": "human_only"
+      },
+      "prerequisites_to_verify": [
+        "Obtain and independently verify the appealable refusal decision and date actually received",
+        "Confirm deciding authority, service rules, any extensions and applicable special-law timetable",
+        "Identify requested change and basis; determine if appeal has already been filed"
+      ],
+      "powers_to_verify": [
+        "Reconsider a visa refusal at the consulate; if unchanged, forward the appeal to the Swedish Migration Court under published guidance"
+      ],
+      "limits": [
+        "Reconsideration/forwarding is not a guaranteed reversal",
+        "A supervisory complaint does not replace or stay this appeal deadline",
+        "This catalogue does not authorize direct court filing"
+      ],
+      "evidence_to_preserve": [
+        "Written refusal, proof of delivery/notification, recorded appeal dispatch and receipt, file reference, substantive supporting documents"
+      ],
+      "source_refs": [
+        "se:src:appeal-istanbul",
+        "se:src:admin-act"
+      ],
+      "filing_channel_for_review": "Published mission appeal channel to consulate; independently verify current mode of filing.",
+      "intended_outcome_for_review": "Preserve a potentially available appeal and seek review of the refusal; exact legal viability requires review.",
+      "matched_rule_ids": [
+        "se:c12:visa-appeal-timing"
+      ],
+      "jurisdiction": "SE",
+      "status": "candidate_for_human_review",
+      "human_review_required": true,
+      "outstanding_checks": [
+        "Verify jurisdiction and present official source text",
+        "Verify factual predicates and contrary evidence",
+        "Verify current authority competence, prerequisites and deadlines",
+        "Check whether this route affects or leaves untouched other remedies"
+      ]
+    }
+  ],
+  "excluded_routes": [],
+  "parallelism_warnings": [
+    "Candidate order is a review queue, not a recommendation or sequence of legally required steps.",
+    "Clarification, SOLVIT, Commission or JO complaints do not automatically suspend national appeal deadlines.",
+    "Do not calculate dates, send correspondence, or infer violation or eligibility from a fictional source-anchored predicate.",
+    "Review potentially urgent formal appeal independently and in parallel; no waiting step is authorized."
+  ],
+  "correspondence_drafts": [
+    {
+      "remedy_id": "se:c17:visa-refusal-appeal",
+      "format": "administrative_appeal_then_judicial_referral",
+      "recipient_placeholder": "[VERIFY CURRENT COMPETENT AUTHORITY]",
+      "text": "DRAFT APPEAL OUTLINE — FICTIONAL REVIEW ONLY / DO NOT SEND\nTo: [VERIFY CURRENT COMPETENT AUTHORITY; NO ADDRESS INSERTED]\nRe: [FICTIONAL L4 — REPLACE WITH HUMAN-VERIFIED REFERENCE ONLY IF AUTHORIZED]\n\nThe fictional review record raises the following matters for verification: Swedish visa refusal: notice and filing-event review.\nThese are unverified allegations and source-qualified questions, not findings.\n\nSubject to confirmation of the appealable decision and service date, I request reconsideration of [DECISION REFERENCE — HUMAN TO VERIFY]. My requested change is [SPECIFY]. If unchanged, please apply the competent forwarding procedure. Please confirm the filing date recorded and any need for additional procedural information.\n\nRelevant source identifiers for a human to inspect: se:src:appeal-istanbul, se:src:admin-act.\nDocuments and dates must be checked independently; attach only material required and lawfully shareable.\nThe recipient, competence, applicable law, filing requirements and deadline remain unverified.\n",
+      "send_authorized": false,
+      "human_review_required": true
+    }
+  ],
+  "decision_gate": "blocked_pending_source_factual_and_human_review",
+  "missing_prerequisites": [
+    "Official current and operative national legislation and any exceptions",
+    "Authenticated communications and independent fact assessment",
+    "Current competent recipient and applicable court/appeal procedure",
+    "Decision service dates, extension/suspension rules and filing proof",
+    "Independent legal-semantic review including unresolved C15f, 21 incomplete C1 source notes, and independent full-source verification",
+    "Private-data authorization and trustworthy human approval before any real use"
+  ],
+  "review_facts": [
+    {
+      "rule_id": "se:c12:visa-appeal-timing",
+      "facts_to_check": [
+        "case:procedure_stage",
+        "fact:visa_refusal_exists",
+        "fact:decision_notice_date",
+        "fact:appeal_submission_date",
+        "fact:appeal_received_by_correct_authority"
+      ]
+    }
+  ]
+}

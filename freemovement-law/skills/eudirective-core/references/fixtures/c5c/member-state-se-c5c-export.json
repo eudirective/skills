@@ -1,0 +1,192 @@
+{
+  "contract_version": "0.2.0",
+  "module_family": "member_state",
+  "module_id": "member-state-se",
+  "jurisdiction": "SE",
+  "module_version": "0.1.0",
+  "pack_version": "0.1.0",
+  "source_records": [
+    {
+      "source_id": "se:src:fixture",
+      "title": "Synthetic Swedish source",
+      "authority": "Sweden fixture authority",
+      "source_type": "fixture",
+      "scope": "synthetic testing only",
+      "language": "en",
+      "verified_at": "2026-10-04T20:00:00Z",
+      "effective_from": null,
+      "effective_to": null,
+      "locator": null,
+      "content_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+      "status": "current",
+      "content_kind": "authoritative_bundled_text",
+      "authenticity_state": "verified_official"
+    }
+  ],
+  "rule_records": [
+    {
+      "rule_id": "se:rule:fixture",
+      "domain": "procedure",
+      "proposition": "Synthetic national rule for contract testing only.",
+      "source_refs": [
+        "se:src:fixture"
+      ],
+      "interpretation_status": "direct_text",
+      "operators": [
+        "exists"
+      ],
+      "effective_from": null,
+      "effective_to": null,
+      "text_source_ref": "se:src:fixture",
+      "support_scope": null,
+      "normative_layer": "national"
+    }
+  ],
+  "authority_records": [
+    {
+      "authority_id": "se:authority:fixture",
+      "name": "Synthetic Swedish authority",
+      "competence": [
+        "fixture competence"
+      ],
+      "powers": [
+        "fixture power"
+      ],
+      "limits": [
+        "fixture only"
+      ],
+      "source_refs": [
+        "se:src:fixture"
+      ],
+      "website": null,
+      "email": null,
+      "telephone": null,
+      "verified_at": "2026-10-04T20:00:00Z"
+    }
+  ],
+  "gap_records": [],
+  "operational_records": [],
+  "deadline_records": [
+    {
+      "deadline_id": "se:deadline:c5c-calendar",
+      "label": "Synthetic C5c ten-day deadline",
+      "kind": "legal_deadline",
+      "trigger_event": "synthetic lodgement event",
+      "calendar": "calendar_days",
+      "timezone": "Europe/Stockholm",
+      "calculation": {
+        "operator": "date_add_days",
+        "amount": 10,
+        "inclusion_rule": "trigger_date_excluded"
+      },
+      "suspension_conditions": [],
+      "extension_conditions": [],
+      "effect_on_other_remedies": "fixture only",
+      "source_refs": [
+        "se:src:fixture"
+      ]
+    },
+    {
+      "deadline_id": "se:deadline:c5c-business",
+      "label": "Synthetic C5c five-business-day deadline",
+      "kind": "legal_deadline",
+      "trigger_event": "synthetic lodgement event",
+      "calendar": "business_days",
+      "timezone": "Europe/Stockholm",
+      "calculation": {
+        "operator": "business_days",
+        "amount": 5,
+        "inclusion_rule": "trigger_date_excluded"
+      },
+      "suspension_conditions": [],
+      "extension_conditions": [],
+      "effect_on_other_remedies": "fixture only",
+      "source_refs": [
+        "se:src:fixture"
+      ]
+    },
+    {
+      "deadline_id": "se:deadline:c5c-calendar-2",
+      "label": "Synthetic C5c five-day notice deadline",
+      "kind": "legal_deadline",
+      "trigger_event": "synthetic notice event",
+      "calendar": "calendar_days",
+      "timezone": "Europe/Stockholm",
+      "calculation": {
+        "operator": "date_add_days",
+        "amount": 5,
+        "inclusion_rule": "trigger_date_excluded"
+      },
+      "suspension_conditions": [],
+      "extension_conditions": [],
+      "effect_on_other_remedies": "fixture only",
+      "source_refs": [
+        "se:src:fixture"
+      ]
+    }
+  ],
+  "route_records": [
+    {
+      "route_id": "se:route:fixture",
+      "label": "Synthetic escalation route",
+      "authority_ref": "se:authority:fixture",
+      "issue_types": [
+        "fixture issue"
+      ],
+      "powers": [
+        "fixture power"
+      ],
+      "limits": [
+        "fixture only"
+      ],
+      "filing_method": "synthetic filing",
+      "form_or_evidence": null,
+      "website": null,
+      "email": null,
+      "telephone": null,
+      "language": "en",
+      "cost_or_fee": null,
+      "legal_basis_refs": [
+        "se:src:fixture"
+      ],
+      "source_refs": [
+        "se:src:fixture"
+      ],
+      "verified_at": "2026-10-04T20:00:00Z"
+    }
+  ],
+  "id_namespace": "se",
+  "attack_angle_records": [
+    {
+      "attack_angle_id": "se:attack:fixture-procedure",
+      "label": "Synthetic national procedural attack angle",
+      "issue_type": "procedural_noncompliance",
+      "basis_layer": "national",
+      "support_status": "reviewed",
+      "prerequisite_element_ids": [
+        "procedure.stage"
+      ],
+      "disqualifier_element_ids": [],
+      "evidence_needs": [
+        "Evidence of the procedural stage."
+      ],
+      "source_refs": [
+        "se:src:fixture"
+      ],
+      "support_scope": "Fixture-only national procedural support.",
+      "severity_hint": "medium",
+      "authority_refs": [
+        "se:authority:fixture"
+      ],
+      "route_refs": [
+        "se:route:fixture"
+      ],
+      "required_completeness_ids": [
+        "check:regime"
+      ],
+      "remedy_categories": [
+        "administrative_escalation"
+      ]
+    }
+  ]
+}

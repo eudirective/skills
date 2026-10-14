@@ -1,0 +1,12 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "type":"object", "additionalProperties":false,
+  "required":["c21_cohort_version","summary_sha256","verification","external_disclosure_authorized","private_data_enabled"],
+  "properties":{
+    "c21_cohort_version":{"const":"0.1.0"},
+    "summary_sha256":{"type":"string","pattern":"^[0-9a-f]{64}$"},
+    "verification":{"const":"pinned_local_fictional_fixture_replay_only_not_authenticated_provenance"},
+    "external_disclosure_authorized":{"const":false},
+    "private_data_enabled":{"const":false}
+  }
+}

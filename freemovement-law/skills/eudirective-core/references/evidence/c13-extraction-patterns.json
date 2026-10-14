@@ -1,0 +1,380 @@
+{
+  "patterns": [
+    {
+      "extractor": "literal",
+      "fact_key": "fact:eu_family_direct_request",
+      "pattern": "As an EU family member I request a direct consular appointment by email\\.",
+      "pattern_id": "l1-request",
+      "source_interpretation": "reported_statement_only",
+      "value": true
+    },
+    {
+      "extractor": "literal",
+      "fact_key": "element:procedure.channel",
+      "pattern": "direct consular appointment by email",
+      "pattern_id": "l1-channel",
+      "source_interpretation": "reported_statement_only",
+      "value": "direct_appointment_email"
+    },
+    {
+      "extractor": "literal",
+      "fact_key": "element:procedure.access_state",
+      "pattern": "[Dd]irect appointment request has been denied",
+      "pattern_id": "l1-denied",
+      "source_interpretation": "reported_statement_only",
+      "value": "denied"
+    },
+    {
+      "extractor": "literal",
+      "fact_key": "element:procedure.access_state",
+      "pattern": "[Dd]irect appointment request has not been denied",
+      "pattern_id": "l1-not-denied",
+      "source_interpretation": "reported_statement_only",
+      "value": "available"
+    },
+    {
+      "extractor": "literal",
+      "fact_key": "fact:mission_requires_vfs_only",
+      "pattern": "[Yy]ou must apply through VFS only",
+      "pattern_id": "l1-vfs-required",
+      "source_interpretation": "reported_statement_only",
+      "value": true
+    },
+    {
+      "extractor": "literal",
+      "fact_key": "fact:mission_requires_vfs_only",
+      "pattern": "[Yy]ou (?:do not|don\\x27t) (?:need to|have to) apply through VFS(?: only)?",
+      "pattern_id": "l1-vfs-not-required",
+      "source_interpretation": "reported_statement_only",
+      "value": false
+    },
+    {
+      "extractor": "literal",
+      "fact_key": "fact:visa_refusal_exists",
+      "pattern": "[Yy]our visa application has been refused",
+      "pattern_id": "l4-refused",
+      "source_interpretation": "reported_statement_only",
+      "value": true
+    },
+    {
+      "extractor": "literal",
+      "fact_key": "fact:visa_refusal_exists",
+      "pattern": "[Yy]our visa application has not been refused",
+      "pattern_id": "l4-not-refused",
+      "source_interpretation": "reported_statement_only",
+      "value": false
+    },
+    {
+      "extractor": "capture_date",
+      "fact_key": "fact:decision_notice_date",
+      "pattern": "[Yy]ou were notified of (?:this |the )?refusal on (?P<date>\\d{4}-\\d{2}-\\d{2})",
+      "pattern_id": "l4-notice",
+      "source_interpretation": "reported_statement_only"
+    },
+    {
+      "extractor": "capture_date",
+      "fact_key": "fact:appeal_submission_date",
+      "pattern": "[Tt]he authority received your appeal on (?P<date>\\d{4}-\\d{2}-\\d{2})",
+      "pattern_id": "l4-received",
+      "source_interpretation": "reported_statement_only"
+    },
+    {
+      "extractor": "literal",
+      "fact_key": "fact:appeal_received_by_correct_authority",
+      "pattern": "[Ww]e confirm receipt of the appeal by the competent appeals intake office",
+      "pattern_id": "l4-office",
+      "source_interpretation": "reported_statement_only",
+      "value": true
+    },
+    {
+      "extractor": "literal",
+      "fact_key": "fact:appeal_received_by_correct_authority",
+      "pattern": "[Ww]e confirm receipt of the appeal by an office without appeal jurisdiction",
+      "pattern_id": "l4-wrong-office",
+      "source_interpretation": "reported_statement_only",
+      "value": false
+    },
+    {
+      "extractor": "literal",
+      "fact_key": "element:procedure.stage",
+      "pattern": "retained residence-card decision",
+      "pattern_id": "l5-stage",
+      "source_interpretation": "reported_statement_only",
+      "value": "residence_card_retention"
+    },
+    {
+      "extractor": "literal",
+      "fact_key": "fact:authority_possesses_information",
+      "pattern": "[Tt]he authority holds the information provided by your former spouse",
+      "pattern_id": "l5-possession",
+      "source_interpretation": "reported_statement_only",
+      "value": true
+    },
+    {
+      "extractor": "literal",
+      "fact_key": "fact:authority_possesses_information",
+      "pattern": "[Tt]he authority does not hold the information provided by your former spouse",
+      "pattern_id": "l5-no-possession",
+      "source_interpretation": "reported_statement_only",
+      "value": false
+    },
+    {
+      "extractor": "literal",
+      "fact_key": "fact:decisive_former_spouse_information",
+      "pattern": "[Ww]e rely on information from your former spouse as decisive for this decision",
+      "pattern_id": "l5-decisive",
+      "source_interpretation": "reported_statement_only",
+      "value": true
+    },
+    {
+      "extractor": "literal",
+      "fact_key": "fact:decisive_former_spouse_information",
+      "pattern": "[Ww]e do not rely on information from your former spouse as decisive for this decision",
+      "pattern_id": "l5-not-decisive",
+      "source_interpretation": "reported_statement_only",
+      "value": false
+    },
+    {
+      "extractor": "literal",
+      "fact_key": "fact:information_requested_predecision",
+      "pattern": "[Bb]efore the decision, I request access to that former-spouse statement",
+      "pattern_id": "l5-request",
+      "source_interpretation": "reported_statement_only",
+      "value": true
+    },
+    {
+      "extractor": "literal",
+      "fact_key": "fact:applicant_cannot_obtain_information",
+      "pattern": "I cannot obtain my former spouse\\x27s statement independently",
+      "pattern_id": "l5-cannot-obtain",
+      "source_interpretation": "reported_statement_only",
+      "value": true
+    },
+    {
+      "extractor": "literal",
+      "fact_key": "fact:applicant_cannot_obtain_information",
+      "pattern": "I can obtain my former spouse\\x27s statement independently",
+      "pattern_id": "l5-can-obtain",
+      "source_interpretation": "reported_statement_only",
+      "value": false
+    },
+    {
+      "extractor": "literal",
+      "fact_key": "fact:authority_communication_state",
+      "pattern": "[Ww]e will not disclose the information before the decision",
+      "pattern_id": "l5-withheld",
+      "source_interpretation": "reported_statement_only",
+      "value": "withheld"
+    },
+    {
+      "extractor": "literal",
+      "fact_key": "fact:authority_communication_state",
+      "pattern": "[Ww]e have communicated the information before the decision",
+      "pattern_id": "l5-communicated",
+      "source_interpretation": "reported_statement_only",
+      "value": "communicated"
+    },
+    {
+      "extractor": "literal",
+      "fact_key": "fact:confidentiality_review_state",
+      "pattern": "[Nn]o assessment of confidentiality has been made",
+      "pattern_id": "l5-conf-no",
+      "source_interpretation": "reported_statement_only",
+      "value": "not_considered"
+    },
+    {
+      "extractor": "literal",
+      "fact_key": "fact:confidentiality_review_state",
+      "pattern": "[Aa]n assessment of confidentiality has been made",
+      "pattern_id": "l5-conf-yes",
+      "source_interpretation": "reported_statement_only",
+      "value": "considered"
+    },
+    {
+      "extractor": "literal",
+      "fact_key": "element:procedure.channel",
+      "pattern": "The\\ VFS\\ channel\\ was\\ used",
+      "pattern_id": "c16-l2-01",
+      "source_interpretation": "reported_statement_only",
+      "value": "vfs"
+    },
+    {
+      "extractor": "literal",
+      "fact_key": "fact:visa_fee_waiver_claimed",
+      "pattern": "The\\ EU\\ family\\ visa\\-fee\\ waiver\\ was\\ claimed",
+      "pattern_id": "c16-l2-02",
+      "source_interpretation": "reported_statement_only",
+      "value": true
+    },
+    {
+      "extractor": "literal",
+      "fact_key": "fact:vfs_service_charge_recorded",
+      "pattern": "The\\ VFS\\ service\\ charge\\ was\\ recorded",
+      "pattern_id": "c16-l2-03",
+      "source_interpretation": "reported_statement_only",
+      "value": true
+    },
+    {
+      "extractor": "literal",
+      "fact_key": "fact:consular_visa_fee_collected",
+      "pattern": "No\\ consular\\ visa\\ fee\\ was\\ collected",
+      "pattern_id": "c16-l2-04",
+      "source_interpretation": "reported_statement_only",
+      "value": false
+    },
+    {
+      "extractor": "literal",
+      "fact_key": "fact:vfs_route_optional",
+      "pattern": "The\\ VFS\\ route\\ was\\ optional",
+      "pattern_id": "c16-l2-05",
+      "source_interpretation": "reported_statement_only",
+      "value": true
+    },
+    {
+      "extractor": "literal",
+      "fact_key": "element:evidence.proof_restriction_status",
+      "pattern": "The\\ proof\\ restriction\\ was\\ asserted",
+      "pattern_id": "c16-l3-01",
+      "source_interpretation": "reported_statement_only",
+      "value": "asserted"
+    },
+    {
+      "extractor": "literal",
+      "fact_key": "fact:exclusive_checklist_claimed",
+      "pattern": "The\\ submitted\\ checklist\\ was\\ presented\\ as\\ exclusive",
+      "pattern_id": "c16-l3-02",
+      "source_interpretation": "reported_statement_only",
+      "value": true
+    },
+    {
+      "extractor": "literal",
+      "fact_key": "fact:alternate_evidence_excluded",
+      "pattern": "The\\ mission\\ declined\\ to\\ consider\\ alternative\\ supporting\\ evidence",
+      "pattern_id": "c16-l3-03",
+      "source_interpretation": "reported_statement_only",
+      "value": true
+    },
+    {
+      "extractor": "literal",
+      "fact_key": "fact:alternate_evidence_offered",
+      "pattern": "Alternative\\ evidence\\ was\\ offered\\ before\\ the\\ review",
+      "pattern_id": "c16-l3-04",
+      "source_interpretation": "reported_statement_only",
+      "value": true
+    },
+    {
+      "extractor": "literal",
+      "fact_key": "element:procedure.access_state",
+      "pattern": "The\\ visa\\ submission\\ was\\ blocked",
+      "pattern_id": "c16-l6-01",
+      "source_interpretation": "reported_statement_only",
+      "value": "blocked"
+    },
+    {
+      "extractor": "literal",
+      "fact_key": "fact:residence_card_demanded_before_visa",
+      "pattern": "A\\ residence\\ card\\ was\\ demanded\\ before\\ the\\ visa\\ application\\ could\\ be\\ lodged",
+      "pattern_id": "c16-l6-02",
+      "source_interpretation": "reported_statement_only",
+      "value": true
+    },
+    {
+      "extractor": "literal",
+      "fact_key": "fact:entry_visa_route_requested",
+      "pattern": "The\\ applicant\\ requested\\ an\\ entry\\ visa",
+      "pattern_id": "c16-l6-03",
+      "source_interpretation": "reported_statement_only",
+      "value": true
+    },
+    {
+      "extractor": "literal",
+      "fact_key": "fact:card_or_visa_exemption_unknown",
+      "pattern": "Whether\\ a\\ card\\ or\\ visa\\ exemption\\ applied\\ was\\ not\\ assessed",
+      "pattern_id": "c16-l6-04",
+      "source_interpretation": "reported_statement_only",
+      "value": true
+    },
+    {
+      "extractor": "literal",
+      "fact_key": "element:procedure.stage",
+      "pattern": "an\\ ombudsman\\ complaint",
+      "pattern_id": "c16-l7-01",
+      "source_interpretation": "reported_statement_only",
+      "value": "ombudsman_complaint"
+    },
+    {
+      "extractor": "literal",
+      "fact_key": "fact:jo_complaint_route_invoked",
+      "pattern": "An\\ ombudsman\\ complaint\\ was\\ requested",
+      "pattern_id": "c16-l7-02",
+      "source_interpretation": "reported_statement_only",
+      "value": true
+    },
+    {
+      "extractor": "literal",
+      "fact_key": "fact:decision_overturn_requested",
+      "pattern": "The\\ complainant\\ asked\\ the\\ JO\\ to\\ overturn\\ a\\ visa\\ decision",
+      "pattern_id": "c16-l7-03",
+      "source_interpretation": "reported_statement_only",
+      "value": true
+    },
+    {
+      "extractor": "literal",
+      "fact_key": "fact:appeal_route_explained",
+      "pattern": "The\\ ordinary\\ appeal\\ pathway\\ was\\ not\\ explained",
+      "pattern_id": "c16-l7-04",
+      "source_interpretation": "reported_statement_only",
+      "value": false
+    },
+    {
+      "extractor": "literal",
+      "fact_key": "element:evidence.proof_restriction_status",
+      "pattern": "The\\ proof\\ restriction\\ was\\ asserted",
+      "pattern_id": "c16-l8-01",
+      "source_interpretation": "reported_statement_only",
+      "value": "asserted"
+    },
+    {
+      "extractor": "literal",
+      "fact_key": "fact:paper_original_only_requested",
+      "pattern": "A\\ paper\\ original\\ was\\ required",
+      "pattern_id": "c16-l8-02",
+      "source_interpretation": "reported_statement_only",
+      "value": true
+    },
+    {
+      "extractor": "literal",
+      "fact_key": "fact:format_rejection_claimed",
+      "pattern": "The\\ electronic\\ population\\-register\\ extract\\ was\\ rejected\\ for\\ lack\\ of\\ a\\ paper\\ original",
+      "pattern_id": "c16-l8-03",
+      "source_interpretation": "reported_statement_only",
+      "value": true
+    },
+    {
+      "extractor": "literal",
+      "fact_key": "fact:electronic_register_extract_offered",
+      "pattern": "An\\ electronic\\ population\\-register\\ extract\\ was\\ offered",
+      "pattern_id": "c16-l8-04",
+      "source_interpretation": "reported_statement_only",
+      "value": true
+    },
+    {
+      "extractor": "literal",
+      "fact_key": "fact:issuer_source_claimed",
+      "pattern": "The\\ claimed\\ issuing\\ platform\\ was\\ Türkiye\\ e\\-Devlet",
+      "pattern_id": "c16-l8-05",
+      "source_interpretation": "reported_statement_only",
+      "value": "turkiye_e_devlet"
+    },
+    {
+      "extractor": "literal",
+      "fact_key": "fact:electronic_record_authenticity_unverified",
+      "pattern": "Electronic\\ record\\ authenticity\\ is\\ unverified",
+      "pattern_id": "c16-l8-06",
+      "source_interpretation": "reported_statement_only",
+      "value": true
+    }
+  ],
+  "patterns_version": "0.1.0",
+  "scope": "bounded_fictional_English_constructions_only"
+}

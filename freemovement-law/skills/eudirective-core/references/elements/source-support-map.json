@@ -1,0 +1,916 @@
+{
+  "mapping_rule": "Coverage tags index which model objects a source may support or constrain. This map is a source-to-model coverage index, not proof that a source entails any particular legal conclusion; substantive use remains source- and context-dependent. The Deldwyn 2026 addition is a mapping candidate for existing 0.2.0 elements, not an automatic new C2 rule.",
+  "model_version": "0.2.0",
+  "records": [
+    {
+      "coverage_tags": [
+        "charter"
+      ],
+      "representation_kind": "authoritative_bundled_text",
+      "source_id": "eu:12012p",
+      "targets": [
+        {
+          "support_role": "foundation",
+          "target_id": "legal_regime.charter",
+          "target_type": "element"
+        },
+        {
+          "support_role": "boundary",
+          "target_id": "int.charter.scope",
+          "target_type": "interaction"
+        }
+      ],
+      "verification_scope": "full stored representation with official-source verification metadata"
+    },
+    {
+      "coverage_tags": [
+        "free_movement_directive"
+      ],
+      "representation_kind": "authoritative_bundled_text",
+      "source_id": "eu:32004l0038",
+      "targets": [
+        {
+          "support_role": "foundation",
+          "target_id": "legal_regime.directive_2004_38",
+          "target_type": "element"
+        },
+        {
+          "support_role": "foundation",
+          "target_id": "movement.free_movement_exercised",
+          "target_type": "element"
+        }
+      ],
+      "verification_scope": "full stored representation with official-source verification metadata"
+    },
+    {
+      "coverage_tags": [
+        "appointments",
+        "procedure",
+        "visa_code"
+      ],
+      "representation_kind": "authoritative_bundled_text",
+      "source_id": "eu:32009r0810",
+      "targets": [
+        {
+          "support_role": "operational",
+          "target_id": "procedure.access_state",
+          "target_type": "element"
+        },
+        {
+          "support_role": "foundation",
+          "target_id": "procedure.stage",
+          "target_type": "element"
+        },
+        {
+          "support_role": "foundation",
+          "target_id": "legal_regime.visa_code",
+          "target_type": "element"
+        }
+      ],
+      "verification_scope": "full stored representation with official-source verification metadata"
+    },
+    {
+      "coverage_tags": [
+        "informal_redress",
+        "soft_law",
+        "solvit"
+      ],
+      "representation_kind": "authoritative_bundled_text",
+      "source_id": "eu:32013h0461",
+      "targets": [
+        {
+          "support_role": "operational",
+          "target_id": "procedure.complaint_path_state",
+          "target_type": "element"
+        },
+        {
+          "support_role": "context",
+          "target_id": "int.softlaw.weight",
+          "target_type": "interaction"
+        }
+      ],
+      "verification_scope": "full stored representation with official-source verification metadata"
+    },
+    {
+      "coverage_tags": [
+        "law_enforcement_data_protection"
+      ],
+      "representation_kind": "authoritative_bundled_text",
+      "source_id": "eu:32016l0680",
+      "targets": [
+        {
+          "support_role": "context",
+          "target_id": "legal_regime.gdpr",
+          "target_type": "element"
+        }
+      ],
+      "verification_scope": "full stored representation with official-source verification metadata"
+    },
+    {
+      "coverage_tags": [
+        "schengen_borders_code"
+      ],
+      "representation_kind": "authoritative_bundled_text",
+      "source_id": "eu:32016r0399",
+      "targets": [
+        {
+          "support_role": "foundation",
+          "target_id": "legal_regime.schengen",
+          "target_type": "element"
+        }
+      ],
+      "verification_scope": "full stored representation with official-source verification metadata"
+    },
+    {
+      "coverage_tags": [
+        "data_minimisation",
+        "data_protection",
+        "gdpr"
+      ],
+      "representation_kind": "authoritative_bundled_text",
+      "source_id": "eu:32016r0679",
+      "targets": [
+        {
+          "support_role": "boundary",
+          "target_id": "privacy_control.purpose",
+          "target_type": "element"
+        },
+        {
+          "support_role": "foundation",
+          "target_id": "legal_regime.gdpr",
+          "target_type": "element"
+        }
+      ],
+      "verification_scope": "full stored representation with official-source verification metadata"
+    },
+    {
+      "coverage_tags": [
+        "visa_requirement_lists"
+      ],
+      "representation_kind": "authoritative_bundled_text",
+      "source_id": "eu:32018r1806",
+      "targets": [
+        {
+          "support_role": "context",
+          "target_id": "legal_regime.visa_code",
+          "target_type": "element"
+        }
+      ],
+      "verification_scope": "full stored representation with official-source verification metadata"
+    },
+    {
+      "coverage_tags": [
+        "commission_implementation_material"
+      ],
+      "representation_kind": "authoritative_bundled_text",
+      "source_id": "eu:52014sc0284",
+      "targets": [
+        {
+          "support_role": "context",
+          "target_id": "source.verification_scope",
+          "target_type": "element"
+        }
+      ],
+      "verification_scope": "full stored representation with official-source verification metadata"
+    },
+    {
+      "coverage_tags": [
+        "direct_effect"
+      ],
+      "representation_kind": "verified_source_note",
+      "source_id": "eu:61962cj0026",
+      "targets": [
+        {
+          "support_role": "foundation",
+          "target_id": "legal_principle.id",
+          "target_type": "element"
+        },
+        {
+          "support_role": "foundation",
+          "target_id": "int.principle.source",
+          "target_type": "interaction"
+        }
+      ],
+      "verification_scope": "identity/version and indexed proposition scope; exact wording/pinpoints require official source"
+    },
+    {
+      "coverage_tags": [
+        "primacy"
+      ],
+      "representation_kind": "verified_source_note",
+      "source_id": "eu:61964cj0006",
+      "targets": [
+        {
+          "support_role": "foundation",
+          "target_id": "legal_principle.id",
+          "target_type": "element"
+        }
+      ],
+      "verification_scope": "identity/version and indexed proposition scope; exact wording/pinpoints require official source"
+    },
+    {
+      "coverage_tags": [
+        "equivalence_effectiveness"
+      ],
+      "representation_kind": "verified_source_note",
+      "source_id": "eu:61976cj0033",
+      "targets": [
+        {
+          "support_role": "foundation",
+          "target_id": "legal_principle.id",
+          "target_type": "element"
+        }
+      ],
+      "verification_scope": "identity/version and indexed proposition scope; exact wording/pinpoints require official source"
+    },
+    {
+      "coverage_tags": [
+        "procedural_autonomy_effectiveness"
+      ],
+      "representation_kind": "verified_source_note",
+      "source_id": "eu:61976cj0045",
+      "targets": [
+        {
+          "support_role": "foundation",
+          "target_id": "legal_principle.id",
+          "target_type": "element"
+        }
+      ],
+      "verification_scope": "identity/version and indexed proposition scope; exact wording/pinpoints require official source"
+    },
+    {
+      "coverage_tags": [
+        "primacy_disapplication"
+      ],
+      "representation_kind": "verified_source_note",
+      "source_id": "eu:61977cj0106",
+      "targets": [
+        {
+          "support_role": "foundation",
+          "target_id": "legal_principle.id",
+          "target_type": "element"
+        }
+      ],
+      "verification_scope": "identity/version and indexed proposition scope; exact wording/pinpoints require official source"
+    },
+    {
+      "coverage_tags": [
+        "soft_law_recommendations"
+      ],
+      "representation_kind": "verified_source_note",
+      "source_id": "eu:61988cj0322",
+      "targets": [
+        {
+          "support_role": "foundation",
+          "target_id": "int.softlaw.weight",
+          "target_type": "interaction"
+        }
+      ],
+      "verification_scope": "identity/version and indexed proposition scope; exact wording/pinpoints require official source"
+    },
+    {
+      "coverage_tags": [
+        "proportionality"
+      ],
+      "representation_kind": "verified_source_note",
+      "source_id": "eu:61988cj0331",
+      "targets": [
+        {
+          "support_role": "foundation",
+          "target_id": "legal_principle.id",
+          "target_type": "element"
+        }
+      ],
+      "verification_scope": "identity/version and indexed proposition scope; exact wording/pinpoints require official source"
+    },
+    {
+      "coverage_tags": [
+        "consistent_interpretation"
+      ],
+      "representation_kind": "verified_source_note",
+      "source_id": "eu:61989cj0106",
+      "targets": [
+        {
+          "support_role": "foundation",
+          "target_id": "legal_principle.id",
+          "target_type": "element"
+        }
+      ],
+      "verification_scope": "identity/version and indexed proposition scope; exact wording/pinpoints require official source"
+    },
+    {
+      "coverage_tags": [
+        "free_movement_case_law"
+      ],
+      "representation_kind": "authoritative_bundled_text",
+      "source_id": "eu:61999cj0459",
+      "targets": [
+        {
+          "support_role": "context",
+          "target_id": "movement.free_movement_exercised",
+          "target_type": "element"
+        },
+        {
+          "support_role": "context",
+          "target_id": "relationship.accompanying_or_joining",
+          "target_type": "element"
+        }
+      ],
+      "verification_scope": "full stored representation with official-source verification metadata"
+    },
+    {
+      "coverage_tags": [
+        "free_movement_case_law"
+      ],
+      "representation_kind": "authoritative_bundled_text",
+      "source_id": "eu:62003cj0157",
+      "targets": [
+        {
+          "support_role": "context",
+          "target_id": "movement.free_movement_exercised",
+          "target_type": "element"
+        },
+        {
+          "support_role": "context",
+          "target_id": "relationship.accompanying_or_joining",
+          "target_type": "element"
+        }
+      ],
+      "verification_scope": "full stored representation with official-source verification metadata"
+    },
+    {
+      "coverage_tags": [
+        "free_movement_case_law"
+      ],
+      "representation_kind": "authoritative_bundled_text",
+      "source_id": "eu:62003cj0503",
+      "targets": [
+        {
+          "support_role": "context",
+          "target_id": "movement.free_movement_exercised",
+          "target_type": "element"
+        },
+        {
+          "support_role": "context",
+          "target_id": "relationship.accompanying_or_joining",
+          "target_type": "element"
+        }
+      ],
+      "verification_scope": "full stored representation with official-source verification metadata"
+    },
+    {
+      "coverage_tags": [
+        "dependency_evidence_freedom_of_proof"
+      ],
+      "representation_kind": "verified_source_note",
+      "source_id": "eu:62005cj0001",
+      "targets": [
+        {
+          "support_role": "foundation",
+          "target_id": "evidence.freedom_of_proof_state",
+          "target_type": "element"
+        },
+        {
+          "support_role": "foundation",
+          "target_id": "int.evidence.proof_restriction",
+          "target_type": "interaction"
+        }
+      ],
+      "verification_scope": "identity/version and indexed proposition scope; exact wording/pinpoints require official source"
+    },
+    {
+      "coverage_tags": [
+        "effective_judicial_protection"
+      ],
+      "representation_kind": "verified_source_note",
+      "source_id": "eu:62005cj0432",
+      "targets": [
+        {
+          "support_role": "foundation",
+          "target_id": "legal_principle.id",
+          "target_type": "element"
+        },
+        {
+          "support_role": "context",
+          "target_id": "procedure.complaint_path_state",
+          "target_type": "element"
+        }
+      ],
+      "verification_scope": "identity/version and indexed proposition scope; exact wording/pinpoints require official source"
+    },
+    {
+      "coverage_tags": [
+        "rights_of_defence_right_to_be_heard"
+      ],
+      "representation_kind": "verified_source_note",
+      "source_id": "eu:62007cj0349",
+      "targets": [
+        {
+          "support_role": "foundation",
+          "target_id": "legal_principle.id",
+          "target_type": "element"
+        },
+        {
+          "support_role": "context",
+          "target_id": "evidence.assertion_role",
+          "target_type": "element"
+        }
+      ],
+      "verification_scope": "identity/version and indexed proposition scope; exact wording/pinpoints require official source"
+    },
+    {
+      "coverage_tags": [
+        "free_movement_case_law"
+      ],
+      "representation_kind": "authoritative_bundled_text",
+      "source_id": "eu:62008cj0127",
+      "targets": [
+        {
+          "support_role": "context",
+          "target_id": "movement.free_movement_exercised",
+          "target_type": "element"
+        },
+        {
+          "support_role": "context",
+          "target_id": "relationship.accompanying_or_joining",
+          "target_type": "element"
+        }
+      ],
+      "verification_scope": "full stored representation with official-source verification metadata"
+    },
+    {
+      "coverage_tags": [
+        "legal_certainty_legitimate_expectations"
+      ],
+      "representation_kind": "verified_source_note",
+      "source_id": "eu:62008cj0201",
+      "targets": [
+        {
+          "support_role": "foundation",
+          "target_id": "legal_principle.id",
+          "target_type": "element"
+        }
+      ],
+      "verification_scope": "identity/version and indexed proposition scope; exact wording/pinpoints require official source"
+    },
+    {
+      "coverage_tags": [
+        "free_movement_case_law"
+      ],
+      "representation_kind": "authoritative_bundled_text",
+      "source_id": "eu:62010cj0508",
+      "targets": [
+        {
+          "support_role": "context",
+          "target_id": "movement.free_movement_exercised",
+          "target_type": "element"
+        },
+        {
+          "support_role": "context",
+          "target_id": "relationship.accompanying_or_joining",
+          "target_type": "element"
+        }
+      ],
+      "verification_scope": "full stored representation with official-source verification metadata"
+    },
+    {
+      "coverage_tags": [
+        "charter_article_51_scope"
+      ],
+      "representation_kind": "verified_source_note",
+      "source_id": "eu:62010cj0617",
+      "targets": [
+        {
+          "support_role": "foundation",
+          "target_id": "int.charter.scope",
+          "target_type": "interaction"
+        }
+      ],
+      "verification_scope": "identity/version and indexed proposition scope; exact wording/pinpoints require official source"
+    },
+    {
+      "coverage_tags": [
+        "free_movement_case_law"
+      ],
+      "representation_kind": "authoritative_bundled_text",
+      "source_id": "eu:62011cj0083",
+      "targets": [
+        {
+          "support_role": "context",
+          "target_id": "movement.free_movement_exercised",
+          "target_type": "element"
+        },
+        {
+          "support_role": "context",
+          "target_id": "relationship.accompanying_or_joining",
+          "target_type": "element"
+        }
+      ],
+      "verification_scope": "full stored representation with official-source verification metadata"
+    },
+    {
+      "coverage_tags": [
+        "right_to_be_heard_good_administration"
+      ],
+      "representation_kind": "verified_source_note",
+      "source_id": "eu:62011cj0277",
+      "targets": [
+        {
+          "support_role": "foundation",
+          "target_id": "legal_principle.id",
+          "target_type": "element"
+        }
+      ],
+      "verification_scope": "identity/version and indexed proposition scope; exact wording/pinpoints require official source"
+    },
+    {
+      "coverage_tags": [
+        "charter_article_41_member_state_boundary"
+      ],
+      "representation_kind": "verified_source_note",
+      "source_id": "eu:62012cj0141",
+      "targets": [
+        {
+          "support_role": "foundation",
+          "target_id": "int.article41.boundary",
+          "target_type": "interaction"
+        }
+      ],
+      "verification_scope": "identity/version and indexed proposition scope; exact wording/pinpoints require official source"
+    },
+    {
+      "coverage_tags": [
+        "charter_articles_7_8_data_protection"
+      ],
+      "representation_kind": "verified_source_note",
+      "source_id": "eu:62012cj0293",
+      "targets": [
+        {
+          "support_role": "context",
+          "target_id": "legal_regime.charter",
+          "target_type": "element"
+        },
+        {
+          "support_role": "context",
+          "target_id": "legal_regime.gdpr",
+          "target_type": "element"
+        }
+      ],
+      "verification_scope": "identity/version and indexed proposition scope; exact wording/pinpoints require official source"
+    },
+    {
+      "coverage_tags": [
+        "free_movement_case_law"
+      ],
+      "representation_kind": "authoritative_bundled_text",
+      "source_id": "eu:62012cj0423",
+      "targets": [
+        {
+          "support_role": "context",
+          "target_id": "movement.free_movement_exercised",
+          "target_type": "element"
+        },
+        {
+          "support_role": "context",
+          "target_id": "relationship.accompanying_or_joining",
+          "target_type": "element"
+        }
+      ],
+      "verification_scope": "full stored representation with official-source verification metadata"
+    },
+    {
+      "coverage_tags": [
+        "free_movement_case_law"
+      ],
+      "representation_kind": "authoritative_bundled_text",
+      "source_id": "eu:62012cj0456",
+      "targets": [
+        {
+          "support_role": "context",
+          "target_id": "movement.free_movement_exercised",
+          "target_type": "element"
+        },
+        {
+          "support_role": "context",
+          "target_id": "relationship.accompanying_or_joining",
+          "target_type": "element"
+        }
+      ],
+      "verification_scope": "full stored representation with official-source verification metadata"
+    },
+    {
+      "coverage_tags": [
+        "good_administration_general_principle"
+      ],
+      "representation_kind": "verified_source_note",
+      "source_id": "eu:62012cj0604",
+      "targets": [
+        {
+          "support_role": "foundation",
+          "target_id": "legal_principle.id",
+          "target_type": "element"
+        }
+      ],
+      "verification_scope": "identity/version and indexed proposition scope; exact wording/pinpoints require official source"
+    },
+    {
+      "coverage_tags": [
+        "rights_of_defence_national_eu_procedure"
+      ],
+      "representation_kind": "verified_source_note",
+      "source_id": "eu:62013cj0166",
+      "targets": [
+        {
+          "support_role": "context",
+          "target_id": "legal_regime.eu_law_scope_established",
+          "target_type": "element"
+        },
+        {
+          "support_role": "foundation",
+          "target_id": "legal_principle.id",
+          "target_type": "element"
+        }
+      ],
+      "verification_scope": "identity/version and indexed proposition scope; exact wording/pinpoints require official source"
+    },
+    {
+      "coverage_tags": [
+        "free_movement_case_law"
+      ],
+      "representation_kind": "authoritative_bundled_text",
+      "source_id": "eu:62013cj0202",
+      "targets": [
+        {
+          "support_role": "context",
+          "target_id": "movement.free_movement_exercised",
+          "target_type": "element"
+        },
+        {
+          "support_role": "context",
+          "target_id": "relationship.accompanying_or_joining",
+          "target_type": "element"
+        }
+      ],
+      "verification_scope": "full stored representation with official-source verification metadata"
+    },
+    {
+      "coverage_tags": [
+        "rights_of_defence_scope"
+      ],
+      "representation_kind": "verified_source_note",
+      "source_id": "eu:62013cj0249",
+      "targets": [
+        {
+          "support_role": "foundation",
+          "target_id": "legal_principle.application_scope",
+          "target_type": "element"
+        }
+      ],
+      "verification_scope": "identity/version and indexed proposition scope; exact wording/pinpoints require official source"
+    },
+    {
+      "coverage_tags": [
+        "free_movement_case_law"
+      ],
+      "representation_kind": "authoritative_bundled_text",
+      "source_id": "eu:62016cj0673",
+      "targets": [
+        {
+          "support_role": "context",
+          "target_id": "movement.free_movement_exercised",
+          "target_type": "element"
+        },
+        {
+          "support_role": "context",
+          "target_id": "relationship.accompanying_or_joining",
+          "target_type": "element"
+        }
+      ],
+      "verification_scope": "full stored representation with official-source verification metadata"
+    },
+    {
+      "coverage_tags": [
+        "free_movement_case_law"
+      ],
+      "representation_kind": "authoritative_bundled_text",
+      "source_id": "eu:62017cj0089",
+      "targets": [
+        {
+          "support_role": "context",
+          "target_id": "movement.free_movement_exercised",
+          "target_type": "element"
+        },
+        {
+          "support_role": "context",
+          "target_id": "relationship.accompanying_or_joining",
+          "target_type": "element"
+        }
+      ],
+      "verification_scope": "full stored representation with official-source verification metadata"
+    },
+    {
+      "coverage_tags": [
+        "free_movement_case_law"
+      ],
+      "representation_kind": "authoritative_bundled_text",
+      "source_id": "eu:62017cj0246",
+      "targets": [
+        {
+          "support_role": "context",
+          "target_id": "movement.free_movement_exercised",
+          "target_type": "element"
+        },
+        {
+          "support_role": "context",
+          "target_id": "relationship.accompanying_or_joining",
+          "target_type": "element"
+        }
+      ],
+      "verification_scope": "full stored representation with official-source verification metadata"
+    },
+    {
+      "coverage_tags": [
+        "free_movement_case_law"
+      ],
+      "representation_kind": "authoritative_bundled_text",
+      "source_id": "eu:62018cj0754",
+      "targets": [
+        {
+          "support_role": "context",
+          "target_id": "movement.free_movement_exercised",
+          "target_type": "element"
+        },
+        {
+          "support_role": "context",
+          "target_id": "relationship.accompanying_or_joining",
+          "target_type": "element"
+        }
+      ],
+      "verification_scope": "full stored representation with official-source verification metadata"
+    },
+    {
+      "coverage_tags": [
+        "free_movement_case_law",
+        "free_movement_directive",
+        "retained_worker_status",
+        "evidence",
+        "good_administration",
+        "charter",
+        "effective_judicial_protection",
+        "file_access"
+      ],
+      "representation_kind": "authoritative_bundled_text",
+      "source_id": "eu:62024cj0477",
+      "targets": [
+        {
+          "support_role": "boundary",
+          "target_id": "person_status.economic_status",
+          "target_type": "element"
+        },
+        {
+          "support_role": "context",
+          "target_id": "legal_regime.directive_2004_38",
+          "target_type": "element"
+        },
+        {
+          "support_role": "boundary",
+          "target_id": "legal_regime.charter",
+          "target_type": "element"
+        },
+        {
+          "support_role": "boundary",
+          "target_id": "legal_regime.eu_law_scope_established",
+          "target_type": "element"
+        },
+        {
+          "support_role": "context",
+          "target_id": "evidence.freedom_of_proof_state",
+          "target_type": "element"
+        },
+        {
+          "support_role": "context",
+          "target_id": "evidence.proof_restriction_status",
+          "target_type": "element"
+        }
+      ],
+      "verification_scope": "English judgment 71 paragraphs from user-supplied EUR-Lex PDF; official identity checked; no independently matched server PDF bytes"
+    },
+    {
+      "coverage_tags": [
+        "evidence",
+        "free_movement_guidance",
+        "frontier_workers",
+        "visa_rules"
+      ],
+      "representation_kind": "authoritative_bundled_text",
+      "source_id": "eu:c-2023-1392",
+      "targets": [
+        {
+          "support_role": "context",
+          "target_id": "evidence.epistemic_state",
+          "target_type": "element"
+        },
+        {
+          "support_role": "context",
+          "target_id": "movement.free_movement_exercised",
+          "target_type": "element"
+        },
+        {
+          "support_role": "foundation",
+          "target_id": "int.frontier.topology",
+          "target_type": "interaction"
+        },
+        {
+          "support_role": "context",
+          "target_id": "legal_regime.visa_code",
+          "target_type": "element"
+        }
+      ],
+      "verification_scope": "full stored representation with official-source verification metadata"
+    },
+    {
+      "coverage_tags": [
+        "eu_level_complaint",
+        "commission_enforcement",
+        "national_redress_first_line"
+      ],
+      "representation_kind": "verified_source_note",
+      "source_id": "eu:commission-eu-law-complaint",
+      "targets": [
+        {
+          "support_role": "operational",
+          "target_id": "procedure.complaint_path_state",
+          "target_type": "element"
+        },
+        {
+          "support_role": "operational",
+          "target_id": "authority.role",
+          "target_type": "element"
+        },
+        {
+          "support_role": "boundary",
+          "target_id": "procedure.complaint_path_state",
+          "target_type": "element"
+        }
+      ],
+      "verification_scope": "identity/version and indexed proposition scope; exact wording/pinpoints require official source"
+    },
+    {
+      "coverage_tags": [
+        "eu_ombudsman",
+        "maladministration",
+        "eu_institutions_only",
+        "complaint_admissibility"
+      ],
+      "representation_kind": "verified_source_note",
+      "source_id": "eu:ombudsman-complaint",
+      "targets": [
+        {
+          "support_role": "operational",
+          "target_id": "procedure.complaint_path_state",
+          "target_type": "element"
+        },
+        {
+          "support_role": "context",
+          "target_id": "attack_angle.angle_id",
+          "target_type": "element"
+        },
+        {
+          "support_role": "boundary",
+          "target_id": "authority.level",
+          "target_type": "element"
+        },
+        {
+          "support_role": "operational",
+          "target_id": "strategy.prerequisites_state",
+          "target_type": "element"
+        }
+      ],
+      "verification_scope": "identity/version and indexed proposition scope; exact wording/pinpoints require official source"
+    },
+    {
+      "coverage_tags": [
+        "appointments",
+        "consular_procedure",
+        "visa_handbook"
+      ],
+      "representation_kind": "authoritative_bundled_text",
+      "source_id": "eu:visa-code-handbook-i-2024",
+      "targets": [
+        {
+          "support_role": "operational",
+          "target_id": "procedure.access_state",
+          "target_type": "element"
+        },
+        {
+          "support_role": "context",
+          "target_id": "int.softlaw.weight",
+          "target_type": "interaction"
+        }
+      ],
+      "verification_scope": "full stored representation with official-source verification metadata"
+    }
+  ],
+  "source_pack_version": "0.6.1",
+  "verification_date": "2026-10-09"
+}

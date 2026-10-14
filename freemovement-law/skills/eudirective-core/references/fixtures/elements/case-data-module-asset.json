@@ -1,0 +1,24 @@
+{
+  "model_version": "0.2.0",
+  "bundle_id": "case-data-module-asset",
+  "elements": [
+    {
+      "element_id": "asset.kind",
+      "value": "module_asset",
+      "supplied_by": "core",
+      "provenance_kind": "policy"
+    },
+    {
+      "element_id": "asset.distributable",
+      "value": true,
+      "supplied_by": "deterministic_calculation",
+      "provenance_kind": "mechanical_calculation"
+    },
+    {
+      "element_id": "procedure.stage",
+      "value": "application_pending",
+      "supplied_by": "case_workspace",
+      "provenance_kind": "user_assertion"
+    }
+  ]
+}

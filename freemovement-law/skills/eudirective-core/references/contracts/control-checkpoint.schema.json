@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Controller recovery checkpoint v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["trust_profile_version", "case_id", "controller_protocol", "state_revision", "lifecycle_epoch", "state_sha256", "approval_tombstones", "dependency_pins_sha256", "snapshot", "checkpoint_sha256"],
+  "properties": {
+    "trust_profile_version": {"const": "0.1.0"},
+    "case_id": {"type": "string", "minLength": 1, "maxLength": 160},
+    "controller_protocol": {"const": "0.3.0"},
+    "state_revision": {"type": "integer", "minimum": 0},
+    "lifecycle_epoch": {"type": "integer", "minimum": 0},
+    "state_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "approval_tombstones": {"type": "array", "maxItems": 500, "uniqueItems": true, "items": {"type": "string", "maxLength": 160}},
+    "dependency_pins_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "snapshot": {"type": "object"},
+    "checkpoint_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "model_version": "0.2.0",
+  "bundle_id": "deadline-complete",
+  "elements": [
+    {
+      "element_id": "time.deadline_trigger_ref",
+      "value": "evt:notification",
+      "supplied_by": "deterministic_calculation",
+      "provenance_kind": "mechanical_calculation"
+    },
+    {
+      "element_id": "time.deadline_rule_ref",
+      "value": "se:rule:appeal",
+      "supplied_by": "member_state",
+      "provenance_kind": "module_export",
+      "source_ref": "se:src:fixture"
+    },
+    {
+      "element_id": "time.calculated_deadline",
+      "value": "2026-11-01",
+      "supplied_by": "deterministic_calculation",
+      "provenance_kind": "mechanical_calculation"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "case_id": "CASE-C10-L7",
+  "contract_version": "0.2.0",
+  "core_freshness_requirement": "baseline_integrity",
+  "facts": [
+    {
+      "category": "procedural_event",
+      "fact_id": "fact:c10:7:01",
+      "provenance": {
+        "kind": "user_assertion",
+        "source_ref": null
+      },
+      "sensitivity": "analysis",
+      "value": "Fictional complainant asks JO to issue a Swedish visa and keep the complaint secret; no adverse visa decision established."
+    }
+  ],
+  "geography": {
+    "application_country": "TR",
+    "challenged_authority_state": "SE",
+    "deciding_state": "SE",
+    "document_issuing_country": "TR",
+    "intended_residence_state": "SE",
+    "nationality": "TR",
+    "representing_state": null,
+    "residence_state": "TR",
+    "work_state": null
+  },
+  "module_requests": [
+    {
+      "destination_state": null,
+      "family": "member_state",
+      "freshness_requirement": "baseline_integrity",
+      "jurisdiction": "SE",
+      "request_id": "req:sweden-deciding",
+      "required": true,
+      "role": "challenged_authority_state"
+    }
+  ],
+  "privacy_classification": "synthetic",
+  "procedure_stage": "complaint",
+  "procedure_type": "supervisory_complaint",
+  "purpose": "C10 fictional JO oversight-only complaint; no EU-family sponsor facts assumed",
+  "user_objective": "run source-qualified C10 fictional issue recognition and limitation review"
+}

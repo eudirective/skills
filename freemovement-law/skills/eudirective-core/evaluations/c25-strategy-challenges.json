@@ -1,0 +1,140 @@
+{
+  "schema": "c25-strategy-conversation-challenges/0.1.0",
+  "evaluation_boundary": "Fictional human-reviewed prompts; not executed model response evidence; do not grade strategy with keyword presence alone.",
+  "cases": [
+    {
+      "id": "uninvoked-competence-defense",
+      "stage": "first_response",
+      "prompt": "I am a non-EU spouse accompanying an EU citizen to another Member State. I disclosed a problem with my local immigration status in an early message, and then the mission offered me a visa appointment. At the appointment an officer demanded tourist bank, hotel and insurance evidence, refused to take the application and never said anything about local legal residence. Help me draft a complaint, including only what matters.",
+      "must_do": [
+        "separate ordinary checklist from territorial competence",
+        "treat competence as possible internal risk, not a consular ground actually invoked",
+        "assess any threshold effects on requested mandatory-acceptance relief",
+        "focus external complaint on actual alleged conduct",
+        "do not misrepresent status or claim waiver from silence"
+      ],
+      "must_not": [
+        "attribute territorial competence refusal to consulate without evidence",
+        "lead complaint by volunteering hypothetical adverse defense",
+        "assume advance appointment waives lawful competence requirements"
+      ]
+    },
+    {
+      "id": "physical-removal-independent",
+      "stage": "first_response",
+      "prompt": "I am the non-EU spouse of an EU citizen and seek to accompany them to a different EU Member State. An embassy officer rejected my EU-family visa application and security held my arm and removed me when I requested an explanation. Even if my visa application had problems, what can I do about how they treated me?",
+      "must_do": [
+        "independent staff-conduct grievance",
+        "check operator and staff status instead of conflating contractor/consular employee",
+        "conduct/process complaint route with powers and limitations",
+        "consider urgent preservation of CCTV and incident reports",
+        "GDPR data access as distinct option if relevant",
+        "assess shouting or intimidating treatment and physical contact as separately reported events before combining complaint route"
+      ],
+      "must_not": [
+        "conclude lack of visa eligibility defeats misconduct claim",
+        "demand independent CCTV before recognizing a grievance"
+      ]
+    },
+    {
+      "id": "unknown-acceptance-records",
+      "stage": "first_response",
+      "prompt": "I am joining my EU-citizen spouse in another Member State. The online EU-family visa portal said complete but the counter returned my passport with no receipt and told me to go away. I need to establish whether the application was ever accepted.",
+      "must_do": [
+        "distinguish portal completion and formal acceptance",
+        "ask for written procedural status and records",
+        "consider data-subject access if records contain applicant personal data",
+        "do not invent an actual formal refusal or appeal deadline"
+      ],
+      "must_not": [
+        "assume a formal decision was served",
+        "equate GDPR subject access with whole-file FOI"
+      ]
+    },
+    {
+      "id": "evidence-preservation-time-critical",
+      "stage": "first_response",
+      "prompt": "I am a non-EU spouse travelling with my EU-citizen partner to another Member State. A consulate removed me from the entrance last week. I want to obtain the CCTV, access log and incident notes. What should I do immediately?",
+      "must_do": [
+        "separate urgent preservation from access",
+        "suggest targeted Article 15 access for own personal data where applicable",
+        "check controller/contractor and rights of other people",
+        "avoid guaranteeing footage will be provided or retained",
+        "consider data-specific retention/Article 18 limitations",
+        "identify specific personal-data categories and recipient/controller or next step to determine the controller, not merely mention Article 15"
+      ],
+      "must_not": [
+        "tell user GDPR automatically freezes CCTV",
+        "promise all security documents are obtainable under Article 15"
+      ]
+    },
+    {
+      "id": "weak-visa-claim-strong-conduct",
+      "stage": "first_response",
+      "prompt": "I applied to accompany my EU-citizen spouse to another Member State, possibly at a consulate without territorial competence, but the clerk shouted at me, made discriminatory remarks and refused to give complaints information. Should I just abandon everything?",
+      "must_do": [
+        "separate visa eligibility and conduct/procedure",
+        "evaluate possible staff complaint while checking applicable procedure",
+        "offer factual complaint and evidence requests",
+        "avoid claiming every rude interaction proves actionable discrimination"
+      ],
+      "must_not": [
+        "tell applicant no remedy because embassy could reject application"
+      ]
+    },
+    {
+      "id": "formal-threshold-not-invoked",
+      "stage": "first_response",
+      "prompt": "In my EU-family visa case the mission only mentioned ordinary tourist-document demands, but I know a rule about territorial competence might stop a court ordering this particular mission to accept my visa. I want to force that specific relief. Should I ignore the competence rule because the mission never mentioned it?",
+      "must_do": [
+        "assess mandatory threshold privately and candidly",
+        "do not falsely attribute threshold to original consular reasons",
+        "distinguish internal litigation risk from contents of complaint",
+        "do not advise hiding legally mandatory information"
+      ],
+      "must_not": [
+        "say uninvoked mandatory rule is irrelevant",
+        "say the authority waived it by offering appointment"
+      ]
+    },
+    {
+      "id": "followup-actual-ground-appears",
+      "stage": "multi_turn",
+      "first_turn": "I am accompanying my EU-citizen spouse to another Member State. The mission demanded ordinary tourist documents, refused my application, and there is no written decision. I disclosed an old immigration-status problem months ago but nobody at the mission mentioned it.",
+      "later_user_reply": "Now the head of visas replies in writing that they refused on grounds of lack of lawful presence.",
+      "must_initial": [
+        "separate actual demands from potential status objection",
+        "identify records/access remedies"
+      ],
+      "must_revise": [
+        "reclassify authority position as expressly invoked",
+        "assess legal and procedural consequences for this relief",
+        "retain independent documentation and conduct grievances",
+        "avoid inventing waiver"
+      ],
+      "must_not": [
+        "continue saying competence was uninvoked",
+        "drop all grievances when competence is asserted"
+      ]
+    },
+    {
+      "id": "followup-controller-is-contractor",
+      "stage": "multi_turn",
+      "first_turn": "I was seeking an EU-family visa to accompany my EU-citizen spouse to another Member State. The consulate lobby has CCTV. I was escorted out by the arm and want the recording and staff names.",
+      "later_user_reply": "The embassy says a private security company operates its cameras and may already have deleted the footage.",
+      "must_initial": [
+        "prompt preservation",
+        "recognize conduct track and possible Article 15 access"
+      ],
+      "must_revise": [
+        "reassess controller and routes for operator",
+        "do not promise footage exists or disclose other people's data",
+        "explore complaints, available incident records and evidence of deletion"
+      ],
+      "must_not": [
+        "assume embassy remains controller for all CCTV",
+        "treat GDPR request as preservation order"
+      ]
+    }
+  ]
+}

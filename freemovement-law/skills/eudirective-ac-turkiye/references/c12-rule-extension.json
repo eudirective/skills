@@ -1,0 +1,142 @@
+{
+  "bound_export_sha256": "45b74e2198b50c6cd529b4827751b9a23aefb86c4b16b910ced14382e29932c9",
+  "deferred_rule_ids": [],
+  "extension_version": "0.2.0",
+  "jurisdiction": "TR",
+  "producer_module_family": "applicant_country",
+  "producer_module_id": "applicant-country-tr-sweden-pilot",
+  "rules": [
+    {
+      "attack_angle_id": "tr:attack:direct-channel-block",
+      "conditions": [
+        {
+          "expected_values": [
+            "direct_appointment_email",
+            "direct_consulate",
+            "consulate_direct"
+          ],
+          "fact_key": "element:procedure.channel",
+          "operator": "one_of"
+        },
+        {
+          "expected_values": [
+            true
+          ],
+          "fact_key": "fact:mission_requires_vfs_only",
+          "operator": "one_of"
+        }
+      ],
+      "exception_questions": [
+        "Türkiye module supplies local mission operation only; the deciding law is Swedish/EU."
+      ],
+      "label": "Published Swedish direct visa application channel in Türkiye",
+      "limitations": [
+        "Predicate sufficiency is not a determination of legal infringement."
+      ],
+      "procedure_types": [
+        "entry_visa"
+      ],
+      "rule_id": "tr:c12:direct-channel",
+      "source_citations": [
+        {
+          "pinpoint_hint": "Swedish mission EU/EEA family visa route in Türkiye; not a Turkish visa-law power.",
+          "source_id": "tr:src:sweden-istanbul-eu-family"
+        }
+      ]
+    },
+    {
+      "activation": {
+        "expected_values": [
+          true
+        ],
+        "fact_key": "fact:vfs_service_charge_recorded",
+        "operator": "one_of"
+      },
+      "attack_angle_id": null,
+      "conditions": [
+        {
+          "expected_values": [
+            true
+          ],
+          "fact_key": "fact:vfs_service_charge_recorded",
+          "operator": "one_of"
+        },
+        {
+          "expected_values": [
+            true
+          ],
+          "fact_key": "fact:vfs_route_optional",
+          "operator": "one_of"
+        }
+      ],
+      "exception_questions": [
+        "Türkiye module reports local application practice only; fee legality derives from applicable Swedish/EU law."
+      ],
+      "label": "VFS fee and channel context for applicants in Türkiye",
+      "limitations": [
+        "This synthetic predicate set identifies a review topic; legal entitlement, infringement, authenticity and timing remain undetermined."
+      ],
+      "procedure_types": [
+        "entry_visa"
+      ],
+      "rule_id": "tr:c16:istanbul-vfs-choice",
+      "source_citations": [
+        {
+          "pinpoint_hint": "Swedish mission published visa-fee/service-fee distinction in Türkiye.",
+          "source_id": "tr:src:sweden-istanbul-fees"
+        }
+      ]
+    },
+    {
+      "activation": {
+        "expected_values": [
+          true
+        ],
+        "fact_key": "fact:electronic_register_extract_offered",
+        "operator": "one_of"
+      },
+      "attack_angle_id": null,
+      "conditions": [
+        {
+          "expected_values": [
+            true
+          ],
+          "fact_key": "fact:electronic_register_extract_offered",
+          "operator": "one_of"
+        },
+        {
+          "expected_values": [
+            "turkiye_e_devlet"
+          ],
+          "fact_key": "fact:issuer_source_claimed",
+          "operator": "one_of"
+        },
+        {
+          "expected_values": [
+            true
+          ],
+          "fact_key": "fact:electronic_record_authenticity_unverified",
+          "operator": "one_of"
+        }
+      ],
+      "exception_questions": [
+        "An asserted e-Devlet origin needs actual validation; Turkish domestic status does not decide Swedish admissibility."
+      ],
+      "label": "Provenance of Turkish electronically issued population-register extract",
+      "limitations": [
+        "This synthetic predicate set identifies a review topic; legal entitlement, infringement, authenticity and timing remain undetermined."
+      ],
+      "procedure_types": [
+        "entry_visa"
+      ],
+      "rule_id": "tr:c16:electronic-population-extract",
+      "source_citations": [
+        {
+          "pinpoint_hint": "NVI official guidance on Turkish civil-register extracts and authenticated electronic availability.",
+          "source_id": "tr:src:turkiye-nvi-population"
+        }
+      ]
+    }
+  ],
+  "scope": "synthetic_c12_pilot_only"
+}

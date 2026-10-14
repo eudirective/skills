@@ -1,0 +1,1372 @@
+{
+  "benchmark_version": "0.1.0",
+  "method": "post-grammar-frozen, developer-authored, synthetic, not independent legal adjudication",
+  "label_definition": "expected_assertion is a claim attributable to the document writer, NOT a verified fact; None includes mention, hypothetical, quotation, and no supported assertion.",
+  "languages": [
+    "en",
+    "sv",
+    "tr"
+  ],
+  "cases": [
+    {
+      "id": "C14-001",
+      "language": "en",
+      "scenario": "L1",
+      "format": "txt",
+      "text": "We will not accept a direct application.",
+      "target_fact_key": "element:procedure.access_state",
+      "expected_assertion": "denied",
+      "context": "asserted"
+    },
+    {
+      "id": "C14-002",
+      "language": "en",
+      "scenario": "L1",
+      "format": "eml",
+      "text": "Your direct submission request was declined.",
+      "target_fact_key": "element:procedure.access_state",
+      "expected_assertion": "denied",
+      "context": "asserted"
+    },
+    {
+      "id": "C14-003",
+      "language": "en",
+      "scenario": "L1",
+      "format": "html",
+      "text": "We cannot permit direct lodging.",
+      "target_fact_key": "element:procedure.access_state",
+      "expected_assertion": "denied",
+      "context": "asserted"
+    },
+    {
+      "id": "C14-004",
+      "language": "en",
+      "scenario": "L1",
+      "format": "txt",
+      "text": "You may submit directly at the consulate.",
+      "target_fact_key": "element:procedure.access_state",
+      "expected_assertion": "available",
+      "context": "asserted"
+    },
+    {
+      "id": "C14-005",
+      "language": "en",
+      "scenario": "L1",
+      "format": "eml",
+      "text": "You can lodge directly at the mission.",
+      "target_fact_key": "element:procedure.access_state",
+      "expected_assertion": "available",
+      "context": "asserted"
+    },
+    {
+      "id": "C14-006",
+      "language": "en",
+      "scenario": "L1",
+      "format": "html",
+      "text": "We accept direct applications.",
+      "target_fact_key": "element:procedure.access_state",
+      "expected_assertion": "available",
+      "context": "asserted"
+    },
+    {
+      "id": "C14-007",
+      "language": "en",
+      "scenario": "L1",
+      "format": "txt",
+      "text": "The consulate has no walk-in appointments today.",
+      "target_fact_key": "element:procedure.access_state",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-008",
+      "language": "en",
+      "scenario": "L1",
+      "format": "eml",
+      "text": "We advise applicants to schedule an appointment.",
+      "target_fact_key": "element:procedure.access_state",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-009",
+      "language": "en",
+      "scenario": "L1",
+      "format": "html",
+      "text": "If we cannot permit direct lodging, contact us.",
+      "target_fact_key": "element:procedure.access_state",
+      "expected_assertion": null,
+      "context": "conditional"
+    },
+    {
+      "id": "C14-010",
+      "language": "en",
+      "scenario": "L1",
+      "format": "txt",
+      "text": "The complaint quoted: \"Your direct appointment request was denied.\"",
+      "target_fact_key": "element:procedure.access_state",
+      "expected_assertion": null,
+      "context": "quoted"
+    },
+    {
+      "id": "C14-011",
+      "language": "en",
+      "scenario": "L1",
+      "format": "eml",
+      "text": "The earlier notice said \"Your direct submission request was declined.\"",
+      "target_fact_key": "element:procedure.access_state",
+      "expected_assertion": null,
+      "context": "quoted"
+    },
+    {
+      "id": "C14-012",
+      "language": "en",
+      "scenario": "L1",
+      "format": "html",
+      "text": "No person was denied entry at the border.",
+      "target_fact_key": "element:procedure.access_state",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-013",
+      "language": "en",
+      "scenario": "L1",
+      "format": "txt",
+      "text": "Has your direct submission request been denied?",
+      "target_fact_key": "element:procedure.access_state",
+      "expected_assertion": null,
+      "context": "conditional"
+    },
+    {
+      "id": "C14-014",
+      "language": "en",
+      "scenario": "L1",
+      "format": "eml",
+      "text": "It might be impossible to lodge directly at the consulate.",
+      "target_fact_key": "element:procedure.access_state",
+      "expected_assertion": null,
+      "context": "qualified"
+    },
+    {
+      "id": "C14-015",
+      "language": "en",
+      "scenario": "L1",
+      "format": "html",
+      "text": "You must apply through VFS only.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": true,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-016",
+      "language": "en",
+      "scenario": "L1",
+      "format": "txt",
+      "text": "VFS is the only provider.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": true,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-017",
+      "language": "en",
+      "scenario": "L1",
+      "format": "eml",
+      "text": "VFS is a voluntary service.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": false,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-018",
+      "language": "en",
+      "scenario": "L1",
+      "format": "html",
+      "text": "You do not need to apply through VFS.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": false,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-019",
+      "language": "en",
+      "scenario": "L1",
+      "format": "txt",
+      "text": "VFS is not mandatory.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": false,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-020",
+      "language": "en",
+      "scenario": "L1",
+      "format": "eml",
+      "text": "We recommend VFS for convenience.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-021",
+      "language": "en",
+      "scenario": "L1",
+      "format": "html",
+      "text": "Please consult VFS before booking.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-022",
+      "language": "en",
+      "scenario": "L1",
+      "format": "txt",
+      "text": "If you must apply through VFS only, ask why.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": null,
+      "context": "conditional"
+    },
+    {
+      "id": "C14-023",
+      "language": "en",
+      "scenario": "L1",
+      "format": "eml",
+      "text": "The applicant falsely alleged: \"You must apply through VFS only.\"",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": null,
+      "context": "quoted"
+    },
+    {
+      "id": "C14-024",
+      "language": "en",
+      "scenario": "L1",
+      "format": "html",
+      "text": "Whether VFS is mandatory remains unclear.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-025",
+      "language": "en",
+      "scenario": "L1",
+      "format": "txt",
+      "text": "Applicants have to submit the application via VFS only.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": true,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-026",
+      "language": "en",
+      "scenario": "L1",
+      "format": "eml",
+      "text": "The website mentions VFS as a provider.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-027",
+      "language": "en",
+      "scenario": "L4",
+      "format": "html",
+      "text": "We rejected the visa application.",
+      "target_fact_key": "fact:visa_refusal_exists",
+      "expected_assertion": true,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-028",
+      "language": "en",
+      "scenario": "L4",
+      "format": "txt",
+      "text": "Your visa request has been refused.",
+      "target_fact_key": "fact:visa_refusal_exists",
+      "expected_assertion": true,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-029",
+      "language": "en",
+      "scenario": "L4",
+      "format": "eml",
+      "text": "Your visa application was not rejected.",
+      "target_fact_key": "fact:visa_refusal_exists",
+      "expected_assertion": false,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-030",
+      "language": "en",
+      "scenario": "L4",
+      "format": "html",
+      "text": "The visa application is pending.",
+      "target_fact_key": "fact:visa_refusal_exists",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-031",
+      "language": "en",
+      "scenario": "L4",
+      "format": "txt",
+      "text": "If we rejected the visa application, we would notify you.",
+      "target_fact_key": "fact:visa_refusal_exists",
+      "expected_assertion": null,
+      "context": "conditional"
+    },
+    {
+      "id": "C14-032",
+      "language": "en",
+      "scenario": "L4",
+      "format": "eml",
+      "text": "The decision was issued on 2026-09-04.",
+      "target_fact_key": "fact:decision_notice_date",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-033",
+      "language": "en",
+      "scenario": "L4",
+      "format": "html",
+      "text": "You received the refusal on 2026-09-04.",
+      "target_fact_key": "fact:decision_notice_date",
+      "expected_assertion": "2026-09-04",
+      "context": "asserted"
+    },
+    {
+      "id": "C14-034",
+      "language": "en",
+      "scenario": "L4",
+      "format": "txt",
+      "text": "The decision was served on 2026-09-04.",
+      "target_fact_key": "fact:decision_notice_date",
+      "expected_assertion": "2026-09-04",
+      "context": "asserted"
+    },
+    {
+      "id": "C14-035",
+      "language": "en",
+      "scenario": "L4",
+      "format": "eml",
+      "text": "Your appeal arrived on 2026-09-23.",
+      "target_fact_key": "fact:appeal_submission_date",
+      "expected_assertion": "2026-09-23",
+      "context": "asserted"
+    },
+    {
+      "id": "C14-036",
+      "language": "en",
+      "scenario": "L4",
+      "format": "html",
+      "text": "We received the appeal on 2026-09-23.",
+      "target_fact_key": "fact:appeal_submission_date",
+      "expected_assertion": "2026-09-23",
+      "context": "asserted"
+    },
+    {
+      "id": "C14-037",
+      "language": "en",
+      "scenario": "L4",
+      "format": "txt",
+      "text": "Your appeal was posted on 2026-09-23.",
+      "target_fact_key": "fact:appeal_submission_date",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-038",
+      "language": "en",
+      "scenario": "L4",
+      "format": "eml",
+      "text": "The decision was served on 2026-02-30.",
+      "target_fact_key": "fact:decision_notice_date",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-039",
+      "language": "en",
+      "scenario": "L4",
+      "format": "html",
+      "text": "Did you receive the refusal on 2026-09-04?",
+      "target_fact_key": "fact:visa_refusal_exists",
+      "expected_assertion": null,
+      "context": "conditional"
+    },
+    {
+      "id": "C14-040",
+      "language": "en",
+      "scenario": "L4",
+      "format": "txt",
+      "text": "The counsel wrote: \"You received the refusal on 2026-09-04.\"",
+      "target_fact_key": "fact:decision_notice_date",
+      "expected_assertion": null,
+      "context": "quoted"
+    },
+    {
+      "id": "C14-041",
+      "language": "en",
+      "scenario": "L4",
+      "format": "eml",
+      "text": "We have forwarded your inquiry to the competent office.",
+      "target_fact_key": "fact:appeal_received_by_correct_authority",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-042",
+      "language": "en",
+      "scenario": "L4",
+      "format": "html",
+      "text": "The competent appeal authority has received your appeal.",
+      "target_fact_key": "fact:appeal_received_by_correct_authority",
+      "expected_assertion": true,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-043",
+      "language": "en",
+      "scenario": "L5",
+      "format": "txt",
+      "text": "We hold the statement provided by your former spouse.",
+      "target_fact_key": "fact:authority_possesses_information",
+      "expected_assertion": true,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-044",
+      "language": "en",
+      "scenario": "L5",
+      "format": "eml",
+      "text": "We do not hold the information provided by your former spouse.",
+      "target_fact_key": "fact:authority_possesses_information",
+      "expected_assertion": false,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-045",
+      "language": "en",
+      "scenario": "L5",
+      "format": "html",
+      "text": "We rely on information from your former spouse as decisive.",
+      "target_fact_key": "fact:decisive_former_spouse_information",
+      "expected_assertion": true,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-046",
+      "language": "en",
+      "scenario": "L5",
+      "format": "txt",
+      "text": "We do not rely on information from your former spouse as decisive.",
+      "target_fact_key": "fact:decisive_former_spouse_information",
+      "expected_assertion": false,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-047",
+      "language": "en",
+      "scenario": "L5",
+      "format": "eml",
+      "text": "I requested the file before the decision.",
+      "target_fact_key": "fact:information_requested_predecision",
+      "expected_assertion": true,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-048",
+      "language": "en",
+      "scenario": "L5",
+      "format": "html",
+      "text": "I cannot obtain my former spouse's statement independently.",
+      "target_fact_key": "fact:applicant_cannot_obtain_information",
+      "expected_assertion": true,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-049",
+      "language": "en",
+      "scenario": "L5",
+      "format": "txt",
+      "text": "We will not disclose the information before the decision.",
+      "target_fact_key": "fact:authority_communication_state",
+      "expected_assertion": "withheld",
+      "context": "asserted"
+    },
+    {
+      "id": "C14-050",
+      "language": "en",
+      "scenario": "L5",
+      "format": "eml",
+      "text": "We have communicated the statement before the decision.",
+      "target_fact_key": "fact:authority_communication_state",
+      "expected_assertion": "communicated",
+      "context": "asserted"
+    },
+    {
+      "id": "C14-051",
+      "language": "en",
+      "scenario": "L5",
+      "format": "html",
+      "text": "No assessment of confidentiality has been conducted.",
+      "target_fact_key": "fact:confidentiality_review_state",
+      "expected_assertion": "not_considered",
+      "context": "asserted"
+    },
+    {
+      "id": "C14-052",
+      "language": "en",
+      "scenario": "L5",
+      "format": "txt",
+      "text": "An assessment of confidentiality has been made.",
+      "target_fact_key": "fact:confidentiality_review_state",
+      "expected_assertion": "considered",
+      "context": "asserted"
+    },
+    {
+      "id": "C14-053",
+      "language": "en",
+      "scenario": "L5",
+      "format": "eml",
+      "text": "The records might be confidential.",
+      "target_fact_key": "fact:confidentiality_review_state",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-054",
+      "language": "en",
+      "scenario": "L5",
+      "format": "html",
+      "text": "The applicant claims: \"We will not disclose the information before the decision.\"",
+      "target_fact_key": "fact:authority_communication_state",
+      "expected_assertion": null,
+      "context": "quoted"
+    },
+    {
+      "id": "C14-055",
+      "language": "en",
+      "scenario": "L5",
+      "format": "txt",
+      "text": "If we do not hold the information provided by your former spouse, notify us.",
+      "target_fact_key": "fact:authority_possesses_information",
+      "expected_assertion": null,
+      "context": "conditional"
+    },
+    {
+      "id": "C14-056",
+      "language": "en",
+      "scenario": "L5",
+      "format": "eml",
+      "text": "The former spouse says the application should be refused.",
+      "target_fact_key": "fact:decisive_former_spouse_information",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-057",
+      "language": "sv",
+      "scenario": "L1",
+      "format": "html",
+      "text": "Du får inte lämna in ansökan direkt på konsulatet.",
+      "target_fact_key": "element:procedure.access_state",
+      "expected_assertion": "denied",
+      "context": "asserted"
+    },
+    {
+      "id": "C14-058",
+      "language": "sv",
+      "scenario": "L1",
+      "format": "txt",
+      "text": "Du kan lämna in din ansökan direkt på konsulatet.",
+      "target_fact_key": "element:procedure.access_state",
+      "expected_assertion": "available",
+      "context": "asserted"
+    },
+    {
+      "id": "C14-059",
+      "language": "sv",
+      "scenario": "L1",
+      "format": "eml",
+      "text": "Vi kan inte ta emot ansökan direkt på konsulatet.",
+      "target_fact_key": "element:procedure.access_state",
+      "expected_assertion": "denied",
+      "context": "asserted"
+    },
+    {
+      "id": "C14-060",
+      "language": "sv",
+      "scenario": "L1",
+      "format": "html",
+      "text": "Du kan inte lämna in ansökan direkt hos konsulatet.",
+      "target_fact_key": "element:procedure.access_state",
+      "expected_assertion": "denied",
+      "context": "asserted"
+    },
+    {
+      "id": "C14-061",
+      "language": "sv",
+      "scenario": "L1",
+      "format": "txt",
+      "text": "Endast VFS tar emot ansökningar.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": true,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-062",
+      "language": "sv",
+      "scenario": "L1",
+      "format": "eml",
+      "text": "VFS är inte obligatoriskt.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": false,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-063",
+      "language": "sv",
+      "scenario": "L1",
+      "format": "html",
+      "text": "VFS är frivilligt.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": false,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-064",
+      "language": "sv",
+      "scenario": "L1",
+      "format": "txt",
+      "text": "Du måste ansöka via VFS.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": true,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-065",
+      "language": "sv",
+      "scenario": "L1",
+      "format": "eml",
+      "text": "Ansökan måste lämnas in via VFS.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": true,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-066",
+      "language": "sv",
+      "scenario": "L1",
+      "format": "html",
+      "text": "Konsulatet rekommenderar VFS.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-067",
+      "language": "sv",
+      "scenario": "L1",
+      "format": "txt",
+      "text": "Tid måste bokas i förväg.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-068",
+      "language": "sv",
+      "scenario": "L1",
+      "format": "eml",
+      "text": "Du behöver inte ansöka via VFS.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": false,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-069",
+      "language": "sv",
+      "scenario": "L1",
+      "format": "html",
+      "text": "Om du måste ansöka via VFS bör du kontakta oss.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": null,
+      "context": "conditional"
+    },
+    {
+      "id": "C14-070",
+      "language": "sv",
+      "scenario": "L1",
+      "format": "txt",
+      "text": "Brevet citerade: \"Du måste ansöka via VFS.\"",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": null,
+      "context": "quoted"
+    },
+    {
+      "id": "C14-071",
+      "language": "sv",
+      "scenario": "L1",
+      "format": "eml",
+      "text": "Vi får inte tvinga sökande till VFS.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-072",
+      "language": "sv",
+      "scenario": "L4",
+      "format": "html",
+      "text": "Din visumansökan har avslagits.",
+      "target_fact_key": "fact:visa_refusal_exists",
+      "expected_assertion": true,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-073",
+      "language": "sv",
+      "scenario": "L4",
+      "format": "txt",
+      "text": "Din visumansökan har inte avslagits.",
+      "target_fact_key": "fact:visa_refusal_exists",
+      "expected_assertion": false,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-074",
+      "language": "sv",
+      "scenario": "L4",
+      "format": "eml",
+      "text": "Vi har avslagit din visumansökan.",
+      "target_fact_key": "fact:visa_refusal_exists",
+      "expected_assertion": true,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-075",
+      "language": "sv",
+      "scenario": "L4",
+      "format": "html",
+      "text": "Visumansökan handläggs fortfarande.",
+      "target_fact_key": "fact:visa_refusal_exists",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-076",
+      "language": "sv",
+      "scenario": "L4",
+      "format": "txt",
+      "text": "Du delgavs avslagsbeslutet den 2026-09-04.",
+      "target_fact_key": "fact:decision_notice_date",
+      "expected_assertion": "2026-09-04",
+      "context": "asserted"
+    },
+    {
+      "id": "C14-077",
+      "language": "sv",
+      "scenario": "L4",
+      "format": "eml",
+      "text": "Avslagsbeslutet delgavs dig den 2026-09-05.",
+      "target_fact_key": "fact:decision_notice_date",
+      "expected_assertion": "2026-09-05",
+      "context": "asserted"
+    },
+    {
+      "id": "C14-078",
+      "language": "sv",
+      "scenario": "L4",
+      "format": "html",
+      "text": "Avslagsbeslutet fattades den 2026-09-04.",
+      "target_fact_key": "fact:decision_notice_date",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-079",
+      "language": "sv",
+      "scenario": "L4",
+      "format": "txt",
+      "text": "Vi mottog ditt överklagande den 2026-09-23.",
+      "target_fact_key": "fact:appeal_submission_date",
+      "expected_assertion": "2026-09-23",
+      "context": "asserted"
+    },
+    {
+      "id": "C14-080",
+      "language": "sv",
+      "scenario": "L4",
+      "format": "eml",
+      "text": "Ditt överklagande kom in den 2026-09-24.",
+      "target_fact_key": "fact:appeal_submission_date",
+      "expected_assertion": "2026-09-24",
+      "context": "asserted"
+    },
+    {
+      "id": "C14-081",
+      "language": "sv",
+      "scenario": "L4",
+      "format": "html",
+      "text": "Överklagandet postades den 2026-09-23.",
+      "target_fact_key": "fact:appeal_submission_date",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-082",
+      "language": "sv",
+      "scenario": "L4",
+      "format": "txt",
+      "text": "Om du delgavs avslagsbeslutet den 2026-09-04 kan du överklaga.",
+      "target_fact_key": "fact:decision_notice_date",
+      "expected_assertion": null,
+      "context": "conditional"
+    },
+    {
+      "id": "C14-083",
+      "language": "sv",
+      "scenario": "L4",
+      "format": "eml",
+      "text": "Fråga om ditt överklagande kom in den 2026-09-23.",
+      "target_fact_key": "fact:appeal_submission_date",
+      "expected_assertion": null,
+      "context": "conditional"
+    },
+    {
+      "id": "C14-084",
+      "language": "sv",
+      "scenario": "L5",
+      "format": "html",
+      "text": "Myndigheten har uppgifterna från din före detta make.",
+      "target_fact_key": "fact:authority_possesses_information",
+      "expected_assertion": true,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-085",
+      "language": "sv",
+      "scenario": "L5",
+      "format": "txt",
+      "text": "Myndigheten innehar informationen från din före detta make.",
+      "target_fact_key": "fact:authority_possesses_information",
+      "expected_assertion": true,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-086",
+      "language": "sv",
+      "scenario": "L5",
+      "format": "eml",
+      "text": "Vi kommer inte att lämna ut informationen före beslutet.",
+      "target_fact_key": "fact:authority_communication_state",
+      "expected_assertion": "withheld",
+      "context": "asserted"
+    },
+    {
+      "id": "C14-087",
+      "language": "sv",
+      "scenario": "L5",
+      "format": "html",
+      "text": "Vi överväger att lämna ut informationen.",
+      "target_fact_key": "fact:authority_communication_state",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-088",
+      "language": "sv",
+      "scenario": "L5",
+      "format": "txt",
+      "text": "Sekretess kan möjligen gälla.",
+      "target_fact_key": "fact:confidentiality_review_state",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-089",
+      "language": "sv",
+      "scenario": "L5",
+      "format": "eml",
+      "text": "Det kan finnas ett hinder mot utlämnande.",
+      "target_fact_key": "fact:authority_communication_state",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-090",
+      "language": "sv",
+      "scenario": "L1",
+      "format": "html",
+      "text": "Det står i citatet: \"VFS är inte obligatoriskt.\"",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": null,
+      "context": "quoted"
+    },
+    {
+      "id": "C14-091",
+      "language": "sv",
+      "scenario": "L1",
+      "format": "txt",
+      "text": "Du får ringa för att boka tid.",
+      "target_fact_key": "element:procedure.access_state",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-092",
+      "language": "sv",
+      "scenario": "L1",
+      "format": "eml",
+      "text": "Vi kan bara ge information per telefon.",
+      "target_fact_key": "element:procedure.access_state",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-093",
+      "language": "sv",
+      "scenario": "L4",
+      "format": "html",
+      "text": "Beslutet skickades den 2026-09-04.",
+      "target_fact_key": "fact:decision_notice_date",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-094",
+      "language": "sv",
+      "scenario": "L1",
+      "format": "txt",
+      "text": "Vi erbjöd en direkt ansökningstid.",
+      "target_fact_key": "element:procedure.access_state",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-095",
+      "language": "sv",
+      "scenario": "L1",
+      "format": "eml",
+      "text": "Konsulatet tar emot ansökningar personligen.",
+      "target_fact_key": "element:procedure.access_state",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-096",
+      "language": "sv",
+      "scenario": "L4",
+      "format": "html",
+      "text": "Har du delgivits beslutet?",
+      "target_fact_key": "fact:decision_notice_date",
+      "expected_assertion": null,
+      "context": "conditional"
+    },
+    {
+      "id": "C14-097",
+      "language": "tr",
+      "scenario": "L1",
+      "format": "txt",
+      "text": "Konsolosluğa doğrudan başvuru kabul edilmiyor.",
+      "target_fact_key": "element:procedure.access_state",
+      "expected_assertion": "denied",
+      "context": "asserted"
+    },
+    {
+      "id": "C14-098",
+      "language": "tr",
+      "scenario": "L1",
+      "format": "eml",
+      "text": "Konsolosluğa doğrudan başvuru kabul edilmeyecek.",
+      "target_fact_key": "element:procedure.access_state",
+      "expected_assertion": "denied",
+      "context": "asserted"
+    },
+    {
+      "id": "C14-099",
+      "language": "tr",
+      "scenario": "L1",
+      "format": "html",
+      "text": "Doğrudan başvurunuz reddedildi.",
+      "target_fact_key": "element:procedure.access_state",
+      "expected_assertion": "denied",
+      "context": "asserted"
+    },
+    {
+      "id": "C14-100",
+      "language": "tr",
+      "scenario": "L1",
+      "format": "txt",
+      "text": "Konsolosluğa doğrudan başvuru yapabilir.",
+      "target_fact_key": "element:procedure.access_state",
+      "expected_assertion": "available",
+      "context": "asserted"
+    },
+    {
+      "id": "C14-101",
+      "language": "tr",
+      "scenario": "L1",
+      "format": "eml",
+      "text": "Yalnızca VFS üzerinden başvuru yapılabilir.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": true,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-102",
+      "language": "tr",
+      "scenario": "L1",
+      "format": "html",
+      "text": "VFS üzerinden başvuru yapmak zorundasınız.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": true,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-103",
+      "language": "tr",
+      "scenario": "L1",
+      "format": "txt",
+      "text": "Başvurular sadece VFS aracılığıyla alınır.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": true,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-104",
+      "language": "tr",
+      "scenario": "L1",
+      "format": "eml",
+      "text": "VFS kullanımı isteğe bağlıdır.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": false,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-105",
+      "language": "tr",
+      "scenario": "L1",
+      "format": "html",
+      "text": "VFS zorunlu değildir.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": false,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-106",
+      "language": "tr",
+      "scenario": "L1",
+      "format": "txt",
+      "text": "VFS üzerinden başvurmak zorunda değilsiniz.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": false,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-107",
+      "language": "tr",
+      "scenario": "L1",
+      "format": "eml",
+      "text": "Randevu almak için VFS ile iletişime geçin.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-108",
+      "language": "tr",
+      "scenario": "L1",
+      "format": "html",
+      "text": "Sadece bilgi almak için VFS'yi arayın.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-109",
+      "language": "tr",
+      "scenario": "L1",
+      "format": "txt",
+      "text": "VFS önerilmektedir.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-110",
+      "language": "tr",
+      "scenario": "L1",
+      "format": "eml",
+      "text": "Eğer yalnızca VFS üzerinden başvuru yapılabilir ise, lütfen sorun.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": null,
+      "context": "conditional"
+    },
+    {
+      "id": "C14-111",
+      "language": "tr",
+      "scenario": "L1",
+      "format": "html",
+      "text": "İddiaya göre \"Yalnızca VFS üzerinden başvuru yapılabilir.\"",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": null,
+      "context": "quoted"
+    },
+    {
+      "id": "C14-112",
+      "language": "tr",
+      "scenario": "L4",
+      "format": "txt",
+      "text": "Vize başvurunuz reddedilmiştir.",
+      "target_fact_key": "fact:visa_refusal_exists",
+      "expected_assertion": true,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-113",
+      "language": "tr",
+      "scenario": "L4",
+      "format": "eml",
+      "text": "Vize başvurunuzu reddettik.",
+      "target_fact_key": "fact:visa_refusal_exists",
+      "expected_assertion": true,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-114",
+      "language": "tr",
+      "scenario": "L4",
+      "format": "html",
+      "text": "Vize başvurunuz reddedilmemiştir.",
+      "target_fact_key": "fact:visa_refusal_exists",
+      "expected_assertion": false,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-115",
+      "language": "tr",
+      "scenario": "L4",
+      "format": "txt",
+      "text": "Başvurunuz hâlâ incelemede.",
+      "target_fact_key": "fact:visa_refusal_exists",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-116",
+      "language": "tr",
+      "scenario": "L4",
+      "format": "eml",
+      "text": "Vize ret kararı 2026-09-04 tarihinde tebliğ edildi.",
+      "target_fact_key": "fact:decision_notice_date",
+      "expected_assertion": "2026-09-04",
+      "context": "asserted"
+    },
+    {
+      "id": "C14-117",
+      "language": "tr",
+      "scenario": "L4",
+      "format": "html",
+      "text": "Ret kararı size 2026-09-05 tarihinde tebliğ edildi.",
+      "target_fact_key": "fact:decision_notice_date",
+      "expected_assertion": "2026-09-05",
+      "context": "asserted"
+    },
+    {
+      "id": "C14-118",
+      "language": "tr",
+      "scenario": "L4",
+      "format": "txt",
+      "text": "Ret kararı 2026-09-04 tarihinde hazırlandı.",
+      "target_fact_key": "fact:decision_notice_date",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-119",
+      "language": "tr",
+      "scenario": "L4",
+      "format": "eml",
+      "text": "İtirazınız 2026-09-23 tarihinde alındı.",
+      "target_fact_key": "fact:appeal_submission_date",
+      "expected_assertion": "2026-09-23",
+      "context": "asserted"
+    },
+    {
+      "id": "C14-120",
+      "language": "tr",
+      "scenario": "L4",
+      "format": "html",
+      "text": "İtirazınız 2026-09-24 tarihinde teslim alındı.",
+      "target_fact_key": "fact:appeal_submission_date",
+      "expected_assertion": "2026-09-24",
+      "context": "asserted"
+    },
+    {
+      "id": "C14-121",
+      "language": "tr",
+      "scenario": "L4",
+      "format": "txt",
+      "text": "İtirazınızı 2026-09-23 tarihinde gönderdiniz.",
+      "target_fact_key": "fact:appeal_submission_date",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-122",
+      "language": "tr",
+      "scenario": "L4",
+      "format": "eml",
+      "text": "Eğer vize ret kararı 2026-09-04 tarihinde tebliğ edildi ise süre başlar.",
+      "target_fact_key": "fact:decision_notice_date",
+      "expected_assertion": null,
+      "context": "conditional"
+    },
+    {
+      "id": "C14-123",
+      "language": "tr",
+      "scenario": "L4",
+      "format": "html",
+      "text": "Acaba itirazınız 2026-09-23 tarihinde alındı mı?",
+      "target_fact_key": "fact:appeal_submission_date",
+      "expected_assertion": null,
+      "context": "conditional"
+    },
+    {
+      "id": "C14-124",
+      "language": "tr",
+      "scenario": "L5",
+      "format": "txt",
+      "text": "Kurum eski eşinizden gelen bilgileri elinde bulunduruyor.",
+      "target_fact_key": "fact:authority_possesses_information",
+      "expected_assertion": true,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-125",
+      "language": "tr",
+      "scenario": "L5",
+      "format": "eml",
+      "text": "Kurum eski eşinizden gelen bilgileri saklıyor.",
+      "target_fact_key": "fact:authority_possesses_information",
+      "expected_assertion": true,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-126",
+      "language": "tr",
+      "scenario": "L5",
+      "format": "html",
+      "text": "Bilgileri karardan önce paylaşmayacağız.",
+      "target_fact_key": "fact:authority_communication_state",
+      "expected_assertion": "withheld",
+      "context": "asserted"
+    },
+    {
+      "id": "C14-127",
+      "language": "tr",
+      "scenario": "L5",
+      "format": "txt",
+      "text": "Bilgilerin paylaşılması mümkün olabilir.",
+      "target_fact_key": "fact:authority_communication_state",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-128",
+      "language": "tr",
+      "scenario": "L5",
+      "format": "eml",
+      "text": "Belki dosyayı görebilirsiniz.",
+      "target_fact_key": "fact:authority_communication_state",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-129",
+      "language": "tr",
+      "scenario": "L1",
+      "format": "html",
+      "text": "Bir yetkili VFS kullanımını tavsiye etti.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-130",
+      "language": "tr",
+      "scenario": "L1",
+      "format": "txt",
+      "text": "Alıntı: \"VFS zorunlu değildir.\"",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": null,
+      "context": "quoted"
+    },
+    {
+      "id": "C14-131",
+      "language": "tr",
+      "scenario": "L1",
+      "format": "eml",
+      "text": "Sadece konsolosluk web sitesini okuyun.",
+      "target_fact_key": "element:procedure.access_state",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-132",
+      "language": "tr",
+      "scenario": "L1",
+      "format": "html",
+      "text": "E-postayı göndermeniz gerekiyor.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-133",
+      "language": "tr",
+      "scenario": "L4",
+      "format": "txt",
+      "text": "Kararın hazırlanma tarihi 2026-09-04.",
+      "target_fact_key": "fact:decision_notice_date",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-134",
+      "language": "tr",
+      "scenario": "L1",
+      "format": "eml",
+      "text": "Başvuru sırasında herhangi bir ücret alınmadı.",
+      "target_fact_key": "fact:mission_requires_vfs_only",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-135",
+      "language": "tr",
+      "scenario": "L4",
+      "format": "html",
+      "text": "Ret kararı önceden açıklanmış olabilir.",
+      "target_fact_key": "fact:visa_refusal_exists",
+      "expected_assertion": null,
+      "context": "asserted"
+    },
+    {
+      "id": "C14-136",
+      "language": "tr",
+      "scenario": "L1",
+      "format": "txt",
+      "text": "Doğrudan başvuru seçeneği inceleniyor.",
+      "target_fact_key": "element:procedure.access_state",
+      "expected_assertion": null,
+      "context": "asserted"
+    }
+  ]
+}

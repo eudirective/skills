@@ -1,0 +1,299 @@
+{
+  "benchmark_version": "0.1.0",
+  "scope": "manually_authored_synthetic_lexical_challenge_not_legal_merits",
+  "notes": [
+    "Thirty-six short synthetic prose snippets, separately recorded from core development fixtures.",
+    "Labels represent target textual statement extraction, not true facts or adjudicated legal rights.",
+    "Alternative phrasings intentionally measure missed observations; not independent legal-expert review."
+  ],
+  "cases": [
+    {
+      "sample_id": "l1-01",
+      "scenario": "L1",
+      "format": "eml",
+      "text": "Your direct appointment request has been denied.",
+      "fact_key": "element:procedure.access_state",
+      "expected_documentary_statement": "denied"
+    },
+    {
+      "sample_id": "l1-02",
+      "scenario": "L1",
+      "format": "txt",
+      "text": "We will not permit direct lodging at the consulate.",
+      "fact_key": "element:procedure.access_state",
+      "expected_documentary_statement": "denied"
+    },
+    {
+      "sample_id": "l1-03",
+      "scenario": "L1",
+      "format": "txt",
+      "text": "Your direct appointment request has not been denied.",
+      "fact_key": "element:procedure.access_state",
+      "expected_documentary_statement": "available"
+    },
+    {
+      "sample_id": "l1-04",
+      "scenario": "L1",
+      "format": "html",
+      "text": "You must apply through VFS only.",
+      "fact_key": "fact:mission_requires_vfs_only",
+      "expected_documentary_statement": true
+    },
+    {
+      "sample_id": "l1-05",
+      "scenario": "L1",
+      "format": "txt",
+      "text": "You do not need to apply through VFS.",
+      "fact_key": "fact:mission_requires_vfs_only",
+      "expected_documentary_statement": false
+    },
+    {
+      "sample_id": "l1-06",
+      "scenario": "L1",
+      "format": "txt",
+      "text": "Please arrange an appointment through VFS.",
+      "fact_key": "fact:mission_requires_vfs_only",
+      "expected_documentary_statement": null
+    },
+    {
+      "sample_id": "l1-07",
+      "scenario": "L1",
+      "format": "eml",
+      "text": "All EU family applications must be handled exclusively by VFS.",
+      "fact_key": "fact:mission_requires_vfs_only",
+      "expected_documentary_statement": true
+    },
+    {
+      "sample_id": "l1-08",
+      "scenario": "L1",
+      "format": "txt",
+      "text": "Walk-in service is unavailable today.",
+      "fact_key": "element:procedure.access_state",
+      "expected_documentary_statement": null
+    },
+    {
+      "sample_id": "l1-09",
+      "scenario": "L1",
+      "format": "eml",
+      "text": "As an EU family member I request a direct consular appointment by email.",
+      "fact_key": "fact:eu_family_direct_request",
+      "expected_documentary_statement": true
+    },
+    {
+      "sample_id": "l1-10",
+      "scenario": "L1",
+      "format": "txt",
+      "text": "I wish to lodge my spouse visa at the mission directly.",
+      "fact_key": "fact:eu_family_direct_request",
+      "expected_documentary_statement": true
+    },
+    {
+      "sample_id": "l1-11",
+      "scenario": "L1",
+      "format": "txt",
+      "text": "VFS remains an optional service provider.",
+      "fact_key": "fact:mission_requires_vfs_only",
+      "expected_documentary_statement": false
+    },
+    {
+      "sample_id": "l1-12",
+      "scenario": "L1",
+      "format": "txt",
+      "text": "You must apply through VFS only. You do not need to apply through VFS.",
+      "fact_key": "fact:mission_requires_vfs_only",
+      "expected_documentary_statement": "conflict"
+    },
+    {
+      "sample_id": "l4-01",
+      "scenario": "L4",
+      "format": "txt",
+      "text": "Your visa application has been refused.",
+      "fact_key": "fact:visa_refusal_exists",
+      "expected_documentary_statement": true
+    },
+    {
+      "sample_id": "l4-02",
+      "scenario": "L4",
+      "format": "eml",
+      "text": "Your visa application has not been refused.",
+      "fact_key": "fact:visa_refusal_exists",
+      "expected_documentary_statement": false
+    },
+    {
+      "sample_id": "l4-03",
+      "scenario": "L4",
+      "format": "txt",
+      "text": "We rejected the visa application.",
+      "fact_key": "fact:visa_refusal_exists",
+      "expected_documentary_statement": true
+    },
+    {
+      "sample_id": "l4-04",
+      "scenario": "L4",
+      "format": "html",
+      "text": "You were notified of the refusal on 2026-09-04.",
+      "fact_key": "fact:decision_notice_date",
+      "expected_documentary_statement": "2026-09-04"
+    },
+    {
+      "sample_id": "l4-05",
+      "scenario": "L4",
+      "format": "txt",
+      "text": "The decision was served on 2026-09-04.",
+      "fact_key": "fact:decision_notice_date",
+      "expected_documentary_statement": "2026-09-04"
+    },
+    {
+      "sample_id": "l4-06",
+      "scenario": "L4",
+      "format": "txt",
+      "text": "The authority received your appeal on 2026-09-23.",
+      "fact_key": "fact:appeal_submission_date",
+      "expected_documentary_statement": "2026-09-23"
+    },
+    {
+      "sample_id": "l4-07",
+      "scenario": "L4",
+      "format": "eml",
+      "text": "Your appeal arrived on 2026-09-23.",
+      "fact_key": "fact:appeal_submission_date",
+      "expected_documentary_statement": "2026-09-23"
+    },
+    {
+      "sample_id": "l4-08",
+      "scenario": "L4",
+      "format": "txt",
+      "text": "We confirm receipt of the appeal by the competent appeals intake office.",
+      "fact_key": "fact:appeal_received_by_correct_authority",
+      "expected_documentary_statement": true
+    },
+    {
+      "sample_id": "l4-09",
+      "scenario": "L4",
+      "format": "txt",
+      "text": "We confirm receipt of the appeal by an office without appeal jurisdiction.",
+      "fact_key": "fact:appeal_received_by_correct_authority",
+      "expected_documentary_statement": false
+    },
+    {
+      "sample_id": "l4-10",
+      "scenario": "L4",
+      "format": "txt",
+      "text": "We have forwarded your inquiry to the appeals office.",
+      "fact_key": "fact:appeal_received_by_correct_authority",
+      "expected_documentary_statement": null
+    },
+    {
+      "sample_id": "l4-11",
+      "scenario": "L4",
+      "format": "txt",
+      "text": "You were notified of the refusal on 2026-02-30.",
+      "fact_key": "fact:decision_notice_date",
+      "expected_documentary_statement": null
+    },
+    {
+      "sample_id": "l4-12",
+      "scenario": "L4",
+      "format": "txt",
+      "text": "You were notified of the refusal on 2026-09-05.",
+      "fact_key": "fact:decision_notice_date",
+      "expected_documentary_statement": "2026-09-05"
+    },
+    {
+      "sample_id": "l5-01",
+      "scenario": "L5",
+      "format": "html",
+      "text": "The authority holds the information provided by your former spouse.",
+      "fact_key": "fact:authority_possesses_information",
+      "expected_documentary_statement": true
+    },
+    {
+      "sample_id": "l5-02",
+      "scenario": "L5",
+      "format": "txt",
+      "text": "The authority does not hold the information provided by your former spouse.",
+      "fact_key": "fact:authority_possesses_information",
+      "expected_documentary_statement": false
+    },
+    {
+      "sample_id": "l5-03",
+      "scenario": "L5",
+      "format": "txt",
+      "text": "We rely on information from your former spouse as decisive for this decision.",
+      "fact_key": "fact:decisive_former_spouse_information",
+      "expected_documentary_statement": true
+    },
+    {
+      "sample_id": "l5-04",
+      "scenario": "L5",
+      "format": "eml",
+      "text": "We do not rely on information from your former spouse as decisive for this decision.",
+      "fact_key": "fact:decisive_former_spouse_information",
+      "expected_documentary_statement": false
+    },
+    {
+      "sample_id": "l5-05",
+      "scenario": "L5",
+      "format": "txt",
+      "text": "Before the decision, I request access to that former-spouse statement.",
+      "fact_key": "fact:information_requested_predecision",
+      "expected_documentary_statement": true
+    },
+    {
+      "sample_id": "l5-06",
+      "scenario": "L5",
+      "format": "txt",
+      "text": "I requested the file before the decision.",
+      "fact_key": "fact:information_requested_predecision",
+      "expected_documentary_statement": true
+    },
+    {
+      "sample_id": "l5-07",
+      "scenario": "L5",
+      "format": "txt",
+      "text": "We will not disclose the information before the decision.",
+      "fact_key": "fact:authority_communication_state",
+      "expected_documentary_statement": "withheld"
+    },
+    {
+      "sample_id": "l5-08",
+      "scenario": "L5",
+      "format": "txt",
+      "text": "We have communicated the information before the decision.",
+      "fact_key": "fact:authority_communication_state",
+      "expected_documentary_statement": "communicated"
+    },
+    {
+      "sample_id": "l5-09",
+      "scenario": "L5",
+      "format": "txt",
+      "text": "No assessment of confidentiality has been made.",
+      "fact_key": "fact:confidentiality_review_state",
+      "expected_documentary_statement": "not_considered"
+    },
+    {
+      "sample_id": "l5-10",
+      "scenario": "L5",
+      "format": "txt",
+      "text": "An assessment of confidentiality has been made.",
+      "fact_key": "fact:confidentiality_review_state",
+      "expected_documentary_statement": "considered"
+    },
+    {
+      "sample_id": "l5-11",
+      "scenario": "L5",
+      "format": "txt",
+      "text": "The record might be confidential.",
+      "fact_key": "fact:confidentiality_review_state",
+      "expected_documentary_statement": null
+    },
+    {
+      "sample_id": "l5-12",
+      "scenario": "L5",
+      "format": "txt",
+      "text": "I cannot obtain my former spouse's statement independently.",
+      "fact_key": "fact:applicant_cannot_obtain_information",
+      "expected_documentary_statement": true
+    }
+  ]
+}

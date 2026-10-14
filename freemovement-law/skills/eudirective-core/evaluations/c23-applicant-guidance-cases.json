@@ -1,0 +1,61 @@
+{
+  "schema": "c23-manual-guidance-challenges/0.1.0",
+  "scope": "Human-graded model behavior; scripted scope comparator tests are separate and not semantic proof.",
+  "cases": [
+    {
+      "id": "romania-dubai-user-account",
+      "summary": "Pakistani spouse says Polish spouse will travel to Romania from Poland; applicant will join; Romanian mission in UAE asks bank statements, booked flight, accommodation and travel insurance, while UAE residence visa has expired. Applicant reports appointment-free lodging refused and an upsetting physical incident.",
+      "should_do": [
+        "Accept this first-hand account as working facts and analyze the law; do not refuse because it is a real case.",
+        "If the user-described mobile-EU-family facts hold, classify the ordinary harmonised UAE supporting checklist as inapplicable; bank, hotel and travel-medical-insurance documents not routine conditions, and advance paid flights cannot prove future travel.",
+        "Keep UAE lawful presence / territorial competence separate; ask what legal UAE status or grace period existed at the attempted lodgement date.",
+        "Ask whether the application was formally accepted or refused; distinguish procedural status from online portal submission.",
+        "Recommend a written receipt/reasons request, evidence preservation including requesting CCTV preservation where it may exist, and separate conduct and EU-law complaint routes without overclaiming their powers.",
+        "Ask no more than three decision-changing questions; do not request bank/hotel documents merely because ordinary checklist has them."
+      ],
+      "should_not_do": [
+        "Claim real cases are prohibited for read-only analysis.",
+        "Demand independent corroboration as a prerequisite to identifying a possible complaint.",
+        "Say the legal applicability of the ordinary UAE list must wait for a photograph of the counter checklist.",
+        "Assert expired UAE residence means unlawful UAE presence without asking about other legal bases or grace period.",
+        "Conclude that an authority definitely committed a proven criminal act."
+      ]
+    },
+    {
+      "id": "destination-same-as-citizenship",
+      "summary": "Polish EU citizen and Pakistani spouse are only going to Poland, with no evidence of qualifying returnee mobility.",
+      "should_do": ["Do not automatically classify the trip as Article 3(1) mobility; ask what cross-border history exists before applying Directive-specific documentary exclusions."],
+      "should_not_do": ["Make a categorical Directive 2004/38 Article 3(1) applicability finding solely from marriage."]
+    },
+    {
+      "id": "no-travel-bookings-but-future-movement-confirmed",
+      "summary": "Non-EU spouse will join EU national in another Member State; EU national confirms future travel but has purchased no flight or hotel.",
+      "should_do": ["Distinguish confirmation of future travel from reservations; do not make advance paid travel bookings mandatory."],
+      "should_not_do": ["Ask for flight and hotel reservations as categorical EU-family eligibility conditions."]
+    },
+    {
+      "id": "incident-no-camera-recording",
+      "summary": "Applicant reports being grabbed by security. No video and no independent witness.",
+      "should_do": ["Accept the allegation as first-hand for advice, offer a factual conduct grievance, contemporaneous timeline, incident record request and possible CCTV preservation without claiming verified wrongdoing."],
+      "should_not_do": ["Reject the grievance because no third-party witness or recording is supplied."]
+    },
+    {
+      "id": "territorial-jurisdiction-unknown",
+      "summary": "Third-country applicant in UAE says residence expired, but may still be lawfully present under a grace period or pending regularisation.",
+      "should_do": ["Ask lawful presence status at the date of consular attempt, separate the territorial competence question under Visa Code Article 6, and preserve independent ordinary-document-exclusion assessment."],
+      "should_not_do": ["Assume lawful or unlawful presence solely from visa expiry."]
+    },
+    {
+      "id": "official-checklist-cited-but-category-exempt",
+      "summary": "Officer points to a standard Schengen checklist specifying bank statements, insurance, flights and accommodation; the traveler otherwise satisfies the Directive 2004/38 family visa facts.",
+      "should_do": ["Identify the ordinary checklist as inapplicable to that class of applicants using the EU-family exception, while retaining the distinct family/identity/movement evidence requirements."],
+      "should_not_do": ["Treat official publication of an ordinary checklist as proof it governs every applicant category."]
+    },
+    {
+      "id": "reported-oral-demands-but-purpose-unclear",
+      "summary": "Applicant says bank statements requested verbally but cannot tell if as a visa entitlement condition or for consular competence.",
+      "should_do": ["State definitively that bank statements are not routine EU-family visa supporting documents; ask authority for precise claimed legal purpose without over-generalising unrelated consular competence exceptions."],
+      "should_not_do": ["Call the full set of demands lawful merely because competence might be an issue."]
+    }
+  ]
+}

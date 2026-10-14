@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/eudirective/c22-transport-request.schema.json",
+  "title": "C22a adapter-neutral synthetic-only request",
+  "type": "object",
+  "required": ["interface_version", "operation"],
+  "additionalProperties": false,
+  "properties": {
+    "interface_version": {"const": "0.1.0"},
+    "operation": {"enum": ["capabilities", "source_audit", "privacy_preview", "privacy_verify", "c17_feedback_preview", "c17_feedback_verify", "cohort_preview", "cohort_verify"]},
+    "fixture": {"enum": ["c21-demo", "L1", "L2", "L3", "L4", "L5", "L6", "L7", "L8"]},
+    "profile": {"enum": ["internal_review_preview", "public_story_preview", "feedback_aggregate_preview"]}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"operation": {"enum": ["privacy_preview", "privacy_verify"]}}, "required": ["operation"]},
+      "then": {"required": ["fixture", "profile"], "properties": {"fixture": {"const": "c21-demo"}}},
+      "else": {
+        "if": {"properties": {"operation": {"enum": ["c17_feedback_preview", "c17_feedback_verify"]}}, "required": ["operation"]},
+        "then": {"required": ["fixture"], "properties": {"fixture": {"enum": ["L1", "L2", "L3", "L4", "L5", "L6", "L7", "L8"]}}, "not": {"required": ["profile"]}},
+        "else": {"not": {"anyOf": [{"required": ["fixture"]}, {"required": ["profile"]}]}}
+      }
+    }
+  ],
+  "description": "Transport payload carries only operation and pinned fictional fixture selector. Output directory is supplied by the trusted host, separately from the request. No freeform case/document input."
+}

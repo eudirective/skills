@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "C5b principle catalogue v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["catalog_version", "principles"],
+  "properties": {
+    "catalog_version": {"const": "0.1.0"},
+    "principles": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 100,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["principle_id", "title", "kind", "requires_eu_law_scope", "article_41_direct_addressee_boundary", "source_refs", "description"],
+        "properties": {
+          "principle_id": {"type": "string", "pattern": "^[a-z][a-z0-9._-]{1,79}$"},
+          "title": {"type": "string", "minLength": 1, "maxLength": 300},
+          "kind": {"enum": ["general_principle", "interpretive_method", "remedial_principle", "charter_provision"]},
+          "requires_eu_law_scope": {"type": "boolean"},
+          "article_41_direct_addressee_boundary": {"type": "boolean"},
+          "source_refs": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 20,
+            "uniqueItems": true,
+            "items": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$"}
+          },
+          "description": {"type": "string", "minLength": 1, "maxLength": 1200}
+        }
+      }
+    }
+  }
+}

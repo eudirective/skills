@@ -1,0 +1,19 @@
+{
+  "schema": "c24-abstract-case-trace/0.1.0",
+  "mode": "abstract_read_only_advisory",
+  "revision": 2,
+  "facts": {
+    "eu_citizen_moving_to_other_member_state": {"value": "yes", "origin": "user_account", "change_reason": null},
+    "non_eu_direct_family_member": {"value": "yes", "origin": "user_account", "change_reason": null},
+    "accompany_or_join": {"value": "yes", "origin": "user_account", "change_reason": null},
+    "authority_demanded_extra_documents": {"value": "yes", "origin": "authority_reported_by_user", "change_reason": null},
+    "lawful_presence_in_consular_country": {"value": "yes", "origin": "user_account", "change_reason": "new_answer_to_question"},
+    "application_formally_lodged": {"value": "no", "origin": "user_account", "change_reason": "new_answer_to_question"},
+    "written_refusal_served": {"value": "no", "origin": "user_account", "change_reason": "new_answer_to_question"}
+  },
+  "requested_issues": ["ordinary_supporting_documents", "consular_territorial_competence", "lodgement_and_written_decision"],
+  "document_demands": [
+    {"item": "bank_statements", "purpose": "visa_entitlement", "mandatory": true},
+    {"item": "travel_medical_insurance", "purpose": "visa_entitlement", "mandatory": true}
+  ]
+}

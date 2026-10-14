@@ -1,0 +1,46 @@
+{
+  "contract_version": "0.2.0",
+  "module_family": "applicant_country",
+  "module_id": "applicant-country-xx",
+  "jurisdiction": "XX",
+  "module_version": "0.1.0",
+  "pack_version": "0.1.0",
+  "source_records": [
+    {
+      "source_id": "zz:src:fixture",
+      "title": "Synthetic local source",
+      "authority": "Fixture local publisher",
+      "source_type": "fixture",
+      "scope": "synthetic testing only",
+      "language": "en",
+      "verified_at": "2026-10-04T20:00:00Z",
+      "effective_from": null,
+      "effective_to": null,
+      "locator": null,
+      "content_sha256": "2222222222222222222222222222222222222222222222222222222222222222",
+      "status": "current",
+      "content_kind": "authoritative_bundled_text",
+      "authenticity_state": "verified_official"
+    }
+  ],
+  "rule_records": [],
+  "authority_records": [],
+  "gap_records": [],
+  "operational_records": [
+    {
+      "record_id": "xx:op:fixture",
+      "category": "appointment_channel",
+      "description": "Synthetic local operational record.",
+      "observed_at": "2026-10-04T20:00:00Z",
+      "destination_state": "SE",
+      "source_refs": [
+        "zz:src:fixture"
+      ],
+      "evidence_quality": "official"
+    }
+  ],
+  "deadline_records": [],
+  "route_records": [],
+  "id_namespace": "xx",
+  "attack_angle_records": []
+}

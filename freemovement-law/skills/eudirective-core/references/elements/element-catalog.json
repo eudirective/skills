@@ -1,0 +1,2105 @@
+{
+  "model_version": "0.2.0",
+  "families": [
+    {
+      "family_id": "person_status",
+      "name": "Person/status",
+      "definition": "Legal and factual status of relevant persons."
+    },
+    {
+      "family_id": "relationship",
+      "name": "Relationship",
+      "definition": "Family or dependency relationship between relevant persons."
+    },
+    {
+      "family_id": "geography",
+      "name": "Geography/topology",
+      "definition": "Distinct country/state roles in the case."
+    },
+    {
+      "family_id": "movement",
+      "name": "Movement",
+      "definition": "Cross-border movement and accompanying/joining context."
+    },
+    {
+      "family_id": "procedure",
+      "name": "Procedure",
+      "definition": "Procedure type, stage and access channel."
+    },
+    {
+      "family_id": "legal_regime",
+      "name": "Legal regime",
+      "definition": "Potentially applicable legal frameworks."
+    },
+    {
+      "family_id": "evidence",
+      "name": "Evidence",
+      "definition": "Evidence status, provenance and conflict state."
+    },
+    {
+      "family_id": "time",
+      "name": "Time",
+      "definition": "Events, triggers and calculated dates."
+    },
+    {
+      "family_id": "authority",
+      "name": "Authority",
+      "definition": "Competence, jurisdiction, powers and institutional role."
+    },
+    {
+      "family_id": "rule",
+      "name": "Rule",
+      "definition": "Declarative sourced rules and operator support."
+    },
+    {
+      "family_id": "attack_angle",
+      "name": "Attack angle",
+      "definition": "Potential categories of non-compliance and their prerequisite state."
+    },
+    {
+      "family_id": "completeness",
+      "name": "Completeness",
+      "definition": "Coverage and cannot-assess states."
+    },
+    {
+      "family_id": "strategy",
+      "name": "Strategy",
+      "definition": "Urgency and action-selection properties."
+    },
+    {
+      "family_id": "privacy_control",
+      "name": "Privacy/control",
+      "definition": "Purpose, disclosure eligibility, approval and linkability."
+    },
+    {
+      "family_id": "source",
+      "name": "Source",
+      "definition": "Freshness and ownership state for legal/operational sources."
+    },
+    {
+      "family_id": "module",
+      "name": "Module",
+      "definition": "Availability and role of optional/required modules."
+    },
+    {
+      "family_id": "conclusion",
+      "name": "Conclusion",
+      "definition": "Controlled conclusion-state markers."
+    },
+    {
+      "family_id": "asset",
+      "name": "Asset",
+      "definition": "Distribution status of records or artifacts."
+    },
+    {
+      "family_id": "legal_principle",
+      "name": "Legal principle",
+      "definition": "EU/general legal principles, their source, applicability and scoped effect."
+    }
+  ],
+  "elements": [
+    {
+      "element_id": "person_status.eu_citizen_status",
+      "family": "person_status",
+      "definition": "EU citizenship/relevant citizenship status of a person.",
+      "value_type": "string",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "case_workspace",
+        "member_state",
+        "applicant_country",
+        "core",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "regime_resolver"
+      ]
+    },
+    {
+      "element_id": "person_status.family_member_status",
+      "family": "person_status",
+      "definition": "Claimed or established family-member status.",
+      "value_type": "string",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "case_workspace",
+        "member_state",
+        "applicant_country",
+        "core",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "regime_resolver",
+        "evidence_engine"
+      ]
+    },
+    {
+      "element_id": "person_status.economic_status",
+      "family": "person_status",
+      "definition": "Worker, self-employed, student, self-sufficient, jobseeker or other relevant status.",
+      "value_type": "string",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "case_workspace",
+        "member_state",
+        "applicant_country",
+        "core",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "regime_resolver"
+      ]
+    },
+    {
+      "element_id": "relationship.type",
+      "family": "relationship",
+      "definition": "Legal/factual relationship category.",
+      "value_type": "string",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "case_workspace",
+        "member_state",
+        "applicant_country",
+        "core",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "regime_resolver",
+        "evidence_engine"
+      ]
+    },
+    {
+      "element_id": "relationship.dependency_status",
+      "family": "relationship",
+      "definition": "Dependency/household/support status where relevant.",
+      "value_type": "string",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "case_workspace",
+        "member_state",
+        "applicant_country",
+        "core",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "regime_resolver",
+        "evidence_engine"
+      ]
+    },
+    {
+      "element_id": "relationship.accompanying_or_joining",
+      "family": "relationship",
+      "definition": "Whether the family member accompanies or joins the relevant Union citizen.",
+      "value_type": "boolean",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "case_workspace",
+        "member_state",
+        "applicant_country",
+        "core",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "regime_resolver"
+      ]
+    },
+    {
+      "element_id": "geography.nationality_state",
+      "family": "geography",
+      "definition": "Nationality state role.",
+      "value_type": "jurisdiction",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "case_workspace"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "topology",
+        "regime_resolver"
+      ]
+    },
+    {
+      "element_id": "geography.residence_state",
+      "family": "geography",
+      "definition": "Current residence state role.",
+      "value_type": "jurisdiction",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "case_workspace"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "topology",
+        "regime_resolver"
+      ]
+    },
+    {
+      "element_id": "geography.work_state",
+      "family": "geography",
+      "definition": "Work/employment state role.",
+      "value_type": "jurisdiction",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "case_workspace"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "topology",
+        "regime_resolver"
+      ]
+    },
+    {
+      "element_id": "geography.host_state",
+      "family": "geography",
+      "definition": "Host Member State role.",
+      "value_type": "jurisdiction",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "case_workspace"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "topology",
+        "regime_resolver"
+      ]
+    },
+    {
+      "element_id": "geography.intended_residence_state",
+      "family": "geography",
+      "definition": "Intended residence state role.",
+      "value_type": "jurisdiction",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "case_workspace"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "topology",
+        "regime_resolver"
+      ]
+    },
+    {
+      "element_id": "geography.application_country",
+      "family": "geography",
+      "definition": "Country/place where the application is lodged or appointment sought.",
+      "value_type": "jurisdiction",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "case_workspace"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "topology",
+        "module_router"
+      ]
+    },
+    {
+      "element_id": "geography.deciding_state",
+      "family": "geography",
+      "definition": "State whose authority decides the matter.",
+      "value_type": "jurisdiction",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "case_workspace"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "topology",
+        "authority_engine"
+      ]
+    },
+    {
+      "element_id": "geography.representing_state",
+      "family": "geography",
+      "definition": "Representing state where representation arrangements matter.",
+      "value_type": "jurisdiction",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "case_workspace"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "topology",
+        "authority_engine"
+      ]
+    },
+    {
+      "element_id": "geography.issuing_state",
+      "family": "geography",
+      "definition": "State issuing a relevant document.",
+      "value_type": "jurisdiction",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "case_workspace"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "topology",
+        "evidence_engine"
+      ]
+    },
+    {
+      "element_id": "geography.challenged_authority_state",
+      "family": "geography",
+      "definition": "State of the authority whose act/omission is challenged.",
+      "value_type": "jurisdiction",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "case_workspace"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "topology",
+        "authority_engine"
+      ]
+    },
+    {
+      "element_id": "movement.cross_border",
+      "family": "movement",
+      "definition": "Whether a legally relevant cross-border movement exists.",
+      "value_type": "boolean",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "case_workspace",
+        "member_state",
+        "applicant_country",
+        "core",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "blocks_dependent_claim",
+      "consumers": [
+        "regime_resolver"
+      ]
+    },
+    {
+      "element_id": "movement.accompanying_joining",
+      "family": "movement",
+      "definition": "Movement relation between relevant persons.",
+      "value_type": "string",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "case_workspace",
+        "member_state",
+        "applicant_country",
+        "core",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "regime_resolver"
+      ]
+    },
+    {
+      "element_id": "movement.returnee_context",
+      "family": "movement",
+      "definition": "Return-to-home-state/derived-right context if asserted.",
+      "value_type": "boolean",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "case_workspace",
+        "member_state",
+        "applicant_country",
+        "core",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "regime_resolver"
+      ]
+    },
+    {
+      "element_id": "procedure.type",
+      "family": "procedure",
+      "definition": "Visa, residence card, registration, appeal, complaint, judicial review or other procedure.",
+      "value_type": "string",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "case_workspace",
+        "member_state",
+        "applicant_country",
+        "core",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "blocks_dependent_claim",
+      "consumers": [
+        "router",
+        "timeline",
+        "authority_engine"
+      ]
+    },
+    {
+      "element_id": "procedure.stage",
+      "family": "procedure",
+      "definition": "Current procedural stage.",
+      "value_type": "string",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "case_workspace",
+        "member_state",
+        "applicant_country",
+        "core",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "blocks_dependent_claim",
+      "consumers": [
+        "router",
+        "timeline",
+        "strategy"
+      ]
+    },
+    {
+      "element_id": "procedure.channel",
+      "family": "procedure",
+      "definition": "Digital, in-person, post, VAC/service-provider or other access channel.",
+      "value_type": "string",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "case_workspace",
+        "member_state",
+        "applicant_country",
+        "core",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "attack_angle_engine"
+      ]
+    },
+    {
+      "element_id": "legal_regime.directive_2004_38",
+      "family": "legal_regime",
+      "definition": "Applicability state for Directive 2004/38.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "regime_resolver"
+      ]
+    },
+    {
+      "element_id": "legal_regime.visa_code",
+      "family": "legal_regime",
+      "definition": "Applicability/relevance state for the Visa Code.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "regime_resolver"
+      ]
+    },
+    {
+      "element_id": "legal_regime.charter",
+      "family": "legal_regime",
+      "definition": "Charter applicability/scope state.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "charter_engine"
+      ]
+    },
+    {
+      "element_id": "legal_regime.schengen",
+      "family": "legal_regime",
+      "definition": "Relevant Schengen-acquis state.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "regime_resolver"
+      ]
+    },
+    {
+      "element_id": "legal_regime.national_procedure",
+      "family": "legal_regime",
+      "definition": "Relevant national procedural-law state.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "member_state",
+        "core",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "regime_resolver"
+      ]
+    },
+    {
+      "element_id": "legal_regime.gdpr",
+      "family": "legal_regime",
+      "definition": "Relevant data-protection-law state.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "privacy_engine"
+      ]
+    },
+    {
+      "element_id": "evidence.status",
+      "family": "evidence",
+      "definition": "Established, disputed, missing, inferred or conflicting evidence state.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "case_workspace",
+        "member_state",
+        "applicant_country",
+        "core",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "evidence_engine",
+        "completeness"
+      ]
+    },
+    {
+      "element_id": "evidence.provenance_kind",
+      "family": "evidence",
+      "definition": "Source/provenance class for a factual proposition.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "case_workspace",
+        "member_state",
+        "applicant_country",
+        "core",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "provenance"
+      ]
+    },
+    {
+      "element_id": "evidence.conflict_state",
+      "family": "evidence",
+      "definition": "Whether material evidence conflicts.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "evidence_engine",
+        "completeness"
+      ]
+    },
+    {
+      "element_id": "time.event_id",
+      "family": "time",
+      "definition": "Identifier of a legally/procedurally relevant event.",
+      "value_type": "string",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "case_workspace",
+        "member_state",
+        "applicant_country",
+        "core",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "timeline"
+      ]
+    },
+    {
+      "element_id": "time.deadline_rule_ref",
+      "family": "time",
+      "definition": "Reference to the rule used for an exact deadline calculation.",
+      "value_type": "string",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "member_state",
+        "deterministic_calculation"
+      ],
+      "provenance_required": true,
+      "absence_effect": "blocks_exact_calculation",
+      "consumers": [
+        "timeline"
+      ]
+    },
+    {
+      "element_id": "time.deadline_trigger_ref",
+      "family": "time",
+      "definition": "Reference to the triggering event used for an exact deadline calculation.",
+      "value_type": "string",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "member_state",
+        "deterministic_calculation"
+      ],
+      "provenance_required": true,
+      "absence_effect": "blocks_exact_calculation",
+      "consumers": [
+        "timeline"
+      ]
+    },
+    {
+      "element_id": "time.calculated_deadline",
+      "family": "time",
+      "definition": "Exact calculated deadline.",
+      "value_type": "date",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "deterministic_calculation"
+      ],
+      "provenance_required": true,
+      "absence_effect": "none",
+      "consumers": [
+        "timeline",
+        "strategy"
+      ]
+    },
+    {
+      "element_id": "authority.id",
+      "family": "authority",
+      "definition": "Namespaced authority identifier.",
+      "value_type": "string",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "member_state",
+        "applicant_country",
+        "core"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "authority_engine"
+      ]
+    },
+    {
+      "element_id": "authority.jurisdiction",
+      "family": "authority",
+      "definition": "Jurisdiction/geographic remit of an authority.",
+      "value_type": "jurisdiction",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "member_state",
+        "applicant_country",
+        "core"
+      ],
+      "provenance_required": true,
+      "absence_effect": "blocks_dependent_claim",
+      "consumers": [
+        "authority_engine"
+      ]
+    },
+    {
+      "element_id": "authority.competence",
+      "family": "authority",
+      "definition": "Issue/procedure competence of an authority.",
+      "value_type": "string",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "member_state",
+        "applicant_country",
+        "core"
+      ],
+      "provenance_required": true,
+      "absence_effect": "blocks_dependent_claim",
+      "consumers": [
+        "authority_engine",
+        "strategy"
+      ]
+    },
+    {
+      "element_id": "authority.power",
+      "family": "authority",
+      "definition": "Remedial/supervisory/investigatory power and limits.",
+      "value_type": "string",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "member_state",
+        "applicant_country",
+        "core"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "authority_engine",
+        "strategy"
+      ]
+    },
+    {
+      "element_id": "rule.national_rule_id",
+      "family": "rule",
+      "definition": "Namespaced national declarative rule identifier.",
+      "value_type": "string",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "member_state"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "regime_resolver",
+        "timeline",
+        "attack_angle_engine"
+      ]
+    },
+    {
+      "element_id": "rule.source_ref",
+      "family": "rule",
+      "definition": "Source reference supporting the national rule.",
+      "value_type": "string",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "member_state",
+        "core"
+      ],
+      "provenance_required": true,
+      "absence_effect": "blocks_dependent_claim",
+      "consumers": [
+        "provenance",
+        "regime_resolver"
+      ]
+    },
+    {
+      "element_id": "rule.operator_supported",
+      "family": "rule",
+      "definition": "Whether the core grammar supports automated evaluation of the rule.",
+      "value_type": "boolean",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "regime_resolver",
+        "completeness"
+      ]
+    },
+    {
+      "element_id": "attack_angle.angle_id",
+      "family": "attack_angle",
+      "definition": "Identifier for a candidate compliance/non-compliance angle.",
+      "value_type": "string",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "attack_angle_engine"
+      ]
+    },
+    {
+      "element_id": "attack_angle.prerequisites_state",
+      "family": "attack_angle",
+      "definition": "Whether required prerequisites are satisfied, missing or unresolved.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "attack_angle_engine",
+        "completeness"
+      ]
+    },
+    {
+      "element_id": "attack_angle.exclusion_state",
+      "family": "attack_angle",
+      "definition": "Whether an exclusion/counterindicator applies.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "attack_angle_engine"
+      ]
+    },
+    {
+      "element_id": "completeness.status",
+      "family": "completeness",
+      "definition": "Coverage state for a scoped requirement.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "completeness",
+        "renderer"
+      ]
+    },
+    {
+      "element_id": "completeness.scope",
+      "family": "completeness",
+      "definition": "Claim/module/issue scope to which a completeness state applies.",
+      "value_type": "string",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "completeness",
+        "renderer"
+      ]
+    },
+    {
+      "element_id": "strategy.urgency",
+      "family": "strategy",
+      "definition": "Urgency classification.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "strategy"
+      ]
+    },
+    {
+      "element_id": "strategy.legal_strength",
+      "family": "strategy",
+      "definition": "Legal-strength classification separate from tactical priority.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "strategy"
+      ]
+    },
+    {
+      "element_id": "strategy.reversibility",
+      "family": "strategy",
+      "definition": "Reversibility of a proposed action.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "strategy"
+      ]
+    },
+    {
+      "element_id": "strategy.parallel_compatibility",
+      "family": "strategy",
+      "definition": "Whether a route can proceed in parallel with another.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "strategy"
+      ]
+    },
+    {
+      "element_id": "strategy.escalation_authority_ref",
+      "family": "strategy",
+      "definition": "Authority reference for a proposed escalation.",
+      "value_type": "string",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "strategy",
+        "authority_engine"
+      ]
+    },
+    {
+      "element_id": "privacy_control.classification",
+      "family": "privacy_control",
+      "definition": "Protected/analysis/public or comparable data classification.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "case_workspace",
+        "core",
+        "deterministic_calculation"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "privacy_engine"
+      ]
+    },
+    {
+      "element_id": "privacy_control.purpose",
+      "family": "privacy_control",
+      "definition": "Specific processing/disclosure purpose.",
+      "value_type": "string",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "case_workspace",
+        "core"
+      ],
+      "provenance_required": true,
+      "absence_effect": "blocks_release",
+      "consumers": [
+        "privacy_engine"
+      ]
+    },
+    {
+      "element_id": "privacy_control.outbound_eligibility",
+      "family": "privacy_control",
+      "definition": "Whether a datum/artifact is eligible for the specified outbound purpose.",
+      "value_type": "boolean",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "deterministic_calculation"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "privacy_engine"
+      ]
+    },
+    {
+      "element_id": "privacy_control.approval_bound_recipient",
+      "family": "privacy_control",
+      "definition": "Recipient to which an approval is bound.",
+      "value_type": "string",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "case_workspace"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "approval"
+      ]
+    },
+    {
+      "element_id": "privacy_control.current_recipient",
+      "family": "privacy_control",
+      "definition": "Current recipient for the contemplated action.",
+      "value_type": "string",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "case_workspace",
+        "core"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "approval"
+      ]
+    },
+    {
+      "element_id": "privacy_control.approval_valid",
+      "family": "privacy_control",
+      "definition": "Whether the bound approval remains valid.",
+      "value_type": "boolean",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "deterministic_calculation"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "approval"
+      ]
+    },
+    {
+      "element_id": "privacy_control.cumulative_linkability",
+      "family": "privacy_control",
+      "definition": "Cumulative re-identification/linkability risk state across releases.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "privacy_engine"
+      ]
+    },
+    {
+      "element_id": "source.freshness",
+      "family": "source",
+      "definition": "Freshness state of a source used for a current proposition.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "member_state",
+        "applicant_country"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "provenance",
+        "completeness"
+      ]
+    },
+    {
+      "element_id": "source.owner_family",
+      "family": "source",
+      "definition": "Owning skill family for the source/proposition.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "member_state",
+        "applicant_country"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "provenance"
+      ]
+    },
+    {
+      "element_id": "module.optional_local_available",
+      "family": "module",
+      "definition": "Whether optional local-context module data is available.",
+      "value_type": "boolean",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "module_router",
+        "completeness"
+      ]
+    },
+    {
+      "element_id": "conclusion.no_problem",
+      "family": "conclusion",
+      "definition": "Controlled statement that no problem was found for a scoped issue.",
+      "value_type": "boolean",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "renderer"
+      ]
+    },
+    {
+      "element_id": "conclusion.current_law_supported",
+      "family": "conclusion",
+      "definition": "Whether a current-law conclusion is asserted as supported.",
+      "value_type": "boolean",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "renderer",
+        "provenance"
+      ]
+    },
+    {
+      "element_id": "conclusion.overall",
+      "family": "conclusion",
+      "definition": "Overall controlled analysis conclusion; country modules may not supply it.",
+      "value_type": "string",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "renderer"
+      ]
+    },
+    {
+      "element_id": "asset.kind",
+      "family": "asset",
+      "definition": "Artifact class such as module_asset, case_output or outbound_payload.",
+      "value_type": "string",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "privacy_engine"
+      ]
+    },
+    {
+      "element_id": "asset.distributable",
+      "family": "asset",
+      "definition": "Whether the artifact may be distributed as a reusable module/source asset.",
+      "value_type": "boolean",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "deterministic_calculation",
+        "core"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "privacy_engine"
+      ]
+    },
+    {
+      "element_id": "movement.free_movement_exercised",
+      "family": "movement",
+      "definition": "Whether qualifying cross-border free movement has been factually established.",
+      "value_type": "boolean",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "case_workspace",
+        "core",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "blocks_dependent_claim",
+      "consumers": [
+        "regime_resolver"
+      ]
+    },
+    {
+      "element_id": "movement.frontier_worker_context",
+      "family": "movement",
+      "definition": "Whether work and residence topology raises a frontier/cross-border worker context.",
+      "value_type": "boolean",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "case_workspace",
+        "core",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "topology",
+        "regime_resolver"
+      ]
+    },
+    {
+      "element_id": "movement.travel_or_residence_purpose",
+      "family": "movement",
+      "definition": "Purpose/state of the contemplated movement, travel or residence.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "case_workspace",
+        "core",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "regime_resolver"
+      ]
+    },
+    {
+      "element_id": "procedure.access_state",
+      "family": "procedure",
+      "definition": "State of access to appointment, lodging, filing or another procedural entry point.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "member_state",
+        "applicant_country",
+        "case_workspace",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "procedure_engine",
+        "attack_angle_engine"
+      ]
+    },
+    {
+      "element_id": "procedure.complaint_path_state",
+      "family": "procedure",
+      "definition": "Availability and state of an applicable complaint/review pathway.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "member_state",
+        "applicant_country",
+        "case_workspace",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "procedure_engine",
+        "authority_engine"
+      ]
+    },
+    {
+      "element_id": "procedure.lodgement_state",
+      "family": "procedure",
+      "definition": "State of actual or attempted lodging/submission.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "case_workspace",
+        "core",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "procedure_engine"
+      ]
+    },
+    {
+      "element_id": "procedure.deadline_state",
+      "family": "procedure",
+      "definition": "State of a procedural deadline or timeliness assessment.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "timeline_engine"
+      ]
+    },
+    {
+      "element_id": "legal_regime.eu_law_scope_established",
+      "family": "legal_regime",
+      "definition": "Whether the matter is established as falling within the scope of EU law for the scoped question.",
+      "value_type": "boolean",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "blocks_dependent_claim",
+      "consumers": [
+        "charter_engine",
+        "regime_resolver"
+      ]
+    },
+    {
+      "element_id": "legal_regime.lex_specialis_status",
+      "family": "legal_regime",
+      "definition": "Whether and how a lex-specialis EU regime displaces or qualifies a general regime.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "regime_resolver"
+      ]
+    },
+    {
+      "element_id": "legal_regime.more_favourable_rule_interaction",
+      "family": "legal_regime",
+      "definition": "State of any interaction with a more-favourable national or EU rule.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "regime_resolver"
+      ]
+    },
+    {
+      "element_id": "evidence.epistemic_state",
+      "family": "evidence",
+      "definition": "Knowledge state of a proposition independently of its substantive value.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "member_state",
+        "applicant_country",
+        "case_workspace",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "evidence_engine",
+        "completeness"
+      ]
+    },
+    {
+      "element_id": "evidence.assertion_role",
+      "family": "evidence",
+      "definition": "Role of the assertion such as applicant assertion, authority assertion, document statement, inference or finding.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "member_state",
+        "applicant_country",
+        "case_workspace",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "evidence_engine"
+      ]
+    },
+    {
+      "element_id": "evidence.proof_restriction_status",
+      "family": "evidence",
+      "definition": "Whether an authority-imposed proof restriction or closed-document rule is asserted or established.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "member_state",
+        "applicant_country",
+        "case_workspace",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "evidence_engine",
+        "attack_angle_engine"
+      ]
+    },
+    {
+      "element_id": "evidence.proof_restriction_source_ref",
+      "family": "evidence",
+      "definition": "Source reference supporting an asserted proof restriction.",
+      "value_type": "string",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "member_state",
+        "applicant_country",
+        "case_workspace"
+      ],
+      "provenance_required": true,
+      "absence_effect": "blocks_dependent_claim",
+      "consumers": [
+        "evidence_engine"
+      ]
+    },
+    {
+      "element_id": "evidence.freedom_of_proof_state",
+      "family": "evidence",
+      "definition": "State of any applicable freedom-of-proof principle or open evidentiary route.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "evidence_engine"
+      ]
+    },
+    {
+      "element_id": "time.event_type",
+      "family": "time",
+      "definition": "Typed procedural or factual event associated with a recorded event.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "case_workspace",
+        "core",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "timeline_engine"
+      ]
+    },
+    {
+      "element_id": "time.event_date",
+      "family": "time",
+      "definition": "Date of a typed event used in chronology or deadline analysis.",
+      "value_type": "date",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "case_workspace",
+        "core",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "timeline_engine"
+      ]
+    },
+    {
+      "element_id": "time.duration_days",
+      "family": "time",
+      "definition": "Deterministically calculated duration between relevant events in calendar days.",
+      "value_type": "integer",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "deterministic_calculation"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "timeline_engine"
+      ]
+    },
+    {
+      "element_id": "time.suspension_state",
+      "family": "time",
+      "definition": "State of any suspension, interruption or extension affecting a procedural clock.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "member_state",
+        "applicant_country",
+        "case_workspace",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "timeline_engine"
+      ]
+    },
+    {
+      "element_id": "authority.level",
+      "family": "authority",
+      "definition": "Institutional level such as mission, ministry, national supervisor, EU institution or EU body.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "member_state",
+        "applicant_country",
+        "case_workspace",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "authority_engine"
+      ]
+    },
+    {
+      "element_id": "authority.role",
+      "family": "authority",
+      "definition": "Functional role in the scoped procedure or remedy.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "member_state",
+        "applicant_country",
+        "case_workspace",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "authority_engine"
+      ]
+    },
+    {
+      "element_id": "authority.supervisory_authority_ref",
+      "family": "authority",
+      "definition": "Reference to a supervisory or oversight authority.",
+      "value_type": "string",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "member_state",
+        "applicant_country",
+        "case_workspace",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "authority_engine",
+        "strategy_engine"
+      ]
+    },
+    {
+      "element_id": "authority.internal_escalation_ref",
+      "family": "authority",
+      "definition": "Reference to an internal hierarchical escalation point.",
+      "value_type": "string",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "member_state",
+        "applicant_country",
+        "case_workspace",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "authority_engine",
+        "strategy_engine"
+      ]
+    },
+    {
+      "element_id": "authority.remedy_power",
+      "family": "authority",
+      "definition": "Power available to the authority in the scoped escalation/remedy route.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "member_state",
+        "applicant_country",
+        "case_workspace",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "authority_engine",
+        "strategy_engine"
+      ]
+    },
+    {
+      "element_id": "legal_principle.id",
+      "family": "legal_principle",
+      "definition": "Stable identifier for a legal principle under consideration.",
+      "value_type": "string",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "principle_engine"
+      ]
+    },
+    {
+      "element_id": "legal_principle.applicability_status",
+      "family": "legal_principle",
+      "definition": "Whether the principle is applicable, potentially applicable, excluded or unresolved in scope.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "principle_engine",
+        "completeness"
+      ]
+    },
+    {
+      "element_id": "legal_principle.source_ref",
+      "family": "legal_principle",
+      "definition": "Source reference supporting the principle and its scoped use.",
+      "value_type": "string",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "blocks_dependent_claim",
+      "consumers": [
+        "principle_engine",
+        "provenance"
+      ]
+    },
+    {
+      "element_id": "legal_principle.application_scope",
+      "family": "legal_principle",
+      "definition": "Scoped statement of where the principle is being considered or applied.",
+      "value_type": "string",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "principle_engine"
+      ]
+    },
+    {
+      "element_id": "attack_angle.assessment_status",
+      "family": "attack_angle",
+      "definition": "Assessment state of a candidate compliance or procedural attack angle.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "attack_angle_engine",
+        "renderer"
+      ]
+    },
+    {
+      "element_id": "attack_angle.evidence_state",
+      "family": "attack_angle",
+      "definition": "Evidence sufficiency state for the candidate attack angle.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "attack_angle_engine",
+        "completeness"
+      ]
+    },
+    {
+      "element_id": "attack_angle.source_ref",
+      "family": "attack_angle",
+      "definition": "Source reference supporting the legal basis of the attack angle.",
+      "value_type": "string",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "blocks_dependent_claim",
+      "consumers": [
+        "attack_angle_engine",
+        "provenance"
+      ]
+    },
+    {
+      "element_id": "attack_angle.severity",
+      "family": "attack_angle",
+      "definition": "Potential legal/procedural severity of the angle, kept separate from confidence.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "attack_angle_engine",
+        "strategy_engine"
+      ]
+    },
+    {
+      "element_id": "attack_angle.priority",
+      "family": "attack_angle",
+      "definition": "Strategy priority after prerequisites, evidence and reversibility are considered.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "attack_angle_engine",
+        "strategy_engine"
+      ]
+    },
+    {
+      "element_id": "completeness.reason",
+      "family": "completeness",
+      "definition": "Reason code explaining the scoped completeness state.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "completeness",
+        "renderer"
+      ]
+    },
+    {
+      "element_id": "completeness.detail",
+      "family": "completeness",
+      "definition": "Human-readable detail for the scoped completeness state.",
+      "value_type": "string",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "completeness",
+        "renderer"
+      ]
+    },
+    {
+      "element_id": "completeness.dependency_ref",
+      "family": "completeness",
+      "definition": "Reference to the element/source/module dependency causing the scoped gap.",
+      "value_type": "string",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "completeness"
+      ]
+    },
+    {
+      "element_id": "strategy.prerequisites_state",
+      "family": "strategy",
+      "definition": "Whether prerequisites for a proposed strategic step are met, missing or unresolved.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "strategy_engine"
+      ]
+    },
+    {
+      "element_id": "strategy.evidentiary_value",
+      "family": "strategy",
+      "definition": "Expected evidentiary value of the proposed step.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "strategy_engine"
+      ]
+    },
+    {
+      "element_id": "strategy.cost_level",
+      "family": "strategy",
+      "definition": "Relative cost/burden level of the proposed step.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "strategy_engine"
+      ]
+    },
+    {
+      "element_id": "strategy.systemic_value",
+      "family": "strategy",
+      "definition": "Potential systemic/precedential value of the proposed step.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "strategy_engine"
+      ]
+    },
+    {
+      "element_id": "source.representation_kind",
+      "family": "source",
+      "definition": "Representation class supporting a proposition, including bundled text or verified source note.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "member_state",
+        "applicant_country"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "provenance",
+        "quotation_gate"
+      ]
+    },
+    {
+      "element_id": "source.verification_scope",
+      "family": "source",
+      "definition": "Scope of verification performed for the source representation.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "member_state",
+        "applicant_country"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "provenance",
+        "quotation_gate"
+      ]
+    },
+    {
+      "element_id": "source.version_state",
+      "family": "source",
+      "definition": "Fixed/current/consolidated version state relevant to the proposition.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "member_state",
+        "applicant_country"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "provenance",
+        "completeness"
+      ]
+    },
+    {
+      "element_id": "rule.binding_force",
+      "family": "rule",
+      "definition": "Binding-force category of a sourced legal instrument or principle.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "regime_resolver",
+        "principle_engine"
+      ]
+    },
+    {
+      "element_id": "rule.interpretive_weight",
+      "family": "rule",
+      "definition": "Interpretive weight assigned to a non-binding or supporting source.",
+      "value_type": "status",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "principle_engine"
+      ]
+    },
+    {
+      "element_id": "conclusion.exact_wording_supported",
+      "family": "conclusion",
+      "definition": "Whether the available representation is sufficient for an exact quotation or wording claim.",
+      "value_type": "boolean",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "quotation_gate",
+        "renderer"
+      ]
+    },
+    {
+      "element_id": "conclusion.pinpoint_supported",
+      "family": "conclusion",
+      "definition": "Whether the available representation is sufficient for paragraph/article-level pinpoint reliance.",
+      "value_type": "boolean",
+      "cardinality": "zero_or_one",
+      "allowed_suppliers": [
+        "core",
+        "deterministic_calculation",
+        "model_candidate"
+      ],
+      "provenance_required": true,
+      "absence_effect": "scoped_gap",
+      "consumers": [
+        "quotation_gate",
+        "renderer"
+      ]
+    }
+  ]
+}

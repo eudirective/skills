@@ -1,0 +1,159 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "assessments": {
+      "items": {
+        "properties": {
+          "assessment_id": {
+            "type": "string"
+          },
+          "attack_angle_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "exception_questions": {
+            "type": "array"
+          },
+          "legal_violation_status": {
+            "const": "not_determined"
+          },
+          "missing_or_unverified": {
+            "type": "array"
+          },
+          "predicate_results": {
+            "type": "array"
+          },
+          "source_citations": {
+            "type": "array"
+          },
+          "status": {
+            "enum": [
+              "supported_for_review",
+              "unresolved",
+              "contradicted",
+              "not_applicable"
+            ]
+          }
+        },
+        "required": [
+          "assessment_id",
+          "status",
+          "attack_angle_id",
+          "predicate_results",
+          "legal_violation_status",
+          "exception_questions",
+          "source_citations",
+          "missing_or_unverified"
+        ],
+        "type": "object"
+      },
+      "maxItems": 200,
+      "type": "array"
+    },
+    "bindings": {
+      "properties": {
+        "c5d_sha256": {
+          "type": "string"
+        },
+        "case_sha256": {
+          "type": "string"
+        },
+        "country_rule_extensions": {
+          "type": "array"
+        },
+        "document_index_sha256": {
+          "type": "string"
+        },
+        "elements_sha256": {
+          "type": "string"
+        },
+        "eu_rules_sha256": {
+          "type": "string"
+        },
+        "fact_ledger_sha256": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_pack_sha256": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "case_sha256",
+        "elements_sha256",
+        "c5d_sha256",
+        "source_pack_sha256",
+        "eu_rules_sha256",
+        "document_index_sha256",
+        "fact_ledger_sha256",
+        "country_rule_extensions"
+      ],
+      "type": "object"
+    },
+    "case_id": {
+      "type": "string"
+    },
+    "conclusion": {
+      "const": "not_determined"
+    },
+    "engine_version": {
+      "const": "0.2.0"
+    },
+    "limitations": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "novel_issues": {
+      "items": {
+        "properties": {
+          "attack_angle_id": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "status": {
+            "const": "novel_unassessed"
+          }
+        },
+        "required": [
+          "attack_angle_id",
+          "status",
+          "reason"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "unresolved": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "unverified_evidence_records": {
+      "type": "array"
+    }
+  },
+  "required": [
+    "engine_version",
+    "case_id",
+    "conclusion",
+    "bindings",
+    "assessments",
+    "novel_issues",
+    "unresolved",
+    "unverified_evidence_records",
+    "limitations"
+  ],
+  "title": "C12 fictional legal-resolution report",
+  "type": "object"
+}

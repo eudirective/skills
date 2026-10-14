@@ -1,0 +1,594 @@
+{
+  "attack_angle_records": [
+    {
+      "attack_angle_id": "se:attack:administrative-access",
+      "authority_refs": [
+        "se:authority:istanbul-consulate"
+      ],
+      "basis_layer": "national",
+      "disqualifier_element_ids": [],
+      "evidence_needs": [
+        "Preserve dated instructions, communications, documents and any contrary evidence.",
+        "Verify the applicable EU/national law, competence, exceptions and individual circumstances."
+      ],
+      "issue_type": "procedural_access",
+      "label": "Potential denial of agency contact channel",
+      "prerequisite_element_ids": [
+        "procedure.access_state",
+        "procedure.channel"
+      ],
+      "remedy_categories": [
+        "administrative_escalation"
+      ],
+      "required_completeness_ids": [
+        "check:regime"
+      ],
+      "route_refs": [
+        "se:route:jo-supervision"
+      ],
+      "severity_hint": null,
+      "source_refs": [
+        "se:src:admin-act",
+        "se:src:family-visa-istanbul"
+      ],
+      "support_scope": "Candidate where national service/access provisions and published direct submission conflict with authority conduct; assess competence, Directive 2004/38 and Visa Code before conclusion.",
+      "support_status": "candidate"
+    },
+    {
+      "attack_angle_id": "se:attack:reasons-for-refusal",
+      "authority_refs": [
+        "se:authority:istanbul-consulate"
+      ],
+      "basis_layer": "national",
+      "disqualifier_element_ids": [],
+      "evidence_needs": [
+        "Preserve dated instructions, communications, documents and any contrary evidence.",
+        "Verify the applicable EU/national law, competence, exceptions and individual circumstances."
+      ],
+      "issue_type": "deficient_reasoning",
+      "label": "Potential deficient reasons / appeal information",
+      "prerequisite_element_ids": [
+        "procedure.stage"
+      ],
+      "remedy_categories": [
+        "administrative_escalation"
+      ],
+      "required_completeness_ids": [
+        "check:regime"
+      ],
+      "route_refs": [
+        "se:route:visa-appeal-istanbul"
+      ],
+      "severity_hint": null,
+      "source_refs": [
+        "se:src:admin-act",
+        "se:src:appeal-istanbul"
+      ],
+      "support_scope": "Requires actual adverse decision and verified applicable reasoning exception/special legislation; cannot flag merely because a case exists.",
+      "support_status": "candidate"
+    },
+    {
+      "attack_angle_id": "se:attack:hearing-and-file",
+      "authority_refs": [
+        "se:authority:istanbul-consulate"
+      ],
+      "basis_layer": "national",
+      "disqualifier_element_ids": [],
+      "evidence_needs": [
+        "Preserve dated instructions, communications, documents and any contrary evidence.",
+        "Verify the applicable EU/national law, competence, exceptions and individual circumstances."
+      ],
+      "issue_type": "procedural_evidence",
+      "label": "Potential inability to answer adverse evidence",
+      "prerequisite_element_ids": [
+        "evidence.status",
+        "procedure.stage"
+      ],
+      "remedy_categories": [
+        "administrative_escalation"
+      ],
+      "required_completeness_ids": [
+        "check:regime"
+      ],
+      "route_refs": [
+        "se:route:visa-appeal-istanbul"
+      ],
+      "severity_hint": null,
+      "source_refs": [
+        "se:src:admin-act"
+      ],
+      "support_scope": "Forvaltningslag party access/communication protections require factual material and exception review; CJEU Deldwyn holding is EU core law with narrower family-residence facts and is not imported as blanket national rule.",
+      "support_status": "candidate"
+    }
+  ],
+  "authority_records": [
+    {
+      "authority_id": "se:authority:istanbul-consulate",
+      "competence": [
+        "Swedish visa decisions for applications it handles"
+      ],
+      "email": "migration.istanbul@gov.se",
+      "limits": [
+        "Not a Migration Court",
+        "Direct-submission appointment channel must be assessed under Directive-specific rule"
+      ],
+      "name": "Swedish Consulate General Istanbul",
+      "powers": [
+        "Receive and decide or refer relevant visa applications",
+        "Reconsider refusals and forward appeals when not revised"
+      ],
+      "source_refs": [
+        "se:src:family-visa-istanbul",
+        "se:src:appeal-istanbul"
+      ],
+      "telephone": null,
+      "verified_at": "2026-10-09T14:00:00Z",
+      "website": "https://www.swedenabroad.se/en/embassies/turkey-istanbul/"
+    },
+    {
+      "authority_id": "se:authority:migrationsverket",
+      "competence": [
+        "Residence cards of eligible non-EU family members"
+      ],
+      "email": null,
+      "limits": [
+        "Do not conflate residence-card procedure with short-stay entry-visa consular handling"
+      ],
+      "name": "Swedish Migration Agency (Migrationsverket)",
+      "powers": [
+        "Decide residence-card applications"
+      ],
+      "source_refs": [
+        "se:src:migrationsverket-family",
+        "se:src:foreigners-act"
+      ],
+      "telephone": null,
+      "verified_at": "2026-10-09T14:00:00Z",
+      "website": "https://www.migrationsverket.se/en/"
+    },
+    {
+      "authority_id": "se:authority:jo",
+      "competence": [
+        "Investigate alleged administrative misconduct by Swedish public authorities"
+      ],
+      "email": "justitieombudsmannen@jo.se",
+      "limits": [
+        "Cannot overturn individual decisions or award damages",
+        "Complaint may become public record; most are not investigated"
+      ],
+      "name": "Riksdagens ombudsman (JO)",
+      "powers": [
+        "May investigate and issue criticism"
+      ],
+      "source_refs": [
+        "se:src:jo-complaint"
+      ],
+      "telephone": null,
+      "verified_at": "2026-10-09T14:00:00Z",
+      "website": "https://www.jo.se/jo-anmalan/"
+    },
+    {
+      "authority_id": "se:authority:migration-court",
+      "competence": [
+        "Judicial review of relevant refused Swedish visas forwarded through mission"
+      ],
+      "email": null,
+      "limits": [
+        "Not a pre-decision ombudsman; case allocation and scope depend on actual decision"
+      ],
+      "name": "Swedish Migration Court",
+      "powers": [
+        "Review appeals within jurisdiction"
+      ],
+      "source_refs": [
+        "se:src:appeal-istanbul"
+      ],
+      "telephone": null,
+      "verified_at": "2026-10-09T14:00:00Z",
+      "website": "https://www.domstol.se/"
+    }
+  ],
+  "contract_version": "0.2.0",
+  "deadline_records": [
+    {
+      "calculation": {
+        "amount": null,
+        "inclusion_rule": "Source says three weeks; do not auto-compute until date of receipt and governing special provisions established.",
+        "operator": "source_defined"
+      },
+      "calendar": "source_defined",
+      "deadline_id": "se:deadline:visa-refusal-appeal",
+      "effect_on_other_remedies": "JO complaint does not automatically extend or replace the appeal deadline.",
+      "extension_conditions": [],
+      "kind": "limitation_or_appeal",
+      "label": "Three-week visa appeal period, date requires case-specific confirmation",
+      "source_refs": [
+        "se:src:appeal-istanbul",
+        "se:src:admin-act"
+      ],
+      "suspension_conditions": [],
+      "timezone": "Europe/Stockholm",
+      "trigger_event": "Receipt of appealable visa-refusal decision; confirm date and competent deciding authority"
+    }
+  ],
+  "gap_records": [
+    {
+      "area": "scope",
+      "detail": "Current consolidated legal text and mission guidance must be checked for the case date; this module uses scoped official-source notes, not full legislative PDF bytes.",
+      "gap_id": "se:gap:live-recheck",
+      "impact": "degrading",
+      "scope": "module",
+      "status": "known_gap"
+    },
+    {
+      "area": "rules",
+      "detail": "Specific reach of Forvaltningslag provisions to consular visa functions, interaction with Visa Code and Directive 2004/38 requires legal analysis, not automatic promotion.",
+      "gap_id": "se:gap:consular-application",
+      "impact": "degrading",
+      "scope": "rules",
+      "status": "known_gap"
+    },
+    {
+      "area": "deadlines",
+      "detail": "A three-week ordinary appeal period is published; receipt, procedural exceptions and any special rules must be verified before calculating a last day.",
+      "gap_id": "se:gap:deadline-calculation",
+      "impact": "degrading",
+      "scope": "deadlines",
+      "status": "known_gap"
+    }
+  ],
+  "id_namespace": "se",
+  "jurisdiction": "SE",
+  "module_family": "member_state",
+  "module_id": "member-state-se-source-pilot",
+  "module_version": "0.2.0",
+  "operational_records": [
+    {
+      "category": "appointment_channel",
+      "description": "Swedish Istanbul mission offers direct appointment requests to qualifying EU family members, alternatively VFS; the mission says applicants should email and eligibility is checked before appointment.",
+      "destination_state": "SE",
+      "evidence_quality": "official",
+      "observed_at": "2026-10-10T00:00:00Z",
+      "record_id": "se:op:direct-channel",
+      "source_refs": [
+        "se:src:family-visa-istanbul"
+      ]
+    },
+    {
+      "category": "fee_information",
+      "description": "EU-family visa fee is exempt for qualifying applicants; VFS publishes separate EUR 14 service fee. Assess if VFS was a choice or a mandate.",
+      "destination_state": "SE",
+      "evidence_quality": "official",
+      "observed_at": "2026-10-10T00:00:00Z",
+      "record_id": "se:op:optional-vfs-fee",
+      "source_refs": [
+        "se:src:fees-istanbul"
+      ]
+    },
+    {
+      "category": "document_information",
+      "description": "Consular guidance says Turkish family-book extract OR other evidence of family ties; assess probative value, authentication and translation separately.",
+      "destination_state": "SE",
+      "evidence_quality": "official",
+      "observed_at": "2026-10-10T00:00:00Z",
+      "record_id": "se:op:alternative-family-proof",
+      "source_refs": [
+        "se:src:family-visa-istanbul"
+      ]
+    },
+    {
+      "category": "oversight_information",
+      "description": "JO can investigate public-administration conduct but cannot annul visas; submissions generally become public records; ordinary appeal limits remain separate.",
+      "destination_state": "SE",
+      "evidence_quality": "official",
+      "observed_at": "2026-10-10T00:00:00Z",
+      "record_id": "se:op:jo-limits",
+      "source_refs": [
+        "se:src:jo-guidance-en"
+      ]
+    }
+  ],
+  "pack_version": "0.2.0",
+  "route_records": [
+    {
+      "authority_ref": "se:authority:istanbul-consulate",
+      "cost_or_fee": null,
+      "email": "migration.istanbul@gov.se",
+      "filing_method": "Email written signed appeal identifying decision and requested amendment to migration.istanbul@gov.se.",
+      "form_or_evidence": null,
+      "issue_types": [
+        "visa_refusal"
+      ],
+      "label": "Refused visa: reconsideration and onward Migration Court",
+      "language": "sv/en",
+      "legal_basis_refs": [
+        "se:src:appeal-istanbul",
+        "se:src:admin-act"
+      ],
+      "limits": [
+        "Requires an appealable written decision",
+        "Published three-week period after receipt; exact last day needs individual calculation"
+      ],
+      "powers": [
+        "Initial reconsideration",
+        "Forward unchanged appeal"
+      ],
+      "route_id": "se:route:visa-appeal-istanbul",
+      "source_refs": [
+        "se:src:appeal-istanbul",
+        "se:src:admin-act"
+      ],
+      "telephone": null,
+      "verified_at": "2026-10-09T14:00:00Z",
+      "website": "https://www.swedenabroad.se/en/about-sweden-non-swedish-citizens/turkey/going-to-sweden/visiting-sweden/appeals/"
+    },
+    {
+      "authority_ref": "se:authority:jo",
+      "cost_or_fee": "No fee",
+      "email": "justitieombudsmannen@jo.se",
+      "filing_method": "Use JO webform with fact chronology and attachments (do not include sensitive information unnecessarily).",
+      "form_or_evidence": null,
+      "issue_types": [
+        "procedural_misconduct",
+        "excessive_delay",
+        "access_obstruction"
+      ],
+      "label": "JO administrative misconduct complaint",
+      "language": "sv/en",
+      "legal_basis_refs": [
+        "se:src:jo-complaint"
+      ],
+      "limits": [
+        "No visa issuance",
+        "No reversal or damages",
+        "Public filing, secrecy may apply"
+      ],
+      "powers": [
+        "Investigate selected complaints",
+        "Issue critical decision"
+      ],
+      "route_id": "se:route:jo-supervision",
+      "source_refs": [
+        "se:src:jo-complaint"
+      ],
+      "telephone": null,
+      "verified_at": "2026-10-09T14:00:00Z",
+      "website": "https://www.jo.se/jo-anmalan/"
+    }
+  ],
+  "rule_records": [
+    {
+      "domain": "residence",
+      "effective_from": null,
+      "effective_to": null,
+      "interpretation_status": "candidate_interpretation",
+      "normative_layer": "national",
+      "operators": [
+        "exists"
+      ],
+      "proposition": "Swedish law recognises derived residence of defined family members of qualifying EEA citizens, subject to right-of-residence conditions.",
+      "rule_id": "se:rule:eu-family-residence",
+      "source_refs": [
+        "se:src:foreigners-act"
+      ],
+      "support_scope": "Chapter 3a sections 2-4; review actual facts, Union citizen status, and statutory exceptions.",
+      "text_source_ref": null
+    },
+    {
+      "domain": "residence",
+      "effective_from": null,
+      "effective_to": null,
+      "interpretation_status": "candidate_interpretation",
+      "normative_layer": "national",
+      "operators": [
+        "exists"
+      ],
+      "proposition": "A qualifying non-EEA family member must apply for a residence card following arrival; Migrationsverket issues it if statutory conditions met.",
+      "rule_id": "se:rule:residence-card",
+      "source_refs": [
+        "se:src:foreigners-act",
+        "se:src:migrationsverket-family"
+      ],
+      "support_scope": "Chapter 3a sections 10 and 12a and residence-card guidance; distinct from entry visa.",
+      "text_source_ref": null
+    },
+    {
+      "domain": "procedure",
+      "effective_from": null,
+      "effective_to": null,
+      "interpretation_status": "candidate_interpretation",
+      "normative_layer": "national",
+      "operators": [
+        "exists"
+      ],
+      "proposition": "Swedish administrative authorities are subject to legal basis, impartiality, proportionality, accessibility and service principles.",
+      "rule_id": "se:rule:service-access",
+      "source_refs": [
+        "se:src:admin-act"
+      ],
+      "support_scope": "Forvaltningslag sections 4-9, applicability and lex-specialis exceptions must be checked for consular visa handling.",
+      "text_source_ref": null
+    },
+    {
+      "domain": "procedure",
+      "effective_from": null,
+      "effective_to": null,
+      "interpretation_status": "candidate_interpretation",
+      "normative_layer": "national",
+      "operators": [
+        "exists"
+      ],
+      "proposition": "Party access and opportunity to comment on material can be relevant, with statutory exceptions and secrecy safeguards.",
+      "rule_id": "se:rule:party-file-and-hearing",
+      "source_refs": [
+        "se:src:admin-act"
+      ],
+      "support_scope": "Forvaltningslag sections 10 and 25; cannot generalise to all visa materials or overlook secrecy laws and EU safeguards.",
+      "text_source_ref": null
+    },
+    {
+      "domain": "procedure",
+      "effective_from": null,
+      "effective_to": null,
+      "interpretation_status": "candidate_interpretation",
+      "normative_layer": "national",
+      "operators": [
+        "exists"
+      ],
+      "proposition": "An authority anticipating significant delay in an individually initiated case generally must notify the party and state the reason.",
+      "rule_id": "se:rule:delay-notice",
+      "source_refs": [
+        "se:src:admin-act"
+      ],
+      "support_scope": "Forvaltningslag section 11, subject to section 4 lex specialis and applicability checks; six-month section 12 mechanism not presented as visa deadline.",
+      "text_source_ref": null
+    },
+    {
+      "domain": "procedure",
+      "effective_from": null,
+      "effective_to": null,
+      "interpretation_status": "candidate_interpretation",
+      "normative_layer": "national",
+      "operators": [
+        "exists"
+      ],
+      "proposition": "Swedish administrative decisions significantly affecting a person normally need reasons and appeal information unless an exception or special provision applies.",
+      "rule_id": "se:rule:decision-reasons",
+      "source_refs": [
+        "se:src:admin-act"
+      ],
+      "support_scope": "Forvaltningslag sections 32-33 and special aliens law, not automatic conclusion for each visa case.",
+      "text_source_ref": null
+    }
+  ],
+  "source_records": [
+    {
+      "authenticity_state": "verified_identity_version",
+      "authority": "Sveriges riksdag",
+      "content_kind": "verified_source_note",
+      "content_sha256": "7e9ac14407c9b4e0486faafa0ca73012a8f6206c9879e64da35194569b6aec2e",
+      "effective_from": null,
+      "effective_to": null,
+      "language": "sv",
+      "locator": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/utlanningslag-2005716_sfs-2005-716/",
+      "scope": "Identity/version checked and officially described subject; source note only, legal pinpoints must be independently confirmed",
+      "source_id": "se:src:foreigners-act",
+      "source_type": "statute",
+      "status": "baseline_verified_not_live_rechecked",
+      "title": "Utlanningslag (2005:716)",
+      "verified_at": "2026-10-09T14:00:00Z"
+    },
+    {
+      "authenticity_state": "verified_identity_version",
+      "authority": "Sveriges riksdag",
+      "content_kind": "verified_source_note",
+      "content_sha256": "515bb546ac05f6ab610d469b3764acf6e11610258bba9ab66df1e9ca69723a77",
+      "effective_from": null,
+      "effective_to": null,
+      "language": "sv",
+      "locator": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/forvaltningslag-2017900_sfs-2017-900/",
+      "scope": "Identity/version checked and officially described subject; source note only, legal pinpoints must be independently confirmed",
+      "source_id": "se:src:admin-act",
+      "source_type": "statute",
+      "status": "baseline_verified_not_live_rechecked",
+      "title": "Forvaltningslag (2017:900)",
+      "verified_at": "2026-10-09T14:00:00Z"
+    },
+    {
+      "authenticity_state": "verified_identity_version",
+      "authority": "Sweden Abroad / Swedish Consulate General Istanbul",
+      "content_kind": "verified_source_note",
+      "content_sha256": "d50ebe6a64a3f823a273da9956b6ad82661daf8159e00e31fe01aa6b4d356774",
+      "effective_from": null,
+      "effective_to": null,
+      "language": "en",
+      "locator": "https://www.swedenabroad.se/en/about-sweden-non-swedish-citizens/turkey/going-to-sweden/visiting-sweden/how-to-apply/family-members-of-eueea-citizens/",
+      "scope": "Identity/version checked and officially described subject; source note only, legal pinpoints must be independently confirmed",
+      "source_id": "se:src:family-visa-istanbul",
+      "source_type": "official_administrative_guidance",
+      "status": "baseline_verified_not_live_rechecked",
+      "title": "Family members of EU/EEA citizens — Turkey",
+      "verified_at": "2026-10-09T14:00:00Z"
+    },
+    {
+      "authenticity_state": "verified_identity_version",
+      "authority": "Sweden Abroad / Swedish Consulate General Istanbul",
+      "content_kind": "verified_source_note",
+      "content_sha256": "0c6f99b23de3a16a7c29698dc1f86329f008083bf2a414302010446fb568cf41",
+      "effective_from": null,
+      "effective_to": null,
+      "language": "en",
+      "locator": "https://www.swedenabroad.se/en/about-sweden-non-swedish-citizens/turkey/going-to-sweden/visiting-sweden/appeals/",
+      "scope": "Identity/version checked and officially described subject; source note only, legal pinpoints must be independently confirmed",
+      "source_id": "se:src:appeal-istanbul",
+      "source_type": "official_administrative_guidance",
+      "status": "baseline_verified_not_live_rechecked",
+      "title": "Appeals — Swedish Consulate General Istanbul",
+      "verified_at": "2026-10-09T14:00:00Z"
+    },
+    {
+      "authenticity_state": "verified_identity_version",
+      "authority": "Riksdagens ombudsman (JO)",
+      "content_kind": "verified_source_note",
+      "content_sha256": "4fcc5558593e8db0d8c3900893685e807580899f638980f6fa0a833c98ff5763",
+      "effective_from": null,
+      "effective_to": null,
+      "language": "sv",
+      "locator": "https://www.jo.se/jo-anmalan/",
+      "scope": "Identity/version checked and officially described subject; source note only, legal pinpoints must be independently confirmed",
+      "source_id": "se:src:jo-complaint",
+      "source_type": "official_supervision_guidance",
+      "status": "baseline_verified_not_live_rechecked",
+      "title": "Anmal till JO — complaint guidance",
+      "verified_at": "2026-10-09T14:00:00Z"
+    },
+    {
+      "authenticity_state": "verified_identity_version",
+      "authority": "Swedish Migration Agency",
+      "content_kind": "verified_source_note",
+      "content_sha256": "4c615695b4541f3a2f290f4f6272828f0cdd09a435eae268b85490b7d5aaabbb",
+      "effective_from": null,
+      "effective_to": null,
+      "language": "en",
+      "locator": "https://www.migrationsverket.se/en/you-want-to-apply/citizens-of-the-eu-eea-or-nordic-countries/family-of-eu-eea-citizens.html",
+      "scope": "Identity/version checked and officially described subject; source note only, legal pinpoints must be independently confirmed",
+      "source_id": "se:src:migrationsverket-family",
+      "source_type": "official_administrative_guidance",
+      "status": "baseline_verified_not_live_rechecked",
+      "title": "Family of EU/EEA citizens — residence card",
+      "verified_at": "2026-10-09T14:00:00Z"
+    },
+    {
+      "authenticity_state": "verified_identity_version",
+      "authority": "Sweden Abroad / Swedish Consulate General Istanbul",
+      "content_kind": "verified_source_note",
+      "content_sha256": "a3d8e3b3182a4a310cde20ec1f38f00368845dbf299d146c49ffedd23fb3368a",
+      "effective_from": null,
+      "effective_to": null,
+      "language": "en",
+      "locator": "https://www.swedenabroad.se/en/about-sweden-non-swedish-citizens/turkey/going-to-sweden/visiting-sweden/fees/",
+      "scope": "Official-page scoped summary; not source text. fees-istanbul",
+      "source_id": "se:src:fees-istanbul",
+      "source_type": "official_operational_guidance",
+      "status": "baseline_verified_not_live_rechecked",
+      "title": "Sweden Abroad — Istanbul visa fees",
+      "verified_at": "2026-10-10T00:00:00Z"
+    },
+    {
+      "authenticity_state": "verified_identity_version",
+      "authority": "Riksdagens Ombudsman (JO)",
+      "content_kind": "verified_source_note",
+      "content_sha256": "de89e12eb7fe2e7c58d7adbb8797230171625ff140ba38fb544bcb5db5134fa2",
+      "effective_from": null,
+      "effective_to": null,
+      "language": "en",
+      "locator": "https://www.jo.se/en/how-to-complain/",
+      "scope": "Official-page scoped summary; not source text. jo-guidance-en",
+      "source_id": "se:src:jo-guidance-en",
+      "source_type": "official_operational_guidance",
+      "status": "baseline_verified_not_live_rechecked",
+      "title": "Parliamentary Ombudsmen — how to complain",
+      "verified_at": "2026-10-10T00:00:00Z"
+    }
+  ]
+}

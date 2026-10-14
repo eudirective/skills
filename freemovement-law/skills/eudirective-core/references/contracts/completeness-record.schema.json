@@ -1,0 +1,131 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Completeness record v0.2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contract_version",
+    "requirement_id",
+    "status",
+    "reason",
+    "scope",
+    "detail"
+  ],
+  "properties": {
+    "contract_version": {
+      "const": "0.2.0"
+    },
+    "requirement_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$"
+    },
+    "status": {
+      "enum": [
+        "supported",
+        "not_supported",
+        "not_checked",
+        "not_applicable",
+        "blocked"
+      ]
+    },
+    "reason": {
+      "enum": [
+        "none",
+        "not_evaluated",
+        "insufficient_evidence",
+        "source_missing_or_stale",
+        "source_not_live_rechecked",
+        "required_module_unavailable",
+        "optional_context_unavailable",
+        "module_incompatible",
+        "conflicting_information",
+        "unsupported_automated_evaluation",
+        "other"
+      ]
+    },
+    "scope": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 300
+    },
+    "detail": {
+      "type": "string",
+      "maxLength": 2000
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "enum": [
+              "supported",
+              "not_supported",
+              "not_applicable"
+            ]
+          }
+        },
+        "required": [
+          "status"
+        ]
+      },
+      "then": {
+        "properties": {
+          "reason": {
+            "const": "none"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "not_checked"
+          }
+        },
+        "required": [
+          "status"
+        ]
+      },
+      "then": {
+        "properties": {
+          "reason": {
+            "const": "not_evaluated"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "blocked"
+          }
+        },
+        "required": [
+          "status"
+        ]
+      },
+      "then": {
+        "properties": {
+          "reason": {
+            "enum": [
+              "insufficient_evidence",
+              "source_missing_or_stale",
+              "source_not_live_rechecked",
+              "required_module_unavailable",
+              "optional_context_unavailable",
+              "module_incompatible",
+              "conflicting_information",
+              "unsupported_automated_evaluation",
+              "other"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

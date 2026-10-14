@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Outbound approval record v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["trust_profile_version", "approval_id", "case_id", "outbound_id", "decision", "outbound_view_sha256", "purpose", "destination", "action", "bound_prepared_revision", "approver_ref", "identity_assurance", "approved_at"],
+  "properties": {
+    "trust_profile_version": {"const": "0.1.0"},
+    "approval_id": {"type": "string", "minLength": 1, "maxLength": 160, "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$"},
+    "case_id": {"type": "string", "minLength": 1, "maxLength": 160, "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$"},
+    "outbound_id": {"type": "string", "minLength": 1, "maxLength": 160, "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$"},
+    "decision": {"enum": ["approve", "retry"]},
+    "outbound_view_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "purpose": {"type": "string", "minLength": 1, "maxLength": 120},
+    "destination": {"type": "string", "minLength": 1, "maxLength": 500},
+    "action": {"enum": ["analyze", "render", "feedback", "send", "publish"]},
+    "bound_prepared_revision": {"type": "integer", "minimum": 0},
+    "approver_ref": {"type": "string", "minLength": 1, "maxLength": 160},
+    "identity_assurance": {"enum": ["unverified_local", "host_verified"]},
+    "approved_at": {"type": "string", "format": "date-time", "maxLength": 64},
+    "valid_until": {"type": ["string", "null"], "format": "date-time", "maxLength": 64}
+  }
+}

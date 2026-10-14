@@ -1,0 +1,124 @@
+{
+  "policy_version": "0.1.0",
+  "policy_id": "c21-synthetic-purpose-policy-0.1.0",
+  "profiles": [
+    {
+      "name": "internal_review_preview",
+      "purpose": "Local developer inspection of de-identified fictional facts; not actual applicant case intake",
+      "fields": [
+        {
+          "field_id": "issue_category",
+          "transform": "enum",
+          "allowed_values": [
+            "appointment_access",
+            "document_requirement",
+            "visa_delay",
+            "complaint_pathway",
+            "family_evidence",
+            "digital_only"
+          ],
+          "necessary_for": "Group the fictional issue for review"
+        },
+        {
+          "field_id": "procedure_stage",
+          "transform": "enum",
+          "allowed_values": [
+            "pre_application",
+            "application_pending",
+            "refusal",
+            "appeal",
+            "unknown"
+          ],
+          "necessary_for": "Contextualize the fictional stage"
+        },
+        {
+          "field_id": "event_date",
+          "transform": "year_only",
+          "necessary_for": "Retain only broad fictional time context"
+        },
+        {
+          "field_id": "narrative",
+          "transform": "scrub_text",
+          "necessary_for": "Demonstrate deterministic narrative scrubbing"
+        }
+      ]
+    },
+    {
+      "name": "public_story_preview",
+      "purpose": "Produce a fictional anonymisation demonstration requiring editorial re-identification review",
+      "fields": [
+        {
+          "field_id": "issue_category",
+          "transform": "enum",
+          "allowed_values": [
+            "appointment_access",
+            "document_requirement",
+            "visa_delay",
+            "complaint_pathway",
+            "family_evidence",
+            "digital_only"
+          ],
+          "necessary_for": "Keep only a broad issue category"
+        },
+        {
+          "field_id": "narrative",
+          "transform": "scrub_text",
+          "necessary_for": "Illustrate anonymisation of a fictional narrative before human review"
+        }
+      ]
+    },
+    {
+      "name": "feedback_aggregate_preview",
+      "purpose": "Prepare strictly categorical fictional aggregate-input counts; never publish individual records",
+      "fields": [
+        {
+          "field_id": "issue_category",
+          "transform": "enum",
+          "allowed_values": [
+            "appointment_access",
+            "document_requirement",
+            "visa_delay",
+            "complaint_pathway",
+            "family_evidence",
+            "digital_only"
+          ],
+          "necessary_for": "Group aggregate compliance issues"
+        },
+        {
+          "field_id": "outcome_bucket",
+          "transform": "enum",
+          "allowed_values": [
+            "unknown",
+            "resolved",
+            "unresolved",
+            "withdrawn"
+          ],
+          "necessary_for": "Group aggregate outcomes without case detail"
+        }
+      ]
+    },
+    {
+      "name": "c17_feedback_preview",
+      "purpose": "Locally inspect aggregate-only C17 fictional remedy plan categories without details, counts or identity",
+      "fields": [
+        {
+          "field_id": "plan_kind",
+          "transform": "enum",
+          "allowed_values": [
+            "fictional_review"
+          ],
+          "necessary_for": "Confirm source is a fictional review only"
+        },
+        {
+          "field_id": "route_presence",
+          "transform": "enum",
+          "allowed_values": [
+            "none",
+            "present"
+          ],
+          "necessary_for": "Test whether a hypothetical remedy candidate exists without exposing counts"
+        }
+      ]
+    }
+  ]
+}
