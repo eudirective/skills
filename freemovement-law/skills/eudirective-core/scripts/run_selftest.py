@@ -9,6 +9,8 @@ from types import SimpleNamespace as NS
 import sys
 import tempfile
 
+from source_library_paths import compatibility_root
+
 ROOT=Path(__file__).resolve().parents[1]
 SCRIPTS=ROOT/'scripts'
 sys.path.insert(0,str(SCRIPTS))
@@ -266,7 +268,7 @@ def main():
         else: raise AssertionError('misowned EU source was accepted')
     results.append('source_owner_boundary_rejected')
     # C1 core source-pack manifest is structurally valid and complete under the verified-representation standard.
-    real_manifest=cv.load_json(ROOT/'references'/'source-pack'/'core-source-pack-manifest-0.5.0.json')
+    real_manifest=cv.load_json(compatibility_root()/'core-source-pack-manifest-0.5.0.json')
     cv.validate_obj('core-source-pack',real_manifest)
     assert real_manifest['logical_source_count']==45 and real_manifest['representation_count']==46
     assert real_manifest['completion_status']=='c1_source_representation_complete'
@@ -459,7 +461,7 @@ def main():
 
     support=cv.load_json(ROOT/'references'/'elements'/'source-support-map.json'); cv.validate_obj('source-support-map',support)
     support_req=cv.load_json(ROOT/'references'/'elements'/'source-support-requirements.json'); cv.validate_obj('source-support-requirements',support_req)
-    active_manifest=cv.load_json(ROOT/'references'/'source-pack'/'core-source-pack-manifest-0.6.1.json')
+    active_manifest=cv.load_json(compatibility_root()/'core-source-pack-manifest-0.6.1.json')
     assert len(support['records'])==46 and {r['source_id'] for r in support['records']}=={s['source_id'] for s in active_manifest['sources']}
     em.validate_model(catalog,interactions,invariants,support,support_req)
     results.append('c2_source_support_map_complete')

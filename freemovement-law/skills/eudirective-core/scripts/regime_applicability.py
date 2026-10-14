@@ -8,8 +8,10 @@ import sys
 from contract_validate import ContractError, digest_obj, load_json, validate_obj
 import element_model as em
 
+from source_library_paths import compatibility_root
+
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE_MANIFEST = ROOT / "references" / "source-pack" / "core-source-pack-manifest-0.6.1.json"
+SOURCE_MANIFEST = compatibility_root() / "core-source-pack-manifest-0.6.1.json"
 ENGINE_VERSION = "0.1.1"
 RULESET_VERSION = "0.1.1"
 ACTOR_CONTEXT_VERSION = "0.1.0"

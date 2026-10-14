@@ -15,10 +15,12 @@ import analysis_handoff as ah
 import suggestion_engine as sg
 import suggestion_ranking as sr
 
+from source_library_paths import compatibility_root
+
 ROOT = Path(__file__).resolve().parents[1]
 FX = ROOT / 'references/fixtures'
 DRIVER = ROOT / 'scripts/c6_integration.py'
-PACK = ROOT / 'references/source-pack/core-source-pack-manifest-0.6.1.json'
+PACK = compatibility_root() / 'core-source-pack-manifest-0.6.1.json'
 
 
 def run(*args, success=True):

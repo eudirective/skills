@@ -6,7 +6,7 @@ description: "use when a person requests read-only eu free-movement/family-visa 
 # eudirective Core
 
 ## Version and Status
-- Current version: `0.41.0`
+- Current version: `0.42.0`
 - Last updated: `2026-10-14`
 - Status: read-only applicant-facing guidance for user-provided real or fictional accounts; controlled scripts still restrict private-data intake and external actions.
 - Inter-skill contract: `0.2.0` (C3 development freeze; not portfolio v1.0).
@@ -18,7 +18,7 @@ description: "use when a person requests read-only eu free-movement/family-visa 
 ## Version Disclosure
 At the start of every visible response or report produced while using this skill, announce:
 ```text
-Skill: eudirective-core v0.41.0
+Skill: eudirective-core v0.42.0
 ```
 
 ## Source use and currentness
@@ -54,7 +54,7 @@ Optional `python scripts/c25_strategy_gate.py preview --input evaluations/fixtur
 
 ## C18 targeted legal-source integrity (2026-10-10)
 
-The C1 manifest at references/source-pack/core-source-pack-manifest-0.6.1.json is a legacy compatibility contract, not the active source corpus. Its exact source bytes are in the bundled source library's compatibility area. Run python scripts/c18_source_integrity.py and python scripts/verify_bundled_source_pack.py only for compatibility checks. For current legal content, use the package's source library as a snapshot and check the appropriate official publisher directly. The compatibility snapshot does not establish currentness, official-file byte equivalence, full-text completeness, legal meaning, national-law coverage, or private-case authorization.
+The C1 manifest at ../eudirective-source-library/compatibility/core-source-pack/core-source-pack-0.6.1/core-source-pack-manifest-0.6.1.json is a legacy compatibility contract, not the active source corpus. Its exact source bytes are in the bundled source library's compatibility area. Run python scripts/c18_source_integrity.py and python scripts/verify_bundled_source_pack.py only for compatibility checks. For current legal content, use the package's source library as a snapshot and check the appropriate official publisher directly. The compatibility snapshot does not establish currentness, official-file byte equivalence, full-text completeness, legal meaning, national-law coverage, or private-case authorization.
 
 ## C21 deterministic privacy and anonymisation rehearsal (2026-10-10)
 For **code-pinned, enrolled fictional fixtures only** (the single C21 synthetic fixture or exact enrolled C17 L1–L8 plans; modified/unregistered inputs fail closed), use `python scripts/c21_privacy.py preview --input references/fixtures/c21/fictional-private-looking.json --profile public_story_preview --output-dir <fresh-dir>` and `verify` to replay its view and receipt. `c17-preview --plan <fictional-C17-plan.json> --output-dir <fresh-dir>` produces a coarse, **non-send**, non-identifying category preview (no case ID, correspondence, legal source, or raw input digest). Run `python scripts/test_c21_privacy.py` before packaging. The purpose policy is allowlist-only and code-hash-pinned; personal identifiers and declared exact place/date handles are dropped or scrubbed by Python, but free-text patterns cannot establish anonymity or prevent public-record discovery. **Every C21 output is human-review-only, `external_disclosure_authorized=false`, and `private_data_enabled=false`.** A self-declared synthetic flag is not proof of fiction. Actual private/public-person data intake, telemetry, publication, host deletion claims, and real-case pipeline execution remain disabled; do not upload such material for the synthetic rehearsal. No national-law facts are moved into core. Read `references/c21-privacy-and-anonymisation.md`; maintenance-only considerations are in `maintenance/c21-privacy-boundaries.md` and must not be consulted during normal use.
@@ -127,13 +127,13 @@ Use the independently versioned core source pack. Do not inspect or modify Membe
 Validate the current C1 source pack manifest with:
 
 ```bash
-python scripts/contract_validate.py --schema core-source-pack references/source-pack/core-source-pack-manifest-0.6.1.json
+python scripts/contract_validate.py --schema core-source-pack ../eudirective-source-library/compatibility/core-source-pack/core-source-pack-0.6.1/core-source-pack-manifest-0.6.1.json
 ```
 
 Adapt the validated source-pack manifest into the C3-frozen controller module contract with:
 
 ```bash
-python scripts/core_source_adapter.py references/source-pack/core-source-pack-manifest-0.6.1.json <output-dir>
+python scripts/core_source_adapter.py ../eudirective-source-library/compatibility/core-source-pack/core-source-pack-0.6.1/core-source-pack-manifest-0.6.1.json <output-dir>
 ```
 
 The adapter treats a pack composed only of `current` mutable sources and `fixed_verified` immutable sources as controller-current. It never upgrades a `baseline_verified_not_live_rechecked` source to current.
@@ -485,7 +485,7 @@ Read `maintenance/` only when the user asks to update, repair, audit, port, pack
 - `references/contracts/` — C3-frozen development JSON Schemas plus model/source/C5a–C5f and C6 run-index schemas.
 - `references/fixtures/` — synthetic contract/source/atomic-element/C5a/C5b/C5c/C5d fixtures, including C3 positive/negative conformance and topology fixtures.
 - `references/source-substrate.md` — source ownership, real baseline, and staging rules.
-- `references/source-pack/` — compatibility manifests and provenance metadata only. Pinned compatibility bytes and the versioned source corpus are bundled under `skills/eudirective-source-library/`; the package does not store per-install retrieved sources or update state.
+- `references/source-pack/` — provenance metadata only. Pinned compatibility bytes and the versioned source corpus are bundled under `skills/eudirective-source-library/`; the package does not store per-install retrieved sources or update state.
 - `references/c6-controlled-integration.md` — C6 reproducible CLI, conservative projection, review-gate and verified-boundary rules.
 - `references/stratagems/adapted-stratagem-catalog.json` — preferred operational 36-pattern catalogue.
 - `references/stratagems/original-stratagem-catalog.json` — original/classical abstract reference catalogue; not operational authority.

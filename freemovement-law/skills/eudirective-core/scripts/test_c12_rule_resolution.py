@@ -6,10 +6,12 @@ from contract_validate import load_json,digest_obj,validate_obj
 import c6_integration as c6
 import c12_rule_resolution as c12
 
+from source_library_paths import compatibility_root
+
 ROOT=Path(__file__).resolve().parents[1]
 FX=ROOT/'references/fixtures/c10'
 LEDGERS=ROOT/'references/fixtures/c12'
-SOURCE=load_json(ROOT/'references/source-pack/core-source-pack-manifest-0.6.1.json')
+SOURCE=load_json(compatibility_root()/'core-source-pack-manifest-0.6.1.json')
 
 def setup(n):
     d=FX/f'L{n}';case=load_json(d/'case.json');e=load_json(d/'elements.json')

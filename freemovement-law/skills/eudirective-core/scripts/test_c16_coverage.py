@@ -13,9 +13,11 @@ import c12_rule_resolution as c12
 import c13_document_evidence as c13
 import module_conformance
 
+from source_library_paths import compatibility_root
+
 ROOT=Path(__file__).resolve().parents[1]
 FX=ROOT/'references/fixtures/c10'
-SOURCE=load_json(ROOT/'references/source-pack/core-source-pack-manifest-0.6.1.json')
+SOURCE=load_json(compatibility_root()/'core-source-pack-manifest-0.6.1.json')
 NEW=(2,3,6,7,8)
 REQUIRED={
  2:['eu:c16:visa-fee-v-provider-charge','se:c16:istanbul-service-fee','tr:c16:istanbul-vfs-choice'],

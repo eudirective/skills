@@ -4,6 +4,8 @@ import tempfile, pathlib, sys, json, copy
 from contract_validate import load_json, ContractError
 import c7_trust_gate as trust
 import module_conformance as mod
+from source_library_paths import compatibility_root
+
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 checked=[]
 def accept(name,fn):
@@ -32,7 +34,7 @@ def fixture_guard():
 
 def metadata_guard():
  accept('reject_private_identifier_run_id',lambda:denies(lambda:trust.require_synthetic_run_metadata('RUN-PERSON-test','2026-10-10T00:00:00Z'),'unapproved_synthetic_run_id'))
- accept('reject_2099_source_as_of',lambda:denies(lambda:trust.require_source_as_of(load_json(ROOT/'references/source-pack/core-source-pack-manifest-0.6.1.json'),'2099-01-01T00:00:00Z'),'source_freshness_as_of_blocked'))
+ accept('reject_2099_source_as_of',lambda:denies(lambda:trust.require_source_as_of(load_json(compatibility_root()/'core-source-pack-manifest-0.6.1.json'),'2099-01-01T00:00:00Z'),'source_freshness_as_of_blocked'))
 
 def internal_issue_code_guard():
  with tempfile.TemporaryDirectory() as td:

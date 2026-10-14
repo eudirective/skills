@@ -69,7 +69,7 @@ def load_catalogs(sweden_root, turkiye_root):
     catalogs = {}
     exps = {}
     extensions = {}
-    source_ids = {item['source_id'] for item in load_json(ROOT/'references/source-pack/core-source-pack-manifest-0.6.1.json')['sources']}
+    source_ids = {item['source_id'] for item in load_json(compatibility_root()/'core-source-pack-manifest-0.6.1.json')['sources']}
     for jurisdiction, root in roots.items():
         cfile = safe_file(root, 'references/c17-remedy-catalog.json')
         if sha_file(cfile) != pins[jurisdiction]['catalog_file_sha256']:

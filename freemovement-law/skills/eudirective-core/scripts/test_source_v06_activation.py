@@ -22,10 +22,12 @@ import element_model as em
 import c6_integration as c6
 import hierarchy_principles as c5b
 
+from source_library_paths import compatibility_root
+
 ROOT=Path(__file__).resolve().parents[1]
-PACK05=ROOT/'references/source-pack/core-source-pack-manifest-0.5.0.json'
-PACK06=ROOT/'references/source-pack/core-source-pack-manifest-0.6.0.json'
-PACK061=ROOT/'references/source-pack/core-source-pack-manifest-0.6.1.json'
+PACK05=compatibility_root()/'core-source-pack-manifest-0.5.0.json'
+PACK06=compatibility_root()/'core-source-pack-manifest-0.6.0.json'
+PACK061=compatibility_root()/'core-source-pack-manifest-0.6.1.json'
 TEXTREL='sources/case_law/CELEX_62024CJ0477_EN_TXT.md'
 TEXT=trust.BUNDLED_SOURCE_ROOT/TEXTREL
 FX=ROOT/'references/fixtures'
