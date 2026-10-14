@@ -1,4 +1,4 @@
-"""Resolve the externally maintained source library bundled with the plugin."""
+"""Resolve the external source library and the core skill compatibility test fixture."""
 from __future__ import annotations
 
 from pathlib import Path
@@ -15,10 +15,10 @@ def source_library_root() -> Path:
 
 
 def compatibility_root() -> Path:
-    root = source_library_root() / "compatibility" / "core-source-pack" / "core-source-pack-0.6.1"
+    root = SKILL_ROOT / "tests" / "fixtures" / "core-source-pack-0.6.1"
     if (root / "core-source-pack-manifest-0.6.1.json").is_file():
         return root
-    raise FileNotFoundError("The pinned core compatibility snapshot is missing from the bundled source library.")
+    raise FileNotFoundError("The pinned core compatibility fixture is missing from the eudirective-core tests directory.")
 
 
 def source_library_candidates() -> list[Path]:
