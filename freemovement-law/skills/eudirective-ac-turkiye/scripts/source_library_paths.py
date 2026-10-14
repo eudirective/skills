@@ -2,15 +2,11 @@ from pathlib import Path
 
 SKILL_ROOT = Path(__file__).resolve().parents[1]
 PLUGIN_ROOT = SKILL_ROOT.parent.parent
+LIBRARY_ROOT = PLUGIN_ROOT / "skills" / "eudirective-source-library"
 
 
 def module_notes_root():
-    for library in (
-        PLUGIN_ROOT / "data" / "eudirective-source-library-0.6.0",
-        PLUGIN_ROOT / "source-runtime" / "eudirective-source-library-0.6.0",
-        PLUGIN_ROOT.parent.parent.parent / "eudirective-source-library-0.6.0",
-    ):
-        notes = library / "turkiye" / "module-notes" / "source-notes"
-        if notes.is_dir():
-            return notes
-    raise FileNotFoundError("Türkiye module notes are missing from the eudirective source library.")
+    notes = LIBRARY_ROOT / "turkiye" / "module-notes" / "source-notes"
+    if notes.is_dir():
+        return notes
+    raise FileNotFoundError("Türkiye module notes are missing from the bundled eudirective source library.")
