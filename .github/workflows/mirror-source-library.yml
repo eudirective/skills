@@ -23,12 +23,12 @@ jobs:
 
     steps:
       - name: Check out skills
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           path: skills
 
       - name: Check out source-library only
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: eudirective/public-data
           ref: main
