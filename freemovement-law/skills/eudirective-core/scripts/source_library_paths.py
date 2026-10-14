@@ -28,7 +28,7 @@ def source_library_candidates() -> list[Path]:
 def compatibility_sources_root() -> Path:
     root = compatibility_root() / "sources"
     if not root.is_dir():
-        raise FileNotFoundError("The pinned core source representations are missing from the source library.")
+        raise FileNotFoundError("The pinned core source representations are missing from the compatibility fixture.")
     return root
 
 
