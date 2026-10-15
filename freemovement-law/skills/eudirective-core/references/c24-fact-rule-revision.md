@@ -36,6 +36,10 @@ Find unknowns that would **change** a conclusion, remedy, filing deadline, compe
 
 When the user says an EU spouse is moving to another Member State and the officer demands bank statements, the **EU-family routine-checklist exclusion** can be assessed on the stated facts. Whether the third-country applicant is lawfully present where applying affects a **different** territorial-competence question. Whether online validation counted as formal lodging affects a **third** procedural issue. Do not make any one unknown a condition of resolving the other issues.
 
+### C27 state-reconciliation on each material new fact
+
+Reconcile every new report against **each proceeding's** event history, disclosures, document operations, classification, and authority grounds under `references/state-engine/c27-case-state.md`. Preserve the earlier record and identify which advice now needs revisiting; do not erase independent complaint tracks. Distinguish when an event occurred from when it became known to the assistant. A receipt of unknown purpose does not determine formal lodging; notification of a decision must not be confused with service triggering an appeal clock.
+
 ## 3. Second and subsequent replies: revise the actual advice
 
 On each material follow-up:

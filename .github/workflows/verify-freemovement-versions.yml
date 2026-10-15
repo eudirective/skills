@@ -26,6 +26,12 @@ jobs:
         run: node freemovement-law/scripts/version_manifest.mjs --verify
       - name: C27 state engine regression checks
         run: python freemovement-law/skills/eudirective-core/scripts/test_c27_case_state.py
+      - name: C27 abstract CLI integration smoke
+        run: |
+          python freemovement-law/skills/eudirective-core/scripts/c27_case_state.py checklist > /dev/null
+          python freemovement-law/skills/eudirective-core/scripts/c27_case_state.py inspect --input freemovement-law/skills/eudirective-core/evaluations/fixtures/c27/multi-proceeding.json > /dev/null
+          python freemovement-law/skills/eudirective-core/scripts/c27_case_state.py inspect --full --input freemovement-law/skills/eudirective-core/evaluations/fixtures/c27/multi-proceeding.json > /dev/null
+          python freemovement-law/skills/eudirective-core/scripts/c27_case_state.py compare --previous freemovement-law/skills/eudirective-core/evaluations/fixtures/c27/initial.json --input freemovement-law/skills/eudirective-core/evaluations/fixtures/c27/multi-proceeding.json > /dev/null
       - name: Check version parity comparison and failure reporting
         run: |
           node --test freemovement-law/skills/eudirective-core/scripts/test_session_version_check.mjs

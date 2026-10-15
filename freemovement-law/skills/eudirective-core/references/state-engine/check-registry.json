@@ -1,6 +1,6 @@
 {
-  "schema": "freemovement-check-registry/0.1.0",
-  "description": "Atomic issue coverage inventory. Capability means a review method is described, not that a review ran or legal compliance was established. Untriggered never means legally inapplicable.",
+  "schema": "freemovement-check-registry/0.2.0",
+  "description": "Atomic issue inventory with risk-prioritized display. Each check is a discovery prompt, not proof of execution. Catalog pattern screening is model-led only and distinct from synthetic script execution. Untriggered never means legally inapplicable.",
   "families": [
     {
       "family_id": "case_intake",
@@ -89,6 +89,10 @@
     {
       "family_id": "novelty",
       "title": "Completeness and novel-issue discovery"
+    },
+    {
+      "family_id": "principle_catalog",
+      "title": "Individually indexed legal principles"
     }
   ],
   "checks": [
@@ -100,7 +104,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "case_intake.application_type",
@@ -110,7 +115,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "important"
     },
     {
       "check_id": "case_intake.claimed_legal_basis",
@@ -120,7 +126,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "important"
     },
     {
       "check_id": "case_intake.authority_classification",
@@ -130,7 +137,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "important"
     },
     {
       "check_id": "case_intake.applicant_objective",
@@ -140,7 +148,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "case_intake.actor_roles",
@@ -150,7 +159,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "case_intake.relationship_basis",
@@ -160,7 +170,8 @@
         "family"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "case_intake.geographic_roles",
@@ -170,7 +181,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "case_intake.returnee_context",
@@ -180,7 +192,8 @@
         "family"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "case_intake.frontier_worker_context",
@@ -190,7 +203,8 @@
         "family"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "case_intake.linked_proceedings",
@@ -200,7 +214,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "case_intake.applicant_prior_actions",
@@ -210,7 +225,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "lifecycle.enquiry_state",
@@ -220,7 +236,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "lifecycle.appointment_request",
@@ -230,7 +247,8 @@
         "appointment"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "lifecycle.application_preparation",
@@ -240,7 +258,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "lifecycle.online_form_effect",
@@ -251,7 +270,8 @@
         "visa"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "lifecycle.physical_attendance",
@@ -261,7 +281,8 @@
         "lodgement"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "lifecycle.documents_presented",
@@ -271,7 +292,8 @@
         "document"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "lifecycle.lodgement_attempted",
@@ -281,7 +303,8 @@
         "lodgement"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "lifecycle.lodgement_confirmed",
@@ -291,7 +314,8 @@
         "lodgement"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "urgent"
     },
     {
       "check_id": "lifecycle.lodgement_disputed",
@@ -301,7 +325,8 @@
         "lodgement"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "urgent"
     },
     {
       "check_id": "lifecycle.receipt_evidence",
@@ -311,7 +336,8 @@
         "lodgement"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "important"
     },
     {
       "check_id": "lifecycle.case_examination",
@@ -321,7 +347,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "lifecycle.supplementary_request",
@@ -331,7 +358,8 @@
         "document"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "lifecycle.interview_stage",
@@ -341,7 +369,8 @@
         "interview"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "lifecycle.decision_taken",
@@ -351,7 +380,8 @@
         "decision"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "lifecycle.decision_notified",
@@ -361,7 +391,8 @@
         "decision"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "urgent"
     },
     {
       "check_id": "lifecycle.challenge_stage",
@@ -372,7 +403,8 @@
         "complaint"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "lifecycle.closure_and_withdrawal",
@@ -382,7 +414,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "lifecycle.procedural_reopening",
@@ -392,7 +425,8 @@
         "review"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "disclosures.information_already_sent",
@@ -402,7 +436,8 @@
         "disclosure"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "important"
     },
     {
       "check_id": "disclosures.communication_channel",
@@ -412,7 +447,8 @@
         "disclosure"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "disclosures.material_disclosed",
@@ -422,7 +458,8 @@
         "disclosure"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "disclosures.recipient_identity_scope",
@@ -432,7 +469,8 @@
         "disclosure"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "disclosures.sent_versus_delivered",
@@ -442,7 +480,8 @@
         "disclosure"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "disclosures.delivered_versus_read",
@@ -452,7 +491,8 @@
         "disclosure"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "important"
     },
     {
       "check_id": "disclosures.acknowledgement",
@@ -462,7 +502,8 @@
         "disclosure"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "important"
     },
     {
       "check_id": "disclosures.express_reliance",
@@ -473,7 +514,8 @@
         "authority"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "disclosures.prior_admission",
@@ -483,7 +525,8 @@
         "disclosure"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "disclosures.correction_history",
@@ -493,7 +536,8 @@
         "disclosure"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "disclosures.redundant_disclosure",
@@ -503,7 +547,8 @@
         "disclosure"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "disclosures.mandatory_disclosure",
@@ -513,7 +558,8 @@
         "disclosure"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "urgent"
     },
     {
       "check_id": "disclosures.voluntary_information",
@@ -523,7 +569,8 @@
         "disclosure"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "disclosures.future_minimisation",
@@ -533,7 +580,8 @@
         "disclosure"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "disclosures.cross_application_reuse",
@@ -543,7 +591,8 @@
         "disclosure"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "disclosures.information_timing",
@@ -554,7 +603,8 @@
         "authority"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "disclosures.strategy_already_signalled",
@@ -565,7 +615,8 @@
         "strategy"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "disclosures.acknowledgement_not_waiver",
@@ -575,7 +626,8 @@
         "disclosure"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "important"
     },
     {
       "check_id": "documents.requested_item",
@@ -585,7 +637,8 @@
         "document"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "documents.requested_legal_basis",
@@ -595,7 +648,8 @@
         "document"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "documents.ordinary_checklist_scope",
@@ -606,7 +660,8 @@
         "visa"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "important"
     },
     {
       "check_id": "documents.already_possessed",
@@ -616,7 +671,8 @@
         "document"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "documents.copy_original",
@@ -626,7 +682,8 @@
         "document"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "documents.electronically_issued",
@@ -636,7 +693,8 @@
         "document"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "documents.accepted_rejected_returned",
@@ -646,7 +704,8 @@
         "document"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "documents.missing_document",
@@ -656,7 +715,8 @@
         "document"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "documents.alternative_proof",
@@ -666,7 +726,8 @@
         "document"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "important"
     },
     {
       "check_id": "documents.mandatory_vs_optional",
@@ -676,7 +737,8 @@
         "document"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "documents.translations",
@@ -686,7 +748,8 @@
         "document"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "documents.legalisation_apostille",
@@ -696,7 +759,8 @@
         "document"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "documents.family_status_records",
@@ -707,7 +771,8 @@
         "family"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "documents.duplicate_demand",
@@ -717,7 +782,8 @@
         "document"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "documents.proof_completeness",
@@ -727,7 +793,8 @@
         "document"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "documents.provider_document_rules",
@@ -738,7 +805,8 @@
         "visa"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "timing.clock_start",
@@ -748,7 +816,8 @@
         "deadline"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5c-evidence-deadlines-authority.md"
+      "reference": "references/c5c-evidence-deadlines-authority.md",
+      "priority": "urgent"
     },
     {
       "check_id": "timing.lodgement_trigger",
@@ -759,7 +828,8 @@
         "lodgement"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5c-evidence-deadlines-authority.md"
+      "reference": "references/c5c-evidence-deadlines-authority.md",
+      "priority": "normal"
     },
     {
       "check_id": "timing.service_date",
@@ -770,7 +840,8 @@
         "decision"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5c-evidence-deadlines-authority.md"
+      "reference": "references/c5c-evidence-deadlines-authority.md",
+      "priority": "urgent"
     },
     {
       "check_id": "timing.applicable_rule",
@@ -780,7 +851,8 @@
         "deadline"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5c-evidence-deadlines-authority.md"
+      "reference": "references/c5c-evidence-deadlines-authority.md",
+      "priority": "normal"
     },
     {
       "check_id": "timing.exceptions_and_extension",
@@ -790,7 +862,8 @@
         "deadline"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5c-evidence-deadlines-authority.md"
+      "reference": "references/c5c-evidence-deadlines-authority.md",
+      "priority": "normal"
     },
     {
       "check_id": "timing.suspension",
@@ -800,7 +873,8 @@
         "deadline"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5c-evidence-deadlines-authority.md"
+      "reference": "references/c5c-evidence-deadlines-authority.md",
+      "priority": "normal"
     },
     {
       "check_id": "timing.calendar_rules",
@@ -810,7 +884,8 @@
         "deadline"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5c-evidence-deadlines-authority.md"
+      "reference": "references/c5c-evidence-deadlines-authority.md",
+      "priority": "normal"
     },
     {
       "check_id": "timing.accelerated_processing",
@@ -820,7 +895,8 @@
         "visa"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5c-evidence-deadlines-authority.md"
+      "reference": "references/c5c-evidence-deadlines-authority.md",
+      "priority": "normal"
     },
     {
       "check_id": "timing.pre_lodgement_delay",
@@ -830,7 +906,8 @@
         "appointment"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5c-evidence-deadlines-authority.md"
+      "reference": "references/c5c-evidence-deadlines-authority.md",
+      "priority": "urgent"
     },
     {
       "check_id": "timing.urgent_preservation",
@@ -840,7 +917,8 @@
         "issue"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5c-evidence-deadlines-authority.md"
+      "reference": "references/c5c-evidence-deadlines-authority.md",
+      "priority": "urgent"
     },
     {
       "check_id": "timing.appeal_limit",
@@ -851,7 +929,8 @@
         "deadline"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5c-evidence-deadlines-authority.md"
+      "reference": "references/c5c-evidence-deadlines-authority.md",
+      "priority": "urgent"
     },
     {
       "check_id": "timing.premature_predetermination",
@@ -863,7 +942,8 @@
         "authority"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5c-evidence-deadlines-authority.md"
+      "reference": "references/c5c-evidence-deadlines-authority.md",
+      "priority": "normal"
     },
     {
       "check_id": "authority.competence",
@@ -873,7 +953,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "authority.actual_ground",
@@ -883,7 +964,8 @@
         "authority"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "urgent"
     },
     {
       "check_id": "authority.position_provenance",
@@ -893,7 +975,8 @@
         "authority"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "urgent"
     },
     {
       "check_id": "authority.indicated_ground",
@@ -903,7 +986,8 @@
         "authority"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "authority.ground_change",
@@ -913,7 +997,8 @@
         "authority"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "authority.knowledge_state",
@@ -924,7 +1009,8 @@
         "disclosure"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "authority.reasons_given",
@@ -935,7 +1021,8 @@
         "authority"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "authority.uninvoked_defence",
@@ -945,7 +1032,8 @@
         "authority"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "authority.staff_responsibility",
@@ -955,7 +1043,8 @@
         "issue"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "authority.supervisory_path",
@@ -965,7 +1054,8 @@
         "complaint"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "authority.formal_vs_informal",
@@ -975,7 +1065,8 @@
         "authority"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "eu_scope.directive_scope",
@@ -987,7 +1078,8 @@
         "residence"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5a-topology-applicability.md"
+      "reference": "references/c5a-topology-applicability.md",
+      "priority": "normal"
     },
     {
       "check_id": "eu_scope.movement_exercised",
@@ -997,7 +1089,8 @@
         "family"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5a-topology-applicability.md"
+      "reference": "references/c5a-topology-applicability.md",
+      "priority": "normal"
     },
     {
       "check_id": "eu_scope.accompany_or_join",
@@ -1007,7 +1100,8 @@
         "family"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5a-topology-applicability.md"
+      "reference": "references/c5a-topology-applicability.md",
+      "priority": "normal"
     },
     {
       "check_id": "eu_scope.returnee_derived_rights",
@@ -1017,7 +1111,8 @@
         "family"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5a-topology-applicability.md"
+      "reference": "references/c5a-topology-applicability.md",
+      "priority": "normal"
     },
     {
       "check_id": "eu_scope.domestic_extension",
@@ -1027,7 +1122,8 @@
         "family"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5a-topology-applicability.md"
+      "reference": "references/c5a-topology-applicability.md",
+      "priority": "normal"
     },
     {
       "check_id": "eu_scope.visa_code_lex_specialis",
@@ -1037,7 +1133,8 @@
         "visa"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5a-topology-applicability.md"
+      "reference": "references/c5a-topology-applicability.md",
+      "priority": "normal"
     },
     {
       "check_id": "eu_scope.schengen_borders",
@@ -1048,7 +1145,8 @@
         "visa"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5a-topology-applicability.md"
+      "reference": "references/c5a-topology-applicability.md",
+      "priority": "normal"
     },
     {
       "check_id": "eu_scope.residence_card_entry_exemption",
@@ -1059,7 +1157,8 @@
         "border"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5a-topology-applicability.md"
+      "reference": "references/c5a-topology-applicability.md",
+      "priority": "normal"
     },
     {
       "check_id": "eu_scope.permanent_residence",
@@ -1069,7 +1168,8 @@
         "residence"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5a-topology-applicability.md"
+      "reference": "references/c5a-topology-applicability.md",
+      "priority": "normal"
     },
     {
       "check_id": "eu_scope.worker_student_self_sufficient",
@@ -1080,7 +1180,8 @@
         "residence"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5a-topology-applicability.md"
+      "reference": "references/c5a-topology-applicability.md",
+      "priority": "normal"
     },
     {
       "check_id": "eu_scope.family_recognition",
@@ -1091,7 +1192,8 @@
         "marriage"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5a-topology-applicability.md"
+      "reference": "references/c5a-topology-applicability.md",
+      "priority": "normal"
     },
     {
       "check_id": "eu_scope.third_state_context",
@@ -1101,7 +1203,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5a-topology-applicability.md"
+      "reference": "references/c5a-topology-applicability.md",
+      "priority": "normal"
     },
     {
       "check_id": "hierarchy.direct_effect",
@@ -1111,7 +1214,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5b-hierarchy-principles.md"
+      "reference": "references/c5b-hierarchy-principles.md",
+      "priority": "normal"
     },
     {
       "check_id": "hierarchy.primacy",
@@ -1121,7 +1225,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5b-hierarchy-principles.md"
+      "reference": "references/c5b-hierarchy-principles.md",
+      "priority": "normal"
     },
     {
       "check_id": "hierarchy.lex_specialis",
@@ -1131,7 +1236,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5b-hierarchy-principles.md"
+      "reference": "references/c5b-hierarchy-principles.md",
+      "priority": "normal"
     },
     {
       "check_id": "hierarchy.disapplication",
@@ -1141,7 +1247,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5b-hierarchy-principles.md"
+      "reference": "references/c5b-hierarchy-principles.md",
+      "priority": "normal"
     },
     {
       "check_id": "hierarchy.consistent_interpretation",
@@ -1151,7 +1258,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5b-hierarchy-principles.md"
+      "reference": "references/c5b-hierarchy-principles.md",
+      "priority": "normal"
     },
     {
       "check_id": "hierarchy.equivalence",
@@ -1162,7 +1270,8 @@
         "review"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5b-hierarchy-principles.md"
+      "reference": "references/c5b-hierarchy-principles.md",
+      "priority": "normal"
     },
     {
       "check_id": "hierarchy.effectiveness",
@@ -1172,7 +1281,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5b-hierarchy-principles.md"
+      "reference": "references/c5b-hierarchy-principles.md",
+      "priority": "normal"
     },
     {
       "check_id": "hierarchy.more_favourable_rules",
@@ -1182,7 +1292,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5b-hierarchy-principles.md"
+      "reference": "references/c5b-hierarchy-principles.md",
+      "priority": "normal"
     },
     {
       "check_id": "hierarchy.legal_certainty",
@@ -1192,7 +1303,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5b-hierarchy-principles.md"
+      "reference": "references/c5b-hierarchy-principles.md",
+      "priority": "normal"
     },
     {
       "check_id": "hierarchy.legitimate_expectations",
@@ -1203,7 +1315,8 @@
         "authority"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5b-hierarchy-principles.md"
+      "reference": "references/c5b-hierarchy-principles.md",
+      "priority": "normal"
     },
     {
       "check_id": "soft_law.commission_guidance",
@@ -1213,7 +1326,8 @@
         "family"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5b-hierarchy-principles.md"
+      "reference": "references/c5b-hierarchy-principles.md",
+      "priority": "important"
     },
     {
       "check_id": "soft_law.visa_handbook",
@@ -1223,7 +1337,8 @@
         "visa"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5b-hierarchy-principles.md"
+      "reference": "references/c5b-hierarchy-principles.md",
+      "priority": "important"
     },
     {
       "check_id": "soft_law.operational_handbook",
@@ -1234,7 +1349,8 @@
         "border"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5b-hierarchy-principles.md"
+      "reference": "references/c5b-hierarchy-principles.md",
+      "priority": "normal"
     },
     {
       "check_id": "soft_law.national_guidance",
@@ -1244,7 +1360,8 @@
         "country"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5b-hierarchy-principles.md"
+      "reference": "references/c5b-hierarchy-principles.md",
+      "priority": "important"
     },
     {
       "check_id": "soft_law.administrative_practice",
@@ -1254,7 +1371,8 @@
         "authority"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5b-hierarchy-principles.md"
+      "reference": "references/c5b-hierarchy-principles.md",
+      "priority": "normal"
     },
     {
       "check_id": "soft_law.grimaldi",
@@ -1264,7 +1382,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5b-hierarchy-principles.md"
+      "reference": "references/c5b-hierarchy-principles.md",
+      "priority": "normal"
     },
     {
       "check_id": "soft_law.binding_force",
@@ -1274,7 +1393,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5b-hierarchy-principles.md"
+      "reference": "references/c5b-hierarchy-principles.md",
+      "priority": "important"
     },
     {
       "check_id": "soft_law.guidance_conflicts",
@@ -1285,7 +1405,8 @@
         "visa"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5b-hierarchy-principles.md"
+      "reference": "references/c5b-hierarchy-principles.md",
+      "priority": "normal"
     },
     {
       "check_id": "soft_law.official_explanation",
@@ -1295,7 +1416,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5b-hierarchy-principles.md"
+      "reference": "references/c5b-hierarchy-principles.md",
+      "priority": "normal"
     },
     {
       "check_id": "soft_law.unexplained_departure",
@@ -1305,7 +1427,8 @@
         "authority"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5b-hierarchy-principles.md"
+      "reference": "references/c5b-hierarchy-principles.md",
+      "priority": "normal"
     },
     {
       "check_id": "soft_law.historic_version",
@@ -1315,7 +1438,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5b-hierarchy-principles.md"
+      "reference": "references/c5b-hierarchy-principles.md",
+      "priority": "normal"
     },
     {
       "check_id": "fundamental_rights.charter_scope",
@@ -1325,7 +1449,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c16/eu-principles-review.md"
+      "reference": "references/c16/eu-principles-review.md",
+      "priority": "normal"
     },
     {
       "check_id": "fundamental_rights.article41_boundary",
@@ -1335,7 +1460,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c16/eu-principles-review.md"
+      "reference": "references/c16/eu-principles-review.md",
+      "priority": "normal"
     },
     {
       "check_id": "fundamental_rights.good_administration",
@@ -1345,7 +1471,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c16/eu-principles-review.md"
+      "reference": "references/c16/eu-principles-review.md",
+      "priority": "normal"
     },
     {
       "check_id": "fundamental_rights.family_life",
@@ -1355,7 +1482,8 @@
         "family"
       ],
       "capability": "model_guidance",
-      "reference": "references/c16/eu-principles-review.md"
+      "reference": "references/c16/eu-principles-review.md",
+      "priority": "normal"
     },
     {
       "check_id": "fundamental_rights.non_discrimination",
@@ -1365,7 +1493,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c16/eu-principles-review.md"
+      "reference": "references/c16/eu-principles-review.md",
+      "priority": "normal"
     },
     {
       "check_id": "fundamental_rights.privacy",
@@ -1376,7 +1505,8 @@
         "issue"
       ],
       "capability": "model_guidance",
-      "reference": "references/c16/eu-principles-review.md"
+      "reference": "references/c16/eu-principles-review.md",
+      "priority": "normal"
     },
     {
       "check_id": "fundamental_rights.data_protection",
@@ -1386,7 +1516,8 @@
         "disclosure"
       ],
       "capability": "model_guidance",
-      "reference": "references/c16/eu-principles-review.md"
+      "reference": "references/c16/eu-principles-review.md",
+      "priority": "normal"
     },
     {
       "check_id": "fundamental_rights.effective_remedy",
@@ -1397,7 +1528,8 @@
         "complaint"
       ],
       "capability": "model_guidance",
-      "reference": "references/c16/eu-principles-review.md"
+      "reference": "references/c16/eu-principles-review.md",
+      "priority": "normal"
     },
     {
       "check_id": "fundamental_rights.hearing_defence",
@@ -1408,7 +1540,8 @@
         "interview"
       ],
       "capability": "model_guidance",
-      "reference": "references/c16/eu-principles-review.md"
+      "reference": "references/c16/eu-principles-review.md",
+      "priority": "normal"
     },
     {
       "check_id": "fundamental_rights.proportionality",
@@ -1418,7 +1551,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c16/eu-principles-review.md"
+      "reference": "references/c16/eu-principles-review.md",
+      "priority": "normal"
     },
     {
       "check_id": "fundamental_rights.reasoned_decision",
@@ -1428,7 +1562,8 @@
         "decision"
       ],
       "capability": "model_guidance",
-      "reference": "references/c16/eu-principles-review.md"
+      "reference": "references/c16/eu-principles-review.md",
+      "priority": "normal"
     },
     {
       "check_id": "proof.burden_of_proof",
@@ -1438,7 +1573,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5c-evidence-deadlines-authority.md"
+      "reference": "references/c5c-evidence-deadlines-authority.md",
+      "priority": "normal"
     },
     {
       "check_id": "proof.proof_freedom",
@@ -1448,7 +1584,8 @@
         "document"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5c-evidence-deadlines-authority.md"
+      "reference": "references/c5c-evidence-deadlines-authority.md",
+      "priority": "normal"
     },
     {
       "check_id": "proof.document_authenticity",
@@ -1458,7 +1595,8 @@
         "document"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5c-evidence-deadlines-authority.md"
+      "reference": "references/c5c-evidence-deadlines-authority.md",
+      "priority": "normal"
     },
     {
       "check_id": "proof.contrary_evidence",
@@ -1468,7 +1606,8 @@
         "issue"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5c-evidence-deadlines-authority.md"
+      "reference": "references/c5c-evidence-deadlines-authority.md",
+      "priority": "normal"
     },
     {
       "check_id": "proof.source_vs_fact",
@@ -1478,7 +1617,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5c-evidence-deadlines-authority.md"
+      "reference": "references/c5c-evidence-deadlines-authority.md",
+      "priority": "normal"
     },
     {
       "check_id": "proof.copy_status",
@@ -1488,7 +1628,8 @@
         "document"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5c-evidence-deadlines-authority.md"
+      "reference": "references/c5c-evidence-deadlines-authority.md",
+      "priority": "normal"
     },
     {
       "check_id": "proof.national_evidence_rules",
@@ -1498,7 +1639,8 @@
         "country"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5c-evidence-deadlines-authority.md"
+      "reference": "references/c5c-evidence-deadlines-authority.md",
+      "priority": "normal"
     },
     {
       "check_id": "proof.unexamined_records",
@@ -1508,7 +1650,8 @@
         "issue"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5c-evidence-deadlines-authority.md"
+      "reference": "references/c5c-evidence-deadlines-authority.md",
+      "priority": "normal"
     },
     {
       "check_id": "proof.unverified_assertion",
@@ -1518,7 +1661,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5c-evidence-deadlines-authority.md"
+      "reference": "references/c5c-evidence-deadlines-authority.md",
+      "priority": "normal"
     },
     {
       "check_id": "access.appointment_wait",
@@ -1528,7 +1672,8 @@
         "appointment"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "access.direct_access",
@@ -1539,7 +1684,8 @@
         "appointment"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "access.digital_only",
@@ -1549,7 +1695,8 @@
         "lodgement"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "access.receipts",
@@ -1559,7 +1706,8 @@
         "lodgement"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "access.refusal_to_lodge",
@@ -1569,7 +1717,8 @@
         "lodgement"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "access.territorial_competence",
@@ -1579,7 +1728,8 @@
         "visa"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "access.fee_waiver",
@@ -1589,7 +1739,8 @@
         "visa"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "access.outsourcing_fees",
@@ -1599,7 +1750,8 @@
         "visa"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "access.representation",
@@ -1610,7 +1762,8 @@
         "lodgement"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "access.cross_border_admission",
@@ -1620,7 +1773,8 @@
         "border"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "access.service_provider_accountability",
@@ -1630,7 +1784,8 @@
         "visa"
       ],
       "capability": "model_guidance",
-      "reference": "references/c23-applicant-case-guidance.md"
+      "reference": "references/c23-applicant-case-guidance.md",
+      "priority": "normal"
     },
     {
       "check_id": "conduct.staff_treatment",
@@ -1640,7 +1795,8 @@
         "issue"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "conduct.physical_exclusion",
@@ -1650,7 +1806,8 @@
         "issue"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "conduct.non_response",
@@ -1660,7 +1817,8 @@
         "authority"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "conduct.complaint_channel",
@@ -1670,7 +1828,8 @@
         "complaint"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "conduct.reporting_conflict",
@@ -1680,7 +1839,8 @@
         "issue"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "conduct.evidence_loss",
@@ -1690,7 +1850,8 @@
         "issue"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "urgent"
     },
     {
       "check_id": "conduct.independent_outcomes",
@@ -1700,7 +1861,8 @@
         "issue"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "privacy.authority_data_need",
@@ -1711,7 +1873,8 @@
         "disclosure"
       ],
       "capability": "model_guidance",
-      "reference": "references/c21-privacy-and-anonymisation.md"
+      "reference": "references/c21-privacy-and-anonymisation.md",
+      "priority": "normal"
     },
     {
       "check_id": "privacy.authority_purpose",
@@ -1721,7 +1884,8 @@
         "document"
       ],
       "capability": "model_guidance",
-      "reference": "references/c21-privacy-and-anonymisation.md"
+      "reference": "references/c21-privacy-and-anonymisation.md",
+      "priority": "normal"
     },
     {
       "check_id": "privacy.authority_retention",
@@ -1731,7 +1895,8 @@
         "disclosure"
       ],
       "capability": "model_guidance",
-      "reference": "references/c21-privacy-and-anonymisation.md"
+      "reference": "references/c21-privacy-and-anonymisation.md",
+      "priority": "normal"
     },
     {
       "check_id": "privacy.applicant_minimisation",
@@ -1741,7 +1906,8 @@
         "disclosure"
       ],
       "capability": "model_guidance",
-      "reference": "references/c21-privacy-and-anonymisation.md"
+      "reference": "references/c21-privacy-and-anonymisation.md",
+      "priority": "normal"
     },
     {
       "check_id": "privacy.recipient_minimisation",
@@ -1751,7 +1917,8 @@
         "disclosure"
       ],
       "capability": "model_guidance",
-      "reference": "references/c21-privacy-and-anonymisation.md"
+      "reference": "references/c21-privacy-and-anonymisation.md",
+      "priority": "normal"
     },
     {
       "check_id": "privacy.chat_data_minimisation",
@@ -1761,7 +1928,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c21-privacy-and-anonymisation.md"
+      "reference": "references/c21-privacy-and-anonymisation.md",
+      "priority": "normal"
     },
     {
       "check_id": "privacy.publication_linkability",
@@ -1771,7 +1939,8 @@
         "disclosure"
       ],
       "capability": "model_guidance",
-      "reference": "references/c21-privacy-and-anonymisation.md"
+      "reference": "references/c21-privacy-and-anonymisation.md",
+      "priority": "normal"
     },
     {
       "check_id": "privacy.anonymisation_assurance",
@@ -1781,7 +1950,8 @@
         "disclosure"
       ],
       "capability": "model_guidance",
-      "reference": "references/c21-privacy-and-anonymisation.md"
+      "reference": "references/c21-privacy-and-anonymisation.md",
+      "priority": "normal"
     },
     {
       "check_id": "privacy.synthetic_gate_limit",
@@ -1791,7 +1961,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c21-privacy-and-anonymisation.md"
+      "reference": "references/c21-privacy-and-anonymisation.md",
+      "priority": "normal"
     },
     {
       "check_id": "privacy.approval_recipient",
@@ -1801,7 +1972,8 @@
         "disclosure"
       ],
       "capability": "model_guidance",
-      "reference": "references/c21-privacy-and-anonymisation.md"
+      "reference": "references/c21-privacy-and-anonymisation.md",
+      "priority": "normal"
     },
     {
       "check_id": "privacy.public_search_leak",
@@ -1811,7 +1983,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c21-privacy-and-anonymisation.md"
+      "reference": "references/c21-privacy-and-anonymisation.md",
+      "priority": "normal"
     },
     {
       "check_id": "gdpr.lawful_basis",
@@ -1822,7 +1995,8 @@
         "document"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-evidence-acquisition.md"
+      "reference": "references/c25-evidence-acquisition.md",
+      "priority": "normal"
     },
     {
       "check_id": "gdpr.purpose_limitation",
@@ -1833,7 +2007,8 @@
         "document"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-evidence-acquisition.md"
+      "reference": "references/c25-evidence-acquisition.md",
+      "priority": "normal"
     },
     {
       "check_id": "gdpr.data_minimisation",
@@ -1843,7 +2018,8 @@
         "document"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-evidence-acquisition.md"
+      "reference": "references/c25-evidence-acquisition.md",
+      "priority": "normal"
     },
     {
       "check_id": "gdpr.article15_scope",
@@ -1854,7 +2030,8 @@
         "disclosure"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-evidence-acquisition.md"
+      "reference": "references/c25-evidence-acquisition.md",
+      "priority": "normal"
     },
     {
       "check_id": "gdpr.case_notes",
@@ -1864,7 +2041,8 @@
         "issue"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-evidence-acquisition.md"
+      "reference": "references/c25-evidence-acquisition.md",
+      "priority": "normal"
     },
     {
       "check_id": "gdpr.access_metadata",
@@ -1874,7 +2052,8 @@
         "issue"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-evidence-acquisition.md"
+      "reference": "references/c25-evidence-acquisition.md",
+      "priority": "normal"
     },
     {
       "check_id": "gdpr.preservation_request",
@@ -1884,7 +2063,8 @@
         "issue"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-evidence-acquisition.md"
+      "reference": "references/c25-evidence-acquisition.md",
+      "priority": "urgent"
     },
     {
       "check_id": "gdpr.cctv",
@@ -1894,7 +2074,8 @@
         "issue"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-evidence-acquisition.md"
+      "reference": "references/c25-evidence-acquisition.md",
+      "priority": "normal"
     },
     {
       "check_id": "gdpr.file_access",
@@ -1904,7 +2085,8 @@
         "issue"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-evidence-acquisition.md"
+      "reference": "references/c25-evidence-acquisition.md",
+      "priority": "normal"
     },
     {
       "check_id": "gdpr.controller_identity",
@@ -1914,7 +2096,8 @@
         "issue"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-evidence-acquisition.md"
+      "reference": "references/c25-evidence-acquisition.md",
+      "priority": "normal"
     },
     {
       "check_id": "gdpr.article18_limits",
@@ -1924,7 +2107,8 @@
         "issue"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-evidence-acquisition.md"
+      "reference": "references/c25-evidence-acquisition.md",
+      "priority": "normal"
     },
     {
       "check_id": "gdpr.retention_obligations",
@@ -1934,7 +2118,8 @@
         "issue"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-evidence-acquisition.md"
+      "reference": "references/c25-evidence-acquisition.md",
+      "priority": "normal"
     },
     {
       "check_id": "strategy.objective_first",
@@ -1944,7 +2129,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5e-suggestion-generation.md"
+      "reference": "references/c5e-suggestion-generation.md",
+      "priority": "normal"
     },
     {
       "check_id": "strategy.already_sent",
@@ -1954,7 +2140,8 @@
         "disclosure"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5e-suggestion-generation.md"
+      "reference": "references/c5e-suggestion-generation.md",
+      "priority": "important"
     },
     {
       "check_id": "strategy.prior_strategy",
@@ -1965,7 +2152,8 @@
         "strategy"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5e-suggestion-generation.md"
+      "reference": "references/c5e-suggestion-generation.md",
+      "priority": "normal"
     },
     {
       "check_id": "strategy.known_precedent",
@@ -1975,7 +2163,8 @@
         "strategy"
       ],
       "capability": "not_implemented",
-      "reference": "references/c5e-suggestion-generation.md"
+      "reference": "references/c5e-suggestion-generation.md",
+      "priority": "normal"
     },
     {
       "check_id": "strategy.request_clarification",
@@ -1985,7 +2174,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5e-suggestion-generation.md"
+      "reference": "references/c5e-suggestion-generation.md",
+      "priority": "normal"
     },
     {
       "check_id": "strategy.direct_cooperation",
@@ -1995,7 +2185,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5e-suggestion-generation.md"
+      "reference": "references/c5e-suggestion-generation.md",
+      "priority": "normal"
     },
     {
       "check_id": "strategy.preservation_first",
@@ -2006,7 +2197,8 @@
         "deadline"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5e-suggestion-generation.md"
+      "reference": "references/c5e-suggestion-generation.md",
+      "priority": "normal"
     },
     {
       "check_id": "strategy.evidence_producing",
@@ -2016,7 +2208,8 @@
         "strategy"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5e-suggestion-generation.md"
+      "reference": "references/c5e-suggestion-generation.md",
+      "priority": "normal"
     },
     {
       "check_id": "strategy.no_action",
@@ -2026,7 +2219,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5e-suggestion-generation.md"
+      "reference": "references/c5e-suggestion-generation.md",
+      "priority": "normal"
     },
     {
       "check_id": "strategy.escalation_sequencing",
@@ -2036,7 +2230,8 @@
         "complaint"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5e-suggestion-generation.md"
+      "reference": "references/c5e-suggestion-generation.md",
+      "priority": "important"
     },
     {
       "check_id": "strategy.parallel_remedies",
@@ -2047,7 +2242,8 @@
         "review"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5e-suggestion-generation.md"
+      "reference": "references/c5e-suggestion-generation.md",
+      "priority": "normal"
     },
     {
       "check_id": "strategy.communication_scope",
@@ -2058,7 +2254,8 @@
         "authority"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5e-suggestion-generation.md"
+      "reference": "references/c5e-suggestion-generation.md",
+      "priority": "normal"
     },
     {
       "check_id": "strategy.post_action_revision",
@@ -2068,7 +2265,8 @@
         "authority"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5e-suggestion-generation.md"
+      "reference": "references/c5e-suggestion-generation.md",
+      "priority": "normal"
     },
     {
       "check_id": "strategy.historical_outcome",
@@ -2078,7 +2276,8 @@
         "strategy"
       ],
       "capability": "not_implemented",
-      "reference": "references/c5e-suggestion-generation.md"
+      "reference": "references/c5e-suggestion-generation.md",
+      "priority": "normal"
     },
     {
       "check_id": "stratagems.adapted_36",
@@ -2088,7 +2287,8 @@
         "strategy"
       ],
       "capability": "synthetic_only",
-      "reference": "references/c5e-suggestion-generation.md"
+      "reference": "references/c5e-suggestion-generation.md",
+      "priority": "normal"
     },
     {
       "check_id": "stratagems.reference_36",
@@ -2098,7 +2298,8 @@
         "strategy"
       ],
       "capability": "synthetic_only",
-      "reference": "references/c5e-suggestion-generation.md"
+      "reference": "references/c5e-suggestion-generation.md",
+      "priority": "normal"
     },
     {
       "check_id": "stratagems.prerequisite_truth",
@@ -2108,7 +2309,8 @@
         "strategy"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5e-suggestion-generation.md"
+      "reference": "references/c5e-suggestion-generation.md",
+      "priority": "normal"
     },
     {
       "check_id": "stratagems.duty_to_disclose",
@@ -2119,7 +2321,8 @@
         "strategy"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5e-suggestion-generation.md"
+      "reference": "references/c5e-suggestion-generation.md",
+      "priority": "important"
     },
     {
       "check_id": "stratagems.inaction_waiver",
@@ -2129,7 +2332,8 @@
         "strategy"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5e-suggestion-generation.md"
+      "reference": "references/c5e-suggestion-generation.md",
+      "priority": "normal"
     },
     {
       "check_id": "stratagems.reversibility",
@@ -2139,7 +2343,8 @@
         "strategy"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5e-suggestion-generation.md"
+      "reference": "references/c5e-suggestion-generation.md",
+      "priority": "normal"
     },
     {
       "check_id": "stratagems.combined_tactics",
@@ -2149,7 +2354,8 @@
         "strategy"
       ],
       "capability": "synthetic_only",
-      "reference": "references/c5e-suggestion-generation.md"
+      "reference": "references/c5e-suggestion-generation.md",
+      "priority": "normal"
     },
     {
       "check_id": "stratagems.non_stratagem_baselines",
@@ -2159,7 +2365,8 @@
         "strategy"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5e-suggestion-generation.md"
+      "reference": "references/c5e-suggestion-generation.md",
+      "priority": "normal"
     },
     {
       "check_id": "remedies.formal_appeal",
@@ -2170,7 +2377,8 @@
         "review"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "urgent"
     },
     {
       "check_id": "remedies.reconsideration",
@@ -2180,7 +2388,8 @@
         "decision"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "remedies.interim_protection",
@@ -2190,7 +2399,8 @@
         "review"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "remedies.administrative_complaint",
@@ -2200,7 +2410,8 @@
         "complaint"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "remedies.conduct_supervision",
@@ -2211,7 +2422,8 @@
         "issue"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "remedies.gdpr_supervision",
@@ -2222,7 +2434,8 @@
         "complaint"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "remedies.solvit",
@@ -2232,7 +2445,8 @@
         "complaint"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "remedies.commission",
@@ -2242,7 +2456,8 @@
         "complaint"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "remedies.ombudsman",
@@ -2252,7 +2467,8 @@
         "complaint"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "remedies.national_file_request",
@@ -2262,7 +2478,8 @@
         "issue"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "remedies.remedy_compatibility",
@@ -2273,7 +2490,8 @@
         "complaint"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "remedies.competent_authority",
@@ -2283,7 +2501,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "sources.official_publisher",
@@ -2293,7 +2512,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/source-substrate.md"
+      "reference": "references/source-substrate.md",
+      "priority": "normal"
     },
     {
       "check_id": "sources.source_currentness",
@@ -2303,7 +2523,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/source-substrate.md"
+      "reference": "references/source-substrate.md",
+      "priority": "important"
     },
     {
       "check_id": "sources.pinpoint",
@@ -2313,7 +2534,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/source-substrate.md"
+      "reference": "references/source-substrate.md",
+      "priority": "normal"
     },
     {
       "check_id": "sources.binding_classification",
@@ -2323,7 +2545,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/source-substrate.md"
+      "reference": "references/source-substrate.md",
+      "priority": "normal"
     },
     {
       "check_id": "sources.country_coverage",
@@ -2333,7 +2556,8 @@
         "country"
       ],
       "capability": "model_guidance",
-      "reference": "references/source-substrate.md"
+      "reference": "references/source-substrate.md",
+      "priority": "normal"
     },
     {
       "check_id": "sources.mirror_status",
@@ -2343,7 +2567,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/source-substrate.md"
+      "reference": "references/source-substrate.md",
+      "priority": "normal"
     },
     {
       "check_id": "sources.case_law_followup",
@@ -2353,7 +2578,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/source-substrate.md"
+      "reference": "references/source-substrate.md",
+      "priority": "normal"
     },
     {
       "check_id": "sources.contrary_authority",
@@ -2363,7 +2589,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/source-substrate.md"
+      "reference": "references/source-substrate.md",
+      "priority": "normal"
     },
     {
       "check_id": "sources.national_precedent",
@@ -2373,7 +2600,8 @@
         "country"
       ],
       "capability": "model_guidance",
-      "reference": "references/source-substrate.md"
+      "reference": "references/source-substrate.md",
+      "priority": "normal"
     },
     {
       "check_id": "sources.source_gap",
@@ -2383,7 +2611,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/source-substrate.md"
+      "reference": "references/source-substrate.md",
+      "priority": "normal"
     },
     {
       "check_id": "country.member_state_module",
@@ -2393,7 +2622,8 @@
         "country"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5a-topology-applicability.md"
+      "reference": "references/c5a-topology-applicability.md",
+      "priority": "normal"
     },
     {
       "check_id": "country.applicant_country_module",
@@ -2403,7 +2633,8 @@
         "country"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5a-topology-applicability.md"
+      "reference": "references/c5a-topology-applicability.md",
+      "priority": "normal"
     },
     {
       "check_id": "country.multiple_jurisdictions",
@@ -2413,7 +2644,8 @@
         "country"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5a-topology-applicability.md"
+      "reference": "references/c5a-topology-applicability.md",
+      "priority": "normal"
     },
     {
       "check_id": "country.national_extension",
@@ -2423,7 +2655,8 @@
         "country"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5a-topology-applicability.md"
+      "reference": "references/c5a-topology-applicability.md",
+      "priority": "normal"
     },
     {
       "check_id": "country.status_recognition",
@@ -2434,7 +2667,8 @@
         "country"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5a-topology-applicability.md"
+      "reference": "references/c5a-topology-applicability.md",
+      "priority": "normal"
     },
     {
       "check_id": "country.diplomatic_missions",
@@ -2445,7 +2679,8 @@
         "country"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5a-topology-applicability.md"
+      "reference": "references/c5a-topology-applicability.md",
+      "priority": "normal"
     },
     {
       "check_id": "country.translations_local",
@@ -2456,7 +2691,8 @@
         "country"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5a-topology-applicability.md"
+      "reference": "references/c5a-topology-applicability.md",
+      "priority": "normal"
     },
     {
       "check_id": "country.national_remedies",
@@ -2467,7 +2703,8 @@
         "country"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5a-topology-applicability.md"
+      "reference": "references/c5a-topology-applicability.md",
+      "priority": "important"
     },
     {
       "check_id": "country.source_pack_candidate",
@@ -2477,7 +2714,8 @@
         "country"
       ],
       "capability": "model_guidance",
-      "reference": "references/c5a-topology-applicability.md"
+      "reference": "references/c5a-topology-applicability.md",
+      "priority": "normal"
     },
     {
       "check_id": "fraud_abuse.individualized_basis",
@@ -2487,7 +2725,8 @@
         "fraud"
       ],
       "capability": "model_guidance",
-      "reference": "references/c16/eu-principles-review.md"
+      "reference": "references/c16/eu-principles-review.md",
+      "priority": "important"
     },
     {
       "check_id": "fraud_abuse.interview_reason",
@@ -2498,7 +2737,8 @@
         "fraud"
       ],
       "capability": "model_guidance",
-      "reference": "references/c16/eu-principles-review.md"
+      "reference": "references/c16/eu-principles-review.md",
+      "priority": "normal"
     },
     {
       "check_id": "fraud_abuse.hearing",
@@ -2509,7 +2749,8 @@
         "interview"
       ],
       "capability": "model_guidance",
-      "reference": "references/c16/eu-principles-review.md"
+      "reference": "references/c16/eu-principles-review.md",
+      "priority": "normal"
     },
     {
       "check_id": "fraud_abuse.proportionality_measures",
@@ -2519,7 +2760,8 @@
         "fraud"
       ],
       "capability": "model_guidance",
-      "reference": "references/c16/eu-principles-review.md"
+      "reference": "references/c16/eu-principles-review.md",
+      "priority": "normal"
     },
     {
       "check_id": "fraud_abuse.confidentiality",
@@ -2529,7 +2771,8 @@
         "fraud"
       ],
       "capability": "model_guidance",
-      "reference": "references/c16/eu-principles-review.md"
+      "reference": "references/c16/eu-principles-review.md",
+      "priority": "normal"
     },
     {
       "check_id": "fraud_abuse.no_presumption",
@@ -2539,7 +2782,8 @@
         "interview"
       ],
       "capability": "model_guidance",
-      "reference": "references/c16/eu-principles-review.md"
+      "reference": "references/c16/eu-principles-review.md",
+      "priority": "normal"
     },
     {
       "check_id": "fraud_abuse.authority_records",
@@ -2549,7 +2793,8 @@
         "fraud"
       ],
       "capability": "model_guidance",
-      "reference": "references/c16/eu-principles-review.md"
+      "reference": "references/c16/eu-principles-review.md",
+      "priority": "normal"
     },
     {
       "check_id": "novelty.reported_event_coverage",
@@ -2559,7 +2804,8 @@
         "issue"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "urgent"
     },
     {
       "check_id": "novelty.independent_grievances",
@@ -2569,7 +2815,8 @@
         "issue"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "novelty.unknown_attack_angle",
@@ -2579,7 +2826,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "novelty.uncatalogued_strategy",
@@ -2589,7 +2837,8 @@
         "strategy"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "novelty.negative_conclusion_guard",
@@ -2599,7 +2848,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "important"
     },
     {
       "check_id": "novelty.relevant_check_omission",
@@ -2609,7 +2859,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "urgent"
     },
     {
       "check_id": "novelty.capability_gap",
@@ -2619,7 +2870,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "novelty.revision_impact",
@@ -2629,7 +2881,8 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "novelty.proactive_disclosure_risk",
@@ -2639,7 +2892,8 @@
         "disclosure"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
     },
     {
       "check_id": "novelty.check_execution_trace",
@@ -2649,7 +2903,608 @@
         "always"
       ],
       "capability": "model_guidance",
-      "reference": "references/c25-applicant-strategy.md"
+      "reference": "references/c25-applicant-strategy.md",
+      "priority": "normal"
+    },
+    {
+      "check_id": "stratagems.pattern_01",
+      "family": "stratagems",
+      "label": "Model-led candidate screen: Conceal what need not be revealed",
+      "triggers_any": [
+        "stratagem"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/stratagems/adapted-stratagem-catalog.json",
+      "catalog_entry_id": "adapted:01",
+      "priority": "normal"
+    },
+    {
+      "check_id": "stratagems.pattern_02",
+      "family": "stratagems",
+      "label": "Model-led candidate screen: Pressure the weak point, not the defended point",
+      "triggers_any": [
+        "stratagem"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/stratagems/adapted-stratagem-catalog.json",
+      "catalog_entry_id": "adapted:02",
+      "priority": "normal"
+    },
+    {
+      "check_id": "stratagems.pattern_03",
+      "family": "stratagems",
+      "label": "Model-led candidate screen: Make others do the work",
+      "triggers_any": [
+        "stratagem"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/stratagems/adapted-stratagem-catalog.json",
+      "catalog_entry_id": "adapted:03",
+      "priority": "normal"
+    },
+    {
+      "check_id": "stratagems.pattern_04",
+      "family": "stratagems",
+      "label": "Model-led candidate screen: Make time and effort asymmetric",
+      "triggers_any": [
+        "stratagem"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/stratagems/adapted-stratagem-catalog.json",
+      "catalog_entry_id": "adapted:04",
+      "priority": "normal"
+    },
+    {
+      "check_id": "stratagems.pattern_05",
+      "family": "stratagems",
+      "label": "Model-led candidate screen: Exploit moments of weakness",
+      "triggers_any": [
+        "stratagem"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/stratagems/adapted-stratagem-catalog.json",
+      "catalog_entry_id": "adapted:05",
+      "priority": "normal"
+    },
+    {
+      "check_id": "stratagems.pattern_06",
+      "family": "stratagems",
+      "label": "Model-led candidate screen: Control where attention goes",
+      "triggers_any": [
+        "stratagem"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/stratagems/adapted-stratagem-catalog.json",
+      "catalog_entry_id": "adapted:06",
+      "priority": "normal"
+    },
+    {
+      "check_id": "stratagems.pattern_07",
+      "family": "stratagems",
+      "label": "Model-led candidate screen: Create leverage from uncertainty",
+      "triggers_any": [
+        "stratagem"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/stratagems/adapted-stratagem-catalog.json",
+      "catalog_entry_id": "adapted:07",
+      "priority": "normal"
+    },
+    {
+      "check_id": "stratagems.pattern_08",
+      "family": "stratagems",
+      "label": "Model-led candidate screen: Keep an obvious route and another route",
+      "triggers_any": [
+        "stratagem"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/stratagems/adapted-stratagem-catalog.json",
+      "catalog_entry_id": "adapted:08",
+      "priority": "normal"
+    },
+    {
+      "check_id": "stratagems.pattern_09",
+      "family": "stratagems",
+      "label": "Model-led candidate screen: Let others create your advantage",
+      "triggers_any": [
+        "stratagem"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/stratagems/adapted-stratagem-catalog.json",
+      "catalog_entry_id": "adapted:09",
+      "priority": "normal"
+    },
+    {
+      "check_id": "stratagems.pattern_10",
+      "family": "stratagems",
+      "label": "Model-led candidate screen: Keep cooperation and opposition separate",
+      "triggers_any": [
+        "stratagem"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/stratagems/adapted-stratagem-catalog.json",
+      "catalog_entry_id": "adapted:10",
+      "priority": "normal"
+    },
+    {
+      "check_id": "stratagems.pattern_11",
+      "family": "stratagems",
+      "label": "Model-led candidate screen: Sacrifice what is cheaper",
+      "triggers_any": [
+        "stratagem"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/stratagems/adapted-stratagem-catalog.json",
+      "catalog_entry_id": "adapted:11",
+      "priority": "normal"
+    },
+    {
+      "check_id": "stratagems.pattern_12",
+      "family": "stratagems",
+      "label": "Model-led candidate screen: Take incidental advantages",
+      "triggers_any": [
+        "stratagem"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/stratagems/adapted-stratagem-catalog.json",
+      "catalog_entry_id": "adapted:12",
+      "priority": "normal"
+    },
+    {
+      "check_id": "stratagems.pattern_13",
+      "family": "stratagems",
+      "label": "Model-led candidate screen: Probe to force revelation",
+      "triggers_any": [
+        "stratagem"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/stratagems/adapted-stratagem-catalog.json",
+      "catalog_entry_id": "adapted:13",
+      "priority": "normal"
+    },
+    {
+      "check_id": "stratagems.pattern_14",
+      "family": "stratagems",
+      "label": "Model-led candidate screen: Reactivate dormant resources",
+      "triggers_any": [
+        "stratagem"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/stratagems/adapted-stratagem-catalog.json",
+      "catalog_entry_id": "adapted:14",
+      "priority": "normal"
+    },
+    {
+      "check_id": "stratagems.pattern_15",
+      "family": "stratagems",
+      "label": "Model-led candidate screen: Move the contest away from their advantage",
+      "triggers_any": [
+        "stratagem"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/stratagems/adapted-stratagem-catalog.json",
+      "catalog_entry_id": "adapted:15",
+      "priority": "normal"
+    },
+    {
+      "check_id": "stratagems.pattern_16",
+      "family": "stratagems",
+      "label": "Model-led candidate screen: Give room so the other side commits",
+      "triggers_any": [
+        "stratagem"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/stratagems/adapted-stratagem-catalog.json",
+      "catalog_entry_id": "adapted:16",
+      "priority": "normal"
+    },
+    {
+      "check_id": "stratagems.pattern_17",
+      "family": "stratagems",
+      "label": "Model-led candidate screen: Exchange little for much",
+      "triggers_any": [
+        "stratagem"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/stratagems/adapted-stratagem-catalog.json",
+      "catalog_entry_id": "adapted:17",
+      "priority": "normal"
+    },
+    {
+      "check_id": "stratagems.pattern_18",
+      "family": "stratagems",
+      "label": "Model-led candidate screen: Find the controlling node",
+      "triggers_any": [
+        "stratagem"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/stratagems/adapted-stratagem-catalog.json",
+      "catalog_entry_id": "adapted:18",
+      "priority": "normal"
+    },
+    {
+      "check_id": "stratagems.pattern_19",
+      "family": "stratagems",
+      "label": "Model-led candidate screen: Remove the basis, not the symptom",
+      "triggers_any": [
+        "stratagem"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/stratagems/adapted-stratagem-catalog.json",
+      "catalog_entry_id": "adapted:19",
+      "priority": "normal"
+    },
+    {
+      "check_id": "stratagems.pattern_20",
+      "family": "stratagems",
+      "label": "Model-led candidate screen: Use disorder as manoeuvring space",
+      "triggers_any": [
+        "stratagem"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/stratagems/adapted-stratagem-catalog.json",
+      "catalog_entry_id": "adapted:20",
+      "priority": "normal"
+    },
+    {
+      "check_id": "stratagems.pattern_21",
+      "family": "stratagems",
+      "label": "Model-led candidate screen: Abandon the exposed shell, preserve the objective",
+      "triggers_any": [
+        "stratagem"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/stratagems/adapted-stratagem-catalog.json",
+      "catalog_entry_id": "adapted:21",
+      "priority": "normal"
+    },
+    {
+      "check_id": "stratagems.pattern_22",
+      "family": "stratagems",
+      "label": "Model-led candidate screen: Close the escape routes",
+      "triggers_any": [
+        "stratagem"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/stratagems/adapted-stratagem-catalog.json",
+      "catalog_entry_id": "adapted:22",
+      "priority": "normal"
+    },
+    {
+      "check_id": "stratagems.pattern_23",
+      "family": "stratagems",
+      "label": "Model-led candidate screen: Build support beyond the immediate opponent",
+      "triggers_any": [
+        "stratagem"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/stratagems/adapted-stratagem-catalog.json",
+      "catalog_entry_id": "adapted:23",
+      "priority": "normal"
+    },
+    {
+      "check_id": "stratagems.pattern_24",
+      "family": "stratagems",
+      "label": "Model-led candidate screen: Use one route to reach another objective",
+      "triggers_any": [
+        "stratagem"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/stratagems/adapted-stratagem-catalog.json",
+      "catalog_entry_id": "adapted:24",
+      "priority": "normal"
+    },
+    {
+      "check_id": "stratagems.pattern_25",
+      "family": "stratagems",
+      "label": "Model-led candidate screen: Change the structure underneath the dispute",
+      "triggers_any": [
+        "stratagem"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/stratagems/adapted-stratagem-catalog.json",
+      "catalog_entry_id": "adapted:25",
+      "priority": "normal"
+    },
+    {
+      "check_id": "stratagems.pattern_26",
+      "family": "stratagems",
+      "label": "Model-led candidate screen: Attack indirectly through principle or example",
+      "triggers_any": [
+        "stratagem"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/stratagems/adapted-stratagem-catalog.json",
+      "catalog_entry_id": "adapted:26",
+      "priority": "normal"
+    },
+    {
+      "check_id": "stratagems.pattern_27",
+      "family": "stratagems",
+      "label": "Model-led candidate screen: Appear less informed than you are",
+      "triggers_any": [
+        "stratagem"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/stratagems/adapted-stratagem-catalog.json",
+      "catalog_entry_id": "adapted:27",
+      "priority": "normal"
+    },
+    {
+      "check_id": "stratagems.pattern_28",
+      "family": "stratagems",
+      "label": "Model-led candidate screen: Secure commitment before exposing consequences",
+      "triggers_any": [
+        "stratagem"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/stratagems/adapted-stratagem-catalog.json",
+      "catalog_entry_id": "adapted:28",
+      "priority": "normal"
+    },
+    {
+      "check_id": "stratagems.pattern_29",
+      "family": "stratagems",
+      "label": "Model-led candidate screen: Amplify apparent strength",
+      "triggers_any": [
+        "stratagem"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/stratagems/adapted-stratagem-catalog.json",
+      "catalog_entry_id": "adapted:29",
+      "priority": "normal"
+    },
+    {
+      "check_id": "stratagems.pattern_30",
+      "family": "stratagems",
+      "label": "Model-led candidate screen: Take control of someone else's process",
+      "triggers_any": [
+        "stratagem"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/stratagems/adapted-stratagem-catalog.json",
+      "catalog_entry_id": "adapted:30",
+      "priority": "normal"
+    },
+    {
+      "check_id": "stratagems.pattern_31",
+      "family": "stratagems",
+      "label": "Model-led candidate screen: Make the desired behaviour attractive",
+      "triggers_any": [
+        "stratagem"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/stratagems/adapted-stratagem-catalog.json",
+      "catalog_entry_id": "adapted:31",
+      "priority": "normal"
+    },
+    {
+      "check_id": "stratagems.pattern_32",
+      "family": "stratagems",
+      "label": "Model-led candidate screen: Do not expose weakness when uncertainty protects you",
+      "triggers_any": [
+        "stratagem"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/stratagems/adapted-stratagem-catalog.json",
+      "catalog_entry_id": "adapted:32",
+      "priority": "normal"
+    },
+    {
+      "check_id": "stratagems.pattern_33",
+      "family": "stratagems",
+      "label": "Model-led candidate screen: Turn their own system against itself",
+      "triggers_any": [
+        "stratagem"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/stratagems/adapted-stratagem-catalog.json",
+      "catalog_entry_id": "adapted:33",
+      "priority": "normal"
+    },
+    {
+      "check_id": "stratagems.pattern_34",
+      "family": "stratagems",
+      "label": "Model-led candidate screen: Accept a controlled loss to gain a larger advantage",
+      "triggers_any": [
+        "stratagem"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/stratagems/adapted-stratagem-catalog.json",
+      "catalog_entry_id": "adapted:34",
+      "priority": "normal"
+    },
+    {
+      "check_id": "stratagems.pattern_35",
+      "family": "stratagems",
+      "label": "Model-led candidate screen: Chain mechanisms together",
+      "triggers_any": [
+        "stratagem"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/stratagems/adapted-stratagem-catalog.json",
+      "catalog_entry_id": "adapted:35",
+      "priority": "normal"
+    },
+    {
+      "check_id": "stratagems.pattern_36",
+      "family": "stratagems",
+      "label": "Model-led candidate screen: Withdraw before the position becomes destructive",
+      "triggers_any": [
+        "stratagem"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/stratagems/adapted-stratagem-catalog.json",
+      "catalog_entry_id": "adapted:36",
+      "priority": "normal"
+    },
+    {
+      "check_id": "principle_catalog.direct_effect",
+      "family": "principle_catalog",
+      "label": "Principle scope review: Direct effect",
+      "triggers_any": [
+        "legal_principle"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/principles/principle-catalog.json",
+      "catalog_entry_id": "direct_effect",
+      "priority": "normal"
+    },
+    {
+      "check_id": "principle_catalog.primacy",
+      "family": "principle_catalog",
+      "label": "Principle scope review: Primacy of EU law",
+      "triggers_any": [
+        "legal_principle"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/principles/principle-catalog.json",
+      "catalog_entry_id": "primacy",
+      "priority": "normal"
+    },
+    {
+      "check_id": "principle_catalog.disapplication",
+      "family": "principle_catalog",
+      "label": "Principle scope review: Disapplication of conflicting national law",
+      "triggers_any": [
+        "legal_principle"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/principles/principle-catalog.json",
+      "catalog_entry_id": "disapplication",
+      "priority": "normal"
+    },
+    {
+      "check_id": "principle_catalog.consistent_interpretation",
+      "family": "principle_catalog",
+      "label": "Principle scope review: Consistent interpretation",
+      "triggers_any": [
+        "legal_principle"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/principles/principle-catalog.json",
+      "catalog_entry_id": "consistent_interpretation",
+      "priority": "normal"
+    },
+    {
+      "check_id": "principle_catalog.equivalence",
+      "family": "principle_catalog",
+      "label": "Principle scope review: Principle of equivalence",
+      "triggers_any": [
+        "legal_principle"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/principles/principle-catalog.json",
+      "catalog_entry_id": "equivalence",
+      "priority": "normal"
+    },
+    {
+      "check_id": "principle_catalog.effectiveness",
+      "family": "principle_catalog",
+      "label": "Principle scope review: Principle of effectiveness",
+      "triggers_any": [
+        "legal_principle"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/principles/principle-catalog.json",
+      "catalog_entry_id": "effectiveness",
+      "priority": "normal"
+    },
+    {
+      "check_id": "principle_catalog.proportionality",
+      "family": "principle_catalog",
+      "label": "Principle scope review: Proportionality",
+      "triggers_any": [
+        "legal_principle"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/principles/principle-catalog.json",
+      "catalog_entry_id": "proportionality",
+      "priority": "normal"
+    },
+    {
+      "check_id": "principle_catalog.legal_certainty",
+      "family": "principle_catalog",
+      "label": "Principle scope review: Legal certainty",
+      "triggers_any": [
+        "legal_principle"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/principles/principle-catalog.json",
+      "catalog_entry_id": "legal_certainty",
+      "priority": "normal"
+    },
+    {
+      "check_id": "principle_catalog.legitimate_expectations",
+      "family": "principle_catalog",
+      "label": "Principle scope review: Protection of legitimate expectations",
+      "triggers_any": [
+        "legal_principle"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/principles/principle-catalog.json",
+      "catalog_entry_id": "legitimate_expectations",
+      "priority": "normal"
+    },
+    {
+      "check_id": "principle_catalog.grimaldi_soft_law",
+      "family": "principle_catalog",
+      "label": "Principle scope review: Grimaldi treatment of recommendations and soft law",
+      "triggers_any": [
+        "legal_principle"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/principles/principle-catalog.json",
+      "catalog_entry_id": "grimaldi_soft_law",
+      "priority": "normal"
+    },
+    {
+      "check_id": "principle_catalog.rights_of_defence",
+      "family": "principle_catalog",
+      "label": "Principle scope review: Rights of defence / right to be heard",
+      "triggers_any": [
+        "legal_principle"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/principles/principle-catalog.json",
+      "catalog_entry_id": "rights_of_defence",
+      "priority": "normal"
+    },
+    {
+      "check_id": "principle_catalog.good_administration_general_principle",
+      "family": "principle_catalog",
+      "label": "Principle scope review: Good administration as a general EU-law principle",
+      "triggers_any": [
+        "legal_principle"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/principles/principle-catalog.json",
+      "catalog_entry_id": "good_administration_general_principle",
+      "priority": "normal"
+    },
+    {
+      "check_id": "principle_catalog.effective_judicial_protection",
+      "family": "principle_catalog",
+      "label": "Principle scope review: Effective judicial protection",
+      "triggers_any": [
+        "legal_principle"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/principles/principle-catalog.json",
+      "catalog_entry_id": "effective_judicial_protection",
+      "priority": "normal"
+    },
+    {
+      "check_id": "principle_catalog.charter_article_41_direct_reliance",
+      "family": "principle_catalog",
+      "label": "Principle scope review: Direct reliance on Charter Article 41",
+      "triggers_any": [
+        "legal_principle"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/principles/principle-catalog.json",
+      "catalog_entry_id": "charter_article_41_direct_reliance",
+      "priority": "normal"
     }
   ]
 }

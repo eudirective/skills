@@ -1,26 +1,45 @@
-# C27 abstract case-state and atomic-coverage engine
+# C27 — case state, disclosures, and atomic check coverage
 
-C27 provides a **non-sending, schema-limited multi-proceeding state and coverage tracker**. The registered 251 checks are discovery prompts, *not evidence of actually performed legal analysis*. Its main real-case workflow is **in-conversation, model-led**: read the user-provided record, maintain the proceeding/event/disclosure model, and show relevant gaps. The CLI exists only for fictional fixtures or abstract non-identifying categorical representations. Do not pass actual correspondence, names, concrete dates, locations, narratives, passport numbers, case numbers, or distinctive fact combinations to it. It is not privacy-certified and does not enable C6/C7/C17/C21 real-case intake.
+**Version:** 0.2; packaged in FreeMovement v0.45.0. The registry contains **301 individual checks in 23 families**, including 36 individually indexed adapted stratagem screens and 14 legal-principle screens. A catalogue entry is a prompt for review, **not evidence of completed analysis**.
 
-Read `references/state-engine/check-registry.json` and maintain separately for **every proceeding**: claimed legal regime, authority classification when known, authority role, stage, lodging status, decisions versus notification, document operations, disclosure recipients, authority acknowledgment and actual reliance, authority's grounds/positions, deadline triggers, grievance events and links to other proceedings. Never infer official receipt or formal lodging merely from a submitted online form, an appointment, or documents shown.
+## Normal applicant guidance: in-conversation, read-only
 
-**Per-response coverage:** select atomic checks by applicability to each proceeding; mark `assessed`, `partial`, `not_checked`, `not_applicable` (with reason), `blocked`, or `unavailable`. Separate checks done now from earlier work, and recheck dependent assessments after facts change. Do not mark synthetic-only functionality as executed on real applicant data. **No checked item means 'no legal problem' merely because it was not triggered.** The report should surface the material omissions and unresolved stage questions, but remain concise unless detailed checklist requested.
+Before every substantive reply, reconstruct **each separate proceeding** (visa, residence, border, appeal, staff complaint, file access, GDPR access) with its applicant-claimed versus authority-classified type, current and historical stage, attributed facts, documents shown or submitted, prior applicant communications and specific recipients, official positions, evidence conflicts, deadlines and requested remedies. Distinguish an enquiry, appointment, online form, attempted submission, confirmed formal lodging, decision, notification, appeal and closure. Track stage changes without rewriting independent rights or grievances.
 
-The script `scripts/c27_case_state.py` deterministically replays opaque categorical events and checks report structure:
-```
+Use the atomic check registry `references/state-engine/check-registry.json` and explicitly decide which checks are relevant. An untriggered check means **not indicated by the current structured signals**, not legally inapplicable. Mark a check as assessed only when the particular issue was considered and the source, evidence or reason can be named. Model assessment, checked source material and executed Python code must not be conflated.
+
+**Every substantive answer includes a compact coverage checklist**:
+- **Assessed**: specify individual checks, current response, and evidence/source or reasoning
+- **Partial / stale**: what fact, legal source or recent correction changes the result
+- **Outstanding**: materially relevant checks not completed, prioritized by risk
+- **Unavailable**: capabilities not implemented or restricted to synthetic fixtures
+
+Provide the 301-entry expanded checklist on request. Never manufacture exact counts of completed checks in a real case merely because instructions were read. Do not claim host execution, persistence, source live verification or independent legal-semantic validation without actual evidence.
+
+## Abstract deterministic CLI
+
+`scripts/c27_case_state.py` accepts **fictional fixtures or deliberately abstract, non-identifying categorical representations only**. Do not send real applicant correspondence, names, passport numbers, precise dates, geographic combinations or raw narratives into it. Caller-selected `mode=abstract_nonidentifying` does not guarantee anonymisation. The CLI has no outbound network calls, sending, private-case storage, live law checks or deadline calculation. It does not unlock C6/C7/C17/C21 private-case engine restrictions.
+
+```bash
 python scripts/c27_case_state.py checklist
 python scripts/c27_case_state.py inspect --input evaluations/fixtures/c27/multi-proceeding.json
+python scripts/c27_case_state.py inspect --full --input evaluations/fixtures/c27/multi-proceeding.json
 python scripts/c27_case_state.py compare --previous evaluations/fixtures/c27/initial.json --input evaluations/fixtures/c27/multi-proceeding.json
 python scripts/test_c27_case_state.py
 ```
-`inspect --full` shows individual check dispositions. No local persistence or network calls are performed. The host model must not claim that script execution, source review or legal verification happened when it did not. No automatic cross-session memory or first-turn hook is promised.
 
-### Procedural and documentary safeguards
+Input schemas `c27-abstract-session/0.1.0` and `0.2.0` are accepted; output schema is `c27-case-state-report/0.2.0`. `requested_focus` adds deliberately selected triggers, notably `stratagem` (36 screens), `legal_principle` (14), `soft_law`, `strategy` and `disclosure`. Model-led catalog screens **do not execute** the C5e synthetic scripts. Reported assessed checks require event/source references, while restricted or unimplemented capabilities cannot be marked assessed. The status and sources are still **self-reported and schema-checked**, not independently authenticated.
 
-* `lodgement_attempted`, `lodgement_disputed`, and `lodgement_confirmed` are distinct. Reported confirmation is less certain than a viewed official record.
-* A disclosure is scoped to its recorded recipient. `sent`, transport delivery, receipt acknowledgment, content acknowledgment and actual reliance are separate states. Authority silence or an appointment is **not waiver** of competence or disclosure requirements.
-* A document can be requested, shown, submitted, accepted, rejected, or returned independently of legal sufficiency.
-* Decisions taken, decisions notified and service-date calculation are distinct. The CLI does not compute a legally operative deadline.
-* A review/appeal/complaint is its own proceeding, optionally linked to a parent; the parent's legal status is never overwritten.
-* Corrections preserve prior event history and re-run projections. A response's previous check assessment becomes stale when later proceeding events require reconsideration.
-* Every check records its capability boundary. The registry includes model-guidance, synthetic-only and not-implemented classifications; no status asserts legal adjudication.
+## Historical and evidentiary safeguards
+
+- **Two distinct event orders:** append position tracks when information entered the abstract case; optional `occurred_order` is an opaque relative chronology. A late-discovered earlier event is flagged. No actual dates, notification-service findings or legally binding clock are inferred.
+- **Append-only corrections:** an `event_correction` retains prior record identities and reports a `correction_log`. Reclassifying original procedure type/regime needs `correction_reason=classification_revision`. An earlier answer may cite an event later corrected, but must be reassessed afterward; a subsequent answer may not treat the corrected event as current evidence.
+- **Formal lodging:** a specifically typed documentary formal-lodgement record or application-lodgement receipt from an appropriate authority may support *documented* procedural metadata. Appointment, provider check-in, payment, document-return and unclassified receipts do not establish formal lodging.
+- **Documents:** the same opaque document ID may appear in several proceedings, with independent presentation/submission records. A shared document does not imply that another authority received it.
+- **Disclosures:** sent, transport delivered, receipt acknowledgment, content acknowledgment, actual reliance and transmission failure are separately source-attributed. Neither late observations nor conflicting reports silently erase prior states. Sent material does not prove officer knowledge, concession, or statutory waiver.
+- **Check provenance:** evidentiary event IDs must exist by the relevant response, belong to its proceeding, and not have been corrected before the recorded assessment. Unavailable capability states cannot be marked executed. A `not_applicable` decision requires a coded scope reason and an attributable source/event.
+- **Grievance exclusion:** an excluded grievance has a reason code, which remains a pointer requiring a specific legal explanation in substantive advice.
+- **Coverage gaps:** historical stages remain available for relevance selection. Outstanding checks are prioritized by declared severity, not simply the first registry entries. An ordinary application need not perform all 301 checks; unassessed remains unassessed.
+
+These deterministic tests validate state structure, audit links and privacy input boundaries only. Semantic legality, authenticity, judgment on applicability, real ChatGPT routing, installed package refresh and cross-session persistence remain external verification tasks.
+

@@ -2,6 +2,10 @@
 
 This is a **read-only, model-led assistance workflow for real or fictional cases supplied voluntarily by a user**. It is distinct from the C6/C7 synthetic controlled-controller lane, the C17 executable fictional-draft generator and the C21 synthetic privacy/telemetry preview. Nothing here unlocks those executable lanes for private data, certifies confidentiality/anonymity, or authorises sending. Never claim a controlled C6/C7/C17/C21 verification occurred unless the applicable scripts actually ran on supported inputs.
 
+## C27 multi-proceeding intake and prior-disclosure reconciliation
+
+Before substantive applicant guidance, read `references/state-engine/c27-case-state.md`. Separate every visa, residence, appeal, complaint and information-request proceeding. Record the **applicant's claimed application type**, the **authority's actual classification**, the stage supported by available evidence, prior statements and documents already delivered to each recipient, and unresolved deadlines. Do not infer formal lodging, acknowledgment of contents, official reliance, service, or statutory waiver from appointment or online-form submission. Provide a concise source-attributed check-completeness note each substantive turn; do not claim C27 scripts ran on private dossiers.
+
 ## 1. Intake first: identify the decision-changing questions
 
 Extract an *in-conversation* fact matrix: relevant EU citizen and nationality; applicant/family tie; destination and movement; accompany/join plan; requested application or action; consular location; applicant's possible lawful residence/presence in that jurisdiction; events/dates; what the authority asked/refused; written notice or oral statement; what the user wants now; and any immediate deadline or risk of evidence loss. Attribute these as **user-reported working facts**, not judicially proven facts. Accept the account for purpose of helping the user, unless internally contradictory, physically impossible or contradicted by supplied records; do not routinely challenge credibility.

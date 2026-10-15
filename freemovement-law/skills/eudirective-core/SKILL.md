@@ -7,14 +7,14 @@ description: "use when a person requests read-only eu free-movement/family-visa 
 
 ## C27 proceeding, disclosure, and response-coverage reconciliation (read-only)
 
-For any substantive applicant matter, read `references/state-engine/c27-case-state.md` and its atomic `check-registry.json`. Before advising, reconcile each proceeding and related procedure separately, including claimed application category, actual and disputed lodging stage, prior applicant communications and disclosed facts, recipients, documents shown/submitted/returned, authority's actual statements, complaint and appeal stage, relevant deadlines, and revisions. User-provided text stays in the conversation; do **not** feed real case records to C27/C6/C21 synthetic scripts. Track the specific checks assessed in this reply versus earlier work, and disclose material unchecked or unavailable checks in a compact coverage note. Never report a scripted check as run merely because you followed its textual guidance.
+For any substantive applicant matter, read `references/state-engine/c27-case-state.md` and its atomic `check-registry.json`. Before advising, reconcile each proceeding and related procedure separately, including claimed application category, actual and disputed lodging stage, prior applicant communications and disclosed facts, recipients, documents shown/submitted/returned, authority's actual statements, complaint and appeal stage, relevant deadlines, and revisions. User-provided text stays in the conversation; do **not** feed real case records to C27/C6/C21 synthetic scripts. Track the specific checks actually assessed in this reply versus earlier work. Every substantive applicant reply must include a **compact, source-attributed coverage checklist**: assessed (model-led or source-reviewed), partial, material outstanding, and unavailable. Prioritize lodging, deadlines, prior disclosures and independent grievances. Distinguish an engine that exists from one actually executed; never imply 301 checks were all applied or that script outputs were produced without execution.
 
 ## First-invocation GitHub version parity
 
 Before substantive work, on the first FreeMovement skill invocation in this conversation, read `eudirective-core/references/session-version-check.md` and perform its read-only once-per-conversation version comparison. Report only mismatches or unsuccessful checks, never silent success. Continue the requested work regardless of the result. Skip additional checks in the same conversation unless expressly requested; if this skill is not the core, load the core's referenced instructions first. This checks package versions only, not legal-source validity.
 
 ## Version and Status
-- Current version: `0.43.0`
+- Current version: `0.44.0`
 - Last updated: `2026-10-14`
 - Status: read-only applicant-facing guidance for user-provided real or fictional accounts; controlled scripts still restrict private-data intake and external actions.
 - Inter-skill contract: `0.2.0` (C3 development freeze; not portfolio v1.0).
@@ -26,7 +26,7 @@ Before substantive work, on the first FreeMovement skill invocation in this conv
 ## Version Disclosure
 At the start of every visible response or report produced while using this skill, announce:
 ```text
-Skill: eudirective-core v0.43.0
+Skill: eudirective-core v0.44.0
 ```
 
 ## Source use and currentness
