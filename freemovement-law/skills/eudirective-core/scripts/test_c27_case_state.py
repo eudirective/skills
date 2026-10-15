@@ -414,5 +414,68 @@ class CaseStateTests(unittest.TestCase):
         self.assertEqual(sample[0]["priority"],"urgent")
         self.assertTrue(coverage["outstanding_sample_is_priority_sorted"])
 
+
+    def test_proceeding_classification_revision_keeps_same_proceeding(self):
+        x=load("initial.json")
+        x["events"].append({
+            "event_id":"E10","proceeding_id":"P1","kind":"event_correction",
+            "source":"user_reported","target_event_id":"E1",
+            "correction_reason":"classification_revision",
+            "replacement":{
+                "event_id":"E11","proceeding_id":"P1",
+                "kind":"proceeding_opened","source":"user_reported",
+                "procedure_type":"ordinary_short_stay_visa",
+                "claimed_regime":"visa_code","authority_role":"consulate"
+            }
+        })
+        result=c.evaluate(x,full=True)
+        self.assertEqual(len(result["proceedings"]),1)
+        self.assertEqual(result["proceedings"][0]["type"],
+                         "ordinary_short_stay_visa")
+        self.assertEqual(result["correction_log"][0]["supersedes"],"E1")
+        self.assertEqual(result["coverage"]["latest_response_id"],"R1")
+
+    def test_reclassification_requires_explicit_reason(self):
+        x=load("initial.json")
+        x["events"].append({
+            "event_id":"E10","proceeding_id":"P1","kind":"event_correction",
+            "source":"user_reported","target_event_id":"E1",
+            "replacement":{
+                "event_id":"E11","proceeding_id":"P1",
+                "kind":"proceeding_opened","source":"user_reported",
+                "procedure_type":"ordinary_short_stay_visa",
+                "claimed_regime":"visa_code","authority_role":"consulate"
+            }
+        })
+        with self.assertRaises(c.StateError):
+            c.evaluate(x)
+
+    def test_proceeding_correction_does_not_erase_old_event_ids(self):
+        x=load("initial.json")
+        x["events"].append({
+            "event_id":"E10","proceeding_id":"P1","kind":"event_correction",
+            "source":"user_reported","target_event_id":"E6",
+            "correction_reason":"user_correction",
+            "replacement":{
+                "event_id":"E11","proceeding_id":"P1",
+                "kind":"procedural_step","step":"lodgement_attempted",
+                "source":"user_reported"
+            }
+        })
+        active, all_ids, replaced = c.normalize_events(x)
+        self.assertIn("E6",all_ids)
+        self.assertIn("E11",all_ids)
+        self.assertIn("E6",replaced)
+        self.assertEqual(len(active),len(x["events"])-1)
+
+    def test_unsupported_status_cannot_be_claimed_by_model(self):
+        x=load("initial.json")
+        x["responses"][0]["checks"][0].update(
+            check_id="strategy.historical_outcome",status="assessed",
+            method="model_review",reason="scope_reviewed"
+        )
+        with self.assertRaises(c.StateError):
+            c.evaluate(x)
+
 if __name__ == "__main__":
     unittest.main()
