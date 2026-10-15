@@ -99,11 +99,11 @@ class CaseStateTests(unittest.TestCase):
         with self.assertRaises(c.StateError):
             c.evaluate(x)
 
-    def test_response_assessment_can_go_stale(self):
+    def test_latest_response_assessment_remains_current_if_other_proceeding_changes(self):
         x=load("multi-proceeding.json")
         r=c.evaluate(x,full=True)
         match=[i for i in r["coverage"]["checks"] if i["proceeding_id"]=="P1" and i["check_id"]=="lifecycle.lodgement_disputed"]
-        self.assertEqual(match[0]["status"],"previously_assessed")
+        self.assertEqual(match[0]["status"],"assessed")
 
     def test_unknown_case_keys_fail_closed(self):
         x=load("initial.json")
