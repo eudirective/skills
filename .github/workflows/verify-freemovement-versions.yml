@@ -1,0 +1,30 @@
+name: Verify FreeMovement versions
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'freemovement-law/**'
+      - '.github/workflows/verify-freemovement-versions.yml'
+  pull_request:
+    paths:
+      - 'freemovement-law/**'
+      - '.github/workflows/verify-freemovement-versions.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  versions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Confirm installed manifest matches plugin and every skill
+        run: node freemovement-law/scripts/version_manifest.mjs --verify
+      - name: Check version parity comparison and failure reporting
+        run: |
+          node --test freemovement-law/skills/eudirective-core/scripts/test_session_version_check.mjs
+          node --test freemovement-law/scripts/test_version_manifest.mjs

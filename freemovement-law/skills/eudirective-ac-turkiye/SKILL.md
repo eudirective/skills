@@ -5,13 +5,17 @@ description: use when creating, inspecting or validating a turkiye applicant-cou
 
 # eudirective-ac-turkiye
 
+## First-invocation GitHub version parity
+
+Before substantive work, on the first FreeMovement skill invocation in this conversation, read `eudirective-core/references/session-version-check.md` and perform its read-only once-per-conversation version comparison. Report only mismatches or unsuccessful checks, never silent success. Continue the requested work regardless of the result. Skip additional checks in the same conversation unless expressly requested; if this skill is not the core, load the core's referenced instructions first. This checks package versions only, not legal-source validity.
+
 ## Version and Status
-- Current version: `0.6.0`
+- Current version: `0.6.1`
 - Last updated: `2026-10-14`
 - Versioning rule: patch for factual/source clarifications, minor for contract coverage/workflow changes, major for incompatible contracts.
 
 ## Version Disclosure
-In every visible report announce: `Skill: eudirective-ac-turkiye v0.6.0`.
+In every visible report announce: `Skill: eudirective-ac-turkiye v0.6.1`.
 
 ## Workflow
 1. Read `references/module-manifest.json` and `references/module-export.json`. Resolve scoped module notes from `turkiye/module-notes/source-notes/` in the plugin source library; these notes are not full authoritative texts.

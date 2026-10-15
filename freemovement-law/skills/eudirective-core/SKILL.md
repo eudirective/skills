@@ -5,8 +5,12 @@ description: "use when a person requests read-only eu free-movement/family-visa 
 
 # eudirective Core
 
+## First-invocation GitHub version parity
+
+Before substantive work, on the first FreeMovement skill invocation in this conversation, read `eudirective-core/references/session-version-check.md` and perform its read-only once-per-conversation version comparison. Report only mismatches or unsuccessful checks, never silent success. Continue the requested work regardless of the result. Skip additional checks in the same conversation unless expressly requested; if this skill is not the core, load the core's referenced instructions first. This checks package versions only, not legal-source validity.
+
 ## Version and Status
-- Current version: `0.42.1`
+- Current version: `0.42.2`
 - Last updated: `2026-10-14`
 - Status: read-only applicant-facing guidance for user-provided real or fictional accounts; controlled scripts still restrict private-data intake and external actions.
 - Inter-skill contract: `0.2.0` (C3 development freeze; not portfolio v1.0).
@@ -18,7 +22,7 @@ description: "use when a person requests read-only eu free-movement/family-visa 
 ## Version Disclosure
 At the start of every visible response or report produced while using this skill, announce:
 ```text
-Skill: eudirective-core v0.42.1
+Skill: eudirective-core v0.42.2
 ```
 
 ## Source use and currentness

@@ -37,7 +37,11 @@ jobs:
             source-library
           persist-credentials: false
 
-      - name: Mirror source library, preserving SKILL.md
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Mirror source library and stamp its exact upstream tree version
         shell: bash
         run: |
           set -euo pipefail
@@ -45,9 +49,11 @@ jobs:
           source_dir="public-data/source-library"
           destination_dir="skills/freemovement-law/skills/eudirective-source-library"
           max_attempts=3
+          upstream_tree_sha="$(git -C public-data rev-parse HEAD:source-library)"
 
           test -d "$source_dir"
           test -f "$destination_dir/SKILL.md"
+          [[ "$upstream_tree_sha" =~ ^[0-9a-f]{40}$ ]]
 
           git -C skills config user.name "github-actions[bot]"
           git -C skills config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -63,15 +69,19 @@ jobs:
             rsync -a --delete --exclude='/SKILL.md' \
               "$source_dir/" "$destination_dir/"
 
-            git -C skills add -A -- freemovement-law/skills/eudirective-source-library
+            node skills/freemovement-law/scripts/version_manifest.mjs --stamp --library-tree "$upstream_tree_sha"
+            node skills/freemovement-law/scripts/version_manifest.mjs --verify --library-tree "$upstream_tree_sha"
+
+            git -C skills add -A -- freemovement-law/skills/eudirective-source-library \
+              freemovement-law/skills/eudirective-core/references/session-version-manifest.json
             if git -C skills diff --cached --quiet; then
               echo "Already synchronized"
               exit 0
             fi
 
-            git -C skills commit -m "Sync source-library from eudirective/public-data"
+            git -C skills commit -m "Sync source-library and its version fingerprint"
             if git -C skills push origin HEAD:main; then
-              echo "Source library synchronized"
+              echo "Source library and version fingerprint synchronized"
               exit 0
             fi
 
