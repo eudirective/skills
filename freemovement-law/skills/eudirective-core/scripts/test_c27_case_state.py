@@ -547,5 +547,97 @@ class CaseStateTests(unittest.TestCase):
                          ["reported_authority_oral"])
         self.assertFalse(d["authority_identity_authenticated"])
 
+
+    def test_corrected_disclosure_no_longer_inherits_old_delivery(self):
+        x=load("initial.json")
+        x["events"].append({
+            "event_id":"E10","proceeding_id":"P1","kind":"event_correction",
+            "source":"user_reported","target_event_id":"E3",
+            "correction_reason":"user_correction",
+            "replacement":{
+                "event_id":"E11","proceeding_id":"P1","kind":"disclosure",
+                "source":"user_reported","disclosure_id":"I2",
+                "topic":"residence_status","operation":"sent",
+                "channel":"email","recipient_id":"A1"
+            }
+        })
+        p=c.evaluate(x)["proceedings"][0]
+        self.assertEqual(p["disclosures"][0]["disclosure_id"],"I2")
+        self.assertEqual(p["disclosures"][0]["delivery_state"],
+                         "sent_or_presented_unconfirmed")
+        self.assertIn("disclosure_observation_refers_to_corrected_content",
+                      p["flags"])
+        self.assertTrue(p["unresolved_dependencies"])
+
+    def test_corrected_disclosure_topic_same_id_quarantines_old_acknowledgment(self):
+        x=load("initial.json")
+        x["events"].append({
+            "event_id":"E10","proceeding_id":"P1","kind":"event_correction",
+            "source":"user_reported","target_event_id":"E3",
+            "correction_reason":"user_correction",
+            "replacement":{
+                "event_id":"E11","proceeding_id":"P1","kind":"disclosure",
+                "source":"user_reported","disclosure_id":"I1",
+                "topic":"legal_argument","operation":"sent",
+                "channel":"email","recipient_id":"A1"
+            }
+        })
+        p=c.evaluate(x)["proceedings"][0]
+        self.assertEqual(p["disclosures"][0]["topic"],"legal_argument")
+        self.assertEqual(p["disclosures"][0]["delivery_state"],
+                         "sent_or_presented_unconfirmed")
+        self.assertIn("disclosure_observation_refers_to_corrected_content",
+                      p["flags"])
+
+    def test_document_correction_requires_disclosure_link_review(self):
+        x=load("initial.json")
+        x["events"].extend([
+            {"event_id":"E10","proceeding_id":"P1","kind":"disclosure",
+             "source":"user_reported","disclosure_id":"I2",
+             "topic":"relationship","operation":"submitted",
+             "channel":"in_person","recipient_id":"A1","document_ids":["D1"]},
+            {"event_id":"E11","proceeding_id":"P1","kind":"event_correction",
+             "source":"user_reported","target_event_id":"E7",
+             "correction_reason":"user_correction",
+             "replacement":{
+                "event_id":"E12","proceeding_id":"P1","kind":"document_event",
+                "source":"user_reported","document_id":"D2",
+                "document_category":"marriage_record","operation":"shown",
+                "recipient_id":"A1"
+             }}
+        ])
+        p=c.evaluate(x)["proceedings"][0]
+        d=next(d for d in p["disclosures"] if d["disclosure_id"]=="I2")
+        self.assertEqual(d["unresolved_document_ids"],["D1"])
+        self.assertIn("document_disclosure_link_corrected",p["flags"])
+
+    def test_authority_position_referencing_changed_disclosure_needs_review(self):
+        x=load("initial.json")
+        x["events"].extend([
+            {"event_id":"E10","proceeding_id":"P1","kind":"authority_position",
+             "source":"reported_authority_oral","issue":"lawful_presence",
+             "stance":"expressly_invoked","related_disclosure_id":"I1"},
+            {"event_id":"E11","proceeding_id":"P1","kind":"event_correction",
+             "source":"user_reported","target_event_id":"E3",
+             "replacement":{
+                "event_id":"E12","proceeding_id":"P1","kind":"disclosure",
+                "source":"user_reported","disclosure_id":"I2",
+                "topic":"lawful_presence","operation":"sent",
+                "channel":"email","recipient_id":"A1"
+             }}
+        ])
+        p=c.evaluate(x)["proceedings"][0]
+        self.assertIn("authority_linked_disclosure_corrected",p["flags"])
+
+    def test_missing_disclosure_without_correction_still_rejected(self):
+        x=load("initial.json")
+        x["events"].append({
+            "event_id":"E10","proceeding_id":"P1",
+            "kind":"disclosure_observation","source":"document_seen",
+            "disclosure_id":"I9","observation":"transport_delivered"
+        })
+        with self.assertRaises(c.StateError):
+            c.evaluate(x)
+
 if __name__ == "__main__":
     unittest.main()
