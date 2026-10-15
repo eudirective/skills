@@ -734,6 +734,23 @@ def build_proceedings(events, correction_aliases=None):
                 d["delivery_state"] = "delivered_not_content_acknowledged"
             elif d["transmission_failed"]:
                 d["delivery_state"] = "transmission_failed"
+        for d in p["disclosures"].values():
+            state_sources = {
+                "conflicting_observations": {
+                    "transport_delivered", "transmission_failed",
+                    "receipt_acknowledged", "content_acknowledged",
+                    "content_relied_on"},
+                "content_relied_on": {"content_relied_on"},
+                "content_acknowledged": {"content_acknowledged"},
+                "receipt_acknowledged_not_content": {"receipt_acknowledged"},
+                "delivered_not_content_acknowledged": {"transport_delivered"},
+                "transmission_failed": {"transmission_failed"}
+            }.get(d["delivery_state"], set())
+            d["current_state_evidence_classes"] = sorted({
+                obs["source"] for obs in d["observations"]
+                if obs["observation"] in state_sources
+            })
+            d["authority_identity_authenticated"] = False
         if p["decision"] != "not_recorded" and p["notification"] == "not_recorded":
             p["flags"].append("decision_not_notification")
         if p["lodgement"] != "documented":
