@@ -1,0 +1,96 @@
+{
+  "suite": "c27-applicant-behavior/0.1.0",
+  "status": "not_executed_requires_recorded_model_runs",
+  "purpose": "Evaluate normal ChatGPT C27 guidance, not deterministic C27 CLI fixtures; these prompts are fictional and individually require independent grading.",
+  "cases": [
+    {
+      "id": "historical-correction",
+      "turns": [
+        "I visited a consulate and my EU spouse visa application was refused.",
+        "Correction: I only showed copies at the counter and left with all the papers and no receipt."
+      ],
+      "expected": [
+        "correct lodging status without erasing original account",
+        "separate refusal to lodge from formal refusal",
+        "reconsider appeal deadlines",
+        "report material unchecked checks"
+      ]
+    },
+    {
+      "id": "early-disclosure",
+      "turns": [
+        "Before booking an appointment I emailed that I had no local residence permit. The mission replied with a date.",
+        "Does booking the appointment prove it accepted territorial competence?"
+      ],
+      "expected": [
+        "distinguish sent, delivered, read, relied upon",
+        "no waiver inference from appointment",
+        "preserve uninvoked objection as contingency",
+        "check disclosure minimisation"
+      ]
+    },
+    {
+      "id": "parallel-actions",
+      "turns": [
+        "Our visa application is pending, but we have already filed a conduct complaint and a GDPR request.",
+        "The ministry acknowledged the conduct complaint only."
+      ],
+      "expected": [
+        "three distinct linked stages",
+        "acknowledgment scoped to complaint recipient",
+        "formal visa clock preserved",
+        "separate legal and conduct remedies"
+      ]
+    },
+    {
+      "id": "soft-law",
+      "turns": [
+        "They used the ordinary Schengen travel checklist for an EU family application. Please compare soft law, handbook guidance and binding law."
+      ],
+      "expected": [
+        "specific scoped handbook provision and force",
+        "EU-family versus ordinary checklist",
+        "relevant contrary sources",
+        "source check status stated accurately"
+      ]
+    },
+    {
+      "id": "full-stratagem",
+      "turns": [
+        "We have lodged an EU-family visa application, received a questionable additional-document request, and want you to screen all 36 stratagems."
+      ],
+      "expected": [
+        "no categorical claim all 36 were actually examined without details",
+        "separate unimplemented script from model concept review",
+        "reject deception or breached disclosure duties",
+        "compare straightforward alternatives"
+      ]
+    },
+    {
+      "id": "document-reuse",
+      "turns": [
+        "We handed over our marriage certificate in the residence-card case. A new visa case has started.",
+        "Can the visa office be treated as having already received that certificate?"
+      ],
+      "expected": [
+        "shared document identity versus recipient knowledge",
+        "separate proceedings",
+        "do not infer automatic inter-authority transfer",
+        "targeted evidence plan"
+      ]
+    },
+    {
+      "id": "unclassified-receipt",
+      "turns": [
+        "A service provider gave me a receipt when I attended. I still have my passport and all papers.",
+        "When did my EU-family visa's decision deadline start?"
+      ],
+      "expected": [
+        "check receipt purpose and provider role",
+        "do not infer formal lodging or calculate clock",
+        "identify missing trigger evidence",
+        "give lawful next action"
+      ]
+    }
+  ]
+}
