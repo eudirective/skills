@@ -394,7 +394,8 @@ def load_registry(path=REGISTRY_PATH):
     families = {x["family_id"] for x in reg["families"]}
     for c in reg["checks"]:
         object_keys(c, {"check_id", "family", "label", "triggers_any",
-                        "capability", "reference"}, label="registry_check")
+                        "capability", "reference"}, {"priority"},
+                        label="registry_check")
         require(c["family"] in families
                 and c["check_id"].startswith(c["family"] + "."),
                 "registry:unknown_family")
@@ -405,6 +406,9 @@ def load_registry(path=REGISTRY_PATH):
                 "registry:invalid_triggers")
         require(c["capability"] in ("model_guidance", "synthetic_only",
                                     "not_implemented"), "registry:invalid_capability")
+        if "priority" in c:
+            value_in(c["priority"], {"urgent", "important", "normal", "low"},
+                     "registry:invalid_priority")
         require(isinstance(c["reference"], str)
                 and c["reference"].startswith("references/"),
                 "registry:invalid_reference")
@@ -691,10 +695,16 @@ def build_proceedings(events):
     return out
 
 
-def feature_tags(p):
-    t = {"always", "country", "strategy"}
+def feature_tags(p, requested_focus=()):
+    """Conservative triage from entire history, not merely the final stage.
+
+    These tags are *hints*, not decisions that an unselected legal check is
+    inapplicable. A model may add explicit topic focus after reading the matter.
+    """
+    t = {"always", "country"} | set(requested_focus)
     typ = p["type"]
-    if "visa" in typ or typ == "visa_appeal":
+    steps = set(p["steps"])
+    if "visa" in typ:
         t.add("visa")
     if typ in ("eu_family_entry_visa", "eu_family_residence_card",
                "family_status_recognition", "permanent_residence"):
@@ -707,41 +717,57 @@ def feature_tags(p):
         t.add("marriage")
     if "complaint" in typ or typ in ("judicial_review", "administrative_appeal",
                                      "visa_appeal"):
-        t.add("complaint")
-        t.add("review")
+        t.update(("complaint", "review", "strategy"))
     if p["disclosures"]:
-        t.add("disclosure")
-    if p["documents"]:
+        t.update(("disclosure", "strategy"))
+    if p["documents"] or "supplement_requested" in steps:
         t.add("document")
-    if p["authority_positions"]:
-        t.add("authority")
+    if p["authority_positions"] or p["authority_classifications"]:
+        t.update(("authority", "soft_law", "strategy"))
     if p["deadlines"]:
         t.add("deadline")
     if p["issues"]:
-        t.add("issue")
-    for position in p["authority_positions"]:
-        if position["issue"] == "fraud_suspicion":
-            t.add("fraud")
-    for event_id in p["event_ids"]:
-        # Per-step feature flags are derived below from stage and stored flags.
-        pass
-    if "lodgement" in p["stage"] or p["stage"] in ("lodged", "appointment_attended"):
-        t.add("lodgement")
-    if "appointment" in p["stage"]:
+        t.update(("issue", "strategy"))
+    if any(x["issue"] == "fraud_suspicion"
+           for x in p["authority_positions"]):
+        t.add("fraud")
+    if steps.intersection({"inquiry_sent", "appointment_requested",
+                           "appointment_confirmed", "appointment_attended"}):
         t.add("appointment")
-    if p["decision"] != "not_recorded":
+    if steps.intersection({
+        "lodgement_attempted", "lodgement_blocked", "lodgement_reported",
+        "lodgement_disputed", "lodgement_confirmed", "receipt_issued",
+        "online_form_submitted", "appointment_attended"
+    }):
+        t.add("lodgement")
+    if "interview_scheduled" in steps:
+        t.update(("interview", "fraud"))
+    if steps.intersection({"decision_taken", "decision_notified"}):
         t.add("decision")
-    if p["stage"] in ("under_review", "reopened"):
+    if steps.intersection({"review_filed", "reopened"}):
         t.add("review")
-    if p["stage"] == "interview_pending":
-        t.add("interview")
     return t
 
-
 def validate_responses(data, all_ids, superseded, proceedings, registry):
+    """Validate *reported* checks against history, capability, and provenance.
+
+    Historical response references to subsequently corrected events remain
+    valid as-of that response. Corrections make the conclusion stale; they must
+    not erase an earlier turn or imply the earlier record never existed.
+    """
     review_records = []
-    keys = {c["check_id"] for c in registry["checks"]}
+    specs = {c["check_id"]: c for c in registry["checks"]}
     known_proceedings = {p["proceeding_id"] for p in proceedings}
+    events = data["events"]
+    event_proceeding = {}
+    opened_at = {}
+    for pos, e in enumerate(events):
+        event_proceeding[e["event_id"]] = e["proceeding_id"]
+        if e["kind"] == "event_correction":
+            child = e["replacement"]
+            event_proceeding[child["event_id"]] = child["proceeding_id"]
+        elif e["kind"] == "proceeding_opened":
+            opened_at[e["proceeding_id"]] = pos
     responses = data.get("responses", [])
     require(isinstance(responses, list) and len(responses) <= 100,
             "responses:invalid_count")
@@ -754,8 +780,7 @@ def validate_responses(data, all_ids, superseded, proceedings, registry):
         require(response["response_id"] not in used, "responses:duplicate_id")
         used.add(response["response_id"])
         through = response["through_event_id"]
-        require(through in all_ids and through not in superseded,
-                "response:through_event_missing_or_superseded")
+        require(through in all_ids, "response:through_event_missing")
         cursor = all_ids[through]
         require(cursor >= previous_index, "responses:nonmonotonic")
         previous_index = cursor
@@ -764,44 +789,67 @@ def validate_responses(data, all_ids, superseded, proceedings, registry):
                 "response:invalid_check_count")
         seen = set()
         for c in checks:
-            object_keys(c, {"check_id", "proceeding_id", "status", "method", "reason"},
-                        {"evidence_event_ids", "source_refs"}, "response_check")
+            object_keys(c, {"check_id", "proceeding_id", "status",
+                            "method", "reason"},
+                        {"evidence_event_ids", "source_refs", "scope_exclusion"},
+                        "response_check")
             check_id = c["check_id"]
-            require(check_id in keys, "response:unknown_check:" + str(check_id))
+            require(check_id in specs,
+                    "response:unknown_check:" + str(check_id))
+            spec = specs[check_id]
             pid = c["proceeding_id"]
             require(pid in known_proceedings, "response:unknown_proceeding")
-            k = (pid, check_id)
-            require(k not in seen, "response:duplicate_check")
-            seen.add(k)
+            require(opened_at.get(pid, cursor + 1) <= cursor,
+                    "response:future_proceeding")
+            key = (pid, check_id)
+            require(key not in seen, "response:duplicate_check")
+            seen.add(key)
             value_in(c["status"], REVIEW_STATUSES, "review_status")
             value_in(c["method"], REVIEW_METHODS, "review_method")
             value_in(c["reason"], REVIEW_REASONS, "review_reason")
-            if c["status"] in ("assessed", "partial"):
-                require(c["method"] != "none", "response:assessed_without_method")
-                require(c["reason"] != "not_attempted",
-                        "response:assessed_marked_unattempted")
-            else:
-                require(c["method"] == "none",
-                        "response:not_performed_has_method")
-            if c["status"] == "not_applicable":
-                require(c["reason"] == "scope_excluded",
-                        "response:not_applicable_without_scope_reason")
+            if spec["capability"] != "model_guidance":
+                require(c["status"] not in ("assessed", "partial"),
+                        "response:unavailable_capability_not_executed")
             refs = c.get("evidence_event_ids", [])
             require(isinstance(refs, list) and len(refs) <= 30,
                     "response:invalid_evidence_refs")
             for ref in refs:
                 opaque_id(ref, "E", "response_evidence_event")
-                require(ref in all_ids and all_ids[ref] <= cursor
-                        and ref not in superseded,
-                        "response:invalid_or_superseded_evidence")
+                require(ref in all_ids and all_ids[ref] <= cursor,
+                        "response:future_or_missing_evidence")
+                require(event_proceeding.get(ref) == pid,
+                        "response:evidence_wrong_proceeding")
             sources = c.get("source_refs", [])
             require(isinstance(sources, list) and len(sources) <= 30,
                     "response:invalid_sources")
-            for s in sources:
-                require(isinstance(s, str) and bool(REF_PATTERN.fullmatch(s)),
+            for source in sources:
+                require(isinstance(source, str)
+                        and bool(REF_PATTERN.fullmatch(source)),
                         "response:unsafe_source_ref")
+            if c["status"] in ("assessed", "partial"):
+                require(c["method"] != "none",
+                        "response:assessed_without_method")
+                require(c["reason"] != "not_attempted",
+                        "response:assessed_marked_unattempted")
+                require(bool(refs) or bool(sources),
+                        "response:assessed_without_trace")
+            else:
+                require(c["method"] == "none",
+                        "response:not_performed_has_method")
             if c["method"] == "source_review":
-                require(bool(sources), "response:source_review_without_reference")
+                require(bool(sources),
+                        "response:source_review_without_reference")
+            if c["status"] == "not_applicable":
+                require(c["reason"] == "scope_excluded",
+                        "response:not_applicable_without_scope_reason")
+                value_in(c.get("scope_exclusion"), SCOPE_EXCLUSIONS,
+                         "response:scope_exclusion")
+                if c["scope_exclusion"] == "legally_excluded_with_basis":
+                    require(bool(sources),
+                            "response:legal_exclusion_requires_source")
+            else:
+                require("scope_exclusion" not in c,
+                        "response:scope_exclusion_for_other_status")
             review_records.append({
                 **c, "response_id": response["response_id"],
                 "through_index": cursor,
@@ -809,111 +857,146 @@ def validate_responses(data, all_ids, superseded, proceedings, registry):
             })
     return review_records, responses
 
-
-def make_coverage(proceedings, records, responses, registry, raw_events, full):
+def make_coverage(proceedings, records, responses, registry, raw_events,
+                  full, requested_focus=()):
     latest_response = responses[-1]["response_id"] if responses else None
-    latest = {(r["proceeding_id"], r["check_id"]): r for r in records}
-    direct = {(r["proceeding_id"], r["check_id"]): r for r in records
-              if r["response_id"] == latest_response}
-    check_by_id = {c["check_id"]: c for c in registry["checks"]}
+    last_record = {(r["proceeding_id"], r["check_id"]): r for r in records}
+    current_response = {
+        (r["proceeding_id"], r["check_id"]): r for r in records
+        if r["response_id"] == latest_response
+    }
     current = []
     for p in proceedings:
         pid = p["proceeding_id"]
-        tags = feature_tags(p)
-        for cid, spec in check_by_id.items():
-            key = (pid, cid)
-            recorded = latest.get(key)
-            immediate = direct.get(key)
+        tags = feature_tags(p, requested_focus)
+        for spec in registry["checks"]:
+            cid = spec["check_id"]
+            recorded = last_record.get((pid, cid))
+            immediate = current_response.get((pid, cid))
             relevant = bool(tags.intersection(spec["triggers_any"]))
             if not relevant and recorded is None:
                 if full:
-                    current.append({"proceeding_id": pid, "check_id": cid,
-                                    "family": spec["family"],
-                                    "status": "not_indicated_not_excluded",
-                                    "capability": spec["capability"]})
+                    current.append({
+                        "proceeding_id": pid, "check_id": cid,
+                        "family": spec["family"],
+                        "status": "not_indicated_not_excluded",
+                        "capability": spec["capability"],
+                        "priority": spec.get("priority", "normal")
+                    })
                 continue
             status = "not_checked"
             method = "none"
             from_response = None
-            if immediate:
-                status = immediate["status"]
-                method = immediate["method"]
-                from_response = immediate["response_id"]
-            elif recorded and recorded["status"] in ("assessed", "partial",
-                                                    "not_applicable"):
-                updated_after = any(
-                    i > recorded["through_index"]
-                    and e["proceeding_id"] == pid
-                    for i, e in enumerate(raw_events))
-                status = ("needs_recheck" if updated_after
-                          else "previously_" + recorded["status"])
-                method = recorded["method"]
-                from_response = recorded["response_id"]
+            record = immediate or recorded
+            if record:
+                method = record["method"]
+                from_response = record["response_id"]
+                recorded_status = record["status"]
+                newer_events = any(
+                    i > record["through_index"] and
+                    e["proceeding_id"] == pid
+                    for i, e in enumerate(raw_events)
+                )
+                if recorded_status in ("assessed", "partial", "not_applicable"):
+                    if newer_events:
+                        status = "needs_recheck"
+                    else:
+                        status = (recorded_status if immediate
+                                  else "previously_" + recorded_status)
+                elif recorded_status == "unavailable":
+                    status = "unavailable_for_live_advice"
+                else:
+                    status = recorded_status
             elif spec["capability"] in ("synthetic_only", "not_implemented"):
                 status = "unavailable_for_live_advice"
-            if not relevant and recorded is not None:
-                # A recorded review may remain visible after its original trigger vanishes.
+            if not relevant and record is not None:
                 status = "historical_" + status
             current.append({
                 "proceeding_id": pid, "check_id": cid,
                 "family": spec["family"], "status": status,
-                "capability": spec["capability"], "method": method,
-                "from_response": from_response,
-                "method_assurance": ("self_reported" if method != "none" else "none")
+                "capability": spec["capability"],
+                "priority": spec.get("priority", "normal"),
+                "method": method, "from_response": from_response,
+                "method_assurance": (
+                    "self_reported" if method != "none" else "none")
             })
+    gap_statuses = {"not_checked", "needs_recheck",
+                    "unavailable_for_live_advice", "blocked", "partial"}
     material_gaps = [
-        {k: c[k] for k in ("proceeding_id", "check_id", "status", "capability")}
-        for c in current
-        if c["status"] in ("not_checked", "needs_recheck",
-                          "unavailable_for_live_advice")
+        {k: c[k] for k in (
+            "proceeding_id", "check_id", "status", "capability", "priority")}
+        for c in current if c["status"] in gap_statuses
     ]
+    priority_order = {"urgent": 0, "important": 1, "normal": 2, "low": 3}
+    state_order = {"needs_recheck": 0, "blocked": 1,
+                   "unavailable_for_live_advice": 2, "not_checked": 3,
+                   "partial": 4}
+    material_gaps.sort(
+        key=lambda c: (
+            priority_order.get(c["priority"], 3),
+            state_order.get(c["status"], 9),
+            c["proceeding_id"], c["check_id"]
+        )
+    )
     counts = dict(sorted(Counter(c["status"] for c in current).items()))
     response_counts = dict(sorted(Counter(
-        r["status"] for r in records if r["response_id"] == latest_response
+        r["status"] for r in records
+        if r["response_id"] == latest_response
     ).items()))
     by_family = {}
     for c in current:
         family = c["family"]
-        cell = by_family.setdefault(family, {"relevant": 0, "checked": 0,
-                                              "outstanding": 0})
+        cell = by_family.setdefault(family, {
+            "relevant": 0, "checked": 0, "outstanding": 0
+        })
         if c["status"] != "not_indicated_not_excluded":
             cell["relevant"] += 1
-        if c["status"] in ("assessed", "partial", "previously_assessed",
-                           "previously_partial"):
+        if c["status"] in (
+            "assessed", "previously_assessed",
+            "partial", "previously_partial"
+        ):
             cell["checked"] += 1
-        if c["status"] in ("not_checked", "needs_recheck",
-                           "unavailable_for_live_advice"):
+        if c["status"] in gap_statuses:
             cell["outstanding"] += 1
     result = {
         "registry_checks": len(registry["checks"]),
         "latest_response_id": latest_response,
+        "requested_focus": sorted(requested_focus),
         "this_response_recorded": response_counts,
         "session_coverage_states": counts,
         "by_family": by_family,
         "outstanding_total": len(material_gaps),
         "outstanding_sample": material_gaps[:30],
+        "outstanding_sample_is_priority_sorted": True,
         "completeness_guaranteed": False,
         "assessment_record_assurance": "self_reported_and_schema_checked_only"
     }
     if full:
         result["checks"] = current
+        result["outstanding_all"] = material_gaps
     return result
-
 
 def evaluate(data, *, full=False, registry=None):
     object_keys(data, {"schema", "mode", "case_ref", "events"},
-                {"responses"}, "case")
-    require(data["schema"] == SCHEMA, "case:schema")
+                {"responses", "requested_focus"}, "case")
+    require(data["schema"] in (SCHEMA, "c27-abstract-session/0.2.0"),
+            "case:schema")
     value_in(data["mode"], {"fictional_fixture", "abstract_nonidentifying"},
              "case:mode")
     opaque_id(data["case_ref"], "C", "case_ref")
     registry = registry or load_registry()
+    focus = data.get("requested_focus", [])
+    require(isinstance(focus, list) and len(focus) <= 20
+            and len(set(map(str, focus))) == len(focus)
+            and set(focus) <= VALID_TRIGGERS - {"always"},
+            "case:invalid_requested_focus")
     active, all_ids, superseded = normalize_events(data)
     proceedings = build_proceedings(active)
     records, responses = validate_responses(
         data, all_ids, superseded, proceedings, registry)
     coverage = make_coverage(
-        proceedings, records, responses, registry, data["events"], full)
+        proceedings, records, responses, registry, data["events"], full,
+        requested_focus=focus)
     summarized = []
     for p in proceedings:
         out = dict(p)
@@ -942,6 +1025,12 @@ def compare(previous, current, *, registry=None):
     require(isinstance(left, list) and isinstance(right, list)
             and len(right) >= len(left) and right[:len(left)] == left,
             "compare:history_not_append_only")
+    old_responses = previous.get("responses", [])
+    new_responses = current.get("responses", [])
+    require(isinstance(old_responses, list)
+            and isinstance(new_responses, list)
+            and new_responses[:len(old_responses)] == old_responses,
+            "compare:response_history_not_append_only")
     p = evaluate(previous, registry=registry)
     c = evaluate(current, registry=registry)
     older = {x["proceeding_id"]: x for x in p["proceedings"]}
