@@ -430,7 +430,8 @@ def load_registry(path=REGISTRY_PATH):
     return reg
 
 
-def build_proceedings(events, correction_aliases=None):
+def build_proceedings(events, correction_aliases=None,
+                      corrected_disclosures=None, corrected_documents=None):
     """Replay corrected effective records, retaining independent historical facts.
 
     Incoming order is when the model learned about an event, not proof of the
@@ -444,6 +445,8 @@ def build_proceedings(events, correction_aliases=None):
     deadline_owners = {}
     event_lookup = {}
     aliases = correction_aliases or {}
+    unstable_disclosures = set(corrected_disclosures or ())
+    unstable_documents = set(corrected_documents or ())
 
     def resolve_reference(ref, pid):
         """Resolve a corrected prior event, flagging that its legal effect needs review."""
@@ -595,9 +598,20 @@ def build_proceedings(events, correction_aliases=None):
         elif kind == "disclosure":
             did = e["disclosure_id"]
             require(did not in disclosures_seen, "disclosure:duplicate_id")
+            unresolved_docs = []
             for ref in e.get("document_ids", []):
-                require(ref in p["documents"],
+                if ref in unstable_documents:
+                    unresolved_docs.append(ref)
+                elif ref not in p["documents"]:
+                    raise StateError(
                         "disclosure:document_requires_proceeding_specific_operation")
+            if unresolved_docs:
+                p["flags"].append("document_disclosure_link_corrected")
+                p["unresolved_dependencies"].append({
+                    "event_id": e["event_id"],
+                    "reason": "document_disclosure_link_requires_reassessment",
+                    "document_ids": unresolved_docs
+                })
             disclosures_seen[did] = pid
             p["disclosures"][did] = {
                 "disclosure_id": did, "topic": e["topic"],
@@ -608,11 +622,20 @@ def build_proceedings(events, correction_aliases=None):
                 "content_acknowledged": False, "content_relied_on": False,
                 "transmission_failed": False,
                 "observations": [], "document_ids": e.get("document_ids", []),
+                "unresolved_document_ids": unresolved_docs,
                 "event_id": e["event_id"],
                 "occurred_order": e.get("occurred_order")
             }
         elif kind == "disclosure_observation":
             did = e["disclosure_id"]
+            if did in unstable_disclosures:
+                p["flags"].append("disclosure_observation_refers_to_corrected_content")
+                p["unresolved_dependencies"].append({
+                    "event_id": e["event_id"], "disclosure_id": did,
+                    "reason": "delivery_or_reliance_requires_content_reassessment"
+                })
+                event_lookup[e["event_id"]] = pid
+                continue
             require(disclosures_seen.get(did) == pid,
                     "disclosure:observation_wrong_ref")
             d = p["disclosures"][did]
@@ -633,8 +656,16 @@ def build_proceedings(events, correction_aliases=None):
         elif kind == "authority_position":
             related_disclosure = e.get("related_disclosure_id")
             if related_disclosure:
-                require(disclosures_seen.get(related_disclosure) == pid,
-                        "authority:related_disclosure_missing_in_proceeding")
+                if related_disclosure in unstable_disclosures:
+                    p["flags"].append("authority_linked_disclosure_corrected")
+                    p["unresolved_dependencies"].append({
+                        "event_id": e["event_id"],
+                        "disclosure_id": related_disclosure,
+                        "reason": "authority_reference_requires_disclosure_reassessment"
+                    })
+                else:
+                    require(disclosures_seen.get(related_disclosure) == pid,
+                            "authority:related_disclosure_missing_in_proceeding")
             related_event = e.get("related_event_id")
             resolved_related = None
             related_corrected = False
@@ -1091,7 +1122,34 @@ def evaluate(data, *, full=False, registry=None):
         e["target_event_id"]: e["replacement"]["event_id"]
         for e in data["events"] if e["kind"] == "event_correction"
     }
-    proceedings = build_proceedings(active, correction_aliases)
+    recorded_sources = {}
+    corrected_disclosures = set()
+    corrected_documents = set()
+    for event in data["events"]:
+        if event["kind"] == "event_correction":
+            original = recorded_sources.get(event["target_event_id"])
+            replacement = event["replacement"]
+            if original and original["kind"] == "disclosure":
+                semantic_fields = (
+                    "disclosure_id", "topic", "operation",
+                    "channel", "recipient_id", "document_ids"
+                )
+                if any(original.get(k) != replacement.get(k)
+                       for k in semantic_fields):
+                    corrected_disclosures.add(original["disclosure_id"])
+            if original and original["kind"] == "document_event":
+                semantic_fields = (
+                    "document_id", "document_category", "operation",
+                    "recipient_id"
+                )
+                if any(original.get(k) != replacement.get(k)
+                       for k in semantic_fields):
+                    corrected_documents.add(original["document_id"])
+            recorded_sources[replacement["event_id"]] = replacement
+        else:
+            recorded_sources[event["event_id"]] = event
+    proceedings = build_proceedings(
+        active, correction_aliases, corrected_disclosures, corrected_documents)
     records, responses = validate_responses(
         data, all_ids, superseded, proceedings, registry)
     coverage = make_coverage(
