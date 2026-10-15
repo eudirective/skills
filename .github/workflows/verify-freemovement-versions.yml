@@ -24,6 +24,8 @@ jobs:
           node-version: '22'
       - name: Confirm installed manifest matches plugin and every skill
         run: node freemovement-law/scripts/version_manifest.mjs --verify
+      - name: C27 state engine regression checks
+        run: python freemovement-law/skills/eudirective-core/scripts/test_c27_case_state.py
       - name: Check version parity comparison and failure reporting
         run: |
           node --test freemovement-law/skills/eudirective-core/scripts/test_session_version_check.mjs

@@ -1,0 +1,2655 @@
+{
+  "schema": "freemovement-check-registry/0.1.0",
+  "description": "Atomic issue coverage inventory. Capability means a review method is described, not that a review ran or legal compliance was established. Untriggered never means legally inapplicable.",
+  "families": [
+    {
+      "family_id": "case_intake",
+      "title": "Case intake and classification"
+    },
+    {
+      "family_id": "lifecycle",
+      "title": "Procedural lifecycle"
+    },
+    {
+      "family_id": "disclosures",
+      "title": "Applicant disclosure history"
+    },
+    {
+      "family_id": "documents",
+      "title": "Document requests and supply history"
+    },
+    {
+      "family_id": "timing",
+      "title": "Deadlines and procedural clocks"
+    },
+    {
+      "family_id": "authority",
+      "title": "Authority conduct and positions"
+    },
+    {
+      "family_id": "eu_scope",
+      "title": "EU legal regime and topology"
+    },
+    {
+      "family_id": "hierarchy",
+      "title": "Hierarchy and legal interpretation"
+    },
+    {
+      "family_id": "soft_law",
+      "title": "Soft law and official guidance"
+    },
+    {
+      "family_id": "fundamental_rights",
+      "title": "Charter and general principles"
+    },
+    {
+      "family_id": "proof",
+      "title": "Evidence and burden"
+    },
+    {
+      "family_id": "access",
+      "title": "Consular and procedural access"
+    },
+    {
+      "family_id": "conduct",
+      "title": "Independent conduct grievances"
+    },
+    {
+      "family_id": "privacy",
+      "title": "Privacy and data minimisation"
+    },
+    {
+      "family_id": "gdpr",
+      "title": "GDPR access and evidence preservation"
+    },
+    {
+      "family_id": "strategy",
+      "title": "Known strategy and applicant tactics"
+    },
+    {
+      "family_id": "stratagems",
+      "title": "Stratagem candidate assessment"
+    },
+    {
+      "family_id": "remedies",
+      "title": "Remedies and oversight"
+    },
+    {
+      "family_id": "sources",
+      "title": "Legal source and authority reliability"
+    },
+    {
+      "family_id": "country",
+      "title": "National and applicant-country coverage"
+    },
+    {
+      "family_id": "fraud_abuse",
+      "title": "Fraud suspicion and safeguard review"
+    },
+    {
+      "family_id": "novelty",
+      "title": "Completeness and novel-issue discovery"
+    }
+  ],
+  "checks": [
+    {
+      "check_id": "case_intake.proceedings_identified",
+      "family": "case_intake",
+      "label": "Separate all live and historical proceedings",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "case_intake.application_type",
+      "family": "case_intake",
+      "label": "Classify application or procedural instrument precisely",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "case_intake.claimed_legal_basis",
+      "family": "case_intake",
+      "label": "Record applicant's stated legal basis separately from authority's",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "case_intake.authority_classification",
+      "family": "case_intake",
+      "label": "Record classification applied by authority",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "case_intake.applicant_objective",
+      "family": "case_intake",
+      "label": "Identify immediate practical objective and requested relief",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "case_intake.actor_roles",
+      "family": "case_intake",
+      "label": "Distinguish EU citizen, applicant, sponsor and other participants",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "case_intake.relationship_basis",
+      "family": "case_intake",
+      "label": "Identify marriage, registered partner, dependent and extended family status",
+      "triggers_any": [
+        "family"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "case_intake.geographic_roles",
+      "family": "case_intake",
+      "label": "Distinguish residence, nationality, application, deciding and representing states",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "case_intake.returnee_context",
+      "family": "case_intake",
+      "label": "Review possible returnee and derivative rights",
+      "triggers_any": [
+        "family"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "case_intake.frontier_worker_context",
+      "family": "case_intake",
+      "label": "Review cross-border worker or frontier topology",
+      "triggers_any": [
+        "family"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "case_intake.linked_proceedings",
+      "family": "case_intake",
+      "label": "Link appeal, complaint and records procedures without merging them",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "case_intake.applicant_prior_actions",
+      "family": "case_intake",
+      "label": "Identify what applicant already attempted or completed",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "lifecycle.enquiry_state",
+      "family": "lifecycle",
+      "label": "Distinguish enquiry and appointment contact from application",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "lifecycle.appointment_request",
+      "family": "lifecycle",
+      "label": "Record appointment request, response and scheduling",
+      "triggers_any": [
+        "appointment"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "lifecycle.application_preparation",
+      "family": "lifecycle",
+      "label": "Distinguish draft forms from completed submissions",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "lifecycle.online_form_effect",
+      "family": "lifecycle",
+      "label": "Assess whether online submission has legal lodging effect",
+      "triggers_any": [
+        "lodgement",
+        "visa"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "lifecycle.physical_attendance",
+      "family": "lifecycle",
+      "label": "Record attendance and facts of submission attempt",
+      "triggers_any": [
+        "lodgement"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "lifecycle.documents_presented",
+      "family": "lifecycle",
+      "label": "Distinguish showing documents from surrendering them",
+      "triggers_any": [
+        "document"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "lifecycle.lodgement_attempted",
+      "family": "lifecycle",
+      "label": "Determine whether formal submission was attempted",
+      "triggers_any": [
+        "lodgement"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "lifecycle.lodgement_confirmed",
+      "family": "lifecycle",
+      "label": "Establish basis for confirmed receipt and legal lodging",
+      "triggers_any": [
+        "lodgement"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "lifecycle.lodgement_disputed",
+      "family": "lifecycle",
+      "label": "Record opposing accounts of lodging without resolving by assumption",
+      "triggers_any": [
+        "lodgement"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "lifecycle.receipt_evidence",
+      "family": "lifecycle",
+      "label": "Determine whether acknowledgment or receipt exists",
+      "triggers_any": [
+        "lodgement"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "lifecycle.case_examination",
+      "family": "lifecycle",
+      "label": "Identify substantive examination as separate stage",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "lifecycle.supplementary_request",
+      "family": "lifecycle",
+      "label": "Record further-document or clarification request",
+      "triggers_any": [
+        "document"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "lifecycle.interview_stage",
+      "family": "lifecycle",
+      "label": "Identify invitation, purpose and procedural context of interview",
+      "triggers_any": [
+        "interview"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "lifecycle.decision_taken",
+      "family": "lifecycle",
+      "label": "Separate decision issue from notification and service",
+      "triggers_any": [
+        "decision"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "lifecycle.decision_notified",
+      "family": "lifecycle",
+      "label": "Determine notification/service basis and relevant evidence",
+      "triggers_any": [
+        "decision"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "lifecycle.challenge_stage",
+      "family": "lifecycle",
+      "label": "Track separate review, appeal and complaint procedures",
+      "triggers_any": [
+        "review",
+        "complaint"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "lifecycle.closure_and_withdrawal",
+      "family": "lifecycle",
+      "label": "Distinguish closure, withdrawal and expiry",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "lifecycle.procedural_reopening",
+      "family": "lifecycle",
+      "label": "Identify reassessment, reopening or altered stage",
+      "triggers_any": [
+        "review"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "disclosures.information_already_sent",
+      "family": "disclosures",
+      "label": "List information already sent to each distinct recipient",
+      "triggers_any": [
+        "disclosure"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "disclosures.communication_channel",
+      "family": "disclosures",
+      "label": "Record email, post, portal, handover and oral channels",
+      "triggers_any": [
+        "disclosure"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "disclosures.material_disclosed",
+      "family": "disclosures",
+      "label": "Identify topic or legal position conveyed without retaining raw text",
+      "triggers_any": [
+        "disclosure"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "disclosures.recipient_identity_scope",
+      "family": "disclosures",
+      "label": "Avoid treating separate authorities as sharing knowledge",
+      "triggers_any": [
+        "disclosure"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "disclosures.sent_versus_delivered",
+      "family": "disclosures",
+      "label": "Separate claim of sending from proof of transport delivery",
+      "triggers_any": [
+        "disclosure"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "disclosures.delivered_versus_read",
+      "family": "disclosures",
+      "label": "Delivery is not proof of individual officer reading",
+      "triggers_any": [
+        "disclosure"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "disclosures.acknowledgement",
+      "family": "disclosures",
+      "label": "Separate receipt acknowledgement from material acknowledgement",
+      "triggers_any": [
+        "disclosure"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "disclosures.express_reliance",
+      "family": "disclosures",
+      "label": "Record when authority expressly relied on submitted material",
+      "triggers_any": [
+        "disclosure",
+        "authority"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "disclosures.prior_admission",
+      "family": "disclosures",
+      "label": "Review admissions, concessions and earlier legal statements",
+      "triggers_any": [
+        "disclosure"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "disclosures.correction_history",
+      "family": "disclosures",
+      "label": "Track retractions, correction and supplementation of prior communications",
+      "triggers_any": [
+        "disclosure"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "disclosures.redundant_disclosure",
+      "family": "disclosures",
+      "label": "Check whether proposed response unnecessarily repeats supplied facts",
+      "triggers_any": [
+        "disclosure"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "disclosures.mandatory_disclosure",
+      "family": "disclosures",
+      "label": "Assess affirmative duties before recommending non-disclosure",
+      "triggers_any": [
+        "disclosure"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "disclosures.voluntary_information",
+      "family": "disclosures",
+      "label": "Identify information volunteered beyond stated duty",
+      "triggers_any": [
+        "disclosure"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "disclosures.future_minimisation",
+      "family": "disclosures",
+      "label": "Limit additional statements to information necessary for chosen action",
+      "triggers_any": [
+        "disclosure"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "disclosures.cross_application_reuse",
+      "family": "disclosures",
+      "label": "Never presume automatic sharing of evidence across cases",
+      "triggers_any": [
+        "disclosure"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "disclosures.information_timing",
+      "family": "disclosures",
+      "label": "Assess whether authority knew facts before a later procedure",
+      "triggers_any": [
+        "disclosure",
+        "authority"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "disclosures.strategy_already_signalled",
+      "family": "disclosures",
+      "label": "Check if applicant has previously disclosed planned tactics or complaints",
+      "triggers_any": [
+        "disclosure",
+        "strategy"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "disclosures.acknowledgement_not_waiver",
+      "family": "disclosures",
+      "label": "Do not infer statutory waiver from acknowledgement or appointment",
+      "triggers_any": [
+        "disclosure"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "documents.requested_item",
+      "family": "documents",
+      "label": "Record each demand, purported purpose and authority",
+      "triggers_any": [
+        "document"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "documents.requested_legal_basis",
+      "family": "documents",
+      "label": "Check legal authority for each requested document",
+      "triggers_any": [
+        "document"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "documents.ordinary_checklist_scope",
+      "family": "documents",
+      "label": "Distinguish ordinary Schengen document lists from EU-family regime",
+      "triggers_any": [
+        "document",
+        "visa"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "documents.already_possessed",
+      "family": "documents",
+      "label": "Differentiate possessed, offered, presented and submitted documents",
+      "triggers_any": [
+        "document"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "documents.copy_original",
+      "family": "documents",
+      "label": "Check copies versus originals and purpose of examination",
+      "triggers_any": [
+        "document"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "documents.electronically_issued",
+      "family": "documents",
+      "label": "Assess legal recognition and evidential value of digital records",
+      "triggers_any": [
+        "document"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "documents.accepted_rejected_returned",
+      "family": "documents",
+      "label": "Track item-level acceptance, rejection and return",
+      "triggers_any": [
+        "document"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "documents.missing_document",
+      "family": "documents",
+      "label": "Distinguish missing document from insufficient evidentiary proof",
+      "triggers_any": [
+        "document"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "documents.alternative_proof",
+      "family": "documents",
+      "label": "Consider other admissible methods of proving relevant facts",
+      "triggers_any": [
+        "document"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "documents.mandatory_vs_optional",
+      "family": "documents",
+      "label": "Differentiate legal requirement from voluntary supporting evidence",
+      "triggers_any": [
+        "document"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "documents.translations",
+      "family": "documents",
+      "label": "Check specific translation demand and proportionality",
+      "triggers_any": [
+        "document"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "documents.legalisation_apostille",
+      "family": "documents",
+      "label": "Check authentication requirements and applicable exemptions",
+      "triggers_any": [
+        "document"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "documents.family_status_records",
+      "family": "documents",
+      "label": "Check marriage, adoption, divorce, birth and parenthood documents",
+      "triggers_any": [
+        "document",
+        "family"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "documents.duplicate_demand",
+      "family": "documents",
+      "label": "Identify repeated demands for material already supplied",
+      "triggers_any": [
+        "document"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "documents.proof_completeness",
+      "family": "documents",
+      "label": "Assess whether all material elements have adequate evidence",
+      "triggers_any": [
+        "document"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "documents.provider_document_rules",
+      "family": "documents",
+      "label": "Distinguish VAC policy from binding member-state rules",
+      "triggers_any": [
+        "document",
+        "visa"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "timing.clock_start",
+      "family": "timing",
+      "label": "Identify actual trigger event for each procedural clock",
+      "triggers_any": [
+        "deadline"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5c-evidence-deadlines-authority.md"
+    },
+    {
+      "check_id": "timing.lodgement_trigger",
+      "family": "timing",
+      "label": "Do not start application clock from an unconfirmed inquiry",
+      "triggers_any": [
+        "deadline",
+        "lodgement"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5c-evidence-deadlines-authority.md"
+    },
+    {
+      "check_id": "timing.service_date",
+      "family": "timing",
+      "label": "Distinguish issuance, notification and service",
+      "triggers_any": [
+        "deadline",
+        "decision"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5c-evidence-deadlines-authority.md"
+    },
+    {
+      "check_id": "timing.applicable_rule",
+      "family": "timing",
+      "label": "Require correct legal rule and procedure before calculating deadline",
+      "triggers_any": [
+        "deadline"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5c-evidence-deadlines-authority.md"
+    },
+    {
+      "check_id": "timing.exceptions_and_extension",
+      "family": "timing",
+      "label": "Assess justification and conditions for exception or extension",
+      "triggers_any": [
+        "deadline"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5c-evidence-deadlines-authority.md"
+    },
+    {
+      "check_id": "timing.suspension",
+      "family": "timing",
+      "label": "Check recorded suspensions and legal effect",
+      "triggers_any": [
+        "deadline"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5c-evidence-deadlines-authority.md"
+    },
+    {
+      "check_id": "timing.calendar_rules",
+      "family": "timing",
+      "label": "Verify working-day, holiday and time-zone issues",
+      "triggers_any": [
+        "deadline"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5c-evidence-deadlines-authority.md"
+    },
+    {
+      "check_id": "timing.accelerated_processing",
+      "family": "timing",
+      "label": "Review EU-family facilitated or accelerated processing where relevant",
+      "triggers_any": [
+        "visa"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5c-evidence-deadlines-authority.md"
+    },
+    {
+      "check_id": "timing.pre_lodgement_delay",
+      "family": "timing",
+      "label": "Consider delayed appointments separately from processing time",
+      "triggers_any": [
+        "appointment"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5c-evidence-deadlines-authority.md"
+    },
+    {
+      "check_id": "timing.urgent_preservation",
+      "family": "timing",
+      "label": "Identify evidence vulnerable to routine deletion",
+      "triggers_any": [
+        "issue"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5c-evidence-deadlines-authority.md"
+    },
+    {
+      "check_id": "timing.appeal_limit",
+      "family": "timing",
+      "label": "Protect formal appeal clock despite parallel complaints",
+      "triggers_any": [
+        "review",
+        "deadline"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5c-evidence-deadlines-authority.md"
+    },
+    {
+      "check_id": "timing.premature_predetermination",
+      "family": "timing",
+      "label": "Examine grounds or timing announced before lodging",
+      "triggers_any": [
+        "appointment",
+        "lodgement",
+        "authority"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5c-evidence-deadlines-authority.md"
+    },
+    {
+      "check_id": "authority.competence",
+      "family": "authority",
+      "label": "Confirm institutional, procedural and territorial competence",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "authority.actual_ground",
+      "family": "authority",
+      "label": "Record exact grounds actually raised rather than hypothetical defenses",
+      "triggers_any": [
+        "authority"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "authority.position_provenance",
+      "family": "authority",
+      "label": "Separate written grounds, reported oral statement and inference",
+      "triggers_any": [
+        "authority"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "authority.indicated_ground",
+      "family": "authority",
+      "label": "Distinguish indications from expressly invoked positions",
+      "triggers_any": [
+        "authority"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "authority.ground_change",
+      "family": "authority",
+      "label": "Track later changes and contradictions in official explanations",
+      "triggers_any": [
+        "authority"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "authority.knowledge_state",
+      "family": "authority",
+      "label": "Distinguish disclosed, received, acknowledged and relied upon",
+      "triggers_any": [
+        "authority",
+        "disclosure"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "authority.reasons_given",
+      "family": "authority",
+      "label": "Assess adequacy and specificity of reasoned decision",
+      "triggers_any": [
+        "decision",
+        "authority"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "authority.uninvoked_defence",
+      "family": "authority",
+      "label": "Preserve material uninvoked defenses in contingency analysis",
+      "triggers_any": [
+        "authority"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "authority.staff_responsibility",
+      "family": "authority",
+      "label": "Separate consular officials, VAC workers and security staff",
+      "triggers_any": [
+        "issue"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "authority.supervisory_path",
+      "family": "authority",
+      "label": "Identify responsible ministry and internal complaints route",
+      "triggers_any": [
+        "complaint"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "authority.formal_vs_informal",
+      "family": "authority",
+      "label": "Distinguish informal assurances from enforceable decisions",
+      "triggers_any": [
+        "authority"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "eu_scope.directive_scope",
+      "family": "eu_scope",
+      "label": "Check personal, material and territorial Directive scope",
+      "triggers_any": [
+        "family",
+        "visa",
+        "residence"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5a-topology-applicability.md"
+    },
+    {
+      "check_id": "eu_scope.movement_exercised",
+      "family": "eu_scope",
+      "label": "Identify qualifying exercise of free movement",
+      "triggers_any": [
+        "family"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5a-topology-applicability.md"
+    },
+    {
+      "check_id": "eu_scope.accompany_or_join",
+      "family": "eu_scope",
+      "label": "Determine travel or residence link of family member",
+      "triggers_any": [
+        "family"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5a-topology-applicability.md"
+    },
+    {
+      "check_id": "eu_scope.returnee_derived_rights",
+      "family": "eu_scope",
+      "label": "Consider Article 21 returnee principles",
+      "triggers_any": [
+        "family"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5a-topology-applicability.md"
+    },
+    {
+      "check_id": "eu_scope.domestic_extension",
+      "family": "eu_scope",
+      "label": "Consider whether national law grants comparable family rights",
+      "triggers_any": [
+        "family"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5a-topology-applicability.md"
+    },
+    {
+      "check_id": "eu_scope.visa_code_lex_specialis",
+      "family": "eu_scope",
+      "label": "Assess relation between Visa Code and family-specific regime",
+      "triggers_any": [
+        "visa"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5a-topology-applicability.md"
+    },
+    {
+      "check_id": "eu_scope.schengen_borders",
+      "family": "eu_scope",
+      "label": "Assess borders-code interplay with EU family rights",
+      "triggers_any": [
+        "border",
+        "visa"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5a-topology-applicability.md"
+    },
+    {
+      "check_id": "eu_scope.residence_card_entry_exemption",
+      "family": "eu_scope",
+      "label": "Separate residence-card visa exemption from card application",
+      "triggers_any": [
+        "visa",
+        "border"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5a-topology-applicability.md"
+    },
+    {
+      "check_id": "eu_scope.permanent_residence",
+      "family": "eu_scope",
+      "label": "Review acquired or retained permanent residence",
+      "triggers_any": [
+        "residence"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5a-topology-applicability.md"
+    },
+    {
+      "check_id": "eu_scope.worker_student_self_sufficient",
+      "family": "eu_scope",
+      "label": "Identify appropriate free-movement economic category",
+      "triggers_any": [
+        "family",
+        "residence"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5a-topology-applicability.md"
+    },
+    {
+      "check_id": "eu_scope.family_recognition",
+      "family": "eu_scope",
+      "label": "Assess marriage, adoption or family-status recognition in context",
+      "triggers_any": [
+        "family",
+        "marriage"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5a-topology-applicability.md"
+    },
+    {
+      "check_id": "eu_scope.third_state_context",
+      "family": "eu_scope",
+      "label": "Check applicant-country context without redefining EU hierarchy",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5a-topology-applicability.md"
+    },
+    {
+      "check_id": "hierarchy.direct_effect",
+      "family": "hierarchy",
+      "label": "Review direct effect only where relevant provision meets conditions",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5b-hierarchy-principles.md"
+    },
+    {
+      "check_id": "hierarchy.primacy",
+      "family": "hierarchy",
+      "label": "Assess established EU-national law conflict",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5b-hierarchy-principles.md"
+    },
+    {
+      "check_id": "hierarchy.lex_specialis",
+      "family": "hierarchy",
+      "label": "Apply special rule against general rule where supported",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5b-hierarchy-principles.md"
+    },
+    {
+      "check_id": "hierarchy.disapplication",
+      "family": "hierarchy",
+      "label": "Review consequences of conflicting national rules",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5b-hierarchy-principles.md"
+    },
+    {
+      "check_id": "hierarchy.consistent_interpretation",
+      "family": "hierarchy",
+      "label": "Check scope and limits of conforming interpretation",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5b-hierarchy-principles.md"
+    },
+    {
+      "check_id": "hierarchy.equivalence",
+      "family": "hierarchy",
+      "label": "Compare procedural treatment to domestic analogue",
+      "triggers_any": [
+        "complaint",
+        "review"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5b-hierarchy-principles.md"
+    },
+    {
+      "check_id": "hierarchy.effectiveness",
+      "family": "hierarchy",
+      "label": "Assess excessive difficulty in exercising EU rights",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5b-hierarchy-principles.md"
+    },
+    {
+      "check_id": "hierarchy.more_favourable_rules",
+      "family": "hierarchy",
+      "label": "Check more-favourable national or EU provisions",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5b-hierarchy-principles.md"
+    },
+    {
+      "check_id": "hierarchy.legal_certainty",
+      "family": "hierarchy",
+      "label": "Consider certainty and predictability of administrative conditions",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5b-hierarchy-principles.md"
+    },
+    {
+      "check_id": "hierarchy.legitimate_expectations",
+      "family": "hierarchy",
+      "label": "Test conditions for reliance on authority representations",
+      "triggers_any": [
+        "disclosure",
+        "authority"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5b-hierarchy-principles.md"
+    },
+    {
+      "check_id": "soft_law.commission_guidance",
+      "family": "soft_law",
+      "label": "Identify relevant Commission 2004/38 guidance",
+      "triggers_any": [
+        "family"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5b-hierarchy-principles.md"
+    },
+    {
+      "check_id": "soft_law.visa_handbook",
+      "family": "soft_law",
+      "label": "Identify and check relevant Visa Code Handbook section",
+      "triggers_any": [
+        "visa"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5b-hierarchy-principles.md"
+    },
+    {
+      "check_id": "soft_law.operational_handbook",
+      "family": "soft_law",
+      "label": "Consider relevant border-guard or consular manuals",
+      "triggers_any": [
+        "visa",
+        "border"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5b-hierarchy-principles.md"
+    },
+    {
+      "check_id": "soft_law.national_guidance",
+      "family": "soft_law",
+      "label": "Check relevant official national guidelines",
+      "triggers_any": [
+        "country"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5b-hierarchy-principles.md"
+    },
+    {
+      "check_id": "soft_law.administrative_practice",
+      "family": "soft_law",
+      "label": "Compare published guidance with actual administrative practice",
+      "triggers_any": [
+        "authority"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5b-hierarchy-principles.md"
+    },
+    {
+      "check_id": "soft_law.grimaldi",
+      "family": "soft_law",
+      "label": "Consider judicial treatment of relevant recommendations",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5b-hierarchy-principles.md"
+    },
+    {
+      "check_id": "soft_law.binding_force",
+      "family": "soft_law",
+      "label": "Separate binding legal rule from interpretive guidance",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5b-hierarchy-principles.md"
+    },
+    {
+      "check_id": "soft_law.guidance_conflicts",
+      "family": "soft_law",
+      "label": "Review conflicts between handbook and binding text",
+      "triggers_any": [
+        "soft_law",
+        "visa"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5b-hierarchy-principles.md"
+    },
+    {
+      "check_id": "soft_law.official_explanation",
+      "family": "soft_law",
+      "label": "Distinguish webpage guidance from formal law",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5b-hierarchy-principles.md"
+    },
+    {
+      "check_id": "soft_law.unexplained_departure",
+      "family": "soft_law",
+      "label": "Assess legal significance of departure from guidance",
+      "triggers_any": [
+        "authority"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5b-hierarchy-principles.md"
+    },
+    {
+      "check_id": "soft_law.historic_version",
+      "family": "soft_law",
+      "label": "Check guidance version and applicability dates",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5b-hierarchy-principles.md"
+    },
+    {
+      "check_id": "fundamental_rights.charter_scope",
+      "family": "fundamental_rights",
+      "label": "Establish scope of EU law before Charter reliance",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c16/eu-principles-review.md"
+    },
+    {
+      "check_id": "fundamental_rights.article41_boundary",
+      "family": "fundamental_rights",
+      "label": "Avoid direct Article 41 claim against member state as EU institution",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c16/eu-principles-review.md"
+    },
+    {
+      "check_id": "fundamental_rights.good_administration",
+      "family": "fundamental_rights",
+      "label": "Consider general-principle good administration",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c16/eu-principles-review.md"
+    },
+    {
+      "check_id": "fundamental_rights.family_life",
+      "family": "fundamental_rights",
+      "label": "Assess family/private-life interference where relevant",
+      "triggers_any": [
+        "family"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c16/eu-principles-review.md"
+    },
+    {
+      "check_id": "fundamental_rights.non_discrimination",
+      "family": "fundamental_rights",
+      "label": "Consider nationality and comparable-case treatment",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c16/eu-principles-review.md"
+    },
+    {
+      "check_id": "fundamental_rights.privacy",
+      "family": "fundamental_rights",
+      "label": "Consider Article 7 privacy and family life",
+      "triggers_any": [
+        "disclosure",
+        "issue"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c16/eu-principles-review.md"
+    },
+    {
+      "check_id": "fundamental_rights.data_protection",
+      "family": "fundamental_rights",
+      "label": "Consider Article 8 data protection within scope",
+      "triggers_any": [
+        "disclosure"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c16/eu-principles-review.md"
+    },
+    {
+      "check_id": "fundamental_rights.effective_remedy",
+      "family": "fundamental_rights",
+      "label": "Consider Article 47 and available effective review",
+      "triggers_any": [
+        "review",
+        "complaint"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c16/eu-principles-review.md"
+    },
+    {
+      "check_id": "fundamental_rights.hearing_defence",
+      "family": "fundamental_rights",
+      "label": "Review right to be heard and procedural safeguards",
+      "triggers_any": [
+        "decision",
+        "interview"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c16/eu-principles-review.md"
+    },
+    {
+      "check_id": "fundamental_rights.proportionality",
+      "family": "fundamental_rights",
+      "label": "Assess suitability, necessity and balancing",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c16/eu-principles-review.md"
+    },
+    {
+      "check_id": "fundamental_rights.reasoned_decision",
+      "family": "fundamental_rights",
+      "label": "Assess entitlement to reasons when legally required",
+      "triggers_any": [
+        "decision"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c16/eu-principles-review.md"
+    },
+    {
+      "check_id": "proof.burden_of_proof",
+      "family": "proof",
+      "label": "Identify relevant burden and required evidentiary standard",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5c-evidence-deadlines-authority.md"
+    },
+    {
+      "check_id": "proof.proof_freedom",
+      "family": "proof",
+      "label": "Consider open-proof doctrine where applicable",
+      "triggers_any": [
+        "document"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5c-evidence-deadlines-authority.md"
+    },
+    {
+      "check_id": "proof.document_authenticity",
+      "family": "proof",
+      "label": "Separate legitimate verification from arbitrary format rule",
+      "triggers_any": [
+        "document"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5c-evidence-deadlines-authority.md"
+    },
+    {
+      "check_id": "proof.contrary_evidence",
+      "family": "proof",
+      "label": "Identify alternative accounts and weaknesses",
+      "triggers_any": [
+        "issue"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5c-evidence-deadlines-authority.md"
+    },
+    {
+      "check_id": "proof.source_vs_fact",
+      "family": "proof",
+      "label": "Distinguish source proposition from evidence proving case fact",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5c-evidence-deadlines-authority.md"
+    },
+    {
+      "check_id": "proof.copy_status",
+      "family": "proof",
+      "label": "Record whether document was shown, submitted, or retained",
+      "triggers_any": [
+        "document"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5c-evidence-deadlines-authority.md"
+    },
+    {
+      "check_id": "proof.national_evidence_rules",
+      "family": "proof",
+      "label": "Check national evidence procedure and exceptions",
+      "triggers_any": [
+        "country"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5c-evidence-deadlines-authority.md"
+    },
+    {
+      "check_id": "proof.unexamined_records",
+      "family": "proof",
+      "label": "List missing evidence controlled by authority",
+      "triggers_any": [
+        "issue"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5c-evidence-deadlines-authority.md"
+    },
+    {
+      "check_id": "proof.unverified_assertion",
+      "family": "proof",
+      "label": "Separate allegations from documents and formal findings",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5c-evidence-deadlines-authority.md"
+    },
+    {
+      "check_id": "access.appointment_wait",
+      "family": "access",
+      "label": "Check appointment availability and facilitation",
+      "triggers_any": [
+        "appointment"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "access.direct_access",
+      "family": "access",
+      "label": "Check direct consular access and VAC arrangements",
+      "triggers_any": [
+        "visa",
+        "appointment"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "access.digital_only",
+      "family": "access",
+      "label": "Check mandatory online form and effective alternatives",
+      "triggers_any": [
+        "lodgement"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "access.receipts",
+      "family": "access",
+      "label": "Check entitlement to acknowledgement of filing",
+      "triggers_any": [
+        "lodgement"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "access.refusal_to_lodge",
+      "family": "access",
+      "label": "Distinguish refusal to receive from refusal after examination",
+      "triggers_any": [
+        "lodgement"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "access.territorial_competence",
+      "family": "access",
+      "label": "Assess consular lawful-presence vs substantive entitlement",
+      "triggers_any": [
+        "visa"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "access.fee_waiver",
+      "family": "access",
+      "label": "Examine visa-fee waiver within correct regime",
+      "triggers_any": [
+        "visa"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "access.outsourcing_fees",
+      "family": "access",
+      "label": "Distinguish optional service fee from visa fee",
+      "triggers_any": [
+        "visa"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "access.representation",
+      "family": "access",
+      "label": "Consider accompaniment, representation and procedural assistance",
+      "triggers_any": [
+        "appointment",
+        "lodgement"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "access.cross_border_admission",
+      "family": "access",
+      "label": "Consider conditions imposed at border crossing",
+      "triggers_any": [
+        "border"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "access.service_provider_accountability",
+      "family": "access",
+      "label": "Identify member-state responsibility when outsourced",
+      "triggers_any": [
+        "visa"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c23-applicant-case-guidance.md"
+    },
+    {
+      "check_id": "conduct.staff_treatment",
+      "family": "conduct",
+      "label": "Assess separate misconduct or discourtesy grievance",
+      "triggers_any": [
+        "issue"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "conduct.physical_exclusion",
+      "family": "conduct",
+      "label": "Consider proportionality and documentation of removal",
+      "triggers_any": [
+        "issue"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "conduct.non_response",
+      "family": "conduct",
+      "label": "Track ignored correspondence separately from decision merits",
+      "triggers_any": [
+        "authority"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "conduct.complaint_channel",
+      "family": "conduct",
+      "label": "Check required staff-conduct complaint mechanism",
+      "triggers_any": [
+        "complaint"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "conduct.reporting_conflict",
+      "family": "conduct",
+      "label": "Avoid equating disputed staff allegations with proven offences",
+      "triggers_any": [
+        "issue"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "conduct.evidence_loss",
+      "family": "conduct",
+      "label": "Consider fast preservation of incident footage",
+      "triggers_any": [
+        "issue"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "conduct.independent_outcomes",
+      "family": "conduct",
+      "label": "Keep conduct remedies independent of application success",
+      "triggers_any": [
+        "issue"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "privacy.authority_data_need",
+      "family": "privacy",
+      "label": "Question excessive authority data collection",
+      "triggers_any": [
+        "document",
+        "disclosure"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c21-privacy-and-anonymisation.md"
+    },
+    {
+      "check_id": "privacy.authority_purpose",
+      "family": "privacy",
+      "label": "Identify distinct purposes of requested personal data",
+      "triggers_any": [
+        "document"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c21-privacy-and-anonymisation.md"
+    },
+    {
+      "check_id": "privacy.authority_retention",
+      "family": "privacy",
+      "label": "Review retention and deletion controls as applicable",
+      "triggers_any": [
+        "disclosure"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c21-privacy-and-anonymisation.md"
+    },
+    {
+      "check_id": "privacy.applicant_minimisation",
+      "family": "privacy",
+      "label": "Identify unnecessary applicant disclosures",
+      "triggers_any": [
+        "disclosure"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c21-privacy-and-anonymisation.md"
+    },
+    {
+      "check_id": "privacy.recipient_minimisation",
+      "family": "privacy",
+      "label": "Apply distinct disclosure scope to each recipient",
+      "triggers_any": [
+        "disclosure"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c21-privacy-and-anonymisation.md"
+    },
+    {
+      "check_id": "privacy.chat_data_minimisation",
+      "family": "privacy",
+      "label": "Avoid unnecessary personal data in analysis or tools",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c21-privacy-and-anonymisation.md"
+    },
+    {
+      "check_id": "privacy.publication_linkability",
+      "family": "privacy",
+      "label": "Consider cumulative linkability across case stories",
+      "triggers_any": [
+        "disclosure"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c21-privacy-and-anonymisation.md"
+    },
+    {
+      "check_id": "privacy.anonymisation_assurance",
+      "family": "privacy",
+      "label": "Do not assert effective anonymity without validation",
+      "triggers_any": [
+        "disclosure"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c21-privacy-and-anonymisation.md"
+    },
+    {
+      "check_id": "privacy.synthetic_gate_limit",
+      "family": "privacy",
+      "label": "Distinguish synthetic privacy demo from real-case protection",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c21-privacy-and-anonymisation.md"
+    },
+    {
+      "check_id": "privacy.approval_recipient",
+      "family": "privacy",
+      "label": "Ensure sending approvals are recipient and content bound",
+      "triggers_any": [
+        "disclosure"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c21-privacy-and-anonymisation.md"
+    },
+    {
+      "check_id": "privacy.public_search_leak",
+      "family": "privacy",
+      "label": "Prevent names and dossier fragments in public web queries",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c21-privacy-and-anonymisation.md"
+    },
+    {
+      "check_id": "gdpr.lawful_basis",
+      "family": "gdpr",
+      "label": "Review lawful basis for targeted processing",
+      "triggers_any": [
+        "disclosure",
+        "document"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-evidence-acquisition.md"
+    },
+    {
+      "check_id": "gdpr.purpose_limitation",
+      "family": "gdpr",
+      "label": "Assess purpose compatibility and limitation",
+      "triggers_any": [
+        "disclosure",
+        "document"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-evidence-acquisition.md"
+    },
+    {
+      "check_id": "gdpr.data_minimisation",
+      "family": "gdpr",
+      "label": "Consider GDPR Article 5 minimisation in official demands",
+      "triggers_any": [
+        "document"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-evidence-acquisition.md"
+    },
+    {
+      "check_id": "gdpr.article15_scope",
+      "family": "gdpr",
+      "label": "Consider access to personal data not every entire record",
+      "triggers_any": [
+        "issue",
+        "disclosure"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-evidence-acquisition.md"
+    },
+    {
+      "check_id": "gdpr.case_notes",
+      "family": "gdpr",
+      "label": "Identify personal data in case notes and appointments",
+      "triggers_any": [
+        "issue"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-evidence-acquisition.md"
+    },
+    {
+      "check_id": "gdpr.access_metadata",
+      "family": "gdpr",
+      "label": "Consider metadata about accesses where available",
+      "triggers_any": [
+        "issue"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-evidence-acquisition.md"
+    },
+    {
+      "check_id": "gdpr.preservation_request",
+      "family": "gdpr",
+      "label": "Separate urgent preservation request from Article 15 access",
+      "triggers_any": [
+        "issue"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-evidence-acquisition.md"
+    },
+    {
+      "check_id": "gdpr.cctv",
+      "family": "gdpr",
+      "label": "Assess footage and incident records where relevant",
+      "triggers_any": [
+        "issue"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-evidence-acquisition.md"
+    },
+    {
+      "check_id": "gdpr.file_access",
+      "family": "gdpr",
+      "label": "Separate national administrative file access from GDPR",
+      "triggers_any": [
+        "issue"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-evidence-acquisition.md"
+    },
+    {
+      "check_id": "gdpr.controller_identity",
+      "family": "gdpr",
+      "label": "Verify controller and relevant exceptions",
+      "triggers_any": [
+        "issue"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-evidence-acquisition.md"
+    },
+    {
+      "check_id": "gdpr.article18_limits",
+      "family": "gdpr",
+      "label": "Avoid claiming Article 18 automatically freezes all records",
+      "triggers_any": [
+        "issue"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-evidence-acquisition.md"
+    },
+    {
+      "check_id": "gdpr.retention_obligations",
+      "family": "gdpr",
+      "label": "Check deletion schedule and preservation practicalities",
+      "triggers_any": [
+        "issue"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-evidence-acquisition.md"
+    },
+    {
+      "check_id": "strategy.objective_first",
+      "family": "strategy",
+      "label": "Ground tactics in applicant objective and procedural state",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5e-suggestion-generation.md"
+    },
+    {
+      "check_id": "strategy.already_sent",
+      "family": "strategy",
+      "label": "Review what applicant has already disclosed",
+      "triggers_any": [
+        "disclosure"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5e-suggestion-generation.md"
+    },
+    {
+      "check_id": "strategy.prior_strategy",
+      "family": "strategy",
+      "label": "Identify tactics already communicated and their effects",
+      "triggers_any": [
+        "disclosure",
+        "strategy"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5e-suggestion-generation.md"
+    },
+    {
+      "check_id": "strategy.known_precedent",
+      "family": "strategy",
+      "label": "Search recorded analogous case strategies with outcome evidence",
+      "triggers_any": [
+        "strategy"
+      ],
+      "capability": "not_implemented",
+      "reference": "references/c5e-suggestion-generation.md"
+    },
+    {
+      "check_id": "strategy.request_clarification",
+      "family": "strategy",
+      "label": "Compare targeted clarification with adversarial escalation",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5e-suggestion-generation.md"
+    },
+    {
+      "check_id": "strategy.direct_cooperation",
+      "family": "strategy",
+      "label": "Consider straightforward lawful compliance and cooperation",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5e-suggestion-generation.md"
+    },
+    {
+      "check_id": "strategy.preservation_first",
+      "family": "strategy",
+      "label": "Protect expiring evidence and appeal periods",
+      "triggers_any": [
+        "issue",
+        "deadline"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5e-suggestion-generation.md"
+    },
+    {
+      "check_id": "strategy.evidence_producing",
+      "family": "strategy",
+      "label": "Prefer actions that establish contemporaneous grounds",
+      "triggers_any": [
+        "strategy"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5e-suggestion-generation.md"
+    },
+    {
+      "check_id": "strategy.no_action",
+      "family": "strategy",
+      "label": "Evaluate waiting/no action and waiver consequences",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5e-suggestion-generation.md"
+    },
+    {
+      "check_id": "strategy.escalation_sequencing",
+      "family": "strategy",
+      "label": "Assess if proposed escalation is timely and competent",
+      "triggers_any": [
+        "complaint"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5e-suggestion-generation.md"
+    },
+    {
+      "check_id": "strategy.parallel_remedies",
+      "family": "strategy",
+      "label": "Check parallelism conflicts and available remedies",
+      "triggers_any": [
+        "complaint",
+        "review"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5e-suggestion-generation.md"
+    },
+    {
+      "check_id": "strategy.communication_scope",
+      "family": "strategy",
+      "label": "Avoid unnecessarily revealing contingency defenses",
+      "triggers_any": [
+        "disclosure",
+        "authority"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5e-suggestion-generation.md"
+    },
+    {
+      "check_id": "strategy.post_action_revision",
+      "family": "strategy",
+      "label": "Revisit recommendations after new authority response",
+      "triggers_any": [
+        "authority"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5e-suggestion-generation.md"
+    },
+    {
+      "check_id": "strategy.historical_outcome",
+      "family": "strategy",
+      "label": "Distinguish reported outcome from validated success",
+      "triggers_any": [
+        "strategy"
+      ],
+      "capability": "not_implemented",
+      "reference": "references/c5e-suggestion-generation.md"
+    },
+    {
+      "check_id": "stratagems.adapted_36",
+      "family": "stratagems",
+      "label": "Screen adapted 36 candidates only after legal analysis",
+      "triggers_any": [
+        "strategy"
+      ],
+      "capability": "synthetic_only",
+      "reference": "references/c5e-suggestion-generation.md"
+    },
+    {
+      "check_id": "stratagems.reference_36",
+      "family": "stratagems",
+      "label": "Treat original stratagem names only as heuristics",
+      "triggers_any": [
+        "strategy"
+      ],
+      "capability": "synthetic_only",
+      "reference": "references/c5e-suggestion-generation.md"
+    },
+    {
+      "check_id": "stratagems.prerequisite_truth",
+      "family": "stratagems",
+      "label": "Reject candidates needing fabricated facts or false submissions",
+      "triggers_any": [
+        "strategy"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5e-suggestion-generation.md"
+    },
+    {
+      "check_id": "stratagems.duty_to_disclose",
+      "family": "stratagems",
+      "label": "Resolve any affirmative disclosure duty",
+      "triggers_any": [
+        "disclosure",
+        "strategy"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5e-suggestion-generation.md"
+    },
+    {
+      "check_id": "stratagems.inaction_waiver",
+      "family": "stratagems",
+      "label": "Protect deadlines and waiver risks in delay tactics",
+      "triggers_any": [
+        "strategy"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5e-suggestion-generation.md"
+    },
+    {
+      "check_id": "stratagems.reversibility",
+      "family": "stratagems",
+      "label": "Compare reversibility, disclosure and option preservation",
+      "triggers_any": [
+        "strategy"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5e-suggestion-generation.md"
+    },
+    {
+      "check_id": "stratagems.combined_tactics",
+      "family": "stratagems",
+      "label": "Consider lawful combinations without inferring endorsement",
+      "triggers_any": [
+        "strategy"
+      ],
+      "capability": "synthetic_only",
+      "reference": "references/c5e-suggestion-generation.md"
+    },
+    {
+      "check_id": "stratagems.non_stratagem_baselines",
+      "family": "stratagems",
+      "label": "Include compliance, cooperation, clarification and waiting",
+      "triggers_any": [
+        "strategy"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5e-suggestion-generation.md"
+    },
+    {
+      "check_id": "remedies.formal_appeal",
+      "family": "remedies",
+      "label": "Determine available formal appeal and service rule",
+      "triggers_any": [
+        "decision",
+        "review"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "remedies.reconsideration",
+      "family": "remedies",
+      "label": "Consider reconsideration distinct from appeal",
+      "triggers_any": [
+        "decision"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "remedies.interim_protection",
+      "family": "remedies",
+      "label": "Examine interim relief where delay risks irreversible harm",
+      "triggers_any": [
+        "review"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "remedies.administrative_complaint",
+      "family": "remedies",
+      "label": "Assess process complaint and permitted relief",
+      "triggers_any": [
+        "complaint"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "remedies.conduct_supervision",
+      "family": "remedies",
+      "label": "Identify conduct review and disciplinary limits",
+      "triggers_any": [
+        "complaint",
+        "issue"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "remedies.gdpr_supervision",
+      "family": "remedies",
+      "label": "Identify DPA route separately from data access",
+      "triggers_any": [
+        "disclosure",
+        "complaint"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "remedies.solvit",
+      "family": "remedies",
+      "label": "Assess SOLVIT mandate and inability to suspend deadlines",
+      "triggers_any": [
+        "complaint"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "remedies.commission",
+      "family": "remedies",
+      "label": "Assess Commission complaint and systemic versus individual aims",
+      "triggers_any": [
+        "complaint"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "remedies.ombudsman",
+      "family": "remedies",
+      "label": "Check correct institution and jurisdiction of ombudsman",
+      "triggers_any": [
+        "complaint"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "remedies.national_file_request",
+      "family": "remedies",
+      "label": "Check file inspection and FOI routes",
+      "triggers_any": [
+        "issue"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "remedies.remedy_compatibility",
+      "family": "remedies",
+      "label": "Check parallel remedies and deadlines",
+      "triggers_any": [
+        "review",
+        "complaint"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "remedies.competent_authority",
+      "family": "remedies",
+      "label": "Check power to grant exact relief",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "sources.official_publisher",
+      "family": "sources",
+      "label": "Identify official publisher and exact text",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/source-substrate.md"
+    },
+    {
+      "check_id": "sources.source_currentness",
+      "family": "sources",
+      "label": "Distinguish bundled snapshot from checked current source",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/source-substrate.md"
+    },
+    {
+      "check_id": "sources.pinpoint",
+      "family": "sources",
+      "label": "Ensure full text actually supports citation/pinpoint",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/source-substrate.md"
+    },
+    {
+      "check_id": "sources.binding_classification",
+      "family": "sources",
+      "label": "Distinguish legislation, judgments, guidance and summaries",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/source-substrate.md"
+    },
+    {
+      "check_id": "sources.country_coverage",
+      "family": "sources",
+      "label": "Report relevant unavailable jurisdictional sources",
+      "triggers_any": [
+        "country"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/source-substrate.md"
+    },
+    {
+      "check_id": "sources.mirror_status",
+      "family": "sources",
+      "label": "Do not equate installed GitHub parity with legal correctness",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/source-substrate.md"
+    },
+    {
+      "check_id": "sources.case_law_followup",
+      "family": "sources",
+      "label": "Consider later treatment of relevant judgments",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/source-substrate.md"
+    },
+    {
+      "check_id": "sources.contrary_authority",
+      "family": "sources",
+      "label": "Search for contrary or distinguishing case law",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/source-substrate.md"
+    },
+    {
+      "check_id": "sources.national_precedent",
+      "family": "sources",
+      "label": "Check national high-court authority where material",
+      "triggers_any": [
+        "country"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/source-substrate.md"
+    },
+    {
+      "check_id": "sources.source_gap",
+      "family": "sources",
+      "label": "Expose missing sources rather than inventing rules",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/source-substrate.md"
+    },
+    {
+      "check_id": "country.member_state_module",
+      "family": "country",
+      "label": "Check matching Member-State implementation module available",
+      "triggers_any": [
+        "country"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5a-topology-applicability.md"
+    },
+    {
+      "check_id": "country.applicant_country_module",
+      "family": "country",
+      "label": "Check origin-country documentation and mission context",
+      "triggers_any": [
+        "country"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5a-topology-applicability.md"
+    },
+    {
+      "check_id": "country.multiple_jurisdictions",
+      "family": "country",
+      "label": "Support facts involving more than one Member State",
+      "triggers_any": [
+        "country"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5a-topology-applicability.md"
+    },
+    {
+      "check_id": "country.national_extension",
+      "family": "country",
+      "label": "Assess domestic equal treatment/returnee provisions",
+      "triggers_any": [
+        "country"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5a-topology-applicability.md"
+    },
+    {
+      "check_id": "country.status_recognition",
+      "family": "country",
+      "label": "Check validity and recognition of marriage/adoption/divorce",
+      "triggers_any": [
+        "family",
+        "country"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5a-topology-applicability.md"
+    },
+    {
+      "check_id": "country.diplomatic_missions",
+      "family": "country",
+      "label": "Check law governing diplomatic mission operations and procedures",
+      "triggers_any": [
+        "visa",
+        "country"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5a-topology-applicability.md"
+    },
+    {
+      "check_id": "country.translations_local",
+      "family": "country",
+      "label": "Check national translation and authentication requirements",
+      "triggers_any": [
+        "document",
+        "country"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5a-topology-applicability.md"
+    },
+    {
+      "check_id": "country.national_remedies",
+      "family": "country",
+      "label": "Verify domestic procedure and oversight competence",
+      "triggers_any": [
+        "complaint",
+        "country"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5a-topology-applicability.md"
+    },
+    {
+      "check_id": "country.source_pack_candidate",
+      "family": "country",
+      "label": "Do not elevate candidate-only source packs to verified national law",
+      "triggers_any": [
+        "country"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c5a-topology-applicability.md"
+    },
+    {
+      "check_id": "fraud_abuse.individualized_basis",
+      "family": "fraud_abuse",
+      "label": "Identify specific indications invoked for fraud suspicion",
+      "triggers_any": [
+        "fraud"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c16/eu-principles-review.md"
+    },
+    {
+      "check_id": "fraud_abuse.interview_reason",
+      "family": "fraud_abuse",
+      "label": "Assess purpose and individualized justification of interview",
+      "triggers_any": [
+        "interview",
+        "fraud"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c16/eu-principles-review.md"
+    },
+    {
+      "check_id": "fraud_abuse.hearing",
+      "family": "fraud_abuse",
+      "label": "Check opportunity to be heard or respond",
+      "triggers_any": [
+        "fraud",
+        "interview"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c16/eu-principles-review.md"
+    },
+    {
+      "check_id": "fraud_abuse.proportionality_measures",
+      "family": "fraud_abuse",
+      "label": "Consider necessity of intrusive investigation",
+      "triggers_any": [
+        "fraud"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c16/eu-principles-review.md"
+    },
+    {
+      "check_id": "fraud_abuse.confidentiality",
+      "family": "fraud_abuse",
+      "label": "Consider third-party data and privacy in investigation",
+      "triggers_any": [
+        "fraud"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c16/eu-principles-review.md"
+    },
+    {
+      "check_id": "fraud_abuse.no_presumption",
+      "family": "fraud_abuse",
+      "label": "Do not treat interview itself as evidence of fraud",
+      "triggers_any": [
+        "interview"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c16/eu-principles-review.md"
+    },
+    {
+      "check_id": "fraud_abuse.authority_records",
+      "family": "fraud_abuse",
+      "label": "Preserve contemporaneous reasoning about investigation",
+      "triggers_any": [
+        "fraud"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c16/eu-principles-review.md"
+    },
+    {
+      "check_id": "novelty.reported_event_coverage",
+      "family": "novelty",
+      "label": "Every adverse act has its own disposition",
+      "triggers_any": [
+        "issue"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "novelty.independent_grievances",
+      "family": "novelty",
+      "label": "Preserve separate rights and conduct tracks",
+      "triggers_any": [
+        "issue"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "novelty.unknown_attack_angle",
+      "family": "novelty",
+      "label": "Look for uncatalogued procedure or legal issue",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "novelty.uncatalogued_strategy",
+      "family": "novelty",
+      "label": "Record novel approach as unverified candidate",
+      "triggers_any": [
+        "strategy"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "novelty.negative_conclusion_guard",
+      "family": "novelty",
+      "label": "Never infer no problem from unchecked issue",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "novelty.relevant_check_omission",
+      "family": "novelty",
+      "label": "List material checks not performed in the answer",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "novelty.capability_gap",
+      "family": "novelty",
+      "label": "Mark synthetic-only or unavailable engines explicitly",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "novelty.revision_impact",
+      "family": "novelty",
+      "label": "Identify earlier advice invalidated by changed case facts",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "novelty.proactive_disclosure_risk",
+      "family": "novelty",
+      "label": "Review consequences before introducing new facts to authority",
+      "triggers_any": [
+        "disclosure"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    },
+    {
+      "check_id": "novelty.check_execution_trace",
+      "family": "novelty",
+      "label": "Distinguish model assessment from actual script execution",
+      "triggers_any": [
+        "always"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/c25-applicant-strategy.md"
+    }
+  ]
+}

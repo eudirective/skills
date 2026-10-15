@@ -1,0 +1,101 @@
+{
+  "schema": "c27-abstract-session/0.1.0",
+  "mode": "fictional_fixture",
+  "case_ref": "C1",
+  "events": [
+    {
+      "event_id": "E1",
+      "proceeding_id": "P1",
+      "kind": "proceeding_opened",
+      "source": "user_reported",
+      "procedure_type": "eu_family_entry_visa",
+      "claimed_regime": "directive_2004_38",
+      "authority_role": "consulate"
+    },
+    {
+      "event_id": "E2",
+      "proceeding_id": "P1",
+      "kind": "procedural_step",
+      "source": "user_reported",
+      "step": "appointment_requested"
+    },
+    {
+      "event_id": "E3",
+      "proceeding_id": "P1",
+      "kind": "disclosure",
+      "source": "user_reported",
+      "disclosure_id": "I1",
+      "topic": "residence_status",
+      "operation": "sent",
+      "channel": "email",
+      "recipient_id": "A1"
+    },
+    {
+      "event_id": "E4",
+      "proceeding_id": "P1",
+      "kind": "disclosure_observation",
+      "source": "document_seen",
+      "disclosure_id": "I1",
+      "observation": "transport_delivered"
+    },
+    {
+      "event_id": "E5",
+      "proceeding_id": "P1",
+      "kind": "procedural_step",
+      "source": "user_reported",
+      "step": "appointment_attended"
+    },
+    {
+      "event_id": "E6",
+      "proceeding_id": "P1",
+      "kind": "procedural_step",
+      "source": "user_reported",
+      "step": "lodgement_disputed"
+    },
+    {
+      "event_id": "E7",
+      "proceeding_id": "P1",
+      "kind": "document_event",
+      "source": "user_reported",
+      "document_id": "D1",
+      "document_category": "marriage_record",
+      "operation": "shown",
+      "recipient_id": "A1"
+    },
+    {
+      "event_id": "E8",
+      "proceeding_id": "P2",
+      "kind": "proceeding_opened",
+      "source": "user_reported",
+      "procedure_type": "process_complaint",
+      "claimed_regime": "national_procedure",
+      "authority_role": "ministry",
+      "parent_proceeding_id": "P1"
+    },
+    {
+      "event_id": "E9",
+      "proceeding_id": "P2",
+      "kind": "procedural_step",
+      "source": "user_reported",
+      "step": "inquiry_sent"
+    }
+  ],
+  "responses": [
+    {
+      "response_id": "R1",
+      "through_event_id": "E7",
+      "checks": [
+        {
+          "check_id": "lifecycle.lodgement_disputed",
+          "proceeding_id": "P1",
+          "status": "assessed",
+          "method": "model_review",
+          "reason": "scope_reviewed",
+          "evidence_event_ids": [
+            "E6"
+          ]
+        }
+      ]
+    }
+  ]
+}
