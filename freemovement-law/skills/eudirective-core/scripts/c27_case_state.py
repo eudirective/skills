@@ -430,7 +430,7 @@ def load_registry(path=REGISTRY_PATH):
     return reg
 
 
-def build_proceedings(events):
+def build_proceedings(events, correction_aliases=None):
     """Replay corrected effective records, retaining independent historical facts.
 
     Incoming order is when the model learned about an event, not proof of the
@@ -443,6 +443,22 @@ def build_proceedings(events):
     issue_owners = {}
     deadline_owners = {}
     event_lookup = {}
+    aliases = correction_aliases or {}
+
+    def resolve_reference(ref, pid):
+        """Resolve a corrected prior event, flagging that its legal effect needs review."""
+        target = ref
+        seen = set()
+        corrected = False
+        while target not in event_lookup and target in aliases:
+            require(target not in seen, "dependency:correction_cycle")
+            seen.add(target)
+            target = aliases[target]
+            corrected = True
+        require(event_lookup.get(target) == pid,
+                "dependency:event_missing_or_other_proceeding")
+        return target, corrected
+
     for position, e in enumerate(events):
         pid = e["proceeding_id"]
         kind = e["kind"]
@@ -462,7 +478,7 @@ def build_proceedings(events):
                 "decision": "not_recorded", "notification": "not_recorded",
                 "documents": {}, "disclosures": {}, "authority_positions": [],
                 "deadlines": {}, "issues": {}, "event_ids": [], "timeline": [],
-                "flags": []
+                "flags": [], "unresolved_dependencies": []
             }
         require(pid in ordered, "proceeding:active_order")
         p = ordered[pid]
@@ -620,29 +636,51 @@ def build_proceedings(events):
                 require(disclosures_seen.get(related_disclosure) == pid,
                         "authority:related_disclosure_missing_in_proceeding")
             related_event = e.get("related_event_id")
+            resolved_related = None
+            related_corrected = False
             if related_event:
-                require(event_lookup.get(related_event) == pid,
-                        "authority:related_event_not_prior")
+                resolved_related, related_corrected = resolve_reference(
+                    related_event, pid)
+                if related_corrected:
+                    p["flags"].append("authority_position_source_corrected")
+                    p["unresolved_dependencies"].append({
+                        "event_id": e["event_id"], "reference": related_event,
+                        "corrected_to": resolved_related,
+                        "reason": "authority_position_requires_reassessment"})
             p["authority_positions"].append({
                 "issue": e["issue"], "stance": e["stance"],
                 "attribution": e["source"], "event_id": e["event_id"],
                 "related_disclosure_id": related_disclosure,
-                "related_event_id": related_event
+                "related_event_id": related_event,
+                "resolved_event_id": resolved_related,
+                "source_reference_corrected": related_corrected
             })
         elif kind == "deadline_event":
             did = e["deadline_id"]
             require(did not in deadline_owners or deadline_owners[did] == pid,
                     "deadline:cross_proceeding_id_reuse")
             deadline_owners[did] = pid
+            trigger_resolved = None
+            trigger_corrected = False
             if "trigger_event_id" in e:
-                require(e["trigger_event_id"] in event_lookup
-                        and event_lookup[e["trigger_event_id"]] == pid,
-                        "deadline:trigger_not_prior_event_in_same_proceeding")
+                trigger_resolved, trigger_corrected = resolve_reference(
+                    e["trigger_event_id"], pid)
+                if trigger_corrected:
+                    p["flags"].append("deadline_trigger_corrected")
+                    p["unresolved_dependencies"].append({
+                        "event_id": e["event_id"],
+                        "reference": e["trigger_event_id"],
+                        "corrected_to": trigger_resolved,
+                        "reason": "deadline_trigger_requires_reassessment"})
             p["deadlines"][did] = {
                 "deadline_id": did, "kind": e["deadline_type"],
-                "clock_status": e["clock_status"],
+                "clock_status": ("trigger_unconfirmed" if trigger_corrected
+                                 else e["clock_status"]),
+                "recorded_clock_status": e["clock_status"],
                 "rule_status": e["rule_status"],
                 "trigger_event_id": e.get("trigger_event_id"),
+                "resolved_trigger_event_id": trigger_resolved,
+                "trigger_reference_corrected": trigger_corrected,
                 "assurance": "self_reported_metadata_not_legal_calculation"
             }
         elif kind == "issue_event":
@@ -650,18 +688,30 @@ def build_proceedings(events):
             require(iid not in issue_owners or issue_owners[iid] == pid,
                     "issue:cross_proceeding_id_reuse")
             issue_owners[iid] = pid
+            issue_resolved = None
+            issue_corrected = False
             if "from_event_id" in e:
-                require(e["from_event_id"] in event_lookup
-                        and event_lookup[e["from_event_id"]] == pid,
-                        "issue:source_event_not_prior")
+                issue_resolved, issue_corrected = resolve_reference(
+                    e["from_event_id"], pid)
+                if issue_corrected:
+                    p["flags"].append("issue_source_corrected")
+                    p["unresolved_dependencies"].append({
+                        "event_id": e["event_id"],
+                        "reference": e["from_event_id"],
+                        "corrected_to": issue_resolved,
+                        "reason": "grievance_disposition_requires_reassessment"})
             prev = p["issues"].get(iid)
             require(prev is None or prev["category"] == e["issue_category"],
                     "issue:category_changed")
             p["issues"][iid] = {
                 "issue_id": iid, "category": e["issue_category"],
-                "disposition": e["disposition"],
+                "disposition": ("needs_fact" if issue_corrected
+                                else e["disposition"]),
+                "recorded_disposition": e["disposition"],
                 "exclusion_reason": e.get("exclusion_reason"),
                 "source_event_id": e.get("from_event_id"),
+                "resolved_source_event_id": issue_resolved,
+                "source_reference_corrected": issue_corrected,
                 "last_event_id": e["event_id"]
             }
         event_lookup[e["event_id"]] = pid
@@ -1020,7 +1070,11 @@ def evaluate(data, *, full=False, registry=None):
             and set(focus) <= VALID_TRIGGERS - {"always"},
             "case:invalid_requested_focus")
     active, all_ids, superseded = normalize_events(data)
-    proceedings = build_proceedings(active)
+    correction_aliases = {
+        e["target_event_id"]: e["replacement"]["event_id"]
+        for e in data["events"] if e["kind"] == "event_correction"
+    }
+    proceedings = build_proceedings(active, correction_aliases)
     records, responses = validate_responses(
         data, all_ids, superseded, proceedings, registry)
     coverage = make_coverage(
