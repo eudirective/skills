@@ -291,6 +291,8 @@ def validate_event(e, nested=False) -> None:
     elif kind == "disclosure_observation":
         opaque_id(e["disclosure_id"], "I", "disclosure_id")
         value_in(e["observation"], DISC_OBSERVATIONS, "disclosure_observation")
+        require(e["source"] != "model_inference",
+                "disclosure:observation_cannot_be_inferred")
         if e["observation"] in ("content_acknowledged", "content_relied_on"):
             require(e["source"] in ("document_seen", "authority_record_seen",
                                     "reported_authority_oral"),
@@ -485,7 +487,14 @@ def build_proceedings(events):
                     else:
                         p["flags"].append("receipt_does_not_establish_lodgement")
                         if p["lodgement"] == "not_established":
-                            p["lodgement"] = "receipt_purpose_unverified"
+                            p["lodgement"] = (
+                                "reported_not_documented"
+                                if e.get("receipt_kind") == "application_lodgement"
+                                and e.get("issuer_role") in (
+                                    "consulate", "migration_authority",
+                                    "border_authority")
+                                else "receipt_purpose_unverified"
+                            )
                         next_stage = "lodgement_reported"
                 elif step == "lodgement_confirmed":
                     formal = (
