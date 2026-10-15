@@ -110,6 +110,9 @@ RECORD_KINDS = frozenset(("formal_lodgement", "inquiry", "file_opened",
 SCOPE_EXCLUSIONS = frozenset(("procedure_outside_scope", "actor_outside_scope",
                               "irrelevant_stage", "no_material_event",
                               "legally_excluded_with_basis"))
+CORRECTION_REASONS = frozenset(("user_correction", "classification_revision",
+                                 "later_document", "provenance_reassessment",
+                                 "chronology_reassessment"))
 EXCLUSION_REASONS = frozenset(("lawful_scope_exclusion", "wrong_procedure",
                                 "disproved_report", "no_independent_grievance",
                                 "duplicate_issue", "other_explained"))
@@ -233,7 +236,7 @@ def validate_event(e, nested=False) -> None:
     is_correction = kind == "event_correction"
     require(is_correction or kind in EVENT_FIELDS, "event:invalid_kind")
     required, optional = (
-        ({"target_event_id", "replacement"}, set()) if is_correction
+        ({"target_event_id", "replacement"}, {"correction_reason"}) if is_correction
         else EVENT_FIELDS[kind]
     )
     object_keys(e, {"event_id", "proceeding_id", "kind", "source"} | required,
@@ -248,6 +251,9 @@ def validate_event(e, nested=False) -> None:
     if is_correction:
         require(not nested, "correction:nested")
         opaque_id(e["target_event_id"], "E", "correction_target")
+        if "correction_reason" in e:
+            value_in(e["correction_reason"], CORRECTION_REASONS,
+                     "correction:invalid_reason")
         require(e["source"] != "model_inference", "correction:inferred")
         validate_event(e["replacement"], nested=True)
         require(e["replacement"]["proceeding_id"] == e["proceeding_id"],
@@ -360,9 +366,11 @@ def normalize_events(data):
             require(original["proceeding_id"] == replacement["proceeding_id"]
                     and original["kind"] == replacement["kind"],
                     "correction:kind_or_proceeding_change_forbidden")
-            if original["kind"] == "proceeding_opened":
-                require(replacement["procedure_type"] == original["procedure_type"],
-                        "correction:procedure_type_requires_new_proceeding")
+            if original["kind"] == "proceeding_opened" and (
+                    replacement["procedure_type"] != original["procedure_type"]
+                    or replacement["claimed_regime"] != original["claimed_regime"]):
+                require(e.get("correction_reason") == "classification_revision",
+                        "correction:classification_revision_required")
             all_ids[rid] = pos
             superseded.add(target)
             at = index.pop(target)
@@ -1025,8 +1033,18 @@ def evaluate(data, *, full=False, registry=None):
             # No raw narratives exist, but default reports should still be compact.
             out.pop("event_ids", None)
         summarized.append(out)
+    correction_log = [
+        {"correction_event_id": e["event_id"],
+         "supersedes": e["target_event_id"],
+         "replacement_event_id": e["replacement"]["event_id"],
+         "reason": e.get("correction_reason", "unspecified"),
+         "recorded_revision": i + 1}
+        for i, e in enumerate(data["events"])
+        if e["kind"] == "event_correction"
+    ]
     return {
         "schema": OUTPUT_SCHEMA, "mode": data["mode"],
+        "correction_log": correction_log,
         "case_ref": data["case_ref"], "revision": len(data["events"]),
         "active_event_count": len(active),
         "corrections_applied": len(superseded),
