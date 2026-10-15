@@ -412,110 +412,197 @@ def load_registry(path=REGISTRY_PATH):
 
 
 def build_proceedings(events):
+    """Replay corrected effective records, retaining independent historical facts.
+
+    Incoming order is when the model learned about an event, not proof of the
+    date on which it occurred. Optional relative occurred_order is advisory;
+    no calendar date, service, legal deadline, or factual authenticity is inferred.
+    """
     ordered = {}
+    global_documents = {}
     disclosures_seen = {}
     issue_owners = {}
-    document_owners = {}
     deadline_owners = {}
     event_lookup = {}
-    for e in events:
+    for position, e in enumerate(events):
         pid = e["proceeding_id"]
         kind = e["kind"]
         if kind == "proceeding_opened":
             require(pid not in ordered, "proceeding:replay_duplicate_open")
+            if "parent_proceeding_id" in e:
+                require(e["parent_proceeding_id"] in ordered,
+                        "proceeding:parent_not_open")
             ordered[pid] = {
                 "proceeding_id": pid, "type": e["procedure_type"],
                 "claimed_regime": e["claimed_regime"],
                 "authority_role": e["authority_role"],
                 "parent_proceeding_id": e.get("parent_proceeding_id"),
-                "stage": "identified", "lodgement": "not_established",
+                "authority_classifications": [],
+                "stage": "identified", "stage_history": [], "steps": [],
+                "lodgement": "not_established",
                 "decision": "not_recorded", "notification": "not_recorded",
                 "documents": {}, "disclosures": {}, "authority_positions": [],
-                "deadlines": {}, "issues": {}, "event_ids": [],
+                "deadlines": {}, "issues": {}, "event_ids": [], "timeline": [],
                 "flags": []
             }
         require(pid in ordered, "proceeding:active_order")
         p = ordered[pid]
         p["event_ids"].append(e["event_id"])
+        p["timeline"].append({
+            "event_id": e["event_id"],
+            "kind": kind,
+            "recorded_order": position,
+            "occurred_order": e.get("occurred_order"),
+            "source": e["source"]
+        })
         if kind == "procedural_step":
             step = e["step"]
+            p["steps"].append(step)
             next_stage = STEP_STAGE[step]
+            event_status = "recorded"
             if e["source"] == "model_inference":
                 p["flags"].append("inference_not_procedural_evidence")
+                event_status = "unverified_inference"
             else:
-                if step in ("lodgement_confirmed", "receipt_issued"):
-                    if e["source"] in ("document_seen", "authority_record_seen"):
+                if step == "receipt_issued":
+                    formal = (
+                        e.get("receipt_kind") == "application_lodgement"
+                        and e.get("issuer_role") in (
+                            "consulate", "migration_authority", "border_authority")
+                        and e["source"] in ("document_seen", "authority_record_seen")
+                    )
+                    if formal:
                         p["lodgement"] = "documented"
                     else:
-                        p["lodgement"] = "reported_not_documented"
+                        p["flags"].append("receipt_does_not_establish_lodgement")
+                        if p["lodgement"] == "not_established":
+                            p["lodgement"] = "receipt_purpose_unverified"
                         next_stage = "lodgement_reported"
+                elif step == "lodgement_confirmed":
+                    formal = (
+                        e.get("record_kind") == "formal_lodgement"
+                        and e["source"] in ("document_seen", "authority_record_seen")
+                    )
+                    if formal:
+                        p["lodgement"] = "documented"
+                    else:
+                        if p["lodgement"] not in (
+                            "documented", "documented_but_disputed"):
+                            p["lodgement"] = "reported_not_documented"
+                        next_stage = "lodgement_reported"
+                        p["flags"].append("lodgement_confirmation_not_formally_documented")
                 elif step == "lodgement_reported":
-                    if p["lodgement"] != "documented":
+                    if p["lodgement"] not in ("documented", "documented_but_disputed"):
                         p["lodgement"] = "reported_not_documented"
                 elif step in ("lodgement_attempted", "lodgement_blocked"):
                     if p["lodgement"] == "not_established":
                         p["lodgement"] = "attempted_unconfirmed"
                 elif step == "lodgement_disputed":
-                    p["lodgement"] = "disputed"
+                    p["lodgement"] = (
+                        "documented_but_disputed"
+                        if p["lodgement"] in ("documented", "documented_but_disputed")
+                        else "disputed"
+                    )
                     p["flags"].append("lodgement_requires_resolution")
                 if step == "decision_taken":
-                    p["decision"] = ("document_seen" if e["source"] in (
-                        "document_seen", "authority_record_seen") else "reported")
+                    p["decision"] = (
+                        "document_seen" if e["source"] in (
+                            "document_seen", "authority_record_seen")
+                        else "reported"
+                    )
                 if step == "decision_notified":
-                    p["notification"] = ("record_seen_service_not_legally_verified"
+                    p["notification"] = (
+                        "record_seen_service_not_legally_verified"
                         if e["source"] in ("document_seen", "authority_record_seen")
-                        else "reported_notification")
+                        else "reported_notification"
+                    )
                     p["flags"].append("service_date_not_automatically_verified")
                 if step == "online_form_submitted":
                     p["flags"].append("online_form_does_not_prove_lodgement")
+                if step == "review_filed" and p["type"] not in (
+                    "visa_appeal", "administrative_appeal", "judicial_review",
+                    "process_complaint", "conduct_complaint", "supervisory_complaint"):
+                    p["flags"].append("review_should_be_separate_proceeding")
                 if (STAGE_RANK[next_stage] >= STAGE_RANK[p["stage"]]
                         or step == "reopened"):
                     p["stage"] = next_stage
+            p["stage_history"].append({
+                "event_id": e["event_id"], "step": step,
+                "mapped_stage": next_stage, "source": e["source"],
+                "record_status": event_status
+            })
+        elif kind == "authority_classification":
+            p["authority_classifications"].append({
+                "classified_as": e["classified_as"],
+                "source": e["source"], "event_id": e["event_id"]
+            })
         elif kind == "document_event":
             did = e["document_id"]
-            require(did not in document_owners or document_owners[did] == pid,
-                    "document:cross_proceeding_id_reuse")
-            document_owners[did] = pid
+            prior_category = global_documents.get(did)
+            require(prior_category is None or prior_category == e["document_category"],
+                    "document:category_changed_across_proceedings")
+            global_documents[did] = e["document_category"]
             doc = p["documents"].setdefault(
                 did, {"document_id": did, "category": e["document_category"],
                       "operations": []})
-            require(doc["category"] == e["document_category"],
-                    "document:category_changed")
             doc["operations"].append({
                 "action": e["operation"], "recipient_id": e["recipient_id"],
-                "source": e["source"], "event_id": e["event_id"]})
+                "source": e["source"], "event_id": e["event_id"],
+                "occurred_order": e.get("occurred_order")
+            })
         elif kind == "disclosure":
             did = e["disclosure_id"]
             require(did not in disclosures_seen, "disclosure:duplicate_id")
             for ref in e.get("document_ids", []):
-                require(ref in p["documents"], "disclosure:document_ref_missing")
+                require(ref in p["documents"],
+                        "disclosure:document_requires_proceeding_specific_operation")
             disclosures_seen[did] = pid
             p["disclosures"][did] = {
                 "disclosure_id": did, "topic": e["topic"],
                 "recipient_id": e["recipient_id"], "channel": e["channel"],
                 "operation": e["operation"], "source": e["source"],
                 "delivery_state": "sent_or_presented_unconfirmed",
-                "observations": [], "document_ids": e.get("document_ids", [])}
+                "transmission_delivered": False, "receipt_acknowledged": False,
+                "content_acknowledged": False, "content_relied_on": False,
+                "transmission_failed": False,
+                "observations": [], "document_ids": e.get("document_ids", []),
+                "event_id": e["event_id"],
+                "occurred_order": e.get("occurred_order")
+            }
         elif kind == "disclosure_observation":
             did = e["disclosure_id"]
-            require(disclosures_seen.get(did) == pid, "disclosure:observation_wrong_ref")
+            require(disclosures_seen.get(did) == pid,
+                    "disclosure:observation_wrong_ref")
             d = p["disclosures"][did]
-            new_state = {
-                "transport_delivered": "delivered_not_content_acknowledged",
-                "receipt_acknowledged": "receipt_acknowledged_not_content",
+            observation = e["observation"]
+            field = {
+                "transport_delivered": "transmission_delivered",
+                "receipt_acknowledged": "receipt_acknowledged",
                 "content_acknowledged": "content_acknowledged",
                 "content_relied_on": "content_relied_on",
-                "transmission_failed": "transmission_failed",
-            }[e["observation"]]
-            if e["observation"] == "transmission_failed" or d["delivery_state"] != "content_relied_on":
-                d["delivery_state"] = new_state
+                "transmission_failed": "transmission_failed"
+            }[observation]
+            d[field] = True
             d["observations"].append({
-                "observation": e["observation"], "source": e["source"],
-                "event_id": e["event_id"]})
+                "observation": observation, "source": e["source"],
+                "event_id": e["event_id"],
+                "occurred_order": e.get("occurred_order")
+            })
         elif kind == "authority_position":
+            related_disclosure = e.get("related_disclosure_id")
+            if related_disclosure:
+                require(disclosures_seen.get(related_disclosure) == pid,
+                        "authority:related_disclosure_missing_in_proceeding")
+            related_event = e.get("related_event_id")
+            if related_event:
+                require(event_lookup.get(related_event) == pid,
+                        "authority:related_event_not_prior")
             p["authority_positions"].append({
                 "issue": e["issue"], "stance": e["stance"],
-                "attribution": e["source"], "event_id": e["event_id"]})
+                "attribution": e["source"], "event_id": e["event_id"],
+                "related_disclosure_id": related_disclosure,
+                "related_event_id": related_event
+            })
         elif kind == "deadline_event":
             did = e["deadline_id"]
             require(did not in deadline_owners or deadline_owners[did] == pid,
@@ -530,7 +617,8 @@ def build_proceedings(events):
                 "clock_status": e["clock_status"],
                 "rule_status": e["rule_status"],
                 "trigger_event_id": e.get("trigger_event_id"),
-                "assurance": "self_reported_metadata_not_legal_calculation"}
+                "assurance": "self_reported_metadata_not_legal_calculation"
+            }
         elif kind == "issue_event":
             iid = e["issue_id"]
             require(iid not in issue_owners or issue_owners[iid] == pid,
@@ -546,19 +634,54 @@ def build_proceedings(events):
             p["issues"][iid] = {
                 "issue_id": iid, "category": e["issue_category"],
                 "disposition": e["disposition"],
+                "exclusion_reason": e.get("exclusion_reason"),
                 "source_event_id": e.get("from_event_id"),
-                "last_event_id": e["event_id"]}
+                "last_event_id": e["event_id"]
+            }
         event_lookup[e["event_id"]] = pid
     out = []
     for p in ordered.values():
+        for d in p["disclosures"].values():
+            if d["transmission_failed"] and (
+                d["transmission_delivered"] or d["receipt_acknowledged"]
+                or d["content_acknowledged"] or d["content_relied_on"]
+            ):
+                d["delivery_state"] = "conflicting_observations"
+                p["flags"].append("disclosure_transport_conflict")
+            elif d["content_relied_on"]:
+                d["delivery_state"] = "content_relied_on"
+            elif d["content_acknowledged"]:
+                d["delivery_state"] = "content_acknowledged"
+            elif d["receipt_acknowledged"]:
+                d["delivery_state"] = "receipt_acknowledged_not_content"
+            elif d["transmission_delivered"]:
+                d["delivery_state"] = "delivered_not_content_acknowledged"
+            elif d["transmission_failed"]:
+                d["delivery_state"] = "transmission_failed"
         if p["decision"] != "not_recorded" and p["notification"] == "not_recorded":
             p["flags"].append("decision_not_notification")
-        if p["lodgement"] in ("not_established", "attempted_unconfirmed",
-                               "reported_not_documented", "disputed"):
-            p["flags"].append("formal_lodgement_not_documented")
+        if p["lodgement"] != "documented":
+            p["flags"].append("formal_lodgement_not_unambiguously_documented")
         if any(x["delivery_state"] == "sent_or_presented_unconfirmed"
                for x in p["disclosures"].values()):
             p["flags"].append("disclosures_sent_no_receipt_evidence")
+        # Relative chronology is separate from the order evidence was supplied.
+        timeline = p["timeline"]
+        order_values = [x["occurred_order"] for x in timeline
+                        if x["occurred_order"] is not None]
+        p["chronology_assurance"] = (
+            "relative_order_partial" if len(order_values) < len(timeline)
+            else "relative_order_supplied_unverified"
+        )
+        if any(x["occurred_order"] is not None and
+               any(y["occurred_order"] is not None
+                   and y["occurred_order"] > x["occurred_order"]
+                   for y in timeline[:i])
+               for i, x in enumerate(timeline)):
+            p["flags"].append("later_disclosed_earlier_event")
+        p["timeline_by_relative_occurrence"] = sorted(
+            [x for x in timeline if x["occurred_order"] is not None],
+            key=lambda x: (x["occurred_order"], x["recorded_order"]))
         p["documents"] = list(p["documents"].values())
         p["disclosures"] = list(p["disclosures"].values())
         p["deadlines"] = list(p["deadlines"].values())
