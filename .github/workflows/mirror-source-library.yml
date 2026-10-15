@@ -44,23 +44,42 @@ jobs:
 
           source_dir="public-data/source-library"
           destination_dir="skills/freemovement-law/skills/eudirective-source-library"
+          max_attempts=3
 
           test -d "$source_dir"
           test -f "$destination_dir/SKILL.md"
 
-          # SKILL.md belongs to the skill and must never be deleted or replaced.
-          rsync -a --delete --exclude='/SKILL.md' \
-            "$source_dir/" "$destination_dir/"
+          git -C skills config user.name "github-actions[bot]"
+          git -C skills config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          cd skills
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for attempt in $(seq 1 "$max_attempts"); do
+            echo "Mirror push attempt $attempt of $max_attempts"
 
-          git add -A freemovement-law/skills/eudirective-source-library
-          if git diff --cached --quiet; then
-            echo "Already synchronized"
-            exit 0
-          fi
+            # Rebuild from the current main so unrelated commits are preserved.
+            git -C skills fetch --no-tags origin main
+            git -C skills reset --hard origin/main
 
-          git commit -m "Sync source-library from eudirective/public-data"
-          git push origin HEAD:main
+            # SKILL.md belongs to the skill and must never be deleted or replaced.
+            rsync -a --delete --exclude='/SKILL.md' \
+              "$source_dir/" "$destination_dir/"
+
+            git -C skills add -A -- freemovement-law/skills/eudirective-source-library
+            if git -C skills diff --cached --quiet; then
+              echo "Already synchronized"
+              exit 0
+            fi
+
+            git -C skills commit -m "Sync source-library from eudirective/public-data"
+            if git -C skills push origin HEAD:main; then
+              echo "Source library synchronized"
+              exit 0
+            fi
+
+            if [ "$attempt" -lt "$max_attempts" ]; then
+              echo "Push failed; refreshing main and rebuilding the mirror commit"
+              sleep "$attempt"
+            fi
+          done
+
+          echo "Failed to synchronize source library after $max_attempts attempts"
+          exit 1
