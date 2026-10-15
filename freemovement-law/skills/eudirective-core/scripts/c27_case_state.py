@@ -130,7 +130,7 @@ VALID_TRIGGERS = frozenset((
     "always", "family", "appointment", "lodgement", "visa", "document", "interview",
     "decision", "review", "complaint", "disclosure", "authority", "strategy",
     "deadline", "issue", "residence", "border", "marriage", "country", "soft_law",
-    "fraud"
+    "fraud", "stratagem", "legal_principle"
 ))
 STEP_STAGE = {
     "inquiry_sent": "enquiry",
@@ -386,7 +386,8 @@ def normalize_events(data):
 def load_registry(path=REGISTRY_PATH):
     reg = json.loads(Path(path).read_text(encoding="utf-8"))
     object_keys(reg, {"schema", "description", "families", "checks"}, label="registry")
-    require(reg["schema"] == "freemovement-check-registry/0.1.0",
+    require(reg["schema"] in ("freemovement-check-registry/0.1.0",
+                               "freemovement-check-registry/0.2.0"),
             "registry:schema")
     require(isinstance(reg["checks"], list) and len(reg["checks"]) >= 50,
             "registry:missing_checks")
@@ -394,7 +395,7 @@ def load_registry(path=REGISTRY_PATH):
     families = {x["family_id"] for x in reg["families"]}
     for c in reg["checks"]:
         object_keys(c, {"check_id", "family", "label", "triggers_any",
-                        "capability", "reference"}, {"priority"},
+                        "capability", "reference"}, {"priority", "catalog_entry_id"},
                         label="registry_check")
         require(c["family"] in families
                 and c["check_id"].startswith(c["family"] + "."),
@@ -409,6 +410,10 @@ def load_registry(path=REGISTRY_PATH):
         if "priority" in c:
             value_in(c["priority"], {"urgent", "important", "normal", "low"},
                      "registry:invalid_priority")
+        if "catalog_entry_id" in c:
+            require(isinstance(c["catalog_entry_id"], str)
+                    and bool(REF_PATTERN.fullmatch(c["catalog_entry_id"])),
+                    "registry:invalid_catalog_entry")
         require(isinstance(c["reference"], str)
                 and c["reference"].startswith("references/"),
                 "registry:invalid_reference")
@@ -723,7 +728,7 @@ def feature_tags(p, requested_focus=()):
     if p["documents"] or "supplement_requested" in steps:
         t.add("document")
     if p["authority_positions"] or p["authority_classifications"]:
-        t.update(("authority", "soft_law", "strategy"))
+        t.update(("authority", "soft_law", "strategy", "legal_principle"))
     if p["deadlines"]:
         t.add("deadline")
     if p["issues"]:
@@ -761,9 +766,11 @@ def validate_responses(data, all_ids, superseded, proceedings, registry):
     events = data["events"]
     event_proceeding = {}
     opened_at = {}
+    superseded_at = {}
     for pos, e in enumerate(events):
         event_proceeding[e["event_id"]] = e["proceeding_id"]
         if e["kind"] == "event_correction":
+            superseded_at[e["target_event_id"]] = pos
             child = e["replacement"]
             event_proceeding[child["event_id"]] = child["proceeding_id"]
         elif e["kind"] == "proceeding_opened":
@@ -819,6 +826,8 @@ def validate_responses(data, all_ids, superseded, proceedings, registry):
                         "response:future_or_missing_evidence")
                 require(event_proceeding.get(ref) == pid,
                         "response:evidence_wrong_proceeding")
+                require(superseded_at.get(ref, cursor + 1) > cursor,
+                        "response:corrected_evidence_no_longer_current")
             sources = c.get("source_refs", [])
             require(isinstance(sources, list) and len(sources) <= 30,
                     "response:invalid_sources")
@@ -840,6 +849,8 @@ def validate_responses(data, all_ids, superseded, proceedings, registry):
                 require(bool(sources),
                         "response:source_review_without_reference")
             if c["status"] == "not_applicable":
+                require(bool(refs) or bool(sources),
+                        "response:scope_exclusion_without_trace")
                 require(c["reason"] == "scope_excluded",
                         "response:not_applicable_without_scope_reason")
                 value_in(c.get("scope_exclusion"), SCOPE_EXCLUSIONS,
@@ -921,7 +932,8 @@ def make_coverage(proceedings, records, responses, registry, raw_events,
                     "self_reported" if method != "none" else "none")
             })
     gap_statuses = {"not_checked", "needs_recheck",
-                    "unavailable_for_live_advice", "blocked", "partial"}
+                    "unavailable_for_live_advice", "blocked", "partial",
+                    "previously_partial"}
     material_gaps = [
         {k: c[k] for k in (
             "proceeding_id", "check_id", "status", "capability", "priority")}
