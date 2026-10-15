@@ -21,7 +21,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY_PATH = ROOT / "references/state-engine/check-registry.json"
 SCHEMA = "c27-abstract-session/0.1.0"
-OUTPUT_SCHEMA = "c27-case-state-report/0.1.0"
+OUTPUT_SCHEMA = "c27-case-state-report/0.2.0"
 ID_PATTERN = re.compile(r"^[A-Z]{1,3}[1-9][0-9]{0,3}$")
 REF_PATTERN = re.compile(r"^[a-z0-9][a-z0-9:._/-]{0,100}$")
 
@@ -103,6 +103,16 @@ ISSUE_CATEGORIES = frozenset((
     "physical_removal", "conduct", "records", "decision_reasons", "privacy",
     "representation", "other_issue"
 ))
+RECEIPT_KINDS = frozenset(("application_lodgement", "appointment", "provider_check_in",
+                           "payment", "document_return", "other", "unspecified"))
+RECORD_KINDS = frozenset(("formal_lodgement", "inquiry", "file_opened",
+                          "other", "unspecified"))
+SCOPE_EXCLUSIONS = frozenset(("procedure_outside_scope", "actor_outside_scope",
+                              "irrelevant_stage", "no_material_event",
+                              "legally_excluded_with_basis"))
+EXCLUSION_REASONS = frozenset(("lawful_scope_exclusion", "wrong_procedure",
+                                "disproved_report", "no_independent_grievance",
+                                "duplicate_issue", "other_explained"))
 ISSUE_DISPOSITIONS = frozenset((
     "unassessed", "complaint_candidate", "needs_fact",
     "preservation_only", "excluded_with_reason"
@@ -160,7 +170,10 @@ EVENT_FIELDS = {
         {"procedure_type", "claimed_regime", "authority_role"},
         {"parent_proceeding_id"}
     ),
-    "procedural_step": ({"step"}, set()),
+    "procedural_step": (
+        {"step"},
+        {"receipt_kind", "issuer_role", "record_kind"}
+    ),
     "document_event": (
         {"document_id", "document_category", "operation", "recipient_id"}, set()
     ),
@@ -168,20 +181,23 @@ EVENT_FIELDS = {
         {"disclosure_id", "topic", "operation", "channel", "recipient_id"},
         {"document_ids"}
     ),
-    "disclosure_observation": (
-        {"disclosure_id", "observation"}, set()
-    ),
+    "disclosure_observation": ({"disclosure_id", "observation"}, set()),
     "authority_position": (
-        {"issue", "stance"}, set()
+        {"issue", "stance"},
+        {"related_disclosure_id", "related_event_id"}
     ),
+    "authority_classification": ({"classified_as"}, set()),
     "deadline_event": (
         {"deadline_id", "deadline_type", "clock_status", "rule_status"},
         {"trigger_event_id"}
     ),
     "issue_event": (
-        {"issue_id", "issue_category", "disposition"}, {"from_event_id"}
+        {"issue_id", "issue_category", "disposition"},
+        {"from_event_id", "exclusion_reason"}
     )
 }
+
+
 
 
 class StateError(ValueError):
@@ -212,17 +228,24 @@ def value_in(value, allowed, label: str) -> None:
 
 
 def validate_event(e, nested=False) -> None:
-    object_keys(e, {"event_id", "proceeding_id", "kind", "source"},
-                ({"target_event_id", "replacement"} if e.get("kind") == "event_correction"
-                 else EVENT_FIELDS.get(e.get("kind"), (set(), set()))[0] |
-                 EVENT_FIELDS.get(e.get("kind"), (set(), set()))[1]),
-                "event")
+    require(isinstance(e, dict), "event:not_object")
+    kind = e.get("kind")
+    is_correction = kind == "event_correction"
+    require(is_correction or kind in EVENT_FIELDS, "event:invalid_kind")
+    required, optional = (
+        ({"target_event_id", "replacement"}, set()) if is_correction
+        else EVENT_FIELDS[kind]
+    )
+    object_keys(e, {"event_id", "proceeding_id", "kind", "source"} | required,
+                optional | {"occurred_order"}, "event")
     opaque_id(e["event_id"], "E", "event_id")
     opaque_id(e["proceeding_id"], "P", "proceeding_id")
     value_in(e["source"], SOURCES, "event_source")
-    kind = e["kind"]
-    require(kind == "event_correction" or kind in EVENT_FIELDS, "event:invalid_kind")
-    if kind == "event_correction":
+    if "occurred_order" in e:
+        require(type(e["occurred_order"]) is int
+                and 0 <= e["occurred_order"] <= 100000,
+                "event:invalid_relative_occurrence_order")
+    if is_correction:
         require(not nested, "correction:nested")
         opaque_id(e["target_event_id"], "E", "correction_target")
         require(e["source"] != "model_inference", "correction:inferred")
@@ -238,6 +261,15 @@ def validate_event(e, nested=False) -> None:
             opaque_id(e["parent_proceeding_id"], "P", "parent_proceeding_id")
     elif kind == "procedural_step":
         value_in(e["step"], STEPS, "step")
+        if "receipt_kind" in e:
+            require(e["step"] == "receipt_issued", "receipt:wrong_step")
+            value_in(e["receipt_kind"], RECEIPT_KINDS, "receipt_kind")
+        if "issuer_role" in e:
+            require(e["step"] == "receipt_issued", "receipt:issuer_wrong_step")
+            value_in(e["issuer_role"], AUTHORITY_ROLES, "receipt_issuer")
+        if "record_kind" in e:
+            require(e["step"] == "lodgement_confirmed", "lodgement:record_wrong_step")
+            value_in(e["record_kind"], RECORD_KINDS, "record_kind")
     elif kind == "document_event":
         opaque_id(e["document_id"], "D", "document_id")
         value_in(e["document_category"], DOCUMENT_CATEGORIES, "document_category")
@@ -263,6 +295,11 @@ def validate_event(e, nested=False) -> None:
             require(e["source"] in ("document_seen", "authority_record_seen",
                                     "reported_authority_oral"),
                     "disclosure:acknowledgement_requires_authority_basis")
+    elif kind == "authority_classification":
+        value_in(e["classified_as"], PROCEDURE_TYPES | {"unknown", "disputed"},
+                 "authority_classification")
+        require(e["source"] != "model_inference",
+                "authority:classification_requires_attribution")
     elif kind == "authority_position":
         value_in(e["issue"], AUTHORITY_ISSUES, "authority_issue")
         value_in(e["stance"], AUTHORITY_STANCES, "authority_stance")
@@ -270,6 +307,10 @@ def validate_event(e, nested=False) -> None:
             require(e["source"] in ("document_seen", "authority_record_seen",
                                     "reported_authority_oral"),
                     "authority:express_position_requires_statement")
+        if "related_disclosure_id" in e:
+            opaque_id(e["related_disclosure_id"], "I", "related_disclosure_id")
+        if "related_event_id" in e:
+            opaque_id(e["related_event_id"], "E", "related_event_id")
     elif kind == "deadline_event":
         opaque_id(e["deadline_id"], "L", "deadline_id")
         value_in(e["deadline_type"], DEADLINE_TYPES, "deadline_type")
@@ -285,6 +326,12 @@ def validate_event(e, nested=False) -> None:
         value_in(e["disposition"], ISSUE_DISPOSITIONS, "issue_disposition")
         if "from_event_id" in e:
             opaque_id(e["from_event_id"], "E", "from_event_id")
+        if "exclusion_reason" in e:
+            value_in(e["exclusion_reason"], EXCLUSION_REASONS, "exclusion_reason")
+            require(e["disposition"] == "excluded_with_reason",
+                    "issue:exclusion_reason_for_nonexclusion")
+        elif e["disposition"] == "excluded_with_reason":
+            raise StateError("issue:missing_exclusion_reason")
 
 
 def normalize_events(data):
