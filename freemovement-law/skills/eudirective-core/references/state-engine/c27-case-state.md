@@ -1,6 +1,6 @@
 # C27 — case state, disclosures, and atomic check coverage
 
-**Version:** 0.2; packaged in FreeMovement v0.45.0. The registry contains **301 individual checks in 23 families**, including 36 individually indexed adapted stratagem screens and 14 legal-principle screens. A catalogue entry is a prompt for review, **not evidence of completed analysis**.
+**Version:** 0.2; packaged in FreeMovement v0.45.1. The registry contains **301 individual checks in 23 families**, including 36 individually indexed adapted stratagem screens and 14 legal-principle screens. A catalogue entry is a prompt for review, **not evidence of completed analysis**.
 
 ## Normal applicant guidance: in-conversation, read-only
 
@@ -36,6 +36,7 @@ Input schemas `c27-abstract-session/0.1.0` and `0.2.0` are accepted; output sche
 - **Append-only corrections:** an `event_correction` retains prior record identities and reports a `correction_log`. Reclassifying original procedure type/regime needs `correction_reason=classification_revision`. An earlier answer may cite an event later corrected, but must be reassessed afterward; a subsequent answer may not treat the corrected event as current evidence.
 - **Formal lodging:** a specifically typed documentary formal-lodgement record or application-lodgement receipt from an appropriate authority may support *documented* procedural metadata. Appointment, provider check-in, payment, document-return and unclassified receipts do not establish formal lodging.
 - **Documents:** the same opaque document ID may appear in several proceedings, with independent presentation/submission records. A shared document does not imply that another authority received it.
+- **Corrections of documentary/disclosure identity:** if corrected source material changes what was transmitted or which document was supplied, later acknowledgments and document links are quarantined as unresolved; do not transfer an old receipt to newly classified information or crash the case.
 - **Disclosures:** sent, transport delivered, receipt acknowledgment, content acknowledgment, actual reliance and transmission failure are separately source-attributed. Neither late observations nor conflicting reports silently erase prior states. Sent material does not prove officer knowledge, concession, or statutory waiver.
 - **Check provenance:** evidentiary event IDs must exist by the relevant response, belong to its proceeding, and not have been corrected before the recorded assessment. Unavailable capability states cannot be marked executed. A `not_applicable` decision requires a coded scope reason and an attributable source/event.
 - **Grievance exclusion:** an excluded grievance has a reason code, which remains a pointer requiring a specific legal explanation in substantive advice.
