@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 import {readFileSync,readdirSync,existsSync,writeFileSync} from 'node:fs';
-import {resolve,join} from 'node:path';
-const root=resolve('freemovement-law');const json=p=>JSON.parse(readFileSync(p,'utf8'));
+import {resolve,join,dirname} from 'node:path';
+import {fileURLToPath} from 'node:url';
+const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');const json=p=>JSON.parse(readFileSync(p,'utf8'));
 const p=json(join(root,'plugin.json')),legacy=json(join(root,'.codex-plugin/plugin.json'));
 if(p.version!==legacy.version||p.name!==legacy.name)throw Error('plugin metadata mismatch');
 const skills={};for(const ent of readdirSync(join(root,'skills'),{withFileTypes:true})){const f=join(root,'skills',ent.name,'SKILL.md');if(!ent.isDirectory()||!existsSync(f))continue;const s=readFileSync(f,'utf8');const match=s.match(/^- Current version: `(\d+\.\d+\.\d+)`/m)||s.match(/Skill version: [^\s]+ v(\d+\.\d+\.\d+)/);if(!match)throw Error('skill version missing: '+ent.name);skills[ent.name]=match[1]}
