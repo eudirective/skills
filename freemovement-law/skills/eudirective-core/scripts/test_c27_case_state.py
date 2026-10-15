@@ -477,5 +477,60 @@ class CaseStateTests(unittest.TestCase):
         with self.assertRaises(c.StateError):
             c.evaluate(x)
 
+
+    def test_corrected_issue_source_is_flagged_not_erased(self):
+        x=load("initial.json")
+        x["events"].extend([
+            {"event_id":"E10","proceeding_id":"P1","kind":"issue_event",
+             "source":"user_reported","issue_id":"G1","issue_category":"lodgement",
+             "disposition":"complaint_candidate","from_event_id":"E6"},
+            {"event_id":"E11","proceeding_id":"P1","kind":"event_correction",
+             "source":"user_reported","target_event_id":"E6",
+             "correction_reason":"user_correction",
+             "replacement":{"event_id":"E12","proceeding_id":"P1",
+                            "kind":"procedural_step","step":"lodgement_attempted",
+                            "source":"user_reported"}}
+        ])
+        p=c.evaluate(x)["proceedings"][0]
+        self.assertEqual(p["issues"][0]["recorded_disposition"],
+                         "complaint_candidate")
+        self.assertEqual(p["issues"][0]["disposition"],"needs_fact")
+        self.assertTrue(p["issues"][0]["source_reference_corrected"])
+        self.assertIn("issue_source_corrected",p["flags"])
+
+    def test_corrected_deadline_trigger_cannot_stay_established(self):
+        x=load("initial.json")
+        x["events"].extend([
+            {"event_id":"E10","proceeding_id":"P1","kind":"deadline_event",
+             "source":"user_reported","deadline_id":"L1",
+             "deadline_type":"visa_processing","clock_status":"trigger_recorded",
+             "rule_status":"publisher_checked","trigger_event_id":"E6"},
+            {"event_id":"E11","proceeding_id":"P1","kind":"event_correction",
+             "source":"user_reported","target_event_id":"E6",
+             "replacement":{"event_id":"E12","proceeding_id":"P1",
+                            "kind":"procedural_step","step":"lodgement_attempted",
+                            "source":"user_reported"}}
+        ])
+        p=c.evaluate(x)["proceedings"][0]
+        self.assertEqual(p["deadlines"][0]["clock_status"],"trigger_unconfirmed")
+        self.assertTrue(p["deadlines"][0]["trigger_reference_corrected"])
+        self.assertIn("deadline_trigger_corrected",p["flags"])
+
+    def test_corrected_authority_ground_reference_is_flagged(self):
+        x=load("initial.json")
+        x["events"].extend([
+            {"event_id":"E10","proceeding_id":"P1","kind":"authority_position",
+             "source":"reported_authority_oral","issue":"lawful_presence",
+             "stance":"expressly_invoked","related_event_id":"E6"},
+            {"event_id":"E11","proceeding_id":"P1","kind":"event_correction",
+             "source":"user_reported","target_event_id":"E6",
+             "replacement":{"event_id":"E12","proceeding_id":"P1",
+                            "kind":"procedural_step","step":"lodgement_attempted",
+                            "source":"user_reported"}}
+        ])
+        p=c.evaluate(x)["proceedings"][0]
+        self.assertTrue(p["authority_positions"][0]["source_reference_corrected"])
+        self.assertIn("authority_position_source_corrected",p["flags"])
+
 if __name__ == "__main__":
     unittest.main()
