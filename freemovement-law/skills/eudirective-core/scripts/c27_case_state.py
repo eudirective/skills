@@ -950,7 +950,7 @@ def make_coverage(proceedings, records, responses, registry, raw_events,
             })
     gap_statuses = {"not_checked", "needs_recheck",
                     "unavailable_for_live_advice", "blocked", "partial",
-                    "previously_partial"}
+                    "previously_partial", "historical_needs_recheck"}
     material_gaps = [
         {k: c[k] for k in (
             "proceeding_id", "check_id", "status", "capability", "priority")}
