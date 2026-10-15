@@ -1,0 +1,11 @@
+# Italy source inventory (2026-10-16)
+
+**Scope:** candidates from the reviewed national acquisition register; pending source identity, version and completeness review.
+
+| Priority / evidence | Candidate | Official source | Taxonomy | Scope note |
+|---|---|---|---|---|
+| Italy | A / V | Legislative Decree No. 30/2007 implementing free movement and residence rights of EU citizens and family members | [Normattiva](https://www.normattiva.it/uri-res/N2Ls?urn%3Anir%3Astato%3Adecreto.legislativo%3A2007-02-06%3B30~art3-com2=) | RESIDENCE-01 RESIDENCE-08 VISA-01 | Core national framework; retrieve the full current act and amendments, not only the linked article. |
+| Italy | A / V | Law No. 218/1995 reforming Italian private international law | [Normattiva, current text](https://www.normattiva.it/atto/caricaDettaglioAtto?atto.codiceRedazionale=095G0256&atto.dataPubblicazioneGazzetta=1995-06-03&bloccoAggiornamentoBreadCrumb=true&classica=true&dataVigenza=&generaTabId=true&qId=&tabID=&tipoDettaglio=vigente&title=lbl.dettaglioAtto) | FAMILY-01 FAMILY-03 FAMILY-04 FAMILY-06 FAMILY-11 | Applicable law and effectiveness of foreign judgments/acts; capture the date-selected current text and relevant provisions. |
+| Italy | A / I | Law No. 184/1983 on adoption and foster care | [Normattiva](https://www.normattiva.it/uri-res/N2Ls?urn%3Anir%3Astato%3Alegge%3A1983%3B184%21vig%3D) | FAMILY-11 FAMILY-12 FAMILY-13 FAMILY-19 | Exact official record identified; retrieve the current version and amendments and separate domestic adoption from international recognition procedure.
+| Italy | B / V | Ministry of Foreign Affairs guidance on recognition of foreign judgments | [MAECI](https://www.esteri.it/en/servizi-opportunita/italiani-all-estero/stato-civile/riconoscimento-di-sentenze-straniere/) | FAMILY-04 FAMILY-09 FAMILY-11 ADMIN-04 | Official registration channel for foreign civil judgments; page refers to Law 218/1995 and has a separate adoption route. |
+| Italy | B / V | MAECI entry and visa guidance for family members of EU citizens | [MAECI](https://www.esteri.it/en/ministero/sportello_info/domandefrequenti/sezione_visti_entrare_in_italia/) | VISA-01 VISA-11 RESIDENCE-08 ADMIN-04 | Operational visa channel; check its current advice against the amended national legislation and consular instructions. |

@@ -1,0 +1,13 @@
+# Spain source inventory (2026-10-16)
+
+**Scope:** candidates from the reviewed national acquisition register; pending source identity, version and completeness review.
+
+| Priority / evidence | Candidate | Official source | Taxonomy | Scope note |
+|---|---|---|---|---|
+| Spain | A / V | Real Decreto 240/2007 on entry, free movement and residence of EU citizens and their family members | [BOE ELI](https://www.boe.es/eli/es/rd/2007/02/16/240) | RESIDENCE-01 RESIDENCE-08 VISA-01 FAMILY-01 | Core EU-family residence framework; compare original publication, amendments, and current consolidation. |
+| Spain | A / V | Ley 20/2011 del Registro Civil | [BOE consolidated record](https://boe.es/buscar/act.php?id=BOE-A-2011-12628&p=20250103&tn=1) | FAMILY-04 FAMILY-09 FAMILY-27 FAMILY-28 | Civil-status records and foreign documents; verify the publication history after the displayed consolidation date. |
+| Spain | A / V | Ley 54/2007 de adopción internacional | [BOE consolidated record](https://www.boe.es/buscar/act.php?id=BOE-A-2007-22438&p=20210322&tn=1) | FAMILY-11 FAMILY-12 FAMILY-13 FAMILY-15 | International adoption procedure, foreign decisions, and recognition; consolidated BOE text is informative, so retain the official gazette publication too. |
+| Spain | B / V | Código Civil, private-international-law family provisions | [BOE consolidated record](https://www.boe.es/buscar/act.php?id=BOE-A-1889-4763) | FAMILY-01 FAMILY-03 FAMILY-05 FAMILY-06 FAMILY-15 | National rules on marriage, parentage, and applicable law; select the relevant articles and version. |
+| Spain | A / V | Ministry of Inclusion, Hoja informativa 62: residence card for a family member of a Union citizen | [Official Ministry guidance](https://bibliovirtual.inclusion.gob.es/web/migraciones/w/62.-tarjeta-de-residencia-de-familiar-de-ciudadano-de-la-union-europea) | RESIDENCE-08 FAMILY-01 ADMIN-04 | Operational requirements, documents and filing steps for form EX19; guidance page last updated May 2025 and says the law in force at application controls. |
+| Spain | B / V | Ley 39/2015, common administrative procedure | [BOE consolidated record](https://boe.es/buscar/act.php?id=BOE-A-2015-10565) | ADMIN-01 ADMIN-04 REMEDY-01 REMEDY-12 | Filing, notice, deadlines and administrative review; select an applicable consolidation and retain the official publication. |
+| Spain | B / V | Ley 29/1998, administrative jurisdiction | [BOE consolidated record](https://www.boe.es/buscar/act.php?id=BOE-A-1998-16718&p=20261006&tn=1) | REMEDY-01 REMEDY-03 REMEDY-12 | Judicial review and interim relief against administrative action; consolidated text is informative, so verify the promulgated amendments.

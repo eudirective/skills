@@ -1,0 +1,11 @@
+# Belgium source inventory (2026-10-16)
+
+**Scope:** candidates from the reviewed national acquisition register; pending source identity, version and completeness review.
+
+| Priority / evidence | Candidate | Official source | Taxonomy | Scope note |
+|---|---|---|---|---|
+| Belgium | A / I | Law of 16 July 2004 establishing the Code of Private International Law | [Belgian Official Gazette / Justel](https://www.ejustice.just.fgov.be/eli/wet/2004/07/16/2004009511/justel) | FAMILY-01 FAMILY-03 FAMILY-04 FAMILY-06 FAMILY-11 | Marriage, parentage, adoption and foreign decision effects; obtain current consolidated text from the official Justel publisher. |
+| Belgium | A / V | Immigration Office guidance for family members of EU citizens | [Belgian Immigration Office (IBZ)](https://dofi.ibz.be/en/themes/citizens-european-union/family) | RESIDENCE-01 RESIDENCE-08 VISA-01 ADMIN-04 | Official authority guidance for family entry and residence; retrieve linked forms, evidentiary rules, and appeal information. |
+| Belgium | A / I | Law of 15 December 1980 on access to the territory, residence, establishment and removal of foreign nationals | [Belgian Official Gazette / Justel](https://www.ejustice.just.fgov.be/eli/loi/1980/12/15/1980121550/justel) | RESIDENCE-01 RESIDENCE-08 REMEDY-12 | Statutory basis around residence, refusal, removal and remedies; verify exact ELI identity, current articles and coordination with EU law. |
+| Belgium | A / I | Royal Decree of 8 October 1981 implementing the law on foreign nationals | [Belgian Official Gazette / Justel](https://www.ejustice.just.fgov.be/eli/arrete/1981/10/08/1981001946/justel) | RESIDENCE-08 VISA-01 ADMIN-04 REMEDY-12 | Detailed residence-document and procedure rules; confirm the ELI identifier and retrieve the current consolidated text from Justel.
+| Belgium | B / V | Federal Justice guidance: recognition and registration of foreign adoptions | [Federal Public Service Justice](https://www.justice.belgium.be/fr/themes_et_dossiers/personnes_et_familles/adoption/adoption_a_letranger) | FAMILY-11 FAMILY-12 FAMILY-13 FAMILY-15 FAMILY-19 | Names the Federal Central Authority, documents and sequence for foreign-adoption recognition; includes competency and registration steps. |

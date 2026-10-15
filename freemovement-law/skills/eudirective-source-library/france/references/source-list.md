@@ -1,0 +1,13 @@
+# France source inventory (2026-10-16)
+
+**Scope:** candidates from the reviewed national acquisition register; pending source identity, version and completeness review.
+
+| Priority / evidence | Candidate | Official source | Taxonomy | Scope note |
+|---|---|---|---|---|
+| France | A / V | CESEDA Book II, EU citizens and family members (including Articles L.233-1 onward and implementing rules) | [Légifrance EU-family provisions](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070158/LEGISCTA000042770930/) | RESIDENCE-01 RESIDENCE-08 VISA-01 REMEDY-12 | EU movement, residence cards, retained rights and procedure; note judicially annulled wording and check the latest version. |
+| France | A / V | Code civil, international adoption (Articles 370-2 to 370-5) | [Légifrance](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000046369964/) | FAMILY-11 FAMILY-12 FAMILY-13 FAMILY-15 | Applicable law and effects of foreign adoption; verify applicable text and related transition rules. |
+| France | A / V | Code civil, marriage celebrated abroad (Article 171-1 and connected provisions) | [Légifrance](https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006149973) | FAMILY-01 FAMILY-02 FAMILY-04 FAMILY-06 | Conditions and civil-register transcription for foreign marriages; identify adjacent provisions needed for a complete workflow. |
+| France | B / V | Code de l’action sociale et des familles, international adoption provisions | [Légifrance](https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006174341/) | FAMILY-12 FAMILY-13 FAMILY-19 | Competent authorities and safeguards for international adoption; read alongside the Code civil. |
+| France | A / V | France-Visas route for family members of European citizens | [France-Visas](https://www.france-visas.gouv.fr/web/france-visas/famille-de-citoyen-europeen) | VISA-01 VISA-11 RESIDENCE-08 ADMIN-04 | Official visa screening, supporting-document and post-arrival residence route; check nationality and overseas-territory distinctions. |
+| France | A / V | Code civil, Article 47: evidentiary effect and verification of foreign civil-status acts | [Légifrance](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043895621/) | FAMILY-04 FAMILY-09 FAMILY-27 FAMILY-28 | Key foreign-record rule affecting marriage, birth and parentage evidence; pair with civil-register transcription procedure. |
+| France | B / V | Code de justice administrative | [Légifrance](https://www.legifrance.gouv.fr/codes/id/LEGITEXT000006070933/) | REMEDY-01 REMEDY-03 REMEDY-12 | Judicial review route for administrative residence decisions; identify the specific CESEDA and visa-review provisions before relying on this general code.
