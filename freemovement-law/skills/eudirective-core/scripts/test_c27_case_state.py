@@ -532,5 +532,20 @@ class CaseStateTests(unittest.TestCase):
         self.assertTrue(p["authority_positions"][0]["source_reference_corrected"])
         self.assertIn("authority_position_source_corrected",p["flags"])
 
+
+    def test_disclosure_assurance_exposes_reported_vs_recorded(self):
+        x=load("initial.json")
+        x["events"].append({
+            "event_id":"E10","proceeding_id":"P1",
+            "kind":"disclosure_observation",
+            "source":"reported_authority_oral",
+            "disclosure_id":"I1","observation":"content_acknowledged"
+        })
+        d=c.evaluate(x)["proceedings"][0]["disclosures"][0]
+        self.assertEqual(d["delivery_state"],"content_acknowledged")
+        self.assertEqual(d["current_state_evidence_classes"],
+                         ["reported_authority_oral"])
+        self.assertFalse(d["authority_identity_authenticated"])
+
 if __name__ == "__main__":
     unittest.main()
