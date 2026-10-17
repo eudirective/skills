@@ -1,5 +1,11 @@
 # Release and version policy
 
+## v0.45.0 evidence-gated research addition
+
+This compatible core minor adds an opt-in, model-led source-research loop, `research-plan` and `research-evidence-bundle` schemas, and a local `research_gate.py` validator for cross-artifact integrity and claim/task coverage. It does not add a Python research controller, change legal-decision stages, or alter C3 contract `0.2.0`, controller protocol `0.3.0`, C6 run pins, C7 trust policy, or source-pack activation rules. The enclosing plugin package advances from `0.45.1` to `0.46.0`.
+
+Keep the mode (`quick`/`case`/`deep`) independent from source ownership. Before any later runtime/controller integration, separately evaluate module routing, artifact privacy boundaries, task reopening, falsifier/counterevidence coverage, urgent provisional advice, and unresolved-source behavior. A schema pass is structural evidence only; it is not a semantic/legal accuracy or host-privacy pass.
+
 - Patch: compatible bug fix, wording, tests or stricter validation that does not break documented valid inputs.
 - Minor: compatible model/contract additions, new controller operations or new legal-engine modules.
 - Major: breaking contract changes, changed skill-family ownership or widened trigger boundary that alters compatibility assumptions.

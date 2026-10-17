@@ -15,6 +15,18 @@ they do not synchronize source changes after installation. For a legal claim
 that depends on currentness, check the responsible official publisher directly
 and report the publication/version date checked.
 
+## Evidence-gated legal research
+
+For material current, multi-source, disputed or incomplete questions within an
+EU free-movement or EU-family-visa issue, the core uses one research loop with
+`quick`, `case` and `deep` depth profiles. Connected EU law, Swedish
+law/procedure, Türkiye operations, and relevant national source packs keep
+separate source owners and coverage criteria. Modes change research depth, not
+evidence standards. Optional research plans and evidence bundles contain only
+generalized, non-identifying source questions; they do not enter synthetic case
+controllers or determine legal merits. A local gate checks artifact references
+and coverage labels, not source authenticity or legal conclusions.
+
 ## Personal installation
 
 Copy this plugin folder to `~/.codex/plugins/freemovement-law` and add an entry

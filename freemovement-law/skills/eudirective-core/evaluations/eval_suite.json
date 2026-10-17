@@ -7049,7 +7049,7 @@
       "prompt": "Update the eudirective core C11 legal assessment so a refusal of the direct Istanbul channel triggers only with the matching adverse access status and direct appointment channel; test the opposite VFS scenario.",
       "response_stage": "final_response",
       "risk_notes": [
-        "maintain synthetic-only, no legal merits or operational action"
+        "preserve the narrow plugin research-trigger boundary; do not infer EU-family/free-movement context"
       ],
       "trigger_expectation": {
         "baseline": false,
@@ -7087,7 +7087,7 @@
       "prompt": "Develop and test bound legal assessment records for fictional Swedish EU-family visa issues showing applicable source IDs, missing material facts, exceptions and adverse evidence.",
       "response_stage": "final_response",
       "risk_notes": [
-        "maintain synthetic-only, no legal merits or operational action"
+        "preserve the narrow plugin research-trigger boundary; do not infer EU-family/free-movement context"
       ],
       "trigger_expectation": {
         "baseline": false,
@@ -7125,7 +7125,7 @@
       "prompt": "Make the core preserve the Deldwyn case-specific decisive-evidence and redaction limits in a synthetic residence card fact-value analysis; include a negative scenario without authority reliance.",
       "response_stage": "final_response",
       "risk_notes": [
-        "maintain synthetic-only, no legal merits or operational action"
+        "preserve the narrow plugin research-trigger boundary; do not infer EU-family/free-movement context"
       ],
       "trigger_expectation": {
         "baseline": false,
@@ -7154,7 +7154,7 @@
       "prompt": "Draft my real Swedish visa appeal from my refusal letter.",
       "response_stage": "final_response",
       "risk_notes": [
-        "maintain synthetic-only, no legal merits or operational action"
+        "preserve the narrow plugin research-trigger boundary; do not infer EU-family/free-movement context"
       ],
       "trigger_expectation": {
         "baseline": false,
@@ -7166,14 +7166,14 @@
       "checks": {
         "with_skill": {
           "manual_review": [
-            "standalone legal research, not C11 skill build",
-            "no synthetic skill artifact implied"
+            "generic Swedish national-visa deadline has no stated EU free-movement or EU-family-visa context",
+            "do not invoke the plugin research loop without its EU free-movement or EU-family-visa scope"
           ]
         }
       },
       "expected_signals": [
-        "standalone legal research, not C11 skill build",
-        "no synthetic skill artifact implied"
+        "generic Swedish national-visa deadline has no stated EU free-movement or EU-family-visa context",
+        "do not invoke the plugin research loop without its EU free-movement or EU-family-visa scope"
       ],
       "id": "negative-generic-legal-research",
       "modes": [
@@ -7183,7 +7183,7 @@
       "prompt": "What is the current deadline to appeal a Swedish visa refusal?",
       "response_stage": "final_response",
       "risk_notes": [
-        "maintain synthetic-only, no legal merits or operational action"
+        "preserve the narrow plugin research-trigger boundary; do not infer EU-family/free-movement context"
       ],
       "trigger_expectation": {
         "baseline": false,
@@ -9786,7 +9786,253 @@
           "Distinguish original and later grounds, show updated risk to requested relief."
         ]
       }
-    }
+    },
+    
+      {
+        "id": "trigger-research-quick-eu-source",
+        "category": "should_trigger",
+        "prompt": "For a generic EU-family visa question, check whether the current consolidated text of Directive 2004/38 Article 5(2) differs from the plugin bundled source record. Use the official EU publisher, report the version/date checked and any gap, and keep this to source freshness rather than a merits decision.",
+        "response_stage": "first_response",
+        "expected_signals": [
+          "selects quick depth for a narrow freshness question",
+          "routes to the core EU/common-law source owner",
+          "separates the bundled snapshot from the live official publisher check and records the check date",
+          "does not present research as a legal-merits determination"
+        ],
+        "risk_notes": [
+          "Do not imply that the bundled snapshot is self-updating or that a source check decides an individual case."
+        ],
+        "modes": [
+          "baseline",
+          "with_skill"
+        ],
+        "trigger_expectation": {
+          "with_skill": true,
+          "baseline": false
+        },
+        "checks": {
+          "all_modes": {
+            "must_not_contain": [
+              "TODO"
+            ]
+          },
+          "first_response": {
+            "manual_review": [
+              "Grade only the verbatim first response; do not accept self-graded or mock claims"
+            ]
+          },
+          "with_skill": {
+            "manual_review": [
+              "quick mode; core_source/common_eu owner; official EU publisher; dated freshness result; no merits claim"
+            ]
+          }
+        },
+        "comparison_expectation": {
+          "review_prompts": [
+            "Check that the response selects a narrow freshness workflow and distinguishes source snapshot from current official text."
+          ],
+          "required": true,
+          "expectation": "with_skill_better"
+        }
+      },
+      {
+        "id": "trigger-research-case-cross-layer",
+        "category": "should_trigger",
+        "prompt": "For a generic EU-family visa applicant applying in Türkiye to join a sponsor in Sweden, research the current EU-family visa requirement, Swedish reasons/appeal procedure, and Türkiye application or document channel. Use case depth and keep each legal or operational layer with its own source owner.",
+        "response_stage": "first_response",
+        "expected_signals": [
+          "selects case depth for linked questions",
+          "splits EU/common law, Swedish procedure, and Türkiye operations into separate owner-specific tasks",
+          "does not ask the Türkiye module to determine Swedish legal procedure",
+          "keeps source gaps and conflicts explicit"
+        ],
+        "risk_notes": [
+          "Use a generic scenario; do not create or request real applicant records in research artifacts."
+        ],
+        "modes": [
+          "baseline",
+          "with_skill"
+        ],
+        "trigger_expectation": {
+          "with_skill": true,
+          "baseline": false
+        },
+        "checks": {
+          "all_modes": {
+            "must_not_contain": [
+              "TODO"
+            ]
+          },
+          "first_response": {
+            "manual_review": [
+              "Grade only the verbatim first response; do not accept self-graded or mock claims"
+            ]
+          },
+          "with_skill": {
+            "manual_review": [
+              "case mode; distinct EU, Sweden, and Türkiye owners; no module crossover; evidence gaps retained"
+            ]
+          }
+        },
+        "comparison_expectation": {
+          "review_prompts": [
+            "Check that each layer has a separate owner and the response does not collapse operational steps into Swedish law."
+          ],
+          "required": true,
+          "expectation": "with_skill_better"
+        }
+      },
+      {
+        "id": "trigger-research-deep-disputed-procedure",
+        "category": "should_trigger",
+        "prompt": "For a hypothetical EU citizen family member using a free-movement route in Sweden, investigate a disputed Swedish appeal-procedure question. Compare current official legal texts and relevant official guidance, search for a falsifier, and leave any material conflict open if it cannot be reconciled.",
+        "response_stage": "first_response",
+        "expected_signals": [
+          "selects deep depth for a material disputed question",
+          "routes Swedish procedure to the Sweden member-state source owner and EU scope to the core owner where relevant",
+          "records contrary evidence and a falsifier review",
+          "does not close an unresolved conflict or determine legal merits"
+        ],
+        "risk_notes": [
+          "No individual deadline or outcome should be asserted without verified current sources and scope."
+        ],
+        "modes": [
+          "baseline",
+          "with_skill"
+        ],
+        "trigger_expectation": {
+          "with_skill": true,
+          "baseline": false
+        },
+        "checks": {
+          "all_modes": {
+            "must_not_contain": [
+              "TODO"
+            ]
+          },
+          "first_response": {
+            "manual_review": [
+              "Grade only the verbatim first response; do not accept self-graded or mock claims"
+            ]
+          },
+          "with_skill": {
+            "manual_review": [
+              "deep mode; appropriate Sweden/EU ownership; contrary evidence and falsifier; unresolved conflict carried forward"
+            ]
+          }
+        },
+        "comparison_expectation": {
+          "review_prompts": [
+            "Check that depth, owner routing, disconfirming search, and conflict handling match the request."
+          ],
+          "required": true,
+          "expectation": "with_skill_better"
+        }
+      },
+      {
+        "id": "trigger-research-national-pack-scope",
+        "category": "should_trigger",
+        "prompt": "For an EU free-movement family question involving Danish procedure, check whether the bundled library has an exact registered Denmark source pack that covers the issue. Use that pack and its official publisher if present; otherwise keep the national task unregistered and open, without borrowing Swedish or Türkiye rules.",
+        "response_stage": "first_response",
+        "expected_signals": [
+          "recognizes that the national question is connected to EU free movement",
+          "uses only the exact registered national source-pack owner if available",
+          "leaves the task open or blocked when no applicable pack is registered",
+          "does not transfer Sweden or Türkiye scope to Denmark"
+        ],
+        "risk_notes": [
+          "A registered pack is a snapshot and does not substitute for current official-source verification."
+        ],
+        "modes": [
+          "baseline",
+          "with_skill"
+        ],
+        "trigger_expectation": {
+          "with_skill": true,
+          "baseline": false
+        },
+        "checks": {
+          "all_modes": {
+            "must_not_contain": [
+              "TODO"
+            ]
+          },
+          "first_response": {
+            "manual_review": [
+              "Grade only the verbatim first response; do not accept self-graded or mock claims"
+            ]
+          },
+          "with_skill": {
+            "manual_review": [
+              "national owner is exact and pack-bound, or explicitly unregistered/open; no cross-module borrowing"
+            ]
+          }
+        },
+        "comparison_expectation": {
+          "review_prompts": [
+            "Check that national-source-pack routing is conditional on exact registration and remains tied to the EU free-movement issue."
+          ],
+          "required": true,
+          "expectation": "with_skill_better"
+        }
+      },
+      {
+        "id": "negative-research-supplied-text-rewrite",
+        "category": "should_not_trigger",
+        "prompt": "Please paraphrase this supplied paragraph in plain English. I do not want legal advice, applicability analysis, currentness checking, or any additional sources.",
+        "response_stage": "final_response",
+        "expected_signals": [
+          "performs only the requested transformation of supplied text",
+          "does not start a source-research loop or claim current-law verification"
+        ],
+        "risk_notes": [
+          "This is a supplied-text rewrite with no request for legal application or research."
+        ],
+        "modes": [
+          "baseline",
+          "with_skill"
+        ],
+        "trigger_expectation": {
+          "with_skill": false,
+          "baseline": false
+        },
+        "checks": {
+          "with_skill": {
+            "manual_review": [
+              "no research loop, source retrieval, or legal application is added"
+            ]
+          }
+        }
+      },
+      {
+        "id": "negative-research-unrelated-immigration",
+        "category": "should_not_trigger",
+        "prompt": "Research the current process for a UK citizen applying for a United States work visa. This is unrelated to EU free movement or an EU-family visa.",
+        "response_stage": "final_response",
+        "expected_signals": [
+          "does not invoke the FreeMovement plugin research loop",
+          "recognizes the requested immigration question is outside the plugin remit"
+        ],
+        "risk_notes": [
+          "Do not generalize EU, Swedish, Türkiye, or national-pack routing to unrelated immigration systems."
+        ],
+        "modes": [
+          "baseline",
+          "with_skill"
+        ],
+        "trigger_expectation": {
+          "with_skill": false,
+          "baseline": false
+        },
+        "checks": {
+          "with_skill": {
+            "manual_review": [
+              "plugin research loop remains outside the stated subject scope"
+            ]
+          }
+        }
+      }
+    
   ],
   "default_modes": [
     "baseline",
@@ -9794,7 +10040,7 @@
   ],
   "default_response_stage": "final_response",
   "default_trigger_threshold": 0.5,
-  "last_updated": "2026-10-11",
+  "last_updated": "2026-10-18",
   "notes": [
     "['C1-C5f engines, C6 controller release and C7 code-pinned source-metadata/fictional-fixture trust, exhaustive issue companions and crash-retry fail-closed behavior.', 'Mock execution is synthetic pipeline evidence only; manual/recorded legal, cross-runtime and host privacy review remain necessary before applicant-facing use.', 'C1 source restoration (v0.27.1): all 47 representation bytes are bundled and pinned; 21 are normalized notes; no new official host recheck.', 'C10: Eight added prompt-review cases encode C9 external criteria; all are ungraded. A verified C6 fixture is a pipeline result, not satisfaction of these behavioral criteria.', 'C11a/b: 11 pinned review rules screen explicit structured fact values and mark uncertain/missing/contrary; 8 exact C10 scenarios remain not independently graded for legal correctness.', 'C12 pilot validates evidence-ref/byte/value agreement, country-owned rule sidecars, novel issue discovery and no legal-merits promotion; suite is not independent law adjudication.', 'C13a-c: raw-format evidence cues preserve exact span/document hash, never verify authenticity or legal truth; 36-item lexical challenge is not independent legal merits.', 'C14: multilingual clause and open-topic retrieval produce unreviewed suggestions only; 136 controlled examples versus a separate 61-item untuned adversarial wording challenge must be reported separately; ne C18 source integrity: 0.6.1 restored Article 2(2)(a), historical manifest downgrade denial and 21 note coverage gaps; mechanical tests do not prove legal validity.",
     "C21 adds deterministic synthetic-only privacy previews and prohibitions on real documents, external disclosure, and anonymity claims.",
@@ -9805,5 +10051,5 @@
   "result_directory": "evaluations/results",
   "runner_version": "0.3",
   "skill_name": "eudirective-core",
-  "skill_version": "0.40.0"
+  "skill_version": "0.45.0"
 }

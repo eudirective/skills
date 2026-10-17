@@ -1,6 +1,6 @@
 ---
 name: eudirective-core
-description: "use when a person requests read-only eu free-movement/family-visa guidance, including real applicant accounts: ask targeted questions, compare ordinary visa versus eu-family requirements, identify complaint/remedy routes and independent conduct grievances, authority-position risks and gdpr/evidence preservation routes; also maintain or test core synthetic legal engines. do not use for unrelated immigration, private-data intake through synthetic scripts, automatic external submissions, unsupported legal determinations or privacy guarantees. implicit invocation remains narrow."
+description: "use when a person requests read-only eu free-movement/family-visa guidance, including real applicant accounts, or explicit source-grounded research about sources governing an eu free-movement or eu-family-visa issue, including applicable eu law, swedish member-state law/procedure, türkiye operations, and registered national source packs: ask targeted questions, compare ordinary visa versus eu-family requirements, identify complaint/remedy routes and independent conduct grievances, authority-position risks and gdpr/evidence preservation routes; also maintain or test core synthetic legal engines. do not use for unrelated immigration, private-data intake through synthetic scripts, automatic external submissions, unsupported legal determinations or privacy guarantees. implicit invocation remains narrow."
 ---
 
 # eudirective Core
@@ -14,8 +14,8 @@ For any substantive applicant matter, read `references/state-engine/c27-case-sta
 Before substantive work, on the first FreeMovement skill invocation in this conversation, read `eudirective-core/references/session-version-check.md` and perform its read-only once-per-conversation version comparison. Report only mismatches or unsuccessful checks, never silent success. Continue the requested work regardless of the result. Skip additional checks in the same conversation unless expressly requested; if this skill is not the core, load the core's referenced instructions first. This checks package versions only, not legal-source validity.
 
 ## Version and Status
-- Current version: `0.44.1`
-- Last updated: `2026-10-14`
+- Current version: `0.45.0`
+- Last updated: `2026-10-18`
 - Status: read-only applicant-facing guidance for user-provided real or fictional accounts; controlled scripts still restrict private-data intake and external actions.
 - Inter-skill contract: `0.2.0` (C3 development freeze; not portfolio v1.0).
 - Element model: `0.2.0`.
@@ -26,7 +26,7 @@ Before substantive work, on the first FreeMovement skill invocation in this conv
 ## Version Disclosure
 At the start of every visible response or report produced while using this skill, announce:
 ```text
-Skill: eudirective-core v0.44.1
+Skill: eudirective-core v0.45.0
 ```
 
 ## Source use and currentness
@@ -34,6 +34,14 @@ Skill: eudirective-core v0.44.1
 Use the plugin's eudirective-source-library skill to locate the externally maintained legal-source library bundled with this package. The source files, manifests, and country module notes are available beside that skill. This is a versioned package snapshot; it does not refresh itself after installation.
 
 For claims that depend on current law, guidance, or case law, check the responsible official publisher directly when browsing is available. State the publisher and date/version checked, and distinguish a live check from the bundled package snapshot. If browsing or the relevant full text is unavailable, state that currentness was not verified. Use country module notes only as scoped summaries, never as full authoritative text.
+
+## Evidence-gated source research
+
+For material questions within the EU free-movement or EU-family-visa remit that depend on current, multiple-source, disputed or incomplete law or procedure, read `references/research-control.md`. This includes connected EU/common law, Swedish member-state law/procedure, Türkiye operational, and registered national-source-pack layers. It defines one shared research loop with `quick`, `case` and `deep` depth profiles and separate source-owner profiles for those layers. The mode changes scope and stopping criteria; it never changes evidence standards or legal authority.
+
+Keep quick answers useful when research is incomplete, especially where delay matters: state what is established, what remains unchecked, and give only appropriately qualified next steps. Do not describe a source gap as a legal finding. For substantive applicant guidance, continue to follow C27 and the applicant-guidance references; the research loop supplements their coverage and attribution duties.
+
+The optional plan and evidence bundle are source-research records, not case files, C3 exports, or C6/C7 controller stages. They may contain only generalized, non-identifying legal/source questions. `scripts/research_gate.py` checks schemas, exact plan binding, task/finding/evidence references, owner consistency, claim mappings and coverage labels. It cannot detect personal data, authenticate source records, verify retrieval accuracy or establish legal entailment. A reviewer must still verify the source text, publisher/version, counterevidence and acceptance criteria.
 
 The historical C1 representation set is kept at `tests/fixtures/core-source-pack-0.6.1/` only for exact-byte synthetic regression checks. It is not a current-law source. Deterministic scripts resolve compatibility files through scripts/source_library_paths.py.
 

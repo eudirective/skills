@@ -1,0 +1,217 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Core research evidence bundle 0.1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["contract_version", "research_id", "plan_sha256", "mode", "reviewed_at", "coverage_status", "tasks", "findings", "evidence", "claims", "legal_merits_status", "downstream_status"],
+  "properties": {
+    "contract_version": { "const": "0.1.0" },
+    "research_id": { "type": "string", "pattern": "^RCH-[A-Z0-9][A-Z0-9._-]{0,63}$" },
+    "plan_sha256": { "$ref": "#/$defs/sha256" },
+    "mode": { "enum": ["quick", "case", "deep"] },
+    "reviewed_at": { "type": "string", "format": "date-time" },
+    "coverage_status": { "enum": ["complete", "partial", "blocked"] },
+    "tasks": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/task_result" } },
+    "findings": { "type": "array", "items": { "$ref": "#/$defs/finding" } },
+    "evidence": { "type": "array", "items": { "$ref": "#/$defs/evidence" } },
+    "claims": { "type": "array", "items": { "$ref": "#/$defs/claim" } },
+    "legal_merits_status": { "const": "not_determined" },
+    "downstream_status": { "const": "research_only" }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "coverage_status": { "const": "complete" } }, "required": ["coverage_status"] },
+      "then": {
+        "properties": {
+          "tasks": {
+            "items": { "properties": { "status": { "enum": ["complete", "not_applicable"] } } }
+          }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "mode": { "const": "deep" } }, "required": ["mode"] },
+      "then": {
+        "properties": {
+          "findings": {
+            "items": {
+              "properties": {
+                "falsifier_review": {
+                  "properties": { "result": { "enum": ["survives_review", "weakened", "unresolved"] } }
+                }
+              }
+            }
+          },
+          "claims": {
+            "items": {
+              "properties": {
+                "falsifier_review": {
+                  "properties": { "result": { "enum": ["survives_review", "weakened", "unresolved"] } }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "owner": {
+      "type": "object", "additionalProperties": false,
+      "required": ["family", "owner_id", "jurisdiction", "role"],
+      "properties": {
+        "family": { "enum": ["core_source", "member_state", "applicant_country", "source_library_national"] },
+        "owner_id": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,159}$", "description": "Exact registered pack/module ID; use unregistered:<CC> only when no national pack is registered." },
+        "jurisdiction": { "type": "string", "pattern": "^(EU|[A-Z]{2})$" },
+        "role": { "enum": ["common_eu", "residence_state", "work_state", "intended_residence_state", "deciding_state", "representing_state", "challenged_authority_state", "document_issuing_state", "application_context", "mission_context", "national_source"] },
+        "source_pack_sha256": { "$ref": "#/$defs/sha256" },
+        "manifest_sha256": { "$ref": "#/$defs/sha256" },
+        "export_sha256": { "$ref": "#/$defs/sha256" }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "family": { "const": "core_source" } }, "required": ["family"] },
+          "then": { "required": ["source_pack_sha256"], "properties": { "jurisdiction": { "const": "EU" }, "role": { "const": "common_eu" } }, "not": { "anyOf": [{ "required": ["manifest_sha256"] }, { "required": ["export_sha256"] }] } }
+        },
+        {
+          "if": { "properties": { "family": { "enum": ["member_state", "applicant_country"] } }, "required": ["family"] },
+          "then": { "required": ["manifest_sha256", "export_sha256"], "not": { "required": ["source_pack_sha256"] } }
+        },
+        {
+          "if": { "properties": { "family": { "const": "member_state" } }, "required": ["family"] },
+          "then": { "properties": { "jurisdiction": { "pattern": "^[A-Z]{2}$" }, "role": { "enum": ["residence_state", "work_state", "intended_residence_state", "deciding_state", "representing_state", "challenged_authority_state", "document_issuing_state"] } } }
+        },
+        {
+          "if": { "properties": { "family": { "const": "applicant_country" } }, "required": ["family"] },
+          "then": { "properties": { "jurisdiction": { "pattern": "^[A-Z]{2}$" }, "role": { "enum": ["application_context", "mission_context"] } } }
+        },
+        {
+          "if": { "properties": { "family": { "const": "source_library_national" } }, "required": ["family"] },
+          "then": {
+            "properties": { "jurisdiction": { "pattern": "^[A-Z]{2}$" }, "role": { "const": "national_source" } },
+            "not": { "anyOf": [{ "required": ["manifest_sha256"] }, { "required": ["export_sha256"] }] },
+            "allOf": [
+              { "if": { "properties": { "owner_id": { "pattern": "^unregistered:[A-Z]{2}$" } }, "required": ["owner_id"] }, "then": { "not": { "required": ["source_pack_sha256"] } } },
+              { "if": { "properties": { "owner_id": { "not": { "pattern": "^unregistered:[A-Z]{2}$" } } }, "required": ["owner_id"] }, "then": { "required": ["source_pack_sha256"] } }
+            ]
+          }
+        }
+      ]
+    },
+    "task_result": {
+      "type": "object", "additionalProperties": false,
+      "required": ["task_id", "status", "search_log", "finding_ids", "evidence_ids", "limitations"],
+      "properties": {
+        "task_id": { "type": "string", "pattern": "^RQT-[A-Z0-9][A-Z0-9._-]{0,63}$" },
+        "status": { "enum": ["complete", "open", "blocked", "no_source_found", "conflict_unresolved", "not_applicable"] },
+        "search_log": {
+          "type": "array",
+          "items": {
+            "type": "object", "additionalProperties": false,
+            "required": ["query", "channel", "searched_at", "result_summary"],
+            "properties": {
+              "query": { "type": "string", "minLength": 1, "maxLength": 600 },
+              "channel": { "type": "string", "minLength": 1, "maxLength": 160 },
+              "searched_at": { "type": "string", "format": "date-time" },
+              "result_summary": { "type": "string", "minLength": 1, "maxLength": 1200 }
+            }
+          }
+        },
+        "finding_ids": { "type": "array", "uniqueItems": true, "items": { "type": "string", "pattern": "^RFN-[A-Z0-9][A-Z0-9._-]{0,63}$" } },
+        "evidence_ids": { "type": "array", "uniqueItems": true, "items": { "type": "string", "pattern": "^REV-[A-Z0-9][A-Z0-9._-]{0,63}$" } },
+        "limitations": { "type": "array", "items": { "type": "string", "minLength": 1, "maxLength": 1000 } }
+      },
+      "allOf": [{ "if": { "properties": { "status": { "const": "no_source_found" } }, "required": ["status"] }, "then": { "properties": { "search_log": { "minItems": 1 } } } }]
+    },
+    "finding": {
+      "type": "object", "additionalProperties": false,
+      "required": ["finding_id", "task_id", "statement", "disposition", "evidence_ids", "counterevidence_ids", "falsifier_review", "limitations"],
+      "properties": {
+        "finding_id": { "type": "string", "pattern": "^RFN-[A-Z0-9][A-Z0-9._-]{0,63}$" },
+        "task_id": { "type": "string", "pattern": "^RQT-[A-Z0-9][A-Z0-9._-]{0,63}$" },
+        "statement": { "type": "string", "minLength": 1, "maxLength": 1600 },
+        "disposition": { "enum": ["supported_for_review", "contested", "insufficient", "context_only"] },
+        "evidence_ids": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "pattern": "^REV-[A-Z0-9][A-Z0-9._-]{0,63}$" } },
+        "counterevidence_ids": { "type": "array", "uniqueItems": true, "items": { "type": "string", "pattern": "^REV-[A-Z0-9][A-Z0-9._-]{0,63}$" } },
+        "falsifier_review": {
+          "type": "object", "additionalProperties": false,
+          "required": ["question", "result", "note"],
+          "properties": {
+            "question": { "type": "string", "minLength": 1, "maxLength": 600 },
+            "result": { "enum": ["survives_review", "weakened", "unresolved", "not_attempted", "not_applicable"] },
+            "note": { "type": "string", "minLength": 1, "maxLength": 1200 }
+          }
+        },
+        "limitations": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1, "maxLength": 1000 } }
+      }
+    },
+    "claim": {
+      "type": "object", "additionalProperties": false,
+      "required": ["claim_id", "statement", "disposition", "finding_ids", "counterevidence_ids", "falsifier_review", "limitations"],
+      "properties": {
+        "claim_id": { "type": "string", "pattern": "^RCL-[A-Z0-9][A-Z0-9._-]{0,63}$" },
+        "statement": { "type": "string", "minLength": 1, "maxLength": 1600 },
+        "disposition": { "enum": ["supported_for_review", "contested", "insufficient", "context_only"] },
+        "finding_ids": { "type": "array", "uniqueItems": true, "items": { "type": "string", "pattern": "^RFN-[A-Z0-9][A-Z0-9._-]{0,63}$" } },
+        "counterevidence_ids": { "type": "array", "uniqueItems": true, "items": { "type": "string", "pattern": "^REV-[A-Z0-9][A-Z0-9._-]{0,63}$" } },
+        "falsifier_review": {
+          "type": "object", "additionalProperties": false,
+          "required": ["question", "result", "note"],
+          "properties": {
+            "question": { "type": "string", "minLength": 1, "maxLength": 600 },
+            "result": { "enum": ["survives_review", "weakened", "unresolved", "not_attempted", "not_applicable"] },
+            "note": { "type": "string", "minLength": 1, "maxLength": 1200 }
+          }
+        },
+        "limitations": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1, "maxLength": 1000 } }
+      },
+      "allOf": [
+        { "if": { "properties": { "disposition": { "enum": ["supported_for_review", "contested", "context_only"] } }, "required": ["disposition"] }, "then": { "properties": { "finding_ids": { "minItems": 1 } } } }
+      ]
+    },
+    "registered_source": {
+      "type": "object", "additionalProperties": false,
+      "required": ["record_kind", "owner", "source_id", "content_sha256"],
+      "properties": {
+        "record_kind": { "const": "registered_source" },
+        "owner": { "$ref": "#/$defs/owner" },
+        "source_id": { "type": "string", "minLength": 1, "maxLength": 200 },
+        "content_sha256": { "$ref": "#/$defs/sha256" }
+      }
+    },
+    "candidate_source": {
+      "type": "object", "additionalProperties": false,
+      "required": ["record_kind", "owner", "candidate_id", "authority", "source_type", "title", "url", "language", "retrieved_at", "content_sha256", "activation_status"],
+      "properties": {
+        "record_kind": { "const": "candidate_source" },
+        "owner": { "$ref": "#/$defs/owner" },
+        "candidate_id": { "type": "string", "pattern": "^CAND-[A-Z0-9][A-Z0-9._-]{0,63}$" },
+        "authority": { "type": "string", "minLength": 1, "maxLength": 300 },
+        "source_type": { "enum": ["legislation", "judgment", "official_guidance", "official_register", "primary_other", "secondary_commentary"] },
+        "title": { "type": "string", "minLength": 1, "maxLength": 600 },
+        "url": { "type": "string", "format": "uri", "pattern": "^https://" },
+        "language": { "type": "string", "pattern": "^[A-Za-z]{2,3}(-[A-Za-z0-9]{2,8})*$" },
+        "published_or_effective_date": { "type": ["string", "null"], "format": "date" },
+        "retrieved_at": { "type": "string", "format": "date-time" },
+        "content_sha256": { "$ref": "#/$defs/sha256" },
+        "activation_status": { "const": "candidate_not_activated" }
+      }
+    },
+    "evidence": {
+      "type": "object", "additionalProperties": false,
+      "required": ["evidence_id", "task_id", "relation", "directness", "source", "pinpoint", "accessed_at", "limitations"],
+      "properties": {
+        "evidence_id": { "type": "string", "pattern": "^REV-[A-Z0-9][A-Z0-9._-]{0,63}$" },
+        "task_id": { "type": "string", "pattern": "^RQT-[A-Z0-9][A-Z0-9._-]{0,63}$" },
+        "relation": { "enum": ["supports", "contradicts", "insufficient", "context_only"] },
+        "directness": { "enum": ["direct", "indirect", "unclear"] },
+        "source": { "oneOf": [{ "$ref": "#/$defs/registered_source" }, { "$ref": "#/$defs/candidate_source" }] },
+        "pinpoint": { "type": "string", "minLength": 1, "maxLength": 600 },
+        "accessed_at": { "type": "string", "format": "date-time" },
+        "excerpt": { "type": "string", "maxLength": 500 },
+        "limitations": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1, "maxLength": 1000 } }
+      }
+    }
+  }
+}
