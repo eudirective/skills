@@ -225,7 +225,7 @@ def _record_status(record: dict, evidence: dict, source_class: str) -> tuple[boo
         if source.get("activation_status") != "candidate_not_activated":
             raise SourcePreflightError("candidate_activation_state_invalid")
         _national_candidate_record(record["source_ref"], source)
-        return False, "candidate_source_not_accepted"
+        return False, "source_candidate_unaccepted"
 
     if record["record_kind"] == "official_reference":
         if source.get("activation_status") != "reference_only_not_registered":

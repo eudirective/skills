@@ -1,5 +1,26 @@
 # Release and version policy
 
+## Plugin v0.53.0 / core v0.52.0 issue-led routing and concise response default
+
+This compatible core minor adds a deterministic selector from declared,
+privacy-minimised issue signals to the existing C27 check registry and source
+owners, plus a five-stage model-led consultation workflow and issue disposition
+contract. The default answer now leads with the requested guidance and a short
+coverage summary; the detailed issue/C27/operation/module board remains
+available for a requested audit. The optional 0.1 route receipt can include
+issue references and signal IDs; the existing gate checks required routed C27
+checks and keeps source/fact gaps open while accepting older receipts without
+the new field. Synthetic scripts remain restricted to abstract fixtures, and
+the route gate is still not host-integrated. The enclosing plugin advances
+from `0.52.2` to `0.53.0`. The private core regression runner passed 29/34
+scripts locally; five remained unavailable or failed on existing constraints:
+Node subprocess permission, missing local PyMuPDF for three document tests,
+and absent Sweden module source notes for the C17 remedy test. The refreshed
+dashboard-format test passed 6/6, issue selection passed 15/15, route-gate
+tests passed 16/16, evaluation aggregation passed 8/8, and direct version
+verification passed. No fresh target-model consultations were run, so
+consultation behavior is not verified.
+
 ## Plugin v0.51.3 / core v0.50.3 board-style execution summary
 
 Substantive consultation dashboards now present work in grouped, separated

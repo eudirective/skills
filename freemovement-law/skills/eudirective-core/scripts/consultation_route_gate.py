@@ -19,6 +19,11 @@ from contract_validate import ContractError, load_json, validate_obj
 from module_conformance import ConformanceError, validate_paths
 from research_gate import ResearchGateError, validate_research
 from issue_source_preflight import SourcePreflightError, validate_source_preflight
+from consultation_issue_selection import (
+    SelectionError as IssueSelectionError,
+    load_json as load_issue_json,
+    select_check_ids,
+)
 
 ROOT = Path(__file__).resolve().parents[1]
 PLUGIN_ROOT = ROOT.parents[1]
@@ -49,6 +54,8 @@ OPERATION_EVIDENCE_KINDS = {
     "source_preflight": {"source_preflight"},
 }
 CLOSED_C27_STATUSES = {"assessed", "not_applicable"}
+ISSUE_MATRIX_PATH = ROOT / "references" / "consultation-issue-routing.json"
+ISSUE_REGISTRY_PATH = ROOT / "references" / "state-engine" / "check-registry.json"
 
 
 class RouteGateError(ValueError):
@@ -174,6 +181,50 @@ def check_operation_evidence(route: dict, evidence_index: dict[str, dict],
                     f"operation:{operation['operation_id']}:"
                     f"evidence_kind_not_acceptable:{ref}"
                 )
+
+
+def check_declared_issues(route: dict, evidence_index: dict[str, dict],
+                          gaps: list[str]) -> None:
+    """Reconcile optional declared issues with routed C27 checks by scope.
+
+    Legacy receipts may omit ``issues``. When present, this validates only
+    declared issue signals and cannot discover an omitted issue.
+    """
+    issues = route.get("issues")
+    if issues is None:
+        return
+    try:
+        matrix = load_issue_json(ISSUE_MATRIX_PATH)
+        registry_data = load_issue_json(ISSUE_REGISTRY_PATH)
+    except IssueSelectionError as error:
+        raise RouteGateError("issue_routing_configuration_invalid") from error
+    seen_issue_refs: set[str] = set()
+    actual_by_scope: dict[str, set[str]] = {}
+    for item in route["c27_checks"]:
+        actual_by_scope.setdefault(item["scope_ref"], set()).add(item["record"]["check_id"])
+
+    for issue in issues:
+        issue_ref = issue["issue_ref"]
+        scope_ref = issue["scope_ref"]
+        if issue_ref in seen_issue_refs:
+            raise RouteGateError(f"issue_duplicate:{issue_ref}")
+        seen_issue_refs.add(issue_ref)
+        evidence = evidence_index.get(issue["evidence_ref"])
+        if evidence is None:
+            raise RouteGateError(f"issue_evidence_reference_dangling:{issue_ref}")
+        if evidence["kind"] != "conversation_record":
+            raise RouteGateError(f"issue_evidence_wrong_kind:{issue_ref}")
+        try:
+            required = select_check_ids(
+                issue["signal_ids"], matrix=matrix, registry=registry_data
+            )
+        except IssueSelectionError as error:
+            raise RouteGateError(f"issue_signal_selection_invalid:{issue_ref}:{error}") from error
+        actual = actual_by_scope.get(scope_ref, set())
+        for check_id in sorted(set(required) - actual):
+            gaps.append(f"issue:{issue_ref}:c27_required_check_missing:{check_id}")
+        if issue["disposition"] in {"source_missing", "fact_missing"}:
+            gaps.append(f"issue:{issue_ref}:disposition:{issue['disposition']}")
 
 
 def check_operations(route: dict, gaps: list[str]) -> dict[str, dict]:
@@ -322,6 +373,7 @@ def validate_route(path: Path) -> dict:
     evidence_index = check_evidence_index(
         route, path.resolve().parent, module_reports, research_reports, source_preflight_reports)
     check_operation_evidence(route, evidence_index, gaps)
+    check_declared_issues(route, evidence_index, gaps)
 
     if route["coverage_claim"] == "comprehensive" and gaps:
         status = "rejected_comprehensive_claim"
@@ -339,7 +391,7 @@ def validate_route(path: Path) -> dict:
         "module_pair_reports": module_reports,
         "research_reports": research_reports,
         "source_preflight_reports": source_preflight_reports,
-        "assurance": "model_declared_plan_and_references_only; conditional_trigger_semantics_and_evidence_truth_not_verified",
+        "assurance": "model_declared_plan_and_references_only; issue_signal_routing_is_checked_only_for_declared_issues; omitted_issues_conditional_trigger_semantics_and_evidence_truth_not_verified",
         "host_release_enforcement": "requires_host_to_call_this_gate_and_enforce_its_result",
     }
 
