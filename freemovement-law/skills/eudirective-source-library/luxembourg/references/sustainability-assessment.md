@@ -2,7 +2,7 @@
 
 ## Scope and result
 
-The 42-record register covers laws, official guidance, forms, visas and missions, procedure, remedies, case law, oversight, civil-status evidence, and legal aid. A bounded retrieval and conversion rule is now implemented for direct official pages and Legilux legal texts. It captured 38 records; 35 were converted to unaccepted review candidates, three public portal shells yielded no source body, and four direct candidate URLs returned HTTP 404. None is accepted into the trusted corpus.
+The 42-record register covers laws, official guidance, forms, visas and missions, procedure, remedies, case law, oversight, civil-status evidence, and legal aid. A bounded retrieval and conversion rule is now implemented for direct official pages and Legilux legal texts. It captured 38 records; 35 were converted to unaccepted local-copy review candidates, three public portal shells yielded no source body, and four direct candidate URLs returned HTTP 404. This local-copy status does not prevent human-reviewed official links from being used within their scope.
 
 Offline verification passes for all 35 conversions and the three retained PDF byte streams. The verifier checks exact source hashes and deterministic Markdown replay. Changed HTML captures are staged under `temp/luxembourg/pending/` so they do not replace earlier candidate artifacts without review.
 
@@ -16,7 +16,7 @@ The scripts are `sync_luxembourg.py` and the shared `sync_candidate_pages.py` he
 
 ## Source-specific findings
 
-The nine LegalDocML texts include the Immigration Law, its original act, the 2008 formalities regulation, the 2024 amendment, procedure/access/data-protection laws and civil-status legislation. Legilux states that consolidated texts are documentary and have no legal force. A consolidation is therefore a readable current-text aid; the authentic Mémorial publication and amendment/rectification chain still need to be reconciled before legal reliance. A pinned ELI URL is not by itself a complete recurring version-discovery rule.
+The nine LegalDocML texts include the Immigration Law, its original act, the 2008 formalities regulation, the 2024 amendment, procedure/access/data-protection laws and civil-status legislation. Legilux labels consolidated texts documentary and without legal force. Use the government-published consolidation as the closest working text, preserve that caveat and its edition date, and consult an individual Mémorial item only for a material discrepancy, known post-cutoff change, commencement or correction issue. Do not reconstruct the full amendment/rectification chain by default. A pinned ELI URL alone is not a recurring monitoring rule, but that does not make the reference unusable.
 
 Twenty-three HTML candidate pages converted. Eighteen differed from earlier raw captures and are staged pending review. Some are mutable Guichet guidance and attachment pages; they need parent-index rediscovery, linked-form checks, language/date comparisons and publisher-specific reuse review. Three portal pages (N-Lex discovery, Casemates home and its ELI reference page) returned only shells, not source text. Four candidate pages returned 404: `lu-11`, `lu-19`, `lu-20` and `lu-42`; rediscover these from current parent pages rather than treating the error as proof that the procedure no longer exists.
 

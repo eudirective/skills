@@ -2,7 +2,7 @@
 
 ## Scope and result
 
-The bounded register now has 54 official-source candidates, including laws, regulations, guidance, forms, decisions, oversight and discovery channels. A live capture pass saved source bytes for 32 candidates and converted 31 to review Markdown. Five changed outputs are staged under `temp/norway/pending/`. One additional response is a portal shell without a source body. No source has been accepted.
+The bounded register now has 54 official-source candidates, including laws, regulations, guidance, forms, decisions, oversight and discovery channels. A live capture pass saved source bytes for 32 candidates and converted 31 to review Markdown. Five changed outputs are staged under `temp/norway/pending/`. One additional response is a portal shell without a source body. No locally stored artifact has been accepted.
 
 The Lovdata public-data rule is **sustainable with limits (medium confidence)** for selected current national laws, central regulations and Avdeling I promulgations. It uses the documented unauthenticated public-data API, checks package identity and size, preserves exact bytes and publisher version metadata, and replays offline. The rule does not cover local Avdeling II regulations or turn the captured archive index into complete Gazette text coverage. The non-legislative source lane remains partial because many UDI pages reject ordinary GETs and one portal returns only a shell.
 
@@ -34,7 +34,7 @@ The 2026 public-data list changed during the second sync, so the new list and ch
 
 | Source class | Result | Sustainability limit |
 |---|---|---|
-| Lovdata API/package catalogue and current law | Live list/schema, three packages and selected legal texts captured; 0 accepted | Stable IDs and package timestamps support refresh. Only selected records were extracted; a changed consolidated text still needs legal review. |
+| Lovdata API/package catalogue and current law | Live list/schema, three packages and selected legal texts captured; 0 local copies accepted | Stable IDs and package timestamps support refresh. Only selected records were extracted; a changed consolidated text still needs legal review. |
 | Norsk Lovtidend Avdeling I | 2026 archive and 1,114-member index captured | The index is not a conversion of all promulgations. The 2001–2025 archive was not fetched. |
 | Local/regional regulations | Candidate `no-05` has no matching package in the documented public API list | No Avdeling II/local package was found; do not infer central-package coverage. |
 | EFTA texts and Norwegian guidance | EFTA pages and selected Police, UNE, Sivilombudet, court, Norway.no, legal-aid and privacy pages converted | Pages can be dynamic and public-content reuse terms are not established for every page. UNE decisions are a representative selection; court indexes do not cover all courts or unpublished decisions. |

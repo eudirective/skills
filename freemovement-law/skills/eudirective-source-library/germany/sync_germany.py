@@ -306,7 +306,7 @@ def render_zip(raw_zip: bytes, record: dict, descriptor: dict) -> bytes:
         f"- Retrieved: {descriptor['retrieved_at']}",
         f"- Source ZIP SHA-256: `{descriptor['source_sha256']}`",
         "",
-        "> **Review candidate.** The publisher describes this as a consolidated law text; the published Bundesgesetzblatt remains the authoritative promulgation record. This conversion is not accepted into the trusted legal corpus.",
+        "> **Review candidate.** Use the latest Gesetze im Internet consolidation as the government-published working text and retain its date and editorial notices. Consult a Bundesgesetzblatt act for a specific relevant discrepancy, post-cutoff change, or commencement question; do not reconstruct the full amendment history.",
         "> **Attribution:** Federal Ministry of Justice / Federal Office of Justice, Gesetze im Internet. The publisher states German legal norms are available for free use and reuse.",
         "",
         "## Consolidated statutory text (German)", "",

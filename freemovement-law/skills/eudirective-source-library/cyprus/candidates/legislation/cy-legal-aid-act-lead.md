@@ -8,68 +8,12 @@
 - Retrieved: 2026-10-19T02:29:12+00:00
 - Media type: `text/html`
 - Publisher/version evidence: Not established in this bounded review
-- Extraction: `body`
+- Extraction: `div.main-content`
 - Exact response SHA-256: `684e3e779c24904f9831cda43ac72e172bb14bbaa501e2a7f6eddd0874db175f`
 
-> **Review candidate.** Not accepted into the trusted source corpus. Check source identity, current version, scope, completeness, and reuse conditions before reliance.
+> **Local-copy review notice.** This captured file is not accepted as a retained copy. A direct official link can be used for research after reviewing relevant content, date/version, scope, and caveats. Local-copy acceptance and reuse terms matter only when retaining or redistributing this file.
 
 ## Captured source text
-
-ΠΑΓΚΥΠΡΙΟΣ ΔΙΚΗΓΟΡΙΚΟΣ ΣΥΛΛΟΓΟΣ
-
-CyLaw
-|
-Αναφορικά μ'εμάς
-|
-Επικοινωνία
-
-Κατάλογος Ενοποιημένης Νομοθεσίας
-
-Ο Περί Νομικής Αρωγής Νόμος του 2002 (165(I)/2002)
-
-Περιεχόμενα
-
-Πλήρες Κείμενο
-
-Εκτύπωση
-
-Ιστορικό Τροποποιήσεων
-
-165(I)/2002
-
-22(I)/2005
-
-77(I)/2005
-
-43(I)/2006
-
-132(I)/2009
-
-172(I)/2011
-
-8(I)/2012
-
-64(Ι)/2014
-
-105(Ι)/2014
-
-140(Ι)/2014
-
-20(Ι)/2015
-
-173(I)/2015
-
-111(I)/2016
-
-72(I)/2019
-
-ΔΙΟΡΘΩΣΗ Ε.Ε. Αρ. 4709, 7.6.2019
-
-128(I)/2024
-
-170(I)/2024
-
-ΔΙΟΡΘΩΣΗ Ε.Ε. Αρ. 5029, 14.3.2025
 
 Προοίμιο
 
@@ -850,7 +794,3 @@ CyLaw
 (α) άμεσης πρόσβασης σε νομικές συμβουλές και νομική εκπροσώπηση για την απαίτηση αποζημίωσης, σύμφωνα με τον περί Δικηγόρων Νόμο, όπως αυτός εκάστοτε τροποποιείται ή αντικαθίσταται,
 
 (β) νομικής αρωγής κατά τα προβλεπόμενα στον περί Νομικής Αρωγής Νόμο, όπως αυτός εκάστοτε τροποποιείται ή αντικαθίσταται.
-
-Εκτύπωση
-
-Cylaw.org: Από το ΚΙΝOΠ/CyLii και τη ConvertPLC για τον Παγκύπριο Δικηγορικό Σύλλογο

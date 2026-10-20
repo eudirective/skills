@@ -1,0 +1,340 @@
+{
+  "schema_version": "1.0.0",
+  "jurisdiction": "CY",
+  "as_of": "2026-10-20",
+  "completion_states": [
+    "source identified",
+    "source captured and accepted",
+    "topic adequately covered",
+    "country review complete"
+  ],
+  "country_review_complete": false,
+  "accepted_source_count": 10,
+  "accepted_current_law_source_count": 2,
+  "accepted_topic_count": 0,
+  "topics": [
+    {
+      "topic_id": "union_free_movement",
+      "question": "Can a Union/EEA/Swiss citizen and each covered family category enter, reside, retain residence and acquire permanent residence, and what separate Withdrawal Agreement rules apply to protected UK nationals?",
+      "required_layers": [
+        "Directive 2004/38",
+        "current government-published consolidated text of Law 7(I)/2007 (or the closest government-published version available)",
+        "relevant implementing rules and forms",
+        "authority procedure",
+        "remedies and relevant case law",
+        "Withdrawal Agreement rights and any material commencement question"
+      ],
+      "source_ids": [
+        "cy-cylaw-law7-greek-consolidation",
+        "cy-free-movement-amendment-181i-2011",
+        "cy-free-movement-amendment-193i-2020",
+        "cy-free-movement-amendment-28i-2017",
+        "cy-free-movement-amendment-67i-2013",
+        "cy-free-movement-amendment-77i-2015",
+        "cy-free-movement-amendment-8i-2013",
+        "cy-free-movement-amendment-96i-2023",
+        "cy-free-movement-consolidation",
+        "cy-free-movement-gazette-2007",
+        "cy-free-movement-olc-notice-2024",
+        "cy-gazette-law-23-2024-chain-reference",
+        "cy-meu1-forms",
+        "cy-meu1-guidance",
+        "cy-meu2-forms",
+        "cy-meu2-forms-el",
+        "cy-meu2-guidance",
+        "cy-meu2-guidance-el",
+        "cy-meu3-forms",
+        "cy-meu3-guidance",
+        "cy-migration-uk-withdrawal-guidance-el"
+      ],
+      "unresolved_instruments": [
+        "The current Law 7(I)/2007 government-published consolidation has not been directly reviewed; the recorded OLC English edition runs through 2023, and its current PDF route was inaccessible in the recorded review. No current consolidation is held locally. Relevant post-cutoff wording and commencement questions remain open; individual Gazette amendments are targeted follow-ups, not a required full chain."
+      ],
+      "status": "incomplete; a current government-published consolidated text has not been directly reviewed, and material post-cutoff wording/currentness and legal review remain open (local-copy status is tracked separately)",
+      "dependency_ids": [
+        "dep-law7-directive-2004-38",
+        "dep-law193-commencement"
+      ],
+      "shared_core_source_ids": [
+        "eu:32004l0038"
+      ],
+      "source_gap_ids": [
+        "cy-free-movement-current-text"
+      ]
+    },
+    {
+      "topic_id": "third_country_family_of_cypriot",
+      "question": "What entry, residence, retention, employment, documentation and review route applies where the sponsor is Cypriot and not exercising free movement?",
+      "required_layers": [
+        "Cap.105 and relevant regulations/amendments",
+        "current Migration Department policy",
+        "forms/checklists",
+        "visa/entry route",
+        "remedies"
+      ],
+      "source_ids": [
+        "cy-cap105-amendment-4i-2025",
+        "cy-cap105-olc-greek-consolidation",
+        "cy-cap105-primary-law",
+        "cy-cypriot-family-employment-forms",
+        "cy-cypriot-family-forms-index",
+        "cy-cypriot-family-no-employment-forms",
+        "cy-cypriot-family-route",
+        "cy-cypriot-family-route-el"
+      ],
+      "unresolved_instruments": [
+        "The current government-published Cap.105 text and relevant regulations have not been directly reviewed; the recorded OLC Greek consolidation route returned 404, and no current local copy is held. Law 4(I)/2025 section 29 has a specific unresolved commencement condition unless a current consolidation resolves it. A full Gazette chain is not required."
+      ],
+      "status": "incomplete; a current government-published Cap.105 text has not been directly reviewed, and the recorded OLC route returned 404; the section-29 commencement question and procedures remain open (local-copy status is tracked separately)",
+      "dependency_ids": [
+        "dep-cypriot-family-cap105"
+      ],
+      "source_gap_ids": [
+        "cy-cap105-primary-law"
+      ]
+    },
+    {
+      "topic_id": "visa_border_and_schengen",
+      "question": "Which visa and travel rules apply by passport, sponsor, card type, travel purpose and destination?",
+      "required_layers": [
+        "national visa law",
+        "EU Visa Code and visa-list regulation",
+        "Schengen Borders Code",
+        "Directive-family card categories",
+        "mission-specific instructions and channels"
+      ],
+      "source_ids": [
+        "cy-mfa-mission-beirut-visa-el",
+        "cy-mfa-mission-paris-visa",
+        "cy-mfa-mission-vienna-visa",
+        "cy-mfa-mission-washington-visa-el",
+        "cy-mfa-mission-yerevan-visa-el",
+        "cy-mfa-missions-directory",
+        "cy-mfa-national-visa-exemptions",
+        "cy-mfa-visa-hub",
+        "cy-national-vis-pdf",
+        "cy-schengen-status-pdf"
+      ],
+      "status": "incomplete; official advice conflicts on card types and mission routes",
+      "dependency_ids": [
+        "dep-old-border-code",
+        "dep-old-visa-list",
+        "dep-public-documents",
+        "dep-eu-family-card"
+      ],
+      "shared_core_source_ids": [
+        "eu:32004l0038",
+        "eu:32016r0399",
+        "eu:32018r1806"
+      ],
+      "unresolved_instruments": [
+        "Current national visa rules and the current EU visa-list instrument, including operative card classifications.",
+        "Mission-specific instructions, appointment channels and outsourcing/provider routes."
+      ]
+    },
+    {
+      "topic_id": "administrative_procedure_and_judicial_remedies",
+      "question": "How can an applicant challenge a refusal, delay, excessive document demand or omission?",
+      "required_layers": [
+        "Current government-published Constitution Article 146 and consolidated procedural statutes",
+        "relevant deadlines, jurisdiction and remedies",
+        "legal-aid procedure and relevant judgments"
+      ],
+      "source_ids": [
+        "cy-admin-court-acs-477-2022",
+        "cy-admin-court-amendment-142i-2025",
+        "cy-admin-court-law-lead",
+        "cy-admin-court-nurul-amin-1706-2017",
+        "cy-admin-court-rules-index",
+        "cy-admin-law-office-art146",
+        "cy-admin-law-office-art146-el",
+        "cy-constitution-amendment-130i-2025",
+        "cy-general-admin-act-lead",
+        "cy-general-admin-law-amendment-28i-2020",
+        "cy-legal-aid-official-consolidation",
+        "cy-scc-edd-215-19"
+      ],
+      "status": "incomplete; two Greek-language Administrative Court mirror leads add issue-level material, but official verification, primary remedy texts and complete procedural coverage remain unresolved",
+      "dependency_ids": [
+        "dep-admin-remedies",
+        "dep-access-data-remedies"
+      ],
+      "unresolved_instruments": [
+        "Current government-published texts of the Constitution/Article 146, Law 158(I)/1999 and Law 131(I)/2015 remain unresolved. Use a current official consolidation where available; the 2025 Acts are bounded sources for their specific changes, not a requirement to reconstruct every amendment.",
+        "Procedural rule 11/2025 is present in the official index, but its exact Greek text, commencement and legal effect remain unverified.",
+        "Official full-text decisions with verified holdings and a current boundary for case-law coverage remain unresolved.",
+        "The captured 2024 decision is bounded to humanitarian-return facts and does not replace primary constitutional/procedural texts."
+      ]
+    },
+    {
+      "topic_id": "oversight_access_privacy",
+      "question": "What administrative complaint, information-access, data-protection and legal-aid mechanisms are available?",
+      "required_layers": [
+        "Ombudsman Act and complaint channel",
+        "access-to-information law and appeals",
+        "data-protection law and complaint form",
+        "legal aid eligibility/procedure"
+      ],
+      "source_ids": [
+        "cy-access-info-consolidation",
+        "cy-data-protection-complaint",
+        "cy-data-protection-law",
+        "cy-data-protection-law-greek-index",
+        "cy-information-commissioner-laws",
+        "cy-legal-aid-official-consolidation",
+        "cy-legal-aid-official-consolidation-greek",
+        "cy-ombudsman-amendment-127i-2022",
+        "cy-ombudsman-complaint-service",
+        "cy-ombudsman-core-greek",
+        "cy-ombudsman-laws-consolidation"
+      ],
+      "status": "incomplete; official references are identified, but relevant current content has not been directly reviewed and versions remain unchecked; local-copy status is tracked separately",
+      "dependency_ids": [
+        "dep-ombudsman-act",
+        "dep-access-data-remedies"
+      ],
+      "source_gap_ids": [
+        "cy-ombudsman-primary-law"
+      ]
+    },
+    {
+      "topic_id": "territorial_application",
+      "question": "How do EU-law suspension and crossing rules affect sources and routes in Cyprus?",
+      "required_layers": [
+        "Protocol No. 10",
+        "Green Line Regulation 866/2004 and amendments",
+        "national operational rules"
+      ],
+      "source_ids": [
+        "cy-protocol-no-10",
+        "cy-green-line-regulation-866-2004",
+        "cy-protocol-no-10-el",
+        "cy-green-line-regulation-866-2004-el"
+      ],
+      "status": "primary Protocol No. 10 and Green Line texts captured in Greek and English; national operational rules and post-2015 update check remain unresolved",
+      "dependency_ids": [
+        "dep-cyprus-territory"
+      ],
+      "source_gap_ids": [
+        "cyprus-territorial-instruments"
+      ],
+      "unresolved_instruments": [
+        "Current EUR-Lex consolidated Green Line Regulation and national operational crossing rules. The captured EU consolidation is dated 31 August 2015; check for a later consolidated version rather than reconstructing the regulation from every amendment."
+      ]
+    },
+    {
+      "topic_id": "judicial_authority_and_case_law",
+      "question": "What have competent post-2023 Cypriot courts decided on EU-family entry/residence, procedure and remedies?",
+      "required_layers": [
+        "Administrative Court decisions",
+        "appellate jurisdiction and decisions",
+        "Supreme Constitutional Court role",
+        "publication coverage and repeatable discovery"
+      ],
+      "source_ids": [
+        "cy-supreme-court-decisions",
+        "cy-supreme-constitutional-court-decisions",
+        "cy-scc-edd-215-19",
+        "cy-admin-court-rules-index",
+        "cy-case-law-ejustice-overview-el",
+        "cy-admin-court-acs-477-2022",
+        "cy-admin-court-nurul-amin-1706-2017"
+      ],
+      "status": "incomplete; one official humanitarian-return appeal and two Greek-language EU-family judgment leads on a nonofficial mirror are recorded, but official content review and repeatable discovery remain open",
+      "dependency_ids": [],
+      "unresolved_instruments": [
+        "Official decisions directly addressing EU-family entry/residence and repeatable coverage across the Administrative Court and appellate courts.",
+        "The captured 2024 decision concerns a third-country national humanitarian return request and is not EU-family precedent.",
+        "Official confirmation and review of the full text for decisions 477/2022 and 1706/2017; repeatable search across competent Cypriot courts"
+      ],
+      "source_gap_ids": [
+        "cyprus-case-law-coverage"
+      ]
+    }
+  ],
+  "unresolved_source_gaps": [
+    {
+      "gap_id": "cy-free-movement-current-text",
+      "required_sources": [
+        "A current government-published consolidated text of Law 7(I)/2007, or the closest usable government-published version",
+        "Specific post-cutoff amendments or commencement instruments only where they materially affect the reviewed provisions; check the known Law 193(I)/2020 commencement condition if UK Withdrawal Agreement treatment is in scope"
+      ],
+      "discovery_records": [
+        "cy-free-movement-consolidation",
+        "cy-law-commissioner-index",
+        "cy-migration-legislation-index",
+        "cy-gpo-archive"
+      ],
+      "status": "Current official text has not been directly reviewed through an accessible government route; recorded OLC consolidation routes were inaccessible. The available English text runs through 2023; review the closest government-published text and its cutoff when accessible. Check a specific later act or commencement notice only if material. Local retention is optional.",
+      "note": "Seven historical amendment records are mapped as discovery leads. Their individual capture and assembly are not required when a usable government consolidation is available. The 2024 cross-reference and the specific Law 193(I)/2020 commencement clause are retained for targeted checks if they affect the issue."
+    },
+    {
+      "gap_id": "cy-cap105-primary-law",
+      "required_sources": [
+        "A current government-published consolidated text of Cap.105, or the closest usable government-published version",
+        "Relevant regulations and any specific commencement instrument that changes the text applicable to the reviewed issue"
+      ],
+      "discovery_records": [
+        "cy-cypriot-family-route",
+        "cy-law-commissioner-index",
+        "cy-migration-legislation-index",
+        "cy-legal-aid-official-consolidation",
+        "cy-gpo-archive",
+        "cy-cap105-olc-greek-consolidation",
+        "cy-cap105-amendment-4i-2025"
+      ],
+      "status": "Current government-published consolidation has not been directly reviewed through an accessible route; the recorded OLC route returned 404. Review the closest government-published text and its version/cutoff when accessible. Section 29 commencement status remains open unless a current text resolves it. Local retention is optional.",
+      "note": "The official Gazette issue 5026 / Law 4(I)/2025 bytes and section-29 passage are accepted within their narrow scope. A full amendment-chain reconstruction is not required; use a current government-published Cap.105 text and resolve the specific commencement issue if that text does not."
+    },
+    {
+      "gap_id": "cy-ombudsman-primary-law",
+      "required_sources": [
+        "Commissioner for Administration Law 3/1991",
+        "amendments including Law 127(I)/2022 and later changes"
+      ],
+      "discovery_records": [
+        "cy-ombudsman-laws-consolidation",
+        "cy-ombudsman-core",
+        "cy-gpo-archive"
+      ],
+      "status": "official_consolidation_identified_but_not_directly_reviewed",
+      "note": "The candidate inventory has the official English-consolidation lead and Ombudsman guidance/form sources. Directly review the government-published Act, record its displayed version/date and any material limits, and use a specific Gazette item only if a concrete post-cutoff or legal-effect question remains; local capture and a full amendment-chain check are optional."
+    },
+    {
+      "gap_id": "cyprus-territorial-instruments",
+      "required_sources": [
+        "Protocol No. 10 (Greek and English official versions)",
+        "Regulation (EC) No 866/2004 (Greek and English official consolidated versions)",
+        "Cyprus national operational rules"
+      ],
+      "discovery_records": [
+        "cy-protocol-no-10",
+        "cy-green-line-regulation-866-2004",
+        "cy-protocol-no-10-el",
+        "cy-green-line-regulation-866-2004-el"
+      ],
+      "status": "EU instruments captured in Greek and English; national operational rules and post-2015 currentness follow-up remain open",
+      "note": "EUR-Lex Protocol No. 10 ELI texts and the 31 August 2015 consolidated Green Line Regulation PDFs are captured and locally accepted within their declared version/language scopes. This does not supply Cyprus operational crossing instructions or close the post-2015 change check."
+    },
+    {
+      "gap_id": "cyprus-case-law-coverage",
+      "required_sources": [
+        "Official individual decisions on EU-citizen family entry/residence and remedies",
+        "Repeatable discovery and coverage boundary for Administrative Court and Supreme Constitutional Court decisions"
+      ],
+      "discovery_records": [
+        "cy-supreme-court-decisions",
+        "cy-supreme-constitutional-court-decisions",
+        "cy-scc-edd-215-19"
+      ],
+      "status": "one immigration appeal captured; EU-family decisions and repeatable case-law coverage remain unresolved",
+      "note": "The captured EDD 215/19 judgment concerns humanitarian residence/return of a third-country national. It supports a narrow procedural point about reasoned administrative decision-making but is not a free-movement family-member decision."
+    }
+  ],
+  "linkage_contract": {
+    "source_ids": "Country-pack candidate IDs from candidate-manifest.json.",
+    "dependency_ids": "Legal dependency IDs from source-dependencies.json.",
+    "shared_core_source_ids": "Shared-core IDs from source-library/shared-core-index-EN.json or external-only references in the country shared-core register.",
+    "source_gap_ids": "Unresolved source-gap IDs declared below; a discovery lead does not satisfy the source requirement."
+  }
+}

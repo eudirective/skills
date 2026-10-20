@@ -1,0 +1,3042 @@
+{
+  "schema_version": "1.0.0",
+  "jurisdiction": "HR",
+  "as_of": "2026-10-19",
+  "required_checks": [
+    "publisher_identity",
+    "current_legal_version",
+    "extraction_completeness",
+    "attachments_review",
+    "legal_classification",
+    "lawful_reuse"
+  ],
+  "policy": "Accepted-source counts and per-record accepted status describe retained local artifacts only. For ordinary research, a human-reviewed official link is sufficient within the publisher, identity, language, date/cutoff, relevant content, and limitations actually checked; no capture, hash, replay, conversion, or copying permission is required for link use. Required checks and semantic review below apply only when promoting a stored copy into the local corpus. Record the government-published version and its cutoff; check only a specific later change that may materially affect the question. Review extraction only as broadly as the format and intended use require, and review attachments only when relied upon. Local artifact acceptance does not establish topic coverage or country completion.",
+  "official_reference_reviews": {
+    "hr-mvep-family-visas": {
+      "status": "usable_official_reference",
+      "publisher": "Croatian Ministry of Foreign and European Affairs (MVEP)",
+      "url": "https://mvep.gov.hr/consular-information-246396/family-members-of-eu-eea-citizens-246399/246399",
+      "checked_on": "2026-10-19",
+      "language": "English",
+      "version_or_cutoff": "Undated page; reviewed 2026-10-19",
+      "scope": "MVEP's stated visa-exemption and facilitated-visa process for qualifying family members of EU/EEA/Swiss citizens",
+      "reviewed_content": "The page describes the residence-card basis for visa exemption and priority, expedited, no-fee short-stay visa processing with a minimum document set when a visa is required.",
+      "limitations": [
+        "The page is undated and embeds an obsolete HTTP Directive link.",
+        "Use this as an official procedural reference within the page's stated scope; verify legal rights against current legislation and check the responsible mission's practice.",
+        "No copying or republication permission is inferred from reference use."
+      ]
+    },
+    "hr-mvep-visa-appeal-current": {
+      "status": "usable_official_reference",
+      "publisher": "Croatian Ministry of Foreign and European Affairs (MVEP)",
+      "url": "https://mvep.gov.hr/informacije-za-gradjane-244593/konzularne-informacije-22730/vize-22733/zalba-protiv-odluke-o-odbijanju-ukidanju-ili-ponistenju-vize-22751/22751",
+      "checked_on": "2026-10-19",
+      "language": "Croatian",
+      "version_or_cutoff": "Undated page; cites the Foreigners Act through NN 55/26; reviewed 2026-10-19",
+      "scope": "MVEP's displayed visa refusal, annulment and revocation appeal route, deadline, decision period, fee, language and court-claim steps",
+      "reviewed_content": "The page states a 15-day administrative appeal, a 60-day decision period, a €130/USD 150.71 charge, and a 30-day court-claim period, with the language and filing details recorded in the source note.",
+      "limitations": [
+        "The page is undated; cross-check operative legal deadlines and remedies against current legislation.",
+        "The fee's application to qualifying Directive 2004/38 family members and available exemptions remain unresolved.",
+        "No copying or republication permission is inferred from reference use."
+      ]
+    }
+  },
+  "official_reference_review_schema": {
+    "status": "usable_official_reference",
+    "required_fields": [
+      "publisher",
+      "url",
+      "checked_on",
+      "language",
+      "version_or_cutoff",
+      "scope",
+      "reviewed_content",
+      "limitations"
+    ],
+    "note": "Record a human-reviewed official source link here when it supports a coverage layer without a retained local copy. This record does not change the local accepted-source count. Use version_or_cutoff='not displayed' and explain the limit when the publisher shows no version marker."
+  },
+  "accepted_source_count": 17,
+  "records": {
+    "hr-access-info-act": {
+      "status": "captured_review_candidate",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Captured from https://narodne-novine.nn.hr/clanci/sluzbeni/full/2013_02_25_403.html; publisher host and record identity still need a person/source-specific check."
+        },
+        "current_legal_version": {
+          "status": "pending",
+          "evidence": "A successful HTTP response and captured timestamp do not establish the current legal version; compare the chain with the current responsible-authority index."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Replayed only the official .sl-content .doc fragment; source fragment SHA-256 709ee34ac59e0b6ba1afed79a1716a4e3d902414c2479d6d0a478fdefa2acc86; converted text SHA-256 7e29e966351c27df054aefac9c5b8dfbb9384928424b170c358515a3e47956de; official record URL identifies NN 25/2013, item 403; 72 unique Article headings; publisher shell markers absent. Manual legal-scope and attachment reviews remain separate."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Source-specific .sl-content .doc fragment inspected; no embedded image or linked PDF/Office image attachment is present. The source is text-only for the captured official-document body."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "partial",
+        "method": "publisher_dom_fragment_replay_and_structural_checks",
+        "evidence": "The selector-bound official document fragment was retained and replayed deterministically; the Gazette citation and Article headings were inventoried and known page-shell strings were excluded. This establishes conversion fidelity to the selected DOM fragment, not current legal effect, issue coverage, or visual completeness of annexes.",
+        "source_fragment_path": "source-library/croatia/captures/official-texts/hr-access-info-act.html",
+        "source_fragment_sha256": "709ee34ac59e0b6ba1afed79a1716a4e3d902414c2479d6d0a478fdefa2acc86",
+        "converted_text_sha256": "7e29e966351c27df054aefac9c5b8dfbb9384928424b170c358515a3e47956de"
+      },
+      "candidate_path": "source-library/croatia/candidates/legislation/hr-access-info-act.md"
+    },
+    "hr-access-info-amend-69-22": {
+      "status": "located_not_captured",
+      "checks": {
+        "publisher_identity": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "current_legal_version": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "extraction_completeness": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "not_reviewed",
+        "method": null,
+        "evidence": "No source-level semantic comparison has been recorded."
+      }
+    },
+    "hr-access-info-amend-85-15": {
+      "status": "located_not_captured",
+      "checks": {
+        "publisher_identity": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "current_legal_version": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "extraction_completeness": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "not_reviewed",
+        "method": null,
+        "evidence": "No source-level semantic comparison has been recorded."
+      }
+    },
+    "hr-access-info-commissioner": {
+      "status": "captured_review_candidate",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Captured from https://pristupinfo.hr/pristup-informacijama-za-korisnike/?lang=en; publisher host and record identity still need a person/source-specific check."
+        },
+        "current_legal_version": {
+          "status": "pending",
+          "evidence": "A successful HTTP response and captured timestamp do not establish the current legal version; compare the chain with the current responsible-authority index."
+        },
+        "extraction_completeness": {
+          "status": "pending",
+          "evidence": "Generic body selector used. Page-specific relevance, navigation contamination and completeness have not been established."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "lawful_reuse": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        }
+      },
+      "semantic_review": {
+        "status": "not_reviewed",
+        "method": null,
+        "evidence": "No source-level semantic comparison has been recorded."
+      },
+      "candidate_path": "source-library/croatia/candidates/oversight/hr-access-info-commissioner.md"
+    },
+    "hr-admin-disputes-act": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official Narodne novine ELI record NN 36/24, item 564, promulgated by Hrvatski sabor; exact official title and record number match the captured text."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "review_date": "2026-10-19",
+          "evidence": "The current official Croatian courts law listings identify Zakon o upravnim sporovima NN 36/24. The Gazette text itself says it entered into force 1 July 2024 and repealed the former Act and its listed amendments. https://sudovi.hr/hr/uszg/pristup-informacijama/zakoni ; https://sudovi.hr/hr/usos/pristup-informacijama/zakoni-i-ostali-propisi ; https://narodne-novine.nn.hr/clanci/sluzbeni/2024_03_36_564.html"
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Replayed only the official .sl-content .doc fragment; source fragment SHA-256 6ecf14497e09053d0d9eda6fb5e5816015a2117ea45ddc949d164966024889ee; converted text SHA-256 f55daf351c1997fded9cfda40925eaee499a14193b15fecd7488d4971fd32eca; official record URL identifies NN 36/2024, item 564; 172 unique Article headings; publisher shell markers absent. Manual legal-scope and attachment reviews remain separate."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Source-specific .sl-content .doc fragment inspected; no embedded image or linked PDF/Office image attachment is present. The source is text-only for the captured official-document body."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Primary judicial-review and administrative-remedies statute. Articles 3 and 12 cover review of public-authority decisions, conduct and failure to decide or act within a statutory deadline. It does not itself resolve the applicable immigration appeal route, deadlines, fees, suspensive effect or interim relief for each decision class."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "independent_visible_text_equivalence_and_anchor_review",
+        "review_date": "2026-10-19",
+        "scope": "ordered_visible_text_in_selected_official_document_region",
+        "evidence": "Independent visible-text comparison passed: all decoded text nodes in the retained official .sl-content .doc fragment match the candidate's converted source section in order after Unicode and whitespace normalization. Source and conversion each contain 121873 normalized characters; both normalized-text SHA-256 values are 9c6a6b4a1a7200ac0a0f0529db7077dfd1b77df3e1d932f9cea4d0e62e839eb1. This verifies text extraction fidelity for the selected official document region; 0 embedded images and 0 linked files are reviewed separately under attachments_review. This semantic result is source-text extraction validation only; currentness, classification and topic coverage are recorded separately.",
+        "source_fragment_path": "source-library/croatia/captures/official-texts/hr-admin-disputes-act.html",
+        "source_fragment_sha256": "6ecf14497e09053d0d9eda6fb5e5816015a2117ea45ddc949d164966024889ee",
+        "normalized_visible_text_sha256": "9c6a6b4a1a7200ac0a0f0529db7077dfd1b77df3e1d932f9cea4d0e62e839eb1",
+        "normalized_visible_characters": 121873,
+        "embedded_image_count": 0,
+        "linked_file_urls": []
+      },
+      "discovery_note": "Accepted as the primary administrative-court procedure/remedies statute NN 36/24. Article-level and EEA-specific remedy mapping remains open; acceptance does not establish coverage completeness.",
+      "accepted_on": "2026-10-19",
+      "document_path": "source-library/croatia/documents/legislation/hr-admin-disputes-act.md"
+    },
+    "hr-azop-complaint": {
+      "status": "captured_review_candidate",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Captured from https://azop.hr/zahtjev-za-utvrdivanje-povrede-prava/; publisher host and record identity still need a person/source-specific check."
+        },
+        "current_legal_version": {
+          "status": "pending",
+          "evidence": "A successful HTTP response and captured timestamp do not establish the current legal version; compare the chain with the current responsible-authority index."
+        },
+        "extraction_completeness": {
+          "status": "pending",
+          "evidence": "Generic body selector used. Page-specific relevance, navigation contamination and completeness have not been established."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "lawful_reuse": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        }
+      },
+      "semantic_review": {
+        "status": "not_reviewed",
+        "method": null,
+        "evidence": "No source-level semantic comparison has been recorded."
+      },
+      "candidate_path": "source-library/croatia/candidates/oversight/hr-azop-complaint.md"
+    },
+    "hr-azop-vis-sis": {
+      "status": "captured_review_candidate",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Captured from https://azop.hr/processing-of-personal-data-in-the-schengen-information-system-sis-and-the-visa-information-system-vis-2/; publisher host and record identity still need a person/source-specific check."
+        },
+        "current_legal_version": {
+          "status": "pending",
+          "evidence": "A successful HTTP response and captured timestamp do not establish the current legal version; compare the chain with the current responsible-authority index."
+        },
+        "extraction_completeness": {
+          "status": "pending",
+          "evidence": "Generic body selector used. Page-specific relevance, navigation contamination and completeness have not been established."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "lawful_reuse": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        }
+      },
+      "semantic_review": {
+        "status": "not_reviewed",
+        "method": null,
+        "evidence": "No source-level semantic comparison has been recorded."
+      },
+      "candidate_path": "source-library/croatia/candidates/oversight/hr-azop-vis-sis.md"
+    },
+    "hr-court-decisions": {
+      "status": "discovery_source_only",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Captured from https://odluke.sudovi.hr/; publisher host and record identity still need a person/source-specific check."
+        },
+        "current_legal_version": {
+          "status": "not_applicable",
+          "reason": "Search portal, not a legal text or individual court decision."
+        },
+        "extraction_completeness": {
+          "status": "not_applicable",
+          "reason": "The portal landing-page capture is discovery metadata only; it does not claim to extract decisions."
+        },
+        "attachments_review": {
+          "status": "not_applicable",
+          "reason": "No decision attachments are included in this portal record."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as a search/discovery portal; no decision, holding or legal rule is accepted from the landing page."
+        },
+        "lawful_reuse": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        }
+      },
+      "semantic_review": {
+        "status": "not_applicable",
+        "method": "Discovery-portal classification only.",
+        "evidence": "Search tools and corpus counts do not establish the content or legal effect of an individual decision."
+      },
+      "candidate_path": "source-library/croatia/candidates/discovery/hr-court-decisions.md"
+    },
+    "hr-data-protection-act": {
+      "status": "located_not_captured",
+      "checks": {
+        "publisher_identity": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "current_legal_version": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "extraction_completeness": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "not_reviewed",
+        "method": null,
+        "evidence": "No source-level semantic comparison has been recorded."
+      }
+    },
+    "hr-e-predmet": {
+      "status": "discovery_surface_no_text",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Captured from https://e-predmet.pravosudje.hr/; publisher host and record identity still need a person/source-specific check."
+        },
+        "current_legal_version": {
+          "status": "not_applicable",
+          "reason": "Interactive case-status service, not a legal text or published case corpus."
+        },
+        "extraction_completeness": {
+          "status": "not_applicable",
+          "reason": "Interactive case-status service; it is not a textual source. No personal case lookup is stored."
+        },
+        "attachments_review": {
+          "status": "not_applicable",
+          "reason": "No textual-source attachment is asserted; case-specific lookup data is not retained."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Status lookup surface, not a published decision corpus."
+        },
+        "lawful_reuse": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        }
+      },
+      "semantic_review": {
+        "status": "not_applicable",
+        "method": "Classification as service surface only.",
+        "evidence": "No legal-content extraction is claimed."
+      },
+      "candidate_path": null
+    },
+    "hr-eea-act": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official Narodne novine record at https://narodne-novine.nn.hr/clanci/sluzbeni/2019_07_66_1288.html is on the Gazette publisher domain. Its retained .sl-content .doc fragment carries issue item 1288; the official URL identifies NN 66/2019. The issuer and title in the document body match the candidate record, and the current MUP Propisi index lists this instrument in the current chain."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "chain_id": "hr-eea-act-chain",
+          "review_date": "2026-10-19",
+          "evidence_url": "https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652",
+          "evidence": "MUP's current Propisi page lists the EEA Act as NN 66/19, 53/20, 144/20 and 114/22. No later EEA Act amendment is listed on that page as of 2026-10-19. Official publisher index checked 2026-10-19 at https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652 (turn1078view0 lines 70-81). This confirms the listed chain only; it is not a consolidated-text or legal-topic-completeness review."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Replayed only the official .sl-content .doc fragment; source fragment SHA-256 0b520b94f326e2a1837cdc18906186a5c38bf0127539918382517aee24a6b5af; converted text SHA-256 0421e59d31622824429565b5de8b48e79cd571c9699a7eaae352763452a1f89b; official record URL identifies NN 66/2019, item 1288; 81 unique Article headings; publisher shell markers absent. Manual legal-scope and attachment reviews remain separate."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Source-specific .sl-content .doc fragment inspected; no embedded image or linked PDF/Office image attachment is present. The source is text-only for the captured official-document body."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "The official document body identifies this record as a Croatian national statute (EEA citizens and family members Act, NN 66/19); the manifest source_type `national_act` matches the Gazette text. It is primary legislation, not a form, guidance page, or discovery index."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "independent_visible_text_equivalence_and_anchor_review",
+        "review_date": "2026-10-19",
+        "scope": "ordered_visible_text_in_selected_official_document_region",
+        "evidence": "Independent visible-text comparison passed: all decoded text nodes in the retained official .sl-content .doc fragment match the candidate's converted source section in order after Unicode and whitespace normalization. Source and conversion each contain 91551 normalized characters; both normalized-text SHA-256 values are 3a1623a7ac070c7b8dbe32cdd108df9c6116642f659e5e2e818db355d44555f9. This verifies text extraction fidelity for the selected official document region; 0 embedded images and 0 linked files are reviewed separately under attachments_review.",
+        "source_fragment_path": "source-library/croatia/captures/official-texts/hr-eea-act.html",
+        "source_fragment_sha256": "0b520b94f326e2a1837cdc18906186a5c38bf0127539918382517aee24a6b5af",
+        "normalized_visible_text_sha256": "3a1623a7ac070c7b8dbe32cdd108df9c6116642f659e5e2e818db355d44555f9",
+        "normalized_visible_characters": 91551,
+        "embedded_image_count": 0,
+        "linked_file_urls": []
+      },
+      "accepted_on": "2026-10-19",
+      "document_path": "source-library/croatia/documents/legislation/hr-eea-act.md"
+    },
+    "hr-eea-act-amend-114-22": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official Narodne novine record at https://narodne-novine.nn.hr/clanci/sluzbeni/2022_10_114_1696.html is on the Gazette publisher domain. Its retained .sl-content .doc fragment carries issue item 1696; the official URL identifies NN 114/2022. The issuer and title in the document body match the candidate record, and the current MUP Propisi index lists this instrument in the current chain."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "chain_id": "hr-eea-act-chain",
+          "review_date": "2026-10-19",
+          "evidence_url": "https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652",
+          "evidence": "MUP's current Propisi page lists the EEA Act as NN 66/19, 53/20, 144/20 and 114/22. No later EEA Act amendment is listed on that page as of 2026-10-19. Official publisher index checked 2026-10-19 at https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652 (turn1078view0 lines 70-81). This confirms the listed chain only; it is not a consolidated-text or legal-topic-completeness review."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Replayed only the official .sl-content .doc fragment; source fragment SHA-256 dc4fb80668475611883453a838f6c80efb16fc58725a018534f3a45cec15ff51; converted text SHA-256 9fd841e9cc34abb3ce09f559fdac73cb7a550e2dceff1cb378d78645643d43cf; official record URL identifies NN 114/2022, item 1696; 3 unique Article headings; publisher shell markers absent. Manual legal-scope and attachment reviews remain separate."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Source-specific .sl-content .doc fragment inspected; no embedded image or linked PDF/Office image attachment is present. The source is text-only for the captured official-document body."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "The official document body identifies this record as a amending Croatian statute (Amendment NN 114/22); the manifest source_type `amending_act` matches the Gazette text. It is primary legislation, not a form, guidance page, or discovery index."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "independent_visible_text_equivalence_and_anchor_review",
+        "review_date": "2026-10-19",
+        "scope": "ordered_visible_text_in_selected_official_document_region",
+        "evidence": "Independent visible-text comparison passed: all decoded text nodes in the retained official .sl-content .doc fragment match the candidate's converted source section in order after Unicode and whitespace normalization. Source and conversion each contain 1918 normalized characters; both normalized-text SHA-256 values are f2eb0388cb4f0931e6e56bd75c8ae0bc82868253ff39b964c63d16c1872c02a9. This verifies text extraction fidelity for the selected official document region; 0 embedded images and 0 linked files are reviewed separately under attachments_review.",
+        "source_fragment_path": "source-library/croatia/captures/official-texts/hr-eea-act-amend-114-22.html",
+        "source_fragment_sha256": "dc4fb80668475611883453a838f6c80efb16fc58725a018534f3a45cec15ff51",
+        "normalized_visible_text_sha256": "f2eb0388cb4f0931e6e56bd75c8ae0bc82868253ff39b964c63d16c1872c02a9",
+        "normalized_visible_characters": 1918,
+        "embedded_image_count": 0,
+        "linked_file_urls": []
+      },
+      "accepted_on": "2026-10-19",
+      "document_path": "source-library/croatia/documents/legislation/hr-eea-act-amend-114-22.md"
+    },
+    "hr-eea-act-amend-144-20": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official Narodne novine record at https://narodne-novine.nn.hr/clanci/sluzbeni/2020_12_144_2767.html is on the Gazette publisher domain. Its retained .sl-content .doc fragment carries issue item 2767; the official URL identifies NN 144/2020. The issuer and title in the document body match the candidate record, and the current MUP Propisi index lists this instrument in the current chain."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "chain_id": "hr-eea-act-chain",
+          "review_date": "2026-10-19",
+          "evidence_url": "https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652",
+          "evidence": "MUP's current Propisi page lists the EEA Act as NN 66/19, 53/20, 144/20 and 114/22. No later EEA Act amendment is listed on that page as of 2026-10-19. Official publisher index checked 2026-10-19 at https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652 (turn1078view0 lines 70-81). This confirms the listed chain only; it is not a consolidated-text or legal-topic-completeness review."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Replayed only the official .sl-content .doc fragment; source fragment SHA-256 cf98329ece6796a1cd1480de0bff54a50843749742ee5e5c0ffcac3fd7668038; converted text SHA-256 605b721d2b532f9b53d8e21d9e87e407bb23d14afaf3e942648c27c4ea666942; official record URL identifies NN 144/2020, item 2767; 9 unique Article headings; publisher shell markers absent. Manual legal-scope and attachment reviews remain separate."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Source-specific .sl-content .doc fragment inspected; no embedded image or linked PDF/Office image attachment is present. The source is text-only for the captured official-document body."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "The official document body identifies this record as a amending Croatian statute (Amendments NN 144/20); the manifest source_type `amending_act` matches the Gazette text. It is primary legislation, not a form, guidance page, or discovery index."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "independent_visible_text_equivalence_and_anchor_review",
+        "review_date": "2026-10-19",
+        "scope": "ordered_visible_text_in_selected_official_document_region",
+        "evidence": "Independent visible-text comparison passed: all decoded text nodes in the retained official .sl-content .doc fragment match the candidate's converted source section in order after Unicode and whitespace normalization. Source and conversion each contain 16152 normalized characters; both normalized-text SHA-256 values are d1a7ae23d60974246272cda712ad70b054280c23163527fac29a4b7d1a24c6e2. This verifies text extraction fidelity for the selected official document region; 0 embedded images and 0 linked files are reviewed separately under attachments_review.",
+        "source_fragment_path": "source-library/croatia/captures/official-texts/hr-eea-act-amend-144-20.html",
+        "source_fragment_sha256": "cf98329ece6796a1cd1480de0bff54a50843749742ee5e5c0ffcac3fd7668038",
+        "normalized_visible_text_sha256": "d1a7ae23d60974246272cda712ad70b054280c23163527fac29a4b7d1a24c6e2",
+        "normalized_visible_characters": 16152,
+        "embedded_image_count": 0,
+        "linked_file_urls": []
+      },
+      "accepted_on": "2026-10-19",
+      "document_path": "source-library/croatia/documents/legislation/hr-eea-act-amend-144-20.md"
+    },
+    "hr-eea-act-amend-53-20": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official Narodne novine record at https://narodne-novine.nn.hr/clanci/sluzbeni/2020_04_53_1060.html is on the Gazette publisher domain. Its retained .sl-content .doc fragment carries issue item 1060; the official URL identifies NN 53/2020. The issuer and title in the document body match the candidate record, and the current MUP Propisi index lists this instrument in the current chain."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "chain_id": "hr-eea-act-chain",
+          "review_date": "2026-10-19",
+          "evidence_url": "https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652",
+          "evidence": "MUP's current Propisi page lists the EEA Act as NN 66/19, 53/20, 144/20 and 114/22. No later EEA Act amendment is listed on that page as of 2026-10-19. Official publisher index checked 2026-10-19 at https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652 (turn1078view0 lines 70-81). This confirms the listed chain only; it is not a consolidated-text or legal-topic-completeness review."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Replayed only the official .sl-content .doc fragment; source fragment SHA-256 2c3de0c3f08d2de6400dd503eaa375f8ad2fb87a57a2eb4b7a6a6f74ddffb445; converted text SHA-256 041f2e092de458f79157939487af5fd38a46f549642f769ff4ef5ef79c863287; official record URL identifies NN 53/2020, item 1060; 3 unique Article headings; publisher shell markers absent. Manual legal-scope and attachment reviews remain separate."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Source-specific .sl-content .doc fragment inspected; no embedded image or linked PDF/Office image attachment is present. The source is text-only for the captured official-document body."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "The official document body identifies this record as a amending Croatian statute (Amendment NN 53/20); the manifest source_type `amending_act` matches the Gazette text. It is primary legislation, not a form, guidance page, or discovery index."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "independent_visible_text_equivalence_and_anchor_review",
+        "review_date": "2026-10-19",
+        "scope": "ordered_visible_text_in_selected_official_document_region",
+        "evidence": "Independent visible-text comparison passed: all decoded text nodes in the retained official .sl-content .doc fragment match the candidate's converted source section in order after Unicode and whitespace normalization. Source and conversion each contain 2371 normalized characters; both normalized-text SHA-256 values are bc8a7c194226172769a4ed7548588ee530ef077e50c344e311fa940d69913bb2. This verifies text extraction fidelity for the selected official document region; 0 embedded images and 0 linked files are reviewed separately under attachments_review.",
+        "source_fragment_path": "source-library/croatia/captures/official-texts/hr-eea-act-amend-53-20.html",
+        "source_fragment_sha256": "2c3de0c3f08d2de6400dd503eaa375f8ad2fb87a57a2eb4b7a6a6f74ddffb445",
+        "normalized_visible_text_sha256": "bc8a7c194226172769a4ed7548588ee530ef077e50c344e311fa940d69913bb2",
+        "normalized_visible_characters": 2371,
+        "embedded_image_count": 0,
+        "linked_file_urls": []
+      },
+      "accepted_on": "2026-10-19",
+      "document_path": "source-library/croatia/documents/legislation/hr-eea-act-amend-53-20.md"
+    },
+    "hr-eea-reg": {
+      "status": "captured_review_candidate",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Captured from https://narodne-novine.nn.hr/clanci/sluzbeni/2020_10_107_2009.html; publisher host and record identity still need a person/source-specific check."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "chain_id": "hr-eea-regulation-chain",
+          "review_date": "2026-10-19",
+          "evidence_url": "https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652",
+          "evidence": "MUP's current Propisi page lists the EEA residence regulation as NN 107/20, 148/20, 86/21 and 155/22. No later amendment is listed on that page as of 2026-10-19. Official publisher index checked 2026-10-19 at https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652 (turn1078view0 lines 70-81). This confirms the listed chain only; it is not a consolidated-text or legal-topic-completeness review."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Replayed only the official .sl-content .doc fragment; source fragment SHA-256 dd0fc404c9e29839240f4ddb4a605b7b1eb72ddd4489b4a99eecfe42626ead97; converted text SHA-256 c3d9bc24fb44d3cf28c3a593d142a096d4af568d5b9e213208564c66ab219209; official record URL identifies NN 107/2020, item 2009; 45 unique Article headings; publisher shell markers absent. Manual legal-scope and attachment reviews remain separate."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "Inventory found 21 embedded image(s) in the official document fragment. Exact image URLs and text labels are in attachment-review.json; visual and currentness checks remain open."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "partial",
+        "method": "publisher_dom_fragment_replay_and_structural_checks",
+        "evidence": "The selector-bound official document fragment was retained and replayed deterministically; the Gazette citation and Article headings were inventoried and known page-shell strings were excluded. This establishes conversion fidelity to the selected DOM fragment, not current legal effect, issue coverage, or visual completeness of annexes.",
+        "source_fragment_path": "source-library/croatia/captures/official-texts/hr-eea-reg.html",
+        "source_fragment_sha256": "dd0fc404c9e29839240f4ddb4a605b7b1eb72ddd4489b4a99eecfe42626ead97",
+        "converted_text_sha256": "c3d9bc24fb44d3cf28c3a593d142a096d4af568d5b9e213208564c66ab219209"
+      },
+      "candidate_path": "source-library/croatia/candidates/legislation/hr-eea-reg.md"
+    },
+    "hr-eea-reg-amend-148-20": {
+      "status": "captured_review_candidate",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Captured from https://narodne-novine.nn.hr/clanci/sluzbeni/2020_12_148_2905.html; publisher host and record identity still need a person/source-specific check."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "chain_id": "hr-eea-regulation-chain",
+          "review_date": "2026-10-19",
+          "evidence_url": "https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652",
+          "evidence": "MUP's current Propisi page lists the EEA residence regulation as NN 107/20, 148/20, 86/21 and 155/22. No later amendment is listed on that page as of 2026-10-19. Official publisher index checked 2026-10-19 at https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652 (turn1078view0 lines 70-81). This confirms the listed chain only; it is not a consolidated-text or legal-topic-completeness review."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Replayed only the official .sl-content .doc fragment; source fragment SHA-256 033ca39b3aaf24f653953672fab79109e8660a914f4abc4dce7c2b1f856b2c0e; converted text SHA-256 82d1fb46bd788fc2cb2bde5d9d6c1665581a29013c1d712060d0ce4c7e433906; official record URL identifies NN 148/2020, item 2905; 6 unique Article headings; publisher shell markers absent. Manual legal-scope and attachment reviews remain separate."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "Inventory found 18 embedded image(s) in the official document fragment. Exact image URLs and text labels are in attachment-review.json; visual and currentness checks remain open."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "partial",
+        "method": "publisher_dom_fragment_replay_and_structural_checks",
+        "evidence": "The selector-bound official document fragment was retained and replayed deterministically; the Gazette citation and Article headings were inventoried and known page-shell strings were excluded. This establishes conversion fidelity to the selected DOM fragment, not current legal effect, issue coverage, or visual completeness of annexes.",
+        "source_fragment_path": "source-library/croatia/captures/official-texts/hr-eea-reg-amend-148-20.html",
+        "source_fragment_sha256": "033ca39b3aaf24f653953672fab79109e8660a914f4abc4dce7c2b1f856b2c0e",
+        "converted_text_sha256": "82d1fb46bd788fc2cb2bde5d9d6c1665581a29013c1d712060d0ce4c7e433906"
+      },
+      "candidate_path": "source-library/croatia/candidates/legislation/hr-eea-reg-amend-148-20.md"
+    },
+    "hr-eea-reg-amend-155-22": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official Narodne novine record at https://narodne-novine.nn.hr/clanci/sluzbeni/2022_12_155_2448.html is on the Gazette publisher domain. Its retained .sl-content .doc fragment carries issue item 2448; the official URL identifies NN 155/2022. The issuer and title in the document body match the candidate record, and the current MUP Propisi index lists this instrument in the current chain."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "chain_id": "hr-eea-regulation-chain",
+          "review_date": "2026-10-19",
+          "evidence_url": "https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652",
+          "evidence": "MUP's current Propisi page lists the EEA residence regulation as NN 107/20, 148/20, 86/21 and 155/22. No later amendment is listed on that page as of 2026-10-19. Official publisher index checked 2026-10-19 at https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652 (turn1078view0 lines 70-81). This confirms the listed chain only; it is not a consolidated-text or legal-topic-completeness review."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Replayed only the official .sl-content .doc fragment; source fragment SHA-256 91cee389a666e9cc9a029fbf988b58bb2885e6f7256fae8bae09018bddd9d7cf; converted text SHA-256 30a8ff4fc691f8e00c178edd0f6459346cec904eafd11cd2a1ec290abb0b990b; official record URL identifies NN 155/2022, item 2448; 2 unique Article headings; publisher shell markers absent. Manual legal-scope and attachment reviews remain separate."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Source-specific .sl-content .doc fragment inspected; no embedded image or linked PDF/Office image attachment is present. The source is text-only for the captured official-document body."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "The official document body identifies this record as a amending Croatian implementing regulation (Amendment NN 155/22); the manifest source_type `amending_regulation` matches the Gazette text. It is primary legislation, not a form, guidance page, or discovery index."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "independent_visible_text_equivalence_and_anchor_review",
+        "review_date": "2026-10-19",
+        "scope": "ordered_visible_text_in_selected_official_document_region",
+        "evidence": "Independent visible-text comparison passed: all decoded text nodes in the retained official .sl-content .doc fragment match the candidate's converted source section in order after Unicode and whitespace normalization. Source and conversion each contain 1304 normalized characters; both normalized-text SHA-256 values are 69d4bf420559c4d90f1cc8fecf15412f28f3a47c9008d3658bf7ed25439dd09b. This verifies text extraction fidelity for the selected official document region; 0 embedded images and 0 linked files are reviewed separately under attachments_review.",
+        "source_fragment_path": "source-library/croatia/captures/official-texts/hr-eea-reg-amend-155-22.html",
+        "source_fragment_sha256": "91cee389a666e9cc9a029fbf988b58bb2885e6f7256fae8bae09018bddd9d7cf",
+        "normalized_visible_text_sha256": "69d4bf420559c4d90f1cc8fecf15412f28f3a47c9008d3658bf7ed25439dd09b",
+        "normalized_visible_characters": 1304,
+        "embedded_image_count": 0,
+        "linked_file_urls": []
+      },
+      "accepted_on": "2026-10-19",
+      "document_path": "source-library/croatia/documents/legislation/hr-eea-reg-amend-155-22.md"
+    },
+    "hr-eea-reg-amend-86-21": {
+      "status": "captured_review_candidate",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Captured from https://narodne-novine.nn.hr/clanci/sluzbeni/2021_07_86_1596.html; publisher host and record identity still need a person/source-specific check."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "chain_id": "hr-eea-regulation-chain",
+          "review_date": "2026-10-19",
+          "evidence_url": "https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652",
+          "evidence": "MUP's current Propisi page lists the EEA residence regulation as NN 107/20, 148/20, 86/21 and 155/22. No later amendment is listed on that page as of 2026-10-19. Official publisher index checked 2026-10-19 at https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652 (turn1078view0 lines 70-81). This confirms the listed chain only; it is not a consolidated-text or legal-topic-completeness review."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Replayed only the official .sl-content .doc fragment; source fragment SHA-256 b37de8bfbb98ee7fa6ca29191dc2be180d9444d4e9a3c5ef9d7123a46dd231f6; converted text SHA-256 dd2828d0b1cc2d83dc0d307f897c403e7b28fb298baa431bb9e3712a8028c782; official record URL identifies NN 86/2021, item 1596; 12 unique Article headings; publisher shell markers absent. Manual legal-scope and attachment reviews remain separate."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "The official fragment contains the Form 4b and Form 11b card specimens (four image pages total). Their two-sided image URLs are assigned to the two specimen records in attachment-review.json; visual and post-transition currentness review remain open."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "partial",
+        "method": "publisher_dom_fragment_replay_and_structural_checks",
+        "evidence": "The selector-bound official document fragment was retained and replayed deterministically; the Gazette citation and Article headings were inventoried and known page-shell strings were excluded. This establishes conversion fidelity to the selected DOM fragment, not current legal effect, issue coverage, or visual completeness of annexes.",
+        "source_fragment_path": "source-library/croatia/captures/official-texts/hr-eea-reg-amend-86-21.html",
+        "source_fragment_sha256": "b37de8bfbb98ee7fa6ca29191dc2be180d9444d4e9a3c5ef9d7123a46dd231f6",
+        "converted_text_sha256": "dd2828d0b1cc2d83dc0d307f897c403e7b28fb298baa431bb9e3712a8028c782"
+      },
+      "candidate_path": "source-library/croatia/candidates/legislation/hr-eea-reg-amend-86-21.md"
+    },
+    "hr-foreigners-act": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official Narodne novine record https://narodne-novine.nn.hr/clanci/sluzbeni/2020_12_133_2520.html returned HTTP 200; the Gazette identity is recorded in the retained .sl-content .doc fragment and URL."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "review_date": "2026-10-19",
+          "evidence": "MUP's current Propisi index lists the Foreigners Act chain NN 133/20, 114/22, 151/22, 40/25 and 55/26. This identifies the amendment chain but is not a consolidated text. https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652"
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Replayed only the official .sl-content .doc fragment; source fragment SHA-256 9656666fba08a31ec668871be749cce9071732cfd7de8afb3a120a625e60c2bb; converted text SHA-256 af66b732c81c74311bdacc8ece3b00c789b3c856c090cac5bf8dd90fdbd9563a; official record URL identifies NN 133/2020, item 2520; 261 unique Article headings; publisher shell markers absent. Manual legal-scope and attachment reviews remain separate."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "The selected official .sl-content .doc fragment contains no embedded images or linked PDF/Office files."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "The official Gazette body is classified as national_act. The Foreigners Act concerns third-country nationals and must not be treated as the EEA-family lex specialis; the source's exact immigration/visa effect remains to be mapped."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "independent_visible_text_equivalence_and_anchor_review",
+        "review_date": "2026-10-19",
+        "scope": "ordered_visible_text_in_selected_official_document_region",
+        "evidence": "Independent visible-text comparison passed: all decoded text nodes in the retained official .sl-content .doc fragment match the candidate's converted source section in order after Unicode and whitespace normalization. Source and conversion each contain 330021 normalized characters; both normalized-text SHA-256 values are 0d6fc7f127fbadc90f9728467736cb50298c26b213e1273f5fcbc6b857de1ee7. This verifies text extraction fidelity for the selected official document region; 0 embedded images and 0 linked files are reviewed separately under attachments_review.",
+        "source_fragment_path": "source-library/croatia/captures/official-texts/hr-foreigners-act.html",
+        "source_fragment_sha256": "9656666fba08a31ec668871be749cce9071732cfd7de8afb3a120a625e60c2bb",
+        "normalized_visible_text_sha256": "0d6fc7f127fbadc90f9728467736cb50298c26b213e1273f5fcbc6b857de1ee7",
+        "normalized_visible_characters": 330021,
+        "embedded_image_count": 0,
+        "linked_file_urls": []
+      },
+      "accepted_on": "2026-10-19",
+      "document_path": "source-library/croatia/documents/legislation/hr-foreigners-act.md"
+    },
+    "hr-foreigners-amend-114-22": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official Narodne novine record https://narodne-novine.nn.hr/clanci/sluzbeni/2022_10_114_1695.html returned HTTP 200; the Gazette identity is recorded in the retained .sl-content .doc fragment and URL."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "review_date": "2026-10-19",
+          "evidence": "MUP's current Propisi index lists the Foreigners Act chain NN 133/20, 114/22, 151/22, 40/25 and 55/26. This identifies the amendment chain but is not a consolidated text. https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652"
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Replayed only the official .sl-content .doc fragment; source fragment SHA-256 d85e2a845288bf35a15db705940caf345c98d86c6ae5f45bc873dd4b8e77ad0e; converted text SHA-256 0bb0a77c9fcb232d5678e5cc4c6580079f90e6822b0d3e3096caf2edd68760b1; official record URL identifies NN 114/2022, item 1695; 14 unique Article headings; publisher shell markers absent. Manual legal-scope and attachment reviews remain separate."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "The selected official .sl-content .doc fragment contains no embedded images or linked PDF/Office files."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "The official Gazette body is classified as amending_act. The Foreigners Act concerns third-country nationals and must not be treated as the EEA-family lex specialis; the source's exact immigration/visa effect remains to be mapped."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "independent_visible_text_equivalence_and_anchor_review",
+        "review_date": "2026-10-19",
+        "scope": "ordered_visible_text_in_selected_official_document_region",
+        "evidence": "Independent visible-text comparison passed: all decoded text nodes in the retained official .sl-content .doc fragment match the candidate's converted source section in order after Unicode and whitespace normalization. Source and conversion each contain 5313 normalized characters; both normalized-text SHA-256 values are f1a0a127bd880d75f93c354a26b2b70b76129df81447b153a4d5dec0483b1bde. This verifies text extraction fidelity for the selected official document region; 0 embedded images and 0 linked files are reviewed separately under attachments_review.",
+        "source_fragment_path": "source-library/croatia/captures/official-texts/hr-foreigners-amend-114-22.html",
+        "source_fragment_sha256": "d85e2a845288bf35a15db705940caf345c98d86c6ae5f45bc873dd4b8e77ad0e",
+        "normalized_visible_text_sha256": "f1a0a127bd880d75f93c354a26b2b70b76129df81447b153a4d5dec0483b1bde",
+        "normalized_visible_characters": 5313,
+        "embedded_image_count": 0,
+        "linked_file_urls": []
+      },
+      "accepted_on": "2026-10-19",
+      "document_path": "source-library/croatia/documents/legislation/hr-foreigners-amend-114-22.md"
+    },
+    "hr-foreigners-amend-151-22": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official Narodne novine record https://narodne-novine.nn.hr/clanci/sluzbeni/2022_12_151_2347.html returned HTTP 200; the Gazette identity is recorded in the retained .sl-content .doc fragment and URL."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "review_date": "2026-10-19",
+          "evidence": "MUP's current Propisi index lists the Foreigners Act chain NN 133/20, 114/22, 151/22, 40/25 and 55/26. This identifies the amendment chain but is not a consolidated text. https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652"
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Replayed only the official .sl-content .doc fragment; source fragment SHA-256 b74ad0a8a2d200b6b1693e8d4e4cbe77e1b885c69800e91cce27dbc37011b75f; converted text SHA-256 63abd5c6ba8f893680ecc794f925ebafd3082c156e225cba7f8811983cfb803f; official record URL identifies NN 151/2022, item 2347; 64 unique Article headings; publisher shell markers absent. Manual legal-scope and attachment reviews remain separate."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "The selected official .sl-content .doc fragment contains no embedded images or linked PDF/Office files."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "The official Gazette body is classified as amending_act. The Foreigners Act concerns third-country nationals and must not be treated as the EEA-family lex specialis; the source's exact immigration/visa effect remains to be mapped."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "independent_visible_text_equivalence_and_anchor_review",
+        "review_date": "2026-10-19",
+        "scope": "ordered_visible_text_in_selected_official_document_region",
+        "evidence": "Independent visible-text comparison passed: all decoded text nodes in the retained official .sl-content .doc fragment match the candidate's converted source section in order after Unicode and whitespace normalization. Source and conversion each contain 42087 normalized characters; both normalized-text SHA-256 values are e96d75e9ab02be1e7b4ab2675b50809ff19ff17313eb21c46ce23d4f8c63b172. This verifies text extraction fidelity for the selected official document region; 0 embedded images and 0 linked files are reviewed separately under attachments_review.",
+        "source_fragment_path": "source-library/croatia/captures/official-texts/hr-foreigners-amend-151-22.html",
+        "source_fragment_sha256": "b74ad0a8a2d200b6b1693e8d4e4cbe77e1b885c69800e91cce27dbc37011b75f",
+        "normalized_visible_text_sha256": "e96d75e9ab02be1e7b4ab2675b50809ff19ff17313eb21c46ce23d4f8c63b172",
+        "normalized_visible_characters": 42087,
+        "embedded_image_count": 0,
+        "linked_file_urls": []
+      },
+      "accepted_on": "2026-10-19",
+      "document_path": "source-library/croatia/documents/legislation/hr-foreigners-amend-151-22.md"
+    },
+    "hr-foreigners-amend-40-25": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official Narodne novine record https://narodne-novine.nn.hr/clanci/sluzbeni/2025_03_40_545.html returned HTTP 200; the Gazette identity is recorded in the retained .sl-content .doc fragment and URL."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "review_date": "2026-10-19",
+          "evidence": "MUP's current Propisi index lists the Foreigners Act chain NN 133/20, 114/22, 151/22, 40/25 and 55/26. This identifies the amendment chain but is not a consolidated text. https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652"
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Replayed only the official .sl-content .doc fragment; source fragment SHA-256 6929fb2154c603ec08060c3341d8d1869549f71eaa28b13034db7e84127fc864; converted text SHA-256 e309f0944846cf6f3b3813b3a7c967d71eac6174ef71f672aab2d49643a2a6d6; official record URL identifies NN 40/2025, item 545; 96 unique Article headings; publisher shell markers absent. Manual legal-scope and attachment reviews remain separate."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "The selected official .sl-content .doc fragment contains no embedded images or linked PDF/Office files."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "The official Gazette body is classified as amending_act. The Foreigners Act concerns third-country nationals and must not be treated as the EEA-family lex specialis; the source's exact immigration/visa effect remains to be mapped."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "independent_visible_text_equivalence_and_anchor_review",
+        "review_date": "2026-10-19",
+        "scope": "ordered_visible_text_in_selected_official_document_region",
+        "evidence": "Independent visible-text comparison passed: all decoded text nodes in the retained official .sl-content .doc fragment match the candidate's converted source section in order after Unicode and whitespace normalization. Source and conversion each contain 191036 normalized characters; both normalized-text SHA-256 values are 9d6a787cb1fd2722eafd5a85fb6d5c02911947bce57fc74f3fe69f27246f73d6. This verifies text extraction fidelity for the selected official document region; 0 embedded images and 0 linked files are reviewed separately under attachments_review.",
+        "source_fragment_path": "source-library/croatia/captures/official-texts/hr-foreigners-amend-40-25.html",
+        "source_fragment_sha256": "6929fb2154c603ec08060c3341d8d1869549f71eaa28b13034db7e84127fc864",
+        "normalized_visible_text_sha256": "9d6a787cb1fd2722eafd5a85fb6d5c02911947bce57fc74f3fe69f27246f73d6",
+        "normalized_visible_characters": 191036,
+        "embedded_image_count": 0,
+        "linked_file_urls": []
+      },
+      "accepted_on": "2026-10-19",
+      "document_path": "source-library/croatia/documents/legislation/hr-foreigners-amend-40-25.md"
+    },
+    "hr-foreigners-amend-55-26": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official Narodne novine record at https://narodne-novine.nn.hr/clanci/sluzbeni/2026_05_55_692.html is on the Gazette publisher domain. Its retained .sl-content .doc fragment carries issue item 692; the official URL identifies NN 55/2026. The issuer and title in the document body match the candidate record, and the current MUP Propisi index lists this instrument in the current chain."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "chain_id": "hr-foreigners-act-chain",
+          "review_date": "2026-10-19",
+          "evidence_url": "https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652",
+          "evidence": "MUP's current Propisi page lists the Foreigners Act as NN 133/20, 114/22, 151/22, 40/25 and 55/26. No later amendment is listed on that page as of 2026-10-19. Official publisher index checked 2026-10-19 at https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652 (turn1078view0 lines 70-81). This confirms the listed chain only; it is not a consolidated-text or legal-topic-completeness review. A separate older MUP page omits the latest amendment for this chain; it is recorded as stale in currentness-review.json and does not override the current Propisi index."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Replayed only the official .sl-content .doc fragment; source fragment SHA-256 7cfe72a1f5b839ac21be56c2237f51398c29f0e74f05942be26e751c06318870; converted text SHA-256 8b0b6adc3fe7bbc0fd4214e525dfdf8226f6b2db322f6d942ac9c0c12057e9b6; official record URL identifies NN 55/2026, item 692; 70 unique Article headings; publisher shell markers absent. Manual legal-scope and attachment reviews remain separate."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Source-specific .sl-content .doc fragment inspected; no embedded image or linked PDF/Office image attachment is present. The source is text-only for the captured official-document body."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "The official document body identifies this record as a amending Croatian statute (Foreigners Act amendment NN 55/26); the manifest source_type `amending_act` matches the Gazette text. It is primary legislation, not a form, guidance page, or discovery index."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "independent_visible_text_equivalence_and_anchor_review",
+        "review_date": "2026-10-19",
+        "scope": "ordered_visible_text_in_selected_official_document_region",
+        "evidence": "Independent visible-text comparison passed: all decoded text nodes in the retained official .sl-content .doc fragment match the candidate's converted source section in order after Unicode and whitespace normalization. Source and conversion each contain 104070 normalized characters; both normalized-text SHA-256 values are 62404395b03fc60e471eb619fa188ed76f9faec41b9163f405eeb71a4c9c3095. This verifies text extraction fidelity for the selected official document region; 0 embedded images and 0 linked files are reviewed separately under attachments_review.",
+        "source_fragment_path": "source-library/croatia/captures/official-texts/hr-foreigners-amend-55-26.html",
+        "source_fragment_sha256": "7cfe72a1f5b839ac21be56c2237f51398c29f0e74f05942be26e751c06318870",
+        "normalized_visible_text_sha256": "62404395b03fc60e471eb619fa188ed76f9faec41b9163f405eeb71a4c9c3095",
+        "normalized_visible_characters": 104070,
+        "embedded_image_count": 0,
+        "linked_file_urls": []
+      },
+      "accepted_on": "2026-10-19",
+      "document_path": "source-library/croatia/documents/legislation/hr-foreigners-amend-55-26.md"
+    },
+    "hr-form-1b": {
+      "status": "captured_review_candidate",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Captured from https://mup.gov.hr/UserDocsImages//dokumenti/stranci/2021//OBRAZAC%201B-Prijava%20privremenog%20boravka%20za%20drz%CC%8Cavljane%20drz%CC%8Cave%20c%CC%8Clanice%20EGP-a.pdf; publisher host and record identity still need a person/source-specific check."
+        },
+        "current_legal_version": {
+          "status": "pending",
+          "evidence": "A successful HTTP response and captured timestamp do not establish the current legal version; compare the chain with the current responsible-authority index."
+        },
+        "extraction_completeness": {
+          "status": "fail",
+          "evidence": "Text extraction contains only empty page markers; the native PDF pages have not been visually reviewed."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Form purpose must be confirmed visually against the legal text and current guidance."
+        },
+        "lawful_reuse": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        }
+      },
+      "semantic_review": {
+        "status": "failed",
+        "method": "Native PDF text extraction output inspected.",
+        "evidence": "Empty page markers cannot establish the form content."
+      },
+      "candidate_path": "source-library/croatia/candidates/forms/hr-form-1b.md"
+    },
+    "hr-form-2b": {
+      "status": "captured_review_candidate",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Captured from https://mup.gov.hr/UserDocsImages//dokumenti/stranci/2021//OBRAZAC%202B-Zahtjev%20za%20izdavanje%20boravis%CC%8Cne%20iskaznice%20za%20c%CC%8Clana%20obitelji%20drz%CC%8Cavljana%20drz%CC%8Cave%20c%CC%8Clanice%20EGP-a%20koji%20nije%20drz%CC%8Cavljanin%20drz%CC%8Cave%20c%CC%8Clanice%20EGP-a.pdf; publisher host and record identity still need a person/source-specific check."
+        },
+        "current_legal_version": {
+          "status": "pending",
+          "evidence": "A successful HTTP response and captured timestamp do not establish the current legal version; compare the chain with the current responsible-authority index."
+        },
+        "extraction_completeness": {
+          "status": "fail",
+          "evidence": "Text extraction contains only empty page markers; the native PDF pages have not been visually reviewed."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Form purpose must be confirmed visually against the legal text and current guidance."
+        },
+        "lawful_reuse": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        }
+      },
+      "semantic_review": {
+        "status": "failed",
+        "method": "Native PDF text extraction output inspected.",
+        "evidence": "Empty page markers cannot establish the form content."
+      },
+      "candidate_path": "source-library/croatia/candidates/forms/hr-form-2b.md"
+    },
+    "hr-form-3b": {
+      "status": "captured_review_candidate",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Captured from https://mup.gov.hr/UserDocsImages//dokumenti/stranci/2021//OBRAZAC%203B-Prijava%20stalnog%20boravka%20za%20drz%CC%8Cavljana%20drz%CC%8Cave%20c%CC%8Clanice%20EGP-a%20i%20c%CC%8Clana%20njegove%20obitelji.pdf; publisher host and record identity still need a person/source-specific check."
+        },
+        "current_legal_version": {
+          "status": "pending",
+          "evidence": "A successful HTTP response and captured timestamp do not establish the current legal version; compare the chain with the current responsible-authority index."
+        },
+        "extraction_completeness": {
+          "status": "fail",
+          "evidence": "Text extraction contains only empty page markers; the native PDF pages have not been visually reviewed."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Form purpose must be confirmed visually against the legal text and current guidance."
+        },
+        "lawful_reuse": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        }
+      },
+      "semantic_review": {
+        "status": "failed",
+        "method": "Native PDF text extraction output inspected.",
+        "evidence": "Empty page markers cannot establish the form content."
+      },
+      "candidate_path": "source-library/croatia/candidates/forms/hr-form-3b.md"
+    },
+    "hr-form-6b": {
+      "status": "captured_review_candidate",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Captured from https://mup.gov.hr/UserDocsImages//dokumenti/stranci/2021//OBRAZAC%206B-%20Prijava%20i%20odjava%20boravis%CC%8Cta%20i%20prebivalis%CC%8Cta%2C%20prijava%20promjene%20adrese%20za%20drz%CC%8Cavljane%20EGP-a.pdf; publisher host and record identity still need a person/source-specific check."
+        },
+        "current_legal_version": {
+          "status": "pending",
+          "evidence": "A successful HTTP response and captured timestamp do not establish the current legal version; compare the chain with the current responsible-authority index."
+        },
+        "extraction_completeness": {
+          "status": "fail",
+          "evidence": "Text extraction contains only empty page markers; the native PDF pages have not been visually reviewed."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Form purpose must be confirmed visually against the legal text and current guidance."
+        },
+        "lawful_reuse": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        }
+      },
+      "semantic_review": {
+        "status": "failed",
+        "method": "Native PDF text extraction output inspected.",
+        "evidence": "Empty page markers cannot establish the form content."
+      },
+      "candidate_path": "source-library/croatia/candidates/forms/hr-form-6b.md"
+    },
+    "hr-general-admin-act": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official Narodne novine ELI record NN 47/09, item 1065; full text captured from the Gazette record."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "review_date": "2026-10-19",
+          "evidence": "The official Ministry law listing identifies NN 47/09 and NN 110/21; its ZUP brochure states that NN 110/21 was the Act's only amendment and took effect 1 January 2022, and the amending Gazette text confirms the commencement provision. The base act and amendment are accepted only as a paired chain, not as a consolidated-text claim. https://mpudt.gov.hr/print.aspx?id=24403&url=print ; https://mpudt.gov.hr/UserDocsImages/dokumenti/djelokrug/Uredsko%20poslovanje/ZUP/Brosura_ZUP%20III.pdf ; https://narodne-novine.nn.hr/clanci/sluzbeni/2021_10_110_1930.html"
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Replayed only the official .sl-content .doc fragment; source fragment SHA-256 8812d33a59a66dda891ca6b4fe123fd6ff54d553e121f546e0873f6d49278c73; converted text SHA-256 c7845af4a07258fda79e6603432492f2a5ef5a3ff8df233503f22511aad34dec; official record URL identifies NN 47/2009, item 1065; 171 unique Article headings; publisher shell markers absent. Manual legal-scope and attachment reviews remain separate."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Source-specific .sl-content .doc fragment inspected; no embedded image or linked PDF/Office image attachment is present. The source is text-only for the captured official-document body."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Primary Croatian general procedural statute governing administrative proceedings before public-law bodies. Accepted as the NN 47/09 base text within the verified NN 47/09 + NN 110/21 chain; special immigration rules and article-level issue mapping remain separate."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "independent_visible_text_equivalence_and_anchor_review",
+        "review_date": "2026-10-19",
+        "scope": "ordered_visible_text_in_selected_official_document_region",
+        "evidence": "Independent visible-text comparison passed: all decoded text nodes in the retained official .sl-content .doc fragment match the candidate's converted source section in order after Unicode and whitespace normalization. Source and conversion each contain 115673 normalized characters; both normalized-text SHA-256 values are 27fd7584e72ee2ebfba2e8c6faf84b96ba6d146ba3d0947fc516c0e68dd8f1d9. This verifies text extraction fidelity for the selected official document region; 0 embedded images and 0 linked files are reviewed separately under attachments_review. This semantic result is source-text extraction validation only; currentness, classification and topic coverage are recorded separately.",
+        "source_fragment_path": "source-library/croatia/captures/official-texts/hr-general-admin-act.html",
+        "source_fragment_sha256": "8812d33a59a66dda891ca6b4fe123fd6ff54d553e121f546e0873f6d49278c73",
+        "normalized_visible_text_sha256": "27fd7584e72ee2ebfba2e8c6faf84b96ba6d146ba3d0947fc516c0e68dd8f1d9",
+        "normalized_visible_characters": 115673,
+        "embedded_image_count": 0,
+        "linked_file_urls": []
+      },
+      "discovery_note": "Accepted as the base act in the NN 47/09 + NN 110/21 chain. Its general rules do not alone prove topic coverage or displace lawful special immigration procedures.",
+      "accepted_on": "2026-10-19",
+      "document_path": "source-library/croatia/documents/legislation/hr-general-admin-act.md"
+    },
+    "hr-general-admin-amend": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official Narodne novine ELI record NN 110/21, item 1930; title and amending text match the captured Gazette source."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "review_date": "2026-10-19",
+          "evidence": "The official Ministry law listing identifies NN 47/09 and NN 110/21; its ZUP brochure states that NN 110/21 was the Act's only amendment and took effect 1 January 2022, and the amending Gazette text confirms the commencement provision. The base act and amendment are accepted only as a paired chain, not as a consolidated-text claim. https://mpudt.gov.hr/print.aspx?id=24403&url=print ; https://mpudt.gov.hr/UserDocsImages/dokumenti/djelokrug/Uredsko%20poslovanje/ZUP/Brosura_ZUP%20III.pdf ; https://narodne-novine.nn.hr/clanci/sluzbeni/2021_10_110_1930.html"
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Replayed only the official .sl-content .doc fragment; source fragment SHA-256 5dfa35334d128c22b8b2310e75c2619361cfec88df773d6e9025bd2b71ebe669; converted text SHA-256 bc9e278ed413e95683f534e2371b0cdc83a58739b9eaaaf8725a005e07aa78a0; official record URL identifies NN 110/2021, item 1930; 18 unique Article headings; publisher shell markers absent. Manual legal-scope and attachment reviews remain separate."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Source-specific .sl-content .doc fragment inspected; no embedded image or linked PDF/Office image attachment is present. The source is text-only for the captured official-document body."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Primary amending statute to the General Administrative Procedure Act. Accepted only as part of the verified current NN 47/09 + NN 110/21 chain; read together with the base act, not as a standalone consolidated text."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "independent_visible_text_equivalence_and_anchor_review",
+        "review_date": "2026-10-19",
+        "scope": "ordered_visible_text_in_selected_official_document_region",
+        "evidence": "Independent visible-text comparison passed: all decoded text nodes in the retained official .sl-content .doc fragment match the candidate's converted source section in order after Unicode and whitespace normalization. Source and conversion each contain 9597 normalized characters; both normalized-text SHA-256 values are 19d04d6532d9d151929378776c5a1df002b3ab2662f9393f1e5c1f9d3f05969f. This verifies text extraction fidelity for the selected official document region; 0 embedded images and 0 linked files are reviewed separately under attachments_review. This semantic result is source-text extraction validation only; currentness, classification and topic coverage are recorded separately.",
+        "source_fragment_path": "source-library/croatia/captures/official-texts/hr-general-admin-amend.html",
+        "source_fragment_sha256": "5dfa35334d128c22b8b2310e75c2619361cfec88df773d6e9025bd2b71ebe669",
+        "normalized_visible_text_sha256": "19d04d6532d9d151929378776c5a1df002b3ab2662f9393f1e5c1f9d3f05969f",
+        "normalized_visible_characters": 9597,
+        "embedded_image_count": 0,
+        "linked_file_urls": []
+      },
+      "discovery_note": "Accepted as the 2021 amendment in the NN 47/09 + NN 110/21 chain. Topic-specific application and provision mapping remain open.",
+      "accepted_on": "2026-10-19",
+      "document_path": "source-library/croatia/documents/legislation/hr-general-admin-amend.md"
+    },
+    "hr-legal-aid-act": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official Narodne novine record NN 143/13, item 3064, opened at the recorded source URL; title and Gazette identifier match the retained source fragment."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "The responsible ministry legal-instrument index (https://mpudt.gov.hr/?id=6618&url=print), inspected 2026-10-19, lists the Free Legal Aid Act as NN 143/13 and 98/19. This confirms the listed statutory chain for source acceptance; the base text is retained separately and is not represented as consolidated wording. Annual provider-compensation currentness is tracked separately and remains unresolved."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Replayed only the official .sl-content .doc fragment; source fragment SHA-256 bfac45bd434730d52d1c670a5302e2fd625fa4dc8794cf09f41cf5affbc9e48b; converted text SHA-256 866b0a5c2d7699552286f3ad486f85aec09610a5eb74f7c7aa7cf1d8af7a01ce; official record URL identifies NN 143/2013, item 3064; 55 unique Article headings; publisher shell markers absent. Manual legal-scope and attachment reviews remain separate."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Source-specific .sl-content .doc fragment inspected; no embedded image or linked PDF/Office image attachment is present. The source is text-only for the captured official-document body."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Primary national statute governing free legal-aid purpose, recipients, providers, eligibility, procedure and forms of assistance. It is relevant to access to administrative and judicial remedies but is not immigration substantive law; Article 5 eligibility and the scope of administrative proceedings require case-specific crosswalks."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "independent_visible_text_equivalence_and_anchor_review",
+        "review_date": "2026-10-19",
+        "scope": "ordered_visible_text_in_selected_official_document_region",
+        "evidence": "Independent visible-text comparison passed: all decoded text nodes in the retained official .sl-content .doc fragment match the candidate's converted source section in order after Unicode and whitespace normalization. Source and conversion each contain 43517 normalized characters; both normalized-text SHA-256 values are 41ddd1c33a223153d5c08a8df9d069da4b046cfa2b5fc85409debc2d2972644e. This verifies text extraction fidelity for the selected official document region; 0 embedded images and 0 linked files are reviewed separately under attachments_review.",
+        "source_fragment_path": "source-library/croatia/captures/official-texts/hr-legal-aid-act.html",
+        "source_fragment_sha256": "bfac45bd434730d52d1c670a5302e2fd625fa4dc8794cf09f41cf5affbc9e48b",
+        "normalized_visible_text_sha256": "41ddd1c33a223153d5c08a8df9d069da4b046cfa2b5fc85409debc2d2972644e",
+        "normalized_visible_characters": 43517,
+        "embedded_image_count": 0,
+        "linked_file_urls": []
+      },
+      "accepted_on": "2026-10-19",
+      "document_path": "source-library/croatia/documents/legislation/hr-legal-aid-act.md"
+    },
+    "hr-legal-aid-amend-98-19": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official Narodne novine record NN 98/19, item 1920, opened at the recorded source URL; amendment title and Gazette identifier match the retained source fragment."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "The responsible ministry legal-instrument index (https://mpudt.gov.hr/?id=6618&url=print), inspected 2026-10-19, lists NN 98/19 as the latest amendment to the Free Legal Aid Act (base NN 143/13). This confirms the listed statutory chain for source acceptance; the amendment remains a separate change record, not a consolidated text. Annual provider-compensation currentness is tracked separately and remains unresolved."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Replayed only the official .sl-content .doc fragment; source fragment SHA-256 c857f61f2be78660fca9822f4ce703ec2ede1c8b7dcbab5cbbbc1a6eaffd4508; converted text SHA-256 05998b5f0212b5020cfc95ea325811947985f580b26c3f3342f63f3cd82fafe3; official record URL identifies NN 98/2019, item 1920; 20 unique Article headings; publisher shell markers absent. Manual legal-scope and attachment reviews remain separate."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Source-specific .sl-content .doc fragment inspected; no embedded image or linked PDF/Office image attachment is present. The source is text-only for the captured official-document body."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Amending statute to the Free Legal Aid Act. It changes specified provisions and terminology; it must be read with the NN 143/13 base act and does not replace or consolidate that act."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "independent_visible_text_equivalence_and_anchor_review",
+        "review_date": "2026-10-19",
+        "scope": "ordered_visible_text_in_selected_official_document_region",
+        "evidence": "Independent visible-text comparison passed: all decoded text nodes in the retained official .sl-content .doc fragment match the candidate's converted source section in order after Unicode and whitespace normalization. Source and conversion each contain 4325 normalized characters; both normalized-text SHA-256 values are 8ecf3f20c5c753fe1ee25e1c326ab2b5863f213ecc983b0ac21606858a5b9f67. This verifies text extraction fidelity for the selected official document region; 0 embedded images and 0 linked files are reviewed separately under attachments_review.",
+        "source_fragment_path": "source-library/croatia/captures/official-texts/hr-legal-aid-amend-98-19.html",
+        "source_fragment_sha256": "c857f61f2be78660fca9822f4ce703ec2ede1c8b7dcbab5cbbbc1a6eaffd4508",
+        "normalized_visible_text_sha256": "8ecf3f20c5c753fe1ee25e1c326ab2b5863f213ecc983b0ac21606858a5b9f67",
+        "normalized_visible_characters": 4325,
+        "embedded_image_count": 0,
+        "linked_file_urls": []
+      },
+      "accepted_on": "2026-10-19",
+      "document_path": "source-library/croatia/documents/legislation/hr-legal-aid-amend-98-19.md"
+    },
+    "hr-mup-eea-guidance": {
+      "status": "captured_review_candidate",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Captured from https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/boravak-i-rad-drzavljana-drzava-clanica-egp-a-i-clanova-njihovih-obitelji/282191; publisher host and record identity still need a person/source-specific check."
+        },
+        "current_legal_version": {
+          "status": "pending",
+          "evidence": "A successful HTTP response and captured timestamp do not establish the current legal version; compare the chain with the current responsible-authority index."
+        },
+        "extraction_completeness": {
+          "status": "pending",
+          "evidence": "Generic body selector used. Page-specific relevance, navigation contamination and completeness have not been established."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "lawful_reuse": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        }
+      },
+      "semantic_review": {
+        "status": "not_reviewed",
+        "method": null,
+        "evidence": "No source-level semantic comparison has been recorded."
+      },
+      "candidate_path": "source-library/croatia/candidates/guidance/hr-mup-eea-guidance.md"
+    },
+    "hr-mup-propis-index": {
+      "status": "captured_review_candidate",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Captured from https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652; publisher host and record identity still need a person/source-specific check."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "review_date": "2026-10-19",
+          "evidence_url": "https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652",
+          "evidence": "Live official MUP Propisi index inspected on 2026-10-19; the current page lists the EEA, Foreigners Act, third-country residence, and third-country procedure chains. A separate older MUP page is stale for two chains."
+        },
+        "extraction_completeness": {
+          "status": "pending",
+          "evidence": "Generic body selector used. Page-specific relevance, navigation contamination and completeness have not been established."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "lawful_reuse": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        }
+      },
+      "semantic_review": {
+        "status": "not_reviewed",
+        "method": null,
+        "evidence": "No source-level semantic comparison has been recorded."
+      },
+      "candidate_path": "source-library/croatia/candidates/discovery/hr-mup-propis-index.md"
+    },
+    "hr-mvep-family-visas": {
+      "status": "captured_review_candidate",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Current English page resolved on the official MVEP host at https://mvep.gov.hr/consular-information-246396/family-members-of-eu-eea-citizens-246399/246399; trailing page ID 246399 and page heading identify the family-member visa guidance. The retired page ID 180456 is no longer the locator."
+        },
+        "current_legal_version": {
+          "status": "pending",
+          "evidence": "Page has no displayed revision date. Current page identity and current EEA Act/Directive context were checked on 2026-10-19, but this does not establish when the guidance was last revised; its embedded Directive URL is an obsolete HTTP link."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Live response captured 2026-10-19 with one observed div#content .page_content match; page title and substantive article were compared with the official visible page. Response SHA-256 f0e1f53943a89c37e9b79def31163ad87562dc0b0de4b371ba7677e1f3e7611d; extracted article SHA-256 3214557971502cadb7101d62971f75247ab420fc6ba93c3a5a2773b253a4c43c. Navigation/footer excluded; the obsolete embedded Directive link was recorded as a content defect."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Visible article contains no attached file or downloadable form; its Directive link is an ordinary outbound hyperlink and is tracked as a dependency, not an attachment."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Nonbinding consular/visa facilitation guidance published by MVEP; it is not legislation and does not replace the EEA Act, Directive 2004/38 or Visa Code."
+        },
+        "lawful_reuse": {
+          "status": "pending",
+          "evidence": "MVEP terms were checked but do not establish a reuse licence for this guidance page; repository retains metadata, hashes and paraphrase only, not page text or raw HTML."
+        }
+      },
+      "semantic_review": {
+        "status": "partial",
+        "method": "Source-specific live article extraction compared with the current visible page; key visa-card, priority, expedited handling, fee and minimum-document statements checked.",
+        "evidence": "Extraction is limited to the article and avoids the former whole-body shell contamination. Version date, broken embedded Directive link, primary-law scope and mission-specific practice remain unresolved."
+      },
+      "candidate_path": "source-library/croatia/candidates/guidance/hr-mvep-family-visas.md"
+    },
+    "hr-mvep-missions": {
+      "status": "captured_review_candidate",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Captured from https://mvep.gov.hr/diplomatske-misije-i-konzularni-uredi/veleposlanstva-rh-u-svijetu/22966; publisher host and record identity still need a person/source-specific check."
+        },
+        "current_legal_version": {
+          "status": "pending",
+          "evidence": "A successful HTTP response and captured timestamp do not establish the current legal version; compare the chain with the current responsible-authority index."
+        },
+        "extraction_completeness": {
+          "status": "pending",
+          "evidence": "Generic body selector used. Page-specific relevance, navigation contamination and completeness have not been established."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "lawful_reuse": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        }
+      },
+      "semantic_review": {
+        "status": "not_reviewed",
+        "method": null,
+        "evidence": "No source-level semantic comparison has been recorded."
+      },
+      "candidate_path": "source-library/croatia/candidates/discovery/hr-mvep-missions.md"
+    },
+    "hr-mvep-stale-faq": {
+      "status": "excluded_stale_source_lead",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Captured from https://mvep.gov.hr/page/161375?big=0; publisher host and record identity still need a person/source-specific check."
+        },
+        "current_legal_version": {
+          "status": "fail",
+          "evidence": "The page says Croatia is not in Schengen, while current official MVEP material says Croatia applies Schengen acquis from 1 January 2023."
+        },
+        "extraction_completeness": {
+          "status": "fail",
+          "evidence": "The recorded generic body extraction includes page-shell/navigation contamination; replay with a publisher-specific selector and compare article/paragraph boundaries."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified only as a stale-source quality-control lead; excluded from operative guidance."
+        },
+        "lawful_reuse": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        }
+      },
+      "semantic_review": {
+        "status": "failed",
+        "method": "Inspection of the saved candidate output and capture ledger selector.",
+        "evidence": "Generic body extraction is not a semantic acceptance method."
+      },
+      "candidate_path": "source-library/croatia/candidates/guidance/hr-mvep-stale-faq.md"
+    },
+    "hr-mvep-visa-appeal": {
+      "status": "excluded_stale_source_lead",
+      "checks": {
+        "publisher_identity": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "current_legal_version": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "extraction_completeness": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "lawful_reuse": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        }
+      },
+      "semantic_review": {
+        "status": "not_reviewed",
+        "method": null,
+        "evidence": "No source-level semantic comparison has been recorded."
+      },
+      "exclusion_reason": "Superseded duplicate visa appeal page; not an operative instruction."
+    },
+    "hr-mvep-visa-application": {
+      "status": "captured_review_candidate",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Captured from https://mvep.gov.hr/services-consular-portal/consular-information-22802/visas-22807/issuance-procedure/applying-for-a-schengen-visa-for-croatia/262010?big=0; publisher host and record identity still need a person/source-specific check."
+        },
+        "current_legal_version": {
+          "status": "pending",
+          "evidence": "A successful HTTP response and captured timestamp do not establish the current legal version; compare the chain with the current responsible-authority index."
+        },
+        "extraction_completeness": {
+          "status": "pending",
+          "evidence": "Generic body selector used. Page-specific relevance, navigation contamination and completeness have not been established."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "lawful_reuse": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        }
+      },
+      "semantic_review": {
+        "status": "not_reviewed",
+        "method": null,
+        "evidence": "No source-level semantic comparison has been recorded."
+      },
+      "candidate_path": "source-library/croatia/candidates/guidance/hr-mvep-visa-application.md"
+    },
+    "hr-mvep-visa-overview": {
+      "status": "captured_review_candidate",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Captured from https://mvep.gov.hr/visas-180450/visa-requirements-overview-180451/180451?big=1; publisher host and record identity still need a person/source-specific check."
+        },
+        "current_legal_version": {
+          "status": "pending",
+          "evidence": "A successful HTTP response and captured timestamp do not establish the current legal version; compare the chain with the current responsible-authority index."
+        },
+        "extraction_completeness": {
+          "status": "pending",
+          "evidence": "Generic body selector used. Page-specific relevance, navigation contamination and completeness have not been established."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "lawful_reuse": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        }
+      },
+      "semantic_review": {
+        "status": "not_reviewed",
+        "method": null,
+        "evidence": "No source-level semantic comparison has been recorded."
+      },
+      "candidate_path": "source-library/croatia/candidates/guidance/hr-mvep-visa-overview.md"
+    },
+    "hr-mvep-visa-regulations": {
+      "status": "captured_review_candidate",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Captured from https://mvep.gov.hr/konzularne-informacije-259677/vize-264600/propisi-264587/264587; publisher host and record identity still need a person/source-specific check."
+        },
+        "current_legal_version": {
+          "status": "pending",
+          "evidence": "A successful HTTP response and captured timestamp do not establish the current legal version; compare the chain with the current responsible-authority index."
+        },
+        "extraction_completeness": {
+          "status": "pending",
+          "evidence": "Generic body selector used. Page-specific relevance, navigation contamination and completeness have not been established."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "lawful_reuse": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        }
+      },
+      "semantic_review": {
+        "status": "not_reviewed",
+        "method": null,
+        "evidence": "No source-level semantic comparison has been recorded."
+      },
+      "candidate_path": "source-library/croatia/candidates/discovery/hr-mvep-visa-regulations.md"
+    },
+    "hr-nlex": {
+      "status": "captured_review_candidate",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Captured from https://n-lex.europa.eu/n-lex/legis_hr/nn_hr_form; publisher host and record identity still need a person/source-specific check."
+        },
+        "current_legal_version": {
+          "status": "pending",
+          "evidence": "A successful HTTP response and captured timestamp do not establish the current legal version; compare the chain with the current responsible-authority index."
+        },
+        "extraction_completeness": {
+          "status": "pending",
+          "evidence": "Generic body selector used. Page-specific relevance, navigation contamination and completeness have not been established."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "lawful_reuse": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        }
+      },
+      "semantic_review": {
+        "status": "not_reviewed",
+        "method": null,
+        "evidence": "No source-level semantic comparison has been recorded."
+      },
+      "candidate_path": "source-library/croatia/candidates/discovery/hr-nlex.md"
+    },
+    "hr-nn-api": {
+      "status": "captured_review_candidate",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Captured from https://narodne-novine.nn.hr/nn_api.aspx; publisher host and record identity still need a person/source-specific check."
+        },
+        "current_legal_version": {
+          "status": "pending",
+          "evidence": "A successful HTTP response and captured timestamp do not establish the current legal version; compare the chain with the current responsible-authority index."
+        },
+        "extraction_completeness": {
+          "status": "pending",
+          "evidence": "Generic body selector used. Page-specific relevance, navigation contamination and completeness have not been established."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "lawful_reuse": {
+          "status": "pending",
+          "evidence": "Publisher data-access documentation reserves copyright. Determine a lawful basis for storing/redistributing full texts; linking, hashes and source metadata can be maintained while full-text acceptance stays blocked."
+        }
+      },
+      "semantic_review": {
+        "status": "not_reviewed",
+        "method": null,
+        "evidence": "No source-level semantic comparison has been recorded."
+      },
+      "candidate_path": "source-library/croatia/candidates/discovery/hr-nn-api.md"
+    },
+    "hr-nn-data-access": {
+      "status": "captured_review_candidate",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Captured from https://narodne-novine.nn.hr/data_access.aspx; publisher host and record identity still need a person/source-specific check."
+        },
+        "current_legal_version": {
+          "status": "pending",
+          "evidence": "A successful HTTP response and captured timestamp do not establish the current legal version; compare the chain with the current responsible-authority index."
+        },
+        "extraction_completeness": {
+          "status": "pending",
+          "evidence": "Generic body selector used. Page-specific relevance, navigation contamination and completeness have not been established."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "lawful_reuse": {
+          "status": "pending",
+          "evidence": "Publisher data-access documentation reserves copyright. Determine a lawful basis for storing/redistributing full texts; linking, hashes and source metadata can be maintained while full-text acceptance stays blocked."
+        }
+      },
+      "semantic_review": {
+        "status": "not_reviewed",
+        "method": null,
+        "evidence": "No source-level semantic comparison has been recorded."
+      },
+      "candidate_path": "source-library/croatia/candidates/discovery/hr-nn-data-access.md"
+    },
+    "hr-ombudsman-act": {
+      "status": "captured_review_candidate",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Captured from https://narodne-novine.nn.hr/clanci/sluzbeni/2012_07_76_1761.html; publisher host and record identity still need a person/source-specific check."
+        },
+        "current_legal_version": {
+          "status": "pending",
+          "evidence": "A successful HTTP response and captured timestamp do not establish the current legal version; compare the chain with the current responsible-authority index."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Replayed only the official .sl-content .doc fragment; source fragment SHA-256 93e2c44efd8ac0346d4f7f0853cfb5704da1f352dd3013cd4b77e2d0f8578c93; converted text SHA-256 9edd15f5f63d2e8622e75f9a159ab8a9af40429c91acfbfa31fb1f6ba050afa6; official record URL identifies NN 76/2012, item 1761; 38 unique Article headings; publisher shell markers absent. Manual legal-scope and attachment reviews remain separate."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Source-specific .sl-content .doc fragment inspected; no embedded image or linked PDF/Office image attachment is present. The source is text-only for the captured official-document body."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "partial",
+        "method": "publisher_dom_fragment_replay_and_structural_checks",
+        "evidence": "The selector-bound official document fragment was retained and replayed deterministically; the Gazette citation and Article headings were inventoried and known page-shell strings were excluded. This establishes conversion fidelity to the selected DOM fragment, not current legal effect, issue coverage, or visual completeness of annexes.",
+        "source_fragment_path": "source-library/croatia/captures/official-texts/hr-ombudsman-act.html",
+        "source_fragment_sha256": "93e2c44efd8ac0346d4f7f0853cfb5704da1f352dd3013cd4b77e2d0f8578c93",
+        "converted_text_sha256": "9edd15f5f63d2e8622e75f9a159ab8a9af40429c91acfbfa31fb1f6ba050afa6"
+      },
+      "candidate_path": "source-library/croatia/candidates/oversight/hr-ombudsman-act.md"
+    },
+    "hr-ombudsman-complaints": {
+      "status": "captured_review_candidate",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Captured from https://www.ombudsman.hr/en/kako-podnijeti-prituzbu/; publisher host and record identity still need a person/source-specific check."
+        },
+        "current_legal_version": {
+          "status": "pending",
+          "evidence": "A successful HTTP response and captured timestamp do not establish the current legal version; compare the chain with the current responsible-authority index."
+        },
+        "extraction_completeness": {
+          "status": "pending",
+          "evidence": "Generic body selector used. Page-specific relevance, navigation contamination and completeness have not been established."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "lawful_reuse": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        }
+      },
+      "semantic_review": {
+        "status": "not_reviewed",
+        "method": null,
+        "evidence": "No source-level semantic comparison has been recorded."
+      },
+      "candidate_path": "source-library/croatia/candidates/oversight/hr-ombudsman-complaints.md"
+    },
+    "hr-personal-data-act": {
+      "status": "discovery_source_only",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Captured from https://azop.hr/national-legislation/; publisher host and record identity still need a person/source-specific check."
+        },
+        "current_legal_version": {
+          "status": "not_applicable",
+          "reason": "AZOP legislation index is a discovery route, not the substantive data-protection statute."
+        },
+        "extraction_completeness": {
+          "status": "not_applicable",
+          "reason": "The captured content is used as a discovery index only; it is not treated as the national GDPR implementation statute."
+        },
+        "attachments_review": {
+          "status": "not_applicable",
+          "reason": "Discovery index only; no attachment is included as an operative source."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as an AZOP legislation discovery index, not a national statute; the GDPR implementation Act is separately identified as hr-data-protection-act NN 42/18."
+        },
+        "lawful_reuse": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        }
+      },
+      "semantic_review": {
+        "status": "not_applicable",
+        "method": "Discovery-source classification only.",
+        "evidence": "No legal-text extraction or substantive legal claim is made from this index."
+      },
+      "candidate_path": "source-library/croatia/candidates/discovery/hr-personal-data-act.md"
+    },
+    "hr-third-country-procedure-amend-102-25": {
+      "status": "located_not_captured",
+      "checks": {
+        "publisher_identity": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "chain_id": "hr-third-country-procedure-regulation-chain",
+          "review_date": "2026-10-19",
+          "evidence_url": "https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652",
+          "evidence": "MUP's current Propisi page lists the third-country procedure regulation as NN 136/21, 145/23, 102/25 and 116/26. No later amendment is listed on that page as of 2026-10-19. Official publisher index checked 2026-10-19 at https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652 (turn1078view0 lines 70-81). This confirms the listed chain only; it is not a consolidated-text or legal-topic-completeness review. A separate older MUP page omits the latest amendment for this chain; it is recorded as stale in currentness-review.json and does not override the current Propisi index."
+        },
+        "extraction_completeness": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "not_reviewed",
+        "method": null,
+        "evidence": "No source-level semantic comparison has been recorded."
+      }
+    },
+    "hr-third-country-procedure-amend-145-23": {
+      "status": "located_not_captured",
+      "checks": {
+        "publisher_identity": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "chain_id": "hr-third-country-procedure-regulation-chain",
+          "review_date": "2026-10-19",
+          "evidence_url": "https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652",
+          "evidence": "MUP's current Propisi page lists the third-country procedure regulation as NN 136/21, 145/23, 102/25 and 116/26. No later amendment is listed on that page as of 2026-10-19. Official publisher index checked 2026-10-19 at https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652 (turn1078view0 lines 70-81). This confirms the listed chain only; it is not a consolidated-text or legal-topic-completeness review. A separate older MUP page omits the latest amendment for this chain; it is recorded as stale in currentness-review.json and does not override the current Propisi index."
+        },
+        "extraction_completeness": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "not_reviewed",
+        "method": null,
+        "evidence": "No source-level semantic comparison has been recorded."
+      }
+    },
+    "hr-third-country-procedure-base": {
+      "status": "located_not_captured",
+      "checks": {
+        "publisher_identity": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "chain_id": "hr-third-country-procedure-regulation-chain",
+          "review_date": "2026-10-19",
+          "evidence_url": "https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652",
+          "evidence": "MUP's current Propisi page lists the third-country procedure regulation as NN 136/21, 145/23, 102/25 and 116/26. No later amendment is listed on that page as of 2026-10-19. Official publisher index checked 2026-10-19 at https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652 (turn1078view0 lines 70-81). This confirms the listed chain only; it is not a consolidated-text or legal-topic-completeness review. A separate older MUP page omits the latest amendment for this chain; it is recorded as stale in currentness-review.json and does not override the current Propisi index."
+        },
+        "extraction_completeness": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "not_reviewed",
+        "method": null,
+        "evidence": "No source-level semantic comparison has been recorded."
+      }
+    },
+    "hr-third-country-procedure-rule": {
+      "status": "captured_review_candidate",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Captured from https://narodne-novine.nn.hr/clanci/sluzbeni/2026_10_116_1388.html; publisher host and record identity still need a person/source-specific check."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "chain_id": "hr-third-country-procedure-regulation-chain",
+          "review_date": "2026-10-19",
+          "evidence_url": "https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652",
+          "evidence": "MUP's current Propisi page lists the third-country procedure regulation as NN 136/21, 145/23, 102/25 and 116/26. No later amendment is listed on that page as of 2026-10-19. Official publisher index checked 2026-10-19 at https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652 (turn1078view0 lines 70-81). This confirms the listed chain only; it is not a consolidated-text or legal-topic-completeness review. A separate older MUP page omits the latest amendment for this chain; it is recorded as stale in currentness-review.json and does not override the current Propisi index."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Replayed only the official .sl-content .doc fragment; source fragment SHA-256 06b297de63ed5c01576f6be21c4d94977183fd0b49153b99a99862d86dc019cb; converted text SHA-256 1d7600ee33527f036d126f79604371019c80f1a88673d86279bcd5fa763242aa; official record URL identifies NN 116/2026, item 1388; 10 unique Article headings; publisher shell markers absent. Manual legal-scope and attachment reviews remain separate."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "Inventory found 83 embedded image(s) in the official document fragment. Exact image URLs and text labels are in attachment-review.json; visual and currentness checks remain open."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "partial",
+        "method": "publisher_dom_fragment_replay_and_structural_checks",
+        "evidence": "The selector-bound official document fragment was retained and replayed deterministically; the Gazette citation and Article headings were inventoried and known page-shell strings were excluded. This establishes conversion fidelity to the selected DOM fragment, not current legal effect, issue coverage, or visual completeness of annexes.",
+        "source_fragment_path": "source-library/croatia/captures/official-texts/hr-third-country-procedure-rule.html",
+        "source_fragment_sha256": "06b297de63ed5c01576f6be21c4d94977183fd0b49153b99a99862d86dc019cb",
+        "converted_text_sha256": "1d7600ee33527f036d126f79604371019c80f1a88673d86279bcd5fa763242aa"
+      },
+      "candidate_path": "source-library/croatia/candidates/legislation/hr-third-country-procedure-rule.md"
+    },
+    "hr-third-country-residence-amend-155-22": {
+      "status": "located_not_captured",
+      "checks": {
+        "publisher_identity": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "chain_id": "hr-third-country-residence-regulation-chain",
+          "review_date": "2026-10-19",
+          "evidence_url": "https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652",
+          "evidence": "MUP's current Propisi page lists the third-country residence regulation as NN 20/22, 155/22 and 43/26. No later amendment is listed on that page as of 2026-10-19. Official publisher index checked 2026-10-19 at https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652 (turn1078view0 lines 70-81). This confirms the listed chain only; it is not a consolidated-text or legal-topic-completeness review."
+        },
+        "extraction_completeness": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "not_reviewed",
+        "method": null,
+        "evidence": "No source-level semantic comparison has been recorded."
+      }
+    },
+    "hr-third-country-residence-base": {
+      "status": "located_not_captured",
+      "checks": {
+        "publisher_identity": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "chain_id": "hr-third-country-residence-regulation-chain",
+          "review_date": "2026-10-19",
+          "evidence_url": "https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652",
+          "evidence": "MUP's current Propisi page lists the third-country residence regulation as NN 20/22, 155/22 and 43/26. No later amendment is listed on that page as of 2026-10-19. Official publisher index checked 2026-10-19 at https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652 (turn1078view0 lines 70-81). This confirms the listed chain only; it is not a consolidated-text or legal-topic-completeness review."
+        },
+        "extraction_completeness": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "not_reviewed",
+        "method": null,
+        "evidence": "No source-level semantic comparison has been recorded."
+      }
+    },
+    "hr-third-country-residence-rule": {
+      "status": "captured_review_candidate",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Captured from https://narodne-novine.nn.hr/clanci/sluzbeni/2026_04_43_511.html; publisher host and record identity still need a person/source-specific check."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "chain_id": "hr-third-country-residence-regulation-chain",
+          "review_date": "2026-10-19",
+          "evidence_url": "https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652",
+          "evidence": "MUP's current Propisi page lists the third-country residence regulation as NN 20/22, 155/22 and 43/26. No later amendment is listed on that page as of 2026-10-19. Official publisher index checked 2026-10-19 at https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652 (turn1078view0 lines 70-81). This confirms the listed chain only; it is not a consolidated-text or legal-topic-completeness review."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Replayed only the official .sl-content .doc fragment; source fragment SHA-256 3518b272de32e49233f9f97eedda33a347e7e2489bbc6186692bdef7379028ee; converted text SHA-256 4008378887ab8e4f25eb1a9d8cbfd06a8653bc8cc05e604dd2d96a34fe7761b2; official record URL identifies NN 43/2026, item 511; 40 unique Article headings; publisher shell markers absent. Manual legal-scope and attachment reviews remain separate."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "Inventory found 16 embedded image(s) in the official document fragment. Exact image URLs and text labels are in attachment-review.json; visual and currentness checks remain open."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "partial",
+        "method": "publisher_dom_fragment_replay_and_structural_checks",
+        "evidence": "The selector-bound official document fragment was retained and replayed deterministically; the Gazette citation and Article headings were inventoried and known page-shell strings were excluded. This establishes conversion fidelity to the selected DOM fragment, not current legal effect, issue coverage, or visual completeness of annexes.",
+        "source_fragment_path": "source-library/croatia/captures/official-texts/hr-third-country-residence-rule.html",
+        "source_fragment_sha256": "3518b272de32e49233f9f97eedda33a347e7e2489bbc6186692bdef7379028ee",
+        "converted_text_sha256": "4008378887ab8e4f25eb1a9d8cbfd06a8653bc8cc05e604dd2d96a34fe7761b2"
+      },
+      "candidate_path": "source-library/croatia/candidates/legislation/hr-third-country-residence-rule.md"
+    },
+    "hr-vis-decree": {
+      "status": "located_not_captured",
+      "checks": {
+        "publisher_identity": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "current_legal_version": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "extraction_completeness": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "not_reviewed",
+        "method": null,
+        "evidence": "No source-level semantic comparison has been recorded."
+      }
+    },
+    "hr-vis-decree-amend-105-17": {
+      "status": "located_not_captured",
+      "checks": {
+        "publisher_identity": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "current_legal_version": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "extraction_completeness": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "not_reviewed",
+        "method": null,
+        "evidence": "No source-level semantic comparison has been recorded."
+      }
+    },
+    "hr-visa-ordinance": {
+      "status": "captured_review_candidate",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Captured from https://narodne-novine.nn.hr/clanci/sluzbeni/2021_10_109_1919.html; publisher host and record identity still need a person/source-specific check."
+        },
+        "current_legal_version": {
+          "status": "pending",
+          "evidence": "A successful HTTP response and captured timestamp do not establish the current legal version; compare the chain with the current responsible-authority index."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Replayed only the official .sl-content .doc fragment; source fragment SHA-256 e511377efc5c113cc6600e5c6c9e27e88b9c6121c567c2e0eea14bfdadfdd871; converted text SHA-256 c604c0fbcb77a725c348d94e18dbb38e834e8ecadb5ad11e717a3c09b43d0ae9; official record URL identifies NN 109/2021, item 1919; 54 unique Article headings; publisher shell markers absent. Manual legal-scope and attachment reviews remain separate."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "Inventory found 18 embedded image(s) in the official document fragment. Exact image URLs and text labels are in attachment-review.json; visual and currentness checks remain open."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "partial",
+        "method": "publisher_dom_fragment_replay_and_structural_checks",
+        "evidence": "The selector-bound official document fragment was retained and replayed deterministically; the Gazette citation and Article headings were inventoried and known page-shell strings were excluded. This establishes conversion fidelity to the selected DOM fragment, not current legal effect, issue coverage, or visual completeness of annexes.",
+        "source_fragment_path": "source-library/croatia/captures/official-texts/hr-visa-ordinance.html",
+        "source_fragment_sha256": "e511377efc5c113cc6600e5c6c9e27e88b9c6121c567c2e0eea14bfdadfdd871",
+        "converted_text_sha256": "c604c0fbcb77a725c348d94e18dbb38e834e8ecadb5ad11e717a3c09b43d0ae9"
+      },
+      "candidate_path": "source-library/croatia/candidates/legislation/hr-visa-ordinance.md"
+    },
+    "hr-visa-system-decree": {
+      "status": "located_not_captured",
+      "checks": {
+        "publisher_identity": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "current_legal_version": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "extraction_completeness": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "not_reviewed",
+        "method": null,
+        "evidence": "No source-level semantic comparison has been recorded."
+      }
+    },
+    "hr-law-enforcement-data-act": {
+      "status": "located_not_captured",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official Narodne novine Gazette URL identified; identity not yet verified from a saved response."
+        },
+        "current_legal_version": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "extraction_completeness": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Not yet reviewed."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "not_reviewed",
+        "method": null,
+        "evidence": "No source-level semantic comparison has been recorded."
+      }
+    },
+    "hr-mup-eea-forms-index": {
+      "status": "located_not_captured",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official publisher page opened: https://mup.gov.hr/obrasci-281565/281565"
+        },
+        "current_legal_version": {
+          "status": "pending",
+          "evidence": "The page is a live lead, but linked procedures/forms and cited legal versions have not been reconciled against the current MUP index and Gazette."
+        },
+        "extraction_completeness": {
+          "status": "pending",
+          "evidence": "Not captured; a source-specific selector and section/link inventory are required."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "Resolve and inspect linked forms/attachments; do not infer form purpose from label alone."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Operational guidance only; separate procedural statements from primary legal rules."
+        },
+        "lawful_reuse": {
+          "status": "pending",
+          "evidence": "Not reviewed."
+        }
+      },
+      "semantic_review": {
+        "status": "not_reviewed",
+        "method": "Not captured.",
+        "evidence": "No semantic comparison performed."
+      }
+    },
+    "hr-gov-hr-eea-residence-guidance": {
+      "status": "located_not_captured",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official publisher page opened: https://gov.hr/en/prijava-boravka-drzavljani-egp-a/1208"
+        },
+        "current_legal_version": {
+          "status": "pending",
+          "evidence": "The page is a live lead, but linked procedures/forms and cited legal versions have not been reconciled against the current MUP index and Gazette."
+        },
+        "extraction_completeness": {
+          "status": "pending",
+          "evidence": "Not captured; a source-specific selector and section/link inventory are required."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "Resolve and inspect linked forms/attachments; do not infer form purpose from label alone."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Operational guidance only; separate procedural statements from primary legal rules."
+        },
+        "lawful_reuse": {
+          "status": "pending",
+          "evidence": "Not reviewed."
+        }
+      },
+      "semantic_review": {
+        "status": "not_reviewed",
+        "method": "Not captured.",
+        "evidence": "No semantic comparison performed."
+      }
+    },
+    "hr-admin-fees-act": {
+      "status": "located_not_captured",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Narodne novine official record at the exact official URL https://narodne-novine.nn.hr/clanci/sluzbeni/2016_12_115_2521.html; the official record/page title and publisher domain identify the listed instrument or procedure."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "review_date": "2026-10-19",
+          "evidence_url": "https://narodne-novine.nn.hr/clanci/sluzbeni/2016_12_115_2521.html",
+          "evidence": "Official Ministry source lists the Administrative Fees Act as NN 115/16 and amendment NN 114/22. The current-version chain is identified, not consolidated. See https://mpgi.gov.hr/?id=3228&url=print."
+        },
+        "extraction_completeness": {
+          "status": "pending",
+          "evidence": "Located; no source-specific capture or extraction comparison is recorded."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "No attachment inventory or source visual review has been recorded."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Located official record; verify exact instrument classification and role after capture."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "not_reviewed",
+        "method": null,
+        "evidence": "No source-specific semantic comparison has been recorded."
+      },
+      "discovery_note": "Sets the statutory framework for administrative charges and expressly references the Visa Code; needed to identify who may be charged and exemptions/refunds."
+    },
+    "hr-admin-fees-amend-114-22": {
+      "status": "located_not_captured",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Narodne novine official record at the exact official URL https://narodne-novine.nn.hr/clanci/sluzbeni/full/2022_10_114_1682.html; the official record/page title and publisher domain identify the listed instrument or procedure."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "review_date": "2026-10-19",
+          "evidence_url": "https://narodne-novine.nn.hr/clanci/sluzbeni/full/2022_10_114_1682.html",
+          "evidence": "The official Ministry list states the Administrative Fees Act chain NN 115/16 and 114/22; NN 114/22 is the latest listed amendment. See https://mpgi.gov.hr/?id=3228&url=print."
+        },
+        "extraction_completeness": {
+          "status": "pending",
+          "evidence": "Located; no source-specific capture or extraction comparison is recorded."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "No attachment inventory or source visual review has been recorded."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Located official record; verify exact instrument classification and role after capture."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "not_reviewed",
+        "method": null,
+        "evidence": "No source-specific semantic comparison has been recorded."
+      },
+      "discovery_note": "Latest amendment listed in official ministry sources; changed euro-denomination provisions."
+    },
+    "hr-admin-fees-tariff": {
+      "status": "located_not_captured",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Narodne novine official record at the exact official URL https://narodne-novine.nn.hr/clanci/sluzbeni/2022_12_156_2520.html; the official record/page title and publisher domain identify the listed instrument or procedure."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "review_date": "2026-10-19",
+          "evidence_url": "https://narodne-novine.nn.hr/clanci/sluzbeni/2022_12_156_2520.html",
+          "evidence": "The Central Catalogue of Official Documents lists NN 156/22 as a valid instrument with amendment NN 130/25; DGU also lists the same chain. This verifies the current tariff identity, not a consolidated rendering. See https://sredisnjikatalogrh.gov.hr/sredisnji-katalog/pravni-propisi/detalji?id=3018443&st=1 and https://dgu.gov.hr/pristup-informacijama/zakoni-i-ostali-propisi/uredbe/96."
+        },
+        "extraction_completeness": {
+          "status": "pending",
+          "evidence": "Located; no source-specific capture or extraction comparison is recorded."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "No attachment inventory or source visual review has been recorded."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Located official record; verify exact instrument classification and role after capture."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "not_reviewed",
+        "method": null,
+        "evidence": "No source-specific semantic comparison has been recorded."
+      },
+      "discovery_note": "Sets amounts and individual administrative fee items under the Administrative Fees Act, including visa-appeal and residence-document fees."
+    },
+    "hr-admin-fees-tariff-amend-130-25": {
+      "status": "located_not_captured",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Narodne novine official record at the exact official URL https://narodne-novine.nn.hr/clanci/sluzbeni/full/2025_10_130_1893.html; the official record/page title and publisher domain identify the listed instrument or procedure."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "review_date": "2026-10-19",
+          "evidence_url": "https://narodne-novine.nn.hr/clanci/sluzbeni/full/2025_10_130_1893.html",
+          "evidence": "NN 130/25 expressly amends NN 156/22 and changes tariff item 30 to €130 for visa refusal/annulment/revocation appeals. Current government indexes list NN 156/22, 130/25."
+        },
+        "extraction_completeness": {
+          "status": "pending",
+          "evidence": "Located; no source-specific capture or extraction comparison is recorded."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "No attachment inventory or source visual review has been recorded."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Located official record; verify exact instrument classification and role after capture."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "not_reviewed",
+        "method": null,
+        "evidence": "No source-specific semantic comparison has been recorded."
+      },
+      "discovery_note": "Amends tariff item 30 to set a €130 fee for appeal of visa refusal, annulment or revocation; effective eight days after publication."
+    },
+    "hr-judicial-fees-act": {
+      "status": "located_not_captured",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Narodne novine official record at the exact official URL https://narodne-novine.nn.hr/clanci/sluzbeni/full/2018_12_118_2335.html; the official record/page title and publisher domain identify the listed instrument or procedure."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "review_date": "2026-10-19",
+          "evidence_url": "https://narodne-novine.nn.hr/clanci/sluzbeni/full/2018_12_118_2335.html",
+          "evidence": "The current NN 50/26 court tariff identifies its enabling statute as the Court Fees Act NN 118/18 and amendment NN 51/23. This confirms the chain referenced by the operative tariff."
+        },
+        "extraction_completeness": {
+          "status": "pending",
+          "evidence": "Located; no source-specific capture or extraction comparison is recorded."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "No attachment inventory or source visual review has been recorded."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Located official record; verify exact instrument classification and role after capture."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "not_reviewed",
+        "method": null,
+        "evidence": "No source-specific semantic comparison has been recorded."
+      },
+      "discovery_note": "Provides statutory basis for court fees, including administrative disputes and relief/exemptions."
+    },
+    "hr-judicial-fees-amend-51-23": {
+      "status": "located_not_captured",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Narodne novine official record at the exact official URL https://narodne-novine.nn.hr/clanci/sluzbeni/full/2023_05_51_840.html; the official record/page title and publisher domain identify the listed instrument or procedure."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "review_date": "2026-10-19",
+          "evidence_url": "https://narodne-novine.nn.hr/clanci/sluzbeni/full/2023_05_51_840.html",
+          "evidence": "The current NN 50/26 court tariff identifies the Court Fees Act as NN 118/18 and 51/23; no later amendment is cited there."
+        },
+        "extraction_completeness": {
+          "status": "pending",
+          "evidence": "Located; no source-specific capture or extraction comparison is recorded."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "No attachment inventory or source visual review has been recorded."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Located official record; verify exact instrument classification and role after capture."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "not_reviewed",
+        "method": null,
+        "evidence": "No source-specific semantic comparison has been recorded."
+      },
+      "discovery_note": "Latest amendment referenced by the current 2026 court-fee tariff."
+    },
+    "hr-judicial-fees-tariff": {
+      "status": "located_not_captured",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Narodne novine official record at the exact official URL https://narodne-novine.nn.hr/clanci/sluzbeni/2026_05_50_624.html; the official record/page title and publisher domain identify the listed instrument or procedure."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "review_date": "2026-10-19",
+          "evidence_url": "https://narodne-novine.nn.hr/clanci/sluzbeni/2026_05_50_624.html",
+          "evidence": "NN 50/26 states that it applies from 1 June 2026, replaces NN 37/23 and preserves NN 37/23 rates for proceedings begun before that date."
+        },
+        "extraction_completeness": {
+          "status": "pending",
+          "evidence": "Located; no source-specific capture or extraction comparison is recorded."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "No attachment inventory or source visual review has been recorded."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Located official record; verify exact instrument classification and role after capture."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "not_reviewed",
+        "method": null,
+        "evidence": "No source-specific semantic comparison has been recorded."
+      },
+      "discovery_note": "Current tariff effective 1 June 2026: €110 for an administrative claim, €140 for appeals and High Administrative Court filings, and €560 for a general-act legality application."
+    },
+    "hr-judicial-fees-tariff-transition-37-23": {
+      "status": "located_not_captured",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Narodne novine official record at the exact official URL https://narodne-novine.nn.hr/clanci/sluzbeni/full/2023_03_37_621.html; the official record/page title and publisher domain identify the listed instrument or procedure."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "review_date": "2026-10-19",
+          "evidence_url": "https://narodne-novine.nn.hr/clanci/sluzbeni/full/2023_03_37_621.html",
+          "evidence": "NN 50/26 Article 2 keeps this superseded tariff applicable to administrative disputes begun before 1 June 2026. It is a transition-only rule, not the current general tariff."
+        },
+        "extraction_completeness": {
+          "status": "pending",
+          "evidence": "Located; no source-specific capture or extraction comparison is recorded."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "No attachment inventory or source visual review has been recorded."
+        },
+        "legal_classification": {
+          "status": "pending",
+          "evidence": "Located official record; verify exact instrument classification and role after capture."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "not_reviewed",
+        "method": null,
+        "evidence": "No source-specific semantic comparison has been recorded."
+      },
+      "discovery_note": "The 2026 tariff preserves the earlier tariff for administrative disputes begun before 1 June 2026."
+    },
+    "hr-mvep-visa-appeal-current": {
+      "status": "captured_review_candidate",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official MVEP page at https://mvep.gov.hr/informacije-za-gradjane-244593/konzularne-informacije-22730/vize-22733/zalba-protiv-odluke-o-odbijanju-ukidanju-ili-ponistenju-vize-22751/22751; current visa navigation links to the page and the heading/page ID identify the appeal procedure."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "review_date": "2026-10-19",
+          "evidence_url": "https://mup.gov.hr/print.aspx?id=652&url=print",
+          "evidence": "Current page checked live and cited Foreigners Act through NN 55/26 and GAPA NN 47/09 and 110/21; the MUP Propisi index confirms the Foreigners Act chain through NN 55/26. The page also identifies NN 130/25 for the €130 fee, cross-checked against the current Gazette tariff. The page is undated, so this is an as-of retrieval check, not a durable version guarantee."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Live response captured 2026-10-19 with one observed div#content .page_content match; heading and substantive appeal article compared with official visible lines 58-73. Response SHA-256 e7d1a50fd5202b1a824a19856f7dabb446af2fa57ca24d66eb7aee26256d529e; extracted article SHA-256 a4afd22614ae46a27c5e5ad7e0d2dd86526b166382e15b66ef2cb0e41858ec23. Navigation/footer excluded."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Visible appeal article contains no attached forms or downloadable files; its outgoing links are ordinary references."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Nonbinding official MVEP procedural guidance describing the statutory visa appeal route; deadlines and fee are separately checked against primary law and the Gazette tariff."
+        },
+        "lawful_reuse": {
+          "status": "pending",
+          "evidence": "MVEP terms do not establish a repository reuse licence for this guidance page; retain hashes and paraphrase only."
+        }
+      },
+      "semantic_review": {
+        "status": "partial",
+        "method": "Source-specific article extraction compared with the current official page; fee, filing route, language, deadline, decision period and court-claim details were checked.",
+        "evidence": "Guidance was corroborated against Foreigners Act Article 32, current MUP amendment index and the fee tariff. Whether the €130 charge applies to qualifying Directive 2004/38 family members and what exemption/aid route applies remain legally unresolved."
+      },
+      "discovery_note": "Current official route gives a 15-day appeal deadline, €130/USD 150.71 fee, 60-day decision period and 30-day court filing route; cites the updated Foreigners Act chain through NN 55/26."
+    },
+    "hr-legal-aid-tariff-2025": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official Narodne novine ELI record NN 142/25, item 2106, at https://narodne-novine.nn.hr/clanci/sluzbeni/2025_11_142_2106.html; exact record opened from the Ministry of Justice and Administration page for the Free Legal Aid Act."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "review_date": "2026-10-19",
+          "evidence_url": "https://mpudt.gov.hr/?id=6618&url=print",
+          "evidence": "The official Ministry index lists NN 142/25 as the 2025 annual secondary-legal-aid compensation regulation and latest annual instrument shown. The Gazette title and Article 3 expressly specify 2025 compensation, and Article 20 provides entry into force eight days after publication. Accept this record only for its 2025 period; it is not the 2026 provider-rate rule. Current 2026 annual compensation status remains unresolved."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Replayed only the official .sl-content .doc fragment; source fragment SHA-256 58f2bdada44ceb3e757a10e90129bd1fac525fad78b101281288800f2d88a8a1; converted text SHA-256 7a0d8850d30cd8abd13ceb70c7f7a556a023c1bb2ec6d411f5d6d28e967fc77d; official record URL identifies NN 142/2025, item 2106; 20 unique Article headings; publisher shell markers absent. Manual legal-scope and attachment reviews remain separate."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Source-specific .sl-content .doc fragment inspected; no embedded image or linked PDF/Office image attachment is present. The source is text-only for the captured official-document body."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "The official Government regulation sets year-specific 2025 compensation for secondary legal aid providers (lawyers, experts and interpreters) granted by county/City of Zagreb administrative authorities. Article 7 prices work in administrative disputes. It governs provider remuneration, not applicant eligibility, authorization of aid, visa-appeal fee exemption or the 2026 rate."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "independent_visible_text_equivalence_and_anchor_review",
+        "review_date": "2026-10-19",
+        "scope": "ordered_visible_text_in_selected_official_document_region",
+        "evidence": "Independent visible-text comparison passed: all decoded text nodes in the retained official .sl-content .doc fragment match the candidate's converted source section in order after Unicode and whitespace normalization. Source and conversion each contain 10289 normalized characters; both normalized-text SHA-256 values are cdffc73c4facd3e78d27169ac59aa915e1d14da513d135a3644e2e9545b07abd. This verifies text extraction fidelity for the selected official document region; 0 embedded images and 0 linked files are reviewed separately under attachments_review.",
+        "source_fragment_path": "source-library/croatia/captures/official-texts/hr-legal-aid-tariff-2025.html",
+        "source_fragment_sha256": "58f2bdada44ceb3e757a10e90129bd1fac525fad78b101281288800f2d88a8a1",
+        "normalized_visible_text_sha256": "cdffc73c4facd3e78d27169ac59aa915e1d14da513d135a3644e2e9545b07abd",
+        "normalized_visible_characters": 10289,
+        "embedded_image_count": 0,
+        "linked_file_urls": []
+      },
+      "discovery_note": "Article 7 specifies attorney compensation for administrative disputes. This informs the implementation capacity of secondary legal aid, not applicant eligibility or fee exemptions.",
+      "accepted_on": "2026-10-19",
+      "document_path": "source-library/croatia/documents/legislation/hr-legal-aid-tariff-2025.md"
+    },
+    "hr-legal-aid-ministry-index": {
+      "status": "located_not_captured",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official MPUDT URL and Ministry identity observed on the page; full record capture and redirect check remain pending."
+        },
+        "current_legal_version": {
+          "status": "pending",
+          "evidence": "Dynamic index inspected 2026-10-19; full chain and possible later updates require a recorded source capture."
+        },
+        "extraction_completeness": {
+          "status": "pending",
+          "evidence": "No deterministic source-specific page capture or selector audit has been produced."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "Linked instruments must be inventoried during capture."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified only as a ministry index, not as primary legal text."
+        },
+        "lawful_reuse": {
+          "status": "pending",
+          "evidence": "Page and systematic reuse terms not reviewed."
+        }
+      },
+      "semantic_review": {
+        "status": "pending",
+        "method": null,
+        "evidence": "Index order and legal instrument identities must be checked against Gazette texts."
+      },
+      "candidate_path": null
+    },
+    "hr-legal-aid-annual-plan-2026": {
+      "status": "located_not_captured",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official MPUDT PDF URL and Ministry authorship identified; file capture and hash remain pending."
+        },
+        "current_legal_version": {
+          "status": "not_applicable",
+          "reason": "Planning document, not a legal instrument."
+        },
+        "extraction_completeness": {
+          "status": "pending",
+          "evidence": "Capture and visually verify the complete page 45 row before reliance."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "PDF pages and embedded material not inventoried."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Planning document; not evidence of an enacted or promulgated regulation."
+        },
+        "lawful_reuse": {
+          "status": "pending",
+          "evidence": "PDF reuse terms not reviewed."
+        }
+      },
+      "semantic_review": {
+        "status": "pending",
+        "method": null,
+        "evidence": "Verify full row and deadline against the rendered PDF page."
+      },
+      "candidate_path": null
+    },
+    "hr-legal-aid-overview": {
+      "status": "located_not_captured",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official MPUDT page title, domain and Ministry footer observed; source-specific capture is pending."
+        },
+        "current_legal_version": {
+          "status": "pending",
+          "evidence": "Dynamic procedure page has no verified content version date; compare the Act chain and linked forms."
+        },
+        "extraction_completeness": {
+          "status": "pending",
+          "evidence": "No registered main-content selector or deterministic capture exists."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "The page links forms and documents; each linked item needs inventory."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Official practical overview/guidance, not primary law."
+        },
+        "lawful_reuse": {
+          "status": "pending",
+          "evidence": "Guidance and linked documents require separate reuse review."
+        }
+      },
+      "semantic_review": {
+        "status": "pending",
+        "method": null,
+        "evidence": "Eligibility categories, authorities, appeal roles, contacts and links require comparison with primary law."
+      },
+      "candidate_path": null
+    },
+    "hr-legal-aid-conditions-stale-amounts": {
+      "status": "excluded_stale_source_lead",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official MPUDT domain and page title observed."
+        },
+        "current_legal_version": {
+          "status": "fail",
+          "evidence": "The official conditions page still states means-test amounts in kuna as of 2026-10-19."
+        },
+        "extraction_completeness": {
+          "status": "pending",
+          "evidence": "Not captured; no use as an operative source is permitted."
+        },
+        "attachments_review": {
+          "status": "pending",
+          "evidence": "No source capture or attachment inventory."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified only as a stale official-guidance comparator."
+        },
+        "lawful_reuse": {
+          "status": "pending",
+          "evidence": "Not needed for operative use; audit retention basis is not reviewed."
+        }
+      },
+      "semantic_review": {
+        "status": "failed",
+        "method": "Direct comparison with current statutory monetary base.",
+        "evidence": "Published HRK values are legacy currency figures; retain as displayed only and do not report as current euro amounts."
+      },
+      "candidate_path": null
+    },
+    "hr-state-budget-execution-2026": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official Narodne novine ELI URL, NN 152/25 and item 2277 observed."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "The Ministry of Finance current 2026 budget page (https://mfin.gov.hr/print.aspx?id=4008&url=print), inspected 2026-10-19, lists and links this execution act, identifies its Official Gazette publication NN 152/25, and points to the official PDF. A bounded exact-title query of Narodne novine identified no amending act for this 2026 statute as of the review date. This is the latest official version located for the 2026 annual amount; recheck if a later amendment or conflicting official notice appears."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Replayed only the official .sl-content .doc fragment; source fragment SHA-256 dc9d175beb451095319cb04f92eabeb918a70b090b80109a8aac4b618c726c47; converted text SHA-256 e9be489a70a366e352ef6dc1479bb6bba708849e1bed284569d306e33c4cf289; official record URL identifies NN 152/2025, item 2277; 72 unique Article headings; publisher shell markers absent. Manual legal-scope and attachment reviews remain separate."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Source-specific .sl-content .doc fragment inspected; no embedded image or linked PDF/Office image attachment is present. The source is text-only for the captured official-document body."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Annual primary budget-execution statute; Article 39(2) states the 2026 amount used for the defined base."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "independent_visible_text_equivalence_and_anchor_review",
+        "review_date": "2026-10-19",
+        "scope": "ordered_visible_text_in_selected_official_document_region",
+        "evidence": "Independent visible-text comparison passed: all decoded text nodes in the retained official .sl-content .doc fragment match the candidate's converted source section in order after Unicode and whitespace normalization. Source and conversion each contain 79393 normalized characters; both normalized-text SHA-256 values are 7ea8337218d2e01e6f7a30bb3700176da1ec257ea146630a2a54f7115525a9cf. This verifies text extraction fidelity for the selected official document region; 0 embedded images and 0 linked files are reviewed separately under attachments_review.",
+        "source_fragment_path": "source-library/croatia/captures/official-texts/hr-state-budget-execution-2026.html",
+        "source_fragment_sha256": "dc9d175beb451095319cb04f92eabeb918a70b090b80109a8aac4b618c726c47",
+        "normalized_visible_text_sha256": "7ea8337218d2e01e6f7a30bb3700176da1ec257ea146630a2a54f7115525a9cf",
+        "normalized_visible_characters": 79393,
+        "embedded_image_count": 0,
+        "linked_file_urls": []
+      },
+      "accepted_on": "2026-10-19",
+      "document_path": "source-library/croatia/documents/legislation/hr-state-budget-execution-2026.md"
+    }
+  },
+  "currentness_review_file": "references/currentness-review.json",
+  "last_acceptance_review": {
+    "date": "2026-10-19",
+    "method": "all required checks passed plus independent visible-text comparison; promotion script enforces the gate",
+    "source_ids": [
+      "hr-foreigners-act",
+      "hr-foreigners-amend-114-22",
+      "hr-foreigners-amend-151-22",
+      "hr-foreigners-amend-40-25"
+    ]
+  },
+  "required_checks_scope": "These checks govern retained local copies only and do not block a human-reviewed official link. Record the published version/cutoff and use the copy within that scope; a full amendment-chain reconstruction, whole-text comparison, or exhaustive attachment audit is not the default.",
+  "required_check_interpretation": {
+    "publisher_identity": "Confirm the source and responsible publisher.",
+    "current_legal_version": "Record the version/date/cutoff shown by the publisher. Use a dated version within that scope; check only a known later change that may materially affect the issue.",
+    "extraction_completeness": "Check the passages relied upon against the original. Broader text comparison is reserved for lossy conversion or reliance on the whole converted text.",
+    "attachments_review": "Review linked or incorporated material only when the issue relies on it.",
+    "legal_classification": "Label the source role; this does not itself establish topic sufficiency.",
+    "lawful_reuse": "Applies only to retaining or redistributing a local copy; not to citing or linking an official page."
+  }
+}

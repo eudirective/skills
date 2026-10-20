@@ -1,6 +1,6 @@
 ---
 name: eudirective-source-library
-description: Inspect the externally maintained EU and national legal-source library bundled with this plugin. Use to locate source records, official publisher URLs, recorded versions/dates, and coverage. Current-law checks must use official publishers.
+description: Inspect the externally maintained EU and national legal-source library bundled with this plugin. Use to locate official source records, versions, and coverage. Prefer government-published consolidations; otherwise use the closest government-published version and state its limits.
 ---
 
 # Bundled EU source library
@@ -20,13 +20,21 @@ Apply this use check:
 - Display the notice once per conversation; repeat it only if the use context materially changes. Do not email anyone or claim to know the user's licensing status.
 - This is a skill-level instruction for the first visible response when a FreeMovement skill is invoked. It does not establish host-level chat-start behavior or guarantee that the notice appears before a skill is invoked.
 
-Skill version: eudirective-source-library v1.0.3. After the required first-response notice, include this name and version near the top of any visible response or report produced while using this skill.
+Skill version: eudirective-source-library v1.0.12. After the required first-response notice, include this name and version near the top of any visible response or report produced while using this skill.
 
-Last updated: 2026-10-19.
+Last updated: 2026-10-20.
 
 This skill's source library is mirrored from eudirective/public-data into this plugin package by the repository workflow. Its manifests, source files, and module notes sit beside this SKILL.md. Use those bundled files to identify the relevant source, its official publisher URL, recorded version/date, and coverage. The installed package is a snapshot and does not update itself.
 
-When a legal claim depends on current law, guidance, or case law, check the responsible official publisher directly when browsing is available. Record the publisher, URL, date/version checked, and any source gap. If a live check is not possible, state that currentness was not verified and distinguish the bundled snapshot from current law.
+When a claim depends on current law, decisions, guidance, forms, mission instructions, procedures, remedies, complaints, or oversight, check the responsible official publisher directly when browsing is available. Record the publisher, URL, date/version checked, and any source gap. If a live check is not possible, state that currentness was not verified and distinguish the bundled snapshot from current law.
+
+## Selecting and reviewing source versions
+
+For all source classes, use the responsible official publisher. For national legislation, prefer a usable government-published consolidation; for EU legislation, prefer the responsible EU publisher's consolidation. Accept a government consolidation as a usable official reference when the publisher's role, instrument identity, and consolidation status are clear and no concrete warning undermines reliance; these are practical judgment cues, not a new technical checklist. If trust is unclear, offer the government legal-text website/service as a whole to the user for human review, including its authority/versioning information, the relevant text, and visible caveats. Do not reject it silently or require a full-site crawl. If no usable consolidation exists, use the closest government-published or official-service version and record its language, displayed date/cutoff, and limits. A human-reviewed official page or document link is enough for ordinary research; check only the identity, version, content, and caveats relevant to the question. Do not reconstruct Gazette amendment chains by default; consult a specific act only for a material question the chosen text leaves open. Captures, conversions, hashes, OCR, API clients, replay, and scheduled updates are optional unless a retained copy, reproducibility, or recurring monitoring is needed and permitted. Do not bypass access controls.
+
+Review the passages and attachments relevant to the question. Compare more broadly only when a lossy conversion creates a material risk or the whole converted text is relied upon. A human-reviewed link can support topic evidence without a local copy, custom retrieval/conversion rule, source-library registration, or API. Keep official-reference usability, local-copy acceptance, topic coverage, and country review distinct; see the bundled [source selection and review policy](references/legal-text-edition-policy.md).
+
+Country-pack `next_step` fields and maintenance commands may describe local-copy or monitoring work. They do not gate use of a human-reviewed official link unless they identify a specific content or currentness gap that matters to the question.
 
 Do not treat the eudirective-core skill's historical compatibility test fixture or country module notes as current authoritative texts. The README in this directory documents the upstream retrieval library and maintainer workflows; its CLI commands are repository maintenance instructions, not plugin MCP tools. This plugin does not expose per-install source-pack retrieval or synchronization tools.
 ## First-invocation GitHub version parity

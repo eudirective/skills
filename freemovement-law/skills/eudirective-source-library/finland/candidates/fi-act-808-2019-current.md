@@ -12,7 +12,7 @@
 - In force according to Finlex metadata: yes
 - Conversion: Finlex Akoma Ntoso XML `statuteProvisionsWrapper`, preserving chapter/section headings and numbered paragraphs
 
-> **Review candidate.** This conversion is not accepted into the trusted legal corpus. The XML reports a consolidation date of 27 March 2026, before the 14 April 2026 effective date it lists for amendment 213/2026, and an expression ELI date of 5 July 2019. Verify whether the returned body includes every amendment in force on the retrieval date. Compare the version metadata and amendment chain with the official current-text page before legal reliance.
+> **Review candidate.** This conversion is not accepted into the trusted legal corpus. The XML reports a consolidation date of 27 March 2026, before the listed 14 April 2026 effective date of amendment 213/2026. Treat this specific version-boundary conflict as unresolved and prefer a later Finlex edition if available; do not reconstruct the full amendment chain.
 >
 > **Attribution:** Based on Finlex open data, made available under CC BY 4.0.
 

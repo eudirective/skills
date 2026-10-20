@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 """Validate issue-level source accounting against the existing research gate.
 
-This checks declared structure, ownership, registry references, byte hashes,
-and open-work labels. It does not establish current law, legal applicability,
-source authenticity beyond the existing local pack checks, or legal entailment.
+This checks declared structure, ownership, registry references, byte hashes
+for retained sources, and open-work labels. Human-reviewed official references
+can satisfy a source class without registration or a saved-content hash; their
+publisher identity and review remain declared evidence. The validator does not
+establish current law, source authenticity beyond local pack checks, or legal
+entailment.
 """
 from __future__ import annotations
 
@@ -187,7 +190,11 @@ def _class_compatible(source_class: str, record: dict, evidence: dict) -> bool:
     if source_class == "case_law":
         return record.get("source_type") == "judgment" or record.get("legal_status") == "case_law"
     if source_class == "official_guidance":
-        return (record.get("source_type") == "official_guidance" or
+        return (record.get("source_type") in {
+                    "official_guidance", "official_form", "mission_instruction",
+                    "complaint_route", "oversight_material", "official_register",
+                    "other_official",
+                } or
                 "guidance" in record.get("source_type", "") or
                 record.get("legal_status") == "official_guidance")
     if source_class == "eu_binding_law":
@@ -200,13 +207,18 @@ def _class_compatible(source_class: str, record: dict, evidence: dict) -> bool:
                  record.get("source_type") in {"statute", "legislation", "primary_law"}))
     if source_class == "procedural_rule":
         return (record.get("legal_status") == "procedural_rule" or
-                record.get("source_type") in {"procedure", "procedural_rule"})
+                record.get("source_type") in {"procedure", "procedural_rule", "complaint_route"})
     return False
 
 
 def _record_status(record: dict, evidence: dict, source_class: str) -> tuple[bool, str | None]:
     source = evidence["source"]
-    expected_ref = source.get("source_id") if record["record_kind"] == "registered_source" else source.get("candidate_id")
+    if record["record_kind"] == "registered_source":
+        expected_ref = source.get("source_id")
+    elif record["record_kind"] == "candidate_source":
+        expected_ref = source.get("candidate_id")
+    else:
+        expected_ref = source.get("reference_id")
     if source.get("record_kind") != record["record_kind"] or expected_ref != record["source_ref"]:
         raise SourcePreflightError("source_record_reference_or_kind_mismatch")
     if record["record_kind"] == "candidate_source":
@@ -214,6 +226,21 @@ def _record_status(record: dict, evidence: dict, source_class: str) -> tuple[boo
             raise SourcePreflightError("candidate_activation_state_invalid")
         _national_candidate_record(record["source_ref"], source)
         return False, "candidate_source_not_accepted"
+
+    if record["record_kind"] == "official_reference":
+        if source.get("activation_status") != "reference_only_not_registered":
+            raise SourcePreflightError("official_reference_activation_state_invalid")
+        if record["currentness"] in {"reviewed_within_cutoff", "reviewed_historical_scope"}:
+            if not record.get("source_date"):
+                raise SourcePreflightError("official_reference_date_scope_missing")
+            declared_date = source.get("published_or_effective_date")
+            if declared_date and declared_date != record["source_date"]:
+                raise SourcePreflightError("official_reference_date_scope_mismatch")
+        metadata = dict(source)
+        metadata["jurisdiction"] = source["owner"]["jurisdiction"]
+        if not _class_compatible(source_class, metadata, evidence):
+            return False, "source_class_not_supported_by_official_reference"
+        return True, None
 
     entry = _registered_source_record(record["source_ref"], source)
     if not _class_compatible(source_class, entry, evidence):
@@ -274,10 +301,21 @@ def validate_source_preflight(preflight_path: Path, plan_path: Path, bundle_path
             if record["source_ref"] in source_refs:
                 raise SourcePreflightError(f"duplicate_source_reference:{issue_id}:{record['source_ref']}")
             source_refs.add(record["source_ref"])
-            record_satisfies = record["record_kind"] == "registered_source" and record["currentness"] == "reviewed_current"
-            if record["currentness"] != "reviewed_current":
+            usable_currentness = {
+                "reviewed_current", "reviewed_within_cutoff", "reviewed_historical_scope"
+            }
+            record_satisfies = (
+                record["record_kind"] in {"registered_source", "official_reference"}
+                and record["currentness"] in usable_currentness
+            )
+            if record["currentness"] not in usable_currentness:
                 issue_open.append(f"{issue_id}:source_currentness_{record['currentness']}:{record['source_ref']}")
-            if record["acceptance_state"] != "registered_record":
+            expected_acceptance = {
+                "registered_source": "registered_record",
+                "candidate_source": "candidate_unaccepted",
+                "official_reference": "reference_usable",
+            }[record["record_kind"]]
+            if record["acceptance_state"] != expected_acceptance:
                 issue_open.append(f"{issue_id}:source_candidate_unaccepted:{record['source_ref']}")
             for evidence_id in record["evidence_ids"]:
                 evidence = task_evidence.get(evidence_id)

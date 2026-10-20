@@ -8,7 +8,7 @@ This assessment covers the 49-record Latvian candidate register, including laws,
 
 The ordinary HTTPS capture pass fetched 43 official source pages/files without API registration: 41 HTML pages and 2 PDFs were converted to review-candidate Markdown. Both original PDFs remain byte-for-byte preserved. Six records are discovery or repository surfaces without an individual source text. All 43 captures remain unaccepted. The converter replays all 43 outputs from captured responses and verifies both PDF hashes. No individual court decisions were identified by case number or downloaded.
 
-**Overall verdict:** the public pages are technically retrievable, but an unattended source mirror is **not ready for recurring use**. The official reuse route is conditional: Likumi.lv says systematised acts may be reused under public-information law and applicable fees; the publisher organizes that reuse. Latvijas Vēstnesis says a reuse request must be coordinated in writing, identifying the intended purpose and product/service. Its current public interface supports grouped official notices, which does not establish an unattended feed for consolidated laws. The permitted delivery route, fee and terms for this library need written confirmation from the publisher before a scheduled monitor is built.
+**Overall verdict:** the current prototype is not cleared for an unattended source mirror. This does not block human-reviewed use of an official link. The publisher's written reuse conditions and fees matter if this library retains or repeatedly fetches content: Likumi.lv says systematised acts may be reused under public-information law and applicable fees, and Latvijas Vēstnesis requires coordination for recurring reuse. No scheduled monitor should be built until its specific route and terms are clear.
 
 ## Source and version evidence
 
@@ -37,13 +37,15 @@ Repeated HTML responses exposed volatile inline script tokens, Drupal `js-view-d
 
 This establishes a repeatable one-time retrieval/conversion path for captured pages, not a legally cleared or operational scheduled monitor. Terms/rate limits for non-Likumi publishers, RSS discovery, HTML layout changes, cryptographic signature validation, and PMLP attachment currentness remain open.
 
-## Repair priorities
+## Optional work for recurring local monitoring
+
+The retrieval, publisher-fee, and change-feed conditions below apply to retaining or repeatedly fetching source material. They do not block a human-reviewed official source reference. For ordinary use, prefer the latest government-published consolidation and state its date/cutoff and informational status; use Gazette notices only for a specific material update.
 
 1. **Confirm reuse in writing with the official publisher.** State that the requested service is a maintained, non-commercial legal-source library/monitor; ask whether recurrent retrieval and local conversion are allowed, which delivery mechanism is supported, which items/fees apply, and any rate/retention conditions. Do not schedule the current direct-GET prototype until this scope is clear.
-2. **Resolve supported law-change discovery.** Ask for a documented bulk/current-text route or notification/feed for systematised acts. If using RSS, record its actual endpoint, payload and completeness, and reconcile each notice against act ID, version, status and Gazette OP publication.
-3. **Complete legal version reconciliation.** Preserve both official Gazette publication and current consolidated text. Check future-effective provisions, amendments, commencement and repeal status separately; reconcile PMLP/MFA materials and the pending Cabinet procedures due by 1 December 2027.
-4. **Finish PDF review and authenticity checks.** Page-wise text extraction with pinned `pypdf==6.21.1` now replays offline, and both originals remain preserved. Compare the converted text against each PDF, cryptographically verify the Gazette seal/signature, and confirm the exact current PMLP application attachment from its parent page; until then it remains a stale-form risk.
+2. **Resolve supported law-change discovery.** Ask for a documented bulk/current-text route or notification/feed for systematised acts. If using RSS, record its actual endpoint and payload and use notices to find a newer government-published edition or a known change. A complete RSS-to-Gazette reconciliation is not required when the current consolidated text can be checked directly.
+3. **Current-text use.** Prefer the latest government-published consolidation and record its cutoff. Check a known future-effective provision, repeal, or material PMLP/MFA update only where it affects the review; the full Gazette amendment chain is not required.
+4. **Review only the PDF content used.** The official files and replayable extraction are already preserved. Check relevant passages against the PDF when relying on converted text; cryptographic signature verification is needed only if the question turns on that Gazette file's seal or authenticity. Confirm the PMLP application's current parent-page attachment because its version is a real form-staleness issue.
 5. **Identify individual decisions and define corpus scope.** Search official case databases for stable decision IDs relevant to entry/residence, appeals, delay, family definition and data protection. Preserve redaction and access conditions; do not infer completeness from a selected archive.
 6. **Add publisher-specific rules only after permission and tests.** Keep each site's retrieval, payload, version, conversion, failure and change behavior independent. Preserve all capture outputs as candidates until source identity, legal scope, version and reuse conditions are reviewed.
 
-No source is accepted. Mirror synchronization and integrity remain outside this assessment.
+No locally stored artifact is accepted. Mirror synchronization and integrity remain outside this assessment.

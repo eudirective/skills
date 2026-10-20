@@ -1,6 +1,6 @@
 # Netherlands source candidates
 
-**Status (19 October 2026):** all eight scoped source-list candidates have unaccepted review-candidate conversions; zero accepted. The wider 52-record monitor inventory has now been captured separately: 50 exact responses, 49 conversions replay-verified, one textless discovery shell, and two retrieval failures. These additional candidate pages do not establish full national coverage or become accepted sources.
+**Status (19 October 2026):** all eight scoped source-list candidates have unaccepted review-candidate conversions; zero local copies accepted. The wider 52-record monitor inventory has now been captured separately: 50 exact responses, 49 conversions replay-verified, one textless discovery shell, and two retrieval failures. These additional candidate pages do not establish full national coverage or become accepted sources.
 
 The six Wetten.nl sources were retrieved from their official stable BWB identifiers and converted from the publisher's current HTML. Their pages record the consultation date, exact current version URL, and effective interval. The two IND guidance pages were extracted from their official `main` elements. The saved source hashes and conversion outputs are recorded in the retrieval manifest; all eight pass offline replay verification.
 

@@ -1,6 +1,6 @@
 # Bulgaria national-source candidates
 
-Status updated 19 October 2026: all 35 candidates were attempted with the shared bounded HTTPS capture rule; 24 source texts converted and replay-verified, 11 remained blocked, errored, or unavailable; 0 accepted.  
+Status updated 19 October 2026: all 35 candidates were attempted with the shared bounded HTTPS capture rule; 24 source texts converted and replay-verified, 11 remained blocked, errored, or unavailable; 0 local copies accepted.
 Research date: 18 October 2026; retrieval run: 19 October 2026.  
 Jurisdiction: Bulgaria (EU Member State).
 
@@ -9,7 +9,7 @@ This pack records official-source leads found by comparing the Denmark, Sweden, 
 ## Main routes found
 
 - Bulgaria has a distinct Act on the entry, residence, and departure of EU citizens and their family members. The Ministry of Interior (MVR) Migration Directorate's service page links the Act and applicant forms. Keep this source family distinct from the Foreigners Act, which governs broader third-country national matters.
-- The MVR legislation index links a Visa Ordinance PDF whose visible amendment history stops at April 2019. The Council of Ministers' legal information system records the underlying Ordinance №198 as amended by Decrees №3/2025 and №221/2025, and the State Gazette publishes those amendments. The MVR PDF is therefore not a sufficient current text. PRIS is a revision/index route, but its attachment remains the original 2011 file; no current consolidated payload was verified.
+- The MVR legislation index links a Visa Ordinance PDF whose visible text stops at April 2019. Use it as the closest government-published text available in this inventory and record that cutoff. The separately identified 2025 decrees are targeted update leads if their provisions matter; do not reconstruct the full amendment chain just to use the MVR text. PRIS is a revision/index route, but its attachment remains the original 2011 file; no newer consolidated payload was verified.
 - The Ministry of Foreign Affairs (MFA) visa hub is a useful central procedural route, including an EU-family treatment section and an outbound link to the European Commission's prior-consultation list. The Commission download URL is versioned; rediscover it from the MFA page instead of treating the current file URL as permanent.
 - The Administrative Procedure Code, Ombudsman, data-protection, discrimination, and court-search routes provide separate remedies and oversight leads. They do not form one complete appeal or lower-court search index.
 

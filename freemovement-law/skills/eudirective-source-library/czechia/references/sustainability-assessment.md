@@ -2,14 +2,14 @@
 
 **Assessment date:** 19 October 2026  
 **Pack version:** 0.4.0  
-**Manifest:** 43 candidate records; 0 accepted  
+**Manifest:** 43 candidate records; 0 local copies accepted
 **Scope:** active legal and guidance acquisition rules, plus the repeatability limits of the one-time monitor/discovery capture.
 
 ## Summary
 
 The pack now has replayable conversions for 17 current e-Sbírka legal texts, 13 official guidance/index pages, and 13 monitor/discovery pages. The legal route was repaired after the registration-gated REST API proved infeasible: the capture uses e-Sbírka's public page-data service, which the official web application itself uses, without an account or API key. This route resolved all 17 records and supplied effective-version metadata plus ordered text fragments. It is technically demonstrated but not yet a guaranteed publisher interface.
 
-No record has been accepted. Legal force, exact temporal applicability, promulgation history, text completeness and extraction quality still require review. The broad 43-record inventory is not a completeness claim.
+No local copy has been accepted. This does not block use of a human-reviewed official source link within its displayed scope. For retained conversions, review the relevant content and use broader comparison only when the conversion is lossy or the whole converted text will be relied on. The 43-record inventory is not a completeness claim.
 
 ## Rule assessment
 
@@ -21,9 +21,9 @@ No record has been accepted. Legal force, exact temporal applicability, promulga
 
 ## Open issues
 
-- The old Node law lane still attempts the date-bound PDF route. Use `sync_esbirka_open_data.py` for legal capture; wire the new adapter into the product updater before calling the overall Czech pack action self-maintaining.
-- Reconcile each current consolidated text with the authentic promulgation and temporal version for its use case. In particular, preserve future-effective versions separately from current versions.
-- Visually compare representative long-act, table, footnote, and heading conversions against e-Sbírka's displayed text.
+- The old Node law lane still attempts the date-bound PDF route. The public page-data adapter is an optional local-copy/monitoring route; connect it to a product updater only if recurring automated updates are wanted. Direct human review of official e-Sbírka pages does not depend on this integration.
+- Use the publisher's latest current consolidated text and record its effective-from date. Preserve a future-effective version separately when one is specifically relevant; consult Gazette promulgations only for a known discrepancy or commencement question, not as a prerequisite for each current text.
+- If retaining or relying on converted text, check relevant headings, tables, footnotes, and passages against e-Sbírka. Full visual comparison is needed only where extraction creates a material risk or the whole conversion is relied on.
 - Build a parent-index resolver for volatile form links, and keep mission instructions scoped by jurisdiction and date.
 - Review publisher reuse terms, source-language requirements, topical coverage, and whether any discovered court/oversight material is the full primary decision rather than a directory or summary.
 

@@ -5,13 +5,13 @@
 - Source type: `discovery_catalog`
 - Candidate URL: https://n-lex.europa.eu/n-lex/legis_cy/cy_gov_cyprus_form?lang=en
 - Resolved URL: https://n-lex.europa.eu/n-lex/legis_cy/cy_gov_cyprus_form?lang=en
-- Retrieved: 2026-10-19T02:22:51+00:00
+- Retrieved: 2026-10-19T02:28:18+00:00
 - Media type: `text/html`
 - Publisher/version evidence: Not established in this bounded review
 - Extraction: `body`
-- Exact response SHA-256: `5c46687885ab3f305bbc0e36f9444b7056a8a9e1d90d3ac47486a405795cd79d`
+- Exact response SHA-256: `e4420ea71167de0c8b8d04bf5e30da19bfeee9599272f8d92b9cba5116c35309`
 
-> **Review candidate.** Not accepted into the trusted source corpus. Check source identity, current version, scope, completeness, and reuse conditions before reliance.
+> **Local-copy review notice.** This captured file is not accepted as a retained copy. A direct official link can be used for research after reviewing relevant content, date/version, scope, and caveats. Local-copy acceptance and reuse terms matter only when retaining or redistributing this file.
 
 ## Captured source text
 

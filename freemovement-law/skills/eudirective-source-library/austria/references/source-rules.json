@@ -3,11 +3,11 @@
   "jurisdiction": "AT",
   "updated": "2026-10-19",
   "policy": {
-    "scope": "The 37 source records declared by references/candidate-manifest.json. This is a bounded candidate inventory, not an exhaustive statement of Austrian law or practice.",
+    "scope": "The 74-record manifest contains 73 accepted sources, no captured pending-review candidates, and one discovery-only index. It is a bounded inventory, not an exhaustive country review. The fixed monitor checks registered records; separate manual discovery plans address missing cases, missions, and Länder practice.",
     "retrieval": "Use only the official URLs and hosts in the manifest. Make ordinary public HTTPS requests to one record at a time. Do not use RIS OGD/API, registration, parallel requests, authentication, browser challenge bypass, or undocumented bulk exports. If OGD is introduced later, first follow the current RIS OGD FAQ notice, timing, rate, and attribution requirements.",
     "change_handling": "Keep the last reviewed/accepted source unchanged. Any new bytes or changed publisher identity create a candidate for human review. A retrieval failure, redirect outside an allowlisted official host, missing identity marker, or unexpected media type is a failed observation; it does not replace the prior candidate.",
     "reuse": "Check the publisher terms recorded for each source before redistribution. RIS OGD data attribution is CC BY 4.0 when that route is used; these rules currently use the public RIS web application and linked attachments.",
-    "cadence": "The GitHub Actions Austria source monitor checks the fixed manifest monthly and can be run manually. It stages changed captures and derived candidates for human review; it does not update accepted/current candidates. Broad case-law discovery, mission-page discovery, and Land-practice discovery remain manual until explicitly automated."
+    "cadence": "The fixed monthly workflow checks registered records only. New cases, mission pages and Land procedures require their own dated discovery runs."
   },
   "rules": [
     {
@@ -35,7 +35,32 @@
         "at-vwgvg-8",
         "at-nag-3-authority",
         "at-nag-4-venue",
-        "at-ifg-15"
+        "at-ifg-15",
+        "at-fpg-2-4-11",
+        "at-fpg-15a",
+        "at-fpg-15b",
+        "at-fpg-66",
+        "at-fpg-67",
+        "at-fpg-70",
+        "at-bfa-vg-9",
+        "at-bfa-vg-10",
+        "at-ifg-2",
+        "at-ifg-3",
+        "at-ifg-4",
+        "at-ifg-5",
+        "at-ifg-6",
+        "at-ifg-9",
+        "at-ifg-10",
+        "at-ifg-12",
+        "at-ifg-13",
+        "at-ifg-16",
+        "at-ifg-17",
+        "at-ifg-18",
+        "at-ifg-19",
+        "at-ifg-20",
+        "at-fpg-11",
+        "at-fpg-11a",
+        "at-fpg-11b"
       ],
       "retrieval": {
         "entry_point": "Stable RIS current-section URL from the manifest, built from Gesetzesnummer plus Paragraf or Anlage.",
@@ -73,7 +98,13 @@
         "at-lvwg-wien-2022-6086",
         "at-vwgh-ra-2022-22-0149",
         "at-bvwg-g306-2026-2325799",
-        "at-bvwg-w112-2246194-2-2023"
+        "at-bvwg-w112-2246194-2-2023",
+        "at-vwgh-ra-2015-09-0137",
+        "at-vwgh-ra-2019-22-0177",
+        "at-vwgh-ro-2020-09-0011",
+        "at-vwgh-ro-2021-22-0012",
+        "at-vwgh-ro-2020-22-0020",
+        "at-vwgh-ra-2023-22-0090-0091"
       ],
       "retrieval": {
         "entry_point": "Exact RIS decision URL and Dokumentnummer/case identifier in the manifest.",
@@ -212,7 +243,7 @@
     },
     {
       "id": "ris-annex-pdf-v1",
-      "applies_to": "RIS NAG-DV Annex E and Annex F PDF forms.",
+      "applies_to": "RIS NAG-DV Annex E and Annex F statutory residence-card specimens, not application forms.",
       "source_ids": [
         "at-nag-dv-anl-5",
         "at-nag-dv-anl-6"
@@ -230,9 +261,9 @@
       "conversion": {
         "method": "Retain the native accessible AcroForm PDF. Do not flatten or treat text-layer extraction as the form content; store any later transcription as a separate derivative with provenance.",
         "validation": [
-          "Check PDF signature and SHA-256.",
-          "Check document is readable and the expected annex label is present.",
-          "Do not promote a derivative without visual/form-field review."
+          "Retain the signed native PDF and hash the PDF bytes.",
+          "Visually inspect both card sides and confirm annex label, RIS document number, and whether the page is a specimen or an application.",
+          "Compare displayed evidence with the current EU title and data-field rules; record any encoded-data/security property that a blank specimen cannot demonstrate as unresolved rather than infer compliance."
         ],
         "rule_ids": [
           "native-pdf-retention-v1"
@@ -266,7 +297,7 @@
     },
     {
       "id": "nlex-national-law-discovery-v1",
-      "applies_to": "N-Lex Austria navigation page; a discovery surface outside the 37 captured national-source candidates.",
+      "applies_to": "N-Lex Austria navigation page; a discovery surface outside the fixed 74-record national-source manifest.",
       "source_ids": [],
       "retrieval": {
         "entry_point": "N-Lex Austria country page linked from the official N-Lex language index.",
@@ -288,6 +319,72 @@
         ]
       },
       "sustainability": "Sustainable as a low-cost discovery and link-repair route. It is not a national-law content source and its informational panel can fail independently."
+    },
+    {
+      "id": "official-form-link-v1",
+      "applies_to": "Official application and complaint forms linked from Austrian government guidance.",
+      "source_ids": [
+        "at-oesterreich-schengen-visa-form",
+        "at-volksanwaltschaft-pdf-complaint-form"
+      ],
+      "retrieval": {
+        "entry_point": "Use the exact official parent-page link recorded in the manifest, then verify final host and target.",
+        "identity_checks": [
+          "Confirm the parent-page hyperlink resolves to the same form.",
+          "Record form title, purpose, edition/date, content type, final URL and submission/authentication choices.",
+          "Do not complete or submit a form."
+        ],
+        "change_signal": "A changed target, redirect, form edition, field set or submission route requires review."
+      },
+      "conversion": {
+        "selector": "Retain the native linked PDF and extracted text for review; route metadata is recorded under a separate rule.",
+        "validation": [
+          "Keep parent guidance and each form as separate records.",
+          "Check form purpose against its fields and statutory role.",
+          "Do not promote without all five acceptance checks."
+        ],
+        "rule_ids": [
+          "native-pdf-retention-v1",
+          "official-form-page-v1"
+        ]
+      },
+      "sustainability": "Conditional: official routes can be resolved repeatedly, but dynamic online forms and native PDFs need human review; monitoring never submits forms."
+    },
+    {
+      "id": "official-bmi-forms-v1",
+      "applies_to": "BMI English application form A and its supporting-document explanation PDF",
+      "source_ids": [
+        "at-bmi-eea-documentation-form",
+        "at-bmi-eea-documentation-form-explanation"
+      ],
+      "retrieval": "Start from the current official BMI application-form page; follow its English A-form and explanation links; record edition/date, resolved PDF URL, bytes, and SHA-256.",
+      "conversion": {
+        "method": "retain native PDF and extract text page by page",
+        "selector": "native PDF text on every page",
+        "review": "check page count, headings, form choices, family-member requirements, and attachment links against the retained PDF"
+      },
+      "sustainability": {
+        "verdict": "sustainable_with_limits",
+        "limits": "BMI may replace direct PDF paths; resolve from the official index at each refresh. PDF text extraction does not replace visual layout review."
+      }
+    },
+    {
+      "id": "official-submission-route-v1",
+      "applies_to": "Interactive official complaint/submission routes whose HTML includes ephemeral session state",
+      "source_ids": [
+        "at-dsb-online-complaint-form",
+        "at-volksanwaltschaft-online-complaint-form"
+      ],
+      "retrieval": "Follow a verified official parent-page link and record the exact route, route title, initial capability, checked date, and authentication choices. Never submit; do not retain ViewState, event-validation, cookies, or session tokens.",
+      "conversion": {
+        "method": "metadata-only route record",
+        "selector": "official parent-page link and live route title/capabilities",
+        "review": "preserve route identity and bounded initial-screen scope; record that downstream interactive pages were not inspected"
+      },
+      "sustainability": {
+        "verdict": "sustainable_with_limits",
+        "limits": "Session pages cannot be replayed deterministically. Re-resolve the official route manually; no submission, authentication, or personal-data entry is automated."
+      }
     }
   ],
   "discovery_surfaces": [
@@ -305,10 +402,10 @@
     "script": "source-library/austria/sync_austria_sources.py",
     "workflow": ".github/workflows/austria-source-monitor.yml",
     "schedule_utc": "37 3 1 * *",
-    "scope": "Only the fixed records in references/candidate-manifest.json; no broad RIS search, mission-page discovery, or Land-practice discovery.",
+    "scope": "Only fixed records in references/candidate-manifest.json; no broad RIS search, mission-page discovery, or Land-practice discovery. Separate discover and discover-operations actions create repeatable manual research queues; they do not run searches or accept sources.",
     "change_output": "Changed raw captures and derived review candidates are staged under source-library/austria/pending-updates/ and proposed through a pull request. The workflow never accepts or overwrites candidate content.",
     "network": "Ordinary serial HTTPS GETs to manifest allowlisted official hosts; no RIS OGD/API, authentication, challenge bypass, or parallel retrieval.",
-    "activation": "The workflow must be merged to the repository default branch. Repository Actions settings must allow GITHUB_TOKEN to create pull requests.",
+    "activation": "The workflow file and monthly schedule are present in eudirective/public-data. On 2026-10-19, the GitHub run-list query could not connect to api.github.com; successful execution and Actions enablement therefore remain unverified. Do not describe scheduled monitoring as operational until a successful run is recorded.",
     "selectors": {
       "at-guidance-family-card": "main",
       "at-guidance-family-index": "main",
@@ -320,5 +417,6 @@
       "at-bmeia-representation-directory": "filtered body fallback; human review remains mandatory",
       "at-lvwg-wien-2022-6086": "div.contentBlock"
     }
-  }
+  },
+  "reference_use_policy": "For every source type, prefer the responsible official publisher. Prefer a usable government-published consolidation for national legislation and the responsible EU publisher consolidation for EU legislation; if none is usable, use the closest government-published or official-service version and record its language, displayed date/cutoff, scope, and limits. A human-reviewed official link is enough for ordinary research; a custom capture/conversion rule, local copy, API, replay check, or updater is optional. Use Gazette fragments only to resolve a material question; do not reconstruct a full chain by default. Keep reference use, local-copy acceptance, topic coverage, and country completion separate. The acquisition and change-handling rules below describe the optional local monitor; they do not gate manual use of a reviewed official reference."
 }

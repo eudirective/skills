@@ -3,7 +3,7 @@ Skill: assess-source-rule-sustainability v0.2.0
 # Germany source-route sustainability assessment
 
 Status date: 19 October 2026
-State: 47 candidates; 44 texts converted as unaccepted review candidates (18 statutory records from 17 XML packages, plus 26 official pages/PDFs); two discovery pages had no stable text body and one BfJ URL returned 404; zero accepted. The federal-law lane has a repeatable source-specific retrieval and conversion rule; the wider page pass is a one-time bounded capture.
+State: 47 candidates; 44 texts converted as unaccepted review candidates (18 statutory records from 17 XML packages, plus 26 official pages/PDFs); two discovery pages had no stable text body and one BfJ URL returned 404; zero local copies accepted. The federal-law lane has a repeatable source-specific retrieval and conversion rule; the wider page pass is a one-time bounded capture.
 
 ## Assessment boundary
 
@@ -17,11 +17,11 @@ The official federal gazette is the electronic Bundesgesetzblatt at `recht.bund.
 
 `Gesetze im Internet` provides continuously consolidated federal statutes and regulations, with HTML, PDF and XML ZIP/EPUB formats. Its official guidance states that the German legal norms are free to use and reuse and that an XML table of contents is available. The implemented rule re-fetches each candidate law's official index, follows its XML ZIP link, validates the package and act abbreviation, retains the publisher norm ID and XML build date, and converts the legal structure. Eighteen records across 17 law packages were saved; section-specific candidates are limited to their identified provisions. All outputs remain unaccepted.
 
-**Federal consolidated-law lane: sustainable with limits (medium confidence).** The official route, reuse terms, index-to-package link, XML structure, identity checks and deterministic offline replay are demonstrated. The limitation is material: Gesetze im Internet's consolidated output is not the authentic promulgated version, so amendment and commencement evidence still needs reconciliation against the electronic Bundesgesetzblatt. The BGBl ELI/RSS monitor remains a proposed route; completeness, seal verification and correction recovery are not implemented.
+**Federal consolidated-law lane: sustainable with limits (medium confidence).** The official route, reuse terms, index-to-package link, XML structure, identity checks and deterministic offline replay are demonstrated. Gesetze im Internet is the government-published working text, although the BGBl remains the authentic promulgation record. Record the consolidation date and the publisher's editorial notes; consult a specific BGBl act only for a known post-cutoff change, commencement issue, or conflict relevant to the review. A full Gazette-history reconciliation is not required. The BGBl ELI/RSS route may help locate such targeted updates; exhaustive issue coverage, seal verification, and correction recovery are separate monitoring enhancements, not prerequisites for using the consolidation.
 
 ## Currentness risks
 
-The official FreizügG/EU text visibly records amendment by 16 July 2026, BGBl. 2026 I No. 213. The AufenthG result records an amendment by 22 July 2026 and also flags text that was textually evidenced but not yet fully processed by the documentation service. A stable consolidated URL or unchanged date stamp cannot establish that every amendment has been incorporated. Keep the authentic issue, amendment provision, effect date, consolidated record and any editorial caveat together.
+Use the current consolidated text from the official Gesetze im Internet service as the legal-text source; do not compare every Bundesgesetzblatt issue by default. The FreizügG/EU text records amendment by 16 July 2026, BGBl. 2026 I No. 213. The AufenthG record flags a specific amendment dated 22 July 2026 as textually evidenced but not fully processed. That stated exception remains material: use a later consolidated edition if available or keep only the affected provisions unresolved. Preserve the edition date and the publisher's caveat.
 
 The publication chain has two different payload types: authentic BGBl PDFs/ZIPs and separately maintained consolidated HTML/XML. PDF is durable and authentic but requires seal validation and careful deterministic extraction. XML may be easier to convert but needs schema and version checks. RSS is a discovery signal, not an authoritative text or archive by itself.
 
@@ -31,8 +31,8 @@ The publication chain has two different payload types: authentic BGBl PDFs/ZIPs 
 |---|---|---|---|
 | Federal consolidated-law XML lane | Converted review candidates | Official law index -> its XML ZIP link; 18 records across 17 packages; identity checks and replay pass | Not the authentic promulgated text; no signed BGBl issue reconciliation or historic-version retrieval; AufenthG and VwVfG XML carry editorial processing caveats. |
 | Wider official-page capture | 26 converted review candidates; two shells and one 404 | Bounded, allowlisted capture and offline replay across the other 29 inventory entries | No source-specific recurring updater, parent-index link resolver, nationwide/mission completeness guarantee, or currentness reconciliation. |
-| Authentic federal gazette monitor | Discovery-only | BGBl ELI paths, issue PDFs/ZIPs and RSS | Issue/feed completeness, digital-seal validation, corrections, amendment/effective-date reconciliation and PDF extraction remain unimplemented. |
-| EU movement and immigration statutes | Converted review candidates | FreizügG/EU, AufenthG, AufenthV and related federal provisions retrieved through the XML route | Distinguish EU, EEA, Swiss, UK-transition and German-citizen routes. AufenthG and VwVfG include currentness caveats; all remain unaccepted. |
+| Authentic federal gazette monitor | Discovery-only | BGBl ELI paths, issue PDFs/ZIPs and RSS | Feed details and correction handling remain unimplemented. Use the consolidated law text as the working version; consult the Gazette for a specific material update or when authentic promulgation matters. |
+| EU movement and immigration statutes | Converted local-copy candidates | FreizügG/EU, AufenthG, AufenthV and related federal provisions retrieved through the XML route | Distinguish EU, EEA, Swiss, UK-transition and German-citizen routes. The AufenthG and VwVfG copies carry the specific currentness caveats recorded above; these do not block use of unaffected provisions from the government consolidation. |
 | Visas and mission practice | Discovery-only | AA guidance, Visa Handbook, Consular Services Portal, mission directory, AABGebV | Portal coverage and local instructions change by mission; fees change; stable PDF URLs may mask new content. Public metadata only; no personal application data. |
 | Administrative procedure/remedies | Discovery-only | VwVfG § 2, VwGO, IFG, AA procedure notice | Federal missions are excluded from direct VwVfG application. Remonstration ended 1 July 2025. Remedies and deadlines remain notice-specific. |
 | Residence service practice | Discovery-only | Bundesportal region selector plus Hesse/Bremen samples | Land/local records vary. Hesse is dated 2020; Bremen full page needs review. Nationwide coverage is absent. |
@@ -51,8 +51,8 @@ The AA states that voluntary visa remonstration was abolished worldwide on 1 Jul
 
 ## Repair priorities before accepting a rule or claiming wider coverage
 
-1. Reconcile the converted statutes with authentic BGBl issues by ELI identity. Preserve raw PDF/ZIP bytes, seal metadata, issue number, annexes, publication and commencement dates.
-2. Keep XML build date and publisher amendment notes with each conversion. Resolve the editorial lag recorded on the AufenthG and VwVfG before legal reliance.
+1. Use the government-published Gesetze im Internet consolidation and record its displayed build date and editorial notes. Check a specific Bundesgesetzblatt item only for a known material discrepancy, commencement question, or when authentic promulgation itself matters; do not reconstruct the full issue history.
+2. The publisher flags a specific editorial lag on the AufenthG and VwVfG. Keep the dated consolidation as the working text and leave only provisions affected by that known lag unresolved until a later consolidation or targeted update resolves them.
 3. Establish ELI/RSS completeness and recovery behavior, including duplicate events, issue gaps, corrections, republished issues and timeouts. Validate digital seals before extracting text.
 4. Add historic-version retrieval and effective-date resolution for the laws where past wording may matter.
 5. Retrieve AA, mission, Bundesportal, BfDI, BfJ and court candidates through constrained parent links; record visible dates and redirects. Never automate visa or legal-aid submissions.

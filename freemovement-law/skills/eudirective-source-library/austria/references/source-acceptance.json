@@ -1,0 +1,2259 @@
+{
+  "schema_version": "1.0.0",
+  "jurisdiction": "AT",
+  "updated": "2026-10-19",
+  "acceptance_is_distinct_from_coverage": true,
+  "policy": {
+    "official_reference_use": "A human-reviewed official link is sufficient for ordinary research after checking publisher, identity, language, displayed date/version or cutoff, relevant content, and visible limitations. No saved capture or conversion is required.",
+    "local_artifact_acceptance": "These checks govern optional retained local artifacts only. Record a dated source within its stated scope; check a specific later change only when it may materially affect the issue. Compare extraction only as broadly as the format and intended use require. These checks do not gate a human-reviewed official link.",
+    "coverage": "A local artifact's accepted status does not establish topic coverage or country completion; topic evidence must still address the issue and source scope."
+  },
+  "official_reference_reviews": {},
+  "official_reference_review_schema": {
+    "status": "usable_official_reference",
+    "required_fields": [
+      "publisher",
+      "url",
+      "checked_on",
+      "language",
+      "version_or_cutoff",
+      "scope",
+      "reviewed_content",
+      "limitations"
+    ],
+    "note": "Record a human-reviewed official source link here when it supports a coverage layer or Directive article without a retained local copy. This record does not change the local accepted-source count. Use version_or_cutoff='not displayed' and explain the limit when the publisher shows no version marker."
+  },
+  "required_checks": [
+    "publisher_identity",
+    "current_legal_version",
+    "extraction_completeness",
+    "attachments_review",
+    "legal_classification"
+  ],
+  "rules": {
+    "pass_evidence": "For an official reference, record the publisher, URL, language, review date, displayed version/cutoff, relevant content, and limitations. For a retained artifact, record only the artifact checks appropriate to its format and intended reuse.",
+    "semantic_validation": "Hashes establish byte identity, not content fidelity. Check the passages used against the source; broader comparison is needed only for a lossy conversion or reliance on the whole converted text.",
+    "attachments": "Review a linked or incorporated item only when the question relies on it. Use not_applicable when no attachment is material to the reviewed scope.",
+    "acceptance": "Local artifact acceptance is optional and separate from official-reference use. Topic coverage and country review remain separate outcomes.",
+    "no_automatic_monitor_promotion": "Scheduled retrieval can stage observations only. The explicit accept action moves only records already marked accepted and passing every gate."
+  },
+  "records": {
+    "at-avg-17": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official capture captures/2026-10-19/at-avg-17-d46c8555cf2a326e5ff7e8c4c0bcb9f66486e59514be515189e25ecb0f3c219a.html; final publisher host www.ris.bka.gv.at; page identity matches the manifest."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS current-section record captured 19 October 2026; statute number and requested paragraph match the publisher identity."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "RIS contentBlock replay checked against the requested statute/section heading, paragraph/list boundaries and operative text in the saved current-section capture."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Publisher link list checked; no material incorporated attachment was needed to interpret this source."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as national_legislation; topic relationship is recorded in the manifest."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "RIS contentBlock replay checked against the requested statute/section heading, paragraph/list boundaries and operative text in the saved current-section capture."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-avg-17-d46c8555cf2a326e5ff7e8c4c0bcb9f66486e59514be515189e25ecb0f3c219a.html"
+    },
+    "at-avg-73": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official capture captures/2026-10-19/at-avg-73-f8964a64f461d55bd09eeb153974fefdd5922b17881510d4112b353ef80830ba.html; final publisher host www.ris.bka.gv.at; page identity matches the manifest."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS current-section record captured 19 October 2026; statute number and requested paragraph match the publisher identity."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "RIS contentBlock replay checked against the requested statute/section heading, paragraph/list boundaries and operative text in the saved current-section capture."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Publisher link list checked; no material incorporated attachment was needed to interpret this source."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as national_legislation; topic relationship is recorded in the manifest."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "RIS contentBlock replay checked against the requested statute/section heading, paragraph/list boundaries and operative text in the saved current-section capture."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-avg-73-f8964a64f461d55bd09eeb153974fefdd5922b17881510d4112b353ef80830ba.html"
+    },
+    "at-bfa-vg-10": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "HTTPS RIS source; URL statute/paragraph parameters match 20007944/§ 10; page title: RIS - BFA-Verfahrensgesetz § 10 - Bundesrecht konsolidiert, tagesaktuelle Fassung."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS page title identifies the current consolidated version; retrieved 2026-10-19."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Deterministic ris-contentblock-v1 replay of the complete RIS div.contentBlock; expected section heading present; 1561 extracted characters."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Reviewed 1 linked PDF target(s): RIS current-section PDFs are parallel renderings; BGBlPdf targets are official gazette promulgations, not incorporated forms or annexes. Current consolidated HTML remains the maintained text. Links: ['https://www.ris.bka.gv.at/Dokumente/Bundesnormen/NOR40278182/NOR40278182.pdf']"
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Official RIS consolidated legislation; classified as national_legislation for BFA-Verfahrensgesetz § 10 — special procedural rules."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Replayed saved RIS div.contentBlock with ris-contentblock-v1; verified statute title, § 10, and complete nonempty output."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-bfa-vg-10-f0993c84e4cc5bd3a6c63b38c8a7db59912d84ebc9a5d1381e5dc552f18ae223.html"
+    },
+    "at-bfa-vg-9": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "HTTPS RIS source; URL statute/paragraph parameters match 20007944/§ 9; page title: RIS - BFA-Verfahrensgesetz § 9 - Bundesrecht konsolidiert, tagesaktuelle Fassung."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS page title identifies the current consolidated version; retrieved 2026-10-19."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Deterministic ris-contentblock-v1 replay of the complete RIS div.contentBlock; expected section heading present; 3145 extracted characters."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Reviewed 2 linked PDF target(s): RIS current-section PDFs are parallel renderings; BGBlPdf targets are official gazette promulgations, not incorporated forms or annexes. Current consolidated HTML remains the maintained text. Links: ['https://www.ris.bka.gv.at/Dokumente/BgblPdf/1974_60_0/1974_60_0.pdf', 'https://www.ris.bka.gv.at/Dokumente/Bundesnormen/NOR40278181/NOR40278181.pdf']"
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Official RIS consolidated legislation; classified as national_legislation for BFA-Verfahrensgesetz § 9 — protection of private and family life."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Replayed saved RIS div.contentBlock with ris-contentblock-v1; verified statute title, § 9, and complete nonempty output."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-bfa-vg-9-28cc272fa23d2a9a0cf0288eff085747e624bff01cb1e392d98c053f7f28399a.html"
+    },
+    "at-bmeia-representation-directory": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official capture captures/2026-10-19/at-bmeia-representation-directory-006af76b5edd79d8247a5df980eaa21755d06b8fd750a82395cdf7ae0a179c43.html; final publisher host www.bmeia.gv.at; page identity matches the manifest."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "Official publisher page captured on 19 October 2026; visible reference date recorded where supplied."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Record-aware conversion stores 196 country headings and 524 representation records; the visible page reference date is 19 October 2026."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Publisher link list checked; no material incorporated attachment was needed to interpret this source."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as official_guidance_directory; topic relationship is recorded in the manifest."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Record-aware conversion stores 196 country headings and 524 representation records; the visible page reference date is 19 October 2026."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-bmeia-representation-directory-006af76b5edd79d8247a5df980eaa21755d06b8fd750a82395cdf7ae0a179c43.html"
+    },
+    "at-bmeia-settlement-residence": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official capture captures/2026-10-19/at-bmeia-settlement-residence-7e1e0bc5a75aeaffa540bf6ca7dcdd5eaa6f818d720c7ae304b2222bf5a5a9f9.html; final publisher host www.bmeia.gv.at; page identity matches the manifest."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "Official publisher page captured on 19 October 2026; visible reference date recorded where supplied."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Publisher-specific main-region replay checked against the source heading and substantive text; page-shell/navigation text excluded; relevant links are cross-referenced in guidance-link-audit.json."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Publisher link list checked; no material incorporated attachment was needed to interpret this source."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as official_guidance; topic relationship is recorded in the manifest."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Publisher-specific main-region replay checked against the source heading and substantive text; page-shell/navigation text excluded; relevant links are cross-referenced in guidance-link-audit.json."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-bmeia-settlement-residence-7e1e0bc5a75aeaffa540bf6ca7dcdd5eaa6f818d720c7ae304b2222bf5a5a9f9.html"
+    },
+    "at-bmeia-visa": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official capture captures/2026-10-19/at-bmeia-visa-011c4f1e3b6e64a18c6ca6e991a7543091bb8999b01945d161d50cf3005d7db7.html; final publisher host www.bmeia.gv.at; page identity matches the manifest."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "Official publisher page captured on 19 October 2026; visible reference date recorded where supplied."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Publisher-specific main-region replay checked against the source heading and substantive text; page-shell/navigation text excluded; relevant links are cross-referenced in guidance-link-audit.json."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Publisher link list checked; no material incorporated attachment was needed to interpret this source."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as official_guidance; topic relationship is recorded in the manifest."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Publisher-specific main-region replay checked against the source heading and substantive text; page-shell/navigation text excluded; relevant links are cross-referenced in guidance-link-audit.json."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-bmeia-visa-011c4f1e3b6e64a18c6ca6e991a7543091bb8999b01945d161d50cf3005d7db7.html"
+    },
+    "at-bvwg-g306-2026-2325799": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official capture captures/2026-10-19/at-bvwg-g306-2026-2325799-0e70f52f14445204810c6bee97968f5143530d47a4e7ed336879915c7a766285.html; final publisher host ris.bka.gv.at; page identity matches the manifest."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "Immutable official RIS decision; date, court, case number and Dokumentnummer match."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Official RIS case text replay checked against court, decision date, case number and operative result; the holding and limits are indexed in case-review-register.json."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Publisher link list checked; no material incorporated attachment was needed to interpret this source."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as official_case_law; topic relationship is recorded in the manifest."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Official RIS case text replay checked against court, decision date, case number and operative result; the holding and limits are indexed in case-review-register.json."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-bvwg-g306-2026-2325799-0e70f52f14445204810c6bee97968f5143530d47a4e7ed336879915c7a766285.html"
+    },
+    "at-bvwg-w112-2246194-2-2023": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official capture captures/2026-10-19/at-bvwg-w112-2246194-2-2023-20b9731987cb894fea101ad00ba687b69707818c6509589c0f113b6ceb85e71c.html; final publisher host ris.bka.gv.at; page identity matches the manifest."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "Immutable official RIS decision; date, court, case number and Dokumentnummer match."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Official RIS case text replay checked against court, decision date, case number and operative result; the holding and limits are indexed in case-review-register.json."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Publisher link list checked; no material incorporated attachment was needed to interpret this source."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as official_case_law; topic relationship is recorded in the manifest."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Official RIS case text replay checked against court, decision date, case number and operative result; the holding and limits are indexed in case-review-register.json."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-bvwg-w112-2246194-2-2023-20b9731987cb894fea101ad00ba687b69707818c6509589c0f113b6ceb85e71c.html"
+    },
+    "at-dsb-complaint": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official capture captures/2026-10-19/at-dsb-complaint-183228aa669eb4939bf72862bd7d124cfbd81e8f6cd5c533534a0bc6f98e72a4.html; final publisher host dsb.gv.at; page identity matches the manifest."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "Official publisher page captured on 19 October 2026; visible reference date recorded where supplied."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Publisher-specific main-region replay checked against the source heading and substantive text; page-shell/navigation text excluded; relevant links are cross-referenced in guidance-link-audit.json."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Official online form target opened from the page and indexed separately; inert source capture remains pending."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as official_guidance; topic relationship is recorded in the manifest."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Publisher-specific main-region replay checked against the source heading and substantive text; page-shell/navigation text excluded; relevant links are cross-referenced in guidance-link-audit.json."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-dsb-complaint-183228aa669eb4939bf72862bd7d124cfbd81e8f6cd5c533534a0bc6f98e72a4.html"
+    },
+    "at-dsb-online-complaint-form": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official parent page https://dsb.gv.at/eingabe-an-die-dsb/beschwerde links to the exact Federal Form Service route recorded in the manifest."
+        },
+        "current_legal_version": {
+          "status": "not_applicable",
+          "reason": "This is a fixed historical decision, administrative form, or live procedural route rather than a versioned legal instrument; its official publisher record or current linked route was checked on 2026-10-19."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Bounded live-route review: route title and initial screen capabilities saved; no user data entered; session/anti-forgery state omitted."
+        },
+        "attachments_review": {
+          "status": "not_applicable",
+          "reason": "No additional source attachment is part of the reviewed decision, form, or bounded interactive route record."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Official administrative submission channel for oversight complaints; not legislation or a blank form PDF."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Compared the official parent link with the live route title and first-screen options on 2026-10-19; scope excludes later interactive pages and submission behavior."
+      },
+      "raw_capture_evidence": "Live official route reviewed on 2026-10-19. Transient ViewState/event-validation/session values were excluded; the persistent route metadata and parent-page evidence are stored in the source document."
+    },
+    "at-fpg-15a": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "HTTPS RIS source; URL statute/paragraph parameters match 20004241/§ 15a; page title: RIS - Fremdenpolizeigesetz 2005 § 15a - Bundesrecht konsolidiert, tagesaktuelle Fassung."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS page title identifies the current consolidated version; retrieved 2026-10-19."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Deterministic ris-contentblock-v1 replay of the complete RIS div.contentBlock; expected section heading present; 301 extracted characters."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Reviewed 1 linked PDF target(s): RIS current-section PDFs are parallel renderings; BGBlPdf targets are official gazette promulgations, not incorporated forms or annexes. Current consolidated HTML remains the maintained text. Links: ['https://www.ris.bka.gv.at/Dokumente/Bundesnormen/NOR40141263/NOR40141263.pdf']"
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Official RIS consolidated legislation; classified as national_legislation for Fremdenpolizeigesetz 2005 § 15a — EEA/Swiss visa-free entry and short stay."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Replayed saved RIS div.contentBlock with ris-contentblock-v1; verified statute title, § 15a, and complete nonempty output."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-fpg-15a-5d0f31ebc6bd1ee4d935f075e19fa430ad3ba16ad3b76e6b0601e4bea3d488b7.html"
+    },
+    "at-fpg-15b": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "HTTPS RIS source; URL statute/paragraph parameters match 20004241/§ 15b; page title: RIS - Fremdenpolizeigesetz 2005 § 15b - Bundesrecht konsolidiert, tagesaktuelle Fassung."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS page title identifies the current consolidated version; retrieved 2026-10-19."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Deterministic ris-contentblock-v1 replay of the complete RIS div.contentBlock; expected section heading present; 866 extracted characters."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Reviewed 1 linked PDF target(s): RIS current-section PDFs are parallel renderings; BGBlPdf targets are official gazette promulgations, not incorporated forms or annexes. Current consolidated HTML remains the maintained text. Links: ['https://www.ris.bka.gv.at/Dokumente/Bundesnormen/NOR40141264/NOR40141264.pdf']"
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Official RIS consolidated legislation; classified as national_legislation for Fremdenpolizeigesetz 2005 § 15b — privileged third-country family-member stay and visa entitlement."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Replayed saved RIS div.contentBlock with ris-contentblock-v1; verified statute title, § 15b, and complete nonempty output."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-fpg-15b-8d02072684f1022d8b7776f94b0fa53f0235d558c2118bdd97568b5544f0bf13.html"
+    },
+    "at-fpg-2-4-11": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "HTTPS RIS source; URL statute/paragraph parameters match 20004241/§ 2; page title: RIS - Fremdenpolizeigesetz 2005 § 2 - Bundesrecht konsolidiert, tagesaktuelle Fassung."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS page title identifies the current consolidated version; retrieved 2026-10-19."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Deterministic ris-contentblock-v1 replay of the complete RIS div.contentBlock; expected section heading present; 13825 extracted characters."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Reviewed 7 linked PDF target(s): RIS current-section PDFs are parallel renderings; BGBlPdf targets are official gazette promulgations, not incorporated forms or annexes. Current consolidated HTML remains the maintained text. Links: ['https://www.ris.bka.gv.at/Dokumente/BgblPdf/1974_60_0/1974_60_0.pdf', 'https://www.ris.bka.gv.at/Dokumente/BgblPdf/1975_218_0/1975_218_0.pdf', 'https://www.ris.bka.gv.at/Dokumente/BgblPdf/1978_560_0/1978_560_0.pdf', 'https://www.ris.bka.gv.at/Dokumente/BgblPdf/1990_609_0/1990_609_0.pdf', 'https://www.ris.bka.gv.at/Dokumente/BgblPdf/1997_90_3/1997_90_3.pdf', 'https://www.ris.bka.gv.at/Dokumente/BgblPdf/2002_133_3/2002_133_3.pdf', 'https://www.ris.bka.gv.at/Dokumente/Bundesnormen/NOR40278221/NOR40278221.pdf']"
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Official RIS consolidated legislation; classified as national_legislation for Fremdenpolizeigesetz 2005 § 2 Abs. 4 Z 11 — privileged third-country national family member definition."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Replayed saved RIS div.contentBlock with ris-contentblock-v1; verified statute title, § 2, and complete nonempty output."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-fpg-2-4-11-20d0484e020d6f9875a5448a77afbd004e0ccef3e38804013b8eb82afd4dc412.html"
+    },
+    "at-fpg-66": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "HTTPS RIS source; URL statute/paragraph parameters match 20004241/§ 66; page title: RIS - Fremdenpolizeigesetz 2005 § 66 - Bundesrecht konsolidiert, tagesaktuelle Fassung."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS page title identifies the current consolidated version; retrieved 2026-10-19."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Deterministic ris-contentblock-v1 replay of the complete RIS div.contentBlock; expected section heading present; 1835 extracted characters."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Reviewed 1 linked PDF target(s): RIS current-section PDFs are parallel renderings; BGBlPdf targets are official gazette promulgations, not incorporated forms or annexes. Current consolidated HTML remains the maintained text. Links: ['https://www.ris.bka.gv.at/Dokumente/Bundesnormen/NOR40141265/NOR40141265.pdf']"
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Official RIS consolidated legislation; classified as national_legislation for Fremdenpolizeigesetz 2005 § 66 — expulsion of EEA/Swiss citizens and privileged family members."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Replayed saved RIS div.contentBlock with ris-contentblock-v1; verified statute title, § 66, and complete nonempty output."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-fpg-66-f667f46d2b9dbc1a050e3ac59c2be20366fee17e8f6152d736514d1131defd04.html"
+    },
+    "at-fpg-67": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "HTTPS RIS source; URL statute/paragraph parameters match 20004241/§ 67; page title: RIS - Fremdenpolizeigesetz 2005 § 67 - Bundesrecht konsolidiert, tagesaktuelle Fassung."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS page title identifies the current consolidated version; retrieved 2026-10-19."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Deterministic ris-contentblock-v1 replay of the complete RIS div.contentBlock; expected section heading present; 3136 extracted characters."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Reviewed 2 linked PDF target(s): RIS current-section PDFs are parallel renderings; BGBlPdf targets are official gazette promulgations, not incorporated forms or annexes. Current consolidated HTML remains the maintained text. Links: ['https://www.ris.bka.gv.at/Dokumente/BgblPdf/1993_7_0/1993_7_0.pdf', 'https://www.ris.bka.gv.at/Dokumente/Bundesnormen/NOR40278251/NOR40278251.pdf']"
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Official RIS consolidated legislation; classified as national_legislation for Fremdenpolizeigesetz 2005 § 67 — residence prohibitions for EEA/Swiss citizens and privileged family members."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Replayed saved RIS div.contentBlock with ris-contentblock-v1; verified statute title, § 67, and complete nonempty output."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-fpg-67-47d23dd379837b98b95f82d5f3ed5600510bd82234f3e71c8910d28c3cdb5f11.html"
+    },
+    "at-fpg-70": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "HTTPS RIS source; URL statute/paragraph parameters match 20004241/§ 70; page title: RIS - Fremdenpolizeigesetz 2005 § 70 - Bundesrecht konsolidiert, tagesaktuelle Fassung."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS page title identifies the current consolidated version; retrieved 2026-10-19."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Deterministic ris-contentblock-v1 replay of the complete RIS div.contentBlock; expected section heading present; 1302 extracted characters."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Reviewed 1 linked PDF target(s): RIS current-section PDFs are parallel renderings; BGBlPdf targets are official gazette promulgations, not incorporated forms or annexes. Current consolidated HTML remains the maintained text. Links: ['https://www.ris.bka.gv.at/Dokumente/Bundesnormen/NOR40278253/NOR40278253.pdf']"
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Official RIS consolidated legislation; classified as national_legislation for Fremdenpolizeigesetz 2005 § 70 — departure period and enforcement delay."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Replayed saved RIS div.contentBlock with ris-contentblock-v1; verified statute title, § 70, and complete nonempty output."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-fpg-70-f505fcd43899c1cee033aaec94b7ed2244e12d11ad16f93f9f7d6f11ba840f4f.html"
+    },
+    "at-guidance-family-card": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official capture captures/2026-10-19/at-guidance-family-card-a6ce205ec9b8786702978a98ee52d555d4be2a36a90bbac0b523d022dac412df.html; final publisher host eausweise.oesterreich.gv.at; page identity matches the manifest."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "Official publisher page captured on 19 October 2026; visible reference date recorded where supplied."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Publisher-specific main-region replay checked against the source heading and substantive text; page-shell/navigation text excluded; relevant links are cross-referenced in guidance-link-audit.json."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Publisher link list checked; no material incorporated attachment was needed to interpret this source."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as official_guidance; topic relationship is recorded in the manifest."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Publisher-specific main-region replay checked against the source heading and substantive text; page-shell/navigation text excluded; relevant links are cross-referenced in guidance-link-audit.json."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-guidance-family-card-a6ce205ec9b8786702978a98ee52d555d4be2a36a90bbac0b523d022dac412df.html"
+    },
+    "at-guidance-family-index": {
+      "status": "discovery_only",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official oesterreich.gv.at source capture and page identity."
+        },
+        "current_legal_version": {
+          "status": "not_applicable",
+          "reason": "Navigation index, not a versioned legal instrument."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Main-region replay preserves its title and detail-page links."
+        },
+        "attachments_review": {
+          "status": "not_applicable",
+          "reason": "Discovery-only index; each substantive page is its own record."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified and moved to references/family-index-discovery.md."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Main-region text and target links compared with the saved capture."
+      }
+    },
+    "at-guidance-visa-application": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official capture captures/2026-10-19/at-guidance-visa-application-fbc36711487adac935f6eae9705b6f94f652cc1faf4bf20192a142c2703c429d.html; final publisher host www.oesterreich.gv.at; page identity matches the manifest."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "Official publisher page captured on 19 October 2026; visible reference date recorded where supplied."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Publisher-specific main-region replay checked against the source heading and substantive text; page-shell/navigation text excluded; relevant links are cross-referenced in guidance-link-audit.json."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "The official linked C1 application form was opened and indexed separately; native capture remains pending."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as official_guidance; topic relationship is recorded in the manifest."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Publisher-specific main-region replay checked against the source heading and substantive text; page-shell/navigation text excluded; relevant links are cross-referenced in guidance-link-audit.json."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-guidance-visa-application-fbc36711487adac935f6eae9705b6f94f652cc1faf4bf20192a142c2703c429d.html"
+    },
+    "at-ifg-1": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official capture captures/2026-10-19/at-ifg-1-cf76fdcb354901221b5b7d600b4c4a33b17f7cb6dd6a1d4e5e3faf6e410c5b1f.html; final publisher host www.ris.bka.gv.at; page identity matches the manifest."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS current-section record captured 19 October 2026; statute number and requested paragraph match the publisher identity."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "RIS contentBlock replay checked against the requested statute/section heading, paragraph/list boundaries and operative text in the saved current-section capture."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Publisher link list checked; no material incorporated attachment was needed to interpret this source."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as national_legislation; topic relationship is recorded in the manifest."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "RIS contentBlock replay checked against the requested statute/section heading, paragraph/list boundaries and operative text in the saved current-section capture."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-ifg-1-cf76fdcb354901221b5b7d600b4c4a33b17f7cb6dd6a1d4e5e3faf6e410c5b1f.html"
+    },
+    "at-ifg-10": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "HTTPS RIS source; URL statute/paragraph parameters match 20012537/§ 10; page title: RIS - Informationsfreiheitsgesetz § 10 - Bundesrecht konsolidiert, tagesaktuelle Fassung."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS page title identifies the current consolidated version; retrieved 2026-10-19."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Deterministic ris-contentblock-v1 replay of the complete RIS div.contentBlock; expected section heading present; 941 extracted characters."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Reviewed 2 linked PDF target(s): RIS current-section PDFs are parallel renderings; BGBlPdf targets are official gazette promulgations, not incorporated forms or annexes. Current consolidated HTML remains the maintained text. Links: ['https://www.ris.bka.gv.at/Dokumente/BgblPdf/1958_210_0/1958_210_0.pdf', 'https://www.ris.bka.gv.at/Dokumente/Bundesnormen/NOR40260544/NOR40260544.pdf']"
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Official RIS consolidated legislation; classified as national_legislation for Informationsfreiheitsgesetz § 10 — affected persons."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Replayed saved RIS div.contentBlock with ris-contentblock-v1; verified statute title, § 10, and complete nonempty output."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-ifg-10-6ccf6287e25e204c3feeb0b348eccd4f79cc7b0a14aaa2b3c39692f924b1ee82.html"
+    },
+    "at-ifg-11": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official capture captures/2026-10-19/at-ifg-11-c57a4900d8fcc999f5a0fbc6f3ba5eee0b45743021a5b5037396774c818c82e6.html; final publisher host www.ris.bka.gv.at; page identity matches the manifest."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS current-section record captured 19 October 2026; statute number and requested paragraph match the publisher identity."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "RIS contentBlock replay checked against the requested statute/section heading, paragraph/list boundaries and operative text in the saved current-section capture."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Publisher link list checked; no material incorporated attachment was needed to interpret this source."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as national_legislation; topic relationship is recorded in the manifest."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "RIS contentBlock replay checked against the requested statute/section heading, paragraph/list boundaries and operative text in the saved current-section capture."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-ifg-11-c57a4900d8fcc999f5a0fbc6f3ba5eee0b45743021a5b5037396774c818c82e6.html"
+    },
+    "at-ifg-12": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "HTTPS RIS source; URL statute/paragraph parameters match 20012537/§ 12; page title: RIS - Informationsfreiheitsgesetz § 12 - Bundesrecht konsolidiert, tagesaktuelle Fassung."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS page title identifies the current consolidated version; retrieved 2026-10-19."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Deterministic ris-contentblock-v1 replay of the complete RIS div.contentBlock; expected section heading present; 591 extracted characters."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Reviewed 2 linked PDF target(s): RIS current-section PDFs are parallel renderings; BGBlPdf targets are official gazette promulgations, not incorporated forms or annexes. Current consolidated HTML remains the maintained text. Links: ['https://www.ris.bka.gv.at/Dokumente/BgblPdf/1957_267_0/1957_267_0.pdf', 'https://www.ris.bka.gv.at/Dokumente/Bundesnormen/NOR40260546/NOR40260546.pdf']"
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Official RIS consolidated legislation; classified as national_legislation for Informationsfreiheitsgesetz § 12 — fees."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Replayed saved RIS div.contentBlock with ris-contentblock-v1; verified statute title, § 12, and complete nonempty output."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-ifg-12-e53eba123bb086a4cda38e724a2082c96b02d1ae7e196d7be4f63169ade721a6.html"
+    },
+    "at-ifg-13": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "HTTPS RIS source; URL statute/paragraph parameters match 20012537/§ 13; page title: RIS - Informationsfreiheitsgesetz § 13 - Bundesrecht konsolidiert, tagesaktuelle Fassung."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS page title identifies the current consolidated version; retrieved 2026-10-19."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Deterministic ris-contentblock-v1 replay of the complete RIS div.contentBlock; expected section heading present; 1387 extracted characters."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Reviewed 1 linked PDF target(s): RIS current-section PDFs are parallel renderings; BGBlPdf targets are official gazette promulgations, not incorporated forms or annexes. Current consolidated HTML remains the maintained text. Links: ['https://www.ris.bka.gv.at/Dokumente/Bundesnormen/NOR40260547/NOR40260547.pdf']"
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Official RIS consolidated legislation; classified as national_legislation for Informationsfreiheitsgesetz § 13 — private information holders."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Replayed saved RIS div.contentBlock with ris-contentblock-v1; verified statute title, § 13, and complete nonempty output."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-ifg-13-d5651245cca90dc3f1ab897b8559faade8336f3012f94c66fda283b4d4280e92.html"
+    },
+    "at-ifg-14": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official capture captures/2026-10-19/at-ifg-14-d43db51f62b5b5ce822b0335de10477c250fe177f4178a0e21717f9d475ef0bb.html; final publisher host www.ris.bka.gv.at; page identity matches the manifest."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS current-section record captured 19 October 2026; statute number and requested paragraph match the publisher identity."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "RIS contentBlock replay checked against the requested statute/section heading, paragraph/list boundaries and operative text in the saved current-section capture."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Publisher link list checked; no material incorporated attachment was needed to interpret this source."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as national_legislation; topic relationship is recorded in the manifest."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "RIS contentBlock replay checked against the requested statute/section heading, paragraph/list boundaries and operative text in the saved current-section capture."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-ifg-14-d43db51f62b5b5ce822b0335de10477c250fe177f4178a0e21717f9d475ef0bb.html"
+    },
+    "at-ifg-15": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official capture captures/2026-10-19/at-ifg-15-69f145fb8f9847f1b4f0c6a5f29740eeb1e4f62421c9a05a1c55ddbfe6b145ae.html; final publisher host ris.bka.gv.at; page identity matches the manifest."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS current-section record captured 19 October 2026; statute number and requested paragraph match the publisher identity."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "RIS contentBlock replay checked against the requested statute/section heading, paragraph/list boundaries and operative text in the saved current-section capture."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Publisher link list checked; no material incorporated attachment was needed to interpret this source."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as national_legislation; topic relationship is recorded in the manifest."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "RIS contentBlock replay checked against the requested statute/section heading, paragraph/list boundaries and operative text in the saved current-section capture."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-ifg-15-69f145fb8f9847f1b4f0c6a5f29740eeb1e4f62421c9a05a1c55ddbfe6b145ae.html"
+    },
+    "at-ifg-16": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "HTTPS RIS source; URL statute/paragraph parameters match 20012537/§ 16; page title: RIS - Informationsfreiheitsgesetz § 16 - Bundesrecht konsolidiert, tagesaktuelle Fassung."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS page title identifies the current consolidated version; retrieved 2026-10-19."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Deterministic ris-contentblock-v1 replay of the complete RIS div.contentBlock; expected section heading present; 285 extracted characters."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Reviewed 1 linked PDF target(s): RIS current-section PDFs are parallel renderings; BGBlPdf targets are official gazette promulgations, not incorporated forms or annexes. Current consolidated HTML remains the maintained text. Links: ['https://www.ris.bka.gv.at/Dokumente/Bundesnormen/NOR40260550/NOR40260550.pdf']"
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Official RIS consolidated legislation; classified as national_legislation for Informationsfreiheitsgesetz § 16 — relationship to other legislation."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Replayed saved RIS div.contentBlock with ris-contentblock-v1; verified statute title, § 16, and complete nonempty output."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-ifg-16-8bc31f8d29b5501b1086bc3717fcdba3a8265bdbaea430a694c970bd68d781e2.html"
+    },
+    "at-ifg-17": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "HTTPS RIS source; URL statute/paragraph parameters match 20012537/§ 17; page title: RIS - Informationsfreiheitsgesetz § 17 - Bundesrecht konsolidiert, tagesaktuelle Fassung."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS page title identifies the current consolidated version; retrieved 2026-10-19."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Deterministic ris-contentblock-v1 replay of the complete RIS div.contentBlock; expected section heading present; 161 extracted characters."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Reviewed 1 linked PDF target(s): RIS current-section PDFs are parallel renderings; BGBlPdf targets are official gazette promulgations, not incorporated forms or annexes. Current consolidated HTML remains the maintained text. Links: ['https://www.ris.bka.gv.at/Dokumente/Bundesnormen/NOR40260551/NOR40260551.pdf']"
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Official RIS consolidated legislation; classified as national_legislation for Informationsfreiheitsgesetz § 17 — references."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Replayed saved RIS div.contentBlock with ris-contentblock-v1; verified statute title, § 17, and complete nonempty output."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-ifg-17-3c24914d7df5617ca5ae67f887b1222763f0caa61cb898b912efb3e3a61324b2.html"
+    },
+    "at-ifg-18": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "HTTPS RIS source; URL statute/paragraph parameters match 20012537/§ 18; page title: RIS - Informationsfreiheitsgesetz § 18 - Bundesrecht konsolidiert, tagesaktuelle Fassung."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS page title identifies the current consolidated version; retrieved 2026-10-19."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Deterministic ris-contentblock-v1 replay of the complete RIS div.contentBlock; expected section heading present; 314 extracted characters."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Reviewed 1 linked PDF target(s): RIS current-section PDFs are parallel renderings; BGBlPdf targets are official gazette promulgations, not incorporated forms or annexes. Current consolidated HTML remains the maintained text. Links: ['https://www.ris.bka.gv.at/Dokumente/Bundesnormen/NOR40260552/NOR40260552.pdf']"
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Official RIS consolidated legislation; classified as national_legislation for Informationsfreiheitsgesetz § 18 — gender-neutral language."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Replayed saved RIS div.contentBlock with ris-contentblock-v1; verified statute title, § 18, and complete nonempty output."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-ifg-18-203721ad8b6c18ecee35141a37bfe8598c4f6a5debf290a661d347c5b744d3c1.html"
+    },
+    "at-ifg-19": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "HTTPS RIS source; URL statute/paragraph parameters match 20012537/§ 19; page title: RIS - Informationsfreiheitsgesetz § 19 - Bundesrecht konsolidiert, tagesaktuelle Fassung."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS page title identifies the current consolidated version; retrieved 2026-10-19."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Deterministic ris-contentblock-v1 replay of the complete RIS div.contentBlock; expected section heading present; 662 extracted characters."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Reviewed 1 linked PDF target(s): RIS current-section PDFs are parallel renderings; BGBlPdf targets are official gazette promulgations, not incorporated forms or annexes. Current consolidated HTML remains the maintained text. Links: ['https://www.ris.bka.gv.at/Dokumente/Bundesnormen/NOR40260553/NOR40260553.pdf']"
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Official RIS consolidated legislation; classified as national_legislation for Informationsfreiheitsgesetz § 19 — enforcement."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Replayed saved RIS div.contentBlock with ris-contentblock-v1; verified statute title, § 19, and complete nonempty output."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-ifg-19-f5ff31d24e9a85e1bbb7d3c38277259ab78ca7b39533b7747ec716d848692437.html"
+    },
+    "at-ifg-2": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "HTTPS RIS source; URL statute/paragraph parameters match 20012537/§ 2; page title: RIS - Informationsfreiheitsgesetz § 2 - Bundesrecht konsolidiert, tagesaktuelle Fassung."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS page title identifies the current consolidated version; retrieved 2026-10-19."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Deterministic ris-contentblock-v1 replay of the complete RIS div.contentBlock; expected section heading present; 959 extracted characters."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Reviewed 1 linked PDF target(s): RIS current-section PDFs are parallel renderings; BGBlPdf targets are official gazette promulgations, not incorporated forms or annexes. Current consolidated HTML remains the maintained text. Links: ['https://www.ris.bka.gv.at/Dokumente/Bundesnormen/NOR40260536/NOR40260536.pdf']"
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Official RIS consolidated legislation; classified as national_legislation for Informationsfreiheitsgesetz § 2 — definitions."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Replayed saved RIS div.contentBlock with ris-contentblock-v1; verified statute title, § 2, and complete nonempty output."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-ifg-2-29d9689b6f01e1b9201447157761e6435211b17c5900e5ceca2559a8bbe5851e.html"
+    },
+    "at-ifg-20": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "HTTPS RIS source; URL statute/paragraph parameters match 20012537/§ 20; page title: RIS - Informationsfreiheitsgesetz § 20 - Bundesrecht konsolidiert, tagesaktuelle Fassung."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS page title identifies the current consolidated version; retrieved 2026-10-19."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Deterministic ris-contentblock-v1 replay of the complete RIS div.contentBlock; expected section heading present; 1307 extracted characters."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Reviewed 1 linked PDF target(s): RIS current-section PDFs are parallel renderings; BGBlPdf targets are official gazette promulgations, not incorporated forms or annexes. Current consolidated HTML remains the maintained text. Links: ['https://www.ris.bka.gv.at/Dokumente/Bundesnormen/NOR40260554/NOR40260554.pdf']"
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Official RIS consolidated legislation; classified as national_legislation for Informationsfreiheitsgesetz § 20 — commencement, repeal, and transitional rules."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Replayed saved RIS div.contentBlock with ris-contentblock-v1; verified statute title, § 20, and complete nonempty output."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-ifg-20-b8511fe22b0afd2d48da003715e01ea90415e18f484f4500741af69fb0120ee4.html"
+    },
+    "at-ifg-3": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "HTTPS RIS source; URL statute/paragraph parameters match 20012537/§ 3; page title: RIS - Informationsfreiheitsgesetz § 3 - Bundesrecht konsolidiert, tagesaktuelle Fassung."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS page title identifies the current consolidated version; retrieved 2026-10-19."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Deterministic ris-contentblock-v1 replay of the complete RIS div.contentBlock; expected section heading present; 728 extracted characters."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Reviewed 1 linked PDF target(s): RIS current-section PDFs are parallel renderings; BGBlPdf targets are official gazette promulgations, not incorporated forms or annexes. Current consolidated HTML remains the maintained text. Links: ['https://www.ris.bka.gv.at/Dokumente/Bundesnormen/NOR40260537/NOR40260537.pdf']"
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Official RIS consolidated legislation; classified as national_legislation for Informationsfreiheitsgesetz § 3 — competence."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Replayed saved RIS div.contentBlock with ris-contentblock-v1; verified statute title, § 3, and complete nonempty output."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-ifg-3-5c425f593b1c588a75a0cf7dc86b01080630421a78f7b50c968ad7f695af8b61.html"
+    },
+    "at-ifg-4": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "HTTPS RIS source; URL statute/paragraph parameters match 20012537/§ 4; page title: RIS - Informationsfreiheitsgesetz § 4 - Bundesrecht konsolidiert, tagesaktuelle Fassung."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS page title identifies the current consolidated version; retrieved 2026-10-19."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Deterministic ris-contentblock-v1 replay of the complete RIS div.contentBlock; expected section heading present; 1152 extracted characters."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Reviewed 1 linked PDF target(s): RIS current-section PDFs are parallel renderings; BGBlPdf targets are official gazette promulgations, not incorporated forms or annexes. Current consolidated HTML remains the maintained text. Links: ['https://www.ris.bka.gv.at/Dokumente/Bundesnormen/NOR40260556/NOR40260556.pdf']"
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Official RIS consolidated legislation; classified as national_legislation for Informationsfreiheitsgesetz § 4 — proactive information duties."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Replayed saved RIS div.contentBlock with ris-contentblock-v1; verified statute title, § 4, and complete nonempty output."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-ifg-4-aa58403a4cff5f9304a3eb5a5c7a5aafb5cfb854401ca111f4a4a2d9f807e5c8.html"
+    },
+    "at-ifg-5": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "HTTPS RIS source; URL statute/paragraph parameters match 20012537/§ 5; page title: RIS - Informationsfreiheitsgesetz § 5 - Bundesrecht konsolidiert, tagesaktuelle Fassung."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS page title identifies the current consolidated version; retrieved 2026-10-19."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Deterministic ris-contentblock-v1 replay of the complete RIS div.contentBlock; expected section heading present; 2244 extracted characters."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Reviewed 1 linked PDF target(s): RIS current-section PDFs are parallel renderings; BGBlPdf targets are official gazette promulgations, not incorporated forms or annexes. Current consolidated HTML remains the maintained text. Links: ['https://www.ris.bka.gv.at/Dokumente/Bundesnormen/NOR40260557/NOR40260557.pdf']"
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Official RIS consolidated legislation; classified as national_legislation for Informationsfreiheitsgesetz § 5 — information register."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Replayed saved RIS div.contentBlock with ris-contentblock-v1; verified statute title, § 5, and complete nonempty output."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-ifg-5-af9a48e05d2987730edb30fddc24cc2d0c998a4b017dffa590cbf5ad15273325.html"
+    },
+    "at-ifg-6": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "HTTPS RIS source; URL statute/paragraph parameters match 20012537/§ 6; page title: RIS - Informationsfreiheitsgesetz § 6 - Bundesrecht konsolidiert, tagesaktuelle Fassung."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS page title identifies the current consolidated version; retrieved 2026-10-19."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Deterministic ris-contentblock-v1 replay of the complete RIS div.contentBlock; expected section heading present; 2298 extracted characters."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Reviewed 3 linked PDF target(s): RIS current-section PDFs are parallel renderings; BGBlPdf targets are official gazette promulgations, not incorporated forms or annexes. Current consolidated HTML remains the maintained text. Links: ['https://www.ris.bka.gv.at/Dokumente/BgblPdf/1981_314_0/1981_314_0.pdf', 'https://www.ris.bka.gv.at/Dokumente/BgblPdf/1993_532_0/1993_532_0.pdf', 'https://www.ris.bka.gv.at/Dokumente/Bundesnormen/NOR40260540/NOR40260540.pdf']"
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Official RIS consolidated legislation; classified as national_legislation for Informationsfreiheitsgesetz § 6 — secrecy."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Replayed saved RIS div.contentBlock with ris-contentblock-v1; verified statute title, § 6, and complete nonempty output."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-ifg-6-bf2c0ea06e6be8690bd2e56d8eec67274d4dd90b97eb6698a4d02df28642b1d6.html"
+    },
+    "at-ifg-7": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official capture captures/2026-10-19/at-ifg-7-2b7bd58319c6db6d4f60762f75077e5ffb6c471eefb01c2b2a3c5be7a6ee346d.html; final publisher host www.ris.bka.gv.at; page identity matches the manifest."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS current-section record captured 19 October 2026; statute number and requested paragraph match the publisher identity."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "RIS contentBlock replay checked against the requested statute/section heading, paragraph/list boundaries and operative text in the saved current-section capture."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Publisher link list checked; no material incorporated attachment was needed to interpret this source."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as national_legislation; topic relationship is recorded in the manifest."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "RIS contentBlock replay checked against the requested statute/section heading, paragraph/list boundaries and operative text in the saved current-section capture."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-ifg-7-2b7bd58319c6db6d4f60762f75077e5ffb6c471eefb01c2b2a3c5be7a6ee346d.html"
+    },
+    "at-ifg-8": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official capture captures/2026-10-19/at-ifg-8-d712e27ad6109e374621237f8dcfe1f23abb08bad4d476b60a121e6f291b39eb.html; final publisher host www.ris.bka.gv.at; page identity matches the manifest."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS current-section record captured 19 October 2026; statute number and requested paragraph match the publisher identity."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "RIS contentBlock replay checked against the requested statute/section heading, paragraph/list boundaries and operative text in the saved current-section capture."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Publisher link list checked; no material incorporated attachment was needed to interpret this source."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as national_legislation; topic relationship is recorded in the manifest."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "RIS contentBlock replay checked against the requested statute/section heading, paragraph/list boundaries and operative text in the saved current-section capture."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-ifg-8-d712e27ad6109e374621237f8dcfe1f23abb08bad4d476b60a121e6f291b39eb.html"
+    },
+    "at-ifg-9": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "HTTPS RIS source; URL statute/paragraph parameters match 20012537/§ 9; page title: RIS - Informationsfreiheitsgesetz § 9 - Bundesrecht konsolidiert, tagesaktuelle Fassung."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS page title identifies the current consolidated version; retrieved 2026-10-19."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Deterministic ris-contentblock-v1 replay of the complete RIS div.contentBlock; expected section heading present; 803 extracted characters."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Reviewed 1 linked PDF target(s): RIS current-section PDFs are parallel renderings; BGBlPdf targets are official gazette promulgations, not incorporated forms or annexes. Current consolidated HTML remains the maintained text. Links: ['https://www.ris.bka.gv.at/Dokumente/Bundesnormen/NOR40260543/NOR40260543.pdf']"
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Official RIS consolidated legislation; classified as national_legislation for Informationsfreiheitsgesetz § 9 — response to information requests."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Replayed saved RIS div.contentBlock with ris-contentblock-v1; verified statute title, § 9, and complete nonempty output."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-ifg-9-73cba035dec15a49bbb597b0d18f71f9559016b8fb489c3f0f88cb213dc7b47a.html"
+    },
+    "at-lvwg-ni-2019-518": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official capture captures/2026-10-19/at-lvwg-ni-2019-518-9b72732dc28ff553d630aee56190c24180c3aba49cbe021156e2773dc6e50d29.html; final publisher host ris.bka.gv.at; page identity matches the manifest."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "Immutable official RIS decision; date, court, case number and Dokumentnummer match."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Official RIS case text replay checked against court, decision date, case number and operative result; the holding and limits are indexed in case-review-register.json."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Publisher link list checked; no material incorporated attachment was needed to interpret this source."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as official_case_law; topic relationship is recorded in the manifest."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Official RIS case text replay checked against court, decision date, case number and operative result; the holding and limits are indexed in case-review-register.json."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-lvwg-ni-2019-518-9b72732dc28ff553d630aee56190c24180c3aba49cbe021156e2773dc6e50d29.html"
+    },
+    "at-lvwg-wien-2022-6086": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official capture captures/2026-10-19/at-lvwg-wien-2022-6086-9ebae07ef5a83d4e43276068a0a51c760e55ed5e862b2a575484aeb35e2c9915.html; final publisher host ris.bka.gv.at; page identity matches the manifest."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "Immutable official RIS decision; date, court, case number and Dokumentnummer match."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Official RIS case text replay checked against court, decision date, case number and operative result; the holding and limits are indexed in case-review-register.json."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Publisher link list checked; no material incorporated attachment was needed to interpret this source."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as official_case_law; topic relationship is recorded in the manifest."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Official RIS case text replay checked against court, decision date, case number and operative result; the holding and limits are indexed in case-review-register.json."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-lvwg-wien-2022-6086-9ebae07ef5a83d4e43276068a0a51c760e55ed5e862b2a575484aeb35e2c9915.html"
+    },
+    "at-nag-3-authority": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official capture captures/2026-10-19/at-nag-3-authority-a2ff598e66544e37018fa8ed7265558b1086eca2eed5d84611b7489228a15d26.html; final publisher host www.ris.bka.gv.at; page identity matches the manifest."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS current-section record captured 19 October 2026; statute number and requested paragraph match the publisher identity."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "RIS contentBlock replay checked against the requested statute/section heading, paragraph/list boundaries and operative text in the saved current-section capture."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Publisher link list checked; no material incorporated attachment was needed to interpret this source."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as national_legislation; topic relationship is recorded in the manifest."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "RIS contentBlock replay checked against the requested statute/section heading, paragraph/list boundaries and operative text in the saved current-section capture."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-nag-3-authority-a2ff598e66544e37018fa8ed7265558b1086eca2eed5d84611b7489228a15d26.html"
+    },
+    "at-nag-4-venue": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official capture captures/2026-10-19/at-nag-4-venue-b9d1ae98b74e0effc7f4bcc8fd75236e332fbceffa79a620d48a682af8d8a006.html; final publisher host www.ris.bka.gv.at; page identity matches the manifest."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS current-section record captured 19 October 2026; statute number and requested paragraph match the publisher identity."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "RIS contentBlock replay checked against the requested statute/section heading, paragraph/list boundaries and operative text in the saved current-section capture."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Publisher link list checked; no material incorporated attachment was needed to interpret this source."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as national_legislation; topic relationship is recorded in the manifest."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "RIS contentBlock replay checked against the requested statute/section heading, paragraph/list boundaries and operative text in the saved current-section capture."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-nag-4-venue-b9d1ae98b74e0effc7f4bcc8fd75236e332fbceffa79a620d48a682af8d8a006.html"
+    },
+    "at-nag-51": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official capture captures/2026-10-19/at-nag-51-cc52d1ecbfb5cfa5f7e24131fe89070dd90d98f6caa88065a04f0d82c0bc637d.html; final publisher host www.ris.bka.gv.at; page identity matches the manifest."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS current-section record captured 19 October 2026; statute number and requested paragraph match the publisher identity."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "RIS contentBlock replay checked against the requested statute/section heading, paragraph/list boundaries and operative text in the saved current-section capture."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Publisher link list checked; no material incorporated attachment was needed to interpret this source."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as national_legislation; topic relationship is recorded in the manifest."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "RIS contentBlock replay checked against the requested statute/section heading, paragraph/list boundaries and operative text in the saved current-section capture."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-nag-51-cc52d1ecbfb5cfa5f7e24131fe89070dd90d98f6caa88065a04f0d82c0bc637d.html"
+    },
+    "at-nag-52": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official capture captures/2026-10-19/at-nag-52-31846e45c55bc9625db828acda9e1a386d5f5db2db97d1bfdf2c3e5cc943adf4.html; final publisher host www.ris.bka.gv.at; page identity matches the manifest."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS current-section record captured 19 October 2026; statute number and requested paragraph match the publisher identity."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "RIS contentBlock replay checked against the requested statute/section heading, paragraph/list boundaries and operative text in the saved current-section capture."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Publisher link list checked; no material incorporated attachment was needed to interpret this source."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as national_legislation; topic relationship is recorded in the manifest."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "RIS contentBlock replay checked against the requested statute/section heading, paragraph/list boundaries and operative text in the saved current-section capture."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-nag-52-31846e45c55bc9625db828acda9e1a386d5f5db2db97d1bfdf2c3e5cc943adf4.html"
+    },
+    "at-nag-53": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official capture captures/2026-10-19/at-nag-53-2f5b698da46b0d8e66d65e793d151c54a7727a8bb1ab11d5f29a64940d908c78.html; final publisher host www.ris.bka.gv.at; page identity matches the manifest."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS current-section record captured 19 October 2026; statute number and requested paragraph match the publisher identity."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "RIS contentBlock replay checked against the requested statute/section heading, paragraph/list boundaries and operative text in the saved current-section capture."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Publisher link list checked; no material incorporated attachment was needed to interpret this source."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as national_legislation; topic relationship is recorded in the manifest."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "RIS contentBlock replay checked against the requested statute/section heading, paragraph/list boundaries and operative text in the saved current-section capture."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-nag-53-2f5b698da46b0d8e66d65e793d151c54a7727a8bb1ab11d5f29a64940d908c78.html"
+    },
+    "at-nag-53a": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official capture captures/2026-10-19/at-nag-53a-b86058982aae203563e77a2798cc69f7524544c03414417265ec5748c466f983.html; final publisher host www.ris.bka.gv.at; page identity matches the manifest."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS current-section record captured 19 October 2026; statute number and requested paragraph match the publisher identity."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "RIS contentBlock replay checked against the requested statute/section heading, paragraph/list boundaries and operative text in the saved current-section capture."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Publisher link list checked; no material incorporated attachment was needed to interpret this source."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as national_legislation; topic relationship is recorded in the manifest."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "RIS contentBlock replay checked against the requested statute/section heading, paragraph/list boundaries and operative text in the saved current-section capture."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-nag-53a-b86058982aae203563e77a2798cc69f7524544c03414417265ec5748c466f983.html"
+    },
+    "at-nag-54": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official capture captures/2026-10-19/at-nag-54-90e5c7b1703a6fdd3e5132da22a02843deaefc55f9c0886ba29ebf7d12d56f50.html; final publisher host www.ris.bka.gv.at; page identity matches the manifest."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS current-section record captured 19 October 2026; statute number and requested paragraph match the publisher identity."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "RIS contentBlock replay checked against the requested statute/section heading, paragraph/list boundaries and operative text in the saved current-section capture."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Publisher link list checked; no material incorporated attachment was needed to interpret this source."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as national_legislation; topic relationship is recorded in the manifest."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "RIS contentBlock replay checked against the requested statute/section heading, paragraph/list boundaries and operative text in the saved current-section capture."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-nag-54-90e5c7b1703a6fdd3e5132da22a02843deaefc55f9c0886ba29ebf7d12d56f50.html"
+    },
+    "at-nag-54a": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official capture captures/2026-10-19/at-nag-54a-d79ea5e0a41beaf8eccf0c318e4e5913f31725cead164858803d012efef7fb46.html; final publisher host www.ris.bka.gv.at; page identity matches the manifest."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS current-section record captured 19 October 2026; statute number and requested paragraph match the publisher identity."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "RIS contentBlock replay checked against the requested statute/section heading, paragraph/list boundaries and operative text in the saved current-section capture."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Publisher link list checked; no material incorporated attachment was needed to interpret this source."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as national_legislation; topic relationship is recorded in the manifest."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "RIS contentBlock replay checked against the requested statute/section heading, paragraph/list boundaries and operative text in the saved current-section capture."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-nag-54a-d79ea5e0a41beaf8eccf0c318e4e5913f31725cead164858803d012efef7fb46.html"
+    },
+    "at-nag-55": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official capture captures/2026-10-19/at-nag-55-81648485a4cd997db66054731bababcec03bba45c0ae33769da58d0d043e302c.html; final publisher host www.ris.bka.gv.at; page identity matches the manifest."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS current-section record captured 19 October 2026; statute number and requested paragraph match the publisher identity."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "RIS contentBlock replay checked against the requested statute/section heading, paragraph/list boundaries and operative text in the saved current-section capture."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Publisher link list checked; no material incorporated attachment was needed to interpret this source."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as national_legislation; topic relationship is recorded in the manifest."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "RIS contentBlock replay checked against the requested statute/section heading, paragraph/list boundaries and operative text in the saved current-section capture."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-nag-55-81648485a4cd997db66054731bababcec03bba45c0ae33769da58d0d043e302c.html"
+    },
+    "at-nag-56": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official capture captures/2026-10-19/at-nag-56-72e02a7f480c6091308aff96287d2a0201c744423d257e865a22ac98a584406d.html; final publisher host www.ris.bka.gv.at; page identity matches the manifest."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS current-section record captured 19 October 2026; statute number and requested paragraph match the publisher identity."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "RIS contentBlock replay checked against the requested statute/section heading, paragraph/list boundaries and operative text in the saved current-section capture."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Publisher link list checked; no material incorporated attachment was needed to interpret this source."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as national_legislation; topic relationship is recorded in the manifest."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "RIS contentBlock replay checked against the requested statute/section heading, paragraph/list boundaries and operative text in the saved current-section capture."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-nag-56-72e02a7f480c6091308aff96287d2a0201c744423d257e865a22ac98a584406d.html"
+    },
+    "at-nag-57": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official capture captures/2026-10-19/at-nag-57-0e1f779ed4624216d50684a46c3dbc078381aa930b484430672a3adb4653ea83.html; final publisher host www.ris.bka.gv.at; page identity matches the manifest."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS current-section record captured 19 October 2026; statute number and requested paragraph match the publisher identity."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "RIS contentBlock replay checked against the requested statute/section heading, paragraph/list boundaries and operative text in the saved current-section capture."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Publisher link list checked; no material incorporated attachment was needed to interpret this source."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as national_legislation; topic relationship is recorded in the manifest."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "RIS contentBlock replay checked against the requested statute/section heading, paragraph/list boundaries and operative text in the saved current-section capture."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-nag-57-0e1f779ed4624216d50684a46c3dbc078381aa930b484430672a3adb4653ea83.html"
+    },
+    "at-nag-dv-5": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official capture captures/2026-10-19/at-nag-dv-5-03259d2daac2299f675903ba112f649c8c933980a086cba67cc4fc92a78885f7.html; final publisher host www.ris.bka.gv.at; page identity matches the manifest."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS current-section record captured 19 October 2026; statute number and requested paragraph match the publisher identity."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "RIS contentBlock replay checked against the requested statute/section heading, paragraph/list boundaries and operative text in the saved current-section capture."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Current §5 text reviewed. Its linked Annex E/F statutory card specimens are separately captured, visually inspected and accepted as source artifacts; current issued-card format conformity is tracked separately as an unresolved legal dependency."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as national_legislation; topic relationship is recorded in the manifest."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "RIS contentBlock replay checked against the requested statute/section heading, paragraph/list boundaries and operative text in the saved current-section capture."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-nag-dv-5-03259d2daac2299f675903ba112f649c8c933980a086cba67cc4fc92a78885f7.html"
+    },
+    "at-nag-dv-anl-5": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official RIS current annex page and linked native PDF match the RIS Dokumentnummer in the manifest."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "Official RIS consolidated annex page identifies this as the current Austrian statutory model, effective 28 February 2020, and links the captured signed PDF. The model is authoritative as Austrian statutory source content; its continuing conformity with the newer EU format is tracked separately as unresolved."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "One-page tagged, signed native PDF visually inspected. It contains front and reverse card artwork for an Aufenthaltskarte, bilingual German/English title and blank holder/document fields. It is a statutory card specimen, not an application form. The native PDF is the authoritative visual representation; text-only conversion would lose the specimen artwork."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "The official RIS annex page links to this captured PDF; no additional annex attachment is listed."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Visual inspection establishes that this is a statutory residence-card specimen (ordinary card for Anlage E; permanent card for Anlage F), not an application form."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Visual review of the native PDF front and reverse, RIS annex identity and title, bilingual field labels, and source classification. Applicable EU format requirements were checked separately; the blank specimen does not prove current issued-card conformity."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-nag-dv-anl-5-9594dd9cc1ec7bd52a77a4a3bfbdcc4f797cdcb2eb8952adab085a6626e2a99d.html"
+    },
+    "at-nag-dv-anl-6": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official RIS current annex page and linked native PDF match the RIS Dokumentnummer in the manifest."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "Official RIS consolidated annex page identifies this as the current Austrian statutory model, effective 28 February 2020, and links the captured signed PDF. The model is authoritative as Austrian statutory source content; its continuing conformity with the newer EU format is tracked separately as unresolved."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "One-page tagged, signed native PDF visually inspected. It contains front and reverse card artwork for a Daueraufenthaltskarte, bilingual German/English title and blank holder/document fields. It is a statutory card specimen, not an application form. The native PDF is the authoritative visual representation; text-only conversion would lose the specimen artwork."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "The official RIS annex page links to this captured PDF; no additional annex attachment is listed."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Visual inspection establishes that this is a statutory residence-card specimen (ordinary card for Anlage E; permanent card for Anlage F), not an application form."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Visual review of the native PDF front and reverse, RIS annex identity and title, bilingual field labels, and source classification. Applicable EU format requirements were checked separately; the blank specimen does not prove current issued-card conformity."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-nag-dv-anl-6-c732fe5325249c63e86a3b2374d925a967b8d252480ebd5f07dd379959fa1a54.html"
+    },
+    "at-oesterreich-schengen-visa-form": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official publisher link and direct PDF URL verified on 2026-10-19: https://www.oesterreich.gv.at/dam/jcr:1366e2b9-574b-4e7c-b6a4-01825af7a806/VisamformularC1_062024.pdf"
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "Schengen harmonised C1 form; official six-page June 2024 PDF linked from the current Austria.gv.at visa page."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "C1 form text extracted page by page; the first page identifies fields 21, 22, 30, 31 and 32 to be left blank by EEA/Swiss family members."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "The official parent page links to this retained PDF; no additional attachment is required to use the form."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Official administrative form; not primary legislation."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Text extraction reviewed against page count, form identity, headings, and the stated family-member fields; retained native PDF is the visual authority."
+      }
+    },
+    "at-volksanwaltschaft-complaint": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official capture captures/2026-10-19/at-volksanwaltschaft-complaint-586cb7873da12e64603353f633404f8a428ca5b726ff35d945177564955b82d6.html; final publisher host volksanwaltschaft.gv.at; page identity matches the manifest."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "Official publisher page captured on 19 October 2026; visible reference date recorded where supplied."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Publisher-specific main-region replay checked against the source heading and substantive text; page-shell/navigation text excluded; relevant links are cross-referenced in guidance-link-audit.json."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Official online route and one-page postal PDF opened from the parent page and indexed separately; byte capture remains pending."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as official_guidance; topic relationship is recorded in the manifest."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Publisher-specific main-region replay checked against the source heading and substantive text; page-shell/navigation text excluded; relevant links are cross-referenced in guidance-link-audit.json."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-volksanwaltschaft-complaint-586cb7873da12e64603353f633404f8a428ca5b726ff35d945177564955b82d6.html"
+    },
+    "at-volksanwaltschaft-online-complaint-form": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official parent page https://volksanwaltschaft.gv.at/fuer-probleme-mit-behoerden/beschwerdewegweiser/ links to the exact Federal Form Service route recorded in the manifest."
+        },
+        "current_legal_version": {
+          "status": "not_applicable",
+          "reason": "This is a fixed historical decision, administrative form, or live procedural route rather than a versioned legal instrument; its official publisher record or current linked route was checked on 2026-10-19."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Bounded live-route review: route title and initial screen capabilities saved; no user data entered; session/anti-forgery state omitted."
+        },
+        "attachments_review": {
+          "status": "not_applicable",
+          "reason": "No additional source attachment is part of the reviewed decision, form, or bounded interactive route record."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Official administrative submission channel for oversight complaints; not legislation or a blank form PDF."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Compared the official parent link with the live route title and first-screen options on 2026-10-19; scope excludes later interactive pages and submission behavior."
+      },
+      "raw_capture_evidence": "Live official route reviewed on 2026-10-19. Transient ViewState/event-validation/session values were excluded; the persistent route metadata and parent-page evidence are stored in the source document."
+    },
+    "at-volksanwaltschaft-pdf-complaint-form": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official publisher link and direct PDF URL verified on 2026-10-19: https://volksanwaltschaft.gv.at/fileadmin/user_upload/Downloads/va_beschwerdeformular.pdf"
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "One-page official complaint form PDF linked from the Volksanwaltschaft complaint guide."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Full one-page form text extracted; the document identifies the authority, subject and complaint narrative fields."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "The official parent page links to this retained PDF; no additional attachment is required to use the form."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Official administrative form; not primary legislation."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Text extraction reviewed against page count, form identity, headings, and the stated family-member fields; retained native PDF is the visual authority."
+      }
+    },
+    "at-vwgh-ra-2015-09-0137": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "RIS VwGH record identifies Ra 2015/09/0137 and decision date 2016-04-26; exact publisher Dokumentnummer retained."
+        },
+        "current_legal_version": {
+          "status": "not_applicable",
+          "reason": "This is a fixed historical decision, administrative form, or live procedural route rather than a versioned legal instrument; its official publisher record or current linked route was checked on 2026-10-19."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Full 23110-character decision body extracted from `div.contentBlock`; case number/date and operative outcome checked. The RIS screen-reader-only duplicate was excluded."
+        },
+        "attachments_review": {
+          "status": "not_applicable",
+          "reason": "No additional source attachment is part of the reviewed decision, form, or bounded interactive route record."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Official VwGH judicial decision; classification and role checked against its case number and operative part."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Manual semantic review of the complete extracted body against the operative part and key paragraphs; recorded outcome, posture, holding, applicability, and limits in the case register."
+      }
+    },
+    "at-vwgh-ra-2019-22-0177": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "RIS VwGH record identifies Ra 2019/22/0177 and decision date 2020-07-08; exact publisher Dokumentnummer retained."
+        },
+        "current_legal_version": {
+          "status": "not_applicable",
+          "reason": "This is a fixed historical decision, administrative form, or live procedural route rather than a versioned legal instrument; its official publisher record or current linked route was checked on 2026-10-19."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Full 12862-character decision body extracted from `div.contentBlock`; case number/date and operative outcome checked. The RIS screen-reader-only duplicate was excluded."
+        },
+        "attachments_review": {
+          "status": "not_applicable",
+          "reason": "No additional source attachment is part of the reviewed decision, form, or bounded interactive route record."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Official VwGH judicial decision; classification and role checked against its case number and operative part."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Manual semantic review of the complete extracted body against the operative part and key paragraphs; recorded outcome, posture, holding, applicability, and limits in the case register."
+      }
+    },
+    "at-vwgh-ra-2022-22-0149": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official capture captures/2026-10-19/at-vwgh-ra-2022-22-0149-150c84e00300c36a55102e3088f114f946daff130acd48211149f1c342f2e721.html; final publisher host ris.bka.gv.at; page identity matches the manifest."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "Immutable official RIS decision; date, court, case number and Dokumentnummer match."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Official RIS case text replay checked against court, decision date, case number and operative result; the holding and limits are indexed in case-review-register.json."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Publisher link list checked; no material incorporated attachment was needed to interpret this source."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as official_case_law; topic relationship is recorded in the manifest."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Official RIS case text replay checked against court, decision date, case number and operative result; the holding and limits are indexed in case-review-register.json."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-vwgh-ra-2022-22-0149-150c84e00300c36a55102e3088f114f946daff130acd48211149f1c342f2e721.html"
+    },
+    "at-vwgh-ro-2020-09-0011": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "RIS VwGH record identifies Ro 2020/09/0011 and decision date 2020-12-22; exact publisher Dokumentnummer retained."
+        },
+        "current_legal_version": {
+          "status": "not_applicable",
+          "reason": "This is a fixed historical decision, administrative form, or live procedural route rather than a versioned legal instrument; its official publisher record or current linked route was checked on 2026-10-19."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Full 31173-character decision body extracted from `div.contentBlock`; case number/date and operative outcome checked. The RIS screen-reader-only duplicate was excluded."
+        },
+        "attachments_review": {
+          "status": "not_applicable",
+          "reason": "No additional source attachment is part of the reviewed decision, form, or bounded interactive route record."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Official VwGH judicial decision; classification and role checked against its case number and operative part."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Manual semantic review of the complete extracted body against the operative part and key paragraphs; recorded outcome, posture, holding, applicability, and limits in the case register."
+      }
+    },
+    "at-vwgh-ro-2020-22-0020": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "RIS VwGH record identifies Ro 2020/22/0020 and decision date 2021-12-20; exact publisher Dokumentnummer retained."
+        },
+        "current_legal_version": {
+          "status": "not_applicable",
+          "reason": "This is a fixed historical decision, administrative form, or live procedural route rather than a versioned legal instrument; its official publisher record or current linked route was checked on 2026-10-19."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Full 33849-character decision body extracted from `div.contentBlock`; case number/date and operative outcome checked. The RIS screen-reader-only duplicate was excluded."
+        },
+        "attachments_review": {
+          "status": "not_applicable",
+          "reason": "No additional source attachment is part of the reviewed decision, form, or bounded interactive route record."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Official VwGH judicial decision; classification and role checked against its case number and operative part."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Manual semantic review of the complete extracted body against the operative part and key paragraphs; recorded outcome, posture, holding, applicability, and limits in the case register."
+      }
+    },
+    "at-vwgh-ro-2021-22-0012": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "RIS VwGH record identifies Ro 2021/22/0012 and decision date 2021-11-18; exact publisher Dokumentnummer retained."
+        },
+        "current_legal_version": {
+          "status": "not_applicable",
+          "reason": "This is a fixed historical decision, administrative form, or live procedural route rather than a versioned legal instrument; its official publisher record or current linked route was checked on 2026-10-19."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Full 15301-character decision body extracted from `div.contentBlock`; case number/date and operative outcome checked. The RIS screen-reader-only duplicate was excluded."
+        },
+        "attachments_review": {
+          "status": "not_applicable",
+          "reason": "No additional source attachment is part of the reviewed decision, form, or bounded interactive route record."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Official VwGH judicial decision; classification and role checked against its case number and operative part."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Manual semantic review of the complete extracted body against the operative part and key paragraphs; recorded outcome, posture, holding, applicability, and limits in the case register."
+      }
+    },
+    "at-vwgvg-7": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official capture captures/2026-10-19/at-vwgvg-7-5743a9a0888b75c676a045b0144fda14441efd8ec6d105b480eaca28d9896abf.html; final publisher host www.ris.bka.gv.at; page identity matches the manifest."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS current-section record captured 19 October 2026; statute number and requested paragraph match the publisher identity."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "RIS contentBlock replay checked against the requested statute/section heading, paragraph/list boundaries and operative text in the saved current-section capture."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Publisher link list checked; no material incorporated attachment was needed to interpret this source."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as national_legislation; topic relationship is recorded in the manifest."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "RIS contentBlock replay checked against the requested statute/section heading, paragraph/list boundaries and operative text in the saved current-section capture."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-vwgvg-7-5743a9a0888b75c676a045b0144fda14441efd8ec6d105b480eaca28d9896abf.html"
+    },
+    "at-vwgvg-8": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official capture captures/2026-10-19/at-vwgvg-8-e32d663454ab3ee90461e81d879b0bf3f95b6a857b5e10868b2b4579a55f94f5.html; final publisher host www.ris.bka.gv.at; page identity matches the manifest."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS current-section record captured 19 October 2026; statute number and requested paragraph match the publisher identity."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "RIS contentBlock replay checked against the requested statute/section heading, paragraph/list boundaries and operative text in the saved current-section capture."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Publisher link list checked; no material incorporated attachment was needed to interpret this source."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as national_legislation; topic relationship is recorded in the manifest."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "RIS contentBlock replay checked against the requested statute/section heading, paragraph/list boundaries and operative text in the saved current-section capture."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-vwgvg-8-e32d663454ab3ee90461e81d879b0bf3f95b6a857b5e10868b2b4579a55f94f5.html"
+    },
+    "at-fpg-11": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "HTTPS RIS source; URL statute/paragraph parameters match 20004241/§ 11; page title: RIS - Fremdenpolizeigesetz 2005 § 11 - Bundesrecht konsolidiert, tagesaktuelle Fassung."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS page title identifies the current consolidated version; retrieved 2026-10-19."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Deterministic ris-contentblock-v1 replay of the complete RIS div.contentBlock; expected section heading present; 3882 extracted characters."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Reviewed 1 linked PDF target(s): RIS current-section PDFs are parallel renderings; BGBlPdf targets are official gazette promulgations, not incorporated forms or annexes. Current consolidated HTML remains the maintained text. Links: ['https://www.ris.bka.gv.at/Dokumente/Bundesnormen/NOR40205418/NOR40205418.pdf']"
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Official RIS consolidated legislation; classified as national_legislation for Fremdenpolizeigesetz 2005 § 11 — visa procedure before Austrian representation authorities."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Replayed saved RIS div.contentBlock with ris-contentblock-v1; verified statute title, § 11, and complete nonempty output."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-fpg-11-5ef013e05577a628b27fcdbdba1f9699764f39950335a81e0f33c09df73612ed.html"
+    },
+    "at-fpg-11a": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "HTTPS RIS source; URL statute/paragraph parameters match 20004241/§ 11a; page title: RIS - Fremdenpolizeigesetz 2005 § 11a - Bundesrecht konsolidiert, tagesaktuelle Fassung."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS page title identifies the current consolidated version; retrieved 2026-10-19."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Deterministic ris-contentblock-v1 replay of the complete RIS div.contentBlock; expected section heading present; 847 extracted characters."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Reviewed 1 linked PDF target(s): RIS current-section PDFs are parallel renderings; BGBlPdf targets are official gazette promulgations, not incorporated forms or annexes. Current consolidated HTML remains the maintained text. Links: ['https://www.ris.bka.gv.at/Dokumente/Bundesnormen/NOR40149010/NOR40149010.pdf']"
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Official RIS consolidated legislation; classified as national_legislation for Fremdenpolizeigesetz 2005 § 11a — complaints against visa decisions by Austrian representation authorities."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Replayed saved RIS div.contentBlock with ris-contentblock-v1; verified statute title, § 11a, and complete nonempty output."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-fpg-11a-ebb8c4a9b0b8b0c7d34f9c766f219289f342b09788f84354f050ea74e2ca0d64.html"
+    },
+    "at-fpg-11b": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "HTTPS RIS source; URL statute/paragraph parameters match 20004241/§ 11b; page title: RIS - Fremdenpolizeigesetz 2005 § 11b - Bundesrecht konsolidiert, tagesaktuelle Fassung."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS page title identifies the current consolidated version; retrieved 2026-10-19."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Deterministic ris-contentblock-v1 replay of the complete RIS div.contentBlock; expected section heading present; 1113 extracted characters."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Reviewed 1 linked PDF target(s): RIS current-section PDFs are parallel renderings; BGBlPdf targets are official gazette promulgations, not incorporated forms or annexes. Current consolidated HTML remains the maintained text. Links: ['https://www.ris.bka.gv.at/Dokumente/Bundesnormen/NOR40205419/NOR40205419.pdf']"
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Official RIS consolidated legislation; classified as national_legislation for Fremdenpolizeigesetz 2005 § 11b — visa procedures before Land police directorates."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Replayed saved RIS div.contentBlock with ris-contentblock-v1; verified statute title, § 11b, and complete nonempty output."
+      },
+      "raw_capture_evidence": "captures/2026-10-19/at-fpg-11b-3b1a02386b184cffb2f4f44c87080c01ff29a05940e342ca0e297bc7cc26b89a.html"
+    },
+    "at-vwgh-ra-2023-22-0090-0091": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "RIS VwGH record identifies Ra 2023/22/0090–0091 and decision date 2026-07-27; exact publisher Dokumentnummer retained."
+        },
+        "current_legal_version": {
+          "status": "not_applicable",
+          "reason": "This is a fixed historical decision, administrative form, or live procedural route rather than a versioned legal instrument; its official publisher record or current linked route was checked on 2026-10-19."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Full 10883-character decision body extracted from `div.contentBlock`; case number/date and operative outcome checked. The RIS screen-reader-only duplicate was excluded."
+        },
+        "attachments_review": {
+          "status": "not_applicable",
+          "reason": "No additional source attachment is part of the reviewed decision, form, or bounded interactive route record."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Official VwGH judicial decision; classification and role checked against its case number and operative part."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Manual semantic review of the complete extracted body against the operative part and key paragraphs; recorded outcome, posture, holding, applicability, and limits in the case register."
+      }
+    },
+    "at-bmi-eea-documentation-form": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official BMI English page links to this native PDF; direct publisher URL verified on 2026-10-19: https://www.bmi.gv.at/312_en/60a/files/a/239-2026-antragsformular-a-dokumentationen-ewr-buerger-schweizer-familienangehoerige-en-v20260903-bf.pdf"
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "Official English form A; checkbox 6 is residence card for relatives of EEA nationals and checkbox 8 is permanent residence card."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Complete PDF text extraction retained in `source-library/austria/documents/forms/at-bmi-eea-documentation-form.md`; form identity and all page headings were reviewed."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Official BMI application page links to the corresponding form/explanation pair; both PDFs are separately retained and reviewed."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Official national application form or its accompanying official administrative guidance; not a statute."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Manual review of complete extracted text against the PDF page count and family-member documentation sections; the native PDF remains available for layout checks."
+      }
+    },
+    "at-bmi-eea-documentation-form-explanation": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official BMI English page links to this native PDF; direct publisher URL verified on 2026-10-19: https://www.bmi.gv.at/312_en/60a/files/a/a-anmeldebescheinigung-aufenthaltskarte-lichtbildausweis-daueraufenthalt-erklaerung-en-bf-20261001.pdf"
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "Official English explanation PDF dated 1 October 2026; relevant evidence and representative-information sections extracted for review."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Complete PDF text extraction retained in `source-library/austria/documents/forms/at-bmi-eea-documentation-form-explanation.md`; form identity and all page headings were reviewed."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "Official BMI application page links to the corresponding form/explanation pair; both PDFs are separately retained and reviewed."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Official national application form or its accompanying official administrative guidance; not a statute."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Manual review of complete extracted text against the PDF page count and family-member documentation sections; the native PDF remains available for layout checks."
+      }
+    }
+  },
+  "required_checks_scope": "These fields are checked only when accepting a retained local artifact. They do not gate a human-reviewed official link. Version review means recording the publisher date/cutoff and checking a known material later change, not reconstructing every historical amendment. Extraction and attachments are reviewed only to the extent the retained artifact and intended use require.",
+  "required_check_interpretation": {
+    "publisher_identity": "Confirm the source and responsible publisher.",
+    "current_legal_version": "Record the displayed current version or the dated cutoff of the source; do not claim currentness beyond it. Check only known later changes that may affect the issue.",
+    "extraction_completeness": "Check the passages used against the original; compare more broadly only for a lossy extraction or when relying on the whole converted text.",
+    "attachments_review": "Review only an attachment incorporated into or relied on for the question; otherwise record not applicable.",
+    "legal_classification": "Label the source type and role. This does not establish legal sufficiency or topic coverage."
+  }
+}

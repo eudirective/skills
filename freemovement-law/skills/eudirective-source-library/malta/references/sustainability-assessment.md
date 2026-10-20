@@ -2,7 +2,7 @@
 
 ## Scope and results
 
-The 48-record inventory covers legislation and reuse, EU/EEA/Swiss free movement, third-country family routes, procedure and appeals, visas and missions, forms, data protection, oversight, legal aid, civil-status evidence and case-law discovery. The bounded capture pass retrieved and converted 47 records as unaccepted review candidates; the Judiciary portal root returned HTTP 403. Twenty-one responses differed from the earlier pass and revised Markdown remains staged under temp/malta/pending/. No source is accepted.
+The 48-record inventory covers legislation and reuse, EU/EEA/Swiss free movement, third-country family routes, procedure and appeals, visas and missions, forms, data protection, oversight, legal aid, civil-status evidence and case-law discovery. The bounded capture pass retrieved and converted 47 records as unaccepted review candidates; the Judiciary portal root returned HTTP 403. Twenty-one responses differed from the earlier pass and revised Markdown remains staged under temp/malta/pending/. No locally stored artifact is accepted.
 
 All 44 conversions pass offline verification: exact raw-source hashes, preserved PDF hashes and deterministic Markdown replay. Original PDFs are retained under temp/. PDF extraction used pinned pypdf 6.21.1; this does not validate signatures or OCR image-only pages.
 
@@ -40,7 +40,7 @@ Privacy, Ombudsman and legal-aid pages were captured, but decision collection sc
 
 ## Sustainability judgment
 
-- Known legislation ELI-to-PDF retrieval: sustainable with limits (medium confidence) for bounded known-record retrieval. Official ELI PDF routes are repeatable, and captures replay offline. Current-version and amendment checks and content-specific reuse review remain required.
+- Known legislation ELI-to-PDF retrieval: sustainable with limits (medium confidence) for bounded known-record retrieval. Official ELI links can be reviewed directly for ordinary research. Record the displayed version and publisher caveat; capture, amendment signals, and reuse checks apply when retaining copies or running recurring monitoring.
 - Official HTML guidance and forms: fragile (medium-low confidence). Captures replay, but 21 responses changed between passes; pinned child URLs can disappear, and page conversion does not discover parent-link, attachment or language changes.
 - Visa attachments: fragile (low confidence). Both the old Annex PDF and the FAQ-linked representation list were blocked or missing. The replacements are dated; the parent-page link and latest-version signal remain unresolved.
 - Court decisions: not currently sustainable as a public full-text feed (medium confidence). The direct portal request was blocked, and official guidance limits online case access; no public completeness/update feed was identified.
@@ -48,7 +48,7 @@ Privacy, Ombudsman and legal-aid pages were captured, but decision collection sc
 
 ## Actions before trust promotion
 
-1. Refresh every legal ELI record for current status, version date, authentic Gazette publication, amendments, rectifications and annexes.
+1. For ordinary research, use the latest government-published ELI text and record its displayed version date and limits. Check an individual Gazette publication, amendment, rectification or annex only when a known issue could materially affect the question or when a retained copy/updater needs that evidence; a full chain review is not a default acceptance gate.
 2. Confirm portal reuse notices and whether each law, page, PDF, image and database item is covered by the applicable Malta PSI Act or another licence.
 3. Review the 21 changed HTML captures, compare visible dates and linked files, and preserve any new changes pending review.
 4. Continue checking the three repaired Identità routes from their parent pages and preserve the old 404 URLs as audit evidence.

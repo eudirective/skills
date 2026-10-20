@@ -18,6 +18,11 @@ Installed copies contain the corpus version present when they were packaged;
 they do not synchronize source changes after installation. For a legal claim
 that depends on currentness, check the responsible official publisher directly
 and report the publication/version date checked.
+For ordinary research, a human-reviewed official link is enough within its
+reviewed scope. Government consolidations are preferred; if unavailable, use
+the closest government-published version and state its limits. Captures,
+conversions, APIs, hashes, replay, and scheduled updates are optional unless
+keeping or monitoring local copies is actually needed.
 
 ## Evidence-gated legal research
 

@@ -24,19 +24,17 @@ The change detector retains exact source hashes and ignores only observed transp
 
 ## Sustainability risks
 
-1. **Authenticity:** Gesetze.li's current consolidated text is a useful discovery and comparison source, while signed electronic LGBl PDF/A is the stated authentic publication from 2013 onward. The rule currently retrieves the consolidation but does not validate Gazette signatures or amendment chains.
+1. **Legal-text version:** Use the latest Gesetze.li government-published consolidation as the working text and retain its informational/no-legal-effect notice and displayed edition. Consult signed electronic LGBl PDF/A for a specific conflict, commencement question, or when authentic promulgation itself matters; routine review does not require signature validation or reconstruction of the amendment chain.
 2. **Reuse authorization:** The 2026 Information Reuse Act and EEA Open Data implementation need source-specific interpretation. No blanket permission for systematic copying, storage, transformation, or scheduled refresh has been established.
 3. **Publisher blocks:** The LLV host returned HTTP 403 across multiple candidate routes. The failed requests are recorded; the rule does not emulate a browser challenge or use an unapproved route. Obtain a publisher-supported route or keep those sources manual.
 4. **Text fidelity:** The current HTML and PDF extractors are deterministic but not legally validated against representative complex statutes. PDFs retain page boundaries, but tables, forms, links, annotations, layout, and attachments need separate review.
 5. **Partial indexes:** The case-law portal is selected and exposes no individual decision through the captured shell. An empty search cannot be treated as proof that no relevant judgment exists.
 6. **Jurisdiction boundaries:** PFZG, Liechtenstein's EEA-specific solution, the Swiss treaty route, third-country residence rules, and the EWR incorporation chain must remain distinct source identities.
 
-## Required work before unattended use
+## Optional work for recurring local monitoring
 
-- Reconcile current Information Reuse Act, Gazette publication rules, Gesetze.li terms, and dataset-specific permissions; document whether persistent automated retrieval and conversion are permitted.
-- Reconcile a small set of PFZG/PFZV, AuG/ZAV, VEV, and LVG consolidated records to signed LGBl publications and effective dates. Validate PDF signatures and test page/section completeness.
-- Ask the publisher for a supported route for LLV pages that return 403; otherwise document a periodic manual capture path.
-+ Compare PDF page text and representative HTML conversions independently against the official sources; validate signatures where present and review tables, footnotes, forms and attachments. Keep e-services and the case-law search interface as discovery tools unless complete text records are individually identified.
-- Run repeated refreshes across actual source changes before treating the comparison rules as stable. Continue to stage all changes for human review.
+Ordinary reference use does not depend on this capture pipeline. Use the latest government-published consolidation as the working text, label it informational, and check a particular signed Gazette item only when a material date, amendment, correction, or publication question affects the issue. Do not reconstruct the full Gazette history.
+
+If recurring monitoring or local text retention is later needed, then check the applicable reuse terms, obtain a publisher-supported route for blocked pages, and validate representative conversions and relevant attachments. PDF signature validation and repeated change-cycle comparisons belong to that automated or retained-copy workflow, not to every legal-source review.
 
 All current outputs remain unaccepted review candidates. The rule must not be presented as a complete or legally authoritative Liechtenstein source pack.

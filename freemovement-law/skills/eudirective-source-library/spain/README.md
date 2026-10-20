@@ -1,6 +1,6 @@
 # Spain national source pack
 
-**Status (19 October 2026):** 49 unique candidate records across the original national inventory and the 46-record monitor register; 15 BOE law texts and 30 broad monitor pages converted as review candidates; 0 accepted sources. The two inventories overlap on four records. Candidate records include laws, guidance, forms, publisher documentation, oversight and court-search sources; a register entry is not necessarily a full text. The converted candidate files are not admitted to the trusted source corpus, which is why the accepted Spanish-law library remains empty.
+**Status (19 October 2026):** 49 unique candidate records across the original national inventory and the 46-record monitor register; 15 BOE law texts and 30 broad monitor pages converted as review candidates; no local copies accepted. The two inventories overlap on four records. Candidate records include laws, guidance, forms, publisher documentation, oversight and court-search sources; a register entry is not necessarily a full text. The converted candidate files are not admitted to the trusted source corpus, which is why the accepted Spanish-law library remains empty. Human-reviewed official links may still be used within their checked scope.
 
 - [Original source list](references/source-list.md)
 - [Original candidate manifest](references/candidate-manifest.json)

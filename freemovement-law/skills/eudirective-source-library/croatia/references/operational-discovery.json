@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0.0",
+  "jurisdiction": "HR",
+  "as_of": "2026-10-19",
+  "status": "incomplete",
+  "completion_policy": "Record scope, source, search date, exact query, items discovered, verified/visited count and each item’s disposition. “Not found” requires a recorded bounded search and must not be converted into proof of non-existence.",
+  "tracks": [
+    {
+      "id": "consular_missions",
+      "discovery_surface": "https://mvep.gov.hr/diplomatske-misije-i-konzularni-uredi/veleposlanstva-rh-u-svijetu/22966",
+      "status": "directory_not_enumerated",
+      "required_actions": [
+        "enumerate all current Croatian missions from live directory",
+        "map each consular jurisdiction to visa submission mission",
+        "check mission-specific family-member visa instructions and local language",
+        "check appointment route, checklist, fee, submission channel, processing/outsourcing provider",
+        "record dated page/version evidence and changes; never infer from one mission sample"
+      ]
+    },
+    {
+      "id": "regional_police_authorities",
+      "discovery_surface": "https://mup.gov.hr/",
+      "status": "authority_set_not_enumerated",
+      "required_actions": [
+        "enumerate current police administrations and their territorial jurisdiction from MUP official pages",
+        "map EEA residence registration/card service and competent location for each territory",
+        "check appointments, accepted submission channels, local forms/checklists and evidence practices",
+        "record publication date and compare local guidance with EEA Act/regulation",
+        "resolve whether any practice is national-only or varies locally"
+      ]
+    },
+    {
+      "id": "case_law",
+      "discovery_surface": "https://odluke.sudovi.hr/",
+      "status": "portal_and_five_court_collections_mapped_search_plan_not_run",
+      "required_actions": [
+        "run the 40 planned court/topic queries in case-law-discovery.json using portal filters",
+        "record exact query, court, date, result count, every screened result, duplicates and exclusion reasons",
+        "read every relevant decision and record holding, outcome, procedural posture, provisions and applicability",
+        "repeat searches and compare decision IDs on the maintenance schedule"
+      ],
+      "latest_inspection": {
+        "date": "2026-10-19",
+        "portal_total_displayed": 1275907,
+        "system_update_date": "2026-10-19",
+        "query_run": false,
+        "evidence": "https://odluke.sudovi.hr/"
+      }
+    },
+    {
+      "id": "legislative_and_eu_dependencies",
+      "discovery_surface": "https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652",
+      "status": "partial_current_index_check",
+      "required_actions": [
+        "check MUP and MVEP parent indexes for a newer government-published consolidated edition and any specifically identified material update on each review",
+        "track EEA Act/regulation and all material EU references separately",
+        "record legal effects of invalidity, replacement, transition and commencement dates",
+        "use the official parent index to identify the latest edition; consult individual Gazette acts only for a specific gap or commencement question"
+      ]
+    },
+    {
+      "id": "forms_and_linked_materials",
+      "discovery_surface": "https://mup.gov.hr/obrasci-281565/281565",
+      "status": "parent_pages_identified_visual_and_link_review_open",
+      "required_actions": [
+        "rediscover every form and attachment from current parent page",
+        "inspect native PDFs visually and compare purpose/version against rule",
+        "record dead/replaced links and statutory source authority",
+        "resolve current URLs from MUP forms parent and reconcile its amendment citation with the MUP legislation index",
+        "inspect Form 4b and 11b image annexes and verify post-3 August 2026 card format and issuance"
+      ],
+      "additional_discovery_surfaces": [
+        "https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/boravak-i-rad-drzavljana-drzava-clanica-egp-a-i-clanova-njihovih-obitelji/282191",
+        "https://gov.hr/en/prijava-boravka-drzavljani-egp-a/1208",
+        "https://narodne-novine.nn.hr/clanci/sluzbeni/2021_07_86_1596.html"
+      ],
+      "observations": [
+        "MUP live forms index lists Forms 1b, 2b, 3b and 6b but cites an EEA regulation chain without NN 155/22, which appears in the MUP legislation index.",
+        "NN 86/21 includes Forms 4b and 11b as residence-card specimens; these are distinct from Form 2b. Both specimens and currently issued cards remain visually unreviewed."
+      ]
+    }
+  ]
+}

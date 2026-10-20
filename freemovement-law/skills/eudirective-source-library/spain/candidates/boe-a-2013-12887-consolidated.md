@@ -10,7 +10,7 @@
 - BOE text effective date in metadata: 20141210
 - Conversion: BOE XML, latest returned version per text block, converted to Markdown
 
-> **Informational consolidated text only.** It is not an official authentic publication. Verify legal effect against the relevant BOE Gazette publication before legal reliance.
+> **Informational consolidated text only.** This government-published BOE consolidation is a usable dated working text within its stated scope, but it is not the Gazette promulgation record. Preserve the BOE label and cutoff. Check a specific Gazette item only when a known later amendment, commencement issue, or question about legal effect is material.
 >
 > **Attribution:** Based on data from the Agencia Estatal Boletín Oficial del Estado.
 
