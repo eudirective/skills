@@ -12,14 +12,11 @@ issue references and signal IDs; the existing gate checks required routed C27
 checks and keeps source/fact gaps open while accepting older receipts without
 the new field. Synthetic scripts remain restricted to abstract fixtures, and
 the route gate is still not host-integrated. The enclosing plugin advances
-from `0.52.2` to `0.53.0`. The private core regression runner passed 29/34
-scripts locally; five remained unavailable or failed on existing constraints:
-Node subprocess permission, missing local PyMuPDF for three document tests,
-and absent Sweden module source notes for the C17 remedy test. The refreshed
-dashboard-format test passed 6/6, issue selection passed 15/15, route-gate
-tests passed 16/16, evaluation aggregation passed 8/8, and direct version
-verification passed. No fresh target-model consultations were run, so
-consultation behavior is not verified.
+from `0.52.2` to `0.53.0`.
+
+Local verification against candidate source commit `f7ca9f9a66f43dfbc2ea9873bad72f45d3996c16` passed version-manifest verification, Python compilation, the C27 checklist, issue-selection tests (15/15), route-gate tests (16/16), evaluation-aggregator tests (8/8), and dashboard/consultation-coverage checks. The private all-suites regression runner passed 31/36 scripts. Its five local failures were: a nested Node process denied with `EPERM`; three PDF-related tests without locally installed PyMuPDF; and the C17 remedy test, which requires Sweden module notes absent from the selected package. These failures and their exact output are recorded in the private maintenance evidence. No remote CI run was made.
+
+All 36 consultation-assurance records remain `not_executed`; there are no actual baseline or candidate model responses, independent grades, or behavioral metrics. Therefore this release is **implementation verified; consultation behavior not verified**. See `maintenance/consultation-quality/candidate-verification.md` for the requirement status and evidence boundaries.
 
 ## Plugin v0.51.3 / core v0.50.3 board-style execution summary
 
