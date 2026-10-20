@@ -1,11 +1,12 @@
 {
   "jurisdiction": "cyprus",
-  "as_of_date": "2026-10-19",
-  "method": "Ordinary allowlisted HTTPS GET only; no authentication, challenge bypass or form submission. Exact response bytes are hashed; changes stage for review.",
+  "as_of_date": "2026-10-20",
+  "method": "Ordinary allowlisted HTTPS GET only; no authentication, challenge bypass or form submission. Captured response bytes are stored under source-library/cyprus/captures/raw and hashed. Changes stage for review. PDF conversion excludes page markers and standalone page numbers and requires at least two alphabetic tokens; CyLaw uses div.main-content and excludes print controls, sidebars and footers. The Law 7(I)/2007 Gazette capture also has a saved OCR derivative under captures/derived; its candidate Markdown replays with the pinned pack-specific pypdf converter and remains unaccepted pending exhaustive semantic text review. Official OLC and GPO search-indexed routes may be recorded as leads before their response bytes are captured; indexed text is not captured legal text.",
   "request_policy": {
     "timeout_seconds": 25,
-    "max_response_bytes": 25165824,
-    "delay_seconds": 1.0
+    "max_response_bytes": 33554432,
+    "delay_seconds": 1.0,
+    "max_response_mib": 32
   },
   "records": [
     {
@@ -17,14 +18,37 @@
       "source_content_type": "text/html",
       "source_bytes": 31004,
       "source_sha256": "e4420ea71167de0c8b8d04bf5e30da19bfeee9599272f8d92b9cba5116c35309",
-      "raw_path": "temp/cyprus/raw/cy-nlex-e4420ea71167de0c8b8d04bf5e30da19bfeee9599272f8d92b9cba5116c35309.html",
+      "raw_path": "source-library/cyprus/captures/raw/cy-nlex-e4420ea71167de0c8b8d04bf5e30da19bfeee9599272f8d92b9cba5116c35309.html",
       "accepted": false,
-      "candidate_text_path": "temp/cyprus/pending/cy-nlex-e4420ea71167de0c.md",
+      "candidate_text_path": "source-library/cyprus/candidates/discovery/cy-nlex.md",
       "converted_sha256": "f323664c2a2ba5efe605444de39cf440540389e8d503f039e0e7006e961bda40",
       "converted_bytes": 1423,
       "content_selector": "body",
-      "retrieval_status": "changed_review_candidate",
-      "review_state": "changed_pending_review"
+      "retrieval_status": "converted_review_candidate",
+      "review_state": "review_candidate",
+      "retrieval_note": "The 5c466878 and f2c19fb0 historical captures and current e4420ea7 capture have identical captured-source text. The tracked current candidate is byte-identical to the e4420ea7 pending conversion. The older committed candidate and f2c19fb0 pending conversion differ from current only in capture metadata; all three raw responses are retained under captures/raw.",
+      "historical_captures": [
+        {
+          "raw_path": "source-library/cyprus/captures/raw/cy-nlex-5c46687885ab3f305bbc0e36f9444b7056a8a9e1d90d3ac47486a405795cd79d.html",
+          "source_sha256": "5c46687885ab3f305bbc0e36f9444b7056a8a9e1d90d3ac47486a405795cd79d",
+          "converted_sha256": "42ba4c82baa682395842da9d604a66cde653d3cf910af7e835c02f9210014834",
+          "note": "Earlier N-Lex response underlying the prior committed candidate; its captured-source text matches the current candidate exactly.",
+          "source_bytes": 31004
+        },
+        {
+          "raw_path": "source-library/cyprus/captures/raw/cy-nlex-f2c19fb02552d9cb6f2b3a2109b6ca2af7f4469a178dda39a4cf74e2ba1f2d0e.html",
+          "source_sha256": "f2c19fb02552d9cb6f2b3a2109b6ca2af7f4469a178dda39a4cf74e2ba1f2d0e",
+          "converted_sha256": "2e5b4b8268ce8359fbbbf4ae30bfa1308746d5187deb83be376aa551588d1388",
+          "note": "Additional same-day N-Lex response and pending conversion retained as history; its captured-source text matches the current candidate exactly.",
+          "source_bytes": 31004
+        }
+      ],
+      "conversion_reconciliation": {
+        "current_tracked_candidate_sha256": "f323664c2a2ba5efe605444de39cf440540389e8d503f039e0e7006e961bda40",
+        "current_pending_candidate_matches_tracked_byte_for_byte": true,
+        "historical_capture_text_matches_current_candidate": true,
+        "differences_in_historical_full_markdown": "Retrieved timestamp and source-response SHA-256 metadata only"
+      }
     },
     {
       "candidate_id": "cy-gpo-main",
@@ -35,7 +59,7 @@
       "source_content_type": "text/html",
       "source_bytes": 13366,
       "source_sha256": "aa20a5ea29d68587951a95ca06c2fc094e3231b772f6484716f8bc1d677cfbbb",
-      "raw_path": "temp/cyprus/raw/cy-gpo-main-aa20a5ea29d68587951a95ca06c2fc094e3231b772f6484716f8bc1d677cfbbb.html",
+      "raw_path": "source-library/cyprus/captures/raw/cy-gpo-main-aa20a5ea29d68587951a95ca06c2fc094e3231b772f6484716f8bc1d677cfbbb.html",
       "accepted": false,
       "retrieval_status": "discovery_surface_no_text",
       "retrieval_note": "Public HTML response contained no sufficiently long extractable source body."
@@ -49,10 +73,21 @@
       "source_content_type": "text/html",
       "source_bytes": 37665,
       "source_sha256": "05748030382ba3a7beccea8dececacb2cf9b85d918f78a8e8cae10ef6db9e435",
-      "raw_path": "temp/cyprus/raw/cy-gpo-archive-05748030382ba3a7beccea8dececacb2cf9b85d918f78a8e8cae10ef6db9e435.html",
+      "raw_path": "source-library/cyprus/captures/raw/cy-gpo-archive-05748030382ba3a7beccea8dececacb2cf9b85d918f78a8e8cae10ef6db9e435.html",
       "accepted": false,
       "retrieval_status": "discovery_surface_no_text",
-      "retrieval_note": "Public HTML response contained no sufficiently long extractable source body."
+      "retrieval_note": "Public HTML response contained no sufficiently long extractable source body.",
+      "route_checks": [
+        {
+          "checked_at": "2026-10-20",
+          "method": "ordinary TLS-validated HTTPS GET",
+          "http_status": 200,
+          "source_content_type": "text/html",
+          "source_bytes": 37665,
+          "source_sha256": "05748030382ba3a7beccea8dececacb2cf9b85d918f78a8e8cae10ef6db9e435",
+          "result": "Response is byte-identical to the tracked discovery-page capture; it remains a discovery surface without the requested PDF content."
+        }
+      ]
     },
     {
       "candidate_id": "cy-gov-gazette-service",
@@ -65,15 +100,63 @@
       "candidate_id": "cy-law-commissioner-index",
       "source_url": "https://www.gov.cy/officelawcommissioner/en/documents/competences-of-the-law-commissioner/translations-consolidations/",
       "retrieval_status": "retrieval_or_conversion_error",
-      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
-      "accepted": false
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden Latest ordinary TLS GET on 20 October 2026 returned HTTP 403; no access-control bypass attempted.",
+      "accepted": false,
+      "canonical_url_after_review": "https://www.gov.cy/officelawcommissioner/documents/armodiotites-epitropoy/translations-consolidations/",
+      "route_checks": [
+        {
+          "checked_at": "2026-10-20",
+          "method": "ordinary TLS-validated HTTPS GET",
+          "http_status": 403,
+          "result": "The already-listed official Gov.cy OLC index returned HTTP 403; no access-control bypass attempted."
+        }
+      ]
     },
     {
       "candidate_id": "cy-free-movement-consolidation",
       "source_url": "https://www.olc.gov.cy/olc/olc.nsf/DB4EF1023FE5BB54C2258B2D001FE738/%24file/The%20right%20of%20citizens.pdf",
       "retrieval_status": "retrieval_or_conversion_error",
-      "retrieval_note": "HTTPError: HTTP Error 404: Not Found",
-      "accepted": false
+      "retrieval_note": "Legacy OLC route previously returned HTTP 404 locally and HTTP 500 in browser. On 20 October 2026, an ordinary shell HTTPS GET could not resolve www.olc.gov.cy (curl exit 6; HTTP 000). The separate gov.cy media route remains unverified; browser open returned HTTP 403 and ordinary local resolution failed for www.gov.cy. No response bytes or hash. Latest ordinary TLS checks on 2026-10-20: OLC PDF locator HTTP 404; already-recorded Gov.cy media alternate HTTP 403. No bytes captured; no access-control bypass attempted.",
+      "accepted": false,
+      "alternative_attempts": [
+        {
+          "url": "https://www.gov.cy/media/sites/287/2026/06/L_7_I_2007.pdf",
+          "discovery_source": "NextSpring independent source monitor; direct target not confirmed through official OLC hyperlink.",
+          "browser_result": "HTTP 403",
+          "local_result": "DNS resolution failure for www.gov.cy",
+          "captured": false,
+          "accepted": false
+        },
+        {
+          "url": "https://www.gov.cy/media/sites/287/2026/06/L_7_I_2007.pdf",
+          "checked_at": "2026-10-20",
+          "method": "ordinary TLS-validated HTTPS GET",
+          "http_status": 403,
+          "result": "The already-recorded Gov.cy media alternate returns HTTP 403; no challenge or authentication bypass attempted."
+        }
+      ],
+      "attempts": [
+        {
+          "url": "https://www.olc.gov.cy/olc/olc.nsf/DB4EF1023FE5BB54C2258B2D001FE738/%24file/The%20right%20of%20citizens.pdf",
+          "retrieved_at": "2026-10-19T22:52:12Z",
+          "method": "ordinary HTTPS GET; no redirects or authentication",
+          "result": "DNS resolution failed for www.olc.gov.cy",
+          "curl_exit_code": 6,
+          "http_status": 0,
+          "content_type": null,
+          "bytes": 0,
+          "captured": false
+        }
+      ],
+      "route_checks": [
+        {
+          "url": "https://www.olc.gov.cy/olc/olc.nsf/DB4EF1023FE5BB54C2258B2D001FE738/%24file/The%20right%20of%20citizens.pdf",
+          "checked_at": "2026-10-20",
+          "method": "ordinary TLS-validated HTTPS GET",
+          "http_status": 404,
+          "result": "The recorded OLC English consolidation PDF locator returns HTTP 404. The separate already-identified Gov.cy media locator returns HTTP 403; neither produced local bytes."
+        }
+      ]
     },
     {
       "candidate_id": "cy-migration-legislation-index",
@@ -129,7 +212,8 @@
       "source_url": "https://www.gov.cy/mip-md/en/documents/e-u-e-e-a-citizens-and-family-members-2/e-u-e-e-a-citizens-family-member-2/test/",
       "retrieval_status": "retrieval_or_conversion_error",
       "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
-      "accepted": false
+      "accepted": false,
+      "canonical_url_after_review": "https://www.gov.cy/mip-md/en/documents/e-u-e-e-a-citizens-and-family-members-2/e-u-e-e-a-citizens-family-member/permanent-residence-of-third-country-nationals-who-are-family-members-of-e-u-e-e-a-citizens-meu3/"
     },
     {
       "candidate_id": "cy-meu3-forms",
@@ -150,7 +234,8 @@
       "source_url": "https://www.gov.cy/mip-md/en/documents/temporary-residence/family-members/",
       "retrieval_status": "retrieval_or_conversion_error",
       "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
-      "accepted": false
+      "accepted": false,
+      "canonical_url_after_review": "https://www.gov.cy/mip-md/en/documents/temporary-residence/family-members-of-cypriots/"
     },
     {
       "candidate_id": "cy-mvis8-form",
@@ -238,7 +323,7 @@
       "source_content_type": "text/html",
       "source_bytes": 39610,
       "source_sha256": "c4c50612e593a2832bda801729fe4a15c699c20db66c16b6a296cc72b9602a43",
-      "raw_path": "temp/cyprus/raw/cy-admin-law-office-art146-c4c50612e593a2832bda801729fe4a15c699c20db66c16b6a296cc72b9602a43.html",
+      "raw_path": "source-library/cyprus/captures/raw/cy-admin-law-office-art146-c4c50612e593a2832bda801729fe4a15c699c20db66c16b6a296cc72b9602a43.html",
       "accepted": false,
       "retrieval_status": "discovery_surface_no_text",
       "retrieval_note": "Public HTML response contained no sufficiently long extractable source body."
@@ -252,10 +337,18 @@
       "source_content_type": "text/html",
       "source_bytes": 296427,
       "source_sha256": "f046849a1f5ffcd2a12f6f727407b75110729442294ef5b16b30e476c8c0a824",
-      "raw_path": "temp/cyprus/raw/cy-supreme-court-decisions-f046849a1f5ffcd2a12f6f727407b75110729442294ef5b16b30e476c8c0a824.html",
+      "raw_path": "source-library/cyprus/captures/raw/cy-supreme-court-decisions-f046849a1f5ffcd2a12f6f727407b75110729442294ef5b16b30e476c8c0a824.html",
       "accepted": false,
       "retrieval_status": "discovery_surface_no_text",
-      "retrieval_note": "Public HTML response contained no sufficiently long extractable source body."
+      "retrieval_note": "Public HTML response contained no sufficiently long extractable source body.",
+      "historical_captures": [
+        {
+          "raw_path": "source-library/cyprus/captures/raw/cy-supreme-court-decisions-7f47b9642995662fcff1730408d369b4ed998236a737183748a6987ab8dff902.html",
+          "source_sha256": "7f47b9642995662fcff1730408d369b4ed998236a737183748a6987ab8dff902",
+          "note": "Prior same-day court-index response retained as history; current capture is the later response in raw_path.",
+          "source_bytes": 296427
+        }
+      ]
     },
     {
       "candidate_id": "cy-supreme-constitutional-court-decisions",
@@ -266,7 +359,7 @@
       "source_content_type": "text/html",
       "source_bytes": 103485,
       "source_sha256": "77ba7af1972e5aa04cd9ed0e1bd634722f807d37bacdb1263905624d41835c0f",
-      "raw_path": "temp/cyprus/raw/cy-supreme-constitutional-court-decisions-77ba7af1972e5aa04cd9ed0e1bd634722f807d37bacdb1263905624d41835c0f.html",
+      "raw_path": "source-library/cyprus/captures/raw/cy-supreme-constitutional-court-decisions-77ba7af1972e5aa04cd9ed0e1bd634722f807d37bacdb1263905624d41835c0f.html",
       "accepted": false,
       "retrieval_status": "discovery_surface_no_text",
       "retrieval_note": "Public HTML response contained no sufficiently long extractable source body."
@@ -294,7 +387,7 @@
       "source_content_type": "text/html",
       "source_bytes": 17707,
       "source_sha256": "47fa2e80546059e92d0395144750554a5496ac7f6733d711bdf9f85758436942",
-      "raw_path": "temp/cyprus/raw/cy-ombudsman-form-47fa2e80546059e92d0395144750554a5496ac7f6733d711bdf9f85758436942.html",
+      "raw_path": "source-library/cyprus/captures/raw/cy-ombudsman-form-47fa2e80546059e92d0395144750554a5496ac7f6733d711bdf9f85758436942.html",
       "accepted": false,
       "retrieval_status": "discovery_surface_no_text",
       "retrieval_note": "Public HTML response contained no sufficiently long extractable source body."
@@ -350,14 +443,15 @@
       "source_content_type": "text/html",
       "source_bytes": 114934,
       "source_sha256": "684e3e779c24904f9831cda43ac72e172bb14bbaa501e2a7f6eddd0874db175f",
-      "raw_path": "temp/cyprus/raw/cy-legal-aid-act-lead-684e3e779c24904f9831cda43ac72e172bb14bbaa501e2a7f6eddd0874db175f.html",
+      "raw_path": "source-library/cyprus/captures/raw/cy-legal-aid-act-lead-684e3e779c24904f9831cda43ac72e172bb14bbaa501e2a7f6eddd0874db175f.html",
       "accepted": false,
-      "candidate_text_path": "source-library/cyprus/candidates/cy-legal-aid-act-lead.md",
-      "converted_sha256": "9097bf5122baf3d47ec7d401ae664a1c9eb042b30331912f5318fa5d5114a2ff",
-      "converted_bytes": 112274,
-      "content_selector": "body",
+      "candidate_text_path": "source-library/cyprus/candidates/legislation/cy-legal-aid-act-lead.md",
+      "converted_sha256": "9c90208718b4f74de52414a1752680f5967fb710a748b1cbd015a9e143a3691f",
+      "converted_bytes": 111452,
+      "content_selector": "div.main-content",
       "retrieval_status": "converted_review_candidate",
-      "review_state": "review_candidate"
+      "review_state": "review_candidate",
+      "retrieval_note": "Re-converted from preserved HTML using CyLaw div.main-content; navigation, print controls, sidebars and footer are excluded. Secondary source only."
     },
     {
       "candidate_id": "cy-general-admin-act-lead",
@@ -368,14 +462,15 @@
       "source_content_type": "text/html",
       "source_bytes": 95382,
       "source_sha256": "e25beb147fbc17b2d6ba8a0cc261e9e7dddedfba0443eedcd76116fa67aa691a",
-      "raw_path": "temp/cyprus/raw/cy-general-admin-act-lead-e25beb147fbc17b2d6ba8a0cc261e9e7dddedfba0443eedcd76116fa67aa691a.html",
-      "accepted": false,
-      "candidate_text_path": "source-library/cyprus/candidates/cy-general-admin-act-lead.md",
-      "converted_sha256": "079bf3516f26f440c18d0f9b0e6fb3163a4f942f105590b602a99f246aa6942b",
-      "converted_bytes": 77759,
-      "content_selector": "body",
+      "raw_path": "source-library/cyprus/captures/raw/cy-general-admin-act-lead-e25beb147fbc17b2d6ba8a0cc261e9e7dddedfba0443eedcd76116fa67aa691a.html",
+      "accepted": true,
+      "candidate_text_path": "source-library/cyprus/candidates/legislation/cy-general-admin-act-lead.md",
+      "converted_sha256": "ad1d8dd22e6462de97c7d0c893ad53cd04495cf3c79ba2f317789166f68c6413",
+      "converted_bytes": 77146,
+      "content_selector": "div.main-content",
       "retrieval_status": "converted_review_candidate",
-      "review_state": "review_candidate"
+      "review_state": "review_candidate",
+      "retrieval_note": "Re-converted from preserved HTML using CyLaw div.main-content; navigation, print controls, sidebars and footer are excluded. Secondary source only."
     },
     {
       "candidate_id": "cy-admin-court-law-lead",
@@ -386,14 +481,15 @@
       "source_content_type": "text/html",
       "source_bytes": 38190,
       "source_sha256": "575a63eea644853632c4617465cc12446fea0ca2296da7e037d3c3e3f46c745c",
-      "raw_path": "temp/cyprus/raw/cy-admin-court-law-lead-575a63eea644853632c4617465cc12446fea0ca2296da7e037d3c3e3f46c745c.html",
-      "accepted": false,
-      "candidate_text_path": "source-library/cyprus/candidates/cy-admin-court-law-lead.md",
-      "converted_sha256": "925b9a314fcc379df86b2ee0ffabf6fd7ccb554a37b289d05377a4f42bc36cc8",
-      "converted_bytes": 28969,
-      "content_selector": "body",
+      "raw_path": "source-library/cyprus/captures/raw/cy-admin-court-law-lead-575a63eea644853632c4617465cc12446fea0ca2296da7e037d3c3e3f46c745c.html",
+      "accepted": true,
+      "candidate_text_path": "source-library/cyprus/candidates/legislation/cy-admin-court-law-lead.md",
+      "converted_sha256": "8f5e0b7e3861b7fe5553d9a401f97610508e34748771602a1ba7814ef87f57d4",
+      "converted_bytes": 28301,
+      "content_selector": "div.main-content",
       "retrieval_status": "converted_review_candidate",
-      "review_state": "review_candidate"
+      "review_state": "review_candidate",
+      "retrieval_note": "Re-converted from preserved HTML using CyLaw div.main-content; navigation, print controls, sidebars and footer are excluded. Secondary source only."
     },
     {
       "candidate_id": "cy-free-movement-gazette-2007",
@@ -404,16 +500,520 @@
       "source_content_type": "application/pdf",
       "source_bytes": 2512620,
       "source_sha256": "5956804c60b7979588fb7016109ef76e43d927aeeabcc8444e13d49374f30d50",
-      "raw_path": "temp/cyprus/raw/cy-free-movement-gazette-2007-5956804c60b7979588fb7016109ef76e43d927aeeabcc8444e13d49374f30d50.pdf",
-      "accepted": false,
-      "candidate_source_path": "temp/cyprus/pdf/cy-free-movement-gazette-2007-5956804c60b7979588fb7016109ef76e43d927aeeabcc8444e13d49374f30d50.pdf",
-      "candidate_text_path": "source-library/cyprus/candidates/cy-free-movement-gazette-2007.md",
-      "converted_sha256": "a3bf97e8d21848008b78ea52c743b20602e8323d8c36badf0934f9d9366c7e10",
-      "converted_bytes": 2395,
-      "content_selector": "PDF text extraction; 71 pages",
+      "raw_path": "source-library/cyprus/captures/raw/cy-free-movement-gazette-2007-5956804c60b7979588fb7016109ef76e43d927aeeabcc8444e13d49374f30d50.pdf",
+      "accepted": true,
+      "candidate_source_path": "source-library/cyprus/captures/raw/cy-free-movement-gazette-2007-5956804c60b7979588fb7016109ef76e43d927aeeabcc8444e13d49374f30d50.pdf",
       "retrieval_status": "converted_review_candidate",
-      "review_state": "review_candidate"
+      "review_state": "accepted_historical_facsimile_only",
+      "source_acceptance_status": "Raw official Gazette PDF accepted as historical 2007 promulgation, plus one bounded Greek passage (Article 4(2)(a)-(b), printed page 116) accepted against the original. The complete OCR-derived Markdown and current consolidated law remain unaccepted.",
+      "retrieval_note": "Original 71-page official PDF and OCR derivative remain preserved. The raw PDF is accepted as the historical Gazette facsimile. The corrected OCR candidate applies only the 26 logged page-level discrepancies using a deterministic page-scoped overlay; other OCR errors and current amendments remain unresolved.",
+      "candidate_text_path": "source-library/cyprus/candidates/legislation/cy-free-movement-gazette-2007.md",
+      "converted_sha256": "83423608040e794859f9a10d21f80ddd03182b5538b0f2fe1704a42cde6978ff",
+      "converted_bytes": 135809,
+      "content_selector": "OCR pages 16–71 mapped to Gazette pages 112–167; 29 exact correction rules / 32 replacements",
+      "conversion_engine": "Adobe Acrobat OCR (el-GR) derivative; pypdf 6.21.1 extraction with page-scoped visual correction overlay",
+      "conversion_replay_script": "source-library/cyprus/scripts/convert_gazette_ocr.py",
+      "ocr_output_sha256": "fb105540b4d679811f9769cd9b4ca443f594fd29ce6d4bba3df6d7a1a3ba397e",
+      "derived_artifacts": [
+        {
+          "path": "source-library/cyprus/captures/derived/cy-free-movement-gazette-2007-ocr.pdf",
+          "content_type": "application/pdf",
+          "bytes": 2043581,
+          "sha256": "fb105540b4d679811f9769cd9b4ca443f594fd29ce6d4bba3df6d7a1a3ba397e",
+          "producer": "Adobe Acrobat OCR",
+          "locale": "el-GR",
+          "operation_id": "3ff01392-1297-4979-8314-7d9f7e8b6b1c-pdf_service-9c4612ed"
+        }
+      ],
+      "printed_page_range": [
+        112,
+        167
+      ],
+      "original_pdf_page_range": [
+        16,
+        71
+      ],
+      "page_sequence_review": "all 56 original pages visually reviewed for presence/order/orientation; 26 logged discrepancies corrected by 29 page-scoped rules / 32 replacements; deterministic pypdf 6.21.1 replay verified; exhaustive word-level fidelity pending",
+      "ocr_review_record_path": "source-library/cyprus/references/gazette-ocr-review.json",
+      "bounded_accepted_passage_id": "law7-2007-art4-2-extended-family"
+    },
+    {
+      "candidate_id": "cy-ombudsman-laws-consolidation",
+      "source_url": "https://www.olc.gov.cy/olc/olc.nsf/AB3EFBED37D3FD60C2258A1A002C2D8A/%24file/The%20Commissioner%20for%20administration.pdf",
+      "accepted": false,
+      "retrieval_status": "official_source_indexed_not_captured",
+      "retrieval_note": "Capture and hash the PDF; compare amendment list and Article 3 term change with the authentic Gazette."
+    },
+    {
+      "candidate_id": "cy-legal-aid-official-consolidation",
+      "source_url": "https://www.olc.gov.cy/olc/olc.nsf/BBA99B7B4AEC3B24C22588B6002B02EC/%24file/A%20LAW%20TO%20PROVIDE%20FOR%20PROVIDING%20FREE%20LEGAL%20AID%20-%20updated.pdf",
+      "accepted": false,
+      "retrieval_status": "official_source_indexed_not_captured",
+      "retrieval_note": "Capture and hash; review scope of immigration-related legal aid, remedies, and Article 146 deadlines against the authentic law."
+    },
+    {
+      "candidate_id": "cy-document-ratification-guidance",
+      "source_url": "https://www.gov.cy/mip-md/en/documents/document-ratification/",
+      "accepted": false,
+      "retrieval_status": "official_source_indexed_not_captured",
+      "retrieval_note": "Capture the current page and its table/attachments; map each MEU checklist item to Regulation (EU) 2016/1191 scope."
+    },
+    {
+      "candidate_id": "cy-cypriot-family-forms-index",
+      "source_url": "https://www.gov.cy/mip-md/en/documents/family-members-of-cypriots-cy/",
+      "accepted": false,
+      "retrieval_status": "official_source_indexed_not_captured",
+      "retrieval_note": "Capture the page and each linked file; record form identity, version, language, attachment set, and hashes."
+    },
+    {
+      "candidate_id": "cy-cypriot-family-employment-forms",
+      "source_url": "https://www.gov.cy/mip-md/en/documents/cypriots-family-members-with-employment-cye/",
+      "accepted": false,
+      "retrieval_status": "official_source_indexed_not_captured",
+      "retrieval_note": "Capture blank files only; verify labels, language, file size, form identifier, and hash."
+    },
+    {
+      "candidate_id": "cy-cypriot-family-no-employment-forms",
+      "source_url": "https://www.gov.cy/mip-md/en/documents/cypriots-family-members-without-employment-cyv/",
+      "accepted": false,
+      "retrieval_status": "official_source_indexed_not_captured",
+      "retrieval_note": "Capture blank files only; verify labels, language, file size, form identifier, and hash."
+    },
+    {
+      "candidate_id": "cy-mfa-mission-paris-visa",
+      "source_url": "https://www.gov.cy/mfa-embassyparis/en/consular-services/visa-information/",
+      "accepted": false,
+      "retrieval_status": "official_source_indexed_not_captured",
+      "retrieval_note": "Capture page and attachments; verify appointment, outsourcing, addresses, contact details, and EU-family procedure."
+    },
+    {
+      "candidate_id": "cy-mfa-mission-vienna-visa",
+      "source_url": "https://www.gov.cy/mfa-embassyvienna/en/consular-services/visa-information/",
+      "accepted": false,
+      "retrieval_status": "official_source_indexed_not_captured",
+      "retrieval_note": "Capture page; verify appointment, outsourcing, local documents, and apparent conflict with other official mission advice."
+    },
+    {
+      "candidate_id": "cy-free-movement-amendment-181i-2011",
+      "retrieval_status": "official_source_indexed_not_captured",
+      "retrieval_note": "Official GPO 2011 July–December Part I Gazette volume route located; official index lists the act beginning at printed page 1507. EUR-Lex NIM identifies issue 4313, 2011-12-23. The volume response and pages remain uncaptured; no acceptance.",
+      "accepted": false,
+      "official_url": "https://www.mof.gov.cy/mof/gpo/gazette.nsf/All/DE3C3610EA9C7492C2258720003A950A/$file/Parartima%201o%202011%20Meros%20I%20July%20-December.pdf?OpenElement="
+    },
+    {
+      "candidate_id": "cy-free-movement-amendment-8i-2013",
+      "retrieval_status": "official_source_indexed_not_captured",
+      "retrieval_note": "Official GPO prior-years index exposes the January–June 2013 Appendix 1 Part I volume route. EUR-Lex NIM identifies Law 8(I)/2013 as issue 4377, 2013-02-01. The PDF open returned a cache miss; response bytes and act text remain uncaptured; no acceptance. A separate ILO NATLEX Greek PDF copy is indexed (23 pages) as a secondary transcription lead; it was not captured, browser text extraction returned no body, and OCR upload failed. It is not an official Gazette substitute.",
+      "accepted": false,
+      "official_url": "https://www.mof.gov.cy/mof/gpo/gazette.nsf/All/9F35D8799C834521C2258720003A949B/$file/PARARTIMA%201o%20MEROS%20I%20JAN-JUN.pdf?OpenElement="
+    },
+    {
+      "candidate_id": "cy-free-movement-amendment-67i-2013",
+      "retrieval_status": "official_source_indexed_not_captured",
+      "retrieval_note": "Official GPO 2013 July–December Part I Gazette volume route located; official index lists the act beginning at printed page 573. Gazette issue 4399, 2013-07-15, is identified in legal indexes. The volume response and pages remain uncaptured; no acceptance.",
+      "accepted": false,
+      "official_url": "https://www.mof.gov.cy/mof/gpo/gazette.nsf/All/48B6ADA51F836222C2258720003A9525/$file/PAR%201o%20MEROS%20I%20%20JULY%20DEC.pdf?OpenElement="
+    },
+    {
+      "candidate_id": "cy-free-movement-amendment-77i-2015",
+      "retrieval_status": "official_source_indexed_not_captured",
+      "retrieval_note": "Official GPO search result identifies Law 77(I)/2015, Gazette issue 4513 dated 2015-05-29, and this exact PDF route. No response bytes were captured; search-index text is discovery evidence only.",
+      "accepted": false,
+      "source_url": "https://www.mof.gov.cy/mof/gpo/gazette.nsf/96A01D6D8846B8A4C225872C004063E1/$file/4513%2029%205%202015%20PARARTIMA%201o%20MEROS%20I.pdf"
+    },
+    {
+      "candidate_id": "cy-free-movement-amendment-28i-2017",
+      "retrieval_status": "official_source_indexed_not_captured",
+      "retrieval_note": "Official GPO search result identifies Law 28(I)/2017, Gazette issue 4594 dated 2017-03-20, and this exact PDF route. No response bytes were captured; search-index text is discovery evidence only.",
+      "accepted": false,
+      "source_url": "https://www.mof.gov.cy/mof/gpo/gazette.nsf/C9916148BF18D684C225872C004066AB/$file/4594%2020%203%202017%20PARARTHMA%201o%20MEROS%20I.pdf"
+    },
+    {
+      "candidate_id": "cy-free-movement-amendment-193i-2020",
+      "retrieval_status": "official_source_indexed_not_captured",
+      "retrieval_note": "Exact official GPO PDF route located and browser-inspected. The extracted heading identifies Law 193(I)/2020 in issue 4794 dated 2020-12-17; predecessor amendments through 28(I)/2017 are listed at printed page 783 / PDF page 40. Raw bytes and hash are not captured; no acceptance. Fresh ordinary TLS GET on 2026-10-20 returned HTTP 404; the prior bounded external review remains separately recorded.",
+      "accepted": false,
+      "official_url": "https://www.mof.gov.cy/mof/gpo/gazette.nsf/162DB17C944AED3CC225872C003AC56F/$file/4794%2017%2012%202020%20PARARTHMA%201%CE%BF%20MEROS%20%CE%99.pdf",
+      "route_checks": [
+        {
+          "url": "https://www.mof.gov.cy/mof/gpo/gazette.nsf/162DB17C944AED3CC225872C003AC56F/$file/4794%2017%2012%202020%20PARARTHMA%201%CE%BF%20MEROS%20%CE%99.pdf",
+          "checked_at": "2026-10-20",
+          "method": "ordinary TLS-validated HTTPS GET",
+          "http_status": 404,
+          "result": "The exact PDF route previously inspected for a bounded external text now returns HTTP 404 on a fresh retrieval attempt; prior bounded external acceptance is unchanged, but local capture remains pending."
+        }
+      ]
+    },
+    {
+      "candidate_id": "cy-free-movement-amendment-96i-2023",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_note": "Exact seven-page official GPO issue captured by ordinary allowlisted HTTPS GET. Law 96(I)/2023 is on PDF page 3 / printed Gazette page 425; PDF pages 2 and 4 identify adjacent Acts 95(I)/2023 and 97(I)/2023. The complete one-page derived text remains unaccepted; only its exact section-2 passage has a separate passing bounded semantic review. No section 12 or delayed-commencement clause is present in Law 96(I)/2023.",
+      "accepted": true,
+      "source_url": "https://www.mof.gov.cy/mof/gpo/gazette.nsf/8EFFEF61D22951C6C2258A4E003F3825/$file/4960%2020%2010%202023%20PARARTHMA%201o%20MEROS%20I.pdf",
+      "request_url": "https://www.mof.gov.cy/mof/gpo/gazette.nsf/8EFFEF61D22951C6C2258A4E003F3825/$file/4960%2020%2010%202023%20PARARTHMA%201o%20MEROS%20I.pdf",
+      "resolved_url": "https://www.mof.gov.cy/mof/gpo/gazette.nsf/8EFFEF61D22951C6C2258A4E003F3825/$file/4960%2020%2010%202023%20PARARTHMA%201o%20MEROS%20I.pdf",
+      "retrieved_at": "2026-10-20T00:23:32Z",
+      "source_content_type": "application/pdf",
+      "source_bytes": 1236230,
+      "source_sha256": "85726a4e1615b077a3b40283aa82969ab34a7b6cfdcbd86f9bb1fa46ee929663",
+      "raw_path": "source-library/cyprus/captures/raw/cy-free-movement-amendment-96i-2023-85726a4e1615b077a3b40283aa82969ab34a7b6cfdcbd86f9bb1fa46ee929663.pdf",
+      "candidate_source_path": "source-library/cyprus/captures/raw/cy-free-movement-amendment-96i-2023-85726a4e1615b077a3b40283aa82969ab34a7b6cfdcbd86f9bb1fa46ee929663.pdf",
+      "candidate_text_path": "source-library/cyprus/candidates/legislation/cy-free-movement-amendment-96i-2023.md",
+      "converted_sha256": "75c0135c7f2772aab0098cbc538bd05aef920c8fa35391adfd4806fe4ed7e022",
+      "converted_bytes": 4283,
+      "content_selector": "PDF page 3 only; Law 96(I)/2023, printed Gazette page 425; Acts 95(I)/2023 and 97(I)/2023 on adjacent pages excluded",
+      "review_state": "review_candidate",
+      "local_copy_status": "accepted",
+      "conversion_replay_script": "source-library/cyprus/scripts/convert_primary_sources.py",
+      "accepted_passage_ids": [
+        "law96-2023-s2-competent-authority-captured"
+      ],
+      "accepted_passage_scope": "Section 2 only, PDF page 3 / printed Gazette page 425; complete conversion remains a review candidate."
+    },
+    {
+      "candidate_id": "cy-cap105-primary-law",
+      "retrieval_status": "official_primary_text_not_located",
+      "retrieval_note": "Instrument identified from the captured project review; no act-specific source URL or response bytes were available. No URL was inferred. Locate and capture the official Greek Gazette text.",
+      "accepted": false
+    },
+    {
+      "candidate_id": "cy-cylaw-law7-greek-consolidation",
+      "source_url": "https://www.cylaw.org/nomoi/enop/non-ind/2007_1_7/full.html",
+      "retrieval_status": "secondary_html_located_not_captured",
+      "retrieval_note": "CyLaw Greek full-text page was directly inspected from the index on 20 October 2026. It displays an amendment history through 96(I)/2023 and includes the full Greek consolidated text. The official Migration Department labels its linked consolidations unofficial. Raw HTML response bytes and a local conversion are not captured; this source is a secondary comparison lead, not current official law.",
+      "accepted": false
+    },
+    {
+      "candidate_id": "cy-gazette-law-23-2024-chain-reference",
+      "source_url": "https://www.mof.gov.cy/mof/gpo/gazette.nsf/FFF4E9B3E90D615BC2258AE100283C20/%24file/4986%2015%203%202024%20PARARTHMA%201o%20MEROS%20I.pdf",
+      "retrieval_status": "official_source_indexed_not_captured",
+      "retrieval_note": "The full official PDF was directly inspected in the browser on 20 October 2026. It identifies Law 22(I)/2024 as the Municipalities amendment and Law 23(I)/2024 as the Deputy Ministry law; the Law 7(I)/2007 chain appears under Law 23(I)/2024, section 3(1)(g)(iii). This corrects S3's act-number attribution. The exact local PDF response bytes remain uncaptured, so the source artifact is not locally accepted.",
+      "accepted": false
+    },
+    {
+      "candidate_id": "cy-cap105-olc-greek-consolidation",
+      "source_url": "https://www.olc.gov.cy/olc/olc.nsf/6104940C95908049C2258B7200330D64/$file/%CE%9F%20%CF%80%CE%B5%CF%81%CE%AF%20%CE%91%CE%BB%CE%BB%CE%BF%CE%B4%CE%B1%CF%80%CF%8E%CE%BD%20%CE%BA%CE%B1%CE%B9%20%CE%9C%CE%B5%CF%84%CE%B1%CE%BD%CE%B1%CF%83%CF%84%CE%B5%CF%8D%CF%83%CE%B5%CF%89%CF%82%20%CE%9D%CF%8C%CE%BC%CE%BF%CF%82%2C%20%CE%9A%CE%B5%CF%86.105%20%282%29.pdf",
+      "retrieval_status": "official_source_indexed_not_captured",
+      "retrieval_note": "Official OLC index identifies the Greek Cap. 105 consolidation GEN-N.72 and exact PDF route. Response bytes, consolidation cut-off and amendment coverage were not captured or verified. Latest ordinary TLS GET on 2026-10-20 returned HTTP 404; no bytes captured.",
+      "accepted": false,
+      "route_checks": [
+        {
+          "url": "https://www.olc.gov.cy/olc/olc.nsf/6104940C95908049C2258B7200330D64/$file/%CE%9F%20%CF%80%CE%B5%CF%81%CE%AF%20%CE%91%CE%BB%CE%BB%CE%BF%CE%B4%CE%B1%CF%80%CF%8E%CE%BD%20%CE%BA%CE%B1%CE%B9%20%CE%9C%CE%B5%CF%84%CE%B1%CE%BD%CE%B1%CF%83%CF%84%CE%B5%CF%8D%CF%83%CE%B5%CF%89%CF%82%20%CE%9D%CF%8C%CE%BC%CE%BF%CF%82%2C%20%CE%9A%CE%B5%CF%86.105%20%282%29.pdf",
+          "checked_at": "2026-10-20",
+          "method": "ordinary TLS-validated HTTPS GET",
+          "http_status": 404,
+          "result": "The recorded OLC Greek consolidation PDF locator returns HTTP 404; no replacement URL was identified."
+        }
+      ]
+    },
+    {
+      "candidate_id": "cy-protocol-no-10",
+      "source_url": "https://eur-lex.europa.eu/eli/treaty/acc_2003/act_1/pro_10/sign/eng",
+      "request_url": "https://eur-lex.europa.eu/eli/treaty/acc_2003/act_1/pro_10/sign/eng",
+      "resolved_url": "https://eur-lex.europa.eu/eli/treaty/acc_2003/act_1/pro_10/sign/eng",
+      "retrieved_at": "2026-10-19T23:33:20Z",
+      "source_content_type": "text/html",
+      "source_bytes": 227062,
+      "source_sha256": "143eba9ebe2e9334e85bf8608a3f6c6fc99299ba83a718c3507bfeefda317e26",
+      "raw_path": "source-library/cyprus/captures/raw/cy-protocol-no-10-en-143eba9ebe2e9334e85bf8608a3f6c6fc99299ba83a718c3507bfeefda317e26.html",
+      "accepted": true,
+      "candidate_source_path": "source-library/cyprus/captures/raw/cy-protocol-no-10-en-143eba9ebe2e9334e85bf8608a3f6c6fc99299ba83a718c3507bfeefda317e26.html",
+      "retrieval_status": "complete_derived_text_accepted",
+      "review_state": "accepted_complete_derived_text",
+      "source_acceptance_status": "Complete English Protocol No. 10 text as published in OJ L 236, 23 September 2003, including preamble and Articles 1–4.",
+      "retrieval_note": "Official EUR-Lex English text of Protocol No. 10, OJ L 236, 23 September 2003. Exact response bytes are preserved; the complete preamble and Articles 1–4 text representation is accepted within the publication scope.",
+      "candidate_text_path": "source-library/cyprus/candidates/legislation/cy-protocol-no-10-en.md",
+      "converted_sha256": "4cb303bd30b71a36482341cd2ac917396a3ad728eda18b1e9ae4b0cf538515e7",
+      "converted_bytes": 3539,
+      "content_selector": "div#TexteOnly; all four articles and preamble",
+      "conversion_engine": "Python html.parser; source-specific div#TexteOnly selector",
+      "conversion_replay_script": "source-library/cyprus/scripts/convert_primary_sources.py",
+      "semantic_review": {
+        "status": "pass",
+        "scope": "Complete English Protocol No. 10 text as published in OJ L 236, 23 September 2003, including preamble and Articles 1–4.",
+        "method": "Source-specific extraction from the official EUR-Lex div#TexteOnly body was replayed against the exact captured response. The complete normalized legal body matches the saved Markdown; source and text SHA-256 values match their ledgers. Title, preamble and all four article headings were checked; each heading occurs once and there is no Article 5 or page-shell contamination. Scope is the complete published English Protocol text only.",
+        "reviewed_at": "2026-10-20"
+      }
+    },
+    {
+      "candidate_id": "cy-protocol-no-10-el",
+      "source_url": "https://eur-lex.europa.eu/eli/treaty/acc_2003/act_1/pro_10/sign/ell",
+      "request_url": "https://eur-lex.europa.eu/eli/treaty/acc_2003/act_1/pro_10/sign/ell",
+      "resolved_url": "https://eur-lex.europa.eu/eli/treaty/acc_2003/act_1/pro_10/sign/ell",
+      "retrieved_at": "2026-10-19T23:33:20Z",
+      "source_content_type": "text/html",
+      "source_bytes": 235144,
+      "source_sha256": "1a12ac6398a3ee98cc56255f354e0b87d0a85f096be448e7f950f839ee01d7fe",
+      "raw_path": "source-library/cyprus/captures/raw/cy-protocol-no-10-el-1a12ac6398a3ee98cc56255f354e0b87d0a85f096be448e7f950f839ee01d7fe.html",
+      "accepted": true,
+      "candidate_source_path": "source-library/cyprus/captures/raw/cy-protocol-no-10-el-1a12ac6398a3ee98cc56255f354e0b87d0a85f096be448e7f950f839ee01d7fe.html",
+      "retrieval_status": "complete_derived_text_accepted",
+      "review_state": "accepted_complete_derived_text",
+      "source_acceptance_status": "Complete Greek Protocol No. 10 text as published in OJ L 236, 23 September 2003, including preamble and Articles 1–4.",
+      "retrieval_note": "Official EUR-Lex Greek text of Protocol No. 10, OJ L 236, 23 September 2003. Exact response bytes are preserved; the complete preamble and Articles 1–4 text representation is accepted within the publication scope.",
+      "candidate_text_path": "source-library/cyprus/candidates/legislation/cy-protocol-no-10-el.md",
+      "converted_sha256": "40a5e9cba3053fe5e225aef7b5eb9ec7d298f4efc63d20f0b99859b7cc6a737f",
+      "converted_bytes": 6517,
+      "content_selector": "div#TexteOnly; all four articles and preamble",
+      "conversion_engine": "Python html.parser; source-specific div#TexteOnly selector",
+      "conversion_replay_script": "source-library/cyprus/scripts/convert_primary_sources.py",
+      "semantic_review": {
+        "status": "pass",
+        "scope": "Complete Greek Protocol No. 10 text as published in OJ L 236, 23 September 2003, including preamble and Articles 1–4.",
+        "method": "Source-specific extraction from the official EUR-Lex div#TexteOnly body was replayed against the exact captured response. The complete normalized legal body matches the saved Markdown; source and text SHA-256 values match their ledgers. Title, preamble and all four article headings were checked; each heading occurs once and there is no Article 5 or page-shell contamination. Scope is the complete published Greek Protocol text only.",
+        "reviewed_at": "2026-10-20"
+      }
+    },
+    {
+      "candidate_id": "cy-green-line-regulation-866-2004",
+      "source_url": "https://eur-lex.europa.eu/eli/reg/2004/866/oj/eng",
+      "request_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02004R0866-20150831",
+      "resolved_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02004R0866-20150831",
+      "retrieved_at": "2026-10-19T23:33:20Z",
+      "source_content_type": "application/pdf",
+      "source_bytes": 195133,
+      "source_sha256": "61e705be236bf7db82d2baec326d58ee595eda62f0be246030e3fe04aa7d18e2",
+      "raw_path": "source-library/cyprus/captures/raw/cy-green-line-regulation-866-2004-en-61e705be236bf7db82d2baec326d58ee595eda62f0be246030e3fe04aa7d18e2.pdf",
+      "accepted": true,
+      "candidate_source_path": "source-library/cyprus/captures/raw/cy-green-line-regulation-866-2004-en-61e705be236bf7db82d2baec326d58ee595eda62f0be246030e3fe04aa7d18e2.pdf",
+      "retrieval_status": "converted_review_candidate",
+      "review_state": "accepted_raw_artifact_conversion_candidate",
+      "source_acceptance_status": "Official English consolidated PDF snapshot dated 31 August 2015; 14 pages, including the amendment/corrigendum history and Annexes I–II. Derived Markdown remains unaccepted.",
+      "retrieval_note": "Official English consolidated PDF snapshot dated 31 August 2015; 14 pages, including the amendment/corrigendum history and Annexes I–II. Captured by ordinary TLS-validated HTTPS; no challenge bypass. Exact bytes and hash are preserved.",
+      "candidate_text_path": "source-library/cyprus/candidates/legislation/cy-green-line-regulation-866-2004-en.md",
+      "converted_sha256": "e9823a73fac303e6c6dc4a6923c0b7b7a6daddccb7b3e561e7640e79ad70c813",
+      "converted_bytes": 31661,
+      "content_selector": "Complete 14-page EUR-Lex PDF, PDF pages 1–14",
+      "conversion_engine": "pypdf 6.21.1; page-bounded text extraction",
+      "conversion_replay_script": "source-library/cyprus/scripts/convert_primary_sources.py",
+      "semantic_review": {
+        "status": "pass",
+        "scope": "Official English consolidated PDF snapshot dated 31 August 2015; 14 pages, including the amendment/corrigendum history and Annexes I–II.; converted Markdown remains a separate unaccepted candidate."
+      }
+    },
+    {
+      "candidate_id": "cy-green-line-regulation-866-2004-el",
+      "source_url": "https://eur-lex.europa.eu/eli/reg/2004/866/oj/ell",
+      "request_url": "https://eur-lex.europa.eu/legal-content/EL/TXT/PDF/?uri=CELEX:02004R0866-20150831",
+      "resolved_url": "https://eur-lex.europa.eu/legal-content/EL/TXT/PDF/?uri=CELEX:02004R0866-20150831",
+      "retrieved_at": "2026-10-19T23:33:20Z",
+      "source_content_type": "application/pdf",
+      "source_bytes": 262428,
+      "source_sha256": "3fedfc318ad13fed2ed6264461f11725bc2baf40a529fed900d9f913aa9eb948",
+      "raw_path": "source-library/cyprus/captures/raw/cy-green-line-regulation-866-2004-el-3fedfc318ad13fed2ed6264461f11725bc2baf40a529fed900d9f913aa9eb948.pdf",
+      "accepted": true,
+      "candidate_source_path": "source-library/cyprus/captures/raw/cy-green-line-regulation-866-2004-el-3fedfc318ad13fed2ed6264461f11725bc2baf40a529fed900d9f913aa9eb948.pdf",
+      "retrieval_status": "bounded_derived_passage_accepted",
+      "review_state": "accepted_raw_artifact_and_five_bounded_passages",
+      "source_acceptance_status": "Official Greek EUR-Lex consolidated PDF snapshot dated 31 August 2015; raw PDF accepted and five bounded passages (Article 2(1) first clause, Articles 2(2), 2(3), 2(4), and Article 3) on PDF pages 4–5 are separately accepted. Complete derived Markdown remains a candidate.",
+      "retrieval_note": "Official Greek consolidated PDF snapshot dated 31 August 2015; 14 pages, including the amendment/corrigendum history and Annexes I–II. Captured by ordinary TLS-validated HTTPS; no challenge bypass. Exact bytes and hash are preserved.",
+      "candidate_text_path": "source-library/cyprus/candidates/legislation/cy-green-line-regulation-866-2004-el.md",
+      "converted_sha256": "5c066bfbdf21fa49a6ededa7f0e2528d8ce8959cf386c778fb5af77189f83a5d",
+      "converted_bytes": 61916,
+      "content_selector": "Complete 14-page EUR-Lex PDF, PDF pages 1–14",
+      "conversion_engine": "pypdf 6.21.1; page-bounded text extraction",
+      "conversion_replay_script": "source-library/cyprus/scripts/convert_primary_sources.py",
+      "semantic_review": {
+        "status": "pass",
+        "scope": "Regulation (EC) No 866/2004, Article 2(1) first clause only, Articles 2(2), 2(3), 2(4), and Article 3, official Greek EUR-Lex consolidated PDF dated 31 August 2015, PDF pages 4–5. The complete converted Markdown, visual typography, post-2015 legal changes, and current Cyprus crossing-point practice remain outside scope.",
+        "method": "EGR semantic review S22 passed 2026-10-20T14:12:40Z. The five bounded passages (Article 2(1) first clause, Articles 2(2), 2(3), 2(4), and Article 3) were checked against pypdf 6.21.1 text extraction from the SHA-256-verified Greek EUR-Lex PDF and the page-bounded conversion. The normalized page text matched on PDF pages 4–5; each accepted passage occurs exactly once in the source page text and once in the conversion. Omission, duplication and contamination checks passed. This review did not inspect rasterized glyphs or visual typography and does not establish post-2015 changes or current crossing-point practice.",
+        "reviewed_at": "2026-10-20T14:12:40Z",
+        "passage_ids": [
+          "green-line-article2-1-crossing-checks-el",
+          "green-line-article2-2-identity-check-el",
+          "green-line-article2-3-third-country-crossing-el",
+          "green-line-article2-4-authorized-crossing-points-el",
+          "green-line-article3-line-surveillance-el"
+        ],
+        "passages": [
+          {
+            "passage_id": "green-line-article2-1-crossing-checks-el",
+            "page_or_section": "Regulation (EC) No 866/2004, Article 2(1), official Greek consolidated EUR-Lex PDF, PDF page 4 (version 31.08.2015); first clause only.",
+            "passage_sha256": "122a0996e8b3f394affef0f81ceffbc0ca98b0bc4b26b197f3a82c349e6fe2b4"
+          },
+          {
+            "passage_id": "green-line-article2-2-identity-check-el",
+            "page_or_section": "Regulation (EC) No 866/2004, Article 2(2): minimum identity check, official Greek consolidated EUR-Lex PDF, PDF page 4 (version 31.08.2015).",
+            "passage_sha256": "e190f1ce9abcf622deb2ebf27f43875ce3939e73ee52e32dc69c4df33193c098"
+          },
+          {
+            "passage_id": "green-line-article2-3-third-country-crossing-el",
+            "page_or_section": "Regulation (EC) No 866/2004, Article 2(3): third-country crossing conditions, official Greek consolidated EUR-Lex PDF, PDF page 4 (version 31.08.2015).",
+            "passage_sha256": "948feb8c4552e0e95d20ab1c8f1fdbb463354561ad284635f256d5af69dcf802"
+          },
+          {
+            "passage_id": "green-line-article2-4-authorized-crossing-points-el",
+            "page_or_section": "Regulation (EC) No 866/2004, Article 2(4): authorized crossing points, official Greek consolidated EUR-Lex PDF, PDF page 5 (version 31.08.2015).",
+            "passage_sha256": "6bb250f78430cc9ea75a8944753b855231f740132b6fac1f8b176c7897bfe1a6"
+          },
+          {
+            "passage_id": "green-line-article3-line-surveillance-el",
+            "page_or_section": "Regulation (EC) No 866/2004, Article 3: line surveillance, official Greek consolidated EUR-Lex PDF, PDF page 5 (version 31.08.2015).",
+            "passage_sha256": "fb49d4924ebb0a03e17af02064d7f8b29db93753bf0b403075e5337e6d9bb670"
+          }
+        ],
+        "checks": {
+          "omissions_checked": true,
+          "duplication_checked": true,
+          "contamination_checked": true
+        },
+        "local_capture_sha256": "3fedfc318ad13fed2ed6264461f11725bc2baf40a529fed900d9f913aa9eb948"
+      },
+      "accepted_passage_ids": [
+        "green-line-article2-1-crossing-checks-el",
+        "green-line-article2-2-identity-check-el",
+        "green-line-article2-3-third-country-crossing-el",
+        "green-line-article2-4-authorized-crossing-points-el",
+        "green-line-article3-line-surveillance-el"
+      ],
+      "accepted_passages": [
+        {
+          "id": "green-line-article2-1-crossing-checks-el",
+          "text": "1. Η Κυπριακή Δημοκρατία διενεργεί ελέγχους σε όλα τα πρόσωπα\nπου διασχίζουν τη γραμμή,",
+          "location": "Regulation (EC) No 866/2004, Article 2(1), official Greek consolidated EUR-Lex PDF, PDF page 4 (version 31.08.2015); first clause only.",
+          "sha256": "122a0996e8b3f394affef0f81ceffbc0ca98b0bc4b26b197f3a82c349e6fe2b4"
+        },
+        {
+          "id": "green-line-article2-2-identity-check-el",
+          "text": "2. Κάθε πρόσωπο υπόκειται σε τουλάχιστον έναν έλεγχο για την\nεξακρίβωση της ταυτότητάς του.",
+          "location": "Regulation (EC) No 866/2004, Article 2(2): minimum identity check, official Greek consolidated EUR-Lex PDF, PDF page 4 (version 31.08.2015).",
+          "sha256": "e190f1ce9abcf622deb2ebf27f43875ce3939e73ee52e32dc69c4df33193c098"
+        },
+        {
+          "id": "green-line-article2-3-third-country-crossing-el",
+          "text": "3. Επιτρέπεται η διέλευση της γραμμής από υπηκόους τρίτων χωρών\nμόνον εφόσον:\nα) διαθέτουν είτε άδεια παραμονής που έχει εκδοθεί από την Κυπριακή\nΔημοκρατία είτε έγκυρο ταξιδιωτικό έγγραφο και, εφόσον απαιτεί­\nται, έγκυρη θεώρηση εισόδου για την Κυπριακή Δημοκρατία, και\nβ) δεν συνιστούν απειλή για τη δημόσια τάξη και ασφάλεια.",
+          "location": "Regulation (EC) No 866/2004, Article 2(3): third-country crossing conditions, official Greek consolidated EUR-Lex PDF, PDF page 4 (version 31.08.2015).",
+          "sha256": "948feb8c4552e0e95d20ab1c8f1fdbb463354561ad284635f256d5af69dcf802"
+        },
+        {
+          "id": "green-line-article2-4-authorized-crossing-points-el",
+          "text": "4. Επιτρέπεται η διέλευση της γραμμής μόνον στα σημεία διέλευσης\nπου επιτρέπουν οι αρμόδιες αρχές της Κυπριακής Δημοκρατίας. Κατά­\nλογος των σημείων αυτών διέλευσης περιέχεται στο παράρτημα I.",
+          "location": "Regulation (EC) No 866/2004, Article 2(4): authorized crossing points, official Greek consolidated EUR-Lex PDF, PDF page 5 (version 31.08.2015).",
+          "sha256": "6bb250f78430cc9ea75a8944753b855231f740132b6fac1f8b176c7897bfe1a6"
+        },
+        {
+          "id": "green-line-article3-line-surveillance-el",
+          "text": "Η Κυπριακή Δημοκρατία επιτηρεί αποτελεσματικά όλο το μήκος της\nγραμμής, έτσι ώστε να αποθαρρύνει τα πρόσωπα από το να παρακάμ­\nπτουν τους ελέγχους στα σημεία διέλευσης του άρθρου 2 παράγραφος 4.",
+          "location": "Regulation (EC) No 866/2004, Article 3: line surveillance, official Greek consolidated EUR-Lex PDF, PDF page 5 (version 31.08.2015).",
+          "sha256": "fb49d4924ebb0a03e17af02064d7f8b29db93753bf0b403075e5337e6d9bb670"
+        }
+      ]
+    },
+    {
+      "candidate_id": "cy-scc-edd-215-19",
+      "source_url": "https://supremeconstitutionalcourt.gov.cy/Judicial/sc/scc.nsf/0/7c594d32e58a4d32c2258c2800318713/$FILE/%CE%95%CE%94%CE%94%20215-19%20.pdf",
+      "request_url": "https://supremeconstitutionalcourt.gov.cy/Judicial/sc/scc.nsf/0/7c594d32e58a4d32c2258c2800318713/$FILE/%CE%95%CE%94%CE%94%20215-19%20.pdf",
+      "resolved_url": "https://supremeconstitutionalcourt.gov.cy/Judicial/sc/scc.nsf/0/7c594d32e58a4d32c2258c2800318713/$FILE/%CE%95%CE%94%CE%94%20215-19%20.pdf",
+      "retrieved_at": "2026-10-19T23:33:20Z",
+      "source_content_type": "application/pdf",
+      "source_bytes": 321972,
+      "source_sha256": "eaa4e4f0b259479dae2abba02bcc3190211aecb7ba27bb1e23f9f91a6dfb2dc6",
+      "raw_path": "source-library/cyprus/captures/raw/cy-scc-edd-215-19-eaa4e4f0b259479dae2abba02bcc3190211aecb7ba27bb1e23f9f91a6dfb2dc6.pdf",
+      "accepted": true,
+      "candidate_source_path": "source-library/cyprus/captures/raw/cy-scc-edd-215-19-eaa4e4f0b259479dae2abba02bcc3190211aecb7ba27bb1e23f9f91a6dfb2dc6.pdf",
+      "retrieval_status": "converted_review_candidate",
+      "review_state": "accepted_raw_artifact_conversion_candidate",
+      "source_acceptance_status": "Official Greek appellate judgment EDD 215/19 dated 23 October 2024; complete 13-page decision and dispositive result. Derived Markdown remains unaccepted.",
+      "retrieval_note": "Official Greek appellate judgment EDD 215/19 dated 23 October 2024; complete 13-page decision and dispositive result. Captured by ordinary TLS-validated HTTPS; no challenge bypass. Exact bytes and hash are preserved.",
+      "candidate_text_path": "source-library/cyprus/candidates/case-law/cy-scc-edd-215-19.md",
+      "converted_sha256": "1f483141d9c072a19cc183619ea16d43e6320c689ed0bf797f75c046208c1807",
+      "converted_bytes": 27660,
+      "content_selector": "Complete 13-page official decision, PDF pages 1–13",
+      "conversion_engine": "pypdf 6.21.1; page-bounded text extraction",
+      "conversion_replay_script": "source-library/cyprus/scripts/convert_primary_sources.py",
+      "semantic_review": {
+        "status": "pass",
+        "scope": "Official Greek appellate judgment EDD 215/19 dated 23 October 2024; complete 13-page decision and dispositive result.; converted Markdown remains a separate unaccepted candidate."
+      }
+    },
+    {
+      "candidate_id": "cy-cap105-amendment-4i-2025",
+      "source_url": "https://www.mof.gov.cy/mof/gpo/gazette.nsf/0BF798F358C48EF0C2258C310036FCF9/$file/5026%2014%202%202025%20PARARTHMA%201o%20MEROS%20I.pdf",
+      "request_url": "https://www.mof.gov.cy/mof/gpo/gazette.nsf/0BF798F358C48EF0C2258C310036FCF9/$file/5026%2014%202%202025%20PARARTHMA%201o%20MEROS%20I.pdf",
+      "resolved_url": "https://www.mof.gov.cy/mof/gpo/gazette.nsf/0BF798F358C48EF0C2258C310036FCF9/$file/5026%2014%202%202025%20PARARTHMA%201o%20MEROS%20I.pdf",
+      "retrieved_at": "2026-10-19T23:33:20Z",
+      "source_content_type": "application/pdf",
+      "source_bytes": 1980154,
+      "source_sha256": "9fcdfea91bad67d3d36b654cd7cfcb20ca3c4d2744830d489a1094e3dfaf745e",
+      "raw_path": "source-library/cyprus/captures/raw/cy-cap105-amendment-4i-2025-9fcdfea91bad67d3d36b654cd7cfcb20ca3c4d2744830d489a1094e3dfaf745e.pdf",
+      "accepted": true,
+      "candidate_source_path": "source-library/cyprus/captures/raw/cy-cap105-amendment-4i-2025-9fcdfea91bad67d3d36b654cd7cfcb20ca3c4d2744830d489a1094e3dfaf745e.pdf",
+      "retrieval_status": "converted_review_candidate",
+      "review_state": "accepted_raw_artifact_conversion_candidate",
+      "source_acceptance_status": "Official Greek Gazette issue 5026 dated 14 February 2025, Law 4(I)/2025; captured full 64-page issue and verified the Act at printed pages 15–78. Derived Markdown remains unaccepted.",
+      "retrieval_note": "Official Greek Gazette issue 5026 captured and hash-verified. Law 4(I)/2025 appears on printed pages 15–78. Section 29 on PDF page 64 / printed page 78 is accepted as one bounded passage after semantic review; the full converted Act remains a review candidate, and the Cabinet notice/current commencement remains unresolved.",
+      "candidate_text_path": "source-library/cyprus/candidates/legislation/cy-cap105-amendment-4i-2025.md",
+      "converted_sha256": "3b5bb7fdd0364c732ed6646803d8d4c509df52153c3c96c7b266db8f86eadb2c",
+      "converted_bytes": 266016,
+      "content_selector": "Complete 64-page official Gazette PDF; instrument printed pages 15–78 / PDF pages 1–64",
+      "conversion_engine": "pypdf 6.21.1; page-bounded text extraction",
+      "conversion_replay_script": "source-library/cyprus/scripts/convert_primary_sources.py",
+      "semantic_review": {
+        "status": "pass",
+        "scope": "Official Greek Gazette issue 5026 dated 14 February 2025, Law 4(I)/2025; captured full 64-page issue and verified the Act at printed pages 15–78.; converted Markdown remains a separate unaccepted candidate."
+      },
+      "accepted_passage_ids": [
+        "law4-2025-s29-commencement"
+      ],
+      "accepted_passage_scope": "Section 29 only, PDF page 64 / printed page 78; no proof the Cabinet notice was published or that the amendment is operative."
+    },
+    {
+      "candidate_id": "cy-general-admin-law-amendment-28i-2020",
+      "source_url": "https://www.mof.gov.cy/mof/gpo/gazette.nsf/E868571E197C33ECC225872C003AC3D0/$file/4748%2027%203%202020%20PARARTMA%201o%20MEROS%20I.pdf",
+      "accepted": false,
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_note": "Existing EGR S50 official Gazette locator returned HTTP 404 on ordinary TLS GET on 2026-10-20; no bytes captured. Re-resolve through the official Gazette index.",
+      "route_checks": [
+        {
+          "url": "https://www.mof.gov.cy/mof/gpo/gazette.nsf/E868571E197C33ECC225872C003AC3D0/$file/4748%2027%203%202020%20PARARTMA%201o%20MEROS%20I.pdf",
+          "checked_at": "2026-10-20",
+          "method": "ordinary TLS-validated HTTPS GET",
+          "http_status": 404,
+          "result": "The recorded official Gazette PDF locator returns HTTP 404. This is a dead-link result, not evidence that Law 28(I)/2020 is repealed or unavailable elsewhere."
+        }
+      ]
+    },
+    {
+      "candidate_id": "cy-directive-2004-38-original-el-op",
+      "source_url": "https://op.europa.eu/o/opportal-service/download-handler?identifier=a1435737-300a-4760-8462-03db75b27caa&format=pdf&language=el&productionSystem=cellar&part=",
+      "request_url": "https://op.europa.eu/o/opportal-service/download-handler?identifier=a1435737-300a-4760-8462-03db75b27caa&format=pdf&language=el&productionSystem=cellar&part=",
+      "resolved_url": "https://op.europa.eu/o/opportal-service/download-handler?identifier=a1435737-300a-4760-8462-03db75b27caa&format=pdf&language=el&productionSystem=cellar&part=",
+      "retrieved_at": "2026-10-20T09:10:23.647Z",
+      "source_content_type": "application/pdf",
+      "source_bytes": 275067,
+      "source_sha256": "5436bcf480299ef17722591059333ced8f8e916e861ae7603f4b95e7eb35ae01",
+      "raw_path": "source-library/cyprus/captures/raw/cy-directive-2004-38-original-el-op-5436bcf480299ef17722591059333ced8f8e916e861ae7603f4b95e7eb35ae01.pdf",
+      "accepted": false,
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_note": "The raw 47-page official Greek PDF is preserved. The canonical candidate is replayable with pinned pypdf 6.21.1. A prior Adobe output and glyph-mapped derivative are retained for comparison, but are not canonical. Neither conversion has been accepted as complete legal text.",
+      "candidate_text_path": "source-library/cyprus/candidates/legislation/cy-directive-2004-38-original-el-op-pypdf.md",
+      "converted_sha256": "ae8d8065b34d36abdb19635e1ce3b1bb48fcb0102e0c77456905d9776c473939",
+      "converted_bytes": 122812,
+      "content_selector": "Full official Greek original-edition PDF pages 1–47; relevant identity checks: OJ pages 77, 91/Article 5, 98/Article 10, and 123/Article 42.",
+      "conversion_engine": "pypdf 6.21.1; 47-page extraction with printed-page/article checks and only µ→μ, ∆→Δ, Ω→Ω glyph-map corrections.",
+      "conversion_replay_status": "verified_pypdf_6_21_1_source_and_candidate_hashes_match",
+      "review_state": "review_candidate",
+      "source_acceptance_status": "Hash-verified official Greek PDF is bound to EGR S30. The deterministic pypdf conversion is a full-text candidate; page-level visual and exhaustive word-level review, current consolidated wording, and later amendments/corrigenda remain unresolved.",
+      "derived_artifacts": [
+        {
+          "path": "source-library/cyprus/candidates/legislation/cy-directive-2004-38-original-el-op.md",
+          "content_type": "text/markdown; charset=utf-8",
+          "bytes": 117677,
+          "sha256": "abdc0279993577a768672e83ac469dcebc8deaa4d33013a67987f14781b202bb",
+          "producer": "Adobe Acrobat PDF to Markdown; connector version unreported; glyph-mapped derivative retained only for comparison",
+          "source_capture_sha256": "5436bcf480299ef17722591059333ced8f8e916e861ae7603f4b95e7eb35ae01"
+        },
+        {
+          "path": "source-library/cyprus/captures/derived/cy-directive-2004-38-original-el-op-adobe-raw.md",
+          "content_type": "text/markdown; charset=utf-8",
+          "bytes": 117726,
+          "sha256": "994cd3798e4a41a9240015884ec2f14aefa956571dd83bd4a102567f2ab8ce9c",
+          "producer": "Adobe Acrobat PDF to Markdown; connector version unreported",
+          "source_capture_sha256": "5436bcf480299ef17722591059333ced8f8e916e861ae7603f4b95e7eb35ae01"
+        }
+      ],
+      "conversion_replay_script": "source-library/cyprus/scripts/convert_primary_sources.py"
     }
   ],
-  "accepted_source_count": 0
+  "accepted_source_count": 10
 }

@@ -8,7 +8,7 @@ This pack contains 54 candidate sources found from the Danish EU free-movement r
 - Five changed-source conversions are staged in `../../temp/norway/pending/` for review.
 - One eInnsyn response is a JavaScript shell with no extractable source body.
 - Twenty-one routes failed with HTTP 403 or a network error; local Avdeling II regulations have no package in the documented public API list.
-- No source is accepted.
+- No locally stored artifact is accepted.
 
 The live Lovdata API list reported the current-law, central-regulation and 2026 Avdeling I packages last modified on 17 October 2026. The capture keeps the exact list, package sizes, modification times, archive hashes, and selected member hashes in [the capture results](references/norway-capture-results.json). The archive-backed set includes the Immigration Act and Regulations, EEA Act, Public Administration Act, Public Information Act and Regulation, Personal Data Act, Legal Aid Act, and current worker-mobility legislation. It also retains the repealed 1992 worker-mobility text as historical context and the not-yet-effective 2025 Public Administration Act as a commencement watch.
 

@@ -30,13 +30,10 @@ Two official IND pages were retrieved from their public URLs and extracted from 
 | IND residence and appeal guidance | Converted review candidates | Two official pages extracted; one displays a 25 September 2026 update date | Parent-page rediscovery and dependable change/version metadata are absent; verify linked forms and exact procedural scope |
 | Wider 52-record monitor inventory | Review-candidate capture | 50 exact responses; 49 page conversions replay-verified; one textless discovery shell; two retrieval failures | Records are not reconciled into the eight-record scoped list; no source-specific version, reuse, or completeness rule established |
 
-## Next steps before acceptance
+## Ordinary source use and optional monitoring
 
-1. Identify and validate a documented Wetten.nl XML export route that can be followed without a form or interactive session, then compare its output with the HTML capture.
-2. Confirm source-use terms from the publisher's current documentation.
-3. Reconcile consolidated texts with official promulgation and commencement records where version precision matters.
-4. Add historical-version retrieval for dated legal questions and preserve future/undated amendment notices separately.
-5. Rediscover IND guidance from official parent indexes and record outbound form changes; do not submit user or case data.
-6. Reconcile the monitor conversions into the scoped register and resolve the one shell and two failed routes before making a national coverage claim.
+For ordinary research, use the latest government-published Wetten.nl text or official IND page after checking its displayed version/date and scope. A reviewed link is usable without XML export, local capture, publisher API, replay, or historic-version automation. Check promulgation, commencement, or an older version only when it affects the question; no full history is a default gate.
 
-No source is accepted. A successful response, stable identifier or replay hash does not establish legal completeness or trust.
+If recurring monitoring or local retention is requested, then confirm the relevant publisher terms and choose a documented route. Keep IND forms and services read-only and do not submit or retain user data. The monitor inventory's failed routes and textless shell remain coverage limits, not proof that a source reference is unusable.
+
+No locally stored artifact is accepted. A successful response, stable identifier or replay hash does not establish legal completeness or trust.

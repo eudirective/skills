@@ -12,7 +12,9 @@ The archive also contains English EU acts and CJEU judgments; those belong to th
 
 ## Use
 
-From this directory run:
+For ordinary research, use the latest government-published Riksdag, Migrationsverket, or court source and note its displayed date/version and limits. A human-reviewed official link is enough; the sync, capture, conversion, and replay scripts below are optional tools for retaining copies or running a recurring monitor.
+
+Optional retained-copy maintenance, from this directory:
 
 ```powershell
 node sync.mjs --check
@@ -30,4 +32,4 @@ Retrieved Markdown is an update candidate. It does not establish legal completen
 
 ## Agency guidance
 
-The 12 official agency guidance records in `references/guidance-manifest.json` are refreshed independently with `node sync-guidance.mjs sync` and replay-checked with `node sync-guidance.mjs verify`. Changed text is staged for review and promoted with `node sync-guidance.mjs ack <source-id>`. Content-addressed original PDF and HTML responses are stored physically under the project-root `temp/`; converted text is in `documents/guidance/`. This includes the current LIFOS RS/030/2021 version 5 and RS/008/2022 version 6 PDFs. Their landing pages and PDF attachments are both saved. LIFOS TLS verification uses the official ISRG Root YR certificate pinned in `references/certs/isrg-root-yr.pem`, sourced from [Let's Encrypt](https://letsencrypt.org/certs/gen-y/root-yr.pem), fingerprint SHA-256 `E5:7B:7E:6F:15:0C:41:91:02:E8:D5:C0:55:72:9F:F9:67:B9:D1:A8:29:BF:00:CE:C8:9C:A6:04:EB:F4:A8:6F`.
+Optional guidance-copy maintenance: the 12 official agency guidance records in `references/guidance-manifest.json` can be refreshed with `node sync-guidance.mjs sync` and replay-checked with `node sync-guidance.mjs verify`. Review changed text before promoting a retained copy. LIFOS originals remain under the project-root `temp/` tree; none of this is required to use the live official guidance page as a reference.

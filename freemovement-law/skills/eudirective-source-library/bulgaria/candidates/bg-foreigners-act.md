@@ -11,7 +11,7 @@
 - Extraction: `PDF text extraction; 157 pages`
 - Exact response SHA-256: `69a552ffdbde35758f40b47e480f667de5a601e964e3c6eaba65b8ef8467ba61`
 
-> **Review candidate.** Not accepted into the trusted source corpus. Check source identity, current version, scope, completeness, and reuse conditions before reliance.
+> **Local-copy review notice.** This captured file is not accepted as a retained copy. A direct official link can be used for research after reviewing relevant content, date/version, scope, and caveats. Local-copy acceptance and reuse terms matter only when retaining or redistributing this file.
 
 ## Captured source text
 

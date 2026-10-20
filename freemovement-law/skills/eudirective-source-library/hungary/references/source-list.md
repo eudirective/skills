@@ -6,7 +6,7 @@ This source list reconciles the Hungarian national material in `hungary laws and
 
 The fixed statutory registry is `manifest.json`. It covers free movement and applications (Act I of 2007; Decree 113/2007; OIF forms under Decree 9/2024), procedure and remedies, records management, public-data access, data protection, fees and address records, digital administration, immigration context, social security, civil status, private international law, and supporting legal context.
 
-Primary publisher: [Nemzeti Jogszabálytár](https://njt.jog.gov.hu/). The pack uses NJT's official ELI URIs for acts and ministerial instruments and the official current consolidated pages for government decrees. Every retrieved instrument is checked against its Hungarian citation before conversion.
+Primary publisher: [Nemzeti Jogszabálytár](https://njt.jog.gov.hu/). Use its official current consolidated pages as human-reviewed source references and record the displayed version. Under the recorded portal terms, the updater does not fetch, store, or poll NJT law content.
 
 ## OIF procedures, records, and public data
 
@@ -29,4 +29,4 @@ The source archive's NAIH procedure guidance is pinned from official NAIH pages,
 
 ## Retrieval boundary
 
-All registered Hungarian Acts, Government decrees, and ministerial instruments now have pinned NJT routes and are checked against their citations before conversion. Annual NJT issue catalogues and official OIF/NAIH/AJBH catalogues are crawled for candidate new records; discovery never silently accepts a new law, consolidated text, or publication. `manifest.json` maps supplied archive labels to the official OIF records even where the official filenames differ. The live report records the resolved source ID and catalogue matches. Each successfully retrieved source can be saved independently when another active source fails; the discovery baseline advances only after every discovery page succeeds.
+The manifest keeps 58 Hungarian Acts, decrees, and ministerial instruments as official NJT references, but they are manual-only. The updater excludes NJT URLs and catalogues from online runs. It continues to maintain permitted OIF/NAIH/AJBH pages and catalogues; newly found links remain candidates until reviewed. `manifest.json` maps supplied archive labels to official OIF records even where filenames differ.

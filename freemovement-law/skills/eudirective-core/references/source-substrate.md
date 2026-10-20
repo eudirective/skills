@@ -19,6 +19,8 @@ C1 does not require byte-identical official files. A source is incorporated when
 
 For a verified source note, the official source identity and the relevant fixed/current/consolidated version must be checked. The representation hash protects the stored project copy against corruption; it does not prove byte identity with the official publication.
 
+When no usable consolidation exists, a verified source note may use the closest government-published version. Record its displayed date or cutoff and limits; do not block ordinary source use or C1 on reconstructing the full Gazette amendment chain. Check a specific later act only when a known, material currentness or legal-effect question affects the scope. Full-text capture and conversion remain optional unless exact wording, a pinpoint, or a retained full copy is needed.
+
 Run:
 
 ```bash

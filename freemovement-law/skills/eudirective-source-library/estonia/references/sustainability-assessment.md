@@ -4,7 +4,7 @@ Skill: assess-source-rule-sustainability v0.2.0
 
 Status date: 19 October 2026
 
-State: 42 candidates; 21 identified legal-text records converted, plus 12 current Estonian consolidations linked to English source leads; zero accepted sources. The 33 legal-text artifacts are unaccepted review candidates and pass offline replay.
+State: 42 candidates; 21 identified legal-text records converted, plus 12 current Estonian consolidations linked to English source leads; zero locally stored copies accepted. The 33 legal-text artifacts are unaccepted review candidates and pass offline replay.
 
 ## Assessment boundary
 
@@ -36,7 +36,7 @@ A future rule must query the publisher for the exact assessment date and preserv
 
 | Source group | Maturity | Proposed route and evidence | Main unresolved sustainability issue |
 |---|---|---|---|
-| Current Estonian national acts | Converted review candidates | Thirteen unique current acts resolved through exact-title date search and exact XML; all IDs and validity intervals checked and replayed offline | All remain unaccepted pending scope review; the finite target-title list needs periodic expansion from publisher indexes; reuse terms and request limits need fuller confirmation |
+| Current Estonian national acts | Converted local-copy candidates | Thirteen unique current acts resolved through exact-title date search and exact XML; all IDs and validity intervals checked and replayed offline | Local copies remain unaccepted pending proportionate review; the finite target-title list needs periodic expansion from publisher indexes; reuse terms matter for recurring or bulk copying |
 | Exact Estonian editions and implementing regulations | Converted review candidates | Two regulation editions and one future-effective Act edition downloaded from exact official document IDs; XML identity and body checked | Exact records preserve their own version dates and must not be substituted for current wording |
 | English legal editions | Converted review candidates | Sixteen exact official `blob-html` records preserve article body, publisher metadata, translation date, and in-force period | Several source URLs labeled as current leads resolve to expired English editions; endpoint stability and reuse terms need confirmation; Estonian is controlling |
 | Ministry residence guidance and linked forms | Discovery-only | Re-fetch official parent pages and resolve links for notices, forms, and EU-residence instructions | Ministry terminology conflicts with the statutory “right of residence”; page/form dates and local-government differences need reconciliation |
@@ -49,12 +49,14 @@ A future rule must query the publisher for the exact assessment date and preserv
 
 The Ministry of the Interior's population-register page correctly explains that EU citizens submit a residence notice to the relevant city or rural municipality and links to the Citizen of the European Union Act. It also describes temporary and permanent EU residence rights as “residence permits,” while the Act and implementing regulation use “right of residence.” This is a material terminology and accuracy conflict. The ministry page should remain a review lead until its wording is reconciled; do not convert its wording into an operative rule.
 
-## Repair priorities before rule acceptance
+## Optional work for retained copies or recurring monitoring
 
-1. Review scope and amendment/version chains for the 13 current Acts, two regulations, and future edition before acceptance. Keep Estonian authoritative versions and English translation histories distinct.
+The listed API, reuse, and conversion checks apply to a local-copy or recurring-monitor workflow. They do not gate a human-reviewed official Riigi Teataja page or use of its displayed version within scope.
+
+1. Use the latest government-published Estonian consolidation for the relevant date and record its displayed validity. Keep future-effective editions and English translations distinct. Check named later changes only when they may affect the provisions in scope; do not reconstruct full amendment chains.
 2. Confirm reuse terms, request limits, rate limits, maximum payload expectations, and any registration requirement from official publisher documentation.
 3. Expand the exact-title set from official source indexes when new candidate laws are identified; keep the date-bound search and explicit document-type/publisher identity checks, and record future-effective versions separately.
-4. Reconcile the now-retrieved current Administrative Procedure, Administrative Court Procedure, fees, public-information, data-protection, and legal-aid texts against amendment commencement dates and the official legislative history.
+4. Review relevant provisions in the current Administrative Procedure, Administrative Court Procedure, fees, public-information, data-protection, and legal-aid texts. Follow a specific later amendment or commencement condition only when it may affect the question; otherwise record the publisher's displayed version and limits.
 5. Verify the residence-guidance terminology conflict with the Ministry and rediscover application forms from official parent indexes. Add link/date change tracking for MFA mission and provider routes.
 6. Retrieve and assess procedure, remedies, privacy, oversight and court-decision sources through their own official channels; do not assume the Gazette law rule applies to them.
 7. Add only public source pages and form definitions. Never automate submissions to the e-visa portal or ingest applicants' personal data.

@@ -1,0 +1,19 @@
+# Source selection and review policy
+
+Use the responsible official publisher for every source type: the law publisher for legislation, the court service for judgments and other decisions, and the competent authority or official service for guidance, forms, mission instructions, procedures, remedies, complaints, and oversight. This policy applies to all EU and national sources.
+
+For national legislation, prefer a usable government-published consolidation; for EU legislation, use the responsible EU legal-information publisher's consolidated text when available. If none is usable—because the Gazette is fragmented, a portal is inaccessible, or no consolidation exists—use the closest usable government-published or official-service version, such as a coordinated text, dated act, official translation, or authority/court-hosted copy. Record what it is, its language, date or cutoff, and any caveat. Use it within that stated scope; do not assemble every Gazette fragment or compare the full amendment history by default.
+
+### Trusting a government consolidation
+
+When a government legal-information service publishes a consolidated text, accept it as a usable official reference when the publisher's official role and the instrument's identity are clear, the consolidation's stated status or date/cutoff is reasonably understandable, and no concrete warning undermines reliance. These are practical judgment cues, not a new form or technical checklist; a missing date alone does not automatically disqualify a text. Use the text within the scope that can be established.
+
+If the service's authority, consolidation status, update practices, or a material caveat remain uncertain, offer the official website or legal-text service as a whole to the user for human review. Include its portal entry point, the publisher's explanation of authority and versioning, the relevant consolidated text, and visible caveats. State what is uncertain and ask the user to decide whether the source is trustworthy for the intended use. Do not silently reject the site or turn the uncertainty into a default requirement to crawl every page, reconstruct Gazette history, or capture the whole site. A human decision that the service is trustworthy makes its texts usable references within their reviewed scope; it does not establish topic coverage or country completeness.
+
+Use an individual Gazette act or later amendment only to answer a specific material question left open by the chosen text, such as a known change after its cutoff, commencement, correction, repeal, or missing provision. A government-published dated text can still be a useful source without proving later currentness.
+
+For ordinary research, a human-reviewed official page or document link is enough. Check the publisher, source identity, language, displayed date/version or cutoff, relevant content, and visible limitations. A local capture, conversion, hash, OCR, API client, replay setup, or scheduled updater is optional; add it only when retaining a copy, reproducible conversion, or recurring monitoring is actually needed and permitted. Never bypass access controls.
+
+Review only the passages, form fields, decision parts, or attachments that matter to the question. Compare a broader conversion with the original when OCR or another lossy process creates a material risk, or when relying on the whole converted text. Check attachments only when the research relies on them.
+
+Keep these outcomes distinct: a usable official reference, an accepted local copy, adequate topic coverage, and a completed country review. A reference can support a topic without a stored copy. Neither a link nor a locally accepted source proves that a topic or country review is complete. See source inventories for known gaps; do not turn copy-maintenance tasks into prerequisites for ordinary source use.

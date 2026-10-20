@@ -13,7 +13,11 @@ Use this skill only for the Romanian source inventory in `references/source-list
 
 The manifest and retrieval pipeline are Node-only. The source list is the inventory authority; do not silently add unrelated sources. Read `references/manifest.json` for the compiled records and the latest run report under the project-root `temp/eudirective-source-library-0.6.0/romania/work/` tree.
 
-## Update workflow
+For ordinary research, open the responsible official publisher page and use the latest government-published consolidation or the closest government-published text. Record its language, visible date/cutoff, and limitations. A human-reviewed official link is usable without running the local update pipeline, saving bytes, converting, replaying hashes, or accepting a local copy. Check individual amendment or Gazette records only for a material question the selected text does not resolve.
+
+## Optional local-copy maintenance
+
+Use this workflow only when updating retained Romanian source copies or a recurring monitor is requested. It does not gate ordinary reference use or topic research.
 
 1. Run `node scripts/build-manifest.mjs` after changing the included source list.
 2. Run `node scripts/sync-romania.mjs --check` to retrieve and compare all records without writing source snapshots. Official publishers and the three explicitly labeled secondary case-law hosts are separately allowlisted.
@@ -32,4 +36,4 @@ The main national inventory has 71 converted documents under `documents/` and ei
 
 ## Added guidance lane
 
-Run `node scripts/sync-guidance.mjs sync` to check the 10 sources in `references/guidance-manifest.json`, and `node scripts/sync-guidance.mjs verify` to reproduce accepted and pending Markdown from saved official bytes. A changed text is staged in project-root `temp/`; promote it into the class-specific `documents/` folder recorded in the guidance manifest with `node scripts/sync-guidance.mjs ack <source-id>`. Content-addressed original PDF and HTML files, state, and reports are kept in the project-root `temp/` tree. The ANSPDCP Decision 133/2018 procedure and complaint form and the Avocatul Poporului petition model use official PDF files to avoid website navigation text.
+For the optional guidance-copy lane, run `node scripts/sync-guidance.mjs sync` to check the 10 configured sources and `verify` to reproduce saved Markdown. Review and promote changed local copies only when maintaining that lane. Original PDF/HTML bytes, state, and reports are retained under project-root `temp/`.

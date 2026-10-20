@@ -3,7 +3,7 @@
 Research date: 18 October 2026  
 Scope: Belgian national, federal, regional, mission, court, and oversight sources related to EU/EEA/Swiss free movement and third-country family members, entry and residence, administration, remedies, privacy, and access to records. The comparison leads were the Denmark, Sweden, Czechia, Hungary, and Romania source reviews. Belgium is an EU Member State; its national routes are checked independently.
 
-This is a bounded discovery register, not an accepted source pack or a complete inventory of Belgian law. It contains 39 distinct candidates and 0 accepted sources, including two previously retrieved and converted review artifacts. Each candidate is a lead or related source, not a claim of legal equivalence. The machine-readable record is candidate-manifest.json.
+This is a bounded discovery register, not an accepted source pack or a complete inventory of Belgian law. It contains 39 distinct candidates and 0 accepted local copies, including two previously retrieved and converted review artifacts. Human-reviewed official links remain usable within their stated scope. Each candidate is a lead or related source, not a claim of legal equivalence. The machine-readable record is candidate-manifest.json.
 
 ## Candidate register
 

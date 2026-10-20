@@ -5,7 +5,7 @@
 - Retrieved: 2026-10-15T22:58:05Z
 - Page access: browser-rendered official text; direct HTTP download returned 403
 - Content: short summary derived from browser-rendered official text; no source-text conversion
-- Status: raw source capture and conversion still required
+- Status: human-reviewed official reference; no capture or conversion is required for ordinary use. Recheck the live page, current instructions and linked material when relying on it; retain a local copy only if reproducibility or recurring monitoring is needed.
 
 # Famille de citoyen européen
 

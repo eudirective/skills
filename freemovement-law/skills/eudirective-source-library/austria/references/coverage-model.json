@@ -1,0 +1,373 @@
+{
+  "schema_version": "1.0.0",
+  "jurisdiction": "AT",
+  "review_scope": "EU free movement and third-country family-member visa, entry, residence, procedure, remedies, and operational practice",
+  "as_of": "2026-10-19",
+  "source_evidence_policy": "Topic evidence may cite a human-reviewed official reference within its reviewed scope, even when no local copy exists or a stored copy remains unaccepted. Capture, extraction, replay and semantic gates apply only to retained local artifacts or extracted passages relied on beyond direct review.",
+  "completion_rule": "Country review is complete only when every required topic has all required layers covered by an accepted local artifact or a separately recorded usable official reference, or a reasoned not-applicable entry; every applicable Directive article is mapped or reasoned not applicable; every resolved dependency has evidence; local-copy acceptance checks pass for artifacts relied on beyond direct review; a validated case-law batch records all 55 planned searches across the eleven RIS court collections with every result screened; and all nine Land plus every BMEIA representation task has a final evidence-backed disposition.",
+  "required_layers": [
+    "primary_law",
+    "implementing_rule",
+    "procedure",
+    "remedy_or_practice"
+  ],
+  "topics": [
+    {
+      "id": "visa_and_entry_privileges",
+      "label": "Entry and visa rights for EEA/Swiss citizens and privileged family members",
+      "status": "incomplete",
+      "layers": {
+        "primary_law": {
+          "source_ids": [
+            "at-fpg-2-4-11",
+            "at-fpg-15a",
+            "at-fpg-15b",
+            "at-fpg-11",
+            "at-fpg-11a",
+            "at-fpg-11b"
+          ],
+          "status": "covered"
+        },
+        "implementing_rule": {
+          "source_ids": [
+            "at-nag-dv-5"
+          ],
+          "status": "partial"
+        },
+        "procedure": {
+          "source_ids": [
+            "at-bmeia-visa",
+            "at-bmi-eea-documentation-form",
+            "at-bmi-eea-documentation-form-explanation",
+            "at-fpg-11",
+            "at-fpg-11b",
+            "at-guidance-visa-application",
+            "at-oesterreich-schengen-visa-form"
+          ],
+          "status": "partial"
+        },
+        "remedy_or_practice": {
+          "source_ids": [
+            "at-bmeia-visa",
+            "at-fpg-11",
+            "at-fpg-11a",
+            "at-vwgh-ra-2015-09-0137",
+            "at-vwgh-ra-2019-22-0177"
+          ],
+          "status": "gap"
+        }
+      },
+      "open_issues": [
+        "Mission-specific instructions, appointment routes, checklists, outsourcing, and representation limits remain only partly reviewed across 524 BMEIA representation records.",
+        "Directive 2004/38 article mapping contains unresolved rows."
+      ]
+    },
+    {
+      "id": "eu_family_residence",
+      "label": "Residence rights and residence-card procedure for mobile EU/EEA/Swiss families",
+      "status": "incomplete",
+      "layers": {
+        "primary_law": {
+          "source_ids": [
+            "at-nag-51",
+            "at-nag-52",
+            "at-nag-53",
+            "at-nag-53a",
+            "at-nag-54",
+            "at-nag-54a",
+            "at-nag-55",
+            "at-nag-56",
+            "at-nag-57"
+          ],
+          "status": "covered"
+        },
+        "implementing_rule": {
+          "source_ids": [
+            "at-nag-dv-5",
+            "at-nag-dv-anl-5",
+            "at-nag-dv-anl-6"
+          ],
+          "status": "partial"
+        },
+        "procedure": {
+          "source_ids": [
+            "at-bmi-eea-documentation-form",
+            "at-bmi-eea-documentation-form-explanation",
+            "at-guidance-family-card",
+            "at-nag-3-authority",
+            "at-nag-4-venue"
+          ],
+          "status": "partial"
+        },
+        "remedy_or_practice": {
+          "source_ids": [
+            "at-bvwg-w112-2246194-2-2023",
+            "at-lvwg-wien-2022-6086",
+            "at-vwgh-ra-2015-09-0137",
+            "at-vwgh-ra-2022-22-0149",
+            "at-vwgh-ro-2020-22-0020",
+            "at-vwgh-ro-2021-22-0012"
+          ],
+          "status": "partial"
+        }
+      },
+      "open_issues": [
+        "NAG §54(7) and §55(3) crosswalk remains subject to route-specific validation.",
+        "Land-level authority procedures, forms, appointment routes, and checklists remain incomplete.",
+        "Annex E/F are accepted as statutory card specimens; current conformity of the issued card with Council Regulation (EU) 2025/1208 remains unresolved because the blank artwork does not demonstrate the standardized data-field code or machine-readable/security features."
+      ]
+    },
+    {
+      "id": "administrative_decision_and_delay",
+      "label": "Administrative files, decision deadlines, delay, and review routes",
+      "status": "incomplete",
+      "layers": {
+        "primary_law": {
+          "source_ids": [
+            "at-avg-17",
+            "at-avg-73",
+            "at-vwgvg-7",
+            "at-vwgvg-8",
+            "at-nag-3-authority",
+            "at-nag-4-venue"
+          ],
+          "status": "covered"
+        },
+        "implementing_rule": {
+          "source_ids": [
+            "at-bfa-vg-9",
+            "at-bfa-vg-10"
+          ],
+          "status": "covered"
+        },
+        "procedure": {
+          "source_ids": [
+            "at-nag-3-authority",
+            "at-nag-4-venue"
+          ],
+          "status": "partial"
+        },
+        "remedy_or_practice": {
+          "source_ids": [
+            "at-vwgh-ra-2015-09-0137",
+            "at-vwgh-ra-2019-22-0177",
+            "at-vwgvg-7",
+            "at-vwgvg-8"
+          ],
+          "status": "partial"
+        }
+      },
+      "open_issues": [
+        "Map accepted general procedure statutes to exact refusal, delay, notice, and complaint paths; case-law discovery remains open."
+      ]
+    },
+    {
+      "id": "refusal_removal_and_continued_residence",
+      "label": "Refusal, loss of residence rights, expulsion/removal, and procedural safeguards",
+      "status": "incomplete",
+      "layers": {
+        "primary_law": {
+          "source_ids": [
+            "at-fpg-66",
+            "at-fpg-67",
+            "at-fpg-70",
+            "at-nag-54",
+            "at-nag-55"
+          ],
+          "status": "covered"
+        },
+        "implementing_rule": {
+          "source_ids": [
+            "at-bfa-vg-9",
+            "at-bfa-vg-10"
+          ],
+          "status": "covered"
+        },
+        "procedure": {
+          "source_ids": [
+            "at-nag-3-authority",
+            "at-nag-4-venue",
+            "at-nag-55"
+          ],
+          "status": "partial"
+        },
+        "remedy_or_practice": {
+          "source_ids": [
+            "at-bvwg-g306-2026-2325799",
+            "at-vwgh-ra-2023-22-0090-0091",
+            "at-vwgh-ro-2020-09-0011",
+            "at-vwgh-ro-2021-22-0012"
+          ],
+          "status": "partial"
+        }
+      },
+      "open_issues": [
+        "Complete the NAG §54(7) versus §55(3) crosswalk through BFA/FPG steps; verify the two 2026 paired BVwG proceedings and run cross-court discovery."
+      ]
+    },
+    {
+      "id": "information_access_and_oversight",
+      "label": "Information access, file access, complaints, and oversight routes",
+      "status": "incomplete",
+      "layers": {
+        "primary_law": {
+          "source_ids": [
+            "at-ifg-1",
+            "at-ifg-2",
+            "at-ifg-3",
+            "at-ifg-4",
+            "at-ifg-5",
+            "at-ifg-6",
+            "at-ifg-7",
+            "at-ifg-8",
+            "at-ifg-9",
+            "at-ifg-10",
+            "at-ifg-11",
+            "at-ifg-12",
+            "at-ifg-13",
+            "at-ifg-14",
+            "at-ifg-15",
+            "at-ifg-16",
+            "at-ifg-17",
+            "at-ifg-18",
+            "at-ifg-19",
+            "at-ifg-20"
+          ],
+          "status": "covered"
+        },
+        "implementing_rule": {
+          "source_ids": [],
+          "status": "unresolved"
+        },
+        "procedure": {
+          "source_ids": [
+            "at-dsb-complaint",
+            "at-dsb-online-complaint-form",
+            "at-ifg-7",
+            "at-ifg-8",
+            "at-volksanwaltschaft-complaint",
+            "at-volksanwaltschaft-online-complaint-form",
+            "at-volksanwaltschaft-pdf-complaint-form"
+          ],
+          "status": "partial"
+        },
+        "remedy_or_practice": {
+          "source_ids": [
+            "at-ifg-11",
+            "at-ifg-14",
+            "at-ifg-15",
+            "at-vwgvg-7",
+            "at-vwgvg-8"
+          ],
+          "status": "partial"
+        }
+      },
+      "open_issues": [
+        "Identify any applicable implementing instruments and verify the IFG application route, current forms, authority jurisdiction, deadlines, and interaction with oversight channels."
+      ]
+    },
+    {
+      "id": "case_law_discovery_and_analysis",
+      "label": "Repeatable Austrian case-law discovery and reviewed decisions",
+      "status": "incomplete",
+      "layers": {
+        "primary_law": {
+          "source_ids": [
+            "at-nag-54",
+            "at-nag-55",
+            "at-fpg-66",
+            "at-fpg-67",
+            "at-fpg-70"
+          ],
+          "status": "covered"
+        },
+        "implementing_rule": {
+          "source_ids": [],
+          "status": "not_applicable",
+          "reason": "No separate implementing instrument is in the present bounded source scope; revisit this decision when the full topic review is performed."
+        },
+        "procedure": {
+          "source_ids": [],
+          "status": "unresolved"
+        },
+        "remedy_or_practice": {
+          "source_ids": [
+            "at-bvwg-g306-2026-2325799",
+            "at-bvwg-w112-2246194-2-2023",
+            "at-lvwg-ni-2019-518",
+            "at-lvwg-wien-2022-6086",
+            "at-vwgh-ra-2015-09-0137",
+            "at-vwgh-ra-2019-22-0177",
+            "at-vwgh-ra-2022-22-0149",
+            "at-vwgh-ra-2023-22-0090-0091",
+            "at-vwgh-ro-2020-09-0011",
+            "at-vwgh-ro-2020-22-0020",
+            "at-vwgh-ro-2021-22-0012"
+          ],
+          "status": "partial"
+        }
+      },
+      "open_issues": [
+        "Run and record the query plan across VwGH, BVwG, and all nine LVwG collections. Eleven selected decisions are indexed but do not establish complete case-law discovery."
+      ]
+    },
+    {
+      "id": "regional_residence_practice",
+      "label": "Competent residence authorities and local practice in all nine Länder",
+      "status": "incomplete",
+      "layers": {
+        "primary_law": {
+          "source_ids": [
+            "at-nag-3-authority",
+            "at-nag-4-venue"
+          ],
+          "status": "covered"
+        },
+        "implementing_rule": {
+          "source_ids": [],
+          "status": "unresolved"
+        },
+        "procedure": {
+          "source_ids": [],
+          "status": "unresolved"
+        },
+        "remedy_or_practice": {
+          "source_ids": [
+            "at-lvwg-wien-2022-6086"
+          ],
+          "status": "gap"
+        }
+      },
+      "open_issues": [
+        "Identify each Land's competent authority, card procedure, forms, appointment route, territorial jurisdiction, and evidence requirements"
+      ]
+    }
+  ],
+  "country_review_status": "incomplete",
+  "required_topic_ids": [
+    "visa_and_entry_privileges",
+    "eu_family_residence",
+    "administrative_decision_and_delay",
+    "refusal_removal_and_continued_residence",
+    "information_access_and_oversight",
+    "case_law_discovery_and_analysis",
+    "regional_residence_practice"
+  ],
+  "required_directive_article_map": "references/source-dependencies.json#directive_article_map",
+  "required_operational_register": "references/operational-discovery.json",
+  "card_format_assessment": "references/card-format-assessment.json",
+  "machine_checked_completion_requirements": {
+    "covered_layer": "At least one accepted local artifact or separately recorded usable official reference is required; unknown IDs and unreviewed references keep the layer open.",
+    "not_applicable_layer": "A written reason is required.",
+    "resolved_dependency": "A non-empty evidence list is required; unresolved, unknown, or article-map-review statuses keep the gate open.",
+    "case_law_discovery": "The 55 planned query tasks must be represented exactly once in a complete batch; every task needs a checked date, numeric result count, and a screening disposition for each result. Included decisions need a holding, outcome, procedural posture, and applicability limits.",
+    "operational_discovery": "Every terminal Land or mission field needs a verified value or reasoned not-applicable result, an official publisher URL or accepted source ID, and checked_on date. No-source results need exact queries, searched scope, date, numeric result count, and all result dispositions.",
+    "three_distinct_states": [
+      "source accepted",
+      "topic adequately covered",
+      "country review complete"
+    ]
+  },
+  "required_case_law_tasks": 55,
+  "required_case_law_court_collections": 11
+}

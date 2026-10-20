@@ -1,0 +1,1475 @@
+{
+  "schema_version": "1.0.0",
+  "jurisdiction": "HR",
+  "as_of": "2026-10-19",
+  "policy": "Rules may group sources and describe optional retrieval/conversion for retained local artifacts. A human-reviewed official reference may be used within the publisher, identity, language, version, passage, and caveats actually checked without capture, conversion, hashes, replay, or reproduction permission. Prefer a usable government-published consolidation; otherwise use the closest government-published version and record its cutoff and limits. Do not reconstruct a full Gazette chain by default. Semantic and reuse checks apply to retained copies, not ordinary link use. Neither reference use nor local-copy acceptance alone establishes topic or country completion.",
+  "rules": [
+    {
+      "rule_id": "hr-access-info-act-nn-eli-v1",
+      "source_ids": [
+        "hr-access-info-act"
+      ],
+      "retrieval": "GET stable official ELI/Gazette HTML URL; record final URL and metadata; do not use metadata API as full-text source.",
+      "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
+      "selector": ".sl-content .doc",
+      "status": "replayable_dom_fragment; manual_legal_review_pending",
+      "semantic_checks": [
+        "title and Gazette number match requested act",
+        "all headings/article numbers and paragraph/list boundaries retained",
+        "opening and ending provisions present",
+        "links/annexes inventoried",
+        "current version checked against responsible authority index",
+        "official text only; publisher shell excluded",
+        "fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-access-info-amend-69-22-nn-eli-v1",
+      "source_ids": [
+        "hr-access-info-amend-69-22"
+      ],
+      "retrieval": "GET stable official ELI/Gazette HTML URL; record final URL and metadata; do not use metadata API as full-text source.",
+      "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
+      "selector": ".sl-content .doc",
+      "status": "source_specific_capture_pending",
+      "semantic_checks": [
+        "title and Gazette number match requested act",
+        "all headings/article numbers and paragraph/list boundaries retained",
+        "opening and ending provisions present",
+        "links/annexes inventoried",
+        "current version checked against responsible authority index",
+        "official text only; publisher shell excluded",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-access-info-amend-85-15-nn-eli-v1",
+      "source_ids": [
+        "hr-access-info-amend-85-15"
+      ],
+      "retrieval": "GET stable official ELI/Gazette HTML URL; record final URL and metadata; do not use metadata API as full-text source.",
+      "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
+      "selector": ".sl-content .doc",
+      "status": "source_specific_capture_pending",
+      "semantic_checks": [
+        "title and Gazette number match requested act",
+        "all headings/article numbers and paragraph/list boundaries retained",
+        "opening and ending provisions present",
+        "links/annexes inventoried",
+        "current version checked against responsible authority index",
+        "official text only; publisher shell excluded",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-access-info-commissioner-publisher-selector-pending-v1",
+      "source_ids": [
+        "hr-access-info-commissioner"
+      ],
+      "retrieval": "GET the public official URL only; record redirects, final publisher host, content type, version/update date and response hash.",
+      "conversion": "Inspect the publisher DOM and register a stable main-content selector with exclusions before conversion. Never fall back to body.",
+      "selector": "source_specific_selector_pending",
+      "status": "rule_not_yet_executable",
+      "semantic_checks": [
+        "verify official publisher and page identity",
+        "register selector and exclusion list",
+        "compare heading, complete substantive sections and links with original"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-admin-disputes-act-nn-eli-v1",
+      "source_ids": [
+        "hr-admin-disputes-act"
+      ],
+      "retrieval": "GET stable official ELI/Gazette HTML URL; record final URL and metadata; do not use metadata API as full-text source.",
+      "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
+      "selector": ".sl-content .doc",
+      "status": "replayable_dom_fragment; source_accepted",
+      "semantic_checks": [
+        "title and Gazette number match requested act",
+        "all headings/article numbers and paragraph/list boundaries retained",
+        "opening and ending provisions present",
+        "links/annexes inventoried",
+        "current version checked against responsible authority index",
+        "official text only; publisher shell excluded",
+        "fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-azop-complaint-publisher-selector-pending-v1",
+      "source_ids": [
+        "hr-azop-complaint"
+      ],
+      "retrieval": "GET the public official URL only; record redirects, final publisher host, content type, version/update date and response hash.",
+      "conversion": "Inspect the publisher DOM and register a stable main-content selector with exclusions before conversion. Never fall back to body.",
+      "selector": "source_specific_selector_pending",
+      "status": "rule_not_yet_executable",
+      "semantic_checks": [
+        "verify official publisher and page identity",
+        "register selector and exclusion list",
+        "compare heading, complete substantive sections and links with original"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-azop-vis-sis-publisher-selector-pending-v1",
+      "source_ids": [
+        "hr-azop-vis-sis"
+      ],
+      "retrieval": "GET the public official URL only; record redirects, final publisher host, content type, version/update date and response hash.",
+      "conversion": "Inspect the publisher DOM and register a stable main-content selector with exclusions before conversion. Never fall back to body.",
+      "selector": "source_specific_selector_pending",
+      "status": "rule_not_yet_executable",
+      "semantic_checks": [
+        "verify official publisher and page identity",
+        "register selector and exclusion list",
+        "compare heading, complete substantive sections and links with original"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-court-decisions-court-search-v1",
+      "source_ids": [
+        "hr-court-decisions"
+      ],
+      "retrieval": "GET the public search landing page only; record search capability and court filters. Each legal search run must separately record query/date/results and decisions screened.",
+      "conversion": "Extract main search instructions and filters only; no decision text is represented by this landing page.",
+      "selector": "main .search-header",
+      "status": "surface_only",
+      "semantic_checks": [
+        "confirm available query fields and court coverage",
+        "do not treat page capture as case-law coverage"
+      ],
+      "acceptance_policy": "discovery_surface_only"
+    },
+    {
+      "rule_id": "hr-data-protection-act-nn-eli-v1",
+      "source_ids": [
+        "hr-data-protection-act"
+      ],
+      "retrieval": "GET stable official ELI/Gazette HTML URL; record final URL and metadata; do not use metadata API as full-text source.",
+      "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
+      "selector": ".sl-content .doc",
+      "status": "source_specific_capture_pending",
+      "semantic_checks": [
+        "title and Gazette number match requested act",
+        "all headings/article numbers and paragraph/list boundaries retained",
+        "opening and ending provisions present",
+        "links/annexes inventoried",
+        "current version checked against responsible authority index",
+        "official text only; publisher shell excluded",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-e-predmet-surface-v1",
+      "source_ids": [
+        "hr-e-predmet"
+      ],
+      "retrieval": "GET public landing page only; do not automate case lookups or submit user/case data.",
+      "conversion": "Record page title, service URL and visible scope only; no body-text corpus is claimed.",
+      "selector": "application_surface_metadata_only",
+      "status": "implemented_surface_only",
+      "semantic_checks": [
+        "confirm this is a status service, not a published decision repository"
+      ],
+      "acceptance_policy": "discovery_only"
+    },
+    {
+      "rule_id": "hr-eea-act-amend-114-22-nn-eli-v1",
+      "source_ids": [
+        "hr-eea-act-amend-114-22"
+      ],
+      "retrieval": "GET stable official ELI/Gazette HTML URL; record final URL and metadata; do not use metadata API as full-text source.",
+      "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
+      "selector": ".sl-content .doc",
+      "status": "replayable_dom_fragment; source_accepted",
+      "semantic_checks": [
+        "title and Gazette number match requested act",
+        "all headings/article numbers and paragraph/list boundaries retained",
+        "opening and ending provisions present",
+        "links/annexes inventoried",
+        "current version checked against responsible authority index",
+        "official text only; publisher shell excluded",
+        "fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-eea-act-amend-144-20-nn-eli-v1",
+      "source_ids": [
+        "hr-eea-act-amend-144-20"
+      ],
+      "retrieval": "GET stable official ELI/Gazette HTML URL; record final URL and metadata; do not use metadata API as full-text source.",
+      "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
+      "selector": ".sl-content .doc",
+      "status": "replayable_dom_fragment; source_accepted",
+      "semantic_checks": [
+        "title and Gazette number match requested act",
+        "all headings/article numbers and paragraph/list boundaries retained",
+        "opening and ending provisions present",
+        "links/annexes inventoried",
+        "current version checked against responsible authority index",
+        "official text only; publisher shell excluded",
+        "fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-eea-act-amend-53-20-nn-eli-v1",
+      "source_ids": [
+        "hr-eea-act-amend-53-20"
+      ],
+      "retrieval": "GET stable official ELI/Gazette HTML URL; record final URL and metadata; do not use metadata API as full-text source.",
+      "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
+      "selector": ".sl-content .doc",
+      "status": "replayable_dom_fragment; source_accepted",
+      "semantic_checks": [
+        "title and Gazette number match requested act",
+        "all headings/article numbers and paragraph/list boundaries retained",
+        "opening and ending provisions present",
+        "links/annexes inventoried",
+        "current version checked against responsible authority index",
+        "official text only; publisher shell excluded",
+        "fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-eea-act-nn-eli-v1",
+      "source_ids": [
+        "hr-eea-act"
+      ],
+      "retrieval": "GET stable official ELI/Gazette HTML URL; record final URL and metadata; do not use metadata API as full-text source.",
+      "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
+      "selector": ".sl-content .doc",
+      "status": "replayable_dom_fragment; source_accepted",
+      "semantic_checks": [
+        "title and Gazette number match requested act",
+        "all headings/article numbers and paragraph/list boundaries retained",
+        "opening and ending provisions present",
+        "links/annexes inventoried",
+        "current version checked against responsible authority index",
+        "official text only; publisher shell excluded",
+        "fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-eea-reg-amend-148-20-nn-eli-v1",
+      "source_ids": [
+        "hr-eea-reg-amend-148-20"
+      ],
+      "retrieval": "GET stable official ELI/Gazette HTML URL; record final URL and metadata; do not use metadata API as full-text source.",
+      "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
+      "selector": ".sl-content .doc",
+      "status": "replayable_dom_fragment; manual_legal_review_pending",
+      "semantic_checks": [
+        "title and Gazette number match requested act",
+        "all headings/article numbers and paragraph/list boundaries retained",
+        "opening and ending provisions present",
+        "links/annexes inventoried",
+        "current version checked against responsible authority index",
+        "official text only; publisher shell excluded",
+        "fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-eea-reg-amend-155-22-nn-eli-v1",
+      "source_ids": [
+        "hr-eea-reg-amend-155-22"
+      ],
+      "retrieval": "GET stable official ELI/Gazette HTML URL; record final URL and metadata; do not use metadata API as full-text source.",
+      "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
+      "selector": ".sl-content .doc",
+      "status": "replayable_dom_fragment; source_accepted",
+      "semantic_checks": [
+        "title and Gazette number match requested act",
+        "all headings/article numbers and paragraph/list boundaries retained",
+        "opening and ending provisions present",
+        "links/annexes inventoried",
+        "current version checked against responsible authority index",
+        "official text only; publisher shell excluded",
+        "fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-eea-reg-amend-86-21-nn-eli-v1",
+      "source_ids": [
+        "hr-eea-reg-amend-86-21"
+      ],
+      "retrieval": "GET stable official ELI/Gazette HTML URL; record final URL and metadata; do not use metadata API as full-text source.",
+      "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
+      "selector": ".sl-content .doc",
+      "status": "replayable_dom_fragment; manual_legal_review_pending",
+      "semantic_checks": [
+        "title and Gazette number match requested act",
+        "all headings/article numbers and paragraph/list boundaries retained",
+        "opening and ending provisions present",
+        "links/annexes inventoried",
+        "current version checked against responsible authority index",
+        "official text only; publisher shell excluded",
+        "fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-eea-reg-nn-eli-v1",
+      "source_ids": [
+        "hr-eea-reg"
+      ],
+      "retrieval": "GET stable official ELI/Gazette HTML URL; record final URL and metadata; do not use metadata API as full-text source.",
+      "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
+      "selector": ".sl-content .doc",
+      "status": "replayable_dom_fragment; manual_legal_review_pending",
+      "semantic_checks": [
+        "title and Gazette number match requested act",
+        "all headings/article numbers and paragraph/list boundaries retained",
+        "opening and ending provisions present",
+        "links/annexes inventoried",
+        "current version checked against responsible authority index",
+        "official text only; publisher shell excluded",
+        "fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-foreigners-act-nn-eli-v1",
+      "source_ids": [
+        "hr-foreigners-act"
+      ],
+      "retrieval": "GET stable official ELI/Gazette HTML URL; record final URL and metadata; do not use metadata API as full-text source.",
+      "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
+      "selector": ".sl-content .doc",
+      "status": "replayable_dom_fragment; source_accepted",
+      "semantic_checks": [
+        "title and Gazette number match requested act",
+        "all headings/article numbers and paragraph/list boundaries retained",
+        "opening and ending provisions present",
+        "links/annexes inventoried",
+        "current version checked against responsible authority index",
+        "official text only; publisher shell excluded",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-foreigners-amend-114-22-nn-eli-v1",
+      "source_ids": [
+        "hr-foreigners-amend-114-22"
+      ],
+      "retrieval": "GET stable official ELI/Gazette HTML URL; record final URL and metadata; do not use metadata API as full-text source.",
+      "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
+      "selector": ".sl-content .doc",
+      "status": "replayable_dom_fragment; source_accepted",
+      "semantic_checks": [
+        "title and Gazette number match requested act",
+        "all headings/article numbers and paragraph/list boundaries retained",
+        "opening and ending provisions present",
+        "links/annexes inventoried",
+        "current version checked against responsible authority index",
+        "official text only; publisher shell excluded",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-foreigners-amend-151-22-nn-eli-v1",
+      "source_ids": [
+        "hr-foreigners-amend-151-22"
+      ],
+      "retrieval": "GET stable official ELI/Gazette HTML URL; record final URL and metadata; do not use metadata API as full-text source.",
+      "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
+      "selector": ".sl-content .doc",
+      "status": "replayable_dom_fragment; source_accepted",
+      "semantic_checks": [
+        "title and Gazette number match requested act",
+        "all headings/article numbers and paragraph/list boundaries retained",
+        "opening and ending provisions present",
+        "links/annexes inventoried",
+        "current version checked against responsible authority index",
+        "official text only; publisher shell excluded",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-foreigners-amend-40-25-nn-eli-v1",
+      "source_ids": [
+        "hr-foreigners-amend-40-25"
+      ],
+      "retrieval": "GET stable official ELI/Gazette HTML URL; record final URL and metadata; do not use metadata API as full-text source.",
+      "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
+      "selector": ".sl-content .doc",
+      "status": "replayable_dom_fragment; source_accepted",
+      "semantic_checks": [
+        "title and Gazette number match requested act",
+        "all headings/article numbers and paragraph/list boundaries retained",
+        "opening and ending provisions present",
+        "links/annexes inventoried",
+        "current version checked against responsible authority index",
+        "official text only; publisher shell excluded",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-foreigners-amend-55-26-nn-eli-v1",
+      "source_ids": [
+        "hr-foreigners-amend-55-26"
+      ],
+      "retrieval": "GET stable official ELI/Gazette HTML URL; record final URL and metadata; do not use metadata API as full-text source.",
+      "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
+      "selector": ".sl-content .doc",
+      "status": "replayable_dom_fragment; source_accepted",
+      "semantic_checks": [
+        "title and Gazette number match requested act",
+        "all headings/article numbers and paragraph/list boundaries retained",
+        "opening and ending provisions present",
+        "links/annexes inventoried",
+        "current version checked against responsible authority index",
+        "official text only; publisher shell excluded",
+        "fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-form-1b-pdf-v1",
+      "source_ids": [
+        "hr-form-1b"
+      ],
+      "retrieval": "Follow the live link from the current official parent page; GET PDF bytes; record final URL, media type, length, SHA-256 and page count.",
+      "conversion": "Retain/inspect the native PDF only if reuse permits; OCR or text extraction is auxiliary, never a substitute for visual page review.",
+      "selector": "native_pdf_bytes; no HTML selector",
+      "status": "planned_visual_review_required",
+      "semantic_checks": [
+        "publisher and form title",
+        "all page images visually reviewed",
+        "form purpose and legal classification",
+        "revision/version and linked statutory authority",
+        "fields and attachments inventory"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-form-2b-pdf-v1",
+      "source_ids": [
+        "hr-form-2b"
+      ],
+      "retrieval": "Follow the live link from the current official parent page; GET PDF bytes; record final URL, media type, length, SHA-256 and page count.",
+      "conversion": "Retain/inspect the native PDF only if reuse permits; OCR or text extraction is auxiliary, never a substitute for visual page review.",
+      "selector": "native_pdf_bytes; no HTML selector",
+      "status": "planned_visual_review_required",
+      "semantic_checks": [
+        "publisher and form title",
+        "all page images visually reviewed",
+        "form purpose and legal classification",
+        "revision/version and linked statutory authority",
+        "fields and attachments inventory"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-form-3b-pdf-v1",
+      "source_ids": [
+        "hr-form-3b"
+      ],
+      "retrieval": "Follow the live link from the current official parent page; GET PDF bytes; record final URL, media type, length, SHA-256 and page count.",
+      "conversion": "Retain/inspect the native PDF only if reuse permits; OCR or text extraction is auxiliary, never a substitute for visual page review.",
+      "selector": "native_pdf_bytes; no HTML selector",
+      "status": "planned_visual_review_required",
+      "semantic_checks": [
+        "publisher and form title",
+        "all page images visually reviewed",
+        "form purpose and legal classification",
+        "revision/version and linked statutory authority",
+        "fields and attachments inventory"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-form-6b-pdf-v1",
+      "source_ids": [
+        "hr-form-6b"
+      ],
+      "retrieval": "Follow the live link from the current official parent page; GET PDF bytes; record final URL, media type, length, SHA-256 and page count.",
+      "conversion": "Retain/inspect the native PDF only if reuse permits; OCR or text extraction is auxiliary, never a substitute for visual page review.",
+      "selector": "native_pdf_bytes; no HTML selector",
+      "status": "planned_visual_review_required",
+      "semantic_checks": [
+        "publisher and form title",
+        "all page images visually reviewed",
+        "form purpose and legal classification",
+        "revision/version and linked statutory authority",
+        "fields and attachments inventory"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-general-admin-act-nn-eli-v1",
+      "source_ids": [
+        "hr-general-admin-act"
+      ],
+      "retrieval": "GET stable official ELI/Gazette HTML URL; record final URL and metadata; do not use metadata API as full-text source.",
+      "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
+      "selector": ".sl-content .doc",
+      "status": "replayable_dom_fragment; source_accepted",
+      "semantic_checks": [
+        "title and Gazette number match requested act",
+        "all headings/article numbers and paragraph/list boundaries retained",
+        "opening and ending provisions present",
+        "links/annexes inventoried",
+        "current version checked against responsible authority index",
+        "official text only; publisher shell excluded",
+        "fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-general-admin-amend-nn-eli-v1",
+      "source_ids": [
+        "hr-general-admin-amend"
+      ],
+      "retrieval": "GET stable official ELI/Gazette HTML URL; record final URL and metadata; do not use metadata API as full-text source.",
+      "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
+      "selector": ".sl-content .doc",
+      "status": "replayable_dom_fragment; source_accepted",
+      "semantic_checks": [
+        "title and Gazette number match requested act",
+        "all headings/article numbers and paragraph/list boundaries retained",
+        "opening and ending provisions present",
+        "links/annexes inventoried",
+        "current version checked against responsible authority index",
+        "official text only; publisher shell excluded",
+        "fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-gov-hr-eea-residence-guidance-v1",
+      "source_ids": [
+        "hr-gov-hr-eea-residence-guidance"
+      ],
+      "retrieval": "GET the current official gov.hr service page; record date, final URL and page metadata; resolve every attached document link.",
+      "conversion": "Use a page-specific article/content selector validated against the live page; exclude navigation, related pages and feedback form.",
+      "selector": "pending page-specific validation",
+      "status": "source_specific_validation_pending",
+      "semantic_checks": [
+        "publisher and last-updated metadata established",
+        "all procedure sections and document lists captured",
+        "Croatian legal citations checked against MUP index and official Gazette",
+        "translation and internal consistency reviewed",
+        "linked forms resolved to current MUP targets"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-law-enforcement-data-act-nn-eli-v1",
+      "source_ids": [
+        "hr-law-enforcement-data-act"
+      ],
+      "retrieval": "GET stable official ELI/Gazette HTML URL; record final URL and metadata; do not use metadata API as full-text source.",
+      "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
+      "selector": ".sl-content .doc",
+      "status": "source_specific_capture_pending",
+      "semantic_checks": [
+        "title and Gazette number match requested act",
+        "all headings/article numbers and paragraph/list boundaries retained",
+        "opening and ending provisions present",
+        "links/annexes inventoried",
+        "current version checked against responsible authority index",
+        "official text only; publisher shell excluded",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-legal-aid-act-nn-eli-v1",
+      "source_ids": [
+        "hr-legal-aid-act"
+      ],
+      "retrieval": "GET stable official ELI/Gazette HTML URL; record final URL and metadata; do not use metadata API as full-text source.",
+      "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
+      "selector": ".sl-content .doc",
+      "status": "replayable_dom_fragment; source_accepted",
+      "semantic_checks": [
+        "title and Gazette number match requested act",
+        "all headings/article numbers and paragraph/list boundaries retained",
+        "opening and ending provisions present",
+        "links/annexes inventoried",
+        "current version checked against responsible authority index",
+        "official text only; publisher shell excluded",
+        "fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-legal-aid-amend-98-19-nn-eli-v1",
+      "source_ids": [
+        "hr-legal-aid-amend-98-19"
+      ],
+      "retrieval": "GET stable official ELI/Gazette HTML URL; record final URL and metadata; do not use metadata API as full-text source.",
+      "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
+      "selector": ".sl-content .doc",
+      "status": "replayable_dom_fragment; source_accepted",
+      "semantic_checks": [
+        "title and Gazette number match requested act",
+        "all headings/article numbers and paragraph/list boundaries retained",
+        "opening and ending provisions present",
+        "links/annexes inventoried",
+        "current version checked against responsible authority index",
+        "official text only; publisher shell excluded",
+        "fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-mup-eea-forms-index-v1",
+      "source_ids": [
+        "hr-mup-eea-forms-index"
+      ],
+      "retrieval": "GET the current official MUP forms index; record retrieval date, final URL and link targets for Forms 1b, 2b, 3b and 6b. Re-resolve links from the parent page on every refresh.",
+      "conversion": "Extract the EEA forms section with a page-specific selector after validating against the live page; preserve link labels, target URLs and the regulation citation.",
+      "selector": "pending page-specific validation",
+      "status": "source_specific_validation_pending",
+      "semantic_checks": [
+        "page is published by MUP",
+        "EEA section includes all current form labels and links",
+        "each form is followed to its final URL and compared with the applicable regulation",
+        "distinguish application forms from residence-card specimens",
+        "reconcile the page citation with the current MUP legislation index"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-mup-eea-guidance-ministry-page-v1",
+      "source_ids": [
+        "hr-mup-eea-guidance"
+      ],
+      "retrieval": "GET public parent/current page; follow current official links rather than stale embedded direct files; record final URL and update date.",
+      "conversion": "Select #content .page_content. Preserve headings, links, list structure, dates and warnings; exclude navigation and footer.",
+      "selector": "#content .page_content",
+      "status": "selector_observed_on_seed_pages_or_planned",
+      "semantic_checks": [
+        "heading matches record",
+        "all substantive content and outgoing links retained",
+        "update/version date recorded",
+        "links and amounts/deadlines verified against current primary law"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-mup-propis-index-ministry-page-v1",
+      "source_ids": [
+        "hr-mup-propis-index"
+      ],
+      "retrieval": "GET public parent/current page; follow current official links rather than stale embedded direct files; record final URL and update date.",
+      "conversion": "Select #content .page_content. Preserve headings, links, list structure, dates and warnings; exclude navigation and footer.",
+      "selector": "#content .page_content",
+      "status": "selector_observed_on_seed_pages_or_planned",
+      "semantic_checks": [
+        "heading matches record",
+        "all substantive content and outgoing links retained",
+        "update/version date recorded",
+        "links and amounts/deadlines verified against current primary law"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-mvep-family-visas-ministry-page-v2",
+      "source_ids": [
+        "hr-mvep-family-visas"
+      ],
+      "retrieval": "Discover the current family-member page from MVEP visa navigation; follow the page label in the relevant language, record resolved URL/page ID and capture date. Do not reuse retired page ID 180456 or assume its mission-specific text remains current.",
+      "conversion": "Use scripts/capture_mvep_page.py with the observed div#content .page_content article selector and expected heading. Require one match; retain hashes/metadata and paraphrased findings only pending a guidance reuse basis.",
+      "selector": "div#content .page_content",
+      "status": "live_selector_hash_capture_verified_2026-10-19",
+      "semantic_checks": [
+        "heading and page ID match the family-member guidance",
+        "source-specific article excludes navigation/footer and matches visible substantive content",
+        "record no displayed revision date and flag obsolete embedded HTTP Directive link",
+        "check exemption, no-fee/expedited route and minimum evidence against Directive and EEA Act",
+        "discover mission-specific routes and instructions separately",
+        "do not retain full guidance text without reuse basis"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-mvep-missions-ministry-page-v1",
+      "source_ids": [
+        "hr-mvep-missions"
+      ],
+      "retrieval": "GET public parent/current page; follow current official links rather than stale embedded direct files; record final URL and update date.",
+      "conversion": "Select #content .page_content. Preserve headings, links, list structure, dates and warnings; exclude navigation and footer.",
+      "selector": "#content .page_content",
+      "status": "selector_observed_on_seed_pages_or_planned",
+      "semantic_checks": [
+        "heading matches record",
+        "all substantive content and outgoing links retained",
+        "update/version date recorded",
+        "links and amounts/deadlines verified against current primary law"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-mvep-stale-faq-ministry-page-v1",
+      "source_ids": [
+        "hr-mvep-stale-faq"
+      ],
+      "retrieval": "GET public parent/current page; follow current official links rather than stale embedded direct files; record final URL and update date.",
+      "conversion": "Select #content .page_content. Preserve headings, links, list structure, dates and warnings; exclude navigation and footer.",
+      "selector": "#content .page_content",
+      "status": "selector_observed_on_seed_pages_or_planned",
+      "semantic_checks": [
+        "heading matches record",
+        "all substantive content and outgoing links retained",
+        "update/version date recorded",
+        "links and amounts/deadlines verified against current primary law"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-mvep-visa-appeal-ministry-page-v1",
+      "source_ids": [
+        "hr-mvep-visa-appeal"
+      ],
+      "retrieval": "GET public parent/current page; follow current official links rather than stale embedded direct files; record final URL and update date.",
+      "conversion": "Select #content .page_content. Preserve headings, links, list structure, dates and warnings; exclude navigation and footer.",
+      "selector": "#content .page_content",
+      "status": "monitor_only_known_stale_page",
+      "semantic_checks": [
+        "heading matches record",
+        "all substantive content and outgoing links retained",
+        "update/version date recorded",
+        "links and amounts/deadlines verified against current primary law"
+      ],
+      "acceptance_policy": "never use as operative procedure; retain only to detect stale duplicate content"
+    },
+    {
+      "rule_id": "hr-mvep-visa-application-ministry-page-v1",
+      "source_ids": [
+        "hr-mvep-visa-application"
+      ],
+      "retrieval": "GET public parent/current page; follow current official links rather than stale embedded direct files; record final URL and update date.",
+      "conversion": "Select #content .page_content. Preserve headings, links, list structure, dates and warnings; exclude navigation and footer.",
+      "selector": "#content .page_content",
+      "status": "selector_observed_on_seed_pages_or_planned",
+      "semantic_checks": [
+        "heading matches record",
+        "all substantive content and outgoing links retained",
+        "update/version date recorded",
+        "links and amounts/deadlines verified against current primary law"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-mvep-visa-overview-ministry-page-v1",
+      "source_ids": [
+        "hr-mvep-visa-overview"
+      ],
+      "retrieval": "GET public parent/current page; follow current official links rather than stale embedded direct files; record final URL and update date.",
+      "conversion": "Select #content .page_content. Preserve headings, links, list structure, dates and warnings; exclude navigation and footer.",
+      "selector": "#content .page_content",
+      "status": "selector_observed_on_seed_pages_or_planned",
+      "semantic_checks": [
+        "heading matches record",
+        "all substantive content and outgoing links retained",
+        "update/version date recorded",
+        "links and amounts/deadlines verified against current primary law"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-mvep-visa-regulations-ministry-page-v1",
+      "source_ids": [
+        "hr-mvep-visa-regulations"
+      ],
+      "retrieval": "GET public parent/current page; follow current official links rather than stale embedded direct files; record final URL and update date.",
+      "conversion": "Select #content .page_content. Preserve headings, links, list structure, dates and warnings; exclude navigation and footer.",
+      "selector": "#content .page_content",
+      "status": "selector_observed_on_seed_pages_or_planned",
+      "semantic_checks": [
+        "heading matches record",
+        "all substantive content and outgoing links retained",
+        "update/version date recorded",
+        "links and amounts/deadlines verified against current primary law"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-nlex-publisher-selector-pending-v1",
+      "source_ids": [
+        "hr-nlex"
+      ],
+      "retrieval": "GET the public official URL only; record redirects, final publisher host, content type, version/update date and response hash.",
+      "conversion": "Inspect the publisher DOM and register a stable main-content selector with exclusions before conversion. Never fall back to body.",
+      "selector": "source_specific_selector_pending",
+      "status": "rule_not_yet_executable",
+      "semantic_checks": [
+        "verify official publisher and page identity",
+        "register selector and exclusion list",
+        "compare heading, complete substantive sections and links with original"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-nn-api-nn-documentation-v1",
+      "source_ids": [
+        "hr-nn-api"
+      ],
+      "retrieval": "GET official publisher documentation URL; record publisher date/terms and final URL.",
+      "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
+      "selector": ".sl-content .doc",
+      "status": "planned_selector_validation_required",
+      "semantic_checks": [
+        "metadata-vs-full-text function identified",
+        "terms/rate limits and storage basis recorded"
+      ],
+      "acceptance_policy": "documentation_only"
+    },
+    {
+      "rule_id": "hr-nn-data-access-nn-documentation-v1",
+      "source_ids": [
+        "hr-nn-data-access"
+      ],
+      "retrieval": "GET official publisher documentation URL; record publisher date/terms and final URL.",
+      "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
+      "selector": ".sl-content .doc",
+      "status": "planned_selector_validation_required",
+      "semantic_checks": [
+        "metadata-vs-full-text function identified",
+        "terms/rate limits and storage basis recorded"
+      ],
+      "acceptance_policy": "documentation_only"
+    },
+    {
+      "rule_id": "hr-ombudsman-act-nn-eli-v1",
+      "source_ids": [
+        "hr-ombudsman-act"
+      ],
+      "retrieval": "GET stable official ELI/Gazette HTML URL; record final URL and metadata; do not use metadata API as full-text source.",
+      "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
+      "selector": ".sl-content .doc",
+      "status": "replayable_dom_fragment; manual_legal_review_pending",
+      "semantic_checks": [
+        "title and Gazette number match requested act",
+        "all headings/article numbers and paragraph/list boundaries retained",
+        "opening and ending provisions present",
+        "links/annexes inventoried",
+        "current version checked against responsible authority index",
+        "official text only; publisher shell excluded",
+        "fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-ombudsman-complaints-publisher-selector-pending-v1",
+      "source_ids": [
+        "hr-ombudsman-complaints"
+      ],
+      "retrieval": "GET the public official URL only; record redirects, final publisher host, content type, version/update date and response hash.",
+      "conversion": "Inspect the publisher DOM and register a stable main-content selector with exclusions before conversion. Never fall back to body.",
+      "selector": "source_specific_selector_pending",
+      "status": "rule_not_yet_executable",
+      "semantic_checks": [
+        "verify official publisher and page identity",
+        "register selector and exclusion list",
+        "compare heading, complete substantive sections and links with original"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-personal-data-act-publisher-selector-pending-v1",
+      "source_ids": [
+        "hr-personal-data-act"
+      ],
+      "retrieval": "GET the public official URL only; record redirects, final publisher host, content type, version/update date and response hash.",
+      "conversion": "Inspect the publisher DOM and register a stable main-content selector with exclusions before conversion. Never fall back to body.",
+      "selector": "source_specific_selector_pending",
+      "status": "rule_not_yet_executable",
+      "semantic_checks": [
+        "verify official publisher and page identity",
+        "register selector and exclusion list",
+        "compare heading, complete substantive sections and links with original"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-third-country-procedure-amend-102-25-nn-eli-v1",
+      "source_ids": [
+        "hr-third-country-procedure-amend-102-25"
+      ],
+      "retrieval": "GET stable official ELI/Gazette HTML URL; record final URL and metadata; do not use metadata API as full-text source.",
+      "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
+      "selector": ".sl-content .doc",
+      "status": "source_specific_capture_pending",
+      "semantic_checks": [
+        "title and Gazette number match requested act",
+        "all headings/article numbers and paragraph/list boundaries retained",
+        "opening and ending provisions present",
+        "links/annexes inventoried",
+        "current version checked against responsible authority index",
+        "official text only; publisher shell excluded",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-third-country-procedure-amend-145-23-nn-eli-v1",
+      "source_ids": [
+        "hr-third-country-procedure-amend-145-23"
+      ],
+      "retrieval": "GET stable official ELI/Gazette HTML URL; record final URL and metadata; do not use metadata API as full-text source.",
+      "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
+      "selector": ".sl-content .doc",
+      "status": "source_specific_capture_pending",
+      "semantic_checks": [
+        "title and Gazette number match requested act",
+        "all headings/article numbers and paragraph/list boundaries retained",
+        "opening and ending provisions present",
+        "links/annexes inventoried",
+        "current version checked against responsible authority index",
+        "official text only; publisher shell excluded",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-third-country-procedure-base-nn-eli-v1",
+      "source_ids": [
+        "hr-third-country-procedure-base"
+      ],
+      "retrieval": "GET stable official ELI/Gazette HTML URL; record final URL and metadata; do not use metadata API as full-text source.",
+      "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
+      "selector": ".sl-content .doc",
+      "status": "source_specific_capture_pending",
+      "semantic_checks": [
+        "title and Gazette number match requested act",
+        "all headings/article numbers and paragraph/list boundaries retained",
+        "opening and ending provisions present",
+        "links/annexes inventoried",
+        "current version checked against responsible authority index",
+        "official text only; publisher shell excluded",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-third-country-procedure-rule-nn-eli-v1",
+      "source_ids": [
+        "hr-third-country-procedure-rule"
+      ],
+      "retrieval": "GET stable official ELI/Gazette HTML URL; record final URL and metadata; do not use metadata API as full-text source.",
+      "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
+      "selector": ".sl-content .doc",
+      "status": "replayable_dom_fragment; manual_legal_review_pending",
+      "semantic_checks": [
+        "title and Gazette number match requested act",
+        "all headings/article numbers and paragraph/list boundaries retained",
+        "opening and ending provisions present",
+        "links/annexes inventoried",
+        "current version checked against responsible authority index",
+        "official text only; publisher shell excluded",
+        "fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-third-country-residence-amend-155-22-nn-eli-v1",
+      "source_ids": [
+        "hr-third-country-residence-amend-155-22"
+      ],
+      "retrieval": "GET stable official ELI/Gazette HTML URL; record final URL and metadata; do not use metadata API as full-text source.",
+      "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
+      "selector": ".sl-content .doc",
+      "status": "source_specific_capture_pending",
+      "semantic_checks": [
+        "title and Gazette number match requested act",
+        "all headings/article numbers and paragraph/list boundaries retained",
+        "opening and ending provisions present",
+        "links/annexes inventoried",
+        "current version checked against responsible authority index",
+        "official text only; publisher shell excluded",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-third-country-residence-base-nn-eli-v1",
+      "source_ids": [
+        "hr-third-country-residence-base"
+      ],
+      "retrieval": "GET stable official ELI/Gazette HTML URL; record final URL and metadata; do not use metadata API as full-text source.",
+      "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
+      "selector": ".sl-content .doc",
+      "status": "source_specific_capture_pending",
+      "semantic_checks": [
+        "title and Gazette number match requested act",
+        "all headings/article numbers and paragraph/list boundaries retained",
+        "opening and ending provisions present",
+        "links/annexes inventoried",
+        "current version checked against responsible authority index",
+        "official text only; publisher shell excluded",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-third-country-residence-rule-nn-eli-v1",
+      "source_ids": [
+        "hr-third-country-residence-rule"
+      ],
+      "retrieval": "GET stable official ELI/Gazette HTML URL; record final URL and metadata; do not use metadata API as full-text source.",
+      "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
+      "selector": ".sl-content .doc",
+      "status": "replayable_dom_fragment; manual_legal_review_pending",
+      "semantic_checks": [
+        "title and Gazette number match requested act",
+        "all headings/article numbers and paragraph/list boundaries retained",
+        "opening and ending provisions present",
+        "links/annexes inventoried",
+        "current version checked against responsible authority index",
+        "official text only; publisher shell excluded",
+        "fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-vis-decree-amend-105-17-nn-eli-v1",
+      "source_ids": [
+        "hr-vis-decree-amend-105-17"
+      ],
+      "retrieval": "GET stable official ELI/Gazette HTML URL; record final URL and metadata; do not use metadata API as full-text source.",
+      "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
+      "selector": ".sl-content .doc",
+      "status": "source_specific_capture_pending",
+      "semantic_checks": [
+        "title and Gazette number match requested act",
+        "all headings/article numbers and paragraph/list boundaries retained",
+        "opening and ending provisions present",
+        "links/annexes inventoried",
+        "current version checked against responsible authority index",
+        "official text only; publisher shell excluded",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-vis-decree-nn-eli-v1",
+      "source_ids": [
+        "hr-vis-decree"
+      ],
+      "retrieval": "GET stable official ELI/Gazette HTML URL; record final URL and metadata; do not use metadata API as full-text source.",
+      "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
+      "selector": ".sl-content .doc",
+      "status": "source_specific_capture_pending",
+      "semantic_checks": [
+        "title and Gazette number match requested act",
+        "all headings/article numbers and paragraph/list boundaries retained",
+        "opening and ending provisions present",
+        "links/annexes inventoried",
+        "current version checked against responsible authority index",
+        "official text only; publisher shell excluded",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-visa-ordinance-nn-eli-v1",
+      "source_ids": [
+        "hr-visa-ordinance"
+      ],
+      "retrieval": "GET stable official ELI/Gazette HTML URL; record final URL and metadata; do not use metadata API as full-text source.",
+      "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
+      "selector": ".sl-content .doc",
+      "status": "replayable_dom_fragment; manual_legal_review_pending",
+      "semantic_checks": [
+        "title and Gazette number match requested act",
+        "all headings/article numbers and paragraph/list boundaries retained",
+        "opening and ending provisions present",
+        "links/annexes inventoried",
+        "current version checked against responsible authority index",
+        "official text only; publisher shell excluded",
+        "fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-visa-system-decree-nn-eli-v1",
+      "source_ids": [
+        "hr-visa-system-decree"
+      ],
+      "retrieval": "GET stable official ELI/Gazette HTML URL; record final URL and metadata; do not use metadata API as full-text source.",
+      "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
+      "selector": ".sl-content .doc",
+      "status": "source_specific_capture_pending",
+      "semantic_checks": [
+        "title and Gazette number match requested act",
+        "all headings/article numbers and paragraph/list boundaries retained",
+        "opening and ending provisions present",
+        "links/annexes inventoried",
+        "current version checked against responsible authority index",
+        "official text only; publisher shell excluded",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-admin-fees-act-nn-eli-v1",
+      "source_ids": [
+        "hr-admin-fees-act"
+      ],
+      "retrieval": "GET the exact stable official Narodne novine record URL; record final URL, issue/document number, media type, capture time and raw-response SHA-256. Respect the publisher maximum of three automated queries per second; retain only the official text after reuse-scope review.",
+      "conversion": "Select .sl-content .doc from the exact record. Preserve Croatian text, article/paragraph/list order and tables; inspect and inventory all img/link attachments separately. Full publisher page shell is not retained.",
+      "selector": ".sl-content .doc",
+      "status": "source_specific_capture_pending",
+      "semantic_checks": [
+        "publisher title, Gazette issue and item match URL and legal instrument",
+        "ordered visible text in selected source region equals the converted text after normalization",
+        "all article, tariff and table rows are retained",
+        "all attachments and external files inventoried",
+        "currentness and transition status checked against official index",
+        "official text only; publisher shell excluded",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-admin-fees-amend-114-22-nn-eli-v1",
+      "source_ids": [
+        "hr-admin-fees-amend-114-22"
+      ],
+      "retrieval": "GET the exact stable official Narodne novine record URL; record final URL, issue/document number, media type, capture time and raw-response SHA-256. Respect the publisher maximum of three automated queries per second; retain only the official text after reuse-scope review.",
+      "conversion": "Select .sl-content .doc from the exact record. Preserve Croatian text, article/paragraph/list order and tables; inspect and inventory all img/link attachments separately. Full publisher page shell is not retained.",
+      "selector": ".sl-content .doc",
+      "status": "source_specific_capture_pending",
+      "semantic_checks": [
+        "publisher title, Gazette issue and item match URL and legal instrument",
+        "ordered visible text in selected source region equals the converted text after normalization",
+        "all article, tariff and table rows are retained",
+        "all attachments and external files inventoried",
+        "currentness and transition status checked against official index",
+        "official text only; publisher shell excluded",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-admin-fees-tariff-nn-eli-v1",
+      "source_ids": [
+        "hr-admin-fees-tariff"
+      ],
+      "retrieval": "GET the exact stable official Narodne novine record URL; record final URL, issue/document number, media type, capture time and raw-response SHA-256. Respect the publisher maximum of three automated queries per second; retain only the official text after reuse-scope review.",
+      "conversion": "Select .sl-content .doc from the exact record. Preserve Croatian text, article/paragraph/list order and tables; inspect and inventory all img/link attachments separately. Full publisher page shell is not retained.",
+      "selector": ".sl-content .doc",
+      "status": "source_specific_capture_pending",
+      "semantic_checks": [
+        "publisher title, Gazette issue and item match URL and legal instrument",
+        "ordered visible text in selected source region equals the converted text after normalization",
+        "all article, tariff and table rows are retained",
+        "all attachments and external files inventoried",
+        "currentness and transition status checked against official index",
+        "official text only; publisher shell excluded",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-admin-fees-tariff-amend-130-25-nn-eli-v1",
+      "source_ids": [
+        "hr-admin-fees-tariff-amend-130-25"
+      ],
+      "retrieval": "GET the exact stable official Narodne novine record URL; record final URL, issue/document number, media type, capture time and raw-response SHA-256. Respect the publisher maximum of three automated queries per second; retain only the official text after reuse-scope review.",
+      "conversion": "Select .sl-content .doc from the exact record. Preserve Croatian text, article/paragraph/list order and tables; inspect and inventory all img/link attachments separately. Full publisher page shell is not retained.",
+      "selector": ".sl-content .doc",
+      "status": "source_specific_capture_pending",
+      "semantic_checks": [
+        "publisher title, Gazette issue and item match URL and legal instrument",
+        "ordered visible text in selected source region equals the converted text after normalization",
+        "all article, tariff and table rows are retained",
+        "all attachments and external files inventoried",
+        "currentness and transition status checked against official index",
+        "official text only; publisher shell excluded",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-judicial-fees-act-nn-eli-v1",
+      "source_ids": [
+        "hr-judicial-fees-act"
+      ],
+      "retrieval": "GET the exact stable official Narodne novine record URL; record final URL, issue/document number, media type, capture time and raw-response SHA-256. Respect the publisher maximum of three automated queries per second; retain only the official text after reuse-scope review.",
+      "conversion": "Select .sl-content .doc from the exact record. Preserve Croatian text, article/paragraph/list order and tables; inspect and inventory all img/link attachments separately. Full publisher page shell is not retained.",
+      "selector": ".sl-content .doc",
+      "status": "source_specific_capture_pending",
+      "semantic_checks": [
+        "publisher title, Gazette issue and item match URL and legal instrument",
+        "ordered visible text in selected source region equals the converted text after normalization",
+        "all article, tariff and table rows are retained",
+        "all attachments and external files inventoried",
+        "currentness and transition status checked against official index",
+        "official text only; publisher shell excluded",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-judicial-fees-amend-51-23-nn-eli-v1",
+      "source_ids": [
+        "hr-judicial-fees-amend-51-23"
+      ],
+      "retrieval": "GET the exact stable official Narodne novine record URL; record final URL, issue/document number, media type, capture time and raw-response SHA-256. Respect the publisher maximum of three automated queries per second; retain only the official text after reuse-scope review.",
+      "conversion": "Select .sl-content .doc from the exact record. Preserve Croatian text, article/paragraph/list order and tables; inspect and inventory all img/link attachments separately. Full publisher page shell is not retained.",
+      "selector": ".sl-content .doc",
+      "status": "source_specific_capture_pending",
+      "semantic_checks": [
+        "publisher title, Gazette issue and item match URL and legal instrument",
+        "ordered visible text in selected source region equals the converted text after normalization",
+        "all article, tariff and table rows are retained",
+        "all attachments and external files inventoried",
+        "currentness and transition status checked against official index",
+        "official text only; publisher shell excluded",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-judicial-fees-tariff-nn-eli-v1",
+      "source_ids": [
+        "hr-judicial-fees-tariff"
+      ],
+      "retrieval": "GET the exact stable official Narodne novine record URL; record final URL, issue/document number, media type, capture time and raw-response SHA-256. Respect the publisher maximum of three automated queries per second; retain only the official text after reuse-scope review.",
+      "conversion": "Select .sl-content .doc from the exact record. Preserve Croatian text, article/paragraph/list order and tables; inspect and inventory all img/link attachments separately. Full publisher page shell is not retained.",
+      "selector": ".sl-content .doc",
+      "status": "source_specific_capture_pending",
+      "semantic_checks": [
+        "publisher title, Gazette issue and item match URL and legal instrument",
+        "ordered visible text in selected source region equals the converted text after normalization",
+        "all article, tariff and table rows are retained",
+        "all attachments and external files inventoried",
+        "currentness and transition status checked against official index",
+        "official text only; publisher shell excluded",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-judicial-fees-tariff-transition-37-23-nn-eli-v1",
+      "source_ids": [
+        "hr-judicial-fees-tariff-transition-37-23"
+      ],
+      "retrieval": "GET the exact stable official Narodne novine record URL; record final URL, issue/document number, media type, capture time and raw-response SHA-256. Respect the publisher maximum of three automated queries per second; retain only the official text after reuse-scope review.",
+      "conversion": "Select .sl-content .doc from the exact record. Preserve Croatian text, article/paragraph/list order and tables; inspect and inventory all img/link attachments separately. Full publisher page shell is not retained.",
+      "selector": ".sl-content .doc",
+      "status": "source_specific_capture_pending",
+      "semantic_checks": [
+        "publisher title, Gazette issue and item match URL and legal instrument",
+        "ordered visible text in selected source region equals the converted text after normalization",
+        "all article, tariff and table rows are retained",
+        "all attachments and external files inventoried",
+        "currentness and transition status checked against official index",
+        "official text only; publisher shell excluded",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-mvep-visa-appeal-current-mvep-page-v2",
+      "source_ids": [
+        "hr-mvep-visa-appeal-current"
+      ],
+      "retrieval": "Discover from current MVEP visa navigation and record language, final URL/page ID and retrieval date; restrict redirects and links to official publisher domains. Do not handle appeal submissions or applicant data.",
+      "conversion": "Use scripts/capture_mvep_page.py with the observed div#content .page_content article selector and expected Croatian heading. Require one match; retain hashes/metadata and paraphrased findings only pending a guidance reuse basis.",
+      "selector": "div#content .page_content",
+      "status": "live_selector_hash_capture_verified_2026-10-19",
+      "semantic_checks": [
+        "visible fee, currency, filing route, language and 15-day deadline match the current page",
+        "60-day authority decision and 30-day court route are retained",
+        "Foreigners Act/GAPA chain checked against the current MUP index",
+        "€130 fee cross-checked against Gazette NN 130/25; family-member applicability stays unresolved",
+        "record absence of a displayed revision date and any stale duplicate",
+        "do not retain appeal submissions or applicant personal data"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-legal-aid-tariff-2025-nn-eli-v1",
+      "source_ids": [
+        "hr-legal-aid-tariff-2025"
+      ],
+      "retrieval": "GET the exact Narodne novine ELI page for NN 142/25 item 2106. Validate publisher host, record ID, title, issuance and source date; retain only the official document fragment.",
+      "conversion": "Capture the observed `.sl-content .doc` fragment and render source text with the established Croatia Narodne novine replay utility. Inspect title, Article 7 administrative-dispute compensation rules, operative year, effective clause, attachments and publisher-shell exclusion.",
+      "selector": ".sl-content .doc",
+      "status": "replayable_dom_fragment; source_accepted",
+      "semantic_checks": [
+        "publisher record identifies NN 142/25 item 2106",
+        "2025 application year and effective clause are preserved",
+        "Article 7 administrative-dispute compensation provisions are complete",
+        "distinguish provider remuneration from applicant legal-aid eligibility and court-fee exemption",
+        "reconcile the current annual instrument against the ministry index; do not infer a 2026 rate from a 2026 consultation plan",
+        "official text only; publisher shell excluded",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-legal-aid-ministry-index-dynamic-v1",
+      "source_ids": [
+        "hr-legal-aid-ministry-index"
+      ],
+      "retrieval": "GET the official MPUDT index URL; record retrieval timestamp, redirects, page title, last-updated metadata if present, and the exact legal-aid section and links inspected.",
+      "conversion": "Inspect the live DOM and register a stable content selector and exclusions before conversion; do not use body text or infer completeness from search snippets.",
+      "selector": "source_specific_selector_pending",
+      "status": "rule_not_yet_executable",
+      "semantic_checks": [
+        "check the current ministry index and the closest government-published text; consult a specific Gazette item only to resolve a material discrepancy or commencement question",
+        "record ordered annual-instrument links and publication years",
+        "a missing entry is not proof no act exists",
+        "preserve publisher page shell separately from the substantive index entries"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-legal-aid-annual-plan-2026-pdf-v1",
+      "source_ids": [
+        "hr-legal-aid-annual-plan-2026"
+      ],
+      "retrieval": "GET the official MPUDT PDF URL; record final URL, content type, retrieval time, file size and SHA-256.",
+      "conversion": "Extract the PDF text, then visually inspect page 45 and the complete operational-goal row, including its heading, indicator, deadline and responsible unit; retain the page image or deterministic page extract.",
+      "selector": "PDF page 45, operational goal 4.1.1.6",
+      "status": "source_specific_capture_pending",
+      "semantic_checks": [
+        "match the task wording and Q4 2026 deadline to the visible PDF row",
+        "label it as a plan only, not promulgation evidence",
+        "check page numbering and extraction order"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-legal-aid-overview-ministry-dynamic-v1",
+      "source_ids": [
+        "hr-legal-aid-overview"
+      ],
+      "retrieval": "GET the official MPUDT page; record redirects, final URL, retrieval time, page title, page update metadata if present, linked form URLs and downloads.",
+      "conversion": "Inspect and register an exact main-content selector plus navigation/footer exclusions before conversion; preserve headings, ordered eligibility categories, authority roles, contact details and links. Never fall back to body.",
+      "selector": "source_specific_selector_pending",
+      "status": "rule_not_yet_executable",
+      "semantic_checks": [
+        "check relevant guidance claims against the closest government-published text and ministry index; use Gazette items only for a specific material gap",
+        "verify foreign-national categories and county/City authority roles against the Act",
+        "inventory linked forms and attachments",
+        "distinguish guidance from statutory text"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-legal-aid-conditions-stale-page-v1",
+      "source_ids": [
+        "hr-legal-aid-conditions-stale-amounts"
+      ],
+      "retrieval": "Retain the public official page URL and retrieval date only as a staleness comparator; do not treat the HRK amounts as current.",
+      "conversion": "No operative conversion. If retained for audit, use a registered source-specific selector and preserve the legacy monetary text exactly with a stale-page label.",
+      "selector": "source_specific_selector_pending",
+      "status": "excluded_stale_comparator",
+      "semantic_checks": [
+        "record legacy amounts and currency as displayed",
+        "compare the base/formula with the current Free Legal Aid Act and annual budget-execution act",
+        "do not silently replace statutory wording or convert official text in-place"
+      ],
+      "acceptance_policy": "excluded_from_operative_source_set_until_publisher_correction_or_explicitly_versioned_replacement"
+    },
+    {
+      "rule_id": "hr-state-budget-execution-2026-nn-eli-v1",
+      "source_ids": [
+        "hr-state-budget-execution-2026"
+      ],
+      "retrieval": "GET the stable official Narodne novine ELI/HTML URL; record final URL and retrieval metadata; do not use the metadata API as the legal text.",
+      "conversion": "Select .sl-content .doc; exclude site shell and embedded styles. Validate this exact record and preserve the full article and paragraph structure.",
+      "selector": ".sl-content .doc",
+      "status": "replayable_dom_fragment; source_accepted",
+      "semantic_checks": [
+        "title, Gazette number and item 2277 match",
+        "capture Article 39(1)-(2) and final effectiveness provision",
+        "inventory links/attachments",
+        "trace Free Legal Aid Act Article 4(15) reference and avoid treating an arithmetic derivation as quoted statutory text",
+        "official text only; publisher shell excluded",
+        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "current legal effect and legal-topic sufficiency are assessed separately"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    }
+  ],
+  "reference_use_policy": "For every source type, prefer the responsible official publisher. Prefer a usable government-published consolidation for national legislation and the responsible EU publisher consolidation for EU legislation; if none is usable, use the closest government-published or official-service version and record its language, displayed date/cutoff, scope, and limits. A human-reviewed official link is enough for ordinary research; a custom capture/conversion rule, local copy, API, replay check, or updater is optional. Use Gazette fragments only to resolve a material question; do not reconstruct a full chain by default. Keep reference use, local-copy acceptance, topic coverage, and country completion separate."
+}

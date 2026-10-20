@@ -6,7 +6,7 @@ Assessment date: 19 October 2026. Scope: the 44 candidates in [`source-list.md`]
 
 [`../sync_lithuania.py`](../sync_lithuania.py) tries the official e-TAR record by ordinary HTTPS GET. When that page returns HTTP 403, it queries the Seimas Chancellery's official TAR dataset API at `get.data.gov.lt`, using the exact `dokumento_id` and `suvestines_id`, and saves both the metadata response and full Lithuanian `tekstas_lt` record. Reads required no account or API registration in the observed run. API validity dates, record IDs, source links, raw JSON hashes, and converted Markdown hashes are stored. Public HTML candidates are converted from their main body. Offline `verify` checks the raw bytes, API identity/version, conversion hash, and deterministic conversion replay.
 
-The 19 October run converted 13 TAR API records and two HTML pages; it also saved the LITEKO public-search shell as a discovery surface without treating it as a decision. Twenty-eight candidates yielded HTTP 403 or no matching version row. The 44-entry inventory has 15 converted texts, one captured discovery surface, 28 retrieval failures, and zero accepted sources.
+The 19 October run converted 13 TAR API records and two HTML pages; it also saved the LITEKO public-search shell as a discovery surface without treating it as a decision. Twenty-eight candidates yielded HTTP 403 or no matching version row. The 44-entry inventory has 15 converted texts, one captured discovery surface, 28 retrieval failures, and zero locally stored copies accepted.
 
 The dataset API exposes useful structure, but its current-version records are not a reliable current-law feed in the observed data. Examples:
 
@@ -16,11 +16,11 @@ The dataset API exposes useful structure, but its current-version records are no
 - The administrative proceedings, Ombudsmen, data-protection, and legal-aid texts show API dates that predate the current versions recorded in the candidate inventory.
 - The newly identified Seimas Chancellor Order 400-ĮVK-229 has no row in the dataset API under the candidate's record identifier.
 
-All 13 API texts are saved for comparison only. The manifest and Markdown identify them as currentness-unverified or not-current according to the dataset fields; none should be treated as the operative version until reconciled with e-TAR.
+All 13 API texts are official state-published snapshots, but the dataset marks some as currentness-unverified or not current. Preserve those labels and dates: use such records as dated working texts/version leads, not as proof of current wording. Prefer the latest available e-TAR or dataset version for a current-law question, and resolve a specific status conflict only when it affects the provisions in scope. A full reconciliation of every API record with e-TAR is not a prerequisite for ordinary source use.
 
 ## Verdict
 
-**The API rule is sustainable for retrieving and replaying dataset snapshots, but unsustainable as a standalone current-law rule.** Confidence: high for the observed version mismatches, medium for repeatable API retrieval, and low for the complete legal and reuse position. The public interface is documented, the dataset identifies a CC BY 4.0 licence, and sampled GET requests worked without registration. Those strengths do not overcome stale or missing consolidation metadata. Guidance and form retrieval remains **undetermined** because direct requests from this client returned 403; the court search remains an incomplete interactive discovery channel.
+**Use the responsible official publisher's human-reviewed page for ordinary source use. The TAR API is an optional snapshot route, not a dependable current-version selector where its dates conflict with e-TAR.** Confidence is high for the observed version mismatches and medium for repeatable API retrieval. A direct source reference remains usable within its reviewed date and scope without an API query, local copy, hash, or conversion. Guidance and form retrieval remains **undetermined** in this client because direct requests returned 403; this does not prevent human review at the official site when available. The court search remains a selective discovery channel.
 
 | Dimension | Evidence | Remaining limitation |
 |---|---|---|
@@ -32,13 +32,14 @@ All 13 API texts are saved for comparison only. The manifest and Markdown identi
 | Reuse | The official dataset record identifies CC BY 4.0 for that dataset. | Do not extend that licence to direct e-TAR pages, government guidance, third-party mission pages, forms, or court material. Persistent storage and transformation terms for these sources need separate review. |
 | Coverage | Candidate types include laws, guidance, forms, visa practice, procedure, courts, privacy, oversight and legal aid. | Most non-API pages were blocked from this client; LITEKO is selective and not a complete decisions corpus. Candidate coverage is not complete national coverage. |
 
-## Requirements before monitor use
+## Optional work for a recurring local monitor
 
-1. Ask the data publisher whether the TAR dataset's consolidated-text model is current for all relevant acts, what causes the observed date gaps, and whether the model's “develop/in preparation” status is resolved.
-2. Cross-check each API version against the live e-TAR page and Gazette/amendment chronology. Fail closed when an API date conflicts with e-TAR or when the dataset exposes no current edition.
-3. Obtain an official, supported route for e-TAR and the government pages that returned 403. Keep manual access as the stated route if the publisher provides no automated option; do not simulate a browser or bypass a block.
-4. Confirm reuse terms separately for the dataset, e-TAR, government guidance and forms, and court decision content. The dataset licence does not cover other publishers by implication.
-5. Add tests for late amendments, future-effective editions, missing end dates, overlapping intervals, missing consolidated versions, annex-bearing records, pagination, and deterministic replay before any source is promoted.
-6. Keep LITEKO search as a bounded discovery channel, not a completeness claim or change feed. Do not capture submitted applicant data.
+The items below apply only if a recurring updater or retained-copy workflow is wanted. They do not gate citation of a human-reviewed official page, source-reference usability, or topic research.
+
+- Prefer the latest government-published text and its displayed date/cutoff. Resolve only a known API/e-TAR conflict that affects the provisions in scope; do not reconcile every act against Gazette history.
+- Check reuse conditions for whichever publisher and content the updater would retain. The dataset's CC BY 4.0 notice does not extend to e-TAR, agency guidance, forms, or court content.
+- Keep HTTP 403 responses as access limitations; use a publisher-supported route or manual official page review, and do not bypass access controls.
+- If converting or retaining text, validate the relevant legal passages and any material attachments. Broad pagination, change-feed, and replay checks are needed only when the selected recurring workflow relies on them.
+- Keep LITEKO search as selective discovery, not a completeness claim. Do not capture submitted applicant data.
 
 All current outputs remain unaccepted review candidates. The API is a useful source snapshot, not proof that a retrieved text is the current law.

@@ -268,7 +268,7 @@ def render_akn(record: dict, xml_bytes: bytes) -> tuple[bytes, dict]:
         f"- Retrieved: {retrieved_at}\n"
         f"- In force according to Finlex metadata: yes\n"
         f"- Conversion: Finlex Akoma Ntoso XML `statuteProvisionsWrapper`, preserving chapter/section headings and numbered paragraphs\n\n"
-        f"> **Review candidate.** This conversion is not accepted into the trusted legal corpus. {caution} Compare the version metadata and amendment chain with the official current-text page before legal reliance.\n>\n"
+        f"> **Review candidate.** This conversion is not accepted into the trusted legal corpus. {caution} Record the official edition date and cutoff; check for a later published edition and any specifically identified material post-cutoff change. Do not require full amendment-chain comparison.\n>\n"
         f"> **Attribution:** Based on Finlex open data, made available under CC BY 4.0.\n\n"
         f"## Enacting formula\n\n{preamble}\n\n"
         f"## Consolidated statutory text\n\n{body}\n"

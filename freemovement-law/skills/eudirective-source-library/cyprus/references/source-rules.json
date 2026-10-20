@@ -1,0 +1,317 @@
+{
+  "schema_version": "1.0.0",
+  "jurisdiction": "CY",
+  "as_of": "2026-10-20",
+  "policy": "Rules may group sources and describe optional local capture, conversion, or monitoring; every manifest entry does not need its own technical rule. For ordinary research, a human-reviewed official source link is sufficient after checking publisher, source identity, language, displayed date/version or cutoff, relevant passage, and visible caveats. Prefer a government-published consolidation; if none is usable, use the closest government-published text and state its cutoff and limits. Use Gazette fragments only for a specific material question; do not reconstruct a full amendment chain by default. Exact-byte storage, hashes, OCR, conversion, and replay checks apply only when retaining or reproducing a local copy, or when recurring monitoring genuinely needs them. External-reference use, local-copy acceptance, topic coverage, and country completion are separate. Do not bypass access controls or reuse terms.",
+  "rules": [
+    {
+      "rule_id": "cy-authority-portal-or-document-v1",
+      "source_ids": [
+        "cy-admin-court-rules-index",
+        "cy-admin-law-office-art146",
+        "cy-admin-law-office-art146-el",
+        "cy-data-protection-law",
+        "cy-data-protection-law-greek-index",
+        "cy-ombudsman-amendment-127i-2022",
+        "cy-ombudsman-core-greek",
+        "cy-ombudsman-form",
+        "cy-supreme-constitutional-court-decisions",
+        "cy-supreme-court-decisions"
+      ],
+      "publisher_or_shape": "Other authority pages, court indexes and official PDFs",
+      "retrieval": "For ordinary use, open the exact allowlisted official URL manually and record the review date, language, displayed version/date and the specific passage or page used. If storing a copy or monitoring it, use bounded TLS-validated retrieval and retain exact bytes/hash as appropriate; record access failures without bypass. A search page is not a case-law corpus.",
+      "conversion": "A source link needs no converter. If retaining text, use an observed source-specific HTML selector or review only the PDF pages used, including material attachments. Case-law indexes remain discovery surfaces; individual decisions and the covered court/date range must be identified before making a coverage claim.",
+      "selector": "source-specific selector; no body fallback",
+      "status": "Some authority routes remain blocked or page shells. The rule 11/2025 index entry and appellate-decisions listing are directly reviewed as narrow official references; the individual rule text and judgment merits remain unverified. Local index copies are optional.",
+      "semantic_checks": [
+        "publisher identity, document or decision identity, and date/version as displayed",
+        "review the relevant passage; inspect the full decision only when its merits or complete text are relied on",
+        "check later status or amendments only when current legal effect matters",
+        "legal role and the limits of any coverage claim are explicit."
+      ],
+      "acceptance_policy": "A human-reviewed external reference may be used within the identity, language, version and passage actually reviewed; local capture and copying permission are not prerequisites for linking. A retained or converted copy needs proportionate fidelity and reuse checks for that artifact. Neither status establishes topic or country completeness."
+    },
+    {
+      "rule_id": "cy-cylaw-secondary-html-v1",
+      "source_ids": [
+        "cy-cylaw-law7-greek-consolidation",
+        "cy-legal-aid-act-lead",
+        "cy-general-admin-act-lead",
+        "cy-admin-court-law-lead"
+      ],
+      "publisher_or_shape": "CyLaw English/Greek legal-text mirror",
+      "retrieval": "Use the direct CyLaw law page only as a clearly labelled secondary reference. A human-reviewed link is enough for ordinary use; retrieve and hash the response only when retaining a local copy. Never describe a CyLaw text as primary law.",
+      "conversion": "For a retained copy, decode the declared Windows-1253 encoding and select only div.main-content; exclude print controls, sidebar and footer. For ordinary reference use, inspect only the cited provision and retain the secondary-source caveat.",
+      "selector": "div.main-content",
+      "status": "Replayable secondary conversion; never accepted as primary law.",
+      "semantic_checks": [
+        "publisher, title, and law number match the page",
+        "language and displayed version/cutoff are recorded when shown",
+        "review the passage relied on and preserve the secondary-source caveat",
+        "consult a specific Gazette item only if needed to resolve a material currentness or legal-effect question."
+      ],
+      "acceptance_policy": "A human-reviewed external reference may be used within the identity, language, version and passage actually reviewed; local capture and copying permission are not prerequisites for linking. A retained or converted copy needs proportionate fidelity and reuse checks for that artifact. Neither status establishes topic or country completeness."
+    },
+    {
+      "rule_id": "cy-eurlex-eli-v1",
+      "source_ids": [
+        "cy-protocol-no-10",
+        "cy-protocol-no-10-el"
+      ],
+      "publisher_or_shape": "EUR-Lex primary EU sources",
+      "retrieval": "Open the official language-specific EUR-Lex ELI directly for human review. Preserve response bytes and conversion provenance only for a retained local representation or repeatable replay.",
+      "conversion": "If retaining a derived text, select div#TexteOnly and keep the preamble and all four articles with paragraph boundaries. A link may be used directly with its 2003 publication date; it does not establish later legal effects, current national practice or topic completeness.",
+      "selector": "div#TexteOnly; exact English or Greek ELI response",
+      "status": "The official English and Greek responses and complete source-specific text representations are captured and accepted for the exact Protocol No. 10 publication in OJ L 236, 23 September 2003; later legal effects and Cyprus operational practice remain open.",
+      "semantic_checks": [
+        "ELI CELEX/identifier and selected language match",
+        "record the displayed publication/version; check current status when current legal effect matters",
+        "review the relevant article or annex; check full-document completeness only when relying on the full text or retaining a complete conversion",
+        "document a national-law relationship when it is material to the question."
+      ],
+      "acceptance_policy": "A human-reviewed external reference may be used within the identity, language, version and passage actually reviewed; local capture and copying permission are not prerequisites for linking. A retained or converted copy needs proportionate fidelity and reuse checks for that artifact. Neither status establishes topic or country completeness.",
+      "replay_script": "source-library/cyprus/scripts/convert_primary_sources.py"
+    },
+    {
+      "rule_id": "cy-govcy-guidance-and-attachments-v1",
+      "source_ids": [
+        "cy-access-info-code",
+        "cy-access-info-faq",
+        "cy-cypriot-family-employment-forms",
+        "cy-cypriot-family-forms-index",
+        "cy-cypriot-family-no-employment-forms",
+        "cy-cypriot-family-route",
+        "cy-cypriot-family-route-el",
+        "cy-data-protection-complaint",
+        "cy-document-ratification-guidance",
+        "cy-eueea-registration-guidance",
+        "cy-eures-meu1",
+        "cy-family-members-overview",
+        "cy-gov-gazette-service",
+        "cy-information-commissioner-laws",
+        "cy-law-commissioner-index",
+        "cy-meu1-forms",
+        "cy-meu1-guidance",
+        "cy-meu2-forms",
+        "cy-meu2-forms-el",
+        "cy-meu2-guidance",
+        "cy-meu2-guidance-el",
+        "cy-meu3-forms",
+        "cy-meu3-guidance",
+        "cy-mfa-mission-beirut-visa-el",
+        "cy-mfa-mission-paris-visa",
+        "cy-mfa-mission-vienna-visa",
+        "cy-mfa-mission-washington-visa-el",
+        "cy-mfa-mission-yerevan-visa-el",
+        "cy-mfa-missions-directory",
+        "cy-mfa-national-visa-exemptions",
+        "cy-mfa-visa-hub",
+        "cy-mfa-visa-overview",
+        "cy-migration-legislation-index",
+        "cy-migration-uk-withdrawal-guidance-el",
+        "cy-mission-athens-example",
+        "cy-mission-yerevan-example",
+        "cy-moi-residence-cards-legacy",
+        "cy-mvis8-criteria",
+        "cy-mvis8-form",
+        "cy-national-vis-pdf",
+        "cy-ombudsman-complaint-service",
+        "cy-ombudsman-core",
+        "cy-schengen-status-pdf",
+        "cy-visa-application-form"
+      ],
+      "publisher_or_shape": "Current Gov.cy guidance and form pages",
+      "retrieval": "Use a human-reviewed canonical Gov.cy page for ordinary reference, noting its date, category and visible limitations. Inspect a linked form or checklist when relying on it; create separate captures and hashes only for retained copies or recurring monitoring. Record 403/404 limits without bypass.",
+      "conversion": "No conversion is needed for a link. For a retained page, use an observed main/article region and exclude navigation. Review the relevant requirement and any attachment relied on; do not require every linked form or page to be downloaded for ordinary reference use.",
+      "selector": "confirmed main/article or source-specific selector",
+      "status": "Several routes identified through official indexing; direct retrieval remains blocked.",
+      "semantic_checks": [
+        "authority/date and relevant applicant or sponsor category match",
+        "review the requirement or process relied on in the research",
+        "inspect linked forms or attachments only when the conclusion relies on them; enumerate all only for an exhaustive inventory claim",
+        "check legal references and translation/certification exceptions when they affect the question."
+      ],
+      "acceptance_policy": "A human-reviewed external reference may be used within the identity, language, version and passage actually reviewed; local capture and copying permission are not prerequisites for linking. A retained or converted copy needs proportionate fidelity and reuse checks for that artifact. Neither status establishes topic or country completeness."
+    },
+    {
+      "rule_id": "cy-nlex-discovery-html-v1",
+      "source_ids": [
+        "cy-nlex"
+      ],
+      "publisher_or_shape": "N-Lex Cyprus catalogue page",
+      "retrieval": "Open the recorded N-Lex catalogue manually for discovery. Save its bytes/hash only if a local catalogue snapshot is needed; treat its status as dated discovery evidence, not Cyprus law.",
+      "conversion": "No conversion is required for routine use. If a local snapshot is retained, separately preserve the relevant outbound links and the snapshot date; do not treat link inventory as legal text.",
+      "selector": "body (cy-nlex only)",
+      "status": "Converted discovery candidate; not a legal source.",
+      "semantic_checks": [
+        "text records N-Lex's unavailability statement as an as-of capture, not a live-current claim",
+        "relevant outbound hrefs are separately recorded against the exact captured response hash; the recorded snapshot includes CyLaw, N-Lex information/catalogue routes and EUR-Lex national-law search routes; no direct Government Printing Office href was found among captured anchors",
+        "catalogue status is not generalized to national-law currentness or publisher authority; linked targets remain discovery leads until independently retrieved and checked."
+      ],
+      "acceptance_policy": "A human-reviewed external reference may be used within the identity, language, version and passage actually reviewed; local capture and copying permission are not prerequisites for linking. A retained or converted copy needs proportionate fidelity and reuse checks for that artifact. Neither status establishes topic or country completeness."
+    },
+    {
+      "rule_id": "cy-official-gazette-v1",
+      "source_ids": [
+        "cy-admin-court-amendment-142i-2025",
+        "cy-cap105-primary-law",
+        "cy-constitution-amendment-130i-2025",
+        "cy-free-movement-amendment-181i-2011",
+        "cy-free-movement-amendment-193i-2020",
+        "cy-free-movement-amendment-28i-2017",
+        "cy-free-movement-amendment-67i-2013",
+        "cy-free-movement-amendment-77i-2015",
+        "cy-free-movement-amendment-8i-2013",
+        "cy-free-movement-amendment-96i-2023",
+        "cy-free-movement-gazette-2007",
+        "cy-free-movement-olc-notice-2024",
+        "cy-gazette-law-23-2024-chain-reference",
+        "cy-general-admin-law-amendment-28i-2020",
+        "cy-gpo-archive",
+        "cy-gpo-main"
+      ],
+      "publisher_or_shape": "Government Printing Office Gazette issues",
+      "retrieval": "For ordinary use, open the official Gazette record or responsible ministry consolidation and note the instrument, date, language, relevant scope, and cutoff. Prefer a usable government-published consolidation; otherwise use the closest government-published text. Store exact issue bytes only when a retained copy or replay is actually needed. Consult a particular Gazette fragment only for a material change, commencement, correction, repeal, or missing provision. Do not assemble the full chain, retry inaccessible paths, or guess replacement URLs.",
+      "conversion": "No conversion is needed for a reviewed link. If retaining a passage, preserve the source PDF and verify only the pages and wording relied on; check adjacent-act boundaries when an issue contains several instruments. Review OCR visually only where it affects the passage used. Full-document OCR, page-by-page completeness, correction ledgers, hashes, and replay are optional local-copy measures, not prerequisites for source-reference use.",
+      "selector": "PDF OCR with page-order and relevant-passage review",
+      "status": "The original 2007 Gazette and selected later amendments are identified as dated publication references. The 2007 OCR is a partial local review copy of printed pages 112–167, not a current consolidation. Use it only for passages checked against the scan; prefer a usable government consolidation where available. A complete OCR copy is not required for ordinary legal research.",
+      "semantic_checks": [
+        "confirm the responsible official publisher, instrument number, issue/date, and language as displayed",
+        "review the relevant provision or passage and record the version/cutoff and limits",
+        "when a multi-act issue is used, confirm that the cited passage belongs to the intended Act and exclude adjacent Acts",
+        "consult a specific later amendment only when a known material currentness, commencement, correction, or repeal issue affects the question",
+        "for a retained OCR passage, compare the words relied on with the corresponding scan; validate the whole conversion only if the full text will be relied on",
+        "for Law 96(I)/2023 in issue 4960, distinguish the Act on PDF page 3 / printed page 425 from adjacent Acts only if that issue is used."
+      ],
+      "acceptance_policy": "A human-reviewed external reference may be used within the identity, language, version and passage actually reviewed; local capture and copying permission are not prerequisites for linking. A retained or converted copy needs proportionate fidelity and reuse checks for that artifact. Neither status establishes topic or country completeness.",
+      "replay_script": "source-library/cyprus/scripts/convert_gazette_ocr.py",
+      "source_specific_replay_scripts": {
+        "cy-free-movement-gazette-2007": "source-library/cyprus/scripts/convert_gazette_ocr.py",
+        "cy-free-movement-amendment-96i-2023": "source-library/cyprus/scripts/convert_primary_sources.py"
+      }
+    },
+    {
+      "rule_id": "cy-official-olc-pdf-v1",
+      "source_ids": [
+        "cy-access-info-consolidation",
+        "cy-cap105-olc-greek-consolidation",
+        "cy-free-movement-consolidation",
+        "cy-legal-aid-official-consolidation",
+        "cy-legal-aid-official-consolidation-greek",
+        "cy-ombudsman-laws-consolidation"
+      ],
+      "publisher_or_shape": "Office of the Law Commissioner PDFs",
+      "retrieval": "Open the official OLC consolidation from its current index when accessible and record its language, stated edition/cutoff and disclaimer. If that route is inaccessible, use the closest available government-published text and state the limit; do not keep retrying, construct media URLs or rebuild the law from every Gazette act. Save bytes/hash only for a retained local copy.",
+      "conversion": "For a retained copy, extract searchable text and inspect the passages used; compare scanned pages only when OCR risk affects the conclusion. Preserve language and any translation or documentary-status notice. A direct official reference needs no local conversion.",
+      "selector": "PDF text extraction or verified OCR",
+      "status": "Official translation/consolidation candidates identified, not locally captured.",
+      "semantic_checks": [
+        "publisher and title match",
+        "publisher-declared date/cutoff and language recorded",
+        "specifically identified material later changes checked when relevant",
+        "substantive extraction verified",
+        "translation/authenticity disclaimer retained."
+      ],
+      "acceptance_policy": "A human-reviewed external reference may be used within the identity, language, version and passage actually reviewed; local capture and copying permission are not prerequisites for linking. A retained or converted copy needs proportionate fidelity and reuse checks for that artifact. Neither status establishes topic or country completeness."
+    },
+    {
+      "rule_id": "cy-eurlex-consolidated-pdf-v1",
+      "source_ids": [
+        "cy-green-line-regulation-866-2004",
+        "cy-green-line-regulation-866-2004-el"
+      ],
+      "publisher_or_shape": "EUR-Lex official consolidated PDF, language-specific CELEX route",
+      "retrieval": "Use the official EUR-Lex language-specific record as a human-reviewed reference and record its 31 August 2015 date. Download and hash the PDF only if retaining a local copy or replaying a conversion; do not infer post-2015 currency from the snapshot.",
+      "conversion": "If retaining text, keep the 14-page source and language-specific page boundaries. The five Greek passages already reviewed remain bounded text; full conversion and currentness are separate from ordinary link use.",
+      "selector": "all 14 PDF pages; page-bounded text extraction",
+      "status": "Official EN and EL 31 August 2015 consolidated PDFs captured. Five Greek passages (Article 2(1) first clause, Articles 2(2), 2(3), 2(4), and Article 3 on PDF pages 4–5) are accepted as bounded text after hash-bound semantic review against the PDF text layer; full Greek and English conversions remain candidates. Visual typography, post-2015 changes and national operational implementation remain unresolved.",
+      "semantic_checks": [
+        "CELEX 02004R0866 and the language actually reviewed match",
+        "record the displayed 31.08.2015 snapshot date and the relevant article or annex",
+        "check later amendment/currentness information only when claiming current legal effect",
+        "for retained copies, keep each selected language representation separate; no second language copy is required for ordinary reference use"
+      ],
+      "acceptance_policy": "A human-reviewed official reference may be used within its reviewed language, date, and passage. If retaining a copy, accept only the actual EUR-Lex snapshot and language reviewed. Do not infer later currency or complete Cyprus operational coverage.",
+      "replay_script": "source-library/cyprus/scripts/convert_primary_sources.py"
+    },
+    {
+      "rule_id": "cy-scc-decision-pdf-v1",
+      "source_ids": [
+        "cy-scc-edd-215-19"
+      ],
+      "publisher_or_shape": "Supreme Constitutional Court of Cyprus individual decision PDF",
+      "retrieval": "Open the exact official court decision link and record the court, case number, date and relevant holding. Capture bytes only for a retained copy or reproducible conversion; an index excerpt is not the judgment.",
+      "conversion": "If retaining a conversion, preserve page boundaries and inspect the identity and dispositive passages. Keep the case’s humanitarian-return context distinct from EU-family law and do not infer complete case-law coverage.",
+      "selector": "complete 13-page decision PDF",
+      "status": "Official decision EDD 215/19 captured; this is one immigration-removal case, not complete case-law coverage or an EU-family precedent.",
+      "semantic_checks": [
+        "Court, parties, case number and date match the official PDF",
+        "all 13 pages and dispositive paragraphs are present",
+        "classify as a third-country humanitarian return/removal case",
+        "do not generalize its holding to EU free-movement rights"
+      ],
+      "acceptance_policy": "Accept only the official decision artifact and its bounded identity/holding; case-law coverage remains incomplete.",
+      "replay_script": "source-library/cyprus/scripts/convert_primary_sources.py"
+    },
+    {
+      "rule_id": "cy-cap105-amendment-pdf-v1",
+      "source_ids": [
+        "cy-cap105-amendment-4i-2025"
+      ],
+      "publisher_or_shape": "Cyprus Official Gazette, exact Law 4(I)/2025 amendment issue PDF",
+      "retrieval": "Use the official Gazette link as a dated reference to Law 4(I)/2025. Capture bytes only if the Act text is being retained or a passage needs reproducible review. Never infer commencement from publication alone; the Cabinet notice is a specific unresolved issue.",
+      "conversion": "If retaining a local copy, record the Act’s pages and inspect section 29. A separate complete-issue conversion is not required for ordinary reference use.",
+      "selector": "full 64-page PDF; Law 4(I)/2025, printed pages 15–78; section 29 commencement clause",
+      "status": "Raw issue captured and accepted as the enacted amendment only; commencement notice and current Cap.105 text remain unresolved.",
+      "semantic_checks": [
+        "Gazette issue/date and law number match",
+        "all 64 pages present and act starts at printed page 15 and ends at 78",
+        "section 29 defers commencement to a Cabinet notice published in the Gazette",
+        "do not claim amendment is in force without locating that notice"
+      ],
+      "acceptance_policy": "Accept only the historical enactment text. Local raw capture and conversion do not establish commencement or current consolidated Cap.105.",
+      "replay_script": "source-library/cyprus/scripts/convert_primary_sources.py"
+    },
+    {
+      "rule_id": "cy-case-law-discovery-page-v1",
+      "source_ids": [
+        "cy-case-law-ejustice-overview-el"
+      ],
+      "publisher_or_shape": "European e-Justice Portal Cyprus national case-law overview, Greek page",
+      "retrieval": "Use the dated official e-Justice page as a discovery reference. A human-reviewed link and publication date are enough for that limited claim; capture a page only if a local snapshot is needed. If blocked, record the access result and do not generalize it to the current court system.",
+      "conversion": "No conversion is required for a reference link. If retaining a snapshot, preserve the source language, update date and outbound links; the page is not an exhaustive case-law inventory.",
+      "selector": "verified main/article selector confirmed against a local capture; no selector accepted until inspected",
+      "status": "The 11 March 2024 discovery statement is accepted only as dated context; direct open was rate-limited and local capture remains pending.",
+      "semantic_checks": [
+        "Publisher identity is the EU e-Justice Portal, not a Cyprus court.",
+        "Preserve the page update date and distinguish its 2024 publication-route statement from the current live court landscape.",
+        "Do not treat the overview as an exhaustive case-law inventory or as proof that no official repository currently exists.",
+        "Check outbound links and current court publication surfaces independently."
+      ],
+      "acceptance_policy": "Accept only a dated discovery limitation within the inspected language and scope; source capture, current route status and case-law coverage remain separate."
+    },
+    {
+      "rule_id": "cy-cylii-case-law-mirror-v1",
+      "source_ids": [
+        "cy-admin-court-acs-477-2022",
+        "cy-admin-court-nurul-amin-1706-2017"
+      ],
+      "publisher_or_shape": "CyLII/CyLaw nonofficial Greek-language court-decision mirror",
+      "retrieval": "Use the recorded CyLaw/CyLII URL only as a nonofficial discovery lead. A link may help locate a decision, but it does not establish official identity or support an authoritative case-law conclusion. Do not fetch/store a copy unless a distinct permitted review requires it.",
+      "conversion": "If an exact copy is retained, use a selector that isolates the judgment and compare identity and holding against an official court record before treating it as authoritative. Mirror-only text remains non-authoritative.",
+      "selector": "Pending inspection of the captured HTML; no body fallback permitted.",
+      "status": "Two Greek judgment pages have been reviewed through the nonofficial mirror in the existing research run. Exact response bytes, selector validation and official court corroboration remain pending.",
+      "semantic_checks": [
+        "mirror host is clearly distinguished from the issuing Administrative Court",
+        "case number, judgment date, parties and court match the cited record",
+        "full Greek text and operative disposition are present, with no unrelated page-shell text",
+        "procedural posture and any alternative holdings are distinguished accurately",
+        "official court record or authoritative court publication is checked before a legal holding is accepted",
+        "local text acceptance is scoped to exact captured bytes and validated text, not the mirror route alone"
+      ],
+      "acceptance_policy": "Keep external route verification, official identity, local capture, text fidelity, legal holding review, topic coverage and country completion as separate decisions; no mirror-only decision is accepted as authoritative case law.",
+      "source_specific_replay_scripts": {}
+    }
+  ],
+  "reference_use_policy": "For every source type, prefer the responsible official publisher. Prefer a usable government-published consolidation for national legislation and the responsible EU publisher consolidation for EU legislation; if none is usable, use the closest government-published or official-service version and record its language, displayed date/cutoff, scope, and limits. A human-reviewed official link is enough for ordinary research; a custom capture/conversion rule, local copy, API, replay check, or updater is optional. Use Gazette fragments only to resolve a material question; do not reconstruct a full chain by default. Keep reference use, local-copy acceptance, topic coverage, and country completion separate."
+}

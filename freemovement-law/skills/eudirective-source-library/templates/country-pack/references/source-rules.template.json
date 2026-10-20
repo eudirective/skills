@@ -2,22 +2,35 @@
   "schema_version": 1,
   "jurisdiction": "<ISO-3166-1-alpha-2>",
   "updated": "YYYY-MM-DD",
+  "source_rule_scope": "Rules may group sources and document only local-copy or monitoring work that is actually planned. A source does not need a custom retrieval or conversion rule to be used as a human-reviewed official reference under the shared source selection policy.",
+  "source_version_policy": "For every source class, use the responsible official publisher. Prefer a usable government-published consolidation for national legislation and the responsible EU publisher consolidation for EU legislation. Accept a government consolidation as a usable official reference when the publisher, instrument, and consolidation status are clear and no concrete warning undermines reliance. If trust is unclear, offer the whole official legal-text website/service, its authority/versioning information, and the relevant text to the user for human review. Otherwise use the closest government-published or official-service version and record its language, date/cutoff, and limitations. Consult individual Gazette acts only for a material issue; full amendment-chain reconstruction or full-site crawling is not a default requirement.",
+  "automation_default": "A human-reviewed official reference is enough for ordinary research. Add local capture, conversion, replay, API access, or scheduled updating only when retaining a copy, reproducibility, or recurring monitoring is needed and permitted.",
+  "acceptance_policy": "A human-reviewed official link may support research within its reviewed scope without a local copy. A government consolidation may be accepted as a usable official reference when its publisher, instrument, and status are clear; if trust is uncertain, offer the complete official site/service context to the user for human review. Local-copy checks are separate and proportionate to the artifact and intended reuse. Neither source acceptance nor a local hash establishes topic coverage or country completion.",
   "discovery_surfaces": [],
   "rules": [
     {
       "id": "<stable-rule-id>",
       "applies_to": "<source class or source IDs>",
       "retrieval": {
-        "entry_point": "<official publisher route>",
+        "entry_point": "<official publisher page or direct link>",
         "identity_checks": [],
-        "change_signal": "<how a change is detected>"
+        "change_signal": "not needed for ordinary human use; add only for recurring maintenance"
       },
-      "conversion": {
-        "rule_ids": ["<converter/version or manual-review rule>"],
-        "method": "<selector or native retention rule>",
-        "validation": []
+      "reference_review": {
+        "review_date": "YYYY-MM-DD",
+        "identity_version_scope_and_caveats": [],
+        "note": "Record only what is displayed and what was reviewed; use a stated date/cutoff or note that none is shown."
       },
-      "sustainability": "<limits, cadence, and failure handling>"
+      "conversion": null,
+      "local_copy_conversion_if_retained": {
+        "rule_ids": [],
+        "method": null,
+        "validation": [
+          "Check only content relied upon; use broader comparison when conversion is lossy or the whole converted text is relied upon.",
+          "Check attachments only when they affect the research."
+        ]
+      },
+      "sustainability": "<source limitations; add updater cadence/failure handling only if automated>"
     }
   ]
 }

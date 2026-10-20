@@ -10,7 +10,7 @@
 - Conversion: Czechia official HTML to Markdown 0.3.0
 - Coverage: page content extracted from .gov3-container; site chrome is omitted, and HTTP(S) links are preserved as links. Linked attachment contents are not fetched by this rule.
 
-> Review candidate from the official source. e-Sbírka identifies consolidated text as informative; verify promulgation, temporal version, legal force, and completeness separately.
+> Review the official page directly; record its displayed date/version, scope, and any legal-status or content caveat. For a legal-text question, consult a specific Gazette act only when a material gap remains.
 
 # Application for a temporary residence permit for a family member of an EU citizen
 

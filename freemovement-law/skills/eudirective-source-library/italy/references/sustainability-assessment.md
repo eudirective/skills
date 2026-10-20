@@ -37,15 +37,11 @@ The English visa FAQ has an earlier 15 October 2026 review capture, but its raw 
 | MAECI entry and visa FAQ | Prior review capture, currentness unverified | English review text retained from 15 October 2026; current Italian and English pages are visible in web view | No raw source for replay, no dependable change date, direct requests challenged; reconcile its operational visa guidance against the statute and consular instructions |
 | Other monitor leads | Review-candidate capture | The wider register has 33 replay-verified page conversions; one shell and eight failed routes are recorded | Not individually normalized to the scoped source list or assigned sustainable source-specific rules |
 
-## Repair priorities before acceptance
+## Ordinary source use and optional local copies
 
-1. Obtain written confirmation of Normattiva reuse terms, request limits, and whether repeated article-page requests are supported; prefer a documented XML/AKN export if available without the email-confirmed collection process.
-2. Retain the current URN selector and publisher version evidence for each capture. For date-specific legal work, use and verify Normattiva's documented specific-date selection instead of treating a later consultation as historical truth.
-3. Reconcile the 200 article responses with the complete article inventory and the official promulgation/amendment history; inspect annexes, notes, abrogations, and future-effective provisions before accepting any statute.
-4. Add a human review step for a changed source-bundle hash. The updater stages changed text under `temp/italy/pending/` and does not replace the prior candidate; it never auto-accepts.
-5. Ask MAECI for a supported public retrieval or export route, or identify an official first-party mirror whose scope is equivalent. Do not bypass its automated security challenge.
-6. Retain the 15 October English FAQ as a historical review artifact only until a raw capture and current-version check are available; keep Italian and English versions as distinct language records.
-7. Reconcile all 42 monitor leads, including procedural rules, forms, mission instructions, remedies, court decisions, and oversight, before making a national coverage claim.
+Use the latest usable government-published Normattiva consolidation or official agency page and record its date/cutoff, language, and visible limitations. If the official consolidation route is unavailable, use the closest government-published text. No custom article downloader, 200-page reconciliation, raw capture, replay hash, or API/export inquiry is required to reference an official page. Check a specific later act, commencement date, or judicial ruling only when it affects the issue.
+
+If recurring local copies are later requested, review the terms and limits for the specific publisher and validate the relevant retained text. Direct MAECI requests that return an access challenge remain blocked; use an accessible official page or record the limit, without attempting to bypass it. A national-completeness claim remains separate from source usability.
 
 ## Coverage limits
 

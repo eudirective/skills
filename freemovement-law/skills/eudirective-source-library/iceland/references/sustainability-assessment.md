@@ -3,7 +3,7 @@ Skill: assess-source-rule-sustainability v0.2.0
 # Iceland source-route sustainability assessment
 
 Status date: 19 October 2026  
-State: 28 candidates; 21 source responses saved, 20 conversions replay-verified, zero accepted. A shared bounded capture/replay helper was exercised; no Iceland-specific archive importer is implemented.
+State: 28 candidates; 21 source responses saved, 20 conversions replay-verified, zero local copies accepted. A shared bounded capture/replay helper was exercised; no Iceland-specific archive importer is implemented.
 
 ## Assessment boundary
 
@@ -21,7 +21,7 @@ The current Foreign Nationals Act route resolves to edition 158a and lists amend
 
 ## Regulation consolidation risk
 
-Regulation 540/2017 is a significant risk. The official collection page lists 2026 amendments numbered 669/2026, 724/2026, and 725/2026. Its linked “current” PDF identifies a version in force from 19 June 2025 and a document date of 10 April 2026. The status of those later amendments and the consolidation endpoint do not reconcile in the evidence collected here. A source rule must not treat a URL path named `current` as proof of currentness. Before implementation, compare the Gazette B-deild originals with every amendment in the parent regulation record and obtain source-owner confirmation of the consolidated route's update behavior.
+Use the official collection's linked Regulation 540/2017 PDF as the closest government-published text, recording that it states an in-force date of 19 June 2025 and document date of 10 April 2026. The collection separately lists amendments 669/2026, 724/2026, and 725/2026, so currentness after those listed items is unresolved. Do not compare every B-deild issue or require source-owner confirmation of the endpoint as a general gate; check whether a newer government consolidation resolves these three named updates, or keep their effect explicitly open.
 
 ## Proposed-route review
 
@@ -29,7 +29,7 @@ Regulation 540/2017 is a significant risk. The official collection page lists 20
 |---|---|---|---|
 | National legislation | Promising, discovery-only | Dated Althingi SGML ZIP and current Act pages; public publisher instructions permit import into other systems | No schema replay, content identity, edition-change monitor, amendment gap handling, or deterministic conversion has been implemented. The ZIP excludes later-passed laws. |
 | Authentic legislation and regulations | Promising, discovery-only | Stjórnartíðindi A/B/C divisions; official rules make electronic publication legally effective | Gazette result discovery, completeness, stable search/query behavior, corrections, and reliable individual-record identity remain untested. |
-| Consolidated immigration regulation | Fragile pending reconciliation | Reglugerðasafn regulation record, amendments list, and “current” PDF endpoint | The linked current PDF metadata predates amendments listed in 2026. The amendment chain and publisher's update cycle must be checked. |
+| Consolidated immigration regulation | Working version with a known cutoff issue | Reglugerðasafn regulation record and linked PDF | The linked PDF predates listed 2026 amendments. Retain it as the closest government-published text with that date; resolve only the named 2026 changes that affect provisions in scope. A full chain audit is not required. |
 | EEA/EFTA legal basis | Strong discovery route | Official EFTA EEA-Lex factsheet for Directive 2004/38/EC/JCD 158/2007 plus Icelandic Act 2/1993 and Foreign Nationals Act Chapter XI | No legal-equivalence assessment; applicable Icelandic rules and amendments need human review. |
 | Immigration guidance and forms | Fragile for fully automated retrieval | Ísland.is central service pages, forms index, and agency-owned guidance | Pages and links may change without notice; no revision dates or feed were found; exact Icelandic counterpart was not located for the family guidance. Fees, forms, evidence standards, and processing data are volatile. |
 | EEA/EFTA and Nordic registration | Not sustainable without source-owner reconciliation | Registers Iceland and Directorate guidance pages | One page states both three-month and six-month triggers; the entry page states six months. Nordic nationals have a separate channel. Do not encode the trigger until reconciled with the Act and source owner. |
@@ -49,8 +49,8 @@ KNU states that decisions with substantive outcomes are published after the fina
 ## Capture results and repair priorities
 
 1. Reconcile the official edition index: the current search/index reports 158a (1 October 2026), while an opened index snapshot exposed 157c. Resolve the live page and exact SGML file URL through the publisher, then retry only ordinary TLS-validated requests; do not work around 403 responses. Capture archive bytes, issue/date, and publisher identity once accessible.
-2. Pair consolidated editions with Stjórnartíðindi A-deild amendments. Detect gaps after the bundle cutoff and preserve publication and effective dates separately.
-3. Resolve Regulation 540/2017's 2026 amendment chain with the original B-deild notices and the consolidated endpoint owner. Do not classify that endpoint as current until the mismatch is fixed.
+2. Use the latest Althingi consolidated edition as the working text. Record its cutoff and check only a known post-cutoff act or commencement date that affects the review; retain publication and effective dates separately.
+3. Keep the government-linked Regulation 540/2017 PDF as a dated working text and identify the listed 2026 amendments as targeted possible gaps. Check their specific effect only for provisions in scope; do not reconstruct the full B-deild chain.
 4. Ask Registers Iceland and the Directorate of Immigration to reconcile the three-month/six-month registration discrepancy and the inclusion of Swiss nationals under the EEA/EFTA public label.
 5. Record Icelandic law and guidance as distinct from English public-service translations; identify a first-party Icelandic guidance counterpart or keep the translation as a user-facing lead only.
 6. Inspect the Ministry's visa lists and current mission handoffs by country. Keep C-visas, post-approval D-visas, EEA/EFTA family cards, and ordinary national residence permits distinct.

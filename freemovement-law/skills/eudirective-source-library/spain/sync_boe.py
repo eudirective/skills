@@ -195,7 +195,7 @@ def markdown_for(source: tuple[str, str, str], raw: bytes, acquired_at: str, pub
         f"- BOE metadata last updated: {(publisher_metadata or {}).get('fecha_actualizacion', 'not supplied')}\n"
         f"- BOE text effective date in metadata: {(publisher_metadata or {}).get('fecha_vigencia', 'not supplied')}\n"
         f"- Conversion: BOE XML, latest returned version per text block, converted to Markdown\n\n"
-        f"> **Informational consolidated text only.** It is not an official authentic publication. Verify legal effect against the relevant BOE Gazette publication before legal reliance.\n>\n"
+        f"> **Informational consolidated text only.** This government-published BOE consolidation is a usable dated working text within its stated scope, but it is not the Gazette promulgation record. Preserve the BOE label and cutoff. Check a specific Gazette item only when a known later amendment, commencement issue, correction, or question about legal effect is material.\n>\n"
         f"> **Attribution:** Based on data from the Agencia Estatal Boletín Oficial del Estado.\n\n"
         + "\n\n".join(blocks)
         + "\n"
@@ -321,7 +321,7 @@ def sync() -> int:
         "api_documentation": "https://www.boe.es/datosabiertos/api/api.php?lang=es",
         "reuse_terms": "https://www.boe.es/informacion/aviso_legal/index.php",
         "conversion_scope": "The API returns all versions; this converter selects the last returned version in each block, matching the BOE latest-version ordering. Raw XML is retained for replay.",
-        "review_notice": "All converted texts are informational review candidates and remain unaccepted. BOE metadata status and Gazette publications must be reviewed before legal reliance.",
+        "review_notice": "All converted texts are informational review candidates and remain unaccepted as local artifacts. Record the BOE metadata legal status and displayed consolidation date; consult a specific Gazette publication only when a material later-change, commencement, correction, or legal-effect question is not resolved by the consolidated text.",
         "records": records,
         "failures": failures,
     }
@@ -389,7 +389,7 @@ def rebuild() -> int:
         "api_documentation": "https://www.boe.es/datosabiertos/api/api.php?lang=es",
         "reuse_terms": "https://www.boe.es/informacion/aviso_legal/index.php",
         "conversion_scope": "The API returns all versions; this converter selects the last returned version in each block, matching the BOE latest-version ordering. Raw XML is retained for replay.",
-        "review_notice": "All converted texts are informational review candidates and remain unaccepted. BOE metadata status and Gazette publications must be reviewed before legal reliance.",
+        "review_notice": "All converted texts are informational review candidates and remain unaccepted as local artifacts. Record the BOE metadata legal status and displayed consolidation date; consult a specific Gazette publication only when a material later-change, commencement, correction, or legal-effect question is not resolved by the consolidated text.",
         "records": records,
         "failures": failures,
     }

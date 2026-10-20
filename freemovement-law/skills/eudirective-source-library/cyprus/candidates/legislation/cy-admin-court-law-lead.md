@@ -8,44 +8,12 @@
 - Retrieved: 2026-10-19T02:29:16+00:00
 - Media type: `text/html`
 - Publisher/version evidence: CyLaw has a consolidated record; amendment history and currentness require official Gazette confirmation
-- Extraction: `body`
+- Extraction: `div.main-content`
 - Exact response SHA-256: `575a63eea644853632c4617465cc12446fea0ca2296da7e037d3c3e3f46c745c`
 
-> **Review candidate.** Not accepted into the trusted source corpus. Check source identity, current version, scope, completeness, and reuse conditions before reliance.
+> **Local-copy review notice.** This captured file is not accepted as a retained copy. A direct official link can be used for research after reviewing relevant content, date/version, scope, and caveats. Local-copy acceptance and reuse terms matter only when retaining or redistributing this file.
 
 ## Captured source text
-
-ΠΑΓΚΥΠΡΙΟΣ ΔΙΚΗΓΟΡΙΚΟΣ ΣΥΛΛΟΓΟΣ
-
-CyLaw
-|
-Αναφορικά μ'εμάς
-|
-Επικοινωνία
-
-Κατάλογος Ενοποιημένης Νομοθεσίας
-
-Ο περί της Ίδρυσης και Λειτουργίας Διοικητικού Δικαστηρίου Νόμος του 2015 (131(I)/2015)
-
-Περιεχόμενα
-
-Πλήρες Κείμενο
-
-Εκτύπωση
-
-Ιστορικό Τροποποιήσεων
-
-131(I)/2015
-
-72(I)/2018
-
-3(I)/2021
-
-31(I)/2023
-
-56(I)/2023
-
-142(I)/2025
 
 Προοίμιο
 
@@ -276,7 +244,3 @@ H Βουλή των Αντιπροσώπων ψηφίζει ως ακολούθ�
 3 του Ν. 56(Ι)/2023Έναρξη της ισχύος του Ν. 56(Ι)/2023
 
 Ο παρών Νόμος [Σ.Σ.: δηλαδή ο Ν. 56(Ι)/2023] τίθεται σε ισχύ κατά την ημερομηνία η οποία καθορίζεται στην προβλεπόμενη, στις διατάξεις του εδαφίου (2) του άρθρου 22 του περί Απονομής της Δικαιοσύνης (Ποικίλαι Διατάξεις) (Τροποποιητικού) Νόμου του 2022 Γνωστοποίηση.
-
-Εκτύπωση
-
-Cylaw.org: Από το ΚΙΝOΠ/CyLii και τη ConvertPLC για τον Παγκύπριο Δικηγορικό Σύλλογο

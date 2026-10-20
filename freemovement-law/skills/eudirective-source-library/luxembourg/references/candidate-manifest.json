@@ -232,7 +232,7 @@
       "retrieval_status": "discovery_surface_no_text",
       "retrieval_shape": "HTML documentation",
       "version_evidence": "Docs describe ELI routing; runtime redirects/content negotiation not verified.",
-      "note": "A documented resolution scheme does not prove every target is present or stable. Preserve original promulgated acts and amendments because consolidation is documentary.",
+      "note": "A documented resolution scheme does not prove every target is present or stable. For ordinary research, use the government-published consolidation with its documentary/no-legal-force caveat; preserve original acts and amendments only when documentary local retention is the goal, or consult a specific act for a material discrepancy or commencement question.",
       "topic_ids": [
         "legislation",
         "versions",
@@ -260,7 +260,7 @@
       "retrieval_status": "converted_review_candidate",
       "retrieval_shape": "Consolidated legal text with ELI and linked amendment relations",
       "version_evidence": "Version applicable 2026-06-12; official page says consolidations are documentary and have no legal force.",
-      "note": "Use as a current-text aid only; reconcile all relevant Mémorial amendments and future versions. Keep EU, EEA EFTA, Swiss, mobile-Luxembourgish and UK Withdrawal Agreement routes distinct.",
+      "note": "Use the official Legilux consolidation applicable 12 June 2026 as the government-published current-text version. Record that Legilux labels consolidations documentary and without legal force; do not reconstruct every Mémorial amendment. Check for a later Legilux consolidation or a specifically identified post-cutoff change. Keep EU, EEA EFTA, Swiss, mobile-Luxembourgish and UK Withdrawal Agreement routes distinct.",
       "topic_ids": [
         "free_movement",
         "immigration",
@@ -274,7 +274,7 @@
       "resolved_url": "https://data.legilux.public.lu/filestore/eli/etat/leg/loi/2008/08/29/n1/consolide/20260612/fr/xml/eli-etat-leg-loi-2008-08-29-n1-consolide-20260612-fr-xml.xml",
       "retrieval_note": "ValueError: redirect outside official-host allowlist",
       "candidate_text_path": "source-library/luxembourg/candidates/lu-05.md",
-      "converted_sha256": "d259943755fcb7019507696e7578bf5536f434d47a2ae31f7c307c28cce02fb8"
+      "converted_sha256": "b37803dce60a03514da27d6ace2001fc3b214655bc716564b28fe032e88bfc19"
     },
     {
       "id": "lu-06",
@@ -291,7 +291,7 @@
       "retrieval_status": "converted_review_candidate",
       "retrieval_shape": "Official Journal ELI record",
       "version_evidence": "Original act is distinct from subsequent amendments and consolidations.",
-      "note": "Track amendment chain from the official Journal, including the 2026 amendment, rather than treating the original text as current.",
+      "note": "Prefer a usable Legilux consolidated version. If none is available, use the closest government-published text and record its date/cutoff; check the identified 2026 amendment only if it affects the provisions in scope. Do not reconstruct the full amendment chain by default.",
       "topic_ids": [
         "free_movement",
         "immigration",
@@ -304,7 +304,7 @@
       "resolved_url": "https://data.legilux.public.lu/filestore/eli/etat/leg/loi/2008/08/29/n1/jo/fr/xml/eli-etat-leg-loi-2008-08-29-n1-jo-fr-xml.xml",
       "retrieval_note": "ValueError: redirect outside official-host allowlist",
       "candidate_text_path": "source-library/luxembourg/candidates/lu-06.md",
-      "converted_sha256": "1c58bc091b0edb614965359f92fad59d9eccb19a8c8f63a4131b06af59f58191"
+      "converted_sha256": "bcd04b7792616e1e7e59c37f80fe51c3d74d0fc715126ae6a577b115efda6db9"
     },
     {
       "id": "lu-07",
@@ -321,7 +321,7 @@
       "retrieval_status": "converted_review_candidate",
       "retrieval_shape": "Official Journal ELI record; ministry also links a coordinated PDF",
       "version_evidence": "Ministry index last modified 18 April 2024; the linked coordinated PDF runs only through amendments to 17 March 2023.",
-      "note": "Prefer Legilux act/amendment history over the stale coordinated PDF. The direct ELI page did not render in this research client; that is not evidence of a publisher outage.",
+      "note": "Use the Ministry-linked coordinated government PDF as a dated working text through 17 March 2023, with its cutoff recorded. Check the 2024 act and rectification only if they materially affect the provision or a current-law claim. The direct ELI page did not render in this research client; this client-access gap is not a reason to reconstruct the full act/amendment history.",
       "topic_ids": [
         "free_movement",
         "forms",
@@ -334,7 +334,7 @@
       "resolved_url": "https://data.legilux.public.lu/filestore/eli/etat/leg/rgd/2008/09/05/n6/jo/fr/xml/eli-etat-leg-rgd-2008-09-05-n6-jo-fr-xml.xml",
       "retrieval_note": "ValueError: redirect outside official-host allowlist",
       "candidate_text_path": "source-library/luxembourg/candidates/lu-07.md",
-      "converted_sha256": "49c836d7ce46a7c2f29232794290f0daddfebc0a5e8c9ae66b38c8a705c97d62"
+      "converted_sha256": "0a89f0242e7379798b6c0049be5b0ad0f9ad5203545848740c4a8a8638aae6f4"
     },
     {
       "id": "lu-08",
@@ -351,7 +351,7 @@
       "retrieval_status": "converted_review_candidate",
       "retrieval_shape": "Official Journal ELI act record",
       "version_evidence": "Published 27 June 2024; rectification published as Mémorial A283 on 12 July 2024. Direct record page returned no text in this research client.",
-      "note": "This postdates the Ministry index and April 2023 coordinated PDF. Fetch the official act and rectification in runtime and reconcile their effects before relying on the PDF.",
+      "note": "This postdates the Ministry index and April 2023 coordinated PDF. Use the dated government-published PDF as a working text within its stated scope; check this act and rectification only if the affected provisions matter. If they do, record the specific effect or leave those provisions unresolved. Do not block unrelated use or require a full amendment chain.",
       "topic_ids": [
         "free_movement",
         "family_residence",
@@ -365,7 +365,7 @@
       "resolved_url": "https://data.legilux.public.lu/filestore/eli/etat/leg/rgd/2024/06/20/a262/jo/fr/xml/eli-etat-leg-rgd-2024-06-20-a262-jo-fr-xml.xml",
       "retrieval_note": "ValueError: redirect outside official-host allowlist",
       "candidate_text_path": "source-library/luxembourg/candidates/lu-08.md",
-      "converted_sha256": "969cd9f869ae61d98d2bdf6e8d7857bb17835818fb5f580cb2936836d9298720"
+      "converted_sha256": "bea2206c9a75cd6f2f63077071009cd6c93d3146036d5847efbe8858675ebb34"
     },
     {
       "id": "lu-09",
@@ -411,7 +411,7 @@
       "retrieval_status": "converted_review_candidate",
       "retrieval_shape": "Mutable PDF attachment",
       "version_evidence": "Version says applicable from 15 April 2023 and incorporates amendments through 17 March 2023.",
-      "note": "Do not treat as current after the 2024 A262/A283 amendments; use as a stale comparison artifact only.",
+      "note": "Use this dated government-published working text within its 15 April 2023 applicability date and 17 March 2023 amendment cutoff. Check the known 2024 A262 amendment and A283 rectification only if they materially affect the issue; it does not establish post-cutoff currentness.",
       "topic_ids": [
         "immigration",
         "formalities",
@@ -810,7 +810,7 @@
       "verification_status": "Official Legilux record for general non-contentious administrative procedure, potentially relevant to immigration decisions.",
       "retrieval_status": "converted_review_candidate",
       "retrieval_shape": "Official Journal ELI record",
-      "version_evidence": "Official text record identified; current consolidation and all amendments not established in this tranche.",
+      "version_evidence": "Official text record identified. Use the closest government-published version and its stated date/status; consult later Gazette acts only for a known material gap.",
       "note": "Check scope and special-law exclusions before applying to immigration; do not infer procedural rights solely from a general regulation.",
       "topic_ids": [
         "administrative_procedure",
@@ -824,7 +824,7 @@
       "resolved_url": "https://data.legilux.public.lu/filestore/eli/etat/leg/rgd/1979/06/08/n7/jo/fr/xml/eli-etat-leg-rgd-1979-06-08-n7-jo-fr-xml.xml",
       "retrieval_note": "ValueError: redirect outside official-host allowlist",
       "candidate_text_path": "source-library/luxembourg/candidates/lu-24.md",
-      "converted_sha256": "6002d1cb91c9ff83aca8a409e15434936b34a7f3ca058d19512110cfdd7fc187"
+      "converted_sha256": "c29afb00cdf44f9ce6588f7aa17a4549ca01f2012aef0d034b8b467fa3fd628b"
     },
     {
       "id": "lu-25",
@@ -899,7 +899,7 @@
       "retrieval_status": "converted_review_candidate",
       "retrieval_shape": "Consolidated legal text",
       "version_evidence": "Consolidation date 2023-09-16 is known; newer applicable version not established in this tranche.",
-      "note": "Do not treat this dated consolidation as current without checking amendments and later versions on Legilux.",
+      "note": "Use this Legilux consolidation as a dated text applicable 16 September 2023. A current-law claim needs a scoped current-version check at Legilux; historical or contextual use does not require checking every later amendment or version.",
       "topic_ids": [
         "administrative_courts",
         "procedure",
@@ -912,7 +912,7 @@
       "resolved_url": "https://data.legilux.public.lu/filestore/eli/etat/leg/loi/1999/06/21/n2/consolide/20230916/fr/xml/eli-etat-leg-loi-1999-06-21-n2-consolide-20230916-fr-xml.xml",
       "retrieval_note": "ValueError: redirect outside official-host allowlist",
       "candidate_text_path": "source-library/luxembourg/candidates/lu-27.md",
-      "converted_sha256": "4923ef5c12ca283a69df1d9afcd73cc34d31c3436012be6a649f0c66c0669725"
+      "converted_sha256": "e138b6bb1799840c6f80f7acd8d366f6bafef4816676c34324b5ec0e59cbdae8"
     },
     {
       "id": "lu-28",
@@ -956,8 +956,8 @@
       "verification_status": "Official Legilux record for access to administrative documents; related official guidance identifies CADA review.",
       "retrieval_status": "converted_review_candidate",
       "retrieval_shape": "Official Journal ELI record and linked current consolidation",
-      "version_evidence": "The law and current consolidated record appear in official Legilux search; exact latest consolidation should be rediscovered.",
-      "note": "Preserve original act and amendment history; do not confuse document-access remedies with immigration merits appeals.",
+      "version_evidence": "Official Legilux search identifies the law and a consolidated record; the exact consolidation version date was not directly reviewed. Use an accessible official consolidated text or the closest usable government-published version, recording its displayed date/cutoff and documentary caveat.",
+      "note": "Check a specific later change only if it materially affects the issue. Preserve the original act and amendments only when local documentary retention is the goal. Keep document-access remedies distinct from immigration merits appeals.",
       "topic_ids": [
         "access_to_records",
         "CADA",
@@ -970,7 +970,7 @@
       "resolved_url": "https://data.legilux.public.lu/filestore/eli/etat/leg/loi/2018/09/14/a883/jo/fr/xml/eli-etat-leg-loi-2018-09-14-a883-jo-fr-xml.xml",
       "retrieval_note": "ValueError: redirect outside official-host allowlist",
       "candidate_text_path": "source-library/luxembourg/candidates/lu-29.md",
-      "converted_sha256": "38e3551eaee09e1d89f428fc26ef26f6528d7a2d324851a35682342b647a46b0"
+      "converted_sha256": "70c11bdfc4f93d14d4521cc4e4e0a7ff0bf893cd55351aed0b305ba02d22b543"
     },
     {
       "id": "lu-30",
@@ -1087,7 +1087,7 @@
       "resolved_url": "https://data.legilux.public.lu/filestore/eli/etat/leg/loi/2018/08/01/a686/consolide/20251226/fr/xml/eli-etat-leg-loi-2018-08-01-a686-consolide-20251226-fr-xml.xml",
       "retrieval_note": "ValueError: redirect outside official-host allowlist",
       "candidate_text_path": "source-library/luxembourg/candidates/lu-33.md",
-      "converted_sha256": "0f4881687eb5f5749e8c64c40f837def202b198e6ece4794c4c325d577f01d1d"
+      "converted_sha256": "8f3763a72cafc97635b296f2ad972aad2c085fdb6a955051196576879fe135a7"
     },
     {
       "id": "lu-34",
@@ -1175,7 +1175,7 @@
       "resolved_url": "https://data.legilux.public.lu/filestore/eli/etat/leg/loi/2014/07/04/n1/jo/fr/xml/eli-etat-leg-loi-2014-07-04-n1-jo-fr-xml.xml",
       "retrieval_note": "ValueError: redirect outside official-host allowlist",
       "candidate_text_path": "source-library/luxembourg/candidates/lu-36.md",
-      "converted_sha256": "433bccd2830796992227b682e2519f4536077d7d72ce12879d766cdbcae21986"
+      "converted_sha256": "e7538db88548ecedb6fb648131227d8f9f44441a1af5d1705bfe8316beda5cea"
     },
     {
       "id": "lu-37",

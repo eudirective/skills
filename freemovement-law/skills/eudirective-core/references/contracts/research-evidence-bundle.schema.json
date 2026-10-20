@@ -5,7 +5,7 @@
   "additionalProperties": false,
   "required": ["contract_version", "research_id", "plan_sha256", "mode", "reviewed_at", "coverage_status", "tasks", "findings", "evidence", "claims", "legal_merits_status", "downstream_status"],
   "properties": {
-    "contract_version": { "const": "0.1.0" },
+    "contract_version": { "enum": ["0.1.0", "0.2.0"] },
     "research_id": { "type": "string", "pattern": "^RCH-[A-Z0-9][A-Z0-9._-]{0,63}$" },
     "plan_sha256": { "$ref": "#/$defs/sha256" },
     "mode": { "enum": ["quick", "case", "deep"] },
@@ -198,6 +198,28 @@
         "activation_status": { "const": "candidate_not_activated" }
       }
     },
+    "official_reference": {
+      "type": "object", "additionalProperties": false,
+      "required": ["record_kind", "owner", "reference_id", "authority", "publisher_basis", "source_type", "legal_status", "title", "url", "language", "reviewed_at", "scope_note", "limitations", "activation_status"],
+      "properties": {
+        "record_kind": { "const": "official_reference" },
+        "owner": { "$ref": "#/$defs/owner" },
+        "reference_id": { "type": "string", "pattern": "^REF-[A-Z0-9][A-Z0-9._-]{0,63}$" },
+        "authority": { "type": "string", "minLength": 1, "maxLength": 300 },
+        "publisher_basis": { "type": "string", "minLength": 1, "maxLength": 600 },
+        "source_type": { "enum": ["treaty", "regulation", "directive", "decision", "statute", "legislation", "primary_law", "judgment", "official_guidance", "official_form", "mission_instruction", "procedure", "procedural_rule", "complaint_route", "oversight_material", "official_register", "other_official"] },
+        "legal_status": { "enum": ["primary_law", "binding_secondary_law", "case_law", "procedural_rule", "official_guidance", "nonbinding_official_material", "official_source"] },
+        "title": { "type": "string", "minLength": 1, "maxLength": 600 },
+        "url": { "type": "string", "format": "uri", "pattern": "^https://" },
+        "language": { "type": "string", "pattern": "^[A-Za-z]{2,3}(-[A-Za-z0-9]{2,8})*$" },
+        "published_or_effective_date": { "type": ["string", "null"], "format": "date" },
+        "reviewed_at": { "type": "string", "format": "date-time" },
+        "scope_note": { "type": "string", "minLength": 1, "maxLength": 1000 },
+        "limitations": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1, "maxLength": 1000 } },
+        "content_sha256": { "$ref": "#/$defs/sha256" },
+        "activation_status": { "const": "reference_only_not_registered" }
+      }
+    },
     "evidence": {
       "type": "object", "additionalProperties": false,
       "required": ["evidence_id", "task_id", "relation", "directness", "source", "pinpoint", "accessed_at", "limitations"],
@@ -206,7 +228,7 @@
         "task_id": { "type": "string", "pattern": "^RQT-[A-Z0-9][A-Z0-9._-]{0,63}$" },
         "relation": { "enum": ["supports", "contradicts", "insufficient", "context_only"] },
         "directness": { "enum": ["direct", "indirect", "unclear"] },
-        "source": { "oneOf": [{ "$ref": "#/$defs/registered_source" }, { "$ref": "#/$defs/candidate_source" }] },
+        "source": { "oneOf": [{ "$ref": "#/$defs/registered_source" }, { "$ref": "#/$defs/candidate_source" }, { "$ref": "#/$defs/official_reference" }] },
         "pinpoint": { "type": "string", "minLength": 1, "maxLength": 600 },
         "accessed_at": { "type": "string", "format": "date-time" },
         "excerpt": { "type": "string", "maxLength": 500 },

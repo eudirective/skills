@@ -21,7 +21,7 @@ The new country dossiers provide dated candidate manifests and source lists, but
 
 ## What should not be copied as a retrieval rule
 
-The [Hungary sustainability assessment](../hungary/references/sustainability-assessment.md) rates the NJT consolidated-law adapter **unsustainable with high confidence**. The assessment says NJT's terms prohibit bulk downloading/processing and building a database from downloaded portal content, while the runner retrieves and stores consolidated texts and also polls NJT catalogues. No machine-access permission is recorded. Its proposed workaround is a human-reviewed Gazette issue workflow, with official consolidated NJT pages used only as an on-demand human reference unless permission changes.
+The [Hungary sustainability assessment](../hungary/references/sustainability-assessment.md) rates automated NJT retrieval/storage **unsustainable under the recorded terms**. Use NJT's government-published consolidated page as a human-reviewed source reference, record its displayed version date, and do not copy or poll the protected portal database. A specific Gazette amendment is supplemental only when it resolves a material post-cutoff or commencement issue; a manual Gazette-by-Gazette workflow is not required.
 
 The same assessment rates the OIF lane **fragile** because source-specific identity checks are missing for some pages, PDF text quality is not reviewed, and a run can make many requests without timeouts, backoff, or per-source host restrictions. NAIH/AJBH access terms and some court coverage also remain unresolved. These findings mean the Hungary pack is a useful structural comparator, not a sustainability approval for its existing automation.
 

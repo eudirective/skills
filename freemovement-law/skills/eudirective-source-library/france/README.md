@@ -1,6 +1,6 @@
 # France source candidates
 
-**Status updated 2026-10-19:** 47 candidates; 17 official catalog, guidance, and discovery pages converted and replay-verified; 30 requests failed or timed out; 0 law texts captured and 0 sources accepted. Legifrance legal pages returned 403. The DILA LEGI public archive index is accessible, but its full baseline archive is 1.1 GB and targeted law extraction has not been implemented.
+**Status updated 2026-10-19:** 47 candidates; 17 official catalog, guidance, and discovery pages converted and replay-verified; 30 local retrieval attempts failed or timed out; no law text is retained as a local copy. These counts do not mean official links are unusable. Human-review accessible government pages directly, recording their version/cutoff and limits; a local capture or DILA archive extraction is optional unless a retained conversion or recurring updater is needed. Legifrance direct retrieval returned 403 in this client. The DILA LEGI archive is a possible bulk route, not a prerequisite for ordinary source use.
 
 - [Candidate manifest](references/candidate-manifest.json)
 - [Source list](references/source-list.md)
@@ -8,7 +8,7 @@
 - [Shared capture/replay rule](../sync_candidate_pages.py)
 - [Sustainability assessment](references/sustainability-assessment.md)
 
-The register reconciles the earlier seven-candidate France pack and adds national legal-source discovery and DILA bulk-data routes, residence and visa guidance, procedure and remedies, courts, public access, privacy, oversight, and legal aid. Candidates remain discovery-only unless the manifest explicitly marks a route monitor-only.
+The register reconciles the earlier seven-candidate France pack and adds national legal-source discovery and DILA bulk-data routes, residence and visa guidance, procedure and remedies, courts, public access, privacy, oversight, and legal aid. The local manifest distinguishes candidate records and retained artifacts; it does not prevent direct use of an official source link after human review.
 
 The official DILA LEGI public dataset is the strongest no-registration route for full legal texts. Its page states an Open Licence and provides HTTPS bulk access; the directory exposes a 1.1 GB baseline plus dated deltas through 2026-10-17. No baseline/delta replay, targeted extraction, date-specific law identity check, XML conversion, or offline replay has been implemented. The 17 captured pages are catalogue/guidance/discovery text, not statute text. The separate Légifrance API requires PISTE registration, accepted terms, application credentials, and quota management.
 

@@ -1,6 +1,6 @@
 # Slovakia source-rule sustainability assessment
 
-Research date: 2026-10-19. Scope: 40 official-source candidates across laws, guidance, forms, mission details, case-law discovery, oversight and legal aid. Fifteen Slov-Lex current legal texts, their binding PDFs, and eleven linked annex PDFs were captured. Sixteen other source pages were converted; eight MFA requests failed with HTTP 403. No source is accepted.
+Research date: 2026-10-19. Scope: 40 official-source candidates across laws, guidance, forms, mission details, case-law discovery, oversight and legal aid. Fifteen Slov-Lex current legal texts, their binding PDFs, and eleven linked annex PDFs were captured. Sixteen other source pages were converted; eight MFA requests failed with HTTP 403. No locally stored artifact is accepted.
 
 ## Slov-Lex legal publication route
 
@@ -42,4 +42,4 @@ The Supreme Administrative Court, Supreme Court and Constitutional Court provide
 
 ## Disposition
 
-The Slov-Lex rule is implemented and offline replay-verified for 15 current legal candidates, with binding PDFs and linked annexes preserved. Its route is reasonably sustainable for bounded per-act monitoring, backed by official version histories and monthly bulk changes, subject to platform-change and size limits. Reuse permission and conversion quality still prevent acceptance. Other source classes remain partially retrievable: 16 converted pages, eight MFA access failures, and no complete mission or court inventory. No source is accepted.
+The Slov-Lex rule is implemented and offline replay-verified for 15 current legal candidates, with binding PDFs and linked annexes preserved. Its route is reasonably sustainable for bounded per-act monitoring, backed by official version histories and monthly bulk changes, subject to platform-change and size limits. Reuse permission and conversion quality still prevent acceptance. Other source classes remain partially retrievable: 16 converted pages, eight MFA access failures, and no complete mission or court inventory. No locally stored artifact is accepted.

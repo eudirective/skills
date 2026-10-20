@@ -12,7 +12,7 @@
 - In force according to Finlex metadata: yes
 - Conversion: Finlex Akoma Ntoso XML `statuteProvisionsWrapper`, preserving chapter/section headings and numbered paragraphs
 
-> **Review candidate.** This conversion is not accepted into the trusted legal corpus. Finlex API reports a consolidation date of 22 May 2026. Compare the consolidated body against the official current-text page and amendments effective after that date before treating it as current on 19 October 2026. Compare the version metadata and amendment chain with the official current-text page before legal reliance.
+> **Review candidate.** This conversion is not accepted into the trusted legal corpus. Finlex API reports a consolidation date of 22 May 2026. Use the 22 May 2026 Finlex consolidation as a dated government-published working text. Check the official current-text page for a later edition and review any specifically identified post-cutoff change relevant to the question; full amendment-chain comparison is not required.
 >
 > **Attribution:** Based on Finlex open data, made available under CC BY 4.0.
 

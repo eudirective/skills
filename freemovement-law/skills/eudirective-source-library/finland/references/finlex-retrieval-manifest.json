@@ -79,7 +79,7 @@
         "min_chapters": 15,
         "min_sections": 120,
         "min_body_chars": 50000,
-        "version_caution": "The XML reports a consolidation date of 27 March 2026, before the 14 April 2026 effective date it lists for amendment 213/2026, and an expression ELI date of 5 July 2019. Verify whether the returned body includes every amendment in force on the retrieval date."
+        "version_caution": "The XML reports a consolidation date of 27 March 2026, before the listed 14 April 2026 effective date of amendment 213/2026. Treat this specific version-boundary conflict as unresolved and prefer a later Finlex edition if available; do not reconstruct the full amendment chain."
       },
       "last_checked_at": "2026-10-19T03:36:55+00:00",
       "current_eli": "http://data.finlex.fi/eli/sd/2019/808/ajantasa/2026-03-27/fin",
@@ -89,8 +89,8 @@
       "source_title": "Laki oikeudenkäynnistä hallintoasioissa",
       "chapter_count": 15,
       "section_count": 127,
-      "converted_sha256": "a16c5a0ef46ed3e076f36b90b681b9c05f7543b02a440b84aeb7a445748d5fe9",
-      "converted_bytes": 84633,
+      "converted_sha256": "65f25139b73ebbc5d1ab5f4b44d3ecbab17fe74af3f939a6c21c150cc5652f48",
+      "converted_bytes": 84542,
       "raw_xml_bytes": 221173,
       "retrieval_status": "converted_review_candidate",
       "accepted": false
@@ -251,7 +251,7 @@
       "retrieval_shape": "Finlex REST API Akoma Ntoso consolidated-statute XML",
       "retrieved_at": "2026-10-19T03:36:55+00:00",
       "output_path": "source-library/finland/candidates/fi-data-protection-act-1050-2018-current.md",
-      "verification_note": "Official Finlex open-data API returned an identity-matching Akoma Ntoso consolidation. API metadata reported a consolidation date of 22 May 2026. The text remains unaccepted pending comparison with current Finlex page and amendment chain.",
+      "verification_note": "Official Finlex open-data API returned an identity-matching Akoma Ntoso consolidation dated 22 May 2026. Use that government-published edition with its cutoff; the candidate remains subject to source-identity and proportionate text review. Do not require a full amendment-chain comparison.",
       "expected_identity": {
         "number": "1050",
         "doc_number": "1050/2018",
@@ -264,7 +264,7 @@
         "min_chapters": 1,
         "min_sections": 10,
         "min_body_chars": 5000,
-        "version_caution": "Finlex API reports a consolidation date of 22 May 2026. Compare the consolidated body against the official current-text page and amendments effective after that date before treating it as current on 19 October 2026."
+        "version_caution": "Finlex API reports a consolidation date of 22 May 2026. The official consolidation is dated 22 May 2026. Use it as the closest government-published text with that cutoff; check for a later Finlex consolidation rather than reconstructing each post-cutoff amendment."
       },
       "raw_xml_path": "temp/finland/raw/fi-data-protection-act-8482195cf92e1e5ad946c8d1391cc31138c077e2ac49f531f239e3ce5283af6a.xml",
       "last_checked_at": "2026-10-19T03:36:55+00:00",
@@ -279,8 +279,8 @@
       "source_title": "Tietosuojalaki",
       "chapter_count": 6,
       "section_count": 38,
-      "converted_sha256": "9a9330732eada4783e4296b579bf204968ec6718505a8d8a32f819138bd3b24e",
-      "converted_bytes": 30960,
+      "converted_sha256": "074f767443df03986b2cb574ce9b66f0e136393d6a2124be22f10f92299a111f",
+      "converted_bytes": 30969,
       "raw_xml_bytes": 80160,
       "retrieval_status": "converted_review_candidate",
       "accepted": false
@@ -296,7 +296,7 @@
       "retrieval_shape": "Finlex REST API Akoma Ntoso consolidated-statute XML",
       "retrieved_at": "2026-10-19T03:36:55+00:00",
       "output_path": "source-library/finland/candidates/fi-police-personal-data-act-616-2019-current.md",
-      "verification_note": "Official Finlex open-data API returned an identity-matching Akoma Ntoso consolidation. API metadata reported a consolidation date of 9 October 2026. The text remains unaccepted pending comparison with current Finlex page and amendment chain.",
+      "verification_note": "Official Finlex open-data API returned an identity-matching Akoma Ntoso consolidation dated 9 October 2026. Use that government-published edition with its cutoff; the candidate remains subject to source-identity and proportionate text review. Do not require a full amendment-chain comparison.",
       "expected_identity": {
         "number": "616",
         "doc_number": "616/2019",
@@ -309,7 +309,7 @@
         "min_chapters": 1,
         "min_sections": 10,
         "min_body_chars": 5000,
-        "version_caution": "Finlex API reports a consolidation date of 9 October 2026. Verify that the consolidation includes all amendments effective by the retrieval date and compare the current-text page before legal reliance."
+        "version_caution": "Finlex API reports a consolidation date of 9 October 2026. Use the official Finlex consolidation dated 9 October 2026 within that cutoff and check for a later Finlex version when updating; no separate amendment-by-amendment comparison is required."
       },
       "raw_xml_path": "temp/finland/raw/fi-police-personal-data-act-a052f857aee861690881e1f6aa7f548c15871699559e63263bf34dfbf1ed7b9f.xml",
       "last_checked_at": "2026-10-19T03:36:55+00:00",
@@ -324,8 +324,8 @@
       "source_title": "Laki henkilötietojen käsittelystä poliisitoimessa",
       "chapter_count": 8,
       "section_count": 61,
-      "converted_sha256": "75278347911fef5ef564df8bb6adde9fc9959f44d233d47c3c1d7655a59e209b",
-      "converted_bytes": 73727,
+      "converted_sha256": "1570fc5d912aba06c552f3cdbded229a3c0de1588cbae1fc354902d4e381200c",
+      "converted_bytes": 73731,
       "raw_xml_bytes": 182875,
       "retrieval_status": "converted_review_candidate",
       "accepted": false

@@ -8,38 +8,12 @@
 - Retrieved: 2026-10-19T02:29:14+00:00
 - Media type: `text/html`
 - Publisher/version evidence: CyLaw lists the base Act and amendments 99(I)/2014 and 28(I)/2020; currentness beyond these items is not established
-- Extraction: `body`
+- Extraction: `div.main-content`
 - Exact response SHA-256: `e25beb147fbc17b2d6ba8a0cc261e9e7dddedfba0443eedcd76116fa67aa691a`
 
-> **Review candidate.** Not accepted into the trusted source corpus. Check source identity, current version, scope, completeness, and reuse conditions before reliance.
+> **Local-copy review notice.** This captured file is not accepted as a retained copy. A direct official link can be used for research after reviewing relevant content, date/version, scope, and caveats. Local-copy acceptance and reuse terms matter only when retaining or redistributing this file.
 
 ## Captured source text
-
-ΠΑΓΚΥΠΡΙΟΣ ΔΙΚΗΓΟΡΙΚΟΣ ΣΥΛΛΟΓΟΣ
-
-CyLaw
-|
-Αναφορικά μ'εμάς
-|
-Επικοινωνία
-
-Κατάλογος Ενοποιημένης Νομοθεσίας
-
-Ο περί των Γενικών Αρχών του Διοικητικού Δικαίου Νόμος του 1999 (158(I)/1999)
-
-Περιεχόμενα
-
-Πλήρες Κείμενο
-
-Εκτύπωση
-
-Ιστορικό Τροποποιήσεων
-
-158(I)/1999
-
-99(Ι)/2014
-
-28(I)/2020
 
 ΜΕΡΟΣ Ι ΕΙΣΑΓΩΓΙΚΕΣ ΔΙΑΤΑΞΕΙΣ
 
@@ -694,7 +668,3 @@ CyLaw
 63. Οι διατάξεις του παρόντος Νόμου αναφορικά με τη σύγκληση συνεδρίας διά τηλεδιασκέψεως, διαπίστωσης απαρτίας ή/και για οποιαδήποτε άλλα συναφή θέματα αφορώντα στη διεξαγωγή συνεδρίας συλλογικού οργάνου, ισχύουν και εφαρμόζονται ανεξαρτήτως των οικείων διατάξεων οποιουδήποτε άλλου Νόμου.
 
 28(I)/2020
-
-Εκτύπωση
-
-Cylaw.org: Από το ΚΙΝOΠ/CyLii και τη ConvertPLC για τον Παγκύπριο Δικηγορικό Σύλλογο

@@ -1,6 +1,6 @@
 # Slovenia proposed-route sustainability assessment
 
-Research date: 2026-10-19 update. The 42-candidate pack now has 42 exact responses, 23 replay-verified text conversions, 19 shell/discovery responses, and 0 accepted sources. The shared generic retrieval rule is exercised, but no source-specific currentness adapter or amendment-completeness rule exists. This remains a route assessment, not a legal-currentness certification.
+Research date: 2026-10-19 update. The 42-candidate pack now has 42 exact responses, 23 replay-verified text conversions, 19 shell/discovery responses, and 0 local copies accepted. The shared retrieval rule was exercised, but the saved conversions remain candidates pending proportionate review of the passages and displayed-version boundaries. Use PISRS/GOV.SI manually for ordinary research; no custom currentness adapter or full amendment history is required. This remains a bounded source review, not a country-completeness certification.
 
 ## PISRS and official legal publication
 
@@ -10,7 +10,7 @@ There is a practical no-API discovery path, but it remains manual and limited: u
 
 OPSI lists a CC BY 4.0 dataset for basic information on Slovenian regulations and links to PISRS. The licence applies to this metadata dataset, not to full legal text. The catalogue says bulk download is not enabled. Its linked resource is declared as API but its quality checker detected HTML, flags the mismatch, and shows 5 October 2024 as the check date. It does not supply API-PISRS authorization or establish reuse rights for PISRS texts. The general public-information/reuse rules likewise do not, by themselves, resolve the specific API approval gate or terms for a particular full-text source.
 
-PISRS consolidated texts are informational aids. For a sustainable acquisition rule, the publisher's legally authoritative issue must anchor version identity. The rule would need to retain act identifier, Gazette issue, publication and commencement dates, relevant future/effective dates, language, and source route; detect amendments and repeals; and reconcile any PISRS consolidated text against the full amendment chain. ZTuj-2's PISRS record currently surfaced NPB 20 through UPB15/Official Gazette 46/2025, but this bounded search is not proof that no later act affects the law.
+Use the PISRS consolidated text as the government-published working version, retaining its act identifier, displayed version, language, source URL, and any publisher disclaimer. No full Gazette-by-Gazette reconstruction is required. The ZTuj-2 record located in this review shows NPB 20 through UPB15/Official Gazette 46/2025; check only for a newer PISRS version or a known later change relevant to the question. If the official update status cannot be checked, state that currentness limit.
 
 ## GOV.SI guidance, forms, privacy and missions
 
@@ -32,17 +32,14 @@ ZUP-I has a direct official Gazette issue PDF and PISRS reports that the consoli
 
 The PISRS advanced search offers selected Supreme Court, higher-court, labour/social-court and Administrative Court collections. The official court portal lists a case-law RSS feed, but the target endpoint, retention, inclusion criteria and coverage were not established. Do not claim complete national case-law coverage from either surface. eUprava says foreign nationals may qualify for legal aid under statutory conditions; its legal-aid pages were last changed in August 2025 and warn that they have not yet been renewed and will redirect to the old eUprava site. The FAQ describes eligibility by residence/status and reciprocity or treaty conditions. Reconcile that guidance with current ZBPP and the live service; the page migration is a concrete change-detection risk.
 
-## Implementation prerequisites
+## Practical next steps
 
-1. Keep PISRS API use blocked unless the required authorization is granted. Do not build an adapter against the gated API or use a workaround that evades it.
-2. Obtain publisher clarification on the terms for automated retrieval, archival, conversion and derived text from public PISRS/Official Gazette full-text records. Keep this separate from the CC BY 4.0 metadata dataset.
-3. Document and verify the Official Gazette issue-PDF URL contract across representative issues before treating the one observed PDF as a reusable route. Confirm publisher terms, redirects, status, content type, PDF signature and act identity.
-4. Capture representative issue PDFs only through an authorized route; create offline positive/negative fixtures for current, amended, repealed, annex-bearing and transition-period issues before any conversion implementation.
-5. Reconcile PISRS informational consolidations against authoritative issue publications and amendment/commencement chains, particularly for ZTuj-2 and ZUP.
-6. Use GOV.SI topic/service pages as rediscovery parents for forms, privacy notices and mission links. Define how to cover missions and detect changed links, fees, appointments and representation.
-7. Bound any case-law lane by named collections, courts, date filters and publication limitations. Confirm the RSS target and its update contract before automated monitoring.
-8. Recheck the permanent-family service after the research-client timeout, reconcile foreigner legal-aid guidance with current ZBPP and the migrated service, and verify family-status evidence procedures from competent official sources.
+1. Use PISRS consolidated texts as government-published working versions, retaining their displayed date/edition and informational disclaimer. No Gazette-by-Gazette reconstruction or routine cross-check against every issue is needed.
+2. Keep the PISRS API unused unless its required authorization is granted. For ordinary research, open the public official record manually; do not build an API client or a Gazette-PDF adapter just to establish a usable law source.
+3. Check a Gazette publication only if a known later amendment, commencement date, or specific discrepancy affects the provisions under review. Keep any automated copying or recurring capture within the publisher's terms.
+4. Continue source work independent of legal-version acquisition: use GOV.SI service pages to review forms and mission links, and bound case-law findings to the named searchable collections.
+5. Resolve the specific permanent-family-service timeout and dated eUprava legal-aid guidance when those topics are in scope; do not block use of other official sources on those gaps.
 
 ## Disposition
 
-The feasible no-API route used in this pass is public-page retrieval and inspection of specific official Gazette issue PDFs, with no call to the gated developer API. It avoids the API authorization dependency for these exact candidate URLs, and 23 conversions replayed offline. It is still not a sustainable automated currentness/amendment rule and does not establish broad full-text reuse permission. OPSI metadata may help locate acts after its schema and freshness are confirmed. All 42 records remain review candidates; 19 still have no stable extractable body. The generic route is reproducible for saved responses, but currentness and full-text reuse remain unresolved. No source is accepted and no API-gated adapter is ready.
+The practical source route is direct human review of official PISRS and GOV.SI pages; a custom API or Gazette capture adapter is unnecessary for ordinary research. The gated PISRS API remains unused, and automated copying/reuse terms remain separate questions. The 42-record inventory still has 19 shells or discovery responses without stable text; those are source-specific gaps, not reasons to reconstruct consolidated legislation. No local conversion has been promoted, and the inventory remains bounded rather than complete.

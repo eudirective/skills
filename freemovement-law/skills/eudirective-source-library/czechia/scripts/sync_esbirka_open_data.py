@@ -167,7 +167,7 @@ def render_markdown(entry: dict, metadata: dict, fragments: list[dict], capture:
         f"- Exact response set SHA-256: `{capture['source_sha256']}`",
         f"- Fragment pages: {capture['page_count']}; text fragments: {capture['text_fragment_count']}",
         "",
-        "> **Review candidate.** Current consolidated text is informative. Verify the authentic promulgation, amendments, commencement, scope, and completeness before reliance.",
+        "> **Review candidate.** Use this official e-Sbírka consolidated text as a dated working version and retain its informational status. Check a known later change or commencement issue only when relevant; no full Gazette history is required.",
         "",
         "## Official text",
         "",

@@ -341,9 +341,9 @@ def convert_one(record: dict, capture: dict) -> tuple[bytes, dict]:
     fmt, text, extract_meta = extract_payload(raw, capture["content_type"])
     identity = content_identity(record, extract_meta.get("html_title", ""), text)
     body = text.rstrip()
-    warning = "The captured material is a source candidate. It has not been accepted into the trusted legal corpus; check legal effect, currentness, scope, amendments, and publisher-specific terms before reliance."
+    warning = "The captured material is a source candidate. Record the official publisher, version date/cutoff, scope, and publisher terms; check only a known material later change relevant to the question. Do not reconstruct a complete amendment chain."
     if record.get("source_type") in {"national_legislation", "amending_legislation", "treaty_implementation_legislation", "withdrawal_agreement_legislation", "fee_legislation", "administrative_procedure_legislation", "privacy_legislation", "court_procedure_rules", "court_practice_direction"}:
-        warning += " For legislation, this capture may be an enacted/made representation rather than a consolidated current text; compare the official amendment and commencement records."
+        warning += " For legislation, use the latest government-published consolidated text where available. If this is the closest dated text, retain its cutoff and check only a specifically relevant later amendment or commencement."
     markdown = (
         f"# {record['title']}\n\n"
         f"- Jurisdiction: Ireland\n- Candidate ID: `{record['id']}`\n"

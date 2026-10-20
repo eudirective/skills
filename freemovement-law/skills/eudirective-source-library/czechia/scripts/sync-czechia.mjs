@@ -325,7 +325,7 @@ function makeMarkdown(source, html, body, method) {
   return {
     title,
     method,
-    markdown: `# ${source.title}\n\n- Source ID: \`${source.id}\`\n- Source type: \`${source.source_type}\`\n- Content language: \`${source.language}\`\n- Official page heading: ${heading}\n- Official page title: ${title}\n- Official record URL: ${source.url}\n- Retrieved URL: ${source.retrieved_url || source.url}\n- Conversion: Czechia official HTML to Markdown ${HTML_CONVERSION_VERSION}\n- Coverage: page content extracted from ${method}; site chrome is omitted, and HTTP(S) links are preserved as links. Linked attachment contents are not fetched by this rule.\n\n> Review candidate from the official source. e-Sbírka identifies consolidated text as informative; verify promulgation, temporal version, legal force, and completeness separately.\n\n${content}\n`
+    markdown: `# ${source.title}\n\n- Source ID: \`${source.id}\`\n- Source type: \`${source.source_type}\`\n- Content language: \`${source.language}\`\n- Official page heading: ${heading}\n- Official page title: ${title}\n- Official record URL: ${source.url}\n- Retrieved URL: ${source.retrieved_url || source.url}\n- Conversion: Czechia official HTML to Markdown ${HTML_CONVERSION_VERSION}\n- Coverage: page content extracted from ${method}; site chrome is omitted, and HTTP(S) links are preserved as links. Linked attachment contents are not fetched by this rule.\n\n> Review the official page directly; record its displayed date/version, scope, and any legal-status or content caveat. For a legal-text question, consult a specific Gazette act only when a material gap remains.\n\n${content}\n`
   };
 }
 

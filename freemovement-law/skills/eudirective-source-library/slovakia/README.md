@@ -1,6 +1,6 @@
 # Slovakia national-source candidates
 
-Discovery register dated 2026-10-18; capture state updated 2026-10-19. It contains 40 official-source candidates across free-movement and family-residence law, visas and missions, administrative procedure and remedies, privacy, oversight, legal aid, and court-search routes. Fifteen Slov-Lex legal candidates now have date-bound current-version text and binding PDFs captured, with eleven linked annex PDFs. Across the register, 31 source texts were converted and replay-verified; eight MFA requests returned HTTP 403, and the archive-index page was inspected but not captured as text. No source is accepted.
+Discovery register dated 2026-10-18; capture state updated 2026-10-19. It contains 40 official-source candidates across free-movement and family-residence law, visas and missions, administrative procedure and remedies, privacy, oversight, legal aid, and court-search routes. Fifteen Slov-Lex legal candidates now have date-bound current-version text and binding PDFs captured, with eleven linked annex PDFs. Across the register, 31 source texts were converted and replay-verified; eight MFA requests returned HTTP 403, and the archive-index page was inspected but not captured as text. No locally stored artifact is accepted.
 
 - Candidate register and native-language search log: [`references/source-list.md`](references/source-list.md)
 - Machine-readable candidate metadata: [`references/candidate-manifest.json`](references/candidate-manifest.json)

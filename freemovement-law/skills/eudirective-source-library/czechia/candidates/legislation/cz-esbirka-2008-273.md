@@ -12,7 +12,7 @@
 - Exact response set SHA-256: `b6274d59503daea913246b6f2831361ff9dc6a9c0ad8d36df56ced90e60fd5e8`
 - Fragment pages: 2; text fragments: 1169
 
-> **Review candidate.** Current consolidated text is informative. Verify the authentic promulgation, amendments, commencement, scope, and completeness before reliance.
+> **Review candidate.** Use this official e-Sbírka consolidated text as a dated working version and retain its informational status. Check a known later change or commencement issue only when relevant; no full Gazette history is required.
 
 ## Official text
 

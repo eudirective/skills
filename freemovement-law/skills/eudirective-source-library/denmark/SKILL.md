@@ -58,4 +58,4 @@ node scripts/sync-guidance.mjs ack <source-id>
 
 Use Retsinformation/Lovtidende for Danish legislation and EUR-Lex for EU legislation and CJEU judgments. The source registry is in [pack-manifest.json](references/pack-manifest.json) and [core-source-ids.json](references/core-source-ids.json). The retrieval and conversion rules are in [pipeline-contract.md](references/pipeline-contract.md).
 
-Markdown is a deterministic text representation, not a legal completeness or currentness certification. Check the linked official document, amendments, effective dates, and attachments before legal reliance.
+Markdown is a deterministic text representation, not a legal completeness or currentness certification. For ordinary research, review the linked official publication and the passages/attachments used, recording its version date and limits. Prefer the current government-published consolidation; check a specific amendment or effective date only when it may affect the issue. Full amendment-chain review and local replay are not prerequisites for using an official link.

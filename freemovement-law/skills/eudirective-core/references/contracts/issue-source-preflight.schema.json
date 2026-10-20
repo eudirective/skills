@@ -1,11 +1,11 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Issue source preflight 0.1.0",
+  "title": "Issue source preflight 0.2.0",
   "type": "object",
   "additionalProperties": false,
   "required": ["contract_version", "preflight_id", "research_id", "coverage_claim", "issues"],
   "properties": {
-    "contract_version": { "const": "0.1.0" },
+    "contract_version": { "enum": ["0.1.0", "0.2.0"] },
     "preflight_id": { "type": "string", "pattern": "^r_[a-f0-9]{12,32}$" },
     "research_id": { "type": "string", "pattern": "^RCH-[A-Z0-9][A-Z0-9._-]{0,63}$" },
     "coverage_claim": { "enum": ["accounted_for_review", "partial"] },
@@ -40,10 +40,10 @@
       "required": ["source_ref", "record_kind", "source_class", "acceptance_state", "currentness", "source_date", "evidence_ids", "scope_note", "exceptions_note"],
       "properties": {
         "source_ref": { "type": "string", "minLength": 1, "maxLength": 200 },
-        "record_kind": { "enum": ["registered_source", "candidate_source"] },
+        "record_kind": { "enum": ["registered_source", "candidate_source", "official_reference"] },
         "source_class": { "$ref": "#/$defs/source_class" },
-        "acceptance_state": { "enum": ["registered_record", "candidate_unaccepted"] },
-        "currentness": { "enum": ["reviewed_current", "unknown", "stale"] },
+        "acceptance_state": { "enum": ["registered_record", "candidate_unaccepted", "reference_usable"] },
+        "currentness": { "enum": ["reviewed_current", "reviewed_within_cutoff", "reviewed_historical_scope", "unknown", "stale"] },
         "source_date": { "type": ["string", "null"], "format": "date" },
         "evidence_ids": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/evidence_id" } },
         "scope_note": { "type": "string", "minLength": 1, "maxLength": 1000 },
@@ -52,7 +52,8 @@
       "allOf": [
         { "if": { "properties": { "record_kind": { "const": "registered_source" } }, "required": ["record_kind"] }, "then": { "properties": { "acceptance_state": { "const": "registered_record" } } } },
         { "if": { "properties": { "record_kind": { "const": "candidate_source" } }, "required": ["record_kind"] }, "then": { "properties": { "acceptance_state": { "const": "candidate_unaccepted" } } } },
-        { "if": { "properties": { "currentness": { "const": "reviewed_current" } }, "required": ["currentness"] }, "then": { "properties": { "source_date": { "type": "string", "format": "date" } } } }
+        { "if": { "properties": { "record_kind": { "const": "official_reference" } }, "required": ["record_kind"] }, "then": { "properties": { "acceptance_state": { "const": "reference_usable" } } } },
+        { "if": { "properties": { "currentness": { "enum": ["reviewed_within_cutoff", "reviewed_historical_scope"] } }, "required": ["currentness"] }, "then": { "properties": { "source_date": { "type": "string", "format": "date" } } } }
       ]
     },
     "issue": {

@@ -23,9 +23,14 @@ const CONVERTER_VERSION = 'hungary-source-md-v2-page-ocr';
 const MAX_SOURCE_BYTES = 25 * 1024 * 1024;
 let state = { schema_version: 1, sources: {}, discoveries: [] };
 try { state = JSON.parse(await readFile(jsonPath, 'utf8')); } catch (e) { if (e.code !== 'ENOENT') throw e; }
-const allSources = [...manifest.laws.filter(x => !x.discovery_only).map(x => ({ ...x, kind: 'law' })), ...manifest.oif_pages.filter(x => !x.discovery_only).map(x => ({ ...x, kind: 'oif' }))];
+const lawSources = manifest.laws.filter(x => !x.discovery_only).map(x => ({ ...x, kind: 'law' }));
+const oifSources = manifest.oif_pages.filter(x => !x.discovery_only).map(x => ({ ...x, kind: 'oif' }));
+// NJT's recorded terms prohibit automated bulk retrieval/storage. Keep its
+// government-published consolidated texts as human-reviewed references; only
+// verify or reconvert any historical local captures offline.
+const allSources = mode === 'verify' || mode === 'reconvert' ? [...lawSources, ...oifSources] : oifSources;
 const configuredDiscoverySources = [
-  ...manifest.discovery,
+  ...manifest.discovery.filter(source => source.publisher !== 'Nemzeti Jogszabálytár'),
   ...manifest.oif_pages.filter(source => source.discovery_only).map(source => ({ ...source, kind: 'catalogue' }))
 ];
 const discoverySources = configuredDiscoverySources.flatMap(row => row.url.includes('{year}')
@@ -286,8 +291,8 @@ if (mode === 'verify') {
     } catch (e) { failures.push({id:'sync-commit',error:e.message}); syncCommit='commit_failed'; }
   }
   const archiveTargetMatches=(manifest.archive_targets||[]).map(target=>{const expected=(target.official_filename||target.title).toLocaleLowerCase('hu');const matches=unique.filter(x=>{let pathname='';try{pathname=decodeURIComponent(new URL(x.url).pathname)}catch{}return `${pathname} ${x.label}`.toLocaleLowerCase('hu').includes(expected)}).map(x=>x.url);const pinned=state.sources[target.resolved_source_id];return{id:target.id,title:target.title,resolved_source_id:target.resolved_source_id||null,official_file_url:target.official_file_url||null,pinned_source_retrieved:Boolean(pinned),pinned_source_status:pinned?.status||null,discovered_official_matches:matches}});
-  const report={schema_version:1,pack:manifest.pack,mode,run_at:now(),source_count:allSources.length,success_count:fetched.length,failure_count:failures.length+discoveryFailures.length,sync_commit:syncCommit,fetched,failures,discovery_failures:discoveryFailures,archive_targets:manifest.archive_targets||[],archive_target_matches:archiveTargetMatches,discovery:{count:unique.length,new_count:novel.length,items:mode==='discover'?unique:novel,baseline_updated:mode==='sync'&&discoveryFailures.length===0}};
+  const report={schema_version:1,pack:manifest.pack,mode,run_at:now(),source_count:allSources.length,manual_reference_only:{count:lawSources.length,reason:'NJT consolidated texts are used as human-reviewed government references; online retrieval is excluded under the recorded portal terms.',source_ids:lawSources.map(source=>source.id)},success_count:fetched.length,failure_count:failures.length+discoveryFailures.length,sync_commit:syncCommit,fetched,failures,discovery_failures:discoveryFailures,archive_targets:manifest.archive_targets||[],archive_target_matches:archiveTargetMatches,discovery:{count:unique.length,new_count:novel.length,items:mode==='discover'?unique:novel,baseline_updated:mode==='sync'&&discoveryFailures.length===0}};
   await atomic(reportPath,JSON.stringify(report,null,2)+'\n');
-  console.log(JSON.stringify({mode,sources:allSources.length,ok:fetched.length,failed:failures.length,discovery_failed:discoveryFailures.length,sync_commit:syncCommit,archive_targets:(manifest.archive_targets||[]).length,new_official_links:novel.length,report:reportPath},null,2));
+  console.log(JSON.stringify({mode,sources:allSources.length,manual_reference_only:lawSources.length,ok:fetched.length,failed:failures.length,discovery_failed:discoveryFailures.length,sync_commit:syncCommit,archive_targets:(manifest.archive_targets||[]).length,new_official_links:novel.length,report:reportPath},null,2));
   if (failures.length || discoveryFailures.length) process.exitCode=1;
 }

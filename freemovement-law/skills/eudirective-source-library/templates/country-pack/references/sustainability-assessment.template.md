@@ -2,30 +2,32 @@
 
 Assessment date: <YYYY-MM-DD>
 
-## Source and authority
+## Official-reference review
 
-- Publisher and official starting point:
-- Stable identity/version mechanism:
-- Scope and known coverage gaps:
+- Responsible official publisher and direct page/document link:
+- Source identity and language:
+- Displayed date/version/cutoff, if any:
+- Scope and passage reviewed:
+- Material caveats or coverage gaps:
+- Closest government-published version used when no usable consolidation is available:
 
-## Retrieval and conversion
+## Optional local copy or automation
 
-- Retrieval rule and authentication/access requirements:
-- Payload integrity and identity checks:
-- Conversion rule and quality checks:
-- Change detection and update cadence:
-- Failure behavior and manual steps:
+- Is a retained copy or recurring monitor actually needed? Why?
+- If retaining a copy: source/reuse conditions and only the retrieval, conversion, and fidelity checks relevant to the retained artifact:
+- If automating: permitted route, change signal/cadence, and proportionate failure handling:
+- If neither is needed, state that no capture, converter, API, replay setup, or updater is required for ordinary reference use.
 
-## Legal and reuse limits
+## Topic and country coverage
 
-- Currentness and legal-effect checks:
-- Language/version coverage:
-- Reuse or republication terms:
-- Human review required before acceptance:
+- Topics adequately supported:
+- Material unresolved issues:
+- Distinguish source reference usability, local-copy acceptance, topic coverage, and country-review completion.
 
 ## Verdict
 
-- Sustainability rating: <sustainable / sustainable with limits / fragile / unsustainable / not assessed>
+- Reference usability: <usable within scope / limited / unavailable / not reviewed>
+- Local-copy or automation sustainability, only if relevant: <sustainable / limited / fragile / unsustainable / not assessed>
 - Confidence:
 - Evidence:
 - Unresolved actions:

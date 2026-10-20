@@ -3,7 +3,7 @@ Skill: assess-source-rule-sustainability v0.2.0
 # France source-route sustainability assessment
 
 Status date: 18 October 2026  
-State: discovery-only candidates; 47 candidates, zero accepted sources, and no France retrieval or conversion rule implemented.
+State: discovery-only candidates; 47 candidates, zero locally stored copies accepted, and no France retrieval or conversion rule implemented.
 
 ## Assessment boundary
 
@@ -15,7 +15,7 @@ There is no implemented France rule to rate. This report assigns **no sustainabi
 
 The official data.gouv.fr LEGI dataset says DILA provides the consolidated national legislation and regulation corpus over public HTTPS and FTPS, under the Open Licence. The official directory was reachable over HTTPS during this review. It showed a 2025-07-13 global LEGI Freemium package and dated daily delta archives through 2026-10-17. The dataset metadata was updated on 2026-10-16. This is a feasible no-account discovery lead and avoids the PISTE account and credential dependency of the Légifrance API.
 
-The LEGI corpus is not a simple current-text URL service. The published data includes current and historical/repealed versions, and the API FAQ instructs bulk users to retrieve a baseline state and apply archives in chronological order. A future adapter must select a version valid for the requested legal date; preserve source identifiers and date fields; discover every required delta; identify corrections, deletions, and superseding records; validate package identity, format, schema and hashes; and replay conversion from saved official bytes. None of those behaviors was implemented or live-replayed here.
+The LEGI bulk corpus includes current and historical/repealed versions, and its API FAQ instructs bulk users to retrieve a baseline and apply archives in chronological order. That complexity is relevant only if we choose to run a recurring bulk-monitoring or reproducible-copy workflow. For ordinary research, a human-reviewed Légifrance government-published consolidated text is sufficient; record its displayed version and publisher caveat, and consult a specific Journal officiel item only for a material publication/effect question. No baseline/delta adapter is required to use an official link.
 
 The official dataset describes the limits of its coverage: it includes 73 current official codes, laws, ordinances, decrees, and selected orders; it is exhaustive for laws and decrees from 1945, but selected orders and circulars published mainly in ministry bulletins require separate publisher discovery. The official Légifrance open-data description warns that consolidated wording is not the legally authentic/opposable source; the official Journal officiel remains the validation route where publication and legal effect matter. LEGI is therefore a promising retrieval route for legislation, not a complete source universe or a legal-currentness determination.
 
@@ -43,19 +43,12 @@ France's CESEDA is a broad immigration code that contains EU-citizen and family 
 
 The official Conseil d'État decision no. 450285, issued 24 February 2022, says CESEDA Articles L. 233-1 and L. 233-2 were annulled in part as they excluded the right of residence beyond three months for a specified dependent child of an EU citizen studying or training in France. A future date-aware rule must preserve the linked decision and verify how the official consolidated text reflects the ruling. Do not monitor those article pages as isolated, unqualified statements.
 
-## Repair priorities before accepting a rule
+## Source use and optional monitoring
 
-1. Select a source class and a dated target version. For CESEDA, retrieve the date-specific Légifrance record and confirm its stable act/article identifiers, effective dates, language, and linked judicial history.
-2. Confirm the current DILA package and delta contract. From the official directory, obtain a baseline and sufficient ordered deltas for a defined date; verify whether newer snapshots exist, pagination/listing is complete, and how deletions or corrections are represented.
-3. Save a small official XML fixture set for a code, an article with amendments, a repealed/historical version, a multi-body record, and a linked JORF publication. Pin the DTD/schema and converter dependency. Replay conversion offline and compare article IDs, headings, notes, dates, and text to the official page.
-4. Define constrained HTTPS hosts, redirects, size and media-type limits, XML encoding checks, archive safety limits, identity assertions, and specific failure categories. Keep raw exact bytes and their hashes. Reject HTML error/challenge pages, unknown DTDs, mismatched legal dates, and partial archives.
-5. Build discovery from the official DILA index so new legal records and archives are found, not only changes to pinned URLs. Store retrieval time and volatile HTTP validators outside deterministic converted output. Changes must create review candidates and leave the last accepted copy marked as last known after failures.
-6. Decide whether PISTE API access is needed. If so, name an accountable credential owner and implement secure secret storage, rotation, quota checks, separate environments, terms review, and an outage recovery path. Do not put credentials in manifests or source documents.
-7. For France-Visas and Service Public, establish repeatable parent-page/link discovery and capture dynamic branches and page dates. Prove plugin-runtime access despite the prior 403; a browser-rendered page is not a raw retrieval test.
-8. Keep France-Visas/ANEF forms, portals, and complaint services monitor-only for public links and definitions. Do not submit or retain personal information.
-9. Add separate source discovery for ministry bulletins/circulars, mission-specific visa instructions, and regional prefecture routes where the source taxonomy requires them; LEGI's selected orders/circular coverage does not prove those source classes are covered.
-10. Before accepting any converted legal source, verify current text and legal effect at the authoritative official publication source and link related annulment, amendment, and effective-date records.
+For ordinary research, use the relevant government-published Légifrance text, Conseil d'État decision, France-Visas or Service Public page, and record its date/version and limits. A direct human-reviewed official link is sufficient; no DILA baseline, delta replay, XML fixtures, API credentials, page capture, or scheduled link monitor is required. Use the closest government-published version when a consolidation is unavailable, and check the cited Conseil d'État annulment where it affects the provision in question.
+
+If a recurring local monitor is later needed, choose a documented permitted route for the specific source, then add only the identity, version, conversion, failure, and change checks that route needs. Keep forms and portals read-only; do not submit or retain personal information. Do not bypass access controls.
 
 ## Coverage limits
 
-The register identified official candidates in all requested source classes, but the exact date-current native texts, a fully replayable DILA baseline/delta chain, France-Visas raw retrieval, current Service Public page revisions, current ANEF-system privacy documentation, ministry circulars, mission-specific instructions, regional practice, and comprehensive lower-court coverage remain unresolved. “No candidate found” was not concluded for any class. The register is bounded; no source is accepted, no France adapter is implemented, and no current-law or completeness claim is made.
+The register identified official candidates in all requested source classes, but direct source references, current Service Public page revisions, current ANEF-system privacy documentation, ministry circulars, mission-specific instructions, regional practice, and comprehensive lower-court coverage still need review. “No candidate found” was not concluded for any class. No local statutory copy has been accepted and no France adapter is implemented; neither condition prevents human-reviewed use of an official link. Current-law and completeness claims remain outside this bounded inventory.

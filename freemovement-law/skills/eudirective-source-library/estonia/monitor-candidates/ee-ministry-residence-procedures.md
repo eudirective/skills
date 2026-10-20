@@ -11,7 +11,7 @@
 - Extraction: `body`
 - Exact response SHA-256: `80720a78a1d3bb9b05ed9d12502e766d6a1c66a35ac605658be979f6e85deb6a`
 
-> **Review candidate.** Not accepted into the trusted source corpus. Check source identity, current version, scope, completeness, and reuse conditions before reliance.
+> **Local-copy review notice.** This captured file is not accepted as a retained copy. A direct official link can be used for research after reviewing relevant content, date/version, scope, and caveats. Local-copy acceptance and reuse terms matter only when retaining or redistributing this file.
 
 ## Captured source text
 
