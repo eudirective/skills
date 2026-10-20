@@ -56,8 +56,8 @@ jobs:
           test -f "$destination_dir/SKILL.md"
           [[ "$upstream_tree_sha" =~ ^[0-9a-f]{40}$ ]]
 
-          git -C skills config user.name "github-actions[bot]"
-          git -C skills config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git -C skills config user.name "eudirective"
+          git -C skills config user.email "eudirective@proton.me"
 
           for attempt in $(seq 1 "$max_attempts"); do
             echo "Mirror push attempt $attempt of $max_attempts"
