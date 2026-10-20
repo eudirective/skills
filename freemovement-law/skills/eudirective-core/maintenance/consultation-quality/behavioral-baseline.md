@@ -6,4 +6,4 @@ The private evaluation inventory contains 36 consultation-assurance records. All
 
 Consequently, there is no measured baseline for material-issue recall, required-check recall, unsupported check selection, legal-regime selection, procedural-stage distinction, conclusion accuracy, source fidelity, execution/coverage reporting, relevance, reporting overhead, or privacy-boundary behavior.
 
-Structural checks and deterministic script tests do not change this status. Until comparable actual baseline and candidate responses are captured and independently graded, report: **Implementation verified; consultation behavior not verified.**
+Structural checks and deterministic script tests do not change this status. A maintenance session does not need to remain open while waiting for a live runtime: prepare or update the private live-test plan and leave behavior unverified. Until comparable actual baseline and candidate responses are captured and independently graded, report: **Implementation verified; consultation behavior not verified.**

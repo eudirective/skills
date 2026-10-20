@@ -3,7 +3,7 @@
 **Status:** Implementation verified; consultation behavior not verified.
 **Candidate code commit:** `f7ca9f9a66f43dfbc2ea9873bad72f45d3996c16` on `codex/freemovement-consultation-quality`.
 **Base:** `343a7464d5574d3c2957f1817dedcf70da6135ce`.
-**Date:** 2026-10-20.
+**Date:** 2026-10-21 (documentation follow-up; code candidate unchanged).
 
 ## Story status
 
@@ -16,7 +16,7 @@
 | US-010 optional route receipt gate | Implemented and structurally checked | Legacy receipt compatibility and missing routed checks/gaps are tested (16/16). The gate checks only declared data and is not called by the ChatGPT host. |
 | US-011 adversarial scenarios | Available in private maintenance suite | The synthetic suite checks 24 cross-suite cases and 12 topic challenges with positive/negative contrasts and required/forbidden claims. These are regression cases, not held-out cases; no model response was evaluated. |
 | US-012 actual-response aggregation | Implemented and structurally checked | The private aggregator's 8 tests pass. It preserves independent claim disagreements and reports metrics unavailable when responses/grades are absent. |
-| US-013 fresh-context behavior comparison | Not verified | No supported runner for fresh target-plugin conversations or independent grading was available. There are no baseline/candidate scores. |
+| US-013 fresh-context behavior comparison | Deferred; plan prepared | No supported runner for fresh target-plugin conversations or independent grading was available. There are no baseline/candidate scores. A concrete run plan is stored in private `fm-maintenance`; the live run is a separate follow-up, not a prerequisite for ending this implementation session. |
 | US-014 integration and release preparation | Partial | Manifest, compilation, C27 checklist and targeted tests pass. The private all-suites run is 31/36 locally. No remote CI or pull request was run; the commits were left local as requested. |
 
 ## Executed checks
@@ -37,7 +37,7 @@
 
 ## Behavioral and release limits
 
-The current private ledger contains 36 records, all `not_executed`; model metadata, transcript evidence, independent grades, precision/recall, critical-error counts and before/after comparisons are unavailable. No held-out evaluation was executed. Do not describe deterministic routing or structural test results as measured advice improvement.
+The current private ledger contains 36 records, all `not_executed`; model metadata, transcript evidence, independent grades, precision/recall, critical-error counts and before/after comparisons are unavailable. No held-out evaluation was executed. The private live-test plan records exact baseline/candidate builds, the 36-case run, fresh-chat controls, blind grading, evidence capture, and release thresholds. The plan closes the implementation-session deliverable only; it does not establish measured improvement. Do not describe deterministic routing or structural test results as measured advice improvement.
 
 The plugin still has no host-validated pre-output release gate. The optional receipt checker cannot discover omitted issues or authenticate model-declared analysis. The Sweden source-package gap and any other national-source limitations remain scoped gaps; no country-source package was changed or promoted.
 
