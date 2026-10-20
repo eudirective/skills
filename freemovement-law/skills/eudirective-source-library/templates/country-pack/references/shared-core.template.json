@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "jurisdiction": "<ISO-3166-1-alpha-2>",
+  "updated": "YYYY-MM-DD",
+  "shared_core_indexes": [
+    {
+      "language": "<ISO-639-1 uppercase>",
+      "canonical_index": "source-library/shared-core-index-<LANG>.json",
+      "source_ids": []
+    }
+  ],
+  "reuse_rule": "Resolve source IDs through the one library-level language index. Each index entry identifies an official URL and states whether a local representation exists. Do not duplicate shared files or use filesystem symlinks."
+}

@@ -1,0 +1,1202 @@
+{
+  "catalog_version": 1,
+  "catalog_date": "2026-10-18",
+  "catalog_status": "partial_retrieval_review_candidates",
+  "jurisdiction": "Estonia (EE)",
+  "scope": "Official Estonian source discovery for EU/EEA/Swiss free movement and third-country family members, residence, forms, visas and missions, administrative procedure, evidence, access to information, remedies, privacy, oversight, legal aid, and administrative courts. Switzerland is separately in scope where the Estonian law extends to Swiss nationals.",
+  "accepted_source_count": 0,
+  "candidate_source_count": 42,
+  "acquisition_rule_status": "Dated current Estonian XML retrieval covers 13 unique identified acts; exact-version XML and English captures cover the remaining identified Riigi Teataja candidate texts. Other source groups remain pending; no source accepted.",
+  "official_change_channels": {
+    "national_gazette": "https://www.riigiteataja.ee/",
+    "publisher_faq_and_api_migration": "https://www.riigiteataja.ee/kkk",
+    "date_bound_act_search_api": "https://www.riigiteataja.ee/api/oigusakt_otsing/1/otsi",
+    "act_xml_template": "https://www.riigiteataja.ee/public-api/api/v1/akt/{ID}/xml",
+    "nlex_discovery": "https://n-lex.europa.eu/n-lex/legis_ee/ert.start_form?lang=et"
+  },
+  "previous_findings_carried_forward": [
+    "Denmark's EU-residence regulation was the seed; its existence is a comparison lead, not evidence of Estonian legal equivalence.",
+    "Swedish and Finnish source leads from the prior cross-state smoke remain provisional; no result from those countries was treated as current Estonian coverage.",
+    "The reviewed taxonomy's coverage gaps on procedure, file access, consular practice, remedies, privacy, oversight, and local operational guidance were carried into separate Estonia searches.",
+    "Czechia's unsuccessful API-registration path and stable official PDF fallback were carried forward as a reminder to verify publisher access and terms before adapter design.",
+    "N-Lex was used only as an EU-member-state legal-portal discovery route; official first-party Estonian pages were used for source verification where available."
+  ],
+  "search_coverage": [
+    {
+      "source_class": "National laws and legal discovery",
+      "search_outcome": "candidate(s) found; current-version gaps remain",
+      "official_channels": [
+        "Riigi Teataja",
+        "N-Lex"
+      ],
+      "query_terms": [
+        "Euroopa Liidu kodaniku seadus",
+        "elamisõigus",
+        "välismaalaste seadus",
+        "haldusmenetluse seadus",
+        "halduskohtumenetluse seadustik"
+      ],
+      "languages": [
+        "et",
+        "en"
+      ],
+      "coverage_limit": "Riigi Teataja page rendering is JavaScript-only in the research client; some English records are stale or date-limited, and future-effective wordings appear beside currently operative text."
+    },
+    {
+      "source_class": "EU/EEA/Swiss residence guidance, forms and competent authorities",
+      "search_outcome": "candidate(s) found; one material terminology conflict and forms-version gaps",
+      "official_channels": [
+        "Siseministeerium",
+        "Tallinn",
+        "Riigi Teataja"
+      ],
+      "query_terms": [
+        "Euroopa Liidu kodaniku elamisõigus",
+        "elukoha registreerimine",
+        "elukoha andmete vormid"
+      ],
+      "languages": [
+        "et",
+        "en"
+      ],
+      "coverage_limit": "National ministry guidance describes rights as residence permits despite the statute's right-of-residence terminology; one local Tallinn page is not national coverage; PBGB guidance was not verified in this bounded search."
+    },
+    {
+      "source_class": "Visa, consular and mission practice",
+      "search_outcome": "candidate(s) found",
+      "official_channels": [
+        "Välisministeerium",
+        "Estonian e-visa portal"
+      ],
+      "query_terms": [
+        "Schengeni viisa taotlemine",
+        "pikaajaline viisa",
+        "viisaotsuse vaidlustamine",
+        "Eesti esindused viisataotlusi"
+      ],
+      "languages": [
+        "et",
+        "en"
+      ],
+      "coverage_limit": "Mission representation and third-party visa-centre instructions are dynamic; portal pages are operational service surfaces, not legal content."
+    },
+    {
+      "source_class": "Administrative procedure, evidence and fees",
+      "search_outcome": "candidate(s) found; current-version checks incomplete",
+      "official_channels": [
+        "Riigi Teataja",
+        "Siseministeerium"
+      ],
+      "query_terms": [
+        "haldusmenetluse seadus",
+        "riigilõivuseadus",
+        "elamisõiguse taotlemise kord"
+      ],
+      "languages": [
+        "et",
+        "en"
+      ],
+      "coverage_limit": "English and selected version records may lag; exact current law wording and form regulations require date-bound API queries."
+    },
+    {
+      "source_class": "Appeals, delay review, ombudsman and legal aid",
+      "search_outcome": "candidate(s) found; legal-aid version gap",
+      "official_channels": [
+        "Riigi Teataja",
+        "Välisministeerium",
+        "Õiguskantsler",
+        "Eesti Kohtud"
+      ],
+      "query_terms": [
+        "viisaotsuse vaidlustamine",
+        "halduskohtumenetlus",
+        "riigi õigusabi",
+        "õiguskantsler avaldus"
+      ],
+      "languages": [
+        "et",
+        "en"
+      ],
+      "coverage_limit": "Visa appeal route is time-bound and changed in July 2025; State-funded Legal Aid Act record located ended 5 July 2025; no current replacement was resolved."
+    },
+    {
+      "source_class": "Privacy, personal data and public-information access",
+      "search_outcome": "candidate(s) found; current-version ambiguity remains",
+      "official_channels": [
+        "Andmekaitse Inspektsioon",
+        "Riigi Teataja"
+      ],
+      "query_terms": [
+        "isikuandmete kaitse seadus",
+        "avaliku teabe seadus",
+        "andmekaitse inspektsioon kaebus"
+      ],
+      "languages": [
+        "et",
+        "en"
+      ],
+      "coverage_limit": "DPA instructions require Estonian submissions for complaints/challenges; Riigi Teataja English Public Information Act result was versioned only through 31 August 2025 despite a current-alias URL."
+    },
+    {
+      "source_class": "Court procedure and decisions",
+      "search_outcome": "candidate(s) found; corpus completeness unverified",
+      "official_channels": [
+        "Eesti Kohtud",
+        "Riigi Teataja",
+        "Riigikohus"
+      ],
+      "query_terms": [
+        "halduskohtud",
+        "halduskohtumenetluse seadustik",
+        "kohtulahendite otsing"
+      ],
+      "languages": [
+        "et",
+        "en"
+      ],
+      "coverage_limit": "Decision publication may be restricted or redacted; Supreme Court English summaries are selective; no bulk retrieval/conversion rule exists."
+    },
+    {
+      "source_class": "Access to information and oversight",
+      "search_outcome": "candidate(s) found",
+      "official_channels": [
+        "Andmekaitse Inspektsioon",
+        "Õiguskantsler"
+      ],
+      "query_terms": [
+        "teabenõue",
+        "vaie",
+        "avalik teave",
+        "ombudsman"
+      ],
+      "languages": [
+        "et",
+        "en"
+      ],
+      "coverage_limit": "Oversight, access-to-information challenge and judicial appeal are separate routes and are not interchangeable."
+    }
+  ],
+  "sources": [
+    {
+      "id": "ee-riigiteataja",
+      "title": "Riigi Teataja national legislation portal",
+      "authority": "Riigi Teataja",
+      "class": "official_legislation_portal",
+      "language": "et-en",
+      "official_url": "https://www.riigiteataja.ee/",
+      "publisher_identifier": {
+        "system": "www.riigiteataja.ee",
+        "record": "riigiteataja.ee; national portal"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official portal identified; JavaScript-only shell blocked direct page inspection in this research client",
+      "retrieval_status": "discovery_only_rule_not_implemented",
+      "retrieval_shape": "portal/search HTML; XML, PDF, ELI and API routes are separately documented",
+      "seed_status": "candidate",
+      "check_note": "Central legal publisher and discovery source; not itself a single legal act Official portal identified; JavaScript-only shell blocked direct page inspection in this research client"
+    },
+    {
+      "id": "ee-riigiteataja-faq",
+      "title": "Riigi Teataja FAQ and API migration notice",
+      "authority": "Riigi Teataja",
+      "class": "publisher_access_documentation",
+      "language": "et-en",
+      "official_url": "https://www.riigiteataja.ee/kkk",
+      "publisher_identifier": {
+        "system": "www.riigiteataja.ee",
+        "record": "riigiteataja.ee; FAQ"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official FAQ search result inspected; states all acts are available as XML, individual and bulk download; XML endpoint changed 1 June 2026 to /public-api/api/v1/akt/{ID}/xml; direct page is JavaScript-only",
+      "retrieval_status": "discovery_only_rule_not_implemented",
+      "retrieval_shape": "Documentation HTML; date-based search API and XML endpoints",
+      "seed_status": "candidate",
+      "check_note": "API route lead; live API response, terms, rate limits and current request schema remain unverified Official FAQ search result inspected; states all acts are available as XML, individual and bulk download; XML endpoint changed 1 June 2026 to /public-api/api/v1/akt/{ID}/xml; direct page is JavaScript-only"
+    },
+    {
+      "id": "ee-nlex",
+      "title": "N-Lex Estonia discovery route",
+      "authority": "European Commission / N-Lex",
+      "class": "discovery_catalog",
+      "language": "et",
+      "official_url": "https://n-lex.europa.eu/n-lex/legis_ee/ert.start_form?lang=et",
+      "publisher_identifier": {
+        "system": "n-lex.europa.eu",
+        "record": "European Commission / N-Lex; Estonia route"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official EU catalogue result identifies Riigi Teataja as Estonia's national legal publisher; discovery only",
+      "retrieval_status": "discovery_only_rule_not_implemented",
+      "retrieval_shape": "Search portal HTML",
+      "seed_status": "candidate",
+      "check_note": "Lead to national legislation only; not a monitor or comprehensive source-class index Official EU catalogue result identifies Riigi Teataja as Estonia's national legal publisher; discovery only"
+    },
+    {
+      "id": "ee-citizen-act-et-future",
+      "title": "Citizen of the European Union Act, future consolidated wording published 3 June 2026",
+      "authority": "Riigi Teataja",
+      "class": "national_act",
+      "language": "et",
+      "official_url": "https://www.riigiteataja.ee/et/akt/103062026006",
+      "publisher_identifier": {
+        "system": "www.riigiteataja.ee",
+        "record": "Riigi Teataja; RT I, 03.06.2026, 6"
+      },
+      "functional_relationship": "close_functional_match",
+      "verification_status": "Official search result identifies the Act and says this wording is not yet in force until 31 October 2029; not the operative text for the research date",
+      "retrieval_status": "converted_review_candidate_unaccepted",
+      "retrieval_shape": "exact published source ID -> official XML API",
+      "seed_status": "candidate",
+      "check_note": "Exact full-text candidate saved from the official Riigi Teataja API; currentness and source scope remain under review.",
+      "candidate_text_path": "../candidates/ee-citizen-act-et-future.md",
+      "source_sha256": "65044adb48e1eba39194cdcb110194d176b232db821858311d3bed8d101358f0",
+      "converted_sha256": "cb02e4079367c41d2b8b4768a371330224dc22954a33e46d9b4c31f613b4358b",
+      "source_bytes": 215230,
+      "resolved_url": "https://www.riigiteataja.ee/public-api/api/v1/akt/103062026006/xml",
+      "retrieved": true,
+      "accepted": false,
+      "version_evidence": "Exact official XML edition 103062026006; title Euroopa Liidu kodaniku seadus 1; validity period 2029-10-31 mitte jõustunud.",
+      "exact_estonian_source_id": "103062026006"
+    },
+    {
+      "id": "ee-citizen-act-en-2025",
+      "title": "Citizen of the European Union Act, English translation published 8 September 2025",
+      "authority": "Riigi Teataja",
+      "class": "national_act_translation",
+      "language": "en",
+      "official_url": "https://www.riigiteataja.ee/en/tolge/pdf/508092025004",
+      "publisher_identifier": {
+        "system": "www.riigiteataja.ee",
+        "record": "Riigi Teataja; RT I, 08.09.2025 English translation"
+      },
+      "functional_relationship": "close_functional_match",
+      "verification_status": "Official translation PDF search result located; wording reflects amendments effective from 1 September 2025, but no later English translation/currentness confirmation was found",
+      "retrieval_status": "converted_review_candidate_unaccepted",
+      "retrieval_shape": "official English blob-html API -> publisher-marked article body",
+      "seed_status": "candidate",
+      "check_note": "Exact full-text candidate saved from the official Riigi Teataja API; currentness and source scope remain under review.",
+      "candidate_text_path": "../candidates/ee-citizen-act-en-2025.md",
+      "source_sha256": "317357452d1705c6227948cfb39963b3dd7b82758f36596b38d8b99c9b841d4c",
+      "converted_sha256": "11d0610fd175d63653fada57d070d5b9b307ef7a093cb7d1844a1b0e7f1b33d7",
+      "source_bytes": 272641,
+      "resolved_url": "https://www.riigiteataja.ee/public-api/api/v1/en/akt/508092025004/blob-html",
+      "retrieved": true,
+      "accepted": false,
+      "version_evidence": "Authentic title:Euroopa Liidu kodaniku seadus (ELKS); Issuer:Riigikogu; Type:act; In force from:01.09.2025; In force until:11.06.2026; Translation published:08.09.2025",
+      "publisher_metadata": "Authentic title:Euroopa Liidu kodaniku seadus (ELKS)\n\nIssuer:Riigikogu\n\nType:act\n\nIn force from:01.09.2025\n\nIn force until:11.06.2026\n\nTranslation published:08.09.2025",
+      "exact_english_source_id": "508092025004"
+    },
+    {
+      "id": "ee-citizen-act-en-2024",
+      "title": "Citizen of the European Union Act, English translation published 24 January 2024",
+      "authority": "Riigi Teataja",
+      "class": "national_act_translation",
+      "language": "en",
+      "official_url": "https://www.riigiteataja.ee/en/akt/524012024003",
+      "publisher_identifier": {
+        "system": "www.riigiteataja.ee",
+        "record": "Riigi Teataja; RT I, 24.01.2024, 3"
+      },
+      "functional_relationship": "close_functional_match",
+      "verification_status": "Official publisher record inspected in search results; marked in force only through 26 April 2025",
+      "retrieval_status": "converted_review_candidate_unaccepted",
+      "retrieval_shape": "official English blob-html API -> publisher-marked article body",
+      "seed_status": "candidate",
+      "check_note": "Exact full-text candidate saved from the official Riigi Teataja API; currentness and source scope remain under review.",
+      "candidate_text_path": "../candidates/ee-citizen-act-en-2024.md",
+      "source_sha256": "71ecbfb3b58c787cfd3a9fc701f582908d5c9c68f32ffe922cef47a75159f135",
+      "converted_sha256": "b0214c412d67d67c65a6483de0f1ef2e5845ee49a756c2bb3596a96e444060ad",
+      "source_bytes": 271772,
+      "resolved_url": "https://www.riigiteataja.ee/public-api/api/v1/en/akt/524012024003/blob-html",
+      "retrieved": true,
+      "accepted": false,
+      "version_evidence": "Authentic title:Euroopa Liidu kodaniku seadus (ELKS); Issuer:Riigikogu; Type:act; In force from:01.01.2024; In force until:26.04.2025; Translation published:24.01.2024",
+      "publisher_metadata": "Authentic title:Euroopa Liidu kodaniku seadus (ELKS)\n\nIssuer:Riigikogu\n\nType:act\n\nIn force from:01.01.2024\n\nIn force until:26.04.2025\n\nTranslation published:24.01.2024",
+      "exact_english_source_id": "524012024003"
+    },
+    {
+      "id": "ee-eu-right-regulation",
+      "title": "Procedure for applying for, granting, extending and terminating residence rights of EU citizens and family members",
+      "authority": "Riigi Teataja",
+      "class": "implementing_regulation",
+      "language": "et",
+      "official_url": "https://www.riigiteataja.ee/akt/125042025013",
+      "publisher_identifier": {
+        "system": "www.riigiteataja.ee",
+        "record": "Riigi Teataja; RT I, 25.04.2025, 13; Interior Minister regulation No. 80"
+      },
+      "functional_relationship": "close_functional_match",
+      "verification_status": "Official source search result inspected; consolidated wording effective 1 January 2026 and shown as currently in force",
+      "retrieval_status": "converted_review_candidate_unaccepted",
+      "retrieval_shape": "exact published source ID -> official XML API",
+      "seed_status": "candidate",
+      "check_note": "Exact full-text candidate saved from the official Riigi Teataja API; currentness and source scope remain under review.",
+      "candidate_text_path": "../candidates/ee-eu-right-regulation.md",
+      "source_sha256": "d5fba89c379bdaf0249f3905ca8018a4b9656f3414ae51ca91c12060f16d0c7e",
+      "converted_sha256": "97b146a5174cb5794c1900a145f5140a17f0b3e51842016dd948deb0606a6551",
+      "source_bytes": 110918,
+      "resolved_url": "https://www.riigiteataja.ee/public-api/api/v1/akt/125042025013/xml",
+      "retrieved": true,
+      "accepted": false,
+      "version_evidence": "Exact official XML edition 125042025013; title Euroopa Liidu kodaniku ja tema perekonnaliikme elamisõiguse taotlemise, andmise ning selle pikendamise ja lõpetamise kord; validity period 2026-01-01.",
+      "exact_estonian_source_id": "125042025013"
+    },
+    {
+      "id": "ee-population-register-act",
+      "title": "Population Register Act, current-alias lead",
+      "authority": "Riigi Teataja",
+      "class": "national_act",
+      "language": "en",
+      "official_url": "https://www.riigiteataja.ee/en/eli/ee/511012023005/consolide/current",
+      "publisher_identifier": {
+        "system": "www.riigiteataja.ee",
+        "record": "Riigi Teataja; ELI current alias"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official Ministry page links the Act; Riigi Teataja current alias found, but page content is JavaScript-only and selected wording/date was not independently verified",
+      "retrieval_status": "converted_review_candidate_unaccepted",
+      "retrieval_shape": "official English blob-html API -> publisher-marked article body",
+      "seed_status": "candidate",
+      "check_note": "Exact full-text candidate saved from the official Riigi Teataja API; currentness and source scope remain under review.",
+      "candidate_text_path": "../candidates/ee-population-register-act.md",
+      "source_sha256": "324966a97c0bb37dd3387f6dad410034ab94abbc9e69e3b100d9f083743d5823",
+      "converted_sha256": "9445bade52871322e9fde98720f94331ae4108ceaf8b0e8be8607c786ca57b0b",
+      "source_bytes": 397874,
+      "resolved_url": "https://www.riigiteataja.ee/public-api/api/v1/en/akt/511012023005/blob-html",
+      "retrieved": true,
+      "accepted": false,
+      "version_evidence": "Authentic title:Rahvastikuregistri seadus (RRS); Issuer:Riigikogu; Type:act; In force from:01.01.2023; In force until:19.02.2023; Translation published:11.01.2023",
+      "publisher_metadata": "Authentic title:Rahvastikuregistri seadus (RRS)\n\nIssuer:Riigikogu\n\nType:act\n\nIn force from:01.01.2023\n\nIn force until:19.02.2023\n\nTranslation published:11.01.2023",
+      "exact_english_source_id": "511012023005",
+      "current_estonian_text_path": "../candidates/ee-population-register-act-current-et-2026-10-19.md",
+      "current_estonian_source_sha256": "a7ca1b164a4d399a4a2ed9e02d41f6fd6c48f4c347673231ef916497c8e06ed2",
+      "current_estonian_converted_sha256": "071bd85fcc6e8f6f49295465c510017c632f6058bdb974bd9c73f225dc9abc4d",
+      "current_estonian_as_of_date": "2026-10-19",
+      "current_estonian_version_evidence": "Rahvastikuregistri seadus; global ID 130062026025; effective period 2026-10-01; as of 2026-10-19."
+    },
+    {
+      "id": "ee-residence-data-forms-regulation",
+      "title": "Forms for entering residence data in the Population Register and instructions for completion",
+      "authority": "Riigi Teataja",
+      "class": "implementing_regulation",
+      "language": "et",
+      "official_url": "https://www.riigiteataja.ee/akt/108012019012",
+      "publisher_identifier": {
+        "system": "www.riigiteataja.ee",
+        "record": "Riigi Teataja; regulation linked by Interior Ministry"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official Ministry page links the regulation; current wording not independently established",
+      "retrieval_status": "converted_review_candidate_unaccepted",
+      "retrieval_shape": "exact published source ID -> official XML API",
+      "seed_status": "candidate",
+      "check_note": "Exact full-text candidate saved from the official Riigi Teataja API; currentness and source scope remain under review.",
+      "candidate_text_path": "../candidates/ee-residence-data-forms-regulation.md",
+      "source_sha256": "9cc357a61e89faee95cd11ade7f3edf8ed6824e02458e8634f6c9a78ec06146d",
+      "converted_sha256": "50f60c1a7018926de92268cd0f5ec0c2a0be7d6ace077c5bc0c34334db75898f",
+      "source_bytes": 363618,
+      "resolved_url": "https://www.riigiteataja.ee/public-api/api/v1/akt/108012019012/xml",
+      "retrieved": true,
+      "accepted": false,
+      "version_evidence": "Exact official XML edition 108012019012; title Elukohaandmete rahvastikuregistrisse kandmise kord, vormid ja nende täitmise juhend; validity period 2019-01-11+02:002019-06-30+03:00.",
+      "exact_estonian_source_id": "108012019012"
+    },
+    {
+      "id": "ee-aliens-act-current",
+      "title": "Aliens Act, current-alias lead",
+      "authority": "Riigi Teataja",
+      "class": "national_act",
+      "language": "en-et",
+      "official_url": "https://www.riigiteataja.ee/en/eli/ee/510042023008/consolide/current",
+      "publisher_identifier": {
+        "system": "www.riigiteataja.ee",
+        "record": "Riigi Teataja; ELI current alias"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official search results identify current-alias route and confirm EU/EEA/Swiss right-of-residence matters are governed by the EU Citizen Act; direct text/current alias response not verified",
+      "retrieval_status": "converted_review_candidate_unaccepted",
+      "retrieval_shape": "official English blob-html API -> publisher-marked article body",
+      "seed_status": "candidate",
+      "check_note": "Exact full-text candidate saved from the official Riigi Teataja API; currentness and source scope remain under review.",
+      "candidate_text_path": "../candidates/ee-aliens-act-current.md",
+      "source_sha256": "0dce608a2020b4cdd33af00892a80b491fec6f3ac048d6bf27af59f3a2f161e5",
+      "converted_sha256": "8a423baaf0af1b5390c4701728300aac98bdc2eef75b79242196ba88c13e2144",
+      "source_bytes": 1262895,
+      "resolved_url": "https://www.riigiteataja.ee/public-api/api/v1/en/akt/510042023008/blob-html",
+      "retrieved": true,
+      "accepted": false,
+      "version_evidence": "Authentic title:Välismaalaste seadus (VMS); Issuer:Riigikogu; Type:act; In force from:01.04.2023; In force until:31.08.2023; Translation published:10.04.2023",
+      "publisher_metadata": "Authentic title:Välismaalaste seadus (VMS)\n\nIssuer:Riigikogu\n\nType:act\n\nIn force from:01.04.2023\n\nIn force until:31.08.2023\n\nTranslation published:10.04.2023",
+      "exact_english_source_id": "510042023008",
+      "current_estonian_text_path": "../candidates/ee-aliens-act-current-current-et-2026-10-19.md",
+      "current_estonian_source_sha256": "bba62efcf35705e8cd9461c2dc2828f7879528a9ff0e913806d8ba3b7403d3be",
+      "current_estonian_converted_sha256": "ebd39b06eefe9022f41bdd899436bb3af509b6e7587466666dadae30f253864b",
+      "current_estonian_as_of_date": "2026-10-19",
+      "current_estonian_version_evidence": "Välismaalaste seadus; global ID 130062026103; effective period 2026-10-01 2026-12-31; as of 2026-10-19."
+    },
+    {
+      "id": "ee-aliens-act-sept-2026",
+      "title": "Aliens Act wording published September 2026",
+      "authority": "Riigi Teataja",
+      "class": "national_act_historical_version",
+      "language": "en",
+      "official_url": "https://www.riigiteataja.ee/en/akt/501092026001",
+      "publisher_identifier": {
+        "system": "www.riigiteataja.ee",
+        "record": "Riigi Teataja; RT I, 01.09.2026, 1"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official result/API search lead shows the wording in force only 1–30 September 2026; historical at the 18 October 2026 review date",
+      "retrieval_status": "converted_review_candidate_unaccepted",
+      "retrieval_shape": "official English blob-html API -> publisher-marked article body",
+      "seed_status": "historical_candidate",
+      "check_note": "Exact full-text candidate saved from the official Riigi Teataja API; currentness and source scope remain under review.",
+      "candidate_text_path": "../candidates/ee-aliens-act-sept-2026.md",
+      "source_sha256": "21c5d03358fe6157795f79111e47741a91215dbfbaa9d02bea8c6835e4fd9199",
+      "converted_sha256": "0bdbe9b5870db4092be6347a98e93b94f01874a91c69df37c532b27f86cde07d",
+      "source_bytes": 1426033,
+      "resolved_url": "https://www.riigiteataja.ee/public-api/api/v1/en/akt/501092026001/blob-html",
+      "retrieved": true,
+      "accepted": false,
+      "version_evidence": "Authentic title:Välismaalaste seadus (VMS); Issuer:Riigikogu; Type:act; In force from:01.09.2026; In force until:30.09.2026; Translation published:01.09.2026",
+      "publisher_metadata": "Authentic title:Välismaalaste seadus (VMS)\n\nIssuer:Riigikogu\n\nType:act\n\nIn force from:01.09.2026\n\nIn force until:30.09.2026\n\nTranslation published:01.09.2026",
+      "exact_english_source_id": "501092026001"
+    },
+    {
+      "id": "ee-leave-entry-ban-act",
+      "title": "Obligation to Leave Estonia and Prohibition on Entry Act",
+      "authority": "Riigi Teataja",
+      "class": "national_act",
+      "language": "en",
+      "official_url": "https://www.riigiteataja.ee/en/akt/510072026001",
+      "publisher_identifier": {
+        "system": "www.riigiteataja.ee",
+        "record": "Riigi Teataja; RT I, 10.07.2026, 1"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official search results identify 2026 wording and EU/EEA/Swiss family-member exceptions; live API response not tested",
+      "retrieval_status": "converted_review_candidate_unaccepted",
+      "retrieval_shape": "official English blob-html API -> publisher-marked article body",
+      "seed_status": "candidate",
+      "check_note": "Exact full-text candidate saved from the official Riigi Teataja API; currentness and source scope remain under review.",
+      "candidate_text_path": "../candidates/ee-leave-entry-ban-act.md",
+      "source_sha256": "bb82432fd4260aa24c75fa4e4e7613f998b522be496b4763e027b128c62e9dd1",
+      "converted_sha256": "7d8000bad07f5511b9d1534088e4dec74bdda25f432457acc2fe0e8a2e1d8212",
+      "source_bytes": 580890,
+      "resolved_url": "https://www.riigiteataja.ee/public-api/api/v1/en/akt/510072026001/blob-html",
+      "retrieved": true,
+      "accepted": false,
+      "version_evidence": "Authentic title:Väljasõidukohustuse ja sissesõidukeelu seadus (VSS); Issuer:Riigikogu; Type:act; In force from:12.06.2026; In force until:30.09.2026; Translation published:10.07.2026",
+      "publisher_metadata": "Authentic title:Väljasõidukohustuse ja sissesõidukeelu seadus (VSS)\n\nIssuer:Riigikogu\n\nType:act\n\nIn force from:12.06.2026\n\nIn force until:30.09.2026\n\nTranslation published:10.07.2026",
+      "exact_english_source_id": "510072026001",
+      "current_estonian_text_path": "../candidates/ee-leave-entry-ban-act-current-et-2026-10-19.md",
+      "current_estonian_source_sha256": "ae6e150fa9cb9243c48f0e2057edcfffbbeea892387a6f737cdec9e91f3327f7",
+      "current_estonian_converted_sha256": "065b02feeeddcf7d2ae76327c5dfd211194921e2f3471f3bbc62f244dbb627e0",
+      "current_estonian_as_of_date": "2026-10-19",
+      "current_estonian_version_evidence": "Väljasõidukohustuse ja sissesõidukeelu seadus; global ID 130062026110; effective period 2026-10-01 2026-12-31+02:00; as of 2026-10-19."
+    },
+    {
+      "id": "ee-identity-documents-act",
+      "title": "Identity Documents Act",
+      "authority": "Riigi Teataja",
+      "class": "national_act",
+      "language": "en",
+      "official_url": "https://www.riigiteataja.ee/en/akt/530092025008",
+      "publisher_identifier": {
+        "system": "www.riigiteataja.ee",
+        "record": "Riigi Teataja; RT I, 30.09.2025, 8"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official publisher search result located; currentness at review date not independently checked",
+      "retrieval_status": "converted_review_candidate_unaccepted",
+      "retrieval_shape": "official English blob-html API -> publisher-marked article body",
+      "seed_status": "candidate",
+      "check_note": "Exact full-text candidate saved from the official Riigi Teataja API; currentness and source scope remain under review.",
+      "candidate_text_path": "../candidates/ee-identity-documents-act.md",
+      "source_sha256": "3bdea8dc5229047a0331c26a69736ac3aa9f74b7d227631d221b408069b07467",
+      "converted_sha256": "58dda7cf0229b31cc691b9b5149e43893e6634176da32145ddfc04762c762ca6",
+      "source_bytes": 431406,
+      "resolved_url": "https://www.riigiteataja.ee/public-api/api/v1/en/akt/530092025008/blob-html",
+      "retrieved": true,
+      "accepted": false,
+      "version_evidence": "Authentic title:Isikut tõendavate dokumentide seadus (ITDS); Issuer:Riigikogu; Type:act; In force from:01.10.2025; In force until:14.11.2025; Translation published:30.09.2025",
+      "publisher_metadata": "Authentic title:Isikut tõendavate dokumentide seadus (ITDS)\n\nIssuer:Riigikogu\n\nType:act\n\nIn force from:01.10.2025\n\nIn force until:14.11.2025\n\nTranslation published:30.09.2025",
+      "exact_english_source_id": "530092025008",
+      "current_estonian_text_path": "../candidates/ee-identity-documents-act-current-et-2026-10-19.md",
+      "current_estonian_source_sha256": "62c97606604201a6caa4989ca806e260a22eddf2793ab064d39afa2d65eb5485",
+      "current_estonian_converted_sha256": "ad0287e2fe59c754d365625bbb3cb08b6851cfb98acb81d968b8a9e9da402f1a",
+      "current_estonian_as_of_date": "2026-10-19",
+      "current_estonian_version_evidence": "Isikut tõendavate dokumentide seadus; global ID 130062026053; effective period 2026-10-01; as of 2026-10-19."
+    },
+    {
+      "id": "ee-consular-act",
+      "title": "Consular Act, consolidated text lead",
+      "authority": "Riigi Teataja",
+      "class": "national_act",
+      "language": "en",
+      "official_url": "https://www.riigiteataja.ee/en/eli/512082025004/consolide",
+      "publisher_identifier": {
+        "system": "www.riigiteataja.ee",
+        "record": "Riigi Teataja; ELI/version record"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official versioned source lead found; selected current wording was not independently checked",
+      "retrieval_status": "converted_review_candidate_unaccepted",
+      "retrieval_shape": "official English blob-html API -> publisher-marked article body",
+      "seed_status": "candidate",
+      "check_note": "Exact full-text candidate saved from the official Riigi Teataja API; currentness and source scope remain under review.",
+      "candidate_text_path": "../candidates/ee-consular-act.md",
+      "source_sha256": "10a2bf727afd738e767cf8852ceff3811c35c28e10daf04243a4a39fa183d2c5",
+      "converted_sha256": "ee89be48d5591050bd2f3c34f4e5a3cb21600447457170dfb915968f560fb1da",
+      "source_bytes": 213174,
+      "resolved_url": "https://www.riigiteataja.ee/public-api/api/v1/en/akt/512082025004/blob-html",
+      "retrieved": true,
+      "accepted": false,
+      "version_evidence": "Authentic title:Konsulaarseadus (KonS); Issuer:Riigikogu; Type:act; In force from:06.07.2025; In force until:30.09.2025; Translation published:12.08.2025",
+      "publisher_metadata": "Authentic title:Konsulaarseadus (KonS)\n\nIssuer:Riigikogu\n\nType:act\n\nIn force from:06.07.2025\n\nIn force until:30.09.2025\n\nTranslation published:12.08.2025",
+      "exact_english_source_id": "512082025004",
+      "current_estonian_text_path": "../candidates/ee-consular-act-current-et-2026-10-19.md",
+      "current_estonian_source_sha256": "ee1af4cf6c4795ac17957e6c8fdffa5ad31949cd7f2fe10c9986e854a40b27c5",
+      "current_estonian_converted_sha256": "73a467dfb95e6103a451ff0f32f178bfce85ab2169dbed3b7917525d4e21a311",
+      "current_estonian_as_of_date": "2026-10-19",
+      "current_estonian_version_evidence": "Konsulaarseadus; global ID 130062026064; effective period 2026-10-01; as of 2026-10-19."
+    },
+    {
+      "id": "ee-state-fees-act",
+      "title": "State Fees Act, current-consolidation lead",
+      "authority": "Riigi Teataja",
+      "class": "national_act",
+      "language": "en",
+      "official_url": "https://www.riigiteataja.ee/en/eli/ee/513072017017/consolide/current",
+      "publisher_identifier": {
+        "system": "www.riigiteataja.ee",
+        "record": "Riigi Teataja; ELI current alias"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official search results show EU-residence-related fees and later amendments; current alias response and fee schedule as of review date need revalidation",
+      "retrieval_status": "converted_review_candidate_unaccepted",
+      "retrieval_shape": "official English blob-html API -> publisher-marked article body",
+      "seed_status": "candidate",
+      "check_note": "Exact full-text candidate saved from the official Riigi Teataja API; currentness and source scope remain under review.",
+      "candidate_text_path": "../candidates/ee-state-fees-act.md",
+      "source_sha256": "f07bbd009761c12d3971e148f57fba6019249b45bffd9d84213875f23bf5f5ad",
+      "converted_sha256": "64aebb9f60405bf3476fdb0d632e640d87ac2f3e7b80f49af6d0acd12bfbf401",
+      "source_bytes": 984248,
+      "resolved_url": "https://www.riigiteataja.ee/public-api/api/v1/en/akt/513072017017/blob-html",
+      "retrieved": true,
+      "accepted": false,
+      "version_evidence": "Authentic title:Riigilõivuseadus (RLS); Issuer:Riigikogu; Type:act; In force from:01.09.2017; In force until:31.10.2017; Translation published:13.07.2017",
+      "publisher_metadata": "Authentic title:Riigilõivuseadus (RLS)\n\nIssuer:Riigikogu\n\nType:act\n\nIn force from:01.09.2017\n\nIn force until:31.10.2017\n\nTranslation published:13.07.2017",
+      "exact_english_source_id": "513072017017",
+      "current_estonian_text_path": "../candidates/ee-state-fees-act-current-et-2026-10-19.md",
+      "current_estonian_source_sha256": "53a945389f36d3c4b89278924d1c3032da4564b6c8e1bb1ebdd4819d727907cd",
+      "current_estonian_converted_sha256": "fc418f438203f48659c04a0d6077096b3953f00b571a0e78acc926364fdd6c4b",
+      "current_estonian_as_of_date": "2026-10-19",
+      "current_estonian_version_evidence": "Riigilõivuseadus; global ID 111072026166; effective period 2026-08-01 2026-10-30; as of 2026-10-19."
+    },
+    {
+      "id": "ee-admin-procedure-act",
+      "title": "Administrative Procedure Act, English text published 5 December 2023",
+      "authority": "Riigi Teataja",
+      "class": "national_act",
+      "language": "en",
+      "official_url": "https://www.riigiteataja.ee/en/tolge/pdf/505122023003",
+      "publisher_identifier": {
+        "system": "www.riigiteataja.ee",
+        "record": "Riigi Teataja; official English translation"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official translation result says the text has been in force since 1 January 2024 and remains in force; later amendment check is still required",
+      "retrieval_status": "converted_review_candidate_unaccepted",
+      "retrieval_shape": "official English blob-html API -> publisher-marked article body",
+      "seed_status": "candidate",
+      "check_note": "Exact full-text candidate saved from the official Riigi Teataja API; currentness and source scope remain under review.",
+      "candidate_text_path": "../candidates/ee-admin-procedure-act.md",
+      "source_sha256": "2850ea13bc9a2dda49bba4efcfb6b935db1b80bff410adb9732cae1c285faaf5",
+      "converted_sha256": "fbf24d691c7b63e4b4129f28739bebf8c68f3427635befb582ec0d5ba75b1335",
+      "source_bytes": 317986,
+      "resolved_url": "https://www.riigiteataja.ee/public-api/api/v1/en/akt/505122023003/blob-html",
+      "retrieved": true,
+      "accepted": false,
+      "version_evidence": "Authentic title:Haldusmenetluse seadus (HMS); Issuer:Riigikogu; Type:act; In force from:01.01.2024; In force until:31.12.2026; Translation published:05.12.2023",
+      "publisher_metadata": "Authentic title:Haldusmenetluse seadus (HMS)\n\nIssuer:Riigikogu\n\nType:act\n\nIn force from:01.01.2024\n\nIn force until:31.12.2026\n\nTranslation published:05.12.2023",
+      "exact_english_source_id": "505122023003",
+      "current_estonian_text_path": "../candidates/ee-admin-procedure-act-current-et-2026-10-19.md",
+      "current_estonian_source_sha256": "12b6db27da2ecdc75cf785f1a1c68453d15598080949cfc7f04b1af0c6969059",
+      "current_estonian_converted_sha256": "cf0b241782e9fdb59b7431b66f0c5b1c13a74e2046bf4a28947495d5775240ed",
+      "current_estonian_as_of_date": "2026-10-19",
+      "current_estonian_version_evidence": "Haldusmenetluse seadus; global ID 106072023031; effective period 2024-01-01 2026-12-31+02:00; as of 2026-10-19."
+    },
+    {
+      "id": "ee-state-liability-act",
+      "title": "State Liability Act, English version published May 2025",
+      "authority": "Riigi Teataja",
+      "class": "national_act",
+      "language": "en",
+      "official_url": "https://www.riigiteataja.ee/en/akt/516052025004",
+      "publisher_identifier": {
+        "system": "www.riigiteataja.ee",
+        "record": "Riigi Teataja; versioned act record"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official record located; currentness at review date not independently checked",
+      "retrieval_status": "converted_review_candidate_unaccepted",
+      "retrieval_shape": "official English blob-html API -> publisher-marked article body",
+      "seed_status": "candidate",
+      "check_note": "Exact full-text candidate saved from the official Riigi Teataja API; currentness and source scope remain under review.",
+      "candidate_text_path": "../candidates/ee-state-liability-act.md",
+      "source_sha256": "ba72f7635165d5da858edfd94ba9507cfb5ba63ba5485cb925a038bde2804d58",
+      "converted_sha256": "4eff094f0083c43c6907429ad2fdfeb9cb2cee874bf1bdb8df6c3516e06194de",
+      "source_bytes": 87504,
+      "resolved_url": "https://www.riigiteataja.ee/public-api/api/v1/en/akt/516052025004/blob-html",
+      "retrieved": true,
+      "accepted": false,
+      "version_evidence": "Authentic title:Riigivastutuse seadus (RVastS); Issuer:Riigikogu; Type:act; In force from:01.01.2025; In force until:30.09.2026; Translation published:16.05.2025",
+      "publisher_metadata": "Authentic title:Riigivastutuse seadus (RVastS)\n\nIssuer:Riigikogu\n\nType:act\n\nIn force from:01.01.2025\n\nIn force until:30.09.2026\n\nTranslation published:16.05.2025",
+      "exact_english_source_id": "516052025004",
+      "current_estonian_text_path": "../candidates/ee-state-liability-act-current-et-2026-10-19.md",
+      "current_estonian_source_sha256": "742fe6b409486d49ed54b53eb25a8c543f3017282075686e81b6e25ea4f5b67e",
+      "current_estonian_converted_sha256": "f5901ce4708e7394782913538d2f1a2c3370fdb43a84db1c7ee6659cc9351e14",
+      "current_estonian_as_of_date": "2026-10-19",
+      "current_estonian_version_evidence": "Riigivastutuse seadus; global ID 108042025012; effective period 2026-10-01 2026-12-31+02:00; as of 2026-10-19."
+    },
+    {
+      "id": "ee-admin-court-code-current",
+      "title": "Code of Administrative Court Procedure, current-alias lead",
+      "authority": "Riigi Teataja",
+      "class": "national_act",
+      "language": "en",
+      "official_url": "https://www.riigiteataja.ee/en/eli/ee/507012014002/consolide/current",
+      "publisher_identifier": {
+        "system": "www.riigiteataja.ee",
+        "record": "Riigi Teataja; ELI current alias"
+      },
+      "functional_relationship": "close_functional_match",
+      "verification_status": "Official search result identifies current alias; selected wording requires direct effective-date validation",
+      "retrieval_status": "converted_review_candidate_unaccepted",
+      "retrieval_shape": "official English blob-html API -> publisher-marked article body",
+      "seed_status": "candidate",
+      "check_note": "Exact full-text candidate saved from the official Riigi Teataja API; currentness and source scope remain under review.",
+      "candidate_text_path": "../candidates/ee-admin-court-code-current.md",
+      "source_sha256": "3193176a189da2b4de8117c01ef159e4ddfdc022774ba8e558096dcdd0cd9557",
+      "converted_sha256": "c3e4ff92841582e429f62556c477e14784772c393402ebaa7ebf50f616dca381",
+      "source_bytes": 1114159,
+      "resolved_url": "https://www.riigiteataja.ee/public-api/api/v1/en/akt/507012014002/blob-html",
+      "retrieved": true,
+      "accepted": false,
+      "version_evidence": "Authentic title:Halduskohtumenetluse seadustik (HKMS); Issuer:Riigikogu; Type:act; In force from:01.01.2012; In force until:30.06.2012; Translation published:07.01.2014",
+      "publisher_metadata": "Authentic title:Halduskohtumenetluse seadustik (HKMS)\n\nIssuer:Riigikogu\n\nType:act\n\nIn force from:01.01.2012\n\nIn force until:30.06.2012\n\nTranslation published:07.01.2014",
+      "exact_english_source_id": "507012014002",
+      "current_estonian_text_path": "../candidates/ee-admin-court-code-current-current-et-2026-10-19.md",
+      "current_estonian_source_sha256": "f6b0797d2bba19d0c5305d1bbf91c6f411646e7ba426e1759bcd0999452cb3c7",
+      "current_estonian_converted_sha256": "08e70ffd87c01308d099deb8c99cfa8e6fd48fc52d5e74d1059db36ad9894f69",
+      "current_estonian_as_of_date": "2026-10-19",
+      "current_estonian_version_evidence": "Halduskohtumenetluse seadustik; global ID 103062026067; effective period 2026-06-12 2026-12-31+02:00; as of 2026-10-19."
+    },
+    {
+      "id": "ee-admin-court-code-may-2026",
+      "title": "Code of Administrative Court Procedure wording published May 2026",
+      "authority": "Riigi Teataja",
+      "class": "national_act_historical_version",
+      "language": "en",
+      "official_url": "https://www.riigiteataja.ee/en/akt/520052026002",
+      "publisher_identifier": {
+        "system": "www.riigiteataja.ee",
+        "record": "Riigi Teataja; RT I, 20.05.2026, 2"
+      },
+      "functional_relationship": "close_functional_match",
+      "verification_status": "Official publisher result says this wording was in force 15 May–11 June 2026 only",
+      "retrieval_status": "converted_review_candidate_unaccepted",
+      "retrieval_shape": "official English blob-html API -> publisher-marked article body",
+      "seed_status": "historical_candidate",
+      "check_note": "Exact full-text candidate saved from the official Riigi Teataja API; currentness and source scope remain under review.",
+      "candidate_text_path": "../candidates/ee-admin-court-code-may-2026.md",
+      "source_sha256": "21bbd3ee998adc9c9217739c2ed3893634e34e59be3edf13ede83d3737f7e2b7",
+      "converted_sha256": "386145e500886512c2ff7abe1eaad7dedfeb51d4ed20b71eb90f22c1674ea402",
+      "source_bytes": 998494,
+      "resolved_url": "https://www.riigiteataja.ee/public-api/api/v1/en/akt/520052026002/blob-html",
+      "retrieved": true,
+      "accepted": false,
+      "version_evidence": "Authentic title:Halduskohtumenetluse seadustik (HKMS); Issuer:Riigikogu; Type:act; In force from:15.05.2026; In force until:11.06.2026; Translation published:20.05.2026",
+      "publisher_metadata": "Authentic title:Halduskohtumenetluse seadustik (HKMS)\n\nIssuer:Riigikogu\n\nType:act\n\nIn force from:15.05.2026\n\nIn force until:11.06.2026\n\nTranslation published:20.05.2026",
+      "exact_english_source_id": "520052026002"
+    },
+    {
+      "id": "ee-state-legal-aid-act",
+      "title": "State-funded Legal Aid Act, wording published March 2025",
+      "authority": "Riigi Teataja",
+      "class": "national_act",
+      "language": "en",
+      "official_url": "https://www.riigiteataja.ee/en/akt/520032025008",
+      "publisher_identifier": {
+        "system": "www.riigiteataja.ee",
+        "record": "Riigi Teataja; RT I, 20.03.2025, 8"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official record found; prior version metadata indicates it ended 5 July 2025; current version was not identified in this bounded search",
+      "retrieval_status": "converted_review_candidate_unaccepted",
+      "retrieval_shape": "official English blob-html API -> publisher-marked article body",
+      "seed_status": "candidate",
+      "check_note": "Exact full-text candidate saved from the official Riigi Teataja API; currentness and source scope remain under review.",
+      "candidate_text_path": "../candidates/ee-state-legal-aid-act.md",
+      "source_sha256": "898e2e0187e901994d12b045bc3fba89382926406501e1669aa826e8be03a571",
+      "converted_sha256": "02fb278fb725ea78b9cbad4ed16502bd50f8236fb425ddddd0184ab996b654b3",
+      "source_bytes": 190404,
+      "resolved_url": "https://www.riigiteataja.ee/public-api/api/v1/en/akt/520032025008/blob-html",
+      "retrieved": true,
+      "accepted": false,
+      "version_evidence": "Authentic title:Riigi õigusabi seadus (RÕS); Issuer:Riigikogu; Type:act; In force from:01.01.2025; In force until:05.07.2025; Translation published:20.03.2025",
+      "publisher_metadata": "Authentic title:Riigi õigusabi seadus (RÕS)\n\nIssuer:Riigikogu\n\nType:act\n\nIn force from:01.01.2025\n\nIn force until:05.07.2025\n\nTranslation published:20.03.2025",
+      "exact_english_source_id": "520032025008",
+      "current_estonian_text_path": "../candidates/ee-state-legal-aid-act-current-et-2026-10-19.md",
+      "current_estonian_source_sha256": "7ec21be2dceeb2035ed7898e2c8d66fdb6940336fec8eb1c10c0cfe6ddca668f",
+      "current_estonian_converted_sha256": "aed590b48e33211c92460e612a846ad4a41e92e8035977d1d1d7a227a8cb7310",
+      "current_estonian_as_of_date": "2026-10-19",
+      "current_estonian_version_evidence": "Riigi õigusabi seadus; global ID 103062026035; effective period 2026-06-12 2026-10-31+02:00; as of 2026-10-19."
+    },
+    {
+      "id": "ee-personal-data-act",
+      "title": "Personal Data Protection Act, March 2026 wording",
+      "authority": "Riigi Teataja",
+      "class": "national_act",
+      "language": "en",
+      "official_url": "https://www.riigiteataja.ee/en/akt/519032026002",
+      "publisher_identifier": {
+        "system": "www.riigiteataja.ee",
+        "record": "Riigi Teataja; RT I, 19.03.2026, 2"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official result identifies wording effective from 16 March 2026; exact end/current status should be confirmed against date-bound search",
+      "retrieval_status": "converted_review_candidate_unaccepted",
+      "retrieval_shape": "official English blob-html API -> publisher-marked article body",
+      "seed_status": "candidate",
+      "check_note": "Exact full-text candidate saved from the official Riigi Teataja API; currentness and source scope remain under review.",
+      "candidate_text_path": "../candidates/ee-personal-data-act.md",
+      "source_sha256": "608f6713841ca628ecc66cc34033244851e195c9bcd2a7cdfe95e0e392c9ec5b",
+      "converted_sha256": "8c00b8adab8adb95786579a062b80696bf070b2ae8352258be50ef6b0766a4dd",
+      "source_bytes": 245688,
+      "resolved_url": "https://www.riigiteataja.ee/public-api/api/v1/en/akt/519032026002/blob-html",
+      "retrieved": true,
+      "accepted": false,
+      "version_evidence": "Authentic title:Isikuandmete kaitse seadus (IKS); Issuer:Riigikogu; Type:act; In force from:16.03.2026; In force until:30.09.2026; Translation published:19.03.2026",
+      "publisher_metadata": "Authentic title:Isikuandmete kaitse seadus (IKS)\n\nIssuer:Riigikogu\n\nType:act\n\nIn force from:16.03.2026\n\nIn force until:30.09.2026\n\nTranslation published:19.03.2026",
+      "exact_english_source_id": "519032026002",
+      "current_estonian_text_path": "../candidates/ee-personal-data-act-current-et-2026-10-19.md",
+      "current_estonian_source_sha256": "89b2112319a0c4282aa0ab1ff85174abfcc6b1d7a827c32fdd6f2ca2aba8f387",
+      "current_estonian_converted_sha256": "80def741fc71223a462ba933eb0837a1aeb60db4d3a934c7e279e0833fc6894e",
+      "current_estonian_as_of_date": "2026-10-19",
+      "current_estonian_version_evidence": "Isikuandmete kaitse seadus; global ID 130062026052; effective period 2026-10-01; as of 2026-10-19."
+    },
+    {
+      "id": "ee-public-information-act",
+      "title": "Public Information Act, current-alias lead",
+      "authority": "Riigi Teataja",
+      "class": "national_act",
+      "language": "en",
+      "official_url": "https://www.riigiteataja.ee/en/eli/ee/507082025001/consolide/current",
+      "publisher_identifier": {
+        "system": "www.riigiteataja.ee",
+        "record": "Riigi Teataja; ELI current alias"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official result exposes an English wording that ended 31 August 2025 despite the current-alias URL; current wording needs effective-date resolution",
+      "retrieval_status": "converted_review_candidate_unaccepted",
+      "retrieval_shape": "official English blob-html API -> publisher-marked article body",
+      "seed_status": "candidate",
+      "check_note": "Exact full-text candidate saved from the official Riigi Teataja API; currentness and source scope remain under review.",
+      "candidate_text_path": "../candidates/ee-public-information-act.md",
+      "source_sha256": "aa3d5ce7529266f5a9abbf014ed9822119f122f51af75fab7964aee0f25fcc00",
+      "converted_sha256": "05373e981a367458dba1e97fa9be3b681c5c0ea7fd70d454ba26a2ca64b49b93",
+      "source_bytes": 303824,
+      "resolved_url": "https://www.riigiteataja.ee/public-api/api/v1/en/akt/507082025001/blob-html",
+      "retrieved": true,
+      "accepted": false,
+      "version_evidence": "Authentic title:Avaliku teabe seadus (AvTS); Issuer:Riigikogu; Type:act; In force from:06.07.2025; In force until:31.08.2025; Translation published:07.08.2025",
+      "publisher_metadata": "Authentic title:Avaliku teabe seadus (AvTS)\n\nIssuer:Riigikogu\n\nType:act\n\nIn force from:06.07.2025\n\nIn force until:31.08.2025\n\nTranslation published:07.08.2025",
+      "exact_english_source_id": "507082025001",
+      "current_estonian_text_path": "../candidates/ee-public-information-act-current-et-2026-10-19.md",
+      "current_estonian_source_sha256": "bcd7037411380b9182350c52f0d2c212cfc5f4815c8dced4d54dcc6dd8c73662",
+      "current_estonian_converted_sha256": "dcf8bb38077b72440f98ee20758e99eee73ba69f313fbcd77ef8d1908d9c0d3c",
+      "current_estonian_as_of_date": "2026-10-19",
+      "current_estonian_version_evidence": "Avaliku teabe seadus; global ID 130062026009; effective period 2026-10-01 2026-11-30; as of 2026-10-19."
+    },
+    {
+      "id": "ee-ministry-population-register",
+      "title": "Ministry of Interior population-register and EU-citizen guidance",
+      "authority": "Ministry of the Interior",
+      "class": "official_guidance",
+      "language": "en",
+      "official_url": "https://www.siseministeerium.ee/en/activities/population-procedures/population-register",
+      "publisher_identifier": {
+        "system": "www.siseministeerium.ee",
+        "record": "Ministry of the Interior"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official page inspected; describes EU citizen residence-notice process and links legal sources; it calls right of residence a 'temporary/permanent residence permit', conflicting with statutory terminology; last-updated evidence 30 December 2025 in prior inspection",
+      "retrieval_status": "discovery_only_rule_not_implemented",
+      "retrieval_shape": "Dynamic HTML with linked laws/forms",
+      "seed_status": "candidate",
+      "check_note": "Operationally useful but terminology conflict requires correction or source-owner review before operative reuse Official page inspected; describes EU citizen residence-notice process and links legal sources; it calls right of residence a 'temporary/permanent residence permit', conflicting with statutory terminology; last-updated evidence 30 December 2025 in prior inspection"
+    },
+    {
+      "id": "ee-ministry-residence-procedures",
+      "title": "Ministry of Interior residence-procedures landing page",
+      "authority": "Ministry of the Interior",
+      "class": "official_guidance_index",
+      "language": "en",
+      "official_url": "https://www.siseministeerium.ee/en/activities/population-procedures/residence-procedures",
+      "publisher_identifier": {
+        "system": "www.siseministeerium.ee",
+        "record": "Ministry of the Interior"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official page inspected; explains residence-data processes and last-updated date 1 September 2022",
+      "retrieval_status": "discovery_only_rule_not_implemented",
+      "retrieval_shape": "Dynamic HTML and child-page links",
+      "seed_status": "candidate",
+      "check_note": "Older landing page; use as navigation lead and refresh child links Official page inspected; explains residence-data processes and last-updated date 1 September 2022"
+    },
+    {
+      "id": "ee-tallinn-eu-residence",
+      "title": "Tallinn service guidance on a temporary right of residence for EU citizens",
+      "authority": "City of Tallinn",
+      "class": "local_authority_guidance",
+      "language": "en",
+      "official_url": "https://www.tallinn.ee/en/issuance-right-temporary-residence-citizen-european-union",
+      "publisher_identifier": {
+        "system": "www.tallinn.ee",
+        "record": "City of Tallinn"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official municipal search result found; page uses permit terminology and is a local service example, not nationwide guidance",
+      "retrieval_status": "discovery_only_rule_not_implemented",
+      "retrieval_shape": "Dynamic HTML",
+      "seed_status": "candidate",
+      "check_note": "Local procedure only; currency and consistency with national law need review Official municipal search result found; page uses permit terminology and is a local service example, not nationwide guidance"
+    },
+    {
+      "id": "ee-mfa-schengen-visa",
+      "title": "Application for a Schengen visa",
+      "authority": "Ministry of Foreign Affairs",
+      "class": "official_visa_guidance",
+      "language": "en",
+      "official_url": "https://www.vm.ee/en/consular-visa-and-travel-information/visa-information/application-schengen-visa",
+      "publisher_identifier": {
+        "system": "www.vm.ee",
+        "record": "Ministry of Foreign Affairs"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official page inspected; separates the EU-family context from general short-stay visa processing and directs visa-decision appeals to a separate route",
+      "retrieval_status": "discovery_only_rule_not_implemented",
+      "retrieval_shape": "Dynamic HTML with changing mission/provider links",
+      "seed_status": "candidate",
+      "check_note": "Visa Code route, not the EU residence-right procedure Official page inspected; separates the EU-family context from general short-stay visa processing and directs visa-decision appeals to a separate route"
+    },
+    {
+      "id": "ee-mfa-long-stay-visa",
+      "title": "Application for a long-stay D visa",
+      "authority": "Ministry of Foreign Affairs",
+      "class": "official_visa_guidance",
+      "language": "en",
+      "official_url": "https://www.vm.ee/en/consular-visa-and-travel-information/visa-information/application-long-stay-d-visa",
+      "publisher_identifier": {
+        "system": "www.vm.ee",
+        "record": "Ministry of Foreign Affairs"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official MFA page identified; current page/version details not independently refreshed in this pass",
+      "retrieval_status": "discovery_only_rule_not_implemented",
+      "retrieval_shape": "Dynamic HTML",
+      "seed_status": "candidate",
+      "check_note": "Long-stay national visa context; does not replace EU-citizen residence rules Official MFA page identified; current page/version details not independently refreshed in this pass"
+    },
+    {
+      "id": "ee-mfa-visa-free",
+      "title": "Who does not need a visa to visit Estonia",
+      "authority": "Ministry of Foreign Affairs",
+      "class": "official_visa_guidance",
+      "language": "en",
+      "official_url": "https://www.vm.ee/en/consular-visa-and-travel-information/visa-information/who-does-not-need-visa-visit-estonia",
+      "publisher_identifier": {
+        "system": "www.vm.ee",
+        "record": "Ministry of Foreign Affairs"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official MFA page identified; current exemptions and list version require refresh",
+      "retrieval_status": "discovery_only_rule_not_implemented",
+      "retrieval_shape": "Dynamic HTML",
+      "seed_status": "candidate",
+      "check_note": "Short-stay visa exemption route Official MFA page identified; current exemptions and list version require refresh"
+    },
+    {
+      "id": "ee-mfa-representation-list",
+      "title": "Countries where Estonia is represented by another country",
+      "authority": "Ministry of Foreign Affairs",
+      "class": "official_mission_guidance",
+      "language": "en",
+      "official_url": "https://www.vm.ee/en/consular-visa-and-travel-information/visa-information/countries-where-estonia-represented-another",
+      "publisher_identifier": {
+        "system": "www.vm.ee",
+        "record": "Ministry of Foreign Affairs"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official page inspected; country-by-country representation content is dynamic and changes with consular arrangements",
+      "retrieval_status": "discovery_only_rule_not_implemented",
+      "retrieval_shape": "Dynamic HTML/list",
+      "seed_status": "candidate",
+      "check_note": "Resolve country-specific representation from the current page rather than pinned mission URLs Official page inspected; country-by-country representation content is dynamic and changes with consular arrangements"
+    },
+    {
+      "id": "ee-mfa-missions-visa",
+      "title": "Estonian representations handling visas",
+      "authority": "Ministry of Foreign Affairs",
+      "class": "official_mission_directory",
+      "language": "en",
+      "official_url": "https://www.vm.ee/en/consular-visa-and-travel-information/visa-information/estonian-representations-which-are-handling",
+      "publisher_identifier": {
+        "system": "www.vm.ee",
+        "record": "Ministry of Foreign Affairs"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official MFA directory inspected; links to mission pages and flags temporary suspension/other exceptions",
+      "retrieval_status": "discovery_only_rule_not_implemented",
+      "retrieval_shape": "Dynamic HTML/list",
+      "seed_status": "candidate",
+      "check_note": "Coverage and appointment/provider routes may change; parent index must be rediscovered Official MFA directory inspected; links to mission pages and flags temporary suspension/other exceptions"
+    },
+    {
+      "id": "ee-mfa-visa-appeal",
+      "title": "Appeal against refusal, annulment and revocation of a visa",
+      "authority": "Ministry of Foreign Affairs",
+      "class": "official_remedy_guidance",
+      "language": "en",
+      "official_url": "https://www.vm.ee/en/consular-visa-and-travel-information/visa-information/appeal-against-refusal-annulment-and",
+      "publisher_identifier": {
+        "system": "www.vm.ee",
+        "record": "Ministry of Foreign Affairs"
+      },
+      "functional_relationship": "close_functional_match",
+      "verification_status": "Official page inspected; describes 10-day ministry appeal, review period, state fee/form, and subsequent administrative-court challenge; check dynamic form and fee links",
+      "retrieval_status": "discovery_only_rule_not_implemented",
+      "retrieval_shape": "Dynamic HTML with linked PDF form",
+      "seed_status": "candidate",
+      "check_note": "Procedural information is time-sensitive and must be cross-checked against current acts Official page inspected; describes 10-day ministry appeal, review period, state fee/form, and subsequent administrative-court challenge; check dynamic form and fee links"
+    },
+    {
+      "id": "ee-mfa-visa-portal",
+      "title": "Estonian online Schengen visa application portal",
+      "authority": "Estonian e-visa portal",
+      "class": "official_application_portal",
+      "language": "en-et",
+      "official_url": "https://eelviisataotlus.vm.ee/",
+      "publisher_identifier": {
+        "system": "eelviisataotlus.vm.ee",
+        "record": "Ministry of Foreign Affairs / Estonian e-visa portal"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Linked by official MFA page; portal is dynamic and not treated as a legal source text",
+      "retrieval_status": "discovery_only_rule_not_implemented",
+      "retrieval_shape": "Online service",
+      "seed_status": "candidate",
+      "check_note": "Monitor only public instructions; never submit or collect personal application data Linked by official MFA page; portal is dynamic and not treated as a legal source text"
+    },
+    {
+      "id": "ee-chancellor-complaint",
+      "title": "Application to the Chancellor of Justice",
+      "authority": "Chancellor of Justice",
+      "class": "ombudsman_guidance",
+      "language": "en",
+      "official_url": "https://www.oiguskantsler.ee/en/contacts/application-chancellor-justice",
+      "publisher_identifier": {
+        "system": "www.oiguskantsler.ee",
+        "record": "Chancellor of Justice"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official page inspected; describes oversight of public authorities and limits where court/appeal routes are pending or available",
+      "retrieval_status": "discovery_only_rule_not_implemented",
+      "retrieval_shape": "Dynamic HTML and online form",
+      "seed_status": "candidate",
+      "check_note": "Oversight remedy is distinct from appeal and cannot replace court deadlines Official page inspected; describes oversight of public authorities and limits where court/appeal routes are pending or available"
+    },
+    {
+      "id": "ee-chancellor-submit",
+      "title": "How to file an application with the Chancellor of Justice",
+      "authority": "Chancellor of Justice",
+      "class": "ombudsman_process_guidance",
+      "language": "en",
+      "official_url": "https://www.oiguskantsler.ee/en/node/53",
+      "publisher_identifier": {
+        "system": "www.oiguskantsler.ee",
+        "record": "Chancellor of Justice"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official source inspected; describes website, email, post, phone and in-person submission routes",
+      "retrieval_status": "discovery_only_rule_not_implemented",
+      "retrieval_shape": "Dynamic HTML",
+      "seed_status": "candidate",
+      "check_note": "Submission routes may change; does not establish case outcome or individual remedy Official source inspected; describes website, email, post, phone and in-person submission routes"
+    },
+    {
+      "id": "ee-dpa-help",
+      "title": "How can we help foreign persons and authorities",
+      "authority": "Estonian Data Protection Inspectorate",
+      "class": "data_protection_oversight_guidance",
+      "language": "en",
+      "official_url": "https://www.aki.ee/en/guidelines-legislation/how-can-we-help-foreign-persons-and-authorities",
+      "publisher_identifier": {
+        "system": "www.aki.ee",
+        "record": "Estonian Data Protection Inspectorate"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official source inspected; covers complaints, challenges to public-information access, language requirements, forms and 30-day/possible 60-day processing",
+      "retrieval_status": "discovery_only_rule_not_implemented",
+      "retrieval_shape": "Dynamic HTML with DOCX forms",
+      "seed_status": "candidate",
+      "check_note": "Estonian-language filing constraint and changing form links; avoid collecting personal complaint data Official source inspected; covers complaints, challenges to public-information access, language requirements, forms and 30-day/possible 60-day processing"
+    },
+    {
+      "id": "ee-dpa-schengen-data",
+      "title": "Data in international information systems",
+      "authority": "Estonian Data Protection Inspectorate",
+      "class": "data_access_guidance",
+      "language": "en",
+      "official_url": "https://www.aki.ee/en/inspectorate-news-information-dpo-s/data-international-information-systems",
+      "publisher_identifier": {
+        "system": "www.aki.ee",
+        "record": "Estonian Data Protection Inspectorate"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official page inspected; explains access/correction requests concerning Schengen and other international systems, including administrative-court complaint route",
+      "retrieval_status": "discovery_only_rule_not_implemented",
+      "retrieval_shape": "Dynamic HTML",
+      "seed_status": "candidate",
+      "check_note": "Operational guidance; last updated 29 April 2025 Official page inspected; explains access/correction requests concerning Schengen and other international systems, including administrative-court complaint route"
+    },
+    {
+      "id": "ee-courts-system",
+      "title": "Estonian court system",
+      "authority": "Estonian Courts",
+      "class": "court_system_guidance",
+      "language": "en",
+      "official_url": "https://www.kohus.ee/en/estonian-courts/estonian-court-system",
+      "publisher_identifier": {
+        "system": "www.kohus.ee",
+        "record": "Estonian Courts"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official page inspected; explains three-instance court structure and administrative courts",
+      "retrieval_status": "discovery_only_rule_not_implemented",
+      "retrieval_shape": "Dynamic HTML",
+      "seed_status": "candidate",
+      "check_note": "General system information, not a procedure rule Official page inspected; explains three-instance court structure and administrative courts"
+    },
+    {
+      "id": "ee-admin-courts",
+      "title": "Administrative courts",
+      "authority": "Estonian Courts",
+      "class": "court_procedure_guidance",
+      "language": "en",
+      "official_url": "https://www.kohus.ee/en/estonian-courts/estonian-court-system/administrative-courts",
+      "publisher_identifier": {
+        "system": "www.kohus.ee",
+        "record": "Estonian Courts"
+      },
+      "functional_relationship": "close_functional_match",
+      "verification_status": "Official page inspected; identifies two administrative courts and points to the Code of Administrative Court Procedure",
+      "retrieval_status": "discovery_only_rule_not_implemented",
+      "retrieval_shape": "Dynamic HTML",
+      "seed_status": "candidate",
+      "check_note": "Directory and descriptive guidance; authoritative procedure remains statute Official page inspected; identifies two administrative courts and points to the Code of Administrative Court Procedure"
+    },
+    {
+      "id": "ee-court-decisions",
+      "title": "Riigi Teataja court-decision search",
+      "authority": "Riigi Teataja",
+      "class": "court_decision_repository",
+      "language": "et",
+      "official_url": "https://www.riigiteataja.ee/kohtulahendid/otsing.html",
+      "publisher_identifier": {
+        "system": "www.riigiteataja.ee",
+        "record": "Riigi Teataja / courts"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official court portal route identified; query and corpus completeness not tested",
+      "retrieval_status": "discovery_only_rule_not_implemented",
+      "retrieval_shape": "Search portal; decision HTML/PDF varies",
+      "seed_status": "candidate",
+      "check_note": "Published decisions may be redacted or restricted; no completeness claim Official court portal route identified; query and corpus completeness not tested"
+    },
+    {
+      "id": "ee-supreme-court-judgments",
+      "title": "Supreme Court judgments and English summaries",
+      "authority": "Supreme Court of Estonia",
+      "class": "court_decision_repository",
+      "language": "en-et",
+      "official_url": "https://www.riigikohus.ee/en/judgments",
+      "publisher_identifier": {
+        "system": "www.riigikohus.ee",
+        "record": "Supreme Court of Estonia"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official page identified; some English summaries are available, not a complete English judgment corpus",
+      "retrieval_status": "discovery_only_rule_not_implemented",
+      "retrieval_shape": "Dynamic HTML and linked decisions",
+      "seed_status": "candidate",
+      "check_note": "English content selective; no bulk conversion route established Official page identified; some English summaries are available, not a complete English judgment corpus"
+    },
+    {
+      "id": "ee-aliens-act-current-2026-10",
+      "title": "Aliens Act — current consolidated Estonian text (19 October 2026)",
+      "authority": "Riigi Teataja",
+      "class": "national_act_current_consolidation",
+      "language": "et",
+      "official_url": "https://www.riigiteataja.ee/akt/130062026103",
+      "publisher_identifier": {
+        "system": "Riigi Teataja global ID",
+        "record": "130062026103"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Downloaded from the official effective-date search result; XML ID, title and validity interval checked. Converted candidate is hash-pinned and replays offline.",
+      "retrieval_status": "converted_review_candidate_unaccepted",
+      "retrieval_shape": "dated official law search -> exact XML API",
+      "seed_status": "candidate",
+      "check_note": "Current Estonian consolidated text; as-of 2026-10-19; not accepted pending scope review.",
+      "candidate_text_path": "../candidates/ee-aliens-act-current-2026-10.md",
+      "source_sha256": "bba62efcf35705e8cd9461c2dc2828f7879528a9ff0e913806d8ba3b7403d3be",
+      "converted_sha256": "80742b97a676c0c57324a24f091d1613cd5a487e0735261ffab5b5bcf4bfd189",
+      "source_bytes": 1133833,
+      "resolved_url": "https://www.riigiteataja.ee/public-api/api/v1/akt/130062026103/xml",
+      "retrieved": true,
+      "accepted": false,
+      "version_evidence": "Official dated law search resolved Välismaalaste seadus global ID 130062026103; effective period 2026-10-01 2026-12-31; as of 2026-10-19."
+    },
+    {
+      "id": "ee-citizen-act-current-2026-10",
+      "title": "Citizen of the European Union Act — current consolidated Estonian text (19 October 2026)",
+      "authority": "Riigi Teataja",
+      "class": "national_act_current_consolidation",
+      "language": "et",
+      "official_url": "https://www.riigiteataja.ee/akt/130062026048",
+      "publisher_identifier": {
+        "system": "Riigi Teataja global ID",
+        "record": "130062026048"
+      },
+      "functional_relationship": "close_functional_match",
+      "verification_status": "Downloaded from the official effective-date search result; XML ID, title and validity interval checked. Converted candidate is hash-pinned and replays offline.",
+      "retrieval_status": "converted_review_candidate_unaccepted",
+      "retrieval_shape": "dated official law search -> exact XML API",
+      "seed_status": "candidate",
+      "check_note": "Current Estonian consolidated text; as-of 2026-10-19; not accepted pending scope review.",
+      "candidate_text_path": "../candidates/ee-citizen-act-current-2026-10.md",
+      "source_sha256": "b5a0e338d74f46c2bfa66b6f5602b973df1f77f87b82c97a66d230bc37f25052",
+      "converted_sha256": "c1b66565dcd1f26977963854fdd29f2ad33259467d12ae146227b6426e9d881b",
+      "source_bytes": 212350,
+      "resolved_url": "https://www.riigiteataja.ee/public-api/api/v1/akt/130062026048/xml",
+      "retrieved": true,
+      "accepted": false,
+      "version_evidence": "Official dated law search resolved Euroopa Liidu kodaniku seadus global ID 130062026048; effective period 2026-10-01 2027-12-31; as of 2026-10-19."
+    }
+  ],
+  "retrieved_review_candidate_count": 21,
+  "converted_review_candidate_count": 21
+}

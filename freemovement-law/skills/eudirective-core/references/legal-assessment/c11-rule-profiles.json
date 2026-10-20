@@ -1,0 +1,123 @@
+{
+  "profile_version": "0.1.0",
+  "rules": [
+    {
+      "attack_angle_id": "core:attack:procedural-access-review",
+      "contrary_evidence_to_review": [
+        "An alternative genuinely accessible direct channel or later successful lodging may affect the allegation."
+      ],
+      "exceptions_to_review": [
+        "Determine Directive 2004/38 personal and geographic scope, exceptions and actual opportunity to submit.",
+        "Distinguish appointment communication from a completed application."
+      ],
+      "id": "c11:attack:core-access",
+      "kind": "attack",
+      "label": "Adverse access allegation under entry-visa procedure",
+      "limitations": [
+        "Adverse contact-channel facts do not alone prove a breach of Article 5(2)."
+      ],
+      "missing_structured_questions": [],
+      "procedure_types": [
+        "entry_visa"
+      ],
+      "source_citations": [
+        {
+          "pinpoint_hint": "Article 5(2); application and facilitation must be assessed",
+          "source_id": "eu:32004l0038"
+        }
+      ],
+      "tests": [
+        {
+          "allowed_values": [
+            "blocked",
+            "denied",
+            "unavailable",
+            "inaccessible",
+            "delayed",
+            "refused",
+            "obstructed",
+            "appointment_unavailable",
+            "no_appointment",
+            "lodgement_prevented",
+            "digital_only_no_alternative"
+          ],
+          "field": "element:procedure.access_state"
+        }
+      ]
+    },
+    {
+      "attack_angle_id": "core:attack:proof-restriction-review",
+      "contrary_evidence_to_review": [
+        "Authority may have accepted an alternative or raised a justified authenticity concern."
+      ],
+      "exceptions_to_review": [
+        "Check the law applicable to the document and procedure, and whether alternative evidence is sufficient.",
+        "Examine authenticity, fraud/abuse concerns, translation and individual circumstances."
+      ],
+      "id": "c11:attack:core-proof",
+      "kind": "attack",
+      "label": "Closed-document demand versus permissible proof",
+      "limitations": [
+        "Assertion of a document restriction is not proof that it is unlawful."
+      ],
+      "missing_structured_questions": [],
+      "procedure_types": [
+        "entry_visa",
+        "residence_card"
+      ],
+      "source_citations": [
+        {
+          "pinpoint_hint": "Articles 5(2) and 10(2), distinguish procedure; do not universalise proof rule",
+          "source_id": "eu:32004l0038"
+        }
+      ],
+      "tests": [
+        {
+          "allowed_values": [
+            "asserted",
+            "disputed",
+            "established"
+          ],
+          "field": "element:evidence.proof_restriction_status"
+        }
+      ]
+    },
+    {
+      "attack_angle_id": null,
+      "contrary_evidence_to_review": [
+        "A residence-card request may be a distinct lawful process rather than a precondition to entry."
+      ],
+      "exceptions_to_review": [
+        "Check whether the Union citizen actually exercises mobility rights and which visa exemptions apply.",
+        "No inference that a residence-card requirement was imposed from procedure type alone."
+      ],
+      "id": "c11:topic:entry-vs-card",
+      "kind": "topic",
+      "label": "Directive entry visa versus residence-card classification",
+      "limitations": [
+        "Procedure classification is not entitlement or breach determination."
+      ],
+      "missing_structured_questions": [],
+      "procedure_types": [
+        "entry_visa",
+        "residence_card"
+      ],
+      "source_citations": [
+        {
+          "pinpoint_hint": "Article 5(2) entry visas, Article 10(1)-(2) residence cards",
+          "source_id": "eu:32004l0038"
+        }
+      ],
+      "tests": [
+        {
+          "allowed_values": [
+            "entry_visa",
+            "residence_card"
+          ],
+          "field": "case:procedure_type"
+        }
+      ]
+    }
+  ],
+  "status": "synthetic_review_only"
+}

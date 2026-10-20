@@ -1,0 +1,38 @@
+# European Ombudsman — Make a complaint
+
+- Source ID: `eu:ombudsman-complaint`
+- Representation language: `RO`
+- Corresponding English file: `core/guidance/notes/eu_ombudsman-complaint_EN.md`
+- Official Romanian source: https://www.ombudsman.europa.eu/rest/documents/pageContentByModeAndLang/home/how-to-make-a-complaint/can-the-ombudsman-help-me?lang=ro&onlyTitle=false
+- Official response SHA-256: `c68fd4e8772c77e1e02dd9022763714fde88c77db97f2afb232493d342012c4d`
+- Converter: `Node.js official Ombudsman Romanian content-set / stable seven-block order`
+
+> Official-source language counterpart retrieved as a local candidate. Confirm document identity, version, completeness, notes, annexes and layout against the linked official source before relying on this conversion.
+
+## Poate Ombudsmanul să mă ajute? Dacă nu, cine altcineva ar putea?
+
+Dacă Ombudsmanul nu vă poate ajuta în chestiunea în cauză, există alte organisme care ar putea să vă ajute.
+
+## Depunerea unei plângeri la Ombudsmanul European
+
+Ombudsmanul European desfășoară anchete în urma plângerilor depuse de cetățeni, întreprinderi și organizații cu privire la cazurile de administrare defectuoasă din cadrul instituțiilor, organismelor și agențiilor Uniunii Europene . Plângerea trebuie depusă în termen de doi ani de la data la care persoana afectată și-a dat seama de fapte. Acțiuni premergătoare: Reclamantul trebuie să fi contactat mai întâi instituția respectivă pentru a încerca să rezolve chestiunea în cauză. Pentru a asigura un serviciu de calitate, vor fi procesate doar plângerile depuse folosind formularul online de plângere disponibil mai jos. A se reține că plângerile transmise prin e-mail nu vor fi acceptate.
+
+## Ce înseamnă administrare defectuoasă?
+
+Administrarea defectuoasă apare atunci când o instituție sau un organism nu acționează în conformitate cu legislația sau cu principiile bunei administrări sau încalcă drepturi ale omului. Administrarea defectuoasă poate include: nereguli administrative, incorectitudine, discriminare sau abuz de putere, de exemplu în gestionarea de fonduri UE, în achiziții publice sau în politici de recrutare. Administrarea defectuoasă include și neacordarea unui răspuns sau refuzul sau întârzierea nejustificată în acordarea accesului la informații în interes public.
+
+## Ce nu poate face Ombudsmanul European
+
+Ombudsmanul European nu poate ancheta plângerile împotriva autorităților naționale, regionale sau locale din statele membre, chiar dacă plângerile se referă la chestiuni legate de UE. Ombudsmanul nu poate ancheta cazuri aflate pe rolul instanțelor de judecată .
+
+## Depunerea unei plângeri
+
+Pentru eficiență, Ombudsmanul European utilizează un sistem online de tratare a plângerilor. Plângerile online pot fi depuse în trei etape simple: 1 Consultați criteriile Parcurgeți lista de verificare pentru depunerea unei plângeri și asigurați-vă că Ombudsmanul European poate ancheta plângerea dumneavoastră. 2 Pregătiți în prealabil informațiile și documentele necesare Pentru a depune o plângere, va trebui să furnizați următoarele informații: Numele instituției UE împotriva căreia doriți să depuneți o plângere. Decizia sau chestiunea care face obiectul plângerii dumneavoastră. Motivul pentru care considerați că instituția sau organismul UE a acționat greșit. Ce ar trebui, în opinia dumneavoastră, să facă instituția pentru a îndrepta lucrurile. Dacă cazul a fost deja soluționat de o instanță sau este pendinte în fața acesteia. Pentru ca plângerea să fie acceptată ca fiind completă, va trebui să furnizați următoarele documente : Documente care dovedesc că ați contactat deja instituția sau organismul UE în cauză pentru remedierea situației și că i-ați acordat un termen rezonabil pentru a răspunde. Aceasta este o condiție obligatorie pentru ca o plângere să fie admisibilă. Până când nu primim aceste documente, nu vom putea trata plângerea dumneavoastră. Dacă este cazul, documente justificative cu privire la decizia sau chestiunea care face obiectul plângerii dumneavoastră și cu privire la momentul în care ați luat cunoștință de aceasta. 3 Creați un cont sau conectați-vă la un cont existent. Trebuie să creați un cont pentru a depune plângeri. După ce aveți un cont, aveți timp oricând să compilați o plângere înainte să o trimiteți. Puteți verifica stadiul plângerii dumneavoastră sau puteți trimite noi plângeri din același cont.
+
+## Depunerea unei plângeri
+
+Recomandări pentru plângeri Vă rugăm să fiți cât mai concis în plângerea dumneavoastră. În cazuri excepționale, atunci când o plângere depășește numărul maxim de cuvinte permis în formular, vă rugăm să includeți plângerea completă ca anexă și să scrieți un rezumat în câmpurile formularului de plângere. În cazul în care există mai multe chestiuni diferite, vă rugăm să le identificați și să le numerotați. Vă rugăm să furnizați argumente și dovezi în sprijinul fiecărei presupuse nereguli. Vă rugăm să indicați în mod clar ce măsuri considerați că ar trebui luate pentru a soluționa fiecare chestiune care face obiectul plângerii. Vă rugăm să furnizați Ombudsmanului numai documentele sau informațiile necesare pentru înțelegerea plângerii. Vă rugăm să nu furnizați Ombudsmanului datele cu caracter personal ale terților, cu excepția cazului în care datele cu caracter personal sunt necesare pentru a-i permite Ombudsmanului să prelucreze plângerea. Formularul nostru online specific ne permite să tratăm plângerile într-un mod mai eficient și mai rapid. Dacă nu puteți utiliza formularul online, Ombudsmanul European acceptă plângerile depuse prin poștă. Trimiterea plângerii prin poștă Vă rugăm să rețineți că există anumite plângeri pe care nu le putem trata. Prin urmare, chiar dacă doriți să depuneți o plângere prin poștă, vă recomandăm să parcurgeți lista de verificare pentru depunerea unei plângeri înainte să trimiteți plângerea dumneavoastră. Dacă nu puteți depune o plângere online și doriți să depuneți o plângere prin poștă: Completați formularul de plângere. Furnizați Ombudsmanului numai documentele sau informațiile necesare pentru înțelegerea plângerii. Vă rugăm să fiți cât mai concis în plângerea dumneavoastră. În cazuri excepționale, atunci când plângerea depășește cinci pagini, vă rugăm să includeți un scurt rezumat în formularul de plângere și să numerotați paginile plângerii anexate. Vă rugăm să includeți: Documente care dovedesc că ați contactat deja instituția sau organismul UE în cauză pentru remedierea situației. Aceasta este o condiție obligatorie pentru ca o plângere să fie admisibilă. În caz contrar, veți fi informat că plângerea dumneavoastră nu poate fi tratată. Dacă este cazul, documente justificative cu privire la decizia sau chestiunea care face obiectul plângerii dumneavoastră și la momentul în care ați luat cunoștință de aceasta. Asigurați-vă că toate documentele anexate ca dovadă a neregulii (de exemplu, corespondența) sunt numerotate și denumite (de exemplu, 1-Scrisoare de la xx-data, 2-E-mail către xx-data...). De asemenea, vă rugăm să furnizați o listă cu numărul și denumirea fiecărui document. În plângere, vă rugăm să faceți referire la documente pe baza numerotării lor. Vă rugăm să nu furnizați Ombudsmanului datele cu caracter personal ale terților, cu excepția cazului în care datele cu caracter personal sunt necesare pentru a-i permite Ombudsmanului să prelucreze plângerea.
+
+## Listă de verificare pentru plângeri
+
+Vă rugăm să utilizați filtrele pentru a verifica dacă îndepliniți criteriile pentru ca Ombudsmanul să deschidă o anchetă în cazul plângerii dumneavoastră sau dacă puteți obține recomandări din partea Ombudsmanului.

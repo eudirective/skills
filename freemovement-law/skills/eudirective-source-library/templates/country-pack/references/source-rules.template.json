@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "jurisdiction": "<ISO-3166-1-alpha-2>",
+  "updated": "YYYY-MM-DD",
+  "discovery_surfaces": [],
+  "rules": [
+    {
+      "id": "<stable-rule-id>",
+      "applies_to": "<source class or source IDs>",
+      "retrieval": {
+        "entry_point": "<official publisher route>",
+        "identity_checks": [],
+        "change_signal": "<how a change is detected>"
+      },
+      "conversion": {
+        "rule_ids": ["<converter/version or manual-review rule>"],
+        "method": "<selector or native retention rule>",
+        "validation": []
+      },
+      "sustainability": "<limits, cadence, and failure handling>"
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "$defs": {
+    "rule": {
+      "additionalProperties": false,
+      "properties": {
+        "activation": {
+          "$ref": "#/$defs/rule/properties/conditions/items"
+        },
+        "attack_angle_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "conditions": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "expected_values": {
+                "items": {
+                  "type": [
+                    "string",
+                    "boolean",
+                    "integer"
+                  ]
+                },
+                "maxItems": 60,
+                "type": "array"
+              },
+              "fact_key": {
+                "type": "string"
+              },
+              "operator": {
+                "enum": [
+                  "one_of",
+                  "date"
+                ]
+              }
+            },
+            "required": [
+              "fact_key",
+              "operator",
+              "expected_values"
+            ],
+            "type": "object"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "exception_questions": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "label": {
+          "type": "string"
+        },
+        "limitations": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "procedure_types": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "rule_id": {
+          "minLength": 3,
+          "type": "string"
+        },
+        "source_citations": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "pinpoint_hint": {
+                "type": "string"
+              },
+              "source_id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "source_id",
+              "pinpoint_hint"
+            ],
+            "type": "object"
+          },
+          "minItems": 1,
+          "type": "array"
+        }
+      },
+      "required": [
+        "rule_id",
+        "label",
+        "procedure_types",
+        "attack_angle_id",
+        "conditions",
+        "exception_questions",
+        "source_citations",
+        "limitations"
+      ],
+      "type": "object"
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "bound_export_sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "type": "string"
+    },
+    "deferred_rule_ids": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "extension_version": {
+      "enum": [
+        "0.1.0",
+        "0.2.0"
+      ]
+    },
+    "jurisdiction": {
+      "type": "string"
+    },
+    "producer_module_family": {
+      "enum": [
+        "member_state",
+        "applicant_country"
+      ]
+    },
+    "producer_module_id": {
+      "type": "string"
+    },
+    "rules": {
+      "items": {
+        "$ref": "#/$defs/rule"
+      },
+      "maxItems": 100,
+      "minItems": 1,
+      "type": "array"
+    },
+    "scope": {
+      "const": "synthetic_c12_pilot_only"
+    }
+  },
+  "required": [
+    "extension_version",
+    "producer_module_id",
+    "producer_module_family",
+    "jurisdiction",
+    "bound_export_sha256",
+    "rules",
+    "deferred_rule_ids",
+    "scope"
+  ],
+  "title": "C12/C16 country rule sidecar v0.1.0 and v0.2.0",
+  "type": "object"
+}

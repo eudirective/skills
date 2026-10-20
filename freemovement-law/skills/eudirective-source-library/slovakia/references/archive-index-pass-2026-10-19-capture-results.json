@@ -1,0 +1,20 @@
+{
+  "jurisdiction": "slovakia",
+  "as_of_date": "2026-10-19",
+  "method": "Ordinary allowlisted HTTPS GET only; no authentication, challenge bypass or form submission. Exact response bytes are hashed; changes stage for review.",
+  "request_policy": {
+    "timeout_seconds": 25,
+    "max_response_bytes": 25165824,
+    "delay_seconds": 1.0
+  },
+  "records": [
+    {
+      "candidate_id": "sk_01",
+      "source_url": "https://www.slov-lex.sk/ezbierky/archiv-zbierky-zakonov",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_note": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "accepted": false
+    }
+  ],
+  "accepted_source_count": 0
+}

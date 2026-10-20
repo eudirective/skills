@@ -1,0 +1,259 @@
+{
+  "$defs": {
+    "digest": {
+      "pattern": "^[a-f0-9]{64}$",
+      "type": "string"
+    },
+    "file": {
+      "additionalProperties": false,
+      "properties": {
+        "content_sha256": {
+          "$ref": "#/$defs/digest"
+        },
+        "file_sha256": {
+          "$ref": "#/$defs/digest"
+        },
+        "path": {
+          "maxLength": 250,
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "path",
+        "file_sha256",
+        "content_sha256"
+      ],
+      "type": "object"
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "c12_extension_count": {
+      "maximum": 30,
+      "minimum": 0,
+      "type": "integer"
+    },
+    "c13_enrolled": {
+      "type": "boolean"
+    },
+    "c6_version": {
+      "const": "0.5.0"
+    },
+    "case_id": {
+      "maxLength": 160,
+      "minLength": 1,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$",
+      "type": "string"
+    },
+    "contract_version": {
+      "const": "0.2.0"
+    },
+    "controller_protocol": {
+      "const": "0.3.0"
+    },
+    "country_module_count": {
+      "maximum": 31,
+      "minimum": 1,
+      "type": "integer"
+    },
+    "element_model_version": {
+      "const": "0.2.0"
+    },
+    "inputs": {
+      "additionalProperties": {
+        "anyOf": [
+          {
+            "$ref": "#/$defs/file"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "maxProperties": 80,
+      "type": "object"
+    },
+    "limitations": {
+      "items": {
+        "maxLength": 1000,
+        "type": "string"
+      },
+      "maxItems": 30,
+      "minItems": 1,
+      "type": "array"
+    },
+    "prepared_revision": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "prepared_state_sha256": {
+      "$ref": "#/$defs/digest"
+    },
+    "run_id": {
+      "maxLength": 120,
+      "minLength": 1,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$",
+      "type": "string"
+    },
+    "script_and_policy_sha256": {
+      "additionalProperties": {
+        "$ref": "#/$defs/digest"
+      },
+      "maxProperties": 150,
+      "minProperties": 15,
+      "type": "object"
+    },
+    "source_as_of": {
+      "additionalProperties": false,
+      "properties": {
+        "as_of_time": {
+          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z$",
+          "type": "string"
+        },
+        "fixed_identity_source_count": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "metadata_age_assurance": {
+          "const": "pinned_source_metadata_within_local_as_of_windows"
+        },
+        "mutable_current_source_count": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "official_live_reverification": {
+          "const": false
+        },
+        "pack_last_verification_date": {
+          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+          "type": "string"
+        },
+        "pack_manifest_sha256": {
+          "$ref": "#/$defs/digest"
+        },
+        "policy_version": {
+          "const": "0.1.0"
+        }
+      },
+      "required": [
+        "as_of_time",
+        "policy_version",
+        "pack_manifest_sha256",
+        "pack_last_verification_date",
+        "fixed_identity_source_count",
+        "mutable_current_source_count",
+        "metadata_age_assurance",
+        "official_live_reverification"
+      ],
+      "type": "object"
+    },
+    "source_trust": {
+      "additionalProperties": false,
+      "properties": {
+        "official_live_reverification": {
+          "const": false
+        },
+        "policy_sha256": {
+          "$ref": "#/$defs/digest"
+        },
+        "source_assurance": {
+          "enum": [
+            "pinned_manifest_and_representation_metadata_only",
+            "pinned_metadata_plus_verified_bundled_deldwyn_text",
+            "pinned_metadata_and_verified_bundled_47_representations",
+            "pinned_metadata_and_local_representation_bytes"
+          ]
+        },
+        "source_manifest_sha256": {
+          "$ref": "#/$defs/digest"
+        },
+        "source_pack_version": {
+          "enum": [
+            "0.5.0",
+            "0.6.0",
+            "0.6.1"
+          ]
+        },
+        "source_representation_count": {
+          "minimum": 1,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "policy_sha256",
+        "source_manifest_sha256",
+        "source_representation_count",
+        "source_assurance",
+        "official_live_reverification"
+      ],
+      "type": "object"
+    },
+    "stages": {
+      "additionalProperties": false,
+      "properties": {
+        "c11": {
+          "$ref": "#/$defs/file"
+        },
+        "c12": {
+          "$ref": "#/$defs/file"
+        },
+        "c13": {
+          "$ref": "#/$defs/file"
+        },
+        "c5b": {
+          "$ref": "#/$defs/file"
+        },
+        "c5c": {
+          "$ref": "#/$defs/file"
+        },
+        "c5d": {
+          "$ref": "#/$defs/file"
+        },
+        "regimes": {
+          "$ref": "#/$defs/file"
+        },
+        "topology": {
+          "$ref": "#/$defs/file"
+        }
+      },
+      "required": [
+        "topology",
+        "regimes",
+        "c5b",
+        "c5c",
+        "c5d",
+        "c11",
+        "c12",
+        "c13"
+      ],
+      "type": "object"
+    },
+    "status": {
+      "const": "prepared_review_needed"
+    }
+  },
+  "required": [
+    "c6_version",
+    "source_trust",
+    "source_as_of",
+    "case_id",
+    "run_id",
+    "controller_protocol",
+    "contract_version",
+    "element_model_version",
+    "status",
+    "prepared_revision",
+    "prepared_state_sha256",
+    "inputs",
+    "country_module_count",
+    "stages",
+    "script_and_policy_sha256",
+    "limitations",
+    "c12_extension_count",
+    "c13_enrolled"
+  ],
+  "title": "C6 synthetic integration prepared-run index v0.4.0",
+  "type": "object"
+}

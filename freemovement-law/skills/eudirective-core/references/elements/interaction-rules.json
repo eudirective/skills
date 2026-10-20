@@ -1,0 +1,321 @@
+{
+  "model_version": "0.2.0",
+  "rules": [
+    {
+      "rule_id": "int.geo.multi_role",
+      "title": "Distinct geographic roles",
+      "kind": "composition",
+      "inputs": [
+        "geography.residence_state",
+        "geography.work_state",
+        "geography.application_country",
+        "geography.deciding_state"
+      ],
+      "statement": "Country roles remain separate fields and may hold different values.",
+      "machine_checkable": false,
+      "invariant_id": "inv.geo_roles_distinct"
+    },
+    {
+      "rule_id": "int.modules.multi_state",
+      "title": "Multiple Member States",
+      "kind": "composition",
+      "inputs": [
+        "geography.residence_state",
+        "geography.work_state"
+      ],
+      "statement": "More than one Member-State module may be required for one case.",
+      "machine_checkable": false,
+      "invariant_id": null
+    },
+    {
+      "rule_id": "int.local.fact_not_hierarchy",
+      "title": "Local context affects facts, not hierarchy",
+      "kind": "semantic_boundary",
+      "inputs": [
+        "conclusion.overall"
+      ],
+      "statement": "Applicant-country evidence may alter factual support and therefore the core conclusion, but may not redefine source hierarchy or issue the overall conclusion.",
+      "machine_checkable": false,
+      "invariant_id": "inv.applicant_context_no_hierarchy_override"
+    },
+    {
+      "rule_id": "int.deadline.trigger",
+      "title": "Exact deadline dependency",
+      "kind": "temporal",
+      "inputs": [
+        "time.calculated_deadline",
+        "time.deadline_trigger_ref",
+        "time.deadline_rule_ref"
+      ],
+      "statement": "Exact deadline calculation requires an identified trigger and supported rule.",
+      "machine_checkable": true,
+      "invariant_id": "inv.deadline_requires_trigger_source"
+    },
+    {
+      "rule_id": "int.authority.competence",
+      "title": "Authority recommendation dependency",
+      "kind": "authority",
+      "inputs": [
+        "strategy.escalation_authority_ref",
+        "authority.jurisdiction",
+        "authority.competence"
+      ],
+      "statement": "Escalation requires an authority with the relevant jurisdiction and competence.",
+      "machine_checkable": true,
+      "invariant_id": "inv.escalation_requires_competence"
+    },
+    {
+      "rule_id": "int.completeness.no_negative",
+      "title": "Coverage state and negative conclusion",
+      "kind": "completeness",
+      "inputs": [
+        "completeness.status",
+        "conclusion.no_problem"
+      ],
+      "statement": "Not checked, blocked, missing or unsupported work cannot be rendered as no problem.",
+      "machine_checkable": true,
+      "invariant_id": "inv.not_checked_not_no_problem"
+    },
+    {
+      "rule_id": "int.source.freshness",
+      "title": "Source freshness and current-law support",
+      "kind": "dependency",
+      "inputs": [
+        "source.freshness",
+        "conclusion.current_law_supported"
+      ],
+      "statement": "Stale source state blocks unqualified current-law support.",
+      "machine_checkable": true,
+      "invariant_id": "inv.stale_source_not_current_support"
+    },
+    {
+      "rule_id": "int.rule.provenance",
+      "title": "National rule provenance",
+      "kind": "dependency",
+      "inputs": [
+        "rule.national_rule_id",
+        "rule.source_ref"
+      ],
+      "statement": "National declarative rules require a source link and version scope.",
+      "machine_checkable": true,
+      "invariant_id": "inv.national_rule_source_linked"
+    },
+    {
+      "rule_id": "int.rule.operator",
+      "title": "Unsupported operator behavior",
+      "kind": "completeness",
+      "inputs": [
+        "rule.operator_supported",
+        "completeness.status"
+      ],
+      "statement": "Unsupported national-rule operators remain explicit and are not approximated.",
+      "machine_checkable": true,
+      "invariant_id": "inv.unsupported_operator_explicit"
+    },
+    {
+      "rule_id": "int.privacy.purpose",
+      "title": "Purpose-specific outbound eligibility",
+      "kind": "privacy",
+      "inputs": [
+        "privacy_control.outbound_eligibility",
+        "privacy_control.purpose"
+      ],
+      "statement": "Outbound eligibility is purpose-specific.",
+      "machine_checkable": true,
+      "invariant_id": "inv.outbound_requires_purpose"
+    },
+    {
+      "rule_id": "int.approval.recipient",
+      "title": "Recipient-bound approval",
+      "kind": "privacy",
+      "inputs": [
+        "privacy_control.approval_bound_recipient",
+        "privacy_control.current_recipient",
+        "privacy_control.approval_valid"
+      ],
+      "statement": "A recipient change invalidates the prior bound approval.",
+      "machine_checkable": true,
+      "invariant_id": "inv.approval_recipient_binding"
+    },
+    {
+      "rule_id": "int.asset.case_data",
+      "title": "Case data and distributable assets",
+      "kind": "privacy",
+      "inputs": [
+        "asset.kind",
+        "asset.distributable"
+      ],
+      "statement": "Private/case-specific information does not become reusable module content.",
+      "machine_checkable": true,
+      "invariant_id": "inv.case_data_not_module_asset"
+    },
+    {
+      "rule_id": "int.local.optional",
+      "title": "Optional local context gap",
+      "kind": "completeness",
+      "inputs": [
+        "module.optional_local_available",
+        "completeness.scope"
+      ],
+      "statement": "Absence of optional local context creates only the affected completeness gap.",
+      "machine_checkable": false,
+      "invariant_id": "inv.optional_local_gap_scoped"
+    },
+    {
+      "rule_id": "int.principle.source",
+      "title": "Principle-source dependency",
+      "kind": "dependency",
+      "inputs": [
+        "legal_principle.id",
+        "legal_principle.applicability_status",
+        "legal_principle.source_ref"
+      ],
+      "statement": "Material use of a legal principle requires explicit source support.",
+      "machine_checkable": true,
+      "invariant_id": "inv.principle_requires_source"
+    },
+    {
+      "rule_id": "int.charter.scope",
+      "title": "Charter scope dependency",
+      "kind": "semantic_boundary",
+      "inputs": [
+        "legal_regime.charter",
+        "legal_regime.eu_law_scope_established"
+      ],
+      "statement": "Charter applicability is assessed only within the scope of EU law.",
+      "machine_checkable": true,
+      "invariant_id": "inv.charter_scope_requires_eu_scope"
+    },
+    {
+      "rule_id": "int.evidence.proof_restriction",
+      "title": "Proof restriction provenance",
+      "kind": "dependency",
+      "inputs": [
+        "evidence.proof_restriction_status",
+        "evidence.proof_restriction_source_ref",
+        "evidence.freedom_of_proof_state"
+      ],
+      "statement": "Closed-list or proof restrictions require source support and must be assessed against any freedom-of-proof rule.",
+      "machine_checkable": true,
+      "invariant_id": "inv.proof_restriction_requires_source"
+    },
+    {
+      "rule_id": "int.attack.support",
+      "title": "Attack-angle support",
+      "kind": "dependency",
+      "inputs": [
+        "attack_angle.assessment_status",
+        "attack_angle.evidence_state",
+        "attack_angle.source_ref"
+      ],
+      "statement": "A supported compliance attack angle requires both legal source support and sufficient evidence.",
+      "machine_checkable": true,
+      "invariant_id": "inv.supported_attack_angle_requires_support"
+    },
+    {
+      "rule_id": "int.source.quotation",
+      "title": "Representation and exact wording",
+      "kind": "semantic_boundary",
+      "inputs": [
+        "source.representation_kind",
+        "source.verification_scope",
+        "conclusion.exact_wording_supported",
+        "conclusion.pinpoint_supported"
+      ],
+      "statement": "Identity/version-verified notes support source identity and modelling but not exact quotations or pinpoints.",
+      "machine_checkable": true,
+      "invariant_id": "inv.verified_note_not_exact_wording"
+    },
+    {
+      "rule_id": "int.time.duration",
+      "title": "Typed event duration",
+      "kind": "temporal",
+      "inputs": [
+        "time.duration_days",
+        "time.event_type",
+        "time.event_date"
+      ],
+      "statement": "A calculated duration must remain linked to the typed dated event context from which it was derived.",
+      "machine_checkable": true,
+      "invariant_id": "inv.duration_requires_typed_event"
+    },
+    {
+      "rule_id": "int.frontier.topology",
+      "title": "Frontier-worker topology",
+      "kind": "composition",
+      "inputs": [
+        "movement.frontier_worker_context",
+        "geography.residence_state",
+        "geography.work_state"
+      ],
+      "statement": "Frontier-worker analysis preserves residence and work states as separate legal roles and may require multiple Member-State modules.",
+      "machine_checkable": false,
+      "invariant_id": "inv.frontier_worker_topology_distinct"
+    },
+    {
+      "rule_id": "int.article41.boundary",
+      "title": "Article 41 Member-State boundary",
+      "kind": "semantic_boundary",
+      "inputs": [
+        "authority.level",
+        "legal_principle.id",
+        "legal_principle.application_scope"
+      ],
+      "statement": "Distinguish Charter Article 41 direct addressees from general EU-law rights of defence/good-administration principles applicable to Member-State action.",
+      "machine_checkable": false,
+      "invariant_id": "inv.article41_member_state_boundary"
+    },
+    {
+      "rule_id": "int.softlaw.weight",
+      "title": "Soft-law binding force",
+      "kind": "semantic_boundary",
+      "inputs": [
+        "rule.binding_force",
+        "rule.interpretive_weight",
+        "legal_principle.source_ref"
+      ],
+      "statement": "Non-binding guidance/recommendations may carry interpretive weight without being recoded as binding law.",
+      "machine_checkable": false,
+      "invariant_id": "inv.soft_law_not_binding_by_label"
+    },
+    {
+      "rule_id": "int.completeness.dependency",
+      "title": "Scoped dependency gap",
+      "kind": "completeness",
+      "inputs": [
+        "completeness.status",
+        "completeness.scope",
+        "completeness.dependency_ref"
+      ],
+      "statement": "Missing dependencies create explicit scoped gaps connected to the dependent claim.",
+      "machine_checkable": false,
+      "invariant_id": "inv.completeness_dependency_scoped"
+    },
+    {
+      "rule_id": "int.evidence.epistemic",
+      "title": "Epistemic state separation",
+      "kind": "semantic_boundary",
+      "inputs": [
+        "evidence.epistemic_state",
+        "evidence.assertion_role"
+      ],
+      "statement": "Knowledge/conflict state is recorded independently from substantive proposition value.",
+      "machine_checkable": false,
+      "invariant_id": "inv.epistemic_state_separate_from_value"
+    },
+    {
+      "rule_id": "int.strategy.prerequisites",
+      "title": "Strategy prerequisites",
+      "kind": "dependency",
+      "inputs": [
+        "strategy.prerequisites_state",
+        "strategy.evidentiary_value",
+        "strategy.cost_level",
+        "strategy.systemic_value"
+      ],
+      "statement": "Strategic priority is assessed only after prerequisites, evidentiary value, cost and systemic value remain separately represented.",
+      "machine_checkable": false,
+      "invariant_id": null
+    }
+  ]
+}

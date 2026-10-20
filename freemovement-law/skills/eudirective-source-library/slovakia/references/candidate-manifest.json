@@ -1,0 +1,1215 @@
+{
+  "manifest_version": "0.2.0-candidate",
+  "pack": "slovakia-national-source-candidates",
+  "jurisdiction": "SK",
+  "inventory_research_date": "2026-10-18",
+  "scope": "Bounded discovery of Slovak official legal publication, EU/EEA/Swiss free movement and third-country family residence, visa and mission guidance, administrative procedure and remedies, family-status evidence, privacy, oversight, legal aid and court-search routes. Not a complete national inventory or a legal-equivalence opinion.",
+  "status": "partially_retrieved_review_candidates",
+  "retrieval_status": "31 candidate texts converted; 15 Slov-Lex legal texts plus 15 binding PDFs and 11 linked annex PDFs captured; eight MFA requests returned HTTP 403; the official static archive index was identified but local exact-byte capture remains pending a workspace DNS retry; no source accepted",
+  "accepted_source_count": 0,
+  "candidate_source_count": 40,
+  "official_hosts": [
+    "dataprotection.gov.sk",
+    "n-lex.europa.eu",
+    "static.slov-lex.sk",
+    "vop.gov.sk",
+    "www.justice.gov.sk",
+    "www.minv.sk",
+    "www.mzv.sk",
+    "www.nssud.sk",
+    "www.nsud.sk",
+    "www.slov-lex.sk",
+    "www.snslp.sk",
+    "www.ustavnysud.sk"
+  ],
+  "secondary_hosts": [],
+  "comparison_seed": {
+    "jurisdiction": "Denmark",
+    "source": "Danish EU free-movement residence regulation and official guidance",
+    "relationship_note": "Act 404/2011 is a broad Slovak immigration statute and only a partial functional match. Its general member-state definition includes EU, EEA and Swiss states but §§30 and 51–57 narrow it to EU Member States. No legal equivalence is asserted."
+  },
+  "previous_findings_carried_forward": [
+    "Prior Denmark-to-Sweden/Finland and country-expansion results are leads, not evidence of Slovak coverage or equivalent law.",
+    "Carry Czechia forward as a reminder to prefer stable date-bound official documents when a public API is absent, while verifying publisher reuse terms separately.",
+    "Carry Poland and Hungary forward: API documentation, public access and legal-text reuse rights are distinct questions; inspect exact terms before automated acquisition.",
+    "Search law, operational guidance, forms, visa and mission practice, procedure, file access, remedies, family-status evidence, privacy, oversight, legal aid and courts separately."
+  ],
+  "search_coverage": [
+    {
+      "source_class": "Legal publication, versioning, access and reuse",
+      "search_outcome": "Slov-Lex found as responsible publisher; N-Lex Slovakia connection currently reports unavailable. Ministry reuse conditions found for Gazette issue files; scope for portal consolidated HTML/PDF remains unresolved.",
+      "languages": [
+        "sk",
+        "en"
+      ],
+      "official_channels": [
+        "Slov-Lex",
+        "Ministry of Justice",
+        "N-Lex"
+      ],
+      "query_terms": [
+        "site:slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/ \"404/2011\" časová verzia",
+        "site:justice.gov.sk Slov-Lex opakované použitie Zbierka zákonov § 21h",
+        "site:n-lex.europa.eu Slovakia database connection Slov-Lex"
+      ],
+      "coverage_limit": "No API contract or consolidated-text reuse permission verified; one stable direct PDF route does not prove a general retrieval template."
+    },
+    {
+      "source_class": "Free movement, family members, immigration and civil status",
+      "search_outcome": "Act 404/2011, amendment 128/2026 and related laws found; Interior Ministry dated FAQ inspected.",
+      "languages": [
+        "sk"
+      ],
+      "official_channels": [
+        "Slov-Lex",
+        "Ministry of Interior"
+      ],
+      "query_terms": [
+        "site:slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2011/404/20261001",
+        "site:minv.sk občan Únie registrácia pobytu rodinný príslušník FAQ"
+      ],
+      "coverage_limit": "No complete implementation-rule, form or local-office inventory."
+    },
+    {
+      "source_class": "Visa rules, forms, MFA guidance and missions",
+      "search_outcome": "Central MFA visa and supporting-document pages, mission directory, form and selected Hanoi/Minsk mission examples found.",
+      "languages": [
+        "sk",
+        "en"
+      ],
+      "official_channels": [
+        "Ministry of Foreign Affairs",
+        "Slovak missions"
+      ],
+      "query_terms": [
+        "site:mzv.sk rodinní príslušníci občanov Únie víza Slovensko",
+        "site:mzv.sk sprievodné doklady schengenské vízum rodinní príslušníci",
+        "site:mzv.sk zastupiteľské úrady na mape"
+      ],
+      "coverage_limit": "Mission requirements and representation are location-dependent and dynamic; no full mission-by-mission search."
+    },
+    {
+      "source_class": "Procedure, remedies, privacy, oversight and courts",
+      "search_outcome": "General procedure statutes, Ombudsman, DPA, SNSLP and court-search routes identified.",
+      "languages": [
+        "sk",
+        "en"
+      ],
+      "official_channels": [
+        "Slov-Lex",
+        "Public Defender",
+        "Data Protection Authority",
+        "SNSLP",
+        "NSS",
+        "Supreme Court",
+        "Constitutional Court"
+      ],
+      "query_terms": [
+        "site:slov-lex.sk \"71/1967\" správnom konaní",
+        "site:vop.gov.sk podnet lehoty opravné prostriedky",
+        "site:dataprotection.gov.sk podávanie návrhu začatie konania",
+        "site:nssud.sk rozhodovacia činnosť vyhľadávanie rozhodnutí"
+      ],
+      "coverage_limit": "No exhaustive court, regional, oversight or lower-court inventory; no-result cannot show absence."
+    }
+  ],
+  "documents": [
+    {
+      "id": "sk_01",
+      "title": "Slov-Lex archive and monthly changes index",
+      "source_type": "legal_publisher_or_discovery_documentation",
+      "language": "sk",
+      "url": "https://www.slov-lex.sk/ezbierky/archiv-zbierky-zakonov",
+      "publisher_identifier": {
+        "system": "www.slov-lex.sk",
+        "record": "archive-and-monthly-changes"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "official_source_inspected",
+      "retrieval_status": "discovery_surface_not_captured",
+      "retrieval_shape": "official HTML page or electronic form",
+      "version_evidence": "The official dynamic archive page links to the public static chronological register, which lists archive years 1918–2026. The static register rendered in browser research on 2026-10-19; a local exact-byte capture is pending because direct DNS resolution failed.",
+      "note": "Official Slov-Lex archive index describing full historical exports and monthly change packages.",
+      "topic_ids": [
+        "legal_publisher_or_discovery_documentation"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_url": "https://static.slov-lex.sk/static/SK/ZZ/",
+      "retrieval_note": "Official dynamic page is a JavaScript shell with a link to the static chronological register. Direct local HTTPS capture of the static page failed with temporary workspace DNS resolution failure; not a publisher HTTP failure."
+    },
+    {
+      "id": "sk_02",
+      "title": "Act 404/2011 on Residence of Foreigners",
+      "source_type": "immigration_and_free_movement_legislation",
+      "language": "sk",
+      "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2011/404/20261001",
+      "publisher_identifier": {
+        "system": "www.slov-lex.sk",
+        "record": "SK-02"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "official_source_inspected",
+      "retrieval_status": "date_bound_text_and_binding_pdf_captured",
+      "retrieval_shape": "date-bound official PDF and versioned HTML record",
+      "version_evidence": "See dated verification and limitations in references/source-list.md; no monitoring state saved.",
+      "note": "Act 404/2011 on Residence of Foreigners — residence, entry and EU-family law; partial functional match",
+      "topic_ids": [
+        "immigration_and_free_movement_legislation"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "d7d9e6191bf0f7f17599013c64ab9b3e64efad421880e1a764e1279212de466b",
+      "source_bytes": 1882886,
+      "resolved_url": "https://static.slov-lex.sk/static/SK/ZZ/2011/404/20261001.print.html",
+      "retrieval_note": "HTTPError: HTTP Error 404: Not Found",
+      "candidate_text_path": "source-library/slovakia/candidates/sk-02.md",
+      "candidate_source_path": "temp/slovakia/pdf/sk-02-2f153a7e99e8f443336972ba7f0b98ab6ae94e4b1574a3a0b0bdb70b8ce81756.pdf",
+      "converted_sha256": "46cdcf3ecc83293365854438e746b10d299b7294849669e5505e8156b9c1fd3f",
+      "captured_effective_date": "20261001"
+    },
+    {
+      "id": "sk_03",
+      "title": "Act 128/2026",
+      "source_type": "national_legislation",
+      "language": "sk",
+      "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2026/128/20261001",
+      "publisher_identifier": {
+        "system": "www.slov-lex.sk",
+        "record": "SK-03"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "official_source_inspected",
+      "retrieval_status": "date_bound_text_and_binding_pdf_captured",
+      "retrieval_shape": "date-bound or current-version official HTML/PDF record",
+      "version_evidence": "See dated verification and limitations in references/source-list.md; no monitoring state saved.",
+      "note": "Act 128/2026 — amendment to Act 404/2011; related source",
+      "topic_ids": [
+        "national_legislation"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "3d930cf446fcb5acde661eb22df65d0a22b06bec0be2ff65c42751f0ee69e681",
+      "source_bytes": 185086,
+      "resolved_url": "https://static.slov-lex.sk/static/SK/ZZ/2026/128/20261001.print.html",
+      "retrieval_note": "HTTPError: HTTP Error 404: Not Found",
+      "candidate_text_path": "source-library/slovakia/candidates/sk-03.md",
+      "candidate_source_path": "temp/slovakia/pdf/sk-03-245dc1875163f6861df3fcd482e32cd3639c97346fabe7b419bba46dc7cffc17.pdf",
+      "converted_sha256": "a6b7f97ea505fa5727c5b92d1cadc9f77aa6444165270beb06f155cb9796f873",
+      "captured_effective_date": "20261001"
+    },
+    {
+      "id": "sk_04",
+      "title": "Act 71/1967, Administrative Procedure Act",
+      "source_type": "national_legislation",
+      "language": "sk",
+      "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1967/71/",
+      "publisher_identifier": {
+        "system": "www.slov-lex.sk",
+        "record": "SK-04"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "official_source_inspected",
+      "retrieval_status": "date_bound_text_and_binding_pdf_captured",
+      "retrieval_shape": "date-bound or current-version official HTML/PDF record",
+      "version_evidence": "See dated verification and limitations in references/source-list.md; no monitoring state saved.",
+      "note": "Act 71/1967, Administrative Procedure Act — administrative procedure; related source",
+      "topic_ids": [
+        "national_legislation"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "080f973b6d939a03a79dfdaa36629776737d4083c337217241f7aa19bfbd17d9",
+      "source_bytes": 248758,
+      "resolved_url": "https://static.slov-lex.sk/static/SK/ZZ/1967/71/20180901.print.html",
+      "retrieval_note": "ValueError: printed text does not contain the candidate act identifier",
+      "candidate_text_path": "source-library/slovakia/candidates/sk-04.md",
+      "candidate_source_path": "temp/slovakia/pdf/sk-04-39192cf3b53dbf90d859a1d08412054e8667de5e50366ee87eb933e2fbaec674.pdf",
+      "converted_sha256": "e4cab4068ad97b4dcc4bc3d9e4b34ff7a08182b2a9059c7209a5dd1e442167f2",
+      "captured_effective_date": "20180901"
+    },
+    {
+      "id": "sk_05",
+      "title": "Act 162/2015, Administrative Judicial Procedure Code",
+      "source_type": "national_legislation",
+      "language": "sk",
+      "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2015/162/20260612",
+      "publisher_identifier": {
+        "system": "www.slov-lex.sk",
+        "record": "SK-05"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "official_source_inspected",
+      "retrieval_status": "date_bound_text_and_binding_pdf_captured",
+      "retrieval_shape": "date-bound or current-version official HTML/PDF record",
+      "version_evidence": "See dated verification and limitations in references/source-list.md; no monitoring state saved.",
+      "note": "Act 162/2015, Administrative Judicial Procedure Code — administrative court review; related source",
+      "topic_ids": [
+        "national_legislation"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "85398af437ec3be90c23b16ed6aacc2462307d39b8d398ebfd57059cf4c87c06",
+      "source_bytes": 1335252,
+      "resolved_url": "https://static.slov-lex.sk/static/SK/ZZ/2015/162/20260612.print.html",
+      "retrieval_note": "HTTPError: HTTP Error 404: Not Found",
+      "candidate_text_path": "source-library/slovakia/candidates/sk-05.md",
+      "candidate_source_path": "temp/slovakia/pdf/sk-05-41bfbd6922dc0e6f2c563d74a8121927f08ec4a84bfb3007e75a867aeac06feb.pdf",
+      "converted_sha256": "5affa952a1170d31ae8729ed4bf664caf7dec3b5a19bd3cf908e9a96c0a2010e",
+      "captured_effective_date": "20260612"
+    },
+    {
+      "id": "sk_06",
+      "title": "Act 211/2000, Freedom of Information Act",
+      "source_type": "national_legislation",
+      "language": "sk",
+      "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2000/211/",
+      "publisher_identifier": {
+        "system": "www.slov-lex.sk",
+        "record": "SK-06"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "official_source_inspected",
+      "retrieval_status": "date_bound_text_and_binding_pdf_captured",
+      "retrieval_shape": "date-bound or current-version official HTML/PDF record",
+      "version_evidence": "See dated verification and limitations in references/source-list.md; no monitoring state saved.",
+      "note": "Act 211/2000, Freedom of Information Act — public information and reuse; related source",
+      "topic_ids": [
+        "national_legislation"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "cc22cf6d0ad1924f75095b559127104b1e24980ac72e352aadeb5124f419815b",
+      "source_bytes": 416784,
+      "resolved_url": "https://static.slov-lex.sk/static/SK/ZZ/2000/211/20260204.print.html",
+      "retrieval_note": "HTTPError: HTTP Error 404: Not Found",
+      "candidate_text_path": "source-library/slovakia/candidates/sk-06.md",
+      "candidate_source_path": "temp/slovakia/pdf/sk-06-b834afaeca3608dbd2be7a6f300cff729a2c8f57f23374b1bacf05f12ccafe03.pdf",
+      "converted_sha256": "a984af45e06d4f05e1619da4b1fe48d0d60d66567241cec451a4812d5fe4c824",
+      "captured_effective_date": "20260204"
+    },
+    {
+      "id": "sk_07",
+      "title": "Act 9/2010 on Complaints",
+      "source_type": "national_legislation",
+      "language": "sk",
+      "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2010/9/",
+      "publisher_identifier": {
+        "system": "www.slov-lex.sk",
+        "record": "SK-07"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "official_source_inspected",
+      "retrieval_status": "date_bound_text_and_binding_pdf_captured",
+      "retrieval_shape": "date-bound or current-version official HTML/PDF record",
+      "version_evidence": "See dated verification and limitations in references/source-list.md; no monitoring state saved.",
+      "note": "Act 9/2010 on Complaints — complaints; related source",
+      "topic_ids": [
+        "national_legislation"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "aea84379962a23c33c73b53af84e1ef75eef12f612bfa128ceda7eb93b9ab07f",
+      "source_bytes": 150166,
+      "resolved_url": "https://static.slov-lex.sk/static/SK/ZZ/2010/9/20190201.print.html",
+      "retrieval_note": "HTTPError: HTTP Error 404: Not Found",
+      "candidate_text_path": "source-library/slovakia/candidates/sk-07.md",
+      "candidate_source_path": "temp/slovakia/pdf/sk-07-45bd748ef31b60d58d3cc53ddb366a892cf16b2f4e57e48db2da81d6f70a7f96.pdf",
+      "converted_sha256": "4da8ef516144a8a1ec6df5586acb68ede6f85b3b37731ad207936ae1285aa1ba",
+      "captured_effective_date": "20190201"
+    },
+    {
+      "id": "sk_08",
+      "title": "Act 85/1990 on the Right to Petition",
+      "source_type": "national_legislation",
+      "language": "sk",
+      "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1990/85/20230501",
+      "publisher_identifier": {
+        "system": "www.slov-lex.sk",
+        "record": "SK-08"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "official_source_inspected",
+      "retrieval_status": "date_bound_text_and_binding_pdf_captured",
+      "retrieval_shape": "date-bound or current-version official HTML/PDF record",
+      "version_evidence": "See dated verification and limitations in references/source-list.md; no monitoring state saved.",
+      "note": "Act 85/1990 on the Right to Petition — petitions; related source",
+      "topic_ids": [
+        "national_legislation"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "b617d4790b5c350834fd4a2bfc7582642235cdc5bd28c8ce8a44f2ff7b9f27b2",
+      "source_bytes": 90208,
+      "resolved_url": "https://static.slov-lex.sk/static/SK/ZZ/1990/85/20230501.print.html",
+      "retrieval_note": "ValueError: printed text does not contain the candidate act identifier",
+      "candidate_text_path": "source-library/slovakia/candidates/sk-08.md",
+      "candidate_source_path": "temp/slovakia/pdf/sk-08-04175828f92384cef334a44fc83750d40d8790050325a19000d6bf164e8123ed.pdf",
+      "converted_sha256": "6be11ed5d15ddc6e42812afad36c04ff6307f21eaec5811d9f609e660b37d3d8",
+      "captured_effective_date": "20230501"
+    },
+    {
+      "id": "sk_09",
+      "title": "Act 18/2018 on Personal Data Protection",
+      "source_type": "national_legislation",
+      "language": "sk",
+      "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2018/18/",
+      "publisher_identifier": {
+        "system": "www.slov-lex.sk",
+        "record": "SK-09"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "official_source_inspected",
+      "retrieval_status": "date_bound_text_and_binding_pdf_captured",
+      "retrieval_shape": "date-bound or current-version official HTML/PDF record",
+      "version_evidence": "See dated verification and limitations in references/source-list.md; no monitoring state saved.",
+      "note": "Act 18/2018 on Personal Data Protection — privacy; related source",
+      "topic_ids": [
+        "national_legislation"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "5f9b5b4f474e2cbc043b81187c5d8480daea1e5b9557d50d7fcd4e0072000331",
+      "source_bytes": 1048583,
+      "resolved_url": "https://static.slov-lex.sk/static/SK/ZZ/2018/18/20260818.print.html",
+      "retrieval_note": "HTTPError: HTTP Error 404: Not Found",
+      "candidate_text_path": "source-library/slovakia/candidates/sk-09.md",
+      "candidate_source_path": "temp/slovakia/pdf/sk-09-cfdd6a7e4ecab7497871eb9475e850ad76f584b3b7a5d7ac98820556d52583bb.pdf",
+      "converted_sha256": "d0cb9696b8d87a94dc015ff0f3fe5bc860f1396b24c4b33212f616759404e0e1",
+      "captured_effective_date": "20260818"
+    },
+    {
+      "id": "sk_10",
+      "title": "Act 564/2001 on the Public Defender of Rights",
+      "source_type": "national_legislation",
+      "language": "sk",
+      "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2001/564/20260612",
+      "publisher_identifier": {
+        "system": "www.slov-lex.sk",
+        "record": "SK-10"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "official_source_inspected",
+      "retrieval_status": "date_bound_text_and_binding_pdf_captured",
+      "retrieval_shape": "date-bound or current-version official HTML/PDF record",
+      "version_evidence": "See dated verification and limitations in references/source-list.md; no monitoring state saved.",
+      "note": "Act 564/2001 on the Public Defender of Rights — ombudsman mandate; related source",
+      "topic_ids": [
+        "national_legislation"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "6c60c4490244db3bb880adadcb324ebdfed18cbf1c22454c98b7d79136f0552d",
+      "source_bytes": 419210,
+      "resolved_url": "https://static.slov-lex.sk/static/SK/ZZ/2001/564/20260612.print.html",
+      "retrieval_note": "HTTPError: HTTP Error 404: Not Found",
+      "candidate_text_path": "source-library/slovakia/candidates/sk-10.md",
+      "candidate_source_path": "temp/slovakia/pdf/sk-10-ff4ef72bb1a993626040efbe1e3c8e6b641612c8b4b4480b4ea9de2af9cbb8b7.pdf",
+      "converted_sha256": "d7a146c257914fc206da0f0d37bf1d818b946408bf9932665630ea80b4f1f9fe",
+      "captured_effective_date": "20260612"
+    },
+    {
+      "id": "sk_11",
+      "title": "Act 327/2005 on Legal Aid",
+      "source_type": "national_legislation",
+      "language": "sk",
+      "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2005/327/",
+      "publisher_identifier": {
+        "system": "www.slov-lex.sk",
+        "record": "SK-11"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "official_source_inspected",
+      "retrieval_status": "date_bound_text_and_binding_pdf_captured",
+      "retrieval_shape": "date-bound or current-version official HTML/PDF record",
+      "version_evidence": "See dated verification and limitations in references/source-list.md; no monitoring state saved.",
+      "note": "Act 327/2005 on Legal Aid — legal aid; related source",
+      "topic_ids": [
+        "national_legislation"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "7381812b4ab705b05d7ed7c9e33958f82ded6ea87f98d36dcaeafc933a7117b0",
+      "source_bytes": 395080,
+      "resolved_url": "https://static.slov-lex.sk/static/SK/ZZ/2005/327/20260612.print.html",
+      "retrieval_note": "HTTPError: HTTP Error 404: Not Found",
+      "candidate_text_path": "source-library/slovakia/candidates/sk-11.md",
+      "candidate_source_path": "temp/slovakia/pdf/sk-11-96c6be89bb2d3e38f59fa373fb0895a15c14d5e204cc4a837fbf38b4ec8ce31c.pdf",
+      "converted_sha256": "8c5a682f92ab56e1fbc1ab573f7ba477a20e33c73ab0cd938cc7221c9edc65fe",
+      "captured_effective_date": "20260612"
+    },
+    {
+      "id": "sk_12",
+      "title": "Act 365/2004, Equal Treatment Act",
+      "source_type": "national_legislation",
+      "language": "sk",
+      "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2004/365/20250701",
+      "publisher_identifier": {
+        "system": "www.slov-lex.sk",
+        "record": "SK-12"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "official_source_inspected",
+      "retrieval_status": "date_bound_text_and_binding_pdf_captured",
+      "retrieval_shape": "date-bound or current-version official HTML/PDF record",
+      "version_evidence": "See dated verification and limitations in references/source-list.md; no monitoring state saved.",
+      "note": "Act 365/2004, Equal Treatment Act — discrimination remedies; related source",
+      "topic_ids": [
+        "national_legislation"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "941d0f9abdb1e7872ecc4a25d21ff69e4af296f20159ed3990a383aa9b045d29",
+      "source_bytes": 203292,
+      "resolved_url": "https://static.slov-lex.sk/static/SK/ZZ/2004/365/20250701.print.html",
+      "retrieval_note": "HTTPError: HTTP Error 404: Not Found",
+      "candidate_text_path": "source-library/slovakia/candidates/sk-12.md",
+      "candidate_source_path": "temp/slovakia/pdf/sk-12-5c5bf7c7f0859ba5ef66d8bf73fe8f6eb858aecd1a7b4c16091cdc0c2eec314c.pdf",
+      "converted_sha256": "1192e021615160f0ae09908cebc07a4a670c3c36ee98ab8e88272bf79adf1a25",
+      "captured_effective_date": "20250701"
+    },
+    {
+      "id": "sk_13",
+      "title": "Act 154/1994 on Registry Offices",
+      "source_type": "national_legislation",
+      "language": "sk",
+      "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1994/154/",
+      "publisher_identifier": {
+        "system": "www.slov-lex.sk",
+        "record": "SK-13"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "official_source_inspected",
+      "retrieval_status": "date_bound_text_and_binding_pdf_captured",
+      "retrieval_shape": "date-bound or current-version official HTML/PDF record",
+      "version_evidence": "See dated verification and limitations in references/source-list.md; no monitoring state saved.",
+      "note": "Act 154/1994 on Registry Offices — civil-status evidence; related source",
+      "topic_ids": [
+        "national_legislation"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "252896dd3331b1e2922668da3fdce31ad04adf3e21adf78115ebacb54fd8f086",
+      "source_bytes": 318178,
+      "resolved_url": "https://static.slov-lex.sk/static/SK/ZZ/1994/154/20260801.print.html",
+      "retrieval_note": "HTTPError: HTTP Error 404: Not Found",
+      "candidate_text_path": "source-library/slovakia/candidates/sk-13.md",
+      "candidate_source_path": "temp/slovakia/pdf/sk-13-dd2c8784e6b2a1dd3bfac71ccb7c43047454ad7934632e44a9faa56990525913.pdf",
+      "converted_sha256": "b18124f3015db716377db542272a739902d53086a8ee2bcbd9ec26098b82785a",
+      "captured_effective_date": "20260801"
+    },
+    {
+      "id": "sk_14",
+      "title": "Act 36/2005 on the Family",
+      "source_type": "national_legislation",
+      "language": "sk",
+      "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2005/36/20260901",
+      "publisher_identifier": {
+        "system": "www.slov-lex.sk",
+        "record": "SK-14"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "official_source_inspected",
+      "retrieval_status": "date_bound_text_and_binding_pdf_captured",
+      "retrieval_shape": "date-bound or current-version official HTML/PDF record",
+      "version_evidence": "See dated verification and limitations in references/source-list.md; no monitoring state saved.",
+      "note": "Act 36/2005 on the Family — family status; related source",
+      "topic_ids": [
+        "national_legislation"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "a718ee856c3adc68b740ef1f3c0cc6aa34bf7fb45ef594dd6c00973b8bca4d15",
+      "source_bytes": 506373,
+      "resolved_url": "https://static.slov-lex.sk/static/SK/ZZ/2005/36/20260901.print.html",
+      "retrieval_note": "HTTPError: HTTP Error 404: Not Found",
+      "candidate_text_path": "source-library/slovakia/candidates/sk-14.md",
+      "candidate_source_path": "temp/slovakia/pdf/sk-14-9dfaeca19f554909561c50ffdb3cc996e45cc504d914e717909dbc4a768fc73a.pdf",
+      "converted_sha256": "ff40fcc11eebcb6d51f78d3a4095c754c5b5a5b525160bad86139d57496d04ea",
+      "captured_effective_date": "20260901"
+    },
+    {
+      "id": "sk_15",
+      "title": "Act 145/1995 on Administrative Fees",
+      "source_type": "national_legislation",
+      "language": "sk",
+      "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1995/145/",
+      "publisher_identifier": {
+        "system": "www.slov-lex.sk",
+        "record": "SK-15"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "official_source_inspected",
+      "retrieval_status": "date_bound_text_and_binding_pdf_captured",
+      "retrieval_shape": "date-bound or current-version official HTML/PDF record",
+      "version_evidence": "See dated verification and limitations in references/source-list.md; no monitoring state saved.",
+      "note": "Act 145/1995 on Administrative Fees — fee schedule; related source",
+      "topic_ids": [
+        "national_legislation"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "d9ce16be121443d1172a845374ae000c0ade872a94a2e760e61c108198fd07c2",
+      "source_bytes": 2141851,
+      "resolved_url": "https://static.slov-lex.sk/static/SK/ZZ/1995/145/20260901.print.html",
+      "retrieval_note": "HTTPError: HTTP Error 404: Not Found",
+      "candidate_text_path": "source-library/slovakia/candidates/sk-15.md",
+      "candidate_source_path": "temp/slovakia/pdf/sk-15-605da71b16c05306cfb7e38d9720863a0a2d2f04afa2c6eacdc38e55b0e334dd.pdf",
+      "converted_sha256": "4cdbe18c0c254b6fefa165891c424e1657757027b61578b41761a39603fc98dd",
+      "captured_effective_date": "20260901"
+    },
+    {
+      "id": "sk_16",
+      "title": "Act 69/2026 on International Protection",
+      "source_type": "national_legislation",
+      "language": "sk",
+      "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2026/69/20260612",
+      "publisher_identifier": {
+        "system": "www.slov-lex.sk",
+        "record": "SK-16"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "official_source_inspected",
+      "retrieval_status": "date_bound_text_and_binding_pdf_captured",
+      "retrieval_shape": "date-bound or current-version official HTML/PDF record",
+      "version_evidence": "See dated verification and limitations in references/source-list.md; no monitoring state saved.",
+      "note": "Act 69/2026 on International Protection — adjacent protection procedure; related source",
+      "topic_ids": [
+        "national_legislation"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "f9de90249ef240aba2f3db8b44721114f260d0a8e08b3bfd5b51e30994e9f309",
+      "source_bytes": 865788,
+      "resolved_url": "https://static.slov-lex.sk/static/SK/ZZ/2026/69/20260612.print.html",
+      "retrieval_note": "HTTPError: HTTP Error 404: Not Found",
+      "candidate_text_path": "source-library/slovakia/candidates/sk-16.md",
+      "candidate_source_path": "temp/slovakia/pdf/sk-16-279fffe00e3e7274b83c6a28f5f3732db39fd5ba5a342b71e30f30ada18c9e18.pdf",
+      "converted_sha256": "ab06f95613967dc44b737d69f0485ae0e24de1feb5ee530def863738306aa43c",
+      "captured_effective_date": "20260612"
+    },
+    {
+      "id": "sk_17",
+      "title": "Ministry of Justice legal-source page",
+      "source_type": "legal_publisher_or_discovery_documentation",
+      "language": "sk",
+      "url": "https://www.justice.gov.sk/pravne-predpisy/",
+      "publisher_identifier": {
+        "system": "www.justice.gov.sk",
+        "record": "SK-17"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "official_source_inspected",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "official HTML page",
+      "version_evidence": "See dated verification and limitations in references/source-list.md; no monitoring state saved.",
+      "note": "Ministry of Justice legal-source page — publisher description; related source",
+      "topic_ids": [
+        "legal_publisher_or_discovery_documentation"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/slovakia/candidates/sk-17.md",
+      "source_sha256": "9d2abdb965404bf46e7f53993dad8c4d23c8f553b07994f4f6d70d93148fcafa",
+      "converted_sha256": "cb3d0603ecc7c9d8052cc9f7683aeb110d660ec5dd8b9c59ed02c224e7779aa1",
+      "source_bytes": 149830,
+      "resolved_url": "https://www.justice.gov.sk/pravne-predpisy/"
+    },
+    {
+      "id": "sk_18",
+      "title": "Ministry of Justice reuse conditions",
+      "source_type": "legal_publisher_or_discovery_documentation",
+      "language": "sk",
+      "url": "https://www.justice.gov.sk/sluzby/opakovane-pouzitie-informacii/",
+      "publisher_identifier": {
+        "system": "www.justice.gov.sk",
+        "record": "SK-18"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "official_source_inspected",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "official HTML page",
+      "version_evidence": "See dated verification and limitations in references/source-list.md; no monitoring state saved.",
+      "note": "Ministry of Justice reuse conditions — legal-text reuse; related source",
+      "topic_ids": [
+        "legal_publisher_or_discovery_documentation"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/slovakia/candidates/sk-18.md",
+      "source_sha256": "8fe6030fb39f0e53e4099c95ca3dca9b7d7dad0c15938578aa8dba77d4e4a04c",
+      "converted_sha256": "a152dabdb21076cb75b8ba87150910aa398e801733fbcf5060f8904dd18931ce",
+      "source_bytes": 150873,
+      "resolved_url": "https://www.justice.gov.sk/sluzby/opakovane-pouzitie-informacii/"
+    },
+    {
+      "id": "sk_19",
+      "title": "Ministry notice on Slov-Lex modernization",
+      "source_type": "legal_publisher_or_discovery_documentation",
+      "language": "sk",
+      "url": "https://www.justice.gov.sk/aktualne-temy/ministerstvo-spravodlivosti-sr-pripravuje-inovaciu-informacneho-systemu-slov-lex/",
+      "publisher_identifier": {
+        "system": "www.justice.gov.sk",
+        "record": "SK-19"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "official_source_inspected",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "official HTML page",
+      "version_evidence": "See dated verification and limitations in references/source-list.md; no monitoring state saved.",
+      "note": "Ministry notice on Slov-Lex modernization — change-risk lead; related source",
+      "topic_ids": [
+        "legal_publisher_or_discovery_documentation"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/slovakia/candidates/sk-19.md",
+      "source_sha256": "a4096556f1778eca7db58f3624d6a2b70c72787be67bcb1b138066fd9d242f3e",
+      "converted_sha256": "5df3366220db4d59692d61b3431e00a47b64225f03e2cfed72857f1b1ba3e68f",
+      "source_bytes": 170132,
+      "resolved_url": "https://www.justice.gov.sk/aktualne-temy/ministerstvo-spravodlivosti-sr-pripravuje-inovaciu-informacneho-systemu-slov-lex/"
+    },
+    {
+      "id": "sk_20",
+      "title": "N-Lex Slovakia country/search route",
+      "source_type": "legal_publisher_or_discovery_documentation",
+      "language": "sk",
+      "url": "https://n-lex.europa.eu/n-lex/info/info-sk/index?lang=sk",
+      "publisher_identifier": {
+        "system": "n-lex.europa.eu",
+        "record": "SK-20"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "official_search_result_only",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "official HTML page",
+      "version_evidence": "See dated verification and limitations in references/source-list.md; no monitoring state saved.",
+      "note": "N-Lex Slovakia country/search route — discovery index; related source",
+      "topic_ids": [
+        "legal_publisher_or_discovery_documentation"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/slovakia/candidates/sk-20.md",
+      "source_sha256": "b769c37c3a8da8ce17d680a4306b012a63a57aef19eaeb4f14f0380468308d25",
+      "converted_sha256": "d6533634c06c0e0de1bc2c430700717df57114b327d36da2c8d7733ba56b1e26",
+      "source_bytes": 30066,
+      "resolved_url": "https://n-lex.europa.eu/n-lex/info/info-sk/index?lang=sk"
+    },
+    {
+      "id": "sk_21",
+      "title": "Ministry of Interior EU-citizen registration FAQ, March 2025",
+      "source_type": "interior_ministry_guidance_or_operational_notice",
+      "language": "sk",
+      "url": "https://www.minv.sk/swift_data/source/policia/hranicna_a_cudzinecka_policia/ocp/faq/marec_2025/08_otazka.pdf",
+      "publisher_identifier": {
+        "system": "www.minv.sk",
+        "record": "SK-21"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "official_source_inspected",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "dated PDF or mutable official HTML page",
+      "version_evidence": "See dated verification and limitations in references/source-list.md; no monitoring state saved.",
+      "note": "Ministry of Interior EU-citizen registration FAQ, March 2025 — operational guidance; partial functional match",
+      "topic_ids": [
+        "interior_ministry_guidance_or_operational_notice"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/slovakia/candidates/sk-21.md",
+      "candidate_source_path": "temp/slovakia/pdf/sk-21-492588fdc065fa5edd11fee51d0095444d89a37e6d4f65678246db3b2c84e060.pdf",
+      "source_sha256": "492588fdc065fa5edd11fee51d0095444d89a37e6d4f65678246db3b2c84e060",
+      "converted_sha256": "968cdb64522f197aa2373ba48eab995c56e3066468d776fcf11cd65e6edba6cf",
+      "source_bytes": 228416,
+      "resolved_url": "https://www.minv.sk/swift_data/source/policia/hranicna_a_cudzinecka_policia/ocp/faq/marec_2025/08_otazka.pdf"
+    },
+    {
+      "id": "sk_22",
+      "title": "Ministry of Interior EU-citizen registration FAQ, July 2024",
+      "source_type": "interior_ministry_guidance_or_operational_notice",
+      "language": "sk",
+      "url": "https://www.minv.sk/swift_data/source/policia/hranicna_a_cudzinecka_policia/ocp/faq/jul_2024/08_otazka.pdf",
+      "publisher_identifier": {
+        "system": "www.minv.sk",
+        "record": "SK-22"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "official_search_result_only",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "dated PDF or mutable official HTML page",
+      "version_evidence": "See dated verification and limitations in references/source-list.md; no monitoring state saved.",
+      "note": "Ministry of Interior EU-citizen registration FAQ, July 2024 — older FAQ edition; related source",
+      "topic_ids": [
+        "interior_ministry_guidance_or_operational_notice"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/slovakia/candidates/sk-22.md",
+      "candidate_source_path": "temp/slovakia/pdf/sk-22-b760e62bc297e83fe0f13de68c3a30e6e56745b6d102cbd28762e35d19944940.pdf",
+      "source_sha256": "b760e62bc297e83fe0f13de68c3a30e6e56745b6d102cbd28762e35d19944940",
+      "converted_sha256": "a0c6d47ef19a290c039ae17b3f8afa297fbe2f0385ba0d7787c5a6ae428e336e",
+      "source_bytes": 196442,
+      "resolved_url": "https://www.minv.sk/swift_data/source/policia/hranicna_a_cudzinecka_policia/ocp/faq/jul_2024/08_otazka.pdf"
+    },
+    {
+      "id": "sk_23",
+      "title": "Foreign Police contact directory",
+      "source_type": "interior_ministry_guidance_or_operational_notice",
+      "language": "sk",
+      "url": "https://www.minv.sk/?kontakty-hranicnej-a-cudzineckej-policie",
+      "publisher_identifier": {
+        "system": "www.minv.sk",
+        "record": "SK-23"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "official_source_inspected",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "dated PDF or mutable official HTML page",
+      "version_evidence": "See dated verification and limitations in references/source-list.md; no monitoring state saved.",
+      "note": "Foreign Police contact directory — local competent offices; related source",
+      "topic_ids": [
+        "interior_ministry_guidance_or_operational_notice"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/slovakia/candidates/sk-23.md",
+      "source_sha256": "6b9cd64ca9b6fedee797e1ef80b17cc2278215f94dd0d92fe4dc7952898e356b",
+      "converted_sha256": "a69980d0da9a100f4ba5bc87236f9341359ef5043c43135775af77ebbe8028f7",
+      "source_bytes": 119280,
+      "resolved_url": "https://www.minv.sk/?kontakty-hranicnej-a-cudzineckej-policie"
+    },
+    {
+      "id": "sk_24",
+      "title": "MFA Schengen visa guidance",
+      "source_type": "foreign_ministry_guidance_or_directory",
+      "language": "sk",
+      "url": "https://www.mzv.sk/sk/sluzby/viza-a-pobyt-na-slovensku/schengenske-vizum",
+      "publisher_identifier": {
+        "system": "www.mzv.sk",
+        "record": "SK-24"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "official_source_inspected",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_shape": "official HTML page or interactive directory",
+      "version_evidence": "See dated verification and limitations in references/source-list.md; no monitoring state saved.",
+      "note": "MFA Schengen visa guidance — visa application and family-member procedure; partial functional match",
+      "topic_ids": [
+        "foreign_ministry_guidance_or_directory"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "sk_25",
+      "title": "MFA supporting documents",
+      "source_type": "foreign_ministry_guidance_or_directory",
+      "language": "sk",
+      "url": "https://www.mzv.sk/sk/sluzby/viza-a-pobyt-na-slovensku/schengenske-vizum/sprievodne-doklady",
+      "publisher_identifier": {
+        "system": "www.mzv.sk",
+        "record": "SK-25"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "official_source_inspected",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_shape": "official HTML page or interactive directory",
+      "version_evidence": "See dated verification and limitations in references/source-list.md; no monitoring state saved.",
+      "note": "MFA supporting documents — visa evidence; related source",
+      "topic_ids": [
+        "foreign_ministry_guidance_or_directory"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "sk_26",
+      "title": "MFA English EU-family page",
+      "source_type": "foreign_ministry_guidance_or_directory",
+      "language": "en",
+      "url": "https://www.mzv.sk/web/en/visa-and-services/visa-information/eu-family-members",
+      "publisher_identifier": {
+        "system": "www.mzv.sk",
+        "record": "SK-26"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "official_source_inspected",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_shape": "official HTML page or interactive directory",
+      "version_evidence": "See dated verification and limitations in references/source-list.md; no monitoring state saved.",
+      "note": "MFA English EU-family page — EU-family visa guidance; related source",
+      "topic_ids": [
+        "foreign_ministry_guidance_or_directory"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "sk_27",
+      "title": "MFA stay-in-Slovakia guidance",
+      "source_type": "foreign_ministry_guidance_or_directory",
+      "language": "sk",
+      "url": "https://www.mzv.sk/sk/sluzby/viza-a-pobyt-na-slovensku/pobyt-na-slovensku",
+      "publisher_identifier": {
+        "system": "www.mzv.sk",
+        "record": "SK-27"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "official_source_inspected",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_shape": "official HTML page or interactive directory",
+      "version_evidence": "See dated verification and limitations in references/source-list.md; no monitoring state saved.",
+      "note": "MFA stay-in-Slovakia guidance — residence guidance; related source",
+      "topic_ids": [
+        "foreign_ministry_guidance_or_directory"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "sk_28",
+      "title": "MFA mission directory map",
+      "source_type": "foreign_ministry_guidance_or_directory",
+      "language": "sk",
+      "url": "https://www.mzv.sk/staty/zastupitelske-urady-na-mape",
+      "publisher_identifier": {
+        "system": "www.mzv.sk",
+        "record": "SK-28"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "official_source_inspected",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_shape": "official HTML page or interactive directory",
+      "version_evidence": "See dated verification and limitations in references/source-list.md; no monitoring state saved.",
+      "note": "MFA mission directory map — consular responsibility; related source",
+      "topic_ids": [
+        "foreign_ministry_guidance_or_directory"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "sk_29",
+      "title": "MFA harmonized Schengen application form",
+      "source_type": "visa_form_or_mission_guidance",
+      "language": "sk",
+      "url": "https://www.mzv.sk/documents/10182/16274933/001-ziadost-o-schengenske-vizum-SK.pdf/6de2a6dd-895e-6521-bddc-08ad72123efc",
+      "publisher_identifier": {
+        "system": "www.mzv.sk",
+        "record": "SK-29"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "official_source_inspected",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_shape": "official PDF or mission-specific HTML",
+      "version_evidence": "See dated verification and limitations in references/source-list.md; no monitoring state saved.",
+      "note": "MFA harmonized Schengen application form — form; related source",
+      "topic_ids": [
+        "visa_form_or_mission_guidance"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "sk_30",
+      "title": "MFA Hanoi EU-family mission instructions",
+      "source_type": "visa_form_or_mission_guidance",
+      "language": "sk",
+      "url": "https://www.mzv.sk/web/hanoj/sluzby/pomoc-v-nudzi-v-zahranici/viza/rodinni-prislusnici-obcanov-unie",
+      "publisher_identifier": {
+        "system": "www.mzv.sk",
+        "record": "SK-30"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "official_search_result_only",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_shape": "official PDF or mission-specific HTML",
+      "version_evidence": "See dated verification and limitations in references/source-list.md; no monitoring state saved.",
+      "note": "MFA Hanoi EU-family mission instructions — mission example; related source",
+      "topic_ids": [
+        "visa_form_or_mission_guidance"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "sk_31",
+      "title": "MFA Minsk visa evidence and EU-family instructions",
+      "source_type": "visa_form_or_mission_guidance",
+      "language": "sk",
+      "url": "https://www.mzv.sk/sk/web/minsk/sluzby/viza-a-pobyty/schengenske-viza/doklady-k-ziadosti-o-viza",
+      "publisher_identifier": {
+        "system": "www.mzv.sk",
+        "record": "SK-31"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "official_search_result_only",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_shape": "official PDF or mission-specific HTML",
+      "version_evidence": "See dated verification and limitations in references/source-list.md; no monitoring state saved.",
+      "note": "MFA Minsk visa evidence and EU-family instructions — mission example; related source",
+      "topic_ids": [
+        "visa_form_or_mission_guidance"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "sk_32",
+      "title": "Supreme Administrative Court decision search",
+      "source_type": "court_decision_search_or_help",
+      "language": "sk",
+      "url": "https://www.nssud.sk/rozhodovacia-cinnost/",
+      "publisher_identifier": {
+        "system": "www.nssud.sk",
+        "record": "SK-32"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "official_source_inspected",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "interactive search or official HTML guidance",
+      "version_evidence": "See dated verification and limitations in references/source-list.md; no monitoring state saved.",
+      "note": "Supreme Administrative Court decision search — administrative case-law discovery; related source",
+      "topic_ids": [
+        "court_decision_search_or_help"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/slovakia/candidates/sk-32.md",
+      "source_sha256": "e20f5efbf3e3b126a315624afb7c6eaf6dc1d45c7c79833243482d1a2b9a51a3",
+      "converted_sha256": "0effed480ae249e77f829f255521d4aa0b5273a57c9b3f7c6a6e2b7426264b52",
+      "source_bytes": 87468,
+      "resolved_url": "https://www.nssud.sk/rozhodovacia-cinnost/"
+    },
+    {
+      "id": "sk_33",
+      "title": "Supreme Administrative Court new-system notice",
+      "source_type": "court_decision_search_or_help",
+      "language": "sk",
+      "url": "https://www.nssud.sk/spustili-sme-novy-informacny-system-pre-efektivnejsie-vyhladavanie-rozhodnuti-ako-aj-zistovanie-stavu-konania/",
+      "publisher_identifier": {
+        "system": "www.nssud.sk",
+        "record": "SK-33"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "official_source_inspected",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "interactive search or official HTML guidance",
+      "version_evidence": "See dated verification and limitations in references/source-list.md; no monitoring state saved.",
+      "note": "Supreme Administrative Court new-system notice — source change evidence; related source",
+      "topic_ids": [
+        "court_decision_search_or_help"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/slovakia/candidates/sk-33.md",
+      "source_sha256": "6e281c22d8590d6375e943b5164ecfa0149010fb664717ca9bfdb04c0fa4583b",
+      "converted_sha256": "83273829cf393b9aa9848e0c22856662b39f141dd675e9964911b47606177d14",
+      "source_bytes": 59400,
+      "resolved_url": "https://www.nssud.sk/spustili-sme-novy-informacny-system-pre-efektivnejsie-vyhladavanie-rozhodnuti-ako-aj-zistovanie-stavu-konania/"
+    },
+    {
+      "id": "sk_34",
+      "title": "Supreme Court decision search",
+      "source_type": "court_decision_search_or_help",
+      "language": "sk",
+      "url": "https://www.nsud.sk/rozhodnutia-vyhladavanie/?art_rvs=1",
+      "publisher_identifier": {
+        "system": "www.nsud.sk",
+        "record": "SK-34"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "official_source_inspected",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "interactive search or official HTML guidance",
+      "version_evidence": "See dated verification and limitations in references/source-list.md; no monitoring state saved.",
+      "note": "Supreme Court decision search — national case-law discovery; related source",
+      "topic_ids": [
+        "court_decision_search_or_help"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/slovakia/candidates/sk-34.md",
+      "source_sha256": "1a011c824ac512dbb4980d2b347acb8f0fedd1772aaf66e9239252f3a147f14a",
+      "converted_sha256": "d19da113d5eb4b7f7209b9cf7acf5d3d30c2f1a996b89df6142cfcc854562820",
+      "source_bytes": 28763,
+      "resolved_url": "https://www.nsud.sk/rozhodnutia-vyhladavanie/?art_rvs=1"
+    },
+    {
+      "id": "sk_35",
+      "title": "Constitutional Court search instructions",
+      "source_type": "court_decision_search_or_help",
+      "language": "sk",
+      "url": "https://www.ustavnysud.sk/ako-hladat",
+      "publisher_identifier": {
+        "system": "www.ustavnysud.sk",
+        "record": "SK-35"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "official_source_inspected",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "interactive search or official HTML guidance",
+      "version_evidence": "See dated verification and limitations in references/source-list.md; no monitoring state saved.",
+      "note": "Constitutional Court search instructions — constitutional case-law discovery; related source",
+      "topic_ids": [
+        "court_decision_search_or_help"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/slovakia/candidates/sk-35.md",
+      "source_sha256": "869bfd597f5104af0a1f988c7f626969266e528754e7382a4b43d070dd71f30d",
+      "converted_sha256": "772ad35bb726763cc9d7b4d6b69082fe381e07f47f6b3e0d8eb5cbb1bf351679",
+      "source_bytes": 136047,
+      "resolved_url": "https://www.ustavnysud.sk/ako-hladat"
+    },
+    {
+      "id": "sk_36",
+      "title": "Public Defender complaint form",
+      "source_type": "oversight_privacy_or_legal_aid_guidance",
+      "language": "sk",
+      "url": "https://vop.gov.sk/podat-podnet/",
+      "publisher_identifier": {
+        "system": "vop.gov.sk",
+        "record": "SK-36"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "official_source_inspected",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "official HTML page or electronic form",
+      "version_evidence": "See dated verification and limitations in references/source-list.md; no monitoring state saved.",
+      "note": "Public Defender complaint form — oversight remedy; related source",
+      "topic_ids": [
+        "oversight_privacy_or_legal_aid_guidance"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/slovakia/candidates/sk-36.md",
+      "source_sha256": "ecb578a81c1d96b86aac84db9e2df9885a7452ecf5cde301e9d9b3d51ec693ed",
+      "converted_sha256": "b3fb147e08eeafbe77ec621468d986804dee0468df1747f9d80f29cc529e54de",
+      "source_bytes": 88929,
+      "resolved_url": "https://vop.gov.sk/podat-podnet/"
+    },
+    {
+      "id": "sk_37",
+      "title": "Public Defender petition and complaint guidance",
+      "source_type": "oversight_privacy_or_legal_aid_guidance",
+      "language": "sk",
+      "url": "https://vop.gov.sk/podavanie-peticii-a-staznosti/",
+      "publisher_identifier": {
+        "system": "vop.gov.sk",
+        "record": "SK-37"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "official_source_inspected",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "official HTML page or electronic form",
+      "version_evidence": "See dated verification and limitations in references/source-list.md; no monitoring state saved.",
+      "note": "Public Defender petition and complaint guidance — petition/complaint channel; related source",
+      "topic_ids": [
+        "oversight_privacy_or_legal_aid_guidance"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/slovakia/candidates/sk-37.md",
+      "source_sha256": "d08570357dc9189fdaf505dae6dec135793ed0ab82343747200e37ca4ea213a6",
+      "converted_sha256": "e737900989c0516faa21af434c72edf2b540881be58b6abb348517bd5a8556fe",
+      "source_bytes": 82826,
+      "resolved_url": "https://vop.gov.sk/podavanie-peticii-a-staznosti/"
+    },
+    {
+      "id": "sk_38",
+      "title": "Data Protection Authority proceeding request",
+      "source_type": "oversight_privacy_or_legal_aid_guidance",
+      "language": "sk",
+      "url": "https://dataprotection.gov.sk/sk/ine/vyhladavanie-sluzby-formulara-elektronicku-komunikaciu/podavanie-navrhu-zacatie-konania/",
+      "publisher_identifier": {
+        "system": "dataprotection.gov.sk",
+        "record": "SK-38"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "official_source_inspected",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "official HTML page or electronic form",
+      "version_evidence": "See dated verification and limitations in references/source-list.md; no monitoring state saved.",
+      "note": "Data Protection Authority proceeding request — data-rights remedy; related source",
+      "topic_ids": [
+        "oversight_privacy_or_legal_aid_guidance"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/slovakia/candidates/sk-38.md",
+      "source_sha256": "856729733402b30e4e3967103f17f62df2c775e78317c2df88130e5e8e361385",
+      "converted_sha256": "786f795ba6b36af935b8553aee156f342a69359627983ca9584a101e235a3e3e",
+      "source_bytes": 77800,
+      "resolved_url": "https://dataprotection.gov.sk/sk/ine/vyhladavanie-sluzby-formulara-elektronicku-komunikaciu/podavanie-navrhu-zacatie-konania/"
+    },
+    {
+      "id": "sk_39",
+      "title": "Slovak National Centre for Human Rights legal services",
+      "source_type": "oversight_privacy_or_legal_aid_guidance",
+      "language": "sk",
+      "url": "https://www.snslp.sk/nasa-cinnost/pravne-sluzby/",
+      "publisher_identifier": {
+        "system": "www.snslp.sk",
+        "record": "SK-39"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "official_source_inspected",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "official HTML page or electronic form",
+      "version_evidence": "See dated verification and limitations in references/source-list.md; no monitoring state saved.",
+      "note": "Slovak National Centre for Human Rights legal services — equality assistance and opinions; related source",
+      "topic_ids": [
+        "oversight_privacy_or_legal_aid_guidance"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/slovakia/candidates/sk-39.md",
+      "source_sha256": "455614fe3f4be0a29eac7a68b33c4aa8d3b4de311ae7774970062298a3657503",
+      "converted_sha256": "e972c26434b6bc06b9d1202a9122da5313c61e425352a96f09cb3cdb9abe251b",
+      "source_bytes": 46278,
+      "resolved_url": "https://www.snslp.sk/nasa-cinnost/pravne-sluzby/"
+    },
+    {
+      "id": "sk_40",
+      "title": "Bratislava Foreign Police relocation notice",
+      "source_type": "interior_ministry_guidance_or_operational_notice",
+      "language": "sk",
+      "url": "https://www.minv.sk/?police=&sprava=opening-of-the-foreign-police-department-in-bratislava-at-a-new-address",
+      "publisher_identifier": {
+        "system": "www.minv.sk",
+        "record": "SK-40"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "official_source_inspected",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "dated PDF or mutable official HTML page",
+      "version_evidence": "See dated verification and limitations in references/source-list.md; no monitoring state saved.",
+      "note": "Bratislava Foreign Police relocation notice — local office-change notice; related source",
+      "topic_ids": [
+        "interior_ministry_guidance_or_operational_notice"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/slovakia/candidates/sk-40.md",
+      "source_sha256": "349c9dbc6d6a29505b2ff5552c2565938a289922c3fd975d96dd0a9e0d4fc9f6",
+      "converted_sha256": "8259960490591241d63bf5714b5a93f5203a6eb6fd25d882f1b50a048cad4743",
+      "source_bytes": 52617,
+      "resolved_url": "https://www.minv.sk/?police=&sprava=opening-of-the-foreign-police-department-in-bratislava-at-a-new-address"
+    }
+  ],
+  "retrieved_review_candidate_count": 31,
+  "converted_review_candidate_count": 31,
+  "captured_slovlex_text_count": 15,
+  "captured_slovlex_binding_pdf_count": 15,
+  "captured_slovlex_annex_pdf_count": 11
+}

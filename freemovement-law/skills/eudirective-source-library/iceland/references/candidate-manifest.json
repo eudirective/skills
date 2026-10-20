@@ -1,0 +1,892 @@
+{
+  "manifest_version": "0.2.0-candidate",
+  "pack": "iceland-national-source-candidates",
+  "jurisdiction": "IS",
+  "inventory_research_date": "2026-10-18",
+  "scope": "Bounded discovery of Icelandic EEA/EFTA free-movement and third-country family-member sources, legislation and publication, residence registration, visa/entry channels, administrative procedure and remedies, appeal decisions, courts, public access, privacy and oversight. Iceland is an EEA EFTA State, not an EU Member State. Switzerland is not an EEA Contracting Party. This is not a legal-equivalence opinion or complete national inventory.",
+  "status": "partially_retrieved_review_candidates",
+  "retrieval_status": "20 of 28 candidate pages converted and replay-verified; 21 exact responses saved; six Althingi HTTP 403 responses; one court-page 404; one captured page had no extractable body; no source accepted",
+  "accepted_source_count": 0,
+  "candidate_source_count": 28,
+  "official_hosts": [
+    "althingi.is",
+    "stjornartidindi.is",
+    "adverts.stjornartidindi.is",
+    "reglugerd.is",
+    "files.reglugerd.is",
+    "island.is",
+    "efta.int",
+    "knu.is",
+    "stjornarradid.is",
+    "umbodsmadur.is",
+    "domstolar.is",
+    "personuvernd.is"
+  ],
+  "secondary_hosts": [],
+  "comparison_seed": {
+    "jurisdiction": "Denmark",
+    "source": "Danish EU-residence law and official guidance used as the comparison seed",
+    "relationship_note": "Iceland has a functionally related national route for EEA/EFTA citizens and their family members. Iceland's distinct EEA EFTA status, EEA incorporation, national implementation, Swiss treatment, Nordic arrangements, and Icelandic return-citizen route must be checked separately. Similar function does not establish legal equivalence."
+  },
+  "previous_findings_carried_forward": [
+    "The Denmark, Sweden, Czechia, Hungary, Romania, Austria, Belgium, Bulgaria, Croatia, Cyprus, Estonia, Finland, France, Germany, and Greece findings were used as discovery and adapter-design leads only; none establishes Icelandic law or source coverage.",
+    "The cross-state discovery guide excludes N-Lex as an assumed source for Iceland because Iceland is an EEA EFTA State; first-party Icelandic and EFTA sources were used.",
+    "The EFTA EEA-Lex record confirms Directive 2004/38/EC was incorporated by Joint Committee Decision 158/2007 and is in force in the EEA; Icelandic national scope and procedure still require checking against Icelandic law."
+  ],
+  "search_coverage": [
+    {
+      "source_class": "Legislation, official publication, consolidated text and EEA incorporation",
+      "search_outcome": "Candidates found; the current Althingi legislation bundle is well-documented, while consolidation date and legal effect must be distinguished from later enactments and future effective dates.",
+      "official_channels": [
+        "Althingi Lagasafn current index and versioned SGML/PDF editions",
+        "Stjórnartíðindi electronic A/B/C publication",
+        "Reglugerðasafn consolidated regulations",
+        "EFTA EEA-Lex"
+      ],
+      "query_terms": [
+        "site:althingi.is/lagas/nuna/2016080.html útlendingalög 80/2016 EES EFTA 84 85 86 90",
+        "site:althingi.is/lagas/nuna/1993037.html stjórnsýslulög 37/1993",
+        "site:althingi.is/lagas/nuna/1993002.html lög 2/1993 EES samningur",
+        "site:reglugerd.is 540/2017 reglugerð um útlendinga",
+        "site:efta.int/eea-lex 32004L0038 JCD 158/2007 Iceland"
+      ],
+      "languages": [
+        "is",
+        "en"
+      ],
+      "coverage_limit": "Althingi's current edition is dated 1 October 2026 and the archive says later-passed laws are absent from each edition. The current Foreign Nationals Act page lists amendments with different effective dates, including future changes. Reglugerðasafn lists several 2026 amendments to Regulation 540/2017, while its linked current-consolidation PDF identifies a version in force from 19 June 2025; amendment reconciliation is unresolved. No Icelandic substantive law is inferred from the Danish seed."
+    },
+    {
+      "source_class": "EEA/EFTA family residence, supporting documents, residence cards and registration",
+      "search_outcome": "Candidates found; official English service pages expose the main family-card and registration routes. An Icelandic-language counterpart was not found in the bounded search.",
+      "official_channels": [
+        "Directorate of Immigration pages on Ísland.is",
+        "Registers Iceland pages on Ísland.is"
+      ],
+      "query_terms": [
+        "site:island.is/en residence right family members EEA EFTA Iceland residence card",
+        "site:island.is/en residence right family members EEA EFTA supporting documents authentication translation",
+        "site:island.is/en registration EEA EFTA foreign nationals Iceland three months six months",
+        "site:island.is/en moving from Nordic countries to Iceland legal domicile",
+        "site:island.is/en permanent residence family members EEA EFTA citizens Iceland"
+      ],
+      "languages": [
+        "en",
+        "is"
+      ],
+      "coverage_limit": "The EEA/EFTA label on Ísland.is includes Switzerland in its country lists even though Switzerland is not in the EEA Agreement. Icelandic citizens are treated separately and may use an EEA return route only under stated prior-residence conditions. Registers Iceland's page title/form describes registration exceeding six months while its body says EEA/EFTA nationals staying over three months must register; the Directorate entry page says over six months. These conflicts need legal-owner review."
+    },
+    {
+      "source_class": "Entry, visas, mission practice and residence-permit alternatives",
+      "search_outcome": "Candidates found; national visa guidance and a dynamic C-visa submission list were identified, but the visa exception and mission handling for EEA-family cases were not fully assessed.",
+      "official_channels": [
+        "Directorate of Immigration pages on Ísland.is",
+        "Ministry for Foreign Affairs C-visa application page and mission list"
+      ],
+      "query_terms": [
+        "site:island.is/en entry requirements Iceland EEA EFTA non EEA family visa",
+        "site:island.is/en apply visa Iceland Schengen where to apply embassies consulates",
+        "site:island.is/en residence permit spouse EEA EFTA family card Iceland"
+      ],
+      "languages": [
+        "en",
+        "is"
+      ],
+      "coverage_limit": "The Ministry's C-visa submission list and partner locations are dynamic; D-visas are a distinct route issued after residence-permit approval. No mission-by-mission family-member practice or definitive EEA-family visa-exemption rule was verified in this bounded review."
+    },
+    {
+      "source_class": "Administrative procedure, appeals, and administrative decisions",
+      "search_outcome": "Candidates found; the statutory appeal body and its guidance are first-party sources, and published decisions are available through the Government portal.",
+      "official_channels": [
+        "Althingi current Acts 37/1993 and 80/2016",
+        "Kærunefnd útlendingamála (KNU)",
+        "Stjórnarráðið decisions and opinions portal"
+      ],
+      "query_terms": [
+        "site:knu.is hvernig get ég kært úrskurðir útlendingamála",
+        "site:stjornarradid.is/gogn/urskurdir-og-alit EES EFTA 84 gr útlendinga",
+        "site:althingi.is/lagas/nuna/2016080.html kærunefnd útlendingamála kæruheimild 7 gr"
+      ],
+      "languages": [
+        "is",
+        "en"
+      ],
+      "coverage_limit": "The board states that substantive decisions are published after the final outcome is communicated to the appellant and that personal or sensitive data is removed; it warns that redactions can limit what the published text reveals. Search results identify EEA/EFTA decisions, but no complete case inventory or stable machine-readable feed was verified."
+    },
+    {
+      "source_class": "Courts, public access, privacy and independent oversight",
+      "search_outcome": "Statutory and oversight candidates found. The court publication rules were found, but a complete and stable searchable court-decision source was not established.",
+      "official_channels": [
+        "Althingi Lagasafn",
+        "Icelandic Courts Administration",
+        "Icelandic Parliamentary Ombudsman",
+        "Data Protection Authority",
+        "Ísland.is public service pages"
+      ],
+      "query_terms": [
+        "site:althingi.is/lagas/nuna/2012140.html upplýsingalög 140/2012",
+        "site:althingi.is/lagas/nuna/2018090.html persónuvernd 90/2018",
+        "site:umbodsmadur.is/en complaints administrative delay Iceland",
+        "site:personuvernd.is kvörtun til Persónuverndar",
+        "site:domstolar.is reglur birting dóma úrskurða dómstóla Iceland"
+      ],
+      "languages": [
+        "is",
+        "en"
+      ],
+      "coverage_limit": "The Ombudsman's complaint instructions and Data Protection Authority complaint route are public, but individual submissions are not part of source monitoring. Court publication is governed by privacy and anonymisation rules; nationwide searchable completeness and removal/update behavior remain unassessed."
+    }
+  ],
+  "documents": [
+    {
+      "id": "is-01",
+      "title": "Althingi Lagasafn current index and versioned SGML archive",
+      "source_type": "official_legislation_archive",
+      "language": "is",
+      "url": "https://www.althingi.is/lagasafn/zip-skra-af-lagasafni/",
+      "publisher_identifier": {
+        "system": "Althingi Lagasafn",
+        "record": "versioned edition; observed edition 158a dated 2026-10-01"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official publisher page inspected; it lists PDF and SGML editions, states the edition cutoff, and explicitly says the unpacked archive may be imported into other systems or integrated with other sites.",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_shape": "HTML version index; PDF and SGML ZIP editions. Observed SGML ZIP: https://www.althingi.is/lagasafn/zip/158a/allt_sgml.zip",
+      "version_evidence": "The latest listed edition on 2026-10-18 is 158a, Icelandic laws as of 2026-10-01. The archive page states that laws passed after an edition date are not included.",
+      "note": "Strong no-registration/no-API candidate for law text acquisition. Future rules must monitor the edition index, preserve edition identity/date, and supplement later A-deild promulgations; the bundle itself does not prove current legal effect.",
+      "topic_ids": [
+        "ADMIN-01"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "is-02",
+      "title": "Foreign Nationals Act No. 80/2016, current Althingi text",
+      "source_type": "national_legislation",
+      "language": "is",
+      "url": "https://www.althingi.is/lagas/nuna/2016080.html",
+      "publisher_identifier": {
+        "system": "Althingi Lagasafn",
+        "record": "Act 80/2016; current-edition page resolves to edition 158a"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official current-edition page inspected; scope, Chapter XI references, EEA/EFTA terminology, and amendment/effective-date annotations were checked.",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_shape": "Versioned official HTML; included in SGML/PDF law editions.",
+      "version_evidence": "Edition 158a dated 2026-10-01. The page lists amendments through Act 79/2026, and notes that parts of Act 48/2026 take effect 2026-12-01.",
+      "note": "Chapter XI contains Icelandic special rules for EEA/EFTA citizens and family members. The direct current URL is useful, but a future rule must preserve edition identity and distinguish enacted amendments from provisions already in force.",
+      "topic_ids": [
+        "FAMILY-EEA-01",
+        "ADMIN-01"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "is-03",
+      "title": "Administrative Procedure Act No. 37/1993, current Althingi text",
+      "source_type": "national_legislation",
+      "language": "is",
+      "url": "https://www.althingi.is/lagas/nuna/1993037.html",
+      "publisher_identifier": {
+        "system": "Althingi Lagasafn",
+        "record": "Act 37/1993; current-edition page"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official current-edition page opened; its general scope over administrative decisions was inspected. Its current edition identifier should be captured from the page during implementation.",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_shape": "Versioned official HTML; included in SGML/PDF law editions.",
+      "version_evidence": "The current Althingi route resolves by the live Lagasafn issue; a separately pinned issue/date was not captured in this discovery record.",
+      "note": "General procedure candidate. Individual appeal rights and deadlines must be read with the relevant sector law and notice.",
+      "topic_ids": [
+        "ADMIN-02",
+        "REMEDY-01"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "is-04",
+      "title": "Act No. 2/1993 on the European Economic Area",
+      "source_type": "national_eea_implementation_legislation",
+      "language": "is",
+      "url": "https://www.althingi.is/lagas/nuna/1993002.html",
+      "publisher_identifier": {
+        "system": "Althingi Lagasafn",
+        "record": "Act 2/1993"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official current-edition page opened; EEA Agreement adoption and conforming-interpretation provision were inspected.",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_shape": "Versioned official HTML; included in SGML/PDF law editions.",
+      "version_evidence": "The current Althingi route resolves by the live Lagasafn issue; a separately pinned issue/date was not captured in this discovery record.",
+      "note": "Read together with the official EFTA EEA-Lex record and Iceland's sector legislation; this Act alone does not establish every instrument's incorporation or national effect.",
+      "topic_ids": [
+        "EEA-01"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "is-05",
+      "title": "Regulation No. 540/2017 on Foreign Nationals and amendment list",
+      "source_type": "national_regulation",
+      "language": "is",
+      "url": "https://www.reglugerd.is/reglugerdir/eftir-raduneytum/domsmala--og-mannrettindaraduneyti/nr/20605",
+      "publisher_identifier": {
+        "system": "Reglugerðasafn",
+        "record": "Regulation 540/2017"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Officially linked regulation collection page and current-PDF endpoint inspected; amendment list and PDF version metadata were compared.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Consolidated HTML and PDF; current-PDF path observed at https://files.reglugerd.is/pdf/0540-2017/current; amendments separately published in Stjórnartíðindi B-deild.",
+      "version_evidence": "The collection page lists 2026 amending regulations 669/2026, 724/2026, and 725/2026. The linked current PDF identifies a text in force from 2025-06-19 with a document date 2026-04-10; reconciliation with the later amendments is unresolved.",
+      "note": "Do not treat the current-PDF endpoint as demonstrably current until its version metadata is reconciled with later B-deild amendments. Prefer the official Gazette for authentic amendment events.",
+      "topic_ids": [
+        "FAMILY-EEA-01",
+        "ADMIN-01"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/iceland/candidates/is-05.md",
+      "source_sha256": "9cd279b95368e0be295743e7e70d4819c9f3d00735257f122640eedeb82208dc",
+      "converted_sha256": "7b31e24e7a364a98d50cfcddae2e7b1e0f8794b19625bbeed0670bdb59c18e42",
+      "source_bytes": 80080,
+      "resolved_url": "https://www.reglugerd.is/reglugerdir/eftir-raduneytum/domsmala--og-mannrettindaraduneyti/nr/20605"
+    },
+    {
+      "id": "is-06",
+      "title": "Stjórnartíðindi electronic official gazette and publication rules",
+      "source_type": "official_gazette",
+      "language": "is",
+      "url": "https://www.stjornartidindi.is/AdvertList.aspx",
+      "publisher_identifier": {
+        "system": "Stjórnartíðindi",
+        "record": "A-deild laws; B-deild regulations; C-deild international agreements and notices"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official gazette listing, Act No. 15/2005, and Regulation No. 958/2005 were inspected; the legal-effect rule for electronic publication was confirmed.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Searchable/indexed HTML and individual official PDF notices on stjornartidindi.is and adverts.stjornartidindi.is.",
+      "version_evidence": "Electronic Stjórnartíðindi has legal publication effect under the official publication rules; the legislation separates A, B, and C divisions by document class.",
+      "note": "Promising authentic publication route. Record Gazette division, notice number, issue/publication date and individual PDF identity; no feed or complete machine-readable listing was verified.",
+      "topic_ids": [
+        "ADMIN-01"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/iceland/candidates/is-06.md",
+      "source_sha256": "1aeadc87b0c9ea1252f2eb5663bf5068d136be094f84282d6f7fa17763868957",
+      "converted_sha256": "e3638cf28dc37c8e610b2dd5e711bbb45856ff938c8d980a50a0583d17f98fcd",
+      "source_bytes": 207441,
+      "resolved_url": "https://island.is:443/stjornartidindi"
+    },
+    {
+      "id": "is-07",
+      "title": "EEA-Lex factsheet for Directive 2004/38/EC and Joint Committee Decision 158/2007",
+      "source_type": "eea_incorporation_record",
+      "language": "en",
+      "url": "https://www.efta.int/eea-lex/32004l0038",
+      "publisher_identifier": {
+        "system": "EFTA EEA-Lex",
+        "record": "Directive 2004/38/EC; JCD 158/2007"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official EFTA page inspected; it identifies the EEA legal status, Annex V area, JCD 158/2007, and Iceland's constitutional-requirement date.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Official HTML factsheet with linked legal documents.",
+      "version_evidence": "EFTA record reports the Directive incorporated and in force in the EEA; Iceland date shown as 2008-08-29 for constitutional requirements.",
+      "note": "EEA incorporation evidence, not a substitute for the applicable Icelandic statutory and administrative text.",
+      "topic_ids": [
+        "EEA-01",
+        "FAMILY-EEA-01"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/iceland/candidates/is-07.md",
+      "source_sha256": "d1a0f331628ec6ca549a17dad6b55fe717cb7cdf4a2e4dfefd074da89b6211ba",
+      "converted_sha256": "00329a66619b165a819181c8b164e0d32e82889a48f66fddb3b6f1fb7c07f876",
+      "source_bytes": 142422,
+      "resolved_url": "https://www.efta.int/eea-lex/32004l0038"
+    },
+    {
+      "id": "is-08",
+      "title": "Residence right of family members of EEA/EFTA citizens",
+      "source_type": "official_residence_guidance",
+      "language": "en",
+      "url": "https://island.is/en/residence-right-of-family-members-of-eea-efta-citizens",
+      "publisher_identifier": {
+        "system": "Ísland.is / Directorate of Immigration",
+        "record": "Residence card for family member of an EEA/EFTA citizen"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official service page result inspected; applicant scope, family categories, paper application route, fee, and Icelandic-citizen return conditions were checked.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Dynamic official HTML service guidance with linked forms and related pages.",
+      "version_evidence": "No page revision date exposed in the inspected page. The site terms say service information and links may change without notice.",
+      "note": "The page distinguishes EEA/EFTA family cards from residence permits for relatives of Icelandic citizens, but its country list groups Switzerland with EEA/EFTA. Verify legal categories against the national law and agreement record.",
+      "topic_ids": [
+        "FAMILY-EEA-01",
+        "ENTRY-01"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/iceland/candidates/is-08.md",
+      "source_sha256": "56e1222305dfd35ae513c5b12b5e9077134a828c3a0d84a396092aa807a7d56d",
+      "converted_sha256": "c96754f679cc93c9a7cd5efda7100ac5736fc72ed0182c853f7d1d4b8b806797",
+      "source_bytes": 315540,
+      "resolved_url": "https://island.is/en/residence-right-of-family-members-of-eea-efta-citizens"
+    },
+    {
+      "id": "is-09",
+      "title": "Supporting documents for an EEA/EFTA family residence card",
+      "source_type": "official_application_evidence_guidance",
+      "language": "en",
+      "url": "https://island.is/en/residence-right-of-family-members-of-eea-efta-citizens/supporting-documents",
+      "publisher_identifier": {
+        "system": "Ísland.is / Directorate of Immigration",
+        "record": "Supporting documents for residence card for EEA/EFTA family member"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official guidance inspected; it specifies family evidence, dependency, authentication, certified-copy, translation, and affidavit requirements.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Dynamic HTML guidance with external official links.",
+      "version_evidence": "No page revision date exposed; no archived snapshot or update feed inspected.",
+      "note": "Country-dependent authentication chain and translations make the content operationally useful but likely to require manual change review.",
+      "topic_ids": [
+        "FAMILY-EEA-01",
+        "CIVIL-STATUS-01"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/iceland/candidates/is-09.md",
+      "source_sha256": "89c2c9c1298024d4125e0be4d6d948e010af96ddd8151b9f9e847c3333fc1f1c",
+      "converted_sha256": "de030d166c6453bf2791af0946757cdfe32c6ba3a79ac4cc0e5fa70203db1936",
+      "source_bytes": 338609,
+      "resolved_url": "https://island.is/en/residence-right-of-family-members-of-eea-efta-citizens/supporting-documents"
+    },
+    {
+      "id": "is-10",
+      "title": "Rights and obligations of EEA/EFTA family residence-card holders",
+      "source_type": "official_residence_guidance",
+      "language": "en",
+      "url": "https://island.is/en/residence-right-of-family-members-of-eea-efta-citizens/residence-card",
+      "publisher_identifier": {
+        "system": "Ísland.is / Directorate of Immigration",
+        "record": "Rights and obligations; residence card for EEA/EFTA family member"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official guidance inspected; validity, absence, work-during-application, and permanent-right statements were checked.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Dynamic HTML guidance.",
+      "version_evidence": "No page revision date exposed.",
+      "note": "Check the guidance against the current consolidated Act before use; changing fees and employment statements should be date-stamped.",
+      "topic_ids": [
+        "FAMILY-EEA-01",
+        "WORK-01"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/iceland/candidates/is-10.md",
+      "source_sha256": "46c47d6897572375111736459a2150a1bdbc33b89620262c87d1ab71ce475069",
+      "converted_sha256": "d27ca0872dba339ba7da0a18725e38c5570c64a4bfb04ee181439cabade675e7",
+      "source_bytes": 307891,
+      "resolved_url": "https://island.is/en/residence-right-of-family-members-of-eea-efta-citizens/residence-card"
+    },
+    {
+      "id": "is-11",
+      "title": "Permanent residence for family members of EEA/EFTA citizens",
+      "source_type": "official_residence_guidance",
+      "language": "en",
+      "url": "https://island.is/en/permanent-residence-for-family-members-of-eea-efta-citizens",
+      "publisher_identifier": {
+        "system": "Ísland.is / Directorate of Immigration",
+        "record": "Permanent residence for EEA/EFTA family members"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official page inspected; continuous-residence, absence, application, evidence, and fee information were reviewed.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Dynamic HTML service guidance and linked application form.",
+      "version_evidence": "No page revision date exposed.",
+      "note": "Operational values and exceptions require date-bound checks against the current Act and Regulation.",
+      "topic_ids": [
+        "FAMILY-EEA-01"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/iceland/candidates/is-11.md",
+      "source_sha256": "66cf68e61b1f292e9aee557716a226431d722918f47b1246838cfdb238a4a45f",
+      "converted_sha256": "b141b05d1133be98bbdb572ba9a7a9ab17be6e7c1d8dc0fc14acf0068da01d64",
+      "source_bytes": 226293,
+      "resolved_url": "https://island.is/en/permanent-residence-for-family-members-of-eea-efta-citizens"
+    },
+    {
+      "id": "is-12",
+      "title": "Directorate of Immigration applications and forms index",
+      "source_type": "official_forms_index",
+      "language": "en",
+      "url": "https://island.is/en/o/directorate-of-immigration/applications-and-forms",
+      "publisher_identifier": {
+        "system": "Ísland.is / Directorate of Immigration",
+        "record": "Applications and forms; includes EEA/EFTA residence-card and permanent-residence forms"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official forms index inspected; EEA/EFTA residence-card and permanent-residence entries were found.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Dynamic HTML index with changing downloadable form links.",
+      "version_evidence": "Individual forms may be replaced; direct form version dates were not captured.",
+      "note": "Monitor the parent index and validate the target form identity and revision before any conversion.",
+      "topic_ids": [
+        "FORMS-01",
+        "FAMILY-EEA-01"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/iceland/candidates/is-12.md",
+      "source_sha256": "95344687d4541280b955d8578ad3028180ad8cd654af5f57de05b097827b1dd3",
+      "converted_sha256": "ab0b070be0e78934e23a8f3a14b6e096b00d820f743a3ae04015d08380873646",
+      "source_bytes": 338730,
+      "resolved_url": "https://island.is/en/o/directorate-of-immigration/applications-and-forms"
+    },
+    {
+      "id": "is-13",
+      "title": "Residence-card application processing guidance for EEA/EFTA family members",
+      "source_type": "official_processing_guidance",
+      "language": "en",
+      "url": "https://island.is/en/o/directorate-of-immigration/have-applied-eea-efta",
+      "publisher_identifier": {
+        "system": "Ísland.is / Directorate of Immigration",
+        "record": "Applied for EEA/EFTA family residence card"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official guidance inspected; processing-time limitations and 2025 reported average were identified.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Dynamic HTML service guidance linked to changing processing-time tables.",
+      "version_evidence": "Page reports a 2025 average processing time of seven months for approved applications; future estimates will change.",
+      "note": "Keep historical statistics separate from current wait-time information.",
+      "topic_ids": [
+        "ADMIN-02",
+        "FAMILY-EEA-01"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/iceland/candidates/is-13.md",
+      "source_sha256": "635c90153e41c0ff6e0966598fc23dc8dc51485a276a77b9cae1c4bc980f15bb",
+      "converted_sha256": "1613a9966b6650ab81332648a499715b247fbff7cdccca124b9a39ce383cb450",
+      "source_bytes": 258955,
+      "resolved_url": "https://island.is/en/o/directorate-of-immigration/have-applied-eea-efta"
+    },
+    {
+      "id": "is-14",
+      "title": "Registration of EEA/EFTA foreign nationals with Registers Iceland",
+      "source_type": "official_registration_guidance",
+      "language": "en",
+      "url": "https://island.is/en/registration-of-eea-efta-foreign-nationals",
+      "publisher_identifier": {
+        "system": "Ísland.is / Registers Iceland",
+        "record": "EEA/EFTA foreign-national registration"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official service page inspected; scope, nationality list, expected processing time, and Nordic-route link were checked.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Dynamic service page and linked form.",
+      "version_evidence": "Page heading/form says registration for stays over six months, while body text states registration is required after three months. Entry requirements page separately says six months.",
+      "note": "High-priority source-owner verification is needed for the threshold and scope before reliance or rule implementation.",
+      "topic_ids": [
+        "REGISTRATION-01",
+        "FAMILY-EEA-01"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/iceland/candidates/is-14.md",
+      "source_sha256": "549004b469867b0cb2000b2f522bc50a60fd3bc4638ce2778ea35f8263d6219c",
+      "converted_sha256": "24c7412080ba745a53c7aa6e226495ffeff77cb50caebfb64a7b1f047e587f28",
+      "source_bytes": 179345,
+      "resolved_url": "https://island.is/en/registration-of-eea-efta-foreign-nationals"
+    },
+    {
+      "id": "is-15",
+      "title": "Register legal domicile when moving from Nordic countries to Iceland",
+      "source_type": "official_nordic_registration_guidance",
+      "language": "en",
+      "url": "https://island.is/en/moving-from-nordic-countries-to-iceland",
+      "publisher_identifier": {
+        "system": "Ísland.is / Registers Iceland",
+        "record": "Nordic-country move and domicile registration"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official service page inspected; in-person registration and seven-day notification guidance were identified.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Dynamic HTML guidance and notification form.",
+      "version_evidence": "No revision date exposed.",
+      "note": "Keep Nordic migration and registration route separate from ordinary EEA/EFTA processing; no complete Nordic agreement analysis was conducted.",
+      "topic_ids": [
+        "REGISTRATION-01",
+        "NORDIC-01"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/iceland/candidates/is-15.md",
+      "source_sha256": "52935d82c540b1fd9728fde0a7f7d8ba302cea0c71c124c112847e094ca1d17b",
+      "converted_sha256": "01aa4a6994d95b83412646e8820e191ef6883ca61a1354bf1ccc0e76bfc32ff9",
+      "source_bytes": 175361,
+      "resolved_url": "https://island.is/en/moving-from-nordic-countries-to-iceland"
+    },
+    {
+      "id": "is-16",
+      "title": "Moving to Iceland and returning Icelandic citizens",
+      "source_type": "official_moving_guidance",
+      "language": "en",
+      "url": "https://island.is/en/life-events/moving",
+      "publisher_identifier": {
+        "system": "Ísland.is / Registers Iceland",
+        "record": "Moving to Iceland; separate Nordic and other foreign-national routes"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official life-event page inspected; returning-Icelandic-citizen and Nordic registration sections were reviewed.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Dynamic HTML life-event page with form and service links.",
+      "version_evidence": "No revision date exposed.",
+      "note": "The Icelandic-citizen EEA return route is relevant to family-member discovery but must not be generalized to ordinary domestic family reunification.",
+      "topic_ids": [
+        "REGISTRATION-01",
+        "FAMILY-EEA-01"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/iceland/candidates/is-16.md",
+      "source_sha256": "18576ff856f23b2581b8c28b4a696e67c8e3fa83ab58dc24433fcc9baab4695d",
+      "converted_sha256": "66b5efce744298a567c7056503e780bcb55a4a9cdcfa7e881cf9cdf3d55a2adf",
+      "source_bytes": 208656,
+      "resolved_url": "https://island.is/en/life-events/moving"
+    },
+    {
+      "id": "is-17",
+      "title": "Entry requirements to Iceland",
+      "source_type": "official_entry_guidance",
+      "language": "en",
+      "url": "https://island.is/en/entry-requirements-to-iceland",
+      "publisher_identifier": {
+        "system": "Ísland.is / Directorate of Immigration",
+        "record": "Entry requirements to Iceland"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official guidance inspected; it separates EEA/EFTA, Nordic, and other foreign-national routes and states a six-month EEA/EFTA registration threshold.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Dynamic HTML guidance.",
+      "version_evidence": "No revision date exposed; threshold differs from the Registers Iceland page body.",
+      "note": "Record the conflicting threshold and avoid treating this guidance as settled until the statutory basis is checked with the responsible authority.",
+      "topic_ids": [
+        "ENTRY-01",
+        "REGISTRATION-01"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/iceland/candidates/is-17.md",
+      "source_sha256": "b7808d3e60d12e307762879e88e66ed9f290b9a55561095635e7404585d0096a",
+      "converted_sha256": "ad25d57f0259e1e5def8a3ae2440c44eea94f358716a7639bc29b8a9052efdec",
+      "source_bytes": 269453,
+      "resolved_url": "https://island.is/en/entry-requirements-to-iceland"
+    },
+    {
+      "id": "is-18",
+      "title": "Apply for an Icelandic Schengen C visa and find submission locations",
+      "source_type": "official_visa_and_mission_guidance",
+      "language": "en",
+      "url": "https://island.is/en/get-a-visa/where-to-apply-schengen",
+      "publisher_identifier": {
+        "system": "Ísland.is / Ministry for Foreign Affairs",
+        "record": "Schengen C visa; where to apply"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official ministry service page inspected; C-visa country/city list and distinction from D-visas were checked.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Dynamic HTML country/mission list and online application links.",
+      "version_evidence": "Submission locations depend on country and can change; no static edition or update feed found.",
+      "note": "A source rule would need parent-page discovery and per-country date checks; no application data should be submitted or retained.",
+      "topic_ids": [
+        "VISA-01",
+        "MISSIONS-01"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/iceland/candidates/is-18.md",
+      "source_sha256": "5930f97115acbb1e3344ffa9749d4f4cdee7e7ad3fa14a937e9f6f90c935c5ba",
+      "converted_sha256": "938cc1cbfdcdd62f94c9b1fe12d9fcaf5f1fd3aa368e12aa43ef751c32083762",
+      "source_bytes": 802535,
+      "resolved_url": "https://island.is/en/get-a-visa/where-to-apply-schengen"
+    },
+    {
+      "id": "is-19",
+      "title": "Residence permit for spouse of a person with Icelandic residence rights",
+      "source_type": "official_family_residence_guidance",
+      "language": "en",
+      "url": "https://island.is/en/residence-permit-for-spouse",
+      "publisher_identifier": {
+        "system": "Ísland.is / Directorate of Immigration",
+        "record": "Residence permit for spouse"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official guidance inspected; it directs EEA/EFTA sponsors to the separate EEA family-card route and contains visa-dependent filing/stay information for other permits.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Dynamic HTML service guidance with forms and links.",
+      "version_evidence": "Fee and processing details are volatile; no revision date exposed.",
+      "note": "Keep national family-reunification residence permits separate from EEA/EFTA derived residence rights.",
+      "topic_ids": [
+        "FAMILY-NATIONAL-01",
+        "VISA-01"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/iceland/candidates/is-19.md",
+      "source_sha256": "80d80fcb81b358d226f0425e951aa149708f69f518a16ba3658af0fb9b8d2a54",
+      "converted_sha256": "82f2a2ba3fb0e68f5cb0fa1d19ce3445187b4a7e3a3640c1bc6c91310877d0d2",
+      "source_bytes": 569226,
+      "resolved_url": "https://island.is/en/residence-permit-for-spouse"
+    },
+    {
+      "id": "is-20",
+      "title": "Kærunefnd útlendingamála (KNU) official site and appeal guidance",
+      "source_type": "official_appeals_authority",
+      "language": "is",
+      "url": "https://www.knu.is/hvernig-get-eg-kaert/",
+      "publisher_identifier": {
+        "system": "Kærunefnd útlendingamála",
+        "record": "How to appeal; independent administrative appeals board"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official board pages inspected; filing channels, content guidance, decision publication path, and redaction notice were checked.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "HTML guidance with dynamic contact details, forms, and links.",
+      "version_evidence": "No revision date exposed; procedural guidance can change.",
+      "note": "Do not submit forms or case information. Read case-specific statutory appeal rules and decision notices rather than inferring a deadline from general guidance.",
+      "topic_ids": [
+        "REMEDY-01",
+        "ADMIN-02"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/iceland/candidates/is-20.md",
+      "source_sha256": "60614aea48dc68d8452971099cc1f08646673918df4cff5baa0c31cd385cae07",
+      "converted_sha256": "35a6970481be7751d32ceeafcbf924ac4eab190234777f9fb26af1804c3b7803",
+      "source_bytes": 49914,
+      "resolved_url": "https://www.knu.is/hvernig-get-eg-kaert/"
+    },
+    {
+      "id": "is-21",
+      "title": "Published decisions of the Immigration Appeals Board",
+      "source_type": "administrative_case_law",
+      "language": "is",
+      "url": "https://www.stjornarradid.is/gogn/urskurdir-og-alit-/",
+      "publisher_identifier": {
+        "system": "Stjórnarráðið decisions and opinions portal / KNU",
+        "record": "Substantive KNU decisions, published after communication to appellant"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "KNU publication statement and current Government portal sample decisions were inspected; an EEA/EFTA decision and 2026 decision sample were found.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Government HTML pages; individual decision pages with redacted text.",
+      "version_evidence": "KNU says substantive decisions appear after the final outcome is communicated; privacy redactions may remove relevant context. No complete corpus or stable feed verified.",
+      "note": "Case-law sample only. Do not treat published decisions as complete or as proof of absence of other decisions.",
+      "topic_ids": [
+        "CASELAW-ADMIN-01",
+        "FAMILY-EEA-01"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/iceland/candidates/is-21.md",
+      "source_sha256": "5133d43476d8f30845301b283a0e132899312c16b658745cb78d3b279ff18ed4",
+      "converted_sha256": "f8bd2eb4b8e5c043ce551957177e1bf064754bed2950e2dcac3f4c317b5f0bae",
+      "source_bytes": 125627,
+      "resolved_url": "https://www.stjornarradid.is/gogn/urskurdir-og-alit-/"
+    },
+    {
+      "id": "is-22",
+      "title": "Information Act No. 140/2012",
+      "source_type": "public_access_legislation",
+      "language": "is",
+      "url": "https://www.althingi.is/lagas/nuna/2012140.html",
+      "publisher_identifier": {
+        "system": "Althingi Lagasafn",
+        "record": "Act 140/2012"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official current-law route identified; relevant public-access provisions surfaced in the official text search.",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_shape": "Versioned official HTML; included in SGML/PDF law editions.",
+      "version_evidence": "Use the live Lagasafn edition page; a pinned issue/date was not captured in this discovery record.",
+      "note": "Public access law candidate; procedural uses and exemptions require a separately verified current text.",
+      "topic_ids": [
+        "ACCESS-01"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "is-23",
+      "title": "Parliamentary Ombudsman complaint scope and procedure",
+      "source_type": "official_oversight_guidance",
+      "language": "en",
+      "url": "https://www.umbodsmadur.is/en",
+      "publisher_identifier": {
+        "system": "Icelandic Parliamentary Ombudsman",
+        "record": "English information; complaint conditions and jurisdiction"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official page inspected; it covers complaints about state/local administration and notes prior appeal-route exhaustion where available.",
+      "retrieval_status": "discovery_surface_no_text",
+      "retrieval_shape": "HTML guidance, complaint forms, and published opinions/letters.",
+      "version_evidence": "Individual opinions update over time; no inventory completeness or feed assessed.",
+      "note": "Oversight source for administrative procedure; complaints and personal case documents are outside source-monitoring scope.",
+      "topic_ids": [
+        "OVERSIGHT-01",
+        "REMEDY-01"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "ca35e4dff7e6be5a8c291d6697ea5e958fe66648efb94133944a7b9d86d466b2",
+      "source_bytes": 21074,
+      "resolved_url": "https://www.umbodsmadur.is/en",
+      "retrieval_note": "Public HTML response contained no sufficiently long extractable source body."
+    },
+    {
+      "id": "is-24",
+      "title": "Data Protection Act No. 90/2018",
+      "source_type": "privacy_legislation",
+      "language": "is",
+      "url": "https://www.althingi.is/lagas/nuna/2018090.html",
+      "publisher_identifier": {
+        "system": "Althingi Lagasafn",
+        "record": "Act 90/2018"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official law-page search result inspected; it identifies Persónuvernd and complaint/remedy provisions.",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_shape": "Versioned official HTML; included in SGML/PDF law editions.",
+      "version_evidence": "Use the live Lagasafn edition page; amendment chain and pinned issue were not captured here.",
+      "note": "Privacy and complaint rules require current text and EEA incorporation review before implementation.",
+      "topic_ids": [
+        "PRIVACY-01",
+        "REMEDY-01"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "is-25",
+      "title": "Data Protection Authority complaint and supervisory guidance",
+      "source_type": "official_privacy_oversight_guidance",
+      "language": "en",
+      "url": "https://island.is/en/o/the-data-protection-authority/submit-a-tip",
+      "publisher_identifier": {
+        "system": "Ísland.is / Data Protection Authority (Persónuvernd)",
+        "record": "Submit a tip; complaints and supervisory channels are listed separately"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official agency page inspected; public tip process, contact route, and separation from a formal personal-data complaint were checked.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Dynamic HTML and interactive form.",
+      "version_evidence": "Processing-time estimates and form behavior are dynamic; no revision date exposed.",
+      "note": "A source rule may monitor public instructions only; do not submit or retain personal data.",
+      "topic_ids": [
+        "PRIVACY-01",
+        "OVERSIGHT-01"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/iceland/candidates/is-25.md",
+      "source_sha256": "884c40999ffa9747c541ea6f7fa9537e3d37168fd52c8d8e28eae1f92f04c713",
+      "converted_sha256": "2fb0aabda7261f8da3aae19b48119e823e5ed258039f806b478c94237730726d",
+      "source_bytes": 185740,
+      "resolved_url": "https://island.is/en/o/the-data-protection-authority/submit-a-tip"
+    },
+    {
+      "id": "is-26",
+      "title": "Courts Administration rules on publication of judgments and rulings",
+      "source_type": "court_publication_rules",
+      "language": "is",
+      "url": "https://www.domstolar.is/domstolasyslan/reglur/reglur-um-birtingu-doma-og-urskurda-a-vefsidu-domstolanna/",
+      "publisher_identifier": {
+        "system": "Icelandic Courts Administration",
+        "record": "Rules No. 3/2019 on publication of judgments and rulings"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official publication rules inspected; posting timelines, accompanying metadata, and anonymisation/redaction rules were identified.",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_shape": "HTML rules page; judicial decisions published across court websites.",
+      "version_evidence": "Official rules page reports the applicable decision-publication framework; later rules/updates must be checked before an adapter is written.",
+      "note": "Publication is subject to anonymisation and removal rules. A searchable complete nationwide court dataset was not established.",
+      "topic_ids": [
+        "CASELAW-COURT-01",
+        "PRIVACY-01"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_note": "HTTPError: HTTP Error 404: Not Found"
+    },
+    {
+      "id": "is-27",
+      "title": "Icelandic courts public portal and judgment-search route",
+      "source_type": "court_case_law_discovery",
+      "language": "is",
+      "url": "https://www.domstolar.is/",
+      "publisher_identifier": {
+        "system": "Icelandic Courts Administration and individual courts",
+        "record": "Court websites and decision publication channels"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official court portal and publication rules located; a stable search interface and corpus coverage for immigration decisions were not verified.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Official website network; individual court pages and documents.",
+      "version_evidence": "Coverage and retention periods are governed by publication rules and court-specific pages; exact corpus was not sampled.",
+      "note": "Search outcome is incomplete, not evidence that no relevant judgments exist. Continue with the Supreme Court, Landsréttur, and district-court repositories separately.",
+      "topic_ids": [
+        "CASELAW-COURT-01"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/iceland/candidates/is-27.md",
+      "source_sha256": "7392f4f26fc00dfd5d69c650ae8e589b49a06d590a27c814848655cc52b9202d",
+      "converted_sha256": "7cfd40dccf623d517d286e09bb84bd90302735b5456b440d082e3f4af9169872",
+      "source_bytes": 215294,
+      "resolved_url": "https://island.is:443/s/domstolar"
+    },
+    {
+      "id": "is-28",
+      "title": "General user terms for Ísland.is",
+      "source_type": "official_service_portal_terms",
+      "language": "en",
+      "url": "https://island.is/en/o/digital-iceland/notendaskilmalar-islandis-terms-and-conditions-stefnur-og-skilmalar-1",
+      "publisher_identifier": {
+        "system": "Digital Iceland / Ministry of Finance and Economic Affairs",
+        "record": "Terms of service for Ísland.is"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official portal terms inspected; public-body responsibility for content and change-without-notice language were reviewed.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "HTML terms page.",
+      "version_evidence": "The terms state that service information and links may change without notice and that content may be published by or transferred to the responsible public body.",
+      "note": "Supports a bounded manual-first guidance-monitoring route; does not establish permission for high-frequency automated scraping. Review publisher-specific policies before implementation.",
+      "topic_ids": [
+        "SUSTAINABILITY-01"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/iceland/candidates/is-28.md",
+      "source_sha256": "e30babe63d2446a127f6344e48e25a18d52bc2cb808f8841773ee1855a21f5a5",
+      "converted_sha256": "c6161dbc25d36174eb66bce88207dd1fd0a82b806b73320f55178c7b2b9f0b3c",
+      "source_bytes": 264480,
+      "resolved_url": "https://island.is/en/o/digital-iceland/notendaskilmalar-islandis-terms-and-conditions-stefnur-og-skilmalar-1"
+    }
+  ],
+  "retrieved_review_candidate_count": 21,
+  "converted_review_candidate_count": 20
+}

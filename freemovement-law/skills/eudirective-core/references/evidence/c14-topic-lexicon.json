@@ -1,0 +1,88 @@
+{
+  "lexicon_version": "0.1.0",
+  "scope": "untyped_passage_discovery_for_human_or_model_review_only",
+  "filters": [
+    {
+      "id": "direct-submission-topic",
+      "fact_key": "element:procedure.access_state",
+      "all_of": [
+        "\\b(direct\\w*|in.person|walk.in|directly|direkt|personlig|doğrudan|gişesinde)\\b",
+        "\\b(visa|visum|vize|application|submission|lodge|file|consulat\\w*|mission|ambassad\\w*|konsulat\\w*|konsoloslu\\w*|başvuru\\w*|ansök\\w*|handlingar)\\b"
+      ]
+    },
+    {
+      "id": "provider-topic",
+      "fact_key": "fact:mission_requires_vfs_only",
+      "all_of": [
+        "\\b(vfs|outsourc\\w*|service\\s+provider|external\\s+(?:company|provider|service)|leverantör|aracı\\s+kurum|harici\\s+kurum)\\b"
+      ]
+    },
+    {
+      "id": "visa-decision-topic",
+      "fact_key": "fact:visa_refusal_exists",
+      "all_of": [
+        "\\b(visa|visum|vize)\\b",
+        "\\b(refus\\w*|reject\\w*|deny|denied|pend\\w*|withdraw\\w*|avslag\\w*|avslå\\w*|avslagits|beslut\\w*|redd\\w*|ret\\b|karar|inceleme\\w*|handlägg\\w*)\\b"
+      ]
+    },
+    {
+      "id": "decision-service-topic",
+      "fact_key": "fact:decision_notice_date",
+      "all_of": [
+        "\\b(decision|refusal|notice|notification|served|received|delgiv\\w*|beslut\\w*|avslag\\w*|karar|tebliğ|bildir\\w*)\\b",
+        "\\b(?:\\d{4}-\\d{2}-\\d{2}|\\d{1,2}[./]\\d{1,2}[./]\\d{4})\\b"
+      ]
+    },
+    {
+      "id": "appeal-receipt-topic",
+      "fact_key": "fact:appeal_submission_date",
+      "all_of": [
+        "\\b(appeal\\w*|overklag\\w*|itiraz\\w*|dilekç\\w*)\\b",
+        "\\b(receiv\\w*|arriv\\w*|logg\\w*|post\\w*|sent|mott\\w*|kom\\s+in|registr\\w*|gönder\\w*|alınd\\w*|teslim\\w*|kayıt\\w*)\\b"
+      ]
+    },
+    {
+      "id": "former-spouse-possession-topic",
+      "fact_key": "fact:authority_possesses_information",
+      "all_of": [
+        "\\b(former\\s+spouse|ex.spouse|former\\s+partner|tidigare\\s+mak\\w*|före\\s+detta\\s+mak\\w*|eski\\s+eş\\w*)\\b",
+        "\\b(file|record\\w*|information|statement|testimony|account|akten|akt|uppgifter|informationen|dosya\\w*|beyan\\w*|bilgi\\w*)\\b"
+      ]
+    },
+    {
+      "id": "former-spouse-reliance-topic",
+      "fact_key": "fact:decisive_former_spouse_information",
+      "all_of": [
+        "\\b(former\\s+spouse|ex.spouse|tidigare\\s+mak\\w*|före\\s+detta\\s+mak\\w*|eski\\s+eş\\w*)\\b",
+        "\\b(rely|relie\\w*|decisive|central|determinative|grund|avgörande|dayan\\w*|belirleyici)\\b"
+      ]
+    },
+    {
+      "id": "predecision-access-request",
+      "fact_key": "fact:information_requested_predecision",
+      "all_of": [
+        "\\b(request\\w*|ask\\w*|seek|requested|bad\\s+om|begär\\w*|talep\\w*)\\b",
+        "\\b(file|information|statement|record\\w*|akt|insyn|dosya\\w*|bilgi\\w*)\\b"
+      ]
+    },
+    {
+      "id": "predecision-communication",
+      "fact_key": "fact:authority_communication_state",
+      "all_of": [
+        "\\b(information|record\\w*|material|statement|testimony|file|informationen|uppgifter|materialet|dosya\\w*|belge\\w*|bilgi\\w*)\\b",
+        "\\b(disclos\\w*|communicat\\w*|share\\w*|provide|unavail\\w*|lämna\\s+ut|visa|paylaş\\w*|açıkla\\w*)\\b"
+      ]
+    },
+    {
+      "id": "confidentiality-topic",
+      "fact_key": "fact:confidentiality_review_state",
+      "all_of": [
+        "\\b(confidential\\w*|secrecy|sekretess|gizli\\w*|mahrem\\w*)\\b"
+      ]
+    }
+  ],
+  "limitations": [
+    "High-recall retrieval does not establish truth, polarity, speaker, relevance, exception or legal consequences.",
+    "Absent retrieved passages are not evidence that nothing relevant occurred."
+  ]
+}

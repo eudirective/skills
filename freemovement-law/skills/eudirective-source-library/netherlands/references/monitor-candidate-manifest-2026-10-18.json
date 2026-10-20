@@ -1,0 +1,1638 @@
+{
+  "manifest_version": "0.2.0-candidate",
+  "pack": "netherlands-national-source-candidates",
+  "jurisdiction": "NL",
+  "inventory_research_date": "2026-10-18",
+  "scope": "Bounded discovery of Dutch legislation and reuse routes, EU/EEA/Swiss free movement and family routes, third-country family procedures, UK Withdrawal Agreement, visas and mission practice, procedure and appeals, public access, privacy, oversight, legal aid, civil-status evidence and court search. This is not a complete inventory or legal-equivalence opinion.",
+  "status": "partially_retrieved_review_candidates",
+  "retrieval_status": "49 candidate pages converted; 0 PDFs preserved without text extraction; 1 discovery surfaces had no stable body; failures are recorded per item; no source accepted",
+  "accepted_source_count": 0,
+  "candidate_source_count": 52,
+  "official_hosts": [
+    "autoriteitpersoonsgegevens.nl",
+    "data.overheid.nl",
+    "government.nl",
+    "ind.nl",
+    "n-lex.europa.eu",
+    "nationaleombudsman.nl",
+    "netherlandsworldwide.nl",
+    "officielebekendmakingen.nl",
+    "raadvanstate.nl",
+    "rechtspraak.nl",
+    "rechtsbijstand.nl",
+    "wetten.overheid.nl",
+    "zoek.officielebekendmakingen.nl"
+  ],
+  "secondary_hosts": [],
+  "comparison_seed": {
+    "jurisdiction": "Denmark",
+    "source": "Danish EU free-movement residence regulation and official guidance",
+    "relationship_note": "Dutch Aliens Decree provisions and IND procedures have close functional relationships to the seed, but the Dutch legislation, competent authorities and remedies are distinct. Preserve EU, EEA EFTA, Swiss bilateral, returning-Dutch, domestic Dutch-family, third-country-sponsor and UK Withdrawal Agreement routes separately. No legal equivalence is asserted."
+  },
+  "previous_findings_carried_forward": [
+    "Use prior country packs, source taxonomy and acquisition notes as discovery leads only; verify each Dutch candidate with its responsible first-party publisher.",
+    "Carry forward the sustainability rule: stable-looking identifiers, documented APIs, open-data laws or XML availability do not by themselves prove live access, reuse rights, version completeness or deterministic conversion.",
+    "The N-Lex Netherlands connector is a national-law discovery route only. It does not establish coverage of guidance, forms, courts, oversight or regional/municipal practice.",
+    "Compare legislation, administrative guidance, forms, visa and mission practice, remedies, public access, privacy, oversight, legal aid and case law separately.",
+    "Keep Swiss and EEA EFTA routes distinct from EU-law coverage, and check domestic Dutch sponsor rules separately from mobile-Dutch EU-law cases."
+  ],
+  "search_coverage": [
+    {
+      "source_class": "National legislation, official publication, versioning and reuse",
+      "search_outcome": "Official Wetten records identify the Aliens Act, Aliens Decree, Aliens Regulation, Aliens Circular, General Administrative Law Act, Open Government Act and Re-use of Public Sector Information Act. Official publications provide original Gazette records. The BWB dataset page advertises XML access and an SRU manual.",
+      "official_channels": [
+        "Wetten.overheid.nl",
+        "Officiële bekendmakingen",
+        "Data.overheid.nl",
+        "N-Lex"
+      ],
+      "query_terms": [
+        "Netherlands national immigration law official BWB",
+        "Vreemdelingenwet 2000 BWBR0011823",
+        "Vreemdelingenbesluit 2000 BWBR0011825",
+        "Voorschrift Vreemdelingen 2000 BWBR0012002",
+        "Vreemdelingencirculaire 2000 BWBR0012288",
+        "Basis Wetten Bestand XML SRU"
+      ],
+      "languages": [
+        "nl",
+        "en"
+      ],
+      "coverage_limit": "Wetten.overheid.nl was blocked to direct opening by the research client. Official indexed pages exposed metadata and text excerpts, but no raw XML/SRU response, current record replay, publisher terms review or conversion was performed. Opening the Data.overheid catalog returned a research-client 502; this is not evidence of publisher downtime. The BWB route is promising but must be checked for current consolidated records, retrieval limits, reuse conditions and complete amendment history."
+    },
+    {
+      "source_class": "EU/EEA/Swiss free movement, family, residence and UK Withdrawal Agreement",
+      "search_outcome": "IND provides distinct pages for EU/EEA/Swiss citizens, non-EU family members under EU law, returning Dutch nationals, permanent residence, changed family circumstances, third-country sponsor permits, Dutch-child residence and UK Withdrawal Agreement cases.",
+      "official_channels": [
+        "IND",
+        "Government.nl"
+      ],
+      "query_terms": [
+        "site:ind.nl/en EU EEA Swiss citizen family member residence Netherlands",
+        "site:ind.nl/en returning with Dutch national EU EEA Switzerland",
+        "site:ind.nl/en Withdrawal Agreement Brexit residence",
+        "site:ind.nl/en residence permit partner minor Dutch child"
+      ],
+      "languages": [
+        "en",
+        "nl"
+      ],
+      "coverage_limit": "Search was limited to central IND and Government.nl pages. Municipality practice, Dutch-language policy and circular provisions, all family subcategories, forms and historical page versions need separate review."
+    },
+    {
+      "source_class": "Visa facilitation, consular instructions and mission routing",
+      "search_outcome": "NetherlandsWorldwide publishes a family-member EU/EEA/Swiss checklist, visa-facilitation guidance, separate Dutch-family guidance and a location finder for applications. An older 2022 checklist PDF remains indexed alongside the current web checklist.",
+      "official_channels": [
+        "NetherlandsWorldwide",
+        "Ministry of Foreign Affairs"
+      ],
+      "query_terms": [
+        "site:netherlandsworldwide.nl visa EU EEA Swiss family checklist",
+        "Netherlands visa facilitation EU family member application location",
+        "where apply Schengen visa Netherlands embassy VFS TLS"
+      ],
+      "languages": [
+        "en"
+      ],
+      "coverage_limit": "The country-specific mission pages and local appointment/document instructions were not exhaustively sampled. The legacy 2022 PDF is not treated as current. Country selector output, representation agreements, service-provider locations and page attachments require dynamic parent-page discovery."
+    },
+    {
+      "source_class": "Procedure, objections, judicial review, courts and legal aid",
+      "search_outcome": "IND publishes an objection/appeal route and decision-period information. Rechtspraak provides an official case-law search and ECLI guidance; the Council of State explains that a subset of migration decisions is published later and standard-form decisions may not appear in full. The Legal Aid Board has public immigration/asylum service information.",
+      "official_channels": [
+        "IND",
+        "Rechtspraak",
+        "Council of State",
+        "Raad voor Rechtsbijstand",
+        "National Ombudsman"
+      ],
+      "query_terms": [
+        "site:ind.nl/en object appeal decision IND",
+        "site:rechtspraak.nl uitspraken vreemdelingenrecht ECLI zoeken",
+        "site:raadvanstate.nl publication migration decisions article 91 Vw",
+        "Netherlands legal aid immigration official Raad voor Rechtsbijstand"
+      ],
+      "languages": [
+        "nl",
+        "en"
+      ],
+      "coverage_limit": "Court publication is selective, and the Council of State describes delayed full-text publication for some decisions. No completeness, pagination, API, update-feed or legal-aid eligibility audit was performed. Individual case files and personal records are outside scope."
+    },
+    {
+      "source_class": "Access to information, privacy, oversight and civil-status evidence",
+      "search_outcome": "Official candidates include the Dutch Woo and reuse legislation, the National Ombudsman complaint routes, Autoriteit Persoonsgegevens complaint information and NetherlandsWorldwide document-legalisation guidance. Government.nl provides BRP registration information.",
+      "official_channels": [
+        "Government.nl",
+        "Wetten.overheid.nl",
+        "National Ombudsman",
+        "Autoriteit Persoonsgegevens",
+        "NetherlandsWorldwide"
+      ],
+      "query_terms": [
+        "Netherlands Wet open overheid Woo official",
+        "National Ombudsman complaint IND Netherlands",
+        "Autoriteit Persoonsgegevens complaint privacy official",
+        "NetherlandsWorldwide foreign documents apostille Netherlands",
+        "Government.nl register Personal Records Database resident"
+      ],
+      "languages": [
+        "nl",
+        "en"
+      ],
+      "coverage_limit": "This is a first-pass central-government search. Local ombudsmen, municipal access rules and civil registries, detailed access-request procedures, EU information-system remedies and exact reuse rights for each publisher remain open."
+    }
+  ],
+  "sources": [
+    {
+      "id": "nl-01",
+      "title": "N-Lex Netherlands national-law discovery",
+      "source_type": "national_law_discovery",
+      "language": "en",
+      "url": "https://n-lex.europa.eu/n-lex/",
+      "publisher_identifier": {
+        "system": "N-Lex",
+        "record": "Netherlands national-law discovery route"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official EU discovery portal identified; verify all candidate records at the Dutch publisher.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Discovery portal",
+      "version_evidence": "No candidate record or full Dutch-law coverage established in this review.",
+      "note": "Discovery lead only; not a monitored source or a directory for other source classes.",
+      "topic_ids": [
+        "legislation",
+        "discovery"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-01.md",
+      "source_sha256": "1a3cca0edbf30da3531e72d5aa446a465f1cc8588f32a9cef05e8fa2dded0b53",
+      "converted_sha256": "7a9a781dfbdcc54ebabb96433b4af5d30362b982d6f0a8b4cde02ee24ec55c3b",
+      "source_bytes": 6831,
+      "resolved_url": "https://n-lex.europa.eu/n-lex/"
+    },
+    {
+      "id": "nl-02",
+      "title": "Wetten.overheid.nl official consolidated legislation portal",
+      "source_type": "official_legislation_portal",
+      "language": "nl",
+      "url": "https://wetten.overheid.nl/",
+      "publisher_identifier": {
+        "system": "Wetten.overheid.nl",
+        "record": "Official consolidated Dutch legislation portal"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official publisher identified through indexed records; direct opening was blocked by the research client robots restriction.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Versioned HTML records with save/export controls reported; runtime formats not verified",
+      "version_evidence": "Indexed pages expose BWB identifiers, date-based versions, current-status and amendment metadata.",
+      "note": "Do not treat research-client blocking as publisher downtime. Verify direct retrieval, exports, identifiers and exact content terms.",
+      "topic_ids": [
+        "legislation",
+        "versioning"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-02.md",
+      "source_sha256": "db1f84fe76062dc0117ee420ae8fd34b97452addd1c79e447fc5863daa16ce63",
+      "converted_sha256": "fadbb0eab795f994fd3f44d2195f297a33b6e8b4b2c12eb065d0f92e376a27a2",
+      "source_bytes": 26104,
+      "resolved_url": "https://wetten.overheid.nl/"
+    },
+    {
+      "id": "nl-03",
+      "title": "Basis Wetten Bestand open-data dataset and SRU guide",
+      "source_type": "legislation_open_data_catalog",
+      "language": "nl",
+      "url": "https://data.overheid.nl/dataset/basis-wetten-bestand",
+      "publisher_identifier": {
+        "system": "Data.overheid.nl",
+        "record": "Basis Wetten Bestand dataset"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official catalog result advertises XML records and an SRU guide; direct catalog fetch returned a research-client 502 and live query was not tested.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Dataset catalog advertises XML records and SRU service",
+      "version_evidence": "Dataset statement describes the Base Laws file; update cadence and current snapshot were not established.",
+      "note": "Promising route with no registration requirement documented in this review. Confirm actual access, result paging, version semantics, exact licensing, schema and converter before choosing it.",
+      "topic_ids": [
+        "legislation",
+        "api",
+        "reuse"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-03.md",
+      "source_sha256": "df15b15097829294ac83a5147bad006487a6b9bc5e69de0e564b26c7b39e3ab7",
+      "converted_sha256": "3917a0ad904066d832cf7be870c5f76dcd549fa856f8467337a1647fa7412784",
+      "source_bytes": 59628,
+      "resolved_url": "https://data.overheid.nl/dataset/basis-wetten-bestand"
+    },
+    {
+      "id": "nl-04",
+      "title": "Officiële bekendmakingen official publications portal",
+      "source_type": "official_gazette_portal",
+      "language": "nl",
+      "url": "https://www.officielebekendmakingen.nl/",
+      "publisher_identifier": {
+        "system": "Officiële bekendmakingen",
+        "record": "Official Gazette and parliamentary publication portal"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official publication portal and record formats identified through official records.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "HTML record pages with PDF, ODT, XML and metadata links on sampled records",
+      "version_evidence": "Permanent publication identifiers and publication metadata are exposed on sample records.",
+      "note": "Original publication and amendment chronology source; does not replace current consolidated text.",
+      "topic_ids": [
+        "legislation",
+        "gazette",
+        "amendments"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-04.md",
+      "source_sha256": "ac94cac90cfbd1508ef7a4ba8f311afae9099ce417fd060f4dbccc05d08dc228",
+      "converted_sha256": "8e23e2c20f5bed6359cdba4f543eff52c6a8491f1575c29f2e0bea2a7e34ff2f",
+      "source_bytes": 16666,
+      "resolved_url": "https://www.officielebekendmakingen.nl/"
+    },
+    {
+      "id": "nl-05",
+      "title": "Staatsblad 2026, 196 sample publication record",
+      "source_type": "official_gazette_record",
+      "language": "nl",
+      "url": "https://www.officielebekendmakingen.nl/stb-2026-196",
+      "publisher_identifier": {
+        "system": "Staatsblad",
+        "record": "stb-2026-196"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official record page and exposed publication formats identified.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "PDF, ODT, XML and HTML exposed on record page",
+      "version_evidence": "Publication record carries date and metadata; unrelated sample, not an immigration amendment candidate.",
+      "note": "Representative format/identity probe only; use only if relevant amendment search identifies a Dutch immigration act.",
+      "topic_ids": [
+        "gazette",
+        "retrieval"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-05.md",
+      "source_sha256": "b40e8c9621be3d0a4983aaa3b8fce294c444705af127d6e1314f8c8974b3b5c0",
+      "converted_sha256": "225d0e6f876b08c39bc93b6322b44ac5ecc5d19b3f7dc1981b589cffed9506ca",
+      "source_bytes": 27637,
+      "resolved_url": "https://zoek.officielebekendmakingen.nl/stb-2026-196"
+    },
+    {
+      "id": "nl-06",
+      "title": "Staatscourant 2026, 21975 sample publication record",
+      "source_type": "official_gazette_record",
+      "language": "nl",
+      "url": "https://zoek.officielebekendmakingen.nl/stcrt-2026-21975.html",
+      "publisher_identifier": {
+        "system": "Staatscourant",
+        "record": "stcrt-2026-21975"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official publication record identified in search results.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "HTML record with publication download representations",
+      "version_evidence": "Sample 2026 record; relevance to specific immigration amendments not established.",
+      "note": "Illustrates Gazette search/record route; not itself an in-scope immigration policy circular.",
+      "topic_ids": [
+        "gazette",
+        "retrieval"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-06.md",
+      "source_sha256": "4fe3f3b2ab0c79d14e3b7497d24858eb72ed8366721a56d31cb5d7a29de4eadf",
+      "converted_sha256": "117a68a03a4ebc53d6bcb6051d4fd493c3d5f901139a4c935b3a5b1ac4af1ddf",
+      "source_bytes": 45227,
+      "resolved_url": "https://zoek.officielebekendmakingen.nl/stcrt-2026-21975.html"
+    },
+    {
+      "id": "nl-07",
+      "title": "Wet hergebruik van overheidsinformatie (BWBR0036795)",
+      "source_type": "publisher_reuse_law",
+      "language": "nl",
+      "url": "https://wetten.overheid.nl/BWBR0036795/",
+      "publisher_identifier": {
+        "system": "BWB",
+        "record": "BWBR0036795"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official indexed consolidated record inspected; current version metadata visible in result.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Versioned Wetten record; page offers electronic save/export controls",
+      "version_evidence": "Indexed result reported text current from 21 November 2025; related provisions address reuse and machine-readable formats.",
+      "note": "General statute is not proof that every Wetten record, database, attachment or court page is reusable; resolve exact source terms and rights.",
+      "topic_ids": [
+        "reuse",
+        "legislation"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-07.md",
+      "source_sha256": "f46323ba91261795f69f56c92efd1c7ef4b6c35f9ebd5fb25230fad8db9a4aa7",
+      "converted_sha256": "776256ae1ce5575a601f3acf4f34402131d57ee3f330bd05fe5172687b91776e",
+      "source_bytes": 301582,
+      "resolved_url": "https://wetten.overheid.nl/BWBR0036795/2025-11-21"
+    },
+    {
+      "id": "nl-08",
+      "title": "Wet open overheid (BWBR0045754)",
+      "source_type": "public_access_legislation",
+      "language": "nl",
+      "url": "https://wetten.overheid.nl/BWBR0045754/",
+      "publisher_identifier": {
+        "system": "BWB",
+        "record": "BWBR0045754"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official indexed consolidated record inspected; identifier and effective-date metadata visible.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Versioned Wetten HTML record",
+      "version_evidence": "Indexed record reported current from 20 February 2026, with undated amendments noted.",
+      "note": "Access-to-information law candidate; it does not establish a reusable content license.",
+      "topic_ids": [
+        "public_access",
+        "legislation"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-08.md",
+      "source_sha256": "1b1c803f68b3266d010087bd1e60656e0b83da349d67ebb0c3cee30646d025cb",
+      "converted_sha256": "7d45c0905f8edbb6a93900d7fe84c7c606befc4815bf46d43edcfa788518075a",
+      "source_bytes": 688205,
+      "resolved_url": "https://wetten.overheid.nl/BWBR0045754/2026-08-15"
+    },
+    {
+      "id": "nl-09",
+      "title": "Regeling elektronische publicaties (BWBR0045086)",
+      "source_type": "electronic_publication_legislation",
+      "language": "nl",
+      "url": "https://wetten.overheid.nl/BWBR0045086/",
+      "publisher_identifier": {
+        "system": "BWB",
+        "record": "BWBR0045086"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official indexed consolidated record inspected; 2026 effective version metadata visible.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Versioned Wetten record",
+      "version_evidence": "Indexed result reports version current from 1 January 2026 and XML/publication standards references.",
+      "note": "Useful for publication/consolidation context, not direct proof of API availability or third-party retrieval permission.",
+      "topic_ids": [
+        "publication",
+        "legislation",
+        "retrieval"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-09.md",
+      "source_sha256": "3e5b02388a47839b831c022abd23da8f4ab898718ae53e4d22a507dae02cd96c",
+      "converted_sha256": "d69b3ffb91322aee498057be960cfbf508099e143bf6db15d818b4922ded17bf",
+      "source_bytes": 276993,
+      "resolved_url": "https://wetten.overheid.nl/BWBR0045086/2026-01-01"
+    },
+    {
+      "id": "nl-10",
+      "title": "Vreemdelingenwet 2000 (BWBR0011823)",
+      "source_type": "immigration_primary_legislation",
+      "language": "nl",
+      "url": "https://wetten.overheid.nl/BWBR0011823/",
+      "publisher_identifier": {
+        "system": "BWB",
+        "record": "BWBR0011823"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official indexed dated records inspected; direct Wetten page unavailable to this research client.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Versioned consolidated legal text; export behavior not replayed",
+      "version_evidence": "An indexed record inspected in April 2026 reported a version current from 28 February 2026 plus future/undated changes; October text is not confirmed.",
+      "note": "Framework law for migration; not a dedicated EU-family instrument. Preserve the amendment chain and exact effective date.",
+      "topic_ids": [
+        "immigration_law",
+        "appeal",
+        "legislation"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-10.md",
+      "source_sha256": "20d174499ca5ecad140745a94f5cb90faf600bb43967972238b9fce612cf04cb",
+      "converted_sha256": "6589593f62ee0840390052cc00c116bf44adfb6c68ac98e58bf3614ce2d94ef7",
+      "source_bytes": 1855518,
+      "resolved_url": "https://wetten.overheid.nl/BWBR0011823/2026-09-01"
+    },
+    {
+      "id": "nl-11",
+      "title": "Vreemdelingenbesluit 2000 (BWBR0011825)",
+      "source_type": "immigration_implementing_regulation",
+      "language": "nl",
+      "url": "https://wetten.overheid.nl/BWBR0011825/",
+      "publisher_identifier": {
+        "system": "BWB",
+        "record": "BWBR0011825"
+      },
+      "functional_relationship": "close_functional_match",
+      "verification_status": "Official indexed current and historical records inspected; direct Wetten page unavailable to this research client.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Versioned consolidated legal text with article-level links",
+      "version_evidence": "An indexed result crawled about five months before this review showed a version from 1 January 2026 and Article 8.7 provisions referenced by IND; October text is not confirmed.",
+      "note": "Functional counterpart for national residence implementation; applicability and specific class scope must be checked provision by provision.",
+      "topic_ids": [
+        "free_movement",
+        "immigration_law",
+        "legislation"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-11.md",
+      "source_sha256": "680f62cd6afc4e7c9f83cd148647b1484a0debbe1126f6039fd4394b446ba1a2",
+      "converted_sha256": "f6eb9eb2d117231836475d491d93f45526c7de40f864802bc9cfb1d875871e81",
+      "source_bytes": 3250025,
+      "resolved_url": "https://wetten.overheid.nl/BWBR0011825/2026-09-25"
+    },
+    {
+      "id": "nl-12",
+      "title": "Voorschrift Vreemdelingen 2000 (BWBR0012002)",
+      "source_type": "immigration_implementing_rule",
+      "language": "nl",
+      "url": "https://wetten.overheid.nl/BWBR0012002/",
+      "publisher_identifier": {
+        "system": "BWB",
+        "record": "BWBR0012002"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official indexed record inspected; Wetten result showed dated and future amendment information.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Versioned regulation with appendices",
+      "version_evidence": "An indexed result inspected in April 2026 reported effect from 1 April 2026 and a future change from 1 June 2026; October state is unconfirmed.",
+      "note": "Forms and procedural details may be distributed in appendices; monitor annex identity and version separately.",
+      "topic_ids": [
+        "immigration_law",
+        "forms",
+        "legislation"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-12.md",
+      "source_sha256": "68466917e259ea9252020ce94b3bd428769fb5db3c738eae5223d8a631def119",
+      "converted_sha256": "4a816adfbf43a3ecfbfa936b3784932bbbcb0aadfceb949270585bc2c45ea3eb",
+      "source_bytes": 2422089,
+      "resolved_url": "https://wetten.overheid.nl/BWBR0012002/2026-07-01"
+    },
+    {
+      "id": "nl-13",
+      "title": "Vreemdelingencirculaire 2000 (C) (BWBR0012288)",
+      "source_type": "immigration_policy_circular",
+      "language": "nl",
+      "url": "https://wetten.overheid.nl/BWBR0012288/",
+      "publisher_identifier": {
+        "system": "BWB",
+        "record": "BWBR0012288"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official indexed dated record inspected; direct Wetten page unavailable to this research client.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Versioned and sectional consolidated circular",
+      "version_evidence": "An indexed result inspected in April 2026 reported the text current from 4 April 2026; IND points EU citizens to section B10/2. October text is not confirmed.",
+      "note": "Policy guidance has its own update stream and legal status; do not merge it with binding statutes or public-facing IND pages.",
+      "topic_ids": [
+        "policy",
+        "free_movement",
+        "legislation"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-13.md",
+      "source_sha256": "3816e9d8a19394b025f6fcc3511eb0ce02a3993270243b031775f228bd70eeb1",
+      "converted_sha256": "eba531eaf903aed64ab1b22fdd1d4f47b90a0df747ed12cadd71c96e9abcb563",
+      "source_bytes": 5922270,
+      "resolved_url": "https://wetten.overheid.nl/BWBR0012288/2026-10-01"
+    },
+    {
+      "id": "nl-14",
+      "title": "Algemene wet bestuursrecht (BWBR0005537)",
+      "source_type": "administrative_procedure_legislation",
+      "language": "nl",
+      "url": "https://wetten.overheid.nl/BWBR0005537/",
+      "publisher_identifier": {
+        "system": "BWB",
+        "record": "BWBR0005537"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official indexed consolidated record inspected; effective-date and future-change metadata visible.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Versioned consolidated legal text",
+      "version_evidence": "Indexed record reported current from 1 January 2026 and future changes from 2027.",
+      "note": "General administrative procedure candidate; determine sector-specific exceptions and the correct administrative/court route.",
+      "topic_ids": [
+        "administrative_procedure",
+        "appeal",
+        "legislation"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-14.md",
+      "source_sha256": "d2f8df9dce1b63b8033e1e222315532ed233cedfadcb3746a88d25c34e23ae7c",
+      "converted_sha256": "e5eab2eb629de273984e1c3db7cc6b94705ac35accc973c45fb27891eba404aa",
+      "source_bytes": 4204181,
+      "resolved_url": "https://wetten.overheid.nl/BWBR0005537/2026-08-15"
+    },
+    {
+      "id": "nl-15",
+      "title": "IND EU, EEA or Swiss citizens parent hub",
+      "source_type": "official_residence_guidance_index",
+      "language": "en",
+      "url": "https://ind.nl/en/residence-permits/eu-eea-or-swiss-citizens",
+      "publisher_identifier": {
+        "system": "IND",
+        "record": "EU, EEA or Swiss citizens hub"
+      },
+      "functional_relationship": "close_functional_match",
+      "verification_status": "Official IND hub and linked route categories reviewed.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "HTML parent index with route links",
+      "version_evidence": "Current hub links separate stay, family, Dutch-return, permanent-residence, UK agreement and registration pages.",
+      "note": "Monitor the parent-child relationship; route labels may change independently of the linked page content.",
+      "topic_ids": [
+        "free_movement",
+        "guidance",
+        "discovery"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-15.md",
+      "source_sha256": "158b13858066d5a259f364772113fbadadc43d19984292f4e0ddb8a1d0a70a9e",
+      "converted_sha256": "ba97dc29529be12863163acd349285662dd4a3395e29b63d9ca2eca19b0245df",
+      "source_bytes": 173111,
+      "resolved_url": "https://ind.nl/en/residence-permits/eu-eea-or-swiss-citizens"
+    },
+    {
+      "id": "nl-16",
+      "title": "Staying in the Netherlands as an EU, EEA or Swiss citizen",
+      "source_type": "free_movement_guidance",
+      "language": "en",
+      "url": "https://ind.nl/en/residence-permits/eu-eea-or-swiss-citizens/staying-in-the-netherlands-as-an-eu-eea-or-swiss-citizen",
+      "publisher_identifier": {
+        "system": "IND",
+        "record": "EU/EEA/Swiss citizen stay page"
+      },
+      "functional_relationship": "close_functional_match",
+      "verification_status": "Official IND page content reviewed; visible update date recorded.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "HTML guidance with legal references and child links",
+      "version_evidence": "Last updated 10 July 2026; cites Aliens Decree Articles 8.7, 8.11 and 8.12 and Circular B10/2.",
+      "note": "IND groups EU, EEA and Swiss practical rights; verify the legal route and territorial scope in primary law and agreements.",
+      "topic_ids": [
+        "free_movement",
+        "guidance",
+        "residence"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-16.md",
+      "source_sha256": "66f613ca9f8753cbf0caa5f2a9ebcfc549bd61b0b36bbe35ccddeb4f2d0fd61a",
+      "converted_sha256": "3167b37f2b1f50c2b817880e026248bf62899d468088f5c7797cd3012a00fb71",
+      "source_bytes": 51776,
+      "resolved_url": "https://ind.nl/en/residence-permits/eu-eea-or-swiss-citizens/staying-in-the-netherlands-as-an-eu-eea-or-swiss-citizen"
+    },
+    {
+      "id": "nl-17",
+      "title": "Registering with the IND as an EU, EEA or Swiss citizen",
+      "source_type": "free_movement_registration_guidance",
+      "language": "en",
+      "url": "https://ind.nl/en/residence-permits/eu-eea-or-swiss-citizens/registering-with-the-ind-as-an-eu-eea-or-swiss-citizen",
+      "publisher_identifier": {
+        "system": "IND",
+        "record": "EU/EEA/Swiss registration page"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official IND page content reviewed; visible update date recorded.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "HTML guidance and linked PDF form",
+      "version_evidence": "Last updated 17 June 2026; cites Aliens Decree Articles 8.7, 8.8, 8.11 and 8.12 and Circular B10/2.",
+      "note": "Page describes a narrow IND registration situation; do not generalize it to municipal BRP registration.",
+      "topic_ids": [
+        "registration",
+        "free_movement",
+        "guidance"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-17.md",
+      "source_sha256": "bcd36d28f688ecad3b44d5d0d26fbe65572f83f023a82ff303c1ce256d0c0982",
+      "converted_sha256": "0397af06b8e0bd22048552a3f6adb65f3edb40f71512753ded8d90d97bc0f69f",
+      "source_bytes": 55485,
+      "resolved_url": "https://ind.nl/en/residence-permits/eu-eea-or-swiss-citizens/registering-with-the-ind-as-an-eu-eea-or-swiss-citizen"
+    },
+    {
+      "id": "nl-18",
+      "title": "Verification against EU law for Union citizen family members",
+      "source_type": "eu_family_residence_guidance",
+      "language": "en",
+      "url": "https://ind.nl/en/residence-permits/family-and-partner/verification-against-eu-law-for-union-citizen-family-members",
+      "publisher_identifier": {
+        "system": "IND",
+        "record": "Verification against EU law page"
+      },
+      "functional_relationship": "close_functional_match",
+      "verification_status": "Official IND page content reviewed; current update date and form links observed.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "HTML application guidance with dynamic document questionnaire and PDF links",
+      "version_evidence": "Last updated 25 September 2026; cites Aliens Decree Articles 8.7, 8.9, 8.13 and Circular B10/2.",
+      "note": "For non-EU family of EU/EEA/Swiss sponsors; Dutch national cases are conditional on EU free-movement circumstances.",
+      "topic_ids": [
+        "eu_family",
+        "residence",
+        "guidance"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-18.md",
+      "source_sha256": "78f057a3b726c4cf88ee3663da5a51443a0704e44a7e704ad86e211ccb6e5f3a",
+      "converted_sha256": "74fdde844cf00897393da743bf8618fc493ccb438ec1a75d9b423774c534cee9",
+      "source_bytes": 72742,
+      "resolved_url": "https://ind.nl/en/residence-permits/family-and-partner/verification-against-eu-law-for-union-citizen-family-members"
+    },
+    {
+      "id": "nl-19",
+      "title": "Returning with a Dutch national from another EU/EEA country or Switzerland",
+      "source_type": "mobile_national_family_guidance",
+      "language": "en",
+      "url": "https://ind.nl/en/residence-permits/eu-eea-or-swiss-citizens/returning-with-a-dutch-national-from-another-eueea-country-or-switzerland",
+      "publisher_identifier": {
+        "system": "IND",
+        "record": "Returning Dutch citizen family page"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official IND page opened; current update date and page content checked.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "HTML guidance with application questionnaire and form links",
+      "version_evidence": "Last updated 7 October 2026; describes EU-law return conditions and separately the pre-cutoff UK route.",
+      "note": "Separate the returning/mobile Dutch route from ordinary domestic Dutch-family immigration.",
+      "topic_ids": [
+        "mobile_national",
+        "eu_family",
+        "guidance"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-19.md",
+      "source_sha256": "9ce175489102fc4e1d474805ef76fc5f38a66e557b2780ffcef41bf42067f942",
+      "converted_sha256": "e05dd97fef2b03c5069e1e6dd5dc4baa3770f8dd8722f30d86404adf99b1c65f",
+      "source_bytes": 67235,
+      "resolved_url": "https://ind.nl/en/residence-permits/eu-eea-or-swiss-citizens/returning-with-a-dutch-national-from-another-eueea-country-or-switzerland"
+    },
+    {
+      "id": "nl-20",
+      "title": "Permanent residency for Union citizens and their family",
+      "source_type": "permanent_free_movement_guidance",
+      "language": "en",
+      "url": "https://ind.nl/en/residence-permits/eu-eea-or-swiss-citizens/permanent-residency-for-union-citizens-and-their-family",
+      "publisher_identifier": {
+        "system": "IND",
+        "record": "Permanent residency Union citizens and family"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official IND page content reviewed; visible update date and form link observed.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "HTML page with online application and PDF form",
+      "version_evidence": "Last updated 20 May 2026; includes EU/EEA/Swiss citizens, family members and qualifying Dutch-family cases.",
+      "note": "Separate long-term EU resident status for third-country nationals from permanent residence under free-movement rules.",
+      "topic_ids": [
+        "permanent_residence",
+        "free_movement",
+        "guidance"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-20.md",
+      "source_sha256": "fffff2de3c6ee9cc22b1d7522babd0bde174da4fd2d3a087b132a4d19d070ab6",
+      "converted_sha256": "f1145d0166f86e24839eef07468584310993bd20b81d63b9e32ca40ebd3477d5",
+      "source_bytes": 72362,
+      "resolved_url": "https://ind.nl/en/residence-permits/eu-eea-or-swiss-citizens/permanent-residency-for-union-citizens-and-their-family"
+    },
+    {
+      "id": "nl-21",
+      "title": "Staying in the Netherlands if situation with the EU citizen has changed",
+      "source_type": "retained_family_residence_guidance",
+      "language": "en",
+      "url": "https://ind.nl/en/replace-extend-renew-and-change/change/staying-in-the-netherlands-if-your-situation-with-the-eu-citizen-has-changed",
+      "publisher_identifier": {
+        "system": "IND",
+        "record": "Changed EU family situation page"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official IND page content reviewed; visible update date and form link observed.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "HTML guidance with PDF follow-up form",
+      "version_evidence": "Last updated 19 June 2026; cites Aliens Decree Articles 8.14 and 8.15 and Directive 2004/38 Articles 12 and 13.",
+      "note": "Covers death, relationship breakdown and retained residence; keep sponsor route and evidence distinct.",
+      "topic_ids": [
+        "retained_rights",
+        "eu_family",
+        "guidance"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-21.md",
+      "source_sha256": "a6263cb532afe9cbf7e94be2149d0953768f6a0fa3b872c33a78e44b20f851b6",
+      "converted_sha256": "a3a0e1cbd7776760f65e384f796c73228c984c0cce5a6aa9bc772409000821ac",
+      "source_bytes": 54322,
+      "resolved_url": "https://ind.nl/en/replace-extend-renew-and-change/change/staying-in-the-netherlands-if-your-situation-with-the-eu-citizen-has-changed"
+    },
+    {
+      "id": "nl-22",
+      "title": "Temporary residency based on Brexit Withdrawal Agreement",
+      "source_type": "withdrawal_agreement_guidance",
+      "language": "en",
+      "url": "https://ind.nl/en/residence-permits/withdrawal-agreement-brexit/temporary-residency-based-on-withdrawal-agreement",
+      "publisher_identifier": {
+        "system": "IND",
+        "record": "Withdrawal Agreement temporary residency page"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official IND page content reviewed; visible update date recorded.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "HTML guidance with linked forms",
+      "version_evidence": "Last updated 20 May 2026; describes residence/family criteria tied to pre-2021 facts.",
+      "note": "Keep the UK Withdrawal Agreement route separate from EU, EEA EFTA and Swiss free movement.",
+      "topic_ids": [
+        "withdrawal_agreement",
+        "guidance"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-22.md",
+      "source_sha256": "3fc4b7734b6b4b3b1828a6498335ec4cf4f64a73c4801bba59f254dc67f73767",
+      "converted_sha256": "5bdc9250952bba9ee5b53ceff0674b98cd629bf36b47f78fb7e60529f8fc2656",
+      "source_bytes": 76704,
+      "resolved_url": "https://ind.nl/en/residence-permits/withdrawal-agreement-brexit/temporary-residency-based-on-withdrawal-agreement"
+    },
+    {
+      "id": "nl-23",
+      "title": "Residence permit for partner (ordinary third-country route)",
+      "source_type": "third_country_family_residence_guidance",
+      "language": "en",
+      "url": "https://ind.nl/en/residence-permits/family-and-partner/residence-permit-for-partner",
+      "publisher_identifier": {
+        "system": "IND",
+        "record": "Regular partner residence permit page"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official IND page content reviewed; page links current separate application forms.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "HTML guidance with online forms and PDF attachments",
+      "version_evidence": "Current page result observed 18 October 2026; visible update date not captured.",
+      "note": "Ordinary Dutch sponsor immigration is not the EU-law family procedure. Retain this distinction in any source tags.",
+      "topic_ids": [
+        "third_country_family",
+        "guidance",
+        "forms"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-23.md",
+      "source_sha256": "e9ae456c83e268e4b227274eb00873aee65884593a775fe97cbfab04196b69c7",
+      "converted_sha256": "d6b0f2e450a877dca25c14784a9c87c0ce8afa73cac18bfbe0565539d23fdc6e",
+      "source_bytes": 36036,
+      "resolved_url": "https://ind.nl/en/residence-permits/family-and-partner/residence-permit-for-partner"
+    },
+    {
+      "id": "nl-24",
+      "title": "Residence permit for minor child to stay with parent",
+      "source_type": "third_country_child_residence_guidance",
+      "language": "en",
+      "url": "https://ind.nl/en/residence-permits/family-and-partner/residence-permit-for-minor-child-to-stay-with-parent",
+      "publisher_identifier": {
+        "system": "IND",
+        "record": "Minor child residence page"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official IND page opened; full route, update date and form details not extracted in this tranche.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "HTML guidance with form links",
+      "version_evidence": "Parent hub reviewed 18 October 2026; child page date not captured.",
+      "note": "Candidate for follow-up, separate from EU family and Chavez residence.",
+      "topic_ids": [
+        "third_country_family",
+        "child",
+        "guidance"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-24.md",
+      "source_sha256": "4ff85c70df8002227cfd789df26ecacc64540d4d9af45fdb18df66e1b886ab91",
+      "converted_sha256": "55b399264a4232520a77193ba160a7b10e5cf7ea506e3d04982c20bfeaf711ff",
+      "source_bytes": 36314,
+      "resolved_url": "https://ind.nl/en/residence-permits/family-and-partner/residence-permit-for-minor-child-to-stay-with-parent"
+    },
+    {
+      "id": "nl-25",
+      "title": "Residence with your minor Dutch child (Chavez)",
+      "source_type": "minor_dutch_child_residence_guidance",
+      "language": "en",
+      "url": "https://ind.nl/en/residence-permits/family-and-partner/residence-with-your-minor-dutch-child-chavez",
+      "publisher_identifier": {
+        "system": "IND",
+        "record": "Residence with minor Dutch child page"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official IND page content reviewed; visible update date and form links observed.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "HTML route guidance and forms",
+      "version_evidence": "Last updated 12 October 2026; cites family/dependency conditions and separate application forms.",
+      "note": "A Dutch child-specific derivative route; distinct from ordinary national partner/child sponsorship and mobile-Dutch return.",
+      "topic_ids": [
+        "family",
+        "minor_child",
+        "guidance"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-25.md",
+      "source_sha256": "939a642039238d888fa853f9bdb146c9b601f119297ed96d795f5af968e44615",
+      "converted_sha256": "97c5b11ed000bff2b7553c0a63c192c222601b6b6b6a43a68622fcd3e63e68ad",
+      "source_bytes": 61772,
+      "resolved_url": "https://ind.nl/en/residence-permits/family-and-partner/residence-with-your-minor-dutch-child-chavez"
+    },
+    {
+      "id": "nl-26",
+      "title": "Object to or appeal an IND decision",
+      "source_type": "administrative_remedy_guidance",
+      "language": "en",
+      "url": "https://ind.nl/en/after-your-application/object-to-or-appeal-decision",
+      "publisher_identifier": {
+        "system": "IND",
+        "record": "IND objection and court appeal page"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official IND page content reviewed; update date and scope list observed.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "HTML guidance linking to Rechtspraak procedures",
+      "version_evidence": "Last updated 10 August 2026; page lists decision categories and separates objection from court appeal.",
+      "note": "Confirm exact remedy and deadlines against each applicable decision and primary law; do not generalize from regular permits to every EU-family decision.",
+      "topic_ids": [
+        "appeal",
+        "remedy",
+        "guidance"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-26.md",
+      "source_sha256": "e61e7199178d515ee3cc2757e428af893180083615647d6bec5bbf3dfe956a5d",
+      "converted_sha256": "91d7b57942a0ad554ba4470a8ff744e489b63b3d037bfe16aee7f9de3138d3d2",
+      "source_bytes": 82002,
+      "resolved_url": "https://ind.nl/en/after-your-application/object-to-or-appeal-decision"
+    },
+    {
+      "id": "nl-27",
+      "title": "IND decision periods",
+      "source_type": "administrative_deadline_guidance",
+      "language": "en",
+      "url": "https://ind.nl/en/after-your-application/decision-periods",
+      "publisher_identifier": {
+        "system": "IND",
+        "record": "IND decision periods page"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official IND page reviewed through indexed result.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "HTML table indexed by application type",
+      "version_evidence": "Current page distinguishes EU-verification and other procedure deadlines; page-level last update not captured.",
+      "note": "Dynamic deadlines and statutory extensions need source-by-source validation and parent-page date monitoring.",
+      "topic_ids": [
+        "deadlines",
+        "procedure",
+        "guidance"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-27.md",
+      "source_sha256": "3407e6b17ebbb11c99cdfbaa51df774843e239654d8bf10ab3fdefe5d4f9353d",
+      "converted_sha256": "e7dbd5095b8025c1ff5ce6d785723b15dde25a0825ea6caf3ae23afd1e3ec0c5",
+      "source_bytes": 134022,
+      "resolved_url": "https://ind.nl/en/after-your-application/decision-periods"
+    },
+    {
+      "id": "nl-28",
+      "title": "IND application fees",
+      "source_type": "official_fee_schedule",
+      "language": "en",
+      "url": "https://ind.nl/en/fees-costs-of-an-application",
+      "publisher_identifier": {
+        "system": "IND",
+        "record": "IND fees and application costs"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official IND fee page URL identified from application route; current content not directly checked.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "HTML fee table; not tested",
+      "version_evidence": "Fees are mutable; verify date bands and fee categories at runtime.",
+      "note": "Candidate for fee change detection only, not a source of legal eligibility.",
+      "topic_ids": [
+        "fees",
+        "guidance"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-28.md",
+      "source_sha256": "8b2dc3f1394cc23e0be1c19a88159aa2d38518ad5967a01188029fd76d3191f5",
+      "converted_sha256": "85e5288d2fc12b5bc07d03c18ca4537cb7771a74a308e6ac8e912781e9857901",
+      "source_bytes": 137699,
+      "resolved_url": "https://ind.nl/en/fees-costs-of-an-application"
+    },
+    {
+      "id": "nl-29",
+      "title": "IND required amounts and income thresholds",
+      "source_type": "official_income_thresholds",
+      "language": "en",
+      "url": "https://ind.nl/en/required-amounts-income-requirements",
+      "publisher_identifier": {
+        "system": "IND",
+        "record": "Required amounts income requirements"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official IND page content reviewed; current six-month validity dates visible.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "HTML tables with date-bounded amounts",
+      "version_evidence": "Indexed page states amounts valid 1 July through 31 December 2026.",
+      "note": "Highly volatile values; preserve validity interval and table context, not just the numeric value.",
+      "topic_ids": [
+        "fees",
+        "income",
+        "guidance"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-29.md",
+      "source_sha256": "8bd166ed5c7c5414e879338b20ab971ed4c452ef2921669af0054c05ceb0af07",
+      "converted_sha256": "774ce06d73ca74fe776af3ba653a88a031aed736392886dd99c6eb7737f5b34f",
+      "source_bytes": 106164,
+      "resolved_url": "https://ind.nl/en/required-amounts-income-requirements"
+    },
+    {
+      "id": "nl-30",
+      "title": "IND form B10001E: EU family-member partner or child",
+      "source_type": "official_application_form",
+      "language": "en",
+      "url": "https://ind.nl/en/forms/b10001e.pdf",
+      "publisher_identifier": {
+        "system": "IND form",
+        "record": "B10001E"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official page links this form; indexed PDF text supports identity.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "PDF attachment",
+      "version_evidence": "IND EU-family page links B10001E; PDF bytes, date and version metadata not captured.",
+      "note": "Rediscover through current parent guidance and compare form code, revision and instructions before monitoring.",
+      "topic_ids": [
+        "forms",
+        "eu_family"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_source_path": "temp/netherlands/pdf/nl-30-e1c3d74d6d1346165c20f7811b9511191641dae1f25fe157a04dae65eab57bde.pdf",
+      "source_sha256": "e1c3d74d6d1346165c20f7811b9511191641dae1f25fe157a04dae65eab57bde",
+      "source_bytes": 415015,
+      "resolved_url": "https://ind.nl/en/forms/b10001e.pdf",
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-30.md",
+      "converted_sha256": "87c0ea8d2d7f148b9f6965d5cf6fc4003da93f7a26d99ec32f872e1593be6cff"
+    },
+    {
+      "id": "nl-31",
+      "title": "IND form B10002E: other EU family member",
+      "source_type": "official_application_form",
+      "language": "en",
+      "url": "https://ind.nl/en/forms/b10002e.pdf",
+      "publisher_identifier": {
+        "system": "IND form",
+        "record": "B10002E"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official page links this form; indexed PDF text supports identity.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "PDF attachment",
+      "version_evidence": "IND EU-family page links B10002E; PDF bytes, date and version metadata not captured.",
+      "note": "Applies to other family than partner/child; do not combine with the B10001E form population.",
+      "topic_ids": [
+        "forms",
+        "eu_family"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_source_path": "temp/netherlands/pdf/nl-31-4d22fd2a9eb272f1f4e9c4914b1098d66378a96c3be5f9b1da1e53d24673b3ad.pdf",
+      "source_sha256": "4d22fd2a9eb272f1f4e9c4914b1098d66378a96c3be5f9b1da1e53d24673b3ad",
+      "source_bytes": 397748,
+      "resolved_url": "https://ind.nl/en/forms/b10002e.pdf",
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-31.md",
+      "converted_sha256": "b1d36013f2961b2772dd5824d17a42590d95e423ebe411649fc1ab364a5ad115"
+    },
+    {
+      "id": "nl-32",
+      "title": "IND form B10006E: follow-up after residence with EU family member",
+      "source_type": "official_application_form",
+      "language": "en",
+      "url": "https://ind.nl/en/forms/b10006e.pdf",
+      "publisher_identifier": {
+        "system": "IND form",
+        "record": "B10006E"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official IND changed-situation page links this form; indexed PDF identity found.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "PDF attachment",
+      "version_evidence": "Indexed document published around four months before research date; exact revision metadata not captured.",
+      "note": "Parent rediscovery required because application forms can be replaced in place.",
+      "topic_ids": [
+        "forms",
+        "retained_rights"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_source_path": "temp/netherlands/pdf/nl-32-c950ae393968b42f95302eea000d5c0025bc42fd43202658f42108355b02abde.pdf",
+      "source_sha256": "c950ae393968b42f95302eea000d5c0025bc42fd43202658f42108355b02abde",
+      "source_bytes": 373716,
+      "resolved_url": "https://ind.nl/en/forms/b10006e.pdf",
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-32.md",
+      "converted_sha256": "f215011f5f97a0ffbc96808496945691dee8efe3c5eb2964916d3c78f5af2998"
+    },
+    {
+      "id": "nl-33",
+      "title": "IND form 8004: permanent residence document for Union nationals and family",
+      "source_type": "official_application_form",
+      "language": "en",
+      "url": "https://ind.nl/en/forms/8004.pdf",
+      "publisher_identifier": {
+        "system": "IND form",
+        "record": "8004"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official permanent-residency page links the current form; indexed PDF identity found.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "PDF attachment",
+      "version_evidence": "Page lists the form; PDF revision and exact bytes not captured.",
+      "note": "Verify current code and target audience at the parent page; do not rely on direct PDF URL alone.",
+      "topic_ids": [
+        "forms",
+        "permanent_residence"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_source_path": "temp/netherlands/pdf/nl-33-23f4165ab5a8fb1bde9ee9166e8e34acc8a7b1cc54010754df68bf1ea6bee308.pdf",
+      "source_sha256": "23f4165ab5a8fb1bde9ee9166e8e34acc8a7b1cc54010754df68bf1ea6bee308",
+      "source_bytes": 294975,
+      "resolved_url": "https://ind.nl/en/forms/8004.pdf",
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-33.md",
+      "converted_sha256": "a2811c9127d9c6687aa3cfae20a335528997d9eeaf3d3271d7a358a619a930ae"
+    },
+    {
+      "id": "nl-34",
+      "title": "NetherlandsWorldwide Schengen visa checklist for EU/EEA/Swiss family",
+      "source_type": "visa_family_checklist",
+      "language": "en",
+      "url": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-family-member-eu-eea",
+      "publisher_identifier": {
+        "system": "NetherlandsWorldwide",
+        "record": "EU/EEA/Swiss family Schengen checklist"
+      },
+      "functional_relationship": "close_functional_match",
+      "verification_status": "Official page content reviewed; current web checklist and route conditions visible.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "HTML checklist with dynamic country-of-residence handoff",
+      "version_evidence": "Current indexed checklist has no captured last-updated date; country selection drives application location details.",
+      "note": "Conditional on qualifying family member and free-movement context; not a universal family visa checklist.",
+      "topic_ids": [
+        "visa",
+        "family",
+        "forms"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-34.md",
+      "source_sha256": "41c9948fc7347c2b6119576584a67d26d0c72d60c7c7fce03a11c8b2c13af5a5",
+      "converted_sha256": "320da4ebe27ead230f9b9ae22387858a4416bbfae8ec2836dbed579199a58e22",
+      "source_bytes": 97118,
+      "resolved_url": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-family-member-eu-eea"
+    },
+    {
+      "id": "nl-35",
+      "title": "NetherlandsWorldwide visa facilitation for EU/EEA/Swiss family members",
+      "source_type": "visa_facilitation_guidance",
+      "language": "en",
+      "url": "https://www.netherlandsworldwide.nl/visa-the-netherlands/visa-facilitation-family-members-eu-eea",
+      "publisher_identifier": {
+        "system": "NetherlandsWorldwide",
+        "record": "EU/EEA/Swiss family visa facilitation"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official page content reviewed; separate checklist and country location links visible.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "HTML route page with linked dynamic procedures",
+      "version_evidence": "No visible page update date captured.",
+      "note": "Keep immediate/extended-family criteria, travel context and service charges explicit; distinguish Dutch-national route.",
+      "topic_ids": [
+        "visa",
+        "free_movement",
+        "guidance"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-35.md",
+      "source_sha256": "0d71c998f1a3c17f0fe77845703de64f795c0080bfbfb849af0c51a7efe231ad",
+      "converted_sha256": "a6919c29a4abddb912edbf11aeb4db5bdf7ac54195d8a1ac3656d162fe178c67",
+      "source_bytes": 88864,
+      "resolved_url": "https://www.netherlandsworldwide.nl/visa-the-netherlands/visa-facilitation-family-members-eu-eea"
+    },
+    {
+      "id": "nl-36",
+      "title": "NetherlandsWorldwide visa facilitation for family of Dutch nationals",
+      "source_type": "mobile_national_visa_guidance",
+      "language": "en",
+      "url": "https://www.netherlandsworldwide.nl/visa-the-netherlands/visa-facilitation-family-member-nl",
+      "publisher_identifier": {
+        "system": "NetherlandsWorldwide",
+        "record": "Dutch-family visa facilitation"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official page content reviewed; condition sets for return routes observed.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "HTML guidance with conditional route sections",
+      "version_evidence": "No visible page update date captured.",
+      "note": "Includes separate qualifying residence in another EU/EEA state, Switzerland or pre-cutoff UK circumstances; not domestic sponsor equivalence.",
+      "topic_ids": [
+        "visa",
+        "mobile_national",
+        "guidance"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-36.md",
+      "source_sha256": "086a1716db5fe14d74ea1e11f365eeec512e0d68331fc6130c10b081a1fa0a23",
+      "converted_sha256": "eb194ab0b47404338126dc6107743f8b3399e1d5ad99685841d85f7ff56b3af8",
+      "source_bytes": 106888,
+      "resolved_url": "https://www.netherlandsworldwide.nl/visa-the-netherlands/visa-facilitation-family-member-nl"
+    },
+    {
+      "id": "nl-37",
+      "title": "Where to apply for a Netherlands visa",
+      "source_type": "consular_location_finder",
+      "language": "en",
+      "url": "https://www.netherlandsworldwide.nl/visa-the-netherlands/where-to-apply",
+      "publisher_identifier": {
+        "system": "NetherlandsWorldwide",
+        "record": "Visa application location finder"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official page content reviewed; embassy/consulate/Schengen representation/VFS/TLS routes visible.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "HTML parent page with country-specific route links",
+      "version_evidence": "Application locations depend on country and representation arrangement; no static complete snapshot captured.",
+      "note": "Dynamic directory; rediscover country-specific pages and service-provider links from the live parent.",
+      "topic_ids": [
+        "missions",
+        "visa",
+        "discovery"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-37.md",
+      "source_sha256": "d38f69a48603785cd4cf7c1b080262943167ef253755a38b4f018f30a466b282",
+      "converted_sha256": "1151f3da71135d70f277646264d51b6c3da5d556e3621acf1956fc1198a3b8cc",
+      "source_bytes": 80332,
+      "resolved_url": "https://www.netherlandsworldwide.nl/visa-the-netherlands/where-to-apply"
+    },
+    {
+      "id": "nl-38",
+      "title": "NetherlandsWorldwide country-specific short-stay visa instructions",
+      "source_type": "country_mission_instructions",
+      "language": "en",
+      "url": "https://www.netherlandsworldwide.nl/visa-the-netherlands/apply-for-a-short-stay-schengen-visa",
+      "publisher_identifier": {
+        "system": "NetherlandsWorldwide",
+        "record": "Short-stay visa application country selector"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official visa parent route identified; specific country leaf pages not sampled.",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_shape": "HTML country selector and country-specific child pages",
+      "version_evidence": "Country-specific instructions and application offices are mutable.",
+      "note": "Use parent rediscovery per target country; this record does not stand in for mission-specific appointment pages.",
+      "topic_ids": [
+        "missions",
+        "visa",
+        "discovery"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_note": "HTTPError: HTTP Error 404: Not Found"
+    },
+    {
+      "id": "nl-39",
+      "title": "Older 2022 EU/EEA/Swiss family visa checklist PDF",
+      "source_type": "legacy_visa_attachment",
+      "language": "en",
+      "url": "https://www.netherlandsworldwide.nl/binaries/content/assets/pdfs-engels/checklist-visa-family-members-eu-eea-swiss-nationals-28-12-2022.pdf",
+      "publisher_identifier": {
+        "system": "NetherlandsWorldwide PDF",
+        "record": "checklist-visa-family-members-eu-eea-swiss-nationals-28-12-2022.pdf"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official attachment indexed; currentness not established and newer web checklist exists.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "PDF attachment",
+      "version_evidence": "Filename indicates 28 December 2022; not treated as current guidance.",
+      "note": "Retain as a stale-link/version lead only; do not use as the active checklist unless current parent page links it again.",
+      "topic_ids": [
+        "visa",
+        "legacy",
+        "forms"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-39.md",
+      "source_sha256": "af08c1206687078d9e3922f3a87cf8fa2d75b9e8c0d39de6d7e2cf7f7d5dabea",
+      "converted_sha256": "ac3ba03c6b96971c51a59b654683566ae06b4d10720f289efc0059d53009b864",
+      "source_bytes": 97118,
+      "resolved_url": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-family-member-eu-eea"
+    },
+    {
+      "id": "nl-40",
+      "title": "Government.nl long-stay residence permit answer",
+      "source_type": "central_government_residence_guidance",
+      "language": "en",
+      "url": "https://www.government.nl/documents/question-and-answer/do-i-need-a-residence-permit-if-i-want-to-stay-in-the-netherlands-for-a-long-period-of-time",
+      "publisher_identifier": {
+        "system": "Government.nl",
+        "record": "Long-stay residence permit FAQ"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official Government.nl page content reviewed.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "HTML question-and-answer page",
+      "version_evidence": "No visible update date captured; points readers to IND for detailed current conditions.",
+      "note": "High-level summary only; subordinate to current IND pages and Dutch law.",
+      "topic_ids": [
+        "residence",
+        "guidance"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-40.md",
+      "source_sha256": "faeaf338c725ffab96da782ca540f0b1c6bdcd8d6cc8f18ae4c701c7c33c76cb",
+      "converted_sha256": "f56a7c007f60d325ae4e52e4ecdbdfdcde9d02bcfac10ffcf2df2f91f126b31b",
+      "source_bytes": 243565,
+      "resolved_url": "https://www.government.nl/documents/question-and-answer/do-i-need-a-residence-permit-if-i-want-to-stay-in-the-netherlands-for-a-long-period-of-time"
+    },
+    {
+      "id": "nl-41",
+      "title": "Government.nl EU citizen stay longer than three months",
+      "source_type": "central_government_free_movement_guidance",
+      "language": "en",
+      "url": "https://www.government.nl/documents/question-and-answer/as-an-eu-citizen-how-can-i-stay-in-the-netherlands-for-longer-than-three-months",
+      "publisher_identifier": {
+        "system": "Government.nl",
+        "record": "EU stay over three months FAQ"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official page URL and subject identified; current wording not independently reviewed this tranche.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "HTML FAQ, not replayed",
+      "version_evidence": "Page may be legacy; compare against IND's July 2026 updated guidance.",
+      "note": "Treat older central-government copy as a potential stale-guidance signal; current parent links and date need checking.",
+      "topic_ids": [
+        "free_movement",
+        "guidance",
+        "currentness"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-41.md",
+      "source_sha256": "98bec14adfd11052aaed7994e30fe73c51acc729ef4a12f7e416d2c070648e3c",
+      "converted_sha256": "455196ebb7ba506574d44fcb014c1dfb29aea3eeae5b48835115ab16e597eb43",
+      "source_bytes": 227203,
+      "resolved_url": "https://www.government.nl/documents/question-and-answer/as-an-eu-citizen-how-can-i-stay-in-the-netherlands-for-longer-than-three-months"
+    },
+    {
+      "id": "nl-42",
+      "title": "NetherlandsWorldwide foreign-document legalisation country routes",
+      "source_type": "civil_status_evidence_guidance",
+      "language": "en",
+      "url": "https://www.netherlandsworldwide.nl/legalisation/foreign-documents",
+      "publisher_identifier": {
+        "system": "NetherlandsWorldwide",
+        "record": "Foreign documents for use in the Netherlands"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official legalisation page routes users by country; country-specific detail is dynamic.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "HTML country-selector parent and country-specific child pages",
+      "version_evidence": "Country, document type and issuing authority determine instructions.",
+      "note": "Useful for family-status evidence logistics, not an EU residence eligibility source. Monitor country leaf pages only where in scope.",
+      "topic_ids": [
+        "civil_status",
+        "evidence",
+        "guidance"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-42.md",
+      "source_sha256": "13a159c4c8623e2726c0250fb95b559a375fc7266d96838d85409b25b6187df5",
+      "converted_sha256": "db109860b87aa4fc5e57ebee3ddf7d548f77f64bcb1bd948973c01d09d5061aa",
+      "source_bytes": 115845,
+      "resolved_url": "https://www.netherlandsworldwide.nl/legalisation/foreign-documents"
+    },
+    {
+      "id": "nl-43",
+      "title": "NetherlandsWorldwide apostille guidance",
+      "source_type": "document_authentication_guidance",
+      "language": "en",
+      "url": "https://www.netherlandsworldwide.nl/legalisation/apostille",
+      "publisher_identifier": {
+        "system": "NetherlandsWorldwide",
+        "record": "What is an apostille"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official page content reviewed; describes apostille function and Dutch issuing channel.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "HTML guidance with linked country procedures",
+      "version_evidence": "Page's current legal status and country links require parent rediscovery.",
+      "note": "Cross-border evidence process; check EU Public Documents Regulation exceptions and jurisdiction-specific country instructions separately.",
+      "topic_ids": [
+        "civil_status",
+        "evidence",
+        "guidance"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-43.md",
+      "source_sha256": "a41edcf9813d0801b05039bf4e14ce9c985ac82357a8f6e2755280b5cb2bf6cd",
+      "converted_sha256": "d4884ce64730a59b47fe1b0f1dd32d0ce0e391c2c6b18136583060e8103acd3a",
+      "source_bytes": 72514,
+      "resolved_url": "https://www.netherlandsworldwide.nl/legalisation/apostille"
+    },
+    {
+      "id": "nl-44",
+      "title": "Government.nl Personal Records Database resident registration",
+      "source_type": "population_register_guidance",
+      "language": "en",
+      "url": "https://www.government.nl/documents/question-and-answer/when-should-i-register-with-the-personal-records-database-as-a-resident",
+      "publisher_identifier": {
+        "system": "Government.nl",
+        "record": "When to register in BRP"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official page content identified in indexed result; municipal procedures not sampled.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "HTML FAQ pointing to local municipalities",
+      "version_evidence": "No update date captured; registration timing and evidence page is central guidance.",
+      "note": "Keep BRP registration distinct from IND residence registration and legal entitlement.",
+      "topic_ids": [
+        "registration",
+        "evidence",
+        "guidance"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-44.md",
+      "source_sha256": "5f04d6788e8387204aa497d9e86a216ee1957da9172d9a030069bf96eb6688ef",
+      "converted_sha256": "6d1f7e615a5464b0e8619c13c9a1d1758488751ce88cfde4bbfd668e752cd825",
+      "source_bytes": 231326,
+      "resolved_url": "https://www.government.nl/documents/question-and-answer/when-should-i-register-with-the-personal-records-database-as-a-resident"
+    },
+    {
+      "id": "nl-45",
+      "title": "National Ombudsman complaint procedure",
+      "source_type": "ombudsman_complaint_guidance",
+      "language": "en",
+      "url": "https://www.nationaleombudsman.nl/How-to-file-a-complaint",
+      "publisher_identifier": {
+        "system": "National Ombudsman",
+        "record": "How to file a complaint"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official page content reviewed; prerequisites and process visible.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "HTML guidance and online complaint form",
+      "version_evidence": "Current page content observed; no explicit update date captured.",
+      "note": "External complaint channel after first complaining to the authority; not an appeal of the decision itself.",
+      "topic_ids": [
+        "ombudsman",
+        "complaint",
+        "remedy"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-45.md",
+      "source_sha256": "27b89cb5e89ed88b1e90d201dab3427b46d2dd08ca8958534d00af859498de70",
+      "converted_sha256": "cad7f4a8c65ada53e6fed84599746fdf179d065dd998f5789752950e0f985978",
+      "source_bytes": 28055,
+      "resolved_url": "https://www.nationaleombudsman.nl/How-to-file-a-complaint"
+    },
+    {
+      "id": "nl-46",
+      "title": "National Ombudsman IND immigration topic hub",
+      "source_type": "ombudsman_topic_guidance",
+      "language": "nl",
+      "url": "https://www.nationaleombudsman.nl/",
+      "publisher_identifier": {
+        "system": "National Ombudsman",
+        "record": "IND topics: asylum, family reunification, visa and residence permit"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official home page search result lists IND migration topics; individual topics were not opened.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "HTML topic index",
+      "version_evidence": "Topic membership is dynamic; individual investigations/reports carry separate dates.",
+      "note": "Discovery parent for public Ombudsman guidance and decisions; do not ingest complaint submissions or personal case records.",
+      "topic_ids": [
+        "ombudsman",
+        "migration",
+        "discovery"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-46.md",
+      "source_sha256": "0d4e59572d0d0ff6bfbfd56d2816648244dd20467dcecc135e2042b80d43d751",
+      "converted_sha256": "96d49f0161ea988f7a89b4674d282fe1bb807c966faa1c1f260307cab34947d4",
+      "source_bytes": 57342,
+      "resolved_url": "https://www.nationaleombudsman.nl/"
+    },
+    {
+      "id": "nl-47",
+      "title": "Autoriteit Persoonsgegevens privacy complaint route",
+      "source_type": "data_protection_remedy_guidance",
+      "language": "en",
+      "url": "https://autoriteitpersoonsgegevens.nl/en/submitting-a-tip-off-or-a-complaint-to-the-ap",
+      "publisher_identifier": {
+        "system": "Autoriteit Persoonsgegevens",
+        "record": "Tip-off or complaint to the AP"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official AP page content reviewed; distinctions between tip and personal complaint visible.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "HTML guidance with personal-data intake form",
+      "version_evidence": "Current page observed; process and expected response periods may change.",
+      "note": "Public procedural guidance only. Never collect complaint submissions, identity data or applicant files.",
+      "topic_ids": [
+        "privacy",
+        "remedy",
+        "guidance"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-47.md",
+      "source_sha256": "300bd3143a06adb74905e1a31ae04afe4bea1a6d37c0faae313759058bf3788c",
+      "converted_sha256": "3da5127e1c4638b8ba76ae45758d9bd6ccfacc9e564fc58f078a75dd1926724c",
+      "source_bytes": 47909,
+      "resolved_url": "https://autoriteitpersoonsgegevens.nl/en/submitting-a-tip-off-or-a-complaint-to-the-ap"
+    },
+    {
+      "id": "nl-48",
+      "title": "Rechtspraak official case-law search",
+      "source_type": "official_case_law_search",
+      "language": "nl",
+      "url": "https://uitspraken.rechtspraak.nl/resultaat",
+      "publisher_identifier": {
+        "system": "Rechtspraak",
+        "record": "Uitspraken search results"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official search page opened, but the research browser exposed only a dynamic shell; indexed official information describes publication selection criteria.",
+      "retrieval_status": "discovery_surface_no_text",
+      "retrieval_shape": "Search interface with ECLI, date, topic and court filters; direct search results not inspected",
+      "version_evidence": "Official site says decisions are published under selection criteria; sample records and corpus coverage were not assessed.",
+      "note": "Do not treat an empty or filtered search as evidence no decision exists; pagination, API and update signal need verification.",
+      "topic_ids": [
+        "case_law",
+        "remedy",
+        "discovery"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "36069482a44139f041698d456792c914c8209e59d2671f8f167b9d5d61d9596e",
+      "source_bytes": 3892,
+      "resolved_url": "https://uitspraken.rechtspraak.nl/resultaat",
+      "retrieval_note": "Public HTML response contained no sufficiently long extractable source body."
+    },
+    {
+      "id": "nl-49",
+      "title": "Rechtspraak ECLI and search help",
+      "source_type": "case_law_identifier_guidance",
+      "language": "nl",
+      "url": "https://www.rechtspraak.nl/uitspraken/hulp-bij-zoeken",
+      "publisher_identifier": {
+        "system": "Rechtspraak",
+        "record": "Search help and ECLI guidance"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official search-help page reviewed; ECLI and filter behavior described.",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_shape": "HTML documentation",
+      "version_evidence": "Explains court codes and query fields; corpus coverage remains selective.",
+      "note": "Use to design search queries, not as the source of individual judicial decisions.",
+      "topic_ids": [
+        "case_law",
+        "search_method"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "nl-50",
+      "title": "Council of State publication rules for immigration decisions",
+      "source_type": "court_publication_scope",
+      "language": "nl",
+      "url": "https://www.raadvanstate.nl/overrvs/bestuursrechtspraak/vandaag/",
+      "publisher_identifier": {
+        "system": "Raad van State",
+        "record": "Publication and disclosure of decisions in immigration cases"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official page content reviewed; delayed full-text and unpublished standard-form decisions explained.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "HTML daily listing and links to decisions",
+      "version_evidence": "Page describes Article 91(2) Vw short-form decisions and later publication of written-out decisions.",
+      "note": "Material coverage limitation for national case-law discovery; not a complete migration-decision corpus.",
+      "topic_ids": [
+        "case_law",
+        "court",
+        "coverage_limit"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-50.md",
+      "source_sha256": "9ac00090a6a4168d6abc2f73c094783da8a54328bd7d587394617edaf41509ca",
+      "converted_sha256": "d143f8ba00f6aa7f3ccc8cc7db1759b6c79dabc3c089e080e379d89e124322a9",
+      "source_bytes": 39249,
+      "resolved_url": "https://www.raadvanstate.nl/overrvs/bestuursrechtspraak/vandaag/"
+    },
+    {
+      "id": "nl-51",
+      "title": "Raad voor Rechtsbijstand legal-aid and immigration/asylum services",
+      "source_type": "legal_aid_guidance",
+      "language": "nl",
+      "url": "https://www.rechtsbijstand.nl/",
+      "publisher_identifier": {
+        "system": "Raad voor Rechtsbijstand",
+        "record": "Legal-aid public information portal"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official portal and immigration/asylum legal-aid materials identified; general eligibility route not audited.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "HTML public information and forms",
+      "version_evidence": "Some asylum-specific materials and contribution rules are published separately; no complete EU-family appeal entitlement confirmed.",
+      "note": "Keep legal-aid scope open by procedure and applicant category; do not imply every immigration appeal receives funded counsel.",
+      "topic_ids": [
+        "legal_aid",
+        "remedy",
+        "guidance"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-51.md",
+      "source_sha256": "f089a87443612207be08d7537f5bb16c9abea8aab77205208525ac095dbbf968",
+      "converted_sha256": "a68ebf7092e24f630314f1e595e48a127a27e4106ca8428b039634466058afa9",
+      "source_bytes": 54606,
+      "resolved_url": "https://www.rechtsbijstand.nl/"
+    },
+    {
+      "id": "nl-52",
+      "title": "Raad voor Rechtsbijstand no personal contribution for asylum cases",
+      "source_type": "legal_aid_scope_guidance",
+      "language": "nl",
+      "url": "https://www.rechtsbijstand.nl/mediation-rechtsbijstand/hoeveel-betalen/geen-eigen-bijdrage/",
+      "publisher_identifier": {
+        "system": "Raad voor Rechtsbijstand",
+        "record": "No own contribution page"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official page indexed; states asylum cases as a specific no-contribution category.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "HTML guidance with linked declaration form",
+      "version_evidence": "Current page date not captured; applies only to named categories and eligibility conditions.",
+      "note": "This asylum-specific evidence must not be generalized to EU family residence or ordinary immigration appeals.",
+      "topic_ids": [
+        "legal_aid",
+        "asylum",
+        "scope_limit"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/netherlands/monitor-candidates/nl-52.md",
+      "source_sha256": "ee1d543589f05236222d9983cf1c9505dd8dc19f96e61640b80b454678515339",
+      "converted_sha256": "354c20d7f46c077077cc74883ff985076f7d841a470e571e747a524114604486",
+      "source_bytes": 43885,
+      "resolved_url": "https://www.rechtsbijstand.nl/mediation-rechtsbijstand/hoeveel-betalen/geen-eigen-bijdrage/"
+    }
+  ],
+  "retrieved_review_candidate_count": 50,
+  "converted_review_candidate_count": 49
+}

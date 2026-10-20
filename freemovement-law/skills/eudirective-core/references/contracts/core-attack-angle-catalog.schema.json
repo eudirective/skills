@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Core attack-angle catalogue v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["catalog_version", "last_updated", "patterns"],
+  "properties": {
+    "catalog_version": {"const": "0.1.0"},
+    "last_updated": {"type": "string", "format": "date"},
+    "patterns": {
+      "type": "array",
+      "maxItems": 100,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "attack_angle_id", "label", "issue_type", "basis_layer", "signal_kind",
+          "regime_any_of", "principle_any_of", "source_refs", "evidence_needs",
+          "support_scope", "false_positive_risks", "severity_hint", "limitations"
+        ],
+        "properties": {
+          "attack_angle_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$"
+          },
+          "label": {"type": "string", "minLength": 1, "maxLength": 500},
+          "issue_type": {"type": "string", "minLength": 1, "maxLength": 160},
+          "basis_layer": {"const": "eu_common"},
+          "signal_kind": {
+            "enum": [
+              "proof_restriction_claim",
+              "dependency_freedom_of_proof_candidate",
+              "exact_deadline_adverse_state",
+              "procedure_access_adverse",
+              "complaint_path_adverse",
+              "authority_competence_adverse",
+              "proportionality_plus_adverse_signal"
+            ]
+          },
+          "regime_any_of": {
+            "type": "array",
+            "maxItems": 20,
+            "uniqueItems": true,
+            "items": {"type": "string", "maxLength": 160}
+          },
+          "principle_any_of": {
+            "type": "array",
+            "maxItems": 20,
+            "uniqueItems": true,
+            "items": {"type": "string", "maxLength": 160}
+          },
+          "source_refs": {
+            "type": "array",
+            "maxItems": 30,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$"
+            }
+          },
+          "evidence_needs": {
+            "type": "array",
+            "maxItems": 50,
+            "items": {"type": "string", "minLength": 1, "maxLength": 1000}
+          },
+          "support_scope": {"type": "string", "minLength": 1, "maxLength": 2000},
+          "false_positive_risks": {
+            "type": "array",
+            "maxItems": 50,
+            "items": {"type": "string", "minLength": 1, "maxLength": 1000}
+          },
+          "severity_hint": {"enum": ["low", "medium", "high", null]},
+          "limitations": {
+            "type": "array",
+            "maxItems": 50,
+            "items": {"type": "string", "minLength": 1, "maxLength": 1000}
+          }
+        }
+      }
+    }
+  }
+}

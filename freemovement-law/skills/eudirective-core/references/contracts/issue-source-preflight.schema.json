@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Issue source preflight 0.1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["contract_version", "preflight_id", "research_id", "coverage_claim", "issues"],
+  "properties": {
+    "contract_version": { "const": "0.1.0" },
+    "preflight_id": { "type": "string", "pattern": "^r_[a-f0-9]{12,32}$" },
+    "research_id": { "type": "string", "pattern": "^RCH-[A-Z0-9][A-Z0-9._-]{0,63}$" },
+    "coverage_claim": { "enum": ["accounted_for_review", "partial"] },
+    "issues": { "type": "array", "minItems": 1, "maxItems": 100, "items": { "$ref": "#/$defs/issue" } }
+  },
+  "$defs": {
+    "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "owner": {
+      "type": "object", "additionalProperties": false,
+      "required": ["family", "owner_id", "jurisdiction", "role"],
+      "properties": {
+        "family": { "enum": ["core_source", "member_state", "applicant_country", "source_library_national"] },
+        "owner_id": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,159}$" },
+        "jurisdiction": { "type": "string", "pattern": "^(EU|[A-Z]{2})$" },
+        "role": { "enum": ["common_eu", "residence_state", "work_state", "intended_residence_state", "deciding_state", "representing_state", "challenged_authority_state", "document_issuing_state", "application_context", "mission_context", "national_source"] },
+        "source_pack_sha256": { "$ref": "#/$defs/sha256" },
+        "manifest_sha256": { "$ref": "#/$defs/sha256" },
+        "export_sha256": { "$ref": "#/$defs/sha256" }
+      },
+      "allOf": [
+        { "if": { "properties": { "family": { "const": "core_source" } }, "required": ["family"] }, "then": { "required": ["source_pack_sha256"], "properties": { "jurisdiction": { "const": "EU" }, "role": { "const": "common_eu" } }, "not": { "anyOf": [{ "required": ["manifest_sha256"] }, { "required": ["export_sha256"] }] } } },
+        { "if": { "properties": { "family": { "const": "member_state" } }, "required": ["family"] }, "then": { "required": ["manifest_sha256", "export_sha256"], "properties": { "jurisdiction": { "pattern": "^[A-Z]{2}$" }, "role": { "enum": ["residence_state", "work_state", "intended_residence_state", "deciding_state", "representing_state", "challenged_authority_state", "document_issuing_state"] } }, "not": { "required": ["source_pack_sha256"] } } },
+        { "if": { "properties": { "family": { "const": "applicant_country" } }, "required": ["family"] }, "then": { "required": ["manifest_sha256", "export_sha256"], "properties": { "jurisdiction": { "pattern": "^[A-Z]{2}$" }, "role": { "enum": ["application_context", "mission_context"] } }, "not": { "required": ["source_pack_sha256"] } } },
+        { "if": { "properties": { "family": { "const": "source_library_national" } }, "required": ["family"] }, "then": { "properties": { "jurisdiction": { "pattern": "^[A-Z]{2}$" }, "role": { "const": "national_source" } }, "not": { "anyOf": [{ "required": ["manifest_sha256"] }, { "required": ["export_sha256"] }] }, "allOf": [ { "if": { "properties": { "owner_id": { "pattern": "^unregistered:[A-Z]{2}$" } }, "required": ["owner_id"] }, "then": { "not": { "required": ["source_pack_sha256"] } } }, { "if": { "properties": { "owner_id": { "not": { "pattern": "^unregistered:[A-Z]{2}$" } } }, "required": ["owner_id"] }, "then": { "required": ["source_pack_sha256"] } } ] } }
+      ]
+    },
+    "source_class": { "enum": ["eu_binding_law", "national_binding_law", "case_law", "official_guidance", "procedural_rule", "contrary_authority"] },
+    "evidence_id": { "type": "string", "pattern": "^REV-[A-Z0-9][A-Z0-9._-]{0,63}$" },
+    "claim_id": { "type": "string", "pattern": "^RCL-[A-Z0-9][A-Z0-9._-]{0,63}$" },
+    "source_record": {
+      "type": "object", "additionalProperties": false,
+      "required": ["source_ref", "record_kind", "source_class", "acceptance_state", "currentness", "source_date", "evidence_ids", "scope_note", "exceptions_note"],
+      "properties": {
+        "source_ref": { "type": "string", "minLength": 1, "maxLength": 200 },
+        "record_kind": { "enum": ["registered_source", "candidate_source"] },
+        "source_class": { "$ref": "#/$defs/source_class" },
+        "acceptance_state": { "enum": ["registered_record", "candidate_unaccepted"] },
+        "currentness": { "enum": ["reviewed_current", "unknown", "stale"] },
+        "source_date": { "type": ["string", "null"], "format": "date" },
+        "evidence_ids": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/evidence_id" } },
+        "scope_note": { "type": "string", "minLength": 1, "maxLength": 1000 },
+        "exceptions_note": { "type": "string", "minLength": 1, "maxLength": 1000 }
+      },
+      "allOf": [
+        { "if": { "properties": { "record_kind": { "const": "registered_source" } }, "required": ["record_kind"] }, "then": { "properties": { "acceptance_state": { "const": "registered_record" } } } },
+        { "if": { "properties": { "record_kind": { "const": "candidate_source" } }, "required": ["record_kind"] }, "then": { "properties": { "acceptance_state": { "const": "candidate_unaccepted" } } } },
+        { "if": { "properties": { "currentness": { "const": "reviewed_current" } }, "required": ["currentness"] }, "then": { "properties": { "source_date": { "type": "string", "format": "date" } } } }
+      ]
+    },
+    "issue": {
+      "type": "object", "additionalProperties": false,
+      "required": ["issue_id", "matter_issue_ref", "task_id", "claim_ids", "question", "owner", "required_source_classes", "sources", "scope_review", "exceptions_review", "counterauthority_review", "counterauthority_evidence_ids", "review_provenance", "reviewed_at", "gap_disposition", "gap_reason"],
+      "properties": {
+        "issue_id": { "type": "string", "pattern": "^ISS-[A-Z0-9][A-Z0-9._-]{0,63}$" },
+        "matter_issue_ref": { "type": "string", "pattern": "^ISS-[A-Z0-9][A-Z0-9._-]{0,63}$" },
+        "task_id": { "type": "string", "pattern": "^RQT-[A-Z0-9][A-Z0-9._-]{0,63}$" },
+        "claim_ids": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/claim_id" } },
+        "question": { "type": "string", "minLength": 1, "maxLength": 1200 },
+        "owner": { "$ref": "#/$defs/owner" },
+        "required_source_classes": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/source_class" } },
+        "sources": { "type": "array", "maxItems": 100, "items": { "$ref": "#/$defs/source_record" } },
+        "scope_review": { "enum": ["reviewed", "open"] },
+        "exceptions_review": { "enum": ["reviewed", "open"] },
+        "counterauthority_review": { "enum": ["reviewed_with_counterevidence", "searched_none_reported", "open", "not_required"] },
+        "counterauthority_evidence_ids": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/evidence_id" } },
+        "review_provenance": { "enum": ["source_review", "model_review", "human_review", "none"] },
+        "reviewed_at": { "type": "string", "format": "date-time" },
+        "gap_disposition": { "enum": ["accounted_for_review", "open"] },
+        "gap_reason": { "type": "string", "minLength": 1, "maxLength": 1200 }
+      },
+      "allOf": [
+        { "if": { "properties": { "counterauthority_review": { "const": "reviewed_with_counterevidence" } }, "required": ["counterauthority_review"] }, "then": { "properties": { "counterauthority_evidence_ids": { "minItems": 1 } } } },
+        { "if": { "properties": { "counterauthority_review": { "enum": ["searched_none_reported", "open", "not_required"] } }, "required": ["counterauthority_review"] }, "then": { "properties": { "counterauthority_evidence_ids": { "maxItems": 0 } } } }
+      ]
+    }
+  }
+}

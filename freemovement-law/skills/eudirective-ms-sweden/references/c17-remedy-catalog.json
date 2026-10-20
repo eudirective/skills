@@ -1,0 +1,202 @@
+{
+  "catalog_version": "0.1.0",
+  "owner_module_id": "member-state-se-source-pilot",
+  "jurisdiction": "SE",
+  "module_family": "member_state",
+  "last_compiled": "2026-10-10",
+  "catalog_status": "review_only_not_an_authoritative_filing_guide",
+  "remedies": [
+    {
+      "remedy_id": "se:c17:mission-procedure-clarification",
+      "category": "administrative_clarification",
+      "trigger_rule_ids": [
+        "se:c12:direct-access",
+        "se:c16:istanbul-service-fee",
+        "se:c16:document-list-review",
+        "se:c16:visa-card-route",
+        "se:c16:electronic-format-review"
+      ],
+      "allowed_stages": [
+        "pre_lodging"
+      ],
+      "authority_ref": "se:authority:istanbul-consulate",
+      "target_authority_level": "member_state_authority",
+      "source_refs": [
+        "se:src:family-visa-istanbul",
+        "se:src:admin-act"
+      ],
+      "prerequisites_to_verify": [
+        "Confirm Directive 2004/38 scope and who is deciding",
+        "Verify that the reported instruction is attributable to the mission and still operative"
+      ],
+      "powers_to_verify": [
+        "Explain available application channels and procedural requirements; any correction depends on independent review"
+      ],
+      "limits": [
+        "Requesting clarification is not proof of an infringement or an appeal",
+        "No guaranteed response or interim protection",
+        "Do not treat a source note as full statutory text"
+      ],
+      "evidence_to_preserve": [
+        "Dated request, exact reply, published instruction snapshot, documentation actually offered"
+      ],
+      "deadline": {
+        "kind": "not_established",
+        "rule": "No verified binding deadline in this catalogue.",
+        "trigger_event": null,
+        "calculation": "human_only"
+      },
+      "intended_outcome_for_review": "Seek the mission's written explanation of the reported process and any available alternatives.",
+      "filing_channel_for_review": "Official Swedish mission contact route: verify current address at Sweden Abroad.",
+      "priority_class": "parallel_review",
+      "scope_note": "procedural",
+      "assurance": "curated_source_note_or_official_page_not_independent_merits",
+      "requires_human_review": true,
+      "send_authorized": false,
+      "legal_violation_status": "not_determined"
+    },
+    {
+      "remedy_id": "se:c17:residence-card-file-clarification",
+      "category": "administrative_clarification",
+      "trigger_rule_ids": [
+        "se:c12:retention-file-access"
+      ],
+      "allowed_stages": [
+        "decision_pending"
+      ],
+      "authority_ref": "se:authority:migrationsverket",
+      "target_authority_level": "member_state_authority",
+      "source_refs": [
+        "se:src:admin-act",
+        "se:src:migrationsverket-family"
+      ],
+      "prerequisites_to_verify": [
+        "Verify whether Swedish administrative communication/party access provisions and any exceptions apply",
+        "Confirm the requested item is within the deciding authority's case record"
+      ],
+      "powers_to_verify": [
+        "Consider party-file communication and fair-process questions, subject to special rules"
+      ],
+      "limits": [
+        "Confidentiality may limit disclosure",
+        "Deldwyn is fact specific and not a blanket disclosure holding",
+        "No automatic right to access a third party's personal information"
+      ],
+      "evidence_to_preserve": [
+        "Exact document/request sought, dates of requests and answers, disputed evidence identity and confidentiality response"
+      ],
+      "deadline": {
+        "kind": "not_established",
+        "rule": "No verified binding deadline in this catalogue.",
+        "trigger_event": null,
+        "calculation": "human_only"
+      },
+      "intended_outcome_for_review": "Seek lawful access, a summary or a reasoned explanation of any disclosure restriction.",
+      "filing_channel_for_review": "Verify current official contact/submission instructions before use.",
+      "priority_class": "parallel_review",
+      "scope_note": "procedural",
+      "assurance": "curated_source_note_or_official_page_not_independent_merits",
+      "requires_human_review": true,
+      "send_authorized": false,
+      "legal_violation_status": "not_determined"
+    },
+    {
+      "remedy_id": "se:c17:visa-refusal-appeal",
+      "category": "administrative_appeal_then_judicial_referral",
+      "trigger_rule_ids": [
+        "se:c12:visa-appeal-timing"
+      ],
+      "allowed_stages": [
+        "appeal"
+      ],
+      "authority_ref": "se:authority:istanbul-consulate",
+      "target_authority_level": "member_state_authority",
+      "source_refs": [
+        "se:src:appeal-istanbul",
+        "se:src:admin-act"
+      ],
+      "prerequisites_to_verify": [
+        "Obtain and independently verify the appealable refusal decision and date actually received",
+        "Confirm deciding authority, service rules, any extensions and applicable special-law timetable",
+        "Identify requested change and basis; determine if appeal has already been filed"
+      ],
+      "powers_to_verify": [
+        "Reconsider a visa refusal at the consulate; if unchanged, forward the appeal to the Swedish Migration Court under published guidance"
+      ],
+      "limits": [
+        "Reconsideration/forwarding is not a guaranteed reversal",
+        "A supervisory complaint does not replace or stay this appeal deadline",
+        "This catalogue does not authorize direct court filing"
+      ],
+      "evidence_to_preserve": [
+        "Written refusal, proof of delivery/notification, recorded appeal dispatch and receipt, file reference, substantive supporting documents"
+      ],
+      "deadline": {
+        "kind": "conditional_published_guidance",
+        "rule": "Sweden Abroad Istanbul reports three weeks from receipt of refusal; operative statutory deadline and service rules must be checked.",
+        "trigger_event": "receipt_of_appealable_refusal",
+        "calculation": "human_only"
+      },
+      "intended_outcome_for_review": "Preserve a potentially available appeal and seek review of the refusal; exact legal viability requires review.",
+      "filing_channel_for_review": "Published mission appeal channel to consulate; independently verify current mode of filing.",
+      "priority_class": "deadline_preservation_review_first",
+      "scope_note": "procedural",
+      "assurance": "curated_source_note_or_official_page_not_independent_merits",
+      "requires_human_review": true,
+      "send_authorized": false,
+      "legal_violation_status": "not_determined"
+    },
+    {
+      "remedy_id": "se:c17:jo-supervisory-complaint",
+      "category": "supervisory_complaint",
+      "trigger_rule_ids": [
+        "se:c16:jo-supervision-boundary",
+        "se:c12:direct-access",
+        "se:c16:document-list-review",
+        "se:c12:retention-file-access"
+      ],
+      "allowed_stages": [
+        "pre_lodging",
+        "decision_pending",
+        "complaint"
+      ],
+      "authority_ref": "se:authority:jo",
+      "target_authority_level": "member_state_authority",
+      "source_refs": [
+        "se:src:jo-complaint",
+        "se:src:jo-guidance-en"
+      ],
+      "prerequisites_to_verify": [
+        "Verify that the challenged conduct was an act of an authority/official within JO jurisdiction",
+        "Check timing and whether a separate appeal is available",
+        "Review disclosure and public-record risks"
+      ],
+      "powers_to_verify": [
+        "JO may investigate and criticise maladministration"
+      ],
+      "limits": [
+        "JO cannot reverse the underlying decision, issue the visa or award damages",
+        "Not all complaints are investigated",
+        "The complaint and attachments normally become public documents subject to secrecy rules",
+        "Ordinary appeal timelines continue independently"
+      ],
+      "evidence_to_preserve": [
+        "Chronology, exact official conduct, written communications, file number, relevant decision, minimized copies"
+      ],
+      "deadline": {
+        "kind": "normally_two_year_rule",
+        "rule": "JO ordinarily declines matters over two years old; exceptions require assessment; not an appeal filing period.",
+        "trigger_event": "date_of_complained_of_conduct",
+        "calculation": "human_only"
+      },
+      "intended_outcome_for_review": "Seek independent supervisory scrutiny of alleged maladministration, not an individual visa remedy.",
+      "filing_channel_for_review": "JO official complaint instructions; verify current format and confidentiality treatment.",
+      "priority_class": "nonbinding_parallel_review",
+      "scope_note": "procedural",
+      "assurance": "curated_source_note_or_official_page_not_independent_merits",
+      "requires_human_review": true,
+      "send_authorized": false,
+      "legal_violation_status": "not_determined"
+    }
+  ]
+}

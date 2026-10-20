@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Stratagem catalogue v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["catalog_version", "last_updated", "layer", "source_note", "patterns"],
+  "properties": {
+    "catalog_version": {"const": "0.1.0"},
+    "last_updated": {"type": "string", "format": "date"},
+    "layer": {"enum": ["adapted_operational", "original_abstract"]},
+    "source_note": {"type": "string", "minLength": 1, "maxLength": 2000},
+    "patterns": {
+      "type": "array", "minItems": 36, "maxItems": 36,
+      "items": {
+        "type": "object",
+        "required": ["stratagem_id", "number", "layer"],
+        "properties": {
+          "stratagem_id": {"type": "string", "pattern": "^(adapted|original):[0-9]{2}$"},
+          "number": {"type": "integer", "minimum": 1, "maximum": 36},
+          "layer": {"enum": ["adapted_operational", "original_abstract"]},
+          "name": {"type": "string", "minLength": 1, "maxLength": 500},
+          "operational_meaning": {"type": "string", "minLength": 1, "maxLength": 2000},
+          "preferred_for_generation": {"type": "boolean"},
+          "tags": {"type": "array", "maxItems": 20, "uniqueItems": true, "items": {"type": "string", "maxLength": 120}},
+          "constraints": {"type": "array", "maxItems": 20, "items": {"type": "string", "minLength": 1, "maxLength": 1000}},
+          "chinese_label": {"type": "string", "minLength": 1, "maxLength": 120},
+          "common_english_label": {"type": "string", "minLength": 1, "maxLength": 500},
+          "operational_role": {"const": "reference_only"},
+          "adapted_analogue_id": {"type": "string", "pattern": "^adapted:[0-9]{2}$"},
+          "limitations": {"type": "array", "maxItems": 20, "items": {"type": "string", "minLength": 1, "maxLength": 1000}}
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "context_version": "0.1.0",
+  "case_id": "CASE-C5A-FRONTIER",
+  "objective": {
+    "objective_id": "obj:access",
+    "statement": "Establish the available written appointment channel without extra disclosure."
+  },
+  "proposals": [
+    {
+      "suggestion_id": "sug:clarify-basis",
+      "candidate_kind": "action",
+      "adapted_stratagem_id": "adapted:13",
+      "original_stratagem_id": "original:13",
+      "applicability": "applicable",
+      "supporting_attack_angle_refs": [
+        "core:attack:procedural-access-review"
+      ],
+      "supporting_route_refs": [],
+      "action_summary": "Ask a narrow written question about the asserted appointment requirement and alternatives.",
+      "mechanism_summary": "Obtain an attributable response without claiming a violation.",
+      "assumptions": [
+        "A written response channel exists."
+      ],
+      "prerequisites": [
+        "Preserve evidence of the initial appointment request."
+      ],
+      "expected_effect": "Get a documented authority position.",
+      "risks": [
+        "The reply may be uninformative."
+      ],
+      "reversibility": "high",
+      "information_value": "high",
+      "burden_cost": "low",
+      "disclosure_duty_status": "none_known",
+      "disclosure_review_rationale": "The narrow inquiry does not depend on breaching affirmative disclosure duties.",
+      "falsification_required": false,
+      "inaction_or_delay": false,
+      "deadline_waiver_review": "not_applicable",
+      "requires_new_determination": false,
+      "new_question": null
+    }
+  ]
+}

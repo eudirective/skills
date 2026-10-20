@@ -1,0 +1,172 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Module conformance profile v0.2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "profile_version",
+    "contract_version",
+    "controller_protocol_version",
+    "element_model_version",
+    "family_policies",
+    "composition_policy"
+  ],
+  "properties": {
+    "profile_version": {
+      "const": "0.2.0"
+    },
+    "contract_version": {
+      "const": "0.2.0"
+    },
+    "controller_protocol_version": {
+      "const": "0.3.0"
+    },
+    "element_model_version": {
+      "const": "0.2.0"
+    },
+    "family_policies": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "core_source",
+        "member_state",
+        "applicant_country"
+      ],
+      "properties": {
+        "core_source": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "allowed_roles",
+            "allowed_normative_layers",
+            "allowed_attack_layers"
+          ],
+          "properties": {
+            "allowed_roles": {
+              "const": [
+                "common_eu"
+              ]
+            },
+            "allowed_normative_layers": {
+              "const": [
+                "eu_common"
+              ]
+            },
+            "allowed_attack_layers": {
+              "const": [
+                "eu_common"
+              ]
+            }
+          }
+        },
+        "member_state": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "allowed_roles",
+            "allowed_normative_layers",
+            "allowed_attack_layers"
+          ],
+          "properties": {
+            "allowed_roles": {
+              "const": [
+                "residence_state",
+                "work_state",
+                "intended_residence_state",
+                "deciding_state",
+                "representing_state",
+                "challenged_authority_state",
+                "document_issuing_state"
+              ]
+            },
+            "allowed_normative_layers": {
+              "const": [
+                "national"
+              ]
+            },
+            "allowed_attack_layers": {
+              "const": [
+                "national"
+              ]
+            }
+          }
+        },
+        "applicant_country": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "allowed_roles",
+            "allowed_normative_layers",
+            "allowed_attack_layers"
+          ],
+          "properties": {
+            "allowed_roles": {
+              "const": [
+                "application_context",
+                "mission_context"
+              ]
+            },
+            "allowed_normative_layers": {
+              "const": [
+                "local_operational"
+              ]
+            },
+            "allowed_attack_layers": {
+              "const": [
+                "local_operational"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "composition_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "duplicate_global_record_ids",
+        "semantic_conflicts",
+        "source_precedence",
+        "country_may_override_eu_legal_hierarchy",
+        "missing_required_module",
+        "missing_optional_module",
+        "duplicate_role_coverage",
+        "request_geography_mismatch",
+        "applicant_destination_record_outside_profile",
+        "controlled_analysis_unknown_record_ref"
+      ],
+      "properties": {
+        "duplicate_global_record_ids": {
+          "const": "reject"
+        },
+        "semantic_conflicts": {
+          "const": "preserve_explicitly"
+        },
+        "source_precedence": {
+          "const": "authority_and_scope_not_module_order"
+        },
+        "country_may_override_eu_legal_hierarchy": {
+          "const": false
+        },
+        "missing_required_module": {
+          "const": "block_context_freeze"
+        },
+        "missing_optional_module": {
+          "const": "preserve_scoped_gap"
+        },
+        "duplicate_role_coverage": {
+          "const": "reject"
+        },
+        "request_geography_mismatch": {
+          "const": "reject"
+        },
+        "applicant_destination_record_outside_profile": {
+          "const": "reject"
+        },
+        "controlled_analysis_unknown_record_ref": {
+          "const": "reject"
+        }
+      }
+    }
+  }
+}

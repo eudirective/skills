@@ -1,0 +1,291 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Module manifest v0.2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contract_version",
+    "module_family",
+    "module_id",
+    "id_namespace",
+    "jurisdiction",
+    "module_version",
+    "pack_version",
+    "freshness_state",
+    "known_gap_ids",
+    "supported_domains",
+    "supported_roles",
+    "dataset_versions",
+    "compatibility",
+    "data_classification"
+  ],
+  "properties": {
+    "contract_version": {
+      "const": "0.2.0"
+    },
+    "module_family": {
+      "enum": [
+        "core_source",
+        "member_state",
+        "applicant_country"
+      ]
+    },
+    "module_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$"
+    },
+    "id_namespace": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 32,
+      "pattern": "^[a-z][a-z0-9-]{0,31}$"
+    },
+    "jurisdiction": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 80
+    },
+    "module_version": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 40
+    },
+    "pack_version": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 40
+    },
+    "freshness_state": {
+      "enum": [
+        "current",
+        "baseline_verified_not_live_rechecked",
+        "stale",
+        "unknown"
+      ]
+    },
+    "known_gap_ids": {
+      "type": "array",
+      "maxItems": 100,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "maxLength": 160,
+        "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$"
+      }
+    },
+    "supported_domains": {
+      "type": "array",
+      "maxItems": 100,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 120
+      }
+    },
+    "supported_roles": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 20,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "common_eu",
+          "residence_state",
+          "work_state",
+          "intended_residence_state",
+          "deciding_state",
+          "representing_state",
+          "challenged_authority_state",
+          "document_issuing_state",
+          "application_context",
+          "mission_context"
+        ]
+      }
+    },
+    "dataset_versions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sources",
+        "rules",
+        "authorities",
+        "deadlines",
+        "routes",
+        "operations",
+        "attack_angles"
+      ],
+      "properties": {
+        "sources": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 40
+        },
+        "rules": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 40
+        },
+        "authorities": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 40
+        },
+        "deadlines": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 40
+        },
+        "routes": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 40
+        },
+        "operations": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 40
+        },
+        "attack_angles": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 40
+        }
+      }
+    },
+    "compatibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "conformance_profile_version",
+        "controller_protocol_versions",
+        "element_model_versions"
+      ],
+      "properties": {
+        "conformance_profile_version": {
+          "const": "0.2.0"
+        },
+        "controller_protocol_versions": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 40
+          }
+        },
+        "element_model_versions": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 40
+          }
+        }
+      }
+    },
+    "data_classification": {
+      "const": "reusable_non_case"
+    },
+    "destination_state_profiles_available": {
+      "type": "array",
+      "maxItems": 100,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 2,
+        "maxLength": 80
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "module_family": {
+            "const": "core_source"
+          }
+        },
+        "required": [
+          "module_family"
+        ]
+      },
+      "then": {
+        "properties": {
+          "supported_roles": {
+            "const": [
+              "common_eu"
+            ]
+          },
+          "jurisdiction": {
+            "const": "EU"
+          },
+          "id_namespace": {
+            "const": "eu"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "module_family": {
+            "const": "member_state"
+          }
+        },
+        "required": [
+          "module_family"
+        ]
+      },
+      "then": {
+        "properties": {
+          "supported_roles": {
+            "items": {
+              "enum": [
+                "residence_state",
+                "work_state",
+                "intended_residence_state",
+                "deciding_state",
+                "representing_state",
+                "challenged_authority_state",
+                "document_issuing_state"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "module_family": {
+            "const": "applicant_country"
+          }
+        },
+        "required": [
+          "module_family"
+        ]
+      },
+      "then": {
+        "required": [
+          "destination_state_profiles_available"
+        ],
+        "properties": {
+          "supported_roles": {
+            "items": {
+              "enum": [
+                "application_context",
+                "mission_context"
+              ]
+            }
+          }
+        }
+      }
+    }
+  ]
+}

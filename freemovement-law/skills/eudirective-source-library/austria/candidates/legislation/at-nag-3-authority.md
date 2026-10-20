@@ -1,0 +1,32 @@
+# Niederlassungs- und Aufenthaltsgesetz § 3 — authorities and decision/review responsibility
+
+- Jurisdiction: Austria
+- Candidate ID: `at-nag-3-authority`
+- Official URL: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20004242&Paragraf=3
+- Resolved URL: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20004242&Paragraf=3
+- Retrieved: 2026-10-19T02:17:11+00:00
+- Publisher identifier: `{"Gesetzesnummer": "20004242", "Paragraf": "3", "system": "RIS Bundesrecht konsolidiert"}`
+- Version evidence: official_current consolidated statute inspected 2026-10-18; § 3 identifies the ordinary NAG authority and distinguishes provincial-administrative-court from BFA/BVwG review
+- Media type: `text/html`
+- Raw source SHA-256: `a2ff598e66544e37018fa8ed7265558b1086eca2eed5d84611b7489228a15d26`
+- Conversion rule: `ris-contentblock-v1`; selector `div.contentBlock`
+- Status: unaccepted review candidate
+
+## Captured official text
+
+2. Hauptstück
+Behördenzuständigkeiten
+Sachliche Zuständigkeit
+§ 3.
+(1) Behörde nach diesem Bundesgesetz ist der örtlich zuständige Landeshauptmann. Der Landeshauptmann kann, wenn dies im Interesse der Einfachheit, Zweckmäßigkeit oder Sparsamkeit der Verwaltung gelegen ist, die Bezirksverwaltungsbehörden mit Verordnung ermächtigen, alle oder bestimmte Fälle zu entscheiden. Abweichend von Satz 1 entscheidet über Aufenthaltstitel gemäß § 46a das Bundesamt für Fremdenwesen und Asyl.
+(2) Über Beschwerden gegen Entscheidungen nach diesem Bundesgesetz entscheidet das örtlich zuständige Verwaltungsgericht des Landes. Eine schriftliche Ausfertigung des Erkenntnisses oder des Beschlusses ist auch dem Bundesminister für Inneres zuzustellen. Abweichend von Satz 1 entscheidet über Beschwerden gegen Entscheidungen des Bundesamtes für Fremdenwesen und Asyl das Bundesverwaltungsgericht.
+(3) Wird ein Antrag im Ausland gestellt (§ 22), ist die örtlich zuständige Berufsvertretungsbehörde zur Entgegennahme des Antrags zuständig. Gegen die Einstellung eines Verfahrens aus formalen Gründen gemäß § 22 Abs. 2 ist kein ordentliches Rechtsmittel zulässig.
+(4) Strafbehörde in den Fällen des § 77 ist die örtlich zuständige Bezirksverwaltungsbehörde.
+(5) Der Bundesminister für Inneres kann die Erteilung eines Aufenthaltstitels (§ 8) und die Ausstellung einer Dokumentation des unionsrechtlichen Aufenthalts- und Niederlassungsrechts (§ 9) in Ausübung seines Aufsichtsrechtes nach § 68 Abs. 4 Z 4 AVG mit Bescheid als nichtig erklären, wenn die Erteilung oder Ausstellung
+1.
+trotz Vorliegens eines Erteilungshindernisses gemäß § 11 Abs. 1 Z 1, 2 oder 4 oder
+2.
+trotz Fehlens einer besonderen Voraussetzung des 2. Teiles erfolgte oder
+3.
+durch Fälschung einer Urkunde, falsches Zeugnis oder eine gerichtlich strafbare Handlung herbeigeführt oder sonst wie erschlichen worden ist.
+In den Fällen der Z 1 und 2 ist die Nichtigerklärung nur binnen drei Jahren nach Erteilung oder Ausstellung zulässig.

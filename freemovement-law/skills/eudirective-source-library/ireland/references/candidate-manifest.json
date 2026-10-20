@@ -1,0 +1,1467 @@
+{
+  "manifest_version": "0.2.0-candidate",
+  "pack": "ireland-national-source-candidates",
+  "jurisdiction": "IE",
+  "inventory_research_date": "2026-10-18",
+  "scope": "Bounded discovery of Ireland’s national free-movement and family-residence routes, EEA EFTA and Swiss treaty distinctions, UK Withdrawal Agreement rights, visa entry and mission guidance, registration, administrative procedure and remedies, public access, privacy, oversight, legal aid, and courts. Ireland is an EU Member State but is not part of the Schengen area. This is not a legal-equivalence opinion or complete national inventory.",
+  "status": "partial_retrieval_review_candidates",
+  "retrieval_status": "26 of 51 candidate records downloaded and converted; others pending or retrieval-blocked",
+  "accepted_source_count": 0,
+  "candidate_source_count": 51,
+  "official_hosts": [
+    "api.ireland.ie",
+    "assets.ombudsman.ie",
+    "courts.ie",
+    "dataprotection.ie",
+    "foi.gov.ie",
+    "legalaidboard.ie",
+    "n-lex.europa.eu",
+    "ombudsman.ie",
+    "www.courts.ie",
+    "www.dataprotection.ie",
+    "www.gov.ie",
+    "www.ireland.ie",
+    "www.irishimmigration.ie",
+    "www.irishstatutebook.ie",
+    "www.legalaidboard.ie",
+    "www2.courts.ie"
+  ],
+  "secondary_hosts": [],
+  "comparison_seed": {
+    "jurisdiction": "Denmark",
+    "source": "Danish EU-residence regulation and official guidance used as the comparison seed",
+    "relationship_note": "SI 548/2015 is a close functional source because it gives effect to Directive 2004/38/EC for Union citizens and their family members. Ireland’s own text refers non-EU EEA citizens to earlier instruments; Swiss rights arise through the EU–Swiss agreement and Irish domestic effect; UK Withdrawal Agreement and Irish-national family routes are distinct. Similar function does not establish legal equivalence."
+  },
+  "previous_findings_carried_forward": [
+    "Denmark remains the comparison seed; prior Denmark-to-Sweden and Finland findings, and Austria’s broad statute with an EEA-specific cluster, were carried forward as search leads only.",
+    "The source taxonomy review identified gaps beyond residence statutes: procedures, file access, consular instructions, family-status evidence, remedies, privacy, oversight, legal aid and court decisions. These classes were searched separately.",
+    "N-Lex is a useful EU Member State legislation discovery route, as seen in prior country reviews, but its links and search results are leads; national identity and current text must be verified at eISB or another first-party publisher.",
+    "Czechia’s keyless date-bound PDF route and Estonia, Finland and France’s documented structured-data routes are adapter examples only; none establishes an Irish API or reuse permission.",
+    "Greece’s unresolved portal terms showed why access rights must be checked for the actual publisher and endpoint. Ireland’s eISB publishes an Open Data PSI licence, but that licence is not assumed to cover other Irish authority websites.",
+    "Prior findings are not evidence that Ireland has an equivalent source, a current text, or complete source-class coverage."
+  ],
+  "search_coverage": [
+    {
+      "source_class": "National legislation, EEA/Swiss treaty routes and version discovery",
+      "search_outcome": "Official eISB records and amendment indexes found. SI 398/2025 is listed as substituting Regulation 24 of SI 548/2015, but its direct text could not be opened in this research client.",
+      "official_channels": [
+        "N-Lex Ireland legislation portal",
+        "electronic Irish Statute Book (eISB)",
+        "ISD immigration legislation and policy index"
+      ],
+      "query_terms": [
+        "S.I. No. 548/2015 European Communities Free Movement Persons",
+        "SI 398/2025 Regulation 24 Ireland",
+        "S.I. 445/2021 Free Movement Persons",
+        "S.I. 728/2020 Withdrawal Agreement Citizens Rights",
+        "S.I. 393/1977 S.I. 57/1997 EEA residence",
+        "European Communities and Swiss Confederation Act 2001"
+      ],
+      "languages": [
+        "en",
+        "ga"
+      ],
+      "coverage_limit": "The current consolidated status of SI 548/2015 and the 1977/1997 instruments was not established. The direct SI 398/2025 endpoint returned 403 in the research client. EEA EFTA, Swiss, UK and Irish-national routes must remain separate."
+    },
+    {
+      "source_class": "Free movement, family residence, forms and domestic family routes",
+      "search_outcome": "Current ISD EU Treaty Rights and family-route guidance found, with EUTR form and 2025 explanatory leaflet leads.",
+      "official_channels": [
+        "Immigration Service Delivery",
+        "Department of Foreign Affairs and Trade",
+        "gov.ie"
+      ],
+      "query_terms": [
+        "EU Treaty Rights Ireland EUTR1 EUTR1A EUTR4",
+        "joining EEA or Swiss national Ireland Directive 2004/38",
+        "joining Irish national family visa Ireland",
+        "UK Withdrawal Agreement family members Ireland"
+      ],
+      "languages": [
+        "en"
+      ],
+      "coverage_limit": "ISD groups EU/EEA/Swiss cases together in guidance although the statutory bases differ. EUTR forms and portal steps are mutable; the 2023 EUTR1 PDF may not be the current submission route."
+    },
+    {
+      "source_class": "Family-status evidence, civil registration and foreign public documents",
+      "search_outcome": "Official civil-registration and DFA authentication guidance found for marriage, birth, adoption, death, divorce and translation/evidence requirements.",
+      "official_channels": [
+        "Department of Social Protection / General Register Office",
+        "Department of Foreign Affairs Authentication and Apostilles Section",
+        "Ireland.ie"
+      ],
+      "query_terms": [
+        "Ireland foreign birth marriage divorce documents EUTR evidence",
+        "Ireland apostille authentication family status records",
+        "EU Regulation 2016/1191 Irish public documents"
+      ],
+      "languages": [
+        "en"
+      ],
+      "coverage_limit": "This bounded search identified Irish-document authentication and marriage-notification evidence requirements; it did not establish comprehensive foreign civil-status recognition, adoption procedures or all local registration practices. The DFA confirms it cannot legalise foreign documents."
+    },
+    {
+      "source_class": "Entry, visas and mission practice",
+      "search_outcome": "Visa-exemption, family C-visa, appeal, AVATS instructions, office assignments and DFA mission-directory leads found.",
+      "official_channels": [
+        "Immigration Service Delivery",
+        "Department of Justice, Home Affairs and Migration",
+        "Department of Foreign Affairs"
+      ],
+      "query_terms": [
+        "Ireland Article 10 residence card visa exemption",
+        "EU Free Movement Directive family member Ireland visa appeal",
+        "Irish visa offices country jurisdiction",
+        "AVATS EU family visa checklist Ireland"
+      ],
+      "languages": [
+        "en"
+      ],
+      "coverage_limit": "Mission instructions and country assignments vary and can change; one national directory is not proof of mission coverage. AVATS is an applicant application system and is excluded from automated interactions."
+    },
+    {
+      "source_class": "Registration and administrative procedure",
+      "search_outcome": "ISD registration guidance, fee legislation and appointment FAQ found; rolling appointment inventory is dynamic.",
+      "official_channels": [
+        "Immigration Service Delivery",
+        "Irish Statute Book"
+      ],
+      "query_terms": [
+        "Ireland immigration permission registration first time 90 days ISD",
+        "registration certificate fee S.I. 421/2025",
+        "Burgh Quay registration appointment FAQ"
+      ],
+      "languages": [
+        "en"
+      ],
+      "coverage_limit": "Registration of third-country permissions is distinct from EU/EEA/Swiss citizen residence documents. Appointment slots, fees and operational guidance are volatile."
+    },
+    {
+      "source_class": "Public access, review, privacy and oversight",
+      "search_outcome": "FOI review, Ombudsman scope, DPC complaint instructions and key statutory records found.",
+      "official_channels": [
+        "Irish Statute Book",
+        "FOI.gov.ie",
+        "Ombudsman.ie",
+        "Data Protection Commission"
+      ],
+      "query_terms": [
+        "Ireland Freedom of Information Act 2014 review rights",
+        "Ombudsman Ireland immigration visa residence complaint exclusions",
+        "Data Protection Commission Ireland raise a concern",
+        "Data Protection Act 2018 Ireland"
+      ],
+      "languages": [
+        "en"
+      ],
+      "coverage_limit": "FOI, Ombudsman and DPC remedies have different mandates; immigration merits decisions are outside some routes. Complaint forms and submissions may contain sensitive personal data and are not retrieval targets."
+    },
+    {
+      "source_class": "Courts, judicial review and legal aid",
+      "search_outcome": "Courts Service judgments search, Order 84, current 2026 Asylum/Immigration/Citizenship practice direction and Legal Aid Board sources found.",
+      "official_channels": [
+        "Courts.ie",
+        "Courts Service",
+        "Legal Aid Board",
+        "Department of Justice"
+      ],
+      "query_terms": [
+        "Ireland Order 84 judicial review SI 157 2026",
+        "Asylum Immigration Citizenship List HC140 2026",
+        "Courts Service Judgments Ireland",
+        "Legal Aid Board immigration deportation services"
+      ],
+      "languages": [
+        "en"
+      ],
+      "coverage_limit": "The judgments tool does not establish exhaustive case-law coverage. The Legal Aid Board’s immigration and international-protection scope does not establish eligibility for every EUTR or judicial-review matter."
+    },
+    {
+      "source_class": "Publisher reuse terms and technical retrieval",
+      "search_outcome": "eISB ELI schema and explicit Open Data PSI licence identified; no API registration or API contract was found.",
+      "official_channels": [
+        "eISB Open Data Initiative",
+        "eISB ELI URI schema"
+      ],
+      "query_terms": [
+        "eISB ELI XML Acts statutory instruments formats",
+        "Irish Statute Book open data PSI licence CC BY 4.0"
+      ],
+      "languages": [
+        "en",
+        "ga"
+      ],
+      "coverage_limit": "The eISB route is a documented file/URI scheme, not a confirmed API. Live HTTP behavior, current SI payloads, conversion replay and terms for non-eISB authorities remain unverified."
+    }
+  ],
+  "documents": [
+    {
+      "id": "ie-01",
+      "title": "N-Lex Ireland national legislation portal",
+      "source_type": "national_law_discovery",
+      "language": "en",
+      "url": "https://n-lex.europa.eu/n-lex/legis_ie/statutebook_form",
+      "publisher_identifier": {
+        "system": "n-lex.europa.eu",
+        "record": "ie-01"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official EU discovery page inspected; links directly to Irish Statute Book and exposes title, text, document number and date search fields.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "web_search",
+      "version_evidence": "Catalog page accessed 2026-10-18; not itself the national publisher or an exhaustive source-class inventory.",
+      "note": "Use as a discovery lead only; verify all records at eISB or the responsible publisher.",
+      "topic_ids": [
+        "law_discovery"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/ireland/candidates/ie-01.md",
+      "source_sha256": "3c116d387fe8e4eff513dbfa606899923787d85a24d8ed9d549b2e85135dc9d0",
+      "converted_sha256": "5ed3596cf42b6902810d766c343fa3fc25372c15c3dd4e8ccdf6d6bf6951dff0"
+    },
+    {
+      "id": "ie-02",
+      "title": "Electronic Irish Statute Book (eISB)",
+      "source_type": "official_legislation_portal",
+      "language": "en/ga",
+      "url": "https://www.irishstatutebook.ie/",
+      "publisher_identifier": {
+        "system": "www.irishstatutebook.ie",
+        "record": "ie-02"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official portal identified; describes Acts and statutory instruments and amendment tracking.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "html",
+      "version_evidence": "Portal states it covers Acts and SIs; official legal versions remain printed versions published by Government Publications.",
+      "note": "National publisher route; parent indexes and source identity must be checked per record.",
+      "topic_ids": [
+        "legislation",
+        "version_discovery"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/ireland/candidates/ie-02.md",
+      "source_sha256": "08d3d51cc939af936ff4f2b87f3b3da4447580b89fd7554a8435e126429a94fe",
+      "converted_sha256": "efcf7e3dbc1e7fbe4007626ef06e641e812cfdaab2938233ce5f55b8727d5904"
+    },
+    {
+      "id": "ie-03",
+      "title": "eISB advanced search",
+      "source_type": "official_legislation_discovery",
+      "language": "en/ga",
+      "url": "https://www.irishstatutebook.ie/advanced-search.html",
+      "publisher_identifier": {
+        "system": "www.irishstatutebook.ie",
+        "record": "ie-03"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official eISB advanced-search page was downloaded and converted; its output remains a discovery surface, not proof of legal status.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "html_search",
+      "version_evidence": "Search form can query title, year/range and type; full query behavior not replayed.",
+      "note": "Search results are discovery only; confirm record and amendment chain at source.",
+      "topic_ids": [
+        "law_discovery"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/ireland/candidates/ie-03.md",
+      "source_sha256": "5a8ea732dab1a2b0e55881b339632839119aba2e18b175382cbace885b57b129",
+      "converted_sha256": "4c59723ec5f475e7e39c751457b6c2cf0f76495fdaf7631056f1a270d327c59a"
+    },
+    {
+      "id": "ie-04",
+      "title": "eISB Open Data Initiative and re-use licence",
+      "source_type": "publisher_reuse_terms",
+      "language": "en/ga",
+      "url": "https://www.irishstatutebook.ie/open-data.html",
+      "publisher_identifier": {
+        "system": "www.irishstatutebook.ie",
+        "record": "ie-04"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official page search result states re-use is subject to the Oireachtas Open Data PSI Licence incorporating CC BY 4.0.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "html",
+      "version_evidence": "Licence is linked from eISB ELI metadata; direct page open returned 403 in this research client.",
+      "note": "Terms are positive route evidence for eISB only; do not extend them to ISD, courts, missions or other publishers.",
+      "topic_ids": [
+        "reuse_terms",
+        "legislation"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/ireland/candidates/ie-04.md",
+      "source_sha256": "ce804cfb1ab2c6d68552ff42c627afe3bd7468711e3db7b0285cf0cb0ebff71c",
+      "converted_sha256": "b4057b0075d57ef3c08aaab9572068348a290b278b6af7056fd993a36221b0ae"
+    },
+    {
+      "id": "ie-05",
+      "title": "eISB ELI URI schema",
+      "source_type": "publisher_retrieval_documentation",
+      "language": "en/ga",
+      "url": "https://www.irishstatutebook.ie/pdf/ELI_URI_schema.pdf",
+      "publisher_identifier": {
+        "system": "www.irishstatutebook.ie",
+        "record": "ie-05"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official schema content inspected through search result; specifies ELI paths and available representations.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "pdf",
+      "version_evidence": "Schema describes Acts as HTML, print, PDF and XML; SIs as HTML/print and PDF; dated document.",
+      "note": "Use only after live path, headers, response identity and changes are confirmed.",
+      "topic_ids": [
+        "retrieval",
+        "conversion"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/ireland/candidates/ie-05.md",
+      "source_sha256": "b975a3a10047dc684bdc30060ad26d977ef235044a7acbb7d932a0d6b0ba7e96",
+      "converted_sha256": "2095776b703a352d29aabade7ae957fda0cbcb9c87e80cea2848bb6905c2464b"
+    },
+    {
+      "id": "ie-06",
+      "title": "eISB annual 2025 statutory-instrument index",
+      "source_type": "official_legislation_discovery",
+      "language": "en/ga",
+      "url": "https://www.irishstatutebook.ie/eli/2025/si",
+      "publisher_identifier": {
+        "system": "www.irishstatutebook.ie",
+        "record": "ie-06"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official annual index identifies SI 398/2025 and links yearly statutory-instrument records.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "html",
+      "version_evidence": "2025 issue list includes No. 398, European Communities (Free Movement of Persons) (Amendment) Regulations 2025.",
+      "note": "Annual index is a useful update-discovery surface; completeness and stable HTML parsing remain untested.",
+      "topic_ids": [
+        "legislation",
+        "version_discovery"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/ireland/candidates/ie-06.md",
+      "source_sha256": "5d63ec840de4212adbb6261556c1c793dd5d956491fd49d007afa5a1457ac445",
+      "converted_sha256": "07614fc1a6903de616a6a144ec8b469e635f7ec83dc896ff5b22c835eee04bd1"
+    },
+    {
+      "id": "ie-07",
+      "title": "Amendment table for SI 548/2015",
+      "source_type": "amendment_index",
+      "language": "en/ga",
+      "url": "https://www.irishstatutebook.ie/eli/isbc/si2015_501-550.html",
+      "publisher_identifier": {
+        "system": "www.irishstatutebook.ie",
+        "record": "ie-07"
+      },
+      "functional_relationship": "close_functional_match",
+      "verification_status": "Official eISB amendment table inspected; records amendment links and provision-level changes.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "html",
+      "version_evidence": "Table identifies SI 445/2021, SI 728/2020 and SI 398/2025; says Regulation 24 was substituted by SI 398/2025.",
+      "note": "Critical version-discovery candidate; table updates and complete amendment semantics need repeatable checks.",
+      "topic_ids": [
+        "free_movement",
+        "version_discovery"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/ireland/candidates/ie-07.md",
+      "source_sha256": "a8ecfd1502ccf9fd199f809c4708b9a6d127980217dded325c02cae546ba4222",
+      "converted_sha256": "4f4a05b423eb2e0f2b1e04f25b067fe563585dc798dd4ab55bd5a216fda24703"
+    },
+    {
+      "id": "ie-08",
+      "title": "S.I. No. 548/2015, European Communities (Free Movement of Persons) Regulations 2015",
+      "source_type": "national_legislation",
+      "language": "en/ga",
+      "url": "https://www.irishstatutebook.ie/eli/2015/si/548/made/en/print",
+      "publisher_identifier": {
+        "system": "www.irishstatutebook.ie",
+        "record": "ie-08"
+      },
+      "functional_relationship": "close_functional_match",
+      "verification_status": "Official eISB text inspected; cites Directive 2004/38/EC, identifies EU Union-citizen scope and refers non-EU EEA nationals to earlier instruments.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "html_print",
+      "version_evidence": "Made 2015; commenced 1 February 2016; amendment table records later changes through SI 398/2025.",
+      "note": "The enacted/made text alone is not a consolidated current text; keep EU, non-EU EEA, Swiss and UK routes distinct.",
+      "topic_ids": [
+        "free_movement",
+        "family_residence"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/ireland/candidates/ie-08.md",
+      "source_sha256": "e0e93bc022695bb82f88965ca4d6ab797361709e8d650694da2c8da7b3519f7d",
+      "converted_sha256": "74dd66943e328d6cb85c446dd28f7d50681e0675d0e3d23cc91b510524b3842e"
+    },
+    {
+      "id": "ie-09",
+      "title": "S.I. No. 445/2021, Free Movement of Persons (Amendment) Regulations 2021",
+      "source_type": "amending_legislation",
+      "language": "en/ga",
+      "url": "https://www.irishstatutebook.ie/eli/2021/si/445/made/en/print",
+      "publisher_identifier": {
+        "system": "www.irishstatutebook.ie",
+        "record": "ie-09"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official eISB instrument inspected; it amends SI 548/2015.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "html_print",
+      "version_evidence": "Made 2021; SI 548 amendment table lists changes to Regulations 20 and 25.",
+      "note": "Record amendment as a separate instrument and resolve its changes into any current view.",
+      "topic_ids": [
+        "free_movement",
+        "procedure",
+        "version_discovery"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/ireland/candidates/ie-09.md",
+      "source_sha256": "db337aa5a8f3d39587956dd633ac3b5b84173f9d5845e845030f8f269b894fd5",
+      "converted_sha256": "dd7a24a4cc220faf7d7b72ccb939da7a2cd6f0f51931d9c657eb166644d4e37d"
+    },
+    {
+      "id": "ie-10",
+      "title": "S.I. No. 398/2025, Free Movement of Persons (Amendment) Regulations 2025",
+      "source_type": "amending_legislation",
+      "language": "en/ga",
+      "url": "https://www.irishstatutebook.ie/eli/2025/si/398/made/en/print",
+      "publisher_identifier": {
+        "system": "www.irishstatutebook.ie",
+        "record": "ie-10"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official eISB text downloaded and its title/instrument identity checked; the text remains an unaccepted review candidate pending legal-effect analysis.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "html_print",
+      "version_evidence": "2025 SI index lists it; amendment table says Regulation 24 substituted.",
+      "note": "Obtain and inspect official text before interpreting scope or implementation; do not infer provision content from title alone.",
+      "topic_ids": [
+        "free_movement",
+        "version_discovery"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/ireland/candidates/ie-10.md",
+      "source_sha256": "ce2c9f5483ebf6a1c5de427915b4adaeb35dab8fd38c383a97cb3e0deb64554a",
+      "converted_sha256": "6613180e47d5bb9d598a6110bfc2a1f19c7b1e9eaf714e9383d71110f941dd08"
+    },
+    {
+      "id": "ie-11",
+      "title": "S.I. No. 393/1977, European Communities (Aliens) Regulations 1977",
+      "source_type": "national_legislation",
+      "language": "en/ga",
+      "url": "https://www.irishstatutebook.ie/eli/1977/si/393/made/en/print",
+      "publisher_identifier": {
+        "system": "www.irishstatutebook.ie",
+        "record": "ie-11"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "SI 548/2015 Regulation 3(2) expressly references this instrument for EEA citizens who are not Union citizens; direct text not reopened in this review.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "html_print",
+      "version_evidence": "Legacy instrument; amendment/current-status chain not independently established here.",
+      "note": "Verify present legal status and amendment history at eISB before any use.",
+      "topic_ids": [
+        "eea_residence",
+        "version_discovery"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/ireland/candidates/ie-11.md",
+      "source_sha256": "8d3c010e023d86b59814ccb47b980445ffe5ce96ec5938248187ab9a36814933",
+      "converted_sha256": "5d41bbb1c9af2cddddbf146db0351a6d95d7f2964fa9f69c6f061fbcffa74569"
+    },
+    {
+      "id": "ie-12",
+      "title": "S.I. No. 57/1997, Right of Residence for Non-Economically Active Persons Regulations 1997",
+      "source_type": "national_legislation",
+      "language": "en/ga",
+      "url": "https://www.irishstatutebook.ie/eli/1997/si/57/made/en/print",
+      "publisher_identifier": {
+        "system": "www.irishstatutebook.ie",
+        "record": "ie-12"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "SI 548/2015 Regulation 3(2) expressly references this instrument for non-EU EEA citizens; direct text not reopened in this review.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "html_print",
+      "version_evidence": "Legacy instrument; amendment/current-status chain not independently established here.",
+      "note": "Verify present legal status and amendment history at eISB before any use.",
+      "topic_ids": [
+        "eea_residence",
+        "version_discovery"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/ireland/candidates/ie-12.md",
+      "source_sha256": "6802dae27dd24024b41906bdf6a9b0bc590057a3f770d5d4441df31ac1165cf0",
+      "converted_sha256": "dff87aa193dfaaecf81cdd85e5aa2b5fe8b145178d5da9b836591646a638853f"
+    },
+    {
+      "id": "ie-13",
+      "title": "European Communities and Swiss Confederation Act 2001 (No. 41 of 2001)",
+      "source_type": "treaty_implementation_legislation",
+      "language": "en/ga",
+      "url": "https://www.irishstatutebook.ie/eli/2001/act/41/enacted/en/pdf",
+      "publisher_identifier": {
+        "system": "www.irishstatutebook.ie",
+        "record": "ie-13"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official eISB PDF was downloaded, text-extracted, and identified as Act 41/2001; the treaty route remains distinct from EEA membership.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "pdf",
+      "version_evidence": "Enacted Act 41/2001; Agreement-specific scope must be checked against the named treaty and current law.",
+      "note": "Swiss route is based on bilateral agreement and domestic effect, not EEA membership.",
+      "topic_ids": [
+        "swiss_free_movement",
+        "treaty"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/ireland/candidates/ie-13.md",
+      "source_sha256": "150a5e38d452a250c18db56a0035202c906dc2dc2936211968c71e0c2bc52a86",
+      "converted_sha256": "b2efde2967bb9a6565013d17de7c2ff799fbff1f46277570daf5b45525b9f533"
+    },
+    {
+      "id": "ie-14",
+      "title": "S.I. No. 728/2020, EU Withdrawal Agreement (Citizens’ Rights) Regulations 2020",
+      "source_type": "withdrawal_agreement_legislation",
+      "language": "en/ga",
+      "url": "https://www.irishstatutebook.ie/eli/2020/si/728/made/en/pdf",
+      "publisher_identifier": {
+        "system": "www.irishstatutebook.ie",
+        "record": "ie-14"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official eISB PDF was downloaded and identified as SI 728/2020; the UK Withdrawal Agreement route remains separate.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "pdf",
+      "version_evidence": "Made 2020; specific application dates and amendments need to be resolved against current text.",
+      "note": "Keep UK Withdrawal Agreement beneficiaries and post-transition UK family routes separate from EU free movement.",
+      "topic_ids": [
+        "uk_withdrawal_agreement",
+        "family_residence"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/ireland/candidates/ie-14.md",
+      "source_sha256": "258380281881e086f1232a0168456e615c2901a0f5af34c7a1087cd77bbce6a4",
+      "converted_sha256": "f9cf002f7be56b53b48c1912da7b84da988d4513f2a5dc2bf9ad46090a139401"
+    },
+    {
+      "id": "ie-15",
+      "title": "S.I. No. 421/2025, Immigration Act 2004 (Registration Certificate Fee) Regulations 2025",
+      "source_type": "fee_legislation",
+      "language": "en/ga",
+      "url": "https://www.irishstatutebook.ie/eli/2025/si/421/made/en/pdf",
+      "publisher_identifier": {
+        "system": "www.irishstatutebook.ie",
+        "record": "ie-15"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official eISB PDF was downloaded and identified as SI 421/2025; verify operative fees and exemptions against current law and service guidance.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "pdf",
+      "version_evidence": "2025 fee instrument; verify operative fee and any exemptions against full text and current service pages.",
+      "note": "Fee and waiver details are volatile; do not hard-code from a static PDF without currentness checks.",
+      "topic_ids": [
+        "registration",
+        "fees"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/ireland/candidates/ie-15.md",
+      "source_sha256": "ec854332fe4a09157b7495c1f285681d670f9fcade67dd73cfaa749ee12eeea0",
+      "converted_sha256": "fd6c9311b61308081a93b972e35a60058316098ea08b0917b8cbe24a49b445c5"
+    },
+    {
+      "id": "ie-16",
+      "title": "Immigration Act 2004",
+      "source_type": "national_legislation",
+      "language": "en/ga",
+      "url": "https://www.irishstatutebook.ie/eli/2004/act/1/enacted/en/print",
+      "publisher_identifier": {
+        "system": "www.irishstatutebook.ie",
+        "record": "ie-16"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official eISB record identified; provides the general immigration and registration framework.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "html_print",
+      "version_evidence": "Enacted text path; current provisions require amendment-table and current-text review.",
+      "note": "Adjacent national immigration law, not a substitute for free-movement or treaty analysis.",
+      "topic_ids": [
+        "immigration",
+        "registration"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/ireland/candidates/ie-16.md",
+      "source_sha256": "4289a7038b0607efa5a51a75a6800f494559b84e6a0c6553cc03d6334cda0e3e",
+      "converted_sha256": "0767e4317ae69a57330d41f56bebeb649889888a512b2f1e3afff3dd61547372"
+    },
+    {
+      "id": "ie-17",
+      "title": "Immigration Legislation and Policy Guidelines index",
+      "source_type": "official_immigration_law_index",
+      "language": "en",
+      "url": "https://www.irishimmigration.ie/immigration-legislation-and-policy-guidelines/",
+      "publisher_identifier": {
+        "system": "www.irishimmigration.ie",
+        "record": "ie-17"
+      },
+      "functional_relationship": "close_functional_match",
+      "verification_status": "Official ISD page inspected in search result; lists SI 548/2015, SI 445/2021 and SI 728/2020.",
+      "retrieval_status": "publisher_blocked_or_not_found",
+      "retrieval_shape": "html",
+      "version_evidence": "Page says last updated 6 February 2026 and does not list SI 398/2025, although eISB indexes that 2025 amendment.",
+      "note": "Observed discoverability gap; this guidance index cannot be the sole amendment detector.",
+      "topic_ids": [
+        "free_movement",
+        "version_discovery",
+        "guidance"
+      ],
+      "retrieved": false,
+      "accepted": false
+    },
+    {
+      "id": "ie-18",
+      "title": "EU Treaty Rights guidance",
+      "source_type": "official_immigration_guidance",
+      "language": "en",
+      "url": "https://www.irishimmigration.ie/coming-to-join-family-in-ireland/joining-an-eea-or-swiss-national/eu-treaty-rights/",
+      "publisher_identifier": {
+        "system": "www.irishimmigration.ie",
+        "record": "ie-18"
+      },
+      "functional_relationship": "close_functional_match",
+      "verification_status": "Official ISD page inspected; describes family categories, in-country applications, portal and EUTR4 review.",
+      "retrieval_status": "publisher_blocked_or_not_found",
+      "retrieval_shape": "html",
+      "version_evidence": "Page last updated 10 September 2026; indicates up to six months for a decision and 15 working days for EUTR4 review.",
+      "note": "Page's broad EU/EEA/Swiss grouping is legally imprecise; validate statutory scope by route and track dynamic application steps.",
+      "topic_ids": [
+        "free_movement",
+        "family_residence",
+        "review"
+      ],
+      "retrieved": false,
+      "accepted": false
+    },
+    {
+      "id": "ie-19",
+      "title": "Joining an EEA or Swiss national: entry visa and Directive checklist",
+      "source_type": "official_visa_guidance",
+      "language": "en",
+      "url": "https://www.irishimmigration.ie/coming-to-join-family-in-ireland/joining-an-eea-or-swiss-national/",
+      "publisher_identifier": {
+        "system": "www.irishimmigration.ie",
+        "record": "ie-19"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official ISD page inspected; distinguishes family members relying on Directive 2004/38 and short-stay entry visa rules.",
+      "retrieval_status": "publisher_blocked_or_not_found",
+      "retrieval_shape": "html",
+      "version_evidence": "Current web page; page/date signals need capture in any future monitor.",
+      "note": "Do not merge EU/EEA/Swiss legal bases or short-stay visa entry with long-term residence cards.",
+      "topic_ids": [
+        "entry",
+        "visa",
+        "family_residence"
+      ],
+      "retrieved": false,
+      "accepted": false
+    },
+    {
+      "id": "ie-20",
+      "title": "EUTR1 and EUTR1A combined explanatory leaflet",
+      "source_type": "official_application_guidance",
+      "language": "en",
+      "url": "https://www.irishimmigration.ie/wp-content/uploads/2025/09/EUTR-1and-EURT-1A-combined-explanatory-leaflet-1.pdf",
+      "publisher_identifier": {
+        "system": "www.irishimmigration.ie",
+        "record": "ie-20"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official ISD PDF inspected; states SI 548/2015 as amended and SI 728/2020 as relevant legal routes.",
+      "retrieval_status": "publisher_blocked_or_not_found",
+      "retrieval_shape": "pdf",
+      "version_evidence": "File path dated September 2025; exact publication/version metadata should be captured from PDF.",
+      "note": "Useful legal-scope aid, but does not replace current legislation or current online form behavior.",
+      "topic_ids": [
+        "forms",
+        "free_movement",
+        "uk_withdrawal_agreement"
+      ],
+      "retrieved": false,
+      "accepted": false
+    },
+    {
+      "id": "ie-21",
+      "title": "Form EUTR1",
+      "source_type": "official_application_form",
+      "language": "en",
+      "url": "https://www.irishimmigration.ie/wp-content/uploads/2023/12/Form-EUTR1.pdf",
+      "publisher_identifier": {
+        "system": "www.irishimmigration.ie",
+        "record": "ie-21"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official ISD PDF identified; static paper application form.",
+      "retrieval_status": "publisher_blocked_or_not_found",
+      "retrieval_shape": "pdf",
+      "version_evidence": "File path December 2023; likely older than the 2025 combined explanatory leaflet and current online portal.",
+      "note": "Keep as versioned form candidate; rediscover from parent form guidance and avoid assuming it is the current default.",
+      "topic_ids": [
+        "forms",
+        "family_residence"
+      ],
+      "retrieved": false,
+      "accepted": false
+    },
+    {
+      "id": "ie-22",
+      "title": "Coming to join family in Ireland: route-selection hub",
+      "source_type": "official_immigration_guidance",
+      "language": "en",
+      "url": "https://www.irishimmigration.ie/coming-to-join-family-in-ireland/",
+      "publisher_identifier": {
+        "system": "www.irishimmigration.ie",
+        "record": "ie-22"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official ISD route hub inspected; separates Irish, UK, EU/EEA/Swiss, refugee and non-EEA sponsor routes.",
+      "retrieval_status": "publisher_blocked_or_not_found",
+      "retrieval_shape": "html",
+      "version_evidence": "Content changed for the 2026 International Protection Act and is a mutable service page.",
+      "note": "Use for route discovery only; retain separate legal route records and visible update dates.",
+      "topic_ids": [
+        "family_routes",
+        "guidance"
+      ],
+      "retrieved": false,
+      "accepted": false
+    },
+    {
+      "id": "ie-23",
+      "title": "Joining an Irish national",
+      "source_type": "national_family_guidance",
+      "language": "en",
+      "url": "https://www.irishimmigration.ie/coming-to-join-family-in-ireland/joining-an-irish-national/",
+      "publisher_identifier": {
+        "system": "www.irishimmigration.ie",
+        "record": "ie-23"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official ISD page inspected; lists Irish-national family categories and points to a separate policy route.",
+      "retrieval_status": "publisher_blocked_or_not_found",
+      "retrieval_shape": "html",
+      "version_evidence": "Page last updated 12 June 2026.",
+      "note": "Domestic Irish-national family reunification is separate from Directive 2004/38 applications.",
+      "topic_ids": [
+        "irish_national_family",
+        "guidance"
+      ],
+      "retrieved": false,
+      "accepted": false
+    },
+    {
+      "id": "ie-24",
+      "title": "Join family visa for an Irish national sponsor",
+      "source_type": "national_family_visa_guidance",
+      "language": "en",
+      "url": "https://www.irishimmigration.ie/coming-to-join-family-in-ireland/joining-an-irish-national/join-family-visa/",
+      "publisher_identifier": {
+        "system": "www.irishimmigration.ie",
+        "record": "ie-24"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official ISD page inspected; states long-stay visa requirements and explicitly excludes Directive 2004/38 applications from the general policy.",
+      "retrieval_status": "publisher_blocked_or_not_found",
+      "retrieval_shape": "html",
+      "version_evidence": "Current page; linked policy and application routes can change independently.",
+      "note": "Separate national join-family visa requirements from EU Treaty Rights and UK routes.",
+      "topic_ids": [
+        "irish_national_family",
+        "visa"
+      ],
+      "retrieved": false,
+      "accepted": false
+    },
+    {
+      "id": "ie-25",
+      "title": "Visa and non-visa required nationalities",
+      "source_type": "official_visa_guidance",
+      "language": "en",
+      "url": "https://www.irishimmigration.ie/visa-non-visa-required-nationalities/",
+      "publisher_identifier": {
+        "system": "www.irishimmigration.ie",
+        "record": "ie-25"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official ISD page inspected; includes Article 10 family-member residence-card visa exception.",
+      "retrieval_status": "publisher_blocked_or_not_found",
+      "retrieval_shape": "html",
+      "version_evidence": "Page contains dated, temporary nationality and document notices; volatile.",
+      "note": "Monitor date-bearing changes and preserve the limited Article 10 exception scope.",
+      "topic_ids": [
+        "visa",
+        "entry"
+      ],
+      "retrieved": false,
+      "accepted": false
+    },
+    {
+      "id": "ie-26",
+      "title": "Appeal a negative visa decision",
+      "source_type": "official_visa_appeal_guidance",
+      "language": "en",
+      "url": "https://www.irishimmigration.ie/appeal-a-negative-decision/",
+      "publisher_identifier": {
+        "system": "www.irishimmigration.ie",
+        "record": "ie-26"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official ISD page inspected; sets deadlines and preserves short-stay appeals for EU Free Movement Directive family categories.",
+      "retrieval_status": "publisher_blocked_or_not_found",
+      "retrieval_shape": "html",
+      "version_evidence": "From 1 June 2026 most short-stay C visa refusals are not appealable; Directive categories remain exceptions.",
+      "note": "Visa appeal rules are date-sensitive; track alongside the primary Department announcement.",
+      "topic_ids": [
+        "visa",
+        "appeal",
+        "procedure"
+      ],
+      "retrieved": false,
+      "accepted": false
+    },
+    {
+      "id": "ie-27",
+      "title": "Removal of appeals for certain short-stay visa refusals",
+      "source_type": "official_policy_announcement",
+      "language": "en",
+      "url": "https://www.gov.ie/en/department-of-justice-home-affairs-and-migration/news/removal-of-appeals-for-certain-short-stay-visa-refusals/",
+      "publisher_identifier": {
+        "system": "www.gov.ie",
+        "record": "ie-27"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official Department announcement inspected; explains the 2026 appeal change and Directive exception.",
+      "retrieval_status": "publisher_blocked_or_not_found",
+      "retrieval_shape": "html",
+      "version_evidence": "Published 29 May 2026 and updated 3 June 2026; change effective 1 June 2026.",
+      "note": "Announcement is a change lead; verify continuing rule against current ISD guidance and law.",
+      "topic_ids": [
+        "visa",
+        "appeal",
+        "version_discovery"
+      ],
+      "retrieved": false,
+      "accepted": false
+    },
+    {
+      "id": "ie-28",
+      "title": "AVATS visa and preclearance application instructions",
+      "source_type": "online_application_guidance",
+      "language": "en",
+      "url": "https://www.irishimmigration.ie/coming-to-visit-ireland/giving-your-details-on-avats-for-a-visa-preclearance-application/",
+      "publisher_identifier": {
+        "system": "www.irishimmigration.ie",
+        "record": "ie-28"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official instructions inspected; say AVATS requires acceptance of terms/privacy notice and collects applicant and family details.",
+      "retrieval_status": "publisher_blocked_or_not_found",
+      "retrieval_shape": "html",
+      "version_evidence": "Dynamic application guidance and external AVATS service.",
+      "note": "Monitor public instructions only; do not automate submissions or capture applicant data.",
+      "topic_ids": [
+        "visa",
+        "privacy",
+        "forms"
+      ],
+      "retrieved": false,
+      "accepted": false
+    },
+    {
+      "id": "ie-29",
+      "title": "Visa offices and jurisdiction assignments",
+      "source_type": "mission_coverage_directory",
+      "language": "en",
+      "url": "https://www.irishimmigration.ie/visa-offices/",
+      "publisher_identifier": {
+        "system": "www.irishimmigration.ie",
+        "record": "ie-29"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official ISD directory identified; lists visa offices and country coverage.",
+      "retrieval_status": "publisher_blocked_or_not_found",
+      "retrieval_shape": "html_dynamic",
+      "version_evidence": "Last-update metadata and office assignments are dynamic; current directory route inspected from prior source research.",
+      "note": "Use as parent-index discovery, then verify local mission instructions at the mission site.",
+      "topic_ids": [
+        "visa",
+        "missions"
+      ],
+      "retrieved": false,
+      "accepted": false
+    },
+    {
+      "id": "ie-30",
+      "title": "Visa decisions and processing dates",
+      "source_type": "processing_status_page",
+      "language": "en",
+      "url": "https://www.irishimmigration.ie/visa-decisions/",
+      "publisher_identifier": {
+        "system": "www.irishimmigration.ie",
+        "record": "ie-30"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official ISD page identified; provides rolling dates and application numbers by category.",
+      "retrieval_status": "publisher_blocked_or_not_found",
+      "retrieval_shape": "html_dynamic",
+      "version_evidence": "Updated weekly according to the page description.",
+      "note": "Do not harvest personal application identifiers; monitor only aggregate process instructions if needed.",
+      "topic_ids": [
+        "visa",
+        "processing"
+      ],
+      "retrieved": false,
+      "accepted": false
+    },
+    {
+      "id": "ie-31",
+      "title": "Irish Department of Foreign Affairs embassy directory",
+      "source_type": "mission_directory",
+      "language": "en",
+      "url": "https://www.ireland.ie/en/dfa/embassies/",
+      "publisher_identifier": {
+        "system": "www.ireland.ie",
+        "record": "ie-31"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official DFA directory identified for embassy and consular locations.",
+      "retrieval_status": "publisher_blocked_or_not_found",
+      "retrieval_shape": "html_dynamic",
+      "version_evidence": "Directory structure and country pages can change.",
+      "note": "Coverage requires mission-level reconciliation; no country-by-country survey completed.",
+      "topic_ids": [
+        "missions",
+        "consular"
+      ],
+      "retrieved": false,
+      "accepted": false
+    },
+    {
+      "id": "ie-32",
+      "title": "Additional documents for short-stay C visa: EU family members",
+      "source_type": "official_visa_document_list",
+      "language": "en",
+      "url": "https://www.irishimmigration.ie/wp-content/uploads/2021/03/Additional-Documents-Short-Stay-C-Visa.pdf",
+      "publisher_identifier": {
+        "system": "www.irishimmigration.ie",
+        "record": "ie-32"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official ISD PDF identified; specialized document-list lead for EU family applicants.",
+      "retrieval_status": "publisher_blocked_or_not_found",
+      "retrieval_shape": "pdf",
+      "version_evidence": "Static file dated March 2021; currentness not established.",
+      "note": "Potentially stale checklist; rediscover from current parent page before relying on it.",
+      "topic_ids": [
+        "visa",
+        "forms",
+        "family_residence"
+      ],
+      "retrieved": false,
+      "accepted": false
+    },
+    {
+      "id": "ie-33",
+      "title": "Registering your immigration permission",
+      "source_type": "official_registration_guidance",
+      "language": "en",
+      "url": "https://www.irishimmigration.ie/registering-your-immigration-permission/",
+      "publisher_identifier": {
+        "system": "www.irishimmigration.ie",
+        "record": "ie-33"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official ISD page inspected; states registration scope and routes to first registration, renewal and related pages.",
+      "retrieval_status": "publisher_blocked_or_not_found",
+      "retrieval_shape": "html",
+      "version_evidence": "Page last updated 23 December 2025.",
+      "note": "Scope excludes EU/EEA/UK/Swiss nationals themselves; monitor the related third-country-family rules separately.",
+      "topic_ids": [
+        "registration",
+        "guidance"
+      ],
+      "retrieved": false,
+      "accepted": false
+    },
+    {
+      "id": "ie-34",
+      "title": "Information on registering immigration permission for the first time",
+      "source_type": "official_registration_guidance",
+      "language": "en",
+      "url": "https://www.irishimmigration.ie/registering-your-immigration-permission/how-to-register-your-immigration-permission-for-the-first-time/information-on-registering-your-immigration-permission-for-the-first-time/",
+      "publisher_identifier": {
+        "system": "www.irishimmigration.ie",
+        "record": "ie-34"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official ISD page inspected; says eligible third-country nationals staying over 90 days register and first registrations transferred to ISD on 13 January 2025.",
+      "retrieval_status": "publisher_blocked_or_not_found",
+      "retrieval_shape": "html",
+      "version_evidence": "Page last updated 10 January 2025; fee is described as up to €300 depending on permission.",
+      "note": "Date and responsibility transfer are stable history; appointment/fee details are volatile.",
+      "topic_ids": [
+        "registration",
+        "procedure"
+      ],
+      "retrieved": false,
+      "accepted": false
+    },
+    {
+      "id": "ie-35",
+      "title": "Registration FAQ and appointment guidance",
+      "source_type": "official_registration_faq",
+      "language": "en",
+      "url": "https://www.irishimmigration.ie/registering-your-immigration-permission/frequently-asked-questions-for-registration/",
+      "publisher_identifier": {
+        "system": "www.irishimmigration.ie",
+        "record": "ie-35"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official ISD FAQ inspected; explains appointment access and rolling 90-day slot releases.",
+      "retrieval_status": "publisher_blocked_or_not_found",
+      "retrieval_shape": "html_dynamic",
+      "version_evidence": "Rolling slots and fees may change; page contains operational instructions.",
+      "note": "No appointment booking or applicant account automation; track only public text and links.",
+      "topic_ids": [
+        "registration",
+        "procedure",
+        "dynamic_guidance"
+      ],
+      "retrieved": false,
+      "accepted": false
+    },
+    {
+      "id": "ie-36",
+      "title": "Freedom of Information Act 2014",
+      "source_type": "administrative_procedure_legislation",
+      "language": "en/ga",
+      "url": "https://www.irishstatutebook.ie/eli/2014/act/30/enacted/en/print",
+      "publisher_identifier": {
+        "system": "www.irishstatutebook.ie",
+        "record": "ie-36"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official eISB Act record identified; relevant to public-record access and review routes.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "html_print",
+      "version_evidence": "Enacted Act path; amendment table and current provisions require verification.",
+      "note": "FOI access is not a substitute for immigration appeal or judicial review.",
+      "topic_ids": [
+        "procedure",
+        "public_access"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/ireland/candidates/ie-36.md",
+      "source_sha256": "e87c9b4099357eaa949cd7d07eed22823721d085d393113dc0a2a2299e798d3a",
+      "converted_sha256": "a89195d0268ca36e53c180b6bd9faa73e7959ecf7be647db34af399f1347f5fd"
+    },
+    {
+      "id": "ie-37",
+      "title": "FOI request reviews and Information Commissioner route",
+      "source_type": "administrative_review_guidance",
+      "language": "en",
+      "url": "https://foi.gov.ie/faqs/what-are-my-rights-of-review/",
+      "publisher_identifier": {
+        "system": "foi.gov.ie",
+        "record": "ie-37"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official FOI site inspected; describes internal review followed by Information Commissioner review.",
+      "retrieval_status": "publisher_blocked_or_not_found",
+      "retrieval_shape": "html",
+      "version_evidence": "Current FAQ content; no page version mechanism identified.",
+      "note": "The route concerns FOI decisions only, not merits of a residence/visa decision.",
+      "topic_ids": [
+        "procedure",
+        "public_access",
+        "review"
+      ],
+      "retrieved": false,
+      "accepted": false
+    },
+    {
+      "id": "ie-38",
+      "title": "FOI decisions reviewable by the Information Commissioner",
+      "source_type": "administrative_review_guidance",
+      "language": "en",
+      "url": "https://foi.gov.ie/faqs/what-foi-decisions-can-the-commissioner-carryout-a-review-on/",
+      "publisher_identifier": {
+        "system": "foi.gov.ie",
+        "record": "ie-38"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official FOI page inspected; lists decision types and time rules.",
+      "retrieval_status": "publisher_blocked_or_not_found",
+      "retrieval_shape": "html",
+      "version_evidence": "Current FAQ content; legal provisions may be amended.",
+      "note": "Track alongside FOI Act; not an immigration remedy.",
+      "topic_ids": [
+        "procedure",
+        "public_access",
+        "review"
+      ],
+      "retrieved": false,
+      "accepted": false
+    },
+    {
+      "id": "ie-39",
+      "title": "Making a complaint to the Ombudsman",
+      "source_type": "oversight_complaint_guidance",
+      "language": "en",
+      "url": "https://ombudsman.ie/en/publication/000df-making-a-complaint/",
+      "publisher_identifier": {
+        "system": "ombudsman.ie",
+        "record": "ie-39"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official Ombudsman complaint instructions identified.",
+      "retrieval_status": "publisher_blocked_or_not_found",
+      "retrieval_shape": "html",
+      "version_evidence": "Complaint process and scope can change; current page content not fully replayed.",
+      "note": "Ombudsman jurisdiction should be checked for each complaint type.",
+      "topic_ids": [
+        "oversight",
+        "complaints"
+      ],
+      "retrieved": false,
+      "accepted": false
+    },
+    {
+      "id": "ie-40",
+      "title": "Ombudsman leaflet: complaints the Ombudsman cannot examine",
+      "source_type": "oversight_scope_guidance",
+      "language": "en",
+      "url": "https://assets.ombudsman.ie/media/285402/a0fb9d4f-f4aa-47c0-b164-394b46322112.pdf",
+      "publisher_identifier": {
+        "system": "assets.ombudsman.ie",
+        "record": "ie-40"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official Ombudsman PDF inspected; excludes asylum, citizenship, family reunification, residence and visa decisions.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "pdf",
+      "version_evidence": "Official leaflet; publication date appears older and requires current-version check.",
+      "note": "Material route limitation; do not present the Ombudsman as a remedy for excluded immigration decisions.",
+      "topic_ids": [
+        "oversight",
+        "complaints",
+        "scope"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/ireland/candidates/ie-40.md",
+      "source_sha256": "0841e2c1bc199f0c901ba23347b119d114f48334d1fb59f2dbff2df874bc3443",
+      "converted_sha256": "0f1d3a1e194f896bdf55d2db05a0c1aa1c7b0ee9d5926f3ff38e1489a78dae4b"
+    },
+    {
+      "id": "ie-41",
+      "title": "Data Protection Act 2018",
+      "source_type": "privacy_legislation",
+      "language": "en/ga",
+      "url": "https://www.irishstatutebook.ie/eli/2018/act/7/enacted/en/html",
+      "publisher_identifier": {
+        "system": "www.irishstatutebook.ie",
+        "record": "ie-41"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official eISB Act record identified.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "html",
+      "version_evidence": "Enacted Act path; amendments/current text need verification.",
+      "note": "Privacy framework is relevant to applicant-data handling but does not authorize storing case data.",
+      "topic_ids": [
+        "privacy",
+        "data_protection"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/ireland/candidates/ie-41.md",
+      "source_sha256": "c5d0f287b591ff4c54dcae2bf62ac1974b3dea76560a91e27514dbd981a47de7",
+      "converted_sha256": "e93f3c6981ab677942975a8119d6a25bed9f747ac2c83d5787a73f9d7d689fa9"
+    },
+    {
+      "id": "ie-42",
+      "title": "Raise a concern with the Data Protection Commission",
+      "source_type": "privacy_remedy_guidance",
+      "language": "en",
+      "url": "https://www.dataprotection.ie/en/individuals/exercising-your-rights/raising-concern-commission",
+      "publisher_identifier": {
+        "system": "www.dataprotection.ie",
+        "record": "ie-42"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official DPC page inspected; directs individuals to online concern process.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "html",
+      "version_evidence": "Current public guidance; form route can change.",
+      "note": "Monitor public instructions only; do not submit or collect private complaints.",
+      "topic_ids": [
+        "privacy",
+        "complaints"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/ireland/candidates/ie-42.md",
+      "source_sha256": "55c550ece5a2883f9b171cda42e6563fbf9e7afada595a5a747fd29358a23de8",
+      "converted_sha256": "228940cadba5563003783b213a58bf64a61e89ee49da95716b5bbfddb2d0303e"
+    },
+    {
+      "id": "ie-43",
+      "title": "Data Protection Commission complaints handling and investigations",
+      "source_type": "privacy_remedy_guidance",
+      "language": "en",
+      "url": "https://dataprotection.ie/en/individuals/exercising-your-rights/complaints-handling-investigations-and-enforcement-individuals",
+      "publisher_identifier": {
+        "system": "dataprotection.ie",
+        "record": "ie-43"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official DPC page identified; describes complaint handling and investigation.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "html",
+      "version_evidence": "Current public guidance; no automated form interaction.",
+      "note": "DPC jurisdiction is limited to data protection.",
+      "topic_ids": [
+        "privacy",
+        "complaints"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/ireland/candidates/ie-43.md",
+      "source_sha256": "667f5c69bfd6c427793fdad1a826cec9c0cbc70e62c5cc9cb6d167167b1b5ea4",
+      "converted_sha256": "54eb8233784f8dbd02e8794b1a02b7c2980ac991c5ec2fef53eceed75042ead0"
+    },
+    {
+      "id": "ie-44",
+      "title": "Legal Aid Board services",
+      "source_type": "legal_aid_authority",
+      "language": "en",
+      "url": "https://legalaidboard.ie/en/",
+      "publisher_identifier": {
+        "system": "legalaidboard.ie",
+        "record": "ie-44"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official Legal Aid Board site inspected; states civil legal aid is available to qualifying people in family law, international protection and other areas.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "html",
+      "version_evidence": "Current service overview; eligibility and scope depend on matter and criteria.",
+      "note": "Not evidence of coverage for every EU Treaty Rights or judicial-review case.",
+      "topic_ids": [
+        "legal_aid",
+        "procedure"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/ireland/candidates/ie-44.md",
+      "source_sha256": "c57163bf273f20ef8343cf3c0577057ffad85ca59e9d59ffc0dd507a5d63f853",
+      "converted_sha256": "fee54bad3d0a4cb1baad5046804be540e8b33b5046d4c77af44810dd90ca58ca"
+    },
+    {
+      "id": "ie-45",
+      "title": "Legal Aid Board services for international-protection applicants",
+      "source_type": "legal_aid_guidance",
+      "language": "en",
+      "url": "https://www.legalaidboard.ie/en/our-services/legal-aid-services/services-for-international-protection-applicants/22_international-protection-services.pdf",
+      "publisher_identifier": {
+        "system": "www.legalaidboard.ie",
+        "record": "ie-45"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "The listed official PDF URL returned HTTP 404 in the bounded retrieval; rediscovery of the current version remains open.",
+      "retrieval_status": "publisher_blocked_or_not_found",
+      "retrieval_shape": "pdf",
+      "version_evidence": "PDF publication/version should be checked against current Board guidance.",
+      "note": "The listed PDF returned HTTP 404 in the bounded retrieval; rediscover the current version from the Legal Aid Board parent page. Adjacent route only; does not establish legal-aid eligibility for EUTR matters.",
+      "topic_ids": [
+        "legal_aid",
+        "immigration"
+      ],
+      "retrieved": false,
+      "accepted": false
+    },
+    {
+      "id": "ie-46",
+      "title": "Courts Service judgments search",
+      "source_type": "court_decision_discovery",
+      "language": "en",
+      "url": "https://www2.courts.ie/Judgments",
+      "publisher_identifier": {
+        "system": "www2.courts.ie",
+        "record": "ie-46"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official Courts Service search tool identified; supports several court/judgment query fields.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "search_portal",
+      "version_evidence": "Searchability does not establish complete or machine-readable case coverage.",
+      "note": "Use as a discovery tool; do not scrape personal filings or claim corpus completeness.",
+      "topic_ids": [
+        "courts",
+        "case_law"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/ireland/candidates/ie-46.md",
+      "source_sha256": "c9741ecf6c719ca4bc0bfcb8238e7635df07b99cb2f411c0e1d3516c0f982ccd",
+      "converted_sha256": "2e3830ee0125ee9200999c580e40b71fc31deec6b088077a555c3bafde276f7c"
+    },
+    {
+      "id": "ie-47",
+      "title": "Order 84: Judicial Review and Orders Affecting Personal Liberty",
+      "source_type": "court_procedure_rules",
+      "language": "en",
+      "url": "https://courts.ie/court-rules/full-court-rule?url=Order-84-Superior-Judicial-Review-and-Orders-Affecting-Personal-Liberty",
+      "publisher_identifier": {
+        "system": "courts.ie",
+        "record": "ie-47"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official Courts.ie rules page inspected; records amendment SI 157/2026 effective 8 May 2026.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "html",
+      "version_evidence": "Rule text displays amendment history through 2026.",
+      "note": "Capture amendments and effective dates; judicial review is distinct from EUTR administrative review.",
+      "topic_ids": [
+        "courts",
+        "judicial_review",
+        "procedure"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/ireland/candidates/ie-47.md",
+      "source_sha256": "673874292b09d2719bf56022dd0c62e902541c75f0f3843181cddc37ed3a5c13",
+      "converted_sha256": "d191d6ce15cae706bbb83eae2145ec0df9ed3bb912f1b869b8e02399bacbc5f1"
+    },
+    {
+      "id": "ie-48",
+      "title": "Asylum, Immigration and Citizenship List Practice Direction HC140 (2026)",
+      "source_type": "court_practice_direction",
+      "language": "en",
+      "url": "https://www.courts.ie/practice-directions/full-practice-direction?url=asylum--immigration-and-citizenship-list-2026",
+      "publisher_identifier": {
+        "system": "www.courts.ie",
+        "record": "ie-48"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official Courts.ie practice direction inspected; applies to immigration, freedom-of-movement and related EU-law cases.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "html",
+      "version_evidence": "Effective 3 June 2026; supersedes prior HC81 direction.",
+      "note": "Practice directions are mutable and date-sensitive; maintain an official parent index and prior versions.",
+      "topic_ids": [
+        "courts",
+        "judicial_review",
+        "procedure"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/ireland/candidates/ie-48.md",
+      "source_sha256": "79ea1db7fd74e655b21f30732aaf252c4a59f7f68e3fb3cf56aa20325e6bd0dc",
+      "converted_sha256": "8f9a4a7f34cc8d69a4b05c3829aa8eb6a28685e5f76e4842dfdc1076521f6991"
+    },
+    {
+      "id": "ie-49",
+      "title": "Register to join your EU/EEA or Swiss family member (gov.ie)",
+      "source_type": "official_service_guidance",
+      "language": "en",
+      "url": "https://www.gov.ie/en/department-of-foreign-affairs/services/register-to-join-your-eueea-or-swiss-family-member/",
+      "publisher_identifier": {
+        "system": "www.gov.ie",
+        "record": "ie-49"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official gov.ie page inspected; offers a separate route summary for EUTR residence cards.",
+      "retrieval_status": "publisher_blocked_or_not_found",
+      "retrieval_shape": "html",
+      "version_evidence": "Last updated 11 April 2025; says applications may take 12 months, while current ISD guidance says up to six months.",
+      "note": "Cross-publisher processing-time discrepancy; retain as a stale/contradictory guidance lead, not an operative rule.",
+      "topic_ids": [
+        "free_movement",
+        "family_residence",
+        "guidance"
+      ],
+      "retrieved": false,
+      "accepted": false
+    },
+    {
+      "id": "ie-50",
+      "title": "Authentication and Apostille of Irish public documents for use abroad",
+      "source_type": "family_document_authentication_guidance",
+      "language": "en",
+      "url": "https://api.ireland.ie/en/dfa/overseas-travel/consular-services/authenticating-apostilles/",
+      "publisher_identifier": {
+        "system": "api.ireland.ie",
+        "record": "DFA Authentication and Apostilles service"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official DFA page inspected; explains authentication of Irish birth, adoption, death, marriage and court documents, as well as EU Regulation 2016/1191 exceptions.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "html_dynamic",
+      "version_evidence": "Current page captured in search on 2026-10-18; visible update date not established.",
+      "note": "The page says apostille/authentication validates the signature or seal, not the truth of contents; DFA cannot legalise foreign documents. Public guidance only; no case documents.",
+      "topic_ids": [
+        "family_status",
+        "foreign_documents",
+        "authentication"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/ireland/candidates/ie-50.md",
+      "source_sha256": "6b2586563cae4a175a8bb3e26d5e24ca97160a5a9e49a93925b81103b0ce47e8",
+      "converted_sha256": "72931c4422fbe60d04deee3a0662c4bee1778f6ba7532c06d85bc767f1282b07"
+    },
+    {
+      "id": "ie-51",
+      "title": "Get married in Ireland: documentation and civil-registration guidance",
+      "source_type": "civil_status_guidance",
+      "language": "en",
+      "url": "https://www.gov.ie/en/department-of-social-protection/services/get-married-in-ireland/",
+      "publisher_identifier": {
+        "system": "www.gov.ie",
+        "record": "Department of Social Protection marriage service"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official gov.ie service page inspected; lists birth, marriage, divorce and civil-partnership evidence, translation and authentication requirements; says foreign divorces are reviewed for recognition.",
+      "retrieval_status": "publisher_blocked_or_not_found",
+      "retrieval_shape": "html_with_dynamic_booking_links",
+      "version_evidence": "Page last updated 15 April 2025; appointment availability varies by location.",
+      "note": "Civil-status evidence is a supporting-document route, not an EU-family residence eligibility rule; local registration-service instructions and document acceptability still require review.",
+      "topic_ids": [
+        "family_status",
+        "civil_registration",
+        "foreign_documents"
+      ],
+      "retrieved": false,
+      "accepted": false
+    }
+  ],
+  "retrieved_candidate_count": 26
+}

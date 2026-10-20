@@ -1,0 +1,21 @@
+{
+  "input_version": "0.1.0",
+  "data_class": "synthetic",
+  "case_ref": "SYN-C21-ONE",
+  "fields": [
+    {"field_id": "issue_category", "classification": "case_fact", "value": "appointment_access", "risk_tags": []},
+    {"field_id": "procedure_stage", "classification": "case_fact", "value": "pre_application", "risk_tags": []},
+    {"field_id": "event_date", "classification": "quasi_identifier", "value": "2026-10-07", "risk_tags": ["exact_timestamp"]},
+    {"field_id": "outcome_bucket", "classification": "case_fact", "value": "unknown", "risk_tags": []},
+    {"field_id": "applicant_name", "classification": "direct_identifier", "value": "Ada Sample", "risk_tags": []},
+    {"field_id": "applicant_email", "classification": "direct_identifier", "value": "ada.sample@example.invalid", "risk_tags": []},
+    {"field_id": "reference_number", "classification": "direct_identifier", "value": "TR-VISA-927443", "risk_tags": []},
+    {"field_id": "city", "classification": "quasi_identifier", "value": "Pinehaven", "risk_tags": ["unique_topology"]},
+    {"field_id": "narrative", "classification": "sensitive", "value": "Ada Sample contacted the consulate in Pinehaven on 2026-10-07. Email ada.sample@example.invalid, reference TR-VISA-927443. The appointment question was left open.", "risk_tags": []}
+  ],
+  "redaction_terms": [
+    {"value": "Ada Sample", "role": "APPLICANT"},
+    {"value": "Pinehaven", "role": "PLACE"},
+    {"value": "TR-VISA-927443", "role": "IDENTIFIER"}
+  ]
+}

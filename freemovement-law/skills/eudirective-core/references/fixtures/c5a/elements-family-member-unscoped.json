@@ -1,0 +1,44 @@
+{
+  "model_version": "0.2.0",
+  "bundle_id": "c5a-family-member-unscoped",
+  "elements": [
+    {
+      "element_id": "person_status.eu_citizen_status",
+      "value": "not_eu_citizen",
+      "supplied_by": "case_workspace",
+      "provenance_kind": "user_assertion"
+    },
+    {
+      "element_id": "person_status.family_member_status",
+      "value": "established",
+      "supplied_by": "case_workspace",
+      "provenance_kind": "document",
+      "source_ref": "synthetic:family-document"
+    },
+    {
+      "element_id": "relationship.accompanying_or_joining",
+      "value": true,
+      "supplied_by": "case_workspace",
+      "provenance_kind": "user_assertion"
+    },
+    {
+      "element_id": "movement.cross_border",
+      "value": true,
+      "supplied_by": "case_workspace",
+      "provenance_kind": "user_assertion"
+    },
+    {
+      "element_id": "movement.free_movement_exercised",
+      "value": true,
+      "supplied_by": "case_workspace",
+      "provenance_kind": "document",
+      "source_ref": "synthetic:movement-document"
+    },
+    {
+      "element_id": "movement.returnee_context",
+      "value": false,
+      "supplied_by": "case_workspace",
+      "provenance_kind": "user_assertion"
+    }
+  ]
+}

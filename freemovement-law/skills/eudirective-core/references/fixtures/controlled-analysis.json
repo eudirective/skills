@@ -1,0 +1,63 @@
+{
+  "contract_version": "0.2.0",
+  "analysis_id": "analysis:syn:001",
+  "case_id": "CASE-SYN-001",
+  "bound_state_revision": 6,
+  "requested_release_mode": "full",
+  "applicable_legal_regime": [
+    "synthetic fixture only"
+  ],
+  "findings": [
+    {
+      "finding_id": "finding:syn:001",
+      "status": "supported",
+      "claim": "Synthetic supported finding for controller testing only.",
+      "fact_refs": [
+        "fact:appointment-requested"
+      ],
+      "source_refs": [
+        "eu:src:fixture",
+        "se:src:fixture"
+      ],
+      "rule_refs": [
+        "eu:rule:fixture",
+        "se:rule:fixture"
+      ],
+      "authority_refs": [
+        "se:authority:fixture"
+      ],
+      "uncertainties": [],
+      "route_refs": [
+        "se:route:fixture"
+      ],
+      "attack_angle_refs": [
+        "se:attack:fixture-procedure"
+      ]
+    }
+  ],
+  "deadlines": [
+    {
+      "deadline_id": "deadline:syn:001",
+      "label": "Synthetic deadline calculation",
+      "status": "calculated",
+      "date": "2026-10-14",
+      "source_refs": [
+        "se:src:fixture"
+      ],
+      "rule_refs": [
+        "se:rule:fixture"
+      ],
+      "deadline_refs": [
+        "se:deadline:fixture"
+      ],
+      "limitations": [
+        "Fixture only."
+      ]
+    }
+  ],
+  "recommendations": [],
+  "limitations": [
+    "This is synthetic controller output, not legal advice."
+  ],
+  "summary": "Synthetic controlled analysis used only to verify deterministic workflow behavior."
+}

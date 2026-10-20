@@ -1,0 +1,324 @@
+{
+  "schema_version": 1,
+  "jurisdiction": "AT",
+  "updated": "2026-10-19",
+  "policy": {
+    "scope": "The 37 source records declared by references/candidate-manifest.json. This is a bounded candidate inventory, not an exhaustive statement of Austrian law or practice.",
+    "retrieval": "Use only the official URLs and hosts in the manifest. Make ordinary public HTTPS requests to one record at a time. Do not use RIS OGD/API, registration, parallel requests, authentication, browser challenge bypass, or undocumented bulk exports. If OGD is introduced later, first follow the current RIS OGD FAQ notice, timing, rate, and attribution requirements.",
+    "change_handling": "Keep the last reviewed/accepted source unchanged. Any new bytes or changed publisher identity create a candidate for human review. A retrieval failure, redirect outside an allowlisted official host, missing identity marker, or unexpected media type is a failed observation; it does not replace the prior candidate.",
+    "reuse": "Check the publisher terms recorded for each source before redistribution. RIS OGD data attribution is CC BY 4.0 when that route is used; these rules currently use the public RIS web application and linked attachments.",
+    "cadence": "The GitHub Actions Austria source monitor checks the fixed manifest monthly and can be run manually. It stages changed captures and derived candidates for human review; it does not update accepted/current candidates. Broad case-law discovery, mission-page discovery, and Land-practice discovery remain manual until explicitly automated."
+  },
+  "rules": [
+    {
+      "id": "ris-current-section-v1",
+      "applies_to": "RIS consolidated national legislation pages other than linked PDF annexes.",
+      "source_ids": [
+        "at-nag-51",
+        "at-nag-52",
+        "at-nag-53a",
+        "at-nag-53",
+        "at-nag-54",
+        "at-nag-54a",
+        "at-nag-55",
+        "at-nag-56",
+        "at-nag-57",
+        "at-nag-dv-5",
+        "at-avg-17",
+        "at-avg-73",
+        "at-vwgvg-7",
+        "at-ifg-1",
+        "at-ifg-7",
+        "at-ifg-8",
+        "at-ifg-11",
+        "at-ifg-14",
+        "at-vwgvg-8",
+        "at-nag-3-authority",
+        "at-nag-4-venue",
+        "at-ifg-15"
+      ],
+      "retrieval": {
+        "entry_point": "Stable RIS current-section URL from the manifest, built from Gesetzesnummer plus Paragraf or Anlage.",
+        "identity_checks": [
+          "Confirm RIS is the final HTTPS host.",
+          "Confirm statute number and requested paragraph/annex on the page.",
+          "Record current title, version/effective date, last-update date, Dokumentnummer and ELI where provided.",
+          "For consolidated law, follow the current-version route, not a pinned historic ELI."
+        ],
+        "change_signal": "Compare source SHA-256 and RIS version/date metadata; a changed current text or metadata becomes a review candidate."
+      },
+      "conversion": {
+        "selector": "div.contentBlock",
+        "exclusions": [
+          "script/style/noscript",
+          "span or elements marked sr-only"
+        ],
+        "validation": [
+          "Require the requested section identity.",
+          "Require non-empty operative text.",
+          "Retain source and converted-output SHA-256 separately.",
+          "Replay only from saved raw HTML; do not promote on conversion alone."
+        ],
+        "rule_ids": [
+          "ris-contentblock-v1"
+        ]
+      },
+      "sustainability": "Conditionally sustainable for a small fixed section list using the stable current-section URLs and ordinary serial page retrieval. The HTML selector is publisher-specific and undocumented, so layout drift requires review."
+    },
+    {
+      "id": "ris-case-record-v1",
+      "applies_to": "RIS LVwG, BVwG and VwGH decision records.",
+      "source_ids": [
+        "at-lvwg-ni-2019-518",
+        "at-lvwg-wien-2022-6086",
+        "at-vwgh-ra-2022-22-0149",
+        "at-bvwg-g306-2026-2325799",
+        "at-bvwg-w112-2246194-2-2023"
+      ],
+      "retrieval": {
+        "entry_point": "Exact RIS decision URL and Dokumentnummer/case identifier in the manifest.",
+        "identity_checks": [
+          "Confirm court, decision date, case number and RIS Dokumentnummer.",
+          "Keep each decision as its own record; do not treat search results or a sample as comprehensive case-law coverage."
+        ],
+        "change_signal": "The stable decision record is checked for replacement, correction, or metadata/body changes; any change is reviewed as a new candidate."
+      },
+      "conversion": {
+        "selector": "Use div.contentBlock where recorded; where the saved capture has no validated selector, retain raw HTML and require human extraction review.",
+        "validation": [
+          "Preserve court, date, case number and ECLI/Dokumentnummer.",
+          "Do not infer a general rule from an individual decision.",
+          "Hash the page and candidate separately."
+        ],
+        "rule_ids": [
+          "ris-contentblock-v1",
+          "manual-page-review-v1"
+        ]
+      },
+      "sustainability": "The monitor checks the five exact records monthly and stages changed pages for review. The Austria-specific query families and cross-court filters are documented in coverage-register.md, but result discovery and screening across BVwG, VwGH and all nine LVwG collections remain manual."
+    },
+    {
+      "id": "official-guidance-page-v1",
+      "applies_to": "Official BMEIA and oesterreich.gv.at guidance pages.",
+      "source_ids": [
+        "at-guidance-family-card",
+        "at-bmeia-visa",
+        "at-bmeia-settlement-residence",
+        "at-guidance-visa-application"
+      ],
+      "retrieval": {
+        "entry_point": "Stable official page ID or canonical URL in the manifest.",
+        "identity_checks": [
+          "Confirm official host, exact page heading, language and visible update date if present.",
+          "Record links to forms, local authority pages and mission instructions separately."
+        ],
+        "change_signal": "Compare the source hash and visible page date; inspect changes in operative text and attachments separately from navigation changes."
+      },
+      "conversion": {
+        "selector": "No shared selector is verified across these publishers; review the rendered main content and linked documents manually. Existing body-based candidates are legacy conversions, not a validated main-content extraction rule.",
+        "validation": [
+          "Keep navigation/chrome changes distinct from substantive text changes.",
+          "Record the exact heading and source URL.",
+          "Stage changed text for review; do not auto-accept."
+        ],
+        "rule_ids": [
+          "manual-page-review-v1",
+          "scheduled-main-region-review-v1"
+        ]
+      },
+      "sustainability": "The monitor checks fixed manifest pages monthly and stages changed pages for review. Human review of main text, linked forms and authority routes remains required; mission-level discovery is outside the fixed manifest."
+    },
+    {
+      "id": "official-oversight-page-v1",
+      "applies_to": "Official DSB and Volksanwaltschaft complaint/oversight pages.",
+      "source_ids": [
+        "at-dsb-complaint",
+        "at-volksanwaltschaft-complaint"
+      ],
+      "retrieval": {
+        "entry_point": "Official complaint page URL in the manifest.",
+        "identity_checks": [
+          "Confirm agency host and page heading.",
+          "Check complaint route, form links, jurisdiction wording and page date."
+        ],
+        "change_signal": "Review forms and route links independently from page-shell changes."
+      },
+      "conversion": {
+        "selector": "Human-reviewed main content; current body selector is not treated as a stable rule.",
+        "validation": [
+          "Preserve distinctions between complaint, advice, oversight and judicial remedy.",
+          "Record linked forms and submission routes."
+        ],
+        "rule_ids": [
+          "manual-page-review-v1",
+          "scheduled-main-region-review-v1"
+        ]
+      },
+      "sustainability": "Manual and conditional. Page links and forms can change independently; holder-specific jurisdiction coverage is open."
+    },
+    {
+      "id": "official-discovery-page-v1",
+      "applies_to": "Official oesterreich.gv.at topic indexes used to find detailed guidance pages.",
+      "source_ids": [
+        "at-guidance-family-index"
+      ],
+      "retrieval": {
+        "entry_point": "Stable official topic-index page in the manifest.",
+        "identity_checks": [
+          "Confirm official host, page heading, visible update date and linked detail pages.",
+          "Treat it as a discovery index, not a legal text."
+        ],
+        "change_signal": "A changed page hash, page date or detail-page link set triggers manual review."
+      },
+      "conversion": {
+        "rule_ids": [
+          "discovery-index-review-v1",
+          "scheduled-main-region-review-v1"
+        ],
+        "selector": "Human-reviewed headings and target links; current body extraction is not a verified main-content rule.",
+        "validation": [
+          "Record the exact target links and page date.",
+          "Follow changed links to the official substantive pages before updating coverage."
+        ]
+      },
+      "sustainability": "Sustainable as a manual monthly discovery route while the official index remains available; it does not monitor every linked page."
+    },
+    {
+      "id": "official-directory-page-v1",
+      "applies_to": "BMEIA representation directory.",
+      "source_ids": [
+        "at-bmeia-representation-directory"
+      ],
+      "retrieval": {
+        "entry_point": "Official BMEIA directory URL in the manifest.",
+        "identity_checks": [
+          "Confirm directory heading and visible as-of date.",
+          "Track consular district, representation status, visa-issuance limits and onward links."
+        ],
+        "change_signal": "A new as-of date or changed mission/district record triggers a location-specific review."
+      },
+      "conversion": {
+        "selector": "Human-reviewed directory entries; treat the page as a discovery/routing source, not a legal text.",
+        "validation": [
+          "Capture the as-of date and relevant row/link.",
+          "Follow each mission link before reporting local requirements."
+        ],
+        "rule_ids": [
+          "discovery-index-review-v1",
+          "scheduled-filtered-body-review-v1"
+        ]
+      },
+      "sustainability": "The fixed BMEIA directory page is checked monthly for change and identity, and changed captures are staged for review. Following the current directory entries to mission-specific pages remains a separate location-dependent discovery task."
+    },
+    {
+      "id": "ris-annex-pdf-v1",
+      "applies_to": "RIS NAG-DV Annex E and Annex F PDF forms.",
+      "source_ids": [
+        "at-nag-dv-anl-5",
+        "at-nag-dv-anl-6"
+      ],
+      "retrieval": {
+        "entry_point": "Open the current RIS annex landing page from the manifest and resolve its currently linked PDF; do not rely solely on a copied download URL.",
+        "identity_checks": [
+          "Confirm annex number and label E/F.",
+          "Confirm RIS Dokumentnummer NOR40221013/NOR40221015 and official RIS host.",
+          "Require PDF media type and %PDF signature.",
+          "Record exact bytes, SHA-256, page count and available document metadata."
+        ],
+        "change_signal": "A changed landing-page attachment, document number, annex label or PDF hash triggers a review candidate."
+      },
+      "conversion": {
+        "method": "Retain the native accessible AcroForm PDF. Do not flatten or treat text-layer extraction as the form content; store any later transcription as a separate derivative with provenance.",
+        "validation": [
+          "Check PDF signature and SHA-256.",
+          "Check document is readable and the expected annex label is present.",
+          "Do not promote a derivative without visual/form-field review."
+        ],
+        "rule_ids": [
+          "native-pdf-retention-v1"
+        ]
+      },
+      "sustainability": "Sustainable as a low-volume native-document rule while the current RIS landing page resolves the expected attachment; no text conversion is required."
+    },
+    {
+      "id": "shared-german-core-reference-v1",
+      "applies_to": "Austria references to German-language shared EU and CJEU material.",
+      "source_ids": [],
+      "retrieval": {
+        "entry_point": "source-library/shared-core-index-DE.json, one library-level index of official German-language URLs keyed by shared source ID.",
+        "identity_checks": [
+          "Confirm source ID and CELEX/ELI identity before use.",
+          "Check individual language availability; an official URL pattern alone does not prove that a translated decision exists."
+        ],
+        "change_signal": "Re-resolve moved official pages from stable CELEX/ELI identity. Update the central language index once; countries reference it by index and source ID."
+      },
+      "conversion": {
+        "method": "No conversion is performed while the representation is external-only. If a German file is acquired and reviewed, store one canonical copy under source-library/core/de/ and update the shared index.",
+        "validation": [
+          "Keep canonical_path null for external-only entries.",
+          "Do not create country/core/ placeholders, copies or symlinks."
+        ],
+        "rule_ids": [
+          "external-link-no-local-copy-v1"
+        ]
+      },
+      "sustainability": "The reference mechanism is sustainable. The 69 German URLs are external-only and individual translation availability is unverified; this is not a mirrored German corpus."
+    },
+    {
+      "id": "nlex-national-law-discovery-v1",
+      "applies_to": "N-Lex Austria navigation page; a discovery surface outside the 37 captured national-source candidates.",
+      "source_ids": [],
+      "retrieval": {
+        "entry_point": "N-Lex Austria country page linked from the official N-Lex language index.",
+        "identity_checks": [
+          "Confirm the country is Austria.",
+          "Confirm the direct RIS/Federal Law Gazette link and separate EUR-Lex links for national transposition and case-law.",
+          "Use linked publisher records for substantive text."
+        ],
+        "change_signal": "Recheck the link targets when the N-Lex page changes or a RIS/EUR-Lex route fails. Record portal errors as discovery-channel failures, not as absence of Austrian law."
+      },
+      "conversion": {
+        "rule_ids": [
+          "external-link-no-local-copy-v1"
+        ],
+        "method": "Keep a dated link/role reference only; do not convert N-Lex navigation or XML-error fragments into national-law text.",
+        "validation": [
+          "Ensure authoritative text is retrieved from RIS or EUR-Lex.",
+          "Keep N-Lex separate from official publisher host allowlists."
+        ]
+      },
+      "sustainability": "Sustainable as a low-cost discovery and link-repair route. It is not a national-law content source and its informational panel can fail independently."
+    }
+  ],
+  "discovery_surfaces": [
+    {
+      "id": "at-nlex-national-law-portal",
+      "url": "https://n-lex.europa.eu/n-lex/legis_at/ris.bgbla_form",
+      "index_url": "https://n-lex.europa.eu/n-lex/index?lang=de",
+      "retrieval_rule_id": "nlex-national-law-discovery-v1",
+      "conversion_rule_id": "external-link-no-local-copy-v1",
+      "last_checked": "2026-10-19",
+      "use": "Find or re-resolve the Austrian official legal database and EUR-Lex transposition/case-law entry points. Do not cite N-Lex as the publisher of Austrian law."
+    }
+  ],
+  "monitor": {
+    "script": "source-library/austria/sync_austria_sources.py",
+    "workflow": ".github/workflows/austria-source-monitor.yml",
+    "schedule_utc": "37 3 1 * *",
+    "scope": "Only the fixed records in references/candidate-manifest.json; no broad RIS search, mission-page discovery, or Land-practice discovery.",
+    "change_output": "Changed raw captures and derived review candidates are staged under source-library/austria/pending-updates/ and proposed through a pull request. The workflow never accepts or overwrites candidate content.",
+    "network": "Ordinary serial HTTPS GETs to manifest allowlisted official hosts; no RIS OGD/API, authentication, challenge bypass, or parallel retrieval.",
+    "activation": "The workflow must be merged to the repository default branch. Repository Actions settings must allow GITHUB_TOKEN to create pull requests.",
+    "selectors": {
+      "at-guidance-family-card": "main",
+      "at-guidance-family-index": "main",
+      "at-dsb-complaint": "main",
+      "at-volksanwaltschaft-complaint": "main#page-main-content",
+      "at-bmeia-visa": "main#content",
+      "at-bmeia-settlement-residence": "main#content",
+      "at-guidance-visa-application": "main",
+      "at-bmeia-representation-directory": "filtered body fallback; human review remains mandatory",
+      "at-lvwg-wien-2022-6086": "div.contentBlock"
+    }
+  }
+}

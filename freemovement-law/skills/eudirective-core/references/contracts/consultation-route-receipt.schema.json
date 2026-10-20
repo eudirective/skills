@@ -1,0 +1,237 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Consultation route receipt 0.1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "route_ref",
+    "request_kind",
+    "classification",
+    "conditional_review",
+    "operations",
+    "c27_checks",
+    "evidence",
+    "research_artifacts",
+    "module_pairs",
+    "coverage_claim"
+  ],
+  "properties": {
+    "schema_version": { "const": "0.1.0" },
+    "route_ref": { "$ref": "#/$defs/opaque_ref" },
+    "request_kind": { "enum": ["applicant_guidance", "source_research"] },
+    "classification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "jurisdictions_by_role",
+        "proceedings_and_stages",
+        "legal_questions",
+        "urgency",
+        "requested_output"
+      ],
+      "properties": {
+        "jurisdictions_by_role": { "$ref": "#/$defs/classification_state" },
+        "proceedings_and_stages": { "$ref": "#/$defs/classification_state" },
+        "legal_questions": { "$ref": "#/$defs/classification_state" },
+        "urgency": { "$ref": "#/$defs/classification_state" },
+        "requested_output": { "$ref": "#/$defs/classification_state" }
+      }
+    },
+    "conditional_review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "evidence_ref"],
+      "properties": {
+        "status": { "enum": ["reviewed", "incomplete"] },
+        "evidence_ref": { "$ref": "#/$defs/opaque_ref" }
+      }
+    },
+    "operations": {
+      "type": "array",
+      "maxItems": 100,
+      "items": { "$ref": "#/$defs/operation" }
+    },
+    "c27_checks": {
+      "type": "array",
+      "maxItems": 500,
+      "items": { "$ref": "#/$defs/c27_check" }
+    },
+    "evidence": {
+      "type": "array",
+      "maxItems": 500,
+      "items": { "$ref": "#/$defs/evidence" }
+    },
+    "research_artifacts": {
+      "type": "array",
+      "maxItems": 20,
+      "items": { "$ref": "#/$defs/research_artifact" }
+    },
+    "module_pairs": {
+      "type": "array",
+      "maxItems": 50,
+      "items": { "$ref": "#/$defs/module_pair" }
+    },
+    "coverage_claim": { "enum": ["comprehensive", "partial", "preliminary"] }
+  },
+  "$defs": {
+    "opaque_ref": {
+      "type": "string",
+      "maxLength": 34,
+      "pattern": "^r_[a-f0-9]{12,32}$"
+    },
+    "relative_path": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 300,
+      "pattern": "^[A-Za-z0-9._/-]+$"
+    },
+    "classification_state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["state", "evidence_ref"],
+      "properties": {
+        "state": { "enum": ["recorded", "unknown", "not_applicable"] },
+        "evidence_ref": { "$ref": "#/$defs/opaque_ref" }
+      }
+    },
+    "operation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "operation_id",
+        "applicability",
+        "status",
+        "evidence_refs"
+      ],
+      "properties": {
+        "operation_id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{1,63}$"
+        },
+        "applicability": { "enum": ["required", "triggered", "not_triggered"] },
+        "status": {
+          "enum": [
+            "completed",
+            "partial",
+            "not_checked",
+            "blocked",
+            "unavailable",
+            "not_applicable"
+          ]
+        },
+        "reason_code": {
+          "enum": [
+            "not_triggered",
+            "no_material_issue",
+            "stable_narrow_question",
+            "restricted_synthetic_input",
+            "source_unavailable",
+            "not_attempted",
+            "other_recorded"
+          ]
+        },
+        "evidence_refs": {
+          "type": "array",
+          "maxItems": 30,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/opaque_ref" }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": { "status": { "not": { "const": "completed" } } },
+            "required": ["status"]
+          },
+          "then": { "required": ["reason_code"] }
+        },
+        {
+          "if": {
+            "properties": { "applicability": { "const": "not_triggered" } },
+            "required": ["applicability"]
+          },
+          "then": {
+            "required": ["reason_code"],
+            "properties": { "status": { "const": "not_applicable" } }
+          }
+        }
+      ]
+    },
+    "c27_check": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["scope_ref", "record"],
+      "properties": {
+        "scope_ref": { "$ref": "#/$defs/opaque_ref" },
+        "record": { "$ref": "#/$defs/c27_record" }
+      }
+    },
+    "c27_record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["check_id", "status", "method", "reason", "evidence_refs", "source_refs"],
+      "properties": {
+        "check_id": { "type": "string", "minLength": 1, "maxLength": 160 },
+        "status": { "type": "string" },
+        "method": { "type": "string" },
+        "reason": { "type": "string" },
+        "evidence_refs": { "type": "array", "maxItems": 30, "uniqueItems": true, "items": { "$ref": "#/$defs/opaque_ref" } },
+        "source_refs": { "type": "array", "maxItems": 30, "uniqueItems": true, "items": { "$ref": "#/$defs/opaque_ref" } },
+        "scope_exclusion": { "type": "string" }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["evidence_ref", "kind"],
+      "properties": {
+        "evidence_ref": { "$ref": "#/$defs/opaque_ref" },
+        "kind": { "enum": ["conversation_record", "source_record", "module_conformance", "research_gate", "source_preflight", "local_artifact"] },
+        "subject_ref": { "$ref": "#/$defs/opaque_ref" },
+        "artifact_path": { "$ref": "#/$defs/relative_path" },
+        "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "kind": { "const": "local_artifact" } }, "required": ["kind"] },
+          "then": { "required": ["artifact_path", "sha256"], "not": { "required": ["subject_ref"] } }
+        },
+        {
+          "if": { "properties": { "kind": { "enum": ["module_conformance", "research_gate", "source_preflight"] } }, "required": ["kind"] },
+          "then": { "required": ["subject_ref"], "not": { "anyOf": [{ "required": ["artifact_path"] }, { "required": ["sha256"] }] } }
+        },
+        {
+          "if": { "properties": { "kind": { "enum": ["conversation_record", "source_record"] } }, "required": ["kind"] },
+          "then": { "not": { "anyOf": [{ "required": ["subject_ref"] }, { "required": ["artifact_path"] }, { "required": ["sha256"] }] } }
+        }
+      ]
+    },
+    "research_artifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["research_ref", "plan_path", "bundle_path"],
+      "properties": {
+        "research_ref": { "$ref": "#/$defs/opaque_ref" },
+        "plan_path": { "$ref": "#/$defs/relative_path" },
+        "bundle_path": { "$ref": "#/$defs/relative_path" },
+        "preflight_ref": { "$ref": "#/$defs/opaque_ref" },
+        "preflight_path": { "$ref": "#/$defs/relative_path" }
+      },
+      "allOf": [
+        { "if": { "required": ["preflight_ref"] }, "then": { "required": ["preflight_path"] } },
+        { "if": { "required": ["preflight_path"] }, "then": { "required": ["preflight_ref"] } }
+      ]
+    },
+    "module_pair": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["pair_ref", "manifest_path", "export_path"],
+      "properties": {
+        "pair_ref": { "$ref": "#/$defs/opaque_ref" },
+        "manifest_path": { "$ref": "#/$defs/relative_path" },
+        "export_path": { "$ref": "#/$defs/relative_path" }
+      }
+    }
+  }
+}

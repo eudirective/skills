@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "basis": {
+      "maxLength": 2000,
+      "minLength": 1,
+      "type": "string"
+    },
+    "model_version": {
+      "const": "0.2.0"
+    },
+    "required_targets": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "min_source_count": {
+            "maximum": 1000,
+            "minimum": 1,
+            "type": "integer"
+          },
+          "required_roles": {
+            "items": {
+              "enum": [
+                "foundation",
+                "boundary",
+                "operational",
+                "context"
+              ]
+            },
+            "minItems": 1,
+            "type": "array",
+            "uniqueItems": true
+          },
+          "target_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "target_type": {
+            "enum": [
+              "element",
+              "interaction",
+              "invariant"
+            ]
+          }
+        },
+        "required": [
+          "target_type",
+          "target_id",
+          "required_roles",
+          "min_source_count"
+        ],
+        "type": "object"
+      },
+      "maxItems": 1000,
+      "minItems": 1,
+      "type": "array"
+    },
+    "requirements_version": {
+      "const": "0.1.0"
+    },
+    "source_pack_version": {
+      "const": "0.6.1"
+    }
+  },
+  "required": [
+    "requirements_version",
+    "model_version",
+    "source_pack_version",
+    "basis",
+    "required_targets"
+  ],
+  "title": "Source support reverse-coverage requirements v0.1",
+  "type": "object"
+}

@@ -1,0 +1,11 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema","type":"object","additionalProperties":false,
+  "required":["evidence_set_version","scope","case_sha256","elements_sha256","document_refs"],
+  "properties":{
+   "evidence_set_version":{"const":"0.1.0"},"scope":{"const":"synthetic_fixture_only"},
+   "case_sha256":{"type":"string","pattern":"^[a-f0-9]{64}$"},
+   "elements_sha256":{"type":"string","pattern":"^[a-f0-9]{64}$"},
+   "document_refs":{"type":"array","minItems":1,"maxItems":20,"uniqueItems":true,
+    "items":{"type":"string","pattern":"^synthetic:c13:[A-Za-z0-9_-]{1,70}$"}}
+  }
+}

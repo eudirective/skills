@@ -1,0 +1,419 @@
+{
+  "jurisdiction": "cyprus",
+  "as_of_date": "2026-10-19",
+  "method": "Ordinary allowlisted HTTPS GET only; no authentication, challenge bypass or form submission. Exact response bytes are hashed; changes stage for review.",
+  "request_policy": {
+    "timeout_seconds": 25,
+    "max_response_bytes": 25165824,
+    "delay_seconds": 1.0
+  },
+  "records": [
+    {
+      "candidate_id": "cy-nlex",
+      "source_url": "https://n-lex.europa.eu/n-lex/legis_cy/cy_gov_cyprus_form?lang=en",
+      "request_url": "https://n-lex.europa.eu/n-lex/legis_cy/cy_gov_cyprus_form?lang=en",
+      "resolved_url": "https://n-lex.europa.eu/n-lex/legis_cy/cy_gov_cyprus_form?lang=en",
+      "retrieved_at": "2026-10-19T02:28:18+00:00",
+      "source_content_type": "text/html",
+      "source_bytes": 31004,
+      "source_sha256": "e4420ea71167de0c8b8d04bf5e30da19bfeee9599272f8d92b9cba5116c35309",
+      "raw_path": "temp/cyprus/raw/cy-nlex-e4420ea71167de0c8b8d04bf5e30da19bfeee9599272f8d92b9cba5116c35309.html",
+      "accepted": false,
+      "candidate_text_path": "temp/cyprus/pending/cy-nlex-e4420ea71167de0c.md",
+      "converted_sha256": "f323664c2a2ba5efe605444de39cf440540389e8d503f039e0e7006e961bda40",
+      "converted_bytes": 1423,
+      "content_selector": "body",
+      "retrieval_status": "changed_review_candidate",
+      "review_state": "changed_pending_review"
+    },
+    {
+      "candidate_id": "cy-gpo-main",
+      "source_url": "https://www.mof.gov.cy/mof/gpo/gazette.nsf/dmlgaz_NEW_en/dmlgaz_NEW_en",
+      "request_url": "https://www.mof.gov.cy/mof/gpo/gazette.nsf/dmlgaz_NEW_en/dmlgaz_NEW_en",
+      "resolved_url": "https://www.mof.gov.cy/mof/gpo/gazette.nsf/dmlgaz_NEW_en/dmlgaz_NEW_en",
+      "retrieved_at": "2026-10-19T02:28:20+00:00",
+      "source_content_type": "text/html",
+      "source_bytes": 13366,
+      "source_sha256": "aa20a5ea29d68587951a95ca06c2fc094e3231b772f6484716f8bc1d677cfbbb",
+      "raw_path": "temp/cyprus/raw/cy-gpo-main-aa20a5ea29d68587951a95ca06c2fc094e3231b772f6484716f8bc1d677cfbbb.html",
+      "accepted": false,
+      "retrieval_status": "discovery_surface_no_text",
+      "retrieval_note": "Public HTML response contained no sufficiently long extractable source body."
+    },
+    {
+      "candidate_id": "cy-gpo-archive",
+      "source_url": "https://www.mof.gov.cy/mof/gpo/gazette.nsf/dmlgazette_archive_gr/dmlgazette_archive_gr?Count=9999&Expand=3.12&OpenForm=&Start=1",
+      "request_url": "https://www.mof.gov.cy/mof/gpo/gazette.nsf/dmlgazette_archive_gr/dmlgazette_archive_gr?Count=9999&Expand=3.12&OpenForm=&Start=1",
+      "resolved_url": "https://www.mof.gov.cy/mof/gpo/gazette.nsf/dmlgazette_archive_gr/dmlgazette_archive_gr?Count=9999&Expand=3.12&OpenForm=&Start=1",
+      "retrieved_at": "2026-10-19T02:28:21+00:00",
+      "source_content_type": "text/html",
+      "source_bytes": 37665,
+      "source_sha256": "05748030382ba3a7beccea8dececacb2cf9b85d918f78a8e8cae10ef6db9e435",
+      "raw_path": "temp/cyprus/raw/cy-gpo-archive-05748030382ba3a7beccea8dececacb2cf9b85d918f78a8e8cae10ef6db9e435.html",
+      "accepted": false,
+      "retrieval_status": "discovery_surface_no_text",
+      "retrieval_note": "Public HTML response contained no sufficiently long extractable source body."
+    },
+    {
+      "candidate_id": "cy-gov-gazette-service",
+      "source_url": "https://www.gov.cy/en/service/episimi-efimerida-tis-dimokratias/",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "accepted": false
+    },
+    {
+      "candidate_id": "cy-law-commissioner-index",
+      "source_url": "https://www.gov.cy/officelawcommissioner/en/documents/competences-of-the-law-commissioner/translations-consolidations/",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "accepted": false
+    },
+    {
+      "candidate_id": "cy-free-movement-consolidation",
+      "source_url": "https://www.olc.gov.cy/olc/olc.nsf/DB4EF1023FE5BB54C2258B2D001FE738/%24file/The%20right%20of%20citizens.pdf",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_note": "HTTPError: HTTP Error 404: Not Found",
+      "accepted": false
+    },
+    {
+      "candidate_id": "cy-migration-legislation-index",
+      "source_url": "https://www.gov.cy/mip-md/documents/nomothesia/",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "accepted": false
+    },
+    {
+      "candidate_id": "cy-family-members-overview",
+      "source_url": "https://www.gov.cy/mip-md/en/documents/temporary-residence/family-members/",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "accepted": false
+    },
+    {
+      "candidate_id": "cy-eueea-registration-guidance",
+      "source_url": "https://www.gov.cy/mip-md/en/documents/e-u-e-e-a-citizens-and-family-members-2/e-u-e-e-a-citizens-family-member/",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "accepted": false
+    },
+    {
+      "candidate_id": "cy-meu1-guidance",
+      "source_url": "https://www.gov.cy/mip-md/en/documents/e-u-e-e-a-citizens-and-family-members-2/e-u-e-e-a-citizens-family-member/registration-of-e-u-citizens-and-members-of-their-families-who-are-also-e-u-e-e-a-citizens-meu1/",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "accepted": false
+    },
+    {
+      "candidate_id": "cy-meu1-forms",
+      "source_url": "https://www.gov.cy/mip-md/en/documents/registration-of-e-u-citizens-and-members-of-their-families-who-are-also-e-u-e-e-a-citizens-meu1/",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "accepted": false
+    },
+    {
+      "candidate_id": "cy-meu2-guidance",
+      "source_url": "https://www.gov.cy/mip-md/en/documents/e-u-e-e-a-citizens-and-family-members-2/e-u-e-e-a-citizens-family-member-2/entry-and-residence-of-third-country-nationals-who-are-family-members-of-an-e-u-e-e-a-citizen-meu2/",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "accepted": false
+    },
+    {
+      "candidate_id": "cy-meu2-forms",
+      "source_url": "https://www.gov.cy/mip-md/en/documents/entry-and-residence-of-third-country-nationals-who-are-family-members-of-an-e-u-e-e-a-citizen-meu2/",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "accepted": false
+    },
+    {
+      "candidate_id": "cy-meu3-guidance",
+      "source_url": "https://www.gov.cy/mip-md/en/documents/e-u-e-e-a-citizens-and-family-members-2/e-u-e-e-a-citizens-family-member-2/test/",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "accepted": false
+    },
+    {
+      "candidate_id": "cy-meu3-forms",
+      "source_url": "https://www.gov.cy/mip-md/en/documents/permanent-residence-of-third-country-nationals-who-are-family-members-of-e-u-e-e-a-citizens-meu3/",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "accepted": false
+    },
+    {
+      "candidate_id": "cy-eures-meu1",
+      "source_url": "https://www.gov.cy/mlsi-eurescy/en/documents/apply-for-a-registration-certificate-meu1/",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "accepted": false
+    },
+    {
+      "candidate_id": "cy-cypriot-family-route",
+      "source_url": "https://www.gov.cy/mip-md/en/documents/temporary-residence/family-members/",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "accepted": false
+    },
+    {
+      "candidate_id": "cy-mvis8-form",
+      "source_url": "https://www.gov.cy/mip-md/en/documents/family-members-of-e-u-e-e-a-citizens-not-under-the-definition-of-family-members-2/",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "accepted": false
+    },
+    {
+      "candidate_id": "cy-mvis8-criteria",
+      "source_url": "https://www.gov.cy/mip-md/en/documents/family-members-of-e-u-e-e-a-citizens-not-under-the-definition-of-family-members/",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "accepted": false
+    },
+    {
+      "candidate_id": "cy-moi-residence-cards-legacy",
+      "source_url": "https://www.gov.cy/moi/en/residence-cards/",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "accepted": false
+    },
+    {
+      "candidate_id": "cy-mfa-visa-hub",
+      "source_url": "https://www.gov.cy/en/information/visas/",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "accepted": false
+    },
+    {
+      "candidate_id": "cy-mfa-visa-overview",
+      "source_url": "https://www.gov.cy/mfa/en/documents/overview/",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "accepted": false
+    },
+    {
+      "candidate_id": "cy-national-vis-pdf",
+      "source_url": "https://www.gov.cy/media/sites/145/2025/11/Information-about-Visa-Information-System.pdf",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "accepted": false
+    },
+    {
+      "candidate_id": "cy-schengen-status-pdf",
+      "source_url": "https://www.gov.cy/media/sites/19/2026/01/The-attached-PDF-contains-information-on-EU-member-states-and-associated-countries-that-have-abolished-internal-border-controls-and-fully-implement-Schengen-rule.pdf",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "accepted": false
+    },
+    {
+      "candidate_id": "cy-visa-application-form",
+      "source_url": "https://www.gov.cy/app/uploads/sites/113/2026/04/English-visa-application-3_11_2025-1.pdf",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "accepted": false
+    },
+    {
+      "candidate_id": "cy-mfa-missions-directory",
+      "source_url": "https://www.gov.cy/mfa/en/",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "accepted": false
+    },
+    {
+      "candidate_id": "cy-mission-yerevan-example",
+      "source_url": "https://www.gov.cy/mfa-embassyyerevan/en/visa-information/",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "accepted": false
+    },
+    {
+      "candidate_id": "cy-mission-athens-example",
+      "source_url": "https://www.gov.cy/mfa-embassyathens/en/consular-services/visa-information/",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "accepted": false
+    },
+    {
+      "candidate_id": "cy-admin-law-office-art146",
+      "source_url": "https://www.law.gov.cy/law/law.nsf/adminrecourses-en/adminrecourses-en%3FOpenDocument",
+      "request_url": "https://www.law.gov.cy/law/law.nsf/adminrecourses-en/adminrecourses-en%3FOpenDocument",
+      "resolved_url": "https://www.law.gov.cy/law/law.nsf/adminrecourses-en/adminrecourses-en%3FOpenDocument",
+      "retrieved_at": "2026-10-19T02:28:55+00:00",
+      "source_content_type": "text/html",
+      "source_bytes": 39610,
+      "source_sha256": "c4c50612e593a2832bda801729fe4a15c699c20db66c16b6a296cc72b9602a43",
+      "raw_path": "temp/cyprus/raw/cy-admin-law-office-art146-c4c50612e593a2832bda801729fe4a15c699c20db66c16b6a296cc72b9602a43.html",
+      "accepted": false,
+      "retrieval_status": "discovery_surface_no_text",
+      "retrieval_note": "Public HTML response contained no sufficiently long extractable source body."
+    },
+    {
+      "candidate_id": "cy-supreme-court-decisions",
+      "source_url": "https://www.supremecourt.gov.cy/judicial/sc.nsf/DMLprint6g_gr/DMLprint6g_gr",
+      "request_url": "https://www.supremecourt.gov.cy/judicial/sc.nsf/DMLprint6g_gr/DMLprint6g_gr",
+      "resolved_url": "https://www.supremecourt.gov.cy/judicial/sc.nsf/DMLprint6g_gr/DMLprint6g_gr",
+      "retrieved_at": "2026-10-19T02:28:57+00:00",
+      "source_content_type": "text/html",
+      "source_bytes": 296427,
+      "source_sha256": "f046849a1f5ffcd2a12f6f727407b75110729442294ef5b16b30e476c8c0a824",
+      "raw_path": "temp/cyprus/raw/cy-supreme-court-decisions-f046849a1f5ffcd2a12f6f727407b75110729442294ef5b16b30e476c8c0a824.html",
+      "accepted": false,
+      "retrieval_status": "discovery_surface_no_text",
+      "retrieval_note": "Public HTML response contained no sufficiently long extractable source body."
+    },
+    {
+      "candidate_id": "cy-supreme-constitutional-court-decisions",
+      "source_url": "https://www.supremeconstitutionalcourt.gov.cy/Judicial/sc/scc.nsf/services05_el?Count=1000&Expand=2&OpenForm=&Seq=2&Start=1",
+      "request_url": "https://www.supremeconstitutionalcourt.gov.cy/Judicial/sc/scc.nsf/services05_el?Count=1000&Expand=2&OpenForm=&Seq=2&Start=1",
+      "resolved_url": "https://www.supremeconstitutionalcourt.gov.cy/Judicial/sc/scc.nsf/services05_el?Count=1000&Expand=2&OpenForm=&Seq=2&Start=1",
+      "retrieved_at": "2026-10-19T02:28:59+00:00",
+      "source_content_type": "text/html",
+      "source_bytes": 103485,
+      "source_sha256": "77ba7af1972e5aa04cd9ed0e1bd634722f807d37bacdb1263905624d41835c0f",
+      "raw_path": "temp/cyprus/raw/cy-supreme-constitutional-court-decisions-77ba7af1972e5aa04cd9ed0e1bd634722f807d37bacdb1263905624d41835c0f.html",
+      "accepted": false,
+      "retrieval_status": "discovery_surface_no_text",
+      "retrieval_note": "Public HTML response contained no sufficiently long extractable source body."
+    },
+    {
+      "candidate_id": "cy-ombudsman-core",
+      "source_url": "https://www.gov.cy/ombudsman/en/documents/ombudsman-core-issues/",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "accepted": false
+    },
+    {
+      "candidate_id": "cy-ombudsman-complaint-service",
+      "source_url": "https://www.gov.cy/en/service/complaints-related-to-the-violation-of-human-rights/",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "accepted": false
+    },
+    {
+      "candidate_id": "cy-ombudsman-form",
+      "source_url": "https://www.dmrid.gov.cy/eforms/eforms.nsf/complaintformombudsman_en/complaintformombudsman_en?OpenForm=&Seq=1",
+      "request_url": "https://www.dmrid.gov.cy/eforms/eforms.nsf/complaintformombudsman_en/complaintformombudsman_en?OpenForm=&Seq=1",
+      "resolved_url": "https://www.dmrid.gov.cy/eforms/eforms.nsf/complaintformombudsman_en/complaintformombudsman_en?OpenForm=&Seq=1",
+      "retrieved_at": "2026-10-19T02:29:03+00:00",
+      "source_content_type": "text/html",
+      "source_bytes": 17707,
+      "source_sha256": "47fa2e80546059e92d0395144750554a5496ac7f6733d711bdf9f85758436942",
+      "raw_path": "temp/cyprus/raw/cy-ombudsman-form-47fa2e80546059e92d0395144750554a5496ac7f6733d711bdf9f85758436942.html",
+      "accepted": false,
+      "retrieval_status": "discovery_surface_no_text",
+      "retrieval_note": "Public HTML response contained no sufficiently long extractable source body."
+    },
+    {
+      "candidate_id": "cy-access-info-consolidation",
+      "source_url": "https://www.olc.gov.cy/OLC/OLC.NSF/24EF313FD04BA866C2258B540034A98C/%24file/The%20Right%20of%20Access%20to%20Information%20of%20the%20Public%20Sector%20Laws%20of%202017%20to%202018.pdf",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_note": "HTTPError: HTTP Error 404: Not Found",
+      "accepted": false
+    },
+    {
+      "candidate_id": "cy-information-commissioner-laws",
+      "source_url": "https://www.gov.cy/informationcommissioner/documents/nomothesies/",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "accepted": false
+    },
+    {
+      "candidate_id": "cy-access-info-code",
+      "source_url": "https://www.gov.cy/informationcommissioner/documents/kodikas-praktikis-gia-tin-kalyteri-efarmogi-toy-peri-toy-dikaiomatos-prosvasis-se-plirofories-toy-dimosioy-tomea-nomoy-toy-2017/",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "accepted": false
+    },
+    {
+      "candidate_id": "cy-access-info-faq",
+      "source_url": "https://www.gov.cy/informationcommissioner/documents/synitheis-erotiseis/",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "accepted": false
+    },
+    {
+      "candidate_id": "cy-data-protection-law",
+      "source_url": "https://www.dataprotection.gov.cy/dataprotection/dataprotection.nsf/2B53605103DCE4A4C225826300362211/%24file/Law%20125%28I%29%20of%202018%20ENG%20final.pdf",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "accepted": false
+    },
+    {
+      "candidate_id": "cy-data-protection-complaint",
+      "source_url": "https://www.gov.cy/dataprotection/plirofories-gia-polites/ypovoli-paraponoy/",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "accepted": false
+    },
+    {
+      "candidate_id": "cy-legal-aid-act-lead",
+      "source_url": "https://cylaw.org/nomoi/enop/non-ind/2002_1_165/full.html",
+      "request_url": "https://cylaw.org/nomoi/enop/non-ind/2002_1_165/full.html",
+      "resolved_url": "https://cylaw.org/nomoi/enop/non-ind/2002_1_165/full.html",
+      "retrieved_at": "2026-10-19T02:29:12+00:00",
+      "source_content_type": "text/html",
+      "source_bytes": 114934,
+      "source_sha256": "684e3e779c24904f9831cda43ac72e172bb14bbaa501e2a7f6eddd0874db175f",
+      "raw_path": "temp/cyprus/raw/cy-legal-aid-act-lead-684e3e779c24904f9831cda43ac72e172bb14bbaa501e2a7f6eddd0874db175f.html",
+      "accepted": false,
+      "candidate_text_path": "source-library/cyprus/candidates/cy-legal-aid-act-lead.md",
+      "converted_sha256": "9097bf5122baf3d47ec7d401ae664a1c9eb042b30331912f5318fa5d5114a2ff",
+      "converted_bytes": 112274,
+      "content_selector": "body",
+      "retrieval_status": "converted_review_candidate",
+      "review_state": "review_candidate"
+    },
+    {
+      "candidate_id": "cy-general-admin-act-lead",
+      "source_url": "https://www.cylaw.org/nomoi/enop/non-ind/1999_1_158/full.html",
+      "request_url": "https://www.cylaw.org/nomoi/enop/non-ind/1999_1_158/full.html",
+      "resolved_url": "https://www.cylaw.org/nomoi/enop/non-ind/1999_1_158/full.html",
+      "retrieved_at": "2026-10-19T02:29:14+00:00",
+      "source_content_type": "text/html",
+      "source_bytes": 95382,
+      "source_sha256": "e25beb147fbc17b2d6ba8a0cc261e9e7dddedfba0443eedcd76116fa67aa691a",
+      "raw_path": "temp/cyprus/raw/cy-general-admin-act-lead-e25beb147fbc17b2d6ba8a0cc261e9e7dddedfba0443eedcd76116fa67aa691a.html",
+      "accepted": false,
+      "candidate_text_path": "source-library/cyprus/candidates/cy-general-admin-act-lead.md",
+      "converted_sha256": "079bf3516f26f440c18d0f9b0e6fb3163a4f942f105590b602a99f246aa6942b",
+      "converted_bytes": 77759,
+      "content_selector": "body",
+      "retrieval_status": "converted_review_candidate",
+      "review_state": "review_candidate"
+    },
+    {
+      "candidate_id": "cy-admin-court-law-lead",
+      "source_url": "https://www.cylaw.org/nomoi/enop/non-ind/2015_1_131/full.html",
+      "request_url": "https://www.cylaw.org/nomoi/enop/non-ind/2015_1_131/full.html",
+      "resolved_url": "https://www.cylaw.org/nomoi/enop/non-ind/2015_1_131/full.html",
+      "retrieved_at": "2026-10-19T02:29:16+00:00",
+      "source_content_type": "text/html",
+      "source_bytes": 38190,
+      "source_sha256": "575a63eea644853632c4617465cc12446fea0ca2296da7e037d3c3e3f46c745c",
+      "raw_path": "temp/cyprus/raw/cy-admin-court-law-lead-575a63eea644853632c4617465cc12446fea0ca2296da7e037d3c3e3f46c745c.html",
+      "accepted": false,
+      "candidate_text_path": "source-library/cyprus/candidates/cy-admin-court-law-lead.md",
+      "converted_sha256": "925b9a314fcc379df86b2ee0ffabf6fd7ccb554a37b289d05377a4f42bc36cc8",
+      "converted_bytes": 28969,
+      "content_selector": "body",
+      "retrieval_status": "converted_review_candidate",
+      "review_state": "review_candidate"
+    },
+    {
+      "candidate_id": "cy-free-movement-gazette-2007",
+      "source_url": "https://www.mof.gov.cy/mof/gpo/gazette.nsf/All/5ECD762847398688C2258728003A22A7/%24file/A.4110%209.2.2007%20P.%20I%20Meros%20I.pdf?OpenElement=",
+      "request_url": "https://www.mof.gov.cy/mof/gpo/gazette.nsf/All/5ECD762847398688C2258728003A22A7/%24file/A.4110%209.2.2007%20P.%20I%20Meros%20I.pdf?OpenElement=",
+      "resolved_url": "https://www.mof.gov.cy/mof/gpo/gazette.nsf/All/5ECD762847398688C2258728003A22A7/%24file/A.4110%209.2.2007%20P.%20I%20Meros%20I.pdf?OpenElement=",
+      "retrieved_at": "2026-10-19T02:29:18+00:00",
+      "source_content_type": "application/pdf",
+      "source_bytes": 2512620,
+      "source_sha256": "5956804c60b7979588fb7016109ef76e43d927aeeabcc8444e13d49374f30d50",
+      "raw_path": "temp/cyprus/raw/cy-free-movement-gazette-2007-5956804c60b7979588fb7016109ef76e43d927aeeabcc8444e13d49374f30d50.pdf",
+      "accepted": false,
+      "candidate_source_path": "temp/cyprus/pdf/cy-free-movement-gazette-2007-5956804c60b7979588fb7016109ef76e43d927aeeabcc8444e13d49374f30d50.pdf",
+      "candidate_text_path": "source-library/cyprus/candidates/cy-free-movement-gazette-2007.md",
+      "converted_sha256": "a3bf97e8d21848008b78ea52c743b20602e8323d8c36badf0934f9d9366c7e10",
+      "converted_bytes": 2395,
+      "content_selector": "PDF text extraction; 71 pages",
+      "retrieval_status": "converted_review_candidate",
+      "review_state": "review_candidate"
+    }
+  ],
+  "accepted_source_count": 0
+}

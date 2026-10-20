@@ -1,0 +1,980 @@
+{
+  "manifest_version": "0.2.0-candidate",
+  "pack": "germany-national-source-candidates",
+  "jurisdiction": "DE",
+  "inventory_research_date": "2026-10-18",
+  "scope": "Bounded discovery of German federal legal-publication channels; EU/EEA/Swiss residence, visas and mission practice; civil status/adoption; procedure, remedies, courts, privacy/oversight, public access and legal aid. Land-level practice is represented by selected examples only. This is not a legal-equivalence opinion or complete national inventory.",
+  "status": "partially_retrieved_review_candidates",
+  "retrieval_status": "26 candidate pages converted; 0 PDFs preserved without text extraction; 2 discovery surfaces had no stable body; failures are recorded per item; no source accepted",
+  "accepted_source_count": 0,
+  "candidate_source_count": 29,
+  "official_hosts": [
+    "digital.diplo.de",
+    "n-lex.europa.eu",
+    "service.justiz.de",
+    "verwaltung.bund.de",
+    "www.auswaertiges-amt.de",
+    "www.bamf.de",
+    "www.berlin.de",
+    "www.bfdi.bund.de",
+    "www.bundesjustizamt.de",
+    "www.bverwg.de",
+    "www.gesetze-im-internet.de",
+    "www.make-it-in-germany.com",
+    "www.recht.bund.de",
+    "www.service.justiz.de"
+  ],
+  "secondary_hosts": [],
+  "comparison_seed": {
+    "jurisdiction": "Denmark",
+    "source": "Danish EU-residence regulation and official guidance used as the comparison seed",
+    "relationship_note": "FreizügG/EU shares subject and some functions with the seed but differs in structure, scope and authority allocation. Similarity does not establish equivalent provisions. EU, EEA EFTA, Swiss, UK Withdrawal Agreement and German-citizen family routes remain distinct."
+  },
+  "previous_findings_carried_forward": [
+    "The 15-source Germany proposal in the 2026-10-15 acquisition register was reconciled, including GAD, KonsG, VwVfG § 2, IFG, civil-status/adoption laws, FreizügG/EU, VwGO, AABGebV and AZRG. Prior URLs remain leads unless inspected here.",
+    "Czechia’s date-bound PDF approach, Estonia’s XML route, Finland’s keyless API documentation and France’s public bulk-data route are adapter-design examples only; they do not establish a German source/API.",
+    "Prior Denmark-to-Sweden/Finland and Austria findings were used as query leads, not evidence of German legal equivalence or complete coverage."
+  ],
+  "search_coverage": [
+    {
+      "source_class": "Federal legislation, promulgation, version discovery and acquisition",
+      "search_outcome": "Candidates found; current text and authentic publication have different authorities and formats.",
+      "official_channels": [
+        "N-Lex Germany profile",
+        "Gesetze im Internet",
+        "electronic Bundesgesetzblatt",
+        "BMJ digital promulgation information"
+      ],
+      "query_terms": [
+        "site:n-lex.europa.eu/n-lex/info/info-de Gesetze im Internet official version",
+        "site:gesetze-im-internet.de FreizügG/EU XML ZIP AufenthG",
+        "site:recht.bund.de webservice ELI RSS Bundesgesetzblatt",
+        "site:bmj.de digitale Verkündung Bundesgesetzblatt"
+      ],
+      "languages": [
+        "de",
+        "en"
+      ],
+      "coverage_limit": "N-Lex says printed BGBl is official, while BMJ says electronic BGBl at recht.bund.de is sole official promulgation from 1 January 2023. Gesetze im Internet consolidations are not authentic promulgation. ZIP replay, schema, feed completeness and electronic-seal verification are unimplemented."
+    },
+    {
+      "source_class": "EU/EEA/Swiss residence, immigration and family routes",
+      "search_outcome": "Candidates found; distinct legal routes and federal/Land authority split remain.",
+      "official_channels": [
+        "FreizügG/EU, AufenthG and AufenthV",
+        "Federal Foreign Office",
+        "Bundesportal",
+        "Make it in Germany"
+      ],
+      "query_terms": [
+        "FreizügG/EU Familienangehörige Aufenthalt Karte",
+        "AufenthV Schweizer Freizügigkeitsabkommen § 28",
+        "Unionsbürger ausländischer Partner Umzug Deutschland",
+        "Aufenthaltskarte Familienangehörige EU EWR Bundesportal"
+      ],
+      "languages": [
+        "de",
+        "en"
+      ],
+      "coverage_limit": "No uniform national processing practice; Länder/local authorities administer residence documents. EU, EEA, Swiss, UK-transition and German-citizen family routes are separate. Hesse and Bremen are samples only."
+    },
+    {
+      "source_class": "Visa, consular services, mission practice and fees",
+      "search_outcome": "Candidates found; central guidance and mission instructions differ in scope.",
+      "official_channels": [
+        "Federal Foreign Office FAQ and Visa Handbook",
+        "Consular Services Portal",
+        "mission directory",
+        "AABGebV"
+      ],
+      "query_terms": [
+        "Auswärtiges Amt Visum Unionsbürger Ehegatte Deutschland",
+        "Visumhandbuch Remonstration 1 Juli 2025",
+        "digital.diplo.de FAQ mission availability",
+        "deutsche Auslandsvertretungen Gebühren AABGebV"
+      ],
+      "languages": [
+        "de",
+        "en"
+      ],
+      "coverage_limit": "AA abolished voluntary visa remonstration worldwide on 1 July 2025. Portal coverage is mission-specific and changes; local document lists and fees need date-bound verification."
+    },
+    {
+      "source_class": "Administrative procedure, public access and remedies",
+      "search_outcome": "Candidates found; mission exclusion and general judicial routes identified.",
+      "official_channels": [
+        "VwVfG",
+        "VwGO",
+        "IFG",
+        "BfDI information-freedom pages"
+      ],
+      "query_terms": [
+        "VwVfG § 2 Abs 3 Nr 3 Auslandsvertretungen",
+        "VwGO Visum Verwaltungsgericht Klage",
+        "IFG § 12 BfDI Auswärtiges Amt"
+      ],
+      "languages": [
+        "de",
+        "en"
+      ],
+      "coverage_limit": "Federal missions are excluded from direct VwVfG application by § 2(3)(3). Other applicable rules and notice-specific remedies require separate research."
+    },
+    {
+      "source_class": "Civil status, foreign family decisions and adoption",
+      "search_outcome": "Candidates found; many legal records remain prior-register leads only.",
+      "official_channels": [
+        "PStG/PStV, EGBGB, FamFG, AdWirkG, AdVermiG and AdÜbAG",
+        "Federal Office of Justice"
+      ],
+      "query_terms": [
+        "PStG § 34 Eheschließung Ausland",
+        "AdWirkG Anerkennung ausländische Adoption",
+        "AdVermiG AdÜbAG Bundesamt für Justiz Auslandsadoption",
+        "EGBGB FamFG Anerkennung ausländischer Entscheidungen"
+      ],
+      "languages": [
+        "de",
+        "en"
+      ],
+      "coverage_limit": "Statutes need current text inspection. Civil-status registration, recognition, family-court procedure and adoption authority are distinct; federal and Land responsibilities differ."
+    },
+    {
+      "source_class": "Courts and case-law discovery",
+      "search_outcome": "Candidates found; publication coverage remains selective.",
+      "official_channels": [
+        "BVerwG decision database and ECLI guidance",
+        "Berlin Administrative Court visa information"
+      ],
+      "query_terms": [
+        "site:bverwg.de Rechtsprechung Visum FreizügG ECLI",
+        "site:berlin.de verwaltungsgericht Visaverfahren Merkblatt"
+      ],
+      "languages": [
+        "de",
+        "en"
+      ],
+      "coverage_limit": "BVerwG and Berlin court sources are examples, not comprehensive lower-court or nationwide coverage."
+    },
+    {
+      "source_class": "Privacy, access oversight and complaint routes",
+      "search_outcome": "Candidates found; responsibility depends on controller and subject.",
+      "official_channels": [
+        "BfDI contact finder",
+        "BfDI information-freedom guidance and report",
+        "IFG"
+      ],
+      "query_terms": [
+        "BfDI Kontaktfinder Beschwerde öffentliche Stelle Länder",
+        "BfDI Informationsfreiheit IFG Vermittlung Auswärtiges Amt",
+        "IFG § 12 BfDI"
+      ],
+      "languages": [
+        "de",
+        "en"
+      ],
+      "coverage_limit": "Germany has federal and Land data-protection authorities; the BfDI is not the default for every local immigration authority. Annual reports are historical evidence only."
+    },
+    {
+      "source_class": "Legal aid and advice assistance",
+      "search_outcome": "Candidates found; public forms may request sensitive financial information.",
+      "official_channels": [
+        "Justiz-Services Prozesskostenhilfe",
+        "Justiz-Services Beratungshilfe"
+      ],
+      "query_terms": [
+        "site:service.justiz.de Prozesskostenhilfe Beratungshilfe"
+      ],
+      "languages": [
+        "de"
+      ],
+      "coverage_limit": "Monitor public guidance only; do not submit forms, automate applications or retain personal/financial data."
+    }
+  ],
+  "retrieved_review_candidate_count": 28,
+  "retrieved_converted_candidate_count": 0,
+  "page_accessed_note_count": 39,
+  "documents": [
+    {
+      "id": "de-01",
+      "title": "N-Lex Germany national database profile",
+      "source_type": "national_law_discovery",
+      "language": "en/de",
+      "url": "https://n-lex.europa.eu/n-lex/info/info-de/index",
+      "publisher_identifier": {
+        "system": "n-lex.europa.eu",
+        "record": "official page or document at this URL; stable publisher ID not separately captured"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official profile inspected; identifies Gesetze im Internet, continuous consolidation, update service, and its stated version status.",
+      "retrieval_status": "changed_review_candidate",
+      "retrieval_shape": "Official HTML guidance or service record",
+      "version_evidence": "Profile says the print BGBl is authoritative, conflicting with BMJ’s current electronic-BGBl description from 2023.",
+      "note": "Use as a law-portal discovery lead, not the publisher. Treat its BGBl format statement as stale pending authoritative legal confirmation.",
+      "topic_ids": [
+        "ADMIN-01"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "temp/germany/pending/de-01-7ef981c356da722a.md",
+      "source_sha256": "7ef981c356da722a9be9e18bd9d5ca2fc375dfef9a61aa19a8cf76fd831b0035",
+      "converted_sha256": "4f7e4cff2baa65c599acb3c2dec04ece14ae05e027f49d0babe039e1f3ef2e40",
+      "source_bytes": 29561,
+      "resolved_url": "https://n-lex.europa.eu/n-lex/info/info-de/index"
+    },
+    {
+      "id": "de-02",
+      "title": "Electronic Bundesgesetzblatt (BGBl)",
+      "source_type": "official_gazette",
+      "language": "de",
+      "url": "https://www.recht.bund.de/de/home/home_node.html",
+      "publisher_identifier": {
+        "system": "www.recht.bund.de",
+        "record": "official page or document at this URL; stable publisher ID not separately captured"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official BMJ and BGBl pages inspected; BMJ states electronic publication is the sole federal promulgation organ since 1 January 2023.",
+      "retrieval_status": "changed_review_candidate",
+      "retrieval_shape": "Official HTML directory/search/portal with linked documents",
+      "version_evidence": "Authentic official PDF issues are free; older years have a separate archive route.",
+      "note": "Authoritative federal promulgation source from 2023. Preserve and validate PDF seal; extraction/replay not implemented.",
+      "topic_ids": [
+        "ADMIN-01"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "temp/germany/pending/de-02-a3088f8ee483a423.md",
+      "source_sha256": "a3088f8ee483a4233571f6b156937860b036bf4b3f3dfb292ce155fe0c66d8f5",
+      "converted_sha256": "33f20f0a6ad01a381524237f0e752dd777f40f1025512df7f99ba77138a3171a",
+      "source_bytes": 257959,
+      "resolved_url": "https://www.recht.bund.de/de/home/home_node.html"
+    },
+    {
+      "id": "de-03",
+      "title": "BGBl webservice: stable ELI paths, issue PDFs, ZIP packages and RSS",
+      "source_type": "gazette_discovery",
+      "language": "de",
+      "url": "https://www.recht.bund.de/de/service/webservice/webservice_node.html",
+      "publisher_identifier": {
+        "system": "www.recht.bund.de",
+        "record": "official page or document at this URL; stable publisher ID not separately captured"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official webservice instructions inspected; documents ELI paths, PDF/ZIP links, response-code checks and RSS feeds.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Official HTML directory/search/portal with linked documents",
+      "version_evidence": "Publication path uses series, year and sequential issue number.",
+      "note": "Promising no-registration discovery route; complete feed enumeration, archive replay, seal checks and conversion are unimplemented.",
+      "topic_ids": [
+        "ADMIN-01"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/germany/candidates/de-03.md",
+      "source_sha256": "755d6db3d123fe29eb84a27ee2837a7b7bdd079d6fddbfd1216ddd6c3bf64069",
+      "converted_sha256": "b8a83c835b1610baa5a211deedc3339ed464efc6dba417a04cd41cdc9c1d219d",
+      "source_bytes": 39378,
+      "resolved_url": "https://www.recht.bund.de/de/service/webservice/webservice_node.html"
+    },
+    {
+      "id": "de-04",
+      "title": "Gesetze im Internet federal law portal",
+      "source_type": "legislation_portal",
+      "language": "de/en",
+      "url": "https://www.gesetze-im-internet.de/",
+      "publisher_identifier": {
+        "system": "www.gesetze-im-internet.de",
+        "record": "official page or document at this URL; stable publisher ID not separately captured"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official BMJ and N-Lex descriptions inspected; free current consolidations, but displayed laws are not authentic promulgated versions.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Official HTML guidance or service record",
+      "version_evidence": "Many law indexes offer HTML, PDF, XML ZIP and EPUB.",
+      "note": "Use for readable/consolidated text only and reconcile changes with authentic BGBl events.",
+      "topic_ids": [
+        "ADMIN-01"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/germany/candidates/de-04.md",
+      "source_sha256": "179633e8e7a1c1be4233f9bf06ddd29068a6419a6b086d27e8be2ac240dac3ad",
+      "converted_sha256": "36f5b04156dc3be455c4436b55a04c4ad2991dbac5e906c9a710958d3022dba9",
+      "source_bytes": 9439,
+      "resolved_url": "https://www.gesetze-im-internet.de/"
+    },
+    {
+      "id": "de-05",
+      "title": "Gesetze im Internet Aktualitätsdienst and RSS",
+      "source_type": "legislation_update_feed",
+      "language": "de",
+      "url": "https://www.gesetze-im-internet.de/aktuDienst.html",
+      "publisher_identifier": {
+        "system": "www.gesetze-im-internet.de",
+        "record": "official page or document at this URL; stable publisher ID not separately captured"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official update-service page inspected; lists recent BGBl publications and RSS subscription.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Official HTML guidance or service record",
+      "version_evidence": "Links to new BGBl I rules retained for up to six months after entry into force.",
+      "note": "Useful discovery signal, not a complete archive or proof of current consolidated text.",
+      "topic_ids": [
+        "ADMIN-01"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/germany/candidates/de-05.md",
+      "source_sha256": "f2c92645e935e53c51e5f69a06756484133dff26f032251a8b6db1d778bb045c",
+      "converted_sha256": "c65e68c68bd248bcff8ff353ff0ffdb6bb6b0225fd1ddfc079c14258cfff998c",
+      "source_bytes": 74406,
+      "resolved_url": "https://www.gesetze-im-internet.de/aktuDienst.html"
+    },
+    {
+      "id": "de-07",
+      "title": "FreizügG/EU index and downloadable formats",
+      "source_type": "law_record_index",
+      "language": "de",
+      "url": "https://www.gesetze-im-internet.de/freiz_gg_eu_2004/index.html",
+      "publisher_identifier": {
+        "system": "www.gesetze-im-internet.de",
+        "record": "official page or document at this URL; stable publisher ID not separately captured"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official index inspected; lists family, close-person, residence-card and EEA provisions and XML ZIP/PDF/EPUB formats.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Official HTML index; PDF/XML ZIP/EPUB links exposed",
+      "version_evidence": "XML ZIP version/schema not validated.",
+      "note": "Potential machine-readable per-law route; ZIP identity, schema and deterministic conversion unverified.",
+      "topic_ids": [
+        "RESIDENCE-01"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/germany/candidates/de-07.md",
+      "source_sha256": "a9a9e819ff78ac7420b22e1f6556748993b25b2a8b85d5b487b31577709611c2",
+      "converted_sha256": "4d34802ba482b7d6d6b6f3bf37600ad5884649f5fa29d2e9e6ce1e110c77b726",
+      "source_bytes": 9285,
+      "resolved_url": "https://www.gesetze-im-internet.de/freiz_gg_eu_2004/index.html"
+    },
+    {
+      "id": "de-25",
+      "title": "AA FAQ: non-German EU citizen visiting Germany with a third-country spouse",
+      "source_type": "official_guidance",
+      "language": "en",
+      "url": "https://www.auswaertiges-amt.de/en/visa-service/buergerservice/faq/01aa-visa-unionsbuerger-606750",
+      "publisher_identifier": {
+        "system": "www.auswaertiges-amt.de",
+        "record": "official page or document at this URL; stable publisher ID not separately captured"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official English page inspected; discusses Schengen permits, Article 10 residence cards and facilitated visas.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Official HTML guidance or service record",
+      "version_evidence": "No update date captured.",
+      "note": "Short-stay guidance; separate from residence-card and German-citizen family routes.",
+      "topic_ids": [
+        "VISA-01"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/germany/candidates/de-25.md",
+      "source_sha256": "fdf2a50e29b382f744b72b7820382db4d742eafaf2455ac0332fced63a43f821",
+      "converted_sha256": "9f1a4f749e0bfe1c33dda5b0138e9f740f89da8b1a82633f931c33d05ad5e0e4",
+      "source_bytes": 50621,
+      "resolved_url": "https://www.auswaertiges-amt.de/en/visa-service/buergerservice/faq/01aa-visa-unionsbuerger-606750"
+    },
+    {
+      "id": "de-26",
+      "title": "AA FAQ: non-EU spouse joining a non-German EU citizen in Germany",
+      "source_type": "official_guidance",
+      "language": "de",
+      "url": "https://www.auswaertiges-amt.de/de/service/fragenkatalog-node/08-unionsbuerger-ausl-partner-umzug-d-606578",
+      "publisher_identifier": {
+        "system": "www.auswaertiges-amt.de",
+        "record": "official page or document at this URL; stable publisher ID not separately captured"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official page result identified; derivative rights and mission routing described, full text not captured.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Official HTML guidance or service record",
+      "version_evidence": "No update date captured.",
+      "note": "Long-stay/move lead; check responsible mission and local residence office.",
+      "topic_ids": [
+        "RESIDENCE-01"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/germany/candidates/de-26.md",
+      "source_sha256": "08d91bcde7dd11cde31da110f4712d091c6ab7bfc1e74f164d5d50ef83327404",
+      "converted_sha256": "64faaa9d61eddf89cdad735c5f0f3070579fe58035043eb2bce6f02911993690",
+      "source_bytes": 77336,
+      "resolved_url": "https://www.auswaertiges-amt.de/de/service/fragenkatalog-node/08-unionsbuerger-ausl-partner-umzug-d-606578"
+    },
+    {
+      "id": "de-27",
+      "title": "AA: abolition of visa remonstration from 1 July 2025",
+      "source_type": "official_procedure_guidance",
+      "language": "en/de",
+      "url": "https://www.auswaertiges-amt.de/en/2716462-2716462",
+      "publisher_identifier": {
+        "system": "www.auswaertiges-amt.de",
+        "record": "official page or document at this URL; stable publisher ID not separately captured"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official announcement inspected; voluntary visa remonstration ended worldwide 1 July 2025; judicial review and new applications remain.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Official HTML guidance or service record",
+      "version_evidence": "Effective date: 1 July 2025.",
+      "note": "Critical dated procedure change. Do not present remonstration as a current general remedy.",
+      "topic_ids": [
+        "REMEDY-03"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/germany/candidates/de-27.md",
+      "source_sha256": "7f7125f8f9609d6d03e77fecff4693dfadbcc85ada39c578b15f66710de9ca60",
+      "converted_sha256": "5be4d4ff7649c37e0e3122a998c90a40822b60f3dcfe7e773c2fea373d472aa8",
+      "source_bytes": 54232,
+      "resolved_url": "https://www.auswaertiges-amt.de/en/2716462-2716462"
+    },
+    {
+      "id": "de-28",
+      "title": "Consular Services Portal visa entry point",
+      "source_type": "official_service_portal",
+      "language": "en/de",
+      "url": "https://digital.diplo.de/visa",
+      "publisher_identifier": {
+        "system": "digital.diplo.de",
+        "record": "official page or document at this URL; stable publisher ID not separately captured"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official portal inspected; national visa application routes offered for selected missions/categories.",
+      "retrieval_status": "discovery_surface_no_text",
+      "retrieval_shape": "Official HTML directory/search/portal with linked documents",
+      "version_evidence": "Mission availability changes as service expands.",
+      "note": "Monitor public links/service availability only; never automate submissions or collect case data.",
+      "topic_ids": [
+        "VISA-01"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "67db0f81b702503a733ebbd1b0749ceb43a444ea6b2697a21dec498580d56d83",
+      "source_bytes": 1902,
+      "resolved_url": "https://digital.diplo.de/visa",
+      "retrieval_note": "Public HTML response contained no sufficiently long extractable source body."
+    },
+    {
+      "id": "de-29",
+      "title": "Consular Services Portal FAQ",
+      "source_type": "official_guidance",
+      "language": "en/de",
+      "url": "https://digital.diplo.de/FAQ",
+      "publisher_identifier": {
+        "system": "digital.diplo.de",
+        "record": "official page or document at this URL; stable publisher ID not separately captured"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official FAQ inspected; confirms gradual expansion and mission-specific availability.",
+      "retrieval_status": "discovery_surface_no_text",
+      "retrieval_shape": "Official HTML guidance or service record",
+      "version_evidence": "Page says portal content is updated over time.",
+      "note": "Public information only; do not handle accounts or personal application data.",
+      "topic_ids": [
+        "VISA-01"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "661a9cdfabec3bd5165c5adda15ad4cd1b26999612a2dca7133167bee1f11970",
+      "source_bytes": 1902,
+      "resolved_url": "https://digital.diplo.de/FAQ",
+      "retrieval_note": "Public HTML response contained no sufficiently long extractable source body."
+    },
+    {
+      "id": "de-30",
+      "title": "AA directory of German missions abroad",
+      "source_type": "official_directory",
+      "language": "en/de",
+      "url": "https://www.auswaertiges-amt.de/en/about-us/auslandsvertretungen",
+      "publisher_identifier": {
+        "system": "www.auswaertiges-amt.de",
+        "record": "official page or document at this URL; stable publisher ID not separately captured"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official directory and dated country-site index identified; mission pages hold local instructions.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Official HTML directory/search/portal with linked documents",
+      "version_evidence": "Links and country content change.",
+      "note": "Discovery layer only; no national page proves complete mission-specific requirements.",
+      "topic_ids": [
+        "MISSION-08"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/germany/candidates/de-30.md",
+      "source_sha256": "d0ad7cd15e71e54c816f18482553666c568d8d88d2b0f588559b1b47a2b563ec",
+      "converted_sha256": "5be335dd1f3e6075e724e9b1f36ff1aac65d8480f989a1ddb36281beccec32bf",
+      "source_bytes": 56803,
+      "resolved_url": "https://www.auswaertiges-amt.de/en/about-us/auslandsvertretungen"
+    },
+    {
+      "id": "de-31",
+      "title": "Federal Foreign Office Visa Handbook",
+      "source_type": "official_guidance",
+      "language": "de",
+      "url": "https://www.auswaertiges-amt.de/resource/blob/207816/71848fd0f126c2c1a48fcea7122fb2ca/visumhandbuch-data.pdf",
+      "publisher_identifier": {
+        "system": "www.auswaertiges-amt.de",
+        "record": "official page or document at this URL; stable publisher ID not separately captured"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official PDF URL identified; current edition and full content not inspected.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Official PDF; payload identity/hash and text extraction not verified",
+      "version_evidence": "PDF may change at stable URL; capture date and hash.",
+      "note": "Operational guidance must be versioned and checked against current law; remedy text must reflect 2025 change.",
+      "topic_ids": [
+        "VISA-01"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_source_path": "temp/germany/pdf/de-31-2739f846755189ea258df3e84004bb0757543d261e6fa402106e61c89b744375.pdf",
+      "source_sha256": "2739f846755189ea258df3e84004bb0757543d261e6fa402106e61c89b744375",
+      "source_bytes": 4941914,
+      "resolved_url": "https://www.auswaertiges-amt.de/resource/blob/207816/71848fd0f126c2c1a48fcea7122fb2ca/visumhandbuch-data.pdf",
+      "candidate_text_path": "source-library/germany/candidates/de-31.md",
+      "converted_sha256": "c948d15d8b1b3dfc3f4d13b1111ed960f17c15c5713c25d308d964a786a8fac2"
+    },
+    {
+      "id": "de-32",
+      "title": "Make it in Germany: family members joining EU/EEA/Swiss citizens",
+      "source_type": "official_government_guidance",
+      "language": "en",
+      "url": "https://www.make-it-in-germany.com/en/visa-residence/family-reunification/spouses-joining-eu-citizens/print",
+      "publisher_identifier": {
+        "system": "www.make-it-in-germany.com",
+        "record": "official page or document at this URL; stable publisher ID not separately captured"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official government portal print view inspected; describes EU/EEA/Swiss scope and routes.",
+      "retrieval_status": "changed_review_candidate",
+      "retrieval_shape": "Official HTML guidance or service record",
+      "version_evidence": "Version date not captured.",
+      "note": "Guidance lead only; reconcile distinct legal bases and competent authorities.",
+      "topic_ids": [
+        "RESIDENCE-01"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "temp/germany/pending/de-32-3ac223000afd5b88.md",
+      "source_sha256": "3ac223000afd5b88a5c5523db771c9b9b37efdca84201ac5482a5af6e55552f2",
+      "converted_sha256": "e2ac615ac088f4bf661df50e99575f8d5e867244ccdf98276a5a8e5a9602fd4e",
+      "source_bytes": 118379,
+      "resolved_url": "https://www.make-it-in-germany.com/en/visa-residence/family-reunification/spouses-joining-eu-citizens/print"
+    },
+    {
+      "id": "de-33",
+      "title": "Bundesportal service: EU/EEA family residence card with region selector",
+      "source_type": "official_service_catalogue",
+      "language": "en/de",
+      "url": "https://verwaltung.bund.de/leistungsverzeichnis/en/leistung/99010009012000",
+      "publisher_identifier": {
+        "system": "verwaltung.bund.de",
+        "record": "official page or document at this URL; stable publisher ID not separately captured"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official page inspected; requires a selected region and states information depends on region.",
+      "retrieval_status": "changed_review_candidate",
+      "retrieval_shape": "Official HTML directory/search/portal with linked documents",
+      "version_evidence": "Region-specific linked records vary.",
+      "note": "A dynamic discovery layer, not uniform German guidance.",
+      "topic_ids": [
+        "RESIDENCE-02"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "temp/germany/pending/de-33-5206fd210c9578a7.md",
+      "source_sha256": "5206fd210c9578a7477d6547b148205a6bed306e9a2c1871f02220925ffdb383",
+      "converted_sha256": "095575654a67b304dfe74efed3f279491101a350470dbcd1e35ca202680535b6",
+      "source_bytes": 49928,
+      "resolved_url": "https://verwaltung.bund.de/leistungsverzeichnis/en/leistung/99010009012000"
+    },
+    {
+      "id": "de-34",
+      "title": "Hesse Bundesportal residence-card service record",
+      "source_type": "regional_service_guidance",
+      "language": "de/en",
+      "url": "https://verwaltung.bund.de/leistungsverzeichnis/DE/leistung/99010009012000/herausgeber/HE-9106759/region/060000000000",
+      "publisher_identifier": {
+        "system": "verwaltung.bund.de",
+        "record": "official page or document at this URL; stable publisher ID not separately captured"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official Hesse record inspected; visible update date 23 October 2020; distinguishes EU/EEA and Swiss routes.",
+      "retrieval_status": "changed_review_candidate",
+      "retrieval_shape": "Official HTML guidance or service record",
+      "version_evidence": "Last update shown: 23 October 2020.",
+      "note": "One Land sample only and possibly stale; do not generalize nationally.",
+      "topic_ids": [
+        "RESIDENCE-02"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "temp/germany/pending/de-34-47a918023a20830b.md",
+      "source_sha256": "47a918023a20830be31082b04cd524c1925b076efb57461b73d598e245fb54f9",
+      "converted_sha256": "9608cf87ac3646d4b67788341db4be6a6d810ff6acb490c6421b70846e651517",
+      "source_bytes": 92119,
+      "resolved_url": "https://verwaltung.bund.de/leistungsverzeichnis/DE/leistung/99010009012000/herausgeber/HE-9106759/region/060000000000"
+    },
+    {
+      "id": "de-35",
+      "title": "Bremen Bundesportal residence-card service record",
+      "source_type": "regional_service_guidance",
+      "language": "de",
+      "url": "https://verwaltung.bund.de/leistungsverzeichnis/de/leistung/99010016012001/herausgeber/HB-S1000030001183334/region/040000000000",
+      "publisher_identifier": {
+        "system": "verwaltung.bund.de",
+        "record": "official page or document at this URL; stable publisher ID not separately captured"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official record result surfaced; 29 April 2026 update and separate Swiss-documentation wording; full page needs reopening.",
+      "retrieval_status": "changed_review_candidate",
+      "retrieval_shape": "Official HTML guidance or service record",
+      "version_evidence": "Search result date: 29 April 2026.",
+      "note": "One Land sample only; preserve Swiss distinction.",
+      "topic_ids": [
+        "RESIDENCE-02"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "temp/germany/pending/de-35-47ff9e1a887874b4.md",
+      "source_sha256": "47ff9e1a887874b421909003177a2d2c1fcf6a532c5149e473d21dde16d1f143",
+      "converted_sha256": "e7f3bbfdccba2ad5a9b57801626baa8b8a4df72b5475db9db010be4e9d143d36",
+      "source_bytes": 74964,
+      "resolved_url": "https://verwaltung.bund.de/leistungsverzeichnis/de/leistung/99010016012001/herausgeber/HB-S1000030001183334/region/040000000000"
+    },
+    {
+      "id": "de-36",
+      "title": "BAMF Willkommen in Deutschland guide",
+      "source_type": "official_guidance",
+      "language": "de",
+      "url": "https://www.bamf.de/SharedDocs/Anlagen/DE/Integration/WillkommenDeutschland/willkommen-in-deutschland.pdf?__blob=publicationFile",
+      "publisher_identifier": {
+        "system": "www.bamf.de",
+        "record": "official page or document at this URL; stable publisher ID not separately captured"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official PDF route identified; prior review found it roughly five years old; not re-downloaded.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Official PDF; payload identity/hash and text extraction not verified",
+      "version_evidence": "Older edition; exact date needs recheck.",
+      "note": "Historical guidance only until renewed and reconciled.",
+      "topic_ids": [
+        "RESIDENCE-01"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_source_path": "temp/germany/pdf/de-36-296d99828b08fb3710cc27071f9a5ec6a4890c1a6155bec3eaf37a193e1dbada.pdf",
+      "source_sha256": "296d99828b08fb3710cc27071f9a5ec6a4890c1a6155bec3eaf37a193e1dbada",
+      "source_bytes": 3018315,
+      "resolved_url": "https://www.bamf.de/SharedDocs/Anlagen/DE/Integration/WillkommenDeutschland/willkommen-in-deutschland.pdf?__blob=publicationFile",
+      "candidate_text_path": "source-library/germany/candidates/de-36.md",
+      "converted_sha256": "d5f4f9dbc9cbe9d5f00414c479d32041c1562dec31b3f0c3cb69d57e96ecbd33"
+    },
+    {
+      "id": "de-37",
+      "title": "Berlin Administrative Court visa procedure information",
+      "source_type": "court_guidance",
+      "language": "de",
+      "url": "https://www.berlin.de/gerichte/verwaltungsgericht/service/visumsverfahren/",
+      "publisher_identifier": {
+        "system": "www.berlin.de",
+        "record": "official page or document at this URL; stable publisher ID not separately captured"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official court page inspected; directs users to refusal notices for remedies and gives court information.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Official HTML guidance or service record",
+      "version_evidence": "No general update date captured.",
+      "note": "Berlin only; not nationwide remedy guidance.",
+      "topic_ids": [
+        "REMEDY-03"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/germany/candidates/de-37.md",
+      "source_sha256": "2d97b007b16196a3354431e255381d719cd0a854e6452413e1d450f96251f724",
+      "converted_sha256": "8b2038c79be23a5cf0dd443afd57a828c6b0c0291dace5ffef8b101fb83cd3b6",
+      "source_bytes": 41130,
+      "resolved_url": "https://www.berlin.de/gerichte/verwaltungsgericht/service/visumsverfahren/"
+    },
+    {
+      "id": "de-38",
+      "title": "Berlin Administrative Court English visa-procedure leaflet",
+      "source_type": "court_guidance",
+      "language": "en",
+      "url": "https://www.berlin.de/gerichte/verwaltungsgericht/service/visumsverfahren/merkblatt_visum_englisch.pdf",
+      "publisher_identifier": {
+        "system": "www.berlin.de",
+        "record": "official page or document at this URL; stable publisher ID not separately captured"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official PDF inspected; says refusal notice describes remedy and court does not provide legal advice.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Official PDF; payload identity/hash and text extraction not verified",
+      "version_evidence": "PDF issue date not captured.",
+      "note": "Court sample only; deadline and jurisdiction remain case-specific.",
+      "topic_ids": [
+        "REMEDY-03"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_source_path": "temp/germany/pdf/de-38-cd1167a3dbca0e89f8f8172f98f2ba9e9315f3b759db5a2b2829849cac26230e.pdf",
+      "source_sha256": "cd1167a3dbca0e89f8f8172f98f2ba9e9315f3b759db5a2b2829849cac26230e",
+      "source_bytes": 66169,
+      "resolved_url": "https://www.berlin.de/gerichte/verwaltungsgericht/service/visumsverfahren/merkblatt_visum_englisch.pdf",
+      "candidate_text_path": "source-library/germany/candidates/de-38.md",
+      "converted_sha256": "be1ad9238af90ee381bfd444c633913623cb01b977d0008a88194f3c9f365585"
+    },
+    {
+      "id": "de-39",
+      "title": "Federal Administrative Court decisions database",
+      "source_type": "case_law_repository",
+      "language": "de",
+      "url": "https://www.bverwg.de/rechtsprechung",
+      "publisher_identifier": {
+        "system": "www.bverwg.de",
+        "record": "official page or document at this URL; stable publisher ID not separately captured"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official decision portal inspected; search by date, docket number or keyword.",
+      "retrieval_status": "changed_review_candidate",
+      "retrieval_shape": "Official HTML directory/search/portal with linked documents",
+      "version_evidence": "Publication can occur after decision issuance; corpus is selective.",
+      "note": "Useful federal administrative case-law route, not comprehensive lower-court coverage.",
+      "topic_ids": [
+        "REMEDY-12"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "temp/germany/pending/de-39-7770e3720fa37618.md",
+      "source_sha256": "7770e3720fa376187c70e0ab3668f84462d18a7635ff4638c3ab949f68e63c48",
+      "converted_sha256": "23e855a9ac5febd4aa521f10ebc5c0dc94ee21d7459a1708cbc6bcadcac13a3b",
+      "source_bytes": 41656,
+      "resolved_url": "https://www.bverwg.de/rechtsprechung"
+    },
+    {
+      "id": "de-40",
+      "title": "Federal Administrative Court ECLI guidance",
+      "source_type": "case_law_identifier",
+      "language": "de",
+      "url": "https://www.bverwg.de/rechtsprechung/ecli",
+      "publisher_identifier": {
+        "system": "www.bverwg.de",
+        "record": "official page or document at this URL; stable publisher ID not separately captured"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official guidance inspected; published BVerwG decisions receive ECLI and ID structure explained.",
+      "retrieval_status": "changed_review_candidate",
+      "retrieval_shape": "Official HTML guidance or service record",
+      "version_evidence": "ECLI identifies decisions but not corpus completeness.",
+      "note": "Use for stable case identification and deduplication after discovery.",
+      "topic_ids": [
+        "REMEDY-12"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "temp/germany/pending/de-40-79443ff34c11b6fd.md",
+      "source_sha256": "79443ff34c11b6fdfdd60452db21081f973a77fbc203042f4a913da05d469421",
+      "converted_sha256": "c415fdead25a3ea7086e7c91e9fab9befc9ece5154d8a919c613ef4f5dc73fc4",
+      "source_bytes": 27664,
+      "resolved_url": "https://www.bverwg.de/rechtsprechung/ecli"
+    },
+    {
+      "id": "de-41",
+      "title": "BfDI contact and competent-authority finder",
+      "source_type": "oversight_directory",
+      "language": "de/en",
+      "url": "https://www.bfdi.bund.de/EN/Home/home_node.html",
+      "publisher_identifier": {
+        "system": "www.bfdi.bund.de",
+        "record": "official page or document at this URL; stable publisher ID not separately captured"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official BfDI page inspected; contact finder explains federal and Land competence routes.",
+      "retrieval_status": "changed_review_candidate",
+      "retrieval_shape": "Official HTML directory/search/portal with linked documents",
+      "version_evidence": "Authority depends on controller and subject.",
+      "note": "Do not route every local immigration authority complaint to the federal BfDI.",
+      "topic_ids": [
+        "DATA-06"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "temp/germany/pending/de-41-746cc2a620653f11.md",
+      "source_sha256": "746cc2a620653f11fa5ffaaffb16a10d555cb25c76e1f271ef8930b5c75750fc",
+      "converted_sha256": "afd15d9c16098bf48204ab11039048a038baf5e80d5797e8362229ebf0a3e284",
+      "source_bytes": 67377,
+      "resolved_url": "https://www.bfdi.bund.de/EN/Home/home_node.html"
+    },
+    {
+      "id": "de-42",
+      "title": "BfDI information-freedom oversight guidance",
+      "source_type": "oversight_guidance",
+      "language": "de",
+      "url": "https://www.bfdi.bund.de/DE/Buerger/Informationsfreiheit/informationsfreiheit_node.html",
+      "publisher_identifier": {
+        "system": "www.bfdi.bund.de",
+        "record": "official page or document at this URL; stable publisher ID not separately captured"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official page identified; § 12 IFG and activity-report route confirm oversight/mediation role.",
+      "retrieval_status": "changed_review_candidate",
+      "retrieval_shape": "Official HTML guidance or service record",
+      "version_evidence": "Guidance and statutory scope can change.",
+      "note": "Potential federal IFG oversight route, distinct from court appeal and Land transparency rules.",
+      "topic_ids": [
+        "DATA-10"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "temp/germany/pending/de-42-a99cf57ba64f52f1.md",
+      "source_sha256": "a99cf57ba64f52f10ababb4b46d2a52816251a0bb190e63fa7ec6b5b189d5041",
+      "converted_sha256": "80d9cb4953b90c29be8efb166292e3974c87b75af3ac2454e2b7e76a0ffa203c",
+      "source_bytes": 152423,
+      "resolved_url": "https://www.bfdi.bund.de/DE/Buerger/Informationsfreiheit/informationsfreiheit_node.html"
+    },
+    {
+      "id": "de-43",
+      "title": "BfDI 2024 activity report: information-freedom oversight",
+      "source_type": "oversight_report",
+      "language": "en",
+      "url": "https://www.bfdi.bund.de/SharedDocs/Downloads/EN/Taetigkeitsberichte/33TB_24.pdf?__blob=publicationFile&v=2",
+      "publisher_identifier": {
+        "system": "www.bfdi.bund.de",
+        "record": "official page or document at this URL; stable publisher ID not separately captured"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official 2024 report result inspected; includes IFG complaints, mediation and AA submissions.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Official PDF; payload identity/hash and text extraction not verified",
+      "version_evidence": "Historical 2024 reporting period.",
+      "note": "Evidence of oversight structure, not current filing instructions.",
+      "topic_ids": [
+        "DATA-10"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_source_path": "temp/germany/pdf/de-43-0e5185627e8399cfd509b89bc22f6f2e0ed0ff3e2710f2e8166624ac85b66f30.pdf",
+      "source_sha256": "0e5185627e8399cfd509b89bc22f6f2e0ed0ff3e2710f2e8166624ac85b66f30",
+      "source_bytes": 1463452,
+      "resolved_url": "https://www.bfdi.bund.de/SharedDocs/Downloads/EN/Taetigkeitsberichte/33TB_24.pdf?__blob=publicationFile&v=2",
+      "candidate_text_path": "source-library/germany/candidates/de-43.md",
+      "converted_sha256": "3b2b210059933bb47670f6fcdb207e43a54e4523fe75714f75f859a73b1f3716"
+    },
+    {
+      "id": "de-44",
+      "title": "Justiz-Services: Prozesskostenhilfe",
+      "source_type": "legal_aid_guidance",
+      "language": "de",
+      "url": "https://www.service.justiz.de/prozesskostenhilfe",
+      "publisher_identifier": {
+        "system": "www.service.justiz.de",
+        "record": "official page or document at this URL; stable publisher ID not separately captured"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official national service inspected; explains eligibility, court assessment, application and financial disclosure.",
+      "retrieval_status": "changed_review_candidate",
+      "retrieval_shape": "Official HTML guidance or service record",
+      "version_evidence": "Service/form versions may change.",
+      "note": "Monitor public instructions only; never submit or retain sensitive financial data.",
+      "topic_ids": [
+        "REMEDY-09"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "temp/germany/pending/de-44-7d6c38af8d24f2af.md",
+      "source_sha256": "7d6c38af8d24f2af0fe8f02b433dc2fd03c6093391ae11e29d9d9ac33be27140",
+      "converted_sha256": "ac74f08d9fe4825c167de3aa99ff9b04ee321745fcf9799542a52dc8396c74d4",
+      "source_bytes": 79440,
+      "resolved_url": "https://www.service.justiz.de/prozesskostenhilfe"
+    },
+    {
+      "id": "de-45",
+      "title": "Justiz-Services: Beratungshilfe",
+      "source_type": "legal_aid_guidance",
+      "language": "de",
+      "url": "https://service.justiz.de/beratungshilfe/beratung",
+      "publisher_identifier": {
+        "system": "service.justiz.de",
+        "record": "official page or document at this URL; stable publisher ID not separately captured"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official service inspected; explains legal-advice aid route and eligibility.",
+      "retrieval_status": "changed_review_candidate",
+      "retrieval_shape": "Official HTML guidance or service record",
+      "version_evidence": "Potential state/court handling variation.",
+      "note": "Distinct from court-cost support; do not automate forms.",
+      "topic_ids": [
+        "REMEDY-09"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "temp/germany/pending/de-45-0a28fca5d93c3707.md",
+      "source_sha256": "0a28fca5d93c37075f435652c9b6aad55ffb73a23f6f01085b1d0de73e134c03",
+      "converted_sha256": "f4915fb14facdd2e90b81ace26be20ac659ae85baef4a915b01e0270b38010d2",
+      "source_bytes": 81197,
+      "resolved_url": "https://service.justiz.de/beratungshilfe/beratung"
+    },
+    {
+      "id": "de-46",
+      "title": "Federal Office of Justice: Central Authority for intercountry adoption",
+      "source_type": "official_authority_guidance",
+      "language": "en/de",
+      "url": "https://www.bundesjustizamt.de/EN/Topics/FamilyMattersInternational/Adoption/Adoption_node.html",
+      "publisher_identifier": {
+        "system": "www.bundesjustizamt.de",
+        "record": "official page or document at this URL; stable publisher ID not separately captured"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official BfJ result and English central-authority brochure inspected; BfJ coordinates, while Land agencies/accredited bodies handle individual work.",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_shape": "Official HTML guidance or service record",
+      "version_evidence": "Pages and state links can change.",
+      "note": "Adjacent family source class, not EU-family residence guidance.",
+      "topic_ids": [
+        "FAMILY-11"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_note": "HTTPError: HTTP Error 404: Not Found"
+    },
+    {
+      "id": "de-47",
+      "title": "Federal Office of Justice: international custody and competent courts",
+      "source_type": "official_authority_guidance",
+      "language": "de/en",
+      "url": "https://www.bundesjustizamt.de/EN/Topics/FamilyMattersInternational/Custody/Informationmaterial/Informationmaterial_node.html",
+      "publisher_identifier": {
+        "system": "www.bundesjustizamt.de",
+        "record": "official page or document at this URL; stable publisher ID not separately captured"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official BfJ page inspected; describes central-authority and competent-court routes.",
+      "retrieval_status": "changed_review_candidate",
+      "retrieval_shape": "Official HTML guidance or service record",
+      "version_evidence": "Page/court list can change.",
+      "note": "Related cross-border family procedure only, not a general status or migration source.",
+      "topic_ids": [
+        "FAMILY-18"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "temp/germany/pending/de-47-8bef1cc0303a9060.md",
+      "source_sha256": "8bef1cc0303a90606bfb24e5327c445a7eabfe5491b7d20be60283af1913db24",
+      "converted_sha256": "dc2f3fb0c685594d3ad52a1cbd870be640b10c1eda2faf27846a2da5a82c40a4",
+      "source_bytes": 69816,
+      "resolved_url": "https://www.bundesjustizamt.de/EN/Topics/FamilyMattersInternational/Custody/Informationmaterial/Informationmaterial_node.html"
+    }
+  ],
+  "converted_review_candidate_count": 26
+}

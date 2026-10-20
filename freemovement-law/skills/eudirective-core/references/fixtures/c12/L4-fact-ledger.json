@@ -1,0 +1,28 @@
+{
+  "case_sha256": "7949ed2dd2b57168f62140d456f64db0ca1153710e7ef9197aacaf7ed6bcef48",
+  "elements_sha256": "72970b164ac1a6dacda150fd0b7593e2eb0ae1eb6a95fccde8fc0b50a5c3e358",
+  "ledger_version": "0.1.0",
+  "records": [
+    {
+      "document_ref": "synthetic:refusal-receipt",
+      "fact_key": "fact:visa_refusal_exists",
+      "value": true
+    },
+    {
+      "document_ref": "synthetic:refusal-receipt",
+      "fact_key": "fact:decision_notice_date",
+      "value": "2026-09-04"
+    },
+    {
+      "document_ref": "synthetic:appeal-email",
+      "fact_key": "fact:appeal_submission_date",
+      "value": "2026-09-23"
+    },
+    {
+      "document_ref": "synthetic:appeal-email",
+      "fact_key": "fact:appeal_received_by_correct_authority",
+      "value": true
+    }
+  ],
+  "scope": "synthetic_fixture_only"
+}

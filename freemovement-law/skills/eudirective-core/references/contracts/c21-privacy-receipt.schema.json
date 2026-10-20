@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object", "additionalProperties": false,
+  "required": ["c21_version", "policy_sha256", "view_sha256", "profile", "verification", "external_disclosure_authorized", "private_data_enabled"],
+  "properties": {
+    "c21_version": {"const": "0.1.0"},
+    "policy_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "view_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "profile": {"enum": ["internal_review_preview", "public_story_preview", "feedback_aggregate_preview", "c17_feedback_preview"]},
+    "verification": {"const": "deterministic_only_not_anonymity_or_host_attestation"},
+    "external_disclosure_authorized": {"const": false},
+    "private_data_enabled": {"const": false}
+  }
+}

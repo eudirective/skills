@@ -1,0 +1,1435 @@
+{
+  "manifest_version": "0.2.0-candidate",
+  "pack": "spain-national-source-candidates",
+  "jurisdiction": "ES",
+  "inventory_research_date": "2026-10-18",
+  "scope": "Bounded first-pass discovery of official publication and reuse routes, EU/EEA and Swiss residence routes, the distinct Spanish-national family route, forms and filing, visas and consular practice, administrative remedies, public access, privacy, oversight, legal aid, civil-status evidence, and selected courts. This is not a complete inventory or a legal-equivalence opinion.",
+  "status": "partially_retrieved_review_candidates",
+  "retrieval_status": "30 candidate pages converted; 0 PDFs preserved without text extraction; 4 discovery surfaces had no stable body; failures are recorded per item; no source accepted",
+  "accepted_source_count": 0,
+  "candidate_source_count": 46,
+  "official_hosts": [
+    "aepd.es",
+    "boe.es",
+    "consejodetransparencia.es",
+    "defensordelpueblo.es",
+    "exteriores.gob.es",
+    "inclusion.gob.es",
+    "n-lex.europa.eu",
+    "policia.gob.es",
+    "poderjudicial.es",
+    "sede.administracionespublicas.gob.es",
+    "sede.policia.gob.es",
+    "tribunalconstitucional.es",
+    "eur-lex.europa.eu"
+  ],
+  "secondary_hosts": [],
+  "comparison_seed": {
+    "jurisdiction": "Denmark",
+    "source": "Danish EU free-movement residence regulation and official guidance",
+    "relationship_note": "Real Decreto 240/2007 is a close functional match for EU/EEA free-movement residence administration, but has distinct Spanish scope and implementing rules. Spain's Swiss route is based on the EU–Swiss Agreement and Spanish administrative application; EEA EFTA coverage is treaty-based. Families of Spanish nationals who have not exercised free movement have a distinct route under Real Decreto 1155/2024. Similarity labels do not establish legal equivalence."
+  },
+  "previous_findings_carried_forward": [
+    "Prior Danish, Swedish, Finnish, Austrian, Czech, Slovenian, Polish, Hungarian and other country findings are discovery leads only; verify each Spanish candidate at its first-party publisher.",
+    "Compare legislation, guidance, forms, consular practice, remedies, public access, privacy, oversight, legal aid, family-status evidence and case law separately.",
+    "Public API documentation, open-data law, stable identifiers and downloadable PDFs do not alone establish live access, complete version resolution, reuse permission for every content class, or deterministic conversion.",
+    "Preserve EU, EEA EFTA, Swiss, Spanish-national, UK Withdrawal Agreement and ordinary third-country routes as distinct where their legal bases or procedures differ.",
+    "A bounded central-government search does not establish coverage of autonomous-community law, offices, oversight institutions, or their multilingual publication channels."
+  ],
+  "search_coverage": [
+    {
+      "source_class": "National publication, legislation, versioning and reuse",
+      "search_outcome": "Official BOE search and API pages identify the consolidated-legislation API, daily issue API, stable BOE identifiers and ELI links. Candidate instruments include Real Decreto 240/2007, Real Decreto 1155/2024, Organic Law 4/2000, administrative-procedure and judicial-review laws, reuse/access laws, civil-registry law, privacy law and legal-aid law.",
+      "official_channels": [
+        "BOE",
+        "N-Lex",
+        "EUR-Lex"
+      ],
+      "query_terms": [
+        "BOE datos abiertos API legislación consolidada condiciones de reutilización",
+        "Real Decreto 240/2007 ciudadanos Unión Espacio Económico Europeo",
+        "Real Decreto 1155/2024 familiares personas nacionalidad española artículos 93 98",
+        "Orden PRE/1490/2012 artículo 7 Real Decreto 240/2007",
+        "Ley 39/2015 procedimiento administrativo",
+        "Ley 29/1998 jurisdicción contencioso administrativa"
+      ],
+      "languages": [
+        "es",
+        "en"
+      ],
+      "coverage_limit": "BOE documentation was inspected and its reuse terms were read. Direct API payloads could not be opened in the research client; no authenticated or unauthenticated live API call, raw capture, rate-limit check, or conversion replay was performed. Consolidated BOE texts are expressly informational rather than legally authoritative. The BOE legal notice applies general reuse terms to most BOE materials but excludes BOE Legal Digital Library works, which carry separate CC BY-NC-ND 4.0 terms unless a work says otherwise."
+    },
+    {
+      "source_class": "EU/EEA EFTA/Swiss residence, Spanish-national family, official guidance and forms",
+      "search_outcome": "The Ministry of Inclusion's EU-citizen hub expressly groups EU, EEA EFTA and Swiss users for guidance, while national laws and the EU–Swiss Agreement retain separate legal routes. Official pages identify EX-18, EX-19 and EX-24 and distinguish non-mobile Spanish-national family cases under the 2025 regime.",
+      "official_channels": [
+        "Ministry of Inclusion, Social Security and Migration",
+        "National Police",
+        "BOE",
+        "EU–Swiss Agreement"
+      ],
+      "query_terms": [
+        "site:inclusion.gob.es ciudadanos Unión Europea Islandia Liechtenstein Noruega Suiza hoja 62 63 65",
+        "site:inclusion.gob.es modelo EX18 EX19 EX24 migraciones",
+        "site:inclusion.gob.es instrucciones SEM 2 2025 familiares españoles",
+        "site:sede.policia.gob.es certificado registro ciudadano Unión 790 012"
+      ],
+      "languages": [
+        "es",
+        "en"
+      ],
+      "coverage_limit": "The central Ministry pages and forms were inspected, but no regional-language variants, live office workflow, or form-version history was audited. Hoja 62 and Hoja 63 expose May 2025 dates in some current views; the newer Hoja 63 PDF exposes February 2026, so parent rediscovery and attachment identity checks are required. Ministry guidance is expressly orientative and directs users to rules in force at application time."
+    },
+    {
+      "source_class": "Visas, mission routing, civil-status evidence and document authentication",
+      "search_outcome": "Official consular pages identify an EU/EEA/Swiss family-member visa route and country-specific filing instructions; the Ministry of Foreign Affairs provides central legalisation guidance. The legalisation and mission pages reveal country-dependent routes and mutable attachments.",
+      "official_channels": [
+        "Ministry of Foreign Affairs, European Union and Cooperation",
+        "Spanish consulates",
+        "BOE"
+      ],
+      "query_terms": [
+        "site:exteriores.gob.es visados familiar ciudadano Unión EEE Suiza España",
+        "site:exteriores.gob.es procedimiento solicitudes visado oficina consular España",
+        "site:exteriores.gob.es legalización apostilla documentos extranjeros traducción jurada"
+      ],
+      "languages": [
+        "es",
+        "en"
+      ],
+      "coverage_limit": "Only a small sample of consular pages was inspected. A Spanish consular result returned 403 to the research client despite search-result content; this is not evidence of publisher downtime. Country-specific missions, representation arrangements, appointment providers, fees, checklists, and local-language documents were not exhaustively inventoried."
+    },
+    {
+      "source_class": "Administrative remedies, public access, privacy, oversight, legal aid and case law",
+      "search_outcome": "Official BOE laws and first-party AEPD, CTBG, Defensor del Pueblo, CGPJ/CENDOJ and Constitutional Court sources identify procedural, complaint, legal-aid and case-law routes.",
+      "official_channels": [
+        "BOE",
+        "AEPD",
+        "Consejo de Transparencia y Buen Gobierno",
+        "Defensor del Pueblo",
+        "CGPJ/CENDOJ",
+        "Tribunal Constitucional"
+      ],
+      "query_terms": [
+        "site:aepd.es reclamación derechos protección datos",
+        "site:consejodetransparencia.es cómo reclamar acceso información",
+        "site:defensordelpueblo.es extranjeros quejas extranjería",
+        "site:poderjudicial.es search sentencias CENDOJ extranjería",
+        "site:tribunalconstitucional.es buscador sentencias"
+      ],
+      "languages": [
+        "es"
+      ],
+      "coverage_limit": "No representative queries or pagination were replayed in CENDOJ or the Constitutional Court search. CENDOJ's legal notice limits user consultation and prohibits bulk downloads; reuse for databases or commercial purposes requires the CGPJ/CENDOJ process and terms. Autonomous-community data-protection, transparency, ombuds and court routes remain outside this central first pass."
+    }
+  ],
+  "sources": [
+    {
+      "id": "es-01",
+      "title": "N-Lex Spanish national-law discovery route",
+      "source_type": "national_law_discovery",
+      "language": "en",
+      "url": "https://n-lex.europa.eu/n-lex/",
+      "publisher_identifier": {
+        "system": "N-Lex",
+        "record": "Spain national-law portal discovery route"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official EU discovery portal identified; each record must be verified at the Spanish publisher.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Discovery portal",
+      "version_evidence": "No Spanish law record or full source-class coverage established through this portal in this review.",
+      "note": "Discovery lead only; not itself the Spanish publisher or a monitor target.",
+      "topic_ids": [
+        "legislation",
+        "discovery"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/spain/monitor-candidates/es-01.md",
+      "source_sha256": "9321727bfa335d50867d04fb1b7eb895ff7b9a65ea1576ad831f4535eb30c6d8",
+      "converted_sha256": "fd57d8a089d8503894150eb775dc0aa00e71597e44a00cf11d2dded9c9a56c68",
+      "source_bytes": 6831,
+      "resolved_url": "https://n-lex.europa.eu/n-lex/"
+    },
+    {
+      "id": "es-02",
+      "title": "BOE open-data API",
+      "source_type": "official_legislation_api_documentation",
+      "language": "es",
+      "url": "https://www.boe.es/datosabiertos/api/api.php?lang=es",
+      "publisher_identifier": {
+        "system": "AEBOE Open Data API",
+        "record": "Consolidated legislation and BOE/BORME issue-summary API"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official documentation inspected; direct live API response was inaccessible through the research client.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Documented REST GET API; XML/JSON and XSD references exposed",
+      "version_evidence": "Consolidated-law search accepts update-date ranges, query, offset and limit; API documentation describes ID and text/version routes.",
+      "note": "The public documentation page shows no registration workflow, but no live unauthenticated request was confirmed. Reuse conditions apply.",
+      "topic_ids": [
+        "legislation",
+        "api",
+        "versioning",
+        "reuse"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/spain/monitor-candidates/es-02.md",
+      "source_sha256": "3e2e21d772c5b753c48dfa4a8bf9e480cbebce640c15686fed06199ca009f74e",
+      "converted_sha256": "9e76538dd4c118bb257c612aca833d4163bd64a61585050a21f78379d1ac73e2",
+      "source_bytes": 98669,
+      "resolved_url": "https://www.boe.es/datosabiertos/api/api.php?lang=es"
+    },
+    {
+      "id": "es-03",
+      "title": "BOE consolidated-legislation API FAQ",
+      "source_type": "official_api_version_documentation",
+      "language": "es",
+      "url": "https://www.boe.es/datosabiertos/faq/consolidada.php",
+      "publisher_identifier": {
+        "system": "AEBOE",
+        "record": "Consolidated legislation API FAQ"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official page inspected.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "HTML documentation",
+      "version_evidence": "Describes versioned blocks and amendment publication dates; says metadata update date can change without new text version; consolidation is informational, not legally authoritative.",
+      "note": "Useful for designing version checks but does not prove current API response behavior or conversion.",
+      "topic_ids": [
+        "api",
+        "versioning",
+        "reuse"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/spain/monitor-candidates/es-03.md",
+      "source_sha256": "24d3e2f0a4b0a8115bf227251e3f0ec82628d2d8b4edaca18ce5ea72165f5453",
+      "converted_sha256": "a23e815fe5976da87e473f284012e282e459b7c31c9ed8675e6f13cc8b7a5230",
+      "source_bytes": 22990,
+      "resolved_url": "https://www.boe.es/datosabiertos/faq/consolidada.php"
+    },
+    {
+      "id": "es-04",
+      "title": "BOE daily issue API FAQ",
+      "source_type": "official_gazette_api_documentation",
+      "language": "es",
+      "url": "https://www.boe.es/datosabiertos/faq/boe.php",
+      "publisher_identifier": {
+        "system": "AEBOE",
+        "record": "Daily BOE issue-summary API FAQ"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official page inspected.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "HTML API documentation; daily summary links to PDF/XML/HTML documents",
+      "version_evidence": "Official issue summaries available since September 1960; each document has published representations.",
+      "note": "Original publication/changes route is distinct from consolidated text.",
+      "topic_ids": [
+        "gazette",
+        "api",
+        "amendments"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/spain/monitor-candidates/es-04.md",
+      "source_sha256": "65a2c87b4675ae647f547aff3cd39424e9f0960c58057eabdbf2856470e3565e",
+      "converted_sha256": "299031b9c0d93709cbc89420a6e01df173f08db291856e653bd0ade9f712235d",
+      "source_bytes": 19796,
+      "resolved_url": "https://www.boe.es/datosabiertos/faq/boe.php"
+    },
+    {
+      "id": "es-05",
+      "title": "BOE legal notice and reuse conditions",
+      "source_type": "publisher_reuse_terms",
+      "language": "es",
+      "url": "https://www.boe.es/informacion/aviso_legal/index.php",
+      "publisher_identifier": {
+        "system": "AEBOE",
+        "record": "Reuse terms approved 27 June 2024"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official terms inspected.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "HTML legal notice",
+      "version_evidence": "Terms prohibit distortion, require source attribution and last-update date when present, require clear identification of adaptations, and require consolidated text to be labelled informational.",
+      "note": "The BOE Legal Digital Library is excluded from the general terms and uses CC BY-NC-ND 4.0 unless otherwise stated; do not apply the general BOE license to every BOE-hosted work.",
+      "topic_ids": [
+        "reuse",
+        "license",
+        "legal_notice"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/spain/monitor-candidates/es-05.md",
+      "source_sha256": "744fcb66dc62e4d438e4b406d3e2efd829f74b855f8a685d1f6bf90e31429989",
+      "converted_sha256": "9d6b4f85c8c04ba5ff2d2916f0b9694847b7af84e321254cc9e0994772c6e4aa",
+      "source_bytes": 36293,
+      "resolved_url": "https://www.boe.es/informacion/aviso_legal/index.php"
+    },
+    {
+      "id": "es-06",
+      "title": "Real Decreto 240/2007 (BOE-A-2007-4184)",
+      "source_type": "eu_eea_free_movement_regulation",
+      "language": "es",
+      "url": "https://www.boe.es/eli/es/rd/2007/02/16/240/con",
+      "publisher_identifier": {
+        "system": "BOE",
+        "record": "BOE-A-2007-4184"
+      },
+      "functional_relationship": "close_functional_match",
+      "verification_status": "Official consolidated BOE page inspected; BOE API response not inspected.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Versioned HTML, PDF and ePUB; ELI",
+      "version_evidence": "BOE page reports last update 09/11/2015 and links amendments back to 2007; current consolidation is informational.",
+      "note": "Implements EU/EEA free movement and expressly references the EU–Swiss Agreement in its preamble; verify current treaty and national scope separately. Do not confuse update metadata with text-version dates.",
+      "topic_ids": [
+        "eu_residence",
+        "eea",
+        "switzerland",
+        "legislation",
+        "seed_match"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "document_path": "../candidates/boe-a-2007-4184-consolidated.md",
+      "candidate_text_path": "source-library/spain/monitor-candidates/es-06.md",
+      "source_sha256": "0cf579cbf0af06aba00d9546cbffbfc27fc0579ecbf1bf422a400c342b80a578",
+      "converted_sha256": "dfa1069779400d78ff0983a1d4ebf044571dfb763c1cf1caaa8935bc7e554772",
+      "source_bytes": 157721,
+      "resolved_url": "https://www.boe.es/eli/es/rd/2007/02/16/240/con"
+    },
+    {
+      "id": "es-07",
+      "title": "Real Decreto 1155/2024 (BOE-A-2024-24099)",
+      "source_type": "immigration_regulation",
+      "language": "es",
+      "url": "https://www.boe.es/eli/es/rd/2024/11/19/1155/con",
+      "publisher_identifier": {
+        "system": "BOE",
+        "record": "BOE-A-2024-24099"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official consolidated BOE page and PDF identified; article and version content inspected in official search results.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Versioned HTML, PDF and ELI",
+      "version_evidence": "Entered into force 20/05/2025; BOE page exposes a consolidated text and amendment/version links.",
+      "note": "Articles 93–98 establish a distinct Spanish-national-family residence regime; the regulation states general rules apply supplementarily or where more favorable to persons under RD 240/2007. Keep lanes separate.",
+      "topic_ids": [
+        "family_of_spanish",
+        "immigration",
+        "legislation",
+        "versioning"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "document_path": "../candidates/boe-a-2024-24099-consolidated.md",
+      "candidate_text_path": "source-library/spain/monitor-candidates/es-07.md",
+      "source_sha256": "566e5624b71356851c832788178367c00dfc11c473354d729e2e5870c1d5e83d",
+      "converted_sha256": "b5b5ce26fd78aac2f75cfa3afd3c41f5bdb6c28a19a1e99a9f84f69605eb74b2",
+      "source_bytes": 917450,
+      "resolved_url": "https://www.boe.es/eli/es/rd/2024/11/19/1155/con"
+    },
+    {
+      "id": "es-08",
+      "title": "Ley Orgánica 4/2000 (BOE-A-2000-544)",
+      "source_type": "immigration_statute",
+      "language": "es",
+      "url": "https://www.boe.es/eli/es/lo/2000/01/11/4/con",
+      "publisher_identifier": {
+        "system": "BOE",
+        "record": "BOE-A-2000-544"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official consolidated BOE record inspected.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Versioned HTML, PDF and ELI",
+      "version_evidence": "BOE page reports last update 19/03/2025; consolidated text is informational.",
+      "note": "General immigration framework; current application must be read with RD 1155/2024, RD 240/2007 and applicable treaty law.",
+      "topic_ids": [
+        "immigration",
+        "legislation",
+        "versioning"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "document_path": "../candidates/boe-a-2000-544-consolidated.md",
+      "candidate_text_path": "source-library/spain/monitor-candidates/es-08.md",
+      "source_sha256": "95e42b5915a4df08f40d5a926a6833ef42736b0cb5fb45c1c85783e4667c093e",
+      "converted_sha256": "5ce588db5cf3794b06fbe14fb4763837001c63d8f8bb02a44eb0d086caa98e66",
+      "source_bytes": 462309,
+      "resolved_url": "https://www.boe.es/eli/es/lo/2000/01/11/4/con"
+    },
+    {
+      "id": "es-09",
+      "title": "Orden PRE/1490/2012 (BOE-A-2012-9218)",
+      "source_type": "eu_free_movement_implementing_order",
+      "language": "es",
+      "url": "https://www.boe.es/eli/es/o/2012/07/09/pre1490",
+      "publisher_identifier": {
+        "system": "BOE",
+        "record": "BOE-A-2012-9218"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official BOE ELI listing and consolidated PDF identified.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "ELI/HTML/PDF",
+      "version_evidence": "Order states it implements Article 7 of RD 240/2007; current amendment history was not independently resolved.",
+      "note": "Relevant to residence conditions; verify current status and relationship to later regulations before use.",
+      "topic_ids": [
+        "eu_residence",
+        "legislation",
+        "conditions"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "document_path": "../candidates/boe-a-2012-9218-consolidated.md",
+      "candidate_text_path": "source-library/spain/monitor-candidates/es-09.md",
+      "source_sha256": "a7e22079f3efea61cdf2ecf77a0febb47ea6358f05253865d516fa938bae5571",
+      "converted_sha256": "fb1ce4dfa856bb74d793374ca0bd22edb2552f5ce38ada4203f02241783d15cc",
+      "source_bytes": 46635,
+      "resolved_url": "https://www.boe.es/eli/es/o/2012/07/09/pre1490"
+    },
+    {
+      "id": "es-10",
+      "title": "EU–Switzerland Agreement on the free movement of persons",
+      "source_type": "international_agreement",
+      "language": "en",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22002A0430(01)",
+      "publisher_identifier": {
+        "system": "EUR-Lex",
+        "record": "CELEX 22002A0430(01)"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official EU record identified; interaction with Spanish administrative pages is evidenced by RD 240/2007 preamble and current Ministry/Police guidance.",
+      "retrieval_status": "discovery_surface_no_text",
+      "retrieval_shape": "EUR-Lex HTML/PDF",
+      "version_evidence": "Agreement entered into force 01/06/2002; later protocols and annex updates require separate currentness checks.",
+      "note": "Keep the bilateral Swiss route separate from EU membership and EEA EFTA coverage.",
+      "topic_ids": [
+        "switzerland",
+        "treaty",
+        "residence"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "048ac969ec6dc6bc078c215a97284d31eec37d9b624742533a116beb9c15dda9",
+      "source_bytes": 2036,
+      "resolved_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:22002A0430(01)",
+      "retrieval_note": "Public HTML response contained no sufficiently long extractable source body."
+    },
+    {
+      "id": "es-11",
+      "title": "Ley 39/2015, Common Administrative Procedure (BOE-A-2015-10565)",
+      "source_type": "administrative_procedure_statute",
+      "language": "es",
+      "url": "https://www.boe.es/eli/es/l/2015/10/01/39/con",
+      "publisher_identifier": {
+        "system": "BOE",
+        "record": "BOE-A-2015-10565"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official consolidated BOE record inspected.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Versioned HTML, PDF and ELI",
+      "version_evidence": "BOE page reports last update 06/11/2024.",
+      "note": "General administrative procedure and administrative-review source; regional procedural rules and special immigration rules may also matter.",
+      "topic_ids": [
+        "procedure",
+        "administrative_remedies",
+        "legislation"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "document_path": "../candidates/boe-a-2015-10565-consolidated.md",
+      "candidate_text_path": "source-library/spain/monitor-candidates/es-11.md",
+      "source_sha256": "81d8ff6ca2488d4bcc0890dc0defce7b8cb6019fbe0080520b1713750ddf7c8b",
+      "converted_sha256": "f5cfc824cd9ac6dd41fddfeb7728185305cf6bf5c8cc67f9227c7a20cada4771",
+      "source_bytes": 492007,
+      "resolved_url": "https://www.boe.es/eli/es/l/2015/10/01/39/con"
+    },
+    {
+      "id": "es-12",
+      "title": "Ley 29/1998, Administrative Jurisdiction (BOE-A-1998-16718)",
+      "source_type": "judicial_review_statute",
+      "language": "es",
+      "url": "https://www.boe.es/eli/es/l/1998/07/13/29/con",
+      "publisher_identifier": {
+        "system": "BOE",
+        "record": "BOE-A-1998-16718"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official consolidated BOE record inspected.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Versioned HTML, PDF and ELI",
+      "version_evidence": "BOE page reports last update 03/01/2025.",
+      "note": "Sets the general framework for contentious-administrative review; no case-specific legal conclusion is recorded.",
+      "topic_ids": [
+        "procedure",
+        "judicial_review",
+        "legislation"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "document_path": "../candidates/boe-a-1998-16718-consolidated.md",
+      "candidate_text_path": "source-library/spain/monitor-candidates/es-12.md",
+      "source_sha256": "505b25687b824cb2713591910fc1df103c832acffd8f2680ae7a0e64181d5567",
+      "converted_sha256": "ba1ede0a9726425475860b7cad53978d20ec80b583861b062ab067f1f09aaacc",
+      "source_bytes": 617725,
+      "resolved_url": "https://www.boe.es/eli/es/l/1998/07/13/29/con"
+    },
+    {
+      "id": "es-13",
+      "title": "Ley 37/2007, public-sector information reuse (BOE-A-2007-19814)",
+      "source_type": "reuse_statute",
+      "language": "es",
+      "url": "https://www.boe.es/eli/es/l/2007/11/16/37/con",
+      "publisher_identifier": {
+        "system": "BOE",
+        "record": "BOE-A-2007-19814"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official consolidated BOE record inspected.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Versioned HTML, PDF and ELI",
+      "version_evidence": "BOE page reports last update 09/05/2023; Article 8 lists possible reuse conditions.",
+      "note": "BOE's exact current reuse license remains the source-specific operative terms; this statute does not automatically license every Spanish publisher's content.",
+      "topic_ids": [
+        "reuse",
+        "legislation"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "document_path": "../candidates/boe-a-2007-19814-consolidated.md",
+      "candidate_text_path": "source-library/spain/monitor-candidates/es-13.md",
+      "source_sha256": "1513b2e483c363b102f7ddd0ca4ed7fdc6047e6da16c653ecbe6d5b7b61e12f9",
+      "converted_sha256": "cac5f4c6aab78a2862fe13c190a689b1c2badc32e71d60f94a3ac75e3fedc1dd",
+      "source_bytes": 141788,
+      "resolved_url": "https://www.boe.es/eli/es/l/2007/11/16/37/con"
+    },
+    {
+      "id": "es-14",
+      "title": "Ley 19/2013, transparency and access to public information (BOE-A-2013-12887)",
+      "source_type": "public_access_statute",
+      "language": "es",
+      "url": "https://www.boe.es/eli/es/l/2013/12/09/19/con",
+      "publisher_identifier": {
+        "system": "BOE",
+        "record": "BOE-A-2013-12887"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official consolidated BOE record inspected.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Versioned HTML, PDF and ELI",
+      "version_evidence": "BOE page reports last update 09/07/2022.",
+      "note": "General access route is distinct from source reuse permission and regional transparency bodies.",
+      "topic_ids": [
+        "public_access",
+        "legislation"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "document_path": "../candidates/boe-a-2013-12887-consolidated.md",
+      "candidate_text_path": "source-library/spain/monitor-candidates/es-14.md",
+      "source_sha256": "7ae1dc5e039a1e6e1c6e82284f5dab0a0800b11ba6a351e61f6989099f991f17",
+      "converted_sha256": "9fe4ec9a9f0ca5c7bed1f7caa2fc524719cc920cb45e05260c0c2816f9d27ff6",
+      "source_bytes": 194221,
+      "resolved_url": "https://www.boe.es/eli/es/l/2013/12/09/19/con"
+    },
+    {
+      "id": "es-15",
+      "title": "Ley 20/2011, Civil Registry (BOE-A-2011-12628)",
+      "source_type": "civil_status_statute",
+      "language": "es",
+      "url": "https://www.boe.es/eli/es/l/2011/07/21/20/con",
+      "publisher_identifier": {
+        "system": "BOE",
+        "record": "BOE-A-2011-12628"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official consolidated BOE record inspected.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Versioned HTML, PDF and ELI",
+      "version_evidence": "Main commencement date 30/04/2021; BOE page exposes version links.",
+      "note": "Civil-status framework candidate; registry services and documentary evidence guidance require separate first-party discovery.",
+      "topic_ids": [
+        "civil_status",
+        "family_evidence",
+        "legislation"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "document_path": "../candidates/boe-a-2011-12628-consolidated.md",
+      "candidate_text_path": "source-library/spain/monitor-candidates/es-15.md",
+      "source_sha256": "809417cf2c0dffb1872c4a1b0c3871cc0a42a10801d62812c035416c865f875b",
+      "converted_sha256": "2f87c776109cb9f4bda0f2e85fdb87e7d52c3fd8e5222493fc9604ae5d029cbc",
+      "source_bytes": 335451,
+      "resolved_url": "https://www.boe.es/eli/es/l/2011/07/21/20/con"
+    },
+    {
+      "id": "es-16",
+      "title": "Ley Orgánica 3/2018, personal-data protection (BOE-A-2018-16673)",
+      "source_type": "data_protection_statute",
+      "language": "es",
+      "url": "https://www.boe.es/eli/es/lo/2018/12/05/3/con",
+      "publisher_identifier": {
+        "system": "BOE",
+        "record": "BOE-A-2018-16673"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official consolidated BOE record inspected.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Versioned HTML, PDF and ELI",
+      "version_evidence": "Consolidated BOE record is available; exact current version history must be checked at refresh.",
+      "note": "Read with GDPR and competent national or autonomous-community supervisory authority rules.",
+      "topic_ids": [
+        "privacy",
+        "legislation",
+        "oversight"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "document_path": "../candidates/boe-a-2018-16673-consolidated.md",
+      "candidate_text_path": "source-library/spain/monitor-candidates/es-16.md",
+      "source_sha256": "8cc695e88e8d5aebcda492c56da0d43650d0e1734118dc4dcf9e3bc80097c07d",
+      "converted_sha256": "770a3d4ecbcfc56bf05fb17608db2acfb2cb7ae651a11ad03bb82266a5b6b58c",
+      "source_bytes": 401766,
+      "resolved_url": "https://www.boe.es/eli/es/lo/2018/12/05/3/con"
+    },
+    {
+      "id": "es-17",
+      "title": "Ley 1/1996, free legal aid (BOE-A-1996-750)",
+      "source_type": "legal_aid_statute",
+      "language": "es",
+      "url": "https://www.boe.es/eli/es/l/1996/01/10/1/con",
+      "publisher_identifier": {
+        "system": "BOE",
+        "record": "BOE-A-1996-750"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official consolidated BOE record inspected.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Versioned HTML, PDF and ELI",
+      "version_evidence": "BOE page reports last update 03/01/2025, including a November 2024 amendment.",
+      "note": "Statute covers Spanish, EU nationals and foreigners in Spain under stated conditions; do not infer immigration-specific eligibility without applicable provisions and regional administration.",
+      "topic_ids": [
+        "legal_aid",
+        "legislation"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "document_path": "../candidates/boe-a-1996-750-consolidated.md",
+      "candidate_text_path": "source-library/spain/monitor-candidates/es-17.md",
+      "source_sha256": "3ae17178f33245c19c9a573108e15ece270989d3443b7bf0f4ed4007d0e8b515",
+      "converted_sha256": "4733095739dbd505aafb1a458f013f8986911d79e9f0e08d0df853be54f41ef8",
+      "source_bytes": 336882,
+      "resolved_url": "https://www.boe.es/eli/es/l/1996/01/10/1/con"
+    },
+    {
+      "id": "es-18",
+      "title": "Real Decreto 141/2021, free legal aid regulation (BOE-A-2021-3698)",
+      "source_type": "legal_aid_regulation",
+      "language": "es",
+      "url": "https://www.boe.es/eli/es/rd/2021/03/09/141/con",
+      "publisher_identifier": {
+        "system": "BOE",
+        "record": "BOE-A-2021-3698"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official BOE consolidated record found in current search results.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Versioned HTML/PDF/ELI",
+      "version_evidence": "BOE search result displayed an update dated 15/10/2026; exact version needs confirmation in the record.",
+      "note": "Competence and administration differ across autonomous communities; retain regional legal-aid routes as a gap.",
+      "topic_ids": [
+        "legal_aid",
+        "procedure",
+        "legislation"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "document_path": "../candidates/boe-a-2021-3698-consolidated.md",
+      "candidate_text_path": "source-library/spain/monitor-candidates/es-18.md",
+      "source_sha256": "d933fbdfbb1199967206aedd730de25d63089ae93a0e45cb7dec6acd528a9b07",
+      "converted_sha256": "b9d00df456445bb9cae99f4b5abf41b7d6b376af6a6c5f0335f94f9a47447fc2",
+      "source_bytes": 203358,
+      "resolved_url": "https://www.boe.es/eli/es/rd/2021/03/09/141/con"
+    },
+    {
+      "id": "es-19",
+      "title": "Ley Orgánica 3/1981, Defensor del Pueblo",
+      "source_type": "ombudsman_statute",
+      "language": "es",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1981-10325",
+      "publisher_identifier": {
+        "system": "BOE",
+        "record": "BOE-A-1981-10325"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official source identifier is a candidate; direct record was not opened in this review.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Expected BOE consolidated HTML/PDF; not checked",
+      "version_evidence": "Not independently assessed.",
+      "note": "National Ombudsman cannot stand in for autonomous-community ombuds institutions.",
+      "topic_ids": [
+        "oversight",
+        "ombudsman",
+        "legislation"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "document_path": "../candidates/boe-a-1981-10325-consolidated.md",
+      "candidate_text_path": "source-library/spain/monitor-candidates/es-19.md",
+      "source_sha256": "0fa5c373fa288ea69133af744735f573eb256baa67b0e8682b7525d6785e77b1",
+      "converted_sha256": "ae7790fb5e141fe275c912c2ccc978156b702a3111759aad00645f79429ef379",
+      "source_bytes": 100605,
+      "resolved_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1981-10325"
+    },
+    {
+      "id": "es-20",
+      "title": "Ministry of Inclusion EU/EEA/Swiss citizen hub",
+      "source_type": "official_migration_guidance_index",
+      "language": "es",
+      "url": "https://www.inclusion.gob.es/es/web/migraciones/ciudadanos-de-la-union-europea",
+      "publisher_identifier": {
+        "system": "Ministry of Inclusion",
+        "record": "Ciudadanos de la Unión Europea hub"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official Ministry page inspected via official indexed route; preserve its live parent path during implementation.",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_shape": "HTML parent page with linked guidance sheets",
+      "version_evidence": "Hub describes EU, EEA EFTA and Swiss coverage and links Sheets 62, 63 and 65.",
+      "note": "Guidance grouping does not collapse the EU, EEA EFTA and EU–Swiss legal bases.",
+      "topic_ids": [
+        "eu_residence",
+        "eea",
+        "switzerland",
+        "guidance",
+        "parent_index"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "es-21",
+      "title": "Hoja 62, residence card for family member of EU citizen",
+      "source_type": "eu_family_residence_guidance",
+      "language": "es",
+      "url": "https://www.inclusion.gob.es/es/web/migraciones/w/62.-tarjeta-de-residencia-de-familiar-de-ciudadano-de-la-union-europea",
+      "publisher_identifier": {
+        "system": "Ministry of Inclusion",
+        "record": "Information sheet 62"
+      },
+      "functional_relationship": "close_functional_match",
+      "verification_status": "Official Ministry content inspected.",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_shape": "HTML page and linked PDF",
+      "version_evidence": "Current page and linked PDF report May 2025; content says orientative and directs to rules in force at application time.",
+      "note": "Covers family of EU/EEA/Swiss citizens and distinguishes Spanish nationals who exercised free movement; page's age should be checked against current regulations and newer 2026 materials.",
+      "topic_ids": [
+        "eu_family",
+        "eea",
+        "switzerland",
+        "guidance",
+        "versioning"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "es-22",
+      "title": "Hoja 63, permanent EU-family residence card",
+      "source_type": "permanent_residence_guidance",
+      "language": "es",
+      "url": "https://www.inclusion.gob.es/es/web/migraciones/w/63.-tarjeta-de-residencia-permanente-de-familiar-de-ciudadano-de-la-union-europea",
+      "publisher_identifier": {
+        "system": "Ministry of Inclusion",
+        "record": "Information sheet 63"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official Ministry content and linked PDF inspected via official search results.",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_shape": "HTML page and PDF attachment",
+      "version_evidence": "Some HTML views report May 2025, while current linked PDF reports February 2026; file and parent-page version mismatch needs resolution.",
+      "note": "A strong mutable-attachment example: discover the latest PDF from the parent page and validate title/date before use.",
+      "topic_ids": [
+        "permanent_residence",
+        "eu_family",
+        "versioning",
+        "guidance"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "es-23",
+      "title": "Hoja 65, EU citizen registration certificate",
+      "source_type": "eu_citizen_registration_guidance",
+      "language": "es",
+      "url": "https://www.inclusion.gob.es/es/web/migraciones/w/65.-certificado-de-registro-de-ciudadano-de-la-union-europea",
+      "publisher_identifier": {
+        "system": "Ministry of Inclusion",
+        "record": "Information sheet 65"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official indexed page inspected; page forwards to the National Police procedure.",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_shape": "HTML/PDF with link to National Police service",
+      "version_evidence": "The official page result reports May 2025 update.",
+      "note": "The Police page is the operational authority for this procedure; do not monitor the Ministry sheet alone.",
+      "topic_ids": [
+        "eu_registration",
+        "guidance",
+        "parent_link"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "es-24",
+      "title": "Ministry of Inclusion general forms index",
+      "source_type": "official_form_index",
+      "language": "es",
+      "url": "https://www.inclusion.gob.es/es/web/migraciones/modelos-generales",
+      "publisher_identifier": {
+        "system": "Ministry of Inclusion",
+        "record": "Modelos generales"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official index inspected; form IDs and editable/PDF variants visible.",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_shape": "HTML index with separate PDF/Word attachments",
+      "version_evidence": "Index currently lists EX18, EX19 and EX24 and notes editable PDFs may not work in every browser.",
+      "note": "Use parent-page membership plus form code, title, language, file revision and attachment content for rediscovery; attachment URLs are mutable.",
+      "topic_ids": [
+        "forms",
+        "parent_index",
+        "versioning"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "es-25",
+      "title": "Form EX-18, EU citizen registration",
+      "source_type": "immigration_application_form",
+      "language": "es",
+      "url": "https://inclusion.gob.es/documents/d/migraciones/ex18-formulario-inscripcion-en-el-rce-residencia-ciudadano-de-la-ue-1.pdf",
+      "publisher_identifier": {
+        "system": "Ministry of Inclusion",
+        "record": "EX-18"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official PDF opened; content extraction was not needed for identity beyond the form title/code.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "PDF attachment linked from Ministry forms index",
+      "version_evidence": "No stable revision history was exposed in the index.",
+      "note": "A direct attachment URL alone may change; rediscover from the live form index and validate EX18 identity and date/revision.",
+      "topic_ids": [
+        "forms",
+        "eu_registration"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_source_path": "temp/spain/pdf/es-25-c4825d1f1289039fb1f6fbdc7ec67d81066aaba758bb3274ce12e94b714776fb.pdf",
+      "source_sha256": "c4825d1f1289039fb1f6fbdc7ec67d81066aaba758bb3274ce12e94b714776fb",
+      "source_bytes": 616900,
+      "resolved_url": "https://inclusion.gob.es/documents/d/migraciones/ex18-formulario-inscripcion-en-el-rce-residencia-ciudadano-de-la-ue-1.pdf",
+      "candidate_text_path": "source-library/spain/monitor-candidates/es-25.md",
+      "converted_sha256": "109d5b6c49d09d7497b92a130d9ab4b05ed58deb0a1b9c433730180a946bab58"
+    },
+    {
+      "id": "es-26",
+      "title": "Form EX-19, EU-family residence card",
+      "source_type": "immigration_application_form",
+      "language": "es",
+      "url": "https://inclusion.gob.es/documents/d/migraciones/ex19-formulario-tarjeta-de-residencia-de-familiar-de-ciudadano-de-la-ue.pdf",
+      "publisher_identifier": {
+        "system": "Ministry of Inclusion",
+        "record": "EX-19"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official PDF opened; form title and code identified.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "PDF attachment linked from Ministry forms index",
+      "version_evidence": "No stable revision history was exposed in the index.",
+      "note": "Keep EX19 distinct from EX24; rediscover through the Ministry's forms index and validate document identity.",
+      "topic_ids": [
+        "forms",
+        "eu_family"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_source_path": "temp/spain/pdf/es-26-233fe7d753723a65ef2ee1d3eceb98f2bdb81e5dd86be8e81c061f157ceebae7.pdf",
+      "source_sha256": "233fe7d753723a65ef2ee1d3eceb98f2bdb81e5dd86be8e81c061f157ceebae7",
+      "source_bytes": 146103,
+      "resolved_url": "https://inclusion.gob.es/documents/d/migraciones/ex19-formulario-tarjeta-de-residencia-de-familiar-de-ciudadano-de-la-ue.pdf",
+      "candidate_text_path": "source-library/spain/monitor-candidates/es-26.md",
+      "converted_sha256": "e0c18a665851cb352a70b52bca89e90e5ae70d1c2ef3a5a3a01811cc95876c21"
+    },
+    {
+      "id": "es-27",
+      "title": "Form EX-24, Spanish-national-family residence",
+      "source_type": "immigration_application_form",
+      "language": "es",
+      "url": "https://inclusion.gob.es/documents/d/migraciones/ex24-formulario-autorizacion-de-residencia-temporal-de-familiares-de-personas-con-nacionalidad-espanola-editable-1.pdf",
+      "publisher_identifier": {
+        "system": "Ministry of Inclusion",
+        "record": "EX-24"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official PDF opened; form title, national-family scope and reference to LO 4/2000/RD 1155/2024 identified.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "PDF/Word attachment linked from Ministry forms index",
+      "version_evidence": "Editable and non-editable variants exist; exact revision dates need parent-page reconciliation.",
+      "note": "Not the EU-family form. This is a distinct route for specified family of Spanish nationals.",
+      "topic_ids": [
+        "forms",
+        "family_of_spanish",
+        "versioning"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_source_path": "temp/spain/pdf/es-27-ce5581c30c411010168ce3aec1e784587b02cbfb093fd5a1c60fba07d33e5341.pdf",
+      "source_sha256": "ce5581c30c411010168ce3aec1e784587b02cbfb093fd5a1c60fba07d33e5341",
+      "source_bytes": 241072,
+      "resolved_url": "https://inclusion.gob.es/documents/d/migraciones/ex24-formulario-autorizacion-de-residencia-temporal-de-familiares-de-personas-con-nacionalidad-espanola-editable-1.pdf",
+      "candidate_text_path": "source-library/spain/monitor-candidates/es-27.md",
+      "converted_sha256": "015dfa186c14013470d7d8fe7de132a14f804e9a862a9fde3c8979cc42e4ee7e"
+    },
+    {
+      "id": "es-28",
+      "title": "Hoja 18, family members of Spanish nationals",
+      "source_type": "spanish_national_family_guidance",
+      "language": "es",
+      "url": "https://www.inclusion.gob.es/es/web/migraciones/w/18.-autorizacion-de-residencia-temporal-de-familiares-de-personas-con-nacionalidad-espanola",
+      "publisher_identifier": {
+        "system": "Ministry of Inclusion",
+        "record": "Information sheet 18"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official Ministry result inspected; current page reported updated April 2026.",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_shape": "HTML guidance with linked EX24",
+      "version_evidence": "Search result reported April 2026 update and RD 1155/2024 Articles 93–98.",
+      "note": "Use with SEM Instructions 2/2025 and current law; does not replace EU-family/Swiss routes.",
+      "topic_ids": [
+        "family_of_spanish",
+        "guidance",
+        "versioning"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "es-29",
+      "title": "SEM Instructions 2/2025, family of Spanish nationals",
+      "source_type": "official_migration_instruction",
+      "language": "es",
+      "url": "https://inclusion.gob.es/documents/d/migraciones/instrucciones-sem-2-2025-sobre-la-residencia-temporal-de-familiares-de-personas-con-nacionalidad-espanola",
+      "publisher_identifier": {
+        "system": "Secretaría de Estado de Migraciones",
+        "record": "Instructions SEM 2/2025; signed 13/05/2025"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official PDF opened; signature/date and distinctions among third-country, EU/EEA/Swiss and returning-Spanish routes inspected.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "PDF",
+      "version_evidence": "Signed 13/05/2025; document provides a verification CSV and signed-document validation route.",
+      "note": "Important operational bridge after RD 1155/2024 took effect 20/05/2025. Check for later replacement instructions.",
+      "topic_ids": [
+        "family_of_spanish",
+        "administrative_instruction",
+        "transition"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_source_path": "temp/spain/pdf/es-29-1c7ea39e4b707559e090b01342311c86b18c9e5b10a60f61ff3f30789926bec8.pdf",
+      "source_sha256": "1c7ea39e4b707559e090b01342311c86b18c9e5b10a60f61ff3f30789926bec8",
+      "source_bytes": 464495,
+      "resolved_url": "https://inclusion.gob.es/documents/d/migraciones/instrucciones-sem-2-2025-sobre-la-residencia-temporal-de-familiares-de-personas-con-nacionalidad-espanola",
+      "candidate_text_path": "source-library/spain/monitor-candidates/es-29.md",
+      "converted_sha256": "09dfba3abff2ad232ef3ad10d8e6d7ac15cf476547050859917d1910e636a51b"
+    },
+    {
+      "id": "es-30",
+      "title": "Electronic submission of immigration applications",
+      "source_type": "immigration_filing_guidance",
+      "language": "es",
+      "url": "https://www.inclusion.gob.es/es/web/migraciones/presentacion-electronica-de-solicitudes-de-estancia-de-residencia-de-residencia-y-trabajo-y-de-tarjeta-de-familiar-de-ciudadano-de-la-union-europea",
+      "publisher_identifier": {
+        "system": "Ministry of Inclusion",
+        "record": "Presentación electrónica de solicitudes"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official Ministry parent page inspected; linked e-filing scope needs live workflow verification.",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_shape": "HTML guidance linking to electronic government service",
+      "version_evidence": "No update date captured in the reviewed page.",
+      "note": "Workflow, supported application types and login requirements may change separately from guidance; no form submission was performed.",
+      "topic_ids": [
+        "filing",
+        "procedure",
+        "guidance"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "es-31",
+      "title": "Ministry directory of immigration offices and public contact information",
+      "source_type": "immigration_office_directory",
+      "language": "es",
+      "url": "https://www.inclusion.gob.es/es/web/migraciones/informacion-oficinas",
+      "publisher_identifier": {
+        "system": "Ministry of Inclusion",
+        "record": "Información de Oficinas de Extranjería"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official Ministry pages link to this directory label; exact live target and province coverage were not fully opened.",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_shape": "Expected dynamic HTML directory; not fully inspected",
+      "version_evidence": "Province-specific contact/appointment details can change.",
+      "note": "Directory route is a candidate only. Re-resolve from current Ministry parent and verify whether police procedures use a separate office list.",
+      "topic_ids": [
+        "offices",
+        "procedure",
+        "dynamic_directory"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "es-32",
+      "title": "Cita previa de extranjería appointment portal",
+      "source_type": "immigration_appointment_service",
+      "language": "es",
+      "url": "https://sede.administracionespublicas.gob.es/pagina/index/directorio/icpplus/",
+      "publisher_identifier": {
+        "system": "Sede Electrónica",
+        "record": "Cita previa de extranjería"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official service page inspected; it distinguishes immigration-office and National Police procedures.",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_shape": "Interactive provincial appointment portal",
+      "version_evidence": "Availability and required appointment types vary by province; not all offices use the portal.",
+      "note": "Do not scrape or submit personal data. Current coverage is dynamic and province-dependent.",
+      "topic_ids": [
+        "appointments",
+        "filing",
+        "dynamic_service"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_note": "ValueError: unexpected response format: text/html"
+    },
+    {
+      "id": "es-33",
+      "title": "National Police: EU citizen registration certificate procedure",
+      "source_type": "official_police_procedure",
+      "language": "es",
+      "url": "https://sede.policia.gob.es/portalCiudadano/_es/tramites_extranjeria_tramite_certificadoregistro_ciudadanoue.php",
+      "publisher_identifier": {
+        "system": "National Police",
+        "record": "EU citizen registration procedure 994234"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official service page inspected; procedure identity, EX18, fee 790 code 012, scope including Swiss citizens, filing channel and remedies visible.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "HTML procedure page with links to form and fee service",
+      "version_evidence": "Page carried date 28/09/2026 in the current result.",
+      "note": "Use this police service as the operational route alongside the Ministry hub; no province-specific availability was tested.",
+      "topic_ids": [
+        "eu_registration",
+        "police",
+        "forms",
+        "fees",
+        "remedies"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/spain/monitor-candidates/es-33.md",
+      "source_sha256": "8fe5f6a0ef9601549813a49e81cce8d11b3184ef6e6b32a8f2883f6a3280920e",
+      "converted_sha256": "13289b591f24439d3c749a3e784d44e5319acb2b407ab6ce8583b891e52991bc",
+      "source_bytes": 66568,
+      "resolved_url": "https://sede.policia.gob.es/portalCiudadano/_es/tramites_extranjeria_tramite_certificadoregistro_ciudadanoue.php"
+    },
+    {
+      "id": "es-34",
+      "title": "National Police tax form 790 code 012",
+      "source_type": "official_fee_form",
+      "language": "es",
+      "url": "https://sede.policia.gob.es/Tasa790_012/",
+      "publisher_identifier": {
+        "system": "National Police",
+        "record": "Fee 790, code 012"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official procedure links to the fee form; direct current payment page and tariff were not fully inspected.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Interactive fee form",
+      "version_evidence": "Fee amount and payment instructions are mutable and procedure-specific.",
+      "note": "Do not infer amount or applicability from old PDFs; resolve from current procedure page and fee service.",
+      "topic_ids": [
+        "fees",
+        "forms",
+        "dynamic_service"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/spain/monitor-candidates/es-34.md",
+      "source_sha256": "7d82e7c801c5cc6915f01d9ffb14db96eca9d21544e772f615c71a07cdb7b79d",
+      "converted_sha256": "b01eb2975371a3eda6ddfec9cdf18197d47aad5091b7c3b5885cc7b9949f2e9d",
+      "source_bytes": 3039,
+      "resolved_url": "https://sede.policia.gob.es/Tasa790_012/"
+    },
+    {
+      "id": "es-35",
+      "title": "Sede FAQ for immigration appointment service",
+      "source_type": "appointment_service_help",
+      "language": "es",
+      "url": "https://sede.administracionespublicas.gob.es/ayuda/faq/extranjeria",
+      "publisher_identifier": {
+        "system": "Sede Electrónica",
+        "record": "Immigration appointment FAQ"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official FAQ inspected.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "HTML FAQ",
+      "version_evidence": "FAQ says not all foreigner offices provide appointments through the portal and availability is office-dependent.",
+      "note": "A zero-result or unavailable appointment slot is not proof that no legal filing route exists; FAQ and office contact route must be checked together.",
+      "topic_ids": [
+        "appointments",
+        "coverage_limit",
+        "guidance"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/spain/monitor-candidates/es-35.md",
+      "source_sha256": "f4b98d257d0a48da2974d49d6a1c8e62570af4442e45b226b38e6c37aa2df283",
+      "converted_sha256": "e4d397a529f722c6fa90a03c699879ea7020a16ff9c0e070ffcdb9daaecfc0f1",
+      "source_bytes": 12027,
+      "resolved_url": "https://sede.administracionespublicas.gob.es/ayuda/faq/extranjeria"
+    },
+    {
+      "id": "es-36",
+      "title": "Spanish Consulate Brussels, EU-family visa guidance",
+      "source_type": "consular_visa_guidance",
+      "language": "es",
+      "url": "https://www.exteriores.gob.es/Consulados/bruselas/es/ServiciosConsulares/Paginas/index.aspx?scca=Visados&scco=B%C3%A9lgica&scd=36&scs=Visados+de+familiar+de+ciudadano+de+la+Uni%C3%B3n",
+      "publisher_identifier": {
+        "system": "Spanish Consulate Brussels",
+        "record": "Visados de familiar de ciudadano de la Unión"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official search result exposed detailed content; direct open returned HTTP 403 in research client.",
+      "retrieval_status": "discovery_surface_no_text",
+      "retrieval_shape": "Country-specific dynamic HTML service page",
+      "version_evidence": "Search result describes current Schengen 90/180 family-visa route and linked documents; page version not checked.",
+      "note": "403 is a research-client restriction, not evidence of publisher downtime. Mission and local requirements are country-specific.",
+      "topic_ids": [
+        "visa",
+        "consular",
+        "mission_specific"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "e1e7587b0c072cf79c6ba65048f49b81932397873c053ed065e3f95947893832",
+      "source_bytes": 145467,
+      "resolved_url": "https://www.exteriores.gob.es/Consulados/bruselas/es/ServiciosConsulares/Paginas/index.aspx?scca=Visados&scco=B%C3%A9lgica&scd=36&scs=Visados+de+familiar+de+ciudadano+de+la+Uni%C3%B3n",
+      "retrieval_note": "Public HTML response contained no sufficiently long extractable source body."
+    },
+    {
+      "id": "es-37",
+      "title": "Spanish Consulate Rabat visa-submission procedure",
+      "source_type": "consular_visa_filing_guidance",
+      "language": "es",
+      "url": "https://www.exteriores.gob.es/Consulados/rabat/es/ServiciosConsulares/Paginas/Procedimiento-de-solicitudes-de-visado.aspx",
+      "publisher_identifier": {
+        "system": "Spanish Consulate Rabat",
+        "record": "Procedimiento de solicitudes de visado"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official search result inspected; direct open returned HTTP 403 in research client.",
+      "retrieval_status": "discovery_surface_no_text",
+      "retrieval_shape": "Country-specific HTML procedure page with appointment and provider routes",
+      "version_evidence": "Official search result dated 26/08/2026 and provides distinct filing route for EU/EEA/Swiss family.",
+      "note": "Country-specific appointment channels and BLS involvement can change; rediscover through mission parent and verify current notice.",
+      "topic_ids": [
+        "visa",
+        "appointments",
+        "mission_specific"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "af074ae4b601b0ddaf7fb406cd21311f6964a45e9d858c5c88588597ebb8b3bf",
+      "source_bytes": 47407,
+      "resolved_url": "https://www.exteriores.gob.es/Consulados/rabat/es/ServiciosConsulares/Paginas/Procedimiento-de-solicitudes-de-visado.aspx",
+      "retrieval_note": "Public HTML response contained no sufficiently long extractable source body."
+    },
+    {
+      "id": "es-38",
+      "title": "MAEC embassies and consulates directory",
+      "source_type": "mission_directory",
+      "language": "es",
+      "url": "https://www.exteriores.gob.es/es/Ministerio/FuncionesEstructura/Paginas/EmbajadasConsulados.aspx",
+      "publisher_identifier": {
+        "system": "Ministry of Foreign Affairs",
+        "record": "Embajadas y Consulados directory"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official directory route identified through Ministry pages; exact current directory behavior not inspected.",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_shape": "Expected dynamic HTML directory; not verified",
+      "version_evidence": "Mission names, jurisdictions, representation and contact links may change.",
+      "note": "Candidate route only. Build country-and-city selection from current official directory; do not infer representation from cached mission PDFs.",
+      "topic_ids": [
+        "mission_directory",
+        "visa",
+        "dynamic_directory"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_note": "HTTPError: HTTP Error 404: Not Found"
+    },
+    {
+      "id": "es-39",
+      "title": "MAEC legalization and apostille guidance",
+      "source_type": "civil_document_authentication_guidance",
+      "language": "es",
+      "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Legalizacion-y-apostilla.aspx",
+      "publisher_identifier": {
+        "system": "Ministry of Foreign Affairs",
+        "record": "Legalización diplomática"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official MAEC page inspected.",
+      "retrieval_status": "discovery_surface_no_text",
+      "retrieval_shape": "HTML guidance linking to treaty country lists and service pages",
+      "version_evidence": "Explains country, document type, apostille, legalization and sworn-translation distinctions; country lists are linked and mutable.",
+      "note": "Civil-status evidence logistics only; apply EU Public Documents Regulation and other treaty exceptions independently.",
+      "topic_ids": [
+        "civil_status",
+        "authentication",
+        "translation",
+        "guidance"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "4218a93216abc75e406cf5234223b1c93a1fd0ed9213f176a2a5d1eac2a009b3",
+      "source_bytes": 67595,
+      "resolved_url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Legalizacion-y-apostilla.aspx",
+      "retrieval_note": "Public HTML response contained no sufficiently long extractable source body."
+    },
+    {
+      "id": "es-40",
+      "title": "AEPD complaint guidance for data-protection rights",
+      "source_type": "data_protection_remedy_guidance",
+      "language": "es",
+      "url": "https://www.aepd.es/preguntas-frecuentes/13-reclamaciones/FAQ-1303-puedo-interponer-una-reclamacion-respecto-al-ejercicio-de-los-derechos-de-proteccion-de-datos",
+      "publisher_identifier": {
+        "system": "AEPD",
+        "record": "FAQ-1303 complaint after rights request"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official AEPD page inspected.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "HTML FAQ linking to electronic office",
+      "version_evidence": "The FAQ says a person should first exercise the relevant right before the data controller where applicable.",
+      "note": "AEPD is a national route; autonomous-community authorities may be competent for their public bodies. Do not collect any personal complaint data.",
+      "topic_ids": [
+        "privacy",
+        "remedies",
+        "oversight"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/spain/monitor-candidates/es-40.md",
+      "source_sha256": "82ef658139c64aba1d1dc93ef2d04af6aa36c2b18d3b5311d5dc7b20cc01e7ba",
+      "converted_sha256": "d777eb5132d1fc8b5a9308683146ece1948528c9f0b49ebf37ff19ab190efd58",
+      "source_bytes": 74171,
+      "resolved_url": "https://www.aepd.es/preguntas-frecuentes/13-reclamaciones/FAQ-1303-puedo-interponer-una-reclamacion-respecto-al-ejercicio-de-los-derechos-de-proteccion-de-datos"
+    },
+    {
+      "id": "es-41",
+      "title": "Consejo de Transparencia: how to file an access complaint",
+      "source_type": "public_access_remedy_guidance",
+      "language": "es",
+      "url": "https://consejodetransparencia.es/reclamaciones/como_reclamar/que-debes-saber",
+      "publisher_identifier": {
+        "system": "CTBG",
+        "record": "How to complain about access to public information"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official CTBG page inspected.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "HTML guidance with links to electronic filing and decisions",
+      "version_evidence": "Page describes complaint following denial, unsatisfactory response or silence and provides state-level scope information.",
+      "note": "Some autonomous communities have separate arrangements or delegated competence; CTBG does not cover the entire territorial map by itself.",
+      "topic_ids": [
+        "public_access",
+        "remedies",
+        "oversight"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/spain/monitor-candidates/es-41.md",
+      "source_sha256": "88fc5600dd61dba9aefc375f365cb9fc3ae88432d6f3206aa65326013c9d2c28",
+      "converted_sha256": "8a552c11fd73de04c5f4e1010cf7f2aad8af9fe1e0e9dac2ecb73b55f7bdd002",
+      "source_bytes": 400161,
+      "resolved_url": "https://consejodetransparencia.es/reclamaciones/como_reclamar/que-debes-saber"
+    },
+    {
+      "id": "es-42",
+      "title": "Defensor del Pueblo foreigner and immigration topic hub",
+      "source_type": "ombudsman_topic_guidance",
+      "language": "es",
+      "url": "https://www.defensordelpueblo.es/grupo-social/extranjeros/",
+      "publisher_identifier": {
+        "system": "Defensor del Pueblo",
+        "record": "Extranjeros topic hub"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official page inspected.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "HTML topic hub linking to reports and resolution records",
+      "version_evidence": "The page covers foreign nationals' complaints and oversight of Spanish consular activity; linked case documents have separate dates.",
+      "note": "A complaint or ombuds intervention is not a statutory appeal; regional ombuds bodies remain separate.",
+      "topic_ids": [
+        "oversight",
+        "ombudsman",
+        "immigration"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/spain/monitor-candidates/es-42.md",
+      "source_sha256": "a41e490d413dc5af6b72e93d67eca83d39b3bdebf2f3ac7dc699ca4d96d5848a",
+      "converted_sha256": "6b0cd09ff726def846239b3959330344e8dabd7149021af57d4fa1006d4cce5c",
+      "source_bytes": 144989,
+      "resolved_url": "https://www.defensordelpueblo.es/grupo-social/extranjeros/"
+    },
+    {
+      "id": "es-43",
+      "title": "Defensor del Pueblo complaint process",
+      "source_type": "ombudsman_complaint_guidance",
+      "language": "es",
+      "url": "https://www.defensordelpueblo.es/el-defensor/como-te-podemos-ayudar/",
+      "publisher_identifier": {
+        "system": "Defensor del Pueblo",
+        "record": "How can we help / complaint access"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official page inspected.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "HTML public guidance and complaint form link",
+      "version_evidence": "Page states any person, Spanish or foreign, may complain regardless of age or legal situation in Spain.",
+      "note": "Use as an oversight route only, not as a substitute for objection, appeal or court deadlines.",
+      "topic_ids": [
+        "oversight",
+        "complaint",
+        "guidance"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/spain/monitor-candidates/es-43.md",
+      "source_sha256": "c8778d0303a482b02a485bf9c70b7cc31435e2b2b7b307ff78fbe4643ee92b19",
+      "converted_sha256": "6bd3152b0e9e8666be03e3e5ef19f506b011164d97f3843287b8c47178c95315",
+      "source_bytes": 137091,
+      "resolved_url": "https://www.defensordelpueblo.es/el-defensor/como-te-podemos-ayudar/"
+    },
+    {
+      "id": "es-44",
+      "title": "CGPJ/CENDOJ public case-law search",
+      "source_type": "official_case_law_search",
+      "language": "es",
+      "url": "https://www.poderjudicial.es/search/indexAN.jsp",
+      "publisher_identifier": {
+        "system": "CGPJ/CENDOJ",
+        "record": "Public jurisprudence search"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official search portal and indexed results identified; no immigration query replayed.",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Interactive search with dynamic result pages",
+      "version_evidence": "CENDOJ publication and coverage rules need inspection; result set is not treated as comprehensive without evidence.",
+      "note": "A search-result zero is not a coverage guarantee. Verify filters, pagination, ECLI/ROJ identifiers, update signals, anonymization and permitted use.",
+      "topic_ids": [
+        "case_law",
+        "search",
+        "coverage_limit"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_text_path": "source-library/spain/monitor-candidates/es-44.md",
+      "source_sha256": "1a1e8d7675384720e2dd0625c9a50370401a50121de6dd40a408186800ac5111",
+      "converted_sha256": "0acc06eba0cc6bc2878789930d23c8b68316014712a80de834f4e5ecadcf4cc4",
+      "source_bytes": 73097,
+      "resolved_url": "https://www.poderjudicial.es/search/indexAN.jsp"
+    },
+    {
+      "id": "es-45",
+      "title": "CENDOJ public database reuse notice",
+      "source_type": "case_law_reuse_terms",
+      "language": "es",
+      "url": "https://www.poderjudicial.es/search/sentencias/cosa%20juzgada/21/PUB",
+      "publisher_identifier": {
+        "system": "CGPJ/CENDOJ",
+        "record": "Public search notice and reuse conditions"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official search result exposes the reuse notice; exact notice page may be rendered as part of search results.",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_shape": "Search result page and legal notice",
+      "version_evidence": "Notice states user consultation is for personal use, bulk downloads and commercial use are prohibited, and database/commercial reuse requires CENDOJ terms/process.",
+      "note": "This is not a sustainable bulk-ingestion route absent a separate authorized route and terms.",
+      "topic_ids": [
+        "case_law",
+        "reuse",
+        "access_conditions"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_note": "TimeoutError: The read operation timed out"
+    },
+    {
+      "id": "es-46",
+      "title": "Spanish Constitutional Court judgment search",
+      "source_type": "constitutional_case_law_search",
+      "language": "es",
+      "url": "https://www.tribunalconstitucional.es/es/jurisprudencia/paginas/resultados-busqueda-sentencias.aspx?pn=1",
+      "publisher_identifier": {
+        "system": "Tribunal Constitucional",
+        "record": "Buscador de sentencias"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official search result inspected; no relevant migration query or pagination replay was performed.",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_shape": "HTML search results and judgment pages",
+      "version_evidence": "Search result displays judgments by number/date; publication and page progression need replay.",
+      "note": "Constitutional review is a separate court lane from CENDOJ administrative courts.",
+      "topic_ids": [
+        "case_law",
+        "constitutional_court",
+        "search"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+    }
+  ],
+  "retrieved_review_candidate_count": 34,
+  "converted_review_candidate_count": 30
+}

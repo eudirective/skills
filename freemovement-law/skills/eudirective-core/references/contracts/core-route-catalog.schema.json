@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Core EU/common escalation route catalogue v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["catalog_version", "routes"],
+  "properties": {
+    "catalog_version": {"const": "0.1.0"},
+    "routes": {
+      "type": "array",
+      "maxItems": 100,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "route_id", "label", "authority_ref", "authority_name", "authority_level",
+          "target_authority_levels", "issue_types", "powers", "limits", "source_refs", "verified_at"
+        ],
+        "properties": {
+          "route_id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$", "maxLength": 160},
+          "label": {"type": "string", "minLength": 1, "maxLength": 500},
+          "authority_ref": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$", "maxLength": 160},
+          "authority_name": {"type": "string", "minLength": 1, "maxLength": 300},
+          "authority_level": {"enum": ["eu_institution", "eu_body", "eu_network"]},
+          "authority_competence": {"type": "array", "minItems": 1, "maxItems": 30, "items": {"type": "string", "maxLength": 1000}},
+          "target_authority_levels": {
+            "type": "array", "minItems": 1, "uniqueItems": true,
+            "items": {"enum": ["member_state_authority", "national_court", "eu_institution", "eu_body", "other", "unknown"]}
+          },
+          "issue_types": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1, "maxLength": 160}},
+          "powers": {"type": "array", "maxItems": 30, "items": {"type": "string", "maxLength": 1000}},
+          "limits": {"type": "array", "minItems": 1, "maxItems": 30, "items": {"type": "string", "maxLength": 1000}},
+          "source_refs": {"type": "array", "minItems": 1, "maxItems": 20, "uniqueItems": true, "items": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$"}},
+          "verified_at": {"type": "string", "format": "date"}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "catalog_version": "0.1.0",
+  "last_updated": "2026-10-07",
+  "patterns": [
+    {
+      "attack_angle_id": "core:attack:proof-restriction-review",
+      "label": "Closed or restricted documentary-proof requirement review",
+      "issue_type": "documentary_proof_restriction",
+      "basis_layer": "eu_common",
+      "signal_kind": "proof_restriction_claim",
+      "regime_any_of": ["legal_regime.directive_2004_38", "legal_regime.visa_code"],
+      "principle_any_of": [],
+      "source_refs": [],
+      "evidence_needs": [
+        "The exact authority requirement or checklist as applied to the applicant.",
+        "The asserted legal basis and whether the listed documents are exhaustive or illustrative.",
+        "Evidence of any alternative proof offered and how the authority treated it."
+      ],
+      "support_scope": "Generate a review hypothesis only when C5c has bound an asserted proof restriction to source/rule material. Do not infer invalidity from the existence of a checklist or document list.",
+      "false_positive_risks": [
+        "A document list may be lawful, illustrative or evidentially justified rather than exhaustive.",
+        "A source may describe practice without creating a binding closed-proof rule.",
+        "Freedom-of-proof authorities may be issue-specific rather than universal."
+      ],
+      "severity_hint": "medium",
+      "limitations": [
+        "This pattern does not establish that a documentary requirement is unlawful, excessive or exhaustive."
+      ]
+    },
+    {
+      "attack_angle_id": "core:attack:dependency-evidence-open-proof",
+      "label": "Dependency evidence and open-proof review",
+      "issue_type": "dependency_evidence_restriction",
+      "basis_layer": "eu_common",
+      "signal_kind": "dependency_freedom_of_proof_candidate",
+      "regime_any_of": ["legal_regime.directive_2004_38"],
+      "principle_any_of": [],
+      "source_refs": ["eu:62005cj0001", "eu:32004l0038"],
+      "evidence_needs": [
+        "The dependency proposition that must be established.",
+        "The evidence actually offered and any authority refusal to consider alternative proof."
+      ],
+      "support_scope": "Dependency-scoped review only. Preserve Jia as issue-specific support and do not generalize it into a universal evidentiary rule.",
+      "false_positive_risks": [
+        "The case may not concern dependency evidence.",
+        "The authority may have considered alternative proof and found it insufficient rather than categorically excluding it."
+      ],
+      "severity_hint": "medium",
+      "limitations": [
+        "Candidate status does not determine that dependency is established or that any particular evidence is sufficient."
+      ]
+    },
+    {
+      "attack_angle_id": "core:attack:deadline-timeliness-review",
+      "label": "Procedural deadline or delay review",
+      "issue_type": "procedural_timing",
+      "basis_layer": "eu_common",
+      "signal_kind": "exact_deadline_adverse_state",
+      "regime_any_of": [],
+      "principle_any_of": [],
+      "source_refs": [],
+      "evidence_needs": [
+        "A bound exact deadline calculation from C5c.",
+        "An independently supported adverse timeliness state such as overdue, exceeded or missed.",
+        "Any suspension, extension or alternative trigger facts that could change the result."
+      ],
+      "support_scope": "Generate only when C5c calculated an exact date from a valid scoped binding and the element bundle independently records an adverse deadline/timeliness state.",
+      "false_positive_risks": [
+        "A calculated date does not itself establish that the deadline legally applies.",
+        "Suspension, extension, alternative trigger or service-standard status may defeat a breach theory.",
+        "Passing of a target date does not necessarily create an enforceable individual remedy."
+      ],
+      "severity_hint": "high",
+      "limitations": [
+        "C5d does not compare against wall-clock time or infer lateness from the current date; it requires an explicit adverse timeliness state."
+      ]
+    },
+    {
+      "attack_angle_id": "core:attack:procedural-access-review",
+      "label": "Appointment, lodgement or procedural-access review",
+      "issue_type": "procedural_access",
+      "basis_layer": "eu_common",
+      "signal_kind": "procedure_access_adverse",
+      "regime_any_of": ["legal_regime.directive_2004_38", "legal_regime.visa_code"],
+      "principle_any_of": [],
+      "source_refs": ["eu:32004l0038", "eu:32009r0810"],
+      "evidence_needs": [
+        "Evidence of the attempted access, appointment or lodgement step.",
+        "The authority/VAC response and any available alternative channel.",
+        "The procedural stage and applicable regime."
+      ],
+      "support_scope": "Review access impediments under the active EU-law regime without treating delay, digital routing or appointment scarcity as automatically unlawful.",
+      "false_positive_risks": [
+        "A temporary delay may remain lawful under the applicable rule or facts.",
+        "A digital channel may be optional or accompanied by an effective alternative route.",
+        "The wrong authority or procedural stage may have been approached."
+      ],
+      "severity_hint": "medium",
+      "limitations": [
+        "This pattern does not establish a particular appointment deadline or entitlement without source-backed timing rules."
+      ]
+    },
+    {
+      "attack_angle_id": "core:attack:complaint-path-review",
+      "label": "Complaint or review-path availability review",
+      "issue_type": "complaint_or_review_path",
+      "basis_layer": "eu_common",
+      "signal_kind": "complaint_path_adverse",
+      "regime_any_of": [],
+      "principle_any_of": ["effective_judicial_protection", "rights_of_defence", "good_administration_general_principle"],
+      "source_refs": [],
+      "evidence_needs": [
+        "The decision, refusal or procedural act for which review is sought.",
+        "The information given about complaint, administrative review or judicial redress.",
+        "The C5b principle candidate and its scope."
+      ],
+      "support_scope": "Generate only when an adverse complaint/review-path state is paired with a source-backed C5b principle candidate; absence of a path alone is not converted into a violation.",
+      "false_positive_risks": [
+        "A complaint route may exist elsewhere in the legal system even if not identified in the first response.",
+        "The relevant act may not be independently reviewable at the present procedural stage.",
+        "A general-principle candidate does not establish the exact remedy required."
+      ],
+      "severity_hint": "high",
+      "limitations": [
+        "C5d does not invent a national remedy or infer a missing appeal right from silence alone."
+      ]
+    },
+    {
+      "attack_angle_id": "core:attack:authority-competence-review",
+      "label": "Authority competence or jurisdiction review",
+      "issue_type": "authority_competence",
+      "basis_layer": "eu_common",
+      "signal_kind": "authority_competence_adverse",
+      "regime_any_of": [],
+      "principle_any_of": [],
+      "source_refs": [],
+      "evidence_needs": [
+        "A source-backed description of the challenged authority's competence.",
+        "The act or omission attributed to that authority.",
+        "Any supervisory or representing-state allocation relevant to the procedure."
+      ],
+      "support_scope": "Review an explicitly adverse competence state only when source-backed authority/route material is available. Unknown competence is not treated as a defect.",
+      "false_positive_risks": [
+        "Unknown or unstructured competence is not the same as lack of competence.",
+        "Representation arrangements may allocate processing or decision tasks differently.",
+        "A route may be competent for systemic supervision but not individual redress."
+      ],
+      "severity_hint": "high",
+      "limitations": [
+        "C5d does not infer incompetence from missing module fields or unknown authority level."
+      ]
+    },
+    {
+      "attack_angle_id": "core:attack:proportionality-review",
+      "label": "Proportionality review of a procedural or evidentiary burden",
+      "issue_type": "proportionality",
+      "basis_layer": "eu_common",
+      "signal_kind": "proportionality_plus_adverse_signal",
+      "regime_any_of": [],
+      "principle_any_of": ["proportionality"],
+      "source_refs": [],
+      "evidence_needs": [
+        "A concrete procedural or evidentiary burden already represented by an adverse signal.",
+        "The legitimate objective, suitability, necessity and less-restrictive alternatives relevant to that burden."
+      ],
+      "support_scope": "Use a source-backed C5b proportionality candidate to frame review of a concrete adverse signal; do not generate proportionality issues from abstract principle availability alone.",
+      "false_positive_risks": [
+        "A burden may be suitable and necessary for a legitimate objective.",
+        "The factual burden may be minor or based on an incomplete account.",
+        "A proportionality principle candidate is not a finding of disproportionality."
+      ],
+      "severity_hint": "medium",
+      "limitations": [
+        "This pattern remains candidate-only and cannot establish disproportionality without issue-specific factual and legal review."
+      ]
+    }
+  ]
+}

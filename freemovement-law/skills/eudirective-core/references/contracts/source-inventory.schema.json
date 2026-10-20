@@ -1,0 +1,178 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Source inventory v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "inventory_version",
+    "inventory_id",
+    "sources"
+  ],
+  "properties": {
+    "inventory_version": {
+      "const": "0.1.0"
+    },
+    "inventory_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$"
+    },
+    "sources": {
+      "type": "array",
+      "maxItems": 5000,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "source_id",
+          "title",
+          "authority_level",
+          "issuing_authority",
+          "source_type",
+          "canonical_owner_family",
+          "jurisdiction",
+          "language",
+          "verification_state",
+          "migration_state",
+          "propositions"
+        ],
+        "properties": {
+          "source_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          },
+          "authority_level": {
+            "enum": [
+              "eu",
+              "member_state",
+              "applicant_country",
+              "local_operational"
+            ]
+          },
+          "issuing_authority": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 500
+          },
+          "source_type": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 120
+          },
+          "canonical_owner_family": {
+            "enum": [
+              "core",
+              "member_state",
+              "applicant_country"
+            ]
+          },
+          "jurisdiction": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "maxLength": 80
+          },
+          "language": {
+            "type": "string",
+            "minLength": 2,
+            "maxLength": 40
+          },
+          "effective_from": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "maxLength": 40
+          },
+          "effective_to": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "maxLength": 40
+          },
+          "retrieved_at": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "maxLength": 40
+          },
+          "content_sha256": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "verification_state": {
+            "enum": [
+              "current",
+              "stale",
+              "unknown",
+              "staged"
+            ]
+          },
+          "migration_state": {
+            "enum": [
+              "legacy",
+              "staged",
+              "current",
+              "retired"
+            ]
+          },
+          "propositions": {
+            "type": "array",
+            "maxItems": 1000,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "proposition_id",
+                "owner_family",
+                "scope",
+                "citation_anchor"
+              ],
+              "properties": {
+                "proposition_id": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 220,
+                  "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$"
+                },
+                "owner_family": {
+                  "enum": [
+                    "core",
+                    "member_state",
+                    "applicant_country"
+                  ]
+                },
+                "scope": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 300
+                },
+                "citation_anchor": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "maxLength": 500
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

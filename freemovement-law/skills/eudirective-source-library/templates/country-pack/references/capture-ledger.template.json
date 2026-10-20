@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "jurisdiction": "<ISO-3166-1-alpha-2>",
+  "updated": "YYYY-MM-DD",
+  "captures": [
+    {
+      "candidate_id": "<stable manifest ID>",
+      "attempts": [
+        {
+          "timestamp_utc": "<YYYY-MM-DDTHH:MM:SSZ>",
+          "requested_url": "<official publisher URL>",
+          "final_url": "<final URL after redirects>",
+          "http_status": "<HTTP status>",
+          "content_type": "<media type>",
+          "payload_sha256": "<SHA-256>"
+        }
+      ],
+      "conversion": {
+        "tool": "<tool and version>",
+        "output_path": "<candidate path>",
+        "output_sha256": "<SHA-256>",
+        "validation": "<checks performed and result>"
+      },
+      "notes": "<errors, manual steps, or relevant limitations>"
+    }
+  ]
+}

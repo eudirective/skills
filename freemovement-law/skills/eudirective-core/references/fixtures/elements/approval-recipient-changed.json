@@ -1,0 +1,24 @@
+{
+  "model_version": "0.2.0",
+  "bundle_id": "approval-recipient-changed",
+  "elements": [
+    {
+      "element_id": "privacy_control.approval_bound_recipient",
+      "value": "authority-a",
+      "supplied_by": "core",
+      "provenance_kind": "policy"
+    },
+    {
+      "element_id": "privacy_control.current_recipient",
+      "value": "authority-b",
+      "supplied_by": "case_workspace",
+      "provenance_kind": "user_assertion"
+    },
+    {
+      "element_id": "privacy_control.approval_valid",
+      "value": true,
+      "supplied_by": "deterministic_calculation",
+      "provenance_kind": "mechanical_calculation"
+    }
+  ]
+}

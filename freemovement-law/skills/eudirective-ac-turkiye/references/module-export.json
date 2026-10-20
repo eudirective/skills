@@ -1,0 +1,363 @@
+{
+  "attack_angle_records": [
+    {
+      "attack_angle_id": "tr:attack:direct-channel-block",
+      "authority_refs": [
+        "tr:authority:sweden-istanbul-mission"
+      ],
+      "basis_layer": "local_operational",
+      "disqualifier_element_ids": [],
+      "evidence_needs": [
+        "Preserve dated instructions, communications, documents and any contrary evidence.",
+        "Verify the applicable EU/national law, competence, exceptions and individual circumstances."
+      ],
+      "issue_type": "operational_contradiction",
+      "label": "Mission direct application option reportedly refused",
+      "prerequisite_element_ids": [
+        "procedure.access_state",
+        "procedure.channel"
+      ],
+      "remedy_categories": [
+        "administrative_escalation"
+      ],
+      "required_completeness_ids": [
+        "check:regime"
+      ],
+      "route_refs": [
+        "tr:route:email-direct-consulate"
+      ],
+      "severity_hint": null,
+      "source_refs": [
+        "tr:src:sweden-istanbul-eu-family"
+      ],
+      "support_scope": "Official mission publishes direct option for qualifying EU family applicants; discrepancy is factual review candidate, not proven breach. Record date, attempted channel and contrary explanations.",
+      "support_status": "candidate"
+    },
+    {
+      "attack_angle_id": "tr:attack:fee-channel-confusion",
+      "authority_refs": [
+        "tr:authority:sweden-istanbul-mission"
+      ],
+      "basis_layer": "local_operational",
+      "disqualifier_element_ids": [],
+      "evidence_needs": [
+        "Preserve dated instructions, communications, documents and any contrary evidence.",
+        "Verify the applicable EU/national law, competence, exceptions and individual circumstances."
+      ],
+      "issue_type": "fees",
+      "label": "VFS service charge conflated with EU-family visa fee",
+      "prerequisite_element_ids": [
+        "procedure.channel"
+      ],
+      "remedy_categories": [
+        "administrative_escalation"
+      ],
+      "required_completeness_ids": [
+        "check:regime"
+      ],
+      "route_refs": [],
+      "severity_hint": null,
+      "source_refs": [
+        "tr:src:sweden-istanbul-eu-family",
+        "tr:src:sweden-istanbul-fees"
+      ],
+      "support_scope": "Visa fee waiver and optional provider service fee are distinct. Determine channel and facts before inferring overcharge. C10 semantic audit: prerequisite element IDs encode field presence, not proof of missing refusal reasons or unlawful service fees; keep blocked until reviewed, value-sensitive fact binding is supplied.",
+      "support_status": "unsupported_automation"
+    }
+  ],
+  "authority_records": [
+    {
+      "authority_id": "tr:authority:sweden-istanbul-mission",
+      "competence": [
+        "Receives Swedish visa applications in Türkiye; mission channel verification"
+      ],
+      "email": "migration.istanbul@gov.se",
+      "limits": [
+        "This is Swedish authority activity in Türkiye, not sovereign Turkish law",
+        "VFS is a provider, not final decisionmaker"
+      ],
+      "name": "Swedish Consulate General in Istanbul (local mission function)",
+      "powers": [
+        "Publishes EU/EEA family application instructions, appointment email and appeal contact"
+      ],
+      "source_refs": [
+        "tr:src:sweden-istanbul-eu-family",
+        "tr:src:sweden-istanbul-contact"
+      ],
+      "telephone": "+90 (0)212 334 06 06",
+      "verified_at": "2026-10-09T14:00:00Z",
+      "website": "https://www.swedenabroad.se/en/embassies/turkey-istanbul/"
+    },
+    {
+      "authority_id": "tr:authority:turkiye-nvi",
+      "competence": [
+        "Turkish civil status records and passports"
+      ],
+      "email": null,
+      "limits": [
+        "No authority to decide Swedish EU-family visas"
+      ],
+      "name": "Directorate General of Population and Citizenship Affairs",
+      "powers": [
+        "Provides passport and civil-register acquisition procedures"
+      ],
+      "source_refs": [
+        "tr:src:turkiye-nvi-population",
+        "tr:src:turkiye-nvi-passport"
+      ],
+      "telephone": null,
+      "verified_at": "2026-10-09T14:00:00Z",
+      "website": "https://nvi.gov.tr/"
+    }
+  ],
+  "contract_version": "0.2.0",
+  "deadline_records": [],
+  "gap_records": [
+    {
+      "area": "operations",
+      "detail": "Direct consular appointment channels, costs and operating hours may change; recheck the official mission page before reliance.",
+      "gap_id": "tr:gap:live-channel",
+      "impact": "degrading",
+      "scope": "operations",
+      "status": "known_gap"
+    },
+    {
+      "area": "scope",
+      "detail": "Swedish visa rules and EU rights govern the Swedish mission; Turkish administrative sources govern document acquisition only; no host law substitution.",
+      "gap_id": "tr:gap:mission-competence",
+      "impact": "degrading",
+      "scope": "module",
+      "status": "known_gap"
+    },
+    {
+      "area": "scope",
+      "detail": "Only SE destination profile is provided, with no claim to DE or other member-state mission operations.",
+      "gap_id": "tr:gap:non-sweden-profiles",
+      "impact": "informational",
+      "scope": "module",
+      "status": "known_gap"
+    }
+  ],
+  "id_namespace": "tr",
+  "jurisdiction": "TR",
+  "module_family": "applicant_country",
+  "module_id": "applicant-country-tr-sweden-pilot",
+  "module_version": "0.1.1",
+  "operational_records": [
+    {
+      "category": "appointment_channel",
+      "description": "For applicable 2004/38 family cases: direct Swedish Consulate Istanbul appointment by migration.istanbul@gov.se is expressly offered as alternative to VFS; verify applicability first.",
+      "destination_state": "SE",
+      "evidence_quality": "official",
+      "observed_at": "2026-10-09T14:00:00Z",
+      "record_id": "tr:op:consulate-direct",
+      "source_refs": [
+        "tr:src:sweden-istanbul-eu-family"
+      ]
+    },
+    {
+      "category": "appointment_channel",
+      "description": "VFS Global is also an optional submission channel for qualifying EU/EEA family member in Türkiye; service fee may apply to VFS channel.",
+      "destination_state": "SE",
+      "evidence_quality": "official",
+      "observed_at": "2026-10-09T14:00:00Z",
+      "record_id": "tr:op:vfs-channel",
+      "source_refs": [
+        "tr:src:sweden-istanbul-eu-family",
+        "tr:src:sweden-istanbul-fees"
+      ]
+    },
+    {
+      "category": "document_obtainment",
+      "description": "Mission describes proof of family relationship, EU relative identity, and travelling together/joining as core visa supporting documents; list is guidance, not automatic absolute proof restriction.",
+      "destination_state": "SE",
+      "evidence_quality": "official",
+      "observed_at": "2026-10-09T14:00:00Z",
+      "record_id": "tr:op:family-evidence",
+      "source_refs": [
+        "tr:src:sweden-istanbul-eu-family"
+      ]
+    },
+    {
+      "category": "appeal_channel",
+      "description": "Written refusal appeal to migration.istanbul@gov.se, published three-week rule and consular reconsideration; competent law is Swedish.",
+      "destination_state": "SE",
+      "evidence_quality": "official",
+      "observed_at": "2026-10-09T14:00:00Z",
+      "record_id": "tr:op:appeal-email",
+      "source_refs": [
+        "tr:src:sweden-istanbul-appeal"
+      ]
+    },
+    {
+      "category": "document_obtainment",
+      "description": "Turkish population-register extracts may be obtained through NVI or authenticated e-Devlet. Official site states electronic extracts have same domestic legal value.",
+      "destination_state": "SE",
+      "evidence_quality": "official",
+      "observed_at": "2026-10-09T14:00:00Z",
+      "record_id": "tr:op:civil-register-extract",
+      "source_refs": [
+        "tr:src:turkiye-nvi-population"
+      ]
+    },
+    {
+      "category": "document_obtainment",
+      "description": "Turkish national passport acquisition procedures and document categories published by NVI.",
+      "destination_state": "SE",
+      "evidence_quality": "official",
+      "observed_at": "2026-10-09T14:00:00Z",
+      "record_id": "tr:op:passport-service",
+      "source_refs": [
+        "tr:src:turkiye-nvi-passport"
+      ]
+    }
+  ],
+  "pack_version": "0.1.0",
+  "route_records": [
+    {
+      "authority_ref": "tr:authority:sweden-istanbul-mission",
+      "cost_or_fee": null,
+      "email": "migration.istanbul@gov.se",
+      "filing_method": "Send specified relationship/nationality/travel information via mission email.",
+      "form_or_evidence": null,
+      "issue_types": [
+        "appointment_access"
+      ],
+      "label": "Direct EU family application appointment",
+      "language": "en",
+      "legal_basis_refs": [
+        "tr:src:sweden-istanbul-eu-family",
+        "tr:src:sweden-istanbul-contact"
+      ],
+      "limits": [
+        "Appointment request is not the same as lodging application",
+        "Eligibility and available times to confirm"
+      ],
+      "powers": [
+        "Can schedule direct consulate appointment for an eligible applicant"
+      ],
+      "route_id": "tr:route:email-direct-consulate",
+      "source_refs": [
+        "tr:src:sweden-istanbul-eu-family",
+        "tr:src:sweden-istanbul-contact"
+      ],
+      "telephone": null,
+      "verified_at": "2026-10-09T14:00:00Z",
+      "website": "https://www.swedenabroad.se/en/about-sweden-non-swedish-citizens/turkey/going-to-sweden/visiting-sweden/how-to-apply/family-members-of-eueea-citizens/"
+    }
+  ],
+  "rule_records": [
+    {
+      "domain": "mission_operations",
+      "interpretation_status": "candidate_interpretation",
+      "normative_layer": "local_operational",
+      "operators": [
+        "exists"
+      ],
+      "proposition": "The Swedish Istanbul mission publishes a direct appointment process for qualifying EU/EEA family members as an alternative to the VFS channel.",
+      "rule_id": "tr:rule:mission-direct",
+      "source_refs": [
+        "tr:src:sweden-istanbul-eu-family"
+      ],
+      "support_scope": "Official mission operations in Türkiye only. Not a separate Turkish visa rule; check current mission guidance and underlying EU/Swedish law."
+    }
+  ],
+  "source_records": [
+    {
+      "authenticity_state": "verified_identity_version",
+      "authority": "Sweden Abroad / Swedish Consulate General Istanbul",
+      "content_kind": "verified_source_note",
+      "content_sha256": "bae07cf46757ab0a204da3692f13d644f914bee0e72521ec522b86c433534424",
+      "effective_from": null,
+      "effective_to": null,
+      "language": "en",
+      "locator": "https://www.swedenabroad.se/en/about-sweden-non-swedish-citizens/turkey/going-to-sweden/visiting-sweden/how-to-apply/family-members-of-eueea-citizens/",
+      "scope": "Identity/version checked and officially described subject; source note only, legal pinpoints must be independently confirmed",
+      "source_id": "tr:src:sweden-istanbul-eu-family",
+      "source_type": "mission_guidance",
+      "status": "baseline_verified_not_live_rechecked",
+      "title": "Family members of EU/EEA citizens — direct application in Istanbul",
+      "verified_at": "2026-10-09T14:00:00Z"
+    },
+    {
+      "authenticity_state": "verified_identity_version",
+      "authority": "Sweden Abroad / Swedish Consulate General Istanbul",
+      "content_kind": "verified_source_note",
+      "content_sha256": "a3dd612fcf1b4bf6648ca598504a15b45cf71e0a7ec24343dddc0858143949d1",
+      "effective_from": null,
+      "effective_to": null,
+      "language": "en",
+      "locator": "https://www.swedenabroad.se/en/about-sweden-non-swedish-citizens/turkey/going-to-sweden/visiting-sweden/appeals/",
+      "scope": "Identity/version checked and officially described subject; source note only, legal pinpoints must be independently confirmed",
+      "source_id": "tr:src:sweden-istanbul-appeal",
+      "source_type": "mission_guidance",
+      "status": "baseline_verified_not_live_rechecked",
+      "title": "Appeals — Istanbul Sweden mission",
+      "verified_at": "2026-10-09T14:00:00Z"
+    },
+    {
+      "authenticity_state": "verified_identity_version",
+      "authority": "Sweden Abroad / Swedish Consulate General Istanbul",
+      "content_kind": "verified_source_note",
+      "content_sha256": "003b43bb83f7815a16ed4215f21d6087512ffb19f5779676ebedb0a63d7cbcb6",
+      "effective_from": null,
+      "effective_to": null,
+      "language": "sv",
+      "locator": "https://www.swedenabroad.se/sv/utlandsmyndigheter/turkiet-istanbul/kontakt/",
+      "scope": "Identity/version checked and officially described subject; source note only, legal pinpoints must be independently confirmed",
+      "source_id": "tr:src:sweden-istanbul-contact",
+      "source_type": "mission_contact",
+      "status": "baseline_verified_not_live_rechecked",
+      "title": "Contact Swedish Consulate General Istanbul",
+      "verified_at": "2026-10-09T14:00:00Z"
+    },
+    {
+      "authenticity_state": "verified_identity_version",
+      "authority": "Sweden Abroad / Swedish Consulate General Istanbul",
+      "content_kind": "verified_source_note",
+      "content_sha256": "9e8a66a08580cf19960348ebacc7647337855c943880c47aadb448258ac4f767",
+      "effective_from": null,
+      "effective_to": null,
+      "language": "en",
+      "locator": "https://www.swedenabroad.se/en/about-sweden-non-swedish-citizens/turkey/going-to-sweden/visiting-sweden/fees/",
+      "scope": "Identity/version checked and officially described subject; source note only, legal pinpoints must be independently confirmed",
+      "source_id": "tr:src:sweden-istanbul-fees",
+      "source_type": "mission_guidance",
+      "status": "baseline_verified_not_live_rechecked",
+      "title": "Fees for Sweden visa applications in Türkiye",
+      "verified_at": "2026-10-09T14:00:00Z"
+    },
+    {
+      "authenticity_state": "verified_identity_version",
+      "authority": "Republic of Turkiye Directorate General of Population and Citizenship Affairs",
+      "content_kind": "verified_source_note",
+      "content_sha256": "6ca1c4985617a72dd9600554188615a6e31c81a790cd6cc5e3975dea17d94905",
+      "effective_from": null,
+      "effective_to": null,
+      "language": "tr",
+      "locator": "https://www.nvi.gov.tr/nufus-kayit-ornegi-verilmesi",
+      "scope": "Identity/version checked and officially described subject; source note only, legal pinpoints must be independently confirmed",
+      "source_id": "tr:src:turkiye-nvi-population",
+      "source_type": "turkish_administrative_guidance",
+      "status": "baseline_verified_not_live_rechecked",
+      "title": "Nufus Kayit Ornegi Verilmesi — civil register extracts",
+      "verified_at": "2026-10-09T14:00:00Z"
+    },
+    {
+      "authenticity_state": "verified_identity_version",
+      "authority": "Republic of Turkiye Directorate General of Population and Citizenship Affairs",
+      "content_kind": "verified_source_note",
+      "content_sha256": "170c61574ce57211c482010a45b9cc9dc4e4466027e3619c95f569fb0f77dc66",
+      "effective_from": null,
+      "effective_to": null,
+      "language": "tr",
+      "locator": "https://nvi.gov.tr/pasaport",
+      "scope": "Identity/version checked and officially described subject; source note only, legal pinpoints must be independently confirmed",
+      "source_id": "tr:src:turkiye-nvi-passport",
+      "source_type": "turkish_administrative_guidance",
+      "status": "baseline_verified_not_live_rechecked",
+      "title": "Pasaport Hizmetleri — Turkish passport acquisition",
+      "verified_at": "2026-10-09T14:00:00Z"
+    }
+  ]
+}

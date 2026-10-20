@@ -1,0 +1,44 @@
+{
+  "context_version": "0.1.0",
+  "case_id": "CASE-C5A-FRONTIER",
+  "actors": [
+    {
+      "actor_id": "actor:applicant",
+      "roles": ["applicant", "family_member"]
+    },
+    {
+      "actor_id": "actor:union-citizen",
+      "roles": ["union_citizen", "sponsor"]
+    }
+  ],
+  "scoped_elements": [
+    {
+      "element_id": "person_status.eu_citizen_status",
+      "actor_id": "actor:applicant",
+      "value": "not_eu_citizen",
+      "provenance_kind": "user_assertion"
+    },
+    {
+      "element_id": "person_status.eu_citizen_status",
+      "actor_id": "actor:union-citizen",
+      "value": "established",
+      "provenance_kind": "document",
+      "source_ref": "synthetic:union-citizen-passport"
+    },
+    {
+      "element_id": "person_status.family_member_status",
+      "actor_id": "actor:applicant",
+      "related_actor_id": "actor:union-citizen",
+      "value": "established",
+      "provenance_kind": "document",
+      "source_ref": "synthetic:marriage-certificate"
+    },
+    {
+      "element_id": "relationship.accompanying_or_joining",
+      "actor_id": "actor:applicant",
+      "related_actor_id": "actor:union-citizen",
+      "value": true,
+      "provenance_kind": "user_assertion"
+    }
+  ]
+}

@@ -1,0 +1,409 @@
+{
+  "owner": "eu_core",
+  "rules": [
+    {
+      "attack_angle_id": "core:attack:procedural-access-review",
+      "conditions": [
+        {
+          "expected_values": [
+            "denied",
+            "refused",
+            "lodgement_prevented",
+            "blocked"
+          ],
+          "fact_key": "element:procedure.access_state",
+          "operator": "one_of"
+        },
+        {
+          "expected_values": [
+            "direct_appointment_email",
+            "direct_consulate",
+            "consulate_direct"
+          ],
+          "fact_key": "element:procedure.channel",
+          "operator": "one_of"
+        },
+        {
+          "expected_values": [
+            true
+          ],
+          "fact_key": "fact:eu_family_direct_request",
+          "operator": "one_of"
+        },
+        {
+          "expected_values": [
+            true
+          ],
+          "fact_key": "fact:mission_requires_vfs_only",
+          "operator": "one_of"
+        }
+      ],
+      "exception_questions": [
+        "Confirm direct channel and application eligibility; a published channel alone is not proof of an individualized entitlement to walk-in lodging.",
+        "Consider lawful appointment logistics and available direct alternative."
+      ],
+      "label": "Article 5(2) assistance and direct lodging: preliminary fact review",
+      "limitations": [
+        "Predicate sufficiency is not a determination of legal infringement."
+      ],
+      "procedure_types": [
+        "entry_visa"
+      ],
+      "rule_id": "eu:c12:direct-consular-access",
+      "source_citations": [
+        {
+          "pinpoint_hint": "Article 5(2): every facility; visa issuance as soon as possible under accelerated procedure.",
+          "source_id": "eu:32004l0038"
+        }
+      ]
+    },
+    {
+      "attack_angle_id": null,
+      "conditions": [
+        {
+          "expected_values": [
+            "residence_card_retention",
+            "residence_card_decision"
+          ],
+          "fact_key": "element:procedure.stage",
+          "operator": "one_of"
+        },
+        {
+          "expected_values": [
+            true
+          ],
+          "fact_key": "fact:decisive_former_spouse_information",
+          "operator": "one_of"
+        },
+        {
+          "expected_values": [
+            true
+          ],
+          "fact_key": "fact:authority_possesses_information",
+          "operator": "one_of"
+        },
+        {
+          "expected_values": [
+            true
+          ],
+          "fact_key": "fact:applicant_cannot_obtain_information",
+          "operator": "one_of"
+        },
+        {
+          "expected_values": [
+            true
+          ],
+          "fact_key": "fact:information_requested_predecision",
+          "operator": "one_of"
+        },
+        {
+          "expected_values": [
+            "withheld",
+            "partial",
+            "communicated"
+          ],
+          "fact_key": "fact:authority_communication_state",
+          "operator": "one_of"
+        },
+        {
+          "expected_values": [
+            "considered",
+            "not_considered"
+          ],
+          "fact_key": "fact:confidentiality_review_state",
+          "operator": "one_of"
+        }
+      ],
+      "exception_questions": [
+        "Assess proportional redaction, third-party confidentiality, reasons for restriction, and effective judicial protection.",
+        "The ruling is fact- and procedure-sensitive, not a generic consular case-file-access right."
+      ],
+      "label": "Deldwyn: material former-spouse evidence in residence-card retention decision",
+      "limitations": [
+        "Predicate sufficiency is not a determination of legal infringement."
+      ],
+      "procedure_types": [
+        "residence_card"
+      ],
+      "rule_id": "eu:c12:deldwyn-specific-disclosure",
+      "source_citations": [
+        {
+          "pinpoint_hint": "Deldwyn judgment paras 54-70; Article 41 limits, general good administration, defence and confidentiality balancing.",
+          "source_id": "eu:62024cj0477"
+        }
+      ]
+    },
+    {
+      "attack_angle_id": null,
+      "conditions": [
+        {
+          "expected_values": [
+            "entry_visa",
+            "residence_card"
+          ],
+          "fact_key": "case:procedure_type",
+          "operator": "one_of"
+        }
+      ],
+      "exception_questions": [
+        "Determine the legal role of each document; no entitlement is decided by procedure type alone."
+      ],
+      "label": "Entry visa and residence-card procedures are not interchangeable",
+      "limitations": [
+        "Predicate sufficiency is not a determination of legal infringement."
+      ],
+      "procedure_types": [
+        "entry_visa",
+        "residence_card"
+      ],
+      "rule_id": "eu:c12:entry-v-card-separation",
+      "source_citations": [
+        {
+          "pinpoint_hint": "Directive 2004/38 Article 5(2) vs Articles 9-10.",
+          "source_id": "eu:32004l0038"
+        }
+      ]
+    },
+    {
+      "activation": {
+        "expected_values": [
+          "vfs"
+        ],
+        "fact_key": "element:procedure.channel",
+        "operator": "one_of"
+      },
+      "attack_angle_id": null,
+      "conditions": [
+        {
+          "expected_values": [
+            true
+          ],
+          "fact_key": "fact:visa_fee_waiver_claimed",
+          "operator": "one_of"
+        },
+        {
+          "expected_values": [
+            true
+          ],
+          "fact_key": "fact:vfs_service_charge_recorded",
+          "operator": "one_of"
+        },
+        {
+          "expected_values": [
+            true
+          ],
+          "fact_key": "fact:vfs_route_optional",
+          "operator": "one_of"
+        },
+        {
+          "expected_values": [
+            false
+          ],
+          "fact_key": "fact:consular_visa_fee_collected",
+          "operator": "one_of"
+        }
+      ],
+      "exception_questions": [
+        "Check entitlement and whether the provider service was truly optional; a VFS receipt alone is not an unlawful fee.",
+        "Do not infer lawfulness of a mandatory provider fee or entitlement from labels alone."
+      ],
+      "label": "Visa fee waiver versus optional service-provider charge",
+      "limitations": [
+        "This synthetic predicate set identifies a review topic; legal entitlement, infringement, authenticity and timing remain undetermined."
+      ],
+      "procedure_types": [
+        "entry_visa"
+      ],
+      "rule_id": "eu:c16:visa-fee-v-provider-charge",
+      "source_citations": [
+        {
+          "pinpoint_hint": "Article 5(2) no-charge entry visa; distinguish consular visa fee from third-party service charge.",
+          "source_id": "eu:32004l0038"
+        }
+      ]
+    },
+    {
+      "activation": {
+        "expected_values": [
+          true
+        ],
+        "fact_key": "fact:exclusive_checklist_claimed",
+        "operator": "one_of"
+      },
+      "attack_angle_id": null,
+      "conditions": [
+        {
+          "expected_values": [
+            "asserted"
+          ],
+          "fact_key": "element:evidence.proof_restriction_status",
+          "operator": "one_of"
+        },
+        {
+          "expected_values": [
+            true
+          ],
+          "fact_key": "fact:exclusive_checklist_claimed",
+          "operator": "one_of"
+        },
+        {
+          "expected_values": [
+            true
+          ],
+          "fact_key": "fact:alternate_evidence_offered",
+          "operator": "one_of"
+        },
+        {
+          "expected_values": [
+            true
+          ],
+          "fact_key": "fact:alternate_evidence_excluded",
+          "operator": "one_of"
+        }
+      ],
+      "exception_questions": [
+        "Identify the specific legal purpose of requested evidence, authenticity or fraud concerns, and available alternatives.",
+        "Do not claim an unlimited freedom of proof; actual relevance and applicable procedural law require assessment."
+      ],
+      "label": "Exclusive document checklist and competing forms of proof",
+      "limitations": [
+        "This synthetic predicate set identifies a review topic; legal entitlement, infringement, authenticity and timing remain undetermined."
+      ],
+      "procedure_types": [
+        "entry_visa"
+      ],
+      "rule_id": "eu:c16:exclusive-proof-visa",
+      "source_citations": [
+        {
+          "pinpoint_hint": "Article 5(2) entry facilitation, not Article 10(2) residence-card documentation list.",
+          "source_id": "eu:32004l0038"
+        },
+        {
+          "pinpoint_hint": "Commission 2023 guidance; verify pertinent family evidence passages and exceptions.",
+          "source_id": "eu:c-2023-1392"
+        }
+      ]
+    },
+    {
+      "activation": {
+        "expected_values": [
+          true
+        ],
+        "fact_key": "fact:residence_card_demanded_before_visa",
+        "operator": "one_of"
+      },
+      "attack_angle_id": null,
+      "conditions": [
+        {
+          "expected_values": [
+            "blocked"
+          ],
+          "fact_key": "element:procedure.access_state",
+          "operator": "one_of"
+        },
+        {
+          "expected_values": [
+            true
+          ],
+          "fact_key": "fact:residence_card_demanded_before_visa",
+          "operator": "one_of"
+        },
+        {
+          "expected_values": [
+            true
+          ],
+          "fact_key": "fact:entry_visa_route_requested",
+          "operator": "one_of"
+        },
+        {
+          "expected_values": [
+            true
+          ],
+          "fact_key": "fact:card_or_visa_exemption_unknown",
+          "operator": "one_of"
+        }
+      ],
+      "exception_questions": [
+        "Check free-movement scope, applicable entry-visa exemption, and whether a card was required as evidence or as a categorical prerequisite.",
+        "A visa may not even be needed for some card holders; an incorrectly described demand is not automatically a breach."
+      ],
+      "label": "Prior residence-card condition imposed at entry-visa stage",
+      "limitations": [
+        "This synthetic predicate set identifies a review topic; legal entitlement, infringement, authenticity and timing remain undetermined."
+      ],
+      "procedure_types": [
+        "entry_visa"
+      ],
+      "rule_id": "eu:c16:prior-card-entry-gate",
+      "source_citations": [
+        {
+          "pinpoint_hint": "Articles 5(2) and 9–10 distinguish visa obligations and residence cards.",
+          "source_id": "eu:32004l0038"
+        }
+      ]
+    },
+    {
+      "activation": {
+        "expected_values": [
+          true
+        ],
+        "fact_key": "fact:paper_original_only_requested",
+        "operator": "one_of"
+      },
+      "attack_angle_id": null,
+      "conditions": [
+        {
+          "expected_values": [
+            "asserted"
+          ],
+          "fact_key": "element:evidence.proof_restriction_status",
+          "operator": "one_of"
+        },
+        {
+          "expected_values": [
+            true
+          ],
+          "fact_key": "fact:paper_original_only_requested",
+          "operator": "one_of"
+        },
+        {
+          "expected_values": [
+            true
+          ],
+          "fact_key": "fact:electronic_register_extract_offered",
+          "operator": "one_of"
+        },
+        {
+          "expected_values": [
+            true
+          ],
+          "fact_key": "fact:format_rejection_claimed",
+          "operator": "one_of"
+        }
+      ],
+      "exception_questions": [
+        "Domestic recognition of an electronic record does not guarantee acceptance by a Swedish mission.",
+        "Check authenticity, translation, nationality-specific evidence rules and actual reasons for requiring a paper original."
+      ],
+      "label": "Electronic civil-record presentation versus paper-only condition",
+      "limitations": [
+        "This synthetic predicate set identifies a review topic; legal entitlement, infringement, authenticity and timing remain undetermined."
+      ],
+      "procedure_types": [
+        "entry_visa"
+      ],
+      "rule_id": "eu:c16:electronic-proof-format",
+      "source_citations": [
+        {
+          "pinpoint_hint": "Article 5(2) facilitation: ascertain necessary family and mobility evidence for entry visas.",
+          "source_id": "eu:32004l0038"
+        },
+        {
+          "pinpoint_hint": "Commission guidance on documentary evidence; check specific passage and authenticity conditions.",
+          "source_id": "eu:c-2023-1392"
+        }
+      ]
+    }
+  ],
+  "rules_version": "0.2.0"
+}

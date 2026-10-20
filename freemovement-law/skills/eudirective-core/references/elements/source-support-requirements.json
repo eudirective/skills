@@ -1,0 +1,240 @@
+{
+  "basis": "Independent C2 reverse-coverage baseline. It requires the accepted legally material model targets to retain mapped source support; it is conformance evidence, not proof of legal entailment. Retains all independently required C2 targets; Deldwyn is added as source coverage only.",
+  "model_version": "0.2.0",
+  "required_targets": [
+    {
+      "min_source_count": 1,
+      "required_roles": [
+        "context"
+      ],
+      "target_id": "attack_angle.angle_id",
+      "target_type": "element"
+    },
+    {
+      "min_source_count": 1,
+      "required_roles": [
+        "boundary"
+      ],
+      "target_id": "authority.level",
+      "target_type": "element"
+    },
+    {
+      "min_source_count": 1,
+      "required_roles": [
+        "operational"
+      ],
+      "target_id": "authority.role",
+      "target_type": "element"
+    },
+    {
+      "min_source_count": 1,
+      "required_roles": [
+        "context"
+      ],
+      "target_id": "evidence.assertion_role",
+      "target_type": "element"
+    },
+    {
+      "min_source_count": 1,
+      "required_roles": [
+        "context"
+      ],
+      "target_id": "evidence.epistemic_state",
+      "target_type": "element"
+    },
+    {
+      "min_source_count": 1,
+      "required_roles": [
+        "foundation"
+      ],
+      "target_id": "evidence.freedom_of_proof_state",
+      "target_type": "element"
+    },
+    {
+      "min_source_count": 1,
+      "required_roles": [
+        "foundation"
+      ],
+      "target_id": "legal_principle.application_scope",
+      "target_type": "element"
+    },
+    {
+      "min_source_count": 13,
+      "required_roles": [
+        "foundation"
+      ],
+      "target_id": "legal_principle.id",
+      "target_type": "element"
+    },
+    {
+      "min_source_count": 2,
+      "required_roles": [
+        "context",
+        "foundation"
+      ],
+      "target_id": "legal_regime.charter",
+      "target_type": "element"
+    },
+    {
+      "min_source_count": 1,
+      "required_roles": [
+        "foundation"
+      ],
+      "target_id": "legal_regime.directive_2004_38",
+      "target_type": "element"
+    },
+    {
+      "min_source_count": 1,
+      "required_roles": [
+        "context"
+      ],
+      "target_id": "legal_regime.eu_law_scope_established",
+      "target_type": "element"
+    },
+    {
+      "min_source_count": 3,
+      "required_roles": [
+        "context",
+        "foundation"
+      ],
+      "target_id": "legal_regime.gdpr",
+      "target_type": "element"
+    },
+    {
+      "min_source_count": 1,
+      "required_roles": [
+        "foundation"
+      ],
+      "target_id": "legal_regime.schengen",
+      "target_type": "element"
+    },
+    {
+      "min_source_count": 3,
+      "required_roles": [
+        "context",
+        "foundation"
+      ],
+      "target_id": "legal_regime.visa_code",
+      "target_type": "element"
+    },
+    {
+      "min_source_count": 15,
+      "required_roles": [
+        "context",
+        "foundation"
+      ],
+      "target_id": "movement.free_movement_exercised",
+      "target_type": "element"
+    },
+    {
+      "min_source_count": 1,
+      "required_roles": [
+        "boundary"
+      ],
+      "target_id": "privacy_control.purpose",
+      "target_type": "element"
+    },
+    {
+      "min_source_count": 2,
+      "required_roles": [
+        "operational"
+      ],
+      "target_id": "procedure.access_state",
+      "target_type": "element"
+    },
+    {
+      "min_source_count": 4,
+      "required_roles": [
+        "boundary",
+        "context",
+        "operational"
+      ],
+      "target_id": "procedure.complaint_path_state",
+      "target_type": "element"
+    },
+    {
+      "min_source_count": 1,
+      "required_roles": [
+        "foundation"
+      ],
+      "target_id": "procedure.stage",
+      "target_type": "element"
+    },
+    {
+      "min_source_count": 13,
+      "required_roles": [
+        "context"
+      ],
+      "target_id": "relationship.accompanying_or_joining",
+      "target_type": "element"
+    },
+    {
+      "min_source_count": 1,
+      "required_roles": [
+        "context"
+      ],
+      "target_id": "source.verification_scope",
+      "target_type": "element"
+    },
+    {
+      "min_source_count": 1,
+      "required_roles": [
+        "operational"
+      ],
+      "target_id": "strategy.prerequisites_state",
+      "target_type": "element"
+    },
+    {
+      "min_source_count": 1,
+      "required_roles": [
+        "foundation"
+      ],
+      "target_id": "int.article41.boundary",
+      "target_type": "interaction"
+    },
+    {
+      "min_source_count": 2,
+      "required_roles": [
+        "boundary",
+        "foundation"
+      ],
+      "target_id": "int.charter.scope",
+      "target_type": "interaction"
+    },
+    {
+      "min_source_count": 1,
+      "required_roles": [
+        "foundation"
+      ],
+      "target_id": "int.evidence.proof_restriction",
+      "target_type": "interaction"
+    },
+    {
+      "min_source_count": 1,
+      "required_roles": [
+        "foundation"
+      ],
+      "target_id": "int.frontier.topology",
+      "target_type": "interaction"
+    },
+    {
+      "min_source_count": 1,
+      "required_roles": [
+        "foundation"
+      ],
+      "target_id": "int.principle.source",
+      "target_type": "interaction"
+    },
+    {
+      "min_source_count": 3,
+      "required_roles": [
+        "context",
+        "foundation"
+      ],
+      "target_id": "int.softlaw.weight",
+      "target_type": "interaction"
+    }
+  ],
+  "requirements_version": "0.1.0",
+  "source_pack_version": "0.6.1"
+}

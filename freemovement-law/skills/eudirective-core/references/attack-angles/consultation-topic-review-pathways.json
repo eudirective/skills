@@ -1,0 +1,438 @@
+{
+  "schema_version": "0.2.0",
+  "owner": {
+    "family": "core",
+    "jurisdiction": "EU",
+    "role": "review_pathways_only"
+  },
+  "status": "source_qualified_review_metadata_not_legal_rules",
+  "official_source_review": {
+    "checked_on": "2026-10-20",
+    "method": "Targeted check of the official EUR-Lex texts and European Commission materials listed below, including the cited provisions and guidance sections.",
+    "reviewer_type": "model-assisted maintenance cross-check; not an independent legal reviewer",
+    "scope": "EU/common sources only. This does not check national implementation, country-specific appeal deadlines, mission arrangements, or an individual case date.",
+    "currentness_limit": "The EUR-Lex Visa Code version list showed a consolidated text dated 2024-06-28 and amendments through Regulation (EU) 2024/1415. The reviewed VIS consolidated text is dated 2023-12-27. These dated texts must be checked against the Official Journal for later amendments, commencement and the relevant case date before substantive use. Regulation (EU) 2016/1191 was checked against its Official Journal text; EUR-Lex displayed the act as in force and its consolidated version dated 2016-07-26. Check later amendments and the applicable Member-State rules for the case date.",
+    "authority_limit": "Regulations and directives are identified as binding EU acts. Commission notices and handbooks are non-binding guidance. CJEU judgments interpret EU law but remain subject to their facts and procedural context.",
+    "independent_review": "Pending: an independent legal reviewer must confirm the source mapping, applicability limits, and any national-law route before these pathways support a legal merits conclusion."
+  },
+  "topics": [
+    {
+      "topic_id": "pre_lodgement_obstruction",
+      "label": "Possible obstruction before formal lodging",
+      "coverage": "core:attack:procedural-access-review",
+      "c27_families": [
+        "lifecycle",
+        "access",
+        "authority"
+      ],
+      "adverse_signal": "A person attempted to submit an application or required form, and an identified authority or service channel prevented acceptance before a formal decision or receipt was created.",
+      "jurisdictional_scope": {
+        "eu_common": "Directive 2004/38 Article 5(2) may govern an entry-visa request by a qualifying family member; otherwise the Visa Code procedure may apply. Visa Code Article 17(5) says a Member State may maintain the possibility of direct lodging at its consulate; it does not state a universal mandatory direct channel for every Member State and application.",
+        "national_or_local": "Identify the deciding and representing Member State, local mission/service-provider arrangement, and country-specific complaint or urgent-remedy route. Verify whether the deciding or representing Member State currently maintains direct lodging, the actual appointment/intake channel, and any special EU-family procedure."
+      },
+      "scope_questions": [
+        "Was this an entry-visa application for a family member within Directive 2004/38, an ordinary Visa Code application, or another procedure?",
+        "Which state decided, represented, hosted the mission, and operated the service channel?",
+        "Was there a formal refusal, a pre-lodgement access problem, an incomplete submission, or an appointment/inquiry issue?"
+      ],
+      "sources": [
+        {
+          "source_ref": "eu:32004l0038",
+          "publisher_url": "https://eur-lex.europa.eu/eli/dir/2004/38/oj",
+          "source_kind": "binding_eu_law",
+          "provisions": [
+            "Article 5(2)",
+            "Articles 30-31 where applicable"
+          ],
+          "registry_state": "official_EUR-Lex_text_checked_2026-10-20; confirm applicable version and national implementation for case date"
+        },
+        {
+          "source_ref": "eu:32009r0810",
+          "publisher_url": "https://eur-lex.europa.eu/eli/reg/2009/810/2024-06-28/eng",
+          "source_kind": "binding_eu_law",
+          "provisions": [
+            "Articles 9, 19 and 43",
+            "Article 17(5): a Member State may maintain direct lodging at its consulate; verify the actual State route"
+          ],
+          "registry_state": "official_consolidation_2024-06-28_checked_2026-10-20; amendment and case-date check required"
+        },
+        {
+          "source_ref": "commission:visa-code-handbook-I-2024",
+          "publisher_url": "https://home-affairs.ec.europa.eu/document/download/1d79f44d-49ba-4847-951e-129f924b1051_en",
+          "source_kind": "official_nonbinding_operational_guidance",
+          "provisions": [
+            "Part II, sections 2.2.1-2.2.2; Part III for EU-family safeguards"
+          ],
+          "registry_state": "Commission C(2024) 4319 final checked 2026-10-20; nonbinding guidance; verify later replacement"
+        }
+      ],
+      "counterarguments_and_exceptions": [
+        "A request to use an appointment, provide a complete form, attend biometrics, or approach a competent mission is not automatically a refusal to lodge.",
+        "A service provider may perform limited intake tasks under an applicable arrangement; examination and decision remain with the consulate under the Visa Code.",
+        "The authority, procedure, urgency, representation arrangement, and any usable alternative channel may change the analysis.",
+        "Visa Code Article 17(5) permits a Member State to maintain a direct-lodging possibility; do not turn that wording into a universal direct-lodging entitlement. Article 43(6) permits specified provider intake/logistics, while Article 43(4) reserves examination and decisions to the consulate."
+      ],
+      "records_to_seek": [
+        "Dated lodging attempt and exact form/version",
+        "Written instructions or refusal, including sender and authority role",
+        "Portal status, receipt, appointment record, and subsequent correspondence",
+        "Available alternative channel and any access or accessibility barrier",
+        "Current deciding/representing Member State instructions showing whether direct consular lodging is maintained, provider tasks, appointment channel, and any refusal or alternative offered"
+      ],
+      "possible_next_step": "Identify the deciding and representing Member States, then ask the competent mission to confirm whether direct lodging is maintained under Visa Code Article 17(5), which appointment/intake steps a provider performs, and the route for any refusal to accept an application.",
+      "remedy_competence_and_limits": "The national competent authority and urgent judicial route are not resolved by this shared EU review record. Do not describe a pre-lodgement access problem as a formal refusal without evidence. Article 17(5) does not establish a universal direct-channel obligation; check the current Member-State arrangement and any separate Directive-based facilitation requirement."
+    },
+    {
+      "topic_id": "digital_only_access",
+      "label": "Digital-only or service-provider access requirement",
+      "coverage": "core:attack:procedural-access-review",
+      "c27_families": [
+        "access",
+        "documents",
+        "authority"
+      ],
+      "adverse_signal": "A digital platform, VAC, or intermediary is said to be the only way to request or lodge, and the person reports being unable to use it or reach an effective alternative.",
+      "jurisdictional_scope": {
+        "eu_common": "Visa Code Articles 9-11 and 43-45 govern relevant short-stay visa channels; Regulation (EU) 2023/2667 creates a staged EU Visa Application Platform framework.",
+        "national_or_local": "Check the platform's operational start decision, any Member-State transition opt-out, local appointment channel, accessibility arrangements, and national accessibility remedies."
+      },
+      "scope_questions": [
+        "Is the platform mandatory at the relevant date and for this application type?",
+        "Is the intermediary acting as an external service provider, commercial intermediary, or merely an optional channel?",
+        "Which state decides, which mission represents it, and which authority handles data and lodging?"
+      ],
+      "sources": [
+        {
+          "source_ref": "eu:32009r0810",
+          "publisher_url": "https://eur-lex.europa.eu/eli/reg/2009/810/2024-06-28/eng",
+          "source_kind": "binding_eu_law",
+          "provisions": [
+            "Articles 9(2)-(3), 10(1), 11, 43(4),(6), 44 and 45"
+          ],
+          "registry_state": "official_consolidation_2024-06-28_checked_2026-10-20; amendment and case-date check required"
+        },
+        {
+          "source_ref": "candidate:eu:32023r2667",
+          "publisher_url": "https://eur-lex.europa.eu/eli/reg/2023/2667/oj/eng",
+          "source_kind": "binding_amending_eu_law",
+          "provisions": [
+            "Article 7: EU VAP start requires a separate Commission decision; Member States may notify a transition opt-out of up to seven years"
+          ],
+          "registry_state": "Official Journal text checked 2026-10-20; not in pinned core pack; check start decision and Member-State notice at case date"
+        },
+        {
+          "source_ref": "commission:visa-code-handbook-I-2024",
+          "publisher_url": "https://home-affairs.ec.europa.eu/document/download/1d79f44d-49ba-4847-951e-129f924b1051_en",
+          "source_kind": "official_nonbinding_operational_guidance",
+          "provisions": [
+            "Part II, section 2.2.1: urgent appointment/direct access; section 2.2.2: appointment timing"
+          ],
+          "registry_state": "Commission C(2024) 4319 final checked 2026-10-20; nonbinding guidance; verify later replacement"
+        }
+      ],
+      "counterarguments_and_exceptions": [
+        "Visa Code Article 10(1) permits electronic lodgement where available, while personal appearance may be required for fingerprint collection; assess the actual route and exceptions.",
+        "Regulation (EU) 2023/2667 Article 7 makes EU VAP operation dependent on a Commission start-date decision and permits Member-State transition opt-outs; do not infer a live or exclusive EU-wide platform from the regulation alone.",
+        "External service providers may perform specified intake tasks, but examination and the visa decision remain with the consulate under Article 43(4); a service-provider logistics requirement does not itself establish unlawful access."
+      ],
+      "records_to_seek": [
+        "Exact platform message and date",
+        "Published instructions and version",
+        "Alternative or assisted channel and response",
+        "Any representation arrangement, accessibility need, or failed upload record"
+      ],
+      "possible_next_step": "Ask the deciding mission to identify the governing route and an accessible alternative; preserve screenshots and dated access errors.",
+      "remedy_competence_and_limits": "No general illegality inference follows from a digital process. Competence, commencement, alternatives, and national accessibility remedies require separate checking."
+    },
+    {
+      "topic_id": "eu_family_documentary_proof",
+      "label": "EU-family proof and ordinary Schengen checklist",
+      "coverage": "core:attack:proof-restriction-review",
+      "c27_families": [
+        "eu_scope",
+        "proof",
+        "documents"
+      ],
+      "adverse_signal": "An authority is reported to reject or refuse to consider relevant evidence of EU-citizen identity, family relationship, dependency, or accompanying/joining because it is not on a stated list.",
+      "jurisdictional_scope": {
+        "eu_common": "First establish whether Directive 2004/38 applies; where it does, Commission guidance says applicants may choose relevant proof of family relationship and other covered conditions. Regulation (EU) 2016/1191 may remove legalisation/apostille formalities for covered public documents issued by one Member State for presentation in another; it does not decide recognition of the document's legal effects.",
+        "national_or_local": "Verify local instructions and any national evidential rules without treating an ordinary Schengen checklist as a closed EU-family proof rule. Confirm that the issuing authority/document/purpose and receiving Member State meet the Regulation's scope, and check translation/certified-copy rules plus any national assessment of legal effects."
+      },
+      "scope_questions": [
+        "Does Directive 2004/38 apply to this EU citizen and family member on these facts?",
+        "What proposition must be proved, what evidence was offered, and what did the authority actually reject?",
+        "Is the list binding, exhaustive, illustrative, or an ordinary Visa Code list applied in a different scope?"
+      ],
+      "sources": [
+        {
+          "source_ref": "eu:32004l0038",
+          "publisher_url": "https://eur-lex.europa.eu/eli/dir/2004/38/oj",
+          "source_kind": "binding_eu_law",
+          "provisions": [
+            "Articles 2, 3 and 5(2)"
+          ],
+          "registry_state": "official_EUR-Lex_text_checked_2026-10-20; confirm applicable version and national implementation for case date"
+        },
+        {
+          "source_ref": "eu:32009r0810",
+          "publisher_url": "https://eur-lex.europa.eu/eli/reg/2009/810/2024-06-28/eng",
+          "source_kind": "binding_eu_law",
+          "provisions": [
+            "Article 14(3) (Annex II is non-exhaustive), Article 21"
+          ],
+          "registry_state": "official_consolidation_2024-06-28_checked_2026-10-20; amendment and case-date check required"
+        },
+        {
+          "source_ref": "candidate:eu:52023xc01392",
+          "publisher_url": "https://eur-lex.europa.eu/eli/C/2023/1392/oj/eng",
+          "source_kind": "official_nonbinding_guidance",
+          "provisions": [
+            "Section 2.2.4: relevant alternative evidence may not be refused solely because it is not the preferred document type"
+          ],
+          "registry_state": "Official Journal guidance checked 2026-10-20; nonbinding; not in pinned core pack"
+        },
+        {
+          "source_ref": "commission:visa-code-handbook-I-2024",
+          "publisher_url": "https://home-affairs.ec.europa.eu/document/download/1d79f44d-49ba-4847-951e-129f924b1051_en",
+          "source_kind": "official_nonbinding_operational_guidance",
+          "provisions": [
+            "Part III: assess the Visa Code together with the specific Directive/Withdrawal Agreement rules for eligible family members"
+          ],
+          "registry_state": "Commission C(2024) 4319 final checked 2026-10-20; nonbinding guidance; verify later replacement"
+        },
+        {
+          "source_ref": "candidate:eu:32016r1191",
+          "publisher_url": "https://eur-lex.europa.eu/eli/reg/2016/1191/oj/eng",
+          "source_kind": "binding_eu_law",
+          "provisions": [
+            "Article 2(1)(e) (marriage documents)",
+            "Article 2(3)(a)-(b) (third-country documents and Member-State-certified copies of them excluded)",
+            "Article 2(4) (legal effects excluded)",
+            "Article 4 (exemption from legalisation and similar formality)",
+            "Article 5(1)-(2) (cross-border certified-copy requirements)",
+            "Article 6(1)(a)-(b) (translation and multilingual standard-form conditions)"
+          ],
+          "registry_state": "Official Journal text checked 2026-10-20; not in pinned core pack; applies only to covered public documents issued by one Member State for presentation in another; verify amendments, document scope, translation rules and case-date national treatment"
+        }
+      ],
+      "counterarguments_and_exceptions": [
+        "A checklist can be illustrative or request evidence relevant to the actual eligibility condition.",
+        "Alternative evidence can be considered and still found insufficient for a stated, evidence-based reason.",
+        "The Directive's scope and relationship with the Visa Code must be established before importing its family-member facilitation rules.",
+        "For a covered public document establishing marriage, Regulation (EU) 2016/1191 can exempt the document from legalisation or an apostille when presented in another Member State; it does not require recognition of the legal effects of its contents or establish every family-member eligibility condition.",
+        "For a covered document, Article 5 limits demands for both an original and certified copy and requires acceptance of a certified copy made in another Member State when certified copies are permitted; Article 6(1) limits translation demands in the stated language or sufficient multilingual-form conditions. Check the exact form, accepted languages and receiving-state procedure."
+      ],
+      "records_to_seek": [
+        "Exact checklist and any statement that it is exhaustive",
+        "Identity/family evidence actually presented",
+        "Authority response and reason for rejecting any alternative",
+        "Facts establishing the EU citizen's movement and the applicant's claimed category",
+        "Issuing authority and Member State, receiving authority and Member State, document purpose and form",
+        "Any translation, multilingual standard form, certified-copy, authenticity, or separate legal-effect objection",
+        "If relevant, whether the authority permits a certified copy, the issuing state of that copy, the document language, any accepted-language list, and whether a multilingual standard form contains enough information"
+      ],
+      "possible_next_step": "Identify the issuing and receiving Member States and exact document purpose; check whether Regulation (EU) 2016/1191 applies to formalities, then assess any separate translation, evidential, or legal-effect issue under the responsible national rules.",
+      "remedy_competence_and_limits": "The pathway flags a proof issue for review. It does not establish family status, documentary sufficiency, or an unlawful closed list. Commission guidance is nonbinding. Regulation (EU) 2016/1191 is limited to covered Member-State public documents and formalities; it excludes third-country public documents and does not determine recognition of legal effects. A document falling outside it may still be governed by another treaty or national rule, so do not assume an apostille is always required."
+    },
+    {
+      "topic_id": "complaint_and_review_path",
+      "label": "Complaint, appeal, or review-path information",
+      "coverage": "core:attack:complaint-path-review",
+      "c27_families": [
+        "authority",
+        "conduct",
+        "remedies"
+      ],
+      "adverse_signal": "A formal decision or independently actionable procedural act is known, but the authority's review information or the actual route is reported missing, inaccessible, or contradictory.",
+      "jurisdictional_scope": {
+        "eu_common": "Visa Code Article 32(3) requires a right of appeal under national law; Directive 2004/38 Article 31 and Charter Article 47 may apply within their respective scopes.",
+        "national_or_local": "The competent court/authority, deadline, filing method, standing and interim relief must be checked in the current national procedure for the actual decision and service date."
+      },
+      "scope_questions": [
+        "Was a formal appealable decision issued, or is the concern an earlier service/access problem?",
+        "Which decision-maker and legal regime apply?",
+        "What review route exists in the relevant national system and what deadline applies?"
+      ],
+      "sources": [
+        {
+          "source_ref": "eu:32009r0810",
+          "publisher_url": "https://eur-lex.europa.eu/eli/reg/2009/810/2024-06-28/eng",
+          "source_kind": "binding_eu_law",
+          "provisions": [
+            "Article 32(2)-(3), Annex VI",
+            "Article 38(5): Member States must provide a complaint procedure for staff conduct/application process and make its information public"
+          ],
+          "registry_state": "official_consolidation_2024-06-28_checked_2026-10-20; amendment and case-date check required"
+        },
+        {
+          "source_ref": "eu:32004l0038",
+          "publisher_url": "https://eur-lex.europa.eu/eli/dir/2004/38/oj",
+          "source_kind": "binding_eu_law",
+          "provisions": [
+            "Articles 30-31, where applicable"
+          ],
+          "registry_state": "official_EUR-Lex_text_checked_2026-10-20; national remedy remains unverified"
+        },
+        {
+          "source_ref": "eu:12012p",
+          "publisher_url": "https://eur-lex.europa.eu/eli/treaty/teu_2012/char_2012/oj/eng",
+          "source_kind": "primary_eu_law",
+          "provisions": [
+            "Article 47, only within the Charter's Article 51 scope"
+          ],
+          "registry_state": "Official Journal text checked 2026-10-20; applicability depends on implementation of EU law"
+        },
+        {
+          "source_ref": "commission:visa-code-handbook-I-2024",
+          "publisher_url": "https://home-affairs.ec.europa.eu/document/download/1d79f44d-49ba-4847-951e-129f924b1051_en",
+          "source_kind": "official_nonbinding_operational_guidance",
+          "provisions": [
+            "Part II, section 11.2; Part III family-member appeal information"
+          ],
+          "registry_state": "Commission C(2024) 4319 final checked 2026-10-20; points to national appeal law; nonbinding"
+        }
+      ],
+      "counterarguments_and_exceptions": [
+        "A complaint route can exist elsewhere in the legal system even if a web page omits it.",
+        "An informal complaint, supervisory route, SOLVIT, and judicial appeal are distinct and may not suspend one another's deadlines.",
+        "A procedural step may not be a separately reviewable decision at the current stage.",
+        "Visa Code Article 38(5) requires a procedure for complaints about staff conduct or the application process and public information about that procedure. A missing website link therefore does not alone prove the procedure is unavailable; this complaint process is distinct from the appeal right for a visa refusal under Article 32(3)."
+      ],
+      "records_to_seek": [
+        "Decision and service date",
+        "Appeal instructions and envelope/portal timestamp",
+        "Current official national procedure and competent court/authority",
+        "Any separate service complaint and whether it affects a deadline",
+        "Official national complaint procedure, authoritative decision instructions, alternate official publication of the route, and whether the complaint affects any appeal deadline"
+      ],
+      "possible_next_step": "Check the current official decision instructions and national procedure for the exact complaint or appeal sought; distinguish a website omission, an Article 38(5) staff/process complaint, and a formal visa-refusal appeal.",
+      "remedy_competence_and_limits": "The shared record cannot identify a national court, filing method, deadline, or interim remedy without a current Member-State source pack and case-stage facts. Article 38(5) requires a complaint procedure and public information, but it does not itself identify a country-specific filing body, deadline, judicial remedy, or suspensive effect."
+    },
+    {
+      "topic_id": "appointment_and_processing_time",
+      "label": "Appointment access and processing clock",
+      "coverage": "core:attack:procedural-access-review;core:attack:deadline-timeliness-review",
+      "c27_families": [
+        "access",
+        "lifecycle",
+        "timing"
+      ],
+      "adverse_signal": "A dated appointment or processing delay is reported, with a potentially applicable statutory or accelerated time rule.",
+      "jurisdictional_scope": {
+        "eu_common": "Visa Code Article 9(2)-(3) concerns appointment access; Article 23 processing time begins when an admissible application is lodged. Directive Article 5(2) adds accelerated handling for qualifying EU-family entry visas.",
+        "national_or_local": "Verify local appointment channels, representation and case-date rules; national urgent remedies and service standards require the responsible Member-State source."
+      },
+      "scope_questions": [
+        "Was an appointment requested, an application formally lodged, or only an inquiry submitted?",
+        "Which legal clock applies and what event starts it?",
+        "Is an EU-family accelerated procedure engaged, and what exact current authority source governs the step?"
+      ],
+      "sources": [
+        {
+          "source_ref": "eu:32009r0810",
+          "publisher_url": "https://eur-lex.europa.eu/eli/reg/2009/810/2024-06-28/eng",
+          "source_kind": "binding_eu_law",
+          "provisions": [
+            "Articles 9(2)-(3), 19 and 23"
+          ],
+          "registry_state": "official_consolidation_2024-06-28_checked_2026-10-20; appointment and processing clocks differ; amendment check required"
+        },
+        {
+          "source_ref": "eu:32004l0038",
+          "publisher_url": "https://eur-lex.europa.eu/eli/dir/2004/38/oj",
+          "source_kind": "binding_eu_law",
+          "provisions": [
+            "Article 5(2)"
+          ],
+          "registry_state": "official_EUR-Lex_text_checked_2026-10-20; qualifying-family-member and urgency conditions matter"
+        },
+        {
+          "source_ref": "commission:visa-code-handbook-I-2024",
+          "publisher_url": "https://home-affairs.ec.europa.eu/document/download/1d79f44d-49ba-4847-951e-129f924b1051_en",
+          "source_kind": "official_nonbinding_operational_guidance",
+          "provisions": [
+            "Part II, section 2.2.2: appointment generally within two weeks; Part III, section 4.4: EU-family processing beyond 15 days exceptional and duly justified, delays beyond four weeks described as not reasonable"
+          ],
+          "registry_state": "Commission C(2024) 4319 final checked 2026-10-20; nonbinding guidance, not a freestanding statutory deadline; verify later replacement"
+        }
+      ],
+      "counterarguments_and_exceptions": [
+        "Appointment waiting time is not automatically the same clock as processing after lodging.",
+        "Urgency, appointment availability, completeness, representation, and justified extensions may matter.",
+        "A missed service target does not by itself establish an individual remedy or damages claim."
+      ],
+      "records_to_seek": [
+        "Appointment request and response dates",
+        "Formal lodging receipt and any later completeness notice",
+        "Applicable current rule, start event, pauses, extensions, and decision service date",
+        "Urgency evidence and any alternative appointment offered"
+      ],
+      "possible_next_step": "Build a dated chronology with each event labelled separately and verify the exact current deadline rule before describing it as overdue.",
+      "remedy_competence_and_limits": "The core pattern is a review hypothesis only; it does not calculate a national urgent remedy or infer lateness from today's date."
+    },
+    {
+      "topic_id": "data_access_minimisation_and_preservation",
+      "label": "Personal-data access, minimisation, and separate preservation request",
+      "coverage": "not_implemented_in_C5d_deterministic_predicates",
+      "c27_families": [
+        "privacy",
+        "conduct",
+        "authority"
+      ],
+      "adverse_signal": "A specific personal-data request or a narrowly identified record-preservation concern is reported, with a named or potentially identifiable controller/processor and purpose.",
+      "jurisdictional_scope": {
+        "eu_common": "GDPR rights and the VIS Regulation may cover defined personal-data processing; CJEU case law construes the GDPR copy right.",
+        "national_or_local": "Identify each controller and applicable data regime; national administrative-file access, secrecy restrictions, supervisory procedure and any preservation order remain separate questions."
+      },
+      "scope_questions": [
+        "Which entity determines the processing purpose and means?",
+        "Does GDPR apply, or does a specialized Visa Information System or law-enforcement regime govern some data?",
+        "Is the request for personal data under GDPR Article 15 or for a whole administrative case file under national procedure?",
+        "Is preservation being requested under an identified legal basis or only as a practical step?"
+      ],
+      "sources": [
+        {
+          "source_ref": "eu:32016r0679",
+          "publisher_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng",
+          "source_kind": "binding_eu_law",
+          "provisions": [
+            "Articles 5, 12, 15, 17(3)(e), 18(1)(c), 23"
+          ],
+          "registry_state": "Official Journal text checked 2026-10-20; controller, processing purpose, special regimes and any restriction law require verification"
+        },
+        {
+          "source_ref": "candidate:eu:32008r0767",
+          "publisher_url": "https://eur-lex.europa.eu/eli/reg/2008/767/2023-12-27/eng",
+          "source_kind": "specialized_binding_eu_data_law",
+          "provisions": [
+            "Articles 38-40: VIS rights, assistance and remedies"
+          ],
+          "registry_state": "official_consolidation_2023-12-27 checked 2026-10-20; not in pinned core pack; verify amendments and regime applicability"
+        },
+        {
+          "source_ref": "cjeu:62021cj0487",
+          "publisher_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62021CJ0487",
+          "source_kind": "cjeu_interpretation_of_binding_eu_law",
+          "provisions": [
+            "Case C-487/21, paragraphs 39-44: context can require document extracts or entire documents for an intelligible copy, subject to others' rights; no general full-file entitlement"
+          ],
+          "registry_state": "Official CJEU judgment checked 2026-10-20; apply only to the GDPR access issue and relevant facts"
+        }
+      ],
+      "counterarguments_and_exceptions": [
+        "Article 15 concerns personal data and prescribed information. Under C-487/21, document extracts or entire documents may be needed where essential for intelligibility, subject to others' rights; this is not a general full-file entitlement.",
+        "Article 18(1)(c) restriction is available only where the controller no longer needs the data but the data subject needs them for legal claims; Article 17(3)(e) can limit erasure where processing is needed for legal claims.",
+        "Article 23 restrictions require a legislative measure meeting its conditions; do not infer a restriction without identifying that measure.",
+        "VIS access, correction and remedies have specialized provisions; a practical preservation request is distinct from an automatic retention duty or judicial preservation order."
+      ],
+      "records_to_seek": [
+        "Targeted request, response, identity verification, and delivery evidence",
+        "Controller/processor identity and processing purpose",
+        "Specific data categories, systems, recipients, and date range",
+        "Separate preservation request, records at risk, and any national procedural basis"
+      ],
+      "possible_next_step": "Separate the data-subject access request from any administrative-file request and any preservation request; identify the controller and ask for the applicable review route.",
+      "remedy_competence_and_limits": "No automatic deletion, retention, full-file access, or preservation conclusion. National access-to-file rules and specialized visa-data procedures remain separate source tasks."
+    }
+  ]
+}

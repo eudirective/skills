@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Consultation local artifact binding 0.1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "route_ref", "receipt_sha256", "answer_sha256", "validated_status", "coverage_claim"],
+  "properties": {
+    "schema_version": { "const": "0.1.0" },
+    "route_ref": { "type": "string", "pattern": "^r_[a-f0-9]{12,32}$" },
+    "receipt_sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "answer_sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "validated_status": { "enum": ["valid_partial_route", "structurally_closed_declared_plan"] },
+    "coverage_claim": { "enum": ["comprehensive", "partial", "preliminary"] }
+  }
+}

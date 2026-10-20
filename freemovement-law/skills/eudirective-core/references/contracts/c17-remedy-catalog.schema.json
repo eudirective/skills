@@ -1,0 +1,244 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "catalog_version",
+    "owner_module_id",
+    "jurisdiction",
+    "module_family",
+    "last_compiled",
+    "catalog_status",
+    "remedies"
+  ],
+  "properties": {
+    "catalog_version": {
+      "const": "0.1.0"
+    },
+    "owner_module_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1500
+    },
+    "jurisdiction": {
+      "enum": [
+        "EU",
+        "SE",
+        "TR"
+      ]
+    },
+    "module_family": {
+      "enum": [
+        "core",
+        "member_state",
+        "applicant_country"
+      ]
+    },
+    "last_compiled": {
+      "type": "string",
+      "format": "date"
+    },
+    "catalog_status": {
+      "const": "review_only_not_an_authoritative_filing_guide"
+    },
+    "remedies": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 45,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "remedy_id",
+          "category",
+          "trigger_rule_ids",
+          "allowed_stages",
+          "authority_ref",
+          "target_authority_level",
+          "source_refs",
+          "prerequisites_to_verify",
+          "powers_to_verify",
+          "limits",
+          "evidence_to_preserve",
+          "deadline",
+          "intended_outcome_for_review",
+          "filing_channel_for_review",
+          "priority_class",
+          "scope_note",
+          "assurance",
+          "requires_human_review",
+          "send_authorized",
+          "legal_violation_status"
+        ],
+        "properties": {
+          "remedy_id": {
+            "type": "string",
+            "pattern": "^(eu|se|tr):c17:[a-z0-9-]+$"
+          },
+          "category": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1500
+          },
+          "trigger_rule_ids": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 25,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1500
+            },
+            "uniqueItems": true
+          },
+          "allowed_stages": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 25,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1500
+            },
+            "uniqueItems": true
+          },
+          "authority_ref": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1500
+          },
+          "target_authority_level": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1500
+          },
+          "source_refs": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 25,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1500
+            },
+            "uniqueItems": true
+          },
+          "prerequisites_to_verify": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 25,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1500
+            },
+            "uniqueItems": true
+          },
+          "powers_to_verify": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 25,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1500
+            },
+            "uniqueItems": true
+          },
+          "limits": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 25,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1500
+            },
+            "uniqueItems": true
+          },
+          "evidence_to_preserve": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 25,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1500
+            },
+            "uniqueItems": true
+          },
+          "deadline": {
+            "type": "object",
+            "required": [
+              "kind",
+              "rule",
+              "trigger_event",
+              "calculation"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "not_established",
+                  "conditional_published_guidance",
+                  "normally_two_year_rule"
+                ]
+              },
+              "rule": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1500
+              },
+              "trigger_event": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "calculation": {
+                "const": "human_only"
+              }
+            }
+          },
+          "intended_outcome_for_review": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1500
+          },
+          "filing_channel_for_review": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1500
+          },
+          "priority_class": {
+            "enum": [
+              "deadline_preservation_review_first",
+              "parallel_review",
+              "nonbinding_parallel_review",
+              "fact_gathering_parallel_review",
+              "systemic_parallel_review"
+            ]
+          },
+          "scope_note": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1500
+          },
+          "assurance": {
+            "const": "curated_source_note_or_official_page_not_independent_merits"
+          },
+          "requires_human_review": {
+            "const": true
+          },
+          "send_authorized": {
+            "const": false
+          },
+          "legal_violation_status": {
+            "const": "not_determined"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "profile_version": "0.2.0",
+  "contract_version": "0.2.0",
+  "controller_protocol_version": "0.3.0",
+  "element_model_version": "0.2.0",
+  "family_policies": {
+    "core_source": {
+      "allowed_roles": [
+        "common_eu"
+      ],
+      "allowed_normative_layers": [
+        "eu_common"
+      ],
+      "allowed_attack_layers": [
+        "eu_common"
+      ]
+    },
+    "member_state": {
+      "allowed_roles": [
+        "residence_state",
+        "work_state",
+        "intended_residence_state",
+        "deciding_state",
+        "representing_state",
+        "challenged_authority_state",
+        "document_issuing_state"
+      ],
+      "allowed_normative_layers": [
+        "national"
+      ],
+      "allowed_attack_layers": [
+        "national"
+      ]
+    },
+    "applicant_country": {
+      "allowed_roles": [
+        "application_context",
+        "mission_context"
+      ],
+      "allowed_normative_layers": [
+        "local_operational"
+      ],
+      "allowed_attack_layers": [
+        "local_operational"
+      ]
+    }
+  },
+  "composition_policy": {
+    "duplicate_global_record_ids": "reject",
+    "semantic_conflicts": "preserve_explicitly",
+    "source_precedence": "authority_and_scope_not_module_order",
+    "country_may_override_eu_legal_hierarchy": false,
+    "missing_required_module": "block_context_freeze",
+    "missing_optional_module": "preserve_scoped_gap",
+    "duplicate_role_coverage": "reject",
+    "request_geography_mismatch": "reject",
+    "applicant_destination_record_outside_profile": "reject",
+    "controlled_analysis_unknown_record_ref": "reject"
+  }
+}

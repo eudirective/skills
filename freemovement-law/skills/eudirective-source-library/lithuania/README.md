@@ -1,0 +1,7 @@
+# Lithuania source candidates
+
+The 44-record inventory spans legislation and publication/reuse rules, residence and family procedures, guidance and forms, visas and missions, administrative remedies, courts, privacy, oversight and legal aid. The initial capture converted 13 records from the official TAR open-data API and two official HTML pages; a court-search page was saved as a discovery surface. Twenty-eight direct candidate attempts returned HTTP 403 or had no corresponding consolidated version in the API. No source has been accepted.
+
+[`references/lithuania-captures.json`](references/lithuania-captures.json) stores exact response hashes, API version identifiers, validity dates, direct-fetch failures, and conversion hashes. [`sync_lithuania.py`](sync_lithuania.py) uses ordinary allowlisted HTTPS GET requests, exact TAR identifiers, and deterministic offline replay. The official TAR API is a useful no-registration retrieval route, but currentness is not dependable: its consolidated records conflict with e-TAR version evidence for several acts, and two procedure records have only 2019 versions in the API. Direct e-TAR and government guidance pages returned 403 to this retrieval client. Keep every output as an unaccepted review candidate.
+
+See the [source list](references/source-list.md) and [sustainability assessment](references/sustainability-assessment.md). The API's CC BY 4.0 statement applies to the TAR open dataset; it does not establish rights for every e-TAR page, government guidance page, form, or court source.

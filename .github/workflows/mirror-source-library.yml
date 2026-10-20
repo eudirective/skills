@@ -1,0 +1,96 @@
+name: Mirror source library
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 3 * * 1'
+  push:
+    paths:
+      - '.github/workflows/mirror-source-library.yml'
+      - 'freemovement-law/scripts/version_manifest.mjs'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mirror-source-library
+  cancel-in-progress: false
+
+jobs:
+  mirror:
+    name: Sync public-data/source-library
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out skills
+        uses: actions/checkout@v7
+        with:
+          path: skills
+
+      - name: Check out source-library only
+        uses: actions/checkout@v7
+        with:
+          repository: eudirective/public-data
+          ref: main
+          path: public-data
+          sparse-checkout: |
+            source-library
+          persist-credentials: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Mirror source library and stamp its exact upstream tree version
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          source_dir="public-data/source-library"
+          destination_dir="skills/freemovement-law/skills/eudirective-source-library"
+          max_attempts=3
+          upstream_tree_sha="$(git -C public-data rev-parse HEAD:source-library)"
+
+          test -d "$source_dir"
+          test -f "$destination_dir/SKILL.md"
+          [[ "$upstream_tree_sha" =~ ^[0-9a-f]{40}$ ]]
+
+          git -C skills config user.name "github-actions[bot]"
+          git -C skills config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          for attempt in $(seq 1 "$max_attempts"); do
+            echo "Mirror push attempt $attempt of $max_attempts"
+
+            # Rebuild from the current main so unrelated commits are preserved.
+            git -C skills fetch --no-tags origin main
+            git -C skills reset --hard origin/main
+
+            # SKILL.md belongs to the skill and must never be deleted or replaced.
+            rsync -a --delete --exclude='/SKILL.md' \
+              "$source_dir/" "$destination_dir/"
+
+            node skills/freemovement-law/scripts/version_manifest.mjs --stamp --library-tree "$upstream_tree_sha"
+            node skills/freemovement-law/scripts/version_manifest.mjs --verify --library-tree "$upstream_tree_sha"
+
+            git -C skills add -A -- freemovement-law/skills/eudirective-source-library \
+              freemovement-law/skills/eudirective-core/references/session-version-manifest.json
+            if git -C skills diff --cached --quiet; then
+              echo "Already synchronized"
+              exit 0
+            fi
+
+            git -C skills commit -m "Sync source-library and its version fingerprint"
+            if git -C skills push origin HEAD:main; then
+              echo "Source library and version fingerprint synchronized"
+              exit 0
+            fi
+
+            if [ "$attempt" -lt "$max_attempts" ]; then
+              echo "Push failed; refreshing main and rebuilding the mirror commit"
+              sleep "$attempt"
+            fi
+          done
+
+          echo "Failed to synchronize source library after $max_attempts attempts"
+          exit 1

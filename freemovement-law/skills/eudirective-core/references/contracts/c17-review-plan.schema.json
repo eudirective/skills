@@ -1,0 +1,387 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "milestone",
+    "mode",
+    "case_id",
+    "procedure_stage",
+    "input_digests",
+    "catalog_digests",
+    "source_assurance_warning",
+    "legal_violation_status",
+    "verified_legal_merits",
+    "send_authorized",
+    "requires_human_review",
+    "c17_questions",
+    "remedy_candidates",
+    "excluded_routes",
+    "parallelism_warnings",
+    "correspondence_drafts",
+    "decision_gate",
+    "missing_prerequisites",
+    "review_facts"
+  ],
+  "properties": {
+    "milestone": {
+      "const": "C17b-c-d"
+    },
+    "mode": {
+      "const": "fictional_review_only"
+    },
+    "case_id": {
+      "type": "string",
+      "pattern": "^L[1-8]$"
+    },
+    "procedure_stage": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1500
+    },
+    "input_digests": {
+      "type": "object"
+    },
+    "catalog_digests": {
+      "type": "object"
+    },
+    "source_assurance_warning": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1500
+    },
+    "legal_violation_status": {
+      "const": "not_determined"
+    },
+    "verified_legal_merits": {
+      "const": false
+    },
+    "send_authorized": {
+      "const": false
+    },
+    "requires_human_review": {
+      "const": true
+    },
+    "c17_questions": {
+      "type": "array"
+    },
+    "remedy_candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "remedy_id",
+          "category",
+          "matched_rule_ids",
+          "authority_ref",
+          "jurisdiction",
+          "status",
+          "priority_class",
+          "deadline",
+          "prerequisites_to_verify",
+          "powers_to_verify",
+          "limits",
+          "evidence_to_preserve",
+          "source_refs",
+          "filing_channel_for_review",
+          "intended_outcome_for_review",
+          "outstanding_checks",
+          "human_review_required"
+        ],
+        "properties": {
+          "remedy_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1500
+          },
+          "category": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1500
+          },
+          "matched_rule_ids": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 25,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1500
+            },
+            "uniqueItems": true
+          },
+          "authority_ref": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1500
+          },
+          "jurisdiction": {
+            "enum": [
+              "EU",
+              "SE",
+              "TR"
+            ]
+          },
+          "status": {
+            "const": "candidate_for_human_review"
+          },
+          "priority_class": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1500
+          },
+          "deadline": {
+            "type": "object",
+            "required": [
+              "kind",
+              "rule",
+              "trigger_event",
+              "calculation"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "not_established",
+                  "conditional_published_guidance",
+                  "normally_two_year_rule"
+                ]
+              },
+              "rule": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1500
+              },
+              "trigger_event": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "calculation": {
+                "const": "human_only"
+              }
+            }
+          },
+          "prerequisites_to_verify": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 25,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1500
+            },
+            "uniqueItems": true
+          },
+          "powers_to_verify": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 25,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1500
+            },
+            "uniqueItems": true
+          },
+          "limits": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 25,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1500
+            },
+            "uniqueItems": true
+          },
+          "evidence_to_preserve": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 25,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1500
+            },
+            "uniqueItems": true
+          },
+          "source_refs": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 25,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1500
+            },
+            "uniqueItems": true
+          },
+          "filing_channel_for_review": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1500
+          },
+          "intended_outcome_for_review": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1500
+          },
+          "outstanding_checks": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 25,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1500
+            },
+            "uniqueItems": true
+          },
+          "human_review_required": {
+            "const": true
+          }
+        }
+      }
+    },
+    "excluded_routes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "remedy_id",
+          "reason",
+          "source_scope"
+        ],
+        "properties": {
+          "remedy_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1500
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1500
+          },
+          "source_scope": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1500
+          }
+        }
+      }
+    },
+    "parallelism_warnings": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 25,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 1500
+      },
+      "uniqueItems": true
+    },
+    "correspondence_drafts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "remedy_id",
+          "format",
+          "recipient_placeholder",
+          "text",
+          "send_authorized",
+          "human_review_required"
+        ],
+        "properties": {
+          "remedy_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1500
+          },
+          "format": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1500
+          },
+          "recipient_placeholder": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1500
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1500
+          },
+          "send_authorized": {
+            "const": false
+          },
+          "human_review_required": {
+            "const": true
+          }
+        }
+      }
+    },
+    "decision_gate": {
+      "const": "blocked_pending_source_factual_and_human_review"
+    },
+    "missing_prerequisites": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 25,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 1500
+      },
+      "uniqueItems": true
+    },
+    "review_facts": {
+      "type": "array"
+    },
+    "c6_verified_release_binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "case_id",
+        "c6_release_sha256",
+        "c12_sha256",
+        "c13_sha256",
+        "verification_assurance"
+      ],
+      "properties": {
+        "status": {
+          "const": "verified_c6_synthetic_release"
+        },
+        "case_id": {
+          "type": "string",
+          "pattern": "^CASE-C10-L[1-8]$"
+        },
+        "c6_release_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "c12_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "c13_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "verification_assurance": {
+          "const": "deterministic_replay_only_not_legal_validation"
+        }
+      }
+    }
+  }
+}

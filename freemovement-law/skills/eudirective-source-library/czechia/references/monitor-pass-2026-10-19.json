@@ -1,0 +1,249 @@
+{
+  "manifest_version": "0.4.0-candidate",
+  "jurisdiction": "czechia",
+  "as_of_date": "2026-10-19",
+  "method": "Ordinary allowlisted HTTPS GET only; no authentication, challenge bypass or form submission. Existing exact-response captures and review conversions are preserved; changes stage for review.",
+  "request_policy": {
+    "timeout_seconds": 8,
+    "max_response_bytes": 25165824,
+    "delay_seconds": 0
+  },
+  "official_hosts": [
+    "e-sbirka.gov.cz",
+    "ipc.gov.cz",
+    "mzv.gov.cz",
+    "ochrance.cz",
+    "www.ochrance.cz",
+    "portal.gov.cz",
+    "sbirka.nssoud.cz",
+    "uoou.gov.cz",
+    "usoud.cz",
+    "vyhledavac.nssoud.cz",
+    "www.e-sbirka.cz"
+  ],
+  "secondary_hosts": [],
+  "documents": [
+    {
+      "id": "cz-ipc-form-family-document-change",
+      "title": "Uniform blank form for change, replacement, or exchange of EU citizen/family-member residence documents",
+      "source_type": "official_application_form_pdf",
+      "language": "cs-en",
+      "url": "https://ipc.gov.cz/wp-content/uploads/2025/01/Zadost-o-zmenu-v-PKP-vymenu-a-vydani-nahraniho-PKP-vyplnitelny12122024_ZAM.pdf",
+      "topic_ids": [
+        "ADMIN-04",
+        "RESIDENCE-10"
+      ],
+      "discovered_from": "cz-ipc-forms-directory",
+      "link_title": "Application form for EU citizens and their family members",
+      "retrieved": false,
+      "accepted": false,
+      "monitor_only": true,
+      "retrieval_status": "monitor_only_parent_link_rediscovery_required"
+    },
+    {
+      "id": "cz-ipc-form-family-permanent",
+      "title": "Blank application form for permanent residence for an EU citizen and family members",
+      "source_type": "official_application_form_pdf",
+      "language": "cs-en",
+      "url": "https://ipc.gov.cz/wp-content/uploads/2025/01/Tiskopis-zadosti-o-TP-vyplnovaci_12122024_ZAM.pdf",
+      "topic_ids": [
+        "RIGHTS-06",
+        "RESIDENCE-07",
+        "RESIDENCE-09"
+      ],
+      "discovered_from": "cz-ipc-forms-directory",
+      "link_title": "Application form for a permanent residence permit for an EU citizen and his/her family members",
+      "retrieved": false,
+      "accepted": false,
+      "monitor_only": true,
+      "retrieval_status": "monitor_only_parent_link_rediscovery_required"
+    },
+    {
+      "id": "cz-ipc-form-family-renewal",
+      "title": "Blank application form for renewal of an EU family-member residence card",
+      "source_type": "official_application_form_pdf",
+      "language": "cs-en",
+      "url": "https://ipc.gov.cz/wp-content/uploads/2025/01/Tiskopis-zadosti-o-prodlouzeni-pobytove-karty-%C2%A787p_vyplnovaci-12122024_ZAM.pdf",
+      "topic_ids": [
+        "RIGHTS-02",
+        "RESIDENCE-05",
+        "RESIDENCE-07"
+      ],
+      "discovered_from": "cz-ipc-forms-directory",
+      "link_title": "Application form for renewal of a residence card (or residence permit) of family member of an EU citizen",
+      "retrieved": false,
+      "accepted": false,
+      "monitor_only": true,
+      "retrieval_status": "monitor_only_parent_link_rediscovery_required"
+    },
+    {
+      "id": "cz-ipc-form-family-temporary",
+      "title": "Blank application form for a family member’s temporary residence permit",
+      "source_type": "official_application_form_pdf",
+      "language": "cs-en",
+      "url": "https://ipc.gov.cz/tiskopis-zadost-o-prechodny-pobyt-%C2%A787b_vyplnovaci_zam/",
+      "topic_ids": [
+        "RIGHTS-02",
+        "RESIDENCE-02",
+        "RESIDENCE-05"
+      ],
+      "discovered_from": "cz-ipc-forms-directory",
+      "link_title": "Application form for a temporary residence permit for a family member of an EU citizen",
+      "retrieved": false,
+      "accepted": false,
+      "monitor_only": true,
+      "retrieval_status": "monitor_only_parent_link_rediscovery_required"
+    },
+    {
+      "id": "cz-ipc-form-registration",
+      "title": "Blank application form for an EU citizen registration certificate",
+      "source_type": "official_application_form_pdf",
+      "language": "cs-en",
+      "url": "https://ipc.gov.cz/wp-content/uploads/2025/01/Tiskopis-zadosti-o-osvedceni-o-registraci-%C2%A787a_vyplnovaci-12122024_ZAM.pdf",
+      "topic_ids": [
+        "RIGHTS-01",
+        "RESIDENCE-01"
+      ],
+      "discovered_from": "cz-ipc-forms-directory",
+      "link_title": "Application form for a registration certificate for EU citizens",
+      "retrieved": false,
+      "accepted": false,
+      "monitor_only": true,
+      "retrieval_status": "monitor_only_parent_link_rediscovery_required"
+    },
+    {
+      "id": "cz-mzv-mission-ankara-visas",
+      "title": "Czech Embassy in Ankara: general visa instructions (sample mission-specific route)",
+      "source_type": "official_consular_guidance",
+      "language": "en",
+      "url": "https://mzv.gov.cz/ankara/en/visa_and_consular_information/general_information_about_visas.html",
+      "topic_ids": [
+        "VISA-03",
+        "VISA-05",
+        "MISSION-18",
+        "MISSION-19"
+      ],
+      "retrieval_status": "monitor_only_local_practice_sample",
+      "monitor_note": "Illustrates local jurisdiction and appointment rules; not a representative rule for all missions.",
+      "retrieved": false,
+      "accepted": false,
+      "monitor_only": true
+    },
+    {
+      "id": "cz-mzv-mission-los-angeles-requirements",
+      "title": "Czech Consulate General in Los Angeles: short-stay Schengen requirements (sample mission-specific route)",
+      "source_type": "official_consular_guidance",
+      "language": "en",
+      "url": "https://mzv.gov.cz/losangeles/en/visa_information/visa_requirements/short_term_schengen_visa_requirements.html",
+      "topic_ids": [
+        "VISA-01",
+        "VISA-03",
+        "VISA-05",
+        "MISSION-18"
+      ],
+      "retrieval_status": "monitor_only_local_practice_sample",
+      "monitor_note": "Illustrates local document and appointment requirements; not a representative rule for all missions.",
+      "retrieved": false,
+      "accepted": false,
+      "monitor_only": true
+    },
+    {
+      "id": "cz-mzv-missions-directory",
+      "title": "Ministry of Foreign Affairs directory of Czech missions abroad",
+      "source_type": "official_mission_directory",
+      "language": "en",
+      "url": "https://mzv.gov.cz/jnp/en/diplomatic_missions/czech_missions_abroad/index.html",
+      "topic_ids": [
+        "MISSION-01",
+        "MISSION-18",
+        "MISSION-19"
+      ],
+      "retrieval_status": "monitor_only_paged_directory",
+      "monitor_note": "Directory is split into alphabetic subpages and then mission-specific pages. Mission procedures are local and change independently; this parent directory is a discovery route, not a complete guidance feed.",
+      "retrieved": false,
+      "accepted": false,
+      "monitor_only": true
+    },
+    {
+      "id": "cz-mzv-schengen-form-en",
+      "title": "Blank English Schengen visa application form",
+      "source_type": "official_application_form_pdf",
+      "language": "en",
+      "url": "https://mzv.gov.cz/public/fe/ee/98/6103975_3488176_ENGLISH.pdf",
+      "topic_ids": [
+        "VISA-01",
+        "VISA-03"
+      ],
+      "discovered_from": "cz-mzv-visa-forms-index",
+      "link_title": "ENGLISH (PDF, 88 KB)",
+      "retrieved": false,
+      "accepted": false,
+      "monitor_only": true,
+      "retrieval_status": "monitor_only_parent_link_rediscovery_required"
+    },
+    {
+      "id": "cz-nss-collection",
+      "title": "Supreme Administrative Court published decisions collection",
+      "source_type": "discovery_repository",
+      "language": "cs",
+      "url": "https://sbirka.nssoud.cz/",
+      "retrieved": false,
+      "accepted": false,
+      "monitor_only": true,
+      "topic_ids": [
+        "REMEDY-03",
+        "PRACTICE-04"
+      ],
+      "retrieval_status": "monitor_only_not_fetched"
+    },
+    {
+      "id": "cz-nss-search",
+      "title": "Supreme Administrative Court official decisions search",
+      "source_type": "discovery_repository",
+      "language": "cs",
+      "url": "https://vyhledavac.nssoud.cz/",
+      "retrieved": false,
+      "accepted": false,
+      "monitor_only": true,
+      "topic_ids": [
+        "REMEDY-03",
+        "PRACTICE-04"
+      ],
+      "retrieval_status": "monitor_only_not_fetched"
+    },
+    {
+      "id": "cz-uoou",
+      "title": "Czech Office for Personal Data Protection official portal",
+      "source_type": "official_guidance_directory",
+      "language": "en",
+      "url": "https://uoou.gov.cz/en",
+      "retrieved": false,
+      "accepted": false,
+      "monitor_only": true,
+      "topic_ids": [
+        "DATA-07",
+        "DATA-09"
+      ],
+      "retrieval_status": "monitor_only_not_fetched"
+    },
+    {
+      "id": "cz-usoud-search",
+      "title": "Constitutional Court NALUS decisions search",
+      "source_type": "discovery_repository",
+      "language": "cs",
+      "url": "https://www.usoud.cz/vyhledavani-rozhodnuti-us/",
+      "retrieved": false,
+      "accepted": false,
+      "monitor_only": true,
+      "topic_ids": [
+        "FOUND-02",
+        "REMEDY-03",
+        "PRACTICE-04"
+      ],
+      "retrieval_status": "monitor_only_not_fetched"
+    }
+  ],
+  "accepted_source_count": 0,
+  "retrieved_review_candidate_count": 13,
+  "converted_review_candidate_count": 13
+}
