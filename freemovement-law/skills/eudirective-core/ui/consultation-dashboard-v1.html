@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FreeMovement consultation review</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --surface: #ffffff;
+      --surface-muted: #f4f6f8;
+      --ink: #18212b;
+      --muted: #536273;
+      --line: #d6dee6;
+      --success-ink: #14532d;
+      --success-bg: #dcfce7;
+      --warning-ink: #78350f;
+      --warning-bg: #fef3c7;
+      --danger-ink: #7f1d1d;
+      --danger-bg: #fee2e2;
+      --neutral-ink: #334155;
+      --neutral-bg: #e2e8f0;
+      --accent: #176b56;
+      font: 14px/1.5 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --surface: #171b20;
+        --surface-muted: #222830;
+        --ink: #f1f5f9;
+        --muted: #b5c0cb;
+        --line: #3b4652;
+        --success-ink: #bbf7d0;
+        --success-bg: #123b27;
+        --warning-ink: #fde68a;
+        --warning-bg: #453314;
+        --danger-ink: #fecaca;
+        --danger-bg: #4b2020;
+        --neutral-ink: #dbe4ee;
+        --neutral-bg: #34404e;
+        --accent: #6ee7b7;
+      }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 16px; color: var(--ink); background: var(--surface); }
+    main { max-width: 900px; margin: 0 auto; }
+    h1 { font-size: 1.25rem; margin: 0 0 4px; }
+    h2 { font-size: 1rem; margin: 0 0 10px; }
+    h3 { font-size: .95rem; margin: 0; }
+    p { margin: 4px 0 0; }
+    .muted { color: var(--muted); }
+    .summary, .section, .metric, .record { border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+    .summary { padding: 16px; margin-bottom: 14px; }
+    .summary-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+    .badge { display: inline-flex; align-items: center; min-height: 28px; padding: 3px 10px; border-radius: 999px; font-weight: 700; border: 1px solid currentColor; }
+    .success { color: var(--success-ink); background: var(--success-bg); }
+    .warning { color: var(--warning-ink); background: var(--warning-bg); }
+    .danger { color: var(--danger-ink); background: var(--danger-bg); }
+    .neutral { color: var(--neutral-ink); background: var(--neutral-bg); }
+    .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; margin: 12px 0 14px; }
+    .metric { padding: 12px; background: var(--surface-muted); }
+    .metric strong { display: block; font-size: 1.05rem; }
+    progress { display: block; width: 100%; height: 10px; margin-top: 8px; accent-color: var(--accent); }
+    .section { padding: 14px; margin: 12px 0; }
+    .record { padding: 12px; margin-top: 9px; background: var(--surface-muted); }
+    .record-head { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+    dl { display: grid; grid-template-columns: minmax(120px, 190px) minmax(0, 1fr); gap: 4px 12px; margin: 10px 0 0; }
+    dt { color: var(--muted); font-weight: 600; }
+    dd { margin: 0; overflow-wrap: anywhere; }
+    .open { border-left: 4px solid #b45309; }
+    .caveats { padding-left: 20px; }
+    .error { border: 1px solid var(--danger-ink); border-radius: 10px; padding: 12px; color: var(--danger-ink); }
+    @media (max-width: 520px) {
+      body { padding: 10px; }
+      dl { grid-template-columns: 1fr; gap: 2px; }
+      dd { margin-bottom: 7px; }
+    }
+    @media (forced-colors: active) {
+      .badge, .summary, .section, .metric, .record { border: 1px solid CanvasText; }
+      progress { forced-color-adjust: auto; }
+    }
+  </style>
+</head>
+<body>
+  <main id="root" aria-live="polite" aria-busy="true">
+    <p class="muted">Waiting for the validated dashboard result…</p>
+  </main>
+  <script>
+    (() => {
+      const root = document.getElementById("root");
+      const safe = (value) => typeof value === "string" ? value : "";
+      const tone = (value) => ["success", "warning", "danger", "neutral"].includes(value) ? value : "neutral";
+      const el = (tag, className, text) => {
+        const node = document.createElement(tag);
+        if (className) node.className = className;
+        if (text !== undefined) node.textContent = safe(text);
+        return node;
+      };
+      const appendFieldList = (parent, fields) => {
+        if (!Array.isArray(fields) || fields.length === 0) return;
+        const list = document.createElement("dl");
+        for (const field of fields) {
+          if (!field || typeof field.label !== "string" || typeof field.value !== "string") continue;
+          list.append(el("dt", "", field.label));
+          list.append(el("dd", "", field.value));
+        }
+        parent.append(list);
+      };
+      const addProgress = (parent, label, measure) => {
+        if (!measure || !Number.isInteger(measure.total) || !Number.isInteger(measure.completed)) return;
+        const card = el("div", "metric");
+        const strong = el("strong", "", `${measure.completed} of ${measure.total}`);
+        card.append(strong, el("span", "muted", measure.label));
+        if (measure.total > 0) {
+          const bar = document.createElement("progress");
+          bar.max = measure.total;
+          bar.value = Math.min(measure.completed, measure.total);
+          bar.setAttribute("aria-label", `${measure.label}: ${measure.completed} of ${measure.total}`);
+          card.append(bar);
+        } else {
+          card.append(el("p", "muted", "No items in this recorded scope."));
+        }
+        card.append(el("p", "muted", `Scope: ${measure.scope}`));
+        parent.append(card);
+      };
+      const render = (model) => {
+        if (!model || model.schema_version !== "1.0.0" || !Array.isArray(model.sections)) return;
+        root.replaceChildren();
+        root.setAttribute("aria-busy", "false");
+        const summary = el("section", "summary");
+        const top = el("div", "summary-top");
+        const title = el("div", "");
+        title.append(el("h1", "", model.title || "FreeMovement — Consultation Review"));
+        title.append(el("p", "muted", model.assessment?.summary || "Validated dashboard data."));
+        top.append(title, el("span", `badge ${tone(model.assessment?.tone)}`, model.assessment?.label || "Status unknown"));
+        summary.append(top);
+        summary.append(el("p", "muted", `Coverage: ${model.assessment?.coverage_claim || "unknown"}. Validation: ${model.validation?.result || "unknown"}.`));
+        root.append(summary);
+
+        const metrics = el("section", "metrics");
+        addProgress(metrics, "operations", model.progress?.operations);
+        addProgress(metrics, "C27 checks", model.progress?.c27_checks);
+        const open = el("div", "metric");
+        open.append(el("strong", "", String(model.progress?.open_validation_items ?? "unknown")));
+        open.append(el("span", "muted", "Declared validation items still open"));
+        metrics.append(open);
+        const source = el("div", "metric");
+        const count = model.progress?.source_response?.count;
+        const responseStatus = model.progress?.source_response?.status || "unknown";
+        source.append(el("strong", "", responseStatus === "not applicable" ? "Not applicable" : count === null || count === undefined ? "Unknown" : String(count)));
+        source.append(el("span", "muted", "Legal texts reported for this answer"));
+        source.append(el("p", "muted", `Source tracking: ${responseStatus}; ${model.progress?.source_response?.provenance || "provenance unknown"}.`));
+        metrics.append(source);
+        const conversation = el("div", "metric");
+        const conversationCount = model.progress?.source_conversation?.count;
+        const conversationStatus = model.progress?.source_conversation?.status || "unknown";
+        conversation.append(el("strong", "", conversationStatus === "not applicable" ? "Not applicable" : conversationCount === null || conversationCount === undefined ? "Unknown" : String(conversationCount)));
+        conversation.append(el("span", "muted", "Legal texts reported earlier in this chat"));
+        conversation.append(el("p", "muted", `Source tracking: ${conversationStatus}; ${model.progress?.source_conversation?.provenance || "provenance unknown"}.`));
+        metrics.append(conversation);
+        const issueMetric = el("div", "metric");
+        issueMetric.append(el("strong", "", String(model.progress?.issues_declared ?? "unknown")));
+        issueMetric.append(el("span", "muted", "Declared material issues"));
+        metrics.append(issueMetric);
+        root.append(metrics);
+
+        for (const sectionData of model.sections) {
+          if (!sectionData || typeof sectionData.title !== "string" || !Array.isArray(sectionData.items)) continue;
+          const section = el("section", "section");
+          section.append(el("h2", "", sectionData.title));
+          for (const item of sectionData.items) {
+            if (!item || typeof item.title !== "string") continue;
+            const isOpen = Boolean(item.missing || item.effect || item.tone === "warning" || item.tone === "danger");
+            const card = el("article", `record${isOpen ? " open" : ""}`);
+            const head = el("div", "record-head");
+            head.append(el("h3", "", item.title));
+            if (item.status) head.append(el("span", `badge ${tone(item.tone)}`, item.status));
+            card.append(head);
+            if (item.detail) card.append(el("p", "", item.detail));
+            if (item.missing) card.append(el("p", "", `Missing: ${item.missing}`));
+            if (item.effect) card.append(el("p", "muted", `Effect: ${item.effect}`));
+            appendFieldList(card, item.fields);
+            section.append(card);
+          }
+          root.append(section);
+        }
+
+        const validation = el("section", "section");
+        validation.append(el("h2", "", "Receipt and release limits"));
+        validation.append(el("p", "", `Validation: ${model.validation?.result_label || "not recorded"}.`));
+        validation.append(el("p", "", `${model.validation?.validator_label || "Validator"} v${model.validation?.validator_version || "unknown"}.`));
+        validation.append(el("p", "", `Receipt fingerprint: ${model.validation?.receipt_sha256 || "not available"}.`));
+        validation.append(el("p", "", "Host release enforcement is unavailable; this display cannot block an ordinary chat response."));
+        const caveats = el("ul", "caveats");
+        for (const caveat of model.caveats || []) caveats.append(el("li", "", caveat));
+        validation.append(caveats);
+        root.append(validation);
+      };
+
+      window.addEventListener("message", (event) => {
+        if (event.source !== window.parent) return;
+        const message = event.data;
+        if (!message || message.jsonrpc !== "2.0" || message.method !== "ui/notifications/tool-result") return;
+        render(message.params?.structuredContent);
+      }, { passive: true });
+
+      if (window.openai?.toolOutput?.structuredContent) render(window.openai.toolOutput.structuredContent);
+    })();
+  </script>
+</body>
+</html>

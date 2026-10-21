@@ -1,13 +1,12 @@
 # Consultation route receipt gate
 
-`scripts/consultation_route_gate.py` is a portable structural check for a
-runtime or host that can call a local plugin script before rendering or
-releasing an answer. For an explicit invocation it returns a full deterministic
-dashboard preview and a validation record bound to the receipt SHA-256. It
-returns a non-zero result when a route labelled `comprehensive` still has
-declared work open. The skills-only plugin has no ChatGPT host hook, so the
-script is not automatically invoked in hosted ChatGPT and cannot itself block
-ordinary ChatGPT output.
+`scripts/consultation_route_gate.py` is the shared structural check for a
+privacy-minimised route receipt. The local `render_consultation_dashboard` MCP
+tool calls it before returning a versioned view model and full Markdown
+fallback. For an explicit invocation it returns a validation record bound to
+the receipt SHA-256 and rejects a `comprehensive` label when declared work
+remains open. The local tool can render an MCP App UI in a compatible host; it
+does not intercept the host's final answer or make the tool call mandatory.
 
 ## Receipt boundary
 
@@ -93,6 +92,20 @@ rather than an enforced check.
   finish. The board includes every declared source, check, issue, module, and
   operation; no compact rendering limit applies. If receipt validation fails,
   no successful dashboard result is emitted.
+- `scripts/consultation_dashboard_view.py` builds the versioned
+  `consultation-dashboard-view` 1.0.0 from the validated receipt, source
+  metrics, validator reports, and receipt-bound validation record. Operation
+  and C27 progress counts are scoped to declared required/triggered operations
+  and selected C27 rows. Unknown source tracking remains null; no percentage
+  is generated for unknown or zero denominators.
+- `scripts/consultation_dashboard_mcp.py` exposes the read-only
+  `render_consultation_dashboard` tool over local stdio and the bundled
+  `ui://freemovement-law/consultation-dashboard/v1.html` MCP App. It keeps
+  receipt and explicitly referenced generalized research JSON in temporary
+  local memory, makes no network calls, and logs no input content. The UI uses
+  semantic status labels as well as color, responds to
+  light/dark and forced-color modes, and provides the Markdown fallback as tool
+  text. It requires Python 3.10+ and the package in `requirements-runtime.txt`.
 - For an explicit local answer binding, `consultation_release_gate.py` requires
   the exact full dashboard and its validation record at the end of the answer.
   It binds the receipt bytes, answer bytes, and validation-record digest, then
@@ -104,6 +117,11 @@ Run it locally with:
 ```bash
 python scripts/consultation_route_gate.py route-receipt.json
 ```
+
+The normal plugin path is to let the host start the local MCP server from
+`mcp.json` and call `render_consultation_dashboard`. Install the documented
+Python dependency before enabling that stdio server. The local script command
+above remains useful for development and does not display the MCP App UI.
 
 An exit status of `3` rejects a `comprehensive` claim; `2` means the receipt or
 an artifact is invalid. A valid partial route returns `0`, lists every open
@@ -138,5 +156,6 @@ unavailable in the ordinary lane; the receipt must record that restriction,
 which leaves the comprehensive claim blocked where that match is required.
 
 Genuine release enforcement requires the host to call this gate, fail closed
-on invalid results, and bind the checked receipt to the exact answer it
-releases. No such host integration is established by this plugin package.
+on invalid results, require the rendered board, and bind the checked receipt
+to the exact answer it releases. The MCP tool is a callable plugin component,
+not a host release hook; omission of the call or board is still possible.

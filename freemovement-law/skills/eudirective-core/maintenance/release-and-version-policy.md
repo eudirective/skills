@@ -1,5 +1,24 @@
 # Release and version policy
 
+# Plugin v0.55.0 / core v0.54.0 local validated dashboard UI
+
+Adds a local, read-only stdio MCP tool and MCP App UI for consultation
+dashboards. The tool reuses the consultation route gate and existing C27, C3,
+research, and source-preflight validators, then builds a schema-validated
+`consultation-dashboard-view` 1.0.0. Its UI shows semantic status cards and
+separate counts for declared operation and C27 rows, supports light/dark and
+forced-color modes, and retains the deterministic Markdown fallback. Inputs
+remain local and temporary; the tool makes no network calls or persistent
+records. The tool cannot detect omitted work or enforce its own invocation, so
+host release enforcement remains unavailable. Core advances from `0.53.3` to
+`0.54.0`; plugin advances from `0.54.3` to `0.55.0`.
+
+Local automated verification covers the MCP stdio handshake/tool/resource,
+view-model schema, deterministic counts, unknown denominators, missing/effect
+rendering, safe text DOM use, and light/dark/forced-color accessibility hooks.
+The fresh-host UI live plan remains unexecuted by design; do not require live
+consultation tests during maintenance sessions.
+
 ## Plugin v0.54.3 / core v0.53.3 full dashboard and receipt-validation binding
 
 Compatible presentation and controller hardening. Replace the compact-by-

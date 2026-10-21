@@ -6,6 +6,21 @@ default; there is no compact version or request-only expanded audit. This
 example shows the headings and readable form. A real board includes every row
 present in its receipt, with no row limits.
 
+## Local MCP App presentation
+
+When the local dashboard tool is available, it renders the versioned view model
+as an interactive card board. The summary card uses a readable status label
+with a semantic color: green for reviewed, amber for partial, gray for not
+verified, and red for rejected or invalid validator output. Color never carries
+the status by itself. Progress cards show counts such as `4 of 5` for declared
+required/triggered operations and `3 of 4` selected C27 records, with a labeled
+progress bar. The UI does not turn those counts into a percentage or suggest
+that the receipt captured all applicable work. Detail cards retain every
+source, check, issue, operation, validator, and module record. Missing work
+always appears beside its effect. Light, dark, and forced-color modes use the
+same text labels; the full Markdown fallback comes from the same validated
+view model.
+
 ## Full consultation review
 
 ## FreeMovement — Consultation Review

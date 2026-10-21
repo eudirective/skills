@@ -19,7 +19,8 @@ from contract_validate import ContractError, validate_obj
 from module_conformance import ConformanceError, validate_paths
 from research_gate import ResearchGateError, validate_research
 from issue_source_preflight import SourcePreflightError, validate_source_preflight
-from consultation_dashboard import DashboardError, render_dashboard, validate_dashboard_receipt
+from consultation_dashboard import DashboardError, validate_dashboard_receipt
+from consultation_dashboard_view import build_dashboard_view_model, render_dashboard_view_model
 from consultation_issue_selection import (
     SelectionError as IssueSelectionError,
     load_json as load_issue_json,
@@ -410,24 +411,27 @@ def validate_route(path: Path) -> dict:
         "outstanding_count": len(outstanding),
     }
     dashboard_preview = None
+    dashboard_view_model = None
     if dashboard_report["required"]:
-        dashboard_preview = render_dashboard(
+        final_dashboard_inputs = {
+            "c27_check_count": len(route["c27_checks"]),
+            "issue_records_declared": route.get("issues") is not None,
+            "issue_record_count": len(route.get("issues", [])),
+            "source_ledger_validated": dashboard_report.get("source_metrics") is not None,
+            "dashboard_consistency_validated": True,
+            "module_pairs": module_reports,
+            "research": research_reports,
+            "source_preflight": source_preflight_reports,
+        }
+        dashboard_view_model = build_dashboard_view_model(
             route,
             dashboard_report.get("render_metrics") or {"response": {}, "conversation": {}},
             outstanding,
             REQUIRED_OPERATIONS[route["request_kind"]],
             validation_record=validation_record,
-            validator_reports={
-                "c27_check_count": len(route["c27_checks"]),
-                "issue_records_declared": route.get("issues") is not None,
-                "issue_record_count": len(route.get("issues", [])),
-                "source_ledger_validated": dashboard_report.get("source_metrics") is not None,
-                "dashboard_consistency_validated": True,
-                "module_pairs": module_reports,
-                "research": research_reports,
-                "source_preflight": source_preflight_reports,
-            },
+            validator_reports=final_dashboard_inputs,
         )
+        dashboard_preview = render_dashboard_view_model(dashboard_view_model)
 
     return {
         "status": status,
@@ -440,6 +444,7 @@ def validate_route(path: Path) -> dict:
         "research_reports": research_reports,
         "source_preflight_reports": source_preflight_reports,
         "dashboard_required": dashboard_report["required"],
+        "dashboard_view_model": dashboard_view_model,
         "dashboard_preview": dashboard_preview,
         "source_metrics": dashboard_report["source_metrics"],
         "assurance": "model_declared_plan_and_references_only; issue_signal_routing_is_checked_only_for_declared_issues; omitted_issues_conditional_trigger_semantics_and_evidence_truth_not_verified",
