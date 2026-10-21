@@ -79,6 +79,11 @@ rather than an enforced check.
   validated identity. `unavailable` tracking displays an
   unknown count, not zero. These are structural checks of self-reported
   consultation/module use, not proof that a source was read or a module used.
+- The local gate rejects `runtime_recorded` source states. This package has no
+  host-authenticated retrieval event contract, and hashing an arbitrary local
+  artifact does not prove that a legal text was opened. A future host
+  integration must validate its own trusted event before claiming independent
+  source-read provenance.
 - Returns a deterministic Markdown dashboard preview. For an explicit local
   answer binding, `consultation_release_gate.py` requires that exact preview at
   the end of the answer bytes before preparing or releasing the bound artifact.

@@ -26,10 +26,11 @@ Select FreeMovement and ask:
 > For a fictional example, what EU free-movement rule generally applies when an EU citizen moves to another Member State with a spouse?
 
 **Expected:** the answer leads with the requested explanation, then includes
-one compact `FreeMovement — Consultation Review` dashboard. It identifies its
-source-count basis (model-reported or runtime-recorded), lists the texts and
-pinpoints it actually consulted, states an unknown rather than zero when read
-tracking is unavailable, and gives a plain-language coverage status.
+one compact `FreeMovement — Consultation Review` dashboard. Source counts are
+labelled model-reported; this plugin has no host-authenticated source-read
+event. It lists the texts and pinpoints it reports consulting, states unknown
+rather than zero when read tracking is unavailable, and gives a plain-language
+coverage status. It does not claim independently recorded retrieval.
 
 ### B. Repeated explicit invocation in one chat
 
@@ -95,6 +96,8 @@ performed.` It does not invent source counts, issues, or module checks.
   state a reason when a relevant module was not used or C3 conformance was not
   checked?
 - Did partial items identify both the missing item and its effect?
+- When the compact limits were exceeded, did the dashboard show the exact
+  omitted counts and did an expanded audit retain the full details?
 - Did any response claim script execution or host enforcement without visible
   evidence?
 

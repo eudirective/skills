@@ -157,8 +157,14 @@
       "additionalProperties": false,
       "required": ["response_tracking", "conversation_tracking", "sources"],
       "properties": {
-        "response_tracking": { "enum": ["runtime_recorded", "model_declared", "unavailable"] },
-        "conversation_tracking": { "enum": ["runtime_recorded", "model_declared", "unavailable"] },
+        "response_tracking": {
+          "enum": ["runtime_recorded", "model_declared", "unavailable"],
+          "description": "The local route gate accepts model_declared or unavailable. runtime_recorded is reserved for a host that validates its own authenticated read event; the plugin gate rejects that value."
+        },
+        "conversation_tracking": {
+          "enum": ["runtime_recorded", "model_declared", "unavailable"],
+          "description": "The local route gate accepts model_declared or unavailable. runtime_recorded is reserved for a host that validates its own authenticated read event; the plugin gate rejects that value."
+        },
         "sources": {
           "type": "array", "maxItems": 300,
           "items": { "$ref": "#/$defs/consulted_source" }
@@ -191,8 +197,14 @@
         "library_state": { "enum": ["registered_record", "candidate_unaccepted", "source_note_only", "not_recorded", "not_applicable"] },
         "response_use": { "enum": ["consulted", "identified_not_read", "cited_from_memory", "not_referenced"] },
         "conversation_use": { "enum": ["consulted", "identified_not_read", "cited_from_memory", "not_referenced"] },
-        "response_provenance": { "enum": ["runtime_recorded", "model_declared", "none"] },
-        "conversation_provenance": { "enum": ["runtime_recorded", "model_declared", "none"] },
+        "response_provenance": {
+          "enum": ["runtime_recorded", "model_declared", "none"],
+          "description": "The local route gate accepts model_declared or none. runtime_recorded is reserved for a host that validates its own authenticated read event; the plugin gate rejects that value."
+        },
+        "conversation_provenance": {
+          "enum": ["runtime_recorded", "model_declared", "none"],
+          "description": "The local route gate accepts model_declared or none. runtime_recorded is reserved for a host that validates its own authenticated read event; the plugin gate rejects that value."
+        },
         "response_read_evidence": { "type": ["string", "null"], "maxLength": 500 },
         "conversation_read_evidence": { "type": ["string", "null"], "maxLength": 500 },
         "response_evidence_ref": { "oneOf": [{ "$ref": "#/$defs/opaque_ref" }, { "type": "null" }] },

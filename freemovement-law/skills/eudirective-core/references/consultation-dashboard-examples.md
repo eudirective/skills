@@ -39,7 +39,7 @@ capability. Render each line from the structured receipt; do not guess values.
 - `eudirective-ms-spain` — used this response; not used earlier in this chat; available; C3 not checked.
 - `eudirective-ac-turkiye` — not used this response or earlier; available; not applicable to the stated role.
 
-*Counts and module-use states are model-reported unless a runtime evidence event is shown.*
+*Source counts and module-use states are model-reported. This plugin has no host-authenticated source-read event; the local validator cannot prove that a source was opened.*
 
 The source bars compare the source groups displayed for this response; they do
 not represent the proportion of a library reviewed. A candidate or unaccepted
@@ -47,6 +47,12 @@ source remains counted if it was actually consulted, with its acceptance state
 shown beside the source. An external official text is shown in its own group,
 not as a bundled-library section. Keep all pinpoints in the expanded audit if
 the compact line must be shortened.
+
+The compact renderer shows at most 10 source groups, 12 source titles/pinpoints,
+3 highest-priority missing issues/checks, and 10 module-use rows. It reports
+how many records were omitted and retains the full source ledger and all
+missing/effect details for the expanded audit. Order gaps by urgency and
+materiality before rendering.
 
 For a C3-validated module pair, the receipt's `module_id` and `role` must use
 the exact manifest ID and canonical supported-role token. Optional
@@ -75,7 +81,8 @@ identified-not-read items, memory citations and external official sources.
 Finish with module use and C3 conformance evidence. Never present source-pack
 availability, a read instruction, or a module name as proof that it was used.
 
-**Assurance:** the package's receipts and dashboard are model-declared unless
-the record shows runtime evidence. The local validator can check declared
-records and bind an answer artifact, but this plugin does not call it
-automatically and no host-enforced release gate is established.
+**Assurance:** source reads and module use in this package are model-reported.
+The local validator checks declared records and selected validator outputs; it
+rejects `runtime_recorded` source states because no host-authenticated read
+event is available. The plugin does not call the validator automatically and
+no host-enforced release gate is established.
