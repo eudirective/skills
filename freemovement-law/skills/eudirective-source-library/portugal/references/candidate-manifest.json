@@ -4,17 +4,17 @@
   "inventory_source": "references/source-list.md",
   "inventory_research_date": "2026-10-16",
   "status": "partially_retrieved_review_candidates",
-  "retrieval_status": "1 scoped candidate converted as a review candidate; 6 official DRE requests returned the same 2346-byte OutSystems JavaScript shell with no legal text; 0 accepted",
+  "retrieval_status": "1 scoped candidate conversion remains unaccepted; 6 DRE HTTP responses returned an OutSystems JavaScript shell. Three scoped official links have separately reviewed external-reference decisions; accepted local copies: 0.",
   "accepted_source_count": 0,
   "candidate_source_count": 7,
   "retrieved_review_candidate_count": 7,
   "documents": [
     {
       "id": "pt-01-lei-n.º-37-2006-on-free-movement-and-residence-of-eu-citizens-and-family-me",
-      "title": "Lei n.º 37/2006 on free movement and residence of EU citizens and family members (consolidated text)",
-      "source_type": "official_guidance",
+      "title": "Lei n.º 37/2006 on free movement and residence of EU citizens and family members (DRE consolidated record)",
+      "source_type": "free_movement_primary_legislation",
       "language": "pt",
-      "url": "https://diariodarepublica.pt/dr/detalhe/lei/37-2006-538604",
+      "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2006-128792849",
       "retrieved": true,
       "accepted": false,
       "retrieval_status": "discovery_surface_no_text",
@@ -24,14 +24,16 @@
         "FAMILY-04",
         "VISA-01"
       ],
-      "scope_note": "Core national implementation; check 2023 amendment and retrieve the exact applicable official version.",
+      "scope_note": "Main national implementation of Directive 2004/38; link review in monitor register pt-06. DRE displayed in-force status and last alteration 2023-06-02; see the dated decision and limits.",
       "source_sha256": "0794abe5f8088cfd34e8e50bb5f9f7828b20a3c505f702e4b51be3bbb0631b57",
       "source_bytes": 2346,
       "source_content_type": "text/html",
       "raw_source_path": "temp/portugal/raw/pt-01-lei-n-37-2006-on-free-movement-and-residence-of-eu-citizens-and-family-me-0794abe5f8088cfd34e8e50bb5f9f7828b20a3c505f702e4b51be3bbb0631b57.html",
       "resolved_url": "https://diariodarepublica.pt/dr/detalhe/lei/37-2006-538604",
       "retrieval_note": "Public HTML response contained no sufficiently long extractable source body.",
-      "retrieved_at": "2026-10-19T03:50:57+00:00"
+      "retrieved_at": "2026-10-19T03:50:57+00:00",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-06"
     },
     {
       "id": "pt-02-lei-n.º-143-2015-adoption-regime",
@@ -122,14 +124,16 @@
         "ADMIN-04"
       ],
       "scope_note": "Current administrative overview, evidence routes, and distinctions between EU nationals and family members; check linked application channels and dates.",
-      "document_path": "../candidates/pt-aima-eu-family-card.md"
+      "document_path": "../candidates/pt-aima-eu-family-card.md",
+      "official_reference_status": "offered_for_human_site_review",
+      "human_review_site_offer": "pt-review-aima"
     },
     {
       "id": "pt-06-portaria-n.º-1334-d-2010-as-amended-by-portaria-n.º-13-2024:-eu-registratio",
-      "title": "Portaria n.º 1334-D/2010, as amended by Portaria n.º 13/2024: EU registration and family residence-card models and fees",
-      "source_type": "official_guidance",
+      "title": "Portaria n.º 1334-D/2010, consolidated EU registration and family residence-card models and fees",
+      "source_type": "free_movement_forms_implementing_legislation",
       "language": "pt",
-      "url": "https://diariodarepublica.pt/dr/detalhe/portaria/1334-d-2010-344939",
+      "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/portaria/2010-107034650",
       "retrieved": true,
       "accepted": false,
       "retrieval_status": "discovery_surface_no_text",
@@ -138,21 +142,23 @@
         "ADMIN-04",
         "DATA-01"
       ],
-      "scope_note": "Current form, document model, and fee framework; retrieve the consolidated regulation and the amending publication.",
+      "scope_note": "Government-published DRE consolidation; see dated monitor-register decision pt-08. Annex specimens were not visually reviewed, and Article 2 retains a Regulation 2019/1157 cross-reference requiring a current EU-law check.",
       "source_sha256": "0794abe5f8088cfd34e8e50bb5f9f7828b20a3c505f702e4b51be3bbb0631b57",
       "source_bytes": 2346,
       "source_content_type": "text/html",
       "raw_source_path": "temp/portugal/raw/pt-06-portaria-n-1334-d-2010-as-amended-by-portaria-n-13-2024-eu-registratio-0794abe5f8088cfd34e8e50bb5f9f7828b20a3c505f702e4b51be3bbb0631b57.html",
       "resolved_url": "https://diariodarepublica.pt/dr/detalhe/portaria/1334-d-2010-344939",
       "retrieval_note": "Public HTML response contained no sufficiently long extractable source body.",
-      "retrieved_at": "2026-10-19T03:51:02+00:00"
+      "retrieved_at": "2026-10-19T03:51:02+00:00",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-08"
     },
     {
       "id": "pt-07-código-do-procedimento-administrativo-(decreto-lei-n.º-4-2015)",
       "title": "Código do Procedimento Administrativo (Decreto-Lei n.º 4/2015)",
-      "source_type": "official_guidance",
+      "source_type": "administrative_procedure_legislation",
       "language": "pt",
-      "url": "https://diariodarepublica.pt/dr/detalhe/decreto-lei/4-2015-66041468",
+      "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2015-105602322",
       "retrieved": true,
       "accepted": false,
       "retrieval_status": "discovery_surface_no_text",
@@ -162,14 +168,16 @@
         "REMEDY-01",
         "REMEDY-12"
       ],
-      "scope_note": "General administrative procedure and review framework; verify the applicable version and whether a separate administrative-court source is needed.",
+      "scope_note": "Official consolidated working text; see dated monitor-register decision pt-13. DRE displayed in-force status and last alteration 2023-02-28; individual immigration applicability remains to be mapped.",
       "source_sha256": "0794abe5f8088cfd34e8e50bb5f9f7828b20a3c505f702e4b51be3bbb0631b57",
       "source_bytes": 2346,
       "source_content_type": "text/html",
       "raw_source_path": "temp/portugal/raw/pt-07-c-digo-do-procedimento-administrativo-decreto-lei-n-4-2015-0794abe5f8088cfd34e8e50bb5f9f7828b20a3c505f702e4b51be3bbb0631b57.html",
       "resolved_url": "https://diariodarepublica.pt/dr/detalhe/decreto-lei/4-2015-66041468",
       "retrieval_note": "Public HTML response contained no sufficiently long extractable source body.",
-      "retrieved_at": "2026-10-19T03:51:03+00:00"
+      "retrieved_at": "2026-10-19T03:51:03+00:00",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-13"
     }
   ],
   "converted_review_candidate_count": 1,
@@ -179,5 +187,8 @@
     "converted_text_count": 0,
     "discovery_shell_count": 6,
     "accepted_source_count": 0
-  }
+  },
+  "accepted_external_reference_count": 3,
+  "remaining_candidate_reference_count": 4,
+  "reference_review_note": "Three links in this scoped inventory have a corresponding dated external-reference decision in the 60-record monitor acceptance register (Law 37/2006 -> pt-06; Portaria 1334-D/2010 -> pt-08; Administrative Procedure Code -> pt-13). The associated local files remain unaccepted."
 }

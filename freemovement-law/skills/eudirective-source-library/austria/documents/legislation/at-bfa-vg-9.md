@@ -1,0 +1,44 @@
+# BFA-Verfahrensgesetz § 9 — protection of private and family life
+
+- Jurisdiction: Austria
+- Source ID: `at-bfa-vg-9`
+- Official URL: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20007944&Paragraf=9
+- Resolved URL: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20007944&Paragraf=9
+- Retrieved: 2026-10-19T10:11:23+00:00
+- Publisher identifier: `{"Gesetzesnummer": "20007944", "Paragraf": "9", "system": "RIS Bundesrecht konsolidiert"}`
+- Version evidence: RIS page title identifies the current consolidated version; retrieved 2026-10-19.
+- Media type: `text/html`
+- Raw source SHA-256: `28cc272fa23d2a9a0cf0288eff085747e624bff01cb1e392d98c053f7f28399a`
+- Conversion rule: `ris-contentblock-v1`; selector `div.contentBlock`
+- Status: accepted source; per-source gates passed
+
+## Captured official text
+
+3. Hauptstück
+Allgemeine Verfahrensbestimmungen
+Schutz des Privat- und Familienlebens
+§ 9.
+(1) Wird durch eine aufenthaltsbeendende Maßnahme in das Privat- oder Familienleben des Fremden eingegriffen, so ist die Erlassung der Entscheidung zulässig, wenn dies zur Erreichung der im Art. 8 Abs. 2 EMRK genannten Ziele dringend geboten ist.
+(2) Bei der Beurteilung des Privat- und Familienlebens im Sinne des Art. 8 EMRK sind insbesondere zu berücksichtigen:
+1.
+die Art und Dauer des bisherigen Aufenthaltes und die Frage, ob der bisherige Aufenthalt des Fremden rechtswidrig war,
+2.
+das tatsächliche Bestehen eines Familienlebens,
+3.
+die Schutzwürdigkeit des Privatlebens,
+4.
+der Grad der Integration,
+5.
+die Bindungen zum Heimatstaat des Fremden,
+6.
+die strafgerichtliche Unbescholtenheit,
+7.
+Verstöße gegen die öffentliche Ordnung, insbesondere im Bereich des Asyl-, Fremdenpolizei- und Einwanderungsrechts,
+8.
+die Frage, ob das Privat- und Familienleben des Fremden in einem Zeitpunkt entstand, in dem sich die Beteiligten ihres unsicheren Aufenthaltsstatus bewusst waren,
+9.
+die Frage, ob die Dauer des bisherigen Aufenthaltes des Fremden in den Behörden zurechenbaren überlangen Verzögerungen begründet ist.
+(3) Über die Zulässigkeit der aufenthaltsbeendenden Maßnahme ist jedenfalls begründet, insbesondere im Hinblick darauf, ob diese gemäß Abs. 1 auf Dauer unzulässig ist, abzusprechen. Die Unzulässigkeit einer aufenthaltsbeendenden Maßnahme ist nur dann auf Dauer, wenn die ansonsten drohende Verletzung des Privat- und Familienlebens auf Umständen beruht, die ihrem Wesen nach nicht bloß vorübergehend sind. Dies ist insbesondere dann der Fall, wenn die aufenthaltsbeendende Maßnahme schon allein auf Grund des Privat- und Familienlebens im Hinblick auf österreichische Staatsbürger oder Personen, die über ein unionsrechtliches Aufenthaltsrecht oder ein unbefristetes Niederlassungsrecht (§ 45 oder §§ 51 ff NAG) verfügen, unzulässig wäre.
+(Anm.: Abs. 4 aufgehoben durch Art. 4 Z 5, BGBl. I Nr. 56/2018)
+(5) Gegen einen Drittstaatsangehörigen, der vor Verwirklichung des maßgeblichen Sachverhaltes bereits fünf Jahre, aber noch nicht acht Jahre ununterbrochen und rechtmäßig im Bundesgebiet niedergelassen war, darf mangels eigener Mittel zu seinem Unterhalt, mangels ausreichenden Krankenversicherungsschutzes, mangels eigener Unterkunft oder wegen der Möglichkeit der finanziellen Belastung einer Gebietskörperschaft eine Rückkehrentscheidung gemäß §§ 52 Abs. 4 iVm 53 FPG nicht erlassen werden. Dies gilt allerdings nur, wenn der Drittstaatsangehörige glaubhaft macht, die Mittel zu seinem Unterhalt und seinen Krankenversicherungsschutz durch Einsatz eigener Kräfte zu sichern oder eine andere eigene Unterkunft beizubringen, und dies nicht aussichtslos scheint.
+(6) Gegen einen Drittstaatsangehörigen, der vor Verwirklichung des maßgeblichen Sachverhaltes bereits acht Jahre ununterbrochen und rechtmäßig im Bundesgebiet niedergelassen war, darf eine Rückkehrentscheidung gemäß § 52 Abs. 4 FPG nur mehr erlassen werden, wenn die Voraussetzungen gemäß § 53 Abs. 3 FPG vorliegen. § 73 Strafgesetzbuch (StGB), BGBl. Nr. 60/1974 gilt.

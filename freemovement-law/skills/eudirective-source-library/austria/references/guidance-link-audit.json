@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0.0",
+  "jurisdiction": "AT",
+  "reviewed_at": "2026-10-19",
+  "rule": "A parent-page hyperlink is not an accepted form or competent-authority source. Keep each target separate and distinguish live link verification from repository capture.",
+  "items": [
+    {
+      "id": "consular-directory",
+      "parent_source_id": "at-bmeia-representation-directory",
+      "label": "BMEIA representation directory",
+      "target": "https://www.bmeia.gv.at/reports/oesterreichische-vertretungen-im-ausland",
+      "target_verified_live": true,
+      "evidence": "The visible directory reference date is Stand 19. Oktober 2026. Structured replay yields 196 country headings and 524 representation records.",
+      "source_id": "at-bmeia-representation-directory",
+      "capture_status": "accepted_directory_mission_page_discovery_open",
+      "follow_up": "Use the 524-row operational queue to verify each mission page, appointment route, checklist and representation/outsourcing arrangement."
+    },
+    {
+      "id": "dsb-online-route",
+      "parent_source_id": "at-dsb-complaint",
+      "label": "Online DSB complaint / ex officio review form",
+      "target": "https://www.formularservice.gv.at/site/fsrv/user/formular.aspx?pid=5a37966ab26c4489adc20dc53162fa4d&pn=Bf10e1134f601464e9b3835170de668bd",
+      "target_verified_live": true,
+      "evidence": "Official DSB link resolved to Federal Form Service; live page offered complaint and ex officio review and stated scope/processing notices.",
+      "source_id": "at-dsb-online-complaint-form",
+      "capture_status": "accepted_route_metadata_only",
+      "follow_up": "Recheck the official parent link and initial route title/capabilities; do not store transient ViewState or submit the route."
+    },
+    {
+      "id": "family-card-explanation",
+      "parent_source_id": "at-bmi-eea-documentation-form",
+      "label": "English explanation and supporting-document list for form A",
+      "target": "https://www.bmi.gv.at/312_en/60a/start.html",
+      "target_verified_live": true,
+      "evidence": "Official BMI form page links a separate English explanation PDF dated 1 October 2026; the extracted supporting-document sections are stored in the pack.",
+      "source_id": "at-bmi-eea-documentation-form-explanation",
+      "capture_status": "accepted_native_pdf_and_text",
+      "follow_up": "Re-resolve the current direct PDF from the BMI index on refresh; Land-specific requirements remain open."
+    },
+    {
+      "id": "family-card-form",
+      "parent_source_id": "at-guidance-family-card",
+      "label": "Residence-card application form",
+      "target": "https://www.bmi.gv.at/312_en/60a/start.html",
+      "target_verified_live": true,
+      "evidence": "BMI official application page links the current English form A; page 2 checkbox 6 is residence card for relatives of EEA nationals and checkbox 8 is permanent residence card. The accompanying 1 October 2026 explanation is registered separately.",
+      "source_id": "at-bmi-eea-documentation-form",
+      "capture_status": "accepted_native_pdf_and_text",
+      "follow_up": "BMI form A has separate residence-card and permanent-residence-card choices. Check each Land for supplementary or replacement forms and procedures."
+    },
+    {
+      "id": "settlement-authority",
+      "parent_source_id": "at-guidance-family-card",
+      "label": "Competent settlement authority",
+      "target": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20004242&Paragraf=3",
+      "target_verified_live": true,
+      "evidence": "Accepted NAG §3 text and official central family-card guidance identify authority by main residence and name BH, Magistrat, Vienna MA35 and Graz route.",
+      "source_id": "at-nag-3-authority",
+      "capture_status": "national_rule_and_central_route_reviewed_land_practice_open",
+      "follow_up": "National authority law is accepted. Use operational-discovery.json to verify the current form, appointment, territorial jurisdiction and checklist for each of nine Länder."
+    },
+    {
+      "id": "va-online-route",
+      "parent_source_id": "at-volksanwaltschaft-complaint",
+      "label": "Electronic complaint form",
+      "target": "https://www.formularservice.gv.at/site/fsrv/user/formular.aspx?pid=94bf834faa464bd1b2ed097b9d9e6e5e&pn=B6924d464b02846bf9f874a1a5241ad6b",
+      "target_verified_live": true,
+      "evidence": "Official guide link resolved; target offered anonymous access or ID Austria login.",
+      "source_id": "at-volksanwaltschaft-online-complaint-form",
+      "capture_status": "accepted_route_metadata_only",
+      "follow_up": "Recheck the official parent link and anonymous/ID Austria options; do not store transient ViewState or submit the route."
+    },
+    {
+      "id": "va-postal-pdf",
+      "parent_source_id": "at-volksanwaltschaft-complaint",
+      "label": "Postal complaint form PDF",
+      "target": "https://volksanwaltschaft.gv.at/fileadmin/user_upload/Downloads/va_beschwerdeformular.pdf",
+      "target_verified_live": true,
+      "evidence": "Official one-page PDF opened; identifies complainant, affected authority, subject and complaint fields.",
+      "source_id": "at-volksanwaltschaft-pdf-complaint-form",
+      "capture_status": "accepted_native_pdf_and_text",
+      "follow_up": "Recheck the official parent link and current PDF on refresh; keep it separate from the complaint guide."
+    },
+    {
+      "id": "visa-c1",
+      "parent_source_id": "at-guidance-visa-application",
+      "label": "Schengen visa harmonised application form C1",
+      "target": "https://www.oesterreich.gv.at/de/linkresolution/link/20225",
+      "target_verified_live": true,
+      "evidence": "Official resolver opened to a six-page PDF. Page 1 says EU/EEA/Swiss family members should leave fields 21, 22, 30, 31 and 32 blank.",
+      "source_id": "at-oesterreich-schengen-visa-form",
+      "capture_status": "accepted_native_pdf_and_text",
+      "follow_up": "Compare mission-specific supporting-document checklists; the C1 form is a general Schengen form, not a privileged-family-member checklist."
+    }
+  ]
+}

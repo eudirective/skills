@@ -1,12 +1,12 @@
 {
   "catalog_version": 1,
-  "catalog_date": "2026-10-18",
+  "catalog_date": "2026-10-21",
   "catalog_status": "partial_retrieval_review_candidates",
   "jurisdiction": "Estonia (EE)",
   "scope": "Official Estonian source discovery for EU/EEA/Swiss free movement and third-country family members, residence, forms, visas and missions, administrative procedure, evidence, access to information, remedies, privacy, oversight, legal aid, and administrative courts. Switzerland is separately in scope where the Estonian law extends to Swiss nationals.",
   "accepted_source_count": 0,
   "candidate_source_count": 42,
-  "acquisition_rule_status": "Dated current Estonian XML retrieval covers 13 unique identified acts; exact-version XML and English captures cover the remaining identified Riigi Teataja candidate texts. Other source groups remain pending; no source accepted.",
+  "acquisition_rule_status": "Dated current Estonian XML retrieval covers 13 unique identified acts; three official current-law links are accepted within narrow external scopes after 21 October re-fetches; 0 local copies are accepted. Guidance, forms, missions, procedure/remedies and courts remain under review.",
   "official_change_channels": {
     "national_gazette": "https://www.riigiteataja.ee/",
     "publisher_faq_and_api_migration": "https://www.riigiteataja.ee/kkk",
@@ -243,11 +243,11 @@
         "record": "Riigi Teataja; RT I, 03.06.2026, 6"
       },
       "functional_relationship": "close_functional_match",
-      "verification_status": "Official search result identifies the Act and says this wording is not yet in force until 31 October 2029; not the operative text for the research date",
+      "verification_status": "Official XML re-fetched 2026-10-21; record 103062026006 is a full-text edition beginning 2029-10-31, so it is not operative on the review date.",
       "retrieval_status": "converted_review_candidate_unaccepted",
       "retrieval_shape": "exact published source ID -> official XML API",
       "seed_status": "candidate",
-      "check_note": "Exact full-text candidate saved from the official Riigi Teataja API; currentness and source scope remain under review.",
+      "check_note": "Retain as a future-effective edition only; do not use as current law for dates before 2029-10-31.",
       "candidate_text_path": "../candidates/ee-citizen-act-et-future.md",
       "source_sha256": "65044adb48e1eba39194cdcb110194d176b232db821858311d3bed8d101358f0",
       "converted_sha256": "cb02e4079367c41d2b8b4768a371330224dc22954a33e46d9b4c31f613b4358b",
@@ -256,7 +256,8 @@
       "retrieved": true,
       "accepted": false,
       "version_evidence": "Exact official XML edition 103062026006; title Euroopa Liidu kodaniku seadus 1; validity period 2029-10-31 mitte jõustunud.",
-      "exact_estonian_source_id": "103062026006"
+      "exact_estonian_source_id": "103062026006",
+      "version_checked_on": "2026-10-21"
     },
     {
       "id": "ee-citizen-act-en-2025",
@@ -330,7 +331,7 @@
       "retrieval_status": "converted_review_candidate_unaccepted",
       "retrieval_shape": "exact published source ID -> official XML API",
       "seed_status": "candidate",
-      "check_note": "Exact full-text candidate saved from the official Riigi Teataja API; currentness and source scope remain under review.",
+      "check_note": "Official page search result shows the consolidated text in force from 2026-01-01, but the refreshed XML metadata contains dokumentStaatus=esitatud avaldamiseks. That field’s legal-version meaning is unresolved. Keep the official page as a human-review reference and do not accept the XML conversion until the displayed page status is directly reconciled.",
       "candidate_text_path": "../candidates/ee-eu-right-regulation.md",
       "source_sha256": "d5fba89c379bdaf0249f3905ca8018a4b9656f3414ae51ca91c12060f16d0c7e",
       "converted_sha256": "97b146a5174cb5794c1900a145f5140a17f0b3e51842016dd948deb0606a6551",
@@ -339,7 +340,8 @@
       "retrieved": true,
       "accepted": false,
       "version_evidence": "Exact official XML edition 125042025013; title Euroopa Liidu kodaniku ja tema perekonnaliikme elamisõiguse taotlemise, andmise ning selle pikendamise ja lõpetamise kord; validity period 2026-01-01.",
-      "exact_estonian_source_id": "125042025013"
+      "exact_estonian_source_id": "125042025013",
+      "last_reviewed_on": "2026-10-21"
     },
     {
       "id": "ee-population-register-act",
@@ -474,7 +476,7 @@
         "record": "Riigi Teataja; RT I, 10.07.2026, 1"
       },
       "functional_relationship": "related_source",
-      "verification_status": "Official search results identify 2026 wording and EU/EEA/Swiss family-member exceptions; live API response not tested",
+      "verification_status": "The English candidate is a separate version that ended 2026-09-30. Its linked Estonian current consolidation was re-fetched on 2026-10-21; official metadata and § 1 were checked. The external Estonian reference is accepted within its displayed interval; neither local conversion is accepted.",
       "retrieval_status": "converted_review_candidate_unaccepted",
       "retrieval_shape": "official English blob-html API -> publisher-marked article body",
       "seed_status": "candidate",
@@ -492,8 +494,14 @@
       "current_estonian_text_path": "../candidates/ee-leave-entry-ban-act-current-et-2026-10-19.md",
       "current_estonian_source_sha256": "ae6e150fa9cb9243c48f0e2057edcfffbbeea892387a6f737cdec9e91f3327f7",
       "current_estonian_converted_sha256": "065b02feeeddcf7d2ae76327c5dfd211194921e2f3471f3bbc62f244dbb627e0",
-      "current_estonian_as_of_date": "2026-10-19",
-      "current_estonian_version_evidence": "Väljasõidukohustuse ja sissesõidukeelu seadus; global ID 130062026110; effective period 2026-10-01 2026-12-31+02:00; as of 2026-10-19."
+      "current_estonian_as_of_date": "2026-10-21",
+      "current_estonian_version_evidence": "Väljasõidukohustuse ja sissesõidukeelu seadus; global ID 130062026110; effective period 2026-10-01 2026-12-31+02:00; re-fetched and confirmed 2026-10-21.",
+      "current_estonian_external_reference_accepted": true,
+      "current_estonian_external_reference_checked_on": "2026-10-21",
+      "current_estonian_external_reference_url": "https://www.riigiteataja.ee/akt/130062026110",
+      "current_estonian_external_reference_current_url": "https://www.riigiteataja.ee/akt/130062026110?leiaKehtiv",
+      "current_estonian_external_reference_version": "Official Estonian full text, record 130062026110, valid 2026-10-01 through 2026-12-31; SHA-256 ae6e150fa9cb9243c48f0e2057edcfffbbeea892387a6f737cdec9e91f3327f7.",
+      "external_reference_decision": "accepted_with_narrow_external_scope_for_current_estonian_representation_only"
     },
     {
       "id": "ee-identity-documents-act",
@@ -1156,11 +1164,11 @@
         "record": "130062026103"
       },
       "functional_relationship": "related_source",
-      "verification_status": "Downloaded from the official effective-date search result; XML ID, title and validity interval checked. Converted candidate is hash-pinned and replays offline.",
-      "retrieval_status": "converted_review_candidate_unaccepted",
+      "verification_status": "Official exact-version Estonian consolidated text re-fetched through the publisher XML API on 2026-10-21; publisher metadata identifies a full text and an interval covering the review date. Response SHA-256 matches the 2026-10-19 official capture. External link accepted only within the recorded interval; derived conversion remains unaccepted.",
+      "retrieval_status": "official_reference_accepted_narrow_scope_local_conversion_unaccepted",
       "retrieval_shape": "dated official law search -> exact XML API",
       "seed_status": "candidate",
-      "check_note": "Current Estonian consolidated text; as-of 2026-10-19; not accepted pending scope review.",
+      "check_note": "Official Estonian consolidated text re-fetched on 2026-10-21 and accepted as an external reference for the displayed 2026-10-01 through 2026-12-31 interval. The derived local conversion remains unaccepted.",
       "candidate_text_path": "../candidates/ee-aliens-act-current-2026-10.md",
       "source_sha256": "bba62efcf35705e8cd9461c2dc2828f7879528a9ff0e913806d8ba3b7403d3be",
       "converted_sha256": "80742b97a676c0c57324a24f091d1613cd5a487e0735261ffab5b5bcf4bfd189",
@@ -1168,7 +1176,11 @@
       "resolved_url": "https://www.riigiteataja.ee/public-api/api/v1/akt/130062026103/xml",
       "retrieved": true,
       "accepted": false,
-      "version_evidence": "Official dated law search resolved Välismaalaste seadus global ID 130062026103; effective period 2026-10-01 2026-12-31; as of 2026-10-19."
+      "version_evidence": "Official dated law search resolved Välismaalaste seadus global ID 130062026103; effective period 2026-10-01 2026-12-31; re-fetched and confirmed 2026-10-21.",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21",
+      "current_text_url": "https://www.riigiteataja.ee/akt/130062026103?leiaKehtiv"
     },
     {
       "id": "ee-citizen-act-current-2026-10",
@@ -1182,11 +1194,11 @@
         "record": "130062026048"
       },
       "functional_relationship": "close_functional_match",
-      "verification_status": "Downloaded from the official effective-date search result; XML ID, title and validity interval checked. Converted candidate is hash-pinned and replays offline.",
-      "retrieval_status": "converted_review_candidate_unaccepted",
+      "verification_status": "Official exact-version Estonian consolidated text re-fetched through the publisher XML API on 2026-10-21; publisher metadata identifies a full text and an interval covering the review date. Response SHA-256 matches the 2026-10-19 official capture. External link accepted only within the recorded interval; derived conversion remains unaccepted.",
+      "retrieval_status": "official_reference_accepted_narrow_scope_local_conversion_unaccepted",
       "retrieval_shape": "dated official law search -> exact XML API",
       "seed_status": "candidate",
-      "check_note": "Current Estonian consolidated text; as-of 2026-10-19; not accepted pending scope review.",
+      "check_note": "Official Estonian consolidated text re-fetched on 2026-10-21 and accepted as an external reference for the displayed 2026-10-01 through 2027-12-31 interval. The derived local conversion remains unaccepted; the separate 2029-effective record is not current for this review date.",
       "candidate_text_path": "../candidates/ee-citizen-act-current-2026-10.md",
       "source_sha256": "b5a0e338d74f46c2bfa66b6f5602b973df1f77f87b82c97a66d230bc37f25052",
       "converted_sha256": "c1b66565dcd1f26977963854fdd29f2ad33259467d12ae146227b6426e9d881b",
@@ -1194,9 +1206,14 @@
       "resolved_url": "https://www.riigiteataja.ee/public-api/api/v1/akt/130062026048/xml",
       "retrieved": true,
       "accepted": false,
-      "version_evidence": "Official dated law search resolved Euroopa Liidu kodaniku seadus global ID 130062026048; effective period 2026-10-01 2027-12-31; as of 2026-10-19."
+      "version_evidence": "Official dated law search resolved Euroopa Liidu kodaniku seadus global ID 130062026048; effective period 2026-10-01 2027-12-31; re-fetched and confirmed 2026-10-21.",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21",
+      "current_text_url": "https://www.riigiteataja.ee/akt/130062026048?leiaKehtiv"
     }
   ],
   "retrieved_review_candidate_count": 21,
-  "converted_review_candidate_count": 21
+  "converted_review_candidate_count": 21,
+  "accepted_external_reference_count": 3
 }

@@ -2,7 +2,7 @@
 
 **Research date:** 10 October 2026; case-law follow-up added 11 October 2026. **Scope:** Romanian legislation, judgments of Romanian courts, Romanian authorities' official guidance, and explicitly labeled secondary case-law reproductions/digests from the follow-up. This is a **list of sources**, not a pack of law texts. No EU legislation, CJEU judgments or other supranational source documents are included. Official Romanian legal texts are generally in Romanian.
 
-**Version note:** Official source links are preferred. The 11 October case-law follow-up also includes three clearly marked secondary items where the official full judgment was not retrieved: two third-party reproductions and one court-authored digest. These are not represented as official texts. The *Portal Legislativ* may provide a consolidated form and historical versions; the currency of each individual consolidation as at 10 October 2026 has **not** been independently verified. Judicial entries distinguish decisions resolving an issue from inadmissible referrals. Lower-court case-law coverage is not exhaustive.
+**Version note:** The 11 October case-law follow-up includes three clearly marked secondary items where the official full judgment was not retrieved: two third-party reproductions and one court-authored digest. These are not represented as official texts. On 21 October 2026, selected *Portal Legislativ* records were checked directly and their displayed consolidation-history dates and limits were recorded in [source-acceptance.json](source-acceptance.json). That review does not update the full 79-target inventory or certify every consolidation as current on 21 October. For all other records, retain their original research date and limitations. Judicial entries distinguish decisions resolving an issue from inadmissible referrals. Lower-court case-law coverage is not exhaustive.
 
 ## 1. Constitutional rights, immigration, EU-family entry and borders
 
@@ -129,3 +129,18 @@ These follow-up records are categorized by topic and source quality. Official Î
 ### Petitions and preliminary complaints
 
 - **CCR Decizia nr. 1.355 (11 December 2008)** — rejected constitutional challenges concerning repetitive petitions under OG 27/2002 and preliminary complaints under Law 554/2004. Its statutory context is historical; check later amendments. **Quality: official Portal Legislativ text.** [Official decision](https://legislatie.just.ro/Public/DetaliiDocument/101319).
+
+## Official references reviewed 21 October 2026 (link use only)
+
+These rows document human-reviewed official links. They do not add download or conversion targets to `references/manifest.json`, and they do not accept any stored Markdown copy.
+
+| Reference | Displayed version or cutoff | Accepted link scope |
+|---|---|---|
+| OUG nr. 102/2005 — [Portal Legislativ](https://legislatie.just.ro/Public/DetaliiDocument/208825) | Consolidation history through 8 March 2024 | Official consolidated instrument for the EU/EEA/Swiss free-movement framework; not a complete article-by-article coverage finding. |
+| HG nr. 1.864/2006 — [Portal Legislativ](https://legislatie.just.ro/Public/DetaliiDocument/136986) | Consolidation history through 7 June 2022 | Official implementing instrument and document models; incorporated forms were not visually reviewed. |
+| Normele metodologice for OUG nr. 102/2005 — [Portal Legislativ](https://legislatie.just.ro/Public/DetaliiDocument/136987) | Consolidation history through 7 June 2022 | Official republished implementing rules; provision-specific coverage remains open. |
+| OUG nr. 194/2002 — [Portal Legislativ](https://legislatie.just.ro/Public/DetaliiDocument/50236) | Consolidation history through 27 April 2026 | Official general foreigners regime; do not substitute it for OUG nr. 102/2005 EU-family rules. |
+| Law nr. 554/2004 — [Portal Legislativ](https://legislatie.just.ro/Public/DetaliiDocument/298762) | Consolidation history through 10 July 2025 | Official administrative-litigation act; procedural route and deadlines still need an issue-specific crosswalk. |
+| OG nr. 27/2002 — [Portal Legislativ](https://legislatie.just.ro/Public/DetaliiDocument/33817) | Consolidation history through 1 December 2024 | Official petitions act; not a substitute for the administrative-litigation remedy. |
+| OUG nr. 51/2008 — [Portal Legislativ](https://legislatie.just.ro/Public/DetaliiDocument/140280) | Consolidation history through 3 November 2024 | Newly identified official public legal-aid act; its Article 2 covers applicants domiciled or habitually resident in Romania or another EU Member State, and Article 3 lists administrative cases. Eligibility and procedure are not mapped here. |
+| CCR Decision nr. 664/2025 — [Portal Legislativ](https://legislatie.just.ro/Public/DetaliiDocument/309058) | Decision of 25 November 2025; published 2 April 2026 | Official decision on Law 554/2004 Article 9; the constitutional challenge was rejected. It is not migration-specific and is not a general merits rule. |

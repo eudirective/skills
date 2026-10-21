@@ -1,0 +1,19 @@
+# Sweden issue-led coverage register
+
+**Reviewed:** 21 October 2026  
+**State:** Ten official external references accepted within dated scopes; no local copies, topics, or country review accepted. This is a pack assessment, not a legal-sufficiency certification.
+
+| Issue area | Sources identified and accepted | What remains open |
+|---|---|---|
+| EU/EEA family residence and return of Swedish citizens | Utlänningslagen 3 a kap.; official Migrationsverket family guidance; CJEU O. and B. | Map eligibility and evidence issue by issue. Compare the agency's three-month summary with genuine residence and family-life conditions in relevant cases. Do not treat the summary as the full legal test. |
+| Swiss citizens and family | Utlänningsförordningen 5 kap. 16 §; Migrationsverket Swiss procedure | Keep separate from the EEA residence-card route. Recheck the current EU–Swiss agreement text and map the route's conditions and forms. |
+| Ordinary family immigration linked to Swedish citizens | Migrationsverket national-family explainer; MIGRFS 2026:12 on housing standards | MIGRFS 2026:12 is now tracked in the source manifest. Map the full permit requirements, exceptions, evidence, forms, fees, processing, and decision remedies. Do not apply it to Directive 2004/38 cases without a separate basis. |
+| UK Withdrawal Agreement | Utlänningslagen 3 b kap. | Identify current residence-status procedures, evidence, deadlines, family scope, and remedies; not covered in depth here. |
+| Administrative procedure and delay | Förvaltningslagen current consolidated page, including §§4, 10–12 and 49 | Crosswalk the general Act against migration-specific procedure. The §12 request to decide is limited to an individual-initiated case undecided at first instance after six months; it is not a general delay appeal. |
+| Appeals and decision review | Utlänningslagen ch. 14; Migrationsverket residence-card appeal guidance | Map appeal rights by decision type, competent court, deadline, suspension/stay, and onward appeal. For an actual refusal, the individual decision gives the filing instructions and deadline. |
+| Case-law discovery | Official Sök rättspraxis search and RSS; four selected Migration Court of Appeal decisions are pinned in the source manifest | The official service adds new decisions from 4 March 2025; older decision texts are spread across court sites to varying degrees. Search relevant migration issues across appropriate courts, and record holdings, outcomes, and procedural posture. The selected four cases do not establish coverage. |
+| Consular and visa operations | One Sweden Abroad Istanbul EU-family visa page is in the guidance manifest | Offer the whole Sweden Abroad site for human review. Check mission-specific instructions, appointment routes, outsourcing, fees, checklists, and submission channels for relevant posts. |
+| Forms, privacy, oversight, and public records | The existing guidance manifest includes selected Migration Agency, JO, and IMY links | Recheck live forms and submission routes. Map each oversight body's mandate and deadlines; the pages were not comprehensively reviewed in this assessment. |
+| Update and source maintenance | Riksdag consolidated SFS pages and linked amendment registers; official MIGRFS catalog and RSS; court search RSS and current discovery script | The existing updater tracks known statutes, MIGRFS numbers and Migration Court of Appeal discoveries. Its court query does not establish systematic lower-court discovery. A scheduled run and successful execution were not checked. |
+
+Official current consolidated text pages are accepted as working references with their displayed dates and scope. Gazette-fragment reconstruction, API registration, local capture, conversion, hashes, or scheduled updating are not prerequisites for using these links. Those are separate optional maintenance choices.

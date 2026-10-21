@@ -1,0 +1,39 @@
+# Spain issue-led coverage register
+
+**Reviewed:** 21 October 2026  
+**Status:** 0 of 14 baseline topics complete. Twenty-two official links are usable within their reviewed scopes. No source topic or country review is complete. The 51-record candidate inventory is a discovery register, not a finding of legal sufficiency.
+
+| Topic / issue | Official sources usable by link | State and next work |
+|---|---|---|
+| EU citizen and family routes, including entry, residence, permanent residence, extended family, public policy and removal | RD 240/2007; Order PRE/1490/2012; Ley 39/2015; Ley 29/1998 | **Partial.** Map Directive 2004/38 issue by issue, including family-member categories, refusal and removal safeguards, procedure and remedies. RD 240/2007's BOE consolidation is dated 9 November 2015; follow material amendments and judgments when relevant. |
+| EEA EFTA scope | RD 240/2007 and the EEA Agreement family-mobility instruments | **Unresolved.** Identify the Spanish extension and EEA adaptations provision by provision. A general grouping in guidance does not itself show which treaty provisions extend each right. |
+| Swiss mobility and family members | EU–Switzerland Agreement on free movement of persons; selected Ministry and Police guidance | **Partial.** Keep the bilateral agreement distinct from Directive 2004/38 and the EEA regime. Check applicable protocols and Spanish procedure for the specific right being mapped. |
+| Family members of Spanish nationals | LO 4/2000; RD 1155/2024 Chapter VII, Articles 93–99; Ministry Hoja 18 (April 2026); EX-24 discovery lead | **Partial, high priority.** Keep this route distinct from EU/EEA/Swiss free movement. The current BOE consolidation of RD 1155/2024 is dated 22 September 2026. The Supreme Court judgment BOE-A-2026-19632, published that day, nullifies specified wording in Articles 94.1(f), 97.4 and 98.1. Map the operative changes and reasoning to application practice before treating refusal criteria or family proof as settled. |
+| Returning Spanish citizens and family | RD 240/2007 and SEM Instructions 2/2025 are relevant leads | **Unresolved.** Establish the applicable EU free-movement test and Spanish route for a Spanish citizen returning after genuine residence in another Member State. Search and map the controlling CJEU and Spanish case law; do not collapse this route into the non-mobile Spanish-national authorization. |
+| UK Withdrawal Agreement family route | No Spanish-specific accepted source yet | **Unresolved.** Identify the current Spanish implementation, status documents and family rules for protected Withdrawal Agreement beneficiaries. |
+| Visas, entry, facilitation, refusals and consular process | RD 240/2007; RD 1155/2024; Hoja 18; initial Brussels and Rabat mission candidates | **Partial.** Map visa categories, facilitation, evidence limits, refusal reasons, appeal route, deadlines and competent mission. Review mission-specific appointment, provider and fee instructions for relevant applicant locations. |
+| EU registration, family cards and permanent residence | National Police EU-registration page; Hoja 63 permanent-card page; RD 240/2007; EX-18/EX-19 discovery leads | **Partial.** Verify current forms and fees, provincial office responsibilities, appointments, channels, deadlines and supporting-document requirements. Hoja 63 is dated May 2025 and is accepted only for its permanent-card procedure; its Spanish-national-family note is not the current Chapter VII source. |
+| Spanish-national-family authorization procedure | RD 1155/2024 Articles 93–99; Hoja 18; EX-24 discovery lead | **Partial.** Crosswalk who may apply, where, visa sequencing, timelines, evidence, validity, renewals, independent residence and remedies. Reconcile current forms and mission-specific filing routes. |
+| Administrative procedure, delay, notice and access to files | Ley 39/2015; LO 4/2000; RD 240/2007; RD 1155/2024 | **Unresolved.** Map general and special procedures to each application and adverse decision. Identify deadlines, deemed decisions, file access, service, reasons, suspension and action for administrative silence. |
+| Removal, detention and public-order decisions | RD 240/2007; LO 4/2000; RD 1155/2024; Ley 29/1998 | **Unresolved.** Build a decision-by-decision safeguard and remedy crosswalk, preserving the difference between free-movement and ordinary immigration routes. |
+| Judicial review and effective remedies | Ley 29/1998; CENDOJ and Constitutional Court search portals | **Unresolved.** Identify competent court, standing, time limits, prior administrative review, interim relief, appeals and enforcement. No systematic immigration query or case-law batch is recorded. |
+| Legal aid and court fees | Ley 1/1996; RD 141/2021 | **Partial.** BOE updated RD 141/2021 on 15 October 2026, and the existing local metadata shows the same date. Identify the relevant amendment, eligibility, territorial competence and which immigration or judicial procedures are covered. |
+| Family status, civil registration and foreign documents | Civil Code; Ley 20/2011; Ley 54/2007; MAEC legalization guidance lead | **Partial.** Map proof of marriage, partnership, parentage, dependency and adoption; determine registry or recognition channels, translations, legalization and treaty exemptions, and remedies for rejection. |
+| Privacy, information access, equality and oversight | LO 3/2018; Ley 19/2013; national AEPD, CTBG and Defensor del Pueblo sources | **Partial.** Determine the competent national or regional authority, evidence and complaint route, scope of each body's review, and interaction with immigration deadlines. Identify regional data-protection, transparency and ombuds institutions. |
+| Regional administration, consular networks and continuing case-law discovery | Ministry and MAEC directory leads; CENDOJ and Constitutional Court portals; regional government portals | **Unresolved.** Enumerate all 17 autonomous communities and Ceuta/Melilla, map regional offices and procedures, run relevant mission searches, and define repeatable issue-led case-law searches. Portal existence and sample pages do not establish coverage. |
+
+## Newly identified legal dependency
+
+BOE's current RD 1155/2024 consolidation links Supreme Court judgment 868/2026, BOE-A-2026-19632. The judgment dated 8 July 2026, corrected on 1 September 2026 and published on 22 September 2026, annuls:
+
+- the final clause of Article 94.1(f) requiring a relationship to have been constituted under Spanish law;
+- parts of Articles 97.4 and 98.1 that enabled automatic criminal-record denial without individual assessment in the cases covered by Article 20 TFEU.
+
+The published operative disposition and the current consolidated regulation are accepted as official links. The full reasoning, precise scope in individual cases, implementation in Ministry guidance and application-form effects remain to be reviewed. This is a source dependency and coverage issue, not a conclusion on an individual application.
+
+## Route and status distinctions
+
+1. EU/EEA free-movement rules, Swiss agreement rights, family of Spanish nationals who have not exercised free movement, returning-Spanish rights and UK Withdrawal Agreement rights are separate lanes.
+2. A Ministry or Police page may group nationals operationally. That grouping does not establish identical legal bases or treaty scope.
+3. An accepted public link is usable within its stated scope. It does not show that the related topic is adequately covered.
+4. A missed or inaccessible page does not establish that a source or procedure does not exist. The official-site offers in `source-acceptance.json` identify human-review routes.

@@ -5,7 +5,7 @@
   "inventory_research_date": "2026-10-18",
   "scope": "Official Finnish sources related to EU, EEA and Swiss free movement; third-country family members; visa and consular routes; administrative procedure, access to information, remedies, oversight, privacy, legal aid and administrative courts. This is a bounded discovery register, not a statement of legal equivalence or complete coverage.",
   "status": "partially_retrieved_review_candidates",
-  "retrieval_status": "23 source records have saved review-candidate conversions; broad page pass also staged changed versions, while direct 403 and textless surfaces remain unresolved; 0 accepted",
+  "retrieval_status": "23 source records have saved review-candidate conversions; the broad page pass staged changed versions, while direct 403 and textless surfaces remain unresolved; 0 local copies accepted; 8 current Finnish Finlex law-page references accepted externally.",
   "accepted_source_count": 0,
   "candidate_source_count": 36,
   "official_hosts": [
@@ -43,7 +43,7 @@
   "search_coverage": [
     {
       "source_class": "National legislation and legal-source discovery",
-      "search_outcome": "candidate(s) found; English-version currency gaps remain",
+      "search_outcome": "Eight current Finnish consolidated-law references accepted as official external Finlex page links; English-version currency and wider source coverage remain open.",
       "official_channels": [
         "Finlex",
         "N-Lex"
@@ -60,11 +60,11 @@
         "sv",
         "en"
       ],
-      "coverage_limit": "Finlex's current Finnish Aliens Act page exceeded the research client's 4 MiB response limit. The official English Aliens Act translation metadata shows an amendment cutoff of 389/2023; several procedural translations are older still. No date-bound consolidated API response was fetched."
+      "coverage_limit": "Current Finnish Finlex pages provide dated consolidated-law references for eight statutes. Acceptance is link-only and does not accept the local conversions or establish topic coverage. English translations have recorded cutoffs; Act 808/2019 has a version-metadata conflict in the retained API XML."
     },
     {
       "source_class": "Finlex retrieval and conversion route",
-      "search_outcome": "documented API and package-download routes found; live payload not verified",
+      "search_outcome": "Live API and official page routes checked; direct page links accepted where the publisher identifies current consolidated legislation.",
       "official_channels": [
         "Finlex open-data documentation",
         "Finlex OpenAPI description"
@@ -76,7 +76,7 @@
       "languages": [
         "en"
       ],
-      "coverage_limit": "Official documentation describes no registration, TLS 1.2+, a required User-Agent, page/limit pagination, HTTP 429 throttling, Akoma Ntoso XML, relative attachment/PDF links, and daily package updates. Workspace DNS blocked a live endpoint check; schema-specific conversion and terms beyond the published documentation remain unverified."
+      "coverage_limit": "The API returned identity-matching XML for Acts 808/2019, 1050/2018 and 616/2019; current-consolidation API requests for five acts returned 404. Dated official Finlex current-law pages remain usable references without API retrieval or conversion. These local-copy routes are optional; the 808/2019 XML metadata discrepancy remains limited to that retained conversion."
     },
     {
       "source_class": "EU/EEA/Swiss residence, family routes and guidance",
@@ -322,7 +322,7 @@
       "verification_status": "Official Finlex current-text page captured; Finlex API route returned 404 for this record; stable ELI current-version identity retained.",
       "retrieval_status": "converted_review_candidate",
       "retrieval_shape": "Finlex current-text HTML page, rendered main-content capture",
-      "note": "Broad statute with EU/EEA/Swiss residence provisions; §3's scope and Chapter 10 should be verified in the exact date-bound native text before source acceptance.",
+      "note": "External reference accepted to Finlex current Finnish text, ELI 2026-06-26. Check exact provision wording as needed; its local conversion remains a review candidate, not accepted text.",
       "retrieved": true,
       "accepted": false,
       "document_path": "../candidates/fi-aliens-act-301-2004-current.md",
@@ -337,7 +337,8 @@
       "converted_sha256": "5b7ece218371451db9d36eb90acab9e4b716ffaa959d8fad287ee913652700f0",
       "source_bytes": 6322885,
       "monitor_conversion_note": "The broad HTML pass saved the official page response but its generic converter extracted only a portal shell; the full text is recorded separately in the source-specific Finlex capture lane.",
-      "monitor_shell_candidate_text_path": "source-library/finland/monitor-candidates/fi-aliens-act-fi.md"
+      "monitor_shell_candidate_text_path": "source-library/finland/monitor-candidates/fi-aliens-act-fi.md",
+      "external_reference_accepted": true
     },
     {
       "id": "fi-aliens-act-en",
@@ -400,7 +401,8 @@
       "converted_sha256": "7df3bb8bfb3929fe4102ecdbcf05f5dbefbc4e3d9039cc0b03527e5c4506c7c0",
       "source_bytes": 1048114,
       "monitor_conversion_note": "The broad HTML pass saved the official page response but its generic converter extracted only a portal shell; the full text is recorded separately in the source-specific Finlex capture lane.",
-      "monitor_shell_candidate_text_path": "source-library/finland/monitor-candidates/fi-administrative-procedure-act.md"
+      "monitor_shell_candidate_text_path": "source-library/finland/monitor-candidates/fi-administrative-procedure-act.md",
+      "external_reference_accepted": true
     },
     {
       "id": "fi-administrative-judicial-procedure-act",
@@ -431,7 +433,8 @@
       "converted_sha256": "65f25139b73ebbc5d1ab5f4b44d3ecbab17fe74af3f939a6c21c150cc5652f48",
       "source_bytes": 221173,
       "monitor_conversion_note": "The broad HTML pass saved the official page response but its generic converter extracted only a portal shell; the full text is recorded separately in the source-specific Finlex capture lane.",
-      "monitor_shell_candidate_text_path": "source-library/finland/monitor-candidates/fi-administrative-judicial-procedure-act.md"
+      "monitor_shell_candidate_text_path": "source-library/finland/monitor-candidates/fi-administrative-judicial-procedure-act.md",
+      "external_reference_accepted": true
     },
     {
       "id": "fi-administrative-procedure-act-en",
@@ -500,8 +503,8 @@
       "id": "fi-openness-act",
       "title": "Act on the Openness of Government Activities, 621/1999",
       "source_type": "national_access_to_information_statute",
-      "language": "en-fi",
-      "url": "https://finlex.fi/en/legislation/1999/621",
+      "language": "fi",
+      "url": "https://www.finlex.fi/fi/lainsaadanto/1999/621",
       "publisher_identifier": {
         "system": "Finlex",
         "record": "621/1999; current ELI: http://data.finlex.fi/eli/sd/1999/621/ajantasa/2025-11-28/fin"
@@ -525,7 +528,8 @@
       "document_path": "../candidates/fi-openness-act-621-1999-current-fi.md",
       "raw_capture_path": "temp/finland/raw/fi-openness-act-9f6098543ecbf648176e18275488f76b0e2f1509ddc6c02948663168c7d2677d.html",
       "monitor_conversion_note": "The broad HTML pass saved the official page response but its generic converter extracted only a portal shell; the full text is recorded separately in the source-specific Finlex capture lane.",
-      "monitor_shell_candidate_text_path": "source-library/finland/monitor-candidates/fi-openness-act.md"
+      "monitor_shell_candidate_text_path": "source-library/finland/monitor-candidates/fi-openness-act.md",
+      "external_reference_accepted": true
     },
     {
       "id": "fi-data-protection-act",
@@ -556,7 +560,8 @@
       "document_path": "../candidates/fi-data-protection-act-1050-2018-current.md",
       "raw_capture_path": "temp/finland/raw/fi-data-protection-act-8482195cf92e1e5ad946c8d1391cc31138c077e2ac49f531f239e3ce5283af6a.xml",
       "monitor_conversion_note": "The broad HTML pass saved the official page response but its generic converter extracted only a portal shell; the full text is recorded separately in the source-specific Finlex capture lane.",
-      "monitor_shell_candidate_text_path": "source-library/finland/monitor-candidates/fi-data-protection-act.md"
+      "monitor_shell_candidate_text_path": "source-library/finland/monitor-candidates/fi-data-protection-act.md",
+      "external_reference_accepted": true
     },
     {
       "id": "fi-language-act",
@@ -587,7 +592,8 @@
       "document_path": "../candidates/fi-language-act-423-2003-current-fi.md",
       "raw_capture_path": "temp/finland/raw/fi-language-act-3ada7c7fa626ab763166cc9d38226907ab555840ffd888327e41f179b283e7b1.html",
       "monitor_conversion_note": "The broad HTML pass saved the official page response but its generic converter extracted only a portal shell; the full text is recorded separately in the source-specific Finlex capture lane.",
-      "monitor_shell_candidate_text_path": "source-library/finland/monitor-candidates/fi-language-act.md"
+      "monitor_shell_candidate_text_path": "source-library/finland/monitor-candidates/fi-language-act.md",
+      "external_reference_accepted": true
     },
     {
       "id": "fi-legal-aid-act",
@@ -618,7 +624,8 @@
       "document_path": "../candidates/fi-legal-aid-act-257-2002-current-fi.md",
       "raw_capture_path": "temp/finland/raw/fi-legal-aid-act-8d807fde743ac3c981e6783404cd7c6b146309ee224fea1c4027d0511f03310a.html",
       "monitor_conversion_note": "The broad HTML pass saved the official page response but its generic converter extracted only a portal shell; the full text is recorded separately in the source-specific Finlex capture lane.",
-      "monitor_shell_candidate_text_path": "source-library/finland/monitor-candidates/fi-legal-aid-act.md"
+      "monitor_shell_candidate_text_path": "source-library/finland/monitor-candidates/fi-legal-aid-act.md",
+      "external_reference_accepted": true
     },
     {
       "id": "fi-police-personal-data-act",
@@ -649,7 +656,8 @@
       "document_path": "../candidates/fi-police-personal-data-act-616-2019-current.md",
       "raw_capture_path": "temp/finland/raw/fi-police-personal-data-act-a052f857aee861690881e1f6aa7f548c15871699559e63263bf34dfbf1ed7b9f.xml",
       "monitor_conversion_note": "The broad HTML pass saved the official page response but its generic converter extracted only a portal shell; the full text is recorded separately in the source-specific Finlex capture lane.",
-      "monitor_shell_candidate_text_path": "source-library/finland/monitor-candidates/fi-police-personal-data-act.md"
+      "monitor_shell_candidate_text_path": "source-library/finland/monitor-candidates/fi-police-personal-data-act.md",
+      "external_reference_accepted": true
     },
     {
       "id": "fi-migri-eu-registration",
@@ -1134,5 +1142,7 @@
   "retrieved_review_candidate_count": 25,
   "converted_review_candidate_count": 23,
   "monitor_capture_ledger": "references/candidate-manifest-monitor-capture-results.json",
-  "source_specific_capture_manifest": "references/finlex-retrieval-manifest.json"
+  "source_specific_capture_manifest": "references/finlex-retrieval-manifest.json",
+  "accepted_external_reference_count": 8,
+  "accepted_local_copy_count": 0
 }

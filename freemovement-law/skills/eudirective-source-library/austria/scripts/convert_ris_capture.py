@@ -42,6 +42,22 @@ class RISPageParser(HTMLParser):
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
         attributes = dict(attrs)
         classes = set((attributes.get("class") or "").split())
+        ignored = tag in {"script", "style", "noscript"} or "sr-only" in classes
+        # Ignore an entire inaccessible subtree before changing the content
+        # depth. The old order incremented content_depth for hidden divs and
+        # could pull accessibility-only expansions into the next visible block.
+        # RIS marks visually rendered text aria-hidden when it supplies a
+        # separate screen-reader-expanded `.sr-only` equivalent, so retain the
+        # visible text and omit only the expanded duplicate.
+        if self.ignore_stack:
+            if tag not in VOID_TAGS:
+                self.ignore_stack.append(tag)
+            return
+        if ignored:
+            if tag not in VOID_TAGS:
+                self.ignore_stack.append(tag)
+            return
+
         if tag == "a" and attributes.get("href"):
             self.links.append(attributes["href"] or "")
 
@@ -51,15 +67,6 @@ class RISPageParser(HTMLParser):
             elif "contentBlock" in classes:
                 self.content_depth = 1
                 self.found_content = True
-
-        ignored = tag in {"script", "style", "noscript"} or "sr-only" in classes
-        if self.ignore_stack:
-            if tag not in VOID_TAGS:
-                self.ignore_stack.append(tag)
-            return
-        if ignored:
-            self.ignore_stack.append(tag)
-            return
 
         if self.content_depth and tag in BLOCK_TAGS:
             self.parts.append("\n")
@@ -105,8 +112,18 @@ def resolve_repo_path(value: str) -> Path:
     path = Path(value)
     if path.is_absolute():
         return path
+    if value.startswith("captures/"):
+        return PACK_DIR / path
     repo_root = PACK_DIR.parent.parent
-    return repo_root / path
+    resolved = repo_root / path
+    if resolved.exists():
+        return resolved
+    prefix = "source-library/austria/"
+    if value.startswith(prefix):
+        bundled = PACK_DIR / value[len(prefix):]
+        if bundled.exists():
+            return bundled
+    return resolved
 
 
 def extract_text(raw: bytes) -> tuple[str, list[str]]:
@@ -126,11 +143,14 @@ def extract_text(raw: bytes) -> tuple[str, list[str]]:
 def render_candidate(record: dict, capture: dict, text: str) -> bytes:
     publisher_id = json.dumps(record.get("publisher_identifier", {}), ensure_ascii=False, sort_keys=True)
     verification = record.get("verification_status", "")
+    accepted = record.get("accepted") is True
+    id_label = "Source ID" if accepted else "Candidate ID"
+    status_label = "accepted source; per-source gates passed" if accepted else "unaccepted review candidate"
     body = [
         f"# {record['title']}",
         "",
         f"- Jurisdiction: Austria",
-        f"- Candidate ID: `{record['id']}`",
+        f"- {id_label}: `{record['id']}`",
         f"- Official URL: {record['url']}",
         f"- Resolved URL: {capture.get('resolved_url') or record['url']}",
         f"- Retrieved: {capture.get('retrieved_at', 'date not recorded')}",
@@ -139,7 +159,7 @@ def render_candidate(record: dict, capture: dict, text: str) -> bytes:
         f"- Media type: `{capture.get('source_content_type', 'text/html')}`",
         f"- Raw source SHA-256: `{capture['source_sha256']}`",
         f"- Conversion rule: `{RULE_VERSION}`; selector `div.contentBlock`",
-        "- Status: unaccepted review candidate",
+        f"- Status: {status_label}",
         "",
         "## Captured official text",
         "",
@@ -230,18 +250,35 @@ def convert() -> int:
         converted += 1
 
     if pending:
-        manifest["retrieved_review_candidate_count"] = sum(bool(r.get("retrieved")) for r in manifest["documents"])
-        manifest["converted_review_candidate_count"] = sum(r.get("candidate_text_path") is not None for r in manifest["documents"])
-        manifest["native_pdf_review_candidate_count"] = sum(r.get("native_source_path") is not None for r in manifest["documents"])
+        manifest["retrieved_review_candidate_count"] = sum(
+            bool(r.get("retrieved")) and not r.get("accepted") and r.get("review_state") != "discovery_only"
+            for r in manifest["documents"]
+        )
+        manifest["converted_review_candidate_count"] = sum(
+            bool(r.get("retrieved")) and not r.get("accepted") and r.get("review_state") != "discovery_only"
+            and bool(r.get("source_text_path") or r.get("candidate_text_path"))
+            and not r.get("native_source_path") and r.get("source_type") != "official_form"
+            for r in manifest["documents"]
+        )
+        manifest["native_pdf_source_count"] = sum(bool(r.get("native_source_path")) for r in manifest["documents"])
+        manifest["native_pdf_review_candidate_count"] = sum(bool(r.get("native_source_path")) and not r.get("accepted") for r in manifest["documents"])
+        manifest["accepted_source_count"] = sum(1 for r in manifest["documents"] if r.get("accepted"))
+        manifest["candidate_source_count"] = sum(
+            1 for r in manifest["documents"]
+            if r.get("retrieved") and not r.get("accepted") and r.get("review_state") != "discovery_only"
+        )
+        manifest["located_not_captured_count"] = sum(1 for r in manifest["documents"] if not r.get("retrieved"))
+        manifest["discovery_only_count"] = sum(1 for r in manifest["documents"] if r.get("review_state") == "discovery_only")
         manifest["retrieval_status"] = (
-            f"{manifest['converted_review_candidate_count']} Markdown review candidates; "
-            f"{manifest['native_pdf_review_candidate_count']} native PDF review candidates; 0 accepted"
+            f"{manifest['accepted_source_count']} accepted; {manifest['candidate_source_count']} captured and pending review; "
+            f"{manifest['discovery_only_count']} discovery-only; {manifest['located_not_captured_count']} located but not captured"
         )
         capture_ledger["conversion_rule"] = RULE_VERSION
         capture_ledger["converted_review_candidate_count"] = manifest["converted_review_candidate_count"]
     save_json(MANIFEST_PATH, manifest)
     save_json(CAPTURE_PATH, capture_ledger)
-    print(f"converted={converted} pending_conversion_records={pending} accepted=0")
+    accepted = sum(1 for r in manifest["documents"] if r.get("accepted"))
+    print(f"converted={converted} pending_conversion_records={pending} accepted_source_count={accepted}")
     return 0
 
 
@@ -264,7 +301,7 @@ def verify() -> int:
                 raise ValueError(f"Raw PDF response hash mismatch for {record['id']}")
             verified += 1
             continue
-        raw_path = resolve_repo_path(capture.get("raw_path", ""))
+        raw_path = resolve_repo_path(capture.get("raw_path") or "")
         raw_present = raw_path.is_file()
         if not raw_present:
             if capture.get("retrieval_status") == "retrieval_or_conversion_error":
@@ -273,9 +310,9 @@ def verify() -> int:
             raw = raw_path.read_bytes()
             if digest(raw) != capture.get("source_sha256"):
                 raise ValueError(f"Raw response hash mismatch for {record['id']}")
-        if capture.get("retrieval_status") != "converted_review_candidate":
+        if capture.get("retrieval_status") not in {"converted_review_candidate", "accepted_source"}:
             continue
-        output_path = resolve_repo_path(capture.get("candidate_text_path", ""))
+        output_path = resolve_repo_path(capture.get("source_text_path") or capture.get("candidate_text_path", ""))
         if not output_path.is_file():
             raise ValueError(f"Converted candidate missing for {record['id']}: {output_path}")
         output = output_path.read_bytes()

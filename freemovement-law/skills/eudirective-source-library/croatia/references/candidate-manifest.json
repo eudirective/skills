@@ -2,12 +2,12 @@
   "manifest_version": "0.1.0-candidate",
   "pack": "croatia-national-source-candidates",
   "jurisdiction": "HR",
-  "inventory_research_date": "2026-10-19",
+  "inventory_research_date": "2026-10-21",
   "scope": "Official Croatian source discovery for EEA/Swiss free movement and third-country family members, residence, visas, administrative procedure, evidence, remedies, privacy, oversight, legal aid, and courts.",
   "status": "review_incomplete_issue_led_coverage_and_country_completion_open",
-  "retrieval_status": "17 accepted source records; 58 remaining unaccepted, including located uncaptured leads; country review incomplete",
+  "retrieval_status": "17 locally accepted source records; 59 remaining unaccepted records, including located uncaptured leads; topic coverage and country review incomplete",
   "accepted_source_count": 17,
-  "candidate_source_count": 58,
+  "candidate_source_count": 59,
   "official_hosts": [
     "azop.hr",
     "e-predmet.pravosudje.hr",
@@ -130,6 +130,23 @@
       "source_status": "accepted",
       "review_state": "accepted",
       "source_text_path": "source-library/croatia/documents/legislation/hr-admin-disputes-act.md"
+    },
+    {
+      "id": "hr-constitutional-court-zus-169-2-2026",
+      "title": "Constitutional Court decision on Administrative Disputes Act Article 169(2), NN 39/2026",
+      "source_type": "constitutional_court_decision",
+      "language": "hr",
+      "url": "https://narodne-novine.nn.hr/clanci/sluzbeni/2026_04_39_485.html",
+      "publisher_identifier": {
+        "system": "narodne-novine.nn.hr",
+        "record": "NN 39/2026, item 485"
+      },
+      "functional_relationship": "administrative_procedure_transitional_currentness_dependency",
+      "verification_status": "Official decision dated 2026-03-31 and published NN 39/2026 on 2026-04-15. Operative point I starts constitutional review and repeals Administrative Disputes Act Article 169(2), a transitional provision; application-specific effect and timing are not assessed.",
+      "retrieval_status": "located_not_captured",
+      "retrieval_shape": "Stable official Narodne novine ELI/HTML; use as a link after source-specific review; local capture optional.",
+      "retrieved": false,
+      "accepted": false
     },
     {
       "id": "hr-azop-complaint",
@@ -618,13 +635,13 @@
       "title": "Form 2b",
       "source_type": "official_form",
       "language": "hr",
-      "url": "https://mup.gov.hr/UserDocsImages//dokumenti/stranci/2021//OBRAZAC%202B-Zahtjev%20za%20izdavanje%20boravis%CC%8Cne%20iskaznice%20za%20c%CC%8Clana%20obitelji%20drz%CC%8Cavljana%20drz%CC%8Cave%20c%CC%8Clanice%20EGP-a%20koji%20nije%20drz%CC%8Cavljanin%20drz%CC%8Cave%20c%CC%8Clanice%20EGP-a.pdf",
+      "url": "https://mup.gov.hr/UserDocsImages/dokumenti/stranci/2021/OBRAZAC%202B-Zahtjev%20za%20izdavanje%20boravis%CC%8Cne%20iskaznice%20za%20c%CC%8Clana%20obitelji%20drz%CC%8Cavljana%20drz%CC%8Cave%20clanice%20EGP-a%20koji%20nije%20drz%CC%8Cavljanin%20drz%CC%8Cave%20clanice%20EGP-a.pdf",
       "publisher_identifier": {
         "system": "mup.gov.hr",
         "record": "hr-form-2b"
       },
       "functional_relationship": "partial_functional_match",
-      "verification_status": "Official PDF linked from current guide; 3 pages; revision date not established",
+      "verification_status": "Current MUP forms index checked 2026-10-21; the official title identifies an application for a residence card, not a card specimen. The live link resolves to a three-page PDF in a 2021 directory; no revision date is displayed. Historical captured response remains identified by its recorded resolved_url and hash.",
       "retrieval_status": "converted_review_candidate",
       "retrieval_shape": "Static URL under 2021 directory",
       "retrieved": true,
@@ -839,7 +856,7 @@
         "record": "hr-mup-eea-forms-index"
       },
       "functional_relationship": "primary_operational_source",
-      "verification_status": "Official live index lists Forms 1b, 2b, 3b and 6b under the EEA implementing regulation. Its stated chain omits NN 155/22, which MUP’s current legislation index includes; reconcile before using as a version-control source.",
+      "verification_status": "Current official MUP forms index checked 2026-10-21; lists Forms 1b, 2b, 3b and 6b. Its citation for the EEA residence regulation omits NN 155/22, which the current MUP Propisi index lists; use the forms page to locate downloads, not as the currentness authority. The official Form 2b title identifies an application, not a card specimen.",
       "retrieval_status": "located_not_captured",
       "retrieval_shape": "Dynamic official HTML; resolve each current form link from parent page and record final URL/metadata.",
       "retrieved": false,

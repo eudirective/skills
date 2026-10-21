@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0.0",
+  "jurisdiction": "FR",
+  "updated": "2026-10-21",
+  "acceptance_is_distinct_from_coverage": true,
+  "policy": {
+    "official_reference_use": "A human-reviewed official link is usable within its recorded scope after checking publisher, source identity, language, displayed date/version or cutoff, relevant content, and visible limits. No local capture, conversion, hash, or replay is required for ordinary link use.",
+    "local_artifact_acceptance": "No local French statute copy is accepted by this register. Copy-specific checks apply only if a copy is later retained; they do not gate these official links.",
+    "coverage": "Usable official references do not by themselves establish adequate topic coverage or country completion."
+  },
+  "official_reference_reviews": {
+    "fr-ceseda-book-ii-legislative": {
+      "status": "usable_official_reference",
+      "publisher": "Direction de l’information légale et administrative (DILA), Légifrance",
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070158/LEGISCTA000042770930",
+      "checked_on": "2026-10-21",
+      "language": "French",
+      "version_or_cutoff": "Légifrance page header displayed 'Version en vigueur au 24/08/2026' when checked on 2026-10-21; unpinned link follows the maintained section.",
+      "scope": "CESEDA legislative Book II, Articles L. 200-1 to L. 286-2, governing entry, residence, and removal of EU citizens and family members, with the assimilation specified in Article L. 200-3.",
+      "reviewed_content": "The page identifies the official code and Book II scope; Article L. 200-3 names EEA EFTA and Swiss nationals within the code’s conditions. The Book II section includes residence rules and Légifrance flags the 2022 partial annulment affecting L. 233-1 and L. 233-2.",
+      "limitations": [
+        "French text only; this is not an English translation.",
+        "The displayed version cutoff was 24 August 2026; recheck the page header for later versions when using it for a date-sensitive question.",
+        "Read Articles L. 233-1 and L. 233-2 with Conseil d’État decision nos. 450285/450288 of 24 February 2022; the code section’s own legal note records the partial annulment.",
+        "This source does not establish completeness of related CRPA/CJA procedure, consular practice, forms, or local authority practice.",
+        "This approval is for reference use only and grants no permission to copy or republish the page."
+      ]
+    },
+    "fr-ceseda-book-ii-regulatory": {
+      "status": "usable_official_reference",
+      "publisher": "Direction de l’information légale et administrative (DILA), Légifrance",
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070158/LEGISCTA000042800206",
+      "checked_on": "2026-10-21",
+      "language": "French",
+      "version_or_cutoff": "Légifrance page header displayed 'Version en vigueur au 09/09/2026' when checked on 2026-10-21; unpinned link follows the maintained section.",
+      "scope": "CESEDA regulatory Book II, Articles R. 210-1 to R. 286-2, including admission, visa, residence-card issuance, removal, and related regulatory provisions for EU citizens and family members.",
+      "reviewed_content": "The page identifies the official code and Book II regulatory scope. Article R. 221-2 states the relevant admission, residence-card visa exemption, and free/accelerated visa provisions; the section also contains residence-card application provisions.",
+      "limitations": [
+        "French text only; this is not an English translation.",
+        "The displayed version cutoff was 9 September 2026; recheck the page header for later versions when using it for a date-sensitive question.",
+        "Some rules depend on the legislative CESEDA part, other procedural codes, EU instruments, or mission-specific practice.",
+        "This approval is for reference use only and grants no permission to copy or republish the page."
+      ]
+    }
+  },
+  "official_reference_review_schema": {
+    "status": "usable_official_reference",
+    "required_fields": [
+      "publisher",
+      "url",
+      "checked_on",
+      "language",
+      "version_or_cutoff",
+      "scope",
+      "reviewed_content",
+      "limitations"
+    ],
+    "note": "Record a human-reviewed official link here when it supports a coverage layer without a retained local copy. This does not change the local accepted-source count."
+  },
+  "accepted_source_count": 0,
+  "records": {}
+}

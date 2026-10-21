@@ -1,0 +1,1193 @@
+{
+  "schema_version": "1.1.0",
+  "jurisdiction": "AT",
+  "updated": "2026-10-19",
+  "purpose": "Repeatable discovery of new decisions, separate from exact-record monitoring.",
+  "search_policy": {
+    "publisher": "Official RIS judicial collections",
+    "method": "Manual searches through the official RIS forms. No undocumented endpoint, API, bulk export or general-search result is accepted as a primary source. Record exact query, court filter, date window, result count, all screened records and inclusion decisions.",
+    "cadence": "Monthly; 55 tasks per batch (five query families across VwGH, BVwG and all nine LVwG courts).",
+    "completion_rule": "A batch is complete only when all tasks have dated results, including zero-result searches, and every potentially relevant hit has been screened to its official decision record.",
+    "limitation": "RIS describes the LVwG corpus as selected decisions and says timing of new entries differs by court."
+  },
+  "court_collections": [
+    {
+      "id": "vwgh",
+      "court": "VwGH",
+      "search_url": "https://www.ris.bka.gv.at/Vwgh/",
+      "filter": null
+    },
+    {
+      "id": "bvwg",
+      "court": "BVwG",
+      "search_url": "https://www.ris.bka.gv.at/Bvwg/",
+      "filter": null
+    },
+    {
+      "id": "lvwg-BG",
+      "court": "LVwG Burgenland",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filter": {
+        "Bundesland": "Burgenland"
+      }
+    },
+    {
+      "id": "lvwg-KT",
+      "court": "LVwG Kärnten",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filter": {
+        "Bundesland": "Kärnten"
+      }
+    },
+    {
+      "id": "lvwg-NO",
+      "court": "LVwG Niederösterreich",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filter": {
+        "Bundesland": "Niederösterreich"
+      }
+    },
+    {
+      "id": "lvwg-OO",
+      "court": "LVwG Oberösterreich",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filter": {
+        "Bundesland": "Oberösterreich"
+      }
+    },
+    {
+      "id": "lvwg-SB",
+      "court": "LVwG Salzburg",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filter": {
+        "Bundesland": "Salzburg"
+      }
+    },
+    {
+      "id": "lvwg-ST",
+      "court": "LVwG Steiermark",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filter": {
+        "Bundesland": "Steiermark"
+      }
+    },
+    {
+      "id": "lvwg-T",
+      "court": "LVwG Tirol",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filter": {
+        "Bundesland": "Tirol"
+      }
+    },
+    {
+      "id": "lvwg-V",
+      "court": "LVwG Vorarlberg",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filter": {
+        "Bundesland": "Vorarlberg"
+      }
+    },
+    {
+      "id": "lvwg-W",
+      "court": "LVwG Wien",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filter": {
+        "Bundesland": "Wien"
+      }
+    }
+  ],
+  "query_families": [
+    {
+      "id": "residence-card",
+      "query": "NAG § 54 Aufenthaltskarte"
+    },
+    {
+      "id": "exceptional-refusal",
+      "query": "NAG § 54 Abs. 7 Aufenthaltsehe"
+    },
+    {
+      "id": "continued-residence",
+      "query": "NAG § 55 Abs. 3"
+    },
+    {
+      "id": "delay-and-documents",
+      "query": "§ 54 NAG Säumnisbeschwerde"
+    },
+    {
+      "id": "visa-and-entry",
+      "query": "FPG § 15b begünstigte Drittstaatsangehörige Visum"
+    }
+  ],
+  "screening_fields": [
+    "court",
+    "decision_date",
+    "case_number",
+    "official_record_url",
+    "ecli_or_document_number",
+    "holding",
+    "outcome",
+    "procedural_posture",
+    "applicability_and_limits",
+    "linked_statutory_provisions",
+    "screening_decision"
+  ],
+  "planned_search_tasks": [
+    {
+      "task_id": "vwgh--residence-card",
+      "court_collection": "VwGH",
+      "search_url": "https://www.ris.bka.gv.at/Vwgh/",
+      "filters": null,
+      "query": "NAG § 54 Aufenthaltskarte",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "vwgh--exceptional-refusal",
+      "court_collection": "VwGH",
+      "search_url": "https://www.ris.bka.gv.at/Vwgh/",
+      "filters": null,
+      "query": "NAG § 54 Abs. 7 Aufenthaltsehe",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "vwgh--continued-residence",
+      "court_collection": "VwGH",
+      "search_url": "https://www.ris.bka.gv.at/Vwgh/",
+      "filters": null,
+      "query": "NAG § 55 Abs. 3",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "vwgh--delay-and-documents",
+      "court_collection": "VwGH",
+      "search_url": "https://www.ris.bka.gv.at/Vwgh/",
+      "filters": null,
+      "query": "§ 54 NAG Säumnisbeschwerde",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "vwgh--visa-and-entry",
+      "court_collection": "VwGH",
+      "search_url": "https://www.ris.bka.gv.at/Vwgh/",
+      "filters": null,
+      "query": "FPG § 15b begünstigte Drittstaatsangehörige Visum",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "bvwg--residence-card",
+      "court_collection": "BVwG",
+      "search_url": "https://www.ris.bka.gv.at/Bvwg/",
+      "filters": null,
+      "query": "NAG § 54 Aufenthaltskarte",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "bvwg--exceptional-refusal",
+      "court_collection": "BVwG",
+      "search_url": "https://www.ris.bka.gv.at/Bvwg/",
+      "filters": null,
+      "query": "NAG § 54 Abs. 7 Aufenthaltsehe",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "bvwg--continued-residence",
+      "court_collection": "BVwG",
+      "search_url": "https://www.ris.bka.gv.at/Bvwg/",
+      "filters": null,
+      "query": "NAG § 55 Abs. 3",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "bvwg--delay-and-documents",
+      "court_collection": "BVwG",
+      "search_url": "https://www.ris.bka.gv.at/Bvwg/",
+      "filters": null,
+      "query": "§ 54 NAG Säumnisbeschwerde",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "bvwg--visa-and-entry",
+      "court_collection": "BVwG",
+      "search_url": "https://www.ris.bka.gv.at/Bvwg/",
+      "filters": null,
+      "query": "FPG § 15b begünstigte Drittstaatsangehörige Visum",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-BG--residence-card",
+      "court_collection": "LVwG Burgenland",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Burgenland"
+      },
+      "query": "NAG § 54 Aufenthaltskarte",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-BG--exceptional-refusal",
+      "court_collection": "LVwG Burgenland",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Burgenland"
+      },
+      "query": "NAG § 54 Abs. 7 Aufenthaltsehe",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-BG--continued-residence",
+      "court_collection": "LVwG Burgenland",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Burgenland"
+      },
+      "query": "NAG § 55 Abs. 3",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-BG--delay-and-documents",
+      "court_collection": "LVwG Burgenland",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Burgenland"
+      },
+      "query": "§ 54 NAG Säumnisbeschwerde",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-BG--visa-and-entry",
+      "court_collection": "LVwG Burgenland",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Burgenland"
+      },
+      "query": "FPG § 15b begünstigte Drittstaatsangehörige Visum",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-KT--residence-card",
+      "court_collection": "LVwG Kärnten",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Kärnten"
+      },
+      "query": "NAG § 54 Aufenthaltskarte",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-KT--exceptional-refusal",
+      "court_collection": "LVwG Kärnten",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Kärnten"
+      },
+      "query": "NAG § 54 Abs. 7 Aufenthaltsehe",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-KT--continued-residence",
+      "court_collection": "LVwG Kärnten",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Kärnten"
+      },
+      "query": "NAG § 55 Abs. 3",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-KT--delay-and-documents",
+      "court_collection": "LVwG Kärnten",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Kärnten"
+      },
+      "query": "§ 54 NAG Säumnisbeschwerde",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-KT--visa-and-entry",
+      "court_collection": "LVwG Kärnten",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Kärnten"
+      },
+      "query": "FPG § 15b begünstigte Drittstaatsangehörige Visum",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-NO--residence-card",
+      "court_collection": "LVwG Niederösterreich",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Niederösterreich"
+      },
+      "query": "NAG § 54 Aufenthaltskarte",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-NO--exceptional-refusal",
+      "court_collection": "LVwG Niederösterreich",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Niederösterreich"
+      },
+      "query": "NAG § 54 Abs. 7 Aufenthaltsehe",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-NO--continued-residence",
+      "court_collection": "LVwG Niederösterreich",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Niederösterreich"
+      },
+      "query": "NAG § 55 Abs. 3",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-NO--delay-and-documents",
+      "court_collection": "LVwG Niederösterreich",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Niederösterreich"
+      },
+      "query": "§ 54 NAG Säumnisbeschwerde",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-NO--visa-and-entry",
+      "court_collection": "LVwG Niederösterreich",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Niederösterreich"
+      },
+      "query": "FPG § 15b begünstigte Drittstaatsangehörige Visum",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-OO--residence-card",
+      "court_collection": "LVwG Oberösterreich",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Oberösterreich"
+      },
+      "query": "NAG § 54 Aufenthaltskarte",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-OO--exceptional-refusal",
+      "court_collection": "LVwG Oberösterreich",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Oberösterreich"
+      },
+      "query": "NAG § 54 Abs. 7 Aufenthaltsehe",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-OO--continued-residence",
+      "court_collection": "LVwG Oberösterreich",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Oberösterreich"
+      },
+      "query": "NAG § 55 Abs. 3",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-OO--delay-and-documents",
+      "court_collection": "LVwG Oberösterreich",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Oberösterreich"
+      },
+      "query": "§ 54 NAG Säumnisbeschwerde",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-OO--visa-and-entry",
+      "court_collection": "LVwG Oberösterreich",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Oberösterreich"
+      },
+      "query": "FPG § 15b begünstigte Drittstaatsangehörige Visum",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-SB--residence-card",
+      "court_collection": "LVwG Salzburg",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Salzburg"
+      },
+      "query": "NAG § 54 Aufenthaltskarte",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-SB--exceptional-refusal",
+      "court_collection": "LVwG Salzburg",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Salzburg"
+      },
+      "query": "NAG § 54 Abs. 7 Aufenthaltsehe",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-SB--continued-residence",
+      "court_collection": "LVwG Salzburg",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Salzburg"
+      },
+      "query": "NAG § 55 Abs. 3",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-SB--delay-and-documents",
+      "court_collection": "LVwG Salzburg",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Salzburg"
+      },
+      "query": "§ 54 NAG Säumnisbeschwerde",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-SB--visa-and-entry",
+      "court_collection": "LVwG Salzburg",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Salzburg"
+      },
+      "query": "FPG § 15b begünstigte Drittstaatsangehörige Visum",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-ST--residence-card",
+      "court_collection": "LVwG Steiermark",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Steiermark"
+      },
+      "query": "NAG § 54 Aufenthaltskarte",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-ST--exceptional-refusal",
+      "court_collection": "LVwG Steiermark",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Steiermark"
+      },
+      "query": "NAG § 54 Abs. 7 Aufenthaltsehe",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-ST--continued-residence",
+      "court_collection": "LVwG Steiermark",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Steiermark"
+      },
+      "query": "NAG § 55 Abs. 3",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-ST--delay-and-documents",
+      "court_collection": "LVwG Steiermark",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Steiermark"
+      },
+      "query": "§ 54 NAG Säumnisbeschwerde",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-ST--visa-and-entry",
+      "court_collection": "LVwG Steiermark",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Steiermark"
+      },
+      "query": "FPG § 15b begünstigte Drittstaatsangehörige Visum",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-T--residence-card",
+      "court_collection": "LVwG Tirol",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Tirol"
+      },
+      "query": "NAG § 54 Aufenthaltskarte",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-T--exceptional-refusal",
+      "court_collection": "LVwG Tirol",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Tirol"
+      },
+      "query": "NAG § 54 Abs. 7 Aufenthaltsehe",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-T--continued-residence",
+      "court_collection": "LVwG Tirol",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Tirol"
+      },
+      "query": "NAG § 55 Abs. 3",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-T--delay-and-documents",
+      "court_collection": "LVwG Tirol",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Tirol"
+      },
+      "query": "§ 54 NAG Säumnisbeschwerde",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-T--visa-and-entry",
+      "court_collection": "LVwG Tirol",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Tirol"
+      },
+      "query": "FPG § 15b begünstigte Drittstaatsangehörige Visum",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-V--residence-card",
+      "court_collection": "LVwG Vorarlberg",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Vorarlberg"
+      },
+      "query": "NAG § 54 Aufenthaltskarte",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-V--exceptional-refusal",
+      "court_collection": "LVwG Vorarlberg",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Vorarlberg"
+      },
+      "query": "NAG § 54 Abs. 7 Aufenthaltsehe",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-V--continued-residence",
+      "court_collection": "LVwG Vorarlberg",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Vorarlberg"
+      },
+      "query": "NAG § 55 Abs. 3",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-V--delay-and-documents",
+      "court_collection": "LVwG Vorarlberg",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Vorarlberg"
+      },
+      "query": "§ 54 NAG Säumnisbeschwerde",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-V--visa-and-entry",
+      "court_collection": "LVwG Vorarlberg",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Vorarlberg"
+      },
+      "query": "FPG § 15b begünstigte Drittstaatsangehörige Visum",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-W--residence-card",
+      "court_collection": "LVwG Wien",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Wien"
+      },
+      "query": "NAG § 54 Aufenthaltskarte",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-W--exceptional-refusal",
+      "court_collection": "LVwG Wien",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Wien"
+      },
+      "query": "NAG § 54 Abs. 7 Aufenthaltsehe",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-W--continued-residence",
+      "court_collection": "LVwG Wien",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Wien"
+      },
+      "query": "NAG § 55 Abs. 3",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-W--delay-and-documents",
+      "court_collection": "LVwG Wien",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Wien"
+      },
+      "query": "§ 54 NAG Säumnisbeschwerde",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    },
+    {
+      "task_id": "lvwg-W--visa-and-entry",
+      "court_collection": "LVwG Wien",
+      "search_url": "https://www.ris.bka.gv.at/Lvwg/",
+      "filters": {
+        "Bundesland": "Wien"
+      },
+      "query": "FPG § 15b begünstigte Drittstaatsangehörige Visum",
+      "document_types": [
+        "Rechtssätze (RS)",
+        "Entscheidungstexte (TE)"
+      ],
+      "date_window": "from previous completed batch through batch end; record exact dates before search",
+      "status": "not_run",
+      "result_count": null,
+      "screened_record_ids": [],
+      "notes": null
+    }
+  ],
+  "runs": [],
+  "status": "plan_defined_no_full_court_run_recorded",
+  "discovered_leads": [
+    {
+      "case_number": "Ra 2025/18/0038",
+      "court": "VwGH",
+      "decision_date": "2025-10-09",
+      "official_record_url": "https://www.ris.bka.gv.at/Dokumente/Vwgh/JWT_2025180038_20251009L00/JWT_2025180038_20251009L00.pdf",
+      "related_record_url": "https://ris.bka.gv.at/JudikaturEntscheidung.wxe?Abfrage=Vwgh&Dokumentnummer=JWR_2025180038_20251009L01",
+      "holding": "For a third-country spouse to qualify as a privileged third-country national under FPG §2(4)(11), the EEA sponsor must have actually and effectively exercised free movement with some sustainability. The BVwG had not made findings sufficient to establish this prerequisite; the mere marriage and shared household were insufficient.",
+      "outcome": "The VwGH allowed the official revision and set aside the BVwG judgment in the challenged part for illegality of content.",
+      "procedural_posture": "Official revision by the BFA against a BVwG judgment that had set aside return-decision/removal-related points after the person married an EEA citizen during the proceedings.",
+      "applicability_and_limits": "Directly relevant to FPG §2(4)(11), the line between FPG §§52 and 66, and the timing relation to NAG §54(7). It requires factual findings on sustainable free movement; it does not hold that every sham-marriage allegation removes privileged status before a final §54(7) finding.",
+      "source_review_status": "lead_only_full_local_capture_and_semantic_acceptance_required",
+      "source_access_note": "Official RIS PDF was opened and reviewed through the browser. Local raw bytes are not yet captured for deterministic replay."
+    },
+    {
+      "case_number": "Ra 2025/22/0052; joined Ra 2025/22/0053 and Ra 2025/22/0054",
+      "court": "VwGH",
+      "decision_date": "2025-12-12",
+      "official_record_url": "https://ris.bka.gv.at/Dokumente/Vwgh/JWT_2025220052_20251212L00/JWT_2025220052_20251212L00.html",
+      "holding": "The VwGH rejected the extraordinary revision because it did not concretely identify a departure from specified case law or demonstrate a qualifying question of fundamental importance. It also found no reviewable error in the lower court's fact-specific sham-marriage assessment on the record described.",
+      "outcome": "Revision rejected as inadmissible.",
+      "procedural_posture": "Extraordinary revision from the Vienna administrative court after ex officio reopening of an earlier residence-card award and rejection of later card applications under NAG §54(7).",
+      "applicability_and_limits": "Useful for the procedural finality/reopening and §54(7) context, but its result turns on the revision admissibility argument and a particular evidence record. Do not cite it as a general substantive test for sham marriage.",
+      "source_review_status": "lead_only_full_local_capture_and_semantic_acceptance_required",
+      "source_access_note": "Official RIS HTML decision was opened and reviewed through the browser. Local raw bytes are not yet captured for deterministic replay."
+    },
+    {
+      "case_number": "LVwG-AV-1203/001-2025",
+      "court": "LVwG Niederösterreich",
+      "decision_date": "2026-09-10",
+      "official_record_url": "https://ris.bka.gv.at/Dokumente/Lvwg/LVWGT_NI_20260910_LVwG_AV_1203_001_2025_00/LVWGT_NI_20260910_LVwG_AV_1203_001_2025_00.html",
+      "holding": "Search result indicates a refusal of an Aufenthaltskarte based on suspected sham marriage under NAG §37(4), raising the boundary of the EU residence regime.",
+      "outcome": "Not verified from the official decision text in this pass.",
+      "procedural_posture": "Appeal from refusal of an EEA-family residence card; RIS record date and docket were visible in an official search result.",
+      "applicability_and_limits": "Potentially relevant to the §37(4)/§54(7) boundary. Treat only as a retrieval lead until the full RIS text and operative order are opened and reviewed.",
+      "source_review_status": "lead_only_official_search_excerpt_only",
+      "source_access_note": "RIS page open returned an internal/cache error; do not infer the holding or outcome beyond the visible official search excerpt."
+    },
+    {
+      "case_number": "Ra 2025/17/0049",
+      "court": "VwGH",
+      "decision_date": "2025-06-25",
+      "official_record_url": "https://ris.bka.gv.at/JudikaturEntscheidung.wxe?Abfrage=Vwgh&Dokumentnummer=JWR_2025170049_20250625L01",
+      "holding": "Official search result states that, after a final finding under NAG §54(7), FPG §66 expulsion and §67 entry bans do not apply; the relevant removal route is FPG §52, potentially with §53.",
+      "outcome": "Not independently checked against the full decision text in this pass.",
+      "procedural_posture": "VwGH extraordinary revision linked to a BVwG removal decision and an NAG §54(7) sham-marriage finding.",
+      "applicability_and_limits": "High-value lead for the procedural crosswalk between NAG §54(7) and FPG §§52, 53, 66 and 67. Verify full record and limits before indexing as accepted case law.",
+      "source_review_status": "lead_only_official_search_excerpt_only",
+      "source_access_note": "Official RIS result excerpt was available; direct page open failed during this pass."
+    },
+    {
+      "case_number": "VGW-151/080/1941/2025",
+      "court": "Verwaltungsgericht Wien",
+      "decision_date": "2025-07-06",
+      "official_record_url": "https://ris.bka.gv.at/Dokument.wxe?Abfrage=Gesamtabfrage&Dokumentnummer=LVWGT_WI_20250706_VGW_151_080_1941_2025_00",
+      "holding": "On the particular facts, a short, low-paid, marginal cross-border job by an Austrian sponsor in Slovakia without residence there did not establish a sustained free-movement fact pattern sufficient for the claimed NAG §57-derived residence-card right; the court also discussed the deterrent-effect inquiry for cross-border-worker cases.",
+      "outcome": "Complaint dismissed as unfounded; ordinary revision declared admissible.",
+      "procedural_posture": "Complaint from refusal of a residence card under NAG §§54 and 57; the sponsor was an Austrian citizen living and working primarily in Vienna while undertaking limited work in Slovakia.",
+      "applicability_and_limits": "Relevant to the returned-Austrian route and the need for concrete facts on work duration, duties, hours and pay. Highly fact-specific; the official page extraction displays duplicated ordinary/accessibility text and needs source-specific replay before acceptance.",
+      "source_review_status": "lead_only_capture_and_duplicate_extraction_review_required",
+      "source_access_note": "Official RIS page opened; browser extraction contains duplicated parallel text, so do not use the extracted body as an accepted conversion."
+    }
+  ],
+  "supplemental_lead_searches": [
+    {
+      "checked_on": "2026-10-19",
+      "method": "Official-source web search through the connected search service; direct RIS pages opened where available. This is a supplemental lead search and does not replace the 55 manual RIS-form tasks.",
+      "queries": [
+        "site:ris.bka.gv.at NAG Aufenthaltskarte Landesverwaltungsgericht 2025 VwGH FPG Österreich",
+        "site:ris.bka.gv.at \"Aufenthaltskarte\" \"LVwG\" 2025 OR 2026",
+        "site:oesterreich.gv.at Aufenthaltskarte EU Bürger Angehörige Antrag Behörde Unterlagen",
+        "site:oesterreich.gv.at Niederlassungsbehörde Aufenthaltskarte Länder Österreich"
+      ],
+      "result_count": null,
+      "result_count_note": "The search interface did not expose a result count. Do not report this as a complete RIS search batch.",
+      "screened_lead_case_numbers": [
+        "Ra 2025/18/0038",
+        "Ra 2025/22/0052; joined Ra 2025/22/0053 and Ra 2025/22/0054",
+        "LVwG-AV-1203/001-2025",
+        "Ra 2025/17/0049",
+        "VGW-151/080/1941/2025"
+      ],
+      "status": "supplemental_leads_only_55_task_batch_still_open"
+    }
+  ]
+}

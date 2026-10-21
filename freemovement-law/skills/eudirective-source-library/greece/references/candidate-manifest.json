@@ -2,12 +2,12 @@
   "manifest_version": "0.2.0-candidate",
   "pack": "greece-national-source-candidates",
   "jurisdiction": "GR",
-  "inventory_research_date": "2026-10-18",
+  "inventory_research_date": "2026-10-21",
   "scope": "Bounded discovery of Greek official gazette and legislation routes; EU/EEA/Swiss and UK residence routes; visa and mission practice; civil status, foreign family evidence and limited adoption-related services; administrative procedure and public access; remedies/courts, oversight, privacy, legal aid and selected regional administration. This is not a legal-equivalence opinion or complete national inventory.",
-  "status": "partially_retrieved_review_candidates",
-  "retrieval_status": "40 candidate pages converted; 0 PDFs preserved without text extraction; 0 discovery surfaces had no stable body; failures are recorded per item; no source accepted",
+  "status": "partially retrieved; six official legal references reviewed by link; local-copy acceptance and country coverage incomplete",
+  "retrieval_status": "40 of the original 56 candidate texts converted and replay-verified; 16 retrieval failures remain; three additional official legal sources reviewed by link without retaining local copies; 0 local copies accepted",
   "accepted_source_count": 0,
-  "candidate_source_count": 56,
+  "candidate_source_count": 59,
   "official_hosts": [
     "aead.gr",
     "apdattikis.gov.gr",
@@ -41,7 +41,7 @@
   "search_coverage": [
     {
       "source_class": "National legislation, official publication and version discovery",
-      "search_outcome": "Candidates found; known Gazette PDFs are directly reachable. No consolidated current-text route was established in this review, so use the closest government-published version with a stated cutoff; a complete amendment-discovery route is not required.",
+      "search_outcome": "The official 2007 PD 106/2007 text and targeted 2012, 2018 and 2026 amendment records were reviewed. No government-published consolidated PD 106/2007 text was found; the National Codification Portal still describes itself as in its final implementation stage.",
       "official_channels": [
         "National Printing House search and Official Journals",
         "api.et.gr direct FEK PDFs",
@@ -53,13 +53,14 @@
         "site:api.et.gr/apiFEK/1/2007/135/pdf",
         "site:api.et.gr/apiFEK/1/2012/85/pdf",
         "Π.Δ. 106/2007 τροποποίηση 4071/2012 4540/2018",
-        "Ν. 5038/2023 κώδικας μετανάστευσης"
+        "Ν. 5038/2023 κώδικας μετανάστευσης",
+        "Ν. 5275/2026 άρθρο 53 π.δ. 106/2007"
       ],
       "languages": [
         "el",
         "en"
       ],
-      "coverage_limit": "The direct PDF routes provide original issue documents, not consolidated law. The endpoint pattern is observed but undocumented. Search.et.gr terms restrict copying/conversion absent permission; whether those terms apply to api.et.gr and internal automated monitoring remains unresolved. The 2018 API PDF could not be opened in this research client."
+      "coverage_limit": "The Gazette PDFs provide promulgated instruments, not one consolidated decree. For a specific legal point, use the closest official base text and the specifically relevant official amendment(s), recording the cutoff; this review does not claim to reconstruct every amendment. The Ministry legal index does not list the 2026 law. Search.et.gr terms restrict copying/conversion absent permission; whether those terms apply to api.et.gr and internal automated monitoring remains unresolved."
     },
     {
       "source_class": "EU, EEA, Swiss and UK residence routes and administration",
@@ -319,7 +320,7 @@
       "retrieval_status": "converted_review_candidate",
       "retrieval_shape": "Direct official PDF through api.et.gr; 12 pages",
       "version_evidence": "Original publication date 21 June 2007; later amendments are not consolidated in this PDF.",
-      "note": "Direct no-login retrieval worked for this known item. It is an authentic publication copy, not a current consolidated text.",
+      "note": "Usable official link for the original 2007 decree only. It is not consolidated; read only with the specifically relevant later official amendments recorded in the source acceptance register.",
       "retrieved": true,
       "accepted": false,
       "candidate_text_path": "source-library/greece/candidates/gr-05.md",
@@ -327,7 +328,9 @@
       "source_sha256": "8c862624cde63ecc3ab6eb7d76f64ab45484d822ff42c3aec856974f5cfc9b8d",
       "converted_sha256": "5e0d12223aa8bd01049fb92b466f3ca99fccce13ec50237c8efcff4f1a7764db",
       "source_bytes": 127133,
-      "resolved_url": "https://api.et.gr/apiLAW/2/2007/106/pdf"
+      "resolved_url": "https://api.et.gr/apiLAW/2/2007/106/pdf",
+      "official_reference_id": "gr-pd106-2007-original",
+      "official_reference_status": "usable_official_reference"
     },
     {
       "id": "gr-06",
@@ -365,11 +368,11 @@
         "record": "publisher record or service at URL; stable source identifier captured in title/notes where available"
       },
       "functional_relationship": "partial_functional_match",
-      "verification_status": "Official National Printing House PDF opened; FEK 85/A of 11 April 2012, Law 4071/2012. MITOS links Article 42 as amending PD 106/2007 Articles 7 and 8.",
+      "verification_status": "Official FEK 85/A of 11 April 2012 inspected. Article 42 amends PD 106/2007, including Articles 2, 3, 6–9, 16, 17 and 22; this reference is limited to that amendment and is not a consolidated text.",
       "retrieval_status": "converted_review_candidate",
       "retrieval_shape": "Direct official issue PDF",
       "version_evidence": "11 April 2012; amendment content identified but complete later chain not captured.",
-      "note": "Official amendment lead; the whole issue must not be mistaken for the amended current text.",
+      "note": "Use Article 42 only for the amendments it expressly makes; the full issue is not the current text of PD 106/2007.",
       "retrieved": true,
       "accepted": false,
       "candidate_text_path": "source-library/greece/candidates/gr-07.md",
@@ -377,7 +380,9 @@
       "source_sha256": "3d0f3290a544da047ff477b3e4258a799648af149d8b0948353e75a26fe33b0f",
       "converted_sha256": "2f5e32a3541823fcb3eeb450c04002fb2714133f56397ec7bf552f58cc1022bd",
       "source_bytes": 491695,
-      "resolved_url": "https://api.et.gr/apiFEK/1/2012/85/pdf"
+      "resolved_url": "https://api.et.gr/apiFEK/1/2012/85/pdf",
+      "official_reference_id": "gr-law4071-2012-art42",
+      "official_reference_status": "usable_official_reference"
     },
     {
       "id": "gr-08",
@@ -390,11 +395,11 @@
         "record": "publisher record or service at URL; stable source identifier captured in title/notes where available"
       },
       "functional_relationship": "partial_functional_match",
-      "verification_status": "Official MITOS procedure record links this National Printing House endpoint and says Article 32 amends PD 106/2007 family-member and facilitated-entry provisions; direct PDF fetch failed in this client.",
+      "verification_status": "The complete official Gazette issue FEK 91/A of 22 May 2018 was inspected in a government-hosted Ministry of Migration PDF. Article 32 replaces PD 106/2007 Article 2(2) and Article 3(2); MITOS independently links the National Printing House record.",
       "retrieval_status": "converted_review_candidate",
-      "retrieval_shape": "Direct PDF URL linked by official procedure record; response not independently inspected",
-      "version_evidence": "FEK A 91/2018; exact PDF identity and body remain unverified here.",
-      "note": "Keep as a candidate until identity, bytes and amendment effect are checked at the Gazette.",
+      "retrieval_shape": "Official National Printing House PDF link; the Gazette text was directly inspected through the Ministry-hosted copy; no local source copy is accepted",
+      "version_evidence": "FEK 91/A, 22 May 2018; Article 32 is a targeted amendment, not a consolidation.",
+      "note": "Use Article 32 only for its amendments to PD 106/2007 Articles 2(2) and 3(2). The government-hosted Gazette copy used for link review is recorded in references/source-acceptance.json.",
       "retrieved": true,
       "accepted": false,
       "candidate_text_path": "source-library/greece/candidates/gr-08.md",
@@ -402,7 +407,9 @@
       "source_sha256": "c267657b66a21aa831d2e8e4f3d9f323564c0db66682de8c120a2d9f0b4f045c",
       "converted_sha256": "dd9065bb5330609cd91b2241ee1d2275aead5b821e9445749128d467954464f4",
       "source_bytes": 310587,
-      "resolved_url": "https://api.et.gr/apiLAW/1/2018/4540/pdf"
+      "resolved_url": "https://api.et.gr/apiLAW/1/2018/4540/pdf",
+      "official_reference_id": "gr-law4540-2018-art32",
+      "official_reference_status": "usable_official_reference"
     },
     {
       "id": "gr-09",
@@ -1494,10 +1501,77 @@
       "converted_sha256": "7962d2b5758b5bc0017dcb7f6a01d090a844e2257b76bdff0b18e8e1c250d59e",
       "source_bytes": 164659,
       "resolved_url": "https://search.et.gr/el/oroi-xrisis/"
+    },
+    {
+      "id": "gr-57",
+      "title": "Law 5275/2026, Article 53 amendment to PD 106/2007 Article 3(2)",
+      "source_type": "amending_legislation",
+      "language": "el",
+      "url": "https://api.et.gr/apiLAW/1/2026/5275/pdf",
+      "publisher_identifier": {
+        "system": "National Printing House (Εθνικό Τυπογραφείο)",
+        "instrument": "Law 5275/2026, FEK 17/A, 6 February 2026",
+        "rediscovery_url": "https://search.et.gr/en/search-legislation/"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official Gazette PDF opened and identified as Law 5275/2026, FEK 17/A, 6 February 2026. Article 53 amends PD 106/2007 Article 3(2), replacing the two-year residence-permit wording for the specified other-family-member/partner categories with a five-year residence card under Article 10. Article 69 makes the law effective on publication unless a provision states otherwise.",
+      "retrieval_status": "reference_only_no_local_copy",
+      "retrieval_shape": "Official Gazette PDF; human-reviewed link use; no local copy retained",
+      "version_evidence": "Published 6 February 2026 in FEK 17/A; the specific Article 53 change is effective from publication under Article 69.",
+      "note": "Targeted later change only. It concerns the categories in PD 106/2007 Article 3(2), not every EU-family residence document. Do not treat this amending act as a consolidated version of PD 106/2007.",
+      "retrieved": false,
+      "accepted": false,
+      "official_reference_id": "gr-law5275-2026-art53",
+      "official_reference_status": "usable_official_reference"
+    },
+    {
+      "id": "gr-58",
+      "title": "Law 4686/2020, Article 43 transitional residence provisions for EU-family members",
+      "source_type": "national_legislation",
+      "language": "el",
+      "url": "https://migration.gov.gr/wp-content/uploads/2020/06/%CE%9D%CF%8C%CE%BC%CE%BF%CF%82-46862020.pdf",
+      "publisher_identifier": {
+        "system": "National Printing House (Εθνικό Τυπογραφείο); official Gazette copy hosted by the Ministry of Migration and Asylum",
+        "instrument": "Law 4686/2020, FEK 96/A, 12 May 2020",
+        "rediscovery_url": "https://migration.gov.gr/en/nomothesia-1-2/nomothesia-ypiresia-nomimis-metanasteysis/"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official Gazette PDF identified as Law 4686/2020, FEK 96/A, 12 May 2020. Article 43 contains transitional rules expressly referring to EU-citizen family members under PD 106/2007, including specified permanent-residence and personal-residence situations.",
+      "retrieval_status": "reference_only_no_local_copy",
+      "retrieval_shape": "Official Gazette PDF; human-reviewed link use; no local copy retained",
+      "version_evidence": "Law 4686/2020, FEK 96/A, published 12 May 2020; Article 43 is a transitional provision.",
+      "note": "Use Article 43 only for the legacy permit categories and transitional circumstances it describes. It does not amend or consolidate PD 106/2007 and should not be generalized to current ordinary applications.",
+      "retrieved": false,
+      "accepted": false,
+      "official_reference_id": "gr-law4686-2020-art43",
+      "official_reference_status": "usable_official_reference"
+    },
+    {
+      "id": "gr-59",
+      "title": "Law 5226/2025, Article 28 return procedure for EU citizens and family members",
+      "source_type": "national_legislation",
+      "language": "el",
+      "url": "https://migration.gov.gr/wp-content/uploads/2025/09/nomos_5226_2025.pdf",
+      "publisher_identifier": {
+        "system": "National Printing House (Εθνικό Τυπογραφείο); official Gazette copy hosted by the Ministry of Migration and Asylum",
+        "instrument": "Law 5226/2025, FEK 154/A, 8 September 2025",
+        "rediscovery_url": "https://migration.gov.gr/en/nomothesia-1-2/nomothesia-ypiresia-nomimis-metanasteysis/"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official Gazette PDF identified as Law 5226/2025, FEK 154/A, 8 September 2025. Article 28 addresses returns of EU citizens and family members: it preserves the PD 106/2007 Articles 22–24 route and applies the law’s rules on competent authorities, deadlines, service, guarantees and judicial protection supplementarily where they do not conflict with the more favourable PD provisions. Article 41(1) makes the law effective on publication.",
+      "retrieval_status": "reference_only_no_local_copy",
+      "retrieval_shape": "Official Gazette PDF; human-reviewed link use; no local copy retained",
+      "version_evidence": "Law 5226/2025, FEK 154/A, published 8 September 2025; Article 28 is in force from publication under Article 41(1).",
+      "note": "Use Article 28 for the return/removal procedure and remedies affecting persons within its stated EU-free-movement/PD 106 scope. It is not a replacement for PD 106/2007 or a general consolidated immigration code.",
+      "retrieved": false,
+      "accepted": false,
+      "official_reference_id": "gr-law5226-2025-art28",
+      "official_reference_status": "usable_official_reference"
     }
   ],
   "retrieved_review_candidate_count": 40,
   "retrieved_converted_candidate_count": 0,
   "page_accessed_note_count": 0,
-  "converted_review_candidate_count": 40
+  "converted_review_candidate_count": 40,
+  "official_reference_count": 6
 }

@@ -1,43 +1,31 @@
 # Croatia review: completion status
 
-**As of:** 19 October 2026, 15:57 UTC  
+**As of:** 21 October 2026
 **Status:** partial; the country review is not complete.
 
 ## What is established
 
-- The inventory contains 75 records: 17 accepted sources, 30 converted review candidates, 25 located but uncaptured leads, one discovery surface with no stable text body, and two excluded stale-source leads.
-- The current Ministry of the Interior legislation index identifies the latest listed versions of the EEA Act and regulation, the Foreigners Act through NN 55/26, the third-country residence regulation through NN 43/26, and the third-country procedure regulation through NN 116/26. Where no usable consolidation is available, use the closest government-published text within its date/cutoff; the index does not require retrieving every listed Gazette act.
-- Twenty-five Narodne novine legal-text fragments have repeatable, source-specific extraction records. Their conversion checks establish text fidelity to the selected official HTML fragments, not that every relevant law or topic has been found.
-- Seventeen local source artifacts pass the repository's artifact-acceptance gate. The MVEP family-visa and visa-appeal pages are separately logged as usable official references within their reviewed scopes; their local copies remain unaccepted because copying terms are unresolved.
-- The review has a 14-topic coverage model, a dependency register, a remedy crosswalk, and case-law and operational discovery plans. These distinguish source acceptance from topic coverage and country completion.
-- The local candidate paths in the manifest and acceptance register resolve after the folder reorganization; the reviewed path references showed no dangling candidate files.
+- The inventory contains 76 records: 17 locally accepted artifacts, 30 converted review candidates, 26 located but uncaptured leads, one discovery surface with no stable text body, and two excluded stale-source leads.
+- Six official references are separately recorded as usable by link within their checked scopes: two MVEP pages, three MUP pages and one Constitutional Court decision. Link review does not change the 17-artifact local acceptance count.
+- MUP’s current Propisi index was rechecked on 21 October. It lists the EEA Act and residence regulation chains, the Foreigners Act through NN 55/26, the third-country residence rule through NN 43/26, and the third-country procedure rule through NN 116/26. It is a version index, not a consolidated text.
+- MUP’s EEA-family guidance page is dated 9 October 2025. It describes the Form 2b route and filing point for a non-EEA family member seeking residence beyond three months. The official forms index identifies Form 2b as an application for a residence card and links to a three-page PDF in a 2021 directory. The displayed €13.27 fee is not independently verified; the PDF has no displayed revision date and has not received visual review.
+- The Constitutional Court decision U-I-2767/2025 and U-I-2768/2025, NN 39/2026, is recorded as a currentness dependency of Administrative Disputes Act Article 169(2). It concerns a transitional rule for proceedings under the previous Act where a hearing had closed before 1 July 2024. Its exact effect timing in a particular case remains open; no change to ordinary current EEA residence procedures is inferred.
+- The pack retains its 14-topic issue-led coverage model, source dependencies, remedy crosswalk, case-law plan and operational discovery plan. No topic is complete.
 
-An independent local replay audit was also completed for this report: all 25 retained Narodne novine fragments match their converted candidate text in ordered visible text after Unicode and whitespace normalization; there were no mismatches. The Croatia review-gate validator reports **zero structural errors** and **224 open completion blockers**. Those blockers reflect unresolved evidence and coverage gates; they do not indicate broken registry structure.
+The accepted local artifacts and source links have different review states. The 25 retained Narodne novine fragments have source-specific conversion records; those checks establish text fidelity to selected official HTML, not legal completeness or current application. The Croatia review-gate validator reports 0 structural errors and 202 open completion blockers. The blockers represent unresolved coverage and evidence work, not registry errors. No country-complete conclusion is supported.
 
-Supporting detail is in the [source acceptance register](source-acceptance.json), [coverage model](coverage-model.json), [currentness review](currentness-review.json), [case-law plan](case-law-discovery.json), [operational discovery plan](operational-discovery.json), and [sustainability assessment](sustainability-assessment.md).
+## What remains open
 
-## What cannot be finished in this run
+1. **Issue-led coverage:** all seven research tasks and all 14 legal topics remain open. Provision-level mapping from Directive 2004/38 through national implementation, procedure, remedies and practice is incomplete.
+2. **Court discovery:** none of the 40 planned searches across the four administrative courts and the High Administrative Court is recorded as run. The newly linked Constitutional Court decision does not count as a completed search batch.
+3. **Operational practice:** the Croatian consular mission set and mission-specific visa procedures remain unenumerated. Regional police authorities, appointments, submission channels and local evidence practice remain unenumerated.
+4. **Forms and card specimens:** the Form 2b PDF, the Form 4b and 11b residence-card specimens, and the inventoried image annexes remain visually unreviewed. The MUP forms index cites an EEA regulation chain that omits NN 155/22; MUP’s Propisi index lists it.
+5. **Remedies, costs and aid:** immigration-specific appeal exhaustion, deadlines, interim relief, fees and legal-aid eligibility remain unresolved. The application of the €130 visa-appeal fee to qualifying EU-family members and the current 2026 provider-compensation status remain open.
+6. **Dependencies and currentness:** the Court decision’s effect timing in a particular transitional case, remaining EU card-format references, and issue-specific amendments require targeted follow-up. A complete Gazette-by-Gazette reconstruction is not required for ordinary use; use the closest government-published text and state its cutoff.
+7. **Local-copy backlog:** 59 records are not accepted as local artifacts. That total includes leads, converted candidates, discovery-only and stale entries; it is not a count of unusable official links or missing legal topics.
 
-The evidence-gated research controller stopped after two consecutive no-progress cycles. It created signed-approval request `AR-20261019T142851720414Z` to raise only the no-progress ceiling from 2 to 8; the search, source, finding, and evidence limits would remain unchanged. The request hash is `842d23aef48bbb8de782f904be1accd3615e0db9ad80c42e4e7d6f50544b8949`. This was a machine-verifiable authorization to extend that one workflow limit, not a GitHub credential or repository change. The policy requires an Ed25519 signature from a trusted runtime. No approval record was present when checked at 15:57 UTC on 19 October 2026, and the request expired at 14:58:51 UTC that day. It cannot now be approved as issued; any resumption requires a fresh request and its trusted-runtime signature. The request must not be self-signed or bypassed. The expired request is recorded outside this repository at `/tmp/croatia-research/work/R-20261019T140638Z-c2f8d8e6/pending_approval.json`.
+These are unresolved evidence tasks, not findings that Croatia lacks sources or that the cited rules are invalid. Do not promote a topic or country-completion status on the basis of this report.
 
-Accordingly, the following substantive work remains open:
+## Work recorded in this update
 
-1. **All seven research tasks (T1–T7).** The issue-led route from Directive 2004/38 through national law, procedures, refusal and delay remedies, costs, and administrative practice is partial. The relationship between the EEA framework and the general third-country framework also needs provision-level review.
-2. **All 14 legal topics.** Each remains marked incomplete. In particular, the Croatian-national return scenario for a third-country family member, the application of general procedural deadlines and remedies to EEA decisions, interim relief, and fee/legal-aid eligibility are unresolved.
-3. **Local-copy acceptance.** Fifty-eight records remain unaccepted as local artifacts. This is not a count of unusable links or missing legal sources: human-reviewed official references can be used within their recorded scope without local capture or conversion. The local-copy backlog includes uncaptured leads, converted candidates, stale records and discovery-only entries. The two MVEP links can be used within their recorded scopes; current legal application and some fee questions remain open.
-4. **Court discovery.** None of the 40 planned searches across Croatia's four administrative courts and High Administrative Court is recorded as run; no decision corpus or case-by-case holding review is complete.
-5. **Operational discovery.** The full consular-mission set and mission-specific instructions have not been enumerated. The regional police-authority set and local residence procedures have not been enumerated.
-6. **Attachments and current practice.** The 160 inventoried image assets have not received visual review. In particular, the residence-card specimens and post-3 August 2026 issued-card format have not been checked against the successor EU rules.
-7. **Dependency and currentness resolution.** The Ministry index establishes the latest listed versions, not consolidated wording or every legal consequence. Specific provisions, fee dependencies, and remaining EU references still need issue-relevant review; a full amendment-chain reconstruction is not a prerequisite.
-
-These are unresolved evidence tasks, not findings that Croatia lacks relevant sources or that the cited rules are invalid. No legal topic or country-completion status should be promoted on the basis of this report.
-
-## Work completed without extending the research gate
-
-This pass reconciled the existing review state and recorded this report in the Croatia review index. A static consistency check confirmed 75 unique manifest IDs, matching records in the acceptance register, retrieval-rule coverage for all 75 IDs, and no missing local candidate or capture paths referenced by those records. The counts reconcile to 17 accepted sources and 58 not accepted; all 14 coverage topics remain incomplete. The independent replay audit confirmed exact ordered visible-text correspondence for all 25 retained legal-text fragments. The review-gate validator reported zero structural errors and 224 open completion blockers. These checks establish registry, path, and extraction consistency for their stated scopes; they do not establish legal sufficiency or complete the underlying issue-led research.
-
-The signed-approval gate's scope is documented above. No new legal findings were added, no source was newly accepted, no topic was marked complete, and the expired approval request was not altered. The open research tasks were not resumed because the required trusted-runtime signature is unavailable in this session.
-
-## Resume condition
-
-Continue the open T1–T7 work only after a fresh request receives the required trusted-runtime signature. Then resume the existing research workspace and keep all source-acceptance, topic-coverage, dependency, semantic-review, and country-completion gates in force.
+The current MUP guidance, forms index and legislation index were directly checked and logged as usable official references within their declared scope. Form 2b was classified from its official parent-page title as an application form rather than a card specimen. The Constitutional Court decision was added to the manifest, source rules, acceptance register, currentness register and Administrative Disputes Act dependency map. No local copy was newly accepted, no research cap was raised, and no topic was marked complete.

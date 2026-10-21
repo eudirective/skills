@@ -1,6 +1,6 @@
 # Spain national source pack
 
-**Status (19 October 2026):** 49 unique candidate records across the original national inventory and the 46-record monitor register; 15 BOE law texts and 30 broad monitor pages converted as review candidates; no local copies accepted. The two inventories overlap on four records. Candidate records include laws, guidance, forms, publisher documentation, oversight and court-search sources; a register entry is not necessarily a full text. The converted candidate files are not admitted to the trusted source corpus, which is why the accepted Spanish-law library remains empty. Human-reviewed official links may still be used within their checked scope.
+**Status (21 October 2026):** 51 unique candidate records across the original national inventory and the expanded 48-record monitor register; the inventories overlap on four records. Fifteen BOE law texts and 30 broader official pages were converted as review candidates. Twenty-two official external references are accepted for link use within recorded scope. No local copy or topic is accepted, and the national review remains incomplete. A candidate is a discovery/review record, not a rejected source.
 
 - [Original source list](references/source-list.md)
 - [Original candidate manifest](references/candidate-manifest.json)
@@ -9,7 +9,11 @@
 - [Expanded monitor capture ledger](references/monitor-candidate-manifest-2026-10-18-capture-results.json)
 - [BOE retrieval manifest](references/boe-retrieval-manifest.json)
 - [BOE retrieval and conversion rule](sync_boe.py)
+- [Official reference acceptance](references/source-acceptance.json)
+- [Issue-led coverage register](references/coverage-register.md)
 
-The BOE rule uses its official no-registration open-data API by BOE identifier. It retains raw API XML under project-root `temp/spain/boe/`, checks publisher identity and metadata, converts the latest returned version in each text block, records source and conversion hashes, and supports offline replay. The BOE consolidations are informational review candidates, not authentic legal publications. BOE reuse terms and attribution are reproduced in each converted text. Run `python sync_boe.py sync` to refresh, `python sync_boe.py rebuild` to reconvert retained raw XML without network access, or `python sync_boe.py verify` to check hashes and replay conversion.
+The BOE API converter is an optional way to refresh retained local copies. It is not required to use or accept BOE's official public consolidated-text links. BOE labels consolidations informational and without legal value, so keep the displayed date and use the linked official publication when legal effect or a specific later change matters. Local copy hashes and replay status say nothing about whether a topic is covered.
 
-The wider monitor pass saved exact responses for 34 of 46 records: 30 converted, four dynamic pages had no stable text body, and 12 failed (mostly publisher 403 responses). All 30 conversions pass offline replay verification. They are stored under `monitor-candidates/`; the separate BOE texts are under `candidates/`. The previous saved Hoja 62 page conversion contains navigation noise and is flagged for rework. No Spain source has been accepted; identity, scope, current-version, extraction quality, reuse terms and coverage review remain necessary.
+The 18 October monitor run saved 34 responses from the initial 46 records: 30 converted, four dynamic pages had no stable text body, and 12 retrieval/conversion attempts failed. Those outcomes do not block public-link use. The 21 October review accepted 22 official references at the link level, including the BOE instruments, the distinct EU–Swiss treaty, current Spanish-national-family guidance, the National Police registration route, and the Supreme Court judgment BOE-A-2026-19632. The judgment affects parts of RD 1155/2024 Articles 94.1(f), 97.4 and 98.1; see the dependency map and coverage register. The local candidate conversions remain unaccepted.
+
+The Ministry, MAEC mission network, CGPJ/CENDOJ, Constitutional Court, and all autonomous-community portals are listed for human review where dynamic pages or full discovery work remain. A site-wide crawl, API, local capture, or conversion is not a prerequisite for reviewing a clear official public link.

@@ -2,12 +2,17 @@
   "manifest_version": "0.2.0-candidate",
   "pack": "iceland-national-source-candidates",
   "jurisdiction": "IS",
-  "inventory_research_date": "2026-10-18",
+  "inventory_research_date": "2026-10-21",
   "scope": "Bounded discovery of Icelandic EEA/EFTA free-movement and third-country family-member sources, legislation and publication, residence registration, visa/entry channels, administrative procedure and remedies, appeal decisions, courts, public access, privacy and oversight. Iceland is an EEA EFTA State, not an EU Member State. Switzerland is not an EEA Contracting Party. This is not a legal-equivalence opinion or complete national inventory.",
-  "status": "partially_retrieved_review_candidates",
-  "retrieval_status": "20 of 28 candidate pages converted and replay-verified; 21 exact responses saved; six Althingi HTTP 403 responses; one court-page 404; one captured page had no extractable body; no source accepted",
+  "status": "partial_official_links_accepted_review_candidates",
+  "retrieval_status": "21 exact responses and 20 local conversions remain from the 2026-10-19 capture pass; no local copy is accepted. Fourteen scoped official external references were reviewed and accepted by link. Current Althingi pages are accessible as official references despite earlier local-capture 403s.",
   "accepted_source_count": 0,
-  "candidate_source_count": 28,
+  "accepted_external_reference_count": 14,
+  "accepted_local_copy_count": 0,
+  "accepted_topic_count": 0,
+  "country_review_complete": false,
+  "acceptance_count_note": "The legacy accepted_source_count counts accepted local copies and remains 0. Official links accepted for external reference are counted separately; neither count establishes topic coverage or country completion.",
+  "candidate_source_count": 34,
   "official_hosts": [
     "althingi.is",
     "stjornartidindi.is",
@@ -20,7 +25,8 @@
     "stjornarradid.is",
     "umbodsmadur.is",
     "domstolar.is",
-    "personuvernd.is"
+    "personuvernd.is",
+    "gamli.domstolar.is"
   ],
   "secondary_hosts": [],
   "comparison_seed": {
@@ -36,7 +42,7 @@
   "search_coverage": [
     {
       "source_class": "Legislation, official publication, consolidated text and EEA incorporation",
-      "search_outcome": "Candidates found; the current Althingi legislation bundle is well-documented, while consolidation date and legal effect must be distinguished from later enactments and future effective dates.",
+      "search_outcome": "Official current consolidated Alþingi law pages have been accepted as external references. The dated SGML archive remains an optional route for local copies. The official regulation record lists three 2026 amendments, now linked separately.",
       "official_channels": [
         "Althingi Lagasafn current index and versioned SGML/PDF editions",
         "Stjórnartíðindi electronic A/B/C publication",
@@ -54,7 +60,7 @@
         "is",
         "en"
       ],
-      "coverage_limit": "Althingi's current edition is dated 1 October 2026 and the archive says later-passed laws are absent from each edition. The current Foreign Nationals Act page lists amendments with different effective dates, including future changes. Reglugerðasafn lists several 2026 amendments to Regulation 540/2017, while its linked current-consolidation PDF identifies a version in force from 19 June 2025; amendment reconciliation is unresolved. No Icelandic substantive law is inferred from the Danish seed."
+      "coverage_limit": "Five Alþingi current-law pages in edition 158a dated 1 October 2026 are accepted for scoped reference. Parts of Act 48/2026 take effect on 1 December 2026. The Regulation 540/2017 base PDF predates amendments 669/2026, 724/2026 and 725/2026; its official record is accepted as an amendment index, while the amendment texts are linked separately. No full Gazette chain or archive conversion is required for these references."
     },
     {
       "source_class": "EEA/EFTA family residence, supporting documents, residence cards and registration",
@@ -115,7 +121,7 @@
     },
     {
       "source_class": "Courts, public access, privacy and independent oversight",
-      "search_outcome": "Statutory and oversight candidates found. The court publication rules were found, but a complete and stable searchable court-decision source was not established.",
+      "search_outcome": "Rules No. 3/2022 on online publication of court decisions and orders were located and accepted as an official external reference. The Courts portal and its search route were found, but nationwide completeness and immigration-case coverage were not verified.",
       "official_channels": [
         "Althingi Lagasafn",
         "Icelandic Courts Administration",
@@ -134,7 +140,7 @@
         "is",
         "en"
       ],
-      "coverage_limit": "The Ombudsman's complaint instructions and Data Protection Authority complaint route are public, but individual submissions are not part of source monitoring. Court publication is governed by privacy and anonymisation rules; nationwide searchable completeness and removal/update behavior remain unassessed."
+      "coverage_limit": "The current rule allows publication exceptions and requires privacy safeguards; its publication framework does not establish a complete immigration-case collection. The Ombudsman and Data Protection Authority pages identify public routes, but individual complaints are not part of source monitoring."
     }
   ],
   "documents": [
@@ -183,7 +189,10 @@
       ],
       "retrieved": false,
       "accepted": false,
-      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "external_reference_status": "accepted",
+      "external_reference_checked_at": "2026-10-21",
+      "external_reference_scope": "Current consolidated Foreign Nationals Act 80/2016 (Icelandic), including Chapter XI and EEA/EFTA provisions; preserve future-effective amendments separately."
     },
     {
       "id": "is-03",
@@ -207,7 +216,10 @@
       ],
       "retrieved": false,
       "accepted": false,
-      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "external_reference_status": "accepted",
+      "external_reference_checked_at": "2026-10-21",
+      "external_reference_scope": "Current consolidated Administrative Procedure Act 37/1993 (Icelandic); general procedural reference, with immigration-specific applicability still to map."
     },
     {
       "id": "is-04",
@@ -230,7 +242,10 @@
       ],
       "retrieved": false,
       "accepted": false,
-      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "external_reference_status": "accepted",
+      "external_reference_checked_at": "2026-10-21",
+      "external_reference_scope": "Current consolidated EEA Act 2/1993 (Icelandic); EEA framework only."
     },
     {
       "id": "is-05",
@@ -258,7 +273,10 @@
       "source_sha256": "9cd279b95368e0be295743e7e70d4819c9f3d00735257f122640eedeb82208dc",
       "converted_sha256": "7b31e24e7a364a98d50cfcddae2e7b1e0f8794b19625bbeed0670bdb59c18e42",
       "source_bytes": 80080,
-      "resolved_url": "https://www.reglugerd.is/reglugerdir/eftir-raduneytum/domsmala--og-mannrettindaraduneyti/nr/20605"
+      "resolved_url": "https://www.reglugerd.is/reglugerdir/eftir-raduneytum/domsmala--og-mannrettindaraduneyti/nr/20605",
+      "external_reference_status": "accepted",
+      "external_reference_checked_at": "2026-10-21",
+      "external_reference_scope": "Official record and amendment index for Regulation 540/2017 only; linked base text is not accepted as current after 2026 amendments."
     },
     {
       "id": "is-06",
@@ -313,7 +331,10 @@
       "source_sha256": "d1a0f331628ec6ca549a17dad6b55fe717cb7cdf4a2e4dfefd074da89b6211ba",
       "converted_sha256": "00329a66619b165a819181c8b164e0d32e82889a48f66fddb3b6f1fb7c07f876",
       "source_bytes": 142422,
-      "resolved_url": "https://www.efta.int/eea-lex/32004l0038"
+      "resolved_url": "https://www.efta.int/eea-lex/32004l0038",
+      "external_reference_status": "accepted",
+      "external_reference_checked_at": "2026-10-18",
+      "external_reference_scope": "Official EFTA EEA-Lex record for Directive 2004/38/EC and Joint Committee Decision 158/2007; reference to EEA incorporation and status at the last content inspection only."
     },
     {
       "id": "is-08",
@@ -727,7 +748,10 @@
       ],
       "retrieved": false,
       "accepted": false,
-      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "external_reference_status": "accepted",
+      "external_reference_checked_at": "2026-10-21",
+      "external_reference_scope": "Current consolidated Information Act 140/2012 (Icelandic); public-access statute."
     },
     {
       "id": "is-23",
@@ -778,7 +802,10 @@
       ],
       "retrieved": false,
       "accepted": false,
-      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "external_reference_status": "accepted",
+      "external_reference_checked_at": "2026-10-21",
+      "external_reference_scope": "Current consolidated Data Protection Act 90/2018 (Icelandic); national data-protection statute."
     },
     {
       "id": "is-25",
@@ -810,44 +837,48 @@
     },
     {
       "id": "is-26",
-      "title": "Courts Administration rules on publication of judgments and rulings",
+      "title": "Rules No. 3/2022 on online publication of court decisions and orders",
       "source_type": "court_publication_rules",
       "language": "is",
-      "url": "https://www.domstolar.is/domstolasyslan/reglur/reglur-um-birtingu-doma-og-urskurda-a-vefsidu-domstolanna/",
+      "url": "https://gamli.domstolar.is/domstolasyslan/reglur/reglur-um-utgafu-doma-og-urskurda-a-vefsidum-domstola/",
       "publisher_identifier": {
-        "system": "Icelandic Courts Administration",
-        "record": "Rules No. 3/2019 on publication of judgments and rulings"
+        "system": "Icelandic Courts Administration / Dómstólasýslan",
+        "record": "Rules of the Courts Administration No. 3/2022 on online publication of decisions and orders"
       },
       "functional_relationship": "related_source",
-      "verification_status": "Official publication rules inspected; posting timelines, accompanying metadata, and anonymisation/redaction rules were identified.",
-      "retrieval_status": "retrieval_or_conversion_error",
-      "retrieval_shape": "HTML rules page; judicial decisions published across court websites.",
-      "version_evidence": "Official rules page reports the applicable decision-publication framework; later rules/updates must be checked before an adapter is written.",
-      "note": "Publication is subject to anonymisation and removal rules. A searchable complete nationwide court dataset was not established.",
+      "verification_status": "Official full rule text opened. It states that Rule No. 3/2022 took effect on 1 October 2022 and repealed Rule No. 3/2019. The current Ísland.is court rules page also indexes the 3/2022 rule.",
+      "retrieval_status": "external_reference_only",
+      "retrieval_shape": "Official HTML text on the Courts Administration legacy domain; current portal route also listed.",
+      "version_evidence": "Rule No. 3/2022. It governs publication across court levels, with exceptions and privacy/anonymisation measures; the current portal index lists it under current rules.",
+      "note": "Accepted as the official current publication rule. Its publication requirements do not establish that all relevant immigration judgments are present in the portal.",
       "topic_ids": [
         "CASELAW-COURT-01",
         "PRIVACY-01"
       ],
       "retrieved": false,
       "accepted": false,
-      "retrieval_note": "HTTPError: HTTP Error 404: Not Found"
+      "external_reference_status": "accepted",
+      "external_reference_checked_at": "2026-10-21",
+      "external_reference_scope": "Current official rule on publication of court judgments and rulings; use for publication timing, exceptions and privacy limits only.",
+      "current_portal_url": "https://island.is/s/domstolar/reglur-um-utgafu-doma-og-urskurda-a-vefsidum-domstola-nr-3-2022",
+      "previous_url": "https://www.domstolar.is/domstolasyslan/reglur/reglur-um-birtingu-doma-og-urskurda-a-vefsidu-domstolanna/"
     },
     {
       "id": "is-27",
       "title": "Icelandic courts public portal and judgment-search route",
       "source_type": "court_case_law_discovery",
       "language": "is",
-      "url": "https://www.domstolar.is/",
+      "url": "https://island.is/s/domstolar",
       "publisher_identifier": {
         "system": "Icelandic Courts Administration and individual courts",
-        "record": "Court websites and decision publication channels"
+        "record": "Current Icelandic Courts portal and decision-search route, formerly domstolar.is"
       },
       "functional_relationship": "related_source",
-      "verification_status": "Official court portal and publication rules located; a stable search interface and corpus coverage for immigration decisions were not verified.",
+      "verification_status": "The former domstolar.is portal resolves to the official Ísland.is Courts portal. Search results describe a Dómasafn route; direct access and completeness for immigration matters remain unverified.",
       "retrieval_status": "converted_review_candidate",
       "retrieval_shape": "Official website network; individual court pages and documents.",
-      "version_evidence": "Coverage and retention periods are governed by publication rules and court-specific pages; exact corpus was not sampled.",
-      "note": "Search outcome is incomplete, not evidence that no relevant judgments exist. Continue with the Supreme Court, Landsréttur, and district-court repositories separately.",
+      "version_evidence": "Portal moved to Ísland.is; court decisions are subject to publication exceptions, redaction and anonymisation.",
+      "note": "Human-review lead only. Search the Supreme Court, Landsréttur, and district courts separately; do not infer that the portal is complete.",
       "topic_ids": [
         "CASELAW-COURT-01"
       ],
@@ -857,7 +888,8 @@
       "source_sha256": "7392f4f26fc00dfd5d69c650ae8e589b49a06d590a27c814848655cc52b9202d",
       "converted_sha256": "7cfd40dccf623d517d286e09bb84bd90302735b5456b440d082e3f4af9169872",
       "source_bytes": 215294,
-      "resolved_url": "https://island.is:443/s/domstolar"
+      "resolved_url": "https://island.is/s/domstolar",
+      "previous_url": "https://www.domstolar.is/"
     },
     {
       "id": "is-28",
@@ -885,8 +917,224 @@
       "converted_sha256": "c6161dbc25d36174eb66bce88207dd1fd0a82b806b73320f55178c7b2b9f0b3c",
       "source_bytes": 264480,
       "resolved_url": "https://island.is/en/o/digital-iceland/notendaskilmalar-islandis-terms-and-conditions-stefnur-og-skilmalar-1"
+    },
+    {
+      "id": "is-29",
+      "title": "Ministry of Justice immigration overview and official source directory",
+      "source_type": "official_authority_directory",
+      "language": "is",
+      "url": "https://www.stjornarradid.is/verkefni/utlendingar/",
+      "publisher_identifier": {
+        "system": "Icelandic Ministry of Justice / Stjórnarráðið",
+        "record": "Immigration overview page linking to laws, regulations, the Directorate, appeals board and published decisions"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official Ministry page opened; authority links and pointers to Alþingi, Reglugerðasafn and Immigration Appeals Board decisions were inspected.",
+      "retrieval_status": "external_reference_only",
+      "retrieval_shape": "Official ministry HTML overview page.",
+      "version_evidence": "Page includes current authority links and 2026 news; no fixed revision date is displayed.",
+      "note": "Accepted as an official navigation source only. Follow linked primary legislation and competent-authority sources for substantive rules.",
+      "topic_ids": [
+        "ADMIN-01",
+        "REMEDY-01"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "external_reference_status": "accepted",
+      "external_reference_checked_at": "2026-10-21",
+      "external_reference_scope": "Official navigation and authority-identification page only."
+    },
+    {
+      "id": "is-30",
+      "title": "Regulation 669/2026 amending Regulation 540/2017",
+      "source_type": "official_regulation_amendment",
+      "language": "is",
+      "url": "https://www.reglugerd.is/reglugerdir/allar/nr/0669-2026",
+      "publisher_identifier": {
+        "system": "Reglugerðasafn / Ministry of Justice",
+        "record": "Regulation 669/2026, amendment to Regulation 540/2017"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official amendment record opened; provisions and stated entry into force inspected.",
+      "retrieval_status": "external_reference_only",
+      "retrieval_shape": "Official government HTML amendment record with linked Gazette PDF.",
+      "version_evidence": "Published 2026-06-11. §1 repeals regulation §41; §2 changes terminology in §47 and took effect 2026-07-01; the regulation states immediate entry into force otherwise.",
+      "note": "Accepted as the official text of this amendment, not a consolidated version of Regulation 540/2017.",
+      "topic_ids": [
+        "ENTRY-01",
+        "PROCEDURE-01"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "external_reference_status": "accepted",
+      "external_reference_checked_at": "2026-10-21",
+      "external_reference_scope": "Published amendment text and commencement terms only."
+    },
+    {
+      "id": "is-31",
+      "title": "Regulation 724/2026 amending Regulation 540/2017",
+      "source_type": "official_regulation_amendment",
+      "language": "is",
+      "url": "https://www.reglugerd.is/reglugerdir/eftir-raduneytum/dmr/nr/25017",
+      "publisher_identifier": {
+        "system": "Reglugerðasafn / Ministry of Justice",
+        "record": "Regulation 724/2026, amendment to Regulation 540/2017"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official amendment record opened; amended provisions and stated commencement inspected.",
+      "retrieval_status": "external_reference_only",
+      "retrieval_shape": "Official government HTML amendment record with linked Gazette PDF.",
+      "version_evidence": "Issued 2026-06-11 and published 2026-06-26; replaces §11, supplements §13, adds §38a on reliability assessment, repeals §43b and adds §52; the text states immediate entry into force.",
+      "note": "Accepted as the official text of this amendment, not a consolidated version of Regulation 540/2017. §38a may be relevant to document handling; assess application to the specific procedure before relying on it.",
+      "topic_ids": [
+        "PROCEDURE-01",
+        "EVIDENCE-01"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "external_reference_status": "accepted",
+      "external_reference_checked_at": "2026-10-21",
+      "external_reference_scope": "Published amendment text and commencement terms only."
+    },
+    {
+      "id": "is-32",
+      "title": "Regulation 725/2026 amending Regulation 540/2017",
+      "source_type": "official_regulation_amendment",
+      "language": "is",
+      "url": "https://www.reglugerd.is/reglugerdir/eftir-raduneytum/dmr/nr/25018",
+      "publisher_identifier": {
+        "system": "Reglugerðasafn / Ministry of Justice",
+        "record": "Regulation 725/2026, amendment to Regulation 540/2017"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official amendment record opened; replacement chapter and stated commencement inspected.",
+      "retrieval_status": "external_reference_only",
+      "retrieval_shape": "Official government HTML amendment record with linked Gazette PDF.",
+      "version_evidence": "Issued 2026-06-11 and published 2026-06-26; replaces Chapter II with short-term residence-permit provisions and states immediate entry into force.",
+      "note": "Accepted as the official text of this amendment, not a consolidated version of Regulation 540/2017. Its application to EEA/EFTA residence-card rights is not determined here.",
+      "topic_ids": [
+        "ENTRY-01",
+        "RESIDENCE-01"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "external_reference_status": "accepted",
+      "external_reference_checked_at": "2026-10-21",
+      "external_reference_scope": "Published amendment text and commencement terms only."
+    },
+    {
+      "id": "is-33",
+      "title": "Courts Act No. 50/2016",
+      "source_type": "national_court_legislation",
+      "language": "is",
+      "url": "https://www.althingi.is/lagas/nuna/2016050.html",
+      "publisher_identifier": {
+        "system": "Alþingi Lagasafn",
+        "record": "Act No. 50/2016 on Courts; current law page"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official current consolidated page opened; displayed edition 158a dated 1 October 2026. The law identifies the court structure and statutory basis cited by Rules No. 3/2022.",
+      "retrieval_status": "external_reference_only",
+      "retrieval_shape": "Official current consolidated HTML law page.",
+      "version_evidence": "Lagasafn edition 158a dated 2026-10-01; amendments include Act 60/2026 effective 2026-06-27.",
+      "note": "Accepted as the current official Courts Act link. Its application to a specific challenge route must be mapped with the relevant procedural law.",
+      "topic_ids": [
+        "CASELAW-COURT-01",
+        "REMEDY-01"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "external_reference_status": "accepted",
+      "external_reference_checked_at": "2026-10-21",
+      "external_reference_scope": "Current consolidated court-organization and judicial-administration law, including provisions cited by Rules No. 3/2022."
+    },
+    {
+      "id": "is-34",
+      "title": "Act No. 91/1991 on Civil Procedure",
+      "source_type": "national_civil_procedure_legislation",
+      "language": "is",
+      "url": "https://www.althingi.is/lagas/nuna/1991091.html",
+      "publisher_identifier": {
+        "system": "Alþingi Lagasafn",
+        "record": "Act No. 91/1991 on Civil Procedure; current law page"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official current consolidated page opened; displayed edition 158a dated 1 October 2026.",
+      "retrieval_status": "external_reference_only",
+      "retrieval_shape": "Official current consolidated HTML law page.",
+      "version_evidence": "Lagasafn edition 158a dated 2026-10-01.",
+      "note": "Accepted as the current official general civil-procedure link. Whether and how it governs judicial review of immigration decisions remains to be mapped.",
+      "topic_ids": [
+        "REMEDY-01",
+        "CASELAW-COURT-01"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "external_reference_status": "accepted",
+      "external_reference_checked_at": "2026-10-21",
+      "external_reference_scope": "Current consolidated general civil-procedure text; use for a specific immigration challenge only after confirming the applicable court jurisdiction and procedure."
     }
   ],
   "retrieved_review_candidate_count": 21,
-  "converted_review_candidate_count": 20
+  "converted_review_candidate_count": 20,
+  "source_acceptance_register": "source-library/iceland/references/source-acceptance.json",
+  "dependency_edges": [
+    {
+      "source_id": "is-26",
+      "depends_on_source_id": "is-33",
+      "relationship": "rule-making authority",
+      "reference": "Rules No. 3/2022 identify Act No. 50/2016 on Courts, including §§7, 20, 28 and 38, as their legal basis.",
+      "status": "checked",
+      "checked_at": "2026-10-21"
+    },
+    {
+      "source_id": "is-30",
+      "depends_on_source_id": "is-05",
+      "relationship": "amends",
+      "reference": "Regulation 669/2026 amends Regulation 540/2017.",
+      "status": "checked",
+      "checked_at": "2026-10-21"
+    },
+    {
+      "source_id": "is-30",
+      "depends_on_source_id": "is-02",
+      "relationship": "statutory authority",
+      "reference": "Regulation 669/2026 cites Act No. 80/2016, §36(4) and §120(2)(41).",
+      "status": "checked",
+      "checked_at": "2026-10-21"
+    },
+    {
+      "source_id": "is-31",
+      "depends_on_source_id": "is-05",
+      "relationship": "amends",
+      "reference": "Regulation 724/2026 amends Regulation 540/2017.",
+      "status": "checked",
+      "checked_at": "2026-10-21"
+    },
+    {
+      "source_id": "is-31",
+      "depends_on_source_id": "is-02",
+      "relationship": "statutory authority",
+      "reference": "Regulation 724/2026 cites Act No. 80/2016, §§52(3), 53(4), 57(8) and 58(9).",
+      "status": "checked",
+      "checked_at": "2026-10-21"
+    },
+    {
+      "source_id": "is-32",
+      "depends_on_source_id": "is-05",
+      "relationship": "amends",
+      "reference": "Regulation 725/2026 amends Regulation 540/2017.",
+      "status": "checked",
+      "checked_at": "2026-10-21"
+    },
+    {
+      "source_id": "is-32",
+      "depends_on_source_id": "is-02",
+      "relationship": "statutory authority",
+      "reference": "Regulation 725/2026 cites Act No. 80/2016, §21(6).",
+      "status": "checked",
+      "checked_at": "2026-10-21"
+    }
+  ],
+  "dependency_review_note": "The recorded amendment and delegated-rule links show publisher-identified relationships, not a complete dependency map for all provisions in the pack. Full topic-level legal mapping remains open."
 }

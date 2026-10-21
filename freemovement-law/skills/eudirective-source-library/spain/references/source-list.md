@@ -1,6 +1,6 @@
-# Spain source inventory (2026-10-16)
+# Spain initial 7-record source inventory (2026-10-16)
 
-**Scope:** candidates from the reviewed national acquisition register; pending source identity, version and completeness review.
+This is the original seven-record inventory, retained as historical discovery context. Link acceptance is recorded in [source-acceptance.json](source-acceptance.json), and issue adequacy in the [coverage register](coverage-register.md). Six of these seven official references now have a scoped link decision; the Ministry's Hoja 62 remains a human-review candidate. Local captures remain unaccepted.
 
 | Priority / evidence | Candidate | Official source | Taxonomy | Scope note |
 |---|---|---|---|---|

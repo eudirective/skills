@@ -674,16 +674,15 @@
       "source_ids": [
         "hr-mup-eea-forms-index"
       ],
-      "retrieval": "GET the current official MUP forms index; record retrieval date, final URL and link targets for Forms 1b, 2b, 3b and 6b. Re-resolve links from the parent page on every refresh.",
-      "conversion": "Extract the EEA forms section with a page-specific selector after validating against the live page; preserve link labels, target URLs and the regulation citation.",
-      "selector": "pending page-specific validation",
-      "status": "source_specific_validation_pending",
+      "retrieval": "For ordinary use, open the current MUP parent page and record its check date, final URL, EEA form labels and live targets. Re-resolve the links from the parent page on each refresh. Do not infer form purpose beyond the official label; Form 2b is titled as an application for a card.",
+      "conversion": "Not needed for ordinary link use. If retaining a page copy, extract only the EEA forms section with a validated page-specific selector and preserve labels, targets and the cited rule version.",
+      "selector": "not_required_for_link_use; local_capture_selector_not_validated",
+      "status": "official_link_reviewed_local_capture_optional",
       "semantic_checks": [
-        "page is published by MUP",
-        "EEA section includes all current form labels and links",
-        "each form is followed to its final URL and compared with the applicable regulation",
-        "distinguish application forms from residence-card specimens",
-        "reconcile the page citation with the current MUP legislation index"
+        "publisher and page identity confirmed",
+        "EEA form labels and live links recorded on 2026-10-21",
+        "Form 2b distinguished from a residence-card specimen by its official title",
+        "the displayed legal chain is noted as incomplete against MUP Propisi; use Propisi for currentness"
       ],
       "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
     },
@@ -692,15 +691,16 @@
       "source_ids": [
         "hr-mup-eea-guidance"
       ],
-      "retrieval": "GET public parent/current page; follow current official links rather than stale embedded direct files; record final URL and update date.",
-      "conversion": "Select #content .page_content. Preserve headings, links, list structure, dates and warnings; exclude navigation and footer.",
-      "selector": "#content .page_content",
-      "status": "selector_observed_on_seed_pages_or_planned",
+      "retrieval": "For ordinary use, open the live MUP EEA-family page and record its displayed update date, check date, relevant procedure and current linked forms. Recheck the parent page on refresh.",
+      "conversion": "Not needed for ordinary link use. If a local copy is retained, use a validated page-specific selector and compare only the relevant procedure with current primary law.",
+      "selector": "not_required_for_link_use; validate #content .page_content only if local capture is chosen",
+      "status": "official_link_reviewed_local_capture_optional",
       "semantic_checks": [
-        "heading matches record",
-        "all substantive content and outgoing links retained",
-        "update/version date recorded",
-        "links and amounts/deadlines verified against current primary law"
+        "publisher and page identity confirmed",
+        "page updated 2025-10-09; reviewed 2026-10-21",
+        "Form 2b route and eight-day filing point recorded within page scope",
+        "displayed fee is not independently verified",
+        "no claim of regional practice or topic completeness"
       ],
       "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
     },
@@ -709,15 +709,15 @@
       "source_ids": [
         "hr-mup-propis-index"
       ],
-      "retrieval": "GET public parent/current page; follow current official links rather than stale embedded direct files; record final URL and update date.",
-      "conversion": "Select #content .page_content. Preserve headings, links, list structure, dates and warnings; exclude navigation and footer.",
-      "selector": "#content .page_content",
-      "status": "selector_observed_on_seed_pages_or_planned",
+      "retrieval": "For ordinary use, open the current MUP Propisi page and record its check date and instrument/version entries relevant to the question. Recheck the live page on each refresh.",
+      "conversion": "Not needed for ordinary link use. If a local copy is retained, use a validated page-specific selector and preserve the index entries and their links.",
+      "selector": "not_required_for_link_use; validate #content .page_content only if local capture is chosen",
+      "status": "official_link_reviewed_local_capture_optional",
       "semantic_checks": [
-        "heading matches record",
-        "all substantive content and outgoing links retained",
-        "update/version date recorded",
-        "links and amounts/deadlines verified against current primary law"
+        "publisher and page identity confirmed",
+        "EEA and third-country chains listed on 2026-10-21 recorded in the source review",
+        "index is treated as a version locator, not consolidated legal wording",
+        "target legal text and provision-level effect checked separately when needed"
       ],
       "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
     },
@@ -1469,6 +1469,24 @@
         "current legal effect and legal-topic sufficiency are assessed separately"
       ],
       "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+    },
+    {
+      "rule_id": "hr-constitutional-court-zus-169-2-2026-nn-eli-v1",
+      "source_ids": [
+        "hr-constitutional-court-zus-169-2-2026"
+      ],
+      "retrieval": "Use the stable official Narodne novine ELI URL; record the decision number, decision date, Gazette issue/item and final URL. Reference by link after a direct source-specific review; capturing a local copy is optional.",
+      "conversion": "If a local copy is later retained, select only .sl-content .doc, preserve the operative points and reasoning structure, and exclude the publisher shell. Do not convert solely to enable ordinary link use.",
+      "selector": ".sl-content .doc",
+      "status": "official_link_scope_reviewed; local_capture_optional",
+      "semantic_checks": [
+        "decision number U-I-2767/2025 and U-I-2768/2025 and NN 39/2026 item 485 match",
+        "quote or summarize the operative point separately from the court’s reasoning",
+        "identify Article 169(2) as a transitional provision concerning proceedings under the previous Act",
+        "do not infer impact on ordinary current residence application routes",
+        "leave exact effect timing and application to individual proceedings open unless independently verified"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only."
     }
   ],
   "reference_use_policy": "For every source type, prefer the responsible official publisher. Prefer a usable government-published consolidation for national legislation and the responsible EU publisher consolidation for EU legislation; if none is usable, use the closest government-published or official-service version and record its language, displayed date/cutoff, scope, and limits. A human-reviewed official link is enough for ordinary research; a custom capture/conversion rule, local copy, API, replay check, or updater is optional. Use Gazette fragments only to resolve a material question; do not reconstruct a full chain by default. Keep reference use, local-copy acceptance, topic coverage, and country completion separate."

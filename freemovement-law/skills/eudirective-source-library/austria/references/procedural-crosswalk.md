@@ -1,0 +1,24 @@
+# Austria residence, refusal and removal crosswalk
+
+Checked 19 October 2026. This issue map separates the initial abuse/fraud decision, review of continued residence, and downstream termination/removal. It is an evidence-backed working map, not a complete procedural opinion.
+
+| Route | Trigger and initial path | Administrative/court handling | Evidence and limits |
+|---|---|---|---|
+| **NAG §54(7): express abuse/fraud exclusion** | Where one of the listed sham, forced or falsely asserted family relationships is present, the authority rejects the residence-card application and adds a finding that the applicant is outside the EU-residence-right regime. | This is the express §54(7) route. It is not the ordinary §55(3) continued-right procedure; §55(3) expressly excludes §54(7). The decision and factual ground remain subject to the applicable challenge procedure. | NAG §54 is accepted. VwGH Ro 2021/22/0012 confirms §54(7) can apply after divorce where the application was based on the sham marriage, but also quashed the decision because the court did not make a reasonable effort to hear a relevant witness. It is not a presumption of abuse. |
+| **NAG §55(3): continued-right review and BFA referral** | When the authority concludes that a right under NAG §§51, 52 or 54 does not exist or no longer exists for one of §55(3)'s listed grounds, it must notify the person in writing and involve the BFA immediately, at the latest simultaneously with the notice. | This is distinct from §54(7). During the termination procedure the VwGVG §8 delay period is suspended. If the BFA does not terminate residence, NAG §55(4) requires the authority to document the right or issue an available title. | NAG §55 and BFA-VG/FPG provisions are accepted. VwGH Ra 2022/22/0149 treats §55(3) as procedural and applicable in court proceedings through VwGVG §17. VwGH Ro 2020/22/0020 concerns assessment of the underlying EU right despite an unexpired card; its permanent-residence posture limits generalization. |
+| **Downstream termination/removal** | Following the continued-right assessment, the BFA/FPG route may be engaged. Relevant captured provisions include BFA-VG §§9–10 and FPG §§66, 67 and 70. | Map competence, notice/hearing, proportionality, remedy, suspensive effect, deadlines and any departure period separately. Do not infer the full route from NAG §55 alone. | The provisions are accepted. BVwG G306 2325799-1 and W112 2246194-2 are fact-specific examples. VwGH Ra 2023/22/0090–0091 rejected further revisions as inadmissible and did not decide the underlying merits anew. |
+| **Interim lawful stay while §55 proceeds** | An existing EU residence document may remain relevant to domestic lawful-stay treatment while the NAG §55 procedure is unresolved. | Distinguish domestic lawful stay during the pending national procedure from continued existence of an EU-derived right and from employment-law eligibility. | VwGH Ro 2020/09/0011 links FPG §31(1)(2) lawful presence to completion of the §55 process; the decision separately rejects treating that status as proof of an AuslBG §3(8) certificate entitlement. |
+| **Delay/failure to decide** | AVG §73 and VwGVG §8 provide the general delay routes, subject to the special NAG §37(4) timing rule. | Check the authority, applicable period, any §37(4) suspension and whether the authority acts promptly after the suspension ends. | AVG §73 and VwGVG §8 are accepted. VwGH Ra 2019/22/0177 addresses the NAG investigation-period suspension and delay procedure; apply its reasoning to the exact procedural facts. |
+
+## Legal distinction to preserve
+
+- **Section 54(7)** concerns the listed abuse/fraud/forced-relationship grounds at the residence-card application stage and directs rejection plus a finding that the applicant falls outside the EU-right regime.
+- **Section 55(3)** concerns whether a residence right does not or no longer exists on the specified grounds; it uses written notice and BFA involvement, and suspends the delay-complaint deadline during the termination process.
+- Do not treat an unexpired card as a constitutive title or as conclusive proof of the substantive EU right. Do not use the general §55 route to bypass the express §54(7) exception, or use §54(7) as a shortcut around individualized evidence and fair procedure.
+
+## Still required before calling the procedure complete
+
+1. Reconcile each route with the complete current NAG, BFA-VG, FPG, AVG and VwGVG text, including notice, hearing, review, deadlines and suspensive effect.
+2. Verify how the relevant Austrian authorities operationalize the NAG-to-BFA referral and which specific decision is appealable at each step.
+3. Complete cross-court search batches and analyze all directly relevant holdings, including the two paired BVwG W112 proceedings and 2026 VwGH follow-up.
+4. Add province-specific residence-card procedure and mission-specific entry/visa instructions where the route begins abroad.

@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0.0",
+  "jurisdiction": "AT",
+  "checked_on": "2026-10-19",
+  "source_ids": [
+    "at-nag-dv-anl-5",
+    "at-nag-dv-anl-6"
+  ],
+  "source_status": "accepted_as_official_statutory_specimens",
+  "visual_review": {
+    "method": "Render the embedded artwork from the captured native signed PDF and inspect both image objects for each one-page PDF.",
+    "at-nag-dv-anl-5": "Front and reverse of an Aufenthaltskarte specimen; bilingual German/English title, Austria mark, placeholder document number, holder and validity fields, photo field and authority fields. This is card artwork, not an application.",
+    "at-nag-dv-anl-6": "Front and reverse of a Daueraufenthaltskarte specimen; bilingual German/English title, Austria mark, placeholder document number, holder and validity fields, photo field and authority fields. This is card artwork, not an application."
+  },
+  "applicable_eu_rules": [
+    {
+      "instrument": "Council Regulation (EU) 2025/1208",
+      "article": "7(1)",
+      "requirement": "Use the format established by Regulation (EC) No 1030/2002 as amended by Regulation (EU) 2017/1954 and implemented by Commission Implementing Decision C(2018) 7767 as amended by C(2021) 3726."
+    },
+    {
+      "instrument": "Council Regulation (EU) 2025/1208",
+      "article": "7(2)",
+      "requirement": "Residence cards must bear the title Residence card or Permanent residence card and use the standard code Family Member EU Art 10 DIR 2004/38/EC or Family Member EU Art 20 DIR 2004/38/EC in data field [10]."
+    },
+    {
+      "instrument": "Council Regulation (EU) 2025/1208",
+      "article": "8(1)-(2)",
+      "requirement": "Nonconforming existing cards generally cease to be valid at expiry or by 3 August 2026; cards lacking minimum ICAO security standards or a functional ICAO-compliant MRZ are invalid; qualifying cards that meet minimum security and specified Annex points have the longer transition to expiry or 3 August 2031."
+    }
+  ],
+  "comparison": {
+    "document_titles": "Visually present in both languages and consistent with the Article 7(2) title requirement.",
+    "standardized_code_in_data_field_10": "not_demonstrated_blank_specimen",
+    "functional_icao_mrz": "not_demonstrated_blank_specimen",
+    "minimum_security_and_storage_medium": "cannot_be_assessed_from_blank_public_artwork",
+    "overall": "The official Austrian specimens are accurately captured and accepted as statutory sources. They do not demonstrate all technical or encoded-data requirements for current issued cards. Do not infer card compliance from the annex illustration; verify the live issued-card specification or current implementation before applying it."
+  },
+  "status": "current_issued_card_conformity_unresolved",
+  "national_text_note": "NAG-DV §5 still cites Regulation (EU) 2019/1157. Preserve that Austrian wording and maintain the separate dependency alert for CJEU C-61/22 and Regulation (EU) 2025/1208."
+}

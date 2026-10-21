@@ -4,10 +4,10 @@
   "jurisdiction": "FR",
   "inventory_research_date": "2026-10-18",
   "scope": "Bounded discovery of official French legal-source, EU/EEA/Swiss free-movement, family, civil-status, visa, residence, administrative-procedure, remedy, court, privacy, oversight, public-access and legal-aid sources. This is not a legal-equivalence opinion or a claim of complete source coverage.",
-  "status": "partially_retrieved_review_candidates",
-  "retrieval_status": "17 candidate pages converted; 0 PDFs preserved without text extraction; 0 discovery surfaces had no stable body; failures are recorded per item; no source accepted",
+  "status": "partially_retrieved; two CESEDA official references usable; local-copy and country coverage incomplete",
+  "retrieval_status": "17 official catalogue, guidance, and discovery pages converted and replay-verified; no legal text retained locally; 30 local retrieval attempts failed or timed out; two government-published CESEDA sections were reviewed as usable official references.",
   "accepted_source_count": 0,
-  "candidate_source_count": 47,
+  "candidate_source_count": 48,
   "official_hosts": [
     "cada.data.gouv.fr",
     "cada.fr",
@@ -191,20 +191,20 @@
   "documents": [
     {
       "id": "fr-01-ceseda-book-ii-eu-citizens-and-family-members-(including-articles-l.233-1-o",
-      "title": "Code de l'entrée et du séjour des étrangers et du droit d'asile (CESEDA), Book II: EU citizens and family members",
+      "title": "CESEDA, Book II Part réglementaire (Articles R. 210-1 to R. 286-2): EU citizens and family members",
       "source_type": "national_legislation",
       "language": "fr",
-      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070158/LEGISCTA000042800206/2026-05-01",
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070158/LEGISCTA000042800206",
       "publisher_identifier": {
         "system": "Légifrance",
-        "record": "CESEDA LEGITEXT000006070158; Book II section LEGISCTA000042800206"
+        "record": "CESEDA LEGITEXT000006070158; Part réglementaire, Book II section LEGISCTA000042800206"
       },
       "functional_relationship": "partial_functional_match",
-      "verification_status": "Official search result identifies current Book II section; exact current consolidated text and all linked effects not independently checked",
+      "verification_status": "Official Légifrance section opened 2026-10-21; page identifies CESEDA Livre II (Articles R. 210-1 to R. 286-2), and displays the version in force as of 2026-09-09. The section includes entry, visa, residence-card, and removal rules for EU citizens and family members.",
       "retrieval_status": "retrieval_or_conversion_error",
-      "retrieval_shape": "Légifrance code section HTML; possible official LEGI XML bulk record",
-      "version_evidence": "A date-qualified section route for 2026-05-01 was identified. Do not infer the 2026-10-18 wording from that older date route.",
-      "note": "This broad code section covers EU citizen and family provisions among other immigration law. The 24 February 2022 Conseil d'État decision no. 450285 partially annulled wording in Articles L. 233-1 and L. 233-2. Monitor the connected decision and subsequent text. Carried forward from the seven-record France register; its old section URL is replaced by the identified current-section route.",
+      "retrieval_shape": "Government-published consolidated code section; link-only review; no retained copy",
+      "version_evidence": "The unpinned official section displayed 'Version en vigueur au 09/09/2026' when checked on 2026-10-21. Its stable section URL follows the maintained code section; the page's displayed version should be checked at use.",
+      "note": "Use as a French-language official consolidated reference for the regulatory part of CESEDA Book II. It includes admission and visa rules (including Article R. 221-2) and card-issuance rules. Keep the legislative part, external procedural codes, operational instructions, and case law distinct.",
       "topic_ids": [
         "RESIDENCE-01",
         "RESIDENCE-08",
@@ -213,7 +213,9 @@
       ],
       "retrieved": false,
       "accepted": false,
-      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "official_reference_id": "fr-ceseda-book-ii-regulatory",
+      "official_reference_status": "usable_official_reference"
     },
     {
       "id": "fr-02-code-civil-international-adoption-(articles-370-2-to-370-5)",
@@ -1237,11 +1239,39 @@
       "retrieved": false,
       "accepted": false,
       "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "fr-ceseda-book-ii-legislative",
+      "title": "CESEDA, Book II Part législative (Articles L. 200-1 to L. 286-2): EU citizens and family members",
+      "source_type": "national_legislation",
+      "language": "fr",
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070158/LEGISCTA000042770930",
+      "publisher_identifier": {
+        "system": "Légifrance",
+        "record": "CESEDA LEGITEXT000006070158; Part législative, Book II section LEGISCTA000042770930"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official Légifrance section opened 2026-10-21; page identifies CESEDA Livre II (Articles L. 200-1 to L. 286-2). The page header displayed the version in force as of 2026-08-24. Article L. 200-3 expressly covers qualifying EEA EFTA and Swiss nationals by assimilation; the section identifies the Conseil d'État's partial annulment of Articles L. 233-1 and L. 233-2.",
+      "retrieval_status": "reference_only_no_local_copy",
+      "retrieval_shape": "Government-published consolidated code section; link-only review; no retained copy",
+      "version_evidence": "The unpinned official section displayed 'Version en vigueur au 24/08/2026' when checked on 2026-10-21. Its stable section URL follows the maintained code section; the page's displayed version should be checked at use.",
+      "note": "Use as a French-language official consolidated reference for the legislative part of CESEDA Book II. Read Articles L. 233-1 and L. 233-2 with Conseil d'État decision nos. 450285/450288 of 24 February 2022, which Légifrance also identifies as a partial annulment. This reference does not establish topic completeness or all administrative practice.",
+      "topic_ids": [
+        "RESIDENCE-01",
+        "RESIDENCE-08",
+        "VISA-01",
+        "REMEDY-12"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "official_reference_id": "fr-ceseda-book-ii-legislative",
+      "official_reference_status": "usable_official_reference"
     }
   ],
   "inventory_source": "references/source-list.md",
   "retrieved_review_candidate_count": 17,
   "retrieved_converted_candidate_count": 0,
   "page_accessed_note_count": 1,
-  "converted_review_candidate_count": 17
+  "converted_review_candidate_count": 17,
+  "official_reference_count": 2
 }

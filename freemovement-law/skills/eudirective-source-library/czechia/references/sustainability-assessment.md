@@ -1,21 +1,27 @@
 # Czechia source-rule sustainability assessment
 
-**Assessment date:** 19 October 2026  
-**Pack version:** 0.4.0  
-**Manifest:** 43 candidate records; 0 local copies accepted
+**Assessment date:** 19 October 2026; acceptance addendum 21 October 2026
+**Pack version assessed:** 0.4.0; current pack 0.4.2
+**Manifest:** 43 records; 17 accepted official external references; 0 local copies accepted
 **Scope:** active legal and guidance acquisition rules, plus the repeatability limits of the one-time monitor/discovery capture.
 
 ## Summary
 
 The pack now has replayable conversions for 17 current e-Sbírka legal texts, 13 official guidance/index pages, and 13 monitor/discovery pages. The legal route was repaired after the registration-gated REST API proved infeasible: the capture uses e-Sbírka's public page-data service, which the official web application itself uses, without an account or API key. This route resolved all 17 records and supplied effective-version metadata plus ordered text fragments. It is technically demonstrated but not yet a guaranteed publisher interface.
 
-No local copy has been accepted. This does not block use of a human-reviewed official source link within its displayed scope. For retained conversions, review the relevant content and use broader comparison only when the conversion is lossy or the whole converted text will be relied on. The 43-record inventory is not a completeness claim.
+No local copy has been accepted. This does not block use of a reviewed official source link within its displayed scope. For retained conversions, review the relevant content and use broader comparison only when the conversion is lossy or the whole converted text will be relied on. The 43-record inventory is not a completeness claim.
+
+## Acceptance addendum — 21 October 2026
+
+The 17 e-Sbírka legal-source references are accepted for external use within dated scopes. The official portal identified each retrieved record as `AKTUALNI`, with instrument identity, effective-from date, and ordered text fragments; the exact response and metadata hashes are in the capture ledger. The source references can be used as the government-published working texts for those recorded versions, preserving e-Sbírka's informative-text caveat. For later use, recheck the stable official record. This does not accept any derived Markdown conversion, prove legal applicability to a particular past event, or complete topic/country coverage.
+
+The research browser opened the e-Sbírka record pages on 21 October but returned no rendered text. The acceptance therefore relies on the official page-data responses retrieved on 19 October, not a claim of a 21 October refresh. These reviewed and accepted source references mean no whole-portal review is needed to establish whether e-Sbírka is an official text publisher; individual currentness still follows the dated scope above.
 
 ## Rule assessment
 
 | Lane | Evidence and controls | Sustainability limits | Verdict |
 |---|---|---|---|
-| e-Sbírka current legal text — 17 records | Public unauthenticated page-data route resolves the stable act record to `typZneni=AKTUALNI`, a current-version URL, effective-from date, and publisher citation. The adapter captures metadata and every ordered JSON fragment page, validates identity/version/page/fragment consistency, hashes exact responses, converts XHTML fragments deterministically, and replays offline. All 17 captured texts passed replay. | The page-data route and JSON schema are not the separately documented, versioned REST API. Frontend changes may alter endpoint or fragment fields. The captured page labels consolidated text informative; a capture does not prove force, completeness, or event-specific applicability. | **Fragile / medium confidence.** Repeatable for identified records today, with strong identity and replay checks; add a live change monitor and reconcile versions with promulgation before trust promotion. |
+| e-Sbírka current legal text — 17 records | Public unauthenticated page-data route resolves the stable act record to `typZneni=AKTUALNI`, a current-version URL, effective-from date, and publisher citation. The adapter captures metadata and every ordered JSON fragment page, validates identity/version/page/fragment consistency, hashes exact responses, converts XHTML fragments deterministically, and replays offline. All 17 captured texts passed replay. | The page-data route and JSON schema are not the separately documented, versioned REST API. Frontend changes may alter endpoint or fragment fields. The captured page labels consolidated text informative; a capture does not prove force, completeness, or event-specific applicability. | **Fragile / medium confidence.** Repeatable for identified records today, with strong identity and replay checks; add a live change monitor for repeatable freshness checks; consult promulgations only where a specific legal question requires them. |
 | Official guidance/index HTML — 13 records | Exact official responses and deterministic candidate conversions are retained in `work/raw/` and `work/candidates/`; offline verification passed for all 13. The rule checks configured H1 identity, encoding, payload and extraction region; hashes prevent unnoticed candidate drift. | Pinned URLs do not discover new pages. Main-region extraction and flattened tables need content review. Linked attachments are not fetched by the HTML rule; form links need rediscovery through official parent indexes. | **Fragile / medium confidence.** Suitable for refreshing known pages with review, not for claiming complete guidance or forms coverage. |
 | Monitor/discovery pages — 13 records | Exact responses and converted candidates are in the 19 October capture ledger. The bounded generic capture passed offline replay for all 13. The stale renewal form URL was repaired from the official MOI forms index. | This is a one-time capture, not a maintained publisher-specific updater. Court searches, paginated mission directories, form links, and local mission practice need different discovery and coverage rules. A successful page capture does not make them legal texts or complete feeds. | **No sustainability verdict for an updater.** The capture is reproducible from saved bytes; recurrence and coverage are not implemented. |
 

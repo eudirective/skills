@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.3.0",
+  "jurisdiction": "DK",
+  "as_of": "2026-10-21",
+  "accepted_source_count": 0,
+  "accepted_current_law_source_count": 0,
+  "accepted_derived_text_count": 0,
+  "accepted_topic_count": 0,
+  "country_review_complete": false,
+  "accepted_external_reference_count": 2,
+  "external_reference_decisions": [
+    {
+      "source_id": "eu-residence-regulation-2020-1457",
+      "decision": "accepted_with_narrow_external_scope",
+      "accepted_role": "Official Retsinformation reference to BEK nr 1457/2020 and its version/status evidence. The government PDF printed 19 October 2026 marks the order Gældende and lists BEK nr 965/2025 as a later amendment. Use the 2020 text as the official base wording; read provisions changed by BEK nr 965/2025 together with that amending instrument. This acceptance does not mean the PDF integrates that amendment.",
+      "not_accepted": [
+        "A single consolidated text integrating BEK nr 965/2025.",
+        "Resolution of the end-date conflict in the local XML conversion metadata.",
+        "Proof that no other later amendment or commencement issue exists.",
+        "The local Markdown conversion as an accepted current text, topic adequacy, or country completion."
+      ],
+      "evidence": {
+        "official_source_url": "https://www.retsinformation.dk/api/pdf/216797",
+        "stable_record_url": "https://www.retsinformation.dk/eli/lta/2020/1457",
+        "checked_on": "2026-10-21",
+        "official_pdf_printed_on": "2026-10-19",
+        "language": "da",
+        "version": "BEK nr 1457 af 06/10/2020; official PDF labels it Gældende and lists BEK nr 965 af 18/06/2025 as a later change.",
+        "verified_locations": "Official PDF cover/status and later-change list; §§ 1-3 identify EU, EEA, Swiss, Danish-returnee and Nordic scope.",
+        "research_browser_note": "The ELI HTML view returned a JavaScript shell; the official PDF body and status metadata were directly readable.",
+        "retrieval_limit": "The retained local XML conversion reports an end date of 2026-07-02, which conflicts with the official PDF status seen on 2026-10-19. The conflict remains open; this external-reference decision does not promote the local conversion."
+      }
+    },
+    {
+      "source_id": "eu-residence-regulation-amendment-2025-965",
+      "decision": "accepted_with_narrow_external_scope",
+      "accepted_role": "Official primary text of BEK nr 965/2025, accepted for its exact amendment instructions to EU-opholdsbekendtgørelsen and its stated commencement on 1 July 2025. The text changes provisions including §§ 14, 18, 24, 26, 29-31 and 36, and repeals §§ 37-38. Read it with the BEK nr 1457/2020 base text where those changes matter.",
+      "not_accepted": [
+        "A standalone consolidated version of the EU-opholdsbekendtgørelsen.",
+        "Proof of the fully integrated wording of every affected provision.",
+        "Proof that no later amendment exists beyond the version/status evidence reviewed.",
+        "A locally stored copy or country-level coverage completion."
+      ],
+      "evidence": {
+        "official_source_url": "https://www.retsinformation.dk/api/pdf/250857",
+        "stable_record_url": "https://www.retsinformation.dk/eli/lta/2025/965",
+        "checked_on": "2026-10-21",
+        "official_pdf_printed_on": "2026-10-19",
+        "language": "da",
+        "version": "BEK nr 965 af 18/06/2025; § 2 states commencement on 1 July 2025.",
+        "verified_locations": "Complete three-page official PDF; §§ 1-2 identify the amended order, changed provisions, repeals, and commencement date.",
+        "retrieval_limit": "No exact response bytes were stored locally. The decision accepts the official external reference within this stated scope only."
+      }
+    }
+  ],
+  "policy": "A clear government-published legal source may be accepted for direct reference within its displayed status, version, content, and caveats. Gazette amendment-chain reconstruction is not a blanket prerequisite. External-reference acceptance is separate from local-copy acceptance, topic adequacy, and country completion.",
+  "count_note": "accepted_source_count and accepted_current_law_source_count count accepted retained local artifacts; both remain 0. Two official external references are accepted within the narrow scopes above. No Danish local conversion was promoted by this review."
+}

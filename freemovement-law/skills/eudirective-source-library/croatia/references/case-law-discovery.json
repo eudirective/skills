@@ -1,0 +1,831 @@
+{
+  "schema_version": "1.0.0",
+  "jurisdiction": "HR",
+  "as_of": "2026-10-19",
+  "portal": "https://odluke.sudovi.hr/",
+  "court_collection_evidence": "https://sudovi.hr/hr/o-sudovima/sudovi-republike-hrvatske",
+  "scope_note": "Five administrative court collections are planned: four first-instance administrative courts and the High Administrative Court. Search portal is dynamic; this is a search plan, not evidence that searches were run or that the corpus is complete.",
+  "required_batch_policy": "Each run records query, court, date, available filters, total hits, every screened result, decision IDs, duplicates and reasons for exclusion. Repeat searches on schedule; compare newly returned IDs.",
+  "court_collections": [
+    {
+      "id": "hr-us-zagreb",
+      "name": "Upravni sud u Zagrebu",
+      "official_source": "https://sudovi.hr/hr/uszg"
+    },
+    {
+      "id": "hr-us-split",
+      "name": "Upravni sud u Splitu",
+      "official_source": "https://sudovi.hr/hr/usst"
+    },
+    {
+      "id": "hr-us-rijeka",
+      "name": "Upravni sud u Rijeci",
+      "official_source": "https://sudovi.hr/hr/usri"
+    },
+    {
+      "id": "hr-us-osijek",
+      "name": "Upravni sud u Osijeku",
+      "official_source": "https://sudovi.hr/hr/usos"
+    },
+    {
+      "id": "hr-vus",
+      "name": "Visoki upravni sud Republike Hrvatske",
+      "official_source": "https://sudovi.hr/hr/vusrh"
+    }
+  ],
+  "planned_search_tasks": [
+    {
+      "task_id": "hr-us-zagreb-eea-residence",
+      "court_collection_id": "hr-us-zagreb",
+      "court_name": "Upravni sud u Zagrebu",
+      "query_id": "eea-residence",
+      "query_text": "\"državljanin države članice EGP\" boravak",
+      "planned_status": "not_run",
+      "required_run_evidence": [
+        "run_date",
+        "portal_version_or_scope",
+        "exact_query_and_filters",
+        "result_count",
+        "reviewed_count",
+        "excluded_count_with_reason",
+        "decision_ids",
+        "relevance_disposition",
+        "reviewer_notes"
+      ]
+    },
+    {
+      "task_id": "hr-us-zagreb-family-member-card",
+      "court_collection_id": "hr-us-zagreb",
+      "court_name": "Upravni sud u Zagrebu",
+      "query_id": "family-member-card",
+      "query_text": "\"član obitelji\" EGP boravišna iskaznica",
+      "planned_status": "not_run",
+      "required_run_evidence": [
+        "run_date",
+        "portal_version_or_scope",
+        "exact_query_and_filters",
+        "result_count",
+        "reviewed_count",
+        "excluded_count_with_reason",
+        "decision_ids",
+        "relevance_disposition",
+        "reviewer_notes"
+      ]
+    },
+    {
+      "task_id": "hr-us-zagreb-visa-family-member",
+      "court_collection_id": "hr-us-zagreb",
+      "court_name": "Upravni sud u Zagrebu",
+      "query_id": "visa-family-member",
+      "query_text": "\"član obitelji\" EGP viza",
+      "planned_status": "not_run",
+      "required_run_evidence": [
+        "run_date",
+        "portal_version_or_scope",
+        "exact_query_and_filters",
+        "result_count",
+        "reviewed_count",
+        "excluded_count_with_reason",
+        "decision_ids",
+        "relevance_disposition",
+        "reviewer_notes"
+      ]
+    },
+    {
+      "task_id": "hr-us-zagreb-document-evidence",
+      "court_collection_id": "hr-us-zagreb",
+      "court_name": "Upravni sud u Zagrebu",
+      "query_id": "document-evidence",
+      "query_text": "EGP boravak dokaz dokumentacija",
+      "planned_status": "not_run",
+      "required_run_evidence": [
+        "run_date",
+        "portal_version_or_scope",
+        "exact_query_and_filters",
+        "result_count",
+        "reviewed_count",
+        "excluded_count_with_reason",
+        "decision_ids",
+        "relevance_disposition",
+        "reviewer_notes"
+      ]
+    },
+    {
+      "task_id": "hr-us-zagreb-delay-inaction",
+      "court_collection_id": "hr-us-zagreb",
+      "court_name": "Upravni sud u Zagrebu",
+      "query_id": "delay-inaction",
+      "query_text": "upravni postupak šutnja uprave boravak stranac",
+      "planned_status": "not_run",
+      "required_run_evidence": [
+        "run_date",
+        "portal_version_or_scope",
+        "exact_query_and_filters",
+        "result_count",
+        "reviewed_count",
+        "excluded_count_with_reason",
+        "decision_ids",
+        "relevance_disposition",
+        "reviewer_notes"
+      ]
+    },
+    {
+      "task_id": "hr-us-zagreb-public-order-removal",
+      "court_collection_id": "hr-us-zagreb",
+      "court_name": "Upravni sud u Zagrebu",
+      "query_id": "public-order-removal",
+      "query_text": "EGP javni poredak protjerivanje",
+      "planned_status": "not_run",
+      "required_run_evidence": [
+        "run_date",
+        "portal_version_or_scope",
+        "exact_query_and_filters",
+        "result_count",
+        "reviewed_count",
+        "excluded_count_with_reason",
+        "decision_ids",
+        "relevance_disposition",
+        "reviewer_notes"
+      ]
+    },
+    {
+      "task_id": "hr-us-zagreb-family-life-proportionality",
+      "court_collection_id": "hr-us-zagreb",
+      "court_name": "Upravni sud u Zagrebu",
+      "query_id": "family-life-proportionality",
+      "query_text": "stranac obitelj razmjernost udaljenje",
+      "planned_status": "not_run",
+      "required_run_evidence": [
+        "run_date",
+        "portal_version_or_scope",
+        "exact_query_and_filters",
+        "result_count",
+        "reviewed_count",
+        "excluded_count_with_reason",
+        "decision_ids",
+        "relevance_disposition",
+        "reviewer_notes"
+      ]
+    },
+    {
+      "task_id": "hr-us-zagreb-appeal-deadline-procedure",
+      "court_collection_id": "hr-us-zagreb",
+      "court_name": "Upravni sud u Zagrebu",
+      "query_id": "appeal-deadline-procedure",
+      "query_text": "viza žalba rok upravni spor",
+      "planned_status": "not_run",
+      "required_run_evidence": [
+        "run_date",
+        "portal_version_or_scope",
+        "exact_query_and_filters",
+        "result_count",
+        "reviewed_count",
+        "excluded_count_with_reason",
+        "decision_ids",
+        "relevance_disposition",
+        "reviewer_notes"
+      ]
+    },
+    {
+      "task_id": "hr-us-split-eea-residence",
+      "court_collection_id": "hr-us-split",
+      "court_name": "Upravni sud u Splitu",
+      "query_id": "eea-residence",
+      "query_text": "\"državljanin države članice EGP\" boravak",
+      "planned_status": "not_run",
+      "required_run_evidence": [
+        "run_date",
+        "portal_version_or_scope",
+        "exact_query_and_filters",
+        "result_count",
+        "reviewed_count",
+        "excluded_count_with_reason",
+        "decision_ids",
+        "relevance_disposition",
+        "reviewer_notes"
+      ]
+    },
+    {
+      "task_id": "hr-us-split-family-member-card",
+      "court_collection_id": "hr-us-split",
+      "court_name": "Upravni sud u Splitu",
+      "query_id": "family-member-card",
+      "query_text": "\"član obitelji\" EGP boravišna iskaznica",
+      "planned_status": "not_run",
+      "required_run_evidence": [
+        "run_date",
+        "portal_version_or_scope",
+        "exact_query_and_filters",
+        "result_count",
+        "reviewed_count",
+        "excluded_count_with_reason",
+        "decision_ids",
+        "relevance_disposition",
+        "reviewer_notes"
+      ]
+    },
+    {
+      "task_id": "hr-us-split-visa-family-member",
+      "court_collection_id": "hr-us-split",
+      "court_name": "Upravni sud u Splitu",
+      "query_id": "visa-family-member",
+      "query_text": "\"član obitelji\" EGP viza",
+      "planned_status": "not_run",
+      "required_run_evidence": [
+        "run_date",
+        "portal_version_or_scope",
+        "exact_query_and_filters",
+        "result_count",
+        "reviewed_count",
+        "excluded_count_with_reason",
+        "decision_ids",
+        "relevance_disposition",
+        "reviewer_notes"
+      ]
+    },
+    {
+      "task_id": "hr-us-split-document-evidence",
+      "court_collection_id": "hr-us-split",
+      "court_name": "Upravni sud u Splitu",
+      "query_id": "document-evidence",
+      "query_text": "EGP boravak dokaz dokumentacija",
+      "planned_status": "not_run",
+      "required_run_evidence": [
+        "run_date",
+        "portal_version_or_scope",
+        "exact_query_and_filters",
+        "result_count",
+        "reviewed_count",
+        "excluded_count_with_reason",
+        "decision_ids",
+        "relevance_disposition",
+        "reviewer_notes"
+      ]
+    },
+    {
+      "task_id": "hr-us-split-delay-inaction",
+      "court_collection_id": "hr-us-split",
+      "court_name": "Upravni sud u Splitu",
+      "query_id": "delay-inaction",
+      "query_text": "upravni postupak šutnja uprave boravak stranac",
+      "planned_status": "not_run",
+      "required_run_evidence": [
+        "run_date",
+        "portal_version_or_scope",
+        "exact_query_and_filters",
+        "result_count",
+        "reviewed_count",
+        "excluded_count_with_reason",
+        "decision_ids",
+        "relevance_disposition",
+        "reviewer_notes"
+      ]
+    },
+    {
+      "task_id": "hr-us-split-public-order-removal",
+      "court_collection_id": "hr-us-split",
+      "court_name": "Upravni sud u Splitu",
+      "query_id": "public-order-removal",
+      "query_text": "EGP javni poredak protjerivanje",
+      "planned_status": "not_run",
+      "required_run_evidence": [
+        "run_date",
+        "portal_version_or_scope",
+        "exact_query_and_filters",
+        "result_count",
+        "reviewed_count",
+        "excluded_count_with_reason",
+        "decision_ids",
+        "relevance_disposition",
+        "reviewer_notes"
+      ]
+    },
+    {
+      "task_id": "hr-us-split-family-life-proportionality",
+      "court_collection_id": "hr-us-split",
+      "court_name": "Upravni sud u Splitu",
+      "query_id": "family-life-proportionality",
+      "query_text": "stranac obitelj razmjernost udaljenje",
+      "planned_status": "not_run",
+      "required_run_evidence": [
+        "run_date",
+        "portal_version_or_scope",
+        "exact_query_and_filters",
+        "result_count",
+        "reviewed_count",
+        "excluded_count_with_reason",
+        "decision_ids",
+        "relevance_disposition",
+        "reviewer_notes"
+      ]
+    },
+    {
+      "task_id": "hr-us-split-appeal-deadline-procedure",
+      "court_collection_id": "hr-us-split",
+      "court_name": "Upravni sud u Splitu",
+      "query_id": "appeal-deadline-procedure",
+      "query_text": "viza žalba rok upravni spor",
+      "planned_status": "not_run",
+      "required_run_evidence": [
+        "run_date",
+        "portal_version_or_scope",
+        "exact_query_and_filters",
+        "result_count",
+        "reviewed_count",
+        "excluded_count_with_reason",
+        "decision_ids",
+        "relevance_disposition",
+        "reviewer_notes"
+      ]
+    },
+    {
+      "task_id": "hr-us-rijeka-eea-residence",
+      "court_collection_id": "hr-us-rijeka",
+      "court_name": "Upravni sud u Rijeci",
+      "query_id": "eea-residence",
+      "query_text": "\"državljanin države članice EGP\" boravak",
+      "planned_status": "not_run",
+      "required_run_evidence": [
+        "run_date",
+        "portal_version_or_scope",
+        "exact_query_and_filters",
+        "result_count",
+        "reviewed_count",
+        "excluded_count_with_reason",
+        "decision_ids",
+        "relevance_disposition",
+        "reviewer_notes"
+      ]
+    },
+    {
+      "task_id": "hr-us-rijeka-family-member-card",
+      "court_collection_id": "hr-us-rijeka",
+      "court_name": "Upravni sud u Rijeci",
+      "query_id": "family-member-card",
+      "query_text": "\"član obitelji\" EGP boravišna iskaznica",
+      "planned_status": "not_run",
+      "required_run_evidence": [
+        "run_date",
+        "portal_version_or_scope",
+        "exact_query_and_filters",
+        "result_count",
+        "reviewed_count",
+        "excluded_count_with_reason",
+        "decision_ids",
+        "relevance_disposition",
+        "reviewer_notes"
+      ]
+    },
+    {
+      "task_id": "hr-us-rijeka-visa-family-member",
+      "court_collection_id": "hr-us-rijeka",
+      "court_name": "Upravni sud u Rijeci",
+      "query_id": "visa-family-member",
+      "query_text": "\"član obitelji\" EGP viza",
+      "planned_status": "not_run",
+      "required_run_evidence": [
+        "run_date",
+        "portal_version_or_scope",
+        "exact_query_and_filters",
+        "result_count",
+        "reviewed_count",
+        "excluded_count_with_reason",
+        "decision_ids",
+        "relevance_disposition",
+        "reviewer_notes"
+      ]
+    },
+    {
+      "task_id": "hr-us-rijeka-document-evidence",
+      "court_collection_id": "hr-us-rijeka",
+      "court_name": "Upravni sud u Rijeci",
+      "query_id": "document-evidence",
+      "query_text": "EGP boravak dokaz dokumentacija",
+      "planned_status": "not_run",
+      "required_run_evidence": [
+        "run_date",
+        "portal_version_or_scope",
+        "exact_query_and_filters",
+        "result_count",
+        "reviewed_count",
+        "excluded_count_with_reason",
+        "decision_ids",
+        "relevance_disposition",
+        "reviewer_notes"
+      ]
+    },
+    {
+      "task_id": "hr-us-rijeka-delay-inaction",
+      "court_collection_id": "hr-us-rijeka",
+      "court_name": "Upravni sud u Rijeci",
+      "query_id": "delay-inaction",
+      "query_text": "upravni postupak šutnja uprave boravak stranac",
+      "planned_status": "not_run",
+      "required_run_evidence": [
+        "run_date",
+        "portal_version_or_scope",
+        "exact_query_and_filters",
+        "result_count",
+        "reviewed_count",
+        "excluded_count_with_reason",
+        "decision_ids",
+        "relevance_disposition",
+        "reviewer_notes"
+      ]
+    },
+    {
+      "task_id": "hr-us-rijeka-public-order-removal",
+      "court_collection_id": "hr-us-rijeka",
+      "court_name": "Upravni sud u Rijeci",
+      "query_id": "public-order-removal",
+      "query_text": "EGP javni poredak protjerivanje",
+      "planned_status": "not_run",
+      "required_run_evidence": [
+        "run_date",
+        "portal_version_or_scope",
+        "exact_query_and_filters",
+        "result_count",
+        "reviewed_count",
+        "excluded_count_with_reason",
+        "decision_ids",
+        "relevance_disposition",
+        "reviewer_notes"
+      ]
+    },
+    {
+      "task_id": "hr-us-rijeka-family-life-proportionality",
+      "court_collection_id": "hr-us-rijeka",
+      "court_name": "Upravni sud u Rijeci",
+      "query_id": "family-life-proportionality",
+      "query_text": "stranac obitelj razmjernost udaljenje",
+      "planned_status": "not_run",
+      "required_run_evidence": [
+        "run_date",
+        "portal_version_or_scope",
+        "exact_query_and_filters",
+        "result_count",
+        "reviewed_count",
+        "excluded_count_with_reason",
+        "decision_ids",
+        "relevance_disposition",
+        "reviewer_notes"
+      ]
+    },
+    {
+      "task_id": "hr-us-rijeka-appeal-deadline-procedure",
+      "court_collection_id": "hr-us-rijeka",
+      "court_name": "Upravni sud u Rijeci",
+      "query_id": "appeal-deadline-procedure",
+      "query_text": "viza žalba rok upravni spor",
+      "planned_status": "not_run",
+      "required_run_evidence": [
+        "run_date",
+        "portal_version_or_scope",
+        "exact_query_and_filters",
+        "result_count",
+        "reviewed_count",
+        "excluded_count_with_reason",
+        "decision_ids",
+        "relevance_disposition",
+        "reviewer_notes"
+      ]
+    },
+    {
+      "task_id": "hr-us-osijek-eea-residence",
+      "court_collection_id": "hr-us-osijek",
+      "court_name": "Upravni sud u Osijeku",
+      "query_id": "eea-residence",
+      "query_text": "\"državljanin države članice EGP\" boravak",
+      "planned_status": "not_run",
+      "required_run_evidence": [
+        "run_date",
+        "portal_version_or_scope",
+        "exact_query_and_filters",
+        "result_count",
+        "reviewed_count",
+        "excluded_count_with_reason",
+        "decision_ids",
+        "relevance_disposition",
+        "reviewer_notes"
+      ]
+    },
+    {
+      "task_id": "hr-us-osijek-family-member-card",
+      "court_collection_id": "hr-us-osijek",
+      "court_name": "Upravni sud u Osijeku",
+      "query_id": "family-member-card",
+      "query_text": "\"član obitelji\" EGP boravišna iskaznica",
+      "planned_status": "not_run",
+      "required_run_evidence": [
+        "run_date",
+        "portal_version_or_scope",
+        "exact_query_and_filters",
+        "result_count",
+        "reviewed_count",
+        "excluded_count_with_reason",
+        "decision_ids",
+        "relevance_disposition",
+        "reviewer_notes"
+      ]
+    },
+    {
+      "task_id": "hr-us-osijek-visa-family-member",
+      "court_collection_id": "hr-us-osijek",
+      "court_name": "Upravni sud u Osijeku",
+      "query_id": "visa-family-member",
+      "query_text": "\"član obitelji\" EGP viza",
+      "planned_status": "not_run",
+      "required_run_evidence": [
+        "run_date",
+        "portal_version_or_scope",
+        "exact_query_and_filters",
+        "result_count",
+        "reviewed_count",
+        "excluded_count_with_reason",
+        "decision_ids",
+        "relevance_disposition",
+        "reviewer_notes"
+      ]
+    },
+    {
+      "task_id": "hr-us-osijek-document-evidence",
+      "court_collection_id": "hr-us-osijek",
+      "court_name": "Upravni sud u Osijeku",
+      "query_id": "document-evidence",
+      "query_text": "EGP boravak dokaz dokumentacija",
+      "planned_status": "not_run",
+      "required_run_evidence": [
+        "run_date",
+        "portal_version_or_scope",
+        "exact_query_and_filters",
+        "result_count",
+        "reviewed_count",
+        "excluded_count_with_reason",
+        "decision_ids",
+        "relevance_disposition",
+        "reviewer_notes"
+      ]
+    },
+    {
+      "task_id": "hr-us-osijek-delay-inaction",
+      "court_collection_id": "hr-us-osijek",
+      "court_name": "Upravni sud u Osijeku",
+      "query_id": "delay-inaction",
+      "query_text": "upravni postupak šutnja uprave boravak stranac",
+      "planned_status": "not_run",
+      "required_run_evidence": [
+        "run_date",
+        "portal_version_or_scope",
+        "exact_query_and_filters",
+        "result_count",
+        "reviewed_count",
+        "excluded_count_with_reason",
+        "decision_ids",
+        "relevance_disposition",
+        "reviewer_notes"
+      ]
+    },
+    {
+      "task_id": "hr-us-osijek-public-order-removal",
+      "court_collection_id": "hr-us-osijek",
+      "court_name": "Upravni sud u Osijeku",
+      "query_id": "public-order-removal",
+      "query_text": "EGP javni poredak protjerivanje",
+      "planned_status": "not_run",
+      "required_run_evidence": [
+        "run_date",
+        "portal_version_or_scope",
+        "exact_query_and_filters",
+        "result_count",
+        "reviewed_count",
+        "excluded_count_with_reason",
+        "decision_ids",
+        "relevance_disposition",
+        "reviewer_notes"
+      ]
+    },
+    {
+      "task_id": "hr-us-osijek-family-life-proportionality",
+      "court_collection_id": "hr-us-osijek",
+      "court_name": "Upravni sud u Osijeku",
+      "query_id": "family-life-proportionality",
+      "query_text": "stranac obitelj razmjernost udaljenje",
+      "planned_status": "not_run",
+      "required_run_evidence": [
+        "run_date",
+        "portal_version_or_scope",
+        "exact_query_and_filters",
+        "result_count",
+        "reviewed_count",
+        "excluded_count_with_reason",
+        "decision_ids",
+        "relevance_disposition",
+        "reviewer_notes"
+      ]
+    },
+    {
+      "task_id": "hr-us-osijek-appeal-deadline-procedure",
+      "court_collection_id": "hr-us-osijek",
+      "court_name": "Upravni sud u Osijeku",
+      "query_id": "appeal-deadline-procedure",
+      "query_text": "viza žalba rok upravni spor",
+      "planned_status": "not_run",
+      "required_run_evidence": [
+        "run_date",
+        "portal_version_or_scope",
+        "exact_query_and_filters",
+        "result_count",
+        "reviewed_count",
+        "excluded_count_with_reason",
+        "decision_ids",
+        "relevance_disposition",
+        "reviewer_notes"
+      ]
+    },
+    {
+      "task_id": "hr-vus-eea-residence",
+      "court_collection_id": "hr-vus",
+      "court_name": "Visoki upravni sud Republike Hrvatske",
+      "query_id": "eea-residence",
+      "query_text": "\"državljanin države članice EGP\" boravak",
+      "planned_status": "not_run",
+      "required_run_evidence": [
+        "run_date",
+        "portal_version_or_scope",
+        "exact_query_and_filters",
+        "result_count",
+        "reviewed_count",
+        "excluded_count_with_reason",
+        "decision_ids",
+        "relevance_disposition",
+        "reviewer_notes"
+      ]
+    },
+    {
+      "task_id": "hr-vus-family-member-card",
+      "court_collection_id": "hr-vus",
+      "court_name": "Visoki upravni sud Republike Hrvatske",
+      "query_id": "family-member-card",
+      "query_text": "\"član obitelji\" EGP boravišna iskaznica",
+      "planned_status": "not_run",
+      "required_run_evidence": [
+        "run_date",
+        "portal_version_or_scope",
+        "exact_query_and_filters",
+        "result_count",
+        "reviewed_count",
+        "excluded_count_with_reason",
+        "decision_ids",
+        "relevance_disposition",
+        "reviewer_notes"
+      ]
+    },
+    {
+      "task_id": "hr-vus-visa-family-member",
+      "court_collection_id": "hr-vus",
+      "court_name": "Visoki upravni sud Republike Hrvatske",
+      "query_id": "visa-family-member",
+      "query_text": "\"član obitelji\" EGP viza",
+      "planned_status": "not_run",
+      "required_run_evidence": [
+        "run_date",
+        "portal_version_or_scope",
+        "exact_query_and_filters",
+        "result_count",
+        "reviewed_count",
+        "excluded_count_with_reason",
+        "decision_ids",
+        "relevance_disposition",
+        "reviewer_notes"
+      ]
+    },
+    {
+      "task_id": "hr-vus-document-evidence",
+      "court_collection_id": "hr-vus",
+      "court_name": "Visoki upravni sud Republike Hrvatske",
+      "query_id": "document-evidence",
+      "query_text": "EGP boravak dokaz dokumentacija",
+      "planned_status": "not_run",
+      "required_run_evidence": [
+        "run_date",
+        "portal_version_or_scope",
+        "exact_query_and_filters",
+        "result_count",
+        "reviewed_count",
+        "excluded_count_with_reason",
+        "decision_ids",
+        "relevance_disposition",
+        "reviewer_notes"
+      ]
+    },
+    {
+      "task_id": "hr-vus-delay-inaction",
+      "court_collection_id": "hr-vus",
+      "court_name": "Visoki upravni sud Republike Hrvatske",
+      "query_id": "delay-inaction",
+      "query_text": "upravni postupak šutnja uprave boravak stranac",
+      "planned_status": "not_run",
+      "required_run_evidence": [
+        "run_date",
+        "portal_version_or_scope",
+        "exact_query_and_filters",
+        "result_count",
+        "reviewed_count",
+        "excluded_count_with_reason",
+        "decision_ids",
+        "relevance_disposition",
+        "reviewer_notes"
+      ]
+    },
+    {
+      "task_id": "hr-vus-public-order-removal",
+      "court_collection_id": "hr-vus",
+      "court_name": "Visoki upravni sud Republike Hrvatske",
+      "query_id": "public-order-removal",
+      "query_text": "EGP javni poredak protjerivanje",
+      "planned_status": "not_run",
+      "required_run_evidence": [
+        "run_date",
+        "portal_version_or_scope",
+        "exact_query_and_filters",
+        "result_count",
+        "reviewed_count",
+        "excluded_count_with_reason",
+        "decision_ids",
+        "relevance_disposition",
+        "reviewer_notes"
+      ]
+    },
+    {
+      "task_id": "hr-vus-family-life-proportionality",
+      "court_collection_id": "hr-vus",
+      "court_name": "Visoki upravni sud Republike Hrvatske",
+      "query_id": "family-life-proportionality",
+      "query_text": "stranac obitelj razmjernost udaljenje",
+      "planned_status": "not_run",
+      "required_run_evidence": [
+        "run_date",
+        "portal_version_or_scope",
+        "exact_query_and_filters",
+        "result_count",
+        "reviewed_count",
+        "excluded_count_with_reason",
+        "decision_ids",
+        "relevance_disposition",
+        "reviewer_notes"
+      ]
+    },
+    {
+      "task_id": "hr-vus-appeal-deadline-procedure",
+      "court_collection_id": "hr-vus",
+      "court_name": "Visoki upravni sud Republike Hrvatske",
+      "query_id": "appeal-deadline-procedure",
+      "query_text": "viza žalba rok upravni spor",
+      "planned_status": "not_run",
+      "required_run_evidence": [
+        "run_date",
+        "portal_version_or_scope",
+        "exact_query_and_filters",
+        "result_count",
+        "reviewed_count",
+        "excluded_count_with_reason",
+        "decision_ids",
+        "relevance_disposition",
+        "reviewer_notes"
+      ]
+    }
+  ],
+  "runs": [],
+  "completion_status": "portal_and_court_collections_mapped_searches_not_run",
+  "portal_inspection": {
+    "inspected_on": "2026-10-19",
+    "official_portal": "https://odluke.sudovi.hr/",
+    "official_court_listing": "https://sudovi.hr/hr/o-sudovima/sudovi-republike-hrvatske",
+    "system_last_updated": "2026-10-19",
+    "published_decision_count_displayed": 1275907,
+    "observed_features": [
+      "text search input",
+      "filter-search control",
+      "actual index for legal concepts",
+      "EuroVoc index",
+      "statutory index linking legislation and decision-relevant provisions"
+    ],
+    "court_collection_count": 5,
+    "query_run": false,
+    "limitation": "Landing page and court directory inspected only. Search filters, result totals, and individual decisions have not been tested; the displayed corpus total does not establish complete coverage."
+  },
+  "discovery_attempts": [
+    {
+      "checked_on": "2026-10-19",
+      "provider": "domain-filtered web search index",
+      "queries": [
+        "site:odluke.sudovi.hr \"državljanin države članice EGP\" boravak",
+        "site:odluke.sudovi.hr \"član obitelji\" EGP boravišna iskaznica",
+        "site:odluke.sudovi.hr \"Zakon o državljanima država članica Europskog gospodarskog prostora\"",
+        "site:odluke.sudovi.hr \"Stranci\" \"boravak\" Visoki upravni sud"
+      ],
+      "result": "No indexed results returned.",
+      "disposition": "Not a portal search run; do not infer that no relevant decisions exist."
+    }
+  ]
+}

@@ -4,19 +4,21 @@
   "jurisdiction": "CH",
   "inventory_research_date": "2026-10-18",
   "scope": "Bounded discovery of official Swiss federal legislation and guidance on free movement, third-country family reunification, visas and mission procedure, administration and remedies, courts, public access, privacy, oversight, and family-status evidence. Selected cantonal and Turkish-mission examples are leads, not complete coverage.",
-  "status": "partially_retrieved_review_candidates",
-  "retrieval_status": "26 configured texts/pages converted (including one externally extracted PDF); 1 retrieval/conversion error; 1 publication/discovery shell contained no extractable text; no source accepted",
+  "status": "44 candidates; 11 official external references accepted within narrow scopes; 0 retained local artifacts or topics accepted; country review incomplete",
+  "retrieval_status": "Capture baseline: 28 routes configured, 27 responses saved, 26 review conversions, 0 local artifacts accepted. Separately, 11 official external references are accepted within dated and scoped link decisions; 0 topics or country review accepted.",
   "accepted_source_count": 0,
   "candidate_source_count": 44,
   "official_hosts": [
     "admin.ch",
     "bger.ch",
     "bvger.ch",
-    "edoeb.admin.ch",
     "eda.admin.ch",
+    "edoeb.admin.ch",
+    "efta.int",
     "fedlex.admin.ch",
     "fedlex.data.admin.ch",
     "sem.admin.ch",
+    "ws-old.parlament.ch",
     "zh.ch"
   ],
   "comparison_seed": {
@@ -204,7 +206,14 @@
       "verification": "Official English PDF inspected; current native-language record not resolved",
       "version_evidence": "Inspected English translation is status 2 Oct 2021 and says English has no legal force",
       "retrieval": "Versioned Fedlex ELI; PDF/HTML/XML formats described but current representation not tested",
-      "note": "Separate FNIA family route from AFMP/EFTA routes."
+      "note": "Separate FNIA family route from AFMP/EFTA routes.",
+      "external_reference_review": {
+        "decision_id": "ch-04-aig-de-20231015",
+        "status": "accepted_with_narrow_external_scope",
+        "official_url": "https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2007/758/20231015/de/pdf-a/fedlex-data-admin-ch-eli-cc-2007-758-20231015-de-pdf-a.pdf",
+        "scope": "Dated German AIG consolidation; Article 2 treaty relationship and identified passages only.",
+        "local_artifact_status": "not_accepted"
+      }
     },
     {
       "id": "ch-05",
@@ -216,7 +225,7 @@
       "relationship": "Close functional match for implementing residence, family-reunification, and filing rules",
       "verification": "Official versioned PDF record identified; current consolidated record not verified",
       "version_evidence": "Search result surfaced 2018 German version; direct current-version resolution remains open",
-      "retrieval": "Fedlex ELI with dated versions and PDF; native-language versions needed",
+      "retrieval": "Use the current official Fedlex record and its displayed version/date for link-based research; retain a local capture only if separately useful.",
       "note": "Use the closest available Fedlex government-published edition and record its date/cutoff. Review the relevant family-reunification provisions; check a specific later amendment only if it affects them."
     },
     {
@@ -230,7 +239,14 @@
       "verification": "Official SEM guidance and identifier inspected; exact current Fedlex record not opened",
       "version_evidence": "Current version to be resolved by SR/ELI and effective date",
       "retrieval": "Fedlex search and SEM guidance PDF",
-      "note": "Do not apply as if it were the FNIA route for every Swiss-national family case."
+      "note": "Do not apply as if it were the FNIA route for every Swiss-national family case.",
+      "external_reference_review": {
+        "decision_id": "ch-06-vfp-fr-20260101",
+        "status": "accepted_with_narrow_external_scope",
+        "official_url": "https://www.fedlex.admin.ch/eli/cc/2002/261/fr?version=20260101",
+        "scope": "French official-language consolidation dated 2026-01-01; VFP implementation identity and displayed date only.",
+        "local_artifact_status": "not_accepted"
+      }
     },
     {
       "id": "ch-07",
@@ -241,9 +257,16 @@
       "identifier": "SR 142.204",
       "relationship": "Related entry and visa procedure source",
       "verification": "Official identifier and SEM/FDFA implementation routes identified; current text not opened",
-      "version_evidence": "Current version and amendment chain not checked",
+      "version_evidence": "Fedlex record checked 21 October 2026, marked in force, with displayed German consolidation date 12 June 2026; accepted as an external reference within that date and identity scope. This does not establish later changes.",
       "retrieval": "Fedlex search; supporting SEM nationality/visa pages",
-      "note": "Keep Schengen short-stay rules distinct from national D-visa and residence authorization."
+      "note": "The official record is a usable dated link. The browser interface did not render the full body in this research client; open the official text directly for provision-level review.",
+      "external_reference_review": {
+        "decision_id": "ch-07-vev-de-20260612",
+        "status": "accepted_with_narrow_external_scope",
+        "official_url": "https://www.fedlex.admin.ch/eli/cc/2018/493/de?version=20260930",
+        "scope": "Official Fedlex record marked in force; displayed German consolidation date 2026-06-12.",
+        "local_artifact_status": "not_accepted"
+      }
     },
     {
       "id": "ch-08",
@@ -256,7 +279,14 @@
       "verification": "Official SEM page and current treaty reference inspected; treaty text/version not retrieved",
       "version_evidence": "Agreement in force since 1 June 2002; 2026 amending protocol is separately pending domestic approval",
       "retrieval": "SEM guidance plus Fedlex treaty record to resolve",
-      "note": "A Swiss citizen's claim under AFMP depends on distinct facts; do not generalise the EU-family route."
+      "note": "A Swiss citizen's claim under AFMP depends on distinct facts; do not generalise the EU-family route.",
+      "external_reference_review": {
+        "decision_id": "ch-08-fdfa-afmp-status-route",
+        "status": "accepted_with_narrow_external_scope",
+        "official_url": "https://www.europa.eda.admin.ch/en/free-movement-of-persons",
+        "scope": "FDFA AFMP status and linked German text route; treaty body not reviewed.",
+        "local_artifact_status": "not_accepted"
+      }
     },
     {
       "id": "ch-09",
@@ -269,7 +299,14 @@
       "verification": "Official SEM and Fedlex identifiers referenced; current treaty text not opened",
       "version_evidence": "Amendments/protocols and Liechtenstein special rules need reconciliation",
       "retrieval": "Fedlex versioned treaty record",
-      "note": "Keep EFTA Convention and AFMP bases distinct."
+      "note": "Keep EFTA Convention and AFMP bases distinct.",
+      "external_reference_review": {
+        "decision_id": "ch-09-efta-eea-party-status",
+        "status": "accepted_with_narrow_external_scope",
+        "official_url": "https://www.efta.int/eea-relations-eu/eea-institutions-two-pillar-structure/eea-efta-states",
+        "scope": "Supplemental institutional reference that Switzerland is not party to the EEA Agreement; not the EFTA Convention text.",
+        "local_artifact_status": "not_accepted"
+      }
     },
     {
       "id": "ch-10",
@@ -282,7 +319,14 @@
       "verification": "Official package page inspected",
       "version_evidence": "Federal Council submitted package to Parliament on 13 Mar 2026; package not yet in force per reviewed government status page",
       "retrieval": "Official signed protocol PDFs and Federal Gazette publication by reference",
-      "note": "Track signature, parliamentary approval, referendum, commencement, and domestic implementing measures separately."
+      "note": "Track signature, parliamentary approval, referendum, commencement, and domestic implementing measures separately.",
+      "external_reference_review": {
+        "decision_id": "ch-10-parliament-dossier-26-023",
+        "status": "accepted_with_narrow_external_scope",
+        "official_url": "https://ws-old.parlament.ch/affairs/20260023",
+        "scope": "Parliamentary status docket 26.023, updated 2026-10-19; monitoring route only, not operative law.",
+        "local_artifact_status": "not_accepted"
+      }
     },
     {
       "id": "ch-11",
@@ -308,7 +352,14 @@
       "verification": "Official English mirror result identified; current native-language version not resolved",
       "version_evidence": "English translation surfaced at status 1 Jul 2022; non-authoritative",
       "retrieval": "Fedlex ELI, dated versions, PDF/XML route untested",
-      "note": "Cantonal proceedings may instead follow cantonal rules."
+      "note": "Cantonal proceedings may instead follow cantonal rules.",
+      "external_reference_review": {
+        "decision_id": "ch-12-vwvg-de-20220701",
+        "status": "accepted_with_narrow_external_scope",
+        "official_url": "https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1969/737_757_755/20220701/de/pdf-a/fedlex-data-admin-ch-eli-cc-1969-737_757_755-20220701-de-pdf-a-4.pdf",
+        "scope": "Dated German federal procedure text; federal scope and Articles 46a/50 only.",
+        "local_artifact_status": "not_accepted"
+      }
     },
     {
       "id": "ch-13",
@@ -414,7 +465,9 @@
       "source_bytes": 115905,
       "resolved_url": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2022/491/20230901/de/html/fedlex-data-admin-ch-eli-cc-2022-491-20230901-de-html-14.html",
       "fedlex_file_url": "https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2022/491/20230901/de/html/fedlex-data-admin-ch-eli-cc-2022-491-20230901-de-html-14.html",
-      "manifest_sha256": "53c2200bfc4209c51202c42bb0fc15f41faa9e7519df6df046cb6104273da578"
+      "manifest_sha256": "53c2200bfc4209c51202c42bb0fc15f41faa9e7519df6df046cb6104273da578",
+      "retrieval_optional_for_link_use": true,
+      "retrieval_note": "The configured RDF/file-store and replay workflow is for a retained local copy. It is not required to use the official Fedlex record as a dated external reference."
     },
     {
       "id": "ch-19",
@@ -556,7 +609,14 @@
       "source_sha256": "97badffd3939bb3b69bd491f9d34ae294b250f7bebba6d7a0c55177d63ec7baf",
       "converted_sha256": "b1f9c7b7f1b762d728bff0f4878cf2ea34ca329b5fcfb315cf772cd0080ba16d",
       "source_bytes": 56141,
-      "resolved_url": "https://www.sem.admin.ch/sem/en/home/themen/fza_schweiz-eu-efta/eu-efta_buerger_schweiz.html"
+      "resolved_url": "https://www.sem.admin.ch/sem/en/home/themen/fza_schweiz-eu-efta/eu-efta_buerger_schweiz.html",
+      "external_reference_review": {
+        "decision_id": "ch-25-sem-eu-efta-permits",
+        "status": "accepted_with_narrow_external_scope",
+        "official_url": "https://www.sem.admin.ch/sem/en/home/themen/fza_schweiz-eu-efta/eu-efta_buerger_schweiz.html",
+        "scope": "EU/EFTA route guidance and federal-to-canton handoff; not canton-level procedure.",
+        "local_artifact_status": "not_accepted"
+      }
     },
     {
       "id": "ch-26",
@@ -644,7 +704,14 @@
       "source_sha256": "da14fbddbd7242b65e773b316fbc63937a4cf0ee8ceea1afae52ce71afd38078",
       "converted_sha256": "67c6105269edce1c57c9480320113dad25be6c3dedaa701486d2acbcc9340b1b",
       "source_bytes": 188491,
-      "resolved_url": "https://www.sem.admin.ch/sem/en/home/themen/einreise/faq.faq_18.html"
+      "resolved_url": "https://www.sem.admin.ch/sem/en/home/themen/einreise/faq.faq_18.html",
+      "external_reference_review": {
+        "decision_id": "ch-29-sem-visa-refusal-20260827",
+        "status": "accepted_with_narrow_external_scope",
+        "official_url": "https://www.sem.admin.ch/sem/en/home/themen/einreise/faq.0048.html",
+        "scope": "Visa-refusal objection guidance, last modified 2026-08-27; not residence-permit appeal procedure.",
+        "local_artifact_status": "not_accepted"
+      }
     },
     {
       "id": "ch-30",
@@ -688,7 +755,14 @@
       "source_sha256": "a2567e7a80f263355540d54b04a4aab79f781c7940a11f58f7a8a3c083be61c6",
       "converted_sha256": "a16a2fb553aa9546d8ba48efa0279ea9b6fa6fb776552629aa31d388f8eb4975",
       "source_bytes": 108793,
-      "resolved_url": "https://www.sem.admin.ch/sem/en/home/sem/kontakt/kantonale_behoerden/adressen_kantone_und.html"
+      "resolved_url": "https://www.sem.admin.ch/sem/en/home/sem/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+      "external_reference_review": {
+        "decision_id": "ch-31-sem-cantonal-authorities",
+        "status": "accepted_with_narrow_external_scope",
+        "official_url": "https://www.sem.admin.ch/sem/en/home/sem/kontakt/kantonale_behoerden/adressen_kantone_und.html",
+        "scope": "Official canton-authority discovery directory; not a process map.",
+        "local_artifact_status": "not_accepted"
+      }
     },
     {
       "id": "ch-32",
@@ -877,7 +951,7 @@
       "verification": "Official court page inspected",
       "version_evidence": "Court says database contains all published judgments; substantive judgments published, procedural decisions only when publicly relevant",
       "retrieval": "Search interface with PDF decisions; database operated with Weblaw",
-      "note": "Published judgments are not the full case corpus; machine-use terms/API and stable bulk route not verified.",
+      "note": "FAC publication limits apply. The official database is usable as a discovery link; machine-use terms, API, or bulk retrieval matter only if a retained-copy or recurring automation workflow is chosen.",
       "direct_capture": true,
       "retrieved": true,
       "accepted": false,
@@ -908,7 +982,14 @@
       "source_sha256": "b2866c0ec47df46b6ea91259015707aa15901460eeff734be186331798f8615f",
       "converted_sha256": "b8a62e625c724a44b755a7366fe419cd752746f8d7154098d47a546bb6cac72d",
       "source_bytes": 164178,
-      "resolved_url": "https://www.bvger.ch/en/about-fac/tasks-fac/judgments"
+      "resolved_url": "https://www.bvger.ch/en/about-fac/tasks-fac/judgments",
+      "external_reference_review": {
+        "decision_id": "ch-41-fac-publication-practices",
+        "status": "accepted_with_narrow_external_scope",
+        "official_url": "https://www.bvger.ch/en/jurisprudence/publication-practices",
+        "scope": "FAC publication rules and link to its database; published-corpus route only, not exhaustive case-law coverage.",
+        "local_artifact_status": "not_accepted"
+      }
     },
     {
       "id": "ch-42",
@@ -921,7 +1002,7 @@
       "verification": "Official court page/search information inspected",
       "version_evidence": "Official court states all final decisions since 2007 and most decisions since 2000, generally anonymised",
       "retrieval": "Searchable case database and PDFs",
-      "note": "Not all lower-court or unpublished matters; bulk/API conditions not verified.",
+      "note": "Not all lower-court or unpublished matters. The official search link remains usable for human discovery; API or bulk-use conditions are not prerequisites for link review.",
       "direct_capture": true,
       "retrieved": false,
       "accepted": false,
@@ -974,5 +1055,12 @@
     }
   ],
   "retrieved_review_candidate_count": 27,
-  "converted_review_candidate_count": 26
+  "converted_review_candidate_count": 26,
+  "source_review_date": "2026-10-21",
+  "accepted_external_reference_count": 11,
+  "accepted_topic_count": 0,
+  "country_review_complete": false,
+  "source_acceptance_register": "source-library/switzerland/references/source-acceptance.json",
+  "coverage_register": "source-library/switzerland/references/coverage-register.md",
+  "sustainability_assessment": "source-library/switzerland/references/sustainability-assessment.md"
 }

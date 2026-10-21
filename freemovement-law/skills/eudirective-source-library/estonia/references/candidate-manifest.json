@@ -2,10 +2,10 @@
   "manifest_version": "0.1.0-candidate",
   "pack": "estonia-national-source-candidates",
   "jurisdiction": "EE",
-  "inventory_research_date": "2026-10-18",
+  "inventory_research_date": "2026-10-21",
   "scope": "Official Estonian source discovery for EU/EEA/Swiss free movement and third-country family members, residence, forms, visas and missions, administrative procedure, evidence, access to information, remedies, privacy, oversight, legal aid, and administrative courts. Switzerland is separately in scope where the Estonian law extends to Swiss nationals.",
   "status": "partially_retrieved_review_candidates",
-  "retrieval_status": "38 candidate source texts converted; exact English editions remain distinct from current Estonian texts; no source accepted",
+  "retrieval_status": "38 candidate source texts converted; three official consolidated Estonian links are accepted within dated external scopes; 0 retained local copies are accepted. Other legal, guidance, form, mission, procedure/remedy, privacy, oversight, legal-aid and court candidates remain under review.",
   "accepted_source_count": 0,
   "candidate_source_count": 42,
   "official_hosts": [
@@ -273,8 +273,9 @@
       "resolved_url": "https://www.riigiteataja.ee/public-api/api/v1/akt/103062026006/xml",
       "converted_sha256": "c1879a1fe601281e21544aa884bb45e4c2253b40162e36de4b0ace1abb9a6a8f",
       "candidate_text_path": "source-library/estonia/candidates/ee-citizen-act-et-future.md",
-      "version_evidence": "Exact official XML edition 103062026006; title Euroopa Liidu kodaniku seadus 1; validity period 2029-10-31 mitte jõustunud.",
-      "exact_estonian_source_id": "103062026006"
+      "version_evidence": "Official XML record 103062026006; validity begins 2029-10-31, so it is future-effective on the review date and not accepted as current law.",
+      "exact_estonian_source_id": "103062026006",
+      "version_checked_on": "2026-10-21"
     },
     {
       "id": "ee-citizen-act-en-2025",
@@ -495,7 +496,13 @@
       "current_estonian_version_evidence": "Väljasõidukohustuse ja sissesõidukeelu seadus; global ID 130062026110; effective period 2026-10-01 2026-12-31+02:00; resolved for 2026-10-19.",
       "version_evidence": "Authentic title:Väljasõidukohustuse ja sissesõidukeelu seadus (VSS); Issuer:Riigikogu; Type:act; In force from:12.06.2026; In force until:30.09.2026; Translation published:10.07.2026",
       "exact_english_source_id": "510072026001",
-      "publisher_metadata": "Authentic title:Väljasõidukohustuse ja sissesõidukeelu seadus (VSS)\n\nIssuer:Riigikogu\n\nType:act\n\nIn force from:12.06.2026\n\nIn force until:30.09.2026\n\nTranslation published:10.07.2026"
+      "publisher_metadata": "Authentic title:Väljasõidukohustuse ja sissesõidukeelu seadus (VSS)\n\nIssuer:Riigikogu\n\nType:act\n\nIn force from:12.06.2026\n\nIn force until:30.09.2026\n\nTranslation published:10.07.2026",
+      "current_estonian_external_reference_accepted": true,
+      "current_estonian_external_reference_checked_on": "2026-10-21",
+      "current_estonian_external_reference_version": "Riigi Teataja record 130062026110; validity 2026-10-01 through 2026-12-31.",
+      "current_estonian_external_reference_url": "https://www.riigiteataja.ee/akt/130062026110",
+      "current_estonian_external_reference_sha256": "ae6e150fa9cb9243c48f0e2057edcfffbbeea892387a6f737cdec9e91f3327f7",
+      "current_estonian_external_reference_decision": "accepted_with_narrow_external_scope; local conversion unaccepted; English edition remains a separate, ended version"
     },
     {
       "id": "ee-identity-documents-act",
@@ -1226,13 +1233,16 @@
       "retrieval_shape": "dated official law search -> exact XML API",
       "retrieved": true,
       "accepted": false,
-      "retrieval_status": "converted_review_candidate",
-      "version_evidence": "Official dated law search resolved Välismaalaste seadus global ID 130062026103; effective period 2026-10-01 2026-12-31; as of 2026-10-19.",
+      "retrieval_status": "official_reference_accepted_narrow_scope_local_conversion_unaccepted",
+      "version_evidence": "Official dated law search resolved Välismaalaste seadus global ID 130062026103; effective period 2026-10-01 2026-12-31; re-fetched and confirmed 2026-10-21.",
       "source_sha256": "bba62efcf35705e8cd9461c2dc2828f7879528a9ff0e913806d8ba3b7403d3be",
       "source_bytes": 1133833,
       "resolved_url": "https://www.riigiteataja.ee/public-api/api/v1/akt/130062026103/xml",
       "converted_sha256": "d98af68ff4a878bbe8f4d5f9096d27d713c8c680f4a1470496c1ef2ded067cee",
-      "candidate_text_path": "source-library/estonia/candidates/ee-aliens-act-current-2026-10.md"
+      "candidate_text_path": "source-library/estonia/candidates/ee-aliens-act-current-2026-10.md",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21"
     },
     {
       "id": "ee-citizen-act-current-2026-10",
@@ -1249,15 +1259,19 @@
       "retrieval_shape": "dated official law search -> exact XML API",
       "retrieved": true,
       "accepted": false,
-      "retrieval_status": "converted_review_candidate",
-      "version_evidence": "Official dated law search resolved Euroopa Liidu kodaniku seadus global ID 130062026048; effective period 2026-10-01 2027-12-31; as of 2026-10-19.",
+      "retrieval_status": "official_reference_accepted_narrow_scope_local_conversion_unaccepted",
+      "version_evidence": "Official dated law search resolved Euroopa Liidu kodaniku seadus global ID 130062026048; effective period 2026-10-01 2027-12-31; re-fetched and confirmed 2026-10-21.",
       "source_sha256": "b5a0e338d74f46c2bfa66b6f5602b973df1f77f87b82c97a66d230bc37f25052",
       "source_bytes": 212350,
       "resolved_url": "https://www.riigiteataja.ee/public-api/api/v1/akt/130062026048/xml",
       "converted_sha256": "4a4a84c86904c01dbd98df17f22cebd3b3da655377f5f31a5bdc5bf047209a53",
-      "candidate_text_path": "source-library/estonia/candidates/ee-citizen-act-current-2026-10.md"
+      "candidate_text_path": "source-library/estonia/candidates/ee-citizen-act-current-2026-10.md",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21"
     }
   ],
   "retrieved_review_candidate_count": 41,
-  "converted_review_candidate_count": 38
+  "converted_review_candidate_count": 38,
+  "accepted_external_reference_count": 3
 }

@@ -5,6 +5,10 @@ Skill: assess-source-rule-sustainability v0.2.0
 Status date: 19 October 2026
 State: 36 candidates, 25 unaccepted review-candidate conversions (23 converted and two changed versions staged), zero locally stored copies accepted; eleven legal texts are captured (eight Finnish acts and three unofficial English translations), while wider source coverage and version review remain incomplete.
 
+## External reference acceptance — 21 October 2026
+
+Eight current Finnish Finlex consolidated-law page references are accepted in [source-acceptance.json](source-acceptance.json). Finlex identifies itself as owned by the Ministry of Justice and maintained by the Legal Register Centre. This decision accepts those dated official page links only; it does not accept any local conversion or certify legal-topic coverage. The Openness Act record uses the 28 November 2025 current ELI date, and the Police Personal Data Act record uses the 9 October 2026 Finnish consolidation. For 808/2019, the official page reference is accepted while the retained XML conversion stays unaccepted for date-sensitive use because its expression metadata conflicts with the consolidation and effective-date metadata. The other 28 inventory records remain candidates or are routed to official sites for human review.
+
 ## Assessment boundary
 
 The current register at [source-catalog.json](source-catalog.json) identifies official leads for national law and legal discovery; free-movement and family guidance; population registration; visas and consular routes; procedure, language and file access; appeals, courts and case law; privacy, oversight and legal aid. It is a bounded search record, not a claim that Finland's source universe is complete. Eleven legal text records have local conversions; none has been accepted as a retained copy.
@@ -90,4 +94,4 @@ The expanded capture pass corrected a generic-conversion quality issue: the moni
 | Finlex unofficial English translation PDFs | **Sustainable with limits; medium confidence** | The rule reopens each publisher translation-history page, validates title/completion/cutoff, rediscovers its English PDF link, validates PDF type/signature and act identity, stores hash-named page/PDF responses, and replays conversion offline. A new cutoff or page structure stops for manual record review; the translations remain unofficial and stale after their recorded cutoffs. |
 | Finlex daily bulk packages | **Not adopted** | Official package totals are multi-gigabyte and update daily; no sustainable per-record selection/update procedure has been proven. |
 
-The earlier discovery assessment remains useful for search coverage and the other source classes. No content is trust-promoted by a successful request, conversion, current ELI date, or metadata status.
+The earlier discovery assessment remains useful for search coverage and the other source classes. No local content is accepted by a successful request, conversion, current ELI date, or metadata status. External-reference acceptance is recorded separately in `source-acceptance.json`.

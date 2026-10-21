@@ -24,6 +24,14 @@ The Danish collection has distinct national, guidance, and EU/CJEU lanes, with s
 
 No single verdict is assigned to the pack as an average. The national rule is fragile; the guidance rule is fragile; the selected EU/CJEU lane is sustainable with limits. The missing local raw state prevents an end-to-end replay result for this assessment.
 
+## Official-reference review addendum — 21 October 2026
+
+The EU-opholdsbekendtgørelsen is now usable through two bounded official references. Retsinformation's official PDF printed 19 October 2026 identifies BEK nr 1457/2020 as **Gældende**, lists BEK nr 965/2025 as a later change, and reproduces the 2020 base wording. The separate official three-page BEK nr 965/2025 text sets out the amendments and states that they took effect on 1 July 2025. The base and amendment references are recorded in `source-acceptance.json`; no Gazette-history reconstruction is required to use those official texts within their stated scope.
+
+A material version discrepancy remains: the retained XML conversion for BEK nr 1457/2020 reports `end_date: 2026-07-02`, while Retsinformation's October PDF labels the order Gældende. The official page-data status and local metadata have not been reconciled. The acceptance therefore applies to the external government references and does not promote the local conversion or claim that one PDF integrates the 2025 amendment. The official ELI page rendered only its JavaScript shell in the research browser; the official PDFs were readable.
+
+Other material gaps remain, including the stale 2025 Aliens Act consolidation and its known 2026 amendments, full discovery of relevant court and appeal decisions, and mission-specific/operational source coverage. No topic or country review is marked complete.
+
 ## Rule findings
 
 | Source IDs | Maturity and route | Identity, conversion, and change detection | Verdict / confidence |

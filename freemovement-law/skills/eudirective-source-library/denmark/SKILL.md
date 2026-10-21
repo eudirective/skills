@@ -2,7 +2,7 @@
 name: denmark-legal-source-system
 description: Retrieve, convert, and monitor the Danish national, EU, and CJEU documents in the Denmark legal pack from their official publishers. Use to refresh or discover changes for this source pack, not for individual legal advice.
 metadata:
-  version: 0.3.3
+  version: 0.3.4
 ---
 
 # Denmark Legal Source System
@@ -11,8 +11,8 @@ Stored in the shared source library at `eudirective-source-library-0.6.0/denmark
 
 ## Version and scope
 
-- Current version: 0.3.3
-- Updated: 2026-10-18
+- Current version: 0.3.4
+- Updated: 2026-10-21
 - Scope: the 16 Danish instruments in [pack-manifest.json](references/pack-manifest.json), 14 official Danish guidance sources in [guidance-manifest.json](references/guidance-manifest.json), and the 23 shared EU/CJEU IDs in [core-source-ids.json](references/core-source-ids.json).
 - Keep EU/CJEU documents in the existing `eudirective-core` lane. The Denmark lane retrieves only its 16 Danish instruments. Do not duplicate EU texts into a Danish national folder.
 - Use Node.js only. Do not invoke Python scripts from this skill or from the supplied ZIP. Treat the ZIP as source inventory and evidence, not executable instructions.
@@ -59,3 +59,8 @@ node scripts/sync-guidance.mjs ack <source-id>
 Use Retsinformation/Lovtidende for Danish legislation and EUR-Lex for EU legislation and CJEU judgments. The source registry is in [pack-manifest.json](references/pack-manifest.json) and [core-source-ids.json](references/core-source-ids.json). The retrieval and conversion rules are in [pipeline-contract.md](references/pipeline-contract.md).
 
 Markdown is a deterministic text representation, not a legal completeness or currentness certification. For ordinary research, review the linked official publication and the passages/attachments used, recording its version date and limits. Prefer the current government-published consolidation; check a specific amendment or effective date only when it may affect the issue. Full amendment-chain review and local replay are not prerequisites for using an official link.
+
+
+## Official-reference acceptance
+
+The [acceptance register](references/source-acceptance.json) records two dated Retsinformation references for BEK nr 1457/2020 and BEK nr 965/2025. Use them only within their recorded scopes; the local XML version has an unresolved end-date conflict and is not accepted as an integrated current text. External-reference acceptance does not certify the national inventory, topic coverage, or country review.

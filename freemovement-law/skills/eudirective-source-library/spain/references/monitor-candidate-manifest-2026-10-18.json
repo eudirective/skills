@@ -5,9 +5,10 @@
   "inventory_research_date": "2026-10-18",
   "scope": "Bounded first-pass discovery of official publication and reuse routes, EU/EEA and Swiss residence routes, the distinct Spanish-national family route, forms and filing, visas and consular practice, administrative remedies, public access, privacy, oversight, legal aid, civil-status evidence, and selected courts. This is not a complete inventory or a legal-equivalence opinion.",
   "status": "partially_retrieved_review_candidates",
-  "retrieval_status": "30 candidate pages converted; 0 PDFs preserved without text extraction; 4 discovery surfaces had no stable body; failures are recorded per item; no source accepted",
+  "retrieval_status": "34 source responses saved; 30 pages converted and replay-verified; four dynamic pages had no stable text body; 12 retrieval/conversion failures remain. Twenty-two external official references are accepted by link within stated scope; no local copies or topics are accepted.",
   "accepted_source_count": 0,
-  "candidate_source_count": 46,
+  "accepted_external_reference_count": 22,
+  "candidate_source_count": 48,
   "official_hosts": [
     "aepd.es",
     "boe.es",
@@ -1428,6 +1429,57 @@
       "retrieved": false,
       "accepted": false,
       "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "es-47",
+      "title": "Real Decreto 316/2026 amending Real Decreto 1155/2024 (BOE-A-2026-8284)",
+      "source_type": "immigration_regulation_amendment",
+      "language": "es",
+      "url": "https://www.boe.es/eli/es/rd/2026/04/14/316",
+      "publisher_identifier": {
+        "system": "BOE",
+        "record": "BOE-A-2026-8284"
+      },
+      "functional_relationship": "amendment_dependency",
+      "verification_status": "Official BOE publication page and amendment scope inspected on 2026-10-21.",
+      "retrieval_status": "official_link_reviewed_no_local_capture",
+      "retrieval_shape": "Official ELI page with original publication, PDF, EPUB and XML",
+      "version_evidence": "Published 2026-04-15 and effective 2026-04-16; incorporated in the current RD 1155/2024 consolidation displayed as updated 2026-09-22.",
+      "note": "Keep as a dependency edge to the current RD 1155/2024 consolidation. Its amendments include provisions beyond the Spanish-national-family chapter; assess only relevant provisions.",
+      "topic_ids": [
+        "family_of_spanish",
+        "immigration",
+        "dependency",
+        "versioning"
+      ],
+      "retrieved": false,
+      "accepted": false
+    },
+    {
+      "id": "es-48",
+      "title": "Supreme Court judgment 868/2026 annulling specified provisions of RD 1155/2024 (BOE-A-2026-19632)",
+      "source_type": "supreme_court_judgment",
+      "language": "es",
+      "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-19632",
+      "publisher_identifier": {
+        "system": "BOE",
+        "record": "BOE-A-2026-19632"
+      },
+      "functional_relationship": "direct_legal_dependency",
+      "verification_status": "Official BOE judgment publication inspected on 2026-10-21; decision and correction order dated 2026-07-08 and 2026-09-01.",
+      "retrieval_status": "official_link_reviewed_no_local_capture",
+      "retrieval_shape": "Official BOE judgment page with PDF, EPUB and XML",
+      "version_evidence": "Published 2026-09-22; BOE identifies the Supreme Court, Administrative Chamber, appeal 19/2025, decision and correction dates.",
+      "note": "The judgment nullifies parts of RD 1155/2024 Article 94.1(f), 97.4 and 98.1, including a Spanish-law-only family-link condition and automatic criminal-record denial without individualized assessment in Article 20 TFEU cases. The current RD 1155/2024 consolidation records these effects. Provision-level application review remains open.",
+      "topic_ids": [
+        "family_of_spanish",
+        "eu_citizen_family",
+        "administrative_decisions",
+        "dependency",
+        "case_law"
+      ],
+      "retrieved": false,
+      "accepted": false
     }
   ],
   "retrieved_review_candidate_count": 34,
