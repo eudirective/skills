@@ -117,7 +117,6 @@ def _load_catalog() -> dict[str, dict]:
     for manifest_path in sorted(root.glob("*/**/*manifest*.json")):
         country = manifest_path.relative_to(root).parts[0].casefold()
         country_code = COUNTRY_CODES.get(country)
-        section_label = SECTION_LABELS.get(country_code.casefold(), country.title()) if country_code else country.title()
         if country in {"core", "templates", "visa-code-handbook-i-2020"}:
             continue
         if any(token in manifest_path.name for token in ("capture-results", "monitor-candidate")):
@@ -126,6 +125,12 @@ def _load_catalog() -> dict[str, dict]:
             data = json.loads(manifest_path.read_text(encoding="utf-8"))
         except (OSError, json.JSONDecodeError):
             continue
+        eu_guidance_pack = country == "references" and isinstance(data, dict) and data.get("pack") == "eu-guidance"
+        section_label = (
+            "EU core" if eu_guidance_pack
+            else SECTION_LABELS.get(country_code.casefold(), country.title()) if country_code
+            else country.title()
+        )
         records = []
         if isinstance(data, dict):
             for key in ("sources", "documents", "source_records", "entries"):
@@ -143,23 +148,42 @@ def _load_catalog() -> dict[str, dict]:
                 else "candidate_unaccepted" if item.get("accepted") is False
                 else "not_recorded"
             )
+            jurisdiction = "EU" if eu_guidance_pack else COUNTRY_CODES.get(country, country.upper())
+            source_type = str(item.get("source_type") or item.get("type") or item.get("class") or "")
+            if not source_type and eu_guidance_pack:
+                source_type = "official_guidance"
             if source_id in catalog:
-                # The EU retrieval index is canonical when language/path
-                # representations repeat the same legal instrument.
+                # Keep the index's canonical title and ownership when language
+                # or path representations repeat a source, but allow an
+                # owner-matched manifest to fill acceptance/type metadata.
+                current = catalog[source_id]
+                if current.get("jurisdiction") == jurisdiction:
+                    if isinstance(item.get("accepted"), bool):
+                        current["library_state"] = state
+                    if not current.get("source_type") and source_type:
+                        current["source_type"] = source_type
+                    if not current.get("official_url") and (item.get("url") or item.get("official_url")):
+                        current["official_url"] = item.get("url") or item.get("official_url")
                 continue
             catalog[source_id] = {
                 "title": title,
                 "section": section_label,
-                "jurisdiction": COUNTRY_CODES.get(country, country.upper()),
-                "source_type": str(item.get("source_type") or item.get("type") or item.get("class") or ""),
+                "jurisdiction": jurisdiction,
+                "source_type": source_type,
                 "official_url": item.get("url") or item.get("official_url"),
                 "library_state": state,
             }
     return catalog
 
 
-def _category(source_type: str, section: str) -> str:
+def _category(source_type: str, section: str, title: str = "") -> str:
     raw = source_type.casefold().replace("-", "_").replace(" ", "_")
+    title_raw = title.casefold().replace("-", "_").replace(" ", "_")
+    if not raw:
+        # Some existing national manifests provide only an official title.
+        # Infer a conservative category from that title; leave unknown items as
+        # references rather than counting them as legal texts.
+        raw = title_raw
     if any(token in raw for token in ("judgment", "case_law", "court_decision")):
         return "case_law"
     if "commission" in raw and any(token in raw for token in ("guidance", "recommendation", "working_document", "handbook")):
@@ -168,13 +192,24 @@ def _category(source_type: str, section: str) -> str:
         return "publisher_portal"
     if any(token in raw for token in ("source_note", "summary", "index")):
         return "source_note"
-    if any(token in raw for token in ("procedur", "complaint_route", "mission_instruction", "form")):
+    if any(token in raw for token in (
+        "procedur", "complaint_route", "complaint", "mission_instruction", "instruction",
+        "appeal", "application", "request", "form", "how_to", "petition", "central_administration",
+        "document_access", "public_documents", "official_documents", "own_case_documents", "order_documents", "escalation",
+    )):
         return "procedural_rule"
-    if any(token in raw for token in ("guidance", "recommendation", "handbook", "official_register", "oversight")):
+    if any(token in raw for token in (
+        "guidance", "recommendation", "handbook", "official_register", "oversight",
+        "frequently_asked_questions", "evidence_standard", "article_8",
+    )):
         return "official_guidance"
     if any(token in raw for token in ("directive", "regulation", "treaty", "statute", "legislation", "law", "decree", "ordinance", "primary_law", "sfs")):
         is_eu = section == "EU core" or section.casefold().startswith("external official · eu")
         return "eu_legislation" if is_eu else "national_legislation"
+    if not source_type and any(token in raw for token in (
+        "visa", "residence", "family_member", "ombudsman", "information", "faq", "how_to",
+    )):
+        return "official_guidance"
     return "other_legal_text" if source_type else "other_reference"
 
 
@@ -229,7 +264,7 @@ def validate_source_ledger(ledger: dict, evidence_index: dict[str, dict]) -> dic
                 raise DashboardError(f"bundled_source_owner_mismatch:{logical_id}")
             expected_category = (
                 "source_note" if metadata.get("library_state") == "source_note_only"
-                else _category(metadata.get("source_type", ""), metadata.get("section", ""))
+                else _category(metadata.get("source_type", ""), metadata.get("section", ""), metadata.get("title", ""))
             )
             if item.get("category") != expected_category:
                 raise DashboardError(f"bundled_source_category_mismatch:{logical_id}")

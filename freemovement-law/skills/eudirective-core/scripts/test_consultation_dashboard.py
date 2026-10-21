@@ -15,12 +15,14 @@ sys.path.insert(0, str(HERE))
 
 from consultation_dashboard import (  # noqa: E402
     DashboardError,
+    COUNTRY_CODES,
     _category,
     _load_catalog,
     validate_dashboard_receipt,
 )
 from consultation_route_gate import REQUIRED_OPERATIONS  # noqa: E402
 from contract_validate import ContractError, validate_obj  # noqa: E402
+from source_library_paths import source_library_root  # noqa: E402
 
 
 def source_record(source_id: str, *, response_use="consulted", conversation_use="consulted",
@@ -33,7 +35,7 @@ def source_record(source_id: str, *, response_use="consulted", conversation_use=
         section = metadata["section"]
         jurisdiction = metadata["jurisdiction"]
         title = metadata["title"]
-        category = category or _category(metadata["source_type"], section)
+        category = category or _category(metadata["source_type"], section, title)
         library_state = metadata["library_state"]
         official_url = metadata.get("official_url")
     else:
@@ -252,6 +254,76 @@ class ConsultationDashboardTests(unittest.TestCase):
         report = self.report(make_route(sources=[accepted, unaccepted]))
         self.assertIn("Directive 2004/38/EC", report["preview"])
         self.assertEqual(report["preview"].count("candidate; not accepted"), 1)
+
+    def test_national_manifest_acceptance_overrides_unrecorded_index_state(self):
+        item = source_record("fi-migri-family-residence-card")
+        self.assertEqual(item["library_state"], "candidate_unaccepted")
+        preview = self.report(make_route(sources=[item]))["preview"]
+        self.assertIn("candidate; not accepted", preview)
+
+    def test_all_owner_matched_manifest_acceptance_states_reconcile(self):
+        catalog = _load_catalog()
+        checked = 0
+        for manifest_path in source_library_root().glob("*/**/*manifest*.json"):
+            if any(token in manifest_path.name for token in ("capture-results", "monitor-candidate")):
+                continue
+            try:
+                data = json.loads(manifest_path.read_text(encoding="utf-8"))
+            except (OSError, json.JSONDecodeError):
+                continue
+            country = manifest_path.relative_to(source_library_root()).parts[0].casefold()
+            jurisdiction = (
+                "EU" if country == "references" and data.get("pack") == "eu-guidance"
+                else COUNTRY_CODES.get(country, country.upper())
+            )
+            records = []
+            for key in ("sources", "documents", "source_records", "entries"):
+                if isinstance(data, dict) and isinstance(data.get(key), list):
+                    records.extend(data[key])
+            for item in records:
+                if not isinstance(item, dict) or not isinstance(item.get("accepted"), bool):
+                    continue
+                source_id = item.get("source_id") or item.get("id")
+                metadata = catalog.get(source_id)
+                if not metadata or metadata["jurisdiction"] != jurisdiction:
+                    continue
+                expected = "registered_record" if item["accepted"] else "candidate_unaccepted"
+                self.assertEqual(metadata["library_state"], expected, source_id)
+                checked += 1
+        self.assertGreater(checked, 1000)
+
+    def test_eu_guidance_manifest_uses_eu_core_ownership_and_guidance_category(self):
+        source = _load_catalog()["eu-edpb-guidelines-01-2022-access"]
+        self.assertEqual(source["section"], "EU core")
+        self.assertEqual(source["jurisdiction"], "EU")
+        self.assertEqual(_category(source["source_type"], source["section"], source["title"]), "official_guidance")
+        preview = self.report(make_route(sources=[source_record("eu-edpb-guidelines-01-2022-access")]))["preview"]
+        self.assertIn("EU core · Official guidance", preview)
+
+    def test_title_fallback_classifies_manifest_guidance_and_procedure(self):
+        catalog = _load_catalog()
+        guidance = catalog["dk-omb-02"]
+        visa_guidance = catalog["dk-nyidanmark-visa-after-eu-rules"]
+        appeal = catalog["dk-nyidanmark-no-visa"]
+        procedure = catalog["se-jo-complaint-form"]
+        self.assertEqual(_category(guidance["source_type"], guidance["section"], guidance["title"]), "official_guidance")
+        self.assertEqual(_category(visa_guidance["source_type"], visa_guidance["section"], visa_guidance["title"]), "official_guidance")
+        self.assertEqual(_category(appeal["source_type"], appeal["section"], appeal["title"]), "procedural_rule")
+        self.assertEqual(_category(procedure["source_type"], procedure["section"], procedure["title"]), "procedural_rule")
+
+    def test_title_fallback_classifies_remaining_guidance_and_access_procedures(self):
+        catalog = _load_catalog()
+        guidance_ids = ("ro-eviza-faq-ro", "se-lifos-rs-030-2021-v5", "se-lifos-rs-008-2022-v6")
+        procedure_ids = (
+            "ro-igi-petitions", "ro-igi-central-administration", "se-mig-public-documents",
+            "se-mig-own-case-documents",
+        )
+        for source_id in guidance_ids:
+            item = catalog[source_id]
+            self.assertEqual(_category(item["source_type"], item["section"], item["title"]), "official_guidance")
+        for source_id in procedure_ids:
+            item = catalog[source_id]
+            self.assertEqual(_category(item["source_type"], item["section"], item["title"]), "procedural_rule")
 
     def test_external_official_text_is_separate_from_library_sections(self):
         item = source_record("https://example.gov/law/1", origin="external_official")

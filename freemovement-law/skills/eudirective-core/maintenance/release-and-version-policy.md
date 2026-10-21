@@ -1,5 +1,21 @@
 # Release and version policy
 
+## Plugin v0.54.1 / core v0.53.1 source-catalogue reconciliation repair
+
+Compatible patch to consultation accounting. Owner-matched national manifests
+now refine retrieval-index acceptance states, and the EU guidance manifest is
+owned by EU core rather than a synthetic `References` jurisdiction. When
+source type is absent from an established manifest, a deterministic title
+fallback classifies recognized official guidance and procedures; unknown
+titles remain references and are not counted as legal texts. The source
+library itself is unchanged. Core advances from `0.53.0` to `0.53.1`; plugin
+advances from `0.54.0` to `0.54.1`.
+
+Require regression coverage for every existing source-manifest acceptance
+state represented in the catalog, EU guidance ownership, and title-fallback
+classification. Hosted ChatGPT checks remain documented in the dashboard live
+test plan and are not part of the offline suite.
+
 ## Plugin v0.54.0 / core v0.53.0 invocation-aware consultation dashboard
 
 The compatible core minor adds explicit-invocation dashboard requirements and
