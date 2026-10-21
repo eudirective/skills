@@ -4,7 +4,7 @@
 
 **Status:** Full dashboard and local structural/controller checks verified;
 hosted consultation behavior not verified.
-**Candidate code commit:** pending commit.
+**Candidate code commit:** `3c24ef37a5de751875884884e8f74d9365aef767`
 **Base:** `bf2fff23c31d70645327b7f20435e4647b617601` (`origin/main`)
 **Branch:** `codex/full-dashboard-validation-20261021`
 **Plugin/core:** `0.54.3` / `0.53.3`
