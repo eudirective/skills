@@ -1,5 +1,23 @@
 # Release and version policy
 
+## Plugin v0.53.0 / core v0.52.0 issue-led routing and concise response default
+
+This compatible core minor adds a deterministic selector from declared,
+privacy-minimised issue signals to the existing C27 check registry and source
+owners, plus a five-stage model-led consultation workflow and issue disposition
+contract. The default answer now leads with the requested guidance and a short
+coverage summary; the detailed issue/C27/operation/module board remains
+available for a requested audit. The optional 0.1 route receipt can include
+issue references and signal IDs; the existing gate checks required routed C27
+checks and keeps source/fact gaps open while accepting older receipts without
+the new field. Synthetic scripts remain restricted to abstract fixtures, and
+the route gate is still not host-integrated. The enclosing plugin advances
+from `0.52.2` to `0.53.0`.
+
+Local verification against candidate source commit `f7ca9f9a66f43dfbc2ea9873bad72f45d3996c16` passed version-manifest verification, Python compilation, the C27 checklist, issue-selection tests (15/15), route-gate tests (16/16), evaluation-aggregator tests (8/8), and dashboard/consultation-coverage checks. The private all-suites regression runner passed 31/36 scripts. Its five local failures were: a nested Node process denied with `EPERM`; three PDF-related tests without locally installed PyMuPDF; and the C17 remedy test, which requires Sweden module notes absent from the selected package. These failures and their exact output are recorded in the private maintenance evidence. No remote CI run was made.
+
+All 36 consultation-assurance records remain `not_executed`; there are no actual baseline or candidate model responses, independent grades, or behavioral metrics. Therefore this release is **implementation verified; consultation behavior not verified**. See `maintenance/consultation-quality/candidate-verification.md` for the requirement status and evidence boundaries.
+
 ## Plugin v0.51.3 / core v0.50.3 board-style execution summary
 
 Substantive consultation dashboards now present work in grouped, separated

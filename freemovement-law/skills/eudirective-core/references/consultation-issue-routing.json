@@ -1,0 +1,912 @@
+{
+  "schema": "freemovement-consultation-issue-routing/0.1.0",
+  "description": "Routing metadata from declared abstract issue signals to existing C27 discovery checks and source owners. This is not a legal-rule registry, fact extractor, or proof of execution.",
+  "input_boundary": "The selector CLI accepts only synthetic_abstract fixtures containing opaque proceeding IDs and declared signal IDs. Its select_check_ids API accepts only registered signal IDs and is used by the privacy-minimised route receipt gate. Neither path accepts narratives, jurisdictions, dates, identities, documents, or other free-text fields.",
+  "check_registry": "references/state-engine/check-registry.json",
+  "source_owners": {
+    "eu_common_core": {
+      "owner": "EU and common free-movement law, CJEU interpretation, and EU guidance; maintained by the core",
+      "core_references": [
+        "references/c23-applicant-case-guidance.md",
+        "references/c5a-topology-applicability.md",
+        "references/c5b-hierarchy-principles.md",
+        "references/c5c-evidence-deadlines-authority.md",
+        "references/source-substrate.md"
+      ],
+      "official_source_ids_to_resolve_when_relevant": [
+        "eu:32004l0038",
+        "eu:32009r0810",
+        "eu:visa-code-handbook-i-2024"
+      ],
+      "currentness_rule": "Resolve the matching registered EU pack and check official current text before relying on a source for a current consultation. A pinned compatibility copy or handbook does not establish currentness or binding status."
+    },
+    "member_state_law": {
+      "owner": "National law, competent institutions, procedural remedies, and national deadlines belong to the module for the deciding or challenged Member State",
+      "module_role": "member_state_module_for_deciding_or_challenged_state",
+      "currentness_rule": "Use only an available, matching module and verified official national sources. If absent or incomplete, keep the national issue open and qualify only conclusions that depend on it."
+    },
+    "applicant_country_operations": {
+      "owner": "Mission channels, appointment practice, local document acquisition, and operational facts belong to the applicant-country module",
+      "module_role": "applicant_country_module_for_application_location",
+      "currentness_rule": "Check current official mission or provider information. Do not use local operational practice to redefine EU legal rights."
+    },
+    "eu_swiss_framework": {
+      "owner": "EU–Swiss free-movement arrangements are a distinct treaty framework; do not apply Directive 2004/38/EC to a Swiss refusal by default",
+      "official_source_query": "Retrieve and verify the applicable Agreement on the Free Movement of Persons and relevant official EU and Swiss material at EUR-Lex or Fedlex.",
+      "core_references": [
+        "../eudirective-source-library/switzerland/README.md",
+        "../eudirective-source-library/references/eea-switzerland-country-expansion.md"
+      ],
+      "currentness_rule": "The bundled Swiss source-library records are candidate discovery material; the Swiss library states that zero sources are accepted. Verify official text and applicability independently before drawing a legal conclusion."
+    },
+    "eu_data_protection": {
+      "owner": "EU data-protection law belongs to EU/common core; national supervisory competence and procedure belong to the relevant Member-State module",
+      "official_source_query": "Check the official GDPR text and the competent supervisory authority's current procedure where the issue is factually triggered.",
+      "core_references": [
+        "references/c21-privacy-and-anonymisation.md",
+        "references/c25-evidence-acquisition.md"
+      ],
+      "currentness_rule": "Do not infer a data-protection grievance from an ordinary procedural dispute. Distinguish preservation, access, retention, and supervisory complaints."
+    }
+  },
+  "signal_catalog": [
+    {
+      "signal_id": "directive_scope_question",
+      "neutral_description": "Personal, material, or territorial scope of a claimed Directive-based family route is in issue."
+    },
+    {
+      "signal_id": "accompanying_or_joining_question",
+      "neutral_description": "The family member's travel or residence link to the moving Union citizen is in issue."
+    },
+    {
+      "signal_id": "prior_refusal_or_status_change",
+      "neutral_description": "A prior refusal or a change in relationship, movement, or legal status may affect the present question."
+    },
+    {
+      "signal_id": "swiss_free_movement_framework_question",
+      "neutral_description": "A Swiss or EU–Swiss free-movement route may govern a refusal or family-rights question."
+    },
+    {
+      "signal_id": "pre_lodgement_access_obstruction",
+      "neutral_description": "An appointment, access, or attempted-lodgement event may have prevented an application from being received."
+    },
+    {
+      "signal_id": "external_service_provider_used",
+      "neutral_description": "A visa application centre or other external service provider participates in the process."
+    },
+    {
+      "signal_id": "provider_fee_disputed",
+      "neutral_description": "A fee charged by or through an external provider is disputed."
+    },
+    {
+      "signal_id": "provider_fee_not_disputed",
+      "neutral_description": "The abstract scenario expressly has no disputed external-provider fee.",
+      "polarity": "negative",
+      "opposes_signal_id": "provider_fee_disputed"
+    },
+    {
+      "signal_id": "ordinary_document_list_or_eu_family_document_question",
+      "neutral_description": "A document demand or ordinary checklist may be affecting an EU-family application."
+    },
+    {
+      "signal_id": "document_demand",
+      "neutral_description": "A specific document demand is part of the abstract issue."
+    },
+    {
+      "signal_id": "missing_document",
+      "neutral_description": "A requested document is unavailable or its evidentiary effect is disputed."
+    },
+    {
+      "signal_id": "processing_delay_or_deadline_question",
+      "neutral_description": "A processing period, pre-lodgement delay, clock trigger, or deadline is in issue."
+    },
+    {
+      "signal_id": "formal_lodgement_confirmed",
+      "neutral_description": "The abstract scenario declares that formal lodging is confirmed."
+    },
+    {
+      "signal_id": "appeal_deadline_risk",
+      "neutral_description": "A formal challenge deadline may be running or at risk."
+    },
+    {
+      "signal_id": "remedy_or_solvit_or_supervisory_complaint",
+      "neutral_description": "A formal appeal, SOLVIT matter, or supervisory/process complaint is in issue."
+    },
+    {
+      "signal_id": "formal_refusal_issued",
+      "neutral_description": "The abstract scenario declares a formal refusal decision."
+    },
+    {
+      "signal_id": "solvit_involved",
+      "neutral_description": "A SOLVIT process is pending or proposed."
+    },
+    {
+      "signal_id": "personal_data_processing_question",
+      "neutral_description": "A specific processing, access, purpose, retention, or supervisory issue involving personal data is in scope."
+    },
+    {
+      "signal_id": "ephemeral_evidence_at_risk",
+      "neutral_description": "Potentially relevant time-limited evidence, such as an incident recording, may be lost."
+    },
+    {
+      "signal_id": "evidence_record_contains_personal_data",
+      "neutral_description": "The specific record being preserved contains identifiable personal data."
+    },
+    {
+      "signal_id": "returnee_context",
+      "neutral_description": "The Union citizen may be returning to their own Member State after qualifying movement."
+    },
+    {
+      "signal_id": "movement_or_cross_border_context",
+      "neutral_description": "Qualifying movement or a cross-border topology is alleged or queried."
+    },
+    {
+      "signal_id": "family_relationship_question",
+      "neutral_description": "The claimed family relationship or its recognition is in issue."
+    },
+    {
+      "signal_id": "prior_refusal_predates_claimed_status",
+      "neutral_description": "The abstract timeline places a prior refusal before a claimed relationship or legal-status change."
+    },
+    {
+      "signal_id": "appointment_delay",
+      "neutral_description": "Appointment access or waiting time is specifically in issue."
+    },
+    {
+      "signal_id": "physical_exclusion_or_staff_treatment",
+      "neutral_description": "Reported physical exclusion or staff treatment may require separate review."
+    },
+    {
+      "signal_id": "staff_conduct",
+      "neutral_description": "A distinct staff-conduct concern is in issue."
+    }
+  ],
+  "routes": [
+    {
+      "route_id": "directive_personal_and_territorial_applicability",
+      "neutral_description": "Assess whether the claimed family route falls within the personal, material, and territorial scope of the Directive.",
+      "when_any_signal": [
+        "directive_scope_question"
+      ],
+      "triggering_conditions": [
+        "A Directive-based entitlement, visa facilitation, or residence right is actually raised as an issue."
+      ],
+      "mandatory_checks": [
+        "eu_scope.directive_scope",
+        "case_intake.actor_roles",
+        "case_intake.relationship_basis",
+        "case_intake.geographic_roles"
+      ],
+      "conditional_checks": [
+        {
+          "when_any_signal": [
+            "movement_or_cross_border_context"
+          ],
+          "check_ids": [
+            "eu_scope.movement_exercised"
+          ],
+          "reason": "Movement or cross-border topology is expressly in issue."
+        },
+        {
+          "when_any_signal": [
+            "returnee_context"
+          ],
+          "check_ids": [
+            "eu_scope.returnee_derived_rights",
+            "country.national_extension"
+          ],
+          "reason": "A returning Union citizen may require separate EU and national returnee analysis."
+        },
+        {
+          "when_any_signal": [
+            "family_relationship_question"
+          ],
+          "check_ids": [
+            "country.status_recognition"
+          ],
+          "reason": "Recognition or proof of the relationship is expressly disputed."
+        }
+      ],
+      "source_owner_ids": [
+        "eu_common_core",
+        "member_state_law"
+      ],
+      "source_references": [
+        "eu:32004l0038",
+        "references/c23-applicant-case-guidance.md",
+        "references/c5a-topology-applicability.md"
+      ],
+      "potential_attack_angle_review": {
+        "required": true,
+        "review_topics": [
+          "competing legal regime",
+          "territorial or personal-scope exception",
+          "contrary authority or fact that changes the claimed topology"
+        ]
+      },
+      "negative_applicability": [
+        "A generic visa enquiry, provider fee, or complaint alone does not activate this route."
+      ],
+      "related_independent_issues": [
+        "pre_lodgement_obstruction_and_appointment_access",
+        "processing_delay_or_clock_trigger",
+        "remedy_or_supervisory_track"
+      ]
+    },
+    {
+      "route_id": "eu_citizen_accompanying_or_joining",
+      "neutral_description": "Assess whether the family member accompanies or joins the Union citizen in the relevant movement or residence situation.",
+      "when_any_signal": [
+        "accompanying_or_joining_question"
+      ],
+      "triggering_conditions": [
+        "The travel, arrival, or residence relationship between the family member and Union citizen is relevant to the requested legal outcome."
+      ],
+      "mandatory_checks": [
+        "eu_scope.directive_scope",
+        "eu_scope.movement_exercised",
+        "eu_scope.accompany_or_join",
+        "case_intake.relationship_basis",
+        "case_intake.geographic_roles"
+      ],
+      "conditional_checks": [
+        {
+          "when_any_signal": [
+            "returnee_context"
+          ],
+          "check_ids": [
+            "eu_scope.returnee_derived_rights",
+            "country.national_extension"
+          ],
+          "reason": "A returnee route requires its own scope analysis."
+        },
+        {
+          "when_any_signal": [
+            "family_relationship_question"
+          ],
+          "check_ids": [
+            "eu_scope.family_recognition",
+            "documents.family_status_records"
+          ],
+          "reason": "Relationship status or recognition is expressly in issue."
+        }
+      ],
+      "source_owner_ids": [
+        "eu_common_core",
+        "member_state_law"
+      ],
+      "source_references": [
+        "eu:32004l0038",
+        "references/c23-applicant-case-guidance.md",
+        "references/c5a-topology-applicability.md"
+      ],
+      "potential_attack_angle_review": {
+        "required": true,
+        "review_topics": [
+          "different travel dates or travel sequence",
+          "whether movement is qualifying",
+          "family status and any recognised exception"
+        ]
+      },
+      "negative_applicability": [
+        "A family member's travel question without a claimed Union-citizen movement link does not by itself establish Directive coverage."
+      ],
+      "related_independent_issues": [
+        "directive_personal_and_territorial_applicability",
+        "ordinary_document_list_or_eu_family_requirements"
+      ]
+    },
+    {
+      "route_id": "prior_refusal_and_legal_status_change",
+      "neutral_description": "Keep historical refusal events separate and assess whether a later relationship or status change affects the present proceeding.",
+      "when_any_signal": [
+        "prior_refusal_or_status_change"
+      ],
+      "triggering_conditions": [
+        "A prior refusal, later change in legal status, or claimed carry-over effect is material to the current question."
+      ],
+      "mandatory_checks": [
+        "case_intake.proceedings_identified",
+        "lifecycle.decision_taken",
+        "lifecycle.decision_notified",
+        "authority.actual_ground",
+        "authority.position_provenance",
+        "eu_scope.directive_scope"
+      ],
+      "conditional_checks": [
+        {
+          "when_any_signal": [
+            "prior_refusal_predates_claimed_status"
+          ],
+          "check_ids": [
+            "case_intake.applicant_prior_actions",
+            "authority.ground_change",
+            "lifecycle.procedural_reopening"
+          ],
+          "reason": "The abstract chronology places an earlier refusal before a claimed status change; assess each proceeding and any later decision separately."
+        },
+        {
+          "when_any_signal": [
+            "formal_refusal_issued"
+          ],
+          "check_ids": [
+            "remedies.formal_appeal",
+            "timing.service_date",
+            "timing.appeal_limit"
+          ],
+          "reason": "A declared formal refusal may engage a separate appeal and service clock."
+        }
+      ],
+      "source_owner_ids": [
+        "eu_common_core",
+        "member_state_law"
+      ],
+      "source_references": [
+        "references/c23-applicant-case-guidance.md",
+        "references/c24-fact-rule-revision.md",
+        "references/c5c-evidence-deadlines-authority.md"
+      ],
+      "potential_attack_angle_review": {
+        "required": true,
+        "review_topics": [
+          "which legal status existed at each event",
+          "whether the prior decision is being treated as a current ground without support",
+          "whether service or a later decision creates a separate deadline"
+        ]
+      },
+      "negative_applicability": [
+        "An application, appointment, or complaint alone does not establish a prior refusal or a later status change."
+      ],
+      "related_independent_issues": [
+        "remedy_or_supervisory_track",
+        "processing_delay_or_clock_trigger"
+      ]
+    },
+    {
+      "route_id": "member_state_versus_eu_swiss_framework",
+      "neutral_description": "Identify whether the EU–Swiss free-movement framework, rather than the Directive, governs the Swiss-related issue.",
+      "when_any_signal": [
+        "swiss_free_movement_framework_question"
+      ],
+      "triggering_conditions": [
+        "A Swiss national, Swiss authority, or EU–Swiss agreement is material to the legal route."
+      ],
+      "mandatory_checks": [
+        "eu_scope.directive_scope",
+        "eu_scope.movement_exercised",
+        "country.multiple_jurisdictions",
+        "sources.binding_classification",
+        "sources.official_publisher",
+        "sources.source_currentness"
+      ],
+      "conditional_checks": [
+        {
+          "when_any_signal": [
+            "family_relationship_question"
+          ],
+          "check_ids": [
+            "country.status_recognition",
+            "proof.national_evidence_rules"
+          ],
+          "reason": "Relationship status or proof is separately in issue."
+        },
+        {
+          "when_any_signal": [
+            "formal_refusal_issued"
+          ],
+          "check_ids": [
+            "authority.actual_ground",
+            "authority.position_provenance",
+            "remedies.formal_appeal"
+          ],
+          "reason": "A formal Swiss decision requires its own actual grounds and remedy route."
+        }
+      ],
+      "source_owner_ids": [
+        "eu_swiss_framework",
+        "member_state_law"
+      ],
+      "source_references": [
+        "Official EU–Swiss Agreement on the Free Movement of Persons text at EUR-Lex or Fedlex",
+        "../eudirective-source-library/switzerland/README.md",
+        "../eudirective-source-library/references/eea-switzerland-country-expansion.md"
+      ],
+      "potential_attack_angle_review": {
+        "required": true,
+        "review_topics": [
+          "Directive versus bilateral-agreement legal basis",
+          "personal and material scope of the agreement",
+          "Swiss domestic implementation and available remedy"
+        ]
+      },
+      "negative_applicability": [
+        "Do not select this route solely because a Swiss location or a generic European free-movement question is mentioned."
+      ],
+      "related_independent_issues": [
+        "prior_refusal_and_legal_status_change",
+        "remedy_or_supervisory_track"
+      ]
+    },
+    {
+      "route_id": "pre_lodgement_obstruction_and_appointment_access",
+      "neutral_description": "Separate appointment and access obstruction from formal refusal after examination.",
+      "when_any_signal": [
+        "pre_lodgement_access_obstruction"
+      ],
+      "triggering_conditions": [
+        "An appointment request, physical attendance, or submission attempt may have been delayed, blocked, or refused before formal lodging."
+      ],
+      "mandatory_checks": [
+        "lifecycle.enquiry_state",
+        "lifecycle.appointment_request",
+        "lifecycle.lodgement_attempted",
+        "lifecycle.lodgement_confirmed",
+        "access.appointment_wait",
+        "access.refusal_to_lodge",
+        "timing.pre_lodgement_delay"
+      ],
+      "conditional_checks": [
+        {
+          "when_any_signal": [
+            "appointment_delay"
+          ],
+          "check_ids": [
+            "access.direct_access",
+            "timing.urgent_preservation"
+          ],
+          "reason": "The access delay is specifically declared and may affect practical effectiveness or evidence preservation."
+        },
+        {
+          "when_any_signal": [
+            "physical_exclusion_or_staff_treatment",
+            "staff_conduct"
+          ],
+          "check_ids": [
+            "conduct.staff_treatment",
+            "conduct.physical_exclusion",
+            "conduct.complaint_channel",
+            "conduct.independent_outcomes",
+            "remedies.conduct_supervision"
+          ],
+          "reason": "Reported staff treatment or physical exclusion must be considered as a distinct conduct track."
+        }
+      ],
+      "source_owner_ids": [
+        "eu_common_core",
+        "member_state_law",
+        "applicant_country_operations"
+      ],
+      "source_references": [
+        "references/c23-applicant-case-guidance.md",
+        "references/c5c-evidence-deadlines-authority.md",
+        "references/architecture-boundaries.md"
+      ],
+      "potential_attack_angle_review": {
+        "required": true,
+        "review_topics": [
+          "appointment access versus a decision on the merits",
+          "evidence of attempted submission and any receipt",
+          "the exact legal basis for direct access or use of a service provider"
+        ]
+      },
+      "negative_applicability": [
+        "Do not label a pre-lodgement access event a formal visa refusal without a formal decision."
+      ],
+      "related_independent_issues": [
+        "external_service_provider_and_fees",
+        "processing_delay_or_clock_trigger",
+        "remedy_or_supervisory_track",
+        "personal_data_protection",
+        "ephemeral_evidence_preservation"
+      ]
+    },
+    {
+      "route_id": "external_service_provider_and_fees",
+      "neutral_description": "Assess a provider's procedural role and keep provider fees distinct from the visa fee.",
+      "when_any_signal": [
+        "external_service_provider_used"
+      ],
+      "triggering_conditions": [
+        "An external visa service provider participates in the application route."
+      ],
+      "mandatory_checks": [
+        "access.service_provider_accountability",
+        "access.direct_access",
+        "authority.staff_responsibility"
+      ],
+      "conditional_checks": [
+        {
+          "when_any_signal": [
+            "provider_fee_disputed"
+          ],
+          "unless_any_signal": [
+            "provider_fee_not_disputed"
+          ],
+          "check_ids": [
+            "access.outsourcing_fees",
+            "access.fee_waiver"
+          ],
+          "reason": "A disputed provider fee requires separation from the visa fee and assessment under the relevant EU-family regime."
+        }
+      ],
+      "negative_applicability": [
+        {
+          "signal_id": "provider_fee_not_disputed",
+          "opposes_signal_id": "provider_fee_disputed",
+          "excluded_check_ids": [
+            "access.outsourcing_fees",
+            "access.fee_waiver"
+          ],
+          "reason": "When no provider-fee dispute is declared, do not select fee-specific checks merely because a provider is used."
+        }
+      ],
+      "source_owner_ids": [
+        "eu_common_core",
+        "member_state_law",
+        "applicant_country_operations"
+      ],
+      "source_references": [
+        "eu:32009r0810",
+        "eu:visa-code-handbook-i-2024",
+        "references/c23-applicant-case-guidance.md",
+        "references/architecture-boundaries.md"
+      ],
+      "potential_attack_angle_review": {
+        "required": true,
+        "review_topics": [
+          "visa fee versus optional provider service fee",
+          "the Member State's responsibility for outsourced processing",
+          "direct access rule, if any, under the exact applicable arrangement"
+        ]
+      },
+      "related_independent_issues": [
+        "pre_lodgement_obstruction_and_appointment_access",
+        "ordinary_document_list_or_eu_family_requirements",
+        "remedy_or_supervisory_track"
+      ]
+    },
+    {
+      "route_id": "ordinary_document_list_or_eu_family_requirements",
+      "neutral_description": "Compare an ordinary document list with the requirements and limits for an EU-family application.",
+      "when_any_signal": [
+        "ordinary_document_list_or_eu_family_document_question"
+      ],
+      "triggering_conditions": [
+        "A document demand, checklist, or proof issue may affect an EU-family visa or free-movement entitlement."
+      ],
+      "mandatory_checks": [
+        "documents.requested_item",
+        "documents.requested_legal_basis",
+        "documents.ordinary_checklist_scope",
+        "documents.mandatory_vs_optional",
+        "documents.alternative_proof"
+      ],
+      "conditional_checks": [
+        {
+          "when_any_signal": [
+            "document_demand"
+          ],
+          "check_ids": [
+            "documents.provider_document_rules",
+            "documents.legalisation_apostille",
+            "documents.translations"
+          ],
+          "reason": "A specific demand may require comparison with the applicable national and provider instructions."
+        },
+        {
+          "when_any_signal": [
+            "missing_document"
+          ],
+          "check_ids": [
+            "documents.missing_document",
+            "documents.proof_completeness",
+            "proof.proof_freedom"
+          ],
+          "reason": "A missing item may affect proof without automatically preventing an independent legal conclusion."
+        }
+      ],
+      "source_owner_ids": [
+        "eu_common_core",
+        "member_state_law",
+        "applicant_country_operations"
+      ],
+      "source_references": [
+        "eu:32004l0038",
+        "eu:32009r0810",
+        "eu:visa-code-handbook-i-2024",
+        "references/c23-applicant-case-guidance.md"
+      ],
+      "potential_attack_angle_review": {
+        "required": true,
+        "review_topics": [
+          "ordinary checklist applicability to the applicant category",
+          "the item's actual purpose and legal basis",
+          "alternative proof, proportionality, and any specific exception"
+        ]
+      },
+      "negative_applicability": [
+        "Do not activate this route for an unrelated ordinary visitor checklist unless an EU-family or free-movement issue is also declared."
+      ],
+      "related_independent_issues": [
+        "eu_citizen_accompanying_or_joining",
+        "external_service_provider_and_fees",
+        "pre_lodgement_obstruction_and_appointment_access"
+      ]
+    },
+    {
+      "route_id": "processing_delay_or_clock_trigger",
+      "neutral_description": "Identify the applicable processing rule and the event that starts its clock; keep appointment delay separate.",
+      "when_any_signal": [
+        "processing_delay_or_deadline_question"
+      ],
+      "triggering_conditions": [
+        "The user asks about delay, processing time, a deadline, or the effect of an uncertain lodging date."
+      ],
+      "mandatory_checks": [
+        "timing.clock_start",
+        "timing.lodgement_trigger",
+        "timing.applicable_rule",
+        "timing.accelerated_processing",
+        "timing.pre_lodgement_delay"
+      ],
+      "conditional_checks": [
+        {
+          "when_any_signal": [
+            "formal_lodgement_confirmed"
+          ],
+          "check_ids": [
+            "lifecycle.lodgement_confirmed",
+            "lifecycle.receipt_evidence",
+            "timing.exceptions_and_extension",
+            "timing.suspension"
+          ],
+          "reason": "Formal lodging is declared; verify the clock's event, any allowed extension, and any suspension."
+        },
+        {
+          "when_any_signal": [
+            "appeal_deadline_risk"
+          ],
+          "check_ids": [
+            "timing.service_date",
+            "timing.appeal_limit",
+            "remedies.formal_appeal"
+          ],
+          "reason": "An appeal deadline may be distinct from the visa-processing clock and must be protected."
+        }
+      ],
+      "source_owner_ids": [
+        "eu_common_core",
+        "member_state_law",
+        "applicant_country_operations"
+      ],
+      "source_references": [
+        "eu:32004l0038",
+        "eu:32009r0810",
+        "references/c5c-evidence-deadlines-authority.md",
+        "references/c23-applicant-case-guidance.md"
+      ],
+      "potential_attack_angle_review": {
+        "required": true,
+        "review_topics": [
+          "enquiry, appointment, and formal lodging as different clock events",
+          "legal basis and any exception or extension",
+          "parallel appeal deadline that a complaint does not suspend"
+        ]
+      },
+      "negative_applicability": [
+        "A complaint or appointment question alone does not activate this route unless a processing delay, clock, or deadline issue is declared."
+      ],
+      "related_independent_issues": [
+        "pre_lodgement_obstruction_and_appointment_access",
+        "prior_refusal_and_legal_status_change",
+        "remedy_or_supervisory_track"
+      ]
+    },
+    {
+      "route_id": "remedy_or_supervisory_track",
+      "neutral_description": "Identify formal appeal, informal problem-solving, and supervisory or conduct routes without merging them.",
+      "when_any_signal": [
+        "remedy_or_solvit_or_supervisory_complaint"
+      ],
+      "triggering_conditions": [
+        "A formal challenge, SOLVIT process, or supervisory/process complaint is requested or already pending."
+      ],
+      "mandatory_checks": [
+        "case_intake.linked_proceedings",
+        "lifecycle.challenge_stage",
+        "remedies.remedy_compatibility",
+        "remedies.competent_authority",
+        "authority.supervisory_path"
+      ],
+      "conditional_checks": [
+        {
+          "when_any_signal": [
+            "formal_refusal_issued",
+            "appeal_deadline_risk"
+          ],
+          "check_ids": [
+            "remedies.formal_appeal",
+            "timing.service_date",
+            "timing.appeal_limit"
+          ],
+          "reason": "A formal refusal or at-risk deadline requires separate verification of the national appeal route and clock."
+        },
+        {
+          "when_any_signal": [
+            "solvit_involved"
+          ],
+          "check_ids": [
+            "remedies.solvit",
+            "remedies.remedy_compatibility"
+          ],
+          "reason": "SOLVIT is a distinct process and does not replace or suspend a formal appeal deadline."
+        },
+        {
+          "when_any_signal": [
+            "staff_conduct"
+          ],
+          "check_ids": [
+            "conduct.complaint_channel",
+            "remedies.conduct_supervision",
+            "conduct.independent_outcomes"
+          ],
+          "reason": "A service or conduct grievance has an independent subject and outcome."
+        }
+      ],
+      "source_owner_ids": [
+        "eu_common_core",
+        "member_state_law"
+      ],
+      "source_references": [
+        "references/c23-applicant-case-guidance.md",
+        "references/c25-applicant-strategy.md",
+        "references/c5c-evidence-deadlines-authority.md"
+      ],
+      "potential_attack_angle_review": {
+        "required": true,
+        "review_topics": [
+          "formal decision versus administrative grievance",
+          "competent body and exact power to grant the requested relief",
+          "parallel routes and preserved deadlines"
+        ]
+      },
+      "negative_applicability": [
+        "A complaint label alone does not create a statutory visa appeal or prove that a formal decision exists."
+      ],
+      "related_independent_issues": [
+        "pre_lodgement_obstruction_and_appointment_access",
+        "personal_data_protection",
+        "ephemeral_evidence_preservation",
+        "prior_refusal_and_legal_status_change"
+      ]
+    },
+    {
+      "route_id": "personal_data_protection",
+      "neutral_description": "Review GDPR scope and data-processing issues only when a concrete personal-data issue is declared.",
+      "when_any_signal": [
+        "personal_data_processing_question"
+      ],
+      "triggering_conditions": [
+        "The issue specifically concerns the purpose, necessity, access, retention, or supervision of personal-data processing."
+      ],
+      "mandatory_checks": [
+        "gdpr.lawful_basis",
+        "gdpr.purpose_limitation",
+        "gdpr.data_minimisation",
+        "gdpr.controller_identity"
+      ],
+      "conditional_checks": [
+        {
+          "when_any_signal": [
+            "ephemeral_evidence_at_risk"
+          ],
+          "check_ids": [
+            "gdpr.preservation_request",
+            "gdpr.retention_obligations",
+            "timing.urgent_preservation"
+          ],
+          "reason": "A personal-data record is declared at risk; assess prompt preservation separately from access."
+        }
+      ],
+      "source_owner_ids": [
+        "eu_data_protection",
+        "member_state_law"
+      ],
+      "source_references": [
+        "Official GDPR text and current competent supervisory-authority procedure",
+        "references/c21-privacy-and-anonymisation.md",
+        "references/c25-evidence-acquisition.md"
+      ],
+      "potential_attack_angle_review": {
+        "required": true,
+        "review_topics": [
+          "whether the issue is actually about personal data",
+          "purpose, necessity, and the precise controller",
+          "national supervisory competence and any scope exception"
+        ]
+      },
+      "negative_applicability": [
+        "Do not select GDPR checks solely because a visa application, complaint, or non-personal evidence-preservation request exists."
+      ],
+      "related_independent_issues": [
+        "pre_lodgement_obstruction_and_appointment_access",
+        "remedy_or_supervisory_track"
+      ]
+    },
+    {
+      "route_id": "ephemeral_evidence_preservation",
+      "neutral_description": "Preserve concrete time-limited evidence promptly; add data-protection checks only when the record contains personal data.",
+      "when_any_signal": [
+        "ephemeral_evidence_at_risk"
+      ],
+      "triggering_conditions": [
+        "A specific record may be deleted, overwritten, or otherwise become unavailable before a later complaint or review."
+      ],
+      "mandatory_checks": [
+        "timing.urgent_preservation",
+        "proof.unexamined_records",
+        "strategy.preservation_first"
+      ],
+      "conditional_checks": [
+        {
+          "when_any_signal": [
+            "evidence_record_contains_personal_data"
+          ],
+          "check_ids": [
+            "gdpr.cctv",
+            "gdpr.preservation_request",
+            "gdpr.retention_obligations",
+            "gdpr.controller_identity"
+          ],
+          "reason": "The record is declared to contain personal data; check GDPR-specific preservation and controller issues."
+        },
+        {
+          "when_any_signal": [
+            "physical_exclusion_or_staff_treatment",
+            "staff_conduct"
+          ],
+          "check_ids": [
+            "conduct.evidence_loss",
+            "conduct.independent_outcomes",
+            "remedies.conduct_supervision"
+          ],
+          "reason": "The threatened record may support a separate conduct issue."
+        }
+      ],
+      "source_owner_ids": [
+        "member_state_law"
+      ],
+      "conditional_source_owner_ids": [
+        {
+          "when_any_signal": [
+            "evidence_record_contains_personal_data"
+          ],
+          "source_owner_ids": [
+            "eu_data_protection",
+            "member_state_law"
+          ]
+        }
+      ],
+      "source_references": [
+        "references/c5c-evidence-deadlines-authority.md",
+        "references/c25-evidence-acquisition.md"
+      ],
+      "potential_attack_angle_review": {
+        "required": true,
+        "review_topics": [
+          "specific record and likely deletion or overwrite time",
+          "competent holder and proportionate preservation request",
+          "whether the record contains personal data, which would add a separate GDPR question"
+        ]
+      },
+      "negative_applicability": [
+        "Do not select an urgent preservation route from a generic complaint or records request without evidence at risk of loss."
+      ],
+      "related_independent_issues": [
+        "personal_data_protection",
+        "pre_lodgement_obstruction_and_appointment_access",
+        "remedy_or_supervisory_track"
+      ]
+    }
+  ]
+}

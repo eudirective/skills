@@ -52,6 +52,13 @@ privacy restriction is an operator requirement rather than an enforced check.
   operation, selected C27 check, required research task, or module check remains
   incomplete. It also requires the model to declare that it reviewed
   conditional workflows.
+- Optionally reconciles declared issue records to the existing issue-signal
+  routing matrix and C27 registry. Each issue record uses opaque issue/scope
+  references, registered signal IDs, a disposition, and a conversation-record
+  reference. The gate reports required routed checks missing from that scope.
+  `source_missing` and `fact_missing` dispositions remain open for a
+  comprehensive claim. This is additive: older 0.1 receipts without `issues`
+  retain their prior validation behavior.
 
 Run it locally with:
 
@@ -68,6 +75,11 @@ The gate checks only what the route receipt declares. It cannot determine
 whether a conditional engine was omitted, whether a model-led review really
 occurred, whether a relevant C27 check was omitted, whether a source supports a
 proposition, or whether self-reported evidence exists or is authentic.
+When the optional `issues` array is present, the gate validates signal IDs and
+required check selection for each declared issue/scope. It cannot determine
+whether the model omitted an issue, chose an incomplete signal set, or attached
+an accurate disposition.
+
 Resolving an ID means only that the receipt
 declares it in the evidence index; only local artifact digests and outputs of
 the invoked structural validators receive a deterministic check. A

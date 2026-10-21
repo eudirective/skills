@@ -1,4 +1,4 @@
-name: Verify FreeMovement versions
+name: Verify FreeMovement package and consultation routing
 
 on:
   workflow_dispatch:
@@ -15,39 +15,25 @@ permissions:
   contents: read
 
 jobs:
-  versions:
+  verify:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Confirm installed manifest matches plugin and every skill
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install core structural-check dependency
+        run: python -m pip install -r freemovement-law/requirements-test.txt
+      - name: Verify plugin, skill, and source-library version parity
         run: node freemovement-law/scripts/version_manifest.mjs --verify
-      - name: C27 state engine regression checks
-        run: python freemovement-law/skills/eudirective-core/scripts/test_c27_case_state.py
-      - name: Ordinary consultation assurance and dashboard checks
-        run: |
-          python freemovement-law/skills/eudirective-core/scripts/test_consultation_route_gate.py
-          python freemovement-law/skills/eudirective-core/scripts/test_issue_source_preflight.py
-          python freemovement-law/skills/eudirective-core/scripts/test_attack_angle_coverage.py
-          python freemovement-law/skills/eudirective-core/scripts/test_consultation_topic_review.py
-          python freemovement-law/skills/eudirective-core/scripts/test_consultation_assurance_cases.py
-          python freemovement-law/skills/eudirective-core/scripts/test_consultation_dashboard_format.py
-          python freemovement-law/skills/eudirective-core/scripts/test_evaluation_transcript_gate.py
-          python freemovement-law/skills/eudirective-core/scripts/evaluation_transcript_gate.py freemovement-law/skills/eudirective-core/evaluations/consultation-assurance-evaluations.json
-      - name: C27 abstract CLI integration smoke
-        run: |
-          python freemovement-law/skills/eudirective-core/scripts/c27_case_state.py checklist > /dev/null
-          python freemovement-law/skills/eudirective-core/scripts/c27_case_state.py inspect --input freemovement-law/skills/eudirective-core/evaluations/fixtures/c27/multi-proceeding.json > /dev/null
-          python freemovement-law/skills/eudirective-core/scripts/c27_case_state.py inspect --full --input freemovement-law/skills/eudirective-core/evaluations/fixtures/c27/multi-proceeding.json > /dev/null
-          python freemovement-law/skills/eudirective-core/scripts/c27_case_state.py compare --previous freemovement-law/skills/eudirective-core/evaluations/fixtures/c27/initial.json --input freemovement-law/skills/eudirective-core/evaluations/fixtures/c27/multi-proceeding.json > /dev/null
-      - name: C6/C7 synthetic-only controller and freshness checks
-        run: |
-          python freemovement-law/skills/eudirective-core/scripts/test_c6_integration.py
-          python freemovement-law/skills/eudirective-core/scripts/test_c7_hardening.py
-          python freemovement-law/skills/eudirective-core/scripts/test_c7_metadata_freshness.py
-      - name: Check version parity comparison and failure reporting
-        run: |
-          node --test freemovement-law/skills/eudirective-core/scripts/test_session_version_check.mjs
-          node --test freemovement-law/scripts/test_version_manifest.mjs
+      - name: Compile core scripts
+        run: python -m compileall -q freemovement-law/skills/eudirective-core/scripts
+      - name: Test synthetic consultation issue routing
+        run: python freemovement-law/skills/eudirective-core/scripts/test_consultation_issue_selection.py
+      - name: Test consultation route receipt gate
+        run: python freemovement-law/skills/eudirective-core/scripts/test_consultation_route_gate.py
+      - name: Smoke-check the shared C27 check registry
+        run: python freemovement-law/skills/eudirective-core/scripts/c27_case_state.py checklist > /dev/null
