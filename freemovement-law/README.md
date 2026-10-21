@@ -7,8 +7,6 @@ and national legal-source library, mirrored into the plugin package.
 
 - Codex or ChatGPT Desktop with plugin and skill support.
 - Network access when checking a source directly with its official publisher.
-- Python 3.10+ and the package in `requirements-runtime.txt` for the local
-  consultation-dashboard MCP tool.
 
 ## Use and licensing
 
@@ -52,31 +50,20 @@ only the model-declared plan, indexed references and artifacts accepted by
 existing validators; they cannot identify omitted conditionals or authenticate
 self-reported evidence, and they do not scan artifact names or contents for
 personal data. The plugin does not invoke the gate or enforce its result before
-release unless the local MCP dashboard tool is available and called. The tool
-does not force invocation or block the host's final answer. Non-bypassable
-enforcement requires host integration that validates the receipt and binds it
-to the answer being released.
+release. Non-bypassable enforcement requires host integration that validates
+the receipt and binds it to the answer being released.
 
-## Validated consultation dashboard
+## Consultation dashboard
 
-The plugin includes a local read-only MCP tool, `render_consultation_dashboard`,
-and an MCP App UI for showing the validated dashboard as status cards and
-scoped progress indicators. The stdio server runs on the user's machine; it
-makes no network requests and keeps request data in temporary memory. Give it
-only the privacy-minimised route receipt and referenced generalized research
-JSON, never applicant narrative or dossier contents. The tool reuses the
-existing receipt gate, C27 registry, C3 module
-validator and research validators, and returns a versioned view model plus a
-Markdown fallback. It cannot ensure the model calls the tool or block a host
-response if the call is omitted. See
-`skills/eudirective-core/references/consultation-dashboard-runtime-assessment.md`
-for the supported runtime matrix and remaining host limits, and
-`skills/eudirective-core/references/consultation-dashboard-live-test-plan.md`
-for the deferred installed-client verification plan.
-The local host must use a Python interpreter with `jsonschema` installed; if it
-is missing, install the declared dependency with
-`python3 -m pip install -r requirements-runtime.txt` in that interpreter's
-environment.
+The full dashboard is written in the assistant's ordinary Markdown response.
+It uses readable headings and separated status cards to show what was reviewed,
+what actually ran, which modules were used now or earlier in the chat, and what
+remains missing. It does not require an MCP tool, custom UI, or hosted service.
+Source and module use remain model-reported, and the skill cannot force the
+board to appear or block an answer from release. See
+`skills/eudirective-core/references/consultation-dashboard-examples.md` for the
+display format and `skills/eudirective-core/references/consultation-dashboard-live-test-plan.md`
+for a deferred manual review plan.
 
 ## Personal installation
 
