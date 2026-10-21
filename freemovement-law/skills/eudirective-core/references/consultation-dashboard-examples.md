@@ -1,82 +1,81 @@
-# Consultation response examples
+# Consultation dashboard examples
 
-Formatting examples only. Bracketed text is placeholder content, not a case assessment, execution record, legal finding, or evaluation result. Keep the default answer concise and use ordinary Markdown.
+The board follows the legal answer and coverage note. These are illustrative
+formatting examples, not case assessments or execution records. Keep the
+default board compact; use `references/consultation-routing.md` for the expanded
+audit and full source/use ledger.
 
-## Concise default response
+## Compact dashboard
 
-After the required first-response notice(s) and skill-version line, lead with the requested answer. Use a short scope or urgency line only if it helps.
+Use this Markdown fallback when the client has no richer presentation
+capability. Render each line from the structured receipt; do not guess values.
 
-### Assessment
+## FreeMovement — Consultation Review
 
-[Answer the user's question directly. Separate what the law/source establishes from any disputed or unverified fact.]
+**Partial**
 
-### Practical next step
+- **This response:** 3 legal texts · model-reported
+- **Conversation total:** 5 legal texts · model-reported
+- **Library sections:** 2 · **Outstanding issues and checks:** 2
 
-[Give one or two proportionate steps, with any urgent deadline caveat.]
+**Execution** · 5/5 required or triggered operations recorded complete.
 
-### Coverage
+**Legal texts read**
 
-[Partial — name the missing fact, document, source or check and what it prevents assessing.]
+- **EU core · legislation · 1** `▰▰▰▰▰▰▰▰▰▰▰▰`
+  - Directive 2004/38/EC — Articles 2, 3 and 5 (currentness not verified)
+- **Spain · official guidance · 2** `▰▰▰▰▰▰▰▰▰▰▰▰`
+  - [Official source title] — section 8
+  - [Official source title] — application procedure
 
-**Modules:** [When a jurisdiction, proceeding/stage, material fact, source review, module availability/conformance or execution changes, name the relevant modules used for this answer, those used earlier in this chat, and relevant ones not used. Give the reason/effect only when an absence limits the answer.]
+**Still missing — material issues**
 
-For a narrow answer with no material open issue, the coverage note can be one sentence. Do not add a technical board just to display statuses that did not change.
+- Receipt not inspected; formal lodging and the processing-clock start remain unverified.
+- Current national urgent-remedy procedure not checked; the available time-sensitive route remains uncertain.
 
-## Expanded audit, when requested
+**Relevant modules**
 
-Keep one issue record per proceeding and distinguish issue assessment from execution evidence.
+- `eudirective-core` — used this response; used earlier in this chat; available; C3 not applicable.
+- `eudirective-ms-spain` — used this response; not used earlier in this chat; available; C3 not checked.
+- `eudirective-ac-turkiye` — not used this response or earlier; available; not applicable to the stated role.
 
-### Visa application
+*Counts and module-use states are model-reported unless a runtime evidence event is shown.*
 
-- **Formal lodging and receipt**
-  - **Disposition:** Answered conditionally.
-  - **C27:** Partly reviewed · model review. `lifecycle.lodgement_confirmed`; `lifecycle.receipt_evidence`.
-  - **Finding:** The user's account indicates a submission attempt.
-  - **Missing / effect:** The receipt has not been inspected, so formal lodging and the date that starts the processing clock remain unverified.
+The source bars compare the source groups displayed for this response; they do
+not represent the proportion of a library reviewed. A candidate or unaccepted
+source remains counted if it was actually consulted, with its acceptance state
+shown beside the source. An external official text is shown in its own group,
+not as a bundled-library section. Keep all pinpoints in the expanded audit if
+the compact line must be shortened.
 
-### Execution board
+For a C3-validated module pair, the receipt's `module_id` and `role` must use
+the exact manifest ID and canonical supported-role token. Optional
+`display_name` and `role_label` fields keep those validated values while
+showing familiar plugin and role names in the dashboard.
 
-#### Review and screening
+When source-use tracking is unavailable, show `unknown` instead of a zero and
+state that any listed sources are only the incomplete recorded subset. A
+source identified but not read or cited from memory is not included in the
+consulted count; show these separately if material. A direct explicit
+invocation unrelated to legal consultation uses only:
 
-- **Applicant issue review — Performed.**
-  - **Applies to:** [proceeding and question].
-  - **Result:** [brief account of the model-led review].
-  - **Evidence:** Conversation record; no script output.
+## FreeMovement — Consultation Review
 
-- **Attack-angle screen — Performed.**
-  - **Applies to:** [factually indicated risks].
-  - **Result:** [brief result, separate from C27 checks].
-  - **Evidence:** Model-led review; no script output.
+**Not verified** · No case assessment was performed.
 
-#### Source retrieval
+## Expanded audit
 
-- **Official-source check — Partly performed.**
-  - **Applies to:** [legal issue and responsible source owner].
-  - **Result:** [what reviewed source text establishes].
-  - **Evidence:** [actual source reference].
-  - **Missing / effect:** [name an unchecked national source or retrieval step and its effect].
-  - **Operation:** `[exact_operation_id]` · output `[actual reference or none]`.
+When requested, include one issue record per proceeding with its disposition,
+exact C27 IDs/status/method/evidence, missing evidence and effect. Follow this
+with a separate execution board for model-led review, retrieval, engines and
+validators. Name each operation ID and report `not checked`, `unavailable`,
+`partial`, or `blocked` when appropriate. Include every source title and
+consulted pinpoint; separate this response from earlier conversation use,
+identified-not-read items, memory citations and external official sources.
+Finish with module use and C3 conformance evidence. Never present source-pack
+availability, a read instruction, or a module name as proof that it was used.
 
-#### Validators and scripts
-
-- **C27 deterministic case-state validator — Unavailable.**
-  - **Applies to:** [selected case-state checks].
-  - **Reason / effect:** It does not accept real applicant narratives, so no case-specific script result is available.
-  - **Operation:** `c27_deterministic_case_state_validator` · output `none`.
-
-### Module use in this answer and current chat
-
-- **[Member State] — deciding-law role**
-  - **Use:** Source content reviewed for this answer; not used earlier in this chat.
-  - **Availability:** Available.
-  - **C3 conformance:** [result and evidence, or “not checked”].
-
-- **[Applicant country] — local-operations role**
-  - **Use:** Relevant, but not consulted in this answer or earlier in this chat.
-  - **Availability:** [available / not installed].
-  - **C3 conformance:** [result and evidence, or “not checked”].
-  - **Effect:** [local question that remains open].
-
-**Coverage — partial.** [Name each material open check or operation and how it limits the answer.]
-
-**Assurance:** This is a model-led, self-reported audit. The plugin has no host-validated answer-release gate.
+**Assurance:** the package's receipts and dashboard are model-declared unless
+the record shows runtime evidence. The local validator can check declared
+records and bind an answer artifact, but this plugin does not call it
+automatically and no host-enforced release gate is established.

@@ -1,5 +1,23 @@
 # Release and version policy
 
+## Plugin v0.54.0 / core v0.53.0 invocation-aware consultation dashboard
+
+The compatible core minor adds explicit-invocation dashboard requirements and
+a source-use ledger resolved against the existing source retrieval index and
+manifests. The compact board reports response and conversation counts, source
+groups and pinpoints, outstanding issues, execution status, and relevant module
+use now versus earlier in the chat. The receipt validator rejects duplicate
+logical texts, unsupported library identities/categories, inconsistent issue
+summaries and unverified C3 conformance claims. The local release wrapper binds
+the rendered dashboard to the exact answer bytes, but the plugin does not
+invoke it automatically and there is no host release gate. Core advances from
+`0.52.0` to `0.53.0`; plugin advances from `0.53.0` to `0.54.0`.
+
+Offline validation includes dashboard unit/receipt cases and existing route
+gate tests. The hosted ChatGPT invocation/rendering checks are documented in
+`references/consultation-dashboard-live-test-plan.md` and are not executed in
+the local development session.
+
 ## Plugin v0.53.0 / core v0.52.0 issue-led routing and concise response default
 
 This compatible core minor adds a deterministic selector from declared,

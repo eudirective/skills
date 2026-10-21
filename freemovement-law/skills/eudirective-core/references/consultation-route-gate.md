@@ -8,22 +8,30 @@ a release barrier.
 
 ## Receipt boundary
 
-The input uses `references/contracts/consultation-route-receipt.schema.json`.
-It records classification states, workflow IDs, C27 check IDs/statuses, reason
-codes, and generated opaque references (`r_` followed by 12–32 lowercase hex
-characters). It also carries constrained relative paths and digests needed to
-run local validators. Keep actual jurisdictions, proceeding facts, legal
+The input uses `references/contracts/consultation-route-receipt.schema.json`
+(0.2.0 adds invocation, source-use and dashboard records; existing 0.1.0
+receipts retain their legacy validation). A 0.2.0 explicit invocation or
+dashboard request requires a dashboard. It records classification states,
+workflow IDs, C27 check IDs/statuses, reason codes, and generated opaque
+references (`r_` followed by 12–32 lowercase hex characters). It also carries
+constrained relative paths and digests needed to run local validators. Keep actual jurisdictions, proceeding facts, legal
 questions, case narratives, identities, dates, and document contents in the
 conversation, not in the receipt. The receipt can record that a classification
 is `recorded`, `unknown`, or `not_applicable` without copying its value.
+
+Free-text receipt fields such as issue titles, missing/effect explanations,
+operation reasons and source-read notes can accidentally contain personal or
+identifying details. Generalize them and keep case facts in the conversation.
+The validator does not detect or remove personal data from those fields.
 
 Research artifact paths in the receipt are relative to the receipt's directory
 and must remain inside it. They must identify only generalized,
 non-identifying source-research plans and bundles. Module manifest/export paths
 are relative to the installed plugin package. The gate reads these artifacts
 and emits a JSON summary; it does not write or transmit them. It does not scan
-filenames or artifact contents for personal or identifying information, so the
-privacy restriction is an operator requirement rather than an enforced check.
+filenames, artifact contents or free-text receipt fields for personal or
+identifying information, so the privacy restriction is an operator requirement
+rather than an enforced check.
 
 ## Checks performed
 
@@ -59,6 +67,22 @@ privacy restriction is an operator requirement rather than an enforced check.
   `source_missing` and `fact_missing` dispositions remain open for a
   comprehensive claim. This is additive: older 0.1 receipts without `issues`
   retain their prior validation behavior.
+- For 0.2.0, resolves bundled source identity, section, category, and acceptance
+  metadata from the existing retrieval index/manifests; calculates response
+  and conversation totals from the unique logical-source ledger; checks read
+  versus unread/memory states, pinpoints, currentness labels and evidence
+  references; checks that dashboard issue summaries match unresolved declared
+  issue dispositions; and checks module-use record uniqueness and any claimed
+  C3 conformance against validator output, including the exact manifest
+  `module_id` and canonical supported `role`. Optional `display_name` and
+  `role_label` fields provide readable dashboard labels without changing the
+  validated identity. `unavailable` tracking displays an
+  unknown count, not zero. These are structural checks of self-reported
+  consultation/module use, not proof that a source was read or a module used.
+- Returns a deterministic Markdown dashboard preview. For an explicit local
+  answer binding, `consultation_release_gate.py` requires that exact preview at
+  the end of the answer bytes before preparing or releasing the bound artifact.
+  This is an optional local wrapper, not a host release gate.
 
 Run it locally with:
 
