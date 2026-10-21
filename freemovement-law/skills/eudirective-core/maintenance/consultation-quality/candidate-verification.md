@@ -1,5 +1,40 @@
 # Consultation quality candidate verification
 
+## Current candidate verification — 2026-10-21
+
+**Status:** Dashboard implementation and local structural checks verified;
+hosted consultation behavior not verified.
+**Candidate code commit:** `fc00471917f11fee77d06e9df5b1e82f66021e82`
+**Base:** `8b480b9aad68ae9d47ae0628a2ad33a2370686e3` (`origin/main`)
+**Branch:** `codex/source-ledger-catalog-fix-20261021`
+**Plugin/core:** `0.54.2` / `0.53.2`
+
+The source taxonomy now places the canonical mission-directory and publisher
+documentation records outside legal-text totals; canonical national-act,
+case-law and Commission-notice records have expected categories. Unknown source
+types remain unclassified references. The route gate rejects
+`runtime_recorded` source claims until a host-authenticated event exists. The
+compact renderer bounds source, gap and module details with explicit overflow
+counts; the receipt retains the complete records for an expanded audit.
+
+Checks run against this candidate:
+
+- Dashboard receipt/render tests: 45/45 passed.
+- Route-gate tests: 16/16 passed.
+- Issue-selection tests: 15/15 passed.
+- Version-manifest verification, Python compilation, JSON parsing, and
+  `git diff --check`: passed.
+- C27 checklist: 301 registered checks.
+- Source-library manifests and source texts were not edited.
+- Hosted ChatGPT tests were not run; the six-case live test plan remains the
+  post-install acceptance procedure. No claim of host-enforced release gating
+  is made.
+
+This local verification record predates opening the PR and remote CI; those
+results must be recorded from GitHub separately.
+
+## Previous candidate record — superseded
+
 **Status:** Implementation verified; consultation behavior not verified.
 **Candidate code commit:** `f7ca9f9a66f43dfbc2ea9873bad72f45d3996c16` on `codex/freemovement-consultation-quality`.
 **Base:** `343a7464d5574d3c2957f1817dedcf70da6135ce`.
