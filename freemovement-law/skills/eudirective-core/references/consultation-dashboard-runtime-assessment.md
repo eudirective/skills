@@ -54,7 +54,7 @@ research artifacts.
 | --- | --- | --- |
 | The package declares a supported local plugin entrypoint | Root `mcp.json`, plugin manifests, OpenAI package and desktop-only plugin docs | Supported package shape; target-client discovery remains unverified |
 | The repository installs or publishes the candidate to ChatGPT | `.agents/plugins/marketplace.json` and `.github/workflows/verify-freemovement-versions.yml` | Marketplace entry is local-source configuration; CI does not publish or install the plugin |
-| The server protocol path works | `test_consultation_dashboard_mcp.py` synthetic stdio round-trip and resource/tool tests | Passed locally; not an installed-host test |
+| The packaged server entrypoint works | `test_consultation_dashboard_mcp.py` resolves `${PLUGIN_ROOT}` from `mcp.json` and starts the configured stdio server; an extracted-archive smoke test also used a synthetic receipt | Passed locally; proves package launch and response shape, not installation into ChatGPT |
 | The candidate tool is installed in this maintenance session | Current tool registry lookup for `render_consultation_dashboard` | Not exposed; this session cannot provide installed-candidate invocation evidence |
 | View model and renderer are deterministic and validated | Versioned JSON schema, shared route gate, deterministic-output and malformed-input tests | Passed locally |
 | The UI structure includes accessibility and fallback behavior | Static accessibility assertions and source inspection | Passed statically; no target-client visual observation |

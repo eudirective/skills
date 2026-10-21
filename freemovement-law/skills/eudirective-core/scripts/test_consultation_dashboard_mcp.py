@@ -10,6 +10,7 @@ import tempfile
 import unittest
 
 HERE = Path(__file__).resolve().parent
+PLUGIN_ROOT = HERE.parents[2]
 sys.path.insert(0, str(HERE))
 
 from consultation_dashboard_mcp import (  # noqa: E402
@@ -182,8 +183,14 @@ class ConsultationDashboardMcpTests(unittest.TestCase):
                 "arguments": {"receipt_json": json.dumps(make_route(), sort_keys=True)},
             }},
         ]
+        manifest = json.loads((PLUGIN_ROOT / "mcp.json").read_text(encoding="utf-8"))
+        server = manifest["mcpServers"]["freemovement-dashboard"]
+        args = [argument.replace("${PLUGIN_ROOT}", str(PLUGIN_ROOT))
+                for argument in server["args"]]
+        cwd = server.get("cwd", "").replace("${PLUGIN_ROOT}", str(PLUGIN_ROOT))
+        self.assertTrue(Path(args[0]).is_file())
         process = subprocess.run(
-            [sys.executable, str(HERE / "consultation_dashboard_mcp.py")],
+            [server["command"], *args], cwd=cwd,
             input="\n".join(json.dumps(item) for item in request_lines) + "\n",
             capture_output=True, text=True, check=False,
         )
