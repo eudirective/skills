@@ -1,6 +1,6 @@
 # Consultation quality workflow
 
-This is a model-led review sequence for ordinary FreeMovement consultations. Its stages improve issue coverage and answer traceability; they are not independent agents, deterministic execution, legal certification, or a host release gate. Keep real applicant facts in the conversation and outside synthetic-only scripts.
+This is a model-led review sequence for ordinary freemovement-law consultations. Its stages improve issue coverage and answer traceability; they are not independent agents, deterministic execution, legal certification, or a host release gate. Keep real applicant facts in the conversation and outside synthetic-only scripts.
 
 ## A. Discover issues before selecting checks
 

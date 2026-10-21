@@ -169,7 +169,7 @@ def validate_research(plan_path: Path, bundle_path: Path):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Check a FreeMovement research plan/evidence bundle pair")
+    parser = argparse.ArgumentParser(description="Check a freemovement-law research plan/evidence bundle pair")
     parser.add_argument("--plan", required=True, type=Path)
     parser.add_argument("--bundle", required=True, type=Path)
     parser.add_argument("--require-complete", action="store_true", help="return exit code 3 unless all research tasks are complete or not applicable")

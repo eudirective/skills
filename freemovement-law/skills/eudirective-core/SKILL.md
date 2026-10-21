@@ -7,9 +7,9 @@ description: "use when a person requests read-only eu free-movement/family-visa 
 
 ## First response: disclaimer and use check
 
-On the first user-visible response in each conversation where any FreeMovement skill is invoked, begin with this notice before substantive analysis:
+On the first user-visible response in each conversation where any freemovement-law skill is invoked, begin with this notice before substantive analysis:
 
-> Disclaimer: FreeMovement provides informational, source-grounded visa guidance, not legal representation or a guaranteed outcome. Verify current law and important deadlines with official sources or qualified counsel.
+> Disclaimer: freemovement-law provides informational, source-grounded visa guidance, not legal representation or a guaranteed outcome. Verify current law and important deadlines with official sources or qualified counsel.
 
 Apply this use check:
 - Treat use as non-personal only when the prompt explicitly indicates professional or organizational use for an employer, business, organization, client, customer, or other third party; paid services; or deploying the plugin for others.
@@ -18,7 +18,7 @@ Apply this use check:
 - For clearly personal, ordinary personal-use, or unspecified-use queries, do not mention licensing or the email address. Do not infer non-personal use from the legal subject, the user's job title, or help with a family member's personal case. Do not imply a license is required without a clear non-personal-use signal.
 - If use is genuinely ambiguous and distinguishing it is necessary to answer the request, ask one short, neutral clarification. Do not ask only to determine licensing when the request can be handled as personal use.
 - Display the notice once per conversation; repeat it only if the use context materially changes. Do not email anyone or claim to know the user's licensing status.
-- This is a skill-level instruction for the first visible response when a FreeMovement skill is invoked. It does not establish host-level chat-start behavior or guarantee that the notice appears before a skill is invoked.
+- This is a skill-level instruction for the first visible response when a freemovement-law skill is invoked. It does not establish host-level chat-start behavior or guarantee that the notice appears before a skill is invoked.
 
 ## C27 proceeding, disclosure, and response-coverage reconciliation (read-only)
 
@@ -28,10 +28,10 @@ Give the substantive answer priority. Use the concise response pattern in `refer
 
 ## First-invocation GitHub version parity
 
-Before substantive work, on the first FreeMovement skill invocation in this conversation, read `eudirective-core/references/session-version-check.md` and perform its read-only once-per-conversation version comparison. On mismatch, remind the user to check for and manually install an available update; state that this check does not update the plugin. Report only affected components and exact installed/GitHub values. If the check is unsuccessful, explain that update availability could not be confirmed. Do not report a mismatch-free check. Continue the requested work regardless of the result. Skip additional checks in the same conversation unless expressly requested; if this skill is not the core, load the core's referenced instructions first. This checks package versions only, not legal-source validity.
+Before substantive work, on the first freemovement-law skill invocation in this conversation, read `eudirective-core/references/session-version-check.md` and perform its read-only once-per-conversation version comparison. On mismatch, remind the user to check for and manually install an available update; state that this check does not update the plugin. Report only affected components and exact installed/GitHub values. If the check is unsuccessful, explain that update availability could not be confirmed. Do not report a mismatch-free check. Continue the requested work regardless of the result. Skip additional checks in the same conversation unless expressly requested; if this skill is not the core, load the core's referenced instructions first. This checks package versions only, not legal-source validity.
 
 ## Version and Status
-- Current version: `0.55.0`
+- Current version: `0.55.1`
 - Last updated: `2026-10-21`
 - Status: read-only applicant-facing guidance for user-provided real or fictional accounts; controlled scripts still restrict private-data intake and external actions.
 - Inter-skill contract: `0.2.0` (C3 development freeze; not portfolio v1.0).
@@ -45,16 +45,20 @@ For every visible response or report produced while using this skill, announce t
 
 On the first response of a conversation, place this after the required first-response notice above:
 ```text
-Skill: eudirective-core v0.55.0
+Skill: eudirective-core v0.55.1
 ```
 
 ## Ordinary-consultation routing (model-led)
 
 Before substantive ordinary applicant guidance, follow `references/consultation-quality-workflow.md` and `references/consultation-routing.md`. Classify the request, discover issues before selecting checks, use `references/consultation-issue-routing.json` with C27's existing registry, and record the evidence and disposition for every material issue. Apply C3's existing family/jurisdiction/role/destination semantics; use `research_gate.py` and `issue_source_preflight.py` for their existing purposes. Run the required model-led attack-angle screen separately from C27's adapted-stratagem checks. Never claim that a script ran on real case facts or that a selected check was thereby assessed. Use the concise default response pattern; provide the exact route and execution board when the user requests an audit.
 
-For every explicit FreeMovement invocation, show the full consultation dashboard after the substantive answer. Refresh it whenever the user asks or a material routing variable changes, including jurisdiction roles, proceeding/stage, legal question, urgency, requested output, issue/check selection, source use, module use, or execution. Do not make the full board opt-in or omit recorded checks, operations, sources, gaps, or module rows for compactness. Treat an explicit trigger as established only by a host signal or visible plugin-selection marker; a mere mention of FreeMovement is not an invocation. If the signal is unavailable, say `unknown`. For a direct invocation unrelated to legal consultation, show a minimal board stating that no case assessment was performed. Use the native Markdown layout in `references/consultation-dashboard-examples.md`; never invent counts, execution, currentness, or module use.
+For every explicit freemovement-law invocation, show the full consultation dashboard after the substantive answer. Refresh it whenever the user asks or a material routing variable changes, including jurisdiction roles, proceeding/stage, legal question, urgency, requested output, issue/check selection, source use, module use, or execution. Do not make the full board opt-in or omit recorded checks, operations, sources, gaps, or module rows for compactness. Treat an explicit trigger as established only by a host signal or visible plugin-selection marker; a mere mention of freemovement-law is not an invocation. If the signal is unavailable, say `unknown`. For a direct invocation unrelated to legal consultation, show a minimal board stating that no case assessment was performed. Use the native Markdown layout in `references/consultation-dashboard-examples.md`; never invent counts, execution, currentness, or module use.
 
-Render the board directly in the assistant's ordinary Markdown response. Use clear section headings and separated status cards; do not use wide tables, pipe-delimited rows, raw HTML, or fenced code blocks for the board. Put a plain-language status first and any exact C27 or operation ID second. For every partial, unavailable, or not-run item, name what is missing and explain its effect. Keep the substantive answer before the board.
+Render the board directly in the assistant's ordinary Markdown response. Make it read like a compact review board: a clear case/review title and jurisdiction/proceeding subtitle; an overall status callout; a small three-column metric row; an issue-status distribution; readable issue cards; a separate execution/verification section; then source, module and provenance details. Keep labels in plain language and put exact C27 or operation IDs below them. Use only one compact three-column Markdown table for the metrics; do not use wide tables, raw HTML, or fenced code blocks. If the client renders that table poorly or the answer is likely to be read on a narrow screen, replace it with three short stacked metric lines. Use native Markdown emphasis, headings, blockquotes and status icons; do not claim custom colors, CSS, interactive cards, or a separate graphical component.
+
+Derive the metric counts only from the material issue rows and recorded dispositions for the current response. When every recorded issue has a disposition, label the first metric **Issues reviewed**; count supported answers separately from partial/open answers, and show out-of-scope issues in the legend. If issue tracking or any disposition is incomplete, show the counts as `unknown`/`not recorded`; do not fill gaps with zero. A one-symbol-per-issue status bar may summarize these counts when every issue has a recorded disposition and there are at most 20 issues. Show exact counts and percentages of recorded issue outcomes; label percentages as a status distribution, not a legal-completeness score or proof that all relevant issues were found. Above 20 issues, show exact counts and disposition percentages, including out-of-scope, without a long symbol bar. The summary never replaces the overall coverage label or outstanding-check details.
+
+For each issue card, show its plain-language conclusion/status, supporting evidence or source basis, selected C27 IDs/status/method, and—when partial, open, unavailable or not assessed—the exact missing item and its effect. Keep execution cards separate from issue conclusions. Show operations and validators with their actual status, evidence/result and reason; distinguish model-reported review from an observed tool/script result. Preserve every required record, module-use row, source ledger row and provenance count even when the top summary is short. Keep the substantive answer before the board.
 
 Show the selected C27 checks and the required, triggered, and not-triggered operations that matter to this response. Distinguish model-led review, source review, and an actually executed script/tool. Say an operation ran only when the current chat contains an observed execution result; reading instructions, naming an engine, or reasoning about its purpose is not execution. Real applicant facts remain in the conversation and must not be sent to synthetic-only case scripts. The local route-receipt and release-binding scripts are optional structural tools for maintainers; ordinary ChatGPT responses do not invoke them automatically. Do not claim that a receipt, board, source read, module selection, or final answer was independently validated unless a real validator or trusted host event produced that result. Skill instructions cannot force the host to show the board or block answer release. See `references/consultation-dashboard-runtime-assessment.md` for the actual capability boundary and `references/consultation-dashboard-live-test-plan.md` for the deferred manual display review.
 
