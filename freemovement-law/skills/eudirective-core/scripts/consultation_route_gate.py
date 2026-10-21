@@ -442,6 +442,7 @@ def validate_route(path: Path) -> dict:
         "dashboard_required": dashboard_report["required"],
         "dashboard_preview": dashboard_preview,
         "source_metrics": dashboard_report["source_metrics"],
+        "source_origin_metrics": dashboard_report.get("source_origin_metrics"),
         "assurance": "model_declared_plan_and_references_only; issue_signal_routing_is_checked_only_for_declared_issues; omitted_issues_conditional_trigger_semantics_and_evidence_truth_not_verified",
         "host_release_enforcement": "requires_host_to_call_this_gate_and_enforce_its_result",
     }

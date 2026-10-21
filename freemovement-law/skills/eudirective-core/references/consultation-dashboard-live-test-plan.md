@@ -40,6 +40,12 @@ In a fresh chat, ask what a tool named FreeMovement is for without selecting it.
 
 **Check:** a mere mention does not trigger an applicant-consultation dashboard.
 
+### F. Plugin library and web-search source counts
+
+Use a fictional consultation with one relevant source in the plugin library and one official source found through web search. If practical, include a web-search result that also matches a bundled source record.
+
+**Check:** the board separately shows the number of identified source records, matches to records in the plugin's bundled library, and web-search discoveries for this answer and the conversation. It marks the counts as model-reported, says discovery and library membership can overlap, and does not treat an external URL as proof of web search. An unrecorded discovery method appears as unknown rather than zero. Identified-but-not-read sources count as identified but not as consulted.
+
 ## Review checklist
 
 - Are the headings and status cards easy to scan in the target ChatGPT client?
@@ -47,6 +53,7 @@ In a fresh chat, ask what a tool named FreeMovement is for without selecting it.
 - Are modules clearly grouped as used now, used earlier, or not used?
 - Does each partial, unavailable, or not-run item name the missing input and its effect?
 - Are model-led review, actual source consultation, and script execution accurately distinguished?
+- Are bundled-library matches separated from web-search discoveries, with overlap and unknown provenance handled accurately?
 - Is the substantive answer still easy to find before the board?
 
 Record pass, fail, or not observable for each item. A successful observation is a sample of model behavior; it does not make the skill instruction non-bypassable.

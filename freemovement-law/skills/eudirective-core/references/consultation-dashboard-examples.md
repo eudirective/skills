@@ -19,6 +19,11 @@ Status text is authoritative. A small icon may help scanning, but it never repla
 - **Urgency:** no verified deadline; appointment delay may affect timing.
 - **Requested output:** explain the applicable route and practical next steps.
 - **Coverage:** partial. Receipt classification and the authority's written position remain unknown.
+- **Sources identified in this answer:** 2 distinct records (model-reported).
+  - Matched to records in the plugin's bundled source library: 1.
+  - Found through web search: 1.
+- **Sources identified across this chat:** 2 distinct records; 1 plugin-library match and 1 web-search discovery.
+- Counts cover the source records listed in the board, not every raw search-result hit. The separate library and discovery counts can overlap if a web search returns a source also bundled in the plugin. Identified-but-not-read sources count as identified, not consulted.
 
 ### Work and execution
 
@@ -90,12 +95,14 @@ Status text is authoritative. A small icon may help scanning, but it never repla
 
 #### Directive 2004/38/EC — EU law
 
+- **Origin/discovery:** matched to a record in the plugin's bundled source library; identified through `plugin_library` in this answer and earlier in the chat.
 - **This answer:** consulted; Articles 2, 3 and 5.
 - **Earlier in this chat:** consulted.
 - **Edition/currentness:** bundled consolidated edition; live currentness not checked.
 
 #### Spanish official procedure
 
+- **Origin/discovery:** external official source; found through `web_search` in this answer and carried from `prior_conversation` earlier in the chat.
 - **This answer:** consulted; section 8.
 - **Earlier in this chat:** identified but not read.
 - **Edition/currentness:** edition not recorded; currentness not verified.

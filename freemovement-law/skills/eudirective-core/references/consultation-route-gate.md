@@ -12,8 +12,9 @@ ordinary ChatGPT output.
 ## Receipt boundary
 
 The input uses `references/contracts/consultation-route-receipt.schema.json`
-(0.2.0 adds invocation, source-use and dashboard records; existing 0.1.0
-receipts retain their legacy validation). A 0.2.0 explicit invocation,
+(0.2.0 adds invocation, source-use and dashboard records; 0.3.0 adds response
+and conversation source-discovery methods; existing 0.1.0 and 0.2.0 receipts
+retain their compatible validation). A 0.2.0 or 0.3.0 explicit invocation,
 dashboard request, or `material_change=true` requires a dashboard. It records
 classification states, workflow IDs, C27 check IDs/statuses, reason codes, and
 generated opaque references (`r_` followed by 12–32 lowercase hex characters).
@@ -71,7 +72,7 @@ rather than an enforced check.
   `source_missing` and `fact_missing` dispositions remain open for a
   comprehensive claim. This is additive: older 0.1 receipts without `issues`
   retain their prior validation behavior.
-- For 0.2.0, resolves bundled source identity, section, category, and acceptance
+- For 0.2.0 and later, resolves bundled source identity, section, category, and acceptance
   metadata from the existing retrieval index/manifests; calculates response
   and conversation totals from the unique logical-source ledger; checks read
   versus unread/memory states, pinpoints, currentness labels and evidence
@@ -83,6 +84,12 @@ rather than an enforced check.
   validated identity. `unavailable` tracking displays an
   unknown count, not zero. These are structural checks of self-reported
   consultation/module use, not proof that a source was read or a module used.
+- For 0.3.0, requires a discovery method for each source's current-response and
+  conversation records. The dashboard separately counts matches to the
+  bundled plugin library and sources marked as found through web search. The
+  counts can overlap, and search provenance remains model-reported. Older
+  receipts without discovery fields display unknown search totals when that
+  provenance cannot be established.
 - The local gate rejects `runtime_recorded` source states. This package has no
   host-authenticated retrieval event contract, and hashing an arbitrary local
   artifact does not prove that a legal text was opened. A future host

@@ -1,5 +1,24 @@
 # Release and version policy
 
+# Plugin v0.56.0 / core v0.55.0 source-origin dashboard accounting
+
+The consultation board now reports distinct source records identified in the
+current response and across the chat, matches to records in the plugin's
+bundled source library, and sources explicitly identified through web search.
+The receipt adds response and conversation discovery methods in schema v0.3.0.
+Library membership and discovery are separate counts and can overlap. Older
+receipts without discovery fields show search provenance as unknown rather than
+assuming that an external official source came from search. All counts remain
+model-reported; no host-authenticated retrieval or release gate was added.
+
+The live ChatGPT display review is deferred. Use the source-accounting case in
+`references/consultation-dashboard-live-test-plan.md` after the package is
+installed. Local regression tests and live consultation tests were not run in
+this maintenance session.
+
+Core advances from `0.54.0` to `0.55.0`; plugin advances from `0.55.0` to
+`0.56.0`.
+
 # Plugin v0.55.0 / core v0.54.0 native Markdown consultation board
 
 The full consultation dashboard is presented directly in the assistant's

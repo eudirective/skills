@@ -31,7 +31,7 @@ Give the substantive answer priority. Use the concise response pattern in `refer
 Before substantive work, on the first FreeMovement skill invocation in this conversation, read `eudirective-core/references/session-version-check.md` and perform its read-only once-per-conversation version comparison. On mismatch, remind the user to check for and manually install an available update; state that this check does not update the plugin. Report only affected components and exact installed/GitHub values. If the check is unsuccessful, explain that update availability could not be confirmed. Do not report a mismatch-free check. Continue the requested work regardless of the result. Skip additional checks in the same conversation unless expressly requested; if this skill is not the core, load the core's referenced instructions first. This checks package versions only, not legal-source validity.
 
 ## Version and Status
-- Current version: `0.54.0`
+- Current version: `0.55.0`
 - Last updated: `2026-10-21`
 - Status: read-only applicant-facing guidance for user-provided real or fictional accounts; controlled scripts still restrict private-data intake and external actions.
 - Inter-skill contract: `0.2.0` (C3 development freeze; not portfolio v1.0).
@@ -45,7 +45,7 @@ For every visible response or report produced while using this skill, announce t
 
 On the first response of a conversation, place this after the required first-response notice above:
 ```text
-Skill: eudirective-core v0.54.0
+Skill: eudirective-core v0.55.0
 ```
 
 ## Ordinary-consultation routing (model-led)
@@ -61,6 +61,8 @@ Show the selected C27 checks and the required, triggered, and not-triggered oper
 ## Source use and currentness
 
 Use the plugin's eudirective-source-library skill to locate the externally maintained legal-source library bundled with this package. The source files, manifests, and country module notes are available beside that skill. This is a versioned package snapshot; it does not refresh itself after installation.
+
+For every identified source, record whether it matched a source record in the plugin's bundled library and how it was identified for this response and earlier in the chat. Distinguish `plugin_library`, `web_search`, `user_provided`, `prior_conversation`, `model_knowledge`, `other`, and `unknown`; do not infer web search from an external official URL. Show distinct source-record totals, plugin-library matches, and web-search discoveries separately. Counts cover the source records listed in the board, not every raw search-result hit. A search may find a source that is also bundled, so membership and discovery counts can overlap and must not be added together. Include identified-but-not-read sources in the identified total, but count only sources actually consulted as consulted. If tracking or discovery provenance is missing, show `unknown` rather than zero. These figures are model-reported and do not establish host-verified retrieval.
 
 For every source type, use the responsible official publisher: the law publisher for legislation, the court service for decisions, and the competent authority or official service for guidance, forms, mission instructions, procedures, remedies, complaints, and oversight. Prefer the latest government-published consolidation. Accept it as a usable official reference when the publisher's role, instrument identity, and consolidation status are clear and no concrete warning undermines reliance; these are practical judgment cues, not a technical checklist. If trust is unclear, offer the government legal-text website/service as a whole to the user for human review, including its authority/versioning information, the relevant text, and visible caveats. Do not require a full-site crawl. If no consolidation is usable, use the closest government-published version and state its language, publisher label, date/cutoff, and limits. A human-reviewed official link is enough for ordinary source use. Do not reconstruct every Gazette fragment or require API access, capture, hashes, conversion, or replay unless a retained copy or recurring monitor actually needs it. Check a specific later act or commencement only when it may affect the question. State the publisher and date/version checked, and distinguish a live check from the bundled package snapshot. If browsing or the relevant text is unavailable, state that currentness was not verified. Use country module notes only as scoped summaries, never as full authoritative text. See the shared [source edition and review policy](../eudirective-source-library/references/legal-text-edition-policy.md).
 
