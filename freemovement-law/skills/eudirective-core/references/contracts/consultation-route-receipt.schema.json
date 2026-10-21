@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Consultation route receipt 0.2.0",
+  "title": "Consultation route receipt 0.3.0",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -17,7 +17,7 @@
     "coverage_claim"
   ],
   "properties": {
-    "schema_version": { "enum": ["0.1.0", "0.2.0"] },
+    "schema_version": { "enum": ["0.1.0", "0.2.0", "0.3.0"] },
     "route_ref": { "$ref": "#/$defs/opaque_ref" },
     "request_kind": { "enum": ["applicant_guidance", "source_research", "no_case_assessment"] },
     "invocation": { "$ref": "#/$defs/invocation" },
@@ -85,7 +85,7 @@
   },
   "allOf": [
     {
-      "if": { "properties": { "schema_version": { "const": "0.2.0" } }, "required": ["schema_version"] },
+      "if": { "properties": { "schema_version": { "enum": ["0.2.0", "0.3.0"] } }, "required": ["schema_version"] },
       "then": {
         "required": ["invocation"],
         "allOf": [
@@ -118,6 +118,20 @@
             "then": { "required": ["dashboard"] }
           }
         ]
+      }
+    },
+    {
+      "if": { "properties": { "schema_version": { "const": "0.3.0" } }, "required": ["schema_version"] },
+      "then": {
+        "properties": {
+          "source_ledger": {
+            "properties": {
+              "sources": {
+                "items": { "required": ["response_discovery_method", "conversation_discovery_method"] }
+              }
+            }
+          }
+        }
       }
     }
   ],
@@ -201,6 +215,14 @@
         "library_state": { "enum": ["registered_record", "candidate_unaccepted", "source_note_only", "not_recorded", "not_applicable"] },
         "response_use": { "enum": ["consulted", "identified_not_read", "cited_from_memory", "not_referenced"] },
         "conversation_use": { "enum": ["consulted", "identified_not_read", "cited_from_memory", "not_referenced"] },
+        "response_discovery_method": {
+          "enum": ["plugin_library", "web_search", "user_provided", "prior_conversation", "model_knowledge", "other", "unknown", "not_applicable"],
+          "description": "How this source record was identified for the current response. Model-reported; not a host-authenticated retrieval event. Use not_applicable only when response_use is not_referenced."
+        },
+        "conversation_discovery_method": {
+          "enum": ["plugin_library", "web_search", "user_provided", "prior_conversation", "model_knowledge", "other", "unknown", "not_applicable"],
+          "description": "How this source record was identified earlier in the conversation. Model-reported; not a host-authenticated retrieval event. Use not_applicable only when conversation_use is not_referenced."
+        },
         "response_provenance": {
           "enum": ["runtime_recorded", "model_declared", "none"],
           "description": "The local route gate accepts model_declared or none. runtime_recorded is reserved for a host that validates its own authenticated read event; the plugin gate rejects that value."

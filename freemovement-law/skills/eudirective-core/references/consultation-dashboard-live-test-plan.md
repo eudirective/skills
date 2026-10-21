@@ -1,112 +1,59 @@
-# Hosted consultation dashboard test plan
+# Consultation dashboard live test plan
 
-**Status:** Not executed. This is a manual acceptance plan for ChatGPT after
-the updated plugin is installed. Do not run hosted live cases during local
-maintenance sessions. Offline checks cannot verify host invocation signals,
-visible plugin selection, UI rendering, or whether model instructions are
-followed in a hosted chat.
+**Status:** Not performed during maintenance. The board uses ordinary Markdown in a ChatGPT response. This plan is for a later manual visual review in a fresh chat; it does not require a hosted service, MCP tool, or real applicant data.
 
 ## Setup
 
-1. Install the released plugin version that contains the dashboard changes.
-2. Start fresh chats for each case below. Use fictional, non-sensitive facts;
-   do not upload applicant documents or real case details for this test.
-3. When a case says to invoke FreeMovement, select the plugin through the
-   ChatGPT interface. Do not test invocation detection by merely typing its
-   name into an ordinary prompt.
-4. Save the visible response and note whether the plugin was explicitly
-   selected, continued implicitly, or not selected. Do not send these notes to
-   the plugin as if they were host telemetry.
+1. Install or reload the plugin version containing the Markdown instructions.
+2. Start fresh chats and use fictional, non-sensitive facts. Do not upload applicant records.
+3. Select FreeMovement through the normal ChatGPT interface for the explicit-invocation cases. Record the client, plugin version, date, and visible response.
 
 ## Cases
 
-### A. Explicit legal consultation
+### A. Substantive consultation
 
-Select FreeMovement and ask:
+Ask a fictional EU-family visa question involving an EU citizen moving to another Member State with a spouse.
 
-> For a fictional example, what EU free-movement rule generally applies when an EU citizen moves to another Member State with a spouse?
+**Check:** the answer comes first, followed by a readable board. The board uses headings and separated status cards rather than a wide table or code block. It distinguishes model review from actual script/tool execution and states missing items and their effects.
 
-**Expected:** the answer leads with the requested explanation, then includes
-one full `FreeMovement — Consultation Review` dashboard. It lists every
-classification, operation, selected C27 check, issue, validator result, source
-ledger row, and relevant module. Source counts are labelled model-reported;
-this plugin has no host-authenticated source-read event. It states unknown
-rather than zero when read tracking is unavailable and gives each open item
-its missing detail and effect. It does not claim independently recorded
-retrieval.
+### B. Material follow-up
 
-### B. Repeated explicit invocation in one chat
+In the same chat, change a material fact such as the intended residence state or the procedural stage.
 
-In the same chat, select FreeMovement again and ask a materially different
-follow-up requiring source research.
+**Check:** the board refreshes to show the changed scope, newly relevant modules/checks, and any module use earlier in the chat. It does not reuse a stale board.
 
-**Expected:** a new full dashboard is present. “This response” is refreshed for
-the new answer. The conversation total deduplicates the same logical law while
-retaining all pinpoints. Earlier module use is separated from current-response
-module use. The answer does not reuse only the prior dashboard.
+### C. Partial or unavailable operation
 
-### C. Implicit continuation
+Use a fictional case where an important receipt, decision notice, or national procedure is missing.
 
-Continue in the chat with a short clarification question without selecting the
-plugin again.
+**Check:** each partial or unavailable row names what is missing and how that limits the assessment. A validator or engine is not called “run” merely because its instructions or registry were read.
 
-**Expected:** a dashboard is required if jurisdiction roles, proceeding/stage,
-legal question, urgency, requested output, issue/check selection, sources,
-module use, or execution materially changed. If it appears, its counts and use
-states must still be accurate; it must not claim a new explicit invocation.
+### D. Non-consultation request
 
-### D. Ordinary mention without invocation
+Select FreeMovement and ask for a summary of the plugin, explicitly saying not to assess a case.
 
-In a fresh chat, do not select FreeMovement. Ask a general question that merely
-mentions it, for example:
+**Check:** the response uses the minimal board and does not invent sources, issues, module use, or execution.
 
-> I saw a tool called FreeMovement. What kinds of questions is it intended to answer?
+### E. Ordinary mention without selection
 
-**Expected:** no mandatory consultation dashboard is triggered solely by the
-mention. Record whether the host activated a plugin for some other reason.
+In a fresh chat, ask what a tool named FreeMovement is for without selecting it.
 
-### E. Explicit dashboard request
+**Check:** a mere mention does not trigger an applicant-consultation dashboard.
 
-Without a new explicit plugin selection, ask in an ongoing FreeMovement chat:
+### F. Plugin library and web-search source counts
 
-> Please show the consultation dashboard and list any remaining coverage gaps.
+Use a fictional consultation with one relevant source in the plugin library and one official source found through web search. If practical, include a web-search result that also matches a bundled source record.
 
-**Expected:** a dashboard appears with each partial item naming what is
-missing and what it prevents assessing.
-
-### F. Explicit non-consultation invocation
-
-In a fresh chat, select FreeMovement and ask:
-
-> Summarize what this plugin is for; do not assess a case.
-
-**Expected:** the minimal dashboard says `Not verified · No case assessment was
-performed.` It does not invent source counts, issues, or module checks.
+**Check:** the board separately shows the number of identified source records, matches to records in the plugin's bundled library, and web-search discoveries for this answer and the conversation. It marks the counts as model-reported, says discovery and library membership can overlap, and does not treat an external URL as proof of web search. An unrecorded discovery method appears as unknown rather than zero. Identified-but-not-read sources count as identified but not as consulted.
 
 ## Review checklist
 
-- Was the plugin visibly selected for explicit cases, and was selection
-  distinguished from ordinary mention?
-- Did each explicit invocation receive a fresh board after the answer?
-- Was the board readable in the ChatGPT client, with no broken tables or
-  duplicated one-cell table rendering?
-- Were response and conversation totals separately labelled and deduplicated?
-- Did every source listed in the ledger include its title and pinpoint, and
-  agree with the cited/reviewed source in the answer?
-- Were candidate/unaccepted, external, memory-cited, identified-not-read and
-  currentness-unverified states represented accurately?
-- Did module use distinguish this response from earlier chat use, and did it
-  state a reason when a relevant module was not used or C3 conformance was not
-  checked?
-- Did partial items identify both the missing item and its effect?
-- Did the board show every declared source, check, issue, operation, validator
-  result, and relevant module without compact limits?
-- Did it include the validation result and receipt fingerprint, or explicitly
-  say validation was not run/unavailable?
-- Did any response claim script execution or host enforcement without visible
-  evidence?
+- Are the headings and status cards easy to scan in the target ChatGPT client?
+- Are status words readable without relying on color or emoji?
+- Are modules clearly grouped as used now, used earlier, or not used?
+- Does each partial, unavailable, or not-run item name the missing input and its effect?
+- Are model-led review, actual source consultation, and script execution accurately distinguished?
+- Are bundled-library matches separated from web-search discoveries, with overlap and unknown provenance handled accurately?
+- Is the substantive answer still easy to find before the board?
 
-Record pass, fail, or not observable for each item, with the plugin version,
-client and date. A successful hosted observation is still a behavioral sample,
-not a non-bypassable release guarantee. A future host/controller must consume
-and validate the same receipt before release to provide that guarantee.
+Record pass, fail, or not observable for each item. A successful observation is a sample of model behavior; it does not make the skill instruction non-bypassable.

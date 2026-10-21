@@ -1,134 +1,140 @@
 # Consultation dashboard
 
-Show a full board after every explicit invocation and whenever a material
-routing, source, module, or execution variable changes. The full board is the
-default; there is no compact version or request-only expanded audit. This
-example shows the headings and readable form. A real board includes every row
-present in its receipt, with no row limits.
+Show the full board after every explicit FreeMovement invocation, whenever the user asks for it, and whenever a material routing, source, module, or execution variable changes. Use the response's native Markdown. Do not use wide tables, pipe-delimited rows, raw HTML, or fenced code blocks for the board; they make the status display hard to scan in chat.
+
+Use the section headings below as visual groups. Each operation and selected C27 check gets its own short status card: a plain-language label first, the registered ID second, then the evidence, missing item, and effect. Keep every relevant row. Do not shrink the execution section into a single compact table.
+
+Status text is authoritative. A small icon may help scanning, but it never replaces the status word: `✅ Reviewed`, `🟡 Partial`, `⚪ Not checked`, `⛔ Unavailable`, or `➖ Not applicable`. Keep the answer itself first; the board follows it.
 
 ## Full consultation review
 
 ## FreeMovement — Consultation Review
 
-**Partial** · Requested coverage: partial
-
-### Invocation and validation
-
-- Invocation: explicit; basis: visible plugin selection.
-- Validation result: **valid partial route**.
-- Validator: `consultation_route_gate.py` v0.2.0.
-- Receipt fingerprint: `<SHA-256 fingerprint>`.
-- Outstanding validation items: 3.
-- The structural validator checks declared records. It does not authenticate
-  model-reported facts, source reads, legal reasoning, or omitted issues.
-- ChatGPT host release control: unavailable in this plugin. The local
-  controller can bind a receipt and answer only when a host calls it.
+> 🟡 **PARTIAL** — The advice addresses the main question. The receipt was not inspected, so the formal lodging date remains unresolved.
 
 ### At a glance
 
-- Assessment: partial; requested coverage: partial.
-- Legal texts this response: 2 (model-reported).
-- Conversation total: 4 (model-reported).
-- Source-library sections this response: 2.
-- Declared material issues: 1; outstanding checks and operations: 3.
+- **Jurisdictions:** EU law; Spain as the intended residence state; Türkiye as the application context.
+- **Proceedings:** family-member visa application; prospective residence-card procedure.
+- **Urgency:** no verified deadline; appointment delay may affect timing.
+- **Requested output:** explain the applicable route and practical next steps.
+- **Coverage:** partial. Receipt classification and the authority's written position remain unknown.
+- **Sources identified in this answer:** 2 distinct records (model-reported).
+  - Matched to records in the plugin's bundled source library: 1.
+  - Found through web search: 1.
+- **Sources identified across this chat:** 2 distinct records; 1 plugin-library match and 1 web-search discovery.
+- Counts cover the source records listed in the board, not every raw search-result hit. The separate library and discovery counts can overlap if a web search returns a source also bundled in the plugin. Identified-but-not-read sources count as identified, not consulted.
 
-### Task scope
+### Work and execution
 
-- **Jurisdiction roles:** recorded · conversation record.
-- **Proceedings and stages:** recorded · conversation record.
-- **Legal questions:** recorded · conversation record.
-- **Urgency:** recorded · conversation record.
-- **Requested output:** recorded · conversation record.
-- **Conditional workflow review:** reviewed · conversation record.
+#### ✅ Reviewed — Applicant guidance
 
-### Work performed and engine checks
+**Method:** model-led review of the reported facts against the cited official sources.
 
-4/5 required or triggered operations have completion records with acceptable evidence.
+**Evidence:** conversation record and the official source entries below.
 
-- **Route classification** (`route_classification`) — Required; completed. Evidence: conversation record.
-- **Applicant guidance** (`c23_guidance`) — Required; completed. Evidence: conversation record and official source records.
-- **C27 case-state checks** (`c27_reconciliation`) — Required; partial. Missing: receipt classification not inspected.
-- **Alternative-risk screening** (`attack_angle_screen`) — Required; completed. Evidence: conversation record.
-- **Country-to-case match** (`c3_case_geography_match`) — Triggered; unavailable. Reason: restricted to synthetic inputs. Effect: real-case module fit remains unverified.
-- **Research-plan validation** (`research_gate`) — Not triggered; not applicable. Reason: no material research task identified.
+#### 🟡 Partial — Case-state review
 
-The actual board lists every required, triggered, and not-triggered operation,
-including any required operation missing from the receipt.
+**Checks:** `lifecycle.lodgement_confirmed`, `lifecycle.receipt_evidence`.
 
-### C27 case-state checks
+**Evidence:** the applicant reported a stamped submission and online tracking.
 
-- **Visa application — `lifecycle.lodgement_confirmed`**
-  - Status and method: partial · model review. Reason: online tracking was reported; receipt classification was not inspected.
-  - Evidence: conversation record; sources: none recorded.
+**Missing:** the receipt itself was not inspected.
 
-Every selected C27 check appears with its exact ID, status, method, reason,
-evidence/source trace, and any `scope_exclusion`.
+**Effect:** formal lodging and the processing-clock start are unverified.
 
-### Material issues and open work
+#### ⚪ Not run — Deterministic C27 case validator
 
-- **Formal lodging and processing time:** disposition: answered conditionally.
-  Missing: the receipt was not inspected. Effect: the formal processing-clock
-  start remains unverified.
-- **Country-to-case match:** the real-case geography check is unsupported by
-  the synthetic-only controller. Effect: the selected country's module fit
-  remains unverified.
+**Reason:** its case scripts accept synthetic inputs; real applicant facts were not sent to them.
 
-List every declared material issue and every validator gap. For every partial
-or unavailable item, state what is missing and how it limits the assessment.
+**Effect:** this is a model-led C27 review, not a recorded Python-engine result.
 
-### Research and source coverage validation
+#### ⛔ Unavailable — C3 case-to-module match
 
-- Research plan and bundle: not supplied; no research result is claimed.
-- Module-pair validation: no module pair was submitted to C3.
-- Source-preflight validation: not run; explain the missing task if required.
+**Reason:** no approved real-case geography check is available in this consultation.
 
-### Source ledger
+**Effect:** the selected country-module fit remains unverified.
 
-- **Directive 2004/38/EC** — EU core · EU · EU law.
-  - Identity: source `eu:32004l0038`; logical record `eu:32004l0038`; source library.
-  - This answer: consulted; provenance model-declared. Earlier chat: consulted; provenance model-declared.
-  - Edition: consolidated edition; pinpoints: Articles 2, 3 and 5.
-  - Currentness: unknown; library status: registered record.
-- **Official national procedure** — Spain · ES · procedure.
-  - Identity: external official source; edition not recorded.
-  - This answer: consulted; provenance model-declared. Earlier chat: identified, not read.
-  - Pinpoint: section 8. Currentness: unknown; library status: not applicable.
+#### ➖ Not applicable — Research-artifact validator
 
-Show every ledger entry, including unread, memory-cited, and not-referenced
-sources. Use `unknown` when tracking is unavailable; never substitute zero.
+**Reason:** no structured research plan or evidence bundle was created.
 
-### Module use in this answer and chat
+### C27 case checks
 
-- **eudirective-core** — Consultation routing and EU/common legal analysis.
-  - This answer: used; earlier in chat: used earlier; available; C3 not applicable.
-  - Reason: core guidance used for this response.
-- **eudirective-ms-spain** — Spanish procedure.
-  - This answer: used; earlier in chat: not used earlier; available; C3 not checked.
-  - Reason: country-specific procedure reviewed; pair validation not run.
-- **eudirective-ac-turkiye** — Applicant-country documents.
-  - This answer: not used; earlier in chat: not used earlier; available; C3 not applicable.
-  - Reason: no Türkiye-side document issue was identified.
+#### 🟡 Partial — Visa application: formal lodging
 
-List every relevant module record, and explain when unavailable or unvalidated
-module information limits coverage.
+`lifecycle.lodgement_confirmed` · model review
 
-### What this board can verify
+**Evidence:** online tracking was reported.
 
-- It shows each source, selected C27 check, declared issue, module record, and
-  required or triggered operation present in the receipt.
-- Local validators check declared structure and selected artifacts. They do
-  not prove model-reported work or detect omitted issues and triggers.
-- A local controller can bind the exact answer and receipt when called by a
-  host. This plugin does not control ChatGPT's host release path.
+**Missing:** the submission receipt and its classification.
 
-## Non-consultation invocation
+**Effect:** the formal application date and processing-clock start remain uncertain.
 
-For a direct explicit invocation that does not request case assessment, use a
-minimal board:
+#### 🟡 Partial — Visa application: receipt evidence
+
+`lifecycle.receipt_evidence` · model review
+
+**Evidence:** a stamped submission was reported.
+
+**Missing:** a copy of the stamp or receipt was not reviewed.
+
+**Effect:** the report is recorded but not independently checked.
+
+### Other material issues
+
+#### 🟡 Partial — Authority's stated grounds
+
+**Evidence:** adverse comments were reported orally.
+
+**Missing:** no written decision or verified statement of grounds was provided.
+
+**Effect:** the authority's actual legal and factual position remains uncertain.
+
+### Sources
+
+#### Directive 2004/38/EC — EU law
+
+- **Origin/discovery:** matched to a record in the plugin's bundled source library; identified through `plugin_library` in this answer and earlier in the chat.
+- **This answer:** consulted; Articles 2, 3 and 5.
+- **Earlier in this chat:** consulted.
+- **Edition/currentness:** bundled consolidated edition; live currentness not checked.
+
+#### Spanish official procedure
+
+- **Origin/discovery:** external official source; found through `web_search` in this answer and carried from `prior_conversation` earlier in the chat.
+- **This answer:** consulted; section 8.
+- **Earlier in this chat:** identified but not read.
+- **Edition/currentness:** edition not recorded; currentness not verified.
+
+### Modules
+
+**Used in this answer**
+
+- **eudirective-core** — EU/common-law analysis and consultation routing.
+- **eudirective-ms-spain** — Spanish residence procedure. C3 pair validation was not run.
+
+**Used earlier in this chat, not in this answer**
+
+- **eudirective-ac-turkiye** — Türkiye-side document guidance was used earlier; no Türkiye document issue was reviewed in this answer.
+
+**Relevant but not used**
+
+- List each relevant module, its availability, and why it was not used. If the reason affects coverage, state the effect.
+
+### Coverage and execution limits
+
+- The statuses above describe model-led review unless a named tool or script is explicitly recorded as run with an observed result.
+- No deterministic C27 case script, C3 case-geography controller, or research-artifact validator ran on this consultation.
+- Source reading and module use are model-reported. A skill-level dashboard does not independently authenticate them or prevent an answer from being released without the board.
+- Every partial, unavailable, or not-run item names what is missing and how it limits the assessment. Use `unknown` when the missing detail itself is not known.
+
+## Minimal board when no case was assessed
 
 ## FreeMovement — Consultation Review
 
-**Not verified** · No case assessment was performed.
+> ⚪ **NOT VERIFIED** — No case assessment was performed.
 
-Invocation: explicit. Receipt validation: show the actual result, or state
-`not run/unavailable`. Do not invent source totals, issues, or module checks.
+- **Invocation:** explicit, if visibly established; otherwise `unknown`.
+- **Applicant guidance, C27 checks, sources, and country modules:** not assessed.
+- Do not invent issue counts, source totals, module use, or execution results.

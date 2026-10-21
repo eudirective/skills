@@ -20,6 +20,10 @@ class DashboardError(ValueError):
 
 READ_STATES = {"consulted", "identified_not_read", "cited_from_memory", "not_referenced"}
 READ_PROVENANCE = {"runtime_recorded", "model_declared", "none"}
+DISCOVERY_METHODS = {
+    "plugin_library", "web_search", "user_provided", "prior_conversation",
+    "model_knowledge", "other", "unknown", "not_applicable",
+}
 TRACKING_STATES = {"runtime_recorded", "model_declared", "unavailable"}
 CURRENTNESS = {
     "reviewed_current", "reviewed_within_cutoff", "reviewed_historical_scope",
@@ -326,6 +330,18 @@ def validate_source_ledger(ledger: dict) -> dict:
             raise DashboardError(f"source_pinpoints_invalid:{logical_id}")
         for scope in ("response", "conversation"):
             use = item[f"{scope}_use"]
+            discovery_method = item.get(
+                f"{scope}_discovery_method",
+                "not_applicable" if use == "not_referenced" else "unknown",
+            )
+            if discovery_method not in DISCOVERY_METHODS:
+                raise DashboardError(f"source_discovery_method_invalid:{scope}:{logical_id}")
+            if use != "not_referenced" and discovery_method == "not_applicable":
+                raise DashboardError(f"source_discovery_method_missing:{scope}:{logical_id}")
+            if use == "not_referenced" and discovery_method != "not_applicable":
+                raise DashboardError(f"unused_source_has_discovery_method:{scope}:{logical_id}")
+            if item["origin"] == "external_official" and discovery_method == "plugin_library":
+                raise DashboardError(f"external_source_marked_plugin_discovered:{scope}:{logical_id}")
             provenance = item[f"{scope}_provenance"]
             evidence_ref = item.get(f"{scope}_evidence_ref")
             read_evidence = item.get(f"{scope}_read_evidence")
@@ -347,7 +363,46 @@ def validate_source_ledger(ledger: dict) -> dict:
 
     response = _count_for_scope(entries, "response", ledger["response_tracking"])
     conversation = _count_for_scope(entries, "conversation", ledger["conversation_tracking"])
-    return {"response": response, "conversation": conversation, "catalog": catalog}
+    return {
+        "response": response,
+        "conversation": conversation,
+        "response_origin": _source_origin_counts(entries, "response", ledger["response_tracking"]),
+        "conversation_origin": _source_origin_counts(entries, "conversation", ledger["conversation_tracking"]),
+        "catalog": catalog,
+    }
+
+
+def _source_origin_counts(entries: list[dict], scope: str, tracking: str) -> dict:
+    """Count matched ledger records by library membership and discovery method.
+
+    Membership and discovery are separate dimensions: a web search may return
+    a source that is also present in the plugin library, so the two counts can
+    overlap and must not be added together.
+    """
+    if tracking == "unavailable":
+        return {
+            "status": "unknown", "matched_count": None,
+            "plugin_library_count": None, "web_search_count": None,
+            "web_search_known_count": None, "unknown_discovery_count": None,
+        }
+    matched = [item for item in entries if item[f"{scope}_use"] != "not_referenced"]
+    plugin_count = sum(item["origin"] == "bundled_library" for item in matched)
+    web_search_known = 0
+    unknown_discovery = 0
+    for item in matched:
+        method = item.get(f"{scope}_discovery_method", "unknown")
+        if method == "web_search":
+            web_search_known += 1
+        elif method == "unknown":
+            unknown_discovery += 1
+    return {
+        "status": "model_declared",
+        "matched_count": len(matched),
+        "plugin_library_count": plugin_count,
+        "web_search_count": web_search_known if unknown_discovery == 0 else None,
+        "web_search_known_count": web_search_known,
+        "unknown_discovery_count": unknown_discovery,
+    }
 
 
 def _count_for_scope(entries: list[dict], scope: str, tracking: str) -> dict:
@@ -570,6 +625,7 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
     response = metrics["response"]
     conversation = metrics["conversation"]
     status = {"reviewed": "Reviewed", "partial": "Partial", "not_verified": "Not verified"}[dashboard["assessment_status"]]
+    status_marker = {"reviewed": "🟢", "partial": "🟠", "not_verified": "⚪"}[dashboard["assessment_status"]]
     open_work = _open_work(route_gaps)
     issue_summaries = dashboard["issue_summaries"]
     if validation_record is None:
@@ -605,8 +661,71 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
             f"{label} ({count})" for label, count in sorted(counts.items())
         )
 
+    def source_origin_lines(label: str, counts: dict) -> list[str]:
+        if counts.get("status") == "unknown":
+            return [
+                f"- Sources identified {label}: **unknown**; source-use tracking was unavailable.",
+                "  - Matched to records in the plugin's bundled source library: **unknown**.",
+                "  - Found through web search: **unknown**.",
+            ]
+        matched = counts["matched_count"]
+        plugin_count = counts["plugin_library_count"]
+        web_search_count = counts["web_search_count"]
+        if web_search_count is None:
+            known = counts["web_search_known_count"]
+            unknown = counts["unknown_discovery_count"]
+            search_text = (
+                f"unknown ({known} explicitly marked as web search; discovery method missing or unknown "
+                f"for {unknown} source record(s))"
+            )
+        else:
+            search_text = str(web_search_count)
+        return [
+            f"- Sources identified {label}: **{matched}** distinct ledger records (model-reported; includes identified-but-not-read sources).",
+            f"  - Matched to records in the plugin's bundled source library: **{plugin_count}**.",
+            f"  - Found through web search: **{search_text}**.",
+        ]
+
+    operations = {item["operation_id"]: item for item in route["operations"]}
+    for operation_id in required_operation_ids:
+        operations.setdefault(operation_id, {
+            "operation_id": operation_id, "applicability": "required", "status": "not_recorded",
+            "reason_code": "not_attempted", "evidence_refs": [],
+        })
+    applicable_operations = [
+        item for item in operations.values()
+        if item["applicability"] in {"required", "triggered"}
+    ]
+
+    def operation_has_validation_gap(operation_id: str) -> bool:
+        return any(
+            gap.startswith(f"operation:{operation_id}:")
+            or gap == f"required_operation_missing:{operation_id}"
+            or gap == f"required_operation_misclassified:{operation_id}"
+            for gap in route_gaps
+        )
+
+    completed_operations = sum(
+        item["status"] == "completed"
+        and bool(item.get("evidence_refs"))
+        and not operation_has_validation_gap(item["operation_id"])
+        for item in applicable_operations
+    )
+    closed_checks = sum(
+        item["record"]["status"] in {"assessed", "not_applicable"}
+        for item in route.get("c27_checks", [])
+    )
+
+    def progress_marks(completed: int, total: int) -> str:
+        if total == 0:
+            return "not applicable"
+        filled = max(0, min(10, round(10 * completed / total)))
+        return f"{'🟩' * filled}{'⬜' * (10 - filled)} {completed} of {total}"
+
+    source_summary_lines = source_origin_lines("in this answer", metrics.get("response_origin", {}))
+    source_summary_lines.extend(source_origin_lines("across this chat", metrics.get("conversation_origin", {})))
     lines.extend([
-        f"**{status}** · {overall}",
+        f"> {status_marker} **{status}** · {overall}",
         "",
         "### Invocation and validation",
         f"- Invocation: {value_status(state)}; basis: {value_status(basis)}.",
@@ -622,7 +741,15 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
         f"- Legal texts this response: **{'unknown' if response['count'] is None else response['count']}** (model-reported).",
         f"- Conversation total: **{'unknown' if conversation['count'] is None else conversation['count']}** (model-reported).",
         f"- Source-library sections this response: **{'unknown' if response['count'] is None else len(response['sections'])}**.",
+        *source_summary_lines,
+        "- Counts cover the source records listed below, not every raw search-result hit.",
+        "- Counts may overlap: a web search can return a source also matched to a record in the plugin library.",
         f"- Declared material issues: **{len(issue_summaries)}**; outstanding checks and operations: **{len(open_work)}**.",
+        "",
+        "### Recorded-work progress",
+        f"- Required or triggered operations with acceptable completion evidence: {progress_marks(completed_operations, len(applicable_operations))}.",
+        f"- Selected C27 checks assessed or justified as not applicable: {progress_marks(closed_checks, len(route.get('c27_checks', [])))}.",
+        "- These bars count only declared receipt rows; they do not measure the completeness of undisclosed work.",
     ])
 
     lines.extend(["", "### Task scope"])
@@ -635,33 +762,9 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
         f"evidence: {refs([conditional['evidence_ref']])}."
     )
 
-    operations = {item["operation_id"]: item for item in route["operations"]}
-    for operation_id in required_operation_ids:
-        operations.setdefault(operation_id, {
-            "operation_id": operation_id, "applicability": "required", "status": "not_recorded",
-            "reason_code": "not_attempted", "evidence_refs": [],
-        })
     lines.extend(["", "### Work performed and engine checks"])
-    applicable_operations = [
-        item for item in operations.values()
-        if item["applicability"] in {"required", "triggered"}
-    ]
-    def operation_has_validation_gap(operation_id: str) -> bool:
-        return any(
-            gap.startswith(f"operation:{operation_id}:")
-            or gap == f"required_operation_missing:{operation_id}"
-            or gap == f"required_operation_misclassified:{operation_id}"
-            for gap in route_gaps
-        )
-
-    completed_operations = sum(
-        item["status"] == "completed"
-        and bool(item.get("evidence_refs"))
-        and not operation_has_validation_gap(item["operation_id"])
-        for item in applicable_operations
-    )
     lines.append(
-        f"{completed_operations}/{len(applicable_operations)} required or triggered operations have completion records with acceptable evidence."
+        f"Recorded status: {completed_operations} of {len(applicable_operations)} required or triggered operations have completion records with acceptable evidence."
     )
     for operation_id, item in sorted(operations.items(), key=lambda pair: (pair[0] not in required_operation_ids, pair[0])):
         label = OPERATION_LABELS.get(operation_id, _humanize(operation_id).title())
@@ -675,6 +778,14 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
         if item.get("reason_code"):
             detail += f" Reason: {reason}."
         lines.append(f"- **{label}** (`{operation_id}`) — {applicability}; {result}.{detail}")
+        for gap in route_gaps:
+            if (gap.startswith(f"operation:{operation_id}:")
+                    or gap == f"required_operation_missing:{operation_id}"
+                    or gap == f"required_operation_misclassified:{operation_id}"):
+                missing = _gap_work(gap)
+                if missing:
+                    lines.append(f"  - Missing: {missing['missing']} Effect: {missing['effect']}")
+                    break
     lines.append("\nExecution status is receipt-declared unless a named validator report below confirms that its validator ran.")
 
     lines.extend(["", "### C27 case-state checks"])
@@ -695,6 +806,12 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
                 f"Reason: {record['reason']}"
             )
             lines.append(f"  - {evidence_text}.")
+            related_gap = next((gap for gap in route_gaps
+                                if gap.startswith(f"c27:{entry['scope_ref']}:{record['check_id']}:")
+                                and _gap_work(gap) is not None), None)
+            if related_gap:
+                missing = _gap_work(related_gap)
+                lines.append(f"  - Missing: {missing['missing']} Effect: {missing['effect']}")
             if record.get("scope_exclusion"):
                 lines.append(f"  - Scope exclusion: {record['scope_exclusion']}.")
     else:
@@ -806,7 +923,7 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
     lines.append(
         f"Response tracking: {value_status(route['source_ledger']['response_tracking'])}; "
         f"conversation tracking: {value_status(route['source_ledger']['conversation_tracking'])}. "
-        "Counts are model-reported; unavailable tracking remains unknown."
+        "Counts are model-reported; unavailable tracking remains unknown. A web-search count includes only records explicitly marked as found through web search."
     )
     ledger = sorted(route["source_ledger"]["sources"], key=lambda item: (item["section"].casefold(), item["title"].casefold(), item["logical_source_id"]))
     if ledger:
@@ -821,6 +938,8 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
             lines.append(f"- **{title}** — {item['section']} · {item['jurisdiction']} · {category}{source_type}.")
             lines.append(
                 f"  - Identity: source `{item['source_id']}`; logical record `{item['logical_source_id']}`; {origin}."
+                f" Discovery: this answer {value_status(item.get('response_discovery_method', 'unknown'))}; "
+                f"earlier chat {value_status(item.get('conversation_discovery_method', 'unknown'))}."
             )
             lines.append(
                 f"  - This answer: {value_status(item['response_use'])}; provenance {value_status(item['response_provenance'])}; "
@@ -1000,6 +1119,9 @@ def validate_dashboard_receipt(route: dict, evidence_index: dict[str, dict], rou
         "source_metrics": {
             k: {"status": v["status"], "count": v["count"], "sections": v["sections"]}
             for k, v in metrics.items() if k in {"response", "conversation"}
+        },
+        "source_origin_metrics": {
+            k: v for k, v in metrics.items() if k in {"response_origin", "conversation_origin"}
         },
         "render_metrics": metrics,
     }
