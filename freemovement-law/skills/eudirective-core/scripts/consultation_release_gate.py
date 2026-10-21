@@ -32,6 +32,11 @@ def digest(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
 
+def validation_digest(record: dict) -> str:
+    canonical = json.dumps(record, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    return digest(canonical)
+
+
 def validate_exact_receipt(receipt_path: Path) -> tuple[dict, bytes]:
     before = read_regular_file(receipt_path, "receipt")
     result = validate_route(receipt_path)
@@ -40,6 +45,14 @@ def validate_exact_receipt(receipt_path: Path) -> tuple[dict, bytes]:
         raise ReleaseBindingError("receipt_changed_during_validation")
     if result["status"] == "rejected_comprehensive_claim":
         raise ReleaseBindingError("comprehensive_claim_has_outstanding_work")
+    if result.get("dashboard_required"):
+        record = result.get("validation_record")
+        if not isinstance(record, dict):
+            raise ReleaseBindingError("mandatory_validation_record_missing")
+        if record.get("receipt_sha256") != digest(before):
+            raise ReleaseBindingError("validation_record_receipt_digest_mismatch")
+        if record.get("result") != result.get("status"):
+            raise ReleaseBindingError("validation_record_result_mismatch")
     return result, before
 
 
@@ -49,6 +62,13 @@ def validate_dashboard_rendered(result: dict, answer_bytes: bytes) -> None:
     preview = result.get("dashboard_preview")
     if not isinstance(preview, str) or not preview:
         raise ReleaseBindingError("mandatory_dashboard_preview_missing")
+    validation_record = result.get("validation_record")
+    if not isinstance(validation_record, dict):
+        raise ReleaseBindingError("mandatory_validation_record_missing")
+    if f"`{validation_record['receipt_sha256']}`" not in preview:
+        raise ReleaseBindingError("dashboard_receipt_fingerprint_missing")
+    if str(validation_record.get("result", "")).replace("_", " ") not in preview:
+        raise ReleaseBindingError("dashboard_validation_result_missing")
     try:
         answer = answer_bytes.decode("utf-8")
     except UnicodeDecodeError as error:
@@ -66,10 +86,11 @@ def prepare(receipt_path: Path, answer_path: Path, binding_path: Path) -> dict:
     if binding_path.exists() or binding_path.is_symlink():
         raise ReleaseBindingError("binding_path_already_exists")
     binding = {
-        "schema_version": "0.1.0",
+        "schema_version": "0.2.0",
         "route_ref": result["route_ref"],
         "receipt_sha256": digest(receipt_bytes),
         "answer_sha256": digest(answer_bytes),
+        "validation_sha256": validation_digest(result["validation_record"]),
         "validated_status": result["status"],
         "coverage_claim": result["coverage_claim"],
     }
@@ -94,6 +115,7 @@ def release(receipt_path: Path, answer_path: Path, binding_path: Path) -> bytes:
         "route_ref": result["route_ref"],
         "receipt_sha256": digest(receipt_bytes),
         "answer_sha256": digest(answer_bytes),
+        "validation_sha256": validation_digest(result["validation_record"]),
         "validated_status": result["status"],
         "coverage_claim": result["coverage_claim"],
     }

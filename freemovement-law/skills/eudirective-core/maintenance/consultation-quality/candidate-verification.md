@@ -2,36 +2,36 @@
 
 ## Current candidate verification — 2026-10-21
 
-**Status:** Dashboard implementation and local structural checks verified;
+**Status:** Full dashboard and local structural/controller checks verified;
 hosted consultation behavior not verified.
-**Candidate code commit:** `fc00471917f11fee77d06e9df5b1e82f66021e82`
-**Base:** `8b480b9aad68ae9d47ae0628a2ad33a2370686e3` (`origin/main`)
-**Branch:** `codex/source-ledger-catalog-fix-20261021`
-**Plugin/core:** `0.54.2` / `0.53.2`
+**Candidate code commit:** pending commit.
+**Base:** `bf2fff23c31d70645327b7f20435e4647b617601` (`origin/main`)
+**Branch:** `codex/full-dashboard-validation-20261021`
+**Plugin/core:** `0.54.3` / `0.53.3`
 
-The source taxonomy now places the canonical mission-directory and publisher
-documentation records outside legal-text totals; canonical national-act,
-case-law and Commission-notice records have expected categories. Unknown source
-types remain unclassified references. The route gate rejects
-`runtime_recorded` source claims until a host-authenticated event exists. The
-compact renderer bounds source, gap and module details with explicit overflow
-counts; the receipt retains the complete records for an expanded audit.
+The default compact renderer and its limits are removed. The full board lists
+every recorded classification, operation, C27 check, issue, validator result,
+source-ledger row, and module-use record. The route gate produces the board
+after validation and binds a validation record to the exact receipt digest;
+the local answer controller binds that record together with the exact receipt
+and answer bytes. A material continuation change can require a refreshed board.
+No ChatGPT host release hook is available, so hosted output is not
+non-bypassably controlled.
 
 Checks run against this candidate:
 
-- Dashboard receipt/render tests: 45/45 passed.
+- Dashboard receipt/render and local release-binding tests: 47/47 passed.
 - Route-gate tests: 16/16 passed.
 - Issue-selection tests: 15/15 passed.
-- Version-manifest verification, Python compilation, JSON parsing, and
-  `git diff --check`: passed.
-- C27 checklist: 301 registered checks.
+- Python compilation passed for the changed dashboard and route/release gates.
+- Version-manifest verification and JSON parsing: passed.
+- C27 registry checklist: 301 checks loaded; `git diff --check`: passed.
 - Source-library manifests and source texts were not edited.
-- Hosted ChatGPT tests were not run; the six-case live test plan remains the
+- Hosted ChatGPT tests were not run; the updated live test plan remains the
   post-install acceptance procedure. No claim of host-enforced release gating
   is made.
 
-This local verification record predates opening the PR and remote CI; those
-results must be recorded from GitHub separately.
+Remote CI/PR results are not yet available for this candidate.
 
 ## Previous candidate record — superseded
 
@@ -47,8 +47,8 @@ results must be recorded from GitHub separately.
 | US-001 baseline reconciliation | Completed locally | Baseline commit, versions, CI inventory and failures are recorded in `baseline.md`. The current public workflow runs tracked public structural checks; regression prompts and scripts remain private. |
 | US-002 behavioral baseline | Not executed | The private ledger has 36 `not_executed` records and no transcripts or grades. |
 | US-003–005 issue model, routing, selector | Implemented and structurally checked | Issue model and source-referenced signal matrix reuse C27 IDs. The selector accepts synthetic/abstract IDs only; its 15 tests pass. This does not test model issue extraction. |
-| US-006–009 consultation workflow, source accounting, answer contract and presentation | Implemented; behavior unverified | The five model-led stages, per-issue dispositions, concise default answer and expanded audit are documented. Dashboard/coverage fixtures pass; no live output was reviewed. |
-| US-010 optional route receipt gate | Implemented and structurally checked | Legacy receipt compatibility and missing routed checks/gaps are tested (16/16). The gate checks only declared data and is not called by the ChatGPT host. |
+| US-006–009 consultation workflow, source accounting, answer contract and presentation | Implemented; behavior unverified | The five model-led stages, per-issue dispositions, concise default answer, and full default dashboard are documented. Dashboard/coverage fixtures pass; no live output was reviewed. |
+| US-010 route receipt gate | Implemented and structurally checked | Legacy receipt compatibility, missing routed checks/gaps, receipt fingerprinting, and local answer binding are tested. The gate checks declared data and is not called by the ChatGPT host. |
 | US-011 adversarial scenarios | Available in private maintenance suite | The synthetic suite checks 24 cross-suite cases and 12 topic challenges with positive/negative contrasts and required/forbidden claims. These are regression cases, not held-out cases; no model response was evaluated. |
 | US-012 actual-response aggregation | Implemented and structurally checked | The private aggregator's 8 tests pass. It preserves independent claim disagreements and reports metrics unavailable when responses/grades are absent. |
 | US-013 fresh-context behavior comparison | Deferred; plan prepared | No supported runner for fresh target-plugin conversations or independent grading was available. There are no baseline/candidate scores. A concrete run plan is stored in private `fm-maintenance`; the live run is a separate follow-up, not a prerequisite for ending this implementation session. |

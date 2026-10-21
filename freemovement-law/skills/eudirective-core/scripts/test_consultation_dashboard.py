@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import copy
+import hashlib
 import json
 import subprocess
 import sys
@@ -174,6 +175,16 @@ class ConsultationDashboardTests(unittest.TestCase):
         with self.assertRaises(ContractError):
             validate_obj("consultation-route-receipt", route)
 
+    def test_material_change_requires_a_fresh_board_without_new_explicit_invocation(self):
+        route = make_route(state="implicit", basis="continuation_after_explicit_invocation")
+        route["invocation"]["material_change"] = True
+        route["dashboard"] = make_route()["dashboard"]
+        validate_obj("consultation-route-receipt", route)
+        self.assertTrue(self.report(route)["required"])
+        route.pop("dashboard")
+        with self.assertRaisesRegex(DashboardError, "mandatory_dashboard_missing"):
+            self.report(route)
+
     def test_ordinary_mention_does_not_create_invocation_trigger(self):
         route = make_route(state="unknown", basis="unavailable")
         route.pop("dashboard", None)
@@ -191,14 +202,14 @@ class ConsultationDashboardTests(unittest.TestCase):
         route = make_route(sources=[])
         report = self.report(route)
         self.assertEqual(report["source_metrics"]["response"]["count"], 0)
-        self.assertIn("0 (model-reported)", report["preview"])
+        self.assertIn("Legal texts this response: **0** (model-reported)", report["preview"])
 
     def test_unavailable_source_tracking_reports_unknown_not_zero(self):
         route = make_route(tracking="unavailable", coverage="partial", assessment_status="partial")
         report = self.report(route)
         self.assertIsNone(report["source_metrics"]["response"]["count"])
-        self.assertIn("Legal texts this response: unknown", report["preview"])
-        self.assertNotIn("Legal texts this response: 0", report["preview"])
+        self.assertIn("Legal texts this response: **unknown**", report["preview"])
+        self.assertNotIn("Legal texts this response: **0**", report["preview"])
 
     def test_conversation_tracking_can_be_unknown_while_response_is_counted(self):
         route = make_route(sources=[source_record("eu:32004l0038")])
@@ -206,7 +217,7 @@ class ConsultationDashboardTests(unittest.TestCase):
         report = self.report(route)
         self.assertEqual(report["source_metrics"]["response"]["count"], 1)
         self.assertIsNone(report["source_metrics"]["conversation"]["count"])
-        self.assertIn("Conversation total: unknown", report["preview"])
+        self.assertIn("Conversation total: **unknown**", report["preview"])
 
     def test_repeated_read_and_multiple_pinpoints_count_one_logical_text(self):
         item = source_record("eu:32004l0038")
@@ -244,7 +255,7 @@ class ConsultationDashboardTests(unittest.TestCase):
         route = make_route(sources=[item])
         report = self.report(route)
         self.assertEqual(report["source_metrics"]["response"]["count"], 1)
-        self.assertIn("candidate; not accepted", report["preview"])
+        self.assertIn("candidate unaccepted", report["preview"])
 
     def test_core_manifest_acceptance_overrides_retrieval_index_candidate_label(self):
         accepted = source_record("eu:32004l0038")
@@ -253,13 +264,13 @@ class ConsultationDashboardTests(unittest.TestCase):
         self.assertEqual(unaccepted["library_state"], "candidate_unaccepted")
         report = self.report(make_route(sources=[accepted, unaccepted]))
         self.assertIn("Directive 2004/38/EC", report["preview"])
-        self.assertEqual(report["preview"].count("candidate; not accepted"), 1)
+        self.assertEqual(report["preview"].count("candidate unaccepted"), 1)
 
     def test_national_manifest_acceptance_overrides_unrecorded_index_state(self):
         item = source_record("fi-migri-family-residence-card")
         self.assertEqual(item["library_state"], "candidate_unaccepted")
         preview = self.report(make_route(sources=[item]))["preview"]
-        self.assertIn("candidate; not accepted", preview)
+        self.assertIn("candidate unaccepted", preview)
 
     def test_all_owner_matched_manifest_acceptance_states_reconcile(self):
         catalog = _load_catalog()
@@ -298,7 +309,7 @@ class ConsultationDashboardTests(unittest.TestCase):
         self.assertEqual(source["jurisdiction"], "EU")
         self.assertEqual(_category(source["source_type"], source["section"], source["title"]), "official_guidance")
         preview = self.report(make_route(sources=[source_record("eu-edpb-guidelines-01-2022-access")]))["preview"]
-        self.assertIn("EU core · Official guidance", preview)
+        self.assertIn("EU core · EU · Official guidance", preview)
 
     def test_title_fallback_classifies_manifest_guidance_and_procedure(self):
         catalog = _load_catalog()
@@ -368,7 +379,8 @@ class ConsultationDashboardTests(unittest.TestCase):
         ]
         report = self.report(make_route(sources=records))
         self.assertEqual(report["source_metrics"]["response"]["count"], 0)
-        self.assertIn("References or unclassified materials read", report["preview"])
+        self.assertIn("Publisher portal", report["preview"])
+        self.assertIn("Source note", report["preview"])
 
     def test_generic_local_artifact_cannot_claim_runtime_source_reads(self):
         item = source_record("eu:32004l0038")
@@ -414,7 +426,7 @@ class ConsultationDashboardTests(unittest.TestCase):
         route = make_route(sources=[item])
         report = self.report(route)
         self.assertEqual(report["source_metrics"]["response"]["count"], 1)
-        self.assertIn("EU core · EU law", report["preview"])
+        self.assertIn("External official · EU core · EU · EU law", report["preview"])
 
     def test_reference_material_does_not_inflate_legal_text_total(self):
         portal = source_record(
@@ -424,7 +436,7 @@ class ConsultationDashboardTests(unittest.TestCase):
         route = make_route(sources=[portal])
         report = self.report(route)
         self.assertEqual(report["source_metrics"]["response"]["count"], 0)
-        self.assertIn("References or unclassified materials read", report["preview"])
+        self.assertIn("Publisher portal", report["preview"])
 
     def test_external_category_must_match_declared_source_type(self):
         item = source_record("https://example.gov/law/1", origin="external_official")
@@ -453,8 +465,8 @@ class ConsultationDashboardTests(unittest.TestCase):
         route = make_route(sources=[identified, memory])
         report = self.report(route)
         self.assertEqual(report["source_metrics"]["response"]["count"], 0)
-        self.assertIn("Identified but not read", report["preview"])
-        self.assertIn("Cited without a new read", report["preview"])
+        self.assertIn("identified not read", report["preview"])
+        self.assertIn("cited from memory", report["preview"])
 
     def test_unexecuted_checks_cannot_be_called_reviewed(self):
         route = make_route(assessment_status="reviewed")
@@ -467,9 +479,8 @@ class ConsultationDashboardTests(unittest.TestCase):
         route["dashboard"]["assessment_status"] = "partial"
         route["coverage_claim"] = "partial"
         preview = self.report(route, ["required_operation_missing:c23_guidance"])["preview"]
-        self.assertIn("4/5 required or triggered operations recorded complete", preview)
-        self.assertIn("**Applicant guidance** · not recorded", preview)
-        self.assertIn("Still missing — checks and execution", preview)
+        self.assertIn("4/5 required or triggered operations have completion records with acceptable evidence", preview)
+        self.assertIn("**Applicant guidance** (`c23_guidance`) — required; not recorded.", preview)
         self.assertIn("Applicant guidance", preview)
         self.assertIn("Its findings are absent", preview)
 
@@ -480,8 +491,16 @@ class ConsultationDashboardTests(unittest.TestCase):
         route["dashboard"]["assessment_status"] = "partial"
         route["coverage_claim"] = "partial"
         preview = self.report(route, ["operation:c23_guidance:not_checked"])["preview"]
-        self.assertIn("4/5 required or triggered operations recorded complete", preview)
-        self.assertIn("**Applicant guidance** · not checked", preview)
+        self.assertIn("4/5 required or triggered operations have completion records with acceptable evidence", preview)
+        self.assertIn("**Applicant guidance** (`c23_guidance`) — required; not checked.", preview)
+
+    def test_completed_operation_without_acceptable_evidence_is_not_reported_as_complete(self):
+        route = make_route(coverage="partial", assessment_status="partial")
+        operation = next(item for item in route["operations"] if item["operation_id"] == "c23_guidance")
+        operation["evidence_refs"] = []
+        preview = self.report(route, ["operation:c23_guidance:evidence_reference_missing"])["preview"]
+        self.assertIn("4/5 required or triggered operations have completion records with acceptable evidence", preview)
+        self.assertIn("**Applicant guidance** (`c23_guidance`) — required; completion not verified", preview)
 
     def test_partial_issue_must_match_dashboard_and_name_effect(self):
         ref = "r_0000000000000008"
@@ -507,11 +526,13 @@ class ConsultationDashboardTests(unittest.TestCase):
         ])
         validate_obj("consultation-route-receipt", route)
         preview = self.report(route)["preview"]
-        self.assertIn("used this response; used earlier in this chat", preview)
-        self.assertIn("not used this response; not used earlier in this chat", preview)
+        self.assertIn("**eudirective-ms-spain** — residence procedure", preview)
+        self.assertIn("This answer: used; earlier in chat: used earlier", preview)
+        self.assertIn("**eudirective-ac-turkiye** — applicant-country operations", preview)
+        self.assertIn("This answer: not used; earlier in chat: not used earlier", preview)
         self.assertIn("no C3 pair check was recorded", preview)
 
-    def test_compact_dashboard_caps_source_and_module_details_with_overflow_counts(self):
+    def test_full_dashboard_lists_all_source_and_module_details_without_overflow_caps(self):
         records = []
         countries = [
             ("Spain", "ES"), ("Italy", "IT"), ("Sweden", "SE"),
@@ -540,20 +561,24 @@ class ConsultationDashboardTests(unittest.TestCase):
             for index in range(11)
         ])
         preview = self.report(route)["preview"]
-        self.assertIn("Legal texts this response: 20 (model-reported)", preview)
-        self.assertEqual(preview.count("Synthetic statute"), 12)
-        self.assertIn("Compact view omits 8 source details across 1 additional group", preview)
-        self.assertIn("2 additional module-use records are retained in the expanded audit", preview)
+        self.assertIn("Legal texts this response: **20** (model-reported)", preview)
+        for index in range(20):
+            self.assertIn(f"Synthetic statute {index}", preview)
+        for index in range(11):
+            self.assertIn(f"review-module-{index}", preview)
+        self.assertNotIn("omits", preview)
+        self.assertNotIn("additional module-use records", preview)
 
-    def test_compact_gap_summary_shows_three_items_and_counts_remaining_work(self):
+    def test_full_gap_summary_lists_every_open_item_without_overflow_counts(self):
         route = make_route(coverage="partial", assessment_status="partial")
         route["issues"] = []
         route["dashboard"]["issue_summaries"] = []
         gaps = [f"unclassified_gap:{index}" for index in range(5)]
         preview = self.report(route, gaps)["preview"]
-        self.assertEqual(preview.count("remains unresolved."), 3)
-        self.assertIn("2 additional recorded issues or checks remain", preview)
-        self.assertIn("request the expanded audit", preview)
+        self.assertEqual(preview.count("remains unresolved."), 5)
+        self.assertIn("Unclassified gap:0 remains unresolved", preview)
+        self.assertIn("Unclassified gap:4 remains unresolved", preview)
+        self.assertNotIn("request the expanded audit", preview)
 
     def test_module_cannot_be_claimed_conformant_without_validator_output(self):
         route = make_route()
@@ -624,8 +649,8 @@ class ConsultationDashboardTests(unittest.TestCase):
         preview = validate_dashboard_receipt(
             route, {"r_0000000000000001": {"kind": "conversation_record"}}, [], [report]
         )["preview"]
-        self.assertIn("**eudirective-ms-sweden** · deciding Member State", preview)
-        self.assertIn("C3 conformant", preview)
+        self.assertIn("**eudirective-ms-sweden (`member-state-se-source-pilot`)** — deciding Member State", preview)
+        self.assertIn("C3: conformant", preview)
 
     def test_pair_reference_cannot_be_reused_by_two_dashboard_modules(self):
         route = make_route()
@@ -646,7 +671,7 @@ class ConsultationDashboardTests(unittest.TestCase):
         with self.assertRaisesRegex(DashboardError, "partial_assessment_without_explained_open_work"):
             self.report(route)
 
-    def test_compact_dashboard_bounds_partial_issue_details_and_counts_the_rest(self):
+    def test_full_dashboard_lists_every_partial_issue_and_effect(self):
         issues = []
         summaries = []
         for index in range(1, 5):
@@ -661,8 +686,9 @@ class ConsultationDashboardTests(unittest.TestCase):
         preview = self.report(route)["preview"]
         self.assertIn("Fact 1 is not confirmed", preview)
         self.assertIn("Fact 3 is not confirmed", preview)
-        self.assertNotIn("Fact 4 is not confirmed", preview)
-        self.assertIn("1 additional recorded issue or check remains", preview)
+        self.assertIn("Fact 4 is not confirmed", preview)
+        self.assertIn("Effect 4 remains uncertain", preview)
+        self.assertNotIn("additional recorded issue or check", preview)
         self.assertEqual(len(route["dashboard"]["issue_summaries"]), 4)
 
     def test_release_binding_requires_exact_dashboard_at_answer_end(self):
@@ -677,13 +703,24 @@ class ConsultationDashboardTests(unittest.TestCase):
             released = HERE / "consultation_release_gate.py"
             checked = subprocess.run([sys.executable, str(gate), str(receipt)], capture_output=True, text=True)
             self.assertEqual(checked.returncode, 0, checked.stderr)
-            preview = json.loads(checked.stdout)["dashboard_preview"]
+            checked_result = json.loads(checked.stdout)
+            validation = checked_result["validation_record"]
+            self.assertEqual(validation["result"], checked_result["status"])
+            self.assertEqual(validation["receipt_sha256"], hashlib.sha256(receipt.read_bytes()).hexdigest())
+            preview = checked_result["dashboard_preview"]
+            self.assertIn(validation["receipt_sha256"], preview)
+            self.assertIn(validation["result"].replace("_", " "), preview)
             answer.write_text("The substantive answer.\n\n" + preview + "\n", encoding="utf-8")
             prepared = subprocess.run([
                 sys.executable, str(released), "prepare", "--receipt", str(receipt),
                 "--answer", str(answer), "--binding", str(binding),
             ], capture_output=True, text=True)
             self.assertEqual(prepared.returncode, 0, prepared.stderr)
+            binding_record = json.loads(binding.read_text(encoding="utf-8"))
+            validation_sha = hashlib.sha256(
+                json.dumps(validation, sort_keys=True, separators=(",", ":")).encode("utf-8")
+            ).hexdigest()
+            self.assertEqual(binding_record["validation_sha256"], validation_sha)
             answer.write_text("The substantive answer only.\n", encoding="utf-8")
             blocked = subprocess.run([
                 sys.executable, str(released), "prepare", "--receipt", str(receipt),
