@@ -35,6 +35,18 @@ class ConsultationDashboardMcpTests(unittest.TestCase):
         self.assertEqual(first["progress"]["c27_checks"]["total"], 1)
         self.assertIn("text_fallback", first)
 
+    def test_receipt_change_changes_dashboard_validation_binding(self):
+        complete = make_route()
+        changed = make_route(basis="host_signal")
+        complete_model = _render({"receipt_json": json.dumps(complete)})["structuredContent"]
+        changed_model = _render({"receipt_json": json.dumps(changed)})["structuredContent"]
+        self.assertNotEqual(
+            complete_model["validation"]["receipt_sha256"],
+            changed_model["validation"]["receipt_sha256"],
+        )
+        self.assertEqual(complete_model["assessment"]["coverage_claim"], "comprehensive")
+        self.assertEqual(changed_model["assessment"]["coverage_claim"], "comprehensive")
+
     def test_unknown_source_tracking_stays_unknown_in_view_model(self):
         route = make_route(tracking="unavailable", coverage="partial", assessment_status="partial")
         model = _render({"receipt_json": json.dumps(route)})["structuredContent"]

@@ -2,15 +2,18 @@
 
 **Status:** Not executed. The local MCP protocol, receipt validator, and view
 model have automated checks. Do not run live consultation cases during local
-maintenance sessions. This plan is for a fresh Codex Desktop/local-plugin
-session after installing the updated package. A hosted ChatGPT session that
-cannot start local stdio tools is expected to use the Markdown fallback; do
-not add a remote service without separate maintainer approval because that
-would create a new data-transfer boundary.
+maintenance sessions. This plan targets a fresh ChatGPT Desktop session with
+the updated local plugin installed. OpenAI documents local stdio MCP plugins as
+desktop-only. A hosted ChatGPT session that cannot start local stdio tools is
+expected to use the Markdown fallback. Do not add a remote HTTPS service
+without separate maintainer approval because that would create a new
+data-transfer boundary. Codex Desktop may be checked separately if it is a
+target deployment, but it does not substitute for the ChatGPT Desktop check.
 
 ## Setup
 
-1. Install or reload the local plugin package containing the dashboard changes.
+1. Install or reload the local plugin package containing the dashboard changes
+   in ChatGPT Desktop. Record the visible plugin version before testing.
 2. Confirm Python 3.10+ and `requirements-runtime.txt` are available to the
    local stdio process. Confirm the plugin discovers
    `render_consultation_dashboard` and its `ui://` resource.

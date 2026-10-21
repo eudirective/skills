@@ -69,7 +69,10 @@ existing receipt gate, C27 registry, C3 module
 validator and research validators, and returns a versioned view model plus a
 Markdown fallback. It cannot ensure the model calls the tool or block a host
 response if the call is omitted. See
-`skills/eudirective-core/references/consultation-dashboard-live-test-plan.md`.
+`skills/eudirective-core/references/consultation-dashboard-runtime-assessment.md`
+for the supported runtime matrix and remaining host limits, and
+`skills/eudirective-core/references/consultation-dashboard-live-test-plan.md`
+for the deferred installed-client verification plan.
 The local host must use a Python interpreter with `jsonschema` installed; if it
 is missing, install the declared dependency with
 `python3 -m pip install -r requirements-runtime.txt` in that interpreter's
