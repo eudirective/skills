@@ -1,5 +1,22 @@
 # Release and version policy
 
+## Plugin v0.54.2 / core v0.53.2 source taxonomy and provenance correction
+
+The consultation dashboard now maps known mission directories and retrieval
+documentation to reference categories, classifies canonical national-act,
+case-law and Commission-notice records by type, and keeps unknown source types
+out of legal-text totals as references/unclassified. Independently expected
+category cases cover canonical library IDs, including prior misclassifications.
+The portable local route gate rejects `runtime_recorded` source states: a
+generic artifact hash does not prove a retrieval, and this package has no
+host-authenticated source-read event contract. Counts remain model-reported or
+unknown. The bundled source library is unchanged. Core advances from `0.53.1`
+to `0.53.2`; plugin advances from `0.54.1` to `0.54.2`.
+
+The plugin-level hosted invocation/rendering behavior remains unverified. Keep
+the six-case live test plan for post-install review; do not require hosted tests
+during local maintenance sessions.
+
 ## Plugin v0.54.1 / core v0.53.1 source-catalogue reconciliation repair
 
 Compatible patch to consultation accounting. Owner-matched national manifests

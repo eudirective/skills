@@ -36,6 +36,11 @@ LEGAL_CATEGORIES = {
 }
 UNRESOLVED_ISSUES = {"answered_conditionally", "source_missing", "fact_missing"}
 OPAQUE_REF = re.compile(r"^r_[a-f0-9]{12,32}$")
+MAX_COMPACT_SOURCE_GROUPS = 10
+MAX_COMPACT_SOURCE_DETAILS = 12
+MAX_COMPACT_GAP_DETAILS = 3
+MAX_COMPACT_REFERENCE_DETAILS = 8
+MAX_COMPACT_MODULE_DETAILS = 10
 SECTION_LABELS = {
     "eu": "EU core", "at": "Austria", "be": "Belgium", "bg": "Bulgaria",
     "ch": "Switzerland", "cy": "Cyprus", "cz": "Czechia", "de": "Germany",
@@ -177,40 +182,63 @@ def _load_catalog() -> dict[str, dict]:
 
 
 def _category(source_type: str, section: str, title: str = "") -> str:
-    raw = source_type.casefold().replace("-", "_").replace(" ", "_")
+    """Map recognized source metadata to a category; unknown metadata stays uncounted."""
+    raw = source_type.casefold().replace("-", "_").replace(" ", "_").strip("`")
     title_raw = title.casefold().replace("-", "_").replace(" ", "_")
     if not raw:
         # Some existing national manifests provide only an official title.
         # Infer a conservative category from that title; leave unknown items as
         # references rather than counting them as legal texts.
         raw = title_raw
-    if any(token in raw for token in ("judgment", "case_law", "court_decision")):
+    # Metadata labels that describe discovery or publishing infrastructure are
+    # references, even when they include words such as "case law" or
+    # "legislation". They are not themselves the legal text being counted.
+    if any(token in raw for token in (
+        "api", "archive", "catalog", "catalogue", "checklist", "coverage_statement",
+        "database", "directory", "discovery", "documentation", "feed",
+        "index", "platform", "portal", "repository", "retrieval", "search",
+        "status_page", "terms", "dataset",
+    )):
+        return "source_note" if any(token in raw for token in (
+            "index", "documentation", "retrieval", "coverage_statement",
+        )) else "publisher_portal"
+    if any(token in raw for token in (
+        "judgment", "case_law", "court_decision", "court_case", "primary_judicial_decision",
+    )):
         return "case_law"
-    if "commission" in raw and any(token in raw for token in ("guidance", "recommendation", "working_document", "handbook")):
+    if "commission" in raw and any(token in raw for token in (
+        "guidance", "recommendation", "working_document", "handbook", "notice",
+    )):
         return "commission_guidance"
-    if any(token in raw for token in ("portal", "platform", "database", "catalog")):
-        return "publisher_portal"
     if any(token in raw for token in ("source_note", "summary", "index")):
         return "source_note"
     if any(token in raw for token in (
         "procedur", "complaint_route", "complaint", "mission_instruction", "instruction",
         "appeal", "application", "request", "form", "how_to", "petition", "central_administration",
         "document_access", "public_documents", "official_documents", "own_case_documents", "order_documents", "escalation",
+        "practice_direction", "practice_rule",
     )):
         return "procedural_rule"
     if any(token in raw for token in (
-        "guidance", "recommendation", "handbook", "official_register", "oversight",
+        "guidance", "guideline", "recommendation", "handbook", "official_register", "oversight",
         "frequently_asked_questions", "evidence_standard", "article_8",
     )):
         return "official_guidance"
-    if any(token in raw for token in ("directive", "regulation", "treaty", "statute", "legislation", "law", "decree", "ordinance", "primary_law", "sfs")):
+    if raw == "act" or raw.endswith("_act") or any(token in raw for token in (
+        "directive", "regulation", "treaty", "statute", "legislation", "law", "decree",
+        "ordinance", "primary_law", "sfs", "national_act", "amending_act", "consolidated_act",
+        "charter", "national_code", "consolidated_text", "consolidated_translation",
+        "constitutional_text", "coordinated_legal_text", "legal_text",
+    )):
         is_eu = section == "EU core" or section.casefold().startswith("external official · eu")
         return "eu_legislation" if is_eu else "national_legislation"
     if not source_type and any(token in raw for token in (
         "visa", "residence", "family_member", "ombudsman", "information", "faq", "how_to",
     )):
         return "official_guidance"
-    return "other_legal_text" if source_type else "other_reference"
+    # Unknown non-empty metadata is not enough to assert that an item is a
+    # legal text. Keep it out of the legal-text total until classified.
+    return "other_reference"
 
 
 def _valid_http_url(value: str | None) -> bool:
@@ -220,11 +248,13 @@ def _valid_http_url(value: str | None) -> bool:
     return parsed.scheme == "https" and bool(parsed.netloc)
 
 
-def validate_source_ledger(ledger: dict, evidence_index: dict[str, dict]) -> dict:
+def validate_source_ledger(ledger: dict) -> dict:
     if ledger.get("response_tracking") not in TRACKING_STATES:
         raise DashboardError("source_ledger_response_tracking_invalid")
     if ledger.get("conversation_tracking") not in TRACKING_STATES:
         raise DashboardError("source_ledger_conversation_tracking_invalid")
+    if "runtime_recorded" in {ledger.get("response_tracking"), ledger.get("conversation_tracking")}:
+        raise DashboardError("runtime_read_events_not_supported_without_host_attestation")
     entries = ledger.get("sources")
     if not isinstance(entries, list):
         raise DashboardError("source_ledger_sources_missing")
@@ -308,9 +338,7 @@ def validate_source_ledger(ledger: dict, evidence_index: dict[str, dict]) -> dic
                 if provenance == "none" or not isinstance(read_evidence, str) or not read_evidence.strip():
                     raise DashboardError(f"consulted_source_without_read_evidence:{scope}:{logical_id}")
                 if provenance == "runtime_recorded":
-                    evidence = evidence_index.get(evidence_ref)
-                    if evidence is None or evidence.get("kind") != "local_artifact":
-                        raise DashboardError(f"runtime_read_event_unverified:{scope}:{logical_id}")
+                    raise DashboardError("runtime_read_events_not_supported_without_host_attestation")
             elif provenance != "none" or evidence_ref is not None:
                 raise DashboardError(f"unread_source_has_read_provenance:{scope}:{logical_id}")
             if use == "cited_from_memory" and read_evidence:
@@ -336,10 +364,6 @@ def _count_for_scope(entries: list[dict], scope: str, tracking: str) -> dict:
             if item["origin"] == "bundled_library":
                 sections[item["section"]] = sections.get(item["section"], 0) + 1
         return {"status": "unknown", "count": None, "sources": recorded, "sections": sections}
-    if tracking == "runtime_recorded":
-        for item in entries:
-            if item[f"{scope}_use"] == "consulted" and item[f"{scope}_provenance"] != "runtime_recorded":
-                raise DashboardError(f"runtime_tracking_has_unverified_read:{scope}:{item['logical_source_id']}")
     consulted = [item for item in entries if item[f"{scope}_use"] == "consulted"]
     legal = [item for item in consulted if item["category"] not in NON_TEXT_CATEGORIES]
     sections: dict[str, int] = {}
@@ -349,7 +373,7 @@ def _count_for_scope(entries: list[dict], scope: str, tracking: str) -> dict:
         section = item["section"]
         sections[section] = sections.get(section, 0) + 1
     return {
-        "status": "runtime_recorded" if tracking == "runtime_recorded" else "model_declared",
+        "status": "model_declared",
         "count": len(legal),
         "sources": legal,
         "sections": sections,
@@ -388,7 +412,7 @@ CATEGORY_LABELS = {
     "other_legal_text": "Other legal text",
     "publisher_portal": "Publisher portal",
     "source_note": "Source note",
-    "other_reference": "Other reference",
+    "other_reference": "Reference / unclassified",
 }
 
 
@@ -540,8 +564,7 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
     def metric(value: dict, label: str) -> str:
         if value["count"] is None:
             return f"{label}: unknown"
-        provenance = "runtime-recorded" if value["status"] == "runtime_recorded" else "model-reported"
-        return f"{label}: {value['count']} ({provenance})"
+        return f"{label}: {value['count']} (model-reported)"
 
     section_count = len(response["sections"]) if response["count"] is not None else None
     open_work = _open_work(route_gaps)
@@ -586,15 +609,23 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
         lines.extend(["", "**Legal texts**", "Source-use tracking is unavailable for this response; no total is asserted."])
         if response["sources"]:
             lines.append("Recorded sources (incomplete list):")
-            for item in sorted(response["sources"], key=lambda x: x["logical_source_id"]):
+            shown_sources = sorted(response["sources"], key=lambda x: x["logical_source_id"])
+            for item in shown_sources[:MAX_COMPACT_SOURCE_DETAILS]:
                 lines.append(f"- {source_label(item)} · {item['section']}")
+            omitted = len(shown_sources) - min(len(shown_sources), MAX_COMPACT_SOURCE_DETAILS)
+            if omitted:
+                lines.append(f"- {omitted} additional recorded source details are retained in the expanded audit.")
     elif groups:
         maximum = max(len(items) for items in groups.values())
         lines.extend(["", "**Legal texts read**  ", "Bars compare groups in this response; they do not represent library coverage."])
-        for (section, category), items in sorted(groups.items()):
+        shown_groups = 0
+        shown_source_details = 0
+        for (section, category), items in sorted(groups.items())[:MAX_COMPACT_SOURCE_GROUPS]:
+            shown_groups += 1
             display_category = CATEGORY_LABELS.get(category, category.replace("_", " ").title())
             lines.append(f"- **{section} · {display_category} · {len(items)}** `{_bar(len(items), maximum)}`")
-            for item in sorted(items, key=lambda x: x["logical_source_id"]):
+            remaining = MAX_COMPACT_SOURCE_DETAILS - shown_source_details
+            for item in sorted(items, key=lambda x: x["logical_source_id"])[:max(0, remaining)]:
                 tags = []
                 if item["library_state"] == "candidate_unaccepted": tags.append("candidate; not accepted")
                 elif item["library_state"] == "source_note_only": tags.append("source note, not legal text")
@@ -603,41 +634,78 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
                 provenance = item["response_provenance"].replace("_", " ")
                 suffix = f" ({'; '.join(tags)})" if tags else ""
                 lines.append(f"  - {source_label(item)}{suffix} · {provenance}")
+                shown_source_details += 1
+        omitted_source_details = len(response["sources"]) - shown_source_details
+        omitted_groups = len(groups) - shown_groups
+        if omitted_source_details or omitted_groups:
+            group_note = (
+                f" across {omitted_groups} additional group{'s' if omitted_groups != 1 else ''}"
+                if omitted_groups else ""
+            )
+            lines.append(
+                f"- Compact view omits {omitted_source_details} source detail{'s' if omitted_source_details != 1 else ''}"
+                f"{group_note}; all titles and pinpoints remain in the expanded audit."
+            )
     else:
-        provenance = "runtime-recorded" if response["status"] == "runtime_recorded" else "model-reported"
-        lines.extend(["", f"**Legal texts read** · none recorded ({provenance})."])
+        lines.extend(["", "**Legal texts read** · none recorded (model-reported)."])
 
     non_text_read = [
         item for item in route["source_ledger"]["sources"]
         if item["response_use"] == "consulted" and item["category"] in NON_TEXT_CATEGORIES
     ]
     if non_text_read:
-        lines.extend(["", "**Reference materials read · not counted as legal texts**"])
-        for item in sorted(non_text_read, key=lambda value: value["logical_source_id"]):
-            lines.append(f"- {item['title']} · {item['category'].replace('_', ' ')}")
+        lines.extend(["", "**References or unclassified materials read · not counted as legal texts**"])
+        ordered_non_text = sorted(non_text_read, key=lambda value: value["logical_source_id"])
+        for item in ordered_non_text[:MAX_COMPACT_REFERENCE_DETAILS]:
+            category = CATEGORY_LABELS.get(item["category"], item["category"].replace("_", " "))
+            lines.append(f"- {item['title']} · {category}")
+        if len(ordered_non_text) > MAX_COMPACT_REFERENCE_DETAILS:
+            omitted = len(ordered_non_text) - MAX_COMPACT_REFERENCE_DETAILS
+            lines.append(f"- {omitted} additional reference{'s' if omitted != 1 else ''} are retained in the expanded audit.")
 
     not_read = [item for item in route["source_ledger"]["sources"] if item["response_use"] == "identified_not_read"]
     memory = [item for item in route["source_ledger"]["sources"] if item["response_use"] == "cited_from_memory"]
     if not_read or memory:
         lines.extend(["", "**Not counted as consulted**"])
         if not_read:
-            lines.append("- Identified but not read: " + "; ".join(item["title"] for item in not_read))
+            lines.append("- Identified but not read: " + "; ".join(item["title"] for item in not_read[:MAX_COMPACT_REFERENCE_DETAILS]))
+            if len(not_read) > MAX_COMPACT_REFERENCE_DETAILS:
+                omitted = len(not_read) - MAX_COMPACT_REFERENCE_DETAILS
+                lines.append(f"- {omitted} additional identified source{'s' if omitted != 1 else ''} are retained in the expanded audit.")
         if memory:
-            lines.append("- Cited without a new read: " + "; ".join(item["title"] for item in memory))
+            lines.append("- Cited without a new read: " + "; ".join(item["title"] for item in memory[:MAX_COMPACT_REFERENCE_DETAILS]))
+            if len(memory) > MAX_COMPACT_REFERENCE_DETAILS:
+                omitted = len(memory) - MAX_COMPACT_REFERENCE_DETAILS
+                lines.append(f"- {omitted} additional memory citation{'s' if omitted != 1 else ''} are retained in the expanded audit.")
 
-    if dashboard["issue_summaries"]:
+    remaining_gap_slots = MAX_COMPACT_GAP_DETAILS
+    issue_limit = remaining_gap_slots - 1 if dashboard["issue_summaries"] and open_work else remaining_gap_slots
+    shown_issue_summaries = dashboard["issue_summaries"][:issue_limit]
+    remaining_gap_slots -= len(shown_issue_summaries)
+    if shown_issue_summaries:
         lines.extend(["", "**Still missing — material issues**"])
-        for issue in dashboard["issue_summaries"]:
+        for issue in shown_issue_summaries:
             lines.append(f"- **{issue['title']}** — Missing: {issue['missing']}. {issue['effect']}")
-    if open_work:
+    shown_open_work = open_work[:remaining_gap_slots]
+    if shown_open_work:
         lines.extend(["", "**Still missing — checks and execution**"])
-        for item in open_work:
+        for item in shown_open_work:
             lines.append(f"- **{item['title']}** — Missing: {item['missing']} {item['effect']}")
+    omitted_gap_count = len(dashboard["issue_summaries"]) + len(open_work) - len(shown_issue_summaries) - len(shown_open_work)
+    if omitted_gap_count:
+        item_word = "issue or check" if omitted_gap_count == 1 else "issues or checks"
+        verb = "remains" if omitted_gap_count == 1 else "remain"
+        lines.append(
+            f"- {omitted_gap_count} additional recorded {item_word} {verb}; request the expanded audit for each missing item and effect."
+        )
 
-    module_entries = dashboard["module_use"]
+    module_entries = sorted(
+        dashboard["module_use"],
+        key=lambda item: (item["module_id"].casefold() != "eudirective-core", item["module_id"].casefold(), item["role"].casefold()),
+    )
     if module_entries:
         lines.extend(["", "**Relevant modules**"])
-        for item in module_entries:
+        for item in module_entries[:MAX_COMPACT_MODULE_DETAILS]:
             current = {
                 "used": "used this response",
                 "not_used": "not used this response",
@@ -656,7 +724,11 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
                 f"- **{display_name}** · {role_label}: {current}; {earlier}; "
                 f"{availability}; C3 {conformance}. {item['reason']}"
             )
-    assurance = "Execution, source-use, module-use, currentness and conformance records are model-declared unless validator or runtime evidence is shown."
+        if len(module_entries) > MAX_COMPACT_MODULE_DETAILS:
+            omitted_modules = len(module_entries) - MAX_COMPACT_MODULE_DETAILS
+            verb = "is" if omitted_modules == 1 else "are"
+            lines.append(f"- {omitted_modules} additional module-use record{'s' if omitted_modules != 1 else ''} {verb} retained in the expanded audit.")
+    assurance = "Source reads and module use are model-reported. This plugin has no host-authenticated source-read event; local checks validate declared structure, not whether a text was actually opened."
     lines.extend(["", f"*{assurance}*", "", "---"])
     return "\n".join(lines)
 
@@ -697,7 +769,7 @@ def validate_dashboard_receipt(route: dict, evidence_index: dict[str, dict], rou
     ledger = route.get("source_ledger")
     if not isinstance(ledger, dict):
         raise DashboardError("mandatory_source_ledger_missing")
-    metrics = validate_source_ledger(ledger, evidence_index)
+    metrics = validate_source_ledger(ledger)
     unresolved = {
         item["issue_ref"] for item in route.get("issues", [])
         if item["disposition"] in UNRESOLVED_ISSUES

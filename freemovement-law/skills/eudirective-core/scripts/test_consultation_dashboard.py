@@ -325,6 +325,77 @@ class ConsultationDashboardTests(unittest.TestCase):
             item = catalog[source_id]
             self.assertEqual(_category(item["source_type"], item["section"], item["title"]), "procedural_rule")
 
+    def test_source_type_taxonomy_keeps_nonlegal_records_out_of_legal_text_categories(self):
+        expected = {
+            "mission_directory": "publisher_portal",
+            "publisher_retrieval_documentation": "source_note",
+            "api_access_documentation": "source_note",
+            "national_act": "national_legislation",
+            "national_act_current_consolidation": "national_legislation",
+            "court-case": "case_law",
+            "primary_judicial_decision": "case_law",
+            "commission_notice": "commission_guidance",
+            "not_a_known_source_type": "other_reference",
+        }
+        for source_type, category in expected.items():
+            with self.subTest(source_type=source_type):
+                self.assertEqual(_category(source_type, "Italy"), category)
+
+    def test_canonical_problem_records_have_independently_expected_categories(self):
+        catalog = _load_catalog()
+        expected = {
+            "ie-31": "publisher_portal",
+            "ie-05": "source_note",
+            "bg-eu-free-movement-act": "national_legislation",
+            "mig:UM-7584-08": "case_law",
+            "eu:c-2023-1392": "commission_guidance",
+            "fi-finlex-integration-guide": "source_note",
+        }
+        for source_id, category in expected.items():
+            with self.subTest(source_id=source_id):
+                metadata = catalog[source_id]
+                self.assertEqual(
+                    _category(metadata["source_type"], metadata["section"], metadata["title"]),
+                    category,
+                )
+
+    def test_mission_directory_and_retrieval_documentation_are_not_counted_as_legal_texts(self):
+        records = [
+            source_record("https://example.gov/mission", origin="external_official",
+                          source_type="mission_directory"),
+            source_record("https://example.gov/retrieval", origin="external_official",
+                          source_type="publisher_retrieval_documentation"),
+        ]
+        report = self.report(make_route(sources=records))
+        self.assertEqual(report["source_metrics"]["response"]["count"], 0)
+        self.assertIn("References or unclassified materials read", report["preview"])
+
+    def test_generic_local_artifact_cannot_claim_runtime_source_reads(self):
+        item = source_record("eu:32004l0038")
+        route = make_route(tracking="model_declared", sources=[item])
+        route["source_ledger"]["sources"][0]["response_provenance"] = "runtime_recorded"
+        route["source_ledger"]["sources"][0]["response_evidence_ref"] = "r_0000000000000004"
+        with self.assertRaisesRegex(
+            DashboardError, "runtime_read_events_not_supported_without_host_attestation"
+        ):
+            validate_dashboard_receipt(
+                route,
+                {
+                    "r_0000000000000001": {"kind": "conversation_record"},
+                    "r_0000000000000004": {
+                        "kind": "local_artifact", "artifact_path": "read-event.json",
+                        "sha256": "0" * 64,
+                    },
+                },
+                [],
+                required_operation_ids=REQUIRED_OPERATIONS[route["request_kind"]],
+            )
+        route = make_route(tracking="runtime_recorded", sources=[item])
+        with self.assertRaisesRegex(
+            DashboardError, "runtime_read_events_not_supported_without_host_attestation"
+        ):
+            self.report(route)
+
     def test_external_official_text_is_separate_from_library_sections(self):
         item = source_record("https://example.gov/law/1", origin="external_official")
         route = make_route(sources=[item])
@@ -353,7 +424,7 @@ class ConsultationDashboardTests(unittest.TestCase):
         route = make_route(sources=[portal])
         report = self.report(route)
         self.assertEqual(report["source_metrics"]["response"]["count"], 0)
-        self.assertIn("Reference materials read", report["preview"])
+        self.assertIn("References or unclassified materials read", report["preview"])
 
     def test_external_category_must_match_declared_source_type(self):
         item = source_record("https://example.gov/law/1", origin="external_official")
@@ -439,6 +510,50 @@ class ConsultationDashboardTests(unittest.TestCase):
         self.assertIn("used this response; used earlier in this chat", preview)
         self.assertIn("not used this response; not used earlier in this chat", preview)
         self.assertIn("no C3 pair check was recorded", preview)
+
+    def test_compact_dashboard_caps_source_and_module_details_with_overflow_counts(self):
+        records = []
+        countries = [
+            ("Spain", "ES"), ("Italy", "IT"), ("Sweden", "SE"),
+            ("Finland", "FI"), ("Germany", "DE"), ("France", "FR"),
+            ("Austria", "AT"), ("Belgium", "BE"), ("Netherlands", "NL"),
+            ("Poland", "PL"), ("Romania", "RO"),
+        ]
+        for index in range(20):
+            item = source_record(
+                f"https://example.gov/law/{index}", origin="external_official",
+                source_type="national statute",
+            )
+            item["title"] = f"Synthetic statute {index}"
+            country, country_code = countries[index] if index < len(countries) else countries[0]
+            item["section"] = f"External official · {country}"
+            item["jurisdiction"] = country_code
+            records.append(item)
+        route = make_route(sources=records)
+        route["dashboard"]["module_use"].extend([
+            {
+                "module_id": f"review-module-{index}", "role": f"support role {index}",
+                "availability": "available", "response_use": "not_used",
+                "conversation_use": "not_used", "conformance": "not_applicable",
+                "reason": "Not selected for this consultation.",
+            }
+            for index in range(11)
+        ])
+        preview = self.report(route)["preview"]
+        self.assertIn("Legal texts this response: 20 (model-reported)", preview)
+        self.assertEqual(preview.count("Synthetic statute"), 12)
+        self.assertIn("Compact view omits 8 source details across 1 additional group", preview)
+        self.assertIn("2 additional module-use records are retained in the expanded audit", preview)
+
+    def test_compact_gap_summary_shows_three_items_and_counts_remaining_work(self):
+        route = make_route(coverage="partial", assessment_status="partial")
+        route["issues"] = []
+        route["dashboard"]["issue_summaries"] = []
+        gaps = [f"unclassified_gap:{index}" for index in range(5)]
+        preview = self.report(route, gaps)["preview"]
+        self.assertEqual(preview.count("remains unresolved."), 3)
+        self.assertIn("2 additional recorded issues or checks remain", preview)
+        self.assertIn("request the expanded audit", preview)
 
     def test_module_cannot_be_claimed_conformant_without_validator_output(self):
         route = make_route()
@@ -531,7 +646,7 @@ class ConsultationDashboardTests(unittest.TestCase):
         with self.assertRaisesRegex(DashboardError, "partial_assessment_without_explained_open_work"):
             self.report(route)
 
-    def test_all_recorded_partial_issues_are_rendered(self):
+    def test_compact_dashboard_bounds_partial_issue_details_and_counts_the_rest(self):
         issues = []
         summaries = []
         for index in range(1, 5):
@@ -544,8 +659,11 @@ class ConsultationDashboardTests(unittest.TestCase):
         route = make_route(coverage="partial", assessment_status="partial", issues=issues,
                            issue_summaries=summaries)
         preview = self.report(route)["preview"]
-        self.assertIn("Fact 4 is not confirmed", preview)
-        self.assertIn("Effect 4 remains uncertain", preview)
+        self.assertIn("Fact 1 is not confirmed", preview)
+        self.assertIn("Fact 3 is not confirmed", preview)
+        self.assertNotIn("Fact 4 is not confirmed", preview)
+        self.assertIn("1 additional recorded issue or check remains", preview)
+        self.assertEqual(len(route["dashboard"]["issue_summaries"]), 4)
 
     def test_release_binding_requires_exact_dashboard_at_answer_end(self):
         route = make_route()
