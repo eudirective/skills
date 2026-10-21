@@ -22,6 +22,6 @@ Compare the draft against the original questions and issue list. Check for unans
 
 ## E. Deliver the answer and coverage summary
 
-Follow `references/consultation-answer-contract.md`: answer the user's substantive request first, then give a concise coverage summary naming material open issues and their effect. Include relevant module use when C3 variables change. Add the compact consultation dashboard when explicit invocation or an explicit dashboard/audit request requires it; implicit continuation may omit it unless material state changes. Keep that board concise and readable rather than exposing a large technical ledger. When the user requests a route or evidence audit, provide the expanded issue, C27, operation, source, and module records described in `references/consultation-routing.md`.
+Follow `references/consultation-answer-contract.md`: answer the user's substantive request first, then give a concise coverage summary naming material open issues and their effect. Include relevant module use when C3 variables change. Add the full consultation dashboard after every explicit invocation, explicit dashboard/audit request, and any reply where a material routing, source, module, or execution variable changes. Do not make the full board opt-in or truncate its recorded issue, C27, operation, source, validator, or module records. Follow `references/consultation-routing.md` for the board contents and validation boundary.
 
 These are stages of one model-led review. Do not describe them as independent reviews or claim that a stage executed a Python engine.

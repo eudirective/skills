@@ -1,23 +1,27 @@
 # Consultation route receipt gate
 
-`scripts/consultation_route_gate.py` is a portable structural check for hosts
-that can call a local plugin script before releasing an answer. It returns a
-non-zero result when a route labelled `comprehensive` still has declared work
-open. The plugin does not invoke it automatically, so the script alone is not
-a release barrier.
+`scripts/consultation_route_gate.py` is a portable structural check for a
+runtime or host that can call a local plugin script before rendering or
+releasing an answer. For an explicit invocation it returns a full deterministic
+dashboard preview and a validation record bound to the receipt SHA-256. It
+returns a non-zero result when a route labelled `comprehensive` still has
+declared work open. The skills-only plugin has no ChatGPT host hook, so the
+script is not automatically invoked in hosted ChatGPT and cannot itself block
+ordinary ChatGPT output.
 
 ## Receipt boundary
 
 The input uses `references/contracts/consultation-route-receipt.schema.json`
 (0.2.0 adds invocation, source-use and dashboard records; existing 0.1.0
-receipts retain their legacy validation). A 0.2.0 explicit invocation or
-dashboard request requires a dashboard. It records classification states,
-workflow IDs, C27 check IDs/statuses, reason codes, and generated opaque
-references (`r_` followed by 12–32 lowercase hex characters). It also carries
-constrained relative paths and digests needed to run local validators. Keep actual jurisdictions, proceeding facts, legal
-questions, case narratives, identities, dates, and document contents in the
-conversation, not in the receipt. The receipt can record that a classification
-is `recorded`, `unknown`, or `not_applicable` without copying its value.
+receipts retain their legacy validation). A 0.2.0 explicit invocation,
+dashboard request, or `material_change=true` requires a dashboard. It records
+classification states, workflow IDs, C27 check IDs/statuses, reason codes, and
+generated opaque references (`r_` followed by 12–32 lowercase hex characters).
+It also carries constrained relative paths and digests needed to run local
+validators. Keep actual jurisdictions, proceeding facts, legal questions,
+case narratives, identities, dates, and document contents in the conversation,
+not in the receipt. The receipt can record that a classification is
+`recorded`, `unknown`, or `not_applicable` without copying its value.
 
 Free-text receipt fields such as issue titles, missing/effect explanations,
 operation reasons and source-read notes can accidentally contain personal or
@@ -84,10 +88,16 @@ rather than an enforced check.
   artifact does not prove that a legal text was opened. A future host
   integration must validate its own trusted event before claiming independent
   source-read provenance.
-- Returns a deterministic Markdown dashboard preview. For an explicit local
-  answer binding, `consultation_release_gate.py` requires that exact preview at
-  the end of the answer bytes before preparing or releasing the bound artifact.
-  This is an optional local wrapper, not a host release gate.
+- Returns a full deterministic Markdown dashboard and a validation record only
+  after route, source, C27, module, research, preflight, and dashboard checks
+  finish. The board includes every declared source, check, issue, module, and
+  operation; no compact rendering limit applies. If receipt validation fails,
+  no successful dashboard result is emitted.
+- For an explicit local answer binding, `consultation_release_gate.py` requires
+  the exact full dashboard and its validation record at the end of the answer.
+  It binds the receipt bytes, answer bytes, and validation-record digest, then
+  rechecks those exact bytes before release. This is a local controller path,
+  not a host release gate.
 
 Run it locally with:
 
@@ -96,7 +106,8 @@ python scripts/consultation_route_gate.py route-receipt.json
 ```
 
 An exit status of `3` rejects a `comprehensive` claim; `2` means the receipt or
-an artifact is invalid. A valid partial route returns `0` and lists open work.
+an artifact is invalid. A valid partial route returns `0`, lists every open
+work item, and includes its full board and validation record.
 
 ## Assurance limit
 

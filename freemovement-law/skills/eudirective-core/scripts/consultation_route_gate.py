@@ -15,11 +15,11 @@ import sys
 from pathlib import Path
 
 from c27_case_state import StateError, load_registry, validate_route_check_record
-from contract_validate import ContractError, load_json, validate_obj
+from contract_validate import ContractError, validate_obj
 from module_conformance import ConformanceError, validate_paths
 from research_gate import ResearchGateError, validate_research
 from issue_source_preflight import SourcePreflightError, validate_source_preflight
-from consultation_dashboard import DashboardError, validate_dashboard_receipt
+from consultation_dashboard import DashboardError, render_dashboard, validate_dashboard_receipt
 from consultation_issue_selection import (
     SelectionError as IssueSelectionError,
     load_json as load_issue_json,
@@ -58,6 +58,7 @@ OPERATION_EVIDENCE_KINDS = {
 CLOSED_C27_STATUSES = {"assessed", "not_applicable"}
 ISSUE_MATRIX_PATH = ROOT / "references" / "consultation-issue-routing.json"
 ISSUE_REGISTRY_PATH = ROOT / "references" / "state-engine" / "check-registry.json"
+ROUTE_GATE_VERSION = "0.2.0"
 
 
 class RouteGateError(ValueError):
@@ -358,7 +359,11 @@ def check_source_preflights(route: dict, operations: dict[str, dict], gaps: list
 
 
 def validate_route(path: Path) -> dict:
-    route = load_json(path)
+    receipt_bytes = path.read_bytes()
+    try:
+        route = json.loads(receipt_bytes.decode("utf-8"))
+    except (UnicodeDecodeError, json.JSONDecodeError) as error:
+        raise RouteGateError("receipt_json_invalid") from error
     validate_obj("consultation-route-receipt", route)
     gaps: list[str] = []
     registry = load_registry()
@@ -395,17 +400,47 @@ def validate_route(path: Path) -> dict:
     else:
         status = "structurally_closed_declared_plan"
 
+    outstanding = sorted(set(gaps))
+    receipt_sha256 = hashlib.sha256(receipt_bytes).hexdigest()
+    validation_record = {
+        "validator": "consultation_route_gate.py",
+        "validator_version": ROUTE_GATE_VERSION,
+        "receipt_sha256": receipt_sha256,
+        "result": status,
+        "outstanding_count": len(outstanding),
+    }
+    dashboard_preview = None
+    if dashboard_report["required"]:
+        dashboard_preview = render_dashboard(
+            route,
+            dashboard_report.get("render_metrics") or {"response": {}, "conversation": {}},
+            outstanding,
+            REQUIRED_OPERATIONS[route["request_kind"]],
+            validation_record=validation_record,
+            validator_reports={
+                "c27_check_count": len(route["c27_checks"]),
+                "issue_records_declared": route.get("issues") is not None,
+                "issue_record_count": len(route.get("issues", [])),
+                "source_ledger_validated": dashboard_report.get("source_metrics") is not None,
+                "dashboard_consistency_validated": True,
+                "module_pairs": module_reports,
+                "research": research_reports,
+                "source_preflight": source_preflight_reports,
+            },
+        )
+
     return {
         "status": status,
         "route_ref": route["route_ref"],
         "coverage_claim": route["coverage_claim"],
         "declared_plan_has_no_outstanding_gaps": not gaps,
-        "outstanding": sorted(set(gaps)),
+        "outstanding": outstanding,
+        "validation_record": validation_record,
         "module_pair_reports": module_reports,
         "research_reports": research_reports,
         "source_preflight_reports": source_preflight_reports,
         "dashboard_required": dashboard_report["required"],
-        "dashboard_preview": dashboard_report["preview"],
+        "dashboard_preview": dashboard_preview,
         "source_metrics": dashboard_report["source_metrics"],
         "assurance": "model_declared_plan_and_references_only; issue_signal_routing_is_checked_only_for_declared_issues; omitted_issues_conditional_trigger_semantics_and_evidence_truth_not_verified",
         "host_release_enforcement": "requires_host_to_call_this_gate_and_enforce_its_result",

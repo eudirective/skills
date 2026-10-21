@@ -149,7 +149,11 @@
       "properties": {
         "state": { "enum": ["explicit", "implicit", "unknown"] },
         "basis": { "enum": ["host_signal", "visible_plugin_marker", "continuation_after_explicit_invocation", "unavailable"] },
-        "dashboard_requested": { "type": "boolean" }
+        "dashboard_requested": { "type": "boolean" },
+        "material_change": {
+          "type": "boolean",
+          "description": "Set true when a new reply materially changes jurisdiction roles, proceedings/stage, legal question, urgency, requested output, issue/check selection, source use, module use, or execution. This makes a fresh full dashboard mandatory even without a new explicit invocation."
+        }
       }
     },
     "source_ledger": {

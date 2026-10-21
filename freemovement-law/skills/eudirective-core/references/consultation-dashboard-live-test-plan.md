@@ -1,9 +1,10 @@
 # Hosted consultation dashboard test plan
 
 **Status:** Not executed. This is a manual acceptance plan for ChatGPT after
-the updated plugin is installed. Offline tests cannot verify host invocation
-signals, visible plugin selection, UI rendering, or whether model instructions
-are followed in a hosted chat.
+the updated plugin is installed. Do not run hosted live cases during local
+maintenance sessions. Offline checks cannot verify host invocation signals,
+visible plugin selection, UI rendering, or whether model instructions are
+followed in a hosted chat.
 
 ## Setup
 
@@ -26,19 +27,21 @@ Select FreeMovement and ask:
 > For a fictional example, what EU free-movement rule generally applies when an EU citizen moves to another Member State with a spouse?
 
 **Expected:** the answer leads with the requested explanation, then includes
-one compact `FreeMovement — Consultation Review` dashboard. Source counts are
-labelled model-reported; this plugin has no host-authenticated source-read
-event. It lists the texts and pinpoints it reports consulting, states unknown
-rather than zero when read tracking is unavailable, and gives a plain-language
-coverage status. It does not claim independently recorded retrieval.
+one full `FreeMovement — Consultation Review` dashboard. It lists every
+classification, operation, selected C27 check, issue, validator result, source
+ledger row, and relevant module. Source counts are labelled model-reported;
+this plugin has no host-authenticated source-read event. It states unknown
+rather than zero when read tracking is unavailable and gives each open item
+its missing detail and effect. It does not claim independently recorded
+retrieval.
 
 ### B. Repeated explicit invocation in one chat
 
 In the same chat, select FreeMovement again and ask a materially different
 follow-up requiring source research.
 
-**Expected:** a new dashboard is present. “This response” is refreshed for the
-new answer. The conversation total deduplicates the same logical law while
+**Expected:** a new full dashboard is present. “This response” is refreshed for
+the new answer. The conversation total deduplicates the same logical law while
 retaining all pinpoints. Earlier module use is separated from current-response
 module use. The answer does not reuse only the prior dashboard.
 
@@ -47,10 +50,10 @@ module use. The answer does not reuse only the prior dashboard.
 Continue in the chat with a short clarification question without selecting the
 plugin again.
 
-**Expected:** a repeated dashboard is optional if the assessment and source or
-module use did not materially change. If a dashboard appears, its counts and
-use states must still be accurate; it must not claim a new explicit
-invocation.
+**Expected:** a dashboard is required if jurisdiction roles, proceeding/stage,
+legal question, urgency, requested output, issue/check selection, sources,
+module use, or execution materially changed. If it appears, its counts and use
+states must still be accurate; it must not claim a new explicit invocation.
 
 ### D. Ordinary mention without invocation
 
@@ -88,7 +91,7 @@ performed.` It does not invent source counts, issues, or module checks.
 - Was the board readable in the ChatGPT client, with no broken tables or
   duplicated one-cell table rendering?
 - Were response and conversation totals separately labelled and deduplicated?
-- Did every source listed as consulted include its title and pinpoint, and
+- Did every source listed in the ledger include its title and pinpoint, and
   agree with the cited/reviewed source in the answer?
 - Were candidate/unaccepted, external, memory-cited, identified-not-read and
   currentness-unverified states represented accurately?
@@ -96,8 +99,10 @@ performed.` It does not invent source counts, issues, or module checks.
   state a reason when a relevant module was not used or C3 conformance was not
   checked?
 - Did partial items identify both the missing item and its effect?
-- When the compact limits were exceeded, did the dashboard show the exact
-  omitted counts and did an expanded audit retain the full details?
+- Did the board show every declared source, check, issue, operation, validator
+  result, and relevant module without compact limits?
+- Did it include the validation result and receipt fingerprint, or explicitly
+  say validation was not run/unavailable?
 - Did any response claim script execution or host enforcement without visible
   evidence?
 

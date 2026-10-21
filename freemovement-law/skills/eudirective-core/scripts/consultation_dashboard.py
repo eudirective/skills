@@ -36,11 +36,6 @@ LEGAL_CATEGORIES = {
 }
 UNRESOLVED_ISSUES = {"answered_conditionally", "source_missing", "fact_missing"}
 OPAQUE_REF = re.compile(r"^r_[a-f0-9]{12,32}$")
-MAX_COMPACT_SOURCE_GROUPS = 10
-MAX_COMPACT_SOURCE_DETAILS = 12
-MAX_COMPACT_GAP_DETAILS = 3
-MAX_COMPACT_REFERENCE_DETAILS = 8
-MAX_COMPACT_MODULE_DETAILS = 10
 SECTION_LABELS = {
     "eu": "EU core", "at": "Austria", "be": "Belgium", "bg": "Bulgaria",
     "ch": "Switzerland", "cy": "Cyprus", "cz": "Czechia", "de": "Germany",
@@ -380,10 +375,6 @@ def _count_for_scope(entries: list[dict], scope: str, tracking: str) -> dict:
     }
 
 
-def _bar(count: int, maximum: int) -> str:
-    return "▰" * max(1, round(12 * count / maximum))
-
-
 OPERATION_LABELS = {
     "route_classification": "Route classification",
     "c23_guidance": "Applicant guidance",
@@ -541,195 +532,354 @@ def _open_work(route_gaps: list[str]) -> list[dict]:
 
 
 def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
-                     required_operation_ids: tuple[str, ...] = ()) -> str | None:
+                     required_operation_ids: tuple[str, ...] = (),
+                     validation_record: dict | None = None,
+                     validator_reports: dict | None = None) -> str | None:
     dashboard = route.get("dashboard")
     if dashboard is None:
         return None
+    invocation = route.get("invocation", {})
+    state = invocation.get("state", "not recorded")
+    basis = invocation.get("basis", "not recorded")
+    validation = validation_record or {
+        "result": "not run by standalone dashboard renderer",
+        "validator": "consultation_route_gate.py",
+        "receipt_sha256": "not available",
+        "outstanding_count": len(set(route_gaps)),
+    }
+    reports = validator_reports or {}
+    lines = ["## FreeMovement — Consultation Review", ""]
+
     if route["request_kind"] == "no_case_assessment":
-        return (
-            "## FreeMovement — Consultation Review\n\n"
-            "**Not verified** · No case assessment was performed.\n"
-            "\n---"
-        )
+        lines.extend([
+            "**Not verified** · No case assessment was performed.",
+            "",
+            "### Invocation and validation",
+            f"- Invocation: {state.replace('_', ' ')}; basis: {basis.replace('_', ' ')}.",
+            f"- Receipt check: {validation.get('result', 'not recorded')}.",
+            f"- Validator: `{validation.get('validator', 'not recorded')}` v{validation.get('validator_version', 'unknown')}.",
+            f"- Receipt fingerprint: `{validation.get('receipt_sha256', 'not available')}`.",
+            f"- Outstanding validation items: {validation.get('outstanding_count', len(set(route_gaps)))}.",
+            "- Host release control: not available in this plugin; this board does not block ChatGPT output.",
+            "",
+            "---",
+        ])
+        return "\n".join(lines)
 
     metrics = source_report
-    status = {
-        "reviewed": "Reviewed", "partial": "Partial", "not_verified": "Not verified",
-    }[dashboard["assessment_status"]]
     response = metrics["response"]
     conversation = metrics["conversation"]
-    source_label = lambda item: f"{item['title']}" + (f" — {', '.join(item['pinpoints'])}" if item["pinpoints"] else "")
-    lines = ["## FreeMovement — Consultation Review", "", f"**{status}**"]
-
-    def metric(value: dict, label: str) -> str:
-        if value["count"] is None:
-            return f"{label}: unknown"
-        return f"{label}: {value['count']} (model-reported)"
-
-    section_count = len(response["sections"]) if response["count"] is not None else None
+    status = {"reviewed": "Reviewed", "partial": "Partial", "not_verified": "Not verified"}[dashboard["assessment_status"]]
     open_work = _open_work(route_gaps)
-    open_count = len(dashboard["issue_summaries"]) + len(open_work)
-    lines += [
-        "",
-        " · ".join([
-            metric(response, "Legal texts this response"),
-            f"Source-library sections: {section_count if section_count is not None else 'unknown'}",
-            f"Outstanding issues and checks: {open_count}",
-        ]),
-        metric(conversation, "Conversation total"),
-    ]
+    issue_summaries = dashboard["issue_summaries"]
+    if validation_record is None:
+        overall = "Validation not run by this standalone renderer"
+    elif validation.get("result") == "structurally_closed_declared_plan":
+        overall = "Structurally closed declared plan"
+    elif validation.get("result") == "rejected_comprehensive_claim":
+        overall = "Comprehensive claim rejected; declared work remains open"
+    else:
+        overall = "Partial route; declared work remains open"
 
-    operations_by_id = {item["operation_id"]: item for item in route["operations"]}
-    applicable_operations = [
-        operations_by_id.get(operation_id, {
-            "operation_id": operation_id, "applicability": "required",
-            "status": "not_recorded", "reason_code": "not_attempted",
-        })
-        for operation_id in required_operation_ids
-    ]
-    applicable_operations.extend(
-        item for item in route["operations"]
-        if item["applicability"] == "triggered" and item["operation_id"] not in required_operation_ids
-    )
-    completed_operations = [item for item in applicable_operations if item["status"] == "completed"]
+    def value_status(value: str) -> str:
+        return value.replace("_", " ")
+
+    def cell(value: object) -> str:
+        return str(value).replace("|", "\\|").replace("\r", " ").replace("\n", " ")
+
+    def refs(refs: list[str]) -> str:
+        if not refs:
+            return "none recorded"
+        counts: dict[str, int] = {}
+        evidence = {item["evidence_ref"]: item for item in route.get("evidence", [])}
+        kind_labels = {
+            "conversation_record": "conversation record", "source_record": "source record",
+            "module_conformance": "module check", "research_gate": "research check",
+            "source_preflight": "source coverage check", "local_artifact": "local artifact",
+        }
+        for ref in refs:
+            kind = evidence.get(ref, {}).get("kind", "unresolved reference")
+            label = kind_labels.get(kind, kind)
+            counts[label] = counts.get(label, 0) + 1
+        return "; ".join(
+            f"{label} ({count})" for label, count in sorted(counts.items())
+        )
+
     lines.extend([
+        f"**{status}** · {overall}",
         "",
-        f"**Execution** · {len(completed_operations)}/{len(applicable_operations)} required or triggered operations recorded complete.",
+        "### Invocation and validation",
+        f"- Invocation: {value_status(state)}; basis: {value_status(basis)}.",
+        f"- Validation result: **{value_status(validation.get('result', 'not recorded'))}**.",
+        f"- Validator: `{validation.get('validator', 'not recorded')}` v{validation.get('validator_version', 'unknown')}.",
+        f"- Receipt fingerprint: `{validation.get('receipt_sha256', 'not available')}`.",
+        f"- Outstanding validation items: {validation.get('outstanding_count', len(set(route_gaps)))}.",
+        "- Validation covers the declared receipt and validator outputs. It does not authenticate model-reported facts, source reads, legal reasoning, or omitted issues.",
+        "- Host release control: not available in this plugin; a host must call a controller and enforce its result to block output.",
+        "",
+        "### At a glance",
+        f"- Assessment: **{status}**; requested coverage: **{value_status(route['coverage_claim'])}**.",
+        f"- Legal texts this response: **{'unknown' if response['count'] is None else response['count']}** (model-reported).",
+        f"- Conversation total: **{'unknown' if conversation['count'] is None else conversation['count']}** (model-reported).",
+        f"- Source-library sections this response: **{'unknown' if response['count'] is None else len(response['sections'])}**.",
+        f"- Declared material issues: **{len(issue_summaries)}**; outstanding checks and operations: **{len(open_work)}**.",
     ])
-    open_operations = [item for item in applicable_operations if item["status"] != "completed"]
-    for item in open_operations:
-        reason = item.get("reason_code", "reason not recorded").replace("_", " ")
-        operation_label = OPERATION_LABELS.get(item["operation_id"], _humanize(item["operation_id"]).title())
-        lines.append(f"- **{operation_label}** · {item['status'].replace('_', ' ')} — {reason}.")
 
-    groups: dict[tuple[str, str], list[dict]] = {}
-    for item in response["sources"]:
-        groups.setdefault((item["section"], item["category"]), []).append(item)
-    if response["count"] is None:
-        lines.extend(["", "**Legal texts**", "Source-use tracking is unavailable for this response; no total is asserted."])
-        if response["sources"]:
-            lines.append("Recorded sources (incomplete list):")
-            shown_sources = sorted(response["sources"], key=lambda x: x["logical_source_id"])
-            for item in shown_sources[:MAX_COMPACT_SOURCE_DETAILS]:
-                lines.append(f"- {source_label(item)} · {item['section']}")
-            omitted = len(shown_sources) - min(len(shown_sources), MAX_COMPACT_SOURCE_DETAILS)
-            if omitted:
-                lines.append(f"- {omitted} additional recorded source details are retained in the expanded audit.")
-    elif groups:
-        maximum = max(len(items) for items in groups.values())
-        lines.extend(["", "**Legal texts read**  ", "Bars compare groups in this response; they do not represent library coverage."])
-        shown_groups = 0
-        shown_source_details = 0
-        for (section, category), items in sorted(groups.items())[:MAX_COMPACT_SOURCE_GROUPS]:
-            shown_groups += 1
-            display_category = CATEGORY_LABELS.get(category, category.replace("_", " ").title())
-            lines.append(f"- **{section} · {display_category} · {len(items)}** `{_bar(len(items), maximum)}`")
-            remaining = MAX_COMPACT_SOURCE_DETAILS - shown_source_details
-            for item in sorted(items, key=lambda x: x["logical_source_id"])[:max(0, remaining)]:
-                tags = []
-                if item["library_state"] == "candidate_unaccepted": tags.append("candidate; not accepted")
-                elif item["library_state"] == "source_note_only": tags.append("source note, not legal text")
-                elif item["library_state"] == "not_recorded": tags.append("acceptance not recorded")
-                tags.append(f"currentness {item['currentness'].replace('_', ' ')}")
-                provenance = item["response_provenance"].replace("_", " ")
-                suffix = f" ({'; '.join(tags)})" if tags else ""
-                lines.append(f"  - {source_label(item)}{suffix} · {provenance}")
-                shown_source_details += 1
-        omitted_source_details = len(response["sources"]) - shown_source_details
-        omitted_groups = len(groups) - shown_groups
-        if omitted_source_details or omitted_groups:
-            group_note = (
-                f" across {omitted_groups} additional group{'s' if omitted_groups != 1 else ''}"
-                if omitted_groups else ""
+    lines.extend(["", "### Task scope"])
+    for key, item in route["classification"].items():
+        label = CLASSIFICATION_LABELS.get(key, _humanize(key).title())
+        lines.append(f"- **{label}:** {value_status(item['state'])} · evidence: {refs([item['evidence_ref']])}.")
+    conditional = route["conditional_review"]
+    lines.append(
+        f"- **Conditional workflow review:** {value_status(conditional['status'])} · "
+        f"evidence: {refs([conditional['evidence_ref']])}."
+    )
+
+    operations = {item["operation_id"]: item for item in route["operations"]}
+    for operation_id in required_operation_ids:
+        operations.setdefault(operation_id, {
+            "operation_id": operation_id, "applicability": "required", "status": "not_recorded",
+            "reason_code": "not_attempted", "evidence_refs": [],
+        })
+    lines.extend(["", "### Work performed and engine checks"])
+    applicable_operations = [
+        item for item in operations.values()
+        if item["applicability"] in {"required", "triggered"}
+    ]
+    def operation_has_validation_gap(operation_id: str) -> bool:
+        return any(
+            gap.startswith(f"operation:{operation_id}:")
+            or gap == f"required_operation_missing:{operation_id}"
+            or gap == f"required_operation_misclassified:{operation_id}"
+            for gap in route_gaps
+        )
+
+    completed_operations = sum(
+        item["status"] == "completed"
+        and bool(item.get("evidence_refs"))
+        and not operation_has_validation_gap(item["operation_id"])
+        for item in applicable_operations
+    )
+    lines.append(
+        f"{completed_operations}/{len(applicable_operations)} required or triggered operations have completion records with acceptable evidence."
+    )
+    for operation_id, item in sorted(operations.items(), key=lambda pair: (pair[0] not in required_operation_ids, pair[0])):
+        label = OPERATION_LABELS.get(operation_id, _humanize(operation_id).title())
+        evidence = refs(item.get("evidence_refs", []))
+        applicability = value_status(item["applicability"])
+        result = value_status(item["status"])
+        if operation_has_validation_gap(operation_id) and item["status"] == "completed":
+            result = "completion not verified"
+        reason = value_status(item.get("reason_code", "reason not recorded"))
+        detail = f" Evidence: {evidence}."
+        if item.get("reason_code"):
+            detail += f" Reason: {reason}."
+        lines.append(f"- **{label}** (`{operation_id}`) — {applicability}; {result}.{detail}")
+    lines.append("\nExecution status is receipt-declared unless a named validator report below confirms that its validator ran.")
+
+    lines.extend(["", "### C27 case-state checks"])
+    if route.get("c27_checks"):
+        issue_summaries_by_ref = {item["issue_ref"]: item for item in dashboard["issue_summaries"]}
+        scope_labels = {}
+        for issue in route.get("issues", []):
+            summary = issue_summaries_by_ref.get(issue["issue_ref"])
+            if summary:
+                scope_labels.setdefault(issue["scope_ref"], summary["title"])
+        for index, entry in enumerate(route["c27_checks"], start=1):
+            record = entry["record"]
+            evidence_text = f"Evidence: {refs(record['evidence_refs'])}; sources: {refs(record['source_refs'])}"
+            scope_label = scope_labels.get(entry["scope_ref"], f"Scope {index}")
+            lines.append(f"- **{scope_label} — `{record['check_id']}`**")
+            lines.append(
+                f"  - Status and method: {value_status(record['status'])} · {value_status(record['method'])}. "
+                f"Reason: {record['reason']}"
+            )
+            lines.append(f"  - {evidence_text}.")
+            if record.get("scope_exclusion"):
+                lines.append(f"  - Scope exclusion: {record['scope_exclusion']}.")
+    else:
+        lines.append("No C27 checks were recorded for this request.")
+
+    lines.extend(["", "### Material issues and open work"])
+    if issue_summaries:
+        issue_by_ref = {item["issue_ref"]: item for item in route.get("issues", [])}
+        for index, item in enumerate(issue_summaries, start=1):
+            linked = issue_by_ref.get(item["issue_ref"], {})
+            signals = ", ".join(_humanize(signal) for signal in linked.get("signal_ids", [])) or "signals not recorded"
+            disposition = value_status(linked.get("disposition", "not recorded"))
+            lines.append(
+                f"- **Issue {index}: {item['title']}** · {disposition}; signals: {signals}. "
+                f"Missing: {item['missing']} Effect: {item['effect']}"
+            )
+    if open_work:
+        for item in open_work:
+            lines.append(f"- **{item['title']}** · Missing: {item['missing']} Effect: {item['effect']}")
+    if not issue_summaries and not open_work:
+        lines.append("No outstanding items were reported by the declared route and validators.")
+
+    research_reports = {item.get("research_ref"): item for item in reports.get("research", []) if item.get("research_ref")}
+    preflight_reports = {item.get("preflight_id"): item for item in reports.get("source_preflight", []) if item.get("preflight_id")}
+    lines.extend(["", "### Deterministic validator results"])
+    lines.append("- Route-receipt schema and declared references: passed; this board was returned only after structural validation.")
+    lines.append(
+        f"- C27 record validation: {reports.get('c27_check_count', 0)} selected checks passed the shared record/status/trace validator."
+        if reports.get("c27_check_count", 0)
+        else "- C27 record validation: no check records were supplied."
+    )
+    if reports.get("issue_records_declared"):
+        lines.append(
+            f"- Issue-to-C27 routing: {reports.get('issue_record_count', 0)} declared issue records checked against the routing matrix."
+        )
+    else:
+        lines.append("- Issue-to-C27 routing: no issue records were declared, so issue-signal selection was not run.")
+    lines.append(
+        "- Source-ledger consistency: passed; source-use counts remain model-reported."
+        if reports.get("source_ledger_validated")
+        else "- Source-ledger consistency: no consultation ledger was available for validation."
+    )
+    lines.append(
+        "- Dashboard consistency: passed; issue summaries and module records reconcile with the declared receipt and validator results."
+        if reports.get("dashboard_consistency_validated")
+        else "- Dashboard consistency: not run."
+    )
+    lines.extend(["", "### Research and source coverage validation"])
+    if route.get("research_artifacts"):
+        for artifact in route["research_artifacts"]:
+            report = research_reports.get(artifact["research_ref"], {})
+            lines.append(
+                f"- **Research bundle** — {value_status(report.get('status', 'not validated'))}; "
+                f"mode: {value_status(report.get('mode', 'not reported'))}; "
+                f"coverage: {value_status(report.get('coverage_status', 'unknown'))}; "
+                f"complete: {report.get('research_complete', 'unknown')}."
             )
             lines.append(
-                f"- Compact view omits {omitted_source_details} source detail{'s' if omitted_source_details != 1 else ''}"
-                f"{group_note}; all titles and pinpoints remain in the expanded audit."
+                f"  - Plan: `{artifact['plan_path']}`; evidence bundle: `{artifact['bundle_path']}`; "
+                f"tasks: {report.get('task_count', 'unknown')}; findings: {report.get('finding_count', 'unknown')}; "
+                f"evidence items: {report.get('evidence_count', 'unknown')}; claims: {report.get('claim_count', 'unknown')}."
+            )
+            if report.get("plan_sha256"):
+                lines.append(f"  - Validated plan fingerprint: `{report['plan_sha256']}`.")
+            if report.get("reason"):
+                lines.append(f"  - Validation reason: {report['reason']}.")
+            if report.get("legal_merits_status") or report.get("downstream_status"):
+                lines.append(
+                    f"  - Legal merits: {value_status(report.get('legal_merits_status', 'not reported'))}; "
+                    f"downstream use: {value_status(report.get('downstream_status', 'not reported'))}."
+                )
+            if artifact.get("preflight_ref"):
+                preflight = preflight_reports.get(artifact["preflight_ref"], {})
+                lines.append(
+                    f"  - Official-source coverage: {value_status(preflight.get('status', 'not validated'))}; "
+                    f"validator status: {value_status(preflight.get('validation_status', 'not reported'))}; "
+                    f"accounted for review: {preflight.get('source_coverage_accounted_for_review', 'unknown')}; "
+                    f"research gate: {value_status(preflight.get('research_gate_status', 'not reported') )}."
+                )
+                for issue in preflight.get("issues", []):
+                    lines.append(
+                        f"    - Source issue {issue.get('issue_id', 'unknown')} · {value_status(issue.get('owner_role', 'role unknown'))}; "
+                        f"satisfied classes: {', '.join(issue.get('satisfied_source_classes', [])) or 'none'}; "
+                        f"open items: {', '.join(issue.get('outstanding', [])) or 'none'}."
+                    )
+                if preflight.get("outstanding"):
+                    lines.append(f"  - Full outstanding source items: {', '.join(preflight['outstanding'])}.")
+                if preflight.get("reason"):
+                    lines.append(f"  - Preflight validation reason: {preflight['reason']}.")
+    else:
+        lines.append("No research artifact was supplied. Where research was required, the missing task is listed above.")
+    if reports.get("module_pairs"):
+        lines.append("- Module-pair validator results:")
+        for report in reports["module_pairs"]:
+            lines.append(
+                f"  - {report.get('module_id', 'module not identified')}: "
+                f"{value_status(report.get('status', 'unknown'))}; jurisdiction: {value_status(report.get('jurisdiction', 'not reported'))}; "
+                f"contract/profile: {report.get('contract_version', 'unknown')}/{report.get('profile_version', 'unknown')}; "
+                f"supported roles: {', '.join(report.get('supported_roles', [])) or 'none reported'}; "
+                f"records: {report.get('owned_record_count', 'unknown')} owned, {report.get('usable_source_count', 'unknown')} usable, "
+                f"{report.get('full_text_source_count', 'unknown')} full text, {report.get('known_gap_count', 'unknown')} known gaps."
+            )
+            if report.get("reason"):
+                lines.append(f"    - Validation reason: {report['reason']}.")
+    if not reports.get("module_pairs"):
+        lines.append("- No C3 module-pair validator report was produced.")
+
+    lines.extend(["", "### Source ledger"])
+    lines.append(
+        f"Response tracking: {value_status(route['source_ledger']['response_tracking'])}; "
+        f"conversation tracking: {value_status(route['source_ledger']['conversation_tracking'])}. "
+        "Counts are model-reported; unavailable tracking remains unknown."
+    )
+    ledger = sorted(route["source_ledger"]["sources"], key=lambda item: (item["section"].casefold(), item["title"].casefold(), item["logical_source_id"]))
+    if ledger:
+        for item in ledger:
+            category = CATEGORY_LABELS.get(item["category"], _humanize(item["category"]))
+            origin = "external official source" if item["origin"] == "external_official" else "source library"
+            edition = item.get("version_or_edition") or "edition not recorded"
+            pinpoints = ", ".join(item["pinpoints"]) or "pinpoint not recorded"
+            url = item.get("official_url")
+            title = f"[{item['title']}]({url})" if url else item["title"]
+            source_type = f" · {item['source_type']}" if item.get("source_type") else ""
+            lines.append(f"- **{title}** — {item['section']} · {item['jurisdiction']} · {category}{source_type}.")
+            lines.append(
+                f"  - Identity: source `{item['source_id']}`; logical record `{item['logical_source_id']}`; {origin}."
+            )
+            lines.append(
+                f"  - This answer: {value_status(item['response_use'])}; provenance {value_status(item['response_provenance'])}; "
+                f"read note: {cell(item.get('response_read_evidence') or 'none')}; evidence: "
+                f"{refs([item['response_evidence_ref']] if item.get('response_evidence_ref') else [])}."
+            )
+            lines.append(
+                f"  - Earlier chat: {value_status(item['conversation_use'])}; provenance {value_status(item['conversation_provenance'])}; "
+                f"read note: {cell(item.get('conversation_read_evidence') or 'none')}; evidence: "
+                f"{refs([item['conversation_evidence_ref']] if item.get('conversation_evidence_ref') else [])}."
+            )
+            representations = ", ".join(item["representation_ids"]) or "not recorded"
+            lines.append(f"  - Edition/version: {edition}; representations: {representations}; pinpoints: {pinpoints}.")
+            lines.append(
+                f"  - Currentness: {value_status(item['currentness'])}; library status: "
+                f"{value_status(item['library_state'])}."
             )
     else:
-        lines.extend(["", "**Legal texts read** · none recorded (model-reported)."])
-
-    non_text_read = [
-        item for item in route["source_ledger"]["sources"]
-        if item["response_use"] == "consulted" and item["category"] in NON_TEXT_CATEGORIES
-    ]
-    if non_text_read:
-        lines.extend(["", "**References or unclassified materials read · not counted as legal texts**"])
-        ordered_non_text = sorted(non_text_read, key=lambda value: value["logical_source_id"])
-        for item in ordered_non_text[:MAX_COMPACT_REFERENCE_DETAILS]:
-            category = CATEGORY_LABELS.get(item["category"], item["category"].replace("_", " "))
-            lines.append(f"- {item['title']} · {category}")
-        if len(ordered_non_text) > MAX_COMPACT_REFERENCE_DETAILS:
-            omitted = len(ordered_non_text) - MAX_COMPACT_REFERENCE_DETAILS
-            lines.append(f"- {omitted} additional reference{'s' if omitted != 1 else ''} are retained in the expanded audit.")
-
-    not_read = [item for item in route["source_ledger"]["sources"] if item["response_use"] == "identified_not_read"]
-    memory = [item for item in route["source_ledger"]["sources"] if item["response_use"] == "cited_from_memory"]
-    if not_read or memory:
-        lines.extend(["", "**Not counted as consulted**"])
-        if not_read:
-            lines.append("- Identified but not read: " + "; ".join(item["title"] for item in not_read[:MAX_COMPACT_REFERENCE_DETAILS]))
-            if len(not_read) > MAX_COMPACT_REFERENCE_DETAILS:
-                omitted = len(not_read) - MAX_COMPACT_REFERENCE_DETAILS
-                lines.append(f"- {omitted} additional identified source{'s' if omitted != 1 else ''} are retained in the expanded audit.")
-        if memory:
-            lines.append("- Cited without a new read: " + "; ".join(item["title"] for item in memory[:MAX_COMPACT_REFERENCE_DETAILS]))
-            if len(memory) > MAX_COMPACT_REFERENCE_DETAILS:
-                omitted = len(memory) - MAX_COMPACT_REFERENCE_DETAILS
-                lines.append(f"- {omitted} additional memory citation{'s' if omitted != 1 else ''} are retained in the expanded audit.")
-
-    remaining_gap_slots = MAX_COMPACT_GAP_DETAILS
-    issue_limit = remaining_gap_slots - 1 if dashboard["issue_summaries"] and open_work else remaining_gap_slots
-    shown_issue_summaries = dashboard["issue_summaries"][:issue_limit]
-    remaining_gap_slots -= len(shown_issue_summaries)
-    if shown_issue_summaries:
-        lines.extend(["", "**Still missing — material issues**"])
-        for issue in shown_issue_summaries:
-            lines.append(f"- **{issue['title']}** — Missing: {issue['missing']}. {issue['effect']}")
-    shown_open_work = open_work[:remaining_gap_slots]
-    if shown_open_work:
-        lines.extend(["", "**Still missing — checks and execution**"])
-        for item in shown_open_work:
-            lines.append(f"- **{item['title']}** — Missing: {item['missing']} {item['effect']}")
-    omitted_gap_count = len(dashboard["issue_summaries"]) + len(open_work) - len(shown_issue_summaries) - len(shown_open_work)
-    if omitted_gap_count:
-        item_word = "issue or check" if omitted_gap_count == 1 else "issues or checks"
-        verb = "remains" if omitted_gap_count == 1 else "remain"
-        lines.append(
-            f"- {omitted_gap_count} additional recorded {item_word} {verb}; request the expanded audit for each missing item and effect."
-        )
+        lines.append("No source records were supplied.")
 
     module_entries = sorted(
         dashboard["module_use"],
         key=lambda item: (item["module_id"].casefold() != "eudirective-core", item["module_id"].casefold(), item["role"].casefold()),
     )
+    lines.extend(["", "### Module use in this answer and chat"])
     if module_entries:
-        lines.extend(["", "**Relevant modules**"])
-        for item in module_entries[:MAX_COMPACT_MODULE_DETAILS]:
-            current = {
-                "used": "used this response",
-                "not_used": "not used this response",
-                "not_applicable": "not applicable this response",
-            }[item["response_use"]]
-            earlier = {
-                "used_earlier": "used earlier in this chat",
-                "not_used": "not used earlier in this chat",
-                "unknown": "earlier use unknown",
-            }[item["conversation_use"]]
-            availability = item["availability"].replace("_", " ")
-            conformance = item["conformance"].replace("_", " ")
+        for item in module_entries:
+            current = {"used": "used", "not_used": "not used", "not_applicable": "not applicable"}[item["response_use"]]
+            earlier = {"used_earlier": "used earlier", "not_used": "not used earlier", "unknown": "unknown"}[item["conversation_use"]]
             display_name = item.get("display_name", item["module_id"])
             role_label = item.get("role_label", _humanize(item["role"]))
+            identity = f" (`{item['module_id']}`)" if display_name != item["module_id"] else ""
+            lines.append(f"- **{display_name}{identity}** — {role_label}.")
             lines.append(
-                f"- **{display_name}** · {role_label}: {current}; {earlier}; "
-                f"{availability}; C3 {conformance}. {item['reason']}"
+                f"  - This answer: {current}; earlier in chat: {earlier}; "
+                f"availability: {value_status(item['availability'])}; C3: {value_status(item['conformance'])}."
             )
-        if len(module_entries) > MAX_COMPACT_MODULE_DETAILS:
-            omitted_modules = len(module_entries) - MAX_COMPACT_MODULE_DETAILS
-            verb = "is" if omitted_modules == 1 else "are"
-            lines.append(f"- {omitted_modules} additional module-use record{'s' if omitted_modules != 1 else ''} {verb} retained in the expanded audit.")
-    assurance = "Source reads and module use are model-reported. This plugin has no host-authenticated source-read event; local checks validate declared structure, not whether a text was actually opened."
-    lines.extend(["", f"*{assurance}*", "", "---"])
+            lines.append(f"  - Reason: {item['reason']}")
+    else:
+        lines.append("No module-use record was supplied.")
+
+    if route.get("issues"):
+        lines.extend(["", "### Issue routing record"])
+        for index, issue in enumerate(route["issues"], start=1):
+            lines.append(
+                f"- Issue {index}: {value_status(issue['disposition'])}; "
+                f"signals: {', '.join(_humanize(value) for value in issue['signal_ids'])}; "
+                f"scope evidence: {refs([issue['evidence_ref']])}."
+            )
+
+    lines.extend([
+        "",
+        "### What this board can verify",
+        "- It lists every source, selected C27 check, declared issue, module record, and required or triggered operation present in the receipt; nothing is omitted for compactness.",
+        "- Local validators verify declared structure and selected artifacts. They do not prove the truth of model-reported work or detect omitted issues and triggers.",
+        "- This plugin has no ChatGPT host release hook. A local controller can bind this exact answer and receipt when a host actually calls it; it cannot intercept ordinary ChatGPT output by itself.",
+        "",
+        "---",
+    ])
     return "\n".join(lines)
 
 
@@ -753,8 +903,13 @@ def validate_dashboard_receipt(route: dict, evidence_index: dict[str, dict], rou
         raise DashboardError("implicit_invocation_basis_invalid")
     if state == "unknown" and basis != "unavailable":
         raise DashboardError("unknown_invocation_basis_invalid")
-    required = state == "explicit" or invocation.get("dashboard_requested") is True
     dashboard = route.get("dashboard")
+    required = (
+        state == "explicit"
+        or invocation.get("dashboard_requested") is True
+        or invocation.get("material_change") is True
+        or dashboard is not None
+    )
     if required and dashboard is None:
         raise DashboardError("mandatory_dashboard_missing")
     if dashboard is None:
@@ -764,7 +919,13 @@ def validate_dashboard_receipt(route: dict, evidence_index: dict[str, dict], rou
                 or dashboard["module_use"]
                 or route["coverage_claim"] == "comprehensive"):
             raise DashboardError("non_consultation_dashboard_must_be_minimal")
-        return {"required": required, "preview": render_dashboard(route, {"response": {}, "conversation": {}}, route_gaps), "source_metrics": None}
+        empty_metrics = {"response": {}, "conversation": {}}
+        return {
+            "required": required,
+            "preview": render_dashboard(route, empty_metrics, route_gaps),
+            "source_metrics": None,
+            "render_metrics": empty_metrics,
+        }
 
     ledger = route.get("source_ledger")
     if not isinstance(ledger, dict):
@@ -833,4 +994,12 @@ def validate_dashboard_receipt(route: dict, evidence_index: dict[str, dict], rou
     if dashboard["assessment_status"] == "partial" and not dashboard["issue_summaries"] and not _open_work(route_gaps):
         raise DashboardError("partial_assessment_without_explained_open_work")
     preview = render_dashboard(route, metrics, route_gaps, required_operation_ids)
-    return {"required": required, "preview": preview, "source_metrics": {k: {"status": v["status"], "count": v["count"], "sections": v["sections"]} for k, v in metrics.items() if k in {"response", "conversation"}}}
+    return {
+        "required": required,
+        "preview": preview,
+        "source_metrics": {
+            k: {"status": v["status"], "count": v["count"], "sections": v["sections"]}
+            for k, v in metrics.items() if k in {"response", "conversation"}
+        },
+        "render_metrics": metrics,
+    }

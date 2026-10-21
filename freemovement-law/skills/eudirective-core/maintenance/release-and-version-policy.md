@@ -1,5 +1,23 @@
 # Release and version policy
 
+## Plugin v0.54.3 / core v0.53.3 full dashboard and receipt-validation binding
+
+Compatible presentation and controller hardening. Replace the compact-by-
+default dashboard with a full board after every explicit invocation and any
+material continuation change. The board now lists every declared classification,
+operation, C27 check, issue, validator result, source-ledger row, and module-use
+entry, without truncation. The route gate emits it only after validating the
+declared receipt and includes a validation record bound to the exact receipt
+SHA-256. The local release binding now includes the validation-record digest in
+addition to the receipt and answer digests. The receipt can mark
+`invocation.material_change=true` to require a fresh board on a continuation.
+
+The plugin still has no ChatGPT host release hook; hosted responses cannot be
+made non-bypassable by skill instructions or these local scripts. The hosted
+full-board acceptance plan remains unexecuted and is not a local maintenance
+prerequisite. Core advances from `0.53.2` to `0.53.3`; plugin advances from
+`0.54.2` to `0.54.3`.
+
 ## Plugin v0.54.2 / core v0.53.2 source taxonomy and provenance correction
 
 The consultation dashboard now maps known mission directories and retrieval
