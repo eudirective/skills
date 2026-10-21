@@ -4,6 +4,8 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
+import re
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -172,6 +174,21 @@ class ConsultationDashboardMcpTests(unittest.TestCase):
         self.assertIn("ui/notifications/tool-result", html)
         self.assertNotIn("localStorage", html)
         self.assertNotIn("fetch(", html)
+
+    def test_ui_script_parses_with_node_when_available(self):
+        node = shutil.which("node")
+        if node is None:
+            self.skipTest("Node.js is unavailable")
+        html = UI_PATH.read_text(encoding="utf-8")
+        scripts = re.findall(r"<script>(.*?)</script>", html, flags=re.DOTALL)
+        self.assertEqual(len(scripts), 1)
+        with tempfile.TemporaryDirectory() as directory:
+            script_path = Path(directory) / "dashboard-ui.js"
+            script_path.write_text(scripts[0], encoding="utf-8")
+            result = subprocess.run(
+                [node, "--check", str(script_path)], capture_output=True, text=True, check=False,
+            )
+        self.assertEqual(result.returncode, 0, result.stderr)
 
     def test_stdio_protocol_round_trip_returns_view_and_fallback(self):
         request_lines = [

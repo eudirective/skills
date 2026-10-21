@@ -57,7 +57,7 @@ research artifacts.
 | The packaged server entrypoint works | `test_consultation_dashboard_mcp.py` resolves `${PLUGIN_ROOT}` from `mcp.json` and starts the configured stdio server; an extracted-archive smoke test also used a synthetic receipt | Passed locally; proves package launch and response shape, not installation into ChatGPT |
 | The candidate tool is installed in this maintenance session | Current tool registry lookup for `render_consultation_dashboard` | Not exposed; this session cannot provide installed-candidate invocation evidence |
 | View model and renderer are deterministic and validated | Versioned JSON schema, shared route gate, deterministic-output and malformed-input tests | Passed locally |
-| The UI structure includes accessibility and fallback behavior | Static accessibility assertions and source inspection | Passed statically; no target-client visual observation |
+| The UI structure includes accessibility and fallback behavior | Static accessibility assertions, DOM safety checks, and Node syntax check | Passed locally; no target-client visual observation |
 | A missing tool or invalid receipt is reported honestly | Skill instructions, Markdown fallback plan, error tests | Implemented and locally tested |
 | The host will always invoke or display the dashboard | No host-side evidence | Not established |
 | The host will prevent release without a valid dashboard | No host-side evidence | Not established |
