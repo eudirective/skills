@@ -480,8 +480,8 @@ class ConsultationDashboardTests(unittest.TestCase):
         route["coverage_claim"] = "partial"
         preview = self.report(route, ["required_operation_missing:c23_guidance"])["preview"]
         self.assertIn("4 of 5 required or triggered operations have completion records with acceptable evidence", preview)
-        self.assertIn("**Applicant guidance** (`c23_guidance`) — required; not recorded.", preview)
-        self.assertIn("Applicant guidance", preview)
+        self.assertIn("#### 🟠 Applicant guidance", preview)
+        self.assertIn("`c23_guidance` · required · **not recorded**.", preview)
         self.assertIn("Its findings are absent", preview)
 
     def test_execution_summary_uses_recorded_operation_statuses(self):
@@ -492,7 +492,8 @@ class ConsultationDashboardTests(unittest.TestCase):
         route["coverage_claim"] = "partial"
         preview = self.report(route, ["operation:c23_guidance:not_checked"])["preview"]
         self.assertIn("4 of 5 required or triggered operations have completion records with acceptable evidence", preview)
-        self.assertIn("**Applicant guidance** (`c23_guidance`) — required; not checked.", preview)
+        self.assertIn("#### 🟠 Applicant guidance", preview)
+        self.assertIn("`c23_guidance` · required · **not checked**.", preview)
 
     def test_completed_operation_without_acceptable_evidence_is_not_reported_as_complete(self):
         route = make_route(coverage="partial", assessment_status="partial")
@@ -500,7 +501,8 @@ class ConsultationDashboardTests(unittest.TestCase):
         operation["evidence_refs"] = []
         preview = self.report(route, ["operation:c23_guidance:evidence_reference_missing"])["preview"]
         self.assertIn("4 of 5 required or triggered operations have completion records with acceptable evidence", preview)
-        self.assertIn("**Applicant guidance** (`c23_guidance`) — required; completion not verified", preview)
+        self.assertIn("#### 🟠 Applicant guidance", preview)
+        self.assertIn("`c23_guidance` · required · **completion not verified**.", preview)
 
     def test_partial_issue_must_match_dashboard_and_name_effect(self):
         ref = "r_0000000000000008"
