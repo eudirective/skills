@@ -19,6 +19,7 @@ from contract_validate import ContractError, load_json, validate_obj
 from module_conformance import ConformanceError, validate_paths
 from research_gate import ResearchGateError, validate_research
 from issue_source_preflight import SourcePreflightError, validate_source_preflight
+from consultation_dashboard import DashboardError, validate_dashboard_receipt
 from consultation_issue_selection import (
     SelectionError as IssueSelectionError,
     load_json as load_issue_json,
@@ -41,6 +42,7 @@ REQUIRED_OPERATIONS = {
         "source_preflight",
         "requested_output",
     ),
+    "no_case_assessment": ("route_classification", "requested_output"),
 }
 OPERATION_EVIDENCE_KINDS = {
     "route_classification": {"conversation_record"},
@@ -77,6 +79,10 @@ def safe_relative_file(base: Path, value: str, label: str) -> Path:
 
 
 def check_c27_records(route: dict, registry: dict, gaps: list[str]) -> int:
+    if route["request_kind"] == "no_case_assessment":
+        if route["c27_checks"] or route.get("issues"):
+            raise RouteGateError("non_consultation_receipt_contains_case_assessment")
+        return 0
     seen: set[tuple[str, str]] = set()
     for item in route["c27_checks"]:
         record = item["record"]
@@ -375,6 +381,13 @@ def validate_route(path: Path) -> dict:
     check_operation_evidence(route, evidence_index, gaps)
     check_declared_issues(route, evidence_index, gaps)
 
+    try:
+        dashboard_report = validate_dashboard_receipt(
+            route, evidence_index, gaps, module_reports, REQUIRED_OPERATIONS[route["request_kind"]]
+        )
+    except DashboardError as error:
+        raise RouteGateError(f"dashboard:{error}") from error
+
     if route["coverage_claim"] == "comprehensive" and gaps:
         status = "rejected_comprehensive_claim"
     elif gaps:
@@ -391,6 +404,9 @@ def validate_route(path: Path) -> dict:
         "module_pair_reports": module_reports,
         "research_reports": research_reports,
         "source_preflight_reports": source_preflight_reports,
+        "dashboard_required": dashboard_report["required"],
+        "dashboard_preview": dashboard_report["preview"],
+        "source_metrics": dashboard_report["source_metrics"],
         "assurance": "model_declared_plan_and_references_only; issue_signal_routing_is_checked_only_for_declared_issues; omitted_issues_conditional_trigger_semantics_and_evidence_truth_not_verified",
         "host_release_enforcement": "requires_host_to_call_this_gate_and_enforce_its_result",
     }

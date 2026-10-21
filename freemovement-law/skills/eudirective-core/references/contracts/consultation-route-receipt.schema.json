@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Consultation route receipt 0.1.0",
+  "title": "Consultation route receipt 0.2.0",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -17,9 +17,12 @@
     "coverage_claim"
   ],
   "properties": {
-    "schema_version": { "const": "0.1.0" },
+    "schema_version": { "enum": ["0.1.0", "0.2.0"] },
     "route_ref": { "$ref": "#/$defs/opaque_ref" },
-    "request_kind": { "enum": ["applicant_guidance", "source_research"] },
+    "request_kind": { "enum": ["applicant_guidance", "source_research", "no_case_assessment"] },
+    "invocation": { "$ref": "#/$defs/invocation" },
+    "source_ledger": { "$ref": "#/$defs/source_ledger" },
+    "dashboard": { "$ref": "#/$defs/dashboard" },
     "classification": {
       "type": "object",
       "additionalProperties": false,
@@ -80,6 +83,44 @@
     },
     "coverage_claim": { "enum": ["comprehensive", "partial", "preliminary"] }
   },
+  "allOf": [
+    {
+      "if": { "properties": { "schema_version": { "const": "0.2.0" } }, "required": ["schema_version"] },
+      "then": {
+        "required": ["invocation"],
+        "allOf": [
+          {
+            "if": { "properties": { "request_kind": { "enum": ["applicant_guidance", "source_research"] } }, "required": ["request_kind"] },
+            "then": { "required": ["source_ledger"] }
+          },
+          {
+            "if": {
+              "properties": {
+                "invocation": {
+                  "properties": { "state": { "const": "explicit" } },
+                  "required": ["state"]
+                }
+              },
+              "required": ["invocation"]
+            },
+            "then": { "required": ["dashboard"] }
+          },
+          {
+            "if": {
+              "properties": {
+                "invocation": {
+                  "properties": { "dashboard_requested": { "const": true } },
+                  "required": ["dashboard_requested"]
+                }
+              },
+              "required": ["invocation"]
+            },
+            "then": { "required": ["dashboard"] }
+          }
+        ]
+      }
+    }
+  ],
   "$defs": {
     "opaque_ref": {
       "type": "string",
@@ -99,6 +140,94 @@
       "properties": {
         "state": { "enum": ["recorded", "unknown", "not_applicable"] },
         "evidence_ref": { "$ref": "#/$defs/opaque_ref" }
+      }
+    },
+    "invocation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["state", "basis", "dashboard_requested"],
+      "properties": {
+        "state": { "enum": ["explicit", "implicit", "unknown"] },
+        "basis": { "enum": ["host_signal", "visible_plugin_marker", "continuation_after_explicit_invocation", "unavailable"] },
+        "dashboard_requested": { "type": "boolean" }
+      }
+    },
+    "source_ledger": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["response_tracking", "conversation_tracking", "sources"],
+      "properties": {
+        "response_tracking": { "enum": ["runtime_recorded", "model_declared", "unavailable"] },
+        "conversation_tracking": { "enum": ["runtime_recorded", "model_declared", "unavailable"] },
+        "sources": {
+          "type": "array", "maxItems": 300,
+          "items": { "$ref": "#/$defs/consulted_source" }
+        }
+      }
+    },
+    "consulted_source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "logical_source_id", "source_id", "title", "section", "jurisdiction", "category", "origin",
+        "official_url", "version_or_edition", "representation_ids", "pinpoints", "currentness", "library_state",
+        "response_use", "conversation_use", "response_provenance", "conversation_provenance",
+        "response_read_evidence", "conversation_read_evidence", "response_evidence_ref", "conversation_evidence_ref"
+      ],
+      "properties": {
+        "logical_source_id": { "type": "string", "minLength": 1, "maxLength": 240 },
+        "source_id": { "type": "string", "minLength": 1, "maxLength": 240 },
+        "title": { "type": "string", "minLength": 1, "maxLength": 500 },
+        "section": { "type": "string", "minLength": 1, "maxLength": 100 },
+        "jurisdiction": { "type": "string", "pattern": "^(EU|[A-Z]{2})$" },
+        "category": { "enum": ["eu_legislation", "national_legislation", "case_law", "commission_guidance", "official_guidance", "procedural_rule", "other_legal_text", "publisher_portal", "source_note", "other_reference"] },
+        "source_type": { "type": "string", "maxLength": 120 },
+        "origin": { "enum": ["bundled_library", "external_official"] },
+        "official_url": { "type": ["string", "null"], "maxLength": 2000 },
+        "version_or_edition": { "type": ["string", "null"], "maxLength": 200 },
+        "representation_ids": { "type": "array", "maxItems": 20, "uniqueItems": true, "items": { "type": "string", "maxLength": 300 } },
+        "pinpoints": { "type": "array", "maxItems": 40, "uniqueItems": true, "items": { "type": "string", "minLength": 1, "maxLength": 120 } },
+        "currentness": { "enum": ["reviewed_current", "reviewed_within_cutoff", "reviewed_historical_scope", "unknown", "stale"] },
+        "library_state": { "enum": ["registered_record", "candidate_unaccepted", "source_note_only", "not_recorded", "not_applicable"] },
+        "response_use": { "enum": ["consulted", "identified_not_read", "cited_from_memory", "not_referenced"] },
+        "conversation_use": { "enum": ["consulted", "identified_not_read", "cited_from_memory", "not_referenced"] },
+        "response_provenance": { "enum": ["runtime_recorded", "model_declared", "none"] },
+        "conversation_provenance": { "enum": ["runtime_recorded", "model_declared", "none"] },
+        "response_read_evidence": { "type": ["string", "null"], "maxLength": 500 },
+        "conversation_read_evidence": { "type": ["string", "null"], "maxLength": 500 },
+        "response_evidence_ref": { "oneOf": [{ "$ref": "#/$defs/opaque_ref" }, { "type": "null" }] },
+        "conversation_evidence_ref": { "oneOf": [{ "$ref": "#/$defs/opaque_ref" }, { "type": "null" }] }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "origin": { "const": "external_official" } }, "required": ["origin"] },
+          "then": { "required": ["source_type"] }
+        }
+      ]
+    },
+    "dashboard": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["assessment_status", "issue_summaries", "module_use"],
+      "properties": {
+        "assessment_status": { "enum": ["reviewed", "partial", "not_verified"] },
+        "issue_summaries": {
+          "type": "array", "maxItems": 100,
+          "items": {
+            "type": "object", "additionalProperties": false,
+            "required": ["issue_ref", "title", "missing", "effect"],
+            "properties": {
+              "issue_ref": { "$ref": "#/$defs/opaque_ref" },
+              "title": { "type": "string", "minLength": 1, "maxLength": 160 },
+              "missing": { "type": "string", "minLength": 1, "maxLength": 300 },
+              "effect": { "type": "string", "minLength": 1, "maxLength": 400 }
+            }
+          }
+        },
+        "module_use": {
+          "type": "array", "maxItems": 50,
+          "items": { "$ref": "#/$defs/module_use" }
+        }
       }
     },
     "operation": {
@@ -286,6 +415,26 @@
         "manifest_path": { "$ref": "#/$defs/relative_path" },
         "export_path": { "$ref": "#/$defs/relative_path" }
       }
+    },
+    "module_use": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["module_id", "role", "availability", "response_use", "conversation_use", "conformance", "reason"],
+      "properties": {
+        "module_id": { "type": "string", "minLength": 1, "maxLength": 120 },
+        "display_name": { "type": "string", "minLength": 1, "maxLength": 120 },
+        "role": { "type": "string", "minLength": 1, "maxLength": 120 },
+        "role_label": { "type": "string", "minLength": 1, "maxLength": 120 },
+        "availability": { "enum": ["available", "unavailable", "unknown"] },
+        "response_use": { "enum": ["used", "not_used", "not_applicable"] },
+        "conversation_use": { "enum": ["used_earlier", "not_used", "unknown"] },
+        "conformance": { "enum": ["conformant", "not_checked", "unavailable", "not_applicable"] },
+        "reason": { "type": "string", "minLength": 1, "maxLength": 300 },
+        "pair_ref": { "$ref": "#/$defs/opaque_ref" }
+      },
+      "allOf": [
+        { "if": { "properties": { "conformance": { "const": "conformant" } }, "required": ["conformance"] }, "then": { "required": ["pair_ref"] } }
+      ]
     }
   }
 }

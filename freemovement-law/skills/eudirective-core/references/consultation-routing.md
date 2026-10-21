@@ -66,15 +66,25 @@ Do not call an assessment **comprehensive** while any required check, triggered 
 
 Use `comprehensive` only when every required and triggered check has acceptable evidence or a reasoned C27-compatible not-applicable status, and research coverage meets its existing validator and review rules. This label still does not establish a legal outcome, expert review, source authenticity or guaranteed result.
 
-## 5. User-facing answer and optional audit
+## 5. User-facing answer and dashboard
 
 On the first response, preserve the existing order: required disclaimer, applicable licensing note, skill-version line, then the answer. On later replies, do not repeat once-per-conversation notices unless the use context materially changes.
 
+### Compact dashboard trigger
+
+Show the compact **FreeMovement — Consultation Review** dashboard after the substantive answer when a host signal or visible plugin-selection marker establishes an explicit invocation. Refresh it on every new explicit invocation, including repeated invocations in the same conversation. Also show it whenever the user asks for a dashboard, coverage report or execution audit. A continuation without a new explicit invocation may omit it unless the assessment materially changes or the dashboard improves transparency.
+
+Use `explicit`, `implicit` or `unknown` as the recorded invocation state. A mere mention of FreeMovement is not an invocation. The available plugin metadata does not establish a reliable host invocation event; absent a host signal, the strongest supported instruction-level cue is a visible plugin-selection marker. When neither is available, record `unknown` and do not claim the trigger was reliably detected. A direct explicit invocation unrelated to legal consultation receives a minimal dashboard stating that no case assessment was performed.
+
+For applicant guidance and source research, record source use in the structured ledger defined by `references/contracts/consultation-route-receipt.schema.json`. Resolve bundled source IDs against the existing retrieval index and manifests; do not create a duplicate source registry. Count distinct canonical legal texts consulted in the response and, when supported by a reliable ledger, across the conversation. A source found in an index, cited from memory, or identified but not read is not a consultation. Keep each consulted pinpoint, candidate/unaccepted state, source-note status, external official source, and currentness state visible. If source-use tracking is unavailable, show `unknown`, never zero. Label model-reported counts separately from runtime-recorded events. Group bundled sources by library section and category; show external official texts separately. Bars compare only the displayed groups and never imply library coverage.
+
+The compact dashboard follows the legal answer and contains an overall status, response/conversation source metrics, library sections consulted, outstanding material issues and checks, source groups with underlying titles and pinpoints, and relevant module use for this response and earlier in the chat. Every partial assessment must name all recorded material issues and open checks, say what is missing, and explain what remains unassessed. The core module must appear for applicant guidance and source research; every declared module-pair check must reconcile to its module-use entry. The receipt cannot infer omitted relevant modules from case facts, which remain in the conversation. Do not collapse C27 or research statuses into the overall label. For layout and a Markdown fallback see `references/consultation-dashboard-examples.md`.
+
 ### Default response
 
-Answer the user's substantive request first. Add a brief scope or urgency note only when it helps. End with a concise coverage summary naming material open issues and their effect. When jurisdiction roles, proceeding or stage, material facts, source consultation, module availability/conformance or execution changes, state which relevant modules informed this answer, which were used earlier in this chat, and which relevant modules were not used; give a short reason when absence limits coverage. If these variables and module-use states have not changed, do not repeat the full record. Do not expose private chain-of-thought.
+Answer the user's substantive request first. Add a brief scope or urgency note only when it helps. End with a concise coverage summary naming material open issues and their effect, then add the dashboard only when its trigger above applies. When jurisdiction roles, proceeding or stage, material facts, source consultation, module availability/conformance or execution changes, state which relevant modules informed this answer, which were used earlier in this chat, and which relevant modules were not used; give a short reason when absence limits coverage. If these variables and module-use states have not changed, do not repeat the full module record. Do not expose private chain-of-thought.
 
-Do not require a technical dashboard before each answer. Avoid listing every check, operation, reference and status for a focused question. Keep partial and unresolved work visible in plain language: say exactly what is missing and what cannot yet be assessed.
+Avoid listing every completed check, operation, reference and status in the compact dashboard. Keep all partial and unresolved work visible in plain language: say exactly what is missing and what cannot yet be assessed. The expanded audit below retains the detailed ledger.
 
 ### Expanded audit, when requested or needed
 
@@ -84,7 +94,7 @@ Group the record by proceeding, with a short plain-language issue heading. For e
 - **C27:** readable status and method; exact check ID; finding; material evidence/source references; reason; `scope_exclusion` where present.
 - **Missing / effect:** specific missing item and the part of the assessment it limits.
 
-Then show an **Execution board**, with separate entries for review/screening, source retrieval and validators/scripts. Each actual operation gets its own status, applicability, result/evidence, exact `operation_id`, and reason/effect for open work. Model-led review has no invented operation ID and is not presented as script execution. Keep attack-angle screening separate from C27 stratagem checks.
+Then show an **Execution board**, with separate entries for review/screening, source retrieval and validators/scripts. Each actual operation gets its own status, applicability, result/evidence, exact `operation_id`, and reason/effect for open work. Model-led review has no invented operation ID and is not presented as script execution. Keep attack-angle screening separate from C27 stratagem checks. Include the source-use ledger with canonical titles and every consulted pinpoint; distinguish response reads from conversation history, identified-not-read sources, memory citations and external sources.
 
 Finish with **Module use in this answer and current chat**. Include only relevant modules under C3's role/family/destination semantics. For each, separate source consultation in this answer, use earlier in this chat, availability, and C3 conformance/evidence. A module being installed or named does not mean it was used. Refresh this record when role, proceeding, stage, material facts, source consultation, availability, conformance or execution changes; otherwise a concise no-change note is enough.
 

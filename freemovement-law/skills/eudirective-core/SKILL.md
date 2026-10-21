@@ -31,8 +31,8 @@ Give the substantive answer priority. Use the concise response pattern in `refer
 Before substantive work, on the first FreeMovement skill invocation in this conversation, read `eudirective-core/references/session-version-check.md` and perform its read-only once-per-conversation version comparison. On mismatch, remind the user to check for and manually install an available update; state that this check does not update the plugin. Report only affected components and exact installed/GitHub values. If the check is unsuccessful, explain that update availability could not be confirmed. Do not report a mismatch-free check. Continue the requested work regardless of the result. Skip additional checks in the same conversation unless expressly requested; if this skill is not the core, load the core's referenced instructions first. This checks package versions only, not legal-source validity.
 
 ## Version and Status
-- Current version: `0.52.0`
-- Last updated: `2026-10-20`
+- Current version: `0.53.0`
+- Last updated: `2026-10-21`
 - Status: read-only applicant-facing guidance for user-provided real or fictional accounts; controlled scripts still restrict private-data intake and external actions.
 - Inter-skill contract: `0.2.0` (C3 development freeze; not portfolio v1.0).
 - Element model: `0.2.0`.
@@ -45,14 +45,16 @@ For every visible response or report produced while using this skill, announce t
 
 On the first response of a conversation, place this after the required first-response notice above:
 ```text
-Skill: eudirective-core v0.52.0
+Skill: eudirective-core v0.53.0
 ```
 
 ## Ordinary-consultation routing (model-led)
 
 Before substantive ordinary applicant guidance, follow `references/consultation-quality-workflow.md` and `references/consultation-routing.md`. Classify the request, discover issues before selecting checks, use `references/consultation-issue-routing.json` with C27's existing registry, and record the evidence and disposition for every material issue. Apply C3's existing family/jurisdiction/role/destination semantics; use `research_gate.py` and `issue_source_preflight.py` for their existing purposes. Run the required model-led attack-angle screen separately from C27's adapted-stratagem checks. Never claim that a script ran on real case facts or that a selected check was thereby assessed. Use the concise default response pattern; provide the exact route and execution board when the user requests an audit.
 
-For a portable structural check of a privacy-minimised route receipt, use `scripts/consultation_route_gate.py` as described in `references/consultation-route-gate.md`. The receipt uses generated opaque IDs and an evidence index; the gate checks declared references, digests local artifacts, validates selected C27 records through C27's shared status/method/trace rules, and reuses the existing C3 module-conformance and research validators plus issue-source preflight. Conversation/source records remain self-reported. It does not scan artifact names or contents for personal data, infer omitted conditional triggers, establish that model-led work happened, or authenticate self-reported evidence. The plugin does not call this gate automatically. `scripts/consultation_release_gate.py` optionally binds the exact local receipt and answer bytes for one local invocation; it is not a ChatGPT release gate. Real applicant facts remain outside synthetic case scripts; the ordinary C23 lane remains model-led, read-only and human-reviewable.
+For each explicit FreeMovement invocation, show a compact consultation dashboard after the substantive answer. Refresh it for every new explicit invocation. A dashboard is also mandatory when the user asks for one, a coverage report, or an execution audit. A continuation without a new explicit invocation may omit it unless the assessment or module/source use materially changes. Treat an explicit trigger as established only by a host signal or a visible plugin-selection marker; a mere mention of FreeMovement is not an invocation. If the signal is unavailable, record `unknown` and do not pretend the host exposed it. For a direct invocation unrelated to a legal consultation, show only that no case assessment was performed. Use the structured source ledger and renderer contract in `references/consultation-routing.md` and `references/consultation-dashboard-examples.md`; never invent counts, execution, currentness, or module use.
+
+For a portable structural check of a privacy-minimised route receipt, use `scripts/consultation_route_gate.py` as described in `references/consultation-route-gate.md`. The receipt uses generated opaque IDs and an evidence index; the gate checks declared references, reconciles source metrics from the ledger, verifies issue and module-use summaries, digests local artifacts, validates selected C27 records through C27's shared status/method/trace rules, and reuses the existing C3 module-conformance and research validators plus issue-source preflight. Conversation/source/module-use records remain self-reported unless a runtime event is shown. It does not scan receipt text, artifact names or contents for personal data, infer omitted conditional triggers, establish that model-led work happened, or authenticate self-reported evidence. The plugin does not call this gate automatically. `scripts/consultation_release_gate.py` optionally binds the exact local receipt and answer bytes for one local invocation; it is not a ChatGPT release gate. Real applicant facts remain outside synthetic case scripts; the ordinary C23 lane remains model-led, read-only and human-reviewable. See `references/consultation-dashboard-live-test-plan.md` for hosted checks that remain to be performed.
 
 ## Source use and currentness
 
@@ -501,6 +503,7 @@ Evaluation prompts, grading criteria, transcript validation, test scripts, and r
 - `scripts/module_conformance.py` — C3 pair-level family/role/version/namespace/legal-layer conformance validation.
 - `scripts/consultation_route_gate.py`, `scripts/issue_source_preflight.py`, and `scripts/consultation_release_gate.py` — declared-route/source structural checks and optional exact-local-artifact binding; no host release interception.
 - `references/consultation-dashboard-examples.md` — compact and expanded display examples.
+- `references/consultation-dashboard-live-test-plan.md` — hosted invocation/rendering checks; not run by offline tests.
 - `scripts/generate_attack_angle_coverage.py` — generated inventory from current C27, C5d, module exports, sidecars and priority topic metadata.
 - `references/issue-source-preflight.md` and `references/attack-angles/consultation-topic-review-pathways.json` — issue-level source-accounting limits and source-qualified topic review prompts.
 - `scripts/case_controller.py` — canonical case-state transitions and controlled release.

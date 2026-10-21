@@ -43,9 +43,24 @@ def validate_exact_receipt(receipt_path: Path) -> tuple[dict, bytes]:
     return result, before
 
 
+def validate_dashboard_rendered(result: dict, answer_bytes: bytes) -> None:
+    if not result.get("dashboard_required"):
+        return
+    preview = result.get("dashboard_preview")
+    if not isinstance(preview, str) or not preview:
+        raise ReleaseBindingError("mandatory_dashboard_preview_missing")
+    try:
+        answer = answer_bytes.decode("utf-8")
+    except UnicodeDecodeError as error:
+        raise ReleaseBindingError("answer_not_utf8_for_dashboard_check") from error
+    if not answer.rstrip().endswith(preview):
+        raise ReleaseBindingError("mandatory_dashboard_missing_or_not_at_end_of_answer")
+
+
 def prepare(receipt_path: Path, answer_path: Path, binding_path: Path) -> dict:
     result, receipt_bytes = validate_exact_receipt(receipt_path)
     answer_bytes = read_regular_file(answer_path, "answer")
+    validate_dashboard_rendered(result, answer_bytes)
     if binding_path.resolve() in {receipt_path.resolve(), answer_path.resolve()}:
         raise ReleaseBindingError("binding_path_must_be_separate")
     if binding_path.exists() or binding_path.is_symlink():
@@ -74,6 +89,7 @@ def release(receipt_path: Path, answer_path: Path, binding_path: Path) -> bytes:
     validate_obj("consultation-release-binding", binding)
     result, receipt_bytes = validate_exact_receipt(receipt_path)
     answer_bytes = read_regular_file(answer_path, "answer")
+    validate_dashboard_rendered(result, answer_bytes)
     actual = {
         "route_ref": result["route_ref"],
         "receipt_sha256": digest(receipt_bytes),
