@@ -1,7 +1,7 @@
 # Consultation assurance host capability decision
 
 **Decision date:** 2026-10-20
-**Scope:** FreeMovement Law skills plugin 0.50.0 / core 0.49.0
+**Scope:** freemovement-law Law skills plugin 0.50.0 / core 0.49.0
 **Status:** bounded local structural validation is available; production host release enforcement is not implemented.
 
 ## Capability result

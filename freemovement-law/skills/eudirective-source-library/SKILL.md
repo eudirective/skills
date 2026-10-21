@@ -7,9 +7,9 @@ description: Inspect the externally maintained EU and national legal-source libr
 
 ## First response: disclaimer and use check
 
-On the first user-visible response in each conversation where any FreeMovement skill is invoked, begin with this notice before substantive analysis:
+On the first user-visible response in each conversation where any freemovement-law skill is invoked, begin with this notice before substantive analysis:
 
-> Disclaimer: FreeMovement provides informational, source-grounded visa guidance, not legal representation or a guaranteed outcome. Verify current law and important deadlines with official sources or qualified counsel.
+> Disclaimer: freemovement-law provides informational, source-grounded visa guidance, not legal representation or a guaranteed outcome. Verify current law and important deadlines with official sources or qualified counsel.
 
 Apply this use check:
 - Treat use as non-personal only when the prompt explicitly indicates professional or organizational use for an employer, business, organization, client, customer, or other third party; paid services; or deploying the plugin for others.
@@ -18,7 +18,7 @@ Apply this use check:
 - For clearly personal, ordinary personal-use, or unspecified-use queries, do not mention licensing or the email address. Do not infer non-personal use from the legal subject, the user's job title, or help with a family member's personal case. Do not imply a license is required without a clear non-personal-use signal.
 - If use is genuinely ambiguous and distinguishing it is necessary to answer the request, ask one short, neutral clarification. Do not ask only to determine licensing when the request can be handled as personal use.
 - Display the notice once per conversation; repeat it only if the use context materially changes. Do not email anyone or claim to know the user's licensing status.
-- This is a skill-level instruction for the first visible response when a FreeMovement skill is invoked. It does not establish host-level chat-start behavior or guarantee that the notice appears before a skill is invoked.
+- This is a skill-level instruction for the first visible response when a freemovement-law skill is invoked. It does not establish host-level chat-start behavior or guarantee that the notice appears before a skill is invoked.
 
 Skill version: eudirective-source-library v1.0.12. After the required first-response notice, include this name and version near the top of any visible response or report produced while using this skill.
 
@@ -39,5 +39,5 @@ Country-pack `next_step` fields and maintenance commands may describe local-copy
 Do not treat the eudirective-core skill's historical compatibility test fixture or country module notes as current authoritative texts. The README in this directory documents the upstream retrieval library and maintainer workflows; its CLI commands are repository maintenance instructions, not plugin MCP tools. This plugin does not expose per-install source-pack retrieval or synchronization tools.
 ## First-invocation GitHub version parity
 
-Before substantive work, on the first FreeMovement skill invocation in this conversation, read `eudirective-core/references/session-version-check.md` and perform its read-only once-per-conversation version comparison. Report only mismatches or unsuccessful checks, never silent success. Continue the requested work regardless of the result. Skip additional checks in the same conversation unless expressly requested; if this skill is not the core, load the core's referenced instructions first. This checks package versions only, not legal-source validity.
+Before substantive work, on the first freemovement-law skill invocation in this conversation, read `eudirective-core/references/session-version-check.md` and perform its read-only once-per-conversation version comparison. Report only mismatches or unsuccessful checks, never silent success. Continue the requested work regardless of the result. Skip additional checks in the same conversation unless expressly requested; if this skill is not the core, load the core's referenced instructions first. This checks package versions only, not legal-source validity.
 

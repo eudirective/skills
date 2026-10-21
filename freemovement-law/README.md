@@ -56,14 +56,16 @@ the receipt and binds it to the answer being released.
 ## Consultation dashboard
 
 The full dashboard is written in the assistant's ordinary Markdown response.
-It uses readable headings and separated status cards to show what was reviewed,
-what actually ran, which modules were used now or earlier in the chat, and what
-remains missing. Source accounting separates matches to records in the bundled
-plugin library from sources identified through web search; these counts can
-overlap, and missing discovery provenance is shown as unknown. It does not
-require an MCP tool, custom UI, or hosted service. Source and module use remain
-model-reported, and the skill cannot force the board to appear or block an
-answer from release. See
+It starts with the case scope, overall status, a compact issue summary and
+status distribution, then shows readable issue cards and a separate
+execution/verification section. Sources and modules appear with their
+provenance and current-versus-earlier-chat use. Source accounting separates
+matches to records in the bundled plugin library from sources identified
+through web search; these counts can overlap, and missing discovery provenance
+is shown as unknown. This is a native Markdown layout, not a custom graphical
+widget, and it does not require an MCP tool or hosted service. Source and module
+use remain model-reported, and the skill cannot force the board to appear or
+block an answer from release. See
 `skills/eudirective-core/references/consultation-dashboard-examples.md` for the
 display format and `skills/eudirective-core/references/consultation-dashboard-live-test-plan.md`
 for a deferred manual review plan.

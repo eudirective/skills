@@ -1,140 +1,180 @@
 # Consultation dashboard
 
-Show the full board after every explicit FreeMovement invocation, whenever the user asks for it, and whenever a material routing, source, module, or execution variable changes. Use the response's native Markdown. Do not use wide tables, pipe-delimited rows, raw HTML, or fenced code blocks for the board; they make the status display hard to scan in chat.
-
-Use the section headings below as visual groups. Each operation and selected C27 check gets its own short status card: a plain-language label first, the registered ID second, then the evidence, missing item, and effect. Keep every relevant row. Do not shrink the execution section into a single compact table.
-
-Status text is authoritative. A small icon may help scanning, but it never replaces the status word: `✅ Reviewed`, `🟡 Partial`, `⚪ Not checked`, `⛔ Unavailable`, or `➖ Not applicable`. Keep the answer itself first; the board follows it.
+Use this as the visual pattern for a full consultation board. It is ordinary Markdown: status icons and structure help scanning, but do not imply custom colors, CSS, interactivity, or host verification. Keep the answer itself first. Avoid wide tables and code-like dumps; the small three-column metric row below is the only table in the board.
 
 ## Full consultation review
 
-## FreeMovement — Consultation Review
+# EU-family visa and residence review
 
-> 🟡 **PARTIAL** — The advice addresses the main question. The receipt was not inspected, so the formal lodging date remains unresolved.
+*Application in Türkiye · intended residence in Spain · EU citizen moving with a spouse*
+
+> 🟠 **PARTIAL REVIEW** — The EU route and residence-card entry rule were assessed. Formal visa lodging, authority classification, and the processing-clock start remain unresolved.
 
 ### At a glance
 
-- **Jurisdictions:** EU law; Spain as the intended residence state; Türkiye as the application context.
-- **Proceedings:** family-member visa application; prospective residence-card procedure.
-- **Urgency:** no verified deadline; appointment delay may affect timing.
-- **Requested output:** explain the applicable route and practical next steps.
-- **Coverage:** partial. Receipt classification and the authority's written position remain unknown.
-- **Sources identified in this answer:** 2 distinct records (model-reported).
-  - Matched to records in the plugin's bundled source library: 1.
-  - Found through web search: 1.
-- **Sources identified across this chat:** 2 distinct records; 1 plugin-library match and 1 web-search discovery.
-- Counts cover the source records listed in the board, not every raw search-result hit. The separate library and discovery counts can overlap if a web search returns a source also bundled in the plugin. Identified-but-not-read sources count as identified, not consulted.
+| **Issues reviewed** | **Supported** | **Partial / open** |
+| :---: | :---: | :---: |
+| **6** | **3** | **3** |
 
-### Work and execution
+**Assessment coverage · 6 / 6 recorded issues reviewed**
 
-#### ✅ Reviewed — Applicant guidance
+🟩🟩🟩🟨🟨🟨
 
-**Method:** model-led review of the reported facts against the cited official sources.
+🟩 Supported: **3 (50%)** · 🟨 Partial/open: **3 (50%)** · ⚪ Out of scope: **0 (0%)**
 
-**Evidence:** conversation record and the official source entries below.
+*Each square represents one issue with a recorded disposition. Percentages describe only the distribution of these recorded outcomes, not legal completeness or proof that every relevant issue was found. Counts are model-reported.*
 
-#### 🟡 Partial — Case-state review
+### Review scope
 
-**Checks:** `lifecycle.lodgement_confirmed`, `lifecycle.receipt_evidence`.
+- **Jurisdictions:** EU law; Spain as intended residence; Türkiye as the application context.
+- **Proceedings:** family-member visa application; prospective Spanish residence-card procedure; separate service grievance.
+- **Stage:** visa appointment/submission; formal lodging not established; residence-card application prospective.
+- **Urgency:** no verified filing deadline; appointment delay may affect timing.
+- **Requested:** explain the route, identify unresolved points, and give practical next steps.
 
-**Evidence:** the applicant reported a stamped submission and online tracking.
+### Assessment by issue
 
-**Missing:** the receipt itself was not inspected.
+#### 🟩 Supported — EU-family visa route
 
-**Effect:** formal lodging and the processing-clock start are unverified.
+**Finding:** the reported relationship and cross-border plan engage the EU-family route for the question assessed.
 
-#### ⚪ Not run — Deterministic C27 case validator
+**Evidence and source basis:** reported marriage and joint travel; Directive 2004/38/EC and official EU guidance.
 
-**Reason:** its case scripts accept synthetic inputs; real applicant facts were not sent to them.
+**C27 checks:** `eu_scope.directive_scope` — assessed by source review; `eu_scope.accompany_or_join` — assessed by source review.
 
-**Effect:** this is a model-led C27 review, not a recorded Python-engine result.
+#### 🟨 Partial — Formal visa lodging
 
-#### ⛔ Unavailable — C3 case-to-module match
+**Finding:** a stamped submission and online tracking were reported, but formal lodging is not established from the available record.
 
-**Reason:** no approved real-case geography check is available in this consultation.
+**Evidence:** applicant's account of the stamp and tracking page.
 
-**Effect:** the selected country-module fit remains unverified.
+**C27 checks:** `lifecycle.lodgement_confirmed` — partial, model review; `lifecycle.receipt_evidence` — partial, model review.
 
-#### ➖ Not applicable — Research-artifact validator
-
-**Reason:** no structured research plan or evidence bundle was created.
-
-### C27 case checks
-
-#### 🟡 Partial — Visa application: formal lodging
-
-`lifecycle.lodgement_confirmed` · model review
-
-**Evidence:** online tracking was reported.
-
-**Missing:** the submission receipt and its classification.
+**Missing:** the receipt or submission record and its exact classification were not inspected.
 
 **Effect:** the formal application date and processing-clock start remain uncertain.
 
-#### 🟡 Partial — Visa application: receipt evidence
+#### 🟨 Partial — Authority's application classification
 
-`lifecycle.receipt_evidence` · model review
+**Finding:** the fee exemption may indicate EU-family handling, but does not establish the authority's internal case classification.
 
-**Evidence:** a stamped submission was reported.
+**Evidence:** reported fee treatment.
 
-**Missing:** a copy of the stamp or receipt was not reviewed.
+**C27 check:** `case_intake.authority_classification` — partial, model review.
 
-**Effect:** the report is recorded but not independently checked.
+**Missing:** a written classification, case-system record, or other confirmation from the authority.
 
-### Other material issues
+**Effect:** advice about the applicable procedure and any challenge should remain qualified.
 
-#### 🟡 Partial — Authority's stated grounds
+#### 🟨 Partial — Processing time and clock start
 
-**Evidence:** adverse comments were reported orally.
+**Finding:** the EU acceleration requirement was reviewed; the individual processing clock and any exceptional justification remain open.
 
-**Missing:** no written decision or verified statement of grounds was provided.
+**Evidence and source basis:** reported appointment/submission timeline; Directive 2004/38/EC and official EU guidance.
 
-**Effect:** the authority's actual legal and factual position remains uncertain.
+**C27 checks:** `timing.accelerated_processing` — partial, source review; `timing.clock_start` — partial, model review.
 
-### Sources
+**Missing:** proof of formal lodging and the authority's explanation for the delay.
+
+**Effect:** the applicable start date and whether the delay is justified cannot yet be determined.
+
+#### 🟩 Supported — Residence-card entry rule
+
+**Finding:** the entry-visa question for the prospective residence-card application was assessed separately from the visa application.
+
+**Evidence and source basis:** stated plan to reside in Spain; Spanish Article 8 procedure and applicable EU-law guidance.
+
+**C27 check:** `eu_scope.residence_card_entry_exemption` — assessed by source review.
+
+#### 🟩 Supported — Separate service grievance
+
+**Finding:** the reported staff treatment and access problem can be recorded as a separate service-grievance track, independently of the visa merits.
+
+**Evidence:** reported appointment delay and difficulty accessing the service.
+
+**C27 check:** `conduct.staff_treatment` — assessed by model review.
+
+**Scope:** this identifies a separate issue; it does not establish misconduct or resolve the available remedy or deadline.
+
+### Execution and verification
+
+#### ✅ Model-led applicant guidance
+
+**Status:** performed in this response.
+
+**Method:** facts and legal questions reviewed in the conversation against the identified official sources. No real applicant facts were sent to synthetic-only scripts.
+
+#### ✅ Source review
+
+**Status:** official EU and Spanish materials were reviewed for the issues above.
+
+**Limit:** the source accounting below is model-reported; it is not an authenticated retrieval log.
+
+#### ⚪ Deterministic C27 case-state validator — not run
+
+**Reason:** its case scripts are restricted to synthetic inputs; real applicant facts were not submitted.
+
+**Effect:** the check statuses above describe model-led review, not results from the Python case-state engine.
+
+#### ⚪ C3 case-to-module match — not run
+
+**Reason:** no approved real-case geography check was available in this consultation.
+
+**Effect:** the selected module's fit to this particular case was not validated by the controller.
+
+#### ⚪ Research-artifact validator — not run
+
+**Reason:** no structured research plan and evidence bundle were created.
+
+**Effect:** no validator-backed research-coverage result is available.
+
+### Sources and modules
+
+**Source accounting — this response:** 2 distinct records; **1** matched to the plugin's bundled library; **1** identified through web search.
+
+**Across this chat:** 2 distinct records; **1** bundled-library match; **1** web-search discovery.
+
+Counts can overlap: a web search can find a source also present in the bundle. Counts cover the source records listed here, not every search-result hit. Identified-but-not-read records count as identified, not consulted. If discovery tracking is missing, show `unknown`, not zero.
 
 #### Directive 2004/38/EC — EU law
 
-- **Origin/discovery:** matched to a record in the plugin's bundled source library; identified through `plugin_library` in this answer and earlier in the chat.
-- **This answer:** consulted; Articles 2, 3 and 5.
-- **Earlier in this chat:** consulted.
-- **Edition/currentness:** bundled consolidated edition; live currentness not checked.
+- **Bundle match:** yes; identified from `plugin_library` in this response and earlier in this chat.
+- **Use:** consulted for Articles 2, 3 and 5 in this response and earlier in this chat.
+- **Edition:** bundled edition; live currentness was not checked.
 
 #### Spanish official procedure
 
-- **Origin/discovery:** external official source; found through `web_search` in this answer and carried from `prior_conversation` earlier in the chat.
-- **This answer:** consulted; section 8.
-- **Earlier in this chat:** identified but not read.
-- **Edition/currentness:** edition not recorded; currentness not verified.
+- **Bundle match:** no; identified through `web_search` in this response and carried from `prior_conversation` earlier in this chat.
+- **Use:** consulted for the residence-card procedure in this response; identified but not read earlier.
+- **Edition:** edition not recorded; currentness not verified.
 
-### Modules
+#### Modules
 
-**Used in this answer**
+**Used in this response:**
 
-- **eudirective-core** — EU/common-law analysis and consultation routing.
-- **eudirective-ms-spain** — Spanish residence procedure. C3 pair validation was not run.
+- **eudirective-core** — EU/common-law analysis and routing.
+- **eudirective-ms-spain** — Spanish residence procedure; source review only, with no C3 pair validation.
 
-**Used earlier in this chat, not in this answer**
+**Used earlier in this chat:**
 
-- **eudirective-ac-turkiye** — Türkiye-side document guidance was used earlier; no Türkiye document issue was reviewed in this answer.
+- **eudirective-ac-turkiye** — Türkiye-side document guidance was used earlier; it was not needed for the issues reviewed in this response.
 
-**Relevant but not used**
+**Relevant but not used:** name each relevant module, whether it was available, and why it was not used. Explain any effect on coverage.
 
-- List each relevant module, its availability, and why it was not used. If the reason affects coverage, state the effect.
+### Limits and provenance
 
-### Coverage and execution limits
-
-- The statuses above describe model-led review unless a named tool or script is explicitly recorded as run with an observed result.
-- No deterministic C27 case script, C3 case-geography controller, or research-artifact validator ran on this consultation.
-- Source reading and module use are model-reported. A skill-level dashboard does not independently authenticate them or prevent an answer from being released without the board.
-- Every partial, unavailable, or not-run item names what is missing and how it limits the assessment. Use `unknown` when the missing detail itself is not known.
+- The issue summary counts the dispositions recorded above; it does not measure overall legal completeness.
+- Source review, issue assessment, and module use are model-reported. Say a script or tool ran only when this chat contains its observed result.
+- No deterministic C27 validator, C3 case-level controller, or research-artifact validator ran in this example.
+- This plugin emits ordinary Markdown. It does not provide custom colors, a separate UI widget, a host-validated source-read record, or a release gate.
+- Every partial or unrun item names what is missing and how it affects the assessment. Use `unknown` when the missing detail itself is unknown.
 
 ## Minimal board when no case was assessed
 
-## FreeMovement — Consultation Review
+## freemovement-law — Consultation Review
 
-> ⚪ **NOT VERIFIED** — No case assessment was performed.
+> ⚪ **NOT ASSESSED** — No case assessment was performed.
 
-- **Invocation:** explicit, if visibly established; otherwise `unknown`.
-- **Applicant guidance, C27 checks, sources, and country modules:** not assessed.
-- Do not invent issue counts, source totals, module use, or execution results.
+- **Invocation:** explicit only when established by a host signal or visible plugin-selection marker; otherwise `unknown`.
+- **Applicant guidance, issues, C27 checks, sources, and country modules:** not assessed or not recorded.
+- Do not invent zero counts, issue statuses, source totals, module use, or execution results.

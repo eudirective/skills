@@ -603,13 +603,13 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
         "outstanding_count": len(set(route_gaps)),
     }
     reports = validator_reports or {}
-    lines = ["## FreeMovement — Consultation Review", ""]
+    lines = ["## freemovement-law — Consultation Review", ""]
 
     if route["request_kind"] == "no_case_assessment":
         lines.extend([
             "**Not verified** · No case assessment was performed.",
             "",
-            "### Invocation and validation",
+            "### Verification details",
             f"- Invocation: {state.replace('_', ' ')}; basis: {basis.replace('_', ' ')}.",
             f"- Receipt check: {validation.get('result', 'not recorded')}.",
             f"- Validator: `{validation.get('validator', 'not recorded')}` v{validation.get('validator_version', 'unknown')}.",
@@ -622,20 +622,32 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
         return "\n".join(lines)
 
     metrics = source_report
-    response = metrics["response"]
-    conversation = metrics["conversation"]
     status = {"reviewed": "Reviewed", "partial": "Partial", "not_verified": "Not verified"}[dashboard["assessment_status"]]
     status_marker = {"reviewed": "🟢", "partial": "🟠", "not_verified": "⚪"}[dashboard["assessment_status"]]
     open_work = _open_work(route_gaps)
     issue_summaries = dashboard["issue_summaries"]
-    if validation_record is None:
-        overall = "Validation not run by this standalone renderer"
-    elif validation.get("result") == "structurally_closed_declared_plan":
-        overall = "Structurally closed declared plan"
-    elif validation.get("result") == "rejected_comprehensive_claim":
-        overall = "Comprehensive claim rejected; declared work remains open"
-    else:
-        overall = "Partial route; declared work remains open"
+    issue_records = route.get("issues")
+    disposition_counts = {
+        "answered_supported": 0,
+        "answered_conditionally": 0,
+        "source_missing": 0,
+        "fact_missing": 0,
+        "out_of_scope": 0,
+    }
+    if isinstance(issue_records, list):
+        for issue in issue_records:
+            disposition = issue.get("disposition")
+            if disposition in disposition_counts:
+                disposition_counts[disposition] += 1
+    issue_dispositions_complete = (
+        isinstance(issue_records, list)
+        and all(item.get("disposition") in disposition_counts for item in issue_records)
+    )
+    supported_count = disposition_counts["answered_supported"]
+    partial_count = sum(disposition_counts[key] for key in (
+        "answered_conditionally", "source_missing", "fact_missing",
+    ))
+    out_of_scope_count = disposition_counts["out_of_scope"]
 
     def value_status(value: str) -> str:
         return value.replace("_", " ")
@@ -722,37 +734,81 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
         filled = max(0, min(10, round(10 * completed / total)))
         return f"{'🟩' * filled}{'⬜' * (10 - filled)} {completed} of {total}"
 
+    def share_percent(count: int, total: int) -> str:
+        return f"{round(100 * count / total)}%" if total else "0%"
+
     source_summary_lines = source_origin_lines("in this answer", metrics.get("response_origin", {}))
     source_summary_lines.extend(source_origin_lines("across this chat", metrics.get("conversation_origin", {})))
-    lines.extend([
-        f"> {status_marker} **{status}** · {overall}",
-        "",
-        "### Invocation and validation",
-        f"- Invocation: {value_status(state)}; basis: {value_status(basis)}.",
-        f"- Validation result: **{value_status(validation.get('result', 'not recorded'))}**.",
-        f"- Validator: `{validation.get('validator', 'not recorded')}` v{validation.get('validator_version', 'unknown')}.",
-        f"- Receipt fingerprint: `{validation.get('receipt_sha256', 'not available')}`.",
-        f"- Outstanding validation items: {validation.get('outstanding_count', len(set(route_gaps)))}.",
-        "- Validation covers the declared receipt and validator outputs. It does not authenticate model-reported facts, source reads, legal reasoning, or omitted issues.",
-        "- Host release control: not available in this plugin; a host must call a controller and enforce its result to block output.",
-        "",
-        "### At a glance",
-        f"- Assessment: **{status}**; requested coverage: **{value_status(route['coverage_claim'])}**.",
-        f"- Legal texts this response: **{'unknown' if response['count'] is None else response['count']}** (model-reported).",
-        f"- Conversation total: **{'unknown' if conversation['count'] is None else conversation['count']}** (model-reported).",
-        f"- Source-library sections this response: **{'unknown' if response['count'] is None else len(response['sections'])}**.",
-        *source_summary_lines,
-        "- Counts cover the source records listed below, not every raw search-result hit.",
-        "- Counts may overlap: a web search can return a source also matched to a record in the plugin library.",
-        f"- Declared material issues: **{len(issue_summaries)}**; outstanding checks and operations: **{len(open_work)}**.",
-        "",
-        "### Recorded-work progress",
-        f"- Required or triggered operations with acceptable completion evidence: {progress_marks(completed_operations, len(applicable_operations))}.",
-        f"- Selected C27 checks assessed or justified as not applicable: {progress_marks(closed_checks, len(route.get('c27_checks', [])))}.",
-        "- These bars count only declared receipt rows; they do not measure the completeness of undisclosed work.",
-    ])
+    classification = route["classification"]
 
-    lines.extend(["", "### Task scope"])
+    def scope_state(key: str) -> str:
+        state = classification[key]["state"]
+        return {"recorded": "recorded", "unknown": "unknown", "not_applicable": "not applicable"}[state]
+
+    lines = [
+        "## freemovement-law — Case Review",
+        "",
+        f"*Applicant guidance · Jurisdictions: {scope_state('jurisdictions_by_role')} · "
+        f"Proceedings and stages: {scope_state('proceedings_and_stages')}*",
+        "",
+    ]
+    if status == "Partial":
+        status_reason = (
+            "Some declared issues, checks, or operations remain open; see their missing-item details below."
+            if open_work or issue_summaries else
+            "The declared coverage is partial; the scope and limits are shown below."
+        )
+    elif status == "Reviewed":
+        status_reason = "Declared work is recorded as complete; this does not establish that no other issues exist."
+    else:
+        status_reason = "No case assessment was verified; the recorded scope and limits are shown below."
+    lines.append(
+        f"> {status_marker} **{status.upper()}** — {status_reason} "
+        f"Declared coverage: **{value_status(route['coverage_claim'])}**."
+    )
+    lines.append("")
+    lines.extend([
+        "### Issue summary",
+        "",
+        "| **Issues reviewed** | **Supported** | **Partial / open** |",
+        "| :---: | :---: | :---: |",
+        (
+            f"| **{len(issue_records)}** | **{supported_count}** | **{partial_count}** |"
+            if issue_dispositions_complete
+            else "| **unknown** | **unknown** | **unknown** |"
+        ),
+        "",
+    ])
+    if issue_dispositions_complete and 0 < len(issue_records) <= 20:
+        status_bar = "🟩" * supported_count + "🟨" * partial_count + "⬜" * out_of_scope_count
+        lines.extend([
+            f"**Assessment coverage — {len(issue_records)} / {len(issue_records)} recorded issues reviewed**",
+            "",
+            status_bar,
+            "",
+            f"🟩 Supported: **{supported_count} ({share_percent(supported_count, len(issue_records))})** · "
+            f"🟨 Partial/open: **{partial_count} ({share_percent(partial_count, len(issue_records))})** · "
+            f"⚪ Out of scope: **{out_of_scope_count} ({share_percent(out_of_scope_count, len(issue_records))})**",
+            "",
+            "*One segment per recorded issue. Percentages describe this status distribution, not legal completeness or proof that all relevant issues were found; whole percentages are rounded.*",
+            "",
+        ])
+    elif issue_dispositions_complete and len(issue_records) > 20:
+        lines.extend([
+            f"**Recorded outcomes:** 🟩 Supported: **{supported_count} ({share_percent(supported_count, len(issue_records))})** · "
+            f"🟨 Partial/open: **{partial_count} ({share_percent(partial_count, len(issue_records))})** · "
+            f"⚪ Out of scope: **{out_of_scope_count} ({share_percent(out_of_scope_count, len(issue_records))})**.",
+            "A bar is omitted above 20 issues. Percentages are rounded status shares, not a legal-completeness score.",
+            "",
+        ])
+    elif issue_dispositions_complete and not issue_records:
+        lines.extend(["No issue records were supplied; the zero count describes this receipt only.", ""])
+    else:
+        lines.extend([
+            "Issue dispositions are incomplete or unavailable; counts are unknown, not zero. These records do not measure legal completeness.",
+            "",
+        ])
+    lines.extend(["### Review context", ""])
     for key, item in route["classification"].items():
         label = CLASSIFICATION_LABELS.get(key, _humanize(key).title())
         lines.append(f"- **{label}:** {value_status(item['state'])} · evidence: {refs([item['evidence_ref']])}.")
@@ -762,10 +818,19 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
         f"evidence: {refs([conditional['evidence_ref']])}."
     )
 
-    lines.extend(["", "### Work performed and engine checks"])
+    assessment_lines = lines
+    lines = []
+    lines.extend(["", "### Execution and verification"])
     lines.append(
         f"Recorded status: {completed_operations} of {len(applicable_operations)} required or triggered operations have completion records with acceptable evidence."
     )
+    lines.append(
+        f"- Required or triggered operations with completion evidence: {progress_marks(completed_operations, len(applicable_operations))}."
+    )
+    lines.append(
+        f"- Selected C27 checks assessed or justified as not applicable: {progress_marks(closed_checks, len(route.get('c27_checks', [])))}."
+    )
+    lines.append("These indicators count recorded receipt rows only; they do not measure undisclosed work or overall legal completeness.")
     for operation_id, item in sorted(operations.items(), key=lambda pair: (pair[0] not in required_operation_ids, pair[0])):
         label = OPERATION_LABELS.get(operation_id, _humanize(operation_id).title())
         evidence = refs(item.get("evidence_refs", []))
@@ -777,7 +842,17 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
         detail = f" Evidence: {evidence}."
         if item.get("reason_code"):
             detail += f" Reason: {reason}."
-        lines.append(f"- **{label}** (`{operation_id}`) — {applicability}; {result}.{detail}")
+        operation_marker = {
+            "completed": "✅", "partial": "🟠", "not_checked": "⚪", "blocked": "🟠",
+            "unavailable": "⛔", "not_applicable": "➖", "not_recorded": "⚪",
+        }.get(item["status"], "⚪")
+        if operation_has_validation_gap(operation_id):
+            operation_marker = "🟠"
+        lines.extend([
+            "",
+            f"#### {operation_marker} {label}",
+            f"`{operation_id}` · {applicability} · **{result}**.{detail}",
+        ])
         for gap in route_gaps:
             if (gap.startswith(f"operation:{operation_id}:")
                     or gap == f"required_operation_missing:{operation_id}"
@@ -787,57 +862,109 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
                     lines.append(f"  - Missing: {missing['missing']} Effect: {missing['effect']}")
                     break
     lines.append("\nExecution status is receipt-declared unless a named validator report below confirms that its validator ran.")
+    execution_lines = lines
+    lines = assessment_lines
 
-    lines.extend(["", "### C27 case-state checks"])
-    if route.get("c27_checks"):
-        issue_summaries_by_ref = {item["issue_ref"]: item for item in dashboard["issue_summaries"]}
-        scope_labels = {}
-        for issue in route.get("issues", []):
+    lines.extend(["", "### Legal assessment"])
+    issue_summaries_by_ref = {item["issue_ref"]: item for item in issue_summaries}
+    issue_markers = {
+        "answered_supported": "🟢",
+        "answered_conditionally": "🟠",
+        "source_missing": "🟠",
+        "fact_missing": "🟠",
+        "out_of_scope": "⚪",
+    }
+    issue_status_labels = {
+        "answered_supported": "Answered: supported",
+        "answered_conditionally": "Partial",
+        "source_missing": "Source missing",
+        "fact_missing": "Fact missing",
+        "out_of_scope": "Out of scope",
+    }
+    issues_by_scope: dict[str, list[dict]] = {}
+    if isinstance(issue_records, list):
+        for issue in issue_records:
+            issues_by_scope.setdefault(issue["scope_ref"], []).append(issue)
+    checks_by_scope: dict[str, list[dict]] = {}
+    for entry in route.get("c27_checks", []):
+        checks_by_scope.setdefault(entry["scope_ref"], []).append(entry)
+    scope_refs = list(dict.fromkeys([*issues_by_scope, *checks_by_scope]))
+    if not scope_refs:
+        lines.append("No material issue or C27 check records were supplied.")
+    for index, scope_ref in enumerate(scope_refs, start=1):
+        scoped_issues = issues_by_scope.get(scope_ref, [])
+        scoped_checks = checks_by_scope.get(scope_ref, [])
+        first_issue = scoped_issues[0] if scoped_issues else None
+        first_summary = issue_summaries_by_ref.get(first_issue["issue_ref"]) if first_issue else None
+        scope_title = (
+            first_summary["title"] if first_summary
+            else ", ".join(_humanize(signal) for signal in first_issue.get("signal_ids", []))
+            if first_issue else "Case-state checks"
+        )
+        lines.extend(["", f"#### {scope_title}"])
+        for issue in scoped_issues:
             summary = issue_summaries_by_ref.get(issue["issue_ref"])
+            signals = ", ".join(_humanize(signal) for signal in issue.get("signal_ids", [])) or "signals not recorded"
+            disposition = issue.get("disposition", "not recorded")
+            title = summary["title"] if summary else signals
+            marker = issue_markers.get(disposition, "⚪")
+            label = issue_status_labels.get(disposition, value_status(disposition))
+            lines.extend([
+                f"**{marker} {label} — {title}**",
+                f"Evidence: {refs([issue['evidence_ref']])}.",
+            ])
             if summary:
-                scope_labels.setdefault(issue["scope_ref"], summary["title"])
-        for index, entry in enumerate(route["c27_checks"], start=1):
+                lines.append(f"Missing: {summary['missing']}")
+                lines.append(f"Effect: {summary['effect']}")
+        if scoped_checks:
+            lines.append("**Selected C27 checks for this review area:**")
+        for entry in scoped_checks:
             record = entry["record"]
-            evidence_text = f"Evidence: {refs(record['evidence_refs'])}; sources: {refs(record['source_refs'])}"
-            scope_label = scope_labels.get(entry["scope_ref"], f"Scope {index}")
-            lines.append(f"- **{scope_label} — `{record['check_id']}`**")
+            check_marker = {
+                "assessed": "✅", "partial": "🟠", "not_checked": "⚪", "blocked": "🟠",
+                "unavailable": "⛔", "not_applicable": "➖",
+            }.get(record["status"], "⚪")
             lines.append(
-                f"  - Status and method: {value_status(record['status'])} · {value_status(record['method'])}. "
-                f"Reason: {record['reason']}"
+                f"**C27 check:** {check_marker} `{record['check_id']}` · "
+                f"{value_status(record['status'])} · {value_status(record['method'])}."
             )
-            lines.append(f"  - {evidence_text}.")
+            lines.append(
+                f"Reason: {record['reason']}. Evidence: {refs(record['evidence_refs'])}; "
+                f"sources: {refs(record['source_refs'])}."
+            )
             related_gap = next((gap for gap in route_gaps
                                 if gap.startswith(f"c27:{entry['scope_ref']}:{record['check_id']}:")
                                 and _gap_work(gap) is not None), None)
             if related_gap:
                 missing = _gap_work(related_gap)
-                lines.append(f"  - Missing: {missing['missing']} Effect: {missing['effect']}")
+                lines.append(f"Missing: {missing['missing']} Effect: {missing['effect']}")
             if record.get("scope_exclusion"):
-                lines.append(f"  - Scope exclusion: {record['scope_exclusion']}.")
-    else:
-        lines.append("No C27 checks were recorded for this request.")
-
-    lines.extend(["", "### Material issues and open work"])
-    if issue_summaries:
-        issue_by_ref = {item["issue_ref"]: item for item in route.get("issues", [])}
-        for index, item in enumerate(issue_summaries, start=1):
-            linked = issue_by_ref.get(item["issue_ref"], {})
-            signals = ", ".join(_humanize(signal) for signal in linked.get("signal_ids", [])) or "signals not recorded"
-            disposition = value_status(linked.get("disposition", "not recorded"))
-            lines.append(
-                f"- **Issue {index}: {item['title']}** · {disposition}; signals: {signals}. "
-                f"Missing: {item['missing']} Effect: {item['effect']}"
-            )
-    if open_work:
-        for item in open_work:
+                lines.append(f"Scope exclusion: {record['scope_exclusion']}.")
+    if not isinstance(issue_records, list):
+        lines.append("Issue dispositions were not recorded; no issue cards or status bar can be produced.")
+    handled_open_titles = {
+        item["title"] for item in open_work
+        if item["title"].startswith("Case-state check:")
+        or item["title"] in set(OPERATION_LABELS.values())
+    }
+    other_open_work = [item for item in open_work if item["title"] not in handled_open_titles]
+    if other_open_work:
+        lines.extend(["", "#### Other open items"])
+        for item in other_open_work:
             lines.append(f"- **{item['title']}** · Missing: {item['missing']} Effect: {item['effect']}")
-    if not issue_summaries and not open_work:
+    if not issue_summaries and not open_work and not (isinstance(issue_records, list) and issue_records):
         lines.append("No outstanding items were reported by the declared route and validators.")
+
+    lines.extend(execution_lines)
 
     research_reports = {item.get("research_ref"): item for item in reports.get("research", []) if item.get("research_ref")}
     preflight_reports = {item.get("preflight_id"): item for item in reports.get("source_preflight", []) if item.get("preflight_id")}
     lines.extend(["", "### Deterministic validator results"])
-    lines.append("- Route-receipt schema and declared references: passed; this board was returned only after structural validation.")
+    lines.append(
+        "- Route-receipt schema and declared references: not run by the standalone renderer."
+        if validation_record is None
+        else f"- Route-receipt validation: {value_status(validation.get('result', 'not recorded'))}; see the validation record below."
+    )
     lines.append(
         f"- C27 record validation: {reports.get('c27_check_count', 0)} selected checks passed the shared record/status/trace validator."
         if reports.get("c27_check_count", 0)
@@ -919,12 +1046,21 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
     if not reports.get("module_pairs"):
         lines.append("- No C3 module-pair validator report was produced.")
 
-    lines.extend(["", "### Source ledger"])
-    lines.append(
+    lines.extend(["", "### Sources and provenance"])
+    response = metrics["response"]
+    conversation = metrics["conversation"]
+    lines.extend([
+        f"- Legal texts this response: **{'unknown' if response['count'] is None else response['count']}** (model-reported).",
+        f"- Conversation total: **{'unknown' if conversation['count'] is None else conversation['count']}** (model-reported).",
+        *source_summary_lines,
+        "- Counts cover the source records listed below, not every raw search-result hit.",
+        "- Bundled-library matches and web-search discoveries may overlap.",
+        "",
+        "#### Source ledger",
         f"Response tracking: {value_status(route['source_ledger']['response_tracking'])}; "
         f"conversation tracking: {value_status(route['source_ledger']['conversation_tracking'])}. "
-        "Counts are model-reported; unavailable tracking remains unknown. A web-search count includes only records explicitly marked as found through web search."
-    )
+        "Unavailable tracking remains unknown.",
+    ])
     ledger = sorted(route["source_ledger"]["sources"], key=lambda item: (item["section"].casefold(), item["title"].casefold(), item["logical_source_id"]))
     if ledger:
         for item in ledger:
@@ -981,18 +1117,13 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
     else:
         lines.append("No module-use record was supplied.")
 
-    if route.get("issues"):
-        lines.extend(["", "### Issue routing record"])
-        for index, issue in enumerate(route["issues"], start=1):
-            lines.append(
-                f"- Issue {index}: {value_status(issue['disposition'])}; "
-                f"signals: {', '.join(_humanize(value) for value in issue['signal_ids'])}; "
-                f"scope evidence: {refs([issue['evidence_ref']])}."
-            )
-
     lines.extend([
         "",
-        "### What this board can verify",
+        "### Provenance and limits",
+        f"- Invocation: {value_status(state)}; basis: {value_status(basis)}.",
+        f"- Receipt validation: **{value_status(validation.get('result', 'not recorded'))}** by `{validation.get('validator', 'not recorded')}` v{validation.get('validator_version', 'unknown')}.",
+        f"- Receipt fingerprint: `{validation.get('receipt_sha256', 'not available')}`; outstanding validation items: {validation.get('outstanding_count', len(set(route_gaps)))}.",
+        "- Validation covers the declared receipt and validator outputs. It does not authenticate model-reported facts, source reads, legal reasoning, or omitted issues.",
         "- It lists every source, selected C27 check, declared issue, module record, and required or triggered operation present in the receipt; nothing is omitted for compactness.",
         "- Local validators verify declared structure and selected artifacts. They do not prove the truth of model-reported work or detect omitted issues and triggers.",
         "- This plugin has no ChatGPT host release hook. A local controller can bind this exact answer and receipt when a host actually calls it; it cannot intercept ordinary ChatGPT output by itself.",
