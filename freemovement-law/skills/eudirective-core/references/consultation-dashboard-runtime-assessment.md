@@ -63,6 +63,19 @@ research artifacts.
 | The host will prevent release without a valid dashboard | No host-side evidence | Not established |
 | The GitHub verification workflow covers the adapter | `.github/workflows/verify-freemovement-versions.yml` | Updated to run the MCP adapter tests; remote CI has not run for these commits |
 
+## T1–T8 completion record
+
+| Task | Status | Evidence or remaining item |
+| --- | --- | --- |
+| T1 — Runtime and dashboard audit | Complete as a repository/runtime-documentation audit | This capability matrix, source entrypoints, local marketplace path, workflow, official integration docs, and host limits are recorded. Installed-client discovery remains unverified. |
+| T2 — Deterministic data contract | Implemented and locally tested | Versioned view-model schema, deterministic aggregation, no inferred percentages for unknown denominators, and separate model-reported versus validator provenance. |
+| T3 — Deterministic renderer | Implemented and locally tested | Full-record rendering, Markdown fallback, receipt fingerprint, repeated-output test, and receipt-change binding test. The separate answer-release gate remains opt-in and not host-wired. |
+| T4 — Callable runtime adapter | Local adapter implemented; ChatGPT host invocation remains partial | Root `mcp.json`, local stdio server, UI resource, synthetic protocol tests, and documented desktop-only/hosted boundary. No invocation was observed in an installed ChatGPT client. |
+| T5 — Visual presentation | Implemented; static tests pass | Accessible status cards, scoped progress, text equivalents, light/dark and forced-color styles, DOM safety, and JavaScript syntax check. Actual client rendering remains unobserved. |
+| T6 — Plugin instructions | Complete | `SKILL.md`, routing documents, README, runtime matrix, and failure behavior describe the callable tool and its limits. |
+| T7 — Automated and hosted validation | Local checks complete; hosted checks deferred | 92 dashboard/routing tests and 156 broader self-tests passed; CI now runs the adapter suite. Remote CI and installed-host tests have not run. The live test plan is retained per maintainer instruction. |
+| T8 — Release and verification | Partial | Versions and release notes are updated; the 2,522-file candidate archive passed integrity and extracted-package MCP tests. It has not been installed into the target client, published, or visually verified there. |
+
 ## Required live verification
 
 Do not run a live consultation during routine maintenance. Use the separate
