@@ -31,7 +31,7 @@ Give the substantive answer priority. Use the concise response pattern in `refer
 Before substantive work, on the first FreeMovement skill invocation in this conversation, read `eudirective-core/references/session-version-check.md` and perform its read-only once-per-conversation version comparison. On mismatch, remind the user to check for and manually install an available update; state that this check does not update the plugin. Report only affected components and exact installed/GitHub values. If the check is unsuccessful, explain that update availability could not be confirmed. Do not report a mismatch-free check. Continue the requested work regardless of the result. Skip additional checks in the same conversation unless expressly requested; if this skill is not the core, load the core's referenced instructions first. This checks package versions only, not legal-source validity.
 
 ## Version and Status
-- Current version: `0.53.0`
+- Current version: `0.53.1`
 - Last updated: `2026-10-21`
 - Status: read-only applicant-facing guidance for user-provided real or fictional accounts; controlled scripts still restrict private-data intake and external actions.
 - Inter-skill contract: `0.2.0` (C3 development freeze; not portfolio v1.0).
@@ -45,7 +45,7 @@ For every visible response or report produced while using this skill, announce t
 
 On the first response of a conversation, place this after the required first-response notice above:
 ```text
-Skill: eudirective-core v0.53.0
+Skill: eudirective-core v0.53.1
 ```
 
 ## Ordinary-consultation routing (model-led)
