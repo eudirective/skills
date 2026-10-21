@@ -5,7 +5,7 @@
 
 ## Current source state
 
-The 44-record discovery inventory covers laws, treaty routes, government guidance, forms, mission practice, procedures, oversight and court discovery. The capture baseline has 28 configured routes, 27 saved responses and 26 review conversions. Those conversions remain candidates; no local artifact is accepted. A separate review verified 11 official external references by link, as recorded in [`source-acceptance.json`](source-acceptance.json). The register accepts a direct official link only for the version, date, language, legal status and passages actually checked. It does not mark a local copy, subject area, or country review complete.
+The 44-record discovery inventory covers laws, treaty routes, government guidance, forms, mission practice, procedures, oversight and court discovery. The capture baseline has 28 configured routes, 27 saved responses and 26 review conversions. Those conversions remain candidates; no local artifact is accepted. A separate review verified 12 official external references by link, as recorded in [`source-acceptance.json`](source-acceptance.json). The register accepts a direct official link only for the version, date, language, legal status and passages actually checked. It does not mark a local copy, subject area, or country review complete.
 
 The checked legal references include:
 
@@ -14,6 +14,7 @@ The checked legal references include:
 - OLCP/VFP, French, dated 1 January 2026.
 - VwVG, German, dated 1 July 2022; its scope is federal administrative authorities and does not establish cantonal migration procedure.
 - FDFA's AFMP status and link page, and EFTA's institutional explanation that Switzerland is not a party to the EEA Agreement.
+- SEM Directive No. 322.3-12, dated 4 December 2025, for specified third-country family-reunification procedures. It clarifies the foreign-representation, canton, and SEM handoffs and expressly excludes AFMP family cases.
 
 The official Fedlex web interface did not render some full text bodies in the research client; their official records are still usable references for the displayed identity and version metadata. Open them directly for provision-level use and recheck the publisher for later versions. Full legal-text retrieval, OCR, replay, checksum comparisons and bulk/API registration are optional activities for a future retained-copy or automated-monitoring workflow, not source-acceptance conditions.
 
@@ -34,7 +35,7 @@ The former acquisition-oriented assessment described an exact Fedlex metadata/AP
 
 Where government publisher identity, current version, or legal scope is unclear, keep that question visible and offer the relevant whole official website for human review. Do not make one failed browser rendering or one stale translation a reason to reconstruct a Gazette chain automatically. Use the closest government-published text with a dated caveat when that is the best usable official source.
 
-No registration-only API, automated updater, raw-source retention, conversion replay, or hash calculation is required for the 11 external link decisions. If an updater is later requested, design the simplest sustainable check for the chosen source: revisit the official parent page or versioned record, compare the displayed version/date and links, and route material ambiguity for human review. Do not build an updater for sources that only need an occasional direct check.
+No registration-only API, automated updater, raw-source retention, conversion replay, or hash calculation is required for the 12 external link decisions. If an updater is later requested, design the simplest sustainable check for the chosen source: revisit the official parent page or versioned record, compare the displayed version/date and links, and route material ambiguity for human review. Do not build an updater for sources that only need an occasional direct check.
 
 ## Material open coverage
 
@@ -44,7 +45,7 @@ The parliament docket and FAC publication page provide useful discovery and moni
 
 ## Conclusions
 
-- **Official link use:** sustainable for the 11 accepted references within their recorded scope and dates, with a direct publisher recheck when currentness matters.
+- **Official link use:** sustainable for the 12 accepted references within their recorded scope and dates, with a direct publisher recheck when currentness matters.
 - **Local captures:** 0 accepted. The existing 26 conversions remain review candidates and need not be perfected before an official link can be used.
 - **Topic coverage:** 0 accepted as complete. A topic should be accepted only after its applicable legal route, procedure, competent authority and remedies are mapped or the remaining gap is explicit.
 - **Country review:** incomplete. The source set is not a completeness certification.

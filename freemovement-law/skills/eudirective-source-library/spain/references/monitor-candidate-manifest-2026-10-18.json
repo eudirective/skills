@@ -2,13 +2,13 @@
   "manifest_version": "0.2.0-candidate",
   "pack": "spain-national-source-candidates",
   "jurisdiction": "ES",
-  "inventory_research_date": "2026-10-18",
-  "scope": "Bounded first-pass discovery of official publication and reuse routes, EU/EEA and Swiss residence routes, the distinct Spanish-national family route, forms and filing, visas and consular practice, administrative remedies, public access, privacy, oversight, legal aid, civil-status evidence, and selected courts. This is not a complete inventory or a legal-equivalence opinion.",
+  "inventory_research_date": "2026-10-21",
+  "scope": "Bounded first-pass discovery of official publication and reuse routes, EU/EEA and Swiss residence routes, the distinct Spanish-national family route, forms and filing, visas and consular practice, administrative remedies, public access, privacy, oversight, legal aid, civil-status evidence, selected courts, and the distinct UK Withdrawal Agreement residence and family route. This is not a complete inventory or a legal-equivalence opinion.",
   "status": "partially_retrieved_review_candidates",
-  "retrieval_status": "34 source responses saved; 30 pages converted and replay-verified; four dynamic pages had no stable text body; 12 retrieval/conversion failures remain. Twenty-two external official references are accepted by link within stated scope; no local copies or topics are accepted.",
+  "retrieval_status": "34 source responses saved; 30 pages converted and replay-verified; four dynamic pages had no stable text body; 12 retrieval/conversion failures remain. Twenty-five external official references are accepted by link within stated scope; no local copies or topics are accepted.",
   "accepted_source_count": 0,
-  "accepted_external_reference_count": 22,
-  "candidate_source_count": 48,
+  "accepted_external_reference_count": 25,
+  "candidate_source_count": 52,
   "official_hosts": [
     "aepd.es",
     "boe.es",
@@ -122,6 +122,25 @@
         "es"
       ],
       "coverage_limit": "No representative queries or pagination were replayed in CENDOJ or the Constitutional Court search. CENDOJ's legal notice limits user consultation and prohibits bulk downloads; reuse for databases or commercial purposes requires the CGPJ/CENDOJ process and terms. Autonomous-community data-protection, transparency, ombuds and court routes remain outside this central first pass."
+    },
+    {
+      "source_class": "UK Withdrawal Agreement residence, family and documentation",
+      "search_outcome": "The Spanish Ministry’s resident-in-Spain Brexit page identifies the Article 18.4 route and links the BOE-published joint instruction and a September 2024 family guide. EUR-Lex identifies a current consolidated Withdrawal Agreement, but its direct text view triggered a JavaScript/anti-bot check and is offered for whole-site human review.",
+      "official_channels": [
+        "BOE",
+        "Ministry of Inclusion, Social Security and Migration",
+        "EUR-Lex"
+      ],
+      "query_terms": [
+        "site:inclusion.gob.es Acuerdo de Retirada residentes España instrucción artículo 18.4 guía Brexit septiembre 2024",
+        "site:boe.es BOE-A-2020-7276 instrucción conjunta artículo 18.4 Acuerdo de Retirada",
+        "site:eur-lex.europa.eu 02020W/TXT current consolidated version Withdrawal Agreement"
+      ],
+      "languages": [
+        "es",
+        "en"
+      ],
+      "coverage_limit": "The BOE instruction is an original 2020 publication rather than a consolidation; Ministry guidance is orientative and dated. The Ministry page and guide contain future EES/ETIAS rollout dates from 2024/2025, which are not current as of this review. The current EUR-Lex consolidation needs human article-level inspection; a link or instrument identity does not establish full Withdrawal Agreement coverage."
     }
   ],
   "sources": [
@@ -1477,6 +1496,106 @@
         "administrative_decisions",
         "dependency",
         "case_law"
+      ],
+      "retrieved": false,
+      "accepted": false
+    },
+    {
+      "id": "es-49",
+      "title": "EU-UK Withdrawal Agreement current consolidated text",
+      "source_type": "international_agreement",
+      "language": "en",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A12020W%2FTXT",
+      "publisher_identifier": {
+        "system": "EUR-Lex",
+        "record": "12020W/TXT current-consolidation link"
+      },
+      "functional_relationship": "direct_legal_dependency",
+      "verification_status": "EUR-Lex identifies the agreement and a current consolidated version dated 2026-02-03 in search results; direct text display returned a JavaScript/anti-bot check in the review client on 2026-10-21. Offered for human review.",
+      "retrieval_status": "official_site_offered_for_human_review",
+      "retrieval_shape": "EUR-Lex current-consolidation page",
+      "version_evidence": "EUR-Lex search result lists the current consolidated version as 2026-02-03 and shows prior consolidated editions.",
+      "note": "Underlying treaty source for protected UK nationals and family rights. Do not rely on the exact Article 10/18 text until a human checks the current consolidated page; the EUR-Lex site is offered for review.",
+      "topic_ids": [
+        "withdrawal_agreement",
+        "family",
+        "residence",
+        "versioning"
+      ],
+      "retrieved": false,
+      "accepted": false
+    },
+    {
+      "id": "es-50",
+      "title": "BOE-A-2020-7276 joint instruction on Article 18.4 residence documents",
+      "source_type": "national_implementation_instruction",
+      "language": "es",
+      "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2020-7276&lang=es",
+      "publisher_identifier": {
+        "system": "BOE",
+        "record": "BOE-A-2020-7276"
+      },
+      "functional_relationship": "direct_legal_dependency",
+      "verification_status": "Official BOE record and original text inspected on 2026-10-21.",
+      "retrieval_status": "official_link_reviewed_no_local_capture",
+      "retrieval_shape": "Official BOE resolution/instruction page with publication formats",
+      "version_evidence": "Resolution dated 2020-07-02 and published in BOE No. 184 on 2020-07-04; no consolidated version is shown for this instruction.",
+      "note": "The closest published Spanish text for the Article 18.4 residence-document procedure. It addresses UK nationals, qualifying family members and other covered persons, including EX-20/EX-21 and separate application routes. Check specific later guidance and changes when relevant.",
+      "topic_ids": [
+        "withdrawal_agreement",
+        "immigration_procedure",
+        "family",
+        "status_document"
+      ],
+      "retrieved": false,
+      "accepted": false
+    },
+    {
+      "id": "es-51",
+      "title": "Ministry of Inclusion Brexit page for UK nationals resident in Spain by 31 December 2020",
+      "source_type": "official_guidance",
+      "language": "es",
+      "url": "https://inclusion.gob.es/web/guest/brexit/residencia/en-espana-a-31-12-2020",
+      "publisher_identifier": {
+        "system": "Ministry of Inclusion",
+        "record": "Residentes en España a 31 de diciembre"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official Ministry page inspected on 2026-10-21; it links the BOE instruction and Ministry guide.",
+      "retrieval_status": "official_link_reviewed_no_local_capture",
+      "retrieval_shape": "Official Ministry HTML guidance page",
+      "version_evidence": "Live page with no displayed update date; linked the original 2020 instruction and September 2024 guide when checked.",
+      "note": "Explains Spain’s Article 18.4 choice and distinguishes protected residents/family from post-transition arrivals. Its EES/ETIAS rollout dates are stale as of 2026 and must not be used as current border guidance.",
+      "topic_ids": [
+        "withdrawal_agreement",
+        "immigration_procedure",
+        "family",
+        "discovery"
+      ],
+      "retrieved": false,
+      "accepted": false
+    },
+    {
+      "id": "es-52",
+      "title": "Ministry Brexit family guide, September 2024",
+      "source_type": "official_guidance_pdf",
+      "language": "es",
+      "url": "https://www.inclusion.gob.es/documents/20121/1013077/240910%20Guia%20brexit%20actualizada%20_final.pdf",
+      "publisher_identifier": {
+        "system": "Ministry of Inclusion",
+        "record": "Guía con preguntas y respuestas sobre nacionales del Reino Unido residentes en España y sus familiares"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official 40-page PDF and relevant family sections inspected on 2026-10-21; linked from the Ministry resident page.",
+      "retrieval_status": "official_link_reviewed_no_local_capture",
+      "retrieval_shape": "Official Ministry PDF",
+      "version_evidence": "Cover is dated September 2024.",
+      "note": "Dated guidance on Withdrawal Agreement eligibility, residence cards and family members. Its future EES/ETIAS rollout estimates are stale as of 2026; current filing details and legal changes require a fresh official check.",
+      "topic_ids": [
+        "withdrawal_agreement",
+        "family",
+        "residence",
+        "status_document"
       ],
       "retrieved": false,
       "accepted": false

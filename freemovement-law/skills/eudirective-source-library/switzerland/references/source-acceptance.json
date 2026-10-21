@@ -7,7 +7,7 @@
   "accepted_derived_text_count": 0,
   "accepted_topic_count": 0,
   "country_review_complete": false,
-  "accepted_external_reference_count": 11,
+  "accepted_external_reference_count": 12,
   "policy": "A trustworthy official government text or page may be accepted as an external reference within the publisher, language, version or observed date, legal status, subject, and passages actually checked. Government-published consolidated texts are acceptable working references when their identity and scope are clear; Gazette-fragment reconstruction, a local copy, conversion, hashes, or an updater are not prerequisites for link use. If currentness, publisher trust, or scope remains unclear, leave the reference unresolved and offer the whole official website for human review. External-link acceptance does not accept a local conversion, establish topic adequacy, or complete the country review.",
   "external_reference_decisions": [
     {
@@ -219,6 +219,28 @@
         "verified_content": "The FAC says substantive judgments are published, procedural decisions are published only if of general public interest, reference judgments do not cover every field, and the page links the FAC judgments database.",
         "limitations": "The Court does not guarantee completeness and accuracy of internet information. The database contains all published decisions, which is not the same as all decisions made."
       }
+    },
+    {
+      "source_id": "ch-22-sem-family-reunification-procedure-20251204",
+      "decision": "accepted_with_narrow_external_scope",
+      "accepted_role": "Official SEM procedural directive for specified third-country family-reunification routes under the AIG and Asylum Act. It identifies the handoff between Swiss representations, cantonal migration authorities, and SEM.",
+      "not_accepted": [
+        "Family members within the EU-Switzerland AFMP route; the directive expressly excludes that route.",
+        "A complete source of binding eligibility law or a replacement for the AIG, VZAE, OEV, or Asylum Act.",
+        "A complete cantonal application, appointment, fee, or remedy map.",
+        "The separate country-list PDF as an independently reviewed source.",
+        "The captured French Markdown conversion as an accepted local copy."
+      ],
+      "evidence": {
+        "official_source_url": "https://www.sem.admin.ch/sem/de/home/publiservice/weisungen-kreisschreiben/auslaenderbereich/familiennachzug.html",
+        "linked_document_url": "https://www.sem.admin.ch/dam/sem/de/data/rechtsgrundlagen/weisungen/auslaender/familie/251204-weisung-familiennachzug.pdf.download.pdf/251204-weisung-familiennachzug-d.pdf",
+        "parallel_language_url": "https://www.sem.admin.ch/dam/sem/fr/data/rechtsgrundlagen/weisungen/auslaender/familie/251204-weisung-familiennachzug.pdf.download.pdf/251204-weisung-familiennachzug-f.pdf",
+        "checked_on": "2026-10-21",
+        "language": "de; official French parallel version also available",
+        "version": "SEM Directive No. 322.3-12 dated 2025-12-04; its official parent index was last modified 2025-12-12 and currently links the directive and a separate country list.",
+        "verified_content": "The 18-page directive is addressed to Swiss foreign representations and cantonal migration authorities. For family reunification under AIG Articles 42 ff., the representation conducts preliminary review and forwards the application; the canton examines and decides, with SEM approval reserved in some cases. It separately describes routes for temporarily admitted persons and refugees and states that AFMP family reunification is outside its scope.",
+        "limitations": "Use the parent index to resolve the current PDF and its separately linked country list. This is official operational guidance, not the statutory basis. Do not apply it to AFMP/EU-EFTA family routes or infer all 26 cantonal requirements from it."
+      }
     }
   ],
   "human_review_offers": [
@@ -230,7 +252,7 @@
     {
       "site": "https://www.sem.admin.ch/sem/en/home.html",
       "review_scope": "Review the full SEM guidance and directives site for route-specific instructions, procedures, forms, visa and residence-card distinctions, and updates to the current EU/EFTA and visa-refusal pages.",
-      "reason": "The accepted pages delegate local procedures and do not establish coverage of all sponsor routes or all relevant instructions."
+      "reason": "The accepted 2025 directive clarifies missions, SEM, and cantonal handoffs for specified third-country routes but excludes AFMP family cases; other sponsor routes, remedies, current forms, and local steps remain open."
     },
     {
       "site": "https://www.eda.admin.ch/en/swiss-representations-abroad",
@@ -263,5 +285,5 @@
       "reason": "Family-status, oversight, and current local ombuds coverage remain open in the candidate inventory."
     }
   ],
-  "count_note": "accepted_source_count and accepted_current_law_source_count count retained local artifacts and remain 0. Eleven official external references are accepted within narrow scopes; this includes one EFTA institutional status reference outside the original 44-record capture inventory. No local conversion, topic, or country review is accepted or complete."
+  "count_note": "accepted_source_count and accepted_current_law_source_count count retained local artifacts and remain 0. Twelve official external references are accepted within narrow scopes; this includes one EFTA institutional status reference outside the original 44-record capture inventory. No local conversion, topic, or country review is accepted or complete."
 }

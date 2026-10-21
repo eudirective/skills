@@ -130,7 +130,7 @@ The [Bulgaria register](bulgaria/references/candidate-manifest.json) has 36 reco
 
 ## Greece candidate pack
 
-The [Greece register](greece/references/candidate-manifest.json) has 59 records. Forty texts from the original run converted and replayed offline; 16 retrieval failures remain. Six official legal references are usable by link, including the newly identified 2025 return-procedure provisions and 2026 Article 53 amendment; no local copy is accepted. No consolidated PD 106/2007 text was found. Use the original decree and targeted amendments relevant to the question, recording their dates and scope. See the [README](greece/README.md), [source acceptance register](greece/references/source-acceptance.json), and [sustainability assessment](greece/references/sustainability-assessment.md).
+The [Greece register](greece/references/candidate-manifest.json) has 61 records. Forty texts from the original run converted and replayed offline; 16 retrieval failures remain. Six official legal references and five Greek-language MITOS procedure pages are usable by link within scope; no local copy is accepted. Two Gov.gr family-residence routes, the Ministry’s older family guidance, and an Attica duration conflict are offered for whole-portal human review. No consolidated PD 106/2007 text was found. Use the original decree and targeted amendments relevant to the question, recording their dates and scope. See the [README](greece/README.md), [source acceptance register](greece/references/source-acceptance.json), and [sustainability assessment](greece/references/sustainability-assessment.md).
 
 
 ## Slovenia candidate pack

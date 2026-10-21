@@ -1,6 +1,6 @@
 # Switzerland national-source review
 
-The inventory contains 44 candidates covering Swiss federal law, guidance, procedures, forms, decisions, oversight and discovery routes. A 21 October 2026 review accepted 11 official external references within narrow scopes. **No retained local source, legal topic, or country review is accepted as complete.** The 27 saved responses and 26 review conversions remain candidate artifacts; their capture or conversion status does not determine link acceptance or legal coverage.
+The inventory contains 44 candidates covering Swiss federal law, guidance, procedures, forms, decisions, oversight and discovery routes. A 21 October 2026 review accepted 12 official external references within narrow scopes, including the current SEM third-country family-reunification procedure directive. **No retained local source, legal topic, or country review is accepted as complete.** The 27 saved responses and 26 review conversions remain candidate artifacts; their capture or conversion status does not determine link acceptance or legal coverage.
 
 Switzerland is an EFTA and Schengen participant but not an EEA Contracting Party. Keep the AFMP/EFTA treaty routes, the FNIA route for family members of Swiss citizens, ordinary third-country routes, and UK acquired-rights cases distinct. The official Parliament docket records Bilateral III as under deliberation on 19 October 2026; do not treat proposed changes as operative law.
 

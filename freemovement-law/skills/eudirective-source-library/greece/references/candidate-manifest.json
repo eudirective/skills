@@ -4,10 +4,10 @@
   "jurisdiction": "GR",
   "inventory_research_date": "2026-10-21",
   "scope": "Bounded discovery of Greek official gazette and legislation routes; EU/EEA/Swiss and UK residence routes; visa and mission practice; civil status, foreign family evidence and limited adoption-related services; administrative procedure and public access; remedies/courts, oversight, privacy, legal aid and selected regional administration. This is not a legal-equivalence opinion or complete national inventory.",
-  "status": "partially retrieved; six official legal references reviewed by link; local-copy acceptance and country coverage incomplete",
-  "retrieval_status": "40 of the original 56 candidate texts converted and replay-verified; 16 retrieval failures remain; three additional official legal sources reviewed by link without retaining local copies; 0 local copies accepted",
+  "status": "partially retrieved; 11 scoped official references reviewed by link (six legal and five procedural); two Gov.gr routes pending whole-portal human review; local-copy acceptance and country coverage incomplete",
+  "retrieval_status": "40 of the original 56 candidate texts converted and replay-verified; 16 original retrieval failures remain; six legal references and five current Greek MITOS procedure pages are usable by link; two Greek Gov.gr family-residence pages are discovery candidates offered for whole-portal human review; 0 local copies accepted",
   "accepted_source_count": 0,
-  "candidate_source_count": 59,
+  "candidate_source_count": 61,
   "official_hosts": [
     "aead.gr",
     "apdattikis.gov.gr",
@@ -64,26 +64,31 @@
     },
     {
       "source_class": "EU, EEA, Swiss and UK residence routes and administration",
-      "search_outcome": "Candidates found; routes are visibly separate in procedure records, but substantive agreement bases and all residence-card categories need review.",
+      "search_outcome": "Candidates found across separate routes. Five Greek-language MITOS procedures were reviewed as official links with September 2026 update dates; third-country-family card routes remain under whole-portal review.",
       "official_channels": [
         "Presidential Decree 106/2007 and linked amendment Gazettes",
         "MITOS administrative procedure records",
         "Migration Ministry EU-family guidance",
         "Migration Ministry third-country family guidance",
-        "Attica regional authority sample"
+        "Attica regional authority sample",
+        "Greek-language MITOS procedure pages (last updates 21 or 28 September 2026)",
+        "Gov.gr Greek Single Digital Gateway residence-card pages"
       ],
       "query_terms": [
         "πολίτες ΕΕ μέλη οικογένειας άδεια διαμονής ΠΔ 106/2007",
         "site:en.mitos.gov.gr Greece Union family registration permanent residence",
         "site:migration.gov.gr third country family member EU residence Greece",
         "Withdrawal Agreement residence documents Greece MITOS",
-        "ΕΟΧ Ελβετία μέλη οικογένειας"
+        "ΕΟΧ Ελβετία μέλη οικογένειας",
+        "site:mitos.gov.gr Βεβαίωση εγγραφής πολίτες της Ένωσης μέλη οικογένειας",
+        "site:mitos.gov.gr πολίτες της Ένωσης οικονομικά ανενεργά άτομα σπουδαστές",
+        "site:gov.gr/el/sdg/residence μέλη οικογένειας πολίτη ΕΕ δελτίο διαμονής"
       ],
       "languages": [
         "el",
         "en"
       ],
-      "coverage_limit": "MITOS pages are procedure-specific; some titles describe EU, EEA and Swiss applicants, but separate treaty/legal grounds must be confirmed. UK Withdrawal Agreement route is distinct. Attica is one regional sample, not national practice."
+      "coverage_limit": "The five MITOS pages are process-specific and dated September 2026; they do not establish full substantive coverage or the current third-country-family card process. Gov.gr’s Greek SDG pages did not expose their body text in this research client, and the English general-family counterpart is dated 28 November 2022; current categories, forms, card durations, fees, competent authorities and appeals are offered for whole-portal human review. EEA, Swiss, UK Withdrawal Agreement and Greek-national-family routes remain distinct."
     },
     {
       "source_class": "Visas, consular services and mission-specific instructions",
@@ -494,18 +499,23 @@
         "record": "publisher record or service at URL; stable source identifier captured in title/notes where available"
       },
       "functional_relationship": "partial_functional_match",
-      "verification_status": "Official live procedure page inspected; describes an in-person registration process and cites PD 106/2007, Law 4071/2012 and Law 4540/2018. Scope in its requirements includes extended-family cases; do not generalize to every family category.",
+      "verification_status": "Official Greek-language MITOS procedure page inspected; last updated 2026-09-21; The Greek registry page identifies the Ministry of Citizen Protection and Hellenic Police as responsible authorities, describes in-person registration, and cites PD 106/2007 plus Laws 4071/2012 and 4540/2018. It displays a last-update date of 21 September 2026.",
       "retrieval_status": "converted_review_candidate",
       "retrieval_shape": "Dynamic HTML administrative procedure record",
-      "version_evidence": "Live page inspected 18 October 2026; record update date not captured.",
-      "note": "MITOS describes EU, EEA and Swiss applicants for this procedure; the distinct agreement basis for non-EU routes must be checked separately.",
+      "version_evidence": "Greek-language MITOS page displays last update 2026-09-21; link reviewed 2026-10-21. The saved English-language conversion remains an unaccepted review artifact.",
+      "note": "The Greek page is the preferred official procedural reference. The English page is the route used for the existing unaccepted local capture. This procedure page is not a consolidated law; check the relevant Greek legal text and later amendments for legal questions.",
       "retrieved": true,
       "accepted": false,
       "candidate_text_path": "source-library/greece/candidates/gr-12.md",
       "source_sha256": "a18c4a7f302b672ca4235744ee5f473cf991e22159dd567c9c93371477daade2",
       "converted_sha256": "2b6b40af0fc6c187d94a6edcc4f945c1ee511aecd6bfc7b8a3a460160051c16d",
       "source_bytes": 83040,
-      "resolved_url": "https://en.mitos.gov.gr/index.php/%CE%94%CE%94:Certificate_of_registration_for_Union_citizens_residing_in_Greece_as_family_members_of_citizens_of_the_European_Union"
+      "resolved_url": "https://en.mitos.gov.gr/index.php/%CE%94%CE%94:Certificate_of_registration_for_Union_citizens_residing_in_Greece_as_family_members_of_citizens_of_the_European_Union",
+      "greek_official_url": "https://mitos.gov.gr/index.php/%CE%94%CE%94%3A%CE%92%CE%B5%CE%B2%CE%B1%CE%AF%CF%89%CF%83%CE%B7_%CE%B5%CE%B3%CE%B3%CF%81%CE%B1%CF%86%CE%AE%CF%82_%CF%83%CE%B5_%CF%80%CE%BF%CE%BB%CE%AF%CF%84%CE%B5%CF%82_%CF%84%CE%B7%CF%82_%CE%88%CE%BD%CF%89%CF%83%CE%B7%CF%82_%CF%80%CE%BF%CF%85_%CE%B4%CE%B9%CE%B1%CE%BC%CE%AD%CE%BD%CE%BF%CF%85%CE%BD_%CF%83%CF%84%CE%B7%CE%BD_%CE%95%CE%BB%CE%BB%CE%AC%CE%B4%CE%B1_%CF%89%CF%82_%CE%BC%CE%AD%CE%BB%CE%B7_%CE%BF%CE%B9%CE%BA%CE%BF%CE%B3%CE%AD%CE%BD%CE%B5%CE%B9%CE%B1%CF%82_%CF%80%CE%BF%CE%BB%CE%AF%CF%84%CE%B7_%CF%84%CE%B7%CF%82_%CE%88%CE%BD%CF%89%CF%83%CE%B7%CF%82",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_language": "el",
+      "official_reference_updated": "2026-09-21",
+      "official_reference_scope": "EU-citizen registration certificate where the applicant is a family member of another Union citizen; includes the family and stable-relationship categories described by the procedure, with separate treaty grounds to be checked for EEA/Swiss routes."
     },
     {
       "id": "gr-13",
@@ -518,18 +528,23 @@
         "record": "publisher record or service at URL; stable source identifier captured in title/notes where available"
       },
       "functional_relationship": "partial_functional_match",
-      "verification_status": "Official MITOS record identified in search results; describes registration and cites PD 106/2007.",
+      "verification_status": "Official Greek-language MITOS procedure page inspected; last updated 2026-09-28; The Greek registry page describes the worker/self-employed route, competent police authorities, status-retention conditions and hierarchical remedy information. It displays a last-update date of 28 September 2026.",
       "retrieval_status": "converted_review_candidate",
       "retrieval_shape": "Dynamic HTML procedure page",
-      "version_evidence": "Page-level date not captured.",
-      "note": "Individual procedure record, not a general consolidated account of residence rights.",
+      "version_evidence": "Greek-language MITOS page displays last update 2026-09-28; link reviewed 2026-10-21. The saved English-language conversion remains an unaccepted review artifact.",
+      "note": "The Greek page is the preferred official procedural reference. The English page is the route used for the existing unaccepted local capture. This procedure page is not a consolidated law; check the relevant Greek legal text and later amendments for legal questions.",
       "retrieved": true,
       "accepted": false,
       "candidate_text_path": "source-library/greece/candidates/gr-13.md",
       "source_sha256": "ef5683149fb6aa41f117a239338c7996bc78c8491f2356fab34f410b9f826b94",
       "converted_sha256": "d2989949bedc70d062c488e9bcda895eeabb5d3bf5628ad7c9334fefed916e77",
       "source_bytes": 74710,
-      "resolved_url": "https://en.mitos.gov.gr/index.php/%CE%94%CE%94:Certificate_of_registration_for_citizens_of_the_Union_residing_in_Greece_as_employees_or_non-employees"
+      "resolved_url": "https://en.mitos.gov.gr/index.php/%CE%94%CE%94:Certificate_of_registration_for_citizens_of_the_Union_residing_in_Greece_as_employees_or_non-employees",
+      "greek_official_url": "https://mitos.gov.gr/index.php/%CE%94%CE%94%3A%CE%92%CE%B5%CE%B2%CE%B1%CE%AF%CF%89%CF%83%CE%B7_%CE%B5%CE%B3%CE%B3%CF%81%CE%B1%CF%86%CE%AE%CF%82_%CF%83%CE%B5_%CF%80%CE%BF%CE%BB%CE%AF%CF%84%CE%B5%CF%82_%CF%84%CE%B7%CF%82_%CE%88%CE%BD%CF%89%CF%83%CE%B7%CF%82_%CF%80%CE%BF%CF%85_%CE%B4%CE%B9%CE%B1%CE%BC%CE%AD%CE%BD%CE%BF%CF%85%CE%BD_%CF%83%CF%84%CE%B7%CE%BD_%CE%95%CE%BB%CE%BB%CE%AC%CE%B4%CE%B1_%CF%89%CF%82_%CE%BC%CE%B9%CF%83%CE%B8%CF%89%CF%84%CE%BF%CE%AF_%CE%AE_%CE%BC%CE%B7_%CE%BC%CE%B9%CF%83%CE%B8%CF%89%CF%84%CE%BF%CE%AF",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_language": "el",
+      "official_reference_updated": "2026-09-28",
+      "official_reference_scope": "EU-citizen registration certificate for workers and self-employed people, including the recorded conditions for retaining worker/self-employed status."
     },
     {
       "id": "gr-14",
@@ -542,18 +557,23 @@
         "record": "publisher record or service at URL; stable source identifier captured in title/notes where available"
       },
       "functional_relationship": "partial_functional_match",
-      "verification_status": "Official MITOS record identified in search results; describes resources and health-cover evidence under the procedure.",
+      "verification_status": "Official Greek-language MITOS procedure page inspected; last updated 2026-09-28; The Greek registry page describes the resources and full-health-insurance conditions, competent police authorities and remedy route. It displays a last-update date of 28 September 2026.",
       "retrieval_status": "converted_review_candidate",
       "retrieval_shape": "Dynamic HTML procedure page",
-      "version_evidence": "Page-level date not captured.",
-      "note": "Check the native statute and present agency practice before relying on requirements or fees.",
+      "version_evidence": "Greek-language MITOS page displays last update 2026-09-28; link reviewed 2026-10-21. The saved English-language conversion remains an unaccepted review artifact.",
+      "note": "The Greek page is the preferred official procedural reference. The English page is the route used for the existing unaccepted local capture. This procedure page is not a consolidated law; check the relevant Greek legal text and later amendments for legal questions.",
       "retrieved": true,
       "accepted": false,
       "candidate_text_path": "source-library/greece/candidates/gr-14.md",
       "source_sha256": "37b74ba7290d59f85c7b9978b87f5223d36ddff0907103743bf58dad8e772013",
       "converted_sha256": "5cb9d8459b16a989a184101a793b3266824dace4e617ce178ec2f3081cfd8ddc",
       "source_bytes": 71490,
-      "resolved_url": "https://en.mitos.gov.gr/index.php/%CE%94%CE%94:Certificate_of_registration_for_Union_citizens_residing_in_Greece_as_financially_inactive_persons"
+      "resolved_url": "https://en.mitos.gov.gr/index.php/%CE%94%CE%94:Certificate_of_registration_for_Union_citizens_residing_in_Greece_as_financially_inactive_persons",
+      "greek_official_url": "https://mitos.gov.gr/index.php/%CE%94%CE%94%3A%CE%92%CE%B5%CE%B2%CE%B1%CE%AF%CF%89%CF%83%CE%B7_%CE%B5%CE%B3%CE%B3%CF%81%CE%B1%CF%86%CE%AE%CF%82_%CF%83%CE%B5_%CF%80%CE%BF%CE%BB%CE%AF%CF%84%CE%B5%CF%82_%CF%84%CE%B7%CF%82_%CE%88%CE%BD%CF%89%CF%83%CE%B7%CF%82_%CF%80%CE%BF%CF%85_%CE%B4%CE%B9%CE%B1%CE%BC%CE%AD%CE%BD%CE%BF%CF%85%CE%BD_%CF%83%CF%84%CE%B7%CE%BD_%CE%95%CE%BB%CE%BB%CE%AC%CE%B4%CE%B1_%CF%89%CF%82_%CE%BF%CE%B9%CE%BA%CE%BF%CE%BD%CE%BF%CE%BC%CE%B9%CE%BA%CE%AC_%CE%B1%CE%BD%CE%B5%CE%BD%CE%B5%CF%81%CE%B3%CE%AC_%CE%AC%CF%84%CE%BF%CE%BC%CE%B1",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_language": "el",
+      "official_reference_updated": "2026-09-28",
+      "official_reference_scope": "EU-citizen registration certificate for economically inactive people, including sufficient resources and comprehensive sickness insurance."
     },
     {
       "id": "gr-15",
@@ -566,18 +586,23 @@
         "record": "publisher record or service at URL; stable source identifier captured in title/notes where available"
       },
       "functional_relationship": "partial_functional_match",
-      "verification_status": "Official MITOS service-register entry identified; direct procedure content not reopened.",
+      "verification_status": "Official Greek-language MITOS procedure page inspected; last updated 2026-09-21; The Greek registry page describes enrolment, sufficient resources, full health coverage, competent police authorities and the in-person route. It displays a last-update date of 21 September 2026.",
       "retrieval_status": "converted_review_candidate",
       "retrieval_shape": "Dynamic HTML procedure page",
-      "version_evidence": "Not assessed.",
-      "note": "Student process is a distinct PD 106/2007 route.",
+      "version_evidence": "Greek-language MITOS page displays last update 2026-09-21; link reviewed 2026-10-21. The saved English-language conversion remains an unaccepted review artifact.",
+      "note": "The Greek page is the preferred official procedural reference. The English page is the route used for the existing unaccepted local capture. This procedure page is not a consolidated law; check the relevant Greek legal text and later amendments for legal questions.",
       "retrieved": true,
       "accepted": false,
       "candidate_text_path": "source-library/greece/candidates/gr-15.md",
       "source_sha256": "54c35a978ab41e91bb0e56e364f41e4de49cef8406682e549d449712b1492f09",
       "converted_sha256": "61836fc528ac5ac748b36d56d41637afbbc84cec060660b30c3c5a7306257877",
       "source_bytes": 73116,
-      "resolved_url": "https://en.mitos.gov.gr/index.php/%CE%94%CE%94:Certificate_of_registration_for_Union_citizens_residing_in_Greece_as_students"
+      "resolved_url": "https://en.mitos.gov.gr/index.php/%CE%94%CE%94:Certificate_of_registration_for_Union_citizens_residing_in_Greece_as_students",
+      "greek_official_url": "https://mitos.gov.gr/index.php/%CE%94%CE%94%3A%CE%92%CE%B5%CE%B2%CE%B1%CE%AF%CF%89%CF%83%CE%B7_%CE%B5%CE%B3%CE%B3%CF%81%CE%B1%CF%86%CE%AE%CF%82_%CF%83%CE%B5_%CF%80%CE%BF%CE%BB%CE%AF%CF%84%CE%B5%CF%82_%CF%84%CE%B7%CF%82_%CE%88%CE%BD%CF%89%CF%83%CE%B7%CF%82_%CF%80%CE%BF%CF%85_%CE%B4%CE%B9%CE%B1%CE%BC%CE%AD%CE%BD%CE%BF%CF%85%CE%BD_%CF%83%CF%84%CE%B7%CE%BD_%CE%95%CE%BB%CE%BB%CE%AC%CE%B4%CE%B1_%CF%89%CF%82_%CF%83%CF%80%CE%BF%CF%85%CE%B4%CE%B1%CF%83%CF%84%CE%AD%CF%82",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_language": "el",
+      "official_reference_updated": "2026-09-21",
+      "official_reference_scope": "EU-citizen registration certificate for students, including enrolment, sufficient resources and sickness-insurance conditions."
     },
     {
       "id": "gr-16",
@@ -590,18 +615,23 @@
         "record": "publisher record or service at URL; stable source identifier captured in title/notes where available"
       },
       "functional_relationship": "partial_functional_match",
-      "verification_status": "Official MITOS procedure page inspected; names EU, EEA and Swiss scope, police-service allocation and hierarchical appeal; page states last updated 6 August 2026.",
+      "verification_status": "Official Greek-language MITOS procedure page inspected; last updated 2026-09-21; The Greek registry page describes the EU-citizen permanent-residence document, competent police authorities and eligibility under PD 106/2007. It displays a last-update date of 21 September 2026.",
       "retrieval_status": "converted_review_candidate",
       "retrieval_shape": "Dynamic HTML administrative procedure record",
-      "version_evidence": "Last update 6 August 2026 as displayed by MITOS.",
-      "note": "Describes procedure and evidence, not a source of full current statutory text.",
+      "version_evidence": "Greek-language MITOS page displays last update 2026-09-21; link reviewed 2026-10-21. The saved English-language conversion remains an unaccepted review artifact.",
+      "note": "The Greek page is the preferred official procedural reference. The English page is the route used for the existing unaccepted local capture. This procedure page is not a consolidated law; check the relevant Greek legal text and later amendments for legal questions.",
       "retrieved": true,
       "accepted": false,
       "candidate_text_path": "source-library/greece/candidates/gr-16.md",
       "source_sha256": "17c010ee74e245f6aef2dbf0142172f6f662600107e0130dc03c2b703f44ead1",
       "converted_sha256": "c24a81ecfa47d28b6ca1fdc4aa76c0cbf9ab807409a840fc8815d548b3ff3c92",
       "source_bytes": 71869,
-      "resolved_url": "https://en.mitos.gov.gr/index.php/%CE%94%CE%94:Document_certifying_permanent_residence_to_citizens_of_the_European_Union_residing_in_Greece"
+      "resolved_url": "https://en.mitos.gov.gr/index.php/%CE%94%CE%94:Document_certifying_permanent_residence_to_citizens_of_the_European_Union_residing_in_Greece",
+      "greek_official_url": "https://mitos.gov.gr/index.php/%CE%94%CE%94%3A%CE%88%CE%B3%CE%B3%CF%81%CE%B1%CF%86%CE%BF_%CF%80%CE%B9%CF%83%CF%84%CE%BF%CF%80%CE%BF%CE%AF%CE%B7%CF%83%CE%B7%CF%82_%CE%BC%CF%8C%CE%BD%CE%B9%CE%BC%CE%B7%CF%82_%CE%B4%CE%B9%CE%B1%CE%BC%CE%BF%CE%BD%CE%AE%CF%82_%CF%83%CE%B5_%CF%80%CE%BF%CE%BB%CE%AF%CF%84%CE%B5%CF%82_%CF%84%CE%B7%CF%82_%CE%88%CE%BD%CF%89%CF%83%CE%B7%CF%82_%CF%80%CE%BF%CF%85_%CE%B4%CE%B9%CE%B1%CE%BC%CE%AD%CE%BD%CE%BF%CF%85%CE%BD_%CF%83%CF%84%CE%B7%CE%BD_%CE%95%CE%BB%CE%BB%CE%AC%CE%B4%CE%B1",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_language": "el",
+      "official_reference_updated": "2026-09-21",
+      "official_reference_scope": "Permanent-residence document for EU citizens after qualifying residence; this page does not cover the separate residence card issued to third-country family members."
     },
     {
       "id": "gr-17",
@@ -1567,11 +1597,51 @@
       "accepted": false,
       "official_reference_id": "gr-law5226-2025-art28",
       "official_reference_status": "usable_official_reference"
+    },
+    {
+      "id": "gr-60",
+      "title": "Gov.gr Greek SDG: residence of third-country citizens who are family members of EU citizens",
+      "source_type": "official_immigration_guidance",
+      "language": "el",
+      "url": "https://www.gov.gr/el/sdg/residence/residence-cards-for-union-citizens-and-their-family-members/general/residence-of-third-country-citizens-who-are-family-members-of-eu-citizens",
+      "publisher_identifier": {
+        "system": "www.gov.gr",
+        "record": "Greek Single Digital Gateway residence route; exact page path recorded"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "The official Greek Gov.gr route resolves. The structured page view returned no body text; the English counterpart for this procedure states a last-update date of 28 November 2022, so current requirements after the 2026 amendment have not been confirmed.",
+      "retrieval_status": "discovery_only",
+      "retrieval_shape": "Gov.gr Single Digital Gateway procedure page; page body not exposed in this research client",
+      "version_evidence": "No update date visible on the Greek route in the inspected page view. The English counterpart displays 28 November 2022.",
+      "note": "Official link retained as a discovery lead only. Offer the whole Gov.gr residence portal for human review of current categories, requirements, forms, fees, competent authorities and remedies; compare Article 3(2) durations with Law 5275/2026 Article 53.",
+      "retrieved": false,
+      "accepted": false,
+      "resolved_url": "https://www.gov.gr/el/sdg/residence/residence-cards-for-union-citizens-and-their-family-members/general/residence-of-third-country-citizens-who-are-family-members-of-eu-citizens"
+    },
+    {
+      "id": "gr-61",
+      "title": "Gov.gr Greek SDG: residence documents for other third-country family members of EU citizens",
+      "source_type": "administrative_procedure",
+      "language": "el",
+      "url": "https://www.gov.gr/el/sdg/residence/residence-cards-for-union-citizens-and-their-family-members/residence-documents-for-third-country-nationals-family-members-of-e-u-citizens/other-family-members",
+      "publisher_identifier": {
+        "system": "www.gov.gr",
+        "record": "Greek Single Digital Gateway route under residence documents for third-country family members of EU citizens"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "The official Greek Gov.gr subpage resolves and its indexed content lists stable-partner, shared-residence and supporting-document requirements. The structured page view returned no body text and no reliable update date was visible.",
+      "retrieval_status": "discovery_only",
+      "retrieval_shape": "Gov.gr Single Digital Gateway subpage; page body not exposed in this research client",
+      "version_evidence": "No update date visible in the inspected Greek page view; currentness after Law 5275/2026 Article 53 is unresolved.",
+      "note": "Official source candidate, not accepted for current requirements. Whole-portal human review is offered so the reviewer can confirm current category definitions, card duration, evidence, fee, authority and appeal route.",
+      "retrieved": false,
+      "accepted": false,
+      "resolved_url": "https://www.gov.gr/el/sdg/residence/residence-cards-for-union-citizens-and-their-family-members/residence-documents-for-third-country-nationals-family-members-of-e-u-citizens/other-family-members"
     }
   ],
   "retrieved_review_candidate_count": 40,
   "retrieved_converted_candidate_count": 0,
   "page_accessed_note_count": 0,
   "converted_review_candidate_count": 40,
-  "official_reference_count": 6
+  "official_reference_count": 11
 }

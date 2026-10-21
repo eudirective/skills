@@ -1,0 +1,30 @@
+# Slovenia issue-led coverage register
+
+**Reviewed:** 21 October 2026  
+**Status:** 0 of 11 baseline topics complete. Seven official GOV.SI links are accepted within dated scope. The listed PISRS legal records remain offered for direct human review as official consolidated texts; local captures and conversions remain unaccepted.
+
+| Topic / issue | Primary law or official sources identified | Implementation, procedure, or practice evidence | State and next work |
+|---|---|---|---|
+| EU citizens, EEA nationals, and family-member scope, including extended family and return routes | Foreigners Act ZTuj-2 (PISRS record offered for human review); GOV.SI central page and family service | Central pages distinguish EEA extension and combine EU-citizen and Slovenian-national sponsor routes | **Partial.** Verify each statutory definition and keep EU, EEA, Swiss, Slovenian-return, and Withdrawal Agreement bases distinct. Map extended-family discretion and residence rights. |
+| Swiss citizens and family members | ZTuj-2 record; EU–Swiss Agreement | GOV.SI Swiss service page accepted as a dated official link | **Partial.** Map agreement scope, family categories, entry/residence conditions, and any route-specific remedies. |
+| Entry, short stays, visas, and family-member facilitation | ZTuj-2; Schengen and EU rules in shared corpus | GOV.SI entry/residence parent and visa pages; forms and central evidence instructions link from the parent | **Partial.** Map facilitation, document limits, fees, deadlines, refusal reasons, and the competent mission for relevant applicant locations. |
+| Residence registration, permits, and permanent residence | ZTuj-2; PISRS record offered for review | GOV.SI EU certificate, non-EU family permit, and EU permanent-residence services accepted by link | **Partial.** Crosswalk service steps and forms to current law; verify EEA application and permanent family routes, including the unverified direct service page. |
+| Refusal, termination, removal, and public-policy restrictions | ZTuj-2; procedural statutes | GOV.SI guidance and administrative-law sources | **Unresolved.** Map decision type, hearing and reasons, competent authority, appeal, court review, interim protection, and deadlines separately. |
+| Administrative procedure, silence, and complaints | ZUP record offered for review; administrative procedure guidance accepted by link | GOV.SI guidance says special statutes may set different rules; complaint, petition, and Ombudsman channels are separately listed | **Partial.** Map service, file access, language, decision requirements, response periods, inaction, and interaction with immigration-specific rules. |
+| Judicial review and effective remedies | ZUS-1 record offered for review | PISRS selected case-law collections and court RSS feed are discovery leads | **Unresolved.** Map standing, competent court, time limits, interim relief, appeal and enforcement by decision type; establish repeatable court searches and verify holdings. |
+| Access to information, privacy, and records | ZDIJZ, ZVOP-2, ZInfP records offered for review | Information Commissioner and VIS/data-rights service routes are listed | **Partial.** Map request, exceptions, internal review, appeal, data-rights complaints, competent body and deadlines. Do not collect personal submissions. |
+| Family status and foreign civil documents | Family Code DZ and Civil Status Registry Act ZMatR records offered for review | GOV.SI family service and eUprava document procedures are discovery leads | **Unresolved.** Identify acceptance, translation, authentication, recognition, correction and evidentiary rules for relevant documents. |
+| Court fees, legal aid, equality, and oversight | ZBPP and ZVarD records offered for review; Ombudsman and equality-body statutes/pages identified | eUprava legal-aid pages warn they have not been renewed; Ombudsman and Equality Advocate channels are listed | **Partial.** Verify current legal-aid eligibility and covered proceedings, court fees, body mandates, admissibility and interaction with appeal deadlines. |
+| Mission operations and continuing case-law discovery | No complete mission or decision inventory | GOV.SI mission directory accepted as a discovery link; one Copenhagen page is only a sample | **Unresolved.** Review instructions for relevant applicant locations, appointments, outsourcing and checklists. Define repeatable searches across the administrative courts and include search dates and exclusions. |
+
+## Initial dependency map
+
+| Relationship | Why it matters | Review state |
+|---|---|---|
+| ZTuj-2 → EU/EEA/Swiss and family routes | The governing act and service pages distinguish EU/EEA extension from the Swiss Agreement route and combine some EU and Slovenian-national family services. | PISRS record offered for human review; GOV.SI route distinctions recorded; provision-level crosswalk open. |
+| ZTuj-2 ↔ ZUP and ZUS-1 | Administrative decisions, special procedure, silence, appeal and judicial review depend on how general and special rules interact. | PISRS records offered for human review; decision-by-decision remedy map open. |
+| GOV.SI services → forms and attachments | Public service pages link mutable forms and instructions. | Parent pages accepted where inspected; attachments remain dynamic and are not accepted as permanent versions. |
+| ZBPP → legal-aid service guidance | Statutory eligibility and current application channels must align. | PISRS record offered for human review; eUprava pages warn they have not been renewed. |
+| Mission directory → location-specific visa service | Competence, representation, appointments, fees, providers and checklists vary by post and applicant location. | Directory accepted as a discovery link; mission network offered for human review when a location is in scope. |
+
+A source link can support an issue only after its relevant provisions and route are reviewed. Link acceptance alone does not make any topic complete.
