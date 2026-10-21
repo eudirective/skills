@@ -2,7 +2,7 @@
 name: hungarian-national-source-system
 description: Retrieve, convert, and monitor the Hungarian national legal and OIF source inventory in this pack from official publishers. Use for source updates or discovery only; it is not legal advice.
 metadata:
-  version: 0.3.0
+  version: 0.3.1
 ---
 
 # Hungarian national source system
@@ -33,7 +33,7 @@ node scripts/sync-hungary.mjs --verify
 node scripts/sync-hungary.mjs --reconvert
 ```
 
-The source inventory and official host allowlist are in `references/manifest.json`. `--check` retrieves permitted OIF sources and compares raw and extracted-text hashes without changing accepted documents. `--discover` checks OIF catalogue pages and reports matching same-host links not yet in the saved discovery baseline; pages must expose visible content and cannot be bot-challenge interstitials. `--sync` saves permitted OIF HTML/PDF bytes and creates clean Markdown for each successful source. Failed sources retain prior state, and a discovery baseline is replaced only after every discovery page succeeds. The report distinguishes complete and partial runs and lists the 58 NJT law records as manual references. `--verify` replays existing saved bytes offline. `--reconvert` regenerates Markdown offline from retained bytes after a converter change.
+The source inventory and official host allowlist are in `references/manifest.json`. `--check` retrieves the 41 registered online OIF/NAIH/AJBH records and compares raw and extracted-text hashes without changing accepted documents. `--discover` checks registered catalogue pages and reports matching same-host links not yet in the saved discovery baseline. `--sync` saves permitted online HTML/PDF bytes and creates clean Markdown for each successful source. Failed sources retain prior state, and a discovery baseline is replaced only after every discovery page succeeds. The report distinguishes complete and partial runs. The 58 existing NJT law records remain manual references with offline-only review copies; the added civil-registration Act and three AJBH publications are link-only and are excluded from retrieval and replay. `--verify` replays existing saved bytes offline. `--reconvert` regenerates Markdown offline from retained bytes after a converter change.
 
 Each Markdown file records source ID, publisher, category, official URL, raw-byte SHA-256, and extracted-body SHA-256. Retrieval time, state, and reports are kept under the project-root `temp/eudirective-source-library-0.6.0/hungary/work/` tree so a repeated conversion stays byte-stable. Original source snapshots and OCR scratch files are also kept under project-root `temp/` and resolved through `runtime-storage.mjs`. PDF conversion uses pinned `pdfjs-dist`; sparse pages are rendered with Poppler `pdftoppm` and processed with pinned Tesseract.js and the bundled Hungarian OCR model. Set `PDFTOPPM_PATH` if `pdftoppm` is not on `PATH`. HTML conversion extracts the legal content container, main/article content, or body and removes navigation, scripts, styling, and forms. No generated Markdown is presented as an official publication.
 
@@ -41,7 +41,7 @@ Each Markdown file records source ID, publisher, category, official URL, raw-byt
 
 - Use the current government-published NJT consolidation as a human-reviewed source reference; record its displayed date and publisher label. Do not fetch, store, or poll NJT law records through this updater. Check a Gazette item only for a specific material post-cutoff change, commencement, or discrepancy.
 - Retrieve OIF forms, fees, procedures, public data, statistics, contracts, and organisational records from OIF pages and their official linked files.
-- AJBH catalogue pages remain discovery-only and are now scanned by discovery runs. Three direct AJBH PDFs are registered as candidates and use the existing PDF converter; retrieval requires the registered PDF media type and signature. Automated access is still unverified. The 2025 general-complaint PDF stays blocked until a content identity marker can be confirmed from the first-party document; do not treat the pinned URL or filename as proof of identity.
+- AJBH catalogue pages remain discovery-only and are scanned by discovery runs. Three direct AJBH documents are accepted as official link references within their identified titles/editions and are link-only; no automated download or local copy is required for that use. The 2025 PDF is a public-interest and whistleblowing guide, not a general complaint or immigration appeal route. Current complaint and reporting channels are offered for human review across the official AJBH site.
 - Use the Kúria and Országos Bírósági Hivatal collections only as official case-law discovery channels. A catalogue search hit is a candidate, not a new accepted case record; add it to the manifest only after matching the decision number, court, date, and official full text.
 - A new PDF or page linked from an OIF source page is reported as a discovery candidate. Review its title/date and category before adding it to the fixed source manifest.
 - Treat changed texts, newly consolidated legal versions, amendments, and new OIF publications as distinct events. Do not synthesize a consolidated statute from amendment acts. Retain old raw snapshots and do not overwrite them.

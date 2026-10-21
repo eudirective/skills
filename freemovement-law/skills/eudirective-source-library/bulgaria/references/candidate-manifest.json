@@ -2,12 +2,12 @@
   "manifest_version": "0.1.0-candidate",
   "pack": "bulgaria-national-source-candidates",
   "jurisdiction": "BG",
-  "inventory_research_date": "2026-10-18",
+  "inventory_research_date": "2026-10-21",
   "scope": "Official Bulgarian source discovery for EU/EEA/Swiss free movement and third-country family members, entry and residence, visas, administration, remedies, privacy, and oversight.",
-  "status": "partially retrieved; two official Visa Ordinance references usable; local-copy acceptance and country coverage incomplete",
-  "retrieval_status": "24 of the original 35 candidate texts converted and replay-verified; 11 retrieval failures remain; the MFA consolidated Visa Ordinance and its targeted 2025 amendment have been reviewed as usable official references without retaining local copies; 0 local copies accepted",
+  "status": "Selected official links are reviewed for ordinary reference within stated scope and cutoffs; 0 local copies are accepted; legal, court, mission, and regional coverage remains incomplete.",
+  "retrieval_status": "13 official references usable within stated scope or cutoff; original capture outcomes are historical; 0 local copies accepted",
   "accepted_source_count": 0,
-  "candidate_source_count": 36,
+  "candidate_source_count": 42,
   "official_hosts": [
     "n-lex.europa.eu",
     "mvr.bg",
@@ -80,8 +80,8 @@
         "filename": "ЗВПНРБГЕСЧТС 2026.pdf"
       },
       "functional_relationship": "partial_functional_match",
-      "verification_status": "MVR parent links 2026-labelled PDF; prior extraction showed amendment history through SG 52/2025; latest direct request returned 403",
-      "retrieval_status": "converted_review_candidate",
+      "verification_status": "MVR-published 24-page consolidated Bulgarian text. The 2026-labelled file's amendment history ends at SG 52/2025. Article 10 and the definitions still cite Regulation (EU) 2019/1157; see source-dependencies.json for the invalidity judgment and successor instrument. Use the statutory text as published and keep the dependency note separate.",
+      "retrieval_status": "reference_only_no_local_copy",
       "retrieval_shape": "PDF linked from HTML index; direct access intermittently blocked",
       "retrieved": true,
       "accepted": false,
@@ -90,7 +90,13 @@
       "source_sha256": "4acc6df66515c09384d68700d91053662b5feb9e330d65c6c72c190ecca5dae5",
       "converted_sha256": "b6471c53527a2a12bbbed4be6b3e8043e79a6cd07f9b3997daa616a7fc502ff0",
       "source_bytes": 127431,
-      "resolved_url": "https://mvr.bg/upload/338040/%D0%97%D0%92%D0%9F%D0%9D%D0%A0%D0%91%D0%93%D0%95%D0%A1%D0%A7%D0%A2%D0%A1%202026.pdf"
+      "resolved_url": "https://mvr.bg/upload/338040/%D0%97%D0%92%D0%9F%D0%9D%D0%A0%D0%91%D0%93%D0%95%D0%A1%D0%A7%D0%A2%D0%A1%202026.pdf",
+      "official_reference_id": "bg-eu-free-movement-act",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_cutoff": "State Gazette issue 52/2025 (27 June 2025)",
+      "material_dependency_ids": [
+        "bg-eu-card-format-regulation"
+      ]
     },
     {
       "id": "bg-eu-act-state-gazette",
@@ -171,8 +177,8 @@
         "upload_id": "18035"
       },
       "functional_relationship": "partial_functional_match",
-      "verification_status": "official parent entry inspected; payload available earlier in research, latest direct request returned 403",
-      "retrieval_status": "converted_review_candidate",
+      "verification_status": "The MVR parent page lists this permanent-residence application. The six-page PDF was opened and its Bulgarian/English form identity checked. No local copy was accepted; use the current parent-page link because upload URLs may change.",
+      "retrieval_status": "reference_only_no_local_copy",
       "retrieval_shape": "bilingual PDF with versioned upload URL",
       "retrieved": true,
       "accepted": false,
@@ -181,7 +187,12 @@
       "source_sha256": "f7323322c41b83e4bbf2b447fbdb0a9e8ef84152bc6e1de5bcfb89fcf5788ba0",
       "converted_sha256": "f8f7e47e52e341d2913cb5fb0f364298e3bee5e2c21ae7c2b51f578105c0e966",
       "source_bytes": 415742,
-      "resolved_url": "https://mvr.bg/upload/18035/%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B7%D0%B0-%D0%BF%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%BD%D0%BE-%D0%BF%D1%80%D0%B5%D0%B1%D0%B8%D0%B2%D0%B0%D0%B2%D0%B0%D0%BD%D0%B5fc84325bd7a24465837e225ae4af1c7a.pdf"
+      "resolved_url": "https://mvr.bg/upload/18035/%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B7%D0%B0-%D0%BF%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%BD%D0%BE-%D0%BF%D1%80%D0%B5%D0%B1%D0%B8%D0%B2%D0%B0%D0%B2%D0%B0%D0%BD%D0%B5fc84325bd7a24465837e225ae4af1c7a.pdf",
+      "official_reference_id": "bg-eu-form-permanent",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_cutoff": "MVR service-page entry reviewed 21 October 2026; no edition date displayed",
+      "official_reference_rediscovery_url": "https://www.mvr.bg/migration/административни-услуги/административни-услуги-за-граждани/издаване-на-документи-на-граждани-на-ес-и-на-членовете-на-техните-семейства",
+      "linked_document_url": "https://www.mvr.bg/upload/18035/%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B7%D0%B0-%D0%BF%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%BD%D0%BE-%D0%BF%D1%80%D0%B5%D0%B1%D0%B8%D0%B2%D0%B0%D0%B2%D0%B0%D0%BD%D0%B5fc84325bd7a24465837e225ae4af1c7a.pdf"
     },
     {
       "id": "bg-eu-form-extended",
@@ -194,8 +205,8 @@
         "upload_id": "18036"
       },
       "functional_relationship": "partial_functional_match",
-      "verification_status": "official six-page bilingual PDF opened",
-      "retrieval_status": "converted_review_candidate",
+      "verification_status": "The MVR parent page lists this extended-residence application. The six-page Bulgarian/English PDF was opened and its form identity checked. No local copy was accepted; use the current parent-page link because upload URLs may change.",
+      "retrieval_status": "reference_only_no_local_copy",
       "retrieval_shape": "PDF with versioned upload URL",
       "retrieved": true,
       "accepted": false,
@@ -204,7 +215,12 @@
       "source_sha256": "02fe44e66ef9b946ba5b155c030d5946cedf1b7e6e83660f18d386e1e499d4da",
       "converted_sha256": "9072cd7ddb8bd5ed8d4176281dbb59b132612698d968efc4ec3d0d2edb9e1042",
       "source_bytes": 412395,
-      "resolved_url": "https://mvr.bg/upload/18036/%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B7%D0%B0-%D0%BF%D1%80%D0%BE%D0%B4%D1%8A%D0%BB%D0%B6%D0%B8%D1%82%D0%B5%D0%BB%D0%BD%D0%BE-%D0%BF%D1%80%D0%B5%D0%B1%D0%B8%D0%B2%D0%B0%D0%B2%D0%B0%D0%BD%D0%B5f4d8b12f52514bbfbb274d3b2ebef985.pdf"
+      "resolved_url": "https://mvr.bg/upload/18036/%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B7%D0%B0-%D0%BF%D1%80%D0%BE%D0%B4%D1%8A%D0%BB%D0%B6%D0%B8%D1%82%D0%B5%D0%BB%D0%BD%D0%BE-%D0%BF%D1%80%D0%B5%D0%B1%D0%B8%D0%B2%D0%B0%D0%B2%D0%B0%D0%BD%D0%B5f4d8b12f52514bbfbb274d3b2ebef985.pdf",
+      "official_reference_id": "bg-eu-form-extended",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_cutoff": "MVR service-page entry reviewed 21 October 2026; no edition date displayed",
+      "official_reference_rediscovery_url": "https://www.mvr.bg/migration/административни-услуги/административни-услуги-за-граждани/издаване-на-документи-на-граждани-на-ес-и-на-членовете-на-техните-семейства",
+      "linked_document_url": "https://www.mvr.bg/upload/18036/%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B7%D0%B0-%D0%BF%D1%80%D0%BE%D0%B4%D1%8A%D0%BB%D0%B6%D0%B8%D1%82%D0%B5%D0%BB%D0%BD%D0%BE-%D0%BF%D1%80%D0%B5%D0%B1%D0%B8%D0%B2%D0%B0%D0%B2%D0%B0%D0%BD%D0%B5f4d8b12f52514bbfbb274d3b2ebef985.pdf"
     },
     {
       "id": "bg-eu-form-other-articles",
@@ -325,8 +341,8 @@
         "filename": "ЗЧРБ 2026.pdf"
       },
       "functional_relationship": "related_source",
-      "verification_status": "MVR current index links a 2026-labelled file; current content is not retrievable from this client, so use the closest government-published edition and record the cutoff",
-      "retrieval_status": "converted_review_candidate",
+      "verification_status": "MVR-published 157-page consolidated Bulgarian text; the heading records amendments through SG 55/2026. It covers the general third-country-national regime and certain non-EU family members of Bulgarian citizens. EU/EEA/Swiss free-movement routes remain governed by the dedicated EU-citizen Act.",
+      "retrieval_status": "reference_only_no_local_copy",
       "retrieval_shape": "large PDF linked from index; broad third-country national scope",
       "retrieved": true,
       "accepted": false,
@@ -335,7 +351,11 @@
       "source_sha256": "69a552ffdbde35758f40b47e480f667de5a601e964e3c6eaba65b8ef8467ba61",
       "converted_sha256": "32fdf028eb182e73d47e7778f6df8589a1b07bd0bbad03dc34d120de294efed6",
       "source_bytes": 749307,
-      "resolved_url": "https://www.mvr.bg/upload/338041/%D0%97%D0%A7%D0%A0%D0%91%202026.pdf"
+      "resolved_url": "https://www.mvr.bg/upload/338041/%D0%97%D0%A7%D0%A0%D0%91%202026.pdf",
+      "official_reference_id": "bg-foreigners-act",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_cutoff": "State Gazette issue 55/2026 (16 June 2026)",
+      "official_reference_rediscovery_url": "https://www.mvr.bg/migration/дирекцията/нормативна-уредба/bgzac"
     },
     {
       "id": "bg-visa-ordinance-mvr",
@@ -529,18 +549,21 @@
       "title": "Administrative Procedure Code, MoJ normdoc 2135521015",
       "source_type": "national_code",
       "language": "bg",
-      "url": "https://portal.justice.government.bg/home/normdoc/2135521015",
+      "url": "https://www.mvr.bg/upload/338691/%D0%90%D0%9F%D0%9A.pdf",
       "publisher_identifier": {
-        "system": "Ministry of Justice normdoc",
-        "normdoc_id": "2135521015"
+        "system": "Ministry of Interior (MVR), Codes page",
+        "instrument": "Administrative Procedure Code"
       },
       "functional_relationship": "related_source",
-      "verification_status": "official stable numeric route found; indexed amendments through SG issue 17/2026; direct open returned 502",
-      "retrieval_status": "retrieval_or_conversion_error",
+      "verification_status": "Use the MVR-published consolidated 151-page Administrative Procedure Code PDF linked from the official MVR codes page. The Ministry of Justice normdoc record remains a supporting rediscovery route; the previous direct request error is a historical client outcome.",
+      "retrieval_status": "reference_only_no_local_copy",
       "retrieval_shape": "HTML normdoc; live retrieval/conversion not validated",
       "retrieved": false,
       "accepted": false,
-      "retrieval_note": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+      "official_reference_id": "bg-apc",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_cutoff": "State Gazette issue 17/2026 (13 February 2026)",
+      "official_reference_rediscovery_url": "https://www.mvr.bg/за-министерството-на-вътрешните-работи/нормативна-уредба/нормативни-актове/кодекси"
     },
     {
       "id": "bg-access-info",
@@ -786,9 +809,131 @@
       "accepted": false,
       "official_reference_id": "bg-mfa-visa-ordinance-consolidated",
       "official_reference_status": "usable_official_reference"
+    },
+    {
+      "id": "bg-foreigners-act-rules",
+      "title": "Rules for implementation of the Foreigners in the Republic of Bulgaria Act",
+      "source_type": "implementing_regulation",
+      "language": "bg",
+      "url": "https://www.mvr.bg/upload/338042/%D0%9F%D0%9F%D0%97%D0%A7%D0%A0%D0%91%202026.pdf",
+      "publisher_identifier": {
+        "system": "Ministry of Interior (MVR), Migration legislation index"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "MVR-published consolidated 92-page Bulgarian text. The heading records amendments through State Gazette issue 109/2025 (16 December 2025) and issue 7/2026 (20 January 2026). Article 1 applies the rules to the Foreigners Act and specified family members of Bulgarian citizens; it does not replace the dedicated EU free-movement route.",
+      "retrieval_status": "reference_only_no_local_copy",
+      "retrieval_shape": "PDF linked from MVR Migration Directorate legislation index",
+      "retrieved": false,
+      "accepted": false,
+      "official_reference_id": "bg-foreigners-act-rules",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_cutoff": "State Gazette issue 7/2026 (20 January 2026)",
+      "official_reference_rediscovery_url": "https://www.mvr.bg/migration/дирекцията/нормативна-уредба/bgzac"
+    },
+    {
+      "id": "bg-mvr-tariff-4",
+      "title": "Tariff №4: fees collected in the Ministry of Interior system",
+      "source_type": "official_fee_tariff",
+      "language": "bg",
+      "url": "https://www.mvr.bg/upload/329829/%D0%A2%D0%90%D0%A0%D0%98%D0%A4%D0%90%20%E2%84%96%204%20%D0%97%D0%90%20%D0%A2%D0%90%D0%9A%D0%A1%D0%98%D0%A2%D0%95%2C%20%D0%9A%D0%9E%D0%98%D0%A2%D0%9E%20%D0%A1%D0%95%20%D0%A1%D0%AA%D0%91%D0%98%D0%A0%D0%90%D0%A2%20%D0%92%20%D0%A1%D0%98%D0%A1%D0%A2%D0%95%D0%9C%D0%90%D0%A2%D0%90%20%D0%9D%D0%90%20%D0%9C%D0%98%D0%9D%D0%98%D0%A1%D0%A2%D0%95%D0%A0%D0%A1%D0%A2%D0%92%D0%9E%D0%A2%D0%9E%20%D0%9D%D0%90%20%D0%92%D0%AA%D0%A2%D0%A0%D0%95%D0%A8%D0%9D%D0%98%D0%A2%D0%95%20%D0%A0%D0%90%D0%91%D0%9E%D0%A2%D0%98%20%D0%9F%D0%9E%20%D0%97%D0%90%D0%9A%D0%9E%D0%9D%D0%90%20%D0%97%D0%90%20%D0%94%D0%AA%D0%A0%D0%96%D0%90%D0%92%D0%9D%D0%98%D0%A2%D0%95%20%D0%A2%D0%90%D0%9A%D0%A1%D0%98%20-%20%D0%90%D0%9A%D0%A2%D0%A3%D0%90%D0%9B%D0%9D%D0%9E%D0%A1%D0%A2%2026.04.2026.pdf",
+      "publisher_identifier": {
+        "system": "Ministry of Interior (MVR), Laws and Codes page"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "MVR-hosted 47-page consolidated Bulgarian tariff, labelled current 24 April 2026; its heading records amendments through SG issue 38/2026. The PDF attributes its text to Ciela. It is a usable government-published reference with that attribution preserved.",
+      "retrieval_status": "reference_only_no_local_copy",
+      "retrieval_shape": "PDF linked from the official MVR Laws and Codes page",
+      "retrieved": false,
+      "accepted": false,
+      "official_reference_id": "bg-mvr-tariff-4",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_cutoff": "State Gazette issue 38/2026 (24 April 2026)",
+      "official_reference_rediscovery_url": "https://www.mvr.bg/opp/полезна-информация1/нормативна-уредба/закони-и-кодекси"
+    },
+    {
+      "id": "bg-personal-documents-act",
+      "title": "Bulgarian Personal Documents Act",
+      "source_type": "national_act",
+      "language": "bg",
+      "url": "https://www.mvr.bg/upload/300953/%D0%97%D0%90%D0%9A%D0%9E%D0%9D%20%D0%97%D0%90%20%D0%91%D0%AA%D0%9B%D0%93%D0%90%D0%A0%D0%A1%D0%9A%D0%98%D0%A2%D0%95%20%D0%9B%D0%98%D0%A7%D0%9D%D0%98%20%D0%94%D0%9E%D0%9A%D0%A3%D0%9C%D0%95%D0%9D%D0%A2%D0%98.pdf",
+      "publisher_identifier": {
+        "system": "Ministry of Interior (MVR), Laws and Codes page"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "MVR-hosted 74-page consolidated Bulgarian Act; its heading records amendments through SG issue 52/2025 (27 June 2025). It is supporting legislation for identity and residence-document issuance, not a substitute for EU residence-card format rules.",
+      "retrieval_status": "reference_only_no_local_copy",
+      "retrieval_shape": "PDF linked from the official MVR Laws and Codes page",
+      "retrieved": false,
+      "accepted": false,
+      "official_reference_id": "bg-personal-documents-act",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_cutoff": "State Gazette issue 52/2025 (27 June 2025)",
+      "official_reference_rediscovery_url": "https://www.mvr.bg/opp/полезна-информация1/нормативна-уредба/закони-и-кодекси"
+    },
+    {
+      "id": "bg-personal-documents-rules",
+      "title": "Rules for issuing Bulgarian personal documents",
+      "source_type": "implementing_regulation",
+      "language": "bg",
+      "url": "https://www.mvr.bg/upload/19938/%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%BD%D0%B8%D0%BA-%D0%B7%D0%B0-%D0%B8%D0%B7%D0%B4%D0%B0%D0%B2%D0%B0%D0%BD%D0%B5-%D0%BD%D0%B0-%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D1%81%D0%BA%D0%B8%D1%82%D0%B5-%D0%BB%D0%B8%D1%87%D0%BD%D0%B8-%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B8-%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%BE%D1%81%D1%82-31-05-2024.pdf",
+      "publisher_identifier": {
+        "system": "Ministry of Interior (MVR), Laws and Codes page"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official MVR-published 59-page consolidation through State Gazette issue 46/2024 (31 May 2024), with source attribution to Ciela. The current MVR page labels the rules as current 16 December 2025 but links this 2024 text; the Migration Directorate index links a still older 2021 text. The 2024 link is usable only within its printed cutoff while the MVR portal is offered for human review of the newer version.",
+      "retrieval_status": "reference_only_no_local_copy",
+      "retrieval_shape": "PDF linked from MVR Laws and Codes page; competing older PDF linked from Migration legislation index",
+      "retrieved": false,
+      "accepted": false,
+      "official_reference_id": "bg-personal-documents-rules",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_cutoff": "State Gazette issue 46/2024 (31 May 2024); not verified current after this date",
+      "official_reference_rediscovery_url": "https://www.mvr.bg/opp/полезна-информация1/нормативна-уредба/закони-и-кодекси",
+      "whole_site_review_id": "bg-mvr-legal-portal-currentness"
+    },
+    {
+      "id": "bg-mfa-tariff-3",
+      "title": "Tariff №3: consular-service fees collected by the Ministry of Foreign Affairs",
+      "source_type": "official_fee_tariff",
+      "language": "bg",
+      "url": "https://new.mfa.bg/upload/159290/%D0%A2%D0%B0%D1%80%D0%B8%D1%84%D0%B0%20%E2%84%96%203%20last.pdf",
+      "publisher_identifier": {
+        "system": "Ministry of Foreign Affairs (MFA), consular fees page"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "MFA-published 12-page consolidation linked from its current fees page. Its heading records amendments through SG issue 38/2026 (24 April 2026) and attributes the text to Ciela as of 27 May 2026. Article 9 refers short-stay visa fees to the Visa Code; this tariff concerns consular services and is not a substitute for the Visa Ordinance or Visa Code.",
+      "retrieval_status": "reference_only_no_local_copy",
+      "retrieval_shape": "PDF linked from the official MFA consular fees page",
+      "retrieved": false,
+      "accepted": false,
+      "official_reference_id": "bg-mfa-tariff-3",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_cutoff": "State Gazette issue 38/2026 (24 April 2026); source attribution dated 27 May 2026",
+      "official_reference_rediscovery_url": "https://new.mfa.bg/bg/uslugi-patuvania/konsulski-uslugi/taksi"
+    },
+    {
+      "id": "bg-mvr-regional-offices",
+      "title": "MVR regional directorate and Migration-unit routing directory",
+      "source_type": "official_directory",
+      "language": "bg",
+      "url": "https://www.mvr.bg/migration/административни-услуги/административни-услуги-за-граждани/издаване-на-документи-на-граждани-на-ес-и-на-членовете-на-техните-семейства",
+      "publisher_identifier": {
+        "system": "Ministry of Interior (MVR), Migration Directorate service page"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "The MVR EU-family service page lists the Sofia directorate and 28 oblast directorates. The legislation index also exposes Migration-unit and reception-day links, but those subroutes did not render in the browser review. This accepts the official directory and routing surface only; local appointment, form, competence, and filing practice remain unreviewed.",
+      "retrieval_status": "reference_only_no_local_copy",
+      "retrieval_shape": "Official HTML service page with linked regional directorates",
+      "retrieved": false,
+      "accepted": false,
+      "official_reference_id": "bg-mvr-regional-offices",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_cutoff": "Directory reviewed 21 October 2026",
+      "official_reference_rediscovery_url": "https://www.mvr.bg/migration/дирекцията/нормативна-уредба/bgzac",
+      "reviewed_coverage": "Official directory route only; no regional procedure accepted"
     }
   ],
   "retrieved_review_candidate_count": 24,
   "converted_review_candidate_count": 24,
-  "official_reference_count": 2
+  "official_reference_count": 13
 }

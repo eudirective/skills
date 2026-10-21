@@ -29,6 +29,21 @@ No local copy is accepted. Official links may be used as human-reviewed referenc
 
 # Ireland proposed-route sustainability assessment (2026-10-18)
 
+# Ireland source-link and sustainability review (2026-10-21)
+
+## Link decisions
+
+A separate review accepted 29 official external references within narrow scopes; no local copy, topic, or country review is accepted. The accepted references cover the eISB publisher and re-use documentation, the SI 548/2015 amendment index and selected exact instruments, current ISD operational pages, FOI/privacy/oversight routes, court procedure and discovery, and DFA public-document guidance. See [source-acceptance.json](source-acceptance.json).
+
+The eISB amendment table states that it is updated to 6 October 2026. It records SI 445/2021 amendments and SI 398/2025 substituting Regulation 24 of SI 548/2015. The official SI 398 instrument is retained as its own amendment record. These are accepted as official linked records, not as a single consolidated SI 548 text; the made 2015 text must not be presented as the current wording of amended provisions. The amendment link is enough to identify a material dependency for review; a complete amendment-chain reconstruction is not required.
+
+Current ISD guidance checked on 21 October 2026 directs EUTR1A applications and paper-form requests through the Customer Service Portal and states an estimate of up to six months. The separately listed 2023 paper EUTR1 remains a historical/form candidate, not the current default. ISD's dynamic visa-office directory displayed 22 May 2026 as its update date, and its visa decisions page displayed a 20 October 2026 update. Courts.ie shows Order 84 rule 22(4) amended by SI 157/2026 effective 8 May 2026; HC140 took effect on 3 June 2026 and revoked HC81. These accepted links describe the displayed source and date only.
+
+The remaining candidate inventory has 22 records without an accepted external-reference decision: 21 official routes remain for scope/currentness review, and the Legal Aid Board PDF candidate ie-45 returned 404. The whole official sites for eISB, ISD, gov.ie, DFA/Ireland.ie, Legal Aid Board, and Courts Service are offered for human review in the register where a current version or local instruction remains unclear.
+
+The external-link decisions do not resolve issue-led legal coverage, current wording for every cited statute, all EEA/Swiss/UK route dependencies, mission-specific checklists and appointment/outsourcing arrangements, the recorded gov.ie versus ISD processing-time discrepancy, the current Legal Aid Board PDF, judgments completeness, or regional authority practice.
+
+
 ## Scope and evidence
 
 Reviewed the discovery-only candidate register and source list; N-Lex Ireland; official eISB legislation, amendment tables, annual SI index, ELI format documentation and Open Data PSI licence; Immigration Service Delivery legislation, EU Treaty Rights, entry, family, visa and registration guidance; gov.ie notices; DFA mission directory; FOI review pages; Ombudsman scope guidance; Data Protection Commission sources; Legal Aid Board sources; family-status and civil-registration guidance; and Courts.ie procedure and judgment discovery. No source bytes were saved to the workspace or converted. No Ireland adapter, active source manifest, conversion replay, change detector or live runtime rule exists.

@@ -1,6 +1,6 @@
 # Slovakia source-rule sustainability assessment
 
-**Reviewed:** 21 October 2026. The pack has 40 candidate records, 31 converted and replay-verified local candidate texts, 15 reviewed Slov-Lex legal references, and four reviewed Ministry of Foreign Affairs links. Nineteen external official references are usable within the scope and limits in [source-acceptance.json](source-acceptance.json). No local copy, converted text, topic, or country review is accepted.
+**Reviewed:** 21 October 2026. The pack has 40 candidate records, 31 converted and replay-verified local candidate texts, 15 reviewed Slov-Lex legal references, four reviewed Ministry of Foreign Affairs links, and one dated Ministry of Interior FAQ link. Twenty external official references are usable within the scope and limits in [source-acceptance.json](source-acceptance.json). No local copy, converted text, topic, or country review is accepted.
 
 ## Official consolidated legal sources
 
@@ -20,7 +20,7 @@ The MZV central supporting-documents page (updated 17 August 2026), stay-guidanc
 
 The MZV English EU-family page is dated 2022 and contains an Act 404/2012 error. The Hanoi page is dated 2022 and cites repealed Regulation 562/2006. Neither is accepted as current operative guidance. A Minsk page was found but the exact family-member passage and location applicability were not verified, so it remains a candidate. Eight local MFA requests had returned HTTP 403; browser access to selected current MZV pages succeeded. These failures are recorded as route-specific, not evidence that the official site is unavailable.
 
-The Interior Ministry's March 2025 EU-citizen FAQ is dated operational guidance. Office addresses, booking categories, mission representation, appointments, and local forms can change. Follow current parent pages and relevant locations when needed rather than relying on snapshots as permanent rules.
+The Interior Ministry's March 2025 EU-citizen FAQ is accepted only as a dated operational reference; it is not a current checklist. Compare its registration and evidence information with Act 404/2011 effective from 1 October 2026 before present-day use. The July 2024 FAQ remains a superseded/older lead. Office addresses, booking categories, mission representation, appointments, and local forms can change. Follow current parent pages and relevant locations when needed rather than relying on snapshots as permanent rules.
 
 ## Coverage and semantic review
 
@@ -30,4 +30,4 @@ The [coverage register](coverage-register.md) maps 11 issue areas and marks all 
 
 ## Disposition
 
-Use the 19 accepted official links within their dated scope and limitations. Keep all local artifacts as unaccepted review material and all 11 baseline topics open. The next useful work is issue-led legal mapping and relevant mission/court discovery, not archive capture, reuse-permission research, or a mandatory conversion pipeline.
+Use the 20 accepted official links within their dated scope and limitations. Keep all local artifacts as unaccepted review material and all 11 baseline topics open. The next useful work is issue-led legal mapping and relevant mission/court discovery, not archive capture, reuse-permission research, or a mandatory conversion pipeline.

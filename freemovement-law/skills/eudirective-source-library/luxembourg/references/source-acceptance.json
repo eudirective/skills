@@ -1,0 +1,1272 @@
+{
+  "schema_version": "1.0.0",
+  "jurisdiction": "LU",
+  "review_date": "2026-10-21",
+  "candidate_record_count": 49,
+  "accepted_external_reference_count": 36,
+  "pending_external_reference_count": 10,
+  "not_relied_upon_reference_count": 3,
+  "accepted_local_copy_count": 0,
+  "accepted_topic_count": 0,
+  "country_review_complete": false,
+  "policy": "For ordinary source use, accept a trustworthy official consolidated text or clearly identified government guidance/service page within the displayed identity, status, version, language, date and scope. If currency, attachments or operational detail are unclear, offer the whole responsible official website for human review. Do not reconstruct Gazette amendment chains by default. Link acceptance is separate from local-copy acceptance, topic coverage and country review completion.",
+  "publisher_assessment": {
+    "decision": "Legilux is accepted as the official publisher for Luxembourg legislation and government consolidations within each displayed edition and caveat. Guichet and ministry pages are accepted only for the official service content reviewed.",
+    "basis": "The Legilux Immigration Law consolidation applicable 2026-06-12 is an official dated consolidated text. Legilux describes consolidations as documentary and without legal force. Current Guichet family guidance was updated 2026-10-01. The Chamber Bill 8694 dossier displayed En commission, last updated 2026-07-10.",
+    "limits": "The formalities PDF is applicable only from 2023-04-15 and later 2024 amendment/correction records exist. Several linked forms date from 2023. Bill 8694 may change court structure if enacted. No legal topic or country completeness is claimed.",
+    "local_copy_and_reuse": "No local copies accepted. The 35 conversions and 3 PDF originals remain unaccepted artifacts. Casemates reuse terms do not extend to Guichet, ministry, court, Ombudsman, CNPD or parliamentary content. No capture/conversion rule is required for link use."
+  },
+  "accepted_references": [
+    {
+      "source_id": "lu-01",
+      "title": "N-Lex Luxembourg national legislation discovery",
+      "url": "https://n-lex.europa.eu/n-lex/",
+      "publisher": "n-lex.europa.eu",
+      "language": "en",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "N-Lex is a discovery lead; verify each result at Legilux.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-01"
+      },
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Use the official external reference for N-Lex Luxembourg national legislation discovery only, within its recorded publisher, language, date/version and stated subject. Use for search discovery only; no complete national-law inventory claim.",
+      "reviewed_content": "Official EU discovery portal identified; Luxembourg national law is published through Legilux.",
+      "limitations": [
+        "Use the official external reference for N-Lex Luxembourg national legislation discovery only, within its recorded publisher, language, date/version and stated subject. Use for search discovery only; no complete national-law inventory claim.",
+        "This accepts the external link only; it does not accept the saved conversion, establish topic adequacy, or complete Luxembourg’s review.",
+        "No copying or republication permission is inferred."
+      ],
+      "evidence": {
+        "official_source_url": "https://n-lex.europa.eu/n-lex/",
+        "verified_content": "Official EU discovery portal identified; Luxembourg national law is published through Legilux.",
+        "source_record_note": "Use for search discovery only; no complete national-law inventory claim.",
+        "retrieval_status": "changed_review_candidate"
+      },
+      "local_copy_accepted": false
+    },
+    {
+      "source_id": "lu-02",
+      "title": "Legilux Journal officiel portal",
+      "url": "https://legilux.public.lu/",
+      "publisher": "legilux.public.lu",
+      "language": "fr",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Legilux search results expose publication and effective dates; direct pages may require a JavaScript-capable client.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-02"
+      },
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Use the official external reference for Legilux Journal officiel portal only, within its recorded publisher, language, date/version and stated subject. Treat Mémorial promulgation as the legal publication; consolidations are explicitly documentary and without legal force.",
+      "reviewed_content": "Official Luxembourg Journal officiel and legislation publisher identified.",
+      "limitations": [
+        "Use the official external reference for Legilux Journal officiel portal only, within its recorded publisher, language, date/version and stated subject. Treat Mémorial promulgation as the legal publication; consolidations are explicitly documentary and without legal force.",
+        "This accepts the external link only; it does not accept the saved conversion, establish topic adequacy, or complete Luxembourg’s review.",
+        "No copying or republication permission is inferred."
+      ],
+      "evidence": {
+        "official_source_url": "https://legilux.public.lu/",
+        "verified_content": "Official Luxembourg Journal officiel and legislation publisher identified.",
+        "source_record_note": "Treat Mémorial promulgation as the legal publication; consolidations are explicitly documentary and without legal force.",
+        "retrieval_status": "discovery_surface_no_text"
+      },
+      "local_copy_accepted": false
+    },
+    {
+      "source_id": "lu-03",
+      "title": "Casemates open legal data portal",
+      "url": "https://data.legilux.public.lu/",
+      "publisher": "data.legilux.public.lu",
+      "language": "fr",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Portal docs describe persistent ELI and data resources; live raw retrieval and query behavior not verified.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-03"
+      },
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Use the official external reference for Casemates open legal data portal only, within its recorded publisher, language, date/version and stated subject. Promising structured route, but verify current/historical targets, update discovery, response identity, transport and deterministic conversion before authoring a rule.",
+      "reviewed_content": "Official Legilux data portal documents legislation content and descriptive metadata, LegalDocML XML, JOLux/ELI RDF, and CC BY 4.0 reuse.",
+      "limitations": [
+        "Use the official external reference for Casemates open legal data portal only, within its recorded publisher, language, date/version and stated subject. Promising structured route, but verify current/historical targets, update discovery, response identity, transport and deterministic conversion before authoring a rule.",
+        "This accepts the external link only; it does not accept the saved conversion, establish topic adequacy, or complete Luxembourg’s review.",
+        "No copying or republication permission is inferred."
+      ],
+      "evidence": {
+        "official_source_url": "https://data.legilux.public.lu/",
+        "verified_content": "Official Legilux data portal documents legislation content and descriptive metadata, LegalDocML XML, JOLux/ELI RDF, and CC BY 4.0 reuse.",
+        "source_record_note": "Promising structured route, but verify current/historical targets, update discovery, response identity, transport and deterministic conversion before authoring a rule.",
+        "retrieval_status": "discovery_surface_no_text"
+      },
+      "local_copy_accepted": false
+    },
+    {
+      "source_id": "lu-04",
+      "title": "Casemates ELI usage and version-resolution documentation",
+      "url": "https://data.legilux.public.lu/home/elis",
+      "publisher": "data.legilux.public.lu",
+      "language": "fr",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Docs describe ELI routing; runtime redirects/content negotiation not verified.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-04"
+      },
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Use the official external reference for Casemates ELI usage and version-resolution documentation only, within its recorded publisher, language, date/version and stated subject. A documented resolution scheme does not prove every target is present or stable. For ordinary research, use the government-published consolidation with its documentary/no-legal-force caveat; preserve original acts and amendments only when documentary local retention is the goal, or consult a specific act for a material discrepancy or commencement question.",
+      "reviewed_content": "Official documentation explains ELI identifiers, latest consolidations, point-in-time versions and ELI-prefix searches.",
+      "limitations": [
+        "Use the official external reference for Casemates ELI usage and version-resolution documentation only, within its recorded publisher, language, date/version and stated subject. A documented resolution scheme does not prove every target is present or stable. For ordinary research, use the government-published consolidation with its documentary/no-legal-force caveat; preserve original acts and amendments only when documentary local retention is the goal, or consult a specific act for a material discrepancy or commencement question.",
+        "This accepts the external link only; it does not accept the saved conversion, establish topic adequacy, or complete Luxembourg’s review.",
+        "No copying or republication permission is inferred."
+      ],
+      "evidence": {
+        "official_source_url": "https://data.legilux.public.lu/home/elis",
+        "verified_content": "Official documentation explains ELI identifiers, latest consolidations, point-in-time versions and ELI-prefix searches.",
+        "source_record_note": "A documented resolution scheme does not prove every target is present or stable. For ordinary research, use the government-published consolidation with its documentary/no-legal-force caveat; preserve original acts and amendments only when documentary local retention is the goal, or consult a specific act for a material discrepancy or commencement question.",
+        "retrieval_status": "discovery_surface_no_text"
+      },
+      "local_copy_accepted": false
+    },
+    {
+      "source_id": "lu-05",
+      "title": "Law of 29 August 2008 on free movement and immigration, consolidation applicable 12 June 2026",
+      "url": "https://legilux.public.lu/eli/etat/leg/loi/2008/08/29/n1/consolide/20260612",
+      "publisher": "legilux.public.lu",
+      "language": "fr",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Version applicable 2026-06-12; official page says consolidations are documentary and have no legal force.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-05"
+      },
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Use the official external reference for Law of 29 August 2008 on free movement and immigration, consolidation applicable 12 June 2026 only, within its recorded publisher, language, date/version and stated subject. Legilux labels consolidated texts documentary and without legal force; use only that dated official working text.",
+      "reviewed_content": "The Legilux consolidation applicable 2026-06-12 was reviewed.",
+      "limitations": [
+        "Use the official external reference for Law of 29 August 2008 on free movement and immigration, consolidation applicable 12 June 2026 only, within its recorded publisher, language, date/version and stated subject. Legilux labels consolidated texts documentary and without legal force; use only that dated official working text.",
+        "This accepts the external link only; it does not accept the saved conversion, establish topic adequacy, or complete Luxembourg’s review.",
+        "No copying or republication permission is inferred."
+      ],
+      "evidence": {
+        "official_source_url": "https://legilux.public.lu/eli/etat/leg/loi/2008/08/29/n1/consolide/20260612",
+        "verified_content": "The Legilux consolidation applicable 2026-06-12 was reviewed.",
+        "source_record_note": "Legilux labels consolidated texts documentary and without legal force; use only that dated official working text.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "local_copy_accepted": false
+    },
+    {
+      "source_id": "lu-06",
+      "title": "Law of 29 August 2008, original promulgated act",
+      "url": "https://legilux.public.lu/eli/etat/leg/loi/2008/08/29/n1/jo",
+      "publisher": "legilux.public.lu",
+      "language": "fr",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Original act is distinct from subsequent amendments and consolidations.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-06"
+      },
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Use the official external reference for Law of 29 August 2008, original promulgated act only, within its recorded publisher, language, date/version and stated subject. Prefer a usable Legilux consolidated version. If none is available, use the closest government-published text and record its date/cutoff; check the identified 2026 amendment only if it affects the provisions in scope. Do not reconstruct the full amendment chain by default.",
+      "reviewed_content": "Official Legilux ELI identifies the original promulgated act; its amendment relations include later changes to immigration provisions.",
+      "limitations": [
+        "Use the official external reference for Law of 29 August 2008, original promulgated act only, within its recorded publisher, language, date/version and stated subject. Prefer a usable Legilux consolidated version. If none is available, use the closest government-published text and record its date/cutoff; check the identified 2026 amendment only if it affects the provisions in scope. Do not reconstruct the full amendment chain by default.",
+        "This accepts the external link only; it does not accept the saved conversion, establish topic adequacy, or complete Luxembourg’s review.",
+        "No copying or republication permission is inferred."
+      ],
+      "evidence": {
+        "official_source_url": "https://legilux.public.lu/eli/etat/leg/loi/2008/08/29/n1/jo",
+        "verified_content": "Official Legilux ELI identifies the original promulgated act; its amendment relations include later changes to immigration provisions.",
+        "source_record_note": "Prefer a usable Legilux consolidated version. If none is available, use the closest government-published text and record its date/cutoff; check the identified 2026 amendment only if it affects the provisions in scope. Do not reconstruct the full amendment chain by default.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "local_copy_accepted": false
+    },
+    {
+      "source_id": "lu-07",
+      "title": "Grand-Ducal Regulation of 5 September 2008 on administrative formalities under the Immigration Law",
+      "url": "https://legilux.public.lu/eli/etat/leg/rgd/2008/09/05/n6/jo",
+      "publisher": "legilux.public.lu",
+      "language": "fr",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Ministry index last modified 18 April 2024; the linked coordinated PDF runs only through amendments to 17 March 2023.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-07"
+      },
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Use the official external reference for Grand-Ducal Regulation of 5 September 2008 on administrative formalities under the Immigration Law only, within its recorded publisher, language, date/version and stated subject. Use the Ministry-linked coordinated government PDF as a dated working text through 17 March 2023, with its cutoff recorded. Check the 2024 act and rectification only if they materially affect the provision or a current-law claim. The direct ELI page did not render in this research client; this client-access gap is not a reason to reconstruct the full act/amendment history.",
+      "reviewed_content": "Official ELI route is linked by the Immigration Ministry index and governs administrative formalities, including EU/EEA/Swiss registration and family procedures.",
+      "limitations": [
+        "Use the official external reference for Grand-Ducal Regulation of 5 September 2008 on administrative formalities under the Immigration Law only, within its recorded publisher, language, date/version and stated subject. Use the Ministry-linked coordinated government PDF as a dated working text through 17 March 2023, with its cutoff recorded. Check the 2024 act and rectification only if they materially affect the provision or a current-law claim. The direct ELI page did not render in this research client; this client-access gap is not a reason to reconstruct the full act/amendment history.",
+        "This accepts the external link only; it does not accept the saved conversion, establish topic adequacy, or complete Luxembourg’s review.",
+        "No copying or republication permission is inferred."
+      ],
+      "evidence": {
+        "official_source_url": "https://legilux.public.lu/eli/etat/leg/rgd/2008/09/05/n6/jo",
+        "verified_content": "Official ELI route is linked by the Immigration Ministry index and governs administrative formalities, including EU/EEA/Swiss registration and family procedures.",
+        "source_record_note": "Use the Ministry-linked coordinated government PDF as a dated working text through 17 March 2023, with its cutoff recorded. Check the 2024 act and rectification only if they materially affect the provision or a current-law claim. The direct ELI page did not render in this research client; this client-access gap is not a reason to reconstruct the full act/amendment history.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "local_copy_accepted": false
+    },
+    {
+      "source_id": "lu-08",
+      "title": "Grand-Ducal Regulation of 20 June 2024 amending immigration resource and formalities regulations, Mémorial A262",
+      "url": "https://legilux.public.lu/eli/etat/leg/rgd/2024/06/20/a262/jo",
+      "publisher": "legilux.public.lu",
+      "language": "fr",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Published 27 June 2024; rectification published as Mémorial A283 on 12 July 2024. Direct record page returned no text in this research client.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-08"
+      },
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official A262 amendment and its A283 rectification as published references; apply any effect only to a material provision after review. The 2023 coordinated PDF remains a dated text and does not include these later instruments.",
+      "reviewed_content": "Official Legilux identifies amendment Mémorial A262 (27 June 2024), with separate rectification A283 (12 July 2024) linked in the evidence.",
+      "limitations": [
+        "Use the official external reference for Grand-Ducal Regulation of 20 June 2024 amending immigration resource and formalities regulations, Mémorial A262 only, within its recorded publisher, language, date/version and stated subject. This postdates the Ministry index and April 2023 coordinated PDF. Use the dated government-published PDF as a working text within its stated scope; check this act and rectification only if the affected provisions matter. If they do, record the specific effect or leave those provisions unresolved. Do not block unrelated use or require a full amendment chain.",
+        "This accepts the external link only; it does not accept the saved conversion, establish topic adequacy, or complete Luxembourg’s review.",
+        "No copying or republication permission is inferred.",
+        "The official 12 July 2024 rectification (A283) is linked separately; check its specific effect only if material to the issue."
+      ],
+      "evidence": {
+        "official_source_url": "https://legilux.public.lu/eli/etat/leg/rgd/2024/06/20/a262/jo",
+        "verified_content": "Official Legilux record path and Mémorial A262 are corroborated by official government reporting and the official act index; the act modifies 2008 resource/formalities regulations.",
+        "source_record_note": "This postdates the Ministry index and April 2023 coordinated PDF. Use the dated government-published PDF as a working text within its stated scope; check this act and rectification only if the affected provisions matter. If they do, record the specific effect or leave those provisions unresolved. Do not block unrelated use or require a full amendment chain.",
+        "retrieval_status": "converted_review_candidate",
+        "related_official_sources": [
+          {
+            "title": "Rectification, Mémorial A283, 12 July 2024",
+            "url": "https://legilux.public.lu/eli/etat/leg/rect/2024/06/20/a283/jo"
+          }
+        ]
+      },
+      "local_copy_accepted": false
+    },
+    {
+      "source_id": "lu-09",
+      "title": "Immigration Directorate legislation index",
+      "url": "https://maint.gouvernement.lu/fr/le-ministere/dgim/legislations.html",
+      "publisher": "maint.gouvernement.lu",
+      "language": "fr",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Page last modified 18 April 2024.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-09"
+      },
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Use the official external reference for Immigration Directorate legislation index only, within its recorded publisher, language, date/version and stated subject. Useful as an index but materially stale: it omits the 2024 amendment confirmed in official records and links an April 2023 coordinated formalities PDF. Rediscover from current Legilux records.",
+      "reviewed_content": "Official Ministry of Home Affairs immigration legislation index lists core laws, regulations and coordinated versions.",
+      "limitations": [
+        "Use the official external reference for Immigration Directorate legislation index only, within its recorded publisher, language, date/version and stated subject. Useful as an index but materially stale: it omits the 2024 amendment confirmed in official records and links an April 2023 coordinated formalities PDF. Rediscover from current Legilux records.",
+        "This accepts the external link only; it does not accept the saved conversion, establish topic adequacy, or complete Luxembourg’s review.",
+        "No copying or republication permission is inferred."
+      ],
+      "evidence": {
+        "official_source_url": "https://maint.gouvernement.lu/fr/le-ministere/dgim/legislations.html",
+        "verified_content": "Official Ministry of Home Affairs immigration legislation index lists core laws, regulations and coordinated versions.",
+        "source_record_note": "Useful as an index but materially stale: it omits the 2024 amendment confirmed in official records and links an April 2023 coordinated formalities PDF. Rediscover from current Legilux records.",
+        "retrieval_status": "changed_review_candidate"
+      },
+      "local_copy_accepted": false
+    },
+    {
+      "source_id": "lu-10",
+      "title": "Coordinated administrative-formalities regulation, version applicable 15 April 2023",
+      "url": "https://maint.gouvernement.lu/dam-assets/le-ministere/immigration/l%C3%A9gislations/imm-rgd-formalits-admin-vc-avril-2023.pdf",
+      "publisher": "maint.gouvernement.lu",
+      "language": "fr",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Version says applicable from 15 April 2023 and incorporates amendments through 17 March 2023.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-10"
+      },
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Use the official external reference for Coordinated administrative-formalities regulation, version applicable 15 April 2023 only, within its recorded publisher, language, date/version and stated subject. Use this dated government-published working text within its 15 April 2023 applicability date and 17 March 2023 amendment cutoff. Check the known 2024 A262 amendment and A283 rectification only if they materially affect the issue; it does not establish post-cutoff currentness.",
+      "reviewed_content": "Official Ministry attachment is linked from its immigration legislation index and identifies an April 2023 coordinated version of the 2008 regulation.",
+      "limitations": [
+        "Use the official external reference for Coordinated administrative-formalities regulation, version applicable 15 April 2023 only, within its recorded publisher, language, date/version and stated subject. Use this dated government-published working text within its 15 April 2023 applicability date and 17 March 2023 amendment cutoff. Check the known 2024 A262 amendment and A283 rectification only if they materially affect the issue; it does not establish post-cutoff currentness.",
+        "This accepts the external link only; it does not accept the saved conversion, establish topic adequacy, or complete Luxembourg’s review.",
+        "No copying or republication permission is inferred."
+      ],
+      "evidence": {
+        "official_source_url": "https://maint.gouvernement.lu/dam-assets/le-ministere/immigration/l%C3%A9gislations/imm-rgd-formalits-admin-vc-avril-2023.pdf",
+        "verified_content": "Official Ministry attachment is linked from its immigration legislation index and identifies an April 2023 coordinated version of the 2008 regulation.",
+        "source_record_note": "Use this dated government-published working text within its 15 April 2023 applicability date and 17 March 2023 amendment cutoff. Check the known 2024 A262 amendment and A283 rectification only if they materially affect the issue; it does not establish post-cutoff currentness.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "local_copy_accepted": false
+    },
+    {
+      "source_id": "lu-12",
+      "title": "Family members of EU citizens",
+      "url": "https://guichet.public.lu/en/citoyens/immigration/vivre/non-luxembourg/immigration/union-euro/famille.html",
+      "publisher": "guichet.public.lu",
+      "language": "en",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Last update 2026-10-01; linked forms have distinct dates, including an EU-family visa checklist last updated 2023-10-18.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-12"
+      },
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Use the official external reference for Family members of EU citizens only, within its recorded publisher, language, date/version and stated subject. Some linked checklists are older; the EU-family visa checklist is dated 2023-10-18. Verify attachments individually.",
+      "reviewed_content": "Official Guichet family page last updated 2026-10-01; reviewed family categories, visa entry, procedures, work and retention rights.",
+      "limitations": [
+        "Use the official external reference for Family members of EU citizens only, within its recorded publisher, language, date/version and stated subject. Some linked checklists are older; the EU-family visa checklist is dated 2023-10-18. Verify attachments individually.",
+        "This accepts the external link only; it does not accept the saved conversion, establish topic adequacy, or complete Luxembourg’s review.",
+        "No copying or republication permission is inferred."
+      ],
+      "evidence": {
+        "official_source_url": "https://guichet.public.lu/en/citoyens/immigration/vivre/non-luxembourg/immigration/union-euro/famille.html",
+        "verified_content": "Official Guichet family page last updated 2026-10-01; reviewed family categories, visa entry, procedures, work and retention rights.",
+        "source_record_note": "Some linked checklists are older; the EU-family visa checklist is dated 2023-10-18. Verify attachments individually.",
+        "retrieval_status": "changed_review_candidate"
+      },
+      "local_copy_accepted": false
+    },
+    {
+      "source_id": "lu-13",
+      "title": "Family reunification with a third-country national sponsor",
+      "url": "https://guichet.public.lu/en/citoyens/immigration/vivre/non-luxembourg/immigration/pays-tiers/membre-famille/regroupement-familial.html",
+      "publisher": "guichet.public.lu",
+      "language": "en",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Page last updated 1 October 2026.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-13"
+      },
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Use the official external reference for Family reunification with a third-country national sponsor only, within its recorded publisher, language, date/version and stated subject. Keep this route separate from EU/Luxembourg citizen family residence and from UK Withdrawal Agreement beneficiaries.",
+      "reviewed_content": "Official guidance describes a national family-reunification route where the sponsor is a third-country national, distinct from free-movement family residence.",
+      "limitations": [
+        "Use the official external reference for Family reunification with a third-country national sponsor only, within its recorded publisher, language, date/version and stated subject. Keep this route separate from EU/Luxembourg citizen family residence and from UK Withdrawal Agreement beneficiaries.",
+        "This accepts the external link only; it does not accept the saved conversion, establish topic adequacy, or complete Luxembourg’s review.",
+        "No copying or republication permission is inferred."
+      ],
+      "evidence": {
+        "official_source_url": "https://guichet.public.lu/en/citoyens/immigration/vivre/non-luxembourg/immigration/pays-tiers/membre-famille/regroupement-familial.html",
+        "verified_content": "Official guidance describes a national family-reunification route where the sponsor is a third-country national, distinct from free-movement family residence.",
+        "source_record_note": "Keep this route separate from EU/Luxembourg citizen family residence and from UK Withdrawal Agreement beneficiaries.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "local_copy_accepted": false
+    },
+    {
+      "source_id": "lu-15",
+      "title": "Permanent residence certificate for an EU citizen after five years",
+      "url": "https://guichet.public.lu/en/citoyens/immigration/vivre/luxembourg/apres-5-ans/citoyen-UE/attestation.html",
+      "publisher": "guichet.public.lu",
+      "language": "en",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Page last updated 1 October 2026.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-15"
+      },
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Use the official external reference for Permanent residence certificate for an EU citizen after five years only, within its recorded publisher, language, date/version and stated subject. Use for the page’s stated EU-citizen scope; no topic completeness implied.",
+      "reviewed_content": "Official permanent-residence page last updated 2026-10-01.",
+      "limitations": [
+        "Use the official external reference for Permanent residence certificate for an EU citizen after five years only, within its recorded publisher, language, date/version and stated subject. Use for the page’s stated EU-citizen scope; no topic completeness implied.",
+        "This accepts the external link only; it does not accept the saved conversion, establish topic adequacy, or complete Luxembourg’s review.",
+        "No copying or republication permission is inferred."
+      ],
+      "evidence": {
+        "official_source_url": "https://guichet.public.lu/en/citoyens/immigration/vivre/luxembourg/apres-5-ans/citoyen-UE/attestation.html",
+        "verified_content": "Official permanent-residence page last updated 2026-10-01.",
+        "source_record_note": "Use for the page’s stated EU-citizen scope; no topic completeness implied.",
+        "retrieval_status": "changed_review_candidate"
+      },
+      "local_copy_accepted": false
+    },
+    {
+      "source_id": "lu-16",
+      "title": "Permanent residence card for a third-country family member of an EU citizen",
+      "url": "https://guichet.public.lu/en/citoyens/immigration/vivre/luxembourg/apres-5-ans/membre-famille-ue/carte-sejour-permanent-membre-famille.html",
+      "publisher": "guichet.public.lu",
+      "language": "en",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "English page is current in the official portal; language versions and linked forms may have different update dates.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-16"
+      },
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Use the official external reference for Permanent residence card for a third-country family member of an EU citizen only, within its recorded publisher, language, date/version and stated subject. Use for the stated permanent family-card scope; verify actual card specimens separately.",
+      "reviewed_content": "Official permanent-family-card page last updated 2026-10-01.",
+      "limitations": [
+        "Use the official external reference for Permanent residence card for a third-country family member of an EU citizen only, within its recorded publisher, language, date/version and stated subject. Use for the stated permanent family-card scope; verify actual card specimens separately.",
+        "This accepts the external link only; it does not accept the saved conversion, establish topic adequacy, or complete Luxembourg’s review.",
+        "No copying or republication permission is inferred."
+      ],
+      "evidence": {
+        "official_source_url": "https://guichet.public.lu/en/citoyens/immigration/vivre/luxembourg/apres-5-ans/membre-famille-ue/carte-sejour-permanent-membre-famille.html",
+        "verified_content": "Official permanent-family-card page last updated 2026-10-01.",
+        "source_record_note": "Use for the stated permanent family-card scope; verify actual card specimens separately.",
+        "retrieval_status": "changed_review_candidate"
+      },
+      "local_copy_accepted": false
+    },
+    {
+      "source_id": "lu-17",
+      "title": "Residence document for a third-country family member of a UK Withdrawal Agreement beneficiary",
+      "url": "https://guichet.public.lu/en/citoyens/immigration/cas-specifiques/britannique/document-sejour-membre-famille-ressortissant-britannique-pays-tiers.html",
+      "publisher": "guichet.public.lu",
+      "language": "en",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Page last updated 1 October 2026.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-17"
+      },
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Use the official external reference for Residence document for a third-country family member of a UK Withdrawal Agreement beneficiary only, within its recorded publisher, language, date/version and stated subject. This is a separate route from EU free movement.",
+      "reviewed_content": "Official Withdrawal Agreement family page last updated 2026-10-01.",
+      "limitations": [
+        "Use the official external reference for Residence document for a third-country family member of a UK Withdrawal Agreement beneficiary only, within its recorded publisher, language, date/version and stated subject. This is a separate route from EU free movement.",
+        "This accepts the external link only; it does not accept the saved conversion, establish topic adequacy, or complete Luxembourg’s review.",
+        "No copying or republication permission is inferred."
+      ],
+      "evidence": {
+        "official_source_url": "https://guichet.public.lu/en/citoyens/immigration/cas-specifiques/britannique/document-sejour-membre-famille-ressortissant-britannique-pays-tiers.html",
+        "verified_content": "Official Withdrawal Agreement family page last updated 2026-10-01.",
+        "source_record_note": "This is a separate route from EU free movement.",
+        "retrieval_status": "changed_review_candidate"
+      },
+      "local_copy_accepted": false
+    },
+    {
+      "source_id": "lu-18",
+      "title": "Permanent residence document for a UK Withdrawal Agreement beneficiary or family member",
+      "url": "https://guichet.public.lu/en/citoyens/immigration/cas-specifiques/britannique/demande-document-sejour-permanent-ressortissant-britannique-membre-famille-ressortissant-pays-tiers.html",
+      "publisher": "guichet.public.lu",
+      "language": "en",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Page last updated 1 October 2026.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-18"
+      },
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Use the official external reference for Permanent residence document for a UK Withdrawal Agreement beneficiary or family member only, within its recorded publisher, language, date/version and stated subject. This is a separate route from EU free movement.",
+      "reviewed_content": "Official Withdrawal Agreement permanent-residence page last updated 2026-10-01.",
+      "limitations": [
+        "Use the official external reference for Permanent residence document for a UK Withdrawal Agreement beneficiary or family member only, within its recorded publisher, language, date/version and stated subject. This is a separate route from EU free movement.",
+        "This accepts the external link only; it does not accept the saved conversion, establish topic adequacy, or complete Luxembourg’s review.",
+        "No copying or republication permission is inferred."
+      ],
+      "evidence": {
+        "official_source_url": "https://guichet.public.lu/en/citoyens/immigration/cas-specifiques/britannique/demande-document-sejour-permanent-ressortissant-britannique-membre-famille-ressortissant-pays-tiers.html",
+        "verified_content": "Official Withdrawal Agreement permanent-residence page last updated 2026-10-01.",
+        "source_record_note": "This is a separate route from EU free movement.",
+        "retrieval_status": "changed_review_candidate"
+      },
+      "local_copy_accepted": false
+    },
+    {
+      "source_id": "lu-23",
+      "title": "Luxembourg diplomatic and consular missions directory",
+      "url": "https://mae.gouvernement.lu/en/missions-diplomatiques/missions-diplomatiques-et-consulaires-luxembourgeoises.html",
+      "publisher": "maee.gouvernement.lu",
+      "language": "en",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Current ministry directory reviewed 2026-10-21; it is not a mission-specific visa or appointment instruction.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-23"
+      },
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Use the official external reference for Luxembourg diplomatic and consular missions directory only, within its recorded publisher, language, date/version and stated subject. Directory only; no mission-specific appointments, checklists, outsourcing or competent issuing authority is established.",
+      "reviewed_content": "Official diplomatic and consular missions directory and co-accreditations reviewed.",
+      "limitations": [
+        "Use the official external reference for Luxembourg diplomatic and consular missions directory only, within its recorded publisher, language, date/version and stated subject. Directory only; no mission-specific appointments, checklists, outsourcing or competent issuing authority is established.",
+        "This accepts the external link only; it does not accept the saved conversion, establish topic adequacy, or complete Luxembourg’s review.",
+        "No copying or republication permission is inferred."
+      ],
+      "evidence": {
+        "official_source_url": "https://mae.gouvernement.lu/en/missions-diplomatiques/missions-diplomatiques-et-consulaires-luxembourgeoises.html",
+        "verified_content": "Official diplomatic and consular missions directory and co-accreditations reviewed.",
+        "source_record_note": "Directory only; no mission-specific appointments, checklists, outsourcing or competent issuing authority is established.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "local_copy_accepted": false
+    },
+    {
+      "source_id": "lu-24",
+      "title": "Grand-Ducal Regulation of 8 June 1979 on non-contentious administrative procedure",
+      "url": "https://legilux.public.lu/eli/etat/leg/rgd/1979/06/08/n7/jo",
+      "publisher": "legilux.public.lu",
+      "language": "fr",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Official text record identified. Use the closest government-published version and its stated date/status; consult later Gazette acts only for a known material gap.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-24"
+      },
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Use the official external reference for Grand-Ducal Regulation of 8 June 1979 on non-contentious administrative procedure only, within its recorded publisher, language, date/version and stated subject. Check scope and special-law exclusions before applying to immigration; do not infer procedural rights solely from a general regulation.",
+      "reviewed_content": "Official Legilux record for general non-contentious administrative procedure, potentially relevant to immigration decisions.",
+      "limitations": [
+        "Use the official external reference for Grand-Ducal Regulation of 8 June 1979 on non-contentious administrative procedure only, within its recorded publisher, language, date/version and stated subject. Check scope and special-law exclusions before applying to immigration; do not infer procedural rights solely from a general regulation.",
+        "This accepts the external link only; it does not accept the saved conversion, establish topic adequacy, or complete Luxembourg’s review.",
+        "No copying or republication permission is inferred."
+      ],
+      "evidence": {
+        "official_source_url": "https://legilux.public.lu/eli/etat/leg/rgd/1979/06/08/n7/jo",
+        "verified_content": "Official Legilux record for general non-contentious administrative procedure, potentially relevant to immigration decisions.",
+        "source_record_note": "Check scope and special-law exclusions before applying to immigration; do not infer procedural rights solely from a general regulation.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "local_copy_accepted": false
+    },
+    {
+      "source_id": "lu-29",
+      "title": "Law of 14 September 2018 on a transparent and open administration",
+      "url": "https://legilux.public.lu/eli/etat/leg/loi/2018/09/14/a883/jo",
+      "publisher": "legilux.public.lu",
+      "language": "fr",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Official Legilux search identifies the law and a consolidated record; the exact consolidation version date was not directly reviewed. Use an accessible official consolidated text or the closest usable government-published version, recording its displayed date/cutoff and documentary caveat.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-29"
+      },
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Use the official external reference for Law of 14 September 2018 on a transparent and open administration only, within its recorded publisher, language, date/version and stated subject. Check a specific later change only if it materially affects the issue. Preserve the original act and amendments only when local documentary retention is the goal. Keep document-access remedies distinct from immigration merits appeals.",
+      "reviewed_content": "Official Legilux record for access to administrative documents; related official guidance identifies CADA review.",
+      "limitations": [
+        "Use the official external reference for Law of 14 September 2018 on a transparent and open administration only, within its recorded publisher, language, date/version and stated subject. Check a specific later change only if it materially affects the issue. Preserve the original act and amendments only when local documentary retention is the goal. Keep document-access remedies distinct from immigration merits appeals.",
+        "This accepts the external link only; it does not accept the saved conversion, establish topic adequacy, or complete Luxembourg’s review.",
+        "No copying or republication permission is inferred."
+      ],
+      "evidence": {
+        "official_source_url": "https://legilux.public.lu/eli/etat/leg/loi/2018/09/14/a883/jo",
+        "verified_content": "Official Legilux record for access to administrative documents; related official guidance identifies CADA review.",
+        "source_record_note": "Check a specific later change only if it materially affects the issue. Preserve the original act and amendments only when local documentary retention is the goal. Keep document-access remedies distinct from immigration merits appeals.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "local_copy_accepted": false
+    },
+    {
+      "source_id": "lu-30",
+      "title": "Commission for Access to Documents (CADA)",
+      "url": "https://cad.gouvernement.lu/fr.html",
+      "publisher": "cad.gouvernement.lu",
+      "language": "fr",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Current site observed 2026-10-18; individual procedure dates need runtime capture.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-30"
+      },
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Use the official external reference for Commission for Access to Documents (CADA) only, within its recorded publisher, language, date/version and stated subject. Advisory opinion is not binding and this route concerns access to documents only.",
+      "reviewed_content": "Official CADA site describes its advisory role and complaint route for access-to-records disputes.",
+      "limitations": [
+        "Use the official external reference for Commission for Access to Documents (CADA) only, within its recorded publisher, language, date/version and stated subject. Advisory opinion is not binding and this route concerns access to documents only.",
+        "This accepts the external link only; it does not accept the saved conversion, establish topic adequacy, or complete Luxembourg’s review.",
+        "No copying or republication permission is inferred."
+      ],
+      "evidence": {
+        "official_source_url": "https://cad.gouvernement.lu/fr.html",
+        "verified_content": "Official CADA site describes its advisory role and complaint route for access-to-records disputes.",
+        "source_record_note": "Advisory opinion is not binding and this route concerns access to documents only.",
+        "retrieval_status": "changed_review_candidate"
+      },
+      "local_copy_accepted": false
+    },
+    {
+      "source_id": "lu-31",
+      "title": "Ombudsman complaint process",
+      "url": "https://ombudsman.lu/fr/mediateur-grand-duche-luxembourg/reclamation.html",
+      "publisher": "ombudsman.lu",
+      "language": "fr",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Current page observed 2026-10-18; statute and subject-matter jurisdiction require separate verification.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-31"
+      },
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Use the official external reference for Ombudsman complaint process only, within its recorded publisher, language, date/version and stated subject. Do not assume jurisdiction over a matter pending before a court or a specific immigration decision; never collect submitted case data.",
+      "reviewed_content": "Official Ombudsman page says complainants should first raise the issue with the administration.",
+      "limitations": [
+        "Use the official external reference for Ombudsman complaint process only, within its recorded publisher, language, date/version and stated subject. Do not assume jurisdiction over a matter pending before a court or a specific immigration decision; never collect submitted case data.",
+        "This accepts the external link only; it does not accept the saved conversion, establish topic adequacy, or complete Luxembourg’s review.",
+        "No copying or republication permission is inferred."
+      ],
+      "evidence": {
+        "official_source_url": "https://ombudsman.lu/fr/mediateur-grand-duche-luxembourg/reclamation.html",
+        "verified_content": "Official Ombudsman page says complainants should first raise the issue with the administration.",
+        "source_record_note": "Do not assume jurisdiction over a matter pending before a court or a specific immigration decision; never collect submitted case data.",
+        "retrieval_status": "changed_review_candidate"
+      },
+      "local_copy_accepted": false
+    },
+    {
+      "source_id": "lu-32",
+      "title": "National Commission for Data Protection forms and complaint route",
+      "url": "https://cnpd.public.lu/en/formulaires.html",
+      "publisher": "cnpd.public.lu",
+      "language": "en",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Last updated 28 January 2026.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-32"
+      },
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Use the official external reference for National Commission for Data Protection forms and complaint route only, within its recorded publisher, language, date/version and stated subject. Monitor public instructions and links only; complaint submissions contain personal data and are not source-monitoring targets.",
+      "reviewed_content": "Official CNPD forms page includes complaint and rights-exercise materials.",
+      "limitations": [
+        "Use the official external reference for National Commission for Data Protection forms and complaint route only, within its recorded publisher, language, date/version and stated subject. Monitor public instructions and links only; complaint submissions contain personal data and are not source-monitoring targets.",
+        "This accepts the external link only; it does not accept the saved conversion, establish topic adequacy, or complete Luxembourg’s review.",
+        "No copying or republication permission is inferred."
+      ],
+      "evidence": {
+        "official_source_url": "https://cnpd.public.lu/en/formulaires.html",
+        "verified_content": "Official CNPD forms page includes complaint and rights-exercise materials.",
+        "source_record_note": "Monitor public instructions and links only; complaint submissions contain personal data and are not source-monitoring targets.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "local_copy_accepted": false
+    },
+    {
+      "source_id": "lu-33",
+      "title": "Law of 1 August 2018 on data protection, current consolidation",
+      "url": "https://legilux.public.lu/eli/etat/leg/loi/2018/08/01/a686/consolide/20251226",
+      "publisher": "legilux.public.lu",
+      "language": "fr",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Version applicable 26 December 2025.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-33"
+      },
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Use the official external reference for Law of 1 August 2018 on data protection, current consolidation only, within its recorded publisher, language, date/version and stated subject. Use as a dated consolidation; later changes and processing-specific scope require issue-specific review.",
+      "reviewed_content": "Official Legilux data-protection consolidation applicable 2025-12-26 identified.",
+      "limitations": [
+        "Use the official external reference for Law of 1 August 2018 on data protection, current consolidation only, within its recorded publisher, language, date/version and stated subject. Use as a dated consolidation; later changes and processing-specific scope require issue-specific review.",
+        "This accepts the external link only; it does not accept the saved conversion, establish topic adequacy, or complete Luxembourg’s review.",
+        "No copying or republication permission is inferred."
+      ],
+      "evidence": {
+        "official_source_url": "https://legilux.public.lu/eli/etat/leg/loi/2018/08/01/a686/consolide/20251226",
+        "verified_content": "Official Legilux data-protection consolidation applicable 2025-12-26 identified.",
+        "source_record_note": "Use as a dated consolidation; later changes and processing-specific scope require issue-specific review.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "local_copy_accepted": false
+    },
+    {
+      "source_id": "lu-35",
+      "title": "Administrative courts decisions archive",
+      "url": "https://justice.public.lu/content/justice/fr/jurisprudence/juridictions-administratives.html",
+      "publisher": "justice.public.lu",
+      "language": "fr",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Search surface observed 2026-10-18 with results through 2026; no feed or completeness statement verified.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-35"
+      },
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Use the official external reference for Administrative courts decisions archive only, within its recorded publisher, language, date/version and stated subject. Determine corpus coverage, pagination, anonymisation and update discovery; absence from search is not proof no decision exists.",
+      "reviewed_content": "Official Justice portal exposes administrative-court decisions with search filters, including migration matters.",
+      "limitations": [
+        "Use the official external reference for Administrative courts decisions archive only, within its recorded publisher, language, date/version and stated subject. Determine corpus coverage, pagination, anonymisation and update discovery; absence from search is not proof no decision exists.",
+        "This accepts the external link only; it does not accept the saved conversion, establish topic adequacy, or complete Luxembourg’s review.",
+        "No copying or republication permission is inferred."
+      ],
+      "evidence": {
+        "official_source_url": "https://justice.public.lu/content/justice/fr/jurisprudence/juridictions-administratives.html",
+        "verified_content": "Official Justice portal exposes administrative-court decisions with search filters, including migration matters.",
+        "source_record_note": "Determine corpus coverage, pagination, anonymisation and update discovery; absence from search is not proof no decision exists.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "local_copy_accepted": false
+    },
+    {
+      "source_id": "lu-36",
+      "title": "Law of 4 July 2014 reforming civil status and marriage provisions",
+      "url": "https://legilux.public.lu/eli/etat/leg/loi/2014/07/04/n1/jo",
+      "publisher": "legilux.public.lu",
+      "language": "fr",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Original act identified; current Code civil provisions and amendments need current-version resolution.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-36"
+      },
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Use the official external reference for Law of 4 July 2014 reforming civil status and marriage provisions only, within its recorded publisher, language, date/version and stated subject. Supporting-document framework only; do not treat as residence eligibility law.",
+      "reviewed_content": "Official law record concerns civil-status acts and marriage, relevant to evidence of family status.",
+      "limitations": [
+        "Use the official external reference for Law of 4 July 2014 reforming civil status and marriage provisions only, within its recorded publisher, language, date/version and stated subject. Supporting-document framework only; do not treat as residence eligibility law.",
+        "This accepts the external link only; it does not accept the saved conversion, establish topic adequacy, or complete Luxembourg’s review.",
+        "No copying or republication permission is inferred."
+      ],
+      "evidence": {
+        "official_source_url": "https://legilux.public.lu/eli/etat/leg/loi/2014/07/04/n1/jo",
+        "verified_content": "Official law record concerns civil-status acts and marriage, relevant to evidence of family status.",
+        "source_record_note": "Supporting-document framework only; do not treat as residence eligibility law.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "local_copy_accepted": false
+    },
+    {
+      "source_id": "lu-37",
+      "title": "Preparation for civil marriage",
+      "url": "https://guichet.public.lu/en/citoyens/famille-education/vie-conjugale/mariage/preparation-mariage.html",
+      "publisher": "guichet.public.lu",
+      "language": "en",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Current page observed 2026-10-18; local municipal requirements can vary.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-37"
+      },
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Use the official external reference for Preparation for civil marriage only, within its recorded publisher, language, date/version and stated subject. Use for document-acquisition context only; keep civil-status rules distinct from immigration assessment.",
+      "reviewed_content": "Official Guichet guidance describes civil marriage documents and local steps.",
+      "limitations": [
+        "Use the official external reference for Preparation for civil marriage only, within its recorded publisher, language, date/version and stated subject. Use for document-acquisition context only; keep civil-status rules distinct from immigration assessment.",
+        "This accepts the external link only; it does not accept the saved conversion, establish topic adequacy, or complete Luxembourg’s review.",
+        "No copying or republication permission is inferred."
+      ],
+      "evidence": {
+        "official_source_url": "https://guichet.public.lu/en/citoyens/famille-education/vie-conjugale/mariage/preparation-mariage.html",
+        "verified_content": "Official Guichet guidance describes civil marriage documents and local steps.",
+        "source_record_note": "Use for document-acquisition context only; keep civil-status rules distinct from immigration assessment.",
+        "retrieval_status": "changed_review_candidate"
+      },
+      "local_copy_accepted": false
+    },
+    {
+      "source_id": "lu-38",
+      "title": "Registration of a foreign civil partnership",
+      "url": "https://guichet.public.lu/en/citoyens/famille-education/vie-conjugale/partenariat-pacs/inscription-partenariat-etranger.html",
+      "publisher": "guichet.public.lu",
+      "language": "en",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Current page observed 2026-10-18; linked forms and local record requirements need independent dates.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-38"
+      },
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Use the official external reference for Registration of a foreign civil partnership only, within its recorded publisher, language, date/version and stated subject. Do not assume every foreign partnership qualifies under a free-movement family definition.",
+      "reviewed_content": "Official guidance describes recognition/registration of a foreign partnership in Luxembourg.",
+      "limitations": [
+        "Use the official external reference for Registration of a foreign civil partnership only, within its recorded publisher, language, date/version and stated subject. Do not assume every foreign partnership qualifies under a free-movement family definition.",
+        "This accepts the external link only; it does not accept the saved conversion, establish topic adequacy, or complete Luxembourg’s review.",
+        "No copying or republication permission is inferred."
+      ],
+      "evidence": {
+        "official_source_url": "https://guichet.public.lu/en/citoyens/famille-education/vie-conjugale/partenariat-pacs/inscription-partenariat-etranger.html",
+        "verified_content": "Official guidance describes recognition/registration of a foreign partnership in Luxembourg.",
+        "source_record_note": "Do not assume every foreign partnership qualifies under a free-movement family definition.",
+        "retrieval_status": "changed_review_candidate"
+      },
+      "local_copy_accepted": false
+    },
+    {
+      "source_id": "lu-39",
+      "title": "Legalisation and apostille of public documents",
+      "url": "https://guichet.public.lu/en/citoyens/justice/certificats-copies-actes-casier-judiciaire/legalisation/legalisation-actes.html",
+      "publisher": "guichet.public.lu",
+      "language": "en",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Last updated 6 May 2026.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-39"
+      },
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Use the official external reference for Legalisation and apostille of public documents only, within its recorded publisher, language, date/version and stated subject. Check document origin, treaty and EU exceptions; authentication does not establish the truth or legal effect of the document.",
+      "reviewed_content": "Official Guichet page describes legalisation/apostille and EU Regulation 2016/1191 exceptions.",
+      "limitations": [
+        "Use the official external reference for Legalisation and apostille of public documents only, within its recorded publisher, language, date/version and stated subject. Check document origin, treaty and EU exceptions; authentication does not establish the truth or legal effect of the document.",
+        "This accepts the external link only; it does not accept the saved conversion, establish topic adequacy, or complete Luxembourg’s review.",
+        "No copying or republication permission is inferred."
+      ],
+      "evidence": {
+        "official_source_url": "https://guichet.public.lu/en/citoyens/justice/certificats-copies-actes-casier-judiciaire/legalisation/legalisation-actes.html",
+        "verified_content": "Official Guichet page describes legalisation/apostille and EU Regulation 2016/1191 exceptions.",
+        "source_record_note": "Check document origin, treaty and EU exceptions; authentication does not establish the truth or legal effect of the document.",
+        "retrieval_status": "changed_review_candidate"
+      },
+      "local_copy_accepted": false
+    },
+    {
+      "source_id": "lu-40",
+      "title": "Civil-status certificates and certified copies",
+      "url": "https://guichet.public.lu/en/citoyens/justice/certificats-copies-actes-casier-judiciaire/certificats-copies-actes/certificat-signature-copie.html",
+      "publisher": "guichet.public.lu",
+      "language": "en",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Current page observed 2026-10-18; issuing authority and language routes should be captured.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-40"
+      },
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Use the official external reference for Civil-status certificates and certified copies only, within its recorded publisher, language, date/version and stated subject. Operational evidence source only; retain privacy limits and avoid personal application data.",
+      "reviewed_content": "Official Guichet page explains certificates/copies that may support family-status evidence.",
+      "limitations": [
+        "Use the official external reference for Civil-status certificates and certified copies only, within its recorded publisher, language, date/version and stated subject. Operational evidence source only; retain privacy limits and avoid personal application data.",
+        "This accepts the external link only; it does not accept the saved conversion, establish topic adequacy, or complete Luxembourg’s review.",
+        "No copying or republication permission is inferred."
+      ],
+      "evidence": {
+        "official_source_url": "https://guichet.public.lu/en/citoyens/justice/certificats-copies-actes-casier-judiciaire/certificats-copies-actes/certificat-signature-copie.html",
+        "verified_content": "Official Guichet page explains certificates/copies that may support family-status evidence.",
+        "source_record_note": "Operational evidence source only; retain privacy limits and avoid personal application data.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "local_copy_accepted": false
+    },
+    {
+      "source_id": "lu-41",
+      "title": "MyGuichet online routes and forms for EU-family residence",
+      "url": "https://guichet.public.lu/en/citoyens/immigration/vivre/non-luxembourg/immigration/union-euro/famille.html",
+      "publisher": "guichet.public.lu",
+      "language": "en",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Parent page last updated 2026-10-01; linked forms have independent dates; no authenticated application was accessed.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-41"
+      },
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Use the official external reference for MyGuichet online routes and forms for EU-family residence only, within its recorded publisher, language, date/version and stated subject. Use as a route to public procedures/forms only; check each attachment separately. No account access, application submission, or applicant data is in scope.",
+      "reviewed_content": "Official Guichet page last updated 1 October 2026; the public page links online/paper routes and downloadable forms.",
+      "limitations": [
+        "Use the official external reference for MyGuichet online routes and forms for EU-family residence only, within its recorded publisher, language, date/version and stated subject. Use as a route to public procedures/forms only; check each attachment separately. No account access, application submission, or applicant data is in scope.",
+        "This accepts the external link only; it does not accept the saved conversion, establish topic adequacy, or complete Luxembourg’s review.",
+        "No copying or republication permission is inferred."
+      ],
+      "evidence": {
+        "official_source_url": "https://guichet.public.lu/en/citoyens/immigration/vivre/non-luxembourg/immigration/union-euro/famille.html",
+        "verified_content": "Official Guichet page last updated 1 October 2026; the public page links online/paper routes and downloadable forms.",
+        "source_record_note": "Use as a route to public procedures/forms only; check each attachment separately. No account access, application submission, or applicant data is in scope.",
+        "retrieval_status": "changed_review_candidate"
+      },
+      "local_copy_accepted": false
+    },
+    {
+      "source_id": "lu-43",
+      "title": "Law of 1 December 1978 on non-contentious administrative procedure",
+      "url": "https://legilux.public.lu/eli/etat/leg/loi/1978/12/01/n1/jo",
+      "publisher": "legilux.public.lu",
+      "language": "fr",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Original promulgated act; current consolidated edition and later amendments were not checked.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-43"
+      },
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Use the official external reference for Law of 1 December 1978 on non-contentious administrative procedure only, within its recorded publisher, language, date/version and stated subject. Original publication only; current consolidation and amendments remain open.",
+      "reviewed_content": "Official ELI identifies the promulgated 1978 administrative-procedure law.",
+      "limitations": [
+        "Use the official external reference for Law of 1 December 1978 on non-contentious administrative procedure only, within its recorded publisher, language, date/version and stated subject. Original publication only; current consolidation and amendments remain open.",
+        "This accepts the external link only; it does not accept the saved conversion, establish topic adequacy, or complete Luxembourg’s review.",
+        "No copying or republication permission is inferred."
+      ],
+      "evidence": {
+        "official_source_url": "https://legilux.public.lu/eli/etat/leg/loi/1978/12/01/n1/jo",
+        "verified_content": "Official ELI identifies the promulgated 1978 administrative-procedure law.",
+        "source_record_note": "Original publication only; current consolidation and amendments remain open.",
+        "retrieval_status": "not_retrieved_link_review_only"
+      },
+      "local_copy_accepted": false
+    },
+    {
+      "source_id": "lu-44",
+      "title": "Law of 7 August 2023 on legal aid",
+      "url": "https://legilux.public.lu/eli/etat/leg/loi/2023/08/07/a542/jo",
+      "publisher": "legilux.public.lu",
+      "language": "fr",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Original promulgated act; later amendments/current consolidation were not reconciled.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-44"
+      },
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Use the official external reference for Law of 7 August 2023 on legal aid only, within its recorded publisher, language, date/version and stated subject. Current amendments and eligibility in a particular proceeding remain open.",
+      "reviewed_content": "Official ELI identifies the 2023 legal-aid law, Mémorial A542.",
+      "limitations": [
+        "Use the official external reference for Law of 7 August 2023 on legal aid only, within its recorded publisher, language, date/version and stated subject. Current amendments and eligibility in a particular proceeding remain open.",
+        "This accepts the external link only; it does not accept the saved conversion, establish topic adequacy, or complete Luxembourg’s review.",
+        "No copying or republication permission is inferred."
+      ],
+      "evidence": {
+        "official_source_url": "https://legilux.public.lu/eli/etat/leg/loi/2023/08/07/a542/jo",
+        "verified_content": "Official ELI identifies the 2023 legal-aid law, Mémorial A542.",
+        "source_record_note": "Current amendments and eligibility in a particular proceeding remain open.",
+        "retrieval_status": "not_retrieved_link_review_only"
+      },
+      "local_copy_accepted": false
+    },
+    {
+      "source_id": "lu-45",
+      "title": "Law of 7 November 1996 on the organisation of administrative courts, consolidation applicable 16 September 2025",
+      "url": "https://legilux.public.lu/eli/etat/leg/loi/1996/11/07/n1/consolide/20250916",
+      "publisher": "legilux.public.lu",
+      "language": "fr",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Consolidation applicable 2025-09-16; later changes should be checked only if material.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-45"
+      },
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Use the official external reference for Law of 7 November 1996 on the organisation of administrative courts, consolidation applicable 16 September 2025 only, within its recorded publisher, language, date/version and stated subject. Dated government working text with Legilux documentary/no-legal-force caveat.",
+      "reviewed_content": "Official 1996 court-organization consolidation dated 2025-09-16 identified.",
+      "limitations": [
+        "Use the official external reference for Law of 7 November 1996 on the organisation of administrative courts, consolidation applicable 16 September 2025 only, within its recorded publisher, language, date/version and stated subject. Dated government working text with Legilux documentary/no-legal-force caveat.",
+        "This accepts the external link only; it does not accept the saved conversion, establish topic adequacy, or complete Luxembourg’s review.",
+        "No copying or republication permission is inferred."
+      ],
+      "evidence": {
+        "official_source_url": "https://legilux.public.lu/eli/etat/leg/loi/1996/11/07/n1/consolide/20250916",
+        "verified_content": "Official 1996 court-organization consolidation dated 2025-09-16 identified.",
+        "source_record_note": "Dated government working text with Legilux documentary/no-legal-force caveat.",
+        "retrieval_status": "not_retrieved_link_review_only"
+      },
+      "local_copy_accepted": false
+    },
+    {
+      "source_id": "lu-47",
+      "title": "Law of 22 August 2003 instituting an Ombudsman",
+      "url": "https://legilux.public.lu/eli/etat/leg/loi/2003/08/22/n1/jo",
+      "publisher": "legilux.public.lu",
+      "language": "fr",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Original act; check status against Bill 8764 before current-law reliance.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-47"
+      },
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Use the official external reference for Law of 22 August 2003 instituting an Ombudsman only, within its recorded publisher, language, date/version and stated subject. Original act only; Bill 8764 may change this framework.",
+      "reviewed_content": "Official ELI identifies the 2003 Ombudsman law.",
+      "limitations": [
+        "Use the official external reference for Law of 22 August 2003 instituting an Ombudsman only, within its recorded publisher, language, date/version and stated subject. Original act only; Bill 8764 may change this framework.",
+        "This accepts the external link only; it does not accept the saved conversion, establish topic adequacy, or complete Luxembourg’s review.",
+        "No copying or republication permission is inferred."
+      ],
+      "evidence": {
+        "official_source_url": "https://legilux.public.lu/eli/etat/leg/loi/2003/08/22/n1/jo",
+        "verified_content": "Official ELI identifies the 2003 Ombudsman law.",
+        "source_record_note": "Original act only; Bill 8764 may change this framework.",
+        "retrieval_status": "not_retrieved_link_review_only"
+      },
+      "local_copy_accepted": false
+    },
+    {
+      "source_id": "lu-48",
+      "title": "Bill 8694: proposal to create an asylum and immigration tribunal",
+      "url": "https://www.chd.lu/fr/dossier/8694",
+      "publisher": "chd.lu",
+      "language": "fr",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Proposal status displayed En commission; last update 2026-07-10; not enacted as of 2026-10-21.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-48"
+      },
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Use the official external reference for Bill 8694: proposal to create an asylum and immigration tribunal only, within its recorded publisher, language, date/version and stated subject. Proposal only, not enacted law.",
+      "reviewed_content": "Chamber dossier showed Bill 8694 as En commission, updated 2026-07-10.",
+      "limitations": [
+        "Use the official external reference for Bill 8694: proposal to create an asylum and immigration tribunal only, within its recorded publisher, language, date/version and stated subject. Proposal only, not enacted law.",
+        "This accepts the external link only; it does not accept the saved conversion, establish topic adequacy, or complete Luxembourg’s review.",
+        "No copying or republication permission is inferred."
+      ],
+      "evidence": {
+        "official_source_url": "https://www.chd.lu/fr/dossier/8694",
+        "verified_content": "Chamber dossier showed Bill 8694 as En commission, updated 2026-07-10.",
+        "source_record_note": "Proposal only, not enacted law.",
+        "retrieval_status": "not_retrieved_link_review_only"
+      },
+      "local_copy_accepted": false
+    },
+    {
+      "source_id": "lu-49",
+      "title": "Bill 8764: proposed reform of the Ombudsman and related oversight bodies",
+      "url": "https://legilux.public.lu/eli/dl/ppl/2026/268",
+      "publisher": "legilux.public.lu",
+      "language": "fr",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Draft bill; latest modification shown 2026-09-29; not enacted as of 2026-10-21.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-49"
+      },
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Use the official external reference for Bill 8764: proposed reform of the Ombudsman and related oversight bodies only, within its recorded publisher, language, date/version and stated subject. Proposal only, not enacted law.",
+      "reviewed_content": "Official 2026 draft-bill record and linked dossier 8764 identified.",
+      "limitations": [
+        "Use the official external reference for Bill 8764: proposed reform of the Ombudsman and related oversight bodies only, within its recorded publisher, language, date/version and stated subject. Proposal only, not enacted law.",
+        "This accepts the external link only; it does not accept the saved conversion, establish topic adequacy, or complete Luxembourg’s review.",
+        "No copying or republication permission is inferred."
+      ],
+      "evidence": {
+        "official_source_url": "https://legilux.public.lu/eli/dl/ppl/2026/268",
+        "verified_content": "Official 2026 draft-bill record and linked dossier 8764 identified.",
+        "source_record_note": "Proposal only, not enacted law.",
+        "retrieval_status": "not_retrieved_link_review_only"
+      },
+      "local_copy_accepted": false
+    }
+  ],
+  "pending_references": [
+    {
+      "source_id": "lu-11",
+      "title": "EU/EEA/Swiss citizen residence and work over three months",
+      "url": "https://guichet.public.lu/content/guichet/en/citoyens/immigration/plus-3-mois/citoyen-UE/conditions-entree/sejour-travail.html",
+      "publisher": "guichet.public.lu",
+      "language": "en",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Observed 2026-10-18; page date and linked forms need capture during runtime.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-11"
+      },
+      "decision": "pending_human_review",
+      "reason": "The old page route and current service text need rediscovery from the current parent page; offer the whole Guichet site for human review.",
+      "whole_site_review_url": "https://guichet.public.lu/en/"
+    },
+    {
+      "source_id": "lu-14",
+      "title": "Short stay of a third-country family member of an EU citizen",
+      "url": "https://guichet.public.lu/en/citoyens/immigration/visite/loisir/union-euro/sejour-travail-membre-famille.html",
+      "publisher": "guichet.public.lu",
+      "language": "en",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Page last updated 1 October 2026.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-14"
+      },
+      "decision": "pending_human_review",
+      "reason": "Current wording and relation to the general visa page were not rechecked; offer the whole Guichet immigration site for human review.",
+      "whole_site_review_url": "https://guichet.public.lu/en/"
+    },
+    {
+      "source_id": "lu-21",
+      "title": "MAEE list of nationalities whose citizens require a visa",
+      "url": "https://maee.gouvernement.lu/dam-assets/services-aux-citoyens/visa-et-immigration/list-of-countries-whose-citizens-require-a-visa.pdf",
+      "publisher": "maee.gouvernement.lu",
+      "language": "en",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Search-visible PDF has no reliable version date in the URL; same PDF content appears in French and English.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-21"
+      },
+      "decision": "pending_human_review",
+      "reason": "This official nationality PDF has no clear version date; currentness from its ministry parent page needs review. Offer the whole MAEE site.",
+      "whole_site_review_url": "https://mae.gouvernement.lu/"
+    },
+    {
+      "source_id": "lu-22",
+      "title": "MAEE list of nationalities exempt from short-stay visa",
+      "url": "https://maee.gouvernement.lu/content/dam/gouv_maee/services-aux-citoyens/visa-et-immigration/liste-des-pays-non-soumis-a-l-obligation-de-visa.pdf",
+      "publisher": "maee.gouvernement.lu",
+      "language": "en",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "File path is mutable and provides no explicit version identifier.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-22"
+      },
+      "decision": "pending_human_review",
+      "reason": "The exemption-list PDF route/current content was not verified during this review. Offer the whole MAEE site.",
+      "whole_site_review_url": "https://mae.gouvernement.lu/"
+    },
+    {
+      "source_id": "lu-25",
+      "title": "Administrative procedure and appeal of administrative decisions guidance",
+      "url": "https://guichet.public.lu/en/citoyens/justice/voies-recours-reglement-litiges/recours-administratifs-judiciaires/recours-decision-administrative.html",
+      "publisher": "guichet.public.lu",
+      "language": "en",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Last updated 26 April 2023.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-25"
+      },
+      "decision": "pending_human_review",
+      "reason": "Official remedy guidance is dated and current legal scope was not rechecked; offer the whole Guichet site.",
+      "whole_site_review_url": "https://guichet.public.lu/en/"
+    },
+    {
+      "source_id": "lu-26",
+      "title": "Bringing an appeal before the administrative courts",
+      "url": "https://guichet.public.lu/en/citoyens/justice/voies-recours-reglement-litiges/recours-administratifs-judiciaires/recours-administratifs.html",
+      "publisher": "guichet.public.lu",
+      "language": "en",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Last updated 24 April 2023.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-26"
+      },
+      "decision": "pending_human_review",
+      "reason": "Official court-appeal guidance is dated and current deadlines/scope were not rechecked; offer the whole Guichet site.",
+      "whole_site_review_url": "https://guichet.public.lu/en/"
+    },
+    {
+      "source_id": "lu-27",
+      "title": "Law of 21 June 1999 on procedure before administrative courts, consolidation applicable 16 September 2023",
+      "url": "https://legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/consolide/20230916",
+      "publisher": "legilux.public.lu",
+      "language": "fr",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Consolidation date 2023-09-16 is known; newer applicable version not established in this tranche.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-27"
+      },
+      "decision": "pending_human_review",
+      "reason": "The dated official consolidation is 2023-09-16; later currentness was not established. Offer Legilux for review and use only as a dated text.",
+      "whole_site_review_url": "https://legilux.public.lu/"
+    },
+    {
+      "source_id": "lu-28",
+      "title": "Requesting a document from a government administration",
+      "url": "https://guichet.public.lu/en/citoyens/justice/archives-documents-administratifs/informations-detenues-institutions/communication-document-administrations.html",
+      "publisher": "guichet.public.lu",
+      "language": "en",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Current page observed 2026-10-18; explicit update date should be captured on retrieval.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-28"
+      },
+      "decision": "pending_human_review",
+      "reason": "The access-to-records guidance and current statutory route were not rechecked; offer the whole Guichet site.",
+      "whole_site_review_url": "https://guichet.public.lu/en/"
+    },
+    {
+      "source_id": "lu-34",
+      "title": "Free legal aid eligibility and application guidance",
+      "url": "https://guichet.public.lu/en/citoyens/justice/voies-recours-reglement-litiges/frais-avocat-justice/demander-assistance-judiciaire.html",
+      "publisher": "guichet.public.lu",
+      "language": "en",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Last updated 20 November 2024; page references the 2023 legal-aid law.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-34"
+      },
+      "decision": "pending_human_review",
+      "reason": "Legal-aid guidance was last updated 2024-11-20; current forms, eligibility and scope under the 2023 law need review. Offer Guichet.",
+      "whole_site_review_url": "https://guichet.public.lu/en/"
+    },
+    {
+      "source_id": "lu-46",
+      "title": "Law of 19 June 2013 on identification and the national register of natural persons",
+      "url": "https://legilux.public.lu/eli/etat/leg/loi/2013/06/19/n3/jo",
+      "publisher": "legilux.public.lu",
+      "language": "fr",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Original promulgated act; amendments and current consolidation were not checked.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-46"
+      },
+      "decision": "pending_human_review",
+      "reason": "The identity/register law was identified but current consolidation, amendments and its role in residence procedure were not resolved. Offer Legilux and the relevant register service.",
+      "whole_site_review_url": "https://legilux.public.lu/"
+    }
+  ],
+  "not_relied_upon_references": [
+    {
+      "source_id": "lu-19",
+      "title": "Short-stay visa entry guidance",
+      "url": "https://guichet.public.lu/en/citoyens/immigration/moins-3-mois/ressortissant-tiers/entree-visa.html",
+      "publisher": "guichet.public.lu",
+      "language": "en",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "English page last updated 17 November 2025; French version shows a later update in 2026.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-19"
+      },
+      "decision": "not_relied_upon",
+      "reason": "The old candidate URL returned 404 and no current replacement for this exact source purpose was verified. Do not rely on the stale route; use current official parent pages and the whole-site review offers."
+    },
+    {
+      "source_id": "lu-20",
+      "title": "Short stay for third-country nationals",
+      "url": "https://guichet.public.lu/en/citoyens/immigration/moins-3-mois/ressortissant-tiers.html",
+      "publisher": "guichet.public.lu",
+      "language": "en",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Hub and child-page dates vary; 2026-09-07 update observed for a related short-stay page.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-20"
+      },
+      "decision": "not_relied_upon",
+      "reason": "The old candidate URL returned 404 and no current replacement for this exact source purpose was verified. Do not rely on the stale route; use current official parent pages and the whole-site review offers."
+    },
+    {
+      "source_id": "lu-42",
+      "title": "Short-stay visa refusal review guidance",
+      "url": "https://guichet.public.lu/en/citoyens/immigration/moins-3-mois/ressortissant-tiers/entree-visa.html",
+      "publisher": "guichet.public.lu",
+      "language": "en",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "English page last updated 17 November 2025; exact appeal periods and procedural changes require current law verification.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lu-42"
+      },
+      "decision": "not_relied_upon",
+      "reason": "The old candidate URL returned 404 and no current replacement for this exact source purpose was verified. Do not rely on the stale route; use current official parent pages and the whole-site review offers."
+    }
+  ],
+  "whole_site_human_review_offers": [
+    {
+      "site": "Legilux / Casemates",
+      "url": "https://legilux.public.lu/",
+      "reason": "Current editions of statutes, including the 1978 procedure and 2013 identity/register laws. Prefer available official consolidations; no broad Gazette-chain reconstruction."
+    },
+    {
+      "site": "Guichet.lu",
+      "url": "https://guichet.public.lu/en/",
+      "reason": "Current service steps, forms/attachments, remedies and replacements for stale candidate routes."
+    },
+    {
+      "site": "Ministry of Foreign and European Affairs",
+      "url": "https://mae.gouvernement.lu/",
+      "reason": "Visa nationality lists, mission-specific instructions, appointment channels, outsourcing and representation."
+    },
+    {
+      "site": "Justice portal / administrative courts",
+      "url": "https://justice.public.lu/",
+      "reason": "Current court procedure and repeatable administrative case-law discovery; the archive is not proof of corpus completeness."
+    },
+    {
+      "site": "Chamber of Deputies",
+      "url": "https://www.chd.lu/",
+      "reason": "Live status/text of Bills 8694 and 8764 before describing a proposed change as current."
+    }
+  ]
+}

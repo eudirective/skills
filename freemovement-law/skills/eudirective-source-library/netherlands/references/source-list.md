@@ -1,6 +1,6 @@
 # Netherlands source inventory (2026-10-19)
 
-**Status (19 October 2026):** all eight scoped source-list candidates have unaccepted review-candidate conversions; zero accepted. The wider 52-record monitor inventory remains discovery-only. This is not a completeness claim.
+**Historical status (19 October 2026):** this focused list records eight review-candidate conversions, all unaccepted as local copies. External-link decisions were made later in the [unified source-review manifest](source-review-manifest.json) and [acceptance register](source-acceptance.json). Use those current registers; this dated list is not a completeness claim.
 
 | Priority / evidence | Candidate | Official source | Taxonomy | Scope note |
 |---|---|---|---|---|

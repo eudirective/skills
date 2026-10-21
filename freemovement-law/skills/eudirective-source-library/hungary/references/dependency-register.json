@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "jurisdiction": "HU",
+  "review_date": "2026-10-21",
+  "dependencies": [
+    {
+      "source_id": "hu-gov-2007-113",
+      "target_id": "hu-act-2007-1",
+      "relationship": "implementing_decree",
+      "status": "verified_official_reference",
+      "evidence": "The official title identifies Decree 113/2007 as implementing Act I of 2007; the consolidated text's opening provisions cite that Act as the authorization basis.",
+      "source_reference_status": "accepted_official_reference"
+    },
+    {
+      "source_id": "hu-gov-2007-113",
+      "target_id": "CELEX 02004L0038",
+      "relationship": "EU_compliance_reference",
+      "status": "verified_citation_not_full_crosswalk",
+      "evidence": "The decree's final provision states that it serves to comply with Directive 2004/38. This does not establish an article-by-article national implementation map.",
+      "shared_core_reference": "source-library/hungary/core/eu/eu_32004l0038_HU.md"
+    },
+    {
+      "source_id": "hu-gov-2007-113",
+      "target_id": "CELEX 32009R0810",
+      "relationship": "visa_procedure_reference",
+      "status": "verified_citation",
+      "evidence": "Section 4 identifies Regulation (EC) No 810/2009 (Visa Code) for short-stay visa procedures.",
+      "shared_core_reference": "source-library/hungary/core/eu/eu_32009r0810_HU.md"
+    }
+  ],
+  "unresolved_dependency_checks": [
+    {
+      "source_id": "hu-act-2016-150",
+      "related_sources": ["hu-act-2007-1", "hu-gov-2007-113", "hu-act-2017-1"],
+      "question": "For each immigration decision type, map special administrative review provisions against the general procedure and administrative-court statutes.",
+      "status": "open"
+    },
+    {
+      "source_id": "hu-act-2010-1",
+      "related_sources": ["hu-act-2017-28", "hu-act-2007-1"],
+      "question": "Map civil-registration, private-international-law, and free-movement evidence rules for foreign civil-status records.",
+      "status": "open"
+    }
+  ]
+}

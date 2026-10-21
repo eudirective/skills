@@ -2,25 +2,26 @@
   "manifest_version": "0.2.0-candidate",
   "pack": "malta-national-source-candidates",
   "jurisdiction": "MT",
-  "inventory_research_date": "2026-10-18",
-  "scope": "Bounded discovery of Maltese legislation and reuse, EU/EEA/Swiss free movement and family routes, distinct UK Withdrawal Agreement and third-country-sponsor procedures, visa and consular practice, procedural/appeal review, public access, privacy, oversight, legal aid, civil-status evidence and court-search routes. This is not a complete inventory or legal-equivalence opinion.",
+  "inventory_research_date": "2026-10-21",
+  "scope": "Bounded issue-led review of Maltese national law and official operating sources for EU/EEA/Swiss and mobile-Maltese routes, third-country family reunification, UK Withdrawal Agreement status, visas, procedure/remedies, access to information, privacy, oversight, legal aid, civil-status evidence, and court discovery. This is not a complete inventory or legal-equivalence opinion.",
   "status": "partially_retrieved_review_candidates",
-  "retrieval_status": "47 HTML and PDF texts converted as unaccepted review candidates; 1 direct routes failed and remain individually recorded; no source accepted",
+  "retrieval_status": "47 earlier HTML/PDF responses remain unaccepted local review artifacts; one Judiciary-root capture returned HTTP 403. Seven additional official references were reviewed as links only; no new local captures were created.",
   "accepted_source_count": 0,
-  "candidate_source_count": 48,
+  "candidate_source_count": 55,
   "official_hosts": [
+    "curia.europa.eu",
     "ecourts.gov.mt",
+    "eur-lex.europa.eu",
     "foreign.gov.mt",
     "home-affairs.ec.europa.eu",
-    "idpc.org.mt",
     "identita.gov.mt",
+    "idpc.org.mt",
     "judiciary.mt",
     "legalaidmalta.gov.mt",
     "legislation.mt",
     "missions.foreign.gov.mt",
     "n-lex.europa.eu",
-    "ombudsman.org.mt",
-    "eur-lex.europa.eu"
+    "ombudsman.org.mt"
   ],
   "secondary_hosts": [],
   "comparison_seed": {
@@ -39,7 +40,7 @@
   "search_coverage": [
     {
       "source_class": "Legislation, versioning, official publication and reuse",
-      "search_outcome": "LEĠIŻLAZZJONI MALTA exposes official ELI records for S.L. 460.17, Immigration Act Cap. 217, Family Reunification S.L. 217.06, Administrative Justice Act Cap. 490 and related amendments. The current legal text route is PDF-centric. The 2025 updated Re-Use of Public Sector Information Act is identified; portal-specific reuse terms remain unresolved.",
+      "search_outcome": "LEĠIŻLAZZJONI MALTA exposes official ELI records and English PDF representations for S.L. 460.17, Immigration Act Cap. 217, Family Reunification S.L. 217.06, Administrative Justice Act Cap. 490, and Immigration Regulations S.L. 217.04. The latter was missing from the original set; its government consolidation lists amendments through Legal Notices 183 and 204 of 2026. The 2025 updated Re-Use of PSI Act is identified; item-specific reuse terms remain unresolved.",
       "official_channels": [
         "LEĠIŻLAZZJONI MALTA",
         "N-Lex",
@@ -55,11 +56,11 @@
         "en",
         "mt"
       ],
-      "coverage_limit": "No full amendment-chain audit or live PDF-byte capture/conversion. The portal shows copyright attribution to the State Advocate; no source-specific license/terms review was completed. Current ELI version, application dates, APIs/feeds, redistribution, bulk access and source page representations require runtime checks."
+      "coverage_limit": "No comprehensive legal-sufficiency review. The official current government text is usable as a link; amendment-chain reconstruction, local capture/conversion and API access are not default acceptance gates. Portal-specific rights and reproduction terms apply only if copies are retained or redistributed."
     },
     {
       "source_class": "EU/EEA/Swiss free movement, family, registration and UK Withdrawal Agreement",
-      "search_outcome": "Identità provides separate pages for EU nationals, EEA, EU family, exempt family of Maltese citizens, eResidence procedures and UK Withdrawal Agreement beneficiaries. General operational guidance groups EU/EEA/Swiss nationals, whereas the inspected 2012 amending instrument names EU and EEA EFTA scope. A standalone Swiss statutory route was not isolated.",
+      "search_outcome": "Identità provides current EU-family guidance and July 2026 F.01/F.02 forms. Both forms cite S.L. 460.17 and S.L. 217.04. S.L. 460.17 addresses Union citizens other than Maltese nationals; Identità groups EU, EEA and Swiss nationals in some pages. The guidance’s narrower dependent-family wording requires a statutory/Directive crosswalk.",
       "official_channels": [
         "Identità",
         "LEĠIŻLAZZJONI MALTA",
@@ -79,7 +80,7 @@
     },
     {
       "source_class": "Third-country family reunification, national visas and consular/mission practice",
-      "search_outcome": "S.L. 217.06 and Identità guidance establish a separate third-country-sponsor family reunification lane. Missions Malta guidance separates short-stay C visas and mission representations from Identità D visas; VFS branch and document-checklist pages provide dynamic parent indexes. A Commission Annex I file at a 2024-01 URL is referenced by an official 2025 manual.",
+      "search_outcome": "S.L. 217.06 and Identità guidance establish a distinct third-country-sponsor family reunification lane. Missions Malta guidance distinguishes Type C consular practice from Identità Type D procedure. The Visa Code and Regulation 2018/1806 remain separate EU dependencies; the latter candidate is a dated 2025 consolidation.",
       "official_channels": [
         "Identità",
         "Missions Malta",
@@ -1547,7 +1548,7 @@
     },
     {
       "id": "mt-39",
-      "title": "Regulation (EU) 2018/1806, current EUR-Lex consolidation (30 December 2025)",
+      "title": "Regulation (EU) 2018/1806, EUR-Lex consolidation dated 30 December 2025",
       "source_type": "schengen_visa_list",
       "language": "en",
       "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A02018R1806-20251230",
@@ -1559,8 +1560,8 @@
       "verification_status": "EUR-Lex identifies 30 December 2025 as the current English consolidated version and includes Regulation (EU) 2025/2441; a 2026 corrigendum surfaced in the amendment search and must be checked for language applicability.",
       "retrieval_status": "converted_review_candidate",
       "retrieval_shape": "Versioned Commission PDF",
-      "version_evidence": "English consolidated version 02018R1806-20251230. EUR-Lex marks consolidated text as documentary without legal effect; compare the authentic OJ acts and later corrigenda.",
-      "note": "Use the permanent ELI/base-act record to discover amendments and the latest consolidated version. Capture the dated CELEX PDF and update its date only after checking the official current-version link; the previous Commission Annex path under 2024-01 returned HTTP 403.",
+      "version_evidence": "English EUR-Lex consolidation 02018R1806-20251230. EUR-Lex labels consolidations as documentary; a later 2026 version/corrigendum has not been checked in this review.",
+      "note": "Use this dated official text within its cutoff; confirm the latest consolidated date and any later amendments before relying on the visa-exemption list as current.",
       "topic_ids": [
         "visa",
         "nationality",
@@ -1901,8 +1902,198 @@
       "converted_bytes": 5819,
       "content_selector": "body",
       "review_state": "changed_pending_review"
+    },
+    {
+      "id": "mt-49",
+      "title": "Identità Policy for Recognition of Foreign Public Documents, Version 2.0 (15 May 2023)",
+      "source_type": "official_document_evidence_policy",
+      "language": "en",
+      "url": "https://identita.gov.mt/public-registry-sec-page-policy-for-the-recognition-of-foreign-public-documents/",
+      "publisher_identifier": {
+        "system": "identita.gov.mt",
+        "record": "Public Registry Sec Page – Policy for the Recognition of Foreign Public Documents"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Current Identità forms link to the policy. The page displays publication date 15 May 2023, Version 2.0, and Last Update: n/a.",
+      "retrieval_status": "not_captured_official_reference_reviewed",
+      "retrieval_shape": "Official HTML policy page",
+      "version_evidence": "Version 2.0; published 2023-05-15; no later update displayed; linked from current Expatriates Unit pages/forms.",
+      "note": "Use as Identità’s displayed document-recognition policy. Check the applicable EU Regulation 2016/1191 exception and unit-specific/current instructions; the policy itself says unit-specific requirements may apply.",
+      "topic_ids": [
+        "civil_status",
+        "document_evidence",
+        "translation",
+        "apostille"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "parent_source_url": "https://identita.gov.mt/expatriates-unit-main-page/eu-nationals/eresidence-document-application/family-member/",
+      "review_state": "official_reference_reviewed_no_local_copy"
+    },
+    {
+      "id": "mt-50",
+      "title": "Identità EU-family Form F.01, July 2026 new application",
+      "source_type": "official_application_form",
+      "language": "en",
+      "url": "https://identita.gov.mt/wp-content/uploads/2026/07/eu_nat_expats_FORM-F.01.pdf",
+      "publisher_identifier": {
+        "system": "identita.gov.mt",
+        "record": "Expatriates Unit EU family member new application Form F.01"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Linked as Form F.01 from the current Identità family-member page. The PDF identifies itself as a new application and cites S.L. 460.17 and S.L. 217.04.",
+      "retrieval_status": "not_captured_official_reference_reviewed",
+      "retrieval_shape": "Official PDF application form",
+      "version_evidence": "PDF content displays version/date 06/07/2026; page count 5; parent link reviewed 2026-10-21.",
+      "note": "Use the parent-page link for the current new-application form; compare with Form F.02 renewal. Form requirements are operational instructions, not a complete statement of legal eligibility.",
+      "topic_ids": [
+        "forms",
+        "family_evidence",
+        "free_movement"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "parent_source_url": "https://identita.gov.mt/expatriates-unit-main-page/eu-nationals/eresidence-document-application/family-member/",
+      "review_state": "official_reference_reviewed_no_local_copy"
+    },
+    {
+      "id": "mt-51",
+      "title": "Immigration Regulations, S.L. 217.04, English government consolidation including 2026 amendments",
+      "source_type": "national_legislation_current_consolidation",
+      "language": "en",
+      "url": "https://legislation.mt/eli/sl/217.4/eng/pdf",
+      "publisher_identifier": {
+        "system": "legislation.mt",
+        "record": "ELI S.L. 217.04 English PDF representation"
+      },
+      "functional_relationship": "legal_dependency",
+      "verification_status": "Official LEĠIŻLAZZJONI MALTA PDF identifies S.L. 217.04 and lists amendments through Legal Notices 183 and 204 of 2026.",
+      "retrieval_status": "not_captured_official_reference_reviewed",
+      "retrieval_shape": "Official consolidated PDF representation",
+      "version_evidence": "Live government PDF reviewed 2026-10-21; title page states Legal Notices 183 and 204 of 2026 in the amendment line.",
+      "note": "Use the government-published English text as a working consolidation. It is cited alongside S.L. 460.17 by current Identità Forms F.01/F.02; map its scope and 2026 amendments before applying any particular provision.",
+      "topic_ids": [
+        "legislation",
+        "immigration",
+        "free_movement",
+        "family",
+        "legal_dependency"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "record_url": "https://legislation.mt/eli/sl/217.4/eng",
+      "review_state": "official_reference_reviewed_no_local_copy"
+    },
+    {
+      "id": "mt-52",
+      "title": "Regulation (EU) 2025/1208 on identity cards and residence documents",
+      "source_type": "eu_legal_dependency",
+      "language": "en",
+      "url": "https://eur-lex.europa.eu/eli/reg/2025/1208/oj/eng/pdf",
+      "publisher_identifier": {
+        "system": "eur-lex.europa.eu",
+        "record": "Regulation (EU) 2025/1208, Official Journal text"
+      },
+      "functional_relationship": "legal_dependency",
+      "verification_status": "Official EUR-Lex record identifies the regulation and its provisions for Union-citizen residence documents and residence cards for third-country family members; the source states the replacement timeline for non-conforming cards.",
+      "retrieval_status": "not_captured_official_reference_reviewed",
+      "retrieval_shape": "Official EU Official Journal PDF",
+      "version_evidence": "Regulation adopted 2025-06-12; published in Official Journal 2025-06-20; relevant card transition date stated as 2026-08-03.",
+      "note": "This is the successor legal instrument to Regulation 2019/1157 for the covered card-format rules. Review Malta’s current specimen/card instructions against this instrument; do not infer compliance from the existence of a residence-card service page.",
+      "topic_ids": [
+        "eu_law",
+        "residence_card",
+        "identity_document",
+        "legal_dependency"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "review_state": "official_reference_reviewed_no_local_copy"
+    },
+    {
+      "id": "mt-53",
+      "title": "CJEU, Landeshauptstadt Wiesbaden, Case C-61/22",
+      "source_type": "eu_case_law_dependency",
+      "language": "en",
+      "url": "https://curia.europa.eu/juris/documents.jsf?critereEcli=ECLI%3AEU%3AC%3A2024%3A251&language=EN",
+      "publisher_identifier": {
+        "system": "curia.europa.eu",
+        "record": "C-61/22, Landeshauptstadt Wiesbaden, ECLI:EU:C:2024:251"
+      },
+      "functional_relationship": "legal_dependency",
+      "verification_status": "Official Curia/InfoCuria case record identifies the 21 March 2024 Grand Chamber judgment and its invalidity ruling; the judgment maintained the effects of Regulation 2019/1157 until its successor entered into force.",
+      "retrieval_status": "not_captured_official_reference_reviewed",
+      "retrieval_shape": "Official EU judgment record",
+      "version_evidence": "Judgment of 21 March 2024; Case C-61/22; check the operative effect together with Regulation (EU) 2025/1208.",
+      "note": "Use the official judgment to understand the invalidity ruling and temporal effect together with Regulation (EU) 2025/1208. The judgment page is offered for human review.",
+      "topic_ids": [
+        "eu_case_law",
+        "residence_card",
+        "legal_dependency"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "review_state": "official_reference_reviewed_no_local_copy"
+    },
+    {
+      "id": "mt-54",
+      "title": "Commission notice C/2025/6217: Maltese residence-permit reference",
+      "source_type": "eu_residence_document_list",
+      "language": "en",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52025XC06217",
+      "publisher_identifier": {
+        "system": "eur-lex.europa.eu",
+        "record": "Commission notice CELEX 52025XC06217"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "The official Commission notice C/2025/6217 identifies Malta’s residence card for third-country family members of EEA nationals as “Residence Documentation”; the Type of Permit field is blank, and the remarks identify Directive 2004/38 Articles 10/20.",
+      "retrieval_status": "not_captured_official_reference_reviewed",
+      "retrieval_shape": "Official EU notice/PDF",
+      "version_evidence": "Commission notice published in the OJ on 17 November 2025; this is a dated list entry predating the Regulation (EU) 2025/1208 transition date of 3 August 2026.",
+      "note": "Use as a card-identification lead only. Verify the specimen currently issued after the 2026 transition against Regulation (EU) 2025/1208; this older list cannot establish current compliance.",
+      "topic_ids": [
+        "residence_card",
+        "eu_law",
+        "legal_dependency"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "review_state": "official_reference_reviewed_no_local_copy"
+    },
+    {
+      "id": "mt-55",
+      "title": "Visa Code, Regulation (EC) No 810/2009, EUR-Lex consolidation dated 28 June 2024",
+      "source_type": "eu_visa_law_dependency",
+      "language": "en",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02009R0810-20240628",
+      "publisher_identifier": {
+        "system": "eur-lex.europa.eu",
+        "record": "CELEX 02009R0810-20240628"
+      },
+      "functional_relationship": "legal_dependency",
+      "verification_status": "Official EUR-Lex record identifies the consolidated Visa Code text; it is a dependency for Malta’s short-stay Type C visa and consular practice.",
+      "retrieval_status": "not_captured_official_reference_reviewed",
+      "retrieval_shape": "Official EU consolidated PDF",
+      "version_evidence": "Consolidated version dated 2024-06-28; exact current consolidated version after this cutoff was not confirmed in the research client.",
+      "note": "Use only with the displayed cutoff and verify later amendments for a current issue. Keep Type C short-stay visa rules separate from Malta national Type D and EU-family facilitation rules.",
+      "topic_ids": [
+        "eu_law",
+        "visa",
+        "consular",
+        "legal_dependency"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "record_url": "https://eur-lex.europa.eu/eli/reg/2009/810/oj",
+      "review_state": "official_reference_reviewed_no_local_copy"
     }
   ],
   "retrieved_review_candidate_count": 47,
-  "converted_review_candidate_count": 47
+  "converted_review_candidate_count": 47,
+  "accepted_external_reference_count": 41,
+  "not_relied_upon_reference_count": 3,
+  "pending_external_reference_count": 11,
+  "source_acceptance_file": "references/source-acceptance.json",
+  "coverage_register": "references/coverage-register.md",
+  "dependency_register": "references/dependency-register.json"
 }

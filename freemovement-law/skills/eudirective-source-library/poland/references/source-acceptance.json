@@ -1,31 +1,46 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "jurisdiction": "PL",
   "as_of": "2026-10-21",
+  "source_review_manifest": "source-review-manifest.json",
   "required_checks": [
     "publisher_identity",
-    "current_legal_version",
-    "extraction_completeness",
-    "attachments_review",
-    "legal_classification",
-    "lawful_reuse"
+    "exact_source_identity",
+    "language_and_scope",
+    "displayed_status_or_version_cutoff",
+    "material_caveats_and_legal_classification"
   ],
-  "policy": "Accepted-source counts and per-record accepted status in the candidate manifest describe retained local artifacts only. For ordinary research, a human-reviewed official link is usable within the publisher, identity, language, date/cutoff, relevant content and limitations checked; no capture, hash, replay, conversion or copying permission is required for link use. The government-published consolidated text is preferred where available; check a specific later change only when it may materially affect the provision at issue. Local artifact acceptance does not establish topic coverage or country completion.",
+  "conditional_checks": {
+    "when_relying_on_a_linked_attachment": [
+      "confirm_attachment_identity_and_relevance",
+      "check_its_version_or_date_when_material"
+    ],
+    "when_accepting_a_retained_local_copy": [
+      "extraction_completeness_against_source",
+      "file_integrity",
+      "retention_and_reuse_terms_if_copying_or_republication_is_planned"
+    ]
+  },
+  "policy": "For ordinary research, accept a trustworthy official link when publisher, exact instrument/page, language, scope, displayed status or version/cutoff, legal classification and material caveats are clear. Prefer a government-published consolidated text. If exact identity, scope or a material currentness question cannot be established confidently, offer the whole relevant official website or portal for human review. Review linked attachments when they are relied upon. Extraction, integrity and retention/reuse checks apply only when accepting a retained local copy or planning copying/republication. API access, registration, retrieval, conversion, hashes and replay are not prerequisites for link use. Link acceptance, local-copy acceptance, topic adequacy and country completion are separate decisions.",
   "counts": {
-    "candidate_records": 54,
-    "accepted_external_references": 9,
+    "candidate_records": 63,
+    "reviewed_source_references": 63,
+    "accepted_external_references": 54,
+    "historical_reference_only": 4,
+    "not_relied_upon_or_human_review_offered": 5,
+    "remaining_candidate_records": 9,
     "accepted_local_copies": 0,
-    "remaining_candidate_records": 45,
     "accepted_topics": 0,
     "country_review_complete": false
   },
   "publisher_assessment": {
-    "publisher": "Electronic Legal Information (ELI), Poland",
-    "owner": "Chancellery of the Sejm of the Republic of Poland",
-    "decision": "Nine ELI legal-record pages are accepted for human link use within their individually stated scopes and limits. This is not acceptance of the downloaded or converted local files.",
-    "basis": "ELI is the official Polish legal information portal, and the reviewed record pages expose official publication identifiers, text and legal-status/version metadata. The latest identified government-published consolidated text is preferred; where ELI shows later amendments, the reference is expressly dated and those changes are checked only when material to the question.",
-    "limitation": "Polish-language legal references only. ELI statuses and amendment indicators are as displayed on 2026-10-21. A dated page with later amendments is not represented as a complete current consolidation. No topic or country-level completeness is asserted."
+    "publisher": "Electronic Legal Information (ELI), gov.pl ministries and agencies, MOS, UODO, RPO, NSA and Ministry of Foreign Affairs portals",
+    "owner": "Polish public authorities; legal publication records are published through ELI by the Chancellery of the Sejm",
+    "decision": "Accept clear official references within the source-specific scope recorded in source-review-manifest.json; offer whole-site review for routes whose current content or operation was not directly established.",
+    "basis": "Official ELI metadata identifies consolidated instruments, publication records, status dates and later-amendment markers. Captured official pages identify the responsible agencies and stated operational topics. The 2026 review added official ELI links for e-delivery, SIS/VIS implementation, constitutional remedies, fees, Ombudsman oversight, complaint handling, and permanent-residence forms.",
+    "limitation": "A link is not a legal conclusion. Dated consolidations with later amendments need a targeted check when material. Dynamic forms, appointments and operational pages may change. No local copy, legal topic or country-completion finding is accepted."
   },
+  "detailed_review_note": "official_reference_reviews contains selected detailed instrument reviews. source-review-manifest.json records the link decision and scope for all 63 references.",
   "official_reference_reviews": {
     "pl-06-current-2026": {
       "title": "EU citizens residence Act, consolidated announcement Dz.U. 2026 poz. 1065",
@@ -189,9 +204,151 @@
     }
   },
   "not_accepted_or_still_under_review": [
-    "All local PDFs, HTML captures and converted Markdown remain unaccepted copies even when the corresponding official link is usable.",
-    "The other 45 candidate records remain under review; this includes operational guidance, forms, mission pages, remedies, oversight, case-law search and unresolved legal texts.",
-    "The older EU-citizen residence and free-legal-aid consolidated announcements are retained as historical records and are superseded by the newer ELI records.",
-    "No source topic is declared covered and the Poland review is not complete."
-  ]
+    "All local PDFs, HTML captures and converted Markdown remain unaccepted copies, even where the matching official link is accepted.",
+    "No legal topic is accepted as adequately covered; issue and remedy crosswalks remain open.",
+    "The exact procedural effect of the ePUAP instruction on UODO SIS pages remains unresolved under the Electronic Delivery Act and special-law exceptions.",
+    "The exact current Polish residence-card specimen and the legal transition for each document class remain unverified.",
+    "Voivodeship-local procedures, mission-specific services, case-law discovery completeness and country completion remain open."
+  ],
+  "reviewed_on": "2026-10-21",
+  "status": "54_scoped_official_links_accepted; 4_historical_only; 5_routes_not_relied_on; topic_coverage_incomplete",
+  "accepted_external_reference_ids": [
+    "pl-01",
+    "pl-02",
+    "pl-03",
+    "pl-05",
+    "pl-06-current-2026",
+    "pl-07",
+    "pl-08",
+    "pl-09",
+    "pl-10",
+    "pl-11",
+    "pl-12",
+    "pl-13",
+    "pl-14",
+    "pl-15",
+    "pl-16",
+    "pl-17",
+    "pl-21",
+    "pl-22",
+    "pl-23",
+    "pl-24",
+    "pl-25",
+    "pl-27",
+    "pl-28",
+    "pl-29",
+    "pl-30",
+    "pl-31",
+    "pl-32",
+    "pl-33",
+    "pl-34",
+    "pl-35",
+    "pl-36",
+    "pl-37",
+    "pl-38",
+    "pl-40",
+    "pl-41",
+    "pl-42",
+    "pl-43",
+    "pl-44",
+    "pl-45",
+    "pl-46",
+    "pl-47",
+    "pl-48",
+    "pl-49",
+    "pl-50",
+    "pl-51-current-2026",
+    "pl-52",
+    "pl-55",
+    "pl-56",
+    "pl-58",
+    "pl-59",
+    "pl-60",
+    "pl-61",
+    "pl-62",
+    "pl-63"
+  ],
+  "historical_reference_only_ids": [
+    "pl-06",
+    "pl-18",
+    "pl-19",
+    "pl-51"
+  ],
+  "not_relied_upon_ids": [
+    "pl-04",
+    "pl-20",
+    "pl-26",
+    "pl-39",
+    "pl-57"
+  ],
+  "whole_site_human_review_offers": [
+    {
+      "site": "https://isap.sejm.gov.pl/",
+      "publisher": "Chancellery of the Sejm — ISAP",
+      "offer": "Review the legal-information catalogue if its bibliographic or historical role is needed. The listed home route returned HTTP 403 in the bounded capture; this is not evidence of publisher outage. ELI consolidated texts are the ordinary law-reference route."
+    },
+    {
+      "site": "https://mos.cudzoziemcy.gov.pl/",
+      "publisher": "Office for Foreigners — MOS",
+      "offer": "Review the EU-family residence-card guidance and specimen, current forms, collection/appointment instructions and the separate national-permit workflow. Exact pages pl-20 and pl-26 failed certificate validation in the capture; the new specimen route pl-57 returned 502 to the research client."
+    },
+    {
+      "site": "https://secure.e-konsulat.gov.pl/",
+      "publisher": "Ministry of Foreign Affairs — e-Konsulat",
+      "offer": "Review the current country-specific visa and appointment flow, required checklist, mission assignment and any outsourcing. The captured portal was a dynamic shell with no extractable source text."
+    },
+    {
+      "site": "https://www.gov.pl/web/udsc",
+      "publisher": "Office for Foreigners (UDSC)",
+      "offer": "Review current attachment versions, EU-family form scope, administrative service instructions and the competent voivodeship route. The current forms index is accepted as a parent link, not as proof that every attachment is current."
+    },
+    {
+      "site": "https://www.gov.pl/web/mswia",
+      "publisher": "Ministry of the Interior and Administration (MSWiA)",
+      "offer": "Review the live national free-movement instructions and follow the competent voivodeship links for appointment, evidence, filing and local practice."
+    },
+    {
+      "site": "https://www.gov.pl/web/dyplomacja",
+      "publisher": "Ministry of Foreign Affairs",
+      "offer": "Review country-specific visa and mission instructions, appointment channels, checklists and outsourcing arrangements."
+    },
+    {
+      "site": "https://uodo.gov.pl/",
+      "publisher": "Personal Data Protection Office (UODO)",
+      "offer": "Review the current SIS rights and submission instructions. The captured English SIS procedure page still says ePUAP is required; resolve this against current national and EU rules before relying on that channel."
+    },
+    {
+      "site": "https://orzeczenia.nsa.gov.pl/",
+      "publisher": "Supreme Administrative Court",
+      "offer": "Review the live judgment search and publication description. Search results and zero-result output are not treated as a complete case-law corpus."
+    },
+    {
+      "site": "https://bip.brpo.gov.pl/",
+      "publisher": "Commissioner for Human Rights (RPO)",
+      "offer": "Review current oversight materials and complaint guidance; selected interventions are not a complete corpus or a substitute for appeals."
+    }
+  ],
+  "evidence_cutoffs": [
+    {
+      "source_family": "ELI / Chancellery of the Sejm",
+      "evidence": "Official ELI record pages were opened on 2026-10-21 for DU/2026/3, DU/2021/1391, DU/2002/46, DU/1997/483, DU/2025/1154, DU/2024/1264 and DU/2026/1061. ELI displayed active status on the listed current records; specific status dates and later-amendment counts are recorded in the source inventory.",
+      "limit": "A specific provision’s current wording may require checking an amendment after the displayed consolidation date."
+    },
+    {
+      "source_family": "UDSC / MOS / Ministry of Foreign Affairs",
+      "evidence": "UDSC forms index and official search results for MOS pages reviewed on 2026-10-21; older captured operational pages are dated 18-19 October 2026.",
+      "limit": "The UDSC attachment index is a parent route. The exact current EU residence-card specimen was not visually reviewed; offers are made for whole-site human review."
+    },
+    {
+      "source_family": "e-Doręczenia and communication guidance",
+      "evidence": "ELI DU/2026/3 and UDSC complaint instructions reviewed with official e-Doręczenia guidance. A separate UODO SIS page still describes ePUAP.",
+      "limit": "The applicable exception and effective channel must be determined for the specific procedure under the current act and any special statute."
+    },
+    {
+      "source_family": "EU residence-document regulation and CJEU judgment",
+      "evidence": "Official EUR-Lex text for Council Regulation (EU) 2025/1208 and official Curia record for C-61/22 reviewed on 2026-10-21.",
+      "limit": "The legal rule differs for EU-citizen residence documents and third-country-family residence cards. No Polish card specimen was visually verified."
+    }
+  ],
+  "content_reuse": "No permission to copy, bulk retrieve, convert or republish is inferred from external-reference acceptance."
 }

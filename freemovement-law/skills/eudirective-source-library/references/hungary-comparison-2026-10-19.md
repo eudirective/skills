@@ -1,6 +1,6 @@
 # Hungary pack comparison
 
-Status date: 19 October 2026
+Status date: 19 October 2026; Hungary count/source update: 21 October 2026
 
 Reference pack: [`source-library/hungary/`](../hungary/README.md)
 
@@ -27,7 +27,7 @@ The same assessment rates the OIF lane **fragile** because source-specific ident
 
 ## Inventory count reconciliation
 
-The Hungary README describes 99 active retrieval records. The 18 October sustainability assessment counts 58 NJT laws plus 44 active OIF/NAIH/AJBH records (102), and reports runtime state with 99 rows against 102 active manifest entries. The public expansion ledger therefore records Hungary as a mature existing pack with an **unresolved 99-versus-102 count discrepancy**, rather than copying one total as settled.
+The 21 October review reconciles the former count difference. The manifest lists 59 legal entries (58 historical NJT records plus link-only Act I/2010) and 47 OIF/NAIH/AJBH entries. Three AJBH PDFs and three catalogue pages are excluded from retrieval, leaving 41 online updater records. The 99 saved state rows represent 58 historical NJT review captures plus those 41 online records. This is a count reconciliation only; no local copy or topic is accepted. See the updated [Hungary README](../hungary/README.md), [source-acceptance register](../hungary/references/source-acceptance.json), and [coverage register](../hungary/references/coverage-register.json).
 
 ## Comparison outcome for this expansion
 
@@ -40,4 +40,4 @@ Country work should follow the Hungary pack's provenance, identity, state, and r
 
 The public [`main` branch](https://github.com/eudirective/public-data/commit/d69d33bdb08f69e784d8a9d383d779024c38be6d) resolves to commit `d69d33bdb08f69e784d8a9d383d779024c38be6d`, which is also the local checkout `HEAD`. A recursive comparison of the live Hungary tree and the local `HEAD` found the same 168 files with identical Git blob hashes, no missing or extra paths, and no truncated API response. This supersedes the earlier six-file spot check and confirms the complete comparator tree is current at the audit commit.
 
-The Swiss implementation now combines a Fedlex RDF-to-file-store rule with bounded direct-page capture: 27 responses were saved from 28 configured records and 26 review conversions were produced. HTML outputs and Fedlex metadata pass offline replay/integrity verification; one SEM PDF conversion came from the connected Acrobat service and is hash-checked but not locally replayable. Switzerland still has only `sync` and `verify`, with discovery, general current-version resolution and repeatable PDF conversion outstanding. Hungary's NJT acquisition restrictions and its 99-versus-102 state discrepancy remain as documented above; neither is treated as a design target.
+The Swiss implementation now combines a Fedlex RDF-to-file-store rule with bounded direct-page capture: 27 responses were saved from 28 configured records and 26 review conversions were produced. HTML outputs and Fedlex metadata pass offline replay/integrity verification; one SEM PDF conversion came from the connected Acrobat service and is hash-checked but not locally replayable. Switzerland still has only `sync` and `verify`, with discovery, general current-version resolution and repeatable PDF conversion outstanding. Hungary's NJT acquisition restrictions remain; its former state-count discrepancy is reconciled by separating link-only AJBH records from the online updater set.

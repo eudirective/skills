@@ -1,0 +1,111 @@
+{
+  "schema_version": "0.1.0",
+  "jurisdiction": "Netherlands",
+  "reviewed_on": "2026-10-21",
+  "source_review_manifest": "source-review-manifest.json",
+  "status": "material_dependencies_identified; national_crosswalk_incomplete",
+  "dependencies": [
+    {
+      "dependency_id": "EU-DIR-2004-38",
+      "instrument": "Directive 2004/38/EC",
+      "official_url": "https://eur-lex.europa.eu/eli/dir/2004/38/oj",
+      "relationship": "Principal EU framework for Union citizen residence, family members, residence cards, retained/permanent residence and equal treatment.",
+      "linked_national_sources": ["nl-10", "nl-11", "nl-12", "nl-13", "nl-15", "nl-16", "nl-18", "nl-19", "nl-20", "nl-21", "nl-60"],
+      "shared_core_representation": "../core/eu/eu_32004l0038_EN.md",
+      "relevant_shared_case_law": [
+        {"case": "C-83/11 Rahman", "path": "../core/case_law/full_text/eu_62011cj0083_EN.md", "topic": "Article 3(2) facilitated family members"},
+        {"case": "C-89/17 Banger", "path": "../core/case_law/full_text/eu_62017cj0089_EN.md", "topic": "Article 3(2), mobile citizen return route and review"},
+        {"case": "C-456/12 O and B", "path": "../core/case_law/full_text/eu_62012cj0456_EN.md", "topic": "Dutch or other citizen returning after genuine residence in another Member State"},
+        {"case": "C-673/16 Coman", "path": "../core/case_law/full_text/eu_62016cj0673_EN.md", "topic": "Spouse and mobile-citizen residence"},
+        {"case": "C-127/08 Metock", "path": "../core/case_law/full_text/eu_62008cj0127_EN.md", "topic": "Family member entry and residence"}
+      ],
+      "review_state": "The relevant national provisions and guidance are identified, but the Article 2(2) / Article 3(2) category and remedy crosswalk remains open."
+    },
+    {
+      "dependency_id": "EU-EEA-AGREEMENT",
+      "instrument": "Agreement on the European Economic Area",
+      "official_url": "https://eur-lex.europa.eu/eli/agree_internation/1994/1/oj",
+      "relationship": "Provides the distinct EEA basis for Icelandic, Liechtenstein and Norwegian nationals and qualifying family members.",
+      "linked_national_sources": ["nl-15", "nl-16", "nl-18", "nl-19", "nl-20"],
+      "review_state": "IND pages group EEA nationals with EU citizens; exact treaty incorporation and any route-specific limits are not mapped."
+    },
+    {
+      "dependency_id": "EU-CH-FREE-MOVEMENT",
+      "instrument": "EU-Switzerland Agreement on the free movement of persons",
+      "official_url": "https://eur-lex.europa.eu/eli/agree_internation/2002/309/oj",
+      "relationship": "Provides a separate Swiss free-movement basis; do not treat it as an automatic application of Directive 2004/38.",
+      "linked_national_sources": ["nl-15", "nl-16", "nl-18", "nl-19", "nl-20"],
+      "review_state": "Operational IND guidance groups Swiss nationals with EU/EEA nationals; map the relevant agreement and family rights separately."
+    },
+    {
+      "dependency_id": "EU-UK-WITHDRAWAL",
+      "instrument": "EU-UK Withdrawal Agreement",
+      "official_url": "https://eur-lex.europa.eu/eli/treaty/withd_2020(1)/oj",
+      "relationship": "Separate residence status for protected Withdrawal Agreement beneficiaries; not a current general free-movement route for new UK arrivals.",
+      "linked_national_sources": ["nl-22"],
+      "review_state": "IND route identified; beneficiary dates, family scope and appeal route still need mapping."
+    },
+    {
+      "dependency_id": "EU-DIR-2003-86",
+      "instrument": "Directive 2003/86/EC on the right to family reunification",
+      "official_url": "https://eur-lex.europa.eu/eli/dir/2003/86/oj",
+      "relationship": "Relevant to ordinary third-country sponsor family reunification and distinct from Directive 2004/38.",
+      "linked_national_sources": ["nl-23", "nl-24", "nl-10", "nl-11"],
+      "review_state": "The IND routes are identified; map the national implementing rules, documentary requirements, refusal reasons and remedies separately from EU free movement."
+    },
+    {
+      "dependency_id": "EU-VISA-CODE-810-2009",
+      "instrument": "Regulation (EC) No 810/2009 (Visa Code)",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2009/810/oj",
+      "relationship": "Governs Schengen short-stay visa procedure; EU-family facilitation requires a separate decision path and applicable derogations.",
+      "linked_national_sources": ["nl-34", "nl-35", "nl-36", "nl-37", "nl-38"],
+      "shared_core_representation": "../core/eu/eu_32009r0810_EN.md",
+      "review_state": "Map the Visa Code and Directive 2004/38 family-member facilitation against mission instructions, appointment and service-fee practices. The nl-38 exact URL is not relied upon."
+    },
+    {
+      "dependency_id": "EU-PUBLIC-DOCUMENTS-2016-1191",
+      "instrument": "Regulation (EU) 2016/1191 on public documents",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/1191/oj",
+      "relationship": "Can simplify cross-border presentation of covered public documents, including civil-status documents, and restricts some apostille requirements.",
+      "linked_national_sources": ["nl-42", "nl-43", "nl-53", "nl-54", "nl-55"],
+      "review_state": "Check the covered document type, issuing EU state, multilingual form, translation, and exceptions before relying on a general legalization checklist."
+    },
+    {
+      "dependency_id": "EU-CARD-2019-1157",
+      "instrument": "Regulation (EU) 2019/1157",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2019/1157/oj",
+      "relationship": "Historical residence-card format regime; declared invalid in CJEU judgment C-61/22, with effects maintained for a limited period pending replacement.",
+      "linked_national_sources": ["nl-18", "nl-60"],
+      "successor_or_status_source": "https://curia.europa.eu/juris/documents.jsf?critereEcli=ECLI%3AEU%3AC%3A2024%3A251&language=EN",
+      "review_state": "Do not use Regulation 2019/1157 as the current standalone rule. Check the judgment's temporal effects and successor legislation."
+    },
+    {
+      "dependency_id": "EU-CARD-2025-1208",
+      "instrument": "Council Regulation (EU) 2025/1208",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2025/1208/oj",
+      "relationship": "Successor security and format rules for identity cards and residence documents issued under free-movement law; Article 8 includes transition deadlines, including 3 August 2026.",
+      "linked_national_sources": ["nl-18", "nl-30", "nl-31", "nl-60"],
+      "review_state": "The relevant transition date has passed. The IND specimen page was last updated 29 June 2026; verify current Dutch Article 10/20 card specimens and any applicable transition exception."
+    },
+    {
+      "dependency_id": "NL-BRP-IMPLEMENTATION",
+      "instrument": "Wet basisregistratie personen, Besluit basisregistratie personen, and Regeling basisregistratie personen",
+      "official_urls": [
+        "https://wetten.overheid.nl/BWBR0033715/",
+        "https://wetten.overheid.nl/BWBR0034306/",
+        "https://wetten.overheid.nl/BWBR0034327/"
+      ],
+      "relationship": "The BRP Act is implemented by the Besluit BRP and Regeling BRP; the three consolidated records are relevant to municipal registration and population-record procedures.",
+      "linked_national_sources": ["nl-16", "nl-44", "nl-56", "nl-61", "nl-62"],
+      "review_state": "The Act and two implementing rules are now identified as official consolidated links. Map their provisions to local municipal instructions, residence-duration thresholds, corrections, and registration evidence; the Regeling BRP result reviewed was dated and its live version should be checked for a specific issue."
+    },
+    {
+      "dependency_id": "EU-CHARTER-ART-47",
+      "instrument": "Charter of Fundamental Rights of the European Union, Article 47",
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12012P/TXT",
+      "relationship": "Effective judicial protection is relevant when mapping EU-law decisions and remedies, within the Charter's field of application.",
+      "linked_national_sources": ["nl-10", "nl-14", "nl-26", "nl-27", "nl-59"],
+      "review_state": "No decision-specific remedy, deadline or interim-relief crosswalk is complete."
+    }
+  ]
+}

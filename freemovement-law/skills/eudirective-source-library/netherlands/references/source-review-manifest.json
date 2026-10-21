@@ -1,0 +1,1339 @@
+{
+  "manifest_version": "0.1.0-source-review",
+  "jurisdiction": "Netherlands",
+  "review_date": "2026-10-21",
+  "scope": "Issue-led official-source link review covering all candidate classes identified to date; this is not a legal sufficiency or completeness certification.",
+  "status": "links_reviewed_topic_coverage_incomplete",
+  "source_count": 62,
+  "accepted_external_reference_count": 59,
+  "not_relied_upon_count": 3,
+  "local_copy_accepted_count": 0,
+  "topic_accepted_count": 0,
+  "country_review_complete": false,
+  "input_manifests": [
+    {
+      "path": "monitor-candidate-manifest-2026-10-18.json",
+      "records": 52,
+      "role": "wider discovery inventory"
+    },
+    {
+      "path": "candidate-manifest.json",
+      "records": 8,
+      "role": "earlier focused inventory; reconciled against the wider list"
+    }
+  ],
+  "reconciliation": {
+    "wide_candidate_count": 52,
+    "focused_candidate_count": 8,
+    "exact_or_same_source_overlaps": 5,
+    "focused_only_sources": 3,
+    "issue_led_additions": 7,
+    "unique_source_count": 62,
+    "overlap_map": {
+      "scoped Vreemdelingenbesluit 2000": "nl-11",
+      "scoped IND EU-family verification": "nl-18",
+      "scoped Vreemdelingenwet 2000": "nl-10",
+      "scoped IND objection/appeal": "nl-26",
+      "scoped Algemene wet bestuursrecht": "nl-14"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "nl-01",
+      "title": "N-Lex Netherlands national-law discovery",
+      "source_type": "national_law_discovery",
+      "language": "en",
+      "url": "https://n-lex.europa.eu/n-lex/",
+      "publisher": "n-lex.europa.eu",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official discovery, legislation, dataset, or publication entry point only. It is not a completeness claim and does not require automated copying or Gazette-chain reconstruction.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-01"
+        }
+      ],
+      "captured_version_evidence": "No candidate record or full Dutch-law coverage established in this review.",
+      "observed_resolved_url": "https://n-lex.europa.eu/n-lex/",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-02",
+      "title": "Wetten.overheid.nl official consolidated legislation portal",
+      "source_type": "official_legislation_portal",
+      "language": "nl",
+      "url": "https://wetten.overheid.nl/",
+      "publisher": "wetten.overheid.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official discovery, legislation, dataset, or publication entry point only. It is not a completeness claim and does not require automated copying or Gazette-chain reconstruction.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-02"
+        }
+      ],
+      "captured_version_evidence": "Indexed pages expose BWB identifiers, date-based versions, current-status and amendment metadata.",
+      "observed_resolved_url": "https://wetten.overheid.nl/",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-03",
+      "title": "Basis Wetten Bestand open-data dataset and SRU guide",
+      "source_type": "legislation_open_data_catalog",
+      "language": "nl",
+      "url": "https://data.overheid.nl/dataset/basis-wetten-bestand",
+      "publisher": "data.overheid.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official discovery, legislation, dataset, or publication entry point only. It is not a completeness claim and does not require automated copying or Gazette-chain reconstruction.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-03"
+        }
+      ],
+      "captured_version_evidence": "Dataset statement describes the Base Laws file; update cadence and current snapshot were not established.",
+      "observed_resolved_url": "https://data.overheid.nl/dataset/basis-wetten-bestand",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-04",
+      "title": "Officiële bekendmakingen official publications portal",
+      "source_type": "official_gazette_portal",
+      "language": "nl",
+      "url": "https://www.officielebekendmakingen.nl/",
+      "publisher": "www.officielebekendmakingen.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official discovery, legislation, dataset, or publication entry point only. It is not a completeness claim and does not require automated copying or Gazette-chain reconstruction.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-04"
+        }
+      ],
+      "captured_version_evidence": "Permanent publication identifiers and publication metadata are exposed on sample records.",
+      "observed_resolved_url": "https://www.officielebekendmakingen.nl/",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-05",
+      "title": "Staatsblad 2026, 196 sample publication record",
+      "source_type": "official_gazette_record",
+      "language": "nl",
+      "url": "https://www.officielebekendmakingen.nl/stb-2026-196",
+      "publisher": "www.officielebekendmakingen.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official discovery, legislation, dataset, or publication entry point only. It is not a completeness claim and does not require automated copying or Gazette-chain reconstruction.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-05"
+        }
+      ],
+      "captured_version_evidence": "Publication record carries date and metadata; unrelated sample, not an immigration amendment candidate.",
+      "observed_resolved_url": "https://zoek.officielebekendmakingen.nl/stb-2026-196",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-06",
+      "title": "Staatscourant 2026, 21975 sample publication record",
+      "source_type": "official_gazette_record",
+      "language": "nl",
+      "url": "https://zoek.officielebekendmakingen.nl/stcrt-2026-21975.html",
+      "publisher": "zoek.officielebekendmakingen.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official discovery, legislation, dataset, or publication entry point only. It is not a completeness claim and does not require automated copying or Gazette-chain reconstruction.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-06"
+        }
+      ],
+      "captured_version_evidence": "Sample 2026 record; relevance to specific immigration amendments not established.",
+      "observed_resolved_url": "https://zoek.officielebekendmakingen.nl/stcrt-2026-21975.html",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-07",
+      "title": "Wet hergebruik van overheidsinformatie (BWBR0036795)",
+      "source_type": "publisher_reuse_law",
+      "language": "nl",
+      "url": "https://wetten.overheid.nl/BWBR0036795/",
+      "publisher": "wetten.overheid.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official Wetten.nl record for Wet hergebruik van overheidsinformatie (BWBR0036795); use the publisher's current consolidated version and displayed effective date. Gazette amendment-chain reconstruction is not required by default.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-07"
+        }
+      ],
+      "captured_version_evidence": "Indexed result reported text current from 21 November 2025; related provisions address reuse and machine-readable formats.",
+      "observed_resolved_url": "https://wetten.overheid.nl/BWBR0036795/2025-11-21",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-08",
+      "title": "Wet open overheid (BWBR0045754)",
+      "source_type": "public_access_legislation",
+      "language": "nl",
+      "url": "https://wetten.overheid.nl/BWBR0045754/",
+      "publisher": "wetten.overheid.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official Wetten.nl record for Wet open overheid (BWBR0045754); use the publisher's current consolidated version and displayed effective date. Gazette amendment-chain reconstruction is not required by default.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-08"
+        }
+      ],
+      "captured_version_evidence": "Indexed record reported current from 20 February 2026, with undated amendments noted.",
+      "observed_resolved_url": "https://wetten.overheid.nl/BWBR0045754/2026-08-15",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-09",
+      "title": "Regeling elektronische publicaties (BWBR0045086)",
+      "source_type": "electronic_publication_legislation",
+      "language": "nl",
+      "url": "https://wetten.overheid.nl/BWBR0045086/",
+      "publisher": "wetten.overheid.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official Wetten.nl record for Regeling elektronische publicaties (BWBR0045086); use the publisher's current consolidated version and displayed effective date. Gazette amendment-chain reconstruction is not required by default.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-09"
+        }
+      ],
+      "captured_version_evidence": "Indexed result reports version current from 1 January 2026 and XML/publication standards references.",
+      "observed_resolved_url": "https://wetten.overheid.nl/BWBR0045086/2026-01-01",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-10",
+      "title": "Vreemdelingenwet 2000 (BWBR0011823)",
+      "source_type": "immigration_primary_legislation",
+      "language": "nl",
+      "url": "https://wetten.overheid.nl/BWBR0011823/",
+      "publisher": "wetten.overheid.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official Wetten.nl record for Vreemdelingenwet 2000 (BWBR0011823); use the publisher's current consolidated version and displayed effective date. Gazette amendment-chain reconstruction is not required by default.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-10"
+        },
+        {
+          "manifest": "candidate-manifest.json",
+          "id": "nl-06-vreemdelingenwet-2000"
+        }
+      ],
+      "captured_version_evidence": "An indexed record inspected in April 2026 reported a version current from 28 February 2026 plus future/undated changes; October text is not confirmed.",
+      "observed_resolved_url": "https://wetten.overheid.nl/BWBR0011823/2026-09-01",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-11",
+      "title": "Vreemdelingenbesluit 2000 (BWBR0011825)",
+      "source_type": "immigration_implementing_regulation",
+      "language": "nl",
+      "url": "https://wetten.overheid.nl/BWBR0011825/",
+      "publisher": "wetten.overheid.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official Wetten.nl record for Vreemdelingenbesluit 2000 (BWBR0011825); use the publisher's current consolidated version and displayed effective date. Gazette amendment-chain reconstruction is not required by default.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-11"
+        },
+        {
+          "manifest": "candidate-manifest.json",
+          "id": "nl-01-vreemdelingenbesluit-2000-eu-eea-family-provisions-(including-article-8.7)"
+        }
+      ],
+      "captured_version_evidence": "An indexed result crawled about five months before this review showed a version from 1 January 2026 and Article 8.7 provisions referenced by IND; October text is not confirmed.",
+      "observed_resolved_url": "https://wetten.overheid.nl/BWBR0011825/2026-09-25",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-12",
+      "title": "Voorschrift Vreemdelingen 2000 (BWBR0012002)",
+      "source_type": "immigration_implementing_rule",
+      "language": "nl",
+      "url": "https://wetten.overheid.nl/BWBR0012002/",
+      "publisher": "wetten.overheid.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official Wetten.nl record for Voorschrift Vreemdelingen 2000 (BWBR0012002); use the publisher's current consolidated version and displayed effective date. Gazette amendment-chain reconstruction is not required by default.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-12"
+        }
+      ],
+      "captured_version_evidence": "An indexed result inspected in April 2026 reported effect from 1 April 2026 and a future change from 1 June 2026; October state is unconfirmed.",
+      "observed_resolved_url": "https://wetten.overheid.nl/BWBR0012002/2026-07-01",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-13",
+      "title": "Vreemdelingencirculaire 2000 (C) (BWBR0012288)",
+      "source_type": "immigration_policy_circular",
+      "language": "nl",
+      "url": "https://wetten.overheid.nl/BWBR0012288/",
+      "publisher": "wetten.overheid.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official Wetten.nl record for Vreemdelingencirculaire 2000 (C) (BWBR0012288); use the publisher's current consolidated version and displayed effective date. Gazette amendment-chain reconstruction is not required by default.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-13"
+        }
+      ],
+      "captured_version_evidence": "An indexed result inspected in April 2026 reported the text current from 4 April 2026; IND points EU citizens to section B10/2. October text is not confirmed.",
+      "observed_resolved_url": "https://wetten.overheid.nl/BWBR0012288/2026-10-01",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-14",
+      "title": "Algemene wet bestuursrecht (BWBR0005537)",
+      "source_type": "administrative_procedure_legislation",
+      "language": "nl",
+      "url": "https://wetten.overheid.nl/BWBR0005537/",
+      "publisher": "wetten.overheid.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official Wetten.nl record for Algemene wet bestuursrecht (BWBR0005537); use the publisher's current consolidated version and displayed effective date. Gazette amendment-chain reconstruction is not required by default.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-14"
+        },
+        {
+          "manifest": "candidate-manifest.json",
+          "id": "nl-08-algemene-wet-bestuursrecht-(general-administrative-law-act)"
+        }
+      ],
+      "captured_version_evidence": "Indexed record reported current from 1 January 2026 and future changes from 2027.",
+      "observed_resolved_url": "https://wetten.overheid.nl/BWBR0005537/2026-08-15",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-15",
+      "title": "IND EU, EEA or Swiss citizens parent hub",
+      "source_type": "official_residence_guidance_index",
+      "language": "en",
+      "url": "https://ind.nl/en/residence-permits/eu-eea-or-swiss-citizens",
+      "publisher": "ind.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official IND guidance, service, fee, threshold, or form link for the stated subject; check its current displayed version/date and linked legal route before applying a requirement.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-15"
+        }
+      ],
+      "captured_version_evidence": "Current hub links separate stay, family, Dutch-return, permanent-residence, UK agreement and registration pages.",
+      "observed_resolved_url": "https://ind.nl/en/residence-permits/eu-eea-or-swiss-citizens",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-16",
+      "title": "Staying in the Netherlands as an EU, EEA or Swiss citizen",
+      "source_type": "free_movement_guidance",
+      "language": "en",
+      "url": "https://ind.nl/en/residence-permits/eu-eea-or-swiss-citizens/staying-in-the-netherlands-as-an-eu-eea-or-swiss-citizen",
+      "publisher": "ind.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official IND guidance, service, fee, threshold, or form link for the stated subject; check its current displayed version/date and linked legal route before applying a requirement.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-16"
+        }
+      ],
+      "captured_version_evidence": "Last updated 10 July 2026; cites Aliens Decree Articles 8.7, 8.11 and 8.12 and Circular B10/2.",
+      "observed_resolved_url": "https://ind.nl/en/residence-permits/eu-eea-or-swiss-citizens/staying-in-the-netherlands-as-an-eu-eea-or-swiss-citizen",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-17",
+      "title": "Registering with the IND as an EU, EEA or Swiss citizen",
+      "source_type": "free_movement_registration_guidance",
+      "language": "en",
+      "url": "https://ind.nl/en/residence-permits/eu-eea-or-swiss-citizens/registering-with-the-ind-as-an-eu-eea-or-swiss-citizen",
+      "publisher": "ind.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official IND guidance, service, fee, threshold, or form link for the stated subject; check its current displayed version/date and linked legal route before applying a requirement.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-17"
+        }
+      ],
+      "captured_version_evidence": "Last updated 17 June 2026; cites Aliens Decree Articles 8.7, 8.8, 8.11 and 8.12 and Circular B10/2.",
+      "observed_resolved_url": "https://ind.nl/en/residence-permits/eu-eea-or-swiss-citizens/registering-with-the-ind-as-an-eu-eea-or-swiss-citizen",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-18",
+      "title": "Verification against EU law for Union citizen family members",
+      "source_type": "eu_family_residence_guidance",
+      "language": "en",
+      "url": "https://ind.nl/en/residence-permits/family-and-partner/verification-against-eu-law-for-union-citizen-family-members",
+      "publisher": "ind.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official IND guidance, service, fee, threshold, or form link for the stated subject; check its current displayed version/date and linked legal route before applying a requirement.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-18"
+        },
+        {
+          "manifest": "candidate-manifest.json",
+          "id": "nl-02-ind-procedure:-verification-against-eu-law-for-family-members-of-union-citi"
+        }
+      ],
+      "captured_version_evidence": "Last updated 25 September 2026; cites Aliens Decree Articles 8.7, 8.9, 8.13 and Circular B10/2.",
+      "observed_resolved_url": "https://ind.nl/en/residence-permits/family-and-partner/verification-against-eu-law-for-union-citizen-family-members",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-19",
+      "title": "Returning with a Dutch national from another EU/EEA country or Switzerland",
+      "source_type": "mobile_national_family_guidance",
+      "language": "en",
+      "url": "https://ind.nl/en/residence-permits/eu-eea-or-swiss-citizens/returning-with-a-dutch-national-from-another-eueea-country-or-switzerland",
+      "publisher": "ind.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official IND guidance, service, fee, threshold, or form link for the stated subject; check its current displayed version/date and linked legal route before applying a requirement.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-19"
+        }
+      ],
+      "captured_version_evidence": "Last updated 7 October 2026; describes EU-law return conditions and separately the pre-cutoff UK route.",
+      "observed_resolved_url": "https://ind.nl/en/residence-permits/eu-eea-or-swiss-citizens/returning-with-a-dutch-national-from-another-eueea-country-or-switzerland",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-20",
+      "title": "Permanent residency for Union citizens and their family",
+      "source_type": "permanent_free_movement_guidance",
+      "language": "en",
+      "url": "https://ind.nl/en/residence-permits/eu-eea-or-swiss-citizens/permanent-residency-for-union-citizens-and-their-family",
+      "publisher": "ind.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official IND guidance, service, fee, threshold, or form link for the stated subject; check its current displayed version/date and linked legal route before applying a requirement.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-20"
+        }
+      ],
+      "captured_version_evidence": "Last updated 20 May 2026; includes EU/EEA/Swiss citizens, family members and qualifying Dutch-family cases.",
+      "observed_resolved_url": "https://ind.nl/en/residence-permits/eu-eea-or-swiss-citizens/permanent-residency-for-union-citizens-and-their-family",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-21",
+      "title": "Staying in the Netherlands if situation with the EU citizen has changed",
+      "source_type": "retained_family_residence_guidance",
+      "language": "en",
+      "url": "https://ind.nl/en/replace-extend-renew-and-change/change/staying-in-the-netherlands-if-your-situation-with-the-eu-citizen-has-changed",
+      "publisher": "ind.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official IND guidance, service, fee, threshold, or form link for the stated subject; check its current displayed version/date and linked legal route before applying a requirement.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-21"
+        }
+      ],
+      "captured_version_evidence": "Last updated 19 June 2026; cites Aliens Decree Articles 8.14 and 8.15 and Directive 2004/38 Articles 12 and 13.",
+      "observed_resolved_url": "https://ind.nl/en/replace-extend-renew-and-change/change/staying-in-the-netherlands-if-your-situation-with-the-eu-citizen-has-changed",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-22",
+      "title": "Temporary residency based on Brexit Withdrawal Agreement",
+      "source_type": "withdrawal_agreement_guidance",
+      "language": "en",
+      "url": "https://ind.nl/en/residence-permits/withdrawal-agreement-brexit/temporary-residency-based-on-withdrawal-agreement",
+      "publisher": "ind.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official IND guidance, service, fee, threshold, or form link for the stated subject; check its current displayed version/date and linked legal route before applying a requirement.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-22"
+        }
+      ],
+      "captured_version_evidence": "Last updated 20 May 2026; describes residence/family criteria tied to pre-2021 facts.",
+      "observed_resolved_url": "https://ind.nl/en/residence-permits/withdrawal-agreement-brexit/temporary-residency-based-on-withdrawal-agreement",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-23",
+      "title": "Residence permit for partner (ordinary third-country route)",
+      "source_type": "third_country_family_residence_guidance",
+      "language": "en",
+      "url": "https://ind.nl/en/residence-permits/family-and-partner/residence-permit-for-partner",
+      "publisher": "ind.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official IND guidance, service, fee, threshold, or form link for the stated subject; check its current displayed version/date and linked legal route before applying a requirement.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-23"
+        }
+      ],
+      "captured_version_evidence": "Current page result observed 18 October 2026; visible update date not captured.",
+      "observed_resolved_url": "https://ind.nl/en/residence-permits/family-and-partner/residence-permit-for-partner",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-24",
+      "title": "Residence permit for minor child to stay with parent",
+      "source_type": "third_country_child_residence_guidance",
+      "language": "en",
+      "url": "https://ind.nl/en/residence-permits/family-and-partner/residence-permit-for-minor-child-to-stay-with-parent",
+      "publisher": "ind.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official IND guidance, service, fee, threshold, or form link for the stated subject; check its current displayed version/date and linked legal route before applying a requirement.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-24"
+        }
+      ],
+      "captured_version_evidence": "Parent hub reviewed 18 October 2026; child page date not captured.",
+      "observed_resolved_url": "https://ind.nl/en/residence-permits/family-and-partner/residence-permit-for-minor-child-to-stay-with-parent",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-25",
+      "title": "Residence with your minor Dutch child (Chavez)",
+      "source_type": "minor_dutch_child_residence_guidance",
+      "language": "en",
+      "url": "https://ind.nl/en/residence-permits/family-and-partner/residence-with-your-minor-dutch-child-chavez",
+      "publisher": "ind.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official IND guidance, service, fee, threshold, or form link for the stated subject; check its current displayed version/date and linked legal route before applying a requirement.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-25"
+        }
+      ],
+      "captured_version_evidence": "Last updated 12 October 2026; cites family/dependency conditions and separate application forms.",
+      "observed_resolved_url": "https://ind.nl/en/residence-permits/family-and-partner/residence-with-your-minor-dutch-child-chavez",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-26",
+      "title": "Object to or appeal an IND decision",
+      "source_type": "administrative_remedy_guidance",
+      "language": "en",
+      "url": "https://ind.nl/en/after-your-application/object-to-or-appeal-decision",
+      "publisher": "ind.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official IND guidance, service, fee, threshold, or form link for the stated subject; check its current displayed version/date and linked legal route before applying a requirement.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-26"
+        },
+        {
+          "manifest": "candidate-manifest.json",
+          "id": "nl-07-ind-guidance-on-objecting-to-or-appealing-an-ind-decision"
+        }
+      ],
+      "captured_version_evidence": "Last updated 10 August 2026; page lists decision categories and separates objection from court appeal.",
+      "observed_resolved_url": "https://ind.nl/en/after-your-application/object-to-or-appeal-decision",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-27",
+      "title": "IND decision periods",
+      "source_type": "administrative_deadline_guidance",
+      "language": "en",
+      "url": "https://ind.nl/en/after-your-application/decision-periods",
+      "publisher": "ind.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official IND guidance, service, fee, threshold, or form link for the stated subject; check its current displayed version/date and linked legal route before applying a requirement.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-27"
+        }
+      ],
+      "captured_version_evidence": "Current page distinguishes EU-verification and other procedure deadlines; page-level last update not captured.",
+      "observed_resolved_url": "https://ind.nl/en/after-your-application/decision-periods",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-28",
+      "title": "IND application fees",
+      "source_type": "official_fee_schedule",
+      "language": "en",
+      "url": "https://ind.nl/en/fees-costs-of-an-application",
+      "publisher": "ind.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official IND guidance, service, fee, threshold, or form link for the stated subject; check its current displayed version/date and linked legal route before applying a requirement.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-28"
+        }
+      ],
+      "captured_version_evidence": "Fees are mutable; verify date bands and fee categories at runtime.",
+      "observed_resolved_url": "https://ind.nl/en/fees-costs-of-an-application",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-29",
+      "title": "IND required amounts and income thresholds",
+      "source_type": "official_income_thresholds",
+      "language": "en",
+      "url": "https://ind.nl/en/required-amounts-income-requirements",
+      "publisher": "ind.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official IND guidance, service, fee, threshold, or form link for the stated subject; check its current displayed version/date and linked legal route before applying a requirement.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-29"
+        }
+      ],
+      "captured_version_evidence": "Indexed page states amounts valid 1 July through 31 December 2026.",
+      "observed_resolved_url": "https://ind.nl/en/required-amounts-income-requirements",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-30",
+      "title": "IND form B10001E: EU family-member partner or child",
+      "source_type": "official_application_form",
+      "language": "en",
+      "url": "https://ind.nl/en/forms/b10001e.pdf",
+      "publisher": "ind.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official IND guidance, service, fee, threshold, or form link for the stated subject; check its current displayed version/date and linked legal route before applying a requirement.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-30"
+        }
+      ],
+      "captured_version_evidence": "IND EU-family page links B10001E; PDF bytes, date and version metadata not captured.",
+      "observed_resolved_url": "https://ind.nl/en/forms/b10001e.pdf",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-31",
+      "title": "IND form B10002E: other EU family member",
+      "source_type": "official_application_form",
+      "language": "en",
+      "url": "https://ind.nl/en/forms/b10002e.pdf",
+      "publisher": "ind.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official IND guidance, service, fee, threshold, or form link for the stated subject; check its current displayed version/date and linked legal route before applying a requirement.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-31"
+        }
+      ],
+      "captured_version_evidence": "IND EU-family page links B10002E; PDF bytes, date and version metadata not captured.",
+      "observed_resolved_url": "https://ind.nl/en/forms/b10002e.pdf",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-32",
+      "title": "IND form B10006E: follow-up after residence with EU family member",
+      "source_type": "official_application_form",
+      "language": "en",
+      "url": "https://ind.nl/en/forms/b10006e.pdf",
+      "publisher": "ind.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official IND guidance, service, fee, threshold, or form link for the stated subject; check its current displayed version/date and linked legal route before applying a requirement.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-32"
+        }
+      ],
+      "captured_version_evidence": "Indexed document published around four months before research date; exact revision metadata not captured.",
+      "observed_resolved_url": "https://ind.nl/en/forms/b10006e.pdf",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-33",
+      "title": "IND form 8004: permanent residence document for Union nationals and family",
+      "source_type": "official_application_form",
+      "language": "en",
+      "url": "https://ind.nl/en/forms/8004.pdf",
+      "publisher": "ind.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official IND guidance, service, fee, threshold, or form link for the stated subject; check its current displayed version/date and linked legal route before applying a requirement.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-33"
+        }
+      ],
+      "captured_version_evidence": "Page lists the form; PDF revision and exact bytes not captured.",
+      "observed_resolved_url": "https://ind.nl/en/forms/8004.pdf",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-34",
+      "title": "NetherlandsWorldwide Schengen visa checklist for EU/EEA/Swiss family",
+      "source_type": "visa_family_checklist",
+      "language": "en",
+      "url": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-family-member-eu-eea",
+      "publisher": "www.netherlandsworldwide.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official NetherlandsWorldwide operational guidance or route; use its current displayed instructions and keep EU-law visa facilitation distinct from ordinary Schengen visa processing.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-34"
+        }
+      ],
+      "captured_version_evidence": "Current indexed checklist has no captured last-updated date; country selection drives application location details.",
+      "observed_resolved_url": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-family-member-eu-eea",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-35",
+      "title": "NetherlandsWorldwide visa facilitation for EU/EEA/Swiss family members",
+      "source_type": "visa_facilitation_guidance",
+      "language": "en",
+      "url": "https://www.netherlandsworldwide.nl/visa-the-netherlands/visa-facilitation-family-members-eu-eea",
+      "publisher": "www.netherlandsworldwide.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official NetherlandsWorldwide operational guidance or route; use its current displayed instructions and keep EU-law visa facilitation distinct from ordinary Schengen visa processing.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-35"
+        }
+      ],
+      "captured_version_evidence": "No visible page update date captured.",
+      "observed_resolved_url": "https://www.netherlandsworldwide.nl/visa-the-netherlands/visa-facilitation-family-members-eu-eea",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-36",
+      "title": "NetherlandsWorldwide visa facilitation for family of Dutch nationals",
+      "source_type": "mobile_national_visa_guidance",
+      "language": "en",
+      "url": "https://www.netherlandsworldwide.nl/visa-the-netherlands/visa-facilitation-family-member-nl",
+      "publisher": "www.netherlandsworldwide.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official NetherlandsWorldwide operational guidance or route; use its current displayed instructions and keep EU-law visa facilitation distinct from ordinary Schengen visa processing.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-36"
+        }
+      ],
+      "captured_version_evidence": "No visible page update date captured.",
+      "observed_resolved_url": "https://www.netherlandsworldwide.nl/visa-the-netherlands/visa-facilitation-family-member-nl",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-37",
+      "title": "Where to apply for a Netherlands visa",
+      "source_type": "consular_location_finder",
+      "language": "en",
+      "url": "https://www.netherlandsworldwide.nl/visa-the-netherlands/where-to-apply",
+      "publisher": "www.netherlandsworldwide.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official NetherlandsWorldwide operational guidance or route; use its current displayed instructions and keep EU-law visa facilitation distinct from ordinary Schengen visa processing.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-37"
+        }
+      ],
+      "captured_version_evidence": "Application locations depend on country and representation arrangement; no static complete snapshot captured.",
+      "observed_resolved_url": "https://www.netherlandsworldwide.nl/visa-the-netherlands/where-to-apply",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-38",
+      "title": "NetherlandsWorldwide country-specific short-stay visa instructions",
+      "source_type": "country_mission_instructions",
+      "language": "en",
+      "url": "https://www.netherlandsworldwide.nl/visa-the-netherlands/apply-for-a-short-stay-schengen-visa",
+      "publisher": "www.netherlandsworldwide.nl",
+      "reference_status": "not_relied_upon",
+      "acceptance_scope": null,
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-38"
+        }
+      ],
+      "captured_version_evidence": "Country-specific instructions and application offices are mutable.",
+      "observed_resolved_url": null,
+      "capture_status": "retrieval_or_conversion_error",
+      "local_copy_accepted": false,
+      "topic_accepted": false,
+      "review_note": "Captured official route returned HTTP 404; exact page not relied upon. Review the NetherlandsWorldwide site for current country-specific instructions."
+    },
+    {
+      "source_id": "nl-39",
+      "title": "Older 2022 EU/EEA/Swiss family visa checklist PDF",
+      "source_type": "legacy_visa_attachment",
+      "language": "en",
+      "url": "https://www.netherlandsworldwide.nl/binaries/content/assets/pdfs-engels/checklist-visa-family-members-eu-eea-swiss-nationals-28-12-2022.pdf",
+      "publisher": "www.netherlandsworldwide.nl",
+      "reference_status": "not_relied_upon",
+      "acceptance_scope": null,
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-39"
+        }
+      ],
+      "captured_version_evidence": "Filename indicates 28 December 2022; not treated as current guidance.",
+      "observed_resolved_url": "https://www.netherlandsworldwide.nl/visa-the-netherlands/checklist-schengen-visa-family-member-eu-eea",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false,
+      "review_note": "Older 2022 PDF resolves to the current checklist route and is not a distinct current source; use nl-34."
+    },
+    {
+      "source_id": "nl-40",
+      "title": "Government.nl long-stay residence permit answer",
+      "source_type": "central_government_residence_guidance",
+      "language": "en",
+      "url": "https://www.government.nl/documents/question-and-answer/do-i-need-a-residence-permit-if-i-want-to-stay-in-the-netherlands-for-a-long-period-of-time",
+      "publisher": "www.government.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official central-government or NetherlandsWorldwide public information for the stated subject; use as operational orientation and verify legal requirements against the governing law.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-40"
+        }
+      ],
+      "captured_version_evidence": "No visible update date captured; points readers to IND for detailed current conditions.",
+      "observed_resolved_url": "https://www.government.nl/documents/question-and-answer/do-i-need-a-residence-permit-if-i-want-to-stay-in-the-netherlands-for-a-long-period-of-time",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-41",
+      "title": "Government.nl EU citizen stay longer than three months",
+      "source_type": "central_government_free_movement_guidance",
+      "language": "en",
+      "url": "https://www.government.nl/documents/question-and-answer/as-an-eu-citizen-how-can-i-stay-in-the-netherlands-for-longer-than-three-months",
+      "publisher": "www.government.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official central-government or NetherlandsWorldwide public information for the stated subject; use as operational orientation and verify legal requirements against the governing law.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-41"
+        }
+      ],
+      "captured_version_evidence": "Page may be legacy; compare against IND's July 2026 updated guidance.",
+      "observed_resolved_url": "https://www.government.nl/documents/question-and-answer/as-an-eu-citizen-how-can-i-stay-in-the-netherlands-for-longer-than-three-months",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-42",
+      "title": "NetherlandsWorldwide foreign-document legalisation country routes",
+      "source_type": "civil_status_evidence_guidance",
+      "language": "en",
+      "url": "https://www.netherlandsworldwide.nl/legalisation/foreign-documents",
+      "publisher": "www.netherlandsworldwide.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official central-government or NetherlandsWorldwide public information for the stated subject; use as operational orientation and verify legal requirements against the governing law.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-42"
+        }
+      ],
+      "captured_version_evidence": "Country, document type and issuing authority determine instructions.",
+      "observed_resolved_url": "https://www.netherlandsworldwide.nl/legalisation/foreign-documents",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-43",
+      "title": "NetherlandsWorldwide apostille guidance",
+      "source_type": "document_authentication_guidance",
+      "language": "en",
+      "url": "https://www.netherlandsworldwide.nl/legalisation/apostille",
+      "publisher": "www.netherlandsworldwide.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official central-government or NetherlandsWorldwide public information for the stated subject; use as operational orientation and verify legal requirements against the governing law.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-43"
+        }
+      ],
+      "captured_version_evidence": "Page's current legal status and country links require parent rediscovery.",
+      "observed_resolved_url": "https://www.netherlandsworldwide.nl/legalisation/apostille",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-44",
+      "title": "Government.nl Personal Records Database resident registration",
+      "source_type": "population_register_guidance",
+      "language": "en",
+      "url": "https://www.government.nl/documents/question-and-answer/when-should-i-register-with-the-personal-records-database-as-a-resident",
+      "publisher": "www.government.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official central-government or NetherlandsWorldwide public information for the stated subject; use as operational orientation and verify legal requirements against the governing law.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-44"
+        }
+      ],
+      "captured_version_evidence": "No update date captured; registration timing and evidence page is central guidance.",
+      "observed_resolved_url": "https://www.government.nl/documents/question-and-answer/when-should-i-register-with-the-personal-records-database-as-a-resident",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-45",
+      "title": "National Ombudsman complaint procedure",
+      "source_type": "ombudsman_complaint_guidance",
+      "language": "en",
+      "url": "https://www.nationaleombudsman.nl/How-to-file-a-complaint",
+      "publisher": "www.nationaleombudsman.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official National Ombudsman complaint and topic-discovery route; its existence does not establish jurisdiction, admissibility, outcome, or deadlines for a particular case.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-45"
+        }
+      ],
+      "captured_version_evidence": "Current page content observed; no explicit update date captured.",
+      "observed_resolved_url": "https://www.nationaleombudsman.nl/How-to-file-a-complaint",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-46",
+      "title": "National Ombudsman IND immigration topic hub",
+      "source_type": "ombudsman_topic_guidance",
+      "language": "nl",
+      "url": "https://www.nationaleombudsman.nl/",
+      "publisher": "www.nationaleombudsman.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official National Ombudsman complaint and topic-discovery route; its existence does not establish jurisdiction, admissibility, outcome, or deadlines for a particular case.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-46"
+        }
+      ],
+      "captured_version_evidence": "Topic membership is dynamic; individual investigations/reports carry separate dates.",
+      "observed_resolved_url": "https://www.nationaleombudsman.nl/",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-47",
+      "title": "Autoriteit Persoonsgegevens privacy complaint route",
+      "source_type": "data_protection_remedy_guidance",
+      "language": "en",
+      "url": "https://autoriteitpersoonsgegevens.nl/en/submitting-a-tip-off-or-a-complaint-to-the-ap",
+      "publisher": "autoriteitpersoonsgegevens.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official Autoriteit Persoonsgegevens complaint route; use for data-protection matters only and check its current competence and process.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-47"
+        }
+      ],
+      "captured_version_evidence": "Current page observed; process and expected response periods may change.",
+      "observed_resolved_url": "https://autoriteitpersoonsgegevens.nl/en/submitting-a-tip-off-or-a-complaint-to-the-ap",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-48",
+      "title": "Rechtspraak official case-law search",
+      "source_type": "official_case_law_search",
+      "language": "nl",
+      "url": "https://uitspraken.rechtspraak.nl/resultaat",
+      "publisher": "uitspraken.rechtspraak.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official case-law search entry point for discovery only; it is not a complete or reliably extractable case-law corpus.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-48"
+        }
+      ],
+      "captured_version_evidence": "Official site says decisions are published under selection criteria; sample records and corpus coverage were not assessed.",
+      "observed_resolved_url": "https://uitspraken.rechtspraak.nl/resultaat",
+      "capture_status": "discovery_surface_no_text",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-49",
+      "title": "Rechtspraak ECLI and search help",
+      "source_type": "case_law_identifier_guidance",
+      "language": "nl",
+      "url": "https://www.rechtspraak.nl/uitspraken/hulp-bij-zoeken",
+      "publisher": "www.rechtspraak.nl",
+      "reference_status": "not_relied_upon",
+      "acceptance_scope": null,
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-49"
+        }
+      ],
+      "captured_version_evidence": "Explains court codes and query fields; corpus coverage remains selective.",
+      "observed_resolved_url": null,
+      "capture_status": "retrieval_or_conversion_error",
+      "local_copy_accepted": false,
+      "topic_accepted": false,
+      "review_note": "Captured official route returned HTTP 403 in the research client; exact route not relied upon. This does not establish publisher downtime; review Rechtspraak directly."
+    },
+    {
+      "source_id": "nl-50",
+      "title": "Council of State publication rules for immigration decisions",
+      "source_type": "court_publication_scope",
+      "language": "nl",
+      "url": "https://www.raadvanstate.nl/overrvs/bestuursrechtspraak/vandaag/",
+      "publisher": "www.raadvanstate.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official Raad van State publication route for published immigration decisions; publication is selective and must not be treated as exhaustive.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-50"
+        }
+      ],
+      "captured_version_evidence": "Page describes Article 91(2) Vw short-form decisions and later publication of written-out decisions.",
+      "observed_resolved_url": "https://www.raadvanstate.nl/overrvs/bestuursrechtspraak/vandaag/",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-51",
+      "title": "Raad voor Rechtsbijstand legal-aid and immigration/asylum services",
+      "source_type": "legal_aid_guidance",
+      "language": "nl",
+      "url": "https://www.rechtsbijstand.nl/",
+      "publisher": "www.rechtsbijstand.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official Raad voor Rechtsbijstand information portal; general information does not establish coverage of an individual immigration or EU-family proceeding.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-51"
+        }
+      ],
+      "captured_version_evidence": "Some asylum-specific materials and contribution rules are published separately; no complete EU-family appeal entitlement confirmed.",
+      "observed_resolved_url": "https://www.rechtsbijstand.nl/",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-52",
+      "title": "Raad voor Rechtsbijstand no personal contribution for asylum cases",
+      "source_type": "legal_aid_scope_guidance",
+      "language": "nl",
+      "url": "https://www.rechtsbijstand.nl/mediation-rechtsbijstand/hoeveel-betalen/geen-eigen-bijdrage/",
+      "publisher": "www.rechtsbijstand.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official no-contribution information page for the stated asylum context only; it does not establish EU-family legal-aid eligibility.",
+      "candidate_references": [
+        {
+          "manifest": "monitor-candidate-manifest-2026-10-18.json",
+          "id": "nl-52"
+        }
+      ],
+      "captured_version_evidence": "Current page date not captured; applies only to named categories and eligibility conditions.",
+      "observed_resolved_url": "https://www.rechtsbijstand.nl/mediation-rechtsbijstand/hoeveel-betalen/geen-eigen-bijdrage/",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-53",
+      "title": "Burgerlijk Wetboek, Boek 10, foreign marriage recognition provisions",
+      "source_type": "national_legislation",
+      "language": "nl",
+      "url": "https://wetten.overheid.nl/BWBR0030068/2026-07-01",
+      "publisher": "wetten.overheid.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official Wetten.nl consolidated record for the named Dutch private-international-law or civil-status/adoption instrument. Use the current publisher text and displayed effective date; its inclusion does not establish an EU-family topic as adequately covered.",
+      "candidate_references": [
+        {
+          "manifest": "candidate-manifest.json",
+          "id": "nl-03-burgerlijk-wetboek-boek-10-foreign-marriage-recognition-provisions"
+        }
+      ],
+      "captured_version_evidence": "Geldend van 01-07-2026 t/m heden",
+      "observed_resolved_url": "https://wetten.overheid.nl/BWBR0030068/2026-07-01",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-54",
+      "title": "Burgerlijk Wetboek, Boek 1, civil-status and parentage provisions",
+      "source_type": "national_legislation",
+      "language": "nl",
+      "url": "https://wetten.overheid.nl/BWBR0002656/2025-07-05",
+      "publisher": "wetten.overheid.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official Wetten.nl consolidated record for the named Dutch private-international-law or civil-status/adoption instrument. Use the current publisher text and displayed effective date; its inclusion does not establish an EU-family topic as adequately covered.",
+      "candidate_references": [
+        {
+          "manifest": "candidate-manifest.json",
+          "id": "nl-04-burgerlijk-wetboek-boek-1-civil-status-and-parentage-provisions"
+        }
+      ],
+      "captured_version_evidence": "Geldend van 05-07-2025 t/m heden",
+      "observed_resolved_url": "https://wetten.overheid.nl/BWBR0002656/2025-07-05",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-55",
+      "title": "Wet opneming buitenlandse kinderen ter adoptie",
+      "source_type": "national_legislation",
+      "language": "nl",
+      "url": "https://wetten.overheid.nl/BWBR0004447/2018-08-01",
+      "publisher": "wetten.overheid.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official Wetten.nl consolidated record for the named Dutch private-international-law or civil-status/adoption instrument. Use the current publisher text and displayed effective date; its inclusion does not establish an EU-family topic as adequately covered.",
+      "candidate_references": [
+        {
+          "manifest": "candidate-manifest.json",
+          "id": "nl-05-wet-opneming-buitenlandse-kinderen-ter-adoptie"
+        }
+      ],
+      "captured_version_evidence": "Geldend van 01-08-2018 t/m heden",
+      "observed_resolved_url": "https://wetten.overheid.nl/BWBR0004447/2018-08-01",
+      "capture_status": "converted_review_candidate",
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "nl-56",
+      "title": "Wet basisregistratie personen (BWBR0033715)",
+      "source_type": "national_legislation",
+      "language": "nl",
+      "url": "https://wetten.overheid.nl/BWBR0033715/",
+      "publisher": "wetten.overheid.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Municipal resident-registration legal framework. Use the official current consolidated record; the dated result is a cutoff, not a claim about later changes.",
+      "candidate_references": [],
+      "captured_version_evidence": "Geldend van 11-11-2025 t/m heden; official Wetten.nl search result consulted 22-04-2026.",
+      "observed_resolved_url": "https://wetten.overheid.nl/BWBR0033715/",
+      "capture_status": "official_source_search_or_page_review_2026-10-21",
+      "local_copy_accepted": false,
+      "topic_accepted": false,
+      "origin": "issue_led_source_addition_2026-10-21"
+    },
+    {
+      "source_id": "nl-57",
+      "title": "Wet op de rechtsbijstand (BWBR0006368)",
+      "source_type": "national_legislation",
+      "language": "nl",
+      "url": "https://wetten.overheid.nl/BWBR0006368/",
+      "publisher": "wetten.overheid.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Statutory legal-aid framework, including provisions referring to the Vreemdelingenwet. Determine eligibility for each relevant appeal type.",
+      "candidate_references": [],
+      "captured_version_evidence": "Geldend van 01-01-2026 t/m heden; official Wetten.nl search result consulted 22-04-2026.",
+      "observed_resolved_url": "https://wetten.overheid.nl/BWBR0006368/",
+      "capture_status": "official_source_search_or_page_review_2026-10-21",
+      "local_copy_accepted": false,
+      "topic_accepted": false,
+      "origin": "issue_led_source_addition_2026-10-21"
+    },
+    {
+      "source_id": "nl-58",
+      "title": "Besluit rechtsbijstand- en toevoegcriteria (BWBR0006404)",
+      "source_type": "national_regulation",
+      "language": "nl",
+      "url": "https://wetten.overheid.nl/BWBR0006404/",
+      "publisher": "wetten.overheid.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Subordinate legal-aid eligibility criteria. The as-of evidence is dated; check the displayed current text for a specific proceeding.",
+      "candidate_references": [],
+      "captured_version_evidence": "Geldend van 01-01-2022 t/m heden; official Wetten.nl search result consulted 24-04-2026.",
+      "observed_resolved_url": "https://wetten.overheid.nl/BWBR0006404/",
+      "capture_status": "official_source_search_or_page_review_2026-10-21",
+      "local_copy_accepted": false,
+      "topic_accepted": false,
+      "origin": "issue_led_source_addition_2026-10-21"
+    },
+    {
+      "source_id": "nl-59",
+      "title": "Wet op de Raad van State (BWBR0002367)",
+      "source_type": "national_legislation",
+      "language": "nl",
+      "url": "https://wetten.overheid.nl/BWBR0002367/",
+      "publisher": "wetten.overheid.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Statutory basis for the Council of State and its Administrative Jurisdiction Division; map the relevant procedural route with the Vw 2000 and Awb.",
+      "candidate_references": [],
+      "captured_version_evidence": "Official Wetten.nl search result consulted 28-04-2026; consolidated record linked from the current publisher index.",
+      "observed_resolved_url": "https://wetten.overheid.nl/BWBR0002367/",
+      "capture_status": "official_source_search_or_page_review_2026-10-21",
+      "local_copy_accepted": false,
+      "topic_accepted": false,
+      "origin": "issue_led_source_addition_2026-10-21"
+    },
+    {
+      "source_id": "nl-60",
+      "title": "IND residence document Model 2020: card types and specimens",
+      "source_type": "official_guidance_and_specimen",
+      "language": "en",
+      "url": "https://ind.nl/en/foreign-nationals-documents/residence-document-model-2020",
+      "publisher": "ind.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official specimen and card-description page. It predates the 3 August 2026 transition date in Regulation (EU) 2025/1208; do not assume the displayed model remains compliant without a current specimen review.",
+      "candidate_references": [],
+      "captured_version_evidence": "Last updated 29 June 2026; page shows EU/EEA and EU-family-member document types and linked front/back specimens.",
+      "observed_resolved_url": "https://ind.nl/en/foreign-nationals-documents/residence-document-model-2020",
+      "capture_status": "official_source_search_or_page_review_2026-10-21",
+      "local_copy_accepted": false,
+      "topic_accepted": false,
+      "origin": "issue_led_source_addition_2026-10-21"
+    },
+    {
+      "source_id": "nl-61",
+      "title": "Besluit basisregistratie personen (BWBR0034306)",
+      "source_type": "national_regulation",
+      "language": "nl",
+      "url": "https://wetten.overheid.nl/BWBR0034306/",
+      "publisher": "wetten.overheid.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official Wetten.nl implementing decree for the Wet BRP. Use the publisher current consolidation; the reviewed result showed an effective version from 6 December 2025. This link does not establish municipal appointment practice or topic adequacy.",
+      "candidate_references": [],
+      "captured_version_evidence": "Official Wetten.nl result consulted 22-04-2026; Geldend van 06-12-2025 t/m heden.",
+      "observed_resolved_url": "https://wetten.overheid.nl/BWBR0034306/2025-12-06/0",
+      "capture_status": "official_source_search_2026-10-21",
+      "local_copy_accepted": false,
+      "topic_accepted": false,
+      "origin": "issue_led_source_addition_2026-10-21"
+    },
+    {
+      "source_id": "nl-62",
+      "title": "Regeling basisregistratie personen (BWBR0034327)",
+      "source_type": "national_regulation",
+      "language": "nl",
+      "url": "https://wetten.overheid.nl/BWBR0034327/",
+      "publisher": "wetten.overheid.nl",
+      "reference_status": "accepted_external_reference_with_narrow_scope",
+      "acceptance_scope": "Official Wetten.nl implementing regulation for the Wet BRP and Besluit BRP. Use the current publisher consolidation; the reviewed record showed the 11 November 2025 version and a retroactive published amendment. Check the current displayed version for a specific registration issue.",
+      "candidate_references": [],
+      "captured_version_evidence": "Official Wetten.nl result consulted 25-04-2026: version effective 11-11-2025, with a later amendment published 06-12-2025 applying retroactively to 11-11-2025.",
+      "observed_resolved_url": "https://wetten.overheid.nl/jci1.3%3Ac%3ABWBR0034327%26artikel%3D21%26g%3D2025-11-11%26z%3D2026-01-29",
+      "capture_status": "official_source_search_2026-10-21",
+      "local_copy_accepted": false,
+      "topic_accepted": false,
+      "origin": "issue_led_source_addition_2026-10-21"
+    }
+  ]
+}

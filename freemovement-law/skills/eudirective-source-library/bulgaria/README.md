@@ -1,24 +1,30 @@
 # Bulgaria national-source candidates
 
-Status updated 21 October 2026: the register has 36 records. The original 35-candidate capture run converted and replay-verified 24 texts; 11 remain blocked, errored, or unavailable. Two official Visa Ordinance references are now usable by link: the MFA consolidated edition through State Gazette issue 4/2025 and the targeted later changes in Decree №221/2025. No local copy is accepted.
-Research date: 18 October 2026; retrieval run: 19 October 2026.  
-Jurisdiction: Bulgaria (EU Member State).
+Status updated 21 October 2026: the register contains 42 candidate records. Thirteen official references are usable by link within their reviewed scope and stated cutoffs; no local copies are accepted. The pack is a bounded source inventory, not a complete legal coverage review.
 
-This pack records official-source leads found by comparing the Denmark, Sweden, Czechia, Hungary, and Romania reviews. It is not a complete inventory or a legal equivalence assessment. See [`references/source-list.md`](references/source-list.md) for the dated search and candidate register, [`references/candidate-manifest.json`](references/candidate-manifest.json) for machine-readable records, and [`references/sustainability-assessment.md`](references/sustainability-assessment.md) for route constraints and missing runtime evidence.
+The source list and dated evidence are in [references/source-list.md](references/source-list.md). Machine-readable candidates are in [references/candidate-manifest.json](references/candidate-manifest.json), link decisions are in [references/source-acceptance.json](references/source-acceptance.json), cross-instrument dependencies are in [references/source-dependencies.json](references/source-dependencies.json), and remaining source-route issues are in [references/sustainability-assessment.md](references/sustainability-assessment.md).
 
-## Main routes found
+## Main official routes
 
-- Bulgaria has a distinct Act on the entry, residence, and departure of EU citizens and their family members. The Ministry of Interior (MVR) Migration Directorate's service page links the Act and applicant forms. Keep this source family distinct from the Foreigners Act, which governs broader third-country national matters.
-- The MFA normative-documents index links a 42-page consolidated Visa Ordinance PDF whose heading lists amendments through State Gazette issue 4/2025 (14 January 2025). Use this as the closest current government-published consolidation within that cutoff, supplemented by the specific later changes in Decree №221/2025 §3. The MVR-linked PDF stops in 2019 and is historical only; PRIS records the amendment trail but attaches only the original 2011 files. No full amendment-chain reconstruction is required.
-- The Ministry of Foreign Affairs (MFA) visa hub is a useful central procedural route, including an EU-family treatment section and an outbound link to the European Commission's prior-consultation list. The Commission download URL is versioned; rediscover it from the MFA page instead of treating the current file URL as permanent.
-- The Administrative Procedure Code, Ombudsman, data-protection, discrimination, and court-search routes provide separate remedies and oversight leads. They do not form one complete appeal or lower-court search index.
+- The Ministry of Interior (MVR) Migration Directorate publishes the dedicated EU-citizen and family-member Act, its application forms, the Foreigners Act and implementing rules, and the Administrative Procedure Code. Keep the dedicated EU free-movement regime distinct from the general third-country-national regime.
+- The MVR and Ministry of Foreign Affairs publish consolidated Tariffs №4 and №3 respectively. Their PDFs state cutoffs and attribute the consolidated text to Ciela; those caveats are preserved.
+- The MVR-published Bulgarian Personal Documents Act is a supporting source for residence-document issuance. The associated rules page labels its entry current through December 2025 but links a text ending in May 2024. The whole MVR legal portal is offered for human review to resolve that currency mismatch.
+- The MFA normative-documents index links the Visa Ordinance consolidation through State Gazette issue 4/2025. Decree №221/2025 §3 is the targeted later supplement. No Gazette-chain reconstruction is required.
+- The Bulgarian EU-citizen Act still refers to Regulation (EU) 2019/1157. The Court of Justice declared that regulation invalid, maintained its effects until replacement, and the successor Regulation (EU) 2025/1208 entered into force on 10 July 2025. The dependency is recorded separately; the national statutory wording is preserved.
 
-## Capture and replay
+## Link review and local copies
 
-The shared capture ledger is [`references/bulgaria-capture-results.json`](references/bulgaria-capture-results.json). The reusable route and offline integrity replay are [`../sync_candidate_pages.py`](../sync_candidate_pages.py). Run `python source-library/sync_candidate_pages.py bulgaria sync` to refresh the register and `python source-library/sync_candidate_pages.py bulgaria verify` to replay hashes and conversions. The original 19 October capture pass saved and converted 24 candidates. Four MFA links redirected to a third-party bot-validation host and were not followed; TLS errors, 404, and 500 responses were left unresolved.
+A human-reviewed official link is sufficient for ordinary reference use within the publisher, instrument, language, cutoff, relevant content and limitations checked. Link acceptance does not mean a local artifact was accepted, a legal topic is adequately covered, or Bulgaria is complete.
 
-## Review boundary
+The original 19 October capture pass converted and replay-verified 24 of 35 attempted records. Its 11 failures or blocks are historical outcomes from that capture client, not proof the official sources are unavailable and not blockers to using reviewed links. The capture ledger remains available at [references/bulgaria-capture-results.json](references/bulgaria-capture-results.json).
 
-The 36-record register contains 0 accepted local copies. Two official Visa Ordinance references have passed a link-use review; the remaining records are still candidates. Some PDFs or linked form endpoints returned HTTP 403 or an error page during inspection; those outcomes are recorded rather than treated as proof that the source is unavailable to every client. No API, registration requirement, or bulk-use permission was identified in this bounded search. That is an unverified search result, not proof none exists.
+## Remaining gaps
 
-The MVR EU-family notice page can expose applicant-specific notices and names. It is a procedural lead only: do not harvest, copy, or archive individual notices in the source library.
+- Broader Supreme Administrative Court and lower administrative-court discovery, repeatable searches, and review of individual holdings.
+- Mission-specific visa instructions, appointment routes, current checklists, and representation arrangements.
+- Regional Migration-unit procedures, local competence, appointment requirements and forms.
+- Full legal coverage mapping across refusal, delay, evidence demands, procedure and remedies.
+- Human review of the MVR personal-documents rules currentness conflict.
+- The EU-format dependency alert for Article 10 and related Bulgarian residence-card materials.
+
+Applicant-specific MVR notices may contain personal data; the register covers the public procedure route, not individual notices.

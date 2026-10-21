@@ -1,0 +1,1120 @@
+{
+  "schema_version": "1.0.0",
+  "jurisdiction": "LT",
+  "review_date": "2026-10-21",
+  "candidate_record_count": 47,
+  "accepted_external_reference_count": 36,
+  "pending_external_reference_count": 11,
+  "not_relied_upon_reference_count": 0,
+  "accepted_local_copy_count": 0,
+  "accepted_topic_count": 0,
+  "country_review_complete": false,
+  "policy": "A trustworthy government-published consolidated legal text or clearly identified official guidance/service page may be accepted as an external reference within its displayed identity, status, version, language, date and subject. Prefer the current e-TAR consolidated edition over a stale TAR API snapshot. If exact version, attachment or current operational content is unclear, offer the whole responsible official website for human review. Link use does not require API access, local copying, conversion, hash/replay, or Gazette-chain reconstruction. External-link acceptance is separate from local-copy acceptance, topic coverage and country review completion.",
+  "publisher_assessment": {
+    "decision": "The Register of Legal Acts (e-TAR), maintained by the Seimas Chancellery, is accepted as Lithuania’s official legal publication and consolidated-text reference source within each record’s displayed edition and scope. Its registry pages expose legal-act identity, status, edition dates and chronology. The Lithuanian Open Data Portal TAR dataset is accepted only as a separate metadata/snapshot source, not as the dependable current-version selector.",
+    "basis": "The official e-TAR FAQ states that registration/publication in the Register is official publication and directs users to select the currently valid consolidated edition; live official records show the Aliens Law edition 2026-07-01 to 2026-10-31, the Public Administration Law edition 2026-10-01 to 2026-12-31, and other act-specific edition ranges. The official e-TAR edition list shows the Civil Code edition in force on 2026-10-21. The official portal gives stable record identifiers and edition histories.",
+    "limits": "Primary legislation is in Lithuanian. A translated Migration Department or MFA page may be stale or informational. The TAR dataset API has older versions marked open-ended while e-TAR displays later current editions; the API snapshot must not be represented as current when the record disagrees. This register accepts links, not the local converted files or any legal-coverage conclusion.",
+    "local_copy_and_reuse": "The 13 TAR API conversions and two HTML conversions remain unaccepted local review artifacts. Dataset CC BY 4.0 information is confined to that dataset; it does not extend to e-TAR pages, government guidance, forms, court decisions or mission content. No recurring mirror is proposed by this source-reference review."
+  },
+  "accepted_references": [
+    {
+      "source_id": "lt-01",
+      "title": "N-Lex Lithuania country information",
+      "url": "https://n-lex.europa.eu/n-lex/info/info-lt/index?lang=en",
+      "publisher": "N-Lex / Publications Office of the European Union",
+      "language": "en",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Country-page information inspected 2026-10-18.",
+      "acceptance_scope": "Country-page information inspected 2026-10-18.",
+      "limitations": [
+        "This decision accepts the official external link only. It does not accept a saved conversion, establish legal-topic adequacy, or complete Lithuania’s source review.",
+        "Use only the instrument, page, language, and displayed version/date stated here. Check a later edition only when it may materially affect the provision or operational instruction being relied on."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-01"
+      },
+      "evidence": {
+        "official_source_url": "https://n-lex.europa.eu/n-lex/info/info-lt/index?lang=en",
+        "verified_content": "Official N-Lex Lithuania country page inspected; it identifies TAR and the responsible Seimas Office as national legal-register channels.",
+        "source_record_note": "Discovery aid only; not the national publisher and not a complete source-class inventory.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "local_copy_accepted": false,
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "lt-02",
+      "title": "e-TAR official legal-act search",
+      "url": "https://e-tar.lt/portal/lt/legalActSearch",
+      "publisher": "Seimas Chancellery / Register of Legal Acts (e-TAR)",
+      "language": "lt",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Search pages expose stable TAR identifiers, current consolidated-version ranges, and edition histories.",
+      "acceptance_scope": "Search pages expose stable TAR identifiers, current consolidated-version ranges, and edition histories.",
+      "limitations": [
+        "This decision accepts the official external link only. It does not accept a saved conversion, establish legal-topic adequacy, or complete Lithuania’s source review.",
+        "Use only the instrument, page, language, and displayed version/date stated here. Check a later edition only when it may materially affect the provision or operational instruction being relied on."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-02"
+      },
+      "evidence": {
+        "official_source_url": "https://e-tar.lt/portal/lt/legalActSearch",
+        "verified_content": "Official e-TAR search and legal-act record routes inspected through official search results and registry pages.",
+        "source_record_note": "Primary registry discovery and publication route. Direct page fetches sometimes returned 403 in the research client; this is not evidence of an e-TAR outage.",
+        "retrieval_status": "retrieval_or_conversion_error"
+      },
+      "local_copy_accepted": false,
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "lt-03",
+      "title": "TAR legal-act data open dataset",
+      "url": "https://data.gov.lt/datasets/2613/?resource_version=1410",
+      "publisher": "Lithuanian Open Data Portal / TAR data publisher",
+      "language": "lt",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Catalogue says daily updates; resource entries showed 2026-10-17 update. Dataset metadata separately showed last update 2026-04-07.",
+      "acceptance_scope": "Catalogue says daily updates; resource entries showed 2026-10-17 update. Dataset metadata separately showed last update 2026-04-07.",
+      "limitations": [
+        "This decision accepts the official external link only. It does not accept a saved conversion, establish legal-topic adequacy, or complete Lithuania’s source review.",
+        "Use only the instrument, page, language, and displayed version/date stated here. Check a later edition only when it may materially affect the provision or operational instruction being relied on.",
+        "The dataset/API metadata is accepted only as a dataset description and retrieval lead; API “active” labels do not establish that its text is the current consolidated law."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-03"
+      },
+      "evidence": {
+        "official_source_url": "https://data.gov.lt/datasets/2613/?resource_version=1410",
+        "verified_content": "Official dataset, resource and model pages inspected. The API page documents getall, getone and changes routes and displays an example JSON response; no targeted current immigration-law query was fetched.",
+        "source_record_note": "The Document model contains a latest consolidated Lithuanian text and chronology fields; Consolidated version has text and effective-date fields; Annex supports extracted text for simple PDF/XLSX/DOCX under 50 MB. API documentation exposes list, single-record and change routes with a JSON/curl example. Models are labelled develop/in preparation, so schema stability and production readiness are unverified; targeted current-act API retrieval, limits, auth and change semantics still need runtime validation. CC BY 4.0 is listed for this dataset; do not extend it to unrelated e-TAR materials.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "local_copy_accepted": false,
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "lt-05",
+      "title": "Law on the Right to Receive Information and Data Reuse, VIII-1524",
+      "url": "https://e-tar.lt/portal/lt/legalAct/TAR.FA13E28615F6/asr",
+      "publisher": "Seimas of the Republic of Lithuania / Register of Legal Acts",
+      "language": "lt",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Current /asr record is available; current precise consolidated range should be resolved at retrieval time.",
+      "acceptance_scope": "Current /asr record is available; current precise consolidated range should be resolved at retrieval time.",
+      "limitations": [
+        "This decision accepts the official external link only. It does not accept a saved conversion, establish legal-topic adequacy, or complete Lithuania’s source review.",
+        "Use only the instrument, page, language, and displayed version/date stated here. Check a later edition only when it may materially affect the provision or operational instruction being relied on."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-05"
+      },
+      "evidence": {
+        "official_source_url": "https://e-tar.lt/portal/lt/legalAct/TAR.FA13E28615F6/asr",
+        "verified_content": "Official current e-TAR record inspected through indexed act text and version metadata.",
+        "source_record_note": "General access/reuse statute with statutory and protected-information exceptions; dataset-specific licence does not answer the reuse status of every e-TAR source.",
+        "retrieval_status": "converted_review_candidate_api_currentness_unverified"
+      },
+      "local_copy_accepted": false,
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "lt-06",
+      "title": "Lithuanian Open Data Portal rules, Government Resolution No. 252",
+      "url": "https://e-tar.lt/rs/actualedition/a1107f40391911ea829bc2bea81c1194/kIyHFBOHcg/",
+      "publisher": "Government of the Republic of Lithuania / Register of Legal Acts",
+      "language": "lt",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Official indexed act record inspected 2026-10-18.",
+      "acceptance_scope": "Official indexed act record inspected 2026-10-18.",
+      "limitations": [
+        "This decision accepts the official external link only. It does not accept a saved conversion, establish legal-topic adequacy, or complete Lithuania’s source review.",
+        "Use only the instrument, page, language, and displayed version/date stated here. Check a later edition only when it may materially affect the provision or operational instruction being relied on."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-06"
+      },
+      "evidence": {
+        "official_source_url": "https://e-tar.lt/rs/actualedition/a1107f40391911ea829bc2bea81c1194/kIyHFBOHcg/",
+        "verified_content": "Official e-TAR indexed text inspected; it describes the portal's legal basis, data submission/use, and open formats.",
+        "source_record_note": "Portal governance context for the TAR dataset; not a substitute for the dataset-specific API schema or terms.",
+        "retrieval_status": "converted_review_candidate_api_currentness_unverified"
+      },
+      "local_copy_accepted": false,
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "lt-07",
+      "title": "Migration Department index of EEA, Swiss and UK agreements",
+      "url": "https://migracija.lrv.lt/lt/teisine-informacija/teises-aktai/europos-sajungos-teises-aktai/tarpautines-sutartys/",
+      "publisher": "Migration Department under the Ministry of the Interior",
+      "language": "lt",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Index last updated 2023-12-12.",
+      "acceptance_scope": "Index last updated 2023-12-12.",
+      "limitations": [
+        "This decision accepts the official external link only. It does not accept a saved conversion, establish legal-topic adequacy, or complete Lithuania’s source review.",
+        "Use only the instrument, page, language, and displayed version/date stated here. Check a later edition only when it may materially affect the provision or operational instruction being relied on.",
+        "The treaty index was last updated in 2023 and is accepted only as a discovery route; verify each agreement’s current scope and national application independently."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-07"
+      },
+      "evidence": {
+        "official_source_url": "https://migracija.lrv.lt/lt/teisine-informacija/teises-aktai/europos-sajungos-teises-aktai/tarpautines-sutartys/",
+        "verified_content": "Official Lithuanian Migration Department index inspected; it lists the EEA Agreement, EU-Switzerland Free Movement Agreement and UK Withdrawal Agreement.",
+        "source_record_note": "Route map only. Verify each agreement's current scope, incorporation, and national effect independently; this page is stale relative to the research date.",
+        "retrieval_status": "retrieval_or_conversion_error"
+      },
+      "local_copy_accepted": false,
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "lt-08",
+      "title": "Law on the Legal Status of Aliens, IX-2206",
+      "url": "https://e-tar.lt/portal/lt/legalAct/TAR.42837E5A79DD/asr",
+      "publisher": "Seimas of the Republic of Lithuania / Register of Legal Acts",
+      "language": "lt",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Official e-TAR consolidated edition 2026-07-01 to 2026-10-31; Chapter V covers EU/EFTA citizens and their family members. The captured TAR API version dated 2026-01-01 is stale relative to e-TAR. The national text retains a Regulation (EU) 2019/1157 cross-reference; see dependency register for the CJEU judgment and successor Regulation (EU) 2025/1208.",
+      "acceptance_scope": "Search result showed consolidated version 2026-07-01 to 2026-10-31 and amendment XV-1062 dated 2026-06-25.",
+      "limitations": [
+        "This decision accepts the official external link only. It does not accept a saved conversion, establish legal-topic adequacy, or complete Lithuania’s source review.",
+        "Use only the instrument, page, language, and displayed version/date stated here. Check a later edition only when it may materially affect the provision or operational instruction being relied on.",
+        "The earlier TAR API capture is not the authoritative current-version selector; consult the specific e-TAR consolidated record and its displayed edition."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-08"
+      },
+      "evidence": {
+        "official_source_url": "https://e-tar.lt/portal/lt/legalAct/TAR.42837E5A79DD/asr",
+        "verified_content": "Official e-TAR current record and consolidated text reviewed; its current edition for this review is 2026-07-01 through 2026-10-31, amendment XV-1062. The older TAR API capture is dated 2026-01-01 and is not the current-text reference.",
+        "source_record_note": "Broad aliens statute with a distinct EU residence regime. Keep third-country family reunification, EU free movement, EFTA/Swiss treaty routes, and UK Withdrawal Agreement cases distinct.",
+        "retrieval_status": "converted_review_candidate_api_currentness_unverified"
+      },
+      "local_copy_accepted": false,
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "lt-09",
+      "title": "Temporary residence-card procedure for a family member of a Union citizen, Order 1V-594 / TAR.2779206FA382",
+      "url": "https://e-tar.lt/portal/lt/legalAct/TAR.2779206FA382/asr",
+      "publisher": "Ministry of the Interior / Register of Legal Acts",
+      "language": "lt",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Official current text was indexed on 2026-10-18; exact current edition boundary needs direct record check.",
+      "acceptance_scope": "Official current text was indexed on 2026-10-18; exact current edition boundary needs direct record check.",
+      "limitations": [
+        "This decision accepts the official external link only. It does not accept a saved conversion, establish legal-topic adequacy, or complete Lithuania’s source review.",
+        "Use only the instrument, page, language, and displayed version/date stated here. Check a later edition only when it may materially affect the provision or operational instruction being relied on.",
+        "The earlier TAR API capture is not the authoritative current-version selector; consult the specific e-TAR consolidated record and its displayed edition."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-09"
+      },
+      "evidence": {
+        "official_source_url": "https://e-tar.lt/portal/lt/legalAct/TAR.2779206FA382/asr",
+        "verified_content": "Official e-TAR consolidated text inspected through indexed results; it describes application, issuance, renewal and cancellation and names EU or EFTA citizen sponsors and mobile Lithuanian citizens.",
+        "source_record_note": "High-value operational legal source. Confirm it remains current against the underlying Aliens Law and the latest order amendments.",
+        "retrieval_status": "converted_review_candidate_api_version_not_current"
+      },
+      "local_copy_accepted": false,
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "lt-10",
+      "title": "Permanent residence card procedure for family members",
+      "url": "https://e-tar.lt/portal/lt/legalAct/TAR.DE0E3CDB7DED/asr",
+      "publisher": "Ministry of the Interior / Register of Legal Acts",
+      "language": "lt",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Current indexed text inspected 2026-10-18; exact current edition boundary needs direct record check.",
+      "acceptance_scope": "Current indexed text inspected 2026-10-18; exact current edition boundary needs direct record check.",
+      "limitations": [
+        "This decision accepts the official external link only. It does not accept a saved conversion, establish legal-topic adequacy, or complete Lithuania’s source review.",
+        "Use only the instrument, page, language, and displayed version/date stated here. Check a later edition only when it may materially affect the provision or operational instruction being relied on.",
+        "The earlier TAR API capture is not the authoritative current-version selector; consult the specific e-TAR consolidated record and its displayed edition."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-10"
+      },
+      "evidence": {
+        "official_source_url": "https://e-tar.lt/portal/lt/legalAct/TAR.DE0E3CDB7DED/asr",
+        "verified_content": "Official e-TAR current text inspected through indexed results; it covers permanent residence-card application, renewal, cancellation and EFTA-family sponsors.",
+        "source_record_note": "Keep separate from temporary-card procedure; verify the relevant legal provisions and current forms together.",
+        "retrieval_status": "converted_review_candidate_api_version_not_current"
+      },
+      "local_copy_accepted": false,
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "lt-16",
+      "title": "Migration Department service list, including EU family cards and complaint handling",
+      "url": "https://migracija.lrv.lt/lt/paslaugos/visas-paslaugu-sarasas/",
+      "publisher": "Migration Department under the Ministry of the Interior",
+      "language": "lt",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Indexed page current as of 2026-10-18; individual service dates were not recorded.",
+      "acceptance_scope": "Indexed page current as of 2026-10-18; individual service dates were not recorded.",
+      "limitations": [
+        "This decision accepts the official external link only. It does not accept a saved conversion, establish legal-topic adequacy, or complete Lithuania’s source review.",
+        "Use only the instrument, page, language, and displayed version/date stated here. Check a later edition only when it may materially affect the provision or operational instruction being relied on."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-16"
+      },
+      "evidence": {
+        "official_source_url": "https://migracija.lrv.lt/lt/paslaugos/visas-paslaugu-sarasas/",
+        "verified_content": "Official service index inspected via search result; it lists family-card issue/renewal and complaints about Migration Department acts, inaction, and decisions.",
+        "source_record_note": "Useful parent index for service-page and form rediscovery; exact service records and their own rules must be inspected.",
+        "retrieval_status": "retrieval_or_conversion_error"
+      },
+      "local_copy_accepted": false,
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "lt-17",
+      "title": "Civil Status Registration Law XII-2111",
+      "url": "https://e-tar.lt/portal/lt/legalAct/ecf91ec0a00811e58fd1fc0b9bba68a7/asr",
+      "publisher": "Seimas of the Republic of Lithuania / Register of Legal Acts",
+      "language": "lt",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Current consolidated version from 2026-05-22; amendment XV-948 dated 2026-05-14.",
+      "acceptance_scope": "Current consolidated version from 2026-05-22; amendment XV-948 dated 2026-05-14.",
+      "limitations": [
+        "This decision accepts the official external link only. It does not accept a saved conversion, establish legal-topic adequacy, or complete Lithuania’s source review.",
+        "Use only the instrument, page, language, and displayed version/date stated here. Check a later edition only when it may materially affect the provision or operational instruction being relied on."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-17"
+      },
+      "evidence": {
+        "official_source_url": "https://e-tar.lt/portal/lt/legalAct/ecf91ec0a00811e58fd1fc0b9bba68a7/asr",
+        "verified_content": "Official e-TAR current record inspected; marriage registration, foreign-national evidence, and EU/EFTA distinctions appear in the act.",
+        "source_record_note": "Family-status evidence route only; foreign marriage recognition, partnership, translation, apostille and process-specific evidence remain separate checks.",
+        "retrieval_status": "converted_review_candidate_api_currentness_unverified"
+      },
+      "local_copy_accepted": false,
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "lt-18",
+      "title": "MFA consular visa hub",
+      "url": "https://keliauk.urm.lt/en/entry-to-lithuania/visas",
+      "publisher": "Ministry of Foreign Affairs of Lithuania (URM / Keliauk)",
+      "language": "en",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Renewed 2026-09-09 13:34.",
+      "acceptance_scope": "Renewed 2026-09-09 13:34.",
+      "limitations": [
+        "This decision accepts the official external link only. It does not accept a saved conversion, establish legal-topic adequacy, or complete Lithuania’s source review.",
+        "Use only the instrument, page, language, and displayed version/date stated here. Check a later edition only when it may materially affect the provision or operational instruction being relied on."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-18"
+      },
+      "evidence": {
+        "official_source_url": "https://keliauk.urm.lt/en/entry-to-lithuania/visas",
+        "verified_content": "Official MFA hub inspected; links to nationality, visa types, evidence, prior consultation, fees, decision, EU/EFTA family, provider, complaint, and visa-data pages.",
+        "source_record_note": "Strong parent-index candidate. Keep Schengen short-stay and national D-visa regimes distinct; some current restrictive-measure content may need legal-version confirmation.",
+        "retrieval_status": "retrieval_or_conversion_error"
+      },
+      "local_copy_accepted": false,
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "lt-19",
+      "title": "MFA Do I need a Visa? nationality list",
+      "url": "https://keliauk.urm.lt/en/entry-to-lithuania/visas/list-of-countries-whose-citizens-do-not-require-visas-to-enter-the-republic-of-lithuania",
+      "publisher": "Ministry of Foreign Affairs of Lithuania (URM / Keliauk)",
+      "language": "en",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Page crawled 2026-10-18; a page-level update date was not recorded.",
+      "acceptance_scope": "Page crawled 2026-10-18; a page-level update date was not recorded.",
+      "limitations": [
+        "This decision accepts the official external link only. It does not accept a saved conversion, establish legal-topic adequacy, or complete Lithuania’s source review.",
+        "Use only the instrument, page, language, and displayed version/date stated here. Check a later edition only when it may materially affect the provision or operational instruction being relied on."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-19"
+      },
+      "evidence": {
+        "official_source_url": "https://keliauk.urm.lt/en/entry-to-lithuania/visas/list-of-countries-whose-citizens-do-not-require-visas-to-enter-the-republic-of-lithuania",
+        "verified_content": "Official dynamic list opened from the MFA visa hub.",
+        "source_record_note": "Nationality-specific facts and exemptions change; retrieve only through the parent hub and preserve the dated page state.",
+        "retrieval_status": "retrieval_or_conversion_error"
+      },
+      "local_copy_accepted": false,
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "lt-20",
+      "title": "MFA visa types and national-visa route",
+      "url": "https://keliauk.urm.lt/en/entry-to-lithuania/visas/types-of-visa",
+      "publisher": "Ministry of Foreign Affairs of Lithuania (URM / Keliauk)",
+      "language": "en",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Renewed 2025-07-24.",
+      "acceptance_scope": "Renewed 2025-07-24.",
+      "limitations": [
+        "This decision accepts the official external link only. It does not accept a saved conversion, establish legal-topic adequacy, or complete Lithuania’s source review.",
+        "Use only the instrument, page, language, and displayed version/date stated here. Check a later edition only when it may materially affect the provision or operational instruction being relied on."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-20"
+      },
+      "evidence": {
+        "official_source_url": "https://keliauk.urm.lt/en/entry-to-lithuania/visas/types-of-visa",
+        "verified_content": "Official MFA page inspected; distinguishes Schengen A/C visas from national D visas and links national applications to external-provider/Migration Department routes.",
+        "source_record_note": "Refresh from the visa hub; accompanying 2023 Migration Department news is a historical route explanation, not current law.",
+        "retrieval_status": "retrieval_or_conversion_error"
+      },
+      "local_copy_accepted": false,
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "lt-21",
+      "title": "MFA lodging a visa application and supporting documents",
+      "url": "https://keliauk.urm.lt/en/entry-to-lithuania/visas/lodging-an-application-and-supporting-documents",
+      "publisher": "Ministry of Foreign Affairs of Lithuania (URM / Keliauk)",
+      "language": "en",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Renewed 2026-09-09 13:34.",
+      "acceptance_scope": "Renewed 2026-09-09 13:34.",
+      "limitations": [
+        "This decision accepts the official external link only. It does not accept a saved conversion, establish legal-topic adequacy, or complete Lithuania’s source review.",
+        "Use only the instrument, page, language, and displayed version/date stated here. Check a later edition only when it may materially affect the provision or operational instruction being relied on."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-21"
+      },
+      "evidence": {
+        "official_source_url": "https://keliauk.urm.lt/en/entry-to-lithuania/visas/lodging-an-application-and-supporting-documents",
+        "verified_content": "Official page inspected; it explains application lead times, forms, travel-document criteria, biometrics, and supporting-document route.",
+        "source_record_note": "Use with the separate EU/EFTA-family page, whose evidentiary requirements are narrower, and the current Visa Code.",
+        "retrieval_status": "retrieval_or_conversion_error"
+      },
+      "local_copy_accepted": false,
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "lt-23",
+      "title": "MFA prior consultations list",
+      "url": "https://keliauk.urm.lt/en/entry-to-lithuania/visas/prior-consultations",
+      "publisher": "Ministry of Foreign Affairs of Lithuania (URM / Keliauk)",
+      "language": "en",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Renewed 2026-09-09 13:34.",
+      "acceptance_scope": "Renewed 2026-09-09 13:34.",
+      "limitations": [
+        "This decision accepts the official external link only. It does not accept a saved conversion, establish legal-topic adequacy, or complete Lithuania’s source review.",
+        "Use only the instrument, page, language, and displayed version/date stated here. Check a later edition only when it may materially affect the provision or operational instruction being relied on."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-23"
+      },
+      "evidence": {
+        "official_source_url": "https://keliauk.urm.lt/en/entry-to-lithuania/visas/prior-consultations",
+        "verified_content": "Official page inspected; it lists nationalities and specific categories subject to Schengen prior consultation.",
+        "source_record_note": "Highly dynamic list; parent-index rediscovery and table-level change comparison are required.",
+        "retrieval_status": "retrieval_or_conversion_error"
+      },
+      "local_copy_accepted": false,
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "lt-25",
+      "title": "MFA cooperation with external service providers",
+      "url": "https://keliauk.urm.lt/en/entry-to-lithuania/visas/cooperation-with-external-service-providers",
+      "publisher": "Ministry of Foreign Affairs of Lithuania (URM / Keliauk)",
+      "language": "en",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Renewed 2026-09-09 13:34.",
+      "acceptance_scope": "Renewed 2026-09-09 13:34.",
+      "limitations": [
+        "This decision accepts the official external link only. It does not accept a saved conversion, establish legal-topic adequacy, or complete Lithuania’s source review.",
+        "Use only the instrument, page, language, and displayed version/date stated here. Check a later edition only when it may materially affect the provision or operational instruction being relied on."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-25"
+      },
+      "evidence": {
+        "official_source_url": "https://keliauk.urm.lt/en/entry-to-lithuania/visas/cooperation-with-external-service-providers",
+        "verified_content": "Official page inspected; it describes VFS collection/appointment functions and reserves examination and decisions to Lithuanian visa authorities.",
+        "source_record_note": "Provider locations and contracts can change; do not treat a provider as the deciding authority.",
+        "retrieval_status": "retrieval_or_conversion_error"
+      },
+      "local_copy_accepted": false,
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "lt-26",
+      "title": "MFA family members of EU or EFTA citizens visa guidance",
+      "url": "https://keliauk.urm.lt/en/entry-to-lithuania/visas/family-members-of-an-eu-citizen-or-a-citizen-of-an-efta-member-state",
+      "publisher": "Ministry of Foreign Affairs of Lithuania (URM / Keliauk)",
+      "language": "en",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Renewed 2026-09-09 13:34.",
+      "acceptance_scope": "Renewed 2026-09-09 13:34.",
+      "limitations": [
+        "This decision accepts the official external link only. It does not accept a saved conversion, establish legal-topic adequacy, or complete Lithuania’s source review.",
+        "Use only the instrument, page, language, and displayed version/date stated here. Check a later edition only when it may materially affect the provision or operational instruction being relied on."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-26"
+      },
+      "evidence": {
+        "official_source_url": "https://keliauk.urm.lt/en/entry-to-lithuania/visas/family-members-of-an-eu-citizen-or-a-citizen-of-an-efta-member-state",
+        "verified_content": "Official page inspected; it states no visa fee, expedited consideration, reduced supporting evidence, and extension of the same conditions to EFTA family members.",
+        "source_record_note": "Verify individual-family-member eligibility and EFTA/Swiss treaty basis; guidance is not a legal equivalence determination.",
+        "retrieval_status": "retrieval_or_conversion_error"
+      },
+      "local_copy_accepted": false,
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "lt-27",
+      "title": "MFA decision on a visa application and court appeal route",
+      "url": "https://keliauk.urm.lt/en/entry-to-lithuania/visas/decision-on-the-application",
+      "publisher": "Ministry of Foreign Affairs of Lithuania (URM / Keliauk)",
+      "language": "en",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Renewed 2026-09-09 13:34.",
+      "acceptance_scope": "Renewed 2026-09-09 13:34.",
+      "limitations": [
+        "This decision accepts the official external link only. It does not accept a saved conversion, establish legal-topic adequacy, or complete Lithuania’s source review.",
+        "Use only the instrument, page, language, and displayed version/date stated here. Check a later edition only when it may materially affect the provision or operational instruction being relied on."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-27"
+      },
+      "evidence": {
+        "official_source_url": "https://keliauk.urm.lt/en/entry-to-lithuania/visas/decision-on-the-application",
+        "verified_content": "Official page inspected; it describes refusal reasons, 14-day appeal to the Regional Administrative Court, language/translation requirements, and court fee.",
+        "source_record_note": "Decision type controls the route. The page states no administrative appeal for visa refusals; verify against current law and the decision notice.",
+        "retrieval_status": "retrieval_or_conversion_error"
+      },
+      "local_copy_accepted": false,
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "lt-28",
+      "title": "MFA complaints procedure for visa authorities and application process",
+      "url": "https://keliauk.urm.lt/en/entry-to-lithuania/visas/complaints-procedure-",
+      "publisher": "Ministry of Foreign Affairs of Lithuania (URM / Keliauk)",
+      "language": "en",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Renewed 2025-11-26 08:22.",
+      "acceptance_scope": "Renewed 2025-11-26 08:22.",
+      "limitations": [
+        "This decision accepts the official external link only. It does not accept a saved conversion, establish legal-topic adequacy, or complete Lithuania’s source review.",
+        "Use only the instrument, page, language, and displayed version/date stated here. Check a later edition only when it may materially affect the provision or operational instruction being relied on."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-28"
+      },
+      "evidence": {
+        "official_source_url": "https://keliauk.urm.lt/en/entry-to-lithuania/visas/complaints-procedure-",
+        "verified_content": "Official page inspected; describes complaints about staff, provider conduct, or process and a 20-working-day response period, extendable by 10 working days.",
+        "source_record_note": "This complaint path is not the judicial appeal from a visa refusal; keep them separate.",
+        "retrieval_status": "retrieval_or_conversion_error"
+      },
+      "local_copy_accepted": false,
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "lt-31",
+      "title": "Law on Public Administration, VIII-1234",
+      "url": "https://e-tar.lt/portal/lt/legalAct/TAR.0BDFFD850A66/asr",
+      "publisher": "Seimas of the Republic of Lithuania / Register of Legal Acts",
+      "language": "lt",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "e-TAR consolidated edition 2026-10-01 to 2026-12-31; future edition begins 2027-01-01. The captured TAR API text is dated 2024-01-01 and is stale for current use.",
+      "acceptance_scope": "Current edition shown as 2026-10-01 to 2026-12-31; a future edition begins 2027-01-01.",
+      "limitations": [
+        "This decision accepts the official external link only. It does not accept a saved conversion, establish legal-topic adequacy, or complete Lithuania’s source review.",
+        "Use only the instrument, page, language, and displayed version/date stated here. Check a later edition only when it may materially affect the provision or operational instruction being relied on.",
+        "The earlier TAR API capture is not the authoritative current-version selector; consult the specific e-TAR consolidated record and its displayed edition."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-31"
+      },
+      "evidence": {
+        "official_source_url": "https://e-tar.lt/portal/lt/legalAct/TAR.0BDFFD850A66/asr",
+        "verified_content": "Official e-TAR record reviewed. The edition applicable on 2026-10-21 is 2026-10-01 through 2026-12-31, incorporating amendment XV-1133; the older TAR API version is not current.",
+        "source_record_note": "General procedure, not a substitute for special migration law. The law says complaints/applications follow Government-approved procedure.",
+        "retrieval_status": "converted_review_candidate_api_currentness_unverified"
+      },
+      "local_copy_accepted": false,
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "lt-32",
+      "title": "Government rules for handling persons' requests and complaints, Resolution No. 875",
+      "url": "https://e-tar.lt/portal/lt/legalAct/TAR.6565D97B9AA2/asr",
+      "publisher": "Government of the Republic of Lithuania / Register of Legal Acts",
+      "language": "lt",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Current act page and text indexed 2026-10-18.",
+      "acceptance_scope": "Current act page and text indexed 2026-10-18.",
+      "limitations": [
+        "This decision accepts the official external link only. It does not accept a saved conversion, establish legal-topic adequacy, or complete Lithuania’s source review.",
+        "Use only the instrument, page, language, and displayed version/date stated here. Check a later edition only when it may materially affect the provision or operational instruction being relied on."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-32"
+      },
+      "evidence": {
+        "official_source_url": "https://e-tar.lt/portal/lt/legalAct/TAR.6565D97B9AA2/asr",
+        "verified_content": "Official e-TAR indexed text inspected; rules govern request/complaint handling and public-administration service to persons.",
+        "source_record_note": "Apply only where special directly applicable EU, treaty, or national rules do not displace it.",
+        "retrieval_status": "converted_review_candidate_api_currentness_unverified"
+      },
+      "local_copy_accepted": false,
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "lt-33",
+      "title": "Law on Administrative Proceedings, VIII-1029",
+      "url": "https://e-tar.lt/portal/lt/legalAct/TAR.67B5099C5848/asr",
+      "publisher": "Seimas of the Republic of Lithuania / Register of Legal Acts",
+      "language": "lt",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Consolidated text from 2026-06-30; amendment XV-923 dated 2026-05-12.",
+      "acceptance_scope": "Consolidated text from 2026-06-30; amendment XV-923 dated 2026-05-12.",
+      "limitations": [
+        "This decision accepts the official external link only. It does not accept a saved conversion, establish legal-topic adequacy, or complete Lithuania’s source review.",
+        "Use only the instrument, page, language, and displayed version/date stated here. Check a later edition only when it may materially affect the provision or operational instruction being relied on."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-33"
+      },
+      "evidence": {
+        "official_source_url": "https://e-tar.lt/portal/lt/legalAct/TAR.67B5099C5848/asr",
+        "verified_content": "Official e-TAR current record inspected; court-procedure act with current version history.",
+        "source_record_note": "Map time limits, language, evidence, and review to each decision class before relying on general deadlines.",
+        "retrieval_status": "converted_review_candidate_api_currentness_unverified"
+      },
+      "local_copy_accepted": false,
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "lt-34",
+      "title": "Law on Pre-trial Procedure for Administrative Disputes, VIII-1031",
+      "url": "https://e-tar.lt/portal/lt/legalAct/TAR.594F129CE9AD/asr",
+      "publisher": "Seimas of the Republic of Lithuania / Register of Legal Acts",
+      "language": "lt",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Current consolidated version from 2024-01-01; amendment XIV-1994 dated 2023-05-25.",
+      "acceptance_scope": "Current consolidated version from 2024-01-01; amendment XIV-1994 dated 2023-05-25.",
+      "limitations": [
+        "This decision accepts the official external link only. It does not accept a saved conversion, establish legal-topic adequacy, or complete Lithuania’s source review.",
+        "Use only the instrument, page, language, and displayed version/date stated here. Check a later edition only when it may materially affect the provision or operational instruction being relied on."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-34"
+      },
+      "evidence": {
+        "official_source_url": "https://e-tar.lt/portal/lt/legalAct/TAR.594F129CE9AD/asr",
+        "verified_content": "Official e-TAR indexed current edition inspected; it provides general pre-trial review for individual administrative acts/actions unless special procedures apply.",
+        "source_record_note": "Whether this Commission review is optional, required, or unavailable depends on decision-specific law.",
+        "retrieval_status": "converted_review_candidate_api_currentness_unverified"
+      },
+      "local_copy_accepted": false,
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "lt-36",
+      "title": "Seimas Ombudsmen Law, VIII-950",
+      "url": "https://e-tar.lt/portal/lt/legalAct/TAR.EC01522BCE65/asr",
+      "publisher": "Seimas of the Republic of Lithuania / Register of Legal Acts",
+      "language": "lt",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Current consolidated text from 2025-08-01; amendment XV-392 dated 2025-06-30.",
+      "acceptance_scope": "Current consolidated text from 2025-08-01; amendment XV-392 dated 2025-06-30.",
+      "limitations": [
+        "This decision accepts the official external link only. It does not accept a saved conversion, establish legal-topic adequacy, or complete Lithuania’s source review.",
+        "Use only the instrument, page, language, and displayed version/date stated here. Check a later edition only when it may materially affect the provision or operational instruction being relied on."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-36"
+      },
+      "evidence": {
+        "official_source_url": "https://e-tar.lt/portal/lt/legalAct/TAR.EC01522BCE65/asr",
+        "verified_content": "Official current e-TAR version record inspected; it establishes Ombudsman legal basis and powers.",
+        "source_record_note": "The Ombudsman examines abuse of office, bureaucracy, and public-administration rights complaints; it is not a substitute for an appeal deadline.",
+        "retrieval_status": "converted_review_candidate_api_currentness_unverified"
+      },
+      "local_copy_accepted": false,
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "lt-37",
+      "title": "Seimas Ombudsperson applicant information and complaint instructions",
+      "url": "https://www.lrski.lt/en/information-for-applicants/",
+      "publisher": "Seimas Ombudsmen’s Office",
+      "language": "en",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Page crawled 2026-10-18; no visible last-updated date was recorded.",
+      "acceptance_scope": "Page crawled 2026-10-18; no visible last-updated date was recorded.",
+      "limitations": [
+        "This decision accepts the official external link only. It does not accept a saved conversion, establish legal-topic adequacy, or complete Lithuania’s source review.",
+        "Use only the instrument, page, language, and displayed version/date stated here. Check a later edition only when it may materially affect the provision or operational instruction being relied on."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-37"
+      },
+      "evidence": {
+        "official_source_url": "https://www.lrski.lt/en/information-for-applicants/",
+        "verified_content": "Official office page inspected; it describes complaint channels, signing, required information, language limitations, and its public-administration mandate.",
+        "source_record_note": "Complaint documents contain sensitive personal information and are not monitoring payloads.",
+        "retrieval_status": "retrieval_or_conversion_error"
+      },
+      "local_copy_accepted": false,
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "lt-38",
+      "title": "Law on Legal Protection of Personal Data, I-1374",
+      "url": "https://e-tar.lt/portal/lt/legalAct/TAR.5368B592234C/asr",
+      "publisher": "Seimas of the Republic of Lithuania / Register of Legal Acts",
+      "language": "lt",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Current consolidated version from 2026-06-30; amendment XV-904 dated 2026-05-12.",
+      "acceptance_scope": "Current consolidated version from 2026-06-30; amendment XV-904 dated 2026-05-12.",
+      "limitations": [
+        "This decision accepts the official external link only. It does not accept a saved conversion, establish legal-topic adequacy, or complete Lithuania’s source review.",
+        "Use only the instrument, page, language, and displayed version/date stated here. Check a later edition only when it may materially affect the provision or operational instruction being relied on."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-38"
+      },
+      "evidence": {
+        "official_source_url": "https://e-tar.lt/portal/lt/legalAct/TAR.5368B592234C/asr",
+        "verified_content": "Official current e-TAR record and latest amendment chronology inspected.",
+        "source_record_note": "Read with the GDPR and current VDAI materials; do not treat translated legacy forms as current statutory text.",
+        "retrieval_status": "converted_review_candidate_api_currentness_unverified"
+      },
+      "local_copy_accepted": false,
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "lt-39",
+      "title": "State Data Protection Inspectorate service, complaint and request pages",
+      "url": "https://vdai.lrv.lt/en/services/",
+      "publisher": "State Data Protection Inspectorate",
+      "language": "en",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Page crawled 2026-10-18; linked data-protection policy last updated 2025-05-23.",
+      "acceptance_scope": "Page crawled 2026-10-18; linked data-protection policy last updated 2025-05-23.",
+      "limitations": [
+        "This decision accepts the official external link only. It does not accept a saved conversion, establish legal-topic adequacy, or complete Lithuania’s source review.",
+        "Use only the instrument, page, language, and displayed version/date stated here. Check a later edition only when it may materially affect the provision or operational instruction being relied on."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-39"
+      },
+      "evidence": {
+        "official_source_url": "https://vdai.lrv.lt/en/services/",
+        "verified_content": "Official VDAI service list inspected; it links complaint, access/request, and data-protection services and warns that English is informational and Lithuanian submissions are required.",
+        "source_record_note": "Submitted complaints and forms are private applicant data and are not monitoring material.",
+        "retrieval_status": "retrieval_or_conversion_error"
+      },
+      "local_copy_accepted": false,
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "lt-40",
+      "title": "State-Guaranteed Legal Aid Law, VIII-1591",
+      "url": "https://e-tar.lt/portal/lt/legalAct/TAR.EAA93A47BAA1/asr",
+      "publisher": "Seimas of the Republic of Lithuania / Register of Legal Acts",
+      "language": "lt",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Current consolidated text from 2026-05-07.",
+      "acceptance_scope": "Current consolidated text from 2026-05-07.",
+      "limitations": [
+        "This decision accepts the official external link only. It does not accept a saved conversion, establish legal-topic adequacy, or complete Lithuania’s source review.",
+        "Use only the instrument, page, language, and displayed version/date stated here. Check a later edition only when it may materially affect the provision or operational instruction being relied on."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-40"
+      },
+      "evidence": {
+        "official_source_url": "https://e-tar.lt/portal/lt/legalAct/TAR.EAA93A47BAA1/asr",
+        "verified_content": "Official current e-TAR text inspected; it includes aliens-law cases and secondary-aid decision review routes.",
+        "source_record_note": "Eligibility, payment, and access in any immigration or administrative proceeding need a route-specific check.",
+        "retrieval_status": "converted_review_candidate_api_currentness_unverified"
+      },
+      "local_copy_accepted": false,
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "lt-41",
+      "title": "State Guaranteed Legal Aid Service FAQ and complaints procedure",
+      "url": "https://vgtpt.lrv.lt/en/about-state-guaranteed-legal-aid-service/faq/",
+      "publisher": "State-Guaranteed Legal Aid Service",
+      "language": "en",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Complaints page last updated 2026-08-21; FAQ crawled 2026-10-18.",
+      "acceptance_scope": "Complaints page last updated 2026-08-21; FAQ crawled 2026-10-18.",
+      "limitations": [
+        "This decision accepts the official external link only. It does not accept a saved conversion, establish legal-topic adequacy, or complete Lithuania’s source review.",
+        "Use only the instrument, page, language, and displayed version/date stated here. Check a later edition only when it may materially affect the provision or operational instruction being relied on."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-41"
+      },
+      "evidence": {
+        "official_source_url": "https://vgtpt.lrv.lt/en/about-state-guaranteed-legal-aid-service/faq/",
+        "verified_content": "Official service FAQ and complaints page inspected; it describes administrative-case costs and one-month review of specified service decisions.",
+        "source_record_note": "Use the dedicated complaints page for complaints about legal-aid decisions and distinguish it from a migration appeal.",
+        "retrieval_status": "retrieval_or_conversion_error"
+      },
+      "local_copy_accepted": false,
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "lt-42",
+      "title": "LITEKO public search of court decisions",
+      "url": "https://liteko.teismai.lt/viesasprendimupaieska/detalipaieska.aspx",
+      "publisher": "Lithuanian courts / LITEKO",
+      "language": "lt",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Usage guide says result pages cap at 50 and decisions are selectively withheld where anonymisation would defeat publication purpose.",
+      "acceptance_scope": "Usage guide says result pages cap at 50 and decisions are selectively withheld where anonymisation would defeat publication purpose.",
+      "limitations": [
+        "This decision accepts the official external link only. It does not accept a saved conversion, establish legal-topic adequacy, or complete Lithuania’s source review.",
+        "Use only the instrument, page, language, and displayed version/date stated here. Check a later edition only when it may materially affect the provision or operational instruction being relied on."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-42"
+      },
+      "evidence": {
+        "official_source_url": "https://liteko.teismai.lt/viesasprendimupaieska/detalipaieska.aspx",
+        "verified_content": "Official search form and its usage guidance inspected; the system covers published final decisions from administrative and other courts.",
+        "source_record_note": "Not a complete corpus or change feed. Monitor discovery/search guidance only; do not infer absence from no search result.",
+        "retrieval_status": "discovery_surface_no_stable_body"
+      },
+      "local_copy_accepted": false,
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "lt-43",
+      "title": "Supreme Administrative Court and Regional Administrative Court information",
+      "url": "https://lvat.lt/en",
+      "publisher": "Supreme Administrative Court of Lithuania",
+      "language": "en",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Current website observed 2026-10-18; case-specific procedural pages have independent update dates.",
+      "acceptance_scope": "Current website observed 2026-10-18; case-specific procedural pages have independent update dates.",
+      "limitations": [
+        "This decision accepts the official external link only. It does not accept a saved conversion, establish legal-topic adequacy, or complete Lithuania’s source review.",
+        "Use only the instrument, page, language, and displayed version/date stated here. Check a later edition only when it may materially affect the provision or operational instruction being relied on."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-43"
+      },
+      "evidence": {
+        "official_source_url": "https://lvat.lt/en",
+        "verified_content": "Official court website inspected; it links public judgments and identifies the administrative-court hierarchy. The Regional Administrative Court appeal guide was separately found.",
+        "source_record_note": "Court guidance and judgment selection remain separate from statutory appeal grounds and deadlines.",
+        "retrieval_status": "retrieval_or_conversion_error"
+      },
+      "local_copy_accepted": false,
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "lt-44",
+      "title": "Regional Administrative Court appellate and separate complaint guidance",
+      "url": "https://administracinis.teismas.lt/teismo-lankytojams/ka-reiketu-zinoti-kreipiantis-i-teisma/apeliaciniai-ir-atskirieji-skundai/110",
+      "publisher": "Regional Administrative Court of Lithuania",
+      "language": "lt",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Page crawled 2026-10-18; decision-specific migration deadlines must be checked separately.",
+      "acceptance_scope": "Page crawled 2026-10-18; decision-specific migration deadlines must be checked separately.",
+      "limitations": [
+        "This decision accepts the official external link only. It does not accept a saved conversion, establish legal-topic adequacy, or complete Lithuania’s source review.",
+        "Use only the instrument, page, language, and displayed version/date stated here. Check a later edition only when it may materially affect the provision or operational instruction being relied on."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-44"
+      },
+      "evidence": {
+        "official_source_url": "https://administracinis.teismas.lt/teismo-lankytojams/ka-reiketu-zinoti-kreipiantis-i-teisma/apeliaciniai-ir-atskirieji-skundai/110",
+        "verified_content": "Official court page inspected through official search result; it describes a 30-calendar-day appeal to the Supreme Administrative Court for Regional Administrative Court decisions in administrative dispute cases.",
+        "source_record_note": "General administrative-dispute appeal guidance; do not apply its deadline to visa or migration decisions without checking special law.",
+        "retrieval_status": "retrieval_or_conversion_error"
+      },
+      "local_copy_accepted": false,
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "lt-45",
+      "title": "Law on the Declaration of the Place of Residence, VIII-840",
+      "url": "https://www.e-tar.lt/portal/lt/legalAct/TAR.F74ECE427C23/asr",
+      "publisher": "Seimas of the Republic of Lithuania / Register of Legal Acts",
+      "language": "lt",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Current e-TAR consolidation from 2023-01-01; Sections 6 and 10 cover foreigners and the declaration authority, including declaration data submitted with an application for a residence document.",
+      "acceptance_scope": "Current e-TAR consolidation from 2023-01-01; Sections 6 and 10 cover foreigners and the declaration authority, including declaration data submitted with an application for a residence document.",
+      "limitations": [
+        "This decision accepts the official external link only. It does not accept a saved conversion, establish legal-topic adequacy, or complete Lithuania’s source review.",
+        "Use only the instrument, page, language, and displayed version/date stated here. Check a later edition only when it may materially affect the provision or operational instruction being relied on."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-45"
+      },
+      "evidence": {
+        "official_source_url": "https://www.e-tar.lt/portal/lt/legalAct/TAR.F74ECE427C23/asr",
+        "verified_content": "Official e-TAR current consolidated Lithuanian text inspected 21 October 2026; publisher displays the current consolidation from 2023-01-01. The Act includes declaration routes for foreigners seeking a document confirming or granting residence rights.",
+        "source_record_note": "Auxiliary address-declaration and municipal procedure law. It does not establish EU/EEA residence entitlement; read with the Aliens Law and the Register of Residents Act.",
+        "retrieval_status": "external_reference_only_no_local_copy"
+      },
+      "local_copy_accepted": false,
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "lt-46",
+      "title": "Law on the Register of Residents, I-2237",
+      "url": "https://www.e-tar.lt/portal/lt/legalAct/TAR.DCBDC82E26CD/asr",
+      "publisher": "Seimas of the Republic of Lithuania / Register of Legal Acts",
+      "language": "lt",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "Current e-TAR consolidated text from 2025-06-01; Act governs the Register of Residents and personal-code and resident-record data.",
+      "acceptance_scope": "Current e-TAR consolidated text from 2025-06-01; Act governs the Register of Residents and personal-code and resident-record data.",
+      "limitations": [
+        "This decision accepts the official external link only. It does not accept a saved conversion, establish legal-topic adequacy, or complete Lithuania’s source review.",
+        "Use only the instrument, page, language, and displayed version/date stated here. Check a later edition only when it may materially affect the provision or operational instruction being relied on."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-46"
+      },
+      "evidence": {
+        "official_source_url": "https://www.e-tar.lt/portal/lt/legalAct/TAR.DCBDC82E26CD/asr",
+        "verified_content": "Official e-TAR current consolidated Lithuanian text inspected 21 October 2026; publisher displays the current edition from 2025-06-01.",
+        "source_record_note": "Registry and identity-data dependency for residence procedures only. It does not grant residence rights; privacy and access rights require separate review.",
+        "retrieval_status": "external_reference_only_no_local_copy"
+      },
+      "local_copy_accepted": false,
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "lt-47",
+      "title": "Civil Code, VIII-1864 (family-status and residence concepts)",
+      "url": "https://www.e-tar.lt/portal/lt/legalAct/TAR.8A39C83848CB/asr",
+      "publisher": "Seimas of the Republic of Lithuania / Register of Legal Acts",
+      "language": "lt",
+      "checked_on": "2026-10-21",
+      "version_or_scope": "e-TAR edition list identifies the current-at-review-date edition as 2026-09-27 to 2026-12-08; use only provisions relevant to family status and residence concepts.",
+      "acceptance_scope": "e-TAR edition list identifies the current-at-review-date edition as 2026-09-27 to 2026-12-08; use only provisions relevant to family status and residence concepts.",
+      "limitations": [
+        "This decision accepts the official external link only. It does not accept a saved conversion, establish legal-topic adequacy, or complete Lithuania’s source review.",
+        "Use only the instrument, page, language, and displayed version/date stated here. Check a later edition only when it may materially affect the provision or operational instruction being relied on."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-47"
+      },
+      "evidence": {
+        "official_source_url": "https://www.e-tar.lt/portal/lt/legalAct/TAR.8A39C83848CB/asr",
+        "verified_content": "Official e-TAR edition list inspected 21 October 2026; the edition applicable on the review date is displayed as 2026-09-27 through 2026-12-08. The Code defines marriage and family-law relationships and is referenced by the Residence Declaration Act for the meaning of residence.",
+        "source_record_note": "Relevant to marriage and family-status concepts and the statutory definition of residence. It does not replace EU free-movement family-member categories or solve recognition of every foreign relationship.",
+        "retrieval_status": "external_reference_only_no_local_copy"
+      },
+      "local_copy_accepted": false,
+      "decision": "accepted_with_narrow_external_scope"
+    }
+  ],
+  "pending_references": [
+    {
+      "source_id": "lt-04",
+      "title": "TARIS system and data-reuse rules, Seimas Chancellor Order 400-ĮVK-229",
+      "url": "https://www.e-tar.lt/portal/lt/legalAct/b7a2a862746711f1b53dfa020e517810",
+      "reason": "Important source for registry roles, data supply, reuse and protection constraints. Exact clauses and their interaction with dataset licensing need direct legal-text review before automation.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-04"
+      }
+    },
+    {
+      "source_id": "lt-11",
+      "title": "Migration Department free movement in the EU guidance",
+      "url": "https://migracija.lrv.lt/en/activities/free-movement-of-persons-in-the-eu/",
+      "reason": "Stale relative to 2026 law and newer linked guidance. Preserve as a verified freshness warning, not current procedure.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-11"
+      }
+    },
+    {
+      "source_id": "lt-12",
+      "title": "Certificate of the Right of Residence 2022 guidance",
+      "url": "https://migracija.lrv.lt/en/activities/identity-documents/certificate-of-the-right-of-residence/certificate-of-the-right-of-residence-2022/",
+      "reason": "This official page still describes certificates by reference to Regulation (EU) 2019/1157. The CJEU declared that regulation invalid in C-61/22 and Regulation (EU) 2025/1208 is its successor. Pending current specimen and wording review.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-12"
+      }
+    },
+    {
+      "source_id": "lt-13",
+      "title": "Residence-permit and family-card identity-document guide",
+      "url": "https://migracija.lrv.lt/en/activities/identity-documents/residence-permits-documents/residence-permits-since-2020/",
+      "reason": "This official page still attributes family-card format to Regulation (EU) 2019/1157, which the CJEU declared invalid in C-61/22 and which was replaced by Regulation (EU) 2025/1208. Pending human review of updated card specimens and terminology; preserve the page only as a dated warning.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-13"
+      }
+    },
+    {
+      "source_id": "lt-14",
+      "title": "Official bilingual application form for a family member's temporary or permanent residence card",
+      "url": "https://migracija.lrv.lt/uploads/migracija/documents/files/Paslaugos/Pra%C5%A1ym%C5%B3%20formos/LLG%20ir%20LNG/Pra%C5%A1ymas%20i%C5%A1duoti%20ar%20pakeisti%20S%C4%85jungos%20pilie%C4%8Dio%20%C5%A1eimos%20nario%20leidimo%20laikinai%20ar%20nuolat%20gyventi%20%C5%A1alyje%20kortel%C4%99%20pdf.pdf",
+      "reason": "The linked form identifies a 2019 Director Order and has not been verified as the current parent-page attachment after the 2025/1208 card-format transition. Do not rely on it as the current form until the official service page is reviewed.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-14"
+      }
+    },
+    {
+      "source_id": "lt-15",
+      "title": "Migration Department residence-document state fees",
+      "url": "https://migracija.lrv.lt/en/services/state-fees-for-services/residence-permits/",
+      "reason": "Fee amounts and exemptions are dynamic. Refresh against the current fee act and payment instructions.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-15"
+      }
+    },
+    {
+      "source_id": "lt-22",
+      "title": "MFA visa and service fee page",
+      "url": "https://keliauk.urm.lt/en/entry-to-lithuania/visas/visa-and-service-fee",
+      "reason": "Compare visa and external-service fees separately; retain family-member fee exemptions only when current official text confirms them.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-22"
+      }
+    },
+    {
+      "source_id": "lt-24",
+      "title": "MFA competent visa authority information",
+      "url": "https://keliauk.urm.lt/en/entry-to-lithuania/visas/visa-authority-competent-for-examining-and-deciding-on-applications-",
+      "reason": "Discovery candidate; inspect the child page and responsible mission route before relying on it.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-24"
+      }
+    },
+    {
+      "source_id": "lt-29",
+      "title": "MFA visa authorities and visa-center directory",
+      "url": "https://keliauk.urm.lt/en/embassies?letter=all&type=visa_centers",
+      "reason": "Re-discover through the MFA parent page; country-specific appointments and representation agreements are dynamic.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-29"
+      }
+    },
+    {
+      "source_id": "lt-30",
+      "title": "MFA information on personal-data processing in visa applications",
+      "url": "https://keliauk.urm.lt/en/entry-to-lithuania/information-on-the-processing-of-your-personal-data",
+      "reason": "Candidate includes sensitive-processing explanations only; do not harvest applicant information or submitted forms.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-30"
+      }
+    },
+    {
+      "source_id": "lt-35",
+      "title": "Lithuanian Administrative Disputes Commission handling-of-complaints guidance",
+      "url": "https://lagk.lrv.lt/en/fields-of-activity/handling-of-complaints/",
+      "reason": "English page may be stale compared with Lithuanian procedural pages. Do not treat it as a migration-specific review route.",
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lt-35"
+      }
+    }
+  ],
+  "not_relied_upon": [],
+  "whole_site_human_review_offers": [
+    {
+      "site": "https://www.e-tar.lt/",
+      "publisher": "Seimas Chancellery / Register of Legal Acts",
+      "review_for": "Human confirmation of exact current consolidated editions, law-level amendment dates, language and attachments for the cited legal records. e-TAR is the accepted official legal-text source; the dataset API is an optional snapshot route and its “active” field is not sufficient currentness evidence."
+    },
+    {
+      "site": "https://migracija.lrv.lt/en/",
+      "publisher": "Migration Department under the Ministry of the Interior",
+      "review_for": "Current EU/EFTA residence services, current forms and parent-page links, residence declarations, appointment routes, fees, and card specimens. Review the whole official site because several known English pages predate current law or cite the replaced Regulation 2019/1157."
+    },
+    {
+      "site": "https://keliauk.urm.lt/en/entry-to-lithuania/visas",
+      "publisher": "Ministry of Foreign Affairs of Lithuania",
+      "review_for": "Current visa facilitation, nationality and prior-consultation lists, fees, competent authorities, mission representations, external providers, appointment routes and privacy instructions."
+    },
+    {
+      "site": "https://lagk.lrv.lt/",
+      "publisher": "Lithuanian Administrative Disputes Commission",
+      "review_for": "Current pre-trial complaint, delay, language and submission requirements in Lithuanian and English, and the relationship to the Administrative Proceedings Law."
+    },
+    {
+      "site": "https://liteko.teismai.lt/viesasprendimupaieska/",
+      "publisher": "Lithuanian courts / LITEKO",
+      "review_for": "Searchability, publication limits, anonymisation, stable decision identifiers, recent EU-family and visa cases, and completeness boundaries; no absence or completeness inference from search results."
+    },
+    {
+      "site": "https://www.teismai.lt/en",
+      "publisher": "National Courts Administration of Lithuania",
+      "review_for": "Court hierarchy, current appeal guides, filing routes and links to published decisions."
+    },
+    {
+      "site": "https://vdai.lrv.lt/en/",
+      "publisher": "State Data Protection Inspectorate",
+      "review_for": "Current data-subject request and complaint forms, submission channels, language, and privacy guidance."
+    },
+    {
+      "site": "https://vgtpt.lrv.lt/en/",
+      "publisher": "State-Guaranteed Legal Aid Service",
+      "review_for": "Current application and complaint forms, eligibility and administrative/court case guidance."
+    }
+  ],
+  "currentness_and_dependency_note": "The Aliens Law’s current edition on the review date is 2026-07-01 through 2026-10-31; the captured TAR API copy is from 2026-01-01 and is not current. The Public Administration Law’s current edition is 2026-10-01 through 2026-12-31; the API capture begins 2024-01-01. Preserve the statutory reference to Regulation (EU) 2019/1157, but mark it as invalidated in CJEU judgment C-61/22 and replaced by Regulation (EU) 2025/1208; family-card requirements and old specimens need review against the successor regulation, whose 3 August 2026 transition date has passed.",
+  "count_note": "There are 36 accepted external references and 11 pending; 0 local copies and 0 topics are accepted. The candidate manifest count is 47 after three primary laws were added through issue-led review. Lithuania remains incomplete."
+}

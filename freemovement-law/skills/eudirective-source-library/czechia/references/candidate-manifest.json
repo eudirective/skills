@@ -1,26 +1,28 @@
 {
-  "manifest_version": "0.4.2-candidate",
+  "manifest_version": "0.4.3-candidate",
   "external_reference_review_date": "2026-10-21",
   "pack": "czechia-national-legal-sources",
   "inventory_source": "references/source-list.md",
   "inventory_research_date": "2026-10-18",
   "scope": "Candidate Czech national legislation and official guidance, forms, consular instructions, and official court/oversight discovery channels relevant to EU free movement and family members. EU and CJEU source texts are excluded. Czech official guidance also describes similar rights for Icelandic, Liechtenstein, Norwegian, and Swiss citizens; UK Withdrawal Agreement cases are distinct.",
-  "status": "17 official e-Sbírka source references accepted within dated scope; 0 local copies accepted; 26 official guidance, form, mission, court, and oversight candidates remain under review",
-  "retrieval_status": "17 official Czech legal text references captured from e-Sbírka on 2026-10-19 and accepted within dated external-reference scopes; 0 local conversions accepted; 26 guidance/index/form/discovery candidates remain unaccepted",
+  "status": "63 records; 62 official external references accepted within recorded scopes; 1 Decree 429/2010 reference held for whole-portal human review; 0 local copies and 0 topics accepted; country review incomplete",
+  "retrieval_status": "17 e-Sbírka law links, 26 previously captured official guidance/form/discovery references, 15 Czech-language government pages and 4 official court decisions accepted as external references within recorded scope; 1 Decree 429/2010 reference remains pending; 0 local copies accepted",
   "accepted_source_count": 0,
-  "candidate_source_count": 43,
+  "candidate_source_count": 63,
   "official_hosts": [
     "e-sbirka.gov.cz",
     "ipc.gov.cz",
+    "mze.gov.cz",
     "mzv.gov.cz",
     "ochrance.cz",
-    "www.ochrance.cz",
     "portal.gov.cz",
+    "psp.cz",
     "sbirka.nssoud.cz",
     "uoou.gov.cz",
     "usoud.cz",
     "vyhledavac.nssoud.cz",
-    "www.e-sbirka.cz"
+    "www.e-sbirka.cz",
+    "www.ochrance.cz"
   ],
   "secondary_hosts": [],
   "documents": [
@@ -82,7 +84,14 @@
       "external_reference_accepted": true,
       "external_reference_decision": "accepted_with_narrow_external_scope",
       "external_reference_scope": "Official e-Sbírka Czech consolidated text as identified by the publisher as AKTUALNI and effective from the recorded date, retrieved 2026-10-19. Use as a dated government-published working text; recheck the stable record for later retrievals and preserve the informative-text caveat. The locally converted Markdown remains unaccepted.",
-      "local_copy_status": "review_candidate"
+      "local_copy_status": "review_candidate",
+      "supplementary_official_reference": {
+        "url": "https://mze.gov.cz/public/portal/mze/legislativa/pravni-predpisy-mze/uplna-zneni/zakon-c-326-1999",
+        "publisher": "Ministry of Agriculture of the Czech Republic (MZe)",
+        "role": "Supplemental government-hosted current working text; the e-Sbírka dated version remains the temporal anchor because MZe is not the competent immigration-law publisher.",
+        "checked_on": "2026-10-21",
+        "limit": "No effective-from date was visible in the reviewed page; retain the e-Sbírka version metadata and informative-text caveat."
+      }
     },
     {
       "id": "cz-esbirka-2004-500",
@@ -296,7 +305,11 @@
       "source_bytes": 27484,
       "source_content_type": "text/html",
       "retrieved_at": "2026-10-19T04:00:23+00:00",
-      "candidate_class": "discovery"
+      "candidate_class": "discovery",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Official official guidance directory at the recorded URL; accepted as a discovery or parent-index route within its checked scope, not as proof of a complete corpus or all linked records.",
+      "external_reference_reviewed_on": "2026-10-21"
     },
     {
       "id": "cz-esbirka-2017-150",
@@ -353,7 +366,11 @@
       "source_bytes": null,
       "source_content_type": "text/html;charset=utf-8",
       "retrieved_at": "2026-10-19T03:47:46Z",
-      "candidate_class": "guidance"
+      "candidate_class": "guidance",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Official official guidance page at the recorded URL as checked on 2026-10-21, within the scope described in the candidate record. The link does not accept its local conversion or establish legal-topic completeness.",
+      "external_reference_reviewed_on": "2026-10-21"
     },
     {
       "id": "cz-esbirka-2000-301",
@@ -570,7 +587,11 @@
       "source_bytes": null,
       "source_content_type": "text/html; charset=UTF-8",
       "retrieved_at": "2026-10-19T03:47:46Z",
-      "candidate_class": "guidance"
+      "candidate_class": "guidance",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Official official guidance page at the recorded URL as checked on 2026-10-21, within the scope described in the candidate record. The link does not accept its local conversion or establish legal-topic completeness.",
+      "external_reference_reviewed_on": "2026-10-21"
     },
     {
       "id": "cz-ipc-eu-registration",
@@ -596,7 +617,11 @@
       "source_bytes": null,
       "source_content_type": "text/html; charset=UTF-8",
       "retrieved_at": "2026-10-19T03:47:46Z",
-      "candidate_class": "guidance"
+      "candidate_class": "guidance",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Official official guidance page at the recorded URL as checked on 2026-10-21, within the scope described in the candidate record. The link does not accept its local conversion or establish legal-topic completeness.",
+      "external_reference_reviewed_on": "2026-10-21"
     },
     {
       "id": "cz-ipc-family-permanent",
@@ -622,7 +647,11 @@
       "source_bytes": null,
       "source_content_type": "text/html; charset=UTF-8",
       "retrieved_at": "2026-10-19T03:47:46Z",
-      "candidate_class": "guidance"
+      "candidate_class": "guidance",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Official official guidance page at the recorded URL as checked on 2026-10-21, within the scope described in the candidate record. The link does not accept its local conversion or establish legal-topic completeness.",
+      "external_reference_reviewed_on": "2026-10-21"
     },
     {
       "id": "cz-ipc-fiction-residence",
@@ -648,7 +677,11 @@
       "source_bytes": null,
       "source_content_type": "text/html; charset=UTF-8",
       "retrieved_at": "2026-10-19T03:47:46Z",
-      "candidate_class": "guidance"
+      "candidate_class": "guidance",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Official official guidance page at the recorded URL as checked on 2026-10-21, within the scope described in the candidate record. The link does not accept its local conversion or establish legal-topic completeness.",
+      "external_reference_reviewed_on": "2026-10-21"
     },
     {
       "id": "cz-ipc-obligations",
@@ -674,7 +707,11 @@
       "source_bytes": null,
       "source_content_type": "text/html; charset=UTF-8",
       "retrieved_at": "2026-10-19T03:47:46Z",
-      "candidate_class": "guidance"
+      "candidate_class": "guidance",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Official official guidance page at the recorded URL as checked on 2026-10-21, within the scope described in the candidate record. The link does not accept its local conversion or establish legal-topic completeness.",
+      "external_reference_reviewed_on": "2026-10-21"
     },
     {
       "id": "cz-gov-family-temporary",
@@ -701,7 +738,11 @@
       "source_bytes": null,
       "source_content_type": "text/html; charset=utf-8",
       "retrieved_at": "2026-10-19T03:47:46Z",
-      "candidate_class": "guidance"
+      "candidate_class": "guidance",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Official official public service guidance page at the recorded URL as checked on 2026-10-21, within the scope described in the candidate record. The link does not accept its local conversion or establish legal-topic completeness.",
+      "external_reference_reviewed_on": "2026-10-21"
     },
     {
       "id": "cz-gov-family-permanent",
@@ -727,7 +768,11 @@
       "source_bytes": null,
       "source_content_type": "text/html; charset=utf-8",
       "retrieved_at": "2026-10-19T03:47:46Z",
-      "candidate_class": "guidance"
+      "candidate_class": "guidance",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Official official public service guidance page at the recorded URL as checked on 2026-10-21, within the scope described in the candidate record. The link does not accept its local conversion or establish legal-topic completeness.",
+      "external_reference_reviewed_on": "2026-10-21"
     },
     {
       "id": "cz-gov-fiction-residence",
@@ -753,7 +798,11 @@
       "source_bytes": null,
       "source_content_type": "text/html; charset=utf-8",
       "retrieved_at": "2026-10-19T03:47:46Z",
-      "candidate_class": "guidance"
+      "candidate_class": "guidance",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Official official public service guidance page at the recorded URL as checked on 2026-10-21, within the scope described in the candidate record. The link does not accept its local conversion or establish legal-topic completeness.",
+      "external_reference_reviewed_on": "2026-10-21"
     },
     {
       "id": "cz-ombudsman-complaints",
@@ -778,7 +827,11 @@
       "source_bytes": null,
       "source_content_type": "text/html",
       "retrieved_at": "2026-10-19T03:47:46Z",
-      "candidate_class": "guidance"
+      "candidate_class": "guidance",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Official official guidance page at the recorded URL as checked on 2026-10-21, within the scope described in the candidate record. The link does not accept its local conversion or establish legal-topic completeness.",
+      "external_reference_reviewed_on": "2026-10-21"
     },
     {
       "id": "cz-nss-search",
@@ -803,7 +856,11 @@
       "source_bytes": 148854,
       "source_content_type": "text/html",
       "retrieved_at": "2026-10-19T04:00:23+00:00",
-      "candidate_class": "discovery"
+      "candidate_class": "discovery",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Official discovery repository at the recorded URL; accepted as a discovery or parent-index route within its checked scope, not as proof of a complete corpus or all linked records.",
+      "external_reference_reviewed_on": "2026-10-21"
     },
     {
       "id": "cz-nss-collection",
@@ -828,7 +885,11 @@
       "source_bytes": 130496,
       "source_content_type": "text/html",
       "retrieved_at": "2026-10-19T04:00:24+00:00",
-      "candidate_class": "discovery"
+      "candidate_class": "discovery",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Official discovery repository at the recorded URL; accepted as a discovery or parent-index route within its checked scope, not as proof of a complete corpus or all linked records.",
+      "external_reference_reviewed_on": "2026-10-21"
     },
     {
       "id": "cz-usoud-search",
@@ -854,7 +915,11 @@
       "source_bytes": 49013,
       "source_content_type": "text/html",
       "retrieved_at": "2026-10-19T04:00:25+00:00",
-      "candidate_class": "discovery"
+      "candidate_class": "discovery",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Official discovery repository at the recorded URL; accepted as a discovery or parent-index route within its checked scope, not as proof of a complete corpus or all linked records.",
+      "external_reference_reviewed_on": "2026-10-21"
     },
     {
       "id": "cz-ipc-eu-category-definitions",
@@ -880,7 +945,11 @@
       "source_bytes": null,
       "source_content_type": "text/html; charset=UTF-8",
       "retrieved_at": "2026-10-19T03:47:46Z",
-      "candidate_class": "guidance"
+      "candidate_class": "guidance",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Official official guidance page at the recorded URL as checked on 2026-10-21, within the scope described in the candidate record. The link does not accept its local conversion or establish legal-topic completeness.",
+      "external_reference_reviewed_on": "2026-10-21"
     },
     {
       "id": "cz-ipc-forms-directory",
@@ -908,7 +977,11 @@
       "source_bytes": null,
       "source_content_type": "text/html; charset=UTF-8",
       "retrieved_at": "2026-10-19T03:47:46Z",
-      "candidate_class": "discovery"
+      "candidate_class": "discovery",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Official official forms directory at the recorded URL; accepted as a discovery or parent-index route within its checked scope, not as proof of a complete corpus or all linked records.",
+      "external_reference_reviewed_on": "2026-10-21"
     },
     {
       "id": "cz-mzv-visa-forms-index",
@@ -935,7 +1008,11 @@
       "source_bytes": null,
       "source_content_type": "text/html;charset=utf-8",
       "retrieved_at": "2026-10-19T03:47:46Z",
-      "candidate_class": "discovery"
+      "candidate_class": "discovery",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Official official forms directory at the recorded URL; accepted as a discovery or parent-index route within its checked scope, not as proof of a complete corpus or all linked records.",
+      "external_reference_reviewed_on": "2026-10-21"
     },
     {
       "id": "cz-ipc-form-registration",
@@ -963,7 +1040,11 @@
       "source_content_type": "application/pdf",
       "retrieved_at": "2026-10-19T04:00:26+00:00",
       "candidate_source_path": "temp/czechia/pdf/cz-ipc-form-registration-0969b0ca6511abc95398f49f7a677986c19c11c023ca1c65165672b5b5e7fe1c.pdf",
-      "candidate_class": "forms"
+      "candidate_class": "forms",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Official blank form or forms index at the recorded publisher URL as checked on 2026-10-21. Re-discover mutable attachments from the parent index; this link does not accept a local conversion or any completed personal submission.",
+      "external_reference_reviewed_on": "2026-10-21"
     },
     {
       "id": "cz-ipc-form-family-temporary",
@@ -992,7 +1073,11 @@
       "source_content_type": "application/pdf",
       "retrieved_at": "2026-10-19T04:00:28+00:00",
       "candidate_source_path": "temp/czechia/pdf/cz-ipc-form-family-temporary-edbb09c1d6f0cba22e5ff35fc3ba19a41b38ba140014caa7d1c415abf52d0aed.pdf",
-      "candidate_class": "forms"
+      "candidate_class": "forms",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Official blank form or forms index at the recorded publisher URL as checked on 2026-10-21. Re-discover mutable attachments from the parent index; this link does not accept a local conversion or any completed personal submission.",
+      "external_reference_reviewed_on": "2026-10-21"
     },
     {
       "id": "cz-ipc-form-family-renewal",
@@ -1021,7 +1106,11 @@
       "source_content_type": "application/pdf",
       "retrieved_at": "2026-10-19T04:01:04+00:00",
       "candidate_source_path": "temp/czechia/pdf/cz-ipc-form-family-renewal-ed60b255d4c1c2669ce630c4c417f9bec37bdfa7e63a32f511f843d5158bc76b.pdf",
-      "candidate_class": "forms"
+      "candidate_class": "forms",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Official blank form or forms index at the recorded publisher URL as checked on 2026-10-21. Re-discover mutable attachments from the parent index; this link does not accept a local conversion or any completed personal submission.",
+      "external_reference_reviewed_on": "2026-10-21"
     },
     {
       "id": "cz-ipc-form-family-document-change",
@@ -1049,7 +1138,11 @@
       "source_content_type": "application/pdf",
       "retrieved_at": "2026-10-19T04:00:29+00:00",
       "candidate_source_path": "temp/czechia/pdf/cz-ipc-form-family-document-change-de01ecfd7864343a50a015466696749cc78f62a52dff4bd14d54ae4891253e42.pdf",
-      "candidate_class": "forms"
+      "candidate_class": "forms",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Official blank form or forms index at the recorded publisher URL as checked on 2026-10-21. Re-discover mutable attachments from the parent index; this link does not accept a local conversion or any completed personal submission.",
+      "external_reference_reviewed_on": "2026-10-21"
     },
     {
       "id": "cz-ipc-form-family-permanent",
@@ -1078,7 +1171,11 @@
       "source_content_type": "application/pdf",
       "retrieved_at": "2026-10-19T04:00:33+00:00",
       "candidate_source_path": "temp/czechia/pdf/cz-ipc-form-family-permanent-1204eb7be6e5fb7e52aec3327b0b0bb55ceca187ac04956e29d7aca0336df194.pdf",
-      "candidate_class": "forms"
+      "candidate_class": "forms",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Official blank form or forms index at the recorded publisher URL as checked on 2026-10-21. Re-discover mutable attachments from the parent index; this link does not accept a local conversion or any completed personal submission.",
+      "external_reference_reviewed_on": "2026-10-21"
     },
     {
       "id": "cz-mzv-schengen-form-en",
@@ -1106,7 +1203,11 @@
       "source_content_type": "application/pdf",
       "retrieved_at": "2026-10-19T04:00:35+00:00",
       "candidate_source_path": "temp/czechia/pdf/cz-mzv-schengen-form-en-4ce2e28413b1daa3d8f8d14615bbe1aab081977f243453fbf00169be311f4189.pdf",
-      "candidate_class": "forms"
+      "candidate_class": "forms",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Official blank form or forms index at the recorded publisher URL as checked on 2026-10-21. Re-discover mutable attachments from the parent index; this link does not accept a local conversion or any completed personal submission.",
+      "external_reference_reviewed_on": "2026-10-21"
     },
     {
       "id": "cz-mzv-missions-directory",
@@ -1133,7 +1234,11 @@
       "source_bytes": 108161,
       "source_content_type": "text/html",
       "retrieved_at": "2026-10-19T04:00:35+00:00",
-      "candidate_class": "discovery"
+      "candidate_class": "discovery",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Official official mission directory at the recorded URL; accepted as a discovery or parent-index route within its checked scope, not as proof of a complete corpus or all linked records.",
+      "external_reference_reviewed_on": "2026-10-21"
     },
     {
       "id": "cz-mzv-mission-ankara-visas",
@@ -1161,7 +1266,11 @@
       "source_bytes": 19487,
       "source_content_type": "text/html",
       "retrieved_at": "2026-10-19T04:00:39+00:00",
-      "candidate_class": "guidance"
+      "candidate_class": "guidance",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Official mission directory or mission-specific guidance at the recorded URL as checked on 2026-10-21. This sample route does not establish every mission, applicant-residence jurisdiction, appointment route or outsourcing arrangement.",
+      "external_reference_reviewed_on": "2026-10-21"
     },
     {
       "id": "cz-mzv-mission-los-angeles-requirements",
@@ -1189,7 +1298,593 @@
       "source_bytes": 26376,
       "source_content_type": "text/html",
       "retrieved_at": "2026-10-19T04:00:40+00:00",
-      "candidate_class": "guidance"
+      "candidate_class": "guidance",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Official mission directory or mission-specific guidance at the recorded URL as checked on 2026-10-21. This sample route does not establish every mission, applicant-residence jurisdiction, appointment route or outsourcing arrangement.",
+      "external_reference_reviewed_on": "2026-10-21"
+    },
+    {
+      "id": "cz-ipc-eu-family-index-cs",
+      "title": "MOI Information Portal for Foreigners: citizens of EU and their family members (Czech)",
+      "source_type": "official_guidance",
+      "language": "cs",
+      "url": "https://ipc.gov.cz/typy-viz-a-pobytu/obcane-evropske-unie/",
+      "publisher_identifier": {
+        "publisher": "Ministry of the Interior of the Czech Republic (MOI), Information Portal for Foreigners",
+        "official_url": "https://ipc.gov.cz/typy-viz-a-pobytu/obcane-evropske-unie/"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official Ministry of the Interior portal and page identity reviewed on 2026-10-21. Page reviewed for category and route scope; individual procedures remain on child pages.",
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_status": "external_reference_only",
+      "retrieval_shape": "official live page or decision link; no local copy added",
+      "topic_ids": [
+        "RIGHTS-01",
+        "RIGHTS-02",
+        "RIGHTS-10",
+        "FAMILY-01"
+      ],
+      "scope_note": "Czech-language category and route index. It describes EU, EEA EFTA and Swiss treatment separately from the UK Withdrawal Agreement route. It is an index, not the legislation itself.",
+      "local_copy_status": "not_stored",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Czech-language category and route index. It describes EU, EEA EFTA and Swiss treatment separately from the UK Withdrawal Agreement route. It is an index, not the legislation itself. The local copy remains unaccepted."
+    },
+    {
+      "id": "cz-ipc-family-temporary-cs",
+      "title": "MOI Information Portal for Foreigners: temporary residence permit of a family member of an EU citizen (Czech)",
+      "source_type": "official_guidance",
+      "language": "cs",
+      "url": "https://ipc.gov.cz/typy-viz-a-pobytu/obcane-evropske-unie/povoleni-k-prechodnemu-pobytu-rodinnych-prislusniku-obcanu-evropske-unie/",
+      "publisher_identifier": {
+        "publisher": "Ministry of the Interior of the Czech Republic (MOI), Information Portal for Foreigners",
+        "official_url": "https://ipc.gov.cz/typy-viz-a-pobytu/obcane-evropske-unie/povoleni-k-prechodnemu-pobytu-rodinnych-prislusniku-obcanu-evropske-unie/"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official MOI page reviewed 2026-10-21. English counterpart exists; this Czech version is a distinct language reference. It is guidance, not a consolidated statutory text.",
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_status": "external_reference_only",
+      "retrieval_shape": "official live page or decision link; no local copy added",
+      "topic_ids": [
+        "RIGHTS-02",
+        "RIGHTS-04",
+        "VISA-05",
+        "VISA-06",
+        "RESIDENCE-02",
+        "RESIDENCE-03",
+        "RESIDENCE-04",
+        "RESIDENCE-05",
+        "RESIDENCE-06",
+        "ADMIN-03",
+        "ADMIN-04",
+        "ADMIN-10"
+      ],
+      "scope_note": "Czech-language official procedure guidance for temporary residence of EU-citizen family members, including EEA/Swiss scope as stated on the page.",
+      "local_copy_status": "not_stored",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Czech-language official procedure guidance for temporary residence of EU-citizen family members, including EEA/Swiss scope as stated on the page. The local copy remains unaccepted."
+    },
+    {
+      "id": "cz-ipc-eu-registration-cs",
+      "title": "MOI Information Portal for Foreigners: EU citizen registration certificate (Czech)",
+      "source_type": "official_guidance",
+      "language": "cs",
+      "url": "https://ipc.gov.cz/typy-viz-a-pobytu/obcane-evropske-unie/osvedceni-o-registraci/",
+      "publisher_identifier": {
+        "publisher": "Ministry of the Interior of the Czech Republic (MOI), Information Portal for Foreigners",
+        "official_url": "https://ipc.gov.cz/typy-viz-a-pobytu/obcane-evropske-unie/osvedceni-o-registraci/"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official MOI page reviewed 2026-10-21. The certificate procedure is described separately from the underlying right of residence.",
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_status": "external_reference_only",
+      "retrieval_shape": "official live page or decision link; no local copy added",
+      "topic_ids": [
+        "RIGHTS-01",
+        "RESIDENCE-01",
+        "RESIDENCE-10"
+      ],
+      "scope_note": "Czech-language guidance on the optional registration certificate; the page states registration is not a condition of lawful EU residence.",
+      "local_copy_status": "not_stored",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Czech-language guidance on the optional registration certificate; the page states registration is not a condition of lawful EU residence. The local copy remains unaccepted."
+    },
+    {
+      "id": "cz-ipc-family-permanent-cs",
+      "title": "MOI Information Portal for Foreigners: permanent residence permit of an EU citizen family member (Czech)",
+      "source_type": "official_guidance",
+      "language": "cs",
+      "url": "https://ipc.gov.cz/typy-viz-a-pobytu/obcane-evropske-unie/povoleni-k-trvalemu-pobytu-rodinnych-prislusniku-obcanu-evropske-unie/",
+      "publisher_identifier": {
+        "publisher": "Ministry of the Interior of the Czech Republic (MOI), Information Portal for Foreigners",
+        "official_url": "https://ipc.gov.cz/typy-viz-a-pobytu/obcane-evropske-unie/povoleni-k-trvalemu-pobytu-rodinnych-prislusniku-obcanu-evropske-unie/"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official MOI page reviewed 2026-10-21. Eligibility remains subject to the statute and the facts of the individual case.",
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_status": "external_reference_only",
+      "retrieval_shape": "official live page or decision link; no local copy added",
+      "topic_ids": [
+        "RIGHTS-06",
+        "RESIDENCE-07",
+        "RESIDENCE-08",
+        "RESIDENCE-09"
+      ],
+      "scope_note": "Czech-language permanent-residence guidance for family members, including the stated five-year and qualifying two-year routes.",
+      "local_copy_status": "not_stored",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Czech-language permanent-residence guidance for family members, including the stated five-year and qualifying two-year routes. The local copy remains unaccepted."
+    },
+    {
+      "id": "cz-ipc-fiction-residence-cs",
+      "title": "MOI Information Portal for Foreigners: fiction of residence for family members of EU citizens (Czech)",
+      "source_type": "official_guidance",
+      "language": "cs",
+      "url": "https://ipc.gov.cz/spravni-rizeni/fikce-pobytu-na-uzemi-rodinneho-prislusnika-obcana-evropske-unie/",
+      "publisher_identifier": {
+        "publisher": "Ministry of the Interior of the Czech Republic (MOI), Information Portal for Foreigners",
+        "official_url": "https://ipc.gov.cz/spravni-rizeni/fikce-pobytu-na-uzemi-rodinneho-prislusnika-obcana-evropske-unie/"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official MOI page reviewed 2026-10-21. Exact statutory operation and case-specific eligibility require the primary law and decision record.",
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_status": "external_reference_only",
+      "retrieval_shape": "official live page or decision link; no local copy added",
+      "topic_ids": [
+        "RESIDENCE-02",
+        "RESIDENCE-05",
+        "RESIDENCE-06",
+        "REMEDY-02"
+      ],
+      "scope_note": "Czech-language explanation of residence-fictio rules while an application is pending; the page distinguishes close from extended family members.",
+      "local_copy_status": "not_stored",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Czech-language explanation of residence-fictio rules while an application is pending; the page distinguishes close from extended family members. The local copy remains unaccepted."
+    },
+    {
+      "id": "cz-ipc-permit-termination-cs",
+      "title": "MOI Information Portal for Foreigners: termination and cancellation of EU citizen and family-member residence permits (Czech)",
+      "source_type": "official_guidance",
+      "language": "cs",
+      "url": "https://ipc.gov.cz/povinnosti-cizincu/ukonceni-a-zruseni-povoleni-k-pobytu-obcanu-eu-a-jejich-rodinnych-prislusniku/",
+      "publisher_identifier": {
+        "publisher": "Ministry of the Interior of the Czech Republic (MOI), Information Portal for Foreigners",
+        "official_url": "https://ipc.gov.cz/povinnosti-cizincu/ukonceni-a-zruseni-povoleni-k-pobytu-obcanu-eu-a-jejich-rodinnych-prislusniku/"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official MOI page reviewed 2026-10-21. The guidance does not replace the statutory grounds, procedure or remedies.",
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_status": "external_reference_only",
+      "retrieval_shape": "official live page or decision link; no local copy added",
+      "topic_ids": [
+        "RESIDENCE-06",
+        "RESIDENCE-08",
+        "REMEDY-02"
+      ],
+      "scope_note": "Czech-language guidance distinguishing voluntary termination from state cancellation of residence permits.",
+      "local_copy_status": "not_stored",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Czech-language guidance distinguishing voluntary termination from state cancellation of residence permits. The local copy remains unaccepted."
+    },
+    {
+      "id": "cz-ipc-obligations-cs",
+      "title": "MOI Information Portal for Foreigners: obligations of EU citizens and their family members (Czech)",
+      "source_type": "official_guidance",
+      "language": "cs",
+      "url": "https://ipc.gov.cz/povinnosti-cizincu/povinnosti-obcanu-evropske-unie-a-jejich-rodinnych-prislusniku/",
+      "publisher_identifier": {
+        "publisher": "Ministry of the Interior of the Czech Republic (MOI), Information Portal for Foreigners",
+        "official_url": "https://ipc.gov.cz/povinnosti-cizincu/povinnosti-obcanu-evropske-unie-a-jejich-rodinnych-prislusniku/"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official MOI page reviewed 2026-10-21. Apply only to the obligation and category actually described; statutory scope remains to be checked.",
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_status": "external_reference_only",
+      "retrieval_shape": "official live page or decision link; no local copy added",
+      "topic_ids": [
+        "RESIDENCE-10",
+        "ADMIN-04",
+        "DATA-01",
+        "VISA-13"
+      ],
+      "scope_note": "Czech-language administrative obligations guidance for EU citizens and family members.",
+      "local_copy_status": "not_stored",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Czech-language administrative obligations guidance for EU citizens and family members. The local copy remains unaccepted."
+    },
+    {
+      "id": "cz-ipc-eu-fees-cs",
+      "title": "MOI Information Portal for Foreigners: administrative fees for EU citizens and family members (Czech)",
+      "source_type": "official_guidance",
+      "language": "cs",
+      "url": "https://ipc.gov.cz/spravni-rizeni/poplatky-obcane-eu-a-jejich-rodinni-prislusnici/",
+      "publisher_identifier": {
+        "publisher": "Ministry of the Interior of the Czech Republic (MOI), Information Portal for Foreigners",
+        "official_url": "https://ipc.gov.cz/spravni-rizeni/poplatky-obcane-eu-a-jejich-rodinni-prislusnici/"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official MOI page reviewed 2026-10-21. The page is operational guidance, not the fee statute or consular tariff.",
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_status": "external_reference_only",
+      "retrieval_shape": "official live page or decision link; no local copy added",
+      "topic_ids": [
+        "ADMIN-12",
+        "VISA-06",
+        "RESIDENCE-08"
+      ],
+      "scope_note": "Czech-language fee guidance; it excludes consular fees and should be cross-checked against the current administrative-fee schedule for the particular procedure.",
+      "local_copy_status": "not_stored",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Czech-language fee guidance; it excludes consular fees and should be cross-checked against the current administrative-fee schedule for the particular procedure. The local copy remains unaccepted."
+    },
+    {
+      "id": "cz-ipc-personal-submission-cs",
+      "title": "MOI Information Portal for Foreigners: personal filing (Czech)",
+      "source_type": "official_procedure_guidance",
+      "language": "cs",
+      "url": "https://ipc.gov.cz/spravni-rizeni/osobni-podani/",
+      "publisher_identifier": {
+        "publisher": "Ministry of the Interior of the Czech Republic (MOI), Information Portal for Foreigners",
+        "official_url": "https://ipc.gov.cz/spravni-rizeni/osobni-podani/"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official MOI page reviewed 2026-10-21. Filing rules and competent office must be checked for the relevant procedure.",
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_status": "external_reference_only",
+      "retrieval_shape": "official live page or decision link; no local copy added",
+      "topic_ids": [
+        "ADMIN-04",
+        "ADMIN-10",
+        "VISA-07",
+        "RESIDENCE-04"
+      ],
+      "scope_note": "Czech-language guidance on personal submission for EU-family applications. Does not establish every local office appointment route.",
+      "local_copy_status": "not_stored",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Czech-language guidance on personal submission for EU-family applications. Does not establish every local office appointment route. The local copy remains unaccepted."
+    },
+    {
+      "id": "cz-ipc-forms-directory-cs",
+      "title": "MOI Information Portal for Foreigners: forms and documents (Czech)",
+      "source_type": "official_forms_directory",
+      "language": "cs",
+      "url": "https://ipc.gov.cz/formulare-a-dokumenty/",
+      "publisher_identifier": {
+        "publisher": "Ministry of the Interior of the Czech Republic (MOI), Information Portal for Foreigners",
+        "official_url": "https://ipc.gov.cz/formulare-a-dokumenty/"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official MOI forms directory reviewed 2026-10-21. Parent page accepted as a route; this does not accept every linked form or attachment version.",
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_status": "external_reference_only",
+      "retrieval_shape": "official live page or decision link; no local copy added",
+      "topic_ids": [
+        "ADMIN-04",
+        "RESIDENCE-01",
+        "RESIDENCE-02",
+        "RESIDENCE-07",
+        "RESIDENCE-10"
+      ],
+      "scope_note": "Czech-language parent index for forms and documents. Use the live index to rediscover file links because attachment URLs can change.",
+      "local_copy_status": "not_stored",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Czech-language parent index for forms and documents. Use the live index to rediscover file links because attachment URLs can change. The local copy remains unaccepted."
+    },
+    {
+      "id": "cz-gov-family-temporary-cs",
+      "title": "Public Administration Portal: temporary residence permit for an EU citizen family member (Czech)",
+      "source_type": "official_public_service_guidance",
+      "language": "cs",
+      "url": "https://portal.gov.cz/sluzby-vs/zadost-o-povoleni-k-prechodnemu-pobytu-rodinneho-prislusnika-obcana-eu-S6378",
+      "publisher_identifier": {
+        "publisher": "Czech Public Administration Portal (gov.cz)",
+        "official_url": "https://portal.gov.cz/sluzby-vs/zadost-o-povoleni-k-prechodnemu-pobytu-rodinneho-prislusnika-obcana-eu-S6378"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official portal service page reviewed 2026-10-21. Use for the stated service summary and follow linked primary law for legal grounds.",
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_status": "external_reference_only",
+      "retrieval_shape": "official live page or decision link; no local copy added",
+      "topic_ids": [
+        "RESIDENCE-02",
+        "RESIDENCE-03",
+        "RESIDENCE-04",
+        "RESIDENCE-06",
+        "ADMIN-04",
+        "ADMIN-10",
+        "ADMIN-12"
+      ],
+      "scope_note": "Czech-language public-service summary for the temporary-residence application. It is an operational summary, not the full statutory procedure.",
+      "local_copy_status": "not_stored",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Czech-language public-service summary for the temporary-residence application. It is an operational summary, not the full statutory procedure. The local copy remains unaccepted."
+    },
+    {
+      "id": "cz-gov-fiction-residence-cs",
+      "title": "Public Administration Portal: certificate of residence fiction for a family member of an EU citizen (Czech)",
+      "source_type": "official_public_service_guidance",
+      "language": "cs",
+      "url": "https://portal.gov.cz/sluzby-vs/osvedceni-fikce-pobytu-rodinneho-prislusnika-obcana-evropske-unie-na-uzemi-S6970",
+      "publisher_identifier": {
+        "publisher": "Czech Public Administration Portal (gov.cz)",
+        "official_url": "https://portal.gov.cz/sluzby-vs/osvedceni-fikce-pobytu-rodinneho-prislusnika-obcana-evropske-unie-na-uzemi-S6970"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official portal service page reviewed 2026-10-21. The summary does not replace the full statute or individual decision.",
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_status": "external_reference_only",
+      "retrieval_shape": "official live page or decision link; no local copy added",
+      "topic_ids": [
+        "RESIDENCE-02",
+        "RESIDENCE-05",
+        "RESIDENCE-06"
+      ],
+      "scope_note": "Czech-language public-service summary describing lawful residence pending a decision; not a complete account of the statutory fiction or remedies.",
+      "local_copy_status": "not_stored",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Czech-language public-service summary describing lawful residence pending a decision; not a complete account of the statutory fiction or remedies. The local copy remains unaccepted."
+    },
+    {
+      "id": "cz-gov-family-permanent-cs",
+      "title": "Public Administration Portal: permanent residence for an EU citizen family member (Czech)",
+      "source_type": "official_public_service_guidance",
+      "language": "cs",
+      "url": "https://portal.gov.cz/sluzby-vs/trvaly-pobyt-rodinneho-prislusnika-obcana-eu-S6623",
+      "publisher_identifier": {
+        "publisher": "Czech Public Administration Portal (gov.cz)",
+        "official_url": "https://portal.gov.cz/sluzby-vs/trvaly-pobyt-rodinneho-prislusnika-obcana-eu-S6623"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official portal service page reviewed 2026-10-21. Legal conditions remain subject to the current statute.",
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_status": "external_reference_only",
+      "retrieval_shape": "official live page or decision link; no local copy added",
+      "topic_ids": [
+        "RIGHTS-06",
+        "RESIDENCE-07",
+        "RESIDENCE-08",
+        "RESIDENCE-09"
+      ],
+      "scope_note": "Czech-language public-service summary of the permanent-residence route. It does not establish complete eligibility or procedural exceptions.",
+      "local_copy_status": "not_stored",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Czech-language public-service summary of the permanent-residence route. It does not establish complete eligibility or procedural exceptions. The local copy remains unaccepted."
+    },
+    {
+      "id": "cz-mzv-eu-family-visa-cs",
+      "title": "Ministry of Foreign Affairs: short-stay visa for a family member of an EU citizen (Czech)",
+      "source_type": "official_consular_guidance",
+      "language": "cs",
+      "url": "https://mzv.gov.cz/jnp/cz/informace_pro_cizince/kratkodobe_vizum/rodinny_prislusnik_obcana_eu/index.html",
+      "publisher_identifier": {
+        "publisher": "Czech Ministry of Foreign Affairs (MFA)",
+        "official_url": "https://mzv.gov.cz/jnp/cz/informace_pro_cizince/kratkodobe_vizum/rodinny_prislusnik_obcana_eu/index.html"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official MFA page reviewed 2026-10-21. Treat case-specific procedural wording as guidance and cross-check the special EU-family statutory route.",
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_status": "external_reference_only",
+      "retrieval_shape": "official live page or decision link; no local copy added",
+      "topic_ids": [
+        "VISA-01",
+        "VISA-02",
+        "VISA-03",
+        "VISA-04",
+        "VISA-05",
+        "VISA-06",
+        "VISA-07",
+        "VISA-08",
+        "VISA-09",
+        "VISA-10",
+        "MISSION-18",
+        "MISSION-25"
+      ],
+      "scope_note": "Czech-language central guidance for EU-family short-stay visa applicants. The page has a limited scope and does not establish mission-specific filing arrangements.",
+      "local_copy_status": "not_stored",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Czech-language central guidance for EU-family short-stay visa applicants. The page has a limited scope and does not establish mission-specific filing arrangements. The local copy remains unaccepted."
+    },
+    {
+      "id": "cz-mzv-visa-refusal-cs",
+      "title": "Ministry of Foreign Affairs: visa refusal and reconsideration (Czech)",
+      "source_type": "official_remedy_guidance",
+      "language": "cs",
+      "url": "https://mzv.gov.cz/jnp/cz/informace_pro_cizince/zamitnuti_viza/index.html",
+      "publisher_identifier": {
+        "publisher": "Czech Ministry of Foreign Affairs (MFA)",
+        "official_url": "https://mzv.gov.cz/jnp/cz/informace_pro_cizince/zamitnuti_viza/index.html"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official MFA page reviewed 2026-10-21; displayed update date 2026-05-06. Do not apply the general period to an EU-family case without resolving the special statutory route.",
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_status": "external_reference_only",
+      "retrieval_shape": "official live page or decision link; no local copy added",
+      "topic_ids": [
+        "VISA-09",
+        "REMEDY-02",
+        "REMEDY-03"
+      ],
+      "scope_note": "Czech-language general visa-refusal guidance, visibly updated 6 May 2026. It states a 15-day request-for-reconsideration period for Schengen refusals; its application to EU-family applicants requires a statutory crosswalk.",
+      "local_copy_status": "not_stored",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Czech-language general visa-refusal guidance, visibly updated 6 May 2026. It states a 15-day request-for-reconsideration period for Schengen refusals; its application to EU-family applicants requires a statutory crosswalk. The local copy remains unaccepted."
+    },
+    {
+      "id": "cz-nss-8-azs-139-2025-24",
+      "title": "NSS judgment 8 Azs 139/2025-24 (18 December 2025)",
+      "source_type": "individual_court_decision",
+      "language": "cs",
+      "url": "https://vyhledavac.nssoud.cz/DokumentOriginal/Index/748076",
+      "publisher_identifier": {
+        "publisher": "Supreme Administrative Court of the Czech Republic (NSS)",
+        "official_url": "https://vyhledavac.nssoud.cz/DokumentOriginal/Index/748076"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official NSS decision PDF reviewed 2026-10-21; decision date and case identifier match. This is one decision, not a complete case-law search.",
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_status": "external_reference_only",
+      "retrieval_shape": "official live page or decision link; no local copy added",
+      "topic_ids": [
+        "RESIDENCE-05",
+        "RESIDENCE-06",
+        "REMEDY-02",
+        "PRACTICE-04"
+      ],
+      "scope_note": "Official Supreme Administrative Court decision link. The NSS quashed the regional judgment and administrative decision; police deciding departure must independently assess the §87y residence fiction. The residence-card sticker was not determinative, but statutory conditions still had to be proved.",
+      "local_copy_status": "not_stored",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Official Supreme Administrative Court decision link. The NSS quashed the regional judgment and administrative decision; police deciding departure must independently assess the §87y residence fiction. The residence-card sticker was not determinative, but statutory conditions still had to be proved. The local copy remains unaccepted.",
+      "decision_review_date": "2026-10-21"
+    },
+    {
+      "id": "cz-ks-hk-31-a-18-2026-23",
+      "title": "Hradec Králové Regional Court judgment 31 A 18/2026-23 (24 July 2026)",
+      "source_type": "individual_court_decision",
+      "language": "cs",
+      "url": "https://vyhledavac.nssoud.cz/DokumentOriginal/Html/784912",
+      "publisher_identifier": {
+        "publisher": "Regional Court in Hradec Králové; published through the Supreme Administrative Court decisions service",
+        "official_url": "https://vyhledavac.nssoud.cz/DokumentOriginal/Html/784912"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official court HTML reviewed 2026-10-21; court, case number and 24 July 2026 date match. This decision does not establish a general deadline.",
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_status": "external_reference_only",
+      "retrieval_shape": "official live page or decision link; no local copy added",
+      "topic_ids": [
+        "RESIDENCE-02",
+        "ADMIN-11",
+        "REMEDY-02",
+        "REMEDY-03",
+        "PRACTICE-04"
+      ],
+      "scope_note": "Official court decision concerning an inaction action in a temporary EU-family residence matter. The court found the added 60-day period disproportionate on the facts. The operative part says one week; paragraph 34 says five days. Preserve and resolve this internal discrepancy before relying on the precise deadline.",
+      "local_copy_status": "not_stored",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Official court decision concerning an inaction action in a temporary EU-family residence matter. The court found the added 60-day period disproportionate on the facts. The operative part says one week; paragraph 34 says five days. Preserve and resolve this internal discrepancy before relying on the precise deadline. The local copy remains unaccepted.",
+      "decision_review_date": "2026-10-21"
+    },
+    {
+      "id": "cz-ks-hk-31-a-32-2025-64",
+      "title": "Hradec Králové Regional Court judgment 31 A 32/2025-64 (30 December 2025)",
+      "source_type": "individual_court_decision",
+      "language": "cs",
+      "url": "https://vyhledavac.nssoud.cz/DokumentOriginal/Html/769633",
+      "publisher_identifier": {
+        "publisher": "Regional Court in Hradec Králové; published through the Supreme Administrative Court decisions service",
+        "official_url": "https://vyhledavac.nssoud.cz/DokumentOriginal/Html/769633"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official court HTML reviewed 2026-10-21; case identity and decision date match. Historical applicability is explicit in the decision.",
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_status": "external_reference_only",
+      "retrieval_shape": "official live page or decision link; no local copy added",
+      "topic_ids": [
+        "FAMILY-01",
+        "RIGHTS-02",
+        "PRACTICE-04"
+      ],
+      "scope_note": "Official decision concerning an adult parent of a Czech citizen and dependency. The judgment expressly applies law in force until 1 August 2021; it is historical and must not be treated as current law. The application was dismissed.",
+      "local_copy_status": "not_stored",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Official decision concerning an adult parent of a Czech citizen and dependency. The judgment expressly applies law in force until 1 August 2021; it is historical and must not be treated as current law. The application was dismissed. The local copy remains unaccepted.",
+      "decision_review_date": "2026-10-21"
+    },
+    {
+      "id": "cz-nss-10-azs-93-2026-44",
+      "title": "NSS judgment 10 Azs 93/2026-44 (5 August 2026)",
+      "source_type": "individual_court_decision",
+      "language": "cs",
+      "url": "https://vyhledavac.nssoud.cz/DokumentOriginal/Html/784304",
+      "publisher_identifier": {
+        "publisher": "Supreme Administrative Court of the Czech Republic (NSS)",
+        "official_url": "https://vyhledavac.nssoud.cz/DokumentOriginal/Html/784304"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official NSS court HTML reviewed 2026-10-21; case identity and decision date match. Distinguish the underlying regional-court reasoning from the NSS disposition.",
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_status": "external_reference_only",
+      "retrieval_shape": "official live page or decision link; no local copy added",
+      "topic_ids": [
+        "VISA-01",
+        "VISA-02",
+        "VISA-09",
+        "REMEDY-02",
+        "REMEDY-03",
+        "PRACTICE-04"
+      ],
+      "scope_note": "The NSS dismissed the MFA cassation appeal as inadmissible. The underlying regional court had annulled an EU-family short-stay visa refusal for insufficient factual findings concerning an alleged sham marriage. The NSS did not decide the merits.",
+      "local_copy_status": "not_stored",
+      "external_reference_accepted": true,
+      "external_reference_decision": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "The NSS dismissed the MFA cassation appeal as inadmissible. The underlying regional court had annulled an EU-family short-stay visa refusal for insufficient factual findings concerning an alleged sham marriage. The NSS did not decide the merits. The local copy remains unaccepted.",
+      "decision_review_date": "2026-10-21"
+    },
+    {
+      "id": "cz-decree-429-2010",
+      "title": "Decree No. 429/2010 Coll., exceptions from the duty to apply at the locally competent diplomatic mission",
+      "source_type": "national_implementing_legislation",
+      "language": "cs",
+      "url": "https://e-sbirka.gov.cz/sb/2010/429",
+      "publisher_identifier": {
+        "publisher": "e-Sbírka (official Collection of Laws and International Treaties); PSP metadata page https://www.psp.cz/sqw/sbirka.sqw?cz=429&r=2010",
+        "official_url": "https://e-sbirka.gov.cz/sb/2010/429"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official PSP metadata identifies the title, effective date 1 January 2011 and amendment by Decree 67/2019. The e-Sbírka browser response exposed no extractable text during review. Whole-portal human review is recorded; do not reconstruct Gazette fragments by default.",
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_status": "pending_whole_portal_human_review",
+      "retrieval_shape": "official live page or decision link; no local copy added",
+      "topic_ids": [
+        "VISA-03",
+        "VISA-04",
+        "MISSION-18",
+        "MISSION-19"
+      ],
+      "scope_note": "Official instrument identity is verified, but the current consolidated version, version/effective cutoff and applicability to EU-family short-stay and residence routes are unresolved.",
+      "local_copy_status": "not_stored",
+      "external_reference_accepted": false,
+      "external_reference_decision": "pending_whole_portal_human_review",
+      "external_reference_scope": null,
+      "whole_site_review_offer": "cz-esbirka-decree-429-currentness"
     }
   ],
   "retrieved_source_count": 43,
@@ -1216,6 +1911,5 @@
     "capture_manifest": "references/monitor-pass-2026-10-19-capture-results.json"
   },
   "storage_layout_version": "country-pack-template-1",
-  "external_reference_review_date": "2026-10-21",
-  "accepted_external_reference_count": 17
+  "accepted_external_reference_count": 62
 }

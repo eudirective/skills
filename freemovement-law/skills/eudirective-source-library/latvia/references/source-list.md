@@ -7,13 +7,13 @@ State: EU Member State
 Comparison seed: Denmark EU free-movement residence regulation and guidance  
 Scope: bounded discovery across official law/publication, free movement and immigration, forms, visa and consular routes, procedure/access, remedies, privacy/oversight, legal aid and courts. Prior country findings were carried forward as discovery leads and adapter lessons only.
 
-**Discovery result:** 49 official-source and retrieval-route candidates; 0 accepted. **Capture result (19 October 2026):** 41 official HTML pages and 2 original PDFs converted to review-candidate Markdown, with the PDFs preserved byte-for-byte; 6 repository/discovery leads remain monitor-only. Every output remains unaccepted. The [candidate manifest](candidate-manifest.json) records each path and retrieval state; the [capture manifest](latvia-captures.json) records exact hashes, normalized change-detection digests, and replay inputs.
+**Source review (21 October 2026):** 41 of 52 official source records are accepted as external links within stated scope and date limits; 7 remain pending and 4 stale or unverified records are not relied upon. **Local-copy status:** 0 accepted. The 19 October capture pass converted 41 official HTML pages and 2 original PDFs to review-candidate Markdown, with the PDFs preserved byte-for-byte; 6 repository/discovery leads have no individual text. Captures and conversions remain unaccepted. Issue-led review added the Declaration of Place of Residence Act, Law on the Register of Natural Persons, and Civil Status Act. See the [source acceptance register](source-acceptance.json), [issue-led coverage register](coverage-register.md), and [dependency register](dependency-register.json). The [candidate manifest](candidate-manifest.json) records each source and external-reference decision; the [capture manifest](latvia-captures.json) records the separate local review artifacts.
 
 ## Material 2026 status findings
 
-- Latvia’s new EU/EEA/Swiss family and residence law (No. 369282) took effect on 10 July 2026. It expressly identifies EU, EEA and Swiss citizens, family members, mobile Latvian citizens, and UK Withdrawal Agreement beneficiaries. New Cabinet procedures are due by 1 December 2027; the transition clause keeps Regulation 675 for applications filed before commencement.
+- Latvia’s new EU/EEA/Swiss family and residence law (No. 369282) took effect on 10 July 2026. It expressly identifies EU, EEA and Swiss citizens, family members, mobile Latvian citizens, and UK Withdrawal Agreement beneficiaries. New Cabinet procedures are due by 1 December 2027. The Act’s transitional text directs applications filed before commencement to Regulation 675, while the official Regulation 675 record itself displays an end-of-validity date of 2 December 2027. The scope of Regulation 675 for applications filed on or after 10 July 2026 remains unresolved; do not assume it is either fully current or wholly obsolete.
 - The PMLP central EU/EEA/Swiss page was updated on 17 July 2026 and refers to the new law. Several linked checklist, filing and document pages pre-date it. The MFA EU-family page was updated on 17 June 2026 and still cites Cabinet Regulation 675. Treat that as a verified stale-guidance conflict, not as current procedure.
-- A separate new Immigration Law was adopted 20 August 2026 and took effect 15 September 2026. Keep it distinct from free-movement law; reconcile PMLP third-country family guidance and forms against it.
+- A separate new Immigration Law was adopted 20 August 2026 and took effect 15 September 2026. Keep it distinct from free-movement law; some provisions start on 31 December 2027. Reconcile PMLP third-country family guidance and forms against the in-force provisions.
 - The new free-movement Act’s English record says the State Language Centre has not officially translated its text. Latvian-source conversion and translation boundaries need to remain explicit.
 
 ## Candidate register
@@ -46,7 +46,7 @@ Scope: bounded discovery across official law/publication, free movement and immi
 
 | ID | Candidate | Relation | Verification | Route/version note |
 |---|---|---|---|---|
-| lv-05 | [Latvijas Vēstnesis official publication security information](https://www.vestnesis.lv/informacijas-drosiba) | related_source | Official publisher page directly fetched and converted. | Publisher states issue contents and each publication are also produced as PDF electronic documents, signed with the organisation electronic seal, with e-signature fallback. The capture preserves the page, but the linked file's signature/seal still needs cryptographic validation. |
+| lv-05 | [Latvijas Vēstnesis official publication security information](https://www.vestnesis.lv/informacijas-drosiba) | related_source | Official publisher page directly fetched and converted. | Publisher states issue contents and each publication are also produced as PDF electronic documents, signed with the organisation electronic seal, with e-signature fallback. This describes the publisher's process; validate a specific file's seal only when authenticity of that exact PDF is material. |
 
 ### Free Movement Legislation
 
@@ -58,19 +58,19 @@ Scope: bounded discovery across official law/publication, free movement and immi
 
 | ID | Candidate | Relation | Verification | Route/version note |
 |---|---|---|---|---|
-| lv-07 | [Official Gazette publication OP 2026/119.1 — EU/EEA/Swiss residence law](https://www.vestnesis.lv/op/2026/119.1) | close_functional_match | Official Latvijas Vēstnesis publication page and linked PDF directly fetched; original PDF and page-wise Markdown are retained as unaccepted candidates. | Stable OP identifier 2026/119.1; issue 119, 26.06.2026. The linked PDF is the promulgated text; do not treat it alone as the current consolidated text after later amendments. Page-wise text extraction replays offline; cryptographic e-seal/signature verification remains open. |
+| lv-07 | [Official Gazette publication OP 2026/119.1 — EU/EEA/Swiss residence law](https://www.vestnesis.lv/op/2026/119.1) | close_functional_match | Official Latvijas Vēstnesis publication page and linked PDF directly fetched; original PDF and page-wise Markdown are retained as unaccepted candidates. | Stable OP identifier 2026/119.1; issue 119, 26.06.2026. The linked PDF is the promulgated text; do not treat it alone as the current consolidated text after later amendments. The local text remains a review candidate. Check its e-seal only if reliance on that exact file's authenticity matters. |
 
 ### Historical Or Transitional Legislation
 
 | ID | Candidate | Relation | Verification | Route/version note |
 |---|---|---|---|---|
-| lv-08 | [Cabinet Regulation No. 675 of 30 August 2011 — prior EU residence procedure](https://likumi.lv/ta/id/235499-kartiba-kada-savienibas-pilsoni-un-vinu-gimenes-locekli-iecelo-un-uzturas-latvijas-republika) | related_source | Official Likumi.lv record inspected through the new law transition link. | The 2026 law says applications submitted before its commencement are processed under Regulation 675. Do not use as the general post-10.07.2026 procedure without checking repeal and new rules; it remains a transition dependency for pending applications. |
+| lv-08 | [Cabinet Regulation No. 675 of 30 August 2011 — prior EU residence procedure](https://likumi.lv/ta/id/235499-kartiba-kada-savienibas-pilsoni-un-vinu-gimenes-locekli-iecelo-un-uzturas-latvijas-republika) | related_source | Official Likumi.lv record inspected through the new law transition link. | The 2026 Act directs pre-commencement applications to Regulation 675. The regulation’s official record separately says it remains in force until 02.12.2027. Its application to post-10.07.2026 filings is unresolved; do not treat the MFA page's old citation as resolving that issue. |
 
 ### Third Country Immigration Legislation
 
 | ID | Candidate | Relation | Verification | Route/version note |
 |---|---|---|---|---|
-| lv-09 | [Immigration Law (new 2026 Act)](https://likumi.lv/ta/id/370622-imigracijas-likums) | related_source | Official current Likumi.lv act page inspected; document passport and commencement metadata checked. | Law adopted 20.08.2026, published 01.09.2026, effective 15.09.2026; current record is in force. Separate third-country immigration route from the EU/EEA/Swiss free-movement law. The residence-law route must monitor both regimes and reconcile agency pages after this enactment. |
+| lv-09 | [Immigration Law (new 2026 Act)](https://likumi.lv/ta/id/370622-imigracijas-likums) | related_source | Official current Likumi.lv act page inspected; document passport and commencement metadata checked. | Law adopted 20.08.2026, published 01.09.2026, effective 15.09.2026; record shows the current edition through 30.12.2027, with some provisions effective 31.12.2027. Separate this third-country route from EU/EEA/Swiss free movement. |
 
 ### Uk Withdrawal Agreement Legislation
 
@@ -241,7 +241,7 @@ Scope: bounded discovery across official law/publication, free movement and immi
 
 | ID | Candidate | Relation | Verification | Route/version note |
 |---|---|---|---|---|
-| lv-45 | [Latvijas Vēstnesis daily issue archive and act publication pages](https://www.vestnesis.lv/) | related_source | Official Gazette archive inspected through the 2026/119.1 publication. | Archive browses issues from 1993 onward; each target publication exposes its own OP identifier and PDF link. A source-of-record retrieval path; stable OP identity and signature checks still need implementation and replay. |
+| lv-45 | [Latvijas Vēstnesis daily issue archive and act publication pages](https://www.vestnesis.lv/) | related_source | Official Gazette archive inspected through the 2026/119.1 publication. | Archive browses issues from 1993 onward; each target publication exposes its own OP identifier and PDF link. Accepted as an official source-of-record and discovery route; routine signature validation or replay is not required for use of current consolidated text links. |
 
 ### Legislation Change Discovery
 
@@ -258,7 +258,7 @@ No candidate or source class is declared absent. The search did not establish al
 ## Retrieval route observations
 
 - Likumi.lv exposes current, historic and future versions, legal status, related records and search. Its own about page says the content is informational and the official Gazette prevails in discrepancies.
-- Latvijas Vēstnesis provides stable OP identifiers and publication-specific PDFs; the official publisher says PDFs carry an organisational electronic seal (or e-signature fallback). The direct capture preserved the OP 2026/119.1 PDF bytes and page-wise text; cryptographic signature validation remains unimplemented.
+- Latvijas Vēstnesis provides stable OP identifiers and publication-specific PDFs; the official publisher says PDFs carry an organisational electronic seal (or e-signature fallback). The direct capture preserved the OP 2026/119.1 PDF bytes and page-wise text. A seal check is relevant only if a question depends on the authenticity of that specific PDF.
 - Likumi.lv displays an RSS icon for newly published acts, but the research browser resolved only the icon image. The feed URL, scope and payload remain unverified. No official public API was found in the bounded search.
 - Likumi.lv terms were fetched directly. They say systematised acts are available for reuse under the applicable public-information rules and fees and that the publisher organizes reuse. The official publisher separately requires written coordination, a stated purpose/product/service, and currently identifies grouped official notices as the supported public-interface route. A recurring legal-text monitor's availability, price and delivery format therefore require written confirmation.
 - A repeat capture exposed volatile inline scripts, CSRF tokens and Drupal view IDs. The rule stores and hashes the exact raw response while ignoring only those identified values for comparison. All remaining HTML and link changes are still staged for review; exact PDF bytes are compared.
@@ -271,5 +271,13 @@ No candidate or source class is declared absent. The search did not establish al
 | lv-47 | [Cabinet Regulation No. 536 — Official Publications Regulation](https://likumi.lv/ta/id/325308) | related_source | Official in-force regulation record fetched and converted. | Adopted 10.08.2021, effective 13.08.2021. Sets fees for re-use of official publications and Likumi.lv systematised acts: EUR 0.57 per document, EUR 21.34 per publication group/month, or EUR 128.06 for all groups/month. Confirm which fee and delivery scope applies to this library. |
 | lv-48 | [Latvijas Vēstnesis re-use procedure](https://www.vestnesis.lv/atkalizmantosana) | related_source | Official publisher page fetched and converted. | Re-use must be coordinated in writing; the request must state purpose and product/service. The page says the current interface supports grouped official notices. It does not establish that the interface supplies a recurring feed of consolidated legal acts. |
 | lv-49 | [Latvijas Vēstnesis services and re-use information](https://www.lv.lv/lv/pakalpojumi) | related_source | Official publisher service page fetched and converted. | Describes the re-use service, contact route, fee schedule and Regulation No. 536. Treat it and its linked tariff as parent routes for current service details; recheck fees before reuse. |
+
+### Additional Primary Laws Identified Through Issue-Led Review
+
+| ID | Candidate | Relation | Verification | Route/version note |
+|---|---|---|---|---|
+| lv-50 | [Declaration of Place of Residence Act](https://likumi.lv/ta/id/64328) | related_source | Official consolidated Latvian act page inspected on 21 October 2026; publisher metadata shows it in force. | Covers address declaration and competent-authority rules. It does not establish EU/EEA residence eligibility; read with Act No. 369282 and the Register of Natural Persons Act. |
+| lv-51 | [Law on the Register of Natural Persons](https://likumi.lv/ta/id/296185) | related_source | Official consolidated edition inspected; the selected edition is in force from 29 April 2026. | Section 4 includes foreigners holding or applying for listed EU registration/permanent-residence documents. The register law does not itself grant residence rights; read with the free-movement Act and data-protection rules. |
+| lv-52 | [Civil Status Act](https://likumi.lv/ta/id/253442) | related_source | Official consolidated Latvian act page inspected on 21 October 2026; publisher metadata shows it in force. | Relevant to civil-status registration and foreign marital-status documents for marriage registration in Latvia. It does not resolve recognition of every foreign family document in residence procedures; section 4(3) points to the Administrative Procedure Law for refusal appeals. |
 
 See [README.md](../README.md) and [sustainability-assessment.md](sustainability-assessment.md) for scope and proposed-route sustainability findings.

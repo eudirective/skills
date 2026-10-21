@@ -1,15 +1,15 @@
 # Czechia source-rule sustainability assessment
 
-**Assessment date:** 19 October 2026; acceptance addendum 21 October 2026
-**Pack version assessed:** 0.4.0; current pack 0.4.2
-**Manifest:** 43 records; 17 accepted official external references; 0 local copies accepted
+**Assessment date:** 21 October 2026 (detailed retrieval-route review conducted 19 October)
+**Pack version assessed:** initial retrieval design 0.4.0; current pack 0.4.3
+**Manifest:** 63 records; 62 accepted official external references within stated scope; 1 Decree 429/2010 link pending whole-portal human review; 0 local copies and 0 topics accepted
 **Scope:** active legal and guidance acquisition rules, plus the repeatability limits of the one-time monitor/discovery capture.
 
 ## Summary
 
 The pack now has replayable conversions for 17 current e-Sbírka legal texts, 13 official guidance/index pages, and 13 monitor/discovery pages. The legal route was repaired after the registration-gated REST API proved infeasible: the capture uses e-Sbírka's public page-data service, which the official web application itself uses, without an account or API key. This route resolved all 17 records and supplied effective-version metadata plus ordered text fragments. It is technically demonstrated but not yet a guaranteed publisher interface.
 
-No local copy has been accepted. This does not block use of a reviewed official source link within its displayed scope. For retained conversions, review the relevant content and use broader comparison only when the conversion is lossy or the whole converted text will be relied on. The 43-record inventory is not a completeness claim.
+No local copy has been accepted. This does not block use of a reviewed official source link within its displayed scope. For retained conversions, review the relevant content and use broader comparison only when the conversion is lossy or the whole converted text will be relied on. The initial 43-record inventory was not a completeness claim. The current 63-record register also does not establish complete legal coverage.
 
 ## Acceptance addendum — 21 October 2026
 
@@ -39,3 +39,12 @@ The research browser opened the e-Sbírka record pages on 21 October but returne
 - `node scripts/sync-czechia.mjs --verify`: 13/13 guidance conversions replayed; 0 failures.
 - `python source-library/sync_candidate_pages.py czechia verify monitor-pass-2026-10-19.json candidates`: 13/13 monitor/discovery conversions replayed; 0 failures.
 - These checks verify stored bytes and deterministic conversion only. They neither refresh the sources nor accept or promote any candidate.
+
+
+## External-reference review update (21 October 2026)
+
+The link-only source-reference gate is now applied to the records already reviewed. There are 63 candidate records: 62 official external references accepted within stated publisher, language, date/status and scope limits, one Decree 429/2010 record offered for whole e-Sbírka portal review, zero accepted local copies, and zero topics adequately covered. The 26 earlier official pages and 19 added Czech-language pages/decisions are links only; retained conversions remain unaccepted.
+
+The MZe-hosted Act 326 page is a supplemental government working text; e-Sbírka remains the temporal anchor. Four selected court decisions add useful evidence but do not constitute repeatable case-law discovery. The visa refusal page states a general 15-day reconsideration period, whose application to EU-family applicants remains unresolved. Decree 429/2010 has official identity metadata but its current consolidation, cutoff and route applicability need a human reviewer. See `source-acceptance.json`, `coverage-model.json`, `source-dependencies.json`, and `human-review-offers.md`.
+
+The 14 topic map remains partial. Most source dependencies have not had a full cross-reference scan; the register marks that work explicitly. The four Czech-language EUR-Lex records are official external-only leads, but direct pages returned a JS/robot check and their text was not validated. No challenge was bypassed.

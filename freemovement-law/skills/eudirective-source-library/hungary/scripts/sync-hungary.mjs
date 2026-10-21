@@ -23,8 +23,8 @@ const CONVERTER_VERSION = 'hungary-source-md-v2-page-ocr';
 const MAX_SOURCE_BYTES = 25 * 1024 * 1024;
 let state = { schema_version: 1, sources: {}, discoveries: [] };
 try { state = JSON.parse(await readFile(jsonPath, 'utf8')); } catch (e) { if (e.code !== 'ENOENT') throw e; }
-const lawSources = manifest.laws.filter(x => !x.discovery_only).map(x => ({ ...x, kind: 'law' }));
-const oifSources = manifest.oif_pages.filter(x => !x.discovery_only).map(x => ({ ...x, kind: 'oif' }));
+const lawSources = manifest.laws.filter(x => !x.discovery_only && !x.link_only).map(x => ({ ...x, kind: 'law' }));
+const oifSources = manifest.oif_pages.filter(x => !x.discovery_only && !x.link_only).map(x => ({ ...x, kind: 'oif' }));
 // NJT's recorded terms prohibit automated bulk retrieval/storage. Keep its
 // government-published consolidated texts as human-reviewed references; only
 // verify or reconvert any historical local captures offline.

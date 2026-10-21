@@ -1,0 +1,150 @@
+{
+  "schema_version": "0.1.0",
+  "jurisdiction": "Netherlands",
+  "reviewed_on": "2026-10-21",
+  "source_review_manifest": "source-review-manifest.json",
+  "status": "external_links_reviewed_with_narrow_scope; topic_coverage_incomplete",
+  "source_count": 62,
+  "accepted_external_reference_count": 59,
+  "not_relied_upon_count": 3,
+  "accepted_source_ids": [
+    "nl-01",
+    "nl-02",
+    "nl-03",
+    "nl-04",
+    "nl-05",
+    "nl-06",
+    "nl-07",
+    "nl-08",
+    "nl-09",
+    "nl-10",
+    "nl-11",
+    "nl-12",
+    "nl-13",
+    "nl-14",
+    "nl-15",
+    "nl-16",
+    "nl-17",
+    "nl-18",
+    "nl-19",
+    "nl-20",
+    "nl-21",
+    "nl-22",
+    "nl-23",
+    "nl-24",
+    "nl-25",
+    "nl-26",
+    "nl-27",
+    "nl-28",
+    "nl-29",
+    "nl-30",
+    "nl-31",
+    "nl-32",
+    "nl-33",
+    "nl-34",
+    "nl-35",
+    "nl-36",
+    "nl-37",
+    "nl-40",
+    "nl-41",
+    "nl-42",
+    "nl-43",
+    "nl-44",
+    "nl-45",
+    "nl-46",
+    "nl-47",
+    "nl-48",
+    "nl-50",
+    "nl-51",
+    "nl-52",
+    "nl-53",
+    "nl-54",
+    "nl-55",
+    "nl-56",
+    "nl-57",
+    "nl-58",
+    "nl-59",
+    "nl-60",
+    "nl-61",
+    "nl-62"
+  ],
+  "not_relied_upon": [
+    {
+      "source_id": "nl-38",
+      "reason": "The captured NetherlandsWorldwide route returned HTTP 404. Do not rely on this exact URL as a country-specific instruction page; offer the official NetherlandsWorldwide site for human review."
+    },
+    {
+      "source_id": "nl-39",
+      "reason": "This is the older 2022 visa checklist and resolves to the current checklist route. Do not treat the dated PDF as a separate current source; use nl-34."
+    },
+    {
+      "source_id": "nl-49",
+      "reason": "The captured Rechtspraak help route returned HTTP 403 in the research client. This does not establish publisher downtime; offer the official Rechtspraak site for human review."
+    }
+  ],
+  "local_copy_accepted_count": 0,
+  "topic_accepted_count": 0,
+  "country_review_complete": false,
+  "acceptance_basis": [
+    "Official publisher identity and the stated page or instrument were checked from the captured official pages, current official search results, or the linked publisher record.",
+    "Dutch legislation links point to official Wetten.nl consolidated records. Observed effective dates are preserved as dated evidence; the official publisher page remains the source to consult for its current displayed edition.",
+    "Official operational guidance, forms, court and oversight portals are accepted only for their stated service or discovery scope. They do not prove legal requirements, remedies, complete case-law publication, or jurisdiction in an individual matter.",
+    "Direct access to Wetten.nl and some service pages was restricted in the research client. This is not treated as publisher downtime or a reason to require automated extraction. Whole official websites are offered for human review when a page, currentness point, legal dependency, or operational detail needs direct inspection.",
+    "An accepted external link is independent of local conversion, hashes, replay, reuse permission, topic adequacy, and country completion. No local copy or legal topic is accepted here."
+  ],
+  "evidence_cutoffs": [
+    {
+      "source_family": "Wetten.nl",
+      "evidence": "Dated official consolidated versions captured 18-19 October 2026 for existing records; new BWBR pages found in official publisher search results dated 22-28 April 2026. New BRP decree and regulation records were found in official Wetten.nl search results dated 22-25 April 2026.",
+      "limit": "For a specific current or historical legal question, inspect the displayed version and effective interval on the official publisher site."
+    },
+    {
+      "source_family": "IND",
+      "evidence": "Official search result/page review confirms the EU-family guidance update of 25 September 2026, free-movement guidance update of 10 July 2026, objection/appeal guidance update of 10 August 2026, and card-model page update of 29 June 2026.",
+      "limit": "Dynamic pages and linked forms can change; check the current page and form before use."
+    },
+    {
+      "source_family": "other official service, court, oversight and discovery sites",
+      "evidence": "Captured official pages dated 18-19 October 2026; specific page scopes are stated in the source-review manifest.",
+      "limit": "Search portals may be dynamic or selective and operational pages may change."
+    }
+  ],
+  "whole_site_human_review_offers": [
+    {
+      "site": "https://wetten.overheid.nl/",
+      "publisher": "Wetten.nl / KOOP",
+      "offer": "Review the official consolidated text, displayed effective date, and linked publisher record directly. No Gazette-chain reconstruction or machine-readable export is required by default."
+    },
+    {
+      "site": "https://ind.nl/en/",
+      "publisher": "Immigration and Naturalisation Service",
+      "offer": "Review current family, residence-document, application, forms, fee, decision-period and objection/appeal pages; verify the exact route and displayed update date."
+    },
+    {
+      "site": "https://www.netherlandsworldwide.nl/",
+      "publisher": "Ministry of Foreign Affairs",
+      "offer": "Review country-specific visa applications, appointments, mission assignments, checklists and outsourcing arrangements; the captured nl-38 route returned 404."
+    },
+    {
+      "site": "https://www.rechtspraak.nl/",
+      "publisher": "Dutch Judiciary",
+      "offer": "Review the live case-law search and search help; capture access failures are not treated as publisher downtime, and search publication is not presumed exhaustive."
+    },
+    {
+      "site": "https://www.raadvanstate.nl/",
+      "publisher": "Council of State",
+      "offer": "Review current immigration judgment-search and publication information; published decisions are not presumed to cover every decision."
+    },
+    {
+      "site": "https://www.rechtsbijstand.nl/",
+      "publisher": "Legal Aid Board",
+      "offer": "Review current legal-aid service eligibility and application procedure for the relevant non-asylum EU-family proceedings."
+    },
+    {
+      "site": "https://www.government.nl/",
+      "publisher": "Government of the Netherlands",
+      "offer": "Review central guidance and follow the competent municipality links for BRP registration procedures."
+    }
+  ],
+  "content_reuse": "No permission to copy, bulk retrieve, convert, or republish is inferred from external-reference acceptance."
+}

@@ -1,39 +1,33 @@
-Skill: assess-source-rule-sustainability v0.2.0
-
 # Netherlands source-route sustainability assessment
 
-Status date: 19 October 2026
+**Assessment date:** 21 October 2026
 
-State: eight scoped source-list candidates and 49 pages from the broader 52-record monitor register are converted as unaccepted review candidates; 50 exact monitor responses were saved, one page was textless, two requests failed, and zero sources are accepted.
+**Skill:** `assess-source-rule-sustainability` v0.2.0
 
-## Assessment boundary
+**State:** official source links reviewed; 59 external references accepted within scope, 3 exact routes not relied upon; no local copies or topics accepted; country review remains incomplete.
 
-The scoped source list contains six Wetten.nl statutory instruments and two IND guidance pages. All eight have official-page captures, extracted Markdown, source hashes and deterministic offline replay records. The separate monitor pass has 50 exact responses and 49 replay-verified conversions. Neither set establishes completeness for Dutch national or local sources.
+## Ordinary use
 
-## Wetten.nl current-text route
+The most sustainable ordinary route is to use the official publisher page directly. Wetten.nl exposes Dutch legislation as consolidated records with a stable BWB identifier and a displayed effective interval. Use the current government consolidation and note its date where version precision matters. A dated working text is preferable to rebuilding an amendment chain from Gazette fragments. Human review of an official link is sufficient; a local copy is optional.
 
-For each legislation record, the implementation requests the official stable BWB identifier without pinning an old effective-date query. The publisher redirects to the version current at retrieval. The page supplies the BWB identity, consultation date, effective interval and, where present, future or undated amendment notices. The extractor is limited to the `regeling` document container and retains the returned URL and original HTML hash. Six legal texts were retrieved on 18 October 2026; their publisher effective versions ranged from 25 September 2026 to 1 July 2026, and each was in force on the recorded assessment date.
+IND and NetherlandsWorldwide provide the relevant residence, family, visa, form, fee, appointment, and operational pages. Their content can change, so check the live page and linked form when using a deadline, document checklist, fee, or mission instruction. The review found page-specific limits that matter: IND's EU-family page was last updated 25 September 2026, while its residence-document model page was last updated 29 June 2026 and needs review against the EU card-format rules that took effect after that update.
 
-**Assessment: fragile (medium-low confidence).** The current-version path and effective-date markers were live-checked successfully, but this implementation extracts structured HTML rather than using the publisher's XML export, whose interactive flow was documented in the official page but not established as an unattended endpoint. A page redesign could break extraction; the source's reuse terms were not independently confirmed for this automated copy workflow. The result is suitable as a review capture, not a rule to accept without a supported export route and source-use review.
+## Link acceptance and local artifacts
 
-## IND guidance route
+The [source-acceptance register](source-acceptance.json) accepts 59 official links only for their listed page, instrument, service, or discovery scope. It offers whole official websites for human review where direct page access, currency, a broken route, or operational details need inspection. Three exact routes are not relied upon: an obsolete visa checklist, a NetherlandsWorldwide route that returned 404, and a Rechtspraak help page that returned 403 in the research client. These responses do not establish publisher downtime.
 
-Two official IND pages were retrieved from their public URLs and extracted from the `main` element. The EU-family verification page displays an update date of 25 September 2026. The objection/appeal page has no comparable stable version identifier in the capture. These pages may change as the application service or administrative process changes.
+The previous eight-source conversion pass and the wider 52-source conversion pass remain unaccepted artifacts. Their captures and replay hashes are evidence about those past conversions only. The wider pass used broad `body` extraction for some dynamic pages; this is not accepted as semantic validation. No extraction, hashing, replay, machine API, or recurring update job is required to use the official links.
 
-**Assessment: fragile (low confidence).** Direct pages are usable for review but lack a validated parent-index rediscovery rule and reliable change metadata. A future monitor should rediscover them from official IND topic indexes, record page dates and linked forms, and detect material text or destination changes.
+## Optional retained copies
 
-## Findings and limits
+If a future use case requires local copies or recurring monitoring, choose that work source by source. First check whether the publisher provides a usable download or export and whether retaining it is necessary. For a law, compare the relevant provisions against the official page; for a PDF specimen or form, inspect the actual attachment. Keep raw captures and conversion rules only when reproducibility is a real requirement. No blanket license or reuse permission is inferred from this assessment.
 
-| Source group | Maturity | Evidence | Remaining issue |
-|---|---|---|---|
-| Wetten.nl consolidated laws and regulation | Converted review candidates | Six stable BWB records resolve to current pages; identity, effective interval, raw hash and deterministic replay are recorded | HTML scraping is unsupported by a demonstrated unattended export route; usage terms and historic-version policy need confirmation; no authentic publication-chain reconciliation |
-| IND residence and appeal guidance | Converted review candidates | Two official pages extracted; one displays a 25 September 2026 update date | Parent-page rediscovery and dependable change/version metadata are absent; verify linked forms and exact procedural scope |
-| Wider 52-record monitor inventory | Review-candidate capture | 50 exact responses; 49 page conversions replay-verified; one textless discovery shell; two retrieval failures | Records are not reconciled into the eight-record scoped list; no source-specific version, reuse, or completeness rule established |
+## Remaining sustainability and coverage work
 
-## Ordinary source use and optional monitoring
+- Confirm the current Dutch residence-card specimen and its status under Regulation (EU) 2025/1208. The IND model-2020 page predates the regulation's 3 August 2026 transition date.
+- Map the remedies and decision deadlines for each EU-family decision type; the general IND objection/appeal page is not a decision-specific crosswalk.
+- Review mission-specific appointment and outsourcing instructions and the Wet BRP, Besluit BRP, Regeling BRP, and municipal process for the relevant municipality.
+- Establish how broadly Dutch immigration decisions are published in Rechtspraak and Raad van State search tools; neither search surface is treated as exhaustive.
+- Determine the scope of publicly funded legal aid for EU-family immigration objections and appeals from the current Act and implementing criteria.
 
-For ordinary research, use the latest government-published Wetten.nl text or official IND page after checking its displayed version/date and scope. A reviewed link is usable without XML export, local capture, publisher API, replay, or historic-version automation. Check promulgation, commencement, or an older version only when it affects the question; no full history is a default gate.
-
-If recurring monitoring or local retention is requested, then confirm the relevant publisher terms and choose a documented route. Keep IND forms and services read-only and do not submit or retain user data. The monitor inventory's failed routes and textless shell remain coverage limits, not proof that a source reference is unusable.
-
-No locally stored artifact is accepted. A successful response, stable identifier or replay hash does not establish legal completeness or trust.
+These open matters are recorded in the [issue-led coverage register](coverage-register.md). They do not make the official links unusable, but they prevent a country-complete finding.

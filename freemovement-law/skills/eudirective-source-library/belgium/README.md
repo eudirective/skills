@@ -1,13 +1,14 @@
 # Belgium national-source candidates
 
-This is the second alphabetical discovery installment in the 31-jurisdiction EEA-plus-Switzerland expansion. It reconciles the prior public-mirror Belgium inventory with the expanded review and records 39 distinct official candidates. A bounded capture pass now has exact responses and replay-verified conversions for all 39 records, stored in a separate `monitor-candidates/` folder. None of the local conversions is accepted, and the generic pass does not establish a sustainable source-specific update rule. Human-reviewed official links remain usable within their checked scope.
+Review date: 21 October 2026. This is a bounded source register, not a claim that Belgian law or procedures are complete. The review now accepts 47 official external links within their recorded scope; one superseded IBZ route is not relied upon. No local copy or legal topic is accepted, and Belgium review is incomplete.
 
-The candidates cover the Immigration Act and implementing decree, official forms and indexes, EU-family residence guidance, a distinct mobile-Belgian route, D-visa instructions, national consular routing and mission examples, administrative procedure, access to records at federal and regional levels, complaint and review channels, data protection, private international law, adoption guidance, and a selected court-material lead. The capture pass preserved source hashes and conversions for offline replay. A successful generic GET does not establish text completeness or legal currentness; Justel version history, changing form versions, reuse terms, regional competence, and full court coverage remain open.
+Official government links can be used directly when publisher and source role are clear. If the current consolidated record or exact source scope is unclear, the whole official legal website/service is offered for human review. The 39 earlier local conversions remain unaccepted review aids; the 9 new link records have no local capture. Neither capture, custom conversion, API access, Gazette-fragment reconstruction, hash, nor replay is required to accept an official link.
 
-- Candidate records and publisher search log: [`references/source-list.md`](references/source-list.md)
-- Candidate metadata: [`references/candidate-manifest.json`](references/candidate-manifest.json)
-- Bounded capture ledger: [`references/belgium-capture-results.json`](references/belgium-capture-results.json)
-- Proposed-route sustainability assessment: [`references/sustainability-assessment.md`](references/sustainability-assessment.md)
+- Candidate records and search notes: [`references/source-list.md`](references/source-list.md)
+- Candidate metadata and separate external-link/local-copy states: [`references/candidate-manifest.json`](references/candidate-manifest.json)
+- External-link decisions and whole-site review options: [`references/source-acceptance.json`](references/source-acceptance.json)
+- Sustainability and remaining coverage gaps: [`references/sustainability-assessment.md`](references/sustainability-assessment.md)
+- Earlier 39-item capture ledger: [`references/belgium-capture-results.json`](references/belgium-capture-results.json)
 - Country sequence and coverage state: [`../references/eea-switzerland-country-expansion.md`](../references/eea-switzerland-country-expansion.md)
 
-The Danish EU residence regulation remains a comparison seed only. Belgium's 1980 Immigration Act is a broad national statute with provisions specific to EU-family residence; it is not treated as a legal equivalent. The 40ter guidance for Belgians who exercised free movement is kept distinct from the route for Belgians who did not. Earlier candidate files remain preserved under `candidates/`; the new generic capture outputs are under `monitor-candidates/`. none is an accepted local source text.
+The register keeps national immigration law, the separate mobile-Belgian route, regional/community rules, and operational procedures distinct. The Danish EU residence regulation is a comparison lead only, not a legal-equivalence assumption.

@@ -2,12 +2,12 @@
   "manifest_version": "0.2.0-candidate",
   "pack": "lithuania-national-source-candidates",
   "jurisdiction": "LT",
-  "inventory_research_date": "2026-10-18",
-  "scope": "Bounded discovery of Lithuanian legal publication and reuse, EU/EEA/EFTA/Swiss and UK Withdrawal Agreement routes, free movement and third-country family residence, application forms, visa practice and missions, civil-status evidence, administrative procedure and access, remedies, privacy, oversight, legal aid, and administrative courts. This is not a complete national inventory or a legal-equivalence opinion.",
-  "status": "partially_retrieved_review_candidates",
-  "retrieval_status": "13 TAR API records and 2 HTML pages converted; one court-search surface captured; 28 direct requests returned HTTP 403 or had no API version row; no source accepted",
+  "inventory_research_date": "2026-10-21",
+  "scope": "Bounded discovery of Lithuanian legal publication and reuse, EU/EEA/EFTA/Swiss and UK Withdrawal Agreement routes, free movement and third-country family residence, application forms, visa practice and missions, civil-status evidence, administrative procedure and access, remedies, privacy, oversight, legal aid, and administrative courts. This is not a complete national inventory or a legal-equivalence opinion. Issue-led review also mapped residence declaration, resident-register data, and civil-status/family concepts; this expanded register is still not a complete national inventory.",
+  "status": "source_references_reviewed_country_incomplete_local_artifacts_unaccepted",
+  "retrieval_status": "36 of 47 official external references accepted within recorded scope; 11 pending whole-site or currentness review; 0 accepted local copies or topics. Earlier capture: 13 TAR API texts and 2 official HTML pages converted, one court-search surface captured, and 28 requests returned 403 or lacked an API version row.",
   "accepted_source_count": 0,
-  "candidate_source_count": 44,
+  "candidate_source_count": 47,
   "official_hosts": [
     "administracinis.teismas.lt",
     "data.gov.lt",
@@ -40,7 +40,7 @@
   "search_coverage": [
     {
       "source_class": "National legal publication, versions, data reuse, and retrieval discovery",
-      "search_outcome": "Candidates found at e-TAR and the Lithuanian Open Data Portal; N-Lex identifies TAR as Lithuania’s main legal register. The open-data catalogue lists JSON, JSONL, RDF and CSV resources; its API documentation exposes getall/getone/changes routes and a sample JSON response. A targeted current legal-act query was not fetched.",
+      "search_outcome": "Candidates found at e-TAR and the Lithuanian Open Data Portal; N-Lex identifies TAR as Lithuania’s main legal register. The 18 October capture queried the public TAR API and retrieved exact text/version records. This 21 October review used official e-TAR edition listings and search results to identify later current consolidations for the Aliens Law, Public Administration Law and Civil Code; it did not require rerunning or reconciling every API row.",
       "official_channels": [
         "N-Lex Lithuania",
         "e-TAR/TAR",
@@ -101,7 +101,7 @@
     },
     {
       "source_class": "Civil-status and family evidence",
-      "search_outcome": "The Civil Status Registration Law is available through the current e-TAR record and contains marriage registration provisions and distinctions for EU/EFTA nationals.",
+      "search_outcome": "The Civil Status Registration Law, Civil Code, Residence Declaration Law and Register of Residents Law were identified as separate sources for civil status, family concepts, address declaration and resident-register data. The latter three were added as source references in this review.",
       "official_channels": [
         "e-TAR",
         "Migration Department"
@@ -113,7 +113,8 @@
       "languages": [
         "lt"
       ],
-      "coverage_limit": "Only the principal civil-status statute was identified in this bounded search. Foreign document recognition, translations, apostilles, partnership records, and evidence accepted by each relevant migration/visa process need separate verification."
+      "coverage_limit": "Only the principal civil-status statute was identified in this bounded search. Foreign document recognition, translations, apostilles, partnership records, and evidence accepted by each relevant migration/visa process need separate verification.",
+      "search_terms": []
     },
     {
       "source_class": "Administrative procedure, complaints, access and pre-trial review",
@@ -157,6 +158,20 @@
         "en"
       ],
       "coverage_limit": "Court decisions are anonymised and selectively published; the public search caps a result page at 50 records and explains that some decisions are withheld when anonymisation would defeat the publication purpose. Search results therefore cannot establish complete case-law coverage. Legal-aid eligibility and the administrative/judicial route depend on current law and case type."
+    },
+    {
+      "source_class": "Residence declaration and resident-register data",
+      "search_outcome": "Issue-led review identified the Residence Declaration Law VIII-840 and Law on the Register of Residents I-2237 in current e-TAR consolidated editions, then checked the Civil Code VIII-1864 for family-status and statutory residence concepts.",
+      "official_channels": [
+        "e-TAR",
+        "Migration Department"
+      ],
+      "recorded_queries": [
+        "site:e-tar.lt/portal/lt/legalAct/TAR.F74ECE427C23/asr",
+        "site:e-tar.lt/portal/lt/legalAct/TAR.DCBDC82E26CD/asr",
+        "site:e-tar.lt/portal/lt/legalAct/TAR.8A39C83848CB/asr"
+      ],
+      "limits": "Address declaration and register data are auxiliary administrative matters, not residence entitlement. Family-law concepts do not replace the EU free-movement family-member categories. Local texts and topic adequacy remain unaccepted."
     }
   ],
   "documents": [
@@ -185,7 +200,11 @@
       "candidate_text_path": "source-library/lithuania/candidates/lt-01.md",
       "source_sha256": "a476456124dcbfef130f44777299d0a7eae056259217c689e7a4a999ebfb3fa4",
       "converted_sha256": "6cacb93254f2c077676a2f1c17fca1c2e7c075a8d05eb36a00eac9e39048cb0c",
-      "resolved_url": "https://n-lex.europa.eu/n-lex/info/info-lt/index?lang=en"
+      "resolved_url": "https://n-lex.europa.eu/n-lex/info/info-lt/index?lang=en",
+      "local_copy_accepted": false,
+      "external_reference_status": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Country-page information inspected 2026-10-18."
     },
     {
       "id": "lt-02",
@@ -210,7 +229,11 @@
       ],
       "retrieved": false,
       "accepted": false,
-      "retrieval_note": "Direct e-TAR search page returned HTTP 403; no API record applies to this discovery portal."
+      "retrieval_note": "Direct e-TAR search page returned HTTP 403; no API record applies to this discovery portal.",
+      "local_copy_accepted": false,
+      "external_reference_status": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Search pages expose stable TAR identifiers, current consolidated-version ranges, and edition histories."
     },
     {
       "id": "lt-03",
@@ -240,7 +263,11 @@
       "candidate_text_path": "source-library/lithuania/candidates/lt-03.md",
       "source_sha256": "23f72be21eb37c9848c8d419e77b49a144bec34d90fa89fee2845ebcb8889a1f",
       "converted_sha256": "cb846a310930ee9b8fb2a7f1590da920c1f443c888baddca7262228dbe797b99",
-      "resolved_url": "https://data.gov.lt/datasets/2613/?resource_version=1410"
+      "resolved_url": "https://data.gov.lt/datasets/2613/?resource_version=1410",
+      "local_copy_accepted": false,
+      "external_reference_status": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Catalogue says daily updates; resource entries showed 2026-10-17 update. Dataset metadata separately showed last update 2026-04-07."
     },
     {
       "id": "lt-04",
@@ -265,7 +292,11 @@
       ],
       "retrieved": false,
       "accepted": false,
-      "retrieval_note": "Direct e-TAR record returned HTTP 403; official TAR API returned no version rows for the inspected identifier."
+      "retrieval_note": "Direct e-TAR record returned HTTP 403; official TAR API returned no version rows for the inspected identifier.",
+      "local_copy_accepted": false,
+      "external_reference_status": "pending_human_review",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Pending currentness/content review; official website is offered for human review."
     },
     {
       "id": "lt-05",
@@ -302,7 +333,11 @@
       "currentness_note": null,
       "api_metadata_url": "https://get.data.gov.lt/datasets/gov/lrsk/teises_aktai/Suvestine?dokumento_id='TAR.FA13E28615F6'&_limit=200&_select=dokumento_id,suvestines_id,nuoroda,galioja_nuo,galioja_iki",
       "api_record_url": "https://get.data.gov.lt/datasets/gov/lrsk/teises_aktai/Suvestine?dokumento_id='TAR.FA13E28615F6'&suvestines_id='HIgGrRVEfx'&_limit=2",
-      "api_document_id": "TAR.FA13E28615F6"
+      "api_document_id": "TAR.FA13E28615F6",
+      "local_copy_accepted": false,
+      "external_reference_status": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Current /asr record is available; current precise consolidated range should be resolved at retrieval time."
     },
     {
       "id": "lt-06",
@@ -339,7 +374,11 @@
       "currentness_note": null,
       "api_metadata_url": "https://get.data.gov.lt/datasets/gov/lrsk/teises_aktai/Suvestine?dokumento_id='a1107f40391911ea829bc2bea81c1194'&_limit=200&_select=dokumento_id,suvestines_id,nuoroda,galioja_nuo,galioja_iki",
       "api_record_url": "https://get.data.gov.lt/datasets/gov/lrsk/teises_aktai/Suvestine?dokumento_id='a1107f40391911ea829bc2bea81c1194'&suvestines_id='kIyHFBOHcg'&_limit=2",
-      "api_document_id": "a1107f40391911ea829bc2bea81c1194"
+      "api_document_id": "a1107f40391911ea829bc2bea81c1194",
+      "local_copy_accepted": false,
+      "external_reference_status": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Official indexed act record inspected 2026-10-18."
     },
     {
       "id": "lt-07",
@@ -365,7 +404,11 @@
       ],
       "retrieved": false,
       "accepted": false,
-      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "local_copy_accepted": false,
+      "external_reference_status": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Index last updated 2023-12-12."
     },
     {
       "id": "lt-08",
@@ -378,10 +421,10 @@
         "record": "TAR.42837E5A79DD; IX-2206"
       },
       "functional_relationship": "close_functional_match",
-      "verification_status": "Official e-TAR current-version search result and indexed text inspected; it identifies Chapter V EU-citizen rules and family residence-card provisions.",
+      "verification_status": "Official e-TAR current record and consolidated text reviewed; its current edition for this review is 2026-07-01 through 2026-10-31, amendment XV-1062. The older TAR API capture is dated 2026-01-01 and is not the current-text reference.",
       "retrieval_status": "converted_review_candidate_api_currentness_unverified",
       "retrieval_shape": "Versioned HTML, individual structural sections, and print/PDF",
-      "version_evidence": "Search result showed consolidated version 2026-07-01 to 2026-10-31 and amendment XV-1062 dated 2026-06-25.",
+      "version_evidence": "Official e-TAR consolidated edition 2026-07-01 to 2026-10-31; Chapter V covers EU/EFTA citizens and their family members. The captured TAR API version dated 2026-01-01 is stale relative to e-TAR. The national text retains a Regulation (EU) 2019/1157 cross-reference; see dependency register for the CJEU judgment and successor Regulation (EU) 2025/1208.",
       "note": "Broad aliens statute with a distinct EU residence regime. Keep third-country family reunification, EU free movement, EFTA/Swiss treaty routes, and UK Withdrawal Agreement cases distinct.",
       "topic_ids": [
         "free_movement",
@@ -400,10 +443,14 @@
       "valid_to": null,
       "api_version_state": "active_as_listed_by_dataset",
       "api_version_count": 59,
-      "currentness_note": null,
+      "currentness_note": "Do not use the January 2026 TAR API text as the current edition. For questions on the review date, use e-TAR version 2026-07-01 through 2026-10-31 and preserve the Lithuanian wording, including any obsolete EU reference.",
       "api_metadata_url": "https://get.data.gov.lt/datasets/gov/lrsk/teises_aktai/Suvestine?dokumento_id='TAR.42837E5A79DD'&_limit=200&_select=dokumento_id,suvestines_id,nuoroda,galioja_nuo,galioja_iki",
       "api_record_url": "https://get.data.gov.lt/datasets/gov/lrsk/teises_aktai/Suvestine?dokumento_id='TAR.42837E5A79DD'&suvestines_id='HQOCpqMZMf'&_limit=2",
-      "api_document_id": "TAR.42837E5A79DD"
+      "api_document_id": "TAR.42837E5A79DD",
+      "local_copy_accepted": false,
+      "external_reference_status": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Search result showed consolidated version 2026-07-01 to 2026-10-31 and amendment XV-1062 dated 2026-06-25."
     },
     {
       "id": "lt-09",
@@ -439,10 +486,14 @@
       "valid_to": "2019-06-30T00:00:00",
       "api_version_state": "no_active_version_listed_by_dataset",
       "api_version_count": 12,
-      "currentness_note": null,
+      "currentness_note": "The API snapshot is not current-version proof. Use the official e-TAR /asr record and its displayed edition for any current procedure; its direct page was inspected in the source review on 2026-10-18.",
       "api_metadata_url": "https://get.data.gov.lt/datasets/gov/lrsk/teises_aktai/Suvestine?dokumento_id='TAR.2779206FA382'&_limit=200&_select=dokumento_id,suvestines_id,nuoroda,galioja_nuo,galioja_iki",
       "api_record_url": "https://get.data.gov.lt/datasets/gov/lrsk/teises_aktai/Suvestine?dokumento_id='TAR.2779206FA382'&suvestines_id='yWISUTwFvd'&_limit=2",
-      "api_document_id": "TAR.2779206FA382"
+      "api_document_id": "TAR.2779206FA382",
+      "local_copy_accepted": false,
+      "external_reference_status": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Official current text was indexed on 2026-10-18; exact current edition boundary needs direct record check."
     },
     {
       "id": "lt-10",
@@ -477,10 +528,14 @@
       "valid_to": "2019-06-30T00:00:00",
       "api_version_state": "no_active_version_listed_by_dataset",
       "api_version_count": 17,
-      "currentness_note": null,
+      "currentness_note": "The API snapshot is not current-version proof. Use the official e-TAR /asr record and its displayed edition for any current procedure; its direct page was inspected in the source review on 2026-10-18.",
       "api_metadata_url": "https://get.data.gov.lt/datasets/gov/lrsk/teises_aktai/Suvestine?dokumento_id='TAR.DE0E3CDB7DED'&_limit=200&_select=dokumento_id,suvestines_id,nuoroda,galioja_nuo,galioja_iki",
       "api_record_url": "https://get.data.gov.lt/datasets/gov/lrsk/teises_aktai/Suvestine?dokumento_id='TAR.DE0E3CDB7DED'&suvestines_id='tgkPcKHozz'&_limit=2",
-      "api_document_id": "TAR.DE0E3CDB7DED"
+      "api_document_id": "TAR.DE0E3CDB7DED",
+      "local_copy_accepted": false,
+      "external_reference_status": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Current indexed text inspected 2026-10-18; exact current edition boundary needs direct record check."
     },
     {
       "id": "lt-11",
@@ -506,7 +561,11 @@
       ],
       "retrieved": false,
       "accepted": false,
-      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "local_copy_accepted": false,
+      "external_reference_status": "pending_human_review",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Pending currentness/content review; official website is offered for human review."
     },
     {
       "id": "lt-12",
@@ -532,7 +591,12 @@
       ],
       "retrieved": false,
       "accepted": false,
-      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "local_copy_accepted": false,
+      "external_reference_status": "pending_human_review",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Pending currentness/content review; official website is offered for human review.",
+      "currentness_note": "This official page still describes certificates by reference to Regulation (EU) 2019/1157. The CJEU declared that regulation invalid in C-61/22 and Regulation (EU) 2025/1208 is its successor. Pending current specimen and wording review."
     },
     {
       "id": "lt-13",
@@ -558,7 +622,12 @@
       ],
       "retrieved": false,
       "accepted": false,
-      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "local_copy_accepted": false,
+      "external_reference_status": "pending_human_review",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Pending currentness/content review; official website is offered for human review.",
+      "currentness_note": "This official page still attributes family-card format to Regulation (EU) 2019/1157, which the CJEU declared invalid in C-61/22 and which was replaced by Regulation (EU) 2025/1208. Pending human review of updated card specimens and terminology; preserve the page only as a dated warning."
     },
     {
       "id": "lt-14",
@@ -583,7 +652,12 @@
       ],
       "retrieved": false,
       "accepted": false,
-      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "local_copy_accepted": false,
+      "external_reference_status": "pending_human_review",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Pending currentness/content review; official website is offered for human review.",
+      "currentness_note": "The linked form identifies a 2019 Director Order and has not been verified as the current parent-page attachment after the 2025/1208 card-format transition. Do not rely on it as the current form until the official service page is reviewed."
     },
     {
       "id": "lt-15",
@@ -608,7 +682,11 @@
       ],
       "retrieved": false,
       "accepted": false,
-      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "local_copy_accepted": false,
+      "external_reference_status": "pending_human_review",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Pending currentness/content review; official website is offered for human review."
     },
     {
       "id": "lt-16",
@@ -634,7 +712,11 @@
       ],
       "retrieved": false,
       "accepted": false,
-      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "local_copy_accepted": false,
+      "external_reference_status": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Indexed page current as of 2026-10-18; individual service dates were not recorded."
     },
     {
       "id": "lt-17",
@@ -671,7 +753,11 @@
       "currentness_note": null,
       "api_metadata_url": "https://get.data.gov.lt/datasets/gov/lrsk/teises_aktai/Suvestine?dokumento_id='ecf91ec0a00811e58fd1fc0b9bba68a7'&_limit=200&_select=dokumento_id,suvestines_id,nuoroda,galioja_nuo,galioja_iki",
       "api_record_url": "https://get.data.gov.lt/datasets/gov/lrsk/teises_aktai/Suvestine?dokumento_id='ecf91ec0a00811e58fd1fc0b9bba68a7'&suvestines_id='CNioODHCaG'&_limit=2",
-      "api_document_id": "ecf91ec0a00811e58fd1fc0b9bba68a7"
+      "api_document_id": "ecf91ec0a00811e58fd1fc0b9bba68a7",
+      "local_copy_accepted": false,
+      "external_reference_status": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Current consolidated version from 2026-05-22; amendment XV-948 dated 2026-05-14."
     },
     {
       "id": "lt-18",
@@ -696,7 +782,11 @@
       ],
       "retrieved": false,
       "accepted": false,
-      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "local_copy_accepted": false,
+      "external_reference_status": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Renewed 2026-09-09 13:34."
     },
     {
       "id": "lt-19",
@@ -721,7 +811,11 @@
       ],
       "retrieved": false,
       "accepted": false,
-      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "local_copy_accepted": false,
+      "external_reference_status": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Page crawled 2026-10-18; a page-level update date was not recorded."
     },
     {
       "id": "lt-20",
@@ -746,7 +840,11 @@
       ],
       "retrieved": false,
       "accepted": false,
-      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "local_copy_accepted": false,
+      "external_reference_status": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Renewed 2025-07-24."
     },
     {
       "id": "lt-21",
@@ -772,7 +870,11 @@
       ],
       "retrieved": false,
       "accepted": false,
-      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "local_copy_accepted": false,
+      "external_reference_status": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Renewed 2026-09-09 13:34."
     },
     {
       "id": "lt-22",
@@ -797,7 +899,11 @@
       ],
       "retrieved": false,
       "accepted": false,
-      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "local_copy_accepted": false,
+      "external_reference_status": "pending_human_review",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Pending currentness/content review; official website is offered for human review."
     },
     {
       "id": "lt-23",
@@ -822,7 +928,11 @@
       ],
       "retrieved": false,
       "accepted": false,
-      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "local_copy_accepted": false,
+      "external_reference_status": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Renewed 2026-09-09 13:34."
     },
     {
       "id": "lt-24",
@@ -847,7 +957,11 @@
       ],
       "retrieved": false,
       "accepted": false,
-      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "local_copy_accepted": false,
+      "external_reference_status": "pending_human_review",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Pending currentness/content review; official website is offered for human review."
     },
     {
       "id": "lt-25",
@@ -872,7 +986,11 @@
       ],
       "retrieved": false,
       "accepted": false,
-      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "local_copy_accepted": false,
+      "external_reference_status": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Renewed 2026-09-09 13:34."
     },
     {
       "id": "lt-26",
@@ -898,7 +1016,11 @@
       ],
       "retrieved": false,
       "accepted": false,
-      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "local_copy_accepted": false,
+      "external_reference_status": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Renewed 2026-09-09 13:34."
     },
     {
       "id": "lt-27",
@@ -924,7 +1046,11 @@
       ],
       "retrieved": false,
       "accepted": false,
-      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "local_copy_accepted": false,
+      "external_reference_status": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Renewed 2026-09-09 13:34."
     },
     {
       "id": "lt-28",
@@ -949,7 +1075,11 @@
       ],
       "retrieved": false,
       "accepted": false,
-      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "local_copy_accepted": false,
+      "external_reference_status": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Renewed 2025-11-26 08:22."
     },
     {
       "id": "lt-29",
@@ -974,7 +1104,11 @@
       ],
       "retrieved": false,
       "accepted": false,
-      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "local_copy_accepted": false,
+      "external_reference_status": "pending_human_review",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Pending currentness/content review; official website is offered for human review."
     },
     {
       "id": "lt-30",
@@ -999,7 +1133,11 @@
       ],
       "retrieved": false,
       "accepted": false,
-      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "local_copy_accepted": false,
+      "external_reference_status": "pending_human_review",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Pending currentness/content review; official website is offered for human review."
     },
     {
       "id": "lt-31",
@@ -1012,10 +1150,10 @@
         "record": "TAR.0BDFFD850A66; VIII-1234"
       },
       "functional_relationship": "related_source",
-      "verification_status": "Official e-TAR indexed current text inspected; it governs administrative decisions, services, complaints, and applications subject to special rules.",
+      "verification_status": "Official e-TAR record reviewed. The edition applicable on 2026-10-21 is 2026-10-01 through 2026-12-31, incorporating amendment XV-1133; the older TAR API version is not current.",
       "retrieval_status": "converted_review_candidate_api_currentness_unverified",
       "retrieval_shape": "Versioned HTML and print/PDF",
-      "version_evidence": "Current edition shown as 2026-10-01 to 2026-12-31; a future edition begins 2027-01-01.",
+      "version_evidence": "e-TAR consolidated edition 2026-10-01 to 2026-12-31; future edition begins 2027-01-01. The captured TAR API text is dated 2024-01-01 and is stale for current use.",
       "note": "General procedure, not a substitute for special migration law. The law says complaints/applications follow Government-approved procedure.",
       "topic_ids": [
         "administrative_procedure",
@@ -1033,10 +1171,14 @@
       "valid_to": null,
       "api_version_state": "active_as_listed_by_dataset",
       "api_version_count": 36,
-      "currentness_note": null,
+      "currentness_note": "Use the e-TAR edition 2026-10-01 to 2026-12-31 for the 2026-10-21 review date; do not rely on the captured open-ended 2024 TAR API version.",
       "api_metadata_url": "https://get.data.gov.lt/datasets/gov/lrsk/teises_aktai/Suvestine?dokumento_id='TAR.0BDFFD850A66'&_limit=200&_select=dokumento_id,suvestines_id,nuoroda,galioja_nuo,galioja_iki",
       "api_record_url": "https://get.data.gov.lt/datasets/gov/lrsk/teises_aktai/Suvestine?dokumento_id='TAR.0BDFFD850A66'&suvestines_id='MgCtvbOHie'&_limit=2",
-      "api_document_id": "TAR.0BDFFD850A66"
+      "api_document_id": "TAR.0BDFFD850A66",
+      "local_copy_accepted": false,
+      "external_reference_status": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Current edition shown as 2026-10-01 to 2026-12-31; a future edition begins 2027-01-01."
     },
     {
       "id": "lt-32",
@@ -1073,7 +1215,11 @@
       "currentness_note": null,
       "api_metadata_url": "https://get.data.gov.lt/datasets/gov/lrsk/teises_aktai/Suvestine?dokumento_id='TAR.6565D97B9AA2'&_limit=200&_select=dokumento_id,suvestines_id,nuoroda,galioja_nuo,galioja_iki",
       "api_record_url": "https://get.data.gov.lt/datasets/gov/lrsk/teises_aktai/Suvestine?dokumento_id='TAR.6565D97B9AA2'&suvestines_id='CmoWDCxHIO'&_limit=2",
-      "api_document_id": "TAR.6565D97B9AA2"
+      "api_document_id": "TAR.6565D97B9AA2",
+      "local_copy_accepted": false,
+      "external_reference_status": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Current act page and text indexed 2026-10-18."
     },
     {
       "id": "lt-33",
@@ -1110,7 +1256,11 @@
       "currentness_note": null,
       "api_metadata_url": "https://get.data.gov.lt/datasets/gov/lrsk/teises_aktai/Suvestine?dokumento_id='TAR.67B5099C5848'&_limit=200&_select=dokumento_id,suvestines_id,nuoroda,galioja_nuo,galioja_iki",
       "api_record_url": "https://get.data.gov.lt/datasets/gov/lrsk/teises_aktai/Suvestine?dokumento_id='TAR.67B5099C5848'&suvestines_id='CSuhkMKLnv'&_limit=2",
-      "api_document_id": "TAR.67B5099C5848"
+      "api_document_id": "TAR.67B5099C5848",
+      "local_copy_accepted": false,
+      "external_reference_status": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Consolidated text from 2026-06-30; amendment XV-923 dated 2026-05-12."
     },
     {
       "id": "lt-34",
@@ -1147,7 +1297,11 @@
       "currentness_note": null,
       "api_metadata_url": "https://get.data.gov.lt/datasets/gov/lrsk/teises_aktai/Suvestine?dokumento_id='TAR.594F129CE9AD'&_limit=200&_select=dokumento_id,suvestines_id,nuoroda,galioja_nuo,galioja_iki",
       "api_record_url": "https://get.data.gov.lt/datasets/gov/lrsk/teises_aktai/Suvestine?dokumento_id='TAR.594F129CE9AD'&suvestines_id='qEJpioIuJS'&_limit=2",
-      "api_document_id": "TAR.594F129CE9AD"
+      "api_document_id": "TAR.594F129CE9AD",
+      "local_copy_accepted": false,
+      "external_reference_status": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Current consolidated version from 2024-01-01; amendment XIV-1994 dated 2023-05-25."
     },
     {
       "id": "lt-35",
@@ -1173,7 +1327,11 @@
       ],
       "retrieved": false,
       "accepted": false,
-      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "local_copy_accepted": false,
+      "external_reference_status": "pending_human_review",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Pending currentness/content review; official website is offered for human review."
     },
     {
       "id": "lt-36",
@@ -1210,7 +1368,11 @@
       "currentness_note": null,
       "api_metadata_url": "https://get.data.gov.lt/datasets/gov/lrsk/teises_aktai/Suvestine?dokumento_id='TAR.EC01522BCE65'&_limit=200&_select=dokumento_id,suvestines_id,nuoroda,galioja_nuo,galioja_iki",
       "api_record_url": "https://get.data.gov.lt/datasets/gov/lrsk/teises_aktai/Suvestine?dokumento_id='TAR.EC01522BCE65'&suvestines_id='xnKpsZmEyx'&_limit=2",
-      "api_document_id": "TAR.EC01522BCE65"
+      "api_document_id": "TAR.EC01522BCE65",
+      "local_copy_accepted": false,
+      "external_reference_status": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Current consolidated text from 2025-08-01; amendment XV-392 dated 2025-06-30."
     },
     {
       "id": "lt-37",
@@ -1235,7 +1397,11 @@
       ],
       "retrieved": false,
       "accepted": false,
-      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden after adding official www.lrski.lt to the host allowlist."
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden after adding official www.lrski.lt to the host allowlist.",
+      "local_copy_accepted": false,
+      "external_reference_status": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Page crawled 2026-10-18; no visible last-updated date was recorded."
     },
     {
       "id": "lt-38",
@@ -1272,7 +1438,11 @@
       "currentness_note": null,
       "api_metadata_url": "https://get.data.gov.lt/datasets/gov/lrsk/teises_aktai/Suvestine?dokumento_id='TAR.5368B592234C'&_limit=200&_select=dokumento_id,suvestines_id,nuoroda,galioja_nuo,galioja_iki",
       "api_record_url": "https://get.data.gov.lt/datasets/gov/lrsk/teises_aktai/Suvestine?dokumento_id='TAR.5368B592234C'&suvestines_id='yKQDfQUMHT'&_limit=2",
-      "api_document_id": "TAR.5368B592234C"
+      "api_document_id": "TAR.5368B592234C",
+      "local_copy_accepted": false,
+      "external_reference_status": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Current consolidated version from 2026-06-30; amendment XV-904 dated 2026-05-12."
     },
     {
       "id": "lt-39",
@@ -1298,7 +1468,11 @@
       ],
       "retrieved": false,
       "accepted": false,
-      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "local_copy_accepted": false,
+      "external_reference_status": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Page crawled 2026-10-18; linked data-protection policy last updated 2025-05-23."
     },
     {
       "id": "lt-40",
@@ -1335,7 +1509,11 @@
       "currentness_note": null,
       "api_metadata_url": "https://get.data.gov.lt/datasets/gov/lrsk/teises_aktai/Suvestine?dokumento_id='TAR.EAA93A47BAA1'&_limit=200&_select=dokumento_id,suvestines_id,nuoroda,galioja_nuo,galioja_iki",
       "api_record_url": "https://get.data.gov.lt/datasets/gov/lrsk/teises_aktai/Suvestine?dokumento_id='TAR.EAA93A47BAA1'&suvestines_id='fmAODABOMc'&_limit=2",
-      "api_document_id": "TAR.EAA93A47BAA1"
+      "api_document_id": "TAR.EAA93A47BAA1",
+      "local_copy_accepted": false,
+      "external_reference_status": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Current consolidated text from 2026-05-07."
     },
     {
       "id": "lt-41",
@@ -1360,7 +1538,11 @@
       ],
       "retrieved": false,
       "accepted": false,
-      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "local_copy_accepted": false,
+      "external_reference_status": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Complaints page last updated 2026-08-21; FAQ crawled 2026-10-18."
     },
     {
       "id": "lt-42",
@@ -1387,7 +1569,11 @@
       "accepted": false,
       "source_sha256": "a018fcb17530c3f06acb822ca7ec60f78483c1c26e71c67670920c09faf4318f",
       "resolved_url": "https://liteko.teismai.lt/viesasprendimupaieska/detalipaieska.aspx",
-      "retrieval_note": "Public page retrieved, but no sufficiently long primary content was extracted."
+      "retrieval_note": "Public page retrieved, but no sufficiently long primary content was extracted.",
+      "local_copy_accepted": false,
+      "external_reference_status": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Usage guide says result pages cap at 50 and decisions are selectively withheld where anonymisation would defeat publication purpose."
     },
     {
       "id": "lt-43",
@@ -1412,7 +1598,11 @@
       ],
       "retrieved": false,
       "accepted": false,
-      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "local_copy_accepted": false,
+      "external_reference_status": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Current website observed 2026-10-18; case-specific procedural pages have independent update dates."
     },
     {
       "id": "lt-44",
@@ -1437,9 +1627,104 @@
       ],
       "retrieved": false,
       "accepted": false,
-      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden"
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "local_copy_accepted": false,
+      "external_reference_status": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Page crawled 2026-10-18; decision-specific migration deadlines must be checked separately."
+    },
+    {
+      "id": "lt-45",
+      "title": "Law on the Declaration of the Place of Residence, VIII-840",
+      "source_type": "residence_declaration_legislation",
+      "language": "lt",
+      "url": "https://www.e-tar.lt/portal/lt/legalAct/TAR.F74ECE427C23/asr",
+      "publisher_identifier": {
+        "system": "e-TAR",
+        "record": "TAR.F74ECE427C23"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official e-TAR current consolidated Lithuanian text inspected 21 October 2026; publisher displays the current consolidation from 2023-01-01. The Act includes declaration routes for foreigners seeking a document confirming or granting residence rights.",
+      "retrieval_status": "external_reference_only_no_local_copy",
+      "retrieval_shape": "Versioned_HTML",
+      "version_evidence": "Current e-TAR consolidation from 2023-01-01; Sections 6 and 10 cover foreigners and the declaration authority, including declaration data submitted with an application for a residence document.",
+      "note": "Auxiliary address-declaration and municipal procedure law. It does not establish EU/EEA residence entitlement; read with the Aliens Law and the Register of Residents Act.",
+      "topic_ids": [
+        "residence_address",
+        "municipal_procedure",
+        "population_register"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "external_reference_status": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Current e-TAR consolidation from 2023-01-01; Sections 6 and 10 cover foreigners and the declaration authority, including declaration data submitted with an application for a residence document.",
+      "local_copy_accepted": false
+    },
+    {
+      "id": "lt-46",
+      "title": "Law on the Register of Residents, I-2237",
+      "source_type": "population_register_legislation",
+      "language": "lt",
+      "url": "https://www.e-tar.lt/portal/lt/legalAct/TAR.DCBDC82E26CD/asr",
+      "publisher_identifier": {
+        "system": "e-TAR",
+        "record": "TAR.DCBDC82E26CD"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official e-TAR current consolidated Lithuanian text inspected 21 October 2026; publisher displays the current edition from 2025-06-01.",
+      "retrieval_status": "external_reference_only_no_local_copy",
+      "retrieval_shape": "Versioned_HTML",
+      "version_evidence": "Current e-TAR consolidated text from 2025-06-01; Act governs the Register of Residents and personal-code and resident-record data.",
+      "note": "Registry and identity-data dependency for residence procedures only. It does not grant residence rights; privacy and access rights require separate review.",
+      "topic_ids": [
+        "population_register",
+        "identity_number",
+        "data_protection"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "external_reference_status": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "Current e-TAR consolidated text from 2025-06-01; Act governs the Register of Residents and personal-code and resident-record data.",
+      "local_copy_accepted": false
+    },
+    {
+      "id": "lt-47",
+      "title": "Civil Code, VIII-1864 (family-status and residence concepts)",
+      "source_type": "civil_and_family_law",
+      "language": "lt",
+      "url": "https://www.e-tar.lt/portal/lt/legalAct/TAR.8A39C83848CB/asr",
+      "publisher_identifier": {
+        "system": "e-TAR",
+        "record": "TAR.8A39C83848CB"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official e-TAR edition list inspected 21 October 2026; the edition applicable on the review date is displayed as 2026-09-27 through 2026-12-08. The Code defines marriage and family-law relationships and is referenced by the Residence Declaration Act for the meaning of residence.",
+      "retrieval_status": "external_reference_only_no_local_copy",
+      "retrieval_shape": "Versioned_HTML",
+      "version_evidence": "e-TAR edition list identifies the current-at-review-date edition as 2026-09-27 to 2026-12-08; use only provisions relevant to family status and residence concepts.",
+      "note": "Relevant to marriage and family-status concepts and the statutory definition of residence. It does not replace EU free-movement family-member categories or solve recognition of every foreign relationship.",
+      "topic_ids": [
+        "family_status",
+        "civil_status_evidence",
+        "residence_address"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "external_reference_status": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21",
+      "external_reference_scope": "e-TAR edition list identifies the current-at-review-date edition as 2026-09-27 to 2026-12-08; use only provisions relevant to family status and residence concepts.",
+      "local_copy_accepted": false
     }
   ],
   "retrieved_review_candidate_count": 16,
-  "converted_review_candidate_count": 15
+  "converted_review_candidate_count": 15,
+  "accepted_external_reference_count": 36,
+  "pending_external_reference_count": 11,
+  "not_relied_upon_external_reference_count": 0,
+  "accepted_topic_count": 0,
+  "country_review_complete": false,
+  "external_reference_count_note": "Accepted external links are separate from accepted local copies. The 13 TAR API conversions and two HTML conversions remain unaccepted; no legal topic or country review is complete.",
+  "accepted_local_copy_count": 0
 }

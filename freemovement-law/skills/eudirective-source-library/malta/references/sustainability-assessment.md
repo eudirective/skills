@@ -1,59 +1,24 @@
-# Malta source-rule sustainability assessment (2026-10-19)
+# Malta source sustainability assessment (21 October 2026)
 
-## Scope and results
+## Result
 
-The 48-record inventory covers legislation and reuse, EU/EEA/Swiss free movement, third-country family routes, procedure and appeals, visas and missions, forms, data protection, oversight, legal aid, civil-status evidence and case-law discovery. The bounded capture pass retrieved and converted 47 records as unaccepted review candidates; the Judiciary portal root returned HTTP 403. Twenty-one responses differed from the earlier pass and revised Markdown remains staged under temp/malta/pending/. No locally stored artifact is accepted.
+Malta’s source use is sustainable for human-led research when official links are used directly and their displayed dates and limits are recorded. The inventory now has 55 candidates: 41 external links accepted within scope, 11 pending human/currentness review, 3 duplicate or misleading routes not relied upon. No local artifact or topic is accepted, and the country review remains incomplete.
 
-All 44 conversions pass offline verification: exact raw-source hashes, preserved PDF hashes and deterministic Markdown replay. Original PDFs are retained under temp/. PDF extraction used pinned pypdf 6.21.1; this does not validate signatures or OCR image-only pages.
+## Source and dependency findings
 
-## Implemented routes
+- LEĠIŻLAZZJONI MALTA publishes official English PDF representations for subsidiary legislation. The current S.L. 217.04 text reviewed on 21 October 2026 lists Legal Notices 183 and 204 of 2026. This instrument was missing from the original candidate set although Identità’s live F.01/F.02 forms cite it with S.L. 460.17.
+- Identità’s current EU-family page links both F.01 new application and F.02 renewal forms. The July 2026 F.01 PDF identifies S.L. 460.17 and S.L. 217.04 as its legal basis. The family-category descriptions require legal cross-checking; this is an issue-mapping question, not a reason to reject the government links.
+- Identità’s foreign-document policy displays Version 2.0, publication date 15 May 2023 and no later update. Apply the EU public-documents regulation and any unit-specific/current instructions.
+- Regulation (EU) 2025/1208 is the successor residence-document/card instrument to Regulation 2019/1157. CJEU C-61/22 and a 2025 Commission Malta residence-permit entry are recorded as dependencies. Malta’s current card specimens and issuance practice remain to be checked.
+- Malta’s visa sources divide Type C short-stay practice (Missions Malta) from national Type D procedure (Identità). The 2025 representation-agreement PDF found is not linked from the current parent FAQ, which still points to a missing older path. The Visa Code and the latest visa-exemption list need cutoff checks for a current nationality-specific question.
+- The Judiciary root returned 403 in the earlier capture; its FAQ is accessible. The eCourts corpus and update route remain unverified. This client response does not establish publisher failure or absence of judgments.
 
-- Legislation: known LEĠIŻLAZZJONI MALTA ELI records have official /pdf representations. Ordinary HTTPS GET returned actual application/pdf files for the identified laws and procedure instruments. The manifest preserves the ELI record URL separately from the PDF request URL. Current-version status and amendment relations still need a freshness check.
-- Official HTML: Identità, Foreign Affairs, Legal Aid, Ombudsman and IDPC pages use the shared allowlisted HTTPS capture helper. It checks redirects, caps responses at 24 MiB, uses a 25-second timeout and one-second spacing. It converts page text but does not capture complete link graphs.
-- PDFs: exact response bytes are preserved and extracted page by page with pypdf. The old Commission Annex route and a dated representation-agreement attachment were replaced with official versions described below.
+## Normal use and maintenance
 
-## Source-specific findings
+For normal source use, a human-reviewed official link is enough. Prefer a trustworthy government-published consolidation or the closest official text, record its displayed edition/date and caveats, and use the whole responsible official website for unresolved currentness or operational detail. Do not rebuild Gazette chains by default.
 
-### Legislation and reuse
+Local captures, conversion scripts, hashes, replay and scheduled updates are optional and are relevant only when retaining a local copy or operating a recurring monitor. They do not establish legal currency or coverage. Check a specific amendment, attachment or source condition when it may materially change the issue or the intended retained-copy workflow. Review copying and republication terms separately; the Re-Use of Public Sector Information Act does not automatically settle the terms for every page, PDF, image or database.
 
-The normal Malta legislation ELI links returned HTML portal navigation rather than the legal text. Their official /pdf representations returned the actual PDFs. This source-specific retrieval adjustment captures legal content rather than portal chrome.
+## Human review still needed
 
-The three initial Identità 404s were resolved from current official parent pages: the EU-family parent links a July 2026 Form F.02, the third-country family FAQ now uses the non-eu-non-employment route, and the British Nationals section links the current Withdrawal Agreement FAQ. The dated 1 October 2026 edition of Chapter 12 is a point-in-time version. For other acts, verify which current version the /pdf route serves, in-force status, publication/effective dates, amendments, rectifications and consolidation dates. Chapter 546, amended in 2025 ([official text](https://legislation.mt/eli/cap/546/eng/pdf)), is relevant to reuse, but it does not establish that every portal document, database, image or attachment is reusable on identical terms. Record publisher and content-specific reuse conditions before bulk redistribution.
-
-### Free movement and separate routes
-
-Identità groups EU, EEA and Swiss nationals in some practical guidance, while the Free Movement Order defines its own legal scope. The candidate set did not establish a separate Swiss treaty implementation route. Keep EU, EEA EFTA, Swiss, mobile-Maltese-family and UK Withdrawal Agreement lanes distinct until each legal basis is verified. Third-country sponsor family reunification remains separate from EU-family residence.
-
-### Visa sources and attachments
-
-EUR-Lex reports 30 December 2025 as the current English consolidation of Regulation (EU) 2018/1806 ([consolidated record](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A02018R1806-20251230); [base-act ELI](https://eur-lex.europa.eu/eli/reg/2018/1806/oj)). It includes the 2025 amendment and labels the consolidated text a documentary tool without legal effect. The earlier Commission-hosted 2024 Annex PDF returned HTTP 403, so the candidate now points to the versioned EUR-Lex PDF and retains the base-act ELI and current-version discovery URL. Refresh by checking the latest consolidated CELEX date and later Official Journal amendments or corrigenda.
-
-The [Missions Malta visa FAQ](https://missions.foreign.gov.mt/visa-faqs/) still links to an Identità representation-agreement PDF under a 2025-04 path that now returns HTTP 404. A [September 2025 file](https://identita.gov.mt/wp-content/uploads/2025/09/VISA-Representation-Agreements.pdf) was found on Identità’s official host and preserved, but no parent-page link or newer edition was verified. Treat it as a review candidate, not a current mission map. Re-discover checklists and representation links from the current official parent pages.
-
-### Procedure, oversight and courts
-
-The earlier mt-13, mt-15 and mt-43 URLs returned 404. The current EU-family parent now links the [July 2026 Form F.02](https://identita.gov.mt/wp-content/uploads/2026/07/eu_nat_expats_FORM-F.02.pdf); the [third-country family FAQ](https://identita.gov.mt/frequently-asked-questions/expatriates/non-eu-non-employment/family-member/) and [British Nationals FAQ](https://identita.gov.mt/expatriates-unit-main-page/british-nationals/faqs/) were recaptured from their current routes. The Judiciary portal root, mt-44, still returned 403; this does not establish that court material is unavailable through every public channel.
-
-The official [Judiciary FAQ](https://judiciary.mt/en/frequently-asked-questions/) says public online case records are restricted: people can search their own matters using eID, while other case files are obtained through the court registry and may involve fees. No public, complete judgments corpus or update feed was identified. Keep eCourts monitor-only; do not automate access to private files or infer a decision does not exist because it is not publicly searchable.
-
-Privacy, Ombudsman and legal-aid pages were captured, but decision collection scope, appeal-specific legal-aid eligibility, versioning and completeness need separate verification.
-
-## Sustainability judgment
-
-- Known legislation ELI-to-PDF retrieval: sustainable with limits (medium confidence) for bounded known-record retrieval. Official ELI links can be reviewed directly for ordinary research. Record the displayed version and publisher caveat; capture, amendment signals, and reuse checks apply when retaining copies or running recurring monitoring.
-- Official HTML guidance and forms: fragile (medium-low confidence). Captures replay, but 21 responses changed between passes; pinned child URLs can disappear, and page conversion does not discover parent-link, attachment or language changes.
-- Visa attachments: fragile (low confidence). Both the old Annex PDF and the FAQ-linked representation list were blocked or missing. The replacements are dated; the parent-page link and latest-version signal remain unresolved.
-- Court decisions: not currently sustainable as a public full-text feed (medium confidence). The direct portal request was blocked, and official guidance limits online case access; no public completeness/update feed was identified.
-- Whole inventory: not ready for unattended current-law monitoring. Reproducible retrieval does not prove completeness, legal currentness or reuse permission.
-
-## Actions before trust promotion
-
-1. For ordinary research, use the latest government-published ELI text and record its displayed version date and limits. Check an individual Gazette publication, amendment, rectification or annex only when a known issue could materially affect the question or when a retained copy/updater needs that evidence; a full chain review is not a default acceptance gate.
-2. Confirm portal reuse notices and whether each law, page, PDF, image and database item is covered by the applicable Malta PSI Act or another licence.
-3. Review the 21 changed HTML captures, compare visible dates and linked files, and preserve any new changes pending review.
-4. Continue checking the three repaired Identità routes from their parent pages and preserve the old 404 URLs as audit evidence.
-5. Resolve the dead representation-agreement link from a current Missions/Identità parent page; do not promote the September 2025 file without confirming it is still operative.
-6. Refresh the EUR-Lex consolidation date and later Official Journal changes; preserve authentic amending acts alongside the documentary consolidation.
-7. Keep eCourts limited to public metadata unless a public judgments feed, scope statement and reuse basis become available.
-8. Verify legal-aid coverage for Immigration Appeals Board and judicial-review routes separately from general civil legal aid.
-9. Rediscover mission directories, VFS/provider checklists and forms on each update and record each attachment’s version identity.
+The full outstanding list and whole-site offers are in [source acceptance](source-acceptance.json). Issue-level gaps are in [coverage](coverage-register.md), and instrument relationships are in the [dependency register](dependency-register.json).

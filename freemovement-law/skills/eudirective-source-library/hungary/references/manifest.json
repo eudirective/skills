@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "pack": "hungary-national-source-system",
-  "version": "0.3.0",
-  "research_date": "2026-10-18",
+  "version": "0.3.1",
+  "research_date": "2026-10-21",
   "scope": "Only Hungarian national material represented in the supplied Hungary/OIF archive. Shared EU law and CJEU decisions remain in the EU core packs.",
   "official_hosts": [
     "njt.hu",
@@ -169,7 +169,7 @@
     {
       "id": "hu-act-2007-1",
       "citation": "2007. évi I. törvény",
-      "url": "https://njt.jog.gov.hu/eli/TV/2007/1/hu/html",
+      "url": "https://njt.jog.gov.hu/jogszabaly/2007-1-00-00",
       "category": "free-movement-core"
     },
     {
@@ -177,6 +177,14 @@
       "citation": "113/2007. (V. 24.) Korm. rendelet",
       "url": "https://njt.jog.gov.hu/jogszabaly/2007-113-20-22",
       "category": "free-movement-core"
+    },
+    {
+      "id": "hu-act-2010-1",
+      "citation": "2010. évi I. törvény",
+      "url": "https://njt.jog.gov.hu/jogszabaly/2010-1-00-00",
+      "category": "civil-status",
+      "publisher": "Nemzeti Jogszabálytár",
+      "link_only": true
     },
     {
       "id": "hu-gov-2007-355",
@@ -413,15 +421,15 @@
       "category": "data-protection-and-foi"
     },
     {
-      "id": "hu-act-2016-100",
+      "id": "hu-act-2016-150",
       "citation": "2016. évi CL. törvény",
-      "url": "https://njt.jog.gov.hu/eli/TV/2016/150/hu/html",
+      "url": "https://njt.jog.gov.hu/jogszabaly/2016-150-00-00",
       "category": "administrative-procedure"
     },
     {
       "id": "hu-act-2017-1",
       "citation": "2017. évi I. törvény",
-      "url": "https://njt.jog.gov.hu/eli/TV/2017/1/hu/html",
+      "url": "https://njt.jog.gov.hu/jogszabaly/2017-1-00-00",
       "category": "administrative-court-procedure"
     },
     {
@@ -833,15 +841,23 @@
       "format": "pdf",
       "validation_markers": [
         "A hatósági ügyek intézésének rendjével kapcsolatos adatok"
-      ]
+      ],
+      "link_only": true,
+      "title": "AJBH disclosure on the procedure for handling official cases",
+      "reference_scope": "Publisher and document identity confirmed by the registered title marker; use as a historical AJBH procedure-information record only.",
+      "whole_site_review_offer": "hu-ajbh-current-complaint-and-equality-procedure"
     },
     {
-      "id": "ajbh-general-complaint-submission",
+      "id": "ajbh-public-interest-whistleblowing-guide-2025",
       "url": "https://www.ajbh.hu/documents/10180/160450/T%C3%A1j%C3%A9koztat%C3%B3%2Bf%C3%BCzet_2025.pdf/3e2af0a4-9b3c-ee2e-73cd-3777c857c2af?t=1747998995496&version=1.0",
-      "category": "remedies",
+      "category": "public-interest-reporting",
       "publisher": "Alapvető Jogok Biztosának Hivatala",
       "format": "pdf",
-      "identity_validation_pending": "The official PDF returned 403 during the recorded review, so no content identity marker has been confirmed."
+      "title": "Tájékoztató közérdekű/visszaélés-bejelentés benyújtásának lehetőségéről és feltételeiről",
+      "link_only": true,
+      "reference_scope": "2025 guide to public-interest and abuse reports through the Ombudsman’s protected electronic system; it is not an individual immigration complaint or appeal route.",
+      "whole_site_review_offer": "hu-ajbh-current-complaint-and-equality-procedure",
+      "version_evidence": "The official PDF search result identifies the title and describes the protected electronic reporting system; the URL and filename identify the 2025 edition. Currentness of channels was not established."
     },
     {
       "id": "ajbh-equal-treatment-request-procedure-2024",
@@ -851,7 +867,11 @@
       "format": "pdf",
       "validation_markers": [
         "Az alapvető jogok biztosához az egyenlő bánásmód követelményének"
-      ]
+      ],
+      "link_only": true,
+      "title": "AJBH equal-treatment information booklet (2024 edition)",
+      "reference_scope": "Static 2024 equal-treatment information; not confirmation of current filing forms or deadlines.",
+      "whole_site_review_offer": "hu-ajbh-current-complaint-and-equality-procedure"
     }
   ],
   "archive_targets": [
@@ -889,24 +909,21 @@
     },
     {
       "id": "ajbh-guidance-pages",
-      "title": "AJBH equal-treatment and general complaint guidance in the supplied archive",
-      "category": "guidance",
+      "title": "AJBH equal-treatment and oversight guidance in the supplied archive",
+      "category": "oversight-and-guidance",
       "publisher": "Alapvető Jogok Biztosának Hivatala",
       "official_catalogue": "https://www.ajbh.hu/",
-      "status": "official_direct_pdf_routes_pinned; catalogue_discovery_enabled; direct_access_unverified",
-      "resolved_source_id": "ajbh-general-complaint-submission",
+      "status": "official_direct_pdf_routes_pinned; link_only; catalogue_discovery_enabled; direct_access_unverified",
+      "resolved_source_id": "ajbh-public-interest-whistleblowing-guide-2025",
       "additional_resolved_source_ids": [
         "ajbh-equal-treatment-directorate",
         "ajbh-equal-treatment-request-procedure-2024"
       ],
-      "remaining_blocked_source_ids": [
+      "discovery_only_source_ids": [
         "ajbh-equal-treatment-application-submission",
         "ajbh-equal-treatment-authority-procedure"
       ],
-      "identity_validation_pending_source_ids": [
-        "ajbh-general-complaint-submission"
-      ],
-      "note": "Three official direct PDFs are registered as candidates for the existing PDF converter. Discovery-only AJBH catalogue pages are now included in discovery runs so replacement UUID links can be surfaced. Automated retrieval remains unverified. The 2025 general-complaint PDF stays blocked until its document identity can be confirmed from first-party content."
+      "note": "The three identified official AJBH PDFs are link-only references, not retrieval candidates. The 2025 PDF is a public-interest and abuse-reporting guide, not a general complaint guide. AJBH catalogue pages remain discovery-only; current complaint and reporting routes are offered for whole-site human review."
     },
     {
       "id": "oif-2023-foi-annual-report",

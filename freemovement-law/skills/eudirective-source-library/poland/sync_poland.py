@@ -282,15 +282,21 @@ def sync(selected_ids: set[str] | None = None) -> None:
         counts[state] = counts.get(state, 0) + 1
     retrieved = sum(bool(record.get("source_sha256")) for record in records)
     converted = sum(bool(record.get("candidate_text_path")) for record in records)
-    manifest["status"] = "partially_retrieved_review_candidates"
+    manifest["capture_status"] = "local_capture_candidates_updated"
     manifest["retrieved_review_candidate_count"] = retrieved
     manifest["converted_review_candidate_count"] = converted
     manifest["accepted_source_count"] = 0
+    manifest["accepted_local_copy_count"] = 0
+    manifest["acceptance_count_note"] = (
+        "accepted_source_count and accepted_local_copy_count count retained local copies only. "
+        "accepted_external_reference_count separately counts official links accepted within their recorded scope."
+    )
     manifest["retrieval_status"] = (
-        f"{converted} of {len(all_entries)} candidate records converted; {retrieved} exact source responses saved; "
+        f"Local capture run: {converted} of {len(all_entries)} candidate records converted; {retrieved} exact source responses saved; "
         f"{counts.get('official_pdf_preserved_text_extraction_unavailable', 0)} PDFs preserved without text; "
         f"{counts.get('discovery_surface_no_text', 0)} pages had no extractable body; "
-        f"{counts.get('retrieval_or_conversion_error', 0)} retrieval/conversion errors; no source accepted"
+        f"{counts.get('retrieval_or_conversion_error', 0)} retrieval/conversion errors. No local copy is accepted by capture; "
+        "official-link decisions are recorded separately in source-acceptance.json and source-review-manifest.json."
     )
     results = {
         "jurisdiction": "Poland",
@@ -299,6 +305,8 @@ def sync(selected_ids: set[str] | None = None) -> None:
         "request_policy": {"timeout_seconds": TIMEOUT, "max_response_bytes": MAX_BYTES, "delay_seconds": DELAY},
         "records": records,
         "accepted_source_count": 0,
+        "accepted_local_copy_count": 0,
+        "acceptance_count_note": "accepted_source_count and accepted_local_copy_count count retained local copies only. Link acceptance is tracked separately in source-acceptance.json and source-review-manifest.json.",
     }
     common.atomic(MANIFEST_PATH, (json.dumps(manifest, ensure_ascii=False, indent=2) + "\n").encode())
     common.atomic(RESULTS_PATH, (json.dumps(results, ensure_ascii=False, indent=2) + "\n").encode())

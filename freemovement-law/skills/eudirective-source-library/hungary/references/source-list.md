@@ -4,9 +4,19 @@ This source list reconciles the Hungarian national material in `hungary laws and
 
 ## Legislation
 
-The fixed statutory registry is `manifest.json`. It covers free movement and applications (Act I of 2007; Decree 113/2007; OIF forms under Decree 9/2024), procedure and remedies, records management, public-data access, data protection, fees and address records, digital administration, immigration context, social security, civil status, private international law, and supporting legal context.
+The statutory registry in `manifest.json` lists 59 legal records. Fifty-eight existing NJT records retain historical local review files but are manual-only; Act I of 2010 on civil registration is recorded as link-only and is not an updater target. The inventory covers free movement and applications, procedure and remedies, records management, public-data access, data protection, fees and address records, digital administration, immigration context, social security, civil status, private international law, and supporting legal context.
 
 Primary publisher: [Nemzeti Jogszabálytár](https://njt.jog.gov.hu/). Use its official current consolidated pages as human-reviewed source references and record the displayed version. Under the recorded portal terms, the updater does not fetch, store, or poll NJT law content.
+
+### Current official law references reviewed by link
+
+- [Act I of 2007 on free movement and residence](https://njt.jog.gov.hu/jogszabaly/2007-1-00-00) — NJT consolidation displayed 1 October 2026.
+- [Government Decree 113/2007 implementing Act I of 2007](https://njt.jog.gov.hu/jogszabaly/2007-113-20-22) — NJT consolidation displayed 7 October 2026.
+- [Act I of 2010 on civil-registration procedure](https://njt.jog.gov.hu/jogszabaly/2010-1-00-00) — NJT consolidation displayed 1 October 2026; link-only source.
+- [Act CL of 2016 on general administrative procedure](https://njt.jog.gov.hu/jogszabaly/2016-150-00-00) — NJT consolidation displayed 1 October 2026; record ID corrected to `hu-act-2016-150`.
+- [Act I of 2017 on administrative court procedure](https://njt.jog.gov.hu/jogszabaly/2017-1-00-00) — NJT consolidation displayed 1 October 2026.
+
+The NJT user manual identifies the official operator and says the public service publishes the queried day's effective law in consolidated form. These are official link references only: no local copies are accepted, and statutory-link acceptance does not establish topic coverage.
 
 ## OIF procedures, records, and public data
 
@@ -18,7 +28,7 @@ Primary publisher: [Országos Idegenrendészeti Főigazgatóság](https://oif.go
 
 ## Data protection, FOI, and remedies
 
-The source archive's NAIH procedure guidance is pinned from official NAIH pages, including data-subject rights, GDPR authority and investigation procedures, law-enforcement-data procedures, FOI requests, and FOI investigations. AJBH catalogue pages remain discovery-only and are now scanned during discovery runs, which can surface replacement UUID links without treating them as active source records. Three direct AJBH PDFs are registered as retrieval candidates: the [2024 equal-treatment procedure booklet](https://www.ajbh.hu/documents/10180/160450/T%C3%A1j%C3%A9koztat%C3%B3%2Bf%C3%BCzet_2024.pdf/37e09aa0-bc59-c2ac-ba81-767b67bfb8d7?t=1711035444903&version=1.0), the [2025 general complaint booklet](https://www.ajbh.hu/documents/10180/160450/T%C3%A1j%C3%A9koztat%C3%B3%2Bf%C3%BCzet_2025.pdf/3e2af0a4-9b3c-ee2e-73cd-3777c857c2af?t=1747998995496&version=1.0), and the equal-treatment directorate disclosure recorded in `manifest.json`. PDF media type and signature are checked before extraction. The 2025 booklet remains blocked until a first-party content identity marker can be confirmed; direct retrieval remains unverified because the prior browser fetch returned 403. No blocked content is represented as retrieved. The official case-law channels are [Kúria decisions search](https://kuria-birosag.hu/hu/kuriai-dontesek-kereses) and the [national courts' decisions collection](https://eakta.birosag.hu/anonimizalt-hatarozatok). Individual domestic decisions require a verified official record before addition.
+The source archive's NAIH procedure guidance is pinned from official NAIH pages, including data-subject rights, GDPR authority and investigation procedures, law-enforcement-data procedures, FOI requests, and FOI investigations. AJBH catalogue pages remain discovery-only and are scanned during discovery runs. Three direct AJBH documents are accepted as official link references: the [2024 equal-treatment booklet](https://www.ajbh.hu/documents/10180/160450/T%C3%A1j%C3%A9koztat%C3%B3%2Bf%C3%BCzet_2024.pdf/37e09aa0-bc59-c2ac-ba81-767b67bfb8d7?t=1711035444903&version=1.0), the [2025 public-interest and whistleblowing guide](https://www.ajbh.hu/documents/10180/160450/T%C3%A1j%C3%A9koztat%C3%B3%2Bf%C3%BCzet_2025.pdf/3e2af0a4-9b3c-ee2e-73cd-3777c857c2af?t=1747998995496&version=1.0), and the equal-treatment directorate disclosure. They are link-only, not retrieval candidates; the currentness of their procedures and channels is offered for whole-site human review. The 2025 guide is not an individual complaint or appeal form. The official case-law channels are [Kúria decisions search](https://kuria-birosag.hu/hu/kuriai-dontesek-kereses) and the [national courts' decisions collection](https://eakta.birosag.hu/anonimizalt-hatarozatok). Individual domestic decisions require a verified official record before addition.
 
 ## Shared EU sources and non-authoritative archive files
 
@@ -29,4 +39,4 @@ The source archive's NAIH procedure guidance is pinned from official NAIH pages,
 
 ## Retrieval boundary
 
-The manifest keeps 58 Hungarian Acts, decrees, and ministerial instruments as official NJT references, but they are manual-only. The updater excludes NJT URLs and catalogues from online runs. It continues to maintain permitted OIF/NAIH/AJBH pages and catalogues; newly found links remain candidates until reviewed. `manifest.json` maps supplied archive labels to official OIF records even where filenames differ.
+The manifest keeps 58 existing Hungarian Acts, decrees, and ministerial instruments as manual NJT references and includes Act I of 2010 as link-only. The online updater excludes NJT law records, NJT catalogues, and the three accepted AJBH link-only documents. It maintains 41 non-link-only OIF/NAIH/AJBH records; newly found links remain separate candidates until reviewed. The saved state contains 99 records, matching the 58 historical NJT review captures plus 41 online sources. `manifest.json` maps supplied archive labels to official OIF records even where filenames differ.

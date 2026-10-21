@@ -2,9 +2,9 @@
   "manifest_version": "0.1.0-candidate",
   "pack": "italy-national-source-library",
   "inventory_source": "references/source-list.md",
-  "inventory_research_date": "2026-10-19",
-  "status": "partially_retrieved_review_candidates",
-  "retrieval_status": "Three current Normattiva statutes captured article by article; one earlier MAECI candidate has unverified currentness; a second guidance page returned a publisher security challenge; no source accepted",
+  "inventory_research_date": "2026-10-21",
+  "status": "all_priority_external_references_accepted_local_copies_pending",
+  "retrieval_status": "Three Normattiva local conversions remain review candidates; the two MAECI pages are accepted as human-reviewed official links despite the direct HTTP challenge. No local copy is accepted.",
   "accepted_source_count": 0,
   "candidate_source_count": 5,
   "retrieved_review_candidate_count": 4,
@@ -29,7 +29,10 @@
       "source_sha256": "4c7a57f94914b83618c4a7f28a7d1ee23b12d0782c74d5d8f86aa129154e8ddc",
       "converted_sha256": "7507bed3c6f08530fcbe3d7480ca956246c726e0bef29e6017c13a58a7bcb897",
       "publisher_version_evidence": "2026-10-19",
-      "article_count": 28
+      "article_count": 28,
+      "external_reference_status": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21",
+      "local_copy_accepted": false
     },
     {
       "id": "it-02-law-no.-218-1995-reforming-italian-private-international-law",
@@ -53,7 +56,10 @@
       "source_sha256": "2974167ca36b1f4f87b39fc0d665f89ecc25145347fca83156092d0c0e2df7fa",
       "converted_sha256": "7f7b534b13f647f1fdad9baeed08fed7e66eff9e5912188d4af468dafcb5496e",
       "publisher_version_evidence": "2026-10-19",
-      "article_count": 80
+      "article_count": 80,
+      "external_reference_status": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21",
+      "local_copy_accepted": false
     },
     {
       "id": "it-03-law-no.-184-1983-on-adoption-and-foster-care",
@@ -76,7 +82,10 @@
       "source_sha256": "de18c36eddba1ce9ea82648ce00b5e111b2ce8e58b2e80b691302ec4a8039d3e",
       "converted_sha256": "47f340398d027edfd85bea27df35d509e3c7d33035d9db8bc1f983086cfd4253",
       "publisher_version_evidence": "In-force URN selector in the official link; publisher ELI version date not present in this page",
-      "article_count": 92
+      "article_count": 92,
+      "external_reference_status": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21",
+      "local_copy_accepted": false
     },
     {
       "id": "it-04-ministry-of-foreign-affairs-guidance-on-recognition-of-foreign-judgments",
@@ -97,7 +106,10 @@
       "resolved_url": "https://validate.perfdrive.com/ (direct HTTP request returned the publisher bot challenge)",
       "retrieval_note": "Direct HTTP retrieval returned the publisher Radware challenge. The current official page is readable through the standard web view, but no raw direct response was available for a hash-pinned local conversion; no challenge bypass was attempted.",
       "browser_view_url": "https://www.esteri.it/it/servizi-opportunita/italiani-all-estero/stato-civile/riconoscimento-di-sentenze-straniere/",
-      "retrieval_checked_at": "2026-10-19"
+      "retrieval_checked_at": "2026-10-19",
+      "external_reference_status": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21",
+      "local_copy_accepted": false
     },
     {
       "id": "it-05-maeci-entry-and-visa-guidance-for-family-members-of-eu-citizens",
@@ -120,7 +132,16 @@
       "retrieval_note": "Prior 15 October 2026 English review candidate retained; current page was visible in the standard web view, but direct HTTP retrieval returned the publisher Radware challenge and no raw response is available for replay. The page has no dependable version date; currentness remains unverified. No challenge bypass was attempted.",
       "alternate_language_url": "https://www.esteri.it/it/ministero/sportello_info/domandefrequenti/sezione_visti_entrare_in_italia/",
       "browser_view_url": "https://www.esteri.it/en/ministero/sportello_info/domandefrequenti/sezione_visti_entrare_in_italia/",
-      "retrieval_checked_at": "2026-10-19"
+      "retrieval_checked_at": "2026-10-19",
+      "external_reference_status": "accepted_with_narrow_external_scope",
+      "external_reference_checked_on": "2026-10-21",
+      "local_copy_accepted": false
     }
-  ]
+  ],
+  "accepted_external_reference_count": 5,
+  "pending_external_reference_count": 0,
+  "accepted_topic_count": 0,
+  "country_review_complete": false,
+  "accepted_local_copy_count": 0,
+  "count_note": "accepted_source_count and accepted_local_copy_count count local source artifacts; accepted_external_reference_count is the separate number of usable official links. See references/source-acceptance.json."
 }

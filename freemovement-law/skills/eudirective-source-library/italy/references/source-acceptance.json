@@ -1,0 +1,1048 @@
+{
+  "schema_version": "1.0",
+  "review_date": "2026-10-21",
+  "jurisdiction": "IT",
+  "status": "partial",
+  "publisher_assessment": {
+    "publisher": "Normattiva and the named Italian government departments, courts, authorities, and EU discovery service.",
+    "decision": "Accept 35 distinct official source records through 37 official link URLs, each within its recorded scope and date. This includes 32 records from the 42-entry monitor inventory and three additional priority sources. No local copy or legal topic is accepted.",
+    "basis": "Normattiva identifies itself as the Italian legal-text service and describes persistent URNs and original, current-at-consultation, date-selected, and multivigent views. The reviewed current records provide consolidated government texts for the main free-movement, immigration, administrative-procedure, and judicial-procedure acts. Current MAECI and authority pages can be human-reviewed in the official web view even where direct capture clients receive a security challenge.",
+    "limitation": "External-link acceptance means that the named official page is a usable reference within its exact role, wording, language and date. It does not accept a local conversion, establish full topic coverage, resolve every legal dependency, or complete Italy review. Several links are dated, discovery-only, operational examples or live pages without a publication date.",
+    "whole_site_review_options": [
+      {
+        "site": "https://www.normattiva.it/",
+        "publisher": "Normattiva",
+        "review_for": "Official law records, current and historical text selectors, version metadata and source-level cautions."
+      },
+      {
+        "site": "https://www.esteri.it/",
+        "publisher": "MAECI",
+        "review_for": "Current central visa guidance, mission directory, consular instructions and links to mission-specific pages."
+      },
+      {
+        "site": "https://www.interno.gov.it/",
+        "publisher": "Ministry of the Interior",
+        "review_for": "Residence procedures, Withdrawal Agreement guidance, Questura and municipal guidance, and competent-authority links."
+      },
+      {
+        "site": "https://www.giustizia.it/",
+        "publisher": "Ministry of Justice",
+        "review_for": "Legal aid, civil-status, international adoption and justice procedure guidance."
+      },
+      {
+        "site": "https://www.giustizia-amministrativa.it/",
+        "publisher": "Administrative judiciary",
+        "review_for": "Administrative court decisions, filing instructions and current procedure notices."
+      },
+      {
+        "site": "https://www.cortedicassazione.it/",
+        "publisher": "Court of Cassation",
+        "review_for": "Official judgments and court search services."
+      },
+      {
+        "site": "https://www.commissioneaccesso.pcm.gov.it/it/",
+        "publisher": "Commission for Access to Administrative Documents",
+        "review_for": "Central-government access remedies, forms and decision archive."
+      },
+      {
+        "site": "https://www.garanteprivacy.it/",
+        "publisher": "Italian Data Protection Authority",
+        "review_for": "Current privacy rights, complaint route and submission forms."
+      },
+      {
+        "site": "https://www.prefettura.interno.gov.it/",
+        "publisher": "Ministry of the Interior prefecture network",
+        "review_for": "Local residence procedures and competent Questura/prefecture service pages; search the competent area rather than infer national uniformity."
+      }
+    ]
+  },
+  "counts": {
+    "candidate_records_reviewed": 47,
+    "accepted_external_references": 35,
+    "pending_external_references": 4,
+    "not_relied_upon_optional_or_superseded": 5,
+    "duplicate_candidate_records": 3,
+    "accepted_local_copies": 0,
+    "accepted_topics": 0,
+    "country_review_complete": false,
+    "distinct_source_records_after_deduplication": 44,
+    "accepted_source_records": 35,
+    "accepted_official_link_urls": 37,
+    "pending_source_records": 4
+  },
+  "inventory_decisions": [
+    {
+      "manifest": "references/candidate-manifest.json",
+      "candidate_records": 5,
+      "accepted_external_references": 5,
+      "local_copies_accepted": 0,
+      "note": "Priority pack; two links duplicate accepted references in the expanded monitor list."
+    },
+    {
+      "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+      "candidate_records": 42,
+      "accepted_external_references": 32,
+      "pending_external_references": 4,
+      "not_relied_upon_optional_or_superseded": 5,
+      "duplicate_candidate_records": 1,
+      "local_copies_accepted": 0,
+      "note": "One N-Lex country-information record is duplicated as it-42; API/Open Data notes are optional technical leads, not barriers to official link use."
+    }
+  ],
+  "accepted_references": [
+    {
+      "source_id": "monitor-it-01",
+      "title": "N-Lex Italy country information",
+      "url": "https://n-lex.europa.eu/n-lex/info/info-it/index?lang=en",
+      "publisher": "N-Lex / Publications Office of the European Union",
+      "language": "en",
+      "checked_on": "2026-10-18",
+      "version": "N-Lex states that the database includes numbered acts since 1946, excludes ministerial decrees, and has unfinished dynamic amendment links.",
+      "acceptance_scope": "N-Lex Italy country-information page as an EU-level discovery and catalogue-scope reference. Use the Italian government publisher, Normattiva, for the actual national text.",
+      "limitations": "N-Lex reports gaps including excluded ministerial decrees and incomplete dynamic amendment links; it is not Italy’s legal publisher and does not establish completeness.",
+      "candidate_records": [
+        {
+          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "id": "it-01"
+        }
+      ],
+      "evidence": {
+        "official_source_url": "https://n-lex.europa.eu/n-lex/info/info-it/index?lang=en",
+        "verified_content": "Official N-Lex page inspected; describes Normattiva coverage and its known exclusions and development limits.",
+        "source_record_note": "External-link acceptance only. Local Markdown/PDF captures and conversions remain unaccepted.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "monitor-it-03",
+      "title": "Normattiva national legislation portal",
+      "url": "https://www.normattiva.it/",
+      "publisher": "Normattiva / Italian government legal-text service",
+      "language": "it",
+      "checked_on": "2026-10-18",
+      "version": "Provides current, original and selected historical versions; some records expose Akoma Ntoso and other export options.",
+      "acceptance_scope": "Normattiva as the official Italian legal-text discovery service, including its current, original and date-selected text views; its utility page explains version selection and URNs.",
+      "limitations": "Portal acceptance does not validate every individual record or establish complete national legal coverage. Confirm the act identity and displayed version on the record used.",
+      "candidate_records": [
+        {
+          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "id": "it-03"
+        }
+      ],
+      "evidence": {
+        "official_source_url": "https://www.normattiva.it/",
+        "verified_content": "Official national legislation portal identified and records inspected through its own pages and search results.",
+        "source_record_note": "External-link acceptance only. Local Markdown/PDF captures and conversions remain unaccepted.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "monitor-it-04",
+      "title": "Legislative Decree 30/2007, current version",
+      "url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.codiceRedazionale=007G0033&atto.dataPubblicazioneGazzetta=2007-03-27&bloccoAggiornamentoBreadCrumb=true&classica=true&dataVigenza=&generaTabId=true&qId=&tabID=0.5763913696950262&tipoDettaglio=vigente&title=lbl.dettaglioAtto",
+      "publisher": "Normattiva / Italian government legal-text service",
+      "language": "it",
+      "checked_on": "2026-10-18",
+      "version": "Page reported current on 2026-10-18; record displays a last amendment publication in 2023 and current/original/historical variants.",
+      "acceptance_scope": "Current Normattiva text of Legislative Decree 30/2007, the national free-movement framework implementing Directive 2004/38, as displayed in the 18 October 2026 review.",
+      "limitations": "External link only. The local conversion is not accepted. Article 23 distinguishes mobile and non-mobile Italian sponsors; EEA, Swiss and UK routes need separate treatment.",
+      "candidate_records": [
+        {
+          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "id": "it-04"
+        },
+        {
+          "manifest": "references/candidate-manifest.json",
+          "id": "it-01-legislative-decree-no.-30-2007-implementing-free-movement-and-residence-rig"
+        }
+      ],
+      "evidence": {
+        "official_source_url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.codiceRedazionale=007G0033&atto.dataPubblicazioneGazzetta=2007-03-27&bloccoAggiornamentoBreadCrumb=true&classica=true&dataVigenza=&generaTabId=true&qId=&tabID=0.5763913696950262&tipoDettaglio=vigente&title=lbl.dettaglioAtto",
+        "verified_content": "Official Normattiva record inspected in search results; identifies D.Lgs 30 of 6 February 2007 as implementing Directive 2004/38 and exposes a current-law view.",
+        "source_record_note": "External-link acceptance only. Local Markdown/PDF captures and conversions remain unaccepted.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "decision": "accepted_with_narrow_external_scope",
+      "alternative_official_urls": [
+        {
+          "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2007-02-06;30~vig=",
+          "role": "Persistent Normattiva URN used by the priority source list; resolves the act in the version current at consultation."
+        }
+      ]
+    },
+    {
+      "source_id": "monitor-it-05",
+      "title": "Legislative Decree 30/2007, original Gazette version",
+      "url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.codiceRedazionale=007G0033&atto.dataPubblicazioneGazzetta=2007-03-27&tipoDettaglio=originario",
+      "publisher": "Normattiva / Italian government legal-text service",
+      "language": "it",
+      "checked_on": "2026-10-18",
+      "version": "Original publication date 27 March 2007; not the current consolidated text.",
+      "acceptance_scope": "The official original 27 March 2007 publication record for Legislative Decree 30/2007, for historical wording and comparison only.",
+      "limitations": "This is the original text, not current consolidated law. Use the current Normattiva view for operative provisions.",
+      "candidate_records": [
+        {
+          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "id": "it-05"
+        }
+      ],
+      "evidence": {
+        "official_source_url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.codiceRedazionale=007G0033&atto.dataPubblicazioneGazzetta=2007-03-27&tipoDettaglio=originario",
+        "verified_content": "Official Normattiva record identifies the original D.Lgs 30/2007 and its Gazette publication.",
+        "source_record_note": "External-link acceptance only. Local Markdown/PDF captures and conversions remain unaccepted.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "monitor-it-06",
+      "title": "Legislative Decree 286/1998, Consolidated Immigration Act",
+      "url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.codiceRedazionale=098G0348&atto.dataPubblicazioneGazzetta=1998-08-18&bloccoAggiornamentoBreadCrumb=true&classica=true&dataVigenza=&generaTabId=true&qId=&tabID=0.5284288919082871&tipoDettaglio=vigente&title=lbl.dettaglioAtto",
+      "publisher": "Normattiva / Italian government legal-text service",
+      "language": "it",
+      "checked_on": "2026-10-21",
+      "version": "Full current-act view displayed current at 2026-10-19; record reported last update on 2026-07-01. Earlier local candidate captured only an Article 40 page.",
+      "acceptance_scope": "The full current Normattiva text of Legislative Decree 286/1998 (Consolidated Immigration Act), shown current at 19 October 2026 and last updated 1 July 2026. This replaces the prior article-40-only link as the reference.",
+      "limitations": "External link only. The old local capture is an Article 40 page and is not accepted as a transcription or full-act copy. Confirm the displayed current version again when relying on a provision.",
+      "candidate_records": [
+        {
+          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "id": "it-06"
+        }
+      ],
+      "evidence": {
+        "official_source_url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.codiceRedazionale=098G0348&atto.dataPubblicazioneGazzetta=1998-08-18&bloccoAggiornamentoBreadCrumb=true&classica=true&dataVigenza=&generaTabId=true&qId=&tabID=0.5284288919082871&tipoDettaglio=vigente&title=lbl.dettaglioAtto",
+        "verified_content": "Official Normattiva result inspected for the current consolidated immigration legislation.",
+        "source_record_note": "External-link acceptance only. Local Markdown/PDF captures and conversions remain unaccepted.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "monitor-it-07",
+      "title": "Presidential Decree 394/1999, implementing immigration regulation",
+      "url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.codiceRedazionale=099G0265&atto.dataPubblicazioneGazzetta=1999-11-03&bloccoAggiornamentoBreadCrumb=true&classica=true&dataVigenza=&generaTabId=true&qId=&tabID=&tipoDettaglio=vigente&title=lbl.dettaglioAtto",
+      "publisher": "Normattiva / Italian government legal-text service",
+      "language": "it",
+      "checked_on": "2026-10-21",
+      "version": "Current-view URL selected; the official record showed last update 2026-09-30. The retained local capture is a dated 2024-06-20 consolidation only.",
+      "acceptance_scope": "The current Normattiva view of Presidential Decree 394/1999, whose official record showed an update on 30 September 2026.",
+      "limitations": "The previously captured 20 June 2024 consolidation is not accepted as current. External reference only; recheck the displayed version when using a provision.",
+      "candidate_records": [
+        {
+          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "id": "it-07"
+        }
+      ],
+      "evidence": {
+        "official_source_url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.codiceRedazionale=099G0265&atto.dataPubblicazioneGazzetta=1999-11-03&bloccoAggiornamentoBreadCrumb=true&classica=true&dataVigenza=&generaTabId=true&qId=&tabID=&tipoDettaglio=vigente&title=lbl.dettaglioAtto",
+        "verified_content": "Official Normattiva record inspected; the URL pins a consolidated edition dated 20 June 2024.",
+        "source_record_note": "External-link acceptance only. Local Markdown/PDF captures and conversions remain unaccepted.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "monitor-it-11",
+      "title": "Law 300/1993 ratifying the EEA Agreement",
+      "url": "https://www.gazzettaufficiale.it/atto/serie_generale/caricaDettaglioAtto/originario?atto.codiceRedazionale=093G0344&atto.dataPubblicazioneGazzetta=1993-08-16",
+      "publisher": "Gazzetta Ufficiale della Repubblica Italiana",
+      "language": "it",
+      "checked_on": "2026-10-18",
+      "version": "Original act record inspected via official publisher.",
+      "acceptance_scope": "Official Gazzetta record of Law 300/1993, the instrument ratifying the EEA Agreement.",
+      "limitations": "The record establishes the ratifying act only; it does not by itself establish which EU free-movement provisions apply to EEA nationals.",
+      "candidate_records": [
+        {
+          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "id": "it-11"
+        }
+      ],
+      "evidence": {
+        "official_source_url": "https://www.gazzettaufficiale.it/atto/serie_generale/caricaDettaglioAtto/originario?atto.codiceRedazionale=093G0344&atto.dataPubblicazioneGazzetta=1993-08-16",
+        "verified_content": "Official Gazzetta record identifies Law 28 July 1993 no. 300 ratifying the EEA Agreement.",
+        "source_record_note": "External-link acceptance only. Local Markdown/PDF captures and conversions remain unaccepted.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "monitor-it-12",
+      "title": "Law 364/2000 ratifying the EU-Swiss free-movement agreement",
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn%3Anir%3Astato%3Alegge%3A2000-11-15%3B364%21vig=",
+      "publisher": "Normattiva / Italian government legal-text service",
+      "language": "it",
+      "checked_on": "2026-10-18",
+      "version": "Act ratifies the EU-Switzerland Agreement on free movement of persons.",
+      "acceptance_scope": "Official Normattiva record of Law 364/2000 ratifying the EU–Switzerland Agreement on free movement of persons.",
+      "limitations": "Switzerland is not part of the EEA. Agreement scope, protocols and later changes require separate review for a particular issue.",
+      "candidate_records": [
+        {
+          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "id": "it-12"
+        }
+      ],
+      "evidence": {
+        "official_source_url": "https://www.normattiva.it/uri-res/N2Ls?urn%3Anir%3Astato%3Alegge%3A2000-11-15%3B364%21vig=",
+        "verified_content": "Official Normattiva record identified for Law 15 November 2000 no. 364.",
+        "source_record_note": "External-link acceptance only. Local Markdown/PDF captures and conversions remain unaccepted.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "monitor-it-14",
+      "title": "Interior Ministry copy of Legislative Decree 30/2007",
+      "url": "https://www1.interno.gov.it/mininterno/export/sites/default/it/assets/files/15/08982_DECRETOLEGISLATIVO6febbraio_2007.pdf",
+      "publisher": "Italian Ministry of the Interior / named prefecture or department",
+      "language": "it",
+      "checked_on": "2026-10-18",
+      "version": "Publisher copy has no demonstrated current consolidation and may predate amendments.",
+      "acceptance_scope": "An official Interior Ministry copy of Legislative Decree 30/2007, useful as a secondary historical official text.",
+      "limitations": "No current consolidation is demonstrated. Do not use this PDF in place of the current Normattiva text.",
+      "candidate_records": [
+        {
+          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "id": "it-14"
+        }
+      ],
+      "evidence": {
+        "official_source_url": "https://www1.interno.gov.it/mininterno/export/sites/default/it/assets/files/15/08982_DECRETOLEGISLATIVO6febbraio_2007.pdf",
+        "verified_content": "Official Ministry PDF identified; useful as a secondary official copy of the statute.",
+        "source_record_note": "External-link acceptance only. Local Markdown/PDF captures and conversions remain unaccepted.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "monitor-it-15",
+      "title": "Rome Prefecture: permits and EU-family residence cards",
+      "url": "https://prefettura.interno.gov.it/it/prefetture/roma/permessi-questura",
+      "publisher": "Italian Ministry of the Interior / named prefecture or department",
+      "language": "it",
+      "checked_on": "2026-10-18",
+      "version": "Last updated 21 May 2024; one Rome-area page, with older and mixed permit content.",
+      "acceptance_scope": "Rome Prefecture’s official page as a dated example of local registration and EU-family residence-card routes; page last updated 21 May 2024.",
+      "limitations": "Rome-area example only, not national guidance; content is dated and may have changed.",
+      "candidate_records": [
+        {
+          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "id": "it-15"
+        }
+      ],
+      "evidence": {
+        "official_source_url": "https://prefettura.interno.gov.it/it/prefetture/roma/permessi-questura",
+        "verified_content": "Official Prefecture page inspected; distinguishes municipal registration of EU citizens staying over three months and Questura/post routes for third-country family members.",
+        "source_record_note": "External-link acceptance only. Local Markdown/PDF captures and conversions remain unaccepted.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "monitor-it-17",
+      "title": "Ministry of Foreign Affairs: entering Italy and visa FAQs",
+      "url": "https://www.esteri.it/it/ministero/sportello_info/domandefrequenti/sezione_visti_entrare_in_italia/",
+      "publisher": "Italian Ministry of Foreign Affairs and International Cooperation (MAECI)",
+      "language": "it",
+      "checked_on": "2026-10-21",
+      "version": "Mutable FAQ with no stable version history exposed in the reviewed page.",
+      "acceptance_scope": "The live Italian MAECI FAQ on entering Italy and visas, including its displayed information about EU/EEA family members, checked 21 October 2026.",
+      "limitations": "The page has no dependable revision date. This is operational guidance only, not legislation or mission-specific instructions. Check the page again for live use.",
+      "candidate_records": [
+        {
+          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "id": "it-17"
+        },
+        {
+          "manifest": "references/candidate-manifest.json",
+          "id": "it-05-maeci-entry-and-visa-guidance-for-family-members-of-eu-citizens"
+        }
+      ],
+      "evidence": {
+        "official_source_url": "https://www.esteri.it/it/ministero/sportello_info/domandefrequenti/sezione_visti_entrare_in_italia/",
+        "verified_content": "Official MFA FAQ inspected; covers family members of EU/EEA citizens and cites Article 2 D.Lgs 30/2007.",
+        "source_record_note": "External-link acceptance only. Local Markdown/PDF captures and conversions remain unaccepted.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "decision": "accepted_with_narrow_external_scope",
+      "alternative_language_urls": [
+        {
+          "url": "https://www.esteri.it/en/ministero/sportello_info/domandefrequenti/sezione_visti_entrare_in_italia/",
+          "language": "en",
+          "role": "English alternative to the Italian live FAQ; checked 2026-10-21."
+        }
+      ]
+    },
+    {
+      "source_id": "monitor-it-18",
+      "title": "Visto per Italia: family members of an EU citizen",
+      "url": "https://vistoperitalia.esteri.it/infovisto?code=8_25_D",
+      "publisher": "Italian Ministry of Foreign Affairs and International Cooperation (MAECI)",
+      "language": "it",
+      "checked_on": "2026-10-21",
+      "version": "No publication/version date displayed in the reviewed result.",
+      "acceptance_scope": "The live Visto per Italia information result for family members of an EU citizen, checked 21 October 2026, including the displayed post-arrival residence-card route.",
+      "limitations": "The result is dynamic and has no stable version date. It is scoped to the selected EU-citizen route; do not generalize it to EEA or Swiss routes.",
+      "candidate_records": [
+        {
+          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "id": "it-18"
+        }
+      ],
+      "evidence": {
+        "official_source_url": "https://vistoperitalia.esteri.it/infovisto?code=8_25_D",
+        "verified_content": "Official MFA visa information tool inspected; describes Questura or post-office applications for the residence card after arrival.",
+        "source_record_note": "External-link acceptance only. Local Markdown/PDF captures and conversions remain unaccepted.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "monitor-it-20",
+      "title": "MFA diplomatic-consular network directory",
+      "url": "https://www.esteri.it/it/ministero/struttura/laretediplomatica/",
+      "publisher": "Italian Ministry of Foreign Affairs and International Cooperation (MAECI)",
+      "language": "it",
+      "checked_on": "2026-10-21",
+      "version": "Live directory lists current network entries but no stable snapshot was retained.",
+      "acceptance_scope": "MAECI’s live diplomatic and consular network directory, checked 21 October 2026, as a discovery route to missions.",
+      "limitations": "A directory is not mission-specific visa guidance. Appointment channels, checklists and outsourcing arrangements must be checked on the responsible mission’s own official site.",
+      "candidate_records": [
+        {
+          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "id": "it-20"
+        }
+      ],
+      "evidence": {
+        "official_source_url": "https://www.esteri.it/it/ministero/struttura/laretediplomatica/",
+        "verified_content": "Official dynamic directory inspected; filters embassies, consulates, countries, cities and mission roles.",
+        "source_record_note": "External-link acceptance only. Local Markdown/PDF captures and conversions remain unaccepted.",
+        "retrieval_status": "retrieval_or_conversion_error"
+      },
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "monitor-it-21",
+      "title": "Law 241/1990: administrative procedure and access to records",
+      "url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.codiceRedazionale=090G0294&atto.dataPubblicazioneGazzetta=1990-08-18&bloccoAggiornamentoBreadCrumb=true&dataVigenza=&generaTabId=true&qId=f4dafbb4-7788-47b1-862a-454fc755eefc&tabID=0.0675945903076085&tipoDettaglio=vigente&title=lbl.dettaglioAtto",
+      "publisher": "Normattiva / Italian government legal-text service",
+      "language": "it",
+      "checked_on": "2026-10-18",
+      "version": "Full act current-view page displayed current at 2026-10-13; last update published on 2026-04-20. The old local capture was not a full-act semantic review.",
+      "acceptance_scope": "Full current Normattiva text of Law 241/1990 on administrative procedure and access to administrative documents; the record displayed current at 13 October 2026 and an update published 20 April 2026.",
+      "limitations": "External link only. It is a procedural baseline; exceptions, deadlines and sector-specific rules must be matched to the matter.",
+      "candidate_records": [
+        {
+          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "id": "it-21"
+        }
+      ],
+      "evidence": {
+        "official_source_url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.codiceRedazionale=090G0294&atto.dataPubblicazioneGazzetta=1990-08-18&bloccoAggiornamentoBreadCrumb=true&dataVigenza=&generaTabId=true&qId=f4dafbb4-7788-47b1-862a-454fc755eefc&tabID=0.0675945903076085&tipoDettaglio=vigente&title=lbl.dettaglioAtto",
+        "verified_content": "Official Normattiva law record identified; regulates administrative procedure and documentary access.",
+        "source_record_note": "External-link acceptance only. Local Markdown/PDF captures and conversions remain unaccepted.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "monitor-it-22",
+      "title": "Presidential Decree 184/2006: access to administrative documents",
+      "url": "https://www.normattiva.it/eli/id/2006/05/18/006G0200/CONSOLIDATED",
+      "publisher": "Normattiva / Italian government legal-text service",
+      "language": "it",
+      "checked_on": "2026-10-18",
+      "version": "Normattiva says the act was last updated 21 June 2013.",
+      "acceptance_scope": "Official Normattiva consolidated record for Presidential Decree 184/2006 on access to administrative documents, with last update shown as 21 June 2013.",
+      "limitations": "Accepted as that official text and date only. Check later changes and the competent authority’s rules for the current procedure.",
+      "candidate_records": [
+        {
+          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "id": "it-22"
+        }
+      ],
+      "evidence": {
+        "official_source_url": "https://www.normattiva.it/eli/id/2006/05/18/006G0200/CONSOLIDATED",
+        "verified_content": "Official consolidated record inspected; governs procedures for access under Chapter V of Law 241/1990.",
+        "source_record_note": "External-link acceptance only. Local Markdown/PDF captures and conversions remain unaccepted.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "monitor-it-23",
+      "title": "Legislative Decree 33/2013: transparency and civic access",
+      "url": "https://www.normattiva.it/eli/stato/DECRETO_LEGISLATIVO/2013/03/14/33/CONSOLIDATED/20250625",
+      "publisher": "Normattiva / Italian government legal-text service",
+      "language": "it",
+      "checked_on": "2026-10-18",
+      "version": "Official full-text consolidation pinned to 2025-06-25; prior candidate URL opened the original/article record, not this full consolidation.",
+      "acceptance_scope": "Official Normattiva consolidated text of Legislative Decree 33/2013, pinned to the 25 June 2025 edition, on transparency and civic access.",
+      "limitations": "This dated consolidation is not a 2026 snapshot. It concerns civic access and must not be confused with access to an individual case file or the applicable appeal route.",
+      "candidate_records": [
+        {
+          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "id": "it-23"
+        }
+      ],
+      "evidence": {
+        "official_source_url": "https://www.normattiva.it/eli/stato/DECRETO_LEGISLATIVO/2013/03/14/33/CONSOLIDATED/20250625",
+        "verified_content": "Official Normattiva result inspected; identifies the transparency and civic-access decree.",
+        "source_record_note": "External-link acceptance only. Local Markdown/PDF captures and conversions remain unaccepted.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "monitor-it-25",
+      "title": "Commission for Access to Administrative Documents",
+      "url": "https://www.commissioneaccesso.pcm.gov.it/it/",
+      "publisher": "Commission for Access to Administrative Documents, Presidency of the Council of Ministers",
+      "language": "it",
+      "checked_on": "2026-10-18",
+      "version": "Page's selected decisions archive covers 2013-2019; other linked archives have older date ranges.",
+      "acceptance_scope": "The official Commission for Access to Administrative Documents portal as a discovery route for its procedures, forms and decisions.",
+      "limitations": "The displayed selected-decision archive covers 2013–2019. The Commission is not the only route; local and regional authorities have separate review channels.",
+      "candidate_records": [
+        {
+          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "id": "it-25"
+        }
+      ],
+      "evidence": {
+        "official_source_url": "https://www.commissioneaccesso.pcm.gov.it/it/",
+        "verified_content": "Official Presidency of the Council site inspected; provides access law, appeal forms, rules and a decision archive.",
+        "source_record_note": "External-link acceptance only. Local Markdown/PDF captures and conversions remain unaccepted.",
+        "retrieval_status": "retrieval_or_conversion_error"
+      },
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "monitor-it-26",
+      "title": "Commission for Access: functions and jurisdiction",
+      "url": "https://www.commissioneaccesso.pcm.gov.it/it/la-commissione/funzioni/",
+      "publisher": "Commission for Access to Administrative Documents, Presidency of the Council of Ministers",
+      "language": "it",
+      "checked_on": "2026-10-18",
+      "version": "Current contact and procedure information appears on the official site.",
+      "acceptance_scope": "The Commission’s official functions page for its stated jurisdiction over central/state and ultraregional bodies.",
+      "limitations": "Jurisdiction depends on the authority involved; local and regional access disputes follow a different route.",
+      "candidate_records": [
+        {
+          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "id": "it-26"
+        }
+      ],
+      "evidence": {
+        "official_source_url": "https://www.commissioneaccesso.pcm.gov.it/it/la-commissione/funzioni/",
+        "verified_content": "Official Commission page inspected; states review jurisdiction over central/state administrations and ultraregional bodies.",
+        "source_record_note": "External-link acceptance only. Local Markdown/PDF captures and conversions remain unaccepted.",
+        "retrieval_status": "retrieval_or_conversion_error"
+      },
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "monitor-it-27",
+      "title": "Legislative Decree 104/2010: Code of Administrative Procedure",
+      "url": "https://www.normattiva.it/eli/id/2010/07/07/010G0127/CONSOLIDATED/20260826",
+      "publisher": "Normattiva / Italian government legal-text service",
+      "language": "it",
+      "checked_on": "2026-10-18",
+      "version": "Official full-text consolidation pinned to 2026-08-26; the record had been updated on 2026-08-11.",
+      "acceptance_scope": "Official Normattiva consolidated text of Legislative Decree 104/2010 (Code of Administrative Procedure), pinned to the edition in force on 26 August 2026.",
+      "limitations": "This is general administrative court procedure, not a complete immigration-remedy crosswalk. Confirm applicable deadlines and jurisdiction for the challenged measure.",
+      "candidate_records": [
+        {
+          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "id": "it-27"
+        }
+      ],
+      "evidence": {
+        "official_source_url": "https://www.normattiva.it/eli/id/2010/07/07/010G0127/CONSOLIDATED/20260826",
+        "verified_content": "Official Normattiva current record inspected; identifies the Code of Administrative Procedure.",
+        "source_record_note": "External-link acceptance only. Local Markdown/PDF captures and conversions remain unaccepted.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "monitor-it-28",
+      "title": "Giustizia Amministrativa decision and opinion search",
+      "url": "https://www.giustizia-amministrativa.it/web/guest/ricerche2",
+      "publisher": "Italian administrative judiciary",
+      "language": "it",
+      "checked_on": "2026-10-18",
+      "version": "Search form exposes filters including proceeding type, seat and registration number.",
+      "acceptance_scope": "The official Giustizia Amministrativa decision and opinion search service for TAR and Council of State materials.",
+      "limitations": "Accepted as a discovery tool only. This review does not establish corpus completeness, reproducible queries or coverage of all relevant decisions.",
+      "candidate_records": [
+        {
+          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "id": "it-28"
+        }
+      ],
+      "evidence": {
+        "official_source_url": "https://www.giustizia-amministrativa.it/web/guest/ricerche2",
+        "verified_content": "Official judiciary search page inspected; provides queries for TAR and Council of State decisions and opinions.",
+        "source_record_note": "External-link acceptance only. Local Markdown/PDF captures and conversions remain unaccepted.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "monitor-it-29",
+      "title": "Supreme Court of Cassation online services and SentenzeWeb",
+      "url": "https://www.cortedicassazione.it/it/altri_servizi.page?contentId=TGN1864",
+      "publisher": "Italian Court of Cassation",
+      "language": "it",
+      "checked_on": "2026-10-18",
+      "version": "The Court identifies SentenzeWeb as its judgment search engine; access and corpus limits are not established here.",
+      "acceptance_scope": "The Court of Cassation’s official online-services page linking to SentenzeWeb and other research services.",
+      "limitations": "Accepted as a discovery lead only; no case-law corpus completeness or particular holding is accepted.",
+      "candidate_records": [
+        {
+          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "id": "it-29"
+        }
+      ],
+      "evidence": {
+        "official_source_url": "https://www.cortedicassazione.it/it/altri_servizi.page?contentId=TGN1864",
+        "verified_content": "Official Court page inspected; links to SentenzeWeb and other legal research services.",
+        "source_record_note": "External-link acceptance only. Local Markdown/PDF captures and conversions remain unaccepted.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "monitor-it-30",
+      "title": "Presidential Decree 115/2002: legal aid and justice expenses",
+      "url": "https://www.normattiva.it/eli/id/2002/06/15/002G0139/CONSOLIDATED/20241015",
+      "publisher": "Normattiva / Italian government legal-text service",
+      "language": "it",
+      "checked_on": "2026-10-18",
+      "version": "Official full-text consolidation pinned to 2024-10-15; check current legal-aid limits separately.",
+      "acceptance_scope": "Official Normattiva consolidated text of Presidential Decree 115/2002, pinned to 15 October 2024, for the justice-expenses and legal-aid statutory framework.",
+      "limitations": "This is not a 2026 version. The financial eligibility threshold is changeable and must be checked from current official guidance before use.",
+      "candidate_records": [
+        {
+          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "id": "it-30"
+        }
+      ],
+      "evidence": {
+        "official_source_url": "https://www.normattiva.it/eli/id/2002/06/15/002G0139/CONSOLIDATED/20241015",
+        "verified_content": "Official Normattiva act record identified for the consolidated justice-expenses code.",
+        "source_record_note": "External-link acceptance only. Local Markdown/PDF captures and conversions remain unaccepted.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "monitor-it-31",
+      "title": "Justice Ministry: state-funded legal aid in civil and administrative proceedings",
+      "url": "https://www.giustizia.it/giustizia/page/it/patrocinio_a_spese_dello_stato_nei_giudizi_civili_e_amministrativi?tab=d",
+      "publisher": "Italian Ministry of Justice",
+      "language": "it",
+      "checked_on": "2026-10-18",
+      "version": "Page updated 31 October 2024; income thresholds change periodically.",
+      "acceptance_scope": "Justice Ministry guidance on state-funded legal aid in civil and administrative proceedings, last updated 31 October 2024.",
+      "limitations": "Use for the general route only. The displayed income threshold may be stale and eligibility for a particular immigration proceeding needs separate review.",
+      "candidate_records": [
+        {
+          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "id": "it-31"
+        }
+      ],
+      "evidence": {
+        "official_source_url": "https://www.giustizia.it/giustizia/page/it/patrocinio_a_spese_dello_stato_nei_giudizi_civili_e_amministrativi?tab=d",
+        "verified_content": "Official Justice Ministry guidance inspected; covers civil, administrative, accounting and tax proceedings and eligibility basics.",
+        "source_record_note": "External-link acceptance only. Local Markdown/PDF captures and conversions remain unaccepted.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "monitor-it-32",
+      "title": "Giustizia Amministrativa: online administrative-process portal",
+      "url": "https://www.giustizia-amministrativa.it/it/web/guest/processo-amministrativo-telematico",
+      "publisher": "Italian administrative judiciary",
+      "language": "it",
+      "checked_on": "2026-10-21",
+      "version": "Latest rule amendments and transitional notices can change filing modalities; a 2026 notice reports an interim PEC route for some applications.",
+      "acceptance_scope": "The official administrative judiciary portal for electronic-process rules and filing guidance, including current operational notices checked in October 2026.",
+      "limitations": "Court filing routes and transitional notices can change and may be court- or application-specific; this is not a substantive appeal rule.",
+      "candidate_records": [
+        {
+          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "id": "it-32"
+        }
+      ],
+      "evidence": {
+        "official_source_url": "https://www.giustizia-amministrativa.it/it/web/guest/processo-amministrativo-telematico",
+        "verified_content": "Official administrative judiciary page describes electronic process rules and links to operative documentation.",
+        "source_record_note": "External-link acceptance only. Local Markdown/PDF captures and conversions remain unaccepted.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "monitor-it-33",
+      "title": "Legislative Decree 196/2003: personal data protection code",
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn%3Anir%3Astato%3Adecreto.legislativo%3A2003-06-30%3B196",
+      "publisher": "Normattiva / Italian government legal-text service",
+      "language": "it",
+      "checked_on": "2026-10-18",
+      "version": "Current text requires record-level version inspection.",
+      "acceptance_scope": "Normattiva’s official record for Legislative Decree 196/2003 (Personal Data Protection Code); select the current version on the official record when a provision is needed.",
+      "limitations": "The exact current edition was not pinned in this review. No local copy or issue-specific privacy analysis is accepted.",
+      "candidate_records": [
+        {
+          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "id": "it-33"
+        }
+      ],
+      "evidence": {
+        "official_source_url": "https://www.normattiva.it/uri-res/N2Ls?urn%3Anir%3Astato%3Adecreto.legislativo%3A2003-06-30%3B196",
+        "verified_content": "Official Normattiva record identified for Italy's data-protection code as amended for GDPR.",
+        "source_record_note": "External-link acceptance only. Local Markdown/PDF captures and conversions remain unaccepted.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "monitor-it-34",
+      "title": "Garante Privacy complaints",
+      "url": "https://www.garanteprivacy.it/diritti/come-agire-per-tutelare-i-tuoi-dati-personali/reclamo/",
+      "publisher": "Italian Data Protection Authority (Garante per la protezione dei dati personali)",
+      "language": "it",
+      "checked_on": "2026-10-21",
+      "version": "Page reflects GDPR Articles 77 and 140-bis to 143 of the Italian Code.",
+      "acceptance_scope": "Garante Privacy’s official guidance on complaints, standing, submission channels and forms, checked 21 October 2026.",
+      "limitations": "Operational guidance only; complaint submissions involve personal data. Check the live instructions before filing.",
+      "candidate_records": [
+        {
+          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "id": "it-34"
+        }
+      ],
+      "evidence": {
+        "official_source_url": "https://www.garanteprivacy.it/diritti/come-agire-per-tutelare-i-tuoi-dati-personali/reclamo/",
+        "verified_content": "Official Data Protection Authority page inspected; explains complaint standing, submission channels and available model.",
+        "source_record_note": "External-link acceptance only. Local Markdown/PDF captures and conversions remain unaccepted.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "monitor-it-35",
+      "title": "Garante Privacy: data-subject rights",
+      "url": "https://www.garanteprivacy.it/it/i-miei-diritti",
+      "publisher": "Italian Data Protection Authority (Garante per la protezione dei dati personali)",
+      "language": "it",
+      "checked_on": "2026-10-21",
+      "version": "No dated version marker observed.",
+      "acceptance_scope": "Garante Privacy’s official data-subject rights page, checked 21 October 2026.",
+      "limitations": "No dated version marker was observed. This general rights page is not itself a complaint decision or individualized legal assessment.",
+      "candidate_records": [
+        {
+          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "id": "it-35"
+        }
+      ],
+      "evidence": {
+        "official_source_url": "https://www.garanteprivacy.it/it/i-miei-diritti",
+        "verified_content": "Official Authority page inspected; links data-subject rights, exercise forms and complaint route.",
+        "source_record_note": "External-link acceptance only. Local Markdown/PDF captures and conversions remain unaccepted.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "monitor-it-36",
+      "title": "MFA: translation and legalization of documents",
+      "url": "https://www.esteri.it/it/servizi-opportunita/italiani-all-estero/traduzione-e-legalizzazione-documenti/",
+      "publisher": "Italian Ministry of Foreign Affairs and International Cooperation (MAECI)",
+      "language": "it",
+      "checked_on": "2026-10-18",
+      "version": "Page notes consular fees are set by the currently applicable tariff and refers users to HCCH country/authority listings.",
+      "acceptance_scope": "MAECI’s official guidance on translation, legalization and apostille routes for documents, checked in October 2026.",
+      "limitations": "Fees and procedures may change; EU Regulation 2016/1191 and bilateral exemptions can remove formalities for some public documents.",
+      "candidate_records": [
+        {
+          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "id": "it-36"
+        }
+      ],
+      "evidence": {
+        "official_source_url": "https://www.esteri.it/it/servizi-opportunita/italiani-all-estero/traduzione-e-legalizzazione-documenti/",
+        "verified_content": "Official MFA guidance inspected; describes translation, consular legalization and apostille routes.",
+        "source_record_note": "External-link acceptance only. Local Markdown/PDF captures and conversions remain unaccepted.",
+        "retrieval_status": "retrieval_or_conversion_error"
+      },
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "monitor-it-37",
+      "title": "Italian Consulate New York: civil-status documents and transcription",
+      "url": "https://consnewyork.esteri.it/it/servizi-consolari-e-visti/servizi-per-il-cittadino-italiano/stato-civile/",
+      "publisher": "Italian Ministry of Foreign Affairs and International Cooperation (MAECI)",
+      "language": "it",
+      "checked_on": "2026-10-18",
+      "version": "One mission-specific example; local requirements and appointment routes vary.",
+      "acceptance_scope": "The New York Italian Consulate’s official civil-status page as one mission-specific example for registration of foreign civil-status events.",
+      "limitations": "This is not a nationwide rule or a substitute for the competent consulate’s own current checklist and appointment route.",
+      "candidate_records": [
+        {
+          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "id": "it-37"
+        }
+      ],
+      "evidence": {
+        "official_source_url": "https://consnewyork.esteri.it/it/servizi-consolari-e-visti/servizi-per-il-cittadino-italiano/stato-civile/",
+        "verified_content": "Official consular page identified; covers foreign births, marriages, civil unions, divorces, deaths, adoptions and transcription.",
+        "source_record_note": "External-link acceptance only. Local Markdown/PDF captures and conversions remain unaccepted.",
+        "retrieval_status": "retrieval_or_conversion_error"
+      },
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "monitor-it-38",
+      "title": "Justice Ministry: international adoption",
+      "url": "https://www.giustizia.it/giustizia/page/it/adozione_internazionale?tab=d",
+      "publisher": "Italian Ministry of Justice",
+      "language": "it",
+      "checked_on": "2026-10-18",
+      "version": "Page explains a defined adoption route but not all foreign adoption recognition scenarios.",
+      "acceptance_scope": "Justice Ministry information on the international-adoption procedure and the roles of the Juvenile Court and Commission for International Adoptions.",
+      "limitations": "This covers the described adoption route, not every foreign-adoption recognition scenario or residence-document rule.",
+      "candidate_records": [
+        {
+          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "id": "it-38"
+        }
+      ],
+      "evidence": {
+        "official_source_url": "https://www.giustizia.it/giustizia/page/it/adozione_internazionale?tab=d",
+        "verified_content": "Official Justice Ministry page inspected; describes declarations to the Juvenile Court and the Commission for International Adoptions' role.",
+        "source_record_note": "External-link acceptance only. Local Markdown/PDF captures and conversions remain unaccepted.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "monitor-it-39",
+      "title": "Presidential Decree 445/2000: administrative documentation",
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn%3Anir%3Astato%3Adecreto.del.presidente.della.repubblica%3A2000-12-28%3B445",
+      "publisher": "Normattiva / Italian government legal-text service",
+      "language": "it",
+      "checked_on": "2026-10-18",
+      "version": "Current consolidated version not live-checked in this review.",
+      "acceptance_scope": "Normattiva’s official act record for Presidential Decree 445/2000 on administrative documentation; select and verify the current text on the publisher site when relevant.",
+      "limitations": "The current consolidated version was not pinned in this review. Foreign civil-status documents may follow separate rules.",
+      "candidate_records": [
+        {
+          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "id": "it-39"
+        }
+      ],
+      "evidence": {
+        "official_source_url": "https://www.normattiva.it/uri-res/N2Ls?urn%3Anir%3Astato%3Adecreto.del.presidente.della.repubblica%3A2000-12-28%3B445",
+        "verified_content": "Official Normattiva act record identified for administrative declarations and documentation.",
+        "source_record_note": "External-link acceptance only. Local Markdown/PDF captures and conversions remain unaccepted.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "monitor-it-41",
+      "title": "Chamber of Deputies annual-report index for regional civic defenders",
+      "url": "https://documenti.camera.it/leg19/dossier/testi/CP0626R.htm",
+      "publisher": "Italian Chamber of Deputies",
+      "language": "it",
+      "checked_on": "2026-10-18",
+      "version": "2026 dossier references reports submitted in 2026 and confirms regional rather than uniform national coverage.",
+      "acceptance_scope": "The Chamber of Deputies’ 2026 dossier index as a discovery lead for regional and autonomous-province civic-defender reports.",
+      "limitations": "This identifies regional coverage but is not a national complaint service or a complete directory of current submission routes.",
+      "candidate_records": [
+        {
+          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "id": "it-41"
+        }
+      ],
+      "evidence": {
+        "official_source_url": "https://documenti.camera.it/leg19/dossier/testi/CP0626R.htm",
+        "verified_content": "Official Chamber material identifies annual reports from regional and autonomous-province civic defenders.",
+        "source_record_note": "External-link acceptance only. Local Markdown/PDF captures and conversions remain unaccepted.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "priority-law-218-1995",
+      "title": "Law No. 218/1995 reforming Italian private international law",
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1995-05-31;218~vig=",
+      "publisher": "Normattiva / Italian government legal-text service",
+      "language": "it",
+      "checked_on": "2026-10-19",
+      "version": "Current text displayed and captured 2026-10-19; official page had ELI version evidence dated 2026-10-19.",
+      "acceptance_scope": "The current Normattiva full act text for Law 218/1995, within the version displayed on 19 October 2026, for applicable law and foreign judgments/acts.",
+      "limitations": "External link only. The retained article conversion is not accepted. Apply EU instruments where they govern, and review the relevant provision and effective date for the issue.",
+      "candidate_records": [
+        {
+          "manifest": "references/candidate-manifest.json",
+          "id": "it-02-law-no.-218-1995-reforming-italian-private-international-law"
+        }
+      ],
+      "evidence": {
+        "official_source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1995-05-31;218~vig=",
+        "verified_content": "Current text displayed and captured 2026-10-19; official page had ELI version evidence dated 2026-10-19.",
+        "source_record_note": "Human-reviewed official external link only; no local copy or conversion accepted."
+      },
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "priority-law-184-1983",
+      "title": "Law No. 184/1983 on adoption and foster care",
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1983;184!vig=",
+      "publisher": "Normattiva / Italian government legal-text service",
+      "language": "it",
+      "checked_on": "2026-10-19",
+      "version": "Current-text selector and full act reviewed 2026-10-19; no ELI version date was displayed.",
+      "acceptance_scope": "Official current-text selector for Law 184/1983, checked 19 October 2026, for the domestic adoption and foster-care provisions within its scope.",
+      "limitations": "No publisher ELI version date was visible; recheck the current selector when relying on a provision. The retained conversion is not accepted; separate domestic adoption from cross-border recognition.",
+      "candidate_records": [
+        {
+          "manifest": "references/candidate-manifest.json",
+          "id": "it-03-law-no.-184-1983-on-adoption-and-foster-care"
+        }
+      ],
+      "evidence": {
+        "official_source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1983;184!vig=",
+        "verified_content": "Current-text selector and full act reviewed 2026-10-19; no ELI version date was displayed.",
+        "source_record_note": "Human-reviewed official external link only; no local copy or conversion accepted."
+      },
+      "decision": "accepted_with_narrow_external_scope"
+    },
+    {
+      "source_id": "priority-maeci-recognition",
+      "title": "MAECI guidance on recognition of foreign judgments",
+      "url": "https://www.esteri.it/it/servizi-opportunita/italiani-all-estero/stato-civile/riconoscimento-di-sentenze-straniere/",
+      "publisher": "Italian Ministry of Foreign Affairs and International Cooperation (MAECI)",
+      "language": "it",
+      "checked_on": "2026-10-21",
+      "version": "Live official page content checked through the standard web view on 2026-10-21; no reliable revision date displayed.",
+      "acceptance_scope": "The current MAECI page as a practical guide to registration/recognition of foreign civil judgments and its reference to Law 218/1995 and applicable EU rules.",
+      "limitations": "Direct HTTP retrieval returned the publisher security challenge; link acceptance is based on the human-reviewed official page, not a raw capture. The page is not law and does not cover every judgment type or competent authority.",
+      "candidate_records": [
+        {
+          "manifest": "references/candidate-manifest.json",
+          "id": "it-04-ministry-of-foreign-affairs-guidance-on-recognition-of-foreign-judgments"
+        }
+      ],
+      "evidence": {
+        "official_source_url": "https://www.esteri.it/it/servizi-opportunita/italiani-all-estero/stato-civile/riconoscimento-di-sentenze-straniere/",
+        "verified_content": "Live official page content checked through the standard web view on 2026-10-21; no reliable revision date displayed.",
+        "source_record_note": "Human-reviewed official external link only; no local copy or conversion accepted."
+      },
+      "decision": "accepted_with_narrow_external_scope"
+    }
+  ],
+  "pending_references": [
+    {
+      "source_id": "monitor-it-13",
+      "title": "Interior Ministry Withdrawal Agreement vademecum",
+      "reason": "Last observed update is 7 December 2021. Find and review current official UK Withdrawal Agreement route and local Questura contact information."
+    },
+    {
+      "source_id": "monitor-it-16",
+      "title": "Portale Immigrazione residence-card instructions",
+      "reason": "The page was last observed in 2024 and contains requirements needing reconciliation with the current statute and Questura instructions."
+    },
+    {
+      "source_id": "monitor-it-24",
+      "title": "Public Administration FOIA FAQ",
+      "reason": "The official PDF has no dependable revision date in the reviewed material; retain only if current operational guidance is needed, after a live source check."
+    },
+    {
+      "source_id": "monitor-it-40",
+      "title": "2007 municipal residence-registration circular",
+      "reason": "Historical circular. Current municipal forms and registration steps remain to be identified from competent government authorities."
+    }
+  ],
+  "not_relied_upon": [
+    {
+      "source_id": "monitor-it-02",
+      "reason": "The N-Lex Italy connector reports a connection failure; use Normattiva directly."
+    },
+    {
+      "source_id": "monitor-it-08",
+      "reason": "Optional Open Data project/retrieval documentation; no need for ordinary official-link use."
+    },
+    {
+      "source_id": "monitor-it-09",
+      "reason": "Optional API specification; no API access or client is required by this source policy."
+    },
+    {
+      "source_id": "monitor-it-10",
+      "reason": "Optional update API endpoint; not relied upon as a source or retrieval rule."
+    },
+    {
+      "source_id": "monitor-it-19",
+      "reason": "Older MAECI visa information PDF is likely stale; current MAECI FAQ and Visto per Italia links are used instead."
+    }
+  ],
+  "duplicates": [
+    {
+      "candidate_record": {
+        "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+        "id": "it-42"
+      },
+      "duplicate_of": {
+        "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+        "id": "it-01"
+      },
+      "reason": "Exact duplicate URL and source page; keep one record."
+    },
+    {
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "it-01-legislative-decree-no.-30-2007-implementing-free-movement-and-residence-rig"
+      },
+      "duplicate_of": {
+        "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+        "id": "it-04"
+      },
+      "reason": "Same D.Lgs 30/2007 source record in the priority and monitor inventories; both official links are retained as accepted aliases."
+    },
+    {
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "it-05-maeci-entry-and-visa-guidance-for-family-members-of-eu-citizens"
+      },
+      "duplicate_of": {
+        "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+        "id": "it-17"
+      },
+      "reason": "Same live MAECI visa FAQ source record in the priority and monitor inventories; Italian and English page URLs are both accepted as language alternatives."
+    }
+  ],
+  "material_dependencies": [
+    {
+      "parent_source_id": "monitor-it-06",
+      "instrument": "Decree-Law 24 February 2026, No. 23, converted by Law 24 April 2026, No. 54",
+      "url": "https://www.normattiva.it/eli/id/2026/04/24/26A02067/CONSOLIDATED/",
+      "material_effect": "The coordinated Normattiva text records the amendment to D.Lgs 286/1998 Article 4(3) concerning specified criminal convictions in entry conditions. The current TUI text should be read together with this amendment where relevant.",
+      "checked_on": "2026-10-21"
+    },
+    {
+      "parent_source_id": "monitor-it-06",
+      "instrument": "Legislative Decree 16 April 2026, No. 83",
+      "url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.codiceRedazionale=26G00100&atto.dataPubblicazioneGazzetta=2026-05-20&bloccoAggiornamentoBreadCrumb=true&dataVigenza=03%2F10%2F2026&generaTabId=true&qId=&tabID=&tipoDettaglio=singolavigenza&title=lbl.dettaglioAtto",
+      "material_effect": "In force from 4 June 2026; Article 1 amends D.Lgs 286/1998, including Articles 4-bis and 5, to implement Directive (EU) 2024/1233. Review the relevant current TUI provisions for any issue involving those amendments.",
+      "checked_on": "2026-10-21"
+    }
+  ],
+  "policy": "A trustworthy official government consolidated text or clearly identified official page may be accepted as an external reference within its displayed status, version, language, date and subject. If authority, version or content is unclear, offer the whole official government website/service for human review. A human-reviewed link is sufficient for ordinary source use; a local copy, custom retrieval/conversion rule, API, full Gazette amendment chain, hash, replay or scheduled update is not a blanket prerequisite. External-link acceptance is separate from local-copy acceptance, issue/topic coverage and country review completion."
+}

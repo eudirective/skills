@@ -1,7 +1,7 @@
 # Hungary national sources
 
-Independent Hungarian national-law and OIF retrieval pack. Run the Node-only workflow in [SKILL.md](SKILL.md). The EU/Hungarian language mirror is stored in this pack's [`core/`](core/) folder.
+Independent Hungarian national-law and OIF source pack. The manifest lists 59 legal records: 58 NJT records retained for manual link use and offline review, plus the link-only 2010 civil-registration Act. Eight official source links have been reviewed (five NJT legal texts and three AJBH publications); no local copy or topic is accepted, and the country review remains incomplete.
 
-AJBH catalogue pages remain discovery-only but are now included in discovery runs, so official replacement PDF links can be surfaced. Two direct PDFs have reviewed content identity markers; a third, the 2025 general-complaint PDF, is blocked until its first-party identity can be confirmed. Direct access for that PDF is unverified; the previous browser retrieval returned 403. See `references/manifest.json` and `references/source-list.md` for source identities and limits.
+The online updater maintains 41 non-link-only OIF/NAIH/AJBH records. Three AJBH PDFs are now link-only, so an unavailable PDF download does not block unrelated source checks. The former “2025 general complaint” record is correctly classified as a public-interest and whistleblowing guide. AJBH-wide human review is offered to check current complaint, equality, and reporting routes.
 
-See [`references/sustainability-assessment.md`](references/sustainability-assessment.md) for the pack-wide review of retrieval, identity, conversion, and change-detection rules.
+Run the Node-only workflow in [SKILL.md](SKILL.md). The EU/Hungarian language mirror is stored in [`core/`](core/). See the [manifest](references/manifest.json), [source list](references/source-list.md), [source-acceptance register](references/source-acceptance.json), [AJBH human-review offer](references/human-review-offers.md), and [sustainability assessment](references/sustainability-assessment.md).

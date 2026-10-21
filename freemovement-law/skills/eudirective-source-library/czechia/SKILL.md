@@ -2,13 +2,13 @@
 name: czechia-legal-source-system
 description: Maintain Czech national source candidates for EU free movement, EU-family residence, visa procedure, civil-status evidence, and administrative remedies.
 metadata:
-  version: 0.4.2
+  version: 0.4.3
   short-description: Czechia legal-source acquisition pack
 ---
 
 # Czechia legal-source system
 
-Pack version 0.4.2, updated 21 October 2026. The [source list](references/source-list.md) and [candidate manifest](references/candidate-manifest.json) contain 43 records: 17 official e-Sbírka legal-text references, 13 official guidance/index pages, and 13 monitor/discovery pages. The 17 e-Sbírka references are accepted within dated scopes based on publisher metadata and captures retrieved 19 October; all 17 local conversions remain unaccepted. The other 26 records remain review candidates. See the [source acceptance register](references/source-acceptance.json). Candidates are filed under `candidates/<source-class>/`; retrieval bytes and run state are stored in the configured project temp tree.
+Pack version 0.4.3, updated 21 October 2026. The [source list](references/source-list.md) and [candidate manifest](references/candidate-manifest.json) contain 63 records: 62 official external references accepted within recorded scope, one Decree 429/2010 reference pending whole-portal human review, zero accepted local copies, and zero adequately covered topics. The 62 link-only decisions cover the 17 dated e-Sbírka law texts, 26 earlier official pages, 15 Czech-language government pages and 4 individual decisions. See the [source acceptance register](references/source-acceptance.json), [coverage model](references/coverage-model.json), and [dependency register](references/source-dependencies.json). Candidates are filed under `candidates/<source-class>/`; retrieval bytes and run state are stored in the configured project temp tree.
 
 ## Scope
 
@@ -29,4 +29,4 @@ The principal legal language is Czech (`cs`). Official English administrative gu
 
 For an official reference, review the publisher, instrument identity, language, displayed date/version, relevant text, and visible caveats. For a retained local conversion, review extraction and reuse only to the extent needed for that artifact. Check enactment, commencement, or applicability records when a specific issue makes them material; do not require them as a blanket barrier to citing the government-published consolidation. Keep laws, guidance, forms, mission practice, and discovery repositories in distinct source classes.
 
-The 17 e-Sbírka official source references may be used within the dated scopes in the acceptance register. This does not accept their local conversions, establish topical adequacy, or complete the country review. The remaining 26 sources are still candidates.
+The 17 e-Sbírka official source references may be used within the dated scopes in the acceptance register. This does not accept their local conversions, establish topical adequacy, or complete the country review. The 26 earlier non-law references, 15 added Czech-language pages, and 4 court decisions are link-accepted within their stated scopes; their local conversions remain unaccepted. Decree 429/2010 remains pending human review. Country review remains incomplete.
