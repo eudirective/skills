@@ -25,8 +25,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Install core structural-check dependency
-        run: python -m pip install -r freemovement-law/requirements-test.txt
+      - name: Install test and local runtime dependencies
+        run: python -m pip install -r freemovement-law/requirements-test.txt -r freemovement-law/requirements-runtime.txt
       - name: Verify plugin, skill, and source-library version parity
         run: node freemovement-law/scripts/version_manifest.mjs --verify
       - name: Compile core scripts
@@ -37,5 +37,7 @@ jobs:
         run: python freemovement-law/skills/eudirective-core/scripts/test_consultation_route_gate.py
       - name: Test invocation-aware consultation dashboard
         run: python freemovement-law/skills/eudirective-core/scripts/test_consultation_dashboard.py
+      - name: Test local dashboard MCP tool and UI resource
+        run: python freemovement-law/skills/eudirective-core/scripts/test_consultation_dashboard_mcp.py
       - name: Smoke-check the shared C27 check registry
         run: python freemovement-law/skills/eudirective-core/scripts/c27_case_state.py checklist > /dev/null
