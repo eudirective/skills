@@ -1,6 +1,8 @@
 {
-  "schema": "freemovement-consultation-issue-routing/0.1.0",
+  "schema": "freemovement-consultation-issue-routing/0.2.0",
   "description": "Routing metadata from declared abstract issue signals to existing C27 discovery checks and source owners. This is not a legal-rule registry, fact extractor, or proof of execution.",
+  "routing_review_status": "pending_independent_review",
+  "routing_review_scope": "Review signal selection, source-owner routing, source-class assumptions and attack-screen false-positive boundaries before comprehensive strict releases.",
   "input_boundary": "The selector CLI accepts only synthetic_abstract fixtures containing opaque proceeding IDs and declared signal IDs. Its select_check_ids API accepts only registered signal IDs and is used by the privacy-minimised route receipt gate. Neither path accepts narratives, jurisdictions, dates, identities, documents, or other free-text fields.",
   "check_registry": "references/state-engine/check-registry.json",
   "source_owners": {
@@ -73,6 +75,10 @@
     {
       "signal_id": "external_service_provider_used",
       "neutral_description": "A visa application centre or other external service provider participates in the process."
+    },
+    {
+      "signal_id": "digital_only_access_requirement",
+      "neutral_description": "The person reports that a digital or intermediary channel is required and no usable alternative is clear."
     },
     {
       "signal_id": "provider_fee_disputed",
@@ -563,6 +569,50 @@
         "pre_lodgement_obstruction_and_appointment_access",
         "ordinary_document_list_or_eu_family_requirements",
         "remedy_or_supervisory_track"
+      ]
+    },
+    {
+      "route_id": "digital_only_channel_and_accessibility",
+      "neutral_description": "Check whether a digital-only channel is actually mandatory and whether an effective alternative is available.",
+      "when_any_signal": [
+        "digital_only_access_requirement"
+      ],
+      "triggering_conditions": [
+        "A digital or intermediary channel is reported as the only usable route, or a person reports being unable to access it and no effective alternative is clear."
+      ],
+      "mandatory_checks": [
+        "access.digital_only",
+        "access.direct_access",
+        "access.appointment_wait",
+        "documents.ordinary_checklist_scope",
+        "authority.competence"
+      ],
+      "conditional_checks": [],
+      "source_owner_ids": [
+        "eu_common_core",
+        "member_state_law",
+        "applicant_country_operations"
+      ],
+      "source_references": [
+        "eu:32009r0810",
+        "references/consultation-topic-review-pathways.json",
+        "references/architecture-boundaries.md"
+      ],
+      "potential_attack_angle_review": {
+        "required": true,
+        "review_topics": [
+          "whether the digital channel is mandatory for this procedure and date",
+          "the mission or service provider's role and any effective alternative",
+          "accessibility or practical barriers that change the route"
+        ]
+      },
+      "negative_applicability": [
+        "Do not infer a digital-only requirement from the mere existence or use of an online portal."
+      ],
+      "related_independent_issues": [
+        "external_service_provider_and_fees",
+        "pre_lodgement_obstruction_and_appointment_access",
+        "processing_delay_or_clock_trigger"
       ]
     },
     {

@@ -1,30 +1,42 @@
-# Consultation assurance host capability decision
+# Consultation assurance and host capability
 
-**Decision date:** 2026-10-20
-**Scope:** freemovement-law Law skills plugin 0.50.0 / core 0.49.0
-**Status:** bounded local structural validation is available; production host release enforcement is not implemented.
+**Decision date:** 2026-10-22
+**Scope:** `freemovement-law` 0.57.0 / `eudirective-core` 0.56.0
+**Status:** local structural gates and the opt-in controlled-release runner are available; ChatGPT host release enforcement is not implemented or verified. Consultation routing and attack-pathway bindings remain pending independent review.
 
-## Capability result
+## Assurance claims
 
-| Candidate | Pre-output veto | Bind gate result to exact released answer | Decision |
-| --- | --- | --- | --- |
-| Skills-only plugin used in ChatGPT | No supported skill instruction can intercept or veto a completed answer. A skill tells the model how to work. | No | `not implemented / external host dependency` |
-| Codex local command-line workflow | A local wrapper can validate a receipt and withhold the exact local answer artifact it reads. It only governs calls routed through that wrapper. | Yes, for the exact local receipt and answer byte strings in that invocation; it is not authenticated approval and does not govern other output channels. | Opt-in local wrapper is implemented by `scripts/consultation_release_gate.py`; not a production host gate. |
-| Codex Desktop plugin lifecycle hook | Official documentation describes a `Stop` hook and plugin `hooks.json` entry. The hook can ask Codex to continue with a new instruction when it returns `decision: "block"`; it does not describe a hard rejection of the turn. The hook is available only for manually installed plugins and plugins with lifecycle hooks are not eligible for the public plugin directory. `suppressOutput` is documented as unsupported. | The hook receives the last assistant message, but no target-deployment end-to-end test establishes immutable answer binding or a final release veto for this plugin. | Documented capability is unsuitable as verified production enforcement for this skills-only plugin. No hook was installed or added. |
+| Layer | What it can establish | What it cannot establish |
+| --- | --- | --- |
+| Skill instructions and ordinary ChatGPT answer | The assistant can be instructed to classify a request, select workflows, report evidence and disclose open work. | Instructions cannot prove that a review happened, discover every omitted issue, validate a dashboard, or prevent answer release. |
+| Local route gate | A privacy-minimised receipt is structurally valid; its declared C27 checks, issue signals, attached research/preflight artifacts, module pairs and dashboard reconcile against the bundled contracts. | It cannot verify the truth of model-declared records, discover omitted issues, establish legal correctness/currentness, or authenticate a reviewer. |
+| Local release binding | The exact receipt, validation result and answer bytes are unchanged between prepare and release. The local command emits the checked answer only when the binding still matches. | The binding is not signed, does not identify or authenticate an approver, and only controls invocations routed through this local command. Other output channels can bypass it. |
+| ChatGPT host | No target-host integration is established. | No verified pre-output veto, authenticated tool-execution ledger, or binding to the exact answer shown to the user is available to this skills-only plugin. |
 
-## Evidence and sources
+The local command is a controlled artifact workflow for generalized, non-identifying material. It is not a guarantee that a live ChatGPT answer passed through the workflow.
 
-Reviewed 2026-10-20:
+## Data boundary
 
-- OpenAI, [Build plugins](https://developers.openai.com/plugins/build/plugins): lifecycle hook support and its manually-installed/public-directory boundary; plugin manifest hook configuration.
-- OpenAI, [Hooks](https://learn.chatgpt.com/docs/hooks): Stop hook input and `decision: "block"` continuation behavior; `suppressOutput` is not implemented.
-- OpenAI, [Skills](https://developers.openai.com/plugins/concepts/skills): skills provide reusable instructions and workflows, not a host output interceptor.
+- Keep real applicant narratives, identities, dates, case numbers and document contents in the conversation or an approved private case workspace. Never copy them into route receipts, research plans, bundles, fixtures, or synthetic-only engines.
+- Route receipts use opaque references and constrained status values. Their free-text titles, reasons, source notes and dashboard explanations can still contain identifying details; the validator does not perform a full personal-data scan.
+- Research plans and source-preflight artifacts may contain only generalized legal/source questions. They are not case files, module exports, or controller stages.
+- Synthetic-only C27/C3/C5/C6/C7 tooling remains restricted to its enrolled fictional or abstract inputs. P0 does not expand those input permissions.
+- A deterministic structural result is not legal advice, a legal finding, or proof that a source supports a proposition.
 
-The documentation review is not a runtime test of ChatGPT or Codex Desktop. No plugin was installed, no lifecycle hook was exercised, and no hosted answer was intercepted.
+## Existing implementation
 
-## Consequences
+`consultation_route_gate.py` validates the declared route receipt and emits its full deterministic dashboard. It reuses the C27 registry and validator, C3 module-conformance validator, `research_gate.py`, and `issue_source_preflight.py`. The receipt records what the model says it classified or reviewed; the gate validates structure and supplied evidence references, not whether that work truly happened.
 
-- `consultation_route_gate.py` checks only the privacy-minimised route receipt and artifacts it declares. It cannot prove that a conditional workflow or relevant C27 check was not omitted, that model-declared work occurred, or that a reference is truthful.
-- `consultation_release_gate.py` is an optional local integrity wrapper for an exact local artifact. It rejects changed answer or receipt bytes and reruns structural validation. Its binding JSON is not signed, does not authenticate who approved anything, and does not intercept other output channels.
-- A skills-only ChatGPT consultation can still bypass both local scripts. Therefore `host enforcement: not implemented` must remain visible wherever execution provenance is reported.
-- A future hard release gate requires an explicitly supported host integration and a target-deployment smoke test that proves the host withholds the exact answer on a failed check.
+`consultation_release_gate.py prepare` validates a receipt and answer artifact and creates a local digest binding. `consultation_release_gate.py release` reruns validation and emits the exact answer bytes only when the receipt, answer and validation digest still match. The schema 0.4.0 `controlled-release` command performs the strict check and exact-byte emission in one local call; it is limited to generalized, non-identifying artifacts. A skills-only ChatGPT consultation does not invoke these commands automatically. Pending independent review of routing/pathway metadata blocks strict comprehensive releases, while a partial answer may be emitted with its open work displayed.
+
+The C2 element model (`0.2.0`) and frozen C3 inter-skill contract (`0.2.0`), conformance profile (`0.2.0`), controller protocol (`0.3.0`) and element model (`0.2.0`) are outside the consultation receipt boundary and must remain unchanged.
+
+## Deployment decision
+
+Use the local controlled workflow only when a maintained host or operator explicitly routes the answer through it. Keep ordinary ChatGPT guidance model-led and describe its checks as model-reported. Do not describe ordinary ChatGPT output as release-gated.
+
+A production host veto requires a supported host integration and a target-deployment test showing that the host withholds the exact answer when validation fails. Platform documentation review or a local script test is not that evidence. The manual ChatGPT dashboard display plan remains deferred at `references/consultation-dashboard-live-test-plan.md`; the future host release-veto test is specified at `references/consultation-controlled-release-live-test-plan.md` and has not been performed.
+
+## Review required
+
+Before describing a future strict consultation contract as operationally complete, a human reviewer must review its source-owner and source-class routing semantics, privacy boundary, and exact release assurance. Those are review judgments, not facts that the structural validators can certify.

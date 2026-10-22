@@ -12,6 +12,7 @@ from attack_angle_synthesis import SUPPORTED_SIGNAL_KINDS
 from contract_validate import ContractError, digest_obj, load_json, validate_obj
 from module_conformance import ConformanceError, validate_paths
 from source_library_paths import compatibility_root
+import consultation_issue_selection as issue_selection
 
 CORE_ROOT = Path(__file__).resolve().parents[1]
 PLUGIN_ROOT = CORE_ROOT.parents[1]
@@ -111,6 +112,11 @@ def load_inputs() -> tuple[dict, list[dict]]:
     topic_path = CORE_ROOT / "references/attack-angles/consultation-topic-review-pathways.json"
     registry, catalog, stratagems, topic_catalog = (
         read_json(registry_path), read_json(catalog_path), read_json(stratagem_path), read_json(topic_path))
+    issue_matrix = read_json(CORE_ROOT / "references/consultation-issue-routing.json")
+    try:
+        issue_selection.validate_configuration(issue_matrix, registry, CORE_ROOT)
+    except issue_selection.SelectionError as error:
+        raise InventoryError(f"consultation_routing_invalid:{error}") from error
     if not isinstance(registry.get("checks"), list) or not isinstance(catalog.get("patterns"), list):
         raise InventoryError("registry_or_core_catalog_malformed")
     pack_sources = source_pack_index()
@@ -190,6 +196,30 @@ def load_inputs() -> tuple[dict, list[dict]]:
         for coverage_ref in topic["coverage"].split(";"):
             if coverage_ref.startswith("core:attack:") and coverage_ref not in pattern_ids:
                 raise InventoryError(f"priority_topic_attack_reference_missing:{topic_id}:{coverage_ref}")
+        consultation_bindings = []
+        for binding in topic["consultation_bindings"]:
+            signal_ids = sorted(set(
+                binding.get("when_any_signal", []) + binding.get("when_all_signal", [])
+            ))
+            try:
+                requirements = issue_selection.select_issue_requirements(
+                    signal_ids, matrix=issue_matrix, registry=registry, root=CORE_ROOT,
+                )
+            except issue_selection.SelectionError as error:
+                raise InventoryError(f"priority_topic_routing_invalid:{topic_id}:{error}") from error
+            if binding["route_id"] not in requirements["route_ids"]:
+                raise InventoryError(f"priority_topic_route_not_selected:{topic_id}:{binding['route_id']}")
+            pathway = next((item for item in requirements["attack_angle_topics"]
+                            if item.get("pathway_id") == topic_id), None)
+            if pathway is None:
+                raise InventoryError(f"priority_topic_pathway_not_selected:{topic_id}")
+            consultation_bindings.append({
+                "route_id": binding["route_id"],
+                "signal_ids": signal_ids,
+                "c27_check_ids": pathway["c27_check_ids"],
+                "c5d_pattern_ids": pathway["coverage_pattern_ids"],
+                "execution_claim": "model_led_review_required; no synthetic C5d execution implied",
+            })
         records.append({
             "record_id": "topic:" + topic_id,
             "record_type": "priority_topic_review_path",
@@ -198,6 +228,10 @@ def load_inputs() -> tuple[dict, list[dict]]:
             "implementation_scope": "source_qualified_review_metadata_not_legal_rule",
             "c27_families": topic["c27_families"],
             "attack_angle_coverage": topic["coverage"],
+            "consultation_bindings": consultation_bindings,
+            "consultation_binding_review_status": topic_catalog.get(
+                "consultation_binding_review_status", "pending_independent_review"
+            ),
             "source_refs": [item["source_ref"] for item in topic["sources"]],
             "evidence_preconditions": topic["records_to_seek"],
             "counterarguments_and_exceptions": topic["counterarguments_and_exceptions"],

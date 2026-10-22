@@ -867,6 +867,18 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
 
     lines.extend(["", "### Legal assessment"])
     issue_summaries_by_ref = {item["issue_ref"]: item for item in issue_summaries}
+    issue_routing_by_ref = {
+        item.get("issue_ref"): item
+        for item in reports.get("issue_routing", [])
+        if item.get("issue_ref")
+    }
+    source_owner_labels = {
+        "eu_common_core": "EU and common law",
+        "member_state_law": "Member State law",
+        "applicant_country_operations": "Application country operations",
+        "eu_swiss_framework": "EU–Swiss free movement",
+        "eu_data_protection": "EU data protection",
+    }
     issue_markers = {
         "answered_supported": "🟢",
         "answered_conditionally": "🟠",
@@ -916,6 +928,74 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
             if summary:
                 lines.append(f"Missing: {summary['missing']}")
                 lines.append(f"Effect: {summary['effect']}")
+            if issue.get("source_obligations") is not None:
+                derived = issue_routing_by_ref.get(issue["issue_ref"], {})
+                expected_owners = derived.get("required_source_owner_ids", [])
+                declared_owners = {item["owner_id"] for item in issue["source_obligations"]}
+                lines.append("**Source review by responsible owner:**")
+                for owner_id in expected_owners:
+                    obligation = next(
+                        (item for item in issue["source_obligations"] if item["owner_id"] == owner_id),
+                        None,
+                    )
+                    if obligation is None:
+                        lines.append(
+                            f"- **Missing** — {source_owner_labels.get(owner_id, owner_id)}; "
+                            f"routing record `{owner_id}` has no source review entry."
+                        )
+                        continue
+                    detail = ", ".join(
+                        value_status(item) for item in obligation.get("required_source_classes", [])
+                    ) or "source classes not recorded"
+                    preflight = obligation.get("preflight_ref")
+                    reason = obligation.get("reason_code")
+                    suffix = f"; preflight {refs([preflight])}" if preflight else ""
+                    if reason:
+                        suffix += f"; reason: {value_status(reason)}"
+                    lines.append(
+                        f"- **{value_status(obligation['status'])}** — "
+                        f"{source_owner_labels.get(owner_id, owner_id)}; source classes: {detail}{suffix}."
+                    )
+                for owner_id in sorted(declared_owners - set(expected_owners)):
+                    obligation = next(item for item in issue["source_obligations"] if item["owner_id"] == owner_id)
+                    lines.append(
+                        f"- **Additional owner recorded** — {source_owner_labels.get(owner_id, owner_id)}; "
+                        f"status: {value_status(obligation['status'])}; "
+                        f"source classes: {', '.join(value_status(item) for item in obligation.get('required_source_classes', []))}."
+                    )
+                lines.append("Source classes are model-declared and structurally matched to the preflight, not independently judged for legal sufficiency.")
+            if issue.get("attack_angle_reviews") is not None:
+                derived = issue_routing_by_ref.get(issue["issue_ref"], {})
+                expected_topics = derived.get("attack_angle_topics", [])
+                actual_topics = {
+                    (item["route_id"], item["topic"]): item
+                    for item in issue["attack_angle_reviews"]
+                }
+                if expected_topics:
+                    lines.append("**Potential issue screen (not a finding of illegality):**")
+                for topic in expected_topics:
+                    key = (topic["route_id"], topic["topic"])
+                    review = actual_topics.get(key)
+                    if review is None:
+                        lines.append(f"- **Not recorded** — {topic['topic']}.")
+                    else:
+                        outcome = {
+                            "no_signal_identified": "No potential issue identified",
+                            "candidate_issue_linked": "Potential issue linked for separate review",
+                            "unresolved": "Unresolved",
+                        }.get(review["outcome"], value_status(review["outcome"]))
+                        linked = review.get("linked_issue_ref")
+                        suffix = f"; issue {refs([linked])}" if linked else ""
+                        lines.append(f"- **{outcome}** — {topic['topic']}{suffix}.")
+                        if topic.get("pathway_id"):
+                            patterns = topic.get("coverage_pattern_ids", [])
+                            pattern_text = ", ".join(f"`{item}`" for item in patterns) or "no deterministic C5d predicate is implemented for this path"
+                            check_text = ", ".join(f"`{item}`" for item in topic.get("c27_check_ids", [])) or "none recorded"
+                            lines.append(
+                                f"  - Review path: `{topic['pathway_id']}` via `{topic['trigger_route_id']}`; "
+                                f"C27 checks: {check_text}; catalogue mapping: {pattern_text}. "
+                                "These catalogue references do not mean a synthetic C5d engine ran."
+                            )
         if scoped_checks:
             lines.append("**Selected C27 checks for this review area:**")
         for entry in scoped_checks:
@@ -974,6 +1054,13 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
         lines.append(
             f"- Issue-to-C27 routing: {reports.get('issue_record_count', 0)} declared issue records checked against the routing matrix."
         )
+        if reports.get("issue_routing"):
+            lines.append(
+                "- For the strict receipt, required C27 checks, responsible source owners, and attack-screen topics were derived from each declared signal set."
+            )
+            lines.append(
+                "- This validates declared issues and signal selections only; it cannot identify an omitted issue or prove that model-led screening occurred."
+            )
     else:
         lines.append("- Issue-to-C27 routing: no issue records were declared, so issue-signal selection was not run.")
     lines.append(

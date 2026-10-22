@@ -33,6 +33,8 @@ jobs:
         run: python -m compileall -q freemovement-law/skills/eudirective-core/scripts
       - name: Test synthetic consultation issue routing
         run: python freemovement-law/skills/eudirective-core/scripts/test_consultation_issue_selection.py
+      - name: Test issue source preflight contract and bindings
+        run: python freemovement-law/skills/eudirective-core/scripts/test_issue_source_preflight.py
       - name: Test consultation route receipt gate
         run: python freemovement-law/skills/eudirective-core/scripts/test_consultation_route_gate.py
       - name: Test invocation-aware consultation dashboard

@@ -1,11 +1,12 @@
 {
-  "schema_version": "0.2.0",
+  "schema_version": "0.3.0",
   "owner": {
     "family": "core",
     "jurisdiction": "EU",
     "role": "review_pathways_only"
   },
   "status": "source_qualified_review_metadata_not_legal_rules",
+  "consultation_binding_review_status": "pending_independent_review",
   "official_source_review": {
     "checked_on": "2026-10-20",
     "method": "Targeted check of the official EUR-Lex texts and European Commission materials listed below, including the cited provisions and guidance sections.",
@@ -24,6 +25,9 @@
         "lifecycle",
         "access",
         "authority"
+      ],
+      "consultation_bindings": [
+        {"route_id": "pre_lodgement_obstruction_and_appointment_access", "when_any_signal": ["pre_lodgement_access_obstruction"]}
       ],
       "adverse_signal": "A person attempted to submit an application or required form, and an identified authority or service channel prevented acceptance before a formal decision or receipt was created.",
       "jurisdictional_scope": {
@@ -91,6 +95,9 @@
         "documents",
         "authority"
       ],
+      "consultation_bindings": [
+        {"route_id": "digital_only_channel_and_accessibility", "when_any_signal": ["digital_only_access_requirement"]}
+      ],
       "adverse_signal": "A digital platform, VAC, or intermediary is said to be the only way to request or lodge, and the person reports being unable to use it or reach an effective alternative.",
       "jurisdictional_scope": {
         "eu_common": "Visa Code Articles 9-11 and 43-45 govern relevant short-stay visa channels; Regulation (EU) 2023/2667 creates a staged EU Visa Application Platform framework.",
@@ -152,6 +159,9 @@
         "eu_scope",
         "proof",
         "documents"
+      ],
+      "consultation_bindings": [
+        {"route_id": "ordinary_document_list_or_eu_family_requirements", "when_any_signal": ["ordinary_document_list_or_eu_family_document_question"]}
       ],
       "adverse_signal": "An authority is reported to reject or refuse to consider relevant evidence of EU-citizen identity, family relationship, dependency, or accompanying/joining because it is not on a stated list.",
       "jurisdictional_scope": {
@@ -243,6 +253,9 @@
         "conduct",
         "remedies"
       ],
+      "consultation_bindings": [
+        {"route_id": "remedy_or_supervisory_track", "when_any_signal": ["remedy_or_solvit_or_supervisory_complaint"]}
+      ],
       "adverse_signal": "A formal decision or independently actionable procedural act is known, but the authority's review information or the actual route is reported missing, inaccessible, or contradictory.",
       "jurisdictional_scope": {
         "eu_common": "Visa Code Article 32(3) requires a right of appeal under national law; Directive 2004/38 Article 31 and Charter Article 47 may apply within their respective scopes.",
@@ -317,6 +330,10 @@
         "lifecycle",
         "timing"
       ],
+      "consultation_bindings": [
+        {"route_id": "pre_lodgement_obstruction_and_appointment_access", "when_all_signal": ["pre_lodgement_access_obstruction", "appointment_delay"]},
+        {"route_id": "processing_delay_or_clock_trigger", "when_any_signal": ["processing_delay_or_deadline_question"]}
+      ],
       "adverse_signal": "A dated appointment or processing delay is reported, with a potentially applicable statutory or accelerated time rule.",
       "jurisdictional_scope": {
         "eu_common": "Visa Code Article 9(2)-(3) concerns appointment access; Article 23 processing time begins when an admissible application is lodged. Directive Article 5(2) adds accelerated handling for qualifying EU-family entry visas.",
@@ -378,6 +395,10 @@
         "privacy",
         "conduct",
         "authority"
+      ],
+      "consultation_bindings": [
+        {"route_id": "personal_data_protection", "when_any_signal": ["personal_data_processing_question"]},
+        {"route_id": "ephemeral_evidence_preservation", "when_all_signal": ["ephemeral_evidence_at_risk", "evidence_record_contains_personal_data"]}
       ],
       "adverse_signal": "A specific personal-data request or a narrowly identified record-preservation concern is reported, with a named or potentially identifiable controller/processor and purpose.",
       "jurisdictional_scope": {

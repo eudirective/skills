@@ -1,6 +1,6 @@
 # Issue-level source preflight
 
-`references/contracts/issue-source-preflight.schema.json` adds source accounting for each neutral material issue. It composes the existing research plan/evidence-bundle contract and `scripts/research_gate.py`; it does not create a second research validator or accepted-source registry.
+`references/contracts/issue-source-preflight.schema.json` adds source accounting for each neutral material issue. It composes the existing research plan/evidence-bundle contract and `scripts/research_gate.py`; it does not create a second research validator or accepted-source registry. Contract 0.3.0 also binds each owner-specific source task to an opaque consultation issue reference and scope reference, and requires at least one declared source class for that owner task.
 
 ## What the record binds
 
@@ -9,6 +9,8 @@ Each issue record includes a neutral issue ID, shared matter-issue reference, ex
 The validator checks that:
 
 - the existing research plan/bundle passes `research_gate.py` and the issue's owner exactly matches its research task;
+- for contract 0.3.0, each `(consultation issue, scope, owner)` binding is unique and can be matched to the corresponding issue in a 0.4.0 consultation receipt;
+- the required source classes are the same classes declared for that owner in the consultation issue record; this is a structural cross-check, not a judgment that the model selected every legally relevant class;
 - registered EU sources resolve to the pinned core-source-pack manifest and local source-byte gate;
 - registered Swedish or Türkiye module sources resolve to the exact C3-conformant manifest/export digests and source record;
 - a national candidate reference in the form `CAND-<CC>-<library-id>` found in a bundled country `candidate-manifest.json` is bound to that country and exact source ID and remains unaccepted; it does not satisfy a required source class merely by appearing in the inventory;
@@ -36,4 +38,6 @@ python scripts/issue_source_preflight.py \
 
 Exit `0` means the artifact is structurally valid; output may still show `valid_open_work`. Exit `3` rejects an `accounted_for_review` claim with open items. Exit `2` means the contract, task/owner binding, source record, evidence trace, or underlying research validation is invalid. Even an `accounted_for_review` result is not a legal-completeness finding.
 
-For consultation-route receipts, include `preflight_ref` and `preflight_path` on the related `research_artifact`, include evidence of kind `source_preflight` bound to that opaque reference, and record the `source_preflight` operation. Source-research routes require this operation. The route gate incorporates every open preflight item into its own coverage decision.
+For consultation-route receipts, include `preflight_ref` and `preflight_path` on the related `research_artifact`, include evidence of kind `source_preflight` bound to that opaque reference, and record the `source_preflight` operation. Source-research routes require this operation. A controlled 0.4.0 applicant-guidance receipt also requires a validated 0.3.0 preflight for every source-owner obligation marked reviewed; open or unavailable obligations remain visible and prevent a comprehensive claim. The route gate incorporates every open preflight item into its own coverage decision.
+
+The structural regression suite is `scripts/test_issue_source_preflight.py`. It uses abstract synthetic artifacts and does not call an external source or research service.

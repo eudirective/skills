@@ -128,6 +128,38 @@ def release(receipt_path: Path, answer_path: Path, binding_path: Path) -> bytes:
     return answer_bytes
 
 
+def controlled_release(receipt_path: Path, answer_path: Path) -> bytes:
+    """Validate and emit one strict-version answer through this local process.
+
+    This is an opt-in local release path for the versioned consultation
+    contract. It is not a ChatGPT host veto or an authenticated approval.
+    """
+    first_result, first_receipt = validate_exact_receipt(receipt_path)
+    answer = read_regular_file(answer_path, "answer")
+    try:
+        receipt = json.loads(first_receipt.decode("utf-8"))
+    except (UnicodeDecodeError, json.JSONDecodeError) as error:
+        raise ReleaseBindingError("receipt_json_invalid") from error
+    if receipt.get("schema_version") != "0.4.0" or receipt.get("request_kind") not in {
+        "applicant_guidance", "source_research",
+    }:
+        raise ReleaseBindingError("controlled_release_requires_receipt_0_4_0")
+    if not first_result.get("dashboard_required"):
+        raise ReleaseBindingError("controlled_release_requires_validated_dashboard")
+    validate_dashboard_rendered(first_result, answer)
+
+    # Revalidate and reread immediately before output; only the exact checked
+    # receipt, validation result and answer bytes may pass through this call.
+    second_result, second_receipt = validate_exact_receipt(receipt_path)
+    second_answer = read_regular_file(answer_path, "answer")
+    if (first_receipt != second_receipt or answer != second_answer or
+            validation_digest(first_result["validation_record"]) !=
+            validation_digest(second_result["validation_record"])):
+        raise ReleaseBindingError("controlled_release_artifact_changed_during_validation")
+    validate_dashboard_rendered(second_result, second_answer)
+    return second_answer
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest="command", required=True)
@@ -136,13 +168,19 @@ def main(argv: list[str] | None = None) -> int:
         command.add_argument("--receipt", required=True, type=Path)
         command.add_argument("--answer", required=True, type=Path)
         command.add_argument("--binding", required=True, type=Path)
+    controlled = sub.add_parser("controlled-release")
+    controlled.add_argument("--receipt", required=True, type=Path)
+    controlled.add_argument("--answer", required=True, type=Path)
     args = parser.parse_args(argv)
     try:
         if args.command == "prepare":
             result = prepare(args.receipt, args.answer, args.binding)
             print(json.dumps({"status": "binding_created", **result}, sort_keys=True))
             return 0
-        answer = release(args.receipt, args.answer, args.binding)
+        if args.command == "controlled-release":
+            answer = controlled_release(args.receipt, args.answer)
+        else:
+            answer = release(args.receipt, args.answer, args.binding)
         sys.stdout.buffer.write(answer)
         return 0
     except (ContractError, RouteGateError, ReleaseBindingError, OSError, KeyError, TypeError) as error:

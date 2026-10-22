@@ -5,12 +5,27 @@
   "additionalProperties": false,
   "required": ["contract_version", "preflight_id", "research_id", "coverage_claim", "issues"],
   "properties": {
-    "contract_version": { "enum": ["0.1.0", "0.2.0"] },
+    "contract_version": { "enum": ["0.1.0", "0.2.0", "0.3.0"] },
     "preflight_id": { "type": "string", "pattern": "^r_[a-f0-9]{12,32}$" },
     "research_id": { "type": "string", "pattern": "^RCH-[A-Z0-9][A-Z0-9._-]{0,63}$" },
     "coverage_claim": { "enum": ["accounted_for_review", "partial"] },
     "issues": { "type": "array", "minItems": 1, "maxItems": 100, "items": { "$ref": "#/$defs/issue" } }
   },
+  "allOf": [
+    {
+      "if": { "properties": { "contract_version": { "const": "0.3.0" } }, "required": ["contract_version"] },
+      "then": {
+        "properties": {
+          "issues": {
+            "items": {
+              "required": ["consultation_issue_ref", "consultation_scope_ref"],
+              "properties": { "required_source_classes": { "minItems": 1 } }
+            }
+          }
+        }
+      }
+    }
+  ],
   "$defs": {
     "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
     "owner": {
@@ -61,6 +76,8 @@
       "required": ["issue_id", "matter_issue_ref", "task_id", "claim_ids", "question", "owner", "required_source_classes", "sources", "scope_review", "exceptions_review", "counterauthority_review", "counterauthority_evidence_ids", "review_provenance", "reviewed_at", "gap_disposition", "gap_reason"],
       "properties": {
         "issue_id": { "type": "string", "pattern": "^ISS-[A-Z0-9][A-Z0-9._-]{0,63}$" },
+        "consultation_issue_ref": { "type": "string", "pattern": "^r_[a-f0-9]{12,32}$" },
+        "consultation_scope_ref": { "type": "string", "pattern": "^r_[a-f0-9]{12,32}$" },
         "matter_issue_ref": { "type": "string", "pattern": "^ISS-[A-Z0-9][A-Z0-9._-]{0,63}$" },
         "task_id": { "type": "string", "pattern": "^RQT-[A-Z0-9][A-Z0-9._-]{0,63}$" },
         "claim_ids": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/claim_id" } },

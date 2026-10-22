@@ -171,6 +171,50 @@ class ConsultationIssueSelectionTests(unittest.TestCase):
         with self.assertRaisesRegex(selector.SelectionError, "signal_unknown"):
             selector.select_check_ids(["unknown_signal"])
 
+    def test_issue_requirements_derive_source_owners_and_attack_topics(self) -> None:
+        base = selector.select_issue_requirements(["ephemeral_evidence_at_risk"])
+        self.assertEqual(base["source_owner_ids"], ["member_state_law"])
+        self.assertEqual(
+            {item["route_id"] for item in base["attack_angle_topics"]},
+            {"ephemeral_evidence_preservation"},
+        )
+        self.assertGreater(len(base["attack_angle_topics"]), 0)
+
+        personal = selector.select_issue_requirements([
+            "ephemeral_evidence_at_risk", "evidence_record_contains_personal_data",
+        ])
+        self.assertEqual(
+            personal["source_owner_ids"], ["eu_data_protection", "member_state_law"]
+        )
+        self.assertIn("gdpr.preservation_request", personal["check_ids"])
+
+    def test_issue_requirements_reject_unknown_or_contradictory_signals(self) -> None:
+        with self.assertRaisesRegex(selector.SelectionError, "signal_unknown"):
+            selector.select_issue_requirements(["not_a_registered_signal"])
+        with self.assertRaisesRegex(selector.SelectionError, "contradictory_signals"):
+            selector.select_issue_requirements([
+                "external_service_provider_used", "provider_fee_disputed", "provider_fee_not_disputed",
+            ])
+
+    def test_priority_attack_pathways_bind_signals_predicates_and_selected_checks(self) -> None:
+        pathways = selector.validate_pathway_bindings(MATRIX, REGISTRY, selector.signal_catalog(MATRIX))
+        self.assertEqual(len(pathways), 6)
+        for topic_id, topic in pathways.items():
+            for binding in topic["consultation_bindings"]:
+                signal_ids = sorted(set(binding["when_any_signal"] + binding["when_all_signal"]))
+                requirements = selector.select_issue_requirements(signal_ids)
+                self.assertIn(binding["route_id"], requirements["route_ids"], topic_id)
+                pathway_record = next(
+                    item for item in requirements["attack_angle_topics"]
+                    if item.get("pathway_id") == topic_id
+                )
+                self.assertTrue(pathway_record["c27_check_ids"], topic_id)
+                self.assertEqual(pathway_record["coverage_pattern_ids"], topic["coverage_pattern_ids"])
+
+        digital = selector.select_issue_requirements(["digital_only_access_requirement"])
+        self.assertIn("access.digital_only", digital["check_ids"])
+        self.assertEqual(digital["routing_review_status"], "pending_independent_review")
+
     def test_contradictory_positive_and_negative_signals_are_rejected(self) -> None:
         with self.assertRaisesRegex(selector.SelectionError, "contradictory_signals"):
             selector.select_checks(

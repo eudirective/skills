@@ -262,6 +262,7 @@ def validate_source_preflight(preflight_path: Path, plan_path: Path, bundle_path
     findings = {item["finding_id"]: item for item in bundle["findings"]}
     claims = {item["claim_id"]: item for item in bundle["claims"]}
     seen_issues: set[str] = set()
+    seen_consultation_bindings: set[tuple[str, str, str]] = set()
     outstanding: list[str] = []
     issue_reports = []
     for issue in preflight["issues"]:
@@ -269,6 +270,15 @@ def validate_source_preflight(preflight_path: Path, plan_path: Path, bundle_path
         if issue_id in seen_issues:
             raise SourcePreflightError(f"duplicate_issue_id:{issue_id}")
         seen_issues.add(issue_id)
+        if preflight["contract_version"] == "0.3.0":
+            binding = (
+                issue["consultation_issue_ref"],
+                issue["consultation_scope_ref"],
+                issue["owner"]["owner_id"],
+            )
+            if binding in seen_consultation_bindings:
+                raise SourcePreflightError("duplicate_consultation_issue_scope_owner_binding")
+            seen_consultation_bindings.add(binding)
         task = tasks.get(issue["task_id"])
         if task is None:
             raise SourcePreflightError(f"issue_task_unknown:{issue_id}")
@@ -363,9 +373,14 @@ def validate_source_preflight(preflight_path: Path, plan_path: Path, bundle_path
             )
         issue_reports.append({
             "issue_id": issue_id,
+            "consultation_issue_ref": issue.get("consultation_issue_ref"),
+            "consultation_scope_ref": issue.get("consultation_scope_ref"),
+            "owner_id": issue["owner"]["owner_id"],
+            "required_source_classes": sorted(issue["required_source_classes"]),
             "task_id": issue["task_id"],
             "owner_role": issue["owner"]["role"],
             "satisfied_source_classes": sorted(satisfied_classes),
+            "status": "valid_open_work" if issue_open else "accounted_for_review",
             "outstanding": sorted(set(issue_open)),
         })
         outstanding.extend(issue_open)
@@ -377,6 +392,7 @@ def validate_source_preflight(preflight_path: Path, plan_path: Path, bundle_path
     return {
         "validation_status": "valid",
         "status": status,
+        "contract_version": preflight["contract_version"],
         "preflight_id": preflight["preflight_id"],
         "research_id": preflight["research_id"],
         "research_gate_status": report["status"],
