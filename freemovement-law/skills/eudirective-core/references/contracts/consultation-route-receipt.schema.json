@@ -663,6 +663,10 @@
           "type": "array", "maxItems": 10, "uniqueItems": true,
           "items": { "type": "string", "pattern": "^core:attack:[a-z0-9-]+$" }
         },
+        "adverse_predicate_ids": {
+          "type": "array", "maxItems": 30, "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^pathway:[a-z][a-z0-9_]{1,100}$" }
+        },
         "c27_check_ids": {
           "type": "array", "maxItems": 100, "uniqueItems": true,
           "items": { "type": "string", "minLength": 1, "maxLength": 160 }
@@ -691,7 +695,7 @@
       "type": "object", "additionalProperties": false,
       "required": ["reason_code", "predicate_states"],
       "properties": {
-        "reason_code": { "enum": ["no_adverse_signal", "predicate_contradicted", "candidate_assessed", "evidence_missing", "scope_unclear"] },
+        "reason_code": { "enum": ["no_adverse_signal", "predicate_contradicted", "candidate_assessed", "evidence_missing", "scope_unclear", "predicate_unmapped"] },
         "predicate_states": {
           "type": "array", "minItems": 1, "maxItems": 30,
           "items": {
@@ -699,6 +703,19 @@
             "required": ["signal_id", "state", "evidence_ref"],
             "properties": {
               "signal_id": { "$ref": "#/$defs/signal_id" },
+              "state": { "enum": ["present", "absent", "unknown"] },
+              "evidence_ref": { "$ref": "#/$defs/opaque_ref" }
+            }
+          }
+        },
+        "adverse_predicate_states": {
+          "description": "Topic-specific adverse conditions; route trigger signals are not substitutes.",
+          "type": "array", "maxItems": 30,
+          "items": {
+            "type": "object", "additionalProperties": false,
+            "required": ["predicate_id", "state", "evidence_ref"],
+            "properties": {
+              "predicate_id": { "type": "string", "pattern": "^pathway:[a-z][a-z0-9_]{1,100}$" },
               "state": { "enum": ["present", "absent", "unknown"] },
               "evidence_ref": { "$ref": "#/$defs/opaque_ref" }
             }

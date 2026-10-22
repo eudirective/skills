@@ -97,13 +97,18 @@ text-field heuristic.
   validated 0.3.0 source preflight. Missing or open source work, unresolved
   attack topics, unlinked candidate issues, or missing routed checks block
   `comprehensive` and remain visible in the dashboard.
-- Every strict 0.5.0 attack-topic record repeats its selector-derived
-  `trigger_any_signal_ids` and `trigger_all_signal_ids`. The gate requires
-  exact predicate-ID matches and checks `present`/`absent`/`unknown` states
-  against any/all trigger logic before accepting a negative, unresolved, or
-  candidate outcome. A linked candidate remains open if any required C27
-  assessment bound to its target issue is missing or has a non-closed status;
-  the target issue's open check status is recorded separately.
+- Every strict 0.5.0 attack-topic record repeats selector-derived route
+  triggers and records their states separately from adverse predicates. A
+  route trigger selects review; it does not prove the adverse condition. For
+  a mapped pathway, `adverse_predicate_states` must bind to the pathway's
+  declared `adverse_signal`; only a `present` state can support a candidate.
+  For generic topics without a topic-specific adverse-predicate mapping, the
+  only accepted result is `unresolved` with reason `predicate_unmapped`. Such
+  topics stay open, appear as missing in the dashboard, and block a
+  `comprehensive` claim. In particular, a neutral route signal marked present
+  cannot create a candidate. A linked candidate remains open if any required
+  C27 assessment bound to its target issue is missing or has a non-closed
+  status; the target issue's open check status is recorded separately.
 - Dashboard outcome counts distinguish `evidence_resolved` and
   `qualified_condition` conditional answers from partial/open issues. Their
   closure status and evidence references appear on the issue card, and the

@@ -68,11 +68,16 @@ def shared_scope_route(version: str) -> dict:
                 **topic, "outcome": "unresolved", "evidence_ref": EVIDENCE,
                 **({
                     "screening": {
-                        "reason_code": "evidence_missing",
+                        "reason_code": "evidence_missing" if topic["adverse_predicate_ids"] else "predicate_unmapped",
                         "predicate_states": [{
-                            "signal_id": signal_id, "state": "unknown",
+                            "signal_id": signal_id,
+                            "state": "present" if signal_id in signal_ids else "absent",
                             "evidence_ref": EVIDENCE,
                         } for signal_id in trigger_ids],
+                        "adverse_predicate_states": [{
+                            "predicate_id": predicate_id, "state": "unknown",
+                            "evidence_ref": EVIDENCE,
+                        } for predicate_id in topic["adverse_predicate_ids"]],
                     }
                 } if version == "0.5.0" else {}),
             })
@@ -265,11 +270,12 @@ class ConsultationP0RegressionTests(unittest.TestCase):
             item for item in selector.select_issue_requirements(
                 ["digital_only_access_requirement"]
             )["attack_angle_topics"]
-            if item["route_id"] == "digital_only_channel_and_accessibility"
+            if item.get("pathway_id") == "digital_only_access"
         )
         trigger_ids = sorted(set(expected["trigger_any_signal_ids"]) | set(expected["trigger_all_signal_ids"]))
         issue = {
             "issue_ref": ISSUE_A,
+            "signal_ids": ["digital_only_access_requirement"],
             "attack_angle_reviews": [{
                 **expected,
                 "outcome": "candidate_issue_linked", "linked_issue_ref": ISSUE_A,
@@ -280,6 +286,10 @@ class ConsultationP0RegressionTests(unittest.TestCase):
                         "state": "present" if signal_id == "digital_only_access_requirement" else "absent",
                         "evidence_ref": EVIDENCE,
                     } for signal_id in trigger_ids],
+                    "adverse_predicate_states": [{
+                        "predicate_id": predicate_id, "state": "present",
+                        "evidence_ref": EVIDENCE,
+                    } for predicate_id in expected["adverse_predicate_ids"]],
                 },
                 "evidence_ref": EVIDENCE,
             }],
@@ -295,23 +305,23 @@ class ConsultationP0RegressionTests(unittest.TestCase):
         )
         issue["attack_angle_reviews"][0]["screening"].update(
             reason_code="no_adverse_signal",
-            predicate_states=[{"signal_id": "digital_only_access_requirement",
-                              "state": "unknown", "evidence_ref": EVIDENCE}],
+            predicate_states=[{"signal_id": signal_id,
+                              "state": "present" if signal_id == "digital_only_access_requirement" else "absent",
+                              "evidence_ref": EVIDENCE} for signal_id in trigger_ids],
+            adverse_predicate_states=[{"predicate_id": predicate_id,
+                                       "state": "unknown", "evidence_ref": EVIDENCE}
+                                      for predicate_id in expected["adverse_predicate_ids"]],
         )
         with self.assertRaisesRegex(route_gate.RouteGateError, "issue_attack_negative_screen_unsupported"):
-            # The exact routing predicates are recorded; unknown cannot be
-            # collapsed into a negative result.
-            issue["attack_angle_reviews"][0]["screening"]["predicate_states"] = [
-                {"signal_id": signal_id, "state": "unknown", "evidence_ref": EVIDENCE}
-                for signal_id in trigger_ids
-            ]
+            # A neutral route trigger cannot be substituted for an unknown
+            # topic-specific adverse predicate.
             route_gate.validate_attack_angle_screen(
                 issue, issue["attack_angle_reviews"][0], expected, evidence
             )
 
     def test_attack_screen_rejects_unrelated_absent_or_present_signals(self):
         expected = selector.select_issue_requirements(["directive_scope_question"])["attack_angle_topics"][0]
-        issue = {"issue_ref": ISSUE_A}
+        issue = {"issue_ref": ISSUE_A, "signal_ids": ["directive_scope_question"]}
         topic = {
             **expected, "outcome": "no_signal_identified", "evidence_ref": EVIDENCE,
             "screening": {"reason_code": "no_adverse_signal", "predicate_states": [{
@@ -327,10 +337,11 @@ class ConsultationP0RegressionTests(unittest.TestCase):
         topic["screening"] = {
             "reason_code": "candidate_assessed",
             "predicate_states": [{
-                "signal_id": signal_id, "state": "absent", "evidence_ref": EVIDENCE,
+                "signal_id": signal_id, "state": "present", "evidence_ref": EVIDENCE,
             } for signal_id in expected["trigger_any_signal_ids"]],
+            "adverse_predicate_states": [],
         }
-        with self.assertRaisesRegex(route_gate.RouteGateError, "issue_attack_candidate_screen_unsupported"):
+        with self.assertRaisesRegex(route_gate.RouteGateError, "issue_attack_unmapped_predicate_must_remain_unresolved"):
             route_gate.validate_attack_angle_screen(issue, topic, expected, evidence)
 
     def test_pathway_all_predicates_control_negative_unresolved_and_candidate_outcomes(self):
@@ -341,28 +352,37 @@ class ConsultationP0RegressionTests(unittest.TestCase):
         )
         self.assertEqual(expected["trigger_any_signal_ids"], [])
         self.assertEqual(set(expected["trigger_all_signal_ids"]), set(signal_ids))
-        issue = {"issue_ref": ISSUE_A}
+        issue = {"issue_ref": ISSUE_A, "signal_ids": signal_ids}
         evidence = {EVIDENCE: {"kind": "conversation_record"}}
 
         def topic_for(outcome: str, reason: str, values: dict[str, str]) -> dict:
             return {
                 **expected, "outcome": outcome, "evidence_ref": EVIDENCE,
-                "screening": {"reason_code": reason, "predicate_states": [
-                    {"signal_id": signal_id, "state": state, "evidence_ref": EVIDENCE}
-                    for signal_id, state in values.items()
-                ]},
+                "screening": {
+                    "reason_code": reason,
+                    "predicate_states": [
+                        {"signal_id": signal_id, "state": "present", "evidence_ref": EVIDENCE}
+                        for signal_id in signal_ids
+                    ],
+                    "adverse_predicate_states": [
+                        {"predicate_id": predicate_id,
+                         "state": values.get(predicate_id, "unknown"),
+                         "evidence_ref": EVIDENCE}
+                        for predicate_id in expected["adverse_predicate_ids"]
+                    ],
+                },
             }
 
         route_gate.validate_attack_angle_screen(
-            issue, topic_for("unresolved", "evidence_missing", {signal_ids[0]: "unknown", signal_ids[1]: "present"}),
+            issue, topic_for("unresolved", "evidence_missing", {expected["adverse_predicate_ids"][0]: "unknown"}),
             expected, evidence,
         )
         route_gate.validate_attack_angle_screen(
-            issue, topic_for("candidate_same_issue", "candidate_assessed", {signal_ids[0]: "present", signal_ids[1]: "present"}),
+            issue, topic_for("candidate_same_issue", "candidate_assessed", {expected["adverse_predicate_ids"][0]: "present"}),
             expected, evidence,
         )
         route_gate.validate_attack_angle_screen(
-            issue, topic_for("no_signal_identified", "no_adverse_signal", {signal_ids[0]: "present", signal_ids[1]: "absent"}),
+            issue, topic_for("no_signal_identified", "no_adverse_signal", {expected["adverse_predicate_ids"][0]: "absent"}),
             expected, evidence,
         )
 

@@ -329,12 +329,12 @@ def check_evidence_index(route: dict, receipt_dir: Path,
 def validate_attack_angle_screen(
     issue: dict, topic: dict, expected_topic: dict, evidence_index: dict[str, dict],
 ) -> None:
-    """Validate the screen against its selected route/pathway predicates.
+    """Validate route selection separately from adverse-topic screening.
 
-    Topic records cannot choose their own predicates: the expected any/all
-    sets come from the routing selector and must be repeated exactly in the
-    strict receipt. This prevents an unrelated absent signal from closing a
-    screen or an unrelated present signal from creating a candidate.
+    Route signals select work for review. They do not establish the adverse
+    condition under review. Candidate outcomes therefore require a separately
+    bound topic-specific adverse predicate. Generic topics without such a
+    mapping remain unresolved and block a comprehensive claim.
     """
     issue_ref = issue["issue_ref"]
     route_id = topic["route_id"]
@@ -362,39 +362,47 @@ def validate_attack_angle_screen(
         predicate_evidence = evidence_index.get(state_record["evidence_ref"])
         if not predicate_evidence or predicate_evidence["kind"] != "conversation_record":
             raise RouteGateError(f"issue_attack_screen_evidence_invalid:{issue_ref}:{route_id}")
-    expected_state_ids = set(expected_any) | set(expected_all)
-    if set(states) != expected_state_ids:
+    expected_trigger_ids = set(expected_any) | set(expected_all)
+    if set(states) != expected_trigger_ids:
         raise RouteGateError(f"issue_attack_screen_predicate_binding_mismatch:{issue_ref}:{route_id}:states")
+    issue_signals = set(issue["signal_ids"])
+    if any(
+        (signal_id in issue_signals and state != "present")
+        or (signal_id not in issue_signals and state == "present")
+        for signal_id, state in states.items()
+    ):
+        raise RouteGateError(f"issue_attack_route_trigger_state_conflicts_with_issue:{issue_ref}:{route_id}")
 
-    def any_result(signal_ids: list[str]) -> bool | None:
-        if not signal_ids:
-            return True
-        values = [states[signal_id] for signal_id in signal_ids]
-        if "present" in values:
-            return True
-        if "unknown" in values:
+    def evaluate(states_by_id: dict[str, str], predicate_ids: list[str]) -> bool | None:
+        """All declared topic predicates must be present to support a candidate."""
+        if not predicate_ids:
             return None
-        return False
-
-    def all_result(signal_ids: list[str]) -> bool | None:
-        if not signal_ids:
-            return True
-        values = [states[signal_id] for signal_id in signal_ids]
+        values = [states_by_id[predicate_id] for predicate_id in predicate_ids]
         if "absent" in values:
             return False
         if "unknown" in values:
             return None
         return True
 
-    any_state = any_result(expected_any)
-    all_state = all_result(expected_all)
-    if any_state is False or all_state is False:
-        predicate_result: bool | None = False
-    elif any_state is True and all_state is True:
-        predicate_result = True
-    else:
-        predicate_result = None
+    expected_adverse_ids = sorted(expected_topic.get("adverse_predicate_ids", []))
+    if sorted(topic.get("adverse_predicate_ids", [])) != expected_adverse_ids:
+        raise RouteGateError(f"issue_attack_adverse_predicate_binding_mismatch:{issue_ref}:{route_id}")
+    raw_adverse_states = screening.get("adverse_predicate_states")
+    if not isinstance(raw_adverse_states, list):
+        raise RouteGateError(f"issue_attack_adverse_predicate_states_missing:{issue_ref}:{route_id}")
+    adverse_states: dict[str, str] = {}
+    for state_record in raw_adverse_states:
+        predicate_id = state_record["predicate_id"]
+        if predicate_id in adverse_states:
+            raise RouteGateError(f"issue_attack_adverse_predicate_duplicate:{issue_ref}:{route_id}")
+        adverse_states[predicate_id] = state_record["state"]
+        predicate_evidence = evidence_index.get(state_record["evidence_ref"])
+        if not predicate_evidence or predicate_evidence["kind"] != "conversation_record":
+            raise RouteGateError(f"issue_attack_adverse_predicate_evidence_invalid:{issue_ref}:{route_id}")
+    if set(adverse_states) != set(expected_adverse_ids):
+        raise RouteGateError(f"issue_attack_adverse_predicate_binding_mismatch:{issue_ref}:{route_id}")
 
+    predicate_result = evaluate(adverse_states, expected_adverse_ids)
     outcome = topic["outcome"]
     if outcome == "candidate_issue_linked":
         linked_issue_ref = topic.get("linked_issue_ref")
@@ -403,6 +411,11 @@ def validate_attack_angle_screen(
         if linked_issue_ref == issue_ref:
             raise RouteGateError(f"issue_attack_candidate_self_link:{issue_ref}:{route_id}")
     reason = screening["reason_code"]
+    if not expected_adverse_ids:
+        if outcome != "unresolved" or reason != "predicate_unmapped":
+            raise RouteGateError(f"issue_attack_unmapped_predicate_must_remain_unresolved:{issue_ref}:{route_id}")
+        return
+
     if outcome == "no_signal_identified":
         if (reason not in {"no_adverse_signal", "predicate_contradicted"}
                 or predicate_result is not False):
@@ -933,6 +946,8 @@ def check_declared_issues(route: dict, evidence_index: dict[str, dict],
                     raise RouteGateError(f"issue_attack_review_evidence_invalid:{issue_ref}:{key[0]}")
                 if topic_record["outcome"] == "unresolved":
                     gaps.append(f"issue:{issue_ref}:attack_angle_topic_unresolved:{key[0]}")
+                    if (topic_record.get("screening", {}).get("reason_code") == "predicate_unmapped"):
+                        gaps.append(f"issue:{issue_ref}:attack_angle_predicate_unmapped:{key[0]}")
                 linked_issue = topic_record.get("linked_issue_ref")
                 if topic_record["outcome"] == "candidate_issue_linked" and linked_issue not in declared_issue_refs:
                     gaps.append(f"issue:{issue_ref}:attack_angle_linked_issue_missing:{key[0]}")

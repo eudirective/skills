@@ -248,22 +248,30 @@ def make_receipt(*, partial=False, conditional_status=None, c27_status="assessed
     attack_reviews = []
     for topic in requirements["attack_angle_topics"]:
         trigger_ids = sorted(set(topic["trigger_any_signal_ids"]) | set(topic["trigger_all_signal_ids"]))
+        adverse_ids = topic["adverse_predicate_ids"]
+        mapped = bool(adverse_ids)
         attack_reviews.append({
             **topic,
-            "outcome": "candidate_same_issue",
+            "outcome": "unresolved",
             "evidence_ref": CONVERSATION_REF,
             "screening": {
-                "reason_code": "candidate_assessed",
+                "reason_code": "evidence_missing" if mapped else "predicate_unmapped",
                 "predicate_states": [{
                     "signal_id": signal_id,
                     "state": "present" if signal_id in {"directive_scope_question"} else "absent",
                     "evidence_ref": CONVERSATION_REF,
                 } for signal_id in trigger_ids],
+                "adverse_predicate_states": [{
+                    "predicate_id": predicate_id,
+                    "state": "unknown",
+                    "evidence_ref": CONVERSATION_REF,
+                } for predicate_id in adverse_ids],
             },
         })
     conditional_closed = conditional_status in {"evidence_resolved", "qualified_condition"}
     conditional_answer = partial or conditional_status is not None
-    closed = not partial and (conditional_status is None or conditional_closed)
+    attack_closed = all(item["outcome"] != "unresolved" for item in attack_reviews)
+    closed = not partial and (conditional_status is None or conditional_closed) and attack_closed
     issue = {
         "issue_ref": ISSUE_REF,
         "scope_ref": SCOPE_REF,
@@ -299,10 +307,10 @@ def make_receipt(*, partial=False, conditional_status=None, c27_status="assessed
             "signal_states": [{"signal_id": "directive_scope_question", "state": "present"}],
         }],
     }
-    issue_summary = [] if closed or conditional_closed else [{
+    issue_summary = [] if closed else [{
         "issue_ref": ISSUE_REF,
         "title": "Synthetic scope predicate",
-        "missing": "The abstract predicate remains unresolved in this partial fixture.",
+        "missing": "Topic-specific adverse predicate mappings or evidence remain unresolved in this partial fixture.",
         "effect": "The output must remain qualified and must not claim comprehensive coverage.",
     }]
     return {
@@ -441,7 +449,7 @@ class IntegratedControlledReleaseTests(unittest.TestCase):
         self.answer_path.write_bytes((body.rstrip() + "\n\n" + report["dashboard_preview"]).encode("utf-8"))
         return report
 
-    def test_full_positive_path_runs_real_validators_and_releases_exact_bytes(self):
+    def test_checked_path_stays_partial_when_attack_predicates_are_unmapped(self):
         self.write_fixture()
         research = self.run_script(
             "research_gate.py", "--plan", str(self.plan_path), "--bundle", str(self.bundle_path),
@@ -458,10 +466,12 @@ class IntegratedControlledReleaseTests(unittest.TestCase):
         self.assertEqual(json.loads(preflight.stdout)["status"], "accounted_for_review")
 
         report = self.prepare_answer("Synthetic integrated answer; no legal proposition asserted.")
-        self.assertEqual(report["status"], "structurally_closed_declared_plan")
+        self.assertEqual(report["status"], "valid_partial_route")
         self.assertEqual(report["research_reports"][0]["status"], "valid")
         self.assertEqual(report["source_preflight_reports"][0]["status"], "accounted_for_review")
-        self.assertIn("**REVIEWED**", report["dashboard_preview"])
+        self.assertTrue(any("attack_angle_predicate_unmapped" in item for item in report["outstanding"]))
+        self.assertIn("no topic-specific adverse predicate is mapped", report["dashboard_preview"])
+        self.assertIn("**PARTIAL**", report["dashboard_preview"])
 
         released = self.run_release()
         self.assertEqual(released.returncode, 0, released.stderr.decode())
@@ -477,21 +487,21 @@ class IntegratedControlledReleaseTests(unittest.TestCase):
         self.assertEqual(released.returncode, 0, released.stderr.decode())
         self.assertEqual(released.stdout, self.answer_path.read_bytes())
 
-    def test_resolved_conditional_outcomes_are_closed_in_dashboard_and_gate(self):
+    def test_resolved_conditional_does_not_close_unmapped_attack_screen(self):
         for closure_status, label in (
-            ("evidence_resolved", "Condition resolved"),
-            ("qualified_condition", "Qualified answer"),
+            ("evidence_resolved", "Evidence resolved"),
+            ("qualified_condition", "Qualified condition"),
         ):
             with self.subTest(closure_status=closure_status):
                 self.write_fixture(conditional_status=closure_status)
                 report = self.prepare_answer("Synthetic answer with a recorded conditional closure.")
-                self.assertEqual(report["status"], "structurally_closed_declared_plan")
-                self.assertIn("Conditionally closed: **1 (100%)**", report["dashboard_preview"])
-                self.assertIn("Partial/open: **0 (0%)**", report["dashboard_preview"])
-                self.assertIn(f"**🟦 {label} —", report["dashboard_preview"])
+                self.assertEqual(report["status"], "valid_partial_route")
+                self.assertIn("Conditionally closed: **0 (0%)**", report["dashboard_preview"])
+                self.assertIn("Partial/open: **1 (100%)**", report["dashboard_preview"])
+                self.assertIn(f"Conditional closure: **{label}**", report["dashboard_preview"])
                 self.assertIn("Conditional closure:", report["dashboard_preview"])
                 self.assertIn("closure evidence: conversation record (1)", report["dashboard_preview"])
-                self.assertNotIn("Missing:", report["dashboard_preview"])
+                self.assertIn("no topic-specific adverse predicate is mapped", report["dashboard_preview"])
                 released = self.run_release()
                 self.assertEqual(released.returncode, 0, released.stderr.decode())
                 self.assertEqual(released.stdout, self.answer_path.read_bytes())
@@ -511,7 +521,7 @@ class IntegratedControlledReleaseTests(unittest.TestCase):
         self.assertIn("Conditional closure: **Evidence resolved**", report["dashboard_preview"])
         self.assertIn("c27_check_open", " ".join(report["outstanding"]))
 
-    def test_attack_screen_rejects_unrelated_signal_and_false_candidate(self):
+    def test_neutral_route_signal_cannot_create_an_unmapped_attack_candidate(self):
         receipt = self.write_fixture()
         topic = receipt["issues"][0]["attack_angle_reviews"][0]
         topic["screening"]["predicate_states"] = [{
@@ -524,17 +534,17 @@ class IntegratedControlledReleaseTests(unittest.TestCase):
         self.assertIn(b"issue_attack_screen_predicate_binding_mismatch", rejected.stderr)
 
         receipt = self.write_fixture()
-        for topic in receipt["issues"][0]["attack_angle_reviews"]:
-            for state in topic["screening"]["predicate_states"]:
-                state["state"] = "absent"
+        topic = receipt["issues"][0]["attack_angle_reviews"][0]
+        topic["outcome"] = "candidate_same_issue"
+        topic["screening"]["reason_code"] = "candidate_assessed"
         self.receipt_path.write_text(json.dumps(receipt, sort_keys=True, indent=2) + "\n", encoding="utf-8")
         rejected = self.run_script("consultation_route_gate.py", str(self.receipt_path))
         self.assertEqual(rejected.returncode, 2)
-        self.assertIn(b"issue_attack_candidate_screen_unsupported", rejected.stderr)
+        self.assertIn(b"issue_attack_unmapped_predicate_must_remain_unresolved", rejected.stderr)
 
     def test_tampered_research_and_stale_preflight_block_answer_bytes(self):
         self.write_fixture()
-        self.prepare_answer("Synthetic comprehensive answer.")
+        self.prepare_answer("Synthetic partial answer pending attack predicate mapping.")
         plan = json.loads(self.plan_path.read_text(encoding="utf-8"))
         plan["question"] = "Changed after bundle creation."
         self.plan_path.write_text(json.dumps(plan, sort_keys=True, indent=2) + "\n", encoding="utf-8")
@@ -553,10 +563,13 @@ class IntegratedControlledReleaseTests(unittest.TestCase):
         preflight["issues"][0]["gap_disposition"] = "open"
         preflight["issues"][0]["gap_reason"] = "The fictional source has stale currentness in this adversarial fixture."
         self.preflight_path.write_text(json.dumps(preflight, sort_keys=True, indent=2) + "\n", encoding="utf-8")
-        blocked = self.run_release()
-        self.assertEqual(blocked.returncode, 2)
-        self.assertEqual(blocked.stdout, b"")
-        self.assertIn(b"comprehensive_claim_has_outstanding_work", blocked.stderr)
+        report = self.prepare_answer("Synthetic partial answer; stale source status is disclosed.")
+        self.assertEqual(report["status"], "valid_partial_route")
+        self.assertTrue(any("source_preflight" in item for item in report["outstanding"]))
+        self.assertIn("**PARTIAL**", report["dashboard_preview"])
+        released = self.run_release()
+        self.assertEqual(released.returncode, 0, released.stderr.decode())
+        self.assertEqual(released.stdout, self.answer_path.read_bytes())
 
     def test_legacy_receipt_is_not_accepted_for_strict_controlled_release(self):
         receipt = self.write_fixture(partial=True)

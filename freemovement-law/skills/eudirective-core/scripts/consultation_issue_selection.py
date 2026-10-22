@@ -376,6 +376,10 @@ def validate_pathway_bindings(
         topic_id = topic.get("topic_id")
         if not isinstance(topic_id, str) or not topic_id or topic_id in result:
             raise SelectionError("attack_pathway_id_invalid_or_duplicate")
+        if not isinstance(topic.get("label"), str) or not topic["label"].strip():
+            raise SelectionError(f"attack_pathway_label_missing:{topic_id}")
+        if not isinstance(topic.get("adverse_signal"), str) or not topic["adverse_signal"].strip():
+            raise SelectionError(f"attack_pathway_adverse_predicate_missing:{topic_id}")
         coverage = topic.get("coverage")
         if not isinstance(coverage, str) or not coverage:
             raise SelectionError(f"attack_pathway_coverage_missing:{topic_id}")
@@ -559,6 +563,11 @@ def select_issue_requirements(
                     "topic": topic,
                     "trigger_any_signal_ids": sorted(route["when_any_signal"]),
                     "trigger_all_signal_ids": [],
+                    # Route signals activate review, but they do not establish
+                    # an adverse fact for the selected topic. Until the topic
+                    # has a separately maintained adverse-predicate mapping,
+                    # candidate outcomes must remain unresolved.
+                    "adverse_predicate_ids": [],
                 }
 
     pathway_map = validate_pathway_bindings(matrix, registry, signal_defs)
@@ -581,6 +590,10 @@ def select_issue_requirements(
                 "c27_check_ids": sorted(route_checks[route_id]),
                 "trigger_any_signal_ids": sorted(binding["when_any_signal"]),
                 "trigger_all_signal_ids": sorted(binding["when_all_signal"]),
+                # The pathway's adverse_signal is a separately declared,
+                # topic-specific screen. It is distinct from the neutral
+                # route trigger that selected the pathway for review.
+                "adverse_predicate_ids": ["pathway:" + pathway_id],
             }
             topics[(record["route_id"], record["topic"])] = record
 

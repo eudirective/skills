@@ -1,7 +1,7 @@
 # P0 consultation enforcement regression report
 
 **Date:** 2026-10-23
-**Base:** `ca76b49b00390c95006ded2f63cb0561cc4f6502`
+**Base:** `61fc9a49f1cb0bf3e0b1b6a40654252901319b66`
 **Candidate:** `freemovement-law` 0.58.0 / `eudirective-core` 0.57.0 / route receipt 0.5.0
 **Data used:** fictional and abstract fixtures only; no applicant facts or private case data were sent to synthetic-only scripts.
 
@@ -13,19 +13,19 @@ The Python test scripts were run from `freemovement-law/skills/eudirective-core/
 | --- | --- |
 | `PYTHONDONTWRITEBYTECODE=1 python3 test_consultation_issue_selection.py` | Exit 0; 18 tests passed. |
 | `PYTHONDONTWRITEBYTECODE=1 python3 test_issue_source_preflight.py` | Exit 0; 5 tests passed. |
-| `PYTHONDONTWRITEBYTECODE=1 python3 test_consultation_route_gate.py` | Exit 0; 23 tests passed. |
+| `PYTHONDONTWRITEBYTECODE=1 python3 test_consultation_route_gate.py` | Exit 0; 24 tests passed, including present neutral route triggers paired with adverse predicates absent or unknown. |
 | `PYTHONDONTWRITEBYTECODE=1 python3 test_consultation_dashboard.py` | Exit 0; suite passed (47 tests). |
 | `PYTHONDONTWRITEBYTECODE=1 python3 test_consultation_p0_regressions.py` | Exit 0; 17 tests passed, including mismatched and all-only pathway predicates, linked C27 status, added/removed issue deltas, current-response removal evidence and merge targets. |
-| `PYTHONDONTWRITEBYTECODE=1 python3 test_consultation_p0_integrated.py` | Exit 0; 11 unmocked integrated tests passed, including predicate mismatch/false-candidate rejection, both resolved conditional outcomes, and a resolved condition with a separate open C27 check. |
+| `PYTHONDONTWRITEBYTECODE=1 python3 test_consultation_p0_integrated.py` | Exit 0; 11 unmocked integrated tests passed, including unmapped-predicate fail-closed behavior, qualified partial release, both resolved conditional outcomes remaining open when attack mapping is missing, and a resolved condition with a separate open C27 check. |
 | `PYTHONDONTWRITEBYTECODE=1 python3 run_selftest.py > /tmp/skills-p0-hardening-selftest.json` | Exit 0; 156 checks passed, including C2/C3 and C5d guards. |
 | `PYTHONPYCACHEPREFIX=/tmp/skills-p0-hardening-pycache python3 -m compileall -q freemovement-law/skills/eudirective-core/scripts` | Exit 0; Python compilation passed. The temporary cache was removed; no `__pycache__` remains in the plugin tree. |
 | `node freemovement-law/scripts/version_manifest.mjs --verify` | Exit 0; plugin/skill/library version manifest parity passed. |
 | `PYTHONDONTWRITEBYTECODE=1 python3 freemovement-law/skills/eudirective-core/scripts/c27_case_state.py checklist > /tmp/skills-p0-hardening-c27-checklist.json` | Exit 0; C27 registry checklist emitted successfully. |
 | `git diff --check` | Exit 0; no whitespace errors. |
 
-The integrated suite calls the real research, source-preflight, route, dashboard, and controlled-release validators. It verifies exact-byte release for a fully reconciled fictional receipt in a disposable test-only reviewed configuration and a qualified partial receipt; blocking for tampered research, stale source accounting, legacy 0.4.0 receipts, identifier-pattern matches, symlinked research paths, and invalid UTF-8 receipt/research artifacts; and absence of answer bytes and fixture/path leakage on blocked releases. Production review metadata remains pending.
+The integrated suite calls the real research, source-preflight, route, dashboard, and controlled-release validators. It verifies exact-byte release of qualified partial output and blocking for tampered research, legacy 0.4.0 receipts, identifier-pattern matches, symlinked research paths, and invalid UTF-8 receipt/research artifacts. The current generic route topics do not yet have topic-specific adverse-predicate mappings; a neutral route trigger therefore cannot create a candidate, the unresolved mapping is named in the dashboard, and a comprehensive claim remains blocked. Existing mapped pathways require their own adverse-predicate state; absent or unknown states cannot create candidates. No successful strict comprehensive release is claimed. Production review metadata remains pending.
 
-The 0.5 attack-screen trace now repeats selector-derived trigger predicate IDs and must match them exactly; tri-state any/all logic binds the recorded outcome to those predicates. Linked candidates remain open if any required bound C27 assessment is not closed, with open status recorded against the linked issue. Abstract revision regressions cover additions, removals, current-response evidence, and merge-target validity. Dashboard counts distinguish conditionally closed answers from unresolved partial work when no separate issue-level check is open. A separate open required check keeps that issue in partial/open status while the conditional closure status and evidence remain visible. Integrated route/dashboard/release fixtures verify both outcomes against the gate.
+The 0.5 attack-screen trace separates selector-derived route triggers from adverse predicates. Trigger states must agree with the issue's declared signals; a mapped topic's predicate IDs are selector-bound and its tri-state values govern negative, unresolved, or candidate outcomes. Generic topics without a mapping must remain `predicate_unmapped` and cannot close. Linked candidates remain open if any required bound C27 assessment is not closed, with open status recorded against the linked issue. Abstract revision regressions cover additions, removals, current-response evidence, and merge-target validity. Dashboard counts distinguish conditionally closed answers from unresolved partial work when no separate issue-level check is open. A separate open required check keeps that issue in partial/open status while the conditional closure status and evidence remain visible. Integrated route/dashboard/release fixtures verify these outcomes against the gate.
 
 ## Fail-first result on the exact base
 
@@ -40,4 +40,4 @@ The 0.5 attack-screen trace now repeats selector-derived trigger predicate IDs a
 - The fresh-session version/dashboard/host-boundary checklist is written but not run. No live ChatGPT tests were performed or required in this maintenance session.
 - CI workflow steps were updated but remote CI was not triggered from this local-only worktree.
 
-No commit, push, PR, package build, install or publication occurred in this implementation worktree.
+This report does not claim independent legal/privacy approval, remote CI success, a ChatGPT host release veto, or a live ChatGPT test. The deferred manual display/release plan remains the operational check for a fresh installed version.

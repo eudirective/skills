@@ -248,16 +248,20 @@ def _valid_http_url(value: str | None) -> bool:
 
 
 def unresolved_issue_refs(route: dict) -> set[str]:
-    """Return open issue refs using the strict 0.5 conditional-closure rule."""
+    """Return issue refs with open case conditions or unresolved topic screens."""
     result = set()
     for issue in route.get("issues", []):
-        if issue.get("disposition") not in UNRESOLVED_ISSUES:
-            continue
+        disposition_open = issue.get("disposition") in UNRESOLVED_ISSUES
+        attack_open = any(
+            item.get("outcome") == "unresolved"
+            for item in issue.get("attack_angle_reviews", [])
+        )
         if route.get("schema_version") == "0.5.0" and issue.get("disposition") == "answered_conditionally":
             closure = issue.get("conditional_closure", {})
             if closure.get("status") in {"evidence_resolved", "qualified_condition"}:
-                continue
-        result.add(issue["issue_ref"])
+                disposition_open = False
+        if disposition_open or attack_open:
+            result.add(issue["issue_ref"])
     return result
 
 
@@ -1066,6 +1070,14 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
                         }.get(review["outcome"], value_status(review["outcome"]))
                         linked = review.get("linked_issue_ref")
                         suffix = f"; issue {refs([linked])}" if linked else ""
+                        if review["outcome"] == "unresolved":
+                            reason_code = review.get("screening", {}).get("reason_code")
+                            if reason_code == "predicate_unmapped":
+                                suffix += "; missing: no topic-specific adverse predicate is mapped, so a candidate cannot be assigned"
+                            elif reason_code == "evidence_missing":
+                                suffix += "; missing: evidence needed to assess the adverse predicate"
+                            elif reason_code == "scope_unclear":
+                                suffix += "; missing: scope needed to assess the adverse predicate"
                         lines.append(f"- **{outcome}** — {topic['topic']}{suffix}.")
                         if topic.get("pathway_id"):
                             patterns = topic.get("coverage_pattern_ids", [])

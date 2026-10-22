@@ -9,6 +9,10 @@
 
 This packet makes the routing and source-class rules inspectable for an independent legal/privacy reviewer. It is not an approval record and does not clear production review flags. The test-only reviewed configuration used by the synthetic integration test exists only in a disposable temporary copy. No real applicant facts were used. Structural checks do not establish legal correctness, source authentication, or complete issue identification. C5d/C11 candidate material is not a legal violation finding.
 
+## Adverse-predicate mapping decision
+
+The strict receipt distinguishes the neutral signal that selects a route from the topic-specific condition that could support a potential-issue candidate. Existing priority pathways declare an `adverse_signal`; their screening state is recorded separately. Most general route review prompts do not yet have a mapped adverse condition. They must remain `unresolved` with reason `predicate_unmapped`, appear as missing in the dashboard, and prevent a comprehensive claim. The reviewer should either supply a justified, narrowly scoped condition for each prompt or confirm that it should remain unresolved. Do not treat the route trigger alone as evidence of an adverse condition.
+
 ## Route-by-route review register
 
 For each route, review whether its trigger signals are sufficiently narrow, the C27 checks identify necessary fact/rule/procedure questions, the owner/class mapping is justified, cited source records are suitable and currentness-limited, and negative cases prevent over-routing. Route and source-class metadata remain pending review.

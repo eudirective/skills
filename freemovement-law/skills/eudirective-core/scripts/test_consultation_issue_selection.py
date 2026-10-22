@@ -214,6 +214,18 @@ class ConsultationIssueSelectionTests(unittest.TestCase):
         digital = selector.select_issue_requirements(["digital_only_access_requirement"])
         self.assertIn("access.digital_only", digital["check_ids"])
         self.assertEqual(digital["routing_review_status"], "pending_independent_review")
+        generic_topics = [
+            item for item in digital["attack_angle_topics"] if not item.get("pathway_id")
+        ]
+        self.assertTrue(generic_topics)
+        self.assertTrue(all(item["adverse_predicate_ids"] == [] for item in generic_topics))
+        digital_topic = next(
+            item for item in digital["attack_angle_topics"]
+            if item.get("pathway_id") == "digital_only_access"
+        )
+        self.assertEqual(
+            digital_topic["adverse_predicate_ids"], ["pathway:digital_only_access"]
+        )
 
     def test_contradictory_positive_and_negative_signals_are_rejected(self) -> None:
         with self.assertRaisesRegex(selector.SelectionError, "contradictory_signals"):

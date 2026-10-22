@@ -175,12 +175,19 @@ def make_strict_controlled_receipt(*, coverage="partial", signal_id="external_se
         "outcome": "unresolved",
         "evidence_ref": issue["evidence_ref"],
         "screening": {
-            "reason_code": "evidence_missing",
+            "reason_code": "evidence_missing" if topic["adverse_predicate_ids"] else "predicate_unmapped",
             "predicate_states": [{
-                "signal_id": issue["signal_ids"][0],
+                "signal_id": signal_id,
+                "state": "present" if signal_id in issue["signal_ids"] else "absent",
+                "evidence_ref": issue["evidence_ref"],
+            } for signal_id in sorted(
+                set(topic["trigger_any_signal_ids"]) | set(topic["trigger_all_signal_ids"])
+            )],
+            "adverse_predicate_states": [{
+                "predicate_id": predicate_id,
                 "state": "unknown",
                 "evidence_ref": issue["evidence_ref"],
-            }],
+            } for predicate_id in topic["adverse_predicate_ids"]],
         },
     } for topic in requirements["attack_angle_topics"]]
 
@@ -458,6 +465,26 @@ class RouteGateTests(unittest.TestCase):
         rejected = self.run_gate()
         self.assertEqual(rejected.returncode, 2)
         self.assertIn("issue_attack_pathway_binding_mismatch", rejected.stderr)
+
+    def test_neutral_route_trigger_cannot_substitute_for_pathway_adverse_predicate(self):
+        for adverse_state in ("absent", "unknown"):
+            with self.subTest(adverse_state=adverse_state):
+                receipt = make_strict_controlled_receipt(
+                    signal_id="digital_only_access_requirement"
+                )
+                topic = next(
+                    item for item in receipt["issues"][0]["attack_angle_reviews"]
+                    if item.get("pathway_id") == "digital_only_access"
+                )
+                topic["outcome"] = "candidate_same_issue"
+                topic["screening"]["reason_code"] = "candidate_assessed"
+                for state in topic["screening"]["predicate_states"]:
+                    state["state"] = "present"
+                topic["screening"]["adverse_predicate_states"][0]["state"] = adverse_state
+                self.write_receipt(receipt)
+                rejected = self.run_gate()
+                self.assertEqual(rejected.returncode, 2)
+                self.assertIn("issue_attack_candidate_screen_unsupported", rejected.stderr)
 
     def test_source_or_fact_missing_issue_blocks_comprehensive_claim(self):
         receipt = make_receipt()
