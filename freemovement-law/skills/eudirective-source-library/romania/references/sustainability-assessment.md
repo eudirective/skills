@@ -35,3 +35,8 @@ The current manifest remains unchanged at 79 national targets plus the separate 
 - Reconcile the data-protection, Ombudsman and equality-body routes by issue.
 
 No baseline topic is complete and Romania's country review remains open. See [coverage-register.md](coverage-register.md) and [source-acceptance.json](source-acceptance.json).
+
+
+## Conversion replay and repair
+
+The 79-target manifest resolves to its 71 retained Markdown references and eight monitor-only targets. This checkout has no Romanian replay script or retained raw-source snapshots for those conversions, so deterministic replay and any target-specific repair remain unsupported. Existing local files remain unaccepted; the dated official links remain the usable references within their source-acceptance scopes. The separate adoption currentness offer remains open.

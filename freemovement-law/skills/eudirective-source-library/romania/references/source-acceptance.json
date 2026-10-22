@@ -1,22 +1,22 @@
 {
   "schema_version": "1.0.0",
   "jurisdiction": "RO",
-  "as_of": "2026-10-21",
+  "as_of": "2026-10-23",
   "accepted_source_count": 0,
   "accepted_current_law_source_count": 0,
   "accepted_derived_text_count": 0,
   "accepted_topic_count": 0,
   "country_review_complete": false,
-  "accepted_external_reference_count": 10,
+  "accepted_external_reference_count": 13,
   "legacy_inventory": {
     "national_manifest_targets": 79,
     "national_targets_with_reviewed_markdown": 71,
     "national_monitor_only_targets": 8,
     "additional_guidance_targets": 10,
     "local_document_files": 81,
-    "local_acceptance_note": "The existing README describes reviewed conversions, but this review did not reconcile each retained file against the newer source-acceptance gate. No local file is newly accepted by this register."
+    "local_acceptance_note": "The existing local conversions remain unaccepted. This manual review confirmed the manifest paths resolve but found no retained raw-source snapshots or Romanian replay script in this checkout; a source-specific repair could not be reproduced or validated. No local file is newly accepted. Source Monitor runtime checks are unsupported."
   },
-  "policy": "A human-reviewed official link is usable for ordinary research within the identified publisher, instrument, language, displayed date or cutoff, reviewed content, and limitations. A government-published consolidated text is preferred when available. No Gazette-fragment reconstruction, local capture, hash, replay, conversion, API access, or copying permission is required for link use. Check a specific later amendment only when it may materially affect the issue. Link acceptance is separate from local-copy acceptance, topic coverage, and country completion.",
+  "policy": "A human-reviewed official link is usable for ordinary research within the identified publisher, instrument, language, displayed date or cutoff, reviewed content, and limitations. A government-published consolidated text is preferred when available. No Gazette-fragment reconstruction, local capture, hash, replay, conversion, API access, or copying permission is required for link use. Check a specific later amendment only when it may materially affect the issue. Link acceptance is separate from local-copy acceptance, topic coverage, and country completion. Manual conversion review on 2026-10-23 did not establish a reproducible Romanian local-copy repair because raw source bytes and the replay script are absent from this checkout; local artifacts remain unaccepted.",
   "official_reference_reviews": {
     "ro-portal-208825": {
       "status": "usable_official_reference",
@@ -177,7 +177,69 @@
         "Read this consolidation with Government Decision nr. 478/2016, the later amending act already listed in the source inventory.",
         "This accepts an official link for dated reference use only; it does not accept the existing local conversion or any attachment, and it does not complete FOI or immigration-procedure coverage."
       ]
+    },
+    "ro-portal-232354": {
+      "status": "usable_official_reference",
+      "publisher": "Portal Legislativ, Romanian Government legal-information portal",
+      "url": "https://legislatie.just.ro/Public/DetaliiDocument/232354",
+      "rediscovery_url": "https://legislatie.just.ro/",
+      "checked_on": "2026-10-23",
+      "language": "Romanian",
+      "version_or_cutoff": "The Portal Legislativ page displayed consolidated-form history through 19 April 2024; the latest consolidation includes Law nr. 99/2024, published 16 April 2024.",
+      "scope": "Official consolidated Law nr. 273/2004 on adoption procedure, including domestic and international adoption provisions.",
+      "reviewed_content": "The official page identifies the act and subject, displays the dated consolidation history and article contents, and provides the statutory text. The linked 19 April 2024 consolidation and Law nr. 99/2024 amendment were checked for identity and relationship.",
+      "limitations": [
+        "The latest displayed consolidation is dated 19 April 2024. This review did not establish whether a later official consolidation or material amendment exists; check currentness when a later provision may affect the issue.",
+        "This is an official dated reference, not an article-by-article review of domestic or intercountry adoption rules and not a topic-completion finding.",
+        "No existing local conversion, attachment, or monitored-manifest target is newly accepted by this link decision."
+      ]
+    },
+    "ro-portal-798-2021-adoption-annex": {
+      "status": "usable_official_reference",
+      "publisher": "Portal Legislativ, Romanian Government legal-information portal",
+      "url": "https://legislatie.just.ro/Public/FormaPrintabila/00000G3N1Q9WFHTXEJV139XT5WI0EGGP",
+      "rediscovery_url": "https://legislatie.just.ro/",
+      "checked_on": "2026-10-23",
+      "language": "Romanian",
+      "version_or_cutoff": "Government Decision nr. 798/2021, published in Monitorul Oficial nr. 761 on 5 August 2021; its Article 1 replaces the annex to HG nr. 579/2016 with the annex reproduced on this official page.",
+      "scope": "Official text of the replacement methodological rules annex applying Law nr. 273/2004 on adoption procedure, including adoption assessment and procedure provisions.",
+      "reviewed_content": "The official text identifies the Government as issuer, the instrument and publication data, expressly states that the HG nr. 579/2016 annex is replaced, and provides the full replacement annex. The annex definitions identify central and foreign competent authorities and the Hague Adoption Convention context.",
+      "limitations": [
+        "This is the 2021 replacement annex, not a consolidated current text of every provision of HG nr. 579/2016 or its other amendments. The original HG nr. 579/2016 detail page returned 502 during review; Portal Legislativ's official search record identified its title and 12 August 2016 publication, but later currentness is not established here.",
+        "Article 83(1) of the replacement annex was finally annulled; the official ÎCCJ Decision nr. 326/2025 states that the annulment took effect after publication of the final judgment on 19 September 2024. See https://legislatie.just.ro/Public/DetaliiDocument/303954. Do not rely on Article 83(1) as a ground to refuse the support allowance in the described pre-26 March 2021 adoption situation.",
+        "This link decision does not accept a local conversion, establish topic completeness, or close the currentness review offered for human follow-up."
+      ]
+    },
+    "ro-portal-303954-adoption-rule-status": {
+      "status": "usable_official_reference",
+      "publisher": "Portal Legislativ, Romanian Government legal-information portal; official Înalta Curte de Casație și Justiție decision",
+      "url": "https://legislatie.just.ro/Public/DetaliiDocument/303954",
+      "rediscovery_url": "https://legislatie.just.ro/",
+      "checked_on": "2026-10-23",
+      "language": "Romanian",
+      "version_or_cutoff": "ÎCCJ Decision nr. 326 of 22 September 2025, concerning application of Article 100^1 of Law nr. 273/2004.",
+      "scope": "Official judicial confirmation of the final annulment and publication status of Article 83(1) of the methodological rules annex to HG nr. 579/2016, as replaced by HG nr. 798/2021.",
+      "reviewed_content": "The official decision identifies HG nr. 798/2021 as replacing the HG nr. 579/2016 annex and states that Article 83(1) was finally annulled on 24 April 2024, with the final judgment published in Monitorul Oficial nr. 942 on 19 September 2024. It also states the limited effect of that annulment for the adoption-support allowance scenario described in the decision.",
+      "limitations": [
+        "This is the official 2025 decision's confirmation of the earlier annulment, not the full text of the underlying Court of Appeal judgment or Decision nr. 2.431/2024.",
+        "The status point concerns Article 83(1) and the adoption-support allowance context; it is not a general interpretation of the adoption procedure rules.",
+        "The link does not accept the existing local decision or rule conversions."
+      ]
     }
   },
-  "human_review_site_offers": []
+  "human_review_site_offers": [
+    {
+      "id": "ro-review-adoption-currentness",
+      "status": "whole_portal_review_offered",
+      "publisher": "Portal Legislativ, Romanian Government legal-information portal",
+      "official_site_url": "https://legislatie.just.ro/",
+      "focus_source_ids": [
+        "ro-portal-232354",
+        "ro-portal-798-2021-adoption-annex"
+      ],
+      "reason": "The official Law nr. 273/2004 record exposes a consolidation only through 19 April 2024. The original HG nr. 579/2016 detail page returned 502 in this review; an official 2021 decision supplies the replacement annex, but a unified current status and any later material amendments were not established.",
+      "review_question": "Can a human reviewer confirm whether Portal Legislativ now provides a later consolidated version of Law nr. 273/2004 and a current consolidated or amendment-history view for HG nr. 579/2016 after HG nr. 798/2021, while preserving the Article 83(1) annulment status?",
+      "effect": "The accepted Law nr. 273/2004 and HG nr. 798/2021 links remain usable only within their dated text and stated limits. This offer does not block independent source or topic research and does not add monitored targets."
+    }
+  ]
 }

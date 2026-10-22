@@ -63,4 +63,4 @@ Markdown is a deterministic text representation, not a legal completeness or cur
 
 ## Official-reference acceptance
 
-The [acceptance register](references/source-acceptance.json) records two dated Retsinformation references for BEK nr 1457/2020 and BEK nr 965/2025. Use them only within their recorded scopes; the local XML version has an unresolved end-date conflict and is not accepted as an integrated current text. External-reference acceptance does not certify the national inventory, topic coverage, or country review.
+The [acceptance register](references/source-acceptance.json) records four dated Retsinformation references: BEK nr 1457/2020 and BEK nr 965/2025, plus the July 2026 marriage and adoption consolidations. Use each only within its recorded scope; the local XML version of BEK nr 1457/2020 has an unresolved end-date conflict and is not accepted as an integrated current text. External-reference acceptance does not certify the national inventory, topic coverage, or country review.

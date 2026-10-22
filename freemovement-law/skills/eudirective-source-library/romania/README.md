@@ -1,6 +1,6 @@
 # Romania national source pack
 
-**Status (2026-10-21):** 79 monitored national-source targets in the main manifest; 71 produce reviewed Markdown, and eight are monitor-only. A separate guidance manifest tracks 10 additional authority sources. Ten official government references have now been reviewed for link use, including consolidated FOI texts for Law nr. 544/2001 and HG nr. 123/2002; one missing legal-aid source was added as a link-only reference. No topic is complete and the country review remains open.
+**Status (2026-10-23):** 79 monitored national-source targets in the main manifest; 71 produce reviewed Markdown, and eight are monitor-only. A separate guidance manifest tracks 10 additional authority sources. Thirteen official source references have been reviewed for link use. The latest batch added dated adoption-procedure references and recorded the final annulment of Article 83(1) of the replacement rules annex. Currentness after the stated cutoffs remains open; no topic is complete and the country review remains open.
 
 - Romanian EU-language mirror: [core/README.md](core/README.md)
 - Reviewed national documents: [documents/README.md](documents/README.md)

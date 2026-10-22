@@ -1,6 +1,10 @@
 # Germany source candidates
 
-**Status (19 October 2026):** 47 candidates; 44 texts converted as unaccepted review candidates (18 statutory records from 17 official XML packages and 26 other official pages/PDFs); two discovery pages returned shells without stable text, and one BfJ URL returned 404. All 44 conversions pass offline replay; zero sources are accepted. The inventory also covers authentic gazette discovery, visa and mission practice, regional residence services, procedure, courts, privacy and oversight, adoption/civil status, and legal aid.
+**Status (19 October 2026):** 47 candidates; 44 texts converted as unaccepted review candidates (18 statutory records from 17 official XML packages and 26 other official pages/PDFs); two discovery pages returned shells without stable text, and one BfJ URL returned 404. All 44 conversions pass offline replay; zero local copies are accepted. The inventory also covers authentic gazette discovery, visa and mission practice, regional residence services, procedure, courts, privacy and oversight, adoption/civil status, and legal aid.
+
+**Link decisions (23 October 2026):** 12 official external references are accepted within stated scopes; 3 proposals remain in human review. The 44 local conversions remain unaccepted.
+
+The replay result above records the 19 October run. In this checkout, the hash-addressed raw XML ZIP files under the ignored `temp/germany/` path are absent, so the 23 October offline verification could not reproduce the 18 statutory conversions.
 
 The law retrieval rule refreshes each statute's official Gesetze im Internet index, follows the XML ZIP link published there, validates the archive and statutory abbreviation, and stores the publisher norm ID, XML build date, exact URLs, and source hash. Three candidates are provision-specific excerpts from the complete official package. The generated Markdown preserves the statute's section and paragraph structure. The 18 conversions pass deterministic offline replay.
 
