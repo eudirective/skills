@@ -20,6 +20,7 @@ ROOT = Path(__file__).resolve().parents[1]
 MATRIX_PATH = ROOT / "references" / "consultation-issue-routing.json"
 REGISTRY_PATH = ROOT / "references" / "state-engine" / "check-registry.json"
 PATHWAY_PATH = ROOT / "references" / "attack-angles" / "consultation-topic-review-pathways.json"
+SOURCE_CLASS_POLICY_PATH = ROOT / "references" / "consultation-source-class-policy.json"
 ATTACK_CATALOG_PATH = ROOT / "references" / "attack-angles" / "core-attack-angle-catalog.json"
 FIXTURE_KIND = "synthetic_abstract"
 PROCEEDING_ID_PATTERN = re.compile(r"^p_[1-9][0-9]{0,2}$")
@@ -227,8 +228,123 @@ def validate_configuration(
                 raise SelectionError(f"related_issue_route_unknown:{route['route_id']}:{related_route_id}")
 
     validate_pathway_bindings(matrix, registry, signal_defs)
+    validate_source_class_policy(matrix, signal_defs)
 
     return signal_defs, valid_checks
+
+
+SOURCE_CLASSES = {
+    "eu_binding_law", "national_binding_law", "case_law", "official_guidance",
+    "procedural_rule", "contrary_authority",
+}
+
+
+def validate_source_class_policy(
+    matrix: dict[str, Any], signal_defs: dict[str, dict[str, Any]],
+    root: Path = ROOT,
+) -> dict[str, Any]:
+    """Validate owner and signal keyed source-class obligations.
+
+    The policy selects minimum source categories; it does not establish legal
+    sufficiency, currentness, or authenticity of any particular source.
+    """
+    policy = load_json(root / "references" / "consultation-source-class-policy.json")
+    if policy.get("schema") != "freemovement-source-class-policy/0.1.0":
+        raise SelectionError("source_class_policy_schema_unsupported")
+    route_owners: set[tuple[str, str]] = set()
+    for route in matrix["routes"]:
+        owners = set(route.get("source_owner_ids", []))
+        for condition in route.get("conditional_source_owner_ids", []):
+            owners.update(condition.get("source_owner_ids", []))
+        route_owners.update((route["route_id"], owner_id) for owner_id in owners)
+    seen: set[tuple[str, str]] = set()
+    for rule in policy.get("rules", []):
+        if not isinstance(rule, dict):
+            raise SelectionError("source_class_policy_rule_invalid")
+        key = (rule.get("route_id"), rule.get("owner_id"))
+        if key in seen:
+            raise SelectionError("source_class_policy_rule_duplicate")
+        seen.add(key)
+        if key not in route_owners:
+            raise SelectionError("source_class_policy_rule_route_owner_unknown")
+        mandatory = set(_as_id_list(rule.get("required_classes"), "source_class_policy_required"))
+        if mandatory - SOURCE_CLASSES:
+            raise SelectionError("source_class_policy_class_unknown")
+        conditions = rule.get("conditional_rules")
+        if not isinstance(conditions, list):
+            raise SelectionError("source_class_policy_condition_invalid")
+        for condition in conditions:
+            if not isinstance(condition, dict):
+                raise SelectionError("source_class_policy_condition_invalid")
+            when = _as_id_list(condition.get("when_any_signal"), "source_class_policy_signal", False)
+            classes = _as_id_list(condition.get("require_classes"), "source_class_policy_conditional_class", False)
+            if set(when) - set(signal_defs) or set(classes) - SOURCE_CLASSES:
+                raise SelectionError("source_class_policy_condition_unknown")
+            if not isinstance(condition.get("reason_code"), str) or not condition["reason_code"]:
+                raise SelectionError("source_class_policy_reason_missing")
+        if not mandatory and not conditions:
+            raise SelectionError("source_class_policy_rule_has_no_applicability")
+        exclusions = rule.get("excluded_classes")
+        if not isinstance(exclusions, list):
+            raise SelectionError("source_class_policy_exclusions_invalid")
+        excluded_classes: set[str] = set()
+        for exclusion in exclusions:
+            if not isinstance(exclusion, dict):
+                raise SelectionError("source_class_policy_exclusion_invalid")
+            source_class = exclusion.get("source_class")
+            if source_class not in SOURCE_CLASSES or source_class in mandatory | excluded_classes:
+                raise SelectionError("source_class_policy_exclusion_conflict")
+            if not isinstance(exclusion.get("reason_code"), str) or not exclusion["reason_code"]:
+                raise SelectionError("source_class_policy_exclusion_reason_missing")
+            excluded_classes.add(source_class)
+        for condition in conditions:
+            if set(condition["require_classes"]) & excluded_classes:
+                source_class = sorted(set(condition["require_classes"]) & excluded_classes)[0]
+                raise SelectionError(
+                    f"source_class_policy_conditional_exclusion_conflict:{key[0]}:{key[1]}:{source_class}"
+                )
+    if seen != route_owners:
+        raise SelectionError("source_class_policy_route_owner_coverage_incomplete")
+    return policy
+
+
+def derive_source_class_requirements(
+    route_ids: list[str], signal_ids: list[str],
+    matrix: dict[str, Any] | None = None, root: Path = ROOT,
+) -> dict[str, dict[str, Any]]:
+    """Return route-owner derived source classes for already-declared signals."""
+    matrix = matrix or load_json(MATRIX_PATH)
+    registry = load_json(REGISTRY_PATH)
+    signal_defs, _ = validate_configuration(matrix, registry, root)
+    policy = validate_source_class_policy(matrix, signal_defs, root)
+    signals = set(_as_id_list(signal_ids, "signal_ids"))
+    rules = {(item["route_id"], item["owner_id"]): item for item in policy["rules"]}
+    route_map = {item["route_id"]: item for item in matrix["routes"]}
+    derived: dict[str, dict[str, set[str]]] = {}
+    for route_id in route_ids:
+        route = route_map[route_id]
+        owners = set(route.get("source_owner_ids", []))
+        for condition in route.get("conditional_source_owner_ids", []):
+            if set(condition["when_any_signal"]) & signals:
+                owners.update(condition["source_owner_ids"])
+        for owner_id in owners:
+            rule = rules[(route_id, owner_id)]
+            entry = derived.setdefault(owner_id, {"required": set(), "excluded": set()})
+            entry["required"].update(rule["required_classes"])
+            entry["excluded"].update(item["source_class"] for item in rule["excluded_classes"])
+            for condition in rule["conditional_rules"]:
+                if set(condition["when_any_signal"]) & signals:
+                    entry["required"].update(condition["require_classes"])
+    result = {}
+    for owner_id, values in derived.items():
+        conflict = values["required"] & values["excluded"]
+        if conflict:
+            raise SelectionError(f"source_class_policy_conflict:{owner_id}:{sorted(conflict)[0]}")
+        result[owner_id] = {
+            "required_classes": sorted(values["required"]),
+            "excluded_classes": sorted(values["excluded"]),
+        }
+    return result
 
 
 def validate_pathway_bindings(
@@ -396,10 +512,10 @@ def select_issue_requirements(
     registry: dict[str, Any] | None = None,
     root: Path = ROOT,
 ) -> dict[str, Any]:
-    """Derive checks, source owners, and attack-screen topics for declared signals.
+    """Derive checks, source owners/classes, and attack-screen topics.
 
     This is a structural routing result for declared signal IDs. It does not
-    discover issues or choose source classes and it is not legal analysis.
+    discover issues, authenticate sources, or determine legal sufficiency.
     """
     matrix = matrix or load_json(MATRIX_PATH)
     registry = registry or load_json(REGISTRY_PATH)
@@ -438,7 +554,12 @@ def select_issue_requirements(
         attack_review = route["potential_attack_angle_review"]
         if attack_review["required"]:
             for topic in attack_review["review_topics"]:
-                topics[(route_id, topic)] = {"route_id": route_id, "topic": topic}
+                topics[(route_id, topic)] = {
+                    "route_id": route_id,
+                    "topic": topic,
+                    "trigger_any_signal_ids": sorted(route["when_any_signal"]),
+                    "trigger_all_signal_ids": [],
+                }
 
     pathway_map = validate_pathway_bindings(matrix, registry, signal_defs)
     for pathway_id, pathway in pathway_map.items():
@@ -458,13 +579,28 @@ def select_issue_requirements(
                 "trigger_route_id": route_id,
                 "coverage_pattern_ids": pathway["coverage_pattern_ids"],
                 "c27_check_ids": sorted(route_checks[route_id]),
+                "trigger_any_signal_ids": sorted(binding["when_any_signal"]),
+                "trigger_all_signal_ids": sorted(binding["when_all_signal"]),
             }
             topics[(record["route_id"], record["topic"])] = record
 
+    source_class_requirements = derive_source_class_requirements(
+        sorted(routes), normalized, matrix=matrix, root=root
+    )
+    active_owners = sorted(
+        owner_id for owner_id, value in source_class_requirements.items()
+        if value["required_classes"]
+    )
     return {
         "check_ids": select_check_ids(normalized, matrix=matrix, registry=registry, root=root),
         "route_ids": sorted(routes),
         "source_owner_ids": sorted(owners),
+        "strict_source_owner_ids": active_owners,
+        "source_owner_exclusions": sorted(owners - set(active_owners)),
+        "source_class_requirements": source_class_requirements,
+        "source_class_policy_review_status": load_json(SOURCE_CLASS_POLICY_PATH).get(
+            "review_status", "pending_independent_review"
+        ),
         "attack_angle_topics": [topics[key] for key in sorted(topics)],
         "routing_review_status": matrix.get("routing_review_status", "pending_independent_review"),
         "pathway_review_status": load_json(PATHWAY_PATH).get(

@@ -1,32 +1,32 @@
 # P0 consultation enforcement release-readiness report
 
-**Date:** 2026-10-22
-**Candidate versions:** `freemovement-law` 0.57.0 / `eudirective-core` 0.56.0
-**Disposition:** Locally implemented and structurally tested; human review and any host integration remain outstanding. Not committed or published.
+**Date:** 2026-10-23
+**Candidate:** `freemovement-law` 0.58.0 / `eudirective-core` 0.57.0
+**Base:** `ca76b49b00390c95006ded2f63cb0561cc4f6502`
+**Disposition:** local implementation and synthetic verification complete; independent legal/privacy review remains pending. Not committed, pushed, or published.
 
-## Work completed
+## Implemented
 
-- Recorded the 0.56.1 / 0.55.1 baseline and mapped the existing C27, C3, research, source-preflight, attack-coverage and release components.
-- Added consultation receipt schema 0.4.0 for controlled applicant-guidance and source-research artifacts, with mandatory issue records and a full dashboard.
-- Derived per-issue C27 check, source-owner and attack-topic obligations from existing routing metadata; bound reviewed source work to issue/scope/owner/source-class preflight records.
-- Added priority pathway bindings to existing signal IDs, C27 checks and C5d catalogue patterns, while keeping screen outcomes non-determinative.
-- Added strict local `controlled-release`, allowing qualified partial output with open work and withholding unsupported comprehensive claims or changed artifacts.
-- Added material-revision scope tracking. Affected scopes remain open until reassessment is declared and the current checks/obligations reconcile.
-- Updated package and core versions and CI coverage. C2 and C3 interfaces were not modified.
-- Added a deferred manual host test plan instead of attempting a live ChatGPT or deployment test.
+- Added strict consultation receipt schema 0.5.0 while preserving 0.1.0–0.4.0 for historical reading. Strict controlled release requires 0.5.0.
+- Bound each C27 assessment occurrence to an exact issue or explicit shared proceeding set; duplicate `(scope, check, issue)` occurrences are rejected.
+- Derived required and conditional source classes from versioned route/signal policy, with explicit source-owner exclusions and evidence-backed exclusion records. A potential Member-State owner alone does not force national law for an EU-only route.
+- Required attack-screen predicate traces are bound to selector-derived route/pathway trigger predicates. Exact predicate sets and tri-state any/all outcomes are checked; unrelated signals cannot close or satisfy a screen. Safe issue links are required, and self-linked candidates cannot satisfy the screen.
+- Compared abstract previous/current signal states (`present`, `absent`, `unknown`) and kept changed or unavailable scopes open until current-response reassessment is declared. Regressions cover added/removed issues, current-response removal evidence, and valid/invalid merge targets.
+- Linked candidate closure considers every required C27 check bound to the linked issue, including non-closed statuses, and records issue-specific open-check details.
+- Dashboard issue counts separate conditionally closed answers from partial/open issues when no other issue-level check remains open. A separate open C27 check keeps the issue partial while the conditional closure status/evidence remains visible; integrated release tests check both paths against the route gate.
+- Tightened strict provenance, dashboard reconciliation, path/symlink checks, and a limited scan for obvious identifiers in selected free-text fields.
+- Added unmocked integration tests that run the real research, preflight, route, dashboard and controlled-release validators, including exact-byte release and adversarial fail-closed cases.
+- Updated CI steps and synchronized package metadata to `freemovement-law` 0.58.0 / `eudirective-core` 0.57.0.
+- Prepared an independent route/pathway review packet and a copyable fresh-session test plan. Neither review nor live ChatGPT testing is represented as complete.
 
-## Readiness boundaries
+## Verification evidence
 
-The local implementation can validate declared receipt structure and exact bytes routed through its controlled process. It does not prove that the assistant discovered every issue, chose every legally relevant signal or source class, performed each model-led review, or reached a legally correct result. The package does not have a ChatGPT pre-output callback, so ordinary hosted replies can bypass the local runner.
+The exact local commands and results are in `p0-regression-report.md`. All listed local checks passed. Fail-first results on the exact base are in `p0-hardening-baseline.md`. CI configuration was updated but remote CI was not triggered from this local worktree.
 
-Three reviews remain necessary before a strict comprehensive route can be treated as operationally ready:
+## Release gates still open
 
-1. **Legal semantics:** independently review issue signals, source-owner/source-class derivation, priority topic bindings, C27/C5d mapping, and false-positive/negative boundaries.
-2. **Privacy:** review the generalized-artifact boundary, free-text receipt fields, temporary files, logging and any future host data flow. The validators are not a complete personal-data detector.
-3. **Release assurance:** if a host integration is later built, run the deferred target-host tests for output withholding, exact-byte binding, races, alternate paths and bypasses. Local tests do not establish host enforcement.
+1. **Independent legal/privacy review:** the route, source-class and attack-pathway mappings in production metadata remain `pending_independent_review`. The review packet is ready for a human reviewer; no approval has been fabricated.
+2. **Host integration:** the skill cannot force local validators to run or intercept ordinary ChatGPT output. No supported pre-output release hook has been implemented or tested. The local controlled-release command governs only its own output.
+3. **Privacy assurance:** selected text patterns and path controls reduce common leakage risks but do not provide general personal-data detection or an anonymity guarantee.
 
-Until the first review is complete, route/pathway metadata stays `pending_independent_review`, which causes strict comprehensive receipts to fail closed. Qualified partial outputs can still pass through the local runner with their open work shown.
-
-## Verification
-
-The regression counts and local package inspection are recorded in `p0-regression-report.md`. The dashboard visual check and host release-veto check are explicitly deferred; no applicant data or live ChatGPT session was used for validation.
+The C2 element model and frozen C3 contracts/validators were preserved. No source-library rewrite, new outbound flow, live ChatGPT test, commit, push, PR, package build, install, or publication occurred.

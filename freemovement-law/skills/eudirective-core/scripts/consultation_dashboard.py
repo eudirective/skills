@@ -247,6 +247,41 @@ def _valid_http_url(value: str | None) -> bool:
     return parsed.scheme == "https" and bool(parsed.netloc)
 
 
+def unresolved_issue_refs(route: dict) -> set[str]:
+    """Return open issue refs using the strict 0.5 conditional-closure rule."""
+    result = set()
+    for issue in route.get("issues", []):
+        if issue.get("disposition") not in UNRESOLVED_ISSUES:
+            continue
+        if route.get("schema_version") == "0.5.0" and issue.get("disposition") == "answered_conditionally":
+            closure = issue.get("conditional_closure", {})
+            if closure.get("status") in {"evidence_resolved", "qualified_condition"}:
+                continue
+        result.add(issue["issue_ref"])
+    return result
+
+
+def validate_strict_source_provenance(ledger: dict) -> None:
+    """Require explicit discovery provenance for every strict receipt source."""
+    entries = ledger.get("sources")
+    if not isinstance(entries, list):
+        raise DashboardError("source_ledger_sources_missing")
+    for item in entries:
+        logical_id = item.get("logical_source_id", "unknown")
+        for scope in ("response", "conversation"):
+            key = f"{scope}_discovery_method"
+            if key not in item:
+                raise DashboardError(f"source_discovery_method_missing:{scope}:{logical_id}")
+            method = item[key]
+            use = item.get(f"{scope}_use")
+            if method not in DISCOVERY_METHODS:
+                raise DashboardError(f"source_discovery_method_invalid:{scope}:{logical_id}")
+            if use == "not_referenced" and method != "not_applicable":
+                raise DashboardError(f"unused_source_has_discovery_method:{scope}:{logical_id}")
+            if use != "not_referenced" and method == "not_applicable":
+                raise DashboardError(f"source_discovery_method_missing:{scope}:{logical_id}")
+
+
 def validate_source_ledger(ledger: dict) -> dict:
     if ledger.get("response_tracking") not in TRACKING_STATES:
         raise DashboardError("source_ledger_response_tracking_invalid")
@@ -644,9 +679,23 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
         and all(item.get("disposition") in disposition_counts for item in issue_records)
     )
     supported_count = disposition_counts["answered_supported"]
-    partial_count = sum(disposition_counts[key] for key in (
-        "answered_conditionally", "source_missing", "fact_missing",
-    ))
+    conditionally_closed = 0
+    conditionally_open = 0
+    def issue_has_open_gap(issue_ref: str) -> bool:
+        return any(gap.startswith(f"issue:{issue_ref}:") for gap in route_gaps)
+
+    if isinstance(issue_records, list):
+        for issue in issue_records:
+            if issue.get("disposition") != "answered_conditionally":
+                continue
+            closure_status = issue.get("conditional_closure", {}).get("status")
+            if (route.get("schema_version") == "0.5.0"
+                    and closure_status in {"evidence_resolved", "qualified_condition"}
+                    and not issue_has_open_gap(issue["issue_ref"])):
+                conditionally_closed += 1
+            else:
+                conditionally_open += 1
+    partial_count = conditionally_open + disposition_counts["source_missing"] + disposition_counts["fact_missing"]
     out_of_scope_count = disposition_counts["out_of_scope"]
 
     def value_status(value: str) -> str:
@@ -770,23 +819,28 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
     lines.extend([
         "### Issue summary",
         "",
-        "| **Issues reviewed** | **Supported** | **Partial / open** |",
-        "| :---: | :---: | :---: |",
+        "| **Issues reviewed** | **Supported** | **Conditionally closed** | **Partial / open** | **Out of scope** |",
+        "| :---: | :---: | :---: | :---: | :---: |",
         (
-            f"| **{len(issue_records)}** | **{supported_count}** | **{partial_count}** |"
+            f"| **{len(issue_records)}** | **{supported_count}** | **{conditionally_closed}** | "
+            f"**{partial_count}** | **{out_of_scope_count}** |"
             if issue_dispositions_complete
-            else "| **unknown** | **unknown** | **unknown** |"
+            else "| **unknown** | **unknown** | **unknown** | **unknown** | **unknown** |"
         ),
         "",
     ])
     if issue_dispositions_complete and 0 < len(issue_records) <= 20:
-        status_bar = "🟩" * supported_count + "🟨" * partial_count + "⬜" * out_of_scope_count
+        status_bar = (
+            "🟩" * supported_count + "🟦" * conditionally_closed
+            + "🟨" * partial_count + "⬜" * out_of_scope_count
+        )
         lines.extend([
             f"**Assessment coverage — {len(issue_records)} / {len(issue_records)} recorded issues reviewed**",
             "",
             status_bar,
             "",
             f"🟩 Supported: **{supported_count} ({share_percent(supported_count, len(issue_records))})** · "
+            f"🟦 Conditionally closed: **{conditionally_closed} ({share_percent(conditionally_closed, len(issue_records))})** · "
             f"🟨 Partial/open: **{partial_count} ({share_percent(partial_count, len(issue_records))})** · "
             f"⚪ Out of scope: **{out_of_scope_count} ({share_percent(out_of_scope_count, len(issue_records))})**",
             "",
@@ -796,6 +850,7 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
     elif issue_dispositions_complete and len(issue_records) > 20:
         lines.extend([
             f"**Recorded outcomes:** 🟩 Supported: **{supported_count} ({share_percent(supported_count, len(issue_records))})** · "
+            f"🟦 Conditionally closed: **{conditionally_closed} ({share_percent(conditionally_closed, len(issue_records))})** · "
             f"🟨 Partial/open: **{partial_count} ({share_percent(partial_count, len(issue_records))})** · "
             f"⚪ Out of scope: **{out_of_scope_count} ({share_percent(out_of_scope_count, len(issue_records))})**.",
             "A bar is omitted above 20 issues. Percentages are rounded status shares, not a legal-completeness score.",
@@ -921,10 +976,35 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
             title = summary["title"] if summary else signals
             marker = issue_markers.get(disposition, "⚪")
             label = issue_status_labels.get(disposition, value_status(disposition))
+            closure = issue.get("conditional_closure", {})
+            closure_status = closure.get("status")
+            if disposition == "answered_conditionally":
+                other_issue_work_open = issue_has_open_gap(issue["issue_ref"])
+                if (route.get("schema_version") == "0.5.0"
+                        and closure_status == "evidence_resolved" and not other_issue_work_open):
+                    marker, label = "🟦", "Condition resolved"
+                elif (route.get("schema_version") == "0.5.0"
+                        and closure_status == "qualified_condition" and not other_issue_work_open):
+                    marker, label = "🟦", "Qualified answer"
+                elif other_issue_work_open and closure_status in {"evidence_resolved", "qualified_condition"}:
+                    marker, label = "🟠", "Open — required review remains"
+                elif closure_status == "predicate_open":
+                    marker, label = "🟠", "Partial — condition open"
             lines.extend([
                 f"**{marker} {label} — {title}**",
                 f"Evidence: {refs([issue['evidence_ref']])}.",
             ])
+            if disposition == "answered_conditionally":
+                closure_label = {
+                    "evidence_resolved": "Evidence resolved",
+                    "qualified_condition": "Qualified condition",
+                    "predicate_open": "Predicate open",
+                    "not_conditional": "Not conditional",
+                }.get(closure_status, "Closure not recorded")
+                lines.append(
+                    f"Conditional closure: **{closure_label}** · closure evidence: "
+                    f"{refs(closure.get('evidence_refs', []))}."
+                )
             if summary:
                 lines.append(f"Missing: {summary['missing']}")
                 lines.append(f"Effect: {summary['effect']}")
@@ -1267,11 +1347,10 @@ def validate_dashboard_receipt(route: dict, evidence_index: dict[str, dict], rou
     ledger = route.get("source_ledger")
     if not isinstance(ledger, dict):
         raise DashboardError("mandatory_source_ledger_missing")
+    if route.get("schema_version") == "0.5.0":
+        validate_strict_source_provenance(ledger)
     metrics = validate_source_ledger(ledger)
-    unresolved = {
-        item["issue_ref"] for item in route.get("issues", [])
-        if item["disposition"] in UNRESOLVED_ISSUES
-    }
+    unresolved = unresolved_issue_refs(route)
     noted = {item["issue_ref"] for item in dashboard["issue_summaries"]}
     if unresolved != noted:
         raise DashboardError("dashboard_outstanding_issues_mismatch")

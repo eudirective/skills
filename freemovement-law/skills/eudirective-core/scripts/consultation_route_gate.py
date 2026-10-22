@@ -11,6 +11,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -24,6 +25,7 @@ from consultation_issue_selection import (
     SelectionError as IssueSelectionError,
     load_json as load_issue_json,
     select_issue_requirements,
+    validate_source_class_policy,
 )
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -58,7 +60,7 @@ OPERATION_EVIDENCE_KINDS = {
 CLOSED_C27_STATUSES = {"assessed", "not_applicable"}
 ISSUE_MATRIX_PATH = ROOT / "references" / "consultation-issue-routing.json"
 ISSUE_REGISTRY_PATH = ROOT / "references" / "state-engine" / "check-registry.json"
-ROUTE_GATE_VERSION = "0.3.0"
+ROUTE_GATE_VERSION = "0.5.0"
 
 
 class RouteGateError(ValueError):
@@ -67,7 +69,7 @@ class RouteGateError(ValueError):
 
 def required_operations_for(route: dict) -> tuple[str, ...]:
     required = list(REQUIRED_OPERATIONS[route["request_kind"]])
-    if route.get("schema_version") == "0.4.0" and route["request_kind"] in {
+    if route.get("schema_version") in {"0.4.0", "0.5.0"} and route["request_kind"] in {
         "applicant_guidance", "source_research",
     }:
         for operation_id in ("research_gate", "source_preflight", "attack_angle_screen"):
@@ -80,6 +82,13 @@ def safe_relative_file(base: Path, value: str, label: str) -> Path:
     candidate = Path(value)
     if candidate.is_absolute():
         raise RouteGateError(f"{label}:absolute_path_not_allowed")
+    if any(part in {"..", ""} for part in candidate.parts):
+        raise RouteGateError(f"{label}:path_component_not_allowed")
+    cursor = base
+    for part in candidate.parts:
+        cursor = cursor / part
+        if cursor.is_symlink():
+            raise RouteGateError(f"{label}:symlink_not_allowed")
     resolved = (base / candidate).resolve()
     try:
         resolved.relative_to(base.resolve())
@@ -90,25 +99,141 @@ def safe_relative_file(base: Path, value: str, label: str) -> Path:
     return resolved
 
 
+def strict_receipt(route: dict) -> bool:
+    return route.get("schema_version") == "0.5.0"
+
+
 def check_c27_records(route: dict, registry: dict, gaps: list[str]) -> int:
     if route["request_kind"] == "no_case_assessment":
         if route["c27_checks"] or route.get("issues"):
             raise RouteGateError("non_consultation_receipt_contains_case_assessment")
         return 0
+    strict = strict_receipt(route)
     seen: set[tuple[str, str]] = set()
+    seen_assessments: set[str] = set()
+    seen_occurrences: set[tuple[str, str, str]] = set()
     for item in route["c27_checks"]:
         record = item["record"]
         validate_route_check_record(record, registry)
         check_id = record["check_id"]
-        key = (item["scope_ref"], check_id)
-        if key in seen:
-            raise RouteGateError(f"c27_check_duplicate:{item['scope_ref']}:{check_id}")
-        seen.add(key)
+        if strict:
+            assessment_ref = item["assessment_ref"]
+            if assessment_ref in seen_assessments:
+                raise RouteGateError(f"c27_assessment_duplicate:{assessment_ref}")
+            seen_assessments.add(assessment_ref)
+            binding_kind = item.get("binding_kind")
+            bound_issue_refs = item.get("bound_issue_refs")
+            if not isinstance(bound_issue_refs, list):
+                raise RouteGateError("c27_assessment_issue_bindings_invalid")
+            if binding_kind == "issue_specific" and len(bound_issue_refs) != 1:
+                raise RouteGateError("c27_issue_specific_binding_cardinality_invalid")
+            if binding_kind == "proceeding_shared" and len(bound_issue_refs) < 2:
+                raise RouteGateError("c27_shared_binding_cardinality_invalid")
+            if binding_kind not in {"issue_specific", "proceeding_shared"}:
+                raise RouteGateError("c27_binding_kind_invalid")
+            for issue_ref in bound_issue_refs:
+                occurrence = (item["scope_ref"], check_id, issue_ref)
+                if occurrence in seen_occurrences:
+                    raise RouteGateError(
+                        "c27_assessment_occurrence_duplicate:"
+                        f"{item['scope_ref']}:{check_id}:{issue_ref}"
+                    )
+                seen_occurrences.add(occurrence)
+        else:
+            key = (item["scope_ref"], check_id)
+            if key in seen:
+                raise RouteGateError(f"c27_check_duplicate:{item['scope_ref']}:{check_id}")
+            seen.add(key)
         if record["status"] not in CLOSED_C27_STATUSES:
             gaps.append(f"c27:{item['scope_ref']}:{check_id}:{record['status']}")
     if route["request_kind"] == "applicant_guidance" and not route["c27_checks"]:
         gaps.append("c27:no_selected_checks_recorded")
-    return len(seen)
+    return len(seen_assessments) if strict else len(seen)
+
+
+def validate_issue_c27_bindings(route: dict) -> dict[str, set[str]]:
+    """Return checks bound to each issue after validating exact receipt links.
+
+    A shared proceeding fact may bind one assessment to several issues, but
+    issue-specific assessments cannot be borrowed across those issue records.
+    """
+    if not strict_receipt(route):
+        return {}
+    issues = route.get("issues")
+    checks = route.get("c27_checks")
+    if not isinstance(issues, list) or not isinstance(checks, list):
+        raise RouteGateError("c27_issue_binding_records_missing")
+    issue_by_ref = {item["issue_ref"]: item for item in issues}
+    if len(issue_by_ref) != len(issues):
+        raise RouteGateError("issue_duplicate")
+    check_by_ref: dict[str, dict] = {}
+    for check in checks:
+        assessment_ref = check["assessment_ref"]
+        if assessment_ref in check_by_ref:
+            raise RouteGateError(f"c27_assessment_duplicate:{assessment_ref}")
+        check_by_ref[assessment_ref] = check
+
+    actual_by_issue: dict[str, set[str]] = {issue_ref: set() for issue_ref in issue_by_ref}
+    for check in checks:
+        assessment_ref = check["assessment_ref"]
+        scope_ref = check["scope_ref"]
+        bound_refs = check["bound_issue_refs"]
+        if check["binding_kind"] == "proceeding_shared":
+            if not isinstance(check.get("shared_basis"), dict):
+                raise RouteGateError("c27_shared_assessment_basis_missing")
+        elif check.get("shared_basis") is not None:
+            raise RouteGateError("c27_issue_specific_shared_basis_not_allowed")
+        for issue_ref in bound_refs:
+            issue = issue_by_ref.get(issue_ref)
+            if issue is None:
+                raise RouteGateError("c27_assessment_issue_reference_dangling")
+            if issue["scope_ref"] != scope_ref:
+                raise RouteGateError("c27_assessment_scope_mismatch")
+            if assessment_ref not in issue["c27_assessment_refs"]:
+                raise RouteGateError("c27_assessment_binding_asymmetry")
+            actual_by_issue[issue_ref].add(check["record"]["check_id"])
+
+    for issue_ref, issue in issue_by_ref.items():
+        refs = issue["c27_assessment_refs"]
+        if len(refs) != len(set(refs)):
+            raise RouteGateError(f"c27_assessment_reference_duplicate:{issue_ref}")
+        for assessment_ref in refs:
+            check = check_by_ref.get(assessment_ref)
+            if check is None:
+                raise RouteGateError("c27_assessment_reference_dangling")
+            if issue_ref not in check["bound_issue_refs"]:
+                raise RouteGateError("c27_assessment_binding_asymmetry")
+            if issue["scope_ref"] != check["scope_ref"]:
+                raise RouteGateError("c27_assessment_scope_mismatch")
+    return actual_by_issue
+
+
+def issue_c27_statuses(route: dict) -> dict[str, dict[str, str]]:
+    """Map each bound atomic check to its recorded status for each issue."""
+    result: dict[str, dict[str, str]] = {}
+    for check in route.get("c27_checks", []):
+        check_id = check["record"]["check_id"]
+        status = check["record"]["status"]
+        for issue_ref in check.get("bound_issue_refs", []):
+            result.setdefault(issue_ref, {})[check_id] = status
+    return result
+
+
+def record_issue_c27_gaps(
+    issue_ref: str, required_check_ids: list[str], actual_check_ids: set[str],
+    check_statuses: dict[str, str], gaps: list[str],
+) -> list[str]:
+    """Record missing/open required checks with issue-specific provenance."""
+    missing = sorted(set(required_check_ids) - actual_check_ids)
+    for check_id in missing:
+        gaps.append(f"issue:{issue_ref}:c27_required_check_missing:{check_id}")
+    open_checks = []
+    for check_id in sorted(set(required_check_ids) & actual_check_ids):
+        status = check_statuses.get(check_id, "missing")
+        if status not in CLOSED_C27_STATUSES:
+            open_checks.append(check_id)
+            gaps.append(f"issue:{issue_ref}:c27_check_open:{check_id}:{status}")
+    return open_checks
 
 
 def check_evidence_index(route: dict, receipt_dir: Path,
@@ -168,6 +293,21 @@ def check_evidence_index(route: dict, receipt_dir: Path,
             require_ref(ref, {"conversation_record", "local_artifact"})
         for ref in record["source_refs"]:
             require_ref(ref, {"source_record", "local_artifact"})
+        if strict_receipt(route) and item.get("binding_kind") == "proceeding_shared":
+            require_ref(item["shared_basis"]["evidence_ref"], {"conversation_record", "local_artifact"})
+    if strict_receipt(route):
+        for issue in route.get("issues", []):
+            require_ref(issue["evidence_ref"], {"conversation_record"})
+            for ref in issue["conditional_closure"]["evidence_refs"]:
+                require_ref(ref, {"conversation_record", "source_record", "local_artifact", "source_preflight"})
+            for exclusion in issue["source_owner_exclusions"]:
+                require_ref(exclusion["evidence_ref"], {"conversation_record"})
+            for obligation in issue["source_obligations"]:
+                require_ref(obligation["evidence_ref"], {"conversation_record", "source_preflight"})
+            for topic in issue["attack_angle_reviews"]:
+                require_ref(topic["evidence_ref"], {"conversation_record"})
+                for state in topic["screening"]["predicate_states"]:
+                    require_ref(state["evidence_ref"], {"conversation_record"})
     for pair in route["module_pairs"]:
         if not any(item["kind"] == "module_conformance" and
                    item.get("subject_ref") == pair["pair_ref"]
@@ -186,6 +326,148 @@ def check_evidence_index(route: dict, receipt_dir: Path,
     return index
 
 
+def validate_attack_angle_screen(
+    issue: dict, topic: dict, expected_topic: dict, evidence_index: dict[str, dict],
+) -> None:
+    """Validate the screen against its selected route/pathway predicates.
+
+    Topic records cannot choose their own predicates: the expected any/all
+    sets come from the routing selector and must be repeated exactly in the
+    strict receipt. This prevents an unrelated absent signal from closing a
+    screen or an unrelated present signal from creating a candidate.
+    """
+    issue_ref = issue["issue_ref"]
+    route_id = topic["route_id"]
+    evidence = evidence_index.get(topic["evidence_ref"])
+    if not evidence or evidence["kind"] != "conversation_record":
+        raise RouteGateError(f"issue_attack_review_evidence_invalid:{issue_ref}:{route_id}")
+    for key in ("trigger_any_signal_ids", "trigger_all_signal_ids"):
+        expected = sorted(expected_topic.get(key, []))
+        actual = topic.get(key)
+        if not isinstance(actual, list) or sorted(actual) != expected:
+            raise RouteGateError(f"issue_attack_screen_predicate_binding_mismatch:{issue_ref}:{route_id}:{key}")
+    expected_any = expected_topic.get("trigger_any_signal_ids", [])
+    expected_all = expected_topic.get("trigger_all_signal_ids", [])
+    if not expected_any and not expected_all:
+        raise RouteGateError(f"issue_attack_screen_predicate_binding_empty:{issue_ref}:{route_id}")
+    screening = topic.get("screening")
+    if not isinstance(screening, dict):
+        raise RouteGateError(f"issue_attack_screen_missing:{issue_ref}:{route_id}")
+    states: dict[str, str] = {}
+    for state_record in screening["predicate_states"]:
+        signal_id = state_record["signal_id"]
+        if signal_id in states:
+            raise RouteGateError(f"issue_attack_screen_predicate_duplicate:{issue_ref}:{route_id}")
+        states[signal_id] = state_record["state"]
+        predicate_evidence = evidence_index.get(state_record["evidence_ref"])
+        if not predicate_evidence or predicate_evidence["kind"] != "conversation_record":
+            raise RouteGateError(f"issue_attack_screen_evidence_invalid:{issue_ref}:{route_id}")
+    expected_state_ids = set(expected_any) | set(expected_all)
+    if set(states) != expected_state_ids:
+        raise RouteGateError(f"issue_attack_screen_predicate_binding_mismatch:{issue_ref}:{route_id}:states")
+
+    def any_result(signal_ids: list[str]) -> bool | None:
+        if not signal_ids:
+            return True
+        values = [states[signal_id] for signal_id in signal_ids]
+        if "present" in values:
+            return True
+        if "unknown" in values:
+            return None
+        return False
+
+    def all_result(signal_ids: list[str]) -> bool | None:
+        if not signal_ids:
+            return True
+        values = [states[signal_id] for signal_id in signal_ids]
+        if "absent" in values:
+            return False
+        if "unknown" in values:
+            return None
+        return True
+
+    any_state = any_result(expected_any)
+    all_state = all_result(expected_all)
+    if any_state is False or all_state is False:
+        predicate_result: bool | None = False
+    elif any_state is True and all_state is True:
+        predicate_result = True
+    else:
+        predicate_result = None
+
+    outcome = topic["outcome"]
+    if outcome == "candidate_issue_linked":
+        linked_issue_ref = topic.get("linked_issue_ref")
+        if not linked_issue_ref:
+            raise RouteGateError(f"issue_attack_candidate_link_missing:{issue_ref}:{route_id}")
+        if linked_issue_ref == issue_ref:
+            raise RouteGateError(f"issue_attack_candidate_self_link:{issue_ref}:{route_id}")
+    reason = screening["reason_code"]
+    if outcome == "no_signal_identified":
+        if (reason not in {"no_adverse_signal", "predicate_contradicted"}
+                or predicate_result is not False):
+            raise RouteGateError(f"issue_attack_negative_screen_unsupported:{issue_ref}:{route_id}")
+    elif outcome == "unresolved":
+        if reason not in {"evidence_missing", "scope_unclear"} or predicate_result is not None:
+            raise RouteGateError(f"issue_attack_unresolved_screen_unsupported:{issue_ref}:{route_id}")
+    elif outcome in {"candidate_issue_linked", "candidate_same_issue"}:
+        if reason != "candidate_assessed" or predicate_result is not True:
+            raise RouteGateError(f"issue_attack_candidate_screen_unsupported:{issue_ref}:{route_id}")
+
+
+def validate_linked_attack_candidates(
+    route: dict, issue_c27_actual: dict[str, set[str]],
+    issue_c27_statuses: dict[str, dict[str, str]], gaps: list[str],
+) -> None:
+    """Require a separate declared issue and its own routed assessment trace."""
+    issue_by_ref = {item["issue_ref"]: item for item in route.get("issues", [])}
+    for issue in route.get("issues", []):
+        for topic in issue.get("attack_angle_reviews", []):
+            if topic.get("outcome") != "candidate_issue_linked":
+                continue
+            linked_ref = topic.get("linked_issue_ref")
+            route_id = topic["route_id"]
+            linked = issue_by_ref.get(linked_ref)
+            if linked is None:
+                gaps.append(f"issue:{issue['issue_ref']}:attack_angle_linked_issue_missing:{route_id}")
+                continue
+            if linked_ref == issue["issue_ref"]:
+                raise RouteGateError(f"issue_attack_candidate_self_link:{issue['issue_ref']}:{route_id}")
+            try:
+                required = set(select_issue_requirements(linked["signal_ids"])["check_ids"])
+            except IssueSelectionError as error:
+                raise RouteGateError(f"issue_attack_linked_issue_invalid:{linked_ref}") from error
+            actual = issue_c27_actual.get(linked_ref, set())
+            statuses = issue_c27_statuses.get(linked_ref, {})
+            required_closed = all(
+                statuses.get(check_id) in CLOSED_C27_STATUSES
+                for check_id in required
+            )
+            if not linked.get("c27_assessment_refs") or not required <= actual or not required_closed:
+                gaps.append(
+                    f"issue:{issue['issue_ref']}:attack_angle_linked_issue_assessment_missing:{route_id}"
+                )
+
+
+def validate_source_class_obligation(
+    issue_ref: str, owner_id: str, obligation: dict,
+    policy_requirement: dict, gaps: list[str],
+) -> None:
+    """Compare declared classes with the route/signal-derived minimum."""
+    declared = set(obligation["required_source_classes"])
+    required = set(policy_requirement.get("required_classes", []))
+    excluded = set(policy_requirement.get("excluded_classes", []))
+    if not required <= declared:
+        gaps.append(
+            f"issue:{issue_ref}:source_class_policy_required_missing:{owner_id}:"
+            + ",".join(sorted(required - declared))
+        )
+    if declared & excluded:
+        raise RouteGateError(f"issue_source_class_policy_exclusion_violated:{issue_ref}:{owner_id}")
+    if sorted(obligation["policy_excluded_source_classes"]) != sorted(excluded):
+        raise RouteGateError(f"issue_source_class_exclusion_record_mismatch:{issue_ref}:{owner_id}")
+
+
 def check_operation_evidence(route: dict, evidence_index: dict[str, dict],
                              gaps: list[str]) -> None:
     for operation in route["operations"]:
@@ -201,13 +483,169 @@ def check_operation_evidence(route: dict, evidence_index: dict[str, dict],
                 )
 
 
+def _abstract_issue_map(state: dict, signal_ids: set[str]) -> dict[str, dict]:
+    if state.get("manifest_version") != "0.1.0":
+        raise RouteGateError("abstract_state_version_unsupported")
+    result: dict[str, dict] = {}
+    for item in state.get("issues", []):
+        issue_ref = item["issue_ref"]
+        if issue_ref in result:
+            raise RouteGateError("abstract_state_issue_duplicate")
+        signal_states: dict[str, str] = {}
+        for signal in item["signal_states"]:
+            signal_id = signal["signal_id"]
+            if signal_id not in signal_ids:
+                raise RouteGateError("abstract_state_signal_unknown")
+            if signal_id in signal_states:
+                raise RouteGateError("abstract_state_signal_duplicate")
+            if signal["state"] not in {"present", "absent", "unknown"}:
+                raise RouteGateError("abstract_state_signal_state_invalid")
+            signal_states[signal_id] = signal["state"]
+        if not signal_states:
+            raise RouteGateError("abstract_state_signal_states_missing")
+        result[issue_ref] = {
+            "scope_ref": item["scope_ref"],
+            "signal_ids": sorted(
+                signal_id for signal_id, value in signal_states.items() if value == "present"
+            ),
+            "signal_states": sorted(signal_states.items()),
+        }
+    return result
+
+
+def validate_abstract_revision(route: dict, gaps: list[str]) -> set[str]:
+    """Derive deltas from opaque issue/scope/signal snapshots, not a flag."""
+    if not strict_receipt(route):
+        return set()
+    revision = route["revision_control"]
+    try:
+        matrix = load_issue_json(ISSUE_MATRIX_PATH)
+        signal_defs = {
+            item["signal_id"] for item in matrix["signal_catalog"]
+        }
+    except (IssueSelectionError, KeyError, TypeError) as error:
+        raise RouteGateError("abstract_revision_catalogue_unavailable") from error
+
+    current = _abstract_issue_map(revision["current_abstract_state"], signal_defs)
+    declared = {
+        issue["issue_ref"]: {
+            "scope_ref": issue["scope_ref"],
+            "signal_ids": sorted(issue["signal_ids"]),
+        }
+        for issue in route["issues"]
+    }
+    declared_current = {
+        issue_ref: {"scope_ref": item["scope_ref"], "signal_ids": item["signal_ids"]}
+        for issue_ref, item in current.items()
+    }
+    if declared_current != declared:
+        raise RouteGateError("abstract_state_differs_from_declared_issue_records")
+
+    previous_state = revision["previous_abstract_state"]
+    if previous_state is None:
+        if revision["change_detection_status"] != "previous_state_unavailable":
+            raise RouteGateError("abstract_revision_status_mismatch")
+        if route["invocation"].get("material_change") is not True:
+            raise RouteGateError("abstract_revision_unavailable_must_remain_open")
+        if any(revision.get(key) for key in (
+            "added_issue_refs", "removed_issue_refs", "changed_issue_refs",
+            "affected_scope_refs", "reassessed_scope_refs",
+        )):
+            raise RouteGateError("abstract_revision_delta_without_previous_state")
+        if revision.get("removed_issue_reviews"):
+            raise RouteGateError("abstract_revision_removal_without_previous_state")
+        gaps.append("abstract_revision_comparison_unavailable")
+        return set()
+
+    if revision["change_detection_status"] != "compared":
+        raise RouteGateError("abstract_revision_status_mismatch")
+    previous = _abstract_issue_map(previous_state, signal_defs)
+    added = set(current) - set(previous)
+    removed = set(previous) - set(current)
+    changed = {ref for ref in set(current) & set(previous) if current[ref] != previous[ref]}
+    expected_added = sorted(added)
+    expected_removed = sorted(removed)
+    expected_changed = sorted(changed)
+    for key, expected in (
+        ("added_issue_refs", expected_added),
+        ("removed_issue_refs", expected_removed),
+        ("changed_issue_refs", expected_changed),
+    ):
+        if revision[key] != expected:
+            raise RouteGateError(f"abstract_revision_{key}_mismatch")
+    changed_any = bool(added or removed or changed)
+    if route["invocation"].get("material_change") is not changed_any:
+        raise RouteGateError("material_change_declaration_mismatch")
+
+    affected: set[str] = set()
+    for issue_ref in added | changed:
+        affected.add(current[issue_ref]["scope_ref"])
+    for issue_ref in removed | changed:
+        affected.add(previous[issue_ref]["scope_ref"])
+    if revision["affected_scope_refs"] != sorted(affected):
+        raise RouteGateError("abstract_revision_affected_scope_mismatch")
+
+    reassessed = set(revision["reassessed_scope_refs"])
+    if not reassessed <= affected:
+        raise RouteGateError("material_change_reassessed_scope_not_affected")
+    for scope_ref in sorted(affected - reassessed):
+        gaps.append(f"material_change_scope_reassessment_pending:{scope_ref}")
+
+    removal_records = revision["removed_issue_reviews"]
+    if {item["issue_ref"] for item in removal_records} != removed:
+        raise RouteGateError("abstract_revision_removed_issue_review_mismatch")
+    for item in removal_records:
+        if item["scope_ref"] != previous[item["issue_ref"]]["scope_ref"]:
+            raise RouteGateError("abstract_revision_removed_issue_scope_mismatch")
+        evidence = next((e for e in route["evidence"] if e["evidence_ref"] == item["evidence_ref"]), None)
+        if not evidence or evidence["kind"] != "conversation_record" or evidence.get("record_scope") != "current_response":
+            gaps.append(f"removed_issue_review_not_current:{item['issue_ref']}")
+        if item["disposition"] == "merged_into_current_issue" and item["merged_into_issue_ref"] not in current:
+            raise RouteGateError("abstract_revision_merge_target_missing")
+    return affected
+
+
+_PRIVACY_TEXT_KEYS = {
+    "title", "missing", "effect", "reason", "scope_note", "exceptions_note",
+    "question", "response_read_evidence", "conversation_read_evidence",
+}
+_PII_PATTERNS = (
+    ("email_like_value", re.compile(r"\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b", re.I)),
+    ("long_numeric_identifier", re.compile(r"(?<!\d)(?:\d[ -]?){8,}(?!\d)")),
+    ("exact_date", re.compile(r"\b(?:19|20)\d{2}[-/.](?:0?[1-9]|1[0-2])[-/.](?:0?[1-9]|[12]\d|3[01])\b")),
+    ("travel_document_identifier", re.compile(r"\b[A-Z]{1,3}\d{6,10}\b", re.I)),
+)
+
+
+def validate_privacy_minimisation(route: dict) -> None:
+    """Reject a small set of obvious identifiers in strict free-text fields."""
+    if not strict_receipt(route):
+        return
+    def walk(value, path=()):
+        if isinstance(value, dict):
+            for key, child in value.items():
+                yield from walk(child, path + (key,))
+        elif isinstance(value, list):
+            for index, child in enumerate(value):
+                yield from walk(child, path + (str(index),))
+        elif isinstance(value, str) and path and path[-1] in _PRIVACY_TEXT_KEYS:
+            for label, pattern in _PII_PATTERNS:
+                if pattern.search(value):
+                    raise RouteGateError(
+                        "privacy_minimisation_failed:" + ".".join(path) + ":" + label
+                    )
+    for _ in walk(route):
+        pass
+
+
 def check_declared_issues(route: dict, evidence_index: dict[str, dict],
                           source_preflight_reports: list[dict], gaps: list[str]) -> list[dict]:
     """Reconcile issue signals to C27, owner-specific sources and attack topics.
 
-    Earlier receipts may omit issues. Version 0.4.0 checks per-issue source and
-    attack records, but it still cannot discover an omitted issue or validate
-    whether the selected signal set is legally complete.
+    Earlier receipts may omit issues. Strict version 0.5.0 checks per-issue
+    C27 occurrence bindings, policy-derived source classes and linked attack
+    records, but it still cannot discover an omitted issue or validate whether
+    the selected signal set is legally complete.
     """
     issues = route.get("issues")
     if issues is None:
@@ -218,11 +656,13 @@ def check_declared_issues(route: dict, evidence_index: dict[str, dict],
     except IssueSelectionError as error:
         raise RouteGateError("issue_routing_configuration_invalid") from error
 
-    strict = route.get("schema_version") == "0.4.0"
-    if (strict and route.get("revision_control") is not None
+    version = route.get("schema_version")
+    strict = version in {"0.4.0", "0.5.0"}
+    v05 = version == "0.5.0"
+    if (version == "0.4.0" and route.get("revision_control") is not None
             and route.get("invocation", {}).get("material_change") is not True):
         raise RouteGateError("revision_control_without_material_change")
-    if strict and route.get("invocation", {}).get("material_change") is True:
+    if version == "0.4.0" and route.get("invocation", {}).get("material_change") is True:
         revision = route.get("revision_control")
         if not isinstance(revision, dict):
             raise RouteGateError("material_change_revision_control_missing")
@@ -239,6 +679,16 @@ def check_declared_issues(route: dict, evidence_index: dict[str, dict],
     actual_by_scope: dict[str, set[str]] = {}
     for item in route["c27_checks"]:
         actual_by_scope.setdefault(item["scope_ref"], set()).add(item["record"]["check_id"])
+    issue_by_ref = {item["issue_ref"]: item for item in issues}
+    issue_c27_actual = validate_issue_c27_bindings(route) if v05 else {}
+    issue_c27_status_by_issue = issue_c27_statuses(route) if v05 else {}
+    if v05:
+        for check in route["c27_checks"]:
+            if check["binding_kind"] == "proceeding_shared":
+                basis = check["shared_basis"]
+                evidence = evidence_index.get(basis["evidence_ref"])
+                if not evidence or evidence["kind"] not in {"conversation_record", "local_artifact"}:
+                    raise RouteGateError("c27_shared_assessment_basis_invalid")
     preflight_by_id = {
         report.get("preflight_id"): report
         for report in source_preflight_reports
@@ -248,7 +698,7 @@ def check_declared_issues(route: dict, evidence_index: dict[str, dict],
     all_source_owners = set((matrix.get("source_owners") or {}).keys())
     issue_reports: list[dict] = []
 
-    if strict and route.get("invocation", {}).get("material_change") is True:
+    if version == "0.4.0" and route.get("invocation", {}).get("material_change") is True:
         reassessed_scopes = set(route["revision_control"]["reassessed_scope_refs"])
         for scope_ref in sorted(reassessed_scopes):
             scoped_issues = [item for item in issues if item["scope_ref"] == scope_ref]
@@ -282,6 +732,30 @@ def check_declared_issues(route: dict, evidence_index: dict[str, dict],
                         f"material_change_c27_evidence_not_current:{scope_ref}:"
                         f"{check['record']['check_id']}"
                     )
+    elif v05 and route["invocation"].get("material_change") is True:
+        revision = route["revision_control"]
+        reassessed_scopes = set(revision["reassessed_scope_refs"])
+        for scope_ref in sorted(reassessed_scopes):
+            scoped_issues = [item for item in issues if item["scope_ref"] == scope_ref]
+            for issue in scoped_issues:
+                evidence_refs = [issue["evidence_ref"]]
+                evidence_refs.extend(item["evidence_ref"] for item in issue["source_obligations"])
+                evidence_refs.extend(item["evidence_ref"] for item in issue["source_owner_exclusions"])
+                evidence_refs.extend(item["evidence_ref"] for item in issue["attack_angle_reviews"])
+                evidence_refs.extend(
+                    ref for ref in issue["conditional_closure"]["evidence_refs"]
+                )
+                if any(evidence_index[ref].get("record_scope") != "current_response" for ref in evidence_refs):
+                    gaps.append(f"material_change_issue_evidence_not_current:{issue['issue_ref']}")
+            for check in route["c27_checks"]:
+                if check["scope_ref"] != scope_ref:
+                    continue
+                refs = check["record"]["evidence_refs"] + check["record"]["source_refs"]
+                if not any(evidence_index[ref].get("record_scope") == "current_response" for ref in refs):
+                    gaps.append(
+                        f"material_change_c27_evidence_not_current:{scope_ref}:"
+                        f"{check['record']['check_id']}"
+                    )
 
     for issue in issues:
         issue_ref = issue["issue_ref"]
@@ -300,11 +774,35 @@ def check_declared_issues(route: dict, evidence_index: dict[str, dict],
             )
         except IssueSelectionError as error:
             raise RouteGateError(f"issue_signal_selection_invalid:{issue_ref}:{error}") from error
-        actual = actual_by_scope.get(scope_ref, set())
-        for check_id in sorted(set(requirements["check_ids"]) - actual):
-            gaps.append(f"issue:{issue_ref}:c27_required_check_missing:{check_id}")
+        if v05:
+            actual = issue_c27_actual.get(issue_ref, set())
+            bound_statuses = issue_c27_status_by_issue.get(issue_ref, {})
+        else:
+            actual = actual_by_scope.get(scope_ref, set())
+            bound_statuses = {}
+        if v05:
+            open_issue_check_ids = record_issue_c27_gaps(
+                issue_ref, requirements["check_ids"], actual, bound_statuses, gaps
+            )
+        else:
+            open_issue_check_ids = []
+            for check_id in sorted(set(requirements["check_ids"]) - actual):
+                gaps.append(f"issue:{issue_ref}:c27_required_check_missing:{check_id}")
         if issue["disposition"] in {"source_missing", "fact_missing"}:
             gaps.append(f"issue:{issue_ref}:disposition:{issue['disposition']}")
+        if v05:
+            closure = issue["conditional_closure"]
+            for ref in closure["evidence_refs"]:
+                if ref not in evidence_index:
+                    raise RouteGateError(f"issue_conditional_evidence_dangling:{issue_ref}")
+            if closure["status"] == "predicate_open":
+                gaps.append(f"issue:{issue_ref}:conditional_predicate_open")
+            if issue["disposition"] == "answered_conditionally" and closure["status"] not in {
+                "evidence_resolved", "qualified_condition",
+            }:
+                gaps.append(f"issue:{issue_ref}:conditional_answer_closure_missing")
+            if closure["status"] == "qualified_condition" and not closure["evidence_refs"]:
+                raise RouteGateError(f"issue_conditional_closure_evidence_missing:{issue_ref}")
 
         issue_report = {
             "issue_ref": issue_ref,
@@ -315,6 +813,14 @@ def check_declared_issues(route: dict, evidence_index: dict[str, dict],
             "attack_angle_topic_count": len(requirements["attack_angle_topics"]),
             "attack_angle_topics": requirements["attack_angle_topics"],
         }
+        if v05:
+            issue_report["c27_check_statuses"] = {
+                check_id: bound_statuses.get(check_id, "missing")
+                for check_id in requirements["check_ids"]
+            }
+            issue_report["open_c27_check_ids"] = sorted(
+                set(requirements["check_ids"]) - actual | set(open_issue_check_ids)
+            )
         if strict:
             if not requirements["route_ids"]:
                 gaps.append(f"issue:{issue_ref}:no_registered_route_for_declared_signals")
@@ -329,11 +835,46 @@ def check_declared_issues(route: dict, evidence_index: dict[str, dict],
                 if owner_id not in all_source_owners:
                     raise RouteGateError(f"issue_source_owner_unknown:{issue_ref}:{owner_id}")
                 obligation_by_owner[owner_id] = obligation
-            missing_owners = sorted(set(requirements["source_owner_ids"]) - set(obligation_by_owner))
+            required_owner_ids = (
+                requirements["strict_source_owner_ids"] if v05
+                else requirements["source_owner_ids"]
+            )
+            missing_owners = sorted(set(required_owner_ids) - set(obligation_by_owner))
             for owner_id in missing_owners:
                 gaps.append(f"issue:{issue_ref}:source_owner_obligation_missing:{owner_id}")
 
+            if v05:
+                if requirements["source_class_policy_review_status"] != "reviewed":
+                    gaps.append(f"issue:{issue_ref}:source_class_policy_independent_review_pending")
+                declared_exclusions = issue["source_owner_exclusions"]
+                exclusion_by_owner = {}
+                for exclusion in declared_exclusions:
+                    owner_id = exclusion["owner_id"]
+                    if owner_id in exclusion_by_owner:
+                        raise RouteGateError(f"issue_source_owner_exclusion_duplicate:{issue_ref}")
+                    exclusion_by_owner[owner_id] = exclusion
+                    if exclusion["reason_code"] != "no_source_class_predicate_triggered":
+                        raise RouteGateError(f"issue_source_owner_exclusion_reason_invalid:{issue_ref}")
+                    if exclusion["evidence_ref"] != issue["evidence_ref"]:
+                        raise RouteGateError(f"issue_source_owner_exclusion_evidence_mismatch:{issue_ref}")
+                expected_exclusions = set(requirements["source_owner_exclusions"])
+                if set(exclusion_by_owner) != expected_exclusions:
+                    raise RouteGateError(f"issue_source_owner_exclusion_policy_mismatch:{issue_ref}")
+                if set(obligation_by_owner) != set(required_owner_ids):
+                    extra = set(obligation_by_owner) - set(required_owner_ids)
+                    if extra:
+                        raise RouteGateError(f"issue_source_owner_not_required_by_policy:{issue_ref}")
+                    gaps.append(f"issue:{issue_ref}:source_owner_obligation_missing")
+                issue_report["required_source_owner_ids"] = sorted(required_owner_ids)
+                issue_report["source_owner_exclusions"] = sorted(expected_exclusions)
+                issue_report["source_class_requirements"] = requirements["source_class_requirements"]
+
             for owner_id, obligation in obligation_by_owner.items():
+                source_policy = requirements["source_class_requirements"].get(owner_id, {}) if v05 else {}
+                if v05:
+                    validate_source_class_obligation(
+                        issue_ref, owner_id, obligation, source_policy, gaps
+                    )
                 evidence = evidence_index.get(obligation["evidence_ref"])
                 if evidence is None:
                     raise RouteGateError(f"issue_source_evidence_dangling:{issue_ref}:{owner_id}")
@@ -395,7 +936,8 @@ def check_declared_issues(route: dict, evidence_index: dict[str, dict],
                 linked_issue = topic_record.get("linked_issue_ref")
                 if topic_record["outcome"] == "candidate_issue_linked" and linked_issue not in declared_issue_refs:
                     gaps.append(f"issue:{issue_ref}:attack_angle_linked_issue_missing:{key[0]}")
-
+                if topic_record["outcome"] == "candidate_issue_linked" and linked_issue == issue_ref:
+                    raise RouteGateError(f"issue_attack_candidate_self_link:{issue_ref}:{key[0]}")
             expected_topics = {
                 (item["route_id"], item["topic"])
                 for item in requirements["attack_angle_topics"]
@@ -416,6 +958,8 @@ def check_declared_issues(route: dict, evidence_index: dict[str, dict],
                 actual_topic = actual_topics.get(key)
                 if actual_topic is None:
                     continue
+                if v05:
+                    validate_attack_angle_screen(issue, actual_topic, expected_topic, evidence_index)
                 for field in (
                     "pathway_id", "trigger_route_id", "coverage_pattern_ids", "c27_check_ids",
                 ):
@@ -438,6 +982,31 @@ def check_declared_issues(route: dict, evidence_index: dict[str, dict],
                     )
 
         issue_reports.append(issue_report)
+    if v05:
+        validate_linked_attack_candidates(
+            route, issue_c27_actual, issue_c27_status_by_issue, gaps
+        )
+        for issue in issues:
+            for topic in issue["attack_angle_reviews"]:
+                if topic["outcome"] != "candidate_issue_linked":
+                    continue
+                linked_ref = topic["linked_issue_ref"]
+                linked = issue_by_ref.get(linked_ref)
+                if linked is None:
+                    raise RouteGateError(f"issue_attack_link_target_missing:{issue['issue_ref']}")
+                linked_disposition = linked["disposition"]
+                linked_closure = linked["conditional_closure"]["status"]
+                linked_closed = (
+                    linked_disposition == "answered_supported"
+                    or (linked_disposition == "answered_conditionally" and linked_closure in {
+                        "evidence_resolved", "qualified_condition",
+                    })
+                )
+                linked_gaps = any(item.startswith(f"issue:{linked_ref}:") for item in gaps)
+                if not linked_closed or linked_gaps:
+                    gaps.append(
+                        f"issue:{issue['issue_ref']}:attack_linked_candidate_not_closed:{topic['route_id']}"
+                    )
     return issue_reports
 
 
@@ -574,6 +1143,9 @@ def validate_route(path: Path) -> dict:
         raise RouteGateError("receipt_json_invalid") from error
     validate_obj("consultation-route-receipt", route)
     gaps: list[str] = []
+    validate_privacy_minimisation(route)
+    if strict_receipt(route):
+        validate_abstract_revision(route, gaps)
     required_operation_ids = required_operations_for(route)
     registry = load_registry()
     check_c27_records(route, registry, gaps)

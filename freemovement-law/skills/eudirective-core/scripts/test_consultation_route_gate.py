@@ -145,6 +145,86 @@ def make_controlled_receipt(*, coverage="partial", signal_id="external_service_p
     return receipt
 
 
+def make_strict_controlled_receipt(*, coverage="partial", signal_id="external_service_provider_used"):
+    """Upgrade a fictional receipt to strict 0.5 with open, explicit evidence states."""
+    receipt = make_controlled_receipt(coverage=coverage, signal_id=signal_id)
+    receipt["schema_version"] = "0.5.0"
+    receipt["invocation"]["material_change"] = False
+    issue = receipt["issues"][0]
+    requirements = issue_selector.select_issue_requirements(issue["signal_ids"])
+    issue["conditional_closure"] = {
+        "status": "predicate_open" if issue["disposition"] == "answered_conditionally" else "not_conditional",
+        "evidence_refs": [issue["evidence_ref"]] if issue["disposition"] == "answered_conditionally" else [],
+    }
+    issue["source_owner_exclusions"] = [{
+        "owner_id": owner_id,
+        "reason_code": "no_source_class_predicate_triggered",
+        "evidence_ref": issue["evidence_ref"],
+    } for owner_id in requirements["source_owner_exclusions"]]
+    issue["source_obligations"] = [{
+        "owner_id": owner_id,
+        "required_source_classes": requirement["required_classes"],
+        "policy_excluded_source_classes": requirement["excluded_classes"],
+        "status": "unavailable",
+        "evidence_ref": issue["evidence_ref"],
+        "reason_code": "source_unavailable",
+    } for owner_id, requirement in requirements["source_class_requirements"].items()
+        if requirement["required_classes"]]
+    issue["attack_angle_reviews"] = [{
+        **topic,
+        "outcome": "unresolved",
+        "evidence_ref": issue["evidence_ref"],
+        "screening": {
+            "reason_code": "evidence_missing",
+            "predicate_states": [{
+                "signal_id": issue["signal_ids"][0],
+                "state": "unknown",
+                "evidence_ref": issue["evidence_ref"],
+            }],
+        },
+    } for topic in requirements["attack_angle_topics"]]
+
+    template = receipt["c27_checks"][0]["record"]
+    c27_rows = []
+    assessment_refs = []
+    check_ids = set(requirements["check_ids"])
+    check_ids.add(template["check_id"])
+    for index, check_id in enumerate(sorted(check_ids), start=1):
+        assessment_ref = f"r_{0x1000 + index:016x}"
+        assessment_refs.append(assessment_ref)
+        c27_rows.append({
+            "scope_ref": issue["scope_ref"],
+            "assessment_ref": assessment_ref,
+            "binding_kind": "issue_specific",
+            "bound_issue_refs": [issue["issue_ref"]],
+            "record": {**template, "check_id": check_id},
+        })
+    receipt["c27_checks"] = c27_rows
+    issue["c27_assessment_refs"] = assessment_refs
+    abstract_state = {
+        "manifest_version": "0.1.0",
+        "issues": [{
+            "issue_ref": issue["issue_ref"],
+            "scope_ref": issue["scope_ref"],
+            "signal_states": [{
+                "signal_id": signal_id, "state": "present",
+            } for signal_id in issue["signal_ids"]],
+        }],
+    }
+    receipt["revision_control"] = {
+        "change_detection_status": "compared",
+        "current_abstract_state": abstract_state,
+        "previous_abstract_state": json.loads(json.dumps(abstract_state)),
+        "added_issue_refs": [],
+        "removed_issue_refs": [],
+        "changed_issue_refs": [],
+        "affected_scope_refs": [],
+        "reassessed_scope_refs": [],
+        "removed_issue_reviews": [],
+    }
+    return receipt
+
+
 class RouteGateTests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory(prefix="fm-route-test-")
@@ -243,7 +323,7 @@ class RouteGateTests(unittest.TestCase):
         self.assertTrue(any("attack_angle_topic_unresolved" in item for item in outstanding))
 
     def test_controlled_release_withholds_comprehensive_answer_with_open_work(self):
-        receipt = make_controlled_receipt(coverage="comprehensive")
+        receipt = make_strict_controlled_receipt(coverage="comprehensive")
         receipt["source_ledger"].update(
             response_tracking="model_declared", conversation_tracking="model_declared"
         )
@@ -305,7 +385,7 @@ class RouteGateTests(unittest.TestCase):
         ))
 
     def test_controlled_release_emits_only_the_exact_checked_partial_answer(self):
-        receipt = make_controlled_receipt(coverage="partial")
+        receipt = make_strict_controlled_receipt(coverage="partial")
         self.write_receipt(receipt)
         gate = self.run_gate()
         self.assertEqual(gate.returncode, 0, gate.stderr)
@@ -322,7 +402,7 @@ class RouteGateTests(unittest.TestCase):
         self.assertEqual(rejected.stdout, b"")
 
     def test_controlled_release_detects_answer_change_between_validation_passes(self):
-        receipt = make_controlled_receipt(coverage="partial")
+        receipt = make_strict_controlled_receipt(coverage="partial")
         self.write_receipt(receipt)
         gate = self.run_gate()
         self.assertEqual(gate.returncode, 0, gate.stderr)
@@ -352,7 +432,7 @@ class RouteGateTests(unittest.TestCase):
         answer.write_text("Synthetic answer\n", encoding="utf-8")
         rejected = self.run_controlled_release(answer=answer)
         self.assertEqual(rejected.returncode, 2)
-        self.assertIn(b"controlled_release_requires_receipt_0_4_0", rejected.stderr)
+        self.assertIn(b"controlled_release_requires_receipt_0_5_0", rejected.stderr)
         self.assertEqual(rejected.stdout, b"")
 
     def test_priority_pathway_is_bound_to_c27_checks_and_c5d_catalogue(self):
@@ -449,7 +529,7 @@ class RouteGateTests(unittest.TestCase):
         self.write_receipt(receipt)
         result = self.run_gate()
         self.assertEqual(result.returncode, 2)
-        self.assertIn("path_outside_allowed_root", result.stderr)
+        self.assertIn("path_component_not_allowed", result.stderr)
 
     def test_failed_research_validator_cannot_be_declared_verified(self):
         receipt = make_receipt()

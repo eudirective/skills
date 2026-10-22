@@ -31,8 +31,8 @@ Give the substantive answer priority. Use the concise response pattern in `refer
 Before substantive work, on the first freemovement-law skill invocation in this conversation, read `eudirective-core/references/session-version-check.md` and perform its read-only once-per-conversation version comparison. On mismatch, remind the user to check for and manually install an available update; state that this check does not update the plugin. Report only affected components and exact installed/GitHub values. If the check is unsuccessful, explain that update availability could not be confirmed. Do not report a mismatch-free check. Continue the requested work regardless of the result. Skip additional checks in the same conversation unless expressly requested; if this skill is not the core, load the core's referenced instructions first. This checks package versions only, not legal-source validity.
 
 ## Version and Status
-- Current version: `0.56.0`
-- Last updated: `2026-10-22`
+- Current version: `0.57.0`
+- Last updated: `2026-10-23`
 - Status: read-only applicant-facing guidance for user-provided real or fictional accounts; controlled scripts still restrict private-data intake and external actions.
 - Inter-skill contract: `0.2.0` (C3 development freeze; not portfolio v1.0).
 - Element model: `0.2.0`.
@@ -45,7 +45,7 @@ For every visible response or report produced while using this skill, announce t
 
 On the first response of a conversation, place this after the required first-response notice above:
 ```text
-Skill: eudirective-core v0.56.0
+Skill: eudirective-core v0.57.0
 ```
 
 ## Ordinary-consultation routing (model-led)
@@ -60,7 +60,7 @@ Derive the metric counts only from the material issue rows and recorded disposit
 
 For each issue card, show its plain-language conclusion/status, supporting evidence or source basis, selected C27 IDs/status/method, and—when partial, open, unavailable or not assessed—the exact missing item and its effect. Keep execution cards separate from issue conclusions. Show operations and validators with their actual status, evidence/result and reason; distinguish model-reported review from an observed tool/script result. Preserve every required record, module-use row, source ledger row and provenance count even when the top summary is short. Keep the substantive answer before the board.
 
-Show the selected C27 checks and the required, triggered, and not-triggered operations that matter to this response. Distinguish model-led review, source review, and an actually executed script/tool. Say an operation ran only when the current chat contains an observed execution result; reading instructions, naming an engine, or reasoning about its purpose is not execution. Real applicant facts remain in the conversation and must not be sent to synthetic-only case scripts. The local route receipt and release scripts are optional structural tools for maintainers; schema 0.4.0 supports a one-call `controlled-release` command for generalized, non-identifying artifacts, but ordinary ChatGPT responses do not invoke it automatically. Do not claim that a receipt, board, source read, module selection, or final answer was independently validated unless a real validator or trusted host event produced that result. Skill instructions cannot force the host to show the board or block answer release. See `references/consultation-dashboard-runtime-assessment.md` for the actual capability boundary, `references/consultation-dashboard-live-test-plan.md` for the deferred manual display review, and `references/consultation-route-gate.md` for the local receipt boundary.
+Show the selected C27 checks and the required, triggered, and not-triggered operations that matter to this response. Distinguish model-led review, source review, and an actually executed script/tool. Say an operation ran only when the current chat contains an observed execution result; reading instructions, naming an engine, or reasoning about its purpose is not execution. Real applicant facts remain in the conversation and must not be sent to synthetic-only case scripts. The local route receipt and release scripts are optional structural tools for maintainers; strict schema 0.5.0 supports per-issue C27 assessment bindings, policy-derived source classes, explicit attack-screen traces, abstract revision comparison, and a one-call `controlled-release` command for generalized, non-identifying artifacts. Production routing and pathway metadata remain pending independent review, so strict comprehensive release remains blocked in production configuration. Ordinary ChatGPT responses do not invoke the local command automatically. Do not claim that a receipt, board, source read, module selection, or final answer was independently validated unless a real validator or trusted host event produced that result. Skill instructions cannot force the host to show the board or block answer release. See `references/consultation-dashboard-runtime-assessment.md` for the actual capability boundary, `references/consultation-dashboard-live-test-plan.md` for the deferred manual display review, and `references/consultation-route-gate.md` for the local receipt boundary.
 
 ## Source use and currentness
 
