@@ -252,7 +252,7 @@ def unresolved_issue_refs(route: dict) -> set[str]:
     result = set()
     for issue in route.get("issues", []):
         disposition_open = issue.get("disposition") in UNRESOLVED_ISSUES
-        attack_open = any(
+        attack_open = route.get("schema_version") == "0.5.0" and any(
             item.get("outcome") == "unresolved"
             for item in issue.get("attack_angle_reviews", [])
         )
