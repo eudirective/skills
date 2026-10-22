@@ -1,0 +1,1033 @@
+{
+  "schema": "freemovement-source-class-policy/0.1.0",
+  "review_status": "pending_independent_review",
+  "description": "Minimum source classes derived from existing consultation routes, issue owners and declared abstract signals. This policy is not a legal rule or proof that a source is sufficient.",
+  "rules": [
+    {
+      "route_id": "directive_personal_and_territorial_applicability",
+      "owner_id": "eu_common_core",
+      "required_classes": [
+        "eu_binding_law"
+      ],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "directive_scope_question",
+            "family_relationship_question",
+            "movement_or_cross_border_context"
+          ],
+          "require_classes": [
+            "case_law"
+          ],
+          "reason_code": "case_law_context_triggered"
+        }
+      ],
+      "excluded_classes": [
+        {
+          "source_class": "national_binding_law",
+          "reason_code": "national_law_belongs_to_member_state_owner"
+        },
+        {
+          "source_class": "procedural_rule",
+          "reason_code": "national_procedure_belongs_to_member_state_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "directive_personal_and_territorial_applicability",
+      "owner_id": "member_state_law",
+      "required_classes": [],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "movement_or_cross_border_context",
+            "returnee_context"
+          ],
+          "require_classes": [
+            "national_binding_law"
+          ],
+          "reason_code": "national_law_scope_triggered"
+        }
+      ],
+      "excluded_classes": [
+        {
+          "source_class": "eu_binding_law",
+          "reason_code": "eu_common_law_belongs_to_core_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "eu_citizen_accompanying_or_joining",
+      "owner_id": "eu_common_core",
+      "required_classes": [
+        "eu_binding_law"
+      ],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "accompanying_or_joining_question",
+            "family_relationship_question"
+          ],
+          "require_classes": [
+            "case_law"
+          ],
+          "reason_code": "case_law_context_triggered"
+        }
+      ],
+      "excluded_classes": [
+        {
+          "source_class": "national_binding_law",
+          "reason_code": "national_law_belongs_to_member_state_owner"
+        },
+        {
+          "source_class": "procedural_rule",
+          "reason_code": "national_procedure_belongs_to_member_state_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "eu_citizen_accompanying_or_joining",
+      "owner_id": "member_state_law",
+      "required_classes": [],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "returnee_context"
+          ],
+          "require_classes": [
+            "national_binding_law"
+          ],
+          "reason_code": "national_law_scope_triggered"
+        }
+      ],
+      "excluded_classes": [
+        {
+          "source_class": "eu_binding_law",
+          "reason_code": "eu_common_law_belongs_to_core_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "prior_refusal_and_legal_status_change",
+      "owner_id": "eu_common_core",
+      "required_classes": [
+        "eu_binding_law"
+      ],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "formal_refusal_issued",
+            "prior_refusal_or_status_change"
+          ],
+          "require_classes": [
+            "case_law"
+          ],
+          "reason_code": "case_law_context_triggered"
+        },
+        {
+          "when_any_signal": [
+            "formal_refusal_issued",
+            "prior_refusal_or_status_change"
+          ],
+          "require_classes": [
+            "contrary_authority"
+          ],
+          "reason_code": "adverse_or_remedy_issue_triggered"
+        }
+      ],
+      "excluded_classes": [
+        {
+          "source_class": "national_binding_law",
+          "reason_code": "national_law_belongs_to_member_state_owner"
+        },
+        {
+          "source_class": "procedural_rule",
+          "reason_code": "national_procedure_belongs_to_member_state_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "prior_refusal_and_legal_status_change",
+      "owner_id": "member_state_law",
+      "required_classes": [],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "formal_refusal_issued",
+            "prior_refusal_or_status_change"
+          ],
+          "require_classes": [
+            "national_binding_law"
+          ],
+          "reason_code": "national_law_scope_triggered"
+        },
+        {
+          "when_any_signal": [
+            "formal_refusal_issued",
+            "prior_refusal_or_status_change"
+          ],
+          "require_classes": [
+            "case_law"
+          ],
+          "reason_code": "national_decision_or_remedy_triggered"
+        },
+        {
+          "when_any_signal": [
+            "formal_refusal_issued"
+          ],
+          "require_classes": [
+            "contrary_authority"
+          ],
+          "reason_code": "adverse_or_remedy_issue_triggered"
+        }
+      ],
+      "excluded_classes": [
+        {
+          "source_class": "eu_binding_law",
+          "reason_code": "eu_common_law_belongs_to_core_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "member_state_versus_eu_swiss_framework",
+      "owner_id": "eu_swiss_framework",
+      "required_classes": [
+        "eu_binding_law"
+      ],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "family_relationship_question",
+            "swiss_free_movement_framework_question"
+          ],
+          "require_classes": [
+            "case_law"
+          ],
+          "reason_code": "treaty_interpretation_triggered"
+        },
+        {
+          "when_any_signal": [
+            "swiss_free_movement_framework_question"
+          ],
+          "require_classes": [
+            "official_guidance"
+          ],
+          "reason_code": "treaty_guidance_relevant"
+        }
+      ],
+      "excluded_classes": [
+        {
+          "source_class": "national_binding_law",
+          "reason_code": "national_implementation_requires_member_state_owner"
+        },
+        {
+          "source_class": "procedural_rule",
+          "reason_code": "national_procedure_requires_member_state_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "member_state_versus_eu_swiss_framework",
+      "owner_id": "member_state_law",
+      "required_classes": [],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "formal_refusal_issued",
+            "swiss_free_movement_framework_question"
+          ],
+          "require_classes": [
+            "national_binding_law"
+          ],
+          "reason_code": "national_law_scope_triggered"
+        },
+        {
+          "when_any_signal": [
+            "formal_refusal_issued"
+          ],
+          "require_classes": [
+            "case_law"
+          ],
+          "reason_code": "national_decision_or_remedy_triggered"
+        },
+        {
+          "when_any_signal": [
+            "formal_refusal_issued"
+          ],
+          "require_classes": [
+            "contrary_authority"
+          ],
+          "reason_code": "adverse_or_remedy_issue_triggered"
+        }
+      ],
+      "excluded_classes": [
+        {
+          "source_class": "eu_binding_law",
+          "reason_code": "eu_common_law_belongs_to_core_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "pre_lodgement_obstruction_and_appointment_access",
+      "owner_id": "applicant_country_operations",
+      "required_classes": [
+        "official_guidance"
+      ],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "appointment_delay",
+            "pre_lodgement_access_obstruction"
+          ],
+          "require_classes": [
+            "procedural_rule"
+          ],
+          "reason_code": "application_channel_or_timing_triggered"
+        }
+      ],
+      "excluded_classes": [
+        {
+          "source_class": "case_law",
+          "reason_code": "legal_interpretation_belongs_to_legal_source_owner"
+        },
+        {
+          "source_class": "contrary_authority",
+          "reason_code": "legal_interpretation_belongs_to_legal_source_owner"
+        },
+        {
+          "source_class": "eu_binding_law",
+          "reason_code": "eu_common_law_belongs_to_core_owner"
+        },
+        {
+          "source_class": "national_binding_law",
+          "reason_code": "national_law_belongs_to_member_state_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "pre_lodgement_obstruction_and_appointment_access",
+      "owner_id": "eu_common_core",
+      "required_classes": [
+        "eu_binding_law"
+      ],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "appointment_delay",
+            "pre_lodgement_access_obstruction"
+          ],
+          "require_classes": [
+            "official_guidance"
+          ],
+          "reason_code": "operational_guidance_relevant"
+        }
+      ],
+      "excluded_classes": [
+        {
+          "source_class": "national_binding_law",
+          "reason_code": "national_law_belongs_to_member_state_owner"
+        },
+        {
+          "source_class": "procedural_rule",
+          "reason_code": "national_procedure_belongs_to_member_state_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "pre_lodgement_obstruction_and_appointment_access",
+      "owner_id": "member_state_law",
+      "required_classes": [],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "appointment_delay",
+            "pre_lodgement_access_obstruction"
+          ],
+          "require_classes": [
+            "national_binding_law"
+          ],
+          "reason_code": "national_law_scope_triggered"
+        },
+        {
+          "when_any_signal": [
+            "appointment_delay",
+            "pre_lodgement_access_obstruction"
+          ],
+          "require_classes": [
+            "procedural_rule"
+          ],
+          "reason_code": "national_procedure_triggered"
+        },
+        {
+          "when_any_signal": [
+            "pre_lodgement_access_obstruction"
+          ],
+          "require_classes": [
+            "official_guidance"
+          ],
+          "reason_code": "national_guidance_relevant"
+        }
+      ],
+      "excluded_classes": [
+        {
+          "source_class": "eu_binding_law",
+          "reason_code": "eu_common_law_belongs_to_core_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "external_service_provider_and_fees",
+      "owner_id": "applicant_country_operations",
+      "required_classes": [
+        "official_guidance"
+      ],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "external_service_provider_used"
+          ],
+          "require_classes": [
+            "procedural_rule"
+          ],
+          "reason_code": "application_channel_or_timing_triggered"
+        }
+      ],
+      "excluded_classes": [
+        {
+          "source_class": "case_law",
+          "reason_code": "legal_interpretation_belongs_to_legal_source_owner"
+        },
+        {
+          "source_class": "contrary_authority",
+          "reason_code": "legal_interpretation_belongs_to_legal_source_owner"
+        },
+        {
+          "source_class": "eu_binding_law",
+          "reason_code": "eu_common_law_belongs_to_core_owner"
+        },
+        {
+          "source_class": "national_binding_law",
+          "reason_code": "national_law_belongs_to_member_state_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "external_service_provider_and_fees",
+      "owner_id": "eu_common_core",
+      "required_classes": [
+        "eu_binding_law"
+      ],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "external_service_provider_used"
+          ],
+          "require_classes": [
+            "official_guidance"
+          ],
+          "reason_code": "operational_guidance_relevant"
+        },
+        {
+          "when_any_signal": [
+            "provider_fee_disputed"
+          ],
+          "require_classes": [
+            "contrary_authority"
+          ],
+          "reason_code": "adverse_or_remedy_issue_triggered"
+        }
+      ],
+      "excluded_classes": [
+        {
+          "source_class": "national_binding_law",
+          "reason_code": "national_law_belongs_to_member_state_owner"
+        },
+        {
+          "source_class": "procedural_rule",
+          "reason_code": "national_procedure_belongs_to_member_state_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "external_service_provider_and_fees",
+      "owner_id": "member_state_law",
+      "required_classes": [],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "external_service_provider_used",
+            "provider_fee_disputed"
+          ],
+          "require_classes": [
+            "national_binding_law"
+          ],
+          "reason_code": "national_law_scope_triggered"
+        },
+        {
+          "when_any_signal": [
+            "external_service_provider_used"
+          ],
+          "require_classes": [
+            "procedural_rule"
+          ],
+          "reason_code": "national_procedure_triggered"
+        }
+      ],
+      "excluded_classes": [
+        {
+          "source_class": "eu_binding_law",
+          "reason_code": "eu_common_law_belongs_to_core_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "digital_only_channel_and_accessibility",
+      "owner_id": "applicant_country_operations",
+      "required_classes": [
+        "official_guidance"
+      ],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "digital_only_access_requirement"
+          ],
+          "require_classes": [
+            "procedural_rule"
+          ],
+          "reason_code": "application_channel_or_timing_triggered"
+        }
+      ],
+      "excluded_classes": [
+        {
+          "source_class": "case_law",
+          "reason_code": "legal_interpretation_belongs_to_legal_source_owner"
+        },
+        {
+          "source_class": "contrary_authority",
+          "reason_code": "legal_interpretation_belongs_to_legal_source_owner"
+        },
+        {
+          "source_class": "eu_binding_law",
+          "reason_code": "eu_common_law_belongs_to_core_owner"
+        },
+        {
+          "source_class": "national_binding_law",
+          "reason_code": "national_law_belongs_to_member_state_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "digital_only_channel_and_accessibility",
+      "owner_id": "eu_common_core",
+      "required_classes": [
+        "eu_binding_law"
+      ],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "digital_only_access_requirement"
+          ],
+          "require_classes": [
+            "official_guidance"
+          ],
+          "reason_code": "operational_guidance_relevant"
+        }
+      ],
+      "excluded_classes": [
+        {
+          "source_class": "national_binding_law",
+          "reason_code": "national_law_belongs_to_member_state_owner"
+        },
+        {
+          "source_class": "procedural_rule",
+          "reason_code": "national_procedure_belongs_to_member_state_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "digital_only_channel_and_accessibility",
+      "owner_id": "member_state_law",
+      "required_classes": [],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "digital_only_access_requirement"
+          ],
+          "require_classes": [
+            "national_binding_law"
+          ],
+          "reason_code": "national_law_scope_triggered"
+        },
+        {
+          "when_any_signal": [
+            "digital_only_access_requirement"
+          ],
+          "require_classes": [
+            "procedural_rule"
+          ],
+          "reason_code": "national_procedure_triggered"
+        },
+        {
+          "when_any_signal": [
+            "digital_only_access_requirement"
+          ],
+          "require_classes": [
+            "official_guidance"
+          ],
+          "reason_code": "national_guidance_relevant"
+        }
+      ],
+      "excluded_classes": [
+        {
+          "source_class": "eu_binding_law",
+          "reason_code": "eu_common_law_belongs_to_core_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "ordinary_document_list_or_eu_family_requirements",
+      "owner_id": "applicant_country_operations",
+      "required_classes": [
+        "official_guidance"
+      ],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "ordinary_document_list_or_eu_family_document_question"
+          ],
+          "require_classes": [
+            "procedural_rule"
+          ],
+          "reason_code": "application_channel_or_timing_triggered"
+        }
+      ],
+      "excluded_classes": [
+        {
+          "source_class": "case_law",
+          "reason_code": "legal_interpretation_belongs_to_legal_source_owner"
+        },
+        {
+          "source_class": "contrary_authority",
+          "reason_code": "legal_interpretation_belongs_to_legal_source_owner"
+        },
+        {
+          "source_class": "eu_binding_law",
+          "reason_code": "eu_common_law_belongs_to_core_owner"
+        },
+        {
+          "source_class": "national_binding_law",
+          "reason_code": "national_law_belongs_to_member_state_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "ordinary_document_list_or_eu_family_requirements",
+      "owner_id": "eu_common_core",
+      "required_classes": [
+        "eu_binding_law"
+      ],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "ordinary_document_list_or_eu_family_document_question"
+          ],
+          "require_classes": [
+            "official_guidance"
+          ],
+          "reason_code": "operational_guidance_relevant"
+        }
+      ],
+      "excluded_classes": [
+        {
+          "source_class": "national_binding_law",
+          "reason_code": "national_law_belongs_to_member_state_owner"
+        },
+        {
+          "source_class": "procedural_rule",
+          "reason_code": "national_procedure_belongs_to_member_state_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "ordinary_document_list_or_eu_family_requirements",
+      "owner_id": "member_state_law",
+      "required_classes": [],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "document_demand",
+            "missing_document",
+            "ordinary_document_list_or_eu_family_document_question"
+          ],
+          "require_classes": [
+            "national_binding_law"
+          ],
+          "reason_code": "national_law_scope_triggered"
+        },
+        {
+          "when_any_signal": [
+            "ordinary_document_list_or_eu_family_document_question"
+          ],
+          "require_classes": [
+            "procedural_rule"
+          ],
+          "reason_code": "national_procedure_triggered"
+        }
+      ],
+      "excluded_classes": [
+        {
+          "source_class": "eu_binding_law",
+          "reason_code": "eu_common_law_belongs_to_core_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "processing_delay_or_clock_trigger",
+      "owner_id": "applicant_country_operations",
+      "required_classes": [
+        "official_guidance"
+      ],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "processing_delay_or_deadline_question"
+          ],
+          "require_classes": [
+            "procedural_rule"
+          ],
+          "reason_code": "application_channel_or_timing_triggered"
+        }
+      ],
+      "excluded_classes": [
+        {
+          "source_class": "case_law",
+          "reason_code": "legal_interpretation_belongs_to_legal_source_owner"
+        },
+        {
+          "source_class": "contrary_authority",
+          "reason_code": "legal_interpretation_belongs_to_legal_source_owner"
+        },
+        {
+          "source_class": "eu_binding_law",
+          "reason_code": "eu_common_law_belongs_to_core_owner"
+        },
+        {
+          "source_class": "national_binding_law",
+          "reason_code": "national_law_belongs_to_member_state_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "processing_delay_or_clock_trigger",
+      "owner_id": "eu_common_core",
+      "required_classes": [
+        "eu_binding_law"
+      ],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "processing_delay_or_deadline_question"
+          ],
+          "require_classes": [
+            "official_guidance"
+          ],
+          "reason_code": "operational_guidance_relevant"
+        },
+        {
+          "when_any_signal": [
+            "appeal_deadline_risk"
+          ],
+          "require_classes": [
+            "contrary_authority"
+          ],
+          "reason_code": "adverse_or_remedy_issue_triggered"
+        }
+      ],
+      "excluded_classes": [
+        {
+          "source_class": "national_binding_law",
+          "reason_code": "national_law_belongs_to_member_state_owner"
+        },
+        {
+          "source_class": "procedural_rule",
+          "reason_code": "national_procedure_belongs_to_member_state_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "processing_delay_or_clock_trigger",
+      "owner_id": "member_state_law",
+      "required_classes": [],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "appeal_deadline_risk",
+            "processing_delay_or_deadline_question"
+          ],
+          "require_classes": [
+            "national_binding_law"
+          ],
+          "reason_code": "national_law_scope_triggered"
+        },
+        {
+          "when_any_signal": [
+            "appeal_deadline_risk",
+            "processing_delay_or_deadline_question"
+          ],
+          "require_classes": [
+            "procedural_rule"
+          ],
+          "reason_code": "national_procedure_triggered"
+        },
+        {
+          "when_any_signal": [
+            "appeal_deadline_risk"
+          ],
+          "require_classes": [
+            "case_law"
+          ],
+          "reason_code": "national_decision_or_remedy_triggered"
+        },
+        {
+          "when_any_signal": [
+            "processing_delay_or_deadline_question"
+          ],
+          "require_classes": [
+            "official_guidance"
+          ],
+          "reason_code": "national_guidance_relevant"
+        },
+        {
+          "when_any_signal": [
+            "appeal_deadline_risk"
+          ],
+          "require_classes": [
+            "contrary_authority"
+          ],
+          "reason_code": "adverse_or_remedy_issue_triggered"
+        }
+      ],
+      "excluded_classes": [
+        {
+          "source_class": "eu_binding_law",
+          "reason_code": "eu_common_law_belongs_to_core_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "remedy_or_supervisory_track",
+      "owner_id": "eu_common_core",
+      "required_classes": [
+        "eu_binding_law"
+      ],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "formal_refusal_issued"
+          ],
+          "require_classes": [
+            "case_law"
+          ],
+          "reason_code": "case_law_context_triggered"
+        },
+        {
+          "when_any_signal": [
+            "appeal_deadline_risk",
+            "formal_refusal_issued",
+            "remedy_or_solvit_or_supervisory_complaint"
+          ],
+          "require_classes": [
+            "contrary_authority"
+          ],
+          "reason_code": "adverse_or_remedy_issue_triggered"
+        }
+      ],
+      "excluded_classes": [
+        {
+          "source_class": "national_binding_law",
+          "reason_code": "national_law_belongs_to_member_state_owner"
+        },
+        {
+          "source_class": "procedural_rule",
+          "reason_code": "national_procedure_belongs_to_member_state_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "remedy_or_supervisory_track",
+      "owner_id": "member_state_law",
+      "required_classes": [],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "appeal_deadline_risk",
+            "formal_refusal_issued",
+            "remedy_or_solvit_or_supervisory_complaint"
+          ],
+          "require_classes": [
+            "national_binding_law"
+          ],
+          "reason_code": "national_law_scope_triggered"
+        },
+        {
+          "when_any_signal": [
+            "appeal_deadline_risk",
+            "remedy_or_solvit_or_supervisory_complaint"
+          ],
+          "require_classes": [
+            "procedural_rule"
+          ],
+          "reason_code": "national_procedure_triggered"
+        },
+        {
+          "when_any_signal": [
+            "appeal_deadline_risk",
+            "formal_refusal_issued",
+            "remedy_or_solvit_or_supervisory_complaint"
+          ],
+          "require_classes": [
+            "case_law"
+          ],
+          "reason_code": "national_decision_or_remedy_triggered"
+        },
+        {
+          "when_any_signal": [
+            "remedy_or_solvit_or_supervisory_complaint"
+          ],
+          "require_classes": [
+            "official_guidance"
+          ],
+          "reason_code": "national_guidance_relevant"
+        },
+        {
+          "when_any_signal": [
+            "appeal_deadline_risk",
+            "formal_refusal_issued",
+            "remedy_or_solvit_or_supervisory_complaint"
+          ],
+          "require_classes": [
+            "contrary_authority"
+          ],
+          "reason_code": "adverse_or_remedy_issue_triggered"
+        }
+      ],
+      "excluded_classes": [
+        {
+          "source_class": "eu_binding_law",
+          "reason_code": "eu_common_law_belongs_to_core_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "personal_data_protection",
+      "owner_id": "eu_data_protection",
+      "required_classes": [
+        "eu_binding_law"
+      ],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "personal_data_processing_question"
+          ],
+          "require_classes": [
+            "procedural_rule"
+          ],
+          "reason_code": "supervisory_or_procedure_triggered"
+        },
+        {
+          "when_any_signal": [
+            "personal_data_processing_question"
+          ],
+          "require_classes": [
+            "case_law"
+          ],
+          "reason_code": "data_protection_interpretation_triggered"
+        }
+      ],
+      "excluded_classes": [
+        {
+          "source_class": "national_binding_law",
+          "reason_code": "national_supervisory_procedure_belongs_to_member_state_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "personal_data_protection",
+      "owner_id": "member_state_law",
+      "required_classes": [],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "ephemeral_evidence_at_risk",
+            "personal_data_processing_question"
+          ],
+          "require_classes": [
+            "national_binding_law"
+          ],
+          "reason_code": "national_law_scope_triggered"
+        },
+        {
+          "when_any_signal": [
+            "ephemeral_evidence_at_risk",
+            "personal_data_processing_question"
+          ],
+          "require_classes": [
+            "procedural_rule"
+          ],
+          "reason_code": "national_procedure_triggered"
+        }
+      ],
+      "excluded_classes": [
+        {
+          "source_class": "eu_binding_law",
+          "reason_code": "eu_common_law_belongs_to_core_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "ephemeral_evidence_preservation",
+      "owner_id": "eu_data_protection",
+      "required_classes": [
+        "eu_binding_law"
+      ],
+      "conditional_rules": [],
+      "excluded_classes": [
+        {
+          "source_class": "national_binding_law",
+          "reason_code": "national_supervisory_procedure_belongs_to_member_state_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "ephemeral_evidence_preservation",
+      "owner_id": "member_state_law",
+      "required_classes": [],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "ephemeral_evidence_at_risk"
+          ],
+          "require_classes": [
+            "national_binding_law"
+          ],
+          "reason_code": "national_law_scope_triggered"
+        },
+        {
+          "when_any_signal": [
+            "ephemeral_evidence_at_risk"
+          ],
+          "require_classes": [
+            "procedural_rule"
+          ],
+          "reason_code": "national_procedure_triggered"
+        }
+      ],
+      "excluded_classes": [
+        {
+          "source_class": "eu_binding_law",
+          "reason_code": "eu_common_law_belongs_to_core_owner"
+        }
+      ]
+    }
+  ]
+}

@@ -37,6 +37,10 @@ jobs:
         run: python freemovement-law/skills/eudirective-core/scripts/test_issue_source_preflight.py
       - name: Test consultation route receipt gate
         run: python freemovement-law/skills/eudirective-core/scripts/test_consultation_route_gate.py
+      - name: Test P0 consultation hardening regressions
+        run: python freemovement-law/skills/eudirective-core/scripts/test_consultation_p0_regressions.py
+      - name: Test unmocked controlled-release integration
+        run: python freemovement-law/skills/eudirective-core/scripts/test_consultation_p0_integrated.py
       - name: Test invocation-aware consultation dashboard
         run: python freemovement-law/skills/eudirective-core/scripts/test_consultation_dashboard.py
       - name: Smoke-check the shared C27 check registry

@@ -1,7 +1,7 @@
 # Consultation assurance and host capability
 
 **Decision date:** 2026-10-22
-**Scope:** `freemovement-law` 0.57.0 / `eudirective-core` 0.56.0
+**Scope:** `freemovement-law` 0.58.0 / `eudirective-core` 0.57.0
 **Status:** local structural gates and the opt-in controlled-release runner are available; ChatGPT host release enforcement is not implemented or verified. Consultation routing and attack-pathway bindings remain pending independent review.
 
 ## Assurance claims
@@ -22,12 +22,18 @@ The local command is a controlled artifact workflow for generalized, non-identif
 - Research plans and source-preflight artifacts may contain only generalized legal/source questions. They are not case files, module exports, or controller stages.
 - Synthetic-only C27/C3/C5/C6/C7 tooling remains restricted to its enrolled fictional or abstract inputs. P0 does not expand those input permissions.
 - A deterministic structural result is not legal advice, a legal finding, or proof that a source supports a proposition.
+- Strict receipt 0.5.0 screens selected free-text fields for a small set of
+  obvious identifier patterns and rejects path traversal and symlinked research
+  artifacts. This is not a complete personal-data detector or an anonymity
+  guarantee. Error output is tested not to echo fixture text or filesystem
+  paths; secure temporary-file handling is not applicable to
+  `controlled-release`, which creates no temporary files.
 
 ## Existing implementation
 
 `consultation_route_gate.py` validates the declared route receipt and emits its full deterministic dashboard. It reuses the C27 registry and validator, C3 module-conformance validator, `research_gate.py`, and `issue_source_preflight.py`. The receipt records what the model says it classified or reviewed; the gate validates structure and supplied evidence references, not whether that work truly happened.
 
-`consultation_release_gate.py prepare` validates a receipt and answer artifact and creates a local digest binding. `consultation_release_gate.py release` reruns validation and emits the exact answer bytes only when the receipt, answer and validation digest still match. The schema 0.4.0 `controlled-release` command performs the strict check and exact-byte emission in one local call; it is limited to generalized, non-identifying artifacts. A skills-only ChatGPT consultation does not invoke these commands automatically. Pending independent review of routing/pathway metadata blocks strict comprehensive releases, while a partial answer may be emitted with its open work displayed.
+`consultation_release_gate.py prepare` validates a receipt and answer artifact and creates a local digest binding. `consultation_release_gate.py release` reruns validation and emits the exact answer bytes only when the receipt, answer and validation digest still match. The schema 0.5.0 `controlled-release` command performs the strict check and exact-byte emission in one local call; it is limited to generalized, non-identifying artifacts. It creates no temporary files in its release path. A skills-only ChatGPT consultation does not invoke these commands automatically. Pending independent review of routing/pathway metadata blocks strict comprehensive releases, while a partial answer may be emitted with its open work displayed.
 
 The C2 element model (`0.2.0`) and frozen C3 inter-skill contract (`0.2.0`), conformance profile (`0.2.0`), controller protocol (`0.3.0`) and element model (`0.2.0`) are outside the consultation receipt boundary and must remain unchanged.
 

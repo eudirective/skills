@@ -13,10 +13,12 @@ ordinary ChatGPT output.
 
 The input uses `references/contracts/consultation-route-receipt.schema.json`
 (0.2.0 adds invocation, source-use and dashboard records; 0.3.0 adds response
-and conversation source-discovery methods; 0.4.0 requires issue records and a
-dashboard for applicant-guidance and source-research controlled releases).
-Older 0.1.0–0.3.0 receipts remain readable by the route gate. The controlled
-release command requires 0.4.0. It records classification states, workflow
+and conversation source-discovery methods; 0.4.0 adds issue records and a
+dashboard; strict 0.5.0 adds per-issue C27 assessment bindings, policy-derived
+source classes, attack-screen predicate traces, abstract revision comparison,
+and strict provenance requirements. Receipts 0.1.0–0.4.0 remain readable for
+historical replay but are not accepted by the strict controlled-release path.
+That command requires 0.5.0. It records classification states, workflow
 IDs, C27 check IDs/statuses, reason codes, and generated opaque references
 (`r_` followed by 12–32 lowercase hex characters). It also carries constrained
 relative paths and digests needed to run local validators. Keep actual
@@ -25,19 +27,24 @@ dates, and document contents in the conversation, not in the receipt. The
 receipt can record that a classification is `recorded`, `unknown`, or
 `not_applicable` without copying its value.
 
-Free-text receipt fields such as issue titles, missing/effect explanations,
-operation reasons and source-read notes can accidentally contain personal or
-identifying details. Generalize them and keep case facts in the conversation.
-The validator does not detect or remove personal data from those fields.
+Free-text receipt fields such as missing/effect explanations, operation
+reasons and source-read notes can accidentally contain personal or identifying
+details. The strict 0.5.0 gate rejects a small set of obvious patterns (email
+addresses, long numeric identifiers, exact dates and travel-document-like
+identifiers) in selected text fields. This is a limited screening heuristic:
+it can miss identifying content and can flag harmless text. Generalize fields
+and keep case facts in the conversation; the check does not guarantee
+anonymity.
 
 Research artifact paths in the receipt are relative to the receipt's directory
-and must remain inside it. They must identify only generalized,
+and must remain inside it. Absolute paths, path traversal and symlinked
+components are rejected. They must identify only generalized,
 non-identifying source-research plans and bundles. Module manifest/export paths
 are relative to the installed plugin package. The gate reads these artifacts
 and emits a JSON summary; it does not write or transmit them. It does not scan
-filenames, artifact contents or free-text receipt fields for personal or
-identifying information, so the privacy restriction is an operator requirement
-rather than an enforced check.
+filenames or full artifact contents for arbitrary personal information, so the
+privacy restriction remains an operator requirement beyond the limited strict
+text-field heuristic.
 
 ## Checks performed
 
@@ -73,20 +80,55 @@ rather than an enforced check.
   `source_missing` and `fact_missing` dispositions remain open for a
   comprehensive claim. This is additive: older 0.1 receipts without `issues`
   retain their prior validation behavior.
-- For 0.4.0, derives required C27 check IDs, source-owner IDs, and attack-review
-  topics from each declared issue's signal IDs using the existing routing
-  matrix. Every derived source owner and topic must have a receipt record.
-  Owner-specific source tasks must bind to the same opaque issue and scope
-  references in a validated 0.3.0 source preflight, with the same declared
-  source classes. Missing or open source work, unresolved attack topics,
-  unlinked candidate issues, or missing routed checks block `comprehensive` and
-  remain visible in the dashboard.
+- For strict 0.5.0, every C27 occurrence has an opaque assessment reference and
+  is bound either to exactly one issue or to an explicitly shared proceeding
+  set. Duplicate `(scope, check, issue)` occurrences are rejected even when
+  they use different assessment references. Issue-specific checks cannot be
+  borrowed from a separate issue in the same proceeding.
+- For strict 0.5.0, derives required C27 check IDs, source-owner IDs,
+  source-class requirements, exclusions and attack-review topics from each
+  declared issue's route/signal predicates using the existing routing matrix
+  and the versioned `consultation-source-class-policy.json`. Conditional
+  classes are required only when their declared route/signal predicates apply;
+  an EU-only route does not force national binding law merely because a
+  Member-State owner is possible. Exclusions require an explicit reason and
+  evidence reference. Every derived obligation must have a receipt record.
+  Owner-specific source tasks bind to the same opaque issue and scope in a
+  validated 0.3.0 source preflight. Missing or open source work, unresolved
+  attack topics, unlinked candidate issues, or missing routed checks block
+  `comprehensive` and remain visible in the dashboard.
+- Every strict 0.5.0 attack-topic record repeats selector-derived route
+  triggers and records their states separately from adverse predicates. A
+  route trigger selects review; it does not prove the adverse condition. For
+  a mapped pathway, `adverse_predicate_states` must bind to the pathway's
+  declared `adverse_signal`; only a `present` state can support a candidate.
+  For generic topics without a topic-specific adverse-predicate mapping, the
+  only accepted result is `unresolved` with reason `predicate_unmapped`. Such
+  topics stay open, appear as missing in the dashboard, and block a
+  `comprehensive` claim. In particular, a neutral route signal marked present
+  cannot create a candidate. A linked candidate remains open if any required
+  C27 assessment bound to its target issue is missing or has a non-closed
+  status; the target issue's open check status is recorded separately.
+- Dashboard outcome counts distinguish `evidence_resolved` and
+  `qualified_condition` conditional answers from partial/open issues. Their
+  closure status and evidence references appear on the issue card, and the
+  dashboard's unresolved-issue list is reconciled against the route gate.
+  A separate open issue-level check keeps the issue partial even when its
+  conditional predicate is resolved.
 - The current routing matrix and topic-pathway bindings are explicitly marked
   `pending_independent_review`. The strict gate therefore reports outstanding
   review items and blocks a `comprehensive` claim until a human reviewer has
   reviewed those mappings and their false-positive boundaries. A successful
   structural test does not clear that review status.
-- For a 0.4.0 receipt with `invocation.material_change=true`,
+- For a 0.5.0 receipt, compares a privacy-minimised abstract state manifest
+  containing opaque issue/scope references and registered signal IDs with
+  categorical `present`, `absent`, or `unknown` states. The caller-declared
+  `material_change` flag cannot suppress a detected state change. Changed,
+  added or removed scopes must be reconciled against affected and reassessed
+  references; affected C27, source and attack evidence must be current-response
+  evidence. Missing state comparison remains open. This does not infer changes
+  from real conversation narratives.
+- For legacy 0.4.0 receipts with `invocation.material_change=true`,
   `revision_control.affected_scope_refs` identifies prior scope states as
   invalidated. Each affected scope must appear in `reassessed_scope_refs` after
   its current issue checks and linked obligations have been reviewed again.
@@ -133,7 +175,7 @@ rather than an enforced check.
   rechecks those exact bytes before release. This is a local controller path,
   not a host release gate.
 - `consultation_release_gate.py controlled-release` is the strict one-call
-  path for 0.4.0 applicant-guidance or source-research artifacts. It requires a
+  path for 0.5.0 applicant-guidance or source-research artifacts. It requires a
   validated full dashboard, rechecks receipt and answer bytes immediately
   before output, and emits no answer bytes when validation fails. A partial
   answer can pass with open work shown; an unsupported comprehensive claim is
@@ -170,10 +212,11 @@ required check selection for each declared issue/scope. It cannot determine
 whether the model omitted an issue, chose an incomplete signal set, or attached
 an accurate disposition.
 
-For 0.4.0 it also checks declared source-owner coverage and every topic named by
-the existing routing matrix. Source classes are selected in the receipt and
-matched exactly to the preflight; this does not prove that the model selected
-every legally relevant source class. The attack screen remains model-declared.
+For 0.5.0 it derives declared source-owner and source-class coverage from the
+versioned policy and checks every topic named by the existing routing matrix.
+This does not prove that the policy or declared signal set includes every
+legally relevant source class or issue. The attack screen remains
+model-declared.
 
 Resolving an ID means only that the receipt
 declares it in the evidence index; only local artifact digests and outputs of
