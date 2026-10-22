@@ -571,6 +571,7 @@ def select_issue_requirements(
                 }
 
     pathway_map = validate_pathway_bindings(matrix, registry, signal_defs)
+    pathway_bound_route_topics: set[tuple[str, str]] = set()
     for pathway_id, pathway in pathway_map.items():
         for binding in pathway["consultation_bindings"]:
             route_id = binding["route_id"]
@@ -595,7 +596,23 @@ def select_issue_requirements(
                 # route trigger that selected the pathway for review.
                 "adverse_predicate_ids": ["pathway:" + pathway_id],
             }
-            topics[(record["route_id"], record["topic"])] = record
+            route_topic_key = (route_id, topic)
+            generic_topic = topics.get(route_topic_key)
+            if generic_topic is not None and (
+                binding["when_any_signal"] == generic_topic["trigger_any_signal_ids"]
+                and binding["when_all_signal"] == generic_topic["trigger_all_signal_ids"]
+            ):
+                if route_topic_key in pathway_bound_route_topics:
+                    raise SelectionError(
+                        f"attack_topic_pathway_binding_duplicate:{route_id}:{topic}"
+                    )
+                pathway_bound_route_topics.add(route_topic_key)
+                record["route_id"] = route_id
+                record["trigger_any_signal_ids"] = generic_topic["trigger_any_signal_ids"]
+                record["trigger_all_signal_ids"] = generic_topic["trigger_all_signal_ids"]
+                topics[route_topic_key] = record
+            else:
+                topics[(record["route_id"], record["topic"])] = record
 
     source_class_requirements = derive_source_class_requirements(
         sorted(routes), normalized, matrix=matrix, root=root

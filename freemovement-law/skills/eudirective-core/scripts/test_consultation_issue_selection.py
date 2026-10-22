@@ -5,8 +5,10 @@ from __future__ import annotations
 import copy
 import json
 import sys
+import tempfile
 import unittest
 from pathlib import Path
+from unittest import mock
 
 
 SCRIPT_DIR = Path(__file__).resolve().parent
@@ -226,6 +228,96 @@ class ConsultationIssueSelectionTests(unittest.TestCase):
         self.assertEqual(
             digital_topic["adverse_predicate_ids"], ["pathway:digital_only_access"]
         )
+
+    def test_pathway_maps_generic_topic_only_on_exact_route_label_and_triggers(self) -> None:
+        pathways = selector.load_json(selector.PATHWAY_PATH)
+        pathways["topics"].append({
+            "topic_id": "synthetic_exact_generic_topic_binding",
+            "label": "territorial or personal-scope exception",
+            "coverage": "not_implemented_in_C5d_deterministic_predicates",
+            "c27_families": ["eu_scope"],
+            "consultation_bindings": [{
+                "route_id": "directive_personal_and_territorial_applicability",
+                "when_any_signal": ["directive_scope_question"],
+            }],
+            "adverse_signal": "Synthetic test-only predicate.",
+        })
+        with tempfile.TemporaryDirectory() as temporary:
+            pathway_path = Path(temporary) / "pathways.json"
+            pathway_path.write_text(json.dumps(pathways), encoding="utf-8")
+            with mock.patch.object(selector, "PATHWAY_PATH", pathway_path):
+                result = selector.select_issue_requirements(["directive_scope_question"])
+
+        matching = [
+            item for item in result["attack_angle_topics"]
+            if item["route_id"] == "directive_personal_and_territorial_applicability"
+            and item["topic"] == "territorial or personal-scope exception"
+        ]
+        self.assertEqual(len(matching), 1)
+        self.assertEqual(matching[0]["pathway_id"], "synthetic_exact_generic_topic_binding")
+        self.assertEqual(
+            matching[0]["adverse_predicate_ids"],
+            ["pathway:synthetic_exact_generic_topic_binding"],
+        )
+
+    def test_unmatched_pathway_does_not_replace_generic_route_topic(self) -> None:
+        pathways = selector.load_json(selector.PATHWAY_PATH)
+        pathways["topics"].append({
+            "topic_id": "synthetic_unmatched_generic_topic_binding",
+            "label": "territorial or personal-scope exception — altered label",
+            "coverage": "not_implemented_in_C5d_deterministic_predicates",
+            "c27_families": ["eu_scope"],
+            "consultation_bindings": [{
+                "route_id": "directive_personal_and_territorial_applicability",
+                "when_any_signal": ["directive_scope_question"],
+            }],
+            "adverse_signal": "Synthetic test-only predicate.",
+        })
+        with tempfile.TemporaryDirectory() as temporary:
+            pathway_path = Path(temporary) / "pathways.json"
+            pathway_path.write_text(json.dumps(pathways), encoding="utf-8")
+            with mock.patch.object(selector, "PATHWAY_PATH", pathway_path):
+                result = selector.select_issue_requirements(["directive_scope_question"])
+
+        generic = [
+            item for item in result["attack_angle_topics"]
+            if item["route_id"] == "directive_personal_and_territorial_applicability"
+            and item["topic"] == "territorial or personal-scope exception"
+        ]
+        separate = [
+            item for item in result["attack_angle_topics"]
+            if item.get("pathway_id") == "synthetic_unmatched_generic_topic_binding"
+        ]
+        self.assertEqual(len(generic), 1)
+        self.assertEqual(generic[0]["adverse_predicate_ids"], [])
+        self.assertEqual(len(separate), 1)
+
+    def test_duplicate_exact_pathway_bindings_are_rejected(self) -> None:
+        pathways = selector.load_json(selector.PATHWAY_PATH)
+        for topic_id in (
+            "synthetic_duplicate_generic_topic_binding_a",
+            "synthetic_duplicate_generic_topic_binding_b",
+        ):
+            pathways["topics"].append({
+                "topic_id": topic_id,
+                "label": "territorial or personal-scope exception",
+                "coverage": "not_implemented_in_C5d_deterministic_predicates",
+                "c27_families": ["eu_scope"],
+                "consultation_bindings": [{
+                    "route_id": "directive_personal_and_territorial_applicability",
+                    "when_any_signal": ["directive_scope_question"],
+                }],
+                "adverse_signal": "Synthetic test-only predicate.",
+            })
+        with tempfile.TemporaryDirectory() as temporary:
+            pathway_path = Path(temporary) / "pathways.json"
+            pathway_path.write_text(json.dumps(pathways), encoding="utf-8")
+            with mock.patch.object(selector, "PATHWAY_PATH", pathway_path):
+                with self.assertRaisesRegex(
+                    selector.SelectionError,
+                    "attack_topic_pathway_binding_duplicate:directive_personal_and_territorial_applicability:territorial or personal-scope exception",
+                ):
+                    selector.select_issue_requirements(["directive_scope_question"])
 
     def test_contradictory_positive_and_negative_signals_are_rejected(self) -> None:
         with self.assertRaisesRegex(selector.SelectionError, "contradictory_signals"):

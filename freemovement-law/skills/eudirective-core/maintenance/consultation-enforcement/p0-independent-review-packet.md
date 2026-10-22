@@ -1,7 +1,7 @@
 # P0 consultation routing: independent legal and privacy review packet
 
 **Prepared:** 2026-10-23
-**Candidate:** `freemovement-law` 0.58.0 / `eudirective-core` 0.57.0; strict consultation receipt 0.5.0
+**Candidate:** `freemovement-law` 0.58.1 / `eudirective-core` 0.57.1; strict consultation receipt 0.5.0
 **Review state:** `pending_independent_review`
 **Reviewer / date / decision:** not completed
 
@@ -12,6 +12,8 @@ This packet makes the routing and source-class rules inspectable for an independ
 ## Adverse-predicate mapping decision
 
 The strict receipt distinguishes the neutral signal that selects a route from the topic-specific condition that could support a potential-issue candidate. Existing priority pathways declare an `adverse_signal`; their screening state is recorded separately. Most general route review prompts do not yet have a mapped adverse condition. They must remain `unresolved` with reason `predicate_unmapped`, appear as missing in the dashboard, and prevent a comprehensive claim. The reviewer should either supply a justified, narrowly scoped condition for each prompt or confirm that it should remain unresolved. Do not treat the route trigger alone as evidence of an adverse condition.
+
+A maintained pathway supplies a mapping for a generic route prompt only when the route ID, exact topic label, and trigger signal sets match. The selector then records one combined route-topic review with the pathway's declared adverse predicate and C5d/C27 references; it rejects duplicate matches. Different labels or trigger sets leave the generic prompt unresolved and retain the pathway as a separate review. This is a structural matching rule, not legal approval. Review the equality requirements and every proposed adverse signal before changing production metadata.
 
 ## Route-by-route review register
 

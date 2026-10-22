@@ -5,6 +5,8 @@ It does not make live testing a maintenance-session requirement. The local
 0.5.0 validator is covered separately by synthetic tests. No supported ChatGPT
 pre-output hook is established for this skills-only plugin.
 
+**Candidate target:** `freemovement-law` 0.58.1 / `eudirective-core` 0.57.1 / route receipt 0.5.0. Verify the installed package and core versions before using this plan; a different mounted build is not evidence about this candidate.
+
 ## Setup
 
 - Start a new chat with the installed `freemovement-law` plugin available.
@@ -81,8 +83,10 @@ PYTHONDONTWRITEBYTECODE=1 python freemovement-law/skills/eudirective-core/script
 ```
 
 The suite exercises the real research, preflight, route, dashboard and
-controlled-release validators with abstract fixtures. It checks exact-byte
-release for a complete and a qualified partial receipt, and blocking for
+controlled-release validators with abstract fixtures. The complete success
+case uses synthetic test-only pathway metadata and review flags in a disposable
+copy; it does not alter production review status or assert legal correctness.
+The suite also checks exact-byte qualified partial release and blocking for
 tampered/stale artifacts, legacy 0.4.0 receipts, privacy-pattern matches,
 symlinked paths, and invalid UTF-8. This is local script evidence only; it is
 not evidence of a ChatGPT host hook.
