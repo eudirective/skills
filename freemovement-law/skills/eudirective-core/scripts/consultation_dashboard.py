@@ -701,6 +701,30 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
                 conditionally_open += 1
     partial_count = conditionally_open + disposition_counts["source_missing"] + disposition_counts["fact_missing"]
     out_of_scope_count = disposition_counts["out_of_scope"]
+    if route.get("schema_version") == "0.5.0":
+        # An unresolved mandatory attack screen keeps its issue open even when
+        # the issue's primary disposition was recorded as supported.
+        for issue in issue_records or []:
+            if not any(
+                item.get("outcome") == "unresolved"
+                for item in issue.get("attack_angle_reviews", [])
+            ):
+                continue
+            disposition = issue.get("disposition")
+            if disposition == "answered_supported":
+                disposition_counts["answered_supported"] -= 1
+                supported_count -= 1
+                partial_count += 1
+            elif disposition == "answered_conditionally":
+                closure_status = issue.get("conditional_closure", {}).get("status")
+                if (closure_status in {"evidence_resolved", "qualified_condition"}
+                        and not issue_has_open_gap(issue["issue_ref"])):
+                    conditionally_closed -= 1
+                    partial_count += 1
+            elif disposition == "out_of_scope":
+                disposition_counts["out_of_scope"] -= 1
+                out_of_scope_count -= 1
+                partial_count += 1
 
     def value_status(value: str) -> str:
         return value.replace("_", " ")

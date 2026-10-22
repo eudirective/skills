@@ -472,6 +472,8 @@ class IntegratedControlledReleaseTests(unittest.TestCase):
         self.assertTrue(any("attack_angle_predicate_unmapped" in item for item in report["outstanding"]))
         self.assertIn("no topic-specific adverse predicate is mapped", report["dashboard_preview"])
         self.assertIn("**PARTIAL**", report["dashboard_preview"])
+        self.assertIn("Supported: **0 (0%)**", report["dashboard_preview"])
+        self.assertIn("Partial/open: **1 (100%)**", report["dashboard_preview"])
 
         released = self.run_release()
         self.assertEqual(released.returncode, 0, released.stderr.decode())
