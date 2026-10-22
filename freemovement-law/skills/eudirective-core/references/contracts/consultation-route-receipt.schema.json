@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Consultation route receipt 0.3.0",
+  "title": "Consultation route receipt 0.4.0",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -17,10 +17,11 @@
     "coverage_claim"
   ],
   "properties": {
-    "schema_version": { "enum": ["0.1.0", "0.2.0", "0.3.0"] },
+    "schema_version": { "enum": ["0.1.0", "0.2.0", "0.3.0", "0.4.0"] },
     "route_ref": { "$ref": "#/$defs/opaque_ref" },
     "request_kind": { "enum": ["applicant_guidance", "source_research", "no_case_assessment"] },
     "invocation": { "$ref": "#/$defs/invocation" },
+    "revision_control": { "$ref": "#/$defs/revision_control" },
     "source_ledger": { "$ref": "#/$defs/source_ledger" },
     "dashboard": { "$ref": "#/$defs/dashboard" },
     "classification": {
@@ -85,7 +86,7 @@
   },
   "allOf": [
     {
-      "if": { "properties": { "schema_version": { "enum": ["0.2.0", "0.3.0"] } }, "required": ["schema_version"] },
+      "if": { "properties": { "schema_version": { "enum": ["0.2.0", "0.3.0", "0.4.0"] } }, "required": ["schema_version"] },
       "then": {
         "required": ["invocation"],
         "allOf": [
@@ -133,6 +134,36 @@
           }
         }
       }
+    },
+    {
+      "if": {
+        "properties": {
+          "schema_version": { "const": "0.4.0" },
+          "request_kind": { "enum": ["applicant_guidance", "source_research"] }
+        },
+        "required": ["schema_version", "request_kind"]
+      },
+      "then": {
+        "required": ["issues", "dashboard"],
+        "properties": {
+          "issues": {
+            "items": { "required": ["source_obligations", "attack_angle_reviews"] }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "schema_version": { "const": "0.4.0" },
+          "invocation": {
+            "properties": { "material_change": { "const": true } },
+            "required": ["material_change"]
+          }
+        },
+        "required": ["schema_version", "invocation"]
+      },
+      "then": { "required": ["revision_control"] }
     }
   ],
   "$defs": {
@@ -167,6 +198,23 @@
         "material_change": {
           "type": "boolean",
           "description": "Set true when a new reply materially changes jurisdiction roles, proceedings/stage, legal question, urgency, requested output, issue/check selection, source use, module use, or execution. This makes a fresh full dashboard mandatory even without a new explicit invocation."
+        }
+      }
+    },
+    "revision_control": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["affected_scope_refs", "reassessed_scope_refs"],
+      "properties": {
+        "affected_scope_refs": {
+          "type": "array", "minItems": 1, "maxItems": 100, "uniqueItems": true,
+          "items": { "$ref": "#/$defs/opaque_ref" },
+          "description": "Opaque consultation scopes whose prior review state is invalidated by the material change."
+        },
+        "reassessed_scope_refs": {
+          "type": "array", "maxItems": 100, "uniqueItems": true,
+          "items": { "$ref": "#/$defs/opaque_ref" },
+          "description": "Affected scopes re-reviewed for this response. Any affected scope omitted here remains open and blocks comprehensive coverage."
         }
       }
     },
@@ -373,6 +421,7 @@
             "swiss_free_movement_framework_question",
             "pre_lodgement_access_obstruction",
             "external_service_provider_used",
+            "digital_only_access_requirement",
             "provider_fee_disputed",
             "provider_fee_not_disputed",
             "ordinary_document_list_or_eu_family_document_question",
@@ -399,8 +448,83 @@
         "disposition": {
           "enum": ["answered_supported", "answered_conditionally", "source_missing", "fact_missing", "out_of_scope"]
         },
-        "evidence_ref": { "$ref": "#/$defs/opaque_ref" }
+        "evidence_ref": { "$ref": "#/$defs/opaque_ref" },
+        "source_obligations": {
+          "type": "array",
+          "maxItems": 20,
+          "items": { "$ref": "#/$defs/source_obligation" }
+        },
+        "attack_angle_reviews": {
+          "type": "array",
+          "maxItems": 100,
+          "items": { "$ref": "#/$defs/attack_angle_review" }
+        }
       }
+    },
+    "source_obligation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["owner_id", "required_source_classes", "status", "evidence_ref"],
+      "properties": {
+        "owner_id": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,159}$" },
+        "required_source_classes": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 6,
+          "uniqueItems": true,
+          "items": { "enum": ["eu_binding_law", "national_binding_law", "case_law", "official_guidance", "procedural_rule", "contrary_authority"] }
+        },
+        "status": { "enum": ["reviewed", "open", "unavailable", "not_assessed"] },
+        "evidence_ref": { "$ref": "#/$defs/opaque_ref" },
+        "preflight_ref": { "$ref": "#/$defs/opaque_ref" },
+        "reason_code": { "enum": ["preflight_missing", "source_unavailable", "not_attempted", "review_incomplete", "other_recorded"] }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "status": { "const": "reviewed" } }, "required": ["status"] },
+          "then": { "required": ["preflight_ref"] }
+        },
+        {
+          "if": { "properties": { "status": { "enum": ["open", "unavailable", "not_assessed"] } }, "required": ["status"] },
+          "then": { "required": ["reason_code"] }
+        }
+      ]
+    },
+    "attack_angle_review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["route_id", "topic", "outcome", "evidence_ref"],
+      "properties": {
+        "route_id": { "type": "string", "pattern": "^[a-z][a-z0-9_]{1,100}$" },
+        "topic": { "type": "string", "minLength": 1, "maxLength": 500 },
+        "outcome": { "enum": ["no_signal_identified", "candidate_issue_linked", "unresolved"] },
+        "evidence_ref": { "$ref": "#/$defs/opaque_ref" },
+        "linked_issue_ref": { "$ref": "#/$defs/opaque_ref" },
+        "pathway_id": { "type": "string", "pattern": "^[a-z][a-z0-9_]{1,100}$" },
+        "trigger_route_id": { "type": "string", "pattern": "^[a-z][a-z0-9_]{1,100}$" },
+        "coverage_pattern_ids": {
+          "type": "array", "maxItems": 10, "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^core:attack:[a-z0-9-]+$" }
+        },
+        "c27_check_ids": {
+          "type": "array", "maxItems": 100, "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1, "maxLength": 160 }
+        }
+      },
+      "allOf": [
+        {
+          "if": { "required": ["pathway_id"] },
+          "then": { "required": ["trigger_route_id", "coverage_pattern_ids", "c27_check_ids"] }
+        },
+        {
+          "if": { "properties": { "outcome": { "const": "candidate_issue_linked" } }, "required": ["outcome"] },
+          "then": { "required": ["linked_issue_ref"] }
+        },
+        {
+          "if": { "properties": { "outcome": { "enum": ["no_signal_identified", "unresolved"] } }, "required": ["outcome"] },
+          "then": { "not": { "required": ["linked_issue_ref"] } }
+        }
+      ]
     },
     "evidence": {
       "type": "object",
@@ -409,6 +533,10 @@
       "properties": {
         "evidence_ref": { "$ref": "#/$defs/opaque_ref" },
         "kind": { "enum": ["conversation_record", "source_record", "module_conformance", "research_gate", "source_preflight", "local_artifact"] },
+        "record_scope": {
+          "enum": ["current_response", "prior_conversation", "unspecified"],
+          "description": "For material-revision reconciliation, declares whether this evidence was reviewed or generated for the current response. This field is not a trusted runtime timestamp."
+        },
         "subject_ref": { "$ref": "#/$defs/opaque_ref" },
         "artifact_path": { "$ref": "#/$defs/relative_path" },
         "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" }

@@ -13,16 +13,17 @@ ordinary ChatGPT output.
 
 The input uses `references/contracts/consultation-route-receipt.schema.json`
 (0.2.0 adds invocation, source-use and dashboard records; 0.3.0 adds response
-and conversation source-discovery methods; existing 0.1.0 and 0.2.0 receipts
-retain their compatible validation). A 0.2.0 or 0.3.0 explicit invocation,
-dashboard request, or `material_change=true` requires a dashboard. It records
-classification states, workflow IDs, C27 check IDs/statuses, reason codes, and
-generated opaque references (`r_` followed by 12–32 lowercase hex characters).
-It also carries constrained relative paths and digests needed to run local
-validators. Keep actual jurisdictions, proceeding facts, legal questions,
-case narratives, identities, dates, and document contents in the conversation,
-not in the receipt. The receipt can record that a classification is
-`recorded`, `unknown`, or `not_applicable` without copying its value.
+and conversation source-discovery methods; 0.4.0 requires issue records and a
+dashboard for applicant-guidance and source-research controlled releases).
+Older 0.1.0–0.3.0 receipts remain readable by the route gate. The controlled
+release command requires 0.4.0. It records classification states, workflow
+IDs, C27 check IDs/statuses, reason codes, and generated opaque references
+(`r_` followed by 12–32 lowercase hex characters). It also carries constrained
+relative paths and digests needed to run local validators. Keep actual
+jurisdictions, proceeding facts, legal questions, case narratives, identities,
+dates, and document contents in the conversation, not in the receipt. The
+receipt can record that a classification is `recorded`, `unknown`, or
+`not_applicable` without copying its value.
 
 Free-text receipt fields such as issue titles, missing/effect explanations,
 operation reasons and source-read notes can accidentally contain personal or
@@ -72,6 +73,32 @@ rather than an enforced check.
   `source_missing` and `fact_missing` dispositions remain open for a
   comprehensive claim. This is additive: older 0.1 receipts without `issues`
   retain their prior validation behavior.
+- For 0.4.0, derives required C27 check IDs, source-owner IDs, and attack-review
+  topics from each declared issue's signal IDs using the existing routing
+  matrix. Every derived source owner and topic must have a receipt record.
+  Owner-specific source tasks must bind to the same opaque issue and scope
+  references in a validated 0.3.0 source preflight, with the same declared
+  source classes. Missing or open source work, unresolved attack topics,
+  unlinked candidate issues, or missing routed checks block `comprehensive` and
+  remain visible in the dashboard.
+- The current routing matrix and topic-pathway bindings are explicitly marked
+  `pending_independent_review`. The strict gate therefore reports outstanding
+  review items and blocks a `comprehensive` claim until a human reviewer has
+  reviewed those mappings and their false-positive boundaries. A successful
+  structural test does not clear that review status.
+- For a 0.4.0 receipt with `invocation.material_change=true`,
+  `revision_control.affected_scope_refs` identifies prior scope states as
+  invalidated. Each affected scope must appear in `reassessed_scope_refs` after
+  its current issue checks and linked obligations have been reviewed again.
+  The affected issue, source-obligation, attack-review and C27 evidence must
+  also be marked `record_scope=current_response`. An affected scope not listed
+  as reassessed or lacking current-response evidence is reported as open and
+  blocks a comprehensive claim. These remain declared review records, not
+  proof that the model actually repeated the work.
+- `candidate_issue_linked` records a possible issue for separate review; it is
+  not a finding of illegality. `no_signal_identified` records only that no
+  candidate was identified from the declared signals. The gate does not verify
+  that the signal set or required source classes are legally complete.
 - For 0.2.0 and later, resolves bundled source identity, section, category, and acceptance
   metadata from the existing retrieval index/manifests; calculates response
   and conversation totals from the unique logical-source ledger; checks read
@@ -105,6 +132,13 @@ rather than an enforced check.
   It binds the receipt bytes, answer bytes, and validation-record digest, then
   rechecks those exact bytes before release. This is a local controller path,
   not a host release gate.
+- `consultation_release_gate.py controlled-release` is the strict one-call
+  path for 0.4.0 applicant-guidance or source-research artifacts. It requires a
+  validated full dashboard, rechecks receipt and answer bytes immediately
+  before output, and emits no answer bytes when validation fails. A partial
+  answer can pass with open work shown; an unsupported comprehensive claim is
+  withheld. The older `prepare`/`release` commands remain compatibility helpers
+  and do not qualify as the strict P0 path.
 
 Run it locally with:
 
@@ -112,9 +146,18 @@ Run it locally with:
 python scripts/consultation_route_gate.py route-receipt.json
 ```
 
+For a strict one-call local release, place the answer and exact validated full
+dashboard in `answer.md`, then run:
+
+```bash
+python scripts/consultation_release_gate.py controlled-release \
+  --receipt route-receipt.json --answer answer.md
+```
+
 An exit status of `3` rejects a `comprehensive` claim; `2` means the receipt or
-an artifact is invalid. A valid partial route returns `0`, lists every open
-work item, and includes its full board and validation record.
+an artifact is invalid. The controlled command uses exit `2` and writes no
+answer to stdout when release is blocked. A valid partial route returns `0`,
+lists every open work item, and includes its full board and validation record.
 
 ## Assurance limit
 
@@ -126,6 +169,11 @@ When the optional `issues` array is present, the gate validates signal IDs and
 required check selection for each declared issue/scope. It cannot determine
 whether the model omitted an issue, chose an incomplete signal set, or attached
 an accurate disposition.
+
+For 0.4.0 it also checks declared source-owner coverage and every topic named by
+the existing routing matrix. Source classes are selected in the receipt and
+matched exactly to the preflight; this does not prove that the model selected
+every legally relevant source class. The attack screen remains model-declared.
 
 Resolving an ID means only that the receipt
 declares it in the evidence index; only local artifact digests and outputs of
@@ -144,6 +192,8 @@ its reusable manifest/export pair. The case-geography-to-module match remains
 unavailable in the ordinary lane; the receipt must record that restriction,
 which leaves the comprehensive claim blocked where that match is required.
 
-Genuine release enforcement requires the host to call this gate, fail closed
-on invalid results, and bind the checked receipt to the exact answer it
-releases. No such host integration is established by this plugin package.
+The local controlled command controls only its own output and can be bypassed
+through other channels. Genuine host release enforcement requires a supported
+host integration that calls the gate, fails closed, and binds the checked
+receipt to the exact answer it releases. No such host integration is
+established by this plugin package.

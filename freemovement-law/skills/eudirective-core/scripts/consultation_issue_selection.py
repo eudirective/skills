@@ -19,6 +19,8 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 MATRIX_PATH = ROOT / "references" / "consultation-issue-routing.json"
 REGISTRY_PATH = ROOT / "references" / "state-engine" / "check-registry.json"
+PATHWAY_PATH = ROOT / "references" / "attack-angles" / "consultation-topic-review-pathways.json"
+ATTACK_CATALOG_PATH = ROOT / "references" / "attack-angles" / "core-attack-angle-catalog.json"
 FIXTURE_KIND = "synthetic_abstract"
 PROCEEDING_ID_PATTERN = re.compile(r"^p_[1-9][0-9]{0,2}$")
 
@@ -90,7 +92,10 @@ def validate_configuration(
     root: Path = ROOT,
 ) -> tuple[dict[str, dict[str, Any]], set[str]]:
     """Validate every matrix check ID and every owned core reference path."""
-    if matrix.get("schema") != "freemovement-consultation-issue-routing/0.1.0":
+    if matrix.get("schema") not in {
+        "freemovement-consultation-issue-routing/0.1.0",
+        "freemovement-consultation-issue-routing/0.2.0",
+    }:
         raise SelectionError("unsupported_matrix_schema")
     signal_defs = signal_catalog(matrix)
     valid_checks = registry_check_ids(registry)
@@ -221,7 +226,88 @@ def validate_configuration(
             if related_route_id not in route_ids:
                 raise SelectionError(f"related_issue_route_unknown:{route['route_id']}:{related_route_id}")
 
+    validate_pathway_bindings(matrix, registry, signal_defs)
+
     return signal_defs, valid_checks
+
+
+def validate_pathway_bindings(
+    matrix: dict[str, Any],
+    registry: dict[str, Any],
+    signal_defs: dict[str, dict[str, Any]],
+) -> dict[str, dict[str, Any]]:
+    """Check topic-to-signal, C5d-pattern, route, and C27-family bindings."""
+    try:
+        pathways = load_json(PATHWAY_PATH)
+        catalog = load_json(ATTACK_CATALOG_PATH)
+    except SelectionError as error:
+        raise SelectionError("attack_pathway_or_catalog_unavailable") from error
+    if pathways.get("schema_version") not in {"0.2.0", "0.3.0"}:
+        raise SelectionError("attack_pathway_schema_unsupported")
+    patterns = catalog.get("patterns")
+    if not isinstance(patterns, list):
+        raise SelectionError("core_attack_pattern_catalog_missing")
+    pattern_ids = {item.get("attack_angle_id") for item in patterns if isinstance(item, dict)}
+    routes = {item["route_id"]: item for item in matrix["routes"]}
+    families = {item["family_id"] for item in registry.get("families", [])}
+    topics = pathways.get("topics")
+    if not isinstance(topics, list) or not topics:
+        raise SelectionError("attack_pathways_missing")
+    result: dict[str, dict[str, Any]] = {}
+    for topic in topics:
+        if not isinstance(topic, dict):
+            raise SelectionError("attack_pathway_invalid")
+        topic_id = topic.get("topic_id")
+        if not isinstance(topic_id, str) or not topic_id or topic_id in result:
+            raise SelectionError("attack_pathway_id_invalid_or_duplicate")
+        coverage = topic.get("coverage")
+        if not isinstance(coverage, str) or not coverage:
+            raise SelectionError(f"attack_pathway_coverage_missing:{topic_id}")
+        if coverage == "not_implemented_in_C5d_deterministic_predicates":
+            coverage_ids: list[str] = []
+        else:
+            coverage_ids = [item.strip() for item in coverage.split(";") if item.strip()]
+            if not coverage_ids or not set(coverage_ids) <= pattern_ids:
+                raise SelectionError(f"attack_pathway_c5d_binding_invalid:{topic_id}")
+        c27_families = topic.get("c27_families")
+        if (not isinstance(c27_families, list) or not c27_families or
+                not set(c27_families) <= families):
+            raise SelectionError(f"attack_pathway_c27_family_binding_invalid:{topic_id}")
+        bindings = topic.get("consultation_bindings")
+        if not isinstance(bindings, list) or not bindings:
+            raise SelectionError(f"attack_pathway_consultation_binding_missing:{topic_id}")
+        normalized_bindings = []
+        for binding in bindings:
+            if not isinstance(binding, dict) or set(binding) - {
+                "route_id", "when_any_signal", "when_all_signal",
+            }:
+                raise SelectionError(f"attack_pathway_binding_invalid:{topic_id}")
+            route_id = binding.get("route_id")
+            route = routes.get(route_id)
+            if route is None:
+                raise SelectionError(f"attack_pathway_route_unknown:{topic_id}:{route_id}")
+            any_signals = _as_id_list(binding.get("when_any_signal", []), f"{topic_id}.when_any_signal")
+            all_signals = _as_id_list(binding.get("when_all_signal", []), f"{topic_id}.when_all_signal")
+            if not any_signals and not all_signals:
+                raise SelectionError(f"attack_pathway_trigger_missing:{topic_id}:{route_id}")
+            if set(any_signals + all_signals) - set(signal_defs):
+                raise SelectionError(f"attack_pathway_signal_unknown:{topic_id}:{route_id}")
+            route_signals = set(route["when_any_signal"])
+            for condition in route["conditional_checks"]:
+                route_signals.update(condition["when_any_signal"])
+            if not (set(any_signals + all_signals) & route_signals):
+                raise SelectionError(f"attack_pathway_signal_route_mismatch:{topic_id}:{route_id}")
+            normalized_bindings.append({
+                "route_id": route_id,
+                "when_any_signal": sorted(any_signals),
+                "when_all_signal": sorted(all_signals),
+            })
+        result[topic_id] = {
+            **topic,
+            "coverage_pattern_ids": sorted(coverage_ids),
+            "consultation_bindings": normalized_bindings,
+        }
+    return result
 
 
 def validate_fixture(
@@ -302,6 +388,89 @@ def select_check_ids(
     if invalid:
         raise SelectionError(f"check_id_unknown:selected:{invalid[0]}")
     return sorted(selected)
+
+
+def select_issue_requirements(
+    signal_ids: list[str],
+    matrix: dict[str, Any] | None = None,
+    registry: dict[str, Any] | None = None,
+    root: Path = ROOT,
+) -> dict[str, Any]:
+    """Derive checks, source owners, and attack-screen topics for declared signals.
+
+    This is a structural routing result for declared signal IDs. It does not
+    discover issues or choose source classes and it is not legal analysis.
+    """
+    matrix = matrix or load_json(MATRIX_PATH)
+    registry = registry or load_json(REGISTRY_PATH)
+    signal_defs, _ = validate_configuration(matrix, registry, root)
+    normalized = _as_id_list(signal_ids, "signal_ids")
+    unknown = sorted(set(normalized) - set(signal_defs))
+    if unknown:
+        raise SelectionError(f"signal_unknown:{unknown[0]}")
+    signals = set(normalized)
+    for signal_id in normalized:
+        opposite = signal_defs[signal_id].get("opposes_signal_id")
+        if opposite and opposite in signals:
+            raise SelectionError(f"contradictory_signals:{signal_id}:{opposite}")
+
+    owners: set[str] = set()
+    topics: dict[tuple[str, str], dict[str, Any]] = {}
+    routes: list[str] = []
+    route_checks: dict[str, set[str]] = {}
+    for route in matrix["routes"]:
+        matched = sorted(set(route["when_any_signal"]) & signals)
+        if not matched:
+            continue
+        route_id = route["route_id"]
+        routes.append(route_id)
+        checks = set(route["mandatory_checks"])
+        for condition in route["conditional_checks"]:
+            condition_matches = set(condition["when_any_signal"]) & signals
+            exclusions = set(condition.get("unless_any_signal", [])) & signals
+            if condition_matches and not exclusions:
+                checks.update(condition["check_ids"])
+        route_checks[route_id] = checks
+        owners.update(route["source_owner_ids"])
+        for condition in route.get("conditional_source_owner_ids", []):
+            if set(condition["when_any_signal"]) & signals:
+                owners.update(condition["source_owner_ids"])
+        attack_review = route["potential_attack_angle_review"]
+        if attack_review["required"]:
+            for topic in attack_review["review_topics"]:
+                topics[(route_id, topic)] = {"route_id": route_id, "topic": topic}
+
+    pathway_map = validate_pathway_bindings(matrix, registry, signal_defs)
+    for pathway_id, pathway in pathway_map.items():
+        for binding in pathway["consultation_bindings"]:
+            route_id = binding["route_id"]
+            if route_id not in route_checks:
+                continue
+            if binding["when_any_signal"] and not (set(binding["when_any_signal"]) & signals):
+                continue
+            if binding["when_all_signal"] and not set(binding["when_all_signal"]) <= signals:
+                continue
+            topic = pathway["label"]
+            record = {
+                "route_id": "pathway_" + pathway_id,
+                "topic": topic,
+                "pathway_id": pathway_id,
+                "trigger_route_id": route_id,
+                "coverage_pattern_ids": pathway["coverage_pattern_ids"],
+                "c27_check_ids": sorted(route_checks[route_id]),
+            }
+            topics[(record["route_id"], record["topic"])] = record
+
+    return {
+        "check_ids": select_check_ids(normalized, matrix=matrix, registry=registry, root=root),
+        "route_ids": sorted(routes),
+        "source_owner_ids": sorted(owners),
+        "attack_angle_topics": [topics[key] for key in sorted(topics)],
+        "routing_review_status": matrix.get("routing_review_status", "pending_independent_review"),
+        "pathway_review_status": load_json(PATHWAY_PATH).get(
+            "consultation_binding_review_status", "pending_independent_review"
+        ),
+    }
 
 
 def select_checks(
