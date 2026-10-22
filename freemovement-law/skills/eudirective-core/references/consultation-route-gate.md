@@ -109,6 +109,12 @@ text-field heuristic.
   cannot create a candidate. A linked candidate remains open if any required
   C27 assessment bound to its target issue is missing or has a non-closed
   status; the target issue's open check status is recorded separately.
+  A maintained pathway can supply the mapping for a generic topic only when
+  its consultation binding has the same route ID, exact topic label, and exact
+  route-trigger signal sets. That pathway enriches the existing route-topic
+  record; duplicate mappings are rejected. A different label or trigger set
+  leaves the generic topic unresolved and the pathway as a separate review.
+  This matching is structural and does not clear independent-review status.
 - Dashboard outcome counts distinguish `evidence_resolved` and
   `qualified_condition` conditional answers from partial/open issues. Their
   closure status and evidence references appear on the issue card, and the

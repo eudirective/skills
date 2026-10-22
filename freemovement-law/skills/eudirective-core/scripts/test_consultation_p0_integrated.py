@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import copy
 import hashlib
+import importlib.util
 import json
 import os
 import shutil
@@ -207,8 +208,10 @@ def make_research_records():
     return plan, bundle, preflight
 
 
-def make_receipt(*, partial=False, conditional_status=None, c27_status="assessed"):
-    requirements = selector.select_issue_requirements(["directive_scope_question"])
+def make_receipt(*, partial=False, conditional_status=None, c27_status="assessed",
+                 selector_module=None, attack_outcome=None):
+    selector_impl = selector_module or selector
+    requirements = selector_impl.select_issue_requirements(["directive_scope_question"])
     check_ids = requirements["check_ids"]
     assessments = []
     assessment_refs = []
@@ -250,12 +253,19 @@ def make_receipt(*, partial=False, conditional_status=None, c27_status="assessed
         trigger_ids = sorted(set(topic["trigger_any_signal_ids"]) | set(topic["trigger_all_signal_ids"]))
         adverse_ids = topic["adverse_predicate_ids"]
         mapped = bool(adverse_ids)
+        outcome = attack_outcome or "unresolved"
+        if outcome == "no_signal_identified" and not mapped:
+            raise ValueError("test-only closed path requires mapped attack predicates")
+        reason_code = (
+            "no_adverse_signal" if outcome == "no_signal_identified" else
+            "evidence_missing" if mapped else "predicate_unmapped"
+        )
         attack_reviews.append({
             **topic,
-            "outcome": "unresolved",
+            "outcome": outcome,
             "evidence_ref": CONVERSATION_REF,
             "screening": {
-                "reason_code": "evidence_missing" if mapped else "predicate_unmapped",
+                "reason_code": reason_code,
                 "predicate_states": [{
                     "signal_id": signal_id,
                     "state": "present" if signal_id in {"directive_scope_question"} else "absent",
@@ -263,7 +273,7 @@ def make_receipt(*, partial=False, conditional_status=None, c27_status="assessed
                 } for signal_id in trigger_ids],
                 "adverse_predicate_states": [{
                     "predicate_id": predicate_id,
-                    "state": "unknown",
+                    "state": "absent" if outcome == "no_signal_identified" else "unknown",
                     "evidence_ref": CONVERSATION_REF,
                 } for predicate_id in adverse_ids],
             },
@@ -415,10 +425,12 @@ class IntegratedControlledReleaseTests(unittest.TestCase):
         value[field] = "reviewed"
         path.write_text(json.dumps(value, indent=2) + "\n", encoding="utf-8")
 
-    def write_fixture(self, *, partial=False, conditional_status=None, c27_status="assessed"):
+    def write_fixture(self, *, partial=False, conditional_status=None, c27_status="assessed",
+                      selector_module=None, attack_outcome=None):
         plan, bundle, preflight = make_research_records()
         receipt = make_receipt(
-            partial=partial, conditional_status=conditional_status, c27_status=c27_status
+            partial=partial, conditional_status=conditional_status, c27_status=c27_status,
+            selector_module=selector_module, attack_outcome=attack_outcome,
         )
         for path, value in (
             (self.plan_path, plan), (self.bundle_path, bundle),
@@ -426,6 +438,43 @@ class IntegratedControlledReleaseTests(unittest.TestCase):
         ):
             path.write_text(json.dumps(value, sort_keys=True, indent=2) + "\n", encoding="utf-8")
         return receipt
+
+    def install_test_only_pathway_mappings(self):
+        """Add synthetic mappings only inside this test's disposable plugin copy."""
+        route_id = "directive_personal_and_territorial_applicability"
+        matrix_path = self.core / "references" / "consultation-issue-routing.json"
+        pathways_path = self.core / "references" / "attack-angles" / "consultation-topic-review-pathways.json"
+        matrix = json.loads(matrix_path.read_text(encoding="utf-8"))
+        pathways = json.loads(pathways_path.read_text(encoding="utf-8"))
+        route = next(item for item in matrix["routes"] if item["route_id"] == route_id)
+        topics = route["potential_attack_angle_review"]["review_topics"]
+        for index, topic in enumerate(topics, start=1):
+            pathways["topics"].append({
+                "topic_id": f"synthetic_p0_closed_path_{index}",
+                "label": topic,
+                "coverage": "not_implemented_in_C5d_deterministic_predicates",
+                "c27_families": ["eu_scope"],
+                "consultation_bindings": [{
+                    "route_id": route_id,
+                    "when_any_signal": ["directive_scope_question"],
+                }],
+                "adverse_signal": (
+                    "Synthetic test-only screen predicate; it is not a legal rule or finding."
+                ),
+            })
+        pathways_path.write_text(json.dumps(pathways, indent=2) + "\n", encoding="utf-8")
+
+        # Load the selector from the staged copy so fixture selection and the
+        # subprocess validators use the same isolated test-only metadata.
+        copied_selector = self.script_dir / "consultation_issue_selection.py"
+        spec = importlib.util.spec_from_file_location(
+            "consultation_issue_selection_test_copy", copied_selector
+        )
+        if spec is None or spec.loader is None:
+            raise RuntimeError("test_copy_selector_unavailable")
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        return module
 
     def run_script(self, name: str, *args: str) -> subprocess.CompletedProcess:
         env = dict(os.environ)
@@ -474,6 +523,29 @@ class IntegratedControlledReleaseTests(unittest.TestCase):
         self.assertIn("**PARTIAL**", report["dashboard_preview"])
         self.assertIn("Supported: **0 (0%)**", report["dashboard_preview"])
         self.assertIn("Partial/open: **1 (100%)**", report["dashboard_preview"])
+
+        released = self.run_release()
+        self.assertEqual(released.returncode, 0, released.stderr.decode())
+        self.assertEqual(released.stdout, self.answer_path.read_bytes())
+
+    def test_test_only_reviewed_metadata_releases_complete_synthetic_path(self):
+        test_selector = self.install_test_only_pathway_mappings()
+        receipt = self.write_fixture(
+            selector_module=test_selector,
+            attack_outcome="no_signal_identified",
+        )
+        self.assertEqual(receipt["coverage_claim"], "comprehensive")
+        self.assertTrue(all(
+            item["outcome"] == "no_signal_identified"
+            for item in receipt["issues"][0]["attack_angle_reviews"]
+        ))
+
+        report = self.prepare_answer("Synthetic closed-path fixture; no legal proposition asserted.")
+        self.assertEqual(report["status"], "structurally_closed_declared_plan")
+        self.assertEqual(report["outstanding"], [])
+        self.assertEqual(report["research_reports"][0]["status"], "valid")
+        self.assertEqual(report["source_preflight_reports"][0]["status"], "accounted_for_review")
+        self.assertIn("**REVIEWED**", report["dashboard_preview"])
 
         released = self.run_release()
         self.assertEqual(released.returncode, 0, released.stderr.decode())

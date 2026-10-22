@@ -1,7 +1,7 @@
 # Consultation assurance and host capability
 
 **Decision date:** 2026-10-22
-**Scope:** `freemovement-law` 0.58.0 / `eudirective-core` 0.57.0
+**Scope:** `freemovement-law` 0.58.1 / `eudirective-core` 0.57.1
 **Status:** local structural gates and the opt-in controlled-release runner are available; ChatGPT host release enforcement is not implemented or verified. Consultation routing and attack-pathway bindings remain pending independent review.
 
 ## Assurance claims

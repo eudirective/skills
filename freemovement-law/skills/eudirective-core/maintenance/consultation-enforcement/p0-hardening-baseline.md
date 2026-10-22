@@ -17,7 +17,7 @@
 - C2 element model: 0.2.0.
 - Frozen C3 boundary: inter-skill contract 0.2.0, conformance profile 0.2.0, controller protocol 0.3.0, element model 0.2.0.
 
-No `AGENTS.md` exists in this checkout or its `/tmp` ancestors. The target branch is exactly the plan's base SHA. The worktree was clean before this baseline report was added.
+No `AGENTS.md` exists in this checkout or its `/tmp` ancestors. The plan's verified base was `ca76b49b00390c95006ded2f63cb0561cc4f6502`. Before the implementation branch was created, `main` advanced to `61fc9a49f1cb0bf3e0b1b6a40654252901319b66` in a source-library synchronization commit. The implementation branch used `61fc9a4` as its parent; the P0 change set did not modify source-library files. The fail-first regression run below was performed against the plan's exact `ca76b49` base. The worktree was clean before this baseline report was added.
 
 ## Baseline commands and observed results
 
