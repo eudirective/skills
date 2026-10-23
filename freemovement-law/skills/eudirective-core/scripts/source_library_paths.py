@@ -35,7 +35,7 @@ def compatibility_sources_root() -> Path:
 def module_notes_root(country: str) -> Path:
     if country not in {"sweden", "turkiye"}:
         raise ValueError("Unsupported country module.")
-    root = source_library_root() / country / "module-notes" / "source-notes"
+    root = source_library_root() / "module-notes" / country
     if root.is_dir():
         return root
     raise FileNotFoundError(f"The {country} module notes are missing from the source library.")

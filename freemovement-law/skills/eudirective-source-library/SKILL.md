@@ -20,9 +20,9 @@ Apply this use check:
 - Display the notice once per conversation; repeat it only if the use context materially changes. Do not email anyone or claim to know the user's licensing status.
 - This is a skill-level instruction for the first visible response when a freemovement-law skill is invoked. It does not establish host-level chat-start behavior or guarantee that the notice appears before a skill is invoked.
 
-Skill version: eudirective-source-library v1.0.12. After the required first-response notice, include this name and version near the top of any visible response or report produced while using this skill.
+Skill version: eudirective-source-library v1.0.13. After the required first-response notice, include this name and version near the top of any visible response or report produced while using this skill.
 
-Last updated: 2026-10-20.
+Last updated: 2026-10-24.
 
 This skill's source library is mirrored from eudirective/public-data into this plugin package by the repository workflow. Its manifests, source files, and module notes sit beside this SKILL.md. Use those bundled files to identify the relevant source, its official publisher URL, recorded version/date, and coverage. The installed package is a snapshot and does not update itself.
 

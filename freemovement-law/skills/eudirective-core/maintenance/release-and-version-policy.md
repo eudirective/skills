@@ -1,5 +1,15 @@
 # Release and version policy
 
+# Plugin v0.59.1 / core v0.58.1 module-note mirror and C6/C7 fixture repair
+
+The C17 module-note consumers now follow the public-data `module-notes/{sweden,turkiye}` layout. The mirror workflow copies that tree into the bundled source library and stamps its separate Git tree fingerprint; the once-per-chat version check compares both the source-library and module-note trees. Sweden and Türkiye module guidance point to the same layout.
+
+The C6 reviewer fixtures were refreshed against the current deterministic C5D and C5E output, then re-enrolled in the code-pinned C7 trust policy. The C7 maintenance regression now opts into the validator's narrow internal issue-code allowance when reading a generated issue index. No external or personal inputs were added.
+
+The private fm-maintenance regression suite passed all 41 scripts after these changes. This is local deterministic testing, not live ChatGPT behavior testing or independent legal review. The live check remains documented in `references/consultation-dashboard-live-test-plan.md` and was not run.
+
+Core advances from `0.58.0` to `0.58.1`; plugin advances from `0.59.0` to `0.59.1`. Sweden, Türkiye, and source-library skill versions advance by one patch.
+
 # Plugin v0.59.0 / core v0.58.0 typed administrative outcomes and remedy routing
 
 Receipt 0.6.0 now keeps procedure type, source-attributed administrative

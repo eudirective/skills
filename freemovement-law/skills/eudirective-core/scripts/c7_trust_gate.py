@@ -19,7 +19,7 @@ BUNDLED_SOURCE_ROOT = compatibility_root()
 # Independent of the supplied source manifest or caller-provided fixture labels.
 # Changing the trust inventory requires reviewing the fixture/source and releasing
 # a changed trusted code root (including this constant).
-TRUST_POLICY_SHA256 = '6ad6fc7ced5345a72b23232c5ba6d7c74829376df71fd5185276ba39276997f3'
+TRUST_POLICY_SHA256 = '3a15f9ad3744071ba68698da14d214dcbd1c85df0e999954aef4c2ee6dc48bc8'
 
 
 class C7TrustError(Exception):
