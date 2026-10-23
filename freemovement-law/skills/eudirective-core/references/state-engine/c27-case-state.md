@@ -24,7 +24,17 @@ python scripts/c27_case_state.py compare --previous evaluations/fixtures/c27/ini
 python scripts/test_c27_case_state.py
 ```
 
-Input schemas `c27-abstract-session/0.1.0` and `0.2.0` are accepted; output schema is `c27-case-state-report/0.2.0`. `requested_focus` adds deliberately selected triggers, notably `stratagem` (36 screens), `legal_principle` (14), `soft_law`, `strategy` and `disclosure`. Model-led catalog screens **do not execute** the C5e synthetic scripts. Reported assessed checks require event/source references, while restricted or unimplemented capabilities cannot be marked assessed. The status and sources are still **self-reported and schema-checked**, not independently authenticated.
+Input schemas `c27-abstract-session/0.1.0` and `0.2.0` remain readable for existing events. Schema `0.3.0` adds explicit administrative-outcome and separate post-issuance events; new event kinds are rejected under older schema versions. Output schema is `c27-case-state-report/0.3.0`. `requested_focus` adds deliberately selected triggers, notably `stratagem` (36 screens), `legal_principle` (14), `soft_law`, `strategy` and `disclosure`. Model-led catalog screens **do not execute** the C5e synthetic scripts. Reported assessed checks require event/source references, while restricted or unimplemented capabilities cannot be marked assessed. The status and sources are still **self-reported and schema-checked**, not independently authenticated.
+
+## Administrative outcome is separate from procedural stage
+
+C27 session `0.3.0` adds an `administrative_outcome` event independent of the generic stage sequence. The existing stages—attempted and disputed lodging, confirmed lodging, examination, decision, notification, review, withdrawal and closure—remain unchanged. A reported `decision_taken` stage does not itself establish an administrative outcome.
+
+The outcome labels are `article18_not_competent`, `article19_inadmissible`, `article32_substantive_refusal`, `visa_issued`, `withdrawn_or_not_pursued`, `discontinued_or_transferred`, `other`, and `undetermined`. The Article 18/19/32 Visa Code labels are accepted only for an `ordinary_short_stay_visa` proceeding and require a prior official `decision_notice` event recorded as shown or available. Article 18 also requires the proceeding to identify a consulate. This prevents a residence-card proceeding from receiving an Article 19 visa outcome. Visa issuance requires a prior official visa document or decision notice. These labels record a source-attributed classification; they do not validate the authority's legal classification or the decision's legality.
+
+`other` requires a brief non-identifying explanation and an evidence-event reference to an official decision notice. `undetermined` requires a brief explanation of the missing evidence. The explanation field accepts only a short abstract label, not personal details or raw narrative. If no outcome event exists, the report displays `undetermined` with an explicit note that absence of a record does not prove that no decision occurred. Returned documents, an oral statement, an appointment or provider receipt, a missing formal receipt, or an uncompleted application do not become a formal outcome automatically.
+
+Post-issuance events such as cancellation, revocation, annulment, expiry, extension or reissue are recorded in `post_issuance_events`, separately from the initial administrative outcome. Each event needs a prior official visa document or decision notice. Corrected or incompatible evidence leaves the outcome unresolved for reassessment.
 
 ## Historical and evidentiary safeguards
 

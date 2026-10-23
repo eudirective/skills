@@ -20,8 +20,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY_PATH = ROOT / "references/state-engine/check-registry.json"
-SCHEMA = "c27-abstract-session/0.1.0"
-OUTPUT_SCHEMA = "c27-case-state-report/0.2.0"
+SCHEMA = "c27-abstract-session/0.3.0"
+LEGACY_SCHEMAS = frozenset(("c27-abstract-session/0.1.0",
+                            "c27-abstract-session/0.2.0"))
+OUTPUT_SCHEMA = "c27-case-state-report/0.3.0"
 ID_PATTERN = re.compile(r"^[A-Z]{1,3}[1-9][0-9]{0,3}$")
 REF_PATTERN = re.compile(r"^[a-z0-9][a-z0-9:._/-]{0,100}$")
 
@@ -60,7 +62,8 @@ DOCUMENT_CATEGORIES = frozenset((
     "passport", "marriage_record", "birth_record", "divorce_record", "adoption_record",
     "residence_document", "travel_evidence", "employment_evidence",
     "means_evidence", "health_cover", "dependency_evidence", "translation",
-    "application_form", "decision_notice", "appointment_record", "other_document"
+    "application_form", "decision_notice", "visa_document", "appointment_record",
+    "other_document"
 ))
 DOC_ACTIONS = frozenset((
     "requested", "available", "shown", "submitted", "uploaded", "sent",
@@ -133,8 +136,20 @@ VALID_TRIGGERS = frozenset((
     "always", "family", "appointment", "lodgement", "visa", "document", "interview",
     "decision", "review", "complaint", "disclosure", "authority", "strategy",
     "deadline", "issue", "residence", "border", "marriage", "country", "soft_law",
-    "fraud", "stratagem", "legal_principle"
+    "fraud", "stratagem", "legal_principle", "withdrawal"
 ))
+ADMINISTRATIVE_OUTCOMES = frozenset((
+    "article18_not_competent", "article19_inadmissible",
+    "article32_substantive_refusal", "visa_issued",
+    "withdrawn_or_not_pursued", "discontinued_or_transferred",
+    "other", "undetermined"
+))
+POST_ISSUANCE_EVENTS = frozenset((
+    "visa_cancelled", "visa_revoked", "visa_annulled", "visa_expired",
+    "visa_extended", "visa_reissued", "other_post_issuance_event"
+))
+NEW_EVENT_KINDS = frozenset(("administrative_outcome", "post_issuance_event"))
+ABSTRACT_EXPLANATION_PATTERN = re.compile(r"^[A-Za-z][A-Za-z0-9 ,;:()'/_-]{1,199}$")
 STEP_STAGE = {
     "inquiry_sent": "enquiry",
     "appointment_requested": "appointment_pending",
@@ -190,6 +205,13 @@ EVENT_FIELDS = {
         {"related_disclosure_id", "related_event_id"}
     ),
     "authority_classification": ({"classified_as"}, set()),
+    "administrative_outcome": (
+        {"classification"},
+        {"evidence_event_id", "explanation", "missing_evidence_explanation"}
+    ),
+    "post_issuance_event": (
+        {"event_type", "evidence_event_id"}, {"explanation"}
+    ),
     "deadline_event": (
         {"deadline_id", "deadline_type", "clock_status", "rule_status"},
         {"trigger_event_id"}
@@ -228,6 +250,15 @@ def opaque_id(value, prefix: str, label: str) -> None:
 
 def value_in(value, allowed, label: str) -> None:
     require(isinstance(value, str) and value in allowed, label + ":unknown_value")
+
+
+def validate_abstract_explanation(value, label: str) -> None:
+    require(isinstance(value, str)
+            and bool(ABSTRACT_EXPLANATION_PATTERN.fullmatch(value.strip())),
+            label + ":invalid_abstract_explanation")
+    require(not re.search(r"(?i)(https?://|www\.|[A-Z0-9._%+-]+@[A-Z0-9.-]+)", value)
+            and not re.search(r"\d{7,}", value),
+            label + ":identifier_or_contact_detail_not_allowed")
 
 
 def validate_review_claim(status, method, reason, spec,
@@ -378,6 +409,47 @@ def validate_event(e, nested=False) -> None:
                  "authority_classification")
         require(e["source"] != "model_inference",
                 "authority:classification_requires_attribution")
+    elif kind == "administrative_outcome":
+        value_in(e["classification"], ADMINISTRATIVE_OUTCOMES,
+                 "administrative_outcome")
+        if "evidence_event_id" in e:
+            opaque_id(e["evidence_event_id"], "E", "outcome_evidence_event")
+        if "explanation" in e:
+            validate_abstract_explanation(e["explanation"], "outcome_explanation")
+        if "missing_evidence_explanation" in e:
+            validate_abstract_explanation(
+                e["missing_evidence_explanation"], "outcome_missing_evidence")
+        classification = e["classification"]
+        if classification in {
+            "article18_not_competent", "article19_inadmissible",
+            "article32_substantive_refusal", "visa_issued"
+        }:
+            require("evidence_event_id" in e,
+                    "outcome:formal_result_requires_evidence_reference")
+            require(e["source"] in ("document_seen", "authority_record_seen"),
+                    "outcome:formal_result_requires_official_record_source")
+        elif classification == "other":
+            require("explanation" in e and "evidence_event_id" in e,
+                    "outcome:other_requires_explanation_and_evidence")
+            require(e["source"] in ("document_seen", "authority_record_seen"),
+                    "outcome:other_requires_official_record_source")
+        elif classification == "undetermined":
+            require("missing_evidence_explanation" in e,
+                    "outcome:undetermined_requires_missing_evidence_explanation")
+        else:
+            require(e["source"] != "model_inference",
+                    "outcome:asserted_event_requires_attribution")
+    elif kind == "post_issuance_event":
+        value_in(e["event_type"], POST_ISSUANCE_EVENTS, "post_issuance_event")
+        opaque_id(e["evidence_event_id"], "E", "post_issuance_evidence_event")
+        require(e["source"] in ("document_seen", "authority_record_seen"),
+                "post_issuance:requires_official_record_source")
+        if e["event_type"] == "other_post_issuance_event":
+            require("explanation" in e,
+                    "post_issuance:other_requires_explanation")
+        if "explanation" in e:
+            validate_abstract_explanation(e["explanation"],
+                                          "post_issuance_explanation")
     elif kind == "authority_position":
         value_in(e["issue"], AUTHORITY_ISSUES, "authority_issue")
         value_in(e["stance"], AUTHORITY_STANCES, "authority_stance")
@@ -416,6 +488,15 @@ def normalize_events(data):
     """Return active events in occurrence order; corrections supersede, never erase audit history."""
     raw = data["events"]
     require(isinstance(raw, list) and len(raw) <= 500, "events:invalid_count")
+    if data.get("schema") != SCHEMA:
+        for e in raw:
+            has_new_event = isinstance(e, dict) and e.get("kind") in NEW_EVENT_KINDS
+            if isinstance(e, dict) and e.get("kind") == "event_correction":
+                replacement = e.get("replacement")
+                has_new_event = (isinstance(replacement, dict)
+                                 and replacement.get("kind") in NEW_EVENT_KINDS)
+            require(not has_new_event,
+                    "case:new_procedural_outcome_events_require_schema_0_3_0")
     active = []
     index = {}
     all_ids = {}
@@ -500,6 +581,88 @@ def load_registry(path=REGISTRY_PATH):
     return reg
 
 
+def summarize_administrative_outcome(records):
+    """Summarize explicit outcome classifications without upgrading assertions.
+
+    Generic decision/stage events never become a formal outcome here. Multiple
+    incompatible source-attributed classifications remain unresolved.
+    """
+    evidence_ids = sorted({
+        item["resolved_evidence_event_id"]
+        for item in records if item.get("resolved_evidence_event_id")
+    })
+    event_ids = [item["event_id"] for item in records]
+    if not records:
+        return {
+            "classification": "undetermined", "status": "undetermined",
+            "source": "not_recorded", "event_ids": [],
+            "evidence_event_ids": [], "explanation": None,
+            "missing_evidence_explanation": (
+                "No explicit administrative outcome is recorded; inspect decision, withdrawal, transfer, and lodging evidence."
+            ),
+            "assurance": "absence_of_record_is_not_proof_of_no_decision"
+        }
+
+    corrected_known = [
+        item for item in records
+        if item["classification"] != "undetermined"
+        and item["evidence_reference_corrected"]
+    ]
+    known = [
+        item for item in records
+        if item["classification"] != "undetermined"
+        and not item["evidence_reference_corrected"]
+    ]
+    if corrected_known:
+        return {
+            "classification": "undetermined", "status": "needs_reassessment",
+            "source": "mixed_or_corrected", "event_ids": event_ids,
+            "evidence_event_ids": evidence_ids, "explanation": None,
+            "missing_evidence_explanation": (
+                "The evidence linked to an outcome classification was corrected; reassess the classification against the replacement record."
+            ),
+            "assurance": "source_attributed_not_legal_validation"
+        }
+    if not known:
+        last = records[-1]
+        return {
+            "classification": "undetermined", "status": "undetermined",
+            "source": last["source"], "event_ids": event_ids,
+            "evidence_event_ids": evidence_ids, "explanation": None,
+            "missing_evidence_explanation": last.get(
+                "missing_evidence_explanation") or (
+                    "Only an undetermined classification is recorded; the missing evidence must be identified."
+                ),
+            "assurance": "source_attributed_not_legal_validation"
+        }
+
+    classes = {item["classification"] for item in known}
+    other_explanations = {
+        item.get("explanation") for item in known
+        if item["classification"] == "other"
+    }
+    if len(classes) != 1 or len(other_explanations) > 1:
+        return {
+            "classification": "undetermined", "status": "conflicting",
+            "source": "mixed", "event_ids": event_ids,
+            "evidence_event_ids": evidence_ids, "explanation": None,
+            "missing_evidence_explanation": (
+                "Conflicting administrative outcome classifications are recorded; reconcile the proceeding and source documents."
+            ),
+            "assurance": "conflicting_source_attributed_classifications"
+        }
+
+    selected = known[-1]
+    return {
+        "classification": selected["classification"], "status": "classified",
+        "source": selected["source"], "event_ids": event_ids,
+        "evidence_event_ids": evidence_ids,
+        "explanation": selected.get("explanation"),
+        "missing_evidence_explanation": None,
+        "assurance": "source_attributed_not_legal_validation"
+    }
+
+
 def build_proceedings(events, correction_aliases=None,
                       corrected_disclosures=None, corrected_documents=None):
     """Replay corrected effective records, retaining independent historical facts.
@@ -514,6 +677,7 @@ def build_proceedings(events, correction_aliases=None,
     issue_owners = {}
     deadline_owners = {}
     event_lookup = {}
+    event_objects = {}
     aliases = correction_aliases or {}
     unstable_disclosures = set(corrected_disclosures or ())
     unstable_documents = set(corrected_documents or ())
@@ -532,6 +696,18 @@ def build_proceedings(events, correction_aliases=None,
                 "dependency:event_missing_or_other_proceeding")
         return target, corrected
 
+    def referenced_event(ref, pid):
+        resolved, corrected = resolve_reference(ref, pid)
+        return event_objects[resolved], resolved, corrected
+
+    def official_notice(event, categories):
+        return (
+            event["kind"] == "document_event"
+            and event["document_category"] in categories
+            and event["operation"] in ("shown", "available")
+            and event["source"] in ("document_seen", "authority_record_seen")
+        )
+
     for position, e in enumerate(events):
         pid = e["proceeding_id"]
         kind = e["kind"]
@@ -549,6 +725,8 @@ def build_proceedings(events, correction_aliases=None,
                 "stage": "identified", "stage_history": [], "steps": [],
                 "lodgement": "not_established",
                 "decision": "not_recorded", "notification": "not_recorded",
+                "administrative_outcome_records": [],
+                "post_issuance_events": [],
                 "documents": {}, "disclosures": {}, "authority_positions": [],
                 "deadlines": {}, "issues": {}, "event_ids": [], "timeline": [],
                 "flags": [], "unresolved_dependencies": []
@@ -651,6 +829,75 @@ def build_proceedings(events, correction_aliases=None,
                 "classified_as": e["classified_as"],
                 "source": e["source"], "event_id": e["event_id"]
             })
+        elif kind == "administrative_outcome":
+            classification = e["classification"]
+            evidence_id = e.get("evidence_event_id")
+            evidence = None
+            resolved_evidence_id = None
+            evidence_corrected = False
+            if evidence_id is not None:
+                evidence, resolved_evidence_id, evidence_corrected = referenced_event(
+                    evidence_id, pid)
+            if classification in {
+                "article18_not_competent", "article19_inadmissible",
+                "article32_substantive_refusal"
+            }:
+                require(p["type"] == "ordinary_short_stay_visa",
+                        "outcome:visa_code_article_requires_short_stay_visa_proceeding")
+                if classification == "article18_not_competent":
+                    require(p["authority_role"] == "consulate",
+                            "outcome:article18_requires_consular_proceeding")
+                if not evidence_corrected:
+                    require(official_notice(evidence, {"decision_notice"}),
+                            "outcome:visa_code_article_requires_decision_notice_evidence")
+            elif classification == "visa_issued":
+                require(p["type"] in (
+                    "eu_family_entry_visa", "ordinary_short_stay_visa",
+                    "national_long_stay_visa", "visa_appeal"),
+                    "outcome:visa_issued_requires_visa_proceeding")
+                if not evidence_corrected:
+                    require(official_notice(evidence, {"decision_notice", "visa_document"}),
+                            "outcome:visa_issued_requires_visa_or_decision_document")
+            elif classification == "other":
+                if not evidence_corrected:
+                    require(official_notice(evidence, {"decision_notice"}),
+                            "outcome:other_requires_decision_notice_evidence")
+            if evidence_corrected:
+                p["flags"].append("administrative_outcome_evidence_corrected_reassess")
+                p["unresolved_dependencies"].append({
+                    "event_id": e["event_id"], "reference": evidence_id,
+                    "corrected_to": resolved_evidence_id,
+                    "reason": "administrative_outcome_requires_reassessment"
+                })
+            p["administrative_outcome_records"].append({
+                "event_id": e["event_id"], "classification": classification,
+                "source": e["source"], "evidence_event_id": evidence_id,
+                "resolved_evidence_event_id": resolved_evidence_id,
+                "evidence_reference_corrected": evidence_corrected,
+                "explanation": e.get("explanation"),
+                "missing_evidence_explanation": e.get("missing_evidence_explanation"),
+                "assurance": "source_attributed_not_legal_validation"
+            })
+        elif kind == "post_issuance_event":
+            require(p["type"] in (
+                "eu_family_entry_visa", "ordinary_short_stay_visa",
+                "national_long_stay_visa", "visa_appeal"),
+                "post_issuance:requires_visa_proceeding")
+            evidence, resolved_evidence_id, evidence_corrected = referenced_event(
+                e["evidence_event_id"], pid)
+            if not evidence_corrected:
+                require(official_notice(evidence, {"decision_notice", "visa_document"}),
+                        "post_issuance:requires_visa_or_decision_document")
+            if evidence_corrected:
+                p["flags"].append("post_issuance_evidence_corrected_reassess")
+            p["post_issuance_events"].append({
+                "event_id": e["event_id"], "event_type": e["event_type"],
+                "source": e["source"], "evidence_event_id": e["evidence_event_id"],
+                "resolved_evidence_event_id": resolved_evidence_id,
+                "evidence_reference_corrected": evidence_corrected,
+                "explanation": e.get("explanation"),
+                "assurance": "source_attributed_not_legal_validation"
+            })
         elif kind == "document_event":
             did = e["document_id"]
             prior_category = global_documents.get(did)
@@ -705,6 +952,7 @@ def build_proceedings(events, correction_aliases=None,
                     "reason": "delivery_or_reliance_requires_content_reassessment"
                 })
                 event_lookup[e["event_id"]] = pid
+                event_objects[e["event_id"]] = e
                 continue
             require(disclosures_seen.get(did) == pid,
                     "disclosure:observation_wrong_ref")
@@ -816,8 +1064,11 @@ def build_proceedings(events, correction_aliases=None,
                 "last_event_id": e["event_id"]
             }
         event_lookup[e["event_id"]] = pid
+        event_objects[e["event_id"]] = e
     out = []
     for p in ordered.values():
+        p["administrative_outcome"] = summarize_administrative_outcome(
+            p["administrative_outcome_records"])
         for d in p["disclosures"].values():
             if d["transmission_failed"] and (
                 d["transmission_delivered"] or d["receipt_acknowledged"]
@@ -934,6 +1185,18 @@ def feature_tags(p, requested_focus=()):
         t.update(("interview", "fraud"))
     if steps.intersection({"decision_taken", "decision_notified"}):
         t.add("decision")
+    if p.get("administrative_outcome_records"):
+        t.add("decision")
+        if any(item["classification"] in {
+            "article18_not_competent", "article19_inadmissible",
+            "article32_substantive_refusal", "visa_issued"
+        } for item in p["administrative_outcome_records"]):
+            t.add("visa")
+        if any(item["classification"] == "withdrawn_or_not_pursued"
+               for item in p["administrative_outcome_records"]):
+            t.add("withdrawal")
+    if p.get("post_issuance_events"):
+        t.update(("visa", "decision"))
     if steps.intersection({"review_filed", "reopened"}):
         t.add("review")
     return t
@@ -1148,7 +1411,7 @@ def make_coverage(proceedings, records, responses, registry, raw_events,
 def evaluate(data, *, full=False, registry=None):
     object_keys(data, {"schema", "mode", "case_ref", "events"},
                 {"responses", "requested_focus"}, "case")
-    require(data["schema"] in (SCHEMA, "c27-abstract-session/0.2.0"),
+    require(data["schema"] == SCHEMA or data["schema"] in LEGACY_SCHEMAS,
             "case:schema")
     value_in(data["mode"], {"fictional_fixture", "abstract_nonidentifying"},
              "case:mode")
@@ -1252,7 +1515,9 @@ def compare(previous, current, *, registry=None):
                             "kind": "new_proceeding"})
             continue
         for field in ("type", "claimed_regime", "stage", "lodgement",
-                      "decision", "notification", "documents", "disclosures",
+                      "decision", "notification", "administrative_outcome",
+                      "administrative_outcome_records", "post_issuance_events",
+                      "documents", "disclosures",
                       "authority_positions", "deadlines", "issues"):
             if old[field] != new[field]:
                 changes.append({"proceeding_id": new["proceeding_id"],
