@@ -2,7 +2,7 @@
 
 ## Status
 
-C5a engine/ruleset version `0.1.1` is implemented in `eudirective-core` v0.14.0 while preserving the frozen C3 producer boundary: inter-skill contract `0.2.0`, conformance profile `0.2.0`, controller protocol `0.3.0`, and element model `0.2.0` remain unchanged.
+C5a topology engine version `0.1.1` and applicability engine/ruleset version `0.1.2` are implemented in `eudirective-core` while preserving the frozen C3 producer boundary: inter-skill contract `0.2.0`, conformance profile `0.2.0`, controller protocol `0.3.0`, and element model `0.2.0` remain unchanged.
 
 C5a has two one-way stages:
 
@@ -75,7 +75,22 @@ Candidate dispositions are `candidate`, `not_indicated`, `blocked`, or `unknown`
 
 For the relevant Union-citizen actor, recognized positive tokens are `established`, `eu_citizen_established`, and `confirmed`; recognized negative tokens are `not_established`, `not_eu_citizen`, and `excluded`. Any other or missing value blocks the Directive candidate rather than guessing. Actor-scoped family-member candidate generation additionally requires a recognized family-member status and `accompanying_or_joining=true` for the scoped applicant/Union-citizen pair.
 
-Visa/Schengen relevance is generated from a visa/entry procedure label as a review candidate. Where a Directive candidate and Visa Code candidate coexist, C5a emits `directive_visa_code_lex_specialis=review_required`. C5a does not resolve hierarchy or lex specialis; that belongs to C5b.
+Visa Code and Schengen candidates use an exact normalized procedure label table. No substring test promotes a procedure to a visa application. These are candidate-generation outcomes only; they do not establish legal applicability.
+
+| Procedure label | Visa Code candidate | Schengen candidate | C5a treatment |
+|---|---|---|---|
+| `ordinary_short_stay_visa` | candidate | candidate | Treat the identified short-stay visa application as a procedural-framework candidate. |
+| `national_long_stay_visa` | not indicated | not indicated | Do not activate the Visa Code just because the instrument is a national D visa. |
+| `eu_family_entry_visa` | unknown | unknown | Preserve C/D uncertainty; identify the instrument before selecting visa-specific rules. |
+| `visa_appeal` | unknown | unknown | This is a review proceeding, not a new application. Identify the underlying instrument and challenged decision. |
+| `eu_family_residence_card`, `national_residence_permit`, `eu_citizen_registration`, `permanent_residence`, `family_status_recognition` | not indicated | not indicated | Residence and status proceedings do not inherit visa-specific rules. |
+| `border_admission` | not indicated | candidate | Assess the border proceeding under Schengen separately from visa-application classification. |
+| `administrative_appeal`, `judicial_review`, `process_complaint`, `conduct_complaint`, `supervisory_complaint`, `gdpr_access`, `file_access`, `evidence_preservation` | not indicated | not indicated | These labels do not themselves identify a Visa Code or Schengen visa/border proceeding. |
+| `other_procedure`, `entry_visa`, or an unrecognized label | unknown | unknown | Preserve uncertainty and record that the procedure type needs classification. |
+
+Exact aliases are recognized only where their meaning is explicit: `schengen_short_stay_visa`, `schengen_short_stay_visa_application`, `short_stay_visa`, `short_stay`, `short_stay_entry`, `type_c_visa`, and `schengen_c_visa` map to the short-stay row; `national_d_visa`, `long_stay_d_visa`, and `type_d_visa` map to the national long-stay row; `eu_family_entry_visa_c_or_d` and `eu_family_entry_visa_unknown_classification` map to the uncertain EU-family row; `visa_appeal_proceeding` maps to the appeal row. Matching is exact after case-folding and punctuation normalization. A generic `entry_visa` remains unknown.
+
+Where a Directive candidate and a Visa Code candidate coexist, C5a emits `directive_visa_code_lex_specialis=review_required`. C5a does not resolve hierarchy or lex specialis; that belongs to C5b.
 
 National procedure is represented only as a candidate plus Member-State role hints. C5a does not synthesize national legal content.
 

@@ -12,8 +12,8 @@ from source_library_paths import compatibility_root
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE_MANIFEST = compatibility_root() / "core-source-pack-manifest-0.6.1.json"
-ENGINE_VERSION = "0.1.1"
-RULESET_VERSION = "0.1.1"
+ENGINE_VERSION = "0.1.2"
+RULESET_VERSION = "0.1.2"
 ACTOR_CONTEXT_VERSION = "0.1.0"
 CONTRACT_VERSION = "0.2.0"
 ELEMENT_MODEL_VERSION = "0.2.0"
@@ -127,9 +127,91 @@ def normal_token(value):
         return None
     return re.sub(r"[^a-z0-9]+", "_", str(value).strip().lower()).strip("_")
 
-def visa_related(procedure_type):
+SHORT_STAY_VISA_TYPES = frozenset((
+    "ordinary_short_stay_visa", "schengen_short_stay_visa",
+    "schengen_short_stay_visa_application", "short_stay_visa",
+    "short_stay", "short_stay_entry", "type_c_visa", "schengen_c_visa",
+))
+NATIONAL_LONG_STAY_VISA_TYPES = frozenset((
+    "national_long_stay_visa", "national_d_visa", "long_stay_d_visa",
+    "type_d_visa",
+))
+EU_FAMILY_CLASSIFICATION_UNCERTAIN_TYPES = frozenset((
+    "eu_family_entry_visa", "eu_family_entry_visa_c_or_d",
+    "eu_family_entry_visa_unknown_classification", "entry_visa",
+))
+VISA_APPEAL_TYPES = frozenset(("visa_appeal", "visa_appeal_proceeding"))
+NON_VISA_PROCEDURE_TYPES = frozenset((
+    "border_admission", "eu_family_residence_card", "national_residence_permit",
+    "eu_citizen_registration", "permanent_residence", "family_status_recognition",
+    "administrative_appeal", "judicial_review", "process_complaint",
+    "conduct_complaint", "supervisory_complaint", "gdpr_access", "file_access",
+    "evidence_preservation",
+))
+
+
+def procedure_frameworks(procedure_type):
+    """Return separate Visa Code and Schengen candidates for an exact procedure label.
+
+    The labels describe the proceeding currently assessed. In particular, an
+    appeal is not silently converted into a fresh visa application, and a
+    border-admission proceeding is assessed under Schengen rules independently
+    of consular visa classification.
+    """
     token = normal_token(procedure_type) or ""
-    return "visa" in token.split("_") or token in {"entry_visa", "short_stay", "short_stay_entry"}
+    if token in SHORT_STAY_VISA_TYPES:
+        return {
+            "visa_code": ("candidate", "schengen_short_stay_procedure"),
+            "schengen": ("candidate", "schengen_short_stay_procedure"),
+            "unresolved": None,
+        }
+    if token in NATIONAL_LONG_STAY_VISA_TYPES:
+        return {
+            "visa_code": ("not_indicated", "national_long_stay_visa_not_visa_code_application"),
+            "schengen": ("not_indicated", "national_long_stay_visa_application"),
+            "unresolved": None,
+        }
+    if token in EU_FAMILY_CLASSIFICATION_UNCERTAIN_TYPES:
+        return {
+            "visa_code": ("unknown", "eu_family_visa_classification_unresolved"),
+            "schengen": ("unknown", "eu_family_visa_classification_unresolved"),
+            "unresolved": {
+                "code": "eu_family_visa_classification_unresolved",
+                "scope": "legal_regime.visa_code_and_schengen",
+                "detail": "The procedure label does not establish whether this EU-family entry visa is a Schengen C visa or a national D visa. Confirm the instrument sought or issued before applying visa-specific procedure rules.",
+            },
+        }
+    if token in VISA_APPEAL_TYPES:
+        return {
+            "visa_code": ("unknown", "appeal_underlying_visa_regime_unresolved"),
+            "schengen": ("unknown", "appeal_underlying_visa_regime_unresolved"),
+            "unresolved": {
+                "code": "appeal_underlying_visa_regime_unresolved",
+                "scope": "legal_regime.visa_code_and_schengen",
+                "detail": "A visa appeal is a review proceeding, not a new visa application. The underlying visa type and challenged decision must be identified before the Visa Code or Schengen procedure is selected.",
+            },
+        }
+    if token == "border_admission":
+        return {
+            "visa_code": ("not_indicated", "border_proceeding_not_visa_application"),
+            "schengen": ("candidate", "border_admission_proceeding"),
+            "unresolved": None,
+        }
+    if token in NON_VISA_PROCEDURE_TYPES:
+        return {
+            "visa_code": ("not_indicated", "procedure_is_not_a_visa_application"),
+            "schengen": ("not_indicated", "procedure_is_not_a_schengen_visa_or_border_proceeding"),
+            "unresolved": None,
+        }
+    return {
+        "visa_code": ("unknown", "procedure_type_not_explicitly_classified"),
+        "schengen": ("unknown", "procedure_type_not_explicitly_classified"),
+        "unresolved": {
+            "code": "procedure_type_not_explicitly_classified",
+            "scope": "legal_regime.visa_code_and_schengen",
+            "detail": "No explicit C5a procedure rule matches this label. Identify whether the matter is a short-stay visa application, national long-stay visa matter, appeal, residence procedure, or border-admission proceeding.",
+        },
+    }
 
 def target_module_roles(topology):
     roles = topology["roles"]
@@ -324,24 +406,26 @@ def build_candidates(case_obj, topology, element_bundle=None, source_manifest=No
                 missing=["movement.cross_border"], sources=["eu:32004l0038", "eu:c-2023-1392"]
             )
 
-    is_visa = visa_related(case_obj["procedure_type"])
+    framework_rules = procedure_frameworks(case_obj["procedure_type"])
+    if framework_rules["unresolved"] is not None:
+        unresolved.append(framework_rules["unresolved"])
+    visa_status, visa_reason = framework_rules["visa_code"]
+    schengen_status, schengen_reason = framework_rules["schengen"]
     visa = candidate(
         "legal_regime.visa_code", "procedural_framework",
-        "candidate" if is_visa else "not_indicated",
-        ["visa_procedure_label"] if is_visa else ["non_visa_procedure_label"],
+        visa_status, [visa_reason],
         deps=["procedure.type"],
         sources=["eu:32009r0810", "eu:visa-code-handbook-i-2024"],
-        limitations=["C5a marks procedural relevance only; C5b must resolve any lex-specialis interaction with free-movement law."],
-        review=is_visa
+        limitations=["C5a marks procedural relevance only; it does not establish that the Visa Code governs the facts or resolve any lex-specialis interaction with free-movement law."],
+        review=visa_status != "not_indicated"
     )
     schengen = candidate(
         "legal_regime.schengen", "procedural_framework",
-        "candidate" if is_visa else "not_indicated",
-        ["visa_or_entry_context"] if is_visa else ["no_schengen_entry_signal"],
+        schengen_status, [schengen_reason],
         deps=["procedure.type"],
         sources=["eu:32016r0399", "eu:32018r1806"],
         limitations=["This candidate does not determine territorial participation, border conditions, or visa exemption status."],
-        review=is_visa
+        review=schengen_status != "not_indicated"
     )
 
     module_hints = target_module_roles(topology)
@@ -405,12 +489,13 @@ def build_candidates(case_obj, topology, element_bundle=None, source_manifest=No
             "detail":"C5a does not infer returnee status from geography alone."
         }
 
-    if is_visa and directive["disposition"] == "candidate":
+    if visa_status == "candidate" and directive["disposition"] == "candidate":
         lex_status = "review_required"
         lex_detail = "Both Directive 2004/38 and Visa Code candidates are present. C5a preserves the interaction; C5b must resolve hierarchy/lex-specialis effects."
-    elif is_visa and directive["disposition"] in {"blocked", "unknown"}:
+    elif (visa_status in {"candidate", "unknown"}
+          and directive["disposition"] in {"candidate", "blocked", "unknown"}):
         lex_status = "blocked"
-        lex_detail = "Visa Code relevance is indicated but the free-movement candidate is unresolved, so hierarchy/lex-specialis review cannot yet be completed."
+        lex_detail = "Visa Code relevance or the underlying visa type remains unresolved, so hierarchy/lex-specialis review cannot yet be completed."
     else:
         lex_status = "not_indicated"
         lex_detail = "The current candidate set does not require a Directive/Visa-Code hierarchy comparison."
