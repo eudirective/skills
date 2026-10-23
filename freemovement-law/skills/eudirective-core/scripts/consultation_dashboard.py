@@ -39,6 +39,7 @@ LEGAL_CATEGORIES = {
     "official_guidance", "procedural_rule", "other_legal_text",
 }
 UNRESOLVED_ISSUES = {"answered_conditionally", "source_missing", "fact_missing"}
+ISSUE_ROUTE_SCHEMAS = {"0.5.0", "0.6.0"}
 OPAQUE_REF = re.compile(r"^r_[a-f0-9]{12,32}$")
 SECTION_LABELS = {
     "eu": "EU core", "at": "Austria", "be": "Belgium", "bg": "Bulgaria",
@@ -252,11 +253,11 @@ def unresolved_issue_refs(route: dict) -> set[str]:
     result = set()
     for issue in route.get("issues", []):
         disposition_open = issue.get("disposition") in UNRESOLVED_ISSUES
-        attack_open = route.get("schema_version") == "0.5.0" and any(
+        attack_open = route.get("schema_version") in ISSUE_ROUTE_SCHEMAS and any(
             item.get("outcome") == "unresolved"
             for item in issue.get("attack_angle_reviews", [])
         )
-        if route.get("schema_version") == "0.5.0" and issue.get("disposition") == "answered_conditionally":
+        if route.get("schema_version") in ISSUE_ROUTE_SCHEMAS and issue.get("disposition") == "answered_conditionally":
             closure = issue.get("conditional_closure", {})
             if closure.get("status") in {"evidence_resolved", "qualified_condition"}:
                 disposition_open = False
@@ -505,6 +506,65 @@ def _humanize(value: str) -> str:
     return value.replace("_", " ").replace(".", " / ")
 
 
+def typed_issue_route_lines(route_record: dict) -> list[str]:
+    """Render version 0.6 proceeding, outcome/event provenance, and route scope."""
+    lines: list[str] = []
+    procedure_type = route_record.get("procedure_type")
+    lines.append(
+        f"Proceeding: **{_humanize(procedure_type) if procedure_type else 'not recorded'}**."
+    )
+    outcome_class = route_record.get("administrative_outcome_classification")
+    outcome_source = route_record.get("administrative_outcome_source")
+    if outcome_class:
+        outcome_text = _humanize(outcome_class)
+        if outcome_source:
+            outcome_text += f" · source: {_humanize(outcome_source)}"
+        route_status = route_record.get("administrative_outcome_routing_status")
+        if route_status:
+            outcome_text += f" · routing record: {_humanize(route_status)}"
+        lines.append(f"Recorded administrative outcome: **{outcome_text}**.")
+    elif any(item.get("status", "").startswith("administrative_outcome")
+             for item in route_record.get("route_scope_statuses", [])):
+        lines.append("Administrative outcome: **not established for routing**.")
+    event_type = route_record.get("post_issuance_event_type")
+    if event_type:
+        event_text = _humanize(event_type)
+        if route_record.get("post_issuance_event_source"):
+            event_text += f" · source: {_humanize(route_record['post_issuance_event_source'])}"
+        event_text += (
+            " · routing record: "
+            + _humanize(route_record.get("post_issuance_event_routing_status", "unknown"))
+        )
+        lines.append(f"Recorded post-issuance event: **{event_text}**.")
+    elif any(item.get("status") == "post_issuance_event_unverified"
+             for item in route_record.get("route_scope_statuses", [])):
+        lines.append("Post-issuance event: **not established for routing**.")
+    scope_statuses = route_record.get("route_scope_statuses", [])
+    if scope_statuses:
+        lines.append("**Route checks for this proceeding:**")
+        not_selected_reasons = {
+            "not_selected_outcome_mismatch": "The recorded outcome belongs to a different route.",
+            "not_selected_no_formal_outcome": "No formal decision was recorded; access or lodgement remains a separate route.",
+            "not_selected_outcome_unverified": "The formal outcome is not established from an official record.",
+            "not_selected_signal_missing": "The recorded outcome matches, but its corresponding route signal was not declared.",
+        }
+        for scope_status in scope_statuses:
+            route_id = scope_status.get("route_id", "route")
+            status = scope_status.get("status", "unknown")
+            if status == "applicable":
+                lines.append(f"- **Included** — `{route_id}`.")
+            elif status in not_selected_reasons:
+                lines.append(
+                    f"- **Not selected** — `{route_id}`; {not_selected_reasons[status]}"
+                )
+            else:
+                lines.append(
+                    f"- **Not activated** — `{route_id}`; {status.replace('_', ' ')}. "
+                    "The related missing requirement is listed in the open-work section."
+                )
+    return lines
+
+
 def _gap_work(gap: str) -> dict | None:
     """Turn a structural gap into a concise, user-facing missing/effect item."""
     # The unresolved issue summary already explains this disposition.
@@ -538,6 +598,29 @@ def _gap_work(gap: str) -> dict | None:
             "title": f"Issue-linked case-state check: {_humanize(check_id)}",
             "missing": f"This check is {state.replace('_', ' ')}; the recorded evidence does not close it.",
             "effect": "That issue cannot be treated as fully reconciled.",
+        }
+    if gap.startswith("issue:") and ":route_scope:" in gap:
+        parts = gap.split(":")
+        status = parts[-1] if len(parts) >= 5 else "unresolved"
+        missing_by_status = {
+            "procedure_type_unresolved": "The proceeding type is not established.",
+            "visa_framework_unresolved": "The applicable visa legal framework is unresolved.",
+            "underlying_application_proceeding_required": "The linked underlying application proceeding is missing or unresolved.",
+            "administrative_outcome_unverified": "An official record establishing the administrative outcome is missing or unverified.",
+            "administrative_outcome_classification_mismatch": "The recorded outcome does not match this route.",
+            "post_issuance_event_unverified": "An official record of the post-issuance event is missing or unverified.",
+            "procedure_scope_mismatch": "The declared proceeding type is outside this route's scope.",
+        }
+        return {
+            "title": "Proceeding route scope",
+            "missing": missing_by_status.get(status, f"Route scope status is {status.replace('_', ' ')}."),
+            "effect": "The route remains unresolved or excluded until its scope is established.",
+        }
+    if gap.startswith("issue:") and ":administrative_outcome_signal_missing:" in gap:
+        return {
+            "title": "Outcome-to-route reconciliation",
+            "missing": "The source-attributed formal outcome has no matching declared route signal.",
+            "effect": "The matching legal route cannot be reconciled with the issue record, so the assessment remains partial.",
         }
     if gap.startswith("classification:"):
         _, name, _state = gap.split(":", 2)
@@ -700,7 +783,7 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
             if issue.get("disposition") != "answered_conditionally":
                 continue
             closure_status = issue.get("conditional_closure", {}).get("status")
-            if (route.get("schema_version") == "0.5.0"
+            if (route.get("schema_version") in ISSUE_ROUTE_SCHEMAS
                     and closure_status in {"evidence_resolved", "qualified_condition"}
                     and not issue_has_open_gap(issue["issue_ref"])):
                 conditionally_closed += 1
@@ -708,7 +791,7 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
                 conditionally_open += 1
     partial_count = conditionally_open + disposition_counts["source_missing"] + disposition_counts["fact_missing"]
     out_of_scope_count = disposition_counts["out_of_scope"]
-    if route.get("schema_version") == "0.5.0":
+    if route.get("schema_version") in ISSUE_ROUTE_SCHEMAS:
         # An unresolved mandatory attack screen keeps its issue open even when
         # the issue's primary disposition was recorded as supported.
         for issue in issue_records or []:
@@ -1024,7 +1107,7 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
         issue_by_ref = {item["issue_ref"]: item for item in scoped_issues}
         assigned_assessment_refs: set[str] = set()
         for entry in scoped_checks:
-            if (route.get("schema_version") != "0.5.0"
+            if (route.get("schema_version") not in ISSUE_ROUTE_SCHEMAS
                     or entry.get("binding_kind") != "issue_specific"):
                 continue
             bound_refs = entry.get("bound_issue_refs", [])
@@ -1089,7 +1172,7 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
             closure = issue.get("conditional_closure", {})
             closure_status = closure.get("status")
             unresolved_mandatory_screen = (
-                route.get("schema_version") == "0.5.0"
+                route.get("schema_version") in ISSUE_ROUTE_SCHEMAS
                 and any(
                     item.get("outcome") == "unresolved"
                     for item in issue.get("attack_angle_reviews", [])
@@ -1097,10 +1180,10 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
             )
             if disposition == "answered_conditionally":
                 other_issue_work_open = issue_has_open_gap(issue["issue_ref"])
-                if (route.get("schema_version") == "0.5.0"
+                if (route.get("schema_version") in ISSUE_ROUTE_SCHEMAS
                         and closure_status == "evidence_resolved" and not other_issue_work_open):
                     marker, label = "🟦", "Condition resolved"
-                elif (route.get("schema_version") == "0.5.0"
+                elif (route.get("schema_version") in ISSUE_ROUTE_SCHEMAS
                         and closure_status == "qualified_condition" and not other_issue_work_open):
                     marker, label = "🟦", "Qualified answer"
                 elif other_issue_work_open and closure_status in {"evidence_resolved", "qualified_condition"}:
@@ -1124,6 +1207,9 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
                 f"**{marker} {label} — {title}**",
                 scoped_evidence("Evidence", [issue["evidence_ref"]]),
             ])
+            route_record = issue_routing_by_ref.get(issue["issue_ref"], {})
+            if route.get("schema_version") == "0.6.0":
+                lines.extend(typed_issue_route_lines(route_record))
             if unresolved_mandatory_screen and primary_assessment:
                 lines.append(
                     f"Primary assessment: {primary_assessment}; the issue remains partial/open "
@@ -1496,7 +1582,7 @@ def validate_dashboard_receipt(route: dict, evidence_index: dict[str, dict], rou
     ledger = route.get("source_ledger")
     if not isinstance(ledger, dict):
         raise DashboardError("mandatory_source_ledger_missing")
-    if route.get("schema_version") == "0.5.0":
+    if route.get("schema_version") in ISSUE_ROUTE_SCHEMAS:
         validate_strict_source_provenance(ledger)
     metrics = validate_source_ledger(ledger)
     unresolved = unresolved_issue_refs(route)

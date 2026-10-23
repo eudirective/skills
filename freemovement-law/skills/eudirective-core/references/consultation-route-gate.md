@@ -16,9 +16,10 @@ The input uses `references/contracts/consultation-route-receipt.schema.json`
 and conversation source-discovery methods; 0.4.0 adds issue records and a
 dashboard; strict 0.5.0 adds per-issue C27 assessment bindings, policy-derived
 source classes, attack-screen predicate traces, abstract revision comparison,
-and strict provenance requirements. Receipts 0.1.0–0.4.0 remain readable for
-historical replay but are not accepted by the strict controlled-release path.
-That command requires 0.5.0. It records classification states, workflow
+and strict provenance requirements; strict 0.6.0 adds typed proceeding scopes
+and source-attributed outcome/post-issuance routing. Receipts 0.1.0–0.4.0
+remain readable for historical replay but are not accepted by the strict
+controlled-release path. That command accepts 0.5.0 and 0.6.0. It records classification states, workflow
 IDs, C27 check IDs/statuses, reason codes, and generated opaque references
 (`r_` followed by 12–32 lowercase hex characters). It also carries constrained
 relative paths and digests needed to run local validators. Keep actual
@@ -80,12 +81,12 @@ text-field heuristic.
   `source_missing` and `fact_missing` dispositions remain open for a
   comprehensive claim. This is additive: older 0.1 receipts without `issues`
   retain their prior validation behavior.
-- For strict 0.5.0, every C27 occurrence has an opaque assessment reference and
+- For strict 0.5.0 and 0.6.0, every C27 occurrence has an opaque assessment reference and
   is bound either to exactly one issue or to an explicitly shared proceeding
   set. Duplicate `(scope, check, issue)` occurrences are rejected even when
   they use different assessment references. Issue-specific checks cannot be
   borrowed from a separate issue in the same proceeding.
-- For strict 0.5.0, derives required C27 check IDs, source-owner IDs,
+- For strict 0.5.0 and 0.6.0, derives required C27 check IDs, source-owner IDs,
   source-class requirements, exclusions and attack-review topics from each
   declared issue's route/signal predicates using the existing routing matrix
   and the versioned `consultation-source-class-policy.json`. Conditional
@@ -97,7 +98,7 @@ text-field heuristic.
   validated 0.3.0 source preflight. Missing or open source work, unresolved
   attack topics, unlinked candidate issues, or missing routed checks block
   `comprehensive` and remain visible in the dashboard.
-- Every strict 0.5.0 attack-topic record repeats selector-derived route
+- Every strict 0.5.0 and 0.6.0 attack-topic record repeats selector-derived route
   triggers and records their states separately from adverse predicates. A
   route trigger selects review; it does not prove the adverse condition. For
   a mapped pathway, `adverse_predicate_states` must bind to the pathway's
@@ -181,7 +182,7 @@ text-field heuristic.
   rechecks those exact bytes before release. This is a local controller path,
   not a host release gate.
 - `consultation_release_gate.py controlled-release` is the strict one-call
-  path for 0.5.0 applicant-guidance or source-research artifacts. It requires a
+  path for 0.5.0 and 0.6.0 applicant-guidance or source-research artifacts. It requires a
   validated full dashboard, rechecks receipt and answer bytes immediately
   before output, and emits no answer bytes when validation fails. A partial
   answer can pass with open work shown; an unsupported comprehensive claim is
@@ -218,7 +219,7 @@ required check selection for each declared issue/scope. It cannot determine
 whether the model omitted an issue, chose an incomplete signal set, or attached
 an accurate disposition.
 
-For 0.5.0 it derives declared source-owner and source-class coverage from the
+For 0.5.0 and 0.6.0 it derives declared source-owner and source-class coverage from the
 versioned policy and checks every topic named by the existing routing matrix.
 This does not prove that the policy or declared signal set includes every
 legally relevant source class or issue. The attack screen remains
