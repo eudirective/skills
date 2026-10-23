@@ -7,7 +7,7 @@
 | Arm | Plugin / core | Source identity |
 |---|---|---|
 | Baseline | `0.58.2` / `0.57.2` | `eudirective/skills` commit `d5db832670c43aac2c69f53c29b9f2511f28de79` |
-| Candidate | `0.59.0` / `0.58.0` | `eudirective/skills` commit `0b5feea2500114bcddf9ea868cf8365b9e43ab58` |
+| Candidate | `0.59.0` / `0.58.0` | `eudirective/skills` commit `70437f660b97ec1b55b1aef1361ad48f1d1e3186` (local candidate source; not published) |
 
 Before a live comparison, load each exact build separately and confirm the visible plugin/core versions. Do not treat the currently installed baseline as the candidate. If either build identity cannot be confirmed, leave the live run unexecuted.
 
@@ -82,7 +82,7 @@ Use ordinary fictional chat prompts through the installed candidate in separate 
 
 **Check:** each issue card names the proceeding type and records whether the outcome/event can be used for routing. Article 19 selects its own route and leaves the Article 32 route unactivated; the Article 32 route appears only with a matching official outcome record in the correct proceeding. A blocked lodgement without a formal decision stays on the access/lodgement route and says the formal outcome is missing. A revocation shows a separate event and requires national remedy/service-deadline checks to be researched; expiry does not inherit those cancellation/revocation checks. Missing, disputed or unverified records are named as outstanding work. This manual display check remains deferred and is not a maintenance-session prerequisite.
 
-For case 5, the consultation board should show **Other**, make clear that its explanation and evidence reference are recorded, and avoid promoting it into an Article 19 or Article 32 route. For case 6, it should show **Undetermined**, state what evidence is missing or conflicting, and keep the specific outcome routes unresolved. A missing or disputed classification must not be presented as a formal decision.
+For case 5, the consultation board should show **Other**, state that its C27 explanation and evidence reference need review, and avoid promoting it into an Article 19 or Article 32 route. For case 6, it should show **Undetermined**, state what evidence is missing or conflicting, and keep the specific outcome routes unresolved. In both cases, any issue recorded as supported while its outcome route remains open must appear in the partial/open metric, and overall coverage must remain partial. A missing or disputed classification must not be presented as a formal decision.
 
 ## Review checklist
 

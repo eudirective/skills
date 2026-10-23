@@ -948,6 +948,40 @@ class ConsultationDashboardTests(unittest.TestCase):
             preview,
         )
 
+    def test_unresolved_administrative_outcome_moves_supported_issue_into_partial_metric(self):
+        cases = (
+            (
+                "administrative_outcome_undetermined",
+                "The formal outcome remains undetermined",
+            ),
+            (
+                "administrative_outcome_other_requires_manual_route_review",
+                "The C27 explanation and evidence reference for this Other outcome need review",
+            ),
+        )
+        for gap_code, expected_open_work in cases:
+            with self.subTest(gap_code=gap_code):
+                issue_ref = "r_0000000000000051"
+                route = make_route(coverage="partial", assessment_status="partial")
+                route["schema_version"] = "0.6.0"
+                route["issues"] = [{
+                    "issue_ref": issue_ref, "scope_ref": "r_0000000000000003",
+                    "signal_ids": ["outcome_article32_substantive_refusal"],
+                    "disposition": "answered_supported",
+                    "evidence_ref": "r_0000000000000001",
+                }]
+                route["dashboard"]["issue_summaries"] = []
+                metrics = self.report(make_route())["render_metrics"]
+                gap = f"issue:{issue_ref}:{gap_code}"
+                preview = render_dashboard(
+                    route, metrics, [gap], REQUIRED_OPERATIONS["applicant_guidance"]
+                )
+
+                self.assertIn("| **1** | **0** | **1** |", preview)
+                self.assertIn("🟩 Supported: **0 (0%)**", preview)
+                self.assertIn("🟨 Partial/open: **1 (100%)**", preview)
+                self.assertIn(expected_open_work, preview)
+
     def test_scope_level_c27_gap_is_not_misattributed_to_another_issue_with_same_check_id(self):
         route = make_route(coverage="partial", assessment_status="partial")
         route["schema_version"] = "0.5.0"
