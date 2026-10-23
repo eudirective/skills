@@ -519,9 +519,36 @@ def typed_issue_route_lines(route_record: dict) -> list[str]:
         outcome_text = _humanize(outcome_class)
         if outcome_source:
             outcome_text += f" · source: {_humanize(outcome_source)}"
+        if outcome_class == "other":
+            evidence_status = route_record.get(
+                "administrative_outcome_evidence_reference_recorded"
+            )
+            if evidence_status is True:
+                outcome_text += " · evidence reference recorded"
+            elif evidence_status is False:
+                outcome_text += " · evidence reference missing"
+        if outcome_class == "undetermined":
+            missing_reason_text = {
+                "decision_notice_not_seen": "written decision not seen",
+                "outcome_not_recorded": "outcome not recorded",
+                "evidence_conflicts": "available outcome records conflict",
+                "other_recorded": "other missing evidence is recorded",
+            }
+            missing_reason = route_record.get(
+                "administrative_outcome_missing_evidence_reason"
+            )
+            if missing_reason:
+                detail = missing_reason_text.get(
+                    missing_reason, "missing evidence reason not recognized"
+                )
+                outcome_text += f" · missing evidence: {detail}"
         route_status = route_record.get("administrative_outcome_routing_status")
         if route_status:
-            outcome_text += f" · routing record: {_humanize(route_status)}"
+            route_status_text = {
+                "outcome_undetermined": "unresolved",
+                "other_outcome_requires_manual_route_review": "manual route review required",
+            }.get(route_status, _humanize(route_status))
+            outcome_text += f" · routing: {route_status_text}"
         lines.append(f"Recorded administrative outcome: **{outcome_text}**.")
     elif any(item.get("status", "").startswith("administrative_outcome")
              for item in route_record.get("route_scope_statuses", [])):
