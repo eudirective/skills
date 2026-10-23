@@ -12,17 +12,17 @@ Use this as the visual pattern for a full consultation board. It is ordinary Mar
 
 ### At a glance
 
-| **Issues reviewed** | **Supported** | **Partial / open** |
+| **Issues reviewed** | **Supported / conditionally closed** | **Partial / open** |
 | :---: | :---: | :---: |
 | **6** | **3** | **3** |
 
-**Assessment coverage · 6 / 6 recorded issues reviewed**
+**Recorded issue outcomes · 6 issues**
 
 🟩🟩🟩🟨🟨🟨
 
-🟩 Supported: **3 (50%)** · 🟨 Partial/open: **3 (50%)** · ⚪ Out of scope: **0 (0%)**
+🟩 Supported: **3 (50%)** · 🟦 Conditionally closed: **0 (0%)** · 🟨 Partial/open: **3 (50%)** · ⚪ Out of scope: **0 (0%)**
 
-*Each square represents one issue with a recorded disposition. Percentages describe only the distribution of these recorded outcomes, not legal completeness or proof that every relevant issue was found. Counts are model-reported.*
+*The supported/closed metric combines direct supported and conditionally closed answers; this distribution separates them. Each square represents one issue with a recorded disposition. Percentages describe only the distribution of these recorded outcomes, not legal completeness or proof that every relevant issue was found. Counts are model-reported.*
 
 ### Review scope
 
@@ -32,7 +32,11 @@ Use this as the visual pattern for a full consultation board. It is ordinary Mar
 - **Urgency:** no verified filing deadline; appointment delay may affect timing.
 - **Requested:** explain the route, identify unresolved points, and give practical next steps.
 
-### Assessment by issue
+### Assessment by scope
+
+Issues and selected C27 checks below share **Scope 1**. A C27 check with an exact issue-level receipt link appears inside that issue's card. Shared, legacy, or otherwise unlinked checks appear once in the scope list; do not infer a one-to-one relationship.
+
+#### Scope 1 — EU-family visa and residence review
 
 #### 🟩 Supported — EU-family visa route
 
@@ -40,15 +44,11 @@ Use this as the visual pattern for a full consultation board. It is ordinary Mar
 
 **Evidence and source basis:** reported marriage and joint travel; Directive 2004/38/EC and official EU guidance.
 
-**C27 checks:** `eu_scope.directive_scope` — assessed by source review; `eu_scope.accompany_or_join` — assessed by source review.
-
 #### 🟨 Partial — Formal visa lodging
 
 **Finding:** a stamped submission and online tracking were reported, but formal lodging is not established from the available record.
 
 **Evidence:** applicant's account of the stamp and tracking page.
-
-**C27 checks:** `lifecycle.lodgement_confirmed` — partial, model review; `lifecycle.receipt_evidence` — partial, model review.
 
 **Missing:** the receipt or submission record and its exact classification were not inspected.
 
@@ -60,8 +60,6 @@ Use this as the visual pattern for a full consultation board. It is ordinary Mar
 
 **Evidence:** reported fee treatment.
 
-**C27 check:** `case_intake.authority_classification` — partial, model review.
-
 **Missing:** a written classification, case-system record, or other confirmation from the authority.
 
 **Effect:** advice about the applicable procedure and any challenge should remain qualified.
@@ -71,8 +69,6 @@ Use this as the visual pattern for a full consultation board. It is ordinary Mar
 **Finding:** the EU acceleration requirement was reviewed; the individual processing clock and any exceptional justification remain open.
 
 **Evidence and source basis:** reported appointment/submission timeline; Directive 2004/38/EC and official EU guidance.
-
-**C27 checks:** `timing.accelerated_processing` — partial, source review; `timing.clock_start` — partial, model review.
 
 **Missing:** proof of formal lodging and the authority's explanation for the delay.
 
@@ -84,17 +80,25 @@ Use this as the visual pattern for a full consultation board. It is ordinary Mar
 
 **Evidence and source basis:** stated plan to reside in Spain; Spanish Article 8 procedure and applicable EU-law guidance.
 
-**C27 check:** `eu_scope.residence_card_entry_exemption` — assessed by source review.
-
 #### 🟩 Supported — Separate service grievance
 
 **Finding:** the reported staff treatment and access problem can be recorded as a separate service-grievance track, independently of the visa merits.
 
 **Evidence:** reported appointment delay and difficulty accessing the service.
 
-**C27 check:** `conduct.staff_treatment` — assessed by model review.
-
 **Scope:** this identifies a separate issue; it does not establish misconduct or resolve the available remedy or deadline.
+
+**Selected C27 checks for Scope 1**
+
+- `eu_scope.directive_scope` — **assessed · source review**. Reported relationship and cross-border plan; Directive 2004/38/EC and official EU guidance.
+- `eu_scope.accompany_or_join` — **assessed · source review**. Same scope evidence and sources as above.
+- `lifecycle.lodgement_confirmed` — **partial · model review**. Stamp and tracking were reported; formal receipt classification was not inspected. The lodging stage remains uncertain.
+- `lifecycle.receipt_evidence` — **partial · model review**. Submission record not inspected; the formal application date and clock start remain uncertain.
+- `case_intake.authority_classification` — **partial · model review**. Fee treatment was reported; written or system classification is missing, so the authority's route remains unverified.
+- `timing.accelerated_processing` — **partial · source review**. EU acceleration requirement reviewed; the authority's reason for delay remains missing.
+- `timing.clock_start` — **partial · model review**. Formal lodging evidence remains missing, so the individual processing clock cannot be established.
+- `eu_scope.residence_card_entry_exemption` — **assessed · source review**. The prospective residence-card procedure and entry exemption were considered separately.
+- `conduct.staff_treatment` — **assessed · model review**. Reported service conduct was recorded as a separate grievance track; this does not establish misconduct.
 
 ### Execution and verification
 

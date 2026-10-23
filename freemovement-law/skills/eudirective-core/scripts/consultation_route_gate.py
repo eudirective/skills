@@ -1250,10 +1250,21 @@ def validate_route(path: Path) -> dict:
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("route_receipt", type=Path)
+    parser.add_argument(
+        "--dashboard-only",
+        action="store_true",
+        help="write the validated Markdown dashboard to stdout without the surrounding JSON report",
+    )
     args = parser.parse_args(argv)
     try:
         result = validate_route(args.route_receipt)
-        print(json.dumps(result, sort_keys=True))
+        if args.dashboard_only:
+            preview = result.get("dashboard_preview")
+            if not isinstance(preview, str):
+                raise RouteGateError("dashboard_not_required_or_not_rendered")
+            sys.stdout.write(preview)
+        else:
+            print(json.dumps(result, sort_keys=True))
         if result["status"] == "rejected_comprehensive_claim":
             return 3
         return 0
