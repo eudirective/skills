@@ -19,6 +19,7 @@ from consultation_dashboard import (  # noqa: E402
     COUNTRY_CODES,
     _category,
     _load_catalog,
+    render_dashboard,
     validate_dashboard_receipt,
 )
 from consultation_route_gate import REQUIRED_OPERATIONS  # noqa: E402
@@ -710,8 +711,24 @@ class ConsultationDashboardTests(unittest.TestCase):
             self.assertEqual(validation["result"], checked_result["status"])
             self.assertEqual(validation["receipt_sha256"], hashlib.sha256(receipt.read_bytes()).hexdigest())
             preview = checked_result["dashboard_preview"]
+            raw_dashboard = subprocess.run(
+                [sys.executable, str(gate), str(receipt), "--dashboard-only"],
+                capture_output=True, text=True,
+            )
+            self.assertEqual(raw_dashboard.returncode, 0, raw_dashboard.stderr)
+            self.assertEqual(raw_dashboard.stdout, preview)
             self.assertIn(validation["receipt_sha256"], preview)
             self.assertIn(validation["result"].replace("_", " "), preview)
+            incomplete_answer_text = "The substantive answer.\n\n" + preview.replace(
+                "### Issue summary", "### Required issue summary omitted", 1
+            ) + "\n"
+            answer.write_text(incomplete_answer_text, encoding="utf-8")
+            omitted_section = subprocess.run([
+                sys.executable, str(released), "prepare", "--receipt", str(receipt),
+                "--answer", str(answer), "--binding", str(root / "omitted-section-binding.json"),
+            ], capture_output=True, text=True)
+            self.assertEqual(omitted_section.returncode, 2)
+            self.assertIn("mandatory_dashboard_missing", omitted_section.stderr)
             answer.write_text("The substantive answer.\n\n" + preview + "\n", encoding="utf-8")
             prepared = subprocess.run([
                 sys.executable, str(released), "prepare", "--receipt", str(receipt),
@@ -731,6 +748,253 @@ class ConsultationDashboardTests(unittest.TestCase):
             self.assertEqual(blocked.returncode, 2)
             self.assertIn("mandatory_dashboard_missing", blocked.stderr)
 
+    def test_renderer_matches_canonical_three_column_metrics_and_exact_status_distribution(self):
+        route = make_route(coverage="partial", assessment_status="partial")
+        scope_ref = "r_0000000000000003"
+        issue_records = [
+            {"issue_ref": f"r_{index:016x}", "scope_ref": scope_ref,
+             "signal_ids": ["formal_refusal_issued"], "disposition": disposition,
+             "evidence_ref": "r_0000000000000001"}
+            for index, disposition in enumerate((
+                "answered_supported", "answered_supported", "answered_conditionally",
+                "fact_missing", "out_of_scope",
+            ), start=10)
+        ]
+        issue_records[2]["conditional_closure"] = {
+            "status": "qualified_condition", "evidence_refs": ["r_0000000000000001"],
+        }
+        route["schema_version"] = "0.5.0"
+        route["issues"] = issue_records
+        route["dashboard"]["issue_summaries"] = [{
+            "issue_ref": issue_records[3]["issue_ref"], "title": "Lodging evidence",
+            "missing": "Submission receipt not inspected",
+            "effect": "Formal lodging remains unconfirmed.",
+        }]
+        metrics = self.report(make_route())["render_metrics"]
+        preview = render_dashboard(route, metrics, [], REQUIRED_OPERATIONS["applicant_guidance"])
 
+        self.assertIn("| **Issues reviewed** | **Supported / conditionally closed** | **Partial / open** |", preview)
+        self.assertIn("| **5** | **3** | **1** |", preview)
+        self.assertIn("🟩🟩🟦🟨⬜", preview)
+        self.assertIn("🟩 Supported: **2 (40%)**", preview)
+        self.assertIn("🟦 Conditionally closed: **1 (20%)**", preview)
+        self.assertIn("🟨 Partial/open: **1 (20%)**", preview)
+        self.assertIn("⚪ Out of scope: **1 (20%)**", preview)
+        self.assertIn("The supported/closed metric combines directly supported answers and conditionally closed answers", preview)
+        self.assertIn("Submission receipt not inspected", preview)
+        self.assertIn("Formal lodging remains unconfirmed.", preview)
+
+    def test_renderer_counts_over_twenty_issues_without_a_segmented_issue_bar(self):
+        route = make_route(coverage="partial", assessment_status="partial")
+        scope_ref = "r_0000000000000003"
+        dispositions = ["answered_supported"] * 2 + ["fact_missing"] + ["out_of_scope"] * 18
+        route["issues"] = [
+            {"issue_ref": f"r_{index:016x}", "scope_ref": scope_ref,
+             "signal_ids": ["formal_refusal_issued"], "disposition": disposition,
+             "evidence_ref": "r_0000000000000001"}
+            for index, disposition in enumerate(dispositions, start=30)
+        ]
+        route["dashboard"]["issue_summaries"] = [{
+            "issue_ref": route["issues"][2]["issue_ref"], "title": "Lodging evidence",
+            "missing": "Submission receipt not inspected",
+            "effect": "Formal lodging remains unconfirmed.",
+        }]
+        metrics = self.report(make_route())["render_metrics"]
+        preview = render_dashboard(route, metrics, [], REQUIRED_OPERATIONS["applicant_guidance"])
+
+        self.assertIn("| **21** | **2** | **1** |", preview)
+        self.assertIn("🟩 Supported: **2 (10%)**", preview)
+        self.assertIn("🟨 Partial/open: **1 (5%)**", preview)
+        self.assertIn("⚪ Out of scope: **18 (86%)**", preview)
+        self.assertIn("A bar is omitted above 20 issues.", preview)
+        emoji_only_lines = [
+            line for line in preview.splitlines()
+            if line and set(line) <= set("🟩🟦🟨⬜")
+        ]
+        self.assertFalse(emoji_only_lines, "the issue distribution should not emit a segmented bar above 20 issues")
+
+    def test_incomplete_issue_dispositions_hide_counts_and_explain_missing_bar(self):
+        route = make_route(coverage="partial", assessment_status="partial")
+        scope_ref = "r_0000000000000003"
+        route["issues"] = [
+            {"issue_ref": "r_0000000000000030", "scope_ref": scope_ref,
+             "signal_ids": ["formal_refusal_issued"], "disposition": "answered_supported",
+             "evidence_ref": "r_0000000000000001"},
+            {"issue_ref": "r_0000000000000031", "scope_ref": scope_ref,
+             "signal_ids": ["appointment_access_delayed"], "disposition": "not_recorded",
+             "evidence_ref": "r_0000000000000001"},
+        ]
+        route["dashboard"]["issue_summaries"] = [{
+            "issue_ref": "r_0000000000000031", "title": "Appointment access",
+            "missing": "The issue disposition is not recorded",
+            "effect": "Its outcome cannot be included in coverage counts.",
+        }]
+        metrics = self.report(make_route())["render_metrics"]
+        preview = render_dashboard(route, metrics, [], REQUIRED_OPERATIONS["applicant_guidance"])
+
+        self.assertIn("| **unknown** | **unknown** | **unknown** |", preview)
+        self.assertIn("Issue dispositions are incomplete or unavailable; counts are unknown, not zero.", preview)
+        self.assertIn("A segmented status bar is unavailable because one or more issue dispositions are missing or invalid.", preview)
+        self.assertNotIn("🟩 Supported: **1", preview)
+
+    def test_renderer_groups_c27_checks_once_without_assigning_them_to_a_shared_scope_issue(self):
+        route = make_route(coverage="partial", assessment_status="partial")
+        scope_ref = "r_0000000000000003"
+        route["issues"] = [
+            {"issue_ref": f"r_{index:016x}", "scope_ref": scope_ref,
+             "signal_ids": ["formal_refusal_issued"], "disposition": "answered_supported",
+             "evidence_ref": "r_0000000000000001"}
+            for index in (40, 41)
+        ]
+        route["dashboard"]["issue_summaries"] = []
+        route["c27_checks"] = [{
+            "scope_ref": scope_ref,
+            "record": {
+                "check_id": "lifecycle.decision_notified", "status": "partial",
+                "method": "model_review", "reason": "written_notice_not_verified",
+                "evidence_refs": ["r_0000000000000001"],
+                "source_refs": ["r_0000000000000002"],
+            },
+        }]
+        route["evidence"].append({"evidence_ref": "r_0000000000000002", "kind": "source_record"})
+        metrics = self.report(make_route())["render_metrics"]
+        preview = render_dashboard(route, metrics, [], REQUIRED_OPERATIONS["applicant_guidance"])
+
+        self.assertEqual(preview.count("lifecycle.decision_notified"), 1)
+        self.assertEqual(preview.count("**C27 check:**"), 1)
+        self.assertIn("partial · model review.", preview)
+        self.assertIn("no check is assigned to an individual issue unless the receipt records that link", preview)
+        scope_section = preview.split("### Legal assessment", 1)[1].split(
+            "### Execution and verification", 1
+        )[0]
+        self.assertIn("same evidence/source record already listed above in this scope", scope_section)
+        self.assertEqual(scope_section.count("conversation record (1)"), 1)
+        self.assertEqual(scope_section.count("source record (1)"), 1)
+
+    def test_renderer_places_exact_issue_specific_c27_binding_in_issue_card_and_shared_check_once(self):
+        route = make_route(coverage="partial", assessment_status="partial")
+        scope_ref = "r_0000000000000003"
+        first_ref, second_ref = "r_0000000000000030", "r_0000000000000031"
+        assessment_ref, shared_ref = "r_0000000000000040", "r_0000000000000041"
+        route["schema_version"] = "0.5.0"
+        route["issues"] = [
+            {"issue_ref": first_ref, "scope_ref": scope_ref,
+             "signal_ids": ["formal_refusal_issued"], "disposition": "fact_missing",
+             "evidence_ref": "r_0000000000000001", "c27_assessment_refs": [assessment_ref]},
+            {"issue_ref": second_ref, "scope_ref": scope_ref,
+             "signal_ids": ["appointment_access_delayed"], "disposition": "answered_supported",
+             "evidence_ref": "r_0000000000000001", "c27_assessment_refs": [shared_ref]},
+        ]
+        route["dashboard"]["issue_summaries"] = [{
+            "issue_ref": first_ref, "title": "Lodging evidence",
+            "missing": "The receipt was not inspected", "effect": "Formal lodging is unresolved.",
+        }]
+        route["c27_checks"] = [
+            {"scope_ref": scope_ref, "assessment_ref": assessment_ref,
+             "binding_kind": "issue_specific", "bound_issue_refs": [first_ref],
+             "record": {"check_id": "lifecycle.receipt_evidence", "status": "partial",
+                        "method": "source_review", "reason": "receipt_not_inspected",
+                        "evidence_refs": ["r_0000000000000001"], "source_refs": []}},
+            {"scope_ref": scope_ref, "assessment_ref": shared_ref,
+             "binding_kind": "proceeding_shared", "bound_issue_refs": [first_ref, second_ref],
+             "shared_basis": {"evidence_ref": "r_0000000000000001", "basis": "same_proceeding_fact"},
+             "record": {"check_id": "lifecycle.application_stage", "status": "assessed",
+                        "method": "model_review", "reason": "shared_stage_reviewed",
+                        "evidence_refs": ["r_0000000000000001"], "source_refs": []}},
+        ]
+        metrics = self.report(make_route())["render_metrics"]
+        preview = render_dashboard(
+            route, metrics, [f"issue:{first_ref}:c27_check_open:lifecycle.receipt_evidence:partial"],
+            REQUIRED_OPERATIONS["applicant_guidance"],
+        )
+
+        self.assertEqual(preview.count("`lifecycle.receipt_evidence`"), 1)
+        self.assertEqual(preview.count("`lifecycle.application_stage`"), 1)
+        self.assertIn("C27 check linked to this issue", preview)
+        self.assertIn("partial · source review", preview)
+        self.assertIn("This check is partial; the recorded evidence does not close it.", preview)
+        self.assertIn("Shared across 2 recorded issues in this scope; shown once at scope level.", preview)
+        assessment = preview.split("### Legal assessment", 1)[1].split(
+            "### Execution and verification", 1
+        )[0]
+        first_issue = assessment.index("**🟠 Fact missing — Lodging evidence**")
+        linked_check = assessment.index("C27 check linked to this issue")
+        second_issue = assessment.index("**🟢 Answered: supported — appointment access delayed**")
+        self.assertLess(first_issue, linked_check)
+        self.assertLess(linked_check, second_issue)
+
+    def test_unresolved_attack_screen_moves_supported_issue_into_partial_metric(self):
+        route = make_route(coverage="partial", assessment_status="partial")
+        route["schema_version"] = "0.5.0"
+        route["issues"] = [{
+            "issue_ref": "r_0000000000000050", "scope_ref": "r_0000000000000003",
+            "signal_ids": ["formal_refusal_issued"], "disposition": "answered_supported",
+            "evidence_ref": "r_0000000000000001",
+            "attack_angle_reviews": [{"route_id": "eu_family", "topic": "scope", "outcome": "unresolved"}],
+        }]
+        route["dashboard"]["issue_summaries"] = []
+        metrics = self.report(make_route())["render_metrics"]
+        preview = render_dashboard(route, metrics, [], REQUIRED_OPERATIONS["applicant_guidance"])
+
+        self.assertIn("| **1** | **0** | **1** |", preview)
+        self.assertIn("🟩 Supported: **0 (0%)**", preview)
+        self.assertIn("🟨 Partial/open: **1 (100%)**", preview)
+        self.assertIn(
+            "**🟠 Supported answer · required screen unresolved — formal refusal issued**",
+            preview,
+        )
+        self.assertIn(
+            "Primary assessment: supported; the issue remains partial/open until its required attack-angle screen is resolved.",
+            preview,
+        )
+
+    def test_scope_level_c27_gap_is_not_misattributed_to_another_issue_with_same_check_id(self):
+        route = make_route(coverage="partial", assessment_status="partial")
+        route["schema_version"] = "0.5.0"
+        scope_ref = "r_0000000000000003"
+        first_ref, second_ref = "r_0000000000000060", "r_0000000000000061"
+        first_assessment, second_assessment = "r_0000000000000070", "r_0000000000000071"
+        route["issues"] = [
+            {"issue_ref": first_ref, "scope_ref": scope_ref,
+             "signal_ids": ["formal_refusal_issued"], "disposition": "answered_supported",
+             "evidence_ref": "r_0000000000000001", "c27_assessment_refs": [first_assessment]},
+            {"issue_ref": second_ref, "scope_ref": scope_ref,
+             "signal_ids": ["appointment_access_delayed"], "disposition": "fact_missing",
+             "evidence_ref": "r_0000000000000001", "c27_assessment_refs": [second_assessment]},
+        ]
+        route["dashboard"]["issue_summaries"] = [{
+            "issue_ref": second_ref, "title": "Appointment access",
+            "missing": "The appointment record is missing", "effect": "Access timing remains unresolved.",
+        }]
+        check_record = {
+            "check_id": "lifecycle.receipt_evidence", "method": "source_review",
+            "evidence_refs": ["r_0000000000000001"], "source_refs": [],
+        }
+        route["c27_checks"] = [
+            {"scope_ref": scope_ref, "assessment_ref": first_assessment,
+             "binding_kind": "issue_specific", "bound_issue_refs": [first_ref],
+             "record": {**check_record, "status": "assessed", "reason": "first_issue_closed"}},
+            {"scope_ref": scope_ref, "assessment_ref": second_assessment,
+             "binding_kind": "issue_specific", "bound_issue_refs": [second_ref],
+             "record": {**check_record, "status": "partial", "reason": "second_issue_open"}},
+        ]
+        metrics = self.report(make_route())["render_metrics"]
+        preview = render_dashboard(
+            route, metrics,
+            ["c27:r_0000000000000003:lifecycle.receipt_evidence:partial",
+             f"issue:{second_ref}:c27_check_open:lifecycle.receipt_evidence:partial"],
+            REQUIRED_OPERATIONS["applicant_guidance"],
+        )
+        assessment = preview.split("### Legal assessment", 1)[1].split(
+            "### Execution and verification", 1
+        )[0]
+        first_start = assessment.index("**🟢 Answered: supported — formal refusal issued**")
+        second_start = assessment.index("**🟠 Fact missing — Appointment access**")
+        first_card, second_card = assessment[first_start:second_start], assessment[second_start:]
+
+        self.assertIn("`lifecycle.receipt_evidence`", first_card)
+        self.assertNotIn("This check is partial", first_card)
+        self.assertIn("`lifecycle.receipt_evidence`", second_card)
+        self.assertIn("This check is partial", second_card)
 if __name__ == "__main__":
     unittest.main(verbosity=2)

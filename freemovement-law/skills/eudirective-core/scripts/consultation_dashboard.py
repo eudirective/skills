@@ -532,6 +532,13 @@ def _gap_work(gap: str) -> dict | None:
             "missing": "The required C27 check was not recorded for this issue.",
             "effect": "That issue cannot be treated as fully reconciled.",
         }
+    if gap.startswith("issue:") and ":c27_check_open:" in gap:
+        check_id, state = gap.rsplit(":", 2)[-2:]
+        return {
+            "title": f"Issue-linked case-state check: {_humanize(check_id)}",
+            "missing": f"This check is {state.replace('_', ' ')}; the recorded evidence does not close it.",
+            "effect": "That issue cannot be treated as fully reconciled.",
+        }
     if gap.startswith("classification:"):
         _, name, _state = gap.split(":", 2)
         label = CLASSIFICATION_LABELS.get(name, _humanize(name).title())
@@ -725,6 +732,7 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
                 disposition_counts["out_of_scope"] -= 1
                 out_of_scope_count -= 1
                 partial_count += 1
+    supported_or_closed_count = supported_count + conditionally_closed
 
     def value_status(value: str) -> str:
         return value.replace("_", " ")
@@ -847,13 +855,12 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
     lines.extend([
         "### Issue summary",
         "",
-        "| **Issues reviewed** | **Supported** | **Conditionally closed** | **Partial / open** | **Out of scope** |",
-        "| :---: | :---: | :---: | :---: | :---: |",
+        "| **Issues reviewed** | **Supported / conditionally closed** | **Partial / open** |",
+        "| :---: | :---: | :---: |",
         (
-            f"| **{len(issue_records)}** | **{supported_count}** | **{conditionally_closed}** | "
-            f"**{partial_count}** | **{out_of_scope_count}** |"
+            f"| **{len(issue_records)}** | **{supported_or_closed_count}** | **{partial_count}** |"
             if issue_dispositions_complete
-            else "| **unknown** | **unknown** | **unknown** | **unknown** | **unknown** |"
+            else "| **unknown** | **unknown** | **unknown** |"
         ),
         "",
     ])
@@ -863,7 +870,9 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
             + "🟨" * partial_count + "⬜" * out_of_scope_count
         )
         lines.extend([
-            f"**Assessment coverage — {len(issue_records)} / {len(issue_records)} recorded issues reviewed**",
+            "*The supported/closed metric combines directly supported answers and conditionally closed answers; the distribution below separates them.*",
+            "",
+            f"**Recorded issue outcomes — {len(issue_records)} issues**",
             "",
             status_bar,
             "",
@@ -881,6 +890,7 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
             f"🟦 Conditionally closed: **{conditionally_closed} ({share_percent(conditionally_closed, len(issue_records))})** · "
             f"🟨 Partial/open: **{partial_count} ({share_percent(partial_count, len(issue_records))})** · "
             f"⚪ Out of scope: **{out_of_scope_count} ({share_percent(out_of_scope_count, len(issue_records))})**.",
+            f"Supported / conditionally closed combined: **{supported_or_closed_count}**.",
             "A bar is omitted above 20 issues. Percentages are rounded status shares, not a legal-completeness score.",
             "",
         ])
@@ -889,6 +899,7 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
     else:
         lines.extend([
             "Issue dispositions are incomplete or unavailable; counts are unknown, not zero. These records do not measure legal completeness.",
+            "A segmented status bar is unavailable because one or more issue dispositions are missing or invalid.",
             "",
         ])
     lines.extend(["### Review context", ""])
@@ -949,6 +960,10 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
     lines = assessment_lines
 
     lines.extend(["", "### Legal assessment"])
+    lines.append(
+        "Issues and selected C27 checks are grouped by their recorded scope. "
+        "When multiple issues share a scope, no check is assigned to an individual issue unless the receipt records that link."
+    )
     issue_summaries_by_ref = {item["issue_ref"]: item for item in issue_summaries}
     issue_routing_by_ref = {
         item.get("issue_ref"): item
@@ -989,14 +1004,81 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
     for index, scope_ref in enumerate(scope_refs, start=1):
         scoped_issues = issues_by_scope.get(scope_ref, [])
         scoped_checks = checks_by_scope.get(scope_ref, [])
-        first_issue = scoped_issues[0] if scoped_issues else None
-        first_summary = issue_summaries_by_ref.get(first_issue["issue_ref"]) if first_issue else None
-        scope_title = (
-            first_summary["title"] if first_summary
-            else ", ".join(_humanize(signal) for signal in first_issue.get("signal_ids", []))
-            if first_issue else "Case-state checks"
-        )
-        lines.extend(["", f"#### {scope_title}"])
+        lines.extend(["", f"#### Scope {index}"])
+        scope_evidence_seen: set[str] = set()
+
+        def scoped_evidence(label: str, references: list[str]) -> str:
+            fresh = [reference for reference in references if reference not in scope_evidence_seen]
+            repeated = len(references) - len(fresh)
+            scope_evidence_seen.update(references)
+            details = [refs(fresh)] if fresh else []
+            if repeated:
+                details.append("same evidence/source record already listed above in this scope")
+            return f"{label}: {'; '.join(details) if details else 'none recorded'}."
+
+        # A C27 assessment is shown inside an issue card only when the receipt
+        # carries the complete, symmetric issue-specific binding. Shared and
+        # legacy scope checks stay in the scope-level list; their presence is
+        # never used to imply issue-specific coverage.
+        checks_by_issue: dict[str, list[dict]] = {item["issue_ref"]: [] for item in scoped_issues}
+        issue_by_ref = {item["issue_ref"]: item for item in scoped_issues}
+        assigned_assessment_refs: set[str] = set()
+        for entry in scoped_checks:
+            if (route.get("schema_version") != "0.5.0"
+                    or entry.get("binding_kind") != "issue_specific"):
+                continue
+            bound_refs = entry.get("bound_issue_refs", [])
+            assessment_ref = entry.get("assessment_ref")
+            if len(bound_refs) != 1 or not assessment_ref:
+                continue
+            issue_ref = bound_refs[0]
+            issue = issue_by_ref.get(issue_ref)
+            if (issue is None
+                    or assessment_ref not in issue.get("c27_assessment_refs", [])):
+                continue
+            checks_by_issue[issue_ref].append(entry)
+            assigned_assessment_refs.add(assessment_ref)
+
+        def gap_check_id(gap: str) -> str | None:
+            if ":c27_check_open:" in gap:
+                return gap.rsplit(":", 2)[-2]
+            if ":c27_required_check_missing:" in gap:
+                return gap.rsplit(":", 1)[-1]
+            return None
+
+        def render_c27_entry(entry: dict, *, issue_ref: str | None = None) -> None:
+            record = entry["record"]
+            check_marker = {
+                "assessed": "✅", "partial": "🟠", "not_checked": "⚪", "blocked": "🟠",
+                "unavailable": "⛔", "not_applicable": "➖",
+            }.get(record["status"], "⚪")
+            relationship = "C27 check linked to this issue" if issue_ref else "C27 check"
+            lines.append(
+                f"**{relationship}:** {check_marker} `{record['check_id']}` · "
+                f"{value_status(record['status'])} · {value_status(record['method'])}."
+            )
+            lines.append(f"Reason: {record['reason']}.")
+            lines.append(scoped_evidence("Evidence", record["evidence_refs"]))
+            lines.append(scoped_evidence("Sources", record["source_refs"]))
+            related_gaps = [
+                gap for gap in route_gaps
+                if _gap_work(gap) is not None and (
+                    (issue_ref is None
+                     and gap.startswith(f"c27:{entry['scope_ref']}:{record['check_id']}:"))
+                    or (issue_ref is not None
+                        and gap.startswith(f"issue:{issue_ref}:")
+                        and (":c27_check_open:" in gap or ":c27_required_check_missing:" in gap)
+                        and gap_check_id(gap) == record["check_id"]
+                    )
+                )
+            ]
+            for related_gap in related_gaps:
+                missing = _gap_work(related_gap)
+                if missing:
+                    lines.append(f"Missing: {missing['missing']} Effect: {missing['effect']}")
+            if record.get("scope_exclusion"):
+                lines.append(f"Scope exclusion: {record['scope_exclusion']}.")
+
         for issue in scoped_issues:
             summary = issue_summaries_by_ref.get(issue["issue_ref"])
             signals = ", ".join(_humanize(signal) for signal in issue.get("signal_ids", [])) or "signals not recorded"
@@ -1006,6 +1088,13 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
             label = issue_status_labels.get(disposition, value_status(disposition))
             closure = issue.get("conditional_closure", {})
             closure_status = closure.get("status")
+            unresolved_mandatory_screen = (
+                route.get("schema_version") == "0.5.0"
+                and any(
+                    item.get("outcome") == "unresolved"
+                    for item in issue.get("attack_angle_reviews", [])
+                )
+            )
             if disposition == "answered_conditionally":
                 other_issue_work_open = issue_has_open_gap(issue["issue_ref"])
                 if (route.get("schema_version") == "0.5.0"
@@ -1018,10 +1107,28 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
                     marker, label = "🟠", "Open — required review remains"
                 elif closure_status == "predicate_open":
                     marker, label = "🟠", "Partial — condition open"
+            primary_assessment = {
+                "answered_supported": "supported",
+                "answered_conditionally": "conditional",
+                "out_of_scope": "out-of-scope classification",
+            }.get(disposition)
+            if unresolved_mandatory_screen and primary_assessment:
+                marker = "🟠"
+                primary_label = {
+                    "answered_supported": "Supported answer",
+                    "answered_conditionally": "Conditional answer",
+                    "out_of_scope": "Out-of-scope assessment",
+                }[disposition]
+                label = f"{primary_label} · required screen unresolved"
             lines.extend([
                 f"**{marker} {label} — {title}**",
-                f"Evidence: {refs([issue['evidence_ref']])}.",
+                scoped_evidence("Evidence", [issue["evidence_ref"]]),
             ])
+            if unresolved_mandatory_screen and primary_assessment:
+                lines.append(
+                    f"Primary assessment: {primary_assessment}; the issue remains partial/open "
+                    "until its required attack-angle screen is resolved."
+                )
             if disposition == "answered_conditionally":
                 closure_label = {
                     "evidence_resolved": "Evidence resolved",
@@ -1030,8 +1137,8 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
                     "not_conditional": "Not conditional",
                 }.get(closure_status, "Closure not recorded")
                 lines.append(
-                    f"Conditional closure: **{closure_label}** · closure evidence: "
-                    f"{refs(closure.get('evidence_refs', []))}."
+                    f"Conditional closure: **{closure_label}** · "
+                    f"{scoped_evidence('Closure evidence', closure.get('evidence_refs', []))}"
                 )
             if summary:
                 lines.append(f"Missing: {summary['missing']}")
@@ -1112,35 +1219,41 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
                                 f"C27 checks: {check_text}; catalogue mapping: {pattern_text}. "
                                 "These catalogue references do not mean a synthetic C5d engine ran."
                             )
-        if scoped_checks:
+
+            linked_entries = checks_by_issue.get(issue["issue_ref"], [])
+            if linked_entries:
+                lines.append("**C27 checks linked to this issue:**")
+                for entry in linked_entries:
+                    render_c27_entry(entry, issue_ref=issue["issue_ref"])
+            for gap in route_gaps:
+                if gap.startswith(f"issue:{issue['issue_ref']}:c27_required_check_missing:"):
+                    missing = _gap_work(gap)
+                    if missing:
+                        lines.append(
+                            f"**Required C27 check for this issue — `{gap_check_id(gap)}`:** "
+                            f"Missing: {missing['missing']} Effect: {missing['effect']}"
+                        )
+
+        scope_level_checks = [
+            entry for entry in scoped_checks
+            if entry.get("assessment_ref") not in assigned_assessment_refs
+        ]
+        if scope_level_checks:
             lines.append("**Selected C27 checks for this review area:**")
-        for entry in scoped_checks:
-            record = entry["record"]
-            check_marker = {
-                "assessed": "✅", "partial": "🟠", "not_checked": "⚪", "blocked": "🟠",
-                "unavailable": "⛔", "not_applicable": "➖",
-            }.get(record["status"], "⚪")
-            lines.append(
-                f"**C27 check:** {check_marker} `{record['check_id']}` · "
-                f"{value_status(record['status'])} · {value_status(record['method'])}."
-            )
-            lines.append(
-                f"Reason: {record['reason']}. Evidence: {refs(record['evidence_refs'])}; "
-                f"sources: {refs(record['source_refs'])}."
-            )
-            related_gap = next((gap for gap in route_gaps
-                                if gap.startswith(f"c27:{entry['scope_ref']}:{record['check_id']}:")
-                                and _gap_work(gap) is not None), None)
-            if related_gap:
-                missing = _gap_work(related_gap)
-                lines.append(f"Missing: {missing['missing']} Effect: {missing['effect']}")
-            if record.get("scope_exclusion"):
-                lines.append(f"Scope exclusion: {record['scope_exclusion']}.")
+        for entry in scope_level_checks:
+            if (entry.get("binding_kind") == "proceeding_shared"
+                    and isinstance(entry.get("bound_issue_refs"), list)):
+                lines.append(
+                    f"Shared across {len(entry['bound_issue_refs'])} recorded issues in this scope; "
+                    "shown once at scope level."
+                )
+            render_c27_entry(entry)
     if not isinstance(issue_records, list):
         lines.append("Issue dispositions were not recorded; no issue cards or status bar can be produced.")
     handled_open_titles = {
         item["title"] for item in open_work
         if item["title"].startswith("Case-state check:")
+        or item["title"].startswith("Issue-linked case-state check:")
         or item["title"] in set(OPERATION_LABELS.values())
     }
     other_open_work = [item for item in open_work if item["title"] not in handled_open_titles]

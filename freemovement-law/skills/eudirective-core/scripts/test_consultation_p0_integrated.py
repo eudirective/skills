@@ -574,7 +574,10 @@ class IntegratedControlledReleaseTests(unittest.TestCase):
                 self.assertIn("Partial/open: **1 (100%)**", report["dashboard_preview"])
                 self.assertIn(f"Conditional closure: **{label}**", report["dashboard_preview"])
                 self.assertIn("Conditional closure:", report["dashboard_preview"])
-                self.assertIn("closure evidence: conversation record (1)", report["dashboard_preview"])
+                self.assertIn(
+                    "Closure evidence: same evidence/source record already listed above in this scope.",
+                    report["dashboard_preview"],
+                )
                 self.assertIn("no topic-specific adverse predicate is mapped", report["dashboard_preview"])
                 released = self.run_release()
                 self.assertEqual(released.returncode, 0, released.stderr.decode())
@@ -591,8 +594,19 @@ class IntegratedControlledReleaseTests(unittest.TestCase):
         self.assertEqual(report["status"], "valid_partial_route")
         self.assertIn("Conditionally closed: **0 (0%)**", report["dashboard_preview"])
         self.assertIn("Partial/open: **1 (100%)**", report["dashboard_preview"])
-        self.assertIn("**🟠 Open — required review remains —", report["dashboard_preview"])
+        self.assertIn(
+            "**🟠 Conditional answer · required screen unresolved — Synthetic scope predicate**",
+            report["dashboard_preview"],
+        )
+        self.assertIn(
+            "Primary assessment: conditional; the issue remains partial/open until its required attack-angle screen is resolved.",
+            report["dashboard_preview"],
+        )
         self.assertIn("Conditional closure: **Evidence resolved**", report["dashboard_preview"])
+        self.assertIn(
+            "**C27 check linked to this issue:** 🟠 `case_intake.actor_roles` · partial · model review.",
+            report["dashboard_preview"],
+        )
         self.assertIn("c27_check_open", " ".join(report["outstanding"]))
 
     def test_neutral_route_signal_cannot_create_an_unmapped_attack_candidate(self):
