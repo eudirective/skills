@@ -49,4 +49,3 @@ Post-issuance events such as cancellation, revocation, annulment, expiry, extens
 - **Coverage gaps:** historical stages remain available for relevance selection. Outstanding checks are prioritized by declared severity, not simply the first registry entries. An ordinary application need not perform all 308 checks; unassessed remains unassessed.
 
 These deterministic tests validate state structure, audit links and privacy input boundaries only. Semantic legality, authenticity, judgment on applicability, real ChatGPT routing, installed package refresh and cross-session persistence remain external verification tasks.
-
