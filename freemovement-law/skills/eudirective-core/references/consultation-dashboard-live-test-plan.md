@@ -77,8 +77,12 @@ Use ordinary fictional chat prompts through the installed candidate in separate 
 2. In a separate fictional scenario, describe an ordinary short-stay application with a written substantive refusal under Article 32.
 3. Describe an attempted application where an appointment or lodgement was blocked, with no formal written decision.
 4. Describe an issued visa later recorded as revoked, then compare with a separate expired-visa scenario.
+5. Describe an official procedural outcome that does not fit the named Article 18, Article 19, Article 32, issuance, withdrawal, or transfer categories. Include a short non-identifying explanation and a reference to the official record.
+6. Describe an attempted application where no formal outcome can be established because the written decision has not been seen; separately use a scenario with conflicting records.
 
 **Check:** each issue card names the proceeding type and records whether the outcome/event can be used for routing. Article 19 selects its own route and leaves the Article 32 route unactivated; the Article 32 route appears only with a matching official outcome record in the correct proceeding. A blocked lodgement without a formal decision stays on the access/lodgement route and says the formal outcome is missing. A revocation shows a separate event and requires national remedy/service-deadline checks to be researched; expiry does not inherit those cancellation/revocation checks. Missing, disputed or unverified records are named as outstanding work. This manual display check remains deferred and is not a maintenance-session prerequisite.
+
+For case 5, the consultation board should show **Other**, make clear that its explanation and evidence reference are recorded, and avoid promoting it into an Article 19 or Article 32 route. For case 6, it should show **Undetermined**, state what evidence is missing or conflicting, and keep the specific outcome routes unresolved. A missing or disputed classification must not be presented as a formal decision.
 
 ## Review checklist
 

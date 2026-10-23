@@ -439,7 +439,7 @@ class RouteGateTests(unittest.TestCase):
         answer.write_text("Synthetic answer\n", encoding="utf-8")
         rejected = self.run_controlled_release(answer=answer)
         self.assertEqual(rejected.returncode, 2)
-        self.assertIn(b"controlled_release_requires_receipt_0_5_0", rejected.stderr)
+        self.assertIn(b"controlled_release_requires_receipt_0_5_or_0_6", rejected.stderr)
         self.assertEqual(rejected.stdout, b"")
 
     def test_priority_pathway_is_bound_to_c27_checks_and_c5d_catalogue(self):

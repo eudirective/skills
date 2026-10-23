@@ -1005,12 +1005,24 @@ def check_declared_issues(route: dict, evidence_index: dict[str, dict],
             raw_outcome = issue.get("administrative_outcome") or {}
             issue_report["administrative_outcome_classification"] = raw_outcome.get("classification")
             issue_report["administrative_outcome_source"] = raw_outcome.get("source")
-            issue_report["administrative_outcome_routing_classification"] = outcome_classification
-            issue_report["administrative_outcome_routing_status"] = (
-                "not_recorded" if not raw_outcome
-                else "available_for_routing" if outcome_classification is not None
-                else "official_record_unverified"
+            issue_report["administrative_outcome_missing_evidence_reason"] = raw_outcome.get(
+                "missing_evidence_reason"
             )
+            issue_report["administrative_outcome_evidence_reference_recorded"] = bool(
+                raw_outcome.get("evidence_ref")
+            )
+            issue_report["administrative_outcome_routing_classification"] = outcome_classification
+            if not raw_outcome:
+                outcome_routing_status = "not_recorded"
+            elif raw_outcome.get("classification") == "undetermined":
+                outcome_routing_status = "outcome_undetermined"
+            elif raw_outcome.get("classification") == "other":
+                outcome_routing_status = "other_outcome_requires_manual_route_review"
+            elif outcome_classification is not None:
+                outcome_routing_status = "available_for_routing"
+            else:
+                outcome_routing_status = "official_record_unverified"
+            issue_report["administrative_outcome_routing_status"] = outcome_routing_status
             raw_post_event = issue.get("post_issuance_event") or {}
             issue_report["post_issuance_event_type"] = raw_post_event.get("event_type")
             issue_report["post_issuance_event_source"] = raw_post_event.get("source")
