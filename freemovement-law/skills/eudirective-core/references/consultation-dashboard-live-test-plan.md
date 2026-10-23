@@ -1,23 +1,23 @@
 # Consultation dashboard live test plan
 
-**Status:** ChatGPT live checks remain deferred and are not required to finish maintenance. The locally installed v0.58.2 package is the baseline; candidate v0.59.0 is not installed in this environment. The prior manual installed-bundle check covered v0.58.2 only. A fresh session with each exact build remains necessary for client-level behavior checks. Use fictional, non-sensitive facts in any future chat review; do not place those facts or conversation text in a renderer receipt or temporary file. No hosted service or MCP is part of the plan.
+**Status:** ChatGPT live checks remain deferred and are not required to finish maintenance. The locally installed v0.58.2 package is the baseline; candidate v0.59.1 is not installed in this environment. The prior manual installed-bundle check covered v0.58.2 only. A fresh session with each exact build remains necessary for client-level behavior checks. Use fictional, non-sensitive facts in any future chat review; do not place those facts or conversation text in a renderer receipt or temporary file. No hosted service or MCP is part of the plan.
 
 ## Target builds
 
 | Arm | Plugin / core | Source identity |
 |---|---|---|
 | Baseline | `0.58.2` / `0.57.2` | `eudirective/skills` commit `d5db832670c43aac2c69f53c29b9f2511f28de79` |
-| Candidate | `0.59.0` / `0.58.0` | `eudirective/skills` commit `1d5ff62c75319b9a6c5057c05c0d0b8a1be42449` (local candidate source; not published) |
+| Candidate | `0.59.1` / `0.58.1` | `eudirective/skills` commit `c84547a37f08e1c273fbe04e04c8f73a1990be93` (local candidate source; not published) |
 
 Before a live comparison, load each exact build separately and confirm the visible plugin/core versions. Do not treat the currently installed baseline as the candidate. If either build identity cannot be confirmed, leave the live run unexecuted.
 
 ## Setup
 
-1. For each arm, start a fresh Codex session with that exact `freemovement-law` build. Confirm the selected plugin and core versions before capturing evidence. The currently installed v0.58.2 baseline is not evidence about candidate v0.59.0.
+1. For each arm, start a fresh Codex session with that exact `freemovement-law` build. Confirm the selected plugin and core versions before capturing evidence. The currently installed v0.58.2 baseline is not evidence about candidate v0.59.1.
 2. In a fresh chat, select freemovement-law through the normal interface and use fictional facts. Record the client, plugin version, date, and visible response.
 3. Review the response at desktop width and a narrow/mobile width if available.
 
-The local Codex path uses the selected build's bundle and shell manually. With a synthetic receipt, run `python3 scripts/consultation_route_gate.py <receipt.json> --dashboard-only`; compare stdout byte-for-byte with `dashboard_preview` from the JSON mode. The prior check covered v0.58.2. Repeat against v0.59.0 before recording candidate local-runtime evidence. This proves local command integration and deterministic Markdown generation only. It does not prove that ChatGPT calls the renderer, includes its output unchanged, or enforces release.
+The local Codex path uses the selected build's bundle and shell manually. With a synthetic receipt, run `python3 scripts/consultation_route_gate.py <receipt.json> --dashboard-only`; compare stdout byte-for-byte with `dashboard_preview` from the JSON mode. The prior check covered v0.58.2. Repeat against v0.59.1 before recording candidate local-runtime evidence. This proves local command integration and deterministic Markdown generation only. It does not prove that ChatGPT calls the renderer, includes its output unchanged, or enforces release.
 
 ## Cases
 
@@ -83,6 +83,12 @@ Use ordinary fictional chat prompts through the installed candidate in separate 
 **Check:** each issue card names the proceeding type and records whether the outcome/event can be used for routing. Article 19 selects its own route and leaves the Article 32 route unactivated; the Article 32 route appears only with a matching official outcome record in the correct proceeding. A blocked lodgement without a formal decision stays on the access/lodgement route and says the formal outcome is missing. A revocation shows a separate event and requires national remedy/service-deadline checks to be researched; expiry does not inherit those cancellation/revocation checks. Missing, disputed or unverified records are named as outstanding work. This manual display check remains deferred and is not a maintenance-session prerequisite.
 
 For case 5, the consultation board should show **Other**, state that its C27 explanation and evidence reference need review, and avoid promoting it into an Article 19 or Article 32 route. For case 6, it should show **Undetermined**, state what evidence is missing or conflicting, and keep the specific outcome routes unresolved. In both cases, any issue recorded as supported while its outcome route remains open must appear in the partial/open metric, and overall coverage must remain partial. A missing or disputed classification must not be presented as a formal decision.
+
+### J. First-use GitHub reminder for module-note changes
+
+Use an installed `freemovement-law` snapshot whose plugin and skill versions, core-pack version, and source-library tree match the published manifest, but whose recorded `module_notes_tree_sha` is older than the live `module-notes` tree in `eudirective/public-data`.
+
+**Check:** on the first invocation, the assistant reports the exact installed and GitHub module-note fingerprints, reminds the user to check for an available update, explains that the bundled notes differ, and does not claim that the fingerprint alone proves a plugin release is available. The check is read-only and does not install anything; a later invocation in the same chat does not repeat it. No live mismatch test was run during this maintenance session.
 
 ## Review checklist
 
