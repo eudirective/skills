@@ -58,7 +58,18 @@ Start a fresh chat with a clearly personal-use question, then another prompt tha
 
 From a local shell using the installed v0.58.2 bundle, use a synthetic receipt with at least one supported issue, one partial issue with a missing/effect summary, and a C27 check sharing its scope. Run the installed v0.58.2 bundle's route gate in JSON mode and `--dashboard-only` mode.
 
-**Check:** both modes validate the same receipt; `--dashboard-only` stdout matches the JSON mode's `dashboard_preview` exactly. The receipt contains opaque refs and generic text only. Confirm the CLI is manual local-shell execution and that the board does not include actual jurisdiction/proceeding values from conversation facts.
+**Check:** both modes validate the same receipt; `--dashboard-only` stdout matches the JSON mode's `dashboard_preview` exactly. The receipt contains opaque refs, a schema-enumerated procedure type, and generic text only. Confirm the CLI is manual local-shell execution and that the board does not include country names or applicant-specific proceeding facts from the conversation.
+
+### I. Administrative outcomes and post-issuance routing
+
+Use ordinary fictional chat prompts through the installed candidate in separate fresh chats; do not prepare or copy prompts from evaluation JSON, and do not enter these facts into synthetic-only scripts.
+
+1. Describe an ordinary short-stay application with a fictional written inadmissibility notice under Article 19. Ask what was decided and what should be checked next.
+2. In a separate fictional scenario, describe an ordinary short-stay application with a written substantive refusal under Article 32.
+3. Describe an attempted application where an appointment or lodgement was blocked, with no formal written decision.
+4. Describe an issued visa later recorded as revoked, then compare with a separate expired-visa scenario.
+
+**Check:** each issue card names the proceeding type and records whether the outcome/event can be used for routing. Article 19 selects its own route and leaves the Article 32 route unactivated; the Article 32 route appears only with a matching official outcome record in the correct proceeding. A blocked lodgement without a formal decision stays on the access/lodgement route and says the formal outcome is missing. A revocation shows a separate event and requires national remedy/service-deadline checks to be researched; expiry does not inherit those cancellation/revocation checks. Missing, disputed or unverified records are named as outstanding work. This manual display check remains deferred and is not a maintenance-session prerequisite.
 
 ## Review checklist
 

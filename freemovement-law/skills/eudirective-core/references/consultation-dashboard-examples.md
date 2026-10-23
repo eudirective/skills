@@ -173,6 +173,25 @@ Counts can overlap: a web search can find a source also present in the bundle. C
 - This plugin emits ordinary Markdown. It does not provide custom colors, a separate UI widget, a host-validated source-read record, or a release gate.
 - Every partial or unrun item names what is missing and how it affects the assessment. Use `unknown` when the missing detail itself is unknown.
 
+## Typed outcome card example (receipt 0.6.0)
+
+#### 🟠 Partial — Application outcome
+
+**Proceeding:** ordinary short-stay visa.
+
+**Recorded administrative outcome:** Article 19 inadmissibility · source: decision notice · routing record: available for routing.
+
+**Route checks for this proceeding:**
+
+- **Included** — Article 19 inadmissibility route.
+- **Not selected** — Article 32 substantive-refusal route; the recorded outcome belongs to Article 19.
+
+**Missing:** the national remedy authority, service date, and filing limit have not yet been verified from national sources.
+
+**Effect:** the outcome classification is recorded, but advice on challenging it remains incomplete until the applicable national procedure is established.
+
+If the same outcome is only orally reported or its record cannot be inspected, label it as not established for routing, leave the specialized route unresolved, and name the missing official record. A post-issuance event such as cancellation or revocation appears separately from the original issuance outcome.
+
 ## Minimal board when no case was assessed
 
 ## freemovement-law — Consultation Review

@@ -1,5 +1,28 @@
 # Release and version policy
 
+# Plugin v0.59.0 / core v0.58.0 typed administrative outcomes and remedy routing
+
+Receipt 0.6.0 now keeps procedure type, source-attributed administrative
+outcome, and later post-issuance events distinct from generic stage. Routing
+separates Visa Code Articles 18, 19 and 32, provider pre-screening, disputed
+lodgement, and post-issuance events. Event-specific national remedy and
+service-deadline checks are selected for cancellation, revocation, or
+annulment; they are not inherited by expiry. The existing dashboard shows the
+recorded outcome/event, whether its record is usable for routing, and which
+routes are included or unresolved. The local controlled-release command
+accepts receipts 0.5.0 and 0.6.0. This adds no ChatGPT host release hook.
+
+The live behavior check for typed outcome cards is documented in
+`references/consultation-dashboard-live-test-plan.md` and remains deferred.
+Focused local regressions passed: 120 tests across the C27 case-state,
+outcome-routing, route-gate, dashboard-format, and topic-review scripts.
+PyMuPDF-dependent checks were not run because PyMuPDF is not installed in
+this maintenance environment. The plugin package is not locally installed
+as part of this maintenance.
+
+Core advances from `0.57.2` to `0.58.0`; plugin advances from `0.58.2` to
+`0.59.0`.
+
 # Plugin v0.56.0 / core v0.55.0 source-origin dashboard accounting
 
 The consultation board now reports distinct source records identified in the
