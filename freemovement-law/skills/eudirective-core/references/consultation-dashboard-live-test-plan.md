@@ -1,14 +1,23 @@
 # Consultation dashboard live test plan
 
-**Status:** ChatGPT live checks remain deferred and are not required to finish maintenance. The local Codex v0.58.2 package is installed, and the manual installed-bundle path has passed with a synthetic receipt. A fresh session remains useful for client-level display checks. Use fictional, non-sensitive facts in any future chat review; do not place those facts or conversation text in a renderer receipt or temporary file. No hosted service or MCP is part of the plan.
+**Status:** ChatGPT live checks remain deferred and are not required to finish maintenance. The locally installed v0.58.2 package is the baseline; candidate v0.59.0 is not installed in this environment. The prior manual installed-bundle check covered v0.58.2 only. A fresh session with each exact build remains necessary for client-level behavior checks. Use fictional, non-sensitive facts in any future chat review; do not place those facts or conversation text in a renderer receipt or temporary file. No hosted service or MCP is part of the plan.
+
+## Target builds
+
+| Arm | Plugin / core | Source identity |
+|---|---|---|
+| Baseline | `0.58.2` / `0.57.2` | `eudirective/skills` commit `d5db832670c43aac2c69f53c29b9f2511f28de79` |
+| Candidate | `0.59.0` / `0.58.0` | `eudirective/skills` commit `0b5feea2500114bcddf9ea868cf8365b9e43ab58` |
+
+Before a live comparison, load each exact build separately and confirm the visible plugin/core versions. Do not treat the currently installed baseline as the candidate. If either build identity cannot be confirmed, leave the live run unexecuted.
 
 ## Setup
 
-1. Start a fresh Codex session after the local `freemovement-law` v0.58.2 installation. Confirm the selected plugin version before capturing local runtime evidence.
+1. For each arm, start a fresh Codex session with that exact `freemovement-law` build. Confirm the selected plugin and core versions before capturing evidence. The currently installed v0.58.2 baseline is not evidence about candidate v0.59.0.
 2. In a fresh chat, select freemovement-law through the normal interface and use fictional facts. Record the client, plugin version, date, and visible response.
 3. Review the response at desktop width and a narrow/mobile width if available.
 
-The local Codex path uses the installed v0.58.2 bundle and shell manually. With a synthetic receipt, run `python3 scripts/consultation_route_gate.py <receipt.json> --dashboard-only`; compare stdout byte-for-byte with `dashboard_preview` from the JSON mode. This proves local command integration and deterministic Markdown generation only. It does not prove that ChatGPT calls the renderer, includes its output unchanged, or enforces release.
+The local Codex path uses the selected build's bundle and shell manually. With a synthetic receipt, run `python3 scripts/consultation_route_gate.py <receipt.json> --dashboard-only`; compare stdout byte-for-byte with `dashboard_preview` from the JSON mode. The prior check covered v0.58.2. Repeat against v0.59.0 before recording candidate local-runtime evidence. This proves local command integration and deterministic Markdown generation only. It does not prove that ChatGPT calls the renderer, includes its output unchanged, or enforces release.
 
 ## Cases
 
@@ -56,9 +65,9 @@ Start a fresh chat with a clearly personal-use question, then another prompt tha
 
 ### H. Local Codex output path
 
-From a local shell using the installed v0.58.2 bundle, use a synthetic receipt with at least one supported issue, one partial issue with a missing/effect summary, and a C27 check sharing its scope. Run the installed v0.58.2 bundle's route gate in JSON mode and `--dashboard-only` mode.
+From a local shell using each selected bundle, use a synthetic receipt with at least one supported issue, one partial issue with a missing/effect summary, and a C27 check sharing its scope. Run that bundle's route gate in JSON mode and `--dashboard-only` mode.
 
-**Check:** both modes validate the same receipt; `--dashboard-only` stdout matches the JSON mode's `dashboard_preview` exactly. The receipt contains opaque refs, a schema-enumerated procedure type, and generic text only. Confirm the CLI is manual local-shell execution and that the board does not include country names or applicant-specific proceeding facts from the conversation.
+**Check:** both modes validate the same receipt; `--dashboard-only` stdout matches the JSON mode's `dashboard_preview` exactly for each build. The receipt contains opaque refs, a schema-enumerated procedure type, and generic text only. Confirm the CLI is manual local-shell execution and that the board does not include country names or applicant-specific proceeding facts from the conversation.
 
 ### I. Administrative outcomes and post-issuance routing
 
