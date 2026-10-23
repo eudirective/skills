@@ -7,7 +7,7 @@
 | Arm | Plugin / core | Source identity |
 |---|---|---|
 | Baseline | `0.58.2` / `0.57.2` | `eudirective/skills` commit `d5db832670c43aac2c69f53c29b9f2511f28de79` |
-| Candidate | `0.59.0` / `0.58.0` | `eudirective/skills` commit `70437f660b97ec1b55b1aef1361ad48f1d1e3186` (local candidate source; not published) |
+| Candidate | `0.59.0` / `0.58.0` | `eudirective/skills` commit `1d5ff62c75319b9a6c5057c05c0d0b8a1be42449` (local candidate source; not published) |
 
 Before a live comparison, load each exact build separately and confirm the visible plugin/core versions. Do not treat the currently installed baseline as the candidate. If either build identity cannot be confirmed, leave the live run unexecuted.
 
