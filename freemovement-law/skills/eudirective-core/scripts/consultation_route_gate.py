@@ -15,7 +15,10 @@ import re
 import sys
 from pathlib import Path
 
-from c27_case_state import StateError, load_registry, validate_route_check_record
+from c27_case_state import (
+    ADMINISTRATIVE_OUTCOMES, POST_ISSUANCE_EVENTS, PROCEDURE_TYPES,
+    StateError, load_registry, validate_route_check_record,
+)
 from contract_validate import ContractError, validate_obj
 from module_conformance import ConformanceError, validate_paths
 from research_gate import ResearchGateError, validate_research
@@ -60,7 +63,11 @@ OPERATION_EVIDENCE_KINDS = {
 CLOSED_C27_STATUSES = {"assessed", "not_applicable"}
 ISSUE_MATRIX_PATH = ROOT / "references" / "consultation-issue-routing.json"
 ISSUE_REGISTRY_PATH = ROOT / "references" / "state-engine" / "check-registry.json"
-ROUTE_GATE_VERSION = "0.5.0"
+ROUTE_GATE_VERSION = "0.6.0"
+INFORMATIONAL_ROUTE_SCOPE_STATUSES = {
+    "not_selected_outcome_mismatch", "not_selected_no_formal_outcome",
+    "not_selected_outcome_unverified", "not_selected_signal_missing",
+}
 
 
 class RouteGateError(ValueError):
@@ -69,7 +76,7 @@ class RouteGateError(ValueError):
 
 def required_operations_for(route: dict) -> tuple[str, ...]:
     required = list(REQUIRED_OPERATIONS[route["request_kind"]])
-    if route.get("schema_version") in {"0.4.0", "0.5.0"} and route["request_kind"] in {
+    if route.get("schema_version") in {"0.4.0", "0.5.0", "0.6.0"} and route["request_kind"] in {
         "applicant_guidance", "source_research",
     }:
         for operation_id in ("research_gate", "source_preflight", "attack_angle_screen"):
@@ -100,7 +107,7 @@ def safe_relative_file(base: Path, value: str, label: str) -> Path:
 
 
 def strict_receipt(route: dict) -> bool:
-    return route.get("schema_version") == "0.5.0"
+    return route.get("schema_version") in {"0.5.0", "0.6.0"}
 
 
 def check_c27_records(route: dict, registry: dict, gaps: list[str]) -> int:
@@ -109,6 +116,15 @@ def check_c27_records(route: dict, registry: dict, gaps: list[str]) -> int:
             raise RouteGateError("non_consultation_receipt_contains_case_assessment")
         return 0
     strict = strict_receipt(route)
+    typed_scopes = {
+        item["scope_ref"]: item
+        for item in route.get("proceedings", [])
+    } if route.get("schema_version") == "0.6.0" else {}
+    check_specs = {item["check_id"]: item for item in registry["checks"]}
+    procedure_scopes = {
+        item["scope_id"]: set(item["procedure_types"])
+        for item in registry.get("procedure_scopes", [])
+    }
     seen: set[tuple[str, str]] = set()
     seen_assessments: set[str] = set()
     seen_occurrences: set[tuple[str, str, str]] = set()
@@ -116,6 +132,19 @@ def check_c27_records(route: dict, registry: dict, gaps: list[str]) -> int:
         record = item["record"]
         validate_route_check_record(record, registry)
         check_id = record["check_id"]
+        check_scope_id = check_specs[check_id].get("procedure_scope_id")
+        if check_scope_id and route.get("schema_version") != "0.6.0":
+            raise RouteGateError("c27_procedure_scope_requires_receipt_0_6")
+        if route.get("schema_version") == "0.6.0":
+            scope_ref = item["scope_ref"]
+            context = typed_scopes.get(scope_ref)
+            if context is None:
+                raise RouteGateError("c27_scope_not_declared_as_proceeding")
+            if (check_scope_id
+                    and context["procedure_type"] not in procedure_scopes[check_scope_id]):
+                if (record["status"] != "not_applicable"
+                        or record.get("scope_exclusion") != "procedure_outside_scope"):
+                    raise RouteGateError("c27_procedure_scoped_check_used_outside_scope")
         if strict:
             assessment_ref = item["assessment_ref"]
             if assessment_ref in seen_assessments:
@@ -523,6 +552,13 @@ def _abstract_issue_map(state: dict, signal_ids: set[str]) -> dict[str, dict]:
             ),
             "signal_states": sorted(signal_states.items()),
         }
+        for key in (
+            "procedure_type", "administrative_outcome_classification",
+            "administrative_outcome_source", "post_issuance_event_type",
+            "post_issuance_event_source",
+        ):
+            if key in item:
+                result[issue_ref][key] = item[key]
     return result
 
 
@@ -540,15 +576,38 @@ def validate_abstract_revision(route: dict, gaps: list[str]) -> set[str]:
         raise RouteGateError("abstract_revision_catalogue_unavailable") from error
 
     current = _abstract_issue_map(revision["current_abstract_state"], signal_defs)
-    declared = {
-        issue["issue_ref"]: {
+    declared = {}
+    typed_scopes = {
+        item["scope_ref"]: item for item in route.get("proceedings", [])
+    } if route.get("schema_version") == "0.6.0" else {}
+    for issue in route["issues"]:
+        item = {
             "scope_ref": issue["scope_ref"],
             "signal_ids": sorted(issue["signal_ids"]),
         }
-        for issue in route["issues"]
-    }
+        if route.get("schema_version") == "0.6.0":
+            context = typed_scopes.get(issue["scope_ref"])
+            if context is None:
+                raise RouteGateError("abstract_state_issue_scope_undeclared")
+            item["procedure_type"] = context["procedure_type"]
+            outcome = issue.get("administrative_outcome")
+            if outcome:
+                item["administrative_outcome_classification"] = outcome["classification"]
+                item["administrative_outcome_source"] = outcome["source"]
+            event = issue.get("post_issuance_event")
+            if event:
+                item["post_issuance_event_type"] = event["event_type"]
+                item["post_issuance_event_source"] = event["source"]
+        declared[issue["issue_ref"]] = item
     declared_current = {
-        issue_ref: {"scope_ref": item["scope_ref"], "signal_ids": item["signal_ids"]}
+        issue_ref: {
+            key: value for key, value in item.items()
+            if key in {
+                "scope_ref", "signal_ids", "procedure_type",
+                "administrative_outcome_classification", "administrative_outcome_source",
+                "post_issuance_event_type", "post_issuance_event_source",
+            }
+        }
         for issue_ref, item in current.items()
     }
     if declared_current != declared:
@@ -668,10 +727,16 @@ def check_declared_issues(route: dict, evidence_index: dict[str, dict],
         registry_data = load_issue_json(ISSUE_REGISTRY_PATH)
     except IssueSelectionError as error:
         raise RouteGateError("issue_routing_configuration_invalid") from error
+    outcome_signal_by_class = {
+        item["required_outcome_classification"]: item["when_any_signal"][0]
+        for item in matrix.get("routes", [])
+        if item.get("required_outcome_classification")
+        and len(item.get("when_any_signal", [])) == 1
+    }
 
     version = route.get("schema_version")
-    strict = version in {"0.4.0", "0.5.0"}
-    v05 = version == "0.5.0"
+    strict = version in {"0.4.0", "0.5.0", "0.6.0"}
+    v05 = version in {"0.5.0", "0.6.0"}
     if (version == "0.4.0" and route.get("revision_control") is not None
             and route.get("invocation", {}).get("material_change") is not True):
         raise RouteGateError("revision_control_without_material_change")
@@ -693,6 +758,41 @@ def check_declared_issues(route: dict, evidence_index: dict[str, dict],
     for item in route["c27_checks"]:
         actual_by_scope.setdefault(item["scope_ref"], set()).add(item["record"]["check_id"])
     issue_by_ref = {item["issue_ref"]: item for item in issues}
+    typed_scopes: dict[str, dict] = {}
+    if version == "0.6.0":
+        for proceeding in route["proceedings"]:
+            scope_ref = proceeding["scope_ref"]
+            if scope_ref in typed_scopes:
+                raise RouteGateError("proceeding_scope_duplicate")
+            if proceeding["procedure_type"] not in PROCEDURE_TYPES:
+                raise RouteGateError("proceeding_procedure_type_unknown")
+            if proceeding["evidence_ref"] not in evidence_index:
+                raise RouteGateError("proceeding_evidence_reference_dangling")
+            if evidence_index[proceeding["evidence_ref"]]["kind"] not in {
+                "conversation_record", "local_artifact",
+            }:
+                raise RouteGateError("proceeding_evidence_kind_invalid")
+            typed_scopes[scope_ref] = proceeding
+        for proceeding in typed_scopes.values():
+            parent_ref = proceeding.get("parent_scope_ref")
+            if parent_ref is not None and parent_ref not in typed_scopes:
+                raise RouteGateError("proceeding_parent_scope_unknown")
+            if parent_ref == proceeding["scope_ref"]:
+                raise RouteGateError("proceeding_parent_scope_self_link")
+            if proceeding["procedure_type"] == "visa_appeal" and not parent_ref:
+                gaps.append(
+                    f"proceeding:{proceeding['scope_ref']}:underlying_application_proceeding_unlinked"
+                )
+            elif (proceeding["procedure_type"] == "visa_appeal"
+                  and typed_scopes[parent_ref]["procedure_type"] not in {
+                      "ordinary_short_stay_visa", "eu_family_entry_visa",
+                      "national_long_stay_visa",
+                  }):
+                gaps.append(
+                    f"proceeding:{proceeding['scope_ref']}:parent_is_not_a_visa_application"
+                )
+        if any(item["scope_ref"] not in typed_scopes for item in issues):
+            raise RouteGateError("issue_scope_not_declared_as_proceeding")
     issue_c27_actual = validate_issue_c27_bindings(route) if v05 else {}
     issue_c27_status_by_issue = issue_c27_statuses(route) if v05 else {}
     if v05:
@@ -710,6 +810,15 @@ def check_declared_issues(route: dict, evidence_index: dict[str, dict],
     declared_issue_refs = {item["issue_ref"] for item in issues}
     all_source_owners = set((matrix.get("source_owners") or {}).keys())
     issue_reports: list[dict] = []
+    scoped_signals = {
+        "outcome_article18_not_competent", "outcome_article19_inadmissible",
+        "outcome_article32_substantive_refusal", "mandatory_provider_pre_screening",
+        "lodgement_disputed", "post_issuance_event", "withdrawal_or_transfer_event",
+    }
+    if version != "0.6.0" and any(
+        scoped_signals.intersection(item.get("signal_ids", [])) for item in issues
+    ):
+        raise RouteGateError("outcome_routing_requires_receipt_0_6")
 
     if version == "0.4.0" and route.get("invocation", {}).get("material_change") is True:
         reassessed_scopes = set(route["revision_control"]["reassessed_scope_refs"])
@@ -782,18 +891,82 @@ def check_declared_issues(route: dict, evidence_index: dict[str, dict],
         if evidence["kind"] != "conversation_record":
             raise RouteGateError(f"issue_evidence_wrong_kind:{issue_ref}")
         try:
+            procedure_type = typed_scopes.get(scope_ref, {}).get("procedure_type")
+            outcome_record = issue.get("administrative_outcome") or {}
+            outcome_classification = outcome_record.get("classification")
+            outcome_evidence = evidence_index.get(outcome_record.get("evidence_ref"))
+            if outcome_record:
+                if outcome_classification not in ADMINISTRATIVE_OUTCOMES:
+                    raise RouteGateError(f"issue_outcome_classification_invalid:{issue_ref}")
+                if outcome_evidence is None:
+                    raise RouteGateError(f"issue_outcome_evidence_dangling:{issue_ref}")
+                formal_outcomes = {
+                    "article18_not_competent", "article19_inadmissible",
+                    "article32_substantive_refusal", "visa_issued",
+                }
+                if outcome_classification in formal_outcomes:
+                    if outcome_record["source"] not in {
+                        "document_seen", "authority_record_seen",
+                    } or outcome_evidence["kind"] != "local_artifact":
+                        gaps.append(
+                            f"issue:{issue_ref}:administrative_outcome_official_record_unverified"
+                        )
+                        outcome_classification = None
+            post_event = issue.get("post_issuance_event") or {}
+            post_event_type = post_event.get("event_type")
+            if post_event:
+                if post_event_type not in POST_ISSUANCE_EVENTS:
+                    raise RouteGateError(f"issue_post_issuance_event_type_invalid:{issue_ref}")
+                post_evidence = evidence_index.get(post_event.get("evidence_ref"))
+                if post_evidence is None:
+                    raise RouteGateError(f"issue_post_issuance_evidence_dangling:{issue_ref}")
+                if (post_event["source"] not in {"document_seen", "authority_record_seen"}
+                        or post_evidence["kind"] != "local_artifact"):
+                    gaps.append(f"issue:{issue_ref}:post_issuance_event_official_record_unverified")
+                    post_event_type = None
             requirements = select_issue_requirements(
-                issue["signal_ids"], matrix=matrix, registry=registry_data
+                issue["signal_ids"], matrix=matrix, registry=registry_data,
+                procedure_type=procedure_type,
+                administrative_outcome_classification=outcome_classification,
+                post_issuance_event_type=post_event_type,
             )
         except IssueSelectionError as error:
             raise RouteGateError(f"issue_signal_selection_invalid:{issue_ref}:{error}") from error
+        expected_outcome_signal = outcome_signal_by_class.get(outcome_classification)
+        if (expected_outcome_signal
+                and expected_outcome_signal not in issue["signal_ids"]):
+            gaps.append(
+                f"issue:{issue_ref}:administrative_outcome_signal_missing:{expected_outcome_signal}"
+            )
         if v05:
+            for status in requirements["route_scope_statuses"]:
+                if (status["status"] != "applicable"
+                        and status["status"] not in INFORMATIONAL_ROUTE_SCOPE_STATUSES):
+                    gaps.append(
+                        f"issue:{issue_ref}:route_scope:{status['route_id']}:{status['status']}"
+                    )
             actual = issue_c27_actual.get(issue_ref, set())
             bound_statuses = issue_c27_status_by_issue.get(issue_ref, {})
         else:
             actual = actual_by_scope.get(scope_ref, set())
             bound_statuses = {}
         if v05:
+            procedure_scoped_check_ids = {
+                item["check_id"] for item in registry_data.get("checks", [])
+                if item.get("procedure_scope_id")
+            }
+            misrouted_scoped_checks = sorted(
+                check_id for check_id in (
+                    (set(actual) & procedure_scoped_check_ids)
+                    - set(requirements["check_ids"])
+                )
+                if bound_statuses.get(check_id) in {"assessed", "partial"}
+            )
+            if misrouted_scoped_checks:
+                raise RouteGateError(
+                    f"issue_procedure_scoped_check_not_selected:{issue_ref}:"
+                    f"{misrouted_scoped_checks[0]}"
+                )
             open_issue_check_ids = record_issue_c27_gaps(
                 issue_ref, requirements["check_ids"], actual, bound_statuses, gaps
             )
@@ -821,11 +994,32 @@ def check_declared_issues(route: dict, evidence_index: dict[str, dict],
             "issue_ref": issue_ref,
             "scope_ref": scope_ref,
             "route_ids": requirements["route_ids"],
+            "route_scope_statuses": requirements["route_scope_statuses"],
             "required_check_ids": requirements["check_ids"],
             "required_source_owner_ids": requirements["source_owner_ids"],
             "attack_angle_topic_count": len(requirements["attack_angle_topics"]),
             "attack_angle_topics": requirements["attack_angle_topics"],
         }
+        if version == "0.6.0":
+            issue_report["procedure_type"] = procedure_type
+            raw_outcome = issue.get("administrative_outcome") or {}
+            issue_report["administrative_outcome_classification"] = raw_outcome.get("classification")
+            issue_report["administrative_outcome_source"] = raw_outcome.get("source")
+            issue_report["administrative_outcome_routing_classification"] = outcome_classification
+            issue_report["administrative_outcome_routing_status"] = (
+                "not_recorded" if not raw_outcome
+                else "available_for_routing" if outcome_classification is not None
+                else "official_record_unverified"
+            )
+            raw_post_event = issue.get("post_issuance_event") or {}
+            issue_report["post_issuance_event_type"] = raw_post_event.get("event_type")
+            issue_report["post_issuance_event_source"] = raw_post_event.get("source")
+            issue_report["post_issuance_event_routing_type"] = post_event_type
+            issue_report["post_issuance_event_routing_status"] = (
+                "not_recorded" if not raw_post_event
+                else "available_for_routing" if post_event_type is not None
+                else "official_record_unverified"
+            )
         if v05:
             issue_report["c27_check_statuses"] = {
                 check_id: bound_statuses.get(check_id, "missing")
@@ -1159,7 +1353,7 @@ def validate_route(path: Path) -> dict:
     validate_obj("consultation-route-receipt", route)
     gaps: list[str] = []
     validate_privacy_minimisation(route)
-    if strict_receipt(route):
+    if strict_receipt(route) and route["request_kind"] != "no_case_assessment":
         validate_abstract_revision(route, gaps)
     required_operation_ids = required_operations_for(route)
     registry = load_registry()

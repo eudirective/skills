@@ -8,7 +8,7 @@ Read the user's request again and identify each material question, reported even
 
 ## B. Expand and route coverage
 
-Map each issue to one or more neutral signals in `references/consultation-issue-routing.json`. Select only checks those signals require or conditionally trigger from `references/state-engine/check-registry.json`. Apply the route's negative conditions. Separate proceedings and keep C3 jurisdiction roles distinct. This routing metadata describes review coverage; it is not a second legal-rule or check registry.
+Map each issue to one or more neutral signals in `references/consultation-issue-routing.json`. Select only checks those signals require or conditionally trigger from `references/state-engine/check-registry.json`. Apply the route's negative conditions and typed procedure scope. Record formal administrative outcomes separately from generic stage, and record post-issuance events separately from the issuance outcome. A source-attributed outcome is still not a legal conclusion. Keep Visa Code Article 18 competence, Article 19 inadmissibility, Article 32 substantive refusal, and blocked access/lodgement on distinct paths. Do not select the Article 32 refusal/remedy check for inadmissibility or pre-lodgement obstruction. Separate proceedings and keep C3 jurisdiction roles distinct. This routing metadata describes review coverage; it is not a second legal-rule or check registry.
 
 ## C. Assess law, facts and evidence
 

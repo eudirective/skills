@@ -23,7 +23,7 @@ REGISTRY_PATH = ROOT / "references/state-engine/check-registry.json"
 SCHEMA = "c27-abstract-session/0.3.0"
 LEGACY_SCHEMAS = frozenset(("c27-abstract-session/0.1.0",
                             "c27-abstract-session/0.2.0"))
-OUTPUT_SCHEMA = "c27-case-state-report/0.3.0"
+OUTPUT_SCHEMA = "c27-case-state-report/0.4.0"
 ID_PATTERN = re.compile(r"^[A-Z]{1,3}[1-9][0-9]{0,3}$")
 REF_PATTERN = re.compile(r"^[a-z0-9][a-z0-9:._/-]{0,100}$")
 
@@ -112,7 +112,8 @@ RECORD_KINDS = frozenset(("formal_lodgement", "inquiry", "file_opened",
                           "other", "unspecified"))
 SCOPE_EXCLUSIONS = frozenset(("procedure_outside_scope", "actor_outside_scope",
                               "irrelevant_stage", "no_material_event",
-                              "legally_excluded_with_basis"))
+                              "legally_excluded_with_basis",
+                              "outcome_outside_scope"))
 CORRECTION_REASONS = frozenset(("user_correction", "classification_revision",
                                  "later_document", "provenance_reassessment",
                                  "chronology_reassessment"))
@@ -136,8 +137,15 @@ VALID_TRIGGERS = frozenset((
     "always", "family", "appointment", "lodgement", "visa", "document", "interview",
     "decision", "review", "complaint", "disclosure", "authority", "strategy",
     "deadline", "issue", "residence", "border", "marriage", "country", "soft_law",
-    "fraud", "stratagem", "legal_principle", "withdrawal"
+    "fraud", "stratagem", "legal_principle", "withdrawal",
+    "outcome_article18", "outcome_article19", "outcome_article32",
+    "post_issuance",
 ))
+OUTCOME_TRIGGER_CLASSES = {
+    "outcome_article18": "article18_not_competent",
+    "outcome_article19": "article19_inadmissible",
+    "outcome_article32": "article32_substantive_refusal",
+}
 ADMINISTRATIVE_OUTCOMES = frozenset((
     "article18_not_competent", "article19_inadmissible",
     "article32_substantive_refusal", "visa_issued",
@@ -546,17 +554,36 @@ def normalize_events(data):
 
 def load_registry(path=REGISTRY_PATH):
     reg = json.loads(Path(path).read_text(encoding="utf-8"))
-    object_keys(reg, {"schema", "description", "families", "checks"}, label="registry")
+    object_keys(reg, {"schema", "description", "families", "checks"},
+                {"procedure_scopes"}, label="registry")
     require(reg["schema"] in ("freemovement-check-registry/0.1.0",
-                               "freemovement-check-registry/0.2.0"),
+                               "freemovement-check-registry/0.2.0",
+                               "freemovement-check-registry/0.3.0"),
             "registry:schema")
+    procedure_scopes = {}
+    for scope in reg.get("procedure_scopes", []):
+        object_keys(scope, {"scope_id", "procedure_types"}, label="registry_procedure_scope")
+        scope_id = scope["scope_id"]
+        require(isinstance(scope_id, str) and bool(REF_PATTERN.fullmatch(scope_id)),
+                "registry:invalid_procedure_scope_id")
+        require(scope_id not in procedure_scopes,
+                "registry:duplicate_procedure_scope")
+        require(isinstance(scope["procedure_types"], list)
+                and bool(scope["procedure_types"])
+                and len(scope["procedure_types"]) == len(set(scope["procedure_types"]))
+                and set(scope["procedure_types"]) <= PROCEDURE_TYPES,
+                "registry:invalid_procedure_scope_types")
+        procedure_scopes[scope_id] = set(scope["procedure_types"])
+    if reg["schema"] == "freemovement-check-registry/0.3.0":
+        require(bool(procedure_scopes), "registry:procedure_scopes_required")
     require(isinstance(reg["checks"], list) and len(reg["checks"]) >= 50,
             "registry:missing_checks")
     ids = set()
     families = {x["family_id"] for x in reg["families"]}
     for c in reg["checks"]:
         object_keys(c, {"check_id", "family", "label", "triggers_any",
-                        "capability", "reference"}, {"priority", "catalog_entry_id"},
+                        "capability", "reference"},
+                   {"priority", "catalog_entry_id", "procedure_scope_id"},
                         label="registry_check")
         require(c["family"] in families
                 and c["check_id"].startswith(c["family"] + "."),
@@ -575,6 +602,9 @@ def load_registry(path=REGISTRY_PATH):
             require(isinstance(c["catalog_entry_id"], str)
                     and bool(REF_PATTERN.fullmatch(c["catalog_entry_id"])),
                     "registry:invalid_catalog_entry")
+        if "procedure_scope_id" in c:
+            require(c["procedure_scope_id"] in procedure_scopes,
+                    "registry:unknown_procedure_scope")
         require(isinstance(c["reference"], str)
                 and c["reference"].startswith("references/"),
                 "registry:invalid_reference")
@@ -1192,11 +1222,16 @@ def feature_tags(p, requested_focus=()):
             "article32_substantive_refusal", "visa_issued"
         } for item in p["administrative_outcome_records"]):
             t.add("visa")
-        if any(item["classification"] == "withdrawn_or_not_pursued"
-               for item in p["administrative_outcome_records"]):
+        for trigger, classification in OUTCOME_TRIGGER_CLASSES.items():
+            if any(item["classification"] == classification
+                   for item in p["administrative_outcome_records"]):
+                t.add(trigger)
+        if any(item["classification"] in {
+            "withdrawn_or_not_pursued", "discontinued_or_transferred",
+        } for item in p["administrative_outcome_records"]):
             t.add("withdrawal")
     if p.get("post_issuance_events"):
-        t.update(("visa", "decision"))
+        t.update(("visa", "decision", "post_issuance"))
     if steps.intersection({"review_filed", "reopened"}):
         t.add("review")
     return t
@@ -1211,18 +1246,33 @@ def validate_responses(data, all_ids, superseded, proceedings, registry):
     review_records = []
     specs = {c["check_id"]: c for c in registry["checks"]}
     known_proceedings = {p["proceeding_id"] for p in proceedings}
+    procedure_by_id = {p["proceeding_id"]: p["type"] for p in proceedings}
+    scope_types = {
+        item["scope_id"]: set(item["procedure_types"])
+        for item in registry.get("procedure_scopes", [])
+    }
     events = data["events"]
     event_proceeding = {}
     opened_at = {}
     superseded_at = {}
+    outcome_events = []
+    post_issuance_events = []
     for pos, e in enumerate(events):
         event_proceeding[e["event_id"]] = e["proceeding_id"]
         if e["kind"] == "event_correction":
             superseded_at[e["target_event_id"]] = pos
             child = e["replacement"]
             event_proceeding[child["event_id"]] = child["proceeding_id"]
+            if child["kind"] == "administrative_outcome":
+                outcome_events.append((pos, child))
+            elif child["kind"] == "post_issuance_event":
+                post_issuance_events.append((pos, child))
         elif e["kind"] == "proceeding_opened":
             opened_at[e["proceeding_id"]] = pos
+        elif e["kind"] == "administrative_outcome":
+            outcome_events.append((pos, e))
+        elif e["kind"] == "post_issuance_event":
+            post_issuance_events.append((pos, e))
     responses = data.get("responses", [])
     require(isinstance(responses, list) and len(responses) <= 100,
             "responses:invalid_count")
@@ -1259,6 +1309,51 @@ def validate_responses(data, all_ids, superseded, proceedings, registry):
             key = (pid, check_id)
             require(key not in seen, "response:duplicate_check")
             seen.add(key)
+            scope_id = spec.get("procedure_scope_id")
+            procedure_out_of_scope = bool(
+                scope_id and procedure_by_id[pid] not in scope_types[scope_id]
+            )
+            outcome_triggers = set(spec["triggers_any"]) & set(OUTCOME_TRIGGER_CLASSES)
+            if outcome_triggers:
+                current_outcomes = [
+                    event for position, event in outcome_events
+                    if event["proceeding_id"] == pid and position <= cursor
+                    and superseded_at.get(event["event_id"], cursor + 1) > cursor
+                ]
+                outcome_classes = {event["classification"] for event in current_outcomes}
+                matching_triggers = {
+                    trigger for trigger, classification in OUTCOME_TRIGGER_CLASSES.items()
+                    if trigger in outcome_triggers and classification in outcome_classes
+                }
+                if c["status"] in ("assessed", "partial") and not procedure_out_of_scope:
+                    require(bool(matching_triggers),
+                            "response:outcome_specific_check_without_matching_outcome")
+                elif (c["status"] == "not_applicable" and not matching_triggers
+                      and not procedure_out_of_scope):
+                    expected_exclusion = (
+                        "outcome_outside_scope" if outcome_classes
+                        else "no_material_event"
+                    )
+                    require(c.get("scope_exclusion") == expected_exclusion,
+                            "response:outcome_scope_exclusion_not_recorded")
+            if procedure_out_of_scope:
+                require(c["status"] == "not_applicable",
+                        "response:procedure_scoped_check_assessed_outside_scope")
+                require(c.get("scope_exclusion") == "procedure_outside_scope",
+                        "response:procedure_scope_exclusion_not_recorded")
+            if "post_issuance" in spec["triggers_any"]:
+                current_post_events = [
+                    event for position, event in post_issuance_events
+                    if event["proceeding_id"] == pid and position <= cursor
+                    and superseded_at.get(event["event_id"], cursor + 1) > cursor
+                ]
+                if c["status"] in ("assessed", "partial") and not procedure_out_of_scope:
+                    require(bool(current_post_events),
+                            "response:post_issuance_check_without_event")
+                elif (c["status"] == "not_applicable" and not current_post_events
+                      and not procedure_out_of_scope):
+                    require(c.get("scope_exclusion") == "no_material_event",
+                            "response:post_issuance_exclusion_not_recorded")
             refs = c.get("evidence_event_ids", [])
             require(isinstance(refs, list) and len(refs) <= 30,
                     "response:invalid_evidence_refs")
@@ -1296,6 +1391,10 @@ def make_coverage(proceedings, records, responses, registry, raw_events,
         (r["proceeding_id"], r["check_id"]): r for r in records
         if r["response_id"] == latest_response
     }
+    scope_types = {
+        item["scope_id"]: set(item["procedure_types"])
+        for item in registry.get("procedure_scopes", [])
+    }
     current = []
     for p in proceedings:
         pid = p["proceeding_id"]
@@ -1305,6 +1404,24 @@ def make_coverage(proceedings, records, responses, registry, raw_events,
             recorded = last_record.get((pid, cid))
             immediate = current_response.get((pid, cid))
             relevant = bool(tags.intersection(spec["triggers_any"]))
+            scope_id = spec.get("procedure_scope_id")
+            out_of_procedure_scope = bool(
+                scope_id and p["type"] not in scope_types[scope_id]
+            )
+            if out_of_procedure_scope and recorded is None:
+                if full or relevant:
+                    current.append({
+                        "proceeding_id": pid, "check_id": cid,
+                        "family": spec["family"], "status": "not_applicable",
+                        "capability": spec["capability"],
+                        "priority": spec.get("priority", "normal"),
+                        "method": "none", "from_response": None,
+                        "method_assurance": "none",
+                        "scope_exclusion": "procedure_outside_scope",
+                        "procedure_scope_id": scope_id,
+                        "procedure_type": p["type"],
+                    })
+                continue
             if not relevant and recorded is None:
                 if full:
                     current.append({
@@ -1342,7 +1459,7 @@ def make_coverage(proceedings, records, responses, registry, raw_events,
                 status = "unavailable_for_live_advice"
             if not relevant and record is not None:
                 status = "historical_" + status
-            current.append({
+            coverage_item = {
                 "proceeding_id": pid, "check_id": cid,
                 "family": spec["family"], "status": status,
                 "capability": spec["capability"],
@@ -1350,7 +1467,12 @@ def make_coverage(proceedings, records, responses, registry, raw_events,
                 "method": method, "from_response": from_response,
                 "method_assurance": (
                     "self_reported" if method != "none" else "none")
-            })
+            }
+            if record and record.get("scope_exclusion"):
+                coverage_item["scope_exclusion"] = record["scope_exclusion"]
+            if scope_id:
+                coverage_item["procedure_scope_id"] = scope_id
+            current.append(coverage_item)
     gap_statuses = {"not_checked", "needs_recheck",
                     "unavailable_for_live_advice", "blocked", "partial",
                     "previously_partial", "historical_needs_recheck"}

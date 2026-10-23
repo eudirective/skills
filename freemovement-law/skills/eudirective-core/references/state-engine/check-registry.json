@@ -1,5 +1,5 @@
 {
-  "schema": "freemovement-check-registry/0.2.0",
+  "schema": "freemovement-check-registry/0.3.0",
   "description": "Atomic issue inventory with risk-prioritized display. Each check is a discovery prompt, not proof of execution. Catalog pattern screening is model-led only and distinct from synthetic script execution. Untriggered never means legally inapplicable.",
   "families": [
     {
@@ -3505,6 +3505,117 @@
       "reference": "references/principles/principle-catalog.json",
       "catalog_entry_id": "charter_article_41_direct_reliance",
       "priority": "normal"
+    },
+    {
+      "check_id": "authority.administrative_outcome_classification",
+      "family": "authority",
+      "label": "Classify the recorded administrative outcome separately from procedural stage",
+      "triggers_any": [
+        "decision",
+        "authority",
+        "withdrawal"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/consultation-outcomes-and-remedies.md",
+      "priority": "important"
+    },
+    {
+      "check_id": "authority.visa_code_article18_competence",
+      "family": "authority",
+      "label": "Review a recorded Visa Code Article 18 competence finding",
+      "triggers_any": [
+        "outcome_article18"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/consultation-outcomes-and-remedies.md",
+      "priority": "important",
+      "procedure_scope_id": "visa_code_ordinary_short_stay_application"
+    },
+    {
+      "check_id": "authority.visa_code_article19_inadmissibility",
+      "family": "authority",
+      "label": "Review a recorded Visa Code Article 19 inadmissibility finding",
+      "triggers_any": [
+        "outcome_article19"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/consultation-outcomes-and-remedies.md",
+      "priority": "important",
+      "procedure_scope_id": "visa_code_ordinary_short_stay_application"
+    },
+    {
+      "check_id": "authority.visa_code_article32_refusal_remedy",
+      "family": "authority",
+      "label": "Review a substantive Visa Code refusal and its Article 32 remedy information",
+      "triggers_any": [
+        "outcome_article32"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/consultation-outcomes-and-remedies.md",
+      "priority": "urgent",
+      "procedure_scope_id": "visa_code_ordinary_short_stay_application"
+    },
+    {
+      "check_id": "access.provider_pre_screening",
+      "family": "access",
+      "label": "Record whether a provider screened or blocked an application before consular receipt",
+      "triggers_any": [
+        "visa",
+        "appointment",
+        "lodgement"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/consultation-outcomes-and-remedies.md",
+      "priority": "important",
+      "procedure_scope_id": "visa_application_provider_process"
+    },
+    {
+      "check_id": "authority.post_issuance_event",
+      "family": "authority",
+      "label": "Classify and verify a cancellation, revocation, annulment, expiry, extension or reissue after visa issuance",
+      "triggers_any": [
+        "post_issuance"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/consultation-outcomes-and-remedies.md",
+      "priority": "important",
+      "procedure_scope_id": "issued_visa_procedure"
+    },
+    {
+      "check_id": "lifecycle.withdrawal_circumstances",
+      "family": "lifecycle",
+      "label": "Record who initiated withdrawal or transfer, when, why and with what notice",
+      "triggers_any": [
+        "withdrawal",
+        "decision",
+        "authority"
+      ],
+      "capability": "model_guidance",
+      "reference": "references/consultation-outcomes-and-remedies.md",
+      "priority": "important"
+    }
+  ],
+  "procedure_scopes": [
+    {
+      "scope_id": "visa_code_ordinary_short_stay_application",
+      "procedure_types": [
+        "ordinary_short_stay_visa"
+      ]
+    },
+    {
+      "scope_id": "visa_application_provider_process",
+      "procedure_types": [
+        "ordinary_short_stay_visa",
+        "eu_family_entry_visa"
+      ]
+    },
+    {
+      "scope_id": "issued_visa_procedure",
+      "procedure_types": [
+        "ordinary_short_stay_visa",
+        "eu_family_entry_visa",
+        "national_long_stay_visa"
+      ]
     }
   ]
 }

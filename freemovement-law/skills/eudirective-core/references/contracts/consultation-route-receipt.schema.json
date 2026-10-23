@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Consultation route receipt 0.5.0 (legacy 0.1.0-0.4.0 readable)",
+  "title": "Consultation route receipt 0.6.0 (legacy 0.1.0-0.5.0 readable)",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -17,13 +17,38 @@
     "coverage_claim"
   ],
   "properties": {
-    "schema_version": { "enum": ["0.1.0", "0.2.0", "0.3.0", "0.4.0", "0.5.0"] },
-    "route_ref": { "$ref": "#/$defs/opaque_ref" },
-    "request_kind": { "enum": ["applicant_guidance", "source_research", "no_case_assessment"] },
-    "invocation": { "$ref": "#/$defs/invocation" },
-    "revision_control": { "$ref": "#/$defs/revision_control" },
-    "source_ledger": { "$ref": "#/$defs/source_ledger" },
-    "dashboard": { "$ref": "#/$defs/dashboard" },
+    "schema_version": {
+      "enum": [
+        "0.1.0",
+        "0.2.0",
+        "0.3.0",
+        "0.4.0",
+        "0.5.0",
+        "0.6.0"
+      ]
+    },
+    "route_ref": {
+      "$ref": "#/$defs/opaque_ref"
+    },
+    "request_kind": {
+      "enum": [
+        "applicant_guidance",
+        "source_research",
+        "no_case_assessment"
+      ]
+    },
+    "invocation": {
+      "$ref": "#/$defs/invocation"
+    },
+    "revision_control": {
+      "$ref": "#/$defs/revision_control"
+    },
+    "source_ledger": {
+      "$ref": "#/$defs/source_ledger"
+    },
+    "dashboard": {
+      "$ref": "#/$defs/dashboard"
+    },
     "classification": {
       "type": "object",
       "additionalProperties": false,
@@ -35,100 +60,215 @@
         "requested_output"
       ],
       "properties": {
-        "jurisdictions_by_role": { "$ref": "#/$defs/classification_state" },
-        "proceedings_and_stages": { "$ref": "#/$defs/classification_state" },
-        "legal_questions": { "$ref": "#/$defs/classification_state" },
-        "urgency": { "$ref": "#/$defs/classification_state" },
-        "requested_output": { "$ref": "#/$defs/classification_state" }
+        "jurisdictions_by_role": {
+          "$ref": "#/$defs/classification_state"
+        },
+        "proceedings_and_stages": {
+          "$ref": "#/$defs/classification_state"
+        },
+        "legal_questions": {
+          "$ref": "#/$defs/classification_state"
+        },
+        "urgency": {
+          "$ref": "#/$defs/classification_state"
+        },
+        "requested_output": {
+          "$ref": "#/$defs/classification_state"
+        }
       }
     },
     "conditional_review": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["status", "evidence_ref"],
+      "required": [
+        "status",
+        "evidence_ref"
+      ],
       "properties": {
-        "status": { "enum": ["reviewed", "incomplete"] },
-        "evidence_ref": { "$ref": "#/$defs/opaque_ref" }
+        "status": {
+          "enum": [
+            "reviewed",
+            "incomplete"
+          ]
+        },
+        "evidence_ref": {
+          "$ref": "#/$defs/opaque_ref"
+        }
       }
     },
     "operations": {
       "type": "array",
       "maxItems": 100,
-      "items": { "$ref": "#/$defs/operation" }
+      "items": {
+        "$ref": "#/$defs/operation"
+      }
     },
-        "c27_checks": {
+    "c27_checks": {
       "type": "array",
       "maxItems": 500,
-      "items": { "$ref": "#/$defs/c27_check" }
+      "items": {
+        "$ref": "#/$defs/c27_check"
+      }
     },
     "issues": {
       "type": "array",
       "minItems": 1,
       "maxItems": 100,
-      "items": { "$ref": "#/$defs/declared_issue" }
+      "items": {
+        "$ref": "#/$defs/declared_issue"
+      }
     },
     "evidence": {
       "type": "array",
       "maxItems": 500,
-      "items": { "$ref": "#/$defs/evidence" }
+      "items": {
+        "$ref": "#/$defs/evidence"
+      }
     },
     "research_artifacts": {
       "type": "array",
       "maxItems": 20,
-      "items": { "$ref": "#/$defs/research_artifact" }
+      "items": {
+        "$ref": "#/$defs/research_artifact"
+      }
     },
     "module_pairs": {
       "type": "array",
       "maxItems": 50,
-      "items": { "$ref": "#/$defs/module_pair" }
+      "items": {
+        "$ref": "#/$defs/module_pair"
+      }
     },
-    "coverage_claim": { "enum": ["comprehensive", "partial", "preliminary"] }
+    "coverage_claim": {
+      "enum": [
+        "comprehensive",
+        "partial",
+        "preliminary"
+      ]
+    },
+    "proceedings": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 100,
+      "items": {
+        "$ref": "#/$defs/proceeding_scope"
+      }
+    }
   },
   "allOf": [
     {
-      "if": { "properties": { "schema_version": { "enum": ["0.2.0", "0.3.0", "0.4.0"] } }, "required": ["schema_version"] },
+      "if": {
+        "properties": {
+          "schema_version": {
+            "enum": [
+              "0.2.0",
+              "0.3.0",
+              "0.4.0"
+            ]
+          }
+        },
+        "required": [
+          "schema_version"
+        ]
+      },
       "then": {
-        "required": ["invocation"],
+        "required": [
+          "invocation"
+        ],
         "allOf": [
           {
-            "if": { "properties": { "request_kind": { "enum": ["applicant_guidance", "source_research"] } }, "required": ["request_kind"] },
-            "then": { "required": ["source_ledger"] }
+            "if": {
+              "properties": {
+                "request_kind": {
+                  "enum": [
+                    "applicant_guidance",
+                    "source_research"
+                  ]
+                }
+              },
+              "required": [
+                "request_kind"
+              ]
+            },
+            "then": {
+              "required": [
+                "source_ledger"
+              ]
+            }
           },
           {
             "if": {
               "properties": {
                 "invocation": {
-                  "properties": { "state": { "const": "explicit" } },
-                  "required": ["state"]
+                  "properties": {
+                    "state": {
+                      "const": "explicit"
+                    }
+                  },
+                  "required": [
+                    "state"
+                  ]
                 }
               },
-              "required": ["invocation"]
+              "required": [
+                "invocation"
+              ]
             },
-            "then": { "required": ["dashboard"] }
+            "then": {
+              "required": [
+                "dashboard"
+              ]
+            }
           },
           {
             "if": {
               "properties": {
                 "invocation": {
-                  "properties": { "dashboard_requested": { "const": true } },
-                  "required": ["dashboard_requested"]
+                  "properties": {
+                    "dashboard_requested": {
+                      "const": true
+                    }
+                  },
+                  "required": [
+                    "dashboard_requested"
+                  ]
                 }
               },
-              "required": ["invocation"]
+              "required": [
+                "invocation"
+              ]
             },
-            "then": { "required": ["dashboard"] }
+            "then": {
+              "required": [
+                "dashboard"
+              ]
+            }
           }
         ]
       }
     },
     {
-      "if": { "properties": { "schema_version": { "const": "0.3.0" } }, "required": ["schema_version"] },
+      "if": {
+        "properties": {
+          "schema_version": {
+            "const": "0.3.0"
+          }
+        },
+        "required": [
+          "schema_version"
+        ]
+      },
       "then": {
         "properties": {
           "source_ledger": {
             "properties": {
               "sources": {
-                "items": { "required": ["response_discovery_method", "conversation_discovery_method"] }
+                "items": {
+                  "required": [
+                    "response_discovery_method",
+                    "conversation_discovery_method"
+                  ]
+                }
               }
             }
           }
@@ -138,16 +278,34 @@
     {
       "if": {
         "properties": {
-          "schema_version": { "const": "0.4.0" },
-          "request_kind": { "enum": ["applicant_guidance", "source_research"] }
+          "schema_version": {
+            "const": "0.4.0"
+          },
+          "request_kind": {
+            "enum": [
+              "applicant_guidance",
+              "source_research"
+            ]
+          }
         },
-        "required": ["schema_version", "request_kind"]
+        "required": [
+          "schema_version",
+          "request_kind"
+        ]
       },
       "then": {
-        "required": ["issues", "dashboard"],
+        "required": [
+          "issues",
+          "dashboard"
+        ],
         "properties": {
           "issues": {
-            "items": { "required": ["source_obligations", "attack_angle_reviews"] }
+            "items": {
+              "required": [
+                "source_obligations",
+                "attack_angle_reviews"
+              ]
+            }
           }
         }
       }
@@ -155,61 +313,317 @@
     {
       "if": {
         "properties": {
-          "schema_version": { "const": "0.4.0" },
+          "schema_version": {
+            "const": "0.4.0"
+          },
           "invocation": {
-            "properties": { "material_change": { "const": true } },
-            "required": ["material_change"]
+            "properties": {
+              "material_change": {
+                "const": true
+              }
+            },
+            "required": [
+              "material_change"
+            ]
           }
         },
-        "required": ["schema_version", "invocation"]
+        "required": [
+          "schema_version",
+          "invocation"
+        ]
       },
-      "then": { "required": ["revision_control"] }
+      "then": {
+        "required": [
+          "revision_control"
+        ]
+      }
     },
     {
       "if": {
         "properties": {
-          "schema_version": { "const": "0.5.0" },
-          "request_kind": { "enum": ["applicant_guidance", "source_research"] }
+          "schema_version": {
+            "const": "0.5.0"
+          },
+          "request_kind": {
+            "enum": [
+              "applicant_guidance",
+              "source_research"
+            ]
+          }
         },
-        "required": ["schema_version", "request_kind"]
+        "required": [
+          "schema_version",
+          "request_kind"
+        ]
       },
       "then": {
-        "required": ["invocation", "source_ledger", "issues", "dashboard", "revision_control"],
+        "required": [
+          "invocation",
+          "source_ledger",
+          "issues",
+          "dashboard",
+          "revision_control"
+        ],
         "properties": {
           "invocation": {
-            "required": ["material_change"]
+            "required": [
+              "material_change"
+            ]
           },
           "source_ledger": {
             "properties": {
               "sources": {
                 "items": {
-                  "required": ["response_discovery_method", "conversation_discovery_method"]
+                  "required": [
+                    "response_discovery_method",
+                    "conversation_discovery_method"
+                  ]
                 }
               }
             }
           },
           "c27_checks": {
             "items": {
-              "required": ["assessment_ref", "binding_kind", "bound_issue_refs"],
+              "required": [
+                "assessment_ref",
+                "binding_kind",
+                "bound_issue_refs"
+              ],
               "allOf": [
-                { "if": { "properties": { "binding_kind": { "const": "issue_specific" } }, "required": ["binding_kind"] }, "then": { "properties": { "bound_issue_refs": { "minItems": 1, "maxItems": 1 } }, "not": { "required": ["shared_basis"] } } },
-                { "if": { "properties": { "binding_kind": { "const": "proceeding_shared" } }, "required": ["binding_kind"] }, "then": { "required": ["shared_basis"], "properties": { "bound_issue_refs": { "minItems": 2 } } } }
+                {
+                  "if": {
+                    "properties": {
+                      "binding_kind": {
+                        "const": "issue_specific"
+                      }
+                    },
+                    "required": [
+                      "binding_kind"
+                    ]
+                  },
+                  "then": {
+                    "properties": {
+                      "bound_issue_refs": {
+                        "minItems": 1,
+                        "maxItems": 1
+                      }
+                    },
+                    "not": {
+                      "required": [
+                        "shared_basis"
+                      ]
+                    }
+                  }
+                },
+                {
+                  "if": {
+                    "properties": {
+                      "binding_kind": {
+                        "const": "proceeding_shared"
+                      }
+                    },
+                    "required": [
+                      "binding_kind"
+                    ]
+                  },
+                  "then": {
+                    "required": [
+                      "shared_basis"
+                    ],
+                    "properties": {
+                      "bound_issue_refs": {
+                        "minItems": 2
+                      }
+                    }
+                  }
+                }
               ]
             }
           },
           "issues": {
             "items": {
-              "required": ["source_obligations", "attack_angle_reviews", "c27_assessment_refs", "conditional_closure", "source_owner_exclusions"],
+              "required": [
+                "source_obligations",
+                "attack_angle_reviews",
+                "c27_assessment_refs",
+                "conditional_closure",
+                "source_owner_exclusions"
+              ],
               "properties": {
-                "source_obligations": { "items": { "required": ["policy_excluded_source_classes"] } },
-                "attack_angle_reviews": { "items": { "required": ["screening", "trigger_any_signal_ids", "trigger_all_signal_ids"] } }
+                "source_obligations": {
+                  "items": {
+                    "required": [
+                      "policy_excluded_source_classes"
+                    ]
+                  }
+                },
+                "attack_angle_reviews": {
+                  "items": {
+                    "required": [
+                      "screening",
+                      "trigger_any_signal_ids",
+                      "trigger_all_signal_ids"
+                    ]
+                  }
+                }
               }
             }
           },
           "revision_control": {
             "required": [
-              "change_detection_status", "current_abstract_state", "previous_abstract_state",
-              "added_issue_refs", "removed_issue_refs", "changed_issue_refs", "removed_issue_reviews"
+              "change_detection_status",
+              "current_abstract_state",
+              "previous_abstract_state",
+              "added_issue_refs",
+              "removed_issue_refs",
+              "changed_issue_refs",
+              "removed_issue_reviews"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "schema_version": {
+            "const": "0.6.0"
+          },
+          "request_kind": {
+            "enum": [
+              "applicant_guidance",
+              "source_research"
+            ]
+          }
+        },
+        "required": [
+          "schema_version",
+          "request_kind"
+        ]
+      },
+      "then": {
+        "required": [
+          "invocation",
+          "source_ledger",
+          "issues",
+          "dashboard",
+          "revision_control",
+          "proceedings"
+        ],
+        "properties": {
+          "invocation": {
+            "required": [
+              "material_change"
+            ]
+          },
+          "source_ledger": {
+            "properties": {
+              "sources": {
+                "items": {
+                  "required": [
+                    "response_discovery_method",
+                    "conversation_discovery_method"
+                  ]
+                }
+              }
+            }
+          },
+          "c27_checks": {
+            "items": {
+              "required": [
+                "assessment_ref",
+                "binding_kind",
+                "bound_issue_refs"
+              ],
+              "allOf": [
+                {
+                  "if": {
+                    "properties": {
+                      "binding_kind": {
+                        "const": "issue_specific"
+                      }
+                    },
+                    "required": [
+                      "binding_kind"
+                    ]
+                  },
+                  "then": {
+                    "properties": {
+                      "bound_issue_refs": {
+                        "minItems": 1,
+                        "maxItems": 1
+                      }
+                    },
+                    "not": {
+                      "required": [
+                        "shared_basis"
+                      ]
+                    }
+                  }
+                },
+                {
+                  "if": {
+                    "properties": {
+                      "binding_kind": {
+                        "const": "proceeding_shared"
+                      }
+                    },
+                    "required": [
+                      "binding_kind"
+                    ]
+                  },
+                  "then": {
+                    "required": [
+                      "shared_basis"
+                    ],
+                    "properties": {
+                      "bound_issue_refs": {
+                        "minItems": 2
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "issues": {
+            "items": {
+              "required": [
+                "source_obligations",
+                "attack_angle_reviews",
+                "c27_assessment_refs",
+                "conditional_closure",
+                "source_owner_exclusions"
+              ],
+              "properties": {
+                "source_obligations": {
+                  "items": {
+                    "required": [
+                      "policy_excluded_source_classes"
+                    ]
+                  }
+                },
+                "attack_angle_reviews": {
+                  "items": {
+                    "required": [
+                      "screening",
+                      "trigger_any_signal_ids",
+                      "trigger_all_signal_ids"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "revision_control": {
+            "required": [
+              "change_detection_status",
+              "current_abstract_state",
+              "previous_abstract_state",
+              "added_issue_refs",
+              "removed_issue_refs",
+              "changed_issue_refs",
+              "removed_issue_reviews"
             ]
           }
         }
@@ -231,20 +645,50 @@
     "classification_state": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["state", "evidence_ref"],
+      "required": [
+        "state",
+        "evidence_ref"
+      ],
       "properties": {
-        "state": { "enum": ["recorded", "unknown", "not_applicable"] },
-        "evidence_ref": { "$ref": "#/$defs/opaque_ref" }
+        "state": {
+          "enum": [
+            "recorded",
+            "unknown",
+            "not_applicable"
+          ]
+        },
+        "evidence_ref": {
+          "$ref": "#/$defs/opaque_ref"
+        }
       }
     },
     "invocation": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["state", "basis", "dashboard_requested"],
+      "required": [
+        "state",
+        "basis",
+        "dashboard_requested"
+      ],
       "properties": {
-        "state": { "enum": ["explicit", "implicit", "unknown"] },
-        "basis": { "enum": ["host_signal", "visible_plugin_marker", "continuation_after_explicit_invocation", "unavailable"] },
-        "dashboard_requested": { "type": "boolean" },
+        "state": {
+          "enum": [
+            "explicit",
+            "implicit",
+            "unknown"
+          ]
+        },
+        "basis": {
+          "enum": [
+            "host_signal",
+            "visible_plugin_marker",
+            "continuation_after_explicit_invocation",
+            "unavailable"
+          ]
+        },
+        "dashboard_requested": {
+          "type": "boolean"
+        },
         "material_change": {
           "type": "boolean",
           "description": "Set true when a new reply materially changes jurisdiction roles, proceedings/stage, legal question, urgency, requested output, issue/check selection, source use, module use, or execution. This makes a fresh full dashboard mandatory even without a new explicit invocation."
@@ -254,94 +698,306 @@
     "revision_control": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["affected_scope_refs", "reassessed_scope_refs"],
+      "required": [
+        "affected_scope_refs",
+        "reassessed_scope_refs"
+      ],
       "properties": {
         "affected_scope_refs": {
-          "type": "array", "maxItems": 100, "uniqueItems": true,
-          "items": { "$ref": "#/$defs/opaque_ref" },
+          "type": "array",
+          "maxItems": 100,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/opaque_ref"
+          },
           "description": "Opaque consultation scopes whose prior review state is invalidated by the material change."
         },
         "reassessed_scope_refs": {
-          "type": "array", "maxItems": 100, "uniqueItems": true,
-          "items": { "$ref": "#/$defs/opaque_ref" },
+          "type": "array",
+          "maxItems": 100,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/opaque_ref"
+          },
           "description": "Affected scopes re-reviewed for this response. Any affected scope omitted here remains open and blocks comprehensive coverage."
         },
-        "change_detection_status": { "enum": ["compared", "previous_state_unavailable"] },
-        "current_abstract_state": { "$ref": "#/$defs/abstract_state" },
-        "previous_abstract_state": {
-          "oneOf": [{ "$ref": "#/$defs/abstract_state" }, { "type": "null" }]
+        "change_detection_status": {
+          "enum": [
+            "compared",
+            "previous_state_unavailable"
+          ]
         },
-        "added_issue_refs": { "type": "array", "maxItems": 100, "uniqueItems": true, "items": { "$ref": "#/$defs/opaque_ref" } },
-        "removed_issue_refs": { "type": "array", "maxItems": 100, "uniqueItems": true, "items": { "$ref": "#/$defs/opaque_ref" } },
-        "changed_issue_refs": { "type": "array", "maxItems": 100, "uniqueItems": true, "items": { "$ref": "#/$defs/opaque_ref" } },
+        "current_abstract_state": {
+          "$ref": "#/$defs/abstract_state"
+        },
+        "previous_abstract_state": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/abstract_state"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "added_issue_refs": {
+          "type": "array",
+          "maxItems": 100,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/opaque_ref"
+          }
+        },
+        "removed_issue_refs": {
+          "type": "array",
+          "maxItems": 100,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/opaque_ref"
+          }
+        },
+        "changed_issue_refs": {
+          "type": "array",
+          "maxItems": 100,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/opaque_ref"
+          }
+        },
         "removed_issue_reviews": {
-          "type": "array", "maxItems": 100,
-          "items": { "$ref": "#/$defs/removed_issue_review" }
+          "type": "array",
+          "maxItems": 100,
+          "items": {
+            "$ref": "#/$defs/removed_issue_review"
+          }
         }
       }
     },
     "abstract_state": {
-      "type": "object", "additionalProperties": false,
-      "required": ["manifest_version", "issues"],
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "manifest_version",
+        "issues"
+      ],
       "properties": {
-        "manifest_version": { "const": "0.1.0" },
+        "manifest_version": {
+          "const": "0.1.0"
+        },
         "issues": {
-          "type": "array", "maxItems": 100, "uniqueItems": true,
-          "items": { "$ref": "#/$defs/abstract_issue" }
+          "type": "array",
+          "maxItems": 100,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/abstract_issue"
+          }
         }
       }
     },
     "abstract_issue": {
-      "type": "object", "additionalProperties": false,
-      "required": ["issue_ref", "scope_ref", "signal_states"],
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "issue_ref",
+        "scope_ref",
+        "signal_states"
+      ],
       "properties": {
-        "issue_ref": { "$ref": "#/$defs/opaque_ref" },
-        "scope_ref": { "$ref": "#/$defs/opaque_ref" },
+        "issue_ref": {
+          "$ref": "#/$defs/opaque_ref"
+        },
+        "scope_ref": {
+          "$ref": "#/$defs/opaque_ref"
+        },
         "signal_states": {
-          "type": "array", "minItems": 1, "maxItems": 30,
-          "items": { "$ref": "#/$defs/abstract_signal_state" }
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 30,
+          "items": {
+            "$ref": "#/$defs/abstract_signal_state"
+          }
+        },
+        "procedure_type": {
+          "enum": [
+            "administrative_appeal",
+            "border_admission",
+            "conduct_complaint",
+            "eu_citizen_registration",
+            "eu_family_entry_visa",
+            "eu_family_residence_card",
+            "evidence_preservation",
+            "family_status_recognition",
+            "file_access",
+            "gdpr_access",
+            "judicial_review",
+            "national_long_stay_visa",
+            "national_residence_permit",
+            "ordinary_short_stay_visa",
+            "other_procedure",
+            "permanent_residence",
+            "process_complaint",
+            "supervisory_complaint",
+            "visa_appeal"
+          ]
+        },
+        "administrative_outcome_classification": {
+          "enum": [
+            "article18_not_competent",
+            "article19_inadmissible",
+            "article32_substantive_refusal",
+            "discontinued_or_transferred",
+            "other",
+            "undetermined",
+            "visa_issued",
+            "withdrawn_or_not_pursued"
+          ]
+        },
+        "administrative_outcome_source": {
+          "enum": [
+            "document_seen",
+            "authority_record_seen",
+            "user_reported",
+            "reported_authority_oral"
+          ]
+        },
+        "post_issuance_event_type": {
+          "enum": [
+            "other_post_issuance_event",
+            "visa_annulled",
+            "visa_cancelled",
+            "visa_expired",
+            "visa_extended",
+            "visa_reissued",
+            "visa_revoked"
+          ]
+        },
+        "post_issuance_event_source": {
+          "enum": [
+            "document_seen",
+            "authority_record_seen"
+          ]
         }
       }
     },
     "abstract_signal_state": {
-      "type": "object", "additionalProperties": false,
-      "required": ["signal_id", "state"],
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "signal_id",
+        "state"
+      ],
       "properties": {
-        "signal_id": { "$ref": "#/$defs/signal_id" },
-        "state": { "enum": ["present", "absent", "unknown"] }
+        "signal_id": {
+          "$ref": "#/$defs/signal_id"
+        },
+        "state": {
+          "enum": [
+            "present",
+            "absent",
+            "unknown"
+          ]
+        }
       }
     },
     "removed_issue_review": {
-      "type": "object", "additionalProperties": false,
-      "required": ["issue_ref", "scope_ref", "disposition", "evidence_ref"],
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "issue_ref",
+        "scope_ref",
+        "disposition",
+        "evidence_ref"
+      ],
       "properties": {
-        "issue_ref": { "$ref": "#/$defs/opaque_ref" },
-        "scope_ref": { "$ref": "#/$defs/opaque_ref" },
-        "disposition": { "enum": ["no_longer_in_scope", "merged_into_current_issue"] },
-        "evidence_ref": { "$ref": "#/$defs/opaque_ref" },
-        "merged_into_issue_ref": { "$ref": "#/$defs/opaque_ref" }
+        "issue_ref": {
+          "$ref": "#/$defs/opaque_ref"
+        },
+        "scope_ref": {
+          "$ref": "#/$defs/opaque_ref"
+        },
+        "disposition": {
+          "enum": [
+            "no_longer_in_scope",
+            "merged_into_current_issue"
+          ]
+        },
+        "evidence_ref": {
+          "$ref": "#/$defs/opaque_ref"
+        },
+        "merged_into_issue_ref": {
+          "$ref": "#/$defs/opaque_ref"
+        }
       },
       "allOf": [
-        { "if": { "properties": { "disposition": { "const": "merged_into_current_issue" } }, "required": ["disposition"] }, "then": { "required": ["merged_into_issue_ref"] } },
-        { "if": { "properties": { "disposition": { "const": "no_longer_in_scope" } }, "required": ["disposition"] }, "then": { "not": { "required": ["merged_into_issue_ref"] } } }
+        {
+          "if": {
+            "properties": {
+              "disposition": {
+                "const": "merged_into_current_issue"
+              }
+            },
+            "required": [
+              "disposition"
+            ]
+          },
+          "then": {
+            "required": [
+              "merged_into_issue_ref"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "disposition": {
+                "const": "no_longer_in_scope"
+              }
+            },
+            "required": [
+              "disposition"
+            ]
+          },
+          "then": {
+            "not": {
+              "required": [
+                "merged_into_issue_ref"
+              ]
+            }
+          }
+        }
       ]
     },
     "source_ledger": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["response_tracking", "conversation_tracking", "sources"],
+      "required": [
+        "response_tracking",
+        "conversation_tracking",
+        "sources"
+      ],
       "properties": {
         "response_tracking": {
-          "enum": ["runtime_recorded", "model_declared", "unavailable"],
+          "enum": [
+            "runtime_recorded",
+            "model_declared",
+            "unavailable"
+          ],
           "description": "The local route gate accepts model_declared or unavailable. runtime_recorded is reserved for a host that validates its own authenticated read event; the plugin gate rejects that value."
         },
         "conversation_tracking": {
-          "enum": ["runtime_recorded", "model_declared", "unavailable"],
+          "enum": [
+            "runtime_recorded",
+            "model_declared",
+            "unavailable"
+          ],
           "description": "The local route gate accepts model_declared or unavailable. runtime_recorded is reserved for a host that validates its own authenticated read event; the plugin gate rejects that value."
         },
         "sources": {
-          "type": "array", "maxItems": 300,
-          "items": { "$ref": "#/$defs/consulted_source" }
+          "type": "array",
+          "maxItems": 300,
+          "items": {
+            "$ref": "#/$defs/consulted_source"
+          }
         }
       }
     },
@@ -349,78 +1005,297 @@
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "logical_source_id", "source_id", "title", "section", "jurisdiction", "category", "origin",
-        "official_url", "version_or_edition", "representation_ids", "pinpoints", "currentness", "library_state",
-        "response_use", "conversation_use", "response_provenance", "conversation_provenance",
-        "response_read_evidence", "conversation_read_evidence", "response_evidence_ref", "conversation_evidence_ref"
+        "logical_source_id",
+        "source_id",
+        "title",
+        "section",
+        "jurisdiction",
+        "category",
+        "origin",
+        "official_url",
+        "version_or_edition",
+        "representation_ids",
+        "pinpoints",
+        "currentness",
+        "library_state",
+        "response_use",
+        "conversation_use",
+        "response_provenance",
+        "conversation_provenance",
+        "response_read_evidence",
+        "conversation_read_evidence",
+        "response_evidence_ref",
+        "conversation_evidence_ref"
       ],
       "properties": {
-        "logical_source_id": { "type": "string", "minLength": 1, "maxLength": 240 },
-        "source_id": { "type": "string", "minLength": 1, "maxLength": 240 },
-        "title": { "type": "string", "minLength": 1, "maxLength": 500 },
-        "section": { "type": "string", "minLength": 1, "maxLength": 100 },
-        "jurisdiction": { "type": "string", "pattern": "^(EU|[A-Z]{2})$" },
-        "category": { "enum": ["eu_legislation", "national_legislation", "case_law", "commission_guidance", "official_guidance", "procedural_rule", "other_legal_text", "publisher_portal", "source_note", "other_reference"] },
-        "source_type": { "type": "string", "maxLength": 120 },
-        "origin": { "enum": ["bundled_library", "external_official"] },
-        "official_url": { "type": ["string", "null"], "maxLength": 2000 },
-        "version_or_edition": { "type": ["string", "null"], "maxLength": 200 },
-        "representation_ids": { "type": "array", "maxItems": 20, "uniqueItems": true, "items": { "type": "string", "maxLength": 300 } },
-        "pinpoints": { "type": "array", "maxItems": 40, "uniqueItems": true, "items": { "type": "string", "minLength": 1, "maxLength": 120 } },
-        "currentness": { "enum": ["reviewed_current", "reviewed_within_cutoff", "reviewed_historical_scope", "unknown", "stale"] },
-        "library_state": { "enum": ["registered_record", "candidate_unaccepted", "source_note_only", "not_recorded", "not_applicable"] },
-        "response_use": { "enum": ["consulted", "identified_not_read", "cited_from_memory", "not_referenced"] },
-        "conversation_use": { "enum": ["consulted", "identified_not_read", "cited_from_memory", "not_referenced"] },
+        "logical_source_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        },
+        "source_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500
+        },
+        "section": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "jurisdiction": {
+          "type": "string",
+          "pattern": "^(EU|[A-Z]{2})$"
+        },
+        "category": {
+          "enum": [
+            "eu_legislation",
+            "national_legislation",
+            "case_law",
+            "commission_guidance",
+            "official_guidance",
+            "procedural_rule",
+            "other_legal_text",
+            "publisher_portal",
+            "source_note",
+            "other_reference"
+          ]
+        },
+        "source_type": {
+          "type": "string",
+          "maxLength": 120
+        },
+        "origin": {
+          "enum": [
+            "bundled_library",
+            "external_official"
+          ]
+        },
+        "official_url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 2000
+        },
+        "version_or_edition": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 200
+        },
+        "representation_ids": {
+          "type": "array",
+          "maxItems": 20,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "maxLength": 300
+          }
+        },
+        "pinpoints": {
+          "type": "array",
+          "maxItems": 40,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 120
+          }
+        },
+        "currentness": {
+          "enum": [
+            "reviewed_current",
+            "reviewed_within_cutoff",
+            "reviewed_historical_scope",
+            "unknown",
+            "stale"
+          ]
+        },
+        "library_state": {
+          "enum": [
+            "registered_record",
+            "candidate_unaccepted",
+            "source_note_only",
+            "not_recorded",
+            "not_applicable"
+          ]
+        },
+        "response_use": {
+          "enum": [
+            "consulted",
+            "identified_not_read",
+            "cited_from_memory",
+            "not_referenced"
+          ]
+        },
+        "conversation_use": {
+          "enum": [
+            "consulted",
+            "identified_not_read",
+            "cited_from_memory",
+            "not_referenced"
+          ]
+        },
         "response_discovery_method": {
-          "enum": ["plugin_library", "web_search", "user_provided", "prior_conversation", "model_knowledge", "other", "unknown", "not_applicable"],
+          "enum": [
+            "plugin_library",
+            "web_search",
+            "user_provided",
+            "prior_conversation",
+            "model_knowledge",
+            "other",
+            "unknown",
+            "not_applicable"
+          ],
           "description": "How this source record was identified for the current response. Model-reported; not a host-authenticated retrieval event. Use not_applicable only when response_use is not_referenced."
         },
         "conversation_discovery_method": {
-          "enum": ["plugin_library", "web_search", "user_provided", "prior_conversation", "model_knowledge", "other", "unknown", "not_applicable"],
+          "enum": [
+            "plugin_library",
+            "web_search",
+            "user_provided",
+            "prior_conversation",
+            "model_knowledge",
+            "other",
+            "unknown",
+            "not_applicable"
+          ],
           "description": "How this source record was identified earlier in the conversation. Model-reported; not a host-authenticated retrieval event. Use not_applicable only when conversation_use is not_referenced."
         },
         "response_provenance": {
-          "enum": ["runtime_recorded", "model_declared", "none"],
+          "enum": [
+            "runtime_recorded",
+            "model_declared",
+            "none"
+          ],
           "description": "The local route gate accepts model_declared or none. runtime_recorded is reserved for a host that validates its own authenticated read event; the plugin gate rejects that value."
         },
         "conversation_provenance": {
-          "enum": ["runtime_recorded", "model_declared", "none"],
+          "enum": [
+            "runtime_recorded",
+            "model_declared",
+            "none"
+          ],
           "description": "The local route gate accepts model_declared or none. runtime_recorded is reserved for a host that validates its own authenticated read event; the plugin gate rejects that value."
         },
-        "response_read_evidence": { "type": ["string", "null"], "maxLength": 500 },
-        "conversation_read_evidence": { "type": ["string", "null"], "maxLength": 500 },
-        "response_evidence_ref": { "oneOf": [{ "$ref": "#/$defs/opaque_ref" }, { "type": "null" }] },
-        "conversation_evidence_ref": { "oneOf": [{ "$ref": "#/$defs/opaque_ref" }, { "type": "null" }] }
+        "response_read_evidence": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 500
+        },
+        "conversation_read_evidence": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 500
+        },
+        "response_evidence_ref": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/opaque_ref"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "conversation_evidence_ref": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/opaque_ref"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
       },
       "allOf": [
         {
-          "if": { "properties": { "origin": { "const": "external_official" } }, "required": ["origin"] },
-          "then": { "required": ["source_type"] }
+          "if": {
+            "properties": {
+              "origin": {
+                "const": "external_official"
+              }
+            },
+            "required": [
+              "origin"
+            ]
+          },
+          "then": {
+            "required": [
+              "source_type"
+            ]
+          }
         }
       ]
     },
     "dashboard": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["assessment_status", "issue_summaries", "module_use"],
+      "required": [
+        "assessment_status",
+        "issue_summaries",
+        "module_use"
+      ],
       "properties": {
-        "assessment_status": { "enum": ["reviewed", "partial", "not_verified"] },
+        "assessment_status": {
+          "enum": [
+            "reviewed",
+            "partial",
+            "not_verified"
+          ]
+        },
         "issue_summaries": {
-          "type": "array", "maxItems": 100,
+          "type": "array",
+          "maxItems": 100,
           "items": {
-            "type": "object", "additionalProperties": false,
-            "required": ["issue_ref", "title", "missing", "effect"],
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "issue_ref",
+              "title",
+              "missing",
+              "effect"
+            ],
             "properties": {
-              "issue_ref": { "$ref": "#/$defs/opaque_ref" },
-              "title": { "type": "string", "minLength": 1, "maxLength": 160 },
-              "missing": { "type": "string", "minLength": 1, "maxLength": 300 },
-              "effect": { "type": "string", "minLength": 1, "maxLength": 400 }
+              "issue_ref": {
+                "$ref": "#/$defs/opaque_ref"
+              },
+              "title": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160
+              },
+              "missing": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 300
+              },
+              "effect": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 400
+              }
             }
           }
         },
         "module_use": {
-          "type": "array", "maxItems": 50,
-          "items": { "$ref": "#/$defs/module_use" }
+          "type": "array",
+          "maxItems": 50,
+          "items": {
+            "$ref": "#/$defs/module_use"
+          }
         }
       }
     },
@@ -438,7 +1313,13 @@
           "type": "string",
           "pattern": "^[a-z][a-z0-9_]{1,63}$"
         },
-        "applicability": { "enum": ["required", "triggered", "not_triggered"] },
+        "applicability": {
+          "enum": [
+            "required",
+            "triggered",
+            "not_triggered"
+          ]
+        },
         "status": {
           "enum": [
             "completed",
@@ -464,25 +1345,51 @@
           "type": "array",
           "maxItems": 30,
           "uniqueItems": true,
-          "items": { "$ref": "#/$defs/opaque_ref" }
+          "items": {
+            "$ref": "#/$defs/opaque_ref"
+          }
         }
       },
       "allOf": [
         {
           "if": {
-            "properties": { "status": { "not": { "const": "completed" } } },
-            "required": ["status"]
+            "properties": {
+              "status": {
+                "not": {
+                  "const": "completed"
+                }
+              }
+            },
+            "required": [
+              "status"
+            ]
           },
-          "then": { "required": ["reason_code"] }
+          "then": {
+            "required": [
+              "reason_code"
+            ]
+          }
         },
         {
           "if": {
-            "properties": { "applicability": { "const": "not_triggered" } },
-            "required": ["applicability"]
+            "properties": {
+              "applicability": {
+                "const": "not_triggered"
+              }
+            },
+            "required": [
+              "applicability"
+            ]
           },
           "then": {
-            "required": ["reason_code"],
-            "properties": { "status": { "const": "not_applicable" } }
+            "required": [
+              "reason_code"
+            ],
+            "properties": {
+              "status": {
+                "const": "not_applicable"
+              }
+            }
           }
         }
       ]
@@ -490,234 +1397,757 @@
     "c27_check": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["scope_ref", "record"],
+      "required": [
+        "scope_ref",
+        "record"
+      ],
       "properties": {
-        "scope_ref": { "$ref": "#/$defs/opaque_ref" },
-        "assessment_ref": { "$ref": "#/$defs/opaque_ref" },
-        "binding_kind": { "enum": ["issue_specific", "proceeding_shared"] },
-        "bound_issue_refs": { "type": "array", "maxItems": 100, "uniqueItems": true, "items": { "$ref": "#/$defs/opaque_ref" } },
-        "shared_basis": { "$ref": "#/$defs/shared_check_basis" },
-        "record": { "$ref": "#/$defs/c27_record" }
+        "scope_ref": {
+          "$ref": "#/$defs/opaque_ref"
+        },
+        "assessment_ref": {
+          "$ref": "#/$defs/opaque_ref"
+        },
+        "binding_kind": {
+          "enum": [
+            "issue_specific",
+            "proceeding_shared"
+          ]
+        },
+        "bound_issue_refs": {
+          "type": "array",
+          "maxItems": 100,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/opaque_ref"
+          }
+        },
+        "shared_basis": {
+          "$ref": "#/$defs/shared_check_basis"
+        },
+        "record": {
+          "$ref": "#/$defs/c27_record"
+        }
       }
     },
     "shared_check_basis": {
-      "type": "object", "additionalProperties": false,
-      "required": ["reason_code", "evidence_ref"],
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "reason_code",
+        "evidence_ref"
+      ],
       "properties": {
-        "reason_code": { "enum": ["same_proceeding_fact", "common_lodgement_event", "shared_authority_position", "other_recorded"] },
-        "evidence_ref": { "$ref": "#/$defs/opaque_ref" }
+        "reason_code": {
+          "enum": [
+            "same_proceeding_fact",
+            "common_lodgement_event",
+            "shared_authority_position",
+            "other_recorded"
+          ]
+        },
+        "evidence_ref": {
+          "$ref": "#/$defs/opaque_ref"
+        }
       }
     },
     "c27_record": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["check_id", "status", "method", "reason", "evidence_refs", "source_refs"],
+      "required": [
+        "check_id",
+        "status",
+        "method",
+        "reason",
+        "evidence_refs",
+        "source_refs"
+      ],
       "properties": {
-        "check_id": { "type": "string", "minLength": 1, "maxLength": 160 },
-        "status": { "type": "string" },
-        "method": { "type": "string" },
-        "reason": { "type": "string" },
-        "evidence_refs": { "type": "array", "maxItems": 30, "uniqueItems": true, "items": { "$ref": "#/$defs/opaque_ref" } },
-        "source_refs": { "type": "array", "maxItems": 30, "uniqueItems": true, "items": { "$ref": "#/$defs/opaque_ref" } },
-        "scope_exclusion": { "type": "string" }
+        "check_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "status": {
+          "type": "string"
+        },
+        "method": {
+          "type": "string"
+        },
+        "reason": {
+          "type": "string"
+        },
+        "evidence_refs": {
+          "type": "array",
+          "maxItems": 30,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/opaque_ref"
+          }
+        },
+        "source_refs": {
+          "type": "array",
+          "maxItems": 30,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/opaque_ref"
+          }
+        },
+        "scope_exclusion": {
+          "type": "string"
+        }
       }
     },
     "declared_issue": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["issue_ref", "scope_ref", "signal_ids", "disposition", "evidence_ref"],
+      "required": [
+        "issue_ref",
+        "scope_ref",
+        "signal_ids",
+        "disposition",
+        "evidence_ref"
+      ],
       "properties": {
-        "issue_ref": { "$ref": "#/$defs/opaque_ref" },
-        "scope_ref": { "$ref": "#/$defs/opaque_ref" },
+        "issue_ref": {
+          "$ref": "#/$defs/opaque_ref"
+        },
+        "scope_ref": {
+          "$ref": "#/$defs/opaque_ref"
+        },
         "signal_ids": {
           "type": "array",
           "minItems": 1,
           "maxItems": 30,
           "uniqueItems": true,
-          "items": { "enum": [
-            "directive_scope_question",
-            "accompanying_or_joining_question",
-            "prior_refusal_or_status_change",
-            "swiss_free_movement_framework_question",
-            "pre_lodgement_access_obstruction",
-            "external_service_provider_used",
-            "digital_only_access_requirement",
-            "provider_fee_disputed",
-            "provider_fee_not_disputed",
-            "ordinary_document_list_or_eu_family_document_question",
-            "document_demand",
-            "missing_document",
-            "processing_delay_or_deadline_question",
-            "formal_lodgement_confirmed",
-            "appeal_deadline_risk",
-            "remedy_or_solvit_or_supervisory_complaint",
-            "formal_refusal_issued",
-            "solvit_involved",
-            "personal_data_processing_question",
-            "ephemeral_evidence_at_risk",
-            "evidence_record_contains_personal_data",
-            "returnee_context",
-            "movement_or_cross_border_context",
-            "family_relationship_question",
-            "prior_refusal_predates_claimed_status",
-            "appointment_delay",
-            "physical_exclusion_or_staff_treatment",
-            "staff_conduct"
-          ] }
+          "items": {
+            "enum": [
+              "directive_scope_question",
+              "accompanying_or_joining_question",
+              "prior_refusal_or_status_change",
+              "swiss_free_movement_framework_question",
+              "pre_lodgement_access_obstruction",
+              "external_service_provider_used",
+              "digital_only_access_requirement",
+              "provider_fee_disputed",
+              "provider_fee_not_disputed",
+              "ordinary_document_list_or_eu_family_document_question",
+              "document_demand",
+              "missing_document",
+              "processing_delay_or_deadline_question",
+              "formal_lodgement_confirmed",
+              "appeal_deadline_risk",
+              "remedy_or_solvit_or_supervisory_complaint",
+              "formal_refusal_issued",
+              "solvit_involved",
+              "personal_data_processing_question",
+              "ephemeral_evidence_at_risk",
+              "evidence_record_contains_personal_data",
+              "returnee_context",
+              "movement_or_cross_border_context",
+              "family_relationship_question",
+              "prior_refusal_predates_claimed_status",
+              "appointment_delay",
+              "physical_exclusion_or_staff_treatment",
+              "staff_conduct",
+              "outcome_article18_not_competent",
+              "outcome_article19_inadmissible",
+              "outcome_article32_substantive_refusal",
+              "mandatory_provider_pre_screening",
+              "lodgement_disputed",
+              "post_issuance_event",
+              "withdrawal_or_transfer_event"
+            ]
+          }
         },
         "disposition": {
-          "enum": ["answered_supported", "answered_conditionally", "source_missing", "fact_missing", "out_of_scope"]
+          "enum": [
+            "answered_supported",
+            "answered_conditionally",
+            "source_missing",
+            "fact_missing",
+            "out_of_scope"
+          ]
         },
-        "evidence_ref": { "$ref": "#/$defs/opaque_ref" },
-        "c27_assessment_refs": { "type": "array", "maxItems": 500, "uniqueItems": true, "items": { "$ref": "#/$defs/opaque_ref" } },
-        "conditional_closure": { "$ref": "#/$defs/conditional_closure" },
-        "source_owner_exclusions": { "type": "array", "maxItems": 20, "items": { "$ref": "#/$defs/source_owner_exclusion" } },
+        "evidence_ref": {
+          "$ref": "#/$defs/opaque_ref"
+        },
+        "c27_assessment_refs": {
+          "type": "array",
+          "maxItems": 500,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/opaque_ref"
+          }
+        },
+        "conditional_closure": {
+          "$ref": "#/$defs/conditional_closure"
+        },
+        "source_owner_exclusions": {
+          "type": "array",
+          "maxItems": 20,
+          "items": {
+            "$ref": "#/$defs/source_owner_exclusion"
+          }
+        },
         "source_obligations": {
           "type": "array",
           "maxItems": 20,
-          "items": { "$ref": "#/$defs/source_obligation" }
+          "items": {
+            "$ref": "#/$defs/source_obligation"
+          }
         },
         "attack_angle_reviews": {
           "type": "array",
           "maxItems": 100,
-          "items": { "$ref": "#/$defs/attack_angle_review" }
+          "items": {
+            "$ref": "#/$defs/attack_angle_review"
+          }
+        },
+        "administrative_outcome": {
+          "$ref": "#/$defs/administrative_outcome"
+        },
+        "post_issuance_event": {
+          "$ref": "#/$defs/post_issuance_event"
         }
-      }
-    },
-    "conditional_closure": {
-      "type": "object", "additionalProperties": false,
-      "required": ["status", "evidence_refs"],
-      "properties": {
-        "status": { "enum": ["not_conditional", "evidence_resolved", "qualified_condition", "predicate_open"] },
-        "evidence_refs": { "type": "array", "maxItems": 30, "uniqueItems": true, "items": { "$ref": "#/$defs/opaque_ref" } }
       },
       "allOf": [
-        { "if": { "properties": { "status": { "enum": ["evidence_resolved", "qualified_condition", "predicate_open"] } }, "required": ["status"] }, "then": { "properties": { "evidence_refs": { "minItems": 1 } } } },
-        { "if": { "properties": { "status": { "const": "not_conditional" } }, "required": ["status"] }, "then": { "properties": { "evidence_refs": { "maxItems": 0 } } } }
+        {
+          "if": {
+            "properties": {
+              "signal_ids": {
+                "contains": {
+                  "const": "outcome_article18_not_competent"
+                }
+              }
+            },
+            "required": [
+              "signal_ids"
+            ]
+          },
+          "then": {
+            "required": [
+              "administrative_outcome"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "signal_ids": {
+                "contains": {
+                  "const": "outcome_article19_inadmissible"
+                }
+              }
+            },
+            "required": [
+              "signal_ids"
+            ]
+          },
+          "then": {
+            "required": [
+              "administrative_outcome"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "signal_ids": {
+                "contains": {
+                  "const": "outcome_article32_substantive_refusal"
+                }
+              }
+            },
+            "required": [
+              "signal_ids"
+            ]
+          },
+          "then": {
+            "required": [
+              "administrative_outcome"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "signal_ids": {
+                "contains": {
+                  "const": "withdrawal_or_transfer_event"
+                }
+              }
+            },
+            "required": [
+              "signal_ids"
+            ]
+          },
+          "then": {
+            "required": [
+              "administrative_outcome"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "signal_ids": {
+                "contains": {
+                  "const": "post_issuance_event"
+                }
+              }
+            },
+            "required": [
+              "signal_ids"
+            ]
+          },
+          "then": {
+            "required": [
+              "post_issuance_event"
+            ]
+          }
+        }
+      ]
+    },
+    "conditional_closure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "evidence_refs"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "not_conditional",
+            "evidence_resolved",
+            "qualified_condition",
+            "predicate_open"
+          ]
+        },
+        "evidence_refs": {
+          "type": "array",
+          "maxItems": 30,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/opaque_ref"
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "enum": [
+                  "evidence_resolved",
+                  "qualified_condition",
+                  "predicate_open"
+                ]
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "evidence_refs": {
+                "minItems": 1
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "not_conditional"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "evidence_refs": {
+                "maxItems": 0
+              }
+            }
+          }
+        }
       ]
     },
     "source_owner_exclusion": {
-      "type": "object", "additionalProperties": false,
-      "required": ["owner_id", "reason_code", "evidence_ref"],
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "owner_id",
+        "reason_code",
+        "evidence_ref"
+      ],
       "properties": {
-        "owner_id": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,159}$" },
-        "reason_code": { "const": "no_source_class_predicate_triggered" },
-        "evidence_ref": { "$ref": "#/$defs/opaque_ref" }
+        "owner_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,159}$"
+        },
+        "reason_code": {
+          "const": "no_source_class_predicate_triggered"
+        },
+        "evidence_ref": {
+          "$ref": "#/$defs/opaque_ref"
+        }
       }
     },
     "source_obligation": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["owner_id", "required_source_classes", "status", "evidence_ref"],
+      "required": [
+        "owner_id",
+        "required_source_classes",
+        "status",
+        "evidence_ref"
+      ],
       "properties": {
-        "owner_id": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,159}$" },
+        "owner_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,159}$"
+        },
         "required_source_classes": {
           "type": "array",
           "minItems": 1,
           "maxItems": 6,
           "uniqueItems": true,
-          "items": { "enum": ["eu_binding_law", "national_binding_law", "case_law", "official_guidance", "procedural_rule", "contrary_authority"] }
+          "items": {
+            "enum": [
+              "eu_binding_law",
+              "national_binding_law",
+              "case_law",
+              "official_guidance",
+              "procedural_rule",
+              "contrary_authority"
+            ]
+          }
         },
         "policy_excluded_source_classes": {
-          "type": "array", "maxItems": 6, "uniqueItems": true,
-          "items": { "enum": ["eu_binding_law", "national_binding_law", "case_law", "official_guidance", "procedural_rule", "contrary_authority"] }
+          "type": "array",
+          "maxItems": 6,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "eu_binding_law",
+              "national_binding_law",
+              "case_law",
+              "official_guidance",
+              "procedural_rule",
+              "contrary_authority"
+            ]
+          }
         },
-        "status": { "enum": ["reviewed", "open", "unavailable", "not_assessed"] },
-        "evidence_ref": { "$ref": "#/$defs/opaque_ref" },
-        "preflight_ref": { "$ref": "#/$defs/opaque_ref" },
-        "reason_code": { "enum": ["preflight_missing", "source_unavailable", "not_attempted", "review_incomplete", "other_recorded"] }
+        "status": {
+          "enum": [
+            "reviewed",
+            "open",
+            "unavailable",
+            "not_assessed"
+          ]
+        },
+        "evidence_ref": {
+          "$ref": "#/$defs/opaque_ref"
+        },
+        "preflight_ref": {
+          "$ref": "#/$defs/opaque_ref"
+        },
+        "reason_code": {
+          "enum": [
+            "preflight_missing",
+            "source_unavailable",
+            "not_attempted",
+            "review_incomplete",
+            "other_recorded"
+          ]
+        }
       },
       "allOf": [
         {
-          "if": { "properties": { "status": { "const": "reviewed" } }, "required": ["status"] },
-          "then": { "required": ["preflight_ref"] }
+          "if": {
+            "properties": {
+              "status": {
+                "const": "reviewed"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "required": [
+              "preflight_ref"
+            ]
+          }
         },
         {
-          "if": { "properties": { "status": { "enum": ["open", "unavailable", "not_assessed"] } }, "required": ["status"] },
-          "then": { "required": ["reason_code"] }
+          "if": {
+            "properties": {
+              "status": {
+                "enum": [
+                  "open",
+                  "unavailable",
+                  "not_assessed"
+                ]
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "required": [
+              "reason_code"
+            ]
+          }
         }
       ]
     },
     "attack_angle_review": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["route_id", "topic", "outcome", "evidence_ref"],
+      "required": [
+        "route_id",
+        "topic",
+        "outcome",
+        "evidence_ref"
+      ],
       "properties": {
-        "route_id": { "type": "string", "pattern": "^[a-z][a-z0-9_]{1,100}$" },
-        "topic": { "type": "string", "minLength": 1, "maxLength": 500 },
-        "outcome": { "enum": ["no_signal_identified", "candidate_issue_linked", "candidate_same_issue", "unresolved"] },
-        "evidence_ref": { "$ref": "#/$defs/opaque_ref" },
-        "screening": { "$ref": "#/$defs/attack_screening" },
+        "route_id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{1,100}$"
+        },
+        "topic": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500
+        },
+        "outcome": {
+          "enum": [
+            "no_signal_identified",
+            "candidate_issue_linked",
+            "candidate_same_issue",
+            "unresolved"
+          ]
+        },
+        "evidence_ref": {
+          "$ref": "#/$defs/opaque_ref"
+        },
+        "screening": {
+          "$ref": "#/$defs/attack_screening"
+        },
         "trigger_any_signal_ids": {
-          "type": "array", "maxItems": 30, "uniqueItems": true,
-          "items": { "$ref": "#/$defs/signal_id" }
+          "type": "array",
+          "maxItems": 30,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/signal_id"
+          }
         },
         "trigger_all_signal_ids": {
-          "type": "array", "maxItems": 30, "uniqueItems": true,
-          "items": { "$ref": "#/$defs/signal_id" }
+          "type": "array",
+          "maxItems": 30,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/signal_id"
+          }
         },
-        "linked_issue_ref": { "$ref": "#/$defs/opaque_ref" },
-        "pathway_id": { "type": "string", "pattern": "^[a-z][a-z0-9_]{1,100}$" },
-        "trigger_route_id": { "type": "string", "pattern": "^[a-z][a-z0-9_]{1,100}$" },
+        "linked_issue_ref": {
+          "$ref": "#/$defs/opaque_ref"
+        },
+        "pathway_id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{1,100}$"
+        },
+        "trigger_route_id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{1,100}$"
+        },
         "coverage_pattern_ids": {
-          "type": "array", "maxItems": 10, "uniqueItems": true,
-          "items": { "type": "string", "pattern": "^core:attack:[a-z0-9-]+$" }
+          "type": "array",
+          "maxItems": 10,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^core:attack:[a-z0-9-]+$"
+          }
         },
         "adverse_predicate_ids": {
-          "type": "array", "maxItems": 30, "uniqueItems": true,
-          "items": { "type": "string", "pattern": "^pathway:[a-z][a-z0-9_]{1,100}$" }
+          "type": "array",
+          "maxItems": 30,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^pathway:[a-z][a-z0-9_]{1,100}$"
+          }
         },
         "c27_check_ids": {
-          "type": "array", "maxItems": 100, "uniqueItems": true,
-          "items": { "type": "string", "minLength": 1, "maxLength": 160 }
+          "type": "array",
+          "maxItems": 100,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160
+          }
         }
       },
       "allOf": [
         {
-          "if": { "required": ["pathway_id"] },
-          "then": { "required": ["trigger_route_id", "coverage_pattern_ids", "c27_check_ids"] }
+          "if": {
+            "required": [
+              "pathway_id"
+            ]
+          },
+          "then": {
+            "required": [
+              "trigger_route_id",
+              "coverage_pattern_ids",
+              "c27_check_ids"
+            ]
+          }
         },
         {
-          "if": { "properties": { "outcome": { "const": "candidate_issue_linked" } }, "required": ["outcome"] },
-          "then": { "required": ["linked_issue_ref"] }
+          "if": {
+            "properties": {
+              "outcome": {
+                "const": "candidate_issue_linked"
+              }
+            },
+            "required": [
+              "outcome"
+            ]
+          },
+          "then": {
+            "required": [
+              "linked_issue_ref"
+            ]
+          }
         },
         {
-          "if": { "properties": { "outcome": { "enum": ["no_signal_identified", "unresolved"] } }, "required": ["outcome"] },
-          "then": { "not": { "required": ["linked_issue_ref"] } }
+          "if": {
+            "properties": {
+              "outcome": {
+                "enum": [
+                  "no_signal_identified",
+                  "unresolved"
+                ]
+              }
+            },
+            "required": [
+              "outcome"
+            ]
+          },
+          "then": {
+            "not": {
+              "required": [
+                "linked_issue_ref"
+              ]
+            }
+          }
         },
         {
-          "if": { "properties": { "outcome": { "const": "candidate_same_issue" } }, "required": ["outcome"] },
-          "then": { "not": { "required": ["linked_issue_ref"] } }
+          "if": {
+            "properties": {
+              "outcome": {
+                "const": "candidate_same_issue"
+              }
+            },
+            "required": [
+              "outcome"
+            ]
+          },
+          "then": {
+            "not": {
+              "required": [
+                "linked_issue_ref"
+              ]
+            }
+          }
         }
       ]
     },
     "attack_screening": {
-      "type": "object", "additionalProperties": false,
-      "required": ["reason_code", "predicate_states"],
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "reason_code",
+        "predicate_states"
+      ],
       "properties": {
-        "reason_code": { "enum": ["no_adverse_signal", "predicate_contradicted", "candidate_assessed", "evidence_missing", "scope_unclear", "predicate_unmapped"] },
+        "reason_code": {
+          "enum": [
+            "no_adverse_signal",
+            "predicate_contradicted",
+            "candidate_assessed",
+            "evidence_missing",
+            "scope_unclear",
+            "predicate_unmapped"
+          ]
+        },
         "predicate_states": {
-          "type": "array", "minItems": 1, "maxItems": 30,
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 30,
           "items": {
-            "type": "object", "additionalProperties": false,
-            "required": ["signal_id", "state", "evidence_ref"],
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "signal_id",
+              "state",
+              "evidence_ref"
+            ],
             "properties": {
-              "signal_id": { "$ref": "#/$defs/signal_id" },
-              "state": { "enum": ["present", "absent", "unknown"] },
-              "evidence_ref": { "$ref": "#/$defs/opaque_ref" }
+              "signal_id": {
+                "$ref": "#/$defs/signal_id"
+              },
+              "state": {
+                "enum": [
+                  "present",
+                  "absent",
+                  "unknown"
+                ]
+              },
+              "evidence_ref": {
+                "$ref": "#/$defs/opaque_ref"
+              }
             }
           }
         },
         "adverse_predicate_states": {
           "description": "Topic-specific adverse conditions; route trigger signals are not substitutes.",
-          "type": "array", "maxItems": 30,
+          "type": "array",
+          "maxItems": 30,
           "items": {
-            "type": "object", "additionalProperties": false,
-            "required": ["predicate_id", "state", "evidence_ref"],
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "predicate_id",
+              "state",
+              "evidence_ref"
+            ],
             "properties": {
-              "predicate_id": { "type": "string", "pattern": "^pathway:[a-z][a-z0-9_]{1,100}$" },
-              "state": { "enum": ["present", "absent", "unknown"] },
-              "evidence_ref": { "$ref": "#/$defs/opaque_ref" }
+              "predicate_id": {
+                "type": "string",
+                "pattern": "^pathway:[a-z][a-z0-9_]{1,100}$"
+              },
+              "state": {
+                "enum": [
+                  "present",
+                  "absent",
+                  "unknown"
+                ]
+              },
+              "evidence_ref": {
+                "$ref": "#/$defs/opaque_ref"
+              }
             }
           }
         }
@@ -725,92 +2155,539 @@
     },
     "signal_id": {
       "enum": [
-        "directive_scope_question", "accompanying_or_joining_question", "prior_refusal_or_status_change",
-        "swiss_free_movement_framework_question", "pre_lodgement_access_obstruction", "external_service_provider_used",
-        "digital_only_access_requirement", "provider_fee_disputed", "provider_fee_not_disputed",
-        "ordinary_document_list_or_eu_family_document_question", "document_demand", "missing_document",
-        "processing_delay_or_deadline_question", "formal_lodgement_confirmed", "appeal_deadline_risk",
-        "remedy_or_solvit_or_supervisory_complaint", "formal_refusal_issued", "solvit_involved",
-        "personal_data_processing_question", "ephemeral_evidence_at_risk", "evidence_record_contains_personal_data",
-        "returnee_context", "movement_or_cross_border_context", "family_relationship_question",
-        "prior_refusal_predates_claimed_status", "appointment_delay", "physical_exclusion_or_staff_treatment", "staff_conduct"
+        "directive_scope_question",
+        "accompanying_or_joining_question",
+        "prior_refusal_or_status_change",
+        "swiss_free_movement_framework_question",
+        "pre_lodgement_access_obstruction",
+        "external_service_provider_used",
+        "digital_only_access_requirement",
+        "provider_fee_disputed",
+        "provider_fee_not_disputed",
+        "ordinary_document_list_or_eu_family_document_question",
+        "document_demand",
+        "missing_document",
+        "processing_delay_or_deadline_question",
+        "formal_lodgement_confirmed",
+        "appeal_deadline_risk",
+        "remedy_or_solvit_or_supervisory_complaint",
+        "formal_refusal_issued",
+        "solvit_involved",
+        "personal_data_processing_question",
+        "ephemeral_evidence_at_risk",
+        "evidence_record_contains_personal_data",
+        "returnee_context",
+        "movement_or_cross_border_context",
+        "family_relationship_question",
+        "prior_refusal_predates_claimed_status",
+        "appointment_delay",
+        "physical_exclusion_or_staff_treatment",
+        "staff_conduct",
+        "outcome_article18_not_competent",
+        "outcome_article19_inadmissible",
+        "outcome_article32_substantive_refusal",
+        "mandatory_provider_pre_screening",
+        "lodgement_disputed",
+        "post_issuance_event",
+        "withdrawal_or_transfer_event"
       ]
     },
     "evidence": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["evidence_ref", "kind"],
+      "required": [
+        "evidence_ref",
+        "kind"
+      ],
       "properties": {
-        "evidence_ref": { "$ref": "#/$defs/opaque_ref" },
-        "kind": { "enum": ["conversation_record", "source_record", "module_conformance", "research_gate", "source_preflight", "local_artifact"] },
+        "evidence_ref": {
+          "$ref": "#/$defs/opaque_ref"
+        },
+        "kind": {
+          "enum": [
+            "conversation_record",
+            "source_record",
+            "module_conformance",
+            "research_gate",
+            "source_preflight",
+            "local_artifact"
+          ]
+        },
         "record_scope": {
-          "enum": ["current_response", "prior_conversation", "unspecified"],
+          "enum": [
+            "current_response",
+            "prior_conversation",
+            "unspecified"
+          ],
           "description": "For material-revision reconciliation, declares whether this evidence was reviewed or generated for the current response. This field is not a trusted runtime timestamp."
         },
-        "subject_ref": { "$ref": "#/$defs/opaque_ref" },
-        "artifact_path": { "$ref": "#/$defs/relative_path" },
-        "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+        "subject_ref": {
+          "$ref": "#/$defs/opaque_ref"
+        },
+        "artifact_path": {
+          "$ref": "#/$defs/relative_path"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
       },
       "allOf": [
         {
-          "if": { "properties": { "kind": { "const": "local_artifact" } }, "required": ["kind"] },
-          "then": { "required": ["artifact_path", "sha256"], "not": { "required": ["subject_ref"] } }
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "local_artifact"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "required": [
+              "artifact_path",
+              "sha256"
+            ],
+            "not": {
+              "required": [
+                "subject_ref"
+              ]
+            }
+          }
         },
         {
-          "if": { "properties": { "kind": { "enum": ["module_conformance", "research_gate", "source_preflight"] } }, "required": ["kind"] },
-          "then": { "required": ["subject_ref"], "not": { "anyOf": [{ "required": ["artifact_path"] }, { "required": ["sha256"] }] } }
+          "if": {
+            "properties": {
+              "kind": {
+                "enum": [
+                  "module_conformance",
+                  "research_gate",
+                  "source_preflight"
+                ]
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "required": [
+              "subject_ref"
+            ],
+            "not": {
+              "anyOf": [
+                {
+                  "required": [
+                    "artifact_path"
+                  ]
+                },
+                {
+                  "required": [
+                    "sha256"
+                  ]
+                }
+              ]
+            }
+          }
         },
         {
-          "if": { "properties": { "kind": { "enum": ["conversation_record", "source_record"] } }, "required": ["kind"] },
-          "then": { "not": { "anyOf": [{ "required": ["subject_ref"] }, { "required": ["artifact_path"] }, { "required": ["sha256"] }] } }
+          "if": {
+            "properties": {
+              "kind": {
+                "enum": [
+                  "conversation_record",
+                  "source_record"
+                ]
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "not": {
+              "anyOf": [
+                {
+                  "required": [
+                    "subject_ref"
+                  ]
+                },
+                {
+                  "required": [
+                    "artifact_path"
+                  ]
+                },
+                {
+                  "required": [
+                    "sha256"
+                  ]
+                }
+              ]
+            }
+          }
         }
       ]
     },
     "research_artifact": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["research_ref", "plan_path", "bundle_path"],
+      "required": [
+        "research_ref",
+        "plan_path",
+        "bundle_path"
+      ],
       "properties": {
-        "research_ref": { "$ref": "#/$defs/opaque_ref" },
-        "plan_path": { "$ref": "#/$defs/relative_path" },
-        "bundle_path": { "$ref": "#/$defs/relative_path" },
-        "preflight_ref": { "$ref": "#/$defs/opaque_ref" },
-        "preflight_path": { "$ref": "#/$defs/relative_path" }
+        "research_ref": {
+          "$ref": "#/$defs/opaque_ref"
+        },
+        "plan_path": {
+          "$ref": "#/$defs/relative_path"
+        },
+        "bundle_path": {
+          "$ref": "#/$defs/relative_path"
+        },
+        "preflight_ref": {
+          "$ref": "#/$defs/opaque_ref"
+        },
+        "preflight_path": {
+          "$ref": "#/$defs/relative_path"
+        }
       },
       "allOf": [
-        { "if": { "required": ["preflight_ref"] }, "then": { "required": ["preflight_path"] } },
-        { "if": { "required": ["preflight_path"] }, "then": { "required": ["preflight_ref"] } }
+        {
+          "if": {
+            "required": [
+              "preflight_ref"
+            ]
+          },
+          "then": {
+            "required": [
+              "preflight_path"
+            ]
+          }
+        },
+        {
+          "if": {
+            "required": [
+              "preflight_path"
+            ]
+          },
+          "then": {
+            "required": [
+              "preflight_ref"
+            ]
+          }
+        }
       ]
     },
     "module_pair": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["pair_ref", "manifest_path", "export_path"],
+      "required": [
+        "pair_ref",
+        "manifest_path",
+        "export_path"
+      ],
       "properties": {
-        "pair_ref": { "$ref": "#/$defs/opaque_ref" },
-        "manifest_path": { "$ref": "#/$defs/relative_path" },
-        "export_path": { "$ref": "#/$defs/relative_path" }
+        "pair_ref": {
+          "$ref": "#/$defs/opaque_ref"
+        },
+        "manifest_path": {
+          "$ref": "#/$defs/relative_path"
+        },
+        "export_path": {
+          "$ref": "#/$defs/relative_path"
+        }
       }
     },
     "module_use": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["module_id", "role", "availability", "response_use", "conversation_use", "conformance", "reason"],
+      "required": [
+        "module_id",
+        "role",
+        "availability",
+        "response_use",
+        "conversation_use",
+        "conformance",
+        "reason"
+      ],
       "properties": {
-        "module_id": { "type": "string", "minLength": 1, "maxLength": 120 },
-        "display_name": { "type": "string", "minLength": 1, "maxLength": 120 },
-        "role": { "type": "string", "minLength": 1, "maxLength": 120 },
-        "role_label": { "type": "string", "minLength": 1, "maxLength": 120 },
-        "availability": { "enum": ["available", "unavailable", "unknown"] },
-        "response_use": { "enum": ["used", "not_used", "not_applicable"] },
-        "conversation_use": { "enum": ["used_earlier", "not_used", "unknown"] },
-        "conformance": { "enum": ["conformant", "not_checked", "unavailable", "not_applicable"] },
-        "reason": { "type": "string", "minLength": 1, "maxLength": 300 },
-        "pair_ref": { "$ref": "#/$defs/opaque_ref" }
+        "module_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "display_name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "role": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "role_label": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "availability": {
+          "enum": [
+            "available",
+            "unavailable",
+            "unknown"
+          ]
+        },
+        "response_use": {
+          "enum": [
+            "used",
+            "not_used",
+            "not_applicable"
+          ]
+        },
+        "conversation_use": {
+          "enum": [
+            "used_earlier",
+            "not_used",
+            "unknown"
+          ]
+        },
+        "conformance": {
+          "enum": [
+            "conformant",
+            "not_checked",
+            "unavailable",
+            "not_applicable"
+          ]
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 300
+        },
+        "pair_ref": {
+          "$ref": "#/$defs/opaque_ref"
+        }
       },
       "allOf": [
-        { "if": { "properties": { "conformance": { "const": "conformant" } }, "required": ["conformance"] }, "then": { "required": ["pair_ref"] } }
+        {
+          "if": {
+            "properties": {
+              "conformance": {
+                "const": "conformant"
+              }
+            },
+            "required": [
+              "conformance"
+            ]
+          },
+          "then": {
+            "required": [
+              "pair_ref"
+            ]
+          }
+        }
       ]
+    },
+    "proceeding_scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "scope_ref",
+        "procedure_type",
+        "evidence_ref"
+      ],
+      "properties": {
+        "scope_ref": {
+          "$ref": "#/$defs/opaque_ref"
+        },
+        "procedure_type": {
+          "enum": [
+            "administrative_appeal",
+            "border_admission",
+            "conduct_complaint",
+            "eu_citizen_registration",
+            "eu_family_entry_visa",
+            "eu_family_residence_card",
+            "evidence_preservation",
+            "family_status_recognition",
+            "file_access",
+            "gdpr_access",
+            "judicial_review",
+            "national_long_stay_visa",
+            "national_residence_permit",
+            "ordinary_short_stay_visa",
+            "other_procedure",
+            "permanent_residence",
+            "process_complaint",
+            "supervisory_complaint",
+            "visa_appeal"
+          ]
+        },
+        "parent_scope_ref": {
+          "$ref": "#/$defs/opaque_ref"
+        },
+        "relation_kind": {
+          "enum": [
+            "appeal_of",
+            "review_of",
+            "complaint_about",
+            "transferred_from",
+            "related"
+          ]
+        },
+        "evidence_ref": {
+          "$ref": "#/$defs/opaque_ref"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "required": [
+              "parent_scope_ref"
+            ]
+          },
+          "then": {
+            "required": [
+              "relation_kind"
+            ]
+          }
+        },
+        {
+          "if": {
+            "required": [
+              "relation_kind"
+            ]
+          },
+          "then": {
+            "required": [
+              "parent_scope_ref"
+            ]
+          }
+        }
+      ]
+    },
+    "administrative_outcome": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "classification",
+        "source",
+        "evidence_ref"
+      ],
+      "properties": {
+        "classification": {
+          "enum": [
+            "article18_not_competent",
+            "article19_inadmissible",
+            "article32_substantive_refusal",
+            "discontinued_or_transferred",
+            "other",
+            "undetermined",
+            "visa_issued",
+            "withdrawn_or_not_pursued"
+          ]
+        },
+        "source": {
+          "enum": [
+            "document_seen",
+            "authority_record_seen",
+            "user_reported",
+            "reported_authority_oral"
+          ]
+        },
+        "evidence_ref": {
+          "$ref": "#/$defs/opaque_ref"
+        },
+        "missing_evidence_reason": {
+          "enum": [
+            "decision_notice_not_seen",
+            "outcome_not_recorded",
+            "evidence_conflicts",
+            "other_recorded"
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "classification": {
+                "const": "undetermined"
+              }
+            },
+            "required": [
+              "classification"
+            ]
+          },
+          "then": {
+            "required": [
+              "missing_evidence_reason"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "classification": {
+                "enum": [
+                  "article18_not_competent",
+                  "article19_inadmissible",
+                  "article32_substantive_refusal",
+                  "visa_issued"
+                ]
+              }
+            },
+            "required": [
+              "classification"
+            ]
+          },
+          "then": {
+            "properties": {
+              "source": {
+                "enum": [
+                  "document_seen",
+                  "authority_record_seen"
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    "post_issuance_event": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "event_type",
+        "source",
+        "evidence_ref"
+      ],
+      "properties": {
+        "event_type": {
+          "enum": [
+            "other_post_issuance_event",
+            "visa_annulled",
+            "visa_cancelled",
+            "visa_expired",
+            "visa_extended",
+            "visa_reissued",
+            "visa_revoked"
+          ]
+        },
+        "source": {
+          "enum": [
+            "document_seen",
+            "authority_record_seen"
+          ]
+        },
+        "evidence_ref": {
+          "$ref": "#/$defs/opaque_ref"
+        }
+      }
     }
   }
 }
