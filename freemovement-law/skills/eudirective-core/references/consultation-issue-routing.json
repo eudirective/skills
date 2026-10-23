@@ -1,9 +1,9 @@
 {
-  "schema": "freemovement-consultation-issue-routing/0.2.0",
-  "description": "Routing metadata from declared abstract issue signals to existing C27 discovery checks and source owners. This is not a legal-rule registry, fact extractor, or proof of execution.",
+  "schema": "freemovement-consultation-issue-routing/0.3.0",
+  "description": "Routing metadata maps registered issue signals, fixed C27 procedure types and source-attributed outcome categories to existing C27 discovery checks and source owners. It is not a legal-rule registry, fact extractor, or proof of execution.",
   "routing_review_status": "pending_independent_review",
   "routing_review_scope": "Review signal selection, source-owner routing, source-class assumptions and attack-screen false-positive boundaries before comprehensive strict releases.",
-  "input_boundary": "The selector CLI accepts only synthetic_abstract fixtures containing opaque proceeding IDs and declared signal IDs. Its select_check_ids API accepts only registered signal IDs and is used by the privacy-minimised route receipt gate. Neither path accepts narratives, jurisdictions, dates, identities, documents, or other free-text fields.",
+  "input_boundary": "The selector CLI accepts only synthetic_abstract fixtures containing opaque proceeding IDs, registered signal IDs, and optional fixed procedure/outcome enums from C27. Its select_check_ids API accepts only those structured values and is used by the privacy-minimised route receipt gate. Neither path accepts narratives, jurisdictions, dates, identities, documents, or other free-text fields.",
   "check_registry": "references/state-engine/check-registry.json",
   "source_owners": {
     "eu_common_core": {
@@ -13,7 +13,8 @@
         "references/c5a-topology-applicability.md",
         "references/c5b-hierarchy-principles.md",
         "references/c5c-evidence-deadlines-authority.md",
-        "references/source-substrate.md"
+        "references/source-substrate.md",
+        "references/consultation-outcomes-and-remedies.md"
       ],
       "official_source_ids_to_resolve_when_relevant": [
         "eu:32004l0038",
@@ -165,6 +166,34 @@
     {
       "signal_id": "staff_conduct",
       "neutral_description": "A distinct staff-conduct concern is in issue."
+    },
+    {
+      "signal_id": "outcome_article18_not_competent",
+      "neutral_description": "The issue concerns a claimed formal Visa Code Article 18 competence outcome."
+    },
+    {
+      "signal_id": "outcome_article19_inadmissible",
+      "neutral_description": "The issue concerns a claimed formal Visa Code Article 19 inadmissibility outcome."
+    },
+    {
+      "signal_id": "outcome_article32_substantive_refusal",
+      "neutral_description": "The issue concerns a claimed substantive Visa Code Article 32 refusal outcome."
+    },
+    {
+      "signal_id": "mandatory_provider_pre_screening",
+      "neutral_description": "A provider may have screened or blocked an application before consular receipt."
+    },
+    {
+      "signal_id": "lodgement_disputed",
+      "neutral_description": "The parties or records disagree whether an application was formally lodged."
+    },
+    {
+      "signal_id": "post_issuance_event",
+      "neutral_description": "A cancellation, revocation, annulment, expiry, extension or reissue after issuance is in issue."
+    },
+    {
+      "signal_id": "withdrawal_or_transfer_event",
+      "neutral_description": "Withdrawal, closure or transfer may have ended or changed a proceeding."
     }
   ],
   "routes": [
@@ -956,6 +985,416 @@
         "personal_data_protection",
         "pre_lodgement_obstruction_and_appointment_access",
         "remedy_or_supervisory_track"
+      ]
+    },
+    {
+      "route_id": "visa_code_article18_competence_outcome",
+      "neutral_description": "Review a claimed Article 18 competence outcome and preserve the separate national remedy inquiry.",
+      "when_any_signal": [
+        "outcome_article18_not_competent"
+      ],
+      "triggering_conditions": [
+        "Review a claimed Article 18 competence outcome and preserve the separate national remedy inquiry."
+      ],
+      "mandatory_checks": [
+        "authority.administrative_outcome_classification",
+        "authority.visa_code_article18_competence",
+        "authority.position_provenance",
+        "lifecycle.decision_notified",
+        "remedies.competent_authority",
+        "remedies.formal_appeal",
+        "timing.service_date",
+        "timing.appeal_limit"
+      ],
+      "conditional_checks": [
+        {
+          "when_any_signal": [
+            "appeal_deadline_risk"
+          ],
+          "check_ids": [
+            "remedies.formal_appeal",
+            "timing.service_date",
+            "timing.appeal_limit"
+          ],
+          "reason": "Verify the national remedy and service clock for the actual competence decision; do not assume the substantive-refusal remedy."
+        }
+      ],
+      "source_owner_ids": [
+        "eu_common_core",
+        "member_state_law"
+      ],
+      "source_references": [
+        "eu:32009r0810",
+        "references/consultation-outcomes-and-remedies.md"
+      ],
+      "potential_attack_angle_review": {
+        "required": true,
+        "review_topics": [
+          "whether the proceeding is an ordinary short-stay visa application",
+          "the competent consulate and territorial basis",
+          "the actual notice and any national remedy"
+        ]
+      },
+      "negative_applicability": [
+        "A competence decision is not a substantive refusal under Article 32."
+      ],
+      "related_independent_issues": [
+        "remedy_or_supervisory_track"
+      ],
+      "procedure_scope_id": "visa_code_ordinary_short_stay_application",
+      "regime_focus": [
+        "visa_code",
+        "national_procedure"
+      ],
+      "required_outcome_classification": "article18_not_competent"
+    },
+    {
+      "route_id": "visa_code_article19_inadmissibility_outcome",
+      "neutral_description": "Review a claimed Article 19 inadmissibility outcome and route any challenge through the verified national procedure.",
+      "when_any_signal": [
+        "outcome_article19_inadmissible"
+      ],
+      "triggering_conditions": [
+        "Review a claimed Article 19 inadmissibility outcome and route any challenge through the verified national procedure."
+      ],
+      "mandatory_checks": [
+        "authority.administrative_outcome_classification",
+        "authority.visa_code_article19_inadmissibility",
+        "authority.actual_ground",
+        "authority.position_provenance",
+        "lifecycle.decision_notified",
+        "remedies.competent_authority",
+        "remedies.formal_appeal",
+        "timing.service_date",
+        "timing.appeal_limit"
+      ],
+      "conditional_checks": [
+        {
+          "when_any_signal": [
+            "appeal_deadline_risk"
+          ],
+          "check_ids": [
+            "remedies.formal_appeal",
+            "timing.service_date",
+            "timing.appeal_limit"
+          ],
+          "reason": "Verify national remedy and service timing for the actual inadmissibility decision; Article 32(3) is not selected by this route."
+        }
+      ],
+      "source_owner_ids": [
+        "eu_common_core",
+        "member_state_law"
+      ],
+      "source_references": [
+        "eu:32009r0810",
+        "references/consultation-outcomes-and-remedies.md"
+      ],
+      "potential_attack_angle_review": {
+        "required": true,
+        "review_topics": [
+          "whether the proceeding is an ordinary short-stay visa application",
+          "the precise statutory inadmissibility ground and notice",
+          "the competent national remedy and applicable time limit"
+        ]
+      },
+      "negative_applicability": [
+        "Article 19 inadmissibility is not automatically a substantive refusal under Article 32."
+      ],
+      "related_independent_issues": [
+        "remedy_or_supervisory_track"
+      ],
+      "procedure_scope_id": "visa_code_ordinary_short_stay_application",
+      "regime_focus": [
+        "visa_code",
+        "national_procedure"
+      ],
+      "required_outcome_classification": "article19_inadmissible"
+    },
+    {
+      "route_id": "visa_code_article32_substantive_refusal_outcome",
+      "neutral_description": "Review a claimed substantive Visa Code refusal, the Article 32 notice and remedies, and national procedure separately.",
+      "when_any_signal": [
+        "outcome_article32_substantive_refusal"
+      ],
+      "triggering_conditions": [
+        "Review a claimed substantive Visa Code refusal, the Article 32 notice and remedies, and national procedure separately."
+      ],
+      "mandatory_checks": [
+        "authority.administrative_outcome_classification",
+        "authority.visa_code_article32_refusal_remedy",
+        "authority.actual_ground",
+        "authority.reasons_given",
+        "authority.position_provenance",
+        "lifecycle.decision_notified",
+        "remedies.formal_appeal",
+        "timing.service_date",
+        "timing.appeal_limit",
+        "remedies.competent_authority"
+      ],
+      "conditional_checks": [],
+      "source_owner_ids": [
+        "eu_common_core",
+        "member_state_law"
+      ],
+      "source_references": [
+        "eu:32009r0810",
+        "references/consultation-outcomes-and-remedies.md"
+      ],
+      "potential_attack_angle_review": {
+        "required": true,
+        "review_topics": [
+          "whether an ordinary short-stay visa was substantively refused",
+          "the actual stated reasons and Article 32 notice",
+          "independent national appeal availability, procedure and deadline"
+        ]
+      },
+      "negative_applicability": [
+        "Do not select this route for Article 18 competence, Article 19 inadmissibility, refused access before lodging, or a residence procedure."
+      ],
+      "related_independent_issues": [
+        "remedy_or_supervisory_track"
+      ],
+      "procedure_scope_id": "visa_code_ordinary_short_stay_application",
+      "regime_focus": [
+        "visa_code",
+        "national_procedure"
+      ],
+      "required_outcome_classification": "article32_substantive_refusal"
+    },
+    {
+      "route_id": "provider_pre_screening_before_consular_receipt",
+      "neutral_description": "Review provider screening separately from the consulate’s legal decision and the actual lodging event.",
+      "when_any_signal": [
+        "mandatory_provider_pre_screening"
+      ],
+      "triggering_conditions": [
+        "Review provider screening separately from the consulate’s legal decision and the actual lodging event."
+      ],
+      "mandatory_checks": [
+        "access.provider_pre_screening",
+        "access.service_provider_accountability",
+        "lifecycle.lodgement_attempted",
+        "lifecycle.lodgement_confirmed",
+        "lifecycle.lodgement_disputed",
+        "case_intake.authority_classification",
+        "remedies.competent_authority",
+        "authority.supervisory_path"
+      ],
+      "conditional_checks": [
+        {
+          "when_any_signal": [
+            "appeal_deadline_risk"
+          ],
+          "check_ids": [
+            "remedies.competent_authority",
+            "timing.urgent_preservation"
+          ],
+          "reason": "If a separate decision or deadline is reported, verify that remedy on its own procedural track."
+        }
+      ],
+      "source_owner_ids": [
+        "eu_common_core",
+        "member_state_law",
+        "applicant_country_operations"
+      ],
+      "source_references": [
+        "eu:32009r0810",
+        "eu:32004l0038",
+        "references/consultation-outcomes-and-remedies.md"
+      ],
+      "potential_attack_angle_review": {
+        "required": true,
+        "review_topics": [
+          "which acts were performed by the provider and by the consulate",
+          "whether the provider blocked or merely assisted receipt",
+          "which legal framework and official local channel apply"
+        ]
+      },
+      "negative_applicability": [],
+      "related_independent_issues": [
+        "pre_lodgement_obstruction_and_appointment_access",
+        "external_service_provider_and_fees"
+      ],
+      "procedure_scope_id": "visa_application_provider_process",
+      "regime_focus": [
+        "provider_operations",
+        "application_framework",
+        "national_procedure"
+      ]
+    },
+    {
+      "route_id": "disputed_formal_lodgement",
+      "neutral_description": "Reconcile evidence of attempted receipt and formal lodging without treating access obstruction as a refusal decision.",
+      "when_any_signal": [
+        "lodgement_disputed"
+      ],
+      "triggering_conditions": [
+        "Reconcile evidence of attempted receipt and formal lodging without treating access obstruction as a refusal decision."
+      ],
+      "mandatory_checks": [
+        "lifecycle.lodgement_attempted",
+        "lifecycle.lodgement_confirmed",
+        "lifecycle.lodgement_disputed",
+        "lifecycle.receipt_evidence",
+        "access.refusal_to_lodge",
+        "timing.clock_start",
+        "remedies.competent_authority",
+        "authority.supervisory_path"
+      ],
+      "conditional_checks": [],
+      "source_owner_ids": [
+        "eu_common_core",
+        "member_state_law",
+        "applicant_country_operations"
+      ],
+      "source_references": [
+        "references/consultation-outcomes-and-remedies.md"
+      ],
+      "potential_attack_angle_review": {
+        "required": true,
+        "review_topics": [
+          "what was presented, to whom and through which channel",
+          "whether the authority accepted an application or only documents",
+          "the legal consequence of any verified lodging event"
+        ]
+      },
+      "negative_applicability": [
+        "A disputed lodging event is not by itself a Visa Code Article 32 refusal."
+      ],
+      "related_independent_issues": [
+        "pre_lodgement_obstruction_and_appointment_access",
+        "processing_delay_or_clock_trigger"
+      ],
+      "regime_focus": [
+        "procedure_stage",
+        "national_procedure"
+      ]
+    },
+    {
+      "route_id": "post_issuance_visa_event",
+      "neutral_description": "Keep post-issuance events separate from the original issuance decision and assess notice and remedies by event.",
+      "when_any_signal": [
+        "post_issuance_event"
+      ],
+      "triggering_conditions": [
+        "Keep post-issuance events separate from the original issuance decision and assess notice and remedies by event."
+      ],
+      "mandatory_checks": [
+        "authority.post_issuance_event",
+        "authority.administrative_outcome_classification",
+        "authority.position_provenance",
+        "lifecycle.decision_notified",
+        "remedies.competent_authority"
+      ],
+      "conditional_checks": [
+        {
+          "when_any_signal": [
+            "appeal_deadline_risk"
+          ],
+          "check_ids": [
+            "remedies.formal_appeal",
+            "timing.service_date",
+            "timing.appeal_limit"
+          ],
+          "reason": "Verify the remedy and deadline for the post-issuance act itself."
+        }
+      ],
+      "source_owner_ids": [
+        "eu_common_core",
+        "member_state_law"
+      ],
+      "source_references": [
+        "eu:32009r0810",
+        "references/consultation-outcomes-and-remedies.md"
+      ],
+      "potential_attack_angle_review": {
+        "required": true,
+        "review_topics": [
+          "which post-issuance event is officially recorded",
+          "which visa and proceeding it concerns",
+          "the event-specific notice, effective date and remedy"
+        ]
+      },
+      "negative_applicability": [],
+      "related_independent_issues": [
+        "remedy_or_supervisory_track"
+      ],
+      "procedure_scope_id": "issued_visa_procedure",
+      "regime_focus": [
+        "visa_code_or_national_visa",
+        "national_procedure"
+      ],
+      "requires_post_issuance_event_record": true,
+      "conditional_post_issuance_checks": [
+        {
+          "when_event_types": [
+            "visa_cancelled",
+            "visa_revoked",
+            "visa_annulled"
+          ],
+          "check_ids": [
+            "remedies.formal_appeal",
+            "timing.service_date",
+            "timing.appeal_limit"
+          ],
+          "reason": "Verify the national remedy and service deadline for the cancellation, revocation or annulment decision. Do not carry a refusal deadline across without verification."
+        }
+      ]
+    },
+    {
+      "route_id": "withdrawal_or_transfer_circumstances",
+      "neutral_description": "Record whether withdrawal was applicant-initiated, authority-directed, or part of a transfer, and preserve any separate remedy issue.",
+      "when_any_signal": [
+        "withdrawal_or_transfer_event"
+      ],
+      "triggering_conditions": [
+        "Record whether withdrawal was applicant-initiated, authority-directed, or part of a transfer, and preserve any separate remedy issue."
+      ],
+      "mandatory_checks": [
+        "authority.administrative_outcome_classification",
+        "lifecycle.withdrawal_circumstances",
+        "lifecycle.closure_and_withdrawal",
+        "authority.position_provenance",
+        "remedies.competent_authority"
+      ],
+      "conditional_checks": [
+        {
+          "when_any_signal": [
+            "appeal_deadline_risk"
+          ],
+          "check_ids": [
+            "remedies.formal_appeal",
+            "timing.service_date",
+            "timing.appeal_limit"
+          ],
+          "reason": "Assess a reported deadline only against the actual separately identified decision."
+        }
+      ],
+      "source_owner_ids": [
+        "member_state_law"
+      ],
+      "source_references": [
+        "references/consultation-outcomes-and-remedies.md"
+      ],
+      "potential_attack_angle_review": {
+        "required": true,
+        "review_topics": [
+          "who initiated the closure or withdrawal",
+          "what notice and consequences were recorded",
+          "whether another proceeding or remedy remains open"
+        ]
+      },
+      "negative_applicability": [],
+      "related_independent_issues": [
+        "remedy_or_supervisory_track"
+      ],
+      "regime_focus": [
+        "national_procedure",
+        "linked_proceedings"
+      ],
+      "accepted_outcome_classifications": [
+        "withdrawn_or_not_pursued",
+        "discontinued_or_transferred"
       ]
     }
   ]

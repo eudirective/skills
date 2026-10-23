@@ -14,6 +14,7 @@ Create one issue record for each materially distinct question or event. Use a st
 | Jurisdiction and legal regime | Separate the relevant states by role (for example, nationality, intended residence, application location, deciding authority, or challenged authority). Record the candidate legal regime and any competing regime. |
 | Known and unresolved facts | Keep facts supported by the user's account or shown records separate from unresolved predicates. Record only facts that can change the rule, procedure, deadline, or next action. |
 | Authority position | Record what the authority actually said or decided, by whom and through which channel, with the available provenance. Distinguish a formal written ground, reported oral statement, inference, and no known position. |
+| Administrative outcome | Record the source-attributed formal outcome separately from procedural stage. Keep competence, inadmissibility, substantive refusal, withdrawal/transfer, issuance and post-issuance events distinct. A decision stage or oral report alone does not establish a formal outcome. |
 | Applicable C27 checks | List the existing check IDs selected for this issue and the reason each applies. Selection is a plan, not evidence that a check was completed. Do not create or copy a second check registry. |
 | Source owner and supporting evidence | Name the owner of the legal source: EU/common core, the relevant Member-State module, the applicant-country operational module, or another identified authority. Link the source proposition and the fact evidence separately. State when a needed source or record has not been checked or supplied. |
 | Exceptions and counterarguments | Record plausible exceptions, competing characterisations, contrary authority, and the facts that would make them material. Do not treat a possible defence as an authority's actual ground. |
@@ -35,7 +36,7 @@ Distinguish, where relevant:
 - notification or service of the decision;
 - appeal, reconsideration, complaint, or supervisory process.
 
-In particular, refusal to receive or lodge an application is not the same event as a formal visa refusal after examination. Keep the access-obstruction issue and any later visa decision in separate records, even if they concern the same application.
+In particular, refusal to receive or lodge an application is not the same event as a formal visa refusal after examination. Visa Code Article 18 competence, Article 19 inadmissibility and Article 32 substantive refusal are separate outcome routes for an ordinary short-stay visa application. Keep the access-obstruction issue and any later visa decision in separate records, even if they concern the same application. A visa appeal is a linked, separate proceeding; record the underlying application separately. See `references/consultation-outcomes-and-remedies.md`.
 
 ## Independent conclusions and missing documents
 

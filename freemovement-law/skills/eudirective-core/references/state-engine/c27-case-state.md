@@ -1,6 +1,6 @@
 # C27 — case state, disclosures, and atomic check coverage
 
-**Version:** 0.2; used by eudirective-core v0.50.0. The registry contains **301 individual checks in 23 families**, including 36 individually indexed adapted stratagem screens and 14 legal-principle screens. A catalogue entry is a prompt for review, **not evidence of completed analysis**.
+**Version:** 0.3; current package core is v0.58.0. The registry contains **308 individual checks in 23 families**, including 36 individually indexed adapted stratagem screens and 14 legal-principle screens. A catalogue entry is a prompt for review, **not evidence of completed analysis**.
 
 ## Normal applicant guidance: in-conversation, read-only
 
@@ -10,7 +10,7 @@ Use the atomic check registry `references/state-engine/check-registry.json` and 
 
 For a normal answer, lead with the requested guidance and end with a concise coverage summary. When jurisdiction roles, proceeding or stage, material facts, source consultation, module availability/conformance or execution changes, state which relevant modules informed this answer, which were used earlier in this chat, and which relevant modules were not used. For every partly reviewed item, name what is missing and how it limits the assessment. Keep model/source review distinct from engine/validator/retrieval execution. After every explicit freemovement-law invocation, refresh the full consultation dashboard. Also refresh it when the user requests a dashboard/audit or when a material routing, source, module, or execution variable changes. Do not make the full board request-only or truncate its recorded rows. See `references/consultation-routing.md` for trigger, validation, and source-ledger rules. Preserve each recorded C27 scope and check IDs, status, method, evidence/source trace, reason, and exact `scope_exclusion` value when present. Prioritize lodging, deadlines, prior disclosures and independent grievances.
 
-Provide the 301-entry expanded checklist on request. Never manufacture exact counts of completed checks in a real case merely because instructions were read. Do not claim host execution, persistence, source live verification or independent legal-semantic validation without actual evidence.
+Provide the 308-entry expanded checklist on request. Procedure-scoped checks use the registry's declared scope and are displayed as not applicable when the typed proceeding falls outside that scope. This is a structural category based on the recorded type, not an independent legal finding. Never manufacture exact counts of completed checks in a real case merely because instructions were read. Do not claim host execution, persistence, source live verification or independent legal-semantic validation without actual evidence.
 
 ## Abstract deterministic CLI
 
@@ -24,7 +24,7 @@ python scripts/c27_case_state.py compare --previous evaluations/fixtures/c27/ini
 python scripts/test_c27_case_state.py
 ```
 
-Input schemas `c27-abstract-session/0.1.0` and `0.2.0` remain readable for existing events. Schema `0.3.0` adds explicit administrative-outcome and separate post-issuance events; new event kinds are rejected under older schema versions. Output schema is `c27-case-state-report/0.3.0`. `requested_focus` adds deliberately selected triggers, notably `stratagem` (36 screens), `legal_principle` (14), `soft_law`, `strategy` and `disclosure`. Model-led catalog screens **do not execute** the C5e synthetic scripts. Reported assessed checks require event/source references, while restricted or unimplemented capabilities cannot be marked assessed. The status and sources are still **self-reported and schema-checked**, not independently authenticated.
+Input schemas `c27-abstract-session/0.1.0` and `0.2.0` remain readable for existing events. Schema `0.3.0` adds explicit administrative-outcome and separate post-issuance events; new event kinds are rejected under older schema versions. Check-registry schema `0.3.0` adds procedure scopes for Visa Code findings, provider screening and post-issuance events. Output schema is `c27-case-state-report/0.4.0`. `requested_focus` adds deliberately selected triggers, notably `stratagem` (36 screens), `legal_principle` (14), `soft_law`, `strategy` and `disclosure`. Model-led catalog screens **do not execute** the C5e synthetic scripts. Reported assessed checks require event/source references, while restricted or unimplemented capabilities cannot be marked assessed. The status and sources are still **self-reported and schema-checked**, not independently authenticated.
 
 ## Administrative outcome is separate from procedural stage
 
@@ -46,7 +46,7 @@ Post-issuance events such as cancellation, revocation, annulment, expiry, extens
 - **Disclosures:** sent, transport delivered, receipt acknowledgment, content acknowledgment, actual reliance and transmission failure are separately source-attributed. Neither late observations nor conflicting reports silently erase prior states. Sent material does not prove officer knowledge, concession, or statutory waiver.
 - **Check provenance:** evidentiary event IDs must exist by the relevant response, belong to its proceeding, and not have been corrected before the recorded assessment. Unavailable capability states cannot be marked executed. A `not_applicable` decision requires a coded scope reason and an attributable source/event.
 - **Grievance exclusion:** an excluded grievance has a reason code, which remains a pointer requiring a specific legal explanation in substantive advice.
-- **Coverage gaps:** historical stages remain available for relevance selection. Outstanding checks are prioritized by declared severity, not simply the first registry entries. An ordinary application need not perform all 301 checks; unassessed remains unassessed.
+- **Coverage gaps:** historical stages remain available for relevance selection. Outstanding checks are prioritized by declared severity, not simply the first registry entries. An ordinary application need not perform all 308 checks; unassessed remains unassessed.
 
 These deterministic tests validate state structure, audit links and privacy input boundaries only. Semantic legality, authenticity, judgment on applicability, real ChatGPT routing, installed package refresh and cross-session persistence remain external verification tasks.
 

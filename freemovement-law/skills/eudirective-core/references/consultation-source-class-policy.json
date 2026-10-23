@@ -1028,6 +1028,395 @@
           "reason_code": "eu_common_law_belongs_to_core_owner"
         }
       ]
+    },
+    {
+      "route_id": "visa_code_article18_competence_outcome",
+      "owner_id": "eu_common_core",
+      "required_classes": [
+        "eu_binding_law"
+      ],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "outcome_article18_not_competent"
+          ],
+          "require_classes": [
+            "case_law",
+            "contrary_authority"
+          ],
+          "reason_code": "decision_and_remedy_review"
+        }
+      ],
+      "excluded_classes": [
+        {
+          "source_class": "national_binding_law",
+          "reason_code": "source_class_owned_by_another_route_owner"
+        },
+        {
+          "source_class": "procedural_rule",
+          "reason_code": "source_class_owned_by_another_route_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "visa_code_article18_competence_outcome",
+      "owner_id": "member_state_law",
+      "required_classes": [
+        "national_binding_law",
+        "procedural_rule"
+      ],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "outcome_article18_not_competent"
+          ],
+          "require_classes": [
+            "case_law"
+          ],
+          "reason_code": "national_remedy_and_procedure"
+        }
+      ],
+      "excluded_classes": [
+        {
+          "source_class": "eu_binding_law",
+          "reason_code": "source_class_owned_by_another_route_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "visa_code_article19_inadmissibility_outcome",
+      "owner_id": "eu_common_core",
+      "required_classes": [
+        "eu_binding_law"
+      ],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "outcome_article19_inadmissible"
+          ],
+          "require_classes": [
+            "case_law",
+            "contrary_authority"
+          ],
+          "reason_code": "decision_and_remedy_review"
+        }
+      ],
+      "excluded_classes": [
+        {
+          "source_class": "national_binding_law",
+          "reason_code": "source_class_owned_by_another_route_owner"
+        },
+        {
+          "source_class": "procedural_rule",
+          "reason_code": "source_class_owned_by_another_route_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "visa_code_article19_inadmissibility_outcome",
+      "owner_id": "member_state_law",
+      "required_classes": [
+        "national_binding_law",
+        "procedural_rule"
+      ],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "outcome_article19_inadmissible"
+          ],
+          "require_classes": [
+            "case_law"
+          ],
+          "reason_code": "national_remedy_and_procedure"
+        }
+      ],
+      "excluded_classes": [
+        {
+          "source_class": "eu_binding_law",
+          "reason_code": "source_class_owned_by_another_route_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "visa_code_article32_substantive_refusal_outcome",
+      "owner_id": "eu_common_core",
+      "required_classes": [
+        "eu_binding_law"
+      ],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "outcome_article32_substantive_refusal"
+          ],
+          "require_classes": [
+            "case_law",
+            "contrary_authority"
+          ],
+          "reason_code": "decision_and_remedy_review"
+        }
+      ],
+      "excluded_classes": [
+        {
+          "source_class": "national_binding_law",
+          "reason_code": "source_class_owned_by_another_route_owner"
+        },
+        {
+          "source_class": "procedural_rule",
+          "reason_code": "source_class_owned_by_another_route_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "visa_code_article32_substantive_refusal_outcome",
+      "owner_id": "member_state_law",
+      "required_classes": [
+        "national_binding_law",
+        "procedural_rule"
+      ],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "outcome_article32_substantive_refusal"
+          ],
+          "require_classes": [
+            "case_law"
+          ],
+          "reason_code": "national_remedy_and_procedure"
+        }
+      ],
+      "excluded_classes": [
+        {
+          "source_class": "eu_binding_law",
+          "reason_code": "source_class_owned_by_another_route_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "post_issuance_visa_event",
+      "owner_id": "eu_common_core",
+      "required_classes": [
+        "eu_binding_law"
+      ],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "post_issuance_event"
+          ],
+          "require_classes": [
+            "case_law",
+            "contrary_authority"
+          ],
+          "reason_code": "decision_and_remedy_review"
+        }
+      ],
+      "excluded_classes": [
+        {
+          "source_class": "national_binding_law",
+          "reason_code": "source_class_owned_by_another_route_owner"
+        },
+        {
+          "source_class": "procedural_rule",
+          "reason_code": "source_class_owned_by_another_route_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "post_issuance_visa_event",
+      "owner_id": "member_state_law",
+      "required_classes": [
+        "national_binding_law",
+        "procedural_rule"
+      ],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "post_issuance_event"
+          ],
+          "require_classes": [
+            "case_law"
+          ],
+          "reason_code": "national_remedy_and_procedure"
+        }
+      ],
+      "excluded_classes": [
+        {
+          "source_class": "eu_binding_law",
+          "reason_code": "source_class_owned_by_another_route_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "provider_pre_screening_before_consular_receipt",
+      "owner_id": "eu_common_core",
+      "required_classes": [
+        "eu_binding_law"
+      ],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "mandatory_provider_pre_screening"
+          ],
+          "require_classes": [
+            "official_guidance"
+          ],
+          "reason_code": "provider_rules_and_official_guidance"
+        }
+      ],
+      "excluded_classes": [
+        {
+          "source_class": "national_binding_law",
+          "reason_code": "source_class_owned_by_another_route_owner"
+        },
+        {
+          "source_class": "procedural_rule",
+          "reason_code": "source_class_owned_by_another_route_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "provider_pre_screening_before_consular_receipt",
+      "owner_id": "member_state_law",
+      "required_classes": [
+        "national_binding_law",
+        "procedural_rule"
+      ],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "mandatory_provider_pre_screening"
+          ],
+          "require_classes": [
+            "official_guidance"
+          ],
+          "reason_code": "national_provider_and_channel_rules"
+        }
+      ],
+      "excluded_classes": [
+        {
+          "source_class": "eu_binding_law",
+          "reason_code": "source_class_owned_by_another_route_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "provider_pre_screening_before_consular_receipt",
+      "owner_id": "applicant_country_operations",
+      "required_classes": [
+        "official_guidance"
+      ],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "mandatory_provider_pre_screening"
+          ],
+          "require_classes": [
+            "procedural_rule"
+          ],
+          "reason_code": "current_local_channel_and_receipt_process"
+        }
+      ],
+      "excluded_classes": [
+        {
+          "source_class": "eu_binding_law",
+          "reason_code": "source_class_owned_by_another_route_owner"
+        },
+        {
+          "source_class": "national_binding_law",
+          "reason_code": "source_class_owned_by_another_route_owner"
+        },
+        {
+          "source_class": "case_law",
+          "reason_code": "source_class_owned_by_another_route_owner"
+        },
+        {
+          "source_class": "contrary_authority",
+          "reason_code": "source_class_owned_by_another_route_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "disputed_formal_lodgement",
+      "owner_id": "eu_common_core",
+      "required_classes": [
+        "eu_binding_law"
+      ],
+      "conditional_rules": [],
+      "excluded_classes": [
+        {
+          "source_class": "national_binding_law",
+          "reason_code": "source_class_owned_by_another_route_owner"
+        },
+        {
+          "source_class": "procedural_rule",
+          "reason_code": "source_class_owned_by_another_route_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "disputed_formal_lodgement",
+      "owner_id": "member_state_law",
+      "required_classes": [
+        "national_binding_law",
+        "procedural_rule"
+      ],
+      "conditional_rules": [],
+      "excluded_classes": [
+        {
+          "source_class": "eu_binding_law",
+          "reason_code": "source_class_owned_by_another_route_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "disputed_formal_lodgement",
+      "owner_id": "applicant_country_operations",
+      "required_classes": [
+        "official_guidance"
+      ],
+      "conditional_rules": [],
+      "excluded_classes": [
+        {
+          "source_class": "eu_binding_law",
+          "reason_code": "source_class_owned_by_another_route_owner"
+        },
+        {
+          "source_class": "national_binding_law",
+          "reason_code": "source_class_owned_by_another_route_owner"
+        },
+        {
+          "source_class": "case_law",
+          "reason_code": "source_class_owned_by_another_route_owner"
+        },
+        {
+          "source_class": "contrary_authority",
+          "reason_code": "source_class_owned_by_another_route_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "withdrawal_or_transfer_circumstances",
+      "owner_id": "member_state_law",
+      "required_classes": [
+        "national_binding_law",
+        "procedural_rule"
+      ],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "withdrawal_or_transfer_event"
+          ],
+          "require_classes": [
+            "case_law"
+          ],
+          "reason_code": "national_closure_or_remedy_review"
+        }
+      ],
+      "excluded_classes": [
+        {
+          "source_class": "eu_binding_law",
+          "reason_code": "source_class_owned_by_another_route_owner"
+        }
+      ]
     }
   ]
 }
