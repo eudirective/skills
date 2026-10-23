@@ -900,6 +900,14 @@ def check_declared_issues(route: dict, evidence_index: dict[str, dict],
                     raise RouteGateError(f"issue_outcome_classification_invalid:{issue_ref}")
                 if outcome_evidence is None:
                     raise RouteGateError(f"issue_outcome_evidence_dangling:{issue_ref}")
+                if outcome_classification == "other":
+                    gaps.append(
+                        f"issue:{issue_ref}:administrative_outcome_other_requires_manual_route_review"
+                    )
+                elif outcome_classification == "undetermined":
+                    gaps.append(
+                        f"issue:{issue_ref}:administrative_outcome_undetermined"
+                    )
                 formal_outcomes = {
                     "article18_not_competent", "article19_inadmissible",
                     "article32_substantive_refusal", "visa_issued",

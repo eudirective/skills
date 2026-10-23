@@ -649,6 +649,18 @@ def _gap_work(gap: str) -> dict | None:
             "missing": "The source-attributed formal outcome has no matching declared route signal.",
             "effect": "The matching legal route cannot be reconciled with the issue record, so the assessment remains partial.",
         }
+    if gap.startswith("issue:") and ":administrative_outcome_other_requires_manual_route_review" in gap:
+        return {
+            "title": "Other administrative outcome",
+            "missing": "The C27 explanation and evidence reference for this Other outcome need review; its specific legal or procedural route is not mapped.",
+            "effect": "The issue remains partial until the applicable route and remedy are identified.",
+        }
+    if gap.startswith("issue:") and ":administrative_outcome_undetermined" in gap:
+        return {
+            "title": "Administrative outcome classification",
+            "missing": "The formal outcome remains undetermined; see the outcome record for the missing or conflicting evidence.",
+            "effect": "Outcome-specific routes and remedies remain unresolved; no formal decision is presumed.",
+        }
     if gap.startswith("classification:"):
         _, name, _state = gap.split(":", 2)
         label = CLASSIFICATION_LABELS.get(name, _humanize(name).title())
@@ -819,13 +831,15 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
     partial_count = conditionally_open + disposition_counts["source_missing"] + disposition_counts["fact_missing"]
     out_of_scope_count = disposition_counts["out_of_scope"]
     if route.get("schema_version") in ISSUE_ROUTE_SCHEMAS:
-        # An unresolved mandatory attack screen keeps its issue open even when
-        # the issue's primary disposition was recorded as supported.
+        # An unresolved issue-specific route/check or attack screen keeps a
+        # supported primary answer in the partial/open group.
         for issue in issue_records or []:
-            if not any(
+            attack_open = any(
                 item.get("outcome") == "unresolved"
                 for item in issue.get("attack_angle_reviews", [])
-            ):
+            )
+            issue_gap_open = issue_has_open_gap(issue["issue_ref"])
+            if not attack_open and not issue_gap_open:
                 continue
             disposition = issue.get("disposition")
             if disposition == "answered_supported":
