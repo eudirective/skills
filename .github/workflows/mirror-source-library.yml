@@ -1,4 +1,4 @@
-name: Mirror source library
+name: Mirror source library and module notes
 
 on:
   workflow_dispatch:
@@ -28,7 +28,7 @@ jobs:
         with:
           path: skills
 
-      - name: Check out source-library only
+      - name: Check out public source data
         uses: actions/checkout@v7
         with:
           repository: eudirective/public-data
@@ -36,6 +36,7 @@ jobs:
           path: public-data
           sparse-checkout: |
             source-library
+            module-notes
           persist-credentials: false
 
       - uses: actions/setup-node@v4
@@ -48,13 +49,18 @@ jobs:
           set -euo pipefail
 
           source_dir="public-data/source-library"
+          module_notes_dir="public-data/module-notes"
           destination_dir="skills/freemovement-law/skills/eudirective-source-library"
           max_attempts=3
           upstream_tree_sha="$(git -C public-data rev-parse HEAD:source-library)"
+          upstream_module_notes_tree_sha="$(git -C public-data rev-parse HEAD:module-notes)"
 
           test -d "$source_dir"
+          test -d "$module_notes_dir/sweden"
+          test -d "$module_notes_dir/turkiye"
           test -f "$destination_dir/SKILL.md"
           [[ "$upstream_tree_sha" =~ ^[0-9a-f]{40}$ ]]
+          [[ "$upstream_module_notes_tree_sha" =~ ^[0-9a-f]{40}$ ]]
 
           git -C skills config user.name "eudirective"
           git -C skills config user.email "eudirective@proton.me"
@@ -69,9 +75,15 @@ jobs:
             # SKILL.md belongs to the skill and must never be deleted or replaced.
             rsync -a --delete --exclude='/SKILL.md' \
               "$source_dir/" "$destination_dir/"
+            rsync -a --delete \
+              "$module_notes_dir/" "$destination_dir/module-notes/"
 
-            node skills/freemovement-law/scripts/version_manifest.mjs --stamp --library-tree "$upstream_tree_sha"
-            node skills/freemovement-law/scripts/version_manifest.mjs --verify --library-tree "$upstream_tree_sha"
+            node skills/freemovement-law/scripts/version_manifest.mjs --stamp \
+              --library-tree "$upstream_tree_sha" \
+              --module-notes-tree "$upstream_module_notes_tree_sha"
+            node skills/freemovement-law/scripts/version_manifest.mjs --verify \
+              --library-tree "$upstream_tree_sha" \
+              --module-notes-tree "$upstream_module_notes_tree_sha"
 
             git -C skills add -A -- freemovement-law/skills/eudirective-source-library \
               freemovement-law/skills/eudirective-core/references/session-version-manifest.json
@@ -80,7 +92,7 @@ jobs:
               exit 0
             fi
 
-            git -C skills commit -m "Sync source-library and its version fingerprint"
+            git -C skills commit -m "Sync source library and module notes"
             if git -C skills push origin HEAD:main; then
               echo "Source library and version fingerprint synchronized"
               exit 0

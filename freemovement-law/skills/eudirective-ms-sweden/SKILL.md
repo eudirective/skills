@@ -25,15 +25,15 @@ Apply this use check:
 Before substantive work, on the first freemovement-law skill invocation in this conversation, read `eudirective-core/references/session-version-check.md` and perform its read-only once-per-conversation version comparison. Report only mismatches or unsuccessful checks, never silent success. Continue the requested work regardless of the result. Skip additional checks in the same conversation unless expressly requested; if this skill is not the core, load the core's referenced instructions first. This checks package versions only, not legal-source validity.
 
 ## Version and Status
-- Current version: `0.7.3`
-- Last updated: `2026-10-19`
+- Current version: `0.7.4`
+- Last updated: `2026-10-24`
 - Versioning rule: patch for factual/source clarifications, minor for contract coverage/workflow changes, major for incompatible contracts.
 
 ## Version Disclosure
-For every visible response or report produced while using this skill, announce: `Skill: eudirective-ms-sweden v0.7.3`. Place this line after the required first-response notice on the first response of a conversation.
+For every visible response or report produced while using this skill, announce: `Skill: eudirective-ms-sweden v0.7.4`. Place this line after the required first-response notice on the first response of a conversation.
 
 ## Workflow
-1. Read `references/module-manifest.json` and `references/module-export.json`. Resolve scoped module notes from `sweden/module-notes/source-notes/` in the plugin source library; these notes are not full authoritative texts.
+1. Read `references/module-manifest.json` and `references/module-export.json`. Resolve scoped module notes from `module-notes/sweden/` in the plugin source library; these notes are not full authoritative texts.
 2. Resolve module notes and Swedish source records from the bundled eudirective-source-library skill. Check current law or procedure at the responsible official publisher; installed bundles are snapshots. Never use a compatibility note as current law.
 3. Run `python scripts/verify_source_notes.py` before consuming module data; it checks the compatibility-note bytes in the source library.
 4. Run core's `scripts/module_conformance.py` on the module manifest/export pair using the pinned C3 contract 0.2.0, protocol 0.3.0, model 0.2.0.

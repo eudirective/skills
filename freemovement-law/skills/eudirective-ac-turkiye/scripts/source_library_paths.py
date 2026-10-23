@@ -6,7 +6,7 @@ LIBRARY_ROOT = PLUGIN_ROOT / "skills" / "eudirective-source-library"
 
 
 def module_notes_root():
-    notes = LIBRARY_ROOT / "turkiye" / "module-notes" / "source-notes"
+    notes = LIBRARY_ROOT / "module-notes" / "turkiye"
     if notes.is_dir():
         return notes
     raise FileNotFoundError("Türkiye module notes are missing from the bundled eudirective source library.")
