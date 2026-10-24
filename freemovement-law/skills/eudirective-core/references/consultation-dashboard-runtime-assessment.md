@@ -29,4 +29,4 @@ A skill instruction cannot force ChatGPT to include the board, authenticate repo
 - Separate execution/verification ledger: specified; model-led assessments remain distinct from observed runs.
 - Bundled-library matches, web-search discoveries, and module use: shown separately with overlap and unknown provenance handled explicitly.
 - Custom graphical renderer, hosted service, MCP UI, and host-enforced release gate: not provided.
-- Fresh-chat visual review: deferred to `consultation-dashboard-live-test-plan.md`; no live session test is required during maintenance.
+- Fresh-chat visual review: not performed. The historical test design is preserved at `consultation-dashboard-live-test-plan.md`, but is not a user task or maintenance prerequisite. Reopen only when a verified agent-controlled runtime is available or the requested scope changes.

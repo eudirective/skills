@@ -1,4 +1,7 @@
-# freemovement-law fresh-session and host-boundary test plan
+# Historical freemovement-law fresh-session and host-boundary test plan
+
+**Current status:** This is a preserved test design, not an active user assignment or a release prerequisite solely because hosted testing is unavailable. Do not ask the user to run the checklist. Host enforcement remains unimplemented unless a verified host controller is built and tested; local regression checks remain separate. Reopen this plan only when an agent-controlled target host/runtime is available or the user explicitly changes scope. See the private `fm-maintenance/records/MAINTENANCE_STATUS.json` for current accepted limitations.
+
 
 **Status:** Not performed. This is a manual plan for a fresh ChatGPT session.
 It does not make live testing a maintenance-session requirement. The local

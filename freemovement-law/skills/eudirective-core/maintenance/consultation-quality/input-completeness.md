@@ -1,5 +1,7 @@
 # Behavioral evaluation input-completeness ledger
 
+**Historical input snapshot:** This ledger records what was missing when it was authored. Its original closure suggestions are not current user assignments. The current private `fm-maintenance/records/MAINTENANCE_STATUS.json` records the accepted runtime limitation and reopening conditions.
+
 | Required input | Status | Consequence |
 | --- | --- | --- |
 | Private consultation-assurance inventory | Available: 36 records, all `not_executed` | Scenario inventory exists, but it supplies no response evidence. |

@@ -1,5 +1,14 @@
 # Release and version policy
 
+## Maintenance completion and handback policy
+
+For new maintenance work, finish all work and applicable automated checks that can be run in the available environment. If a live plugin runtime is unavailable, record behavioral evaluation as `not_feasible_current_runtime`, keep behavior unverified, and do not create a user-run test, recurring follow-up, approval request, or release blocker solely because that runtime is unavailable. The private `fm-maintenance` package's `records/MAINTENANCE_STATUS.json` is the canonical record of accepted limitations and actionable blockers; historical plans and reports below remain evidence, not current task lists.
+
+Before asking the user to intervene, classify the situation: complete agent-executable work; diagnose and retry recoverable failures; ask one focused question only for an indispensable user decision or authorization; record unavailable external capabilities without manufacturing a task; keep material defects and genuine safety blockers visible with an impact and resolution path; and label optional improvements as optional. Do not weaken legal, privacy, security, authorization, or justified release controls. Automated tests remain mandatory where applicable, and failures must be resolved or recorded as actionable blockers.
+
+This policy applies to new work; entries below preserve the status and evidence recorded when each earlier change was made.
+
+
 # Plugin v0.59.1 / core v0.58.1 module-note mirror and C6/C7 fixture repair
 
 The C17 module-note consumers now follow the public-data `module-notes/{sweden,turkiye}` layout. The mirror workflow copies that tree into the bundled source library and stamps its separate Git tree fingerprint; the once-per-chat version check compares both the source-library and module-note trees. Sweden and Türkiye module guidance point to the same layout.

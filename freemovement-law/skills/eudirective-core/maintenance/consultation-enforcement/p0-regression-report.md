@@ -1,5 +1,7 @@
 # P0 consultation enforcement regression report
 
+**Historical regression record:** Results below remain tied to the stated candidate and date. The manual display/release plan is preserved as history; it is not a current user task or a prerequisite for local maintenance. Current accepted limitations belong in the private `fm-maintenance/records/MAINTENANCE_STATUS.json`.
+
 **Skill:** fm-maintenance v0.3.0
 **Date:** 2026-10-23
 **Base:** `824a29ed7aa41db35575ebc5f801544a991f9a95` (`main` before this follow-up)
@@ -42,4 +44,4 @@ The 0.5 attack-screen trace separates selector-derived route triggers from adver
 - The private `fm-maintenance` aggregate runner reported 35/39 staged scripts successful. Its bundled payload overlays the target checkout, and the four failures came from its nested Node process (`EPERM`), missing Sweden module notes in the staged payload, and two staged dashboard/route scripts. The candidate's current route, dashboard, issue-selection, integrated-release, preflight, P0 and self-test suites were run directly and passed. The aggregate runner result is not represented as a passing candidate run.
 - Remote CI was not triggered from this local worktree.
 
-This report does not claim independent legal/privacy approval, remote CI success, a ChatGPT host release veto, or a live ChatGPT test. The deferred manual display/release plan remains the operational check for a fresh installed version.
+This report does not claim independent legal/privacy approval, remote CI success, a ChatGPT host release veto, or a live ChatGPT test. The historical manual display/release plan is not an active user task. Do not treat it as an operational prerequisite for maintenance.
