@@ -4,11 +4,12 @@ import {createHash} from 'node:crypto';
 import {readFile} from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
-import {atomicProjectWrite, projectTempPath} from '../runtime-storage.mjs';
+import {atomicProjectWrite, projectTempPath} from './runtime-storage.mjs';
 
 const root=path.dirname(fileURLToPath(import.meta.url));
 const resolver='https://publications.europa.eu/resource/celex/32013H0461.SWE';
-const out=path.join(root,'sweden/core/eu/eu_32013h0461_SV.md');
+const libraryPath='core/sv/eu/eu_32013h0461_SV.md';
+const out=path.join(root,libraryPath);
 const work=projectTempPath(path.join(root,'work'));
 const raw=path.join(work,'raw/solvit-2013-461-sv.xhtml');
 const stateFile=path.join(work,'solvit-2013-461-sv-state.json');
@@ -55,7 +56,7 @@ async function run(action='sync'){
   const indexFile=path.join(root,'retrieval-index.json'),index=JSON.parse(await readFile(indexFile,'utf8'));
   const record=index.find(x=>x.source_id==='eu:32013h0461'&&x.language==='SV');
   if(!record)throw Error('Registered Swedish representation not found');
-  Object.assign(record,{relative_path:'sweden/core/eu/eu_32013h0461_SV.md',library_relative_path:'sweden/core/eu/eu_32013h0461_SV.md',official_source:resolver,retrieved_url:item.url,canonical_eli_url:'https://eur-lex.europa.eu/eli/reco/2013/461/oj/swe',canonical_document_url:resolver,official_html_sha256:sourceHash,markdown_sha256:mdHash,status:'retrieved_and_converted',retrieved_at:entry.checked_at,retrieval_time:entry.checked_at,converter:'Node.js Publications Office XHTML / solvit-sv-v1',library_content_state:'retrieved_full_text_candidate_not_trust_promoted'});
+  Object.assign(record,{relative_path:libraryPath,library_relative_path:libraryPath,official_source:resolver,retrieved_url:item.url,canonical_eli_url:'https://eur-lex.europa.eu/eli/reco/2013/461/oj/swe',canonical_document_url:resolver,official_html_sha256:sourceHash,markdown_sha256:mdHash,status:'retrieved_and_converted',retrieved_at:entry.checked_at,retrieval_time:entry.checked_at,converter:'Node.js Publications Office XHTML / solvit-sv-v1',library_content_state:'retrieved_full_text_candidate_not_trust_promoted'});
   delete record.reason;delete record.quality_note;
   await atomicProjectWrite(indexFile,JSON.stringify(index,null,2)+'\n');
   const mirrorIndexFile=path.join(root,'national-language-index-SV.json'),mirrorIndex=JSON.parse(await readFile(mirrorIndexFile,'utf8'));
@@ -64,8 +65,14 @@ async function run(action='sync'){
   Object.assign(mirror,{official_source:resolver,requested_urls:[resolver],final_url:item.url,mode:'publications-office-xhtml',official_response_sha256:sourceHash,markdown_sha256:mdHash,converter:'Node.js Publications Office XHTML / solvit-sv-v1'});
   await atomicProjectWrite(mirrorIndexFile,JSON.stringify(mirrorIndex,null,2)+'\n');
   const mirrorStateFile=path.join(root,'national-language-state-SV.json'),mirrorState=JSON.parse(await readFile(mirrorStateFile,'utf8'));
-  Object.assign(mirrorState.sources['eu:32013h0461'],{accepted_official_response_sha256:sourceHash,accepted_content_sha256:hash(md.split('\n\n').slice(2).join('\n\n').replace(/\s+/g,' ').trim()),accepted_markdown_sha256:mdHash,baseline_status:'official_publications_office_retrieval'});
+  Object.assign(mirrorState.sources['eu:32013h0461'],{current_path:libraryPath,accepted_official_response_sha256:sourceHash,accepted_content_sha256:hash(md.split('\n\n').slice(2).join('\n\n').replace(/\s+/g,' ').trim()),accepted_markdown_sha256:mdHash,baseline_status:'official_publications_office_retrieval'});
   await atomicProjectWrite(mirrorStateFile,JSON.stringify(mirrorState,null,2)+'\n');
+  const sharedIndexFile=path.join(root,'shared-core-index-SV.json'),sharedIndex=JSON.parse(await readFile(sharedIndexFile,'utf8'));
+  const sharedRecord=sharedIndex.entries.find(x=>x.source_id==='eu:32013h0461');
+  if(!sharedRecord)throw Error('Swedish shared-core representation not found');
+  Object.assign(sharedRecord,{official_language_url:resolver,canonical_path:libraryPath,storage_state:'local_representation_present',local_file_sha256:mdHash,official_response_sha256:sourceHash,retrieval_mode:'publications-office-xhtml',retrieval_time:entry.checked_at,acceptance_state:'retrieved_full_text_candidate_not_trust_promoted',acceptance_date:null,review_basis:'Retrieved from the official Publications Office and converted; representation remains a candidate pending identity, completeness, and semantic review.'});
+  sharedIndex.updated=entry.checked_at.slice(0,10);
+  await atomicProjectWrite(sharedIndexFile,JSON.stringify(sharedIndex,null,2)+'\n');
   console.log(JSON.stringify({status:'synced',source_sha256:sourceHash,markdown_sha256:mdHash,document:out}));
 }
 await run(process.argv[2]||'sync');

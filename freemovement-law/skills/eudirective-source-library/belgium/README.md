@@ -1,14 +1,18 @@
-# Belgium national-source candidates
+# Belgium national-source library (partial)
 
-Review date: 21 October 2026. This is a bounded source register, not a claim that Belgian law or procedures are complete. The review now accepts 47 official external links within their recorded scope; one superseded IBZ route is not relied upon. No local copy or legal topic is accepted, and Belgium review is incomplete.
+Review date: 24 October 2026. This is a bounded source register, not a claim that Belgian law or procedures are complete. The review now accepts 47 official external links within their recorded scope; one superseded IBZ route is not relied upon. Twenty-nine local copies are accepted under `documents/`: nine federal Justel legal texts; thirteen official guidance, procedure and oversight snapshots; three IBZ form/specimen PDFs; one FPS Foreign Affairs visa-routing matrix; two regional legislation texts; and one monthly selected-case publication. No legal topic is marked covered, and Belgium review is incomplete.
 
-Official government links can be used directly when publisher and source role are clear. If the current consolidated record or exact source scope is unclear, the whole official legal website/service is offered for human review. The 39 earlier local conversions remain unaccepted review aids; the 9 new link records have no local capture. Neither capture, custom conversion, API access, Gazette-fragment reconstruction, hash, nor replay is required to accept an official link.
+Official government links can be used directly when publisher and source role are clear. If the current consolidated record or exact source scope is unclear, the whole official legal website/service is offered for human review. Of the 11 converted review artifacts previously recorded, one is now a final document, seven are closed with link-only or superseded dispositions, and three remain open in the Monitor local-only archive because of malformed, incomplete or unavailable publisher pages. Nine additional official references have never had a local capture; 16 source records are link-only with no accepted local copy. No candidate or capture copies remain in this country pack. Local PDF forms and the visa-routing matrix are preserved as native files under `documents/forms/` and `documents/guidance/`; their binary hashes match the downloaded originals. This does not itself establish topic coverage.
 
-- Candidate records and search notes: [`references/source-list.md`](references/source-list.md)
-- Candidate metadata and separate external-link/local-copy states: [`references/candidate-manifest.json`](references/candidate-manifest.json)
+- Reviewed legal texts: see [`documents/legislation/`](documents/legislation/), including the accepted current [Walloon decree](documents/legislation/be-wallonia-publicity-decree-2026-04-01-fr.pdf) and [Flemish Bestuursdecreet](documents/legislation/be-flanders-bestuursdecreet-2018-nl.md).
+- Reviewed RvV/CCE material: [`January 2025 selected judgments`](documents/case_law/be-rvv-selected-jurisprudence-2025-01-fr.pdf), a selective report rather than a full judgment corpus.
+- Reviewed visa and oversight procedures: [`Article 9 D visa`](documents/guidance/be-d-visa-article9.md), [`Federal CADA appeal`](documents/oversight/be-federal-cada-appeal-fr.md), and [`Dutch DPA complaint route`](documents/oversight/be-dpa-complaint-nl.md).
+- Reviewed official forms and routing guidance: [`Annex 19`](documents/forms/be-annex-19-fr.pdf), [`Annex 19ter specimen`](documents/forms/be-annex-19ter-fr-specimen.pdf), [`Annex 20`](documents/forms/be-annex-20-fr.pdf), and the [`visa competence matrix`](documents/guidance/be-visa-competence-matrix-en.pdf).
+- The source inventory records local-copy status separately from external-reference acceptance. Three converted source artifacts remain open for review or publisher repair.
+- Official source inventory and search notes: [`references/source-list.md`](references/source-list.md)
+- Machine-readable source inventory and separate external-link/local-copy states: [`references/candidate-manifest.json`](references/candidate-manifest.json)
 - External-link decisions and whole-site review options: [`references/source-acceptance.json`](references/source-acceptance.json)
 - Sustainability and remaining coverage gaps: [`references/sustainability-assessment.md`](references/sustainability-assessment.md)
-- Earlier 39-item capture ledger: [`references/belgium-capture-results.json`](references/belgium-capture-results.json)
 - Country sequence and coverage state: [`../references/eea-switzerland-country-expansion.md`](../references/eea-switzerland-country-expansion.md)
 
 The register keeps national immigration law, the separate mobile-Belgian route, regional/community rules, and operational procedures distinct. The Danish EU residence regulation is a comparison lead only, not a legal-equivalence assumption.

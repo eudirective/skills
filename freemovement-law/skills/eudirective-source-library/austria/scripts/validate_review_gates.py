@@ -9,6 +9,7 @@ import re
 import shutil
 import sys
 from pathlib import Path
+from local_capture_archive import resolve_capture
 
 PACK = Path(__file__).resolve().parents[1]
 REPO = PACK.parents[1]
@@ -30,6 +31,9 @@ def path_for(value: str) -> Path:
     candidate = Path(value)
     if candidate.is_absolute():
         return candidate
+    archived = resolve_capture(value)
+    if archived is not None:
+        return archived
     if value.startswith("captures/"):
         return PACK / candidate
     direct = REPO / candidate

@@ -12,6 +12,7 @@ from pathlib import Path
 PACK = Path(__file__).resolve().parents[1]
 ROOT = PACK.parents[1]
 sys.path.insert(0, str(PACK))
+from scripts.local_capture_archive import resolve_capture  # noqa: E402
 from sync_austria_sources import ScopedText  # noqa: E402
 from scripts.convert_ris_capture import extract_text  # noqa: E402
 
@@ -36,6 +37,9 @@ def digest(data: bytes) -> str:
 
 
 def pack_path(value: str) -> Path:
+    archived = resolve_capture(value)
+    if archived is not None:
+        return archived
     if value.startswith("captures/"):
         return PACK / value
     path = ROOT / value

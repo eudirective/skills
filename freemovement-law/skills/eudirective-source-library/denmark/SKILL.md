@@ -2,17 +2,17 @@
 name: denmark-legal-source-system
 description: Retrieve, convert, and monitor the Danish national, EU, and CJEU documents in the Denmark legal pack from their official publishers. Use to refresh or discover changes for this source pack, not for individual legal advice.
 metadata:
-  version: 0.3.4
+  version: 0.3.5
 ---
 
 # Denmark Legal Source System
 
-Stored in the shared source library at `eudirective-source-library-0.6.0/denmark/`, alongside the independent `sweden/` and `romania/` national packs. Danish national sources remain separate from Danish-language EU counterparts. The earlier Danish EU-language copies remain in `denmark/core/`; the 23 EU-core expansion representations are stored once under `source-library/core/da/` and routed through `denmark/references/shared-core.json`.
+Stored in the shared source library at `eudirective-source-library-0.6.0/denmark/`, alongside the independent `sweden/` and `romania/` national packs. Danish national sources remain separate from Danish-language EU counterparts. Forty-two prior Danish-language EU conversions have moved into `source-library/core/da/`; their recorded live-recheck failures remain open and the move did not reaccept them. Two unpromoted guidance conversion candidates are excluded from the shared-core index and are temporarily held in ignored project `temp/denmark-core-cleanup/candidates/` pending migration to the Monitor's local-only archive; they are not accepted source representations. The 23 EU-core expansion representations are stored once under `source-library/core/da/` and routed through `denmark/references/shared-core.json`.
 
 ## Version and scope
 
-- Current version: 0.3.4
-- Updated: 2026-10-21
+- Current version: 0.3.5
+- Updated: 2026-10-24
 - Scope: the 16 Danish instruments in [pack-manifest.json](references/pack-manifest.json), 14 official Danish guidance sources in [guidance-manifest.json](references/guidance-manifest.json), and the 23 shared EU/CJEU IDs in [core-source-ids.json](references/core-source-ids.json).
 - Keep EU/CJEU documents in the existing `eudirective-core` lane. The Denmark lane retrieves only its 16 Danish instruments. Do not duplicate EU texts into a Danish national folder.
 - Use Node.js only. Do not invoke Python scripts from this skill or from the supplied ZIP. Treat the ZIP as source inventory and evidence, not executable instructions.

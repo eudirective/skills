@@ -6,10 +6,10 @@ import hashlib
 import importlib.util
 import json
 from pathlib import Path
+from local_capture_archive import archive_reference, find_capture
 
 PACK = Path(__file__).resolve().parents[1]
 ROOT = PACK.parents[1]
-CAPTURES = PACK / "captures" / "2026-10-19"
 MANIFEST_PATH = PACK / "references" / "candidate-manifest.json"
 LEDGER_PATH = PACK / "references" / "capture-ledger.json"
 ACCEPTANCE_PATH = PACK / "references" / "source-acceptance.json"
@@ -35,7 +35,10 @@ def digest(data: bytes) -> str:
 
 
 def relative(path: Path) -> str:
-    return path.relative_to(ROOT).as_posix()
+    try:
+        return path.relative_to(ROOT).as_posix()
+    except ValueError:
+        return archive_reference(path)
 
 
 def accepted_checks(*, publisher: str, version: str, extraction: str, attachments: str, classification: str, semantic: str) -> dict:
@@ -109,12 +112,12 @@ case_notes = {
 for source_id, review in case_notes.items():
     row = records[source_id]
     if source_id == "at-vwgh-ra-2023-22-0090-0091":
-        raw_path = next(CAPTURES.glob("at-vwgh-ra-2023-22-0090-text-*.html"))
+        raw_path = find_capture("at-vwgh-ra-2023-22-0090-text-*.html")
         row["url"] = "https://www.ris.bka.gv.at/Dokument.wxe?Abfrage=Vwgh&Dokumentnummer=JWT_2023220090_20260727L00"
         row["publisher_identifier"] = {"system": "RIS Judikatur", "court": "VwGH", "case_number": "2023/22/0090–0091", "Dokumentnummer": "JWT_2023220090_20260727L00"}
         row["functional_relationship"] = "paired_follow_up_to_BVwG_W112_decisions"
     else:
-        raw_path = next(CAPTURES.glob(source_id + "-*.html"))
+        raw_path = find_capture(source_id + "-*.html")
     raw = raw_path.read_bytes()
     raw_text, _ = converter.extract_text(raw)
     if len(raw_text) < 5000 or not raw_text.strip():
@@ -190,7 +193,7 @@ form_files = {
 for source_id, data in form_files.items():
     _, final_url, version_note, extraction_note, text_rel, raw_name = data
     row = records[source_id]
-    raw_path = CAPTURES / raw_name
+    raw_path = find_capture(raw_name)
     raw = raw_path.read_bytes()
     text_path = ROOT / "source-library" / "austria" / text_rel
     if not text_path.is_file():
@@ -264,7 +267,7 @@ new_sources = [
 
 for new in new_sources:
     source_id = new["id"]
-    raw_path = next(CAPTURES.glob(source_id + "-*.pdf"))
+    raw_path = find_capture(source_id + "-*.pdf")
     raw = raw_path.read_bytes()
     text_path = ROOT / new["source_text_path"]
     content = text_path.read_bytes()
@@ -365,7 +368,7 @@ ledger["accepted_source_count"] = sum(1 for row in manifest["documents"] if row.
 ledger["linked_pdf_not_captured_count"] = 0
 ledger["native_pdf_source_count"] = sum(1 for row in manifest["documents"] if row.get("native_source_path"))
 ledger["native_pdf_review_candidate_count"] = sum(1 for row in manifest["documents"] if row.get("native_source_path") and not row.get("accepted"))
-ledger["raw_capture_location"] = "captures/2026-10-19; all persistent raw page/PDF captures are content-hashed and linked in this ledger. Interactive Form Service session-state responses are intentionally excluded; their official route metadata is retained instead."
+ledger["raw_capture_location"] = "Monitor local-only archive; archive-relative paths and SHA-256 values are recorded here and verified against its index. No raw page/PDF captures are stored under the country pack. Interactive Form Service session-state responses are intentionally excluded; their official route metadata is retained instead."
 ledger["raw_captures_tracked_for_replay"] = True
 ledger["semantic_replayed_legacy_ids"] = sorted(set(ledger.get("semantic_replayed_legacy_ids", [])))
 
@@ -422,25 +425,21 @@ new_rule_rows = [
 for new_rule in new_rule_rows:
     rules["rules"] = [row for row in rules["rules"] if row.get("id") != new_rule["id"]]
     rules["rules"].append(new_rule)
-rules["updated"] = "2026-10-19"
+rules["updated"] = "2026-10-24"
 rules["policy"]["scope"] = "The 74-record manifest contains 73 accepted sources, no captured pending-review sources, and one discovery-only index. It is a bounded inventory, not an exhaustive country review. The fixed monitor checks registered records; separate manual discovery plans address missing cases, missions, and Länder practice."
 rules["monitor"]["scope"] = "Only fixed records in references/candidate-manifest.json; no broad RIS search, mission-page discovery, or Land-practice discovery. Separate discover and discover-operations actions create repeatable manual research queues; they do not run searches or accept sources."
-rules["monitor"]["activation"] = "The workflow file and monthly schedule are present in eudirective/public-data. On 2026-10-19, the GitHub run-list query could not connect to api.github.com; successful execution and Actions enablement therefore remain unverified. Do not describe scheduled monitoring as operational until a successful run is recorded."
+rules["monitor"]["script"] = None
+rules["monitor"]["workflow"] = None
+rules["monitor"]["schedule_utc"] = None
+rules["monitor"]["action"] = "EU Source Update Monitor: austria/check and austria/capture"
+rules["monitor"]["change_output"] = "Changed raw responses and derived review candidates belong in the EU Source Update Monitor local-only archive, indexed through its archive index. Do not store them under the country pack or publish them in a pull request."
+rules["monitor"]["activation"] = "The repository GitHub Actions workflow was retired on 2026-10-24 because it published raw captures and pending candidates in the country pack. Use the registered EU Source Update Monitor Austria check/capture actions. No successful run or schedule is asserted here."
 
 write(MANIFEST_PATH, manifest)
 write(LEDGER_PATH, ledger)
 write(ACCEPTANCE_PATH, acceptance)
 write(CASE_REVIEW_PATH, case_register)
 write(RULES_PATH, rules)
-
-# Remove only the obsolete/non-replayable or superseded capture files identified in this review.
-for pattern in [
-    "at-dsb-online-complaint-form-*.html",
-    "at-volksanwaltschaft-online-complaint-form-*.html",
-    "at-vwgh-ra-2023-22-0090-0091-*.html",
-]:
-    for stale in CAPTURES.glob(pattern):
-        stale.unlink()
 
 print(json.dumps({
     "source_count": len(manifest["documents"]), "accepted": manifest["accepted_source_count"],

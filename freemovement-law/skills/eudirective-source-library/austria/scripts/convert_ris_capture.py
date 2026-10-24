@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Convert or verify saved Austrian RIS section HTML from its publisher text container.
 
-This helper is deliberately offline. It consumes only the exact HTML responses
-listed in references/capture-ledger.json, verifies their SHA-256, and does not
+This helper is deliberately offline. It resolves exact response bytes through
+the monitor's indexed local-only archive, verifies their SHA-256, and does not
 make network requests or promote sources to the trusted corpus.
 """
 
@@ -15,6 +15,7 @@ import re
 import sys
 from html.parser import HTMLParser
 from pathlib import Path
+from local_capture_archive import resolve_capture
 
 
 PACK_DIR = Path(__file__).resolve().parents[1]
@@ -112,6 +113,9 @@ def resolve_repo_path(value: str) -> Path:
     path = Path(value)
     if path.is_absolute():
         return path
+    archived = resolve_capture(value)
+    if archived is not None:
+        return archived
     if value.startswith("captures/"):
         return PACK_DIR / path
     repo_root = PACK_DIR.parent.parent
