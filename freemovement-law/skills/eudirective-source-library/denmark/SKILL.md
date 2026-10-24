@@ -7,7 +7,7 @@ metadata:
 
 # Denmark Legal Source System
 
-Stored in the shared source library at `eudirective-source-library-0.6.0/denmark/`, alongside the independent `sweden/` and `romania/` national packs. Danish national sources remain separate from Danish-language EU counterparts in `denmark/core/`.
+Stored in the shared source library at `eudirective-source-library-0.6.0/denmark/`, alongside the independent `sweden/` and `romania/` national packs. Danish national sources remain separate from Danish-language EU counterparts. The earlier Danish EU-language copies remain in `denmark/core/`; the 23 EU-core expansion representations are stored once under `source-library/core/da/` and routed through `denmark/references/shared-core.json`.
 
 ## Version and scope
 

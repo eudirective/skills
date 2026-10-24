@@ -4,7 +4,7 @@
 
 **Link decisions (23 October 2026):** 12 official external references are accepted within stated scopes; 3 proposals remain in human review. The 44 local conversions remain unaccepted.
 
-The replay result above records the 19 October run. In this checkout, the hash-addressed raw XML ZIP files under the ignored `temp/germany/` path are absent, so the 23 October offline verification could not reproduce the 18 statutory conversions.
+The 23 October verification initially could not run in this checkout because its ignored `temp/germany/raw/` folder was absent. The 17 hash-addressed raw XML ZIP snapshots were recovered from the parallel local `/tmp/public-data` checkout and copied here; all matched the source hashes in the manifest. Running `python3 sync_germany.py verify` then reproduced and verified all 18 statutory conversions at their recorded XML build dates. This confirms deterministic replay from the captured bytes, not later source currentness or acceptance of any local copy.
 
 The law retrieval rule refreshes each statute's official Gesetze im Internet index, follows the XML ZIP link published there, validates the archive and statutory abbreviation, and stores the publisher norm ID, XML build date, exact URLs, and source hash. Three candidates are provision-specific excerpts from the complete official package. The generated Markdown preserves the statute's section and paragraph structure. The 18 conversions pass deterministic offline replay.
 

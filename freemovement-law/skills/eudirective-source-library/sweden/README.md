@@ -1,6 +1,6 @@
 # Sweden national sources
 
-This lane contains Swedish national legislation and Migration Court of Appeal decisions represented in `H:\Downloads\sweden\sweden legal pack.zip`. The Swedish-language EU representations are stored separately in this pack's [`core/`](core/) folder.
+This lane contains Swedish national legislation and Migration Court of Appeal decisions represented in `H:\Downloads\sweden\sweden legal pack.zip`. The earlier Swedish-language EU representations remain in this pack's [`core/`](core/) folder. The 23 EU-core expansion representations are stored once in the shared library under `source-library/core/sv/` and routed through [`references/shared-core.json`](references/shared-core.json).
 
 ## Sources and update signals
 

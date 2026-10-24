@@ -102,7 +102,7 @@
   },
   "local_copy_acceptance": {
     "accepted_source_count": 0,
-    "note": "All previously converted files remain unaccepted review artifacts. The hu-act-2023-25 Markdown conversion had visible NJT page-menu/search/toolbar chrome; on 2026-10-23 that interface noise was removed from the local text and its body hash recomputed. The stored raw-byte hash could not be replayed because the captured source bytes and the configured runtime-storage module are absent from this checkout, so the cleaned file remains unaccepted. The 2010 civil-registration Act and three AJBH PDFs remain link-only; no local copy was accepted."
+    "note": "All previously converted files remain unaccepted review artifacts. The hu-act-2023-25 Markdown conversion had visible NJT page-menu/search/toolbar chrome; on 2026-10-23 that interface noise was removed and its body hash was recomputed against the text after the source-title heading. The body hash now matches the cleaned Markdown. The stored raw-byte hash could not be replayed because no captured source bytes were found in this checkout or the sibling /tmp/public-data checkout, and the configured runtime-storage module is absent from this checkout, so the cleaned file remains unaccepted. The 2010 civil-registration Act and three AJBH PDFs remain link-only; no local copy was accepted."
   },
   "whole_site_review_offers": [
     {

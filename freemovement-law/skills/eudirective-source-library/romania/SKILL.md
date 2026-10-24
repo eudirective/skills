@@ -7,7 +7,7 @@ metadata:
 
 # Romanian legal source system
 
-Version 0.4.3, updated 2026-10-21. This national pack is stored at `eudirective-source-library-0.6.0/romania/`, separately from the Romanian EU-language mirror in `romania/core/`. Reviewed Romanian national legislation, court decisions, and authority material are stored under `romania/documents/`. It includes 14 case-law follow-up records with official versus secondary source quality recorded per entry. The guidance lane adds 10 official authority sources to this pack, with its own manifest, source bytes, Markdown, and replay verification.
+Version 0.4.3, updated 2026-10-21. This national pack is stored at `eudirective-source-library-0.6.0/romania/`, separately from the earlier Romanian EU-language copies in `romania/core/`. The 23 EU-core expansion representations are stored once under `source-library/core/ro/` and routed through `romania/references/shared-core.json`. Reviewed Romanian national legislation, court decisions, and authority material are stored under `romania/documents/`. It includes 14 case-law follow-up records with official versus secondary source quality recorded per entry. The guidance lane adds 10 official authority sources to this pack, with its own manifest, source bytes, Markdown, and replay verification.
 
 Use this skill only for the Romanian source inventory in `references/source-list.md`. It covers Romanian national legislation, Romanian court decisions, Romanian authority guidance, and listed discovery repositories. Three follow-up case-law entries are secondary reproductions or a court-authored digest and are marked as such in the manifest and converted Markdown. EU legislation and CJEU judgments belong to the separate EU source system.
 

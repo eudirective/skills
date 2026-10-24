@@ -2,34 +2,35 @@
   "manifest_version": "0.1.0-candidate",
   "pack": "finland-national-source-candidates",
   "jurisdiction": "FI",
-  "inventory_research_date": "2026-10-18",
+  "inventory_research_date": "2026-10-23",
   "scope": "Official Finnish sources related to EU, EEA and Swiss free movement; third-country family members; visa and consular routes; administrative procedure, access to information, remedies, oversight, privacy, legal aid and administrative courts. This is a bounded discovery register, not a statement of legal equivalence or complete coverage.",
   "status": "partially_retrieved_review_candidates",
-  "retrieval_status": "23 source records have saved review-candidate conversions; the broad page pass staged changed versions, while direct 403 and textless surfaces remain unresolved; 0 local copies accepted; 8 current Finnish Finlex law-page references accepted externally.",
+  "retrieval_status": "23 source records have saved review-candidate conversions; the broad page pass staged changed versions, while direct 403 and textless surfaces remain unresolved; 0 local copies accepted; eight Finlex law-page references and one Police Board order locator accepted externally.",
   "accepted_source_count": 0,
-  "candidate_source_count": 36,
+  "candidate_source_count": 37,
   "official_hosts": [
     "dvv.fi",
-    "lomakkeet.dvv.fi",
     "finlandvisa.fi",
     "finlex.fi",
-    "www.finlex.fi",
     "kho.fi",
-    "www.kho.fi",
+    "lomakkeet.dvv.fi",
     "migri.fi",
     "n-lex.europa.eu",
     "oikeus.fi",
-    "www.oikeus.fi",
     "oikeusasiamies.fi",
-    "www.oikeusasiamies.fi",
     "oikeuskansleri.fi",
     "oikeuspalveluvirasto.fi",
-    "www.oikeuspalveluvirasto.fi",
     "opendata.finlex.fi",
+    "poliisi.fi",
     "tietosuoja.fi",
     "tuomioistuimet.fi",
-    "www.tuomioistuimet.fi",
-    "um.fi"
+    "um.fi",
+    "www.finlex.fi",
+    "www.kho.fi",
+    "www.oikeus.fi",
+    "www.oikeusasiamies.fi",
+    "www.oikeuspalveluvirasto.fi",
+    "www.tuomioistuimet.fi"
   ],
   "secondary_hosts": [],
   "previous_findings_carried_forward": [
@@ -195,6 +196,23 @@
         "en"
       ],
       "coverage_limit": "Oversight complaints, data-protection remedies and legal-aid eligibility are distinct routes. English service guidance may be incomplete; legal-aid e-services are reported as Finnish/Swedish only."
+    },
+    {
+      "source_class": "Police Board operational orders",
+      "search_outcome": "The official Police Board orders index lists POL-2025-163559 as valid 2026-01-01 through 2028-12-31; exact-ID searches did not locate POL-2019-71117.",
+      "official_channels": [
+        "Poliisi.fi"
+      ],
+      "query_terms": [
+        "POL-2019-71117",
+        "POL-2025-163559",
+        "Poliisin viestintä",
+        "poliisi.fi/ohjeet-ja-maaraykset"
+      ],
+      "languages": [
+        "fi"
+      ],
+      "coverage_limit": "The linked 2025 PDF returned 403 in the research viewer, so its text and any formal relationship to POL-2019-71117 remain unverified. No raw file was captured; the current order is accepted as an external locator reference only."
     }
   ],
   "documents": [
@@ -1137,12 +1155,31 @@
       "source_sha256": "72374b843e5c63f1186db4666ec462fdb7cf446a03164bf52e6b7c78e880754e",
       "converted_sha256": "e0ee68a28cef0d0d3733d8efd0fe3d97f6c828f0ce455082fee75e9b0e059f95",
       "source_bytes": 144679
+    },
+    {
+      "id": "fi-police-communications-order-2025",
+      "title": "Poliisin viestintä (Police communications order), POL-2025-163559",
+      "source_type": "national_police_order",
+      "language": "fi",
+      "url": "https://poliisi.fi/documents/25235045/138938434/Poliisin%20viestint%C3%A4.pdf/5024297c-bb52-c354-ddc2-f9e87c9c0cad?t=1767005435861",
+      "publisher_identifier": {
+        "system": "Finnish National Police Board (Poliisihallitus)",
+        "record": "Order POL-2025-163559; document ID ID-25841820; dated 2025-12-18; listed valid 2026-01-01 through 2028-12-31"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "The official Police Board site index identifies the Finnish title, order number, document ID, issue date and validity period, and links the PDF. The PDF itself returned 403 in the research viewer and its content was not inspected.",
+      "retrieval_status": "official_locator_only",
+      "retrieval_shape": "Official Police Board orders index with linked PDF attachment",
+      "note": "Same subject as the historical POL-2019-71117 lead. The 2025 order is accepted only as an official locator and date reference; formal amendment, repeal or succession relationship to POL-2019-71117 remains unverified.",
+      "retrieved": false,
+      "accepted": false,
+      "external_reference_accepted": true
     }
   ],
   "retrieved_review_candidate_count": 25,
   "converted_review_candidate_count": 23,
   "monitor_capture_ledger": "references/candidate-manifest-monitor-capture-results.json",
   "source_specific_capture_manifest": "references/finlex-retrieval-manifest.json",
-  "accepted_external_reference_count": 8,
+  "accepted_external_reference_count": 9,
   "accepted_local_copy_count": 0
 }
