@@ -1,3 +1,11 @@
+# Plugin v0.59.3 / core v0.58.3 C27 discovery coverage
+
+The C27 audit inventories all 308 checks across 23 families and reconciles their direct consultation routes, route-scope fallbacks, C27 feature triggers, requested-focus support, and model-led instructions. Route-selected checks are explicitly documented as one path rather than an exhaustive C27 subset. A scheduled interview no longer adds a fraud trigger; interview-specific review remains available and fraud-only checks require a separate fraud signal. `select_check_ids()` is documented and tested as the direct-route API, while `select_issue_requirements()` and `select_checks()` retain scope-resolution fallbacks.
+
+Private regression runner staging now adds private test files only when the target checkout lacks the path, preserving the exact candidate source files. The full private suite and the public route-selection and route-gate suites were run locally; exact results are recorded in the private fm-maintenance audit record. No live ChatGPT behavior test was run or required.
+
+Core advances from `0.58.2` to `0.58.3`; plugin advances from `0.59.2` to `0.59.3`.
+
 # Release and version policy
 
 ## Maintenance completion and handback policy

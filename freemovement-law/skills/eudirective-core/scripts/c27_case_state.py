@@ -1212,7 +1212,7 @@ def feature_tags(p, requested_focus=()):
     }):
         t.add("lodgement")
     if "interview_scheduled" in steps:
-        t.update(("interview", "fraud"))
+        t.add("interview")
     if steps.intersection({"decision_taken", "decision_notified"}):
         t.add("decision")
     if p.get("administrative_outcome_records"):

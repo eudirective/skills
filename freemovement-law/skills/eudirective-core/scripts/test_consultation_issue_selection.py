@@ -173,6 +173,20 @@ class ConsultationIssueSelectionTests(unittest.TestCase):
         with self.assertRaisesRegex(selector.SelectionError, "signal_unknown"):
             selector.select_check_ids(["unknown_signal"])
 
+    def test_route_id_api_and_full_requirement_api_distinguish_scope_fallbacks(self) -> None:
+        signals = ["outcome_article32_substantive_refusal"]
+        direct = selector.select_check_ids(signals)
+        requirements = selector.select_issue_requirements(signals)
+        fixture_result = selector.select_checks(fixture(("p_1", signals)))
+
+        self.assertEqual(direct, [])
+        self.assertIn("case_intake.application_type", requirements["check_ids"])
+        self.assertIn("case_intake.application_type", selected_ids(fixture_result))
+        self.assertTrue(any(
+            item["status"] == "procedure_type_unresolved"
+            for item in requirements["route_scope_statuses"]
+        ))
+
     def test_issue_requirements_derive_source_owners_and_attack_topics(self) -> None:
         base = selector.select_issue_requirements(["ephemeral_evidence_at_risk"])
         self.assertEqual(base["source_owner_ids"], ["member_state_law"])

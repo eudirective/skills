@@ -578,10 +578,13 @@ def select_check_ids(
     administrative_outcome_classification: str | None = None,
     post_issuance_event_type: str | None = None,
 ) -> list[str]:
-    """Return sorted selected C27 IDs for one opaque synthetic signal set.
+    """Return direct route-selected C27 IDs for an opaque synthetic signal set.
 
-    The caller supplies signal IDs only. No issue text, jurisdiction, fact,
-    applicant narrative, or proceeding history is accepted.
+    Scope-resolution fallback checks are intentionally omitted here. Use
+    ``select_issue_requirements`` or ``select_checks`` when those checks and
+    their unresolved-scope reasons are required. The caller supplies signal
+    IDs only; no narrative, jurisdiction, fact, or proceeding history is
+    accepted.
     """
     matrix = matrix or load_json(MATRIX_PATH)
     registry = registry or load_json(REGISTRY_PATH)
