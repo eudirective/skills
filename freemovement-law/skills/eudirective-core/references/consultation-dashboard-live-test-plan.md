@@ -1,4 +1,7 @@
-# Consultation dashboard live test plan
+# Historical consultation dashboard live-test plan
+
+**Current status:** This is a preserved historical test design, not an active maintenance task or an assignment to the user. Do not ask the user to run it, copy prompts, or collect responses. Reopen behavioral evaluation only if a verified agent-controlled runtime can invoke the exact target build and capture its responses, or the user explicitly requests a changed evaluation scope. Otherwise record `not_feasible_current_runtime` and keep behavior unverified in the private fm-maintenance status record.
+
 
 **Status:** ChatGPT live checks remain deferred and are not required to finish maintenance. The locally installed v0.58.2 package is the baseline; candidate v0.59.1 is not installed in this environment. The prior manual installed-bundle check covered v0.58.2 only. A fresh session with each exact build remains necessary for client-level behavior checks. Use fictional, non-sensitive facts in any future chat review; do not place those facts or conversation text in a renderer receipt or temporary file. No hosted service or MCP is part of the plan.
 

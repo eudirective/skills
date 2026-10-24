@@ -1,5 +1,7 @@
 # Consultation quality candidate verification
 
+**Historical verification record:** The entries below preserve the candidate evidence and limits as recorded at the time. Their deferred live-test wording is not a current user assignment. Reuse the private `fm-maintenance/records/MAINTENANCE_STATUS.json` limitation unless verified runtime capability or the requested scope changes.
+
 ## Current candidate verification — 2026-10-21
 
 **Status:** Full dashboard and local structural/controller checks verified;
@@ -51,7 +53,7 @@ Remote CI/PR results are not yet available for this candidate.
 | US-010 route receipt gate | Implemented and structurally checked | Legacy receipt compatibility, missing routed checks/gaps, receipt fingerprinting, and local answer binding are tested. The gate checks declared data and is not called by the ChatGPT host. |
 | US-011 adversarial scenarios | Available in private maintenance suite | The synthetic suite checks 24 cross-suite cases and 12 topic challenges with positive/negative contrasts and required/forbidden claims. These are regression cases, not held-out cases; no model response was evaluated. |
 | US-012 actual-response aggregation | Implemented and structurally checked | The private aggregator's 8 tests pass. It preserves independent claim disagreements and reports metrics unavailable when responses/grades are absent. |
-| US-013 fresh-context behavior comparison | Deferred; plan prepared | No supported runner for fresh target-plugin conversations or independent grading was available. There are no baseline/candidate scores. A concrete run plan is stored in private `fm-maintenance`; the live run is a separate follow-up, not a prerequisite for ending this implementation session. |
+| US-013 fresh-context behavior comparison | Not executed; runtime unavailable | No supported runner for fresh target-plugin conversations or independent grading was available. There are no baseline/candidate scores. This is an accepted limitation, not a user assignment or recurring follow-up. |
 | US-014 integration and release preparation | Partial | Manifest, compilation, C27 checklist and targeted tests pass. The private all-suites run is 31/36 locally. No remote CI or pull request was run; the commits were left local as requested. |
 
 ## Executed checks
@@ -72,7 +74,7 @@ Remote CI/PR results are not yet available for this candidate.
 
 ## Behavioral and release limits
 
-The current private ledger contains 36 records, all `not_executed`; model metadata, transcript evidence, independent grades, precision/recall, critical-error counts and before/after comparisons are unavailable. No held-out evaluation was executed. The private live-test plan records exact baseline/candidate builds, the 36-case run, fresh-chat controls, blind grading, evidence capture, and release thresholds. The plan closes the implementation-session deliverable only; it does not establish measured improvement. Do not describe deterministic routing or structural test results as measured advice improvement.
+The current private ledger contains 36 records, all `not_executed`; model metadata, transcript evidence, independent grades, precision/recall, critical-error counts and before/after comparisons are unavailable. No held-out evaluation was executed. The historical private live-test plan does not establish measured improvement and is not an active user task. Do not describe deterministic routing or structural test results as measured advice improvement. Reopen behavioral evaluation only under the conditions in the current private maintenance status record.
 
 The plugin still has no host-validated pre-output release gate. The optional receipt checker cannot discover omitted issues or authenticate model-declared analysis. The Sweden source-package gap and any other national-source limitations remain scoped gaps; no country-source package was changed or promoted.
 
