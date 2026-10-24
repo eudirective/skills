@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out public base commit without persisting credentials
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           ref: ${{ github.event.pull_request.base.sha }}
           path: public-source
@@ -86,7 +86,7 @@ jobs:
 
       - name: Check out pinned private authorization code
         if: steps.scope.outputs.requires_auth == 'true'
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: eudirective/internal
           ref: ${{ vars.FM_MAINTENANCE_GATE_REF }}
@@ -96,7 +96,7 @@ jobs:
 
       - name: Check out the current private approval registry
         if: steps.scope.outputs.requires_auth == 'true'
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: eudirective/internal
           ref: main
