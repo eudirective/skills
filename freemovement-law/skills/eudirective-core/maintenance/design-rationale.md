@@ -118,3 +118,51 @@ The historical C8/C7 text above describes the **earlier** metadata-only v0.22.0�
 ## v0.36.0 - C23 read-only applicant guidance
 
 The original blanket exclusion of real-person EU-family visa questions caused a model to answer a real case as an unverified journalistic summary while declining the skill's controlled logic. Preserve a distinction between (a) **in-chat, user-authorised, read-only advisory reasoning**, which may analyse real first-hand accounts and guide complaints, and (b) the **Python-controlled C6/C7/C13/C17/C21 pipelines**, which still cannot ingest arbitrary private documents or send. No private host/security claim is made for the chat lane. Scope comparison of ordinary Schengen lists versus mobile-EU-family rules is now a mandatory reasoning step, with a strict non-identifying feature-only comparator as a narrow verification aid. Independent C15f legal-semantic grading remains a prerequisite for stronger assurances, not a reason to decline a practical sourced answer.
+
+## Archived entry-point status snapshot (core v0.58.3, 2026-10-24)
+
+The following sections were moved out of the normal-use entry point during the core simplification. They are preserved as historical source text from public commit ff28f54a8e0dc2d951106e22600ba027230f51aa; they describe the claims and assumptions recorded in that snapshot, not verified current implementation status. For present behavior, use the current operational references and private canonical maintenance status. Do not treat this archive as a new runtime instruction.
+
+### Purpose
+Own the reusable EU/common-law reasoning architecture and deterministic case-control boundary for the split visa-skills system. Consume typed country-module data; do not duplicate national or applicant-country reasoning inside the core.
+
+Version `0.41.0` preserves the C1–C5f candidate, review and Pareto-ranking boundaries and hardens **C6 synthetic controller integration with C7 trust/input/complete-report gates**. It uses the externally maintained source corpus bundled with the package as a fixed snapshot, while retaining exact historical bytes for controlled replay. All unresolved legal merits remain `not_determined`, C5d hypotheses screened by C11/C12/C13 remain `cannot_assess`, and any exact date is expressly a mechanical candidate. C6-controlled private-data mode and outbound actions remain disabled; user-facing read-only guidance is separate. See `references/c6-controlled-integration.md` and `references/c7-hardening.md`.
+
+### Deterministic controls implemented or prototyped through v0.31.0
+
+The retained stages are C1 source catalogue/activation; C2 typed elements and invariants; frozen C3 modules/controller; C4 synthetic-only lifecycle and privacy controls; C5a–f topology, regime, evidence, candidate and reviewed-strategy analysis; C6 deterministic limited release; C7 trusted-fixture and exhaustive issue-index checks; C8 Deldwyn; C11 historical screening; C12 rule-evidence resolution, C13 documentary statement reconciliation C14 review-only multilingual retrieval; and C15 verified-anchor model-led fictional case review. The core does not contain authenticated live-case inputs or a complete national law corpus. See the corresponding progressive `references/` guides and `maintenance/script-contracts.md` when modifying the package.
+
+For detailed source, element, controller and engine versions use their individual schemas, references and code. Never infer legal soundness, host isolation or source currentness from passing deterministic tests.
+
+Not yet implemented: periodic automated remote refresh for every mutable EU/common source, full Member-State/applicant-country source packs under the new inventory, host-enforced private-data isolation, trusted approval identity, guaranteed secure deletion across host files/caches/logs/backups, non-bypassable outbound tooling, **controller-verified** applicant legal merits release (C23 read-only guidance is available but is not controller-certified), actual feedback/network delivery, publication adapters, and production inter-skill deployment. C4 minimisation reduces disclosure surface but does not establish anonymity or GDPR compliance.
+
+### Legal-engine implementation boundary
+
+C5a, C5b, C5c, C5d, C5e and C5f are now implemented as separable stages: topology/routing, legal-regime applicability, hierarchy/Charter/general-principle review, evidence/freedom-of-proof review, deadline calculation candidates, authority/escalation-route review, and attack-angle review-hypothesis synthesis. They preserve uncertainty and do not create final legal conclusions.
+
+C5e remains strictly downstream: the analysis handoff promotes only explicitly reviewed, bound support; the suggestion engine creates structurally eligible but unranked candidates and never changes upstream analysis.
+
+C6 composes C5a–C5f synthetic-only through the original controller. C7 hardens the local entrypoint, source-metadata pins, full issue index and interrupted-release checks. Independent external legal, distribution and host/runtime review remains outstanding.
+
+Derive inputs from the element catalogue, interaction rules, source records, and contract interfaces. Do not add a whole-case expected answer as the engine specification, and do not allow downstream suggestions to mutate legal analysis.
+
+Read `references/legal-engine-roadmap.md`, `references/c5a-topology-applicability.md`, `references/c5b-hierarchy-principles.md`, `references/c5c-evidence-deadlines-authority.md`, `references/c5d-attack-angle-synthesis.md`, and `references/c5e-suggestion-generation.md`, and `references/c5f-ranking-sequencing.md` before modifying these stages.
+
+### Risk and distribution posture
+
+Keep rollout narrow.
+
+- Normal v0.42.1 use includes read-only real-case C23/C24 guidance with current-source checks against official publishers when available, separately C6 synthetic controlled integration, C7 compatibility verification, and public-source development. Controlled script lanes remain bounded to synthetic/public data; the bundled source corpus is externally maintained and mirrored into plugin packages.
+- Private-case processing remains disabled in the deterministic controller foundation; read-only in-chat case guidance is separately supported under C23.
+- Do not use unverified host behavior as proof that personal data cannot bypass Python-controlled paths.
+- Do not treat `begin-delivery` as an external send. The controller only records authorization/delivery state; no network write/send/publish adapter is enabled under this version.
+- Do not imply GDPR compliance, anonymity, legal correctness, or production readiness from passing local tests.
+- Treat country-maintenance scripts as release-time tooling; never execute code embedded in a country export.
+
+### Assumptions and Unknowns
+
+- **Confirmed assumptions**: the portable bundle can validate its JSON contracts, source inventory, element model, and local controller state where Python and bundled dependencies are available.
+- **Platform-dependent assumptions**: automatic module discovery, exact-version module loading, protected storage, output-channel enforcement, connector restrictions, and sensitive-data isolation vary by runtime.
+- **Things to verify in real use**: future live-refresh transport and expiry policy for mutable EU/common sources, engine-specific source expansion where C2/C5 exposes a real gap, production module discovery, trusted approval identity, host-enforced outbound restrictions, anonymisation effectiveness, source-pack transport, and applicant-facing legal quality.
+
+Earlier C3-C6 historical deterministic acceptance records are retained in modifier-only `maintenance/historical-stage-acceptance.md`; normal execution uses the steps and safety boundaries above.

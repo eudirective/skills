@@ -1,0 +1,976 @@
+{
+  "schema_version": "1.0.0",
+  "purpose": "Development-only requirement migration/equivalence record for the eudirective-core entry-point simplification. It is not runtime guidance.",
+  "source": {
+    "repository": "eudirective/skills",
+    "commit": "ff28f54a8e0dc2d951106e22600ba027230f51aa",
+    "plugin_version": "0.59.3",
+    "skill_version": "0.58.3",
+    "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+    "line_count": 563,
+    "character_count": 81544,
+    "byte_count": 81662,
+    "sha256": "182042c8bc0558514406365c0afafb605bb30d8a91928709dcb85e828b766ad7"
+  },
+  "categories": [
+    "always_active",
+    "applicant_consultation",
+    "conditional_legal_workflow",
+    "synthetic_execution",
+    "development",
+    "historical_explanatory",
+    "redundant",
+    "obsolete"
+  ],
+  "entries": [
+    {
+      "requirement_id": "core.00_activation_and_skill_scope",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 1,
+        "end_line": 7,
+        "heading": "YAML activation description and title"
+      },
+      "category": "always_active",
+      "requirement": "Limit activation to read-only EU free-movement/EU-family visa guidance, explicit source research, and requested synthetic-engine maintenance. Exclude unrelated immigration, real-case script intake, external submissions, unsupported legal determinations and privacy guarantees; keep implicit activation narrow.",
+      "activation": "all skill routing decisions",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md"
+      ],
+      "disposition": "retain_and_condense"
+    },
+    {
+      "requirement_id": "core.01_first_response_disclaimer_and_use_check",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 8,
+        "end_line": 22,
+        "heading": "First response: disclaimer and use check"
+      },
+      "category": "always_active",
+      "requirement": "Preserve the exact disclaimer, clear non-personal-use triggers, no license notice for personal or unspecified use, once-per-chat timing, ambiguity rule, and no external contact or licensing-status claim.",
+      "activation": "first visible response in a conversation invoking any freemovement-law skill",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md"
+      ],
+      "disposition": "retain_and_condense"
+    },
+    {
+      "requirement_id": "core.02_c27_proceeding_disclosure_and_response_coverage_reconci",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 23,
+        "end_line": 28,
+        "heading": "C27 proceeding, disclosure, and response-coverage reconciliation (read-only)"
+      },
+      "category": "applicant_consultation",
+      "requirement": "Reconcile each proceeding, stage, communication, disclosed fact, document, authority position, remedy, deadline, and follow-up; link issues/checks/evidence/dispositions; keep real facts out of synthetic scripts.",
+      "activation": "every substantive applicant matter",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "skills/eudirective-core/references/state-engine/c27-case-state.md",
+        "skills/eudirective-core/references/state-engine/check-registry.json",
+        "skills/eudirective-core/references/consultation-issue-model.md",
+        "skills/eudirective-core/references/consultation-answer-contract.md",
+        "skills/eudirective-core/references/consultation-routing.md"
+      ],
+      "disposition": "retain_and_condense"
+    },
+    {
+      "requirement_id": "core.03_first_invocation_github_version_parity",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 29,
+        "end_line": 32,
+        "heading": "First-invocation GitHub version parity"
+      },
+      "category": "always_active",
+      "requirement": "Perform one read-only package/source-data version check before substantive work; report verified differences or failure truthfully, continue, and never imply installation or legal-source validation.",
+      "activation": "first freemovement-law invocation per conversation",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "skills/eudirective-core/references/session-version-check.md"
+      ],
+      "disposition": "retain_and_condense"
+    },
+    {
+      "requirement_id": "core.04_version_and_status",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 33,
+        "end_line": 42,
+        "heading": "Version and Status"
+      },
+      "category": "always_active",
+      "requirement": "Preserve version disclosure, applicant-guidance scope, frozen contract/versioning boundaries; update plugin/core/manifest consistently.",
+      "activation": "every visible answer/report and package modification",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "skills/eudirective-core/references/session-version-manifest.json",
+        "skills/eudirective-core/references/inter-skill-contract.md",
+        "skills/eudirective-core/references/element-model.md",
+        "skills/eudirective-core/references/controller-protocol.md"
+      ],
+      "disposition": "retain_and_condense"
+    },
+    {
+      "requirement_id": "core.05_version_disclosure",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 43,
+        "end_line": 50,
+        "heading": "Version Disclosure"
+      },
+      "category": "always_active",
+      "requirement": "Display the current core skill version near the top of every answer/report; first response places it after required notices.",
+      "activation": "every visible answer/report",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md"
+      ],
+      "disposition": "retain_and_condense"
+    },
+    {
+      "requirement_id": "core.06_ordinary_consultation_routing_model_led",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 51,
+        "end_line": 70,
+        "heading": "Ordinary-consultation routing (model-led)"
+      },
+      "category": "applicant_consultation",
+      "requirement": "Classify request and discover issues before C27 selection; use existing route/registry/C3 semantics; keep predicates distinct from trigger signals; require full board and truthful operation evidence.",
+      "activation": "every explicit invocation and substantive applicant consultation",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "skills/eudirective-core/references/consultation-quality-workflow.md",
+        "skills/eudirective-core/references/consultation-routing.md",
+        "skills/eudirective-core/references/consultation-issue-routing.json",
+        "skills/eudirective-core/references/consultation-issue-model.md",
+        "skills/eudirective-core/references/consultation-answer-contract.md",
+        "skills/eudirective-core/references/consultation-dashboard-examples.md",
+        "skills/eudirective-core/references/consultation-route-gate.md",
+        "skills/eudirective-core/references/consultation-dashboard-runtime-assessment.md"
+      ],
+      "disposition": "retain_and_route"
+    },
+    {
+      "requirement_id": "core.07_source_use_and_currentness",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 71,
+        "end_line": 78,
+        "heading": "Source use and currentness"
+      },
+      "category": "applicant_consultation",
+      "requirement": "Use the bundled library as a versioned snapshot; identify official source owners/versions/limits; report bundle membership and discovery provenance with overlap/unknown semantics; do not overbuild acquisition.",
+      "activation": "source-grounded legal guidance and required dashboard",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "skills/eudirective-source-library/SKILL.md",
+        "skills/eudirective-source-library/references/legal-text-edition-policy.md"
+      ],
+      "disposition": "retain_and_condense"
+    },
+    {
+      "requirement_id": "core.08_evidence_gated_source_research",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 79,
+        "end_line": 88,
+        "heading": "Evidence-gated source research"
+      },
+      "category": "conditional_legal_workflow",
+      "requirement": "Use owner-specific quick/case/deep research for current, multiple-source, disputed or incomplete issues; keep qualified urgent answers useful; artifacts are generalized and validators do not prove law.",
+      "activation": "material source question requiring current/multi/disputed research",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "skills/eudirective-core/references/research-control.md",
+        "skills/eudirective-core/references/issue-source-preflight.md"
+      ],
+      "disposition": "retain_and_route"
+    },
+    {
+      "requirement_id": "core.09_c23_read_only_applicant_assistance_and_rule_scope_check",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 89,
+        "end_line": 95,
+        "heading": "C23 read-only applicant assistance and rule-scope checks (2026-10-10)"
+      },
+      "category": "applicant_consultation",
+      "requirement": "Allow model-led, source-grounded read-only analysis of real accounts; distinguish EU-family/ordinary visa scope, ask only decision-changing questions, do not infer local presence or invent national rules.",
+      "activation": "real or fictional EU-family visa, consular-access or remedy account",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "skills/eudirective-core/references/c23-applicant-case-guidance.md"
+      ],
+      "disposition": "retain_and_route"
+    },
+    {
+      "requirement_id": "core.10_c24_fact_to_rule_and_follow_up_correction_2026_10_11",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 96,
+        "end_line": 101,
+        "heading": "C24 fact-to-rule and follow-up correction (2026-10-11)"
+      },
+      "category": "applicant_consultation",
+      "requirement": "Link material facts, predicates, current source/scope, counterarguments/exceptions and remedies; correct only affected earlier conclusions; categorical checker never accepts narratives.",
+      "activation": "same activation as C23; especially follow-up or changed facts",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "skills/eudirective-core/references/c24-fact-rule-revision.md"
+      ],
+      "disposition": "retain_and_route"
+    },
+    {
+      "requirement_id": "core.11_c25_grievance_completeness_authority_position_and_evide",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 102,
+        "end_line": 108,
+        "heading": "C25 grievance completeness, authority position, and evidence acquisition (2026-10-11)"
+      },
+      "category": "applicant_consultation",
+      "requirement": "Track distinct materially reported grievances and authority-ground provenance; distinguish GDPR personal-data access, file access, complaint, and urgent preservation; do not overpromise.",
+      "activation": "substantive applicant dispute involving authority conduct, records, evidence or remedies",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "skills/eudirective-core/references/c25-applicant-strategy.md",
+        "skills/eudirective-core/references/c25-evidence-acquisition.md"
+      ],
+      "disposition": "retain_and_route"
+    },
+    {
+      "requirement_id": "core.12_c26_applicant_strategy_accuracy_repair_2026_10_11",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 109,
+        "end_line": 111,
+        "heading": "C26 applicant-strategy accuracy repair (2026-10-11)"
+      },
+      "category": "redundant",
+      "requirement": "Consolidate event-level ground attribution, evidence plans and follow-up correction into C25 guidance; keep the optional categorical/schema checker fictional and non-certifying.",
+      "activation": "strategy correction or explicitly requested synthetic C25 check",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "skills/eudirective-core/references/c25-applicant-strategy.md",
+        "skills/eudirective-core/references/c25-evidence-acquisition.md",
+        "private:eudirective/internal/plugins/fm-maintenance"
+      ],
+      "disposition": "consolidate"
+    },
+    {
+      "requirement_id": "core.13_c18_targeted_legal_source_integrity_2026_10_10",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 112,
+        "end_line": 115,
+        "heading": "C18 targeted legal-source integrity (2026-10-10)"
+      },
+      "category": "synthetic_execution",
+      "requirement": "Keep legacy fixture integrity checks distinct from active source library, legal meaning, source currentness, and real-case authorization.",
+      "activation": "explicit C18 compatibility/source-integrity maintenance",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "skills/eudirective-core/references/c18-source-integrity.md",
+        "skills/eudirective-core/references/source-substrate.md"
+      ],
+      "disposition": "retain_and_route"
+    },
+    {
+      "requirement_id": "core.14_c21_deterministic_privacy_and_anonymisation_rehearsal_2",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 116,
+        "end_line": 118,
+        "heading": "C21 deterministic privacy and anonymisation rehearsal (2026-10-10)"
+      },
+      "category": "synthetic_execution",
+      "requirement": "Restrict preview/replay to enrolled fictional fixtures; output is non-send, human-review-only, and cannot establish anonymity, compliance, or authorization.",
+      "activation": "explicit C21 synthetic privacy workflow",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "skills/eudirective-core/references/c21-privacy-and-anonymisation.md",
+        "skills/eudirective-core/references/trust-privacy-lifecycle.md",
+        "private:eudirective/internal/plugins/fm-maintenance"
+      ],
+      "disposition": "retain_and_route"
+    },
+    {
+      "requirement_id": "core.15_c21_synthetic_hardening_release_2026_10_10",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 119,
+        "end_line": 120,
+        "heading": "C21 synthetic hardening release (2026-10-10)"
+      },
+      "category": "redundant",
+      "requirement": "Retain fixture-only/no-telemetry/no-anonymity limits through the authoritative C21 reference; remove dated duplicate implementation detail from runtime instructions.",
+      "activation": "C21 maintenance or fictional rehearsal",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "skills/eudirective-core/references/c21-privacy-and-anonymisation.md",
+        "private:eudirective/internal/plugins/fm-maintenance"
+      ],
+      "disposition": "consolidate"
+    },
+    {
+      "requirement_id": "core.16_c22a_portable_cli_and_adapter_neutral_execution_boundar",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 121,
+        "end_line": 123,
+        "heading": "C22a portable CLI and adapter-neutral execution boundary (2026-10-10)"
+      },
+      "category": "synthetic_execution",
+      "requirement": "Keep the optional portable synthetic subset standalone and adapter-neutral; do not claim MCP/desktop/ChatGPT behavior or allow private data or outbound actions.",
+      "activation": "explicit C22a tool or interface request",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "skills/eudirective-core/references/c22-portable-interface.md",
+        "skills/eudirective-core/references/contracts/c22-transport-request.schema.json",
+        "private:eudirective/internal/plugins/fm-maintenance"
+      ],
+      "disposition": "retain_and_route"
+    },
+    {
+      "requirement_id": "core.17_purpose",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 124,
+        "end_line": 128,
+        "heading": "Purpose"
+      },
+      "category": "historical_explanatory",
+      "requirement": "Preserve the reusable EU/core ownership and synthetic/controller boundary; archive stale version-specific status as historical, not current guidance.",
+      "activation": "general purpose is always active; historical details only during maintenance",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "skills/eudirective-core/references/architecture-boundaries.md",
+        "skills/eudirective-core/references/c6-controlled-integration.md",
+        "skills/eudirective-core/references/c7-hardening.md",
+        "skills/eudirective-core/maintenance/design-rationale.md"
+      ],
+      "disposition": "split_runtime_and_archival_content"
+    },
+    {
+      "requirement_id": "core.18_c13_documentary_statement_review_synthetic_only",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 129,
+        "end_line": 135,
+        "heading": "C13 documentary statement review (synthetic-only)"
+      },
+      "category": "synthetic_execution",
+      "requirement": "Keep exact enrolled fictional documents only; extraction and quote anchors do not prove authenticity, facts, legal violation, or semantic support.",
+      "activation": "explicit C13 synthetic document review",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "skills/eudirective-core/references/c13-documentary-evidence.md",
+        "private:eudirective/internal/plugins/fm-maintenance"
+      ],
+      "disposition": "retain_and_route"
+    },
+    {
+      "requirement_id": "core.19_c14_interpretation_and_open_ended_evidence_review_synth",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 136,
+        "end_line": 142,
+        "heading": "C14 interpretation and open-ended evidence review (synthetic-only)"
+      },
+      "category": "synthetic_execution",
+      "requirement": "Keep lexical/topic matches and quote proposals review-only; preserve attribution, negation and missing topics; no semantic/legal certification or private inputs.",
+      "activation": "explicit C14 synthetic evidence workflow",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "skills/eudirective-core/references/c14-interpretation-and-review.md",
+        "private:eudirective/internal/plugins/fm-maintenance"
+      ],
+      "disposition": "retain_and_route"
+    },
+    {
+      "requirement_id": "core.20_c15_model_led_complete_case_review_fiction_only",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 143,
+        "end_line": 153,
+        "heading": "C15 model-led complete-case review (fiction only)"
+      },
+      "category": "synthetic_execution",
+      "requirement": "Use only pinned fictional dossier; model hypotheses and deterministic anchors are separate; no real files, legal merits certification, national-law substitution, or C7/C3 changes.",
+      "activation": "explicit C15 pilot or maintenance",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "skills/eudirective-core/references/c15/model-led-pilot.md",
+        "private:eudirective/internal/plugins/fm-maintenance"
+      ],
+      "disposition": "retain_and_route"
+    },
+    {
+      "requirement_id": "core.21_c16_country_and_eu_rule_coverage_fiction_only",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 154,
+        "end_line": 157,
+        "heading": "C16 country and EU rule coverage (fiction only)"
+      },
+      "category": "synthetic_execution",
+      "requirement": "Use source-bound coverage and country-owned national law; an untriggered synthetic topic is not a legal finding; legal-violation status stays undetermined.",
+      "activation": "explicit C16 coverage review",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "skills/eudirective-core/references/c16/coverage-map.md",
+        "skills/eudirective-core/references/c16/eu-principles-review.md",
+        "private:eudirective/internal/plugins/fm-maintenance"
+      ],
+      "disposition": "retain_and_route"
+    },
+    {
+      "requirement_id": "core.22_c17b_c_d_remedies_and_correspondence_fiction_only",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 158,
+        "end_line": 160,
+        "heading": "C17b/c/d remedies and correspondence (fiction only)"
+      },
+      "category": "synthetic_execution",
+      "requirement": "Use enrolled, source/passage-bound fictional records; output is a non-send remedy/evidence candidate, not a violation, deadline calculation, legal advice or authorization.",
+      "activation": "explicit C17 synthetic workflow",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "skills/eudirective-core/references/c17-applicant-review.md",
+        "skills/eudirective-core/references/c17/catalog-pins.json",
+        "private:eudirective/internal/plugins/fm-maintenance"
+      ],
+      "disposition": "retain_and_route"
+    },
+    {
+      "requirement_id": "core.23_architecture_boundary",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 161,
+        "end_line": 169,
+        "heading": "Architecture boundary"
+      },
+      "category": "always_active",
+      "requirement": "Preserve core/EU, Member-State, applicant-country and private-case ownership; no country module calls another; country exports are validated data, not instructions.",
+      "activation": "all source/module use and maintenance",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "skills/eudirective-core/references/architecture-boundaries.md",
+        "skills/eudirective-core/references/inter-skill-contract.md"
+      ],
+      "disposition": "retain_and_condense"
+    },
+    {
+      "requirement_id": "core.24_development_order",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 170,
+        "end_line": 180,
+        "heading": "Development order"
+      },
+      "category": "development",
+      "requirement": "Preserve source -> element/invariant -> contract -> engine -> module -> verified runtime-gate order; no narrative-case exceptions or premature privacy/outbound expansion.",
+      "activation": "plugin/core development only",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "skills/eudirective-core/references/source-substrate.md",
+        "skills/eudirective-core/references/element-model.md",
+        "skills/eudirective-core/references/inter-skill-contract.md",
+        "skills/eudirective-core/references/trust-privacy-lifecycle.md"
+      ],
+      "disposition": "retain_and_condense"
+    },
+    {
+      "requirement_id": "core.25_1_maintain_the_eu_common_source_substrate",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 181,
+        "end_line": 205,
+        "heading": "1. Maintain the EU/common source substrate"
+      },
+      "category": "development",
+      "requirement": "Keep C1 source ownership, exact-text limits, fixture-vs-current-source distinction, official publisher review, and optional rather than mandatory acquisition pipeline.",
+      "activation": "source-pack development or source freshness question",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "skills/eudirective-core/references/source-substrate.md",
+        "skills/eudirective-core/references/source-pack/live-verification-2026-10-06.md",
+        "skills/eudirective-core/references/source-pack/source-gap-register.md",
+        "skills/eudirective-source-library/SKILL.md"
+      ],
+      "disposition": "retain_and_route"
+    },
+    {
+      "requirement_id": "core.26_c8_source_activation_trust_boundary",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 206,
+        "end_line": 208,
+        "heading": "C8 Source-activation trust boundary"
+      },
+      "category": "development",
+      "requirement": "Keep source-library package snapshot distinct from live official-source checks; preserve C8 source-specific activation limits.",
+      "activation": "C8 source activation or maintenance",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "skills/eudirective-core/references/c8-deldwyn-integration.md",
+        "skills/eudirective-core/references/source-substrate.md"
+      ],
+      "disposition": "retain_and_route"
+    },
+    {
+      "requirement_id": "core.27_2_maintain_the_element_first_model",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 209,
+        "end_line": 232,
+        "heading": "2. Maintain the element-first model"
+      },
+      "category": "development",
+      "requirement": "Use typed elements/interactions/invariants and structural/adversarial fixtures; generated or narrative cases do not become legal-answer oracles.",
+      "activation": "element model maintenance",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "skills/eudirective-core/references/element-model.md"
+      ],
+      "disposition": "retain_and_route"
+    },
+    {
+      "requirement_id": "core.28_3_validate_structured_contracts_deterministically",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 233,
+        "end_line": 251,
+        "heading": "3. Validate structured contracts deterministically"
+      },
+      "category": "development",
+      "requirement": "Preserve strict JSON structure/unknown-key limits and C3 family/jurisdiction/role/destination/legal-layer conformance; schemas do not prove law/privacy.",
+      "activation": "contract or module producer maintenance",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "skills/eudirective-core/references/inter-skill-contract.md",
+        "skills/eudirective-core/references/conformance-kit.md",
+        "skills/eudirective-core/references/conformance/module-conformance-profile-0.2.0.json"
+      ],
+      "disposition": "retain_and_route"
+    },
+    {
+      "requirement_id": "core.29_4_use_the_script_owned_case_controller",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 252,
+        "end_line": 268,
+        "heading": "4. Use the script-owned case controller"
+      },
+      "category": "synthetic_execution",
+      "requirement": "Keep controller state changes revision-bound and contract-validated; store digests/identifiers where possible; never edit state manually or equate release with legal correctness.",
+      "activation": "explicit synthetic controller workflow",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "skills/eudirective-core/references/controller-protocol.md",
+        "skills/eudirective-core/references/c6-controlled-integration.md"
+      ],
+      "disposition": "retain_and_route"
+    },
+    {
+      "requirement_id": "core.30_5_apply_c4_trust_privacy_lifecycle_controls",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 269,
+        "end_line": 297,
+        "heading": "5. Apply C4 trust/privacy/lifecycle controls"
+      },
+      "category": "synthetic_execution",
+      "requirement": "Keep views purpose/destination/action-bound; minimisation is not anonymity; private intake/outbound remains disabled; no blind retries or automatic restore.",
+      "activation": "explicit C4 synthetic/public-data workflow or proposed capability change",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "skills/eudirective-core/references/trust-privacy-lifecycle.md",
+        "skills/eudirective-core/references/c21-privacy-and-anonymisation.md"
+      ],
+      "disposition": "retain_and_route"
+    },
+    {
+      "requirement_id": "core.31_6_run_c5a_topology_and_applicability_candidates",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 298,
+        "end_line": 320,
+        "heading": "6. Run C5a topology and applicability candidates"
+      },
+      "category": "conditional_legal_workflow",
+      "requirement": "Preserve distinct actor/jurisdiction roles, exact input bindings, candidate-only applicability, no geographic returnee inference, and downstream C5b review.",
+      "activation": "cross-border topology/applicability issue or C5a engine maintenance",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "skills/eudirective-core/references/c5a-topology-applicability.md"
+      ],
+      "disposition": "retain_and_route"
+    },
+    {
+      "requirement_id": "core.32_7_run_c5b_hierarchy_charter_and_principle_candidates",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 321,
+        "end_line": 339,
+        "heading": "7. Run C5b hierarchy, Charter and principle candidates"
+      },
+      "category": "conditional_legal_workflow",
+      "requirement": "Preserve unresolved lex specialis and legal hierarchy, Charter scope gating, source force distinctions, and no final conflict/disapplication resolution.",
+      "activation": "hierarchy, Charter, principle, or national-law conflict issue",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "skills/eudirective-core/references/c5b-hierarchy-principles.md"
+      ],
+      "disposition": "retain_and_route"
+    },
+    {
+      "requirement_id": "core.33_8_run_c5c_evidence_deadline_and_authority_route_candida",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 340,
+        "end_line": 358,
+        "heading": "8. Run C5c evidence, deadline and authority/route candidates"
+      },
+      "category": "conditional_legal_workflow",
+      "requirement": "Keep proof claims, typed/source-bound deadline arithmetic, authority competence/powers and unranked routes distinct; no inferred powers or final resolution.",
+      "activation": "proof, deadline, competent-authority or remedy-route issue",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "skills/eudirective-core/references/c5c-evidence-deadlines-authority.md"
+      ],
+      "disposition": "retain_and_route"
+    },
+    {
+      "requirement_id": "core.34_9_run_c5d_attack_angle_synthesis",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 359,
+        "end_line": 374,
+        "heading": "9. Run C5d attack-angle synthesis"
+      },
+      "category": "conditional_legal_workflow",
+      "requirement": "Preserve separate mandatory model-led consultation attack screen and synthetic C5d; require adverse factual predicate and upstream basis; candidate is not a violation.",
+      "activation": "attack-angle analysis or C5d engine maintenance",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "skills/eudirective-core/references/consultation-quality-workflow.md",
+        "skills/eudirective-core/references/consultation-routing.md",
+        "skills/eudirective-core/references/c5d-attack-angle-synthesis.md"
+      ],
+      "disposition": "retain_and_route"
+    },
+    {
+      "requirement_id": "core.35_10_run_c5e_analysis_handoff_and_suggestion_generation",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 375,
+        "end_line": 397,
+        "heading": "10. Run C5e analysis handoff and suggestion generation"
+      },
+      "category": "synthetic_execution",
+      "requirement": "Keep explicit digest-bound review/handoff barrier; no invented support, undisclosed-duty conflicts, unsafe inaction, ranking or legal recommendation.",
+      "activation": "explicit C5e synthetic candidate workflow",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "skills/eudirective-core/references/c5e-suggestion-generation.md",
+        "skills/eudirective-core/references/36_stratagems_generalized.md",
+        "skills/eudirective-core/references/stratagems/adapted-stratagem-catalog.json",
+        "skills/eudirective-core/references/stratagems/original-stratagem-catalog.json"
+      ],
+      "disposition": "retain_and_route"
+    },
+    {
+      "requirement_id": "core.36_11_rank_and_conditionally_sequence_c5f_reviewed_options",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 398,
+        "end_line": 409,
+        "heading": "11. Rank and conditionally sequence C5f reviewed options"
+      },
+      "category": "synthetic_execution",
+      "requirement": "Keep exact digest-bound review of candidates and baselines, Pareto tradeoffs, conditional sequences, no execution authority, and no upstream legal-status change.",
+      "activation": "explicit C5f synthetic review",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "skills/eudirective-core/references/c5f-ranking-sequencing.md"
+      ],
+      "disposition": "retain_and_route"
+    },
+    {
+      "requirement_id": "core.37_12_run_c6_controlled_synthetic_integration",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 410,
+        "end_line": 412,
+        "heading": "12. Run C6 controlled synthetic integration"
+      },
+      "category": "synthetic_execution",
+      "requirement": "Use existing controller for enrolled synthetic integrations and exact replay; controlled output remains limited/candidate, not real-case processing or legal merits.",
+      "activation": "explicit C6 synthetic workflow",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "skills/eudirective-core/references/c6-controlled-integration.md",
+        "skills/eudirective-core/references/controller-protocol.md"
+      ],
+      "disposition": "retain_and_route"
+    },
+    {
+      "requirement_id": "core.38_c7_enforce_trusted_synthetic_fixtures_and_complete_issu",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 413,
+        "end_line": 422,
+        "heading": "C7. Enforce trusted synthetic fixtures and complete issue-index binding"
+      },
+      "category": "synthetic_execution",
+      "requirement": "Enforce exact code-enrolled fixture/ID pins, as-of source metadata before writes, complete bound issue index, fail-closed input checks, and no host/currentness/legal claim.",
+      "activation": "C6/C7 synthetic release or fixture maintenance",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "skills/eudirective-core/references/c7-hardening.md",
+        "skills/eudirective-core/references/c6-controlled-integration.md",
+        "skills/eudirective-core/references/controller-protocol.md"
+      ],
+      "disposition": "retain_and_route"
+    },
+    {
+      "requirement_id": "core.39_c11a_b_screen_attack_angles_with_structured_fact_values",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 423,
+        "end_line": 427,
+        "heading": "C11a/b. Screen attack angles with structured fact values"
+      },
+      "category": "synthetic_execution",
+      "requirement": "Use only code-pinned structured synthetic facts and source profiles; review status is not legal support; preserve missing, contrary and unsupported predicates.",
+      "activation": "explicit C11 synthetic screening or maintenance",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "skills/eudirective-core/references/c11-value-sensitive-review.md",
+        "private:eudirective/internal/plugins/fm-maintenance"
+      ],
+      "disposition": "retain_and_route"
+    },
+    {
+      "requirement_id": "core.40_13_keep_legal_reasoning_candidate_based",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 428,
+        "end_line": 443,
+        "heading": "13. Keep legal reasoning candidate-based"
+      },
+      "category": "applicant_consultation",
+      "requirement": "Separate fact, assertion, inference, calculation, legal interpretation, contrary evidence and unresolved gap; no hashes/counts/schemas/confidence labels as legal proof.",
+      "activation": "all substantive legal analysis",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md"
+      ],
+      "disposition": "retain_and_condense"
+    },
+    {
+      "requirement_id": "core.41_14_preserve_truthful_completeness",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 444,
+        "end_line": 451,
+        "heading": "14. Preserve truthful completeness"
+      },
+      "category": "applicant_consultation",
+      "requirement": "Retain distinct status/reason/scope and module freshness; never convert missing, stale, unsupported or untested work into no issue; do not overclaim comprehensive.",
+      "activation": "all substantive analysis and reports",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "skills/eudirective-core/references/consultation-answer-contract.md",
+        "skills/eudirective-core/references/state-engine/c27-case-state.md"
+      ],
+      "disposition": "retain_and_condense"
+    },
+    {
+      "requirement_id": "core.42_15_validate_controlled_analysis_before_release",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 452,
+        "end_line": 459,
+        "heading": "15. Validate controlled analysis before release"
+      },
+      "category": "synthetic_execution",
+      "requirement": "Keep exact revision/module bindings and invalidation/release gates; use exact validated controller output and do not append uncontrolled prose as validated.",
+      "activation": "explicit controlled synthetic release",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "skills/eudirective-core/references/c6-controlled-integration.md",
+        "skills/eudirective-core/references/controller-protocol.md"
+      ],
+      "disposition": "retain_and_route"
+    },
+    {
+      "requirement_id": "core.43_deterministic_controls_implemented_or_prototyped_throug",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 460,
+        "end_line": 467,
+        "heading": "Deterministic controls implemented or prototyped through v0.31.0"
+      },
+      "category": "historical_explanatory",
+      "requirement": "Preserve stage history as a dated maintenance snapshot; remove old version and implementation inventory from ordinary consultation entry point.",
+      "activation": "package maintenance only",
+      "destinations": [
+        "skills/eudirective-core/maintenance/historical-stage-acceptance.md",
+        "skills/eudirective-core/maintenance/design-rationale.md"
+      ],
+      "disposition": "retain_archival_as_historical"
+    },
+    {
+      "requirement_id": "core.44_legal_engine_implementation_boundary",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 468,
+        "end_line": 479,
+        "heading": "Legal-engine implementation boundary"
+      },
+      "category": "development",
+      "requirement": "Preserve C5 stage candidate semantics, one-way handoffs, downstream-only suggestions, and requirement to read stage references before modifying/relying on engines.",
+      "activation": "C5 engine development or explicit review",
+      "destinations": [
+        "skills/eudirective-core/references/legal-engine-roadmap.md",
+        "skills/eudirective-core/references/c5a-topology-applicability.md",
+        "skills/eudirective-core/references/c5b-hierarchy-principles.md",
+        "skills/eudirective-core/references/c5c-evidence-deadlines-authority.md",
+        "skills/eudirective-core/references/c5d-attack-angle-synthesis.md",
+        "skills/eudirective-core/references/c5e-suggestion-generation.md",
+        "skills/eudirective-core/references/c5f-ranking-sequencing.md",
+        "skills/eudirective-core/maintenance/script-contracts.md"
+      ],
+      "disposition": "retain_and_route"
+    },
+    {
+      "requirement_id": "core.45_risk_and_distribution_posture",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 480,
+        "end_line": 490,
+        "heading": "Risk and distribution posture"
+      },
+      "category": "always_active",
+      "requirement": "Keep rollout read-only for real accounts; separate synthetic scripts, forbid unapproved sends, and make no claims of GDPR/anonymity/legal correctness/production readiness from tests.",
+      "activation": "all use; detailed stage posture only for maintenance",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "skills/eudirective-core/references/trust-privacy-lifecycle.md",
+        "skills/eudirective-core/references/c7-hardening.md",
+        "skills/eudirective-core/references/c23-applicant-case-guidance.md",
+        "skills/eudirective-core/maintenance/design-rationale.md"
+      ],
+      "disposition": "split_runtime_and_archival_content"
+    },
+    {
+      "requirement_id": "core.46_assumptions_and_unknowns",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 491,
+        "end_line": 498,
+        "heading": "Assumptions and Unknowns"
+      },
+      "category": "historical_explanatory",
+      "requirement": "Keep only current capability limits in runtime; archive the version-specific list and direct future verification questions to the private canonical status record.",
+      "activation": "maintenance only for historical list; state current limits when materially relevant",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "skills/eudirective-core/maintenance/design-rationale.md",
+        "private:eudirective/internal/plugins/fm-maintenance/records/MAINTENANCE_STATUS.json"
+      ],
+      "disposition": "split_runtime_and_archival_content"
+    },
+    {
+      "requirement_id": "core.47_maintenance_only_files",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 499,
+        "end_line": 506,
+        "heading": "Maintenance-only files"
+      },
+      "category": "development",
+      "requirement": "Keep public modifier-only docs unread during normal consultations; read applicable maintenance docs only when modifying/auditing/porting/packaging/evaluating.",
+      "activation": "package maintenance only",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "skills/eudirective-core/maintenance/script-contracts.md",
+        "skills/eudirective-core/maintenance/historical-stage-acceptance.md"
+      ],
+      "disposition": "retain_and_condense"
+    },
+    {
+      "requirement_id": "core.48_development_evaluation_and_regression_material",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 507,
+        "end_line": 510,
+        "heading": "Development evaluation and regression material"
+      },
+      "category": "development",
+      "requirement": "Keep synthetic evaluation prompts, rubrics, scripts and records private; never send real applicant data to them.",
+      "activation": "maintenance/testing only",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "private:eudirective/internal/plugins/fm-maintenance"
+      ],
+      "disposition": "retain_and_condense"
+    },
+    {
+      "requirement_id": "core.49_resources",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 511,
+        "end_line": 558,
+        "heading": "Resources"
+      },
+      "category": "redundant",
+      "requirement": "Remove the exhaustive duplicate inventory; authoritative resources remain distributed at their existing paths and activated from the concise dispatch table.",
+      "activation": "no runtime loading; use filesystem/reference dispatch when task requires a resource",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "skills/eudirective-core/references/consultation-dashboard-examples.md",
+        "skills/eudirective-core/references/consultation-dashboard-runtime-assessment.md",
+        "skills/eudirective-core/references/consultation-route-gate.md",
+        "skills/eudirective-core/references/c5a-topology-applicability.md",
+        "skills/eudirective-core/references/c5b-hierarchy-principles.md",
+        "skills/eudirective-core/references/c5c-evidence-deadlines-authority.md",
+        "skills/eudirective-core/references/c5d-attack-angle-synthesis.md",
+        "skills/eudirective-core/references/c5e-suggestion-generation.md",
+        "skills/eudirective-core/references/c5f-ranking-sequencing.md",
+        "private:eudirective/internal/plugins/fm-maintenance"
+      ],
+      "disposition": "remove_duplicate_inventory"
+    },
+    {
+      "requirement_id": "core.50_c10_c17_synthetic_compatibility_and_coverage",
+      "source_location": {
+        "path": "freemovement-law/skills/eudirective-core/SKILL.md",
+        "start_line": 559,
+        "end_line": 563,
+        "heading": "C10–C17 synthetic compatibility and coverage"
+      },
+      "category": "synthetic_execution",
+      "requirement": "Keep the exact synthetic-only scope, pinned runs, source/sidecar ownership and limits; distinguish those pipelines from the separate C23 advisory lane.",
+      "activation": "explicit C10–C17 synthetic compatibility/coverage workflow",
+      "destinations": [
+        "skills/eudirective-core/SKILL.md",
+        "skills/eudirective-core/references/c10-source-backed-pilot.md",
+        "skills/eudirective-core/references/c11-value-sensitive-review.md",
+        "skills/eudirective-core/references/c12-rule-resolution.md",
+        "skills/eudirective-core/references/c13-documentary-evidence.md",
+        "skills/eudirective-core/references/c14-interpretation-and-review.md",
+        "skills/eudirective-core/references/c15/model-led-pilot.md",
+        "skills/eudirective-core/references/c16/coverage-map.md",
+        "skills/eudirective-core/references/c16/eu-principles-review.md",
+        "skills/eudirective-core/references/c17-applicant-review.md"
+      ],
+      "disposition": "retain_and_route"
+    }
+  ]
+}
