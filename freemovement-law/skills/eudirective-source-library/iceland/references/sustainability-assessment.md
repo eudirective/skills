@@ -1,34 +1,35 @@
 # Iceland source sustainability assessment
 
-Review date: 21 October 2026
-Scope: Official references for EEA/EFTA family residence, entry, procedure, remedies, and related public services.
+Review date: 24 October 2026
+Scope: Official references for EEA/EFTA family residence, entry, procedure, remedies, visa services, and related public services.
 
 ## Current state
 
-The official Alþingi consolidated texts for Acts 80/2016, 37/1993, 2/1993, 140/2012, and 90/2018 were opened and accepted as external references in Lagasafn edition 158a dated 1 October 2026. The user-facing retrieval client previously received 403 responses for several of these URLs, but that does not make the Parliament's official links unusable. No local capture or conversion is needed to use them.
+The source acceptance register records 36 scoped official external references, zero accepted local copies, zero accepted topics, and an incomplete country review. These measures are separate. No pack-local candidate or capture directory remains; the 20 converted review notes and retrieval evidence are preserved through the Monitor local-only research archive. Ten of 21 raw responses were accepted into that archive. The remaining 11 are retained in `/tmp/public-data/temp/iceland/raw` after Monitor automatic review rejected some exports and local screening found credential, page-state, or personal-data markers in others; one large response exceeded the tool-output limit.
 
-Reglugerðasafn is the official regulations publisher. Its Regulation 540/2017 page is accepted as the instrument record and amendment index, but the linked base text is stale after amendments 669/2026, 724/2026, and 725/2026. The three official amendment records are accepted as links to their stated changes. They do not amount to a consolidated current text, and the legal effect of each provision on a particular immigration issue remains to be mapped.
+Current Alþingi consolidated law pages remain acceptable official references despite earlier local-capture 403 responses. The Foreign Nationals Act, Administrative Procedure Act, EEA Act and other accepted laws display Lagasafn edition 158a dated 1 October 2026. Visa Act No. 37/2026 is also accepted as the current consolidated law text; it took effect on 12 May 2026. Its Schengen-law references, implementation and visa-specific remedies still require dependency and issue mapping.
 
-The [source acceptance register](source-acceptance.json) records fourteen accepted external references, zero accepted local copies, zero accepted topics, and an incomplete country review. These measures are deliberately separate.
+The Directorate of Immigration’s official waiting-time page was last updated on 7 October 2026. It shows status and averages by selected application type using applications approved so far in 2026. The page cautions that processing times vary and do not predict a decision on a pending individual application. Source is-13, which reports a 2025 EEA/EFTA family-card average, is historical guidance only.
 
-## Source reliability and remaining review
+## Reliability and remaining review
 
 | Source group | Current assessment | What remains open |
 |---|---|---|
-| Alþingi consolidated laws | Trustworthy official publisher; seven current Icelandic text links accepted at the displayed 158a cutoff. | Map relevant provisions to issues and remedies. Preserve Act 48/2026 provisions effective 1 December 2026 as future-effective until that date. |
-| Regulation 540/2017 | Official register identity and amendment index accepted. The linked base text is not current after the three listed 2026 amendments. | Use amendment links for known changes; seek a later official consolidation only if one appears. No full Gazette chain or API/capture workflow is required. |
-| Ministry of Justice immigration directory | Accepted as an official authority and source-navigation page. | Use its links to identify competent bodies; it is not substantive legal guidance. |
-| Ísland.is service guidance | Official national service portal, but pages may be maintained by different bodies and material threshold conflicts remain. | Offer the relevant immigration and Registers Iceland pages, with the portal context, for human review. Resolve the three-month/six-month registration conflict against statute before operational use. |
-| Court publication and search | Rules No. 3/2022 on online publication of court decisions are accepted as an official reference. They took effect on 1 October 2022, repealed Rules No. 3/2019, and set publication timelines with exceptions and privacy safeguards. | The Courts Act No. 50/2016 and Civil Procedure Act No. 91/1991 are linked, but the judicial route for a particular immigration decision must be mapped. The current Courts portal is located, but the Dómasafn route and immigration-case coverage need human review. Search the Supreme Court, Landsréttur, and district courts separately; report limits. |
-| Immigration Appeals Board | Official appeal guidance and Government-hosted decisions are identified. The decision corpus is redacted and selective. | Verify current deadlines and filing instructions; continue bounded decision discovery and do not describe the portal as exhaustive. |
-| Visas, missions, forms, and local practice | Official starting points exist, but mission routes and operational details change. | Review the competent mission, appointment route, accepted checklist, form, and any outsourcing arrangement for each relevant applicant location. Keep C-visas, D-visas, and EEA/EFTA family residence cards distinct. |
+| Alþingi consolidated law | Official consolidated pages are accepted for their displayed text, date and language. | Map provisions to the legal issues and remedies; keep future commencement and dependencies separate. |
+| Visa Act and visa services | Visa Act No. 37/2026 is the current official consolidated text and identifies the Ministry for Foreign Affairs’ role. The C-visa mission locator is accepted as an operational directory. | Map the Schengen code, implementing measures, appeal body, filing channel and each relevant mission’s current checklist. C visas, residence permits and short-term residence permits remain distinct. |
+| Regulation 540/2017 | Official record and amendment index accepted; base text is stale after amendments 669/2026, 724/2026 and 725/2026. | Use each official amendment for its scope and map its effect; no full Gazette reconstruction has been done. |
+| Ísland.is guidance | Government service pages accepted for their stated information and route-locator scopes. | Registers Iceland guidance says over three months in its body but over six months in its title/form; the entry page also says six months. Resolve this against the accepted statutes before operational use. Verify current instructions when applying. |
+| Processing information | Current official waiting page gives selected-type aggregate status and averages; older EEA/EFTA page is retained for its reported 2025 figure only. | Recheck this volatile page when needed; never treat an aggregate as an individual ETA. |
+| Immigration Appeals Board | Official appeal guidance and government-hosted decisions are identified. The decision corpus is selective and redacted. | Confirm deadline and filing instructions against the law and decision notice; continue bounded case-law discovery. |
+| Courts | Rules No. 3/2022, the Courts Act, Civil Procedure Act and current Courts portal are accepted within listed scopes. | Map judicial review routes and assess the search interface and corpus across Supreme Court, Landsréttur and district courts. |
+| Forms, oversight, privacy and local practice | Official starting points exist, but several are dynamic directories or limited service pages. | Review mission-specific requirements, complaint paths, current forms and regional practice; map source dependencies. |
 
 ## Decisions on workflow
 
-- A clearly identified official consolidated page is accepted as an external reference within its stated date, language, and scope. Gazette fragments are used only to resolve a concrete remaining question such as a later amendment or commencement date.
-- Earlier capture failures remain historical notes about local copying. They are not blockers to reference acceptance.
-- The dated Alþingi archive and the generic capture/conversion workflow are optional ways to retain local copies or support future monitoring. There is no Iceland-specific updater, but implementing one is not required before using the accepted links.
-- The relevant Ísland.is immigration service pages and the Courts search portal are offered for whole-site human review where page ownership, operational guidance, or search coverage remains uncertain. Court publication rules have been found and accepted separately.
+- Official links are accepted only for the scopes recorded in the source-acceptance register. No local copy or topic is accepted by this review.
+- Retrieval failure is a historical note about local copying; it does not disqualify a verified official publisher link.
+- The 20 converted candidate notes are kept in the Monitor local-only research archive and are not presented as legal texts. The 11 unarchived raw responses remain in the standard local temp folder; some exports were rejected by automatic review and local screening found token or state markers in others. They were not sent to the archive.
+- There is no registered Iceland runtime action. Manual source review does not count as a runtime check, case-law search, or completed national source-pack gate.
 - “Source accepted” does not mean “topic covered” or “Iceland review complete.” No topic or country completion is claimed.
 
 ## Evidence links
@@ -36,11 +37,11 @@ The [source acceptance register](source-acceptance.json) records fourteen accept
 - [Foreign Nationals Act No. 80/2016, Alþingi](https://www.althingi.is/lagas/nuna/2016080.html)
 - [Administrative Procedure Act No. 37/1993, Alþingi](https://www.althingi.is/lagas/nuna/1993037.html)
 - [EEA Act No. 2/1993, Alþingi](https://www.althingi.is/lagas/nuna/1993002.html)
+- [Visa Act No. 37/2026, Alþingi](https://www.althingi.is/lagas/nuna/2026037.html)
 - [Information Act No. 140/2012, Alþingi](https://www.althingi.is/lagas/nuna/2012140.html)
 - [Data Protection Act No. 90/2018, Alþingi](https://www.althingi.is/lagas/nuna/2018090.html)
 - [Courts Act No. 50/2016, Alþingi](https://www.althingi.is/lagas/nuna/2016050.html)
 - [Civil Procedure Act No. 91/1991, Alþingi](https://www.althingi.is/lagas/nuna/1991091.html)
 - [Regulation 540/2017 official record and amendments](https://www.reglugerd.is/reglugerdir/eftir-raduneytum/domsmala--og-mannrettindaraduneyti/nr/20605)
-- [Regulation 669/2026](https://www.reglugerd.is/reglugerdir/allar/nr/0669-2026), [724/2026](https://www.reglugerd.is/reglugerdir/eftir-raduneytum/dmr/nr/25017), and [725/2026](https://www.reglugerd.is/reglugerdir/eftir-raduneytum/dmr/nr/25018)
-- [Ministry of Justice immigration overview](https://www.stjornarradid.is/verkefni/utlendingar/)
+- [Directorate of Immigration waiting time](https://island.is/en/o/directorate-of-immigration/waiting-time)
 - [Rules No. 3/2022 on online publication of court decisions](https://gamli.domstolar.is/domstolasyslan/reglur/reglur-um-utgafu-doma-og-urskurda-a-vefsidum-domstola/) and the [Courts portal](https://island.is/s/domstolar)

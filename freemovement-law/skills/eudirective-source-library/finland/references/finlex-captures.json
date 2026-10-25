@@ -12,7 +12,11 @@
       "retrieved_at": "2026-10-18T22:45:36+00:00",
       "raw_html_path": "temp/finland/raw/fi-aliens-act-301-2004.html",
       "rendered_text_path": "temp/finland/rendered/fi-aliens-act-301-2004.txt",
-      "output_path": "source-library/finland/candidates/fi-aliens-act-301-2004-current.md"
+      "output_path": "temp/finland/derived/fi-aliens-act-fi-review-candidate.md",
+      "monitor_archive_path": "candidates/public-data/finland/candidates/fi-aliens-act-301-2004-current.md",
+      "accepted_document_path": "source-library/finland/documents/legislation/fi-aliens-act-301-2004-current-fi.md",
+      "accepted_document_sha256": "104c59221a8a38e6122b84b83a4a0217c9cb8f582f0ee643ab57afb2ac8bb602",
+      "local_copy_status": "accepted dated local copy; verify publisher-source replay and accepted document hash separately"
     },
     {
       "id": "fi-administrative-procedure-act",
@@ -26,7 +30,11 @@
       "retrieved_at": "2026-10-18T22:56:56+00:00",
       "raw_html_path": "temp/finland/raw/fi-administrative-procedure-act-434-2003.html",
       "rendered_text_path": "temp/finland/rendered/fi-administrative-procedure-act-434-2003.txt",
-      "output_path": "source-library/finland/candidates/fi-administrative-procedure-act-434-2003-current.md"
+      "output_path": "temp/finland/derived/fi-administrative-procedure-act-review-candidate.md",
+      "monitor_archive_path": "candidates/public-data/finland/candidates/fi-administrative-procedure-act-434-2003-current.md",
+      "accepted_document_path": "source-library/finland/documents/legislation/fi-administrative-procedure-act-434-2003-current-fi.md",
+      "accepted_document_sha256": "d3cb3f7fe0d2ae2b109a08b38c935425e8d280f63c82bf7c01bc6e9752dea9e6",
+      "local_copy_status": "accepted dated local copy; verify publisher-source replay and accepted document hash separately"
     },
     {
       "id": "fi-administrative-judicial-procedure-act",
@@ -43,7 +51,7 @@
       "response_url": "https://opendata.finlex.fi/finlex/avoindata/v1/akn/fi/act/statute-consolidated/2019/808/fin%40",
       "raw_xml_path": "temp/finland/raw/fi-administrative-judicial-procedure-act-fc04b7ecef35dc750f7d543a3530ae91d30e36b2bf33c19c57d855a2e3f7e5a6.xml",
       "raw_xml_sha256": "fc04b7ecef35dc750f7d543a3530ae91d30e36b2bf33c19c57d855a2e3f7e5a6",
-      "output_path": "source-library/finland/candidates/fi-act-808-2019-current.md",
+      "output_path": "temp/finland/derived/fi-administrative-judicial-procedure-act-review-candidate.md",
       "verification_note": "Official Finlex current-law API returned an identity-matching Akoma Ntoso record. Its expression ELI date is 2019-07-05 and its consolidation date is 2026-03-27; the API metadata also lists amendment 213/2026 effective 2026-04-14. The text remains unaccepted pending version-date reconciliation.",
       "expected_identity": {
         "number": "808",
@@ -59,7 +67,8 @@
         "min_body_chars": 50000,
         "version_caution": "The XML reports a consolidation date of 27 March 2026, before the listed 14 April 2026 effective date of amendment 213/2026. Treat this specific version-boundary conflict as unresolved and prefer a later Finlex edition if available; do not reconstruct the full amendment chain."
       },
-      "last_checked_at": "2026-10-19T03:36:55+00:00"
+      "last_checked_at": "2026-10-19T03:36:55+00:00",
+      "monitor_archive_path": "candidates/public-data/finland/candidates/fi-act-808-2019-current.md"
     },
     {
       "id": "fi-aliens-act-en",
@@ -76,7 +85,7 @@
       "retrieved_at": "2026-10-18T22:58:59+00:00",
       "raw_pdf_path": "temp/finland/raw/fi-aliens-act-en-2a574f86b2805886778fbc59f559b284ba6f931e85bf1ae51c2ab1e2aa4f6489.pdf",
       "raw_pdf_sha256": "2a574f86b2805886778fbc59f559b284ba6f931e85bf1ae51c2ab1e2aa4f6489",
-      "output_path": "source-library/finland/candidates/fi-aliens-act-301-2004-english-translation.md",
+      "output_path": "temp/finland/derived/fi-aliens-act-en-review-candidate.md",
       "verification_note": "Finlex identifies this as an unofficial English translation, completed 20 December 2023 and tracking amendments through 389/2023; only Finnish and Swedish are legally binding.",
       "expected_identity": {
         "publisher_title": "Aliens Act",
@@ -98,7 +107,8 @@
       "translation_page_content_type": "text/html; charset=utf-8",
       "pdf_content_type": "application/pdf",
       "retrieved_bytes": 968929,
-      "last_checked_at": "2026-10-18T23:02:30+00:00"
+      "last_checked_at": "2026-10-18T23:02:30+00:00",
+      "monitor_archive_path": "candidates/public-data/finland/candidates/fi-aliens-act-301-2004-english-translation.md"
     },
     {
       "id": "fi-administrative-procedure-act-en",
@@ -115,7 +125,7 @@
       "retrieved_at": "2026-10-18T22:59:00+00:00",
       "raw_pdf_path": "temp/finland/raw/fi-administrative-procedure-act-en-e36917558cadef65c02a15fb3d3fd68f78d8c4bc80cd2416c5d86d84fb3c9dab.pdf",
       "raw_pdf_sha256": "e36917558cadef65c02a15fb3d3fd68f78d8c4bc80cd2416c5d86d84fb3c9dab",
-      "output_path": "source-library/finland/candidates/fi-administrative-procedure-act-434-2003-english-translation.md",
+      "output_path": "temp/finland/derived/fi-administrative-procedure-act-en-review-candidate.md",
       "verification_note": "Finlex identifies this as an unofficial English translation, completed 7 January 2019 and tracking amendments through 893/2015; only Finnish and Swedish are legally binding.",
       "expected_identity": {
         "publisher_title": "Administrative Procedure Act",
@@ -136,7 +146,8 @@
       "translation_page_content_type": "text/html; charset=utf-8",
       "pdf_content_type": "application/pdf",
       "retrieved_bytes": 277425,
-      "last_checked_at": "2026-10-18T23:02:30+00:00"
+      "last_checked_at": "2026-10-18T23:02:30+00:00",
+      "monitor_archive_path": "candidates/public-data/finland/candidates/fi-administrative-procedure-act-434-2003-english-translation.md"
     },
     {
       "id": "fi-administrative-judicial-act-en",
@@ -153,7 +164,7 @@
       "retrieved_at": "2026-10-18T22:59:01+00:00",
       "raw_pdf_path": "temp/finland/raw/fi-administrative-judicial-act-en-f31c4ef48145d42f6e8eaf556619a4a49be07d0f0f32a4efa902240caf9db27e.pdf",
       "raw_pdf_sha256": "f31c4ef48145d42f6e8eaf556619a4a49be07d0f0f32a4efa902240caf9db27e",
-      "output_path": "source-library/finland/candidates/fi-administrative-judicial-procedure-act-808-2019-english-translation.md",
+      "output_path": "temp/finland/derived/fi-administrative-judicial-act-en-review-candidate.md",
       "verification_note": "Finlex identifies this as an unofficial English translation, completed 19 January 2024 and tracking amendments through 639/2021; only Finnish and Swedish are legally binding.",
       "expected_identity": {
         "publisher_title": "Administrative Judicial Procedure Act",
@@ -174,7 +185,8 @@
       "translation_page_content_type": "text/html; charset=utf-8",
       "pdf_content_type": "application/pdf",
       "retrieved_bytes": 300402,
-      "last_checked_at": "2026-10-18T23:02:30+00:00"
+      "last_checked_at": "2026-10-18T23:02:30+00:00",
+      "monitor_archive_path": "candidates/public-data/finland/candidates/fi-administrative-judicial-procedure-act-808-2019-english-translation.md"
     },
     {
       "id": "fi-data-protection-act",
@@ -186,7 +198,7 @@
       "retrieval_method": "finlex_akn_api",
       "retrieval_shape": "Finlex REST API Akoma Ntoso consolidated-statute XML",
       "retrieved_at": "2026-10-19T03:36:55+00:00",
-      "output_path": "source-library/finland/candidates/fi-data-protection-act-1050-2018-current.md",
+      "output_path": "temp/finland/derived/fi-data-protection-act-review-candidate.md",
       "verification_note": "Official Finlex open-data API returned an identity-matching Akoma Ntoso consolidation dated 22 May 2026. Use that government-published edition with its cutoff; the candidate remains subject to source-identity and proportionate text review. Do not require a full amendment-chain comparison.",
       "expected_identity": {
         "number": "1050",
@@ -207,7 +219,8 @@
       "retrieved_bytes": 80160,
       "response_content_type": "application/xml;charset=UTF-8",
       "response_url": "https://opendata.finlex.fi/finlex/avoindata/v1/akn/fi/act/statute-consolidated/2018/1050/fin%40",
-      "raw_xml_sha256": "8482195cf92e1e5ad946c8d1391cc31138c077e2ac49f531f239e3ce5283af6a"
+      "raw_xml_sha256": "8482195cf92e1e5ad946c8d1391cc31138c077e2ac49f531f239e3ce5283af6a",
+      "monitor_archive_path": "candidates/public-data/finland/candidates/fi-data-protection-act-1050-2018-current.md"
     },
     {
       "id": "fi-police-personal-data-act",
@@ -219,7 +232,7 @@
       "retrieval_method": "finlex_akn_api",
       "retrieval_shape": "Finlex REST API Akoma Ntoso consolidated-statute XML",
       "retrieved_at": "2026-10-19T03:36:55+00:00",
-      "output_path": "source-library/finland/candidates/fi-police-personal-data-act-616-2019-current.md",
+      "output_path": "temp/finland/derived/fi-police-personal-data-act-review-candidate.md",
       "verification_note": "Official Finlex open-data API returned an identity-matching Akoma Ntoso consolidation dated 9 October 2026. Use that government-published edition with its cutoff; the candidate remains subject to source-identity and proportionate text review. Do not require a full amendment-chain comparison.",
       "expected_identity": {
         "number": "616",
@@ -240,7 +253,8 @@
       "retrieved_bytes": 182875,
       "response_content_type": "application/xml;charset=UTF-8",
       "response_url": "https://opendata.finlex.fi/finlex/avoindata/v1/akn/fi/act/statute-consolidated/2019/616/fin%40",
-      "raw_xml_sha256": "a052f857aee861690881e1f6aa7f548c15871699559e63263bf34dfbf1ed7b9f"
+      "raw_xml_sha256": "a052f857aee861690881e1f6aa7f548c15871699559e63263bf34dfbf1ed7b9f",
+      "monitor_archive_path": "candidates/public-data/finland/candidates/fi-police-personal-data-act-616-2019-current.md"
     }
   ]
 }

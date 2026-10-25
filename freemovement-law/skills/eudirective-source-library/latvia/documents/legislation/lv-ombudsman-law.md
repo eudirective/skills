@@ -1,0 +1,637 @@
+# Ombudsman Law
+
+- Jurisdiction: Latvia
+- Source ID: `lv-14`
+- Source type: `ombudsman_legislation`
+- Official source: https://likumi.lv/ta/id/133535-tiesibsarga-likums
+- Publisher: likumi.lv
+- Language: `lv`
+- Publisher/version evidence: Publisher/version note recorded during source review: Law establishes national Ombudsman and individual submission/investigation powers; recent amendment effective 02.04.2025. Captured 2026-10-19; verify against any later publisher update.
+- Captured: 2026-10-19
+- Accepted local-copy scope: official ombudsman legislation reference: General good-governance/human-rights oversight; not a substitute for statutory appeal deadlines.
+- Text extraction: `class=doc-body`; replayed from saved source bytes on 2026-10-24.
+- Source-response SHA-256: `b10923b9f894ff3df0774e74a96dc516435781df3d615e85f99c6766b79f5248`
+- Original conversion SHA-256: `8326e1c7f61ff3f208186603bd0cd9e9cb72d3acd6c4b222de30c10691fb8fac`
+- Final document SHA-256: recorded in the Latvia source-acceptance register.
+
+- Extraction limit: this is a text-only snapshot of the selected publisher content region. Page chrome, link destinations, embedded attachments, interactive behavior, images, and later updates are not reproduced; use the official URL for those items.
+- Review: official identity, displayed scope/version, source region, language, and legal/source classification were checked against the accepted-reference record. The pack’s deterministic replay check passed.
+- Additional limits:
+  - General good-governance/human-rights oversight; not a substitute for statutory appeal deadlines.
+
+> This local text acceptance is separate from current legal effect, topic coverage, and country-review completion.
+
+## Official source text
+
+
+Saeima ir pieņēmusi un Valsts
+prezidents izsludina šādu likumu:
+
+Tiesībsarga likums
+
+I nodaļa. Vispārīgie noteikumi
+
+1.pants. Likuma mērķis
+
+Šā likuma mērķis ir veicināt cilvēktiesību aizsardzību un sekmēt, lai valsts vara tiktu īstenota tiesiski, lietderīgi un atbilstoši labas pārvaldības principam.
+
+2.pants. Likuma darbība
+
+(1) Šis likums nosaka tiesībsarga tiesisko statusu, funkcijas un uzdevumus, kā arī kārtību, kādā tiesībsargs pilda likumā noteiktās funkcijas un uzdevumus.
+
+(2) Šis likums neatbrīvo iestādi no pienākuma ievērot privātpersonu tiesības. Iestāde šā likuma izpratnē ir publiskas personas orgāns, iestāde vai amatpersona, kā arī persona, kas īsteno valsts pārvaldes uzdevumus.
+
+(3) Šajā likumā noteiktais nemazina citos normatīvajos aktos paredzētās privātpersonu tiesības.
+
+II nodaļa. Tiesībsargs
+
+3.pants. Tiesībsargs
+
+(1) Tiesībsargs ir šajā likumā noteiktajā kārtībā apstiprināta amatpersona, kura pilda likumā noteiktās funkcijas un uzdevumus.
+
+(2) Tiesībsargam ir savs zīmogs ar lielo valsts ģerboni.
+
+(3) Tiesībsargam ir valsts budžeta konts Valsts kasē.
+
+(Ar grozījumiem, kas izdarīti ar 25.09.2014. likumu, kas stājas spēkā 01.01.2015.)
+
+4.pants. Tiesībsarga neatkarība un neaizskaramība
+
+(1) Tiesībsargs savā darbībā ir neatkarīgs un pakļaujas vienīgi likumam. Nevienam nav tiesību ietekmēt tiesībsargu viņa funkciju un uzdevumu pildīšanā.
+
+(2) Tiesībsarga amats nav savienojams ar piederību pie politiskajām partijām.
+
+(3) (Izslēgta ar 07.01.2021. likumu)
+
+(4) Tiesībsarga kriminālprocesuālo imunitāti nosaka Kriminālprocesa likums.
+
+(Ar grozījumiem, kas izdarīti ar 15.05.2008. un 07.01.2021. likumu, kas stājas spēkā 08.02.2021.)
+
+5.pants. Tiesībsarga apstiprināšana amatā
+
+(1) Tiesībsargu ne mazāk kā pēc 10 Saeimas deputātu ierosinājuma amatā apstiprina Saeima. Iesniegumam par tiesībsarga amata kandidātu pievienojami šādi izvirzītā tiesībsarga amata kandidāta parakstīti dokumenti: piekrišana kandidēt uz tiesībsarga amatu un priekšlikumi par cilvēktiesību un labas pārvaldības jomā nepieciešamiem risinājumiem. Izvirzītie tiesībsarga amata kandidāti pirms Saeimas sēdes, kurā tiesībsargs tiks apstiprināts amatā, uzklausāmi Saeimas Cilvēktiesību un sabiedrisko lietu komisijā.
+
+(2) (Izslēgta ar 07.01.2021. likumu)
+
+(3) Iesniegums par tiesībsarga amata kandidātu iesniedzams Saeimas Prezidijam rakstveidā ne agrāk kā 50 dienas un ne vēlāk kā 40 dienas pirms esošā tiesībsarga pilnvaru termiņa beigām.
+
+(4) Kārtējai tiesībsarga apstiprināšanai amatā Saeimas Prezidijs sasauc Saeimas sēdi ne agrāk kā 20 dienas un ne vēlāk kā 10 dienas pirms esošā tiesībsarga pilnvaru termiņa beigām.
+
+(Ar grozījumiem, kas izdarīti ar 25.09.2014. un 07.01.2021. likumu, kas stājas spēkā 08.02.2021.)
+
+6.pants. Tiesībsarga zvērests (svinīgais solījums)
+
+Stājoties amatā, tiesībsargs dod zvērestu (svinīgo solījumu) Saeimas sēdē:
+
+"Es, ............, uzņemoties tiesībsarga pienākumus, apzinos man uzticēto atbildību un zvēru (svinīgi solu) būt godīgs un taisnīgs, aizstāvot personu tiesības un brīvības saskaņā ar Latvijas Republikas Satversmi, likumiem un starptautiskiem līgumiem."
+
+7. pants. Tiesībsarga amata kandidāts un tiesībsarga pilnvaru termiņš
+
+(1) Par tiesībsarga amata kandidātu var izvirzīt personu:
+
+1) kura ir Latvijas pilsonis un kurai nav dubultpilsonības;
+
+2) kura ir sasniegusi 30 gadu vecumu;
+
+3) kura ir ieguvusi augstāko izglītību — vismaz maģistra grādu — vai atbilstoši Latvijas normatīvajiem aktiem pielīdzinātu izglītību;
+
+4) kurai ir valsts valodas un vismaz vienas citas Eiropas Savienības oficiālās valodas prasmes;
+
+5) kurai ir zināšanas un praktiskā darba pieredze cilvēktiesību vai tiesību aizsardzības jomā;
+
+6) kura atbilstoši likuma prasībām ir tiesīga saņemt speciālo atļauju pieejai valsts noslēpumam.
+
+(2) Tiesībsarga pilnvaru termiņš ir pieci gadi no dienas, kad viņš atbilstoši šā likuma 6. pantam devis zvērestu (svinīgo solījumu).
+
+(3) Viena un tā pati persona var būt par tiesībsargu ne vairāk kā divus termiņus pēc kārtas.
+
+(07.01.2021. likuma redakcijā ar grozījumiem, kas izdarīti ar 06.03.2025. likumu, kas stājas spēkā 02.04.2025.)
+
+8.pants. Tiesībsarga pilnvaru apturēšana
+
+Ja Saeima ir piekritusi kriminālvajāšanas uzsākšanai pret tiesībsargu, viņa pilnvaras tiek apturētas līdz brīdim, kad stājas spēkā attaisnojošs tiesas spriedums attiecīgajā krimināllietā vai kriminālvajāšana pret tiesībsargu tiek izbeigta.
+
+9.pants. Tiesībsarga pilnvaru izbeigšanās
+
+(1) Tiesībsarga pilnvaras izbeidzas:
+
+1) sakarā ar tiesībsarga atbrīvošanu no amata;
+
+2) sakarā ar tiesībsarga pilnvaru termiņa izbeigšanos;
+
+3) ja viņš notiesāts par noziedzīga nodarījuma izdarīšanu un spriedums stājies likumīgā spēkā;
+
+4) sakarā ar tiesībsarga nāvi.
+
+(2) Ja par tiesībsargu apstiprināta persona, kas brīdī, kad tā tika apstiprināta tiesībsarga amatā, saskaņā ar likumu "Par tiesu varu" jau bija apstiprināta par tiesnesi bez pilnvaru termiņa ierobežojuma, tai šā panta pirmās daļas 2.punktā minētajā gadījumā un šā likuma 10.panta pirmās daļas 1.punktā minētajā gadījumā ir tiesības atgriezties iepriekšējā tiesneša amatā.
+
+(3) Ja par tiesībsargu apstiprināta persona, kas brīdī, kad tā tika apstiprināta tiesībsarga amatā, saskaņā ar likumu "Par tiesu varu" jau bija iecelta par tiesnesi uz noteiktu pilnvaru termiņu vai atbilstoši Satversmes tiesas likumam apstiprināta par Satversmes tiesas tiesnesi, tai šā panta pirmās daļas 2.punktā minētajā gadījumā un šā likuma 10.panta pirmās daļas 1.punktā minētajā gadījumā tiek piedāvāta izvirzīšana tiesneša, bet ne Satversmes tiesas tiesneša amatam.
+
+(4) Ja par tiesībsargu apstiprināta persona, kas brīdī, kad tā tika apstiprināta tiesībsarga amatā, jau bija apstiprināta par Satversmes tiesas tiesnesi, kuram atbilstoši Satversmes tiesas likumam ir tiesības atgriezties iepriekšējā tiesneša amatā, tai šā panta pirmās daļas 2.punktā minētajā gadījumā un šā likuma 10.panta pirmās daļas 1.punktā minētajā gadījumā ir tiesības atgriezties attiecīgajā iepriekšējā tiesneša amatā.
+
+(5) Ja par tiesībsargu apstiprināta persona, kas brīdī, kad tā tika apstiprināta tiesībsarga amatā, pildīja valsts civildienestu, militāro dienestu vai bija amatpersona ar speciālo dienesta pakāpi, tai šā panta pirmās daļas 2.punktā minētajā gadījumā un šā likuma 10.panta pirmās daļas 1.punktā minētajā gadījumā tiek nodrošinātas tiesības ieņemt līdzvērtīgu amatu.
+
+(6) Šā panta otrajā, trešajā, ceturtajā un piektajā daļā minētās tiesības netiek nodrošinātas, ja persona pēc tiesībsarga pilnvaru izbeigšanās neatbilst normatīvo aktu prasībām, kas jāizpilda, lai ieņemtu attiecīgo amatu.
+
+(15.05.2008. likuma redakcijā, kas stājas spēkā 11.06.2008.)
+
+10.pants. Tiesībsarga atbrīvošana no amata
+
+(1) Saeima atbrīvo tiesībsargu no amata, ja viņš:
+
+1) atstāj amatu pēc paša vēlēšanās, rakstveidā par to paziņojot Saeimai;
+
+2) nespēj pildīt amata pienākumus veselības stāvokļa dēļ;
+
+3) ir pieļāvis apkaunojošu nodarījumu, kas nav savienojams ar tiesībsarga statusu;
+
+4) bez attaisnojoša iemesla nepilda savus pienākumus;
+
+5) ir ievēlēts vai iecelts citā amatā.
+
+(2) Šā panta pirmās daļas 2., 3. vai 4. punktā minētajā gadījumā jautājumu par tiesībsarga atbrīvošanu no amata var ierosināt ne mazāk kā viena trešdaļa Saeimas deputātu. Šā panta pirmās daļas 1. vai 5. punktā minētajā gadījumā tiesībsargs nekavējoties iesniedz atbilstošu paziņojumu Saeimas Prezidijam.
+
+(3) (Izslēgta ar 07.01.2021. likumu)
+
+(4) (Izslēgta ar 07.01.2021. likumu)
+
+(Ar grozījumiem, kas izdarīti ar 15.05.2008., 25.09.2014. un 07.01.2021. likumu, kas stājas spēkā 08.02.2021.)
+
+11.pants. Tiesībsarga funkcijas
+
+Tiesībsargam ir šādas funkcijas:
+
+1) veicināt privātpersonas cilvēktiesību aizsardzību;
+
+2) sekmēt vienlīdzīgas attieksmes principa ievērošanu un jebkāda veida diskriminācijas novēršanu;
+
+3) izvērtēt un veicināt labas pārvaldības principa ievērošanu valsts pārvaldē;
+
+4) jautājumos, kas saistīti ar cilvēktiesību un labas pārvaldības principa ievērošanu, atklāt trūkumus tiesību aktos un to piemērošanā, kā arī veicināt šo trūkumu novēršanu;
+
+5) sekmēt sabiedrības informētību un izpratni par cilvēktiesībām, par šo tiesību aizsardzības mehānismiem un par tiesībsarga darbu;
+
+6) īstenot Konvencijas pret spīdzināšanu un citiem nežēlīgas, necilvēcīgas vai pazemojošas izturēšanās vai sodīšanas veidiem Fakultatīvajā protokolā minētos valsts preventīvā mehānisma uzdevumus.
+
+(Ar grozījumiem, kas izdarīti ar 15.05.2008. un 06.03.2025. likumu, kas stājas spēkā 02.04.2025.)
+
+12.pants. Tiesībsarga uzdevumi
+
+Pildot šajā likumā noteiktās funkcijas, tiesībsargs:
+
+1) pieņem un izskata privātpersonu iesniegumus;
+
+2) ierosina pārbaudes lietu apstākļu noskaidrošanai;
+
+3) pieprasa, lai iestādes savas kompetences ietvaros un likumā paredzētajos termiņos noskaidro nepieciešamos lietas apstākļus un par tiem informē tiesībsargu;
+
+4) izskatot pārbaudes lietu sniedz iestādei ieteikumus un atzinumus par tās darbības tiesiskumu, lietderību un labas pārvaldības principa ievērošanu;
+
+5) šajā likumā noteiktajā kārtībā risina strīdus starp privātpersonām un iestādēm, kā arī ar cilvēktiesībām saistītus strīdus starp privātpersonām;
+
+6) veicina izlīgumu starp strīda pusēm;
+
+7) risinot strīdus cilvēktiesību jautājumos, sniedz privātpersonām atzinumus un ieteikumus cilvēktiesību pārkāpumu novēršanai;
+
+8) sniedz Saeimai, Ministru kabinetam, pašvaldībām vai citām iestādēm ieteikumus attiecībā uz tiesību aktu izdošanu vai grozīšanu;
+
+9) sniedz personām konsultācijas cilvēktiesību jautājumos;
+
+10) veic pētījumus un analizē situāciju cilvēktiesību jomā, kā arī sniedz atzinumus par aktuāliem cilvēktiesību jautājumiem;
+
+11) apmeklē vietas, kurās personām tiek vai var tikt atņemta brīvība Konvencijas pret spīdzināšanu un citiem nežēlīgas, necilvēcīgas vai pazemojošas izturēšanās vai sodīšanas veidiem Fakultatīvā protokola 4. panta izpratnē (turpmāk — brīvības ierobežošanas vietas), lai novērstu spīdzināšanu un citu nežēlīgu, necilvēcīgu vai pazemojošu izturēšanos vai sodīšanu.
+
+(Ar grozījumiem, kas izdarīti ar 15.05.2008. un 06.03.2025. likumu, kas stājas spēkā 02.04.2025.)
+
+13.pants. Tiesībsarga tiesības
+
+Pildot šajā likumā noteiktās funkcijas un uzdevumus, tiesībsargam ir tiesības:
+
+1) pieprasīt un saņemt bez maksas no iestādes privātpersonas iesnieguma izskatīšanas gaitā vai pārbaudes lietā nepieciešamos dokumentus (administratīvos aktus, procesuālos lēmumus, vēstules), paskaidrojumus un citu informāciju iespējama cilvēktiesību pārkāpuma izvērtēšanai;
+
+11) pieprasīt un saņemt informāciju par to, kā tiek īstenoti šā likuma 12. panta 4. punktā minētie ieteikumi un atzinumos norādītais;
+
+2) apmeklēt iestādes, lai iegūtu pārbaudes lietā nepieciešamo informāciju;
+
+3) jebkurā laikā bez speciālas atļaujas apmeklēt brīvības ierobežošanas vietas, brīvi pārvietoties to teritorijā, apmeklēt visas telpas un vienatnē satikties ar personām, kuras tiek turētas brīvības ierobežošanas vietās;
+
+31) saņemt visu informāciju, kas saistīta ar izturēšanos pret personām, kuras uzturas brīvības ierobežošanas vietās, tai skaitā īpašu kategoriju personu datus, kā arī informāciju par šādu personu uzturēšanās apstākļiem, skaitu un atrašanās vietu;
+
+32) pieaicināt ekspertu brīvības ierobežošanas vietas apmeklējumam;
+
+4) uzklausīt bērna viedokli bez viņa vecāku, aizbildņu, izglītības vai aprūpes un audzināšanas iestādes darbinieka klātbūtnes, ja bērns to vēlas;
+
+5) pieprasīt no jebkuras privātpersonas dokumentus, paskaidrojumus un citu informāciju par jautājumiem, kam ir būtiska nozīme pārbaudes lietā;
+
+6) ierosināt pārbaudes lietu pēc savas iniciatīvas;
+
+7) pieprasīt un saņemt speciālistu atzinumu pārbaudes lietā;
+
+8) iesniegt pieteikumu par lietas ierosināšanu Satversmes tiesā, ja iestāde, kas izdevusi apstrīdamo aktu, nav tiesībsarga norādītajā termiņā novērsusi konstatētos trūkumus;
+
+9) pabeidzot pārbaudes lietu un konstatējot pārkāpumu, aizstāvēt privātpersonas tiesības un intereses administratīvajā tiesā, ja tas nepieciešams sabiedrības interesēs;
+
+10) pabeidzot pārbaudes lietu un konstatējot pārkāpumu, vērsties tiesā tajās civillietās, kurās prasības būtība saistīta ar atšķirīgas attieksmes aizlieguma pārkāpumu;
+
+11) pamatojoties uz viņa rīcībā esošajiem materiāliem, vērsties pie citām kompetentām institūcijām, lai izlemtu jautājumu par lietas ierosināšanu;
+
+12) piedalīties ar padomdevēja tiesībām Ministru kabineta sēdēs;
+
+13) sniegt ieteikumus jautājumos, kas saistīti ar izturēšanos pret personām, kuras uzturas brīvības ierobežošanas vietās, kā arī par nepieciešamajiem pilnveidojumiem attiecībā uz uzturēšanās apstākļu uzlabošanu šajās vietās un citus ieteikumus privātpersonas cilvēktiesību aizsardzībai, kā arī saņemt informāciju par attiecīgo ieteikumu ieviešanas rezultātiem un ar to saistīto informāciju;
+
+14) saņemt tiesu informatīvajā sistēmā esošo informāciju par tiesvedības gaitu un tiesu nolēmumus personu iesniegumu un pārbaudes lietu izskatīšanai, kā arī pētījumu, situāciju analīzes veikšanai un atzinumu sniegšanai;
+
+15) pieprasīt un piekļūt mākslīgā intelekta sistēmu dokumentācijai, kas nepieciešama pārbaudes lietā;
+
+16) iesniegt tirgus uzraudzības iestādei atbilstoši tās kompetencei pamatotu pieprasījumu organizēt mākslīgā intelekta sistēmas testēšanu ar tehniskiem līdzekļiem, ja dokumentācija, kas nepieciešama pārbaudes lietā, nav pietiekama.
+
+(Ar grozījumiem, kas izdarīti ar 15.05.2008., 06.03.2025. un 15.01.2026. likumu, kas stājas spēkā 11.02.2026.)
+
+14.pants. Konsultatīvās padomes un darba grupas
+
+(1) Tiesībsargs var izveidot konsultatīvās padomes, kā arī darba grupas atsevišķu projektu izstrādei vai jautājumu sagatavošanai.
+
+(2) Konsultatīvo padomju sastāvu un nolikumus un darba grupu sastāvu apstiprina tiesībsargs.
+
+15.pants. Tiesībsarga ziņojumi
+
+(1) Tiesībsargs reizi gadā sniedz Saeimai un Valsts prezidentam rakstveida ziņojumu par Tiesībsarga biroja darbu.
+
+(2) Tiesībsargam ir tiesības sniegt Saeimai, tās komisijām, Valsts prezidentam, Ministru kabinetam, valsts pārvaldes iestādēm un starptautiskajām organizācijām ziņojumus par atsevišķiem jautājumiem.
+
+16.pants. Tiesībsarga vietnieks
+
+(1) Tiesībsargs ieceļ amatā tiesībsarga vietnieku.
+
+(2) Tiesībsarga prombūtnes laikā viņa funkcijas un uzdevumus pilda tiesībsarga vietnieks, kam šajā laikā ir tādas pašas pilnvaras kā tiesībsargam.
+
+(3) Tiesībsarga vietnieks pilda tiesībsarga pienākumus, funkcijas un uzdevumus šā likuma 8. un 9.pantā paredzētajos gadījumos līdz brīdim, kad Saeima apstiprina amatā tiesībsargu vai kriminālvajāšana pret tiesībsargu tiek izbeigta, vai stājas spēkā tiesībsargu attaisnojošs spriedums.
+
+17.pants. Tiesībsarga atlīdzība
+
+Tiesībsarga atlīdzību nosaka atbilstoši Valsts un pašvaldību institūciju amatpersonu un darbinieku atlīdzības likumam.
+
+(01.12.2009. likuma redakcijā, kas stājas spēkā 01.01.2010.)
+
+III nodaļa. Tiesībsarga birojs
+
+18.pants. Tiesībsarga birojs
+
+(1) Tiesībsarga darbības nodrošināšanai tiek izveidots Tiesībsarga birojs.
+
+(2) Tiesībsarga biroja struktūru un iekšējās darbības noteikumus reglamentē biroja nolikums, kuru apstiprina tiesībsargs.
+
+19.pants. Tiesībsarga biroja finansēšana
+
+(1) Tiesībsarga biroju finansē no valsts budžeta.
+
+(2) (Izslēgta ar 16.06.2011. likumu)
+
+(Ar grozījumiem, kas izdarīti ar 16.06.2011. likumu, kas stājas spēkā 07.07.2011.)
+
+20.pants. Tiesībsarga biroja darbinieku atlīdzība
+
+(1) Tiesībsarga biroja darbinieku darba attiecības regulē Darba likums.
+
+(2) Tiesībsarga biroja darbinieku atlīdzību nosaka atbilstoši Valsts un pašvaldību institūciju amatpersonu un darbinieku atlīdzības likumam.
+
+(01.12.2009. likuma redakcijā, kas stājas spēkā 01.01.2010.)
+
+21.pants. Tiesībsarga biroja darbinieku un pieaicināto ekspertu tiesības
+
+(1) Tiesībsarga biroja darbiniekiem, veicot darba pienākumus, atbilstoši savai kompetencei ir šā likuma 13.panta 1., 2., 3., 3.1, 4., 5. un 7.punktā minētās tiesības.
+
+(2) Brīvības ierobežošanas vietu apmeklējumam pieaicinātajam ekspertam apmeklējuma laikā ir šā likuma 13. panta 3., 3.1 un 4. punktā minētās tiesības.
+
+(Ar grozījumiem, kas izdarīti ar 06.03.2025. likumu, kas stājas spēkā 02.04.2025.)
+
+22.pants. Tiesībsarga biroja darbinieku ierobežojumi un pienākumi
+
+Ierobežojumus un pienākumus Tiesībsarga biroja darbiniekiem nosaka likums "Par interešu konflikta novēršanu valsts amatpersonu darbībā".
+
+IV nodaļa. Iesniegumu un pārbaudes lietu izskatīšanas kārtība
+
+23.pants. Tiesības vērsties Tiesībsarga birojā
+
+(1) Ikvienai privātpersonai ir tiesības vērsties Tiesībsarga birojā ar iesniegumu.
+
+(2) Iesniegumus izskata normatīvajos aktos noteiktajā kārtībā, ciktāl šajā likumā nav noteikts citādi.
+
+(3) Iesniedzēju nedrīkst sodīt vai citādi tieši vai netieši radīt viņam nelabvēlīgas sekas par iesnieguma iesniegšanu Tiesībsarga birojam vai par sadarbību ar Tiesībsarga biroju.
+
+(4) Tiesībsarga birojam adresētie iesniegumi, kurus nosūta personas, kas atrodas militārajā dienestā, ārpusģimenes aprūpes un audzināšanas iestādēs vai slēgta tipa iestādēs, un Tiesībsarga biroja atbildes uz tiem netiek pakļautas normatīvajos aktos noteiktajai pārbaudei un nekavējoties tiek nodotas adresātam.
+
+(5) Par šā panta ceturtajā daļā minētā iesnieguma sav­laicīgu neiesniegšanu Tiesībsarga birojam vai to satura pārbaudīšanu un izpau­šanu atbildīgās personas saucamas pie likumā noteiktās atbildības.
+
+(6) Tiesībsarga birojs neizpauž ziņas par iesniedzēju vai citu personu, ja tas nepieciešams šo personu tiesību aizstāvībai, izņemot gadījumu, kad attiecīgās ziņas pieprasa kriminālprocesa virzītājs.
+
+(Ar grozījumiem, kas izdarīti ar 15.05.2008. likumu, kas stājas spēkā 11.06.2008.)
+
+24.pants. Pārbaudes lietas ierosināšanas un izskatīšanas kārtība
+
+(1) Izskatījis personas iesniegumu vai arī pēc savas iniciatīvas tiesībsargs lemj par pārbaudes lietas ierosināšanu.
+
+(2) Izskatījis personas iesniegumu, tiesībsargs ierosina pārbaudes lietu, ja tas atbilst tiesībsarga funkcijām un uzdevumiem un personas norādīto jautājumu ir iespējams risināt.
+
+(3) Pārbaudes lietas ierosināšana neaptur normatīvā akta, tiesas nolēmuma, administratīva vai cita individuāla tiesību akta darbību, kā arī likumā noteikto procesuālo termiņu tecējumu.
+
+(4) Pārbaudes lietu izskata triju mēnešu laikā. Ja lieta ir sarežģīta vai arī citu objektīvu iemeslu dēļ šo termiņu nav iespējams ievērot, tiesībsargs to var pagarināt uz laiku, ne ilgāku par diviem gadiem no pārbaudes lietas ierosināšanas dienas, par to paziņojot iesniedzējam un norādot termiņa pagarināšanas iemeslus.
+
+(5) Izskatot pārbaudes lietu, noklausās pušu un citu personu paskaidrojumus, pieprasa speciālistu atzinumus, kā arī veic citas likumā noteiktās darbības, kas nepieciešamas pārbaudes lietas izskatīšanai.
+
+(6) Izskatot pārbaudes lietu, tiek veicināts izlīgums starp strīda pusēm.
+
+(Ar grozījumiem, kas izdarīti ar 15.05.2008. likumu, kas stājas spēkā 11.06.2008.)
+
+25.pants. Pārbaudes lietas pabeigšana vai izbeigšana
+
+(1) Pārbaudes lietu pabeidz ar lietā iesaistīto personu izlīgumu vai tiesībsarga atzinumu.
+
+(2) Ja puses nevar vienoties par izlīgumu, tiesībsargs sniedz atzinumu, kurā dod vērtējumu pārbaudes lietā konstatētajam.
+
+(3) Tiesībsarga atzinumā var ietvert ieteikumu konstatētā pārkāpuma novēršanai, kā arī, ja tas nepieciešams, citus ieteikumus.
+
+(4) Atzinumam ir rekomendējošs raksturs.
+
+(5) Ja pārbaudes lietu nav iespējams vai nav nepieciešams turpināt, tiesībsargs lemj par tās izbeigšanu.
+
+(6) Pārbaudes lietas materiāli ir ierobežotas pieejamības informācija un pieejami saskaņā ar Informācijas atklātības likumu.
+
+26.pants. Pārbaudes lietu reglaments
+
+Pārbaudes lietu ierosināšanas, izskatīšanas un pabeigšanas kārtību nosaka reglaments, kuru apstiprina tiesībsargs.
+
+27.pants. Informācijas pieprasīšanas kārtība un atbildība par informācijas nesniegšanu un nepatiesas informācijas sniegšanu
+
+(1) Pieprasot šā likuma 13. panta 1., 1.1, 5., 13., 15. un 16. punktā minēto informāciju, tiesībsargs nosaka šīs informācijas apjomu un norāda saprātīgu tās sniegšanas termiņu.
+
+(2) Pēc iestādes vai privātpersonas lūguma šā panta pirmajā daļā minētās informācijas apjoms var tikt grozīts vai precizēts un informācijas sniegšanas termiņš var tikt pagarināts, ja tas nepieciešams.
+
+(3) Tiesībsarga noteiktais informācijas apjoms un sniegšanas termiņš nav apstrīdams un pārsūdzams.
+
+(4) Par šā panta pirmajā daļā minētās informācijas nesniegšanu noteiktajā apjomā un termiņā, kā arī par nepatiesas informācijas sniegšanu personas saucamas pie likumā paredzētās atbildības.
+
+(5) Izskatot jautājumu par administratīvā soda uzlikšanu par šā panta pirmajā daļā minētās informācijas nesniegšanu noteiktajā apjomā vai termiņā, izvērtējama pieprasītās informācijas apjoma un sniegšanas termiņa pamatotība.
+
+(15.05.2008. likuma redakcijā ar grozījumiem, kas izdarīti ar 06.03.2025. un 15.01.2026. likumu, kas stājas spēkā 11.02.2026.)
+
+Pārejas noteikumi
+
+1. Ar šā likuma spēkā stāšanos spēku zaudē Likums par Valsts cilvēktiesību biroju (Saeimas un Ministru Kabineta Ziņotājs, 1997, 1.nr.; 2005, 18.nr.; 2006, 2.nr.).
+
+2. Tiesībsarga birojs ir Valsts cilvēktiesību biroja tiesību un saistību pārņēmējs.
+
+3. Valsts cilvēktiesību biroja direktors pilda tiesībsarga funkcijas līdz tiesībsarga apstiprināšanai amatā.
+
+4. Iesniegumus, kuri iesniegti Valsts cilvēktiesību birojam līdz šā likuma spēkā stāšanās dienai un pēc kuriem uzsāktas pārbaudes, pabeidz izskatīt saskaņā ar tiem normatīvajiem aktiem, kas bija spēkā to iesniegšanas dienā.
+
+(Ar grozījumiem, kas izdarīti ar 15.05.2008. likumu, kas stājas spēkā 11.06.2008.)
+
+5. (Izslēgts ar 12.06.2009. likumu, kas stājas spēkā 01.07.2009.)
+
+6. Tiesībsarga pilnvaru termiņš, kas apstiprināts pirms dienas, kad stājas spēkā grozījumi šā likuma 7.panta pirmajā daļā, ir četri gadi no dienas, kad tiesībsargs atbilstoši šā likuma 6.pantam devis zvērestu (svinīgo solījumu).
+
+(15.05.2008. likuma redakcijā, kas stājas spēkā 11.06.2008.)
+
+7. Saskaņā ar šo likumu noteikto atlīdzību (amatalga, atalgojums, pabalsti u.c.) 2009.gadā nosaka atbilstoši likumam “Par valsts un pašvaldību institūciju amatpersonu un darbinieku atlīdzību 2009.gadā”.
+
+(12.12.2008. likuma redakcijā, kas stājas spēkā 01.01.2009.)
+
+8. (Izslēgts ar 07.01.2021. likumu, kas stājas spēkā 08.02.2021.)
+
+9. Šā likuma 7. panta trešā daļa stājas spēkā 2022. gada 1. janvārī.
+
+(07.01.2021. likuma redakcijā, kas stājas spēkā 08.02.2021.)
+
+Informatīva atsauce uz Eiropas Savienības direktīvām
+(Ar grozījumiem, kas izdarīti ar 06.03.2025. un 15.01.2026. likumu, kas stājas spēkā 11.02.2026.)
+
+Likumā iekļautas tiesību normas, kas izriet no:
+
+1) (izslēgts ar 15.01.2026. likumu);
+
+2) Padomes 2000.gada 29.jūnija direktīvas 2000/43/EK, ar ko ievieš vienādas attieksmes principu pret personām neatkarīgi no rasu vai etniskās piederības;
+
+3) Padomes 2000.gada 27.novembra direktīvas 2000/78/EK, ar ko nosaka kopēju sistēmu vienlīdzīgai attieksmei pret nodarbinātību un profesiju;
+
+4) (izslēgts ar 15.01.2026. likumu);
+
+5) Padomes 2004.gada 13.decembra direktīvas 2004/113/EK, ar kuru īsteno principu, kas paredz vienlīdzīgu attieksmi pret vīriešiem un sievietēm attiecībā uz pieeju precēm un pakalpojumiem, preču piegādi un pakalpojumu sniegšanu;
+
+6) Padomes 2024. gada 7. maija direktīvas (ES) 2024/1499 par līdztiesības iestāžu standartiem attiecībā uz vienlīdzīgu attieksmi pret personām neatkarīgi no viņu rases vai etniskās piederības, vienlīdzīgu attieksmi nodarbinātības un profesijas jautājumos pret personām neatkarīgi no viņu reliģijas vai pārliecības, invaliditātes, vecuma vai seksuālās orientācijas, vienlīdzīgu attieksmi pret vīriešiem un sievietēm sociālā nodrošinājuma jautājumos un attiecībā uz piekļuvi precēm un pakalpojumiem un preču piegādi un pakalpojumu sniegšanu, un ar ko groza direktīvas 2000/43/EK un 2004/113/EK;
+
+7) Eiropas Parlamenta un Padomes 2024. gada 14. maija direktīvas (ES) 2024/1500 par līdztiesības iestāžu standartiem attiecībā uz vienlīdzīgu attieksmi un iespēju vienlīdzību starp sievietēm un vīriešiem nodarbinātības un profesijas jautājumos un ar ko groza direktīvas 2006/54/EK un 2010/41/ES;
+
+8) Eiropas Parlamenta un Padomes 2006. gada 5. jūlija direktīvas 2006/54/EK par tāda principa īstenošanu, kas paredz vienlīdzīgas iespējas un attieksmi pret vīriešiem un sievietēm nodarbinātības un profesijas jautājumos (pārstrādāta versija);
+
+9) Eiropas Parlamenta un Padomes 2010. gada 7. jūlija direktīvas 2010/41/ES par to, kā piemērot vienlīdzīgas attieksmes principu vīriešiem un sievietēm, kas darbojas pašnodarbinātas personas statusā, un ar kuru atceļ Padomes direktīvu 86/613/EEK;
+
+10) Eiropas Parlamenta un Padomes 2016. gada 26. oktobra direktīvas (ES) 2016/2102 par publiskā sektora struktūru tīmekļvietņu un mobilo lietotņu piekļūstamību;
+
+11) Eiropas Parlamenta un Padomes 2019. gada 20. jūnija direktīvas (ES) 2019/1158 par darba un privātās dzīves līdzsvaru vecākiem un aprūpētājiem un ar ko atceļ Padomes direktīvu 2010/18/ES.
+
+Likums stājas spēkā 2007.gada 1.janvārī.
+
+Likums Saeimā pieņemts 2006.gada 6.aprīlī
+
+Valsts prezidentes vietā
+Saeimas priekšsēdētāja I.Ūdre
+
+Rīgā 2006.gada 25.aprīlī
+
+Tiesību akta pase
+
+Nosaukums: Tiesībsarga likumsStatuss:
+
+Spēkā esošs
+
+spēkā esošs
+Izdevējs: SaeimaVeids:
+likumsPieņemts: 06.04.2006.Stājas spēkā: 01.01.2007.Tēma: CilvēktiesībasPublicēts: Latvijas Vēstnesis, 65, 25.04.2006.; Latvijas Republikas Saeimas un Ministru Kabineta Ziņotājs, 9, 11.05.2006.
+Dokumenta valoda:
+
+Satura rādītājs
+
+I nodaļa. Vispārīgie noteikumi
+
+1.pants. Likuma mērķis
+
+2.pants. Likuma darbība
+
+II nodaļa. Tiesībsargs
+
+3.pants. Tiesībsargs
+
+4.pants. Tiesībsarga neatkarība un neaizskaramība
+
+5.pants. Tiesībsarga apstiprināšana amatā
+
+6.pants. Tiesībsarga zvērests (svinīgais solījums)
+
+7. pants. Tiesībsarga amata kandidāts un tiesībsarga pilnvaru termiņš
+
+8.pants. Tiesībsarga pilnvaru apturēšana
+
+9.pants. Tiesībsarga pilnvaru izbeigšanās
+
+10.pants. Tiesībsarga atbrīvošana no amata
+
+11.pants. Tiesībsarga funkcijas
+
+12.pants. Tiesībsarga uzdevumi
+
+13.pants. Tiesībsarga tiesības
+
+14.pants. Konsultatīvās padomes un darba grupas
+
+15.pants. Tiesībsarga ziņojumi
+
+16.pants. Tiesībsarga vietnieks
+
+17.pants. Tiesībsarga atlīdzība
+
+III nodaļa. Tiesībsarga birojs
+
+18.pants. Tiesībsarga birojs
+
+19.pants. Tiesībsarga biroja finansēšana
+
+20.pants. Tiesībsarga biroja darbinieku atlīdzība
+
+21.pants. Tiesībsarga biroja darbinieku un pieaicināto ekspertu tiesības
+
+22.pants. Tiesībsarga biroja darbinieku ierobežojumi un pienākumi
+
+IV nodaļa. Iesniegumu un pārbaudes lietu izskatīšanas kārtība
+
+23.pants. Tiesības vērsties Tiesībsarga birojā
+
+24.pants. Pārbaudes lietas ierosināšanas un izskatīšanas kārtība
+
+25.pants. Pārbaudes lietas pabeigšana vai izbeigšana
+
+26.pants. Pārbaudes lietu reglaments
+
+27.pants. Informācijas pieprasīšanas kārtība un atbildība par informācijas nesniegšanu un nepatiesas informācijas sniegšanu
+
+Pārejas noteikumi
+
+1. punkts
+
+2. punkts
+
+3. punkts
+
+4. punkts
+
+5. punkts
+
+6. punkts
+
+7. punkts
+
+8. punkts
+
+9. punkts
+
+Informatīva atsauce uz Eiropas Savienības direktīvām
+
+Saistītie dokumenti
+
+Grozījumi
+
+Tiesību akti, kuriem maina statusu
+
+Satversmes tiesas nolēmumi
+
+Augstākās tiesas atziņas
+
+Tiesību akta projekts
+
+Skaidrojumi
+
+Citi saistītie dokumenti
+
+133535
+
+{"selected":{"value":"11.02.2026","content":"<font class='s-1'>11.02.2026.-...<\/font> <font class='s-3'>Sp\u0113k\u0101 eso\u0161\u0101<\/font>"},"data":[{"value":"11.02.2026","iso_value":"2026\/02\/11","content":"<font class='s-1'>11.02.2026.-...<\/font> <font class='s-3'>Sp\u0113k\u0101 eso\u0161\u0101<\/font>"},{"value":"02.04.2025","iso_value":"2025\/04\/02","content":"<font class='s-1'>02.04.2025.-10.02.2026.<\/font> <font class='s-2'>V\u0113sturisk\u0101<\/font>"},{"value":"01.01.2022","iso_value":"2022\/01\/01","content":"<font class='s-1'>01.01.2022.-01.04.2025.<\/font> <font class='s-2'>V\u0113sturisk\u0101<\/font>"},{"value":"08.02.2021","iso_value":"2021\/02\/08","content":"<font class='s-1'>08.02.2021.-31.12.2021.<\/font> <font class='s-2'>V\u0113sturisk\u0101<\/font>"},{"value":"01.01.2015","iso_value":"2015\/01\/01","content":"<font class='s-1'>01.01.2015.-07.02.2021.<\/font> <font class='s-2'>V\u0113sturisk\u0101<\/font>"},{"value":"07.07.2011","iso_value":"2011\/07\/07","content":"<font class='s-1'>07.07.2011.-31.12.2014.<\/font> <font class='s-2'>V\u0113sturisk\u0101<\/font>"},{"value":"01.06.2011","iso_value":"2011\/06\/01","content":"<font class='s-1'>01.06.2011.-06.07.2011.<\/font> <font class='s-2'>V\u0113sturisk\u0101<\/font>"},{"value":"01.01.2010","iso_value":"2010\/01\/01","content":"<font class='s-1'>01.01.2010.-31.05.2011.<\/font> <font class='s-2'>V\u0113sturisk\u0101<\/font>"},{"value":"01.07.2009","iso_value":"2009\/07\/01","content":"<font class='s-1'>01.07.2009.-31.12.2009.<\/font> <font class='s-2'>V\u0113sturisk\u0101<\/font>"},{"value":"01.01.2009","iso_value":"2009\/01\/01","content":"<font class='s-1'>01.01.2009.-30.06.2009.<\/font> <font class='s-2'>V\u0113sturisk\u0101<\/font>"},{"value":"11.06.2008","iso_value":"2008\/06\/11","content":"<font class='s-1'>11.06.2008.-31.12.2008.<\/font> <font class='s-2'>V\u0113sturisk\u0101<\/font>"},{"value":"01.01.2007","iso_value":"2007\/01\/01","content":"<font class='s-1'>01.01.2007.-10.06.2008.<\/font> <font class='s-2'>Pamata<\/font>"}]}
+
+84
+
+1
+
+Ar grozījumu sarakstu
+
+Ar satura rādītāju
+
+Ar manām piezīmēm
+
+Ar lielāka izmēra fontu
+
+Drukāt tiesību aktu
+
+X
+
+Facebook
+
+Draugiem.lv
+
+0
+
+Šajā vietnē oficiālais izdevējs
+
+"Latvijas Vēstnesis" nodrošina tiesību aktu
+
+sistematizācijas funkciju.
+
+Sistematizēti tiesību akti ir informatīvi. Pretrunu gadījumā vadās pēc oficiālās publikācijas.
+
+Par Likumi.lv
+Aktualitātes
+Atsauksmēm
+Apmācības
+Kontakti
+
+Mobilā versija
+Lietošanas noteikumi
+Privātuma politika
+Sīkdatnes
+Piekļūstamība
+
+RSS
+
+Šodien publicēti tiesību akti
+
+Likumi
+
+Ministru kabineta noteikumi
+
+Ministru kabineta instrukcijas
+
+Ministru kabineta rīkojumi
+
+Valsts prezidenta tiesību akti
+
+Ministru prezidenta rīkojumi
+
+Satversmes tiesas nolēmumi
+
+Latvijas bankas noteikumi
+
+FKTK noteikumi
+
+SPRK lemumi
+
+CVK lēmumi
+
+Rīgas domes saistošie noteikumi
+
+Visi tiesību akti
+
+Šodien stājas spēkā
+
+Šodien zaudē spēku
+
+"Ikvienam ir tiesības zināt savas tiesības."
+Latvijas Republikas Satversmes 90. pants
+© Oficiālais izdevējs "Latvijas Vēstnesis"

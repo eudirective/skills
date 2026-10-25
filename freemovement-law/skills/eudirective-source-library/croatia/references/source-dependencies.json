@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "jurisdiction": "HR",
-  "checked_on": "2026-10-19",
+  "checked_on": "2026-10-25",
   "policy": "Material legal references must be traced to current official instruments. A cited source or captured hash does not establish that dependency status is current. Preserve national wording; editorial alerts belong here.",
   "dependencies": [
     {
@@ -61,17 +61,19 @@
       "related_invalidated_instrument": "https://eur-lex.europa.eu/eli/reg/2019/1157/oj/eng",
       "dependency_review_status": "urgent_post_transition_specimen_and_issuance_check",
       "evidence": [
-        "NN 86/21 article 1 expressly refers to Regulation (EU) 2019/1157; the CJEU declared that regulation invalid in C-61/22 and its effects were maintained pending replacement.",
-        "Regulation (EU) 2025/1208 specifies the family-member card format and standardised data-field code; non-compliant cards cease validity by 3 August 2026 (subject to the regulation’s limited transitional provision). The transition date has passed as of this review.",
-        "NN 86/21 articles 27a and 11 prescribe Form 11b and print both Form 4b and Form 11b as annexes. Text lines 68–75 prescribe Croatian labels; visual specimens and actual post-transition issuance must be checked against the EU card fields before any compliance conclusion.",
-        "The seeded Form 2b is an application form, not the residence-card specimen. MUP forms index is a dynamic link-discovery route; its cited amendment chain omits NN 155/22 listed by MUP’s current legislation index."
+        "NN 86/21 article 1 refers to Regulation (EU) 2019/1157; the CJEU declared that regulation invalid in C-61/22 and maintained its effects pending replacement.",
+        "Regulation (EU) 2025/1208 Article 7 requires the card format and a standardized code in data field [10]. Article 8 applies only to residence cards for non-EU family members: cards failing Article 7 generally cease at expiry or 3 August 2026; cards failing Article 7 but meeting ICAO minimum security standards and Annex points (c) and (g) conditions may continue to expiry or 3 August 2031; cards without minimum ICAO security or a functional MRZ are not valid. The card-specific conditions cannot be inferred from the blank Form 11b image.",
+        "On 2026-10-25 the four official NN 86/21 Form 4b/11b images were inspected at native dimensions and retained unchanged. They are blank specimen layouts, not proof of actual issued card encoding or security features.",
+        "NN 86/21 Article 27a(5) and Regulation 2025/1208 Article 7(2) in the official Croatian text prescribe the same standardized Article 10 code. The blank Form 11b specimen does not establish that the actual issued card carries it in data field [10], or demonstrate the current card’s format/security.",
+        "The MUP Propisi index checked 2026-10-25 lists EEA rule chain NN 107/20, 148/20, 86/21 and 155/22. The current MUP forms index lists application/registration forms 1b, 2b, 3b and 6b, not card specimens. MUP guidance updated 2025-10-09 describes issue process but does not show the post-transition card."
       ],
       "review_questions": [
-        "Visually inspect both Form 4b and 11b annex images in NN 86/21, including both sides and data-field mapping.",
-        "Verify the exact post-3 August 2026 Croatian card template and whether Regulation 2025/1208 Article 7 field [10] uses the mandatory standardised code.",
-        "Check the limited transition exception and validity status of any cards issued under old rules; do not infer non-compliance solely from the Croatian wording in the amendment.",
-        "Trace the invalidity judgment C-61/22 and confirm whether any interim or implementing rules alter the Croatia-specific analysis."
-      ]
+        "Obtain or identify an official MUP specimen or other authoritative evidence of the card actually issued after 3 August 2026, including the standardized code’s placement in data field [10].",
+        "Verify Article 8 transition treatment only from the actual card’s ICAO/MRZ and Annex-condition evidence; do not infer it from the blank specimen.",
+        "Confirm the personal scope of Article 6 for the EEA nationalities covered by Form 4b before making a nationality-wide conclusion.",
+        "Keep the CJEU C-61/22 invalidity/effects analysis separate from the current-card format check."
+      ],
+      "last_reviewed_on": "2026-10-25"
     },
     {
       "id": "hr-eea-card-specimen-and-transition",
@@ -89,12 +91,12 @@
       ],
       "dependency_review_status": "urgent_visual_and_current_practice_review_open",
       "evidence": [
-        "The Croatian amendment reproduces a 2021 reference to Regulation 2019/1157 and attaches Form 4b/11b card specimens. Regulation 2025/1208 requires card-field/code checks and provides a transition end date of 3 August 2026; compare the actual current specimens and issuance practice.",
-        "Form 2b is an application, not a residence-card specimen."
+        "The Croatian amendment attaches 2021 Form 4b and Form 11b specimens. Regulation (EU) 2025/1208 Article 6 sets minimum information for Union-citizen residence documents; Articles 7 and 8 concern non-EU family-member cards and their format/transition. Article 8 includes a conditional 2031 phase-out route for some cards that fail Article 7 but meet specified security conditions.",
+        "The Croatian-language Article 7(2) standardized Article 10/20 code matches the wording prescribed by NN 86/21 Article 27a(5). Form 2b is an application, not a residence-card specimen. The blank Form 11b image does not establish actual issuance, code placement in data field [10], or Article 8 transition eligibility."
       ],
       "review_questions": [
-        "Inspect Form 4b and 11b images and their data fields.",
-        "Verify current card specimens/issuance after 3 August 2026 against Article 7 and Article 8, including any limited transition exception.",
+        "Verify the actual current Form 4b and Form 11b card issuance with authoritative evidence; compare Form 4b to Article 6 only within confirmed personal scope.",
+        "For Form 11b, verify the standardized code in data field [10] and the format/security features; use Article 8 transition classes only when actual-card conditions are evidenced.",
         "Record an evidence-based conclusion without altering the source’s original Croatian text."
       ]
     },
@@ -134,7 +136,11 @@
         "hr-law-enforcement-data-act",
         "hr-vis-decree",
         "hr-vis-decree-amend-105-17",
-        "hr-azop-vis-sis"
+        "hr-azop-vis-sis",
+        "hr-mup-sis-rights-guidance",
+        "hr-mup-sis-access-form",
+        "hr-mup-sis-erasure-form",
+        "hr-mup-sis-correction-form"
       ],
       "relationship": "law_enforcement_data_processing_scope",
       "instrument": "Directive (EU) 2016/680 and Croatian Law NN 68/18",
@@ -142,7 +148,9 @@
       "related_national_locator": "https://narodne-novine.nn.hr/clanci/sluzbeni/2018_07_68_1391.html",
       "dependency_review_status": "scope_and_controller_route_unresolved",
       "evidence": [
-        "Official NN 68/18 text states it transposes Directive (EU) 2016/680. Determine processing purposes and controller for each VIS/SIS right or complaint; do not substitute GDPR rules without a purpose check."
+        "Official NN 68/18 text states it transposes Directive (EU) 2016/680. Determine processing purposes and controller for each VIS/SIS right or complaint; do not substitute GDPR rules without a purpose check.",
+        "The MUP page and its three linked PDFs cite Regulations (EU) 2018/1861 and 2018/1862, including Articles 53 and 67. The page separately contains a 2018/1061 typo; the forms show the correct identifiers.",
+        "On 2026-10-25 the official NN 68/18 page was identified by title, issue metadata, item 1391 and ELI. Articles 1–3 state the law-enforcement purposes, LED transposition, scope and exclusions; selected rights and oversight text in Articles 15–17 and 41–44 was reviewed. This establishes the original enactment and selected text only; amendment/currentness, processing-purpose classification, controller competence and VIS/SIS route remain unresolved."
       ]
     },
     {
@@ -158,7 +166,8 @@
       "related_instrument_locator": "https://eur-lex.europa.eu/eli/reg/2018/1806/oj/eng",
       "dependency_review_status": "current_consolidations_required",
       "evidence": [
-        "Listed or cross-referenced in official Croatian visa sources; amendments and application date to be checked."
+        "Listed or cross-referenced in official Croatian visa sources; amendments and application date to be checked.",
+        "On 2026-10-25 the original NN 92/21 Visa System Decree was checked by link. Articles 1–2 describe the national visa-system/means subject matter and its stated implementation of Regulation (EU) 2018/1806; current amendment status, present amounts and issue-specific EEA-family effect remain open."
       ]
     },
     {
@@ -168,7 +177,9 @@
         "hr-vis-decree-amend-105-17",
         "hr-azop-vis-sis",
         "hr-mvep-visa-appeal",
-        "hr-data-protection-act"
+        "hr-data-protection-act",
+        "hr-mvep-vis-rights-guidance",
+        "hr-mvep-vis-rights-form"
       ],
       "relationship": "visa_database_and_personal_data_rights",
       "instrument": "Regulation (EC) No 767/2008 (VIS), Regulation (EU) 2016/679 (GDPR), and law-enforcement data rules",
@@ -176,7 +187,9 @@
       "related_instrument_locator": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng",
       "dependency_review_status": "unresolved",
       "evidence": [
-        "MUP/MVEP indexes list Croatian VIS instruments; differentiate GDPR-controlled processing from law-enforcement processing and trace controller/complaint routes."
+        "MUP/MVEP indexes list Croatian VIS instruments; differentiate GDPR-controlled processing from law-enforcement processing and trace controller/complaint routes.",
+        "The live MVEP page and linked form cite the VIS Regulation (EC) No 767/2008 and GDPR rights; the form requests access, correction and deletion, while the page also mentions restriction.",
+        "On 2026-10-25 the official NN 36/13 VIS regulation and NN 105/17 amendment were checked by link. Articles 35–37 of the original text state selected notice, access/correction/deletion and AZOP-oversight provisions; Article 21(3) was changed by NN 105/17. This does not determine current effect after later EU VIS rules or classify a specific operation under GDPR versus LED."
       ]
     },
     {
@@ -302,6 +315,23 @@
         "Reconcile the legal-aid procedure, court-fee waiver and provider routes against accepted primary law and current Ministry forms.",
         "Check the annual 2026 provider-compensation regulation status; the 2025 provider tariff does not set applicant eligibility or court-fee exemption.",
         "Check the next annual budget-execution act before carrying the 2026 base into 2027."
+      ]
+    },
+    {
+      "id": "hr-mvep-stale-faq-historical-law-references",
+      "source_ids": [
+        "hr-mvep-stale-faq",
+        "hr-mvep-visa-overview",
+        "hr-foreigners-act",
+        "hr-general-admin-act"
+      ],
+      "relationship": "historical_visa_entry_and_procedure_guidance",
+      "instrument": "Schengen acquis and visa rules; Croatian Foreigners Act; General Administrative Procedure Act NN 47/09",
+      "official_locator": "https://mvep.gov.hr/en/consular-information/visas/visa-requirements-overview/22879",
+      "dependency_review_status": "known_references_recorded_current_effect_not_resolved",
+      "evidence": [
+        "Manual scan of the 17 archived FAQ entries identified references to Schengen status, visa/stay rules, the General Administrative Procedure Act (NN 47/09), and the Aliens Act. The FAQ is retained only as a historical page record; this edge does not validate any cited rule as current.",
+        "Current MVEP visa-requirements material states that the Schengen acquis has applied in Croatia since 2023-01-01."
       ]
     }
   ],
@@ -847,9 +877,10 @@
       "dependency_ids": [
         "hr-access-to-information-amendment-chain"
       ],
-      "evidence": "This source is linked to the listed dependency records. The register does not yet prove that every material reference in this source has been found or that linked dependencies are resolved.",
+      "evidence": "Manual scan of the accepted historical section records its 2019 references to the Constitution, ECHR, EU Charter, Act NN 25/13 and 85/15, Articles 10–12, the Commissioner appeal, and High Administrative Court. The linked Act chain includes NN 69/22; the text is historical and no current procedure is inferred.",
       "remaining_work": [
-        "Inspect source text and record every material national/EU instrument, amendment, validity judgment, successor, and procedural dependency; resolve each linked edge."
+        "Review current access-request procedure, deadlines, exemptions and judicial route against the current official consolidated Act and amendment chain.",
+        "A full material-reference scan of the page and linked publications remains open."
       ]
     },
     {
@@ -1132,9 +1163,10 @@
       "dependency_ids": [
         "hr-law-enforcement-data-regime"
       ],
-      "evidence": "This source is linked to the listed dependency records. The register does not yet prove that every material reference in this source has been found or that linked dependencies are resolved.",
+      "evidence": "The official NN 68/18 page was checked on 2026-10-25. Articles 1–3 state the law-enforcement purposes, transposition of Directive (EU) 2016/680, scope and exclusions; Articles 15–17 and 41–44 were reviewed for selected rights and supervision provisions. This was not an exhaustive cross-reference, amendment, currentness or VIS/SIS controller review; the existing dependency edge remains open.",
       "remaining_work": [
-        "Inspect source text and record every material national/EU instrument, amendment, validity judgment, successor, and procedural dependency; resolve each linked edge."
+        "Inspect the full official text and current official indexes for every material national/EU instrument, amendment, validity judgment, successor and procedural dependency; resolve each linked edge.",
+        "Determine the purpose and controller for each VIS/SIS right or complaint before deciding whether the LED or GDPR regime applies."
       ]
     },
     {
@@ -1173,11 +1205,17 @@
     },
     {
       "source_id": "hr-mup-eea-guidance",
-      "status": "not_reviewed",
-      "dependency_ids": [],
-      "evidence": "No source-level dependency scan has been recorded. Absence from the dependency graph is not a finding that the source has no material references.",
+      "status": "known_edges_not_exhaustive",
+      "dependency_ids": [
+        "hr-eea-act-directive-2004-38",
+        "hr-eea-card-format-regulation"
+      ],
+      "evidence": "Reviewed the live MUP guidance page and current MUP Propisi index on 2026-10-24. The page addresses EEA residence procedures under the EEA Act and implementing regulation; the index lists the EEA Act chain through NN 114/22 and residence regulation through NN 155/22. The Form 2b/3b route also touches the EU card-format framework. The page’s individual propositions, fee amount and all dependencies are not exhaustively verified.",
       "remaining_work": [
-        "Inspect the source for cross-references and record a reviewed-with-dependencies or reasoned no-material-dependencies disposition."
+        "Map the page’s specific eligibility and deadline statements to the current official EEA Act and implementing regulation.",
+        "Verify the displayed fee and any later fee instrument separately.",
+        "Resolve the linked EU card-format dependency and post-transition specimen/practice questions.",
+        "Do not use guidance acceptance as proof of topic coverage or local police practice."
       ]
     },
     {
@@ -1209,11 +1247,14 @@
     },
     {
       "source_id": "hr-mvep-stale-faq",
-      "status": "not_reviewed",
-      "dependency_ids": [],
-      "evidence": "No source-level dependency scan has been recorded. Absence from the dependency graph is not a finding that the source has no material references.",
+      "status": "known_edges_not_exhaustive",
+      "dependency_ids": [
+        "hr-mvep-stale-faq-historical-law-references"
+      ],
+      "evidence": "Manual scan of all 17 FAQ entries recorded the identified Schengen, visa/stay, Foreigners Act and General Administrative Procedure Act references. The page contains known stale statements and is excluded from current use.",
       "remaining_work": [
-        "Inspect the source for cross-references and record a reviewed-with-dependencies or reasoned no-material-dependencies disposition."
+        "Verify the current rules behind any proposition before relying on it; the historical FAQ itself is not an operative source.",
+        "The 17-entry scan does not establish full Croatia visa-topic or dependency coverage."
       ]
     },
     {
@@ -1250,11 +1291,17 @@
     },
     {
       "source_id": "hr-mvep-visa-regulations",
-      "status": "not_reviewed",
-      "dependency_ids": [],
-      "evidence": "No source-level dependency scan has been recorded. Absence from the dependency graph is not a finding that the source has no material references.",
+      "status": "known_edges_not_exhaustive",
+      "dependency_ids": [
+        "hr-visa-code",
+        "hr-schengen-border-and-visa-list",
+        "hr-vis-and-data-protection",
+        "hr-eea-act-directive-2004-38"
+      ],
+      "evidence": "The MVEP page “Propisi” views reviewed on 2026-10-25 list the Visa Code, Regulation (EU) 2018/1806, VIS Regulation (EC) 767/2008, Directive 2004/38, and the national Visa System Regulation, Visa Rulebook, and NN 36/13 + 105/17 VIS regulation. These are index links, not operative cross-reference text. Browser representations of the Foreigners Act list conflict: a recent search extract includes NN 55/26, while older direct and legacy-route views show NN 40/25 and NN 151/22. The MUP index checked the same day directly lists NN 55/26. This records known linked subject areas only; it is not an exhaustive dependency scan or currentness determination.",
       "remaining_work": [
-        "Inspect the source for cross-references and record a reviewed-with-dependencies or reasoned no-material-dependencies disposition."
+        "Verify every listed instrument against its official text and current responsible-authority index before relying on it for a legal proposition.",
+        "Review the substantive national/EU cross-references, amendments, status and issue-specific applicability in the linked instruments."
       ]
     },
     {
@@ -1381,9 +1428,10 @@
         "hr-law-enforcement-data-regime",
         "hr-vis-and-data-protection"
       ],
-      "evidence": "This source is linked to the listed dependency records. The register does not yet prove that every material reference in this source has been found or that linked dependencies are resolved.",
+      "evidence": "On 2026-10-25 the MUP and MVEP indexes were checked and both list the NN 36/13 + 105/17 VIS chain. The official NN 36/13 text refers in Article 1(2) to Regulation (EC) No 767/2008 and contains data/access and rights/oversight provisions in Articles 21 and 35–37; NN 105/17 Article 1 replaces Article 21(3). This is a bounded screen, not an exhaustive dependency, currentness or post-recast EU-law review.",
       "remaining_work": [
-        "Inspect source text and record every material national/EU instrument, amendment, validity judgment, successor, and procedural dependency; resolve each linked edge."
+        "Review every cross-reference, amendment, validity judgment, successor and procedural dependency; reconcile the national provisions with later EU VIS law and the GDPR/LED division for specific processing purposes.",
+        "Map each VIS/SIS controller, rights route, exceptions and complaint/remedy path; resolve the linked dependency records."
       ]
     },
     {
@@ -1393,9 +1441,10 @@
         "hr-law-enforcement-data-regime",
         "hr-vis-and-data-protection"
       ],
-      "evidence": "This source is linked to the listed dependency records. The register does not yet prove that every material reference in this source has been found or that linked dependencies are resolved.",
+      "evidence": "On 2026-10-25 the MUP and MVEP indexes were checked and both list the NN 36/13 + 105/17 VIS chain. The official NN 36/13 text refers in Article 1(2) to Regulation (EC) No 767/2008 and contains data/access and rights/oversight provisions in Articles 21 and 35–37; NN 105/17 Article 1 replaces Article 21(3). This is a bounded screen, not an exhaustive dependency, currentness or post-recast EU-law review.",
       "remaining_work": [
-        "Inspect source text and record every material national/EU instrument, amendment, validity judgment, successor, and procedural dependency; resolve each linked edge."
+        "Review every cross-reference, amendment, validity judgment, successor and procedural dependency; reconcile the national provisions with later EU VIS law and the GDPR/LED division for specific processing purposes.",
+        "Map each VIS/SIS controller, rights route, exceptions and complaint/remedy path; resolve the linked dependency records."
       ]
     },
     {
@@ -1416,9 +1465,10 @@
         "hr-schengen-border-and-visa-list",
         "hr-visa-code"
       ],
-      "evidence": "This source is linked to the listed dependency records. The register does not yet prove that every material reference in this source has been found or that linked dependencies are resolved.",
+      "evidence": "The official NN 92/21 text was checked on 2026-10-25: Articles 1–2 state the visa-system/means subject matter and Regulation (EU) 2018/1806 implementation; Article 9 contains original means figures and Article 10 repeals NN 55/15. MVEP representations consistently list NN 92/21, but the page has conflicting Foreigners Act cutoffs across browser snapshots and no publisher update date; the decree’s complete currentness remains unverified.",
       "remaining_work": [
-        "Inspect source text and record every material national/EU instrument, amendment, validity judgment, successor, and procedural dependency; resolve each linked edge."
+        "Verify the current official amendment/validity chain and applicable current means thresholds; do not infer them from the original NN 92/21 text or an undated index.",
+        "Inspect all source cross-references and map the decree to current EU visa law, the visa rulebook, fee rules and EEA-family safeguards."
       ]
     },
     {
@@ -1598,6 +1648,82 @@
       "evidence": "Official decision NN 39/26 expressly concerns and repeals Administrative Disputes Act Article 169(2), a transitional provision for cases under the former Act where the hearing had closed before 1 July 2024.",
       "remaining_work": [
         "Verify exact effective timing and application to an individual transitional proceeding if one is in scope; no general current EEA procedure effect is inferred."
+      ]
+    },
+    {
+      "source_id": "hr-mup-sis-rights-guidance",
+      "status": "known_edges_not_exhaustive",
+      "dependency_ids": [
+        "hr-law-enforcement-data-regime",
+        "hr-vis-and-data-protection"
+      ],
+      "evidence": "The live source/form text and official page references were reviewed on 2026-10-24. The stated SIS/VIS instruments are linked to the existing law-enforcement-data and VIS/data-protection dependency records. This establishes the cited edges only; processing purpose, controller competence, current consolidated rules, exceptions, complaint route and remedy effect remain unresolved.",
+      "remaining_work": [
+        "Map the exact provision-to-form/request-right relationship and current controller/authority route.",
+        "Resolve the linked dependency groups against current official EU and Croatian sources; do not treat source acceptance as legal sufficiency."
+      ]
+    },
+    {
+      "source_id": "hr-mup-sis-access-form",
+      "status": "known_edges_not_exhaustive",
+      "dependency_ids": [
+        "hr-law-enforcement-data-regime",
+        "hr-vis-and-data-protection"
+      ],
+      "evidence": "The live source/form text and official page references were reviewed on 2026-10-24. The stated SIS/VIS instruments are linked to the existing law-enforcement-data and VIS/data-protection dependency records. This establishes the cited edges only; processing purpose, controller competence, current consolidated rules, exceptions, complaint route and remedy effect remain unresolved.",
+      "remaining_work": [
+        "Map the exact provision-to-form/request-right relationship and current controller/authority route.",
+        "Resolve the linked dependency groups against current official EU and Croatian sources; do not treat source acceptance as legal sufficiency."
+      ]
+    },
+    {
+      "source_id": "hr-mup-sis-erasure-form",
+      "status": "known_edges_not_exhaustive",
+      "dependency_ids": [
+        "hr-law-enforcement-data-regime",
+        "hr-vis-and-data-protection"
+      ],
+      "evidence": "The live source/form text and official page references were reviewed on 2026-10-24. The stated SIS/VIS instruments are linked to the existing law-enforcement-data and VIS/data-protection dependency records. This establishes the cited edges only; processing purpose, controller competence, current consolidated rules, exceptions, complaint route and remedy effect remain unresolved.",
+      "remaining_work": [
+        "Map the exact provision-to-form/request-right relationship and current controller/authority route.",
+        "Resolve the linked dependency groups against current official EU and Croatian sources; do not treat source acceptance as legal sufficiency."
+      ]
+    },
+    {
+      "source_id": "hr-mup-sis-correction-form",
+      "status": "known_edges_not_exhaustive",
+      "dependency_ids": [
+        "hr-law-enforcement-data-regime",
+        "hr-vis-and-data-protection"
+      ],
+      "evidence": "The live source/form text and official page references were reviewed on 2026-10-24. The stated SIS/VIS instruments are linked to the existing law-enforcement-data and VIS/data-protection dependency records. This establishes the cited edges only; processing purpose, controller competence, current consolidated rules, exceptions, complaint route and remedy effect remain unresolved.",
+      "remaining_work": [
+        "Map the exact provision-to-form/request-right relationship and current controller/authority route.",
+        "Resolve the linked dependency groups against current official EU and Croatian sources; do not treat source acceptance as legal sufficiency."
+      ]
+    },
+    {
+      "source_id": "hr-mvep-vis-rights-guidance",
+      "status": "known_edges_not_exhaustive",
+      "dependency_ids": [
+        "hr-vis-and-data-protection"
+      ],
+      "evidence": "The live source/form text and official page references were reviewed on 2026-10-24. The stated SIS/VIS instruments are linked to the existing law-enforcement-data and VIS/data-protection dependency records. This establishes the cited edges only; processing purpose, controller competence, current consolidated rules, exceptions, complaint route and remedy effect remain unresolved.",
+      "remaining_work": [
+        "Map the exact provision-to-form/request-right relationship and current controller/authority route.",
+        "Resolve the linked dependency groups against current official EU and Croatian sources; do not treat source acceptance as legal sufficiency."
+      ]
+    },
+    {
+      "source_id": "hr-mvep-vis-rights-form",
+      "status": "known_edges_not_exhaustive",
+      "dependency_ids": [
+        "hr-vis-and-data-protection"
+      ],
+      "evidence": "The live source/form text and official page references were reviewed on 2026-10-24. The stated SIS/VIS instruments are linked to the existing law-enforcement-data and VIS/data-protection dependency records. This establishes the cited edges only; processing purpose, controller competence, current consolidated rules, exceptions, complaint route and remedy effect remain unresolved.",
+      "remaining_work": [
+        "Map the exact provision-to-form/request-right relationship and current controller/authority route.",
+        "Resolve the linked dependency groups against current official EU and Croatian sources; do not treat source acceptance as legal sufficiency."
       ]
     }
   ],

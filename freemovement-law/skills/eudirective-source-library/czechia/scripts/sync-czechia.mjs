@@ -5,17 +5,16 @@ import { createHash } from 'node:crypto';
 import { mkdir, readFile, readdir, copyFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { atomicProjectWrite, projectTempPath } from '../../../runtime-storage.mjs';
+import { atomicProjectWrite, projectTempPath } from '../../runtime-storage.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const WORK = projectTempPath(path.join(ROOT, 'work'));
 const RAW = path.join(WORK, 'raw');
-const CANDIDATES = path.join(ROOT, 'candidates');
 const DOCUMENTS = path.join(ROOT, 'documents');
-const MANIFEST_PATH = path.join(ROOT, 'references', 'candidate-manifest.json');
+const MANIFEST_PATH = path.join(ROOT, 'references', 'source-register.json');
 const STATE_PATH = path.join(WORK, 'state.json');
 const REPORT_PATH = path.join(WORK, 'latest-report.json');
-const VERSION = '0.4.1';
+const VERSION = '0.4.2';
 const HTML_CONVERSION_VERSION = '0.3.0';
 const MAX_SOURCE_BYTES = 25 * 1024 * 1024;
 const sha = bytes => createHash('sha256').update(bytes).digest('hex');
@@ -40,10 +39,8 @@ function workFile(relative, area) {
     if (!portable.startsWith('work/raw/')) throw new Error(`Saved path is outside work/raw: ${relative}`);
     return projectTempPath(path.resolve(ROOT, ...portable.split('/')));
   }
-  if (!portable.startsWith('candidates/')) throw new Error(`Saved candidate path is outside candidates/: ${relative}`);
-  const resolved = path.resolve(ROOT, ...portable.split('/'));
-  if (!resolved.startsWith(`${CANDIDATES}${path.sep}`)) throw new Error(`Saved candidate path is outside candidates/: ${relative}`);
-  return resolved;
+  if (!portable.startsWith('work/pending/')) throw new Error(`Saved review path is outside work/pending/: ${relative}`);
+  return projectTempPath(path.resolve(ROOT, ...portable.split('/')));
 }
 function candidateClass(source) {
   const type = source.source_type;
@@ -53,7 +50,7 @@ function candidateClass(source) {
   if (type === 'official_guidance_directory' || type === 'official_forms_directory' || type === 'official_mission_directory' || type === 'discovery_repository') return 'discovery';
   throw new Error(`No candidate folder mapping for source type ${type || '(missing)'}.`);
 }
-function candidateRelativePath(source) { return path.posix.join('candidates', candidateClass(source), `${safe(source.id)}.md`); }
+function candidateRelativePath(source) { return path.posix.join('work', 'pending', candidateClass(source), `${safe(source.id)}.md`); }
 function errorDetails(error) {
   const cause = error?.cause;
   return [error?.message || String(error), cause?.code, cause?.message]
@@ -356,19 +353,27 @@ if (mode === '--ack') {
 } else if (mode === '--verify') {
   const failures = [];
   for (const [id, row] of Object.entries(state.sources)) {
-    if (!row.raw_path || !row.candidate_path) continue;
+    if (!row.raw_path || (!row.candidate_path && !row.accepted_document_path)) continue;
     try {
       const source = manifest.documents.find(item => item.id === id);
       const raw = await readFile(workFile(row.raw_path, 'raw'));
-      const candidate = await readFile(workFile(row.candidate_path, 'candidates'));
       if (!source) throw new Error('source ID is missing from the current manifest');
       if (sha(raw) !== row.source_bytes_sha256) throw new Error('saved source-byte hash mismatch');
       const converted = await renderSavedMarkdown(source, row, raw);
-      if (sha(Buffer.from(converted.markdown, 'utf8')) !== row.markdown_sha256 || sha(candidate) !== row.markdown_sha256) throw new Error('offline conversion replay or candidate hash mismatch');
+      if (sha(Buffer.from(converted.markdown, 'utf8')) !== row.markdown_sha256) throw new Error('offline conversion replay hash mismatch');
+      let candidate;
+      if (row.candidate_path) {
+        try { candidate = await readFile(workFile(row.candidate_path, 'candidates')); }
+        catch (error) { if (error.code !== 'ENOENT') throw error; }
+      }
+      if (candidate && sha(candidate) !== row.markdown_sha256) throw new Error('saved review candidate hash mismatch');
       if (row.accepted_markdown_sha256) {
         const acceptedPath = row.accepted_document_path ? path.resolve(ROOT, ...row.accepted_document_path.split('/')) : path.join(DOCUMENTS, 'guidance', `${safe(id)}.md`);
         const accepted = await readFile(acceptedPath);
         if (sha(accepted) !== row.accepted_markdown_sha256) throw new Error('saved accepted-copy hash mismatch');
+        if (!candidate && row.accepted_from_conversion_sha256 !== row.markdown_sha256) throw new Error('accepted copy has no candidate and lacks its conversion provenance hash');
+      } else if (!candidate) {
+        throw new Error('no review candidate or accepted document is available');
       }
     } catch (error) { failures.push({ source_id: id, error: error.message }); }
   }
@@ -432,10 +437,16 @@ if (mode === '--ack') {
           catch (error) { if (error.code !== 'ENOENT') throw error; }
           if (candidateBytes && !previous.markdown_sha256) throw new Error(`Untracked candidate exists for ${source.id}; refusing to overwrite it.`);
           if (candidateBytes && sha(candidateBytes) !== previous.markdown_sha256) throw new Error(`Candidate was manually changed for ${source.id}; refusing to overwrite it.`);
-          const candidateNeedsWrite = !candidateBytes || !markdownUnchanged;
+          let acceptedCopyUnchanged = false;
+          if (!candidateBytes && markdownUnchanged && previous.accepted_document_path && previous.accepted_from_conversion_sha256 === markdownHash && previous.accepted_markdown_sha256) {
+            const acceptedPath = path.resolve(ROOT, ...previous.accepted_document_path.split('/'));
+            try { acceptedCopyUnchanged = sha(await readFile(acceptedPath)) === previous.accepted_markdown_sha256; }
+            catch (error) { if (error.code !== 'ENOENT') throw error; }
+          }
+          const candidateNeedsWrite = (!candidateBytes && !acceptedCopyUnchanged) || !markdownUnchanged;
           await atomic(workFile(rawPath, 'raw'), response.bytes);
           if (candidateNeedsWrite) await atomic(workFile(candidatePath, 'candidates'), markdownBytes);
-          state.sources[source.id] = { source_bytes_sha256: sourceHash, markdown_sha256: markdownHash, raw_path: rawPath, format: response.format, candidate_path: candidatePath, checked_at: checkedAt, ...(response.retrieval_as_of ? { retrieval_as_of: response.retrieval_as_of } : {}), final_url: response.final_url, content_type: response.content_type, etag: response.etag, last_modified: response.last_modified, extractor: converted.method, ...(previous.accepted_markdown_sha256 ? { accepted_markdown_sha256: previous.accepted_markdown_sha256, accepted_at: previous.accepted_at } : {}) };
+          state.sources[source.id] = { source_bytes_sha256: sourceHash, markdown_sha256: markdownHash, raw_path: rawPath, format: response.format, candidate_path: candidatePath, checked_at: checkedAt, ...(response.retrieval_as_of ? { retrieval_as_of: response.retrieval_as_of } : {}), final_url: response.final_url, content_type: response.content_type, etag: response.etag, last_modified: response.last_modified, extractor: converted.method, ...(previous.accepted_document_path ? { accepted_document_path: previous.accepted_document_path, accepted_markdown_sha256: previous.accepted_markdown_sha256, accepted_from_conversion_sha256: previous.accepted_from_conversion_sha256, accepted_at: previous.accepted_at } : {}) };
         }
         observations.push({ source_id: source.id, status, lane, official_url: source.url, ...(response.download_url ? { download_url: response.download_url, consolidation_date_requested: response.retrieval_as_of } : {}), final_url: response.final_url, content_type: response.content_type, format: response.format, language: source.language, source_bytes_sha256: sourceHash, markdown_sha256: markdownHash, source_bytes: response.bytes.length, markdown_characters: converted.markdown.length, extraction: converted.method });
       } catch (error) {
@@ -445,7 +456,7 @@ if (mode === '--ack') {
     }
   }
   await Promise.all([worker(), worker()]);
-  const report = { report_version: 2, pack: manifest.pack, pack_version: VERSION, mode, checked_at: checkedAt, candidate_source_count: manifest.candidate_source_count, guidance_target_count: guidance.length, stable_url_pdf_target_count: legislation.length, retrieved_count: observations.length, failed_count: failures.length, blocked_law_count: blocked.length, monitor_only_target_count: monitorOnly.length, observations, blocked, monitor_only: monitorOnly, failures, actions: ['Review source identity, consolidation date, and candidate Markdown; the acknowledgement action remains limited to guidance candidates.', 'Legislation uses the public e-Sbírka stable download URL with the check date and PDF format; the route is keyless and is not an API.', 'A successful retrieval or conversion does not establish currentness, legal force, completeness, or applicability.'] };
+  const report = { report_version: 2, pack: manifest.pack, pack_version: VERSION, mode, checked_at: checkedAt, source_record_count: manifest.source_record_count, pending_review_artifact_count: manifest.pending_review_artifact_count, guidance_target_count: guidance.length, stable_url_pdf_target_count: legislation.length, retrieved_count: observations.length, failed_count: failures.length, blocked_law_count: blocked.length, monitor_only_target_count: monitorOnly.length, observations, blocked, monitor_only: monitorOnly, failures, actions: ['Review source identity, consolidation date, and temporary Markdown conversions; the acknowledgement action remains limited to guidance records.', 'Legislation uses the public e-Sbírka stable download URL with the check date and PDF format; the route is keyless and is not an API.', 'A successful retrieval or conversion does not establish currentness, legal force, completeness, or applicability.'] };
   if (mode === '--sync') {
     await atomic(STATE_PATH, `${JSON.stringify(state, null, 2)}\n`);
     await atomic(REPORT_PATH, `${JSON.stringify(report, null, 2)}\n`);

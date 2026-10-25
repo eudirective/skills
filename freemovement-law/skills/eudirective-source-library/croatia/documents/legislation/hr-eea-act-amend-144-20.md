@@ -1,9 +1,9 @@
 # Amendments NN 144/20
 
 - Jurisdiction: croatia
-- Candidate ID: `hr-eea-act-amend-144-20`
+- Source ID: `hr-eea-act-amend-144-20`
 - Source type: `amending_act`
-- Candidate URL: https://narodne-novine.nn.hr/clanci/sluzbeni/2020_12_144_2767.html
+- Official source URL: https://narodne-novine.nn.hr/clanci/sluzbeni/2020_12_144_2767.html
 - Resolved URL: https://narodne-novine.nn.hr/clanci/sluzbeni/2020_12_144_2767.html
 - Retrieved: 2026-10-19T02:21:17+00:00
 - Media type: `text/html`

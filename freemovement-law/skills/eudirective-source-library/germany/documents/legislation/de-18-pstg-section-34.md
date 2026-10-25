@@ -1,0 +1,31 @@
+# Personenstandsgesetz § 34: foreign marriages and civil-status register
+
+- Jurisdiction: Germany (federal law)
+- Source ID: `de-18`
+- Official act abbreviation: `PStG`
+- Publisher: Federal Ministry of Justice / Federal Office of Justice, Gesetze im Internet
+- Publisher norm ID: `BJNR012210007`
+- Consolidated source build date: `20260806215503`
+- Consolidation note: `Stand Zuletzt geändert durch Art. 4 G v. 21.7.2026 I Nr. 221`
+- Official XML package: https://www.gesetze-im-internet.de/pstg/xml.zip
+- Official page: https://www.gesetze-im-internet.de/pstg/__34.html
+- Retrieved: 2026-10-18T23:27:28+00:00
+- Official source-package SHA-256: `baccf4427d552b97f0f71583ed5ab47cda4fefa3e84e0757fcb91695f48183af`
+
+> **Accepted dated local text copy.** This extracted German text reproduces the official Gesetze im Internet consolidation identified above and was reproduced in the recorded offline replay on 23 October 2026. No independent clause-by-clause comparison with the publisher page or authentic Bundesgesetzblatt was performed.
+> **Date and scope limits.** The text is a frozen copy at the publisher build date above. Currentness after that date, provisions outside the accepted source scope, topic coverage, and country completion are not certified. Consult the official page for later changes and the electronic Bundesgesetzblatt for a specific discrepancy or commencement issue.
+> **Attribution:** Federal Ministry of Justice / Federal Office of Justice, Gesetze im Internet. The publisher states German legal norms are available for free use and reuse.
+
+## Consolidated statutory text (German)
+
+### § 34 Eheschließungen im Ausland oder vor ermächtigten Personen im Inland
+
+(1) Hat ein Deutscher im Ausland die Ehe geschlossen, so kann die Eheschließung auf Antrag im Eheregister beurkundet werden; für den Besitz der deutschen Staatsangehörigkeit ist der Zeitpunkt der Antragstellung maßgebend. Die §§ 3 bis 7, 9, 10, 15 und 16 gelten entsprechend. Gleiches gilt für Staatenlose, heimatlose Ausländer und ausländische Flüchtlinge im Sinne des Abkommens über die Rechtsstellung der Flüchtlinge vom 28. Juli 1951 (BGBl. 1953 II S. 559) mit gewöhnlichem Aufenthalt im Inland. Antragsberechtigt sind die Ehegatten, sind beide verstorben, deren Eltern und Kinder.
+
+(2) Die Beurkundung der Eheschließung nach Absatz 1 erfolgt auch dann, wenn die Ehe im Inland zwischen Eheschließenden, von denen keiner Deutscher ist, vor einer von der Regierung des Staates, dem einer der Eheschließenden angehört, ordnungsgemäß ermächtigten Person in der nach dem Recht dieses Staates vorgeschriebenen Form geschlossen worden ist.
+
+(3) Personen, die eine Erklärung nach § 94 des Bundesvertriebenengesetzes abgegeben haben, sind nur mit den nach dieser Erklärung geführten Vornamen und Familiennamen einzutragen; dies gilt entsprechend für Vertriebene und Spätaussiedler, deren Name nach den Vorschiften des Gesetzes über die Änderung von Familiennamen und Vornamen geändert worden ist.
+
+(4) Zuständig für die Beurkundung ist das Standesamt, in dessen Zuständigkeitsbereich die antragsberechtigte Person ihren Wohnsitz hat oder zuletzt hatte oder ihren gewöhnlichen Aufenthalt hat. Ergibt sich danach keine Zuständigkeit, so beurkundet das Standesamt I in Berlin die Eheschließung.
+
+(5) Das Standesamt I in Berlin führt ein Verzeichnis der nach den Absätzen 1 und 2 beurkundeten Eheschließungen.

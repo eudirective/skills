@@ -1,0 +1,103 @@
+# UDSC new document and application forms index
+
+Jurisdiction: Poland
+
+Source ID: pl-19
+
+Source class: official_forms_index
+
+Official publisher: Office for Foreigners (UDSC)
+
+Official source record: [https://www.gov.pl/web/udsc/nowe-wzory-dokumentow-i-wnioskow](https://www.gov.pl/web/udsc/nowe-wzory-dokumentow-i-wnioskow)
+
+Official text/content URL: [https://www.gov.pl/web/udsc/nowe-wzory-dokumentow-i-wnioskow](https://www.gov.pl/web/udsc/nowe-wzory-dokumentow-i-wnioskow)
+
+Language: pl
+
+Version evidence: Parent index links forms and downloadable archives. Rediscover attachments from this page and validate titles/version markers rather than pinning mutable ZIP or PDF URLs.
+
+Retrieved: 2026-10-19T01:52:53+00:00
+
+Source response SHA-256: edf54f880179517a993dc462f76076e5176734f5727ac2fdf14057da670dfc05
+
+Monitor candidate archive SHA-256: 5c4af8b373ae93a71b447ee570cc11852b33bfc5d2c720571d7e7b01d7ed638f; archive path candidates/poland_candidate_promotion_20261025/Poland/pl-19.md
+
+Conversion review: HTML body extraction from archived official response; body-only replay against original response verified. HTML layout and whitespace normalized to Markdown; linked attachments not copied.
+
+Local-copy basis: The retained material is textual content from gov.pl. Its footer states that textual content, excluding audiovisual material, is made available under CC BY-SA 4.0. Source, retrieval time and Markdown transformation are recorded. Images, audio/video and linked attachments are excluded.
+
+## Source role and scope
+
+Historical reference only: UDSC new document and application forms index. Do not treat as current law, deadline or form. Parent index links forms and downloadable archives. Rediscover attachments from this page and validate titles/version markers rather than pinning mutable ZIP or PDF URLs.
+
+This is a 2021 announcement about new document formats and application forms. Linked forms and attachments are not copied; rediscover current versions from the live forms index.
+
+## Limits
+
+This is a dated source snapshot, not a legal conclusion. Recheck the official record for later amendments, page changes, eligibility, filing channel and case-specific applicability. Local-copy acceptance does not accept any topic or certify country completion. This source is historical or transitional and must not be presented as current guidance.
+
+## Source text
+
+Powrót
+
+Nowe wzory dokumentów i wniosków
+
+Od 2 sierpnia 2021 r. dokumenty wydawane obywatelom państw członkowskich UE, Europejskiego Obszaru Gospodarczego, Szwajcarii i członkom ich rodzin będą miały nowy format analogiczny do karty pobytu. Dzięki temu będą one lepiej zabezpieczone, ujednolicone i bardziej trwałe. Obowiązywać będą także nowe wzory wniosków.
+
+Od 2 sierpnia br. w formacie analogicznym do karty pobytu wydawane będą następujące dokumenty:
+
+– zaświadczenie o zarejestrowaniu pobytu obywatela UE
+
+– karta pobytowa (wydawana członkowi rodziny obywatela UE)
+
+– dokument potwierdzający prawo stałego pobytu (wydawany obywatelowi UE)
+
+– karta stałego pobytu (wydawana członkowi rodziny obywatela UE).
+
+Powyższe zmiany wprowadza nowelizacja ustawy o wjeździe[i], która wynikła ze zmian w prawie UE.
+
+W konsekwencji, 2 sierpnia br. wejdą w życie nowe rozporządzenia Ministra Spraw Wewnętrznych i Administracji[ii] w sprawie wniosków i dokumentów dotyczących prawa pobytu i prawa stałego pobytu na terytorium Polski obywateli UE oraz członków ich rodzin. Określają one m.in. wzory wniosków, zaświadczeń oraz listę dokumentów dołączanych do wniosków.
+
+Dotychczasowe dokumenty wydane do 1 sierpnia 2021 r. zachowają ważność przez okres, na który zostały wydane, nie dłużej jednak niż do 3 sierpnia 2026 r.
+
+Jednocześnie mając na uwadze potrzebę ujednolicenia wyglądu i zabezpieczeń wszystkich dokumentów wydawanych cudzoziemcom na terytorium Polski, od 2 sierpnia br. na nowy wzór karty pobytu przeniesione zostają także:
+
+– dokument „Zgoda na pobyt tolerowany”
+
+– polski dokument tożsamości cudzoziemca
+
+– tymczasowe zaświadczenie tożsamości cudzoziemca[iii].
+
+[i] ustawa z dnia 10 grudnia 2020 r. o zmianie ustawy o wjeździe na terytorium Rzeczypospolitej Polskiej, pobycie oraz wyjeździe z tego terytorium państw członkowskich Unii Europejskiej i członków ich rodzin oraz niektórych innych ustaw (Dz. U. poz. 2369)
+
+[ii] rozporządzenie Ministra Spraw Wewnętrznych i Administracji z dnia 26 lipca 2021 r. w sprawie wniosków i dokumentów dotyczących prawa stałego pobytu na terytorium Rzeczypospolitej Polskiej obywateli Unii Europejskiej oraz członków ich rodzin (Dz. U. poz. 1391)
+
+rozporządzenie Ministra Spraw Wewnętrznych i Administracji z dnia 26 lipca 2021 r. w sprawie wniosków i dokumentów dotyczących prawa pobytu na terytorium Rzeczypospolitej Polskiej obywateli Unii Europejskiej oraz członków ich rodzin (Dz. U. poz. 1392)
+
+[iii] nowe formaty tych dokumentów wynikają ze zmian wprowadzonych rozporządzeniem Ministra Spraw Wewnętrznych i Administracji z dnia 26 lipca 2021 r. zmieniającym rozporządzenie w sprawie dokumentów wydawanych cudzoziemcom (Dz. U. poz 1388) oraz rozporządzeniem Ministra Spraw Wewnętrznych i Administracji z dnia 26 lipca 2021 r. zmieniającym rozporządzenie w sprawie tymczasowego zaświadczenia tożsamości cudzoziemca (Dz. U. poz. 1389).
+
+Szczegółowy materiał informacyjny, ulotki informacyjne na temat nowych dokumentów oraz wnioski można pobrać poniżej.
+
+Materiały
+
+Wnioski
+wnioski​_214.zip0.52MB
+Neue Muster und Formate von Aufenthaltsdokumenten für EU-Bürger sowie ihrer Familienmitglieder ab dem 2. August 2021
+Neue​_Muster​_und​_Formate​_von​_Aufenthaltsdokumenten​_für​_EU-Bürger​_sowie​_ihrer​_Familienmitglieder​_ab​_dem​_2​_August​_2021.pdf0.35MB
+New templates and formats for residence documents for EU citizens and their family members apply from August 2nd, 2021
+New​_templates​_and​_formats​_for​_residence​_documents​_for​_EU​_citizens​_and​_their​_family​_members​_apply​_from​_August​_2nd,​_2021.pdf0.35MB
+Nowe wzory i formaty dokumentów pobytowych dla obywateli UE oraz członków ich rodzin od 2 sierpnia 2021 r
+Nowe​_wzory​_i​_formaty​_dokumentów​_pobytowych​_dla​_obywateli​_UE​_oraz​_członków​_ich​_rodzin​_od​_2​_sierpnia​_2021​_r.pdf0.34MB
+Nuevos modelos y formatos de permisos de residencia para ciudadanos de la UE y sus familiares a partir del 2 de agosto de 2021
+Nuevos​_modelos​_y​_formatos​_de​_permisos​_de​_residencia​_para​_ciudadanos​_de​_la​_UE​_y​_sus​_familiares​_a​_partir​_del​_2​_de​_agosto​_de​_2021.pdf0.35MB
+Nuovi modelli e formati dei titoli di soggiorno per i cittadini dell’UE e i loro familiari a partire dal 2 agosto 2021
+Nuovi​_modelli​_e​_formati​_dei​_titoli​_di​_soggiorno​_per​_i​_cittadini​_dell’UE​_e​_i​_loro​_familiari​_a​_partire​_dal​_2​_agosto​_2021.pdf0.34MB
+Nouveaux modèles et formats de documents de séjour pour les citoyens de l'UE et les membres de leur famille à partir du 2 août 2021
+Nouveaux​_modèles​_et​_formats​_de​_documents​_de​_séjour​_pour​_les​_citoyens​_de​_l'UE​_et​_les​_membres​_de​_leur​_famille​_à​_partir​_du​_2​_août​_2021.pdf0.43MB
+Dokument potwierdzający prawo stałego pobytu
+Dokument​_potwierdzający​_prawo​_stałego​_pobytu.pdf3.85MB
+Zaświadczenie o zarejestrowaniu obywatela UE
+Zaświadczenie​_o​_zarejestrowaniu​_obywatela​_UE.pdf3.94MB
+Zdjęcia (2)
+
+Pokaż zdjęcie 1 z galerii.Pokaż zdjęcie 2 z galerii.

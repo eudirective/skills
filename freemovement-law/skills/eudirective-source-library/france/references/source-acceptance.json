@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0.0",
   "jurisdiction": "FR",
-  "updated": "2026-10-21",
+  "updated": "2026-10-24",
   "acceptance_is_distinct_from_coverage": true,
   "policy": {
     "official_reference_use": "A human-reviewed official link is usable within its recorded scope after checking publisher, source identity, language, displayed date/version or cutoff, relevant content, and visible limits. No local capture, conversion, hash, or replay is required for ordinary link use.",
-    "local_artifact_acceptance": "No local French statute copy is accepted by this register. Copy-specific checks apply only if a copy is later retained; they do not gate these official links.",
+    "local_artifact_acceptance": "Ten accepted local public-text snapshots are recorded: eight Service Public/DILA guidance, procedure-directory and administration-directory records, one CNIL guidance text reproduction under CC BY-ND 4.0 FR, and one Conseil d’État court-source guide under its public-information reuse terms. No local French statutory text is accepted. Each copy has its own source identity, version, extraction, reuse and limitation record.",
     "coverage": "Usable official references do not by themselves establish adequate topic coverage or country completion."
   },
   "official_reference_reviews": {
@@ -41,6 +41,394 @@
         "Some rules depend on the legislative CESEDA part, other procedural codes, EU instruments, or mission-specific practice.",
         "This approval is for reference use only and grants no permission to copy or republish the page."
       ]
+    },
+    "fr-cada-open-opinions-dataset": {
+      "status": "usable_official_reference",
+      "publisher": "CADA / data.gouv.fr",
+      "url": "https://www.data.gouv.fr/explore/cada",
+      "checked_on": "2026-10-24",
+      "language": "French",
+      "version_or_cutoff": "Live Explore page opened 2026-10-24; data refresh date and search completeness are not stated.",
+      "scope": "Search interface for CADA opinions and advice, reported to cover records from the 1980s onward.",
+      "reviewed_content": "The page identifies its source as the CADA opinions and advice dataset published on data.gouv.fr; the original cada.data.gouv.fr candidate endpoint did not load in this check, while the current Explore page opened.",
+      "limitations": [
+        "This is an index/reuse interface, not the issuing decision record.",
+        "Search result coverage, refresh and redaction behavior are not established.",
+        "Use individual CADA records and governing CRPA text for legal propositions.",
+        "The candidate is the search/catalog interface, not the underlying opinions; no dataset or individual decision was downloaded as a local document."
+      ]
+    },
+    "fr-datagouv-legi-dataset": {
+      "status": "usable_official_reference",
+      "publisher": "Direction de l’information légale et administrative (DILA), data.gouv.fr",
+      "url": "https://www.data.gouv.fr/datasets/legi-codes-lois-et-reglements-consolides",
+      "checked_on": "2026-10-24",
+      "language": "French",
+      "version_or_cutoff": "Dataset metadata updated 2026-10-22; page displays Licence Ouverte / Open Licence.",
+      "scope": "Catalogue and acquisition documentation for LEGI consolidated law data, including code/law/decree coverage and DILA bulk/API routes.",
+      "reviewed_content": "Current metadata describes consolidated codes and legal texts, historical/repealed versions, selected orders, HTTPS/FTPS access, a registered API route, and the Open Licence.",
+      "limitations": [
+        "Dataset metadata update date does not establish that a specific legal provision is current.",
+        "LEGI does not include every circular or order; check the authoritative Journal officiel/Légifrance text for legal status.",
+        "No local dataset was downloaded or replayed."
+      ]
+    },
+    "fr-dila-legi-bulk-directory": {
+      "status": "usable_official_reference",
+      "publisher": "DILA open-data directory",
+      "url": "https://echanges.dila.gouv.fr/OPENDATA/LEGI/",
+      "checked_on": "2026-10-24",
+      "language": "French",
+      "version_or_cutoff": "Live directory listing checked 2026-10-24; latest dated LEGI delta displayed was 2026-10-21, with a 2025-07-13 global Freemium baseline.",
+      "scope": "Official HTTPS index of LEGI baseline and delta archive files.",
+      "reviewed_content": "Directory identity, named baseline package and dated delta sequence were inspected through 2026-10-21.",
+      "limitations": [
+        "The listing is not current through 2026-10-24 and does not prove every delta is present or replayable.",
+        "No archive was downloaded; no retrieval rule, hash, correction/deletion handling, or reconstructed current text was validated.",
+        "Use as an acquisition lead only until a complete replay is independently verified."
+      ]
+    },
+    "fr-nlex-profile": {
+      "status": "discovery_only_already_represented",
+      "publisher": "European Commission N-Lex",
+      "url": "https://n-lex.europa.eu/n-lex/info/info-fr/index",
+      "checked_on": "2026-10-24",
+      "language": "English/French",
+      "version_or_cutoff": "Live profile checked 2026-10-24; no version date.",
+      "scope": "Discovery profile identifying Légifrance as France’s national law portal.",
+      "reviewed_content": "Profile confirms Légifrance identity and gives basic source categories.",
+      "limitations": [
+        "Discovery only, not a French legal publisher or source of law.",
+        "Already represented in France source-list and README; no duplicate accepted source or local copy."
+      ]
+    },
+    "fr-dila-legifrance-dtd": {
+      "status": "usable_official_reference",
+      "publisher": "DILA open-data technical directory",
+      "url": "https://echanges.dila.gouv.fr/OPENDATA/DTD_LEGIFRANCE/",
+      "checked_on": "2026-10-24",
+      "language": "French",
+      "version_or_cutoff": "The DILA index lists DTD_LEGIFRANCE_20181017.7z (2018-10-17), 2023 migration materials, and a 2024 NOR-technical document. The related data.gouv DTD resource says updated 2024-11-05 but redirects to this same index; that metadata date is not a newer package version.",
+      "scope": "Official DILA index of the LEGI DTD package and related technical/migration documents; potential source for a future parser, not a current-schema certification.",
+      "reviewed_content": "The DILA index and the LEGI dataset record were checked on 2026-10-24. The dataset describes DTD folders as applicable to the date in each folder name and says a new folder replaces the prior one when DTDs change; the current index still lists only the 2018 DTD package. The 2023 migration note documents XML ordering, line-break, and link changes. The 2024 data.gouv DTD resource resolves to the same index rather than a separate 2024 package.",
+      "limitations": [
+        "Accepted as a link to DILA's official technical-material index, with the listed package dates and scope recorded.",
+        "The 2018 DTD is the latest package listed, but its compatibility with current LEGI XML has not been tested. The post-2018 XML migration changes are a concrete reason to check current data before selecting a schema or implementing a parser.",
+        "The DTD package was not downloaded or validated, and no LEGI parser is being implemented in this batch."
+      ]
+    },
+    "fr-conseil-etat-450285-450288-2022": {
+      "status": "usable_official_reference",
+      "publisher": "Conseil d'État, ArianeWeb",
+      "url": "https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2022-02-24/450285",
+      "checked_on": "2026-10-24",
+      "language": "French",
+      "version_or_cutoff": "Joined decision nos. 450285 and 450288, 24 February 2022; follow-up decision no. 450285, 2 February 2024, after CJEU judgment C-143/22.",
+      "scope": "Official case-law references concerning review of the 2020 CESEDA recodification, including EU-family residence provisions and internal-border entry refusals.",
+      "reviewed_content": "The 2022 decision partially annulled CESEDA Articles L. 233-1 and L. 233-2 insofar as they excluded a dependent child of an EU citizen's spouse who was not that citizen's direct descendant, and partially annulled L. 554-1 on access to work for Dublin-transfer asylum applicants; it stayed the L. 332-3 issue pending the CJEU. The official 2024 follow-up (https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2024-02-02/450285) followed CJEU judgment C-143/22 and partially annulled the second sentence of L. 332-3 insofar as it was not limited to readmission under a pre-13 January 2009 agreement or arrangement.",
+      "limitations": [
+        "The original 2022 www.conseil-etat.fr URL returned 404; the official non-www ArianeWeb URL recorded here was opened successfully. The 2024 follow-up is separately linked in the reviewed-content note.",
+        "These decisions concern specific provisions of the 2020 CESEDA recodification. Check the current consolidated CESEDA and CJEU judgment C-143/22 for date-sensitive use.",
+        "This is a focused case reference, not a comprehensive search of French case law; no local copy is accepted."
+      ]
+    },
+    "fr-02-code-civil-international-adoption-(articles-370-2-to-370-5)": {
+      "status": "usable_official_reference",
+      "publisher": "DILA, Légifrance",
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000046369964/2026-04-19/",
+      "checked_on": "2026-10-24",
+      "language": "French",
+      "version_or_cutoff": "Official page displayed 'Version en vigueur au 19/04/2026'; Articles 370-2 to 370-5 display effect from 1 January 2023.",
+      "scope": "Code civil provisions on international adoption, conflict of laws, and effects in France of foreign adoptions (Articles 370-2 to 370-5).",
+      "reviewed_content": "The official section identifies Articles 370-2 to 370-5 and displays their current version at 19 April 2026, including the 1 January 2023 entry-into-force note for matters introduced from that date.",
+      "limitations": [
+        "Link-only reference; the section does not cover every adoption procedure, authority, or document requirement.",
+        "Apply the stated transitional date and check connected provisions for a specific issue.",
+        "No local copy or automated retrieval rule is accepted."
+      ]
+    },
+    "fr-03-code-civil-marriage-celebrated-abroad-(article-171-1-and-connected-provisio": {
+      "status": "usable_official_reference",
+      "publisher": "DILA, Légifrance",
+      "url": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006149973",
+      "checked_on": "2026-10-24",
+      "language": "French",
+      "version_or_cutoff": "Official page displayed 'Version en vigueur au 09/10/2026'; Article 171-1 in force since 1 March 2007.",
+      "scope": "Code civil provisions on marriage of French nationals abroad, centered on Article 171-1.",
+      "reviewed_content": "The official section identifies Article 171-1 and states the conditions for validity of marriages celebrated abroad, including the applicable form and French-law constraints.",
+      "limitations": [
+        "This is a narrow marriage-validity reference, not a complete civil-status or transcription procedure.",
+        "It does not establish residence or visa consequences by itself.",
+        "No local copy or automated retrieval rule is accepted."
+      ]
+    },
+    "fr-04-code-de-l’action-sociale-et-des-familles-international-adoption-provisions": {
+      "status": "usable_official_reference",
+      "publisher": "DILA, Légifrance",
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074069/LEGISCTA000006174341/",
+      "checked_on": "2026-10-24",
+      "language": "French",
+      "version_or_cutoff": "Official section displayed 'Version en vigueur au 01/09/2026'.",
+      "scope": "Code de l'action sociale et des familles, Section 4 on international adoption, Articles L. 225-17 to L. 225-20.",
+      "reviewed_content": "The official section identifies the international-adoption heading and current provisions on approval, placement support, and post-adoption accompaniment.",
+      "limitations": [
+        "The section is limited to the listed international-adoption provisions; it does not establish the full cross-border adoption process.",
+        "No local copy or automated retrieval rule is accepted."
+      ]
+    },
+    "fr-06-code-civil-article-47:-evidentiary-effect-and-verification-of-foreign-civil": {
+      "status": "usable_official_reference",
+      "publisher": "DILA, Légifrance",
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043895621/2026-05-13",
+      "checked_on": "2026-10-24",
+      "language": "French",
+      "version_or_cutoff": "Official page displayed Article 47 in force since 4 August 2021; page version dated 13 May 2026.",
+      "scope": "Code civil Article 47 on evidentiary effect and verification of foreign civil-status records.",
+      "reviewed_content": "The official page identifies Article 47 and its rule that foreign civil-status records have evidentiary effect subject to specified evidence of irregularity, falsification, or factual inaccuracy.",
+      "limitations": [
+        "This provision does not supply the complete verification procedure or all applicable legal dependencies.",
+        "No local copy or automated retrieval rule is accepted."
+      ]
+    },
+    "fr-07-code-de-justice-administrative": {
+      "status": "usable_official_reference",
+      "publisher": "DILA, Légifrance",
+      "url": "https://www.legifrance.gouv.fr/codes/id/LEGITEXT000006070933/",
+      "checked_on": "2026-10-24",
+      "language": "French",
+      "version_or_cutoff": "The official consolidated code page displayed a version in force at 21 October 2026; code data last updated 1 September 2026.",
+      "scope": "Full Code de justice administrative, governing administrative courts, proceedings, and remedies.",
+      "reviewed_content": "The official Légifrance code page identifies the full legislative and regulatory code. Separate provisions R. 312-18 and R. 421-1 are recorded below for visa jurisdiction and the general filing rule.",
+      "limitations": [
+        "Accepted as the official consolidated code reference; the full code is extensive and this review does not establish immigration-specific completeness.",
+        "Special statutory or regulatory routes and the decision-specific appeal notice may alter the applicable procedure or deadline.",
+        "Link-only reference; no local copy or automated retrieval rule is accepted."
+      ]
+    },
+    "fr-crpa-code": {
+      "status": "usable_official_reference",
+      "publisher": "DILA, Légifrance",
+      "url": "https://www.legifrance.gouv.fr/codes/id/LEGITEXT000031366350/",
+      "checked_on": "2026-10-24",
+      "language": "French",
+      "version_or_cutoff": "The official consolidated code page displayed a version in force at 8 October 2026; code data last updated 28 May 2026.",
+      "scope": "Full Code des relations entre le public et l'administration, including rules for interactions with public authorities and Book IV on administrative disputes and appeals.",
+      "reviewed_content": "The official code page identifies the complete CRPA. Book IV includes Title I on administrative appeals (Articles L. 410-1 to L. 412-8), with L. 411-1 stating that the following rules apply subject to special or contrary legislative and regulatory provisions.",
+      "limitations": [
+        "CRPA rules apply subject to special provisions; this link does not establish that a general administrative appeal is mandatory or available for any particular visa or residence decision.",
+        "Link-only reference; no local copy or automated retrieval rule is accepted."
+      ]
+    },
+    "fr-crpa-l411-1-appeals": {
+      "status": "usable_official_reference",
+      "publisher": "DILA, Légifrance",
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031367827",
+      "checked_on": "2026-10-24",
+      "language": "French",
+      "version_or_cutoff": "Article in force since 1 January 2016; Légifrance lists last modification on 21 January 2019.",
+      "scope": "CRPA Article L. 411-1, the opening rule for administrative appeals under Book IV.",
+      "reviewed_content": "The official article states that, subject to special or contrary legislative or regulatory provisions, administrative-appeal rules are set by the following CRPA provisions.",
+      "limitations": [
+        "The provision is a gateway and does not by itself establish a particular appeal, deadline, suspensive effect, or mandatory prior review.",
+        "Read the special route and the challenged decision's appeal notice before relying on general CRPA rules.",
+        "Link-only reference; no local copy or automated retrieval rule is accepted."
+      ]
+    },
+    "fr-cja-r312-18-visa-jurisdiction": {
+      "status": "usable_official_reference",
+      "publisher": "DILA, Légifrance",
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000046000401",
+      "checked_on": "2026-10-24",
+      "language": "French",
+      "version_or_cutoff": "Article in force since 2 July 2022, as amended by Decree No. 2022-962 of 29 June 2022.",
+      "scope": "CJA Article R. 312-18 on territorial jurisdiction for specified consular visa and travel-authorisation decisions.",
+      "reviewed_content": "The official article assigns disputes concerning individual consular-authority decisions on travel authorisations and entry visas for France to the Tribunal administratif de Nantes.",
+      "limitations": [
+        "The article concerns the decisions and authorities described in its text; it does not determine administrative pre-appeal requirements or time limits.",
+        "Check the current decision notice and any special procedural provisions.",
+        "Link-only reference; no local copy or automated retrieval rule is accepted."
+      ]
+    },
+    "fr-cja-r421-1-deadline": {
+      "status": "usable_official_reference",
+      "publisher": "DILA, Légifrance",
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039807005",
+      "checked_on": "2026-10-24",
+      "language": "French",
+      "version_or_cutoff": "The official page displayed a version current at 2 October 2026; Article R. 421-1 has been in force since 1 January 2020 and was last modified on 22 June 2018.",
+      "scope": "CJA Article R. 421-1 on the general requirement to challenge an administrative decision and the ordinary filing period.",
+      "reviewed_content": "The official article states a two-month period from notification or publication of the challenged decision, requires a prior administrative decision for claims seeking payment of a sum of money, and excludes contract-execution measures from the first-paragraph period.",
+      "limitations": [
+        "This is a general rule, not a universal deadline for every visa, residence, or immigration dispute; special provisions and notification rules may apply.",
+        "The applicable route and deadline must be checked against the challenged decision and its appeal notice.",
+        "Link-only reference; no local copy or automated retrieval rule is accepted."
+      ]
+    },
+    "fr-legifrance-api-open-data-docs": {
+      "status": "usable_official_reference",
+      "publisher": "DILA, Légifrance",
+      "url": "https://www.legifrance.gouv.fr/contenu/pied-de-page/open-data-et-api",
+      "checked_on": "2026-10-24",
+      "language": "French",
+      "version_or_cutoff": "Live documentation checked 2026-10-24; its API page identifies the stable API as opened 2023-04-04 and does not display a current review date.",
+      "scope": "Official Légifrance/DILA documentation for its public legal-data API and open-data resources.",
+      "reviewed_content": "The page states that stable API use is available after registration via PISTE, subject to the displayed licence, terms, and quotas; it describes open-data alternatives and links to technical documentation.",
+      "limitations": [
+        "This is technical acquisition documentation, not a legal text or proof that a specific retrieval method works for this library.",
+        "API terms, endpoints, quotas, and current service status must be rechecked before implementation; no API credentials were used and no retrieval rule was built.",
+        "Link-only reference; no local copy is accepted."
+      ]
+    },
+    "fr-legifrance-api-faq": {
+      "status": "usable_official_reference",
+      "publisher": "DILA, Légifrance",
+      "url": "https://www.legifrance.gouv.fr/contenu/pied-de-page/foire-aux-questions-api",
+      "checked_on": "2026-10-24",
+      "language": "French",
+      "version_or_cutoff": "Live FAQ checked 2026-10-24; it states that the page is under construction and displays no revision date.",
+      "scope": "Official technical FAQ on authentication, API search/consultation examples, and bulk retrieval of legal data.",
+      "reviewed_content": "The FAQ describes OAuth client-credentials authentication through separate PISTE sandbox and production environments, example consultation methods, legal-data search, and a bulk open-data alternative.",
+      "limitations": [
+        "The publisher says the FAQ is under construction; treat it as orientation and confirm the current PISTE Swagger, terms, and quotas before any implementation.",
+        "Examples are not stored or treated as credentials; no account, API token, or retrieval run was used.",
+        "Link-only technical reference; no local copy or retrieval rule is accepted."
+      ]
+    },
+    "fr-france-visas-family-french": {
+      "status": "usable_official_reference",
+      "publisher": "Ministry for Europe and Foreign Affairs / France-Visas",
+      "url": "https://www.france-visas.gouv.fr/famille-de-francais",
+      "checked_on": "2026-10-24",
+      "language": "French",
+      "version_or_cutoff": "Live guidance page checked 2026-10-24; no page publication or review date displayed.",
+      "scope": "France-Visas guidance for family members of French citizens, organized by relationship and intended stay duration.",
+      "reviewed_content": "The live page describes separate spouse, child, ascendant, and parent-of-French-minor routes and directs applicants to the visa assistant for supporting documents.",
+      "limitations": [
+        "Dynamic guidance for family of French citizens; it is distinct from the EU-citizen family route and does not define that route.",
+        "Mission-specific requirements and substantive legal eligibility require separate official sources.",
+        "Link-only reference; no local copy and no application interaction."
+      ]
+    },
+    "fr-france-visas-short-stay": {
+      "status": "usable_official_reference",
+      "publisher": "Ministry for Europe and Foreign Affairs / France-Visas",
+      "url": "https://www.france-visas.gouv.fr/visa-de-court-sejour",
+      "checked_on": "2026-10-24",
+      "language": "French",
+      "version_or_cutoff": "Live guidance page checked 2026-10-24; no page publication or review date displayed.",
+      "scope": "General France-Visas guidance on short-stay visas, including Schengen and French overseas territories.",
+      "reviewed_content": "The page describes the general short-stay route, the 90-days-in-any-180-day period for Schengen short stays, visa-exempt categories including EU/EEA/Swiss nationals, and separate overseas-territory routes.",
+      "limitations": [
+        "General short-stay guidance does not replace the distinct EU-family-member route or country-specific mission instructions.",
+        "The page is dynamic and includes interactive tools; recheck before date-sensitive use.",
+        "Link-only reference; no local copy or visa-assistant interaction."
+      ]
+    },
+    "fr-france-visas-long-stay": {
+      "status": "usable_official_reference",
+      "publisher": "Ministry for Europe and Foreign Affairs / France-Visas",
+      "url": "https://www.france-visas.gouv.fr/web/france-visas/visa-de-long-sejour",
+      "checked_on": "2026-10-24",
+      "language": "French",
+      "version_or_cutoff": "Live guidance page checked 2026-10-24; no page publication or review date displayed.",
+      "scope": "General France-Visas guidance on national long-stay visa categories, post-arrival steps, and territorial scope.",
+      "reviewed_content": "The page describes long-stay routes over 90 days, distinguishes VLS-TS and visas requiring a residence-title application, and names EU/EEA/Swiss visa-free categories for European France with stated territory distinctions.",
+      "limitations": [
+        "General visa rules do not establish a family member's entitlement under EU free-movement law; the separate EU-family route and applicable law control.",
+        "Dynamic guidance; country-specific documents and mission procedures may differ.",
+        "Link-only reference; no local copy or application interaction."
+      ]
+    },
+    "fr-france-visas-fees": {
+      "status": "usable_official_reference",
+      "publisher": "Ministry for Europe and Foreign Affairs / France-Visas",
+      "url": "https://www.france-visas.gouv.fr/documents/d/france-visas/frais-de-visa-francais",
+      "checked_on": "2026-10-24",
+      "language": "French",
+      "version_or_cutoff": "One-page official PDF inspected 2026-10-24; no publication or revision date is printed.",
+      "scope": "Official fee table for visa application categories, including listed reductions and exemptions.",
+      "reviewed_content": "The PDF displays full and reduced fees and states an exemption for EU/EEA/Swiss family members for specified short-stay/Schengen and overseas-territory categories; it directs other cases to country-specific pages.",
+      "limitations": [
+        "The PDF has no visible revision date; retain it as a last-known official fee reference with a freshness caveat and verify the current amount and exemption on the relevant mission page.",
+        "The table is category-specific and does not establish every applicant's fee treatment.",
+        "Link-only reference; no local copy or application interaction."
+      ]
+    },
+    "fr-ministry-anef-overview": {
+      "status": "usable_official_reference",
+      "publisher": "Direction générale des étrangers en France, Ministry of the Interior",
+      "url": "https://www.immigration.interieur.gouv.fr/limmigration-en-france/ladministration-numerique-pour-etrangers-en-france",
+      "checked_on": "2026-10-24",
+      "language": "French",
+      "version_or_cutoff": "Live ministry overview checked 2026-10-24; no page publication or review date displayed.",
+      "scope": "Official overview of the ANEF digital service and the procedures the ministry lists as available through it.",
+      "reviewed_content": "The page describes ANEF as a ministry system and lists residence-title procedures for EU/EEA/Swiss citizens and family members, alongside other categories and support channels.",
+      "limitations": [
+        "This is operational service guidance, not the legal basis for eligibility or a guarantee that every applicant category uses the service.",
+        "The service is dynamic; recheck the category-specific ANEF task and current legal route before relying on it.",
+        "No application, login, or applicant data was accessed; no local copy is accepted."
+      ]
+    },
+    "fr-cnil-agdref-information": {
+      "status": "usable_official_reference",
+      "publisher": "Commission nationale de l’informatique et des libertés (CNIL)",
+      "url": "https://www.cnil.fr/fr/application-de-gestion-des-dossiers-des-ressortissants-etrangers-en-france-agdref",
+      "checked_on": "2026-10-24",
+      "language": "French",
+      "version_or_cutoff": "Full official page retrieved by HTTP on 2026-10-24; no publisher version/review date was identified in the response. The page cites legal materials dated 2012–2020 and says AGDREF could evolve or be replaced by SI AEF.",
+      "scope": "CNIL public information about AGDREF, personal-data access/retention rights, authorized access, and referenced legal provisions.",
+      "reviewed_content": "The 99,278-byte official CNIL HTML response was inspected: its title identifies AGDREF, and the content describes data-access/rectification rights, retention periods, authorized users, CESEDA references, and the possibility of system evolution. The exact raw response is preserved as a gzip-compressed file in the Monitor local-only archive.",
+      "limitations": [
+        "The page gives no current architecture confirmation; it is accepted as a CNIL reference to the information it describes, not as proof AGDREF remains the active system.",
+        "The direct CNIL page was retrieved and captured, but a browser-rendered open had timed out earlier; this difference is a tool-path observation, not evidence of source unavailability.",
+        "The raw capture is local-only acquisition evidence and is not an accepted local library document.",
+        "Check current CESEDA and CNIL materials before relying on present processing status or rights for a specific data record; no personal data was accessed."
+      ]
+    },
+    "fr-defenseur-des-droits-portal": {
+      "status": "usable_official_reference",
+      "publisher": "Défenseur des droits",
+      "url": "https://www.defenseurdesdroits.fr/",
+      "checked_on": "2026-10-24",
+      "language": "French",
+      "version_or_cutoff": "Live official portal checked 2026-10-24; no formal page version date.",
+      "scope": "Official identity, remit, referral and public complaint entry point of the French independent rights authority.",
+      "reviewed_content": "The portal identifies the Défenseur des droits as an independent authority, describes support for public-service disputes, links to a complaint entry point and territorial delegates, and hosts its public decisions and reports.",
+      "limitations": [
+        "The portal does not replace statutory appeals and does not establish their deadlines or suspensive effect.",
+        "Complaint forms are dynamic; this review did not submit a complaint or enter personal data.",
+        "Link-only institutional reference; no local copy is accepted."
+      ]
+    },
+    "fr-defenseur-delays-titles-report-2026": {
+      "status": "usable_official_reference",
+      "publisher": "Défenseur des droits",
+      "url": "https://www.defenseurdesdroits.fr/degradation-des-delais-dinstruction-des-titres-de-sejour-la-defenseure-des-droits-publie-un-rapport",
+      "checked_on": "2026-10-24",
+      "language": "French",
+      "version_or_cutoff": "Report published 17 July 2026; official landing page checked 2026-10-24.",
+      "scope": "Oversight report on residence-permit processing delays and related prefecture/ANEF service problems.",
+      "reviewed_content": "The landing page states that the report's survey covered 2019–2023 and received responses from 65 prefectures representing 63% of national demand for residence permits in 2023; it also reports a 2025 renewal-delay figure attributed to the Interior Ministry.",
+      "limitations": [
+        "This is oversight and operational evidence, not legislation or a binding determination of an individual application.",
+        "The prefecture survey is not a complete census; its stated dates and respondent coverage must remain attached to any use of the findings.",
+        "The landing page notes the report PDF had not yet been made accessible when posted; no local copy is accepted."
+      ]
+    },
+    "fr-legal-aid-act-91-647": {
+      "status": "usable_official_reference",
+      "publisher": "DILA, Légifrance",
+      "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000537611/2026-05-08",
+      "checked_on": "2026-10-24",
+      "language": "French",
+      "version_or_cutoff": "Consolidated version displayed as in force on 8 May 2026; text data last updated 13 June 2026.",
+      "scope": "Law No. 91-647 of 10 July 1991 on legal aid, including access to legal aid and intervention of counsel in specified proceedings.",
+      "reviewed_content": "The official consolidated law identifies the legal-aid framework. Article 3 lists EU nationals and certain foreign residents and proceedings as eligible categories, subject to its conditions and exceptions.",
+      "limitations": [
+        "This law does not establish an individual's eligibility or current means thresholds by itself; check current implementing rules and facts.",
+        "A specific immigration proceeding must be matched to the listed statutory categories and applicable amendments.",
+        "Link-only reference; no local copy or automated retrieval rule is accepted."
+      ]
     }
   },
   "official_reference_review_schema": {
@@ -57,6 +445,231 @@
     ],
     "note": "Record a human-reviewed official link here when it supports a coverage layer without a retained local copy. This does not change the local accepted-source count."
   },
-  "accepted_source_count": 0,
-  "records": {}
+  "accepted_source_count": 13,
+  "records": {
+    "fr-service-public-eu-long-stay-f2651": {
+      "status": "accepted_local_copy",
+      "publisher": "Service Public / DILA",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2651",
+      "checked_on": "2026-10-24",
+      "language": "French",
+      "version_or_cutoff": "Page last verified by Service Public on 2026-04-01; live page still displayed that date on 2026-10-24.",
+      "local_path": "documents/guidance/fr-service-public-eu-long-stay-f2651.md",
+      "scope": "Official guidance for EU/EEA citizens and Swiss nationals staying in France beyond three months, covering work, study, inactivity, family and permanent residence branches.",
+      "reviewed_content": "The official live page title and 2026-04-01 verification date matched the preserved conversion. Key sections on work, study, inactive residence, optional residence cards and permanent residence were checked.",
+      "reuse": "Service Public public 'Vos droits et démarches' information is made available for reuse under the Licence Ouverte; attribution and publisher update date retained.",
+      "limitations": [
+        "This is public guidance, not legislation.",
+        "EU, EEA and Swiss routes must remain distinct.",
+        "The saved text is the dated version above and requires review if the publisher updates the page."
+      ]
+    },
+    "fr-service-public-general-stay-f39": {
+      "status": "accepted_local_copy",
+      "publisher": "Service Public / DILA",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F39?lang=fr",
+      "checked_on": "2026-10-24",
+      "language": "French",
+      "version_or_cutoff": "Page last verified by Service Public on 2026-07-08; live page still displayed that date on 2026-10-24.",
+      "local_path": "documents/guidance/fr-service-public-general-stay-f39.md",
+      "scope": "General overview of long-stay document requirements for foreign nationals, explicitly excluding EU/EEA and Swiss citizens from the general requirement.",
+      "reviewed_content": "The page title and verification date matched the preserved conversion. The page's EU/EEA/Swiss exception and links to specific procedure pages were checked.",
+      "reuse": "Service Public public 'Vos droits et démarches' information is made available for reuse under the Licence Ouverte; attribution and publisher update date retained.",
+      "limitations": [
+        "Broad interactive overview; follow category-specific sources for family members.",
+        "It does not establish legal rules for the EU free-movement route.",
+        "The saved text is the dated version above."
+      ]
+    },
+    "fr-service-public-legal-aid-f18074": {
+      "status": "accepted_local_copy",
+      "publisher": "Service Public / DILA",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18074",
+      "checked_on": "2026-10-24",
+      "language": "French",
+      "version_or_cutoff": "Page last verified by Service Public on 2026-06-12; live page still displayed that date on 2026-10-24.",
+      "local_path": "documents/guidance/fr-service-public-legal-aid-f18074.md",
+      "scope": "Public guidance on eligibility and application procedure for legal aid in French proceedings.",
+      "reviewed_content": "The live title/date and first substantive eligibility section matched the preserved conversion; the page includes cross-border scope caveats and application steps.",
+      "reuse": "Service Public public 'Vos droits et démarches' information is made available for reuse under the Licence Ouverte; attribution and publisher update date retained.",
+      "limitations": [
+        "General procedural support, not immigration-specific advice.",
+        "Eligibility depends on current law and personal circumstances; confirm current thresholds and form.",
+        "No personal application data was accessed or retained."
+      ]
+    },
+    "fr-service-public-long-visa-refusal": {
+      "status": "accepted_local_copy",
+      "publisher": "Service Public / DILA",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16162",
+      "checked_on": "2026-10-24",
+      "language": "French",
+      "version_or_cutoff": "Page last verified by Service Public on 2026-10-09; live page still displayed that date on 2026-10-24.",
+      "local_path": "documents/guidance/fr-service-public-long-visa-refusal.md",
+      "scope": "Long-stay visa guidance including the CRRV preliminary route for a refusal and the subsequent Nantes administrative-court route.",
+      "reviewed_content": "The live page title/date matched the preserved conversion. The refusal section states written motivation, a 30-day CRRV filing deadline after written or implied refusal (the page defines implied refusal after two months without a consular reply), and the Nantes court route after CRRV/ministry disposition.",
+      "reuse": "Service Public public 'Vos droits et démarches' information is made available for reuse under the Licence Ouverte; attribution and publisher update date retained.",
+      "limitations": [
+        "The page's title is broader than its refusal section.",
+        "This long-stay route differs from the short-stay RAPO route.",
+        "Confirm the current CESEDA/CJA and decision-specific notice."
+      ]
+    },
+    "fr-service-public-short-visa-refusal": {
+      "status": "accepted_local_copy",
+      "publisher": "Service Public / DILA",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16146",
+      "checked_on": "2026-10-24",
+      "language": "French",
+      "version_or_cutoff": "Page last verified by Service Public on 2026-08-13; live page still displayed that date on 2026-10-24.",
+      "local_path": "documents/guidance/fr-service-public-short-visa-refusal.md",
+      "scope": "Short-stay Schengen visa guidance including the prior administrative appeal (RAPO) after refusal and subsequent Nantes administrative-court route.",
+      "reviewed_content": "The live page title/date matched the preserved conversion. The remedy section directs the RAPO to the visa sub-directorate, states a 30-day filing period from notification, two-month implied-rejection period, and a two-month annulment appeal window at the Tribunal administratif de Nantes.",
+      "reuse": "Service Public public 'Vos droits et démarches' information is made available for reuse under the Licence Ouverte; attribution and publisher update date retained.",
+      "limitations": [
+        "The page's title is broader than its refusal section.",
+        "The short-stay RAPO is distinct from the long-stay CRRV process.",
+        "Confirm current law and the decision-specific notice."
+      ]
+    },
+    "fr-cnil-complaints": {
+      "status": "accepted_local_copy",
+      "publisher": "Commission nationale de l’informatique et des libertés (CNIL)",
+      "url": "https://www.cnil.fr/fr/agir",
+      "checked_on": "2026-10-24",
+      "language": "French",
+      "version_or_cutoff": "No page version date displayed; live title and operative text rechecked on 2026-10-24.",
+      "local_path": "documents/oversight/fr-cnil-complaints.md",
+      "scope": "General CNIL instructions for first contacting the organisation holding personal data and then using CNIL complaint, file-check or alert routes where needed.",
+      "reviewed_content": "The archived French text capture was checked against the live page. The title, contact-controller-first guidance, complaint route, file-check request and alert route matched on 2026-10-24.",
+      "reuse": "CNIL legal notice states that site text is available under CC BY-ND 4.0 FR. The archived source wording is reproduced without translation or wording edits, with required attribution “Source : CNIL – https://www.cnil.fr”, extraction date 19/10/2026 and the licence link. Terms checked at https://www.cnil.fr/fr/mentions-legales.",
+      "limitations": [
+        "General data-protection guidance, not an immigration appeal and does not preserve immigration deadlines.",
+        "Not a case-specific complaint form or a statement of the legal basis for a particular data-processing dispute.",
+        "No personal data or complaint submission was accessed."
+      ]
+    },
+    "fr-conseil-etat-open-data-and-ariane": {
+      "status": "accepted_local_copy",
+      "publisher": "Conseil d’État",
+      "url": "https://www.conseil-etat.fr/site/decisions-de-justice/donnees-ouvertes-open-data",
+      "checked_on": "2026-10-24",
+      "language": "French",
+      "version_or_cutoff": "No formal page version date displayed; the live page states the decision-coverage start dates and open-data characteristics checked on 2026-10-24.",
+      "local_path": "documents/case_law/fr-conseil-etat-open-data-and-ariane.md",
+      "scope": "Official discovery and access routes for administrative-court decisions through open-data XML and ArianeWeb.",
+      "reviewed_content": "The archived text capture was checked against the live official page for Conseil d’État, CAA and TA coverage dates, XML availability, publication timing, confidentiality/interoperability language and ArianeWeb's selected case-law scope.",
+      "reuse": "Conseil d’État legal notice permits reuse of unprotected public information if document integrity, source and date/update are preserved. Source wording is reproduced unchanged with attribution “Source : site internet du Conseil d’État”; captured 19/10/2026 and rechecked 24/10/2026. Terms checked at https://www.conseil-etat.fr/bas-de-page/mentions-legales.",
+      "limitations": [
+        "This is a court-source guide, not a case decision and does not establish any holding.",
+        "Open-data coverage begins on publisher-stated dates; ArianeWeb is separately selected jurisprudence.",
+        "Neither source alone establishes an exhaustive search."
+      ]
+    },
+    "fr-crrv-official-directory": {
+      "status": "accepted_local_copy",
+      "publisher": "Service Public / Direction de l'information légale et administrative (DILA)",
+      "url": "https://lannuaire.service-public.gouv.fr/gouvernement/2d7cc402-d543-4729-9e56-e4da3ed8bbc6",
+      "checked_on": "2026-10-24",
+      "language": "French",
+      "version_or_cutoff": "Directory record modified 2026-01-05; live title, address, remit and source links rechecked on 2026-10-24.",
+      "local_path": "documents/procedure/fr-crrv-official-directory.md",
+      "scope": "Official CRRV identity, postal address, long-stay visa-refusal remit and links to governing legal references.",
+      "reviewed_content": "The archived directory text was compared with the live official entry; current identity, address, long-stay remit, CJA reference and 2026-01-05 modified date were checked on 2026-10-24.",
+      "reuse": "DILA identifies its national administration-directory data as freely reusable under the Licence Ouverte / Open Licence, with source and update-date attribution. Attribution and the directory's modified date are retained. Terms checked at https://www.service-public.gouv.fr/P10004.",
+      "limitations": [
+        "Directory is not the primary source for competence, deadlines or procedure and does not describe the short-stay RAPO route.",
+        "Contact details and officeholders can change; verify the live directory before mailing.",
+        "Use current CJA and CESEDA provisions for legal requirements."
+      ]
+    },
+    "fr-service-public-anef-task-r59398": {
+      "status": "accepted_local_copy",
+      "publisher": "Service Public / DILA; procedure issuer: Ministry of the Interior",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/R59398",
+      "checked_on": "2026-10-24",
+      "language": "French",
+      "version_or_cutoff": "Page verified by Service Public on 2026-08-13; live page rechecked on 2026-10-24.",
+      "local_path": "documents/procedure/fr-service-public-anef-task-r59398.md",
+      "scope": "Service Public directory entry for online ANEF procedures, including some residence applications, travel documents, naturalisation, work authorisation and address changes, with links to category-specific information.",
+      "reviewed_content": "The archived body text was compared with the live page. Title, listed ANEF tasks, related EU-family guidance, issuer and publisher verification date matched on 2026-10-24.",
+      "reuse": "Service Public public information is freely reusable under the Licence Ouverte / Open Licence subject to source and update-date attribution; attribution and the publisher verification date are retained. Terms checked at https://www.service-public.gouv.fr/P10004.",
+      "limitations": [
+        "Dynamic service directory, not substantive eligibility law and not proof a procedure is available for a particular applicant.",
+        "Do not submit applications, authenticate or collect applicant data.",
+        "Use relevant legal text and category-specific guidance separately."
+      ]
+    },
+    "fr-service-public-family-card-f19315": {
+      "status": "accepted_local_copy",
+      "publisher": "Service Public / DILA",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F19315",
+      "checked_on": "2026-10-24",
+      "language": "French",
+      "version_or_cutoff": "Page verified by Service Public on 2024-02-02; the live page still displayed that date when rechecked on 2026-10-24.",
+      "local_path": "documents/guidance/fr-service-public-family-card-f19315.md",
+      "scope": "Guidance about residence cards for family members of EU citizens, with separate EU and non-EU nationality branches, eligibility categories, application route, evidence, fees, issue, duration and renewal.",
+      "reviewed_content": "The archived text capture was compared with the live official page. Title, displayed date, both nationality branches, eligibility, application route, document lists, fees, duration, renewal and statutory references were checked on 2026-10-24.",
+      "reuse": "Service Public public “Vos droits et démarches” information is freely reusable under the Licence Ouverte / Open Licence with source and update-date attribution; the attribution and publisher verification date are retained. Terms checked at https://www.service-public.gouv.fr/P10004.",
+      "limitations": [
+        "Official guidance, not legislation.",
+        "The publisher verification date is 2024-02-02. Age is recorded as a freshness caveat; this acceptance does not establish current law or procedure.",
+        "Check current CESEDA provisions, the live ANEF route and the applicable family category before relying on procedural details."
+      ]
+    },
+    "fr-cada-access-portal": {
+      "status": "accepted_local_copy",
+      "publisher": "Commission d’accès aux documents administratifs (CADA)",
+      "url": "https://www.cada.fr/",
+      "checked_on": "2026-10-24",
+      "language": "French",
+      "version_or_cutoff": "Dynamic portal. Monitor text capture retrieved 2026-10-19; live portal checked 2026-10-24.",
+      "scope": "CADA remit and public guidance for access to administrative documents and archives.",
+      "reviewed_content": "The current portal presents CADA's public remit, its role in access-to-document refusals and advice, and links to opinions, activity reporting and an online help tool. The accepted local file is a human-written summary, not a verbatim homepage capture.",
+      "limitations": [
+        "Homepage summary only; not the CRPA or an individual CADA opinion.",
+        "The page states broadly that CADA referral precedes litigation; verify the exact mandatory-referral scope and exceptions in the CRPA and the procedure at issue.",
+        "Dynamic tools, linked opinions and reports are not captured."
+      ],
+      "local_path": "documents/oversight/fr-cada-access-portal.md",
+      "source_document_kind": "project_authored_source_summary",
+      "reuse": "The legal notice expressly permits hyperlinks but is silent on general text reuse. The accepted file is an attributed project-authored summary of public-facing institutional information, excluding page design, images, logos, media and linked items. CRPA applicability is limited to qualifying public information; this is not a claim that every site element is reusable."
+    },
+    "fr-france-visas-family-eu": {
+      "status": "accepted_local_copy",
+      "publisher": "Ministry for Europe and Foreign Affairs / France-Visas",
+      "url": "https://www.france-visas.gouv.fr/famille-de-citoyen-europeen",
+      "checked_on": "2026-10-24",
+      "language": "French",
+      "version_or_cutoff": "No page version date displayed; live page checked 2026-10-24.",
+      "scope": "France-Visas route for qualifying family members of EU citizens (other than French), EEA and Swiss citizens, with visa assistant links.",
+      "reviewed_content": "The current France-Visas page was reviewed on 2026-10-24 and the earlier short archived summary was refreshed into a clearly labeled source summary covering eligible family categories, student-sponsor distinction and visa/application routes.",
+      "limitations": [
+        "Human-authored summary, not verbatim source text or a complete account of the page.",
+        "Dynamic visa guidance with no displayed page date; verify current criteria, visa assistant and mission instructions.",
+        "The page does not replace CESEDA, EU law or case-specific legal analysis."
+      ],
+      "local_path": "documents/guidance/fr-france-visas-family-eu.md",
+      "source_document_kind": "project_authored_source_summary",
+      "reuse": "France-Visas' legal notice identifies qualifying site content, subject to listed exclusions, as public information reusable under applicable law. It also asks users to contact the administration and contains additional commercial/promotional and website-reproduction language. The accepted file is an independently worded, attributed summary and includes no marks, logos, images or third-party content; this record does not decide every notice clause's application to downstream use."
+    },
+    "fr-ta-nantes-official-site": {
+      "status": "accepted_local_copy",
+      "publisher": "Tribunal administratif de Nantes / Conseil d’État administrative courts",
+      "url": "https://nantes.tribunal-administratif.fr/",
+      "checked_on": "2026-10-24",
+      "language": "French",
+      "version_or_cutoff": "Dynamic homepage; no page version date displayed. Monitor capture retrieved 2026-10-19; live homepage checked 2026-10-24.",
+      "scope": "Official court identity, public filing entry point and court information.",
+      "reviewed_content": "The current homepage was checked against the archived capture. It provides filing, case-information, hearing-role and administrative-jurisdiction directory entry points, plus changing news and decision headlines. The accepted file is a human-written operational summary, not a verbatim page capture.",
+      "limitations": [
+        "Dynamic operational reference; verify live links and availability.",
+        "The homepage does not establish venue, appeal routes or deadlines; use applicable CJA provisions and the decision notice.",
+        "The tribunal legal notice says only texts from its deliberations engage it and the Journal officiel version controls for legal texts reproduced on the site."
+      ],
+      "local_path": "documents/procedure/fr-ta-nantes-official-site.md",
+      "source_document_kind": "project_authored_source_summary",
+      "reuse": "The publisher's legal notice describes the site as a protected work and states a broad restriction on reuse of site elements. The accepted file is an original, attributed summary of public-facing operational information and reproduces no site design, imagery, logos or linked third-party materials. The CRPA may govern qualifying public information; this record does not decide that every page element falls within that regime."
+    }
+  }
 }

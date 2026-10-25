@@ -1,9 +1,9 @@
 # Latvia issue-led coverage register
 
-Review date: 21 October 2026  
+Review date: 24 October 2026
 Status: country review incomplete; no topic is accepted as adequately covered.
 
-The 41 official external references in [source-acceptance.json](source-acceptance.json) establish usable starting points, not legal sufficiency. Local-copy acceptance remains 0. The main source-level issue is the relationship between the 2026 free-movement Act and Regulation 675: the Act’s transition clause addresses pre-commencement filings, while the official regulation record still displays an end date in December 2027.
+The 41 official external references in [source-acceptance.json](source-acceptance.json) establish usable starting points, not legal sufficiency. Thirty local text copies are accepted within their recorded source scopes; this does not change topic coverage. Source-copy promotion was reviewed on 24 October; issue statuses and required coverage work remain unchanged. The main source-level issue is the relationship between the 2026 free-movement Act and Regulation 675: the Act’s transition clause addresses pre-commencement filings, while the official regulation record still displays an end date in December 2027.
 
 | Issue area | Status | Current source leads | Work still needed |
 |---|---|---|---|

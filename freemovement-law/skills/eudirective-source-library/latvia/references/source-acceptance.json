@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0.0",
   "jurisdiction": "LV",
-  "review_date": "2026-10-21",
+  "review_date": "2026-10-24",
   "candidate_record_count": 52,
   "accepted_external_reference_count": 41,
   "pending_external_reference_count": 7,
   "not_relied_upon_reference_count": 4,
-  "accepted_local_copy_count": 0,
+  "accepted_local_copy_count": 30,
   "accepted_topic_count": 0,
   "country_review_complete": false,
   "policy": "A trustworthy government-published consolidated text or clearly identified official page may be accepted as an external reference within its displayed identity, status, version, language, date and subject. If authority, version or content is unclear, offer the whole official website/service for human review. A reviewed official link is sufficient for ordinary source use; a local copy, custom retrieval/conversion rule, API, full Gazette-chain reconstruction, hash, replay or scheduled update is not a blanket prerequisite. External-link acceptance is separate from local-copy acceptance, topic coverage and country review completion.",
@@ -14,7 +14,7 @@
     "decision": "Likumi.lv is accepted as a trustworthy official publisher-managed source of consolidated legislation for ordinary reference use within each page’s displayed version and status. The official portal says the Latvijas Vēstnesis publisher maintains it, provides current/historical/future versions and validity status, and that the content is informational with the official Gazette prevailing in a discrepancy.",
     "basis": "The official Likumi.lv About page and Act record identify the public legal-text service and publisher; the new EU-family Act record displays its issuer, current status, commencement date and official Gazette publication. Latvijas Vēstnesis provides the publication record and OP identifier.",
     "limits": "Latvian is the controlling text for the new free-movement Act; the official English record says it has not been translated by the State Language Centre. A legal link does not confirm every linked operational instruction or establish coverage completeness.",
-    "local_copy_and_reuse": "The 43 converted local artifacts remain review candidates. Publisher terms and fees affect recurring retention/retrieval, not ordinary linking or use of a human-reviewed official page. No scheduled updater is proposed by this link review."
+    "local_copy_and_reuse": "Thirty selected local text copies have been accepted in their recorded per-source scope after official identity/version review and deterministic replay. Four accepted references remain link-only navigation or homepage routes; thirteen converted candidate texts remain archived but unaccepted (five pending references, four not-relied-upon records, and four link-only navigation/homepage copies). The OP 2026/119.1 original PDF is stored with its reviewed text extraction; the old PMLP PDF (lv-22) remains unaccepted in the Monitor archive. Publisher reuse terms concern recurring retention/retrieval, not ordinary linking. No scheduled updater is proposed by this local-copy review."
   },
   "accepted_references": [
     {
@@ -68,8 +68,23 @@
         "source_record_note": "Systematised text is informational; the official Gazette prevails in case of discrepancy.",
         "retrieval_status": "converted_review_candidate"
       },
-      "local_copy_accepted": false,
-      "decision": "accepted_with_narrow_external_scope"
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_external_scope",
+      "local_path": "source-library/latvia/documents/guidance/lv-likumi-about-and-version-information.md",
+      "local_copy_sha256": "b27fa167baa4d6465a5b8c4adf6cbd5d5e31bbe24debc37369403b8d72976b00",
+      "local_copy_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-02.md",
+      "local_copy_reviewed_on": "2026-10-24",
+      "local_copy_review": {
+        "reviewed_on": "2026-10-24",
+        "source_response_sha256": "872c9ad1138629002d4bda0994dac322acbcfb463c408a22582cd147191df52a",
+        "source_text_conversion_sha256": "1a0a36b2af22414aab3dc2034dcf61e2221e4c678b71898e02bdbc259bd2dbcc",
+        "final_document_sha256": "b27fa167baa4d6465a5b8c4adf6cbd5d5e31bbe24debc37369403b8d72976b00",
+        "content_selector": "class=globalContainerCenter",
+        "review_method": "Official source identity and displayed version/scope were checked against accepted-reference evidence. The exact captured source bytes were replayed with the pack converter; the source-text conversion hash matched. The local document preserves that source text and adds only separate editorial metadata.",
+        "accepted_content_scope": "official official legislation portal reference: Official publisher description of Likumi.lv, its current, historical and future versions, status metadata and related documents. The portal itself says its content is informational and the official Gazette prevails in a discrepancy.",
+        "excluded_content": "HTML interface, link destinations, embedded attachments, interactive fields, images, and content published after capture are outside this text-only copy.",
+        "classification": "official_legislation_portal"
+      }
     },
     {
       "source_id": "lv-03",
@@ -95,8 +110,23 @@
         "source_record_note": "A legal reuse route exists, but written publisher confirmation is still needed for a recurring legal-text monitor, the delivery method and applicable fee. The terms permit technical restrictions for security/stability; no crawler rate limit is stated.",
         "retrieval_status": "converted_review_candidate"
       },
-      "local_copy_accepted": false,
-      "decision": "accepted_with_narrow_external_scope"
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_external_scope",
+      "local_path": "source-library/latvia/documents/guidance/lv-likumi-terms-of-service.md",
+      "local_copy_sha256": "b11429a08eff19d0dd25f3329e92052c929bc665292628de5e8e54f4eadd5852",
+      "local_copy_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-03.md",
+      "local_copy_reviewed_on": "2026-10-24",
+      "local_copy_review": {
+        "reviewed_on": "2026-10-24",
+        "source_response_sha256": "9d533f839376090dce73c6d3c2f4fbcba2bbcf8e8d9c5f7714a94ed9ad575df7",
+        "source_text_conversion_sha256": "dcb9f968eff377343dd9616964d7cea1045642eadc9f362fbb8a52ebe4e4bc14",
+        "final_document_sha256": "b11429a08eff19d0dd25f3329e92052c929bc665292628de5e8e54f4eadd5852",
+        "content_selector": "class=globalContainerCenter",
+        "review_method": "Official source identity and displayed version/scope were checked against accepted-reference evidence. The exact captured source bytes were replayed with the pack converter; the source-text conversion hash matched. The local document preserves that source text and adds only separate editorial metadata.",
+        "accepted_content_scope": "official publisher terms reference: Official portal terms page. It supports attribution and reuse under applicable law/fees but does not itself confirm automated recurring retrieval, local retention or a delivery service.",
+        "excluded_content": "HTML interface, link destinations, embedded attachments, interactive fields, images, and content published after capture are outside this text-only copy.",
+        "classification": "publisher_terms"
+      }
     },
     {
       "source_id": "lv-04",
@@ -121,8 +151,23 @@
         "source_record_note": "Use alongside the Gazette publication for legal force and the consolidated portal for version discovery.",
         "retrieval_status": "converted_review_candidate"
       },
-      "local_copy_accepted": false,
-      "decision": "accepted_with_narrow_external_scope"
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_external_scope",
+      "local_path": "source-library/latvia/documents/legislation/lv-law-official-publications-and-legal-information-en.md",
+      "local_copy_sha256": "f9b6e6d533ea6b2c7cda274af56b0c3fb30b78b3c7faa4279a4e9c071070648c",
+      "local_copy_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-04.md",
+      "local_copy_reviewed_on": "2026-10-24",
+      "local_copy_review": {
+        "reviewed_on": "2026-10-24",
+        "source_response_sha256": "8f3c5b97895e09184aef8efc5458fc36f1e5ad25029238bde403cea08c4eb8c6",
+        "source_text_conversion_sha256": "4a2f27cbbf9627b666ba8daf7092e911c5e713292540a7e05e314bb661489a81",
+        "final_document_sha256": "f9b6e6d533ea6b2c7cda274af56b0c3fb30b78b3c7faa4279a4e9c071070648c",
+        "content_selector": "class=doc-body",
+        "review_method": "Official source identity and displayed version/scope were checked against accepted-reference evidence. The exact captured source bytes were replayed with the pack converter; the source-text conversion hash matched. The local document preserves that source text and adds only separate editorial metadata.",
+        "accepted_content_scope": "official legislation reference: Use alongside the Gazette publication for legal force and the consolidated portal for version discovery.",
+        "excluded_content": "HTML interface, link destinations, embedded attachments, interactive fields, images, and content published after capture are outside this text-only copy.",
+        "classification": "legislation"
+      }
     },
     {
       "source_id": "lv-05",
@@ -148,8 +193,23 @@
         "source_record_note": "Promising authenticity evidence; a future adapter must validate the actual signature/seal and preserve the publisher record.",
         "retrieval_status": "converted_review_candidate"
       },
-      "local_copy_accepted": false,
-      "decision": "accepted_with_narrow_external_scope"
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_external_scope",
+      "local_path": "source-library/latvia/documents/guidance/lv-vestnesis-publication-security.md",
+      "local_copy_sha256": "901a8b540bdcc5284dd2ee2b941b16b78447a3d0c1a9bc70dfe51e4f311d60d7",
+      "local_copy_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-05.md",
+      "local_copy_reviewed_on": "2026-10-24",
+      "local_copy_review": {
+        "reviewed_on": "2026-10-24",
+        "source_response_sha256": "d0fc3f9dee3e30d861e492ff26e7ac4389216a40e04a42912cc0d59af8192e58",
+        "source_text_conversion_sha256": "7094e932658853bda816515a5974ea6bb9bc1c571de57c4d7d2475e94090e3ed",
+        "final_document_sha256": "901a8b540bdcc5284dd2ee2b941b16b78447a3d0c1a9bc70dfe51e4f311d60d7",
+        "content_selector": "class=content",
+        "review_method": "Official source identity and displayed version/scope were checked against accepted-reference evidence. The exact captured source bytes were replayed with the pack converter; the source-text conversion hash matched. The local document preserves that source text and adds only separate editorial metadata.",
+        "accepted_content_scope": "official official publication integrity reference: Official publisher explanation of its electronic publications and seal/signature arrangements. This accepts the page as a description, not validation of the signature on any individual PDF.",
+        "excluded_content": "HTML interface, link destinations, embedded attachments, interactive fields, images, and content published after capture are outside this text-only copy.",
+        "classification": "official_publication_integrity"
+      }
     },
     {
       "source_id": "lv-06",
@@ -175,8 +235,23 @@
         "source_record_note": "Latvian-only substantive text; English page says State Language Centre has not officially translated it. Cabinet implementing rules are due by 01.12.2027.",
         "retrieval_status": "converted_review_candidate"
       },
-      "local_copy_accepted": false,
-      "decision": "accepted_with_narrow_external_scope"
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_external_scope",
+      "local_path": "source-library/latvia/documents/legislation/lv-law-369282-eu-eea-swiss-family-residence.md",
+      "local_copy_sha256": "59fab8b57829d7bf3a92c90fafc37176c7380434c245a8297eefd549278f720a",
+      "local_copy_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-06.md",
+      "local_copy_reviewed_on": "2026-10-24",
+      "local_copy_review": {
+        "reviewed_on": "2026-10-24",
+        "source_response_sha256": "791663aede14424f5f84a11dcf2e8938ecd0d857192d6027e37d92f6e93b48ac",
+        "source_text_conversion_sha256": "744ca14307bdb6b2b2a7b83b36a4bd516d41ed9d0b9f663b4f7aaf1e40a5468a",
+        "final_document_sha256": "59fab8b57829d7bf3a92c90fafc37176c7380434c245a8297eefd549278f720a",
+        "content_selector": "class=doc-body",
+        "review_method": "Official source identity and displayed version/scope were checked against accepted-reference evidence. The exact captured source bytes were replayed with the pack converter; the source-text conversion hash matched. The local document preserves that source text and adds only separate editorial metadata.",
+        "accepted_content_scope": "official free movement legislation reference: Official Likumi.lv consolidated Latvian text of the EU/EEA/Swiss and family-member law, in force from 10 July 2026. The official English record says the text has not been translated by the State Language Centre. Cabinet rules for specified provisions are due by 1 December 2027.",
+        "excluded_content": "HTML interface, link destinations, embedded attachments, interactive fields, images, and content published after capture are outside this text-only copy.",
+        "classification": "free_movement_legislation"
+      }
     },
     {
       "source_id": "lv-07",
@@ -202,8 +277,26 @@
         "source_record_note": "Authoritative promulgated version; do not treat it alone as current consolidated text after later amendments. Text extraction and electronic-seal validation are not implemented.",
         "retrieval_status": "converted_review_candidate"
       },
-      "local_copy_accepted": false,
-      "decision": "accepted_with_narrow_external_scope"
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_external_scope",
+      "local_path": "source-library/latvia/documents/legislation/lv-gazette-op-2026-119-1.md",
+      "local_copy_sha256": "688dd1aa6b582a5700ab7dfe75853d6e42758b7b9611a70156f24a4f77a084d5",
+      "local_copy_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-07.md",
+      "local_copy_reviewed_on": "2026-10-24",
+      "local_copy_review": {
+        "reviewed_on": "2026-10-24",
+        "source_response_sha256": "2435eb1edafe777284efffadd5dfa10416d799a8631c700eb3f5360cde7bb6a0",
+        "source_text_conversion_sha256": "6e26b94947da9efa8d4ded162ec37011ddc738fe047862352a1c323264b10aee",
+        "final_document_sha256": "688dd1aa6b582a5700ab7dfe75853d6e42758b7b9611a70156f24a4f77a084d5",
+        "content_selector": "PDF text extraction; 16 pages",
+        "review_method": "Official source identity and displayed version/scope were checked against accepted-reference evidence. The exact captured source bytes were replayed with the pack converter; the source-text conversion hash matched. The local document preserves that source text and adds only separate editorial metadata.",
+        "accepted_content_scope": "official official gazette publication reference: Official promulgated publication OP 2026/119.1, accepted as the enacted text and publication record only; it is not a substitute for checking the current consolidated view.",
+        "excluded_content": "HTML interface, link destinations, embedded attachments, interactive fields, images, and content published after capture are outside this text-only copy.",
+        "classification": "official_gazette_publication"
+      },
+      "original_representation_path": "source-library/latvia/documents/legislation/lv-gazette-op-2026-119-1.pdf",
+      "original_representation_sha256": "2435eb1edafe777284efffadd5dfa10416d799a8631c700eb3f5360cde7bb6a0",
+      "original_representation_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-07.pdf"
     },
     {
       "source_id": "lv-08",
@@ -229,8 +322,23 @@
         "source_record_note": "Do not use as the general post-10.07.2026 procedure without checking repeal and new rules; it remains a transition dependency for pending applications.",
         "retrieval_status": "converted_review_candidate"
       },
-      "local_copy_accepted": false,
-      "decision": "accepted_with_narrow_external_scope"
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_external_scope",
+      "local_path": "source-library/latvia/documents/legislation/lv-cabinet-regulation-675-historical.md",
+      "local_copy_sha256": "32a997b3db383889aece042660b949a159deeb235bb114a48bc19015febf3f16",
+      "local_copy_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-08.md",
+      "local_copy_reviewed_on": "2026-10-24",
+      "local_copy_review": {
+        "reviewed_on": "2026-10-24",
+        "source_response_sha256": "01ff0735bd82e02c812ee56e73a152ebbb7acdd6a035dbbf23a1e2c5a0807ef9",
+        "source_text_conversion_sha256": "d18bfb917e0914e3776670c4eeddee0ef5bb713721a841c9dcc5acb47472f0bb",
+        "final_document_sha256": "32a997b3db383889aece042660b949a159deeb235bb114a48bc19015febf3f16",
+        "content_selector": "class=doc-body",
+        "review_method": "Official source identity and displayed version/scope were checked against accepted-reference evidence. The exact captured source bytes were replayed with the pack converter; the source-text conversion hash matched. The local document preserves that source text and adds only separate editorial metadata.",
+        "accepted_content_scope": "official historical or transitional legislation reference: Official Regulation 675 text and status page. The new Act sends applications filed before 10 July 2026 to this regulation, while the regulation record displays an end-of-validity date of 2 December 2027. Its application to later filings remains unresolved and is recorded as a dependency.",
+        "excluded_content": "HTML interface, link destinations, embedded attachments, interactive fields, images, and content published after capture are outside this text-only copy.",
+        "classification": "historical_or_transitional_legislation"
+      }
     },
     {
       "source_id": "lv-09",
@@ -256,8 +364,23 @@
         "source_record_note": "Separate third-country immigration route from the EU/EEA/Swiss free-movement law. The residence-law route must monitor both regimes and reconcile agency pages after this enactment.",
         "retrieval_status": "converted_review_candidate"
       },
-      "local_copy_accepted": false,
-      "decision": "accepted_with_narrow_external_scope"
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_external_scope",
+      "local_path": "source-library/latvia/documents/legislation/lv-immigration-law-2026.md",
+      "local_copy_sha256": "fa4b69629782039a56b25587e32f6a4835eb9e4c236af478b663f6e59c03a475",
+      "local_copy_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-09.md",
+      "local_copy_reviewed_on": "2026-10-24",
+      "local_copy_review": {
+        "reviewed_on": "2026-10-24",
+        "source_response_sha256": "440a3c76ad7020f9a9a39c62dadbb271715e7a9cd0a5852d4fbc5a3141fecd13",
+        "source_text_conversion_sha256": "a56804fda9eb2e0f30b46dc626c0947365c44f5717c48f667173a16fe37310ab",
+        "final_document_sha256": "fa4b69629782039a56b25587e32f6a4835eb9e4c236af478b663f6e59c03a475",
+        "content_selector": "class=doc-body",
+        "review_method": "Official source identity and displayed version/scope were checked against accepted-reference evidence. The exact captured source bytes were replayed with the pack converter; the source-text conversion hash matched. The local document preserves that source text and adds only separate editorial metadata.",
+        "accepted_content_scope": "official third country immigration legislation reference: Official current consolidated Immigration Law, effective 15 September 2026. It is a distinct third-country regime, not a substitute for the EU/EEA/Swiss free-movement Act. Some provisions have a later effective date of 31 December 2027.",
+        "excluded_content": "HTML interface, link destinations, embedded attachments, interactive fields, images, and content published after capture are outside this text-only copy.",
+        "classification": "third_country_immigration_legislation"
+      }
     },
     {
       "source_id": "lv-10",
@@ -282,8 +405,23 @@
         "source_record_note": "UK Withdrawal Agreement beneficiary route remains distinct from EU/EEA/Swiss nationality routes.",
         "retrieval_status": "converted_review_candidate"
       },
-      "local_copy_accepted": false,
-      "decision": "accepted_with_narrow_external_scope"
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_external_scope",
+      "local_path": "source-library/latvia/documents/legislation/lv-uk-withdrawal-agreement-implementation-law.md",
+      "local_copy_sha256": "1b5d94f643d5b268f3b03a83fbc4f4cb5b7505102982e6a71924f7dcbe611a23",
+      "local_copy_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-10.md",
+      "local_copy_reviewed_on": "2026-10-24",
+      "local_copy_review": {
+        "reviewed_on": "2026-10-24",
+        "source_response_sha256": "e092e91f9f1f0be41c0a6e47e50c233d276d03adc229609527c42bc1eb2e828d",
+        "source_text_conversion_sha256": "8768953452e7bc39aca1ce2c6d0374bf0d78a3ee47ccf5ac2d13d9e1a5f91825",
+        "final_document_sha256": "1b5d94f643d5b268f3b03a83fbc4f4cb5b7505102982e6a71924f7dcbe611a23",
+        "content_selector": "class=doc-body",
+        "review_method": "Official source identity and displayed version/scope were checked against accepted-reference evidence. The exact captured source bytes were replayed with the pack converter; the source-text conversion hash matched. The local document preserves that source text and adds only separate editorial metadata.",
+        "accepted_content_scope": "official uk withdrawal agreement legislation reference: UK Withdrawal Agreement beneficiary route remains distinct from EU/EEA/Swiss nationality routes.",
+        "excluded_content": "HTML interface, link destinations, embedded attachments, interactive fields, images, and content published after capture are outside this text-only copy.",
+        "classification": "uk_withdrawal_agreement_legislation"
+      }
     },
     {
       "source_id": "lv-11",
@@ -309,8 +447,23 @@
         "source_record_note": "A high-value general procedure source; map provisions to each decision type and special migration rules.",
         "retrieval_status": "converted_review_candidate"
       },
-      "local_copy_accepted": false,
-      "decision": "accepted_with_narrow_external_scope"
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_external_scope",
+      "local_path": "source-library/latvia/documents/legislation/lv-administrative-procedure-law.md",
+      "local_copy_sha256": "ddcd9fcd9cb029c6c172141cbec2ee9bdaf6a3cc8f35f3ba1797ab4ee6378452",
+      "local_copy_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-11.md",
+      "local_copy_reviewed_on": "2026-10-24",
+      "local_copy_review": {
+        "reviewed_on": "2026-10-24",
+        "source_response_sha256": "1026dca37159f41105b0a32371d12c81ca306f1985fe81258219ba7575a90c71",
+        "source_text_conversion_sha256": "86e7aedebbaa758a18f4dfd55445c44b425d6eb82b1bf4dcb21f4ce1896e005b",
+        "final_document_sha256": "ddcd9fcd9cb029c6c172141cbec2ee9bdaf6a3cc8f35f3ba1797ab4ee6378452",
+        "content_selector": "class=doc-body",
+        "review_method": "Official source identity and displayed version/scope were checked against accepted-reference evidence. The exact captured source bytes were replayed with the pack converter; the source-text conversion hash matched. The local document preserves that source text and adds only separate editorial metadata.",
+        "accepted_content_scope": "official administrative procedure legislation reference: Official current Administrative Procedure Law reference; the page records the 28 May 2026 amendment effective 1 June 2026. Specific appeal periods and special migration procedure still need decision-by-decision mapping.",
+        "excluded_content": "HTML interface, link destinations, embedded attachments, interactive fields, images, and content published after capture are outside this text-only copy.",
+        "classification": "administrative_procedure_legislation"
+      }
     },
     {
       "source_id": "lv-12",
@@ -336,8 +489,23 @@
         "source_record_note": "General public-information access differs from an applicant’s access to their own administrative file.",
         "retrieval_status": "converted_review_candidate"
       },
-      "local_copy_accepted": false,
-      "decision": "accepted_with_narrow_external_scope"
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_external_scope",
+      "local_path": "source-library/latvia/documents/legislation/lv-freedom-of-information-law-en.md",
+      "local_copy_sha256": "771a7080fe9a529529f2d75c59fdb845dcc58d6b757b3bb7e5668b3f6cd05da4",
+      "local_copy_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-12.md",
+      "local_copy_reviewed_on": "2026-10-24",
+      "local_copy_review": {
+        "reviewed_on": "2026-10-24",
+        "source_response_sha256": "aeb6ab9ba57898e30cf0a824fdb739c4fe4ae00ea88a2ae2c7f032861032a138",
+        "source_text_conversion_sha256": "8e2ae15dca08e259f349f042b9fcdf6688e7ce35ea8ce6fa3782b6c0a97a7143",
+        "final_document_sha256": "771a7080fe9a529529f2d75c59fdb845dcc58d6b757b3bb7e5668b3f6cd05da4",
+        "content_selector": "class=doc-body",
+        "review_method": "Official source identity and displayed version/scope were checked against accepted-reference evidence. The exact captured source bytes were replayed with the pack converter; the source-text conversion hash matched. The local document preserves that source text and adds only separate editorial metadata.",
+        "accepted_content_scope": "official access to information legislation reference: Official English-language version of the Freedom of Information Law selected from 1 May 2023. Use for that dated English text; consult the current Latvian record where a later amendment could affect the point.",
+        "excluded_content": "HTML interface, link destinations, embedded attachments, interactive fields, images, and content published after capture are outside this text-only copy.",
+        "classification": "access_to_information_legislation"
+      }
     },
     {
       "source_id": "lv-13",
@@ -362,8 +530,23 @@
         "source_record_note": "Check applicability in each migration/court route; Immigration Law separately anticipates detention-extension legal aid provisions tied to future amendments.",
         "retrieval_status": "converted_review_candidate"
       },
-      "local_copy_accepted": false,
-      "decision": "accepted_with_narrow_external_scope"
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_external_scope",
+      "local_path": "source-library/latvia/documents/legislation/lv-state-provided-legal-aid-law.md",
+      "local_copy_sha256": "7bfb0aa6e1191be05355abe071e1c7c3a74999d128d5bbd2bdbf314ca03d2e64",
+      "local_copy_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-13.md",
+      "local_copy_reviewed_on": "2026-10-24",
+      "local_copy_review": {
+        "reviewed_on": "2026-10-24",
+        "source_response_sha256": "006522400974ccb4e1d400a6fa65d8510a76cac4a7a45986fb7cd31249befa2f",
+        "source_text_conversion_sha256": "0d8c33f539754bd4ca770fcb92948ba61248e61756ad374c29f337f42ba13581",
+        "final_document_sha256": "7bfb0aa6e1191be05355abe071e1c7c3a74999d128d5bbd2bdbf314ca03d2e64",
+        "content_selector": "class=doc-body",
+        "review_method": "Official source identity and displayed version/scope were checked against accepted-reference evidence. The exact captured source bytes were replayed with the pack converter; the source-text conversion hash matched. The local document preserves that source text and adds only separate editorial metadata.",
+        "accepted_content_scope": "official legal aid legislation reference: Check applicability in each migration/court route; Immigration Law separately anticipates detention-extension legal aid provisions tied to future amendments.",
+        "excluded_content": "HTML interface, link destinations, embedded attachments, interactive fields, images, and content published after capture are outside this text-only copy.",
+        "classification": "legal_aid_legislation"
+      }
     },
     {
       "source_id": "lv-14",
@@ -388,8 +571,23 @@
         "source_record_note": "General good-governance/human-rights oversight; not a substitute for statutory appeal deadlines.",
         "retrieval_status": "converted_review_candidate"
       },
-      "local_copy_accepted": false,
-      "decision": "accepted_with_narrow_external_scope"
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_external_scope",
+      "local_path": "source-library/latvia/documents/legislation/lv-ombudsman-law.md",
+      "local_copy_sha256": "ab55d3074eaad566b482def5180c0f094315684049cdb5480c347ad87501c669",
+      "local_copy_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-14.md",
+      "local_copy_reviewed_on": "2026-10-24",
+      "local_copy_review": {
+        "reviewed_on": "2026-10-24",
+        "source_response_sha256": "b10923b9f894ff3df0774e74a96dc516435781df3d615e85f99c6766b79f5248",
+        "source_text_conversion_sha256": "8326e1c7f61ff3f208186603bd0cd9e9cb72d3acd6c4b222de30c10691fb8fac",
+        "final_document_sha256": "ab55d3074eaad566b482def5180c0f094315684049cdb5480c347ad87501c669",
+        "content_selector": "class=doc-body",
+        "review_method": "Official source identity and displayed version/scope were checked against accepted-reference evidence. The exact captured source bytes were replayed with the pack converter; the source-text conversion hash matched. The local document preserves that source text and adds only separate editorial metadata.",
+        "accepted_content_scope": "official ombudsman legislation reference: General good-governance/human-rights oversight; not a substitute for statutory appeal deadlines.",
+        "excluded_content": "HTML interface, link destinations, embedded attachments, interactive fields, images, and content published after capture are outside this text-only copy.",
+        "classification": "ombudsman_legislation"
+      }
     },
     {
       "source_id": "lv-15",
@@ -414,8 +612,23 @@
         "source_record_note": "Use with the DVI complaint procedure and GDPR; avoid personal case-data collection.",
         "retrieval_status": "converted_review_candidate"
       },
-      "local_copy_accepted": false,
-      "decision": "accepted_with_narrow_external_scope"
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_external_scope",
+      "local_path": "source-library/latvia/documents/legislation/lv-personal-data-processing-law.md",
+      "local_copy_sha256": "f57e177d7f87b4c97372a02de2f3a4bd96e1ec87f5203018dc826946ecc93470",
+      "local_copy_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-15.md",
+      "local_copy_reviewed_on": "2026-10-24",
+      "local_copy_review": {
+        "reviewed_on": "2026-10-24",
+        "source_response_sha256": "f9852421b386dbe1195df4616dc03c4f94f16b155dfd3ec47cff3895adfc6828",
+        "source_text_conversion_sha256": "3ef8ffbeca890066d406511a8c84138c591bed4d41ac881206923418e2209514",
+        "final_document_sha256": "f57e177d7f87b4c97372a02de2f3a4bd96e1ec87f5203018dc826946ecc93470",
+        "content_selector": "class=doc-body",
+        "review_method": "Official source identity and displayed version/scope were checked against accepted-reference evidence. The exact captured source bytes were replayed with the pack converter; the source-text conversion hash matched. The local document preserves that source text and adds only separate editorial metadata.",
+        "accepted_content_scope": "official data protection legislation reference: Use with the DVI complaint procedure and GDPR; avoid personal case-data collection.",
+        "excluded_content": "HTML interface, link destinations, embedded attachments, interactive fields, images, and content published after capture are outside this text-only copy.",
+        "classification": "data_protection_legislation"
+      }
     },
     {
       "source_id": "lv-16",
@@ -440,8 +653,23 @@
         "source_record_note": "Keep distinct from general GDPR and immigration/residence processing.",
         "retrieval_status": "converted_review_candidate"
       },
-      "local_copy_accepted": false,
-      "decision": "accepted_with_narrow_external_scope"
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_external_scope",
+      "local_path": "source-library/latvia/documents/legislation/lv-personal-data-processing-enforcement-law.md",
+      "local_copy_sha256": "dd28ace5720e9e26d4a2b5fea02f41e6989133cfb07fb8c5fef54276355ec3c9",
+      "local_copy_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-16.md",
+      "local_copy_reviewed_on": "2026-10-24",
+      "local_copy_review": {
+        "reviewed_on": "2026-10-24",
+        "source_response_sha256": "a22771b8c1f9bcdcd3ee6e3208556ca1cd11bb16db56995581550a40fe660073",
+        "source_text_conversion_sha256": "a50e166ea6129182c181665dedd74b7ff5d4ab876a18d85120358b4163a75257",
+        "final_document_sha256": "dd28ace5720e9e26d4a2b5fea02f41e6989133cfb07fb8c5fef54276355ec3c9",
+        "content_selector": "class=doc-body",
+        "review_method": "Official source identity and displayed version/scope were checked against accepted-reference evidence. The exact captured source bytes were replayed with the pack converter; the source-text conversion hash matched. The local document preserves that source text and adds only separate editorial metadata.",
+        "accepted_content_scope": "official law enforcement data legislation reference: Keep distinct from general GDPR and immigration/residence processing.",
+        "excluded_content": "HTML interface, link destinations, embedded attachments, interactive fields, images, and content published after capture are outside this text-only copy.",
+        "classification": "law_enforcement_data_legislation"
+      }
     },
     {
       "source_id": "lv-17",
@@ -466,8 +694,23 @@
         "source_record_note": "Court-publication regime changed in 2026; verify which decision classes are public and where before designing case-law monitoring.",
         "retrieval_status": "converted_review_candidate"
       },
-      "local_copy_accepted": false,
-      "decision": "accepted_with_narrow_external_scope"
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_external_scope",
+      "local_path": "source-library/latvia/documents/legislation/lv-court-publication-rules.md",
+      "local_copy_sha256": "85d8c2744a1028c284d4fe405402480459974cbcfccc30b969b3cc08e013fe2d",
+      "local_copy_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-17.md",
+      "local_copy_reviewed_on": "2026-10-24",
+      "local_copy_review": {
+        "reviewed_on": "2026-10-24",
+        "source_response_sha256": "5ce62d59f3ab5cd1c0c00f396b726f943d1d7d9757ba74bc04ade06ca64f11d0",
+        "source_text_conversion_sha256": "ebb6667b2285ee26d0107e6d38dced9c9931a7375a6b77e0c77e845dce53e2d6",
+        "final_document_sha256": "85d8c2744a1028c284d4fe405402480459974cbcfccc30b969b3cc08e013fe2d",
+        "content_selector": "class=doc-body",
+        "review_method": "Official source identity and displayed version/scope were checked against accepted-reference evidence. The exact captured source bytes were replayed with the pack converter; the source-text conversion hash matched. The local document preserves that source text and adds only separate editorial metadata.",
+        "accepted_content_scope": "official court publication rules reference: Court-publication regime changed in 2026; verify which decision classes are public and where before designing case-law monitoring.",
+        "excluded_content": "HTML interface, link destinations, embedded attachments, interactive fields, images, and content published after capture are outside this text-only copy.",
+        "classification": "court_publication_rules"
+      }
     },
     {
       "source_id": "lv-18",
@@ -493,8 +736,23 @@
         "source_record_note": "Central guidance candidate. Reconcile its linked document requirements/forms against the new law and outstanding Cabinet rules.",
         "retrieval_status": "converted_review_candidate"
       },
-      "local_copy_accepted": false,
-      "decision": "accepted_with_narrow_external_scope"
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_external_scope",
+      "local_path": "source-library/latvia/documents/guidance/lv-pmlp-eu-eea-swiss-overview.md",
+      "local_copy_sha256": "2d7e0b1615ec99af14ece49dfb5baaa8c134bec633c54c49ea046b77745d25f6",
+      "local_copy_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-18.md",
+      "local_copy_reviewed_on": "2026-10-24",
+      "local_copy_review": {
+        "reviewed_on": "2026-10-24",
+        "source_response_sha256": "24d4e788a5240dbb30a12ca54ed2ab72c65df7b046474b3cf3228934f6fe4a41",
+        "source_text_conversion_sha256": "7432fdb40f2896a72fe964fbe62495834b9f5a9642a9e237873572cdbe2597a8",
+        "final_document_sha256": "2d7e0b1615ec99af14ece49dfb5baaa8c134bec633c54c49ea046b77745d25f6",
+        "content_selector": "class=block--system-main",
+        "review_method": "Official source identity and displayed version/scope were checked against accepted-reference evidence. The exact captured source bytes were replayed with the pack converter; the source-text conversion hash matched. The local document preserves that source text and adds only separate editorial metadata.",
+        "accepted_content_scope": "official official agency guidance reference: Current PMLP central overview updated 17 July 2026, after the new Act commenced. Accepted as an overview of the authority’s EU/EEA/Swiss route and document categories, not as confirmation that every linked checklist or form is current.",
+        "excluded_content": "HTML interface, link destinations, embedded attachments, interactive fields, images, and content published after capture are outside this text-only copy.",
+        "classification": "official_agency_guidance"
+      }
     },
     {
       "source_id": "lv-21",
@@ -520,8 +778,23 @@
         "source_record_note": "Parent index is preferable to a pinned file URL. Capture attachment label/date/hash and verify applicable form after the 2026 law.",
         "retrieval_status": "converted_review_candidate"
       },
-      "local_copy_accepted": false,
-      "decision": "accepted_with_narrow_external_scope"
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_external_scope",
+      "local_path": "source-library/latvia/documents/guidance/lv-pmlp-residence-application-form-index.md",
+      "local_copy_sha256": "4e6db55179900584bf2aae10bee2e541ffc5219f567c597d57a9b7ff89647fe1",
+      "local_copy_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-21.md",
+      "local_copy_reviewed_on": "2026-10-24",
+      "local_copy_review": {
+        "reviewed_on": "2026-10-24",
+        "source_response_sha256": "9bc31026aac8592584be3f21c5081494cf4cc619d9ff5e46d860740388517a15",
+        "source_text_conversion_sha256": "93bd064e5d14a6ad02dd870df109e84d89018f24276750d7006c9271fa77e3cf",
+        "final_document_sha256": "4e6db55179900584bf2aae10bee2e541ffc5219f567c597d57a9b7ff89647fe1",
+        "content_selector": "class=block--system-main",
+        "review_method": "Official source identity and displayed version/scope were checked against accepted-reference evidence. The exact captured source bytes were replayed with the pack converter; the source-text conversion hash matched. The local document preserves that source text and adds only separate editorial metadata.",
+        "accepted_content_scope": "official official forms index reference: PMLP application and form index updated 22 September 2026. Accepted as the official parent index and discovery route; each attachment still needs confirmation against the particular application and current law.",
+        "excluded_content": "HTML interface, link destinations, embedded attachments, interactive fields, images, and content published after capture are outside this text-only copy.",
+        "classification": "official_forms_index"
+      }
     },
     {
       "source_id": "lv-25",
@@ -547,8 +820,23 @@
         "source_record_note": "Auxiliary operational obligation; validate law changes and Latvija.lv login/service route.",
         "retrieval_status": "converted_review_candidate"
       },
-      "local_copy_accepted": false,
-      "decision": "accepted_with_narrow_external_scope"
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_external_scope",
+      "local_path": "source-library/latvia/documents/guidance/lv-pmlp-declaration-place-residence-snapshot.md",
+      "local_copy_sha256": "9d174869c866be1b5b282526172e3fbf597859d16ac433c166a667629f76e8df",
+      "local_copy_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-25.md",
+      "local_copy_reviewed_on": "2026-10-24",
+      "local_copy_review": {
+        "reviewed_on": "2026-10-24",
+        "source_response_sha256": "d5f462899e55c764b4fec711e3d64e92c9adfe8282522ce8aea6a97a0e61aac1",
+        "source_text_conversion_sha256": "788108ce1eeab2b402d00cd2694dec9f8ad18c84019e3f48c70be11b3c92e242",
+        "final_document_sha256": "9d174869c866be1b5b282526172e3fbf597859d16ac433c166a667629f76e8df",
+        "content_selector": "class=block--system-main",
+        "review_method": "Official source identity and displayed version/scope were checked against accepted-reference evidence. The exact captured source bytes were replayed with the pack converter; the source-text conversion hash matched. The local document preserves that source text and adds only separate editorial metadata.",
+        "accepted_content_scope": "official official agency guidance reference: PMLP residence-declaration information updated 3 June 2025, accepted only as auxiliary residence-address guidance within that date; it does not determine the free-movement right or current local authority practice.",
+        "excluded_content": "HTML interface, link destinations, embedded attachments, interactive fields, images, and content published after capture are outside this text-only copy.",
+        "classification": "official_agency_guidance"
+      }
     },
     {
       "source_id": "lv-26",
@@ -574,8 +862,23 @@
         "source_record_note": "Fees change independently of core legislation and can vary by document/processing time; monitor the date and table identity.",
         "retrieval_status": "converted_review_candidate"
       },
-      "local_copy_accepted": false,
-      "decision": "accepted_with_narrow_external_scope"
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_external_scope",
+      "local_path": "source-library/latvia/documents/guidance/lv-pmlp-residence-fees-snapshot-2026-10-19.md",
+      "local_copy_sha256": "1d2aaf0e9deacf88654ae14c0ad6d810bf3418bf0bbf08d1b0713b3d5ff67440",
+      "local_copy_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-26.md",
+      "local_copy_reviewed_on": "2026-10-24",
+      "local_copy_review": {
+        "reviewed_on": "2026-10-24",
+        "source_response_sha256": "20d3ae8c2d6eb33508b80ccb8f15aab7821331d86eb95a350125236f6c05208c",
+        "source_text_conversion_sha256": "0c0d454703c84666397ffaa45f6e9634df9a9fa3610f36c6a8313818893f8fb3",
+        "final_document_sha256": "1d2aaf0e9deacf88654ae14c0ad6d810bf3418bf0bbf08d1b0713b3d5ff67440",
+        "content_selector": "class=block--system-main",
+        "review_method": "Official source identity and displayed version/scope were checked against accepted-reference evidence. The exact captured source bytes were replayed with the pack converter; the source-text conversion hash matched. The local document preserves that source text and adds only separate editorial metadata.",
+        "accepted_content_scope": "official official fees guidance reference: PMLP official fees page, accepted as a live fee reference checked 19 October 2026. Check the displayed table again before relying on a particular amount or processing option.",
+        "excluded_content": "HTML interface, link destinations, embedded attachments, interactive fields, images, and content published after capture are outside this text-only copy.",
+        "classification": "official_fees_guidance"
+      }
     },
     {
       "source_id": "lv-29",
@@ -602,7 +905,8 @@
         "retrieval_status": "converted_review_candidate"
       },
       "local_copy_accepted": false,
-      "decision": "accepted_with_narrow_external_scope"
+      "decision": "accepted_with_narrow_external_scope",
+      "candidate_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-29.md"
     },
     {
       "source_id": "lv-30",
@@ -628,8 +932,23 @@
         "source_record_note": "General Schengen visa source; EU-family visa exceptions under the new Act need a separate comparison.",
         "retrieval_status": "converted_review_candidate"
       },
-      "local_copy_accepted": false,
-      "decision": "accepted_with_narrow_external_scope"
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_external_scope",
+      "local_path": "source-library/latvia/documents/guidance/lv-mfa-ordinary-schengen-visa-document-list.md",
+      "local_copy_sha256": "539b5b538eba3d4bfc8330b13f0383feca1df12ba714975bc779e787714a4bbf",
+      "local_copy_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-30.md",
+      "local_copy_reviewed_on": "2026-10-24",
+      "local_copy_review": {
+        "reviewed_on": "2026-10-24",
+        "source_response_sha256": "cf1488ae7a9c8041ea1df8794868e713d14f69b2fe3b35257ea2009f8768775c",
+        "source_text_conversion_sha256": "0f78e83a90e9b96dfa467287096a4050efeb29836cc217cd918ae748e2a9b894",
+        "final_document_sha256": "539b5b538eba3d4bfc8330b13f0383feca1df12ba714975bc779e787714a4bbf",
+        "content_selector": "class=block--system-main",
+        "review_method": "Official source identity and displayed version/scope were checked against accepted-reference evidence. The exact captured source bytes were replayed with the pack converter; the source-text conversion hash matched. The local document preserves that source text and adds only separate editorial metadata.",
+        "accepted_content_scope": "official official ministry guidance reference: MFA general visa-document page accepted for the dated ordinary Schengen visa checklist only; it does not establish the facilitated EU-family-member visa route.",
+        "excluded_content": "HTML interface, link destinations, embedded attachments, interactive fields, images, and content published after capture are outside this text-only copy.",
+        "classification": "official_ministry_guidance"
+      }
     },
     {
       "source_id": "lv-31",
@@ -655,8 +974,23 @@
         "source_record_note": "Nationality-based, change-sensitive table; distinguish visa exemption from residence rights.",
         "retrieval_status": "converted_review_candidate"
       },
-      "local_copy_accepted": false,
-      "decision": "accepted_with_narrow_external_scope"
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_external_scope",
+      "local_path": "source-library/latvia/documents/guidance/lv-pmlp-visa-exemption-list-snapshot-2026-03-16.md",
+      "local_copy_sha256": "1bfd34fb26030973e6641fa956d04b5951f7a5e4bea998362caf7ae1866ebd8b",
+      "local_copy_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-31.md",
+      "local_copy_reviewed_on": "2026-10-24",
+      "local_copy_review": {
+        "reviewed_on": "2026-10-24",
+        "source_response_sha256": "c314097991a96cc0983c8e58481e19b98f14a5cad1ecb212f2069d772085c548",
+        "source_text_conversion_sha256": "a3e18e283c1024f9043d06e76c44b3572aa5130cbea511e54cfd8bd0d8ea6567",
+        "final_document_sha256": "1bfd34fb26030973e6641fa956d04b5951f7a5e4bea998362caf7ae1866ebd8b",
+        "content_selector": "class=block--system-main",
+        "review_method": "Official source identity and displayed version/scope were checked against accepted-reference evidence. The exact captured source bytes were replayed with the pack converter; the source-text conversion hash matched. The local document preserves that source text and adds only separate editorial metadata.",
+        "accepted_content_scope": "official official visa guidance reference: PMLP visa-exemption list accepted as a nationality-based short-stay reference as displayed 16 March 2026; it does not determine residence rights.",
+        "excluded_content": "HTML interface, link destinations, embedded attachments, interactive fields, images, and content published after capture are outside this text-only copy.",
+        "classification": "official_visa_guidance"
+      }
     },
     {
       "source_id": "lv-32",
@@ -683,7 +1017,8 @@
         "retrieval_status": "converted_review_candidate"
       },
       "local_copy_accepted": false,
-      "decision": "accepted_with_narrow_external_scope"
+      "decision": "accepted_with_narrow_external_scope",
+      "candidate_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-32.md"
     },
     {
       "source_id": "lv-33",
@@ -710,7 +1045,8 @@
         "retrieval_status": "converted_review_candidate"
       },
       "local_copy_accepted": false,
-      "decision": "accepted_with_narrow_external_scope"
+      "decision": "accepted_with_narrow_external_scope",
+      "candidate_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-33.md"
     },
     {
       "source_id": "lv-35",
@@ -737,7 +1073,8 @@
         "retrieval_status": "converted_review_candidate"
       },
       "local_copy_accepted": false,
-      "decision": "accepted_with_narrow_external_scope"
+      "decision": "accepted_with_narrow_external_scope",
+      "candidate_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-35.md"
     },
     {
       "source_id": "lv-36",
@@ -763,8 +1100,23 @@
         "source_record_note": "National human-rights/good-administration oversight. Submission contains personal data; monitor only public instructions, not submissions.",
         "retrieval_status": "converted_review_candidate"
       },
-      "local_copy_accepted": false,
-      "decision": "accepted_with_narrow_external_scope"
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_external_scope",
+      "local_path": "source-library/latvia/documents/oversight/lv-ombudsman-contact-and-submission-route.md",
+      "local_copy_sha256": "f603c7a1000a44555f0b2fdfd1c2e05937079bd40e6db7c048e7566ca050eb12",
+      "local_copy_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-36.md",
+      "local_copy_reviewed_on": "2026-10-24",
+      "local_copy_review": {
+        "reviewed_on": "2026-10-24",
+        "source_response_sha256": "a269847f7de844e3b34fb2fbf76bce8238a4a5021283fb25b75fcd475536be9c",
+        "source_text_conversion_sha256": "6c045e51937b2497846ef899ad9f341064222721367097a146a2a81c88d6d17f",
+        "final_document_sha256": "f603c7a1000a44555f0b2fdfd1c2e05937079bd40e6db7c048e7566ca050eb12",
+        "content_selector": "tag=main",
+        "review_method": "Official source identity and displayed version/scope were checked against accepted-reference evidence. The exact captured source bytes were replayed with the pack converter; the source-text conversion hash matched. The local document preserves that source text and adds only separate editorial metadata.",
+        "accepted_content_scope": "official oversight complaint route reference: Ombudsman contact and submission page accepted for the public channels shown; it is an oversight route, not a substitute for a statutory appeal deadline.",
+        "excluded_content": "HTML interface, link destinations, embedded attachments, interactive fields, images, and content published after capture are outside this text-only copy.",
+        "classification": "oversight_complaint_route"
+      }
     },
     {
       "source_id": "lv-38",
@@ -790,8 +1142,23 @@
         "source_record_note": "Attachment rediscovery and version identity should be parent-index based.",
         "retrieval_status": "converted_review_candidate"
       },
-      "local_copy_accepted": false,
-      "decision": "accepted_with_narrow_external_scope"
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_external_scope",
+      "local_path": "source-library/latvia/documents/forms/lv-dvi-complaint-and-request-form-index.md",
+      "local_copy_sha256": "658a0adfd47be48bc68a10d93be039596d8aa727af83f91995687cad1208fe3d",
+      "local_copy_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-38.md",
+      "local_copy_reviewed_on": "2026-10-24",
+      "local_copy_review": {
+        "reviewed_on": "2026-10-24",
+        "source_response_sha256": "ffdcb94ea2d3bede8ab51cc9cc1bdc5b458edd4f365a8bce8ad36a2a8acef1ae",
+        "source_text_conversion_sha256": "60332694077bfbfa3a98e40393f33b4d76e288bddff8b88783fc16a04f0f0a39",
+        "final_document_sha256": "658a0adfd47be48bc68a10d93be039596d8aa727af83f91995687cad1208fe3d",
+        "content_selector": "class=block--system-main",
+        "review_method": "Official source identity and displayed version/scope were checked against accepted-reference evidence. The exact captured source bytes were replayed with the pack converter; the source-text conversion hash matched. The local document preserves that source text and adds only separate editorial metadata.",
+        "accepted_content_scope": "official official forms index reference: DVI form index accepted as a parent forms page, with the 11 February 2026 update recorded; check the linked attachment and secure-submission route before use.",
+        "excluded_content": "HTML interface, link destinations, embedded attachments, interactive fields, images, and content published after capture are outside this text-only copy.",
+        "classification": "official_forms_index"
+      }
     },
     {
       "source_id": "lv-39",
@@ -817,8 +1184,23 @@
         "source_record_note": "Current criteria depend on law and court decision; not every immigration matter qualifies.",
         "retrieval_status": "converted_review_candidate"
       },
-      "local_copy_accepted": false,
-      "decision": "accepted_with_narrow_external_scope"
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_external_scope",
+      "local_path": "source-library/latvia/documents/oversight/lv-court-administration-legal-aid-information.md",
+      "local_copy_sha256": "d6af4bcd89c648d1dc7632a09961700114d56ac808c34bed8750788985c8c9a1",
+      "local_copy_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-39.md",
+      "local_copy_reviewed_on": "2026-10-24",
+      "local_copy_review": {
+        "reviewed_on": "2026-10-24",
+        "source_response_sha256": "9455ef0a104d3ddb2528f722d9c4112a7e9bfd5636acae88cd144765938d164e",
+        "source_text_conversion_sha256": "26243992b930060bd67e2fe9d2f8a2fd3a803cc67bace3fdf31df8836a6b6e1f",
+        "final_document_sha256": "d6af4bcd89c648d1dc7632a09961700114d56ac808c34bed8750788985c8c9a1",
+        "content_selector": "class=block--system-main",
+        "review_method": "Official source identity and displayed version/scope were checked against accepted-reference evidence. The exact captured source bytes were replayed with the pack converter; the source-text conversion hash matched. The local document preserves that source text and adds only separate editorial metadata.",
+        "accepted_content_scope": "official official legal aid guidance reference: Court Administration legal-aid information accepted as general official guidance; statutory eligibility and whether a specific immigration proceeding qualifies remain open.",
+        "excluded_content": "HTML interface, link destinations, embedded attachments, interactive fields, images, and content published after capture are outside this text-only copy.",
+        "classification": "official_legal_aid_guidance"
+      }
     },
     {
       "source_id": "lv-40",
@@ -844,8 +1226,23 @@
         "source_record_note": "Good parent index for dynamic form downloads; confirm new legal aid amendments and attachment versions.",
         "retrieval_status": "converted_review_candidate"
       },
-      "local_copy_accepted": false,
-      "decision": "accepted_with_narrow_external_scope"
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_external_scope",
+      "local_path": "source-library/latvia/documents/forms/lv-court-administration-legal-aid-forms-index.md",
+      "local_copy_sha256": "220b540dda5b12115eed94a4e58eb60ff6c48366fe4779da608918b25ff615aa",
+      "local_copy_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-40.md",
+      "local_copy_reviewed_on": "2026-10-24",
+      "local_copy_review": {
+        "reviewed_on": "2026-10-24",
+        "source_response_sha256": "45c95f282278fb54f05d652b8bbc18a25f25fa5fcbcde83fb700fcc86de16d4a",
+        "source_text_conversion_sha256": "66c74e712356080034b88ce7d3adfa4f53bebe4abe5a5aef599dd65f0c260965",
+        "final_document_sha256": "220b540dda5b12115eed94a4e58eb60ff6c48366fe4779da608918b25ff615aa",
+        "content_selector": "class=block--system-main",
+        "review_method": "Official source identity and displayed version/scope were checked against accepted-reference evidence. The exact captured source bytes were replayed with the pack converter; the source-text conversion hash matched. The local document preserves that source text and adds only separate editorial metadata.",
+        "accepted_content_scope": "official official legal aid forms reference: Court Administration legal-aid forms page accepted as the official parent index updated 20 June 2026; individual attachments and applicable eligibility still require review.",
+        "excluded_content": "HTML interface, link destinations, embedded attachments, interactive fields, images, and content published after capture are outside this text-only copy.",
+        "classification": "official_legal_aid_forms"
+      }
     },
     {
       "source_id": "lv-41",
@@ -871,8 +1268,23 @@
         "source_record_note": "Use as general appeal guidance within its stated scope. Check a special-law deadline or current court fee when that detail affects the matter; do not treat the general page as a complete schedule.",
         "retrieval_status": "converted_review_candidate"
       },
-      "local_copy_accepted": false,
-      "decision": "accepted_with_narrow_external_scope"
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_external_scope",
+      "local_path": "source-library/latvia/documents/procedure/lv-court-administration-administrative-cases.md",
+      "local_copy_sha256": "790d5383b0e0522367dc4b3fcb6fa91417edab469ea3ab792fc05b2170faff88",
+      "local_copy_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-41.md",
+      "local_copy_reviewed_on": "2026-10-24",
+      "local_copy_review": {
+        "reviewed_on": "2026-10-24",
+        "source_response_sha256": "66c4a0ed4cdfec36a9553b3ace51049c7683c1929d8844532aa56908ca53539b",
+        "source_text_conversion_sha256": "4a1ec7972190aac98d6ae2fe8bf0862146964209db39b1e6c5b23284a3c641ea",
+        "final_document_sha256": "790d5383b0e0522367dc4b3fcb6fa91417edab469ea3ab792fc05b2170faff88",
+        "content_selector": "class=block--system-main",
+        "review_method": "Official source identity and displayed version/scope were checked against accepted-reference evidence. The exact captured source bytes were replayed with the pack converter; the source-text conversion hash matched. The local document preserves that source text and adds only separate editorial metadata.",
+        "accepted_content_scope": "official court procedure guidance reference: Court Administration administrative-case guidance accepted for its general venue, filing and fee explanations as displayed 11 February 2026; special migration deadlines and urgent remedies are not resolved.",
+        "excluded_content": "HTML interface, link destinations, embedded attachments, interactive fields, images, and content published after capture are outside this text-only copy.",
+        "classification": "court_procedure_guidance"
+      }
     },
     {
       "source_id": "lv-42",
@@ -979,8 +1391,23 @@
         "source_record_note": "The published fee schedule lists EUR 0.57 per standard electronic document, EUR 21.34 per official-publication group per month, or EUR 128.06 for all groups per month. Confirm with the publisher which fee and delivery scope applies to a maintained legal source library.",
         "retrieval_status": "converted_review_candidate"
       },
-      "local_copy_accepted": false,
-      "decision": "accepted_with_narrow_external_scope"
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_external_scope",
+      "local_path": "source-library/latvia/documents/legislation/lv-cabinet-regulation-536-reuse-fees.md",
+      "local_copy_sha256": "f1b8f47d92e59cc5b12f4a559f1517ee547639106a452cda03dcfa4399ce160e",
+      "local_copy_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-47.md",
+      "local_copy_reviewed_on": "2026-10-24",
+      "local_copy_review": {
+        "reviewed_on": "2026-10-24",
+        "source_response_sha256": "634dc3ab87c17733d04c153a8480e2e009e089e734b62b1796a85e42e935cb8e",
+        "source_text_conversion_sha256": "250586b1925bbbe0d8f10eb73b65835db8050dfc986a443b896f86749fab61be",
+        "final_document_sha256": "f1b8f47d92e59cc5b12f4a559f1517ee547639106a452cda03dcfa4399ce160e",
+        "content_selector": "class=doc-body",
+        "review_method": "Official source identity and displayed version/scope were checked against accepted-reference evidence. The exact captured source bytes were replayed with the pack converter; the source-text conversion hash matched. The local document preserves that source text and adds only separate editorial metadata.",
+        "accepted_content_scope": "official reuse pricing legislation reference: Official Cabinet Regulation 536 accepted as the published reuse-fee schedule as recorded in the 19 October review. Confirm the fee category with the publisher before planning recurring local copies.",
+        "excluded_content": "HTML interface, link destinations, embedded attachments, interactive fields, images, and content published after capture are outside this text-only copy.",
+        "classification": "reuse_pricing_legislation"
+      }
     },
     {
       "source_id": "lv-48",
@@ -1006,8 +1433,23 @@
         "source_record_note": "This is the key publisher-side reuse route. It does not establish that recurring downloads of systematised laws are available through the public interface; obtain written scope and fee confirmation before an automated mirror.",
         "retrieval_status": "converted_review_candidate"
       },
-      "local_copy_accepted": false,
-      "decision": "accepted_with_narrow_external_scope"
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_external_scope",
+      "local_path": "source-library/latvia/documents/guidance/lv-vestnesis-reuse-procedure.md",
+      "local_copy_sha256": "2747fcdaa768bab6a4e8de2a0031dbb329bebef0b1b9038993b0cbbfd745db13",
+      "local_copy_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-48.md",
+      "local_copy_reviewed_on": "2026-10-24",
+      "local_copy_review": {
+        "reviewed_on": "2026-10-24",
+        "source_response_sha256": "4a4c41478e38e7e248b63490dbfc4c05f22facd816fe850816924224f4da8a8e",
+        "source_text_conversion_sha256": "9e9baa6c7edcbce475216f48283b7b44ca73bc67eab1629984f16a852516b52b",
+        "final_document_sha256": "2747fcdaa768bab6a4e8de2a0031dbb329bebef0b1b9038993b0cbbfd745db13",
+        "content_selector": "class=content",
+        "review_method": "Official source identity and displayed version/scope were checked against accepted-reference evidence. The exact captured source bytes were replayed with the pack converter; the source-text conversion hash matched. The local document preserves that source text and adds only separate editorial metadata.",
+        "accepted_content_scope": "official publisher reuse process reference: Official publisher reuse procedure page accepted as information about requesting reuse. It requires written coordination for reuse; this does not block ordinary linking to official source pages.",
+        "excluded_content": "HTML interface, link destinations, embedded attachments, interactive fields, images, and content published after capture are outside this text-only copy.",
+        "classification": "publisher_reuse_process"
+      }
     },
     {
       "source_id": "lv-49",
@@ -1033,8 +1475,23 @@
         "source_record_note": "Fee and technology scope can change; monitor the service page and linked tariff rather than hard-coding the present values.",
         "retrieval_status": "converted_review_candidate"
       },
-      "local_copy_accepted": false,
-      "decision": "accepted_with_narrow_external_scope"
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_external_scope",
+      "local_path": "source-library/latvia/documents/guidance/lv-vestnesis-service-directory-reuse-fees.md",
+      "local_copy_sha256": "acd0d086c3209b382f0a461037096c6d30f88e04f2644fcaa173990dc78b7a51",
+      "local_copy_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-49.md",
+      "local_copy_reviewed_on": "2026-10-24",
+      "local_copy_review": {
+        "reviewed_on": "2026-10-24",
+        "source_response_sha256": "955d7b56761c30fb82692b972d19a4643d911e124f6fc9ac44d848e5cb37f5c3",
+        "source_text_conversion_sha256": "a3110096ce11d3a4f51c1653811eeffa10d855e7834a38e2f9f8e82c5107e776",
+        "final_document_sha256": "acd0d086c3209b382f0a461037096c6d30f88e04f2644fcaa173990dc78b7a51",
+        "content_selector": "tag=main",
+        "review_method": "Official source identity and displayed version/scope were checked against accepted-reference evidence. The exact captured source bytes were replayed with the pack converter; the source-text conversion hash matched. The local document preserves that source text and adds only separate editorial metadata.",
+        "accepted_content_scope": "official publisher service and fee page reference: Official Latvijas Vēstnesis service directory accepted as a navigation route to current reuse services and tariffs; service scope and fees can change.",
+        "excluded_content": "HTML interface, link destinations, embedded attachments, interactive fields, images, and content published after capture are outside this text-only copy.",
+        "classification": "publisher_service_and_fee_page"
+      }
     },
     {
       "source_id": "lv-50",
@@ -1122,7 +1579,8 @@
       "candidate_record": {
         "manifest": "references/candidate-manifest.json",
         "id": "lv-19"
-      }
+      },
+      "candidate_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-19.md"
     },
     {
       "source_id": "lv-20",
@@ -1132,7 +1590,8 @@
       "candidate_record": {
         "manifest": "references/candidate-manifest.json",
         "id": "lv-20"
-      }
+      },
+      "candidate_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-20.md"
     },
     {
       "source_id": "lv-23",
@@ -1142,7 +1601,8 @@
       "candidate_record": {
         "manifest": "references/candidate-manifest.json",
         "id": "lv-23"
-      }
+      },
+      "candidate_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-23.md"
     },
     {
       "source_id": "lv-24",
@@ -1152,7 +1612,8 @@
       "candidate_record": {
         "manifest": "references/candidate-manifest.json",
         "id": "lv-24"
-      }
+      },
+      "candidate_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-24.md"
     },
     {
       "source_id": "lv-37",
@@ -1162,7 +1623,8 @@
       "candidate_record": {
         "manifest": "references/candidate-manifest.json",
         "id": "lv-37"
-      }
+      },
+      "candidate_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-37.md"
     },
     {
       "source_id": "lv-44",
@@ -1194,7 +1656,9 @@
       "candidate_record": {
         "manifest": "references/candidate-manifest.json",
         "id": "lv-22"
-      }
+      },
+      "candidate_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-22.md",
+      "candidate_source_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-22.pdf"
     },
     {
       "source_id": "lv-27",
@@ -1204,7 +1668,8 @@
       "candidate_record": {
         "manifest": "references/candidate-manifest.json",
         "id": "lv-27"
-      }
+      },
+      "candidate_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-27.md"
     },
     {
       "source_id": "lv-28",
@@ -1214,7 +1679,8 @@
       "candidate_record": {
         "manifest": "references/candidate-manifest.json",
         "id": "lv-28"
-      }
+      },
+      "candidate_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-28.md"
     },
     {
       "source_id": "lv-34",
@@ -1224,7 +1690,8 @@
       "candidate_record": {
         "manifest": "references/candidate-manifest.json",
         "id": "lv-34"
-      }
+      },
+      "candidate_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-34.md"
     }
   ],
   "whole_site_human_review_offers": [
@@ -1280,5 +1747,6 @@
     }
   ],
   "currentness_and_dependency_note": "The new free-movement Act took effect on 10 July 2026 and sets 1 December 2027 deadlines for specified Cabinet regulations. Its transitional text says applications filed before commencement are handled under Regulation 675. The official Regulation 675 record, however, says it remains in force until 2 December 2027. This review records the regulation as an official legal reference but leaves its applicability to applications filed on or after 10 July 2026 unresolved; the stale MFA guidance is not used to resolve that conflict. The new Immigration Law is a separate third-country regime effective 15 September 2026; certain provisions take effect on 31 December 2027. Issue-led discovery also added the Residence Declaration Act, Register of Natural Persons Act (selected edition from 29 April 2026), and Civil Status Act as current official references for address registration, population-register records, and civil-status evidence. They do not resolve local implementation or all foreign-document recognition questions.",
-  "count_note": "The 0 accepted local copies count remains separate from 41 accepted official external references. No topic is accepted as adequate and Latvia is not marked complete."
+  "count_note": "The 52 source records comprise 41 accepted external references, 7 pending references, and 4 not-relied-upon references. Thirty records also have an accepted dated local text copy. External-reference acceptance, local-copy acceptance, topic coverage, and country-review completion are separate.",
+  "local_copy_review_policy": "Accepted local copies are dated text-only snapshots of the identified official source region. Acceptance does not include page chrome, link destinations, embedded files/forms, interactive fields, images, subsequent updates, legal-currentness certification, topic coverage, or country completion. Each local path, final-document hash, source-response hash, conversion hash, review date, and source-specific scope is recorded with its accepted reference."
 }

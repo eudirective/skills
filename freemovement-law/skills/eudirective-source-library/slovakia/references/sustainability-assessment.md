@@ -1,6 +1,6 @@
 # Slovakia source-rule sustainability assessment
 
-**Reviewed:** 21 October 2026. The pack has 40 candidate records, 31 converted and replay-verified local candidate texts, 15 reviewed Slov-Lex legal references, four reviewed Ministry of Foreign Affairs links, and one dated Ministry of Interior FAQ link. Twenty external official references are usable within the scope and limits in [source-acceptance.json](source-acceptance.json). No local copy, converted text, topic, or country review is accepted.
+**Reviewed:** 25 October 2026. All 40 source leads have final source-reference or disposition notes. Thirty-six external official references are usable within the scope and limits in [source-acceptance.json](source-acceptance.json); four sources are not accepted for current reliance or remain pending verification. The 31 converted candidate texts and captured inputs are indexed in the Monitor's local-only archive. No local source text, topic, or country review is accepted.
 
 ## Official consolidated legal sources
 
@@ -18,7 +18,7 @@ The existing Slov-Lex downloader and replay workflow is optional maintenance for
 
 The MZV central supporting-documents page (updated 17 August 2026), stay-guidance page (updated 16 August 2026), official Schengen form, and mission directory are accepted as official references with narrow scopes. They do not establish every mission's procedure. The directory lists 82 diplomatic representations, and the Ministry says local document requirements vary. Offer the official MZV mission network for human review when current mission instructions, appointments, outsourcing, or checklists are needed.
 
-The MZV English EU-family page is dated 2022 and contains an Act 404/2012 error. The Hanoi page is dated 2022 and cites repealed Regulation 562/2006. Neither is accepted as current operative guidance. A Minsk page was found but the exact family-member passage and location applicability were not verified, so it remains a candidate. Eight local MFA requests had returned HTTP 403; browser access to selected current MZV pages succeeded. These failures are recorded as route-specific, not evidence that the official site is unavailable.
+The MZV English EU-family page is dated 2022 and contains an Act 404/2012 error. The Hanoi page is dated 2022 and cites repealed Regulation 562/2006. Neither is accepted as current operative guidance. The Minsk page's family-specific exemption and Slovak-national exception were verified and accepted only for Minsk-local guidance; network-wide mission review remains open. Eight local MFA requests had returned HTTP 403; browser access to selected current MZV pages succeeded. These failures are recorded as route-specific, not evidence that the official site is unavailable.
 
 The Interior Ministry's March 2025 EU-citizen FAQ is accepted only as a dated operational reference; it is not a current checklist. Compare its registration and evidence information with Act 404/2011 effective from 1 October 2026 before present-day use. The July 2024 FAQ remains a superseded/older lead. Office addresses, booking categories, mission representation, appointments, and local forms can change. Follow current parent pages and relevant locations when needed rather than relying on snapshots as permanent rules.
 
@@ -30,4 +30,4 @@ The [coverage register](coverage-register.md) maps 11 issue areas and marks all 
 
 ## Disposition
 
-Use the 20 accepted official links within their dated scope and limitations. Keep all local artifacts as unaccepted review material and all 11 baseline topics open. The next useful work is issue-led legal mapping and relevant mission/court discovery, not archive capture, reuse-permission research, or a mandatory conversion pipeline.
+Use the 36 accepted official links within their dated scope and limitations. Keep all 11 baseline topics open. Four source leads remain not accepted or pending, as documented in their final disposition notes. The next useful work is issue-led legal mapping and relevant mission/court discovery, not archive capture, reuse-permission research, or a mandatory conversion pipeline.

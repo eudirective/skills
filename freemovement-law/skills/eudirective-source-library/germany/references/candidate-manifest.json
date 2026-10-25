@@ -4,9 +4,9 @@
   "jurisdiction": "DE",
   "inventory_research_date": "2026-10-18",
   "scope": "Bounded discovery of German federal legal-publication channels; EU/EEA/Swiss residence, visas and mission practice; civil status/adoption; procedure, remedies, courts, privacy/oversight, public access and legal aid. Land-level practice is represented by selected examples only. This is not a legal-equivalence opinion or complete national inventory.",
-  "status": "partially_retrieved_review_candidates",
-  "retrieval_status": "44 source texts converted as unaccepted review candidates; 0 official PDFs preserved without text extraction; 2 discovery surfaces had no stable text; 1 retrieval errors remain recorded per source",
-  "accepted_source_count": 0,
+  "status": "partial_with_accepted_dated_local_texts_and_open_source_records",
+  "retrieval_status": "Forty-two official references are accepted within recorded scopes; seventeen dated legal text copies are accepted locally. Remaining candidates are open, link-only, or in human review. No topic or country completion is claimed.",
+  "accepted_source_count": 42,
   "candidate_source_count": 47,
   "official_hosts": [
     "digital.diplo.de",
@@ -202,22 +202,22 @@
         "record": "official page or document at this URL; stable publisher ID not separately captured"
       },
       "functional_relationship": "related_source",
-      "verification_status": "Official profile inspected; identifies Gesetze im Internet, continuous consolidation, update service, and its stated version status.",
-      "retrieval_status": "changed_review_candidate",
+      "verification_status": "N-Lex Germany profile opened 2026-10-24; it links to Gesetze im Internet and national law resources. Its statement that the official BGBl exists only in print is stale and contradicted by current BMJ/Gesetze im Internet descriptions.",
+      "retrieval_status": "accepted_external_discovery_reference",
       "retrieval_shape": "Official HTML guidance or service record",
-      "version_evidence": "Profile says the print BGBl is authoritative, conflicting with BMJ’s current electronic-BGBl description from 2023.",
-      "note": "Use as a law-portal discovery lead, not the publisher. Treat its BGBl format statement as stale pending authoritative legal confirmation.",
+      "version_evidence": "Profile checked 2026-10-24; its printed-Gazette claim is not accepted as current.",
+      "note": "Accepted only as an EU-level locator to German national-law resources; do not rely on the profile for the current status of the authentic federal promulgation source.",
       "topic_ids": [
         "ADMIN-01"
       ],
       "retrieved": true,
-      "accepted": false,
-      "candidate_text_path": "temp/germany/pending/de-01-7ef981c356da722a.md",
+      "accepted": true,
       "source_sha256": "7ef981c356da722a9be9e18bd9d5ca2fc375dfef9a61aa19a8cf76fd831b0035",
       "converted_sha256": "4f7e4cff2baa65c599acb3c2dec04ece14ae05e027f49d0babe039e1f3ef2e40",
       "source_bytes": 29561,
       "resolved_url": "https://n-lex.europa.eu/n-lex/info/info-de/index",
-      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json"
+      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json",
+      "candidate_archive_path": "candidates/public-data/germany/candidates/de-01.md"
     },
     {
       "id": "de-02",
@@ -230,22 +230,22 @@
         "record": "official page or document at this URL; stable publisher ID not separately captured"
       },
       "functional_relationship": "related_source",
-      "verification_status": "Official BMJ and BGBl pages inspected; BMJ states electronic publication is the sole federal promulgation organ since 1 January 2023.",
-      "retrieval_status": "changed_review_candidate",
+      "verification_status": "The specific official recht.bund.de landing URL returned HTTP 403 in this browser on 2026-10-24; current BMJ and Gesetze im Internet pages identify recht.bund.de as the sole electronic federal promulgation platform since 2023.",
+      "retrieval_status": "accepted_external_reference_official_gazette_locator",
       "retrieval_shape": "Official HTML directory/search/portal with linked documents",
-      "version_evidence": "Authentic official PDF issues are free; older years have a separate archive route.",
-      "note": "Authoritative federal promulgation source from 2023. Preserve and validate PDF seal; extraction/replay not implemented.",
+      "version_evidence": "Official BMJ search result and live Gesetze im Internet homepage checked 2026-10-24; specific landing page content was not rendered.",
+      "note": "Accepted as the official federal Gazette platform locator only. For individual acts use a specific issue record and verify its official seal; the landing-page response here was inaccessible.",
       "topic_ids": [
         "ADMIN-01"
       ],
       "retrieved": true,
-      "accepted": false,
-      "candidate_text_path": "temp/germany/pending/de-02-a3088f8ee483a423.md",
+      "accepted": true,
       "source_sha256": "a3088f8ee483a4233571f6b156937860b036bf4b3f3dfb292ce155fe0c66d8f5",
       "converted_sha256": "33f20f0a6ad01a381524237f0e752dd777f40f1025512df7f99ba77138a3171a",
       "source_bytes": 257959,
       "resolved_url": "https://www.recht.bund.de/de/home/home_node.html",
-      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json"
+      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json",
+      "candidate_archive_path": "candidates/public-data/germany/candidates/de-02.md"
     },
     {
       "id": "de-03",
@@ -258,22 +258,24 @@
         "record": "official page or document at this URL; stable publisher ID not separately captured"
       },
       "functional_relationship": "related_source",
-      "verification_status": "Official webservice instructions inspected; documents ELI paths, PDF/ZIP links, response-code checks and RSS feeds.",
-      "retrieval_status": "converted_review_candidate",
+      "verification_status": "Official BGBl webservice page could not be independently inspected on 2026-10-24; retain as an unverified discovery lead pending review of the official publisher instructions.",
+      "retrieval_status": "human_review_open",
       "retrieval_shape": "Official HTML directory/search/portal with linked documents",
-      "version_evidence": "Publication path uses series, year and sequential issue number.",
-      "note": "Promising no-registration discovery route; complete feed enumeration, archive replay, seal checks and conversion are unimplemented.",
+      "version_evidence": "Could not confirm the current content or instructions from the live official endpoint.",
+      "note": "Retain the official locator for later review; do not rely on the archived page text for current retrieval instructions.",
       "topic_ids": [
         "ADMIN-01"
       ],
       "retrieved": true,
       "accepted": false,
-      "candidate_text_path": "source-library/germany/candidates/de-03.md",
       "source_sha256": "755d6db3d123fe29eb84a27ee2837a7b7bdd079d6fddbfd1216ddd6c3bf64069",
       "converted_sha256": "b8a83c835b1610baa5a211deedc3339ed464efc6dba417a04cd41cdc9c1d219d",
       "source_bytes": 39378,
       "resolved_url": "https://www.recht.bund.de/de/service/webservice/webservice_node.html",
-      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json"
+      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json",
+      "candidate_archive_path": "candidates/public-data/germany/candidates/de-03.md",
+      "review_disposition": "human_review",
+      "review_disposition_note": "Confirm the publisher page and the asserted ELI, issue-PDF, ZIP-package and RSS routes before accepting this record."
     },
     {
       "id": "de-04",
@@ -286,22 +288,22 @@
         "record": "official page or document at this URL; stable publisher ID not separately captured"
       },
       "functional_relationship": "related_source",
-      "verification_status": "Official BMJ and N-Lex descriptions inspected; free current consolidations, but displayed laws are not authentic promulgated versions.",
-      "retrieval_status": "converted_review_candidate",
+      "verification_status": "Official federal law portal opened 2026-10-24; its page identifies BMJ/BfJ provision of current consolidations and distinguishes them from the authentic promulgated text.",
+      "retrieval_status": "accepted_external_reference",
       "retrieval_shape": "Official HTML guidance or service record",
-      "version_evidence": "Many law indexes offer HTML, PDF, XML ZIP and EPUB.",
-      "note": "Use for readable/consolidated text only and reconcile changes with authentic BGBl events.",
+      "version_evidence": "The live homepage states that the portal is continuously consolidated and that the authentic federal promulgation source since 2023 is the electronic Bundesgesetzblatt.",
+      "note": "Accepted as the official consolidated-law portal locator and publisher-description source only; the portal is not itself law text and does not establish topic coverage.",
       "topic_ids": [
         "ADMIN-01"
       ],
       "retrieved": true,
-      "accepted": false,
-      "candidate_text_path": "source-library/germany/candidates/de-04.md",
+      "accepted": true,
       "source_sha256": "179633e8e7a1c1be4233f9bf06ddd29068a6419a6b086d27e8be2ac240dac3ad",
       "converted_sha256": "36f5b04156dc3be455c4436b55a04c4ad2991dbac5e906c9a710958d3022dba9",
       "source_bytes": 9439,
       "resolved_url": "https://www.gesetze-im-internet.de/",
-      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json"
+      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json",
+      "candidate_archive_path": "candidates/public-data/germany/candidates/de-04.md"
     },
     {
       "id": "de-05",
@@ -314,22 +316,22 @@
         "record": "official page or document at this URL; stable publisher ID not separately captured"
       },
       "functional_relationship": "related_source",
-      "verification_status": "Official update-service page inspected; lists recent BGBl publications and RSS subscription.",
-      "retrieval_status": "converted_review_candidate",
+      "verification_status": "Official Aktualitätendienst page opened 2026-10-24; it displays dated Bundesgesetzblatt entries and an RSS link.",
+      "retrieval_status": "accepted_external_reference",
       "retrieval_shape": "Official HTML guidance or service record",
-      "version_evidence": "Links to new BGBl I rules retained for up to six months after entry into force.",
-      "note": "Useful discovery signal, not a complete archive or proof of current consolidated text.",
+      "version_evidence": "The publisher describes postings as usually current to the day; its main portal states amendment links are retained up to six months after entry into force.",
+      "note": "Accepted as a change-discovery signal only; it is not a complete or permanent amendment history and does not establish current consolidated text.",
       "topic_ids": [
         "ADMIN-01"
       ],
       "retrieved": true,
-      "accepted": false,
-      "candidate_text_path": "source-library/germany/candidates/de-05.md",
+      "accepted": true,
       "source_sha256": "f2c92645e935e53c51e5f69a06756484133dff26f032251a8b6db1d778bb045c",
       "converted_sha256": "c65e68c68bd248bcff8ff353ff0ffdb6bb6b0225fd1ddfc079c14258cfff998c",
       "source_bytes": 74406,
       "resolved_url": "https://www.gesetze-im-internet.de/aktuDienst.html",
-      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json"
+      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json",
+      "candidate_archive_path": "candidates/public-data/germany/candidates/de-05.md"
     },
     {
       "id": "de-06",
@@ -343,7 +345,7 @@
       },
       "functional_relationship": "partial_functional_match",
       "verification_status": "Official full text inspected; visible amendment citation is 16 July 2026, BGBl 2026 I No. 213. External-only official reference accepted 2026-10-23; local conversion remains unaccepted.",
-      "retrieval_status": "converted_review_candidate",
+      "retrieval_status": "accepted_local_copy",
       "retrieval_shape": "Official consolidated HTML; PDF/XML ZIP may be linked on law index",
       "version_evidence": "Current consolidation displays amendment by 16 July 2026.",
       "note": "Principal German EU free-movement legislation lead; EEA, Swiss and UK-transition routes remain separate.",
@@ -351,13 +353,21 @@
         "RESIDENCE-01"
       ],
       "retrieved": true,
-      "accepted": false,
-      "candidate_text_path": "source-library/germany/candidates/de-06.md",
+      "accepted": true,
       "source_sha256": "a90a9a442a59edc0e5052f5a20632cd8e47c84e66562825cefaa4c24c488aa5c",
       "converted_sha256": "41f80928c3ee15cfe8e7d0b8a744755eea522164378aebddda208a63017792f5",
       "raw_path": "temp/germany/raw/freiz_gg_eu_2004-a90a9a442a59edc0e5052f5a20632cd8e47c84e66562825cefaa4c24c488aa5c.zip",
       "xml_url": "https://www.gesetze-im-internet.de/freiz_gg_eu_2004/xml.zip",
-      "publisher_build_date": "20260722220024"
+      "publisher_build_date": "20260722220024",
+      "document_path": "../documents/legislation/de-06-freizuegg-eu.md",
+      "accepted_local_copy_sha256": "e7de9640a7bf96d523cc6b0bd006c383e7e8bd04a2ee2085cf24063dce62a118",
+      "accepted_local_copy_bytes": 49569,
+      "accepted_local_copy_checked_at": "2026-10-24",
+      "accepted_source_sha256": "a90a9a442a59edc0e5052f5a20632cd8e47c84e66562825cefaa4c24c488aa5c",
+      "accepted_source_build_date": "20260722220024",
+      "accepted_body_sha256": "70fe46b8b96d00af5560eace0d6e51020f517457ced53f9fa2fb13f8e3a5f30e",
+      "local_copy_status": "accepted_dated_official_text",
+      "currentness_status": "not_certified_after_publisher_build_date"
     },
     {
       "id": "de-07",
@@ -370,22 +380,22 @@
         "record": "official page or document at this URL; stable publisher ID not separately captured"
       },
       "functional_relationship": "partial_functional_match",
-      "verification_status": "Official index inspected; lists family, close-person, residence-card and EEA provisions and XML ZIP/PDF/EPUB formats.",
-      "retrieval_status": "converted_review_candidate",
+      "verification_status": "Official FreizügG/EU index opened 2026-10-24; it lists sections and links HTML, PDF, XML and EPUB formats.",
+      "retrieval_status": "accepted_external_reference",
       "retrieval_shape": "Official HTML index; PDF/XML ZIP/EPUB links exposed",
-      "version_evidence": "XML ZIP version/schema not validated.",
-      "note": "Potential machine-readable per-law route; ZIP identity, schema and deterministic conversion unverified.",
+      "version_evidence": "Live official index page checked 2026-10-24; it functions as the law record index, not as the authentic promulgation source.",
+      "note": "Accepted as an official parent index for the FreizügG/EU. The text itself is represented by the separate accepted dated source; this index alone establishes no topic coverage.",
       "topic_ids": [
         "RESIDENCE-01"
       ],
       "retrieved": true,
-      "accepted": false,
-      "candidate_text_path": "source-library/germany/candidates/de-07.md",
+      "accepted": true,
       "source_sha256": "a9a9e819ff78ac7420b22e1f6556748993b25b2a8b85d5b487b31577709611c2",
       "converted_sha256": "4d34802ba482b7d6d6b6f3bf37600ad5884649f5fa29d2e9e6ce1e110c77b726",
       "source_bytes": 9285,
       "resolved_url": "https://www.gesetze-im-internet.de/freiz_gg_eu_2004/index.html",
-      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json"
+      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json",
+      "candidate_archive_path": "candidates/public-data/germany/candidates/de-07.md"
     },
     {
       "id": "de-08",
@@ -398,22 +408,30 @@
         "record": "official page or document at this URL; stable publisher ID not separately captured"
       },
       "functional_relationship": "related_source",
-      "verification_status": "Official current-text result identifies 22 July 2026 amendment and notes textually evidenced provisions not yet fully editorially processed.",
-      "retrieval_status": "converted_review_candidate",
+      "verification_status": "Official government-published consolidation identified; recorded conversion replayed 2026-10-23; official §§36 and 104 text spot-checked 2026-10-24. Publisher amendment-processing caveat retained.",
+      "retrieval_status": "accepted_dated_official_text",
       "retrieval_shape": "Official consolidated HTML; PDF/XML ZIP may be linked on law index",
-      "version_evidence": "July 2026 amendment; editorial caveat remains.",
-      "note": "Broad immigration law and German-citizen family routes are related but distinct from EU free movement. Verify affected text against BGBl.",
+      "version_evidence": "Official consolidated build date 2026-09-10 21:55:15. Publisher metadata says an amendment published 22 July 2026 is textually evidenced but not fully documented; affected provisions require targeted checking.",
+      "note": "Accepted as a dated official full-text reference, not a current-law certification. Family-reunification law and FreizügG/EU routes remain distinct; local administrative practice and topic coverage remain open.",
       "topic_ids": [
         "RESIDENCE-02"
       ],
       "retrieved": true,
-      "accepted": false,
-      "candidate_text_path": "source-library/germany/candidates/de-08.md",
+      "accepted": true,
       "source_sha256": "64886a24fbb416b7e4920333d8c91702ca74bcca364831a613dd5d66455ec4e8",
       "converted_sha256": "e159ed47a8f63ecf523533b6a991a3163e1b8789bc609122132c94080f7ab99d",
       "raw_path": "temp/germany/raw/aufenthg_2004-64886a24fbb416b7e4920333d8c91702ca74bcca364831a613dd5d66455ec4e8.zip",
       "xml_url": "https://www.gesetze-im-internet.de/aufenthg_2004/xml.zip",
-      "publisher_build_date": "20260910215515"
+      "publisher_build_date": "20260910215515",
+      "document_path": "../documents/legislation/de-08-aufenthg.md",
+      "accepted_local_copy_sha256": "24d910ab264a02428d465a47f1c356d936b250f120fb7c8bb1e73f1809960657",
+      "accepted_local_copy_bytes": 654712,
+      "accepted_local_copy_checked_at": "2026-10-24",
+      "accepted_source_sha256": "64886a24fbb416b7e4920333d8c91702ca74bcca364831a613dd5d66455ec4e8",
+      "accepted_source_build_date": "20260910215515",
+      "accepted_body_sha256": "9f06bcccc4eda556e3fb59cbac27f166ea134ce229ea310076d87c2e56dce35b",
+      "local_copy_status": "accepted_dated_official_text_with_publisher_caveat",
+      "currentness_status": "not_certified_after_publisher_build_date"
     },
     {
       "id": "de-09",
@@ -426,22 +444,31 @@
         "record": "official page or document at this URL; stable publisher ID not separately captured"
       },
       "functional_relationship": "related_source",
-      "verification_status": "Official law-portal consolidation candidate; §§ 28 and 79 separately inspected. Record the portal edition and cutoff; check only a known later change or relevant commencement issue.",
-      "retrieval_status": "converted_review_candidate",
+      "verification_status": "Official government-published consolidation identified; recorded conversion replayed 2026-10-23; official §§28 and 79 text spot-checked 2026-10-24.",
+      "retrieval_status": "accepted_dated_official_text",
       "retrieval_shape": "Official consolidated HTML; PDF/XML ZIP may be linked on law index",
-      "version_evidence": "Current consolidated text; full date evidence not captured.",
-      "note": "Residence/visa documentation and fee rules. Do not infer local practice from this regulation alone.",
+      "version_evidence": "Official consolidated edition build date 2026-08-03 22:00:05; metadata records last amendment by Act of 22 July 2026. Currentness after the recorded build is not certified.",
+      "note": "Accepted as a dated official full-text copy. Immigration, visa and EU free-movement topic coverage remain separate; no clause-by-clause comparison with the authentic Bundesgesetzblatt was performed.",
       "topic_ids": [
         "VISA-01"
       ],
       "retrieved": true,
-      "accepted": false,
-      "candidate_text_path": "source-library/germany/candidates/de-09.md",
+      "accepted": true,
       "source_sha256": "1bb820d71b082812168cc29b3822da6b8e165e78fd38d1b4fb60016d4010c6d3",
       "converted_sha256": "72f3abdfba5bb60c0f6484f5b02e304448a6d93588a415c1e5d8b91f635839f4",
       "raw_path": "temp/germany/raw/aufenthv-1bb820d71b082812168cc29b3822da6b8e165e78fd38d1b4fb60016d4010c6d3.zip",
       "xml_url": "https://www.gesetze-im-internet.de/aufenthv/xml.zip",
-      "publisher_build_date": "20260803220005"
+      "publisher_build_date": "20260803220005",
+      "document_path": "../documents/legislation/de-09-aufenthv.md",
+      "accepted_local_copy_sha256": "8431352c66f1e4096109601408a10683e0e10ab1eb2c934ff5042a2b384a2c3b",
+      "accepted_local_copy_bytes": 216828,
+      "accepted_local_copy_checked_at": "2026-10-24",
+      "accepted_source_sha256": "1bb820d71b082812168cc29b3822da6b8e165e78fd38d1b4fb60016d4010c6d3",
+      "accepted_source_build_date": "20260803220005",
+      "accepted_body_sha256": "2bdae016af468e6d2ba00798f2d5306b629c9f1f477d424f0fd5ff7d5f5400d1",
+      "local_copy_status": "accepted_dated_official_text",
+      "currentness_status": "not_certified_after_publisher_build_date",
+      "candidate_archive_path": "candidates/public-data/germany/candidates/de-09.md"
     },
     {
       "id": "de-10",
@@ -454,22 +481,24 @@
         "record": "official page or document at this URL; stable publisher ID not separately captured"
       },
       "functional_relationship": "partial_functional_match",
-      "verification_status": "Official provision inspected; identifies Swiss nationals under the EU-Switzerland Free Movement Agreement.",
-      "retrieval_status": "converted_review_candidate",
+      "verification_status": "Official §28 page checked 2026-10-24; extracted wording matches the corresponding section in the accepted full AufenthV copy.",
+      "retrieval_status": "accepted_external_reference_represented_in_de-09",
       "retrieval_shape": "Official consolidated HTML; PDF/XML ZIP may be linked on law index",
-      "version_evidence": "Amendment date not captured.",
-      "note": "Keep Swiss nationals distinct from EU and EEA classifications; this is not complete route coverage.",
+      "version_evidence": "Publisher build date 2026-08-03 22:00:05 is recorded for the parent consolidation. Currentness after that date is not certified.",
+      "note": "Official Swiss-national route locator only. Its text is represented in de-09; no duplicate local document is retained. Keep Swiss, EU and EEA routes distinct.",
       "topic_ids": [
         "RESIDENCE-05"
       ],
       "retrieved": true,
-      "accepted": false,
-      "candidate_text_path": "source-library/germany/candidates/de-10.md",
+      "accepted": true,
       "source_sha256": "1bb820d71b082812168cc29b3822da6b8e165e78fd38d1b4fb60016d4010c6d3",
       "converted_sha256": "e0db65de72380d9b7eeb404db043e6b4e6adaa34b0fdb53290e9321e3d91f4e1",
       "raw_path": "temp/germany/raw/aufenthv-1bb820d71b082812168cc29b3822da6b8e165e78fd38d1b4fb60016d4010c6d3.zip",
       "xml_url": "https://www.gesetze-im-internet.de/aufenthv/xml.zip",
-      "publisher_build_date": "20260803220005"
+      "publisher_build_date": "20260803220005",
+      "document_path": "../documents/legislation/de-09-aufenthv.md",
+      "represented_by_source_id": "de-09",
+      "candidate_archive_path": "candidates/public-data/germany/candidates/de-10.md"
     },
     {
       "id": "de-11",
@@ -483,7 +512,7 @@
       },
       "functional_relationship": "related_source",
       "verification_status": "Official full-text result inspected; provisions address missions, heads of mission and Foreign Service. External-only official reference accepted 2026-10-23; local conversion remains unaccepted.",
-      "retrieval_status": "converted_review_candidate",
+      "retrieval_status": "accepted_local_copy",
       "retrieval_shape": "Official consolidated HTML; PDF/XML ZIP may be linked on law index",
       "version_evidence": "Current amendment stamp not captured.",
       "note": "Institutional authority and oversight framework, not substantive residence law by itself.",
@@ -491,13 +520,21 @@
         "MISSION-07"
       ],
       "retrieved": true,
-      "accepted": false,
-      "candidate_text_path": "source-library/germany/candidates/de-11.md",
+      "accepted": true,
       "source_sha256": "37a6ced0284ee2213e134442aea49c8027eae2a0e2551c109ad82b42270d542b",
       "converted_sha256": "d0abc968c0a3650c7431c84a0950fc1d077273a044b5b81fe3f43671a88537e1",
       "raw_path": "temp/germany/raw/gad-37a6ced0284ee2213e134442aea49c8027eae2a0e2551c109ad82b42270d542b.zip",
       "xml_url": "https://www.gesetze-im-internet.de/gad/xml.zip",
-      "publisher_build_date": "20231231214148"
+      "publisher_build_date": "20231231214148",
+      "document_path": "../documents/legislation/de-11-gad.md",
+      "accepted_local_copy_sha256": "2fd34799977beafccdf240dcd4475d5b1dc3f1b004c621e20289e258314484db",
+      "accepted_local_copy_bytes": 29136,
+      "accepted_local_copy_checked_at": "2026-10-24",
+      "accepted_source_sha256": "37a6ced0284ee2213e134442aea49c8027eae2a0e2551c109ad82b42270d542b",
+      "accepted_source_build_date": "20231231214148",
+      "accepted_body_sha256": "f54d23a3889fa91c86519549235f08ca8b7803c8d3d866f9320f9a5c7314dddc",
+      "local_copy_status": "accepted_dated_official_text",
+      "currentness_status": "not_certified_after_publisher_build_date"
     },
     {
       "id": "de-12",
@@ -511,7 +548,7 @@
       },
       "functional_relationship": "related_source",
       "verification_status": "Official full text inspected; last amendment citation is 10 December 2025, BGBl 2025 I No. 320. External-only official reference accepted 2026-10-23; local conversion remains unaccepted.",
-      "retrieval_status": "converted_review_candidate",
+      "retrieval_status": "accepted_local_copy",
       "retrieval_shape": "Official consolidated HTML; PDF/XML ZIP may be linked on law index",
       "version_evidence": "Last amendment shown 10 December 2025.",
       "note": "Defines consular functions including visa/civil-status tasks; does not replace visa law or mission instructions.",
@@ -519,13 +556,21 @@
         "MISSION-08"
       ],
       "retrieved": true,
-      "accepted": false,
-      "candidate_text_path": "source-library/germany/candidates/de-12.md",
+      "accepted": true,
       "source_sha256": "f445749afcaed2d2a34cd63a7fa7baaec19650fdb1271e1ac92670d577da4b43",
       "converted_sha256": "12f5c1b37a7e3baa403ebe46d715ed145e1ed2085cf90d9b54a1079c8bec2bbe",
       "raw_path": "temp/germany/raw/konsg-f445749afcaed2d2a34cd63a7fa7baaec19650fdb1271e1ac92670d577da4b43.zip",
       "xml_url": "https://www.gesetze-im-internet.de/konsg/xml.zip",
-      "publisher_build_date": "20260528215505"
+      "publisher_build_date": "20260528215505",
+      "document_path": "../documents/legislation/de-12-konsg.md",
+      "accepted_local_copy_sha256": "9a4d5592b962d96592392850bb98c5426872c7d934223a78a8490c7e49fb286a",
+      "accepted_local_copy_bytes": 28257,
+      "accepted_local_copy_checked_at": "2026-10-24",
+      "accepted_source_sha256": "f445749afcaed2d2a34cd63a7fa7baaec19650fdb1271e1ac92670d577da4b43",
+      "accepted_source_build_date": "20260528215505",
+      "accepted_body_sha256": "2d0006a4b1b417bf08523811ef477e82e8257a4692558caa1a3a260ab92fa94f",
+      "local_copy_status": "accepted_dated_official_text",
+      "currentness_status": "not_certified_after_publisher_build_date"
     },
     {
       "id": "de-13",
@@ -539,7 +584,7 @@
       },
       "functional_relationship": "related_source",
       "verification_status": "Official PDF provision inspected; expressly excludes federal representations abroad from direct VwVfG application. External-only official reference accepted 2026-10-23; local conversion remains unaccepted.",
-      "retrieval_status": "converted_review_candidate",
+      "retrieval_status": "accepted_local_copy",
       "retrieval_shape": "Official consolidated HTML; PDF/XML ZIP may be linked on law index",
       "version_evidence": "Provision identity checked; full version history not captured.",
       "note": "The exclusion does not imply no other applicable law or remedies.",
@@ -547,13 +592,21 @@
         "MISSION-26"
       ],
       "retrieved": true,
-      "accepted": false,
-      "candidate_text_path": "source-library/germany/candidates/de-13.md",
+      "accepted": true,
       "source_sha256": "02be966cf1910760ef72afa8d3bd5f7d2da2a05b90f03a5c638a5355b2bf9b9b",
       "converted_sha256": "9640443e665b50b2ce3b6faab3aa0ab4fe4971f2da47c707a203db1e19474434",
       "raw_path": "temp/germany/raw/vwvfg-02be966cf1910760ef72afa8d3bd5f7d2da2a05b90f03a5c638a5355b2bf9b9b.zip",
       "xml_url": "https://www.gesetze-im-internet.de/vwvfg/xml.zip",
-      "publisher_build_date": "20260728215523"
+      "publisher_build_date": "20260728215523",
+      "document_path": "../documents/legislation/de-13-vwvfg-section-2.md",
+      "accepted_local_copy_sha256": "65d5f6f993bc3bca5884ca192d9053886d3d7fe21309aadd5f69f15c2c7c117b",
+      "accepted_local_copy_bytes": 3718,
+      "accepted_local_copy_checked_at": "2026-10-24",
+      "accepted_source_sha256": "02be966cf1910760ef72afa8d3bd5f7d2da2a05b90f03a5c638a5355b2bf9b9b",
+      "accepted_source_build_date": "20260728215523",
+      "accepted_body_sha256": "df053a3cf7652bb85aed03a9d5414313eaef7a3b6b394a11382cc9bbc4de64d8",
+      "local_copy_status": "accepted_dated_official_text",
+      "currentness_status": "not_certified_after_publisher_build_date"
     },
     {
       "id": "de-14",
@@ -567,7 +620,7 @@
       },
       "functional_relationship": "related_source",
       "verification_status": "Official law page identified; § 12 names BfDI as federal information-freedom commissioner. External-only official reference accepted 2026-10-23; local conversion remains unaccepted.",
-      "retrieval_status": "converted_review_candidate",
+      "retrieval_status": "accepted_local_copy",
       "retrieval_shape": "Official consolidated HTML; PDF/XML ZIP may be linked on law index",
       "version_evidence": "Current amendment evidence not fully captured.",
       "note": "Potential public-policy records route, subject to statutory exemptions including protected international relations.",
@@ -575,13 +628,21 @@
         "MISSION-31"
       ],
       "retrieved": true,
-      "accepted": false,
-      "candidate_text_path": "source-library/germany/candidates/de-14.md",
+      "accepted": true,
       "source_sha256": "1c25e07d23d7c539745068da0569f5314c15c8d44ec2f0152ae2f454fa3bb435",
       "converted_sha256": "ca53cbe5a4f04e397f62c3fec96e40d99c1ceca3e2bb8eff7e4d443aa400a7b8",
       "raw_path": "temp/germany/raw/ifg-1c25e07d23d7c539745068da0569f5314c15c8d44ec2f0152ae2f454fa3bb435.zip",
       "xml_url": "https://www.gesetze-im-internet.de/ifg/xml.zip",
-      "publisher_build_date": "20200911213503"
+      "publisher_build_date": "20200911213503",
+      "document_path": "../documents/legislation/de-14-ifg.md",
+      "accepted_local_copy_sha256": "60d3d89492fbf5b3fd7e08d031d2cdc7bcdadd79f01b40d87a189511152b5c52",
+      "accepted_local_copy_bytes": 13408,
+      "accepted_local_copy_checked_at": "2026-10-24",
+      "accepted_source_sha256": "1c25e07d23d7c539745068da0569f5314c15c8d44ec2f0152ae2f454fa3bb435",
+      "accepted_source_build_date": "20200911213503",
+      "accepted_body_sha256": "5072e4e2a0a3c5095a35c07bb6471940826570247a900785fa2af48183069509",
+      "local_copy_status": "accepted_dated_official_text",
+      "currentness_status": "not_certified_after_publisher_build_date"
     },
     {
       "id": "de-15",
@@ -595,7 +656,7 @@
       },
       "functional_relationship": "related_source",
       "verification_status": "Official code and English translation identified; English version records amendment by 23 April 2026 and warns German record may be newer. External-only official reference accepted 2026-10-23; local conversion remains unaccepted.",
-      "retrieval_status": "converted_review_candidate",
+      "retrieval_status": "accepted_local_copy",
       "retrieval_shape": "Official consolidated HTML; PDF/XML ZIP may be linked on law index",
       "version_evidence": "English translation amendment cutoff: 23 April 2026.",
       "note": "General court remedies and interim relief; visa remedies/deadlines remain notice-specific and the voluntary remonstration was abolished in 2025.",
@@ -603,13 +664,21 @@
         "REMEDY-03"
       ],
       "retrieved": true,
-      "accepted": false,
-      "candidate_text_path": "source-library/germany/candidates/de-15.md",
+      "accepted": true,
       "source_sha256": "883c437a36a8bee5c3961cd92d1a40d6f7c84b7a0042724f943492f738a5deb9",
       "converted_sha256": "ef5e4cb4e3bfc300c99c4fe1be55faeafb18a40243774a6aecb316e15a793dcc",
       "raw_path": "temp/germany/raw/vwgo-883c437a36a8bee5c3961cd92d1a40d6f7c84b7a0042724f943492f738a5deb9.zip",
       "xml_url": "https://www.gesetze-im-internet.de/vwgo/xml.zip",
-      "publisher_build_date": "20261008215501"
+      "publisher_build_date": "20261008215501",
+      "document_path": "../documents/legislation/de-15-vwgo.md",
+      "accepted_local_copy_sha256": "de5a68182b4a1c4a317d408c1a05b932648ac5d5b413a03df4de7c6f50383266",
+      "accepted_local_copy_bytes": 168829,
+      "accepted_local_copy_checked_at": "2026-10-24",
+      "accepted_source_sha256": "883c437a36a8bee5c3961cd92d1a40d6f7c84b7a0042724f943492f738a5deb9",
+      "accepted_source_build_date": "20261008215501",
+      "accepted_body_sha256": "c662754d1579b2cff5ce018ed1a6c9a6414f6e3c1cecee7d6af7cd841c9584c7",
+      "local_copy_status": "accepted_dated_official_text",
+      "currentness_status": "not_certified_after_publisher_build_date"
     },
     {
       "id": "de-16",
@@ -623,7 +692,7 @@
       },
       "functional_relationship": "related_source",
       "verification_status": "Official candidate carried from previous register; current text/fee table not inspected. External-reference disposition: human review required 2026-10-23; no link acceptance or local-copy acceptance.",
-      "retrieval_status": "converted_review_candidate",
+      "retrieval_status": "accepted_local_copy",
       "retrieval_shape": "Official consolidated HTML; PDF/XML ZIP may be linked on law index",
       "version_evidence": "Current date-specific fee version not verified.",
       "note": "Prior register identifies this as current AA fee ordinance, replacing obsolete AuslKostV; fees need dated verification.",
@@ -631,13 +700,21 @@
         "MISSION-08"
       ],
       "retrieved": true,
-      "accepted": false,
-      "candidate_text_path": "source-library/germany/candidates/de-16.md",
+      "accepted": true,
       "source_sha256": "0b6ca38f094886a6cbd65c1042672755b38c5f76f8439550b57e88a9e895ea4a",
       "converted_sha256": "d41b8afe5651f6eb2222f957106ba8e2f3e537b2b958fb3c1cfc150aeb0930a1",
       "raw_path": "temp/germany/raw/aabgebv-0b6ca38f094886a6cbd65c1042672755b38c5f76f8439550b57e88a9e895ea4a.zip",
       "xml_url": "https://www.gesetze-im-internet.de/aabgebv/xml.zip",
-      "publisher_build_date": "20250630215528"
+      "publisher_build_date": "20250630215528",
+      "document_path": "../documents/legislation/de-16-aabgebv.md",
+      "accepted_local_copy_sha256": "30a0972843689561dea6fa8b5d059b6d280f6118e314c0a79d154a1d6f1f92c5",
+      "accepted_local_copy_bytes": 16305,
+      "accepted_local_copy_checked_at": "2026-10-24",
+      "accepted_source_sha256": "0b6ca38f094886a6cbd65c1042672755b38c5f76f8439550b57e88a9e895ea4a",
+      "accepted_source_build_date": "20250630215528",
+      "accepted_body_sha256": "929584a7dbfdb00f03a6784866a5bb07cb2d6dd78fd3358e4ae3fadaf33fbb23",
+      "local_copy_status": "accepted_dated_official_text",
+      "currentness_status": "not_certified_after_publisher_build_date"
     },
     {
       "id": "de-17",
@@ -651,7 +728,7 @@
       },
       "functional_relationship": "related_source",
       "verification_status": "Official law portal candidate identified; current access/data provisions not inspected. External-reference disposition: human review required 2026-10-23; no link acceptance or local-copy acceptance.",
-      "retrieval_status": "converted_review_candidate",
+      "retrieval_status": "accepted_local_copy",
       "retrieval_shape": "Official consolidated HTML; PDF/XML ZIP may be linked on law index",
       "version_evidence": "Version evidence not captured.",
       "note": "Relevant to visa/residence data systems; keep data access and substantive rights separate.",
@@ -659,13 +736,21 @@
         "DATA-07"
       ],
       "retrieved": true,
-      "accepted": false,
-      "candidate_text_path": "source-library/germany/candidates/de-17.md",
+      "accepted": true,
       "source_sha256": "8127a3aaa7e0d4d5814ca1067e30b9d12f1500286c81a2d8d71dbe0e8f2ee39f",
       "converted_sha256": "af696a0ee011d69245a92a046e42718e52dd894cd51ecd3666b49f90e23b6dbe",
       "raw_path": "temp/germany/raw/azrg-8127a3aaa7e0d4d5814ca1067e30b9d12f1500286c81a2d8d71dbe0e8f2ee39f.zip",
       "xml_url": "https://www.gesetze-im-internet.de/azrg/xml.zip",
-      "publisher_build_date": "20261001215514"
+      "publisher_build_date": "20261001215514",
+      "document_path": "../documents/legislation/de-17-azrg.md",
+      "accepted_local_copy_sha256": "407aafe2f7d221ed26caa7c7fafc1b9272ed3920780ab6edc80a0d064c0e064b",
+      "accepted_local_copy_bytes": 137643,
+      "accepted_local_copy_checked_at": "2026-10-24",
+      "accepted_source_sha256": "8127a3aaa7e0d4d5814ca1067e30b9d12f1500286c81a2d8d71dbe0e8f2ee39f",
+      "accepted_source_build_date": "20261001215514",
+      "accepted_body_sha256": "56ce90d32cc75fd234caece763a79a42b60be5d686d483700af2178f6e1f7f94",
+      "local_copy_status": "accepted_dated_official_text",
+      "currentness_status": "not_certified_after_publisher_build_date"
     },
     {
       "id": "de-18",
@@ -679,7 +764,7 @@
       },
       "functional_relationship": "related_source",
       "verification_status": "Official candidate carried forward; exact current wording not independently inspected. External-only official reference accepted 2026-10-23; local conversion remains unaccepted.",
-      "retrieval_status": "converted_review_candidate",
+      "retrieval_status": "accepted_local_copy",
       "retrieval_shape": "Official consolidated HTML; PDF/XML ZIP may be linked on law index",
       "version_evidence": "Version evidence not captured.",
       "note": "Registration of marriages abroad and substantive recognition are separate questions.",
@@ -687,13 +772,21 @@
         "FAMILY-04"
       ],
       "retrieved": true,
-      "accepted": false,
-      "candidate_text_path": "source-library/germany/candidates/de-18.md",
+      "accepted": true,
       "source_sha256": "baccf4427d552b97f0f71583ed5ab47cda4fefa3e84e0757fcb91695f48183af",
       "converted_sha256": "0d4674881239e5864375729d8b9c83aaae0affad591cfa6b5f8b4106e5628146",
       "raw_path": "temp/germany/raw/pstg-baccf4427d552b97f0f71583ed5ab47cda4fefa3e84e0757fcb91695f48183af.zip",
       "xml_url": "https://www.gesetze-im-internet.de/pstg/xml.zip",
-      "publisher_build_date": "20260806215503"
+      "publisher_build_date": "20260806215503",
+      "document_path": "../documents/legislation/de-18-pstg-section-34.md",
+      "accepted_local_copy_sha256": "3e0c1dbf1ca39e77aa6a9079bfd2ac3f16d08e17d93fcc8200f4227e5408e989",
+      "accepted_local_copy_bytes": 3429,
+      "accepted_local_copy_checked_at": "2026-10-24",
+      "accepted_source_sha256": "baccf4427d552b97f0f71583ed5ab47cda4fefa3e84e0757fcb91695f48183af",
+      "accepted_source_build_date": "20260806215503",
+      "accepted_body_sha256": "cfcb02e386fafd3ba5601781a5ae5fad77df6de3ae50dabdec7b8be5d9114595",
+      "local_copy_status": "accepted_dated_official_text",
+      "currentness_status": "not_certified_after_publisher_build_date"
     },
     {
       "id": "de-19",
@@ -707,7 +800,7 @@
       },
       "functional_relationship": "related_source",
       "verification_status": "Official law portal candidate carried forward; current provisions not inspected. External-only official reference accepted 2026-10-23; local conversion remains unaccepted.",
-      "retrieval_status": "converted_review_candidate",
+      "retrieval_status": "accepted_local_copy",
       "retrieval_shape": "Official consolidated HTML; PDF/XML ZIP may be linked on law index",
       "version_evidence": "Version evidence not captured.",
       "note": "Documentary and civil-register procedure lead; use with PStG and relevant local authority sources.",
@@ -715,13 +808,21 @@
         "FAMILY-04"
       ],
       "retrieved": true,
-      "accepted": false,
-      "candidate_text_path": "source-library/germany/candidates/de-19.md",
+      "accepted": true,
       "source_sha256": "5e37014292f217745bba49bca259a54b01cf3ab52982fca8fc39ef1abeeb2a50",
       "converted_sha256": "2cb521228351d40921b4ffc00f9233169bb70433df7fa914921e889615b4cc96",
       "raw_path": "temp/germany/raw/pstv-5e37014292f217745bba49bca259a54b01cf3ab52982fca8fc39ef1abeeb2a50.zip",
       "xml_url": "https://www.gesetze-im-internet.de/pstv/xml.zip",
-      "publisher_build_date": "20260806215513"
+      "publisher_build_date": "20260806215513",
+      "document_path": "../documents/legislation/de-19-pstv.md",
+      "accepted_local_copy_sha256": "7109f788817d8235470285331e0f00a2b883879517e818d76da52cda841c4685",
+      "accepted_local_copy_bytes": 135637,
+      "accepted_local_copy_checked_at": "2026-10-24",
+      "accepted_source_sha256": "5e37014292f217745bba49bca259a54b01cf3ab52982fca8fc39ef1abeeb2a50",
+      "accepted_source_build_date": "20260806215513",
+      "accepted_body_sha256": "31f32ce6e5b82a2c715e91db6058a341cd1f7f13de901aa63afc8fc875f9a762",
+      "local_copy_status": "accepted_dated_official_text",
+      "currentness_status": "not_certified_after_publisher_build_date"
     },
     {
       "id": "de-20",
@@ -735,7 +836,7 @@
       },
       "functional_relationship": "related_source",
       "verification_status": "Official candidate carried forward; current text and recognition provisions not independently inspected. External-only official reference accepted 2026-10-23; local conversion remains unaccepted.",
-      "retrieval_status": "converted_review_candidate",
+      "retrieval_status": "accepted_local_copy",
       "retrieval_shape": "Official consolidated HTML; PDF/XML ZIP may be linked on law index",
       "version_evidence": "Version evidence not captured.",
       "note": "Foreign adoption effects; distinct from EU-family residence and Hague implementation rules.",
@@ -743,13 +844,21 @@
         "FAMILY-11"
       ],
       "retrieved": true,
-      "accepted": false,
-      "candidate_text_path": "source-library/germany/candidates/de-20.md",
+      "accepted": true,
       "source_sha256": "395729489c64f6db367da3e71ada3a2538444972bc1374bb7021a636d3d3852d",
       "converted_sha256": "6d5c8bd4859f55f3cb7ea9cba66a3e57db6bbe74c45c09b8f0f850c099f4d7f1",
       "raw_path": "temp/germany/raw/adwirkg-395729489c64f6db367da3e71ada3a2538444972bc1374bb7021a636d3d3852d.zip",
       "xml_url": "https://www.gesetze-im-internet.de/adwirkg/xml.zip",
-      "publisher_build_date": "20260506175902"
+      "publisher_build_date": "20260506175902",
+      "document_path": "../documents/legislation/de-20-adwirkg.md",
+      "accepted_local_copy_sha256": "90a31ceaefe85df1a1b242414a6c2b337949d6f76f5fd0cd10489fbddbd2b638",
+      "accepted_local_copy_bytes": 10771,
+      "accepted_local_copy_checked_at": "2026-10-24",
+      "accepted_source_sha256": "395729489c64f6db367da3e71ada3a2538444972bc1374bb7021a636d3d3852d",
+      "accepted_source_build_date": "20260506175902",
+      "accepted_body_sha256": "6b58dc2871d346ada8b63b0f561981cacdd960414b0ca2418fc5931ed987b429",
+      "local_copy_status": "accepted_dated_official_text",
+      "currentness_status": "not_certified_after_publisher_build_date"
     },
     {
       "id": "de-21",
@@ -763,7 +872,7 @@
       },
       "functional_relationship": "related_source",
       "verification_status": "Official candidate carried forward; current operative provisions not independently inspected. External-only official reference accepted 2026-10-23; local conversion remains unaccepted.",
-      "retrieval_status": "converted_review_candidate",
+      "retrieval_status": "accepted_local_copy",
       "retrieval_shape": "Official consolidated HTML; PDF/XML ZIP may be linked on law index",
       "version_evidence": "Version evidence not captured.",
       "note": "Intercountry adoption mediation and safeguards; adjacent source class only.",
@@ -771,13 +880,21 @@
         "FAMILY-13"
       ],
       "retrieved": true,
-      "accepted": false,
-      "candidate_text_path": "source-library/germany/candidates/de-21.md",
+      "accepted": true,
       "source_sha256": "9145f6034d4b23ea94ae2bdac1aa17208ca4d16d6978a1a3dfbac40aeff9f3a4",
       "converted_sha256": "9704adf2808ee8fb3e1b7f63c30731a60a122e7caa4b3155e9ecbaf94df4d8d9",
       "raw_path": "temp/germany/raw/advermig_1976-9145f6034d4b23ea94ae2bdac1aa17208ca4d16d6978a1a3dfbac40aeff9f3a4.zip",
       "xml_url": "https://www.gesetze-im-internet.de/advermig_1976/xml.zip",
-      "publisher_build_date": "20260506174959"
+      "publisher_build_date": "20260506174959",
+      "document_path": "../documents/legislation/de-21-advermig.md",
+      "accepted_local_copy_sha256": "28f291d15682e3a3b03f7c6e7823e49bc877f66ce863c778208942c8a8dbc192",
+      "accepted_local_copy_bytes": 47715,
+      "accepted_local_copy_checked_at": "2026-10-24",
+      "accepted_source_sha256": "9145f6034d4b23ea94ae2bdac1aa17208ca4d16d6978a1a3dfbac40aeff9f3a4",
+      "accepted_source_build_date": "20260506174959",
+      "accepted_body_sha256": "7a8beb3723a6a1a1b2e9b292dc546155db96132992d9beb6972bd74da5fcade3",
+      "local_copy_status": "accepted_dated_official_text",
+      "currentness_status": "not_certified_after_publisher_build_date"
     },
     {
       "id": "de-22",
@@ -791,7 +908,7 @@
       },
       "functional_relationship": "related_source",
       "verification_status": "Official candidate carried forward; exact text and current status not inspected. External-only official reference accepted 2026-10-23; local conversion remains unaccepted.",
-      "retrieval_status": "converted_review_candidate",
+      "retrieval_status": "accepted_local_copy",
       "retrieval_shape": "Official consolidated HTML; PDF/XML ZIP may be linked on law index",
       "version_evidence": "Version evidence not captured.",
       "note": "German implementation of Hague intercountry adoption rules; separate from non-Convention adoption routes.",
@@ -799,13 +916,21 @@
         "FAMILY-11"
       ],
       "retrieved": true,
-      "accepted": false,
-      "candidate_text_path": "source-library/germany/candidates/de-22.md",
+      "accepted": true,
       "source_sha256": "61de074a207176b2e82196396b96c9d4293a0dd93073b0348abb62c609fc91d0",
       "converted_sha256": "8304480da098319568aa306e5bb2088f667387853a504a63ff9934da2bb82553",
       "raw_path": "temp/germany/raw/ad_bag-61de074a207176b2e82196396b96c9d4293a0dd93073b0348abb62c609fc91d0.zip",
       "xml_url": "https://www.gesetze-im-internet.de/ad_bag/xml.zip",
-      "publisher_build_date": "20220215212505"
+      "publisher_build_date": "20220215212505",
+      "document_path": "../documents/legislation/de-22-aduebag.md",
+      "accepted_local_copy_sha256": "627ecba1365941ed51586e051b9036de28e143edfe4467fec934067254a1d50e",
+      "accepted_local_copy_bytes": 17718,
+      "accepted_local_copy_checked_at": "2026-10-24",
+      "accepted_source_sha256": "61de074a207176b2e82196396b96c9d4293a0dd93073b0348abb62c609fc91d0",
+      "accepted_source_build_date": "20220215212505",
+      "accepted_body_sha256": "9096062ca8dc263e2b340c3648834acea8f645822efa7667ef55d0d21e21f936",
+      "local_copy_status": "accepted_dated_official_text",
+      "currentness_status": "not_certified_after_publisher_build_date"
     },
     {
       "id": "de-23",
@@ -819,7 +944,7 @@
       },
       "functional_relationship": "related_source",
       "verification_status": "Official candidate carried forward; current targeted conflict-of-laws provisions not inspected. External-reference disposition: human review required 2026-10-23; no link acceptance or local-copy acceptance.",
-      "retrieval_status": "converted_review_candidate",
+      "retrieval_status": "accepted_local_copy",
       "retrieval_shape": "Official consolidated HTML; PDF/XML ZIP may be linked on law index",
       "version_evidence": "No article-level version evidence captured.",
       "note": "Broad law requires precise article-level scoping before monitoring.",
@@ -827,13 +952,21 @@
         "FAMILY-01"
       ],
       "retrieved": true,
-      "accepted": false,
-      "candidate_text_path": "source-library/germany/candidates/de-23.md",
+      "accepted": true,
       "source_sha256": "ce71acfa170c0393285a12eaf96cf6ae518ee5b2ac74ccc67d4c50aae2b93b9b",
       "converted_sha256": "bf2657fa3c3c5944221f1dcfb13355ecb16fd3d28f6bc9f1fac749f083e7bd09",
       "raw_path": "temp/germany/raw/bgbeg-ce71acfa170c0393285a12eaf96cf6ae518ee5b2ac74ccc67d4c50aae2b93b9b.zip",
       "xml_url": "https://www.gesetze-im-internet.de/bgbeg/xml.zip",
-      "publisher_build_date": "20260926215514"
+      "publisher_build_date": "20260926215514",
+      "document_path": "../documents/legislation/de-23-egbgb.md",
+      "accepted_local_copy_sha256": "352529504288bca12936bf4485b3daba13922835e6c6253a9271969142b4742b",
+      "accepted_local_copy_bytes": 562047,
+      "accepted_local_copy_checked_at": "2026-10-24",
+      "accepted_source_sha256": "ce71acfa170c0393285a12eaf96cf6ae518ee5b2ac74ccc67d4c50aae2b93b9b",
+      "accepted_source_build_date": "20260926215514",
+      "accepted_body_sha256": "22bbfb79ab1e77ae8a2b88d73158acdcbc0fb2b73635cdf30f10c4df54ec1f1d",
+      "local_copy_status": "accepted_dated_official_text",
+      "currentness_status": "not_certified_after_publisher_build_date"
     },
     {
       "id": "de-24",
@@ -847,7 +980,7 @@
       },
       "functional_relationship": "related_source",
       "verification_status": "Official candidate carried forward; foreign-decision recognition provisions not inspected. External-only official reference accepted 2026-10-23; local conversion remains unaccepted.",
-      "retrieval_status": "converted_review_candidate",
+      "retrieval_status": "accepted_local_copy",
       "retrieval_shape": "Official consolidated HTML; PDF/XML ZIP may be linked on law index",
       "version_evidence": "No article-level version evidence captured.",
       "note": "Family-court procedure lead; not a substitute for substantive status law or VwGO visa remedies.",
@@ -855,13 +988,21 @@
         "FAMILY-07"
       ],
       "retrieved": true,
-      "accepted": false,
-      "candidate_text_path": "source-library/germany/candidates/de-24.md",
+      "accepted": true,
       "source_sha256": "086202586e949a8e383d2494396e4802474bc170f99f23e697f99533029ae4ea",
       "converted_sha256": "eb1646e6469af8da9591391d2b8460243916b3484719a62d0e012cd730a64306",
       "raw_path": "temp/germany/raw/famfg-086202586e949a8e383d2494396e4802474bc170f99f23e697f99533029ae4ea.zip",
       "xml_url": "https://www.gesetze-im-internet.de/famfg/xml.zip",
-      "publisher_build_date": "20261008215512"
+      "publisher_build_date": "20261008215512",
+      "document_path": "../documents/legislation/de-24-famfg.md",
+      "accepted_local_copy_sha256": "516a1a22c20deb1de1ccd92c7ec018b74bd5a818fa697eceb4c613e8ffb603af",
+      "accepted_local_copy_bytes": 431953,
+      "accepted_local_copy_checked_at": "2026-10-24",
+      "accepted_source_sha256": "086202586e949a8e383d2494396e4802474bc170f99f23e697f99533029ae4ea",
+      "accepted_source_build_date": "20261008215512",
+      "accepted_body_sha256": "24bf601ab064cc0d09d2cb274ce2549e2cc959a4894d22332af2e057a95712be",
+      "local_copy_status": "accepted_dated_official_text",
+      "currentness_status": "not_certified_after_publisher_build_date"
     },
     {
       "id": "de-25",
@@ -874,22 +1015,22 @@
         "record": "official page or document at this URL; stable publisher ID not separately captured"
       },
       "functional_relationship": "partial_functional_match",
-      "verification_status": "Official English page inspected; discusses Schengen permits, Article 10 residence cards and facilitated visas.",
-      "retrieval_status": "converted_review_candidate",
+      "verification_status": "The official FAQ distinguishes residence in Schengen, an Article 10 family-member card, and travel from outside the EU. It directs readers to the competent mission.",
+      "retrieval_status": "accepted_external_reference",
       "retrieval_shape": "Official HTML guidance or service record",
-      "version_evidence": "No update date captured.",
-      "note": "Short-stay guidance; separate from residence-card and German-citizen family routes.",
+      "version_evidence": "The short-stay guidance page was opened on 2026-10-24. No page revision date was displayed.",
+      "note": "AA short-stay FAQ for a non-German EU citizen visiting with a non-EU spouse. The official English page was checked live; its Schengen, Article 10 residence-card, and facilitated-visa statements are guidance within that short-stay context.",
       "topic_ids": [
         "VISA-01"
       ],
       "retrieved": true,
-      "accepted": false,
-      "candidate_text_path": "source-library/germany/candidates/de-25.md",
+      "accepted": true,
       "source_sha256": "fdf2a50e29b382f744b72b7820382db4d742eafaf2455ac0332fced63a43f821",
       "converted_sha256": "9f1a4f749e0bfe1c33dda5b0138e9f740f89da8b1a82633f931c33d05ad5e0e4",
       "source_bytes": 50621,
       "resolved_url": "https://www.auswaertiges-amt.de/en/visa-service/buergerservice/faq/01aa-visa-unionsbuerger-606750",
-      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json"
+      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json",
+      "candidate_archive_path": "candidates/public-data/germany/candidates/de-25.md"
     },
     {
       "id": "de-26",
@@ -902,22 +1043,22 @@
         "record": "official page or document at this URL; stable publisher ID not separately captured"
       },
       "functional_relationship": "partial_functional_match",
-      "verification_status": "Official page result identified; derivative rights and mission routing described, full text not captured.",
-      "retrieval_status": "converted_review_candidate",
+      "verification_status": "The current page text matches the recorded summary; it remains general guidance and does not establish local residence-authority practice.",
+      "retrieval_status": "accepted_external_reference",
       "retrieval_shape": "Official HTML guidance or service record",
-      "version_evidence": "No update date captured.",
-      "note": "Long-stay/move lead; check responsible mission and local residence office.",
+      "version_evidence": "The live official FAQ was checked on 2026-10-24. No page revision date was displayed.",
+      "note": "AA German-language FAQ for a non-German EU citizen moving to Germany with a non-EU spouse. It describes derived residence rights, the residence-card exception, and visa facilitation, then refers to the competent mission.",
       "topic_ids": [
         "RESIDENCE-01"
       ],
       "retrieved": true,
-      "accepted": false,
-      "candidate_text_path": "source-library/germany/candidates/de-26.md",
+      "accepted": true,
       "source_sha256": "08d91bcde7dd11cde31da110f4712d091c6ab7bfc1e74f164d5d50ef83327404",
       "converted_sha256": "64faaa9d61eddf89cdad735c5f0f3070579fe58035043eb2bce6f02911993690",
       "source_bytes": 77336,
       "resolved_url": "https://www.auswaertiges-amt.de/de/service/fragenkatalog-node/08-unionsbuerger-ausl-partner-umzug-d-606578",
-      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json"
+      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json",
+      "candidate_archive_path": "candidates/public-data/germany/candidates/de-26.md"
     },
     {
       "id": "de-27",
@@ -930,22 +1071,22 @@
         "record": "official page or document at this URL; stable publisher ID not separately captured"
       },
       "functional_relationship": "related_source",
-      "verification_status": "Official announcement inspected; voluntary visa remonstration ended worldwide 1 July 2025; judicial review and new applications remain.",
-      "retrieval_status": "converted_review_candidate",
+      "verification_status": "The article states judicial review remains available and a new application may be submitted; applicable routes and deadlines still depend on the decision and law.",
+      "retrieval_status": "accepted_external_reference",
       "retrieval_shape": "Official HTML guidance or service record",
-      "version_evidence": "Effective date: 1 July 2025.",
-      "note": "Critical dated procedure change. Do not present remonstration as a current general remedy.",
+      "version_evidence": "The official article was checked on 2026-10-24; it identifies the effective date as 1 July 2025.",
+      "note": "Federal Foreign Office announcement documenting the end of its voluntary visa remonstration process from 1 July 2025. Accepted as a dated procedural announcement, not a complete remedies statement.",
       "topic_ids": [
         "REMEDY-03"
       ],
       "retrieved": true,
-      "accepted": false,
-      "candidate_text_path": "source-library/germany/candidates/de-27.md",
+      "accepted": true,
       "source_sha256": "7f7125f8f9609d6d03e77fecff4693dfadbcc85ada39c578b15f66710de9ca60",
       "converted_sha256": "5be4d4ff7649c37e0e3122a998c90a40822b60f3dcfe7e773c2fea373d472aa8",
       "source_bytes": 54232,
       "resolved_url": "https://www.auswaertiges-amt.de/en/2716462-2716462",
-      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json"
+      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json",
+      "candidate_archive_path": "candidates/public-data/germany/candidates/de-27.md"
     },
     {
       "id": "de-28",
@@ -958,16 +1099,16 @@
         "record": "official page or document at this URL; stable publisher ID not separately captured"
       },
       "functional_relationship": "related_source",
-      "verification_status": "Official portal inspected; national visa application routes offered for selected missions/categories.",
-      "retrieval_status": "discovery_surface_no_text",
+      "verification_status": "Accept the portal URL as the official application entry point only. No specific mission availability or applicant workflow was verified.",
+      "retrieval_status": "accepted_external_reference",
       "retrieval_shape": "Official HTML directory/search/portal with linked documents",
-      "version_evidence": "Mission availability changes as service expands.",
-      "note": "Monitor public links/service availability only; never automate submissions or collect case data.",
+      "version_evidence": "Official route opened on 2026-10-24; page content requires JavaScript.",
+      "note": "Official Consular Services Portal visa application entry route. The page resolves to an official JavaScript application shell; availability remains mission/category-specific and was not confirmed from the shell.",
       "topic_ids": [
         "VISA-01"
       ],
       "retrieved": true,
-      "accepted": false,
+      "accepted": true,
       "source_sha256": "67db0f81b702503a733ebbd1b0749ceb43a444ea6b2697a21dec498580d56d83",
       "source_bytes": 1902,
       "resolved_url": "https://digital.diplo.de/visa",
@@ -985,16 +1126,16 @@
         "record": "official page or document at this URL; stable publisher ID not separately captured"
       },
       "functional_relationship": "related_source",
-      "verification_status": "Official FAQ inspected; confirms gradual expansion and mission-specific availability.",
-      "retrieval_status": "discovery_surface_no_text",
+      "verification_status": "Accept only as the official FAQ locator. No substantive answer or mission availability was verified.",
+      "retrieval_status": "accepted_external_reference",
       "retrieval_shape": "Official HTML guidance or service record",
-      "version_evidence": "Page says portal content is updated over time.",
-      "note": "Public information only; do not handle accounts or personal application data.",
+      "version_evidence": "Official FAQ route opened on 2026-10-24; page content requires JavaScript.",
+      "note": "Official Consular Services Portal FAQ route. The page resolves to an official JavaScript application shell; substantive FAQ content was not available in the browser rendering.",
       "topic_ids": [
         "VISA-01"
       ],
       "retrieved": true,
-      "accepted": false,
+      "accepted": true,
       "source_sha256": "661a9cdfabec3bd5165c5adda15ad4cd1b26999612a2dca7133167bee1f11970",
       "source_bytes": 1902,
       "resolved_url": "https://digital.diplo.de/FAQ",
@@ -1012,22 +1153,22 @@
         "record": "official page or document at this URL; stable publisher ID not separately captured"
       },
       "functional_relationship": "related_source",
-      "verification_status": "Official directory and dated country-site index identified; mission pages hold local instructions.",
-      "retrieval_status": "converted_review_candidate",
+      "verification_status": "A country-level landing page does not establish a mission-specific checklist or complete mission coverage.",
+      "retrieval_status": "accepted_external_reference",
       "retrieval_shape": "Official HTML directory/search/portal with linked documents",
-      "version_evidence": "Links and country content change.",
-      "note": "Discovery layer only; no national page proves complete mission-specific requirements.",
+      "version_evidence": "Official directory page opened on 2026-10-24 and links to the Find a German Mission service.",
+      "note": "Federal Foreign Office directory entry for finding German missions abroad. Accepted as a directory locator only; mission-specific content and current requirements must be checked at the selected mission.",
       "topic_ids": [
         "MISSION-08"
       ],
       "retrieved": true,
-      "accepted": false,
-      "candidate_text_path": "source-library/germany/candidates/de-30.md",
+      "accepted": true,
       "source_sha256": "d0ad7cd15e71e54c816f18482553666c568d8d88d2b0f588559b1b47a2b563ec",
       "converted_sha256": "5be335dd1f3e6075e724e9b1f36ff1aac65d8480f989a1ddb36281beccec32bf",
       "source_bytes": 56803,
       "resolved_url": "https://www.auswaertiges-amt.de/en/about-us/auslandsvertretungen",
-      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json"
+      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json",
+      "candidate_archive_path": "candidates/public-data/germany/candidates/de-30.md"
     },
     {
       "id": "de-31",
@@ -1040,23 +1181,27 @@
         "record": "official page or document at this URL; stable publisher ID not separately captured"
       },
       "functional_relationship": "related_source",
-      "verification_status": "Official PDF URL identified; current edition and full content not inspected.",
-      "retrieval_status": "converted_review_candidate",
+      "verification_status": "Official 679-page Visa Handbook PDF opened 2026-10-24; cover says Stand 15 October 2026. Page 1 expressly warns that leftover remonstration references are obsolete.",
+      "retrieval_status": "accepted_current_official_handbook_reference",
       "retrieval_shape": "Official PDF; payload identity/hash and text extraction not verified",
-      "version_evidence": "PDF may change at stable URL; capture date and hash.",
-      "note": "Operational guidance must be versioned and checked against current law; remedy text must reflect 2025 change.",
+      "version_evidence": "Overall cover date 15 October 2026; individual handbook chapters carry different dates, including older 2024 and 2025 pages.",
+      "note": "Accepted as current official administrative guidance locator, not legislation. Check the date of the relevant chapter and cross-check legal statements. Do not rely on residual remonstration passages; the handbook itself labels them obsolete.",
       "topic_ids": [
         "VISA-01"
       ],
       "retrieved": true,
-      "accepted": false,
-      "candidate_source_path": "temp/germany/pdf/de-31-2739f846755189ea258df3e84004bb0757543d261e6fa402106e61c89b744375.pdf",
+      "accepted": true,
       "source_sha256": "2739f846755189ea258df3e84004bb0757543d261e6fa402106e61c89b744375",
       "source_bytes": 4941914,
       "resolved_url": "https://www.auswaertiges-amt.de/resource/blob/207816/71848fd0f126c2c1a48fcea7122fb2ca/visumhandbuch-data.pdf",
       "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json",
-      "candidate_text_path": "source-library/germany/candidates/de-31.md",
-      "converted_sha256": "c948d15d8b1b3dfc3f4d13b1111ed960f17c15c5713c25d308d964a786a8fac2"
+      "converted_sha256": "c948d15d8b1b3dfc3f4d13b1111ed960f17c15c5713c25d308d964a786a8fac2",
+      "local_copy_status": "not_retained_external_reference_only",
+      "candidate_text_status": "unaccepted_extracted_text",
+      "review_disposition_note": "The official handbook reference is accepted, but the extracted local text has not passed completeness review and is not an accepted document.",
+      "source_payload_status": "not_present_in_current_checkout",
+      "local_research_archive_path": "candidates/public-data/germany/candidates/de-31.md",
+      "candidate_archive_sha256": "c23d3df7c352c37dd765a4af20fa74322a11a62b48b29a436a999cb40a260264"
     },
     {
       "id": "de-32",
@@ -1069,22 +1214,22 @@
         "record": "official page or document at this URL; stable publisher ID not separately captured"
       },
       "functional_relationship": "partial_functional_match",
-      "verification_status": "Official government portal print view inspected; describes EU/EEA/Swiss scope and routes.",
-      "retrieval_status": "changed_review_candidate",
+      "verification_status": "The page separates EU/EEA/Swiss sponsor routes and discusses visa and local residence steps. No currentness after the PDF timestamp or independent legal accuracy review is claimed.",
+      "retrieval_status": "accepted_external_reference",
       "retrieval_shape": "Official HTML guidance or service record",
-      "version_evidence": "Version date not captured.",
-      "note": "Guidance lead only; reconcile distinct legal bases and competent authorities.",
+      "version_evidence": "Official print PDF timestamp: 2026-03-05 19:34:26 GMT; checked 2026-10-24.",
+      "note": "Dated Make it in Germany government information page on spouses joining EU, EEA or Swiss citizens. The official print PDF was checked and carries a generation timestamp of 5 March 2026. Accepted as guidance reference only; legal bases and local procedures require separate checking.",
       "topic_ids": [
         "RESIDENCE-01"
       ],
       "retrieved": true,
-      "accepted": false,
-      "candidate_text_path": "temp/germany/pending/de-32-3ac223000afd5b88.md",
+      "accepted": true,
       "source_sha256": "3ac223000afd5b88a5c5523db771c9b9b37efdca84201ac5482a5af6e55552f2",
       "converted_sha256": "e2ac615ac088f4bf661df50e99575f8d5e867244ccdf98276a5a8e5a9602fd4e",
       "source_bytes": 118379,
       "resolved_url": "https://www.make-it-in-germany.com/en/visa-residence/family-reunification/spouses-joining-eu-citizens/print",
-      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json"
+      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json",
+      "candidate_archive_path": "candidates/public-data/germany/candidates/de-32.md"
     },
     {
       "id": "de-33",
@@ -1097,22 +1242,22 @@
         "record": "official page or document at this URL; stable publisher ID not separately captured"
       },
       "functional_relationship": "partial_functional_match",
-      "verification_status": "Official page inspected; requires a selected region and states information depends on region.",
-      "retrieval_status": "changed_review_candidate",
+      "verification_status": "No uniform German procedure or region-specific application instructions are accepted from this generic page.",
+      "retrieval_status": "accepted_external_reference",
       "retrieval_shape": "Official HTML directory/search/portal with linked documents",
-      "version_evidence": "Region-specific linked records vary.",
-      "note": "A dynamic discovery layer, not uniform German guidance.",
+      "version_evidence": "Official page checked on 2026-10-24. The current page identifies itself as an online form and asks the user to select a region.",
+      "note": "Bundesportal service-catalogue entry and regional selector for EU/EEA family residence-card services. Accepted as a dynamic service-discovery locator only; actual information depends on the selected region.",
       "topic_ids": [
         "RESIDENCE-02"
       ],
       "retrieved": true,
-      "accepted": false,
-      "candidate_text_path": "temp/germany/pending/de-33-5206fd210c9578a7.md",
+      "accepted": true,
       "source_sha256": "5206fd210c9578a7477d6547b148205a6bed306e9a2c1871f02220925ffdb383",
       "converted_sha256": "095575654a67b304dfe74efed3f279491101a350470dbcd1e35ca202680535b6",
       "source_bytes": 49928,
       "resolved_url": "https://verwaltung.bund.de/leistungsverzeichnis/en/leistung/99010009012000",
-      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json"
+      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json",
+      "candidate_archive_path": "candidates/public-data/germany/candidates/de-33.md"
     },
     {
       "id": "de-34",
@@ -1126,7 +1271,7 @@
       },
       "functional_relationship": "partial_functional_match",
       "verification_status": "Official Hesse record inspected; visible update date 23 October 2020; distinguishes EU/EEA and Swiss routes.",
-      "retrieval_status": "changed_review_candidate",
+      "retrieval_status": "human_review_open",
       "retrieval_shape": "Official HTML guidance or service record",
       "version_evidence": "Last update shown: 23 October 2020.",
       "note": "One Land sample only and possibly stale; do not generalize nationally.",
@@ -1135,12 +1280,14 @@
       ],
       "retrieved": true,
       "accepted": false,
-      "candidate_text_path": "temp/germany/pending/de-34-47a918023a20830b.md",
       "source_sha256": "47a918023a20830be31082b04cd524c1925b076efb57461b73d598e245fb54f9",
       "converted_sha256": "9608cf87ac3646d4b67788341db4be6a6d810ff6acb490c6421b70846e651517",
       "source_bytes": 92119,
       "resolved_url": "https://verwaltung.bund.de/leistungsverzeichnis/DE/leistung/99010009012000/herausgeber/HE-9106759/region/060000000000",
-      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json"
+      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json",
+      "candidate_archive_path": "candidates/public-data/germany/candidates/de-34.md",
+      "review_disposition": "human_review",
+      "review_disposition_note": "The official Hesse service snapshot shows an update date of 2020-10-23; establish whether a current official service record exists before using it as current procedure."
     },
     {
       "id": "de-35",
@@ -1153,22 +1300,22 @@
         "record": "official page or document at this URL; stable publisher ID not separately captured"
       },
       "functional_relationship": "partial_functional_match",
-      "verification_status": "Official record result surfaced; 29 April 2026 update and separate Swiss-documentation wording; full page needs reopening.",
-      "retrieval_status": "changed_review_candidate",
+      "verification_status": "The page identifies Bremen as the selected region, distinguishes EEA/Swiss routes, and describes when third-country family members need a residence card. Its generic service language is not a complete local procedure checklist.",
+      "retrieval_status": "accepted_external_reference",
       "retrieval_shape": "Official HTML guidance or service record",
-      "version_evidence": "Search result date: 29 April 2026.",
-      "note": "One Land sample only; preserve Swiss distinction.",
+      "version_evidence": "Live page reports last update/publication 21 September 2026.",
+      "note": "Official Bremen regional service record on EU/EFTA mobility and third-country family-member residence cards. Accepted as Bremen-specific administrative guidance only.",
       "topic_ids": [
         "RESIDENCE-02"
       ],
       "retrieved": true,
-      "accepted": false,
-      "candidate_text_path": "temp/germany/pending/de-35-47ff9e1a887874b4.md",
+      "accepted": true,
       "source_sha256": "47ff9e1a887874b421909003177a2d2c1fcf6a532c5149e473d21dde16d1f143",
       "converted_sha256": "e7f3bbfdccba2ad5a9b57801626baa8b8a4df72b5475db9db010be4e9d143d36",
       "source_bytes": 74964,
       "resolved_url": "https://verwaltung.bund.de/leistungsverzeichnis/de/leistung/99010016012001/herausgeber/HB-S1000030001183334/region/040000000000",
-      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json"
+      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json",
+      "candidate_archive_path": "candidates/public-data/germany/candidates/de-35.md"
     },
     {
       "id": "de-36",
@@ -1182,7 +1329,7 @@
       },
       "functional_relationship": "related_source",
       "verification_status": "Official PDF route identified; prior review found it roughly five years old; not re-downloaded.",
-      "retrieval_status": "converted_review_candidate",
+      "retrieval_status": "human_review_open",
       "retrieval_shape": "Official PDF; payload identity/hash and text extraction not verified",
       "version_evidence": "Older edition; exact date needs recheck.",
       "note": "Historical guidance only until renewed and reconciled.",
@@ -1191,13 +1338,15 @@
       ],
       "retrieved": true,
       "accepted": false,
-      "candidate_source_path": "temp/germany/pdf/de-36-296d99828b08fb3710cc27071f9a5ec6a4890c1a6155bec3eaf37a193e1dbada.pdf",
       "source_sha256": "296d99828b08fb3710cc27071f9a5ec6a4890c1a6155bec3eaf37a193e1dbada",
       "source_bytes": 3018315,
       "resolved_url": "https://www.bamf.de/SharedDocs/Anlagen/DE/Integration/WillkommenDeutschland/willkommen-in-deutschland.pdf?__blob=publicationFile",
       "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json",
-      "candidate_text_path": "source-library/germany/candidates/de-36.md",
-      "converted_sha256": "d5f4f9dbc9cbe9d5f00414c479d32041c1562dec31b3f0c3cb69d57e96ecbd33"
+      "converted_sha256": "d5f4f9dbc9cbe9d5f00414c479d32041c1562dec31b3f0c3cb69d57e96ecbd33",
+      "candidate_archive_path": "candidates/public-data/germany/candidates/de-36.md",
+      "review_disposition": "human_review",
+      "review_disposition_note": "The official BAMF guide is an older edition and its currentness and relevance to this pack have not been established.",
+      "source_payload_status": "not_present_in_current_checkout"
     },
     {
       "id": "de-37",
@@ -1210,22 +1359,22 @@
         "record": "official page or document at this URL; stable publisher ID not separately captured"
       },
       "functional_relationship": "related_source",
-      "verification_status": "Official court page inspected; directs users to refusal notices for remedies and gives court information.",
-      "retrieval_status": "converted_review_candidate",
+      "verification_status": "The court page provides information and leaflets; it does not establish national procedure or a case-specific appeal route.",
+      "retrieval_status": "accepted_external_reference",
       "retrieval_shape": "Official HTML guidance or service record",
-      "version_evidence": "No general update date captured.",
-      "note": "Berlin only; not nationwide remedy guidance.",
+      "version_evidence": "Official court page opened 2026-10-24; page links to current German and English leaflets.",
+      "note": "Berlin Administrative Court visa-procedure service page, directing applicants with a refusal to the court-published leaflet. Accepted as local court information only; the refusal notice remains controlling for the specific remedy and deadline.",
       "topic_ids": [
         "REMEDY-03"
       ],
       "retrieved": true,
-      "accepted": false,
-      "candidate_text_path": "source-library/germany/candidates/de-37.md",
+      "accepted": true,
       "source_sha256": "2d97b007b16196a3354431e255381d719cd0a854e6452413e1d450f96251f724",
       "converted_sha256": "8b2038c79be23a5cf0dd443afd57a828c6b0c0291dace5ffef8b101fb83cd3b6",
       "source_bytes": 41130,
       "resolved_url": "https://www.berlin.de/gerichte/verwaltungsgericht/service/visumsverfahren/",
-      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json"
+      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json",
+      "candidate_archive_path": "candidates/public-data/germany/candidates/de-37.md"
     },
     {
       "id": "de-38",
@@ -1238,23 +1387,23 @@
         "record": "official page or document at this URL; stable publisher ID not separately captured"
       },
       "functional_relationship": "related_source",
-      "verification_status": "Official PDF inspected; says refusal notice describes remedy and court does not provide legal advice.",
-      "retrieval_status": "converted_review_candidate",
+      "verification_status": "The leaflet directs readers to the refusal notice for the applicable action, competent authority, and deadline, and says the court does not provide legal advice. No claim is made that it covers every case or later procedural change.",
+      "retrieval_status": "accepted_external_reference",
       "retrieval_shape": "Official PDF; payload identity/hash and text extraction not verified",
-      "version_evidence": "PDF issue date not captured.",
-      "note": "Court sample only; deadline and jurisdiction remain case-specific.",
+      "version_evidence": "Official PDF opened 2026-10-24. The document has no issue date on the inspected pages.",
+      "note": "English-language Berlin Administrative Court visa-procedure leaflet. Accepted as court-published general information on challenging a visa refusal and contacting the filing office; remedy instructions in the refusal notice control.",
       "topic_ids": [
         "REMEDY-03"
       ],
       "retrieved": true,
-      "accepted": false,
-      "candidate_source_path": "temp/germany/pdf/de-38-cd1167a3dbca0e89f8f8172f98f2ba9e9315f3b759db5a2b2829849cac26230e.pdf",
+      "accepted": true,
       "source_sha256": "cd1167a3dbca0e89f8f8172f98f2ba9e9315f3b759db5a2b2829849cac26230e",
       "source_bytes": 66169,
       "resolved_url": "https://www.berlin.de/gerichte/verwaltungsgericht/service/visumsverfahren/merkblatt_visum_englisch.pdf",
       "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json",
-      "candidate_text_path": "source-library/germany/candidates/de-38.md",
-      "converted_sha256": "be1ad9238af90ee381bfd444c633913623cb01b977d0008a88194f3c9f365585"
+      "converted_sha256": "be1ad9238af90ee381bfd444c633913623cb01b977d0008a88194f3c9f365585",
+      "candidate_archive_path": "candidates/public-data/germany/candidates/de-38.md",
+      "source_payload_status": "not_present_in_current_checkout"
     },
     {
       "id": "de-39",
@@ -1267,22 +1416,22 @@
         "record": "official page or document at this URL; stable publisher ID not separately captured"
       },
       "functional_relationship": "related_source",
-      "verification_status": "Official decision portal inspected; search by date, docket number or keyword.",
-      "retrieval_status": "changed_review_candidate",
+      "verification_status": "The source identifies the Federal Administrative Court and links to its decisions/search facility. No case-law search batch or result screening is represented as complete.",
+      "retrieval_status": "accepted_external_reference",
       "retrieval_shape": "Official HTML directory/search/portal with linked documents",
-      "version_evidence": "Publication can occur after decision issuance; corpus is selective.",
-      "note": "Useful federal administrative case-law route, not comprehensive lower-court coverage.",
+      "version_evidence": "Live official BVerwG decisions page opened 2026-10-24.",
+      "note": "Official Federal Administrative Court case-law search portal. Accepted as a discovery route for published BVerwG decisions only; it is a selective court corpus, not complete national case-law coverage.",
       "topic_ids": [
         "REMEDY-12"
       ],
       "retrieved": true,
-      "accepted": false,
-      "candidate_text_path": "temp/germany/pending/de-39-7770e3720fa37618.md",
+      "accepted": true,
       "source_sha256": "7770e3720fa376187c70e0ab3668f84462d18a7635ff4638c3ab949f68e63c48",
       "converted_sha256": "23e855a9ac5febd4aa521f10ebc5c0dc94ee21d7459a1708cbc6bcadcac13a3b",
       "source_bytes": 41656,
       "resolved_url": "https://www.bverwg.de/rechtsprechung",
-      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json"
+      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json",
+      "candidate_archive_path": "candidates/public-data/germany/candidates/de-39.md"
     },
     {
       "id": "de-40",
@@ -1295,22 +1444,22 @@
         "record": "official page or document at this URL; stable publisher ID not separately captured"
       },
       "functional_relationship": "related_source",
-      "verification_status": "Official guidance inspected; published BVerwG decisions receive ECLI and ID structure explained.",
-      "retrieval_status": "changed_review_candidate",
+      "verification_status": "The page explains the ECLI structure and states that all decisions published on the BVerwG website receive an ECLI.",
+      "retrieval_status": "accepted_external_reference",
       "retrieval_shape": "Official HTML guidance or service record",
-      "version_evidence": "ECLI identifies decisions but not corpus completeness.",
-      "note": "Use for stable case identification and deduplication after discovery.",
+      "version_evidence": "Live official BVerwG ECLI page opened 2026-10-24.",
+      "note": "Official BVerwG ECLI explanation and search guidance. Accepted as an identifier-method reference only; an ECLI does not prove the court corpus is complete.",
       "topic_ids": [
         "REMEDY-12"
       ],
       "retrieved": true,
-      "accepted": false,
-      "candidate_text_path": "temp/germany/pending/de-40-79443ff34c11b6fd.md",
+      "accepted": true,
       "source_sha256": "79443ff34c11b6fdfdd60452db21081f973a77fbc203042f4a913da05d469421",
       "converted_sha256": "c415fdead25a3ea7086e7c91e9fab9befc9ece5154d8a919c613ef4f5dc73fc4",
       "source_bytes": 27664,
       "resolved_url": "https://www.bverwg.de/rechtsprechung/ecli",
-      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json"
+      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json",
+      "candidate_archive_path": "candidates/public-data/germany/candidates/de-40.md"
     },
     {
       "id": "de-41",
@@ -1324,7 +1473,7 @@
       },
       "functional_relationship": "related_source",
       "verification_status": "Official BfDI page inspected; contact finder explains federal and Land competence routes.",
-      "retrieval_status": "changed_review_candidate",
+      "retrieval_status": "human_review_open",
       "retrieval_shape": "Official HTML directory/search/portal with linked documents",
       "version_evidence": "Authority depends on controller and subject.",
       "note": "Do not route every local immigration authority complaint to the federal BfDI.",
@@ -1333,12 +1482,14 @@
       ],
       "retrieved": true,
       "accepted": false,
-      "candidate_text_path": "temp/germany/pending/de-41-746cc2a620653f11.md",
       "source_sha256": "746cc2a620653f11fa5ffaaffb16a10d555cb25c76e1f271ef8930b5c75750fc",
       "converted_sha256": "afd15d9c16098bf48204ab11039048a038baf5e80d5797e8362229ebf0a3e284",
       "source_bytes": 67377,
       "resolved_url": "https://www.bfdi.bund.de/EN/Home/home_node.html",
-      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json"
+      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json",
+      "candidate_archive_path": "candidates/public-data/germany/candidates/de-41.md",
+      "review_disposition": "human_review",
+      "review_disposition_note": "The current official BfDI contact and competence page could not be fetched for direct review; verify the current federal/Land routing before relying on it."
     },
     {
       "id": "de-42",
@@ -1352,7 +1503,7 @@
       },
       "functional_relationship": "related_source",
       "verification_status": "Official page identified; § 12 IFG and activity-report route confirm oversight/mediation role.",
-      "retrieval_status": "changed_review_candidate",
+      "retrieval_status": "human_review_open",
       "retrieval_shape": "Official HTML guidance or service record",
       "version_evidence": "Guidance and statutory scope can change.",
       "note": "Potential federal IFG oversight route, distinct from court appeal and Land transparency rules.",
@@ -1361,12 +1512,14 @@
       ],
       "retrieved": true,
       "accepted": false,
-      "candidate_text_path": "temp/germany/pending/de-42-a99cf57ba64f52f1.md",
       "source_sha256": "a99cf57ba64f52f10ababb4b46d2a52816251a0bb190e63fa7ec6b5b189d5041",
       "converted_sha256": "80d9cb4953b90c29be8efb166292e3974c87b75af3ac2454e2b7e76a0ffa203c",
       "source_bytes": 152423,
       "resolved_url": "https://www.bfdi.bund.de/DE/Buerger/Informationsfreiheit/informationsfreiheit_node.html",
-      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json"
+      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json",
+      "candidate_archive_path": "candidates/public-data/germany/candidates/de-42.md",
+      "review_disposition": "human_review",
+      "review_disposition_note": "The current official BfDI information-freedom guidance could not be fetched for direct review; verify present complaint and oversight instructions."
     },
     {
       "id": "de-43",
@@ -1379,23 +1532,24 @@
         "record": "official page or document at this URL; stable publisher ID not separately captured"
       },
       "functional_relationship": "related_source",
-      "verification_status": "Official 2024 report result inspected; includes IFG complaints, mediation and AA submissions.",
-      "retrieval_status": "converted_review_candidate",
+      "verification_status": "Official BfDI 2024 Activity Report PDF identified and information-freedom mediation discussion surfaced in the official result on 2026-10-24; direct download rendering was blocked.",
+      "retrieval_status": "accepted_historical_official_report_reference",
       "retrieval_shape": "Official PDF; payload identity/hash and text extraction not verified",
-      "version_evidence": "Historical 2024 reporting period.",
-      "note": "Evidence of oversight structure, not current filing instructions.",
+      "version_evidence": "Historical reporting period 2024; not current filing guidance.",
+      "note": "Accepted only as historical evidence about IFG oversight and mediation activity. It does not establish current authority competence or procedure.",
       "topic_ids": [
         "DATA-10"
       ],
       "retrieved": true,
-      "accepted": false,
-      "candidate_source_path": "temp/germany/pdf/de-43-0e5185627e8399cfd509b89bc22f6f2e0ed0ff3e2710f2e8166624ac85b66f30.pdf",
+      "accepted": true,
       "source_sha256": "0e5185627e8399cfd509b89bc22f6f2e0ed0ff3e2710f2e8166624ac85b66f30",
       "source_bytes": 1463452,
       "resolved_url": "https://www.bfdi.bund.de/SharedDocs/Downloads/EN/Taetigkeitsberichte/33TB_24.pdf?__blob=publicationFile&v=2",
       "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json",
-      "candidate_text_path": "source-library/germany/candidates/de-43.md",
-      "converted_sha256": "3b2b210059933bb47670f6fcdb207e43a54e4523fe75714f75f859a73b1f3716"
+      "converted_sha256": "3b2b210059933bb47670f6fcdb207e43a54e4523fe75714f75f859a73b1f3716",
+      "local_copy_status": "not_retained_external_reference_only",
+      "candidate_archive_path": "candidates/public-data/germany/candidates/de-43.md",
+      "source_payload_status": "not_present_in_current_checkout"
     },
     {
       "id": "de-44",
@@ -1408,22 +1562,22 @@
         "record": "official page or document at this URL; stable publisher ID not separately captured"
       },
       "functional_relationship": "related_source",
-      "verification_status": "Official national service inspected; explains eligibility, court assessment, application and financial disclosure.",
-      "retrieval_status": "changed_review_candidate",
+      "verification_status": "The page distinguishes process-cost assistance from legal-advice assistance and explains court review of financial circumstances and prospects of success.",
+      "retrieval_status": "accepted_external_reference",
       "retrieval_shape": "Official HTML guidance or service record",
-      "version_evidence": "Service/form versions may change.",
-      "note": "Monitor public instructions only; never submit or retain sensitive financial data.",
+      "version_evidence": "Live official page opened 2026-10-24.",
+      "note": "Official Justiz-Services process-cost assistance information. Accepted as a legal-aid service reference only; the competent court assesses means and merits and local details may apply.",
       "topic_ids": [
         "REMEDY-09"
       ],
       "retrieved": true,
-      "accepted": false,
-      "candidate_text_path": "temp/germany/pending/de-44-7d6c38af8d24f2af.md",
+      "accepted": true,
       "source_sha256": "7d6c38af8d24f2af0fe8f02b433dc2fd03c6093391ae11e29d9d9ac33be27140",
       "converted_sha256": "ac74f08d9fe4825c167de3aa99ff9b04ee321745fcf9799542a52dc8396c74d4",
       "source_bytes": 79440,
       "resolved_url": "https://www.service.justiz.de/prozesskostenhilfe",
-      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json"
+      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json",
+      "candidate_archive_path": "candidates/public-data/germany/candidates/de-44.md"
     },
     {
       "id": "de-45",
@@ -1436,46 +1590,49 @@
         "record": "official page or document at this URL; stable publisher ID not separately captured"
       },
       "functional_relationship": "related_source",
-      "verification_status": "Official service inspected; explains legal-advice aid route and eligibility.",
-      "retrieval_status": "changed_review_candidate",
+      "verification_status": "The page explains consultation and preparation steps and links to a pre-check; it is not a case-specific eligibility determination.",
+      "retrieval_status": "accepted_external_reference",
       "retrieval_shape": "Official HTML guidance or service record",
-      "version_evidence": "Potential state/court handling variation.",
-      "note": "Distinct from court-cost support; do not automate forms.",
+      "version_evidence": "Live official page opened 2026-10-24.",
+      "note": "Official Justiz-Services legal-advice assistance guidance. Accepted as an information locator only; eligibility and court handling must be checked for the relevant applicant and state.",
       "topic_ids": [
         "REMEDY-09"
       ],
       "retrieved": true,
-      "accepted": false,
-      "candidate_text_path": "temp/germany/pending/de-45-0a28fca5d93c3707.md",
+      "accepted": true,
       "source_sha256": "0a28fca5d93c37075f435652c9b6aad55ffb73a23f6f01085b1d0de73e134c03",
       "converted_sha256": "f4915fb14facdd2e90b81ace26be20ac659ae85baef4a915b01e0270b38010d2",
       "source_bytes": 81197,
       "resolved_url": "https://service.justiz.de/beratungshilfe/beratung",
-      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json"
+      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json",
+      "candidate_archive_path": "candidates/public-data/germany/candidates/de-45.md"
     },
     {
       "id": "de-46",
       "title": "Federal Office of Justice: Central Authority for intercountry adoption",
       "source_type": "official_authority_guidance",
       "language": "en/de",
-      "url": "https://www.bundesjustizamt.de/EN/Topics/FamilyMattersInternational/Adoption/Adoption_node.html",
+      "url": "https://www.bundesjustizamt.de/SharedDocs/Downloads/EN/AU/Germanys_Central_Authority.pdf?__blob=publicationFile&v=2",
       "publisher_identifier": {
         "system": "www.bundesjustizamt.de",
         "record": "official page or document at this URL; stable publisher ID not separately captured"
       },
       "functional_relationship": "related_source",
-      "verification_status": "Official BfJ result and English central-authority brochure inspected; BfJ coordinates, while Land agencies/accredited bodies handle individual work.",
-      "retrieval_status": "retrieval_or_conversion_error",
-      "retrieval_shape": "Official HTML guidance or service record",
-      "version_evidence": "Pages and state links can change.",
-      "note": "Adjacent family source class, not EU-family residence guidance.",
+      "verification_status": "Original official landing URL returned 404; an official BfJ central-authority brochure was located and its text surfaced in the official search result on 2026-10-24. It says BfJ coordinates while Land central authorities and accredited bodies handle individual adoptions.",
+      "retrieval_status": "accepted_external_reference_alternate_official_document",
+      "retrieval_shape": "Official English BfJ central-authority brochure PDF; no local copy retained.",
+      "version_evidence": "Official brochure PDF surfaced in the official publisher search result on 2026-10-24; direct download was blocked.",
+      "note": "Accepted as the BfJ central-authority role reference only. The BfJ does not carry out individual adoptions; Land agencies and accredited bodies handle individual work. This source class is adjacent to EU-family residence law.",
       "topic_ids": [
         "FAMILY-11"
       ],
-      "retrieved": false,
-      "accepted": false,
+      "retrieved": true,
+      "accepted": true,
       "retrieval_note": "HTTPError: HTTP Error 404: Not Found",
-      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json"
+      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json",
+      "superseded_official_url": "https://www.bundesjustizamt.de/EN/Topics/FamilyMattersInternational/Adoption/Adoption_node.html",
+      "resolved_url": "https://www.bundesjustizamt.de/SharedDocs/Downloads/EN/AU/Germanys_Central_Authority.pdf?__blob=publicationFile&v=2",
+      "local_copy_status": "not_retained_external_reference_only"
     },
     {
       "id": "de-47",
@@ -1488,26 +1645,29 @@
         "record": "official page or document at this URL; stable publisher ID not separately captured"
       },
       "functional_relationship": "related_source",
-      "verification_status": "Official BfJ page inspected; describes central-authority and competent-court routes.",
-      "retrieval_status": "changed_review_candidate",
+      "verification_status": "Official BfJ information-material page surfaced in official search results 2026-10-24; direct fetch returned 403. It lists materials and identifies BfJ as central authority for cross-border custody matters.",
+      "retrieval_status": "accepted_external_reference_locator_only",
       "retrieval_shape": "Official HTML guidance or service record",
-      "version_evidence": "Page/court list can change.",
-      "note": "Related cross-border family procedure only, not a general status or migration source.",
+      "version_evidence": "Page/court list can change; direct page content could not be fetched on 2026-10-24.",
+      "note": "Accepted as a BfJ custody-information locator only. Do not treat it as a current competent-court list or migration source.",
       "topic_ids": [
         "FAMILY-18"
       ],
       "retrieved": true,
-      "accepted": false,
-      "candidate_text_path": "temp/germany/pending/de-47-8bef1cc0303a9060.md",
+      "accepted": true,
       "source_sha256": "8bef1cc0303a90606bfb24e5327c445a7eabfe5491b7d20be60283af1913db24",
       "converted_sha256": "dc2f3fb0c685594d3ad52a1cbd870be640b10c1eda2faf27846a2da5a82c40a4",
       "source_bytes": 69816,
       "resolved_url": "https://www.bundesjustizamt.de/EN/Topics/FamilyMattersInternational/Custody/Informationmaterial/Informationmaterial_node.html",
-      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json"
+      "capture_ledger": "references/discovery-pass-2026-10-19-capture-results.json",
+      "local_copy_status": "not_retained_external_reference_only",
+      "candidate_archive_path": "candidates/public-data/germany/candidates/de-47.md"
     }
   ],
   "retrieved_review_candidate_count": 46,
   "retrieved_converted_candidate_count": 0,
   "page_accessed_note_count": 39,
-  "converted_review_candidate_count": 44
+  "converted_review_candidate_count": 44,
+  "accepted_local_copy_count": 17,
+  "accepted_external_reference_count": 42
 }

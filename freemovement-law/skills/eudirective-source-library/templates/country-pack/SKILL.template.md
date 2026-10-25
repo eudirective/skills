@@ -1,6 +1,6 @@
 ---
 name: <jurisdiction>-legal-source-system
-description: Maintain <jurisdiction> national source candidates and reviewed documents for <defined scope>.
+description: Maintain the <jurisdiction> source inventory and reviewed national documents for <defined scope>.
 metadata:
   version: 0.1.0
   short-description: <Jurisdiction> national source pack
@@ -8,7 +8,7 @@ metadata:
 
 # <Jurisdiction> legal source system
 
-Use this workflow only for the scope recorded in `references/source-list.md`. The machine-readable source inventory is `references/candidate-manifest.json`; optional local-copy or monitoring rules are in `references/source-rules.json`.
+Use this workflow only for the scope recorded in `references/source-list.md`. The machine-readable source inventory is `references/candidate-manifest.json`; optional local-copy or monitoring rules are in `references/source-rules.json`. Keep unaccepted research files and captures in the Monitor's indexed local-only archive, not in a country-pack folder.
 
 ## Retrieval and conversion
 

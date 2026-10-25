@@ -1,40 +1,28 @@
-# Liechtenstein source-rule sustainability assessment
+# Liechtenstein source-maintenance assessment
 
-Assessment date: 19 October 2026. Scope: the 40 candidates in [`source-list.md`](source-list.md) and [`candidate-manifest.json`](candidate-manifest.json). This reviews retrieval and conversion behavior, not legal currentness, legal advice, or coverage completeness.
+**Reviewed:** 2026-10-25
 
-## Implemented route and observed results
+## Current maintenance state
 
-[`../sync_liechtenstein.py`](../sync_liechtenstein.py) performs ordinary allowlisted HTTPS GET requests with a 20-second timeout, a 24 MiB response cap, and a one-second delay. For Gesetze.li law records it first retrieves the stable LR/LGBl page, discovers the current-text iframe, then captures that exact frame and its version query. It preserves exact raw response hashes and produces Markdown from the legal body, official page content, or page-wise PDF text. PDF extraction uses pinned `pypdf==6.21.1`; `convert-pdfs` rebuilds it from preserved bytes and `verify` replays every conversion offline. A 19 October refresh saved and replay-verified 16 HTML and two PDF conversions; the two original PDFs remain byte-preserved; 16 requests received HTTP 403; four staging routes were skipped; one interactive form and one case-law application shell did not yield complete source texts. Accepted count is zero.
+The Monitor has no registered Liechtenstein source-pack action. The country pack therefore has no supported automated inventory, capture, conversion, or freshness check. The former `sync_liechtenstein.py` candidate generator and its PDF dependency were removed because they wrote candidates and capture manifests into the published country pack. Future source review is manual through the EU Source Update Monitor, with candidate and capture evidence kept in its local-only archive.
 
-The change detector retains exact source hashes and ignores only observed transport variation: scripts, Drupal view IDs, CSRF and SiteImprove tokens, a Liechtenstein CSS cache timestamp, and the rotating Cloudflare email-protection fragment. Meaningful HTML changes are staged for review rather than accepted automatically. The observed email fragment change affected only a generated `href`; the same contact link retained its stable `mailto` path.
+The accepted source list and per-record acceptance JSON are the maintained public register. A link-only page note is not a local copy of that page and is not topic coverage. A Lilex text snapshot is an informational working text; signed State Law Gazette publication remains legally authentic.
 
-## Verdict
+## Historical retrieval evidence
 
-**Fragile for a bounded review-candidate capture; not sustainable yet for unattended source maintenance.** Confidence: medium for the observed retrieval behavior, low for ongoing reuse authorization and full source coverage. The accessible route is repeatable in this environment and offline replay is deterministic, but legal authenticity, recurring-use terms, blocked-route coverage, and several conversion forms remain unresolved.
+The retired capture workflow retrieved official pages and PDF sources on 2026-10-19 using ordinary HTTPS requests, captured source bytes and hashes, and produced text for review. Its ledger records HTML responses, two EFTA PDFs, publisher 403 responses, skipped staging routes, and partial application/form pages. The exact candidate files and manifest are preserved in the Monitor local-only archive; that archive is not part of the public source library.
 
-| Rule dimension | Evidence | Remaining limitation |
-|---|---|---|
-| Identity | Gesetze.li law page IDs and the current iframe URL are recorded; candidate ID and both shell/frame hashes are retained. | Current consolidated text is not the authentic publication and may not establish the legally effective text. Verify LR/LGBl identity and effective dates against signed Gazette items. |
-| Retrieval | HTTPS-only host allowlist, redirect checks, time/size limits, delay, explicit 403 and staging outcomes. No API registration or authentication was needed for accessible records. | Sixteen official requests returned 403 in this client. No retries, alternate challenge route, or bypass is attempted. Direct URL fetching does not rediscover all parent-page attachments or updates. |
-| Payload | HTML identity and minimum body length are checked; current Gesetze.li text frame is separately captured. Exact source bytes and hashes are retained. Both PDFs are byte-preserved and text-extracted page by page. | PDF signature validation is absent. Interactive forms and the decisions JavaScript portal are not full source payloads. |
-| Conversion | Deterministic HTML-to-Markdown and pinned PDF-to-Markdown extraction are replayed by `verify` from saved bytes. | German statute formatting, tables, footnotes, amendment annotations, attachments, layout, and page/section completeness need human comparison with the official source. |
-| Change and review | Exact response hashes remain immutable; narrowly observed volatile fields are normalized only for change comparison. Substantive changes stage for review. | The script has one live refresh cycle; long-run version transitions and false-positive/false-negative behavior need more observations. |
-| Reuse and publisher terms | Pages were retrieved through ordinary public GET without login or API registration. | The 2026 reuse framework, database conditions, signed Gazette rights, storage/transform rights, and recurring automated access have not been reconciled. A public download is not proof of bulk reuse permission. |
-| Coverage | Accessible guidance, laws, oversight pages, court structure and legal-aid information are represented. | Gazette, EWR register, migration/visa pages and PDFs include 403 gaps; Swiss mission practice and selected decisions are inherently incomplete. Search coverage is bounded. |
+The EFTA-hosted Decision 191/1999 and Switzerland–Liechtenstein protocol PDFs were retrieved on 19 October and are retained as exact official-PDF artifacts with extracted text in `documents/treaties/`. The web viewer returned 403 for direct PDF opens on 25 October. That is an access limitation for future retrieval; the archived PDFs preserve the reviewed source bytes.
 
-## Sustainability risks
+## Sustainability limits
 
-1. **Legal-text version:** Use the latest Gesetze.li government-published consolidation as the working text and retain its informational/no-legal-effect notice and displayed edition. Consult signed electronic LGBl PDF/A for a specific conflict, commencement question, or when authentic promulgation itself matters; routine review does not require signature validation or reconstruction of the amendment chain.
-2. **Reuse authorization:** The 2026 Information Reuse Act and EEA Open Data implementation need source-specific interpretation. No blanket permission for systematic copying, storage, transformation, or scheduled refresh has been established.
-3. **Publisher blocks:** The LLV host returned HTTP 403 across multiple candidate routes. The failed requests are recorded; the rule does not emulate a browser challenge or use an unapproved route. Obtain a publisher-supported route or keep those sources manual.
-4. **Text fidelity:** The current HTML and PDF extractors are deterministic but not legally validated against representative complex statutes. PDFs retain page boundaries, but tables, forms, links, annotations, layout, and attachments need separate review.
-5. **Partial indexes:** The case-law portal is selected and exposes no individual decision through the captured shell. An empty search cannot be treated as proof that no relevant judgment exists.
-6. **Jurisdiction boundaries:** PFZG, Liechtenstein's EEA-specific solution, the Swiss treaty route, third-country residence rules, and the EWR incorporation chain must remain distinct source identities.
+- There is no scheduled or unattended Liechtenstein update action; later changes require a manual source review.
+- Lilex consolidated text is informational. The records do not reproduce signed Gazette layout or establish the legal effect of every amendment.
+- The LVG version-30 capture and the listed amendment chronology were not compared page by page against Gazette originals.
+- The public Opendata, court, and Data Protection Office pages are changeable. Their reference notes are dated and should be rechecked before operational use.
+- Case-law, procedure, EWR-RegV LR 170.511, and Schengen/visa dependencies remain open. The empty topic count is not evidence that no sources or decisions exist.
+- The accepted source references do not establish topic coverage or country completion.
 
-## Optional work for recurring local monitoring
+## Reuse boundary
 
-Ordinary reference use does not depend on this capture pipeline. Use the latest government-published consolidation as the working text, label it informational, and check a particular signed Gazette item only when a material date, amendment, correction, or publication question affects the issue. Do not reconstruct the full Gazette history.
-
-If recurring monitoring or local text retention is later needed, then check the applicable reuse terms, obtain a publisher-supported route for blocked pages, and validate representative conversions and relevant attachments. PDF signature validation and repeated change-cycle comparisons belong to that automated or retained-copy workflow, not to every legal-source review.
-
-All current outputs remain unaccepted review candidates. The rule must not be presented as a complete or legally authoritative Liechtenstein source pack.
+Local treaty and statute text copies are accepted only under the recorded Liechtenstein URG Article 5 basis for official enactment text. That does not authorize copying publisher website content, reusing site design, or systematic/database extraction. The five new service/discovery page records are link-only; their concise local notes contain scope and review information, not publisher-page copies.

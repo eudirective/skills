@@ -20,11 +20,22 @@ from html import unescape as html_unescape
 from pathlib import Path
 
 PACK = Path(__file__).resolve().parent
-ROOT = PACK.parents[1]
+PROJECT_ROOT = PACK.parents[1]
+TEMP_ROOT = Path(os.environ.get("PUBLIC_DATA_TEMP_ROOT", str(PROJECT_ROOT))).resolve()
 CAPTURE_LIST = PACK / "references" / "finlex-captures.json"
 OUTPUT_MANIFEST = PACK / "references" / "finlex-retrieval-manifest.json"
 AKN_NS = "http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
 FINLEX_NS = "http://data.finlex.fi/schema/finlex"
+
+
+def local_path(relative_path: str) -> Path:
+    """Resolve source-library files in the checkout and temp files in the configured scratch root."""
+    relative = Path(relative_path)
+    base = TEMP_ROOT if relative.parts and relative.parts[0] == "temp" else PROJECT_ROOT
+    output = (base / relative).resolve()
+    if not output.is_relative_to(base.resolve()):
+        raise ValueError(f"refused path outside its root: {relative_path}")
+    return output
 
 
 def sha256(data: bytes) -> str:
@@ -366,19 +377,25 @@ def update_inventories(record: dict) -> None:
         for item in entries:
             if item.get("id") == record["id"]:
                 item["retrieved"] = True
-                item["accepted"] = False
-                item["retrieval_status"] = "converted_review_candidate"
                 item["retrieval_shape"] = record.get("retrieval_shape", "Finlex current-text HTML page, rendered main-content capture")
                 if record.get("current_eli"):
                     identity = record.get("act_number", "") + "; current ELI: " + record["current_eli"]
                 else:
                     identity = record.get("act_number", "") + "; unofficial English translation; amendments through " + record.get("amendment_cutoff", "unknown")
                 item["publisher_identifier"]["record"] = identity
-                item["verification_status"] = record.get("verification_note", "Official Finlex current-text page captured; Finlex API route returned 404 for this record; stable ELI current-version identity retained.")
-                item["document_path"] = "../candidates/" + record["output_path"].split("/")[-1]
+                if not item.get("local_copy_accepted"):
+                    item["verification_status"] = record.get("verification_note", "Official Finlex current-text page captured; Finlex API route returned 404 for this record; stable ELI current-version identity retained.")
+                if item.get("local_copy_accepted"):
+                    item["latest_conversion_candidate_path"] = record["output_path"]
+                else:
+                    item["accepted"] = False
+                    item["retrieval_status"] = "converted_review_candidate"
+                    item["latest_conversion_candidate_path"] = record["output_path"]
                 item["raw_capture_path"] = record.get("raw_pdf_path", record.get("raw_xml_path", record.get("rendered_text_path")))
                 break
-        data["accepted_source_count"] = 0
+        accepted_local = sum(bool(item.get("local_copy_accepted")) for item in entries)
+        data["accepted_source_count"] = accepted_local
+        data["accepted_local_copy_count"] = accepted_local
         data["retrieved_review_candidate_count"] = sum("review_candidate" in item.get("retrieval_status", "") for item in entries)
         atomic_write(path, (json.dumps(data, ensure_ascii=False, indent=2) + "\n").encode("utf-8"))
 
@@ -440,9 +457,7 @@ def sync_api() -> None:
         digest = sha256(body)
         stem = re.sub(r"[^a-z0-9]+", "-", record["id"].lower()).strip("-")
         relative_path = f"temp/finland/raw/{stem}-{digest}.xml"
-        output = (ROOT / relative_path).resolve()
-        if not output.is_relative_to(ROOT):
-            raise SystemExit(f"refused output path outside project root: {relative_path}")
+        output = local_path(relative_path)
         if output.exists() and sha256(output.read_bytes()) != digest:
             raise SystemExit(f"hash-named raw snapshot has conflicting content: {relative_path}")
         if not output.exists():
@@ -555,9 +570,7 @@ def sync_pdfs() -> None:
         page_path = f"temp/finland/raw/{stem}-page-{page_hash}.html"
         pdf_path = f"temp/finland/raw/{stem}-{pdf_hash}.pdf"
         for relative_path, data, digest in ((page_path, page_bytes, page_hash), (pdf_path, pdf_bytes, pdf_hash)):
-            output = (ROOT / relative_path).resolve()
-            if not output.is_relative_to(ROOT):
-                raise SystemExit(f"refused output path outside project root: {relative_path}")
+            output = local_path(relative_path)
             if output.exists() and sha256(output.read_bytes()) != digest:
                 raise SystemExit(f"hash-named raw snapshot has conflicting content: {relative_path}")
             if not output.exists():
@@ -590,30 +603,40 @@ def run(mode: str) -> None:
     for record in records:
         try:
             if record.get("retrieval_method") == "finlex_akn_api":
-                raw_bytes = (ROOT / record["raw_xml_path"]).read_bytes()
+                raw_bytes = local_path(record["raw_xml_path"]).read_bytes()
                 converted, metadata = render_akn(record, raw_bytes)
             elif record.get("retrieval_method") == "finlex_translation_pdf":
-                raw_bytes = (ROOT / record["raw_pdf_path"]).read_bytes()
+                raw_bytes = local_path(record["raw_pdf_path"]).read_bytes()
                 converted, metadata = render_pdf(record, raw_bytes)
             else:
-                html_bytes = (ROOT / record["raw_html_path"]).read_bytes()
-                text_bytes = (ROOT / record["rendered_text_path"]).read_bytes()
+                html_bytes = local_path(record["raw_html_path"]).read_bytes()
+                text_bytes = local_path(record["rendered_text_path"]).read_bytes()
                 raw_bytes = html_bytes
                 converted, metadata = render(record, html_bytes, text_bytes)
-            out = ROOT / record["output_path"]
+            out = local_path(record["output_path"])
             if mode == "verify":
                 expected = previous_by_id.get(record["id"])
                 if not expected:
                     raise ValueError("record is absent from retrieval manifest")
                 checks = {"converted Markdown": (sha256(converted), expected.get("converted_sha256")),
                           "saved Markdown": (sha256(out.read_bytes()), expected.get("converted_sha256"))}
+                if record.get("accepted_document_path"):
+                    accepted_bytes = local_path(record["accepted_document_path"]).read_bytes()
+                    checks["accepted local document"] = (sha256(accepted_bytes), expected.get("accepted_document_sha256"))
+                    marker = b"## Consolidated statutory text\n"
+                    if marker not in converted or marker not in accepted_bytes:
+                        raise ValueError("accepted local document lacks the expected statutory-text boundary")
+                    checks["accepted statutory text"] = (
+                        sha256(accepted_bytes.split(marker, 1)[1]),
+                        sha256(converted.split(marker, 1)[1]),
+                    )
                 if record.get("retrieval_method") == "finlex_akn_api":
                     checks["raw XML"] = (sha256(raw_bytes), expected.get("raw_xml_sha256"))
                 elif record.get("retrieval_method") == "finlex_translation_pdf":
                     checks["raw PDF"] = (sha256(raw_bytes), expected.get("raw_pdf_sha256"))
                     checks["extracted text"] = (metadata.get("extracted_text_sha256"), expected.get("extracted_text_sha256"))
                     checks["translation page capture"] = (
-                        sha256((ROOT / record["translation_page_capture_path"]).read_bytes()),
+                        sha256(local_path(record["translation_page_capture_path"]).read_bytes()),
                         expected.get("translation_page_sha256"),
                     )
                 else:
@@ -626,6 +649,14 @@ def run(mode: str) -> None:
             else:
                 atomic_write(out, converted)
                 metadata["output_path"] = record["output_path"]
+                if record.get("monitor_archive_path"):
+                    metadata["monitor_archive_path"] = record["monitor_archive_path"]
+                previous = previous_by_id.get(record["id"], {})
+                for key in ("accepted_document_path", "accepted_document_sha256", "monitor_archive_path"):
+                    if key in record:
+                        metadata[key] = record[key]
+                    elif key in previous:
+                        metadata[key] = previous[key]
                 manifest_records.append(metadata)
                 update_inventories(metadata)
                 print(f"converted {record['id']} -> {record['output_path']}")

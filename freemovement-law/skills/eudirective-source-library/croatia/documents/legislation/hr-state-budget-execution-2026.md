@@ -1,9 +1,9 @@
 # State Budget Execution Act for 2026 NN 152/25
 
 - Jurisdiction: croatia
-- Candidate ID: `hr-state-budget-execution-2026`
+- Source ID: `hr-state-budget-execution-2026`
 - Source type: `annual_budget_execution_act`
-- Candidate URL: https://narodne-novine.nn.hr/clanci/sluzbeni/full/2025_12_152_2277.html
+- Official source URL: https://narodne-novine.nn.hr/clanci/sluzbeni/full/2025_12_152_2277.html
 - Resolved URL: https://narodne-novine.nn.hr/clanci/sluzbeni/full/2025_12_152_2277.html
 - Retrieved: 2026-10-19T16:36:45.146266+03:00
 - Media type: `text/html; charset=utf-8`

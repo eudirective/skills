@@ -1,0 +1,6430 @@
+# Loi du 15 décembre 1980 sur l’accès au territoire, le séjour, l’établissement et l’éloignement des étrangers — French Justel consolidation
+
+- Jurisdiction: Belgium
+- Source ID: `be-law-1980-fr`
+- Source type: `national_legislation`
+- Language: `fr`
+- Publisher: Belgian Official Gazette / Justel
+- Official URL: https://www.ejustice.just.fgov.be/eli/loi/1980/12/15/1980121550/justel
+- Instrument: Loi du 15 décembre 1980 sur l’accès au territoire, le séjour, l’établissement et l’éloignement des étrangers
+- NUMAC: `1980121550`
+- Gazette publication: 1980-12-31
+- Publisher consolidation date: 2026-06-24
+- Retrieved: 2026-10-19T02:55:36+00:00
+- Rechecked on official page: 2026-10-24; Justel still displays the 2026-06-24 update date.
+- Raw HTML SHA-256: `4e95b2b48aaf08452c85a488d05d37cd95a6bad970dfc83cefc45fac81260515`
+- Extracted-text SHA-256: `4949f05c25a834ada8521fbfa8ecf0beb25970de813398b8cd5be979cdb11e6e`
+- Extraction: official HTML `main`; navigation controls and final external-link list removed.
+- Local-copy status: accepted after publisher, version, extraction, attachment, and legal-classification review.
+- Scope: official consolidated text for this language representation. This local copy does not establish topic coverage or Belgium review completion.
+- Attachment review: The Justel HTML record offers the official publication image and a consolidated-PDF view, plus 136 archived versions and 331 implementing decrees. Those are separate records or alternative representations; the captured main content was reviewed for embedded payloads. The local document retains the official HTML main content and removes only page-navigation controls and the final external-link list.
+
+## Captured official text
+
+Titre
+
+1980121550
+
+15 DECEMBRE 1980. - Loi sur l'accès au territoire, le séjour, l'établissement et l'éloignement des étrangers. (NOTE : Consultation des versions antérieures à partir du 26-07-1991 et mise à jour au 24-06-2026)
+
+Publication: 31 décembre 1980
+
+Numéro: 1980121550
+
+page: 14584
+
+Dossier numéro: 1980-12-15/30
+
+Entrée en vigueur : 1 juillet 1981
+
+Fin de validité : 31 décembre 1992 (ART. 57,§1,7)
+
+136 versions archivées
+
+331 arrêtés d'exécution
+
+Table des matières
+TITRE I. - DISPOSITIONS GENERALES.
+CHAPITRE I. - (DEFINITIONS). <L 1996-07-15/33, art. 2, 012; En vigueur : 22-10-1996>
+Art. 1
+CHAPITRE Ierbis. [1 - Introduction d'une demande de séjour.]1
+Art. 1er/1, 1er/2
+CHAPITRE Ierter. [1 - Dispositions générales relatives à l'introduction d'une demande de séjour et d'une demande de protection internationale ou temporaire.]1
+Art. 1er/3
+CHAPITRE II. [1 Accès au territoire, court séjour, séjour illégal, filtrage et Eurodac]1
+Art. 2, 2/1, 2/2, 3, 3bis, 4, 4bis, 5-6, 6/1, 6/2, 7-8, 8bis, 8ter, 8quater, 8quinquies, 8sexies, 8septies, 8octies
+CHAPITRE III. - SEJOUR DE PLUS DE TROIS MOIS.
+Art. 9, 9bis, 9ter, 9quater, 10, 10bis, 10ter, 11-12, 12bis, 13
+CHAPITRE IV. [1 - Etablissement et statut de résident de longue durée-UE.]1
+Art. 14-15, 15bis, 16, 16bis, 17-18
+CHAPITRE IVbis. - (Abrogé) <L 2003-12-22/42, art. 419, 029; En vigueur : 10-01-2004>
+Art. 18bis
+CHAPITRE V. - ABSENCES ET RETOURS DE L'ETRANGER.
+Art. 19, 19/1
+CHAPITRE VI. [1 - Fin du séjour de plus de trois mois pour des raisons d'ordre public ou de sécurité nationale.]1
+Art. 20-24
+CHAPITRE VIbis. [1 - Mesures de sûreté [2 et signalements]2.]1
+Art. 24/1, 25-26, 26/1, 26/2
+CHAPITRE VII. - MESURES DE SURETE COMPLEMENTAIRES.
+Art. 27-28, 28/1, 28/2, 28/3, 29-30
+CHAPITRE VIIbis. - Prise de données biométriques. <Inséré par L 2004-12-27/30, art. 450; En vigueur : 10-01-2005>
+Art. 30bis
+CHAPITRE VIII. - ORGANES CONSULTATIFS DES ETRANGERS.
+Art. 31-39
+TITRE IBIS. - Le Conseil du Contentieux des étrangers <Inséré par L 2006-09-15/71, art. 77; En vigueur : 01-12-2006>
+CHAPITRE 1ER. [1 Rapport d'activité]1
+Art. 39/1, 39/2, 39/3
+CHAPITRE 2. - De l'organisation du Conseil <Inséré par L 2006-09-15/71, art. 82; En vigueur : 01-12-2006>
+Section Ire. - La composition du Conseil <Insérée par L 2006-09-15/71, art. 82; En vigueur : 01-12-2006>
+Art. 39/4, 39/5, 39/6, 39/7, 39/8
+Section II. - Les chambres <Insérée par L 2006-09-15/71, art. 88; En vigueur : 01-12-2006>
+Art. 39/9, 39/10
+Section III. [1 - L'assemblée générale et les chambres réunies]1
+Art. 39/11, 39/12
+Section IV. - L'emploi des langues <Insérée par L 2006-09-15/71, art. 94; En vigueur : 01-12-2006>
+Sous-section 1re. - L'emploi des langues dans les services du Conseil <Insérée par L 2006-09-15/71, art. 94; En vigueur : 01-12-2006>
+Art. 39/13
+Sous-section 2.
+Art. 39/14, 39/15
+Sous-section 3.
+Art. 39/16, 39/17, 39/18
+CHAPITRE 3. - La fonction <Inséré par L 2006-09-15/71, art. 103; En vigueur : 01-12-2006>
+Section Ire. - Les conditions de nomination des membres du Conseil et du greffe <Insérée par L 2006-09-15/71, art. 103; En vigueur : 01-12-2006>
+Art. 39/19, 39/20, 39/21, 39/22
+Section II. - La désignation et l'exercice des mandats <Insérée par L 2006-09-15/71, art. 108; En vigueur : 01-12-2006>
+Sous-section 1re. - Les mandats <Insérée par L 2006-09-15/71, art. 108; En vigueur : 01-12-2006>
+Art. 39/23
+Sous-section 2. - Procédure de désignation des mandats <Insérée par L 2006-09-15/71, art. 110; En vigueur : 01-12-2006>
+Art. 39/24, 39/25, 39/26
+Sous-section 3. - De l'exercice du mandat <Insérée par L 2006-09-15/71, art. 115; En vigueur : 01-12-2006>
+Art. 39/27
+Section III. [1 - L'évaluation des titulaires de fonction du Conseil]1
+Sous-section 1re. - Dispositions générales <Insérée par L 2006-09-15/71, art. 116; En vigueur : 01-12-2006>
+Art. 39/28
+Sous-section 2. [1 - Les critères d'évaluation]1
+Art. 39/29
+Sous-section 3. [1 - Le déroulement de l'évaluation]1
+Art. 39/30
+Section IV.
+Sous-section 1re.
+Art. 39/31
+Sous-section 2.
+Art. 39/32, 39/33
+Section V. - L'exercice de la fonction <Insérée par L 2006-09-15/71, art. 126; En vigueur : 01-12-2006>
+Art. 39/34, 39/35, 39/36
+Section VI. - Traitements, retraite et pensions <Insérée par L 2006-09-15/71, art. 130; En vigueur : 01-12-2006>
+Art. 39/37, 39/38, 39/39, 39/40, 39/41, 39/42, 39/43, 39/44
+Section VII. - Des incompatibilités et de la discipline <Insérée par L 2006-09-15/71, art. 139; En vigueur : 01-12-2006>
+Art. 39/45, 39/46, 39/47, Art, 39/49, 39/50, 39/51, 39/52, 39/53, 39/53-1, 39/53-2, 39/53-3, 39/53-4, 39/53-5, 39/53-6, 39/53-7, 39/53-8, 39/53-9
+CHAPITRE 4. - L'administrateur et le personnel administratif. <Inséré par L 2006-09-15/71, art. 149; En vigueur : 01-12-2006>
+Art. 39/54, 39/55
+Chapitre 5.
+Section Ire.
+Art. 39/56, 39/57, 39/57-1, 39/58, 39/59, 39/60, 39/61, 39/62, 39/63, 39/64, 39/65, 39/66, 39/67, 39/68, 39/68-1
+Art. 39/68-1bis_DROIT_FUTUR
+Art. 39/68-2, 39/68-3
+Section II.
+Sous-section 1re.
+Art. 39/69
+Art. 39/69_DROIT_FUTUR
+Art. 39/70
+Sous-section 2.
+Art. 39/71, 39/72, 39/72/1, 39/73, 39/73-1, 39/73-2, 39/73-3, 39/74, 39/75, 39/76
+Art. 39/76_DROIT_FUTUR
+Sous-section 3.
+Art. 39/77, 39/77/1
+Section III.
+Sous-section 1re.
+Art. 39/78, 39/79, 39/80
+Sous-section 2.
+Art. 39/81
+Sous-section 3.
+§ 1er.
+Art. 39/82, 39/83
+§ 2.
+Art. 39/84, 39/85
+TITRE II. - DISPOSITIONS COMPLEMENTAIRES ET DEROGATOIRES RELATIVES A CERTAINES CATEGORIES D'ETRANGERS.
+CHAPITRE I. - (Etrangers, citoyens de l'Union et membres de leur famille et étrangers, membres de la famille d'un Belge). <L 2007-04-25/49, art. 18, 046; En vigueur : 01-06-2008>
+Art. 40, 40bis, 40ter, 41, 41bis, 41ter, 42, 42bis, 42ter, 42quater, 42quinquies, 42sexies, 42septies, 42octies, 43-44, 44bis, 44ter, 44quater, 44quinquies, 44sexies, 44septies, 44octies, 44nonies, 44decies, 45, 45/1, 46, 46bis, 47
+CHAPITRE Ibis. [1 - Autres membres de la famille d'un citoyen de l'Union.]1
+Art. 47/1. [1 Sans préjudice des dispositions du présent chapitre, les dispositions du chapitre Ier relatives aux membres de la famille d'un citoyen de l'Union visés à l'article 40bis ou aux membres de la famille d'un Belge qui a exercé son droit de libre circulation et de séjour visés à l'article 40ter, paragraphe 1er, s'appliquent aux autres membres de la famille visés à l'article 47/2.]1
+Art. 47/2. [1 Sont considérés comme autres membres de la famille d'un citoyen de l'Union:
+Art. 47/3. [1 § 1er. Les autres membres de la famille [2 visés à l'article 47/2, 1°,]2 doivent apporter la preuve de l'existence d'une relation avec le citoyen de l'Union qu'ils veulent accompagner ou rejoindre ainsi que de son caractère durable.
+Art. 47/4. [1 A moins qu'ils soient eux-mêmes citoyens de l'Union et qu'ils bénéficient à ce titre d'un droit de séjour visé à l'article 40, § 4, et sans préjudice des dispositions des articles 42ter et 42quater, le ministre ou son délégué peut dans les cinq années suivant la reconnaissance de leur droit de séjour mettre fin au séjour des autres membres de la famille ou refuser de renouveler leur titre de séjour lorsque:
+CHAPITRE Iter. [1 - Bénéficiaires de l'accord de retrait.]1
+Art. 47/5
+CHAPITRE II. - (Réfugiés et personnes pouvant bénéficier de la protection subsidiaire) <L 2006-09-15/72, art. 22, 041; En vigueur : 01-06-2007>
+SECTION I. - (Le statut de réfugié et le statut de protection subsidiaire) <L 2006-09-15/72, art. 23, 041; En vigueur : 01-06-2007>
+Art. 48, 48/2, 48/3, 48/4, 48/5, 48/6, 48/7, 48/8, 48/9
+Art. 48/9_DROIT_FUTUR
+Art. 49, 49/2, 49/3, 49/3/1, 49/4, 50, 50bis, 50ter, 50/1, 50/2, 51, 51/2, 51/3, 51/3bis, 51/4, 51/5, 51/5/1, 51/5/2, 51/5/3, 51/6, 51/7, 51/8, 51/9, 51/10, 52, 52/2, 52/3, 52/4, 53, 53bis, 54-55, 55/2, 55/3, 55/3/1, 55/4, 55/5, 55/5/1, 56-57, 57/1
+SECTION II. - DU COMMISSARIAT GENERAL AUX REFUGIES ET AUX APATRIDES. <Inséré par L 14-07-1987, art. 9>
+Art. 57/2, 57/3, 57/4, 57/5, 57/5bis, 57/5ter, 57/5quater
+Art. 57/5quater_DROIT_FUTUR
+Art. 57/5quinquies, 57/5sexies, 57/6, 57/6/1, 57/6/2, 57/6/3, 57/6/4
+Art. 57/6/4_DROIT_FUTUR
+Art. 57/6/5, 57/6/5/1, 57/6/6, 57/6/7, 57/6/7/1, 57/7, 57/7/1, 57/7/2, 57/7bis, 57/7ter, 57/8, 57/8/1, 57/9, 57/10, 57/11
+Section IIbis. [1 Procédures en exécution du règlement (UE) 2024/1348]1
+Art. 57/11/1, 57/11/2, 57/11/3, 57/11/4, 57/11/5, 57/11/6, 57/11/7, 57/11/8, 57/11/9, 57/11/10, 57/11/11, 57/11/12
+SECTION III. - DE LA COMMISSION PERMANENTE DE RECOURS DES REFUGIES. <Inséré par L 14-07-1987, art. 10>
+Art. 57/12, 57/13, 57/14, 57/14bis, 57/15, 57/16, 57/17, 57/18, 57/19, 57/20, 57/21, 57/22, 57/23
+SECTION IIIBIS. - DU HAUT COMMISSARIAT DES NATIONS UNIES POUR LES REFUGIES. <Inséré par L 1993-05-06/30, art. 22, 005; En vigueur : 31-05-1993>
+Art. 57/23bis
+SECTION IV. - DISPOSITIONS COMPLEMENTAIRES. <Inséré par L 14-07-1987, art. 11>
+Art. 57/24, 57/25, 57/26, 57/27, 57/28, 57/28/1
+CHAPITRE IIbis- Bénéficiaires de la protection temporaire, sur la base de la directive 2001/55/CE du Conseil de l'Union européenne du 20 juillet 2001 relative à des normes minimales pour l'octroi d'une protection temporaire en cas d'afflux massif de personnes déplacées et à des mesures tendant à assurer un équilibre entre les efforts consentis par les Etats membres pour accueillir ces personnes et supporter les conséquences de cet accueil. <inséré par L 2003-02-18/41, art. 8; En vigueur : 01-05-2003>
+Art. 57/29, 57/30, 57/31, 57/32, 57/33, 57/34, 57/34/1, 57/35, 57/36
+CHAPITRE IIter. [1 - Apatrides.]1
+Art. 57/37, 57/38, 57/39, 57/40, 57/41, 57/42, 57/43, 57/44, 57/45, 57/46
+CHAPITRE III. - ETUDIANTS.
+SECTION I. [1 Dispositions générales ]1
+Art. 58-61, 61/1, 61/1/1, 61/1/2, 61/1/3, 61/1/4, 61/1/5
+SECTION II. [1 Mobilité ]1
+Art. 61/1/6, 61/1/7, 61/1/8
+SECTION III. [1 Séjour après les études en vue de trouver un emploi ou de créer une entreprise ]1
+Art. 61/1/9. [1 § 1er. Après l'achèvement de ses études sur le territoire du Royaume, l'étudiant peut introduire une demande afin de séjourner sur le territoire du Royaume pendant 12 mois au maximum en vue de trouver un emploi ou de créer une entreprise dans le but d'obtenir un titre de séjour à des fins de travail.
+Art. 61/1/10. [1 § 1er. Après réception de la demande, le ministre ou son délégué vérifie si les conditions fixées à l'article 61/1/9 sont remplies. Le cas échéant, il délivre au ressortissant d'un pays tiers un accusé de réception de la demande, dont le modèle est déterminé par le Roi.
+Art. 61/1/11 [1 Le ministre ou son délégué peut déclarer la demande irrecevable dans les cas suivants:
+Art. 61/1/12 [1 § 1er. Le ministre ou son délégué prend une décision et la notifie au ressortissant d'un pays tiers dans un délai de nonante jours suivant la date de l'accusé de réception de la demande, visé à l'article 61/1/10, § 1er.
+Art. 61/1/13 [1 Le ministre ou son délégué peut refuser une demande d'autorisation de séjour tel que visée à l'article 61/1/9 si le ressortissant d'un pays tiers:
+Art. 61/1/14 [1 Le ministre ou son délégué peut mettre fin à l'autorisation de séjour délivrée conformément à l'article 61/1/12 dans les cas suivants:
+Art. 61/1/15 [1 La présente section s'applique également lorsque l'étudiant fait usage ou a fait usage de son droit à la mobilité et que la Belgique est le deuxième Etat membre dans lequel l'étudiant séjourne ou a séjourné. ]1
+CHAPITRE IV. - Des étrangers qui sont victimes de l'infraction de traite des êtres humains au sens de l'article 433quinquies du Code pénal ou qui sont victimes, dans les circonstances visées à l'article 77quater, 1°, en ce qui concerne uniquement les mineurs non accompagnés, à 5°, de l'infraction de trafic des êtres humains au sens de l'article 77bis, et qui coopèrent avec les autorités. <Inséré par L 2006-09-15/72, art. 64; En vigueur : 01-06-2007>
+Art. 61/2, 61/3, 61/4, 61/5
+CHAPITRE V. - Bénéficiaires du statut de résident de longue durée dans un autre Etat membre de l'Union européenne, sur la base de la directive 2003/109/CE du Conseil de l'Union européenne du 25 novembre 2003 relative au statut des ressortissants de pays tiers résidents de longue durée. <inséré par L 2007-04-25/49, art. 39, En vigueur : 01-06-2008>
+Art. 61/6, 61/7, 61/8, 61/9
+CHAPITRE VI. - Chercheurs. <Inséré par L 2007-04-21/30, art. 3; En vigueur : 01-06-2007>
+Section 1re. [1 - Dispositions générales.]1
+Art. 61/10, 61/11
+Section 2. [1 - Permis pour chercheur.]1
+Sous-section 1re. [1 - Dispositions relatives à la procédure conjointe avec l'autorité compétente en matière d'occupation des travailleurs étrangers.]1
+Art. 61/12, 61/13, 61/13/1, 61/13/2
+Sous-section 2. [1 - Dispositions relatives à l'autorisation de séjour en qualité de chercheur.]1
+Art. 61/13/3, 61/13/4
+Section 3. [1 - Mobilité au sein de l'Union européenne.]1
+Sous-section 1re. [1 - Mobilité de courte durée.]1
+Art. 61/13/5, 61/13/6, 61/13/7
+Sous-section 2. [1 - Permis pour mobilité de longue durée.]1
+Art. 61/13/8, 61/13/9, 61/13/10, 61/13/11
+Section 4. [1 - Séjour après l'achèvement de la recherche en vue de trouver un emploi ou de créer une entreprise.]1
+Art. 61/13/12, 61/13/13, 61/13/14, 61/13/15
+CHAPITRE VIbis. [1 - Stagiaires.]1
+Section 1re. [1 - Dispositions générales.]1
+Art. 61/13/16, 61/13/17
+Section 2. [1 - Permis pour stagiaire.]1
+Art. 61/13/18, 61/13/19, 61/13/20, 61/13/21, 61/13/22, 61/13/23, 61/13/24
+CHAPITRE VIter. [1 - Volontaires dans le cadre du service volontaire européen.]1
+Section 1re. [1 - Dispositions générales.]1
+Art. 61/13/25, 61/13/26
+Section 2. [1 - Permis pour volontaire.]1
+Art. 61/13/27, 61/13/28, 61/13/29, 61/13/30, 61/13/31, 61/13/32
+Chapitre VII. - [1 Mineurs étrangers non accompagnés]1
+Art. 61/14, 61/15, 61/16, 61/17, 61/18, 61/19, 61/20, 61/21, 61/22, 61/23, 61/24, 61/25
+CHAPITRE VIIbis [1 Ressortissants de pays tiers qui séjournent ou souhaitent séjourner dans le Royaume à des fins d'emploi pour une période de plus nonante jours ]1
+SECTION I. [1 - Dispositions relatives à la procédure conjointe en matière d'occupation des travailleurs étrangers.]1
+Art. 61/25-1., 61/25-2, 61/25-3
+Section 2. [1 Dispositions relatives à l'autorisation de séjourner sur le territoire à des fins d'emploi pour une période de plus de nonante jours ]1
+Art. 61/25-4, 61/25-5, 61/25-6, 61/25-7
+CHAPITRE VIII. [1 - Travailleurs hautement qualifiés - Carte bleue européenne.]1
+Section 1re. [1 - Champ d'application et définitions.]1
+Art. 61/26, 61/27
+Section 2. [1 - Dispositions relatives à la procédure conjointe en matière d'occupation de travailleurs hautement qualifiés.]1
+Art. 61/27-1, 61/27-2
+Section 3. [1 - Dispositions relatives à l'autorisation de séjourner sur le territoire à des fins d'emploi hautement qualifié.]1
+Art. 61/27-3, 61/27-4, 61/27-5, 61/27-6
+CHAPITRE VIIIbis . [1 - Travailleurs saisonniers.]1
+Section 1re. [1 - Champ d'application et définitions.]1
+Art. 61/28, 61/28-1
+Section 2. [1 - Accès au territoire et court séjour - Documents requis.]1
+Art. 61/29, 61/29-1, 61/29-2, 61/29-3
+Section 3. [1 - Permis pour travailleur saisonnier.]1
+Sous-section 1re. [1 - Dispositions relatives à la procédure conjointe en matière d'occupation des travailleurs étrangers.]1
+Art. 61/29-4, 61/29-5, 61/29-6, 61/29-7
+Sous-section 2. [1 - Dispositions relatives à l'autorisation de séjour en qualité de travailleur saisonnier.]1
+Art. 61/29-8, 61/29-9, 61/30, 61/31
+CHAPITRE VIIIter. [1 - Transferts temporaires intragroupe.]1
+Section 1re. [1 - Champ d'application et définitions.]1
+Art. 61/32, 61/33
+Section 2. [1 - Permis pour personne faisant l'objet d'un transfert temporaire intragroupe.]1
+Sous-section 1re. [1 - Dispositions relatives à la procédure conjointe avec l'autorité compétente en matière d'occupation des travailleurs étrangers.]1
+Art. 61/34, 61/35, 61/36, 61/37, 61/38
+Sous-section 2. [1 - Dispositions relatives à l'autorisation de séjour en qualité de personne faisant l'objet d'un transfert temporaire intragroupe.]1
+Art. 61/39, 61/40, 61/41
+Section 3. [1 - Mobilité au sein de l'Union européenne.]1
+Sous-section 1re. [1 - Mobilité de courte durée.]1
+Art. 61/42, 61/43, 61/44
+Sous-section 2. [1 - Permis pour mobilité de longue durée.]1
+Art. 61/45, 61/46, 61/47, 61/48, 61/49
+TITRE III. [1 - Garanties procédurales et voies de recours.]1
+CHAPITRE I. [1 - Droit d'être entendu, motivation et notification des décisions administratives et recours.]1
+Art. 62-63
+CHAPITRE Ibis. - (RECOURS URGENT AUPRES DU COMMISSAIRE GENERAL AUX REFUGIES ET AUX APATRIDES.) <L 1993-05-06/30, art. 26, 005; En vigueur : 31-05-1993>
+Art. 63/2, 63/3, 63/4, 63/5
+CHAPITRE II. - DEMANDE EN REVISION.
+Art. 64-67
+CHAPITRE III. - DEMANDES DE LEVEE DE CERTAINES MESURES DE SURETE.
+Art. 68
+CHAPITRE IV. - RECOURS EN ANNULATION. (Abrogé) <L 2006-09-15/71, art. 202, 040; En vigueur : 01-12-2006>
+Art. 69, 69bis, 70
+CHAPITRE V. - RECOURS AUPRES DU POUVOIR JUDICIAIRE [1 ET DU CONSEIL D'ETAT]1.
+Art. 70bis, 70/1, 71-74, 74/0/1
+CHAPITRE VI. [1 - Représentation]1
+Art. 74/1
+TITRE IIIbis. - OBLIGATIONS DES TRANSPORTEURS RELATIVES A L'ACCES DES ETRANGERS AU TERRITOIRE. <Inséré par L 14-07-1987, art. 17>
+Art. 74/2, 74/3, 74/4, 74/4bis
+TITRE IIIter. - <Inséré par L 1991-07-18/52, art. 15, 002; En vigueur : 01-10-1991> DISPOSITIONS PARTICULIERES RELATIVES A CERTAINS ETRANGERS (...) <L 1996-07-15/33, art. 57, 012; En vigueur : 16-12-1996>
+Art. 74/5, 74/5/1, 74/6, 74/6/1, 74/6/2, 74/7, 74/8, 74/9
+TITRE IIIquater. [1 - Dispositions applicables au retour des ressortissants d'un pays tiers en séjour illégal sur le territoire.]1
+Art. 74/10, 74/11, 74/12, 74/13, 74/14, 74/15, 74/16, 74/17, 74/18, 74/19
+TITRE IIIquinquies. [1 - FRAUDE.]1
+Art. 74/20, 74/21
+TITRE IIIsexies. [1 - Obligations de l'étranger dans le cadre du transfert, du refoulement, du retour ou de l'éloignement]1
+Chapitre Ier. [1 L'obligation de coopérer]1
+Art. 74/22, 74/23
+Chapitre II. [1 Le trajet d'accompagnement intensif dans le cadre d'une procédure de retour ou de transfert.]1
+Art. 74/24, 74/25, 74/26
+Chapitre III. [1 Les mesures préventives et les mesures de maintien moins coercitives.]1
+Art. 74/27, 74/27/1, 74/28
+TITRE IV. - DISPOSITIONS PENALES.
+Art. 75, 75/1, 76-77, 77bis, 77ter, 77quater, 77quinquies, 77sexies, 78-79, 79bis, 79ter, 79ter-bis, 79quater, 80-81
+TITRE V. - DISPOSITIONS MODIFICATIVES, TRANSITOIRES, ABROGATOIRES ET FINALES.
+Art. 81/1, 81/2, 82-94, 94/1, 95
+Annexe.
+Art. N
+
+Texte
+TITRE I. - DISPOSITIONS GENERALES.
+
+CHAPITRE I. - (DEFINITIONS). <L 1996-07-15/33, art. 2, 012; En vigueur : 22-10-1996>
+
+Article 1.<L 1996-07-15/33, art. 3, 012; En vigueur : 22-10-1996> [5 § 1er.]5 Pour l'application de la présente loi, il faut entendre par :
+1° étranger : quiconque ne fournit pas la preuve qu'il possède la nationalité belge;
+2° le Ministre : le Ministre qui a l'accès au territoire, le séjour, l'établissement et l'éloignement des étrangers dans ses compétences;
+[1 3° ressortissant d'un pays tiers : toute personne qui n'est ni un citoyen de l'Union, ni une personne jouissant du droit communautaire à la libre circulation tel que défini à l'article 2, point 5, du Code frontières Schengen;
+4° séjour illégal : la présence sur le territoire d'un étranger qui ne remplit pas ou ne remplit plus les conditions d'accès au territoire ou de séjour;
+5° retour : le fait pour le ressortissant d'un pays tiers de rentrer, que ce soit par obtempération volontaire après avoir fait l'objet d'une décision d'éloignement ou en y étant forcé, dans son pays d'origine ou dans un pays de transit conformément à des accords de réadmission communautaires ou bilatéraux ou dans un autre pays tiers dans lequel le ressortissant concerné décide de retourner volontairement et sur le territoire duquel il est autorisé ou admis au séjour;
+6° décision d'éloignement : la décision constatant l'illégalité du séjour d'un étranger et imposant une obligation de retour;
+7° éloignement : l'exécution de la décision d'éloignement, à savoir le transfert physique hors du territoire;
+8° [4 interdiction d'entrée : la décision qui peut accompagner une décision d'éloignement et qui interdit, pendant une durée déterminée, [13 ou à vie]13 l'entrée et le séjour, soit sur le territoire du Royaume, soit sur le territoire de tous les Etats membres, en ce compris celui du Royaume;]4
+9° départ volontaire : le fait de quitter le territoire dans le délai imparti fixé à cette fin dans la décision d'éloignement;
+10° retour volontaire : retour d'une personne dans son pays d'origine ou dans un pays tiers sur le territoire duquel elle est admise à séjourner, suite à une décision autonome de faire appel à un programme d'assistance au retour mis en place par les autorités du pays d'accueil;
+11° [5 risque de fuite : le fait qu'il existe des raisons de croire qu'un étranger qui fait l'objet d'une procédure d'éloignement, d'une procédure pour l'octroi de la protection internationale ou d'une procédure de détermination de ou de transfert vers l'Etat responsable du traitement de la demande de protection internationale, prendra la fuite, eu égard aux critères énumérés au § 2;]5
+12° personne vulnérable : les mineurs accompagnés, les mineurs non accompagnés, les personnes handicapées, les personnes âgées, les femmes enceintes, les parents isolés accompagnés d'enfants mineurs et les personnes qui ont été victimes de torture, de viol ou d'une autre forme grave de violence psychologique, physique ou sexuelle;
+13° décision 2004/573/CE : la décision du Conseil du 29 avril 2004 relative à l'organisation de vols communs pour l'éloignement, à partir du territoire de deux Etats membres ou plus, de ressortissants de pays tiers faisant l'objet de mesures d'éloignement sur le territoire de deux Etats membres ou plus;
+14° étranger identifié : tout étranger
+- titulaire d'un document de voyage valable, d'un passeport valable ou d'une pièce d'identité valable, ou
+- qui a été reconnu comme ressortissant par l'autorité nationale de son pays, qui s'est déclarée prête à délivrer un laissez-passer, ou
+- qui relève de la catégorie de nationalités pour lesquelles le ministre peut lui-même délivrer un laissez-passer;]1
+[2 15° [7 ...]7]2
+[3 16° [14 ...]14;
+17° [6 SIS: le système d'information Schengen visé par [10 ...]10 le règlement (UE) 2018/1860 du Parlement européen et du Conseil du 28 novembre 2018 relatif à l'utilisation du système d'information Schengen aux fins du retour des ressortissants de pays tiers en séjour irrégulier et le règlement (UE) 2018/1861 du Parlement européen et du Conseil du 28 novembre 2018 sur l'établissement, le fonctionnement et l'utilisation du système d'information Schengen (SIS) dans le domaine des vérifications aux frontières, modifiant la convention d'application de l'accord de Schengen et modifiant et abrogeant le règlement (CE) n° 1987/2006;]6]3
+[4 18° Banque de données Nationale Générale : la banque de données policière visée à l'article 44/7, de la loi du 5 août 1992 sur la fonction de police;]4
+[5 19° décision finale dans le cadre d'une demande de protection internationale : toute décision établissant si l'étranger se voit accorder le statut de réfugié ou le statut conféré par la protection subsidiaire et qui n'est plus susceptible d'un recours formé [14 dans le cadre de la loi relative au Conseil du contentieux des étrangers]14, que ce recours ait ou n'ait pas pour effet de permettre au demandeur de demeurer sur le territoire en attendant son aboutissement;
+20° demande ultérieure de protection internationale : toute demande ultérieure de protection internationale présentée après qu'une décision finale a été prise sur une demande précédente, en ce compris les décisions prises sur la base de l'article 57/6/5, § 1er, 1 °, 2 °, 3 °, 4 °, 5 °, 7 ° et 8 °;]5
+[7 21° "visa de transit aéroportuaire" : le visa qui est requis en vertu du Code des visa pour passer par la zone internationale de transit des aéroports situés sur le territoire et qui est délivré conformément audit Code;
+22° "visa de court séjour" : le visa qui est requis pour transiter ou pour séjourner sur le territoire pendant une durée maximale de nonante jours, en vertu du règlement (UE) 2018/1806 du Parlement européen et du Conseil du 14 novembre 2018 fixant la liste des pays tiers dont les ressortissants sont soumis à l'obligation de visa pour franchir les frontières extérieures des Etats membres et la liste de ceux dont les ressortissants sont exemptés de cette obligation, et qui est délivré conformément au Code des visas ;
+23° "visa de long séjour" : le visa qui, conformément à l'article 18, de la Convention de Schengen, est requis pour séjourner plus de nonante jours sur le territoire et qui permet à son titulaire d'attester qu'il a été autorisé ou admis à séjourner plus de nonante jours sur le territoire, conformément aux dispositions légales et réglementaires applicables ;
+24° "Code des visas" : le règlement (CE) n° 810/2009 du Parlement européen et du Conseil du 13 juillet 2009 établissant un code communautaire des visas (code des visas);
+25° "Code frontières Schengen" : règlement (UE) 2016/399 du parlement européen et du conseil du 9 mars 2016 concernant un code de l'Union relatif au régime de franchissement des frontières par les personnes (code frontières Schengen);
+26° "Convention de Schengen" : la convention d'application de l'accord de Schengen du 14 juin 1985 entre les gouvernements des Etats de l'Union économique Benelux, de la République fédérale d'Allemagne et de la République française relatif à la suppression graduelle des contrôles aux frontières communes;]7
+[8 27° l'accord de coopération du 2 février 2018 : l'accord de coopération du 2 février 2018 entre l'Etat fédéral, la Région wallonne, la Région flamande, la Région de Bruxelles-Capitale et la Communauté germanophone portant sur la coordination des politiques d'octroi d'autorisations de travail et d'octroi du permis de séjour, ainsi que les normes relatives à l'emploi et au séjour des travailleurs étrangers;
+28° l'accord de coopération du 6 décembre 2018 : l'accord de coopération du 6 décembre 2018 entre l'Etat fédéral, la Région wallonne, la Région flamande, la Région de Bruxelles-Capitale et la Communauté germanophone portant exécution de l'accord de coopération du 2 février 2018 entre l'Etat fédéral, la Région wallonne, la Région flamande, la Région de Bruxelles-Capitale et la Communauté germanophone portant sur la coordination des politiques d'octroi d'autorisations de travail et d'octroi du permis de séjour, ainsi que les normes relatives à l'emploi et au séjour des travailleurs étrangers;
+29° autorité régionale compétente : l'autorité régionale ou communautaire qui, conformément aux décrets, ordonnances et arrêtés régionaux ou communautaires, a l'occupation des travailleurs étrangers dans ses attributions;]8
+[9 30° l'accord de retrait : l'accord sur le retrait du Royaume-Uni de Grande-Bretagne et d'Irlande du Nord de l'Union européenne et de la Communauté européenne de l'énergie atomique (2019/C 384 I/01) ;
+31° bénéficiaire de l'accord de retrait : la personne visée à l'article 10 de l'accord de retrait;]9
+[12 32° EES: le système d'entrée/de sortie prévu dans le règlement (UE) 2017/2226 du Parlement européen et du Conseil du 30 novembre 2017 portant création d'un système d'entrée/de sortie (EES) pour enregistrer les données relatives aux entrées, aux sorties et aux refus d'entrée concernant les ressortissants de pays tiers qui franchissent les frontières extérieures des Etats membres et portant détermination des conditions d'accès à l'EES à des fins répressives, et modifiant la convention d'application de l'accord de Schengen et les règlements (CE) n° 767/2008 et (UE) n° 1077/2011 (ci-après: règlement (UE) 2017/2226)]12;
+[11 33° centre fermé: le lieu visé à l'article 74/8, §§ 1er et 2, géré par l'Office des Etrangers et destiné à l'accueil des étrangers qui font l'objet d'une mesure de maintien administratif;]11
+[11 34° lieu d'hébergement: le lieu visé à l'article 74/8, §§ 1er et 2, géré par l'Office des Etrangers, adapté aux besoins des familles avec enfants mineurs, qui peut être quitté dans les conditions déterminées par le Roi, et qui est destiné à l'accueil des familles avec enfants mineurs qui font l'objet d'une mesure de maintien administratif]11;
+[14 36° règlement (UE) 2024/1347: le règlement (UE) 2024/1347 du Parlement européen et du Conseil du 14 mai 2024 concernant les normes relatives aux conditions que doivent remplir les ressortissants des pays tiers ou les apatrides pour pouvoir bénéficier d'une protection internationale, à un statut uniforme pour les réfugiés ou les personnes pouvant bénéficier de la protection subsidiaire et au contenu de cette protection, modifiant la directive 2003/109/CE du Conseil et abrogeant la directive 2011/95/UE du Parlement européen et du Conseil;
+37° règlement (UE) 2024/1348: le règlement (UE) 2024/1348 du Parlement européen et du Conseil du 14 mai 2024 instituant une procédure commune en matière de protection internationale dans l'Union et abrogeant la directive 2013/32/UE;
+38° règlement (UE) 2024/1349: le règlement (UE) 2024/1349 du Parlement européen et du Conseil du 14 mai 2024 instituant une procédure de retour à la frontière et modifiant le règlement (UE) 2021/1148;
+39° règlement (UE) 2024/1351: le règlement (UE) 2024/1351 du Parlement européen et du Conseil du 14 mai 2024 relatif à la gestion de l'asile et de la migration, modifiant les règlements (UE) 2021/1147 et (UE) 2021/1060 et abrogeant le règlement (UE) n° 604/2013;
+40° règlement (UE) 2024/1356: le règlement (UE) 2024/1356 du Parlement européen et du Conseil du 14 mai 2024 établissant le filtrage des ressortissants de pays tiers aux frontières extérieures et modifiant les règlements (CE) n° 767/2008, (UE) 2017/2226, (UE) 2018/1240 et (UE) 2019/817;
+41° règlement (UE) 2024/1358: le règlement (UE) 2024/1358 du Parlement européen et du Conseil du 14 mai 2024 relatif à la création d'"Eurodac" pour la comparaison des données biométriques aux fins de l'application efficace des règlements (UE) 2024/1351 et (UE) 2024/1350 du Parlement européen et du Conseil et de la directive 2001/55/CE du Conseil et aux fins de l'identification des ressortissants de pays tiers et apatrides en séjour irrégulier, et relatif aux demandes de comparaison avec les données d'Eurodac présentées par les autorités répressives des Etats membres et par Europol à des fins répressives, modifiant les règlements (UE) 2018/1240 et (UE) 2019/818 du Parlement européen et du Conseil et abrogeant le règlement (UE) 603/2013 du Parlement européen et du Conseil;
+42° filtrage: le filtrage des ressortissants de pays tiers tel que prévu à l'article 1er du règlement (UE) 2024/1356;
+43° autorité de filtrage: l'autorité belge compétente visée à l'article 2, 10), du règlement (UE) 2024/1356;
+44° Eurodac: le système prévu par le règlement (UE) 2024/1358;
+45° apatride: une personne qu'aucun Etat ne considère comme son ressortissant par application de sa législation]14.
+[5 § 2. Le risque de fuite visé au paragraphe 1er, 11°, doit être actuel et réel. Il est établi au terme d'un examen individuel et sur la base d'un ou plusieurs critères objectifs suivants, en tenant compte de l'ensemble des circonstances propres à chaque cas :
+1° l'intéressé n'a pas introduit de demande de séjour à la suite de son entrée illégale ou durant son séjour illégal ou n'a pas présenté sa demande de protection internationale dans le délai prévu par la présente loi;
+2° l'intéressé a utilisé des informations fausses ou trompeuses ou des documents faux ou falsifiés, ou a recouru à la fraude ou a employé d'autres moyens illégaux dans le cadre d'une procédure de protection internationale, de séjour, d'éloignement ou de refoulement ;
+3° l'intéressé ne collabore pas ou n'a pas collaboré dans ses rapports avec les autorités chargées de l'exécution et/ou de la surveillance du respect de la réglementation relative à l'accès au territoire, au séjour, à l'établissement et à l'éloignement des étrangers;
+4° l'intéressé a manifesté sa volonté de ne pas se conformer ou a déjà contrevenu à l'une des mesures suivantes :
+a) une mesure de transfert, de refoulement ou d'éloignement;
+b) une interdiction d'entrée ni levée ni suspendue;
+c) une mesure moins coercitive qu'une mesure privative de liberté visant à garantir son transfert, son refoulement ou son éloignement, qu'elle soit restrictive de liberté ou autre;
+d) une mesure restrictive de liberté visant à garantir l'ordre public ou la sécurité nationale;
+e) une mesure équivalente aux mesures visées aux a), b), c) ou d), prise par un autre Etat membre;
+5° l'intéressé fait l'objet d'une interdiction d'entrée dans le Royaume et/ou dans un autre Etat membre, ni levée ni suspendue;
+6° l'intéressé a introduit une nouvelle demande de séjour ou de protection internationale immédiatement après avoir fait l'objet d'une décision de refus d'entrée ou de séjour ou mettant fin à son séjour ou immédiatement après avoir fait l'objet d'une mesure de refoulement ou d'éloignement;
+7° alors qu'il a été interrogé sur ce point, l'intéressé a dissimulé avoir déjà donné ses empreintes digitales dans un autre Etat lié par [14 le règlement (UE) 2024/1351]14;
+8° l'intéressé a introduit plusieurs demandes de protection internationale et/ou de séjour, dans le Royaume ou dans un ou plusieurs autres Etats membres, qui ont donné lieu à une décision négative ou qui n'ont pas donné lieu à la délivrance d'un titre de séjour;
+9° alors qu'il a été interrogé sur ce point, l'intéressé a dissimulé avoir déjà introduit précédemment une demande de protection internationale dans un autre Etat lié par [14 le règlement (UE) 2024/1351]14;
+10° l'intéressé a déclaré ou il ressort de son dossier qu'il est venu dans le Royaume à des fins autres que celles pour lesquelles il a introduit une demande de protection internationale ou de séjour;
+11° l'intéressé fait l'objet d'une amende pour avoir introduit un recours manifestement abusif auprès du Conseil du Contentieux des Etrangers.]5
+----------
+(1)<L 2012-01-19/12, art. 3, 063; En vigueur : 27-02-2012>
+(2)<L 2012-05-15/16, art. 3, 067; En vigueur : 10-09-2012>
+(3)<L 2014-03-19/24, art. 3, 076; En vigueur : 15-05-2014>
+(4)<L 2017-02-24/21, art. 3, 094; En vigueur : 29-04-2017>
+(5)<L 2017-11-21/17, art. 4, 100; En vigueur : 22-03-2018>
+(6)<L 2019-05-08/12, art. 4, 106; En vigueur : 19-07-2019>
+(7)<L 2019-05-05/21, art. 3, 107; En vigueur : 01-09-2019>
+(8)<L 2020-07-31/24, art. 3, 109; En vigueur : 01-09-2020>
+(9)<L 2020-12-16/06, art. 4, 110; En vigueur : 23-12-2020>
+(10)<L 2023-03-02/03, art. 19, 118; En vigueur : 19-03-2023>
+(11)<L 2024-05-12/29, art. 4, 124; En vigueur : 20-07-2024>
+(12)<L 2023-03-19/09, art. 3, 131; En vigueur : 12-10-2025>
+(13)<L 2026-04-30/10, art. 3, 133; En vigueur : 23-05-2026>
+(14)<L 2026-06-16/01, art. 4, 135; En vigueur : 12-06-2026>
+
+CHAPITRE Ierbis. [1 - Introduction d'une demande de séjour.]1
+----------
+(1)<L 2016-12-18/16, art. 2, 095; En vigueur : 26-01-2017>
+
+Art. 1er/1.[1 § 1er. Sous peine d'irrecevabilité de la demande d'autorisation ou d'admission au séjour visée au paragraphe 2, l'étranger s'acquitte d'une redevance couvrant les frais administratifs.
+Le Roi fixe, par arrêté délibéré en Conseil des ministres, le montant de la redevance ainsi que les modalités de sa perception.
+Chaque année, le montant est adapté en fonction de l'évolution de l'indice des prix à la consommation.
+§ 2. Les demandes d'autorisation et d'admission au séjour visées au paragraphe 1er sont les demandes introduites sur la base de:
+1° l'article 9 à l'exception des demandes introduites par les bénéficiaires de l'accord créant une association entre la Communauté économique européenne et la Turquie signé le 12 septembre 1963;
+2° l'article 9bis;
+3° l'article 10 à l'exception des demandes introduites par les bénéficiaires de l'accord créant une association entre la Communauté économique européenne et la Turquie signé le 12 septembre 1963 [10 , par les membres de la famille visés à l'article 10, § 1er, alinéa 1er, 4°, et par les membres de la famille visés à l'article 10, § 1er, alinéa 1er, 5°, pour autant que les liens familiaux existaient déjà avant l'arrivée de l'étranger rejoint dans le Royaume]10]9;
+4° l'article 10bis à l'exception des demandes introduites par les bénéficiaires de l'accord créant une association entre la Communauté économique européenne et la Turquie signé le 12 septembre 1963 [2 ...]2;
+5° l'article 19, § 2, à l'exception des demandes introduites par les bénéficiaires de l'accord créant une association entre la Communauté économique européenne et la Turquie signé le 12 septembre 1963 et par les bénéficiaires du statut de réfugié et les membres de leur famille;
+6° l'article 40ter à l'exception des demandes introduites par les membres de la famille d'un Belge qui a exercé [3 son droit à la libre circulation]3, conformément au Traité sur l'Union Européenne et au Traité sur le fonctionnement de l'Union Européenne;
+7° [7 l'article 60]7;
+8° l'article 61/7;
+9° [8 l'article 61/12;]8
+10° [5 l'article 61/26]5;
+[4 11° l'article 61/25-1;]4
+[5 12° l'article 61/29-4;
+[6 13° l'article 61/34;
+14° l'article 61/45;]6]5
+[8 15° l'article 61/13/8;
+16° l'article 61/13/12;
+17° l'article 61/13/18;
+18° l'article 61/13/27.]8]1
+
+(NOTE : par son arrêt n° 18/2018 du 22-02-2018 (M.B. 23-03-2018, p. 28996), la Cour constitutionnelle a annulé le § 2 du présent article, en ce qu'il ne prévoit pas d'exonération pour les demandes de permis de séjour introduites par des apatrides reconnus dont il est établi qu'ils ont perdu leur nationalité contre leur gré et qui démontrent qu'ils ne peuvent obtenir aucun titre de séjour légal et durable dans un autre Etat avec lequel ils auraient des liens.)
+----------
+(1)<Inséré par L 2014-12-19/07, art. 196, 079; En vigueur : 08-01-2015>
+(2)<L 2016-06-01/07, art. 3, 091; En vigueur : 08-07-2016>
+(3)<L 2016-12-18/16, art. 3, 095; En vigueur : 26-01-2017>
+(4)<L 2018-07-22/12, art. 3, 104; En vigueur : 24-12-2018>
+(5)<L 2019-05-05/21, art. 4, 107; En vigueur : 01-09-2019>
+(6)<L 2020-07-31/24, art. 4, 109; En vigueur : 01-09-2020>
+(7)<L 2021-07-11/10, art. 3, 112; En vigueur : 15-08-2021>
+(8)<L 2022-08-21/05, art. 3, 116; En vigueur : 19-11-2022>
+(9)<L 2024-03-10/03, art. 3, 127; En vigueur : 01-09-2024>
+(10)<L 2025-07-18/29, art. 3, 129; En vigueur : 18-08-2025>
+
+Art. 1er/2.[1 § 1er. L'étranger qui introduit une demande afin d'être autorisé ou admis à séjourner dans le Royaume au-delà du terme fixé à l'article 6, est informé du fait que ses efforts d'intégration seront contrôlés et signe une déclaration par laquelle il indique comprendre les valeurs et les normes fondamentales de la société et qu'il agira en conformité avec celles-ci.
+L'alinéa 1er ne s'applique pas aux demandes de protection internationale aux étrangers reconnus réfugiés ou bénéficiaires de la protection subsidiaire, aux demandes d'autorisation ou d'admission au séjour introduites par un étranger reconnu apatride par les autorités belges compétentes ou par les bénéficiaires de l'accord créant une association entre la Communauté économique européenne et la Turquie signé le 12 septembre 1963 ou aux demandes introduites sur la base de :
+1° [8 l'article 10, § 1er, alinéa 1er, 4° et 5°]8;
+2° [8 ...]8;
+3° l'article 19, § 2, alinéa 2;
+4° l'article 40;
+5° l'article 40bis;
+6° l'article 40ter pour autant qu'il s'agisse des membres de la famille d'un Belge qui a exercé son droit à la libre circulation, conformément au Traité sur l'Union européenne et au Traité sur le fonctionnement de l'Union européenne;
+[7 article 57/37]7;
+7° [4 les articles 60 et 61/1/9]4;
+8° les articles 61/2 à 61/4;
+9° l'article 61/7;
+[2 10° l'article 61/26;
+11° l'article 61/29-4;
+12° [5 l'article 10bis, §§ 4 à 6;]5
+[3 13° l'article 61/34;
+14° l'article 61/45;]3
+[5 15° l'article 61/12;
+16° l'article 61/13/8;
+17° l'article 61/13/12;
+18° l'article 61/13/18;
+19° l'article 61/13/27;]5
+[6 20° l'article 47/5.]6
+Le Roi fixe, par arrêté délibéré en Conseil des ministres, le modèle de déclaration visée à l'alinéa 1er, et dont le contenu est défini dans un accord de coopération conclu avec les Communautés, en application de l'article 92bis, § 1er, de la loi spéciale du 8 août 1980 de réformes institutionnelles.
+Le Roi prévoit la traduction de cette déclaration dans une langue que l'étranger comprend. Il fixe les modalités de signature de celle-ci.
+§ 2. Sous peine d'irrecevabilité de la demande visée au § 1er, alinéa 1er, la déclaration signée par l'étranger est transmise avec sa demande.
+§ 3. L'étranger visé au § 1er, alinéa 1er apporte dans le premier délai de son séjour accordé pour une durée limitée, la preuve qu'il est prêt à s'intégrer dans la société.
+Dans les quatre années à compter de l'expiration d'un délai d'un an après l'octroi de l'autorisation de son séjour limité ou illimité ou à compter de l'expiration d'un délai d'un an après l'admission au séjour, le ministre ou son délégué peut mettre fin au séjour s'il constate aussi que l'étranger visé au § 1er, alinéa 1er n'a pas fourni d'efforts raisonnables d'intégration. Le ministre ou son délégué peut, à cet effet, se faire communiquer par l'étranger tous les renseignements et preuves utiles.
+Le ministre ou son délégué apprécie les efforts d'intégration de l'étranger dans la société en tenant compte en particulier des critères suivants :
+- suivre un cours d'intégration prévu par l'autorité compétente de sa résidence principale;
+- exercer une activité en tant que travailleur salarié, fonctionnaire ou travailleur indépendant;
+- produire un diplôme, un certificat ou une preuve d'inscription, délivré par un établissement d'enseignement organisé, reconnu ou subventionné;
+- suivre une formation professionnelle reconnue par une autorité compétente;
+- connaître la langue du lieu de l'inscription au registre de la population ou au registre des étrangers;
+- le passé judiciaire;
+- la participation active à la vie associative.
+Lorsque le ministre ou son délégué envisage de prendre une décision de fin de séjour telle que visée à l'alinéa 2, il tient compte de la nature et de la solidité des liens familiaux de l'intéressé, de la durée de son séjour dans le Royaume ainsi que de l'existence d'attaches familiales, culturelles ou sociales avec son pays d'origine.
+§ 4. Le mineur étranger, les personnes visées aux articles 388, 491 et 492 du Code civil et les personnes gravement malades sont dispensés des obligations imposées aux paragraphes 1er à 3.]1
+
+(NOTE : par son arrêt n° 126/2018 du 04-10-2018 (M.B. 22-10-2018, p. 80121), la Cour constitutionnelle a annulé les mots « le passé judiciaire », contenus dans l'article 1/2, § 3, alinéa 3, sixième tiret, inséré par l'article 4 de la loi du 18 décembre 2016)
+
+----------
+(1)<Inséré par L 2016-12-18/16, art. 4, 095; En vigueur : 26-01-2017>
+(2)<L 2019-05-05/21, art. 5, 107; En vigueur : 01-09-2019>
+(3)<L 2020-07-31/24, art. 5, 109; En vigueur : 01-09-2020>
+(4)<L 2021-07-11/10, art. 4, 112; En vigueur : 15-08-2021>
+(5)<L 2022-08-21/05, art. 4, 116; En vigueur : 19-11-2022>
+(6)<L 2022-11-29/06, art. 3, 117; En vigueur : 30-12-2022>
+(7)<L 2024-03-10/02, art. 2, 126; En vigueur : 01-09-2024>
+(8)<L 2025-07-18/29, art. 4, 129; En vigueur : 18-08-2025>
+
+CHAPITRE Ierter. [1 - Dispositions générales relatives à l'introduction d'une demande de séjour et d'une demande de protection internationale ou temporaire.]1
+----------
+(1)<Inséré par L 2017-02-24/21, art. 4, 094; En vigueur : 29-04-2017>
+
+Art. 1er/3. [1 L'introduction d'une demande de séjour ou d'une demande de protection internationale ou de protection temporaire par un étranger qui fait déjà l'objet d'une mesure d'éloignement ou de refoulement, ne modifie en rien l'existence de cette mesure.
+Si, conformément aux dispositions de la présente loi et de ses arrêtés d'exécution, l'intéressé peut rester provisoirement sur le territoire dans l'attente d'une décision relative à cette demande de séjour ou cette demande de protection internationale ou de protection temporaire, le caractère exécutoire de la mesure d'éloignement ou de refoulement est suspendu.]1
+----------
+(1)<Inséré par L 2017-02-24/21, art. 5, 094; En vigueur : 29-04-2017>
+
+CHAPITRE II. [1 Accès au territoire, court séjour, séjour illégal, filtrage et Eurodac]1
+----------
+(1)<L 2026-06-16/01, art. 6, 135; En vigueur : 12-06-2026>
+
+Art. 2. <L 1996-07-15/33, art. 5, 012; En vigueur : 16-12-1996> Est autorisé à entrer dans le Royaume, l'étranger porteur :
+1° soit des documents requis en vertu d'un traité international, d'une loi ou d'un arrêté royal;
+2° soit d'un passeport valable ou d'un titre de voyage en tenant lieu, revêtu d'un visa ou d'une autorisation tenant lieu de visa, valable pour la Belgique, apposé par un représentant diplomatique ou consulaire belge ou par celui d'un Etat partie à une convention internationale relative au franchissement des frontières extérieures, liant la Belgique.
+Le Ministre ou son délégué peut autoriser à pénétrer en Belgique l'étranger qui n'est porteur d'aucun des documents prévus par l'alinéa précédent, sur la base de modalités déterminées par arrêté royal.
+
+Art. 2/1. [1 Il existe différents types de visas en fonction notamment de l'objet du voyage envisagé et de la durée envisagée du séjour.
+Des visas de court séjour et des visas de transit aéroportuaire sont délivrés conformément au Code des visas.
+Des visas de long séjour sont délivrés lorsque l'autorisation de séjour requise ou l'admission au séjour requise pour un séjour de plus de nonante jours sur le territoire a été accordée, conformément aux dispositions légales et réglementaires applicables.
+Sans préjudice des dispositions pertinentes de l'acquis de Schengen, le Roi peut préciser, par arrêté délibéré en Conseil des ministres, les règles relatives à la délivrance des visas, en ce compris celles relatives à leur abrogation et à leur annulation.]1
+----------
+(1)<Inséré par L 2019-05-05/21, art. 6, 107; En vigueur : 01-09-2019>
+
+Art. 2/2.[1 § 1er. Les autorités suivantes ont accès à l'EES :
+1° les autorités chargées du contrôle aux frontières, aux fins d'introduction, de modification et d'effacement des données ainsi que de consultation pour les finalités visées aux articles 23, 24, 25 et 27 du règlement (UE) 2017/2226;
+2° l'Office des étrangers, aux fins d'introduction, de modification et d'effacement des données ainsi que de consultation pour les finalités visées aux articles 24, [2 24bis,]2 25, 26 et 27 de ce règlement;
+3° les représentations diplomatiques et consulaires belges, aux fins de consultation pour les finalités visées aux articles 24 et 25 de ce règlement;
+4° les services de police tels que visés à l'article 2, 2°, de la loi du 7 décembre 1998 organisant un service de police intégré, structuré à deux niveaux, aux fins de consultation pour les finalités visées aux articles 26, 27 et 29 de ce règlement.
+Dans la mesure où ces autorités ou d'autres autorités que celles visées à l'alinéa 1er peuvent être considérées comme des autorités frontalières, des autorités chargées des visas ou des autorités chargées de l'immigration au sens de l'article 9 du règlement (UE) 2017/2226 ou comme des autorités compétentes pour la prévention et la détection des infractions terroristes et des autres infractions pénales graves, et pour les enquêtes en la matière, au sens de l'article 29 de ce règlement, le Roi peut également les habiliter à consulter l'EES ou étendre les finalités de cette consultation.
+Les autorités visées aux alinéas 1er et 2 déterminent quels membres de leur personnel ont accès au système et pour quelles finalités parmi celles mentionnées. Ces membres du personnel ont uniquement accès aux données à caractère personnel qu'ils doivent connaître en fonction du service dont ils font partie et de leurs tâches.
+§ 2. La police intégrée, structurée à deux niveaux, est le point d'accès central visé à l'article 29, paragraphe 3, du règlement (UE) 2017/2226.
+§ 3. Pour les traitements de données stockées dans l'EES, visés au § 1er, alinéa 1er, 1° et 4°, le ministre de l'Intérieur est le responsable du traitement.
+Pour les traitements de données stockées dans l'EES, effectués par d'autres autorités que celles visées au § 1er, alinéa 1er, 1° et 4°, le responsable du traitement est le ministre sous la compétence duquel l'autorité concernée est placée.
+Les ministres visés dans ce paragraphe peuvent se faire représenter en tant que responsable du traitement par leurs administrations respectives. Les coordonnées des responsables du traitement sont publiées conformément aux modalités définies par le Roi.]1
+----------
+(1)<Inséré par L 2023-03-19/09, art. 4, 131; En vigueur : 12-10-2025>
+(2)<L 2026-06-16/01, art. 5, 135; En vigueur : 12-06-2026>
+
+Art. 3.[1 Sauf dérogations prévues par un traité international ou par la loi, l'entrée peut être refusée à l'étranger qui se trouve dans l'un des cas suivants :
+1° s'il est appréhendé dans la zone de transit aéroportuaire sans être porteur des documents requis par l'article 2;
+2° s'il tente de pénétrer dans le Royaume sans être porteur des documents requis par l'article 2;
+3° s'il ne peut pas présenter, le cas échéant, les documents justifiant l'objet et les conditions du séjour envisagé;
+4° s'il ne dispose pas des moyens de subsistance suffisants, tant pour la durée du séjour envisagé que pour le retour dans le pays de provenance ou le transit vers un Etat tiers dans lequel son admission est garantie, et n'est pas en mesure d'acquérir légalement ces moyens;
+5° s'il est signalé aux fins de non-admission [2 et d'interdiction de séjour dans le SIS]2 ou dans la Banque de données Nationale Générale;
+6° s'il est considéré comme pouvant compromettre les relations internationales de la Belgique ou d'un Etat partie à une convention internationale relative au franchissement des frontières extérieures, liant la Belgique;
+7° s'il est considéré comme pouvant compromettre la tranquillité publique, l'ordre public [3 , la sécurité nationale ou la santé publique]3;
+8° s'il a été renvoyé ou expulsé du Royaume depuis moins de dix ans, lorsque la mesure n'a pas été suspendue ou rapportée;
+9° s'il fait l'objet d'une interdiction d'entrée ni levée ni suspendue;
+10° s'il est atteint d'une des maladies énumérées à l'annexe de la présente loi;
+[4 11° lorsqu'il refuse de fournir des données biométriques si celles-ci sont nécessaires pour créer le dossier individuel dans l'EES ou pour procéder aux vérifications aux frontières.]4
+La décision est prise par le ministre ou, sauf dans le cas visé à l'alinéa 1er, 6°, par son délégué. Les autorités chargées du contrôle aux frontières peuvent prendre la décision elles-mêmes dans les cas visés à l'alinéa 1er, 1° ou 2°.
+Lorsqu'il est envisagé de refuser l'entrée à un étranger qui est porteur d'un visa valable, l'autorité compétente décide également s'il y a lieu de l'annuler ou de l'abroger.
+[4 Lorsqu'il est décidé de refuser l'entrée à un étranger qui relève du champ d'application de l'EES, les autorités chargées du contrôle aux frontières créent une fiche de refus d'entrée dans l'EES conformément à l'article 18 du règlement (UE) 2017/2226. Si aucun dossier antérieur n'a été enregistré dans l'EES pour cet étranger, les autorités chargées du contrôle aux frontières créent également un dossier individuel dans l'EES pour celui-ci.]4
+Les autorités chargées du contrôle aux frontières refoulent l'étranger auquel l'entrée est refusée et, le cas échéant, annulent ou abrogent le visa.
+Le Roi peut, par arrêté délibéré en Conseil des ministres, préciser les conditions et les modalités d'application du présent article.]1
+----------
+(1)<L 2017-02-24/21, art. 6, 094; En vigueur : 29-04-2017>
+(2)<L 2019-05-08/12, art. 6, 106; En vigueur : 19-07-2019>
+(3)<L 2023-11-23/12, art. 11, 119; En vigueur : 06-12-2023>
+(4)<L 2023-03-19/09, art. 5, 131; En vigueur : 31-03-2026>
+
+Art. 3bis.<Inséré par L 1996-07-15/33, art. 7, En vigueur : 17-01-1997> Sans préjudice d'autres dispositions de la présente loi, la preuve des moyens de subsistance suffisants peut être apportée par la production d'une attestation de prise en charge, dans laquelle une personne physique qui dispose de ressources suffisantes et qui possède la nationalité belge ou qui est autorisée ou admise à séjourner en Belgique pour une durée illimitée, s'engage à l'égard de l'étranger, de l'Etat belge et de tout centre public d'aide sociale compétent, à prendre en charge pendant un délai de deux ans les soins de santé, les frais de séjour et de rapatriement de l'étranger.
+La personne qui a signé l'engagement de prise en charge est, avec l'étranger, solidairement responsable du paiement des frais de soins de santé, de séjour et de rapatriement de ce dernier.
+Le bourgmestre de la commune dans le registre de la population ou des étrangers de laquelle la personne qui a signé l'engagement de prise en charge est inscrite, ou son délégué, est tenu de légaliser la signature apposée au bas de l'engagement de prise en charge, si les conditions de l'authentification de la signature sont remplies.
+Le bourgmestre ou son délégué peut indiquer, dans un avis adressé au Ministre ou à son délégué, si la personne qui a signé l'engagement de prise en charge dispose de ressources suffisantes. Cet avis n'est pas contraignant.
+[1 Le Roi, par arrêté délibéré en Conseil des ministres, peut préciser ou compléter les règles applicables à l'engagement de prise en charge dont notamment :
+1° les modalités de la récupération des sommes à charge de la personne qui a souscrit l'engagement;
+2° les conditions que doit remplir la personne qui souscrit l'engagement de prise en charge et les modalités de preuve de ces conditions;
+3° les cas dans lesquels la personne qui a souscrit l'engagement de prise en charge est déchargée de sa responsabilité anticipativement;
+4° les cas dans lesquels et les conditions auxquelles la validité de l'engagement de prise en charge est subordonnée à l'obligation de verser une somme auprès de la Caisse des dépôts et consignations ou de fournir une garantie bancaire.]1
+[1 ...]1
+----------
+(1)<L 2016-05-04/29, art. 5, 089; En vigueur : 07-07-2016>
+
+Art. 4. La décision de refoulement (...) indique la disposition de l'article 3 qui est appliquée. <L 1996-07-15/33, art. 8, 012; En vigueur : 1996-12-16>
+
+Art. 4bis. <inséré par L 2007-04-25/49, art. 3, En vigueur : indéterminée et au plus tard 01-06-2008> § 1er. Aux frontières extérieures au sens des conventions internationales relatives au franchissement des frontières extérieures liant la Belgique, ou de la réglementation européenne, l'entrée et la sortie du Royaume doivent avoir lieu par un point de passage autorisé, pendant les heures d'ouvertures fixées, telles qu'indiquées par ces points de passage autorisés.
+§ 2. L'étranger est tenu de présenter spontanément ses documents de voyage tant à l'entrée qu'à la sortie du Royaume.
+§ 3. Le ministre ou son délégué peut infliger une amende administrative de 200 euros à l'étranger qui ne respecte pas l'obligation prévue au § 1er.
+Si la violation de l'obligation visée au § 1er est due à une négligence du transporteur, celui-ci est solidairement tenu avec l'étranger de payer l'amende infligée.
+La décision imposant l'amende administrative est exécutable immédiatement, nonobstant tout recours.
+La personne morale est civilement responsable du paiement de l'amende administrative imposée à ses dirigeants, à ses membres de la direction et à son personnel exécutif, à ses préposés ou à ses mandataires.
+L'amende administrative peut être payée au moyen de la consignation du montant dû à la Caisse des Dépôts et Consignations.
+§ 4. L'étranger ou le transporteur qui conteste la décision du ministre ou de son délégué, introduit dans un délai d'un mois à compter de la notification de la décision, un recours auprès du tribunal de première instance, par une requête.
+Si le tribunal de première instance déclare le recours recevable et fondé, la somme payée ou consignée est remboursée.
+Le tribunal de première instance doit statuer dans un délai d'un mois à compter de l'introduction de la demande écrite visée à l'alinéa 1er.
+Le texte de l'alinéa 1er est repris dans la décision imposant l'amende administrative.
+§ 5. Si l'étranger ou le transporteur reste en défaut de paiement de l'amende, la décision de l'agent compétent ou la décision passée en force de chose jugée du tribunal de première instance est portée à la connaissance de l'administration du Cadastre, de l'Enregistrement et des Domaines, en vue du recouvrement du montant de l'amende administrative.
+§ 6. Si l'étranger, le transporteur ou son représentant a consigné la somme de l'amende administrative à la Caisse des Dépôts et Consignations et s'il n'a pas introduit de recours auprès du tribunal de première instance dans le délai précité, la consignation donnée revient à l'Etat.
+
+Art. 5.[1 § 1er. Le ressortissant d'un pays tiers qui vient en Belgique pour un séjour n'excédant pas nonante jours et qui ne loge pas dans une maison d'hébergement soumise à la législation relative au contrôle des voyageurs communique son adresse de résidence dans les trois jours ouvrables de son entrée dans le Royaume, soit par voie électronique à l'Office des étrangers, soit en personne auprès de l'administration communale de son lieu de résidence. Le Roi peut dispenser certaines catégories d'étrangers de cette obligation.
+Le ressortissant d'un pays tiers visé à l'alinéa 1er, qui possède un titre de séjour ou un visa de longue durée délivré par un autre Etat membre, communique son adresse de résidence en personne auprès de l'administration communale de son lieu de résidence dans les trois jours ouvrables de son entrée dans le Royaume.
+Le Roi détermine les modalités de notification à l'Office des étrangers, ainsi que les modalités de notification auprès de l'administration communale et le modèle de l'attestation faisant foi de celle-ci. Quand l'administration communale délivre à l'étranger une telle attestation comme preuve de la notification, elle communique les données à caractère personnel qui y sont contenues à l'Office des étrangers.
+§ 2. L'Office des étrangers peut traiter les données à caractère personnel obtenues conformément au paragraphe 1er pour les finalités mentionnées dans l'article 2/2, § 1er, alinéa 1er, 2°, et notamment en vue de l'application de l'article 7.
+La durée de conservation administrative de ces données par l'Office des étrangers ou par la commune est de cinq ans. Leur destination finale est déterminée conformément à l'article 5 de la loi du 24 juin 1955 relative aux archives.]1
+----------
+(1)<L 2023-03-19/09, art. 6, 131; En vigueur : 10-04-2026>
+
+Art. 6.[1 Sauf dérogations prévues par un traité international, par la loi ou par un arrêté royal, l'étranger qui est entré régulièrement dans le Royaume ne peut y séjourner plus de nonante jours, à moins que le visa ou l'autorisation tenant lieu de visa, apposé sur son passeport ou sur le titre de voyage en tenant lieu, ne fixe une autre durée.
+Est considéré comme séjournant plus de nonante jours dans le Royaume, l'étranger qui séjourne plus de nonante jours sur toute période de cent-quatre-vingt jours, ce qui implique d'examiner la période de cent-quatre-vingt jours précédant chaque jour de séjour, sur le territoire des Etats parties à une convention internationale relative au franchissement des frontières extérieures, liant la Belgique.
+Pour l'application de l'alinéa 2, la date d'entrée est considérée comme le premier jour de séjour sur le territoire des Etats contractants et la date de sortie est considérée comme le dernier jour de séjour sur le territoire des Etats contractants. Les périodes de séjour autorisées sur base d'un titre de séjour ou d'un visa de long séjour ne sont pas prises en considération pour le calcul de la durée du séjour sur le territoire des Etats contractants.]1
+----------
+(1)<L 2016-05-04/29, art. 6, 089; En vigueur : 07-07-2016>
+
+Art. 6/1.{[1 § 1er. Un étranger présent sur le territoire du Royaume qui relève du champ d'application de l'EES et pour lequel aucun dossier individuel n'a été créé dans l'EES ou pour lequel il n'y a pas de dernière fiche pertinente d'entrée/de sortie, est présumé ne pas ou ne plus remplir les conditions de durée du séjour autorisé dans le Royaume, sauf si l'étranger apporte la preuve contraire.
+L'étranger peut introduire une demande de renversement de cette présomption auprès de l'administration communale de son lieu de résidence. Le ministre ou son délégué statue sur cette demande conformément à l'article 12 du Code frontières Schengen. Le Roi détermine le modèle de l'attestation qui est délivrée comme preuve du renversement de cette présomption.]1
+[2 § 2. Dans des circonstances particulières, l'étranger dispensé de l'obligation de visa dans le cas visé à l'article 14, paragraphe 8, du règlement (UE) 2017/2226 peut demander la création d'un dossier individuel dans l'EES et de la fiche d'entrée/de sortie. Cet étranger introduit la demande auprès de l'administration communale de son lieu de résidence avant l'échéance de la durée de validité de son titre de séjour. Le ministre ou son délégué statue et agit conformément à l'article 14, paragraphe 8, du règlement (UE) 2017/2226. Le Roi détermine le modèle de l'attestation qui est délivrée le cas échéant.]2
+----------
+(1)<Inséré par L 2023-03-19/09, art. 7, 131; En vigueur : 10-04-2026>
+(2)<Inséré par L 2023-03-19/09, art. 7, 131; En vigueur : 31-03-2026>
+
+Art. 6/2. [1 L'étranger peut demander une prolongation de son court séjour conformément à l'article 20, paragraphes 2 à 2quater, de la Convention de Schengen ou à l'article 33 du Code des visas. Sans préjudice de l'article 20, paragraphe 2bis, de la Convention de Schengen, cette demande est introduite auprès de l'administration communale du lieu où il séjourne et avant l'échéance de la durée autorisée de son séjour.
+Le ministre ou son délégué peut prolonger le séjour pour une période de maximum nonante jours. Le Roi détermine la procédure et le modèle de l'attestation qui, le cas échéant, sera délivrée comme preuve de la prolongation.]1
+----------
+(1)<Inséré par L 2023-03-19/09, art. 8, 131; En vigueur : 31-03-2026>
+
+Art. 7.<L 1996-07-15/33, art. 11, 012; En vigueur : 1996-12-16> [3 Sans préjudice de dispositions plus favorables contenues dans un traité international, le ministre ou son délégué peut, ou, dans les cas visés aux 1°, 2°, 5°, 9°, 11° ou 12°, le ministre ou son délégué doit donner à l'étranger, qui n'est ni autorisé ni admis à séjourner plus de trois mois ou à s'établir dans le Royaume, un ordre de quitter le territoire dans un délai déterminé ]3 :
+1° s'il demeure dans le Royaume sans être porteur des documents requis par l'article 2;
+2° s'il demeure dans le Royaume au-delà du délai fixé conformément à l'article 6, ou ne peut apporter la preuve que ce délai n'est pas dépassé;
+3° si, par son comportement, il est considéré comme pouvant compromettre l'ordre public ou la sécurité nationale;
+4° s'il est considéré par le Ministre [2 ...]2 comme pouvant compromettre les relations internationales de la Belgique ou d'un Etat partie à une convention internationale relative au franchissement des frontières extérieures, liant la Belgique;
+5° [2 s'il est signalé aux fins de non-admission [4 et d'interdiction de séjour dans le SIS]4 ou dans la Banque de données Nationale Générale;]2
+6° s'il ne dispose pas de moyens de subsistance suffisants, tant pour la durée du séjour envisagé que pour le retour dans le pays de provenance ou le transit vers un Etat tiers dans lequel son admission est garantie, et n'est pas en mesure d'acquérir légalement ces moyens;
+7° s'il est atteint d'une des maladies ou infirmités énumérées à l'annexe de la présente loi;
+8° s'il exerce une activité professionnelle indépendante ou en subordination sans être en possession de l'autorisation requise à cet effet;
+9° si, en application des conventions ou des accords internationaux liant la Belgique, [3 ou en application des accords bilatéraux en vigueur le 13 janvier 2009 entre les Etats membres de l'Union européenne et la Belgique,]3 il est remis aux autorités belges par les autorités des Etats contractants en vue de son éloignement du territoire de ces Etats;
+10° si, en application des conventions ou des accords internationaux liant la Belgique, [3 ou en application des accords bilatéraux en vigueur le 13 janvier 2009 entre les Etats membres de l'Union européenne et la Belgique,]3 il doit être remis par les autorités belges aux autorités des Etats contractants;
+11° s'il a été renvoyé ou expulsé du Royaume depuis moins de dix ans, lorsque la mesure n'a pas été suspendue ou rapportée;
+[1 12° si l'étranger fait l'objet d'une interdiction d'entrée ni suspendue ni levée;]1
+[4 13° si l'étranger fait l'objet d'une décision ayant pour effet de lui refuser le séjour ou de mettre fin à son séjour.]4
+[1 Sous réserve de l'application des dispositions du Titre IIIquater, le ministre ou son délégué peut, dans les cas visés à l'article 74/14, § 3, reconduire l'étranger à la frontière.
+A moins que d'autres mesures suffisantes mais moins coercitives puissent être appliquées efficacement, l'étranger peut être maintenu à cette fin, pendant le temps strictement nécessaire à l'exécution de la mesure, en particulier lorsqu'il existe un risque de fuite ou lorsque l'étranger évite ou empêche la préparation du retour ou la procédure d'éloignement, et sans que la durée de maintien ne puisse dépasser deux mois.
+[5 ...]5]1
+Le Ministre ou son délégué peut toutefois prolonger cette détention par période de deux mois, lorsque les démarches nécessaires en vue de l'éloignement de l'étranger ont été entreprises dans les sept jours ouvrables de la mise en détention de l'étranger, qu'elles sont poursuivies avec toute la diligence requise et qu'il subsiste toujours une possibilité d'éloigner effectivement l'étranger dans un délai raisonnable.
+Après une prolongation, la décision visée à l'alinéa précédent ne peut plus être prise que par le Ministre.
+Après (cinq) mois de détention, l'étranger doit être mis en liberté. <L 1999-04-29/70, art. 2, 017; En vigueur : 06-07-1999>
+(Dans le cas où la sauvegarde de l'ordre public ou la sécurité nationale l'exige, la détention de l'étranger peut être prolongée chaque fois d'un mois, après l'expiration du délai visé à l'alinéa précédent, sans toutefois que la durée totale de la détention puisse de ce fait dépasser huit mois.) <L 1999-04-29/70, art. 3, A, 017; En vigueur : 06-07-1999>
+----------
+(1)<L 2012-01-19/12, art. 5, 063; En vigueur : 27-02-2012>
+(2)<L 2017-02-24/21, art. 7, 094; En vigueur : 29-04-2017>
+(3)<L 2017-11-21/17, art. 5, 100; En vigueur : 22-03-2018>
+(4)<L 2019-05-08/12, art. 7, 106; En vigueur : 19-07-2019>
+(5)<L 2024-05-12/29, art. 5, 124; En vigueur : 20-07-2024>
+
+Art. 8. L'ordre de quitter le territoire ou la décision de remise à la frontière indique la disposition de l'article 7 qui est appliquée.
+
+Art. 8bis.<Inséré par L 2004-09-01/56, art. 3, En vigueur : 12-10-2004> § 1er. Le Ministre ou son délégué peut reconnaître une décision d'éloignement prise à l'encontre d'un étranger par une autorité administrative compétente d'un Etat tenu par la directive 2001/40/CE du Conseil de l'Union européenne du 28 mai 2001 relative à la reconnaissance mutuelle des décisions d'éloignement des ressortissants de pays tiers, lorsque cet étranger se trouve sur le territoire du Royaume sans y être admis ou autorisé à séjourner plus de trois mois et lors que les conditions suivantes sont réunies :
+1° la décision d'éloignement est fondée :
+- soit sur une menace grave et actuelle pour l'ordre public ou la sécurité nationale et découle soit de la condamnation de l'étranger dans l'Etat tenu par la directive précitée, qui lui a délivré cette décision, pour une infraction passible d'une peine privative de liberté d'un an au moins, soit de l'existence de raisons sérieuses de croire que cet étranger a commis des faits punissables graves ou de l'existence d'indices réels qu'il envisage de commettre de tels faits sur le territoire d'un Etat tenu par la directive précitée;
+- soit sur le non respect des réglementations nationales relatives à l'entrée ou au séjour des étrangers dans cet Etat tenu par la directive précitée;
+2° la décision d'éloignement ne doit être ni suspendue ni rapportée par l'Etat qui l'a délivrée à l'étranger.
+§ 2. Lorsque la décision d'éloignement visée au § 1er est fondée sur une menace grave et actuelle pour l'ordre public ou la sécurité nationale et que l'étranger qui en est l'objet est admis ou autorisé à séjourner plus de trois mois dans le Royaume ou à s'y établir ou dispose d'un titre de séjour délivré par un Etat tenu par la directive précitée, le Ministre ou son délégué consulte l'Etat dont l'autorité administrative compétente a pris la décision d'éloignement ainsi que, le cas échéant, l'Etat qui a délivré le titre de séjour à l'étranger.
+L'étranger visé à l'alinéa précédent qui est admis ou autorisé à séjourner plus de trois mois dans le Royaume ou à s'y établir, ne peut, le cas échéant, être éloigné que dans le respect [4 des articles 21 et 22]4.
+La décision relative à l'étranger qui dispose d'un titre de séjour délivré par un Etat tenu par la directive précitée, visé à l'alinéa précédent, dépend de la décision de cet Etat quant au séjour de l'étranger sur son territoire.
+§ 3. Les Etats tenus par la directive précitée au moment de l'entrée en vigueur de la présente disposition sont les Etats membres de l'Union européenne.
+Le Roi met l'alinéa précédent en concordance avec le résultat des procédures, prévues par des instruments européens, permettant l'application du droit communautaire à d'autres Etats.
+§ 4. [3 Pendant la procédure de reconnaissance visée au § 1er, le ministre ou son délégué peut, sans préjudice des dispositions du Titre IIIquater et à moins que d'autres mesures suffisantes mais moins coercitives puissent être appliquées efficacement, faire détenir l'étranger qui est signalé aux fins de non-admission [5 et d'interdiction de séjour dans le SIS]5 [4 ou dans la Banque de données Nationale Générale]4, pour un des motifs visés au § 1er, 1°, sans que la durée de la détention puisse dépasser un mois.]3
+§ 5. Les §§ 1er à 4 ne s'appliquent pas aux décisions d'éloignement prises à l'encontre des étrangers visés à l'article 40 [1 , 40bis ou 40ter]1.
+----------
+(1)<L 2009-05-06/03, art. 177, 050; En vigueur : 29-05-2009>
+(2)<L 2012-01-19/12, art. 6, 063; En vigueur : 27-02-2012>
+(3)<L 2014-03-19/24, art. 5, 076; En vigueur : 15-05-2014>
+(4)<L 2017-02-24/21, art. 8, 094; En vigueur : 29-04-2017>
+(5)<L 2019-05-08/12, art. 8, 106; En vigueur : 19-07-2019>
+
+Art. 8ter. [1 Les dispositions du présent chapitre s'appliquent sans préjudice des dispositions pertinentes de l'acquis de Schengen relatives aux franchissements des frontières et au court séjour, en particulier le Code frontières Schengen, le Code des visas et la Convention de Schengen.]1
+----------
+(1)<Inséré par L 2019-05-05/21, art. 7, 107; En vigueur : 01-09-2019>
+
+Art. 8quater. [1 § 1er. L'autorité de filtrage, au sens du règlement (UE) 2024/1356, est l'Office des Etrangers.
+§ 2. Les services de police visés à l'article 2, 2°, de la loi du 7 décembre 1998 organisant un service de police intégré, structuré à deux niveaux, transmettent à l'autorité de filtrage les informations qu'ils traitent dans le cadre de l'exécution de leurs missions de police administrative et judiciaire, telles que visées aux articles 14 et 15 de la loi du 5 août 1992 sur la fonction de police, lorsque ces informations sont pertinentes et nécessaires pour la réalisation du filtrage.
+§ 3. Le filtrage est effectué dans les locaux de l'autorité de filtrage ou du service partenaire agissant pour le compte de l'autorité de filtrage.]1
+----------
+(1)<Inséré par L 2026-06-16/01, art. 1, 135; En vigueur : 12-06-2026>
+
+Art. 8quinquies. [1 Tout ressortissant de pays tiers soumis au filtrage coopère à son exécution effective.
+Cette obligation de coopérer comprend le fait de:
+1° rester accessible et disponible pour l'autorité de filtrage pendant toute la durée du filtrage;
+2° fournir les informations et documents demandés par l'autorité de filtrage, en ce compris ses données biométriques en application de l'article 8octies.
+Le refus de coopérer du ressortissant de pays tiers en vertu du présent article constitue une violation de l'obligation de coopérer visée à l'article 1er, § 2, 3°.]1
+----------
+(1)<Inséré par L 2026-06-16/01, art. 8, 135; En vigueur : 12-06-2026>
+
+Art. 8sexies. [1 L'autorité de filtrage communique les informations visées à l'article 11 du règlement (UE) 2024/1356 au ressortissant de pays tiers soumis au filtrage.
+Le Roi détermine les modalités de la communication de l'information visée à l'alinéa 1er.]1
+----------
+(1)<Inséré par L 2026-06-16/01, art. 9, 135; En vigueur : 12-06-2026>
+
+Art. 8septies. [1 § 1er. Les autorités suivantes ont accès à Eurodac:
+1° l'Office des Etrangers, en vue d'une consultation aux fins mentionnées à l'article 1er, paragraphe 1, points a), b), c) et j), du règlement (UE) 2024/1358 et aux fins mentionnées dans les règlements (CE) 767/2008 du Parlement européen et du Conseil du 9 juillet 2008 concernant le système d'information sur les visas (VIS) et l'échange de données entre les Etats membres sur les visas de court séjour (règlement VIS) et (UE) 2018/1240 du Parlement européen et du Conseil du 12 septembre 2018 portant création d'un système européen d'information et d'autorisation concernant les voyages (ETIAS) et modifiant les règlements (UE) n° 1077/2011, (UE) n° 515/2014, (UE) 2016/399, (UE) 2016/1624 et (UE) 2017/2226;
+2° les services de police tels que visés à l'article 2, 2°, de la loi du 7 décembre 1998 organisant un service de police intégré, structuré à deux niveaux, en vue d'une consultation aux fins mentionnées à l'article 1er, paragraphe 1, points a) et c), du règlement (UE) 2024/1358 et aux fins mentionnées dans le règlement (CE) 767/2008 du Parlement européen et du Conseil du 9 juillet 2008 concernant le système d'information sur les visas (VIS) et l'échange de données entre les Etats membres sur les visas de court séjour (règlement VIS);
+3° le Commissariat général aux réfugiés et aux apatrides, en vue d'une consultation aux fins mentionnées à l'article 1er, paragraphe 1, points a) et b), du règlement (UE) 2024/1358;
+4° les représentations diplomatiques et consulaires belges, en vue d'une consultation aux fins mentionnées dans le règlement (CE) 767/2008 du Parlement européen et du Conseil du 9 juillet 2008 concernant le système d'information sur les visas (VIS) et l'échange de données entre les Etats membres sur les visas de court séjour (règlement VIS).
+Les autorités visées à l'alinéa 1er déterminent quels membres de leur personnel ont accès au système et pour quelles finalités parmi celles mentionnées. Ces membres du personnel ont uniquement accès aux données à caractère personnel qu'ils doivent connaître en fonction du service dont ils font partie et de leurs tâches.
+§ 2. Les autorités suivantes sont les autorités désignées à des fins répressives, telles que visées à l'article 5 du règlement (UE) 2024/1358:
+1° les services de police, visés à l'article 2, 2°, de la loi du 7 décembre 1998 organisant un service de police intégré, structuré à deux niveaux;
+2° la Sûreté de l'Etat, visée par la loi du 30 novembre 1998 organique des services de renseignement et de sécurité;
+3° le Service Général du Renseignement et de la Sécurité des Forces armées, visé par la loi du 30 novembre 1998 organique des services de renseignement et de sécurité;
+4° l'Administration générale des douanes et accises.
+§ 3. La police intégrée, structurée à deux niveaux, est l'autorité chargée de la vérification visée à l'article 6 du règlement (UE) 2024/1358.
+§ 4. Les responsables du traitement des données à caractère personnel dans Eurodac sont:
+1° l'Office des Etrangers, représenté par le Directeur général, pour les traitements des données à caractère personnel dans Eurodac effectués par l'Office des Etrangers.
+2° le Commissariat général de la Police fédérale, représenté par le Commissaire général de la Police fédérale, pour les traitements effectués par les services de police visés à l'article 2, 2°, de la loi du 7 décembre 1998 organisant un service de police intégré, structuré à deux niveaux;
+3° le Commissariat général aux réfugiés et aux apatrides, représenté par le Commissaire général aux réfugiés et aux apatrides, pour les traitements effectués par cette autorité;
+4° la Direction générale des Affaires consulaires du Service public fédéral Affaires étrangères, représentée par son directeur général, pour les traitements effectués par les représentations diplomatiques et consulaires belges.
+Les coordonnées des responsables du traitement visés à l'alinéa 1er sont accessibles sur le site Web de l'autorité concernée. Elles comprennent une adresse postale et une adresse e-mail.]1
+----------
+(1)<Inséré par L 2026-06-16/01, art. 10, 135; En vigueur : 12-06-2026>
+
+Art. 8octies. [1 § 1er. Pour l'application du présent article, on entend par "prise de données biométriques", le relevé d'empreintes digitales et la capture de l'image faciale, tel que visé à l'article 2, paragraphe 1, points q), r) et s), du règlement (UE) 2024/1358.
+§ 2. Les données biométriques des étrangers visées à l'article 15, paragraphe 1, à l'article 18, paragraphes 1 et 2, à l'article 20, paragraphe 1, à l'article 22, paragraphe 1, à l'article 23, paragraphe 1, et à l'article 24, paragraphe 1, du règlement (UE) 2024/1358 sont recueillies à l'initiative du ministre ou de son délégué. Elles peuvent l'être aussi à l'initiative du Commissaire général aux réfugiés et aux apatrides ou de son délégué, d'un officier de police judiciaire, en ce compris l'officier de police judiciaire dont la compétence est limitée, d'un officier de la police administrative, d'un directeur d'un établissement pénitentiaire ou d'un représentant diplomatique ou consulaire belge.
+Conformément à l'article 18, paragraphe 4, du règlement (UE) 2024/1358, les données biométriques des étrangers visés audit article 18 peuvent également être relevées par un autre Etat membre, par l'Agence de l'Union européenne pour l'asile ou par une organisation internationale compétente.
+§ 3. Sans préjudice de l'application éventuelle de l'article 41, paragraphe 1, point b), du règlement (UE) 2024/1348 et du paragraphe 4, le refus de se soumettre volontairement au prélèvement de ses données biométriques constitue une violation de l'obligation de coopération visée à l'article 1er, § 2, 3°.
+§ 4. Les données biométriques collectées conformément à cet article peuvent être enregistrées dans la base de données de l'Office des Etrangers.
+Les données biométriques sont conservées pendant une période de cinq ans. Elles sont détruites si l'étranger est reconnu comme réfugié conformément à l'article 49, si le statut de protection subsidiaire lui a été accordé conformément à l'article 49/2 ou s'il acquiert la nationalité belge.
+Les données biométriques peuvent être utilisées aux fins visées à l'article 8septies, § 1er, alinéa 1er, 1°.]1
+----------
+(1)<Inséré par L 2026-06-16/01, art. 11, 135; En vigueur : 12-06-2026>
+
+CHAPITRE III. - SEJOUR DE PLUS DE TROIS MOIS.
+
+Art. 9. Pour pouvoir séjourner dans le Royaume au-delà du terme fixé à l'article 6 l'étranger qui ne se trouve pas dans un des cas prévus à l'article 10 doit y être autorisé par le (Ministre) ou son délégué. <L 1996-07-15/33, art. 4, 012; En vigueur : 16-12-1996>
+Sauf dérogations prévues par un traité international, par une loi ou par un arrêté royal, cette autorisation doit être demandée par l'étranger auprès du poste diplomatique ou consulaire belge compétent pour le lieu de sa résidence ou de son séjour à l'étranger.
+(Alinéa 3 abrogé) <L 2006-09-15/72, art. 3, 041; En vigueur : 01-06-2007>
+
+Art. 9bis.<Inséré par L 2006-09-15/72, art. 4; En vigueur : 01-06-2007> § 1er. Lors de circonstances exceptionnelles et à la condition que l'étranger dispose d'un document d'identité, l'autorisation de séjour peut être demandée auprès du bourgmestre de la localité où il séjourne, qui la transmettra au ministre ou à son délégué. Quand le ministre ou son délégué accorde l'autorisation de séjour, celle-ci sera délivrée en Belgique.
+La condition que l'étranger dispose d'un document d'identité n'est pas d'application :
+- au demandeur [4 de protection internationale qui n'a pas encore reçu de décision finale dans le cadre d'une demande de protection internationale]4 ou qui a introduit un recours en cassation administrative déclaré admissible conformément à l'article 20 des lois sur le Conseil d'Etat, coordonnées le 12 janvier 1973, et ce jusqu'au moment [1 où un arrêt de rejet du recours admis est prononcé]1;
+- à l'étranger qui démontre valablement son impossibilité de se procurer en Belgique le document d'identité requis.
+§ 2. Sans préjudice des autres éléments de la demande, ne peuvent pas être retenus comme circonstances exceptionnelles et sont déclarés irrecevables :
+1° les éléments qui ont déjà été invoqués à l'appui d'[4 une demande de protection internationale]4, et qui ont été rejetés par les instances d'asile, à l'exception des éléments rejetés parce qu'ils sont étrangers aux critères [4 du règlement (UE) 2024/1347]4, ou parce qu'ils ne relèvent pas de la compétence de ces instances;
+2° les éléments qui auraient dû être invoqués au cours de la procédure de traitement [4 d'une demande de protection internationale]4, dans la mesure où ils existaient et étaient connus de l'étranger avant la fin de la procédure;
+3° les éléments qui ont déjà été invoqués lors d'une demande précédente d'autorisation de séjour dans le Royaume [2 à l'exception des éléments invoqués dans le cadre d'une demande jugée irrecevable en raison de l'absence des documents d'identité requis ou en raison du non-paiement ou du paiement incomplet de la redevance visée à l'article 1er/1 et à l'exception des éléments invoqués dans les demandes précédentes qui ont fait l'objet d'un désistement]2;
+4° les éléments qui ont été invoqués dans le cadre d'une demande d'obtention d'autorisation de séjour sur la base de l'article 9ter;
+[3 5° les éléments qui ont déjà été invoqués dans le cadre d'une demande d'admission au séjour pour apatridie visée à l'article 57/38, à l'exception des éléments invoqués dans le cadre d'une demande qui n'a pas été prise en considération en application de l'article 57/40.]3
+[2 § 3. La demande d'autorisation de séjour dans le Royaume est examinée uniquement sur la base de la dernière demande introduite transmise par le bourgmestre ou son délégué au ministre ou à son délégué. L'étranger qui introduit une nouvelle demande est réputé se désister des demandes pendantes introduites antérieurement.]2
+----------
+(1)<L 2009-05-06/03, art. 178, 050; En vigueur : 29-05-2009>
+(2)<L 2015-12-14/09, art. 2, 086; En vigueur : 01-03-2016>
+(3)<L 2024-03-10/02, art. 3, 126; En vigueur : 01-09-2024>
+(4)<L 2026-06-16/01, art. 12, 135; En vigueur : 12-06-2026>
+
+Art. 9ter.[1 § 1er. L'étranger qui séjourne en Belgique qui démontre son identité conformément au § 2 et qui souffre d'une maladie telle qu'elle entraîne un risque réel pour sa vie ou son intégrité physique ou un risque réel de traitement inhumain ou dégradant lorsqu'il n'existe aucun traitement adéquat dans son pays d'origine ou dans le pays où il séjourne, peut demander l'autorisation de séjourner dans le Royaume auprès du ministre ou son délégué.
+La demande doit être introduite par pli recommandé auprès du ministre ou son délégué et contient l'adresse de la résidence effective de l'étranger en Belgique.
+L'étranger transmet avec la demande tous les renseignements utiles [2 et récents]2 concernant sa maladie et les possibilités et l'accessibilité de traitement adéquat dans son pays d'origine ou dans le pays où il séjourne.
+Il transmet un certificat médical type [4 dont le modèle est déterminé par le Roi]4. Ce certificat médical [2 datant de moins de trois mois précédant le dépôt de la demande]2 indique la maladie, son degré de gravité et le traitement estimé nécessaire.
+L'appréciation du risque visé à l'alinéa 1er, des possibilités de traitement, leur accessibilité dans son pays d'origine ou dans le pays où il séjourne et de la maladie, son degré de gravité et le traitement estimé nécessaire indiqués dans le certificat médical, est effectuée par un fonctionnaire médecin ou un médecin désigné par le ministre ou son délégué qui rend un avis à ce sujet. Ce médecin peut, s'il l'estime nécessaire, examiner l'étranger et demander l'avis complémentaire d'experts.
+[2 § 1er/1. L'obtention d'une autorisation de séjour dans le Royaume visée au présent article peut être refusée à l'étranger qui ne se présente pas à la date fixée dans la convocation par le fonctionnaire médecin, ou le médecin désigné par le ministre ou son délégué, ou l'expert désigné par le ministre ou son délégué, et qui ne donne pas, au plus tard dans les quinze jours suivant cette date, de motif valable à ce sujet.]2
+§ 2. Avec la demande, l'étranger démontre son identité visée au § 1er, alinéa 1er, par un document d'identité ou un élément de preuve qui répond aux conditions suivantes :
+1° il contient le nom complet, le lieu et la date de naissance et la nationalité de l'intéressé;
+2° il est délivré par l'autorité compétente conformément à la loi du 16 juillet 2004 portant le Code de droit international privé ou les conventions internationales relatives à la même matière;
+3° il permet un constat d'un lien physique entre le titulaire et l'intéressé;
+4° il n'a pas été rédigé sur la base de simples déclarations de l'intéressé.
+L'étranger peut également démontrer son identité par plusieurs éléments de preuve qui, pris ensemble, réunissent les éléments constitutifs de l'identité prévus par l'alinéa 1er, 1°, à condition que chaque élément de preuve réponde au moins aux conditions visées à l'alinéa 1er, 2° et 4°, et qu'au moins un des éléments réponde à la condition visée à l'alinéa 1er, 3°.
+L'obligation de démontrer son identité n'est pas d'application au demandeur [5 de protection internationale qui n'a pas encore reçu de décision finale dans le cadre d'une demande de protection internationale]5 ou qui a introduit un recours en cassation administrative déclaré admissible conformément à l'article 20 des lois sur le Conseil d'Etat, coordonnées le 12 janvier 1973, et ce jusqu'au moment où un arrêt de rejet du recours admis est prononcé. L'étranger qui jouit de cette dispense la démontre expressément dans sa demande.
+§ 3. Le délégué du ministre déclare la demande irrecevable :
+1° lorsque l'étranger n'introduit pas sa demande par pli recommandé auprès du ministre ou son délégué ou lorsque la demande ne contient pas l'adresse de la résidence effective en Belgique;
+2° lorsque, dans la demande, l'étranger ne démontre pas son identité selon les modalités visées au § 2 ou lorsque la demande ne contient pas la preuve prévue au § 2, alinéa 3;
+3° lorsque le certificat médical type n'est pas produit avec la demande ou lorsque le certificat médical type ne répond pas aux conditions prévues au § 1er, alinéa 4;
+[2 4° lorsque le fonctionnaire médecin ou le médecin désigné par le ministre ou son délégué, visé au § 1er, alinéa 5, constate dans un avis que la maladie ne répond manifestement pas à une maladie visée au § 1er, alinéa 1er, qui peut donner lieu à l'obtention d'une autorisation de séjour dans le Royaume;]2
+[2 5°]2 dans les cas visés à l'article 9bis, § 2, 1° à 3°, ou si des éléments invoqués à l'appui de la demande d'autorisation de séjour dans le Royaume ont déjà été invoqués dans le cadre d'une demande précédente d'autorisation de séjour dans le Royaume sur la base de la présente disposition [3 à l'exception des éléments invoqués dans le cadre d'une demande jugée irrecevable sur la base de l'article 9ter, § 3, 1°, 2° ou 3°, et à l'exception des éléments invoqués dans les demandes précédentes qui ont fait l'objet d'un désistement]3.
+§ 4. [5 L'étranger est exclu du bénéfice de la présente disposition lorsque le ministre ou son délégué considère qu'il y a de motifs sérieux de considérer qu'il a commis des actes visés à l'article 17 du règlement (UE) 2024/1347]5.
+§ 5. Les experts visés au § 1er, alinéa 5,sont désignés par le Roi, par arrêté délibéré en Conseil des Ministres.
+Le Roi fixe les règles de procédure par arrêté délibéré en Conseil des ministres et détermine également le mode de rémunération des experts visés à l'alinéa 1er.
+§ 6. L'article 458 du Code pénal est applicable au délégué du ministre et aux membres de son service, en ce qui concerne les données médicales dont ils ont connaissance dans l'exercice de leurs fonctions.]1
+[2 § 7. La demande d'autorisation de séjour dans le Royaume visée au présent article, faite par un étranger qui a été admis ou autorisé au séjour pour une durée illimitée, est déclarée d'office sans objet lorsqu'elle est encore examinée par l'Office des Etrangers, à moins que l'étranger demande dans un délai de soixante jours à partir de l'entrée en vigueur de la présente disposition ou à partir du moment de la remise du titre qui fait preuve du séjour illimité, la poursuite de son examen par lettre recommandée adressée à l'Office des Etrangers.]2
+[3 § 8. La demande d'autorisation de séjour dans le Royaume est examinée uniquement sur la base de la dernière demande introduite transmise par envoi recommandé au ministre ou à son délégué. L'étranger qui introduit une nouvelle demande est réputé se désister des demandes pendantes introduites antérieurement.]3
+----------
+(1)<L 2010-12-29/01, art. 187, 057; En vigueur : 10-01-2011>
+(2)<L 2012-01-08/10, art. 1, 061; En vigueur : 16-02-2012>
+(3)<L 2015-12-14/09, art. 3, 086; En vigueur : 01-03-2016>
+(4)<L 2022-06-23/26, art. 2, 121; En vigueur : 11-03-2024>
+(5)<L 2026-06-16/01, art. 13, 135; En vigueur : 12-06-2026>
+
+Art. 9quater.[1 § 1er. Au moment de l'introduction d'une demande d'autorisation de séjour sur la base de l'article 9bis ou 9ter, l'étranger est tenu d'élire domicile en Belgique.
+A défaut d'avoir élu domicile conformément à l'alinéa 1er, l'étranger est réputé avoir élu domicile à l'Office des Etrangers. S'il s'agit d'un étranger faisant l'objet d'une décision de maintien, il est réputé avoir élu domicile à l'adresse du lieu où il est maintenu.
+Toute modification du domicile élu doit être communiquée, sous pli recommandé à la poste ou contre accusé de réception à l'Office des Etrangers.
+§ 2. [2 ...]2
+§ 3. Sans préjudice [2 de l'article 62]2, une copie de toute notification est envoyé par courrier ordinaire tant à l'adresse effective, si elle est connue et si elle est postérieure au choix du domicile élu, qu'à l'avocat de l'étranger.
+§ 4. Les convocations et les demandes de renseignements peuvent également être valablement envoyées conformément [2 à l'article 62]2. Le cas échéant le § 3 est d'application.]1
+----------
+(1)<Inséré par L 2010-12-29/01, art. 188, 057; En vigueur : 10-01-2011>
+(2)<L 2016-05-04/29, art. 7, 089; En vigueur : 07-07-2016>
+
+Art. 10.[1 § 1er. Sous réserve des dispositions des articles 9 et 12, sont de plein droit admis à séjourner plus de trois mois dans le Royaume:
+1° l'étranger dont le droit de séjour est reconnu par un traité international, par une loi ou par un arrêté royal;
+2° l'étranger qui remplit les conditions prévues par le Code de la nationalité belge pour recouvrer la nationalité belge, sans qu'il soit requis qu'il ait sa résidence principale en Belgique depuis au moins douze mois et sans qu'il doive faire une déclaration de recouvrement de la nationalité belge;
+3° la femme qui, par son mariage ou à la suite de l'acquisition par son mari d'une nationalité étrangère, a perdu la nationalité belge;
+4° [2 les membres de la famille qui, conformément à l'article 23, paragraphe 1, du règlement (UE) 2024/1347, sont éligible à un titre de séjour en tant que membre de la famille d'un étranger qui est admis à séjourner dans le Royaume en tant que bénéficiaire d'un statut de protection internationale]2;
+5° sous réserve du 4°, les membres de la famille suivants d'un étranger qui est admis à séjourner dans le Royaume soit en tant que bénéficiaire du statut de réfugié soit conformément à l'article 57/45:
+a) le conjoint étranger qui vient vivre avec lui, à condition qu'ils soient tous les deux âgés de plus de vingt-et-un ans;
+b) l'étranger avec lequel il est lié par un partenariat enregistré conformément à une loi, qui vient vivre avec lui, à condition qu'ils soient tous les deux âgés de plus de vingt-et-un ans et qu'ils remplissent les conditions prévues à l'alinéa 2;
+c) leurs enfants mineurs communs, qui viennent vivre avec eux avant d'avoir atteint l'âge de dix-huit ans et qui sont non mariés;
+d) les enfants mineurs de l'étranger rejoint, de son conjoint ou du partenaire enregistré visé au b), qui viennent vivre avec eux avant d'avoir atteint l'âge de dix-huit ans et qui sont non mariés, et pour autant que l'étranger rejoint, son conjoint ou son partenaire enregistré exerce l'autorité parentale, y compris le droit de garde, et que les enfants soient à sa charge, à celle de son conjoint ou de son partenaire enregistré. Si l'autorité parentale est partagée, l'autre titulaire de l'autorité parentale doit avoir donné son accord;
+e) l'enfant handicapé non marié âgé de plus de dix-huit ans de l'étranger rejoint, de son conjoint ou du partenaire enregistré visé au b), pour autant qu'il fournisse une attestation émanant d'un médecin agréé par le poste diplomatique ou consulaire belge indiquant qu'il se trouve, en raison de son handicap, dans l'incapacité de subvenir à ses propres besoins;
+f) les parents, pour autant que l'étranger rejoint soit âgé de moins de dix-huit ans et qu'il soit entré dans le Royaume sans être accompagné d'un étranger majeur responsable de lui par la loi et qu'il n'ait pas été pris en charge effectivement par une telle personne par la suite, ou qu'il ait été laissé seul après son arrivée dans le Royaume, et à condition qu'ils viennent vivre avec lui avant qu'il ait atteint l'âge de dix-huit ans;
+6° les membres de la famille suivants d'un étranger qui dispose d'un droit de séjour d'une durée illimitée et qui est admis ou autorisé à séjourner dans le Royaume depuis au moins deux ans. Ce dernier délai est ramené à un an lorsque les liens familiaux existaient déjà avant l'arrivée dans le Royaume de l'étranger rejoint ou est supprimé si l'étranger se fait uniquement rejoindre par les membres de sa famille visés aux c) à e):
+a) le conjoint étranger qui vient vivre avec lui, à condition qu'ils soient tous les deux âgés de plus de vingt-et-un ans;
+b) l'étranger avec lequel il est lié par un partenariat enregistré conformément à une loi, qui vient vivre avec lui, à condition qu'ils soient tous les deux âgés de plus de vingt-et-un ans et qu'ils remplissent les conditions prévues à l'alinéa 2;
+c) leurs enfants mineurs communs, qui viennent vivre avec eux avant d'avoir atteint l'âge de dix-huit ans et qui sont non mariés;
+d) les enfants mineurs de l'étranger rejoint, de son conjoint ou du partenaire enregistré visé au b), qui viennent vivre avec eux avant d'avoir atteint l'âge de dix-huit ans et qui sont non mariés, et pour autant que l'étranger rejoint, son conjoint ou son partenaire enregistré exerce l'autorité parentale, y compris le droit de garde, et que les enfants soient à sa charge, à celle de son conjoint ou de son partenaire enregistré. Si l'autorité parentale est partagée, l'autre titulaire de l'autorité parentale doit avoir donné son accord;
+e) l'enfant handicapé non marié âgé de plus de dix-huit ans de l'étranger rejoint, de son conjoint ou du partenaire enregistré visé au b), pour autant qu'il fournisse une attestation émanant d'un médecin agréé par le poste diplomatique ou consulaire belge indiquant qu'il se trouve, en raison de son handicap, dans l'incapacité de subvenir à ses propres besoins.
+[2 Les partenaires enregistrés visés à l'alinéa 1er, 4°, 5°, b) et 6°, b)]2, doivent répondre aux conditions suivantes:
+1° prouver qu'ils entretiennent une relation de partenaire durable et stable dûment établie. Le caractère durable et stable de cette relation est établi:
+a) si les partenaires prouvent qu'ils ont cohabité de manière légale et ininterrompue en Belgique ou dans un autre pays, pendant au moins un an avant la demande;
+b) ou si les partenaires prouvent qu'ils se connaissent depuis au moins deux ans avant la demande et qu'ils fournissent la preuve qu'ils ont entretenu des contacts réguliers par téléphone, par courrier ordinaire ou électronique, qu'ils se sont rencontrés trois fois durant les deux années précédant la demande et que ces rencontres comptabilisent au total 45 jours ou plus;
+c) ou si les partenaires ont un enfant commun;
+2° être non mariés et ne pas avoir de relation de partenaire durable et stable avec une autre personne;
+3° ne pas être une des personnes visées aux articles 161 à 163 de l'ancien Code civil;
+4° n'avoir fait ni l'un ni l'autre l'objet d'une décision définitive de refus de célébration du mariage sur la base de l'article 167 de l'ancien Code civil.
+Pour autant que les liens familiaux existaient déjà avant l'arrivée de l'étranger rejoint dans le Royaume, le ministre ou son délégué tient compte de l'âge que le membre de la famille visé à l'alinéa 1er, 5°, c) et d), ou l'étranger rejoint visé à l'alinéa 1er, 5°, f), avait au moment de l'introduction de la demande de protection internationale ou de la demande d'admission au séjour pour apatridie visée à l'article 57/38. Si l'enfant atteint l'âge de dix-huit ans pendant ou peu après la procédure d'obtention du statut de réfugié ou la procédure d'obtention d'une admission au séjour conformément à l'article 57/45, la demande de regroupement familial peut être introduite jusqu'à trois mois après la décision d'octroi du statut de réfugié ou la décision d'admission au séjour conformément à l'article 57/45. Lors de l'appréciation de ce dernier délai de trois mois, le ministre ou son délégué tient compte des circonstances particulières qui rendent objectivement excusable l'introduction tardive de la demande.
+Les dispositions relatives aux enfants s'appliquent à moins qu'un accord international liant la Belgique ne prévoie des dispositions plus favorables.
+§ 2. Les étrangers visés au paragraphe 1er, alinéa 1er, 2° et 3°, doivent apporter la preuve qu'ils disposent de moyens de subsistance stables, suffisants et réguliers pour subvenir à leurs propres besoins et ne pas devenir une charge pour les pouvoirs publics.
+Les membres de la famille visés au paragraphe 1er, alinéa 1er, 5°, a) à e), et 6°, a) à e), doivent apporter la preuve que l'étranger rejoint dispose d'une assurance maladie couvrant les risques en Belgique pour lui-même et les membres de sa famille, ainsi que d'un logement suffisant considéré comme normal pour une famille de taille comparable et qui répond aux critères légaux en vigueur en matière de sécurité et de salubrité. Le Roi détermine, par arrêté délibéré en Conseil des ministres, les critères auxquels l'immeuble doit répondre ainsi que la manière dont l'étranger prouve que l'immeuble répond aux conditions fixées.
+Les membres de la famille visés au paragraphe 1er, alinéa 1er, 5°, a) à e), et 6°, a) à e), doivent en outre apporter la preuve que l'étranger rejoint dispose de moyens de subsistance stables, réguliers et suffisants tels que prévus au paragraphe 5 pour subvenir à ses propres besoins et à ceux des membres de sa famille et pour éviter qu'ils ne deviennent une charge pour les pouvoirs publics. Cette condition n'est pas applicable si l'étranger se fait uniquement rejoindre par les membres de sa famille visés au paragraphe 1er, alinéa 1er, 5°, c) à e), ou 6°, c) à e).
+Les alinéas 2 et 3 ne sont pas applicables aux membres de la famille visés au paragraphe 1er, alinéa 1er, 5°, pour autant que la demande de séjour sur la base du présent article ait été introduite dans les six mois suivant la décision d'octroi du statut de réfugié ou la décision d'admission au séjour conformément à l'article 57/45 et que l'étranger produit un début de preuve de son identité et du lien de parenté ou d'alliance au moment de l'introduction de la demande et à condition qu'il ait complété sa demande avec tous les documents visés à l'article 12bis, §§ 2 à 4, au plus tard dix mois après la décision d'octroi du statut de réfugié ou la décision d'admission au séjour conformément à l'article 57/45. Lors de l'appréciation de ces délais, le ministre ou son délégué tient compte des circonstances particulières qui rendent objectivement excusable l'introduction tardive de la demande. Le Roi détermine, par arrêté délibéré en Conseil des ministres, les modalités d'introduction de la demande ainsi que la manière dont le membre de la famille peut prouver qu'il remplit les conditions précédentes.
+Par dérogation à l'alinéa 4, le ministre ou son délégué peut cependant exiger, par une décision motivée, la production des documents visés aux alinéas 2 et 3, lorsque le regroupement familial est possible dans un autre pays avec lequel l'étranger rejoint ou le membre de sa famille a un lien particulier, en tenant compte des circonstances de fait, des conditions fixées dans cet autre pays en ce qui concerne le regroupement familial et de la mesure dans laquelle les étrangers concernés peuvent remplir celles-ci.
+Tous les membres de la famille visés au paragraphe 1er doivent en outre apporter la preuve qu'ils ne sont pas atteints d'une des maladies pouvant mettre en danger la santé publique, énumérées dans l'annexe à la présente loi.
+§ 3. Sous réserve de l'article 11, § 2, et des dispositions de l'article 42quater, lorsqu'un ressortissant de pays tiers a lui-même été admis ou autorisé à séjourner en qualité de conjoint ou partenaire non marié conformément aux articles 10, 10bis, 40bis, 40ter ou 47/2, 1°, le droit de le rejoindre sur la base d'un mariage ou d'un partenariat ne peut être accordé que s'il peut prouver qu'il réside régulièrement dans le Royaume depuis deux ans et pour autant que les conditions du regroupement familial soient remplies.
+§ 4. Un étranger polygame ne peut pas être rejoint [2 par son conjoint visé au paragraphe 1er, alinéa 1er, 4°, 5°, a) ou 6°, a),]2 lorsqu'un autre conjoint séjourne déjà dans le Royaume.
+§ 5. Le montant net des moyens de subsistance visés au paragraphe 2 doivent être au moins équivalents à cent-dix pour cent du revenu minimum mensuel moyen garanti tel que prévu par l'article 3 de la convention collective de travail n° 43 du 2 mai 1988 relative à la garantie d'un revenu minimum mensuel moyen. Ce montant est augmenté de dix pour cent pour chaque membre de la famille supplémentaire à charge de l'étranger rejoint.
+L'évaluation de ces moyens de subsistance:
+1° tient compte de leur nature et de leur régularité;
+2° ne tient pas compte des moyens provenant de régimes d'assistance complémentaires, à savoir le revenu d'intégration et le supplément d'allocations familiales, ni de l'aide sociale financière et des allocations familiales;
+3° ne tient pas compte des allocations d'insertion professionnelle ni de l'allocation de transition et tient uniquement compte de l'allocation de chômage pour autant que l'étranger rejoint puisse prouver qu'il cherche activement du travail.
+§ 6. Le paragraphe 1er, alinéa 1er, 1°, n'est pas applicable aux membres de la famille de l'étranger autorisé à séjourner en Belgique pour y faire des études ou autorisé à y séjourner pour une durée limitée, fixée par la présente loi ou en raison de circonstances particulières propres à l'intéressé ou en rapport avec la nature ou la durée de ses activités en Belgique ]1.
+----------
+(1)<L 2025-07-18/29, art. 5, 129; En vigueur : 18-08-2025>
+(2)<L 2026-06-16/01, art. 14, 135; En vigueur : 12-06-2026>
+
+Art. 10bis.[1 § 1er. Lorsque les [9 membres de la famille visés à l'article 10, § 1er, alinéa 1er, 6°, a) à e)]9, [7 d'un étranger autorisé au séjour en qualité d'étudiant sur la base des dispositions du Titre II, Chapitre III,]7 introduisent une demande d'autorisation de séjour de plus de trois mois, cette autorisation doit être accordée si l'étudiant ou un des membres de sa famille en question apporte la preuve :
+- [4 que l'étudiant dispose]4 de moyens de subsistance stables, réguliers et suffisants, conformément à l'article 10, § 5, pour subvenir à ses propres besoins et à ceux des membres de sa famille et pour éviter qu'ils ne deviennent une charge pour les pouvoirs publics;
+- [4 [9 que l'étudiant dispose d'un logement suffisant, considéré comme normal pour une famille de taille comparable et qui répond aux critères légaux en vigueur en matière de sécurité et de salubrité. Le Roi détermine, par arrêté délibéré en Conseil des ministres, les critères auxquels l'immeuble doit répondre ainsi que la manière dont l'étranger prouve que l'immeuble répond aux conditions fixées]9;
+- [4 que l'étudiant dispose]4 d'une assurance maladie couvrant les risques en Belgique pour lui-même et les membres de sa famille;
+- que ceux-ci ne se trouvent pas dans un des cas visés à l'article 3, alinéa 1er, 5° à 8°, ou ne sont pas atteints d'une des maladies pouvant mettre en danger la santé publique, énumérées dans l'annexe à la présente loi.
+Les dispositions de l'article 12bis, § 6, s'appliquent également.
+§ 2. [6 [9 Lorsque les membres de la famille visés à l'article 10, § 1er, alinéa 1er, 6°, a) à e), d'un étranger admis ou autorisé à séjourner en Belgique]9 pour une durée limitée, fixée par la présente loi ou en raison de circonstances particulières propres à l'intéressé ou en rapport avec la nature ou la durée de ses activités en Belgique, introduisent une demande d'autorisation de plus de trois mois, cette autorisation doit être accordée s'ils apportent la preuve :
+1° que l'étranger rejoint dispose de moyens de subsistance stables, réguliers et suffisants, conformément à l'article 10, § 5, pour pouvoir subvenir à ses propres besoins et à ceux des membres de sa famille et pour éviter qu'ils ne deviennent une charge pour les pouvoirs publics;
+2° [9 que l'étranger rejoint dispose d'un logement suffisant considéré comme normal pour une famille de taille comparable et qui répond aux critères légaux en vigueur en matière de sécurité et de salubrité. Le Roi détermine, par arrêté délibéré en Conseil des ministres, les critères auxquels l'immeuble doit répondre ainsi que la manière dont l'étranger prouve que l'immeuble répond aux conditions fixées]9;
+Le Roi détermine par arrêté délibéré en Conseil des ministres, de quelle manière l'étranger apporte la preuve que le bien immeuble satisfait aux conditions prévues;
+3° que l'étranger rejoint dispose d'une assurance maladie couvrant les risques en Belgique pour lui-même et les membres de sa famille;
+4° que ceux-ci ne se trouvent pas dans un des cas visés à l'article 3, alinéa 1er, 5° à 8°, ou ne sont pas atteints d'une des maladies pouvant mettre en danger la santé publique, énumérées dans l'annexe à la présente loi.
+Les dispositions de l'article 12bis, § 6, s'appliquent également.]6
+[9 L'autorisation de séjour visée à l'alinéa 1er, est uniquement accordée aux membres de la famille d'un étranger qui a été autorisé à séjourner dans le Royaume sur la base de l'article 9bis lorsque l'étranger rejoint est admis ou autorisé à séjourner dans le Royaume depuis aux moins deux ans. Ce dernier délai est supprimé si l'étranger se fait uniquement rejoindre par les membres de sa famille visés à l'article 10, § 1er, alinéa 1er, 6°, c) à e).
+Sans préjudice de l'application du paragraphe 2/1, les alinéas 1er, 2 et 3, ne s'appliquent pas aux membres de la famille d'un étranger qui est admis à séjourner dans le Royaume en tant que bénéficiaire du statut de protection subsidiaire ou du statut de protection temporaire]9.
+[9 § 2/1. Sous réserve de l'article 10, § 1er, alinéa 1er, 4°, et de l'article 57/34, l'autorisation de séjour de plus de trois mois demandée par les membres de la famille visés à l'article 10, § 1er, alinéa 1er, 6°, a) à e), d'un étranger qui est admis à séjourner dans le Royaume en tant que bénéficiaire du statut de protection subsidiaire ou du statut de protection temporaire, doit être accordée à condition que l'étranger rejoint soit admis ou autorisé à séjourner dans le Royaume depuis au moins deux ans et que les liens familiaux existaient déjà avant l'arrivée de l'étranger rejoint dans le Royaume, et pour autant que les membres de la famille apportent la preuve que:
+1° l'étranger rejoint dispose de moyens de subsistance stables, réguliers et suffisants, conformément à l'article 10, § 5, pour pouvoir subvenir à ses propres besoins et à ceux des membres de sa famille et pour éviter qu'ils ne deviennent une charge pour les pouvoirs publics. Cette condition n'est pas applicable si l'étranger se fait uniquement rejoindre par les membres de sa famille visés à l'article 10, § 1er, alinéa 1er, 6°, c) à e);
+2° l'étranger rejoint dispose d'un logement suffisant considéré comme normal pour une famille de taille comparable et qui répond aux critères légaux en vigueur en matière de sécurité et de salubrité. Le Roi détermine, par arrêté délibéré en Conseil des ministres, les critères auxquels l'immeuble doit répondre ainsi que la manière dont l'étranger prouve que l'immeuble répond aux conditions fixées;
+3° l'étranger rejoint dispose d'une assurance maladie couvrant les risques en Belgique pour lui-même et les membres de sa famille;
+4° ceux-ci ne se trouvent pas dans un des cas visés à l'article 3, alinéa 1er, 5° à 8°, ou ne sont pas atteints d'une des maladies pouvant mettre en danger la santé publique, énumérées dans l'annexe à la présente loi.
+Le délai de deux ans, visé à l'alinéa 1er, est supprimé si l'étranger se fait uniquement rejoindre par les membres de sa famille visés à l'article 10, § 1er, alinéa 1er, 6°, c) à e).
+Les dispositions de l'article 12bis, § 6, s'appliquent également.]9
+§ 3. Les §§ 1er et 2 sont également applicables [9 aux membres de la famille visés à l'article 10, § 1er, alinéa 1er, 6°, a) à e)]9, d'un étranger bénéficiant du statut de résident de longue durée dans un autre Etat membre de l'Union européenne, sur la base de la Directive 2003/109/CE du Conseil de l'Union européenne du 25 novembre 2003 relative au statut des ressortissants de pays tiers résidents de longue durée, qui est autorisé à séjourner dans le Royaume sur la base des dispositions du titre II, chapitre V, ou qui demande cette autorisation.
+Toutefois, lorsque la famille est déjà constituée ou reconstituée dans cet autre Etat membre de l'Union européenne, l'étranger rejoint ne doit pas apporter la preuve qu'il dispose d'un logement décent pour recevoir le ou les membres de sa famille et, en ce qui concerne la condition de la possession de moyens de subsistance stables, réguliers et suffisants, la preuve que le membre de la famille dispose de tels moyens à titre personnel sera également prise en compte. Afin de pouvoir bénéficier de ce régime particulier, les membres de la famille concernés doivent produire le [3 permis de séjour de résident de longue durée - UE]3 ou le titre de séjour qui leur a été délivré par un Etat membre de l'Union européenne ainsi que la preuve qu'ils ont résidé en tant que membre de la famille d'un résident de longue durée dans cet Etat.]1
+[2 § 4. Le § 2 est également applicable [9 membres de la famille visés à l'article 10, § 1er, alinéa 1er, 6°, a) à e)]9, de l'étranger qui est autorisé au séjour en application de l'[5 article 61/27-4]5.
+Toutefois, lorsque la famille est déjà constituée ou reconstituée dans un autre Etat membre de l'Union européenne, l'étranger rejoint ne doit pas apporter la preuve qu'il dispose d'un logement suffisant pour recevoir le ou les membres de sa famille et, en ce qui concerne la condition de la possession de moyens de subsistance stables, réguliers et suffisants, la preuve que le membre de la famille dispose de tels moyens à titre personnel est également prise en compte. Afin de pouvoir bénéficier de ce régime particulier, les membres de la famille concernés doivent produire le titre de séjour qui leur a été délivré par un Etat membre de l'Union européenne ainsi que la preuve qu'ils ont résidé, dans cet Etat, en tant que membre de la famille d'un titulaire d'une carte bleue européenne.]2
+[6 § 5. Le paragraphe 2 est également applicable [9 membres de la famille visés à l'article 10, § 1er, alinéa 1er, 6°, a) à e)]9, du ressortissant d'un pays tiers qui est autorisé au séjour en application de l'[8 article 61/39 ou de l'article 61/48]8.
+[8 Toutefois, si une famille est déjà constituée ou reconstituée dans un autre Etat membre de l'Union européenne, le membre de la famille fournit les informations et documents suivants:
+1° le titre de séjour en cours de validité délivré par le premier Etat membre;
+2° la preuve qu'il a séjourné en tant que membre de famille dans le premier Etat membre.]8
+§ 6. [8 Le paragraphe 2 est également applicable [9 membres de la famille visés à l'article 10, § 1er, alinéa 1er, 6°, a) à e)]9, de l'étranger qui est autorisé au séjour en application de l'article 61/13/3 ou de l'article 61/13/10.
+Toutefois, si une famille est déjà constituée ou reconstituée dans un autre Etat membre de l'Union européenne, le membre de la famille de l'étranger autorisé au séjour conformément à l'article 61/13/10 doit fournir les informations et documents suivants:
+1° le titre de séjour en cours de validité délivré par le premier Etat membre;
+2° la preuve qu'il a séjourné en tant que membre de famille dans le premier Etat membre.]8]6
+----------
+(1)<L 2011-07-08/29, art. 3, 058; En vigueur : 22-09-2011>
+(2)<L 2012-05-15/16, art. 4, 067; En vigueur : 10-09-2012>
+(3)<L 2014-03-19/24, art. 7, 076; En vigueur : 15-05-2014>
+(4)<L 2016-05-04/29, art. 9, 089; En vigueur : 07-07-2016>
+(5)<L 2019-05-05/21, art. 8, 107; En vigueur : 01-09-2019>
+(6)<L 2020-07-31/24, art. 6, 109; En vigueur : 01-09-2020>
+(7)<L 2021-07-11/10, art. 5, 112; En vigueur : 15-08-2021>
+(8)<L 2022-08-21/05, art. 5, 116; En vigueur : 19-11-2022>
+(9)<L 2025-07-18/29, art. 6, 129; En vigueur : 18-08-2025>
+
+Art. 10ter.<Inséré par L 2006-09-15/72, art. 8; En vigueur : 01-06-2007> § 1er. La demande d'autorisation de séjour est introduite selon les modalités prévues à l'article 9 ou 9bis.
+La date du dépôt de la demande vsée à l'article 10bis est celle à laquelle toutes les preuves [8 visées à l'article 10bis, § 1er, alinéa 1er, § 2, alinéa 1er, ou § 2/1, alinéa 1er]8, conformément à l'article 30 de la loi du 16 juillet 2004 portant le Code de droit international privé ou aux conventions internationales portant sur la même matière, sont produites, en ce compris un extrait de casier judiciaire ou un document équivalent, si le demandeur est âgé de plus de 18 ans, et un certificat médical d'où il résulte que celui-ci n'est pas atteint d'une des maladies énumérées (à) l'annexe à la présente loi. <L 2007-04-25/49, art. 6, 1°, 045; En vigueur : indéterminée et au plus tard 01-06-2008>
+§ 2. [1 La décision relative à la demande d'autorisation de séjour est prise et notifiée dans les plus brefs délais et au plus tard dans les [5 neuf mois]5 suivant la date du dépôt de la demande définie au § 1er. La décision est prise en tenant compte de l'ensemble des éléments du dossier.
+[4 S'il n'est pas satisfait à la condition relative au caractère suffisant des ressources visée à l'article 10, § 5]4, le ministre ou son délégué doit déterminer, sur la base des besoins propres de l'étranger rejoint et des membres de sa famille, quels moyens de subsistance leur sont nécessaires pour subvenir à leurs besoins sans devenir une charge pour les pouvoirs publics. [8 A cette fin, l'étranger fournit, au moment de l'introduction de la demande, tous les documents et renseignements utiles pour déterminer ce montant. Le ministre ou son délégué tient compte, lors de son évaluation, de toutes les preuves valables qui sont produites à cet effet par l'étranger. Le Roi peut déterminer quels documents peuvent, le cas échéant, être produits pour l'évaluation des besoins]8.
+Dans des cas exceptionnels liés à la complexité de l'examen de la demande ainsi que dans le cadre d'une enquête concernant un mariage visé à l'article 146bis du Code civil ou les conditions [8 du partenariat visé à l'article 10, § 1er, alinéa 2]8, le ministre ou son délégué peut, à deux reprises, prolonger ce délai par période de trois mois, par une décision motivée, portée à la connaissance du demandeur.
+A l'expiration du délai de [5 neuf mois]5 suivant la date du dépôt de la demande, éventuellement prolongé conformément à [3 alinéa 3]3, si aucune décision n'a été prise, l'autorisation de séjour doit être délivrée.
+Dans le cadre de l'examen de la demande, il est dûment tenu compte de l'intérêt supérieur de l'enfant.]1
+(§ 2bis. Par dérogation aux §§ 1er et 2, la décision relative à la demande d'autorisation de séjour des membres de la famille visés à l'article 10bis, § 3, est prise au plus tard dans les quatre mois suivant l'introduction de la demande.
+Lorsque les documents requis ne sont pas produits ou dans des cas exceptionnels liés à la complexité de l'examen de la demande, le ministre ou son délégué peut prolonger, à une seule reprise, ce délai d'une période de trois mois, par une décision motivée portée à la connaissance du demandeur.
+A l'expiration du délai de quatre mois suivant l'introduction de la demande, éventuellement prolongé conformément à l'alinéa 2, si aucune décision n'a été prise, l'autorisation de séjour doit être délivrée lorsque les documents visés ont été produits. Elle est refusée dans le cas contraire. ";
+[2 § 2ter. Par dérogation au § 2, la décision relative à la demande d'autorisation de séjour des membres de la famille visés à l'article 10bis, § 4, est prise et notifiée au plus tard dans les quatre mois suivant la date du dépôt de la demande telle que définie au § 1er.
+Dans des cas exceptionnels liés à la complexité de l'examen de la demande, ainsi que dans le cadre d'une enquête concernant un mariage visé à l'article 146bis du Code civil ou les conditions[8 du partenariat visé à l'article 10, § 1er, alinéa 2]8, le ministre ou son délégué peut, par décision motivée portée à la connaissance du demandeur, prolonger, à une seule reprise, ce délai d'une période de trois mois.
+Si à l'expiration du délai de quatre mois suivant la date du dépôt de la demande, éventuellement prolongé conformément à l'alinéa 2, aucune décision n'a été prise, l'autorisation de séjour doit être délivrée lorsque les documents requis ont été produits. Dans le cas contraire, l'autorisation de séjour est refusée.]2
+[6 § 2quater. Par dérogation au paragraphe 2, la décision relative à l'autorisation de séjour des membres de la famille visés à l'[7 article 10bis, § 5,]7 est notifiée au plus tard nonante jours suivant la date du dépôt définie au paragraphe 1er.
+Lorsque la demande visée à l'alinéa 1er est introduite au même moment que la demande introduite conformément à l'article 61/34 ou à l'article 61/45 par le ressortissant d'un pays tiers qu'ils souhaitent rejoindre, le ministre ou son délégué traite ces demandes en même temps.]6
+[7 § 2quinquies. Par dérogation au paragraphe 2, la décision relative à la demande d'autorisation de séjour des membres de la famille visés à l'article 10bis, § 6, est notifiée au plus tard dans les nonante jours suivant l'introduction de la demande telle que définie au paragraphe 1er.
+Lorsque la demande visée à l'alinéa 1er est introduite au même moment que la demande introduite conformément à l'article 61/12 ou à l'article 61/13/8, par le ressortissant d'un pays tiers auquel ils veulent se joindre, le ministre ou son délégué traite ces demandes en même temps.]7
+§ 3. Le ministre ou son délégué peut décider de rejeter la demande d'autorisation de séjour de plus de trois mois soit pour les mêmes motifs que ceux visés à l'article 11, § 1er, 1° à 3°, soit lorsque l'étranger ne remplit pas ou plus les autres conditions de l'article 10bis, [4 ...]4 soit lorsqu'il est établi que le mariage, le partenariat ou l'adoption a été conclu uniquement pour lui permettre d'entrer ou de séjourner dans le Royaume. <L 2007-04-25/49, art. 6, 3°, 045; En vigueur : indéterminée et au plus tard 01-06-2008>
+----------
+(1)<L 2011-07-08/29, art. 4, 058; En vigueur : 22-09-2011>
+(2)<L 2012-05-15/16, art. 5, 067; En vigueur : 10-09-2012>
+(3)<L 2014-04-25/H2, art. 3, 078; En vigueur : 29-08-2014>
+(4)<L 2016-05-04/29, art. 10, 089; En vigueur : 07-07-2016>
+(5)<L 2016-05-17/07, art. 3, 090; En vigueur : 08-07-2016>
+(6)<L 2020-07-31/24, art. 7, 109; En vigueur : 01-09-2020>
+(7)<L 2022-08-21/05, art. 6, 116; En vigueur : 19-11-2022>
+(8)<L 2025-07-18/29, art. 7, 129; En vigueur : 18-08-2025>
+
+Art. 11.[1 § 1er. Le ministre ou son délégué peut décider que l'étranger qui déclare se trouver dans un des cas prévus à l'article 10 n'a pas le droit d'entrer ou de séjourner dans le Royaume, dans un des cas suivants :
+1° l'étranger ne remplit pas ou ne remplit plus les conditions de l'article 10;
+2° l'étranger et l'étranger rejoint n'entretiennent pas ou plus de vie conjugale ou familiale effective;
+3° sauf dérogations prévues par un traité international, l'étranger se trouve dans un des cas prévus à l'article 3, 5° à 8°, ou est atteint d'une des maladies pouvant mettre en danger la santé publique, énumérées à l'annexe à la présente loi;
+4° [2 ...]2 il est établi que le mariage, le partenariat ou l'adoption ont été conclus uniquement pour lui permettre d'entrer ou de séjourner dans le Royaume.
+[6 Dans le cas des membres de la famille visés à l'article 10, § 1er, alinéa 1er, 4°, et des membres de la famille visés à l'article 10, § 1er, alinéa 1er, 5°, dont les liens familiaux existaient déjà avant l'arrivée de l'étranger rejoint dans le Royaume]6, la décision ne peut pas être fondée uniquement sur le défaut de documents officiels prouvant le lien de parenté ou d'alliance conformes à l'article 30 de la loi du 16 juillet 2004 portant le Code de droit international privé ou aux conventions internationales portant sur la même matière.
+La décision indique, le cas échéant, la disposition de l'article 3 qui est appliquée.
+Dans le cas où la décision a été prise sur la base [2 de l'alinéa 1er, 2° ou 4°, de l'article 74/20 ou de l'article 74/21]2, les frais de rapatriement peuvent être récupérés auprès de l'étranger ou de la personne rejointe.
+§ 2. Le ministre ou son délégué peut décider que l'étranger qui a été admis à séjourner dans le Royaume sur la base de l'article 10 n'a plus le droit de séjourner dans le Royaume, dans un des cas suivants :
+1° l'étranger ne remplit plus une des conditions de l'article 10;
+2° l'étranger et l'étranger rejoint n'entretiennent pas ou plus une vie conjugale ou familiale effective;
+3° [6 [7 l'étranger admis à séjourner dans le Royaume en tant que partenaire enregistré conformément à l'article 10, § 1er, alinéa 1er, 4°, 5°, b), ou 6°, b),]7 ou l'étranger qu'il a rejoint, s'est marié avec une autre personne ou est lié à une autre personne par un partenariat enregistré conformément à une loi]6;
+4° [2 ...]2 il est établi que le mariage, le partenariat ou l'adoption ont été conclus uniquement pour lui permettre d'entrer ou de séjourner dans le Royaume;
+[5 5° il est mis fin au séjour de l'étranger qui a été rejoint.]5
+La décision [5 fondée sur l'alinéa 1er, 1°, 2°, 3° ou 5°]5 ne peut être prise qu'au cours des [2 cinq premières]2 années suivant la délivrance du titre de séjour ou, dans les cas visés à l'article 12bis, §§ 3 ou 4, suivant la délivrance du document attestant que la demande a été introduite. [7 Par dérogation à cette règle, cette décision ne peut être prise à l'égard des membres de la famille visés à l'article 10, § 1er, alinéa 1er, 4°, que tant qu'ils disposent d'un séjour de durée limitée.]7
+Le ministre ou son délégué peut procéder ou faire procéder à des contrôles en vue de la prorogation ou du renouvellement du titre de séjour, afin de vérifier si l'étranger remplit les conditions de l'article 10. Il peut à tout moment procéder ou faire procéder à des contrôles spécifiques lorsqu'il existe des présomptions fondées de fraude ou lorsque le mariage, le partenariat ou l'adoption a été conclu pour permettre à la personne concernée d'entrer ou de séjourner dans le Royaume.
+Le ministre ou son délégué ne peut mettre fin au séjour sur la base de l'alinéa 1er, 1°, 2° ou 3°, si l'étranger prouve avoir été victime au cours du mariage ou du partenariat d'un fait visé aux articles 375, 398 à 400, 402, 403 ou 405 du Code pénal. Dans les autres cas, le ministre ou son délégué prend particulièrement en considération la situation des personnes victimes de violences dans leur famille, qui ne forment plus une cellule familiale avec la personne qu'elles ont rejointe et nécessitent une protection. Dans ces cas, il informera la personne concernée de sa décision de ne pas mettre fin à son séjour sur la base de l'alinéa 1er, 1°, 2° ou 3°.
+Lors de sa décision de mettre fin au séjour [5 sur la base de l'alinéa 1er, 1°, 2°, 3° ou 5°]5, le ministre ou son délégué prend en considération la nature et la solidité des liens familiaux de la personne concernée et la durée de son séjour dans le Royaume, ainsi que l'existence d'attaches familiales, culturelles ou sociales avec son pays d'origine.
+Si la décision est prise sur la base [2 de l'alinéa 1er, 2° ou 4°, de l'article 74/20 ou de l'article 74/21]2, les frais de rapatriement peuvent être récupérés auprès de l'étranger ou de la personne qu'il a rejointe.]1
+[3 § 3. Le ministre ou son délégué peut décider dans l'un des cas suivants que l'étranger qui a été admis au séjour dans le Royaume pour une durée limitée en tant que bénéficiaire du statut de protection internationale, en vertu de l'article 49, § 1er, alinéa 2, ou de l'article 49/2, § 2, n'a plus le droit de séjourner dans le Royaume et lui délivrer un ordre de quitter le territoire :
+1° lorsque le statut de protection internationale a été [7 retiré par le Commissaire général aux réfugiés et aux apatrides conformément à l'article 14, paragraphe 1, a), ou 19, paragraphe 1, a), du règlement (UE) 2024/1347]7. Le ministre ou son délégué tient compte du niveau d'ancrage de l'étranger dans la société;
+2° lorsque le statut de protection internationale a été retiré par le Commissaire général aux réfugiés et aux apatrides conformément aux [7 articles 14, paragraphe 1, d) et e), ou 19, paragraphe 1, b), du règlement (UE) 2024/1347]7.
+Le ministre ou son délégué peut à tout moment décider de retirer le séjour de l'étranger qui a été admis au séjour dans le Royaume pour une durée limitée ou illimitée en tant que bénéficiaire du statut de protection internationale en vertu de l'article 49, § 1er, alinéa 2 ou 3, ou de l'article 49/2, §§ 2 ou 3, ou de mettre fin à ce séjour et lui délivrer un ordre de quitter le territoire lorsque le statut de protection internationale a été retiré par le Commissaire général aux réfugiés et aux apatrides conformément aux [7 aux articles 14, paragraphe 1, b) ou c), et 19, paragraphe 1, b) ou c), du règlement (UE) 2024/1347]7 ou lorsque l'étranger a renoncé à son statut de protection internationale.
+Lorsque le ministre ou son délégué envisage de prendre une décision telle que visée aux alinéas 1er et 2, il prend en considération la nature et la solidité des liens familiaux de l'intéressé, la durée de son séjour dans le Royaume ainsi que l'existence d'attaches familiales, culturelles ou sociales avec son pays d'origine."
+Sans préjudice de l'application du paragraphe 2, le ministre ou son délégué peut également mettre fin au droit de séjour [5 [6 des membres de la famille visés à l'article 10, § 1er, alinéa 1er, 4° à 6° ]6]5, s'il a été mis fin au droit de séjour de l'étranger qui a été rejoint ou s'il a été retiré sur la base de l'alinéa 1er ou 2.]3
+----------
+(1)<L 2011-07-08/29, art. 5, 058; En vigueur : 22-09-2011>
+(2)<L 2016-05-04/29, art. 11, 089; En vigueur : 07-07-2016>
+(3)<L 2016-06-01/07, art. 5, 091; En vigueur : 08-07-2016>
+(4)<L 2024-03-10/02, art. 4, 126; En vigueur : 01-09-2024>
+(5)<L 2024-03-10/03, art. 5, 127; En vigueur : 01-09-2024>
+(6)<L 2025-07-18/29, art. 8, 129; En vigueur : 18-08-2025>
+(7)<L 2026-06-16/01, art. 15, 135; En vigueur : 12-06-2026>
+
+Art. 12.L'étranger admis ou autorisé à séjourner plus de trois mois dans le Royaume est inscrit au registre des étrangers par l'administration communale du lieu de sa résidence. [Pour la seule application de la loi du 19 juillet 1991 relative aux [1 registres de la population, aux cartes d'identité, aux cartes d'étranger et aux documents de séjour]1 et modifiant la loi du 8 août 1983 organisant un Registre national des personnes physiques, le registre des étrangers est considéré comme faisant partie intégrante des registres de la population.] <L 1994-05-24/39, art. 6, 1°, 009; En vigueur : 01-02-1995>
+[Par dérogation à l'alinéa 1er, l'étranger [1 qui introduit une demande d'asile]1 est inscrit au registre d'attente visé à l'article 1er, [1 § 1er,]1 alinéa 1er, 2°, de la loi précitée du 19 juillet 1991.] <L 1994-05-24/39, art. 6, 2°, 009; En vigueur : 01-02-1995>
+Le Roi détermine le mode d'inscription et le modèle du titre de séjour délivré au moment de l'inscription et faisant foi de celle-ci.
+(La demande d'inscription doit être introduite par l'étranger dans les huit jours ouvrables de son entrée dans le Royaume s'il a obtenu l'autorisation de séjour ou s'est vu reconnaître le droit au séjour, à l'étranger. Elle doit être introduite dans les huit jours ouvrables de la réception de cette autorisation ou admission, si celle-ci a été obtenue ou reconnue dans le Royaume.) <L 2006-09-15/72, art. 10, 041; En vigueur : 01-06-2007>
+Le Roi peut, par arrêté délibéré en Conseil des Ministres et par voie de disposition générale, fixer un délai plus court dans des circonstances exceptionnelles.
+(alinéa abrogé) <L 1993-08-06/39, art. 3, 007; En vigueur : 01-03-1994>
+----------
+(1)<L 2009-05-06/03, art. 180, 050; En vigueur : 29-05-2009>
+
+Art. 12bis.[1 § 1er. [10 L'étranger qui déclare se trouver dans un des cas visés à l'article 10, § 1er, alinéa 1er, 1°, 2°, 3°, 5° ou 6°,]10 doit introduire sa demande auprès du représentant diplomatique ou consulaire belge compétent pour le lieu de sa résidence ou de son séjour à l'étranger.
+[10 L'étranger qui déclare se trouver dans un des cas visés à l'article 10, peut toutefois introduire sa demande auprès de l'administration communale de la localité où il séjourne dans les cas suivants:]10
+1° s'il est déjà admis ou autorisé à séjourner plus de trois mois dans le Royaume à un autre titre et présente toutes les preuves visées au § 2 avant la fin de cette admission ou autorisation;
+2° s'il est autorisé au séjour pour trois mois au maximum et, si la loi le requiert, qu'il dispose d'un visa valable en vue de conclure un mariage ou un partenariat en Belgique, si ce mariage ou partenariat a effectivement été conclu avant la fin de cette autorisation et s'il présente toutes les preuves visées au § 2 avant la fin de cette autorisation;
+3° s'il se trouve dans des circonstances exceptionnelles qui l'empêchent de retourner dans son pays pour demander le visa requis en vertu de l'article 2 auprès du représentant diplomatique ou consulaire belge compétent, et présente toutes les preuves visées au § 2 ainsi qu'une preuve de son identité;
+4° [10 s'il est un membre de la famille visé à l'article 10, § 1er, alinéa 1er, 5°, c) à f), ou 6°, c) à e), et est autorisé au séjour pour trois mois au maximum, ou s'il est un membre de la famille visé à l'article 10, § 1er, alinéa 1er, 4°, ou s'il est un membre de la famille visé à l'article 10, § 1er, alinéa 1er, 5°, d'un étranger admis à séjourner dans le Royaume conformément à l'article 57/45 et qui est présent sur le territoire du Royaume en raison de la demande d'admission au séjour pour apatridie mais qui, individuellement, ne remplit pas les conditions nécessaires pour obtenir cette protection, et pour autant que le lien familial existait déjà avant l'arrivée de l'étranger accompagné dans le Royaume]10]7;
+[8 5° [9 ...]9]8
+§ 2. Lorsque l'étranger visé au § 1er introduit sa demande auprès du représentant diplomatique ou consulaire belge compétent pour le lieu de sa résidence ou de son séjour à l'étranger, celle-ci doit être accompagnée des documents qui prouvent qu'il remplit les conditions visées à l'article 10, §§ 1er à 3, dont notamment un certificat médical d'où il résulte qu'il n'est pas atteint d'une des maladies énumérées à l'annexe à la présente loi ainsi qu'un extrait de casier judiciaire ou un document équivalent, s'il est âgé de plus de dix-huit ans.
+La date du dépôt de la demande est celle à laquelle tous ces documents, conformes à l'article 30 de la loi du 16 juillet 2004 portant le Code de droit international privé ou aux conventions internationales portant sur la même matière, sont produits.
+La décision relative à l'admission au séjour est prise et notifiée dans les plus brefs délais et au plus tard dans les [6 neuf mois]6 suivant la date du dépôt de la demande définie à l'alinéa 2. La décision est prise en tenant compte de l'ensemble des éléments du dossier.
+[5 S'il n'est pas satisfait à la condition relative au caractère suffisant des ressources visée à l'article 10, § 5]5, le ministre ou son délégué doit déterminer, en fonction des besoins propres de l'étranger rejoint et des membres de sa famille, les moyens d'existence nécessaires pour subvenir à leurs besoins sans devenir une charge pour les pouvoirs publics.[9 A cette fin, l'étranger fournit, au moment de l'introduction de la demande, tous les documents et renseignements utiles pour déterminer ce montant. Le ministre ou son délégué tient compte, lors de son évaluation, de toutes les preuves valables qui sont produites à cet effet par l'étranger. Le Roi peut déterminer quels documents peuvent, le cas échéant, être produits pour l'évaluation des besoins]9.
+Dans des cas exceptionnels liés à la complexité de l'examen de la demande ainsi que dans le cadre d'une enquête concernant un mariage visé à l'article 146bis du Code civil ou les conditions [9 du partenariat visé à l'article 10, § 1er, alinéa 2]9, le ministre ou son délégué peut, à deux reprises, prolonger ce délai par période de trois mois, par une décision motivée, portée à la connaissance du demandeur.
+A l'expiration du délai de [6 neuf mois]6 suivant la date du dépôt de la demande, éventuellement prolongé conformément à l'[4 alinéa 5]4, si aucune décision n'a été prise, l'admission au séjour doit être reconnue.
+§ 3. Dans les cas visés au § 1er, alinéa 2, 1° et 2°, lorsque l'étranger visé au § 1er se présente à l'administration communale du lieu de sa résidence et déclare se trouver dans un des cas prévus à l'article 10, il est, au vu des documents requis pour son entrée et son séjour et à la condition que toutes les preuves visées au § 2, alinéa 1er, soient produites, mis en possession d'une attestation de réception de la demande. L'administration communale informe le ministre ou son délégué de la demande et lui transmet sans délai copie de celle-ci.
+[5 Lorsque le ministre ou son délégué déclare la demande recevable ou lorsque dans un délai de cinq mois, suivant la délivrance de l'attestation de réception visée à l'alinéa 1er, aucune décision n'est portée à la connaissance du bourgmestre ou de son délégué, l'étranger est inscrit au registre des étrangers et est mis en possession d'un document attestant qu'il y est inscrit.]5
+En cas de décision favorable du ministre ou de son délégué sur l'admission au séjour ou si, dans un délai de [6 neuf mois]6 suivant la délivrance de l'attestation de réception visée à l'alinéa 1er, aucune décision n'est portée à la connaissance de l'administration communale, l'étranger est admis à séjourner.
+Dans des cas exceptionnels liés à la complexité de l'examen de la demande, ainsi que dans le cadre d'une enquête concernant un mariage visé à l'article 146bis du Code civil ou les conditions [9 du partenariat visé à l'article 10, § 1er, alinéa 2]9, et par une décision motivée, portée à la connaissance du demandeur avant l'expiration du délai prévu à l'alinéa 3, le ministre ou son délégué peut, à deux reprises [5 ...]5, prolonger ce délai d'une période de trois mois.
+[2 § 3bis. Par dérogation au § 2, alinéas 3, 5 et 6 et au § 3, alinéas 3 et 4, la décision relative à l'admission au séjour [9 des membres de la famille visés à l'article 10, § 1er, alinéa 1er, 6°, a) à e),]9 de l'étranger résident longue durée et ancien titulaire d'une carte bleue européenne, est prise et notifiée dans les plus brefs délais et au plus tard dans les quatre mois suivant la date du dépôt de la demande telle que définie au § 2, alinéa 2.
+Dans des cas exceptionnels liés à la complexité de l'examen de la demande, ainsi que dans le cadre d'une enquête concernant un mariage visé à l'article 146bis du Code civil ou les conditions [9 du partenariat visé à l'article 10, § 1er, alinéa 2]9, le ministre ou son délégué peut, par décision motivée, portée à la connaissance du demandeur, prolonger, à une seule reprise, ce délai d'une période de trois mois.
+Si à l'expiration du délai de quatre mois suivant la date du dépôt de la demande, éventuellement prolongé conformément à l'alinéa 2, aucune décision n'a été prise, l'admission au séjour doit être reconnue lorsque les documents requis ont été produits. Dans le cas contraire, l'admission au séjour est refusée.]2
+§ 4. Dans les cas visés au § 1er, alinéa 2, 3° [3 et 4°]3, lorsque l'étranger visé au § 1er se présente à l'administration communale du lieu de sa résidence et déclare se trouver dans un des cas prévus à l'article 10, celle-ci s'assure sans délai de la recevabilité de la demande auprès du ministre ou de son délégué. Lorsque celui-ci estime que l'étranger réunit les conditions du § 1er, alinéa 2, 3° [3 et 4°]3, il le communique à l'administration communale qui inscrit l'étranger au registre des étrangers et le met en possession d'un document attestant que la demande a été introduite et d'un document attestant qu'il est inscrit au registre des étrangers.
+L'appréciation de la situation d'ordre médical le cas échéant invoquée par l'étranger est effectuée par un fonctionnaire médecin ou un médecin désigné par le ministre ou son délégué qui rend un avis à ce sujet et peut, si nécessaire, examiner l'étranger et demander l'avis complémentaire d'experts, désignés conformément à [4 l'article 9ter, § 5]4.
+[2 Les dispositions du § 3, alinéas 3 et 4 et du § 3bis sont également applicables.]2
+§ 5.[9 Lorsque les membres de la famille visés à l'article 10, § 1er, alinéa 1er, 4°, et les membres de la famille visés à l'article 10, § 1er, alinéa 1er, 5°, dont les liens familiaux existaient déjà avant l'arrivée de l'étranger rejoint dans le Royaume]9, ne peuvent fournir les documents officiels qui prouvent qu'ils remplissent les conditions relatives au lien de parenté ou d'alliance, visées à l'article 10, il est tenu compte d'autres preuves valables produites au sujet de ce lien. A défaut, les dispositions prévues au § 6 peuvent être appliquées.
+§ 6. Lorsqu'il est constaté que l'étranger ne peut apporter la preuve des liens de parenté ou d'alliance invoqués, par des documents officiels conformes à l'article 30 de la loi du 16 juillet 2004 portant le Code de droit international privé ou aux conventions internationales portant sur la même matière, le ministre ou son délégué peut tenir compte d'autres preuves valables produites au sujet de ce lien.
+A défaut, Ie ministre ou son délégué peut procéder ou faire procéder à des entretiens avec l'étranger et l'étranger rejoint ou à toute enquête jugée nécessaire, et proposer, le cas échéant, une analyse complémentaire.
+§ 7. Dans le cadre de l'examen de la demande, il est dûment tenu compte de l'intérêt supérieur de l'enfant.]1
+----------
+(1)<L 2011-07-08/29, art. 6, 058; En vigueur : 22-09-2011>
+(2)<L 2012-05-15/16, art. 6, 067; En vigueur : 10-09-2012>
+(3)<L 2014-03-19/24, art. 8, 076; En vigueur : 15-05-2014>
+(4)<L 2014-04-25/H2, art. 4, 078; En vigueur : 29-08-2014>
+(5)<L 2016-05-04/29, art. 12, 089; En vigueur : 07-07-2016>
+(6)<L 2016-05-17/07, art. 4, 090; En vigueur : 08-07-2016>
+(7)<L 2024-03-10/02, art. 5, 126; En vigueur : 01-09-2024>
+(8)<L 2024-03-10/03, art. 6, 127; En vigueur : 01-09-2024>
+(9)<L 2025-07-18/29, art. 9, 129; En vigueur : 18-08-2025>
+(10)<L 2026-06-16/01, art. 16, 135; En vigueur : 12-06-2026>
+
+Art. 13.[1 § 1er. Sauf prévision expresse inverse, l'autorisation de séjour est donnée pour une durée limitée, soit fixée par la présente loi, soit en raison de circonstances particulières propres à l'intéressé, soit en rapport avec la nature ou la durée des prestations qu'il doit effectuer en Belgique.
+L'autorisation de séjour donnée pour une durée limitée sur la base de l'article 9ter devient illimitée à l'expiration de la période de cinq ans suivant la demande d'autorisation.
+L'admission au séjour en vertu de l'article 10 est reconnue pour une durée limitée pendant la [4 période de cinq ans]4 suivant la délivrance du titre de séjour ou, dans les cas visés à l'[2 article 12bis, §§ 3, 3bis ou 4]2, suivant la délivrance du document attestant que la demande a été introduite, à l'expiration de laquelle elle devient illimitée, pour autant que l'étranger remplisse encore les conditions de l'article 10. [4 Dans le cas contraire, le ministre ou son délégué refuse le séjour illimité, et octroie un nouveau séjour pour une durée limitée dont le renouvellement est subordonné à la possession de ressources suffisantes pour ne pas devenir une charge pour les pouvoirs publics et d'une assurance maladie couvrant l'ensemble des risques et pour autant que l'étranger ne constitue pas un danger pour l'ordre public et/ou la sécurité nationale.]4
+[7 [8 Par dérogation à l'alinéa 3, les membres de la famille visés à l'article 10, § 1er, alinéa 1er, 5°, f), doivent, pour l'octroi d'un séjour d'une durée illimitée,-8]7 doivent également prouver qu'ils disposent de moyens de subsistances stables, suffisants et réguliers tels que prévus à l'article 10, § 5.
+[8 Par dérogation à l'alinéa 3, les membres de la famille d'un étranger autorisé au séjour pour une durée limitée, auxquels l'article 10, § 1er, alinéa 1er, 1°, est applicable, obtiennent un titre de séjour dont la durée de validité est identique à celle du titre de séjour de l'étranger rejoint]8]3.
+[9 Par dérogation à l'alinéa 3 et sous réserve de l'article 23, paragraphes 3 à 5, du règlement (UE) 2024/1347, les membres de la famille visés à l'article 10, § 1er, alinéa 1er, 4°, reçoivent un titre de séjour dont la durée de validité expire à la même date que celle du titre de séjour de l'étranger qu'ils accompagnent. Ce titre de séjour peut être renouvelé pour autant que le titre de séjour délivré à l'étranger admis à séjourner dans le Royaume en tant que bénéficiaire d'un statut de protection internationale est renouvelé et sous condition que le membre de la famille remplit toujours les conditions prévues à l'article 23 du règlement (UE) 2024/1347. L'admission au séjour devient de durée illimitée lorsque l'étranger accompagné dispose d'un titre de séjour de durée illimité et pour autant que le membre de la famille remplit toujours les conditions prévues à l'article 23 du règlement (UE) 2024/1347]9.
+[4 ...]4 Le Roi fixe la durée de validité du titre de séjour délivré à l'étranger autorisé ou admis au séjour pour une durée illimitée.
+Les membres de la famille visés à [5 l'article 10bis, §§ 1er à 6]5, obtiennent un titre de séjour dont le terme de validité est identique à celui du titre de séjour de l'étranger rejoint.
+§ 2. Le titre de séjour est prorogé ou renouvelé, à la demande de l'intéressé, par l'administration communale du lieu de sa résidence, à la condition que cette demande ait été introduite avant l'expiration du titre et que le ministre ou son délégué ait prorogé l'autorisation pour une nouvelle période ou n'ait pas mis fin à l'admission au séjour.
+Le Roi détermine les délais et les conditions dans lesquels le renouvellement ou la prorogation des titres de séjour doit être demandé.
+§ 2bis. [4 ...]4
+§ 3. Le ministre ou son délégué peut donner l'ordre de quitter le territoire à l'étranger autorisé à séjourner dans le Royaume pour une durée limitée, fixée par la loi ou en raison de circonstances particulières propres à l'intéressé ou en rapport avec la nature ou de la durée de ses activités en Belgique, dans un des cas suivants :
+1° lorsqu'il prolonge son séjour dans le Royaume au-delà de cette durée limitée;
+2° lorsqu'il ne remplit plus les conditions mises à son séjour;
+3° [4 ...]4
+[4 [7 [8 Lorsque l'étranger visé à l'alinéa 1er s'est fait accompagner ou rejoindre par un membre de la famille visé à l'article 10, § 1er, alinéa 1er, 4° à 6° ]8°]7, le ministre ou son délégué prend en considération la nature et la solidité des liens familiaux de l'intéressé, la durée de son séjour sur le territoire du Royaume, l'existence d'attaches familiales, culturelles ou sociales avec son pays d'origine.]4
+§ 4. Le ministre ou son délégué peut prendre la même mesure à l'égard [8 des membres de la famille visés à l'article 10bis, §§ 2 et 2/1]8, dans un des cas suivants :
+1° il est mis fin au séjour de l'étranger rejoint [7 ...]7;
+2° l'étranger ne remplit plus les conditions mises à son séjour;
+3° l'étranger et l'étranger rejoint n'entretiennent pas ou plus une vie conjugale ou familiale effective;
+4°[8 l'étranger autorisé au séjour dans le Royaume en tant que partenaire enregistré conformément à une loi au sens de l'article 10, § 1er, alinéa 1er, 6°, b), ou l'étranger qu'il a rejoint, s'est marié avec une autre personne ou est lié à une autre personne par un partenariat enregistré conformément à une loi]8;
+5° [4 ...]4 il est établi que le mariage, le partenariat ou l'adoption ont été conclu uniquement pour lui permettre d'entrer ou de séjourner dans le Royaume.
+[6 Le ministre ou son délégué peut prendre la même mesure à l'égard des membres de la famille visés à l'article 10bis, § 1er]6.
+Lors de sa décision de délivrer un ordre de quitter le territoire sur la base de l'alinéa 1er, 1° à 4°, le ministre ou son délégué prend en considération la nature et la solidité des liens familiaux de la personne et la durée de son séjour dans le Royaume, ainsi que l'existence d'attaches familiales, culturelles ou sociales avec son pays d'origine.
+§ 5. [4 ...]4
+§ 6. L'ordre de quitter le territoire indique qu'il a été fait application des dispositions du présent article.
+Le ministre ou son délégué peut procéder ou faire procéder à des contrôles en vue de la prorogation ou du renouvellement du titre de séjour, afin de vérifier si l'étranger remplit les conditions de l'article 10bis. Il peut à tout moment procéder ou faire procéder à des contrôles spécifiques lorsqu'il existe des présomptions fondées [4 ...]4 que le mariage, le partenariat ou l'adoption a été conclu pour permettre à la personne concernée d'entrer ou de séjourner dans le Royaume.]1
+----------
+(1)<L 2011-07-08/29, art. 7, 058; En vigueur : 22-09-2011>
+(2)<L 2012-05-15/16, art. 7, 067; En vigueur : 10-09-2012>
+(3)<L 2014-04-25/H2, art. 5, 078; En vigueur : 29-08-2014>
+(4)<L 2016-05-04/29, art. 13, 089; En vigueur : 07-07-2016>
+(5)<L 2020-07-31/24, art. 8, 109; En vigueur : 01-09-2020>
+(6)<L 2021-07-11/10, art. 6, 112; En vigueur : 15-08-2021>
+(7)<L 2024-03-10/03, art. 7, 127; En vigueur : 01-09-2024>
+(8)<L 2025-07-18/29, art. 10, 129; En vigueur : 18-08-2025>
+(9)<L 2026-06-16/01, art. 17, 135; En vigueur : 12-06-2026>
+
+CHAPITRE IV. [1 - Etablissement et statut de résident de longue durée-UE.]1
+----------
+(1)<L 2016-05-04/29, art. 14, 089; En vigueur : 07-07-2016>
+
+Art. 14. Pour s'établir dans le Royaume, l'étranger doit y être autorisé par le (Ministre) ou son délégué. <L 1996-07-15/33, art. 4, 012; En vigueur : 16-12-1996>
+(Cette autorisation ne peut être accordée qu'à l'étranger qui est admis ou autorisé à séjourner dans le Royaume pour plus de trois mois, pour autant que cette admission ou autorisation ne soit pas donnée pour une durée limitée, fixée par la présente loi ou en raison de circonstances particulières propres à l'intéressé ou en rapport avec la nature et la durée des activités en Belgique.) <L 2006-09-15/72, art. 13, 041; En vigueur : 01-06-2007>
+
+Art. 15.<L 2006-09-15/72, art. 14, 041; En vigueur : 01-06-2007> [3 Sans préjudice de dispositions plus favorables contenues dans un traité international et sauf si l'étranger qui le demande se trouve dans un des cas prévus à l'article 3, alinéa 1er, 5° à 8°, l'autorisation d'établissement est accordée à l'étranger qui justifie du séjour régulier et ininterrompu de cinq ans dans le Royaume]3.
+Le ministre ou son délégué peut procéder ou faire procéder à des contrôles, afin de vérifier si l'étranger remplit les conditions fixées. Il peut à tout moment procéder ou faire procéder à des contrôles spécifiques lorsqu'il existe des présomptions fondées [1 ...]1 que le mariage, le partenariat ou l'adoption a été conclu pour permettre à la personne concernée d'entrer ou de séjourner dans le Royaume.
+----------
+(1)<L 2016-05-04/29, art. 15, 089; En vigueur : 07-07-2016>
+(2)<L 2024-03-10/03, art. 8, 127; En vigueur : 01-09-2024>
+(3)<L 2025-07-18/29, art. 11, 129; En vigueur : 18-08-2025>
+
+Art. 15bis.<inséré par L 2007-04-25/49, art. 10, En vigueur : 01-06-2008> § 1er. Sauf si des raisons d'ordre public ou de sécurité nationale s'y opposent, le statut de résident de longue durée doit être accordé à l'étranger non citoyen de l'Union européenne qui répond aux conditions fixées au § 3 [2 ...]2 et qui justifie d'un séjour légal et ininterrompu dans le Royaume au cours des cinq ans qui précèdent immédiatement la demande d'acquisition du statut de résident de longue durée.
+[2 L'alinéa 1er ne s'applique pas à l'étranger qui :
+1° est autorisé à séjourner dans le Royaume pour faire des études ou suivre une formation professionnelle;
+2° est autorisé à séjourner dans le Royaume en vertu d'une protection temporaire ou qui a demandé une autorisation de séjour à ce titre et qui attend une décision sur le statut;
+3° est autorisé à séjourner dans le Royaume en vertu d'une forme de protection autre que la protection internationale ou qui a demandé une autorisation de séjour à ce titre et qui attend une décision sur le statut;
+4° a demandé une protection internationale et dont la demande n'a pas encore fait l'objet d'une décision définitive;
+5° séjourne dans le Royaume exclusivement pour des motifs à caractère temporaire;
+6° a un statut juridique régi par les dispositions de la Convention de Vienne du 18 avril 1961 sur les relations diplomatiques, de la Convention de Vienne du 24 avril 1963 sur les relations consulaires, de la Convention de New York du 8 décembre 1969 sur les missions spéciales ou de la Convention de Vienne du 14 mars 1975 sur la représentation des Etats dans leurs relations avec les organisations internationales de caractère universel.]2
+§ 2. [2 Pour le calcul du séjour de cinq ans visé au § 1er, alinéa 1er, il n'est pas tenu compte de la ou des périodes visées au § 1er, alinéa 2, 5° et 6°.
+La ou les périodes visées au § 1er, alinéa 2, 1°, sont prises en compte pour moitié.
+En ce qui concerne l'étranger auquel la protection internationale a été accordée, [4 ...]4 la période comprise entre la date de l'introduction de la demande de protection internationale sur la base de laquelle cette protection internationale a été accordée et la date de la délivrance du titre de séjour [4 ...]4 est prise en considération.
+Les périodes visées à l'alinéa 3 et les périodes de séjour en tant que bénéficiaire de la protection internationale, ne sont pas prises en considération si la protection internationale a été retirée [3 conformément aux [4 articles 14, paragraphe 1, b) ou c), ou 19, paragraphe 1, b) ou c), du règlement (UE) 2024/1347]4]3.
+[4 Lorsque l'étranger bénéficiant d'une protection internationale en Belgique est retrouvé dans un autre Etat membre sans avoir le droit d'y habiter ou d'y séjourner conformément au droit national, au droit de l'Union ou au droit international applicable, la période de séjour légal en Belgique antérieure à cette situation n'est pas prise en considération pour le calcul de la durée de séjour de cinq ans visée au paragraphe 1er, alinéa 1er. Le ministre ou son délégué peut déroger à cette règle si l'étranger prouve que la situation était due à des circonstances indépendantes de sa volonté.]4
+En ce qui concerne l'étranger qui a été autorisé au séjour en application de l'article 61/27, les périodes de séjours effectués dans les différents Etats membres de l'Union européenne peuvent être cumulées pour le calcul de la période requise de cinq ans, à condition de justifier de cinq années de séjour légal et ininterrompu sur le territoire de l'Union en tant que titulaire d'une carte bleue européenne, dont deux années précédant immédiatement l'introduction de la demande dans le Royaume.]2
+§ 3. L'étranger visé au § 1er doit apporter la preuve qu'il dispose, pour lui-même et les membres de sa famille qui sont à sa charge, de moyens de subsistance stables, réguliers et suffisants pour subvenir à ses propres besoins et à ceux des membres de sa famille afin d'éviter de devenir une charge pour les pouvoirs publics, ainsi que d'une assurance-maladie couvrant les risques en Belgique.
+Les moyens de subsistance vises à l'alinéa 1er doivent au moins correspondre au niveau de ressources en deçà duquel une aide sociale peut être accordée. Dans le cadre de leur évaluation, il est tenu compte de leur nature et leur régularité.
+Le Roi fixe, par arrêté royal délibéré en Conseil des Ministres et compte tenu des critères définis dans l'alinéa 2, le montant minimum des moyens de subsistance requis.
+§ 4. Le délai de cinq ans visé au § 1er n'est pas interrompu par des absences inférieures à six mois consécutifs et qui ne dépassent pas au total une durée de dix mois sur le délai total de cinq ans.
+[1 A l'égard de l'étranger autorisé au séjour en application de l'article 61/27, les absences du territoire de l'Union n'interrompent pas le délai de cinq ans, si elles ne durent pas plus de douze mois consécutifs et ne dépassent pas au total dix-huit mois sur l'ensemble de la période de cinq ans.]1
+Ces périodes d'absence sont en outre prises en compte dans le calcul du délai.
+----------
+(1)<L 2012-05-15/16, art. 8, 067; En vigueur : 10-09-2012>
+(2)<L 2014-03-19/24, art. 9, 076; En vigueur : 15-05-2014>
+(3)<L 2017-11-21/17, art. 6, 100; En vigueur : 22-03-2018>
+(4)<L 2026-06-16/01, art. 18, 135; En vigueur : 12-06-2026>
+
+Art. 16.[1 § 1er. La demande d'autorisation d'établissement est adressée à l'administration communale du lieu de résidence. Cette administration communale en délivre un accusé de réception et la transmet au ministre ou à son délégué, pour autant que l'étranger réponde à la condition visée à l'article 14, alinéa 2, et, lorsque son identité n'est pas établie, qu'il produise la copie d'un passeport valable.
+Le Roi fixe le modèle de la demande d'autorisation d'établissement.
+§ 2. La demande d'acquisition du statut de résident de longue durée est adressée à l'administration communale du lieu de résidence. Cette administration communale en délivre un accusé de réception et la transmet au ministre ou à son délégué, pour autant que l'étranger soit porteur d'un titre de séjour ou d'établissement valable et, lorsque son identité n'est pas établie, qu'il produise la copie d'un passeport valable. Cette demande doit être accompagnée des preuves attestant de la réunion des conditions fixées à l'article 15bis, § 3.
+Le Roi fixe le modèle de la demande d'acquisition du statut de résident de longue durée, les règles relatives au traitement de cette demande ainsi que les conséquences de l'absence de décision à l'expiration du délai fixé.
+§ 3. L'étranger non établi, qui répond à la condition fixée à l'article 14, alinéa 2, peut, à son choix, demander l'autorisation d'établissement ou l'acquisition du statut de résident de longue durée. La demande d'acquisition du statut de résident de longue durée vaut demande d'autorisation d'établissement.
+L'étranger établi peut à tout moment demander l'acquisition du statut de résident de longue durée.]1
+----------
+(1)<L 2014-03-19/24, art. 10, 076; En vigueur : 15-05-2014>
+
+Art. 16bis. [1 Lorsque l'octroi du statut de résident de longue durée est refusé pour des raisons d'ordre public ou de sécurité nationale, le ministre ou son délégué prend en considération la gravité ou la nature de l'infraction contre l'ordre public ou la sécurité nationale, ou le danger que représente la personne concernée, tout en tenant compte également de la durée du séjour et de l'existence de liens avec le Royaume. Les raisons ne peuvent être invoquées à des fi ns économiques.]1
+----------
+(1)<Inséré par L 2014-03-19/24, art. 11, 076; En vigueur : 15-05-2014>
+
+Art. 17.(§ 1er.) L'étranger autorisé à s'établir dans le Royaume est inscrit au registre de la population de la commune de sa résidence <L 2007-04-25/49, art. 12, 045; En vigueur : indéterminée et au plus tard 01-06-2008>.
+Le Roi détermine le mode d'inscription et le modèle du titre d'établissement délivré au moment de l'inscription et faisant foi de celle-ci.
+(§ 2. [2 Lorsque l'étranger se voit]2, accorder le statut de résident de longue durée, il lui est délivré un [2 permis de séjour de résident de longue durée - UE]2.
+Il lui est remis à cette occasion un document, rédigé dans une des trois langues nationales et en anglais, l'informant de ses droits et obligations sur la base de la directive 2003/109/CE du Conseil de l'Union européenne du 25 novembre 2003 relative au statut des ressortissants de pays tiers résidents de longue durée.
+Le Roi détermine le modèle du [2 permis de séjour de résident de longue durée - UE]2. Ce titre de séjour [2 ...]2 fait foi de l'inscription au registre de la population.
+[2 ...]2
+[1 Lorsque le statut du résident longue durée est accordé au titulaire d'une carte bleue européenne, il lui est délivré un permis de séjour de résident longue durée reprenant la mention spéciale " ancien titulaire d'une carte bleue européenne.]1
+[2 § 3. Lorsque le ministre ou son délégué accorde le statut de résident de longue durée à l'étranger visé à l'article 61/7, il notifie sa décision à l'Etat membre de l'Union européenne qui a déjà délivré à cet étranger un permis de séjour de résident de longue durée - UE sur la base de la Directive 2003/109/CE précitée du Conseil de l'Union européenne.
+§ 4. Lorsque le statut du résident de longue durée est accordé au titulaire d'une carte bleue européenne, il lui est délivré un permis de séjour de résident de longue durée - UE reprenant la mention spéciale " ancien titulaire d'une carte bleue européenne ".
+§ 5. Lorsque le statut de résident de longue durée est accordé à un étranger qui bénéficie de la protection internationale dans le Royaume ou dans un autre Etat membre de l'Union européenne, il lui est délivré un permis de séjour de résident de longue durée - UE reprenant la mention spéciale que la protection internationale a été accordée par la Belgique ou par un autre Etat membre de l'Union européenne ainsi que la date à laquelle cette protection a été accordée.
+Le Roi détermine les autres modalités et conditions relatives à cette mention spéciale.
+§ 6. Le ministre ou son délégué répond aux demandes introduites par d'autres Etats membres conformément à la Directive 2003/109/CE précitée du Conseil de l'Union européenne, visant à savoir si un étranger bénéficie toujours d'une protection internationale dans le Royaume, dans le mois de la réception de la demande.
+A cette fin, le ministre ou son délégué peut recueillir l'avis du Commissaire général ou de l'un de ses adjoints.]2
+----------
+(1)<L 2012-05-15/16, art. 9, 067; En vigueur : 10-09-2012>
+(2)<L 2014-03-19/24, art. 12, 076; En vigueur : 15-05-2014>
+
+Art. 18.<L 2007-04-25/49, art. 13, 045; En vigueur : indéterminée et au plus tard 01-06-2008> § 1er. Sous réserve des dispositions de l'article 19, la durée de validité de l'autorisation d'établissement et du statut de résident de longue durée est illimitée.
+Le Roi fixe la durée du titre qui constate l'autorisation d'établissement et du [1 permis de séjour de résident de longue durée - UE]1.
+§ 2. [2 ...]2
+§ 3. [3 Le ministre ou son délégué peut décider que l'étranger qui a été autorisé à s'établir dans le Royaume sur la base de l'article 14 ou qui a acquis le statut de résident de longue durée sur la base de l'article 15bis, en tant que bénéficiaire de la protection internationale, n'a plus le droit de séjourner dans le Royaume et/ou perd ce statut lorsque le statut de protection internationale a été retirée conformément aux articles [4 14, paragraphe 1, b) ou c), ou 19, paragraphe 1, b) ou c), du règlement (UE) 2024/1347]4.
+Lorsque le ministre ou son délégué envisage de prendre une décision de fin de séjour telle que visée à l'alinéa 1er, il prend en considération la nature et de la solidité des liens familiaux de l'intéressé, la durée de son séjour dans le Royaume ainsi que l'existence d'attaches familiales, culturelles ou sociales avec son pays d'origine.]3
+----------
+(1)<L 2014-03-19/24, art. 13, 076; En vigueur : 15-05-2014>
+(2)<L 2016-05-04/29, art. 16, 089; En vigueur : 07-07-2016>
+(3)<L 2016-06-01/07, art. 6, 091; En vigueur : 08-07-2016>
+(4)<L 2026-06-16/01, art. 19, 135; En vigueur : 12-06-2026>
+
+CHAPITRE IVbis. - (Abrogé) <L 2003-12-22/42, art. 419, 029; En vigueur : 10-01-2004>
+
+Art. 18bis. <L 2007-04-25/49, art. 14, 045; En vigueur : indéterminée et au plus tard 01-06-2008> L'étranger auquel a été accordé le statut de résident de longue durée dans le Royaume perd ce statut lorsque le même statut lui est accordé dans un autre Etat membre de l'Union européenne, en application de la directive 2003/109/CE du Conseil de l'Union européenne du 25 novembre 2003 relative au statut des ressortissants de pays tiers résidents de longue durée.
+
+CHAPITRE V. - ABSENCES ET RETOURS DE L'ETRANGER.
+
+Art. 19.<L 2007-04-25/49, art. 15, 045; En vigueur : indéterminée et au plus tard 01-06-2008> § 1er. L'étranger, qui est porteur d'un titre de séjour ou d'établissement belge valable et quitte le pays, dispose d'un droit de retour dans le Royaume pendant un an.
+L'étranger bénéficiant du statut de résident de longue durée sur la base de l'article 15bis, ne perd par contre son droit de retour dans le Royaume que s'il s'absente des territoires des Etats membres de l'Union européenne pendant douze mois consécutifs ou lorsqu'il a quitté le Royaume depuis six ans au moins.
+[1 Un étranger autorisé au séjour en application de l'article 61/27 et ayant obtenu ensuite le statut de résident de longue durée, perd son droit de retour dans le Royaume uniquement s'il quitte le territoire des Etats membres de l'Union européenne pendant vingt quatre mois consécutifs. Cette même disposition s'applique [6 ainsi que les membres de sa famille visés à l'article 10, § 1er, alinéa 1er, 4° à 6°]6, qui ont obtenu le statut de résident de longue durée.]1
+[4 L'étranger visé à l'article 61/12 et qui a fait usage de son droit à la mobilité de longue durée dans un autre Etat membre, conserve son droit de retour tant que son permis belge pour chercheur est valable.]4
+Le Roi fixe, par arrêté royal délibéré en Conseil des Ministres, les conditions et les cas dans lesquels l'étranger bénéficiant du statut de résident de longue durée qui était absent des territoires des Etats membres de l'Union européenne pendant douze mois [1 ou vingt-quatre mois]1 consécutifs, ne perd pas son droit de retour dans le Royaume.
+L'étranger qui prévoit que son absence du Royaume se prolongera au-delà du terme de validité du titre de séjour peut en obtenir la prorogation ou le renouvellement anticipé.
+L'autorisation de rentrer dans le Royaume ne peut lui être refusée que pour raisons d'ordre public ou de sécurité nationale, ou s'il ne respecte pas les conditions mises à son séjour.
+§ 2. L'étranger visé au § 1er, alinéa 1er, dont l'absence du Royaume est supérieure à un an, peut, dans les conditions et les cas fixés par un arrêté royal délibéré en Conseil des ministres, être autorise à revenir dans le Royaume.
+L'étranger visé au § 1er, [1 alinéas 2 et 3]1, qui a perdu son droit de retour, peut, dans les conditions et les cas fixés par un arrêté royal délibéré en Conseil des Ministres, recouvrer le statut de résident de longue durée.
+§ 3. Le Roi règle les conditions de validité et de renouvellement des titres de séjour et d'établissement ou du [2 permis de séjour de résident de longue durée - UE]2 de l'étranger qui, après s'être absenté, revient dans le Royaume.
+§ 4. [2 Même si la durée de validité du titre de séjour délivré en Belgique est expirée, le ministre ou son délégué est tenu de reprendre en charge :
+1° l'étranger qui est porteur d'un permis de séjour de résident de longue durée - UE belge et qui fait l'objet d'une décision d'éloignement prise par l'autorité compétente d'un autre Etat membre de l'Union européenne, suite à un refus de prorogation ou suite à un retrait du titre de séjour délivré par cet autre Etat membre sur la base de la Directive 2003/109/CE précitée du Conseil de l'Union européenne, pour des raisons d'ordre public ou de sécurité nationale, lorsque les conditions mises à son séjour ne sont plus remplies ou lorsqu'il séjourne de manière illégale dans l'Etat concerné, [5 [6 ainsi que les membres de sa famille visés à l'article 10, § 1er, alinéa 1er, 4° à 6°]6]5, sous réserve de l'application du § 1er, alinéa 2;
+2° l'étranger qui bénéficie de la protection internationale dans le Royaume, qui a obtenu le statut de résident de longue durée dans un autre Etat membre de l'Union européenne, et qui fait l'objet d'une décision d'éloignement prise par l'autorité compétente de cet Etat membre, en raison d'une [3 menace réelle, actuelle et suffisamment grave]3 pour l'ordre public ou la sécurité nationale, [5 [6 ainsi que les membres de sa famille visés à l'article 10, § 1er, alinéa 1er, 4° à 6°]6]5 ;
+3° l'étranger autorisé au séjour en application de l'article 61/27 qui fait l'objet d'une décision d'éloignement prise par l'autorité compétente d'un autre Etat membre de l'Union européenne à la suite du refus de sa demande de séjour sur la base des dispositions de la Directive 2009/50/CE du Conseil du 25 mai 2009 établissant les conditions d'entrée et de séjour des ressortissants de pays tiers aux fi ns d'un emploi hautement qualifié,[6 ainsi que les membres de sa famille visés à l'article 10, § 1er, alinéa 1er, 6°, a) à e]6.]2
+[4 § 5. Lorsque le ressortissant d'un pays tiers, qui fait usage du droit à la mobilité, ne remplit pas ou plus les conditions de la mobilité dans le deuxième Etat membre ou lorsque l'autorisation délivrée par le ministre ou son délégué, a expiré ou qu'il y a été mis fin ou qu'elle a été retirée au cours de la période de mobilité dans le deuxième Etat membre, le ministre ou son délégué autorise à nouveau l'entrée du ressortissant de pays tiers dans le Royaume, sans formalités et immédiatement, à la demande du deuxième Etat membre.
+Le Roi peut fixer:
+1° les cas dans lesquels un document est délivré au ressortissant d'un pays tiers;
+2° le document qui est délivré, le cas échéant.]4
+----------
+(1)<L 2012-05-15/16, art. 10, 067; En vigueur : 10-09-2012>
+(2)<L 2014-03-19/24, art. 14, 076; En vigueur : 15-05-2014>
+(3)<L 2017-02-24/21, art. 9, 094; En vigueur : 29-04-2017>
+(4)<L 2022-08-21/05, art. 7, 116; En vigueur : 19-11-2022>
+(5)<L 2024-03-10/03, art. 9, 127; En vigueur : 01-09-2024>
+(6)<L 2025-07-18/29, art. 12, 129; En vigueur : 18-08-2025>
+
+Art. 19/1. [1 L'étranger admis au séjour limité visé aux articles 49, § 1er, alinéa 1er, ou 49/2, § 1er, alinéa 1er, est tenu d'avertir l'administration communale du lieu de sa résidence s'il entend se rendre dans son pays d'origine ou, dans le cas d'un apatride, dans le pays dans lequel il avait sa résidence habituelle.
+L'administration communale transmet cette information au ministre ou son délégué qui en informe immédiatement le Commissaire général aux réfugiés et aux apatrides.]1
+----------
+(1)<Inséré par L 2017-11-21/17, art. 7, 100; En vigueur : 22-03-2018>
+
+CHAPITRE VI. [1 - Fin du séjour de plus de trois mois pour des raisons d'ordre public ou de sécurité nationale.]1
+----------
+(1)<L 2017-02-24/21, art. 10, 094; En vigueur : 29-04-2017>
+
+Art. 20.[1 Sans préjudice des dispositions plus favorables contenues dans un traité international et du principe de non-refoulement, le présent chapitre s'applique aux ressortissants de pays tiers admis ou autorisés à séjourner plus de trois mois sur le territoire du Royaume.
+Il ne s'applique pas aux ressortissants de pays tiers qui bénéficient de la protection internationale dans le Royaume.]1
+----------
+(1)<L 2017-02-24/21, art. 11, 094; En vigueur : 29-04-2017>
+
+Art. 21.[1 Le ministre ou son délégué peut mettre fin au séjour d'un ressortissant de pays tiers admis ou autorisé au séjour pour une durée limitée ou illimitée [2 ...]2 pour des raisons d'ordre public ou de sécurité nationale.
+[2 ...]2]1
+----------
+(1)<L 2017-02-24/21, art. 12, 094; En vigueur : 29-04-2017>
+(2)<L 2019-05-08/12, art. 9, 106; En vigueur : 19-07-2019>
+
+Art. 22.[1 § 1er. Le ministre peut mettre fin au séjour des ressortissants de pays tiers suivants [2 ...]2 pour des raisons graves d'ordre public ou de sécurité nationale :
+1° le ressortissant de pays tiers établi;
+2° le ressortissant de pays tiers qui bénéficie du statut de résident de longue durée dans le Royaume;
+3° le ressortissant de pays tiers qui est autorisé ou admis à séjourner plus de trois mois dans le Royaume depuis dix ans au moins et qui y séjourne depuis lors de manière ininterrompue.
+[2 ...]2]1
+----------
+(1)<L 2017-02-24/21, art. 13, 094; En vigueur : 29-04-2017>
+(2)<L 2019-05-08/12, art. 10, 106; En vigueur : 19-07-2019>
+
+Art. 23.[1 § 1er. Les décisions de fin de séjour prises en vertu des articles 21 et 22 sont fondées exclusivement sur le comportement personnel de l'intéressé et ne peuvent être justifiées par des raisons économiques.
+Le comportement de l'intéressé doit représenter une menace réelle, actuelle et suffisamment grave pour un intérêt fondamental de la société. Des justifications non directement liées au cas individuel concerné ou tenant à des raisons de prévention générale ne peuvent être retenues.
+§ 2. Il est tenu compte, lors de la prise de décision, de la gravité ou de la nature de l'infraction à l'ordre public ou à la sécurité nationale qu'il a commise, ou du danger qu'il représente ainsi que de la durée de son séjour dans le Royaume.
+Il est également tenu compte de l'existence de liens avec son pays de résidence ou de l'absence de lien avec son pays d'origine, de son âge et des conséquences pour lui et les membres de sa famille.]1
+----------
+(1)<L 2017-02-24/21, art. 14, 094; En vigueur : 29-04-2017>
+
+Art. 24.[1 § 1er. Lorsqu'il est mis fin au séjour d'un ressortissant de pays tiers autorisé au séjour en application de l'article 61/7, en tant que bénéficiaire du statut de résident de longue durée dans un autre Etat membre, cet Etat membre est informé du fait qu'il a été mis fin à son séjour. En cas d'éloignement, l'intéressé est éloigné dans le respect des limites prévues par l'article 61/8.
+§ 2. Lorsqu'il est mis fin au séjour d'un ressortissant de pays tiers bénéficiant du statut de résident de longue durée dans le Royaume et qui a obtenu la protection internationale dans un autre Etat membre, il est demandé à cet Etat membre de confirmer si l'intéressé y bénéficie toujours de la protection internationale. En cas d'éloignement, l'intéressé est éloigné vers cet autre Etat membre s'il y bénéficie toujours de la protection internationale.
+Par dérogation à l'alinéa 1er, l'intéressé peut être éloigné vers un autre pays que l'Etat membre qui lui a accordé la protection internationale lorsqu'il existe des raisons sérieuses de considérer qu'il constitue une menace pour la sécurité nationale ou lorsque, ayant été condamné définitivement pour une infraction particulièrement grave, il constitue une menace pour l'ordre public.
+§ 3. L'intéressé ne peut en aucun cas être éloigné vers un pays où il est exposé à une violation du principe de non-refoulement.]1
+----------
+(1)<L 2019-05-08/12, art. 11, 106; En vigueur : 19-07-2019>
+
+CHAPITRE VIbis. [1 - Mesures de sûreté [2 et signalements]2.]1
+----------
+(1)<Inséré par L 2017-02-24/21, art. 16, 094; En vigueur : 29-04-2017>
+(2)<L 2023-03-02/03, art. 20, 118; En vigueur : 19-03-2023>
+
+Art. 24/1. [1 Le ressortissant d'un pays tiers qui fait l'objet d'une décision d'éloignement assortie d'une obligation de retour ou d'une décision de refoulement est signalé dans le SIS, conformément au règlement (UE) 2018/1860 du Parlement européen et du Conseil du 28 novembre 2018 relatif à l'utilisation du système d'information Schengen aux fins du retour des ressortissants de pays tiers en séjour irrégulier et aux décisions de l'Union européenne prises en exécution de celui-ci. Le Roi peut fixer les dérogations éventuelles conformément à l'article 3, paragraphes 2 et 3, du même règlement.]1
+----------
+(1)<Inséré par L 2023-03-02/03, art. 21, 118; En vigueur : 19-03-2023>
+
+Art. 25.[1 L'étranger qui fait l'objet d'une interdiction d'entrée en vertu de la présente loi [3 par laquelle l'entrée et le séjour sur le seul territoire du Royaume sont interdits,]3 est signalé dans la Banque de données Nationale Générale aux fins de non-admission ou d'interdiction de séjour sur le territoire.
+[3 L'étranger qui fait l'objet d'une interdiction d'entrée en vertu de la présente loi, par laquelle l'entrée et le séjour sur le territoire de tous les Etats membres, en ce compris celui du Royaume sont interdits, est signalé dans le SIS aux fins de non-admission et d'interdiction de séjour dans l'espace Schengen, conformément au règlement (UE) 2018/1861 du Parlement européen et du Conseil du 28 novembre 2018 sur l'établissement, le fonctionnement et l'utilisation du système d'information Schengen (SIS) dans le domaine des vérifications aux frontières, modifiant la convention d'application de l'accord de Schengen et modifiant et abrogeant le règlement (CE) n° 1987/2006 et aux décisions de l'Union européenne prises en exécution de celui-ci.]3]1
+----------
+(1)<L 2017-02-24/21, art. 17, 094; En vigueur : 29-04-2017>
+(2)<L 2019-05-08/12, art. 12, 106; En vigueur : 19-07-2019>
+(3)<L 2023-03-02/03, art. 22, 118; En vigueur : 19-03-2023>
+
+Art. 26.[1 Dans les cas où l'étranger a porté atteinte à l'ordre public ou à la sécurité nationale, le ministre peut lui enjoindre de quitter des lieux déterminés, d'en demeurer éloigné ou de résider en un lieu déterminé.
+Si l'étranger ne respecte pas les obligations qui lui sont imposées en vertu de l'alinéa 1er, il peut être mis fin à son séjour et l'ordre de quitter le territoire peut lui être donné conformément à la présente loi.]1
+----------
+(1)<L 2017-02-24/21, art. 18, 094; En vigueur : 29-04-2017>
+
+Art. 26/1. [1 § 1er. Dans les cas visés à l'article 24, paragraphe 1, point a), et paragraphe 2, du règlement (UE) 2018/1861 du Parlement européen et du Conseil du 28 novembre 2018 sur l'établissement, le fonctionnement et l'utilisation du système d'information Schengen (SIS) dans le domaine des vérifications aux frontières, modifiant la convention d'application de l'accord de Schengen et modifiant et abrogeant le règlement (CE) n° 1987/2006, le ministre ou son délégué prend une décision de non-admission et d'interdiction de séjour qui est enregistrée dans la base de données de l'Office des étrangers. Ceci constitue un signalement national aux fins de non-admission et d'interdiction de séjour au sens de l'article 24 précité.
+L'étranger concerné est également signalé dans le SIS aux fins de non-admission et d'interdiction de séjour dans l'espace Schengen, conformément au règlement (UE) 2018/1861 précité et aux décisions de l'Union européenne prises en exécution de celui-ci.
+§ 2. La durée de la décision de non-admission et d'interdiction de séjour visée au paragraphe 1er ne peut dépasser cinq ans, sauf si l'étranger constitue une menace grave pour l'ordre public ou la sécurité nationale. Cette durée est déterminée en tenant compte des circonstances propres à chaque cas. La durée du signalement est déterminée conformément à l'article 39 du règlement (UE) 2018/1861 précité. § 3. La décision visée au paragraphe 1er peut également être prise à l'égard d'un étranger qui ne se trouve pas ou plus sur le territoire du Royaume. Sans préjudice de l'article 62, § 3, dans ces cas, la notification de cette décision est également valablement faite par publication au Moniteur belge.]1
+----------
+(1)<Inséré par L 2023-03-02/03, art. 23, 118; En vigueur : 19-03-2023>
+
+Art. 26/2. [1 Le Roi peut fixer les modalités des signalements visés aux articles 24/1, 25 et 26/1.]1
+----------
+(1)<Inséré par L 2023-03-02/03, art. 24, 118; En vigueur : 19-03-2023>
+
+CHAPITRE VII. - MESURES DE SURETE COMPLEMENTAIRES.
+
+Art. 27.(§ 1.) [2 L'étranger qui fait l'objet d'une mesure d'éloignement et qui n'a pas obtempéré dans le délai imparti peut être ramené par la contrainte à la frontière de son choix, à l'exception en principe de la frontière des Etats parties à une convention internationale relative au franchissement des frontières extérieures, liant la Belgique, ou être embarqué vers une destination de son choix, à l'exclusion de ces Etats.]2
+(Si l'étranger possède la nationalité d'un Etat partie à une convention internationale relative au franchissement des frontières extérieures, liant la Belgique, ou s'il dispose d'un titre de séjour ou d'une autorisation de séjour provisoire en cours de validité, délivrés par un Etat partie, il pourra être ramené à la frontière de cet Etat ou être embarqué à destination de cet Etat.) <L 1996-07-15/33, art. 20, 012; En vigueur : 16-12-1996>
+(§ 2. Sans préjudice de l'application des articles 51/5 à 51/7, les dispositions du § 1er sont appliquées à l'étranger qui a reçu une décision d'éloignement prise à son encontre par une autorité administrative compétente d'un Etat tenu par la directive 2001/40/CE du Conseil de l'Union européenne du 28 mai 2001 relative à la reconnaissance mutuelle des décisions d'éloignement des ressortissants de pays tiers, à laquelle il n'a pas obtempéré et qui a été reconnue par le Ministre ou son délégué, conformément à l'article 8bis.) <L 2004-09-01/56, art. 4, 033; En vigueur : 12-10-2004>
+(§ 3.) <L 2004-09-01/56, art. 4, 033; En vigueur : 12-10-2004> [1 Les étrangers visés aux §§ 1er et 2 peuvent, sans préjudice des dispositions du Titre IIIquater et à moins que d'autres mesures suffisantes mais moins coercitives puissent être appliquées efficacement,être détenus à cette fin, en particulier lorsqu'il existe un risque de fuite ou lorsque l'étranger évite ou empêche la préparation du retour ou la procédure d'éloignement pendant le temps strictement nécessaire pour l'exécution de la mesure d'éloignement.]1
+Les frais occasionnés par le rapatriement de l'étranger sont à sa charge.
+(L'Etat qui a délivré la décision d'éloignement visée au § 2 est informé du fait que l'étranger a été ramené à la frontière de son choix ou, conformément à l'article 28, à la frontière désignée par le Ministre ou son délégué.) <L 2004-09-01/56, art. 4, 033; En vigueur : 12-10-2004>
+----------
+(1)<L 2012-01-19/12, art. 7, 063; En vigueur : 27-02-2012>
+(2)<L 2017-02-24/21, art. 19, 094; En vigueur : 29-04-2017>
+
+Art. 28. (L'étranger ne peut être ramené à la frontière de son choix ou autorisé à s'embarquer pour le pays de destination qu'il choisira qu'à la condition d'être en possession des documents requis pour pouvoir s'y rendre.) <L 1996-07-15/33, art. 21, 012; En vigueur : 16-12-1996>
+Au cas où l'étranger refuse d'exercer son choix ou détruit les documents qui lui permettraient de pénétrer dans un autre pays, le (Ministre) ou son délégué désigne la frontière par laquelle l'intéressé quittera le pays. <L 1996-07-15/33, art. 4, 012; En vigueur : 16-12-1996>
+
+Art. 28/1. [1 § 1er. Lorsque l'étranger s'oppose à l'exécution d'une mesure de transfert, de refoulement ou d'éloignement ou lorsqu'il présente un risque de dangerosité, il peut être procédé à l'exécution forcée de la mesure sous escorte avec la possibilité de recourir à la contrainte.
+§ 2. L'escorte visé au paragraphe 1er peut être effectuée par:
+1° les membres du cadre opérationnel de la Police fédérale qui, dans le cadre de leurs fonctions, sont chargés de l'exécution forcée des mesures de transfert, de refoulement ou d'éloignement;
+2° les membres du personnel de l'Office des Etrangers qui, dans le cadre de leurs fonctions, sont chargés de l'exécution forcée des mesures de transfert, de refoulement ou d'éloignement;
+3° les membres du contingent permanent visé à l'article 54, paragraphe 2, du règlement (UE) 2019/1896 du Parlement européen et du Conseil du 13 novembre 2019 relatif au corps européen de garde-frontières et de garde-côtes et abrogeant les règlements (UE) n° 1052/2013 et (UE) 2016/1624, qui, à la demande ou avec l'accord de la Belgique, sont déployés sur le territoire belge.
+Lorsque le transfert, le refoulement ou l'éloignement est exécuté par voie aérienne, les escorteurs visés à l'alinéa 1er, 2° et 3°, exécutent leurs missions d'escorte sous l'autorité et la direction et la coordination opérationnelles d'un fonctionnaire de police. Ils sont soumis aux ordres, instructions et directives de ce dernier.
+Le Roi détermine les modalités d'engagement par la Police Fédérale des membres du personnel de l'Office des Etrangers visés à l'alinéa 1er, 2°, qui exécutent une mission d'escorte conformément à l'alinéa 2.
+La possibilité d'exécuter des missions d'escorte visées à l'alinéa 2 par les membres du personnel de l'Office des Etrangers visés à l'alinéa 1er, 2°, cesse de plein droit à partir du 1er janvier 2028. Le Roi peut reporter cette date, par un arrêté délibéré en Conseil des ministres.
+§ 3. Lorsque le transfert, le refoulement ou l'éloignement est exécuté par voie aérienne, les mesures sont prises conformément aux orientations communes d'éloignement par voie aérienne annexées à la décision 2004/573/CE.]1
+----------
+(1)<Inséré par L 2024-05-12/29, art. 6, 124; En vigueur : 20-07-2024>
+
+Art. 28/2. [1 Les membres du personnel de l'Office des Etrangers visés à l'article 28/1, § 2, alinéa 1er, 2°, qui exécutent une mission d'escorte conformément à l'article 28/1, § 2, alinéa 2, peuvent utiliser la contrainte à l'égard de l'étranger, pour autant qu'ils aient suivi la formation requise à cet effet.
+Dans le cadre de l'exécution des missions d'escorte visées à l'alinéa 1er, les membres du personnel de l'Office des Etrangers visés à l'article 28/1, § 2, alinéa 1er, 2°, sont assimilés aux fonctionnaires de police pour l'application des articles 28, § 1er, 37, 37bis et 37ter de la loi sur la fonction de police.
+Le Roi détermine, par un arrêté délibéré en Conseil des ministres, les modalités et le contenu de la formation visée à l'alinéa 1er.]1
+----------
+(1)<Inséré par L 2024-05-12/29, art. 7, 124; En vigueur : 20-07-2024>
+
+Art. 28/3. [1 Le Roi désigne, par un arrêté délibéré en Conseil des ministres, l'instance chargée d'assurer le contrôle de l'exécution forcée des mesures de transfert, de refoulement et d'éloignement, et détermine les modalités de ce contrôle.
+Cette instance est indépendante des autorités compétentes en matière de transfert, de refoulement et d'éloignement.
+Cette instance établit un rapport chronologique de chaque transfert, refoulement ou éloignement qu'elle contrôle. Elle établit également chaque année un rapport annuel relatif à ses missions de contrôle des retours forcés. Les dispositions détaillées concernant ces rapports et leurs destinataires sont établies par le Roi par un arrêté délibéré en Conseil des ministres. Le rapport annuel est publié sur le réseau d'information accessible au public de cette instance.]1
+----------
+(1)<Inséré par L 2024-05-12/29, art. 8, 124; En vigueur : 20-07-2024>
+
+Art. 29. L'étranger détenu (par application de l'article 27, § 3, alinéa 1er), qui dans (les deux mois) de son arrestation (...) n'a pas pu entrer régulièrement sur le territoire d'un autre Etat, est mis en liberté, sans préjudice d'une détention du chef de poursuites pénales, notamment pour infraction à la présente loi. <L 1993-05-06/30, art. 5, 005; En vigueur : 31-05-1993; Abrogé : 01-01-1998> <L 2004-09-01/56, art. 5, 033; En vigueur : 12-10-2004> <L 2006-09-15/72, art. 18, 041; En vigueur : 01-06-2007>
+(Le Ministre ou son délégué peut toutefois prolonger cette détention par période de deux mois, lorsque les démarches nécessaires en vue de l'éloignement de l'étranger ont été entreprises dans les sept jours ouvrables de la mise en détention de l'étranger, qu'elles sont poursuivies avec toute la diligence requise et qu'il subsiste toujours une possibilité d'éloigner effectivement l'étranger dans un délai raisonnable.) <L 1996-07-15/33, art. 22, 012; En vigueur : 16-12-1996>
+(Après une prolongation, la décision visée à l'alinéa précédent ne peut être prise que par le Ministre.) <L 1996-07-15/33, art. 22, 012; En vigueur : 16-12-1996>
+(Après (cinq) mois de détention, l'étranger doit être mis en liberté.) (Dans le calcul de ces cinq mois, il sera tenu compte de la durée de la détention de l'étranger sur la base de l'article 8bis, § 4.) <L 1996-07-15/33, art. 22, 012; En vigueur : 16-12-1996> <L 1999-04-29/70, art. 2, 017; En vigueur : 06-07-1999> <L 2004-09-01/56, art. 5, 033; En vigueur : 12-10-2004>
+(Dans le cas où la sauvegarde de l'ordre public ou la sécurité nationale l'exige, la détention de l'étranger peut être prolongée chaque fois d'un mois, après l'expiration du délai visé à l'alinéa précédent, sans toutefois que la durée totale de la détention puisse de ce fait dépasser huit mois.) <L 1999-04-29/70, art. 3, A, 017; En vigueur : 06-07-1999>
+
+Art. 30.
+<Abrogé par L 2012-01-19/12, art. 8, 063; En vigueur : 27-02-2012>
+
+CHAPITRE VIIbis. - Prise de données biométriques. <Inséré par L 2004-12-27/30, art. 450; En vigueur : 10-01-2005>
+
+Art. 30bis.<Inséré par L 2004-12-27/30, art. 450; En vigueur : 10-01-2005> § 1er. [2 Pour l'application du présent article, il y a lieu d'entendre par "prise de données biométriques", le relevé d'empreintes digitales et la capture de l'image faciale. Par "image faciale", on entend les images numériques du visage, d'une résolution et d'une qualité suffisantes pour servir à la mise en correspondance biométrique automatique.]2
+§ 2. Peuvent être soumis à la prise de données biométriques :
+1° l'étranger qui demande un visa, une autorisation tenant lieu de visa ou une autorisation de séjour auprès d'un représentant diplomatique ou consulaire belge ou d'un représentant diplomatique ou consulaire qui représente les intérêts de la Belgique [1 ...]1; <L 2006-09-15/72, art. 19, 041; En vigueur : 01-06-2007> <L 2007-04-25/49, art. 17, 045; En vigueur : indéterminée et au plus tard 01-06-2008>
+2° l'étranger qui introduit dans le Royaume une demande d'autorisation de séjour de trois mois au maximum ou une demande en vue d'y être admis ou autorisé à un séjour de plus de trois mois [1 ...]1; <L 2006-09-15/72, art. 19, 041; En vigueur : 01-06-2007> <L 2007-04-25/49, art. 17, 045; En vigueur : indéterminée et au plus tard 01-06-2008>
+3° [1 l'étranger qui fait l'objet d'une mesure d'éloignement ou de refoulement.]1
+4° [1 ...]1
+Le Roi détermine le délai durant lequel doivent être conservées les données biométriques qui ont été prises conformément au présent article.
+§ 3. Les données biométriques sont prises à l'initiative du représentant diplomatique ou consulaire belge ou du ministre ou de son délégué. Elles peuvent l'être aussi à l'initiative d'un officier de police judiciaire, en ce compris l'officier de police judiciaire dont la compétence est limitée ou d'un officier de la police administrative.
+§ 4. Les données biométriques ne peuvent être utilisées que dans la mesure où elles sont nécessaires pour :
+1° établir et/ou vérifier l'identité de l'étranger;
+2° examiner si l'étranger concerné constitue un danger pour l'ordre public ou la sécurité nationale;
+3° respecter les obligations prévues par les règlements et directives européens adoptes par le Conseil de l'Union européenne.
+§ 5. L'enregistrement, le traitement, l'exploitation et la transmission des données biométriques sont effectués sous le contrôle de la Commission de la protection de la vie privée, conformément à la loi du 8 décembre 1992 relative à la protection de la vie privée à l'égard des traitements de données à caractère personnel.
+§ 6. A la requête du ministre ou de son délégué, les données biométriques visées au § 2 peuvent être obtenues, pour les finalités visées au § 4, auprès des autorités judiciaires, des services de police et des fonctionnaires et agents des services publics qui disposent de ces données.
+----------
+(1)<L 2017-02-24/21, art. 20, 094; En vigueur : 29-04-2017>
+(2)<L 2017-11-21/17, art. 8, 100; En vigueur : 22-03-2018>
+
+CHAPITRE VIII. - ORGANES CONSULTATIFS DES ETRANGERS.
+
+Art. 31. Il est institue un Conseil consultatif des étrangers chargé de donner des avis motivés et préalables sur (tous projets et propositions de lois, de décrets ou d'ordonnances) concernant l'accès au territoire, le séjour, l'établissement et l'éloignement des étrangers dont il est saisi par le Président de l'une des deux Chambres législatives ou de l'un des ( (Parlements de Communauté ou de Région) ou de l'Assemblée réunie de la Commission communautaire commune). <L 1993-05-06/30, art. 6, 2°, 005; En vigueur : 31-05-1993> <L 1993-05-06/30, art. 6, 1°, 005; En vigueur : 31-05-1993> <L 2006-03-27/35, art. 7, 039; En vigueur : 21-04-2006>
+Ce conseil est composé par moitié de représentants des (Ministres) et de l'Intérieur, de l'Emploi et du Travail, (des Affaires étrangères, des Classes moyennes, du ministre ayant la coopération au développement dans ses attributions et des membres des (Gouvernements) des Communautés ou des Régions ayant la culture, l'éducation, l'emploi et le travail dans leurs attributions) et pour moitié de représentants belges et étrangers d'organismes s'occupant de la défense des intérêts des travailleurs immigrés et d'organisation d'étudiants reconnues. <L 1993-05-06/30, art. 6, 3°, 005; En vigueur : 31-05-1993> <L 1996-07-15/33, art. 4, 012; En vigueur : 16-12-1996> <L 2006-03-27/35, art. 7, 039; En vigueur : 21-04-2006>
+Les Ministres peuvent consulter le conseil sur toute question générale relative aux matières visées au premier alinéa. Le conseil peut d'initiative donner des avis sur les mêmes questions aux Chambres législatives, aux ( (Parlements) de Communauté ou de Région ou de l'Assemblée réunie de la Commission communautaire commune) et aux Ministres. <L 1993-05-06/30, art. 6, 1°, 005; En vigueur : 31-05-1993> <L 2006-03-27/35, art. 7, 039; En vigueur : 21-04-2006>
+La procédure et le fonctionnement de ce conseil sont déterminés par le Roi.
+
+Art. 32. Il est institué une Commission consultative des étrangers, chargée de donner des avis au (Ministre) dans les cas prévus par la présente loi ou par des dispositions particulières. <L 1996-07-15/33, art. 4, 012; En vigueur : 16-12-1996>
+Le Ministre peut également demander l'avis de la commission avant de prendre toute décision concernant un étranger.
+
+Art. 33.La Commission consultative des étrangers se compose de :
+1° deux magistrats, effectifs, émérites ou honoraires, qui justifient par leur diplôme qu'ils ont la connaissance l'un de la langue française, l'autre de la langue néerlandaise;
+2° deux avocats inscrits depuis dix ans au moins au tableau de l'Ordre des avocats qui justifient par leur diplôme qu'ils ont la connaissance, l'un de la langue française, l'autre de la langue néerlandaise;
+3° personnes s'occupant de la défense des intérêts des étrangers au sein d'une oeuvre d'assistance, d'un groupement, d'un mouvement ou d'une organisation et qui doivent justifier de la connaissance de la langue dans laquelle la procédure a lieu.
+Chaque membre de la commission a un ou plusieurs suppléants qui assurent leur remplacement en cas d'empêchement et, le cas échéant, l'achèvement de leur mandat.
+Les membres de la commission et leurs suppléants [1 ...]1 sont nommés par le Roi pour une durée de trois ans. Leur mandat peut être renouvelé.
+----------
+(1)<L 2009-05-06/03, art. 185, 050; En vigueur : 29-05-2009>
+
+Art. 34. La commission siège au nombre de trois membres, étant le magistrat qui en assume la présidence et l'avocat qui justifient de la connaissance de la langue dans laquelle la procédure a lieu, ainsi qu'une personne choisie par l'étranger comparant, parmi les autres membres de la commission justifiant de la connaissance de cette langue.
+Si l'étranger comparant n'a pas fait son choix dans les formes et délais qui seront fixés par le Roi, le (Ministre) procède à cette désignation et en informe l'intéressé. <L 1996-07-15/33, art. 4, 012; En vigueur : 16-12-1996>
+(Le fonctionnaire dirigeant de l'Office des étrangers ou son délégué) participe aux débats devant la commission mais non au délibéré. <L 1996-07-15/33, art. 23, 012; En vigueur : 16-12-1996>
+Huit jours ouvrables au moins avant le jour de l'audience, il remet au président de la commission le dossier relatif à l'affaire.
+
+Art. 35. L'étranger comparant peut se faire assister ou se faire représenter par l'avocat qu'il choisit ou, s'il ne possède pas les moyens de rémunérer un défenseur, par un avocat désigné par le Bureau de consultation et de défense.
+
+Art. 36. Les membres de la commission, l'étranger et l'avocat qui l'assiste ou le représente peuvent, (à partir du huitième jour ouvrable) avant le jour de l'audience, prendre connaissance du dossier relatif à l'affaire, à la seule exception des pièces dont le caractère confidentiel a été reconnu par le président de la commission sur proposition (du fonctionnaire dirigeant de l'Office des étrangers ou de son délégué). <L 1996-07-15/33, art. 24, 012; En vigueur : 16-12-1996>
+
+Art. 37. La procédure devant la commission est orale. Elle a lieu en français ou en néerlandais au choix de l'étranger comparant.
+Si celui-ci ne comprend aucune de ces langues le président lui propose de recourir aux services d'un interprète qui prêtera serment dans les termes suivants :
+" Je jure de traduire fidèlement les discours à transmettre entre ceux qui parlent des langages différents. "
+
+Art. 38. La commission peut entendre des témoins qui prêteront serment dans les termes suivants :
+" Je jure en honneur et conscience de dire toute la vérité, rien que la vérité. "
+
+Art. 39. La présentation des candidatures pour la désignation des personnes prévues à l'article 33, 3°, la procédure devant la commission et le fonctionnement de celle-ci, sont, pour le surplus déterminés par le Roi.
+
+TITRE IBIS. - Le Conseil du Contentieux des étrangers <Inséré par L 2006-09-15/71, art. 77; En vigueur : 01-12-2006>
+
+CHAPITRE 1ER. [1 Rapport d'activité]1
+----------
+(1)<L 2026-06-17/03, art. 5.3, 134; En vigueur : 12-06-2026>
+
+Art. 39/1.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/2.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/3.[1 A l'initiative du premier président, un rapport d'activité dont les modalités peuvent être fixées par le Roi, est rédigé et publié annuellement.]1
+----------
+(1)<L 2013-05-08/17, art. 3, 071; En vigueur : 01-09-2013>
+
+CHAPITRE 2. - De l'organisation du Conseil <Inséré par L 2006-09-15/71, art. 82; En vigueur : 01-12-2006>
+
+Section Ire. - La composition du Conseil <Insérée par L 2006-09-15/71, art. 82; En vigueur : 01-12-2006>
+
+Art. 39/4.<Inséré par L 2006-09-15/71, art. 83; En vigueur : 01-12-2006> Le Conseil est composé de [4 trente-quatre membres]4, à savoir un premier président, un président, [2 [4 huit présidents de chambre]4 et vingt-quatre juges au contentieux des étrangers]2.
+Le Conseil comporte un greffe, qui est tenu par un greffier en chef, assisté de [3 quatorze greffiers]3.
+Au Conseil, il y a un administrateur et du personnel administratif.
+----------
+(1)<L 2009-12-23/05, art. 7, 053; En vigueur : 10-01-2010>
+(2)<L 2013-12-26/10, art. 3, 075; En vigueur : 31-12-2013>
+(3)<L 2015-09-03/24, art. 2, 083; En vigueur : 02-11-2015>
+(4)<L 2021-12-23/46, art. 3, 115; En vigueur : 20-02-2022>
+
+Art. 39/5. <Inséré par L 2006-09-15/71, art. 84; En vigueur : 01-12-2006> Le mandat de chef de corps et les mandats adjoints forment les mandats au Conseil du Contentieux des Etrangers.
+Le titulaire du mandat de premier président exerce le mandat de chef de corps.
+Les titulaires du mandat de président, président de chambre, greffier en chef exercent le mandat adjoint.
+
+Art. 39/6.<Inséré par L 2006-09-15/71, art. 85; En vigueur : 01-12-2006> § 1er. Le premier président exerce le mandat de chef de corps. Il est chargé de l'élaboration du plan de gestion. [2 Il préside la chambre dont il fait partie et exerce toutes les compétences du titulaire du mandat de président de chambre.]2
+Le premier président répartit, en étroite concertation avec le président, les tâches et activités entre le président et lui-même en fonction de son plan de gestion.
+Le premier président désigne les personnes visées à l'article 39/4 et répartit les moyens disponibles conformément à son plan de gestion et en étroite concertation avec le président.
+Le président exerce un mandat. Il remplace le premier président lorsque celui-ci est empêché. Le président préside la chambre dont il fait partie et exerce toutes les compétences du titulaire du mandat de président de chambre.
+En cas d'arriéré dans le traitement des affaires, le premier président donne instruction à une ou plusieurs chambres de tenir en dehors des séances ordinaires, une séance extraordinaire dans les quinze jours ou dans la période qu'il détermine. Il y a arriéré lorsque le délai fixé à l'article 39/76, § 3 et à l'article 39/77, § 2 est dépassé.
+Lorsque les besoins du service le justifient, le premier président peut répartir une partie des affaires attribuées à une chambre, parmi les autres chambres.
+Le premier président et le président veillent à préserver l'unité de la jurisprudence et prennent les mesures nécessaires à cet effet.
+§ 2. Le premier président détermine la composition des chambres.
+Les chambres sont présidées par un président de chambre [2 ou par le premier président ou le président en ce qui concerne leurs chambres]2. En cas d'absence, la présidence est exercée par le membre du Conseil présent le plus ancien en fonction de l'ordre de prestation de serment. Le premier président siège dans les chambres selon les besoins du service, auquel cas ils les préside.
+§ 3. Le président de chambre exerce un mandat. Il est chargé de l'organisation de la chambre et prend sa direction. Il en fait régulièrement rapport au premier président ou au président, selon le cas.
+Le président de chambre veille à la préservation de l'unité de la jurisprudence et prend les mesures nécessaires à cet effet.
+Lorsqu'il estime que, afin d'assurer l'unité de jurisprudence dans la chambre [1 ou en vue du développement du droit]1 , une affaire doit être traitée par trois juges, il ordonne le renvoi à un tel siège.
+[3 Il communique sans délai au premier président et au président les affaires qui, selon lui, doivent être traitées par les chambres réunies afin d'assurer l'unité de la jurisprudence ou en vue du développement du droit et celles pour lesquelles une partie demande le renvoi devant les chambres réunies dans l'intérêt de l'unité de la jurisprudence.]3
+----------
+(1)<L 2013-05-08/17, art. 4, 071; En vigueur : 01-09-2013>
+(2)<L 2013-12-26/10, art. 4, 075; En vigueur : 31-12-2013>
+(3)<L 2014-04-10/68, art. 9, 077; En vigueur : 31-05-2014>
+
+Art. 39/7. <Inséré par L 2006-09-15/71, art. 86; En vigueur : 01-12-2006> Le greffier en chef est chargé de la direction du greffe et est placé sous la direction et le contrôle du premier président. Le premier président désigne, en étroite concertation avec le président et après avis du greffier en chef et du président de chambre concerné, les membres du greffe qui assistent le président de chambre.
+
+Art. 39/8.<Inséré par L 2006-09-15/71, art. 87; En vigueur : 01-12-2006> Sous l'autorité et la direction du premier président, l'administrateur est chargé de la gestion administrative du Conseil et de son infrastructure, à l'exception des compétences qui incombent au greffier en chef en vertu de l'article 39/7. Il en assure également, en ce qui concerne ces compétences, la gestion quotidienne. Sans préjudice de cette compétence, le premier président peut lui confier les compétences qu'il a déterminées en matière de gestion administrative du personnel.
+L'administrateur se concerte avec le greffier en chef lorsque les compétences déterminées dans l'alinéa 1er peuvent avoir une incidence sur les compétences de ce dernier.
+[1 ...]1
+----------
+(1)<L 2013-05-08/17, art. 5, 071; En vigueur : 01-09-2013>
+
+Section II. - Les chambres <Insérée par L 2006-09-15/71, art. 88; En vigueur : 01-12-2006>
+
+Art. 39/9.<Inséré par L 2006-09-15/71, art. 89; En vigueur : 01-12-2006> § 1er. [1 Le Conseil est composé de neuf chambres dont une est présidée par le premier président, une par le président, trois prennent connaissance des affaires en langue néerlandaise, trois des affaires en langue française et une des affaires bilingues.]1
+Le premier président peut composer des chambres supplémentaires si le nombre d'affaires introduites le requiert.
+Les chambres francophones, composées de membres justifiant de la connaissance de la langue française, prennent connaissance de toutes les affaires qui doivent être traitées en français. Les chambres néerlandophones, composées de membres justifiant de la connaissance de la langue néerlandaise, ont connaissance de toutes les affaires qui doivent être traitées en néerlandais. La chambre bilingue, composée de membres justifiant de la connaissance des langues française et néerlandaise, prend connaissance des affaires que l'article 39/15 lui confie en particulier.
+[1 Les chambres du premier président et du président, respectivement composées de membres qui apportent la preuve qu'ils ont passé l'examen de docteur, de licencié ou de master en droit dans la même langue que le premier président ou le président, soit le français ou le néerlandais, prennent connaissance des affaires qui doivent être traitées dans la langue de son diplôme.]1
+Chaque chambre est composée d'au moins trois membres.
+Après étroite concertation avec le président, le premier président désigne les membres qui composent la chambre bilingue.
+Dans la chambre qui, sur la base du règlement d'ordre visé au § 2, prend connaissance des affaires en allemand, siège un juge qui, conformément à l'article 39/21, § 3, fournit la preuve d'une connaissance suffisante de l'allemand.
+§ 2. Le règlement d'ordre fixé par l'assemblée générale et approuvé par le Roi, détermine notamment la compétence de chaque chambre et le nombre de juges au contentieux des étrangers qui y est attache. Il détermine également la chambre qui a connaissance des affaires en langue allemande ou des affaires bilingues ainsi que sa composition.
+Le règlement peut être consulté au greffe et est publié selon le mode déterminé par le Roi.
+----------
+(1)<L 2013-12-26/10, art. 5, 075; En vigueur : 31-12-2013>
+
+Art. 39/10.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Section III. [1 - L'assemblée générale et les chambres réunies]1
+----------
+(1)<L 2014-04-10/68, art. 10, 077; En vigueur : 31-05-2014>
+
+Art. 39/11.[1 L'assemblée générale du Conseil est composée des membres du Conseil visés à l'article 39/4, alinéa 1er . Elle siège en nombre pair qui ne peut être inférieur à dix, y compris celui qui la préside.
+Elle est composée en nombre égal de membres du Conseil ayant justifié par leur diplôme qu'ils ont passé l'examen de docteur, de licencié ou de master en droit dans la langue française d'une part et dans la langue néerlandaise d'autre part.
+L'assemblée générale est présidée par le premier président ou, à défaut, par le président. A défaut, la présidence est exercée par le président de chambre présentant avec le plus d'ancienneté, ou, le cas échéant, par le juge au contentieux des étrangers présent avec le plus d'ancienneté.
+A l'exception des audiences visées à l'article 39/12, § 1er, alinéa 4, l'administrateur assiste aux assemblées générales chaque fois que des sujets ayant trait à ses compétences figurent à l'ordre du jour. En ce qui concerne ces sujets, il a une voix consultative.
+En cas de parité de voix, la voix de celui qui préside l'assemblée générale est prépondérante.]1
+----------
+(1)<L 2014-04-10/68, art. 11, 077; En vigueur : 31-05-2014>
+
+Art. 39/12.[2 § 1er. [3 ...]3.
+§ 2. Les chambres réunies sont composées de six membres du Conseil dont trois justifient par leur diplôme qu'ils ont passé l'examen de docteur, de licencié ou de master en droit dans la langue française et trois dans la langue néerlandaise.
+Le premier président et le président désignent chacun pour leur rôle linguistique les membres du Conseil qui constituent les chambres réunies. Pour les recours visés à l'article 39/2, § 1er, les membres qui composent les chambres réunies sont choisis parmi ceux qui traitent habituellement ce contentieux. Pour les recours visés à l'article 39/2, § 2, les membres qui composent les chambres réunies sont choisis parmi ceux qui traitent habituellement ce contentieux.
+Les chambres réunies sont présidées par le premier président ou par le président si l'affaire relève d'un contentieux qu'il traite habituellement. A défaut, elles sont présidées par le président de chambre avec le plus d'ancienneté qui traite ce contentieux habituellement ou, à défaut, par le membre du Conseil présent avec le plus d'ancienneté qui traite ce contentieux habituellement.
+En cas de parité de voix, la voix de celui qui préside les chambres réunies est prépondérante.]2
+----------
+(1)<L 2013-05-08/17, art. 7, 071; En vigueur : 01-09-2013>
+(2)<L 2014-04-10/68, art. 12, 077; En vigueur : 31-05-2014>
+(3)<L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Section IV. - L'emploi des langues <Insérée par L 2006-09-15/71, art. 94; En vigueur : 01-12-2006>
+
+Sous-section 1re. - L'emploi des langues dans les services du Conseil <Insérée par L 2006-09-15/71, art. 94; En vigueur : 01-12-2006>
+
+Art. 39/13. <Inséré par L 2006-09-15/71, art. 95; En vigueur : 01-12-2006> Les activités administratives du Conseil et l'organisation de ses services sont régies par les dispositions de la législation sur l'emploi des langues en matière administrative qui sont applicables aux services dont l'activité s'étend à tout le pays.
+
+Sous-section 2.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/14.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/15.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Sous-section 3.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/16.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/17.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/18.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+CHAPITRE 3. - La fonction <Inséré par L 2006-09-15/71, art. 103; En vigueur : 01-12-2006>
+
+Section Ire. - Les conditions de nomination des membres du Conseil et du greffe <Insérée par L 2006-09-15/71, art. 103; En vigueur : 01-12-2006>
+
+Art. 39/19.<Inséré par L 2006-09-15/71, art. 104; En vigueur : 01-12-2006> § 1er. Les juges au contentieux des étrangers sont nommés par le Roi sur une liste de [3 ...]3 noms formellement motivée, présentée par le Conseil, après que celui-ci a examiné la recevabilité des candidatures et comparé les titres et mérites respectifs des candidats.
+L'assemblée générale du Conseil peut organiser une épreuve de sélection selon les modalités qu'elle détermine. Elle décide préalablement si une réserve de lauréats doit être constituée. [3 La durée de validité de la réserve de recrutement est fixée à deux ans, et peut être renouvelée pour une période de deux ans, sur décision de l'assemblée générale]3.
+L'assemblée générale du Conseil entend les candidats d'office ou à leur demande. Si une épreuve de sélection est organisée, cette audition est limitée aux seuls lauréats. Elle peut, à cette fin, designer au moins trois membres qui lui feront rapport sur l'audition de ces candidats.
+Le Conseil communique sa présentation ainsi que l'ensemble des candidatures et l'appréciation de celles-ci, au Ministre.
+Le candidat présenté en premier à l'unanimité par l'assemblée générale du Conseil, [3 est nommé juge au contentieux des étrangers]3.
+En cas de refus du Ministre, l'assemblée générale du Conseil procède à une nouvelle présentation.
+En l'absence d'unanimité lors d'une présentation, le juge au contentieux des étrangers ne peut être nommé que parmi les personnes qui figurent sur la liste présentée.
+Le Ministre publie les vacances au Moniteur belge, à l'initiative du Conseil.
+La publication mentionne le nombre de places vacantes, les conditions de nomination, le délai d'introduction des candidatures, d'un mois au moins, et l'autorité à laquelle celles-ci doivent être adressées.
+Toute présentation est publiée au Moniteur belge; : il ne peut être procédé à la nomination que quinze jours après cette publication.
+§ 2. Nul ne peut être nommé juge au contentieux des étrangers, s'il n'a [1[3 trente-sept ans]3]1, s'il n'est Belge, docteur, licencié ou master en droit, et s'il ne peut justifier d'une expérience professionnelle utile de nature juridique de cinq ans au moins.
+[3 En fonction des besoins du Conseil, le Roi peut déroger à l'âge visé dans l'alinéa 1er.
+Les conditions visées à l'alinéa 1er doivent être remplies au moment de l'introduction de la candidature pour la fonction.]3
+§ 3. [2 Les juges au contentieux des étrangers sont nommés à vie. Ils ne peuvent être démis d'office ou destitués que pour les raisons disciplinaires visées à l'article 39/53.]2
+Le premier président et le président et les présidents de chambre sont désignés dans ces fonctions sous les conditions et selon le mode déterminé par cette loi.
+----------
+(1)<L 2009-05-06/04, art. 2, 049; En vigueur : 29-05-2009>
+(2)<L 2021-12-23/46, art. 4, 115; En vigueur : 20-02-2022>
+(3)<L 2026-06-17/03, art. 5.4, 134; En vigueur : 12-06-2026>
+
+Art. 39/20.<Inséré par L 2006-09-15/71, art. 105; En vigueur : 01-12-2006> [1 Les greffiers sont nommés par le Roi sur une liste indiquant l'ordre de leur classement à un concours. Un jury fixe les modalités de ce concours et examine les candidatures. Ce jury comprend deux membres du Conseil, le greffier en chef et l'administrateur. En cas d'empêchement du greffier en chef ou de l'administrateur, le premier président désigne un remplaçant. La durée de validité du concours est de trois ans.
+Pour être nommé greffier, il convient:
+1° d'être docteur en droit ou titulaire d'un diplôme de licencié ou master en droit; ou
+2° d'une part, être titulaire d'un diplôme donnant au moins accès aux emplois de niveau B dans la fonction publique ou d'exercer un tel emploi et d'autre part, justifier d'une expérience utile de cinq ans.]1
+Par dérogation à la condition [1 d'une expérience utile de cinq ans,]1 fixée à [1 l'alinéa 2, 2°,]1 le greffier qui doit fournir, conformément à l'article 39/21, § 3, la preuve d'une connaissance suffisante de la langue allemande, peut être nommé s'il :
+1° a apporté la preuve d'au moins un an d'expérience utile [1 et]1;
+2° peut fournir la preuve d'une connaissance suffisante de la langue allemande.
+[1 Les conditions des alinéas 2 et 3 doivent être remplies au moment de la candidature pour la fonction.]1
+----------
+(1)<L 2024-06-04/08, art. 1, 125; En vigueur : 19-07-2024>
+
+Art. 39/21.<Inséré par L 2006-09-15/71, art. 106; En vigueur : 01-12-2006> § 1er. Le président doit justifier par son diplôme qu'il a passé l'examen de docteur, de licencié ou de master en droit dans la langue, française ou néerlandaise, autre que celle du premier président.
+La moitié des présidents de chambre et la moitié des juges au contentieux des étrangers doivent justifier, par leur diplôme, qu'ils ont passé l'examen de docteur, licencié ou master en droit en langue française : l'autre moitié de chaque groupe, en langue néerlandaise.
+La moitié des greffiers doivent appartenir au rôle linguistique français et l'autre moitié au rôle linguistique néerlandais.
+§ 2. Trois membres du Conseil au moins, le greffier en chef du Conseil et deux greffiers au moins, doivent justifier de la connaissance de la langue autre que celle de leur diplôme. Lorsque la connaissance de la langue autre que celle du diplôme est imposée, il doit être veillé à ce qu'ils n'appartiennent pas tous au même rôle linguistique.
+La justification de la connaissance de cette langue est apportée conformément à l'article 73, § 2, alinéa 4, des lois sur le Conseil d'Etat, coordonnées le 12 janvier 1973.
+Les membres du Conseil, du greffe, l'administrateur et les membres du personnel administratif du Conseil peuvent également fournir cette preuve soit en réussissant l'examen visé à l'article 73, § 2, alinéa 5, des lois sur le Conseil d'Etat, coordonnées le 12 janvier 1973, soit en réussissant un examen spécial. Cet examen est passé devant une commission qui est présidée par un membre du Conseil. Le Roi règle la composition de cette commission, l'organisation de l'examen et en détermine la matière en tenant compte des exigences propres des activités du Conseil. Cet examen est assimilé à l'examen visé à l'article 73, § 2, des lois sur le Conseil d'Etat, coordonnées le 12 janvier 1973.
+[1 Les membres du Conseil et du greffe ainsi que l'administrateur sont également censés avoir justifié de la connaissance de la langue autre que celle de leur diplôme visée à l'alinéa 1er, s'ils justifient de la connaissance de la langue française ou néerlandaise, visée à l'article 43, § 3, alinéa 3, des lois sur l'emploi des langues en matière administrative, coordonnées par l'arrêté royal du 18 juillet 1966, ou aux articles 5 et 7 de la loi du 30 juillet 1938 concernant l'usage des langues à l'armée.]1
+§ 3. Un juge au contentieux des étrangers et un membre du greffe doivent en outre justifier de la connaissance suffisante de la langue allemande. La preuve de la connaissance de cette langue est apportée selon le mode déterminé à l'article 73 des lois sur le Conseil d'Etat, coordonnées le 12 janvier 1973, ou en réussissant un examen spécial organisé conformément au § 2, dernier alinéa. Cet examen est assimilé à l'examen visé à l'article 73, § 3, des lois sur le Conseil d'Etat, coordonnées le 12 janvier 1973. ".
+[1 Un membre du Conseil ou du greffe est également censé avoir justifié de la connaissance de la langue allemande visée à l'alinéa 1er, s'il justifie de la connaissance de la langue allemande pour le niveau A, visée à l'article 15, § 1er, alinéa 3, des lois sur l'emploi des langues en matière administrative, coordonnées par l'arrêté royal du 18 juillet 1966, ou s'il prouve que, pour être nommé fonctionnaire conformément à l'article 43, § 4, alinéa 3, des lois précitées, il a passé son examen d'admission à cette fonction en allemand.]1
+Lorsqu'aucun greffier du Conseil ne satisfait à ce qui est prévu dans l'article 39/20, alinéa 3, cette fonction est exercée par le greffier du Conseil d'Etat qui fournit la preuve d'une connaissance suffisante de la langue allemande. Ce dernier est désigné par le premier président du Conseil d'Etat, qui communique sa décision au premier président du Conseil.
+----------
+(1)<L 2009-05-06/04, art. 3, 049; En vigueur : 29-05-2009>
+
+Art. 39/22. <Inséré par L 2006-09-15/71, art. 107; En vigueur : 01-12-2006> Le premier président prête entre les mains du Premier président du Conseil d'Etat, en personne ou par écrit, le serment prescrit par le décret du 20 juillet 1831.
+Les autres membres du Conseil et du greffe prêtent ce serment entre les mains du premier président.
+
+Section II. - La désignation et l'exercice des mandats <Insérée par L 2006-09-15/71, art. 108; En vigueur : 01-12-2006>
+
+Sous-section 1re. - Les mandats <Insérée par L 2006-09-15/71, art. 108; En vigueur : 01-12-2006>
+
+Art. 39/23.<Inséré par L 2006-09-15/71, art. 109; En vigueur : 01-12-2006> § 1er. Le premier président et le président sont désignés parmi les membres du Conseil nommés depuis cinq ans au moins en tant que juge au contentieux des étrangers ou parmi les titulaires de fonction au Conseil d'Etat visés à l'article 69, 1° à 3°, des lois sur le Conseil d'Etat, coordonnées le 12 janvier 1973, nommés depuis cinq ans au moins dans la qualité précitée.
+Au moment de la vacance effective du mandat de chef de corps ou du mandat adjoint de président, le candidat doit avoir au moins cinq ans de moins que la limite d'âge visée à l'article 39/38. Cette limite d'âge ne s'applique pas en cas de renouvellement du mandat ou du mandat adjoint.
+§ 2. Les présidents de chambre sont désignés parmi les membres du Conseil nommés depuis trois ans au moins en tant que juge au contentieux des étrangers.
+Au moment de la vacance effective du mandat adjoint, le candidat doit avoir au moins trois ans de moins que la limite d'âge visée à l'article 39/38. Cette limite d'âge ne s'applique pas en cas de renouvellement du mandat adjoint.
+§ 3. [1 Le greffier en chef est âgé d'au moins trente-cinq ans accomplis et est désigné parmi:
+1° les greffiers du Conseil du contentieux des étrangers visés à l'article 39/20, nommés depuis trois ans au moins en tant que greffiers; ou
+2° les greffiers du Conseil d'Etat visés à l'article 69, 4°, des lois sur le Conseil d'Etat, coordonnées le 12 janvier 1973, nommés depuis trois ans au moins dans la qualité précitée; ou
+3° ceux qui exercent un emploi de niveau A dans la fonction publique et qui peuvent justifier d'une expérience utile de cinq ans.]1
+[1 Ces conditions doivent être remplies au moment de la candidature pour le mandat.]1
+Au moment de la vacance effective du mandat adjoint, le candidat doit avoir au moins trois ans de moins que la limite d'âge visée à l'article 39/38. Cette limite d'âge ne s'applique pas en cas de renouvellement du mandat adjoint.
+----------
+(1)<L 2024-06-04/08, art. 3, 125; En vigueur : 19-07-2024>
+
+Sous-section 2. - Procédure de désignation des mandats <Insérée par L 2006-09-15/71, art. 110; En vigueur : 01-12-2006>
+
+Art. 39/24. <Inséré par L 2006-09-15/71, art. 111; En vigueur : 01-12-2006> § 1er. Le titulaire de mandat de chef de corps et du mandat adjoint de président sont désignés par le Roi pour un mandat de cinq ans qui peut être renouvelé une fois.
+Après l'expiration de chaque période de dix ans, les fonctions de chef de corps et de président sont déclarées vacantes de plein droit. Sous peine d'irrecevabilité, peuvent exclusivement introduire leur candidature, les candidats qui ont apporté la preuve, par leur diplôme, qu'ils ont passé l'examen de docteur, licencié ou master en droit dans l'autre langue, le français ou le néerlandais, que celle du chef de corps siégeant précédemment ou du président, selon le cas. Le chef de corps ou le président siégeant peut concourir pour le mandat déclaré vacant de son rôle linguistique.
+Le premier président et le président entament leur mandat le même jour. La période de dix ans visée dans l'alinéa 2 prend cours, pour ces mandats, ce jour-là.
+§ 2. Le candidat au mandat de premier président joint un plan de gestion à sa candidature. Le Roi peut fixer l'objet de ce plan de gestion.
+L'assemblée générale du Conseil entend les candidats d'office.
+L'assemblée générale du Conseil procède, après avoir examiné la recevabilité des candidatures et avoir comparé (les titres et mérites respectifs ",) des candidats, à la présentation motivée explicite d'un seul candidat pour le mandat vacant. Elle communique cette présentation motivée ainsi que toutes les candidatures et leur (appréciation) au Ministre. <L 2006-12-27/33, art. 115, 1°, 042; En vigueur : 01-12-2006>
+Le candidat présenté par l'assemblée générale du Conseil, peut être désigné par le Roi en tant que chef de corps.
+Le Roi prend une décision dans les deux mois après la réception de la présentation. En cas de refus, l'assemblée générale du Conseil dispose, dès la réception de cette décision, d'un délai de quinze jours pour faire une nouvelle présentation, conformément aux règles visées ci-dessus.
+Si le Roi prend une deuxième décision de refus dans le délai de deux mois à compter de la réception de cette nouvelle présentation, il est procédé conformément à l'alinéa précédent, à moins que le même candidat ait été présenté. Dans ce dernier cas, le Conseil doit présenter un autre candidat ou décider de recommencer la (procédure de désignation) depuis le début. <L 2006-12-27/33, art. 115, 2°, 042; En vigueur : 01-12-2006>
+§ 3. Entre le troisième et le deuxième mois avant la fin du mandat de chef de corps ou du mandat adjoint de président, le chef de corps ou le président peut demander à l'assemblée générale de renouveler le mandat. Le chef de corps joint à cette demande son plan de gestion ainsi qu'un rapport concernant l'exercice du (mandat écoulé). Le titulaire du mandat de président joint un rapport sur l'exercice du mandat écoulé. <L 2006-12-27/33, art. 115, 3°, 042; En vigueur : 01-12-2006>
+L'assemblée générale du Conseil évalue la demande de renouvellement et décide si le mandat du chef de corps ou du mandat adjoint de président doit être renouvelé. La décision de non-renouvellement implique de plein droit la déclaration de vacance du mandat.
+En cas de non renouvellement du mandat de chef de corps ou du mandat adjoint de président, l'intéresse reprend, à l'expiration de celui-ci, l'exercice de sa fonction ou du mandat auquel il a été nommé ou désigné en dernier lieu, le cas échéant, en surnombre. Lorsque l'intéressé n'a pas été nommé au mandat dont il reprend l'exercice, il est censé avoir été désigné à cet effet pour l'entièreté du délai pour lequel le mandat avait été octroyé.
+S'il s'agit d'un titulaire d'une fonction au Conseil d'Etat, il reprend sa fonction au Conseil d'Etat, peu importe le nombre de postes prévus dans l'article 69 des lois coordonnées sur le Conseil d'Etat. Sur demande écrite expresse au plus tard deux mois avant l'expiration du mandat, il peut néanmoins, le cas échéant en surnombre, être nommé au Conseil sans que l'article 39/19, § 1er, soit d'application. Cette nomination implique de plein droit la démission au Conseil d'Etat. Dans ce cas, il conserve le traitement, les augmentations, les compléments de traitement et les indemnités liés à la fonction de titulaire de fonction au Conseil d'Etat, à moins qu'il ne reprenne une fonction à laquelle est liée un traitement plus élevé.
+Le mandat de chef de corps ou le mandat adjoint de président qui n'est pas renouvelé ou qui, en application du § 1er, alinéa 2, est déclaré vacant de plein droit, ne cesse toutefois qu'au moment ou le premier président ou le président reprend le mandat sans que ce délai puisse compter plus de neuf mois, à compter de la notification de la décision de non-renouvellement ou de la date de la déclaration de vacance.
+Si le titulaire du mandat a exercé le mandat de chef de corps ou celui de président à deux reprises, il bénéficie durant les deux années qui suivent la fin du deuxième terme du mandat, de la rémunération allouée au chef de corps ou au président, en ce compris les augmentations et avantages qui y sont liés, à moins qu'il ne reprenne un mandat auquel est lié un traitement plus élevé.
+§ 4. Avant l'expiration du terme, le titulaire du mandat peut mettre son mandat de chef de corps ou son mandat adjoint de président à disposition par lettre recommandée à la poste ou contre accusé de réception, adressée au Ministre.
+Il n'est toutefois mis fin au mandat de chef de corps ou au mandat adjoint de président qu'au moment où le nouveau chef de corps ou président reprend le mandat sans que ce délai puisse excéder neuf mois à compter de la réception de la mise à disposition.
+Les dispositions du § 3, alinéas 3 et 4, sont d'application au chef de corps ou au président qui met son mandat à disposition de manière anticipée.
+Le chef de corps ou le président qui met son mandat à disposition avant l'expiration du terme ne peut plus poser sa candidature pour un mandat de chef de corps ou un mandat adjoint de président pendant un délai de deux ans à compter du jour où il a effectivement renoncé à son mandat. Pour l'application de la présente disposition, la désignation d'un président pour un mandat de chef de corps n'est pas considérée comme une mise à disposition anticipée du mandat adjoint.
+§ 5. Lorsque le mandat de chef de corps ou le mandat adjoint de président est à pourvoir avant l'expiration du délai fixé au § 1er, alinéa 2, seules les personnes qui répondent aux mêmes conditions linguistiques que le chef de corps ou le président, selon le cas, dont le mandat a pris fin anticipativement, peuvent, sous peine d'irrecevabilité, présenter leur candidature.
+La durée du mandat de la personne qui, en application de l'alinéa 1er, est désignée chef de corps ou président, est, par dérogation au § 1er, limitée à la durée restante du mandat qui a pris fin avant l'expiration du terme.
+Si, au moment de la vacance effective du mandat de chef de corps, moins d'une année doit encore s'écouler jusqu'à la fin de la période visée au § 1er, alinéa 1er, le président remplace le premier président dans l'exercice de son mandat pour la période restante du mandat en cours.
+S'il s'agit de la vacance effective du mandat de président, il sera remplacé par le président de chambre appartenant au même rôle linguistique, par ordre d'ancienneté de service. Le remplacement prend fin de plein droit lors de la désignation d'un nouveau titulaire de mandat.
+Le remplacement visé aux alinéas 3 et 4 prend fin de plein droit lors de la désignation d'un nouveau titulaire de mandat.
+
+Art. 39/25.<Inséré par L 2006-09-15/71, art. 112; En vigueur : 01-12-2006> § 1er. Les titulaires d'un mandat adjoint sont désignés comme suit :
+1° les présidents de chambre sont désignes par l'assemblée générale;
+2° le greffier en chef est désigné par le Roi, sur avis du premier président et du président.
+§ 2. [1 Les désignations aux mandats adjoints visés au paragraphe 1er sont valables pour une période de trois ans, qui est prolongée de plein droit sauf en cas d'évaluation donnant lieu à la mention "insuffisant". Après neuf ans d'exercice de fonction, les titulaires de mandat concernés sont, sauf en cas d'évaluation "insuffisant", désignés de plein droit à titre définitif dans ce mandat.]1
+§ 3. En cas de non renouvellement du mandat adjoint, l'intéressé reprend à l'expiration de celui-ci l'exercice de la fonction à laquelle il a été nommé en dernier lieu, le cas échéant, en surnombre.
+[1 Si aucun titulaire de fonction n'a été désigné au mandat de greffier en chef, l'intéressé est, en cas de non-renouvellement, nommé en tant que greffier, le cas échéant en surnombre, sans que l'article 39/20 ne soit d'application.]1
+§ 4. Avant l'expiration du terme du mandat adjoint, le titulaire de mandat peut le mettre à disposition par lettre recommandée à la poste ou contre accusé de réception adressée au Ministre. Il n'est toutefois mis fin au mandat qu'à l'expiration d'un délai de neuf mois à compter de la réception de la mise à disposition. Ce délai peut être réduit par le Roi sur demande motivée de l'intéressé.
+Les dispositions du § 3 sont d'application au titulaire de mandat qui met son mandat à disposition avant l'expiration du terme et qui n'assume pas d'autre mandat.
+----------
+(1)<L 2021-12-23/46, art. 5, 115; En vigueur : 20-02-2022>
+
+Art. 39/26. <Inséré par L 2006-09-15/71, art. 113; En vigueur : 01-12-2006> L'exercice d'un mandat de chef de corps est incompatible avec l'exercice d'un mandat adjoint. L'exercice du mandat adjoint de président est incompatible avec l'exercice du mandat adjoint de président de chambre.
+Si le titulaire d'un mandat adjoint accède, au cours de son mandat, à un mandat de chef de corps ou de président, son mandat adjoint devient effectivement vacant le jour de la reprise du mandat de chef de corps ou de président. ".
+
+Sous-section 3. - De l'exercice du mandat <Insérée par L 2006-09-15/71, art. 115; En vigueur : 01-12-2006>
+
+Art. 39/27.
+<Abrogé par L 2013-05-08/17, art. 9, 071; En vigueur : 01-09-2013>
+
+Section III. [1 - L'évaluation des titulaires de fonction du Conseil]1
+----------
+(1)<L 2021-12-23/46, art. 6, 115; En vigueur : 20-02-2022>
+
+Sous-section 1re. - Dispositions générales <Insérée par L 2006-09-15/71, art. 116; En vigueur : 01-12-2006>
+
+Art. 39/28.[1 § 1er. A l'exception des titulaires du mandat de chef de corps ou de président, les membres du Conseil, le greffier en chef et les greffiers sont soumis à une évaluation périodique qui a lieu tous les trois ans.
+Cette évaluation est effectuée au cours des [2 quatre mois qui suivent]2 la période d'évaluation.
+La période d'évaluation de trois ans débute dès la prestation de serment pour la fonction dans laquelle l'intéressé doit être évalué. Au cas où l'intéressé assume un mandat adjoint, la période d'évaluation en cours est clôturée anticipativement par un entretien d'évaluation. La nouvelle période d'évaluation débute dès la nomination au mandat adjoint.
+§ 2. Les dossiers d'évaluation sont conservés par le premier président en ce qui concerne les membres du Conseil et le greffier en chef et par le greffier en chef en ce qui concerne les greffiers. Les évaluations sont confidentielles et peuvent être consultées à tout moment par les intéressés. Elles sont conservées pendant au moins dix ans.
+Lors de chaque nomination, présentation ou renouvellement de mandat, le dossier d'évaluation des six dernières années de l'intéressé est joint à l'attention de l'autorité investie du pouvoir de nomination.]1
+----------
+(1)<L 2021-12-23/46, art. 7, 115; En vigueur : 20-02-2022>
+(2)<L 2026-06-17/03, art. 5.5, 134; En vigueur : 12-06-2026>
+
+Sous-section 2. [1 - Les critères d'évaluation]1
+----------
+(1)<L 2021-12-23/46, art. 8, 115; En vigueur : 20-02-2022>
+
+Art. 39/29.[1 L'évaluation se base sur des critères portant sur la personnalité et les capacités organisationnelles et professionnelles du titulaire de fonction, en ce compris la qualité des prestations fournies et le maintien à niveau des connaissances dans les matières traitées, et ce sans porter atteinte à son indépendance ni à son impartialité.
+Le Roi détermine, après avis du premier président et du président, l'assemblée générale entendue, les critères d'évaluation, compte tenu de la spécificité des fonctions et mandats.]1
+----------
+(1)<L 2021-12-23/46, art. 9, 115; En vigueur : 20-02-2022>
+
+Sous-section 3. [1 - Le déroulement de l'évaluation]1
+----------
+(1)<L 2021-12-23/46, art. 10, 115; En vigueur : 20-02-2022>
+
+Art 39/30.[1 § 1. L'évaluation est précédée d'un entretien de planification qui a lieu au début de la période d'évaluation. Cet entretien de planification vise à fixer, de commun accord entre l'évaluateur et l'évalué, les objectifs pour la période d'évaluation à venir, sur la base d'une description concrète de la fonction et en tenant compte du contexte organisationnel. Ces objectifs doivent être spécifiques, mesurables, acceptables et réalisables.
+L'entretien de planification fait l'objet d'un rapport écrit. Ce rapport est signé par l'évaluateur et l'évalué, et remis par l'évaluateur au premier président ou, selon le cas, au greffier en chef, qui le joint au dossier d'évaluation.
+§ 2. Pendant la période d'évaluation, des entretiens de fonctionnement ont lieu au moins une fois par an. Ces entretiens ont lieu soit lorsqu'il existe des raisons d'adapter les objectifs fixés lors de l'entretien de planification, soit à l'initiative de l'évaluateur, soit à la demande de l'évalué.
+Ces entretiens donnent lieu à la formulation de conclusions dans un rapport sommaire. Ce rapport est signé par l'évaluateur et l'évalué. Si les conclusions de l'entretien de fonctionnement n'emportent pas l'adhésion de l'évalué, celui-ci peut ajouter ses observations au rapport. Le rapport est remis par l'évaluateur au premier président ou, selon le cas, au greffier en chef, qui le joint au dossier d'évaluation.
+§ 3. Les entretiens de planification, de fonctionnement et d'évaluation ont lieu entre les personnes suivantes:
+1° s'agissant d' un membre du Conseil, entre le membre concerné et le président de la chambre à laquelle il appartient;
+2° s'agissant d'un président de chambre, le président de chambre concerné, le premier président et le président;
+3° s'agissant d' un greffier, entre le greffier concerné et le greffier en chef;
+4° s'agissant du greffier en chef, entre le greffier en chef concerné, le premier président et le président.
+§ 4. En vue de l'entretien de fonctionnement ou d'évaluation d'un greffier, le greffier en chef sollicite au préalable l'avis du président des chambres à laquelle le greffier est assigné.]1
+----------
+(1)<L 2021-12-23/46, art. 11, 115; En vigueur : 20-02-2022>
+
+Section IV.
+<Abrogé par L 2021-12-23/46, art. 12, 115; En vigueur : 20-02-2022>
+
+Sous-section 1re.
+<Abrogé par L 2021-12-23/46, art. 12, 115; En vigueur : 20-02-2022>
+
+Art. 39/31.[1 § 1. Un entretien d'évaluation a lieu avant l'évaluation. L'évaluation est également basée sur les rapports des entretiens de planification et de fonctionnement.
+§ 2. Après l'entretien d'évaluation, l'évaluateur rédige une évaluation. L'évaluation donne lieu à la mention "bien", "à développer" ou "insuffisant". La mention "insuffisant" peut uniquement être attribuée en cas de fonctionnement manifestement insuffisant. Si l'évaluateur estime que l'évalué mérite la mention "bien", cette évaluation est immédiatement définitive et une copie de l'évaluation est transmise à l'intéressé dans les quinze jours de l'entretien effectué dans le cadre de l'évaluation. Si l'évaluateur estime que l'évalué mérite la mention "à développer" ou "insuffisant", l'évaluation n'est que provisoire.
+§ 3. En cas d'évaluation provisoire, le premier président envoie une copie de l'évaluation provisoire à l'intéressé, contre accusé de réception daté ou par lettre recommandée avec accusé de réception.
+L'intéressé peut, sous peine de déchéance, dans un délai de quinze jours à compter de la notification de l'évaluation provisoire, adresser ses remarques écrites, contre accusé de réception daté ou par lettre recommandée avec accusé de réception, au premier président, lequel joint l'original au dossier d'évaluation et en transmet une copie à l'évaluateur. Dans les quinze jours de la réception de la copie de ces observations, celui-ci rédige une évaluation écrite et définitive dans laquelle il répond à ces observations. Dans les quinze jours de la réception de l'évaluation définitive, le premier président en transmet une copie à l'intéressé, contre accusé de réception daté ou par lettre recommandée avec accusé de réception.]1
+----------
+(1)<L 2021-12-23/46, art. 13, 115; En vigueur : 20-02-2022>
+
+Sous-section 2.
+<Abrogé par L 2021-12-23/46, art. 12, 115; En vigueur : 20-02-2022>
+
+Art. 39/32.[1 § 1. L'intéressé qui, en application de l'article 39/31, a obtenu une mention "insuffisant" et qui a fait application de l'article 39/31, § 3, alinéa 2, peut introduire un recours contre l'évaluation définitive auprès de la commission d'évaluation, dans un délai de quinze jours à compter de la notification de l'évaluation définitive, sous peine de déchéance.
+La commission d'évaluation est composée de trois personnes faisant partie du même rôle linguistique que l'intéressé et n'ayant pas émis d'évaluation en première instance. La commission d'évaluation est composée, selon le cas, de la manière suivante:
+1° s'agissant d'un membre du Conseil ou d'un greffier, la commission d'évaluation est composée, selon le cas, du premier président ou du président, et de deux présidents de chambre. Si le premier président ou le président est intervenu en tant qu'évaluateur en première instance, il est remplacé par un autre président de chambre ou par le membre du conseil disposant de la plus grande ancienneté;
+2° s'agissant d'un président de chambre, la commission d'évaluation est composée d'au moins deux présidents de chambre, ainsi que du membre du Conseil disposant de la plus grande ancienneté et n'appartenant pas à la chambre du président de chambre concerné;
+3° s'agissant du greffier en chef, la commission d'évaluation est composée d'au moins deux présidents de chambre, ainsi que du membre du Conseil disposant de la plus grande ancienneté.
+Si un des membres de la commission d'évaluation est empêché, ou s'il appert que la composition susvisée n'est pas possible, le membre manquant de la commission est remplacé par le membre du Conseil suivant, disposant de la plus grande ancienneté.
+Le recours est introduit auprès du premier président, contre accusé de réception daté ou par lettre recommandée contre accusé de réception. Un recours introduit en temps utile suspend l'exécution de l'évaluation définitive.
+La commission d'évaluation visée à l'alinéa 1er entend l'intéressé si ce dernier en a formulé la demande dans son recours. Si l'intéressé demande à être entendu mais se trouve cependant dans l'impossiblité de se présenter, il se fait représenter par son conseil. La commission d'évaluation dispose d'un délai de soixante jours à partir de la réception du recours par le premier président, pour prendre une décision finale motivée sur l'évaluation.
+§ 2. Si un président de chambre ou le greffier en chef obtient une mention "insuffisant" pour l'une des trois premières évaluations périodiques, il reprend, à l'expiration de son mandat, l'exercice de la fonction dans laquelle il a été nommé en dernier lieu, le cas échéant en surnombre. Dans le cas contraire, son mandat est renouvelé et le premier président transmet au ministre une confirmation du renouvellement du mandat. Les titulaires d'un mandat qui sont nommés à titre définitif sont soumis à l'application de l'alinéa 2.
+Si un autre membre du Conseil ou du greffe obtient, lors de l'évaluation périodique, la mention "insuffisant", celle-ci entraîne, à compter du premier jour du mois suivant la notification de cette évaluation définitive, la perte durant six mois de la dernière majoration triennale, visée à l'article 3, § 1bis, de la loi du 5 avril 1955 relative aux traitements des titulaires d'une fonction au Conseil d'Etat, des magistrats et des membres du greffe du Conseil du contentieux des étrangers.
+Sans préjudice de l'éventuelle application de l'article 39/53, en cas de mention "insuffisant", l'intéressé fait l'objet d'une nouvelle évaluation après un délai de six mois. S'il obtient une nouvelle mention "insuffisant", l'alinéa 2 est d'application pour une nouvelle période de six mois, sans préjudice de l'éventuelle application de l'article 39/53.]1
+----------
+(1)<L 2021-12-23/46, art. 14, 115; En vigueur : 20-02-2022>
+
+Art. 39/33.
+<Abrogé par L 2021-12-23/46, art. 15, 115; En vigueur : 20-02-2022>
+
+Section V. - L'exercice de la fonction <Insérée par L 2006-09-15/71, art. 126; En vigueur : 01-12-2006>
+
+Art. 39/34. <Inséré par L 2006-09-15/71, art. 127; En vigueur : 01-12-2006> Le Roi détermine, après avis motivé du premier président, la manière dont est enregistrée la charge de travail du titulaire d'une fonction, ainsi que la manière dont ces données enregistrées sont évaluées.
+
+Art. 39/35. <Inséré par L 2006-09-15/71, art. 128; En vigueur : 01-12-2006> Si l'absence d'un membre du Conseil ou du greffe est due à la maladie, la régularité de cette absence peut être subordonnée par le premier président ou le président, ou le greffier en chef à un contrôle effectué par le Service de santé administratif qui fait partie de l'Administration de l'expertise médicale selon les modalités fixées dans le règlement administratif de ce service.
+
+Art. 39/36. <Inséré par L 2006-09-15/71, art. 129; En vigueur : 01-12-2006> Le Roi prescrit le costume porté aux audiences et dans les cérémonies officielles par les membres du Conseil et du greffe.
+Le Roi règle la préséance et les honneurs.
+
+Section VI. - Traitements, retraite et pensions <Insérée par L 2006-09-15/71, art. 130; En vigueur : 01-12-2006>
+
+Art. 39/37. <L 2006-12-27/33, art. 123, 042; En vigueur : 01-12-2006> Les traitements, majorations et indemnités alloués aux membres du Conseil et du greffe sont fixés par la loi.
+
+Art. 39/38.<Inséré par L 2006-09-15/71, art. 132; En vigueur : 01-12-2006> § 1er. Les membres du Conseil sont mis à la retraite si, en raison d'une infirmité grave et permanente, ils ne sont plus à même de remplir dûment leur fonction, ou s'ils ont atteint l'âge de soixante-sept ans.
+Les [2 articles 391, 391/1, 392, 392/1]2, [3 393, 393/1, 393/2, 395]3, 396 et 397 du Code judiciaire sont applicables aux membres du Conseil. [1 Pour l'application des articles précités à ces personnes, les âges prévus à l'article 383, § 1er, du Code judiciaire sont remplacés par l'âge prévu à l'alinéa 1er.]1
+§ 2. Les membres du greffe sont mis à la retraite lorsqu'une infirmité grave et permanente ne leur permet plus de remplir convenablement leurs fonctions ou lorsqu'ils [1 ont atteint l'âge légal de la pension tel que prévu à l'article 46, § 3, de la loi du 15 mai 1984 portant mesures d'harmonisation dans les régimes de pensions]1. La loi générale sur les pensions civiles leur est applicable.
+[1 ...]1.
+[1 § 2/1. Les membres du Conseil et du greffe mis à la retraite pour cause d'infirmité grave et permanente ne peuvent pas prétendre à une pension de retraite, à moins qu'ils aient atteint l'âge légal de la pension ou qu'ils remplissent les conditions pour obtenir une pension immédiate ou différée, tels que prévus à l'article 46 de la loi du 15 mai 1984 précitée.]1
+§ 3. Les greffiers peuvent, sur la proposition du Conseil, être exceptionnellement maintenus en activité au-delà des limites fixées au § 2, dans le cas où le Conseil a un intérêt particulier à conserver leur concours, alors qu'ils devraient être remplacés s'ils étaient mis à la retraite.
+(Le Roi décide du maintien en activité des membres du greffe, sur avis du Conseil des ministres.) <L 2006-12-27/33, art. 124, 2°, 042; En vigueur : 01-12-2006>
+Le maintien en activité n'a effet que pour un an; il peut être renouvelé.
+§ 4. Pour l'application des aliènes 2 et 4 de l'article 8, § 1er, de la loi générale du 21 juillet 1844 sur les pensions civiles et ecclésiastiques, les désignations visées à l'article 39/23 sont assimilées à des nominations définitives.
+----------
+(1)<L 2026-06-18/01, art. 18, 136; En vigueur : 01-06-2026>
+(2)<L 2026-06-18/01, art. 22,1°, 136; En vigueur : 01-01-2012>
+(3)<L 2026-06-18/01, art. 22,2°, 136; En vigueur : 01-12-2017>
+
+Art. 39/39. <Inséré par L 2006-09-15/71, art. 133; En vigueur : 01-12-2006> (Les membres du Conseil et du greffe qui, atteints d'une infirmité grave et permanente, ne sont plus en mesure de remplir convenablement leur fonction et qui n'ont pas demandé leur mise à la retraite, sont avertis d'office par le premier président, par lettre recommandée à la poste). S'il s'agit du premier président, l'avertissement est donné par le président, ou l'inverse. <L 2006-12-27/33, art. 125, 042; En vigueur : 01-12-2006>
+
+Art. 39/40.[1 Si, dans le mois de l'avertissement, le membre du Conseil ou du greffe n'a pas demandé sa mise à la retraite, le Conseil se réunit en assemblée générale en chambre du Conseil pour statuer sur la mise à la retraite de l'intéressé, sur la base de la décision médicale d'inaptitude définitive prise en dernier ressort par le Centre d'expertise médicale de l'aptitude au travail de l'Administration de l'expertise médicale du Service public fédéral Santé publique, Sécurité de la Chaîne alimentaire et Environnement (Medex).]1
+Quinze jours au moins avant la date qui a été fixée pour l'assemblée générale du Conseil, l'intéressé est informé du jour et l'heure de la séance lors de laquelle il sera entendu et est en même temps invité à soumettre ses observations par écrit.
+Cette information et cette demande lui sont envoyées par lettre recommandée avec accusé de réception.
+----------
+(1)<L 2026-06-18/01, art. 19, 136; En vigueur : 01-06-2026>
+
+Art. 39/41. <Inséré par L 2006-09-15/71, art. 135; En vigueur : 01-12-2006> (La décision visée à l'article 39/40 est) immédiatement notifiée à l'intéressé. Si celui-ci n'a pas fourni d'observations par écrit, la décision ne passe en force de chose jugée que s'il n'a pas été formé d'opposition dans les cinq jours à dater de la notification. <L 2006-12-27/33, art. 127, 042; En vigueur : 01-12-2006>
+L'intéressé ne peut pas faire opposition lorsqu'il a été entendu par l'assemblée générale du Conseil mais n'a pas fourni d'observations par écrit.
+L'opposition n'est recevable que si elle est introduite par lettre recommandée. L'acte d'opposition contient, sous peine de nullité, les moyens du demandeur en opposition.
+Lorsque le demandeur en opposition fait défaut une seconde fois, une nouvelle opposition n'est plus recevable.
+
+Art. 39/42. <Inséré par L 2006-09-15/71, art. 136; En vigueur : 01-12-2006> La décision rendue soit, sur les observations du membre concerné du Conseil ou du greffe, soit sur son opposition, est en dernière instance.
+
+Art. 39/43. <Inséré par L 2006-09-15/71, art. 137; En vigueur : 01-12-2006> Les notifications sont faites par le greffier en chef du Conseil qui est tenu de les constater par un procès-verbal.
+
+Art. 39/44. <L 2006-12-27/33, art. 128, 042; En vigueur : 01-12-2006> La décision visée à l'article 39/42 est envoyée au ministre dans les quinze jours qui suivent le moment où elle a acquis force de chose jugée.
+
+Section VII. - Des incompatibilités et de la discipline <Insérée par L 2006-09-15/71, art. 139; En vigueur : 01-12-2006>
+
+Art. 39/45. <Inséré par L 2006-09-15/71, art. 140; En vigueur : 01-12-2006> Les fonctions de membre du Conseil et du greffe sont incompatibles avec les fonctions judiciaires, avec l'exercice d'un mandat public conféré par élection, avec toute fonction ou charge publique rémunérée d'ordre politique ou administratif, avec les charges de notaire et d'huissier de justice, avec la profession d'avocat, avec l'état militaire et l'état ecclésiastique.
+Il peut être dérogé à l'alinéa 1er :
+1° lorsqu'il s'agit de l'exercice de fonctions de professeur, chargé de cours, maître de conférence ou assistant dans les établissements d'enseignement supérieur, pour autant que ces fonctions ne s'exercent pas pendant plus de cinq heures par semaine ni plus de deux demi-journées par semaine;
+2° lorsqu'il s'agit de l'exercice de fonctions de membre d'un jury d'examen;
+3° lorsqu'il s'agit de la participation à une commission, à un Conseil ou comité consultatif, pour autant que le nombre de charges ou fonctions rémunérées soit limité à deux et que l'ensemble de leurs rémunérations ne soit pas supérieur au dixième du traitement brut annuel de la fonction principale au Conseil.
+Ces dérogations sont accordées par le Roi ou par le Ministre, selon qu'elles sont prévues au 1/ ou aux 2/ et 3/. Elles sont accordées sur avis conforme du premier président.
+
+Art. 39/46. <Inséré par L 2006-09-15/71, art. 141; En vigueur : 01-12-2006> Les membres du Conseil et du greffe ne peuvent être requis pour aucun autre service public, sauf les cas prévus par la loi.
+
+Art. 39/47. <Inséré par L 2006-09-15/71, art. 142; En vigueur : 01-12-2006> Ils ne peuvent :
+1° assumer la défense des intéressés, ni verbalement, ni par écrit, ni leur donner des consultations;
+2° faire d'arbitrage rémunéré;
+3° soit personnellement, soit par personne interposée, n'exercer aucune espèce de commerce, être agent d'affaires, participer à la direction, à l'administration ou à la surveillance de sociétés commerciales ou d'établissements industriels ou commerciaux.
+Par dérogation à l'alinéa 1er, 3/, le Roi peut, dans des cas particuliers, autoriser la participation à la surveillance de sociétés ou d'établissements industriels.
+
+Art. Art. 39/48. <Inséré par L 2006-09-15/71, art. 143; En vigueur : 01-12-2006> L'article 458 du Code pénal est applicable aux membres du Conseil et du greffe en ce qui concerne les renseignements dont ils ont connaissance dans l'exercice de leur fonction.
+
+Art. 39/49. <Inséré par L 2006-09-15/71, art. 144; En vigueur : 01-12-2006> Les membres du Conseil ou du greffe peuvent moyennant leur consentement et sur avis du premier président être chargés temporairement par le Roi d'accomplir des missions ou d'exercer des fonctions auprès d'institutions nationales. Au cas où les tâches qui leur sont attribuées ne leur permettent plus de s'acquitter de leurs fonctions au Conseil, ils font l'objet d'une mesure de détachement.
+La durée du détachement ne peut excéder un an. Des prorogations peuvent toutefois être accordées aux conditions fixées à l'alinéa 1er, pour des périodes d'un an au plus, sans que la durée totale du détachement puisse excéder six ans.
+Si, à l'expiration du détachement, l'intéressé n'a pas repris ses fonctions au Conseil, il est réputé démissionnaire.
+(Les membres détachés) conservent leur place sur la liste de rang. (la période de) détachement est considéré comme une période de service effectif. Ils continuent à percevoir le traitement attaché à leurs fonctions au Conseil. Aucune rétribution complémentaire ne peut leur être accordée, ni aucune indemnité en dehors de celles qui couvrent des charges réelles inhérentes aux missions ou aux fonctions confiées et de celles qui sont fixées par le Roi dans chaque cas particulier. <L 2006-12-27/33, art. 129, 042; En vigueur : 01-12-2006>
+Le titulaire d'un mandat de chef de corps ou d'un mandat adjoint de président ne peut être détaché. Le titulaire d'un mandat adjoint de président de chambre ou de greffier en chef peut être détaché pour une période limitée, qui ne peut excéder un an.
+Si l'administrateur est un membre du Conseil ou du greffe, le détachement est effectué, par dérogation à l'alinéa 2, pour la durée du mandat de l'administrateur.
+Ne peuvent pas être détachés plus de quatre membres du Conseil ou du greffe. Pas plus de trois des membres détachés ne peuvent appartenir au même rôle linguistique.
+
+Art. 39/50. <Inséré par L 2006-09-15/71, art. 145; En vigueur : 01-12-2006> A l'exception du titulaire d'un mandat de chef de corps les membres du Conseil ou du greffe peuvent être autorisés par le Roi, (sur l'avis) du premier président, à accomplir des missions ou à exercer des fonctions auprès d'institutions supranationales, internationales ou étrangères. <L 2006-12-27/33, art. 130, 042; En vigueur : 01-12-2006>
+Au cas où les tâches qui leur sont ainsi attribuées ne leur permettent plus de s'acquitter de leur fonction au Conseil, ils sont placés hors cadre.
+La durée totale de la mise hors cadre ne peut excéder les périodes d'exercice effectif de fonctions au Conseil.
+Les intéressés mis hors cadre cessent de percevoir le traitement attaché à leurs fonctions au Conseil et de participer à l'avancement. Ils conservent le droit de réintégrer leurs fonctions antérieures au Conseil nonobstant le nombre de places fixé par l'article 39/4.
+Si, à l'expiration de la durée de la mise hors cadre, les intéressés n'ont pas réintégré leur fonction au Conseil, ils sont réputés démissionnaires.
+Les personnes visées à l'alinéa 2 sont autorisées à compter la durée de leur mission dans le calcul de leur pension, pour autant qu'elle n'ait pas déjà été prise en considération pour ce calcul. La pension ainsi calculée est diminuée du montant net de la pension octroyée à l'intéressé, du chef de la mission lui attribuée par le gouvernement étranger, l'administration étrangère ou l'organisme supranational ou international auprès duquel il l'a accomplie. Cette réduction ne s'applique qu'à l'accroissement de pension résultant de la prise en charge, par le Trésor, de la durée de cette mission.
+
+Art. 39/51. <Inséré par L 2006-09-15/71, art. 146; En vigueur : 01-12-2006> Les membres du Conseil ou du greffe qui sont détachés ou placés hors cadre peuvent être remplacés nonobstant le nombre de places fixé par l'article 39/4, tout au plus à raison de deux membres du Conseil et d'un membre du greffe.
+Pour l'application de l'article 39/4 les nominations faites en vue d'assurer des remplacements sont considérées comme des nominations à de nouvelles places.
+Les titulaires des fonctions conférées pour assurer des remplacements sont nommés définitivement. Ils accèdent de plein droit, au fur et à mesure des vacances, aux places prévues par l'article 39/4, pour autant qu'ils justifient des connaissances linguistiques requises pour la place devenue vacante.
+
+Art. 39/52. <Inséré par L 2006-09-15/71, art. 147; En vigueur : 01-12-2006> Les parents et alliés, jusqu'au degré d'oncle et de neveu inclus, ne peuvent être membres du Conseil simultanément sans une dispense du Roi; ils ne peuvent siéger simultanément, sauf aux assemblées générales.
+
+Art. 39/53.[1 Les titulaires de fonction du Conseil qui manquent aux devoirs de leur charge, ou qui portent, par leur conduite, atteinte à la dignité de leur fonction, peuvent faire l'objet des mesures disciplinaires visées à l'article 39/53-1.
+Ces mesures disciplinaires peuvent également être infligées à ceux qui négligent les tâches de leur charge et qui portent ainsi atteinte au bon fonctionnement du Conseil ou à la confiance dans cette institution.]1
+----------
+(1)<L 2021-12-23/46, art. 16, 115; En vigueur : 20-02-2022>
+
+Art. 39/53-1. [1 § 1. Les mesures disciplinaires mineures suivantes peuvent être infligées:
+1° le rappel à l'ordre;
+2° le blâme.
+Les mesures disciplinaires majeures suivantes peuvent être infligées:
+1° la retenue de traitement;
+2° la suspension disciplinaire;
+3° la fin du mandat visé à l'article 39/5;
+4° la démission d'office;
+5° la destitution ou la révocation.
+§ 2. La retenue de traitement s'applique pendant quinze jours au moins et un an au plus, et ne peut pas être supérieure à 20 % du traitement brut.
+§ 3. La suspension disciplinaire est prononcée pour une période d'au moins un mois et d'un an au plus.
+La suspension disciplinaire entraîne, pendant sa durée, une retenue de traitement qui ne peut être supérieure à 50 % du traitement brut.
+Durant les périodes de suspension disciplinaire, l'intéressé ne peut prétendre à une augmentation de traitement ou au supplément de traitement tel que visé à l'article 3ter, alinéas 1er et 2, de la loi du 5 avril 1955 relative aux traitements des titulaires d'une fonction au Conseil d'Etat et des magistrats et membres du greffe du Conseil du Contentieux des étrangers. Il ne peut pas non plus être désigné dans un mandat durant cette période.
+§ 4. La fin du mandat visé à l'article 39/5 a également pour effet que l'intéressé ne peut plus se porter candidat pour le mandat visé audit article, sauf en cas d'effacement d'office ou de révision, tels que visés à l'article 39/53-8.
+§ 5. La démission d'office fait perdre la qualité de membre du Conseil ou de membre du greffe du Conseil.
+§ 6. Outre la perte de la qualité de membre du Conseil ou de membre du greffe du Conseil, la destitution et la révocation emportent également la perte de la pension de retraite et l'interdiction d'exercer une fonction au Conseil du Contentieux des étrangers.
+§ 7. Le collège disciplinaire ou le Conseil d'Etat peut suspendre le prononcé de la mesure et surseoir à l'exécution de la mesure prononcée, le cas échéant, moyennant les conditions particulières qu'il fixe.]1
+----------
+(1)<Inséré par L 2021-12-23/46, art. 17, 115; En vigueur : 20-02-2022>
+
+Art. 39/53-2. [1 Lorsque plusieurs manquements disciplinaires sont imputés à l'intéressé, une seule procédure est engagée à sa charge qui ne peut déboucher que sur une seule mesure disciplinaire.
+Si un nouveau manquement lui est imputé au cours de la procédure disciplinaire, une nouvelle procédure est engagée, sans que la procédure déjà engagée ne soit interrompue pour autant.
+En cas de connexité, ce nouveau manquement est toutefois instruit et jugé lors de la procédure en cours.]1
+----------
+(1)<Inséré par L 2021-12-23/46, art. 18, 115; En vigueur : 20-02-2022>
+
+Art. 39/53-3. [1 § 1. La procédure disciplinaire visant un président de chambre, un membre du Conseil, le greffier en chef ou un greffier, est initiée par le premier président du Conseil en étroite concertation avec le président du Conseil.
+Le premier président informe l'intéressé, par envoi recommandé, du lancement d'une procédure disciplinaire et des faits précis qui y ont donné lieu. Il donne à l'intéressé accès au dossier et l'entend dans les quinze jours. Le rapport d'audition est joint au dossier sans délai. Dans les trente jours à compter du jour suivant l'audition, il est donné à l'intéressé la possibilité de présenter ses observations écrites, qui sont jointes au dossier.
+La procédure disciplinaire visant le premier président ou le président du Conseil est initiée par l'assemblée générale. L'assemblée générale est convoquée à cette fin et présidée, selon le cas, par le premier président ou le président.
+Selon le cas, le premier président ou le président, informe le premier président ou le président concerné, par envoi recommandé, de la convocation de l'assemblée générale, du lancement de la procédure disciplinaire et des faits précis qui y ont donné lieu. L'assemblée générale donne à l'intéressé accès au dossier et l'entend dans les quinze jours. Le rapport de l'audition est joint au dossier sans délai. Dans les trente jours à compter du jour suivant l'audition, il est donné à l'intéressé la possibilité de présenter ses observations écrites, qui sont jointes au dossier.
+§ 2. Si le premier président ou l'assemblée générale estime qu'aucune mesure disciplinaire ne doit être infligée, l'intéressé en est informé sans délai, contre accusé de reception daté ou par envoi recommandé.
+Si le premier président ou, selon le cas, l'assemblée générale estime qu'une mesure disciplinaire mineure est justifiée, celle-ci est infligée par voie de décision motivée. La décision est communiquée, sans délai, contre accusé de réception daté ou par envoi recommandé, à l'intéressé, au greffier en chef en ce qui concerne les greffiers, et au président de chambre en ce qui concerne un membre de sa chambre, ainsi qu'au ministre compétent.
+L'intéressé peut, conformément à l'article 39/53-7, introduire un recours auprès du Conseil d'Etat contre les décisions disciplinaires visées à l'alinéa 2.
+§ 3. Si le premier président ou l'assemblée générale, selon le cas, estime qu'une mesure disciplinaire majeure est justifiée, une demande de mesure disciplinaire majeure est introduite auprès du collège disciplinaire, visé à l'article 39/53-4. La demande mentionne le nom, la qualité et l'adresse de l'intéressé et contient une motivation de la raison pour laquelle une mesure disciplinaire majeure est jugée nécessaire. La demande est, selon le cas, signée par le premier président ou le président de l'assemblée générale. Le dossier ainsi que la demande sont transmis au collège disciplinaire. Une copie de la demande est également transmise à l'intéressé, contre accusé de réception daté ou par envoi recommandé.
+La décision de saisir le collège disciplinaire n'est pas susceptible de recours.
+La saisine est effectuée auprès du collège disciplinaire dans les nonante jours suivant l'envoi du courrier recommandé informant l'intéressé du lancement de la procédure disciplinaire.
+L'action disciplinaire est indépendante de l'action pénale et de l'action civile. Lorsque les mêmes faits donnent lieu à une action pénale, le délai de nonante jours peut être interrrompu jusqu'à la notification de la décision judiciaire définitive.
+Le ministre compétent est informé sans délai de la saisine du collège disciplinaire, par le premier président ou le président de l'assemblée générale, selon le cas.
+§ 4. Dès qu'une procédure disciplinaire est initiée, l'examen de la demande de démission introduite par le titulaire de fonction concerné peut être suspendue jusqu'à la fin de la procédure disciplinaire.]1
+----------
+(1)<Inséré par L 2021-12-23/46, art. 19, 115; En vigueur : 20-02-2022>
+
+Art. 39/53-4. [1 § 1. Le collège disciplinaire est une juridiction compétente pour les mesures disciplinaires visées à l'article 39/53, et les mesures d'ordre visées à l'article 39/53-9, à l'égard des titulaires de fonction du Conseil du Contentieux des étrangers.
+§ 2. Le collège disciplinaire est composé de trois membres appartenant au même rôle linguistique que le titulaire de fonction concerné.
+Le collège disciplinaire est présidé par un membre du Conseil d'Etat, assisté par les deux membres du Conseil du Contentieux des étrangers disposant de la plus grande ancienneté. Si un membre est récusé ou empêché, il sera remplacé par le membre suivant disposant de la plus grande ancienneté.
+La fonction de greffier auprès du collège disciplinaire est exercée par un greffier du Conseil d'Etat.
+Pour la désignation du président et du greffier, le premier président, en concertation avec le président et le greffier en chef, désigne lors de l'établissement annuel de l'ordre de service, un membre et un greffier pour chaque rôle linguistique. Ils établissent également une liste de suppléances en cas d'empêchement ou de récusation. Lors de l'établissement de la liste, il est tenu compte des nécessités du service, de la charge de travail des chambres, des disponibilités et du degré de spécialisation éventuel en la matière. La liste est mise à la disposition du public pour consultation au greffe.
+§ 3. Le collège disciplinaire est saisi d'un dossier par lettre recommandée adressée au premier président du Conseil d'Etat qui le transmet sans délai au membre qu'il désigne pour présider le collège disciplinaire. Cette désignation est faite sur la base de la liste visée au paragraphe 2, alinéa 4. Si aucun des membres désignés au préalable n'est disponible au moment de la désignation, il désigne le premier membre disponible ayant la plus grande ancienneté.
+Le président du collège disciplinaire compose le siège, selon le rôle linguistique du dossier, dans les dix jours.
+§ 4. Le collège disciplinaire instruit l'affaire en audience publique.
+L'intéressé peut demander, et ce, dès avant la première audience, au collège disciplinaire d'instruire l'affaire à huis clos. Le collège disciplinaire fait droit à cette demande, à moins qu'il n'estime que l'intérêt général s'y oppose.
+Le collège disciplinaire peut également siéger à huis clos pendant la totalité ou une partie de la procédure, dans l'intérêt de la moralité ou de l'ordre public, lorsque les intérêts de mineurs ou la protection de la vie privée de la personne contre laquelle une procédure a été intentée, l'exigent, ou dans la mesure jugée strictement nécessaire par le collège disciplinaire, lorsque dans certaines circonstances, la publicité serait de nature à porter atteinte aux intérêts de l'administration de la justice.
+La décision du collège disciplinaire d'examiner l'affaire à huis clos ou non n'est susceptible d'aucun recours.
+§ 5. Tous les arrêts du collège disciplinaire sont publiés, sous réserve de dépersonnalisation, dans la langue dans laquelle ils ont été prononcés, sur le réseau d'information accessible au public du Conseil d'Etat, en exécution de l'article 28, alinéa 3, des lois sur le Conseil d'Etat, coordonnées le 12 janvier 1973.
+Le président du collège disciplinaire peut, par dérogation à l'alinéa 1er et par décision motivée incluse dans l'arrêt, décider d'omettre certaines parties de la motivation de l'arrêt dans l'enregistrement figurant dans le réseau d'information accessible au public si l'enregistrement de ces éléments porte atteinte de manière disproportionnée au droit à la protection de la vie privée des parties ou d'autres personnes impliquées dans l'affaire.]1
+----------
+(1)<Inséré par L 2021-12-23/46, art. 20, 115; En vigueur : 20-02-2022>
+
+Art. 39/53-5. [1 § 1. Le président du collège disciplinaire transmet, par envoi recommandé, la demande de mesure disciplinaire majeure, visée à l'article 39/53-3, § 3, alinéa 1er, au titulaire de fonction concerné. Il y joint la convocation à l'audience. L'audience a lieu dans les soixante jours suivant la saisine du collège disciplinaire.
+Le courrier de convocation mentionne le lieu, la date et l'heure de l'audience, la composition du siège, ainsi que la possibilité de consultation du dossier et l'adresse à laquelle les pièces de procédure peuvent être adressées au collège disciplinaire. Le titulaire de fonction concerné est également informé par le biais de cette lettre qu'il peut, dans les trente jours suivant sa réception, par lettre recommandée, transmettre ses observations relatives à la demande de mesure disciplinaire majeure sollicitée.
+Le collège disciplinaire transmet une copie de ces observations au premier président du Conseil ou au président du Conseil, si le premier président fait lui-même l'objet de l'action disciplinaire.
+Le titulaire de fonction concerné comparaît en personne. Il peut se faire assister par son conseil.
+§ 2. Dans les huit jours suivant la notification de l'ordonnance mentionnant la composition du siège, la personne faisant l'objet de poursuites disciplinaires peut, en cas de suspicion légitime, récuser les membres de la chambre, par une demande motivée adressée au Conseil d'Etat. La demande de récusation est jugée en dernier ressort par le Conseil d'Etat.
+§ 3. Le collège disciplinaire peut entendre le premier président du Conseil ou le président, si le premier président fait lui-même l'objet de la mesure disciplinaire ou d'ordre, et des témoins.
+§ 4. L'arrêt est rendu dans les trente jours suivant l'audience et est notifié à l'intéressé, ainsi qu'au premier président, ou le cas échéant, au président du Conseil, ainsi qu'au ministre compétent.
+En cas de poursuites pénales, le collège disciplinaire peut toutefois surseoir à statuer jusqu'à la décision judiciaire définitive.
+L'arrêt est exécutoire de plein droit.
+Suite au prononcé de l'arrêt, le dossier est renvoyé sans délai au premier président du Conseil ou au président, si le premier président fait lui-même l'objet de la mesure disciplinaire.]1
+----------
+(1)<Inséré par L 2021-12-23/46, art. 21, 115; En vigueur : 20-02-2022>
+
+Art. 39/53-6. [1 § 1. Le titulaire de fonction qui conteste une mesure disciplinaire déguisée en mesure d'ordre, prise à son encontre en application del'article 39/53-9 peut introduire un recours en annulation contre cette mesure auprès du collège disciplinaire, dans les trente jours suivant la notification de la décision. Ce recours est introduit par lettre recommandée adressée au premier président du Conseil d'Etat. Ce recours n'est pas suspensif.
+Outre l'identité, la qualité et l'adresse du requérant, ainsi qu'une copie de la décision attaquée, la requête signée contient un exposé des faits et des moyens.
+Le président du collège disciplinaire informe sans délai le premier président ou le président, si le premier président fait lui-même l'objet de la mesure d'ordre, de la saisine du collège. A cette notification, il joint une copie de la requête et demande au premier président ou au président, si le premier président fait lui-même l'objet de la mesure d'ordre, de lui transmettre, dans les quinze jours, le dossier administratif et une éventuelle note d'observation. Une copie de la note d'observation est transmise au requérant.
+§ 2. Le premier président du Conseil ou le président, dans le cas où le premier président fait lui-même l'objet d'une mesure d'ordre et le réquérant, sont convoqués devant le collège disciplinaire dans les quinze jours suivant la fin du délai prévu pour le dépôt de la note d'observation. La convocation mentionne la possibilité de consulter le dossier.
+§ 3. Le collège disciplinaire peut entendre des témoins.
+§ 4. L'arrêt est prononcé dans les quinze jours suivant l'audience et est notifié à l'intéressé, ainsi qu'au premier président du Conseil ou, le cas échéant, au président, ainsi qu' au ministre compétent.
+L'arrêt est exécutoire de plein droit.
+L'arrêt est susceptible d'un recours en cassation administrative au sens de l'article 14, § 2, des lois sur le Conseil d'Etat, coordonnées le 12 janvier 1973.
+Suite au prononcé de l'arrêt du collège disciplinaire ou le cas échéant du Conseil d'Etat, le dossier est renvoyé sans délai au premier président du Conseil ou au président, si le premier président fait lui-même l'objet de la mesure d'ordre.]1
+----------
+(1)<Inséré par L 2021-12-23/46, art. 22, 115; En vigueur : 20-02-2022>
+
+Art. 39/53-7. [1 § 1. En application de l'article 16, alinéa 1er, 8°, des lois sur le Conseil d'Etat, coordonnées le 12 janvier 1973, un recours peut être introduit auprès du Conseil d'Etat contre la décision du premier président ou de l'assemblée générale du Conseil du contentieux des étrangers, visée à l'article 39/53-3, § 2, alinéa 2, ainsi que contre l'arrêt du collège disciplinaire, visé à l'article 39/53-5, § 4, dans les trente jours suivant la notification de la décision ou de l'arrêt.
+Le recours suspend l'exécution de la mesure disciplinaire.
+§ 2. Le greffier en chef informe le ministre compétent du recours introduit et transmet, sans délai, la requête et les annexes à la partie adverse qui peut, dans un délai de 15 jours, transmettre un mémoire en réplique avec quatre copies au greffe.
+Le greffier en chef demande au premier président du Conseil du Contentieux des étrangers ou au président, lorsque le recours est introduit par le premier président, de transmettre le dossier.
+Dès réception du dossier, le membre désigné de l'auditorat rédige sans délai un rapport sur l'affaire.
+Le rapport et, le cas échéant, le mémoire en réplique, sont notifiés aux parties. Chaque partie dispose d'un délai de quinze jours pour déposer un dernier mémoire, auquel sont jointes quatre copies.
+L'ordonnance de fixation d'audience, qui se tient à brève échéance, est notifiée aux parties avec les derniers mémoires.
+§ 3. Le Conseil d'Etat se prononce en chambres réunies, dans les soixante jours suivant l'inscription au rôle du recours.
+Le membre du Conseil d'Etat qui a présidé le collège disciplinaire, ne peut siéger au sein de ces chambres réunies.
+En cas de poursuites pénales, le prononcé peut être suspendu jusqu'à la décision judiciaire définitive.
+L'arrêt est notifié à l'intéressé, ainsi qu'au premier président, ou le cas échéant, au président du Conseil du Contentieux des étrangers, ainsi qu'au ministre compétent.
+Suite au prononcé de l'arrêt, le dossier est renvoyé sans délai au premier président du Conseil du Contentieux des étrangers ou au président, si le premier président fait lui-même l'objet de la mesure disciplinaire.]1
+----------
+(1)<Inséré par L 2021-12-23/46, art. 23, 115; En vigueur : 20-02-2022>
+
+Art. 39/53-8. [1 § 1. A l'exception des mesures prévues à l'article 39/53-1, § 1er, alinéa 2, 4° et 5°, l'effacement des mesures disciplinaires a lieu d'office après:
+1° trois ans pour les mesures disciplinaires mineures;
+2° six ans pour les mesures disciplinaires majeures.
+L'effacement vaut pour l'avenir.
+§ 2. La personne ayant fait l'objet d'une mesure disciplinaire infligée par le premier président ou par l'assemblée générale du Conseil du Contentieux des étrangers, par le collège disciplinaire ou par le Conseil d'Etat, peut introduire une requête en révision visée à l'article 31 des lois sur le Conseil d'Etat, coordonnées le 12 janvier 1973, pour les motifs suivants:
+1° elle démontre que la décision ou l'arrêt a été pris sur la base de fausses pièces;
+2° elle démontre que celui qui a initié et examiné l'action disciplinaire a retenu des pièces;
+3° elle démontre qu'elle a été acquittée au niveau pénal en dernière instance sur le fond pour les mêmes faits que ceux qui ont été déterminants pour la mesure disciplinaire.
+L'arrêt est notifié à l'intéressé, ainsi qu'au premier président, ou le cas échéant, au président du Conseil du Contentieux des étrangers, ainsi qu'au ministre compétent.
+Après le prononcé, le dossier est renvoyé sans délai au premier président du Conseil du contentieux des étrangers ou au président, si le premier président fait lui-même l'objet de la mesure disciplinaire.
+En cas de révision d'une démission d'office, d'une destitution ou d'une révocation, l'intéressé est réinstallé dans sa fonction au Conseil du Contentieux des étrangers, le cas échéant en surnombre.]1
+----------
+(1)<Inséré par L 2021-12-23/46, art. 24, 115; En vigueur : 20-02-2022>
+
+Art. 39/53-9. [1 § 1. Lorsqu'un titulaire de fonction est poursuivi pour un crime ou un délit ou lorsqu'il fait l'objet d'une procédure disciplinaire, le premier président peut, dans l'intérêt du Conseil, suspendre l'intéressé de sa fonction, sur la base d'une mesure d'ordre, pendant la durée des poursuites ou de la procédure disciplinaire et jusqu'à la décision finale.
+En cas d'application de l'alinéa 1er au premier président du Conseil ou au président, la mesure d'ordre est infligée par l'assemblée générale. L'assemblée générale est convoquée à cette fin et présidée, selon le cas, par le premier président ou le président du Conseil.
+La mesure d'ordre est prononcée pour trois mois au plus, et peut être prorogée pour des périodes de trois mois au plus, jusqu'à la décision définitive. La mesure peut entraîner une retenue de 20 % du traitement brut.
+Aucune mesure d'ordre ou prorogation d'une telle mesure ne peut être prononcée sans que l'intéressé ait été entendu ou, lorsque l'audition est impossible, sans qu'il ait pu faire valoir ses moyens de défense par écrit ou se faire représenter.
+La décision de prise d'une mesure d'ordre est notifiée, contre accusé de réception ou par envoi recommandé, à l'intéressé. La notification fait mention du droit d'introduire un recours, du délai et des formes à respecter.
+La décision est immédiatement exécutoire.
+§ 2. Lorsqu'une mesure disciplinaire entraînant une retenue de traitement est prise à l'encontre d'une personne qui a fait l'objet d'une mesure d'ordre avec réduction de traitement, la mesure disciplinaire produit ses effets au plus tôt le jour où la mesure d'ordre a pris cours.
+Le montant du traitement retenu pendant la durée de la mesure d'ordre est déduit du montant de la perte de traitement liée à la mesure disciplinaire entraînant une retenue de traitement. Si le montant du traitement retenu est plus important que le montant de la perte de traitement liée à la mesure disciplinaire entraînant une retenue de traitement, la différence est liquidée à l'intéressé.
+Les sommes retenues sont liquidées à l'intéressé lorsque la mesure d'ordre n'est pas suivie par une mesure disciplinaire ou une condamnation pénale pour les mêmes faits, ou si l'action pénale est éteinte ou en cas d'ordonnance de non-lieu ou de classement sans suite.]1
+----------
+(1)<Inséré par L 2021-12-23/46, art. 25, 115; En vigueur : 20-02-2022>
+
+CHAPITRE 4. - L'administrateur et le personnel administratif. <Inséré par L 2006-09-15/71, art. 149; En vigueur : 01-12-2006>
+
+Art. 39/54. <Inséré par L 2006-09-15/71, art. 150; En vigueur : 01-12-2006> Le Ministre met à la disposition du Conseil le personnel et les moyens nécessaires à la réalisation de sa mission.
+La composition permanente et temporaire du personnel du Conseil incorporé dans l'administration centrale du Service Public Fédéral Intérieur, est fixée par le Roi par arrête délibéré en Conseil des Ministres.
+
+Art. 39/55.[1 Le Roi nomme, par arrêté délibéré en Conseil des ministres et après avis du premier président et du président du Conseil, un administrateur. Cette nomination est prévue pour une période de cinq ans et peut être renouvelée après une évaluation positive motivée par le premier président et le président.
+Après quinze ans d'exercice de fonction, suivant une évaluation positive, le titulaire de mandat est nommé à titre définitif dans ce mandat par le Roi.]1
+(Nul ne peut) être nommé administrateur s'il :
+1° n'a pas 30 ans accomplis;
+2° n'est pas titulaire d'un diplôme donnant accès aux emplois de niveau A dans les administrations de l'Etat ou qui exerce un tel emploi;
+3° ne justifie pas d'une expérience de 3 ans au moins dans le domaine de la fonction à conférer.
+Sans préjudice des dispositions de la présente loi, les dispositions réglant le régime administratif et pécuniaire du personnel des ministères sont applicables à l'administrateur. Le Roi fixe l'échelle barémique du personnel de niveau A des services publics fédéraux qui est affecté à l'administrateur, sans que celui-ci puisse être plus élevé celui affecté à l'administrateur du Conseil d'Etat. L'administrateur doit justifier de la connaissance de l'autre langue, française ou néerlandaise, que celle de son diplôme.
+----------
+(1)<L 2021-12-23/46, art. 26, 115; En vigueur : 20-02-2022>
+
+Chapitre 5.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Section Ire.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/56.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/57.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/57-1.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/58.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/59.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/60.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/61.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/62.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/63.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/64.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/65.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/66.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/67.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/68.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/68-1.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/68-1bis DROIT FUTUR.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/68-2.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/68-3.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Section II.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Sous-section 1re.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/69.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/69 DROIT FUTUR.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/70.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Sous-section 2.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/71.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/72.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/72/1.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/73.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/73-1.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/73-2.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/73-3.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/74.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/75.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/76.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/76 DROIT FUTUR.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Sous-section 3.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/77.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/77/1.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Section III.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Sous-section 1re.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/78.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/79.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/80.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Sous-section 2.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/81.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Sous-section 3.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+§ 1er.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/82.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/83.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+§ 2.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/84.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 39/85.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+TITRE II. - DISPOSITIONS COMPLEMENTAIRES ET DEROGATOIRES RELATIVES A CERTAINES CATEGORIES D'ETRANGERS.
+
+CHAPITRE I. - (Etrangers, citoyens de l'Union et membres de leur famille et étrangers, membres de la famille d'un Belge). <L 2007-04-25/49, art. 18, 046; En vigueur : 01-06-2008>
+
+Art. 40.<L 2007-04-25/49, art. 19, 046; En vigueur : 01-06-2008> § 1er. Sans préjudice de dispositions plus favorables contenues dans les lois ou les règlements européens dont le citoyen de l'Union pourrait se prévaloir, les dispositions ci-après lui sont applicables.
+§ 2. Pour l'application de la présente loi, un citoyen de l'Union est un étranger qui possède la nationalité d'un Etat membre de l'Union européenne et qui séjourne ou se rend dans le Royaume.
+§ 3. Tout citoyen de l'Union a le droit de séjourner dans le Royaume pour une période de trois mois au maximum sans autres conditions ou formalités que celles mentionnées à l'article 41, alinéa 1er.
+§ 4. Tout citoyen de l'Union a le droit de séjourner dans le Royaume pour une période de plus de trois mois s'il remplit la condition prévue à l'article 41, alinéa 1er et :
+1° s'il est un travailleur salarié ou non salarié dans le Royaume ou s'il entre dans le Royaume pour chercher un emploi, tant qu'il est en mesure de faire la preuve qu'il continue à chercher un emploi et qu'il a des chances réelles d'être engagé;
+2° ou s'il dispose pour lui-même de ressources suffisantes afin de ne pas devenir une charge pour le système d'aide sociale du Royaume au cours de son séjour, et d'une assurance maladie couvrant l'ensemble des risques dans le Royaume;
+3° ou s'il est inscrit dans un établissement d'enseignement organise, reconnu ou subsidié pour y suivre à titre principal des études, en ce compris une formation professionnelle, et s'il dispose d'une assurance maladie couvrant l'ensemble des risques dans le Royaume et assure par déclaration ou par tout autre moyen équivalent de son choix, qu'il dispose de ressources suffisantes afin de ne pas devenir une charge pour le système d'aide sociale du Royaume au cours de son séjour.
+Les ressources suffisantes visées à l'alinéa 1er, 2° et 3°, doivent au moins correspondre au niveau de revenus sous lequel la personne concernée peut bénéficier d'une aide sociale. Dans le cadre de l'évaluation des ressources, il est tenu compte de la situation personnelle du citoyen de l'Union, qui englobe notamment la nature et la régularité de ses revenus et le nombre de membres de la famille qui sont à sa charge.
+Le Roi fixe les cas dans lesquels le citoyen de l'Union est considéré comme remplissant la condition de ressources suffisantes visée à l'alinéa 1er, 2°.
+
+Art. 40bis.[1 § 1er. Sans préjudice de dispositions plus favorables contenues dans les lois ou les règlements européens dont les membres de famille du citoyen de l'Union pourraient se prévaloir, les dispositions ci-après leur sont applicables.
+§ 2. Sont considérés comme membres de famille du citoyen de l'Union :
+1° le conjoint ou l'étranger avec lequel il est lié par un partenariat enregistré considéré comme équivalent à un mariage en Belgique, qui l'accompagne ou le rejoint;
+2° le partenaire auquel le citoyen de l'Union est lié par un partenariat enregistré conformément à une loi, et qui l'accompagne ou le rejoint.
+Les partenaires doivent répondre aux conditions suivantes :
+a) prouver qu'ils entretiennent une relation de partenariat durable et stable dûment établie.
+Le caractère durable et stable de cette relation est démontré :
+- si les partenaires prouvent qu'ils ont cohabité en Belgique ou dans un autre pays de manière ininterrompue pendant au moins un an avant la demande;
+- ou bien si les partenaires prouvent qu'ils se connaissent depuis au moins deux ans précédant la demande et qu'ils fournissent la preuve qu'ils ont entretenu des contacts réguliers par téléphone, par courrier ordinaire ou électronique, et qu'ils se sont rencontrés trois fois durant les deux années précédant la demande et que ces rencontres comportent au total 45 jours ou davantage;
+- ou bien si les partenaires ont un enfant commun;
+b) venir vivre ensemble;
+c) [3 être tous les deux âgés de plus de vingt et un ans. L'âge minimum des partenaires est ramené à dix-huit ans lorsqu'ils apportent la preuve d'une cohabitation d'au moins un an avant l'arrivée de l'étranger rejoint dans le Royaume;]3
+d) être célibataires et ne pas avoir une relation de partenariat durable et stable avec une autre personne;
+e) ne pas être une des personnes visées aux articles 161 à 163 du Code civil;
+f) [3 n'avoir fait ni l'un ni l'autre l'objet d'une décision définitive de refus de célébration du mariage sur la base de l'article 167 du Code civil.]3
+3° [4 les descendants directs ainsi que ceux du conjoint ou du partenaire visé au 1° ou 2°, âgés de moins de vingt et un ans ou qui sont à leur charge dans le pays d'origine ou de provenance, qui les accompagnent ou les rejoignent, pour autant que l'étranger rejoint, son conjoint ou le partenaire enregistré visé en ait le droit de garde et, en cas de garde partagée, à la condition que l'autre titulaire du droit de garde ait donné son accord;]4
+4° [4 les ascendants directs ainsi que ceux du conjoint ou du partenaire visé au 1° ou 2°, qui sont à leur charge dans le pays d'origine ou de provenance et qui les accompagnent ou les rejoignent;]4
+[2 5° [4 les ascendants directs au premier degré qui exercent l'autorité parentale y compris le droit de garde sur un citoyen de l'Union mineur visé à l'article 40, § 4, alinéa 1er, 2°, dans la mesure où ils accompagnent le citoyen de l'Union mineur sur le territoire belge et s'en occupent effectivement.]4]2
+Le Roi fixe, par arrêté délibéré en Conseil des Ministres, les cas dans lesquels un partenariat enregistré sur la base d'une loi étrangère doit être considéré comme équivalent à un mariage en Belgique.
+§ 3. Les membres de famille visés au § 2 qui sont citoyens de l'Union ont le droit d'accompagner ou de rejoindre le citoyen de l'Union visé à l'article 40, § 3, pour autant qu'ils remplissent la condition énoncée à l'article 41, alinéa 1er. Les membres de famille qui ne sont pas citoyens de l'Union doivent remplir la condition fixée à l'article 41, alinéa 2.
+§ 4. [4 Les membres de la famille visés au § 2 ont le droit d'accompagner ou de rejoindre le citoyen de l'Union visé à l'article 40, § 4, alinéa 1er, 1° et 2°, pour une période de plus de trois mois, pour autant qu'ils remplissent, selon le cas, les conditions visées à l'article 41, §§ 1er ou 2.]4
+[4 Le citoyen de l'Union visé à l'article 40, § 4, alinéa 1er, 2° et 3°,]4 doit également apporter la preuve qu'il dispose de ressources suffisantes afin que les membres de sa famille visés au § 2 ne deviennent pas une charge pour le système d'aide sociale du Royaume au cours de leur séjour, et d'une assurance maladie couvrant l'ensemble des risques pour les membres de sa famille dans le Royaume. Dans le cadre de l'évaluation des ressources, il est tenu compte de la situation personnelle du citoyen de l'Union, qui englobe notamment la nature et la régularité de ses revenus et le nombre de membres de la famille qui sont à sa charge.
+[4 Le citoyen de l'Union visé à l'article 40, § 4, alinéa 1er, 3°, ne peut être accompagné ou rejoint que par les membres de la famille visés au § 2, alinéa 1er, 1° et 2°, ainsi que par ses enfants ou par les enfants de son conjoint ou partenaire pour autant que l'étranger rejoint, son conjoint ou son partenaire dispose de l'autorité parentale, y compris le droit de garde, et que les enfants sont à sa charge, à celle de son conjoint ou de son partenaire et pour autant qu'ils remplissent, le cas échéant, les conditions visées à l'article 41, §§ 1er ou 2.]4]1.
+[2 [4 Le membre de la famille visé au § 2, alinéa 1er, 5°, pour autant que le citoyen de l'Union mineur ne dispose pas encore d'un droit de séjour permanent tel que visé à l'article 42quinquies, § 1er, doit apporter la preuve qu'il dispose de ressources suffisantes pour subvenir à ses propres besoins et à ceux de son enfant, citoyen de l'Union, afin de ne pas devenir une charge pour le système d'aide sociale du Royaume, et d'une assurance maladie couvrant tous les risques en Belgique.]4 Dans le cadre de l'évaluation des ressources, il est tenu compte notamment de leur nature et de leur régularité.]2
+(NOTE : par son arrêt n° 121/2013 du 26-09-2013, la Cour constitutionnelle a annulé l'article 40bis,§2,alinéa 1,2°,c et 40bis,§2,alinéa 2).
+----------
+(1)<L 2011-07-08/29, art. 8, 058; En vigueur : 22-09-2011>
+(2)<L 2014-03-19/24, art. 17, 076; En vigueur : 15-05-2014>
+(3)<L 2016-05-04/29, art. 17, 089; En vigueur : 07-07-2016>
+(4)<L 2024-03-10/03, art. 10, 127; En vigueur : 01-09-2024>
+
+Art. 40ter.[1 § 1er. Est considéré comme un Belge ayant fait usage de son droit de libre circulation et de séjour: le Belge qui, après avoir séjourné effectivement dans un autre Etat membre de l'Union européenne conformément à l'article 21 du Traité sur le fonctionnement de l'Union européenne, revient s'établir sur le territoire du Royaume.
+Les membres de la famille visés à l'article 40bis, § 2, et les autres membres de la famille visés à l'article 47/2 d'un Belge qui a exercé son droit de libre circulation et de séjour sont soumis aux mêmes dispositions que les membres de la famille d'un citoyen de l'Union visés au chapitre Ier ou au chapitre Ibis, pour autant que les conditions suivantes soient remplies:
+1° la vie familiale s'est développée ou consolidée pendant le séjour effectif du Belge et du membre de la famille dans un autre Etat membre de l'Union européenne; et
+2° les membres de la famille rejoignent ou accompagnent le Belge sur le territoire du Royaume; et
+3° la vie familiale n'a pas pris fin avant l'entrée du membre de la famille sur le territoire du Royaume ou avant l'introduction de la demande d'octroi d'un droit de séjour en vertu du présent article.
+§ 2. Les dispositions de ce chapitre s'appliquent aux membres de la famille suivants d'un Belge qui n'a pas exercé son droit de libre circulation et de séjour conformément à l'article 21 du Traité sur le fonctionnement de l'Union européenne ou qui ne remplissent pas les conditions prévues au § 1er:
+1° les membres de la famille visés à l'article 40bis, § 2, alinéa 1er, 1° à 2°, pour autant qu'ils accompagnent ou qu'ils rejoignent le Belge ouvrant le droit au regroupement familial;
+2° les descendants directs du Belge ou de son conjoint ou du partenaire enregistré visé à l'alinéa 1er, 1°, âgés de moins de dix-huit ans ou qui sont à leur charge dans le pays de provenance ou d'origine, pour autant qu'ils accompagnent ou qu'ils rejoignent le Belge ouvrant le droit au regroupement familial. Le descendant direct qui n'a pas encore atteint l'âge de dix-huit ans doit prouver que le Belge ou son conjoint ou partenaire enregistré, exerce l'autorité parentale sur lui, y compris le droit de garde. Si l'autorité parentale est partagée, il doit également prouver que l'autre titulaire de l'autorité parentale a donné son accord. Lorsque le Belge, son conjoint ou le partenaire enregistré ne peut apporter la preuve de l'autorité parentale par des documents officiels conformément à l'article 35 de la loi du 16 juillet 2004 portant le Code de droit international privé ou aux conventions internationales portant sur la même matière, le ministre ou son délégué tient compte d'autres preuves valables produites à cet égard;
+3° les ascendants directs au premier degré qui exercent l'autorité parentale, y compris le droit de garde, sur un Belge mineur, pour autant qu'ils accompagnent ou rejoignent le Belge mineur sur le territoire et s'en occupent effectivement et à condition qu'ils prouvent leur identité au moyen d'un document d'identité valable.
+Les membres de la famille visés à l'alinéa 1er, 1° et 2°, doivent prouver que le Belge:
+1° [2 dispose de moyens de subsistance stables, suffisants et réguliers. Cette condition est réputée remplie lorsque le montant net des moyens de subsistance est au moins équivalent à cent-dix pour cent du revenu minimum mensuel moyen garanti prévu par l'article 3 de la convention collective de travail n° 43 du 2 mai 1988 relative à la garantie d'un revenu minimum mensuel moyen. Ce montant est augmenté de dix pour cent pour chaque membre de la famille supplémentaire à charge du Belge. Pour l'évaluation des moyens de subsistance, il est tenu compte de leur nature et de leur régularité. Par contre, il n'est pas tenu compte des moyens provenant du revenu d'intégration sociale, de l'aide sociale financière, des allocations familiales de base et suppléments, des allocations d'insertion professionnelle et de l'allocation de transition. Il est uniquement tenu compte de l'allocation de chômage si le Belge prouve qu'il cherche activement du travail. La condition relative aux moyens de subsistance n'est pas d'application si le Belge se fait accompagner ou rejoindre uniquement par les membres de sa famille visés à l'alinéa 1er, 2°, qui sont mineurs d'âge ]2;
+2° [2 dispose d'un logement suffisant considéré comme normal pour une famille de taille comparable et qui répond aux critères légaux en vigueur en matière de sécurité et de salubrité. Le Roi détermine, par arrêté délibéré en Conseil des ministres, les critères auxquels l'immeuble doit répondre ainsi que la manière dont l'étranger prouve que l'immeuble répond aux conditions fixées]2;
+3° dispose d'une assurance maladie couvrant les risques en Belgique pour lui-même et les membres de sa famille.
+Lorsqu'un certificat de non-empêchement à mariage a été délivré, il ne sera pas procédé à une nouvelle enquête à l'occasion de l'examen d'une demande de regroupement familial fondée sur le mariage célébré suite à la délivrance de ce certificat, sauf si de nouveaux éléments se présentent.
+En ce qui concerne les personnes visées à l'article 40bis, § 2, alinéa 1er, 1° et 2°, les conjoints ou partenaires doivent tous deux être âgés de plus de vingt et un ans. [2 ...]2.
+§ 3. Lorsque le ministre ou son délégué envisage de prendre une décision de refus de séjour d'un membre de la famille visé au § 2, alinéa 1er, 3°, qui ne démontre pas qu'il s'occupe effectivement du mineur belge qu'il accompagne, il tient compte de la nature et de solidité des liens familiaux et de la relation de dépendance existant entre le membre de la famille et le Belge mineur, ainsi que des conséquences qu'une éventuelle décision de refus de séjour aurait sur le droit de libre circulation et de séjour du Belge mineur.
+Lors de l'évaluation de l'existence d'une relation de dépendance telle que visée à l'alinéa 1er, il est tenu compte de tous les documents présentés et des circonstances pertinentes.
+§ 4. Sans préjudice des articles 42ter et 42quater, il peut également être mis fin au droit de séjour du membre de la famille visé au § 2, dans les cinq ans qui suivent la reconnaissance de leur droit de séjour en tant que membre de la famille d'un citoyen belge, lorsque les conditions prévues aux paragraphes précédents ne sont plus remplies. Lorsque le ministre ou son délégué envisage de prendre une décision de fin de séjour d'un membre de la famille visé au § 2, alinéa 1er, 3°, il tient compte de la nature et de solidité des liens familiaux et de la relation de dépendance existant entre le membre de la famille et le Belge mineur, ainsi que des conséquences qu'une éventuelle décision de mettre fin au séjour aurait sur le droit de libre circulation et de séjour du Belge mineur.]1
+----------
+(1)<L 2024-03-10/03, art. 11, 127; En vigueur : 01-09-2024>
+(2)<L 2025-07-18/29, art. 14, 129; En vigueur : 18-08-2025>
+
+Art. 41.[1 § 1er. Le droit d'entrée est reconnu au citoyen de l'Union sur présentation d'une carte d'identité ou d'un passeport, en cours de validité ou s'il peut faire constater ou prouver d'une autre façon sa qualité de bénéficiaire du droit de circuler ou de séjourner librement.
+Lorsque le citoyen de l'Union ne dispose pas des documents requis, le ministre ou son délégué lui accorde tous les moyens raisonnables afin de lui permettre d'obtenir ou de se procurer, dans un délai raisonnable, les documents requis ou de faire confirmer ou prouver par d'autres moyens sa qualité de bénéficiaire du droit de circuler et de séjourner librement, avant de procéder à son refoulement.
+§ 2. Le droit d'entrée est reconnu aux membres de la famille d'un citoyen de l'Union visés à l'article 40bis, § 2, qui ne sont pas citoyens de l'Union sur présentation d'un passeport en cours de validité revêtu, le cas échéant, d'un visa d'entrée en cours de validité, conformément au [2 règlement (UE) 2018/1806 du Parlement européen et du Conseil du 14 novembre 2018 fixant la liste des pays tiers dont les ressortissants sont soumis à l'obligation de visa pour franchir les frontières extérieures des Etats membres et la liste de ceux dont les ressortissants sont exemptés de cette obligation]2.
+Le Roi détermine les modalités de délivrance du visa.
+La possession d'une carte de séjour de membre de la famille d'un citoyen de l'Union ou d'une carte de séjour permanent de membre de la famille d'un citoyen de l'Union, délivrée sur la base de la Directive 2004/38/CE du Parlement européen et du Conseil du 29 avril 2004 relative au droit des citoyens de l'Union et des membres de leurs familles de circuler et de séjourner librement sur le territoire des Etats membres, dispense le membre de la famille de l'obligation d'obtenir le visa d'entrée visé à l'alinéa 1er.
+Lorsque le membre de la famille d'un citoyen de l'Union ne dispose pas des documents requis, le ministre ou son délégué lui accorde tous les moyens raisonnables afin de lui permettre d'obtenir ou de se procurer, dans un délai raisonnable, les documents requis ou de faire confirmer ou prouver par d'autres moyens sa qualité de bénéficiaire du droit de circuler et de séjourner librement, avant de procéder à son refoulement.
+§ 3. Le titulaire d'une carte d'identité ou d'un passeport délivré par les autorités belges, est admis sans formalité sur le territoire du Royaume même si sa nationalité est contestée ou si ce document est périmé.
+§ 4. Lorsque le citoyen de l'Union n'est pas en possession d'une carte d'identité ou d'un passeport national, en cours de validité, ou lorsque le membre de famille d'un citoyen de l'Union, qui n'est pas citoyen de l'Union, n'est pas en possession d'un passeport national en cours de validité revêtu, le cas échéant, d'un visa d'entrée conformément au [2 règlement (UE) 2018/1806]2 précité, en cours de validité, le ministre ou son délégué peut lui infliger une amende administrative de 200 euros. Cette amende est perçue conformément à l'article 42octies.]1
+----------
+(1)<L 2014-03-19/24, art. 18, 076; En vigueur : 15-05-2014>
+(2)<L 2019-05-08/12, art. 13, 106; En vigueur : 19-07-2019>
+
+Art. 41bis. [1 § 1er. Le citoyen de l'Union qui vient en Belgique pour un séjour n'excédant pas trois mois et les membres de sa famille qui l'accompagnent ou le rejoignent, qui ne logent pas dans une maison d'hébergement soumise à la législation relative au contrôle des voyageurs, communiquent leur adresse de résidence dans les dix jours ouvrables de leur entrée dans le Royaume, soit par voie électronique à l'Office des étrangers, soit en personne auprès de l'administration communale de leur lieu de résidence. Le Roi peut dispenser certaines catégories d'étrangers de cette obligation.
+Le Roi détermine les modalités de notification à l'Office des étrangers, ainsi que les modalités de notification à l'administration communale et le modèle de l'attestation faisant foi de celle-ci. Quand l'administration communale délivre à l'étranger une telle attestation comme preuve de la notification, elle communique les données à caractère personnel qui y sont contenues à l'Office des étrangers.
+§ 2. L'Office des étrangers peut traiter les données à caractère personnel obtenues conformément au paragraphe 1er pour les finalités mentionnées dans l'article 2/2, § 1er, alinéa 1er, 2°, et notamment en vue de l'application des articles 44ter et 44septies.
+La durée de conservation administrative de ces données par l'Office des étrangers ou par la commune est de cinq ans. Leur destination finale est déterminée conformément à l'article 5 de la loi du 24 juin 1955 relative aux archives.]1
+----------
+(1)<L 2023-03-19/09, art. 9, 131; En vigueur : 10-04-2026>
+
+Art. 41ter. <inséré par L 2007-04-25/49, art. 24, En vigueur : 01-06-2008> § 1er. Sauf en ce qui concerne le citoyen de l'Union visé à l'article 40, § 4, alinéa 1er, 1°, le ministre ou son délégué peut mettre fin au droit de séjour du citoyen de l'Union qui lui est reconnu sur la base de l'article 40, § 3, lorsqu'il constitue une charge déraisonnable pour le système d'aide sociale du Royaume.
+§ 2. Sauf en ce qui concerne le citoyen de l'Union visé à l'article 40, § 4, alinéa 1er, 1° et les membres de sa famille, le ministre ou son délégué peut mettre fin au droit de séjour du citoyen de l'Union qui lui est reconnu sur la base de l'article 40, § 3, et au droit de séjour des membres de sa famille qui leur est reconnu sur la base de l'article 40bis, § 3, lorsque ceux-ci constituent une charge déraisonnable pour le système d'aide sociale du Royaume.
+
+Art. 42.<L 2007-04-25/49, art. 25, 046; En vigueur : 01-06-2008> § 1er. [1 Le droit de séjour de plus de trois mois dans le Royaume est reconnu le plus rapidement possible et au plus tard six mois après la date de la demande telle que prévue au § 4, alinéa 2, au citoyen de l'Union et aux membres de sa famille qui sont dans les conditions et pour la durée déterminées par le Roi, conformément aux règlements et directives européens. La reconnaissance tient compte de l'ensemble des éléments du dossier.
+[2 S'il n'est pas satisfait à la condition relative au caractère suffisant des ressources visée aux articles 40bis, § 4, alinéa 2 et 40ter, § 2, alinéa 2, 1°,]2 le ministre ou son délégué doit déterminer, en fonction des besoins propres du citoyen de l'Union rejoint et des membres de sa famille, les moyens de subsistance nécessaires pour permettre de subvenir à leurs besoins sans devenir une charge pour les pouvoirs publics.[3 A cette fin, l'étranger fournit, au moment de l'introduction de la demande, tous les documents et renseignements utiles pour déterminer ce montant. Le ministre ou son délégué tient compte, lors de son évaluation, de toutes les preuves valables qui sont produites à cet effet par l'étranger. Le Roi peut déterminer quels documents peuvent, le cas échéant, être produits pour l'évaluation des besoins]3.]1
+§ 2. Le droit de séjour de plus de trois mois des citoyens de l'Union est constaté par une déclaration d'inscription. Ils sont inscrits, selon le cas, dans le registre des étrangers ou dans le registre de la population.
+§ 3. Le droit de séjour des membres de famille du citoyen de l'Union, qui ne sont pas eux-mêmes citoyens de l'Union, est constaté par un titre de séjour. Ils sont inscrits au registre des étrangers. La durée de validité du titre de séjour est égale à la durée prévue du séjour du citoyen de l'Union qu'ils accompagnent ou rejoignent, et n'excède pas cinq ans à partir de la date de sa délivrance.
+§ 4. La déclaration d'inscription et le titre de séjour sont délivrés selon les modalités fixées par le Roi, conformément aux règlements et directives européens.
+Ils doivent être demandes au plus tard à l'expiration de la période de trois mois suivant la date d'entrée, auprès de l'administration communale du lieu de leur résidence. Lorsqu'à l'expiration de cette période, aucune déclaration d'inscription ou aucun titre de séjour n'a été demandé, le ministre ou son délégué peut infliger une amende administrative de 200 euros. Cette amende est perçue conformément à l'article 42octies.
+----------
+(1)<L 2011-07-08/29, art. 10, 058; En vigueur : 22-09-2011>
+(2)<L 2016-05-04/29, art. 19, 089; En vigueur : 07-07-2016>
+(3)<L 2025-07-18/29, art. 15, 129; En vigueur : 18-08-2025>
+
+Art. 42bis.<inséré par L 2007-04-25/49, art. 26, En vigueur : 01-06-2008> § 1er. Le ministre ou son délégué peut mettre fin au droit de séjour du citoyen de l'Union lorsqu'il ne satisfait plus aux conditions fixées à l'article 40, § 4, et à l'article 40bis, § 4, alinéa 2, ou, dans les cas vises à l'article 40, § 4, alinéa 1er, 2° et 3°, lorsqu'il constitue une charge déraisonnable pour le système d'aide sociale du Royaume. Le ministre ou son délégué peut, si nécessaire, vérifier si les conditions pour l'exercice du droit de séjour sont respectées.
+[1 Pour l'application de l'alinéa 1er, afin de déterminer si le citoyen de l'Union constitue une charge déraisonnable pour le système d'aide sociale du Royaume, il est tenu compte du caractère temporaire ou non de ses difficultés, de la durée de son séjour dans le Royaume, de sa situation personnelle et du montant de l'aide qui lui est accordée.
+Lors de la décision de mettre fin au séjour, le ministre ou son délégué tient compte de la durée du séjour de l'intéressé dans le Royaume, de son âge, de son état de santé, de sa situation familiale et économique, de son intégration sociale et culturelle dans le Royaume et de l'intensité de ses liens avec son pays d'origine.]1
+§ 2. Un citoyen de l'Union conserve cependant le droit de séjour prévu à l'article 40, § 4, alinéa 1er, 1°, dans les cas suivants :
+1° s'il a été frappé par une incapacité de travail temporaire résultant d'une maladie ou d'un accident;
+2° s'il se trouve en chômage involontaire dûment constaté après avoir été employé au moins un an et s'est fait enregistrer en qualité de demandeur d'emploi auprès du service de l'emploi compétent;
+3° s'il se trouve en chômage involontaire dûment constaté à la fin de son contrat de travail à durée déterminée inférieure à un an ou après avoir été involontairement au chômage pendant les douze premiers mois et s'est fait enregistrer en qualité de demandeur d'emploi auprès du service de l'emploi compétent. Dans ce cas, il conserve le statut de travailleur pendant au moins six mois;
+4° s'il entreprend une formation professionnelle. A moins que l'intéressé ne se trouve en situation de chômage involontaire, le maintien de la qualité de travailleur suppose qu'il existe une relation entre la formation et l'activité professionnelle antérieure.
+----------
+(1)<L 2014-03-19/24, art. 19, 076; En vigueur : 15-05-2014>
+
+Art. 42ter.[1 § 1er. A moins que les membres de famille d'un citoyen de l'Union qui sont eux-mêmes citoyens de l'Union, bénéficient eux-mêmes d'un droit de séjour tel que visé à l'article 40, § 4, ou satisfassent à nouveau aux conditions visées à l'article 40bis, § 2, le ministre ou son délégué peut mettre fin à leur droit de séjour [2 dans les cinq années]2 suivant la reconnaissance de leur droit de séjour en tant que membre de la famille du citoyen de l'Union, dans les cas suivants :
+1° il est mis fin au droit de séjour du citoyen de l'Union qu'ils ont accompagné ou rejoint;
+2° le citoyen de l'Union qu'ils ont accompagné ou rejoint quitte le Royaume;
+3° le citoyen de l'Union qu'ils ont accompagné ou rejoint décède;
+4° le mariage avec le citoyen de l'Union qu'ils ont accompagné ou rejoint est dissous ou annulé, il est mis fin au partenariat enregistré visé à l'article 40bis, § 2, alinéa 1er, 1° ou 2°, ou il n'y a plus d'installation commune;
+5° les membres de la famille d'un citoyen de l'Union visé à l'article 40, § 4, alinéa 1er, 2° ou 3°, constituent une charge déraisonnable pour le système d'aide sociale du Royaume;
+[5 6° le ministre ou son délégué retire au citoyen de l'Union accompagné ou rejoint son séjour conformément à l'article 44;]5
+[6 7° l'ascendant direct au premier degré visé à l'article 40bis, § 2, alinéa 1er, 5°, ne s'occupe plus effectivement du citoyen de l'Union mineur;
+8° le citoyen de l'Union visé à l'article 40, § 4, alinéa 1er, 2° ou 3°, qu'ils ont accompagné ou rejoint ne dispose plus de ressources suffisantes et/ou d'une assurance maladie visées à l'article 40bis, § 4, alinéa 2.]6
+[3 Pour l'application de l'alinéa 1er, 5°, afin de déterminer si les membres de la famille d'un citoyen de l'Union constituent une charge déraisonnable pour le système d'aide sociale du Royaume, il est tenu compte du caractère temporaire ou non de leurs difficultés, de la durée de leur séjour dans le Royaume, de leur situation personnelle et du montant de l'aide qui leur est accordée.]3
+Lors de la décision de mettre fin au séjour, le ministre ou son délégué tient compte de la durée du séjour de l'intéressé dans le Royaume, de son âge, de son état de santé, de sa situation familiale et économique, de son intégration sociale et culturelle [4 dans le Royaume"]4 et de l'intensité de ses liens avec son pays d'origine.
+§ 2. Les cas visés au § 1er, alinéa 1er, 2° et 3°, ne sont pas applicables aux enfants du citoyen de l'Union qui séjournent dans le Royaume et sont inscrits dans un établissement d'enseignement ni au parent qui a la tutelle effective des enfants jusqu'à la fin de leurs études.
+§ 3. Le ministre ou son délégué peut si nécessaire vérifier si les conditions de l'exercice du droit de séjour sont respectées.]1
+----------
+(1)<L 2011-07-08/29, art. 11, 058; En vigueur : 22-09-2011>
+(2)<L 2013-06-28/04, art. 16, 069; En vigueur : 11-07-2013>
+(3)<L 2014-03-19/24, art. 20, 076; En vigueur : 15-05-2014>
+(4)<L 2016-05-04/29, art. 20, 089; En vigueur : 07-07-2016>
+(5)<L 2017-02-24/21, art. 21, 094; En vigueur : 29-04-2017>
+(6)<L 2024-03-10/03, art. 12, 127; En vigueur : 01-09-2024>
+
+Art. 42quater.[1 § 1er. Dans les cas suivants, le ministre ou son délégué peut mettre fin, [2 dans les cinq années]2 suivant la reconnaissance de leur droit de séjour, au droit de séjour des membres de famille d'un citoyen de l'Union qui ne sont pas eux-mêmes citoyens de l'Union et qui séjournent en tant que membres de la famille du citoyen de l'Union :
+1° il est mis fin au droit de séjour du citoyen de l'Union qu'ils ont accompagné ou rejoint;
+2° le citoyen de l'Union qu'ils ont accompagné ou rejoint quitte le Royaume;
+3° le citoyen de l'Union qu'ils ont accompagné ou rejoint décède;
+4° le mariage avec le citoyen de l'Union qu'ils ont accompagné ou rejoint est dissous [4 ...]4, il est mis fin au partenariat enregistré visé à l'article 40bis, § 2, alinéa 1er, 1° ou 2°, ou il n'y a plus d'installation commune;
+5° les membres de la famille d'un citoyen de l'Union visé à l'article 40, § 4, alinéa 1er, 2° ou 3°, constituent une charge déraisonnable pour le système d'assistance sociale du Royaume;
+[5 6° le ministre ou son délégué retire au citoyen de l'Union accompagné ou rejoint son séjour conformément à l'article 44;]5
+[6 7° l'ascendant direct au premier degré visé à l'article 40bis, § 2, alinéa 1er, 5°, ne s'occupe plus effectivement du citoyen de l'Union mineur;
+8° le citoyen de l'Union visé à l'article 40, § 4, alinéa 1er, 2° ou 3°, qu'ils ont accompagné ou rejoint ne dispose plus de ressources suffisantes et/ou d'une assurance maladie visées à l'article 40bis, § 4, alinéa 2.]6
+[3 Pour l'application de l'alinéa 1er, 5°, afin de déterminer si les membres de famille d'un citoyen de l'Union, constituent une charge déraisonnable pour le système d'aide sociale du Royaume, il est tenu compte du caractère temporaire ou non de leurs difficultés, de la durée de son séjour dans le Royaume, de leur situation personnelle et du montant de l'aide qui leur est accordée.]3
+Lors de sa décision de mettre fin au séjour, le ministre ou son délégué tient compte de la durée du séjour de l'intéressé dans le Royaume, de son âge, de son état de santé, de sa situation familiale et économique, de son intégration sociale et culturelle [4 dans le Royaume]4 et de l'intensité de ses liens avec son pays d'origine.
+§ 2. Les cas visés au § 1er, alinéa 1er, 2° et 3°, ne sont pas applicables aux enfants du citoyen de l'Union qui séjournent dans le Royaume et sont inscrits dans un établissement d'enseignement ni au parent qui a la garde des enfants jusqu'à la fin de leurs études.
+§ 3. Le cas visé au § 1er, alinéa 1er, 3°, n'est pas applicable aux membres de famille qui ont séjourné au moins un an dans le Royaume, pour autant qu'ils prouvent qu'ils sont travailleurs salariés ou non salariés en Belgique, ou qu'ils disposent pour eux-mêmes et pour leurs membres de famille de ressources suffisantes telles que fixées à l'article 40, § 4, alinéa 2, afin de ne pas devenir une charge pour le système d'assistance sociale, et d'une assurance maladie couvrant l'ensemble des risques en Belgique, ou qu'ils sont membres d'une famille déjà constituée dans le Royaume d'une personne répondant à ces conditions.
+§ 4. Sans préjudice du § 5, le cas visé au § 1er, alinéa 1er, 4°, n'est pas applicable :
+1° lorsque le mariage, le partenariat enregistré ou l'installation commune a duré, au début de la procédure judiciaire de dissolution ou d'annulation du mariage ou lors de la cessation du partenariat enregistré ou de l'installation commune, trois ans au moins, dont au moins un an dans le Royaume. En cas d'annulation du mariage l'époux doit en outre avoir été de bonne foi;
+2° ou lorsque le droit de garde des enfants du citoyen de l'Union qui séjournent dans le Royaume a été accordé au conjoint ou au partenaire qui n'est pas citoyen de l'Union par accord entre les conjoints ou les partenaires visés à l'article 40bis, § 2, alinéa 1er, 1° ou 2°, ou par décision judiciaire;
+3° ou lorsque le droit de visite d'un enfant mineur a été accordé au conjoint ou au partenaire visé à l'article 40bis, § 2, alinéa 1er, 1° ou 2°, qui n'est pas citoyen de l'Union, par accord entre les conjoints ou les partenaires visés à l'article 40bis, § 2, alinéa 1er, 1° ou 2°, ou par décision judiciaire, et que le juge a déterminé que ce droit de garde doit être exercé dans le Royaume et cela aussi longtemps que nécessaire;
+4° ou lorsque des situations particulièrement difficiles l'exigent, par exemple, lorsque le membre de famille démontre avoir été victime de violences dans la famille ainsi que de faits de violences visés aux articles 375, 398 à 400, 402, 403 ou 405 du Code pénal, dans le cadre du mariage ou du partenariat enregistré visé à l'article 40bis, § 2, alinéa 1er, 1° ou 2°;
+et pour autant que les personnes concernées démontrent qu'elles sont travailleurs salariés ou non salariés en Belgique, ou qu'elles disposent de ressources suffisantes visés à l'article 40, § 4, alinéa 2, afin de ne pas devenir une charge pour le système d'assistance sociale du Royaume au cours de leur séjour, et qu'elles disposent d'une assurance maladie couvrant l'ensemble des risques en Belgique, ou qu'elles soient membres d'une famille déjà constituée dans le Royaume d'une personne répondant à ces conditions.
+§ 5. Le ministre ou son délégué peut si nécessaire vérifier si les conditions du droit de séjour sont respectées.]1
+----------
+(1)<L 2011-07-08/29, art. 12, 058; En vigueur : 22-09-2011>
+(2)<L 2013-06-28/04, art. 17, 069; En vigueur : 11-07-2013>
+(3)<L 2014-03-19/24, art. 21, 076; En vigueur : 15-05-2014>
+(4)<L 2016-05-04/29, art. 21, 089; En vigueur : 07-07-2016>
+(5)<L 2017-02-24/21, art. 22, 094; En vigueur : 29-04-2017>
+(6)<L 2024-03-10/03, art. 13, 127; En vigueur : 01-09-2024>
+
+Art. 42quinquies.<inséré par L 2007-04-25/49, art. 29, En vigueur : 01-06-2008> § 1er. Sans préjudice de l'article 42sexies et pour autant qu'il n'y ait pas de procédure en cours auprès du Conseil du Contentieux des étrangers conformément à l'article [4 2.31 de la loi CCE]4, un droit de séjour permanent est reconnu au citoyen de l'Union visé à l'article 40, § 4, [1 ...]1, et aux membres de sa famille, pour autant qu'ils aient séjourné [2 ...]2 dans le Royaume pendant une période ininterrompue de [1 cinq]1 ans [2 et ce conformément aux instruments juridiques de l'Union européenne]2.
+Le droit de séjour permanent visé à l'alinéa 1er n'est reconnu aux membres de la famille du citoyen de l'Union qui ne sont pas citoyens de l'Union, que pour autant qu'il y ait eu installation commune pendant cette période avec le citoyen de l'Union. Cette condition d'installation commune n'est pas applicable aux membres de la famille qui remplissent les conditions visées à l'article 42quater, §§ 3 et 4, ni aux membres de la famille qui conservent leur séjour sur la base de l'article 42quater, § 1er, alinéa 2.
+§ 2. [1 ...]1
+§ 3. La continuité du séjour n'est pas affectée par des absences temporaires ne dépassant pas au total six mois par an, ni par des absences plus longues pour l'accomplissement d'obligations militaires ou par une absence de douze mois consécutifs au maximum pour des raisons importantes, telles qu'une grossesse et un accouchement, une maladie grave, des études ou une formation professionnelle, ou le détachement pour raisons professionnelles hors du Royaume.
+§ 4. Lorsqu'une procédure est en cours devant le Conseil du Contentieux des étrangers conformément à l'article [4 2.31 de la loi CCE]4, la reconnaissance du droit de séjour permanent est suspendue en attendant la conclusion de cette procédure et la décision définitive du ministre ou de son délégué.
+§ 5. [3 Le droit de séjour permanent des citoyens de l'Union européenne est constaté par la délivrance d'un document attestant de la permanence du séjour. Ce document est délivré selon les modalités fixées par le Roi.]3
+§ 6. Le droit de séjour permanent des membres de familles qui ne sont pas citoyens de l'Union est constate par la délivrance d'une carte de séjour. Ils sont inscrits dans le registre de la population.
+Cette carte de séjour est délivrée selon les modalités fixées par le Roi conformément aux règlements et directives européens.
+Elle doit être demandée avant l'expiration de la durée de validité du titre de séjour visé à l'article 42, § 3. Lorsque cette carte de séjour n'est pas demandée à temps, le ministre ou son délégué peut infliger une amende administrative de 200 euros. Cette amende est perçue conformément à l'article 42octies.
+§ 7. Une fois acquis, le droit de séjour permanent ne se perd que par des absences du Royaume d'une durée supérieure à deux ans consécutifs.
+----------
+(1)<L 2013-06-28/04, art. 18, 069; En vigueur : 11-07-2013>
+(2)<L 2014-03-19/24, art. 22, 076; En vigueur : 15-05-2014>
+(3)<L 2016-05-04/29, art. 22, 089; En vigueur : 07-07-2016>
+(4)<L 2026-06-17/03, art. 5.6, 134; En vigueur : 12-06-2026>
+
+Art. 42sexies.<inséré par L 2007-04-25/49, art. 30, En vigueur : 01-06-2008> § 1er. Par dérogation à l'article 42quinquies, le droit de séjour permanent est accordé, avant l'expiration de la période ininterrompue de [1 cinq]1 ans, aux catégories suivantes de travailleurs salariés ou non salariés visés à l'article 40, § 4, alinéa 1er, 1° :
+1° le travailleur salarié ou non salarié qui cesse d'exercer son activité à la suite d'une incapacité permanente de travail, à la condition :
+a) qu'il séjourne d'une façon continue dans le Royaume depuis plus de deux ans;
+b) ou que l'incapacité permanente de travail résulte d'un accident de travail ou d'une maladie professionnelle ouvrant le droit à une prestation entièrement ou partiellement à charge d'une institution du Royaume;
+c) ou que son conjoint ou partenaire visé à l'article 40bis, § 2, alinéa 1er, 1°, soit Belge;
+2° le travailleur salarié ou non salarié qui, lorsqu'il cesse d'exercer son activité, a atteint l'âge prévu par la législation pour faire valoir ses droits à une pension de vieillesse ou le travailleur qui cesse d'exercer une activité salariée à la suite d'une mise à la retraite anticipée, à condition que son conjoint ou partenaire vise à l'article 40bis, § 2, alinéa 1er, 1°, soit Belge.
+Les périodes de chômage involontaire, dument constatées par le service d'emploi compétent et durant lesquelles l'intéressé n'a pas travaillé pour des raisons qui ne lui sont pas imputables, ou les périodes d'absence ou d'interruption de travail pour maladie ou pour accident, sont considérées comme des périodes d'activité.
+§ 2. Les membres de famille du citoyen de l'Union visé au § 1er obtiennent également un droit de séjour permanent.
+§ 3. Lorsque le travailleur salarié ou non salarié visé à l'article 40, § 4, alinéa 1er, 1°, décède au cours de sa carrière professionnelle avant d'avoir acquis le droit de séjour permanent sur la base du § 1er, les membres de sa famille séjournant avec lui dans le Royaume acquièrent un droit de séjour permanent à la condition que :
+1° le travailleur salarié ou non salarié ait séjourné dans le Royaume durant deux ans de façon ininterrompue, au moment de son décès;
+2° ou que le décès du travailleur salarié ou non salarié soit la conséquence d'un accident de travail ou d'une maladie professionnelle.
+----------
+(1)<L 2013-06-28/04, art. 19, 069; En vigueur : 11-07-2013>
+
+Art. 42septies.
+<Abrogé par L 2017-02-24/21, art. 23, 094; En vigueur : 29-04-2017>
+
+Art. 42octies.<inséré par L 2007-04-25/49, art. 32, En vigueur : 01-06-2008> § 1er. La décision imposant l'amende administrative, visée aux articles 41, alinéa 4, [1 ...]1 42, § 4, alinéa 2, et 42quinquies, § 6, alinéa 3, est exécutable immédiatement, nonobstant tout recours.
+L'amende administrative peut être payée au moyen de la consignation du montant dû à la Caisse des Dépôts et Consignations.
+§ 2. Le citoyen de l'Union, ou, le cas échéant, le membre de sa famille, qui conteste la décision du ministre ou de son délégué, introduit par une demande écrite un recours auprès du tribunal de première instance dans un délai d'un mois à compter de la notification de la décision, sous peine de déchéance.
+Si le tribunal de première instance déclare le recours recevable et fondé, la somme payée ou consignée est remboursée.
+Le tribunal de première instance doit statuer dans un mois à compter de l'introduction de la demande écrite visée à l'alinéa 1er.
+Le texte de l'alinéa 1er est repris dans la décision imposant l'amende administrative.
+§ 3. Si le citoyen de l'Union ou le membre de sa famille reste en défaut de paiement de l'amende, la décision de l'agent compétent ou la décision passée en force de chose jugée du tribunal de première instance est portée à la connaissance de l'Administration du Cadastre, de l'Enregistrement et des Domaines, en vue du recouvrement du montant de l'amende administrative.
+§ 4. Si le citoyen de l'Union, le membre de sa famille ou son représentant a consigné la somme de l'amende administrative à la Caisse des Dépôts et Consignations et s'il n'a pas introduit de recours auprès du tribunal de première instance dans le délai précité, la consignation donnée revient à l'Etat.
+----------
+(1)<L 2023-03-19/09, art. 10, 131; En vigueur : 10-04-2026>
+
+Art. 43.[1 § 1er. Le ministre ou son délégué peut refuser l'entrée et le séjour aux citoyens de l'Union et aux membres de leurs familles [2 ...]2 :
+1° lorsqu'ils ont eu recours à des informations fausses ou trompeuses ou à des documents faux ou falsifiés, ou lorsqu'ils ont eu recours à la fraude ou à d'autres moyens illégaux qui ont contribué à l'obtention du séjour;
+2° pour des raisons d'ordre public, de sécurité nationale ou de santé publique.
+§ 2. Lorsque le ministre ou son délégué envisage de prendre une décision visée au paragraphe 1er, il tient compte de la durée du séjour du citoyen de l'Union ou du membre de sa famille sur le territoire du Royaume, de son âge, de son état de santé, de sa situation familiale et économique, de son intégration sociale et culturelle dans le Royaume et de l'intensité de ses liens avec son pays d'origine.]1
+----------
+(1)<L 2017-02-24/21, art. 24, 094; En vigueur : 29-04-2017>
+(2)<L 2019-05-08/12, art. 14, 106; En vigueur : 19-07-2019>
+
+Art. 44.[1 § 1er. Le ministre ou son délégué peut retirer le séjour aux citoyens de l'Union et aux membres de leurs familles [2 ...]2 lorsqu'ils ont fait usage d'informations fausses ou trompeuses ou de documents faux ou falsifiés, ou lorsqu'ils ont eu recours à la fraude ou à d'autres moyens illégaux qui ont contribué à l'obtention du séjour.
+§ 2. Lorsque le ministre ou son délégué envisage de prendre une décision telle que visée au paragraphe 1er, il tient compte de la durée du séjour du citoyen de l'Union ou du membre de sa famille sur le territoire du Royaume, de son âge, de son état de santé, de sa situation familiale et économique, de son intégration sociale et culturelle dans le Royaume et de l'intensité de ses liens avec son pays d'origine.]1
+----------
+(1)<L 2017-02-24/21, art. 25, 094; En vigueur : 29-04-2017>
+(2)<L 2019-05-08/12, art. 15, 106; En vigueur : 19-07-2019>
+
+Art. 44bis.[1 § 1er. Sans préjudice des paragraphes 2 et 3, le ministre ou son délégué peut mettre fin au séjour des citoyens de l'Union et des membres de leurs familles [2 ...]2 pour des raisons d'ordre public, de sécurité nationale ou de santé publique.
+§ 2. Le ministre peut mettre fin au séjour des citoyens de l'Union et des membres de leurs familles ayant acquis un droit de séjour permanent conformément aux articles 42quinquies et 42sexies [2 ...]2 uniquement pour des raisons graves d'ordre public ou de sécurité nationale.
+§ 3. Le ministre peut mettre fin au séjour des citoyens de l'Union suivants [2 ...]2 uniquement pour des raisons impérieuses de sécurité nationale :
+1° les citoyens de l'Union qui ont séjourné sur le territoire du Royaume pendant les dix années précédentes;
+2° les citoyens de l'Union qui sont mineurs d'âge sauf si la décision est nécessaire dans l'intérêt de l'enfant, comme prévu dans la Convention des Nations unies sur les droits de l'enfant du 20 novembre 1989.
+§ 4. Lorsque le ministre ou son délégué envisage de prendre une décision visée aux paragraphes 1er, 2 ou 3, il tient compte de la durée du séjour du citoyen de l'Union ou du membre de sa famille sur le territoire du Royaume, de son âge, de son état de santé, de sa situation familiale et économique, de son intégration sociale et culturelle dans le Royaume et de l'intensité de ses liens avec son pays d'origine.]1
+----------
+(1)<L 2017-02-24/21, art. 26, 094; En vigueur : 29-04-2017>
+(2)<L 2019-05-08/12, art. 16, 106; En vigueur : 19-07-2019>
+
+Art. 44ter.[2 § 1er. Lorsqu'un citoyen de l'Union ou un membre de sa famille n'a pas ou n'a plus le droit de séjourner sur le territoire, le ministre ou son délégué peut lui donner un ordre de quitter le territoire, en application de l'article 7, alinéa 1er.
+Lorsque le ministre ou son délégué envisage de prendre un ordre de quitter le territoire, il tient compte de la durée du séjour du citoyen de l'Union ou du membre de sa famille sur le territoire du Royaume, de son âge, de son état de santé, de sa situation familiale et économique, de son intégration sociale et culturelle dans le Royaume et de l'intensité de ses liens avec son pays d'origine.]2
+[2 § 2.]2 [1 L'ordre de quitter le territoire délivré à un citoyen de l'Union ou à un membre de sa famille indique le délai endéans lequel il doit quitter le territoire du Royaume. Sauf en cas d'urgence dûment justifié, ce délai ne peut pas être inférieur à un mois à compter de la notification de la décision.
+Le délai visé à l'alinéa 1er peut être prolongé par le ministre ou son délégué lorsque :
+1° le retour volontaire ne peut se réaliser dans ledit délai; ou
+2° les circonstances propres à la situation de l'intéressé le justifient.
+La demande visant à obtenir une prolongation du délai pour quitter le territoire du Royaume doit être introduite par le citoyen de l'Union ou le membre de sa famille auprès du ministre ou de son délégué.]1
+----------
+(1)<Inséré par L 2017-02-24/21, art. 27, 094; En vigueur : 29-04-2017>
+(2)<L 2019-05-08/12, art. 17, 106; En vigueur : 19-07-2019>
+
+Art. 44quater.[1 Aussi longtemps que le délai [2 visé à l'article 44ter, § 2]2 court, le citoyen de l'Union ou le membre de sa famille ne peut pas faire l'objet d'un éloignement forcé.
+Pour éviter tout risque de fuite pendant le délai [2 visé à l'article 44ter, § 2]2, [3 le ministre ou son délégué peut contraindre le citoyen de l'Union ou le membre de sa famille]3 à remplir des mesures préventives. [3 ...]3]1
+----------
+(1)<Inséré par L 2017-02-24/21, art. 28, 094; En vigueur : 29-04-2017>
+(2)<L 2019-05-08/12, art. 18, 106; En vigueur : 19-07-2019>
+(3)<L 2024-05-12/29, art. 9, 124; En vigueur : 20-07-2024>
+
+Art. 44quinquies.[1 § 1er. Le ministre ou son délégué prend toutes les mesures nécessaires pour exécuter l'ordre de quitter le territoire lorsque :
+1° aucun délai n'a été octroyé au citoyen de l'Union ou au membre de sa famille pour quitter le territoire du Royaume;
+2° le citoyen de l'Union ou le membre de sa famille n'a pas quitté le territoire du Royaume dans le délai qui lui était octroyé;
+3° avant l'écoulement du délai octroyé pour quitter le territoire du Royaume, le citoyen de l'Union ou le membre de sa famille présente un risque de fuite, n'a pas respecté les mesures préventives imposées ou constitue une menace pour l'ordre public ou la sécurité nationale.
+§ 2. [2 ...]2.
+§ 3. [2 ...]2]1
+----------
+(1)<Inséré par L 2017-02-24/21, art. 29, 094; En vigueur : 29-04-2017>
+(2)<L 2024-05-12/29, art. 10, 124; En vigueur : 20-07-2024>
+
+Art. 44sexies.[1 Lorsque les circonstances propres à chaque cas le justifient, le ministre ou son délégué peut reporter temporairement l'éloignement. Il en informe l'intéressé.
+Pour éviter tout risque de fuite, [2 le ministre ou son délégué peut contraindre le citoyen de l'Union ou le membre de sa famille]2 à remplir des mesures préventives. [2 ...]2.
+[2 ...]2]1
+----------
+(1)<Inséré par L 2017-02-24/21, art. 30, 094; En vigueur : 29-04-2017>
+(2)<L 2024-05-12/29, art. 11, 124; En vigueur : 20-07-2024>
+
+Art. 44septies.[1 § 1er. Si des raisons d'ordre public, de sécurité nationale ou de santé publique l'exigent et à moins que d'autres mesures moins coercitives puissent s'appliquer efficacement, les citoyens de l'Union et les membres de leurs familles peuvent, en vue de garantir l'exécution de la mesure d'éloignement, être maintenus pendant le temps strictement nécessaire à l'exécution de la mesure sans que la durée du maintien ne puisse dépasser deux mois.
+Toutefois, le ministre ou son délégué peut prolonger la durée de ce maintien par période de deux mois, lorsque les démarches nécessaires en vue de l'éloignement de l'étranger ont été entreprises dans les sept jours ouvrables suivant le maintien du citoyen de l'Union ou du membre de sa famille, qu'elles sont poursuivies avec toute la diligence requise et qu'il subsiste toujours une possibilité d'éloigner effectivement l'intéressé dans un délai raisonnable.
+Après une première prolongation, la décision de prolonger la durée du maintien peut être prise uniquement par le ministre.
+Après cinq mois, le citoyen de l'Union ou le membre de sa famille doit être mis en liberté. [2Dans le cas où la sauvegarde de l'ordre public ou la sécurité nationale l'exige, le maintien peut être prolongé chaque fois d'un mois sans toutefois que la durée totale du maintien puisse dépasser huit mois]2.
+§ 2. Le citoyen de l'Union ou le membre de sa famille visé au paragraphe 1er peut introduire un recours à l'encontre de la décision de maintien dont il fait l'objet, conformément aux articles 71 et suivants.]1
+----------
+(1)<Inséré par L 2017-02-24/21, art. 31, 094; En vigueur : 29-04-2017>
+(2)<Annulé par ACC 2021-12-23/49, art. M, En vigueur : 29-04-2017>
+
+Art. 44octies. [1 Ne peuvent être maintenus dans les lieux au sens de l'article 74/8, § 2 :
+1° les citoyens de l'Union mineurs d'âge non accompagnés;
+2° les membres de la famille d'un citoyen de l'Union mineurs d'âge non accompagnés;
+3° les familles des citoyens de l'Union lorsqu'elles se composent d'au moins un mineur d'âge.]1
+----------
+(1)<Inséré par L 2017-02-24/21, art. 32, 094; En vigueur : 29-04-2017>
+
+Art. 44nonies.[1 § 1er. Lorsqu'un ordre de quitter le territoire est pris à l'encontre d'un citoyen de l'Union ou d'un membre de sa famille, le ministre ou son délégué peut l'assortir d'une interdiction d'entrée sur le territoire du Royaume uniquement pour des raisons d'ordre public, de sécurité nationale ou de santé publique.
+§ 2. La durée de l'interdiction d'entrée ne peut pas dépasser cinq ans sauf si le citoyen de l'Union ou le membre de sa famille constitue une menace grave pour l'ordre public ou la sécurité nationale.
+[2 Si le citoyen de l'Union ou le membre de sa famille est une des entités validées enregistrées dans la banque de données commune T.E.R., telles que visées dans la loi du 29 mars 2024 portant création de la banque de données commune "Terrorisme, Extrémisme, processus de Radicalisation" ("T.E.R.") et modifiant la loi du 30 juillet 2018 relative à la protection des personnes physiques à l'égard des traitements de données à caractère personnel, la loi du 30 juillet 2018 portant création de cellules de sécurité intégrale locales en matière de radicalisme, d'extrémisme et de terrorisme et la loi du 5 août 1992 sur la fonction de police, une interdiction d'entrée à vie est possible.]2
+La durée est déterminée en tenant compte de toutes les circonstances propres à chaque cas.
+§ 3. L'interdiction d'entrée ne peut pas contrevenir au droit à la protection internationale.]1
+----------
+(1)<L 2019-05-08/12, art. 19, 106; En vigueur : 19-07-2019>
+(2)<L 2026-04-30/10, art. 4, 133; En vigueur : 23-05-2026>
+
+Art. 44decies. [1 § 1er. Le citoyen de l'Union ou le membre de sa famille, qui fait l'objet d'une décision d'interdiction d'entrée sur le territoire du Royaume, peut en demander la suspension ou la levée après un délai raisonnable et en tout cas après trois ans à compter de son exécution.
+§ 2. La demande de suspension ou de levée de l'interdiction d'entrée doit être introduite auprès du ministre ou de son délégué à partir du pays d'origine ou de résidence du citoyen de l'Union ou du membre de sa famille.
+Le ministre ou son délégué dispose d'un délai de six mois pour se prononcer sur la demande.
+§ 3. Si la demande n'est pas introduite conformément au paragraphe 2, le ministre ou son délégué refuse de prendre la demande en considération.
+Si les moyens invoqués par le citoyen de l'Union ou le membre de sa famille établissent un changement matériel des circonstances qui avaient justifié la décision d'interdiction d'entrée sur le territoire du Royaume, le ministre ou son délégué suspend ou lève l'interdiction d'entrée. Dans le cas contraire, il refuse la demande de suspension ou de levée de l'interdiction d'entrée.
+§ 4. Pendant l'examen de sa demande de suspension ou de levée de l'interdiction d'entrée, le citoyen de l'Union ou le membre de sa famille n'a aucun droit d'accès ou de séjour sur le territoire du Royaume.]1
+----------
+(1)<Inséré par L 2017-02-24/21, art. 34, 094; En vigueur : 29-04-2017>
+
+Art. 45.[1 § 1er. Les raisons d'ordre public, de sécurité nationale et de santé publique visées aux articles 43 et 44bis ne peuvent être invoquées à des fins économiques.
+§ 2. Les décisions visées aux articles 43 et 44bis doivent respecter le principe de proportionnalité et être fondées exclusivement sur le comportement personnel du citoyen concerné de l'Union ou du membre de sa famille.
+L'existence de condamnations pénales antérieures ne peut à elle seule motiver de telles décisions.
+Le comportement du citoyen de l'Union ou du membre de sa famille doit représenter une menace réelle, actuelle et suffisamment grave pour un intérêt fondamental de la société. Des justifications non directement liées au cas individuel concerné ou tenant à des raisons de prévention générale ne peuvent pas être retenues.
+Aux fins d'établir si le citoyen de l'Union ou le membre de sa famille représente un danger pour l'ordre public ou la sécurité nationale, le ministre ou son délégué peut, lors de la délivrance de l'attestation d'enregistrement ou de la carte de séjour de membre de la famille d'un citoyen de l'Union et s'il le juge indispensable, demander à l'Etat membre d'origine et, éventuellement, à d'autres Etats membres des renseignements sur les antécédents judiciaires de la personne concernée. Cette consultation ne peut pas avoir un caractère systématique.
+§ 3. Seules les maladies énumérées dans l'annexe de la présente loi peuvent justifier les mesures visées aux articles 43 et 44bis.
+La survenance d'une de ces maladies après une période de trois mois suivant l'arrivée du citoyen de l'Union ou du membre de sa famille sur le territoire du Royaume ne permet pas au ministre ou à son délégué de mettre fin au séjour du citoyen de l'Union ou du membre de sa famille conformément à l'article 44bis.
+Dans les trois mois suivant leur arrivée sur le territoire du Royaume et si des indices sérieux le justifient, le ministre ou son délégué peut soumettre le citoyen de l'Union ou le membre de sa famille à un examen médical gratuit afin qu'il soit attesté qu'il ne souffre pas d'une des maladies visées à l'alinéa 1er. Cet examen médical ne peut pas avoir un caractère systématique.
+§ 4. L'expiration de la carte d'identité ou du passeport ayant permis au citoyen de l'Union ou au membre de sa famille d'entrer sur le territoire du Royaume ne constitue pas un motif suffisant pour mettre fin à son séjour.]1
+----------
+(1)<L 2017-02-24/21, art. 35, 094; En vigueur : 29-04-2017>
+
+Art. 45/1.
+<Abrogé par L 2017-02-24/21, art. 36, 094; En vigueur : 29-04-2017>
+
+Art. 46.(§ 1er.) Les raisons d'ordre public, de sécurité ou de santé publique qui justifient une restriction aux droits d'entrée et de séjour sont portées à la connaissance de l'intéressé, à moins que des motifs intéressant la sûreté de l'Etat ne s'y opposent. <L 2007-04-25/49, art. 36, 1°, 046; En vigueur : 01-06-2008>
+(§ 2.) (Sont notifiés à l'intéressé :
+1° le refus de déclaration d'inscription visée à l'article 42, § 2, ou le refus de délivrance du titre de séjour visé à l'article 42, § 3;
+2° la perte du droit de séjour sur la base des articles 42bis, 42ter, 42quater [1 ou de l `article 44]1;
+3° le refus de délivrance du document visé à l'article 42quinquies, § 5, ou le refus de délivrance de la carte de séjour visée à l'article 42quinquies, § 6;
+4° la perte du droit de séjour permanent sur la base de l'article 42quinquies, § 7, [1 ou de l `article 44]1.) <L 2007-04-25/49, art. 36, 2°, 046; En vigueur : 01-06-2008>
+§ 3. [1 Une traduction écrite ou orale des principaux éléments de la décision d'éloignement, assortie le cas échéant d'une interdiction d'entrée, y compris des informations concernant les voies de recours dans une langue que le citoyen de l'Union ou le membre de sa famille comprend, ou dont il est raisonnable de supposer qu'il la comprend, peut être obtenue sur demande de l'intéressé auprès du ministre ou de son délégué. Ceci est mentionné explicitement dans la décision.]1
+(§ 4.) [1 ...]1
+----------
+(1)<L 2017-02-24/21, art. 37, 094; En vigueur : 29-04-2017>
+
+Art. 46bis.[1 Le ministre ou son délégué ne peut pas mettre fin au séjour et délivrer un ordre de quitter le territoire à citoyen de l'Union ou à un membre de sa famille qui bénéficie de la protection internationale dans le Royaume.]1
+----------
+(1)<L 2017-02-24/21, art. 38, 094; En vigueur : 29-04-2017>
+
+Art. 47. Le Roi met les dispositions du présent chapitre en concordance avec les règlements pris en exécution des traités instituant les Communautés européennes. Dans la mesure où il s'agit de matières que la Constitution ne réserve pas en propre au législateur, le Roi modifie ces mêmes dispositions pour donner effet aux directives prises en exécution des mêmes traités.
+
+CHAPITRE Ibis. [1 - Autres membres de la famille d'un citoyen de l'Union.]1
+----------
+(1)<Inséré par L 2014-03-19/24, art. 24, 076; En vigueur : 15-05-2014>
+
+Art. 47/1. [1 Sans préjudice des dispositions du présent chapitre, les dispositions du chapitre Ier relatives aux membres de la famille d'un citoyen de l'Union visés à l'article 40bis ou aux membres de la famille d'un Belge qui a exercé son droit de libre circulation et de séjour visés à l'article 40ter, paragraphe 1er, s'appliquent aux autres membres de la famille visés à l'article 47/2.]1
+----------
+(1)<L 2024-03-10/03, art. 14, 127; En vigueur : 01-09-2024>
+
+Art. 47/2. [1 Sont considérés comme autres membres de la famille d'un citoyen de l'Union:
+1° le partenaire non visé à l'article 40bis, § 2, 2°, avec lequel le citoyen de l'Union a une relation durable dûment attestée et qui accompagne ou vient rejoindre le citoyen, pour autant qu'ils ne soient pas une des personnes visées aux articles 161 à 163 de l'ancien Code civil et qu'ils n'aient pas de relation durable avec une autre personne;
+2° les membres de la famille, non visés à l'article 40bis, § 2, qui, dans le pays de provenance, sont à charge ou font partie du ménage du citoyen de l'Union et accompagnent ou viennent rejoindre ce dernier;
+3° les membres de la famille, non visés à l'article 40bis, § 2, dont le citoyen de l'Union doit impérativement et personnellement s'occuper en raison de problèmes de santé graves et qu'ils accompagnent ou viennent rejoindre ce dernier.]1
+----------
+(1)<L 2024-03-10/03, art. 15, 127; En vigueur : 01-09-2024>
+
+Art. 47/3. [1 § 1er. Les autres membres de la famille [2 visés à l'article 47/2, 1°,]2 doivent apporter la preuve de l'existence d'une relation avec le citoyen de l'Union qu'ils veulent accompagner ou rejoindre ainsi que de son caractère durable.
+Le caractère durable de la relation peut être prouvé par tout moyen approprié.
+Lors de l'examen du caractère durable de la relation, le ministre ou son délégué tient compte notamment de l'intensité, de l'ancienneté et de la stabilité des liens entre les partenaires.
+§ 2. [2 Les autres membres de la famille visés à l'article 47/2, 2°, doivent prouver qu'ils sont, dans le pays de provenance, à charge du citoyen de l'Union qu'ils accompagnent ou qu'ils souhaitent rejoindre, ou qu'ils font partie de son ménage dans ce pays.]2
+Les documents attestant que l'autre membre de famille est à charge ou fait partie du ménage du citoyen de l'Union doit émaner des autorités compétentes du pays d'origine ou de provenance. A défaut, le fait d'être à charge ou de faire partie du ménage du citoyen de l'Union peut être prouvé par tout moyen approprié.
+§ 3. [2 Les autres membres de la famille visés à l'article 47/2, 3°, doivent apporter la preuve que compte tenu de raisons de santé graves, le citoyen de l'Union qu'ils accompagnent ou qu'ils souhaitent rejoindre doit impérativement et personnellement s'occuper d'eux.
+Le Roi peut déterminer de quelles manières les autres membres de la famille peuvent apporter la preuve de leur état de santé.]2]1
+[2 § 4. Le citoyen de l'Union visé à l'article 40, § 4, alinéa 1er, 2° à 3°, doit également apporter la preuve qu'il dispose de ressources suffisantesafin d'éviter que les membres de sa famille visés à l'article 47/2 ne deviennent une charge pour le système d'aide sociale du Royaume au cours de leur séjour, et d'une assurance maladie couvrant l'ensemble des risques pour les membres de sa famille dans le Royaume. Dans le cadre de l'évaluation des ressources, il est tenu compte de la situation personnelle du citoyen de l'Union, qui englobe notamment la nature et la régularité de ses revenus et le nombre de membres de la famille qui sont à sa charge.]2
+----------
+(1)<Inséré par L 2014-03-19/24, art. 27, 076; En vigueur : 15-05-2014>
+(2)<L 2024-03-10/03, art. 16, 127; En vigueur : 01-09-2024>
+
+Art. 47/4. [1 A moins qu'ils soient eux-mêmes citoyens de l'Union et qu'ils bénéficient à ce titre d'un droit de séjour visé à l'article 40, § 4, et sans préjudice des dispositions des articles 42ter et 42quater, le ministre ou son délégué peut dans les cinq années suivant la reconnaissance de leur droit de séjour mettre fin au séjour des autres membres de la famille ou refuser de renouveler leur titre de séjour lorsque:
+1° le partenaire visé à l'article 47/2, 1°, n'entretient plus de relation durable avec le citoyen de l'Union qu'il a accompagné ou rejoint;
+2° le membre de la famille visé à l'article 47/2, 2°, n'est plus à charge ou, le cas échéant, ne fait plus partie du ménage du citoyen de l'Union qu'il a accompagné ou rejoint;
+3° le citoyen de l'Union ne s'occupe plus personnellement du membre de la famille visé à l'article 47/2, 3°, ou le membre de la famille ne présente plus de problèmes de santé graves, ou encore que le citoyen de l'Union qu'il a accompagné ou rejoint ne doit plus impérativement et personnellement s'occuper de lui.
+Lors de la décision de mettre fin au séjour, le ministre ou son délégué tient compte de la durée du séjour de l'intéressé dans le Royaume, de son âge, de son état de santé, de sa situation familiale et économique, de son intégration sociale et culturelle dans le Royaume, et de l'intensité de ses liens avec son pays d'origine.]1
+----------
+(1)<L 2024-03-10/03, art. 17, 127; En vigueur : 01-09-2024>
+
+CHAPITRE Iter. [1 - Bénéficiaires de l'accord de retrait.]1
+----------
+(1)<Inséré par L 2020-12-16/06, art. 5, 110; En vigueur : 23-12-2020>
+
+Art. 47/5. [1 § 1er. Les dispositions du chapitre I et Ibis concernant le long séjour, le séjour permanent et la fin de séjour applicable aux citoyens de l'Union et leurs membres de la famille, sont applicables aux bénéficiaires de l'accord de retrait sauf dispositions contraires dans cet accord ou cette loi.
+§ 2. Les étrangers visés au présent chapitre sont tenus d'introduire une demande de statut de résident en tant que bénéficiaire de l'accord de retrait qui sera évaluée conformément aux conditions énoncées à l'article 18, paragraphe 1er, de l'accord de retrait, ou d'introduire une demande en vue d'obtenir un document indiquant les droits des travailleurs frontaliers.
+Le Roi détermine la manière dont les demandes visées au paragraphe 1er sont introduites.
+§ 3. Les demandes visées au paragraphe 2, alinéa 1er, doivent être introduites au plus tard le 31 décembre 2021.
+Pour les personnes visées à l'article 10, paragraphe 1er, point e), ii) et iii) et à l'article 10, paragraphe 4, de l'accord de retrait qui, conformément au présent chapitre, ont le droit de commencer leur séjour après la fin de la période de transition, la demande de statut de résident en tant que bénéficiaire de l'accord de retrait visée au paragraphe 2, alinéa 1er, doit être introduite dans les trois mois après leur arrivée ou avant l'expiration du délai visé à l'alinéa 1er, la date la plus tardive étant retenue.
+Si la demande est introduite en dehors du délai visé aux alinéas 1er et 2, le ministre ou son délégué évalue toutes les circonstances et les raisons du non-respect de ce délai et autorise la personne à introduire une demande dans un délai supplémentaire raisonnable s'il existe des motifs raisonnables qui justifient le non-respect du délai initial.
+Le Roi détermine le modèle d'attestation à délivrer immédiatement comme preuve de l'introduction de la demande d'un nouveau statut de résident.
+§ 4. Chaque demandeur est soumis à un contrôle systématique des antécédents criminels et en matière de sécurité.
+A cet effet, si le demandeur est âgé de dix-huit ans ou plus, il joint à sa demande un extrait du casier judiciaire belge, ou un extrait du casier judiciaire ou un document équivalent et, le cas échéant, sa traduction légalisée, délivré par le pays d'origine ou de dernière résidence, datant de six mois au plus.
+§ 5. Si le comportement du bénéficiaire de l'accord de retrait, qui s'est produit après la fin de la période de transition, constitue un motif de restriction du droit de séjour ou du droit d'entrée dans l'Etat de travail, ce comportement est examiné conformément aux dispositions de la présente loi.
+§ 6. Les personnes visées à l'article 10, paragraphe 1er, point b), de l'accord de retrait qui peuvent prouver qu'elles ont exercé leur droit de séjour sans être titulaires d'un titre de séjour valable doivent fournir la preuve qu'elles résidaient déjà en tant que citoyen Britannique sur le territoire avant la fin de la période de transition et justifier leur demande au moyen de tous les documents visés à l'article 18, paragraphe 1er, point k), de l'accord de retrait.
+Les personnes visées à l'article 10, paragraphe 1er, point d), de l'accord de retrait qui ont exercé leur droit en tant que travailleurs frontaliers sans être titulaires d'un document valable attestant de ce fait doivent fournir la preuve qu'elles travaillaient déjà sur le territoire en tant que travailleur frontalier britannique avant la fin de la période de transition et justifier leur demande au moyen d'un passeport ou d'une carte d'identité nationale en cours de validité et d'une promesse d'embauche ou attestation d'emploi ou d'une preuve attestant d'une activité non salariée.
+Les personnes visées à l'article 10, paragraphe 1er, point e), i), de l'accord de retrait qui peuvent prouver qu'elles ont exercé leur droit de séjour sans être titulaires d'un titre de séjour valable doivent fournir la preuve qu'elles résidaient déjà sur le territoire avant la fin de la période de transition et justifier leur demande au moyen de tous les documents visés à l'article 18, paragraphe 1er, point l), de l'accord de retrait.
+Les personnes visées à l'article 10, paragraphe 1er, point e), ii) et iii), de l'accord de retrait qui ont le droit de commencer leur séjour après la fin de la période de transition conformément au présent chapitre et les personnes visées à l'article 10, paragraphe 4, doivent justifier leur demande au moyen des documents visés à l'article 18, paragraphe 1er, point m), de l'accord de retrait.
+§ 7. Le Roi détermine le document attestant le statut de séjour et le document indiquant les droits des travailleurs frontaliers, ainsi que le montant éventuel des frais relatifs à la production de la carte conformément à l'article 18, paragraphe 1er, points g) et h), et à l'article 26 de l'accord de retrait. ".
+§ 8. L'attestation d'enregistrement valable, la carte de séjour valable en tant que membre de la famille d'un citoyen de l'Union, le document valable attestant de la permanence du séjour et la carte de séjour permanent de membre de la famille d'un citoyen de l'Union valable, délivrés aux ressortissants de pays tiers ou à un membre de leur famille, expirent automatiquement le 31 mars 2022.]1
+----------
+(1)<Inséré par L 2020-12-16/06, art. 6, 110; En vigueur : 23-12-2020>
+
+CHAPITRE II. - (Réfugiés et personnes pouvant bénéficier de la protection subsidiaire) <L 2006-09-15/72, art. 22, 041; En vigueur : 01-06-2007>
+
+SECTION I. - (Le statut de réfugié et le statut de protection subsidiaire) <L 2006-09-15/72, art. 23, 041; En vigueur : 01-06-2007>
+
+Art. 48.
+<Abrogé par L 2026-06-16/01, art. 20, 135; En vigueur : 12-06-2026>
+
+Art. 48/2.
+<Abrogé par L 2026-06-16/01, art. 21, 135; En vigueur : 12-06-2026>
+
+Art. 48/3.
+<Abrogé par L 2026-06-16/01, art. 22, 135; En vigueur : 12-06-2026>
+
+Art. 48/4.
+<Abrogé par L 2026-06-16/01, art. 23, 135; En vigueur : 12-06-2026>
+
+Art. 48/5.
+<Abrogé par L 2026-06-16/01, art. 24, 135; En vigueur : 12-06-2026>
+
+Art. 48/6.[1 [2 ...]2.
+[2 § 1er.]2 [2 Le demandeur d'une protection internationale présente le plus rapidement possible tous les éléments nécessaires qui étayent sa demande. Le demandeur indique quelles informations présentent un intérêt pour l'examen de sa demande.
+Le demandeur présente les documents établissant son identité ou sa nationalité en original. Une copie de ces documents est conservée dans le dossier administratif. Si le ministre ou son délégué ou le Commissaire général aux réfugiés et aux apatrides estime qu'une vérification de l'authenticité d'un document est nécessaire, le document original peut être conservé pendant la période nécessaire à la réalisation de cette vérification.
+Si le demandeur présente à l'appui de sa demande d'autres pièces en original qui contiennent des données à caractère personnel, une copie de ces documents est conservée dans le dossier administratif. Si le ministre ou son délégué ou le Commissaire général aux réfugiés et aux apatrides estime qu'un examen d'un document original est nécessaire, celui-ci peut être conservé pendant la période nécessaire à la réalisation de cet examen.
+Le demandeur reçoit une copie des pièces dont les originaux sont conservés et un accusé de réception avec une brève description des documents originaux conservés dans le dossier administratif.
+La restitution des documents originaux au demandeur, ou à son avocat lorsqu'il présente une procuration écrite émanant du demandeur, intervient sur demande. La restitution des documents de nationalité et d'identité visés au deuxième alinéa a lieu après que la vérification de leur authenticité a été menée. La restitution des documents originaux visés au troisième alinéa a lieu après que l'examen du document est terminé.
+Les documents originaux peuvent être restitués anticipativement si le demandeur fournit une raison valable.
+La restitution d'une pièce ne peut pas avoir lieu s'il est établi, à la suite d'une authentification par les autorités compétentes, que le document est un faux ou a été falsifié et/ou s'il existe un obstacle à cette restitution en vertu de la loi.
+L'éventuelle restitution des pièces originales est mentionnée sur l'accusé de réception visé à l'alinéa 4]2.
+[2 § 2.]2 [2 Les documents présentés par le demandeur qui sont rédigés dans une langue autre que l'une des trois langues nationales ou l'anglais sont traduits si cela est considéré comme pertinent pour le traitement de la demande par le Commissaire général aux réfugiés et aux apatrides.
+Le demandeur commente les informations pertinentes contenues dans les documents visés à l'alinéa 1er, au cours de l'entretien personnel, le cas échéant assisté de l'interprète présent. Une traduction de ces informations est versée au dossier du demandeur.
+En l'absence de traduction lors de l'entretien personnel, le Commissaire général aux réfugiés et aux apatrides traduit les informations pertinentes contenues dans les documents présentés.
+Dans le cas où le demandeur introduit une demande ultérieure, les documents qu'il a présentés, rédigés dans une langue autre que l'une des trois langues nationales ou l'anglais, sont accompagnés d'une traduction en néerlandais, français, allemand ou anglais. En l'absence de traduction, le demandeur commente les informations pertinentes contenues dans les documents présentés, dans la déclaration visée à l'article 51/10]2.
+[2 ...]2.
+[2 ...]2
+----------
+(1)<L 2017-11-21/17, art. 10, 100; En vigueur : 22-03-2018>
+(2)<L 2026-06-16/01, art. 25, 135; En vigueur : 12-06-2026>
+
+Art. 48/7.
+<Abrogé par L 2026-06-16/01, art. 26, 135; En vigueur : 12-06-2026>
+
+Art. 48/8.[1 § 1er. S'il le juge pertinent pour procéder à l'examen de la demande, le Commissaire général aux réfugiés et aux apatrides invite le demandeur de protection internationale à se soumettre à un examen médical portant sur des signes de persécutions ou d'atteintes graves qu'il aurait subies dans le passé, pour autant que le demandeur y consente.
+Le Commissaire général aux réfugiés et aux apatrides peut inviter le demandeur à prendre dans les meilleurs délais les mesures nécessaires pour se soumettre à un tel examen, qui sera le cas échéant réalisé par un praticien professionnel des soins de santé compétent désigné par le Commissaire général aux réfugiés et aux apatrides.
+Le praticien professionnel des soins de santé compétent transmet au Commissaire général aux réfugiés et aux apatrides un rapport avec ses constatations concernant les signes de persécutions ou d'atteintes graves qui auraient été subies dans le passé, pour autant que le demandeur y consente. Une distinction est clairement faite entre les constatations médicales objectives, d'une part, et les constatations basées sur les déclarations du demandeur de protection internationale, d'autre part.
+§ 2. Si le demandeur de protection internationale invoque un problème médical et qu'aucun examen médical tel que visé au paragraphe 1er n'a lieu, il est informé du fait qu'il peut, de sa propre initiative et à ses propres frais, prendre les mesures nécessaires pour se soumettre à un examen médical portant sur des signes de persécutions ou d'atteintes graves qu'il aurait subies dans le passé.
+Le certificat médical est soumis dans les meilleurs délais au Commissaire général aux réfugiés et aux apatrides, qui, le cas échéant, peut solliciter l'avis d'un praticien professionnel des soins de santé compétent au sujet du certificat en question.
+§ 3. Le fait que le demandeur de protection internationale refuse de se soumettre à l'examen médical visé au paragraphe 1er ou qu'aucun examen médical n'ait eu lieu n'empêche pas le Commissaire général aux réfugiés et aux apatrides de prendre une décision au sujet de la demande de protection internationale.
+§ 4. Le rapport visé au paragraphe 1er, alinéa 3, ou le certificat médical visé au paragraphe 2, alinéa 2, est examiné par le Commissaire général aux réfugiés et aux apatrides avec les autres éléments de la demande de protection internationale.
+§ 5. [2 ...]2.]1
+----------
+(1)<Inséré par L 2017-11-21/17, art. 11, 100; En vigueur : 22-03-2018>
+(2)<L 2026-06-16/01, art. 27, 135; En vigueur : 12-06-2026>
+
+Art. 48/9.[1 § 1er. L'étranger qui a introduit une demande de protection internationale [2 ...]2 a la possibilité de faire valoir de manière précise et circonstanciée, dans un questionnaire auquel il répond avant la déclaration prévue à l'article 51/10, les éléments dont ressortent ses besoins procéduraux spéciaux, et ce afin de pouvoir bénéficier des droits, et se conformer aux obligations, prévus dans le présent chapitre.
+§ 2. En outre, un fonctionnaire médecin ou un autre praticien professionnel des soins de santé compétent désigné par le ministre ou son délégué peut, par le biais d'un examen médical, faire des recommandations au sujet des besoins procéduraux spéciaux qu'un demandeur de protection internationale peut éprouver, et ce afin que celui-ci puisse bénéficier des droits et se conformer aux obligations prévus dans le présent chapitre. Si les recommandations ont trait à des informations médicales, celles-ci ne sont communiquées au ministre ou son délégué et au Commissaire général aux réfugiés et aux apatrides que pour autant que le demandeur de protection internationale y consente.
+[2 Outre ce qui est visé à l'article 57/27 pour les agents du Commissariat général aux réfugiés et aux apatrides, l'article 352 du Code pénal est applicable aux agents de l'Office des Etrangers]2.
+§ 3. Sans préjudice de ce qui est prévu aux §§ 1er et 2, le demandeur de protection internationale peut également signaler au Commissaire général aux réfugiés et aux apatrides des éléments à un stade ultérieur de la procédure, sans que la procédure relative à la demande de protection internationale ne doive, de ce fait, reprendre à nouveau depuis le début. Ces éléments doivent être transmis par le demandeur au Commissaire général aux réfugiés et aux apatrides par écrit, de manière précise et circonstanciée.
+§ 4. Les agents de l'Office des Etrangers et le Commissariat-général aux réfugiés et aux apatrides évaluent si le demandeur de protection internationale a des besoins procéduraux spéciaux et tiennent compte de ceux-ci en fournissant au demandeur un soutien adéquat au cours de la procédure, pour autant que ces besoins soient suffisamment démontrés et soient susceptibles d'empêcher le demandeur de bénéficier des droits visés au présent chapitre et de se conformer aux obligations qui lui incombent. L'évaluation des besoins procéduraux spéciaux n'est pas en soi susceptible de recours.
+§ 5. Si le Commissaire général aux réfugiés et aux apatrides estime, en particulier en cas de torture, de viol ou d'une autre forme grave de violence psychologique, physique ou sexuelle, que le demandeur de protection internationale a des besoins procéduraux spéciaux qui ne sont pas compatibles avec l'examen de la demande selon l'article 57/6/1, § 1er ou 57/6/4, le Commissaire général n'applique pas ou plus cette procédure.
+§ 6. Le fait que le demandeur n'ait pas répondu au questionnaire visé au § 1er ou qu'il n'ait pas subi d'examen médical conformément au § 2 n'empêche pas la poursuite de la procédure de traitement de la demande conformément à l'article 51/10 et n'empêche pas le Commissaire général aux réfugiés et aux apatrides de prendre une décision au sujet de la demande de protection internationale.
+§ 7. L'évaluation visée au § 4 reste valable si l'étranger introduit une demande ultérieure [2 ...]2.
+Par dérogation à l'alinéa 1er, le ministre ou son délégué ou le Commissaire général aux réfugiés et aux apatrides peut considérer dans le cadre de la demande ultérieure que le demandeur de protection internationale n'a plus de besoins procéduraux spéciaux, même s'il avait été évalué qu'il en avait au cours de la demande précédente.
+Par dérogation à l'alinéa 1er, le demandeur peut apporter, dans la déclaration visée à [2 l'article 51/10]2, des éléments dont il ressortirait de manière convaincante qu'il éprouve tout de même des besoins procéduraux spéciaux, même s'il avait encore été évalué qu'il n'en avait pas au cours de la demande précédente.]1
+----------
+(1)<Inséré par L 2017-11-21/17, art. 12, 100; En vigueur : 22-03-2018>
+(2)<L 2026-06-16/01, art. 28, 135; En vigueur : 12-06-2026>
+
+Art. 48/9 DROIT FUTUR.
+
+[1 § 1er. L'étranger qui a introduit une demande de protection internationale [2 ...]2 a la possibilité de faire valoir de manière précise et circonstanciée, dans un questionnaire auquel il répond avant la déclaration prévue à l'article 51/10, les éléments dont ressortent ses besoins procéduraux spéciaux, et ce afin de pouvoir bénéficier des droits, et se conformer aux obligations, prévus dans le présent chapitre.
+§ 2. En outre, un fonctionnaire médecin ou un autre praticien professionnel des soins de santé compétent désigné par le ministre ou son délégué peut, par le biais d'un examen médical, faire des recommandations au sujet des besoins procéduraux spéciaux qu'un demandeur de protection internationale peut éprouver, et ce afin que celui-ci puisse bénéficier des droits et se conformer aux obligations prévus dans le présent chapitre. Si les recommandations ont trait à des informations médicales, celles-ci ne sont communiquées au ministre ou son délégué et au Commissaire général aux réfugiés et aux apatrides que pour autant que le demandeur de protection internationale y consente.
+[2 Outre ce qui est visé à l'article 57/27 pour les agents du Commissariat général aux réfugiés et aux apatrides, l'article 352 du Code pénal est applicable aux agents de l'Office des Etrangers]2.
+§ 3. Sans préjudice de ce qui est prévu aux §§ 1er et 2, le demandeur de protection internationale peut également signaler au Commissaire général aux réfugiés et aux apatrides des éléments à un stade ultérieur de la procédure, sans que la procédure relative à la demande de protection internationale ne doive, de ce fait, reprendre à nouveau depuis le début. Ces éléments doivent être transmis par le demandeur au Commissaire général aux réfugiés et aux apatrides par écrit, de manière précise et circonstanciée.
+§ 4. Les agents de l'Office des Etrangers et le Commissariat-général aux réfugiés et aux apatrides évaluent si le demandeur de protection internationale a des besoins procéduraux spéciaux et tiennent compte de ceux-ci en fournissant au demandeur un soutien adéquat au cours de la procédure, pour autant que ces besoins soient suffisamment démontrés et soient susceptibles d'empêcher le demandeur de bénéficier des droits visés au présent chapitre et de se conformer aux obligations qui lui incombent. L'évaluation des besoins procéduraux spéciaux n'est pas en soi susceptible de recours.
+§ 5. Si le Commissaire général aux réfugiés et aux apatrides estime, en particulier en cas de torture, de viol ou d'une autre forme grave de violence psychologique, physique ou sexuelle, que le demandeur de protection internationale a des besoins procéduraux spéciaux qui ne sont pas compatibles avec l'examen de la demande selon l'article 57/6/1, § 1er [3 ...]3, le Commissaire général n'applique pas ou plus cette procédure.
+§ 6. Le fait que le demandeur n'ait pas répondu au questionnaire visé au § 1er ou qu'il n'ait pas subi d'examen médical conformément au § 2 n'empêche pas la poursuite de la procédure de traitement de la demande conformément à l'article 51/10 et n'empêche pas le Commissaire général aux réfugiés et aux apatrides de prendre une décision au sujet de la demande de protection internationale.
+§ 7. L'évaluation visée au § 4 reste valable si l'étranger introduit une demande ultérieure [2 ...]2.
+Par dérogation à l'alinéa 1er, le ministre ou son délégué ou le Commissaire général aux réfugiés et aux apatrides peut considérer dans le cadre de la demande ultérieure que le demandeur de protection internationale n'a plus de besoins procéduraux spéciaux, même s'il avait été évalué qu'il en avait au cours de la demande précédente.
+Par dérogation à l'alinéa 1er, le demandeur peut apporter, dans la déclaration visée à [2 l'article 51/10]2, des éléments dont il ressortirait de manière convaincante qu'il éprouve tout de même des besoins procéduraux spéciaux, même s'il avait encore été évalué qu'il n'en avait pas au cours de la demande précédente.]1
+
+----------
+(1)<Inséré par L 2017-11-21/17, art. 12, 100; En vigueur : 22-03-2018>
+(2)<L 2026-06-16/01, art. 28, 135; En vigueur : 12-06-2026>
+(3)<L 2026-06-16/01, art. 28,3°, 135; En vigueur : 10-07-2026>
+
+Art. 49.<L 2006-09-15/72, art. 28, 041; En vigueur : 01-06-2007> § 1er. Sont considérés comme réfugiés au sens de la présente loi et admis au séjour [2 pour une durée limitée]2 dans le Royaume :
+1° l'étranger qui, en vertu des accords internationaux antérieurs à la Convention internationale relative au statut des réfugiés, et des Annexes, signées à Genève, le 28 juillet 1951, possédait en Belgique la qualité de réfugié avant l'entrée en vigueur de la loi du 26 juin 1953 portant approbation de ladite convention;
+2° l'étranger auquel la qualité de réfugié a été reconnue par le ministre des Affaires étrangères ou par l'autorité internationale à laquelle le ministre a délégué sa compétence;
+3° l'étranger auquel la qualité de réfugié est reconnue par le Commissaire général aux réfugiés et aux Apatrides;
+4° l'étranger auquel la qualité de réfugié a été reconnue par la Commission permanente de recours des étrangers;
+5° l'étranger auquel la qualité de réfugié est reconnue par le Conseil du Contentieux des étrangers.
+6° l'étranger qui, après avoir été reconnu comme réfugié alors qu'il se trouvait sur le territoire d'un autre Etat partie contractante à la Convention internationale relative au statut des réfugiés, a été autorisé par le ministre ou son délégué, à séjourner ou à s'établir dans le Royaume, à condition que sa qualité de réfugié soit confirmée par l'autorité visée au 2° ou 3°.
+[2 Le titre de séjour qui constate l'admission au séjour pour une durée limitée est valable pour une durée de cinq ans.
+A l'expiration d'une période de cinq ans à compter de la date de l'introduction de la demande d'asile, le réfugié reconnu est admis au séjour pour une durée illimitée, à moins que le statut de réfugié ait entre-temps été [3 retiré conformément à l'article 14 du règlement (UE) 2024/1347]3 ou que l'étranger ait renoncé entre-temps à son statut de réfugié.]2
+§ 2. [2 Le ministre ou son délégué peut, au cours du séjour limité de l'étranger, à tout moment demander au Commissaire général aux réfugiés et aux apatrides [3 de retirer le statut de réfugié conformément à l'article 14, paragraphe 1, a), du règlement (UE) 2024/1347]3.]2 Le ministre ou son délégué peut, au cours des dix premières années de séjour à compter à partir de la date de l'introduction de la demande d'asile, à tout moment demander au Commissaire général aux réfugiés et aux apatrides de retirer le statut de réfugié reconnu à un étranger, conformément à [3 l'article 14, paragraphe 1, b) et c), du règlement (UE) 2024/1347]3.
+[1 Le ministre ou son délégué peut à tout moment demander au Commissaire général aux réfugiés et aux apatrides de retirer le statut de réfugié reconnu à un étranger, conformément à [3 l'article 14, paragraphe 1, d) et e), du règlement (UE) 2024/1347]3.
+Le ministre ou son délégué transmet sans délai au Commissaire général aux réfugiés et aux apatrides tout élément en sa possession susceptible de justifier une décision de retrait sur la base de [3 l'article 14, paragraphe 1, d) et e), du règlement (UE) 2024/1347]3. Sauf indication expresse en ce sens, la transmission de tels éléments ne constitue pas une demande de retrait de statut au sens de l'alinéa 2.]1
+[1 En cas d'application de l'alinéa 1er ou de l'alinéa 2 et dans un délai de soixante jours ouvrables, le Commissaire général aux réfugiés et aux apatrides rend [2 une décision [3 ...]3 de retrait]2 du statut de réfugié ou informe l'intéressé et le ministre ou son délégué qu'il n'est pas procédé [2 [3 ...]3 au retrait de ce statut]2.]1
+[2 Dans l'attente d'une décision définitive, l'octroi du droit de séjour d'une durée illimitée prévu au paragraphe 1er, alinéa 3, est, le cas échéant, suspendu. Lorsque la durée de validité du titre de séjour visé au paragraphe 1er, alinéa 2, expire pendant [3 le réexamen du droit à bénéficier d'une protection internationale]3, ce titre de séjour est renouvelé dans l'attente d'une décision définitive.]2
+[1 § 3. Lorsque le Commissaire général aux réfugiés et aux apatrides a [3 ...]3 retiré le statut de réfugié ou lorsque l'intéressé a renoncé à son statut, [2 le ministre ou son délégué peut mettre fin au séjour de l'étranger et l'éloigner conformément aux dispositions de la présente loi, sans préjudice du principe de non-refoulement.]2]1
+[1 § 4. [3 Le statut de réfugié devient juridiquement caduc si le bénéficiaire de la protection internationale:
+1° devient Belge; ou
+2° renonce de manière non équivoque à sa reconnaissance en tant que tel]3.]1
+----------
+(1)<L 2015-08-10/11, art. 3, 082; En vigueur : 03-09-2015>
+(2)<L 2016-06-01/07, art. 7, 091; En vigueur : 08-07-2016>
+(3)<L 2026-06-16/01, art. 29, 135; En vigueur : 12-06-2026>
+
+Art. 49/2.<Inséré par L 2006-09-15/72, art. 29; En vigueur : 01-06-2007> § 1er. Est considéré comme bénéficiant de la protection subsidiaire et admis au séjour pour une durée limitée dans le Royaume : l'étranger auquel le Commissaire général aux réfugiés et aux apatrides ou le Conseil du contentieux des étrangers accorde le statut prévu à [5 l'article 18 du règlement (UE) 2024/1347]5.
+§ 2. Le titre de séjour qui constate l'admission au séjour pour une durée limitée est valable pour une durée d'un an, prorogeable et [1 en cas de prorogation, valable pour deux ans]1 [3 , à moins que le statut de protection subsidiaire ait été, entretemps, [5 retiré en vertu de l'article 19 du règlement (UE) 2024/1347]5 ou que l'étranger ait renoncé entre-temps à son statut de protection subsidiaire.]3
+§ 3. A l'expiration d'une période de cinq ans à compter à partir de la date de l'introduction de la demande d'asile l'étranger auquel ce statut a été reconnu est admis au séjour pour une durée illimitée [3 , à moins que le statut de protection subsidiaire ait été, entre-temps, [5 retiré en vertu de l'article 19 du règlement (UE) 2024/1347]5 ou que l'étranger ait renoncé entre-temps à son statut de protection subsidiaire.]3
+§ 4. [2 Le ministre ou son délégué peut, au cours du séjour limité de l'étranger, à tout moment demander au Commissaire général aux réfugiés et aux apatrides [5 de retirer le statut de protection subsidiaire octroyé à l'étranger conformément à l'article 14, paragraphe 1, a), du règlement (UE) 2024/1347]5. Le ministre ou son délégué peut, pendant les dix premières années de séjour de l'étranger, à compter de la date d'introduction de la demande d'asile, à tout moment, demander au Commissaire général aux réfugiés et aux apatrides de retirer le statut de protection subsidiaire octroyé à l'étranger conformément à [5 l'article 17, paragraphe 3, ou 19, paragraphe 1, c), du règlement (UE) 2024/1347]5.]2
+[2 [4 Le ministre ou son délégué peut à tout moment demander au Commissaire général aux réfugiés et aux apatrides de retirer le statut de protection subsidiaire accordé à l'étranger, conformément à [5 l'article 19, paragraphe 1, b), du règlement (UE) 2024/1347]5.]4
+Le ministre ou son délégué transmet sans délai au Commissaire général aux réfugiés et aux apatrides tout élément en sa possession susceptible de justifier une décision de retrait sur la base de [5 l'article 19, paragraphe 1, b) ou c), du règlement (UE) 2024/1347]5. Sauf indication expresse en ce sens, la transmission de tels éléments ne constitue pas une demande de retrait du statut au sens de l'alinéa 2. Le ministre ou son délégué transmet également sans délai au Commissaire général aux réfugiés et aux apatrides tout élément en sa possession susceptible de justifier une décision d'exclusion sur base de [5 l'article 17, paragraphe 1, d), du règlement (UE) 2024/1347]5.]2
+[2 En cas d'application de l'alinéa 1er ou de l'alinéa 2 et dans un délai de soixante jours ouvrables, le Commissaire général aux réfugiés et aux apatrides rend une décision de retrait [5 ...]5 du statut de protection subsidiaire ou informe l'intéressé et le ministre ou son délégué qu'il n'est pas procédé au retrait [5 ...]5 de ce statut.]2
+[3 L'octroi du droit de séjour à durée illimitée prévu au paragraphe 3 est, le cas échéant, suspendu, dans l'attente d'une décision définitive. Lorsque la durée de validité du titre de séjour visé au paragraphe 2 expire pendant [5 le réexamen du droit à bénéficier d'une protection internationale]5, ce titre de séjour est renouvelé dans l'attente d'une décision définitive.]3
+§ 5. [2 Lorsque le Commissaire général aux réfugiés et aux apatrides a [5 ...]5 retiré le statut de protection subsidiaire ou lorsque l'intéressé a renoncé à son statut, [3 le ministre ou son délégué peut mettre fin au séjour de l'étranger et l'éloigner conformément aux dispositions de la présente loi, sans préjudice du principe de non-refoulement.]3]2
+§ 6. [5 Le statut de protection subsidiaire devient juridiquement caduc si le bénéficiaire de la protection internationale:
+1° devient Belge; ou
+2° renonce de manière non équivoque à sa reconnaissance en tant que tel]5.
+----------
+(1)<L 2013-05-08/18, art. 7, 072; En vigueur : 01-09-2013>
+(2)<L 2015-08-10/11, art. 4, 082; En vigueur : 03-09-2015>
+(3)<L 2016-06-01/07, art. 8, 091; En vigueur : 08-07-2016>
+(4)<L 2017-11-21/17, art. 13, 100; En vigueur : 22-03-2018>
+(5)<L 2026-06-16/01, art. 30, 135; En vigueur : 12-06-2026>
+
+Art. 49/3.[1 Une demande de reconnaissance du statut de réfugié ou d'octroi du statut de protection subsidiaire se fait sous la forme d'une demande de protection internationale.
+[2 Lors de l'examen du bien-fondé de la demande, il est examiné si le demandeur remplit les conditions requises pour prétendre au statut de réfugié et, dans le cas contraire, si le demandeur peut bénéficier de la protection subsidiaire conformément au règlement (UE) 2024/1347]2.]1
+----------
+(1)<L 2017-11-21/17, art. 14, 100; En vigueur : 22-03-2018>
+(2)<L 2026-06-16/01, art. 31, 135; En vigueur : 12-06-2026>
+
+Art. 49/3/1.[1 Aucune mesure d'éloignement du territoire ou de refoulement ne peut être exécutée de manière forcée à l'égard du demandeur dès la présentation de sa demande de protection internationale, et pendant l'examen de celle-ci par le Commissaire général aux réfugiés et aux apatrides [2 ...]2.]1
+[2 Par dérogation à l'alinéa 1er, lorsque le Commissaire général aux réfugiés et aux apatrides a estimé, dans le cadre de la demande précédente, qu'une mesure d'éloignement ou de refoulement n'entraînera pas une violation du principe de non-refoulement, une telle mesure ne peut être exécutée de force qu'à partir du moment où la demande est présentée et pendant son examen visé à l'article 57/6/2, § 1er, à l'encontre du demandeur:
+1° qui présente une deuxième demande ultérieure ou plus, et
+2° qui, préalablement à la présentation de sa demande précédente et depuis lors, se trouve de manière ininterrompue dans un endroit déterminé tel que visé à l'article 74/8 ou 74/9.]2
+----------
+(1)<Inséré par L 2017-11-21/17, art. 15, 100; En vigueur : 22-03-2018>
+(2)<L 2026-06-16/01, art. 32, 135; En vigueur : 12-06-2026>
+
+Art. 49/4.
+<Abrogé par L 2026-06-16/01, art. 33, 135; En vigueur : 12-06-2026>
+
+Art. 50.[1 § 1er. L'étranger qui entre ou est entré dans le Royaume sans remplir les conditions fixées dans les articles 2 et 3 et qui souhaite obtenir le statut de réfugié ou le statut de protection subsidiaire, doit présenter une demande de protection internationale au moment où il entre ou au moins dans les huit jours ouvrables après être entré dans le Royaume.
+L'étranger visé à l'alinéa 1er, qui tente d'entrer dans le Royaume sans remplir les conditions fixées dans les articles 2 et 3, doit présenter cette demande de protection internationale sans délai auprès des autorités chargées des contrôles aux frontières au moment où celles-ci lui demandent des précisions sur son motif de séjour en Belgique.
+L'étranger qui est entré légalement dans le Royaume dans le cadre d'un séjour n'excédant pas trois mois et qui souhaite obtenir le statut de réfugié ou le statut de protection subsidiaire, doit présenter une demande de protection internationale avant la fin du séjour n'excédant pas trois mois.
+L'étranger qui est admis ou autorisé à séjourner plus de trois mois dans le Royaume ou à s'y établir et qui souhaite obtenir le statut de réfugié ou le statut de protection subsidiaire doit, dans les huit jours ouvrables qui suivent la fin ou le retrait de son séjour, présenter une demande de protection internationale.
+L'étranger bénéficiant d'une protection temporaire conformément à l'article 57/29, peut présenter une demande de protection internationale à tout moment. Dès qu'il est mis fin au régime de protection temporaire conformément à l'article 57/36, § 1er, s'il souhaite obtenir le statut de réfugié ou le statut de protection subsidiaire, l'étranger doit présenter une demande de protection internationale dans les huit jours ouvrables après qu'il a été mis fin au régime de protection temporaire.
+Le Roi désigne les autorités auprès desquelles l'étranger peut présenter une demande de protection internationale.
+La présentation d'une demande de protection internationale doit être faite en personne.
+§ 2. [3 ...]3
+§ 3. [3 ...]3
+§ 4. [3 ...]3
+§ 5. [3 ...]3
+----------
+(1)<L 2017-11-21/17, art. 16, 100; En vigueur : 22-03-2018>
+(2)<L 2025-07-14/09, art. 2, 128; En vigueur : 02-08-2025>
+(3)<L 2026-06-16/01, art. 34, 135; En vigueur : 12-06-2026>
+
+Art. 50bis.
+<Abrogé par L 2017-11-21/17, art. 17, 100; En vigueur : 22-03-2018>
+
+Art. 50ter.
+<Abrogé par L 2017-11-21/17, art. 18, 100; En vigueur : 22-03-2018>
+
+Art. 50/1. [1 § 1er. Le ministre ou son délégué enregistre la demande conformément à l'article 27 du règlement (UE) 2024/1348 et remet le document visé à l'article 29, paragraphe 4, du règlement (UE) 2024/1348.
+Le document visé à l'alinéa 1er n'est pas remis au demandeur tant que celui-ci est maintenu conformément à l'article 74/8 ou 74/9.
+Le Roi détermine le contenu de ce document et désigne les autres autorités compétentes pour enregistrer la demande.
+§ 2. Lors de l'enregistrement, le ministre ou son délégué transmet les informations visées à l'article 8, paragraphe 2, points a) à e), du règlement (UE) 2024/1348.
+Le ministre ou son délégué fournit une assistance juridique entre l'enregistrement et l'introduction de la demande, conformément à l'article 16 du règlement (UE) 2024/1348.
+Le Roi fixe les modalités relatives à la communication des informations et l'assistance et les conditions auxquelles les conseillers doivent satisfaire.
+§ 3. La demande de protection internationale est introduite auprès du ministre ou de son délégué conformément à l'article 28 du règlement (UE) 2024/1348. La demande doit être introduite en personne.
+Le Roi désigne les autres autorités auprès desquelles l'étranger peut introduire une demande.]1
+----------
+(1)<Inséré par L 2026-06-16/01, art. 35, 135; En vigueur : 12-06-2026>
+
+Art. 50/2. [1 La demande présentée ou introduite par le parent ou la personne qui exerce l'autorité parentale est présumée avoir été présentée ou introduite au nom du mineur présent, même si celui-ci est né ou est présent pendant la procédure administrative.]1
+----------
+(1)<Inséré par L 2026-06-16/01, art. 36, 135; En vigueur : 12-06-2026>
+
+Art. 51.[1 A partir de la présentation de sa demande de protection internationale, le demandeur de protection internationale est tenu de coopérer avec les autorités compétentes afin d'établir son identité et d'autres éléments à l'appui de sa demande. Ces éléments comprennent notamment les déclarations du demandeur et tous les documents ou pièces dont il dispose concernant son identité, sa ou ses nationalités, son âge, son passé, y compris ceux des membres de la famille à prendre en compte, le ou les pays ainsi que le ou les lieux où il a résidé auparavant, ses demandes antérieures de protection internationale, son itinéraire, ses titres de voyage, ainsi que les raisons justifiant la demande de protection internationale.
+Lorsqu'il présente sa demande, le demandeur est informé, dans une langue qu'il comprend ou dont on peut raisonnablement supposer qu'il la comprenne, de son obligation de coopérer et des conséquences qui peuvent survenir s'il ne coopère pas avec les autorités compétentes.]1
+----------
+(1)<L 2017-11-21/17, art. 19, 100; En vigueur : 22-03-2018>
+
+Art. 51/2.(anciennement art. 51bis inséré par L 1991-07-18/52, art. 2; En vigueur : 01-10-1991) [2 L'étranger qui introduit une demande de protection internationale [3 ...]3, doit élire domicile en Belgique.]2
+A défaut d'élection de domicile, [2 le demandeur]2 est réputé avoir élu domicile au Commissariat général aux réfugiés et aux apatrides. <L 2006-09-15/72, art. 36, 2°, 041; En vigueur : 01-06-2007>
+L'étranger qui [2 introduit une demande de protection internationale à la frontière sans remplir les conditions fixées par les articles 2 et 3,]2 est réputé avoir élu domicile au lieu où il est maintenu. <L 2006-09-15/72, art. 36, 3°, 041; En vigueur : 01-06-2007>
+Toute modification du domicile élu doit être communiquée sous pli recommandé à la poste au Commissaire général aux réfugiés et aux apatrides ainsi qu'au (Ministre). <L 1996-07-15/33, art. 4, 012; En vigueur : 16-12-1996>
+Sans préjudice d'une notification à personne, toute notification est valablement faite au domicile élu, sous pli recommandé à la poste (ou par porteur avec accusé de réception. Lorsque l'étranger a élu domicile chez son conseil, la notification peut également être valablement envoyée par télécopieur) [1 ou par tout autre moyen de notification autorisé par arrêté royal]1 <L 1993-05-06/30, art. 10, 1°, 005; En vigueur : 31-05-1993>
+Les convocations et demandes de renseignements peuvent également être valablement envoyées au domicile élu, sous pli recommandé à la poste (ou par porteur avec accusé de réception. Lorsque l'étranger a élu domicile chez son conseil, les convocations et demandes d'informations peuvent également être valablement envoyées par télécopieur [1 ou par tout autre moyen de notification autorisé par arrêté royal]1 sans préjudice d'une notification à la personne même.) <L 1993-05-06/30, art. 10, 2°, 005; En vigueur : 31-05-1993>
+----------
+(1)<L 2013-05-08/18, art. 8, 072; En vigueur : 01-09-2013>
+(2)<L 2017-11-21/17, art. 20, 100; En vigueur : 22-03-2018>
+(3)<L 2026-06-16/01, art. 37, 135; En vigueur : 12-06-2026>
+
+Art. 51/3.
+<Abrogé par L 2026-06-16/01, art. 38, 135; En vigueur : 12-06-2026>
+
+Art 51/3bis.<inséré par L 2007-04-25/49, art. 38, En vigueur : 01-06-2008>L'étranger qui [1 présente ou introduit une demande de protection internationale]1 peut être soumis à une fouille de sécurité lors de son arrivée auprès de l'autorité visée à l'article 50, afin de s'assurer qu'il ne porte pas une arme ou un objet dangereux pour sa propre intégrité physique ou celle de tiers, ou pour l'ordre public.
+La fouille de sécurité s'effectue par la palpation du corps et des vêtements de la personne fouillée ainsi que par le contrôle de ses bagages. Elle ne peut durer plus longtemps que le temps nécessaire à cette fin. Elle est effectuée par un délégué du ministre du même sexe que la personne fouillée.
+Le Roi détermine les autres règles applicables à cette fouille de sécurité.
+----------
+(1)<L 2017-11-21/17, art. 22, 100; En vigueur : 22-03-2018>
+
+Art. 51/4.[1 § 1er. L'examen de la demande de protection internationale au sens du règlement (UE) 2024/1347 et du règlement (UE) 2024/1348 a lieu en français ou en néerlandais.
+La langue de l'examen est également celle de la procédure et des décisions relatives à la demande de protection internationale.
+§ 2. Si, au moment d'introduire sa demande, le requérant déclare ne pas avoir besoin de l'assistance d'un interprète, il peut choisir, au moment d'introduire sa demande, le français ou le néerlandais comme langue d'examen. Ce choix est indiqué par écrit et détermine irrévocablement la langue de l'examen.
+Si le requérant n'a pas choisi l'une de ces langues ou a déclaré requérir l'assistance d'un interprète, le ministre ou son délégué détermine la langue de l'examen, en fonction des besoins des services et instances, en ce compris les instances de recours. Cette décision n'est susceptible d'aucun recours distinct.
+§ 3. La langue choisie ou déterminée conformément au paragraphe 2 est également, sous peine de nullité, la langue de la procédure, de l'examen et des décisions:
+1° concernant les décisions de retour qui, en vertu de l'article 52/3 de la présente loi ou en vertu de l'article 37 du règlement (UE) 2024/1348, font suite à la décision du Commissaire général aux réfugiés et aux apatrides;
+2° concernant d'éventuelles demandes ultérieures de protection internationale.
+Par dérogation à l'alinéa 1er, 2°, le ministre ou son délégué conserve la possibilité de désigner l'autre langue, en fonction des besoins des services et instances, en ce compris les instances de recours.
+§ 4. Dans les procédures devant le Conseil d'Etat concernant les examens visés aux paragraphes 1er et 3, la langue employée est, sous peine de nullité, celle choisie ou déterminée conformément au paragraphe 2.]1
+----------
+(1)<L 2026-06-17/03, art. 5.7, 134; En vigueur : 12-06-2026>
+
+Art. 51/5.[1 § 1er. Lorsqu'une première demande de protection internationale ou une demande ultérieure de protection internationale est enregistrée, le ministre ou son délégué procède sans retard à la détermination de l'Etat membre responsable de l'examen de la demande.
+Cette détermination est effectuée conformément à la partie III, chapitre II, du règlement (UE) 2024/1351.
+La Belgique est responsable de l'examen de la demande de protection internationale présentée et enregistrée par un bénéficiaire de la protection temporaire autorisé au séjour dans le Royaume sur la base de l'article 57/30 et les membres de sa famille autorisés au séjour dans le Royaume sur la base de l'article 57/34.
+§ 2. Si le demandeur a pris la fuite sur la base de l'article 51/5/3, le ministre ou son délégué poursuit la procédure de détermination de l'Etat membre responsable de l'examen de la demande de protection internationale.
+§ 3. Même si, selon les critères énoncés dans le règlement (UE) 2024/1351, l'examen de la demande de protection internationale n'incombe pas à la Belgique, le ministre ou son délégué peut, à tout moment, décider que la Belgique est responsable de l'examen de la demande, et ce dès l'enregistrement de celle-ci. Dans ce cas, la Belgique devient l'Etat membre responsable et la demande de protection internationale est examinée conformément aux dispositions de la présente loi.
+§ 4. Si le ministre ou son délégué estime que la Belgique est l'Etat membre responsable de l'examen de la demande de protection internationale, il transmet, après avoir rempli la déclaration visée à l'article 51/10, immédiatement le dossier au Commissaire général aux réfugiés et aux apatrides.
+§ 5. Si, à l'issue de la détermination visée au paragraphe 1er, le ministre ou son délégué estime que la Belgique n'est pas responsable de l'examen de la demande de protection internationale, il adresse à l'Etat membre responsable, dans les conditions fixées par les articles 39 et 41 du règlement (UE) 2024/1351, une demande de prise en charge ou une notification de reprise en charge de l'étranger.
+§ 6. Si l'étranger ne donne pas suite à une convocation ou à une demande de renseignements dans un délai raisonnable, le ministre ou son délégué en informe le Commissaire général aux réfugiés et aux apatrides afin qu'une décision déclarant la demande de protection internationale comme ayant été implicitement retirée puisse être prise en application de l'article 57/6/5/1, § 2, ou de l'article 41, paragraphe 2, du règlement (UE) 2024/1348. Le Roi détermine le délai raisonnable endéans lequel il est attendu que le demandeur donne suite à une convocation ou à une demande de renseignements.]1
+----------
+(1)<L 2026-06-16/01, art. 39, 135; En vigueur : 12-06-2026>
+
+Art. 51/5/1.[1 Lorsque l'étranger, qui a enregistré une demande de protection internationale dans un autre Etat membre, est en séjour illégal sur le territoire du Royaume et que le ministre ou son délégué estime qu'un autre Etat membre est responsable de l'examen de sa demande, le ministre ou son délégué adresse à l'Etat membre responsable, dans les conditions fixées par l'article 41 du règlement (UE) 2024/1351, une notification de reprise en charge de l'étranger.]1
+----------
+(1)<L 2026-06-16/01, art. 40, 135; En vigueur : 12-06-2026>
+
+Art. 51/5/2. [1 § 1er. Lorsque l'étranger doit être transféré à l'Etat membre responsable de l'examen de sa demande de protection internationale, le ministre ou son délégué prend et notifie une décision de transfert conformément à l'article 42 du règlement (UE) 2024/1351.
+§ 2. La décision de transfert visée au paragraphe 1er, est exécutée dès qu'il est matériellement possible et, au plus tard, dans un délai de six mois à compter de l'acceptation par un autre Etat membre de la demande de prise en charge ou de la confirmation de la notification de reprise en charge.
+§ 3. Le délai de six mois visé au paragraphe 2, peut, conformément à l'article 46 du règlement (UE) 2024/1351, être prolongé dans l'un des cas suivants:
+1° le transfert ne peut être exécuté en raison de l'emprisonnement de l'étranger;
+2° l'étranger ou un membre de sa famille qui doit être transféré avec lui a pris la fuite;
+3° l'étranger ou un membre de sa famille qui doit être transféré avec lui résiste physiquement au transfert;
+4° l'étranger ou un membre de sa famille qui doit être transféré avec lui se rend intentionnellement inapte au transfert;
+5° l'étranger ou un membre de sa famille qui doit être transféré avec lui ne satisfait pas aux exigences médicales du transfert.]1
+----------
+(1)<Inséré par L 2026-06-16/01, art. 41, 135; En vigueur : 12-06-2026>
+
+Art. 51/5/3. [1 § 1er. Un étranger a pris la fuite lorsqu'il ne reste pas à la disposition des autorités chargées de l'exécution de la décision de transfert, à condition qu'il ait été informé des conséquences de sa fuite dans une langue qu'il comprend ou dont on peut raisonnablement supposer qu'il la comprend.
+§ 2. Un étranger est présumé avoir pris la fuite conformément au paragraphe 1er, notamment dans les cas suivants:
+1° lorsque l'étranger ne s'est pas rendu dans la structure d'accueil qui lui a été attribuée conformément à la loi du 12 janvier 2007 sur l'accueil des demandeurs d'asile et de certaines autres catégories d'étrangers, ou l'a abandonné, et qu'il n'a pas fourni par écrit à l'Office des Etrangers l'adresse de sa résidence effective en Belgique dans les trois jours ouvrables. L'Agence fédérale pour l'accueil des demandeurs d'asile informe sans délai l'Office des Etrangers du fait que l'étranger ne s'est pas rendu dans la structure d'accueil qui lui a été attribuée ou l'a abandonnée;
+2° lorsque, sur la base d'un ou de plusieurs contrôles de résidence, il peut être établi de manière circonstanciée que l'étranger ne réside pas à l'adresse de résidence effective qu'il avait communiquée à l'Office des Etrangers;
+3° lorsque l'étranger ne s'est pas présenté aux entretiens planifiés pour le trajet d'accompagnement intensif dans le cadre d'une procédure de transfert tel que visé à l'article 74/25 et qu'il n'a pas fourni par écrit de motif valable à ce sujet dans les trois jours ouvrables;
+4° lorsque l'étranger n'a pas respecté la mesure de maintien moins coercitive prise à son encontre conformément à l'article 74/28;
+5° lorsque l'étranger a quitté, sans y être autorisé, le lieu déterminé, tel que visé aux articles 74/8 ou 74/9, où il était maintenu, et qu'il n'a pas fourni par écrit à l'Office des Etrangers l'adresse de résidence effective en Belgique dans les trois jours ouvrables.]1
+----------
+(1)<Inséré par L 2026-06-16/01, art. 42, 135; En vigueur : 12-06-2026>
+
+Art. 51/6.[2 Lorsque le ministre ou son délégué est tenu de reprendre en charge un étranger en application de l'article 36 du règlement (UE) 2024/1351]2, l'étranger doit, lors de son entrée dans le Royaume ou du moins dans les huit jours ouvrables qui suivent celle-ci, se présenter auprès du Ministre ou de son délégué. Ce dernier lui en donne acte par écrit et, le cas échéant, en informe immédiatement le Commissaire général aux réfugiés et aux apatrides ou (le Conseil du Contentieux des étrangers). <L 2006-09-15/72, art. 40,, 041; En vigueur : 01-06-2007>
+Si la Belgique n'est pas responsable de l'examen de la [1 demande de protection internationale]1, il est procédé conformément [2 aux articles 51/5, § 5, et 51/5/2]2.
+Si l'examen de la demande incombe à la Belgique, il doit être entamé ou poursuivi, conformément aux dispositions de la présente loi.
+----------
+(1)<L 2017-11-21/17, art. 25, 100; En vigueur : 22-03-2018>
+(2)<L 2026-06-16/01, art. 43, 135; En vigueur : 12-06-2026>
+
+Art. 51/7.[2 Lorsque la Belgique est responsable de l'examen de la demande de protection internationale en application du règlement (UE) 2024/1351, le ministre ou son délégué est tenu de prendre en charge l'étranger conformément à l'article 36 de ce règlement]2
+Lors de son entrée dans le Royaume ou du moins dans les huit jours ouvrables qui suivent celle-ci, l'étranger doit se présenter auprès du Ministre ou de son délégué. Ce dernier lui en donne acte par écrit et en informe immédiatement le Commissaire général aux réfugiés et aux apatrides.
+L'étranger est tenu de se conformer aux dispositions des articles 51/2 et 51/4, § 2.
+L'examen de [1 la demande de protection internationale]1 doit être entamé conformément aux dispositions de la présente loi. <L 2006-09-15/72, art. 41, 2°, 041; En vigueur : 01-06-2007>
+----------
+(1)<L 2017-11-21/17, art. 26, 100; En vigueur : 22-03-2018>
+(2)<L 2026-06-16/01, art. 44, 135; En vigueur : 12-06-2026>
+
+Art. 51/8.
+<Abrogé par L 2026-06-16/01, art. 45, 135; En vigueur : 12-06-2026>
+
+Art. 51/9.<inséré par L 2003-02-18/41, art. 5; En vigueur : 01-05-2003> L'examen de [1 la demande de protection internationale]1 d'un étranger bénéficiaire de la protection temporaire visée au chapitre IIbis, est suspendu jusqu'à ce que le régime de protection temporaire prenne fin dans un des cas prévus à l'article 57/36, § 1.
+----------
+(1)<L 2017-11-21/17, art. 28, 100; En vigueur : 22-03-2018>
+
+Art. 51/10.<Inséré par L 2006-09-15/72, art. 43; En vigueur : 01-06-2007> Le ministre ou son délégué accuse réception de la [2 demande de protection internationale introduite [3 ...]3]2 et consigne les déclarations de l'étranger relatives à son identité, son origine et son itinéraire, et [1 ses réponses à un questionnaire concernant les motifs]1 qui l'ont conduit à introduire [2 une demande de protection internationale]2 ainsi que les possibilités de retour dans le pays qu'il a fui.
+Cette déclaration [1 et le questionnaire doivent]1 être signée par l'étranger. S'il refuse de signer, il en est fait mention sur la déclaration [1 ou sur le questionnaire]1 et, le cas échéant, il est également fait mention des raisons pour lesquelles il refuse de signer. [1 Cette déclaration et ce questionnaire sont]1 immédiatement transmise au Commissaire général aux réfugiés et aux apatrides [3 , ou relatives aux nouveaux éléments tels que visés à l'article 57/6, § 3, 5°, ou l'article 55 du règlement (UE) 2024/1348]3.
+Le ministre ou son délégué constate en même temps si l'étranger séjourne [2 légalement]2 dans le Royaume ou non.
+----------
+(1)<L 2013-05-08/18, art. 10, 072; En vigueur : 01-09-2013>
+(2)<L 2017-11-21/17, art. 29, 100; En vigueur : 22-03-2018>
+(3)<L 2026-06-16/01, art. 46, 135; En vigueur : 12-06-2026>
+
+Art. 52.
+<Abrogé par L 2017-11-21/17, art. 30, 100; En vigueur : 22-03-2018>
+
+Art. 52/2.
+<Abrogé par L 2017-11-21/17, art. 31, 100; En vigueur : 22-03-2018>
+
+Art. 52/3.[1 § 1er. Si le Commissaire général aux réfugiés et aux apatrides rejette la demande de protection internationale au motif qu'elle est irrecevable, infondée ou manifestement infondée au regard à la fois du statut de réfugié et du statut conféré par la protection subsidiaire, ou qu'elle a été implicitement ou explicitement retirée et que l'étranger séjourne illégalement dans le Royaume, le ministre ou son délégué délivre sans délai un ordre de quitter le territoire sur la base de l'article 7. L'obligation de retour s'applique sous réserve de l'article 39/70.
+Si l'étranger n'a plus le droit de rester sur le territoire à la suite du recours introduit devant le Conseil du contentieux des étrangers contre la décision prise par le Commissaire général aux réfugiés et aux apatrides, et que l'étranger séjourne illégalement dans le Royaume, le ministre ou son délégué peut accorder un nouveau délai pour quitter le territoire.
+§ 2. Dans le cas visé à l'article 74/5, § 1er, 2°, le ministre ou son délégué décide que l'étranger n'est pas autorisé à entrer dans le Royaume et est refoulé après que le Commissaire général aux réfugiés et aux apatrides a rejeté la demande de protection internationale au motif qu'elle est irrecevable, infondée ou manifestement infondée au regard à la fois du statut de réfugié et du statut conféré par la protection subsidiaire, ou qu'elle a été implicitement ou explicitement retirée. L'étranger est refoulé sous réserve de l'article 39/70.
+§ 3. Si l'étranger visé aux paragraphes 1er et 2 fait déjà l'objet d'une mesure d'éloignement ou de refoulement à laquelle il n'a pas encore été donné suite au moment de l'introduction de la demande de protection internationale, le ministre ou son délégué renonce à prendre une nouvelle mesure d'éloignement ou de refoulement mais, conformément aux articles 49/3/1 et 39/70, le caractère exécutoire de la mesure déjà prise est suspendu pendant la durée du traitement de la demande de protection internationale.
+Lorsque le caractère exécutoire de la mesure d'éloignement déjà ordonnée n'est plus suspendu conformément aux articles 49/3/1 et 39/70, le ministre ou son délégué peut, s'il l'estime nécessaire, prolonger le délai accordé à l'étranger pour quitter volontairement le territoire.
+§ 4. Les décisions visées dans cet article sont notifiées à l'intéressé conformément à l'article 51/2. Si l'intéressé est maintenu, cet ordre est porté à sa connaissance dans le lieu où il est maintenu.]1
+----------
+(1)<L 2026-06-16/01, art. 47, 135; En vigueur : 12-06-2026>
+
+Art. 52/4. (ancien art. 52bis) [1 Si l'étranger qui a introduit [2 une demande de protection internationale]2, constitue, ayant été condamné définitivement pour une infraction particulièrement grave, un danger pour la société ou lorsqu'il existe des motifs raisonnables de le considérer comme un danger pour la sécurité nationale, le ministre ou son délégué transmet sans délai tous les éléments en ce sens au Commissaire général.
+[3 ...]3 ]1
+[2 ...]2
+----------
+(1)<L 2015-08-10/11, art. 5, 082; En vigueur : 03-09-2015>
+(2)<L 2017-11-21/17, art. 33, 100; En vigueur : 22-03-2018>
+(3)<>L 2026-06-16/01, art. 48, 135; En vigueur : 12-06-2026
+
+Art. 53.[1 Un demandeur de protection internationale qui tente d'entrer dans le Royaume sans remplir les conditions fixées aux articles 2 et 3, ou en séjour illégal dans le Royaume, ne peut pas faire l'objet de poursuites pénales pour ce motif tant qu'une décision finale n'a pas été prise sur sa demande de protection internationale.]1
+----------
+(1)<L 2017-11-21/17, art. 34, 100; En vigueur : 22-03-2018>
+
+Art. 53bis.<Inséré par L 14-07-1987, art. 8> (Par décision du (Ministre) ou de son délégué, l'étranger [1 visé à l'article 52/3]1 peut être reconduit à la frontière du pays qu'il a fui et où, selon sa déclaration, sa vie ou sa liberté serait menacée.) <L 1991-07-18/52, art. 4,1°, 002; En vigueur : 01-10-1991> <L 1993-05-06/30, art. 14, 1°, 005; En vigueur : 31-05-1993> <L 1996-07-15/33, art. 4, 012; En vigueur : 16-12-1996> <L 2006-09-15/72, art. 49, 041; En vigueur : 01-06-2007>
+(Alinéa 1 et 2 abrogé) <L 1993-05-06/30, art. 14, 2°, 005; En vigueur : 31-05-1993>
+----------
+(1)<L 2017-11-21/17, art. 35, 100; En vigueur : 22-03-2018>
+
+Art. 54.<L 1993-05-06/30, art. 15, 005; En vigueur : 31-05-1993> § 1er. [1 Entre la notification de la décision exécutoire relative à [2 la demande de protection internationale]2 et jusqu'à l'expiration du délai pour quitter le territoire, le ministre ou son délégué peut désigner un centre de retour [2 à l'étranger]2 concerné ainsi qu'aux membres de sa famille.
+[3 Le centre de retour peut être assigné à l'étranger qui fait l'objet d'un examen relatif à l'Etat membre responsable au sens du règlement (UE) 2024/1351]3.
+Le Roi fixe le régime et les règles de fonctionnement applicables aux centres de retour et le montant de l'allocation journalière.
+Dans le centre de retour, l'étranger reçoit l'aide matérielle comprenant le logement, la nourriture et l'habillement fournis en nature, une allocation journalière ainsi que l'accès à un programme de retour volontaire. L'étranger reçoit l'aide médicale et psycho-sociale nécessaires.
+L'étranger a un accès effectif à l'aide juridique de première et de deuxième ligne, telle que visée aux articles 508/1 à 508/23 du Code judiciaire.]1
+§ 2. [2 ...]2
+§ 3. (abrogé) <L 2007-01-12/52, art. 73, 044; En vigueur : 01-06-2007>
+----------
+(1)<Rétabli par L 2012-04-22/26, art. 2, 065; En vigueur : 01-07-2012>
+(2)<L 2017-11-21/17, art. 36, 100; En vigueur : 22-03-2018>
+(3)<L 2026-06-16/01, art. 49, 135; En vigueur : 12-06-2026>
+
+Art. 55.
+<Abrogé par L 2026-06-17/03, art. 5.1, 134; En vigueur : 12-06-2026>
+
+Art. 55/2.
+<Abrogé par L 2026-06-16/01, art. 50, 135; En vigueur : 12-06-2026>
+
+Art. 55/3.
+<Abrogé par L 2026-06-16/01, art. 51, 135; En vigueur : 12-06-2026>
+
+Art. 55/3/1.
+<Abrogé par L 2026-06-16/01, art. 52, 135; En vigueur : 12-06-2026>
+
+Art. 55/4.
+<Abrogé par L 2026-06-16/01, art. 53, 135; En vigueur : 12-06-2026>
+
+Art. 55/5.
+<Abrogé par L 2026-06-16/01, art. 54, 135; En vigueur : 12-06-2026>
+
+Art. 55/5/1.
+<Abrogé par L 2026-06-16/01, art. 55, 135; En vigueur : 12-06-2026>
+
+Art. 56.
+<Abrogé par L 2017-02-24/21, art. 40, 094; En vigueur : 29-04-2017>
+
+Art. 57. (Abrogé) <L 2006-09-15/72, art. 57, 041; En vigueur : 01-06-2007>
+
+Art. 57/1. [1 § 1er. Un étranger qui introduit une demande de protection internationale, est présumé également introduire cette demande au nom du (des) mineur(s) qui l'accompagne(nt) et sur le(s)quel(s) il exerce l'autorité parentale ou la tutelle (sur la base de la loi applicable conformément à l'article 35 de la loi du 16 juillet 2004 portant le Code de droit international privé). Cette présomption subsiste jusqu'au moment où une décision finale est prise concernant la demande de protection internationale, même si le mineur étranger mentionné ci-dessus a entre-temps atteint la majorité.
+Le mineur étranger visé à l'alinéa 1er peut demander à être entendu par le Commissaire général aux réfugiés et aux apatrides, jusqu'à cinq jours avant que l'entretien personnel du (des) parent(s) ou du tuteur ait lieu.
+Le mineur étranger visé à l'alinéa 1er peut être entendu par le Commissaire général aux réfugiés et aux apatrides s'il existe pour cela des raisons particulières et si cela est dans l'intérêt de ce mineur étranger, sans que ce mineur étranger lui-même l'ait demandé. Le mineur étranger a le droit de refuser d'être entendu. Le fait qu'aucun entretien personnel n'a eu lieu n'empêche pas le Commissaire général aux réfugiés et aux apatrides de prendre une décision quant à la demande de protection internationale et n'a pas d'influence négative sur la décision du Commissaire général aux réfugiés et aux apatrides.
+§ 2. Par dérogation au paragraphe 1er, le mineur étranger qui accompagne un demandeur qui exerce sur lui l'autorité parentale ou la tutelle peut explicitement faire savoir qu'il introduit une demande de protection internationale en son nom, que ce soit personnellement, ou par le biais de son parent ou de son tuteur.
+Le Commissaire général aux réfugiés et aux apatrides peut aussi prendre une décision sur la base d'autres éléments que ceux invoqués par le mineur étranger, comme les éléments invoqués par le tuteur ou le(s) parent(s) dans le cadre de sa/leur demande de protection internationale.
+§ 3. Le Commissaire général aux réfugiés et aux apatrides accorde aux déclarations du mineur étranger une importance adaptée à son âge, sa maturité et sa vulnérabilité. Le mineur étranger est entendu par le Commissaire général aux réfugiés et aux apatrides conformément aux dispositions fixées par arrêté royal.
+Le mineur étranger est assisté au cours de l'entretien personnel par un avocat et, le cas échéant, d'une seule personne de confiance. L'entretien personnel suite à une première convocation peut n'avoir lieu que si l'avocat et, le cas échéant, la personne de confiance sont présents. L'absence de l'avocat et/ou de la personne de confiance suite à des convocations ultérieures n'empêche pas le Commissaire général aux réfugiés et aux apatrides d'entendre le mineur étranger. Le Roi définit les conditions auxquelles une personne de confiance doit satisfaire.
+§ 4. L'intérêt supérieur de l'enfant est une considération déterminante qui doit guider le Commissaire général aux réfugiés et aux apatrides au cours de l'examen de la demande de protection internationale.
+§ 5. Si le demandeur, en application du paragraphe 1er, alinéa 1er, introduit une demande de protection internationale au nom du mineur étranger (ou des mineurs étrangers), le Commissaire général aux réfugiés et aux apatrides prend une décision applicable à toutes ces personnes.
+Le mineur étranger dont la demande a été introduite en application du paragraphe 1er, alinéa 1er, n'a plus la possibilité de demander une décision distincte dans son chef.
+§ 6. Par dérogation au paragraphe 5, le Commissaire général aux réfugiés et aux apatrides ou le Conseil du contentieux des étrangers peuvent prendre respectivement une décision ou un arrêt distinct(e) dans le chef du mineur étranger visé au paragraphe 1er si les instances précitées constatent des éléments particuliers qui nécessitent une décision distincte.
+§ 7. Tant le demandeur de protection internationale que les mineurs étrangers dont la demande a été introduite en application du paragraphe 1er, alinéa 1er, ont le droit d'accéder aux informations qui concernent lesdits mineurs. L'accès aux informations est accordé conformément aux dispositions de la loi du 11 avril 1994 relative à la publicité de l'administration. Ce droit d'accès ne s'applique pas dans le cas des informations suivantes :
+1° les informations fournies par des tiers sans qu'ils y aient été contraints et qu'ils ont qualifiées de confidentielles, à moins qu'ils marquent leur accord sur l'accès à ces informations;
+2° les informations qui concernent le mineur étranger visé au paragraphe 1er en cas d'intérêts opposés à ceux du (des) parent(s) ou du tuteur. Dans ce cas, le droit d'accès n'est pas exercé par le(s) parent(s) ou le tuteur. Cependant, le droit d'accès du mineur peut être exercé par le mineur lui-même, à condition qu'il soit en mesure d'apprécier raisonnablement ses intérêts, compte tenu de son âge et de sa maturité, ou par la personne de confiance désignée de façon non équivoque par le mineur, ou par l'avocat du mineur étranger.]1
+----------
+(1)<Inséré par L 2017-11-21/17, art. 37, 100; En vigueur : 22-03-2018>
+
+SECTION II. - DU COMMISSARIAT GENERAL AUX REFUGIES ET AUX APATRIDES. <Inséré par L 14-07-1987, art. 9>
+
+Art. 57/2. <L 14-07-1987, art. 9> Il est créé, auprès du (Ministre), un " Commissariat général aux réfugiés et aux apatrides ". Celui-ci comprend un Commissaire général aux réfugiés et aux apatrides et ses deux adjoints. Le Commissaire général et ses adjoints prennent leurs décisions et émettent leurs avis en toute indépendance. <L 1996-07-15/33, art. 4, 012; En vigueur : 16-12-1996>
+
+Art. 57/3. <L 14-07-1987, art. 9> Le Commissaire général dirige le Commissariat général aux réfugiés et aux apatrides.
+Le Commissaire général est nommé par le Roi, par arrêté délibéré en conseil des Ministres, sur proposition du (Ministre). <L 1996-07-15/33, art. 4, 012; En vigueur : 16-12-1996>
+Le Commissaire général est nommé pour une période de cinq ans. Son mandat peut être renouvelé.
+Pour pouvoir être nommé Commissaire général, le candidat doit être Belge, être docteur ou licencié en droit et avoir atteint l'âge de trente ans.
+
+Art. 57/4. <L 14-07-1987, art. 9> Le Commissaire général aux réfugiés et aux apatrides est assiste par deux commissaires adjoints.
+Les commissaires adjoints sont nommés par le Roi, par arrêté délibéré en Conseil des Ministres, sur proposition du (Ministre).<L 1996-07-15/33, art. 4, 012; En vigueur : 16-12-1996>
+Les commissaires adjoints sont nommés pour une période de cinq ans. Leur mandat peut être renouvelé.
+Les commissaires adjoints doivent être Belges, être docteurs ou licenciés en droit, avoir atteint l'âge de trente ans et justifier par leur diplôme ou leur rôle linguistique qu'ils ont la connaissance, l'un de la langue française, l'autre de la langue néerlandaise.
+
+Art. 57/5. <L 14-07-1987, art. 9> Les fonctions de Commissaire général aux réfugiés et aux apatrides et de commissaire adjoint sont incompatibles avec l'exercice de tout mandat politique.
+
+Art. 57/5bis. <Inséré par L 1998-03-09/61, art. 2; En vigueur : 13-07-1998> S'ils manquent à la dignité de leurs fonctions ou aux devoirs de leur état, le Commissaire général aux réfugiés et aux apatrides et ses adjoints peuvent, suivant le cas, être suspendus ou révoqués.
+La suspension est ordonnée par le ministre par arrêté ministériel pour un délai de sept jours au moins et de six mois au maximum et emporte privation de traitement pendant sa durée.
+La révocation est ordonnée par le Roi par arrêté royal délibéré en Conseil des ministres, sur la demande du ministre.
+Le Roi détermine la procédure en matière de régime disciplinaire.
+
+Art. 57/5ter.[1 § 1er. Le Commissaire général aux réfugiés et aux apatrides convoque au moins une fois le demandeur à un entretien personnel relatif au contenu de sa demande de protection internationale.
+Le Roi détermine les conditions dans lesquelles se déroule l'entretien personnel.
+Lorsqu'un nombre élevé d'étrangers demandent simultanément une protection internationale, ce qui, dans la pratique, ne permet pas au Commissaire général aux réfugiés et aux apatrides de mener, en temps utile, l'entretien visé à l'alinéa 1er, le ministre peut, avec l'accord du Commissaire général aux réfugiés et aux apatrides, provisoirement affecter le personnel d'une autre instance à la conduite de cet entretien. Dans ce cas, le personnel de cette autre instance reçoit préalablement les formations pertinentes, comme le Roi le détermine à l'intention du personnel du Commissaire général aux réfugiés et aux apatrides.
+§ 2. L'entretien personnel visé au paragraphe 1er n'a pas lieu lorsque :
+1° sur la base des éléments de preuve disponibles, le Commissaire général aux réfugiés et aux apatrides peut prendre une décision positive quant à la reconnaissance du statut de réfugié;
+2° le Commissaire général aux réfugiés et aux apatrides estime que le demandeur ne peut être entendu personnellement en raison de circonstances permanentes dont il n'a pas la maîtrise. En cas de doute, le Commissaire général aux réfugiés et aux apatrides consulte un praticien professionnel des soins de santé compétent afin de vérifier si l'état qui ne permet pas au demandeur d'être entendu a un caractère provisoire ou permanent.
+Si aucun entretien personnel n'a lieu pour la raison déterminée dans l'alinéa 1er, 2°, des efforts raisonnables sont fournis pour donner au demandeur l'opportunité de fournir les informations nécessaires concernant sa demande.
+Le fait qu'aucun entretien personnel n'a eu lieu conformément à l'alinéa 1er, 2°, n'a pas d'influence négative sur la décision du Commissaire général aux réfugiés et aux apatrides;
+3° dans le cas de l'article 57/6/2, le Commissaire général aux réfugiés et aux apatrides estime qu'il peut prendre une décision sur la base d'un examen exhaustif des éléments fournis au ministre ou à son délégué par le demandeur [2 ...]2.
+§ 3. Le fait qu'aucun entretien personnel n'a eu lieu n'empêche pas le Commissaire général aux réfugiés et aux apatrides de prendre une décision sur la demande de protection internationale.]1
+----------
+(1)<Inséré par L 2017-11-21/17, art. 38, 100; En vigueur : 22-03-2018>
+(2)<L 2026-06-16/01, art. 56, 135; En vigueur : 12-06-2026>
+
+Art. 57/5quater.[1 § 1er. [2 Il est pris note par écrit des déclarations faites par le demandeur de protection internationale lors de l'entretien personnel visé à l'article 57/5ter.
+Les notes de l'entretien personnel prennent la forme d'une transcription de l'entretien. Ces notes constituent une transcription fidèle des questions posées au demandeur ainsi que des réponses données par celui-ci et reprennent à tout le moins les données déterminées par arrêté royal]2.
+§ 2. Le demandeur de protection internationale ou son avocat peut demander par écrit une copie des notes de l'entretien personnel.
+Lorsque cette demande parvient au Commissaire général aux réfugiés et aux apatrides dans les deux jours ouvrables qui suivent l'entretien personnel, le Commissaire général notifie la copie des notes de l'entretien personnel au demandeur de protection internationale ou à son avocat avant de prendre une décision concernant la demande de protection internationale.
+La copie des notes est notifiée par le Commissaire général aux réfugiés et aux apatrides conformément aux dispositions de l'article 51/2.
+§ 3. Le demandeur de protection internationale ou son avocat peut transmettre au Commissaire général aux réfugiés et aux apatrides des observations concernant la copie des notes de l'entretien personnel.
+Ces observations sont communiquées au Commissaire général par écrit, dans la langue de la procédure.
+Le Commissaire général examine ces observations avant de prendre une décision quant à la demande de protection internationale pour autant :
+1° que la demande de copie visée au paragraphe 2 soit parvenue au Commissaire général dans les deux jours ouvrables qui suivent l'entretien personnel, et
+2° que les observations soient parvenues au Commissaire général dans un délai de huit jours ouvrables suivant la notification de la copie des notes de l'entretien personnel au demandeur de protection internationale ou à son avocat.
+Si les conditions cumulatives visées à l'alinéa 3 ne sont pas remplies, le Commissaire général n'examine les observations communiquées qu'à la condition que celles-ci lui parviennent au plus tard le jour ouvrable qui précède celui de l'adoption de la décision relative à la demande de protection internationale.
+Le demandeur de protection internationale est réputé confirmer le contenu des notes de l'entretien personnel lorsqu'au jour ouvrable qui précède celui de l'adoption de la décision relative à la demande de protection internationale, aucune observation n'est parvenue au Commissaire général. Si les observations éventuellement parvenues au Commissaire général ne portent que sur une partie du contenu des notes de l'entretien personnel, le demandeur de protection internationale est réputé confirmer le reste de celui-ci.
+§ 4. Lorsqu'il est fait application des articles 57/6, § 2, 57/6, § 3, 57/6/1, § 1er ou 57/6/4, une copie des notes de l'entretien personnel peut être notifiée au même moment que la notification de la décision concernant la demande de protection internationale.]1
+
+(NOTE : par son arrêt n° du 25-02-2021 (2021-02-25/20, M.B. 20-04-2021, p. 36679), la Cour constitutionnelle a annulé la modification apportée au § 4, du présent article.)
+----------
+(1)<Inséré par L 2017-11-21/17, art. 39, 100; En vigueur : 22-03-2018>
+(2)<L 2026-06-16/01, art. 57, 135; En vigueur : 12-06-2026>
+
+Art. 57/5quater DROIT FUTUR.
+
+[1 § 1er. [2 Il est pris note par écrit des déclarations faites par le demandeur de protection internationale lors de l'entretien personnel visé à l'article 57/5ter.
+Les notes de l'entretien personnel prennent la forme d'une transcription de l'entretien. Ces notes constituent une transcription fidèle des questions posées au demandeur ainsi que des réponses données par celui-ci et reprennent à tout le moins les données déterminées par arrêté royal]2.
+§ 2. [3 Le demandeur et son avocat peuvent demander par écrit une copie des notes de l'entretien personnel.
+Si une copie des notes est demandée, le Commissaire général aux réfugiés et aux apatrides notifie ces notes avant la décision concernant la demande, conformément aux dispositions de l'article 51/2]3.
+§ 3. [3 ...]3.
+§ 4. [3 ...]3.
+
+----------
+(1)<Inséré par L 2017-11-21/17, art. 39, 100; En vigueur : 22-03-2018>
+(2)<L 2026-06-16/01, art. 57, 135; En vigueur : 12-06-2026>
+(3)<L 2026-06-16/01, art. 57,2°-3°, 135; En vigueur : 01-08-2026>
+
+Art. 57/5quinquies. [1 § 1er. L'entretien personnel est enregistré par des moyens audio. Le demandeur est informé au préalable qu'un tel enregistrement a lieu et de la finalité de celui-ci. L'enregistrement est versé au dossier du demandeur.
+§ 2. Le demandeur a accès à l'enregistrement audio auprès du Commissariat général aux réfugiés et aux apatrides en vue de l'introduction d'un recours ou, en cas de recours, auprès du Conseil du Contentieux des étrangers sur la base de l'article 2.19 de la loi sur le Conseil du contentieux des étrangers. Les modalités d'accès auprès du Commissariat général aux réfugiés et aux apatrides sont déterminées par arrêté royal.
+§ 3. Le Commissariat général aux réfugiés et aux apatrides n'est pas tenu de demander au demandeur de confirmer que le contenu de la transcription reflète correctement l'entretien personnel, ni de demander au demandeur de faire des observations sur la transcription et/ou d'y apporter des précisions.]1
+----------
+(1)<Inséré par L 2026-06-16/01, art. 58, 135; En vigueur : 12-06-2026>
+
+Art. 57/5sexies. [1 § 1er. Le Commissaire général aux réfugiés et aux apatrides peut organiser l'entretien personnel par vidéoconférence dans des circonstances dûment justifiées.
+§ 2. Le demandeur peut communiquer au Commissaire général aux réfugiés et aux apatrides par écrit et dans la langue de la procédure les raisons d'une éventuelle objection à l'organisation de l'entretien personnel par vidéoconférence, dans le délai fixé par arrêté royal.
+§ 3. S'il juge valable le motif justifiant les objections visées au paragraphe 2, le Commissaire général aux réfugiés et aux apatrides convoque à nouveau le demandeur à une date ultérieure à un entretien personnel ou le Commissaire général aux réfugiés et aux apatrides lui demande de lui fournir certains renseignements par écrit.
+§ 4. Si, au cours de l'entretien personnel, il est constaté qu'il n'est pas indiqué que l'entretien se déroule par vidéoconférence, le Commissaire général aux réfugiés et aux apatrides convoque le demandeur à une date ultérieure afin de poursuivre l'entretien personnel ou le Commissaire général aux réfugiés et aux apatrides lui demande de lui fournir certains renseignements par écrit]1
+----------
+(1)<Inséré par L 2026-06-16/01, art. 59, 135; En vigueur : 12-06-2026>
+
+Art. 57/6.<L 2006-09-15/72, art. 58, 041; En vigueur : 01-06-2007> [3 § 1er.]3 Le Commissaire général aux réfugiés et aux apatrides est compétent :
+1° [5 pour octroyer ou refuser d'octroyer le statut de réfugié ainsi que pour octroyer ou refuser d'octroyer le statut de protection subsidiaire à l'étranger]5;
+2° [3 pour considérer une demande de protection internationale comme manifestement infondée sur la base de l'article 57/6/1, § 2;]3
+3° pour confirmer ou refuser de confirmer le statut de réfugié à l'étranger qui satisfait aux conditions prévues par l'article 49, § 1er, 6°;
+4° [5 pour retirer le statut de réfugié ou le statut de protection subsidiaire sur la base des articles 14, paragraphe 1er, a), et 19, paragraphe 1er, a), du règlement (UE) 2024/1347]5;
+5° pour exclure l'étranger [3 ...]3 du bénéfice du statut de réfugié ou du statut de protection subsidiaire sur la base des [5 articles 12 et 17 du règlement (UE) 2024/1347]5;
+6° [2 pour retirer le statut de réfugié ou de protection subsidiaire sur la base des [5 articles 14, paragraphe 1er, b), c), d) ou e), et 19, paragraphe 1er, b) ou c), du règlement (UE) 2024/1347]5;]2
+7° [2 pour rendre l'avis que le ministre ou son délégué peut solliciter conformément à l'article 17, § 6, afin de savoir si un étranger bénéficie toujours de la protection internationale dans le Royaume;]2
+8° pour délivrer aux réfugiés et aux apatrides les documents visés à l'article 25 de la Convention internationale relative au statut des réfugiés, signée à Genève le 28 juillet 1951, et à l'article 25 de la Convention relative au statut des apatrides, signée à New York, le 28 septembre 1954.
+[2 9° [5 pour rendre un avis quant à la compatibilité d'une mesure d'éloignement avec le principe de non-refoulement sur base de l'article 3, 5) et 6), du règlement (UE) 2024/1347 lorsqu'il refuse d'octroyer le statut de réfugié sur la base de l'article 14, paragraphe 2, de ce règlement]5;
+10° [5 pour rendre un avis quant à la compatibilité d'une mesure d'éloignement avec le principe de non-refoulement sur base de l'article 3, 5) et 6), du règlement (UE) 2024/1347 lorsqu'il déclare la demande de protection internationale irrecevable sur la base de l'article 57/6/2, § 2, de la présente loi ou de l'article 38, paragraphe 2, du règlement (UE) 2024/1348]5;
+11° [5 pour rendre un avis quant à la compatibilité d'une mesure d'éloignement avec le principe de non-refoulement sur base de l'article 3, 5) et 6), du règlement (UE) 2024/1347 lorsqu'il exclut l'intéressé du statut de réfugié sur la base de l'article 12 de ce règlement]5;
+12° [5 pour rendre un avis quant à la compatibilité d'une mesure d'éloignement avec le principe de non-refoulement sur base de l'article 3, 5) et 6), du règlement (UE) 2024/1347 lorsqu'il retire le statut de réfugié sur la base de l'article 14, paragraphe 1er, b), d) ou e), de ce règlement]5;
+13° [5 pour rendre un avis quant à la compatibilité d'une mesure d'éloignement avec le principe de non-refoulement sur base de l'article 3, 5) et 6), du règlement (UE) 2024/1347 lorsqu'il exclut l'intéressé du statut de protection subsidiaire sur la base de l'article 17 de ce règlement]5;
+14° [5 pour rendre un avis quant à la compatibilité d'une mesure d'éloignement avec le principe de non-refoulement sur base de l'article 3, 5) et 6), du règlement (UE) 2024/1347 lorsqu'il retire le statut de protection subsidiaire sur la base de l'article 19, paragraphe 1er, b), de ce règlement]5;
+[5 14bis° pour rendre un avis quant à la compatibilité d'une mesure d'éloignement avec le principe de non-refoulement sur base de l'article 3, 5) et 6), du règlement (UE) 2024/1347 lorsqu'il refuse d'octroyer une protection internationale sur la base de l'article 5, paragraphe 2, de ce règlement;]5
+15° pour rendre l'avis visé à [3 l'[5 article 57/28/1]5]3, pour la détermination de la liste des pays d'origine sûrs;]2
+[4 16° pour rendre l'avis visé à l'article 57/41, § 1er.]4
+[3 [5 Le Commissaire général aux réfugiés et aux apatrides veille à ce que la procédure d'examen soit menée à terme dans les six mois à compter de la date d'introduction de la demande de protection internationale. Lorsqu'une demande est soumise à la procédure définie par le règlement (UE) n° 604/2013 du Parlement européen et du Conseil du 26 juin 2013 établissant les critères et mécanismes de détermination de l'Etat membre responsable de l'examen d'une demande de protection internationale introduite dans l'un des Etats membres par un ressortissant de pays tiers ou un apatride (refonte), le délai de six mois commence à courir à partir du moment où il a été déterminé que la Belgique est responsable de l'examen de la demande conformément à ce règlement et où le demandeur se trouve en Belgique et a été pris en charge par l'Office des Etrangers]5.
+Le délai visé à l'alinéa 2 peut être prolongé d'une durée ne pouvant excéder neuf mois supplémentaires lorsque :
+a) des questions factuelles et/ou juridiques complexes entrent en jeu;
+b) du fait qu'un grand nombre d'étrangers demandent simultanément une protection internationale, il est très difficile, en pratique, de conclure la procédure dans le délai de six mois; ou
+c) le retard du traitement de la demande peut être clairement imputé au demandeur.
+Lorsque cela est nécessaire pour assurer un examen approprié et exhaustif de la demande de protection internationale, le délai prolongé visé à l'alinéa 3 peut être encore prolongé d'une durée maximale de trois mois.
+Le délai visé à l'alinéa 2 est prolongé au maximum à vingt-et-un mois si une incertitude existe quant à la situation dans le pays d'origine qui devrait être temporaire. En pareil cas, la situation dans le pays d'origine concerné est évaluée au moins tous les six mois.
+Le Commissaire général aux réfugiés et aux apatrides informe le demandeur du prolongement du délai visé à l'alinéa 2 et lui communique, pour autant que le demandeur le demande, des informations quant aux raisons du prolongement et une indication sur le délai dans lequel la décision visée à l'alinéa 1er, 1° sera prise.]3
+[3 § 2. Le Commissaire général aux réfugiés et aux apatrides décide en priorité, lorsque :
+1° le demandeur se trouve dans un lieu déterminé tel que visé dans les articles 74/8, § 1er ou 74/9, §§ 2 et 3 ou fait l'objet d'une mesure de sûreté telle que visée à l'article 68;
+2° le demandeur se trouve dans un établissement pénitentiaire;
+3° le ministre ou son délégué demande au Commissaire général aux réfugiés et aux apatrides de traiter en priorité la demande de protection internationale de l'intéressé;
+4° la demande est probablement fondée.
+§ 3. Le Commissaire général aux réfugiés et aux apatrides peut déclarer irrecevable une demande de protection internationale lorsque :
+1° le demandeur bénéficie déjà d'une protection réelle dans un premier pays d'asile, à moins qu'il soumette des éléments dont il ressort qu'il ne peut plus se prévaloir de la protection réelle qui lui a été accordée dans le premier pays d'asile ou qu'il n'est plus autorisé à entrer sur le territoire de ce pays.
+A condition que l'accès au territoire de ce pays lui soit à nouveau autorisé, un pays peut être considéré comme étant un premier pays d'asile si le demandeur d'asile est reconnu comme réfugié dans ce pays et qu'il peut encore y bénéficier de cette protection, ou s'il bénéficie d'une autre protection réelle dans ce pays, y compris du principe de non-refoulement;
+2° un pays tiers peut être considéré comme un pays tiers sûr au sens de l'article 57/6/6 pour le demandeur, à moins qu'il soumette des éléments dont il ressort qu'il sera exposé à une persécution ou une atteinte grave dans ce pays tiers, ou que le lien qui l'unit au pays tiers n'est pas tel qu'il serait raisonnable pour lui de s'y rendre, ou qu'il ne sera pas admis sur le territoire de ce pays;
+3° le demandeur bénéficie déjà d'une protection internationale dans un autre Etat membre de l'Union européenne;
+4° le demandeur est un ressortissant d'un Etat membre de l'Union européenne [5 ...]5, à moins qu'il soumette des éléments dont il ressort qu'il sera exposé à une persécution ou une atteinte grave dans cet Etat membre [5 ...]5;
+5° le demandeur introduit une demande ultérieure de protection internationale pour laquelle aucun élément ou fait nouveau au sens de l'article 57/6/2 n'apparaît ni n'est présenté par le demandeur;
+6° après qu'une demande de protection internationale, qui a été introduite en son nom conformément à l'article 57/1, 1er, alinéa 1er, a fait l'objet d'une décision finale, l'étranger mineur n'invoque pas de faits propres qui justifient une demande distincte. Dans le cas contraire, le Commissaire général prend une décision dans laquelle il conclut à la recevabilité de la demande.
+Le demandeur visé à l'alinéa 1er, 6°, est entendu par le Commissaire général aux réfugiés et aux apatrides, pour autant que le Commissaire général aux réfugiés et aux apatrides estime que son âge, sa maturité et sa vulnérabilité le permettent.
+[5 Le Commissaire général aux réfugiés et aux apatrides conclut l'examen effectué afin de déterminer si une demande est irrecevable conformément à l'alinéa 1er le plus rapidement possible et au plus tard deux mois à compter de la date de l'introduction de la demande]5.
+[5 ...]5.]3
+----------
+(1) pas en français
+(2)<L 2015-08-10/11, art. 11, 082; En vigueur : 03-09-2015>
+(3)<L 2017-11-21/17, art. 40, 100; En vigueur : 22-03-2018>
+(4)<L 2024-03-10/02, art. 6, 126; En vigueur : 01-09-2024>
+(5)<L 2026-06-16/01, art. 60, 135; En vigueur : 12-06-2026>
+
+Art. 57/6/1.[2 § 1er. Le Commissaire général aux réfugiés et aux apatrides peut traiter une demande de protection internationale selon une procédure d'examen accélérée lorsque :
+a) le demandeur n'a soulevé, en soumettant sa demande de protection internationale et en exposant les faits, que des éléments sans pertinence au regard de l'examen visant à déterminer s'il remplit les conditions requises pour bénéficier de la protection internationale; ou
+b) le demandeur provient d'un pays d'origine sûr au sens du paragraphe 3; ou
+c) le demandeur a induit les autorités en erreur en ce qui concerne son identité et/ou sa nationalité, en présentant de fausses informations ou de faux documents ou en dissimulant des informations ou des documents pertinents qui auraient pu influencer la décision dans un sens défavorable; ou
+d) il est probable que, de mauvaise foi, le demandeur a procédé à la destruction ou s'est défait d'un document d'identité ou de voyage qui aurait aidé à établir son identité ou sa nationalité; ou
+e) le demandeur a fait des déclarations manifestement incohérentes et contradictoires, manifestement fausses ou peu plausibles qui contredisent des informations suffisamment vérifiées concernant le pays d'origine, ce qui rend sa demande peu convaincante quant à sa qualité de bénéficiaire d'une protection internationale; ou
+f) le demandeur a présenté une demande ultérieure de protection internationale qui a été déclarée recevable conformément à l'article 57/6/2, § 1er, alinéa 1er; ou
+g) le demandeur ne présente une demande qu'afin de retarder ou d'empêcher l'exécution d'une décision antérieure ou imminente qui entraînerait son refoulement ou éloignement; ou
+h) le demandeur est entré ou a prolongé son séjour illégalement sur le territoire du Royaume et, sans motif valable, ne s'est pas présenté aux autorités ou n'a pas présenté une demande de protection internationale dans les délais les plus brefs compte tenu des circonstances de son entrée; ou
+i) le demandeur refuse de se soumettre à la prise des empreintes digitales visée à l'[3 article 8octies]3; ou
+j) il existe de sérieuses raisons de considérer que le demandeur représente un danger pour la sécurité nationale ou l'ordre public, ou le demandeur a été éloigné de manière forcée pour des motifs graves de sécurité nationale ou d'ordre public.
+[3 Le Commissaire général aux réfugiés et aux apatrides conclut la procédure d'examen accélérée le plus rapidement possible et au plus tard trois mois à compter de la date de l'introduction de la demande]3.
+[3 ...]3.
+§ 2. En cas de refus de protection internationale et si le demandeur de protection internationale se trouve dans une des situations mentionnées au paragraphe 1er, alinéa 1er, a) à j), le Commissaire général aux réfugiés et aux apatrides peut considérer cette demande comme manifestement infondée]2 [3 , à l'exception des demandes de mineurs étrangers non accompagnés]3.
+[2 § 3.]2 [1 [2 Le Commissaire général aux réfugiés et aux apatrides est compétent pour refuser la protection internationale à un ressortissant d'un pays d'origine sûr ou à un apatride qui avait précédemment sa résidence habituelle dans ce pays lorsque l'étranger n'a pas fait valoir de raisons sérieuses permettant de penser qu'il ne s'agit pas d'un pays d'origine sûr en raison de sa situation personnelle, compte tenu des conditions requises pour prétendre au statut de bénéficiaire d'une protection internationale.]2
+Un pays est considéré comme un pays d'origine sûr lorsque, sur la base de la situation légale, de l'application du droit dans le cadre d'un régime démocratique et des circonstances politiques générales, il peut être démontré que, d'une manière générale et de manière durable, il n'y est pas recouru [3 à des actes de persécution tels qu'ils sont définis à l'article 9 du règlement (UE) 2024/1347 et qu'il n'y existe aucun risque réel de subir des atteintes graves telles qu'elles sont définies à l'article 15 dudit règlement]3. Pour réaliser cette évaluation, il est tenu compte, entre autres, de la mesure dans laquelle il est offert une protection contre la persécution et les mauvais traitements, grâce aux éléments suivants :
+a) les dispositions législatives et réglementaires adoptées dans le pays et la manière dont elles sont appliquées;
+b) la manière dont sont respectés les droits et libertés dans la Convention européenne de sauvegarde des droits de l'homme et des libertés fondamentales, le Pacte international relatif aux droits civils et politiques ou la Convention contre la torture, en particulier les droits pour lesquels aucune dérogation ne peut être autorisée conformément à l'article 15, § 2, de ladite Convention européenne;
+c) le respect du principe de non-refoulement;
+d) le fait qu'il dispose d'un système de sanctions efficaces contre les violations de ces droits et libertés.
+L'évaluation d'un pays d'origine sûr doit reposer sur une série de sources d'information parmi lesquelles, en particulier, des informations d'autres Etats membres de l'Union européenne, [2 du Bureau européen d'appui en matière d'asile,]2 du Haut Commissariat des Nations Unies pour les réfugiés, du Conseil de l'Europe et d'autres organisations internationales pertinentes.
+[3 ...]3.
+[2 ...]2]1
+
+(NOTE : par son arrêt n° 23/2021 du 25-02-2021 (2021-02-25/20, M.B. 20-04-2021, p. 36679), la Cour constitutionnelle a annulé la modification apportée :
+au § 1 du présent article, uniquement en ce qu'il est susceptible de s'appliquer à un mineur étranger non accompagné dans des hypothèses autres que celles qui sont visées à l'article 25, paragraphe 6, point a), de la directive 2013/32/UE du Parlement européen et du Conseil du 26 juin 2013 " relative à des procédures communes pour l'octroi et le retrait de la protection internationale (refonte);
+au § 1er, alinéa 1er, f), mais uniquement en ce qu'il permet d'appliquer la procédure d'examen accélérée au cas où le demandeur a introduit une demande ultérieure de protection internationale après que la première demande a fait l'objet d'une décision de clôture prise en application de l'article 57/6/5, § 1er, 1°, 2°, 3°, 4° ou 5°, de la loi du 15 décembre 1980.)
+----------
+(1)<Inséré par L 2012-01-19/12, art. 9, 063; En vigueur : 27-02-2012>
+(2)<L 2017-11-21/17, art. 41, 100; En vigueur : 22-03-2018>
+(3)<L 2026-06-16/01, art. 61, 135; En vigueur : 12-06-2026>
+
+Art. 57/6/2.[1 § 1er. Après réception de la demande ultérieure transmise par le ministre ou son délégué [2 ...]2, le Commissaire général aux réfugiés et aux apatrides examine en priorité si de nouveaux éléments ou faits apparaissent, ou sont présentés par le demandeur, qui augmentent de manière significative la probabilité qu'il [2 remplisse les conditions requises pour prétendre au statut de bénéficiaire d'une protection internationale conformément au règlement (UE) 2024/1347]2. En l'absence de ces éléments ou faits, le Commissaire général aux réfugiés et aux apatrides déclare la demande irrecevable. Dans le cas contraire, ou si le demandeur a uniquement fait auparavant l'objet d'une décision de clôture prise en application de l'article 57/6/5, § 1er, 1°, 2°, 3°, 4° ou 5° le Commissaire général aux réfugiés et aux apatrides déclare la demande recevable.
+Lors de l'examen visé à l'alinéa 1er, le Commissaire général aux réfugiés et aux apatrides tient compte, le cas échéant, du fait que le demandeur s'est abstenu sans explication valable de faire valoir au cours de la précédente procédure, en particulier en exerçant le recours visé à l'[2 article 2.60 de la loi relative au Conseil du contentieux des étrangers]2, les éléments ayant justifié l'introduction de sa demande ultérieure.
+§ 2. Lorsque le Commissaire général aux réfugiés et aux apatrides prend une décision d'irrecevabilité conformément au paragraphe 1er, il informe le ministre ou son délégué si l'éloignement ou le refoulement entraînera ou non une violation du principe de non-refoulement du demandeur sur base de l'examen effectué [2 au regard de l'article 3, 5) et 6), du règlement (UE) 2024/1347]2.
+§ 3. [2 ...]2.]1
+----------
+(1)<L 2017-11-21/17, art. 42, 100; En vigueur : 22-03-2018>
+(2)<L 2026-06-16/01, art. 62, 135; En vigueur : 12-06-2026>
+
+Art. 57/6/3.
+<Abrogé par L 2017-11-21/17, art. 43, 100; En vigueur : 22-03-2018>
+
+Art. 57/6/4.[1 A l'égard de l'étranger qui tente d'entrer dans le Royaume sans satisfaire aux conditions fixées aux articles 2 et 3 et qui a introduit à la frontière une demande de protection internationale, le Commissaire général aux réfugiés et aux apatrides est compétent pour y déclarer la demande irrecevable sur la base de l'article 57/6, § 3 ou pour y prendre une décision sur le fond de la demande dans une des situations visées à l'article 57/6/1, § 1er, alinéa 1er, a), b), c), d), e), f), g), i) ou j).
+Si l'alinéa 1er ne peut pas être appliqué, le Commissaire général aux réfugiés et aux apatrides décide qu'un examen ultérieur est nécessaire, après quoi le demandeur est autorisé par le ministre ou son délégué à entrer dans le Royaume conformément à l'article 74/5, § 4, 4°.
+Si aucune décision n'a été prise par le Commissaire général aux réfugiés et aux apatrides dans un délai de quatre semaines, après réception de la demande de protection internationale transmise par le ministre ou son délégué, le demandeur est également autorisé par le ministre ou son délégué à entrer dans le Royaume conformément à l'article 74/5, § 4, 5°.]1
+
+(NOTE : par son arrêt n° 23/2021 du 25-02-2021 (2021-02-25/20, M.B. 20-04-2021, p. 36679), la Cour constitutionnelle a annulé la modification apportée à l'alinéa 3 du présent article.
+----------
+(1)<Inséré par L 2017-11-21/17, art. 44, 100; En vigueur : 22-03-2018>
+
+Art. 57/6/4 DROIT FUTUR.
+<Abrogé par L 2026-06-16/01, art. 63, 135; En vigueur : 10-07-2026>
+
+Art. 57/6/5.[1 § 1er. Un demandeur de protection internationale peut, de sa propre initiative et à n'importe quel moment de la procédure, retirer sa demande. La demande est retirée par écrit par le demandeur en personne ou par l'intermédiaire de son avocat.
+§ 2. Lorsque le retrait explicite a lieu devant une autorité compétente autre que le Commissariat général aux réfugiés et aux apatrides, cette autorité informe de ce retrait le Commissariat général aux réfugiés et aux apatrides. Le Commissaire général aux réfugiés et aux apatrides adopte une décision déclarant que la demande a été explicitement retirée.
+§ 3. Lorsque, au stade du retrait explicite de la demande par le demandeur, le Commissariat général aux réfugiés et aux apatrides a déjà constaté que le demandeur ne remplit pas les conditions requises pour pouvoir bénéficier d'une protection internationale au titre du règlement (UE) 2024/1347, le Commissaire général aux réfugiés et aux apatrides peut toujours prendre une décision rejetant la demande au motif qu'elle est infondée ou manifestement infondée.]1
+----------
+(1)<L 2026-06-16/01, art. 64, 135; En vigueur : 12-06-2026>
+
+Art. 57/6/5/1. [1 § 1er. Une demande de protection internationale est déclarée par le Commissaire général aux réfugiés et aux apatrides comme étant implicitement retirée lorsque:
+1° le demandeur, sans motif valable transmis dans le délai raisonnable déterminé par le Roi, ne s'est pas présenté à un entretien personnel alors qu'il y était tenu ou a refusé, sans motif justifié, de répondre à des questions posées au cours de l'entretien à tel point que le résultat de l'entretien n'a pas permis de se prononcer sur le bien-fondé de la demande;
+2° le demandeur ne donne pas suite à une demande de renseignements dans le délai raisonnable déterminé par le Roi et ne donne pas de motif valable à ce sujet;
+3° le demandeur se trouve dans un lieu déterminé tel que visé dans les articles 74/8 ou 74/9 ou s'il fait l'objet d'une mesure de sûreté telle que visée à l'article 68, et que, dans ces situations, il a quitté sans autorisation le lieu où il était maintenu ou résidait et qu'il n'a pas pris contact dans les quinze jours avec le ministre ou son délégué;
+4° le demandeur s'est soustrait, sans motif valable, pendant au moins quinze jours à l'obligation de se présenter selon les modalités visées à l'article 74/28, § 1er, 1° ;
+5° le demandeur ne reste pas à la disposition des autorités compétentes, à moins qu'il ne puisse démontrer que ce manquement était dû à des circonstances particulières indépendantes de sa volonté.
+§ 2. Lorsque l'autorité qui évalue si la demande est implicitement retirée est une autorité compétente autre que le Commissaire général aux réfugiés et aux apatrides et que cette autorité estime que la demande doit être considérée comme telle, elle en informe le Commissaire général aux réfugiés et aux apatrides. Le Commissaire général aux réfugiés et aux apatrides adopte une décision déclarant que la demande a été implicitement retirée.
+§ 3. Lorsque le demandeur est présent, l'autorité compétente informe le demandeur, lors du retrait, de l'ensemble des conséquences procédurales d'un tel retrait dans une langue qu'il comprend ou dont on peut raisonnablement supposer qu'il la comprend.
+§ 4. Une demande peut être rejetée au motif qu'elle est infondée ou manifestement infondée si, au stade du retrait implicite de la demande, le Commissaire général aux réfugiés et aux apatrides a déjà constaté que le demandeur ne remplit pas les conditions requises pour pouvoir bénéficier d'une protection internationale au titre du règlement (UE) 2024/1347.]1
+----------
+(1)<Inséré par L 2026-06-16/01, art. 65, 135; En vigueur : 12-06-2026>
+
+Art. 57/6/6.[1 § 1er. La demande de protection internationale peut être déclarée irrecevable sur la base de l'article 57/6, § 3, alinéa 1er, 2°, si le Commissaire général aux réfugiés et aux apatrides estime que, compte tenu de tous les faits et circonstances pertinents, le demandeur de protection internationale sera traité conformément aux principes suivants dans le pays tiers concerné :
+1) sa vie et sa liberté ne sont pas menacées en raison de sa race, de sa religion, de sa nationalité, de son appartenance à un certain groupe social ou de ses opinions politiques, et
+2) il n'existe aucun risque d'atteintes graves telles que visées à l'article 48/4, § 2, et
+3) le principe de non-refoulement est respecté, conformément à la Convention de Genève, et
+4) l'interdiction, prévue par le droit international, de prendre des mesures d'éloignement contraires à l'interdiction de la torture et des traitements cruels, inhumains ou dégradants, y est respectée, et
+5) la possibilité existe de solliciter la reconnaissance du statut de réfugié et, si ce statut est accordé, de bénéficier d'une protection conformément à la Convention de Genève.
+§ 2. Un pays tiers peut uniquement être considéré comme un pays tiers sûr si le lien qui unit le demandeur à ce pays est tel qu'il serait raisonnable pour lui de s'y rendre et qu'il peut être présumé que le demandeur sera admis sur le territoire du pays tiers concerné, à moins qu'il soumette des éléments dont il ressort clairement que ce ne sera pas le cas.
+Dans le cadre de l'évaluation du lien tel que visé à l'alinéa 1er, tous les faits et circonstances pertinents, qui peuvent notamment comprendre la nature, la durée et les circonstances du séjour précédent, sont pris en compte.
+§ 3. L'évaluation visant à déterminer si un pays est un pays tiers sûr doit reposer sur une série de sources d'information parmi lesquelles, en particulier, des informations d'autres Etats membres de l'Union européenne, du Bureau européen d'appui en matière d'asile, du Haut Commissariat des Nations unies pour les réfugiés, du Conseil de l'Europe ainsi que d'autres organisations internationales compétentes.
+§ 4. Le Commissaire général aux réfugiés et aux apatrides évalue si le pays tiers concerné est sûr pour un certain demandeur.
+§ 5. Lors de l'exécution d'une décision fondée exclusivement sur l'article 57/6, § 3, alinéa 1er, 2°, [2 le Commissaire général aux réfugiés et aux apatrides]2 remet à l'étranger un document informant les autorités du pays tiers, dans la langue de ce pays, que sa demande de protection internationale n'a pas été examinée quant au fond.]1
+----------
+(1)<Inséré par L 2017-11-21/17, art. 46, 100; En vigueur : 22-03-2018>
+(2)<L 2026-06-16/01, art. 66, 135; En vigueur : 12-06-2026>
+
+Art. 57/6/7.[1 § 1er. [2 Lorsque des éléments ou des faits nouveaux apparaissent indiquant qu'il y a lieu de réexaminer si une personne remplit les conditions requises pour pouvoir bénéficier d'une protection internationale, le Commissaire général aux réfugiés et aux apatrides examine si la protection internationale de cette personne peut être retirée]2.
+§ 2. Le Commissaire général donne la possibilité à l'intéressé de présenter au cours d'un entretien personnel les motifs pour lesquels il y a lieu de maintenir son statut de réfugié ou de protection subsidiaire. [2 Les articles 57/5ter, § 1er, alinéa 3, § 2, 2°, et § 3, 57/5quater, 57/5quinquies et 57/5sexies s'appliquent à l'entretien personnel qui est organisé.]2
+Par dérogation à l'alinéa 1er, si le Commissaire général examine l'éventualité [2 d'un retrait de la protection internationale conformément à l'article 14, paragraphe 1er, a) ou à l'article 19, paragraphe 1er, a), du règlement (UE) 2024/1347]2, l'intéressé se voit offrir, soit la possibilité de présenter au cours d'un entretien personnel les motifs pour lesquels il y a lieu de maintenir son statut de protection internationale, soit la possibilité de communiquer par écrit les motifs pour lesquels il y a lieu de maintenir son statut.
+Il est également dérogé de la sorte à l'alinéa 1er lorsque le Commissaire général examine l'éventualité d'un retrait du statut de réfugié conformément à [2 l'article 14, paragraphe 1er, d) ou e), du règlement (UE) 2024/1347]2, ou lorsqu'il examine l'éventualité d'un retrait du statut de protection subsidiaire à l'étranger qui est ou aurait dû être exclu en application de [2 l'article 17, paragraphe 1er, d), de ce règlement]2.
+[2 La convocation de l'intéressé à un entretien personnel ou le courrier lui offrant la possibilité de communiquer par écrit les motifs pour lesquels il y a lieu de maintenir son statut informe l'intéressé du réexamen de son droit à bénéficier d'une protection internationale, ainsi que des motifs de ce réexamen]2.
+§ 3. [2 ...]2.
+§ 4. [2 ...]2.
+§ 5. [2 ...]2.
+§ 6. [2 ...]2.]1
+----------
+(1)<Inséré par L 2017-11-21/17, art. 47, 100; En vigueur : 22-03-2018>
+(2)<L 2026-06-16/01, art. 67, 135; En vigueur : 12-06-2026>
+
+Art. 57/6/7/1. [1 § 1er. Lorsque le Commissaire général aux réfugiés et aux apatrides examine si la protection internationale d'une personne peut être retirée, la convocation à un entretien personnel ou le courrier qui donne à l'intéressé la possibilité de communiquer par écrit les motifs pour lesquels il y a lieu de maintenir le statut est envoyé sous pli recommandé ou par porteur contre accusé de réception à la dernière adresse mentionnée au Registre national. Le Commissaire général aux réfugiés et aux apatrides envoie une copie de cette convocation ou de ce courrier, par courrier ordinaire, à l'adresse effective de l'intéressé, s'il en est informé et si cette adresse est plus récente que celle mentionnée dans le Registre national.
+La possibilité d'élire domicile pour la procédure de réexamen est offerte à l'intéressé. Cette possibilité est offerte lors de l'entretien personnel ou en même temps que la possibilité de communiquer par écrit les motifs pour lesquels il y a lieu de maintenir son statut.
+Toute modification du domicile élu est communiquée sous pli recommandé au Commissaire général aux réfugiés et aux apatrides.
+Sans préjudice d'une notification à personne, les convocations et les courriers peuvent être envoyés par le Commissaire général aux réfugiés et aux apatrides ou son délégué au domicile élu dans le cadre de la procédure de réexamen, sous pli recommandé ou par porteur contre accusé de réception. Lorsque l'intéressé a élu domicile chez son avocat, les convocations et les courriers peuvent également être valablement envoyées par courrier ordinaire, par télécopieur ou par tout autre moyen de notification autorisé par arrêté royal.
+A défaut de domicile élu dans le cadre de la procédure de réexamen, et sans préjudice d'une notification à personne, les convocations et les courriers sont envoyés à la dernière adresse mentionnée au Registre national, sous pli recommandé ou par porteur contre accusé de réception. Le cas échéant, la copie de ces convocations et de ces courriers est également envoyée par courrier ordinaire à l'adresse effective de l'intéressé si le Commissaire général aux réfugiés et aux apatrides en est informé et si cette adresse est plus récente que celle mentionnée dans le Registre national.
+§ 2. Les conditions dans lesquelles l'entretien personnel se déroule sont déterminées par le Roi.
+Si l'intéressé ne se présente pas à la date fixée pour l'entretien personnel, il transmet par écrit au Commissaire général aux réfugiés et aux apatrides un motif valable justifiant son absence, dans les quinze jours suivant la date fixée pour l'entretien personnel.
+Si l'intéressé ne présente pas de motif valable dans les quinze jours suivant la date de l'entretien personnel fixée dans la convocation, le Commissaire général aux réfugiés et aux apatrides peut prendre une décision sur la base des éléments du dossier.
+S'il estime le motif valable, le Commissaire général aux réfugiés et aux apatrides peut reconvoquer l'intéressé à une date ultérieure, ou lui donner la possibilité de communiquer par écrit le motif pour lequel son statut doit être maintenu.
+Si après avoir été reconvoqué conformément à l'alinéa 4 l'intéressé invoque un nouveau motif justifiant une absence à l'entretien personnel fixé, le Commissaire général aux réfugiés et aux apatrides statue sur base des éléments en sa possession.
+§ 3. Lorsqu'il est demandé à l'intéressé de communiquer par écrit les motifs pour lesquels il y a lieu de maintenir son statut, la réponse doit parvenir au Commissaire général aux réfugiés et aux apatrides dans le délai déterminé par le Roi. En l'absence de réponse, le Commissaire général aux réfugiés et aux apatrides peut statuer sur base des éléments en sa possession.
+§ 4. Sans préjudice d'une notification à personne, la décision de retrait du statut de protection internationale est envoyée sous pli recommandé ou par porteur contre accusé de réception. Sans préjudice d'une notification à personne, la lettre informant qu'il n'est pas procédé au retrait du statut de protection internationale est envoyée par courrier ordinaire. La décision de retrait du statut de protection internationale, ou la lettre informant qu'il n'est pas procédé au retrait du statut de protection internationale est envoyée au domicile qui a été élu dans le cadre de la procédure de réexamen.
+Si aucun domicile n'a été élu dans le cadre de la procédure de réexamen et sans préjudice d'une notification à personne, cette décision, sous pli recommandé ou par porteur contre accusé de réception, ou cette lettre, par courrier ordinaire, est envoyée à la dernière adresse mentionnée au Registre national. Une copie de tout envoi est envoyée par courrier ordinaire à l'adresse effective de l'intéressé, si le Commissaire général aux réfugiés et aux apatrides en est informé et que cette adresse est plus récente que celle mentionnée dans le Registre national.]1
+----------
+(1)<Inséré par L 2026-06-16/01, art. 68, 135; En vigueur : 12-06-2026>
+
+Art. 57/7.<L 14-07-1987, art. 9> [1 § 1er.]1 [1 Le Commissaire général aux réfugiés et aux apatrides]1 peut s'adresser au représentant en Belgique du Haut Commissaire des Nations Unies pour les réfugiés afin de recueillir tous renseignements utiles à l'accomplissement de sa mission.
+Il a le droit de se faire communiquer par toute autorité belge tous documents et renseignements utiles à l'exercice de sa mission.
+[1 § 2. Le Commissaire général aux réfugiés et aux apatrides peut consulter et utiliser pour l'évaluation d'une demande de protection internationale des informations de toute nature envoyées ou reçues par voie électronique par le demandeur de protection internationale, qui n'ont pas été destinées personnellement au Commissaire général aux réfugiés et aux apatrides mais qui sont accessibles au public.
+§ 3. [2 ...]2]1
+(NOTE : par son arrêt n° 23/2021 du 25-02-2021 (2021-02-25/20, M.B. 20-04-2021, p. 36679), la Cour constitutionnelle a annulé la modification apportée au § 3 du présent article, en ce qu'il ne limite pas la possibilité pour le Commissaire général aux réfugiés et aux apatrides de maintenir la confidentialité de certains éléments aux cas dans lesquels " la divulgation d'informations ou de leurs sources compromettrait la sécurité nationale, la sécurité des organisations ou de la (des) personne(s) ayant fourni les informations ou celle de la (des) personne(s) à laquelle (auxquelles) elles se rapportent, ou encore lorsque cela serait préjudiciable à l'enquête liée à l'examen d'une demande de protection internationale par les autorités compétentes des Etats membres, ou aux relations internationales des Etats membres.)
+----------
+(1)<L 2017-11-21/17, art. 48, 100; En vigueur : 22-03-2018>
+(2)<L 2026-06-16/01, art. 69, 135; En vigueur : 12-06-2026>
+
+Art. 57/7/1. [1 § 1er. Afin que les décisions sur les demandes de protection internationale soient prises à l'issue d'un examen approprié, le Commissariat général aux réfugiés et aux apatrides peut solliciter des informations précises et actualisées auprès de différentes sources, telles que l'Agence de l'Union européenne pour l'asile et le Haut-Commissariat des Nations Unies pour les réfugiés ainsi que les organisations internationales compétentes en matière de droits de l'homme, sur la situation générale existant dans les pays d'origine des demandeurs et, le cas échéant, dans les pays par lesquels les demandeurs ont transité.
+Le personnel chargé d'examiner les demandes et de prendre les décisions a accès à ces informations.
+§ 2. Les informations obtenues et rassemblées afin qu'une décision sur une demande de protection internationale soit prise à l'issue d'un examen approprié sont versées au dossier du demandeur sur la base duquel une décision est prise ou le sera.
+La source d'une information est mentionnée et, le cas échéant, décrite. Cette mention et cette description sont également versées au dossier du demandeur.
+§ 3. Le demandeur de protection internationale et son avocat ont accès aux informations qui sont versées au dossier du demandeur sur la base duquel une décision est prise ou le sera.
+L'accès aux informations ou aux sources versées au dossier du demandeur peut être refusé lorsque la divulgation de ces informations ou sources compromettrait la sécurité nationale, la sécurité des organisations ou des personnes ayant fourni les informations ou celle des personnes auxquelles les informations se rapportent, ou lorsque cela serait préjudiciable à l'enquête liée à l'examen d'une demande de protection internationale, ou aux relations internationales des Etats membres. En pareil cas, il est donné accès à ces informations ou sources au Conseil du Contentieux des étrangers.
+§ 4. Les paragraphes 1er, 2 et 3 sont d'application dans le cadre des procédures de réexamen de la protection internationale.]1
+----------
+(1)<Inséré par L 2026-06-16/01, art. 70, 135; En vigueur : 12-06-2026>
+
+Art. 57/7/2. [1 Afin que les décisions sur les demandes de protection internationale soient prises à l'issue d'un examen approprié, le Commissariat général aux réfugiés et aux apatrides a la possibilité de demander conseil à des experts, chaque fois que cela est nécessaire, sur des matières particulières comme les questions médicales, culturelles, religieuses, liées à la santé mentale ainsi qu'aux enfants ou au genre.]1
+----------
+(1)<Inséré par L 2026-06-16/01, art. 71, 135; En vigueur : 12-06-2026>
+
+Art. 57/7bis.
+<Abrogé par L 2013-05-08/18, art. 16, 072; En vigueur : 01-09-2013>
+
+Art. 57/7ter.
+<Abrogé par L 2013-05-08/18, art. 17, 072; En vigueur : 01-09-2013>
+
+Art. 57/8.<L 14-07-1987, art. 9> (Sans préjudice d'une notification à personne, les convocations et les demandes de renseignements peuvent être envoyées par le Commissaire général aux réfugiés et aux apatrides ou son délégué, au domicile élu vise à l'article 51/2, sous pli recommandé à la poste ou par porteur contre accusé de réception. Lorsque l'étranger a élu domicile chez son conseil, les convocations et les demandes de renseignements peuvent également être valablement envoyées par télécopieur [1 ou par tout autre moyen de notification autorisé par arrêté royal]1.) <L 2006-09-15/72, art. 59, 1°, 041; En vigueur : 01-06-2007>
+(Les décisions sont notifiées au (Ministre) ou à son délégué, qui en reçoit une copie, sous pli recommandé à la poste ou par porteur avec accusé de réception ou par télécopieur [1 ou par tout autre moyen de notification autorisé par arrêté royal]1. <L 1996-07-15/33, art. 4, 012; En vigueur : 16-12-1996>
+(Les décisions sont notifiées à l'intéressé par le Commissaire général aux réfugiés et aux apatrides conformément à l'alinéa 1er.) <L 2006-09-15/72, art. 59, 2°, 041; En vigueur : 01-06-2007>
+(Alinéa 4 abrogé)) <L 1993-05-06/30, art. 16, 005; En vigueur : 31-05-1993> <L 2006-09-15/72, art. 59, 3°, 041; En vigueur : 01-06-2007>
+----------
+(1)<L 2013-05-08/18, art. 18, 072; En vigueur : 01-09-2013>
+
+Art. 57/8/1.[1 L'étranger reconnu réfugié conformément à l'article 49, § 1er, doit mettre en dépôt auprès du Commissaire général aux réfugiés et aux apatrides le passeport national valable dont il dispose.
+[2 Le non-dépôt ou la demande de restitution du passeport, sans raison valable, par la personne visée à l'alinéa 1er peut constituer un nouvel élément indiquant qu'il y a lieu de réexaminer si cette personne remplit les conditions requises pour pouvoir bénéficier du statut de réfugié sur la base de l'article 57/6/7 ou de l'article 66 du règlement (UE) 2024/1348]2.]1
+[2 Le passeport peut être demandé en restitution lorsque le passeport n'est plus valable ou lorsque l'intéressé a acquis la nationalité d'un Etat membre.]2
+----------
+(1)<Inséré par L 2017-11-21/17, art. 49, 100; En vigueur : 22-03-2018>
+(2)<L 2026-06-16/01, art. 72, 135; En vigueur : 12-06-2026>
+
+Art. 57/9.[1 Pour les compétences définies aux articles [2 [3 57/6, § 1er, alinéa 1er, 1° à 7°, 9° à 14bis° et 16°, 57/6, §§ 2 et 3, 57/6/1, §§ 1er et 2, 57/6/2, 57/6/4, 57/6/5, 57/6/5/1, 57/11/2, 57/11/7, 57/11/8 et 57/11/10]3, les décisions et les avis peuvent être pris]2 par le Commissaire général, par ses adjoints agissant par délégation ou par les membres du personnel du Commissariat général aux réfugiés et aux apatrides agissant par délégation et appartenant au minimum à la classe A3 ou désignés par le Commissaire général pour exercer temporairement une fonction de niveau A3, et ce sous l'autorité et la direction du Commissaire général. Dans ce cas, les adjoints et les membres du personnel susvisés signent avec la formule "Par délégation".
+[2 Les compétences définies par les articles 57/6, § 1er, alinéa 1er, 8° et 57/8/1, alinéa 1er sont exercées par le Commissaire général ou son délégué, et concernant ce dernier sous l'autorité et la direction du Commissaire général.]2]1
+----------
+(1)<Inséré par L 2016-07-15/38, art. 2, 092; En vigueur : 23-09-2016>
+(2)<L 2017-11-21/17, art. 50, 100; En vigueur : 22-03-2018>
+(3)<L 2026-06-16/01, art. 73, 135; En vigueur : 12-06-2026>
+
+Art. 57/10.
+<Abrogé par L 2017-11-21/17, art. 51, 100; En vigueur : 22-03-2018>
+
+Art. 57/11. (Abrogé) <L 2006-09-15/71, art. 194, 040; En vigueur : 01-12-2006>
+(NOTE : l'article 57/11, § 1er, alinéa 1er, abrogé par la loi du 15 septembre 2006 est :
+1° à partir du 1er décembre 2006, rétabli dans sa rédaction existante à la veille de cette abrogation (L 2006-09-15/71 , art. 194);
+2° à la date visée à l'article 231 de la loi du 15 septembre 2006, rétabli dans sa rédaction telle que celle-ci résulte de cette abrogation. (L 2006-09-15/71)
+Voir L 2006-12-27/33, art. 142)
+
+Section IIbis. [1 Procédures en exécution du règlement (UE) 2024/1348]1
+----------
+(1)<Inséré par L 2026-06-16/01, art. 74, 135; En vigueur : 12-06-2026>
+
+Art. 57/11/1. [1 § 1er. Cette section s'applique à la procédure d'octroi d'une protection internationale en ce qui concerne les demandes introduites à partir du 12 juin 2026 et à la procédure de retrait d'une protection internationale lorsque l'examen en vue de retirer une protection internationale est engagé à partir du 12 juin 2026.
+§ 2. Les articles 48/6, 49, 49/2, 49/3/1, 50, 50/1, 50/2, 51, 51/2, 51/3bis, 51/4, 51/5, 51/5/1, 51/5/2, 51/5/3, 51/6, 51/7, 51/9, 51/10, 52/4,alinéa 1er, 53, 53bis, 54, 57/1, § 3, alinéa 1er, 57/5ter, § 1er, alinéas 2 et 3, 57/5quater, 57/5quinquies, § 2, 57/5sexies, §§ 2 à 4, 57/6, § 1er, alinéa 1er, 9° à 14bis°, § 2, 1°, 2° et 3°, et § 3, alinéa 1er, 4°, 57/6/2, §§ 1er, alinéa 1er, et 2, 57/6/7/1, 57/7, 57/7/1, § 2, 57/8, 57/8/1 et 57/9 s'appliquent également à ces procédures.]1
+----------
+(1)<Inséré par L 2026-06-16/01, art. 75, 135; En vigueur : 12-06-2026>
+
+Art. 57/11/2. [1 En exécution de l'article 4, paragraphe 1er, du règlement (UE) 2024/1348, le Commissaire général aux réfugiés et aux apatrides est chargé, en tant qu'autorité responsable de la détermination, d'accomplir les tâches et d'exercer les compétences qui découlent de ce règlement et du règlement (UE) 2024/1347.]1
+----------
+(1)<Inséré par L 2026-06-16/01, art. 76, 135; En vigueur : 12-06-2026>
+
+Art. 57/11/3. [1 § 1er. En exécution de l'article 20, paragraphe 1er, du règlement (UE) 2024/1348, lorsqu'une autre autorité que le Commissariat général aux réfugiés et aux apatrides a évalué si un demandeur de protection internationale a des besoins procéduraux spéciaux, l'évaluation peut être mise à disposition et ses résultats peuvent être transmis au Commissariat général aux réfugiés et aux apatrides, sous réserve du consentement du demandeur.
+§ 2. Le demandeur de protection internationale a la possibilité de faire valoir de manière précise et circonstanciée les éléments dont ressortent ses besoins procéduraux spéciaux, dans un questionnaire auquel il est invité à répondre en tout état de cause avant la déclaration prévue à l'article 51/10.]1
+----------
+(1)<Inséré par L 2026-06-16/01, art. 77, 135; En vigueur : 12-06-2026>
+
+Art. 57/11/4. [1 En application de l'article 25, paragraphe 7, du règlement (UE) 2024/1348, le ministre ou son délégué peut décider de reconnaître les évaluations de l'âge effectuées par un autre Etat membre.]1
+----------
+(1)<Inséré par L 2026-06-16/01, art. 78, 135; En vigueur : 12-06-2026>
+
+Art. 57/11/5. [1 § 1er. En exécution de l'article 35, paragraphe 8, du règlement (UE) 2024/1348, dans les cas où le Conseil du contentieux des étrangers annule la décision prise par le Commissaire général aux réfugiés et aux apatrides et renvoie l'affaire:
+1° le délai maximal visé à l'article 35, paragraphe 1er, alinéa 1er, du règlement (UE) 2024/1348 est de six semaines à compter de la réception de l'arrêt du Conseil;
+2° le délai maximal visé à l'article 35, paragraphe 1er, alinéa 2, du règlement (UE) 2024/1348 est de huit jours ouvrables à compter de la réception de l'arrêt du Conseil;
+3° le délai maximal visé à l'article 35, paragraphe 3, du règlement (UE) 2024/1348 est de 2 mois à compter de la réception de l'arrêt du Conseil;
+4° le délai maximal visé à l'article 35, paragraphe 4, du Règlement (UE) 2024/1348 est de quatre mois à compter de la réception de l'arrêt du Conseil.
+§ 2. Les possibilités de prolongation de délais visées à l'article 35, paragraphes 2 et 5, du règlement (UE) 2024/1348 ainsi que la possibilité de report de la conclusion de la procédure d'examen au fond visée à l'article 35, paragraphe 7, de ce règlement sont d'application à l'égard des délais visés au paragraphe 1er.]1
+----------
+(1)<Inséré par L 2026-06-16/01, art. 79, 135; En vigueur : 12-06-2026>
+
+Art. 57/11/6. [1 En application de l'article 37 du règlement (UE) 2024/1348, le ministre ou son délégué prend l'ordre de quitter le territoire ou la mesure de refoulement.]1
+----------
+(1)<Inséré par L 2026-06-16/01, art. 80, 135; En vigueur : 12-06-2026>
+
+Art. 57/11/7. [1 En exécution de l'article 38, paragraphe 1er du règlement (UE) 2024/1348, le Commissaire général aux réfugiés et aux apatrides est compétent pour déclarer irrecevable une demande lorsque l'un des motifs visés à l'article 38, paragraphe 1er de ce règlement est applicable.]1
+----------
+(1)<Inséré par L 2026-06-16/01, art. 81, 135; En vigueur : 12-06-2026>
+
+Art. 57/11/8. [1 En exécution de l'article 39, paragraphe 4, du règlement (UE) 2024/1348, le Commissaire général aux réfugiés et aux apatrides est compétent pour déclarer manifestement infondée une demande infondée si, au moment de la conclusion de l'examen, l'une des circonstances visées à l'article 42, paragraphe 1er, de ce règlement est applicable.]1
+----------
+(1)<Inséré par L 2026-06-16/01, art. 82, 135; En vigueur : 12-06-2026>
+
+Art. 57/11/9. [1 Au regard de l'article 41, paragraphe 4, du règlement (UE) 2024/1348, lorsque le demandeur ne se présente pas à un entretien personnel alors qu'il y était tenu, transmet l'éventuel motif valable pour justifier son absence à l'entretien doit être transmis, par écrit, au Commissariat général aux réfugiés et aux apatrides dans le délai raisonnable déterminé par le Roi.
+Lorsque le fait de ne pas rester à disposition des autorités compétentes consiste pour le demandeur à ne pas donner suite à une demande de renseignements envoyée par le Commissariat général aux réfugiés et aux apatrides, l'éventuel motif valable pour justifier le manquement du demandeur est transmis, par écrit, au Commissariat général aux réfugiés et aux apatrides dans le délai raisonnable déterminé par le Roi et endéans lequel il était attendu que le demandeur donne suite à la demande de renseignement.]1
+----------
+(1)<Inséré par L 2026-06-16/01, art. 83, 135; En vigueur : 12-06-2026>
+
+Art. 57/11/10. [1 § 1er. Au regard des articles 44, paragraphe 1er, et 53, paragraphe 2, a), du règlement (UE) 2024/1348, lorsque la procédure à la frontière prévue à l'article 43 de ce règlement est appliquée, le Commissaire général aux réfugiés et aux apatrides décide qu'un examen ultérieur est nécessaire s'il estime qu'une décision ne peut être prise sur les points suivants:
+1° l'irrecevabilité d'une demande conformément à l'article 38 du règlement (UE) 2024/1348; ou
+2° le bien-fondé d'une demande lorsque l'une des circonstances visées à l'article 42, paragraphe 1er, a) à g) et j), et à l'article 42, paragraphe 3, b), de ce règlement, s'applique.
+Suite à cette décision d'examen ultérieur, le demandeur de protection internationale est autorisé à entrer dans le Royaume.
+§ 2. Au regard des articles 21, paragraphe 2, et 53, paragraphe 2, c), du règlement (UE) 2024/1348, lorsque la procédure à la frontière prévue à l'article 43 de ce règlement est appliquée, le Commissaire général aux réfugiés et aux apatrides décide qu'un examen ultérieur est nécessaire s'il estime que le soutien nécessaire ne peut être fourni au demandeur ayant des besoins procéduraux spéciaux dans le cadre de cette procédure à la frontière.
+Suite à cette décision d'examen ultérieur, le demandeur de protection internationale est autorisé à entrer dans le Royaume.]1
+----------
+(1)<Inséré par L 2026-06-16/01, art. 84, 135; En vigueur : 12-06-2026>
+
+Art. 57/11/11. [1 Sans préjudice de l'application de la procédure visée aux articles 51/5 et 51/5/2, le ministre ou son délégué, en exécution de l'article 51, paragraphe 2, du règlement (UE) 2024/1348, transmet le dossier au Commissaire général aux réfugiés et aux apatrides dans les sept jours suivant l'enregistrement de la demande. Le Commissaire général aux réfugiés et aux apatrides conclut la procédure d'asile à la frontière dans les trente-neuf jours suivant la réception de la demande.]1
+----------
+(1)<Inséré par L 2026-06-16/01, art. 85, 135; En vigueur : 12-06-2026>
+
+Art. 57/11/12. [1 En exécution de l'article 66, paragraphe 6, du règlement (UE) 2024/1348, la protection internationale devient juridiquement caduque dans les situations visées par cette disposition.
+Le constat de la caducité de la protection internationale n'appelle pas de décision du Commissaire général aux réfugiés et aux apatrides.]1
+----------
+(1)<Inséré par L 2026-06-16/01, art. 86, 135; En vigueur : 12-06-2026>
+
+SECTION III. - DE LA COMMISSION PERMANENTE DE RECOURS DES REFUGIES. <Inséré par L 14-07-1987, art. 10>
+
+Art. 57/12. (Abrogé) <L 2006-09-15/71, art. 194, 040; En vigueur : 01-12-2006>
+
+Art. 57/13. (Abrogé) <L 2006-09-15/71, art. 194, 040; En vigueur : 01-12-2006>
+(NOTE : l'article 57/13, abrogé par la loi du 15 septembre 2006 est :
+1° à partir du 1er décembre 2006, rétabli dans sa rédaction existante à la veille de cette abrogation (L 2006-09-15/71 , art. 194);
+2° à la date visée à l'article 231 de la loi du 15 septembre 2006, rétabli dans sa rédaction telle que celle-ci résulte de cette abrogation. (L 2006-09-15/71)
+Voir L 2006-12-27/33, art. 142)
+
+Art. 57/14. (Abroge) <L 2006-09-15/71, art. 194, 040; En vigueur : 01-12-2006>
+
+Art. 57/14bis. (Abrogé) <L 2006-09-15/71, art. 194, 040; En vigueur : 01-12-2006>
+(NOTE : l'article 57/14bis, abrogé par la loi du 15 septembre 2006 est :
+1° à partir du 1er décembre 2006, rétabli dans sa rédaction existante à la veille de cette abrogation (L 2006-09-15/71 , art. 194);
+2° à la date visée à l'article 231 de la loi du 15 septembre 2006, rétabli dans sa rédaction telle que celle-ci résulte de cette abrogation. (L 2006-09-15/71)
+Voir L 2006-12-27/33, art. 142)
+
+Art. 57/15. (Abrogé) <L 2006-09-15/71, art. 194, 040; En vigueur : 01-12-2006>
+
+Art. 57/16. (Abrogé) <L 2006-09-15/71, art. 194, 040; En vigueur : 01-12-2006>
+(NOTE : l'article 57/16, alinéas 3 et 5, abrogés par la loi du 15 septembre 2006 est :
+1° à partir du 1er décembre 2006, rétabli dans sa rédaction existante à la veille de cette abrogation (L 2006-09-15/71 , art. 194);
+2° à la date visée à l'article 231 de la loi du 15 septembre 2006, rétabli dans sa rédaction telle que celle-ci résulte de cette abrogation. (L 2006-09-15/71)
+Voir L 2006-12-27/33, art. 142)
+
+Art. 57/17. (Abrogé) <L 2006-09-15/71, art. 194, 040; En vigueur : 01-12-2006>
+
+Art. 57/18. (Abrogé) <L 2006-09-15/71, art. 194, 040; En vigueur : 01-12-2006>
+
+Art. 57/19. (Abrogé) <L 2006-09-15/71, art. 194, 040; En vigueur : 01-12-2006>
+
+Art. 57/20. (Abrogé) <L 2006-09-15/71, art. 194, 040; En vigueur : 01-12-2006>
+
+Art. 57/21. (Abrogé) <L 2006-09-15/71, art. 194, 040; En vigueur : 01-12-2006>
+
+Art. 57/22. (Abrogé) <L 2006-09-15/71, art. 194, 040; En vigueur : 01-12-2006>
+
+Art. 57/23. (Abrogé) <L 2006-09-15/71, art. 194, 040; En vigueur : 01-12-2006>
+
+SECTION IIIBIS. - DU HAUT COMMISSARIAT DES NATIONS UNIES POUR LES REFUGIES. <Inséré par L 1993-05-06/30, art. 22, 005; En vigueur : 31-05-1993>
+
+Art. 57/23bis.<Inséré par L 1993-05-06/30, art. 22, 005; En vigueur : 31-05-1993> Le représentant en Belgique du Haut Commissaire des Nations Unies pour les Réfugiés, ou son délégué, (à condition que le demandeur d'asile soit d'accord) peut consulter toutes les pièces, y compris les pièces confidentielles, figurant dans les dossiers de demande de reconnaissance de la qualité de réfugié pendant tout de déroulement de la procédure, à l'exception de la procédure devant le Conseil d'Etat. <L 2006-09-15/71, art. 195, 1°, 040; En vigueur : 01-12-2006>
+(Il peut donner un avis, écrit ou oral, au Ministre pour autant que cet avis concerne la compétence de déterminer quel Etat est responsable du traitement de [1 la demande de protection internationale]1 et au Commissaire général aux réfugiés et aux apatrides, de sa propre initiative ou à sa demande. Il peut également, de sa propre initiative, donner un avis écrit au Conseil du Contentieux des étrangers.) <L 2006-09-15/71, art. 195, 2°, 040; En vigueur : 01-12-2006> <L 2006-12-27/33, art. 143, 1°, 043; En vigueur : 01-12-2006>
+Lorsque (le Commissaire général aux réfugiés et aux apatrides) s'écarte d'un avis qui lui a été donné en vertu du deuxième alinéa, elle doit en mentionner explicitement les motifs dans sa décision. <L 2006-09-15/71, art. 195, 2°, 040; En vigueur : 01-12-2006>
+----------
+(1)<L 2017-11-21/17, art. 52, 100; En vigueur : 22-03-2018>
+
+SECTION IV. - DISPOSITIONS COMPLEMENTAIRES. <Inséré par L 14-07-1987, art. 11>
+
+Art. 57/24. <L 14-07-1987, art. 11> La procédure devant le Commissariat général aux réfugies et aux apatrides (...) (ainsi que son fonctionnement) sont déterminés par le Roi, dans le respect des règles établies par la présente loi. <L 2006-09-15/71, art. 196, 1°, 040; En vigueur : 01-12-2006>
+(Le Commissaire général aux réfugiés et aux apatrides (...) (rédige) un plan, à soumettre à l'approbation du Conseil des ministres, qui prévoit les mesures qui sont nécessaires pour résorber ou prévenir l'arriéré dans le traitement des dossiers.) <L 1996-07-15/33, art. 44, 012; En vigueur : 06-12-1996> <L 2006-09-15/71, art. 196, 2°, 040; En vigueur : 01-12-2006>
+(NOTE : l'article 57/24, modifié par la loi du 15 septembre 2006 est :
+1° à partir du 1er décembre 2006, rétabli dans sa rédaction existante à la veille de cette modification (L 2006-09-15/71 , art. 196);
+2° à la date visée à l'article 231 de la loi du 15 septembre 2006, rétabli dans sa rédaction telle que celle-ci résulte de cette modification. (L 2006-09-15/71)
+Voir L 2006-12-27/33, art. 144)
+
+Art. 57/25. <L 14-07-1987, art. 11> Le (Ministre) met à la disposition du commissariat général aux réfugiés et aux apatrides (...) le personnel et les moyens nécessaires à l'accomplissement (de sa mission). <L 1996-07-15/33, art. 4, 012; En vigueur : 16-12-1996> <L 2006-09-15/71, art. 197, 1°, 040; En vigueur : 01-12-2006>
+Le cadre définitif et de cadre temporaire du Commissariat général aux réfugies et aux apatrides, incorporés à l'administration centrale du (Ministère (de l'Intérieur ...)), sont déterminés par le Roi, par arrêté délibéré en Conseil des Ministres. <AR 1993-12-31/30, art. 2, 008; En vigueur : 01-01-1994> <L 1996-07-15/33, art. 45, 012; En vigueur : 16-12-1996>
+(Alinéa 3 abrogé) <L 2006-09-15/71, art. 197, 2°, 040; En vigueur : 01-12-2006>
+(NOTE : l'article 57/25 modifié par la loi du 15 septembre 2006 est :
+1° à partir du 1er décembre 2006, rétabli dans sa rédaction existante à la veille de cette modification (L 2006-09-15/71 , art. 197);
+2° à la date visée à l'article 231 de la loi du 15 septembre 2006, rétabli dans sa rédaction telle que celle-ci résulte de cette modification. (L 2006-09-15/71)
+Voir L 2006-12-27/33, art. 144)
+
+Art. 57/26. <L 1993-05-06/30, art. 23, 005; En vigueur : 31-05-1993> § 1. Le Roi fixe le statut administratif et pécuniaire du Commissaire général (et de ses adjoints). <L 2006-09-15/71, art. 198, 1°, 040; En vigueur : 01-12-2006>
+§ 2. (...) <L 2006-09-15/71, art. 198, 2°, 040; En vigueur : 01-12-2006>
+§ 3. Les membres du personnel vises au paragraphe 1er sont soumis, pendant la durée de leur mandat, à la loi du 27 juin 1969 révisant l'arrêté loi du 28 décembre 1944 concernant la sécurité sociale des travailleurs. L'application de la loi est toutefois limitée au régime d'assurance obligatoire contre la maladie et l'invalidité, au régime de pension de retraite et de survie des travailleurs salariés et au régime de l'emploi et du chômage des travailleurs salariés.
+§ 4. (...) <L 2006-09-15/71, art. 198, 2°, 040; En vigueur : 01-12-2006>
+§ 5. (...) <L 2006-09-15/71, art. 198, 2°, 040; En vigueur : 01-12-2006>
+(NOTE : l'article 57/26 modifié par la loi du 15 septembre 2006 est :
+1° à partir du 1er décembre 2006, rétabli dans sa rédaction existante à la veille de cette modification (L 2006-09-15/71 , art. 198);
+2° à la date visée à l'article 231 de la loi du 15 septembre 2006, rétabli dans sa rédaction telle que celle-ci résulte de cette modification. (L 2006-09-15/71)
+Voir L 2006-12-27/33, art. 144)
+
+Art. 57/27.<L 14-07-1987, art. 11> [3 L'article 352 du Code pénal]3 est applicable au Commissaire général aux réfugiés et aux apatrides ([3 , à ses adjoints et aux agents du Commissariat général aux réfugiés et aux apatrides]3), en ce qui concerne les renseignements dont ils ont connaissance dans l'exercice de leurs fonctions. <L 2006-09-15/71, art. 199, 040; En vigueur : 01-12-2006>
+(NOTE : l'article 57/27 modifié par la loi du 15 septembre 2006 est :
+1° à partir du 1er décembre 2006, rétabli dans sa rédaction existante à la veille de cette modification (L 2006-09-15/71 , art. 199);
+2° à la date visée à l'article 231 de la loi du 15 septembre 2006, rétabli dans sa rédaction telle que celle-ci résulte de cette modification. (L 2006-09-15/71)
+Voir L 2006-12-27/33, art. 144)
+[1 L'alinéa 1er n'est pas d'application lorsqu'il concerne des renseignements :
+1) qui sont portés à la connaissance des services de renseignement et de sécurité et qui sont utiles à l'exécution de leurs missions telles que déterminées dans la loi du 30 novembre 1998 organique des services de renseignement et de sécurité; ou
+2) qui sont demandés par les services de police, par le procureur du Roi, le procureur fédéral ou le juge d'instruction dans le cadre d'une enquête de police ou judiciaire; ou
+3) relatifs à des indices d'infractions qui sont portés à la connaissance du procureur du Roi conformément à l'article 29 du Code d'instruction criminelle; ou
+4) qui, sur demande expresse, sont portés à la connaissance de juridictions européennes ou internationales conformément à la réglementation les concernant; ou
+5) concernant des données relatives à l'identité qui sont portées à la connaissance de l'Office des étrangers;
+[2 6) concernant des données qui sont portées à la connaissance de l'Office des étrangers dans le cadre de l'avis relatif à la demande d'admission au séjour pour apatridie visée à l'article 57/41, § 1er.]2
+Les autorités visées à l'alinéa 2 ne divulguent pas aux prétendus acteurs de persécutions ou d'atteintes graves à l'encontre du demandeur d'asile les informations concernant la demande d'asile, ni le fait qu'une demande d'asile a été introduite.
+Ils ne cherchent pas à obtenir des prétendus acteurs de persécutions ou d'atteintes graves à l'encontre du demandeur d'asile des informations d'une manière telle que ces acteurs soient informés qu'une demande d'asile a été introduite par le demandeur en question, et que l'intégrité physique de ce dernier et des personnes à sa charge, ou la liberté et la sécurité des membres de sa famille qui séjournent encore dans son pays d'origine, soient compromises.]1
+----------
+(1)<L 2015-08-10/11, art. 13, 082; En vigueur : 03-09-2015>
+(2)<L 2024-03-10/02, art. 7, 126; En vigueur : 01-09-2024>
+(3)<L 2026-06-16/01, art. 87, 135; En vigueur : 12-06-2026>
+
+Art. 57/28. <L 14-07-1987, art. 11> Chaque année, le Commissaire général aux réfugiés et aux apatrides fait rapport au (Ministre) sur sa mission. Une copie de ce rapport avec les observations éventuelles du (Ministre) est transmise à la Chambre des Représentants et au Sénat par le (Ministre). <L 1996-07-15/33, art. 4, 012; En vigueur : 16-12-1996>
+
+Art. 57/28/1. [1 En exécution de l'article 64, paragraphe 1er, du règlement (UE) 2024/1348, le Roi peut, par un arrêté délibéré en Conseil des ministres, désigner des pays comme pays d'origine sûrs autres que ceux désignés au niveau De l'Union. L'arrêté royal est adopté, au moins tous les deux ans, sur proposition conjointe du ministre et du ministre des Affaires étrangères et après que le ministre a obtenu l'avis du Commissaire général aux réfugiés et aux apatrides.]1
+----------
+(1)<Inséré par L 2026-06-16/01, art. 88, 135; En vigueur : 12-06-2026>
+
+CHAPITRE IIbis- Bénéficiaires de la protection temporaire, sur la base de la directive 2001/55/CE du Conseil de l'Union européenne du 20 juillet 2001 relative à des normes minimales pour l'octroi d'une protection temporaire en cas d'afflux massif de personnes déplacées et à des mesures tendant à assurer un équilibre entre les efforts consentis par les Etats membres pour accueillir ces personnes et supporter les conséquences de cet accueil. <inséré par L 2003-02-18/41, art. 8; En vigueur : 01-05-2003>
+
+Art. 57/29. § 1. <inséré par L 2003-02-18/41, art. 9; En vigueur : 01-05-2003> En cas d'afflux massif ou d'afflux massif imminent de personnes déplacées vers les Etats membres de l'Union européenne, constaté par une décision du Conseil de l'Union européenne prise en application de la directive 2001/55/CE du Conseil de l'Union européenne du 20 juillet 2001, relative à des normes minimales pour l'octroi d'une protection temporaire en cas d'afflux massif de personnes déplacées et à des mesures tendant à assurer un équilibre entre les efforts consentis par les Etats membres pour accueillir ces personnes et supporter les conséquences de cet accueil, les personnes qui appartiennent aux groupes spécifiques décrits par cette décision bénéficient, à partir de la date fixée par celle-ci, d'une protection temporaire.
+§ 2. Sous réserve de l'application de l'article 57/32 et à moins qu'une décision du Conseil de l'Union européenne adoptée conformément à la directive 2001/55/CE du Conseil de l'Union européenne du 20 juillet 2001 visée au § 1, ne mette fin à la protection temporaire antérieurement, celle-ci est accordée aux personnes visées pour une période d'un an à partir de la date de mise en oeuvre de la protection temporaire et est prorogée automatiquement, par période de six mois, pour un seconde période d'un an.
+Cette période totale de deux ans peut être prorogée par une nouvelle décision du Conseil de l'Union européenne adoptée conformément à la directive 2001/55/CE du Conseil de l'Union européenne du 20 juillet 2001 visée au § 1, pour une nouvelle période d'un an au maximum.
+
+Art. 57/30. <inséré par L 2003-02-18/41, art. 10; En vigueur : 01-05-2003> § 1. Sous réserve de l'application du § 2 ou de l'article 57/32, le ministre ou son délégué autorise le bénéficiaire de la protection temporaire visé à l'article 57/29 au séjour pour une durée d'un an. Cette autorisation est renouvelée, par périodes de six mois, tant qu'il n'est pas mis fin à la protection temporaire dans un des cas prévus à l'article 57/36, § 1. La durée de l'autorisation peut toutefois être réduite à la durée restant à courir avant la fin automatique de la protection temporaire mise en oeuvre par la décision du Conseil de l'Union européenne visée à l'article 57/29, § 1, ou prorogée par la décision du Conseil de l'Union européenne visée à l'article 57/29, § 2, alinéa 2.
+Le Roi détermine les modalités d'introduction de la demande de cette autorisation de séjour, par arrêté délibéré en Conseil des Ministres.
+Lors de la demande d'autorisation de séjour, il est remis au bénéficiaire de la protection temporaire un document, rédigé dans une langue qu'il comprend, dans lequel les dispositions relatives à la protection temporaire qui lui sont applicables sont clairement exposées.
+L'inscription au registre des étrangers du bénéficiaire de la protection temporaire autorisé au séjour et la délivrance du titre de séjour faisant foi de celle-ci ont lieu conformément aux dispositions de l'article 12.
+Le titre de séjour délivré est valable jusqu'au terme de validité de l'autorisation. Il est prorogé ou renouvelé, à la demande de l'intéressé, par l'administration communale du lieu de résidence, à condition que cette demande ait été introduite avant l'expiration du titre et pour autant que le ministre ou son délégué n'ait pas mis fin à l'autorisation sur la base de l'article 57/32, § 1, ou de l'article 57/36, § 2.
+Le Roi détermine les délais et les conditions dans lesquels le renouvellement ou la prorogation du titre de séjour doit être demandé.
+§ 2. Le ministre ou son délégué peut refuser l'autorisation de séjour au bénéficiaire de la protection temporaire visée à l'article 57/29 :
+1° lorsque la demande d'autorisation de séjour est introduite à l'étranger et que le nombre de personnes bénéficiant de la protection temporaire dans le Royaume excède la capacité d'accueil de la Belgique indiquée dans la décision du Conseil de l'Union européenne visée à l'article 57/29, § 1;
+2° lorsque celui-ci est autorisé à séjourner dans un autre Etat membre de l'Union européenne tenu d'appliquer la décision du Conseil de l'Union européenne visée à l'article 57/29, § 1, sans préjudice des dispositions de l'article 57/35.
+L'alinéa 1, 1°, n'est pas applicable aux étrangers bénéficiant des dispositions de l'article 57/34.
+En cas de refus de l'autorisation de séjour sur la base de l'alinéa 1, 1°, le ministre ou son délégué veille à ce que le bénéficiaire de la protection temporaire soit accueilli dans les meilleurs délais dans un autre Etat membre de l'Union européenne tenu d'appliquer la décision du Conseil de l'Union européenne visée à l'article 57/29, § 1.
+
+Art. 57/31.<inséré par L 2003-02-18/41, art. 11; En vigueur : 01-05-2003> L'étranger bénéficiaire de la protection temporaire en vertu de l'article 57/29 peut être soumis à la prise des empreintes digitales.
+Les empreintes digitales sont prises à l'initiative du ministre ou de son délégué et ne peuvent être utilisées que dans la mesure où elles sont nécessaires pour établir l'identité de l'étranger.
+[1 L'article 8octies, § 4, alinéa 2, est applicable aux empreintes digitales des bénéficiaires de la protection temporaire en vertu de l'article 57/29]1.
+----------
+(1)<L 2026-06-16/01, art. 89, 135; En vigueur : 12-06-2026>
+
+Art. 57/32. <inséré par L 2003-02-18/41, art. 12; En vigueur : 01-05-2003> § 1. Le ministre ou son délégué peut exclure du bénéfice de la protection temporaire et, selon le cas, refuser l'accès au territoire du Royaume ou décider que l'étranger invoquant le bénéfice de cette protection ne peut pas ou ne peut plus y séjourner en cette qualité, dans un des cas suivants :
+1° s'il existe de sérieuses raisons de penser que cet étranger a commis un crime contre la paix, un crime de guerre ou un crime contre l'humanité, au sens des conventions internationales liant la Belgique;
+2° s'il existe de sérieuses raisons de penser que cet étranger a commis un crime grave de droit commun en dehors du territoire belge avant d'y être admis en tant que bénéficiaire de la protection temporaire.
+La gravité de la persécution à laquelle il faut s'attendre doit être considérée par rapport à la nature du crime dont l'intéressé est soupçonné. Les actions particulièrement cruelles, même si elles sont commises avec un objectif prétendument politique, peuvent recevoir la qualification de crimes graves de droit commun. Cela vaut pour les participants au crime comme pour les instigateurs de celui-ci;
+3° s'il existe de sérieuses raisons de penser que cet étranger s'est rendu coupable d'agissements contraires aux buts et aux principes des Nations unies;
+4° s'il existe des motifs raisonnables de penser que cet étranger représente un danger pour la sécurité nationale ou que la condamnation définitive pour un crime ou un délit particulièrement grave lui fait constituer une menace pour l'ordre public.
+La décision d'exclusion est fondée exclusivement sur le comportement personnel de l'étranger et respecte le principe de proportionnalité.
+§ 2. Dans des circonstances graves, s'il l'estime nécessaire à la sauvegarde de l'ordre public ou de la sécurité nationale, le ministre peut enjoindre à l'intéressé de résider en un lieu déterminé.
+Dans des circonstances exceptionnellement graves, le ministre peut mettre l'intéressé à titre provisoire à la disposition du Gouvernement, s'il l'estime nécessaire à la sauvegarde de l'ordre public ou de la sécurité nationale.
+
+Art. 57/33. <inséré par L 2003-02-18/41, art. 13; En vigueur : 01-05-2003> Sous réserve d'un accord bilatéral liant la Belgique, lorsque l'étranger autorisé au séjour dans le Royaume en tant que bénéficiaire de la protection temporaire sur la base de l'article 57/30 tente de pénétrer ou se trouve irrégulièrement dans un autre Etat membre de l'Union européenne tenu d'appliquer la décision du Conseil de l'Union européenne visée à l'article 57/29, § 1, le ministre ou son délégué est tenu de le reprendre en charge, même si la durée de validité du titre de séjour de l'intéressé est expirée.
+L'étranger doit, lors de son entrée dans le Royaume ou dans les huit jours ouvrables qui suivent celle-ci, se présenter auprès du ministre ou de son délégué, qui lui en donne acte par écrit.
+
+Art. 57/34.[1 § 1er. Dans les cas où un afflux massif ou un afflux massif imminent de personnes déplacées visées à l'article 57/29, § 1er, implique des circonstances qui ont conduit à la séparation de familles déjà formées dans le pays d'origine, les membres de la famille visés aux paragraphes 2 et 3, qui ne sont pas encore sur le territoire de l'Union européenne et qui ont besoin d'une protection au sens de l'article 57/29, § 1er, peuvent demander une autorisation de séjour de plus de trois mois afin d'être réunis avec l'étranger qui, conformément à l'article 57/30, a été autorisé à séjourner dans le Royaume en tant que bénéficiaire du statut de protection temporaire.
+§ 2. [2 Le ministre ou son délégué accorde une autorisation de séjour de plus de trois mois aux membres de la famille suivants de l'étranger qui, conformément à l'article 57/30, a été autorisé à séjourner dans le Royaume en tant que bénéficiaire du statut de protection temporaire, et qui demandent à y séjourner, pour autant que la famille était déjà constituée au moment des circonstances visées à l'article 57/29, § 1er, et que ces circonstances ont entraîné la séparation de la famille:
+1° le conjoint, qui vient vivre avec lui, pour autant que tous deux soient âgés de plus de vingt-et-un ans;
+2° l'étranger lié au bénéficiaire au moyen d'un partenariat enregistré conformément à une loi, qui vient vivre avec lui, pour autant que tous deux soient âgés de plus de vingt-et-un ans;
+3° les enfants mineurs non mariés du bénéficiaire, de son conjoint ou de son partenaire enregistré visé au 2°, qui viennent vivre avec eux avant d'avoir atteint l'âge de dix-huit ans et pour autant que le bénéficiaire rejoint, son conjoint ou partenaire enregistré, exerce l'autorité parentale, y compris le droit de garde. Si l'autorité parentale est partagée, l'autre titulaire de l'autorité parentale doit avoir donné son accord;
+4° les parents du bénéficiaire mineur non marié, pour autant qu'ils viennent vivre avec lui avant qu'il ait atteint l'âge de dix-huit ans.
+Les partenaires enregistrés, visés à l'alinéa 1er, 2°, doivent répondre aux conditions suivantes:
+1° prouver qu'ils entretiennent une relation de partenariat durable et stable dûment établie. Le caractère durable et stable de cette relation est établi:
+a) si les partenaires prouvent qu'ils ont cohabité de manière légale et ininterrompue pendant au moins un an avant la demande;
+b) ou si les partenaires prouvent qu'ils se connaissent depuis au moins deux ans précédant la demande et qu'ils fournissent la preuve qu'ils ont entretenu des contacts réguliers par téléphone, par courrier ordinaire ou électronique, et qu'ils se sont rencontrés trois fois durant les deux années précédant la demande et que ces rencontres comptabilisent au total quarante-cinq jours ou plus;
+c) ou si les partenaires ont un enfant commun;
+2° être non marié et ne pas entretenir une relation de partenariat durable et stable avec une autre personne;
+3° ne pas être une des personnes visées aux articles 161 à 163 de l'ancien Code civil;
+4° n'avoir fait ni l'un ni l'autre l'objet d'une décision définitive de refus de célébration du mariage sur la base de l'article 167 de l'ancien Code civil.
+Les membres de la famille visés dans le présent paragraphe doivent apporter la preuve qu'ils ne sont pas atteints d'une des maladies pouvant mettre en danger la santé publique, énumérées dans l'annexe à la présente loi]2.
+§ 3. Le ministre ou son délégué peut accorder une autorisation de séjour de plus de trois mois aux autres membres proches de la famille de l'étranger qui, conformément à l'article 57/30, a été autorisé à séjourner dans le Royaume en tant que bénéficiaire du statut de protection temporaire, si au moment des événements visés à l'article 57/29, § 1er, ils vivaient avec le bénéficiaire et, à ce moment, étaient entièrement ou principalement à charge du bénéficiaire.
+Le membre de la famille visé à l'alinéa 1er doit apporter la preuve qu'il n'est pas atteint d'une des maladies pouvant mettre en danger la santé publique, énumérées dans l'annexe à la présente loi.
+Lorsque le ministre ou son délégué envisage de refuser l'autorisation de séjour du membre de la famille, il tient compte de la nature et de la solidité des liens familiaux. Lors de cette évaluation, le ministre ou son délégué tient compte de tous les documents présentés par le demandeur.
+§ 4. Le membre de la famille doit joindre à la demande les documents qui prouvent qu'il remplit les conditions visées aux paragraphes précédents, ainsi qu'un certificat médical attestant qu'il n'est pas atteint d'une des maladies énumérées à l'annexe à la présente loi et, s'il est âgé de plus de dix-huit ans, un extrait de casier judiciaire ou un document équivalent. En cas d'impossibilité dûment justifiée de produire ces deux derniers documents, le ministre ou son délégué peut, compte tenu des circonstances, néanmoins autoriser le membre de la famille à séjourner sur le territoire du Royaume.
+Lorsqu'il est constaté que le membre de la famille ne peut apporter la preuve des liens de parenté ou d'alliance invoqués, par des documents officiels conformes à l'article 30 de la loi du 16 juillet 2004 portant le Code de droit international privé ou aux conventions internationales portant sur la même matière, le ministre ou son délégué peut tenir compte d'autres preuves valables produites au sujet de ce lien. A défaut, le ministre ou son délégué peut procéder ou faire procéder à des entretiens avec le membre de la famille et le bénéficiaire rejoint ou à toute enquête jugée nécessaire, et proposer, le cas échéant, une analyse complémentaire.
+§ 5. Le ministre ou son délégué peut décider de refuser la demande d'autorisation de séjour de plus de trois mois dans les cas suivants:
+1° le membre de la famille ne remplit pas ou plus une des conditions visées aux paragraphes précédents;
+2° le membre de la famille et le bénéficiaire rejoint n'entretiennent pas ou plus une vie conjugale ou familiale effective;
+3° sauf dérogations prévues par un traité international, le membre de la famille se trouve dans un des cas prévus à l'article 3, 5° à 10° ;
+4° le membre de la famille se trouve dans un des cas visés à l'article 57/32, § 1er;
+5° le membre de la famille est le conjoint d'un bénéficiaire polygame et un autre conjoint de ce bénéficiaire séjourne déjà dans le Royaume.
+Sous réserve des dispositions de l'article 57/35, le ministre ou son délégué peut refuser l'autorisation de séjour au membre de la famille lorsque celui-ci est autorisé à séjourner dans un autre Etat membre de l'Union européenne tenu d'appliquer la décision du Conseil de l'Union européenne visée à l'article 57/29, § 1er.
+Dans le cadre de l'examen de la demande, il est dûment tenu compte de l'intérêt supérieur de l'enfant.
+§ 6. Les membres de la famille autorisés à séjourner dans le Royaume sur la base du présent article, bénéficient du statut de protection temporaire. Ils sont soumis aux dispositions de la présente loi qui sont applicables aux étrangers qui ont été autorisés à séjourner dans le Royaume en tant que bénéficiaires du statut de protection temporaire conformément à l'article 57/30.
+§ 7. Le Roi fixe, par arrêté délibéré en Conseil des ministres, les modalités d'introduction de la demande en vue d'obtenir l'autorisation de séjour ainsi que la manière dont le membre de la famille peut prouver qu'il remplit les conditions du présent article.]1
+----------
+(1)<L 2024-03-10/03, art. 18, 127; En vigueur : 01-09-2024>
+(2)<L 2025-07-18/29, art. 16, 129; En vigueur : 18-08-2025>
+
+Art. 57/34/1.
+<Abrogé par L 2025-07-18/29, art. 17, 129; En vigueur : 18-08-2025>
+
+Art. 57/35. <inséré par L 2003-02-18/41, art. 15; En vigueur : 01-05-2003> § 1. Dès l'arrivée d'un bénéficiaire de la protection temporaire visé à l'article 57/29, § 1, sur le territoire et pour autant que celui-ci y ait consenti, le ministre ou son délégué peut saisir un autre Etat membre de l'Union européenne tenu d'appliquer la décision du Conseil de l'Union européenne visée à l'article 57/29, § 1, aux fins du transfert de cette personne vers le territoire de cet Etat.
+A la demande de cet Etat membre de l'Union européenne, le ministre ou son délégué fournira les informations relatives au bénéficiaire de la protection temporaire qui sont nécessaires pour traiter la demande de transfert, c'est-à-dire les données à caractère personnel relatives à l'étranger concerné, ses documents d'identité et de voyage, les documents attestant l'existence de liens familiaux, les autres données indispensables pour établir l'identité de l'intéressé ou ses liens de parenté, les décisions de délivrer ou de refuser de délivrer un titre de séjour ou un visa à l'étranger concerné prises par le ministre ou son délégué ainsi que les documents étayant ces décisions et les demandes de titre de séjour ou de visa introduites par l'étranger concerné en cours d'examen par le ministre ou son délégué ainsi que l'état d'avancement de la procédure.
+§ 2. Lorsque les membres séparés de la famille, au sens de l'article 57/34, d'un étranger autorisé au séjour dans le Royaume en tant que bénéficiaire de la protection temporaire sur la base de l'article 57/30, bénéficient de la protection temporaire visée à l'article 57/29, dans un autre Etat membre ou dans différents autres Etats membres de l'Union européenne, le ministre ou son délégué peut, en tenant compte des souhaits des intéressés, saisir cet Etat membre ou un de ces Etats membres aux fins du transfert de cette famille vers son territoire.
+Les dispositions du § 1, alinéa 2, sont également applicables dans ce cadre.
+§ 3. Lorsque l'étranger autorisé au séjour dans le Royaume en tant que bénéficiaire de la protection temporaire sur la base de l'article 57/30 doit être transféré vers un autre Etat membre, le ministre ou son délégué peut lui retirer le titre de séjour qui lui a été délivré et lui donner l'ordre de quitter le territoire. Il peut également lui enjoindre de se présenter auprès des autorités compétentes de cet Etat avant une date déterminée.
+§ 4. Lorsqu'un étranger bénéficiant de la protection temporaire visée, à l'article 57/29, dans un autre Etat membre doit être transféré vers la Belgique, il doit, lors de son entrée dans le Royaume ou du moins dans les huit jours ouvrables qui suivent celle-ci, se présenter auprès du ministre ou de son délégué, qui lui en donne acte par écrit.
+
+Art. 57/36.<inséré par L 2003-02-18/41, art. 16; En vigueur : 01-05-2003> § 1. Le régime de protection temporaire accordé prend fin lorsque la durée maximale prévue à l'article 57/29, § 2, a été atteinte ou à la date fixée par une décision du Conseil de l'Union européenne mettant fin à la protection temporaire, adoptée conformément à la directive 2001/55/CE du Conseil de l'Union européenne du 20 juillet 2001 visée à l'article 57/29, § 1.
+§ 2. Le ministre ou son délégué peut, lorsque le régime de protection temporaire prend fin dans les cas prévus au § 1, mettre fin à l'autorisation de séjourner plus de trois mois dans le Royaume octroyée au bénéficiaire de la protection temporaire [1 sur la base de l'article 57/30 ou 57/34]1, lui retirer le titre de séjour délivré et, sous réserve de l'application des dispositions du chapitre II, lui donner l'ordre de quitter le territoire.
+[2 Il peut prendre la même mesure à l'égard des membres de la famille d'un bénéficiaire du statut de protection temporaire qui ont été autorisés à séjourner dans le Royaume sur la base de l'article 10bis, § 2/1]2. L'ordre de quitter le territoire indique qu'il a été fait application des dispositions du présent article et le délai dans lequel l'étranger doit quitter le territoire ne peut être inférieur à un mois.
+Le ministre ou son délégué proroge l'autorisation de séjour d'un étranger qui a bénéficié de la protection temporaire lorsqu'on ne saurait raisonnablement, en raison de son état de santé, s'attendre à ce que celui-ci voyage.
+Le ministre ou son délégué peut en outre proroger l'autorisation de séjour d'un étranger qui a bénéficié de la protection temporaire lorsque cet étranger fait partie d'une famille dont les enfants mineurs poursuivent une scolarité dans le Royaume, afin de permettre à ceux-ci de terminer l'année scolaire en cours.
+Dans les cas visés aux alinéas précédents, les dispositions relatives aux bénéficiaires de la protection temporaire ne sont plus d'application.
+----------
+(1)<L 2024-03-10/03, art. 20, 127; En vigueur : 01-09-2024>
+(2)<L 2025-07-18/29, art. 18, 129; En vigueur : 18-08-2025>
+
+CHAPITRE IIter. [1 - Apatrides.]1
+----------
+(1)<Inséré par L 2024-03-10/02, art. 8, 126; En vigueur : 01-09-2024>
+
+Art. 57/37. [1 L'étranger obtient une admission au séjour pour apatridie s'il remplit les conditions suivantes:
+1° il satisfait aux conditions prévues à l'article 1er de la Convention de New York du 28 septembre 1954 relative au Statut des Apatrides;
+2° il démontre son identité et sa provenance;
+3° il a involontairement perdu sa nationalité ou n'en a jamais possédé une;
+4° il ne peut pas acquérir ou recouvrer la nationalité d'un autre Etat;
+5° il ne dispose pas de titre de séjour légal et durable ou ne peut pas en obtenir un dans un autre Etat avec lequel il aurait des liens et auquel il serait effectivement admis;
+6° il ne constitue pas une menace pour l'ordre public ou la sécurité nationale.]1
+----------
+(1)<Inséré par L 2024-03-10/02, art. 9, 126; En vigueur : 01-09-2024>
+
+Art. 57/38. [1 § 1er. La demande d'admission au séjour pour apatridie est introduite par pli recommandé auprès du ministre ou de son délégué et contient l'adresse de la résidence effective de l'étranger en Belgique.
+S'ils sont rédigés dans une autre langue qu'une des trois langues nationales ou l'anglais, les documents présentés par l'étranger sont accompagnés d'une traduction vers l'une des trois langues nationales ou vers l'anglais.
+En l'absence de la traduction visée à l'alinéa 2, si les documents soumis par l'étranger sont rédigés dans une langue autre que l'une des trois langues nationales ou l'anglais, l'étranger peut les commenter au cours d'un entretien personnel, le cas échéant assisté d'un interprète présent. Ce commentaire concerne au moins les informations pertinentes contenues dans les documents présentés.
+En l'absence de toute traduction fournie par l'étranger, les instances chargées de l'examen ne sont pas tenues de traduire intégralement chaque document soumis par l'étranger vers l'une des trois langues nationales ou vers l'anglais. Il suffit d'identifier les informations pertinentes des documents soumis et de les traduire.
+§ 2. L'étranger qui introduit une nouvelle demande est réputé se désister des demandes pendantes introduites antérieurement.]1
+----------
+(1)<Inséré par L 2024-03-10/02, art. 10, 126; En vigueur : 01-09-2024>
+
+Art. 57/39. [1 Lors de l'introduction de la demande, il appartient à l'étranger de démontrer qu'il remplit les conditions prévues à l'article 57/37. A cette fin, l'étranger apporte tous les éléments nécessaires. Les instances chargées de l'examen de la demande coopèrent avec l'étranger pour la détermination des éléments pertinents de la demande. Les instances chargées de l'examen de la demande ont pour tâche d'évaluer les éléments pertinents de la demande.
+Les éléments visés à l'alinéa 1er comprennent notamment les déclarations de l'étranger et tous les documents ou pièces en sa possession concernant son identité, son origine, sa ou ses nationalités antérieures, son âge, son passé, y compris ceux des membres de la famille à prendre en compte, le ou les pays ainsi que le ou les lieux où il a résidé auparavant, ou avec lesquels il a un lien, ses itinéraires, ses titres d'identité et de voyage, et les raisons qui ont conduit à son apatridie.]1
+----------
+(1)<Inséré par L 2024-03-10/02, art. 11, 126; En vigueur : 01-09-2024>
+
+Art. 57/40. [1 Le ministre ou son délégué ne prend pas la demande en considération dans les cas suivants:
+1° la demande n'a pas été introduite conformément aux conditions de l'article 57/38, § 1er, alinéa 1er;
+2° les éléments invoqués ont déjà été examinés lors d'une précédente demande d'admission au séjour pour apatridie sur la base de ce chapitre qui a été rejetée sur le fond;
+3° l'étranger ne remplit manifestement pas les conditions visées à l'article 57/37;
+4° l'étranger est déjà admis ou autorisé à séjourner dans le Royaume pour une durée illimitée;
+5° l'étranger ne peut pas démontrer qu'il disposait antérieurement, soit d'un séjour légal de plus de trois mois, soit d'un séjour couvert en tant que demandeur de protection internationale.]1
+----------
+(1)<Inséré par L 2024-03-10/02, art. 12, 126; En vigueur : 01-09-2024>
+
+Art. 57/41. [1 § 1er. Lorsqu'il n'est pas fait application de l'article 57/40, le ministre ou son délégué transmet la demande au Commissaire général aux réfugiés et aux apatrides afin d'obtenir un avis quant aux conditions visées à l'article 57/37, 1° à 5°. En ce qui concerne la condition prévue à l'article 57/37, 1°, le Commissaire général aux réfugiés et aux apatrides est lié, le cas échéant, par une décision définitive antérieure rendue dans le cadre de l'article 572bis, 1°, du Code judiciaire.
+Le Commissaire général aux réfugiés et apatrides transmet son avis motivé au ministre ou à son délégué, ainsi que tous les éléments nécessaires à l'évaluation de la demande, au plus tard dans les trois mois qui suivent la réception de la demande.
+Le ministre ou son délégué prend une décision sur la demande au plus tard dans les trois mois à compter de la réception de l'avis.
+§ 2. Le ministre ou son délégué peut traiter une demande selon une procédure d'examen accélérée lorsque l'étranger se trouve dans un lieu déterminé tel que visé dans les articles 74/8 ou 74/9, ou fait l'objet d'une mesure de sûreté telle que visée à l'article 68.
+Dans ce cas, les délais visés au paragraphe 1er, alinéas 2 et 3, sont réduits à quinze jours.
+§ 3. Si une décision est rendue dans le cadre de l'article 572bis, 1°, du Code judiciaire, les délais visés au paragraphe 1er, alinéas 2 et 3, sont suspendus de plein droit jusqu'à ce que cette décision soit devenue définitive.]1
+----------
+(1)<Inséré par L 2024-03-10/02, art. 13, 126; En vigueur : 01-09-2024>
+
+Art. 57/42. [1 Le traitement de la demande est suspendu si l'étranger a introduit une demande de protection internationale. La suspension s'applique jusqu'à ce qu'une décision finale soit prise au sujet de la demande de protection internationale.
+Par dérogation à l'alinéa 1er, le traitement de la demande n'est pas suspendu si le Commissaire général aux réfugiés et aux apatrides estime pouvoir rendre l'avis visé à l'article 57/41 sans attendre une décision finale au sujet de la demande de protection internationale.
+Si le statut de réfugié ou le statut de protection subsidiaire est accordé, la demande devient sans objet de plein droit.]1
+----------
+(1)<Inséré par L 2024-03-10/02, art. 14, 126; En vigueur : 01-09-2024>
+
+Art. 57/43. [1 § 1er. Le ministre ou son délégué ou le Commissaire général aux réfugiés et aux apatrides peut, à chaque étape de la procédure, entendre l'étranger ou lui demander qu'il fournisse des renseignements supplémentaires.
+Le Roi fixe les modalités de l'audition et de la demande de renseignements.
+§ 2. Le ministre ou son délégué prend une décision qui clôture l'examen de la demande lorsque:
+1° l'étranger ne se présente pas à la date fixée dans la convocation et ne donne pas de motif valable à ce sujet;
+2° l'étranger ne donne pas suite à une demande de renseignements dans les trente jours suivant l'envoi de celle-ci et ne donne pas de motif valable à ce sujet.]1
+----------
+(1)<Inséré par L 2024-03-10/02, art. 15, 126; En vigueur : 01-09-2024>
+
+Art. 57/44. [1 Sans préjudice de l'article 57/40, le ministre ou son délégué refuse la demande lorsque l'étranger ne remplit pas les conditions de l'article 57/37.
+Si le ministre ou son délégué refuse la demande parce que les conditions de l'article 57/37, 6°, ne sont pas remplies, l'avis visé à l'article 57/41 ne doit pas être fourni. Cet avis ne doit pas non plus être fourni s'il existe une décision négative définitive en vertu de l'article 572bis, 1°, du Code judiciaire.]1
+----------
+(1)<Inséré par L 2024-03-10/02, art. 16, 126; En vigueur : 01-09-2024>
+
+Art. 57/45. [1 Lorsque l'étranger remplit les conditions de l'article 57/37, il est admis au séjour d'une durée limitée pour une période de cinq ans. A l'issue de cette période, à compter de l'octroi de l'admission au séjour, l'étranger est admis au séjour pour une durée illimitée.]1
+----------
+(1)<Inséré par L 2024-03-10/02, art. 17, 126; En vigueur : 01-09-2024>
+
+Art. 57/46. [1 Sans préjudice des articles 21, 22, 23 et 74/20, il peut être mis fin au séjour si l'étranger ne remplit plus les conditions de l'article 57/37.
+A cette fin, le ministre ou son délégué peut réexaminer le séjour de sa propre initiative et, le cas échéant, il peut demander un nouvel avis au Commissaire général aux réfugiés et aux apatrides quant aux conditions visées à l'article 57/37, 1° à 5°.
+La décision visée à l'alinéa 1er ne peut être prise qu'à l'égard de l'étranger qui a été admis à un séjour d'une durée limitée.]1
+----------
+(1)<Inséré par L 2024-03-10/02, art. 18, 126; En vigueur : 01-09-2024>
+
+CHAPITRE III. - ETUDIANTS.
+
+SECTION I. [1 Dispositions générales ]1
+----------
+(1)<Inséré par L 2021-07-11/10, art. 7, 112; En vigueur : 15-08-2021>
+
+Art. 58.[1 Pour l'application du présent chapitre, il y a lieu d'entendre par:
+1° étudiant: un ressortissant d'un pays tiers qui a été admis par un établissement d'enseignement supérieur belge et qui s'est vu accorder une autorisation de séjour de plus de nonante jours dans le Royaume afin de suivre des études à temps plein;
+2° études à temps plein: inscription à un programme d'études supérieures comprenant au moins 54 crédits, ou inscription à un programme d'études supérieures dont le solde de crédits est inférieur parce que l'étudiant se trouve dans sa dernière année académique ou parce qu'indépendamment de sa volonté, l'étudiant ne peut pas totaliser un nombre plus élevé de crédits, ou année préparatoire comprenant au moins 12 heures de cours par semaine pendant une année académique;
+3° établissement d'enseignement supérieur: institution, reconnue par l'autorité compétente, qui est habilitée à organiser un programme d'études supérieures et à délivrer les titres, grades académiques, diplômes et certificats correspondants;
+4° études supérieures: tout programme d'enseignement supérieur sanctionné par un titre, grade académique, diplôme ou certificat correspondant au niveau 5, 6, 7 ou 8 du cadre des certifications établi par l'une des trois Communautés;
+5° année préparatoire: année d'études unique pour suivre une formation afin de se préparer aux études supérieures visées, organisée par l'établissement d'enseignement supérieur, soit afin de procurer les connaissances complémentaires requises pour accéder ensuite aux études supérieures visées, soit pour acquérir la maîtrise de l'une des langues nationales, qui concerne également la langue d'enseignement des études visées;
+6° programme de l'Union ou programme multilatéral comportant des mesures de mobilité: programme financé par l'Union européenne ou par des Etats membres qui favorise la mobilité des ressortissants de pays tiers dans l'Union européenne ou dans les Etats membres qui participent au programme concerné;
+7° mobilité: droit du ressortissant d'un pays tiers titulaire d'une autorisation valable délivrée par le premier Etat membre, en qualité d'étudiant, de séjourner dans le deuxième Etat membre pendant une période n'excédant pas 360 jours pour achever une partie de ses études dans le cadre d'un programme de l'Union ou d'un programme multilatéral comportant des mesures de mobilité ou d'une convention entre deux établissements d'enseignement supérieur ou plus;
+8° premier Etat membre: Etat membre qui délivre en premier lieu une autorisation à un ressortissant d'un pays tiers en qualité d'étudiant;
+9° deuxième Etat membre: Etat membre, autre que le premier Etat membre, où l'étudiant a l'intention d'exercer, ou exerce déjà, le droit à la mobilité.]1
+----------
+(1)<L 2021-07-11/10, art. 8, 112; En vigueur : 15-08-2021>
+
+Art. 59.[1 § 1er. Les dispositions de la présente section s'appliquent au ressortissant d'un pays tiers qui demande à être autorisé ou qui est autorisé à séjourner plus de nonante jours sur le territoire du Royaume pour y étudier.
+§ 2. Les dispositions de la présente section s'appliquent sous réserve des dispositions dérogatoires des sections 2 et 3. ]1
+----------
+(1)<L 2021-07-11/10, art. 9, 112; En vigueur : 15-08-2021>
+
+Art. 60.[1 § 1er. Le ressortissant d'un pays tiers souhaitant séjourner sur le territoire du Royaume en tant qu'étudiant doit introduire sa demande auprès du poste diplomatique ou consulaire compétent pour le lieu de sa résidence à l'étranger.
+§ 2. Par dérogation au paragraphe 1er, le ressortissant d'un pays tiers qui est déjà admis ou autorisé à séjourner sur le territoire du Royaume pour une durée n'excédant pas nonante jours conformément au Titre I, Chapitre II, ou qui est déjà admis ou autorisé à séjourner sur le territoire du Royaume pendant plus de nonante jours en une autre qualité, peut introduire sa demande auprès de l'administration communale du lieu de sa résidence sur le territoire du Royaume s'il introduit la demande avant l'expiration de la durée de validité de ce permis ou de cette autorisation, à condition qu'il soit déjà inscrit dans un établissement d'enseignement supérieur afin d'y suivre des études à temps plein.
+§ 3. Le ressortissant d'un pays tiers joint à sa demande les documents suivants:
+1° une copie de son passeport valable ou d'un document de voyage en tenant lieu;
+2° la preuve du paiement de la redevance, comme prévu à l'article 1/1, s'il est soumis à cette obligation;
+3° une attestation délivrée par un établissement d'enseignement supérieur prouvant:
+a) qu'il est inscrit dans un établissement d'enseignement supérieur pour suivre des études supérieures ou une année préparatoire à temps plein, ou
+b) qu'il est admis aux études, ou
+c) qu'il est inscrit à un examen d'admission ou une épreuve d'admission;
+Le Roi fixe les conditions auxquelles cette attestation doit répondre.
+4° s'il est âgé de moins de dix-huit ans, une preuve de l'autorisation de ses parents ou, le cas échéant, de la personne exerçant la tutelle;
+5° la preuve, conformément à l'article 61, qu'il disposera de moyens de subsistance suffisants pour la durée de son séjour, afin de ne pas devenir une charge pour le système d'aide sociale du Royaume au cours de son séjour;
+6° la preuve qu'il dispose ou disposera d'une assurance maladie couvrant l'ensemble des risques en Belgique pour la durée de son séjour;
+Si la demande a été introduite à l'étranger et qu'il n'est pas encore possible de joindre cette preuve à la demande, celle-ci doit être produite dans le délai prévu à l'article 61/1/1, § 4.
+7° un certificat médical attestant qu'il n'est pas atteint d'une des maladies énumérées à l'annexe de la présente loi;
+8° s'il est âgé de plus de dix-huit ans, un extrait du casier judiciaire ou un document équivalent, délivré par le pays d'origine ou par le pays de sa dernière résidence, datant de moins de six mois, et attestant qu'il n'a pas été condamné pour des crimes ou des délits de droit commun.
+En cas d'impossibilité dûment justifiée de produire les documents visés au 7° et 8°, le ministre ou son délégué peut toutefois, compte tenu des circonstances, autoriser l'étranger à séjourner sur le territoire du Royaume pour y faire des études.
+§ 4. S'ils sont rédigés dans une autre langue qu'une des trois langues nationales ou l'anglais, les documents produits doivent être accompagnés d'une traduction jurée vers l'une des trois langues nationales ou vers l'anglais. ]1
+----------
+(1)<L 2021-07-11/10, art. 10, 112; En vigueur : 15-08-2021>
+
+Art. 61.[1 § 1er. La preuve de moyens de subsistance suffisants tels que prévus à l'article 60, § 3, alinéa 1er, 5°, est apportée en produisant un ou plusieurs des documents suivant(s):
+1° une attestation émanant soit d'une organisation internationale ou d'une autorité nationale, soit d'une communauté, d'une région, d'une province ou d'une commune, soit d'un établissement d'enseignement supérieur, précisant que le ressortissant d'un pays tiers bénéficie ou bénéficiera prochainement d'une bourse ou d'un prêt;
+2° un engagement de prise en charge souscrit par une personne physique, qui a la nationalité belge ou qui est un citoyen de l'Union bénéficiant d'un droit de séjour de plus de trois mois sur le territoire du Royaume ou d'un autre Etat membre de l'Union européenne ou qui est un ressortissant d'un pays tiers admis ou autorisé à séjourner sur le territoire du Royaume ou d'un autre Etat membre de l'Union européenne pour une durée illimitée ou qui est un membre de la famille jusqu'au troisième degré inclus, par lequel elle s'engage, vis-à-vis du ressortissant d'un pays tiers, de l'Etat belge et de tout centre public d'aide sociale, pour la durée du séjour projeté, prolongée de douze mois, à supporter les frais des soins de santé, d'hébergement, des études et de rapatriement du ressortissant du pays tiers à charge;
+3° tout autre moyen de preuve de moyens de subsistance suffisants.
+Le Roi fixe les conditions auxquelles doivent répondre l'attestation visée à l'alinéa 1er, 1°, l'engagement visé à l'alinéa 1er, 2°, et la personne qui souscrit cet engagement.
+§ 2. Le Roi détermine le montant minimum des moyens d'existence dont doit disposer le ressortissant d'un pays tiers.
+Dans le cadre de l'appréciation de ces moyens d'existence, il est notamment tenu compte des ressources provenant d'une subvention, d'une bourse, d'une indemnité ou de l'exercice légal et régulier d'une activité lucrative en dehors du temps qui doit normalement être consacré aux études.
+§ 3. L'examen visant à vérifier si le ressortissant d'un pays tiers dispose de ressources suffisantes est fondé sur un examen individuel du cas d'espèce ]1.
+----------
+(1)<L 2021-07-11/10, art. 11, 112; En vigueur : 15-08-2021>
+
+Art. 61/1.[1 § 1er. Selon le lieu où la demande a été introduite, le bourgmestre ou son délégué ou le poste diplomatique ou consulaire vérifie si tous les documents prévus à l'article 60, § 3, sont fournis. Le cas échéant, un accusé de réception de la demande, dont le modèle est déterminé par le Roi, est délivré au ressortissant d'un pays tiers.
+§ 2. Si tous les documents requis n'ont pas été fournis, l'autorité auprès de laquelle la demande a été introduite informe par écrit le ressortissant de pays tiers des documents qu'il doit encore fournir.
+Le ressortissant d'un pays tiers dispose d'un délai de trente jours à compter de la notification visée à l'alinéa 1er pour compléter sa demande. Si la demande a été introduite sur la base de l'article 60, § 2, ces documents complémentaires doivent en tout cas être fournis avant l'expiration de la durée de validité de son permis ou de son autorisation de séjour, même si le délai de trente jours n'est pas encore écoulé au moment de l'expiration du permis ou de l'autorisation de séjour.
+S'il fournit les documents requis dans le délai prévu, l'autorité auprès de laquelle la demande a été introduite lui délivre un accusé de réception de sa demande, tel que visé au paragraphe 1er.
+§ 3. [2 ...]2
+§ 4. Le ministre ou son délégué peut déclarer la demande irrecevable si les documents manquants n'étaient pas fournis dans le délai mentionné au paragraphe 2, alinéa 2.
+Le Roi fixe le modèle de la décision d'irrecevabilité. ]1
+----------
+(1)<Inséré par L 2021-07-11/10, art. 12, 112; En vigueur : 15-08-2021>
+(2)<L 2022-08-21/05, art. 8, 116; En vigueur : 19-11-2022>
+
+Art. 61/1/1. [1 § 1er. Le ministre ou son délégué prend une décision et la notifie au ressortissant d'un pays tiers dans un délai de nonante jours suivant la date de l'accusé de réception de la demande, visé à l'article 61/1, § 1er.
+Si le ressortissant d'un pays tiers ne se trouve pas dans l'un des cas visés à l'article 61/1/3, l'autorisation de séjour doit être accordée.
+§ 2. Si le ministre ou son délégué a pris une décision positive sur la base d'une attestation visée à l'article 60, § 3, alinéa 1er, 3°, b) ou c), l'étudiant se voit délivrer un document de séjour provisoire qui couvre son séjour pour une durée maximale de quatre mois à partir de la date de son entrée dans le Royaume.
+Au plus tard quinze jours avant l'expiration du délai de quatre mois, l'étudiant doit transmettre au ministre ou à son délégué une attestation telle que visée à l'article 60, § 3, alinéa 1er, 3°, a).
+§ 3. Sous réserve du paragraphe 4, si l'autorisation de séjour est accordée sur base d'une attestation visée à l'article 60, § 3, alinéa 1er, 3°, a), sa durée est d'un an au moins.
+Si la formation envisagée fait partie d'un programme de l'Union ou programme multilatéral comportant des mesures de mobilité ou d'une convention entre deux établissements d'enseignement supérieur permettant à l'intéressé de suivre une partie de ses études dans un autre Etat membre, la durée de l'autorisation de séjour est de deux ans au moins, sauf si les conditions fixées à l'article 60, § 3, ne sont pas remplies pour la période de deux ans ou pour toute la durée des études. Dans ce dernier cas, la durée de l'autorisation de séjour est au moins d'un an.
+Par dérogation aux alinéas 1er et 2, si la durée de la formation envisagée est inférieure à un an ou deux ans, selon le cas, la durée de l'autorisation de séjour couvre au moins la durée de la formation.
+La durée de l'autorisation de séjour ne dépassera pas la durée de validité du passeport ou du titre de voyage en tenant lieu.
+§ 4. Si le ministre ou son délégué a pris une décision positive, mais qu'il n'était pas possible de joindre déjà à la demande l'attestation visée à l'article 60, § 3, alinéa 1er, 6°, l'étudiant se voit délivrer un document de séjour provisoire qui couvre son séjour pour une durée maximale de quatre mois à partir de la date de son entrée dans le Royaume.
+Au plus tard quinze jours avant l'expiration du délai de quatre mois, l'étudiant doit transmettre une attestation visée à l'article 60, § 3, alinéa 1er, 6°, au ministre ou à son délégué.
+§ 5. Dans les cas prévus aux paragraphes 2, 3 et 4, l'étudiant est inscrit au registre des étrangers par l'administration communale du lieu de sa résidence, conformément aux modalités prévues par l'article 12, alinéas 1er et 4.
+Le Roi détermine le modèle du document de séjour délivré à l'étudiant après inscription au registre des étrangers. ]1
+----------
+(1)<Inséré par L 2021-07-11/10, art. 13, 112; En vigueur : 15-08-2021>
+
+Art. 61/1/2. [1 Le ressortissant de pays tiers autorisé au séjour en qualité d'étudiant, conformément à l'article 61/1/1, § 3, et qui souhaite continuer à séjourner en cette qualité doit se présenter à l'administration communale du lieu de sa résidence pour demander le renouvellement de son titre de séjour au plus tard quinze jours avant la fin de son séjour.
+Le Roi fixe les conditions et les modalités relatives aux demandes de renouvellement du titre de séjour en qualité d'étudiant.
+Si le ressortissant d'un pays tiers ne se trouve pas dans l'un des cas visés à l'article 61/1/4, le titre de séjour est renouvelé. ]1
+----------
+(1)<Inséré par L 2021-07-11/10, art. 14, 112; En vigueur : 15-08-2021>
+
+Art. 61/1/3. [1 § 1er. Le ministre ou son délégué refuse une demande, introduite conformément à l'article 60, si:
+1° les conditions requises à l'article 60 ne sont pas remplies;
+2° le ressortissant d'un pays tiers est considéré comme constituant une menace pour l'ordre public, la sécurité nationale ou la santé publique;
+3° le ressortissant d'un pays tiers a utilisé des informations fausses ou trompeuses ou des documents faux ou falsifiés, ou lorsque celui-ci a recouru à la fraude ou a employé d'autres moyens illégaux qui contribuent à l'obtention du séjour.
+§ 2. Le ministre ou son délégué peut refuser une demande, introduite conformément à l'article 60, dans les cas suivants:
+1° l'établissement d'enseignement supérieur dans lequel le ressortissant d'un pays tiers est inscrit, n'a pas respecté ses obligations légales en matière de sécurité sociale, d'impôts, de droits des travailleurs ou de conditions de travail;
+2° l'établissement d'enseignement supérieur dans lequel le ressortissant d'un pays tiers est inscrit est sanctionné pour le travail au noir ou le travail illégal;
+3° l'établissement d'enseignement supérieur où le ressortissant d'un pays tiers est inscrit a été créé ou opère dans le but principal de faciliter l'entrée de ressortissants de pays tiers dans le Royaume;
+4° lorsque l'établissement d'enseignement supérieur dans lequel le ressortissant de pays tiers est inscrit fait ou a fait l'objet d'une liquidation ou d'une faillite ou si aucune activité économique n'y est exercée;
+5° des preuves ou motifs sérieux et objectifs permettent d'établir que le séjour poursuivrait d'autres finalités que les études. ]1
+----------
+(1)<Inséré par L 2021-07-11/10, art. 15, 112; En vigueur : 15-08-2021>
+
+Art. 61/1/4. [1 § 1er. Le ministre ou son délégué met fin à l'autorisation de séjour en qualité d'étudiant ou refuse une demande de renouvellement d'une telle autorisation, introduite conformément à l'article 61/1/2, dans les cas suivants:
+1° l'étudiant ne remplit plus les conditions requises, à l'exception de l'article 60, § 3, alinéa 1er, 7° et 8° ;
+2° le séjour poursuit d'autres finalités que les études.
+Le ministre ou son délégué retire l'autorisation de séjour en qualité d'étudiant lorsque l'étudiant a utilisé des informations fausses ou trompeuses ou des documents faux ou falsifiés, ou lorsque celui-ci a recouru à la fraude ou a employé d'autres moyens illégaux qui ont contribué à l'obtention du séjour.
+§ 2. Le ministre ou son délégué peut mettre fin à une autorisation de séjour en qualité d'étudiant ou refuser une demande de renouvellement d'une telle autorisation, introduite conformément à l'article 61/1/2, dans les cas suivants:
+1° l'établissement d'enseignement supérieur dans lequel l'étudiant est inscrit, n'a pas respecté ses obligations légales en matière de sécurité sociale, d'impôts, de droits des travailleurs ou de conditions de travail;
+2° l'établissement d'enseignement supérieur dans lequel l'étudiant est inscrit est sanctionné pour travail au noir ou travail illégal;
+3° l'établissement d'enseignement supérieur où l'étudiant est inscrit a été créé ou opère dans le but principal de faciliter l'entrée de ressortissants de pays tiers dans le Royaume;
+4° lorsque l'établissement d'enseignement supérieur dans lequel le ressortissant de pays tiers est inscrit fait ou a fait l'objet d'une liquidation ou d'une faillite ou si aucune activité économique n'y est exercée;
+5° l'étudiant exerce une activité professionnelle illégale ou effectue plus de prestations de travail que celles prévues à l'article 10, 2°, de l'arrêté royal du 2 septembre 2018 portant exécution de la loi du 9 mai 2018 relative à l'occupation de ressortissants étrangers se trouvant dans une situation particulière de séjour;
+6° l'étudiant prolonge ses études de manière excessive;
+7° l'étudiant est considéré comme constituant une menace pour l'ordre public, la sécurité nationale ou la santé publique.
+Le Roi détermine les cas dans lesquels l'étudiant est réputé prolonger ses études de manière excessive, tel que visé à l'alinéa 1er, 6°.
+§ 3. Si le ministre ou son délégué entend mettre fin ou ne pas renouveler l'autorisation de séjour d'un étudiant conformément au paragraphe 2, alinéa 1er, 1°, 2°, 3° ou 4°, l'étudiant est autorisé à introduire une demande en vue d'être accueilli par un autre établissement d'enseignement supérieur pour y suivre un cursus équivalent afin de lui permettre d'achever ses études.
+A compter du moment où il est avisé de l'intention du ministre ou de son délégué visée à l'alinéa 1er, l'étudiant dispose de trente jours pour fournir au ministre ou à son délégué une nouvelle attestation telle que visée à l'article 60, § 3, alinéa 1er, 3°, a) émanant d'un autre établissement d'enseignement supérieur.
+L'étudiant est autorisé à séjourner sur le territoire du Royaume tant qu'il n'a pas été statué définitivement sur cette demande. ]1
+----------
+(1)<Inséré par L 2021-07-11/10, art. 16, 112; En vigueur : 15-08-2021>
+
+Art. 61/1/5. [1 Toute décision de refus, de retrait, de fin ou de non-renouvellement d'une autorisation de séjour tient compte des circonstances spécifiques du cas d'espèce et respecte le principe de proportionnalité. ]1
+----------
+(1)<Inséré par L 2021-07-11/10, art. 17, 112; En vigueur : 15-08-2021>
+
+SECTION II. [1 Mobilité ]1
+----------
+(1)<Inséré par L 2021-07-11/10, art. 18, 112; En vigueur : 15-08-2021>
+
+Art. 61/1/6. [1 Un ressortissant d'un pays tiers ayant été autorisé par un autre Etat membre de l'Union européenne à séjourner en qualité d'étudiant dans le cadre d'une mobilité, est admis sur le territoire du Royaume pour un séjour n'excédant pas 360 jours pour y achever une partie de ses études, à condition que le projet de mobilité ait été porté à la connaissance du ministre ou de son délégué par l'établissement d'enseignement supérieur sur le territoire du Royaume où l'étudiant est inscrit.
+Le Roi fixe les conditions et les modalités de cette notification. ]1
+----------
+(1)<Inséré par L 2021-07-11/10, art. 19, 112; En vigueur : 15-08-2021>
+
+Art. 61/1/7. [1 § 1er. Le ministre ou son délégué peut ou, dans le cas visé à 4°, doit s'opposer par écrit à la mobilité de l'étudiant, au plus tard dans un délai de trente jours à compter de la réception de la notification complète, ou peut mettre fin à la mobilité, lorsque:
+1° les conditions relatives à la notification ne sont pas remplies;
+2° l'étudiant a utilisé des informations fausses ou trompeuses, des documents faux ou falsifiés, ou a recouru à la fraude et/ou a employé d'autres moyens illégaux et/ou illicites;
+3° la durée maximale de séjour fixée à l'article 61/1/6, est atteinte;
+4° l'étudiant est considéré comme constituant une menace pour l'ordre public, la sécurité nationale ou la santé publique.
+5° l'étudiant se trouve dans un des cas visés à l'article 61/1/3, § 2.
+§ 2. Lorsqu'aucune objection n'a été émise ou lorsqu'une objection n'a pas été émise par écrit dans le délai imparti, la mobilité est considérée comme approuvée. Le Roi détermine le modèle de document de séjour délivré à l'étudiant dans cette situation.
+Lorsque le ministre ou son délégué émet une objection conformément au présent article, la mobilité ne peut pas commencer.
+L'objection est adressée aux autorités compétentes du premier Etat membre, à l'établissement d'enseignement supérieur visé à l'article 61/1/6, ayant effectué la notification, et à l'étudiant lui-même.
+§ 3. Si l'étudiant se trouve sur le territoire du Royaume le ministre ou son délégué peut, dans les cas visés au paragraphe 1er, délivrer à l'étudiant un ordre de quitter le territoire dont le modèle est déterminé par le Roi. ]1
+----------
+(1)<Inséré par L 2021-07-11/10, art. 20, 112; En vigueur : 15-08-2021>
+
+Art. 61/1/8. [1 § 1er. Lorsque le ministre ou son délégué a octroyé une autorisation telle que visée à l'article 61/1/1, mais que, par la suite, il met fin à cette autorisation ou la retire, il en informe immédiatement les autorités du deuxième Etat membre, le cas échéant.
+§ 2. Lorsque l'étudiant ne remplit pas ou plus les conditions de la mobilité dans le deuxième Etat membre ou lorsque l'autorisation, visée à l'article 61/1/1, délivrée par le ministre ou son délégué, a expiré ou qu'il y a été mis fin ou a été retiré au cours de la période de mobilité dans le deuxième Etat membre, le ministre ou son délégué autorise à nouveau l'entrée de l'étudiant dans le Royaume, sans formalités et sans retard, à la demande du deuxième Etat membre.
+Le Roi détermine le document qui sera, le cas échéant, délivré à l'étudiant. ]1
+----------
+(1)<Inséré par L 2021-07-11/10, art. 21, 112; En vigueur : 15-08-2021>
+
+SECTION III. [1 Séjour après les études en vue de trouver un emploi ou de créer une entreprise ]1
+----------
+(1)<Inséré par L 2021-07-11/10, art. 22, 112; En vigueur : 15-08-2021>
+
+Art. 61/1/9. [1 § 1er. Après l'achèvement de ses études sur le territoire du Royaume, l'étudiant peut introduire une demande afin de séjourner sur le territoire du Royaume pendant 12 mois au maximum en vue de trouver un emploi ou de créer une entreprise dans le but d'obtenir un titre de séjour à des fins de travail.
+A cette fin, il introduit une demande à l'administration communale de son lieu de résidence sur le territoire du Royaume au plus tard quinze jours avant l'expiration de la durée de validité de son autorisation de séjour.
+Dans le cas visé à l'article 61/1/15, par dérogation à l'alinéa 2, la demande est introduite selon les modalités prévues à l'article 60, §§ 1er et 2, au plus tard dans les trois mois suivant l'obtention du diplôme.
+§ 2. A l'appui de sa demande, l'étudiant produit les documents suivants:
+1° un passeport ou un titre de voyage en tenant lieu en cours de validité;
+2° la preuve de l'obtention d'un diplôme d'un établissement d'enseignement supérieur en Belgique ou, lorsque l'étudiant fait ou a fait usage de son droit à la mobilité, la preuve de l'obtention d'un diplôme obtenu dans un établissement d'enseignement supérieur dans le premier ou dans le deuxième Etat membre, autre que la Belgique;
+3° la preuve qu'il dispose d'une assurance maladie couvrant les risques en Belgique;
+4° la preuve qu'il dispose de moyens de subsistance suffisants, conformément à l'article 61;
+5° dans le cas visé à l'article 61/1/15: la preuve qu'il a séjourné ou séjourne en Belgique en tant que deuxième Etat membre dans le cadre d'une mobilité. ]1
+----------
+(1)<Inséré par L 2021-07-11/10, art. 23, 112; En vigueur : 15-08-2021>
+
+Art. 61/1/10. [1 § 1er. Après réception de la demande, le ministre ou son délégué vérifie si les conditions fixées à l'article 61/1/9 sont remplies. Le cas échéant, il délivre au ressortissant d'un pays tiers un accusé de réception de la demande, dont le modèle est déterminé par le Roi.
+§ 2. Si la demande a été introduite dans le délai prévu à l'article 61/1/9, § 1er, alinéa 2 ou 3, mais que tous les documents requis n'ont pas été fournis, le ministre ou son délégué informe par écrit le ressortissant d'un pays tiers des documents qu'il doit encore fournir.
+Le ressortissant d'un pays tiers dispose d'un délai de quinze jours à compter de la notification visée à l'alinéa 1er pour compléter sa demande.
+S'il fournit les documents requis dans le délai prévu, le ministre ou son délégué lui délivre un accusé de réception de la demande, tel que visé au paragraphe 1er. ]1
+----------
+(1)<Inséré par L 2021-07-11/10, art. 24, 112; En vigueur : 15-08-2021>
+
+Art. 61/1/11 [1 Le ministre ou son délégué peut déclarer la demande irrecevable dans les cas suivants:
+1° la demande n'a pas été introduite dans le délai visé à l'article 61/1/9, § 1er, alinéa 2 ou 3;
+2° les documents manquants n'ont pas été produits dans le délai prévu à l'article 61/1/10, § 2, alinéa 2.
+Le Roi détermine le modèle de décision d'irrecevabilité ]1
+----------
+(1)<Inséré par L 2021-07-11/10, art. 25, 112; En vigueur : 15-08-2021>
+
+Art. 61/1/12 [1 § 1er. Le ministre ou son délégué prend une décision et la notifie au ressortissant d'un pays tiers dans un délai de nonante jours suivant la date de l'accusé de réception de la demande, visé à l'article 61/1/10, § 1er.
+Si le ressortissant d'un pays tiers ne se trouve pas dans l'un des cas visés à l'article 61/1/13, l'autorisation de séjour doit être accordée.
+Le Roi détermine le modèle de document de séjour délivré au ressortissant d'un pays tiers en cas de décision positive.
+§ 2. Si, pendant l'examen de cette demande, l'autorisation de séjour vient à échéance, le ressortissant d'un pays tiers reçoit un document qui couvre provisoirement son séjour dans l'attente d'une décision prise par le ministre ou son délégué.
+Le Roi détermine le document de séjour délivré au ressortissant d'un pays tiers ]1
+----------
+(1)<Inséré par L 2021-07-11/10, art. 26, 112; En vigueur : 15-08-2021>
+
+Art. 61/1/13 [1 Le ministre ou son délégué peut refuser une demande d'autorisation de séjour tel que visée à l'article 61/1/9 si le ressortissant d'un pays tiers:
+1° ne remplit pas les conditions fixées à l'article 61/1/9;
+2° est considéré comme constituant une menace pour l'ordre public, la sécurité nationale ou la santé publique ]1
+----------
+(1)<Inséré par L 2021-07-11/10, art. 27, 112; En vigueur : 15-08-2021>
+
+Art. 61/1/14 [1 Le ministre ou son délégué peut mettre fin à l'autorisation de séjour délivrée conformément à l'article 61/1/12 dans les cas suivants:
+1° si le ministre ou son délégué demande au ressortissant d'un pays tiers au plus tôt trois mois après la délivrance de l'autorisation de séjour de prouver qu'il a des chances réelles de trouver un emploi ou de créer une entreprise et qu'il ne peut pas le prouver dans les quinze jours après cette demande;
+2° si le ressortissant d'un pays tiers ne remplit plus les conditions fixées à l'article 61/1/9;
+3° si le ressortissant d'un pays tiers est considéré comme constituant une menace pour l'ordre public, la sécurité nationale ou la santé publique. ]1
+----------
+(1)<Inséré par L 2021-07-11/10, art. 28, 112; En vigueur : 15-08-2021>
+
+Art. 61/1/15 [1 La présente section s'applique également lorsque l'étudiant fait usage ou a fait usage de son droit à la mobilité et que la Belgique est le deuxième Etat membre dans lequel l'étudiant séjourne ou a séjourné. ]1
+----------
+(1)<Inséré par L 2021-07-11/10, art. 29, 112; En vigueur : 15-08-2021>
+
+CHAPITRE IV. - Des étrangers qui sont victimes de l'infraction de traite des êtres humains au sens de l'article 433quinquies du Code pénal ou qui sont victimes, dans les circonstances visées à l'article 77quater, 1°, en ce qui concerne uniquement les mineurs non accompagnés, à 5°, de l'infraction de trafic des êtres humains au sens de l'article 77bis, et qui coopèrent avec les autorités. <Inséré par L 2006-09-15/72, art. 64; En vigueur : 01-06-2007>
+
+Art. 61/2.<Inséré par L 2006-09-15/72, art. 65; En vigueur : 01-06-2007> § 1er. Lorsque les services de police ou d'inspection disposent d'indices qu'un étranger est victime de l'infraction visée à l'article 433quinquies du Code pénal ou victime, dans les circonstances visées à l'article 77quater, 1°, en ce qui concerne uniquement les mineurs non accompagnés, à 5°, de l'infraction au sens de l'article 77bis, ils en informent immédiatement le ministre ou son délégué et ils informent l'étranger de la possibilité d'obtenir un titre de séjour en coopérant avec les autorités compétentes chargées de l'enquête ou des poursuites concernant ces infractions et le mettent en contact avec un centre reconnu par les autorités compétentes, spécialisé dans l'accueil des victimes de ces infractions.
+§ 2. Le ministre ou son délégué délivre, à l'étranger visé au § 1er, qui ne dispose pas d'un titre de séjour et qui est accompagné par un centre spécialisé dans l'accueil des victimes, reconnu par les autorités compétentes, [1 un document de séjour temporaire ]1 de 45 jours afin de lui donner la possibilité d'introduire une plainte ou de faire des déclarations concernant les personnes ou les réseaux qui se seraient rendus coupables de l'infraction visée à l'article 433 quinquies du Code pénal ou, dans les circonstances visées à l'article 77quater, 1°, en ce qui concerne uniquement les mineurs non accompagnés, à 5°, de l'infraction au sens de l'article 77bis. [1 Le Roi détermine le modèle du document temporaire de séjour.]1
+L'étranger visé à l'alinéa 1er, qui est âgé de moins de dix-huit ans et qui est arrive dans le Royaume sans être accompagné d'un étranger majeur responsable de lui par la loi et n'ait pas été effectivement pris en charge par une telle personne par la suite, ou ait été laissé seul après être entré dans le Royaume, est mis en possession du document provisoire de séjour prévu à l'article 61/3, § 1er. Il est dûment tenu compte de l'intérêt supérieur de l'enfant pendant l'ensemble de la procédure.
+Si l'étranger visé à l'alinéa 1er, a immédiatement introduit une plainte ou fait des déclarations concernant les personnes ou les réseaux qui se seraient rendus coupables de l'infraction visée à l'article 433quinquies du Code pénal ou, dans les circonstances visées à l'article 77quater, 1°, en ce qui concerne uniquement les mineurs non accompagnés, à 5°, de l'infraction au sens de l'article 77bis, le centre d'accueil spécialisé qui assure son accompagnement peut demander au ministre ou à son délégué de lui délivrer le document provisoire de séjour visé à l'article 61/3,§ 1er.
+§ 3. Le ministre ou son délégué peut, à tout moment, décider de mettre fin, au délai prévu au § 2, s'il est établi que l'étranger a activement, volontairement et de sa propre initiative, renoué un lien avec les auteurs présumés de l'infraction visée à l'article 433quinquies du Code pénal ou de l'infraction de trafic des êtres humains au sens de l'article 77bis, ou s'il est considéré comme pouvant compromettre l'ordre public ou à la sécurité nationale.
+----------
+(1)<L 2017-03-30/15, art. 2, 096; En vigueur : 20-05-2017>
+
+Art. 61/3. <Inséré par L 2006-09-15/72, art. 66; En vigueur : 01-06-2007> § 1er. Le ministre ou son délégué délivre un document de séjour pour une durée de validité de trois mois au maximum, à l'étranger visé à l'article 61/2, § 1er, qui a introduit, au cours du délai fixé à l'article 61/2,§ 2, alinéa 1er, une plainte ou une déclaration concernant les personnes ou les réseaux qui se seraient rendus coupables de l'infraction visée à l'article 433quinquies du Code pénal ou, dans les circonstances visées à l'article 77quater, 1°, en ce qui concerne uniquement les mineurs non accompagnés, à 5°, de l'infraction au sens de l'article 77bis.
+Le Roi détermine le modèle du document provisoire de séjour.
+§ 2. Le ministre ou son délégué demande au procureur du Roi ou à l'auditeur du travail de l'informer, avant l'expiration de la durée de validité du document de séjour délivré conformément au § 1er, que l'étranger concerné peut toujours être considéré comme une victime de l'infraction visée à l'article 433quinquies du Code pénal ou, dans les circonstances visées à l'article 77quater, de l'infraction au sens de l'article 77bis, que l'enquête ou la procédure judiciaire est toujours en cours, que l'étranger concerné manifeste une volonté claire de coopération et qu'il a rompu tout lien avec les auteurs présumés de cette infraction.
+Le document provisoire de séjour visé à l'alinéa 1er, peut être prolongée pour une seule nouvelle période de trois mois au maximum, si l'enquête le nécessite ou si le ministre ou son délégué l'estime opportun en tenant compte des éléments du dossier.
+§ 3. Le ministre ou son délégué peut, à tout moment, décider de mettre fin à cette autorisation de séjour s'il est établi que l'étranger a activement, volontairement et de sa propre initiative, renoué un lien avec les auteurs présumés de l'infraction visée à l'article 433quinquies du Code pénal ou à l'article 77bis, ou s'il est considéré comme pouvant compromettre l'ordre public ou à la sécurité nationale.
+§ 4. L'étranger doit essayer de prouver son identité en présentant son passeport ou un titre de voyage en tenant lieu ou sa carte d'identité nationale.
+
+Art. 61/4.<Inséré par L 2006-09-15/72, art. 67; En vigueur : 01-06-2007> § 1er. Le ministre ou son délégué autorise l'étranger visé à l'article 61/3, § 1er, au séjour pour une durée de six mois, lorsque le Procureur du Roi ou l'auditeur du travail lui a confirmé que l'enquête ou la procédure judiciaire est toujours en cours, que l'étranger manifeste une volonté claire de coopération et pour autant que celui-ci a rompu tout lien avec les auteurs présumés de l'infraction visée à l'article 433quinquies du Code pénal ou à l'article 77bis, et n'est pas considéré comme pouvant compromettre l'ordre public ou à la sécurité nationale.
+L'inscription au registre des étrangers et la délivrance du titre de séjour faisant foi de celle-ci ont lieu conformément aux dispositions de l'article 12. La durée de validité du titre de séjour ainsi que sa prorogation ou son renouvellement sont fixés [3 par l'article 13, § 1er, alinéa 7]3 et § 2]1.
+§ 2. Pendant la durée de validité du titre de séjour ou lors de sa prorogation ou de son renouvellement, le ministre ou son délégué peut mettre fin au séjour de l'étranger et, le cas échéant, lui donner l'ordre de quitter le territoire, s'il constate que :
+1° l'étranger a activement, volontairement et de sa propre initiative, renoué un lien avec les auteurs présumés de l'infraction visée à l'article 433quinquies du Code pénal ou à l'article 77bis;
+2° l'étranger a cessé de coopérer;
+3° les autorités judiciaires ont décidé de mettre fin à la procédure.
+L'alinéa 1er est également applicable lorsque le ministre ou son délégué considère l'étranger comme pouvant compromettre l'ordre public ou à la sécurité nationale ou estime, en coopération avec les autorités judiciaires, que la coopération de l'étranger est frauduleuse ou que sa plainte est frauduleuse ou non fondée.
+----------
+(1)<L 2009-05-06/03, art. 188, 050; En vigueur : 29-05-2009>
+(2)<L 2014-04-25/H2, art. 7, 078; En vigueur : 29-08-2014>
+(3)<L 2025-07-18/29, art. 19, 129; En vigueur : 18-08-2025>
+
+Art. 61/5. <Inséré par L 2006-09-15/72, art. 68; En vigueur : 01-06-2007> Le ministre ou son délégué peut autoriser au séjour pour une durée illimitée l'étranger victime de l'infraction visée à l'article 433quinquies du Code pénal ou victime, dans les circonstances visées à l'article 77quater, 1°, en ce qui concerne uniquement les mineurs non accompagnés, à 5°, de l'infraction au sens de l'article 77bis, lorsque sa déclaration ou sa plainte a abouti à une condamnation ou si le Procureur du Roi ou l'auditeur du travail a retenu dans ses réquisitions la prévention de traite des êtres humains ou de trafic des êtres humains sous les circonstances aggravantes prévues à l'article 77quater.
+
+CHAPITRE V. - Bénéficiaires du statut de résident de longue durée dans un autre Etat membre de l'Union européenne, sur la base de la directive 2003/109/CE du Conseil de l'Union européenne du 25 novembre 2003 relative au statut des ressortissants de pays tiers résidents de longue durée. <inséré par L 2007-04-25/49, art. 39, En vigueur : 01-06-2008>
+
+Art. 61/6. <inséré par L 2007-04-25/49, art. 40; En vigueur : 01-06-2008> Les Etats tenus par la directive 2003/109/CE du Conseil de l'Union européenne du 25 novembre 2003 relative au statut des ressortissants de pays tiers résidents de longue durée, sont les Etats membres de l'Union européenne, à l'exception du Danemark, de l'Irlande et du Royaume-Uni.
+
+Art. 61/7.<inséré par L 2007-04-25/49, art. 41, En vigueur : 01-06-2008> § 1er. Pour autant qu'aucune raison d'ordre public ou de sécurité nationale ne s'y opposent, et pour autant qu'il ne soit pas atteint d'une des maladies pouvant mettre en danger la santé publique, énumérées dans l'annexe de la présente loi, lorsque l'étranger porteur d'un [1 permis de séjour de résident de longue durée - UE]1 valable, délivré par un autre Etat membre de l'Union européenne sur la base de la directive 2003/109/CE du Conseil de l'Union européenne du 25 novembre 2003 relative au statut des ressortissants de pays tiers résidents de longue durée, introduit une demande d'autorisation de séjour de plus de trois mois, celle-ci doit être accordée s'il remplit l'une des conditions suivantes :
+1° exercer une activité salariée ou non salariée en Belgique;
+2° poursuivre des études ou une formation professionnelle en Belgique;
+3° venir en Belgique à d'autres fins.
+La preuve de la condition visée à l'alinéa 1er, 1°,[3 s'il s'agit d'une activité non salariée,]3 st fournie s'il prouve qu'il est autorisé à travailler en Belgique ou qu'il est dispensé de cette autorisation et, selon le cas, qu'il possède un contrat de travail ou une proposition de contrat d'emploi, ou les documents requis pour l'exercice de la profession non salariée, et retire ou peut retirer de cette activité des ressources stables, régulières et suffisantes pour subvenir à ses besoins et à ceux des membres de sa famille afin d'éviter de devenir une charge pour les pouvoirs publics.
+[3 Si l'étranger souhaite exercer une activité salariée, telle que visée à l'alinéa 1er, 1°, les paragraphes 2, 3, 4 et 6 ne sont pas d'application. La procédure d'autorisation de séjour se fait conformément au chapitre VIIbis du titre II.]3
+La preuve de la condition visée à l'alinéa 1er, 2° est apportée s'il réunit les conditions fixées aux articles [4 à l'article 60]4.
+La preuve de la condition visée à l'alinéa 1er, 3°, est apportée s'il prouve qu'il dispose de ressources stables, régulières et suffisantes pour subvenir à ses besoins et à ceux des membres de sa famille afin d'éviter de devenir une charge pour les pouvoirs publics, et s'il prouve qu'il dispose d'une assurance-maladie couvrant les risques en Belgique.
+Les règles visées à l'alinéa 1er ne sont pas applicables lorsque le résident de longue durée souhaite séjourner dans le Royaume en tant que travailleur salarié détaché par un prestataire de services installé dans un Etat membre de l'Union européenne, dans le cadre d'une prestation transfrontalière, ou en tant que prestataire de services transfrontaliers.
+§ 2. La demande d'autorisation de séjour est introduite selon les modalités prévues à l'article 9 ou 9bis.
+Lorsque l'autorisation est demandée par l'étranger auprès du bourgmestre de la localité où il séjourne, ce dernier lui remet, sauf lorsqu'il refuse de prendre cette demande en considération, une preuve de réception de celle-ci et la transmet sans délai au ministre ou à son délégué.
+§ 3. La décision relative à la demande d'autorisation de séjour est prise dans les plus brefs délais et au plus tard dans les quatre mois suivant la demande, lorsque celle-ci est faite à l'étranger, ou suivant la date de la remise de la preuve de réception de la demande dans le cas visé au § 2, dernier alinéa.
+Lorsque les documents requis ne sont pas produits ou dans des cas exceptionnels liés à la complexité de l'examen de la demande et par une décision motivée portée à la connaissance du demandeur, le ministre ou son délégué peut, à une seule reprise, prolonger ce délai d'une période de trois mois.
+A l'expiration du délai de quatre mois suivant l'introduction de la demande, éventuellement prolongé conformément à l'alinéa 2, si aucune décision n'a été prise, l'autorisation de séjour doit être délivrée lorsque les documents visés au § 1er ont été produits.
+§ 4. Les dispositions [5 de l'article 13, § 1er, alinéas 1er et 7]5]2, et § 2, sont applicables à l'autorisation de séjour visée au § 1er.
+L'inscription au registre des étrangers de l'étranger visé au § 1er et la délivrance du titre de séjour faisant foi de celle-ci ont lieu conformément aux dispositions de l'article 12.
+§ 5. Le ministre ou son délégué informe les autorités compétentes de l'Etat membre de l'Union européenne dans lequel l'étranger s'est vu délivrer un [1 permis de séjour de résident de longue durée - UE]1 sur la base de la directive 2003/109/CE du Conseil de l'Union européenne précitée, de la décision d'autorisation de séjour.
+§ 6. L'autorisation de séjour de l'étranger visé au § 1er, alinéa 1er, 1° et 3°, devient illimitée à l'expiration d'une période de cinq ans suivant la délivrance du titre de séjour.
+[1 § 7. Lorsque l'autorisation de séjour est refusée pour des raisons d'ordre public ou de sécurité nationale, le ministre ou son délégué prend en considération la gravité ou la nature de l'infraction que soit la personne concernée, soit le membre de sa famille a commise contre l'ordre public ou la sécurité nationale, ou le danger que la personne en question représente. Les raisons ne peuvent être invoquées à des fi ns économiques.]1
+----------
+(1)<L 2014-03-19/24, art. 28, 076; En vigueur : 15-05-2014>
+(2)<L 2014-04-25/H2, art. 8, 078; En vigueur : 29-08-2014>
+(3)<L 2018-07-22/12, art. 4, 104; En vigueur : 24-12-2018>
+(4)<L 2021-07-11/10, art. 30, 112; En vigueur : 15-08-2021>
+(5)<L 2025-07-18/29, art. 20, 129; En vigueur : 18-08-2025>
+
+Art. 61/8.[1 § 1er. Lorsqu'il est mis fin au séjour d'un étranger autorisé au séjour en vertu de l'article 61/7, l'Etat membre qui lui a accordé le statut de résident de longue durée en est informé en vue de la réadmission éventuelle de l'intéressé sur son territoire.
+La mesure d'éloignement est limitée au territoire du Royaume.
+§ 2. Par dérogation au paragraphe 1er et sans préjudice de l'alinéa 2, la mesure d'éloignement peut être étendue au territoire de l'Union européenne si l'intéressé représente une menace actuelle et suffisamment grave pour l'ordre public ou la sécurité nationale. L'Etat membre qui lui a accordé le statut de résident de longue durée est consulté lors de la prise de décision.
+Si l'intéressé bénéficie de la protection internationale dans un autre Etat membre, la mesure d'éloignement peut être étendue au territoire de l'Union européenne uniquement si :
+1° il ne bénéficie plus de la protection internationale; ou si
+2° il existe des raisons sérieuses de considérer que l'intéressé constitue une menace pour la sécurité nationale ou si, ayant été condamné définitivement pour une infraction particulièrement grave, il représente une menace pour l'ordre public.
+L'intéressé ne peut en aucun cas être éloigné vers un pays où il est exposé à une violation du principe de non-refoulement.]1
+----------
+(1)<L 2017-02-24/21, art. 41, 094; En vigueur : 29-04-2017>
+
+Art. 61/9.
+<Abrogé par L 2017-02-24/21, art. 42, 094; En vigueur : 29-04-2017>
+
+CHAPITRE VI. - Chercheurs. <Inséré par L 2007-04-21/30, art. 3; En vigueur : 01-06-2007>
+
+Section 1re. [1 - Dispositions générales.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 9, 116; En vigueur : 01-03-2023>
+
+Art. 61/10. <Inséré par L 2007-04-21/30, art. 4; En vigueur : 01-06-2007> § 1er. [1 Pour l'application du présent chapitre, on entend par:
+1° chercheur: le ressortissant d'un pays tiers visé à l'article 37, 1°, de l'accord de coopération du 6 décembre 2018;
+2° organisme de recherche agréé: l'organisme de recherche agréé visé à l'article 37, 2°, de l'accord de coopération du 6 décembre 2018;
+3° recherche: le travail visé à l'article 37, 8°, de l'accord de coopération du 6 décembre 2018;
+4° convention d'accueil: la convention visée à l'article 37, 3°, de l'accord de coopération du 6 décembre 2018;
+5° premier Etat membre: l'Etat membre visé à l'article 37, 4°, de l'accord de coopération du 6 décembre 2018;
+6° deuxième Etat membre: l'Etat membre visé à l'article 37, 5°, de l'accord de coopération du 6 décembre 2018;
+7° permis pour chercheur: le titre de séjour visé à l'article 37, 6°, de l'accord de coopération du 6 décembre 2018;
+8° permis pour mobilité de longue durée pour chercheurs: le titre de séjour visé à l'article 37, 7°, de l'accord de coopération du 6 décembre 2018;
+9° mobilité de courte durée: le droit visé à l'article 37, 9°, de l'accord de coopération du 6 décembre 2018;
+10° mobilité de longue durée: le droit visé à l'article 37, 10°, de l'accord de coopération du 6 décembre 2018.]1
+§ 2. Le Roi détermine, par arrêté délibéré en Conseil des ministres :
+1° les conditions d'agrément des organismes de recherche ainsi que la durée de cet agrément;
+2° la procédure d'octroi, de renouvellement, de retrait et de non renouvellement de cet agrément;
+3° le modèle de convention d'accueil signée entre le chercheur et l'organisme de recherche;
+4° les conditions dans lesquelles une telle convention d'accueil peut être signée;
+5° les conditions dans lesquelles une telle convention d'accueil prend fin.
+----------
+(1)<L 2022-08-21/05, art. 10, 116; En vigueur : 01-03-2023>
+
+Art. 61/11.[1 Les dispositions du présent chapitre sont applicables:
+1° aux ressortissants d'un pays tiers qui demandent à être autorisés ou qui sont déjà autorisés à séjourner plus de nonante jours sur le territoire du Royaume en qualité de chercheur lié par une convention d'accueil à un organisme de recherche agréé;
+2° aux ressortissants d'un pays tiers ayant obtenu un permis pour chercheur dans un autre Etat membre de l'Union européenne et qui souhaitent entrer dans le Royaume afin d'y séjourner et d'y travailler dans le cadre d'une mobilité de courte durée;
+3° aux ressortissants d'un pays tiers ayant obtenu un permis pour chercheur dans un autre Etat membre de l'Union européenne et qui souhaitent entrer dans le Royaume afin d'y séjourner et d'y travailler dans le cadre d'une mobilité de longue durée, sur la base d'une convention d'accueil avec un organisme de recherche agréé;
+4° aux ressortissants d'un pays tiers visés aux 1° et 2° qui sont autorisés à séjourner et à travailler dans le Royaume en l'une de ces qualités;
+5° aux ressortissants d'un pays tiers qui ont été autorisés à séjourner et à travailler dans le Royaume en qualité de chercheur et qui souhaitent temporairement continuer leur séjour afin de chercher un emploi ou créer une entreprise;
+6° [2 aux membres de la famille d'un chercheur visés à l'article 10, § 1er, alinéa 1er, 6°, a) à e)"]2, autorisés au séjour dans un autre Etat membre de l'Union européenne en tant que membres de la famille de ce chercheur, pour autant qu'ils le rejoignent dans le cadre d'une mobilité de courte durée.]1
+----------
+(1)<L 2022-08-21/05, art. 11, 116; En vigueur : 01-03-2023>
+(2)<L 2025-07-18/29, art. 21, 129; En vigueur : 18-08-2025>
+
+Section 2. [1 - Permis pour chercheur.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 12, 116; En vigueur : 01-03-2023>
+
+Sous-section 1re. [1 - Dispositions relatives à la procédure conjointe avec l'autorité compétente en matière d'occupation des travailleurs étrangers.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 13, 116; En vigueur : 01-03-2023>
+
+Art. 61/12.[1 § 1er. Le ressortissant d'un pays tiers qui souhaite séjourner plus de nonante jours sur le territoire en qualité de chercheur, introduit sa demande auprès de l'autorité régionale compétente, sous la forme d'une demande d'autorisation de travail.
+La demande d'autorisation de travail vaut demande d'autorisation de séjour en qualité de chercheur.
+§ 2. Les documents permettant d'établir les conditions visées à l'article 61/13/3 sont joints à la demande.
+S'ils sont rédigés dans une autre langue qu'une des trois langues nationales ou l'anglais, les documents produits sont accompagnés d'une traduction legalisée vers l'une des trois langues nationales ou vers l'anglais.
+§ 3. La demande est introduite lorsque le ressortissant d'un pays tiers se trouve en dehors du territoire des Etats membres.
+Par dérogation à l'alinéa 1er, le ressortissant d'un pays tiers qui est déjà admis ou autorisé à séjourner sur le territoire du Royaume pour une durée n'excédant pas nonante jours conformément au titre I, chapitre II, ou qui est déjà admis ou autorisé à séjourner sur le territoire du Royaume pendant plus de nonante jours en une autre qualité, peut introduire sa demande auprès de l'autorité régionale compétente s'il introduit la demande avant l'expiration de la durée de validité de cette admission ou de cette autorisation.
+§ 4. Conformément à l'article 40, § 1er, de l'accord de coopération du 6 décembre 2018, le ministre ou son délégué prend une décision relative à l'autorisation ou au renouvellement de séjour au plus tard dans un délai de soixante jours suivant la notification du caractère complet de la demande.
+§ 5. Le ministre ou son délégué peut exiger du ressortissant d'un pays tiers de produire dans un délai de quinze jours des informations ou documents complémentaires.
+Le délai visé au paragraphe 4 est suspendu jusqu'à ce que les informations complémentaires requises aient été reçues.
+§ 6. Conformément à l'article 33 de l'accord de coopération du 2 février 2018, si l'intéressé est autorisé à séjourner et à travailler plus de nonante jours sur le territoire en qualité de chercheur, l'autorisation de travail et l'autorisation de séjour lui sont notifiées sous la forme d'un acte administratif unique.]1
+----------
+(1)<L 2022-08-21/05, art. 14, 116; En vigueur : 01-03-2023>
+
+Art. 61/13.[1 § 1er. Conformément à l'article 21 de l'accord de coopération du 2 février 2018, le ressortissant d'un pays tiers qui est autorisé à séjourner plus de nonante jours en qualité de chercheur et qui souhaite renouveler son séjour en cette qualité, introduit sa demande au plus tard deux mois avant l'expiration de son autorisation de séjour auprès de l'autorité régionale compétente sous la forme d'une demande d'autorisation de travail.
+§ 2. Si la durée de validité pendant laquelle l'intéressé est autorisé à séjourner en qualité de chercheur expire durant l'examen de la demande, que celle-ci est complète et qu'elle a été introduite avant l'expiration de la durée de validité de son permis pour chercheur, il lui est délivré un document qui couvre provisoirement son séjour jusqu'à ce qu'il soit statué sur sa demande.
+Le Roi fixe les conditions et les modalités de délivrance du document de séjour.]1
+----------
+(1)<L 2022-08-21/05, art. 15, 116; En vigueur : 01-03-2023>
+
+Art. 61/13/1. [1 Le ministre ou son délégué notifie les décisions suivantes au ressortissant d'un pays tiers:
+1° les décisions de refus de l'autorisation de séjour, de non-renouvellement de l'autorisation de séjour ou mettant fin à l'autorisation de séjour ou qui retirent celle-ci, prises en vertu de la présente section;
+2° la décision d'octroi ou de renouvellement de l'autorisation de travail et de l'autorisation de séjour sous la forme d'un acte administratif unique.
+Dans les cas et conditions fixés par les articles 26 à 36 de l'accord de coopération du 2 février 2018, le ministre ou son délégué informe l'employeur de la décision visée à l'alinéa 1er, 2°.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 16, 116; En vigueur : 01-03-2023>
+
+Art. 61/13/2. [1 § 1er. Conformément à l'article 34, alinéa 2, de l'accord de coopération du 2 février 2018, et à l'article 41, alinéa 2, de l'accord de coopération du 6 décembre 2018, lorsque le ressortissant d'un pays tiers visé à l'article 61/12, se trouve à l'étranger à la date de la décision l'autorisant à travailler et à séjourner sur le territoire en qualité de chercheur, un visa de long séjour lui est délivré, à sa demande.
+Le Roi fixe les conditions et les modalités de délivrance de ce visa.
+§ 2. Conformément à l'article 41, alinéa 3, de l'accord de coopération du 6 décembre 2018, le ressortissant d'un pays tiers autorisé à travailler et à séjourner plus de nonante jours sur le territoire en qualité de chercheur est inscrit dans le registre des étrangers et un permis pour chercheur lui est délivré.
+Le Roi détermine:
+1° le modèle du permis pour chercheur;
+2° la durée de validité du permis pour chercheur;
+3° le document de séjour délivré au ressortissant d'un pays tiers dans l'attente de la délivrance du permis pour chercheur.
+§ 3. En cas de renouvellement du séjour en application de l'article 61/13, le permis pour chercheur est renouvelé pour une durée égale à la durée autorisée de son séjour.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 17, 116; En vigueur : 01-03-2023>
+
+Sous-section 2. [1 - Dispositions relatives à l'autorisation de séjour en qualité de chercheur.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 5, 116; En vigueur : 19-11-2022>
+
+Art. 61/13/3. [1 § 1er. Le ressortissant d'un pays tiers qui introduit une demande en application de l'article 61/12 ou de l'article 61/13 est autorisé à séjourner plus de nonante jours sur le territoire en qualité de chercheur ou à renouveler son séjour en cette qualité s'il produit les documents suivants à l'appui de sa demande:
+1° la preuve du paiement de la redevance visée à l'article 1er/1;
+2° une copie de son passeport en cours de validité ou un titre de voyage en tenant lieu remplissant les conditions prévues par l'article 6, § 1er, a) du Code frontières Schengen, couvrant au moins la durée du séjour prévu;
+3° une convention d'accueil signée avec un organisme de recherche agréé en Belgique;
+4° la preuve qu'il disposera, au cours du séjour prévu, de moyens de subsistance suffisants pour couvrir les frais de son voyage de retour et pour ne pas devenir une charge pour le système d'aide sociale du Royaume au cours de son séjour. Il est notamment tenu compte des revenus qu'il percevra durant son séjour en qualité de chercheur;
+5° sauf en cas de renouvellement de la demande d'autorisation de séjour introduite en qualité de chercheur, un certificat médical attestant qu'il n'est pas atteint d'une des maladies énumérées à l'annexe de la présente loi;
+6° sauf en cas de renouvellement de la demande d'autorisation de séjour introduite en qualité de chercheur et s'il a plus de dix-huit ans, un extrait du casier judiciaire ou un document équivalent, et le cas échéant sa traduction légalisée, délivré par le pays d'origine ou par le pays de sa dernière résidence, datant de moins de six mois, et attestant qu'il n'a pas été condamné pour des crimes ou des délits de droit commun.
+En cas d'impossibilité dûment justifiée de produire les documents visés à l'alinéa 1er, 5° en 6°, le ministre ou son délégué peut toutefois, compte tenu des circonstances, octroyer l'autorisation de séjour en qualité de chercheur.
+§ 2. Le ministre ou son délégué refuse l'autorisation de séjour de plus de nonante jours en qualité de chercheur dans les cas suivants:
+1° l'intéressé ne remplit pas les conditions prévues au paragraphe 1er;
+2° l'intéressé se trouve dans un des cas visés à l'article 3, alinéa 1er, 5° à 10° ;
+3° l'intéressé a utilisé des informations fausses ou trompeuses ou des documents faux ou falsifiés, ou a recouru à la fraude ou a employé d'autres moyens illégaux qui contribuent à l'obtention du séjour;
+4° l'intéressé n'a pas fourni les documents ou informations complémentaires dans le délai prescrit;
+5° l'organisme de recherche agréé a été créé ou opère dans le but principal de permettre à des ressortissants de pays tiers d'accéder au Royaume;
+6° des preuves ou motifs sérieux et objectifs permettent d'établir que le séjour du ressortissant d'un pays tiers poursuivrait d'autres finalités que celles pour lesquelles il demande une autorisation.
+§ 3. Le ministre ou son délégué refuse de renouveler l'autorisation de séjour en qualité de chercheur dans les cas suivants:
+1° l'intéressé ne remplit pas ou plus les conditions prévues au paragraphe 1er, à l'exception du paragraphe 1er, alinéa 1er, 1°, 5° et 6° ;
+2° le chercheur séjourne à des fins autres que celles pour lesquelles il a été autorisé au séjour;
+3° l'organisme de recherche agréé a été créé ou opère dans le but principal de permettre à des ressortissants de pays tiers d'accéder au Royaume;
+4° l'intéressé a utilisé des informations fausses ou trompeuses ou des documents faux ou falsifiés, ou a recouru à la fraude ou a employé d'autres moyens illégaux qui ont contribué à l'obtention du séjour.
+§ 4. Le ministre ou son délégué met fin au séjour en qualité de chercheur dans les cas suivants:
+1° le chercheur ne remplit pas ou plus les conditions prévues, à l'exception du paragraphe 1er, alinéa 1er, 1°, 4° et 5° ;
+2° le ressortissant d'un pays tiers a utilisé des informations fausses ou trompeuses ou des documents faux ou falsifiés, ou a recouru à la fraude ou a employé d'autres moyens illégaux qui ont contribué à l'obtention du séjour;
+3° l'intéressé séjourne à des fins autres que celles pour lesquelles il a été autorisé au séjour;
+4° l'organisme de recherche agréé a été créé ou opère dans le but principal de permettre à des ressortissants de pays tiers d'accéder au Royaume.
+§ 5. Toute décision prise en vertu du présent article est prise après un examen individuel, qui tient compte de l'ensemble des circonstances propres à chaque cas, en ce compris l'intérêt du ressortissant de pays tiers, et dans le respect du principe de proportionnalité.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 19, 116; En vigueur : 01-03-2023>
+
+Art. 61/13/4. [1 § 1er. Conformément à l'article 17, alinéa 3, de l'accord de coopération du 2 février 2018, lorsque le ressortissant d'un pays tiers est autorisé à séjourner en application des dispositions de la présente sous-section, l'autorisation de séjour n'est valable que si l'autorité régionale compétente prend une décision définitive autorisant le ressortissant d'un pays tiers à travailler sur le territoire du Royaume.
+Conformément à l'article 3 de l'accord de coopération du 6 décembre 2018, la durée de l'autorisation de séjour accordée en application des dispositions de la présente sous-section est limitée à la durée de l'autorisation de travail.
+Si l'agrément de l'organisme de recherche est retiré ou son renouvellement est refusé pendant le séjour du chercheur, son séjour prend fin de plein droit nonante jours après cet événement, sans préjudice de la compétence du ministre ou de son délégué de mettre fin au séjour conformément à la présente loi.
+S'il n'est pas mis fin au séjour durant cette période, le ressortissant de pays tiers est mis en possession d'un document de séjour provisoire dont le Roi détermine le modèle.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 20, 116; En vigueur : 01-03-2023>
+
+Section 3. [1 - Mobilité au sein de l'Union européenne.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 21, 116; En vigueur : 01-03-2023>
+
+Sous-section 1re. [1 - Mobilité de courte durée.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 22, 116; En vigueur : 01-03-2023>
+
+Art. 61/13/5.[1 § 1er. Un ressortissant d'un pays tiers ayant été autorisé par un autre Etat membre de l'Union européenne à séjourner en qualité de chercheur est admis sur le territoire du Royaume dans le cadre d'une mobilité de courte durée pour un séjour n'excédant pas cent quatre-vingts jours au cours d'une période de trois cent soixante jours pour y achever une partie de ses recherches à condition que le projet de mobilité ait été porté à la connaissance du ministre ou de son délégué par l'organisme de recherche en Belgique.
+La notification est effectuée soit au moment de la demande dans le premier Etat membre, lorsque la mobilité vers la Belgique est déjà envisagée à ce stade, soit après l'admission du chercheur dans le premier Etat membre, dès que le projet de mobilité vers la Belgique est connu.
+La mobilité de courte durée peut commencer dès que la notification a été introduite et pour autant que le chercheur dispose d'un permis pour chercheur valable, délivré par le premier Etat membre.
+§ 2. Les documents suivants sont produits lors de la notification:
+1° une copie de son passeport en cours de validité ou un titre de voyage en tenant lieu remplissant les conditions prévues par l'article 6, § 1er, a) du Code frontières Schengen, couvrant au moins la durée du séjour prévu;
+2° une convention d'accueil signée avec un organisme de recherche agréé en Belgique ou, s'il ne dispose pas de ce document, la convention d'accueil signée avec l'organisme de recherche dans le premier Etat membre;
+3° si elle ne figure pas dans la convention d'accueil visée au 2°, la preuve de la durée et des dates prévues pour la mobilité;
+4° la preuve qu'il disposera, au cours du séjour prévu, de moyens de subsistance suffisants pour couvrir ses frais de voyage vers le premier Etat membre dans les cas visés à l'article 61/13/7 et pour ne pas devenir une charge pour le système d'aide sociale du Royaume au cours de son séjour. Il est notamment tenu compte des revenus qu'il percevra durant son séjour en qualité de chercheur;
+5° s'il est âgé de plus de dix-huit ans, un extrait de casier judiciaire ou un document équivalent, le cas échéant, de sa traduction légalisée, délivré par le pays d'origine ou par le pays de sa dernière résidence, datant de moins de six mois, et attestant qu'il n'a pas été condamné pour des crimes ou des délits de droit commun;
+6° un permis pour chercheur valable délivré par le premier Etat membre couvrant au moins la période de mobilité de courte durée.
+En cas d'impossibilité dûment justifiée de produire le document visé à l'alinéa 1er, 5°, le ministre ou son délégué peut toutefois, compte tenu des circonstances, octroyer l'autorisation de séjour en qualité de chercheur dans le cadre d'une mobilité de courte durée.
+S'ils sont rédigés dans une autre langue qu'une des trois langues nationales ou l'anglais, les documents produits doivent être accompagnés d'une traduction jurée vers l'une des trois langues nationales ou vers l'anglais.
+Le Roi peut soumettre le passeport et le titre de voyage en tenant lieu à des conditions de validité plus précises ou supplémentaires.
+§ 3.[2 Les membres de la famille du chercheur visés à l'article 10, § 1er, alinéa 1er, 6°, a) à e)]2, qui sont ressortissants d'un pays tiers et qui ont été autorisés au séjour dans un autre Etat membre en qualité de membre de la famille d'un chercheur, sont admis, dans le cadre d'une mobilité de courte durée, sur le territoire du Royaume pour un séjour n'excédant pas cent quatre-vingts jours au cours d'une période de trois cent soixante jours pour rejoindre le membre de leur famille séjournant en Belgique dans le cadre d'une mobilité de courte durée conformément au présent article, à condition que le projet de mobilité ait été porté à la connaissance du ministre ou de son délégué par l'organisme de recherche en Belgique.
+La notification visée au paragraphe 1er est complétée dès connaissance d'un projet de mobilité vers la Belgique.
+§ 4. La notification visée au paragraphe 1er est complétée par les documents suivants:
+1° une copie de son passeport en cours de validité ou un titre de voyage en tenant lieu remplissant les conditions prévues par l'article 6, § 1er, a) du Code frontières Schengen, couvrant au moins la durée du séjour prévu;
+2° la preuve que le chercheur ou le membre de sa famille disposera, au cours du séjour prévu, de moyens de subsistance suffisants pour couvrir ses frais de voyage vers le premier Etat membre dans les cas visés à l'article 61/13/7 et pour couvrir ses frais de subsistance sans recourir au système d'aide sociale du Royaume. Dans ce cadre, il est notamment tenu compte des revenus qu'il percevra durant son séjour en qualité de chercheur;
+3° si le membre de la famille a plus de dix-huit ans, un extrait de casier judiciaire ou un document équivalent, le cas échéant, de sa traduction légalisée, délivrés par le pays d'origine ou par le pays de sa dernière résidence, datant de moins de six mois, et attestant qu'il n'a pas été condamné pour des crimes ou des délits de droit commun;
+4° le permis en cours de validité pour membre de la famille du chercheur délivré par le premier Etat membre couvrant au moins la période de mobilité de courte durée.
+En cas d'impossibilité dûment justifiée de produire le document visé à l'alinéa 1er, 3°, le ministre ou son délégué peut toutefois, compte tenu des circonstances, octroyer l'autorisation de séjour en qualité de chercheur dans le cadre d'une mobilité de courte durée.
+S'ils sont rédigés dans une autre langue qu'une des trois langues nationales ou l'anglais, les documents produits doivent être accompagnés d'une traduction légalisée vers l'une des trois langues nationales ou vers l'anglais.
+Le Roi peut soumettre le passeport et le titre de voyage en tenant lieu à des conditions de validité plus précises ou supplémentaires.
+§ 5. Lorsqu'aucune objection n'a été émise ou lorsqu'une objection n'a pas été émise par écrit dans le délai imparti conformément à l'article 61/13/6, la mobilité est considérée comme approuvée.
+Le Roi détermine:
+1° le modèle du document de séjour délivré dans ce cas au chercheur et la procédure;
+2° le modèle du document de séjour délivré dans ce cas au membre de la famille du chercheur et la procédure.
+Le document de séjour visé à l'alinéa 2 possède une durée de validité maximale de cent quatre-vingts jours. Le Roi peut préciser les modalités de cette durée de validité.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 23, 116; En vigueur : 01-03-2023>
+(2)<L 2025-07-18/29, art. 22, 129; En vigueur : 18-08-2025>
+
+Art. 61/13/6. [1 § 1er. Le ministre ou son délégué s'oppose par écrit à la mobilité du chercheur et, le cas échéant, à celle du membre de sa famille, au plus tard dans un délai de trente jours à compter de la réception de la notification complète lorsque:
+1° les conditions relatives à la notification ne sont pas remplies, conformément à l'article 61/13/5, §§ 1er à 4;
+2° la durée maximale de séjour de cent quatre-vingts jours sur trois cent soixante jours a été atteinte en Belgique;
+3° l'entité d'accueil a été créée ou opère dans le but principal de permettre à des chercheurs d'accéder au Royaume;
+4° l'intéressé est considéré comme une menace pour l'ordre public, la sécurité nationale ou la santé publique;
+5° des preuves ou motifs sérieux et objectifs permettent d'établir que le séjour du ressortissant de pays tiers poursuivrait d'autres finalités que celles pour lesquelles il demande une autorisation;
+6° il ne remplit pas les conditions fixées par la législation régionale ou communautaire applicable en matière d'occupation de chercheurs;
+7° lors de la notification dans le cadre de la mobilité de courte durée, il a été recouru à des informations fausses ou trompeuses ou à des documents faux ou falsifiés, ou à la fraude ou à d'autres moyens illégaux qui ont contribué à l'obtention de l'autorisation de mobilité de courte durée.
+Lorsque le ministre ou son délégué émet une objection conformément au présent article, la mobilité ne peut pas commencer.
+Si la mobilité de courte durée a déjà commencé, elle prend immédiatement fin.
+Si la mobilité de courte durée est refusée au chercheur, la mobilité de courte durée est automatiquement aussi refusée au membre de la famille.
+L'objection est adressée aux autorités compétentes du premier Etat membre, à l'organisme de recherche agréé en Belgique ayant effectué la notification, ainsi qu'au chercheur et, le cas échéant, au membre de la famille lui-même.
+Lorsque la notification est complétée ultérieurement par la date à laquelle un membre de la famille rejoindra le chercheur, après réception de la notification complète, le ministre ou son délégué dispose de trente jours pour émettre une objection.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 24, 116; En vigueur : 01-03-2023>
+
+Art. 61/13/7. [1 Le ministre ou son délégué met fin au séjour du ressortissant d'un pays tiers visé à l'article 61/13/5 dans les cas suivants:
+1° l'intéressé ne remplit pas ou ne remplit plus les conditions fixées à l'article 61/13/5;
+2° l'intéressé est considéré comme une menace pour l'ordre public, la sécurité nationale ou la santé publique;
+3° lors de la notification dans le cadre de la mobilité de courte durée, il a été recouru à des informations fausses ou trompeuses ou à des documents faux ou falsifiés, ou à la fraude ou à d'autres moyens illégaux qui ont contribué à l'obtention de l'autorisation de mobilité de courte durée.
+S'il est mis fin au séjour du chercheur ou s'il est procédé à son retrait, le séjour du membre de la famille prend également fin ou est retiré automatiquement, sauf si le membre de la famille bénéficie d'un droit de séjour autonome.
+Toute décision prise en vertu du présent article est prise après un examen individuel, qui tient compte de l'ensemble des circonstances propres à chaque cas, en ce compris l'intérêt du ressortissant d'un pays tiers, et dans le respect du principe de proportionnalité.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 25, 116; En vigueur : 01-03-2023>
+
+Sous-section 2. [1 - Permis pour mobilité de longue durée.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 26, 116; En vigueur : 01-03-2023>
+
+Art. 61/13/8. [1 § 1er. Le ressortissant d'un pays tiers qui souhaite séjourner plus de cent quatre-vingts jours sur le territoire dans le cadre d'une mobilité de longue durée sur la base d'une convention d'accueil signée avec un organisme de recherche agréé en qualité de chercheur introduit sa demande auprès de l'autorité régionale compétente sous la forme d'une demande d'autorisation de travail.
+La demande d'autorisation de travail vaut demande d'autorisation de mobilité de longue durée pour chercheur.
+§ 2. Les documents suivants sont joints à la demande:
+1° la preuve du paiement de la redevance visée à l'article 1er /1;
+2° les documents permettant d'établir les conditions visées à l'article 61/13/10.
+§ 3. Conformément à l'article 40, § 1er, alinéa 2, de l'accord de coopération du 6 décembre 2018, le ministre ou son délégué prend une décision relative à l'autorisation de séjour au plus tard dans un délai de soixante jours suivant la notification du caractère complet de la demande.
+§ 4. Le ministre ou son délégué peut exiger du ressortissant d'un pays tiers de produire dans un délai de quinze jours des informations ou documents complémentaires.
+Le délai visé au paragraphe 3 est suspendu jusqu'à ce que les informations complémentaires requises aient été reçues.
+§ 5. Conformément à l'article 33 de l'accord de coopération du 2 février 2018, si l'intéressé est autorisé à séjourner et à travailler plus de cent quatre-vingts jours sur le territoire en qualité de chercheur dans le cadre d'une mobilité de longue durée, l'autorisation de travail et l'autorisation de séjour lui sont notifiées sous la forme d'un acte administratif unique.
+§ 6. Le ministre ou son délégué avise le premier Etat membre ayant délivré un permis pour chercheur de la délivrance du permis pour mobilité de longue durée pour chercheur.
+§ 7. La demande de permis pour mobilité de longue durée pour chercheur doit avoir été introduite au moins trente jours avant le début de la mobilité de longue durée du chercheur en Belgique.
+§ 8. Une demande de mobilité de longue durée et une notification de mobilité de courte durée ne peuvent être déposées simultanément.
+Lorsqu'une mobilité de longue durée s'avère nécessaire alors que la mobilité de courte durée du chercheur a déjà commencé, la demande de mobilité de longue durée est introduite au moins trente jours avant la fin de la période de mobilité de courte durée.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 27, 116; En vigueur : 01-03-2023>
+
+Art. 61/13/9. [1 Conformément à l'article 43 de l'accord de coopération du 6 décembre 2018, le ressortissant de pays tiers autorisé à travailler et à séjourner plus de cent quatre-vingts jours sur le territoire en qualité de chercheur dans le cadre d'une mobilité de longue durée est inscrit dans le registre des étrangers et un permis pour mobilité de longue durée pour chercheur lui est délivré, à sa demande.
+Le Roi détermine:
+1° le modèle du permis pour mobilité de longue durée pour chercheur;
+2° la durée de validité du permis pour mobilité de longue durée pour chercheur;
+3° le document de séjour délivré au ressortissant d'un pays tiers dans l'attente de la délivrance du permis pour mobilité de longue durée pour chercheur.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 28, 116; En vigueur : 01-03-2023>
+
+Art. 61/13/10. [1 § 1er. Le ressortissant d'un pays tiers qui introduit une demande en application de l'article 61/13/8 est autorisé à séjourner plus de cent quatre-vingts jours sur le territoire en qualité de chercheur dans le cadre d'une mobilité de longue durée s'il produit les documents suivants à l'appui de sa demande:
+1° une copie de son passeport en cours de validité ou un titre de voyage en tenant lieu remplissant les conditions de validité prévues par l'article 6, § 1er, a), du Code frontières Schengen, couvrant au moins la durée du séjour prévu;
+2° la preuve qu'il dispose d'un permis pour chercheur valable délivré par le premier Etat membre;
+3° la convention d'accueil signée avec l'organisme de recherche agréé en Belgique;
+4° la preuve que le chercheur ou le membre de sa famille disposera, au cours du séjour prévu, de moyens de subsistance suffisants pour couvrir ses frais de voyage vers le premier Etat membre dans les cas visés au paragraphe 3 et pour couvrir ses frais de subsistance sans recourir au système d'aide sociale du Royaume. Dans ce cadre, il est notamment tenu compte des revenus qu'il percevra durant son séjour en qualité de chercheur;
+5° s'il est âgé de plus de dix-huit ans, un extrait de casier judiciaire ou un document équivalent, le cas échéant, de sa traduction légalisée, délivrés par le pays d'origine ou par le pays de sa dernière résidence, datant de moins de six mois, et attestant qu'il n'a pas été condamné pour des crimes ou des délits de droit commun;
+En cas d'impossibilité dûment justifiée de produire les documents visés l'alinéa 1er, 5°, le ministre ou son délégué peut toutefois, compte tenu des circonstances, octroyer l'autorisation de séjour en qualité de chercheur dans le cadre d'une mobilité de longue durée.
+Le Roi peut soumettre le passeport et le titre de voyage en tenant lieu à des conditions de validité plus précises ou supplémentaires.
+S'ils sont rédigés dans une autre langue qu'une des trois langues nationales ou l'anglais, les documents produits doivent être accompagnés d'une traduction légalisé vers l'une des trois langues nationales ou vers l'anglais.
+§ 2. Le ministre ou son délégué refuse l'autorisation de séjour en qualité de chercheur dans le cadre d'une mobilité de longue durée de plus de cent quatre-vingts jours, dans les cas suivants:
+1° l'intéressé ne remplit pas les conditions prévues au paragraphe 1er;
+2° l'intéressé se trouve dans un des cas visés à l'article 3, alinéa 1er, 5° à 10° ;
+3° l'intéressé a utilisé des informations fausses ou trompeuses ou des documents faux ou falsifiés, ou a recouru à la fraude ou a employé d'autres moyens illégaux qui ont contribué à l'obtention du séjour;
+4° l'intéressé n'a pas fourni les documents ou renseignements complémentaires dans le délai prescrit;
+5° le permis pour chercheur délivré par le premier Etat membre expire durant la procédure.
+§ 3. Le ministre ou son délégué met fin à l'autorisation de séjour de plus de cent quatre-vingts jours en qualité de chercheur dans le cadre d'une mobilité de longue durée dans les cas suivants:
+1° l'intéressé ne remplit pas ou plus les conditions de séjour visées au paragraphe 1er, à l'exception du paragraphe 1er, alinéa 1er, 5° ;
+2° l'intéressé a utilisé des informations fausses ou trompeuses ou des documents faux ou falsifiés, ou a recouru à la fraude ou a employé d'autres moyens illégaux qui ont contribué à l'obtention du séjour;
+3° l'intéressé séjourne à des fins autres que celles pour lesquelles il a été autorisé au séjour;
+4° l'organisme de recherche agréé a été créé ou opère dans le but principal de permettre à des ressortissants de pays tiers d'accéder au Royaume.
+§ 4. Toute décision prise en vertu du présent article est prise après un examen individuel, qui tient compte de l'ensemble des circonstances propres à chaque cas, en ce compris l'intérêt du ressortissant de pays tiers, et dans le respect du principe de proportionnalité.
+§ 5. Lorsque le ministre ou son délégué ne renouvelle pas l'autorisation octroyée pour mobilité de longue durée, ou la retire, il en informe, le cas échéant, immédiatement les autorités du deuxième Etat membre.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 29, 116; En vigueur : 01-03-2023>
+
+Art. 61/13/11. [1 § 1er. Le ministre ou son délégué notifie les décisions suivantes au ressortissant de pays tiers:
+1° les décisions de refus de l'autorisation de séjour ou mettant fin à l'autorisation de séjour prises en vertu de la présente sous-section;
+2° la décision d'octroi de l'autorisation de travail et de l'autorisation de séjour sous la forme d'un acte administratif unique.
+Dans les cas et conditions fixés par les articles 26 tot 36 de l'accord de coopération du 2 février 2018, le ministre ou son délégué informe l'employeur de la décision visée à l'alinéa 1er, 2°.
+§ 2. Conformément à l'article 17, alinéa 3, de l'accord de coopération du 2 février 2018, lorsque le ressortissant d'un pays tiers est autorisé à séjourner en application des dispositions de la présente sous-section, l'autorisation de séjour n'est valable que si l'autorité régionale compétente prend une décision définitive autorisant le ressortissant d'un pays tiers à travailler sur le territoire du Royaume.
+§ 3. Conformément à l'article 3 de l'accord de coopération du 6 décembre 2018, la durée de l'autorisation de séjour accordée en application des dispositions de la présente sous-section est limitée à la durée de l'autorisation de travail.
+§ 4. Si l'agrément de l'organisme de recherche est retiré ou son renouvellement est refusé pendant le séjour du chercheur dans le cadre d'une mobilité de longue durée, son séjour prend fin de plein droit nonante jours après cet événement, sans préjudice de la compétence du ministre ou de son délégué de mettre fin au séjour conformément à la présente loi.
+S'il n'est pas mis fin au séjour durant cette période, le ressortissant d'un pays tiers est mis en possession d'un document de séjour provisoire.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 30, 116; En vigueur : 01-03-2023>
+
+Section 4. [1 - Séjour après l'achèvement de la recherche en vue de trouver un emploi ou de créer une entreprise.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 31, 116; En vigueur : 01-03-2023>
+
+Art. 61/13/12. [1 § 1er. Après l'achèvement de ses recherches sur le territoire du Royaume conformément à l'article 61/12, le chercheur peut introduire une demande afin de séjourner sur le territoire du Royaume pendant un maximum de douze mois en vue de trouver un emploi ou de créer une entreprise.
+A cette fin, il introduit une demande à l'administration communale de son lieu de résidence sur le territoire du Royaume au plus tard quinze jours avant l'expiration de la durée de validité de son permis de séjour.
+§ 2. A l'appui de sa demande, le chercheur produit les documents suivants:
+1° la preuve du paiement de la redevance visée à l'article 1er/1;
+2° une copie de son passeport en cours de validité ou un titre de voyage en tenant lieu remplissant les conditions de validité prévues par l'article 6, § 1er, a), du Code frontières Schengen, couvrant au moins la durée du séjour prévu;
+3° la preuve qu'il dispose d'une assurance maladie couvrant l'ensemble des risques en Belgique pour lui-même et, le cas échéant, pour les membres de sa famille;
+4° la preuve qu'il disposera, au cours du séjour prévu, de moyens de subsistance suffisants afin de ne pas devenir une charge pour le système d'aide sociale du Royaume au cours de son séjour;
+5° la preuve, délivrée par l'organisme de recherche agréé en Belgique, que les activités de recherche sont achevées.
+Le Roi peut soumettre le passeport et le titre de voyage en tenant lieu à des conditions de validité plus précises ou supplémentaires.
+S'ils sont rédigés dans une autre langue qu'une des trois langues nationales ou l'anglais, les documents produits doivent être accompagnés d'une traduction légalisée vers l'une des trois langues nationales ou vers l'anglais.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 32, 116; En vigueur : 01-03-2023>
+
+Art. 61/13/13. [1 § 1er. Après réception de la demande, le bourgmestre ou son délégué vérifie si la demande est complète conformément à l'article 61/13/12. Le cas échéant, il délivre au ressortissant d'un pays tiers un récépissé de la demande.
+§ 2. Si la demande a été introduite dans le délai prévu à l'article 61/13/12, § 1er, alinéa 2, mais que tous les documents requis n'ont pas été fournis, le bourgmestre ou son délégué informe par écrit le ressortissant d'un pays tiers des documents à fournir.
+Le ressortissant d'un pays tiers dispose d'un délai de quinze jours à compter de la notification visée à l'alinéa 1er pour compléter sa demande.
+S'il produit les documents requis dans le délai prévu, conformément au paragraphe 1er, le bourgmestre ou son délégué délivre un récépissé de la demande au ressortissant d'un pays tiers.
+§ 3. Le ministre ou son délégué déclare la demande irrecevable dans les cas suivants:
+1° la demande n'a pas été introduite dans le délai visé à l'article 61/13/12, § 1er, alinéa 2;
+2° les documents manquants n'ont pas été produits dans le délai prévu au paragraphe 2, alinéa 2.
+Le bourgmestre ou son délégué notifie cette décision à l'intéressé et transmet une copie de cette décision au délégué du ministre.
+§ 4. Si la demande est recevable, le bourgmestre ou son délégué la transmet sans délai au ministre ou à son délégué.
+§ 5. Si, au cours de l'examen de la demande visée à l'article 61/13/12, le permis de séjour du chercheur expire, il se voit délivrer un document couvrant temporairement son séjour dans l'attente d'une décision du ministre ou de son délégué.
+§ 6. Le Roi détermine:
+1° le modèle de récépissé délivré conformément au paragraphe 1er;
+2° le modèle de décision d'irrecevabilité visé au paragraphe 3;
+3° le modèle du document visé au paragraphe 5.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 33, 116; En vigueur : 01-03-2023>
+
+Art. 61/13/14. [1 § 1er. Si le ministre ou son délégué octroie l'autorisation de séjour, cette décision est notifiée au ressortissant d'un pays tiers dans un délai de nonante jours suivant la date du récépissé de la demande, visé à l'article 61/13/13, § 1er.
+§ 2. Le ministre ou son délégué peut refuser une demande d'autorisation de séjour telle que visée à l'article 61/13/12 si le ressortissant d'un pays tiers:
+1° ne remplit pas les conditions fixées à l'article 61/13/13;
+2° est considéré comme une menace pour l'ordre public, la sécurité nationale ou la santé publique.
+§ 3. Le ministre ou son délégué peut mettre fin à l'autorisation de séjour délivrée conformément au paragraphe 1er, si le ressortissant d'un pays tiers:
+1° ne démontre pas qu'il a de réelles chances de trouver un emploi ou de créer une entreprise, à la seule demande du ministre ou de son délégué. Cette demande peut être introduite au plus tôt trois mois après la délivrance du permis de séjour;
+2° ne remplit plus les conditions fixées à l'article 61/13/12;
+3° est considéré comme une menace pour l'ordre public, la sécurité nationale ou la santé publique.
+§ 4. Le Roi détermine:
+1° le modèle de document de séjour délivré au ressortissant d'un pays tiers en cas de décision positive et sa durée de validité, tel que visé au paragraphe 1er;
+2° le modèle de décision de refus ou mettant fin au séjour, conformément aux paragraphes 2 et 3.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 34, 116; En vigueur : 01-03-2023>
+
+Art. 61/13/15. [1 La présente section s'applique également lorsque le chercheur fait usage ou a fait usage de son droit à la mobilité et que la Belgique est le deuxième Etat membre dans lequel le chercheur séjourne ou a séjourné.
+Cette demande est introduite au plus tard quinze jours avant l'expiration de la durée de validité de son permis pour chercheur délivré par le premier Etat membre.
+Cette demande peut aussi être introduite auprès du poste diplomatique ou consulaire compétent pour le lieu de sa résidence dans l'Etat membre, conformément à la procédure indiquée à l'article 61/13/2.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 35, 116; En vigueur : 01-03-2023>
+
+CHAPITRE VIbis. [1 - Stagiaires.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 36, 116; En vigueur : 19-11-2022>
+
+Section 1re. [1 - Dispositions générales.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 37, 116; En vigueur : 19-11-2022>
+
+Art. 61/13/16. [1 § 1er. Pour l'application du présent chapitre, on entend par:
+1° stagiaire: le ressortissant d'un pays tiers visé à l'article 47, 1°, de l'accord de coopération du 6 décembre 2018;
+2° permis pour stagiaire: le titre de séjour visé à l'article 47, 2°, de l'accord de coopération du 6 décembre 2018;
+3° stage: le programme de formation visé à l'article 47, 3°, de l'accord de coopération du 6 décembre 2018.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 38, 116; En vigueur : 19-11-2022>
+
+Art. 61/13/17. [1 Les dispositions du présent chapitre s'appliquent aux ressortissants d'un pays tiers qui demandent à être autorisés ou qui sont autorisés à séjourner plus de nonante jours sur le territoire de l'Etat en qualité de stagiaire.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 39, 116; En vigueur : 19-11-2022>
+
+Section 2. [1 - Permis pour stagiaire.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 40, 116; En vigueur : 19-11-2022>
+
+Art. 61/13/18. [1 § 1er. Le ressortissant de pays tiers qui souhaite séjourner sur le territoire en qualité de stagiaire introduit sa demande d'autorisation de séjour auprès de l'autorité régionale compétente sous la forme d'une demande d'autorisation de travail.
+La demande d'autorisation de travail vaut demande d'autorisation pour stagiaire.
+§ 2. A l'appui de sa demande, le ressortissant d'un pays tiers produit les documents suivants:
+1° excepté en cas de prolongation de la demande, la preuve du paiement de la redevance visée à l'article 1er/1;
+2° les documents permettant d'établir les conditions visées à l'article 61/13/23.
+§ 3. La demande doit être introduite lorsque le ressortissant d'un pays tiers se trouve en dehors du territoire des Etats membres.
+Par dérogation à l'alinéa 1er, le ressortissant d'un pays tiers qui est déjà admis ou autorisé à séjourner sur le territoire du Royaume pendant plus de nonante jours en une autre qualité, peut introduire sa demande auprès de l'autorité régionale compétente du lieu de sa résidence sur le territoire du Royaume s'il introduit la demande avant l'expiration de la durée de validité de ce permis ou de cette autorisation.
+§ 4. Conformément à l'article 51, alinéa 1er, de l'accord de coopération du 6 décembre 2018, le ministre ou son délégué prend une décision relative à l'autorisation ou au renouvellement du séjour au plus tard dans un délai de nonante jours suivant la notification du caractère complet de la demande.
+§ 5. Le ministre ou son délégué peut exiger du ressortissant de pays tiers de fournir dans un délai de quinze jours des informations ou documents complémentaires.
+Le délai visé au paragraphe 4 est suspendu jusqu'à ce que les informations complémentaires requises aient été reçues.
+§ 6. Conformément à l'article 33 de l'accord de coopération du 2 février 2018, si l'intéressé est autorisé à séjourner et à travailler sur le territoire en qualité de stagiaire, l'autorisation de travail et l'autorisation de séjour lui sont notifiées sous la forme d'un acte administratif unique.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 41, 116; En vigueur : 19-11-2022>
+
+Art. 61/13/19. [1 La durée de l'autorisation de séjour correspond à la durée de l'autorisation de travail.
+La durée de l'autorisation de séjour délivrée dans le cadre du renouvellement correspond à la durée de l'autorisation de travail.
+Le Roi peut préciser les modalités de la durée du renouvellement.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 42, 116; En vigueur : 19-11-2022>
+
+Art. 61/13/20. [1 § 1er. Sous réserve des dispositions de la législation régionale applicable, le ressortissant d'un pays tiers autorisé au séjour en qualité de stagiaire, conformément à l'article 61/13/23, § 1er, et qui souhaite continuer à séjourner en cette qualité, introduit une demande auprès de l'autorité régionale compétente au plus tard deux mois avant l'expiration de son séjour, sous la forme d'une demande d'autorisation de travail, conformément à l'article 21 de l'accord de coopération du 2 février 2018.
+§ 2. Si la durée de validité pendant laquelle l'intéressé est autorisé à séjourner en qualité de stagiaire expire durant l'examen de la demande de renouvellement et que la demande de renouvellement est recevable, il lui est délivré un document qui couvre provisoirement son séjour jusqu'à ce qu'il soit statué sur la demande visée au paragraphe 1er.
+Le Roi détermine les conditions et les modalités du document visé à l'alinéa 1er.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 43, 116; En vigueur : 19-11-2022>
+
+Art. 61/13/21. [1 Le ministre ou son délégué notifie les décisions suivantes au ressortissant d'un pays tiers:
+1° les décisions de refus de l'autorisation de séjour, de refus de renouvellement ou mettant fin à l'autorisation de séjour prises en vertu des dispositions de la présente section;
+2° la décision d'octroi ou d'octroi du renouvellement de l'autorisation de travail et de l'autorisation de séjour sous la forme d'un acte administratif unique.
+Dans les cas et conditions fixés par les articles 26 à 36 de l'accord de coopération du 2 février 2018, le ministre ou son délégué informe l'employeur de la décision visée à l'alinéa 1er, 2°.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 44, 116; En vigueur : 19-11-2022>
+
+Art. 61/13/22. [1 § 1er. Conformément à l'article 34, alinéa 2, de l'accord de coopération du 2 février 2018, et à l'article 52, alinéa 2, de l'accord de coopération du 6 décembre 2018, lorsque le ressortissant d'un pays tiers visé à l'article 61/13/18 se trouve à l'étranger à la date de la décision l'autorisant à travailler et à séjourner sur le territoire en qualité de stagiaire, un visa de long séjour lui est délivré, à sa demande.
+Le Roi fixe les conditions et les modalités de délivrance de ce visa.
+§ 2. Conformément à l'article 52, alinéa 3, de l'accord de coopération du 6 décembre 2018, le ressortissant d'un pays tiers autorisé à travailler et à séjourner sur le territoire en qualité de stagiaire est inscrit dans le registre des étrangers et un permis pour stagiaire est délivré.
+Le Roi détermine:
+1° le modèle du permis pour stagiaire;
+2° la durée de validité du permis pour stagiaire;
+3° le document de séjour délivré au ressortissant d'un pays tiers dans l'attente de la délivrance du permis pour stagiaire.
+§ 3. En cas de renouvellement du séjour conformément à l'article 53, § 2, de l'accord de coopération du 6 décembre 2018, le permis pour stagiaire est renouvelé pour la durée nécessaire pour achever le stage.
+Le Roi peut préciser les modalités de la durée du renouvellement.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 45, 116; En vigueur : 19-11-2022>
+
+Art. 61/13/23. [1 § 1er. Le ressortissant d'un pays tiers qui introduit une demande en application de l'article 61/13/18 est autorisé à séjourner sur le territoire en qualité de stagiaire ou à renouveler son séjour en cette qualité s'il produit les documents suivants à l'appui de sa demande:
+1° une copie de son passeport en cours de validité ou un titre de voyage en tenant lieu remplissant les conditions prévues par l'article 6, § 1er, a) du Code frontières Schengen, couvrant au moins la durée du séjour prévu;
+2° la preuve qu'il disposera, au cours du séjour prévu, de moyens de subsistance suffisants pour couvrir les frais de son voyage de retour et pour ne pas devenir une charge pour le système d'aide sociale du Royaume au cours de son séjour. Si d'application, dans ce cadre, il est notamment tenu compte des revenus qu'il percevra durant son séjour en qualité de stagiaire et la prise en charge éventuelle visée au 3° ;
+3° le cas échéant, la preuve que l'entité d'accueil se porte garante du stagiaire pendant toute la durée de son séjour sur le territoire du Royaume, en ce qui concerne notamment ses frais de subsistance et de logement;
+4° lorsque le stagiaire est logé pendant toute la durée de son séjour par l'entité d'accueil, la preuve que le stagiaire disposera d'un logement lui assurant des conditions de vie décentes, conformément à la législation relative au logement;
+5° la preuve qu'il dispose d'une assurance maladie couvrant tous les risques en Belgique pour la durée de son séjour;
+6° sauf en cas de renouvellement de la demande d'autorisation de séjour introduite en qualité de stagiaire, un certificat médical attestant qu'il n'est pas atteint d'une des maladies énumérées à l'annexe de la présente loi;
+7° sauf en cas de renouvellement de la demande d'autorisation de séjour en qualité de stagiaire et s'il a plus de dix-huit ans, un extrait du casier judiciaire ou un document équivalent, et le cas échéant sa traduction légalisée, délivré par le pays d'origine ou par le pays de sa dernière résidence, datant de moins de six mois, et attestant qu'il n'a pas été condamné pour des crimes ou des délits de droit commun;
+8° un engagement par écrit de l'entité d'accueil ou de l'employeur, en vertu duquel il supporte les frais de séjour et de retour financés par les fonds publics dans le cas où un stagiaire demeure irrégulièrement sur le territoire du Royaume. La responsabilité financière de l'entité d'accueil prend fin au plus tard six mois après la fin de la convention de stage;
+9° la convention de stage conclue par le stagiaire.
+En cas d'impossibilité dûment justifiée de produire les documents visés à l'alinéa 1er, 6° en 7°, le ministre ou son délégué peut toutefois, compte tenu des circonstances, autoriser l'étranger à séjourner sur le territoire du Royaume pour y faire un stage.
+Le Roi peut soumettre le passeport et le titre de voyage en tenant lieu à des conditions de validité plus précises ou supplémentaires.
+§ 2. Le ministre ou son délégué refuse d'octroyer l'autorisation de séjour en qualité de stagiaire dans les cas suivants:
+1° l'intéressé ne remplit pas les conditions prévues au paragraphe 1er;
+2° l'intéressé se trouve dans un des cas visés à l'article 3, alinéa 1er, 5° à 10° ;
+3° l'intéressé a utilisé des informations fausses ou trompeuses ou des documents faux ou falsifiés, ou a recouru à la fraude ou a employé d'autres moyens illégaux qui contribuent à l'obtention du séjour;
+4° l'intéressé n'a pas fourni les documents ou informations complémentaires dans le délai prescrit;
+5° l'employeur ou l'entité d'accueil a été créé ou opère dans le but principal de permettre à des ressortissants de pays tiers d'accéder au Royaume;
+6° des preuves ou motifs sérieux et objectifs permettent d'établir que le séjour de l'intéressé poursuivrait d'autres finalités que celles pour lesquelles il demande une autorisation.
+§ 3. Le ministre ou son délégué refuse de renouveler l'autorisation de séjour en qualité de stagiaire ou met fin au séjour, dans les cas suivants:
+1° le stagiaire ne remplit pas ou plus les conditions prévues, à l'exception des conditions visées au paragraphe 1er, alinéa 1er, 6° et 7° ;
+2° le stagiaire séjourne à des fins autres que celles pour lesquelles il a été autorisé au séjour;
+3° l'employeur ou l'entité d'accueil a été créé ou opère dans le but principal de permettre à des ressortissants de pays tiers d'accéder au Royaume;
+4° l'intéressé a utilisé des informations fausses ou trompeuses ou des documents faux ou falsifiés, ou a recouru à la fraude ou a employé d'autres moyens illégaux qui ont contribué à l'obtention du séjour.
+§ 4. Toute décision prise en vertu du présent article est prise après un examen individuel, qui tient compte de l'ensemble des circonstances propres à chaque cas, en ce compris l'intérêt du ressortissant de pays tiers, et dans le respect du principe de proportionnalité.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 46, 116; En vigueur : 19-11-2022>
+
+Art. 61/13/24. [1 § 1er. Conformément à l'article 17, alinéa 3, de l'accord de coopération du 2 février 2018, lorsque le ressortissant d'un pays tiers est autorisé à séjourner en application des dispositions du présent chapitre, l'autorisation de séjour n'est valable que si l'autorité régionale compétente prend une décision définitive autorisant le ressortissant d'un pays tiers à travailler sur le territoire du Royaume.
+Conformément à l'article 53 de l'accord de coopération du 6 décembre 2018, la durée de l'autorisation de séjour accordée en application des dispositions de la présente section est limitée à la durée du stage et est de six mois au maximum.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 47, 116; En vigueur : 19-11-2022>
+
+CHAPITRE VIter. [1 - Volontaires dans le cadre du service volontaire européen.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 48, 116; En vigueur : 19-11-2022>
+
+Section 1re. [1 - Dispositions générales.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 49, 116; En vigueur : 19-11-2022>
+
+Art. 61/13/25. [1 Pour l'application du présent chapitre, on entend par:
+1° volontaire: le ressortissant de pays tiers visé à l'article 55, 1°, de l'accord de coopération du 6 décembre 2018;
+2° permis pour volontaire: le titre de séjour visé à l'article 55, 3°, de l'accord de coopération du 6 décembre 2018;
+3° programme de volontariat: le programme visé à l'article 55, 2°, de l'accord de coopération du 6 décembre 2018.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 50, 116; En vigueur : 19-11-2022>
+
+Art. 61/13/26. [1 Les dispositions du présent chapitre s'appliquent aux ressortissants d'un pays tiers qui demandent à être autorisés ou qui sont autorisés à séjourner plus de nonante jours sur le territoire du Royaume en qualité de volontaire dans le cadre du service volontaire européen.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 51, 116; En vigueur : 19-11-2022>
+
+Section 2. [1 - Permis pour volontaire.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 52, 116; En vigueur : 19-11-2022>
+
+Art. 61/13/27. [1 § 1er. Le ressortissant d'un pays tiers qui souhaite séjourner sur le territoire en qualité de volontaire introduit sa demande d'autorisation de séjour auprès de l'autorité régionale compétente sous la forme d'une demande d'autorisation de travail.
+La demande d'autorisation de travail vaut demande de permis pour volontaire.
+§ 2. A l'appui de sa demande, le ressortissant d'un pays tiers produit les documents suivants:
+1° la preuve du paiement de la redevance visée à l'article 1er/1;
+2° les documents permettant d'établir les conditions visées à l'article 61/13/31.
+§ 3. La demande est introduite lorsque le ressortissant d'un pays tiers se trouve en dehors du territoire des Etats membres.
+Par dérogation à l'alinéa 1er, le ressortissant d'un pays tiers qui est déjà admis ou autorisé à séjourner sur le territoire du Royaume pendant plus de nonante jours en une autre qualité, peut introduire sa demande auprès de l'autorité régionale compétente du lieu de sa résidence sur le territoire du Royaume si la demande est introduite avant l'expiration de la durée de validité de ce permis ou de cette autorisation.
+§ 4. Conformément à l'article 58, alinéa 1er, de l'accord de coopération du 6 décembre 2018, le ministre ou son délégué prend une décision relative à l'autorisation de séjour au plus tard dans un délai de nonante jours suivant la notification du caractère complet de la demande.
+§ 5. Le ministre ou son délégué peut exiger du ressortissant d'un pays tiers de fournir dans un délai de quinze jours des informations ou documents complémentaires.
+Le délai visé au paragraphe 4 est suspendu jusqu'à ce que les informations complémentaires requises aient été reçues.
+§ 6. Conformément à l'article 33 de l'accord de coopération du 2 février 2018, si l'intéressé est autorisé à séjourner et à travailler sur le territoire en qualité de volontaire, l'autorisation de travail et l'autorisation de séjour lui sont notifiées sous la forme d'un acte administratif unique.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 53, 116; En vigueur : 19-11-2022>
+
+Art. 61/13/28. [1 La durée de l'autorisation de séjour correspond à la durée de l'autorisation de travail.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 54, 116; En vigueur : 19-11-2022>
+
+Art. 61/13/29. [1 Le ministre ou son délégué notifie les décisions suivantes au ressortissant d'un pays tiers:
+1° la décision de refus de l'autorisation de séjour ou mettant fin à l'autorisation de séjour;
+2° la décision d'octroi de l'autorisation de travail et de l'autorisation de séjour sous la forme d'un acte administratif unique.
+Dans les cas et conditions fixés par les articles 26 à 36 de l'accord de coopération du 2 février 2018, le ministre ou son délégué informe l'employeur de la décision visée à l'alinéa 1er, 2°.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 55, 116; En vigueur : 19-11-2022>
+
+Art. 61/13/30. [1 § 1er. Conformément à l'article 34, alinéa 2, de l'accord de coopération du 2 février 2018, et à l'article 59, alinéa 2, de l'accord de coopération du 6 décembre 2018, lorsque le ressortissant d'un pays tiers visé à l'article 61/13/26 se trouve à l'étranger à la date de la décision l'autorisant à travailler et à séjourner sur le territoire en qualité de volontaire, un visa de long séjour lui est délivré, à sa demande.
+Le Roi fixe les conditions et les modalités de délivrance de ce visa.
+§ 2. Conformément à l'article 59, alinéa 3, de l'accord de coopération du 6 décembre 2018, le ressortissant de pays tiers autorisé à travailler et à séjourner sur le territoire en qualité de volontaire est inscrit dans le registre des étrangers et un permis pour volontaire lui est délivré.
+Le Roi détermine:
+1° le modèle du permis pour volontaire;
+2° la durée de validité du permis pour volontaire;
+3° le document de séjour délivré au ressortissant d'un pays tiers dans l'attente de la délivrance du permis pour volontaire.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 56, 116; En vigueur : 19-11-2022>
+
+Art. 61/13/31. [1 § 1er. Le ressortissant d'un pays tiers qui introduit une demande en application de l'article 61/13/26 est autorisé à séjourner sur le territoire en qualité de volontaire s'il produit les documents suivants à l'appui de sa demande:
+1° une copie de son passeport en cours de validité ou un titre de voyage en tenant lieu remplissant les conditions prévues par l'article 6, § 1er, a), du Code frontières Schengen, couvrant au moins la durée du séjour prévu;
+2° la preuve qu'il disposera, au cours du séjour prévu, de moyens de subsistance suffisants afin de ne pas devenir une charge pour le système d'aide sociale du Royaume au cours de son séjour. Il est notamment tenu compte d'une éventuelle prise en charge par l'entité d'accueil en ce qui concerne notamment les frais de subsistance et de logement;
+3° la preuve qu'il dispose d'une assurance maladie couvrant tous les risques en Belgique;
+4° lorsque le volontaire est logé pendant toute la durée de son séjour par l'entité d'accueil, la preuve que le volontaire disposera d'un logement lui assurant des conditions de vie décentes, conformément à la législation relative au logement;
+5° un certificat médical attestant qu'il n'est pas atteint d'une des maladies énumérées à l'annexe de la présente loi;
+6° s'il est âgé de plus de dix-huit ans, un extrait de casier judiciaire ou un document équivalent, le cas échéant, de sa traduction légalisée, délivrés par le pays d'origine ou par le pays de sa dernière résidence, datant de moins de six mois, et attestant qu'il n'a pas été condamné pour des crimes ou des délits de droit commun;
+7° la convention de volontariat conclue par le demandeur.
+En cas d'impossibilité dûment justifiée de produire les documents visés à l'alinéa 1er, 5° et 6°, le ministre ou son délégué peut toutefois, compte tenu des circonstances, autoriser l'étranger à séjourner sur le territoire du Royaume pour y effectuer du volontariat dans le cadre du service volontaire européen.
+Le Roi peut soumettre le passeport et le titre de voyage en tenant lieu à des conditions de validité plus précises ou supplémentaires.
+L'entité d'accueil présente un engagement par écrit, qui confirme sa responsabilité financière pour les frais financés par les fonds publics liés au séjour et au retour du volontaire, dans l'hypothèse où le volontaire demeure irrégulièrement en Belgique.
+§ 2. Le ministre ou son délégué refuse d'octroyer l'autorisation de séjour en qualité de volontaire dans les cas suivants:
+1° l'intéressé ne remplit pas les conditions prévues au paragraphe 1er;
+2° l'intéressé se trouve dans un des cas visés à l'article 3, alinéa 1er, 5° à 10° ;
+3° l'intéressé a utilisé des informations fausses ou trompeuses ou des documents faux ou falsifiés, ou a recouru à la fraude ou a employé d'autres moyens illégaux qui contribuent à l'obtention du séjour;
+4° l'intéressé n'a pas fourni les documents ou informations complémentaires dans le délai prescrit;
+5° l'entité d'accueil a été créée ou opère dans le but principal de permettre à des ressortissants de pays tiers d'accéder au Royaume;
+6° des preuves ou motifs sérieux et objectifs permettent d'établir que le séjour de l'intéressé poursuivrait d'autres finalités que celles pour lesquelles il demande une autorisation.
+§ 3. Le ministre ou son délégué met fin au séjour en qualité de volontaire dans les cas suivants:
+1° le volontaire ne remplit pas ou plus les conditions prévues, à l'exception des conditions visées au paragraphe 1er, alinéa 1er 5° et 6° ;
+2° le volontaire séjourne à des fins autres que celles pour lesquelles il a été autorisé au séjour;
+3° l'entité d'accueil a été créée ou opère dans le but principal de permettre à des ressortissants de pays tiers d'accéder au Royaume;
+4° l'intéressé a utilisé des informations fausses ou trompeuses ou des documents faux ou falsifiés, ou a recouru à la fraude ou a employé d'autres moyens illégaux qui ont contribué à l'obtention du séjour.
+§ 4. Toute décision prise en vertu du présent article est prise après un examen individuel, qui tient compte de l'ensemble des circonstances propres à chaque cas, en ce compris l'intérêt du ressortissant d'un pays tiers, et dans le respect du principe de proportionnalité.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 57, 116; En vigueur : 19-11-2022>
+
+Art. 61/13/32. [1 § 1er. Conformément à l'article 17, alinéa 3, de l'accord de coopération du 2 février 2018, lorsque le ressortissant d'un pays tiers est autorisé à séjourner en application des dispositions du présent chapitre, l'autorisation de séjour n'est valable que si l'autorité régionale compétente prend une décision définitive autorisant le ressortissant d'un pays tiers à travailler sur le territoire du Royaume.
+Conformément à l'article 61 de l'accord de coopération du 6 décembre 2018, la durée de l'autorisation de séjour accordée en application des dispositions de la présente section est limitée à un an.]1
+----------
+(1)<Inséré par L 2022-08-21/05, art. 58, 116; En vigueur : 19-11-2022>
+
+Chapitre VII. - [1 Mineurs étrangers non accompagnés]1
+----------
+(1)<Inséré par L 2011-09-12/36, art. 2, 059; En vigueur : 08-12-2011>
+
+Art. 61/14. [1 Pour l'application du présent chapitre, on entend par :
+1° mineur étranger non accompagné (MENA) : un ressortissant d'un pays non membre de l'Espace économique européen, qui est âgé de moins de 18 ans, qui n'est pas accompagné par une personne exerçant l'autorité parentale ou la tutelle sur lui en vertu de la loi applicable conformément à l'article 35 de la loi du 16 juillet 2004 portant le Code de droit international privé, et qui a été identifié définitivement comme MENA par le service des Tutelles, institué par le Titre XIII, Chapitre VI, " Tutelle des mineurs étrangers non accompagnés " de la loi-programme du 24 décembre 2002;
+2° solution durable :
+- soit le regroupement familial, conformément aux articles 9 et 10 de la Convention des Nations Unies relative aux droits de l'enfant du 20 novembre 1989, dans le pays où les parents se trouvent légalement;
+- soit le retour vers le pays d'origine ou vers le pays où le MENA est autorisé ou admis à séjourner, avec des garanties d'accueil et de soins adéquats, en fonction de son âge et de son degré d'autonomie, soit de la part de ses parents ou d'autres adultes qui s'occuperont de lui, soit de la part d'organismes publics ou d'organisations non gouvernementales;
+- soit l'autorisation de séjourner en Belgique, compte tenu des dispositions prévues par la loi;
+3° tuteur : représentant légal du MENA, tel que désigné par le service des Tutelles.]1
+----------
+(1)<Inséré par L 2011-09-12/36, art. 2, 059; En vigueur : 08-12-2011>
+
+Art. 61/15.[1 [2 Qu'il y ait ou non une autre procédure de protection, d'autorisation ou d'admission au séjour ou à l'établissement en cours, le tuteur peut introduire pour son pupille une demande d'autorisation de séjour sur la base du présent chapitre auprès du ministre ou de son délégué.]2
+Le Roi précise les données qui figureront dans la demande.]1
+----------
+(1)<Inséré par L 2011-09-12/36, art. 2, 059; En vigueur : 08-12-2011>
+(2)<L 2015-02-26/13, art. 2, 080; En vigueur : 26-03-2015>
+
+Art. 61/16. [1 Le ministre ou son délégué entend le MENA, qui est accompagné de son tuteur.
+Le Roi fixe les modalités de l'audition.]1
+----------
+(1)<Inséré par L 2011-09-12/36, art. 2, 059; En vigueur : 08-12-2011>
+
+Art. 61/17. [1 Dans la recherche d'une solution durable, le ministre ou son délégué vise prioritairement à sauvegarder l'unité familiale, conformément aux articles 9 et 10 de la Convention des Nations unies du 20 novembre 1989 relative aux droits de l'enfant et à l'intérêt supérieur de l'enfant.]1
+----------
+(1)<Inséré par L 2011-09-12/36, art. 2, 059; En vigueur : 08-12-2011>
+
+Art. 61/18. [1 Au terme d'un examen individuel et sur la base de l'ensemble des éléments, le ministre ou son délégué donne au bourgmestre ou à son délégué l'instruction :
+- soit de délivrer au tuteur un ordre de reconduire, si la solution durable consiste en le retour dans un autre pays ou le regroupement familial dans un autre pays;
+- soit de délivrer un document de séjour, si une solution durable n'a pas été trouvée.
+Le document de séjour a une durée de validité de six mois. Le Roi détermine le modèle du document.]1
+----------
+(1)<Inséré par L 2011-09-12/36, art. 2, 059; En vigueur : 08-12-2011>
+
+Art. 61/19. [1 § 1er. Dans le cas où une solution durable n'a pu être trouvée, le tuteur transmet, un mois avant l'expiration de la durée de validité du document de séjour, au ministre ou à son délégué systématiquement tous les éléments et documents probants qui concernent la proposition de solution durable, qui est introduite sur la base de l'article 11, § 1er, du titre XIII, Chapitre VI, " Tutelle des mineurs étrangers non accompagnés " de la loi-programme du 24 décembre 2002.
+Les éléments et documents probants devant être produits sont :
+1° la proposition de solution durable;
+2° la situation familiale du MENA;
+3° tout élément spécifique relatif à la situation spécifique du MENA;
+4° la preuve d'une scolarité régulière.
+§ 2. En fonction des éléments et documents probants qui lui sont transmis, le ministre ou son délégué peut décider de procéder à une nouvelle audition du MENA, qui est accompagné de son tuteur.
+Dans le cas où une solution durable n'a toujours pas pu être dégagée, le ministre ou son délégué donne au bourgmestre ou à son délégué l'instruction de prolonger de six mois la durée de validité du document de séjour délivré au MENA]1
+----------
+(1)<Inséré par L 2011-09-12/36, art. 2, 059; En vigueur : 08-12-2011>
+
+Art. 61/20. [1 Si la solution durable prévue est le séjour en Belgique, le ministre ou son délégué délivre, sur présentation du passeport national du MENA, une autorisation de séjour d'une durée d'un an.
+Si le tuteur ne peut pas produire le passeport national du MENA, il transmet par écrit les documents attestant les démarches entreprises pour prouver l'identité du MENA au ministre ou à son délégué. Le Roi peut fixer les modalités selon lesquelles ces documents doivent être établis.
+L'inscription au registre des étrangers et la délivrance d'un titre de séjour sont effectuées conformément aux dispositions de l'article 12.]1
+----------
+(1)<Inséré par L 2011-09-12/36, art. 2, 059; En vigueur : 08-12-2011>
+
+Art. 61/21. [1 Un mois avant la date d'expiration de l'autorisation de séjour temporaire qui a été accordée au MENA, le tuteur transmet par écrit les éléments probants relatifs au projet de vie de celui-ci en Belgique au ministre ou à son délégué.
+Les éléments probants relatifs au projet de vie sont :
+1° tout élément spécifique lié à la situation spécifique du MENA;
+2° la situation familiale du MENA;
+3° la preuve d'une scolarité régulière;
+4° la preuve de la connaissance d'une des trois langues nationales.]1
+----------
+(1)<Inséré par L 2011-09-12/36, art. 2, 059; En vigueur : 08-12-2011>
+
+Art. 61/22.[1 Si le ministre ou son délégué constate que des informations fausses ou trompeuses ont été communiquées, que des documents faux ou falsifiés ont été transmis en ce qui concerne les éléments mentionnés à l'article 61/21, qu'une fraude a été commise ou que d'autres moyens illégaux ont été utilisés pour passer pour un mineur, un ordre de quitter le territoire est délivré [2 en application de l'article 74/20, paragraphe 2,]2 s'il s'avère qu'il s'agit d'un étranger âgé de 18 ans ou plus.
+Si le ministre ou son délégué apprend que des informations fausses ou trompeuses ont été communiquées, que des documents faux ou falsifiés ont été transmis, qu'une fraude a été commise ou que d'autres moyens illégaux ont été utilisés pour prouver les éléments visés à l'article 61/21, alinéa 2, 1° et 2°, le ministre ou son délégué peut modifier la solution durable conformément à l'article 61/18.
+A cet effet, le ministre ou son délégué détermine si c'est le tuteur ou le MENA qui a recouru à de fausses informations ou à de faux documents, en fonction de sa faculté de discernement, et ce, afin de ne pas porter préjudice au mineur.]1
+----------
+(1)<Inséré par L 2011-09-12/36, art. 2, 059; En vigueur : 08-12-2011>
+(2)<L 2016-05-04/29, art. 29, 089; En vigueur : 07-07-2016>
+
+Art. 61/23. [1 A l'issue d'une période de trois ans à compter de l'octroi de l'autorisation de séjour temporaire prévue à l'article 61/20, le ministre ou son délégué octroie une autorisation de séjour d'une durée indéterminée au MENA. Si le ministre décide de ne pas octroyer d'autorisation, il doit motiver sa décision.]1
+----------
+(1)<Inséré par L 2011-09-12/36, art. 2, 059; En vigueur : 08-12-2011>
+
+Art. 61/24. [1 Lorsqu'il a obtenu une autorisation de séjour temporaire, le MENA est informé, avant d'atteindre l'âge de dix-huit ans, par le ministre ou son délégué des conditions qui doivent être remplies pour obtenir une nouvelle autorisation de séjour.]1
+----------
+(1)<Inséré par L 2011-09-12/36, art. 2, 059; En vigueur : 08-12-2011>
+
+Art. 61/25. [1 Les dispositions du présent chapitre ne sont pas d'application, s'il s'avère que le MENA a commis des actes visés à l'article 3, alinéa 1er, 7°.]1
+----------
+(1)<Inséré par L 2011-09-12/36, art. 2, 059; En vigueur : 08-12-2011>
+
+CHAPITRE VIIbis [1 Ressortissants de pays tiers qui séjournent ou souhaitent séjourner dans le Royaume à des fins d'emploi pour une période de plus nonante jours ]1
+----------
+(1)<Inséré par L 2018-07-22/12, art. 5, 104; En vigueur : 24-12-2018>
+
+SECTION I. [1 - Dispositions relatives à la procédure conjointe en matière d'occupation des travailleurs étrangers.]1
+----------
+(1)<L 2020-07-31/24, art. 9, 109; En vigueur : 01-09-2020>
+
+Art. 61/25-1..[1 Les dispositions du présent chapitre s'appliquent aux ressortissants de pays tiers qui introduisent une demande d'autorisation de travail, ou de renouvellement de cette autorisation, dans le Royaume auprès de [3 l'autorité régionale compétente]3, [2 à l'exception des ressortissants de pays tiers qui sont soumis aux [3 dispositions du chapitre VIII, du chapitre VIIIbis et du chapitre VIIIter]3]2 L'introduction de cette demande vaut introduction d'une demande de séjour.
+[3 ...]3
+----------
+(1)<Inséré par L 2018-07-22/12, art. 7, 104; En vigueur : 24-12-2018>
+(2)<L 2019-05-05/21, art. 9, 107; En vigueur : 01-09-2019>
+(3)<L 2020-07-31/24, art. 10, 109; En vigueur : 01-09-2020>
+
+Art. 61/25-2.[1 § 1er. Le ministre ou son délégué statue sur la demande de séjour visée à l'article 61/25-1.
+Sans préjudice de la possibilité pour le ministre ou son délégué de demander des informations et des documents complémentaires conformément à l'article 25, § 2, de l'accord de coopération du 2 février 2018, le ministre ou son délégué se base notamment sur les documents et informations suivants pour statuer sur la demande :
+1° une copie de son passeport ou du titre de voyage en tenant lieu en cours de validité ;
+2° la preuve qu'il dispose de moyens de subsistance suffisants, la durée de son occupation en tant que travailleur, et, le cas échéant, le numéro de T.V.A. de l'employeur ;
+3° sauf en cas de renouvellement de la demande d'autorisation de séjour introduite sur base de l'article 61/25-1, la preuve du paiement de la redevance tel qu'exigé par l'article 1er/1 ;
+4° sauf en cas de renouvellement de la demande d'autorisation de séjour introduite sur base de l'article 61/25-1, un extrait du casier judiciaire ou un document équivalent, et le cas échéant sa traduction légalisée, délivré par le pays d'origine ou par le pays de sa dernière résidence, datant de moins de six mois, et attestant qu'il n'a pas été condamné pour des crimes ou des délits de droit commun pour autant que le demandeur soit âgé de 18 ans ou plus ;
+5° sauf en cas de renouvellement de la demande d'autorisation de séjour introduite sur base de l'article 61/25-1, un certificat médical d'où il résulte que le demandeur n'est pas atteint d'une des maladies énumérées à l'annexe de la présente loi ;
+6° la preuve qu'il dispose d'une assurance maladie couvrant l'ensemble des risques en Belgique pour lui-même et les membres de sa famille.
+En cas d'impossibilité dûment justifiée de pouvoir produire les documents visés à l'alinéa [3 2]3, 4°, 5° et 6°, le ministre ou son délégué peut néanmoins, compte tenu des circonstances, autoriser le demandeur à séjourner en Belgique.
+§ 2. Le ressortissant d'un pays tiers admis ou autorisé à séjourner sur le territoire du Royaume pour une période n'excédant pas nonante jours conformément au titre I, chapitre II, ou pour une période de plus de nonante jours [3 conformément au titre I, chapitre III ou titre II]3 peut introduire une demande d'autorisation de travail visée à l'article 61/25-1.
+[3 L'alinéa 1er n'est pas applicable aux étrangers visés par l'arrêté royal du 30 octobre 1991 relatif aux documents de séjour en Belgique de certains étrangers, sauf s'ils prouvent qu'ils peuvent renoncer à leur statut privilégié.]3
+[3 Sans préjudice de la possibilité de demander des informations et documents complémentaires, le ressortissant d'un pays tiers produit, outre les documents visés au paragraphe 1er, la preuve de l'admission ou autorisation, comme visée à l'alinéa 1er.]3
+[3 Le ministre ou son délégué peut néanmoins, compte tenu des circonstances, autoriser le demandeur à séjourner en Belgique sans les documents visés au paragraphe 1er, alinéa 2, 4°, 5° et 6°.]3
+§ 3. Conformément à l'article 29, alinéa 1er, de l'accord de coopération du 2 février 2018, lorsque le ressortissant d'un pays tiers est autorisé à séjourner sur le territoire en application des dispositions du présent chapitre, le ministre ou son délégué en informe [2 l'autorité régionale compétente]2 par courrier, par télécopie ou par courrier électronique.
+Conformément à l'article 17, alinéa 3, de l'accord de coopération du 2 février 2018, lorsque le ressortissant d'un pays tiers est autorisé à séjourner en application des dispositions du présent chapitre, l'autorisation de séjour n'est valable que sous la condition que [2 l'autorité régionale compétente]2 prenne une décision définitive autorisant le ressortissant d'un pays tiers à travailler sur le territoire du Royaume.
+§ 4. Conformément aux articles 26 alinéa 2, 28, alinéa 2, 29, alinéa 2 et 33 de l'accord de coopération du 2 février 2018, lorsque le ressortissant d'un pays tiers est autorisé à séjourner en application des dispositions du présent chapitre et autorisé à travailler par [2 l'autorité régionale compétente]2, le ministre ou son délégué lui notifie une décision accordant le permis unique.
+Cette décision prend la forme d'un acte administratif unique autorisant à la fois le séjour et le travail.
+Le ministre ou son délégué en informe l'employeur.
+§ 5. Conformément à l'article 36, § 2, de l'accord de coopération du 2 février 2018, si le ressortissant d'un pays tiers n'est plus autorisé à travailler, son séjour prend fin de plein droit nonante jours après la fin de l'autorisation de travail, sans préjudice de la faculté du ministre ou de son délégué de mettre fin à son séjour en application de l'article 61/25-7.
+Le Roi détermine le document de séjour délivré au ressortissant d'un pays tiers, et aux membres de sa famille, si la validité de leur titre de séjour arrive à échéance durant la période de nonante jours visée à l'alinéa 1er.
+§ 6. Conformément aux articles 26, alinéa 3 et 36, § 3, de l'accord de coopération du 2 février 2018, lorsque le ministre ou son délégué prend une décision de refus ou de fin de séjour, il en informe [2 l'autorité régionale compétente]2 par courrier, par télécopie ou par courrier électronique.
+§ 7. Conformément à l'article 36, §§ 1er et 3 de l'accord de coopération du 2 février 2018, toute décision relative à une demande introduite sur base de l'article 61/25-1 prise par le ministre ou son délégué est notifiée au ressortissant d'un pays tiers. Le ministre ou son délégué en informe son employeur.
+Toute décision de fin d'autorisation relative à une demande introduite sur base de l'article 61/25-1 est notifiée au ressortissant d'un pays tiers.
+Toute décision de fin d'autorisation de travail prise par [2 l'autorité régionale compétente]2 est notifiée par le ministre ou son délégué au ressortissant d'un pays tiers et à son employeur. Le ministre ou son délégué informe l'autorité compétente de cette notification.]1
+----------
+(1)<Inséré par L 2018-07-22/12, art. 8, 104; En vigueur : 24-12-2018>
+(2)<L 2020-07-31/24, art. 11, 109; En vigueur : 01-09-2020>
+(3)<L 2022-11-29/06, art. 4, 117; En vigueur : 30-12-2022>
+
+Art. 61/25-3.[1 Conformément à l'article 21 de l'accord de coopération du 2 février 2018, la demande de renouvellement introduite sur la base de l'article 61/25-1, alinéa 1er, et répondant aux conditions déterminées par [2 l'autorité régionale compétente]2 est introduite au plus tard deux mois avant l'expiration de la validité de l'autorisation précédente.
+Lors de la demande de renouvellement, si le titre de séjour vient à échéance, le ressortissant d'un pays tiers reçoit un document qui couvre provisoirement son séjour dans l'attente d'une décision prise par le ministre ou son délégué ou, le cas échéant, par [2 l'autorité régionale compétente]2. Le Roi détermine le document de séjour délivré au ressortissant d'un pays tiers.]1
+----------
+(1)<Inséré par L 2018-07-22/12, art. 9, 104; En vigueur : 24-12-2018>
+(2)<L 2020-07-31/24, art. 12, 109; En vigueur : 01-09-2020>
+
+Section 2. [1 Dispositions relatives à l'autorisation de séjourner sur le territoire à des fins d'emploi pour une période de plus de nonante jours ]1
+----------
+(1)<Inséré par L 2018-07-22/12, art. 10, 104; En vigueur : 24-12-2018>
+
+Art. 61/25-4. [1 Sans préjudice des dispositions plus favorables prévues par le droit de l'Union ou les conventions internationales liant la Belgique, les dispositions de la présente section s'appliquent aux ressortissants de pays tiers qui introduisent une demande d'autorisation de travail conformément à l'article 61/25-1, alinéa 1er, et qui souhaitent séjourner ou séjournent dans le Royaume pour une période de plus de nonante jours. ]1
+----------
+(1)<Inséré par L 2018-07-22/12, art. 11, 104; En vigueur : 24-12-2018>
+
+Art. 61/25-5.[1 § 1er. Le ressortissant de pays tiers visé à l'article 61/25-4, est autorisé à entrer et à séjourner plus de nonante jours sur le territoire du Royaume afin d'y travailler, ou son autorisation de séjour est renouvelée, pour autant que :
+1° le ressortissant d'un pays tiers ne se trouve pas dans un des cas mentionnés à [2 l'article 3, alinéa 1er, 5° à 10°]2 ;
+2° en cas d'absence d'un contrat de travail en cours de validité, le ressortissant d'un pays tiers dispose des moyens de subsistance suffisants pour la durée du séjour envisagé ;
+3° lorsque le ressortissant de pays tiers séjourne sur le territoire du Royaume lors de l'introduction de la demande visée à l'article 61/25-1, il est déjà admis ou autorisé à séjourner dans le Royaume pour une période n'excédant pas nonante jours conformément au titre I, chapitre II, ou pour une période de plus de nonante jours [4 conformément au titre I, chapitre III ou au titre II, sauf s'il s'agit d'un étranger visé par l'arrêté royal du 30 octobre 1991 relatif aux documents de séjour en Belgique de certains étrangers, à moins qu'il ne prouve qu'il peut renoncer à son statut privilégié]4;
+[2 4° il satisfasse aux conditions prévues à l'article 61/25-2, § 1er, alinéa 2.]2
+§ 2. Conformément à l'article 25, §§ 1er, 3 et 4 de l'accord de coopération du 2 février 2018, le ministre ou son délégué statue sur la demande de séjour, ou de son renouvellement, dans les quatre mois suivant la notification du caractère complet de la demande.
+Le délai visé à l'alinéa 1er peut être prolongé dans des circonstances exceptionnelles liées à la complexité de l'examen de la demande. Le ministre ou son délégué en informe le ressortissant d'un pays tiers et [3 l'autorité régionale compétente]3.
+Si le ministre ou son délégué ne statue pas dans le délai visé à l'alinéa 1er, éventuellement prolongé, le ressortissant d'un pays tiers est autorisé au séjour.
+§ 3. Conformément à l'article 25, § 2, de l'accord de coopération du 2 février 2018, lors de l'examen de la demande, il peut être exigé du ressortissant du pays tiers de produire dans un délai de 15 jours des informations ou documents complémentaires.
+Si les informations et documents complémentaires ne sont pas produits dans le délai visé à l'alinéa 1er, l'autorisation de séjour, ou le renouvellement de celle-ci, est refusée. ]1
+----------
+(1)<Inséré par L 2018-07-22/12, art. 12, 104; En vigueur : 24-12-2018>
+(2)<L 2019-05-05/21, art. 10, 107; En vigueur : 01-09-2019>
+(3)<L 2020-07-31/24, art. 13, 109; En vigueur : 01-09-2020>
+(4)<L 2022-11-29/06, art. 5, 117; En vigueur : 30-12-2022>
+
+Art. 61/25-6.[1 § 1er. Conformément à l'article 34, alinéa 2, de l'accord de coopération du 2 février 2018, sans préjudice du paragraphe 2, lorsque le ressortissant d'un pays tiers autorisé au séjour dans le Royaume en application de l'article 61/25-5 et autorisé au travail par [2 l'autorité régionale compétente]2 se trouve à l'étranger à la date de la décision d'autorisation de séjour et de travail, un visa lui est délivré, à sa demande. Le Roi détermine, par arrêté délibéré en Conseil des ministres, les modalités d'introduction de la demande de visa.
+§ 2. Conformément à l'article 34, alinéa 3, de l'accord de coopération du 2 février 2018, le ressortissant d'un pays tiers autorisé au séjour dans le Royaume en application de l'article 61/25-5 et autorisé à travailler par [2 l'autorité régionale compétente]2 est inscrit au registre des étrangers. Un permis unique tel que défini à l'article 3, 10°, de l'accord précité lui est délivré.
+Le Roi détermine :
+1° le modèle du permis unique ;
+2° le document de séjour délivré au ressortissant d'un pays tiers dans l'attente de la délivrance du permis unique.
+§ 3. La demande d'inscription doit être introduite par le ressortissant d'un pays tiers dans les huit jours ouvrables de son entrée dans le Royaume s'il a obtenu l'autorisation de séjour à l'étranger. Elle doit être introduite dans les huit jours ouvrables de la réception de cette autorisation, si celle-ci a été obtenue dans le Royaume.
+Le Roi peut, par arrêté délibéré en Conseil des ministres et par voie de disposition générale, fixer un délai plus court dans des circonstances exceptionnelles.
+§ 4. L'autorisation de séjour est accordée pour une durée limitée pendant une période de cinq ans. A l'expiration de cette période de 5 ans, l'autorisation de séjour est renouvelée pour une durée illimitée sans préjudice des conditions prévues à l'article 61/25-5.
+[2 L'alinéa 1er n'est pas applicable à l'autorisation de séjour délivrée à un ressortissant de pays tiers qui reste lié par un contrat de travail avec un employeur établi à l'étranger.]2
+§ 5. Si l'autorisation de travailler est accordée par [2 l'autorité régionale compétente]2 pour une durée illimitée, le ministre ou son délégué statue sur le séjour, conformément au présent chapitre.
+En cas de demande de renouvellement de l'autorisation de séjour, le ressortissant d'un pays tiers introduit sa demande auprès du bourgmestre de son lieu de résidence. La demande comprend les documents et informations énumérés à l'article 61/25-2, § 1er, alinéa 2, 1°, 2° et 6°, ainsi que la décision de [2 l'autorité régionale compétente]2 qui autorise le ressortissant d'un pays tiers à travailler pour une durée illimitée.
+Le bourgmestre ou son délégué délivre un document attestant de la demande de renouvellement et couvrant provisoirement son séjour. Le Roi détermine le modèle de ce document.
+Le bourgmestre ou son délégué transmet la demande au ministre, ou à son délégué. ]1
+----------
+(1)<Inséré par L 2018-07-22/12, art. 13, 104; En vigueur : 24-12-2018>
+(2)<L 2020-07-31/24, art. 14, 109; En vigueur : 01-09-2020>
+
+Art. 61/25-7. [1 Le ministre ou son délégué peut mettre fin au séjour du ressortissant de pays tiers autorisé au séjour dans le Royaume en application de l'article 61/25-5, dans l'un des cas suivants :
+1° le ressortissant d'un pays tiers ne remplit pas ou plus la condition visée à l'article 61/25-5, § 1er, 1° ;
+2° le ressortissant d'un pays tiers est une charge pour le système d'aide sociale du Royaume ;
+3° le ressortissant d'un pays tiers séjourne à des fins autres que celles pour lesquelles il a été autorisé au séjour. ]1
+----------
+(1)<Inséré par L 2018-07-22/12, art. 14, 104; En vigueur : 24-12-2018>
+
+CHAPITRE VIII. [1 - Travailleurs hautement qualifiés - Carte bleue européenne.]1
+----------
+(1)<Inséré par L 2012-05-15/16, art. 11, 067; En vigueur : 10-09-2012>
+
+Section 1re. [1 - Champ d'application et définitions.]1
+----------
+(1)<Inséré par L 2019-05-05/21, art. 11, 107; En vigueur : 01-09-2019>
+
+Art. 61/26.[1 § 1er. Les dispositions du présent chapitre s'appliquent aux ressortissants de pays tiers qui introduisent une demande d'autorisation de travail, ou de renouvellement de cette autorisation, dans le Royaume, auprès de [2 l'autorité régionale compétente]2, afin d'occuper un travail hautement qualifié.
+L'introduction de cette demande vaut introduction d'une demande de séjour.
+§ 2. Elles s'appliquent sans préjudice des dispositions pertinentes de :
+1° [2 l'accord de coopération du 2 février 2018]2;
+2° [2 l'accord de coopération du 6 décembre 2018]2.]1
+----------
+(1)<L 2019-05-05/21, art. 12, 107; En vigueur : 01-09-2019>
+(2)<L 2020-07-31/24, art. 15, 109; En vigueur : 01-09-2020>
+
+Art. 61/27.[1 Pour l'application du présent chapitre, on entend par :
+1° [2 ...]2
+2° [2 ...]2
+3° [2 ...]2
+4° "carte bleue européenne" : le titre de séjour tel que défini à l'article 6, 1°, de l'accord de coopération du 6 décembre 2018.]1
+----------
+(1)<L 2019-05-05/21, art. 13, 107; En vigueur : 01-09-2019>
+(2)<L 2020-07-31/24, art. 16, 109; En vigueur : 01-09-2020>
+
+Section 2. [1 - Dispositions relatives à la procédure conjointe en matière d'occupation de travailleurs hautement qualifiés.]1
+----------
+(1)<Inséré par L 2019-05-05/21, art. 14, 107; En vigueur : 01-09-2019>
+
+Art. 61/27-1.[1 § 1er. Le ministre ou son délégué statue sur la demande de séjour visée à l'article 61/26.
+Sans préjudice de la possibilité pour le ministre ou son délégué de demander des informations ou des documents complémentaires conformément à l'article 25, § 2, de l'accord de coopération du 2 février 2018, le ministre ou son délégué se base notamment sur les documents et informations suivants pour statuer sur la demande :
+1° un passeport ou un titre de voyage en tenant lieu en cours de validité;
+2° sauf en cas de renouvellement de la demande d'autorisation de séjour introduite sur base de l'article 61/26, un certificat médical attestant qu'il n'est pas atteint d'une des maladies énumérées à l'annexe de la présente loi;
+3° sauf en cas de renouvellement de la demande d'autorisation de séjour introduite sur base de l'article 61/26, la preuve du paiement de la redevance tel qu'exigé par l'article 1er/1er;
+4° sauf en cas de renouvellement de la demande d'autorisation de séjour introduite sur base de l'article 61/26, un extrait du casier judiciaire ou un document équivalent, et le cas échéant sa traduction légalisée, délivré par le pays d'origine ou par le pays de sa dernière résidence, datant de moins de six mois, et attestant qu'il n'a pas été condamné pour des crimes ou des délits de droit commun;
+5 ° la preuve qu'il dispose d'une assurance maladie couvrant l'ensemble des risques en Belgique pour lui-même et les membres de sa famille.
+En cas d'impossibilité dûment justifiée de pouvoir produire les documents visés à l'alinéa 2, 2° et 4°, le ministre ou son délégué peut néanmoins, compte tenu des circonstances, autoriser le ressortissant d'un pays tiers à séjourner en Belgique.
+§ 2. Le ressortissant d'un pays tiers admis ou autorisé à séjourner sur le territoire du Royaume pour une période n'excédant pas nonante jours, conformément au titre I, chapitre II, ou pour une période de plus de nonante jours, [3 conformément au titre I, chapitre III ou titre II]3, peut introduire une demande d'autorisation de travail visée à l'article 61/26.
+[3 L'alinéa 1er n'est pas applicable aux étrangers visés par l'arrêté royal du 30 octobre 1991 relatif aux documents de séjour en Belgique de certains étrangers, sauf s'ils prouvent qu'ils peuvent renoncer à leur statut privilégié.]3
+[3 Sans préjudice de la possibilité de demander des informations et documents complémentaires, le ressortissant d'un pays tiers produit, outre les documents visés au paragraphe 1er, la preuve de l'admission ou autorisation, comme visée à l'alinéa 1er.]3
+[3 Le ministre ou son délégué peut néanmoins, compte tenu des circonstances, autoriser le demandeur à séjourner en Belgique sans les documents visés au paragraphe 1er, alinéa 2, 2°, 4° en 5°.]3
+§ 3. Le ressortissant d'un pays tiers qui réside depuis dix-huit mois dans un autre Etat membre de l'Union européenne en tant que titulaire d'une carte bleue européenne, peut introduire une demande d'autorisation de travail visée à l'article 61/26 conformément au paragraphe 1er, sur présentation de sa carte bleue européenne en cours de validité.
+Le ressortissant d'un pays tiers visé à l'alinéa 1er peut également introduire sa demande conformément au paragraphe 2 dans les plus brefs délais et au plus tard un mois après son entrée dans le Royaume, sur présentation de sa carte bleue européenne.
+§ 4. Conformément à l'article 29, alinéa 1er, de l'accord de coopération du 2 février 2018, lorsque le ressortissant d'un pays tiers est autorisé à séjourner sur le territoire en application des dispositions du présent chapitre, le ministre ou son délégué en informe [2 l'autorité régionale compétente]2 par courrier, par télécopie ou par courrier électronique.
+Conformément à l'article 17, alinéa 3, de l'accord de coopération du 2 février 2018, lorsque le ressortissant d'un pays tiers est autorisé à séjourner en application des dispositions du présent chapitre, l'autorisation de séjour n'est valable que sous la condition que [2 l'autorité régionale compétente]2 prenne une décision définitive autorisant le ressortissant d'un pays tiers à travailler sur le territoire du Royaume.
+§ 5. Lorsque le ressortissant d'un pays tiers est autorisé à séjourner en application des dispositions de la présente section et autorisé à travailler par [2 l'autorité régionale compétente]2, le ministre ou son délégué lui notifie une décision accordant la carte bleue européenne.
+Cette décision prend la forme d'un acte administratif unique autorisant à la fois le séjour et le travail.
+Le ministre ou son délégué en informe l'employeur.
+§ 6. Conformément aux articles 26, alinéa 3, et 36, § 3, de l'accord de coopération du 2 février 2018, lorsque le ministre ou son délégué prend une décision de refus ou de fin de séjour, il en informe [2 l'autorité régionale compétente]2 par courrier, par télécopie ou par courrier électronique.
+§ 7. Conformément à l'article 36, §§ 1er et 3, de l'accord de coopération du 2 février 2018, toute décision relative à une demande introduite sur base de l'article 61/26 prise par le ministre, ou son délégué, est notifiée au ressortissant d'un pays tiers. Le ministre ou son délégué en informe son employeur.
+Toute décision de fin d'autorisation relative à une demande introduite sur base de l'article 61/26 est notifiée au ressortissant d'un pays tiers.
+Toute décision de fin d'autorisation de travail prise par [2 l'autorité régionale compétente]2 est notifiée par le ministre ou son délégué au ressortissant d'un pays tiers et à son employeur. Le ministre, ou son délégué, informe l'autorité compétente de cette notification.]1
+----------
+(1)<Inséré par L 2019-05-05/21, art. 15, 107; En vigueur : 01-09-2019>
+(2)<L 2020-07-31/24, art. 17, 109; En vigueur : 01-09-2020>
+(3)<L 2022-11-29/06, art. 6, 117; En vigueur : 30-12-2022>
+
+Art. 61/27-2.[1 Conformément à l'article 21 de l'accord de coopération du 2 février 2018, la demande de renouvellement introduite sur base de l'article 61/26 et répondant aux conditions déterminées par [2 l'autorité régionale compétente]2 est introduite au plus tard deux mois avant l'expiration de la validité de l'autorisation précédente.
+Lors de la demande de renouvellement, si le titre de séjour vient à échéance, le ressortissant d'un pays tiers reçoit un document qui couvre provisoirement son séjour dans l'attente d'une décision prise par le ministre ou son délégué ou, le cas échéant, par [2 l'autorité régionale compétente]2. Le Roi détermine le document de séjour délivré au ressortissant d'un pays tiers.]1
+----------
+(1)<Inséré par L 2019-05-05/21, art. 16, 107; En vigueur : 01-09-2019>
+(2)<L 2020-07-31/24, art. 18, 109; En vigueur : 01-09-2020>
+
+Section 3. [1 - Dispositions relatives à l'autorisation de séjourner sur le territoire à des fins d'emploi hautement qualifié.]1
+----------
+(1)<Inséré par L 2019-05-05/21, art. 17, 107; En vigueur : 01-09-2019>
+
+Art. 61/27-3. [1 Les dispositions de la présente section s'appliquent aux ressortissants de pays tiers qui introduisent une demande d'autorisation de travail conformément à l'article 61/26 et qui souhaitent séjourner ou sont autorisés à séjourner dans le Royaume pour une période de plus de nonante jours afin d'occuper un emploi hautement qualifié.]1
+----------
+(1)<Inséré par L 2019-05-05/21, art. 18, 107; En vigueur : 01-09-2019>
+
+Art. 61/27-4.[1 § 1er. Le ressortissant de pays tiers visé à l'article 61/27-3, est autorisé à entrer et à séjourner plus de nonante jours sur le territoire du Royaume afin d'y travailler, ou son autorisation de séjour est renouvelée, si :
+1° il satisfait aux conditions visées à l'article 61/27-1, §§ 1er à 3, qui lui sont applicables;
+2° il ne se trouve pas dans un des cas énumérés à l'article 3, alinéa 1er, 5° à 10° ;
+3° dans le cas où le ressortissant de pays tiers se trouve sur le territoire du Royaume lors de l'introduction de la demande visée à l'article 61/26, il est déjà admis ou autorisé à séjourner dans le Royaume pour une période n'excédant pas nonante jours conformément au chapitre II du titre Ier, ou pour une période de plus de nonante jours [2 conformément au titre I, chapitre III ou au titre II, sauf s'il s'agit d'un étranger visé par l'arrêté royal du 30 octobre 1991 relatif aux documents de séjour en Belgique de certains étrangers, à moins qu'il ne prouve qu'il peut renoncer à son statut privilégié]2.
+§ 2. Conformément à l'article 9 de l'accord de coopération du 6 décembre 2018, le ministre ou son délégué statue sur la demande de séjour, ou de son renouvellement, au plus tard dans les nonante jours suivant la notification du caractère complet de la demande.
+Le délai visé à l'alinéa 1er ne peut en aucun cas être prolongé.
+Si le ministre ou son délégué ne statue pas dans le délai visé à l'alinéa 1er, le ressortissant d'un pays tiers est autorisé au séjour.
+§ 3. Conformément à l'article 25, § 2, de l'accord de coopération du 2 février 2018, et sans préjudice du délai prévu au paragraphe 2, lors de l'examen de la demande, il peut être exigé du ressortissant d'un pays tiers de produire dans un délai de quinze jours des informations ou documents complémentaires.
+Si les informations et documents complémentaires ne sont pas produits dans le délai visé à l'alinéa 1er, l'autorisation de séjour ou le renouvellement de celle-ci, est refusé.]1
+----------
+(1)<Inséré par L 2019-05-05/21, art. 19, 107; En vigueur : 01-09-2019>
+(2)<L 2022-11-29/06, art. 7, 117; En vigueur : 30-12-2022>
+
+Art. 61/27-5. [1 § 1er. Conformément à l'article 10, alinéa 2, de l'accord de coopération du 6 décembre 2018, si le ressortissant d'un pays tiers visé à l'article 61/26 se trouve à l'étranger à la date de la décision l'autorisant à la fois à séjourner et à travailler en qualité de travailleur hautement qualifié, un visa de long séjour lui est délivré, à sa demande, en vue de son entrée sur le territoire.
+Le Roi peut préciser par arrêté délibéré en Conseil des ministres, les modalités relatives à la délivrance du visa.
+§ 2. Conformément à l'article 10, alinéas 3 et 4, de l'accord de coopération du 6 décembre 2018, le ressortissant de pays tiers autorisé à la fois à séjourner et à travailler en qualité de travailleur hautement qualifié est inscrit au registre des étrangers. Une carte bleue européenne lui est délivrée.
+Le Roi détermine :
+1° le modèle de la carte bleue européenne;
+2° la durée de validité de la carte bleue européenne;
+3° le document de séjour délivré au ressortissant d'un pays tiers dans l'attente de la délivrance de la carte bleue européenne.
+§ 3. Si l'autorisation de séjour est accordée en application de l'article 61/27-4, § 2, alinéa 1er, et si aucune décision relative à la fois à l'autorisation de séjour et à l'autorisation de travail n'a été prise dans un délai de nonante jours à compter de la notification du caractère complet/recevable de la demande, le ressortissant de pays tiers est autorisé à la fois à séjourner et à travailler en qualité de travailleur hautement qualifié. Les paragraphes 1er et 2 s'appliquent.]1
+----------
+(1)<Inséré par L 2019-05-05/21, art. 20, 107; En vigueur : 01-09-2019>
+
+Art. 61/27-6. [1 § 1er . Le ministre ou son délégué met fin à l'autorisation de séjour en tant que travailleur hautement qualifié ou refuse de renouveler celle-ci lorsque le ressortissant d'un pays tiers ne remplit pas ou plus les conditions visées à l'article 61/27-4, § 1er, 1° et 2°.
+§ 2. Le ministre ou son délégué peut mettre fin à l'autorisation de séjour en tant que travailleur hautement qualifié ou refuser de renouveler celle-ci dans les cas suivants :
+1° lorsque le ressortissant d'un pays tiers ne dispose pas de ressources suffisantes pour subvenir à ses propres besoins et à ceux des membres de sa famille, afin de ne pas devenir une charge pour les autorités publiques. Dans le cadre de l'évaluation des ressources, il est tenu compte de la situation personnelle de l'étranger et, notamment, de la nature et de la régularité de ses revenus et du nombre de membres de la famille qui sont à sa charge;
+2° le ressortissant d'un pays tiers séjourne à des fins autres que celles pour lesquelles il a été autorisé au séjour.]1
+----------
+(1)<Inséré par L 2019-05-05/21, art. 21, 107; En vigueur : 01-09-2019>
+
+CHAPITRE VIIIbis . [1 - Travailleurs saisonniers.]1
+----------
+(1)<Inséré par L 2019-05-05/21, art. 22, 107; En vigueur : 01-09-2019>
+
+Section 1re. [1 - Champ d'application et définitions.]1
+----------
+(1)<Inséré par L 2019-05-05/21, art. 23, 107; En vigueur : 01-09-2019>
+
+Art. 61/28.[1 § 1er. Les dispositions du présent chapitre s'appliquent aux ressortissants de pays tiers qui, se trouvant en-dehors du territoire des Etats membres de l'Union européenne, souhaitent entrer et séjourner dans le Royaume pour y travailler en qualité de travailleurs saisonniers ainsi qu'aux ressortissants de pays tiers qui sont autorisés à séjourner et à travailler dans le Royaume en cette qualité.
+§ 2. Elles s'appliquent sans préjudice des dispositions pertinentes de :
+1° [2 l'accord de coopération du 2 février 2018]2;
+2° [2 l'accord de coopération du 6 décembre 2018]2.]1
+----------
+(1)<L 2019-05-05/21, art. 24, 107; En vigueur : 01-09-2019>
+(2)<L 2020-07-31/24, art. 19, 109; En vigueur : 01-09-2020>
+
+Art. 61/28-1.[1 Pour l'application des dispositions du présent chapitre, on entend par :
+1° [2 ...]2
+2° [2 ...]2
+3° [2 ...]2
+4° "travailleur saisonnier" : le ressortissant de pays tiers visé à l'article 12, 1°, de l'accord de coopération du 6 décembre 2018;
+5° "permis pour travailleur saisonnier" : le titre de séjour visé à l'article 12, 3°, de l'accord de coopération du 6 décembre 2018.]1
+----------
+(1)<Inséré par L 2019-05-05/21, art. 25, 107; En vigueur : 01-09-2019>
+(2)<L 2020-07-31/24, art. 20, 109; En vigueur : 01-09-2020>
+
+Section 2. [1 - Accès au territoire et court séjour - Documents requis.]1
+----------
+(1)<Inséré par L 2019-05-05/21, art. 26, 107; En vigueur : 01-09-2019>
+
+Art. 61/29.[1 § 1er. Sans préjudice des dispositions du chapitre II du titre Ier, pour pouvoir entrer et séjourner sur le territoire en qualité de travailleur saisonnier pendant une durée maximale de nonante jours, le ressortissant de pays tiers doit disposer des documents suivants :
+1° un passeport valable ou un titre de voyage en tenant lieu remplissant les conditions de validité prévues par l'article 6, § 1er, a), du Code frontières Schengen;
+2° un visa de court séjour comportant une mention indiquant qu'il a été délivré aux fins d'un travail saisonnier, sauf s'il est dispensé de satisfaire à l'obligation de visa, en vertu de l'article 6, § 1er, b), du Code frontières Schengen;
+3° le permis de travail requis pour le travail saisonnier envisagé.
+§ 2. Le ressortissant de pays tiers doit en outre disposer pour la durée envisagée de son séjour :
+1° d'une assurance-maladie couvrant l'ensemble des risques en Belgique;
+2° de moyens de subsistance suffisants afin de ne pas tomber à charge des pouvoirs publics, compte tenu notamment des revenus qu'il percevra durant son séjour en tant que travailleur saisonnier;
+3° d'un logement suffisant qui répond aux conditions auxquelles doit satisfaire un immeuble qui est donné en location à titre de résidence principale, conformément à l'article 2 du Livre III, Titre VIII, Chapitre II, Section 2, du Code civil.
+§ 3. Le visa de court séjour aux fins d'un travail saisonnier est délivré, renouvelé ou prorogé conformément au Code des visas.
+Le permis de travail requis pour le travail saisonnier envisagé est produit à l'appui de la demande de délivrance, de prorogation ou de renouvellement du visa.
+Sans préjudice des conditions prévues par le Code des visas, le visa n'est pas délivré, renouvelé ou prorogé si :
+1° l'intéressé ne produit pas les documents visés au paragraphe 1er, 1° et 3°, à l'appui de sa demande;
+2° l'intéressé ne remplit pas les conditions prévues au paragraphe 2;
+3° la durée maximale prévue à l'article 61/29-2, est atteinte.
+§ 4. Sans préjudice des autres motifs prévus à l'article 3, les autorités chargées du contrôle aux frontières ou le ministre ou son délégué peuvent refuser l'entrée au ressortissant de pays tiers qui souhaite séjourner sur le territoire en qualité de travailleur saisonnier pendant une durée maximale de nonante jours si :
+1° il ne remplit pas ou plus les conditions prévues aux paragraphes 1er et 2;
+2° la durée maximale de séjour prévue à l'article 61/29-2, est atteinte.
+Sans préjudice des autres motifs prévus à l'article 7, le ministre ou son délégué peut donner l'ordre de quitter le territoire au ressortissant de pays tiers autorisé à séjourner en qualité de travailleur saisonnier pendant une durée maximale de nonante jours pour les mêmes motifs que ceux prévus à l'alinéa 1er, 1° et 2°.
+§ 5. Conformément à l'article 21, § 2, de l'accord de coopération du 6 décembre 2018, le ressortissant de pays tiers autorisé à séjourner sur le territoire en qualité de travailleur pendant une durée maximale de nonante jours et qui souhaite prolonger son séjour en cette qualité doit en demander l'autorisation avant l'expiration de son séjour.
+Si le ressortissant de pays tiers envisage de prolonger son séjour pour une durée ne dépassant pas la durée maximale autorisée de court séjour, l'autorisation de séjour lui est accordée aux conditions et suivant les modalités déterminées par le Roi.
+Si le ressortissant de pays tiers envisage de prolonger son séjour au-delà de la durée maximale de court séjour, l'autorisation de séjour lui est accordée conformément aux dispositions de la section 3.
+§ 6. Le Roi peut déterminer les modalités suivant lesquelles la preuve des conditions visées aux paragraphes 1er et 2, doit être apportée.]1
+----------
+(1)<L 2019-05-05/21, art. 27, 107; En vigueur : 01-09-2019>
+
+Art. 61/29-1.[1 Sans préjudice des dispositions du chapitre II du titre I, le ressortissant de pays tiers qui souhaite entrer et séjourner sur le territoire en qualité de travailleur saisonnier pendant une durée de plus de nonante jours doit disposer des documents suivants :
+1° un passeport valable ou un titre de voyage en tenant lieu dont la durée de validité couvre au moins celle de l'autorisation de travail aux fins d'un travail saisonnier délivrée par [2 l'autorité régionale compétente]2 et qui remplit les conditions de validité prévues par l'article 6, § 1er, a), du Code frontières Schengen;
+2° un visa de long séjour délivré en application de l'article 61/29-7.
+Le Roi peut soumettre le passeport et le titre de voyage en tenant lieu à des conditions de validité plus précises ou supplémentaires.]1
+----------
+(1)<Inséré par L 2019-05-05/21, art. 28, 107; En vigueur : 01-09-2019>
+(2)<L 2020-07-31/24, art. 21, 109; En vigueur : 01-09-2020>
+
+Art. 61/29-2. [1 La durée pendant laquelle le ressortissant de pays tiers peut séjourner en qualité de travailleur saisonnier est limitée à cent-cinquante jours par période de trois-cent-soixante jours, ce qui implique d'examiner la période de trois-cent-soixante jours précédant chaque jour de séjour.
+Pour l'application de l'alinéa 1er, la date d'entrée est considérée comme le premier jour de séjour sur le territoire et la date de sortie est considérée comme le dernier jour de séjour sur le territoire. La totalité des périodes de séjour autorisées en qualité de travailleur saisonnier sont prises en considération pour le calcul de la durée du séjour, y compris la ou les périodes de séjour effectuées au titre d'un court séjour.
+Le Roi peut préciser la manière dont est calculée la durée maximale du séjour en qualité de travailleurs saisonnier. Il peut abroger, remplacer ou compléter les modalités prévues aux alinéas 1er et 2, pour se conformer au droit de l'Union.]1
+----------
+(1)<Inséré par L 2019-05-05/21, art. 29, 107; En vigueur : 01-09-2019>
+
+Art. 61/29-3. [1 Le Roi peut déroger aux dispositions du présent chapitre afin de faciliter la délivrance du visa requis en ce qui concerne les ressortissants de pays tiers qui ont déjà séjourné en qualité de travailleur saisonnier sur le territoire ou dans un autre Etat membre au cours des cinq années précédant immédiatement la demande et qui ont pleinement respecté, lors de chacun de leurs séjours, les conditions applicables aux travailleurs saisonniers. Il peut préciser les conditions d'application de ces dérogations.]1
+----------
+(1)<Inséré par L 2019-05-05/21, art. 30, 107; En vigueur : 01-09-2019>
+
+Section 3. [1 - Permis pour travailleur saisonnier.]1
+----------
+(1)<Inséré par L 2019-05-05/21, art. 31, 107; En vigueur : 01-09-2019>
+
+Sous-section 1re. [1 - Dispositions relatives à la procédure conjointe en matière d'occupation des travailleurs étrangers.]1
+----------
+(1)<L 2020-07-31/24, art. 22, 109; En vigueur : 01-09-2020>
+
+Art. 61/29-4.[1 § 1er. Le ressortissant de pays tiers qui souhaite séjourner plus de nonante jours sur le territoire en qualité de travailleur saisonnier introduit sa demande auprès de [2 l'autorité régionale compétente]2 sous la forme d'une demande d'autorisation de travail.
+La demande d'autorisation de travail vaut demande d'autorisation de séjour.
+§ 2. Seul le ressortissant de pays tiers qui se trouve en-dehors du territoire des Etats membres lors de l'introduction de la demande ou qui se trouve dans le cas visé à l'article 61/29, § 5, alinéa 3, est autorisé à introduire une demande d'autorisation de séjour en vertu du présent article.
+§ 3. Les documents suivants sont joints à la demande :
+1° la preuve du paiement de la redevance prévue à l'article 1er/1er;
+2° les documents permettant d'établir les conditions visées à l'article 61/29-8, § 1er.
+§ 4. Conformément à l'article 17, §§ 1er, 2 et 4, de l'accord de coopération du 6 décembre 2018, le ministre ou son délégué prend une décision relative à l'autorisation de séjour au plus tard dans un délai de nonante jours suivant la notification du caractère complet de la demande.
+Le délai prévu à l'alinéa 1er est réduit à soixante jours lorsque le ressortissant de pays tiers a déjà été autorisé à séjourner sur le territoire en qualité de travailleur saisonnier au moins une fois au cours des cinq dernières années et a respecté, lors de chacun de ses séjours, la législation relative à l'occupation des travailleurs étrangers et la législation relative à l'accès au territoire, au séjour, à l'établissement et à l'éloignement des étrangers.
+Le délai prévu à l'alinéa 1er est réduit à trente jours lorsque la demande est introduite par un ressortissant de pays tiers visé à l'article 61/29, § 5, alinéa 3.
+§ 5. Lors de l'examen de la demande, il est vérifié si l'intéressé remplit les conditions d'octroi. Une attention particulière est accordée à l'évaluation du risque d'immigration illégale ou du risque pour la sécurité des Etats membres que présenterait l'intéressé ainsi qu'à sa volonté de quitter le territoire des Etats membres au plus tard à la date d'expiration de son séjour.
+§ 6. Au plus tard quinze jours avant l'expiration du délai de traitement visé au paragraphe 4, le ministre ou son délégué peut exiger du ressortissant de pays tiers ou de son employeur qu'ils produisent des documents ou des renseignements complémentaires dans un délai de dix jours. Ils sont informés des documents ou des renseignements qu'ils doivent produire.
+§ 7. Si la durée pendant laquelle le ressortissant de pays tiers visé à l'article 61/29, § 5, alinéa 3, est autorisé à séjourné en qualité de travailleur saisonnier expire durant l'examen de la demande, il lui est délivré un document qui couvre provisoirement son séjour jusqu'à ce qu'il soit statué dessus. Le Roi détermine les conditions et les modalités de délivrance du document de séjour.
+§ 8. Conformément à l'article 33 de l'accord de coopération du 2 février 2018, si l'intéressé est autorisé à séjourner et à travailler plus de nonante jours sur le territoire en qualité de travailleur saisonnier, l'autorisation de travail et l'autorisation de séjour lui sont notifiées sous la forme d'un acte administratif unique.]1
+----------
+(1)<Inséré par L 2019-05-05/21, art. 33, 107; En vigueur : 01-09-2019>
+(2)<L 2020-07-31/24, art. 23, 109; En vigueur : 01-09-2020>
+
+Art. 61/29-5.[1 § 1er. Conformément à l'article 21, § 1er, de l'accord de coopération du 6 décembre 2018, le ressortissant de pays tiers qui est autorisé à séjourner en qualité de travailleur saisonnier pendant plus de nonante jours en application de l'article 61/29-4 et qui souhaite prolonger son séjour en cette qualité introduit une demande sous la forme d'une demande d'autorisation de travail auprès de [2 l'autorité régionale compétente]2 au plus tard un mois avant l'expiration de son séjour.
+§ 2. Les documents permettant d'établir les conditions visées à l'article 61/29-8, § 1er, sont joints à la demande.
+§ 3. Conformément à l'article 17, §§ 3 et 4, de l'accord de coopération du 6 décembre 2018, une décision concernant le renouvellement ou non de l'autorisation de séjour est prise au plus tard dans un délai de trente jours, non prorogeable, suivant la notification du caractère complet de la demande.
+§ 4. Lors de l'examen de la demande, il est vérifié si l'intéressé remplit les conditions de renouvellement de l'autorisation de séjour et une attention particulière est accordée à l'évaluation du risque d'immigration illégale ou du risque pour la sécurité des Etats membres que présenterait l'intéressé ainsi qu'à sa volonté de quitter le territoire des Etats membres au plus tard à la date d'expiration de son séjour.
+§ 5. Au plus tard quinze jours avant l'expiration du délai de traitement visé au paragraphe 4, le ministre ou son délégué peut exiger du ressortissant de pays tiers ou de son employeur qu'ils produisent des documents ou des renseignements complémentaires dans un délai de dix jours. Ils sont informés des documents ou des renseignements qu'ils doivent produire.
+§ 6. Si la durée pendant laquelle l'intéressé est autorisé à séjourner en qualité de travailleur saisonnier expire durant l'examen de la demande, il lui est délivré un document qui couvre provisoirement son séjour jusqu'à ce qu'il soit statué dessus. Le Roi détermine les conditions et les modalités de délivrance du document de séjour.
+§ 7. Conformément à l'article 33 de l'accord de coopération du 2 février 2018, si l'intéressé est autorisé à prolonger son séjour en qualité de travailleur saisonnier, l'autorisation de travail requise et l'autorisation de séjour lui sont notifiées sous la forme d'un acte administratif unique.]1
+----------
+(1)<Inséré par L 2019-05-05/21, art. 34, 107; En vigueur : 01-09-2019>
+(2)<L 2020-07-31/24, art. 24, 109; En vigueur : 01-09-2020>
+
+Art. 61/29-6.[1 Le ministre ou son délégué notifie les décisions suivantes au ressortissant de pays tiers :
+1° les décisions mettant fin à l'autorisation de travail prises par [2 l'autorité régionale compétente]2;
+2° les décisions de refus de l'autorisation de séjour, de non-renouvellement ou mettant fin à l'autorisation de séjour prises en vertu de la présente section;
+3° les décisions d'octroi ou de renouvellement de l'autorisation de travail et de l'autorisation de séjour sous la forme d'un acte administratif unique.
+Le ministre ou son délégué informe l'employeur des décisions visées à l'alinéa 1er, 1° et 3°, dans les cas et conditions prévues par l'accord de coopération du 2 février 2018.]1
+----------
+(1)<Inséré par L 2019-05-05/21, art. 35, 107; En vigueur : 01-09-2019>
+(2)<L 2020-07-31/24, art. 25, 109; En vigueur : 01-09-2020>
+
+Art. 61/29-7. [1 § 1er. Conformément à l'article 34, alinéa 2, de l'accord de coopération du 2 février 2018, et aux articles 18, alinéa 2, et 21, § 2, de l'accord de coopération du 6 décembre 2018, un visa de long séjour comportant une mention indiquant qu'il est délivré aux fins d'un travail saisonnier, conformément au règlement (CE) n° 1683/95 du Conseil, du 29 mai 1995, établissant un modèle type de visa est délivré au ressortissant de pays tiers qui est autorisé à séjourner et à travailler sur le territoire en qualité de travailleur saisonnier en application de l'article 61/29-4, à sa demande.
+§ 2. Lorsque le visa est délivré à un ressortissant de pays tiers visé à l'article 61/29, § 5, alinéa 3, sa durée de validité est égale à la durée autorisée de son séjour. Celui-ci est autorisé à séjourner sur le territoire sous le couvert de son passeport ou du titre de voyage en tenant lieu et du visa qui lui a été délivré en application du paragraphe 1er, en cours de validité.
+Sauf dérogation prévue par le Roi, le ressortissant de pays tiers visé à l'alinéa 1er n'est pas inscrit au registre des étrangers. Le Roi peut le soumettre à d'autres modalités d'inscription ou d'enregistrement déterminées par Lui, notamment dans le registre d'attente.
+§ 3. Conformément à l'article 18, alinéa 3, de l'accord de coopération du 6 décembre 2018, le ressortissant de pays tiers autorisé à travailler et à séjourner plus de nonante jours sur le territoire en qualité de travailleur saisonnier est inscrit au registre des étrangers et un permis pour travailleur saisonnier lui est délivré, à sa demande. La durée de validité du permis pour travailleur saisonnier est égale à la durée de l'autorisation de séjour.
+L'alinéa 1er ne s'applique pas au ressortissant de pays tiers visé au paragraphe 2.
+§ 4. En cas de renouvellement du séjour en application de l'article 61/29-5, le permis pour travailleur saisonnier ou le visa de long séjour dont le ressortissant de pays tiers est titulaire est prolongé d'une durée égale à la durée autorisée de son séjour.
+§ 5. Le Roi détermine les conditions et les modalités relatives à l'inscription de l'intéressé et à la délivrance et au renouvellement du visa et du permis pour travailleur saisonnier.]1
+----------
+(1)<Inséré par L 2019-05-05/21, art. 36, 107; En vigueur : 01-09-2019>
+
+Sous-section 2. [1 - Dispositions relatives à l'autorisation de séjour en qualité de travailleur saisonnier.]1
+----------
+(1)<Inséré par L 2019-05-05/21, art. 37, 107; En vigueur : 01-09-2019>
+
+Art. 61/29-8. [1 § 1er. Sous réserve de l'application des paragraphes 2 et 3 et de l'article 61/29-9, le ressortissant de pays tiers qui introduit une demande en application de l'article 61/29-4 ou 61/29-5, est autorisé à séjourner plus de nonante jours sur le territoire en qualité de travailleur saisonnier ou à prolonger son séjour en cette qualité si :
+1° il prouve qu'il dispose d'un passeport ou d'un titre de voyage en tenant lieu tel que visé à l'article 61/29-1, alinéa 1er, 1° ;
+2° il prouve qu'il dispose de moyens de subsistance suffisants pour la durée du séjour envisagée afin de ne pas tomber à charge des pouvoirs public, compte tenu notamment des revenus qu'il percevra durant son séjour en tant que travailleur saisonnier;
+3° il prouve qu'il dispose d'une assurance-maladie couvrant l'ensemble des risques en Belgique;
+4° il prouve qu'il dispose d'un logement suffisant qui répond aux conditions auxquelles doit satisfaire un immeuble qui est donné en location à titre de résidence principale, conformément à l'article 2 du Livre III, Titre VIII, Chapitre II, Section 2, du Code civil;
+5° il produit un certificat médical d'où il résulte qu'il n'est pas atteint d'une des maladies énumérées à l'annexe à la présente loi;
+6° il produit un extrait de casier judiciaire ou un document équivalent, s'il est âgé de plus de dix-huit ans.
+En cas de demande de renouvellement, l'obligation de produire les documents visés à l'alinéa 1er, 5° et 6°, s'applique uniquement au ressortissant de pays tiers visé à l'article 61/29, § 5, alinéa 3.
+Le Roi peut déterminer les modalités suivant lesquelles la preuve des conditions visées à l'alinéa 1er, doit être apportée. Il peut aussi déterminer des conditions auxquelles doit satisfaire les documents visés à l'alinéa 1er, 5° et 6°.
+§ 2. Le ministre ou son délégué refuse d'accorder l'autorisation de séjour de plus de nonante jours en qualité de travailleur saisonnier ou de la renouveler si :
+1° l'intéressé ne remplit pas les conditions prévues au paragraphe 1er ;
+2° l'intéressé se trouve dans un des cas visés à l'article 3, alinéa 1er, 5° à 10° ;
+3° l'intéressé séjourne sur le territoire au-delà de la durée maximale autorisée de séjour en qualité de travailleur saisonnier, prévue à l'article 61/29- 2;
+4° il existe des doutes raisonnables sur l'authenticité des documents justificatifs présentés à l'appui de la demande ou sur la véracité de leur contenu, sur la fiabilité des déclarations effectuées par l'intéressé ou sur sa volonté de quitter le territoire avant l'expiration de la durée du séjour envisagé;
+5° les documents ou renseignements complémentaires requis n'ont pas été produits dans le délai prescrit.
+Le ministre ou son délégué peut refuser d'accorder ou de renouveler l'autorisation de séjour de plus nonante jours en qualité de travailleur saisonnier si :
+1° l'intéressé n'a pas respecté la législation sur l'occupation des travailleurs saisonniers ou la législation sur l'accès au territoire, au séjour, à l'établissement et à l'éloignement des étrangers lors d'un précédent séjour en qualité de travailleur saisonnier sur le territoire belge ou d'un autre Etat membre;
+2° l'intéressé n'a pas introduit sa demande dans le délai prescrit.
+En cas d'impossibilité de produire les documents visés au paragraphe 1er, 5° et 6°, le ministre ou son délégué peut toutefois accorder ou renouveler l'autorisation de séjour en tant que travailleur saisonnier, compte tenu des circonstances.
+§ 3. Le ministre ou son délégué met fin au séjour du ressortissant de pays tiers autorisé à séjourner plus de nonante jours sur le territoire en qualité de travailleur saisonnier si :
+1° il ne remplit pas ou plus les conditions de séjour prévue au paragraphe 1er, 1° à 4° ;
+2° il séjourne sur le territoire à d'autres fins que celles pour lesquelles il a été autorisé à y séjourner;
+3° il séjourne sur le territoire au-delà de la durée maximale autorisée de séjour en qualité de travailleur saisonnier, prévue à l'article 61/29- 2.
+§ 4. Toute décision prise en vertu du présent article est prise après un examen individuel, qui tient compte de l'ensemble des circonstances propres à chaque cas, en ce compris l'intérêt du ressortissant de pays tiers, et dans le respect du principe de proportionnalité.
+Il est tenu compte notamment du fait que l'intéressé a déjà séjourné sur le territoire durant les cinq années précédant sa demande et a respecté, lors de chacun de ses séjours, la législation sur l'occupation des travailleurs saisonniers et la législation sur l'accès au territoire, le séjour, l'établissement et l'éloignement des étrangers.]1
+----------
+(1)<Inséré par L 2019-05-05/21, art. 38, 107; En vigueur : 01-09-2019>
+
+Art. 61/29-9.[1 § 1er. Conformément à l'article 17, alinéa 3, de l'accord de coopération du 2 février 2018, lorsque le ressortissant d'un pays tiers est autorisé à séjourner en application des dispositions du présent chapitre, l'autorisation de séjour est valable uniquement si [2 l'autorité régionale compétente]2 prend une décision définitive autorisant le ressortissant d'un pays tiers à travailler sur le territoire du Royaume.
+Conformément aux articles 3 et 19 de l'accord de coopération du 6 décembre 2018, la durée de l'autorisation de séjour accordée en application des dispositions de la présente section est limitée à la durée de l'autorisation de travail, sans pouvoir dépasser la durée maximale prévue à l'article 61/29-2.
+§ 2. Conformément à l'article 22 de l'accord de coopération du 6 décembre 2018, l'autorisation de séjour accordée en application des dispositions de la présente section prend fin de plein droit lorsque le ressortissant d'un pays tiers concerné n'est plus autorisé à travailler en qualité de travailleur saisonnier.]1
+----------
+(1)<Inséré par L 2019-05-05/21, art. 39, 107; En vigueur : 01-09-2019>
+(2)<L 2020-07-31/24, art. 26, 109; En vigueur : 01-09-2020>
+
+Art. 61/30.
+<Abrogé par L 2020-07-31/24, art. 27, 109; En vigueur : 01-09-2020>
+
+Art. 61/31.
+<Abrogé par L 2020-07-31/24, art. 28, 109; En vigueur : 01-09-2020>
+
+CHAPITRE VIIIter. [1 - Transferts temporaires intragroupe.]1
+----------
+(1)<Inséré par L 2020-07-31/24, art. 29, 109; En vigueur : 01-09-2020>
+
+Section 1re. [1 - Champ d'application et définitions.]1
+----------
+(1)<Inséré par L 2020-07-31/24, art. 30, 109; En vigueur : 01-09-2020>
+
+Art. 61/32. [1 § 1. Les dispositions du présent chapitre sont applicables :
+1° aux ressortissants de pays tiers qui résident en dehors du territoire des Etats membres de l'Union européenne à la date de l'introduction de la demande et qui souhaitent entrer et séjourner dans le Royaume dans le cadre d'un transfert temporaire intragroupe afin d'y travailler en qualité de cadre, spécialiste ou employé stagiaire;
+2° aux ressortissants de pays tiers qui sont autorisés à séjourner et à travailler dans le Royaume en cette qualité;
+3° aux ressortissants d'un pays tiers ayant obtenu un permis pour personne faisant l'objet d'un transfert temporaire intragroupe dans un autre Etat membre de l'Union européenne et qui souhaitent entrer dans le Royaume afin d'y séjourner et d'y travailler en cette qualité.
+§ 2. Elles s'appliquent sans préjudice des dispositions pertinentes de :
+1° l'accord de coopération du 2 février 2018;
+2° l'accord de coopération du 6 décembre 2018.]1
+----------
+(1)<Inséré par L 2020-07-31/24, art. 31, 109; En vigueur : 01-09-2020>
+
+Art. 61/33. [1 Pour l'application du présent chapitre, on entend par :
+1° "cadre ICT" : le ressortissant de pays tiers visé à l'article 24, 1°, de l'accord de coopération du 6 décembre 2018;
+2° "expert ICT" : le ressortissant de pays tiers visé à l'article 24, 2°, de l'accord de coopération du 6 décembre 2018;
+3° "employé stagiaire ICT" : le ressortissant de pays tiers visé à l'article 24, 3°, de l'accord de coopération du 6 décembre 2018;
+4° "permis pour personne faisant l'objet d'un transfert temporaire intragroupe" : le titre de séjour visé à l'article 24, 4°, de l'accord de coopération du 6 décembre 2018;
+5° "transfert temporaire intragroupe" : le détachement temporaire, à des fins d'activités professionnelles ou de formation, d'un ressortissant de pays tiers visé à l'article 24, 5°, de l'accord de coopération du 6 décembre 2018;
+6° "permis pour mobilité de longue durée" : le titre de séjour visé à l'article 24, 6°, de l'accord de coopération du 6 décembre 2018;
+7° "l'entité hôte" : l'entité visée à l'article 24, 7°, de l'accord de coopération du 6 décembre 2018;
+8° "groupe d'entreprises" : l'ensemble des sociétés liées et/ou associées visées à l'article 11 du Code des sociétés, visé à l'article 24, 8°, de l'accord de coopération du 6 décembre 2018;
+9° "premier Etat membre" : l'Etat membre visé à l'article 24, 9°, de l'accord de coopération du 6 décembre 2018;
+10° "deuxième Etat membre" : l'Etat membre visé à l'article 24, 10°, de l'accord de coopération du 6 décembre 2018;
+11° "mobilité de courte durée" : le droit dont dispose le ressortissant de pays tiers visé à l'article 24, 11°, de l'accord de coopération du 6 décembre 2018;
+12° "mobilité de longue durée" : le droit dont dispose le ressortissant de pays tiers visé à l'article 24, 12°, de l'accord de coopération du 6 décembre 2018;
+13° "personne faisant l'objet d'un transfert temporaire intragroupe" : un ressortissant de pays tiers qui réside en dehors du territoire des Etats membres de l'Union européenne à la date de l'introduction de la demande de permis pour personne faisant l'objet d'un transfert temporaire intragroupe et qui fait l'objet d'un tel transfert.]1
+----------
+(1)<Inséré par L 2020-07-31/24, art. 32, 109; En vigueur : 01-09-2020>
+
+Section 2. [1 - Permis pour personne faisant l'objet d'un transfert temporaire intragroupe.]1
+----------
+(1)<Inséré par L 2020-07-31/24, art. 33, 109; En vigueur : 01-09-2020>
+
+Sous-section 1re. [1 - Dispositions relatives à la procédure conjointe avec l'autorité compétente en matière d'occupation des travailleurs étrangers.]1
+----------
+(1)<Inséré par L 2020-07-31/24, art. 34, 109; En vigueur : 01-09-2020>
+
+Art. 61/34. [1 § 1. Le ressortissant de pays tiers qui souhaite séjourner plus de nonante jours sur le territoire en qualité de personne faisant l'objet d'un transfert temporaire intragroupe introduit sa demande auprès de l'autorité régionale compétente sous la forme d'une demande d'autorisation de travail.
+La demande d'autorisation de travail vaut demande d'autorisation de séjour.
+§ 2. Seul le ressortissant de pays tiers qui se trouve en dehors du territoire des Etats membres lors de l'introduction de la demande ou qui se trouve dans le cas visé à l'article 61/35 est autorisé à introduire une demande visée au paragraphe 1er.
+§ 3. Les documents suivants sont joints à la demande :
+1° sauf en cas de renouvellement de la demande, la preuve du paiement de la redevance prévue à l'article 1er/1;
+2° les documents permettant d'établir les conditions visées à l'article 61/39.
+§ 4. Conformément à l'article 28 de l'accord de coopération du 6 décembre 2018, le ministre ou son délégué statue sur la demande de séjour, ou de son renouvellement, dans un délai de nonante jours, non prorogeable, suivant la notification du caractère complet de la demande.
+§ 5. Le ministre ou son délégué peut exiger du ressortissant de pays tiers qu'ils produisent des documents ou des renseignements complémentaires dans un délai de quinze jours.
+Le délai visé au paragraphe 4 est suspendu jusqu'à ce que les informations complémentaires requises sont reçues.
+§ 6. Conformément à l'article 33 de l'accord de coopération du 2 février 2018, si l'intéressé est autorisé à séjourner et à travailler plus de nonante jours sur le territoire en qualité de personne faisant l'objet d'un transfert temporaire intragroupe, l'autorisation de travail et l'autorisation de séjour lui sont notifiées sous la forme d'un acte administratif unique.]1
+----------
+(1)<Inséré par L 2020-07-31/24, art. 35, 109; En vigueur : 01-09-2020>
+
+Art. 61/35. [1 § 1er. Conformément à l'article 21 de l'accord de coopération du 2 février 2018, le ressortissant de pays tiers qui est autorisé à séjourner plus de nonante jours en qualité de personne faisant l'objet d'un transfert temporaire intragroupe et souhaite faire prolonger son séjour en cette qualité introduit sa demande auprès de l'autorité régionale compétente sous la forme d'une demande d'autorisation de travail au plus tard deux mois avant l'expiration de son autorisation de séjour.
+§ 2. Si la durée pendant laquelle l'intéressé est autorisé à séjourner en qualité de personne faisant l'objet d'un transfert temporaire intragroupe expire durant l'examen de la demande, il lui est délivré un document qui couvre provisoirement son séjour jusqu'à ce qu'il soit statué sur cette demande.
+Le Roi fixe les conditions et les modalités de délivrance du document de séjour.]1
+----------
+(1)<Inséré par L 2020-07-31/24, art. 36, 109; En vigueur : 01-09-2020>
+
+Art. 61/36. [1 Le ministre ou son délégué notifie les décisions suivantes au ressortissant de pays tiers :
+1° les décisions de refus ou de non-renouvellement de l'autorisation de séjour ou les décisions mettant fin à l'autorisation de séjour prises en vertu de la présente section;
+2° la décision d'octroi ou de renouvellement de l'autorisation de travail et de l'autorisation de séjour sous la forme d'un acte administratif unique.
+Le ministre ou son délégué informe l'employeur de la décision visée à l'alinéa 1er, 2°, dans les cas et conditions prévus par l'accord de coopération du 2 février 2018.]1
+----------
+(1)<Inséré par L 2020-07-31/24, art. 37, 109; En vigueur : 01-09-2020>
+
+Art. 61/37. [1 § 1er. Conformément à l'article 34, alinéa 2, de l'accord de coopération du 2 février 2018, et à l'article 29, alinéa 2, de l'accord de coopération du 6 décembre 2018, lorsque le ressortissant d'un pays tiers visé à l'article 61/34 se trouve à l'étranger à la date de la décision l'autorisant à séjourner et à travailler en qualité de personne faisant l'objet d'un transfert temporaire intragroupe, un visa de long séjour lui est délivré, à sa demande.
+Le Roi détermine les conditions et les modalités relatives à la délivrance du visa.
+§ 2. Conformément à l'article 29, alinéa 3, de l'accord de coopération du 6 décembre 2018, le ressortissant de pays tiers autorisé à travailler et à séjourner plus de nonante jours sur le territoire en qualité de personne faisant l'objet d'un transfert temporaire intragroupe est inscrit au registre des étrangers et un permis pour personne faisant l'objet d'un transfert temporaire intragroupe lui est délivré.
+Le Roi détermine :
+1° le modèle du permis pour personne faisant l'objet d'un transfert intragroupe;
+2° la durée de validité du permis pour personne faisant l'objet d'un transfert intragroupe;
+3° le document de séjour délivré au ressortissant d'un pays tiers dans l'attente de la délivrance du permis pour personne faisant l'objet d'un transfert intragroupe.
+§ 3. Sans préjudice de l'article 61/38, en cas de renouvellement du séjour en application de l'article 61/35, le permis pour personne faisant l'objet d'un transfert temporaire intragroupe est prolongé d'une durée égale à la durée autorisée de son séjour.]1
+----------
+(1)<Inséré par L 2020-07-31/24, art. 38, 109; En vigueur : 01-09-2020>
+
+Art. 61/38. [1 § 1er. La durée pendant laquelle le ressortissant de pays tiers peut séjourner sur le territoire de l'Union européenne en qualité de cadre ICT ou expert ICT est limitée à 3 ans, et à 1 an en qualité d'employé stagiaire ICT.
+La durée de séjour est calculée en additionnant les durées cumulées des permis délivrés consécutivement à une personne faisant l'objet d'un transfert temporaire intragroupe.
+Le Roi peut préciser la manière dont est calculée la durée maximale du séjour en qualité de personne faisant l'objet d'un transfert temporaire intragroupe. Il peut abroger, remplacer ou compléter les modalités prévues à l'alinéa 2, pour se conformer au droit de l'Union.
+§ 2. Sans préjudice de dispositions plus favorables contenues dans un traité international et conformément à l'article 36 de l'accord de coopération du 6 décembre 2018, lorsque la durée maximale du transfert temporaire intragroupe visée au paragraphe 1er est atteinte, le ressortissant d'un pays tiers peut introduire une demande visée à l'article 61/34 ou 61/45 après l'écoulement d'un délai de trois mois.]1
+----------
+(1)<Inséré par L 2020-07-31/24, art. 39, 109; En vigueur : 01-09-2020>
+
+Sous-section 2. [1 - Dispositions relatives à l'autorisation de séjour en qualité de personne faisant l'objet d'un transfert temporaire intragroupe.]1
+----------
+(1)<Inséré par L 2020-07-31/24, art. 40, 109; En vigueur : 01-09-2020>
+
+Art. 61/39. [1 § 1er. Le ressortissant de pays tiers qui introduit une demande en application de l'article 61/34 ou 61/35, est autorisé à séjourner plus de nonante jours sur le territoire en qualité de personne faisant l'objet d'un transfert temporaire intragroupe ou à prolonger son séjour en cette qualité :
+1° s'il prouve qu'il dispose d'un document de voyage ou d'un titre de séjour en tenant lieu remplissant les conditions de validité prévues par l'article 6, § 1er, a), du Code frontières Schengen;
+2° s'il prouve qu'il dispose de ressources suffisantes pour la durée du séjour envisagé, pour subvenir à ses propres besoins et à ceux des membres de sa famille, afin de ne pas devenir une charge pour les pouvoirs publics, compte-tenu notamment des revenus qu'il percevra durant son séjour en tant que personne faisant l'objet d'un transfert temporaire intragroupe;
+3° s'il prouve qu'il dispose d'une assurance maladie couvrant l'ensemble des risques en Belgique pour lui-même et les membres de sa famille;
+4° sauf en cas de renouvellement de la demande d'autorisation de séjour introduite en qualité de personne faisant l'objet d'un transfert temporaire intragroupe, s'il produit un certificat médical attestant qu'il n'est pas atteint d'une des maladies énumérées à l'annexe de la présente loi;
+5° sauf en cas de renouvellement de la demande d'autorisation de séjour en qualité de personne faisant l'objet d'un transfert temporaire intragroupe, s'il produit un extrait du casier judiciaire ou un document équivalent, et le cas échéant sa traduction légalisée, délivré par le pays d'origine ou par le pays de sa dernière résidence, datant de moins de six mois, et attestant qu'il n'a pas été condamné pour des crimes ou des délits de droit commun.
+En cas d'impossibilité dûment justifiée de produire les documents visés au § 1er, 4° et 5°, le ministre ou son délégué peut toutefois accorder ou renouveler l'autorisation de séjour en tant que personne faisant l'objet d'un transfert temporaire intragroupe, compte tenu des circonstances.
+§ 2. Le ministre ou son délégué refuse d'accorder l'autorisation de séjour de plus de nonante jours en qualité de personne faisant l'objet d'un transfert temporaire intragroupe dans les cas suivants :
+1° l'intéressé ne remplit pas les conditions prévues au paragraphe 1er;
+2° l'intéressé se trouve dans un des cas visés à l'article 3, alinéa 1er, 5° à 10° ;
+3° l'intéressé n'a pas fourni les documents ou renseignements complémentaires dans le délai prescrit;
+4° la durée maximale de séjour définie à l'article 61/38, § 1er est atteinte;
+5° si l'intéressé n'a pas respecté le délai prévu à l'article 61/38, § 2, pour l'introduction de sa demande.
+§ 3. Le ministre ou son délégué refuse de renouveler l'autorisation de séjour de plus de nonante jours en qualité de personne faisant l'objet d'un transfert temporaire intragroupe dans les cas suivants :
+1° si l'intéressé ne remplit pas ou plus les conditions prévues au § 1er, 1° -3° ;
+2° si la durée maximale de séjour définie à l'article 61/38, § 1er est atteinte;
+3° si l'intéressé séjourne à des fins autres que celles pour lesquelles il a été autorisé au séjour;
+4° si l'intéressé n'a pas respecté les règles relatives à la mobilité de courte durée ou à la mobilité de longue durée.
+§ 4. Le ministre ou son délégué met fin au séjour du ressortissant de pays tiers autorisé à séjourner plus de nonante jours sur le territoire en qualité de personne faisant l'objet d'un transfert temporaire intragroupe dans les cas suivants :
+1° si l'intéressé ne remplit pas ou plus les conditions de séjour prévues au § 1er, 1° à 3° ;
+2° si l'intéressé séjourne à des fins autres que celles pour lesquelles il a été autorisé au séjour;
+3° si l'entité hôte a été créée dans le but principal de faciliter l'entrée de personnes faisant l'objet d'un transfert temporaire intra-groupe;
+4° la durée maximale de séjour définie à l'article 61/38, § 1er est atteinte;
+5° si l'intéressé n'a pas respecté les règles relatives à la mobilité de courte durée ou à la mobilité de longue durée.
+§ 5. Toute décision prise en vertu du présent article est prise après un examen individuel, qui tient compte de l'ensemble des circonstances propres à chaque cas, en ce compris l'intérêt du ressortissant de pays tiers, et dans le respect du principe de proportionnalité.]1
+----------
+(1)<Inséré par L 2020-07-31/24, art. 41, 109; En vigueur : 01-09-2020>
+
+Art. 61/40. [1 Durant l'examen de la demande, le ressortissant de pays tiers qui souhaite séjourner ou est entré sur le territoire du Royaume en qualité de personne faisant l'objet d'un transfert temporaire intragroupe communique sans délai au ministre ou son délégué toute modification survenant durant la procédure de demande ou durant le séjour qui a une incidence sur les conditions de séjour visées aux articles 61/39, § 1er, et 61/48, § 1.
+Si nécessaire, le ministre ou son délégué informe l'autorité régionale compétente des changements qui ont un impact sur la procédure de séjour ou les conditions de séjour.]1
+----------
+(1)<Inséré par L 2020-07-31/24, art. 42, 109; En vigueur : 01-09-2020>
+
+Art. 61/41. [1 § 1er. Conformément à l'article 17, alinéa 3, de l'accord de coopération du 2 février 2018, lorsque le ressortissant d'un pays tiers est autorisé à séjourner en application des dispositions du présent chapitre, l'autorisation de séjour est valable uniquement si l'autorité régionale compétente prend une décision définitive autorisant le ressortissant d'un pays tiers à travailler sur le territoire du Royaume.
+Conformément aux articles 3 et 31 de l'accord de coopération du 6 décembre 2018, la durée de l'autorisation de séjour accordée en application des dispositions de la présente section est limitée à la durée de l'autorisation de travail, sans pouvoir dépasser la durée maximale prévue à l'article 61/38, § 1er.
+§ 2. Conformément à l'article 35 de l'accord de coopération du 6 décembre 2018, l'autorisation de séjour accordée en application des dispositions de la présente section prend fin de plein droit lorsque le ressortissant d'un pays tiers concerné n'est plus autorisé à travailler en qualité de personne faisant l'objet d'un transfert temporaire intragroupe.]1
+----------
+(1)<Inséré par L 2020-07-31/24, art. 43, 109; En vigueur : 01-09-2020>
+
+Section 3. [1 - Mobilité au sein de l'Union européenne.]1
+----------
+(1)<Inséré par L 2020-07-31/24, art. 44, 109; En vigueur : 01-09-2020>
+
+Sous-section 1re. [1 - Mobilité de courte durée.]1
+----------
+(1)<Inséré par L 2020-07-31/24, art. 45, 109; En vigueur : 01-09-2020>
+
+Art. 61/42. [1 Sans préjudice des dispositions du chapitre II du titre I, le ressortissant de pays tiers qui souhaite entrer et séjourner sur le territoire en qualité de personne faisant l'objet d'un transfert temporaire intragroupe dans le cadre d'une mobilité de courte durée doit disposer des documents suivants :
+1° un passeport valable ou un titre de voyage en tenant lieu dont la durée de validité couvre au moins celle de l'autorisation délivrée aux fins d'un transfert temporaire intragroupe par le premier Etat membre et qui remplit les conditions de validité prévues par l'article 6, § 1er, a), du Code frontières Schengen;
+2° le permis pour personne faisant l'objet d'un transfert temporaire intragroupe délivré par le premier Etat membre en cours de validité.
+Le Roi peut soumettre le passeport et le titre de voyage en tenant lieu à des conditions de validité plus précises ou supplémentaires.]1
+----------
+(1)<Inséré par L 2020-07-31/24, art. 46, 109; En vigueur : 01-09-2020>
+
+Art. 61/43. [1 Le ressortissant de pays tiers visé à l'article 61/42 peut séjourner dans le Royaume afin d'y travailler pendant une période de nonante jours sur cent quatre-vingts jours dans les cas suivants :
+1° il remplit les conditions fixées par la législation régionale ou communautaire applicable en matière d'occupation de personne faisant l'objet de transfert temporaire intragroupe;
+2° il ne se trouve pas dans un cas énumérés à l'article 3, alinéa 1er, 5° à 10° ;
+3° le permis pour personne faisant l'objet d'un transfert temporaire intragroupe délivré par le premier Etat membre couvre au moins la période de mobilité de courte durée;
+4° la durée maximale visée à l'article 61/38, § 1er n'est pas encore atteinte.]1
+----------
+(1)<Inséré par L 2020-07-31/24, art. 47, 109; En vigueur : 01-09-2020>
+
+Art. 61/44. [1 Le ministre ou son délégué met fin au séjour du ressortissant de pays tiers visé à l'article 61/42 dans les cas suivants :
+1° la personne faisant l'objet d'un transfert temporaire intragroupe ne satisfait pas ou plus aux conditions fixées aux articles 61/42 ou 61/43;
+2° la personne faisant l'objet d'un transfert temporaire intragroupe se trouve dans un cas énumérés à l'article 3, alinéa 1er, 5° à 10°. ]1
+----------
+(1)<Inséré par L 2020-07-31/24, art. 48, 109; En vigueur : 01-09-2020>
+
+Sous-section 2. [1 - Permis pour mobilité de longue durée.]1
+----------
+(1)<Inséré par L 2020-07-31/24, art. 49, 109; En vigueur : 01-09-2020>
+
+Art. 61/45. [1 § 1er. Le ressortissant de pays tiers qui souhaite séjourner plus de nonante jours sur le territoire dans le cadre d'une mobilité de longue durée en qualité de personne faisant l'objet d'un transfert temporaire intragroupe introduit sa demande auprès de l'autorité régionale compétente sous la forme d'une demande d'autorisation de travail.
+La demande d'autorisation de travail vaut demande d'autorisation de séjour.
+§ 2. Les documents suivants sont joints à la demande :
+1° sauf en cas de renouvellement de la demande, la preuve du paiement de la redevance prévue à l'article 1/1;
+2° les documents permettant d'établir les conditions visées à l'article 61/48.
+§ 3. Conformément à l'article 28 de l'accord de coopération du 6 décembre 2018, le ministre ou son délégué prend une décision relative à l'autorisation de séjour dans un délai de nonante jours maximum suivant la notification du caractère complet de la demande.
+§ 4. Le ministre ou son délégué peut exiger du ressortissant de pays tiers qu'ils produisent des documents ou des renseignements complémentaires dans un délai de quinze jours.
+Le délai visé au paragraphe 3 est suspendu jusqu'à ce que les informations complémentaires requises sont reçues.
+§ 5. Conformément à l'article 33 de l'accord de coopération du 2 février 2018, si l'intéressé est autorisé à séjourner et à travailler plus de nonante jours sur le territoire dans le cadre d'une mobilité de longue durée en qualité de personne faisant l'objet d'un transfert temporaire intragroupe, l'autorisation de travail et l'autorisation de séjour lui sont notifiées sous la forme d'un acte administratif unique.
+§ 6. Le ministre ou son délégué avise le premier Etat membre ayant délivré un permis pour personne faisant l'objet d'un transfert temporaire intragroupe de la délivrance du permis pour mobilité de longue durée.]1
+----------
+(1)<Inséré par L 2020-07-31/24, art. 50, 109; En vigueur : 01-09-2020>
+
+Art. 61/46. [1 § 1er. Conformément à l'article 21 de l'accord de coopération du 2 février 2018, le ressortissant de pays tiers qui est autorisé à séjourner plus de nonante jours sur le territoire en qualité de personne faisant l'objet d'un transfert temporaire intragroupe dans le cadre d'une mobilité de longue durée et souhaite faire prolonger son séjour en cette qualité, introduit sa demande auprès de l'autorité régionale compétente sous la forme d'une demande d'autorisation de travail au plus tard deux mois avant l'expiration de son autorisation de séjour.
+§ 2. Si la durée pendant laquelle l'intéressé est autorisé à séjourner en qualité de personne faisant l'objet d'un transfert temporaire intragroupe dans le cadre d'une mobilité de longue durée expire durant l'examen de la demande, il lui est délivré un document qui couvre provisoirement son séjour jusqu'à ce qu'il soit statué sur cette demande ou jusqu'à ce que la durée maximale de son séjour en qualité de personne faisant l'objet d'un transfert temporaire intragroupe telle que visée à l'article 61/38, § 1er ait expiré.
+Le Roi fixe les conditions et les modalités de délivrance du document de séjour visé à l'alinéa 1er.]1
+----------
+(1)<Inséré par L 2020-07-31/24, art. 51, 109; En vigueur : 01-09-2020>
+
+Art. 61/47. [1 § 1er. Conformément à l'article 29, alinéa 3 et l'article 30 de l'accord de coopération du 6 décembre 2018, le ressortissant de pays tiers autorisé à travailler et à séjourner plus de nonante jours sur le territoire en qualité de personne faisant l'objet d'un transfert temporaire intragroupe dans le cadre d'une mobilité de longue durée est inscrit au registre des étrangers et un permis pour mobilité de longue durée lui est délivré.
+Le Roi détermine :
+1° le modèle du permis pour personne faisant l'objet d'un transfert intragroupe dans le cadre d'une mobilité de longue durée;
+2° la durée de validité du permis pour personne faisant l'objet d'un transfert intragroupe dans le cadre d'une mobilité de longue durée;
+3° le document de séjour délivré au ressortissant d'un pays tiers dans l'attente de la délivrance du permis pour personne faisant l'objet d'un transfert intragroupe dans le cadre d'une mobilité de longue durée;
+§ 2. Sans préjudice de l'article 61/38, en cas de renouvellement du séjour en application de l'article 61/46, le permis pour mobilité de longue durée dont le ressortissant de pays tiers est titulaire est prolongé d'une durée égale à la durée autorisée de son séjour sans toutefois pouvoir excéder la durée de la période totale du séjour dans le premier Etat membre.]1
+----------
+(1)<Inséré par L 2020-07-31/24, art. 52, 109; En vigueur : 01-09-2020>
+
+Art. 61/48. [1 § 1er. Le ressortissant de pays tiers qui introduit une demande en application de l'article 61/45 ou 61/46, est autorisé à séjourner plus de nonante jours sur le territoire en qualité de personne faisant l'objet d'un transfert temporaire intragroupe ou à prolonger son séjour en cette qualité :
+1° s'il prouve qu'il dispose d'un document de voyage ou d'un titre de séjour en tenant lieu remplissant les conditions de validité prévues par l'article 6, § 1er, a), du Code frontières Schengen;
+2° s'il prouve qu'il dispose d'une assurance maladie couvrant l'ensemble des risques en Belgique pour lui-même et les membres de sa famille;
+3° s'il prouve qu'il dispose d'un permis pour personne faisant l'objet d'un transfert temporaire intragroupe délivrée par le premier Etat membre;
+4° s'il prouve qu'il dispose de ressources suffisantes pour la durée du séjour envisagée, pour subvenir à ses propres besoins et à ceux des membres de sa famille, afin de ne pas devenir une charge pour les pouvoirs publics, compte-tenu notamment des revenus qu'il percevra durant son séjour en tant que personne faisant l'objet d'un transfert temporaire intragroupe;
+5° sauf en cas de renouvellement de la demande d'autorisation de séjour en qualité de personne faisant l'objet d'un transfert temporaire intragroupe dans le cadre d'une mobilité de longue durée, s'il produit un extrait du casier judiciaire ou un document équivalent, et le cas échéant sa traduction légalisée, délivré par le pays d'origine ou par le pays de sa dernière résidence, datant de moins de six mois, et attestant qu'il n'a pas été condamné pour des crimes ou des délits de droit commun.
+En cas d'impossibilité dûment justifiée de produire le document visé au § 1er, 5°, le ministre ou son délégué peut toutefois accorder ou renouveler l'autorisation de séjour en tant que personne faisant l'objet d'un transfert temporaire intragroupe, compte tenu des circonstances.
+§ 2. Le ministre ou son délégué refuse d'accorder l'autorisation de séjour de plus de nonante jours en qualité de personne faisant l'objet d'un transfert temporaire intragroupe dans le cadre d'une mobilité de longue durée dans les cas suivants :
+1° l'intéressé ne remplit pas les conditions prévues au paragraphe 1er;
+2° l'intéressé se trouve dans un des cas visés à l'article 3, alinéa 1er, 5° à 10° ;
+3° l'intéressé n'a pas fourni les documents ou renseignements complémentaires dans le délai prescrit;
+4° la durée maximale de séjour définie à l'article 61/38, § 1er est atteinte;
+5° si l'intéressé n'a pas respecté le délai prévu à l'article 61/38, § 2, pour l'introduction de sa demande;
+6° le permis pour personne faisant l'objet d'un transfert temporaire intragroupe délivré par le premier Etat membre expire durant la procédure.
+§ 3. Le ministre ou son délégué refuse de renouveler l'autorisation de séjour de plus de nonante jours en qualité de personne faisant l'objet d'un transfert temporaire intragroupe dans les cas suivants :
+1° si l'intéressé ne remplit pas ou plus les conditions prévues au § 1er, 1° -3°.
+2° si la durée maximale de séjour définie à l'article 61/38, § 1er est atteinte;
+3° si l'intéressé séjourne à des fins autres que celles pour lesquelles il a été autorisé au séjour;
+§ 4. Le ministre ou son délégué met fin au séjour du ressortissant de pays tiers autorisé à séjourner plus de nonante jours sur le territoire en qualité de personne faisant l'objet d'un transfert temporaire intragroupe dans le cadre d'une mobilité de longue durée dans les cas suivants :
+1° si l'intéressé ne remplit pas ou plus les conditions de séjour prévues au § 1er, 1° à 3°.
+2° si l'intéressé séjourne à des fins autres que celles pour lesquelles il a été autorisé au séjour;
+3° si l'entité hôte a été créée dans le but principal de faciliter l'entrée de personnes faisant l'objet d'un transfert temporaire intra-groupe;
+§ 5. Toute décision prise en vertu du présent article est prise après un examen individuel, qui tient compte de l'ensemble des circonstances propres à chaque cas, en ce compris l'intérêt du ressortissant de pays tiers, et dans le respect du principe de proportionnalité.]1
+----------
+(1)<Inséré par L 2020-07-31/24, art. 53, 109; En vigueur : 01-09-2020>
+
+Art. 61/49. [1 Le ministre ou son délégué notifie les décisions suivantes au ressortissant de pays tiers :
+1° les décisions de refus, de non-renouvellement de l'autorisation de séjour ou les décisions mettant fin à l'autorisation de séjour prises en vertu de la présente section;
+2° la décision d'octroi ou de renouvellement de l'autorisation de travail et de l'autorisation de séjour sous la forme d'un acte administratif unique.
+Le ministre ou son délégué informe l'employeur de la décision visée à l'alinéa 1er, 2°, dans les cas et conditions prévus par l'accord de coopération du 2 février 2018.]1
+----------
+(1)<Inséré par L 2020-07-31/24, art. 54, 109; En vigueur : 01-09-2020>
+
+TITRE III. [1 - Garanties procédurales et voies de recours.]1
+----------
+(1)<L 2017-02-24/21, art. 43, 094; En vigueur : 29-04-2017>
+
+CHAPITRE I. [1 - Droit d'être entendu, motivation et notification des décisions administratives et recours.]1
+----------
+(1)<L 2017-02-24/21, art. 44, 094; En vigueur : 29-04-2017>
+
+Art. 62.[1 § 1er. Lorsqu'il est envisagé de mettre fin au séjour ou de retirer le séjour d'un étranger qui est autorisé ou admis à séjourner plus de trois mois sur le territoire du Royaume ou qui a le droit d'y séjourner plus de trois mois, l'intéressé en est informé par écrit et la possibilité lui est offerte de faire valoir les éléments pertinents qui sont de nature à empêcher ou à influencer la prise de décision.
+L'intéressé dispose d'un délai de quinze jours, à partir de la réception de l'écrit visé à l'alinéa 1er, pour transmettre les éléments pertinents par écrit. Ce délai peut être réduit ou prolongé si cela s'avère utile ou nécessaire à la prise de décision, compte tenu des circonstances propres au cas d'espèce.
+L'obligation prévue l'alinéa 1er ne s'applique pas dans les cas suivants :
+1° si des motifs intéressant la sûreté de l'Etat s'y opposent;
+2° si les circonstances particulières, propres au cas d'espèce, s'y opposent ou l'empêchent, en raison de leur nature ou de leur gravité;
+3° l'intéressé est injoignable.
+§ 2. Les décisions administratives sont motivées. Les faits qui les justifient sont indiqués sauf si des motifs intéressant la sûreté de l'Etat s'y opposent.
+Lorsque les décisions visées à l'article [2 2.31, § 1er, alinéa 1er, de la loi CCE]2, sont fondées sur des faits considérés comme des raisons impérieuses de sécurité nationale, elles indiquent qu'elles se fondent sur des raisons impérieuses de sécurité nationale au sens de l'article [2 2.31, § 3, de la loi CCE]2.
+§ 3. Elles sont notifiées aux intéressés, qui en reçoivent une copie, par une des personnes suivantes :
+1° le bourgmestre de la commune où se trouve l'étranger ou son délégué;
+2° un agent de l'Office des étrangers;
+3° le Commissaire général aux réfugiés et aux apatrides ou son délégué;
+4° un officier de police judiciaire, en ce compris l'officier de police judiciaire dont la compétence est limitée;
+5° un fonctionnaire de police;
+6° un agent de l'Administration des douanes et accises;
+7° le directeur de l'établissement pénitentiaire si l'étranger est en état d'arrestation;
+8° à l'intervention de l'autorité diplomatique ou consulaire belge à l'étranger si l'étranger ne se trouve pas sur le territoire du Royaume.
+Sans préjudice d'une notification à la personne même, toute notification est valablement faite à la résidence ou, le cas échéant, au domicile élu, de l'une des manières suivantes :
+1° sous pli recommandé;
+2° par porteur contre accusé de réception;
+3° par télécopie si l'étranger a élu domicile chez son avocat;
+4° par tout autre mode admis par arrêté royal délibéré en Conseil des ministres par lequel la date de la notification peut être constatée de manière certaine.]1
+----------
+(1)<L 2017-02-24/21, art. 45, 094; En vigueur : 29-04-2017>
+(2)<L 2026-06-17/03, art. 5.8, 134; En vigueur : 12-06-2026>
+
+Art. 63.(Les décisions administratives peuvent donner lieu soit à une demande de levée de mesure de sûreté, soit à un recours auprès du Conseil du Contentieux des étrangers, soit à un recours au pouvoir judiciaire, conformément aux dispositions ci-après.) <L 2006-09-15/71, art. 200, 1°, 040; En vigueur : 01-12-2006>
+(Les décisions administratives prises en application des articles 3, 7, 11, 19, du titre II, chapitre II, (...) [1 les articles 74/11 et 74/14 du Titre IIIquater]1 ne sont pas susceptibles d'une demande en référé sur la base de l'article 584 du Code judiciaire.) <L 1993-05-06/30, art. 25, 2°, 005; En vigueur : 31-05-1993> <L 2006-09-15/71, art. 200, 2°, 040; En vigueur : 01-12-2006>
+(Alinéa 3 abrogé) <L 2003-02-18/41, art. 17, 027; En vigueur : 01-05-2003>
+----------
+(1)<L 2012-01-19/12, art. 13, 063; En vigueur : 27-02-2012>
+
+CHAPITRE Ibis. - (RECOURS URGENT AUPRES DU COMMISSAIRE GENERAL AUX REFUGIES ET AUX APATRIDES.) <L 1993-05-06/30, art. 26, 005; En vigueur : 31-05-1993>
+
+Art. 63/2. (Abrogé) <L 2006-09-15/72, art. 69, 041; En vigueur : 01-06-2007>
+
+Art. 63/3. (Abrogé) <L 2006-09-15/72, art. 69, 041; En vigueur : 01-06-2007>
+
+Art. 63/4. (Abrogé) <L 2006-09-15/72, art. 69, 041; En vigueur : 01-06-2007>
+
+Art. 63/5. (Abrogé) <L 2006-09-15/72, art. 69, 041; En vigueur : 01-06-2007>
+
+CHAPITRE II. - DEMANDE EN REVISION.
+
+Art. 64. (Abrogé) <L 2006-09-15/72, art. 70, 041; En vigueur : 01-06-2007>
+
+Art. 65. (Abrogé) <L 2006-09-15/72, art. 70, 041; En vigueur : 01-06-2007>
+
+Art. 66. (Alinéa 1 abrogé) <L 2006-09-15/72, art. 70, 041; En vigueur : 01-06-2007>
+(Alinéa 2 abrogé) <L 2006-09-15/72, art. 70, 041; En vigueur : 01-06-2007>
+(Alinéa 3 abrogé) <L 2006-09-15/71, art. 201, 040; En vigueur : 01-12-2006>
+
+Art. 67. (Abrogé) <L 2006-09-15/72, art. 70, 041; En vigueur : 01-06-2007>
+
+CHAPITRE III. - DEMANDES DE LEVEE DE CERTAINES MESURES DE SURETE.
+
+Art. 68.(L'étranger qui fait l'objet d'une des mesures de sûreté prévues par les articles [1 [5 ...]5]1 [2 26, [5 ...]5]4 (57/32, § 2, alinéa 1er), (...) [1 73 [3 [5 ...]5]1, [5 74/27, 3°, et 74/28, § 1, 2°, ]5 autre que la détention, peut, à l'expiration d'une période de six mois, demander au Ministre de lever cette mesure.) <L 1996-07-15/33, art. 54, 012; En vigueur : 16-12-1996> <L 2003-02-18/41, art. 18, 027; En vigueur : 01-05-2003> <L 2006-09-15/72, art. 71, 041; En vigueur : 01-06-2007>
+L'intéressé peut introduire la même demande de six mois en six mois.
+[2 ...]2
+----------
+(1)<L 2012-01-19/12, art. 14, 063; En vigueur : 27-02-2012>
+(2)<L 2017-02-24/21, art. 46, 094; En vigueur : 29-04-2017>
+(3)<L 2017-11-21/17, art. 53, 100; En vigueur : 22-03-2018>
+(4)<L 2019-05-08/12, art. 21, 106; En vigueur : 19-07-2019>
+(5)<L 2024-05-12/29, art. 14, 124; En vigueur : 20-07-2024>
+
+CHAPITRE IV. - RECOURS EN ANNULATION. (Abrogé) <L 2006-09-15/71, art. 202, 040; En vigueur : 01-12-2006>
+
+Art. 69. (Abrogé) <L 2006-09-15/71, art. 202, 040; En vigueur : 01-12-2006>
+
+Art. 69bis. (Abrogé) <L 2006-09-15/71, art. 202, 040; En vigueur : 01-12-2006>
+
+Art. 70. (Abrogé) <L 2000-04-18/31, art. 7, 019; En vigueur : 30-05-2000>
+
+CHAPITRE V. - RECOURS AUPRES DU POUVOIR JUDICIAIRE [1 ET DU CONSEIL D'ETAT]1.
+----------
+(1)<L 2026-06-17/03, art. 5.9, 134; En vigueur : 12-06-2026>
+
+Art. 70bis. (Abrogé) <L 1993-05-06/30, art. 34, 005; En vigueur : 31-05-1993>
+
+Art. 70/1. [1 Le tribunal du travail connaît des litiges relatifs à l'application de l'article 54, § 1er.]1
+----------
+(1)<Inséré par L 2012-04-22/26, art. 3, 065; En vigueur : 01-07-2012>
+
+Art. 71.<L 1996-07-10/49, art. 5, 013; En vigueur : 16-12-1996> L'étranger qui fait l'objet d'une mesure privative de liberté prise en application des articles 7, [8bis, § 4,] [2 ...]2 27, 29, alinéa 2, [2 44septies, § 1,]2 [5 ...]5 74/6 [5 , 74/6/1, § 2, alinéa 1er, et § 3, alinéa 1er,]5 et [57/32, § 2, alinéa 2] peut introduire un recours contre cette mesure en déposant une requête auprès de la chambre du conseil du tribunal correctionnel du lieu de sa résidence dans le Royaume ou du lieu où il a été trouvé. <L 2003-02-18/39, art. 2, 026; En vigueur : 01-05-2003> <L 2004-09-01/55, art. 2, 032; En vigueur : 12-10-2004> <L 2006-09-15/71, art. 203, 1°, 040; En vigueur : 01-12-2006>
+(L'étranger maintenu dans un lieu déterminé situé aux frontières, en application de l'article 74/5 [5 ou 74/5/1]5, peut introduire un recours contre cette mesure, en déposant une requête auprès de la chambre du conseil du tribunal correctionnel du lieu où il est maintenu.) <L 1998-03-09-62, art. 6, 015; En vigueur : 13-07-1998>
+(Sans préjudice de l'application des articles 74/5, § 3, alinéa 5 et [3 74/6, § 1er, alinéa 7,]3 l'intéressé) peut réintroduire le recours visé aux alinéas précédents de mois en mois.
+Toutefois, lorsque, conformément à l'article 74, le Ministre a saisi la chambre du conseil, l'étranger ne peut introduire le recours visé aux alinéas précédents contre la décision de prolongation du délai de la détention ou du maintien qu'à partir du trentième jour qui suit la prolongation. <L 2006-09-15/71, art. 203, 2°, 040; En vigueur : 01-12-2006>
+----------
+(1)<L 2009-05-06/04, art. 13, 049; En vigueur : 29-05-2009>
+(2)<L 2017-02-24/21, art. 47, 094; En vigueur : 29-04-2017>
+(3)<L 2017-11-21/17, art. 54, 100; En vigueur : 22-03-2018>
+(4)<L 2019-05-08/12, art. 22, 106; En vigueur : 19-07-2019>
+(5)<L 2026-06-16/01, art. 90, 135; En vigueur : 12-06-2026>
+
+Art. 72. (La chambre du conseil statue dans les cinq jours ouvrables du dépôt de la requête après avoir entendu l'intéressé ou son conseil (, le Ministre, son délégué ou son conseil) en ses moyens et le ministère public en son avis. (...). (...). Si la chambre du conseil n'a pas statué dans le délai fixé, l'étranger est mis en liberté.) <L 1996-07-10/49, art. 6, 013; En vigueur : 16-12-1996> <L 2006-09-15/71, art. 204, 1°, 040; En vigueur : 01-12-2006>
+Elle vérifie si les mesures privatives de liberté et d'éloignement du territoire sont conformes à la loi sans pouvoir se prononcer sur leur opportunité.
+(Les ordonnances de la chambre du conseil sont susceptibles d'appel de la part de l'étranger, du ministère public et, (...) du Ministre ou son délégué.) <L 1996-07-10/49, art. 6, 013; En vigueur : 16-12-1996> <L 2006-09-15/71, art. 204, 2°, 040; En vigueur : 01-12-2006>
+Il est procédé conformément aux dispositions légales relatives à la détention préventive, sauf celles relatives au mandat d'arrêt, au juge d'instruction, à l'interdiction de communiquer, à l'ordonnance de prise de corps, à la mise en liberté provisoire ou sous caution, (et au droit de prendre communication du dossier administratif). <L 28-06-1984, art. 7>
+(Le conseil de l'étranger peut consulter le dossier au greffe du tribunal compétent pendant les deux jours ouvrables qui précèdent l'audience.
+Le greffier en donnera avis au conseil par lettre recommandée). <L 28-06-1984, art. 7>
+
+Art. 73.Si la Chambre du Conseil décide de ne pas maintenir l'arrestation, l'étranger est remis en liberté dès que la décision est coulée en force de chose jugée.
+Le [Ministre] peut enjoindre à cet étranger de résider en un lieu déterminé soit jusqu'à l'exécution de la mesure d'éloignement du territoire dont il fait l'objet, soit jusqu'au moment où il aura été statué sur [1 son recours en annulation]1. <L 1996-07-15/33, art. 4, 012; En vigueur : 16-12-1996>
+----------
+(1)<L 2009-05-06/03, art. 190, 050; En vigueur : 29-05-2009>
+
+Art. 74.<L 1996-07-10/49, art. 7, 013; En vigueur : 16-12-1996> Lorsque le Ministre décide de prolonger la détention ou le maintien de l'étranger en application [2 des [3 articles 7, alinéa 5]3, 29, alinéa 3, 44septies, § 1er, alinéa 3, 74/5, § 3, alinéa 2, et 74/6, § 1er, alinéa 6,]2 il doit saisir par requête dans les cinq jours ouvrables de la prolongation, la chambre du conseil du lieu de la résidence de l'étranger dans le Royaume ou du lieu où il a été trouvé, afin que celle-ci se prononce sur la légalité de la prolongation.
+A défaut de saisine de la chambre du conseil dans le délai fixé, l'étranger doit être remis en liberté.
+Pour le surplus, il est procédé conformément aux articles 72 et 73.
+----------
+(1)<L 2017-02-24/21, art. 48, 094; En vigueur : 29-04-2017>
+(2)<L 2017-11-21/17, art. 55, 100; En vigueur : 22-03-2018>
+(3)<L 2024-05-12/29, art. 15, 124; En vigueur : 20-07-2024>
+
+Art. 74/0/1. [1 Le recours contre une décision de détermination de l'âge en application de l'article 25 du règlement (UE) 2024/1348 est susceptible de recours auprès du Conseil d'Etat.]1
+----------
+(1)<Inséré par L 2026-06-17/03, art. 5.9, 134; En vigueur : 12-06-2026>
+
+CHAPITRE VI. [1 - Représentation]1
+----------
+(1)<Inséré par L 2012-06-22/02, art. 4, 066; En vigueur : 08-07-2012>
+
+Art. 74/1.[1 La représentation de l'Etat peut être assurée dans toutes les contestations relatives à l'application de la présente loi par le ministre ou son délégué.]1
+----------
+(1)<Inséré par L 2012-06-22/02, art. 5, 066; En vigueur : 08-07-2012>
+
+TITRE IIIbis. - OBLIGATIONS DES TRANSPORTEURS RELATIVES A L'ACCES DES ETRANGERS AU TERRITOIRE. <Inséré par L 14-07-1987, art. 17>
+
+Art. 74/2.<L 14-07-1987, art. 17> § 1. Est puni (d'une amende de (3.000 EUR)) par [1 étranger]1 transporté : <L 1995-03-08/35, art. 1, 011; En vigueur : 09-04-1995> <AR 2001-07-13/55, art. 3, 023; En vigueur : 01-01-2002>
+1° le transporteur aérien, public ou privé, qui à l'occasion d'un même voyage, transporte à destination de la Belgique, cinq [1 étrangers]1 au moins, qui ne possèdent pas les documents prévus par l'article 2, sans avoir pris de précautions pour s'assurer que ces [1 étrangers]1 soient en possession de ces documents;
+2° le transporteur maritime, public ou privé, qui, à l'occasion d'un même voyage, transporte à destination de la Belgique, cinq [1 étrangers]1 au moins, qui ne possèdent pas les documents prévus par l'article 2, sans avoir donné suite à l'invitation faite de prendre toutes dispositions utiles pour que ces [1 étrangers]1 soient en possession de ces documents;
+3° le transporteur aérien, public ou privé, qui, à l'occasion d'un même voyage à destination d'un pays tiers, amène en Belgique, cinq [1 étrangers]1 au moins qui ne sont pas porteurs des documents requis pour entrer dans ce pays tiers, sans avoir pris de précautions pour s'assurer que ces [1 étrangers]1 soient en possession de ces documents;
+4° le transporteur maritime, public ou privé, qui, à l'occasion d'un même voyage à destination d'un pays tiers, amène en Belgique cinq [1 étrangers]1 au moins qui ne sont pas porteurs des documents requis pour entrer dans ce pays tiers, sans avoir donné suite à l'invitation faite de prendre toutes dispositions utiles pour que ces [1 étrangers]1 soient en possession de ces documents.
+(5° le transporteur, public ou privé, de personnes assurant des liaisons routières internationales par autobus, autocar ou minibus - à l'exception du trafic frontalier - qui, à l'occasion d'un même voyage, transporte à destination de la Belgique 5 [1 étrangers]1 au moins, qui ne sont pas en possession des documents prévus par l'article 2, sans avoir pris des précautions pour s'assurer que ces [1 étrangers]1 soient en possession de ces documents) <L 1995-03-08/35, art. 1, 011; En vigueur : 09-04-1995>
+(6° le transporteur, public ou privé, de personnes assurant des liaisons routières internationales par autobus, autocar ou minibus - à l'exception du trafic frontalier - qui, à l'occasion d'un même voyage vers un pays tiers, transporte à destination de la Belgique 5 [1 étrangers]1 au moins, qui ne sont pas porteurs des documents requis pour entrer dans ce pays tiers, sans avoir pris des précautions pour s'assurer que ces [1 étrangers]1 soient en possession de ces documents) <L 1995-03-08/35, art. 1, 011; En vigueur : 09-04-1995>
+Pour le calcul du nombre des [1 étrangers]1 visés au premier alinéa, les parents au premier degré et le conjoint qui accompagnent ne sont pas comptés.
+§ 2. Les personnes morales sont civilement responsables des condamnations aux amendes et frais, prononcées pour infraction aux dispositions du présent article, contre leurs organes ou préposés.
+(§ 3. En cas où, dans le délai d'un an à compter de la date du procès-verbal, une nouvelle infraction est constatée, le montant prévu au § 1er, alinéa 1er, est doublé.) <L 1995-03-08/35, art. 1, 011; En vigueur : 09-04-1995>
+[2 § 4. Le transporteur n'est pas punissable dans le cas visé à l'article 13bis, paragraphe 1er, du règlement (UE) 2017/2226, dans la mesure où l'infraction au paragraphe 1er ne peut être établie que via l'EES.]2
+----------
+(1)<L 2024-05-16/55, art. 6, 123; En vigueur : 01-06-2024>
+(2)<L 2023-03-19/09, art. 11, 131; En vigueur : 10-04-2026>
+
+Art. 74/3. <L 14-07-1987, art. 17> § 1. Si le transporteur visé à l'article 74.2 n'a pas de siège social, de domicile ou de résidence fixe en Belgique, il doit consigner entre les mains des fonctionnaires ou agents compétents, une somme destinée à couvrir l'amende de les frais de justice éventuels.
+Le montant de la somme à consigner et les modalités de sa perception sont fixés par le Roi.
+§ 2. Le moyen de transport par lequel l'infraction a été perpétrée, est retenu aux frais et risques du transporteur, jusqu'à remise de cette somme et justification du paiement des frais éventuels de conservation ou, à défaut, pendant nonante-six heures à compter de la constatation.
+§ 3. A l'expiration de ce délai, la saisie du moyen de transport peut être ordonnée par le ministère public.
+Un avis de saisie est envoyé au transporteur dans les deux jours ouvrables.
+Les risques et les frais de conservation du moyen de transport restent à charge de l'auteur de l'infraction pendant la durée de la saisie.
+La saisie est levée après justification du paiement de la somme à consigner et des frais éventuels de conservation.
+§ 4. Si l'exercice de l'action publique entraîne la condamnation du transporteur :
+1° la somme consignée est imputée sur les frais de justice dus à l'Etat et sur l'amende prononcée, l'excédent éventuel est restitué;
+2° lorsque le moyen de transport a été saisi, le jugement ordonne que l'Administration des domaines procède à la vente du moyen de transport à défaut du paiement de l'amende et des frais de justice dans un délai de quarante jours du prononcé du jugement; cette décision est exécutoire nonobstant tout recours.
+Le produit de la vente est imputé sur les frais de justice dus à l'Etat, sur l'amende prononcée ainsi que sur les frais éventuels de conservation du moyen de transport; l'excédent éventuel est restitué.
+§ 5. En cas d'acquittement, la somme consignée ou le moyen de transport saisi sont restitués; les frais éventuels de conservation du moyen de transport sont à charge de l'Etat.
+En cas de condamnation conditionnelle, la somme consignée est restituée après déduction des frais de justice; le moyen de transport saisi est restitué après paiement des frais de justice et justification du paiement des frais éventuels de conservation.
+§ 6. En cas d'application de l'article 216bis du Code d'instruction criminelle, la somme consignée est imputée sur la somme fixée par le ministère public et l'excédent est restitué.
+§ 7. La somme consignée ou le moyen de transport saisi sont restitués lorsque le ministère public compétent décide de ne pas poursuivre ou lorsque l'action publique est éteinte ou prescrite.
+§ 8. Les fonctionnaires et agents appartenant à une des catégories déterminées par le Roi et qui sont individuellement délégués à cette fin par le Procureur général près la Cour d'Appel sont chargés de l'application du présent article et des mesures prises pour son exécution.
+
+Art. 74/4.<L 2004-12-22/55, art. 3, 035; En vigueur : 18-01-2005> § 1er. Le transporteur public ou privé qui a amené dans le Royaume un [1 étranger]1 dépourvu des documents requis par l'article 2 ou se trouvant dans un des autres cas visés à l'article 3, doit le transporter ou le faire transporter sans délai dans le pays d'où il vient ou dans tout autre pays où il peut être admis.
+§ 2. Le transporteur public ou privé qui a amené un [1 étranger]1 dans le Royaume est également tenu de reconduire celui-ci lorsque :
+a) le transporteur, qui devait l'acheminer dans son pays de destination, refuse de l'embarquer, ou
+b) les autorités de l'Etat de destination lui refusent l'entrée et le renvoient dans le Royaume,
+et que l'accès au Royaume lui est refusé parce qu'il est dépourvu des documents requis par l'article 2 ou qu'il se trouve dans un des autres cas visés à l'article 3.
+§ 3. Lorsque [1 l'étranger]1 est dépourvu des documents requis par l'article 2 et qu'une reconduite immédiate n'est pas possible, le transporteur public ou privé est solidairement tenu avec [1 l'étranger]1 de payer les frais d'hébergement, de séjour et de soins de santé de celui-ci.
+Le Roi détermine les modalités du remboursement de ces frais.
+§ 4. S'il est constaté que le transporteur public ou privé manque clairement à son obligation de reconduire un [1 étranger]1 qui est dépourvu des documents requis par l'article 2 ou qui se trouve dans un des autres cas visés à l'article 3, en ne donnant pas suite à deux mises en demeure successives, envoyées par lettre recommandée à la poste, du Ministre ou de son délégué, lui demandant de mettre son obligation de reconduite à exécution, le Ministre ou son délégué peut, en tenant compte du principe de proportionnalité, organiser une reconduite sous la contrainte. Dans ce cas, le transporteur est tenu de payer les frais de la reconduite organisée par le Ministre ou son délégué, ainsi que les frais d'hébergement, de séjour et de soins de santé [1 de l'étranger]1.
+Le Roi détermine les modalités de la procédure relative à la reconduite organisée ainsi que les modalités du remboursement des frais.
+----------
+(1)<L 2024-05-16/55, art. 7, 123; En vigueur : 01-06-2024>
+
+Art. 74/4bis.<inséré par L 1995-03-08/35, art. 2, 011; En vigueur : 09-04-1995> § 1er. Le (Ministre) ou son délégué peut infliger une amende administrative de [1 5.000 EUR]1 au : <L 1996-07-15/33, art. 4, 012; En vigueur : 16-12-1996> <AR 2000-07-20/71, art. 2, 021; En vigueur : 01-01-2002>
+1° transporteur aérien public ou privé, pour tout [2 étranger]2 qu'il transporte à destination de la Belgique, qui ne possède pas les documents prévus par l'article 2 ;
+2° transporteur maritime public ou privé, pour tout [2 étranger]2 qu'il transporte à destination de la Belgique, qui ne possède pas les documents prévus par l'article 2 ;
+3° transporteur, public ou privé, de personnes assurant des liaisons routières internationales par autobus, autocar ou minibus - à l'exception du trafic frontalier - pour tout [2 étranger]2 qu'il transporte à destination de la Belgique, qui ne possède pas les documents prévus par l'article 2 ;
+4° transporteur aérien public ou privé, pour tout [2 étranger]2 qu'il amène en Belgique à l'occasion d'un voyage vers un pays tiers, qui n'est pas porteur des documents requis (pour transiter en Belgique par la zone aéroportuaire ou pour entrer dans ce pays tiers); <L 1996-07-15/33, art. 56, 012; En vigueur : 16-12-1996>
+5° transporteur maritime public ou privé, pour tout [2 étranger]2 qu'il amène en Belgique à l'occasion d'un voyage vers un pays tiers, qui n'est pas porteur des documents requis pour entrer dans ce pays tiers ;
+6° transporteur, public ou prive, de personnes assurant des liaisons routières internationales par autobus, autocar ou minibus - à l'exception du trafic frontalier - pour tout [2 étranger]2 qu'il transporte à destination de la Belgique à l'occasion d'un voyage vers un pays tiers, qui n'est pas porteur des documents requis (pour transiter en Belgique ou pour entrer dans ce pays tiers). <L 1996-07-15/33, art. 56, 012; En vigueur : 16-12-1996>
+[3 Les amendes visées à l'alinéa 1er ne sont pas infligées dans le cas visé à l'article 13bis, paragraphe 1er, du règlement (UE) 2017/2226, dans la mesure où l'infraction à l'alinéa 1er ne peut être établie que via l'EES.]3
+L'amende administrative peut être réduite conformément à un protocole d'accord préalablement conclu entre le transporteur et le ministre qui a l'accès au territoire, le séjour, l'établissement et l'éloignement des étrangers dans ses attributions, ou son délégué.
+Le (Ministre) ou son délégué, fixe le montant de l'amende administrative dans le procès-verbal par lequel l'infraction est constatée. <L 1996-07-15/33, art. 4, 012; En vigueur : 16-12-1996>
+La décision par laquelle une amende administrative est infligée est immédiatement exécutoire, nonobstant tout recours.
+La personne morale est civilement responsable du paiement de l'amende administrative infligée à ses administrateurs, ses membres du personnel dirigeant et exécutif, ses préposés ou mandataires.
+§ 2. (Le montant de l'amende administrative est remboursé lorsque le Commissaire général aux réfugiés et aux apatrides ou le Conseil du Contentieux des étrangers reconnaît la qualité de réfugié ou octroie le statut de protection subsidiaire à l'étranger qui n'est pas en possession des documents requis à l'article 2 et qui a introduit une demande d'asile à la frontière.
+Le montant de l'amende administrative est également remboursé si l'intéressé jouit de la protection temporaire conformément aux dispositions du chapitre IIbis.) <L 2006-09-15/72, art. 72, 041; En vigueur : 01-06-2007>
+§ 3. Si le transporteur ou son représentant reste en défaut de payer ou de consigner immédiatement l'amende administrative, le (Ministre), ou son délégué, peut décider la retenue du moyen de transport utilisé pour le transport ou d'un autre moyen de transport. appartenant au même transporteur. <L 1996-07-15/33, art. 4, 012; En vigueur : 16-12-1996>
+Les frais et risques entraînés par la retenue du moyen de transport sont à charge du transporteur.
+§ 4. Le moyen de transport reste retenu jusqu'au moment où :
+1° le transporteur ou son représentant paye l'amende administrative ;
+2° le transporteur ou son représentant consigne la somme de l'amende administrative à la Caisse des dépôts et consignations ;
+3° le tribunal de première instance décide que l'amende administrative n'est pas due ;
+4° le (Ministre), ou son délégué, donne l'autorisation de débloquer le moyen de transport de sorte qu'il puisse repartir. <L 1996-07-15/33, art. 4, 012; En vigueur : 16-12-1996>
+§ 5. Le transporteur qui conteste la décision du (Ministre), ou de son délégué, forme appel, à peine de déchéance, dans un délai d'un mois de la notification de la décision devant le tribunal de première instance par voie de requête. <L 1996-07-15/33, art. 4, 012; En vigueur : 16-12-1996>
+Si le tribunal de première instance déclare recevable et fondé le recours du transporteur, la somme payée ou consignée est restituée ou le moyen de transport retenu est débloqué de sorte qu'il puisse repartir.
+Le tribunal de première instance doit statuer dans le mois du dépôt de la requête visée au premier alinéa.
+Le texte du premier alinéa est reproduit dans la décision par laquelle une amende administrative est infligée.
+§ 6. Si le transporteur reste en défaut de payer l'amende, la décision du fonctionnaire compétent ou la décision coulée en force de chose jugée du tribunal de première instance est notifiée à l'administration de la Taxe sur la valeur ajoutée, de l'Enregistrement et des Domaines en vue du recouvrement du montant de l'amende administrative.
+§ 7. Si le transporteur ou son représentant a consigné la somme de l'amende administrative à la Caisse des dépôts et consignations et que celui-ci n'a pas introduit de recours auprès du tribunal de première instance dans le délai susmentionné, la somme consignée est dévolue à l'Etat.
+----------
+(1)<L 2014-03-19/24, art. 31, 076; En vigueur : 15-05-2014>
+(2)<L 2024-05-16/55, art. 8, 123; En vigueur : 01-06-2024>
+(3)<L 2023-03-19/09, art. 12, 131; En vigueur : 10-04-2026>
+
+TITRE IIIter. - <Inséré par L 1991-07-18/52, art. 15, 002; En vigueur : 01-10-1991> DISPOSITIONS PARTICULIERES RELATIVES A CERTAINS ETRANGERS (...) <L 1996-07-15/33, art. 57, 012; En vigueur : 16-12-1996>
+
+Art. 74/5.<Inséré par L 1991-07-18/52, art. 15, 002; En vigueur : 01-10-1991> § 1. Peut être maintenu dans un lieu déterminé, situé aux frontières, en attendant l'autorisation d'entrer dans le royaume ou son refoulement du territoire :
+1° l'étranger qui, en application des dispositions de la présente loi, peut être refoulé par les autorités chargées du contrôle aux frontières;
+2° [3 l'étranger qui tente d'entrer dans le Royaume sans remplir les conditions fixées aux articles 2 et 3, et qui présente une demande de protection internationale à la frontière.]3
+[4 ...]4.
+§ 2. [4 Le lieu de maintien en application du paragraphe 1er est réputé se situer à la frontière. L'étranger maintenu en application du paragraphe 1er n'est pas considéré comme autorisé à entrer dans le Royaume]4.
+[§ 3. [La durée du maintien dans un lieu déterminé situé aux frontières ne peut excéder deux mois. Le ministre ou son délégué peut toutefois prolonger le maintien de l'étranger visé au § 1er, par période de deux mois :
+1° si l'étranger fait l'objet d'une mesure de refoulement exécutoire, [...]; <L 2006-09-15/72, art. 73, 2°, a, 041; En vigueur : 01-06-2007>
+2° et si les démarches nécessaires en vue de l'éloignement de l'étranger ont été entreprises dans les sept jours ouvrables [...] de la mesure visée au 1°, qu'elles sont poursuivies avec toute la diligence requise et qu'il subsiste toujours une possibilité d'éloigner effectivement l'étranger dans un délai raisonnable.] <L 1998-03-09/61, art. 3, 1°, 014; En vigueur : 13-07-1998> <L 2006-09-15/72, art. 73, 2°, b, 041; En vigueur : 01-06-2007>
+Après une prolongation, la décision visée à l'alinéa précédent ne peut plus être prise que par le Ministre.
+La durée totale du maintien ne peut jamais excéder [cinq] mois.] <L 1996-07-15/33, art. 58, 012; En vigueur : 16-12-1996> <L 1999-04-29/70, art. 2, 017; En vigueur : 06-07-1999>
+[Dans les cas où la sauvegarde de l'ordre public ou la sécurité nationale l'exige, la détention de l'étranger peut être prolongée chaque fois d'un mois, après l'expiration du délai visé à l'alinéa précédent, sans toutefois que la durée totale du maintien puisse de ce fait dépasser huit mois.] <L 1999-04-29/70, art. 3, C, 017; En vigueur : 06-07-1999>
+[4 ...]4.
+[4 § 3/1. Par dérogation au paragraphe 3, la durée du maintien en application du paragraphe 1er, 2°, dans un lieu déterminé situé à la frontière ne peut dépasser le délai visé à l'article 51, paragraphe 2, du règlement (UE) 2024/1348, augmenté, le cas échéant, du délai visé à l'article 11, paragraphe 1, du règlement (UE) 2024/1359.]4
+[§ 4. Est autorisé à entrer dans le Royaume :
+1° [4 l'étranger visé au § 1er, 1°]4 qui, à l'expiration du délai de deux mois, ne fait l'objet [...] mesure exécutoire prévue au § 3, alinéa 1er, 1°; <L 2006-09-15/72, art. 73, 3°, a, 041; En vigueur : 01-06-2007>
+2° [4 l'étranger visé au § 1er, 1°]4 qui fait l'objet [...] d'une mesure exécutoire prévue au § 3, alinéa 1er, 1°, lorsque, à l'expiration du délai de deux mois, éventuellement prolongé, le ministre ou son délégué ne prend aucune décision de prolongation du délai; <L 2006-09-15/72, art. 73, 3°, b, 041; En vigueur : 01-06-2007>
+3° [4 l'étranger visé au § 1er, 1°]4 dont la durée totale du maintien atteint [respectivement] [cinq] [ou huit] mois.] <L 1998-03-09/61, art. 3, 2°, 014; En vigueur : 13-07-1998> <L 1999-04-29/70, art. 2, 017; En vigueur : 06-07-1999> <L 1999-04-29/70, art. 3, D, 017; En vigueur : 06-07-1999>
+[4° [3 L'étranger visé au § 1er, 2°, à l'égard duquel une décision d'examen ultérieur est prise en application de [4 l'article 57/11/10]4, ou]3 qui est reconnu réfugié ou auquel le statut de protection subsidiaire est accordé;] <L 2006-09-15/72, art. 73, 3°, c, 041; En vigueur : 01-06-2007>
+[3 5° [4 l'étranger visé au paragraphe 1er, 2°, à l'expiration du délai visé au paragraphe 3/1]4.]3
+[§ 5. [La mesure de refoulement prise à l'égard de l'étranger visé au § 4, [4 ...]4 est assimilée de plein droit à un ordre de quitter le territoire au sens de l'article 7, alinéa 1er.] <L 1998-03-09/61, art. 3, 3°, 014; En vigueur : 13-07-1998>
+[3 ...]3
+[Sauf disposition contraire de la loi, l'ordre de quitter le territoire [...] est assorti d'un délai pour quitter le territoire.]] <L 1996-07-15/33, art. 58, 012; En vigueur : 16-12-1996> <L 1998-03-09/61, art. 3, 3°, 014; En vigueur : 13-07-1998> <L 2006-09-15/72, art. 73, 5°, 041; En vigueur : 01-06-2007>
+§ 6. [3 ...]3
+[3 Lorsque l'étranger visé au § 1er quitte l'endroit où il est maintenu sans y avoir été autorisé]3, la décision de refus d'entrée sur le territoire est assimilée de plein droit à une décision de refus de séjour.] <L 2006-09-15/72, art. 73, 6°, 041; En vigueur : 01-06-2007>
+
+(NOTE : par son arrêt n° 23/2021 du 25-02-2021 (2021-02-25/20, M.B. 20-04-2021, p. 36679), la Cour constitutionnelle a annulé la modification apportée au § 4, 5° du présent article.)
+----------
+(1)<L 2009-05-06/03, art. 191, 050; En vigueur : 29-05-2009>
+(2)<L 2013-05-08/18, art. 20, 072; En vigueur : 01-09-2013>
+(3)<L 2017-11-21/17, art. 56, 100; En vigueur : 22-03-2018>
+(4)<L 2026-06-16/01, art. 91, 135; En vigueur : 12-06-2026>
+
+Art. 74/5/1. [1 § 1er. Le ministre ou son délégué est habilité à se prononcer sur le maintien pendant la procédure de retour à la frontière en application de l'article 5 du règlement (UE) 2024/1349.
+Sans préjudice de l'article 5, paragraphe 4, du règlement (UE) 2024/1349, le maintien ne dure que le temps de la procédure de retour à la frontière en application de l'article 4, paragraphe 2, du règlement (UE) 2024/1349.
+§ 2. Le lieu de maintien en application du paragraphe 1er est réputé se situer à la frontière.
+§ 3. Le délai pour le départ volontaire prévu à l'article 4, paragraphe 5, du règlement (UE) 2024/1349 est demandé auprès du ministre ou de son délégué. Le Roi peut en fixer les modalités.]1
+----------
+(1)<Inséré par L 2026-06-16/01, art. 92, 135; En vigueur : 12-06-2026>
+
+Art. 74/6.[1 § 1er. [3 Sans préjudice des garanties prévues à l'article 74/6/2,]3 le ministre ou son délégué peut maintenir dans un lieu déterminé dans le Royaume le demandeur de protection internationale :
+1° pour établir ou vérifier l'identité ou la nationalité du demandeur; ou
+2° pour déterminer les éléments sur lesquels se fonde la demande de protection internationale qui ne pourraient être obtenus si le demandeur n'était pas maintenu, en particulier lorsqu'il y a risque de fuite du demandeur; ou
+3° lorsque le demandeur est maintenu dans le cadre d'une procédure de retour, pour préparer le retour et/ou procéder à l'éloignement, et lorsqu'il peut être démontré, sur la base de critères objectifs, tels que le fait que le demandeur a déjà eu la possibilité d'accéder à la procédure d'asile, qu'il existe des motifs raisonnables de penser que l'intéressé a introduit la demande de protection internationale à seule fin de retarder ou d'empêcher l'exécution de la décision de retour; ou
+4° lorsque la protection de la sécurité nationale ou de l'ordre public l'exige;
+[3 5° dans les cas où le demandeur n'a pas respecté l'obligation de résider dans un lieu déterminé en vue de restreindre sa liberté de circulation en application de l'article 74/27/1, et que le risque de fuite subsiste]3.
+[3 ...]3.
+L'étranger ne peut être maintenu que pour une durée la plus brève possible et tant que les motifs de maintien visés à l'alinéa 1er, sont applicables.
+La durée du maintien ne peut excéder deux mois.
+Lorsque la protection de la sécurité nationale ou de l'ordre public l'exige, le ministre ou son délégué peut prolonger le maintien visé à l'alinéa 1er, 4°, pour une période de deux mois.
+Après une prolongation, la décision visée à l'alinéa précédent peut être prise uniquement par le ministre et le maintien de l'étranger, après l'expiration du délai, peut être prolongé chaque fois d'un mois seulement sans que la durée totale du maintien ne puisse toutefois dépasser six mois.
+La durée du maintien est suspendue d'office pendant le délai utilisé pour introduire un recours auprès du Conseil du contentieux des étrangers, tel que visé à l'article 39/57. Si, conformément à l'article 39/76, § 1er, un délai est accordé au Commissaire général aux réfugiés et aux apatrides ou à la partie requérante ou intervenante afin d'examiner les nouveaux éléments apportés par une des parties ou afin de communiquer ses remarques, la durée du maintien est également suspendue d'office pendant ces délais.
+[2 ...]2.
+[2 ...]2.
+§ 2. Une fois que l'étranger visé à l'article 52/3, § 1er, fait l'objet d'une mesure d'éloignement exécutoire, les dispositions de l'article 7, alinéas 2 à [2 7]2, et le titre IIIquater s'appliquent.]1
+----------
+(1)<L 2017-11-21/17, art. 57, 100; En vigueur : 22-03-2018>
+(2)<L 2024-05-12/29, art. 16, 124; En vigueur : 20-07-2024>
+(3)<L 2026-06-16/01, art. 93, 135; En vigueur : 12-06-2026>
+
+Art. 74/6/1. [1 § 1er. Sans préjudice des garanties prévues à l'article 74/6/2, lorsque, sur la base d'un examen individuel, il existe un risque de fuite de la personne ou lorsque la protection de la sécurité nationale ou de l'ordre public l'exige, le ministre ou son délégué peut maintenir un étranger pour la durée nécessaire à la détermination de l'Etat membre responsable de l'examen de la demande de protection internationale, sans que la durée du maintien ne puisse excéder cinq semaines.
+Lorsque l'étranger est maintenu sur la base de l'alinéa 1er, les délais fixés à l'article 41, paragraphe 1er, et à l'article 42, paragraphe 1er, du règlement (UE) 2024/1351 doivent être respectés. Si le ministre ou son délégué ne respecte pas ces délais, l'étranger ne peut être maintenu plus longtemps sur cette base
+§ 2. Sans préjudice des garanties prévues à l'article 74/6/2, lorsque, sur la base d'un examen individuel, il existe un risque de fuite de la personne ou lorsque la protection de la sécurité nationale ou de l'ordre public l'exige, le ministre ou son délégué peut maintenir un étranger pour la durée nécessaire à la mise en oeuvre du transfert vers l'Etat membre responsable de l'examen de la demande de protection internationale, sans que la durée de ce maintien ne puisse excéder cinq semaines.
+Lorsque le transfert n'est pas exécuté dans le délai de cinq semaines visé à l'alinéa 1er, l'étranger ne peut être maintenu plus longtemps sur cette base. Il n'est pas tenu compte de la durée du maintien visé au paragraphe 1er.
+Le délai du maintien visé à l'alinéa 1er est interrompu d'office tant que le recours introduit contre la décision de transfert visée à l'article 51/5/2 a un effet suspensif.
+§ 3. Le maintien visé aux paragraphes 1er et 2 est d'une durée aussi brève que possible et ne se prolonge pas au-delà du délai raisonnablement nécessaire pour accomplir les procédures administratives requises avec toute la diligence voulue jusqu'à l'exécution du transfert.]1
+----------
+(1)<Inséré par L 2026-06-16/01, art. 94, 135; En vigueur : 12-06-2026>
+
+Art. 74/6/2. [1 § 1er. Un demandeur ne peut être maintenu que si aucune autre mesure suffisante, mais moins coercitive, ne peut être appliquée efficacement.
+La décision indique les motifs de fait et de droit qui fondent le maintien ainsi que les raisons pour lesquelles des mesures moins coercitives ne peuvent être efficacement appliquées.
+Aucun demandeur ne peut être maintenu au seul motif qu'il a présenté une demande de protection internationale ou qu'il est soumis à la procédure de détermination de l'Etat membre responsable du traitement de la demande de protection internationale en application du règlement (UE) 2024/1351.
+Le demandeur est maintenu pour une durée proportionnée et strictement nécessaire à la réalisation de l'objectif du maintien.
+Si le maintien du demandeur ayant des besoins particuliers en matière d'accueil risque de mettre gravement en danger sa santé physique et mentale, il n'est pas maintenu.
+§ 2. Les garanties prévues dans le paragraphe 1er sont applicables à l'étranger maintenu sur la base des articles 74/5, § 1er, 2°, 74/6 et 74/6/1.]1
+----------
+(1)<Inséré par L 2026-06-16/01, art. 95, 135; En vigueur : 12-06-2026>
+
+Art. 74/7. <L 1996-07-15/33, art. 60, En vigueur : 16-12-1996> Les services de police peuvent saisir un étranger qui n'est pas porteur des pièces d'identité ou des documents prévus par la loi et le soumettre à une mesure d'arrestation administrative, dans l'attente d'une décision du Ministre ou de son délégué. La durée de la privation de liberté ne peut dépasser vingt-quatre heures.
+
+Art. 74/8.<L 1996-07-15/33, art. 61, En vigueur : 16-12-1996> § 1er. Les dispositions nécessaires peuvent être prises afin d'assurer que l'intéressé ne quitte pas, sans l'autorisation requise, le lieu où il [1 est détenu, mis à la disposition du Gouvernement ou maintenu en application des articles 7, 8bis , § 4, [4 ...]4 27, 29, alinéa 2, [4 44septies, § 1er,]4 [8 ...]8 [6 51/5/1, § 1er, alinéa 2, ou § 2, alinéa 3,]6 57/32, § 2, alinéa 2, 74/5 [8 , 74/5/1, 74/6 ou 74/6/1, § 1er, alinéa 1er, et § 2, alinéa 1er]8]1.
+[2 Si un prévenu ou un condamné est un étranger en séjour irrégulier, le ministre compétent pour l'accès au territoire, le séjour, l'établissement et l'éloignement d'étrangers ou son délégué est informé par le directeur de l'établissement pénitentiaire de son enfermement dans l'établissement pénitentiaire et ce, dès le début de sa détention. Dès réception de ces informations, le ministre ou son délégué procède à l'identification par les autorités nationales de son pays d'origine. Le ministre ou son délégué est habilité à demander à toute autorité belge de produire tous les documents et renseignements utiles à l'établissement de l'identification. Dès que la procédure d'identification est clôturée, le ministre ou son délégué transmet immédiatement un document au directeur de l'établissement pénitentiaire qui atteste que l'intéressé a été identifié, conformément à l'article 1er, 14°.
+Les étrangers qui sont détenus dans un établissement pénitentiaire et qui font l'objet d'une décision d'éloignement exécutoire sont, après avoir satisfait aux peines imposées par les cours et tribunaux, immédiatement éloignés ou transférés vers un lieu relevant de la compétence du ministre en vue de leur éloignement effectif.
+Par dérogation à l'article 609 du Code d'instruction criminelle, et seulement si le ministre compétent pour l'accès au territoire, le séjour, l'établissement et l'éloignement d'étrangers démontre être dans l'incapacité de procéder immédiatement à l'éloignement ou au transfert, celui qui fait l'objet d'une levée d'un mandat d'arrêt peut, conformément à une décision d'une autorité compétente et pour autant qu'il fasse l'objet soit d'un arrêté royal d'expulsion exécutoire, soit d'un arrêté ministériel de renvoi exécutoire, soit d'un ordre de quitter le territoire exécutoire avec preuve d'éloignement effectif, être maintenu en détention pour un maximum de sept jours en vue de son éloignement effectif, ou à défaut de cela, de son transfert vers un lieu qui relève de la compétence du ministre en vue de son éloignement effectif.
+Cet étranger est isolé des détenus de droit commun.]2
+§ 2. [7 Le Roi fixe le régime et les règles de fonctionnement applicables au centre fermé où l'étranger peut être maintenu, en application des dispositions visées au § 1er, alinéa 1er.
+Le Roi fixe, par un arrêté délibéré en Conseil des ministres, le régime et les règles de fonctionnement applicables au lieu d'hébergement où la famille avec enfants mineurs peut être maintenu, en application des dispositions visées au § 1er, alinéa 1er.]7
+§ 3. Le Roi peut fixer le régime et les règles relatives au transfèrement de l'étranger visé au § 1er.
+§ 4. Les étrangers détenus, mis à la disposition du Gouvernement ou maintenus dans les lieux visés au § 1er, peuvent être autorisés à fournir des prestations de travail contre rémunération dans ces lieux.
+Le Roi fixe par arrêté délibéré en Conseil des ministres les conditions auxquelles ces prestations sont exécutées et auxquelles il peut être dérogé à cet égard à la loi du 12 avril 1965 concernant la protection de la rémunération des travailleurs, à la loi du 3 juillet 1978 relative aux contrats de travail [ainsi qu'à la loi du 30 avril 1999 relative à l'occupation de travailleurs étrangers]. <L 2006-09-15/72, art. 75, 2°, 041; En vigueur : 01-06-2007>
+[§ 5. L'étranger visé au § 1er peut être soumis à une fouille de sécurité afin de s'assurer qu'il ne porte pas une arme ou un objet dangereux pour sa propre intégrité physique ou celle de tiers, ou pour l'ordre public, dans chacun des cas suivants :
+1° lors de son arrivée dans un lieu visé au § 1er;
+2° après qu'il ait reçu une visite;
+3° préalablement à son transfèrement;
+[3 4° à d'autres moments au cours du séjour de l'occupant lorsque cela apparaît nécessaire au maintien de l'ordre ou de la sécurité.]3
+[3 Les pièces où un occupant séjourne ainsi que les endroits où ses affaires personnelles sont rangées peuvent faire l'objet de fouille lorsque c'est nécessaire au maintien de l'ordre ou de la sécurité.]3
+Lors de son arrivée dans un lieu visé au § 1er, la personne rendant visite à un étranger visé au § 1er peut également être soumis à cette fouille de sécurité.
+La fouille de sécurité s'effectue par la palpation du corps et des vêtements de la personne fouillée ainsi que par le contrôle de ses bagages. Elle ne peut durer plus longtemps que le temps nécessaire à cette fin. Elle est effectuée par un délégué du ministre du même sexe que la personne fouillée.
+[3 Lorsque cela est nécessaire dans l'intérêt de la sécurité, l'occupant peut subir une fouille de ses vêtements par les membres du personnel de sécurité désignés à cet effet par le directeur du centre, conformément aux notes de service données par celui-ci.
+Cette fouille a pour objectif de vérifier si l'occupant est en possession de substances ou d'objets interdits ou dangereux.
+La fouille ne peut avoir un caractère vexatoire et se déroule dans le respect de la dignité de l'occupant.
+En cas de découverte de substances ou d'objets interdits, ceux-ci sont tenus à la disposition des autorités compétentes en vue d'établir des faits punissables.]3
+§ 6. Le délégué du ministre peut utiliser la contrainte à l'égard de l'étranger visé au § 1er, et dans le cadre de son transfèrement visé au § 3.
+Ce recours à la contrainte est soumis aux conditions fixées à l'article 37 de la loi du 5 août 1992 sur la fonction de police.
+Le Roi détermine les règles relatives à la formation dans le cadre du recours à la contrainte par le délégué du ministre.] <L 2007-04-25/49, art. 44, 046; En vigueur : 01-06-2008>
+----------
+(1)<L 2009-05-06/03, art. 192, 050; En vigueur : 29-05-2009>
+(2)<L 2012-01-19/12, art. 15, 063; En vigueur : 27-02-2012>
+(3)<L 2016-05-04/29, art. 33, 089; En vigueur : 07-07-2016>
+(4)<L 2017-02-24/21, art. 49, 094; En vigueur : 29-04-2017>
+(5)<L 2017-11-21/17, art. 58, 100; En vigueur : 22-03-2018>
+(6)<L 2019-05-08/12, art. 23, 106; En vigueur : 19-07-2019>
+(7)<L 2024-05-12/29, art. 17, 124; En vigueur : 20-07-2024>
+(8)<L 2026-06-16/01, art. 96, 135; En vigueur : 12-06-2026>
+
+Art. 74/9.[1 § 1er. [2 La famille, dont au moins un des membres est un mineur d'âge, qui a pénétré dans le Royaume sans satisfaire aux conditions fixées aux articles 2 ou 3, ou dont le séjour a cessé d'être régulier ou est irrégulier, ne peut être maintenue dans un centre fermé.
+La famille visée à l'alinéa 1er ne peut être maintenue que dans un lieu d'hébergement pour une durée aussi courte que possible.]2.
+§ 2. [2 La famille, dont au moins un des membres est un mineur d'âge, qui tente de pénétrer dans le Royaume sans satisfaire aux conditions fixées aux articles 2 ou 3, ne peut être maintenue dans un centre fermé.
+La famille visée à l'alinéa 1er ne peut être maintenue que dans un lieu d'hébergement, assimilé à un lieu déterminé situé aux frontières, pour une durée aussi courte que possible.]2.
+§ 3. La famille visée au § 1er a la possibilité de résider, sous certaines conditions, dans une habitation personnelle, à moins qu'un des membres de la famille se trouve dans l'un des cas prévus à l'article 3, alinéa 1er, 5° à 7°. Si la famille est dans l'impossibilité de résider dans une habitation personnelle, elle se verra attribuer, dans les mêmes conditions, un lieu de résidence [2 dans un lieu d'hébergement]2.
+Les conditions auxquelles la famille doit satisfaire sont formulées dans une convention conclue entre la famille et l'Office des étrangers.
+Le Roi détermine le contenu de cette convention, ainsi que les sanctions applicables en cas de non-respect de la convention.
+[2 La famille ne peut être maintenue dans un lieu d'hébergement pour une durée aussi courte que possible, que si elle ne respecte pas les conditions visées à l'alinéa 2, à moins que d'autres mesures de maintien suffisantes mais moins coercitives puissent être appliquées efficacement.]2
+§ 4. La famille visée aux §§ 1er à 3 se voit attribuer un agent de soutien qui l'accompagne, l'informe et la conseille.]1
+----------
+(1)<Inséré par L 2011-11-16/08, art. 2, 062; En vigueur : 27-02-2012>
+(2)<L 2024-05-12/29, art. 18, 124; En vigueur : 20-07-2024>
+
+TITRE IIIquater. [1 - Dispositions applicables au retour des ressortissants d'un pays tiers en séjour illégal sur le territoire.]1
+----------
+(1)<Inséré par L 2012-01-19/12, art. 16, 063; En vigueur : 27-02-2012>
+
+Art. 74/10.[1 A l'exclusion des dispositions visées à l'article 74/17, § 1er, les dispositions du présent Titre ne s'appliquent pas au ressortissant d'un pays tiers faisant l'objet d'une décision de refus d'entrée conformément à [2 l'article 14 du Code frontières Schengen]2 [3 et qui n'a pas obtenu par la suite l'autorisation ou le droit de séjourner dans un Etat membre]3 et qui n'a pas obtenu par la suite l'autorisation ou le droit de séjourner dans ledit Etat membre.]1
+----------
+(1)<Inséré par L 2012-01-19/12, art. 17, 063; En vigueur : 27-02-2012>
+(2)<L 2017-02-24/21, art. 50, 094; En vigueur : 29-04-2017>
+(3)<L 2026-06-16/01, art. 97, 135; En vigueur : 12-06-2026>
+
+Art. 74/11.[1 § 1er. La durée de l'interdiction d'entrée est fixée en tenant compte de toutes les circonstances propres à chaque cas [4 , y compris, le cas échéant, le manque de coopération conformément aux articles 74/22 et 74/23]4.
+La décision d'éloignement est assortie d'une interdiction d'entrée de maximum trois ans, dans les cas suivants :
+1° lorsqu'aucun délai n'est accordé pour le départ volontaire ou;
+2° lorsqu'une décision d'éloignement antérieure n'a pas été exécutée.
+[2 Le délai maximum de trois ans prévu à l'alinéa 2 est porté à un maximum de cinq ans lorsque :
+1° le ressortissant d'un pays tiers a recouru à la fraude ou à d'autres moyens illégaux afin d'être admis au séjour ou de maintenir son droit de séjour;
+2° le ressortissant d'un pays tiers a conclu un mariage, un partenariat ou une adoption uniquement en vue d'être admis au séjour ou de maintenir son droit de séjour dans le Royaume.]2
+La décision d'éloignement peut être assortie d'une interdiction d'entrée [5 pour une durée déterminée]5 de plus de cinq ans lorsque le ressortissant d'un pays tiers constitue une menace grave pour l'ordre public ou la sécurité nationale.
+[5 La décision d'éloignement peut être assortie d'une interdiction d'entrée à vie si le ressortissant d'un pays tiers est une des entités validées enregistrées dans la banque de données commune T.E.R., telles que visées dans la loi du 29 mars 2024 portant création de la banque de données commune "Terrorisme, Extrémisme, processus de Radicalisation" ("T.E.R.") et modifiant la loi du 30 juillet 2018 relative à la protection des personnes physiques à l'égard des traitements de données à caractère personnel, la loi du 30 juillet 2018 portant création de cellules de sécurité intégrale locales en matière de radicalisme, d'extrémisme et de terrorisme et la loi du 5 août 1992 sur la fonction de police.]5
+§ 2. Le ministre ou son délégué s'abstient de délivrer une interdiction d'entrée lorsqu'il met fin au séjour du ressortissant d'un pays tiers conformément à l'article 61/3, § 3, ou 61/4, § 2, sans préjudice du § 1er, alinéa 2, 2°, à condition qu'il ne représente pas [3 une menace]3 pour l'ordre public ou la sécurité nationale.
+Le ministre ou son délégué peut s'abstenir d'imposer une interdiction d'entrée, dans des cas particuliers, pour des raisons humanitaires.
+§ 3. L'interdiction d'entrée entre en vigueur le jour de la notification de l'interdiction d'entrée.
+L'interdiction d'entrée ne peut contrevenir au droit à la protection internationale, [6 ou la demande d'autorisation de séjour visée à l'article 9ter]6.]1
+----------
+(1)<Inséré par L 2012-01-19/12, art. 18, 063; En vigueur : 27-02-2012>
+(2)<L 2013-06-02/08, art. 20, 073; En vigueur : 03-10-2013>
+(3)<L 2017-02-24/21, art. 51, 094; En vigueur : 29-04-2017>
+(4)<L 2024-05-12/29, art. 19, 124; En vigueur : 20-07-2024>
+(5)<L 2026-04-30/10, art. 5, 133; En vigueur : 23-05-2026>
+(6)<L 2026-06-16/01, art. 98, 135; En vigueur : 12-06-2026>
+
+Art. 74/12.[1 § 1er. Le ministre ou son délégué peut lever ou suspendre l'interdiction d'entrée pour des raisons humanitaires.
+Lorsque deux tiers de la durée de l'interdiction d'entrée sont expirés,[2 et en tout cas après vingt ans]2 le ressortissant d'un pays tiers peut demander la suspension ou la levée de l'interdiction d'entrée pour des motifs professionnels ou d'études.
+Sauf dérogations prévues par un traité international, par une loi ou par un arrêté royal, le ressortissant d'un pays tiers introduit une demande motivée auprès du poste diplomatique ou consulaire de carrière belge compétent pour le lieu de sa résidence ou de son séjour à l'étranger.
+§ 2. Le ressortissant d'un pays tiers peut introduire auprès du ministre ou son délégué, une demande de levée ou de suspension de l'interdiction d'entrée motivée par le respect de l'obligation d'éloignement délivrée antérieurement s'il transmet par écrit la preuve qu'il a quitté le territoire belge en totale conformité avec la décision d'éloignement.
+§ 3. Une décision concernant la demande de levée ou de suspension de l'interdiction d'entrée est prise au plus tard dans les quatre mois suivant l'introduction de celle-ci. Si aucune décision n'est prise endéans les quatre mois, la décision est réputée négative.
+§ 4. Durant l'examen de la demande de levée ou de suspension, le ressortissant d'un pays tiers concerné n'a aucun droit d'accès ou de séjour dans le Royaume.
+§ 5. Le ministre peut, par arrêté, définir les catégories de personnes dont les interdictions d'entrée doivent être levées ou suspendues lors de catastrophes humanitaires.
+§ 6. Lorsqu'un ressortissant d'un pays tiers fait l'objet d'une interdiction d'entrée délivrée par un autre Etat membre et que le ministre ou son délégué envisage de lui délivrer un titre de séjour ou une autre autorisation conférant un droit de séjour, il consulte au préalable cet Etat membre afin de tenir compte des intérêts de celui-ci.]1
+----------
+(1)<Inséré par L 2012-01-19/12, art. 19, 063; En vigueur : 27-02-2012>
+(2)<L 2026-04-30/10, art. 6, 133; En vigueur : 23-05-2026>
+
+Art. 74/13. [1 Lors de la prise d'une décision d'éloignement, le ministre ou son délégué tient compte de l'intérêt supérieur de l'enfant, de la vie familiale, et de l'état de santé du ressortissant d'un pays tiers concerné.]1
+----------
+(1)<Inséré par L 2012-01-19/12, art. 20, 063; En vigueur : 27-02-2012>
+
+Art. 74/14.[1 § 1er. La décision d'éloignement prévoit un délai de trente jours pour quitter le territoire.
+Le ressortissant d'un pays tiers qui, conformément à l'article 6, n'est pas autorisé à séjourner plus de trois mois dans le Royaume, bénéficie d'un délai de sept à trente jours.
+Sur demande motivée introduite par le ressortissant d'un pays tiers auprès du ministre ou de son délégué, le délai octroyé pour quitter le territoire, mentionné à l'alinéa 1er, est prolongé, sur production de la preuve que le retour volontaire ne peut se réaliser endéans le délai imparti.
+Si nécessaire, ce délai peut être prolongé, sur demande motivée introduite par le ressortissant d'un pays tiers auprès du ministre ou de son délégué, afin de tenir compte des circonstances propres à sa situation, comme la durée de séjour, l'existence d'enfants scolarisés, la finalisation de l'organisation du départ volontaire et d'autres liens familiaux et sociaux.
+Le ministre ou son délégué informe par écrit le ressortissant d'un pays tiers que le délai de départ volontaire a été prolongé.
+§ 2. Aussi longtemps que le délai pour le départ volontaire court, le ressortissant d'un pays tiers est protégé contre un éloignement forcé.
+Pour éviter le risque de fuite pendant ce délai, [4 le ministre ou son délégué peut contraindre le ressortissant d'un pays tiers]4 à remplir des mesures préventives.
+[4 ...]4.
+§ 3. Il peut être dérogé au délai prévu au § 1er, quand :
+1° il existe un risque de fuite, ou;
+2° le ressortissant d'un pays tiers n'a pas respecté la mesure préventive imposée, ou;
+3° le ressortissant d'un pays tiers constitue [2 une menace pour l'ordre public ou la sécurité nationale]2, ou;
+4° [3 ...]3
+5° [3 il a été mis fin au séjour du ressortissant d'un pays tiers ou retiré en application des articles 11, § 2, 4°, 13, § 4, 5°, 74/20 ou 74/21, ou;]3
+6° [5 la demande de protection internationale d'un ressortissant de pays tiers a été déclarée irrecevable sur la base de l'article 57/6, § 3, alinéa 1er, 5°, ou de l'article 38, paragraphe 2, du règlement (UE) 2024/1348 ou a été considérée comme manifestement infondée sur la base de l'article 57/6/1, § 2, ou l'article 57/11/8]5.
+Dans ce cas, la décision d'éloignement prévoit soit un délai inférieur à sept jours, soit aucun délai.]1
+----------
+(1)<Inséré par L 2012-01-19/12, art. 21, 063; En vigueur : 27-02-2012>
+(2)<L 2017-02-24/21, art. 52, 094; En vigueur : 29-04-2017>
+(3)<L 2017-11-21/17, art. 59, 100; En vigueur : 22-03-2018>
+(4)<L 2024-05-12/29, art. 20, 124; En vigueur : 20-07-2024>
+(5)<L 2026-06-16/01, art. 99, 135; En vigueur : 12-06-2026>
+
+Art. 74/15.[1 § 1er. Le ministre ou son délégué prend toutes les mesures nécessaires pour exécuter la décision d'éloignement :
+1° lorsqu'aucun délai n'a été accordé pour quitter le territoire, conformément à l'article 74/14, § 3;
+2° après expiration du délai octroyé pour quitter le territoire et avant l'échéance si, pendant ce délai, un des risques mentionnés à l'article 74/14, § 3, 1° à 3°, se produit.
+§ 2. [2 ...]2
+§ 3. [2 ...]2]1
+----------
+(1)<Inséré par L 2012-01-19/12, art. 22, 063; En vigueur : 27-02-2012>
+(2)<L 2024-05-12/29, art. 21, 124; En vigueur : 20-07-2024>
+
+Art. 74/16. [1 § 1er. Avant de prendre une décision d'éloignement à l'égard d'un mineur étranger non accompagné en séjour irrégulier sur le territoire, le ministre ou son délégué prend en considération toute proposition de solution durable émanant de son tuteur et tient compte de l'intérêt supérieur de l'enfant.
+§ 2. Le ministre ou son délégué s'assure que ce mineur, qui est éloigné du territoire, puisse bénéficier dans son pays d'origine ou dans le pays où il est autorisé ou admis à séjourner de garanties d'accueil et de prise en charge en fonction des besoins déterminés par son âge et son degré d'autonomie, soit par ses parents ou par un autre membre de sa famille ou par son tuteur qui s'occupe de lui, soit par des instances gouvernementales ou non gouvernementales.
+A cet effet, le ministre ou son délégué s'assure que les conditions suivantes sont remplies :
+1° qu'il n'existe pas de risque de trafic des êtres humains ou de traite des êtres humains et;
+2° que la situation familiale est de nature à permettre d'accueillir à nouveau le mineur et qu'un retour chez un parent ou un membre de la famille est souhaitable et opportun en fonction de la capacité de la famille à assister, à éduquer et à protéger l'enfant ou;
+3° que la structure d'accueil est adaptée et qu'il est dans l'intérêt supérieur de l'enfant de le placer dans cette structure d'accueil lors de son retour dans son pays d'origine ou dans le pays où il est autorisé à séjourner.
+Le mineur étranger non accompagné et son tuteur en Belgique sont informés du nom de la personne ou de la structure d'accueil à qui l'enfant est confié ainsi que du rôle de cette personne par rapport au mineur.]1
+----------
+(1)<Inséré par L 2012-01-19/12, art. 23, 063; En vigueur : 27-02-2012>
+
+Art. 74/17.[1 § 1er. L'éloignement est reporté temporairement si la décision de reconduite ou d'éloignement aux frontières du territoire expose le ressortissant du pays tiers à une violation du principe de non-refoulement.
+[2 Au cas où le Commissaire général aux réfugiés et aux apatrides rend un avis en application de l'article 57/6, alinéa 1er, 9° à 14° [4 ...]4, l'éloignement ne peut avoir lieu que moyennant une décision motivée et circonstanciée du ministre ou de son délégué démontrant que l'avis du Commissaire général aux réfugiés et aux apatrides n'est plus actuel.]2
+§ 2. L'éloignement peut être reporté temporairement en tenant compte des circonstances propres à chaque cas. Il est ainsi tenu compte :
+1° de l'état physique ou mental du ressortissant d'un pays tiers;
+2° des motifs d'ordre technique, comme l'absence de moyens de transport ou l'échec de l'éloignement en raison de l'absence d'identification.
+Le ministre ou son délégué informe par écrit le ressortissant d'un pays tiers que l'exécution de la décision d'éloignement est reportée temporairement.
+Pour éviter le risque de fuite, [3 le ministre ou son délégué peut contraindre le ressortissant d'un pays tiers à remplir des mesures préventives]3.
+[3 ...]3.
+Le ministre ou son délégué informe oralement le ressortissant d'un pays tiers qui est maintenu en vue de son éloignement, que l'exécution de la décision d'éloignement est reportée temporairement.]1
+----------
+(1)<Inséré par L 2012-01-19/12, art. 24, 063; En vigueur : 27-02-2012>
+(2)<L 2015-08-10/11, art. 14, 082; En vigueur : 03-09-2015>
+(3)<L 2024-05-12/29, art. 22, 124; En vigueur : 20-07-2024>
+(4)<L 2026-06-16/01, art. 100, 135; En vigueur : 12-06-2026>
+
+Art. 74/18. [1 Une traduction écrite ou orale des principaux éléments de la décision d'éloignement, assortie le cas échéant d'une interdiction d'entrée, y compris des informations concernant les voies de recours dans une langue que le ressortissant d'un pays tiers comprend, ou dont il est raisonnable de supposer qu'il la comprend, peut être obtenue sur demande de l'étranger auprès du ministre ou de son délégué. Ceci est mentionné explicitement dans la décision.]1
+----------
+(1)<Inséré par L 2012-01-19/12, art. 25, 063; En vigueur : 27-02-2012>
+
+Art. 74/19. [1 Les mineurs étrangers non accompagnés ne peuvent pas être maintenus dans des lieux au sens de l'article 74/8, § 2.]1
+----------
+(1)<Inséré par L 2012-01-19/12, art. 26, 063; En vigueur : 27-02-2012>
+
+TITRE IIIquinquies. [1 - FRAUDE.]1
+----------
+(1)<Inséré par L 2016-05-04/29, art. 34, 089; En vigueur : 07-07-2016>
+
+Art. 74/20. [1 § 1er. Sauf dispositions particulières prévues par la loi, le ministre ou son délégué peut refuser l'autorisation ou l'admission au séjour demandée en application de la présente loi lorsque, pour l'obtenir ou se le voir reconnaître, le demandeur a utilisé des informations fausses ou trompeuses ou des documents faux ou falsifiés, ou lorsque celui-ci a recouru à la fraude ou a employé d'autres moyens illégaux qui contribuent à l'obtention du séjour.
+Lorsque le ministre ou son délégué envisage de prendre une telle décision, il tient compte de la nature et de la solidité des liens familiaux de l'intéressé, de la durée de son séjour dans le Royaume ainsi que de l'existence d'attaches familiales, culturelles ou sociales avec son pays d'origine.
+§ 2. Sauf dispositions particulières prévues par la loi, le ministre ou son délégué peut retirer l'autorisation ou l'admission au séjour octroyée ou reconnue en application de la présente loi lorsque, pour l'obtenir ou se la voir reconnaître, le demandeur a utilisé des informations fausses ou trompeuses ou des documents faux ou falsifiés, ou lorsque celui-ci a recouru à la fraude ou a employé d'autres moyens illégaux qui contribuent à l'obtention du séjour.
+Lorsque le ministre ou son délégué envisage de prendre une telle décision, il tient compte de la nature et de la solidité des liens familiaux de l'intéressé, de la durée de son séjour dans le Royaume ainsi que de l'existence d'attaches familiales, culturelles ou sociales avec son pays d'origine.
+§ 3. Le ministre ou son délégué donne l'ordre de quitter le territoire à l'étranger dont le séjour est refusé ou retiré en cas d'application du paragraphe 1er ou du paragraphe 2.
+§ 4. Le ministre ou son délégué peut à tout moment procéder ou faire procéder à des contrôles spécifiques lorsqu'il existe des présomptions fondées de fraude ou de l'emploi d'autres moyens illégaux.]1
+----------
+(1)<Inséré par L 2016-05-04/29, art. 35, 089; En vigueur : 07-07-2016>
+
+Art. 74/21.[1 Sans préjudice de l'article 74/20 et sauf dispositions particulières prévues par la loi, [2 le ministre ou son délégué peut refuser l'autorisation ou l'admission au séjour [3 demandée en application de l'article 10, § 1er, alinéa 1er, 4° à 6°, de l'article 10bis ou de l'article 57/34]3]2, si la personne que l'étranger rejoint a utilisé des informations fausses ou trompeuses ou des documents faux ou falsifiés, ou a recouru à la fraude ou à d'autres moyens illégaux qui ont contribué à l'octroi de l'autorisation de séjour ou à la reconnaissance de l'admission au séjour.
+Sans préjudice de l'article 74/20 et sauf dispositions particulières prévues par la loi, [2 le ministre ou son délégué peut mettre fin au séjour [3 de l'étranger qui a été autorisé ou admis à séjourner dans le Royaume en application de l'article 10, § 1er, alinéa 1er, 4° à 6°, de l'article 10bis ou de l'article 57/34]3]2, si la personne qu'il rejoint a utilisé des informations fausses ou trompeuses ou des documents faux ou falsifiés, ou a recouru à la fraude ou à d'autres moyens illégaux qui ont contribué à l'octroi de l'autorisation de séjour ou à la reconnaissance de l'admission au séjour.
+Le séjour du membre de la famille ne peut être refusé et il ne peut être mis fin à son séjour que lorsque le séjour de la personne qu'il a rejoint est refusé ou lui a été retiré.
+Lorsque le ministre ou son délégué envisage de prendre une telle décision, il tient compte de la nature et de la solidité des liens familiaux de la personne, de la durée de son séjour dans le Royaume, ainsi que de l'existence d'attaches familiales, culturelles ou sociales avec son pays d'origine.]1
+----------
+(1)<Inséré par L 2016-05-04/29, art. 36, 089; En vigueur : 07-07-2016>
+(2)<L 2024-03-10/03, art. 21, 127; En vigueur : 01-09-2024>
+(3)<L 2025-07-18/29, art. 23, 129; En vigueur : 18-08-2025>
+
+TITRE IIIsexies. [1 - Obligations de l'étranger dans le cadre du transfert, du refoulement, du retour ou de l'éloignement]1
+----------
+(1)<Inséré par L 2024-05-12/29, art. 23, 124; En vigueur : 20-07-2024>
+
+Chapitre Ier. [1 L'obligation de coopérer]1
+----------
+(1)<Inséré par L 2024-05-12/29, art. 24, 124; En vigueur : 20-07-2024>
+
+Art. 74/22. [1 § 1er. Tout étranger qui fait l'objet d'une procédure de transfert, de refoulement, de retour ou d'éloignement coopère à son exécution effective avec les autorités compétentes.
+Cette obligation de coopérer comprend le fait de:
+1° coopérer à son identification et à celle des membres de sa famille qui l'accompagnent, en fournissant les éléments nécessaires à l'établissement ou à la vérification de l'identité, notamment les éléments relatifs au nom et prénom, à la nationalité, au lieu et à la date de naissance, au(x) pays d'origine et/ou de sa résidence antérieure, les itinéraires de voyage, les documents de voyage et les données biométriques;
+2° coopérer à l'obtention des documents de voyage nécessaires pour lui-même et pour les membres de sa famille qui l'accompagnent, le cas échéant en soumettant une demande aux autorités compétentes pour obtenir un document de voyage valable, en fournissant toutes les informations et déclarations nécessaires à l'obtention d'un tel document, en coopérant avec ces autorités, en se présentant en personne à ces autorités et, sur demande, en fournissant la preuve des démarches effectuées afin d'obtenir les documents de voyage;
+3° communiquer l'adresse de sa résidence effective et les coordonnées auxquelles l'étranger peut être effectivement joint;
+4° se présenter en personne aux rendez-vous avec les autorités compétentes pour l'exécution de la mesure;
+5° répondre dans les délais impartis aux demandes d'information des autorités compétentes pour l'exécution de la mesure;
+6° rester accessible et disponible pendant toute la période nécessaire à l'exécution de la mesure;
+7° présenter ou mettre en dépôt les documents d'identité ou de voyage aux autorités compétentes, si cela est demandé;
+8° coopérer aux examens médicaux nécessaires à l'exécution de la mesure;
+9° transmettre aux autorités compétentes les attestations médicales nécessaires à l'exécution de la mesure.
+§ 2. L'étranger est informé en temps utile, et au plus tard au moment de la notification de la mesure de transfert, de refoulement, de retour ou d'éloignement, de l'obligation de coopérer et des conséquences d'un refus de coopérer. Ces informations sont fournies dans une langue que l'étranger comprend ou dont il est raisonnable de supposer qu'il la comprend.
+Chaque fois que l'étranger est explicitement invité à entreprendre une action spécifique dans le cadre de cet article, il est à nouveau informé de son obligation de coopérer et des conséquences d'un refus de coopérer.]1
+----------
+(1)<Inséré par L 2024-05-12/29, art. 25, 124; En vigueur : 20-07-2024>
+
+Art. 74/23. [1 § 1er. En vue de l'exécution forcée d'une mesure de transfert, de refoulement, de retour ou d'éloignement, un étranger peut être soumis à un examen médical, le cas échéant par la contrainte, pour autant qu'un tel l'examen soit requis afin de déterminer si l'étranger peut voyager sans mettre en danger sa propre santé, celle des autres voyageurs ou celle de la population du pays de destination. L'examen médical obligatoire peut être effectué seulement s'il est nécessaire parce qu'il est imposé comme condition d'entrée ou de transit par le pays de destination ou de transit, ou comme condition de voyage par le transporteur responsable du transport de l'étranger, dans le cadre d'une urgence de santé publique de portée internationale déclarée par l'Organisation mondiale de la santé, et que les attestations médicales disponibles ne sont pas acceptées comme étant suffisantes par le pays de destination ou de transit, ou par le transporteur.
+L'étranger est informé au préalable de l'examen médical qui lui sera imposé, ainsi que de la manière dont il sera effectué, de l'objectif de l'examen, de son éventuel effet sur sa santé et de la possibilité, en cas de refus de coopérer, de procéder à l'examen médical par la contrainte conformément au paragraphe 2. Ces informations sont fournies dans une langue que l'étranger comprend ou dont il est raisonnable de supposer qu'il la comprend.
+L'étranger signe une déclaration dans laquelle il s'engage à coopérer à cet examen médical. Cette déclaration comprend les informations mentionnées à l'alinéa 2. L'étranger a la possibilité, avant de signer la déclaration et en étant séparé du personnel impliqué dans l'examen, de relire les informations fournies.
+Sur proposition conjointe du ministre et du ministre qui a la Santé publique dans ses attributions, le Roi détermine, par un arrêté délibéré en Conseil des ministres, les examens médicaux qui peuvent être imposés à l'étranger en application du présent article.
+§ 2. Si l'étranger ne se soumet pas volontairement à l'examen médical visé au paragraphe 1er et que l'objectif ne peut être atteint par des moyens moins coercitifs, l'examen médical peut être effectué par la contrainte.
+Le recours à la contrainte lors de l'examen médical est exclu pour les mineurs étrangers. Le recours à la contrainte lors de l'examen médical ne se fait jamais en présence de mineurs étrangers.
+Le recours à la contrainte est effectué par le délégué du ministre qui a reçu une formation spécifique à cet effet. Le Roi détermine le contenu de cette formation.
+Le recours à la contrainte est soumis aux conditions prévues à l'article 37 de la loi sur la fonction de police. Le recours à la contrainte est adapté à la vulnérabilité de la personne.
+Les moyens de contrainte autorisés sont la contrainte physique, la clef de bras et les menottes aux poignets et/ou aux pieds.
+Tout recours à la contrainte lors d'un examen médical fait l'objet d'un rapport détaillé sans délai. Le délégué du ministre indique dans le rapport les moyens de contrainte utilisés, la durée du recours à la contrainte et la justification de celle-ci.
+§ 3. L'examen médical visé au paragraphe 1er est effectué par du personnel médical qualifié.
+Seul l'examen médical le moins invasif est effectué, compte tenu des conditions imposées par le pays de destination ou de transit, ou par le transporteur, et à condition qu'un tel examen soit disponible.
+L'examen médical ne peut avoir un caractère vexatoire et est effectué dans le respect de la dignité de l'étranger. Si le personnel médical estime que l'examen est susceptible de mettre en danger la santé de l'étranger, il ne l'effectue pas.]1
+----------
+(1)<Inséré par L 2024-05-12/29, art. 26, 124; En vigueur : 20-07-2024>
+
+Chapitre II. [1 Le trajet d'accompagnement intensif dans le cadre d'une procédure de retour ou de transfert.]1
+----------
+(1)<Inséré par L 2024-05-12/29, art. 27, 124; En vigueur : 20-07-2024>
+
+Art. 74/24. [1 § 1er. L'étranger qui fait l'objet d'un ordre de quitter le territoire sans qu'une mesure de maintien ou une mesure de maintien moins coercitive ne soit imposée, peut être invité à entamer un trajet d'accompagnement intensif dans le cadre d'une procédure de retour.
+Le trajet d'accompagnement intensif dans le cadre d'une procédure de retour vise un suivi individualisé de l'étranger en séjour illégal en vue de parvenir à une perspective d'avenir durable soit dans son pays d'origine ou dans un autre pays où il a un droit de séjour, soit en Belgique, et de mettre fin à son séjour illégal en Belgique.
+Ce trajet d'accompagnement comprend les étapes suivantes:
+1° l'analyse du séjour de l'étranger en Belgique sur la base de sa situation individuelle et, le cas échéant, sur la base de ses précédentes demandes de séjour ou de protection internationale;
+2° l'information et le conseil de l'étranger quant à sa situation de séjour en Belgique et, le cas échéant, quant aux procédures administratives et juridiques disponibles;
+3° l'évaluation des possibilités de retour de l'étranger;
+4° l'identification des obstacles au retour de l'étranger et la recherche de solutions pour y remédier;
+5° la planification d'entretiens de suivi avec l'étranger si cela est nécessaire;
+6° le cas échéant, la convocation de l'étranger pour lui demander qu'il accomplisse les démarches nécessaires afin d'obtenir et de présenter les documents requis en vue de son retour ou de son éloignement effectif.
+Conformément à l'article 74/22, § 2, alinéa 2, l'étranger est informé lors des entretiens du trajet d'accompagnement de son obligation de coopérer et des actions spécifiques qui lui sont demandées à chaque étape de ce trajet d'accompagnement, ainsi que des conséquences d'un refus de coopération.
+§ 2. Afin d'assurer le trajet d'accompagnement intensif visé au paragraphe 1er, le ministre ou son délégué coopère avec les autorités et les organisations de la société civile qui sont compétentes ou chargées du suivi et de l'accompagnement des étrangers en séjour illégal.
+§ 3. Si l'étranger introduit une demande de séjour ou une demande de protection internationale pendant le trajet d'accompagnement intensif visé au paragraphe 1er, et qu'il peut, conformément aux dispositions de la présente loi, rester provisoirement sur le territoire dans l'attente d'une décision relative à cette demande, le trajet d'accompagnement intensif est suspendu. Néanmoins, la situation administrative de l'étranger peut continuer à être suivie.]1
+----------
+(1)<Inséré par L 2024-05-12/29, art. 28, 124; En vigueur : 20-07-2024>
+
+Art. 74/25.[1 § 1er. L'étranger qui fait l'objet d'une mesure de transfert en vertu [2 de l'article 51/5/2, § 1er]2, sans qu'une mesure de maintien ou une mesure de maintien moins coercitive ne soit imposée, peut être invité à entamer un trajet d'accompagnement intensif dans le cadre d'une procédure de transfert.
+Le trajet d'accompagnement intensif dans le cadre d'une procédure de transfert vise un suivi individualisé de l'étranger en vue de son transfert effectif vers l'Etat responsable du traitement de sa demande de protection internationale.
+Ce trajet d'accompagnement comprend les étapes suivantes:
+1° l'information et le conseil de l'étranger quant à sa situation de séjour en Belgique et, le cas échéant, quant aux procédures administratives et juridiques disponibles;
+2° l'identification des obstacles au transfert de l'étranger et la recherche de solutions pour y remédier;
+3° la planification d'entretiens de suivi avec l'étranger si cela est nécessaire;
+4° le cas échéant, la convocation de l'étranger pour lui demander qu'il accomplisse les démarches nécessaires afin d'obtenir et de présenter les documents requis en vue de son transfert effectif.
+Conformément à l'article 74/22, § 2, alinéa 2, l'étranger est informé lors des entretiens du trajet d'accompagnement de son obligation de coopérer et des actions spécifiques qui lui sont demandées à chaque étape de ce trajet d'accompagnement, ainsi que des conséquences d'un refus de coopération.
+§ 2. Si l'étranger ne coopère pas au trajet d'accompagnement intensif dans le cadre d'une procédure de transfert, il est présumé avoir pris la fuite, conformément [2 à l'article 51/5/3, § 2]2.]1
+----------
+(1)<Inséré par L 2024-05-12/29, art. 29, 124; En vigueur : 20-07-2024>
+(2)<L 2026-06-16/01, art. 101, 135; En vigueur : 12-06-2026>
+
+Art. 74/26. [1 Si l'étranger ne répond pas aux invitations ou aux demandes d'information du trajet d'accompagnement intensif dans le cadre d'une procédure de retour ou de transfert visé aux articles 74/24 ou 74/25, le délégué du ministre peut se rendre à l'adresse de résidence effective qu'il a fournie afin de vérifier si l'étranger y réside toujours et de l'informer du trajet d'accompagnement intensif.
+Dans les mêmes circonstances, le ministre ou son délégué peut demander au bourgmestre de vérifier si l'étranger réside à l'adresse qu'il a fournie afin d'entamer ou de poursuivre le trajet d'accompagnement intensif.]1
+----------
+(1)<Inséré par L 2024-05-12/29, art. 30, 124; En vigueur : 20-07-2024>
+
+Chapitre III. [1 Les mesures préventives et les mesures de maintien moins coercitives.]1
+----------
+(1)<Inséré par L 2024-05-12/29, art. 31, 124; En vigueur : 20-07-2024>
+
+Art. 74/27. [1 Les mesures préventives que le ministre ou son délégué peut imposer à l'étranger en vertu de la présente loi pendant le délai de départ volontaire ou pendant le délai de report temporaire d'éloignement afin d'éviter tout risque de fuite, sont les suivantes:
+1° la présentation ou le dépôt des documents d'identité ou de voyage à l'autorité compétente;
+2° l'obligation de se présenter à des moments déterminés auprès des services de police ou auprès de l'Office des Etrangers;
+3° l'assignation à résidence.]1
+----------
+(1)<Inséré par L 2024-05-12/29, art. 32, 124; En vigueur : 20-07-2024>
+
+Art. 74/27/1. [1 § 1er. Sans préjudice de l'application de l'article 54, paragraphe 1, du règlement (UE) 2024/1348, le ministre ou son délégué peut décider de restreindre la liberté de circulation du demandeur de protection internationale en l'obligeant à séjourner dans un lieu déterminé, notamment:
+1° pour des raisons d'ordre public;
+2° lorsqu'il existe un risque de fuite, notamment si:
+a) le demandeur est tenu, en vertu du règlement (UE) 2024/1351, de se trouver dans un autre Etat membre;
+b) le demandeur a été transféré d'un autre Etat membre vers la Belgique en application du règlement (UE) 2024/1351, après avoir pris la fuite et s'être rendu dans un autre Etat membre.
+Dans les mêmes conditions, une obligation de se présenter peut être imposée au demandeur.
+§ 2. Si le demandeur s'est vu désigner une place d'accueil au sens de la loi du 12 janvier 2007 relative à l'accueil des demandeurs d'asile et de certaines autres catégories d'étrangers, cette place peut être utilisée pour restreindre la liberté de circulation en application du paragraphe 1er.
+§ 3. Le demandeur peut demander au ministre ou à son délégué de l'autoriser à séjourner temporairement en dehors du lieu de restriction de liberté de circulation.
+A cette fin, le demandeur doit motiver sa demande. Si sa présence est requise lors d'un rendez-vous avec une autorité ou un tribunal, le demandeur en informe le ministre ou son représentant par écrit avant le rendez-vous.
+§ 4. Le ministre ou son délégué informe le demandeur des motifs individuels de cette décision et les conséquences du non-respect dans une langue qu'il comprend ou dont il est raisonnable de supposer qu'il la comprend.
+§ 5. Le Roi peut déterminer les modalités d'application par arrêté délibéré en Conseil des ministres.]1
+----------
+(1)<Inséré par L 2026-06-16/01, art. 102, 135; En vigueur : 12-06-2026>
+
+Art. 74/28.[1 § 1er. Les mesures de maintien moins coercitives que le ministre ou son délégué peut imposer en vertu de la présente loi sont les suivantes:
+1° l'obligation de se présenter à des moments déterminés auprès des services de police ou auprès de l'Office des Etrangers;
+2° l'assignation à résidence.
+§ 2. Les mesures de maintien moins coercitives visées au paragraphe 1er peuvent seulement être imposées, selon le cas, pour le temps nécessaire à la détermination de l'Etat responsable de l'examen de la demande de protection internationale, pour le temps nécessaire à l'examen de la demande de protection internationale ou pour le temps nécessaire à l'exécution de la mesure d'éloignement ou de transfert.
+§ 3. Sans préjudice des autres dispositions de la présente loi, les mesures de maintien moins coercitives visées au paragraphe 1er peuvent seulement être imposées si le ministre ou son délégué considère, sur la base d'un examen individuel de l'ensemble des circonstances, qu'une telle mesure peut encore être efficace pour atteindre, selon le cas, l'objectif visé aux articles [2 à l'article 51/5/3, § 2]2, ou 74/6, § 1er, ou pour réaliser l'éloignement ou le transfert effectif de l'étranger.
+L'évaluation de l'efficacité de la mesure de maintien moins coercitive se fait sur la base des circonstances factuelles, en ce compris le manque de coopération de l'étranger. Une mesure de maintien peut être prise uniquement si d'autres mesures suffisantes mais moins coercitives ne peuvent pas être appliquées efficacement.
+Une mesure de maintien moins coercitive est présumée inefficace, notamment dans les cas suivants:
+1° lorsque l'étranger n'a pas respecté une mesure préventive ou une mesure de maintien moins coercitive imposée précédemment;
+2° lorsque l'étranger n'a pas rempli son obligation de coopérer prévue aux articles 74/22 et 74/23, ou lorsqu'il n'a pas coopéré au trajet d'accompagnement intensif dans le cadre d'une procédure de retour ou de transfert prévu aux articles 74/24 et 74/25;
+3° lorsque l'étranger constitue une menace pour l'ordre public ou la sécurité nationale;
+4° si l'étranger séjourne illégalement sur le territoire et ne s'est jamais présenté aux autorités compétentes ou n'a jamais accompli les démarches nécessaires pour régler sa situation de séjour.]1
+----------
+(1)<Inséré par L 2024-05-12/29, art. 33, 124; En vigueur : 20-07-2024>
+(2)<L 2026-06-16/01, art. 103, 135; En vigueur : 12-06-2026>
+
+TITRE IV. - DISPOSITIONS PENALES.
+
+Art. 75.[1 § 1. Sous réserve de l'article 53, l'étranger qui se présente aux autorités chargées du contrôle aux frontières sans remplir les conditions d'entrée prévues aux articles 2 et 3 et dont l'entrée au Royaume a été refusée ou qui a été arrêté ou intercepté lors du franchissement des frontières extérieures du Royaume sans remplir les conditions d'entrée prévues aux articles 2 et 3 et qui n'a pas été autorisé à entrer dans le Royaume, est puni d'un emprisonnement de huit jours à trois mois et d'une amende de vingt-six euros à deux cents euros, ou d'une de ces peines seulement.
+§ 2. Sous réserve des articles 53 et 79, l'étranger qui séjourne illégalement dans le Royaume est puni, dans les limites prévues à l'alinéa 2, d'un emprisonnement de huit jours à trois mois et d'une amende de vingt-six euros à deux cents euros, ou d'une de ces peines seulement.
+L'emprisonnement, visé à l'alinéa 1er, peut être imposé uniquement si l'étranger a déjà fait l'objet d'une mesure de maintien ou d'une mesure de maintien moins coercitive ayant pris fin sans qu'il ait pu être procédé à son éloignement et s'il continue, sans motif justifié de non-retour, à séjourner illégalement dans le Royaume.
+§ 3. En cas de récidive dans le délai de trois ans d'une des infractions prévues aux paragraphes 1 et 2, ces peines sont portées à un emprisonnement d'un mois à douze mois et à une amende de cent euros à mille euros, ou à une de ces peines seulement.]1
+----------
+(1)<L 2024-05-12/29, art. 34, 124; En vigueur : 20-07-2024>
+
+Art. 75/1. [1 L'étranger qui a été enjoint de quitter des lieux déterminés, d'en demeurer éloigné ou de résider en un lieu déterminé et qui se soustrait à cette obligation sans motif valable, est puni d'un emprisonnement de huit jours à trois mois et d'une amende de vingt-six euros à deux cents euros, ou d'une de ces peines seulement.
+En cas de récidive dans le délai de trois ans de l'infraction prévue à l'alinéa 1er, ces peines sont portées à un emprisonnement d'un mois à douze mois et à une amende de cent euros à mille euros, ou à une de ces peines seulement.
+Le présent article ne s'applique pas à l'étranger auquel, dans le cadre d'une procédure de retour en vertu de la présente loi, une assignation à résidence est désignée comme mesure préventive ou comme mesure de maintien moins coercitive.]1
+----------
+(1)<Inséré par L 2024-05-12/29, art. 35, 124; En vigueur : 20-07-2024>
+
+Art. 76. L'étranger renvoyé ou expulsé du territoire depuis moins de dix ans qui entre ou séjourne dans le Royaume sans autorisation spéciale du (Ministre) est puni d'un emprisonnement d'un mois à un an et d'une amende de cent francs à mille francs. <L 1996-07-15/33, art. 4, 012; En vigueur : 16-12-1996> (NOTE : lire euros au lieu de francs L 2000-06-26/42, art. 2, En vigueur : 01-01-2002)
+
+Art. 77.<L 2005-08-10/61, art. 28, 038; En vigueur : 12-09-2005> Quiconque aide sciemment [1 ou tente d'aider]1 une personne non ressortissante d'un Etat membre de l'Union européenne à pénétrer ou à séjourner sur le territoire d'un Etat membre de l'Union européenne ou d'un Etat partie à une convention internationale relative au franchissement des frontières extérieures et liant la Belgique ou à transiter par le territoire d'un tel Etat, en violation de la législation de cet Etat, soit dans les faits qui ont préparé l'entrée, le transit ou le séjour, ou qui les ont facilités, soit dans les faits qui les ont consommés, sera puni d'un emprisonnement de huit jours à un an et d'une amende de mille sept cents euros à six mille euros ou d'une de ces peines seulement.
+L'alinéa 1er ne s'applique pas si l'aide est offerte pour des raisons principalement humanitaires.
+----------
+(1)<L 2016-05-31/02, art. 15, 088; En vigueur : 18-06-2016>
+
+Art. 77bis.
+<Abrogé par L 2026-03-03/04, art. 129,16°,a, 137; En vigueur : 01-09-2026>
+
+Art. 77ter.
+<Abrogé par L 2026-03-03/04, art. 129,16°,b, 137; En vigueur : 01-09-2026>
+
+Art. 77quater.
+<Abrogé par L 2026-03-03/04, art. 129,16°,c, 137; En vigueur : 01-09-2026>
+
+Art. 77quinquies.
+<Abrogé par L 2026-03-03/04, art. 129,16°,d, 137; En vigueur : 01-09-2026>
+
+Art. 77sexies.
+<Abrogé par L 2026-03-03/04, art. 129,16°,e, 137; En vigueur : 01-09-2026>
+
+Art. 78. Celui qui se rend coupable de faux témoignage devant la Commission consultative des étrangers est puni d'un emprisonnement de six mois à cinq ans.
+
+Art. 79. Est passible (d'une peine de vingt-six francs à cinq cents francs) : (NOTE : lire euros au lieu de francs L 2000-06-26/42, art. 2, En vigueur : 01-01-2002) <L 1996-07-15/33, art. 63, 012; En vigueur : 16-2-1996>
+1° le ressortissant luxembourgeois ou néerlandais qui pénètre sur le territoire belge ou circule sur la voie publique sans être porteur d'un document d'identité déterminé par décision du Comité des Ministres créé par l'article 15 du Traité instituant l'Union Economique Benelux;
+2° l'étranger qui contrevient aux (articles 5, 12, 17 (...)) ou qui circule sur la voie publique sans être porteur d'un des documents prévus à ces articles (, aux articles 42, § 2, 42quinquies, § 5) ou à l'article 2. <L 1996-07-15/33, art. 63, 012; En vigueur : 16-12-1996> <L 2007-04-25/49, art. 45, 1°, 046; En vigueur : 01-06-2008>
+Aucun des documents prévus aux (articles (5, 12, 17, 41bis, 42, § 2 ou 42quinquies, § 5)) ne peut être retiré, même provisoirement, à un étranger que par (le bourgmestre de la commune où se trouve l'étranger ou par son+ délégué ainsi que (les autorités désignées à l'article 62, premier et deuxième alinéas)à l'exception du Commissaire général aux réfugiés et aux apatrides ou de son délégué.) <L 14-07-1987, art. 19> <L 1993-05-06/30, art. 37, 005; En vigueur : 31-05-1993> <L 1996-07-15/33, art. 63, 012; En vigueur : 16-12-1996> <L 2007-04-25/49, art. 45, 2°, 046; En vigueur : 01-06-2008>
+Le document retiré est immédiatement remplacé par une attestation mentionnant la nature de ce document et les motifs de son retrait.
+
+Art. 79bis.<inséré par L 2006-01-12/49, art. 2, 039; En vigueur : 21-02-2006> § 1er. Quiconque conclut un mariage dans les circonstances visées à l'article 146bis du Code civil sera puni d'un emprisonnement [1 d'un mois à trois ans et d'une amende de cinquante euros à cinq cents euros]1.
+Quiconque reçoit une somme d'argent [2 ou d'autres valeurs]2 visant à le rétribuer pour la conclusion d'un tel mariage, sera puni d'un emprisonnement [1 de deux mois à quatre ans et d'une amende de cent euros à deux mille cinq cents euros]1.
+Quiconque recourt à des violences ou menaces à l'égard d'une personne pour la contraindre à conclure un tel mariage sera puni d'un emprisonnement [1 de trois mois à cinq ans et d'une amende de deux cent cinquante euros à cinq mille euros]1.
+§ 2. La tentative du délit prévu au § 1er, alinéa 1er, est punie [1 d'un emprisonnement de quinze jours à un an et d'une amende de vingt-six euros à deux cent cinquante euros]1.
+La tentative du délit prévu au § 1er, alinéa 2, est punie d'un emprisonnement [1 d'un mois à deux ans et d'une amende de cinquante euros à mille deux cent cinquante euros]1.
+La tentative du délit prévu au § 1er, alinéa 3, est punie d'un emprisonnement [1 de deux mois à trois ans et d'une amende de cents vingt-cinq euros à deux mille cinq cent euros]1.
+----------
+(1)<L 2013-06-02/08, art. 21, 073; En vigueur : 03-10-2013>
+(2)<L 2017-09-19/06, art. 14, 102; En vigueur : 01-04-2018>
+
+Art. 79ter.[1 § 1er. Quiconque conclut une cohabitation légale dans les circonstances visées à l'article 1476bis du Code civil, sera puni d'un emprisonnement d'un mois à trois ans et d'une amende de cinquante euros à cinq cents euros.
+Quiconque reçoit une somme d'argent [2 ou d'autres valeurs]2 visant à le rétribuer pour la conclusion d'une telle cohabitation, sera puni d'un emprisonnement de deux mois à quatre ans et d'une amende de cent euros à deux mille cinq cent s euros.
+Quiconque recourt à des violences ou menaces à l'égard d'une personne pour la contraindre à conclure une telle cohabitation sera puni d'un emprisonnement de trois mois à cinq ans et d'une amende de deux cent cinquante euros à cinq mille euros.
+§ 2. La tentative du délit visé au § 1er, alinéa 1er, est punie d'un emprisonnement de quinze jours à un an et d'une amende de vingt-six euros à deux cent cinquante euros.
+La tentative du délit visé au § 1er, alinéa 2, est punie d'un emprisonnement d'un mois à deux ans et d'une amende de cinquante euros à mille deux cent cinquante euros.
+La tentative du délit visé au § 1er, alinéa 3, est punie d'un emprisonnement de deux mois à trois ans et d'une amende de cent vingt-cinq euros à deux mille cinq cents euros.]1
+----------
+(1)<Inséré par L 2013-06-02/08, art. 22, 073; En vigueur : 03-10-2013>
+(2)<L 2017-09-19/06, art. 15, 102; En vigueur : 01-04-2018>
+
+Art. 79ter-bis. [1 § 1er. Quiconque reconnaît un enfant ou donne son consentement préalable à une reconnaissance d'enfant dans les circonstances visées à l'article 330/1 du Code civil sera puni d'un emprisonnement d'un mois à trois ans et d'une amende de cinquante euros à cinq cents euros.
+Quiconque reçoit une somme d'argent ou d'autres valeurs visant à le rétribuer pour avoir fait une telle reconnaissance ou avoir donné son consentement préalable à une telle reconnaissance sera puni d'un emprisonnement de deux mois à quatre ans et d'une amende de cent euros à deux mille cinq cents euros.
+Quiconque recourt à des violences ou menaces à l'égard d'une personne pour la contraindre à faire une telle reconnaissance ou donner son consentement préalable à une telle reconnaissance sera puni d'un emprisonnement de trois mois à cinq ans et d'une amende de deux cent cinquante euros à cinq mille euros.
+§ 2. La tentative du délit visé au paragraphe 1er, alinéa 1er, est punie d'un emprisonnement de quinze jours à un an et d'une amende de vingt-six euros à deux cent cinquante euros.
+La tentative du délit visé au paragraphe 1er, alinéa 2, est punie d'un emprisonnement d'un mois à deux ans et d'une amende de cinquante euros à mille deux cent cinquante euros.
+La tentative du délit visé au paragraphe 1er, alinéa 3, est punie d'un emprisonnement de deux mois à trois ans et d'une amende de cent vingt-cinq euros à deux mille cinq cents euros.]1
+----------
+(1)<Inséré par L 2017-09-19/06, art. 16, 102; En vigueur : 01-04-2018>
+
+Art. 79quater.[1 § 1er. [2 Le juge qui prononce une condamnation sur la base des articles 79bis, 79ter ou 79ter-bis ou qui constate la culpabilité pour une infraction visée à ces dispositions, peut également prononcer la nullité du mariage, de la cohabitation légale ou de la reconnaissance, à la demande du procureur du Roi ou de toute partie ayant un intérêt à la cause.]2
+§ 2. [2 Un jugement n'est opposable aux époux, aux cohabitants légaux, à l'auteur de la reconnaissance, à la personne ayant donné le consentement préalable à une reconnaissance ou à l'enfant reconnu que s'ils ont été parties ou appelés à la cause.
+Le ministère public peut appeler en intervention forcée l'époux, le cohabitant légal, l'auteur de la reconnaissance, la personne qui consent à la reconnaissance ou l'enfant reconnu qui n'est pas présent à la cause.]2
+L'intervention leur confère la qualité de partie à la cause. Ces parties peuvent exercer les voies de recours.
+L'intervention est formée dès le début de l'instance de sorte que ces parties puissent faire valoir leurs droits sur l'annulation du mariage [2 , de la cohabitation légale ou de la reconnaissance]2.
+[2 L'article 331sexies du Code civil est d'application au présent paragraphe.]2
+§ 3. Tout exploit de signification d'un jugement ou arrêt relatif à l'annulation d'un mariage [2 , d'une cohabitation légale ou d'une reconnaissance]2 est immédiatement communiqué en copie par l'huissier de justice instrumentant au greffier de la juridiction qui a prononcé la décision.
+§ 4. [3 Lorsque la nullité du mariage a été prononcée par un jugement ou un arrêt coulés en force de chose jugée, le greffier transmet immédiatement les données du jugement ou de l'arrêt à la BAEC, avec mention du jour où la décision judiciaire a acquis force de chose jugée.
+La BAEC établit une mention sur base de celui-ci et l'associe à l'acte de mariage.
+[5 L'annulation est notifiée immédiatement via la BAEC à l'Office des étrangers avec mention de la date à laquelle la décision judiciaire a acquis force de chose jugée.]5
+Le greffier en avertit immédiatement les parties.]3
+§ 5. Lorsque la nullité de la cohabitation légale a été prononcée par un jugement ou un arrêt coulé en force de chose jugée, un extrait reprenant le dispositif du jugement ou de l'arrêt et la mention du jour où celui-ci a acquis force de chose jugée est, sans délai, adressé par le greffier à l'officier de l'état civil du lieu où la déclaration de cohabitation légale a été faite et à l'Office des étrangers.
+Le greffier en avertit les parties.
+L'officier de l'état civil inscrit sans délai l'annulation de la cohabitation légale dans le registre de la population.]1
+[2 § 6. [3 [4 Lorsque la nullité de la reconnaissance a été prononcée par une décision judiciaire coulée en force de chose jugée, le greffier transmet immédiatement, via la BAEC, à l'officier de l'état civil compétent les données nécessaires à l'établissement de l'acte d'annulation et des actes modifiés de l'état civil de l'enfant et de ses descendants à la suite de la décision judiciaire, en mentionnant le jour où elle a acquis force de chose jugée.
+L'officier de l'état civil compétent établit sur cette base l'acte d'annulation, l'associe à l'acte de reconnaissance et modifie les actes de l'état civil de l'enfant et de ses descendants, conformément à la section 6 du livre Ier, titre II, chapitre Ier, du Code civil.]4
+[5 L'annulation est notifiée immédiatement via la BAEC à l'Office des étrangers avec mention de la date à laquelle la décision judiciaire a acquis force de chose jugée.]5
+Le greffier en avertit immédiatement les parties.]3]2
+----------
+(1)<Inséré par L 2013-06-02/08, art. 23, 073; En vigueur : 03-10-2013>
+(2)<L 2017-09-19/06, art. 17, 102; En vigueur : 01-04-2018>
+(3)<L 2018-06-18/03, art. 86, 103; En vigueur : 31-03-2019>
+(4)<L 2020-07-31/03, art. 27, 108; En vigueur : 01-09-2020>
+(5)<L 2023-09-13/08, art. 81, 120; En vigueur : 01-01-2024>
+
+Art. 80.
+<Abrogé par L 2026-03-03/04, art. 129,16°,f, 137; En vigueur : 01-09-2026>
+
+Art. 81.Les infractions à la présente loi (et aux articles 433quinquies à 433octies et 433decies à 433duodecies du Code pénal) sont recherchées et constatées par tous les officiers de police judiciaire, en ce compris ceux dont la compétence est limitée, (par les fonctionnaires de la police fédérale et de la police locale), par les (agents de l'Office des étrangers) et de l'Administration des douanes et accises, par les inspecteurs du Ministère de l'Emploi et du Travail et du Ministère des Classes moyennes ainsi que par ceux de l'Office national de la sécurité sociale [1 ...]1 <L 1996-07-15/33, art. 64, 012; En vigueur : 16-12-1996> <L 2002-08-02/45, art. 6, 024; En vigueur : 29-08-2002> <L 2005-08-10/61, art. 34, 038; En vigueur : 12-09-2005>
+Ils rassemblent les preuves des infractions et en livrent les auteurs aux autorités judiciaires, conformément aux dispositions du Code d'instruction criminelle.
+[2 Ils communiquent au ministre ou à son délégué tous documents et informations utiles à l'exercice de ses missions.]2
+[2 Les documents ou informations visés à l'alinéa précédent peuvent également être communiqués par les inspecteurs du Ministère flamand du Travail et de l'Economie sociale, par les inspecteurs de la Direction générale opérationnelle Economie, Emploi et Recherche du Service public de Wallonie, par les inspecteurs de la Direction de l'Inspection régionale de l'emploi de la Région Bruxelles-Capitale, par les inspecteurs du Ministère de la Communauté germanophone, département emploi.]2
+----------
+(1)<L 2017-09-30/01, art. 15, 098; En vigueur : 01-07-2017>
+(2)<L 2018-07-22/12, art. 15, 104; En vigueur : 24-12-2018>
+
+TITRE V. - DISPOSITIONS MODIFICATIVES, TRANSITOIRES, ABROGATOIRES ET FINALES.
+
+Art. 81/1.[1 § 1er. Lorsque le procureur du Roi constate, dans le cadre d'une recherche des infractions visées à l'article 90ter, §§ 2, 3 et 4, du Code d'instruction criminelle, qu'une personne en séjour illégal n'est pas en mesure de prouver son identité ou ne prête pas son concours à cette fin, utilise de faux documents ou s'attribue un faux nom, il peut, si les autres moyens d'investigation ne semblent pas suffire pour atteindre l'objectif visé, autoriser un officier de police judiciaire de l'Office des étrangers à exécuter une recherche dans un système informatique qui a été saisi, conformément à l'article 39bis, § 2, alinéa 1er, du Code d'instruction criminelle, aux fins exclusives d'établir l'identité et la nationalité de la personne concernée.
+Les données traitées par l'officier de police judiciaire de l'Office des étrangers dans le cadre de la recherche visée à l'alinéa 1er sont adéquates, pertinentes et non excessives en vue d'atteindre l'objectif visé.
+Le résultat de la recherche et les éléments de preuve recueillis par l'officier de police judiciaire de l'Office des étrangers sont transmis par le biais d'un procès-verbal au procureur du Roi qui a ordonné la recherche.
+En cas d'établissement de l'identité et de la nationalité par un officier de police judiciaire de l'Office des étrangers d'une personne qui est enregistrée dans la Banque de données Nationale Générale visée à l'article 44/7 de la loi sur la fonction de police, ces données sont aussi communiquées à cette banque de données afin de la mettre à jour.
+§ 2. L'Office des étrangers tient à jour un registre des recherches visées au paragraphe 1er. Ce registre contient:
+1° une copie de l'autorisation du magistrat compétent;
+2° une copie du procès-verbal visé au paragraphe 1er;
+3° toute information obtenue lors de la recherche visée au paragraphe 1er qui est pertinente pour la finalité visée au paragraphe 1er;
+4° le cas échéant, la date de prise de connaissance de l'information contenue dans le registre, ainsi que le nom des personnes qui en ont pris connaissance.
+Les informations consignées dans le registre sont conservées pendant une période de 10 ans.
+Le directeur général de l'Office des étrangers est responsable du traitement du registre visé à l'alinéa 1er au sens de l'article 4, point 7), du règlement (UE) 2016/679 du Parlement européen et du Conseil du 27 avril 2016, relatif à la protection des personnes physiques à l'égard du traitement des données à caractère personnel et à la libre circulation de ces données, et abrogeant la directive 95/46/CE. Seuls les officiers de police judiciaire de l'Office des étrangers qui ont effectué la recherche visée au paragraphe 1er ont accès au registre.
+[2 § 3. Le Roi désigne cinq fonctionnaires de l'Office des étrangers qui sont revêtus de la qualité d'officier de police judiciaire, auxiliaire du procureur du Roi. Le nombre de cinq peut être revu à la hausse ou à la baisse par le Roi, après avis du Collège des procureurs généraux.
+Pour être revêtus de la qualité d'officier de police judiciaire, auxiliaire du procureur du Roi, en application de l'alinéa 1er, les fonctionnaires de l'Office des étrangers répondent aux conditions suivantes:
+1° avoir au moins le grade d'attaché;
+2° pouvoir justifier d'une expérience professionnelle d'au moins cinq ans en matière d'aide à l'identification des étrangers en séjour illégal et avoir suivi la formation visée au troisième alinéa;
+3° ne pas exercer de mandat politique;
+4° n'avoir subi aucune condamnation, même avec sursis, à une peine correctionnelle ou criminelle consistant en une amende, une peine de travail ou une peine de prison, à l'exception des condamnations pour infractions à la réglementation relative à la police de la circulation routière;
+5° être en possession d'un avis de sécurité positif valide conformément à la loi du 11 décembre 1998 relative à la classification, aux habilitations de sécurité, attestations de sécurité, avis de sécurité et au service public réglementé.
+Le Roi détermine les conditions relatives à l'expérience et à la formation de ces fonctionnaires de l'Office des étrangers.
+Pour pouvoir exercer leur compétence d'officier de police judiciaire, auxiliaire du procureur du Roi, les fonctionnaires visés à l'alinéa 1er prêtent serment devant le procureur général de Bruxelles, dans les termes suivants: "Je jure fidélité au Roi, obéissance à la Constitution et aux lois du peuple belge, et de remplir fidèlement les fonctions qui me sont conférées."]2
+§ 4. La compétence d'officier de police judiciaire, auxiliaire du procureur du Roi, conféré aux fonctionnaires visés au paragraphe 3, est limitée à la compétence prévue au paragraphe 1er, et peut seulement être exercée avec l'autorisation d'un procureur du Roi dans le cadre d'une recherche des infractions visées à l'article 90ter, §§ 2, 3 et 4, du Code d'instruction criminelle, en vue de la finalité restreinte prévue au paragraphe 1er.
+Dans l'exercice de leurs missions, ils sont sous la surveillance du procureur général conformément à l'article 367 du Code d'instruction criminelle.
+Ils peuvent exercer leur compétence sur l'ensemble du territoire du Royaume.]1
+----------
+(1)<L 2024-04-18/05, art. 3, 122; En vigueur : 01-04-2025>
+(2)<L 2024-04-18/05, art. 3, 122; En vigueur : 29-04-2024>
+
+Art. 81/2.[1 Lorsque la présente loi ou ses arrêtés d'exécution attribuent une tâche à l'administration communale ou au bourgmestre, ce dernier est habilité à la déléguer à un membre du personnel de l'administration communale.]1
+----------
+(1)<Inséré par L 2016-05-04/29, art. 37, 089; En vigueur : 07-07-2016>
+(2)<L 2024-04-18/05, art. 2, 122; En vigueur : 01-04-2025>
+
+Art. 82. Sont publiés en entier au Moniteur belge :
+1° les arrêtés par lesquels le (Ministre) donne les délégations prévues par la présente loi; <L 1996-07-15/33, art. 4, 012; En vigueur : 16-12-1996>
+2° les arrêtés par lesquels le Roi accorde à certaines catégories d'étrangers la dispense prévue à l'article 5;
+3° la liste que le Roi établit conformément à l'article 33, alinéa 3.
+
+Art. 83. En temps de guerre, les pouvoirs du Ministre de la Justice (et du (Ministre)) demeurent réglés par l'arrêté-loi du 12 octobre 1918 relatif au séjour en Belgique des étrangers et des personnes d'origine étrangère.<AR 1992-07-13/31, art. 2, 003; En vigueur : 15-07-1992> <L 1996-07-15/33, art. 4, 012; En vigueur : 16-12-1996>
+
+Art. 84. L'article 11 du Code civil est remplacé par la disposition suivante :
+" Article 11. - L'étranger jouit en Belgique de tous les droits civils reconnus aux Belges, sauf les exceptions établies par la loi.
+L'étranger autorisé à s'établir dans le Royaume et inscrit au registre de la population jouit de tous les droits civils reconnus aux Belges aussi longtemps qu'il continue de résider en Belgique ".
+
+Art. 85. L'article 726 du même Code, abrogé par la loi du 27 avril 1865, est rétabli dans la rédaction suivante :
+" Article 726. - Les étrangers ont le droit de succéder, de disposer et de recevoir de la même manière que les Belges dans toute l'étendue du Royaume ".
+
+Art. 86. L'article 912 du même Code, abrogé par la loi du 27 avril 1865, est remplacé par la disposition suivante :
+" Article 912. - Dans le cas de partage d'un succession comprenant des avoirs situés sur le territoire d'un Etat étranger, les cohéritiers non ressortissants de cet Etat prélèveront sur les biens situés en Belgique une portion égale à celle des biens étrangers dont ils seraient exclus, à quelque titre que ce soit, en vertu des lois et coutumes locales ".
+
+Art. 87. L'article 3 de la loi du 1er janvier 1856 concernant les immunités des puissances étrangères en Belgique est remplacé par la disposition suivante :
+" Les consuls étrangers qui sont autorisés à s'établir dans le Royaume et inscrits au registre de la population seront traités, quant aux contributions et aux services personnels locaux, sur le même pied que les consuls ayant la qualité de Belge ".
+
+Art. 88. L'article 4, 4°, alinéa 2 de la loi du 31 mars 1898 sur les Unions professionnelles est remplacé par la disposition suivante :
+" La direction de l'Union ne peut être confiée qu'à des Belges ou à des étrangers autorises à s'établir dans le Royaume et inscrits au registre de la population. Ils sont choisis par l'Union elle-même parmi ses membres majeurs et, pour les trois quarts au moins, parmi les membres effectifs ".
+
+Art. 89. <Disposition modificative de l'art. 1 de l'AL 1918-10-12/30>
+
+Art. 90. L'article 668 du Code judiciaire est remplacé par la disposition suivante :
+" Article 668. - Le bénéfice de l'assistance judiciaire peut être accordé dans les mêmes conditions :
+a) aux étrangers conformément aux traités internationaux;
+b) à tout ressortissant d'un Etat membre du Conseil de l'Europe;
+c) à tout étranger qui a, d'une manière régulière, sa résidence habituelle en Belgique;
+d) à tout étranger dans les procédures prévues par la loi sur l'accès au territoire, le séjour, l'établissement et l'éloignement des étrangers ".
+
+Art. 91. Les mesures prises à charge d'étrangers par application des lois et arrêtes antérieurs sont maintenues; les effets en sont déterminés par les dispositions de la présente loi.
+Les articles 75, 76, 77 et 80 sont applicables aux violations de ces décisions.
+
+Art. 92. Le Roi détermine les langues autres que les langues française et néerlandaise dans lesquelles la présente loi sera traduite par les soins du (Ministre) ainsi que les modalités de la diffusion des traductions, sans préjudice des dispositions prévues aux articles 32 et 33 de la loi du 10 juillet 1973 relative au Conseil de la communauté culturelle allemande. <L 1996-07-15/33, art. 4, 012; En vigueur : 16-12-1996>
+
+Art. 93. Sont abrogés :
+1° l'article 13 du Code civil;
+2° la loi du 27 avril 1865 qui abroge la loi du 20 mai 1837 relative à la réciprocité internationale en matière de successions et de donations, et qui remplace les articles 726 et 912 du Code civil;
+3° l'article 10 de la loi du 27 novembre 1891 pour la répression du vagabondage et de la mendicité;
+4° la loi du 28 mars 1952 sur la police des étrangers, modifiée par les lois du 31 mai 1961, du 30 avril 1964 et du 1er avril 1969;
+5° le décret du 20 juillet 1808 " concernant les Juifs qui n'ont pas de nom de famille ni de prénom ".
+
+Art. 94. Par dérogation à la présente loi et pour une durée maximum d'un an à partir de sa publication, le Roi détermine les conditions d'accès au territoire, de séjour, d'établissement et d'éloignement des gens de mer étrangers.
+
+Art. 94/1.[1 Chaque année, le ministre ou son délégué établit un rapport d'activités sur les différents domaines d'action de l'Office des étrangers. Ce rapport contient également des informations sur les décisions prises par le ministre ou par son délégué dans le cadre des pouvoirs discrétionnaires dont il dispose, en particulier en ce qui concerne les données statistiques qualitatives et quantitatives relatives aux demandes de titres de séjour. [2 Dans le cadre des demandes de visas sur la base des articles 9 et/ou 9bis, déposées par un ou les parents d'un mineur étranger non accompagné, ce rapport précise chaque année le nombre de demandes de visas humanitaires qui ont été introduites, le nombre de visas humanitaires qui ont été délivrés, le nombre de visas humanitaires qui ont été refusés et la nationalité des demandeurs et donne un relevé non exhaustif des motifs de refus discrétionnaires qui ont été invoqués.]2 Ce rapport d'activités est transmis à la Chambre des représentants.]1
+----------
+(1)<Inséré par L 2019-05-08/10, art. 2, 105; En vigueur : 01-05-2019>
+(2)<L 2026-04-23/15, art. 2, 132; En vigueur : 18-05-2026>
+
+Art. 95. La présente loi entre en vigueur à la date qui sera fixée par le Roi et au plus tard le premier jour du septième mois suivant celui au cours duquel elle aura été publiée.
+
+Annexe.
+
+Art. N.<L 2007-04-25/49, art. 46, 046; En vigueur : 01-06-2008> - Maladies pouvant mettre en danger la santé publique :
+1. maladies quarantenaires visées dans le [1 règlement sanitaire international de l'Organisation mondiale de la Santé, signé à Genève le 23 mai 2005]1;
+2. tuberculose de l'appareil respiratoire active ou à tendance évolutive;
+3. autres maladies infectieuses ou parasitaires contagieuses pour autant qu'elles fassent, en Belgique, l'objet de dispositions de protection à l'égard des nationaux.
+----------
+(1)<L 2011-07-08/29, art. 14, 058; En vigueur : 22-09-2011>
+
+Travaux parlementaires
+
+Session ordinaire 1974-1975. Chambre des représentants. Documents parlementaires. - Projet de loi, n° 653-1 du 6 octobre 1975. - Amendements, n° 653-2 à 18. Session ordinaire 1977-1978. Chambre des représentants. Documents parlementaires. - Liste des documents parus au cours de sessions antérieures, n° 144-1 du 22 novembre 1977. - Amendements, n° 144-2 à 6. - Rapport, n° 144-7 du 28 avril 1978, de M. Dejardin. - Amendements, n° 144-8. Annales parlementaires. - Discussion et adoption. Séances des 7 et 8 juin 1978. Session ordinaire 1977-1978. Sénat. Documents parlementaires. - Projet transmis par la Chambre des représentants, n° 389-1 du 8 juin 1978. - Liste des documents parus antérieure,ent, n° 521-1 du 16 octobre 1980. - Rapport, n° 521-2 du 16 octobre 1980, de M. Moureaux. Annales parlementaires. - Discussion et adoption. Séance du 20 novembre 1980.
+
+Signatures
+
+Promulguons la présente loi, ordonnons qu'elle soit revêtue du sceau de l'Etat et publiée par le Moniteur belge.
+Donné à Bruxelles, le 15 décembre 1980.
+BAUDOUIN
+Par le Roi :
+Le Ministre de la Justice,
+Ph. MOUREAUX
+Scellé du sceau de l'Etat :
+Le Ministre de la Justice,
+Ph. MOUREAUX
+
+Fiche des modifications
+
+MODIFIE PAR
+
+Arrêt cour constitutionnelle du 16-07-2026 publié le 29-09-2026
+
+Articles modifiés :
+51/5; 74/25; 74/28
+
+Loi du 18-06-2026 publié le 24-06-2026
+
+Articles modifiés :
+39/38; 39/40
+
+Article modifié : 39/38
+
+Loi du 16-06-2026 publié le 19-06-2026
+
+Articles modifiés :
+1; 2/2; 8quater; 8quinquies; 8sexies; 8septies; 8octies; 9bis; 9ter; 10; 11; 12bis; 13; 15bis; 18; 48; 48/2-48/9; 49; 49/2; 49/3; 49/3/1; 49/4; 50; 50/1; 50/2; 51/2; 51/3; 51/5; 51/5/1; 51/5/3; 51/6; 51/7; 51/8; 51/10; 52/3; 52/4; 54; 55/2; 55/3; 55/3/1; 55/4; 55/5; 55/5/1; 57/5ter-57/5sexies; 57/6; 57/6/1; 57/6/2; 57/6/4; 57/6/5; 57/6/5/1; 57/6/6; 57/6/7; 57/6/7/1; 57/7; 57/7/1; 57/7/2; 57/8/1; 57/9; 57/11/1-57/11/12; 57/25; 57/28/1; 57/31; 71; 74/5; 74/5/1; 74/6; 74/6/1; 74/6/2; 74/8; 74/10; 74/11; 74/14; 74/17
+
+Articles modifiés :
+74/17; 74/25; 74/27/1; 74/28
+
+Loi du 17-06-2026 publié le 19-06-2026
+
+Articles modifiés :
+39/1; 39/2; 39/10; 39/12; 39/14-39/18; 39/56-39/85; 55; 39/19; 39/28; 42quinquies; 51/4; 62; 74/0/1
+
+Loi du 30-04-2026 publié le 13-05-2026
+
+Articles modifiés :
+1; 44nonies; 74/11; 74/12
+
+Loi du 23-04-2026 publié le 08-05-2026
+
+Article modifié : 94/1
+
+Loi du 03-03-2026 publié le 10-03-2026
+
+Articles modifiés :
+77bis; 77ter; 77quarter; 77quinquies; 77sexies; 80
+
+Loi du 18-07-2025 publié le 08-08-2025
+
+Articles modifiés :
+1/1; 1/2; 10; 10bis; 10ter; 11; 12bis; 13; 15; 19; 39/79; 40ter; 42; 57/34; 57/34/1; 57/36; 61/4; 61/7; 61/11; 61/13/5; 74/21
+
+Loi du 14-07-2025 publié le 23-07-2025
+
+Article modifié : 50
+
+Arrêté royal du 21-06-2025 publié le 16-07-2025
+
+Article modifié : 39/68-1
+
+Loi du 10-03-2024 publié le 22-08-2024
+
+Articles modifiés :
+1/2; 9bis; 11; 12bis; 57/6; 57/27; 57/37; 57/38; 57/39; 57/40; 57/41; 57/42; 57/43; 57/44; 57/45; 57/46
+
+Loi du 10-03-2024 publié le 22-08-2024
+
+Articles modifiés :
+1/1; 10; 11; 12bis; 13; 15; 19; 40bis; 40ter; 42ter; 42quater; 47/1; 47/2; 47/3; 47/4; 57/34; 57/34/1; 57/36; 74/21
+
+Loi du 12-05-2024 publié le 10-07-2024
+
+Articles modifiés :
+1; 7; 28/1; 28/2; 28/3; 44quater; 44quinquies; 44sexies; 51/5; 51/5/1; 68; 74; 74/6; 74/8; 74/9; 74/11; 74/14; 74/15; 74/17; 74/22; 74/23; 74/24; 74/25; 74/26; 74/27; 74/28; 75; 75/1
+
+Loi du 04-06-2024 publié le 09-07-2024
+
+Articles modifiés :
+39/20; 39/23
+
+Loi du 16-05-2024 publié le 04-07-2024
+
+Articles modifiés :
+74/2; 74/4; 74/4bis
+
+Loi du 29-03-2024 publié le 29-04-2024
+
+Articles modifiés :
+1; 2; 3; 74/2; 74/4bis Entrée en vigueur à déterminer.
+
+Loi du 18-04-2024 publié le 29-04-2024
+
+Articles modifiés :
+81/1; 81/2
+
+Loi du 29-02-2024 publié le 08-04-2024
+
+Articles modifiés :
+77bis; 77ter; 77quater; 77quinquies; 77sexies
+
+Loi du 29-02-2024 publié le 08-04-2024
+
+Article modifié : 80
+
+Loi du 23-06-2022 publié le 01-03-2024
+
+Article modifié : 9ter
+
+Loi du 23-11-2023 publié le 06-12-2023
+
+Article modifié : 3
+
+Loi du 13-09-2023 publié le 02-10-2023
+
+Article modifié : 79quater
+
+Loi du 19-03-2023 publié le 17-04-2023
+
+Articles modifiés :
+1; 2/2; 3; 5; 6/1; 6/2; 41bis; 42octies; 74/2; 74/4bis
+
+Loi du 02-03-2023 publié le 09-03-2023
+
+Articles modifiés :
+1; 24/1; 25; 26/1; 26/2
+
+Loi du 29-11-2022 publié le 20-12-2022
+
+Articles modifiés :
+1/2; 61/25-2; 61/25/-5; 61/27-1; 61/27-4
+
+Loi du 21-08-2022 publié le 09-11-2022
+
+Articles modifiés :
+1/1; 1/2; 10bis; 10ter; 19; 61/1; 61/10; 61/11; 61/12-61/13/2; 61/13/3; 61/13/4; 61/13/5-61/13/7; 61/13/8-61/13/11; 61/13/12-61/13/15; 61/13/16; 61/13/17; 61/13/18-61/13/24; 61/13/25; 61/13/26; 61/13/27-61/13/31; 61/13/32
+
+Arrêt cour constitutionnelle du 23-12-2021 publié le 15-02-2022
+
+Article modifié : 44septies
+
+Loi du 23-12-2021 publié le 10-02-2022
+
+Articles modifiés :
+39/4; 39/19; 3925; 39/28; 39/29; 39/30; 39/31; 39/32; 39/33; 39/53; 39/53-1; 39/53-2; 39/53-3; 39/53-4; 39/53-5; 39/53-6; 39/53-7; 39/53-8; 39/53-9; 39/55
+
+Loi du 30-07-2021 publié le 30-11-2021
+
+Articles modifiés :
+39/57-1; 39/58; 39/68-3; 39/69; 39/72; 39/73-2; 39/73-3; 39/74; 39/81
+
+Loi du 30-07-2021 publié le 27-08-2021
+
+Article modifié : 39/79
+
+Loi du 11-07-2021 publié le 05-08-2021
+
+Articles modifiés :
+1/1; 1/2; 10bis; 13; 58; 59; 60; 61; 61/1; 61/1/1; 61/1/2; 61/1/3; 61/1/4; 61/1/5; 61/1/6; 61/1/7; 61/1/8; 61/1/9; 61/1/10; 61/1/11; 61/1/12; 61/1/13; 61/1/14; 61/1/15; 61/7
+
+Arrêt cour constitutionnelle du 25-02-2021 publié le 20-04-2021
+
+Articles modifiés :
+48/6; 57/5quater; 57/6/1; 57/6/4; 57/7; 74/5
+
+Loi du 16-12-2020 publié le 23-12-2020
+
+Articles modifiés :
+1; INTITULE; 47/5
+
+Loi du 31-07-2020 publié le 28-08-2020
+
+Articles modifiés :
+1; 1/1; 1/2; 10bis; 10ter; 13; 61/25-1; 61/25-2; 61/25-3; 61/25-5; 61/25-6; 61/26; 61/27; 61/27-1; 61/27-2; 61/28; 61/28-1; 61/29-1; 61/29-4; 61/29-5; 61/29-6; 61/29-9; 61/30; 61/31; 61/32; 61/33; 33; 61/34; 61/35; 61/36; 61/37; 61/38; 61/39; 61/40; 61/41; 44; 61/42; 61/43; 61/44; 61/45; 61/46; 61/47; 61/48; 61/49
+
+Loi du 31-07-2020 publié le 07-08-2020
+
+Article modifié : 79quater
+
+Loi du 05-05-2019 publié le 22-08-2019
+
+Articles modifiés :
+1; 1/1; 1/2; 2/1; 8ter; 10bis; 61/25-1; 61/25-5; 61/26; 61/27; 61/27-1; 61/27-2; 61/27-3; 61/27-4; 61/27-5; 61/27-6; 61/28; 61/28-1; 61/29; 61/29-2; 61/29-3; 61/29-4; 61/26-7; 61/29-8; 61/29-9
+
+Loi du 08-05-2019 publié le 09-07-2019
+
+Articles modifiés :
+1; 3; 7; 8bis; 21; 22; 24; 25; 41; 43; 44; 44bis; 44ter; 44quater; 44nonies; 51/5/1; 68; 71; 74/8
+
+Loi du 08-05-2019 publié le 21-06-2019
+
+Article modifié : 94/1
+
+Loi du 03-04-2019 publié le 10-04-2019
+
+Articles modifiés :
+81/2; 81/3; 81/4; 81/5
+
+Loi du 22-07-2018 publié le 24-12-2018
+
+Articles modifiés :
+1/1; 61/7; 61/25-1; 61/25-2; 61/25-3; 61/25-4; 61/25-5; 61/25-6; 61/25-7; 81 Entrée en vigueur à déterminer.
+
+Arrêt cour constitutionnelle du 04-10-2018 publié le 22-10-2018
+
+Article modifié : 1/2
+
+Loi du 18-06-2018 publié le 02-07-2018
+
+Article modifié : 79quater
+
+Arrêt cour constitutionnelle du 22-02-2018 publié le 23-03-2018
+
+Article modifié : 1/1,§2
+
+Loi du 21-11-2017 publié le 12-03-2018
+
+Articles modifiés :
+1; 7; 15bis; 19/1; 30bis; 48/5; 48/6; 48/8; 48/9; 49/2; 49/3; 49/3/1; 50; 50bis; 50ter; 51; 51/2; 51/3; 51/3bis; 51/4; 51/5; 51/6; 51/7; 51/8; 51/9; 51/10; 52; 52/2; 52/3; 52/4; 53; 53bis; 54; 57/1; 57/5ter; 57/5quater; 57/6; 57/6/1; 57/6/2; 57/6/3; 57/6/4; 57/6/5; 57/66; 57/6/7; 57/7; 57/8/1; 57/9; 57/10; 57/23bis; 68; 71; 74; 74/5; 74/6; 74/8; 74/14
+
+Loi du 17-12-2017 publié le 12-03-2018
+
+Articles modifiés :
+39/2; 39/57; 39/70; 39/72; 39/72/1; 39/76; 39/77/1; 39/81; 55
+
+Loi du 19-09-2017 publié le 06-11-2017
+
+Article modifié : 39/73-1
+
+Loi du 30-09-2017 publié le 16-10-2017
+
+Article modifié : 81
+
+Loi du 19-09-2017 publié le 04-10-2017
+
+Articles modifiés :
+79bis; 79ter; 79ter-bis; 79quater;
+
+Loi du 26-04-2017 publié le 22-05-2017
+
+Articles modifiés :
+39/68-1bis; 39/69; 39/76 Entrée en vigueur à déterminer.
+
+Loi du 30-03-2017 publié le 10-05-2017
+
+Article modifié : 61/2
+
+Loi du 24-02-2017 publié le 19-04-2017
+
+Articles modifiés :
+1; 1/3; 3; 7; 8bis; 19; 20; 21; 22; 23; 24; 25; 26; 27; 30bis; 42ter; 42quater; 42septies; 43; 44; 44bis; 44ter; 44quater; 44quinquies; 44sexies; 44septies; 44octies; 44nonies; 44decies; 45; 45/1; 46; 46bis; 55; 56; 61/8; 61/9; 62; 68; 71; 74; 74/8; 74/10; 74/11; 74/14;
+
+Loi du 15-03-2017 publié le 19-04-2017
+
+Article modifié : 39/79
+
+Loi du 18-12-2016 publié le 16-01-2017
+
+Articles modifiés :
+1/1; 1/2
+
+Loi du 15-07-2016 publié le 13-09-2016
+
+Article modifié : 57/9
+
+Loi du 17-05-2016 publié le 28-06-2016
+
+Articles modifiés :
+10ter; 12bis
+
+Loi du 01-06-2016 publié le 28-06-2016
+
+Articles modifiés :
+1/1; 10; 11; 18; 49; 49/2
+
+Loi du 04-05-2016 publié le 27-06-2016
+
+Articles modifiés :
+3; 3bis; 6; 9quater; 10; 10bis; 10ter; 11; 12bis; 13; 15; 18; 40bis; 40ter; 42; 42ter; 42quater; 42quinquies; 42septies; 43; 45; 45/1; 47/4; 61/11; 61/22; 61/27; 61/30; 74/8; 74/20; 74/21; 81/1
+
+Loi du 31-05-2016 publié le 08-06-2016
+
+Articles modifiés :
+77; 77quater; 77sexies
+
+Loi du 05-02-2016 publié le 19-02-2016
+
+Article modifié : 77quater
+
+Loi du 14-12-2015 publié le 30-12-2015
+
+Articles modifiés :
+9bis; 9ter
+
+Loi du 18-12-2015 publié le 29-12-2015
+
+Articles modifiés :
+39/57-1; 39/77; 39/77/1; 39/81
+
+Loi du 02-12-2015 publié le 17-12-2015
+
+Articles modifiés :
+39/68-3; 39/73
+
+Loi du 03-09-2015 publié le 23-10-2015
+
+Article modifié : 39/4
+
+Loi du 10-08-2015 publié le 24-08-2015
+
+Articles modifiés :
+49; 49/2; 52/4; 55; 55/2; 55/3/1; 55/4; 55/5/1; 57/6; 57/9; 57/27; 74/17
+
+Arrêté royal du 19-06-2015 publié le 29-06-2015
+
+Article modifié : 39/68-1
+
+Arrêt cour constitutionnelle du 30-04-2015 publié le 01-06-2015
+
+Article modifié : 39/81
+
+Loi du 26-02-2015 publié le 16-03-2015
+
+Article modifié : 61/15
+
+Loi du 19-12-2014 publié le 29-12-2014
+
+Article modifié : 1/1
+
+Loi du 25-04-2014 publié le 19-08-2014
+
+Articles modifiés :
+10ter; 12bis; 13; 40ter; 61/4; 61/7; 61/12; 61/13
+
+Loi du 10-04-2014 publié le 21-05-2014
+
+Articles modifiés :
+39/28; 39/57; 39/82; 39/83; 39/85
+
+Articles modifiés :
+39/6; 39/11; 39/12
+
+Articles modifiés :
+39/2; 39/57; 39/70; 39/72/1; 39/76; 39/77/1; 39/81; 57/6/2
+
+Loi du 19-03-2014 publié le 05-05-2014
+
+Articles modifiés :
+1; 3; 8bis; 10; 10bis; 12bis; 15bis; 16; 16bis; 17; 18; 19; 20; 21; 40bis; 41; 42bis; 42ter; 42quater; 42quinquies; 43; 47/1; 47/2; 47/3; 61/7; 61/8; 61/9; 74/4bis
+
+Arrêt cour constitutionnelle du 16-01-2014 publié le 21-03-2014
+
+Article modifié : 39/81
+
+Loi du 26-12-2013 publié le 31-12-2013
+
+Articles modifiés :
+39/4; 39/6; 39/9
+
+Loi du 27-11-2013 publié le 13-12-2013
+
+Article modifié : 77sexies
+
+Arrêt cour constitutionnelle du 26-09-2013 publié le 22-11-2013
+
+Articles modifiés :
+40bis; 40ter
+
+Loi du 02-06-2013 publié le 23-09-2013
+
+Articles modifiés :
+40ter; 74/11; 79bis-79quater
+
+Loi du 08-05-2013 publié le 22-08-2013
+
+Articles modifiés :
+48/3; 48/5; 48/6; 48/7; 49/2; 51/2; 51/8; 51/10; 52/3; 55/3; 55/5; 57/6/2; 57/6/3; 57/7bis; 57/7ter; 57/8; 57/9; 74/5; 74/6
+
+Loi du 08-05-2013 publié le 22-08-2013
+
+Articles modifiés :
+39/2; 39/3; 39/6; 39/8; 39/10; 39/12; 39/18; 39/27; 39/57; 39/57-1; 39/58; 39/68-2; 39/69; 39/71; 39/72; 39/73; 39/76; 39/77; 39/78; 39/81; 39/82; 39/83; 39/85; 51/8
+
+Loi du 24-06-2013 publié le 23-07-2013
+
+Articles modifiés :
+77bis; 77ter; 77quater; 77quinquies
+
+Loi du 28-06-2013 publié le 01-07-2013
+
+Articles modifiés :
+42ter; 42quater; 42quinquies; 42sexies
+
+Loi du 31-12-2012 publié le 31-12-2012
+
+Article modifié : 39/81
+
+Loi du 15-05-2012 publié le 31-08-2012
+
+Articles modifiés :
+1; 10bis; 10ter; 12bis; 13; 15bis; 17; 19; 61/26; 61/27; 61/28; 61/29; 61/30; 61/31
+
+Loi du 22-06-2012 publié le 28-06-2012
+
+Article modifié : 74/1
+
+Loi du 22-04-2012 publié le 30-05-2012
+
+Articles modifiés :
+54; 70/1
+
+Loi du 15-03-2012 publié le 30-03-2012
+
+Articles modifiés :
+39/2; 39/81
+
+Loi du 19-01-2012 publié le 17-02-2012
+
+Articles modifiés :
+1; 3; 7; 8bis; 27; 30; 57/6/1; 57/9; 52/3; 62; 63; 68; 74/8; 74/10-74/19
+
+Loi du 16-11-2011 publié le 17-02-2012
+
+Article modifié : 74/9
+
+Loi du 08-01-2012 publié le 06-02-2012
+
+Article modifié : 9ter
+
+Loi du 26-11-2011 publié le 23-01-2012
+
+Article modifié : 77quater
+
+Loi du 12-09-2011 publié le 28-11-2011
+
+Article modifié : 61/14-61/25
+
+Loi du 08-07-2011 publié le 12-09-2011
+
+Articles modifiés :
+10; 10bis; 10ter; 11; 12bis; 13; 40bis; 40ter; 42; 42ter; 42quater; 42septies; N
+
+Loi du 29-12-2010 publié le 31-12-2010
+
+Articles modifiés :
+9ter; 12bis; 9quater
+
+Loi du 29-12-2010 publié le 31-12-2010
+
+Articles modifiés :
+39/57; 39/57-1; 39/68; 39/69; 39/71; 39/73; 39/73-1; 39/76; 39/81
+
+Loi du 28-04-2010 publié le 10-05-2010
+
+Articles modifiés :
+57/7bis; 57/7ter
+
+Loi du 30-12-2009 publié le 31-12-2009
+
+Article modifié : 57/9
+
+Loi du 23-12-2009 publié le 31-12-2009
+
+Articles modifiés :
+39/59; 39/72; 39/81; 39/4
+
+Loi du 07-06-2009 publié le 03-08-2009
+
+Articles modifiés :
+9ter; 12bis
+
+Loi du 08-03-2009 publié le 02-07-2009
+
+Article modifié : 12bis
+
+Loi du 06-05-2009 publié le 19-05-2009
+
+Articles modifiés :
+39/19; 39/21; 39/27; 39/57; 39/65; 39/69; 39/71; 39/76; 39/77; 39/82; 39/83; 71
+
+Loi du 06-05-2009 publié le 19-05-2009
+
+Articles modifiés :
+8BIS; 9BIS; NL9TER; 12; NL12BIS; 12BIS; NL21; 25; 33; 40BIS; NL57/6; 61/4; 61/8; 73; 74/5; 74/8
+
+Loi du 22-12-2008 publié le 29-12-2008
+
+Articles modifiés :
+51/8; 52
+
+Arrêt cour constitutionnelle du 26-06-2008 publié le 13-08-2008
+
+Article modifié : 10
+
+Arrêt cour constitutionnelle du 27-05-2008 publié le 02-07-2008
+
+Articles modifiés :
+39/57; 39/82; 39/83; 39/85
+
+Loi du 04-05-2007 publié le 10-05-2007
+
+Articles modifiés :
+39/20; 39/79; 39/81
+
+Loi du 25-04-2007 publié le 10-05-2007
+
+Articles modifiés :
+4BIS; 10; 10BIS; 10TER; 11; 12BIS
+
+Articles modifiés :
+13; 15BIS; 16; 17; 18; 18BIS; 19;
+
+Articles modifiés :
+20; 30BIS; 40; 40BIS; 40TER; 41;
+
+Articles modifiés :
+41BIS; 41TER; 42; 42BIS; 42TER;
+
+Articles modifiés :
+42QUAT; 42QQ; 42SEX; 42OCT; 43
+
+Articles modifiés :
+44BIS; 45; 46; 46BIS; 51/3BIS
+
+Articles modifiés :
+61/6-61/9; 74/8; 79; N
+
+Loi du 12-01-2007 publié le 07-05-2007
+
+Article modifié : 54
+
+Loi du 21-04-2007 publié le 26-04-2007
+
+Articles modifiés :
+61/10; 61/11; 61/12; 61/13
+
+Loi du 27-12-2006 publié le 28-12-2006
+
+Articles modifiés :
+39/18; 39/24; 39/27; 39/28
+
+Articles modifiés :
+39/29; 39/30; 39/31; 39/32
+
+Articles modifiés :
+39/33; 39/37; 39/38; 39/39
+
+Articles modifiés :
+39/40; 39/41; 39/44; 39/49
+
+Articles modifiés :
+39/76; 39/77; 39/79; 55; 57/11
+
+Articles modifiés :
+57/13; 57/14BIS; 57/16; 57/23BI
+
+Article modifié : 57/24-57/27
+
+Articles modifiés :
+39/59; 39/64; 39/71; 39/72
+
+Articles modifiés :
+39/50; 39/55; 39/57; 39/58
+
+Loi du 15-09-2006 publié le 06-10-2006
+
+Articles modifiés :
+39/1-39/85; 51/3; 51/4; 51/8
+
+Articles modifiés :
+55; 57/11-57/23; 57/23BIS; 69
+
+Articles modifiés :
+57/24-57/27; 63; 66; 71; 72; 69BI
+
+Loi du 15-09-2006 publié le 06-10-2006
+
+Articles modifiés :
+9; 9BIS; 9TER; 10; 10BIS; 10TER
+
+Articles modifiés :
+11; 12; 12BIS; 13; 14; 15; 16; 18
+
+Articles modifiés :
+20; 29; 30BIS; 44; 44BIS; 48/2
+
+Loi du 15-09-2006 publié le 06-10-2006
+
+Articles modifiés :
+50; 50BIS; 50TER; 51; 51/2-51/8
+
+Articles modifiés :
+51/10; 52; 52/2; 52/3; 52BIS; 53
+
+Articles modifiés :
+53BIS; 54; 55; 55/2-55/5; 56; 57
+
+Articles modifiés :
+57/6; 57/8-57/10; 58; 61/2-61/5
+
+Articles modifiés :
+61; 64-68; 74/4BIS-74/6; 74/8
+
+Articles modifiés :
+48/3-48/5; 49; 49/2; 49/3; 49BIS
+
+Loi du 27-03-2006 publié le 11-04-2006
+
+Article modifié : 31
+
+Loi du 12-01-2006 publié le 21-02-2006
+
+Article modifié : 79BIS
+
+Loi du 10-08-2005 publié le 02-09-2005
+
+Articles modifiés :
+77; 77BI-77SEX; 81
+
+Loi du 26-05-2005 publié le 10-06-2005
+
+Articles modifiés :
+20; 21; 56
+
+Loi du 16-03-2005 publié le 10-05-2005
+
+Article modifié : 57/12
+
+Loi du 22-12-2004 publié le 18-01-2005
+
+Article modifié : 74/4
+
+Loi du 27-12-2004 publié le 31-12-2004
+
+Articles modifiés :
+30BIS; 55
+
+Loi du 01-09-2004 publié le 12-10-2004
+
+Article modifié : 71
+
+Loi du 01-09-2004 publié le 12-10-2004
+
+Articles modifiés :
+8BIS; 27; 29
+
+Loi du 09-07-2004 publié le 15-07-2004
+
+Article modifié : 54
+
+Loi du 22-12-2003 publié le 31-12-2003
+
+Articles modifiés :
+18BIS; 51/2; 51/4; 51/5; 53; 54
+
+Loi du 22-12-2003 publié le 31-12-2003
+
+Article modifié : 54 Entrée en vigueur à déterminer.
+
+Loi du 22-12-2003 publié le 31-12-2003
+
+Articles modifiés :
+55; 65; 69
+
+Loi du 18-02-2003 publié le 11-04-2003
+
+Articles modifiés :
+50BIS; 51/5; 51/9; 52; 54; 57/29
+
+Articles modifiés :
+57/30-57/36; 63; 68; 74/4BIS
+
+Loi du 18-02-2003 publié le 10-04-2003
+
+Article modifié : 71
+
+Loi du 23-01-2003 publié le 13-03-2003
+
+Article modifié : 77BIS
+
+Loi du 02-08-2002 publié le 29-08-2002
+
+Articles modifiés :
+81; 77BIS
+
+Loi du 28-11-2000 publié le 17-03-2001
+
+Article modifié : 77BIS
+
+Loi du 02-01-2001 publié le 03-01-2001
+
+Article modifié : 77BIS
+
+Arrêté royal du 20-07-2000 publié le 30-08-2000
+
+Articles modifiés :
+74/2; 74/4BIS
+
+Loi du 18-04-2000 publié le 20-05-2000
+
+Article modifié : 70
+
+Loi du 29-04-1999 publié le 26-06-1999
+
+Articles modifiés :
+7; 25; 29; 74/5; 74/6
+
+Loi du 29-04-1999 publié le 26-06-1999
+
+Article modifié : 77
+
+Loi du 07-05-1999 publié le 15-05-1999
+
+Article modifié : 54
+
+Loi du 09-03-1998 publié le 03-07-1998
+
+Articles modifiés :
+54; 57/11; 57/12; 57/14BIS; 71
+
+Loi du 09-03-1998 publié le 03-07-1998
+
+Articles modifiés :
+57/5BIS; 74/5
+
+Loi du 10-07-1996 publié le 05-10-1996
+
+Articles modifiés :
+51/4; 69; 70; 71; 72; 74
+
+Loi du 15-07-1996 publié le 05-10-1996
+
+Articles modifiés :
+1; 2; 3; 3BIS; 4; 5; 6; 7; 10; 10BIS; 12BIS; 14; 18; 19; 21; 25; 27; 28; 29; 34; 36; 41BIS; 44BIS; 45; 49IS; 51; 51BIS; 51/3; 51/5; 51/6; 51/7; 52; 54; 55; 57; 57/6; 57/12; 57/19; 57/20; 57/24; 57/25; 58; 59; 60; 61; 62; 63/3; 63/5; 64; 68; 74/4; 74/4BIS; 74/5; 74/6; 74/7; 74/8; 77; 79; 81
+
+Loi du 13-04-1995 publié le 25-04-1995
+
+Article modifié : 77bis
+
+Loi du 08-03-1995 publié le 30-03-1995
+
+Articles modifiés :
+74/2; 74/4BIS
+
+Arrêté royal du 22-02-1995 publié le 15-03-1995
+
+Article modifié : 40
+
+Loi du 24-05-1994 publié le 21-07-1994
+
+Articles modifiés :
+12; 54
+
+Arrêté royal du 31-12-1993 publié le 01-01-1994
+
+Articles modifiés :
+57/2; 57/3; 57/4; 57/12; 57/25
+
+Loi du 06-08-1993 publié le 26-10-1993
+
+Articles modifiés :
+10; 11; 12; 12BIS; 14
+
+Loi du 01-06-1993 publié le 17-06-1993
+
+Article modifié : 77
+
+Loi du 06-05-1993 publié le 21-05-1993
+
+Articles modifiés :
+7; 13; 19; 25; 29; 31; 40; 50; 51; 51BIS; 52; 53; 53BIS; 54; 57/8; 57/11; 57/12; 57/15; 57/16; 57/20; 57/23BIS; 57/26; 62; 63; 63/2; 63/3; 63/4; 63/5; 68; 69BIS; 70; 70BIS; 71; 74/6; 79
+
+ENTREE EN VIGUEUR PAR
+
+Loi du 18-04-2024 publié le 29-04-2024
+
+Article modifié : 81/1

@@ -1,16 +1,18 @@
-# Greece source candidates
+# Greece source library
 
-Skill: author-source-pack-rules v1.0.1
+**Review date:** 2026-10-25. **Country status:** incomplete.
 
-Greece has a bounded discovery register of 61 official-source candidates across legal publication, free movement/residence, visa and mission practice, civil status, public access and procedure, courts, complaints, privacy, legal aid and selected local practice. The original 56-candidate capture run on 19 October 2026 converted and replay-verified 40 texts; 16 requests failed (14 HTTP 403, 2 TLS errors). Three additional legal sources found during review are recorded as link-only candidates: the 2026 PD 106/2007 amendment, the 2025 return-procedure law and a 2020 transitional provision. Six official legal references and five Greek-language MITOS procedures have been reviewed for link use; 0 locally stored copies are accepted. The two Greek Gov.gr third-country-family routes remain discovery candidates pending whole-portal human review.
+The 61-row source list has 27 official-reference reviews accepted for external-link use within their recorded scopes; 0 local copies are accepted. Of the 40 published converted files, 24 are represented by accepted link-only references and the other 16 have explicit dispositions (duplicate, discovery-only, historical, out of scope, terms uncertainty, or human review). The three accepted laws gr-57 through gr-59 are additional references outside those 40 files. This bounded reconciliation does not establish topic coverage or country completion.
 
-No public government consolidation of PD 106/2007 was found; the National Codification Portal still says it is in its final implementation stage, and the Migration Ministry legislation index does not list the later 2026 amendment. The original decree and targeted Laws 4071/2012, 4540/2018, 4686/2020, 5226/2025 and 5275/2026 are reviewed by link for their specific provisions. Law 5226/2025 Article 28 supplies the return-procedure and judicial-protection framework for EU-free-movement cases. Law 5275/2026 Article 53 changes the document duration for specified extended-family/partner routes to five years, effective 6 February 2026. Law 4686/2020 Article 43 concerns named legacy permit cases only. This bounded source method does not reconstruct every Gazette amendment. Use a human-reviewed official link where copying terms are unclear.
+## Current records
 
-- [Candidate source list](references/source-list.md)
-- [Candidate manifest](references/candidate-manifest.json)
-- [Source acceptance register](references/source-acceptance.json)
-- [Capture ledger](references/greece-capture-results.json)
-- [Shared capture/replay rule](../sync_candidate_pages.py)
-- [Sustainability assessment](references/sustainability-assessment.md)
+- [Reviewed source list](references/source-list.md) records every lead and a separate promotion disposition.
+- [Source acceptance register](references/source-acceptance.json) distinguishes link acceptance from local-copy acceptance.
+- [Sustainability assessment](references/sustainability-assessment.md) records retrieval, currentness, reuse, and route limits.
+- The Monitor has no registered Greece runtime action; runtime-only checks are unsupported, not completed.
 
-Refresh with `python source-library/sync_candidate_pages.py greece sync`; replay captured hashes and conversions with `python source-library/sync_candidate_pages.py greece verify`. The shared rule does not validate currentness or publisher reuse permission.
+The original 56-source retrieval attempt converted 40 pages and recorded 16 failures (14 HTTP 403 and two TLS errors). All 40 exact candidate files, the candidate manifest, and retrieval ledger remain only in the Monitor local-only archive under candidates/eudirective-public-data/GR/published-candidate-records-2026-10-21/, candidates/eudirective-public-data/GR/candidate-manifest.json, and captures/eudirective-public-data/GR/retrieval-manifest.json. The archived conversions are not accepted local source copies.
+
+National Printing House search-site terms restrict non-personal copying and conversion. Whether they apply to direct api.et.gr PDF URLs remains unresolved. No local Gazette copy or automated acquisition rule is accepted. Use official references within their recorded scope and check current Greek wording where a legal proposition depends on it.
+
+No topic or country completion is claimed. Currentness questions for Gov.gr, Ministry and Attica pages; case-law discovery; municipal and mission procedures; and full adoption/foreign-judgment coverage remain open.

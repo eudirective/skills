@@ -1,9 +1,9 @@
 # Foreigners Act amendment NN 151/22
 
 - Jurisdiction: croatia
-- Candidate ID: `hr-foreigners-amend-151-22`
+- Source ID: `hr-foreigners-amend-151-22`
 - Source type: `amending_act`
-- Candidate URL: https://narodne-novine.nn.hr/clanci/sluzbeni/2022_12_151_2347.html
+- Official source URL: https://narodne-novine.nn.hr/clanci/sluzbeni/2022_12_151_2347.html
 - Resolved URL: https://narodne-novine.nn.hr/clanci/sluzbeni/2022_12_151_2347.html
 - Retrieved: 2026-10-19T14:02:25+00:00
 - Media type: `text/html`

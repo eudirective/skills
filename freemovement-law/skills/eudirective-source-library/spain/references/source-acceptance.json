@@ -1,231 +1,278 @@
 {
   "schema_version": "1.0.0",
   "jurisdiction": "ES",
-  "as_of": "2026-10-21",
-  "accepted_source_count": 0,
-  "accepted_current_law_source_count": 0,
-  "accepted_derived_text_count": 0,
+  "as_of": "2026-10-25",
+  "accepted_source_count": 22,
+  "accepted_current_law_source_count": 15,
+  "accepted_derived_text_count": 18,
   "accepted_topic_count": 0,
   "country_review_complete": false,
-  "accepted_external_reference_count": 25,
-  "policy": "A human-reviewed official link is usable for ordinary research within the identified publisher, instrument, language, displayed date, reviewed content, and limitations. BOE consolidated legislation is accepted as a government-published working text; BOE itself labels it informational and without legal value. For legal-effect, commencement, correction, or a known material post-cutoff issue, follow the specific linked official publication. Do not reconstruct a Gazette amendment chain as a routine prerequisite. API access, local capture, hashing, replay, conversion, and copying permission are not prerequisites for ordinary public-link use. Local copies and converted candidate files remain separately unaccepted. Source acceptance does not establish topic adequacy or country completion.",
+  "accepted_external_reference_count": 54,
+  "policy": "A human-reviewed official link is usable for ordinary research within the identified publisher, instrument, language, displayed date, reviewed content, and limitations. BOE consolidated legislation is accepted as a government-published working text; BOE itself labels it informational and without legal value. For legal-effect, commencement, correction, or a known material post-cutoff issue, follow the specific linked official publication. Do not reconstruct a Gazette amendment chain as a routine prerequisite. API access, local capture, hashing, replay, conversion, and copying permission are not prerequisites for ordinary public-link use. Local-copy acceptance is recorded separately in records; unreviewed conversions remain unaccepted. Source acceptance does not establish topic adequacy or country completion.",
   "legacy_inventory": {
     "candidate_records": 55,
     "candidate_texts_converted_and_replay_verified": 45,
-    "local_acceptance_note": "Fifteen BOE law texts and thirty broader government pages were converted and replay-verified as candidate artifacts. None is accepted as a local copy. The separate register accepts 25 externally linked references within stated scopes; inaccessible or dynamic pages are handled through human-review site offers rather than treated as unusable sources."
+    "local_acceptance_note": "Twenty-two local source documents remain accepted after artifact review. Fifty-four official references are accepted within reviewed scopes, including current information and form directories, online filing and appointment routes, mission discovery and court discovery/reuse terms. Link acceptance does not establish issue coverage, live service availability or authority for bulk reuse. No topic is accepted. The current EU–UK Withdrawal Agreement consolidation remains offered for human review because its text could not be independently inspected."
   },
   "official_reference_reviews": {
     "es-06": {
       "status": "usable_official_reference",
       "publisher": "Agencia Estatal Boletín Oficial del Estado (BOE)",
       "url": "https://www.boe.es/eli/es/rd/2007/02/16/240/con",
-      "checked_on": "2026-10-21",
+      "checked_on": "2026-10-24",
       "language": "Spanish",
       "version_or_cutoff": "BOE consolidated record; latest displayed update 2015-11-09.",
       "scope": "Real Decreto 240/2007 on entry, free movement, residence and public-policy limits for EU and EEA-state citizens and family members.",
-      "reviewed_content": "The BOE page identifies the instrument and current consolidated view, and its text directly describes EU and EEA scope. The official page exposes version history, amendment notes and a direct ELI permalink.",
+      "reviewed_content": "The official BOE consolidated page was rechecked on 2026-10-24. It identifies Real Decreto 240/2007 and BOE-A-2007-4184, displays the latest consolidated-text update as 2015-11-09, and exposes the version history, amendments, and direct ELI permalink. The BOE API metadata timestamp (2025-12-19) is recorded separately from that text-version date.",
       "limitations": [
         "BOE labels the consolidation informational and without legal value; use the linked official publication for legal effect.",
         "The old displayed consolidation date makes a provision-specific amendment or later judgment check appropriate when material.",
         "Swiss, Spanish-return, and UK Withdrawal Agreement bases are separate and are not established by this source alone."
-      ]
+      ],
+      "document_path": "../documents/legislation/es-rd-240-2007-consolidated.md",
+      "document_sha256": "6619849bb3704387d021d6ede4404be32e87cc1917ae5b61d868551777eaaf26",
+      "document_bytes": 80364
     },
     "es-07": {
       "status": "usable_official_reference",
       "publisher": "Agencia Estatal Boletín Oficial del Estado (BOE)",
       "url": "https://www.boe.es/eli/es/rd/2024/11/19/1155/con",
-      "checked_on": "2026-10-21",
+      "checked_on": "2026-10-24",
       "language": "Spanish",
-      "version_or_cutoff": "Current BOE consolidation displayed update 2026-09-22; general commencement 2025-05-20.",
+      "version_or_cutoff": "BOE consolidated text: latest displayed update 2026-09-22; general commencement 2025-05-20; API metadata timestamp 2026-09-22T12:54:01Z.",
       "scope": "Real Decreto 1155/2024, including the distinct residence route for family of a Spanish national in Articles 93–99 and supplementary application rules.",
-      "reviewed_content": "The BOE page identifies the current consolidated text and its 22 September 2026 version. The text separates the Spanish-national family chapter from EU/EEA free movement and records later amendments and a Supreme Court judgment.",
+      "reviewed_content": "The BOE consolidated page was checked 2026-10-24 and identifies BOE-A-2024-24099, the 20 November 2024 publication, the 20 May 2025 commencement date, and the latest displayed consolidation update 22 September 2026. It exposes version history and embeds notes for BOE-A-2026-19632 and BOE-A-2026-19633. Articles 93–99 establish the distinct Spanish-national-family route.",
       "limitations": [
         "BOE labels the consolidation informational and without legal value; consult the linked official publication for legal effect.",
-        "Check the linked amendment and judgment when relevant to the provision at issue; the 2026 update includes material beyond the family chapter.",
-        "This is not a complete procedural or legal-coverage analysis."
-      ]
+        "The text is a dated BOE consolidation; its annotations refer to Supreme Court judgments BOE-A-2026-19632 and BOE-A-2026-19633. Consult the judgments for their precise holdings and scope.",
+        "The Spanish-national-family route is distinct from the EU/EEA/Swiss free-movement route. This source acceptance does not establish topic coverage or complete procedural sufficiency."
+      ],
+      "document_path": "../documents/legislation/es-rd-1155-2024-consolidated.md",
+      "document_sha256": "17a83a0c1bfde2a066bd1a7164edda013ecb28f1d09dd8ff6ac324bbbbf87eaf",
+      "document_bytes": 808943
     },
     "es-08": {
       "status": "usable_official_reference",
       "publisher": "Agencia Estatal Boletín Oficial del Estado (BOE)",
       "url": "https://www.boe.es/eli/es/lo/2000/01/11/4/con",
-      "checked_on": "2026-10-21",
+      "checked_on": "2026-10-25",
       "language": "Spanish",
-      "version_or_cutoff": "BOE consolidated record; latest displayed update 2025-03-19.",
+      "version_or_cutoff": "BOE consolidated text: latest displayed update 2025-03-19. API metadata timestamp 2026-07-03T06:58:26Z is separate.",
       "scope": "Ley Orgánica 4/2000, including the statutory framework under which RD 1155/2024 provides the Spanish-national-family route.",
-      "reviewed_content": "The official page identifies the law and displays its consolidated-text caveat and version date.",
+      "reviewed_content": "The official BOE page checked 2026-10-25 identifies Ley Orgánica 4/2000 and BOE-A-2000-544, publication on 2000-01-12, commencement on 2000-02-01, and the latest displayed text update as 2025-03-19. The current consolidated page and version selector were inspected; Articles 17 and 31 were compared with the converted text. API metadata timestamp 2026-07-03 is recorded separately from the displayed text date.",
       "limitations": [
         "Informational consolidation only; use the official promulgated publication for legal-effect questions.",
         "Read with current regulations and other applicable free-movement instruments."
-      ]
+      ],
+      "document_path": "../documents/legislation/es-lo-4-2000-consolidated.md",
+      "document_sha256": "fec6524ce93f13af201db0c64db3250b4422bb0c2f99030e769152d113003d4a",
+      "document_bytes": 256694
     },
     "es-09": {
       "status": "usable_official_reference",
       "publisher": "Agencia Estatal Boletín Oficial del Estado (BOE)",
       "url": "https://www.boe.es/eli/es/o/2012/07/09/pre1490/con",
-      "checked_on": "2026-10-21",
+      "checked_on": "2026-10-24",
       "language": "Spanish",
-      "version_or_cutoff": "BOE current page shows the original publication of 2012-07-10 and no later version in its selector.",
+      "version_or_cutoff": "BOE consolidated text: latest displayed update 2012-07-10, with only the initial publication in the selector. API metadata timestamp 2025-12-19T13:30:03Z; instrument metadata reports no repeal or expiry.",
       "scope": "Order PRE/1490/2012, rules applying Article 7 of RD 240/2007.",
-      "reviewed_content": "BOE identifies the order, its subject, publication and commencement, and supplies its consolidated ELI page.",
+      "reviewed_content": "The official BOE consolidated page checked 2026-10-24 identifies Orden PRE/1490/2012 and BOE-A-2012-9218, publication on 2012-07-10, commencement on 2012-07-11, and only the initial text in its selector. Articles 1–4 implement Article 7 of RD 240/2007 and state the registration, evidence, and family-member scope. The BOE API metadata timestamp is later than, and distinct from, the displayed text date.",
       "limitations": [
-        "The displayed history is not an independent interpretation of every later amendment or judgment affecting Article 7.",
-        "Use as a working official reference and follow a specific material later source if an issue requires it."
-      ]
+        "BOE labels its consolidation informational and without legal value; use the original BOE publication for legal effect.",
+        "The BOE selector shows only the 2012 initial text. Its Additional Provision cites Ley 30/1992, which BOE records as repealed by Ley 39/2015; preserve this wording and review the applicable successor procedure separately.",
+        "The Order implements RD 240/2007 Article 7; this source acceptance does not establish topic coverage, procedural sufficiency, or the separate legal basis for Swiss nationals.",
+        "The preamble cites a 1 June 2010 Supreme Court judgment; that case is not separately accepted or reviewed here."
+      ],
+      "document_path": "../documents/legislation/es-orden-pre-1490-2012-consolidated.md",
+      "document_sha256": "bd19ad47b6bf8733b46910fc1f787645c8e4387f9607732464848026e5b38c67",
+      "document_bytes": 17014
     },
     "es-11": {
       "status": "usable_official_reference",
       "publisher": "Agencia Estatal Boletín Oficial del Estado (BOE)",
       "url": "https://www.boe.es/eli/es/l/2015/10/01/39/con",
-      "checked_on": "2026-10-21",
+      "checked_on": "2026-10-25",
       "language": "Spanish",
-      "version_or_cutoff": "BOE consolidated record; latest displayed update 2024-11-06.",
-      "scope": "Ley 39/2015, general public-administration procedure.",
-      "reviewed_content": "The BOE page identifies the law, consolidated text, publication and last-update date.",
+      "version_or_cutoff": "BOE consolidated text: latest displayed update 2024-11-06; API metadata timestamp 2026-09-25T08:08:15Z is separate.",
+      "scope": "Ley 39/2015, common public-administration procedure.",
+      "reviewed_content": "The official BOE page checked 2026-10-25 identifies Ley 39/2015 and BOE-A-2015-10565, publication on 2015-10-02, commencement on 2016-10-02, and latest displayed update 2024-11-06. Articles 21 and 53 were inspected. API metadata timestamp 2026-09-25 is later but distinct from the displayed text date.",
       "limitations": [
-        "Informational consolidation only.",
-        "Special immigration rules and autonomous-community procedure may also apply; no remedy crosswalk is accepted here."
-      ]
+        "The local text cutoff is 2024-11-06; API metadata timestamp 2026-09-25 is not a later text-version date.",
+        "Special immigration rules and regional procedure may apply; this review does not map a specific deadline, remedy or region."
+      ],
+      "document_path": "../documents/legislation/es-ley-39-2015-consolidated.md",
+      "document_sha256": "1d8dc57b8145d9ad3f8e861e60cd4254dab1328cd7d8715d1f3c0e76db898c4f",
+      "document_bytes": 286949
     },
     "es-12": {
       "status": "usable_official_reference",
       "publisher": "Agencia Estatal Boletín Oficial del Estado (BOE)",
       "url": "https://www.boe.es/eli/es/l/1998/07/13/29/con",
-      "checked_on": "2026-10-21",
+      "checked_on": "2026-10-25",
       "language": "Spanish",
-      "version_or_cutoff": "BOE consolidated record; latest displayed update 2025-01-03.",
+      "version_or_cutoff": "BOE consolidated text: latest displayed update 2025-01-03; API metadata timestamp 2026-03-05T10:26:24Z is separate.",
       "scope": "Ley 29/1998, judicial review of administrative action.",
-      "reviewed_content": "The BOE page identifies the law, consolidated text, publication and last-update date.",
+      "reviewed_content": "The official BOE page checked 2026-10-25 identifies Ley 29/1998 and BOE-A-1998-16718, publication on 1998-07-14, commencement on 1998-12-14, and latest displayed update 2025-01-03. Articles 25 and 46 were inspected. API metadata timestamp 2026-03-05 is separate from that text date.",
       "limitations": [
-        "Informational consolidation only.",
-        "Court, standing, filing deadline, prior remedy, interim relief and appeal depend on the specific decision and are not mapped here."
-      ]
+        "BOE labels the consolidation informational and without legal value.",
+        "Court, standing, filing deadline, prior remedy, interim relief and appeal depend on the decision; no case-specific judicial route is mapped."
+      ],
+      "document_path": "../documents/legislation/es-ley-29-1998-consolidated.md",
+      "document_sha256": "dccfd48e6a83000861241654913c4acfcd3306e11f61c5ed99afe92ca4250287",
+      "document_bytes": 401159
     },
     "es-13": {
       "status": "usable_official_reference",
       "publisher": "Agencia Estatal Boletín Oficial del Estado (BOE)",
       "url": "https://www.boe.es/eli/es/l/2007/11/16/37/con",
-      "checked_on": "2026-10-21",
+      "checked_on": "2026-10-25",
       "language": "Spanish",
-      "version_or_cutoff": "BOE consolidated record; latest displayed update 2023-05-09.",
+      "version_or_cutoff": "BOE consolidated text: latest displayed update 2023-05-09; API metadata timestamp 2025-12-19T11:21:12Z is separate.",
       "scope": "Ley 37/2007 on reuse of public-sector information.",
-      "reviewed_content": "The BOE page identifies the law, consolidation caveat and version date.",
+      "reviewed_content": "The official BOE page checked 2026-10-25 identifies Ley 37/2007 and BOE-A-2007-19814, publication on 2007-11-17, commencement on 2008-01-17, and latest displayed update 2023-05-09. Article 4 was inspected. API metadata timestamp 2025-12-19 is separate from the displayed text date.",
       "limitations": [
-        "The specific publisher notice remains relevant to re-use of individual materials.",
-        "This reference does not grant permission to copy or redistribute other source content."
-      ]
+        "The law is a framework for reuse of public-sector documents; it does not automatically license content from every publisher.",
+        "BOE and other publishers may set source-specific terms or exclusions; check each publisher notice."
+      ],
+      "document_path": "../documents/legislation/es-ley-37-2007-consolidated.md",
+      "document_sha256": "d2f462991423bcf783994f5b3a8cdb8f779746c0ed97e1fc71e710ac634bfb6b",
+      "document_bytes": 76873
     },
     "es-14": {
       "status": "usable_official_reference",
       "publisher": "Agencia Estatal Boletín Oficial del Estado (BOE)",
       "url": "https://www.boe.es/eli/es/l/2013/12/09/19/con",
-      "checked_on": "2026-10-21",
+      "checked_on": "2026-10-25",
       "language": "Spanish",
-      "version_or_cutoff": "BOE consolidated record; latest displayed update 2022-07-09.",
-      "scope": "Ley 19/2013 on transparency and access to public information.",
-      "reviewed_content": "The BOE page identifies the law, informational consolidation and last-update date.",
+      "version_or_cutoff": "BOE consolidated text: latest displayed update 2022-07-09; API metadata timestamp 2026-01-02T10:52:16Z is separate.",
+      "scope": "Ley 19/2013 on transparency, access to public information and good government.",
+      "reviewed_content": "The official BOE page checked 2026-10-25 identifies Ley 19/2013 and BOE-A-2013-12887, publication on 2013-12-10, commencement on 2014-12-10, and latest displayed update 2022-07-09. Articles 17 and 24 and the regional-competence clause were inspected. API metadata timestamp 2026-01-02 is separate from the displayed text date.",
       "limitations": [
-        "Regional transparency regimes and competent review bodies are outside this reference's scope.",
-        "The link does not establish the remedy or deadline for an individual information request."
-      ]
+        "Access rights do not themselves grant source-reuse permission.",
+        "The national Consejo de Transparencia does not cover every autonomous-community system; some regions have distinct or delegated complaint bodies."
+      ],
+      "document_path": "../documents/legislation/es-ley-19-2013-consolidated.md",
+      "document_sha256": "84b660c89df26e555db0e5af07828584af7fb3e44fb7bc1dd481e0c5b406a5a8",
+      "document_bytes": 117376
     },
     "es-15": {
       "status": "usable_official_reference",
       "publisher": "Agencia Estatal Boletín Oficial del Estado (BOE)",
       "url": "https://www.boe.es/eli/es/l/2011/07/21/20/con",
-      "checked_on": "2026-10-21",
+      "checked_on": "2026-10-25",
       "language": "Spanish",
-      "version_or_cutoff": "BOE consolidated record; latest displayed update 2025-01-03; general commencement 2021-04-30.",
-      "scope": "Ley 20/2011 on the Civil Registry.",
-      "reviewed_content": "The BOE page identifies the law, commencement date, consolidated-text caveat and last-update date.",
+      "version_or_cutoff": "BOE consolidated record; latest displayed update 2025-01-03. API metadata timestamp 2026-02-24T10:40:35Z is separate.",
+      "scope": "Civil Registry framework and civil-status registration. Use the applicable BOE text and registry guidance for the specific act; this source alone does not establish all evidence or foreign-document requirements.",
+      "reviewed_content": "The official BOE page identifies Ley 20/2011, de 21 de julio, del Registro Civil., BOE-A-2011-12628, publication on 2011-07-22, entry into force on 2021-04-30, and latest displayed text update 2025-01-03. The page was checked on 2026-10-25. API metadata timestamp 2026-02-24T10:40:35Z is separate from the displayed text date.",
       "limitations": [
-        "Foreign-document acceptance and the relevant registry procedure need separate source review.",
-        "Informational consolidation only."
-      ]
+        "Informational consolidation only; use the official promulgated publication for questions of legal effect.",
+        "Registry practice and evidence requirements may depend on implementing provisions and the competent registry."
+      ],
+      "document_path": "../documents/legislation/es-ley-20-2011-registro-civil-consolidated.md",
+      "document_sha256": "e10f18c7dc1ffef44eaf87b1a06c039d0b12175bbffc14894596092b094f51c7",
+      "document_bytes": 193985
     },
     "es-16": {
       "status": "usable_official_reference",
       "publisher": "Agencia Estatal Boletín Oficial del Estado (BOE)",
       "url": "https://www.boe.es/eli/es/lo/2018/12/05/3/con",
-      "checked_on": "2026-10-21",
+      "checked_on": "2026-10-25",
       "language": "Spanish",
-      "version_or_cutoff": "BOE consolidated record; latest displayed update 2025-12-27.",
-      "scope": "Ley Orgánica 3/2018 on personal-data protection and digital rights.",
-      "reviewed_content": "The BOE page identifies the law, publication, informational consolidation and last-update date.",
+      "version_or_cutoff": "BOE consolidated record; latest displayed update 2025-12-27. API metadata timestamp 2026-10-08T07:39:57Z is separate.",
+      "scope": "Spanish national supplementary data-protection and digital-rights legislation. Read with the GDPR and the rules of the competent national or regional supervisory authority.",
+      "reviewed_content": "The official BOE page identifies Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales., BOE-A-2018-16673, publication on 2018-12-06, entry into force on 2018-12-07, and latest displayed text update 2025-12-27. The page was checked on 2026-10-25. API metadata timestamp 2026-10-08T07:39:57Z is separate from the displayed text date.",
       "limitations": [
-        "Read with the GDPR and identify the competent national or regional supervisory authority for the controller involved.",
-        "No data-access or complaint procedure is mapped by this acceptance."
-      ]
+        "Informational consolidation only; use the official promulgated publication for questions of legal effect.",
+        "This national law does not replace the GDPR or establish which supervisory authority is competent in every case."
+      ],
+      "document_path": "../documents/legislation/es-lo-3-2018-proteccion-datos-consolidated.md",
+      "document_sha256": "81517c2c4e8c1f21a255b8728ad482337f00a267b2767e112afb7223454d729c",
+      "document_bytes": 267613
     },
     "es-17": {
       "status": "usable_official_reference",
       "publisher": "Agencia Estatal Boletín Oficial del Estado (BOE)",
       "url": "https://www.boe.es/eli/es/l/1996/01/10/1/con",
-      "checked_on": "2026-10-21",
+      "checked_on": "2026-10-25",
       "language": "Spanish",
-      "version_or_cutoff": "BOE consolidated record; latest displayed update 2025-01-03.",
-      "scope": "Ley 1/1996 on free legal aid.",
-      "reviewed_content": "The BOE page identifies the law, consolidated-text caveat and current displayed version date.",
+      "version_or_cutoff": "BOE consolidated record; latest displayed update 2025-01-03. API metadata timestamp 2026-10-15T06:44:41Z is separate.",
+      "scope": "Statutory free-legal-aid framework. Eligibility, scope of covered proceedings and competent administration require issue-specific review.",
+      "reviewed_content": "The official BOE page identifies Ley 1/1996, de 10 de enero, de asistencia jurídica gratuita., BOE-A-1996-750, publication on 1996-01-12, entry into force on 1996-07-12, and latest displayed text update 2025-01-03. The page was checked on 2026-10-25. API metadata timestamp 2026-10-15T06:44:41Z is separate from the displayed text date.",
       "limitations": [
-        "Eligibility, territorial competence, covered immigration and court proceedings, and local application channels remain unreviewed.",
-        "Informational consolidation only."
-      ]
+        "Informational consolidation only; use the official promulgated publication for questions of legal effect.",
+        "This source does not establish an individual applicant’s eligibility or the competent territorial administration."
+      ],
+      "document_path": "../documents/legislation/es-ley-1-1996-asistencia-juridica-gratuita-consolidated.md",
+      "document_sha256": "1d1e14fc0160556598402a5bcd3a2144622c1da959d1c2bd3ddaabea955b3c3d",
+      "document_bytes": 126013
     },
     "es-18": {
       "status": "usable_official_reference",
       "publisher": "Agencia Estatal Boletín Oficial del Estado (BOE)",
       "url": "https://www.boe.es/eli/es/rd/2021/03/09/141/con",
-      "checked_on": "2026-10-21",
+      "checked_on": "2026-10-25",
       "language": "Spanish",
-      "version_or_cutoff": "BOE consolidated record; latest displayed update 2026-10-15.",
-      "scope": "Real Decreto 141/2021, regulation of free legal aid.",
-      "reviewed_content": "The official page displays the recent 15 October 2026 update. The local BOE XML metadata and converted candidate already show that same update date.",
+      "version_or_cutoff": "BOE consolidated record; latest displayed update 2026-10-15. API metadata timestamp 2026-10-15T09:12:04Z is separate.",
+      "scope": "Regulation implementing Spain’s free-legal-aid framework. Read with Ley 1/1996 and applicable territorial rules.",
+      "reviewed_content": "The official BOE page identifies Real Decreto 141/2021, de 9 de marzo, por el que se aprueba el Reglamento de asistencia jurídica gratuita., BOE-A-2021-3698, publication on 2021-03-10, entry into force on 2021-03-11, and latest displayed text update 2026-10-15. The page was checked on 2026-10-25. API metadata timestamp 2026-10-15T09:12:04Z is separate from the displayed text date.",
       "limitations": [
-        "The amendment and its effect on individual eligibility or procedure have not been mapped.",
-        "Informational consolidation only; regional competence and applicant eligibility remain open."
-      ]
+        "Informational consolidation only; use the official promulgated publication for questions of legal effect.",
+        "The recent 2026 update and its effect on eligibility or procedure have not been mapped in this library review."
+      ],
+      "document_path": "../documents/legislation/es-rd-141-2021-asistencia-juridica-gratuita-consolidated.md",
+      "document_sha256": "9929570afd5c0f761d313254f2c43150cd33d3169d585b3dbb3f8ec7110869e0",
+      "document_bytes": 122225
     },
     "es-19": {
       "status": "usable_official_reference",
       "publisher": "Agencia Estatal Boletín Oficial del Estado (BOE)",
       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1981-10325",
-      "checked_on": "2026-10-21",
+      "checked_on": "2026-10-25",
       "language": "Spanish",
-      "version_or_cutoff": "BOE consolidated record; latest displayed update 2009-11-04.",
-      "scope": "Ley Orgánica 3/1981 establishing the national Defensor del Pueblo.",
-      "reviewed_content": "The official record identifies the law and displays an informational consolidated version and last-update date.",
+      "version_or_cutoff": "BOE consolidated record; latest displayed update 2009-11-04. API metadata timestamp 2025-12-16T16:55:38Z is separate.",
+      "scope": "Statutory basis for complaints and oversight by Spain’s national Defensor del Pueblo. This is a public-oversight route, not a procedural appeal.",
+      "reviewed_content": "The official BOE page identifies Ley Orgánica 3/1981, de 6 de abril, del Defensor del Pueblo., BOE-A-1981-10325, publication on 1981-05-07, entry into force on 1981-05-27, and latest displayed text update 2009-11-04. The page was checked on 2026-10-25. API metadata timestamp 2025-12-16T16:55:38Z is separate from the displayed text date.",
       "limitations": [
-        "Autonomous-community ombuds institutions are separate.",
-        "A complaint to the Defensor del Pueblo is not an appeal and this link does not suspend procedural deadlines."
-      ]
+        "Informational consolidation only; use the official promulgated publication for questions of legal effect.",
+        "Autonomous-community ombuds institutions are separate; a complaint does not replace an appeal or suspend deadlines."
+      ],
+      "document_path": "../documents/legislation/es-lo-3-1981-defensor-pueblo-consolidated.md",
+      "document_sha256": "d8711bfa13d0692f7ab254b22ca45d41611ae6b9eccb462bc8c364b8a69c39e1",
+      "document_bytes": 37531
     },
     "es-03-original": {
       "status": "usable_official_reference",
       "publisher": "Agencia Estatal Boletín Oficial del Estado (BOE)",
-      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-22438",
-      "checked_on": "2026-10-21",
+      "url": "https://www.boe.es/eli/es/l/2007/12/28/54/con",
+      "checked_on": "2026-10-25",
       "language": "Spanish",
-      "version_or_cutoff": "BOE consolidated record; latest displayed update 2021-03-22.",
-      "scope": "Ley 54/2007 on international adoption and recognition-related provisions.",
-      "reviewed_content": "The BOE record identifies the law and displayed consolidation date.",
+      "version_or_cutoff": "BOE consolidated record; latest displayed update 2021-03-22. API metadata timestamp 2025-12-19T11:21:30Z is separate.",
+      "scope": "International-adoption procedure and related recognition provisions. Use only for adoption, parentage or recognition issues within this law’s scope.",
+      "reviewed_content": "The official BOE page identifies Ley 54/2007, de 28 de diciembre, de Adopción internacional., BOE-A-2007-22438, publication on 2007-12-29, entry into force on 2007-12-30, and latest displayed text update 2021-03-22. The page was checked on 2026-10-25. API metadata timestamp 2025-12-19T11:21:30Z is separate from the displayed text date.",
       "limitations": [
-        "Use only for issues involving international adoption, parentage or recognition within its statutory scope.",
-        "Informational consolidation only."
-      ]
+        "Informational consolidation only; use the official promulgated publication for questions of legal effect.",
+        "This law is not a general residence or family-member eligibility instrument."
+      ],
+      "document_path": "../documents/legislation/es-ley-54-2007-adopcion-internacional-consolidated.md",
+      "document_sha256": "54aa1486b8892f7ae78450c009a41bcb1ff2c07ebd77f85eddaf28a4d2b2bd11",
+      "document_bytes": 83406
     },
     "es-04-original": {
       "status": "usable_official_reference",
       "publisher": "Agencia Estatal Boletín Oficial del Estado (BOE)",
-      "url": "https://www.boe.es/eli/es/rd/1889/07/24/%281%29/con",
-      "checked_on": "2026-10-21",
+      "url": "https://www.boe.es/eli/es/rd/1889/07/24/(1)/con",
+      "checked_on": "2026-10-25",
       "language": "Spanish",
-      "version_or_cutoff": "BOE consolidated record; latest displayed update 2025-01-03.",
-      "scope": "Spanish Civil Code, limited to relevant family, parentage, marriage and private-international-law provisions.",
-      "reviewed_content": "The BOE record identifies the Civil Code and displays its consolidated-text caveat and version date.",
+      "version_or_cutoff": "BOE consolidated record; latest displayed update 2025-01-03. API metadata timestamp 2026-09-07T12:59:34Z is separate.",
+      "scope": "Spanish Civil Code, limited to the relevant marriage, parentage, family-status and private-international-law provisions. Select provisions for a defined issue.",
+      "reviewed_content": "The official BOE page identifies Real Decreto de 24 de julio de 1889 por el que se publica el Código Civil., BOE-A-1889-4763, publication on 1889-07-25, entry into force on 1889-08-16, and latest displayed text update 2025-01-03. The page was checked on 2026-10-25. API metadata timestamp 2026-09-07T12:59:34Z is separate from the displayed text date.",
       "limitations": [
-        "Only provisions relevant to the defined family or status issue should be relied on; the Code is broad.",
-        "Informational consolidation only."
-      ]
+        "Informational consolidation only; use the official promulgated publication for questions of legal effect.",
+        "The Code is broad; this local copy does not imply that every provision is relevant to a source-pack topic."
+      ],
+      "document_path": "../documents/legislation/es-codigo-civil-consolidated.md",
+      "document_sha256": "999fb14a4697bd2964cad1406cc77e122d32b524e09fb4a7cfdcc88aaae8160d",
+      "document_bytes": 1242706
     },
     "es-47": {
       "status": "usable_official_reference",
@@ -239,7 +286,10 @@
       "limitations": [
         "This original amendment is not a stand-alone current consolidation.",
         "The latest RD 1155/2024 consolidation is dated 2026-09-22; map each amendment or judgment only when relevant to the provision under review."
-      ]
+      ],
+      "document_path": "../documents/legislation/es-rd-316-2026-amendment-reference.md",
+      "document_sha256": "7cfc9249dddfb9864d3b0fe7d7562b51f3e8fc4d807c2296184cdbb831b5545c",
+      "document_bytes": 1048
     },
     "es-48": {
       "status": "usable_official_reference",
@@ -253,7 +303,10 @@
       "limitations": [
         "The judgment is a three-page published disposition, not the complete reasoning; use it to identify the operative result and consult the complete official judgment where legal reasoning or application is material.",
         "No case-specific legal conclusion or full Article 20 TFEU analysis is accepted here."
-      ]
+      ],
+      "document_path": "../documents/legislation/es-supreme-court-868-2026-boe-a-2026-19632-reference.md",
+      "document_sha256": "668665e73d4d8403261f9df5d3082469ecd4abf5d84dd9862b81d2151e342492",
+      "document_bytes": 1401
     },
     "es-01": {
       "status": "usable_official_reference",
@@ -266,7 +319,10 @@
       "reviewed_content": "The EU portal's Spanish route is live and identifies BOE as Spain's national-law destination.",
       "limitations": [
         "N-Lex is not the publisher, legal text, current-version record, or a court/guidance corpus."
-      ]
+      ],
+      "document_path": "../documents/guidance/es-n-lex-spain-national-law-discovery.md",
+      "document_sha256": "93a51ea85ab2c8d0dc212c66df581d38788bd57d4721fb1763b2621d8a7ed17f",
+      "document_bytes": 1002
     },
     "es-10": {
       "status": "usable_official_reference",
@@ -280,7 +336,10 @@
       "limitations": [
         "This Agreement is distinct from Directive 2004/38 and Spanish administrative practice; check applicable later protocols or joint-committee acts when material.",
         "It does not establish the administrative steps in Spain by itself."
-      ]
+      ],
+      "document_path": "../documents/legislation/es-eu-switzerland-free-movement-agreement-reference.md",
+      "document_sha256": "5de7595b90cb608cbc3ed97fb37cdcd6a565f87b87e066251ed7a184356a164f",
+      "document_bytes": 1158
     },
     "es-22": {
       "status": "usable_official_reference",
@@ -294,7 +353,10 @@
       "limitations": [
         "Its Spanish-national-family note is not the current source for the distinct Chapter VII route; use Hoja 18 and RD 1155/2024 for that route.",
         "Recheck current law for the issue and filing date; the page is not legislation."
-      ]
+      ],
+      "document_path": "../documents/procedure/es-hoja-63-permanent-eu-family-card-reference.md",
+      "document_sha256": "4249ad471e0926282ed35c370935195b201854a39c924db2354998d02e627e76",
+      "document_bytes": 1094
     },
     "es-28": {
       "status": "usable_official_reference",
@@ -308,21 +370,28 @@
       "limitations": [
         "Guidance is expressly orientative; the regulation controls.",
         "It does not resolve returning-Spanish free-movement rights or the EU/EEA/Swiss routes."
-      ]
+      ],
+      "document_path": "../documents/procedure/es-hoja-18-spanish-national-family-residence-reference.md",
+      "document_sha256": "ee39a95b6a3b0bbdc370fb28a4ca417466c1c53ccdaeab18b09093e01b0958b8",
+      "document_bytes": 1094
     },
     "es-33": {
       "status": "usable_official_reference",
       "publisher": "National Police, Spain",
       "url": "https://sede.policia.gob.es/portalCiudadano/_es/tramites_extranjeria_tramite_certificadoregistro_ciudadanoue.php",
-      "checked_on": "2026-10-21",
+      "checked_on": "2026-10-25",
       "language": "Spanish",
-      "version_or_cutoff": "Live procedure page inspected 2026-10-21; no stable version date observed in the inspected page.",
+      "version_or_cutoff": "Live Police procedure page displayed 2026-10-25. No stable version history was exposed.",
       "scope": "EU/EEA citizen registration procedure; the page also identifies Swiss citizens in its scope, EX-18, fee model 790/012 and filing locations.",
-      "reviewed_content": "The official Police page states personal filing within three months, the responsible provincial immigration office or Police station, EX-18 and fee evidence.",
+      "reviewed_content": "The current official Police page identifies the EU registration certificate, applicant groups, personal filing within three months, provincial Immigration Office or Police station, EX-18, proof of fee 790/012, identity and Article 7 evidence. The page displays the current date and current links to the form and fee service.",
       "limitations": [
-        "The Swiss legal basis is separate even though the Police operational page groups Swiss nationals with EU/EEA citizens.",
-        "Province-specific appointments, fees and office availability still require verification."
-      ]
+        "The Swiss legal basis is distinct even though the page groups Swiss citizens operationally with EU/EEA applicants.",
+        "Office-specific appointments and availability were not checked. The 19 October captured page conversion is not accepted as a local source copy.",
+        "The page lists remedy information; no case-specific deadline analysis has been made."
+      ],
+      "document_path": "../documents/procedure/es-police-eu-registration-procedure.md",
+      "document_sha256": "ac677fa5980676d0b3c86df08b95feac83a52d932866b444969fd6a8a70f6d60",
+      "document_bytes": 1427
     },
     "es-50": {
       "status": "usable_official_reference",
@@ -336,7 +405,10 @@
       "limitations": [
         "This is the closest official published text, not a consolidated version; check a specific later instruction or material legal change when relevant.",
         "It does not by itself establish the full Withdrawal Agreement eligibility test or current provincial appointments, fees and forms."
-      ]
+      ],
+      "document_path": "../documents/procedure/es-boe-a-2020-7276-article-18-4-instruction-reference.md",
+      "document_sha256": "8812cc584a7f9945b2501824b8f7d9b8761c681b9bf8526d3ae3e38a17ece3b8",
+      "document_bytes": 1393
     },
     "es-51": {
       "status": "usable_official_reference",
@@ -350,7 +422,10 @@
       "limitations": [
         "The page and linked guide still describe EES and ETIAS rollout dates as future events in 2024/2025; do not rely on those time-sensitive statements for current border procedures.",
         "Current eligibility, forms, filing channels and appointment arrangements need issue-specific checking against the current official route."
-      ]
+      ],
+      "document_path": "../documents/procedure/es-brexit-protected-residence-reference.md",
+      "document_sha256": "803d414999df10367e8d3b10d541d0393ec77f0a59dd8a96889c472ada8d7387",
+      "document_bytes": 1398
     },
     "es-52": {
       "status": "usable_official_reference",
@@ -365,7 +440,533 @@
         "This is nonbinding Ministry guidance, not legislation; use it with the Withdrawal Agreement and the BOE-published instruction.",
         "Its EES and ETIAS timing statements are stale as of this review date; check current border-system rules separately.",
         "The September 2024 guide may not reflect later changes to law or administrative practice."
-      ]
+      ],
+      "document_path": "../documents/procedure/es-brexit-family-guide-2024-reference.md",
+      "document_sha256": "856412a5aa5647b370738cee995a8e4a88276dcf0af7f5c6ae1c9f39033ab369",
+      "document_bytes": 1304
+    },
+    "es-21": {
+      "status": "usable_official_reference",
+      "publisher": "Ministerio de Inclusión, Seguridad Social y Migraciones",
+      "url": "https://bibliovirtual.inclusion.gob.es/web/migraciones/w/62.-tarjeta-de-residencia-de-familiar-de-ciudadano-de-la-union-europea",
+      "checked_on": "2026-10-25",
+      "language": "Spanish",
+      "version_or_cutoff": "Official Ministry page and linked PDF state latest update May 2025.",
+      "scope": "Dated operational guidance for a residence card for non-EU/EEA/Swiss family members of EU/EEA/Swiss citizens. It distinguishes Spanish nationals who exercised free movement (EX19 route) from other Spanish-national-family cases (EX24 route).",
+      "reviewed_content": "The current official Ministry page and linked PDF identify Hoja 62, display May 2025 as the last update, state that the page is merely orientative and that the rules in force at filing apply, list the applicable citizen categories, requirements, evidence and procedure, and distinguish the EX19 free-movement route from EX24 in other Spanish-national-family cases.",
+      "limitations": [
+        "Dated, nonbinding guidance; verify the legislation and operational procedure in force at filing.",
+        "The page/PDF date predates later legal changes and should not be treated as a current legal consolidation.",
+        "No local copy was accepted: the saved HTML conversion includes navigation noise, the raw page capture is unavailable locally, and live retrieval returned HTTP 403. The official link remains usable."
+      ],
+      "document_path": "../documents/procedure/es-hoja-62-eu-family-residence-card-reference.md",
+      "document_sha256": "a0bec8428dfaf0592d5725c205c0ae78c6a47a81967e90f585efb923799ef2cc",
+      "document_bytes": 1695
+    },
+    "es-25": {
+      "status": "usable_official_reference",
+      "publisher": "Ministry of Inclusion, Social Security and Migration",
+      "url": "https://inclusion.gob.es/documents/d/migraciones/ex18-formulario-inscripcion-en-el-rce-residencia-ciudadano-de-la-ue-1.pdf",
+      "checked_on": "2026-10-25",
+      "language": "Spanish",
+      "version_or_cutoff": "Official Ministry general-forms index checked 2026-10-25 lists this EX-18 PDF. The PDF is three pages and prints form version 03. No stable revision history is published.",
+      "scope": "Official application form for registration in the Central Register of Foreign Nationals for an EU citizen; it supports but does not determine the underlying residence conditions or filing evidence.",
+      "reviewed_content": "The current Ministry general-forms index lists EX-18 and links to this attachment. The PDF title identifies the Central Register registration application, the form code is EX-18, and the printed revision is 03. The three-page source was retained as the original PDF; its exact response SHA-256 and byte length match the retrieval manifest. The form carries the Ministry notice that official models may be reproduced free of charge and may not be sold.",
+      "limitations": [
+        "The Ministry index exposes no stable revision history; recheck the parent index and form identity before relying on a later copy.",
+        "The form is an application model, not proof of substantive eligibility, a complete evidence checklist, or current local appointment practice.",
+        "Read with Real Decreto 240/2007 and any applicable rules; the form alone does not establish the separate Swiss legal basis."
+      ],
+      "document_path": "../documents/forms/es-ex-18-eu-citizen-registration-application.pdf",
+      "document_sha256": "c4825d1f1289039fb1f6fbdc7ec67d81066aaba758bb3274ce12e94b714776fb",
+      "document_bytes": 616900
+    },
+    "es-26": {
+      "status": "usable_official_reference",
+      "publisher": "Ministry of Inclusion, Social Security and Migration",
+      "url": "https://inclusion.gob.es/documents/d/migraciones/ex19-formulario-tarjeta-de-residencia-de-familiar-de-ciudadano-de-la-ue.pdf",
+      "checked_on": "2026-10-25",
+      "language": "Spanish",
+      "version_or_cutoff": "Official Ministry general-forms index checked 2026-10-25 lists this EX-19 PDF. The PDF is three pages; metadata dates it 2025-11-12. No stable revision history is published.",
+      "scope": "Official application form for a residence card for a family member of a non-Spanish EU citizen under the EU free-movement administrative route.",
+      "reviewed_content": "The current Ministry general-forms index lists EX-19 and links to this attachment. The three-page PDF title and code identify the application for a residence card for a family member of an EU citizen. Its metadata shows 2025-11-12. The exact source SHA-256 and byte length match the retrieval manifest. The instructions contain an apparent erroneous reference to “Ley 39/2014”; the form text is preserved as published, and the procedural statute must be checked against the current official law rather than silently corrected here.",
+      "limitations": [
+        "The publisher does not expose a stable revision history; the 2025-11-12 PDF metadata is evidence about this file, not a guaranteed legal effective date.",
+        "The instructions refer to “Ley 39/2014,” an apparent miscitation; verify procedure against Ley 39/2015 and applicable special rules.",
+        "This is the EU-family application and must remain distinct from EX-24 for specified family members of Spanish nationals. It does not establish eligibility, a complete checklist, or current local appointment practice."
+      ],
+      "document_path": "../documents/forms/es-ex-19-eu-family-residence-card-application.pdf",
+      "document_sha256": "233fe7d753723a65ef2ee1d3eceb98f2bdb81e5dd86be8e81c061f157ceebae7",
+      "document_bytes": 146103
+    },
+    "es-27": {
+      "status": "usable_official_reference",
+      "publisher": "Ministry of Inclusion, Social Security and Migration",
+      "url": "https://inclusion.gob.es/documents/d/migraciones/ex24-formulario-autorizacion-de-residencia-temporal-de-familiares-de-personas-con-nacionalidad-espanola-editable-1.pdf",
+      "checked_on": "2026-10-25",
+      "language": "Spanish",
+      "version_or_cutoff": "Official Ministry general-forms index checked 2026-10-25 lists editable and non-editable EX-24 variants. The retained editable five-page PDF has creation and modification metadata dated 2026-05-26.",
+      "scope": "Official application form for temporary residence of specified family members of a person with Spanish nationality under LO 4/2000 and RD 1155/2024.",
+      "reviewed_content": "The current Ministry general-forms index lists EX-24 editable and non-editable variants. The retained five-page editable attachment identifies the Spanish-national-family route and cites LO 4/2000 and RD 1155/2024; PDF creation and modification metadata are 2026-05-26. The exact source hash and byte length match the retrieval manifest. The form states that official models may be reproduced by any printing method, are free and may not be sold.",
+      "limitations": [
+        "The EX-24 route for specified family of Spanish nationals is distinct from EU-family free movement and EX-19.",
+        "The Ministry also lists a non-editable variant; this local copy is the editable version linked in the reviewed index.",
+        "The form is not a complete legal checklist or a substitute for RD 1155/2024, applicable instructions, or current local filing practice."
+      ],
+      "document_path": "../documents/forms/es-ex-24-spanish-national-family-residence-application-editable.pdf",
+      "document_sha256": "ce5581c30c411010168ce3aec1e784587b02cbfb093fd5a1c60fba07d33e5341",
+      "document_bytes": 241072
+    },
+    "es-02": {
+      "status": "usable_official_reference",
+      "publisher": "Agencia Estatal Boletín Oficial del Estado (AEBOE)",
+      "url": "https://www.boe.es/datosabiertos/api/api.php?lang=es",
+      "checked_on": "2026-10-25",
+      "language": "Spanish",
+      "version_or_cutoff": "Live documentation page inspected 2026-10-25; no stable page revision date was exposed. Earlier HTML capture is dated 2026-10-19.",
+      "scope": "Official technical documentation for BOE access to consolidated-law records, BOE/BORME issue summaries and auxiliary tables.",
+      "reviewed_content": "The current official documentation page describes consolidated-law search, date/query/offset/limit parameters, retrieval by BOE identifier, metadata and text/version routes, with technical documents and XSD references. This review accepts the page as a source for what AEBOE documents; it does not test a live API endpoint.",
+      "limitations": [
+        "The captured page is large and interactive; its local text conversion is incomplete and is not accepted as a copy.",
+        "No live API response, unauthenticated access, rate limit, schema response, error behavior or deterministic retrieval was verified.",
+        "A technical specification does not prove service availability or legal version completeness. Read BOE reuse terms and the consolidated-text caveat separately."
+      ],
+      "document_path": "../documents/guidance/es-boe-open-data-api-reference.md",
+      "document_sha256": "6a4267d27e65ae4a46f9759c258e4de6962569e0ed8093f1451ae68be976fa89",
+      "document_bytes": 1510
+    },
+    "es-03": {
+      "status": "usable_official_reference",
+      "publisher": "Agencia Estatal Boletín Oficial del Estado (AEBOE)",
+      "url": "https://www.boe.es/datosabiertos/faq/consolidada.php",
+      "checked_on": "2026-10-25",
+      "language": "Spanish",
+      "version_or_cutoff": "Current FAQ page checked 2026-10-25; no fixed revision date was displayed. Local text is an exact dated extraction captured 2026-10-19.",
+      "scope": "Official explanation of BOE consolidated-legislation status, version dates, metadata and API representations.",
+      "reviewed_content": "The FAQ says consolidated texts have no official value, reflect express amendments and corrections rather than tacit changes or subjective interpretation, and are informational. It describes version labels, estado_consolidacion values, BOE-ID lookup and text blocks. Key sections were compared with the live official page on 2026-10-25.",
+      "limitations": [
+        "The FAQ is descriptive documentation and does not replace the official promulgated publication.",
+        "The local text is a dated extraction; check the live FAQ and BOE instrument record for later changes.",
+        "Documented update intervals do not establish the current status of any individual law."
+      ],
+      "document_path": "../documents/guidance/es-boe-consolidated-legislation-api-faq.md",
+      "document_sha256": "a0d8c4b425877ccc9977a9d472db41f882333df477524de5e7efe468090c2503",
+      "document_bytes": 10599
+    },
+    "es-04": {
+      "status": "usable_official_reference",
+      "publisher": "Agencia Estatal Boletín Oficial del Estado (AEBOE)",
+      "url": "https://www.boe.es/datosabiertos/faq/boe.php",
+      "checked_on": "2026-10-25",
+      "language": "Spanish",
+      "version_or_cutoff": "Current FAQ page checked 2026-10-25; no fixed revision date was displayed. Local text is an exact dated extraction captured 2026-10-19.",
+      "scope": "Official explanation of the BOE gazette, issue summaries, publication formats and summary API.",
+      "reviewed_content": "The live FAQ describes the BOE as the state official gazette, its issue summaries and sections, their availability since September 1960, and API links to source documents in PDF, XML and HTML. It identifies the electronically signed PDF as the authentic official format. Key sections were compared with the live official page on 2026-10-25.",
+      "limitations": [
+        "The FAQ documents the API but no live API call was performed in this review.",
+        "The local copy is a dated text extraction; consult the current BOE issue and signed PDF for an individual publication.",
+        "The FAQ points to separate reuse conditions."
+      ],
+      "document_path": "../documents/guidance/es-boe-daily-issue-api-faq.md",
+      "document_sha256": "361fef2ece475b3d4977b4d956d6e87ee35f67f31ed709d852c577b9acde9a8e",
+      "document_bytes": 6937
+    },
+    "es-05": {
+      "status": "usable_official_reference",
+      "publisher": "Agencia Estatal Boletín Oficial del Estado (AEBOE)",
+      "url": "https://www.boe.es/informacion/aviso_legal/index.php",
+      "checked_on": "2026-10-25",
+      "language": "Spanish",
+      "version_or_cutoff": "Reuse conditions cite a model license approved 2024-06-27; current page checked 2026-10-25. Local text is an exact dated extraction captured 2026-10-19.",
+      "scope": "General reuse terms for documents hosted on the BOE electronic site and stated exclusions.",
+      "reviewed_content": "The live legal notice identifies general reuse conditions approved 27 June 2024, their general scope and special-use exceptions; the terms address attribution, adaptations, informational consolidated text, update metadata, and content outside the general conditions. The BOE Legal Digital Library is separately governed. Key provisions were compared with the current official page on 2026-10-25.",
+      "limitations": [
+        "Some BOE-hosted materials have special terms or third-party rights; do not infer that the general terms cover every item.",
+        "The Legal Digital Library is excluded from the general conditions and has separate licensing; verify the individual item.",
+        "The local text is a dated extraction; recheck the live terms before reuse."
+      ],
+      "document_path": "../documents/guidance/es-boe-reuse-conditions.md",
+      "document_sha256": "aae23e3032617e6d3bba2985b1055008483599126b653f1daf44a5e8fd65ec7e",
+      "document_bytes": 21074
+    },
+    "es-29": {
+      "status": "usable_official_reference",
+      "publisher": "Ministry of Inclusion, Social Security and Migration",
+      "url": "https://inclusion.gob.es/documents/d/migraciones/instrucciones-sem-2-2025-sobre-la-residencia-temporal-de-familiares-de-personas-con-nacionalidad-espanola",
+      "checked_on": "2026-10-25",
+      "language": "Spanish",
+      "version_or_cutoff": "Signed 2025-05-13. The current Ministry instructions index checked 2026-10-25 still lists SEM 2/2025; no fixed update history is exposed.",
+      "scope": "Operational interpretation of the new temporary residence status for family members of Spanish nationals introduced by RD 1155/2024; its route distinctions and administrative handling.",
+      "reviewed_content": "The official instructions index lists SEM 2/2025 among 2025 instructions. The linked nine-page PDF identifies SEM 2/2025, signer/date 2025-05-13, and a CSV validation route. The Ministry index also lists SEM 1/2026 and SEM 2/2026 on other subjects; no later instruction on this same subject was identified in that bounded index check. A 2026 Ministry management criterion also refers to SEM 2/2025.",
+      "limitations": [
+        "This administrative instruction is not legislation and does not replace LO 4/2000, RD 1155/2024 or the official judgment record.",
+        "It predates Supreme Court judgment BOE-A-2026-19632, which affects parts of RD 1155/2024; the effect of that judgment on each instruction paragraph has not been mapped.",
+        "The PDF contains a CSV/signature validation route; the code was not independently checked through the validation service. The publisher copy remains controlling.",
+        "The bounded Ministry instructions-index check does not prove that no later management criterion or local practice exists."
+      ],
+      "document_path": "../documents/procedure/es-sem-instructions-2-2025-family-of-spanish-nationals.pdf",
+      "document_sha256": "1c7ea39e4b707559e090b01342311c86b18c9e5b10a60f61ff3f30789926bec8",
+      "document_bytes": 464495
+    },
+    "es-34": {
+      "status": "usable_official_reference",
+      "publisher": "Spanish National Police",
+      "url": "https://sede.policia.gob.es/Tasa790_012/",
+      "checked_on": "2026-10-25",
+      "language": "Spanish",
+      "version_or_cutoff": "Live form-generator landing page displayed version 1.0.11 on 2026-10-25.",
+      "scope": "Official service for completing and downloading the model 790, code 012 fee form.",
+      "reviewed_content": "The current National Police service page identifies the form generator and invites users to complete and download the model. The landing page does not state a single fee amount. The EU registration procedure links separately to the amount and payment-location route.",
+      "limitations": [
+        "This is a dynamic form-generation service; the saved short conversion is not a complete copy.",
+        "No fee amount or eligibility mapping is accepted from the landing page; use the current procedure-specific amount link.",
+        "A page version number does not establish that every fee schedule or payment channel is current."
+      ],
+      "document_path": "../documents/forms/es-police-tasa-790-012-service.md",
+      "document_sha256": "e526b4719d21e40b74a4eb952304baac4d01bd0362b6497d23f7227e3693a9a3",
+      "document_bytes": 894
+    },
+    "es-35": {
+      "status": "usable_official_reference",
+      "publisher": "Ministry for Digital Transformation and the Civil Service",
+      "url": "https://sede.administracionespublicas.gob.es/ayuda/faq/extranjeria",
+      "checked_on": "2026-10-25",
+      "language": "Spanish",
+      "version_or_cutoff": "Local content capture dated 2026-10-19; official search index retrieved 2026-10-25 reported the FAQ last crawled about three weeks earlier. No stable page revision date exposed.",
+      "scope": "Technical and procedural help for the central online immigration appointment service, including office-dependent appointment availability.",
+      "reviewed_content": "The official indexed FAQ lists categories for appointment, case status, renewals, electronic notices and applications. It states that not all Immigration Offices use the appointment system and directs non-technical questions to the relevant office/060. An official help page links the FAQ and technical contact route. The live FAQ URL returned HTTP 503 to the research client on 2026-10-25; the result is not evidence of publisher downtime.",
+      "limitations": [
+        "Operational content can change; the indexed page was not freshly fetched and the local 19 October conversion is not accepted as current.",
+        "A zero-result appointment search does not establish that no legal filing route exists.",
+        "This FAQ concerns the appointment service, not legal eligibility, substantive filing requirements or deadlines."
+      ],
+      "document_path": "../documents/procedure/es-immigration-appointment-faq-reference.md",
+      "document_sha256": "956e3abfe459bd7b81bd39e05d1ad92863fffaee0066ca6745efa180471e07f0",
+      "document_bytes": 1320
+    },
+    "es-40": {
+      "status": "usable_official_reference",
+      "publisher": "Agencia Española de Protección de Datos (AEPD)",
+      "url": "https://www.aepd.es/preguntas-frecuentes/13-reclamaciones/FAQ-1303-puedo-interponer-una-reclamacion-respecto-al-ejercicio-de-los-derechos-de-proteccion-de-datos",
+      "checked_on": "2026-10-25",
+      "language": "Spanish",
+      "version_or_cutoff": "Live FAQ checked 2026-10-25; no stable revision date was exposed.",
+      "scope": "AEPD complaint route after exercise of specified data-protection rights; national authority guidance.",
+      "reviewed_content": "The FAQ permits a complaint where the controller or processor has not replied in time or the response is unsatisfactory. It identifies electronic and postal channels, asks for the prior rights request and response, and describes optional Autocontrol mediation for certain telecom complaints.",
+      "limitations": [
+        "Check which authority is competent for the relevant body; regional data-protection authorities may cover regional public bodies.",
+        "This is guidance, not a determination of a complaint or a replacement for statutory deadlines.",
+        "Live filing details may change; no local source copy was accepted."
+      ],
+      "document_path": "../documents/oversight/es-aepd-data-rights-complaint-route.md",
+      "document_sha256": "ae93d6191c96715070df78d25600f31dbbd66deea8370829369c0618c66731c1",
+      "document_bytes": 1454
+    },
+    "es-41": {
+      "status": "usable_official_reference",
+      "publisher": "Consejo de Transparencia y Buen Gobierno (CTBG)",
+      "url": "https://consejodetransparencia.es/reclamaciones/como_reclamar/que-debes-saber",
+      "checked_on": "2026-10-25",
+      "language": "Spanish",
+      "version_or_cutoff": "Live page checked 2026-10-25; the decisions index showed 2026 material through September; no stable page revision date was exposed.",
+      "scope": "Public-information complaint guidance for state authorities and listed autonomous/local arrangements.",
+      "reviewed_content": "The page describes optional, free complaints, channel choices, state-route deadlines, a three-month decision period, and CTBG jurisdiction for state bodies and some autonomous/local bodies by agreement.",
+      "limitations": [
+        "For autonomous-community and local requests, check the competent regional body and its law; the CTBG says some regional deadlines may be shorter.",
+        "The stated periods are page guidance and must be checked against the rules and specific request.",
+        "This is a public-information remedy, not an immigration merits appeal; no local source copy was accepted."
+      ],
+      "document_path": "../documents/oversight/es-ctbg-public-information-complaint-guide.md",
+      "document_sha256": "0505354584c82b1ce6a6bcbcccb776cedfcaaeab5519a8342df0717f3aca3a0f",
+      "document_bytes": 1924
+    },
+    "es-42": {
+      "status": "usable_official_reference",
+      "publisher": "Defensor del Pueblo (Spain)",
+      "url": "https://www.defensordelpueblo.es/grupo-social/extranjeros/",
+      "checked_on": "2026-10-25",
+      "language": "Spanish",
+      "version_or_cutoff": "Live topic page checked 2026-10-25; news items included 20 October 2026 and no stable page revision date was shown.",
+      "scope": "Topic hub for foreign nationals, consular supervision, nationality-delay complaints and detention-centre visits.",
+      "reviewed_content": "The page says foreign nationals may approach the institution regardless of documentation status or age, describes supervision of Spanish consulates abroad, complaints about nationality-by-residence delays and visits to foreigner detention centres.",
+      "limitations": [
+        "A topic hub and oversight route is not a statutory appeal or complete immigration remedy map.",
+        "Linked decisions and reports have separate dates and must be reviewed individually.",
+        "Regional ombuds institutions are separate; no local source copy was accepted."
+      ],
+      "document_path": "../documents/oversight/es-defensor-extranjeros-topic-hub.md",
+      "document_sha256": "e3e61c038c838eabc3edfdd522f5f88b466645253f6b259c9651659225148af9",
+      "document_bytes": 1050
+    },
+    "es-43": {
+      "status": "usable_official_reference",
+      "publisher": "Defensor del Pueblo (Spain)",
+      "url": "https://www.defensordelpueblo.es/el-defensor/como-te-podemos-ayudar/",
+      "checked_on": "2026-10-25",
+      "language": "Spanish",
+      "version_or_cutoff": "Live complaint guidance checked 2026-10-25; no stable page revision date was displayed.",
+      "scope": "Eligibility, process, limits and channels for complaints to the national Defensor del Pueblo.",
+      "reviewed_content": "The page says persons and organisations may complain for free, lists online, post, fax and in-person routes, and explains the institution cannot annul administrative acts. It states a complaint does not suspend administrative or judicial deadlines and lists matters outside its competence.",
+      "limitations": [
+        "Check the institution’s competence and statutory appeal routes separately.",
+        "The source lists a one-year exclusion and other inadmissibility cases; the specific facts and current law require checking.",
+        "This oversight route is not an appeal; no local source copy was accepted."
+      ],
+      "document_path": "../documents/oversight/es-defensor-complaint-process.md",
+      "document_sha256": "5f5d5589dc1fbdd0d30b7edb8b08fc47f4a443c38324d76607f0dbf2873ac6aa",
+      "document_bytes": 1335
+    },
+    "es-44": {
+      "status": "usable_official_reference",
+      "publisher": "Consejo General del Poder Judicial (CGPJ), Centro de Documentación Judicial (CENDOJ)",
+      "url": "https://www.poderjudicial.es/search/indexAN.jsp",
+      "checked_on": "2026-10-25",
+      "language": "Spanish",
+      "version_or_cutoff": "Search portal capture dated 2026-10-19; official indexed CENDOJ result pages and reuse notice were inspected 2026-10-25. Direct landing-page access returned 403 to the research client.",
+      "scope": "Official public case-law discovery and consultation route only.",
+      "reviewed_content": "The official CGPJ/CENDOJ domain and indexed jurisprudence result pages identify the public search and its record formats. The notice states personal consultation is permitted, commercial use and bulk download are not, and database reuse follows the CENDOJ process.",
+      "limitations": [
+        "The direct landing page did not load in the research client; this does not establish publisher unavailability.",
+        "No immigration queries were run. Search filters, pagination, corpus coverage and update behaviour are unverified; no case-law coverage is claimed.",
+        "Do not use for commercial or bulk download; check current CENDOJ reuse conditions before any reuse."
+      ],
+      "document_path": "../documents/guidance/es-cendoj-case-law-search-discovery.md",
+      "document_sha256": "d4c79c86818decc02d46ea5e9a2354c1f194c37e612362232ef191ede7c682dc",
+      "document_bytes": 1416
+    },
+    "es-36": {
+      "status": "usable_official_reference",
+      "publisher": "Consulate General of Spain in Brussels, Ministry of Foreign Affairs, European Union and Cooperation (MAEC)",
+      "url": "https://www.exteriores.gob.es/Consulados/bruselas/es/ServiciosConsulares/Paginas/index.aspx?scca=Visados&scco=B%C3%A9lgica&scd=36&scs=Visados+de+familiar+de+ciudadano+de+la+Uni%C3%B3n",
+      "checked_on": "2026-10-25",
+      "language": "Spanish",
+      "version_or_cutoff": "Current official search result reviewed 2026-10-25; no stable page revision date exposed. Direct request returned 403 to the research client.",
+      "scope": "Brussels mission guidance for short-stay visas of qualifying family members of EU, EEA and Swiss citizens.",
+      "reviewed_content": "The official result describes a free and preferential visa route, the 90/180 short-stay limit, family evidence and consular-residence evidence, processing timelines, reasons for refusal and review routes.",
+      "limitations": [
+        "Mission-specific guidance; do not infer the same checklist or filing route for another consulate.",
+        "Verify eligibility and current deadlines against the applicable law and live page.",
+        "No local source copy was accepted; the 403 response is a research-client limitation, not evidence of publisher downtime."
+      ],
+      "document_path": "../documents/procedure/es-consulate-brussels-eu-family-visa-route.md",
+      "document_sha256": "681ef769108fbcbd7b107961a24d8ab19c2e1e8307adadf5915a9ae9725162d1",
+      "document_bytes": 1496
+    },
+    "es-37": {
+      "status": "usable_official_reference",
+      "publisher": "Consulate General of Spain in Rabat, Ministry of Foreign Affairs, European Union and Cooperation (MAEC)",
+      "url": "https://www.exteriores.gob.es/Consulados/rabat/es/ServiciosConsulares/Paginas/Procedimiento-de-solicitudes-de-visado.aspx",
+      "checked_on": "2026-10-25",
+      "language": "Spanish",
+      "version_or_cutoff": "Official result showed a page dated 2026-10-23; procedure reviewed 2026-10-25. Direct request returned 403 to the research client.",
+      "scope": "Rabat consular-district visa submission procedures, including routes for EU/EEA/Swiss-family and Spanish-national-family applications.",
+      "reviewed_content": "The official result distinguishes short-stay EU/EEA/Swiss-family applications from residence visas for family members of Spanish nationals and describes Rabat district eligibility and BLS submission routes.",
+      "limitations": [
+        "Appointment and provider procedures can change; confirm the current notice and applicant district.",
+        "No local source copy was accepted; this is a dated, mission-specific reference.",
+        "No application was submitted and no applicant data was collected."
+      ],
+      "document_path": "../documents/procedure/es-consulate-rabat-visa-submission-procedure.md",
+      "document_sha256": "641c32a6dd6e1640e8858a0451b78201cf87344ecf3f22a22e8664eb56e128a9",
+      "document_bytes": 1415
+    },
+    "es-39": {
+      "status": "usable_official_reference",
+      "publisher": "Ministry of Foreign Affairs, European Union and Cooperation (MAEC)",
+      "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Legalizacion-y-apostilla.aspx",
+      "checked_on": "2026-10-25",
+      "language": "Spanish",
+      "version_or_cutoff": "Official MAEC result reviewed 2026-10-25; no stable revision date exposed. Direct request returned 403 to the research client.",
+      "scope": "MAEC administrative guidance on diplomatic legalisation, apostille, treaty/EU exemptions and related document-authentication services.",
+      "reviewed_content": "The official result distinguishes legalisation from apostille, identifies exemptions under conventions and the EU Public Documents Regulation, and links to country lists, service procedures and sworn-translation information.",
+      "limitations": [
+        "Requirements depend on the document, issuing country, destination and applicable exemption; do not presume authentication is always required.",
+        "Linked country lists and service procedures may change and should be checked live.",
+        "No local source copy was accepted; this note does not establish document content or legal effect."
+      ],
+      "document_path": "../documents/guidance/es-maec-legalisation-apostille-reference.md",
+      "document_sha256": "57c80f2719d2be64be90c35112b51fedbe495a237260a613181e0a57bd85650d",
+      "document_bytes": 1279
+    },
+    "es-20": {
+      "status": "usable_official_reference",
+      "publisher": "Ministry of Inclusion, Social Security and Migration, Spain",
+      "url": "https://inclusion.gob.es/web/migraciones/ciudadano-de-la-union-europea",
+      "checked_on": "2026-10-25",
+      "language": "Spanish",
+      "version_or_cutoff": "Official page indexed 2026-10-23; no stable update date recorded in the reviewed result.",
+      "scope": "Ministry discovery and explanatory hub for EU, EEA EFTA and Swiss citizens and their family members in Spain.",
+      "reviewed_content": "The current official page groups the three user categories for access to information on entry, movement, residence and work, and links information sheets 62, 63 and 65.",
+      "limitations": [
+        "The common information hub does not merge the distinct EU, EEA EFTA and EU–Swiss legal bases.",
+        "The page is guidance and discovery, not a substitute for legislation or the competent operational procedure.",
+        "The previously listed candidate URL differed from the current canonical route; the official current route is recorded here."
+      ],
+      "document_path": "../documents/guidance/es-ministry-eu-eea-swiss-citizens-hub.md",
+      "document_sha256": "b67b3b5f866a96482a20a1d977fcc08b892860c59e5d3bdcba6f5eb42ddb3e3f",
+      "document_bytes": 1149
+    },
+    "es-23": {
+      "status": "usable_official_reference",
+      "publisher": "Ministry of Inclusion, Social Security and Migration, Spain",
+      "url": "https://ciudadaniaexterior.inclusion.gob.es/es/web/migraciones/w/65.-certificado-de-registro-de-ciudadano-de-la-union-europea",
+      "checked_on": "2026-10-25",
+      "language": "Spanish",
+      "version_or_cutoff": "Official sheet last updated May 2025; current official page and attachment link reviewed 2026-10-25.",
+      "scope": "Orientative ministry sheet for the EU citizen registration certificate procedure.",
+      "reviewed_content": "The sheet identifies its orientative status, points readers to the National Police procedure for requirements and documentation, and links a 106 KB PDF attachment.",
+      "limitations": [
+        "The sheet says the rules in force when an application is filed control.",
+        "The Police procedure is the operational source; this note does not accept the PDF attachment as a local copy.",
+        "Do not use this sheet alone as proof of current filing details."
+      ],
+      "document_path": "../documents/procedure/es-hoja-65-eu-registration-certificate-reference.md",
+      "document_sha256": "3a748ddfa526d022b441a11433b36d6474eccc73f1b284aad54fd16ad1723472",
+      "document_bytes": 1120
+    },
+    "es-24": {
+      "status": "usable_official_reference",
+      "publisher": "Ministry of Inclusion, Social Security and Migration, Spain",
+      "url": "https://ciudadaniaexterior.inclusion.gob.es/es/web/migraciones/modelos-generales",
+      "checked_on": "2026-10-25",
+      "language": "Spanish",
+      "version_or_cutoff": "Official index reviewed 2026-10-25; attachments and index membership are mutable.",
+      "scope": "Official parent index for general immigration application forms.",
+      "reviewed_content": "The index lists EX-18, EX-19 and EX-24 with non-editable and editable form options and warns that editable PDFs may not work in every browser.",
+      "limitations": [
+        "This index does not establish which form applies to an individual procedure; consult the governing source.",
+        "Index membership, attachment URLs and file versions can change.",
+        "No additional form copies were downloaded or accepted through this review."
+      ],
+      "document_path": "../documents/forms/es-ministry-general-immigration-forms-index.md",
+      "document_sha256": "d262198dae323549029bb559350dcfdb358c8dd542096c3bcc9fdf53d1cc38d3",
+      "document_bytes": 1010
+    },
+    "es-30": {
+      "status": "usable_official_reference",
+      "publisher": "Ministry of Inclusion, Social Security and Migration, Spain",
+      "url": "https://www.inclusion.gob.es/es/web/migraciones/presentacion-electronica-de-solicitudes-de-estancia-de-residencia-de-residencia-y-trabajo-y-de-tarjeta-de-familiar-de-ciudadano-de-la-union-europea",
+      "checked_on": "2026-10-25",
+      "language": "Spanish",
+      "version_or_cutoff": "Official Ministry page reviewed 2026-10-25; no stable revision date exposed.",
+      "scope": "Official electronic submission route for listed residence and immigration applications, including EU-family cards.",
+      "reviewed_content": "The Ministry page lists eligible application types and says access requires a digital certificate or DNIe. It also describes filing supporting documents and states that an electronic filing produces registry effects.",
+      "limitations": [
+        "Supported procedures, login requirements and portal workflow can change independently of the explanatory page.",
+        "The page does not establish that every procedure or applicant may file electronically.",
+        "No application was submitted and no personal data was entered."
+      ],
+      "document_path": "../documents/procedure/es-electronic-immigration-submission-reference.md",
+      "document_sha256": "49d0a17f3cc4fd152d8c6e933c836124aa1b6fbd9883423cf3ac2da8574a6932",
+      "document_bytes": 1277
+    },
+    "es-31": {
+      "status": "usable_official_reference",
+      "publisher": "Ministry of Inclusion, Social Security and Migration, Spain",
+      "url": "https://www.inclusion.gob.es/es/web/migraciones/informacion-de-contacto",
+      "checked_on": "2026-10-25",
+      "language": "Spanish",
+      "version_or_cutoff": "Official contact page reviewed 2026-10-25; directory links are mutable.",
+      "scope": "Official discovery directory for immigration offices and public contact points in Spain.",
+      "reviewed_content": "The Ministry page links to provincial immigration offices, Police offices that process foreign-national procedures, and the Large Companies and Strategic Groups unit.",
+      "limitations": [
+        "This directory does not determine territorial competence for a particular application.",
+        "Police and immigration-office procedures are distinct; resolve the responsible office from the specific procedure.",
+        "Contact details and office routes can change."
+      ],
+      "document_path": "../documents/procedure/es-immigration-office-contact-directory-reference.md",
+      "document_sha256": "59176386066b4f4f4225fd7e589ee831e22bd91c1993a39950e687ac0c3f2bed",
+      "document_bytes": 1073
+    },
+    "es-32": {
+      "status": "usable_official_reference",
+      "publisher": "Ministry of Territorial Policy and Democratic Memory, Spain; official route linked from the Ministry of Inclusion",
+      "url": "https://sede.administracionespublicas.gob.es/pagina/index/directorio/icpplus/",
+      "checked_on": "2026-10-25",
+      "language": "Spanish",
+      "version_or_cutoff": "Official Ministry guidance reviewed 2026-10-25; the direct appointment endpoint returned HTTP 503 to the research client during this check.",
+      "scope": "Official online appointment route for procedures and offices where appointment booking is enabled.",
+      "reviewed_content": "The Ministry’s official online-procedure guide says the appointment service applies only to procedures and offices for which the option is enabled. It distinguishes immigration-office and Police services.",
+      "limitations": [
+        "A research-client 503 response does not establish that the publisher service is unavailable.",
+        "The appointment portal did not expose live availability in this check; province and procedure determine whether the route applies.",
+        "Do not submit personal data as part of source review."
+      ],
+      "document_path": "../documents/procedure/es-cita-previa-immigration-appointment-route.md",
+      "document_sha256": "91ae817f41ddfe361f836ff295a11e426ba783f8730b5e5dc238b8628166ed72",
+      "document_bytes": 1253
+    },
+    "es-38": {
+      "status": "usable_official_reference",
+      "publisher": "Ministry of Foreign Affairs, European Union and Cooperation (MAEC), Spain",
+      "url": "https://exteriores.gob.es/es/EmbajadasConsulados/Paginas/index.aspx",
+      "checked_on": "2026-10-25",
+      "language": "Spanish",
+      "version_or_cutoff": "Official directory search result reviewed 2026-10-25; directory entries are dynamic.",
+      "scope": "Official discovery directory for Spanish embassies, consulates and permanent representations by country.",
+      "reviewed_content": "The current directory lists missions and consular offices and identifies cases where another country’s embassy is competent.",
+      "limitations": [
+        "The directory is a discovery route, not mission-specific visa guidance.",
+        "Confirm the applicant’s residence, territorial jurisdiction and any representation arrangement with the destination mission.",
+        "No exhaustive mission review or country-specific operational coverage is claimed."
+      ],
+      "document_path": "../documents/procedure/es-maec-embassy-consulate-directory-reference.md",
+      "document_sha256": "9e78d5bbfc71bc90efa18211234ec2c7aeab864d7ed12d49c4127879c7f12658",
+      "document_bytes": 1065
+    },
+    "es-45": {
+      "status": "usable_official_reference",
+      "publisher": "Consejo General del Poder Judicial (CGPJ), Centro de Documentación Judicial (CENDOJ)",
+      "url": "https://www4.poderjudicial.es/search/sentencias/cosa%20juzgada/21/PUB",
+      "checked_on": "2026-10-25",
+      "language": "Spanish",
+      "version_or_cutoff": "Current official indexed notice reviewed 2026-10-25; direct page access was restricted in the research client.",
+      "scope": "Terms for consultation and reuse of the CENDOJ public case-law database.",
+      "reviewed_content": "The notice permits personal consultation, prohibits commercial use and bulk downloading, and directs database or commercial reuse to CGPJ/CENDOJ procedures and conditions.",
+      "limitations": [
+        "Do not use this page as an authorization for bulk collection or commercial reuse.",
+        "No automated ingestion rule or reuse permission is established by this note.",
+        "The direct page returned 403 to the research client; the current official indexed result exposed the notice."
+      ],
+      "document_path": "../documents/guidance/es-cendoj-reuse-conditions-reference.md",
+      "document_sha256": "ef977dbd4503d55e3bf38af5c38a6a95dba00a95ba15a3ed194146bbca8b3adb",
+      "document_bytes": 1103
+    },
+    "es-46": {
+      "status": "usable_official_reference",
+      "publisher": "Constitutional Court of Spain",
+      "url": "https://www.tribunalconstitucional.es/es/jurisprudencia/paginas/resultados-busqueda-sentencias.aspx?pn=1",
+      "checked_on": "2026-10-25",
+      "language": "Spanish",
+      "version_or_cutoff": "Official search page and result interface reviewed 2026-10-25; results are dynamic.",
+      "scope": "Official discovery route for Constitutional Court judgments.",
+      "reviewed_content": "The official page exposes search fields for judgment number, year, descriptive summary and analytical index and displays current result links.",
+      "limitations": [
+        "This is a separate court lane from CENDOJ administrative-court discovery.",
+        "No immigration query batch was run, and no case-law coverage or completeness is claimed.",
+        "Pagination, result updates and search behavior remain untested."
+      ],
+      "document_path": "../documents/guidance/es-constitutional-court-search-discovery-reference.md",
+      "document_sha256": "215e34c4316222b49158fee85011715335b97bb77f40a5a115ec33b32dda179d",
+      "document_bytes": 991
+    },
+    "es-49": {
+      "status": "usable_official_reference",
+      "publisher": "European Union Publications Office (EUR-Lex)",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12020W/TXT",
+      "checked_on": "2026-10-25",
+      "language": "English; multilingual official text also available",
+      "version_or_cutoff": "The current EUR-Lex document page identifies the current consolidated version dated 2026-02-03 and legal status as in force, as amended.",
+      "scope": "Official reference to the EU-UK Withdrawal Agreement, including Part Two on citizens’ rights and the treaty version history.",
+      "reviewed_content": "The official EUR-Lex result identifies CELEX 12020W/TXT, the Agreement title, its in-force status and the 2026-02-03 current consolidation date. The direct English text request displayed a JavaScript/anti-bot check, so the full current text was not reviewed article by article.",
+      "limitations": [
+        "This is accepted as an official link reference only; no local treaty text was accepted.",
+        "The direct English text view was blocked in the research client. Inspect the official current text and relevant provisions before relying on Articles 10 or 18 for a specific issue.",
+        "The Agreement does not by itself establish current Spanish forms, appointments, fees or filing procedures."
+      ],
+      "document_path": "../documents/legislation/es-eu-uk-withdrawal-agreement-current-reference.md",
+      "document_sha256": "24c05818927f4ead00369c143e41ffb6532f615c67ce32c001c89da215d85d49",
+      "document_bytes": 1145
     }
   },
   "dependency_map": [
@@ -460,18 +1061,765 @@
       "handling": "Enumerate all 17 autonomous communities and Ceuta/Melilla, then open the relevant official pages. This is an open research task, not a source rejection."
     },
     {
-      "status": "offered_for_human_review",
+      "status": "targeted_article_review_open",
       "publisher": "European Union Publications Office (EUR-Lex)",
       "site": "https://eur-lex.europa.eu/",
-      "scope": "The whole official EUR-Lex legal-information service, including the current consolidated EU-UK Withdrawal Agreement and its version history.",
-      "reason": "EUR-Lex search results identify the current consolidation dated 3 February 2026, but the direct text view required a JavaScript/anti-bot check in this review client, preventing article-level inspection.",
-      "handling": "Open the current official consolidated text and inspect the relevant provisions in Part Two, especially Articles 10 and 18. Do not require a full-site crawl or API before human review."
+      "scope": "Provision-level review of Part Two, especially Articles 10 and 18, using the official English current consolidation.",
+      "reason": "The official EUR-Lex record now verifies the Agreement identity, in-force status and current consolidated version dated 3 February 2026. The direct English text view remains blocked by a JavaScript/anti-bot check in the research client, so the provisions have not been inspected article by article.",
+      "handling": "The source is accepted as a scoped official link reference with no local copy. Obtain the current official text through an accessible browser or official PDF and review the relevant provisions before recording provision-level applicability. A full-site crawl or API is not required."
+    },
+    {
+      "status": "offered_for_human_review",
+      "publisher": "Consejo General del Poder Judicial (CGPJ), Centro de Documentación Judicial (CENDOJ)",
+      "site": "https://www.poderjudicial.es/search/indexAN.jsp",
+      "scope": "Current public case-law search behaviour and coverage, including court filters, date fields, ECLI/ROJ, pagination, update signals and permitted reuse.",
+      "reason": "The official portal is identifiable and official result pages are indexed, but the direct landing-page request returned 403 to the research client. No immigration query batch or completeness check has been run.",
+      "handling": "Manually verify the landing page and search controls, then run and record a bounded immigration-case-law query matrix with result counts and dispositions. Do not infer absence or topic coverage from the present discovery reference."
     }
   ],
   "not_accepted_candidate_notes": [
-    "Local BOE and broader-page conversions remain candidates; the link decisions above do not accept those files.",
+    "The broader-page conversions remain unaccepted; accepted BOE local documents are identified separately in records. Link acceptance does not accept an unreviewed local conversion.",
     "Candidate entries for forms, appointment tools, mission-specific pages, oversight procedures, and case-law search remain unaccepted unless specifically listed above.",
     "The EU-UK Withdrawal Agreement current-consolidation link is identified but not counted as accepted pending human inspection through EUR-Lex; the official site is offered above.",
-    "A discovery candidate is a lead awaiting the stated review; it is not a finding that the source is invalid or that its category is legally irrelevant."
-  ]
+    "A discovery candidate is a lead awaiting the stated review; it is not a finding that the source is invalid or that its category is legally irrelevant.",
+    "es-02: the official BOE API documentation is accepted as a link, but the captured HTML conversion is incomplete and no live API endpoint was tested; retain its research capture in the Monitor local-only archive, not as an accepted source copy.",
+    "es-33: the current National Police procedure link is accepted, but the 19 October local page conversion is not accepted as a current local source copy; the final documents/procedure note records the 25 October live-page findings.",
+    "es-34: the dynamic Police fee generator is accepted as a link; the local conversion does not establish a current fee amount and is not accepted as a source copy.",
+    "es-35: the official appointment FAQ is accepted only as a limited link reference. The local 19 October capture is not accepted as current; the live page could not be reopened by the research client on 25 October and its search-indexed content was older."
+  ],
+  "records": {
+    "es-06": {
+      "status": "accepted",
+      "document_path": "../documents/legislation/es-rd-240-2007-consolidated.md",
+      "accepted_on": "2026-10-24",
+      "local_document_sha256": "6619849bb3704387d021d6ede4404be32e87cc1917ae5b61d868551777eaaf26",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "The current BOE ELI page and API metadata identify Real Decreto 240/2007 and BOE-A-2007-4184; title, number, publisher, and Spanish language match."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "The BOE consolidated page was checked 2026-10-24 and displays its latest text update as 2015-11-09. The API metadata update date 2025-12-19 is kept distinct. Accepted as the publisher's displayed last-known consolidation with a dated scope limit; no claim is made that the text alone establishes present effect of every provision."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "The archived BOE XML and metadata bytes match the recorded SHA-256 values. Offline rebuild and verify succeeded for all 15 BOE records in an isolated review copy. The final document's 40 text blocks match the replayed BOE XML body exactly; the BOE page shows the corresponding preamble, articles, dispositions, and signature. The expressly labeled prior wording in Disposición final segunda is retained as historical text, not operative wording."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "No separate annex or incorporated attachment was material to this text copy. BOE's PDF and ePUB links are alternate representations of the consolidated record."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as national_legislation: a BOE-published royal decree shown as an informational consolidation, not an EU instrument, guidance page, or Gazette-authentic text."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Checked publisher identity and dates; replayed the saved XML; compared all 40 source blocks and legal anchors to the BOE consolidated page; recorded the informational-only caveat and historical prior wording."
+      },
+      "raw_capture_evidence": "Monitor local archive: captures/public-data/ES/public-data/spain/boe/boe-a-2007-4184-text.xml (SHA-256 70dc796fb612b321527acb9debf40b4e13aa6f8cf0b160326cb746f73c74bf9d); captures/public-data/ES/public-data/spain/boe/boe-a-2007-4184-metadata.xml (SHA-256 a1687a9eeaa69df9a508f0e1b735575e3c64dfc4a92efaa919edb21f8b080dce)."
+    },
+    "es-07": {
+      "status": "accepted",
+      "document_path": "../documents/legislation/es-rd-1155-2024-consolidated.md",
+      "accepted_on": "2026-10-24",
+      "local_document_sha256": "17a83a0c1bfde2a066bd1a7164edda013ecb28f1d09dd8ff6ac324bbbbf87eaf",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "The current BOE ELI page and API metadata identify Real Decreto 1155/2024 and BOE-A-2024-24099; title, number, publisher, and Spanish language match."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "The BOE page checked 2026-10-24 displays the latest consolidated-text update as 2026-09-22; the API metadata timestamp is 2026-09-22T12:54:01Z and the commencement date is 2025-05-20. The page and consolidation carry Supreme Court annotations for BOE-A-2026-19632 and BOE-A-2026-19633. Accepted as the publisher’s dated working text, without asserting present legal effect of every provision."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "The archived BOE text and metadata XML match the retrieval-manifest SHA-256 values. Offline reconstruction selects 383 latest-version text blocks. The final document preserves all source blocks; its body matches the reconstructed output exactly. The prior candidate differed only in one editorial word in its introductory caveat, which was replaced by the reviewed scope notice; no legal text was changed."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "The BOE record offers PDF and ePUB as alternate representations of the consolidated text. The consolidated index exposes the preamble, 265 articles, additional and transitional provisions, and signature; no separate incorporated annex was material to this text copy."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as national_legislation: a Spanish royal decree approving the immigration regulation. Articles 93–99 concern family members of Spanish nationals and remain distinct from the EU/EEA/Swiss free-movement route."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Checked BOE identity, displayed and metadata dates, and legal status; replayed all 383 text blocks from archived XML; compared the official page’s Articles 93–99 and judicial annotations, including Article 197.2; preserved the BOE informational-only caveat and distinct-route scope."
+      },
+      "raw_capture_evidence": "Monitor local archive: captures/public-data/ES/public-data/spain/boe/boe-a-2024-24099-text.xml (SHA-256 3fa5c21edb5f3872c1096f4a9a0f41b50edf4c0e2e5f6b2846110d38a2845fc6); captures/public-data/ES/public-data/spain/boe/boe-a-2024-24099-metadata.xml (SHA-256 01391d2c574161707f9dca1d01bbdaa823f22551c54ce15c9e73aac34b0456d6); captures/public-data/ES/public-data/spain/boe/es-07-official-consolidated-page.html (SHA-256 566e5624b71356851c832788178367c00dfc11c473354d729e2e5870c1d5e83d)."
+    },
+    "es-08": {
+      "status": "accepted",
+      "document_path": "../documents/legislation/es-lo-4-2000-consolidated.md",
+      "accepted_on": "2026-10-25",
+      "local_document_sha256": "fec6524ce93f13af201db0c64db3250b4422bb0c2f99030e769152d113003d4a",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "The official BOE ELI page, consolidated page, and API metadata identify Ley Orgánica 4/2000, BOE-A-2000-544, its full title, Spanish language, and BOE publisher."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "The BOE page checked 2026-10-25 displays 2025-03-19 as the latest consolidated-text update. API metadata updated 2026-07-03 is a separate metadata timestamp. Accepted only as the publisher's dated informational text through the displayed cutoff."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "The raw BOE text and metadata hashes match the retrieval manifest. Offline replay generated 142 blocks; every legal text block in the candidate body matches replay. The official page identity, cutoff, and Articles 17 and 31 were checked."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "The BOE page exposes the complete consolidated text and alternate PDF/ePUB representations. Its index runs through the statutory provisions, additional and transitional provisions, repeal/final provisions, and signature; no separately incorporated annex was identified."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as national immigration legislation. It is a general immigration statute and must be read with current regulations; it does not substitute for the distinct EU/EEA/Swiss free-movement rules."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Checked BOE identity, publication/effective dates, displayed cutoff and metadata timestamp; replayed all 142 legal text blocks from the retained XML; compared the current BOE page title and Articles 17 and 31; preserved the informational-only caveat and separate-route limitation."
+      },
+      "raw_capture_evidence": "Monitor local-only archive preserves the BOE text XML as captures/public-data/ES/spain/boe/boe-a-2000-544-text.xml.gz (compressed SHA-256 e0d3ebc0dd747655189ef68a5c85b0a8d2cdefcfcc030a735de4716390fcb7ee; original-response SHA-256 b4f90cbd568c59003cd69ce2b11d707fb45395fce05e12da7442374e5d8ccc6f) and metadata XML as captures/public-data/ES/spain/boe/boe-a-2000-544-metadata.xml.gz (compressed SHA-256 5d37b7bf2ab6467aa330093a71b1fb2e83642f9f8dcd8b2e2abd26606c456c49; original-response SHA-256 8ea862fd1559003152b2283036ec6297df3a953bb6e74d54719be1ea5a437d35). The official-page HTML capture is preserved as captures/public-data/ES/spain/boe/es-08-official-consolidated-page.html.gz (compressed SHA-256 180509d1e300b0d7aaa202ce44bb30da14208afb220538da295249f584eacfa6; original-response SHA-256 95e42b5915a4df08f40d5a926a6833ef42736b0cb5fb45c1c85783e4667c093e). The exact prior BOE Markdown candidate is archived at candidates/public-data/ES/public-data/spain/candidates/boe-a-2000-544-consolidated.md (SHA-256 3b3817a7674225f7ba6fc22ca690f91a45c5143dfadb9a01afb79d2d9a7c1501); the separate HTML-derived candidate is archived at candidates/public-data/ES/public-data/spain/monitor-candidates/es-08.md (SHA-256 ae4b8e911d007e1190aff17948d56821c48800f8b034dd406228ac207acfc1b4)."
+    },
+    "es-09": {
+      "status": "accepted",
+      "document_path": "../documents/legislation/es-orden-pre-1490-2012-consolidated.md",
+      "accepted_on": "2026-10-24",
+      "local_document_sha256": "bd19ad47b6bf8733b46910fc1f787645c8e4387f9607732464848026e5b38c67",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "The current BOE ELI page and API metadata identify Orden PRE/1490/2012 and BOE-A-2012-9218; title, number, publisher, and Spanish language match."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "The BOE page checked 2026-10-24 displays the 2012-07-10 text as the latest version and shows only the initial publication; API metadata updated 2025-12-19 separately reports no repeal or expiry. Accepted as the publisher's displayed last-known text, with its date and the Ley 30/1992 dependency explicitly limited."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "The archived BOE text and metadata XML match the retrieval-manifest hashes. Offline reconstruction yields 10 latest-version blocks; all 10 legal text blocks in the final document match the replayed BOE body. Official BOE page headings and the key Articles 1–4 and Additional Provision were inspected."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "The BOE page offers PDF and ePUB as alternate representations. Its index contains the preamble, Articles 1–4, one additional and one transitional provision, two final provisions, and signature; no separate incorporated annex was material to this text copy."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as national_implementing_legislation: a Spanish ministerial order implementing Article 7 of RD 240/2007, with its EU/EEA/Swiss wording preserved and Swiss-route limits stated separately."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Checked publisher identity, publication/effective dates and displayed text cutoff; replayed all 10 blocks from archived XML; compared the official page’s Articles 1–4 and the Additional Provision; recorded its relationship to RD 240/2007, the later repeal of Ley 30/1992 by Ley 39/2015, and the unreviewed 2010 case citation."
+      },
+      "raw_capture_evidence": "Monitor local archive: captures/public-data/ES/public-data/spain/boe/boe-a-2012-9218-text.xml (SHA-256 4db660a73ad936f2dcbeece66572370256322c1fe13ea3ebb57c9eeaab3aea92); captures/public-data/ES/public-data/spain/boe/boe-a-2012-9218-metadata.xml (SHA-256 c6c6d8f03c9d05a647aebbef1b21bd6137b354e91aee0cd6f55a753102f1b783); captures/public-data/ES/public-data/spain/boe/es-09-official-consolidated-page.html (SHA-256 a7e22079f3efea61cdf2ecf77a0febb47ea6358f05253865d516fa938bae5571)."
+    },
+    "es-11": {
+      "status": "accepted",
+      "document_path": "../documents/legislation/es-ley-39-2015-consolidated.md",
+      "accepted_on": "2026-10-25",
+      "local_document_sha256": "1d8dc57b8145d9ad3f8e861e60cd4254dab1328cd7d8715d1f3c0e76db898c4f",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "The BOE ELI/consolidated page and API metadata identify the full title, BOE-A-2015-10565, Spanish language and BOE publisher."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "The BOE page checked 2026-10-25 displays 2024-11-06 as the latest text update. API metadata timestamp 2026-09-25T08:08:15Z is separate. Accepted as the publisher's dated informational text through that displayed cutoff."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Text and metadata response hashes match the retrieval manifest. Offline replay generated 195 blocks; every legal text block in the candidate body matches replay. Articles 21 and 53 were checked against the official consolidated page."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "The BOE page exposes the full consolidated text and PDF/ePUB alternatives. The BOE text/API body was replayed across 195 blocks; no separate external attachment was required for this local text copy."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as administrative_procedure_legislation. Use with special immigration procedures and applicable regional rules; this local text is through the displayed BOE cutoff and is not a decision-specific deadline analysis."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Checked the current BOE title, text cutoff and publication/effective dates; compared Articles 21 and 53 with the official page; retained the informational-only caveat and the distinction between general procedure and special or regional rules."
+      },
+      "raw_capture_evidence": "Monitor local-only archive preserves BOE text XML captures/public-data/ES/spain/boe/boe-a-2015-10565-text.xml.gz (compressed SHA-256 324d024b82b459cd59faf70fd641b89a1fbfd019a1edc6a126d24810c3feae0b; original response SHA-256 82c39ae4324777720a905113853706a21ec7fdf2ffba3df06195ff55d8a7ca87) and metadata XML captures/public-data/ES/spain/boe/boe-a-2015-10565-metadata.xml.gz (compressed SHA-256 d9c01b6fa37956d0db46e07326ad93f39af5e007bc3e2760ab41df3a98abc18e; original response SHA-256 25d0e331bd0ebffc3525c15425fb25b2e05f5490285e94683501d98136192acf). The official BOE page capture is captures/public-data/ES/spain/boe/es-11-official-consolidated-page.html.gz (compressed SHA-256 b88858bc3dd00caea8d456754bc5a2e5a368dd3b33dc5a5bb819cc18bc185f67; original HTML SHA-256 81d8ff6ca2488d4bcc0890dc0defce7b8cb6019fbe0080520b1713750ddf7c8b). The exact prior BOE candidate is archived at candidates/public-data/ES/public-data/spain/candidates/boe-a-2015-10565-consolidated.md (SHA-256 0234444d3355247cc1ff8a9ae00a6af7391a9840117871c4f9aaf09b706b315f); its HTML-derived counterpart is archived at candidates/public-data/ES/public-data/spain/monitor-candidates/es-11.md (SHA-256 99d8c2447d95b3ffa7314fe208a9139049602e2a8b042e5363a4cea2ff15bcfd)."
+    },
+    "es-12": {
+      "status": "accepted",
+      "document_path": "../documents/legislation/es-ley-29-1998-consolidated.md",
+      "accepted_on": "2026-10-25",
+      "local_document_sha256": "dccfd48e6a83000861241654913c4acfcd3306e11f61c5ed99afe92ca4250287",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "The BOE ELI/consolidated page and API metadata identify the full title, BOE-A-1998-16718, Spanish language and BOE publisher."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "The BOE page checked 2026-10-25 displays 2025-01-03 as the latest text update. API metadata timestamp 2026-03-05T10:26:24Z is separate. Accepted as the publisher's dated informational text through that displayed cutoff."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Text and metadata response hashes match the retrieval manifest. Offline replay generated 224 blocks; every legal text block in the candidate body matches replay. Articles 25 and 46 were checked against the official consolidated page."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "The BOE page exposes the full consolidated text and PDF/ePUB alternatives. The BOE text/API body was replayed across 224 blocks; no separate external attachment was required for this local text copy."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as judicial_review_legislation. Court, standing, prior administrative remedy, filing period and interim measures depend on the decision and applicable law; no case-specific route is mapped here."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Checked BOE identity, dates, current displayed cutoff, and the Article 25 reviewable-act rule and Article 46 filing periods; preserved the limit that no case-specific court or remedy conclusion is made."
+      },
+      "raw_capture_evidence": "Monitor local-only archive preserves BOE text XML captures/public-data/ES/spain/boe/boe-a-1998-16718-text.xml.gz (compressed SHA-256 5eaa7e5979c19889a535f99177b161945636c9146d519bf4399d9ad38f85ca3a; original response SHA-256 4945fe0ec20ccc6b93cbcbbfb9c0f8affd2536471201b70f45a5af7f59a2fd46) and metadata XML captures/public-data/ES/spain/boe/boe-a-1998-16718-metadata.xml.gz (compressed SHA-256 4ca5402fcc65eed91b01ca5056f82f659846c3ef3b45db12fe1a6cc8acb18a16; original response SHA-256 3df6f9d2030ea2bb7693fb7ec21c3998d304625c9ebae0190f9f8534c66d4f7c). The official BOE page capture is captures/public-data/ES/spain/boe/es-12-official-consolidated-page.html.gz (compressed SHA-256 dec975649effdc78fdeb41d202d09cbc248a7defafc7b2a14a2a013da3b7c18c; original HTML SHA-256 505b25687b824cb2713591910fc1df103c832acffd8f2680ae7a0e64181d5567). The exact prior BOE candidate is archived at candidates/public-data/ES/public-data/spain/candidates/boe-a-1998-16718-consolidated.md (SHA-256 a01efcc472bf63e9ef751ff0600e4b1d35d8ff9161af69535922e451e2bfc15e); its HTML-derived counterpart is archived at candidates/public-data/ES/public-data/spain/monitor-candidates/es-12.md (SHA-256 5031723a8c4c013dc88932bceed633ba096f163e80793ce76737450a338faf63)."
+    },
+    "es-13": {
+      "status": "accepted",
+      "document_path": "../documents/legislation/es-ley-37-2007-consolidated.md",
+      "accepted_on": "2026-10-25",
+      "local_document_sha256": "d2f462991423bcf783994f5b3a8cdb8f779746c0ed97e1fc71e710ac634bfb6b",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "The BOE ELI/consolidated page and API metadata identify the full title, BOE-A-2007-19814, Spanish language and BOE publisher."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "The BOE page checked 2026-10-25 displays 2023-05-09 as the latest text update. API metadata timestamp 2025-12-19T11:21:12Z is separate. Accepted as the publisher's dated informational text through that displayed cutoff."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Text and metadata response hashes match the retrieval manifest. Offline replay generated 30 blocks; every legal text block in the candidate body matches replay. Article 4 and its reuse modalities were checked against the official consolidated page."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "The BOE page exposes the full consolidated text and PDF/ePUB alternatives. The BOE text/API body was replayed across 30 blocks; no separate external attachment was required for this local text copy."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as public_information_reuse_legislation. This law does not itself grant a reuse license for every publisher or document; source-specific terms remain controlling evidence."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Checked publisher identity, dates and Article 4 reuse modalities; kept the statute separate from source-specific reuse terms and permissions."
+      },
+      "raw_capture_evidence": "Monitor local-only archive preserves BOE text XML captures/public-data/ES/spain/boe/boe-a-2007-19814-text.xml.gz (compressed SHA-256 fa0aa82cd1edcebd3a7beeddd407320014ea58e53bab01006cf3156d0fbf35d0; original response SHA-256 d710731313a5ab338e3bc8a7d3b2a9145a673a81b1aad0250e8b7954e73da95e) and metadata XML captures/public-data/ES/spain/boe/boe-a-2007-19814-metadata.xml.gz (compressed SHA-256 c57e915eab7521b550fa11d6bebb91959f4c975ba880f46bbe7ad14d4581e5d2; original response SHA-256 47e3ea84028892c8b8cd065a58163b234c91fae97f797d54a3933b39e297ffe5). The official BOE page capture is captures/public-data/ES/spain/boe/es-13-official-consolidated-page.html.gz (compressed SHA-256 29e0c667413d278fe3298cda8a40cd5962fedceb3cee7a9193853e70df422c2b; original HTML SHA-256 1513b2e483c363b102f7ddd0ca4ed7fdc6047e6da16c653ecbe6d5b7b61e12f9). The exact prior BOE candidate is archived at candidates/public-data/ES/public-data/spain/candidates/boe-a-2007-19814-consolidated.md (SHA-256 12d07cce6233e856df287a87ec56953b266ac747850db4dc4d24aa7ad7fef7ab); its HTML-derived counterpart is archived at candidates/public-data/ES/public-data/spain/monitor-candidates/es-13.md (SHA-256 4719dbda253702bbd405b0a4cdfa11fafc515da5c6b0f47a7c52a4c7522c9c4b)."
+    },
+    "es-14": {
+      "status": "accepted",
+      "document_path": "../documents/legislation/es-ley-19-2013-consolidated.md",
+      "accepted_on": "2026-10-25",
+      "local_document_sha256": "84b660c89df26e555db0e5af07828584af7fb3e44fb7bc1dd481e0c5b406a5a8",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "The BOE ELI/consolidated page and API metadata identify the full title, BOE-A-2013-12887, Spanish language and BOE publisher."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "The BOE page checked 2026-10-25 displays 2022-07-09 as the latest text update. API metadata timestamp 2026-01-02T10:52:16Z is separate. Accepted as the publisher's dated informational text through that displayed cutoff."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Text and metadata response hashes match the retrieval manifest. Offline replay generated 70 blocks; every legal text block in the candidate body matches replay. Articles 17 and 24, including the complaint route and regional competence limitation, were checked against the official consolidated page."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "The BOE page exposes the full consolidated text and PDF/ePUB alternatives. The BOE text/API body was replayed across 70 blocks; no separate external attachment was required for this local text copy."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as public_access_legislation. Source-access rights are distinct from reuse permission. The Consejo de Transparencia has territorial limits; regional systems and special access laws may apply."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Checked BOE identity, dates, access-request procedure and optional complaint route; recorded that some autonomous communities assign complaint competence to their own bodies."
+      },
+      "raw_capture_evidence": "Monitor local-only archive preserves BOE text XML captures/public-data/ES/spain/boe/boe-a-2013-12887-text.xml.gz (compressed SHA-256 01cf5fe8aa08a88b1f48b9d94116588db52334485c50f2b9560e43b1b850f81d; original response SHA-256 e40fe1e94d9cac5e1510e1a7c9d718152caf75f51d74f34af88dab58647e0c86) and metadata XML captures/public-data/ES/spain/boe/boe-a-2013-12887-metadata.xml.gz (compressed SHA-256 b75411547bf80d78c37171c0220e7d208779513cdd298b0d2c4b6114ccc438f9; original response SHA-256 480910af81d212e8d1520ab160ed9e92dc353dba921fcda0457bb60d81dc83e4). The official BOE page capture is captures/public-data/ES/spain/boe/es-14-official-consolidated-page.html.gz (compressed SHA-256 30fd01f19a0cc3d3189f6af0f7ab28a726800e85670957a591ffa821e01caa8f; original HTML SHA-256 7ae1dc5e039a1e6e1c6e82284f5dab0a0800b11ba6a351e61f6989099f991f17). The exact prior BOE candidate is archived at candidates/public-data/ES/public-data/spain/candidates/boe-a-2013-12887-consolidated.md (SHA-256 c411fd48cb36674d0ce4af15be82a4a4fce72f0a56be155881d58b7e4229b34b); its HTML-derived counterpart is archived at candidates/public-data/ES/public-data/spain/monitor-candidates/es-14.md (SHA-256 0d7ddab0c6a5ca2f0995bc845b541322d4beb4148a059c41b7e1d1e2d5ed221a)."
+    },
+    "es-15": {
+      "status": "accepted",
+      "document_path": "../documents/legislation/es-ley-20-2011-registro-civil-consolidated.md",
+      "accepted_on": "2026-10-25",
+      "local_document_sha256": "e10f18c7dc1ffef44eaf87b1a06c039d0b12175bbffc14894596092b094f51c7",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "The official BOE ELI/consolidated record and API metadata identify BOE-A-2011-12628, the instrument title, Spanish language and BOE publisher."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "Official BOE page checked on 2026-10-25; latest displayed text update 2025-01-03. The API metadata timestamp 2026-02-24T10:40:35Z is recorded separately."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Text response SHA-256 and metadata SHA-256 match the retrieval manifest. Offline replay reproduced all 169 text blocks; each candidate legal-text block matches the replay body."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "The BOE consolidated page exposes the complete publisher text and PDF/ePUB representations. No separate attachment is relied on by this document."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Civil Registry framework and civil-status registration. Use the applicable BOE text and registry guidance for the specific act; this source alone does not establish all evidence or foreign-document requirements."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Checked official BOE identity, publication and effective dates, displayed update 2025-01-03, and separate API metadata timestamp 2026-02-24T10:40:35Z; matched raw response hashes and replayed all 169 text blocks. Local copy accepted only within the stated source scope."
+      },
+      "raw_capture_evidence": "BOE text XML: temp/spain/boe/boe-a-2011-12628-text.xml (SHA-256 bc5968dd60946f99669643a95ddd58ceef93a83e7341d7a258bd5abeb5503155); metadata XML: temp/spain/boe/boe-a-2011-12628-metadata.xml (SHA-256 d719d8887ee1e3ac846bf9de3b8f21b33e4cd8efd30c1f06c7d2cef43ea48ec4); exact candidate snapshot preserved in Monitor local-only archive at candidates/public-data/ES/public-data/spain/candidates/boe-a-2011-12628-consolidated.md; BOE-page conversion candidate preserved at candidates/public-data/ES/public-data/spain/monitor-candidates/es-15.md"
+    },
+    "es-16": {
+      "status": "accepted",
+      "document_path": "../documents/legislation/es-lo-3-2018-proteccion-datos-consolidated.md",
+      "accepted_on": "2026-10-25",
+      "local_document_sha256": "81517c2c4e8c1f21a255b8728ad482337f00a267b2767e112afb7223454d729c",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "The official BOE ELI/consolidated record and API metadata identify BOE-A-2018-16673, the instrument title, Spanish language and BOE publisher."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "Official BOE page checked on 2026-10-25; latest displayed text update 2025-12-27. The API metadata timestamp 2026-10-08T07:39:57Z is recorded separately."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Text response SHA-256 and metadata SHA-256 match the retrieval manifest. Offline replay reproduced all 169 text blocks; each candidate legal-text block matches the replay body."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "The BOE consolidated page exposes the complete publisher text and PDF/ePUB representations. No separate attachment is relied on by this document."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Spanish national supplementary data-protection and digital-rights legislation. Read with the GDPR and the rules of the competent national or regional supervisory authority."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Checked official BOE identity, publication and effective dates, displayed update 2025-12-27, and separate API metadata timestamp 2026-10-08T07:39:57Z; matched raw response hashes and replayed all 169 text blocks. Local copy accepted only within the stated source scope."
+      },
+      "raw_capture_evidence": "BOE text XML: temp/spain/boe/boe-a-2018-16673-text.xml (SHA-256 18144157087656060bd9210224675d22f3c77c3e180d57ea66436fc195ef54a7); metadata XML: temp/spain/boe/boe-a-2018-16673-metadata.xml (SHA-256 9a1a33b2da2c5144e4050f5a24d0fbe6edb15e629836fde0d9f7b46e3283c219); exact candidate snapshot preserved in Monitor local-only archive at candidates/public-data/ES/public-data/spain/candidates/boe-a-2018-16673-consolidated.md; BOE-page conversion candidate preserved at candidates/public-data/ES/public-data/spain/monitor-candidates/es-16.md"
+    },
+    "es-17": {
+      "status": "accepted",
+      "document_path": "../documents/legislation/es-ley-1-1996-asistencia-juridica-gratuita-consolidated.md",
+      "accepted_on": "2026-10-25",
+      "local_document_sha256": "1d1e14fc0160556598402a5bcd3a2144622c1da959d1c2bd3ddaabea955b3c3d",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "The official BOE ELI/consolidated record and API metadata identify BOE-A-1996-750, the instrument title, Spanish language and BOE publisher."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "Official BOE page checked on 2026-10-25; latest displayed text update 2025-01-03. The API metadata timestamp 2026-10-15T06:44:41Z is recorded separately."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Text response SHA-256 and metadata SHA-256 match the retrieval manifest. Offline replay reproduced all 82 text blocks; each candidate legal-text block matches the replay body."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "The BOE consolidated page exposes the complete publisher text and PDF/ePUB representations. No separate attachment is relied on by this document."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Statutory free-legal-aid framework. Eligibility, scope of covered proceedings and competent administration require issue-specific review."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Checked official BOE identity, publication and effective dates, displayed update 2025-01-03, and separate API metadata timestamp 2026-10-15T06:44:41Z; matched raw response hashes and replayed all 82 text blocks. Local copy accepted only within the stated source scope."
+      },
+      "raw_capture_evidence": "BOE text XML: temp/spain/boe/boe-a-1996-750-text.xml (SHA-256 9d0c99bd2db2752475db0bea11a353b8d4d78b67e2d9b2bb72bbdf16e3d35f15); metadata XML: temp/spain/boe/boe-a-1996-750-metadata.xml (SHA-256 0b4ff6e39d3655e69b32798651df84798859bcddb3524b29ada8b1a378e98390); exact candidate snapshot preserved in Monitor local-only archive at candidates/public-data/ES/public-data/spain/candidates/boe-a-1996-750-consolidated.md; BOE-page conversion candidate preserved at candidates/public-data/ES/public-data/spain/monitor-candidates/es-17.md"
+    },
+    "es-18": {
+      "status": "accepted",
+      "document_path": "../documents/legislation/es-rd-141-2021-asistencia-juridica-gratuita-consolidated.md",
+      "accepted_on": "2026-10-25",
+      "local_document_sha256": "9929570afd5c0f761d313254f2c43150cd33d3169d585b3dbb3f8ec7110869e0",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "The official BOE ELI/consolidated record and API metadata identify BOE-A-2021-3698, the instrument title, Spanish language and BOE publisher."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "Official BOE page checked on 2026-10-25; latest displayed text update 2026-10-15. The API metadata timestamp 2026-10-15T09:12:04Z is recorded separately."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Text response SHA-256 and metadata SHA-256 match the retrieval manifest. Offline replay reproduced all 87 text blocks; each candidate legal-text block matches the replay body."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "The BOE consolidated page exposes the complete publisher text and PDF/ePUB representations. No separate attachment is relied on by this document."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Regulation implementing Spain’s free-legal-aid framework. Read with Ley 1/1996 and applicable territorial rules."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Checked official BOE identity, publication and effective dates, displayed update 2026-10-15, and separate API metadata timestamp 2026-10-15T09:12:04Z; matched raw response hashes and replayed all 87 text blocks. Local copy accepted only within the stated source scope."
+      },
+      "raw_capture_evidence": "BOE text XML: temp/spain/boe/boe-a-2021-3698-text.xml (SHA-256 1066a7cdc3b664f32546c5e5f5ee52ee7a530e539443b2e2fefc6628532679b2); metadata XML: temp/spain/boe/boe-a-2021-3698-metadata.xml (SHA-256 904f9cacb34e7e2675638d21ec0e28fd449a58d1c24c1d23c492eb31cccbc256); exact candidate snapshot preserved in Monitor local-only archive at candidates/public-data/ES/public-data/spain/candidates/boe-a-2021-3698-consolidated.md; BOE-page conversion candidate preserved at candidates/public-data/ES/public-data/spain/monitor-candidates/es-18.md"
+    },
+    "es-19": {
+      "status": "accepted",
+      "document_path": "../documents/legislation/es-lo-3-1981-defensor-pueblo-consolidated.md",
+      "accepted_on": "2026-10-25",
+      "local_document_sha256": "d8711bfa13d0692f7ab254b22ca45d41611ae6b9eccb462bc8c364b8a69c39e1",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "The official BOE ELI/consolidated record and API metadata identify BOE-A-1981-10325, the instrument title, Spanish language and BOE publisher."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "Official BOE page checked on 2026-10-25; latest displayed text update 2009-11-04. The API metadata timestamp 2025-12-16T16:55:38Z is recorded separately."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Text response SHA-256 and metadata SHA-256 match the retrieval manifest. Offline replay reproduced all 61 text blocks; each candidate legal-text block matches the replay body."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "The BOE consolidated page exposes the complete publisher text and PDF/ePUB representations. No separate attachment is relied on by this document."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Statutory basis for complaints and oversight by Spain’s national Defensor del Pueblo. This is a public-oversight route, not a procedural appeal."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Checked official BOE identity, publication and effective dates, displayed update 2009-11-04, and separate API metadata timestamp 2025-12-16T16:55:38Z; matched raw response hashes and replayed all 61 text blocks. Local copy accepted only within the stated source scope."
+      },
+      "raw_capture_evidence": "BOE text XML: temp/spain/boe/boe-a-1981-10325-text.xml (SHA-256 7f216a34b1a75bf8f1a6772db61fe7e65e5dc2ac3c2ccfaedbaf6ce5522327d4); metadata XML: temp/spain/boe/boe-a-1981-10325-metadata.xml (SHA-256 6d07de9c1fddc48e7534261f0ca4bf71717c6d64f6df44be1fe18a388c12cc21); exact candidate snapshot preserved in Monitor local-only archive at candidates/public-data/ES/public-data/spain/candidates/boe-a-1981-10325-consolidated.md; BOE-page conversion candidate preserved at candidates/public-data/ES/public-data/spain/monitor-candidates/es-19.md"
+    },
+    "es-03-original": {
+      "status": "accepted",
+      "document_path": "../documents/legislation/es-ley-54-2007-adopcion-internacional-consolidated.md",
+      "accepted_on": "2026-10-25",
+      "local_document_sha256": "54aa1486b8892f7ae78450c009a41bcb1ff2c07ebd77f85eddaf28a4d2b2bd11",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "The official BOE ELI/consolidated record and API metadata identify BOE-A-2007-22438, the instrument title, Spanish language and BOE publisher."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "Official BOE page checked on 2026-10-25; latest displayed text update 2021-03-22. The API metadata timestamp 2025-12-19T11:21:30Z is recorded separately."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Text response SHA-256 and metadata SHA-256 match the retrieval manifest. Offline replay reproduced all 58 text blocks; each candidate legal-text block matches the replay body."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "The BOE consolidated page exposes the complete publisher text and PDF/ePUB representations. No separate attachment is relied on by this document."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "International-adoption procedure and related recognition provisions. Use only for adoption, parentage or recognition issues within this law’s scope."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Checked official BOE identity, publication and effective dates, displayed update 2021-03-22, and separate API metadata timestamp 2025-12-19T11:21:30Z; matched raw response hashes and replayed all 58 text blocks. Local copy accepted only within the stated source scope."
+      },
+      "raw_capture_evidence": "BOE text XML: temp/spain/boe/boe-a-2007-22438-text.xml (SHA-256 cbd1897e3a876131f6f5fe372b9bb1ce22aa4db33b2a6aedaa79ed7966427fd9); metadata XML: temp/spain/boe/boe-a-2007-22438-metadata.xml (SHA-256 992e59518466d25d7f4712e41f94af42e7a6a5c3af5d3ec1ed0c5708a32f5a50); exact candidate snapshot preserved in Monitor local-only archive at candidates/public-data/ES/public-data/spain/candidates/boe-a-2007-22438-consolidated.md"
+    },
+    "es-04-original": {
+      "status": "accepted",
+      "document_path": "../documents/legislation/es-codigo-civil-consolidated.md",
+      "accepted_on": "2026-10-25",
+      "local_document_sha256": "999fb14a4697bd2964cad1406cc77e122d32b524e09fb4a7cfdcc88aaae8160d",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "The official BOE ELI/consolidated record and API metadata identify BOE-A-1889-4763, the instrument title, Spanish language and BOE publisher."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "Official BOE page checked on 2026-10-25; latest displayed text update 2025-01-03. The API metadata timestamp 2026-09-07T12:59:34Z is recorded separately."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Text response SHA-256 and metadata SHA-256 match the retrieval manifest. Offline replay reproduced all 2444 text blocks; each candidate legal-text block matches the replay body."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "The BOE consolidated page exposes the complete publisher text and PDF/ePUB representations. No separate attachment is relied on by this document."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Spanish Civil Code, limited to the relevant marriage, parentage, family-status and private-international-law provisions. Select provisions for a defined issue."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Checked official BOE identity, publication and effective dates, displayed update 2025-01-03, and separate API metadata timestamp 2026-09-07T12:59:34Z; matched raw response hashes and replayed all 2444 text blocks. Local copy accepted only within the stated source scope."
+      },
+      "raw_capture_evidence": "BOE text XML: temp/spain/boe/boe-a-1889-4763-text.xml (SHA-256 11bfe708d8cc5839d4c5bce97092c386a9ced055ea839463f754131ffc787750); metadata XML: temp/spain/boe/boe-a-1889-4763-metadata.xml (SHA-256 9ec233e3fb435486f819bdbf68096558522c1dca4ded369ad4cc5ee39244bc06); exact candidate snapshot preserved in Monitor local-only archive at candidates/public-data/ES/public-data/spain/candidates/boe-a-1889-4763-consolidated.md"
+    },
+    "es-25": {
+      "status": "accepted",
+      "document_path": "../documents/forms/es-ex-18-eu-citizen-registration-application.pdf",
+      "accepted_on": "2026-10-25",
+      "local_document_sha256": "c4825d1f1289039fb1f6fbdc7ec67d81066aaba758bb3274ce12e94b714776fb",
+      "local_document_bytes": 616900,
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "The official Ministry forms index and linked PDF identify es-25: Form EX-18, EU citizen registration. The publisher and exact attachment identity were checked on 2026-10-25."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "Official Ministry general-forms index checked 2026-10-25 lists this EX-18 PDF. The PDF is three pages and prints form version 03. No stable revision history is published. This establishes the current indexed publisher form as checked on 2026-10-25; it does not certify the current legal effect or completeness of filing requirements."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Adobe PDF properties report a three-page, unencrypted PDF. The extracted text confirms the title, EX-18 code, version 03, EU/EEA/Swiss references, and all captured pages. The retained document is the exact native PDF, not a reconstructed conversion. The retained PDF SHA-256 and byte length match the retrieval record."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "The official index entry and its linked attachment were checked together; the retained PDF is the form identified by that index. The publisher permits free reproduction and prohibits sale."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Administrative application form for EU citizen registration. It is not legislation or a legal determination and does not itself establish topic coverage."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Reconciled the official Ministry index, PDF title/code and route; checked all pages, metadata and applicable publisher notice. Retained the exact source PDF. The Ministry index exposes no stable revision history; recheck the parent index and form identity before relying on a later copy."
+      },
+      "raw_capture_evidence": "Exact official PDF response retained at temp/spain/pdf/es-25-c4825d1f1289039fb1f6fbdc7ec67d81066aaba758bb3274ce12e94b714776fb.pdf (SHA-256 c4825d1f1289039fb1f6fbdc7ec67d81066aaba758bb3274ce12e94b714776fb; 616900 bytes). Exact review candidate preserved in Monitor local-only archive at candidates/public-data/ES/public-data/spain/monitor-candidates/es-25.md. Final accepted source copy: ../documents/forms/es-ex-18-eu-citizen-registration-application.pdf."
+    },
+    "es-26": {
+      "status": "accepted",
+      "document_path": "../documents/forms/es-ex-19-eu-family-residence-card-application.pdf",
+      "accepted_on": "2026-10-25",
+      "local_document_sha256": "233fe7d753723a65ef2ee1d3eceb98f2bdb81e5dd86be8e81c061f157ceebae7",
+      "local_document_bytes": 146103,
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "The official Ministry forms index and linked PDF identify es-26: Form EX-19, EU-family residence card. The publisher and exact attachment identity were checked on 2026-10-25."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "Official Ministry general-forms index checked 2026-10-25 lists this EX-19 PDF. The PDF is three pages; metadata dates it 2025-11-12. No stable revision history is published. This establishes the current indexed publisher form as checked on 2026-10-25; it does not certify the current legal effect or completeness of filing requirements."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Adobe PDF properties report a three-page, unencrypted PDF. Extracted text confirms the title, EX-19 code, route and all pages; the 2025-11-12 metadata date was recorded. The retained document is the exact native PDF, not a reconstructed conversion. The retained PDF SHA-256 and byte length match the retrieval record."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "The official index entry and linked EX-19 attachment were checked together. The publisher notice permits free reproduction and prohibits sale."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Administrative application form for an EU citizen’s family member. The apparent Ley 39/2014 miscitation is recorded without changing the source."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Reconciled the official Ministry index, PDF title/code and route; checked all pages, metadata and applicable publisher notice. Retained the exact source PDF. The publisher does not expose a stable revision history; the 2025-11-12 PDF metadata is evidence about this file, not a guaranteed legal effective date."
+      },
+      "raw_capture_evidence": "Exact official PDF response retained at temp/spain/pdf/es-26-233fe7d753723a65ef2ee1d3eceb98f2bdb81e5dd86be8e81c061f157ceebae7.pdf (SHA-256 233fe7d753723a65ef2ee1d3eceb98f2bdb81e5dd86be8e81c061f157ceebae7; 146103 bytes). Exact review candidate preserved in Monitor local-only archive at candidates/public-data/ES/public-data/spain/monitor-candidates/es-26.md. Final accepted source copy: ../documents/forms/es-ex-19-eu-family-residence-card-application.pdf."
+    },
+    "es-27": {
+      "status": "accepted",
+      "document_path": "../documents/forms/es-ex-24-spanish-national-family-residence-application-editable.pdf",
+      "accepted_on": "2026-10-25",
+      "local_document_sha256": "ce5581c30c411010168ce3aec1e784587b02cbfb093fd5a1c60fba07d33e5341",
+      "local_document_bytes": 241072,
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "The official Ministry forms index and linked PDF identify es-27: Form EX-24, Spanish-national-family residence. The publisher and exact attachment identity were checked on 2026-10-25."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "Official Ministry general-forms index checked 2026-10-25 lists editable and non-editable EX-24 variants. The retained editable five-page PDF has creation and modification metadata dated 2026-05-26. This establishes the current indexed publisher form as checked on 2026-10-25; it does not certify the current legal effect or completeness of filing requirements."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Adobe PDF properties report a five-page, unencrypted PDF. Extracted text confirms the title, EX-24 code, statutory references and five-page contents. Metadata creation/modification dates are 2026-05-26. The retained document is the exact native editable PDF. The retained PDF SHA-256 and byte length match the retrieval record."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "The official index identifies the exact editable PDF and separately lists a non-editable variant. The retained source is the editable attachment; its publisher notice permits free reproduction and prohibits sale."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Administrative application form for the distinct residence route for specified family members of Spanish nationals. It is not an EU-family form or legislation."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Reconciled the official Ministry index, PDF title/code and route; checked all pages, metadata and applicable publisher notice. Retained the exact source PDF. The EX-24 route for specified family of Spanish nationals is distinct from EU-family free movement and EX-19."
+      },
+      "raw_capture_evidence": "Exact official PDF response retained at temp/spain/pdf/es-27-ce5581c30c411010168ce3aec1e784587b02cbfb093fd5a1c60fba07d33e5341.pdf (SHA-256 ce5581c30c411010168ce3aec1e784587b02cbfb093fd5a1c60fba07d33e5341; 241072 bytes). Exact review candidate preserved in Monitor local-only archive at candidates/public-data/ES/public-data/spain/monitor-candidates/es-27.md. Final accepted source copy: ../documents/forms/es-ex-24-spanish-national-family-residence-application-editable.pdf."
+    },
+    "es-03": {
+      "status": "accepted",
+      "document_path": "../documents/guidance/es-boe-consolidated-legislation-api-faq.md",
+      "accepted_on": "2026-10-25",
+      "local_document_sha256": "a0d8c4b425877ccc9977a9d472db41f882333df477524de5e7efe468090c2503",
+      "local_document_bytes": 10599,
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "The live official BOE page identifies AEBOE as publisher and matches the title and URL for es-03."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "The live page was checked 2026-10-25; it presents no fixed revision date. This supports an accepted dated documentation snapshot, not a claim of legal currentness."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "The 19 October 2026 converted body is retained with its source-response hash 24d3e2f0a4b0a8115bf227251e3f0ec82628d2d8b4edaca18ce5ea72165f5453 and captured in the Monitor local-only archive. Page headings and relevant live sections were compared on 25 October; no material identity or scope mismatch was found. The local file is explicitly labelled as an extraction."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "The page is documentation/terms text; its linked technical references and reuse terms are separately identified. No source attachment is relied upon as the page text."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "This is official publisher documentation/terms, not legislation or a legal determination. Use the stated caveats and linked primary publications."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Compared the source title and principal content sections with the live official page checked on 2026-10-25; retained the dated Spanish text extraction without silently correcting publisher wording. Publisher, version evidence, attachment limits and source class are recorded separately."
+      },
+      "raw_capture_evidence": "Raw response: temp/spain/raw/es-03-24d3e2f0a4b0a8115bf227251e3f0ec82628d2d8b4edaca18ce5ea72165f5453.html (SHA-256 24d3e2f0a4b0a8115bf227251e3f0ec82628d2d8b4edaca18ce5ea72165f5453; 22990 bytes), preserved in Monitor local-only archive at captures/public-data/ES/spain/raw/boe-consolidated-api-faq.html. Review candidate preserved at candidates/public-data/ES/public-data/spain/monitor-candidates/es-03.md. Final extracted document: ../documents/guidance/es-boe-consolidated-legislation-api-faq.md."
+    },
+    "es-04": {
+      "status": "accepted",
+      "document_path": "../documents/guidance/es-boe-daily-issue-api-faq.md",
+      "accepted_on": "2026-10-25",
+      "local_document_sha256": "361fef2ece475b3d4977b4d956d6e87ee35f67f31ed709d852c577b9acde9a8e",
+      "local_document_bytes": 6937,
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "The live official BOE page identifies AEBOE as publisher and matches the title and URL for es-04."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "The live page was checked 2026-10-25; it presents no fixed revision date. This supports an accepted dated documentation snapshot, not a claim of legal currentness."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "The 19 October 2026 converted body is retained with its source-response hash 65a2c87b4675ae647f547aff3cd39424e9f0960c58057eabdbf2856470e3565e and captured in the Monitor local-only archive. Page headings and relevant live sections were compared on 25 October; no material identity or scope mismatch was found. The local file is explicitly labelled as an extraction."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "The page is documentation/terms text; its linked technical references and reuse terms are separately identified. No source attachment is relied upon as the page text."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "This is official publisher documentation/terms, not legislation or a legal determination. Use the stated caveats and linked primary publications."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Compared the source title and principal content sections with the live official page checked on 2026-10-25; retained the dated Spanish text extraction without silently correcting publisher wording. Publisher, version evidence, attachment limits and source class are recorded separately."
+      },
+      "raw_capture_evidence": "Raw response: temp/spain/raw/es-04-65a2c87b4675ae647f547aff3cd39424e9f0960c58057eabdbf2856470e3565e.html (SHA-256 65a2c87b4675ae647f547aff3cd39424e9f0960c58057eabdbf2856470e3565e; 19796 bytes), preserved in Monitor local-only archive at captures/public-data/ES/spain/raw/boe-issue-api-faq.html. Review candidate preserved at candidates/public-data/ES/public-data/spain/monitor-candidates/es-04.md. Final extracted document: ../documents/guidance/es-boe-daily-issue-api-faq.md."
+    },
+    "es-05": {
+      "status": "accepted",
+      "document_path": "../documents/guidance/es-boe-reuse-conditions.md",
+      "accepted_on": "2026-10-25",
+      "local_document_sha256": "aae23e3032617e6d3bba2985b1055008483599126b653f1daf44a5e8fd65ec7e",
+      "local_document_bytes": 21074,
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "The live official BOE page identifies AEBOE as publisher and matches the title and URL for es-05."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "The live page was checked 2026-10-25; it presents no fixed revision date. This supports an accepted dated documentation snapshot, not a claim of legal currentness."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "The 19 October 2026 converted body is retained with its source-response hash 744fcb66dc62e4d438e4b406d3e2efd829f74b855f8a685d1f6bf90e31429989 and captured in the Monitor local-only archive. Page headings and relevant live sections were compared on 25 October; no material identity or scope mismatch was found. The local file is explicitly labelled as an extraction."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "The page is documentation/terms text; its linked technical references and reuse terms are separately identified. No source attachment is relied upon as the page text."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "This is official publisher documentation/terms, not legislation or a legal determination. Use the stated caveats and linked primary publications."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Compared the source title and principal content sections with the live official page checked on 2026-10-25; retained the dated Spanish text extraction without silently correcting publisher wording. Publisher, version evidence, attachment limits and source class are recorded separately."
+      },
+      "raw_capture_evidence": "Raw response: temp/spain/raw/es-05-744fcb66dc62e4d438e4b406d3e2efd829f74b855f8a685d1f6bf90e31429989.html (SHA-256 744fcb66dc62e4d438e4b406d3e2efd829f74b855f8a685d1f6bf90e31429989; 36293 bytes), preserved in Monitor local-only archive at captures/public-data/ES/spain/raw/boe-reuse-notice.html. Review candidate preserved at candidates/public-data/ES/public-data/spain/monitor-candidates/es-05.md. Final extracted document: ../documents/guidance/es-boe-reuse-conditions.md."
+    },
+    "es-29": {
+      "status": "accepted",
+      "document_path": "../documents/procedure/es-sem-instructions-2-2025-family-of-spanish-nationals.pdf",
+      "accepted_on": "2026-10-25",
+      "local_document_sha256": "1c7ea39e4b707559e090b01342311c86b18c9e5b10a60f61ff3f30789926bec8",
+      "local_document_bytes": 464495,
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "The live Ministry instructions index lists SEM 2/2025 and links the direct official PDF. The PDF title and signer/date match the item."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "The document is signed 2025-05-13 and remains listed in the official 2026 instructions index. This accepts the identified official instruction as published; it does not certify continued legal applicability after the 2026 Supreme Court judgment."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "The exact nine-page official PDF is retained byte-for-byte. Adobe PDF properties report nine pages, unencrypted, signed-field present, metadata 2025-05-13; source SHA-256 and size match the saved response. The signed-status field was inspected but the CSV was not independently validated."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "The current Ministry instructions index links the PDF. The document includes a CSV validation URL; that validation endpoint was not independently checked. No separate annex was relied on."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Administrative interpretation/instruction, not legislation. It concerns the separate Spanish-national-family route and must be read under the current statute/regulation and later judgments."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Matched the official index entry, title, signer/date, nine-page PDF identity and route scope. Recorded its relation to RD 1155/2024 and the unresolved effect of the 2026 Supreme Court judgment."
+      },
+      "raw_capture_evidence": "Exact Ministry PDF response retained at temp/spain/raw/es-29-1c7ea39e4b707559e090b01342311c86b18c9e5b10a60f61ff3f30789926bec8.pdf (SHA-256 1c7ea39e4b707559e090b01342311c86b18c9e5b10a60f61ff3f30789926bec8; 464495 bytes). Candidate text preserved in Monitor local-only archive at candidates/public-data/ES/public-data/spain/monitor-candidates/es-29.md. Final accepted source PDF: ../documents/procedure/es-sem-instructions-2-2025-family-of-spanish-nationals.pdf."
+    }
+  }
 }

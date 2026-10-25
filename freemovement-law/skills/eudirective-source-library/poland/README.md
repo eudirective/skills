@@ -1,31 +1,30 @@
 # Poland national-source pack
 
-This folder holds a 63-reference discovery and review pack for Poland's EU free-movement, immigration, procedure, remedy, privacy, consular and related source routes. Poland is an EU Member State. EU/EEA/Swiss, returning-Polish-national, UK Withdrawal Agreement, national-permit and asylum routes remain distinct.
+This pack records official Polish sources relevant to EU free movement, immigration, procedure, remedies, privacy, consular routes and related topics. EU/EEA/Swiss, returning-Polish-national, UK Withdrawal Agreement, national-permit and asylum routes remain distinct.
 
-- [Candidate source list](references/source-list.md)
-- [Candidate manifest](references/candidate-manifest.json)
-- [Source-review manifest](references/source-review-manifest.json)
-- [Official-link acceptance register](references/source-acceptance.json)
+- [Source list](references/source-list.md)
+- [Source review manifest](references/source-review-manifest.json)
+- [Source acceptance register](references/source-acceptance.json)
 - [Issue-led coverage register](references/coverage-register.md)
 - [Dependency register](references/dependency-register.json)
 - [Sustainability assessment](references/sustainability-assessment.md)
 
-## Current review state
+## Review state
 
-The review accepts 54 current official links within their recorded scopes. Four older references are historical-only, and five exact routes are not relied upon; whole official sites or portals are offered for direct human review where an access failure or dynamic page prevents a precise currentness check. No local copy or topic is accepted, and Poland remains incomplete.
+The review accepts 54 official links within their recorded scopes, marks 4 older references historical-only, and does not rely on 5 exact routes pending site review. Twenty-six source-text copies are accepted under documents/: 11 legal/instrument texts (including two historical copies) and 15 dated gov.pl text snapshots. Twenty-four other candidate responses have final official-link locator/disposition notes under documents/; those notes do not count as accepted source copies. These decisions remain separate from topic coverage: no topic is accepted as adequately covered and Poland remains incomplete.
 
-The official ELI links now include the current consolidated EU-citizen residence Act (Dz.U. 2026 poz. 1065), Electronic Delivery Act (Dz.U. 2026 poz. 3), SIS/VIS implementation Act (Dz.U. 2026 poz. 1061), Free Legal Aid Act (Dz.U. 2026 poz. 44), and companion form regulations for ordinary and permanent residence (Dz.U. 2021 poz. 1392 and 1391). The review also links the current Stamp Duty Act, Constitution, Ombudsman Act and KPA complaints regulation. Dated texts and later amendments are clearly scoped in the acceptance and dependency registers.
+The current EU-citizen residence consolidation is Dz.U. 2026 poz. 1065. The pack also retains the staged 2025 amendment, the general administrative-procedure and administrative-court texts, the 2026 legal-aid consolidation, and dated Foreigners Act, public-information and personal-data texts with their version limits. Local text acceptance does not make a dated consolidation current beyond its recorded cutoff.
 
-The current UDSC application and attachment index is accepted as a parent source for rediscovering forms; its attachments still need to be matched to the specific legal procedure. The MOS portal is offered for human review of the current EU-family card specimen, forms and collection procedures because the direct specimen route could not be opened in the research client. The 2021 “new forms” page and old-document deadline notice are historical references, not current form or deadline instructions.
+## Open issues
 
-One procedural conflict remains material: UDSC says personal ePUAP submissions after 1 January 2026 are ineffective for its general complaint route, while UODO's SIS-rights page still instructs applicants to use ePUAP. The applicable special-law exception, if any, must be checked before publishing a submission channel. This pack does not claim ePUAP or e-Doręczenia is universally effective for every procedure.
+- Reconcile UDSC's 2026 e-Doręczenia notice with UODO's SIS-related ePUAP instructions and any special-law exception before stating a submission channel.
+- Have a human inspect the current EU-family residence-card specimen, forms and transition instructions through the offered MOS/UDSC routes.
+- Map current evidence, forms, competent authority and appointment routes across all 16 voivodeships and the relevant Polish missions.
+- Complete repeatable case-law discovery across the Supreme Administrative Court and all 16 voivodeship administrative courts, recording queries, result counts and dispositions.
+- Complete provision-level legal, dependency and remedy crosswalks before accepting topics.
 
-## Local-copy workflow
+## Local research records
 
-The earlier capture run covered 54 candidate URLs: 51 exact responses were saved and 50 conversions replay-verified as unaccepted local review material. Three requests failed (one HTTP 403 and two certificate-validation errors); e-Konsulat returned a dynamic shell without extractable text. Nine newer references were reviewed as links only and were not retrieved. These capture results are historical evidence about the optional local-copy route; they do not block official-link use or establish topic coverage.
+The Monitor local-only archive preserves all 50 original candidate texts, the 51 exact responses recorded in the retrieval manifest, the supplementary residence-forms regulation PDF, and the indexed retrieval records. Every former candidate is reconciled to one final file under documents/: 26 accepted source-text copies and 24 official-link locator/disposition notes. Final paths, archived candidate hashes and decisions are recorded in the source-review manifest and source list. Archive presence and document acceptance do not establish topic coverage. Raw responses remain local-only and are not published in this repository.
 
-Use `python source-library/poland/sync_poland.py sync [CANDIDATE_ID ...]` only when a local copy is wanted for a specific purpose such as reproducible retention or recurring change monitoring. The capture output remains a review candidate. Hashes and conversion replay establish file integrity, not legal sufficiency or semantic correctness. API registration, API reuse terms, pypdf and batch conversion are not prerequisites for using a trustworthy official link. No local files are automatically accepted.
-
-## Remaining work
-
-The issue-led coverage register identifies unresolved legal and practical crosswalks: core versus facilitated family categories, decision-specific administrative and judicial remedies, ePUAP exceptions, current Polish card specimens and transition rules, 16 voivodeship procedures, mission-specific appointment paths, and repeatable case-law discovery across the NSA and all voivodeship administrative courts. See the [coverage register](references/coverage-register.md) and [dependency register](references/dependency-register.json); do not describe the country review as complete.
+The Monitor has no registered Poland source-pack action. Runtime completion checks are unsupported; this pack does not claim topic or country completion.

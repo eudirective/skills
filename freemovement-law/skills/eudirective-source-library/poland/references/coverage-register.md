@@ -1,7 +1,7 @@
 # Poland issue-led coverage register
 
-**Review date:** 21 October 2026  
-**Status:** 63 source references reconciled; 54 current official links accepted within scope; 4 historical-only links; 5 exact routes not relied upon, with whole-site review offered; 0 local copies and 0 topics accepted. Poland remains incomplete.
+**Review date:** 25 October 2026
+**Status:** 63 source references reconciled; 54 current official links accepted within scope; 4 historical-only links; 5 exact routes not relied upon, with whole-site review offered; 8 local statutory text copies accepted; 0 topics accepted. Poland remains incomplete.
 
 This register asks whether the evidence supports the questions a person may need to resolve or challenge about entry, residence, an administrative decision, delay, fees, documents or remedies. It does not treat a candidate count or accepted link as proof that a topic or country review is complete.
 
@@ -22,7 +22,7 @@ This register asks whether the evidence supports the questions a person may need
 | Fees and legal aid | Partial | Stamp Duty Act Dz.U. 2025 poz. 1154 (`pl-61`); current Free Legal Aid Act Dz.U. 2026 poz. 44 (`pl-51-current-2026`); Ministry of Justice and UDSC aid pages (`pl-36`, `pl-37`) | Map application fees, document-production fees and exemptions separately. The stamp-duty Act does not by itself establish a residence-card production fee. Verify the eligibility and availability of representation for EU-family first-instance, appeal and court proceedings. Keep asylum-specific aid distinct. |
 | Civil-status records and authentication | Partial | MFA apostille/legalisation route and mission examples (`pl-42`–`pl-44`); EU Public Documents Regulation 2016/1191 | Check the document type, issuing state, translation and applicable EU exemption before asking for apostille or legalisation. German mission pages are examples, not nationwide rules. |
 | Case-law discovery | Open | NSA Central Database and its scope page (`pl-45`, `pl-46`); RPO case-specific materials (`pl-47`, `pl-48`) | Set repeatable, dated searches across the NSA and all 16 voivodeship administrative courts. Record filters, result disposition and publication limits. The search database is not established as a complete corpus; a zero-result search does not prove that no decision exists. |
-| Source acquisition and maintenance | Link review complete; topic work open | Official links and site-wide review offers in [source acceptance](source-acceptance.json) and [source-review manifest](source-review-manifest.json) | Official links are usable within their recorded scope. Captures, API access, conversion, hashes and replay are optional for retaining local copies; they are not gates for link use or legal coverage. No local copy or topic has been accepted. |
+| Source acquisition and maintenance | Link review complete; topic work open | Official links and site-wide review offers in [source acceptance](source-acceptance.json) and [source-review manifest](source-review-manifest.json) | Official links are usable within their recorded scope. Twenty-six local source-text copies are accepted under documents/ (11 legal/instrument texts and 15 dated gov.pl text snapshots); 24 other former candidates have final locator/disposition notes there because their captures are dynamic, incomplete, mismatched, out of scope or not cleared for copying. Original candidate and raw records remain Monitor-archived. Captures and conversion do not establish topic coverage. No topic has been accepted. |
 
 ## Status meanings
 

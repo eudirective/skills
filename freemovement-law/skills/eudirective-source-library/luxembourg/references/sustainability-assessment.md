@@ -1,25 +1,25 @@
-# Luxembourg official-source review (21 October 2026)
+# Luxembourg official-source review (25 October 2026)
 
 ## Result
 
-The inventory has 49 candidates. Thirty-six official external references are accepted within recorded publisher, identity, date/version and topic limits; ten are pending human/currentness review; three stale routes are not relied upon. No local copy, legal topic or country review is accepted complete.
+The bounded inventory contains 49 source records: 44 official external references accepted within recorded scopes, 2 pending human/currentness review, and 3 routes not relied upon. Ten exact local legal-text copies are accepted and 24 independent source-reference notes are promoted in documents/. No topic or country review is accepted complete.
 
-The Legilux Immigration Law consolidation applicable 12 June 2026 is a dated government working text; Legilux says consolidated texts are documentary and without legal force. The Ministry coordinated formalities PDF applies from 15 April 2023 and its amendment cutoff is 17 March 2023, while 2024 amendment/correction records exist. The Guichet family page was updated 1 October 2026, but some linked checklists date from 18 October 2023. These limits are recorded per reference.
+Nine copies were generated from official Legilux/Casemates LegalDocML XML, published under CC BY 4.0. LU-10 is a separate dated coordinated regulation text from the official Ministry PDF, limited to the text applicable from 15 April 2023. Its legal-text reuse basis is Article 10, point 8, of the amended 18 April 2001 copyright law, applied to the official instrument text only; no permission is inferred for the Ministry page or surrounding website content. Each local text records source identity, version/scope, exact response hash, body hash where applicable, extraction method, attribution and limitations. Legilux consolidations are documentary and without legal force; the court-procedure text is only the 2023-09-16 version. The 2024 A283 rectification is not incorporated in the A262 amendment text.
 
 ## Source-use policy
 
-A human-reviewed official link is enough for ordinary research within its checked scope. If a current edition, attachment or operational detail is uncertain, the responsible entire official website is offered for human review. Prefer the closest trustworthy government-published consolidation; check a specific later act only where it may materially affect the question. Do not reconstruct the full Gazette chain by default.
+A reviewed official link is sufficient for reference acceptance within its checked scope. Local-copy acceptance is separate and applies only to the ten exact files listed in source-acceptance.json. The other 24 new documents are independently written source-reference notes; they summarize scope and limits without copying mutable page text, forms, directories or search interfaces. The visa PDFs were verified as linked from Ministry visa pages last updated 2026-10-23, but remain unversioned and were not copied.
 
-Local capture and conversion are optional. The prior capture preserved 35 text conversions and 3 PDF originals, but none is accepted as a local corpus copy. Hash/replay evidence shows preserved bytes and repeatable conversion; it does not validate legal accuracy or topic adequacy. The capture script remains an optional utility, not a source-use gate.
+All 35 candidate Markdown files, the candidate manifest, current and superseded retrieval manifests, 67 raw responses and a response-integrity map are preserved in the EU Source Update Monitor local-only archive outside Git. The old candidate sync/replay script has been retired because it depended on candidate manifests and generated review candidates; no Luxembourg source-pack action is registered, and the documented manual workflow was used.
 
 ## Work still open
 
-- Review the ten pending references using [whole-site offers](source-acceptance.json), especially current procedural pages, visa attachments, the 2023 court-procedure consolidation and the 2013 identity/register law.
+- Resolve the two pending records: LU-11 (current service route) and LU-46 (current consolidation and role of the identity/register law).
 - Recheck Bills 8694 and 8764 before describing court or Ombudsman jurisdiction as current.
-- Compare actual Luxembourg residence-card specimens and issuance instructions with Regulation (EU) 2025/1208 and CJEU C-61/22. No claim is made that Luxembourg legislation cites Regulation (EU) 2019/1157.
+- Compare Luxembourg residence-card specimens and issuance instructions with Regulation (EU) 2025/1208 and CJEU C-61/22.
 - Map statutes to decision-specific procedures, deadlines, remedies, urgent relief, legal aid and file-access routes.
 - Expand repeatable administrative case-law discovery and mission-specific/municipal practice review.
 
 The country review remains incomplete.
 
-Skill: eudirective-source-library v1.0.12.
+Skill: EU Source Update Monitor complete-national-source-pack manual workflow v1.0.0.

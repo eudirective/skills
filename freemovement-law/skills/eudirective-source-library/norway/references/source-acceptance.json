@@ -1,0 +1,1696 @@
+{
+  "schema_version": "1.0.0",
+  "jurisdiction": "NO",
+  "review_date": "2026-10-25",
+  "candidate_record_count": 54,
+  "accepted_external_reference_count": 52,
+  "pending_external_reference_count": 1,
+  "not_relied_upon_reference_count": 1,
+  "accepted_local_copy_count": 0,
+  "accepted_topic_count": 0,
+  "country_review_complete": false,
+  "policy": "Accept official references only within the named publisher, record, language, version and scope. Link acceptance, local-copy acceptance, topic coverage and country completion are separate. Hash/replay success alone does not accept source text. Norway's EEA/EFTA status is distinct from EU membership.",
+  "publisher_assessment": {
+    "decision": "Lovdata is accepted for the identified Norwegian legal records and retrieval routes; other named publishers are accepted only for their individual official records.",
+    "basis": "Publisher identity is tied to the official domains and identified records. Lovdata terms checked 2026-10-25: single formal laws and central regulations can be copied with attribution under NLOD 2.0; mass downloads and systematic extraction are restricted. This promotion publishes no copied statutory or website text.",
+    "limits": "The publicData package list last reported modification 2026-10-17. Dynamic service pages can change. Future-commencement statutes remain non-operative until commencement is confirmed. No topic or country completeness is claimed.",
+    "local_copy_and_reuse": "Zero local copies accepted. Old converted candidates remain local-only review evidence. No blanket right to reproduce publisher pages or bulk package contents is inferred."
+  },
+  "accepted_references": [
+    {
+      "source_id": "no-01",
+      "title": "Lovdata public-data package list",
+      "url": "https://api.lovdata.no/v1/publicData/list",
+      "publisher": "lovdata.no",
+      "language": "no",
+      "checked_on": "2026-10-19",
+      "version_or_scope": "The official list returned the current package names, exact sizes and lastModified 2026-10-17T01:31:00Z; refresh the list before each sync.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "Current public-data package catalogue from Lovdata's documented no-auth API; individual record pages are not scraped.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official candidate/publisher record checked 2026-10-19; acceptance reviewed 2026-10-25.",
+        "retrieval_status": "changed_review_candidate"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-01-lovdata-public-data-package-list.md",
+        "sha256": "b150cfefb2b7a994ab53b4f5504f2a7c0aabf30d58bd6bffbdee1840d017ef32",
+        "bytes": 1575,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      },
+      "candidate_text_archive": {
+        "path": "candidates/norway_candidate_promotion_20261025/Norway/no-01.md",
+        "sha256": "97f497ad6777e948ff81cc89cdca3207d12c2560af9e01871c549caacb3dc812"
+      },
+      "changed_candidate_versions": [
+        {
+          "path": "candidates/norway_candidate_promotion_20261025/Norway/no-01-1cc66cc87546a4e0.md",
+          "sha256": "be43bd8215c647ff39e8974ed021849d0b90b22663d78268fb0f338f3d44b081"
+        }
+      ]
+    },
+    {
+      "source_id": "no-02",
+      "title": "Lovdata OpenAPI schema and public-data API",
+      "url": "https://api.lovdata.no/swagger/api.json",
+      "publisher": "lovdata.no",
+      "language": "no",
+      "checked_on": "2026-10-19",
+      "version_or_scope": "Captured official OpenAPI schema: publicData list/get are documented no-auth routes; structuredRules operations require X-API-Key. Live no-auth list/get requests succeeded on 19 October 2026.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "OpenAPI schema for Lovdata routes; structuredRules endpoints require a key, while publicData list/get are documented as unauthenticated.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official candidate/publisher record checked 2026-10-19; acceptance reviewed 2026-10-25.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-02-lovdata-openapi-schema-and-public-data-api.md",
+        "sha256": "54781d975a741c8d61ef8f32da7eac13ea360b1c702590671f2323674bfda758",
+        "bytes": 1724,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      },
+      "candidate_text_archive": {
+        "path": "candidates/norway_candidate_promotion_20261025/Norway/no-02.md",
+        "sha256": "f5e3445b3016a12213068b8f77e2a4448de7f6dc1dbf4b101ec7a4e8073b7c48"
+      }
+    },
+    {
+      "source_id": "no-03",
+      "title": "Norsk Lovtidend Avdeling I dataset metadata",
+      "url": "https://data.norge.no/nb/datasets/c0c6a87c-f597-3735-965f-650be23426a0/norsk-lovtidend-avdeling-i",
+      "publisher": "data.norge.no",
+      "language": "no",
+      "checked_on": "2026-10-19",
+      "version_or_scope": "Captured data.norge catalogue page identifies an open-licensed distribution, says zero APIs are registered in that catalogue entry, and carries a generic registration caveat; the separate Lovdata OpenAPI schema and live calls establish the exact no-auth list/get route.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "Metadata says official national promulgations since 2001, XML in ZIP archives, daily updates for current-year content and an annual historical archive; routes to /list then /get. Open license is identified as NLOD. Metadata's latest catalog harvest is 2024, and exact current API contents were not verified.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official candidate/publisher record checked 2026-10-19; acceptance reviewed 2026-10-25.",
+        "retrieval_status": "changed_review_candidate"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-03-norsk-lovtidend-avdeling-i-dataset-metadata.md",
+        "sha256": "4bda4117bb4ba6af65f43fdbcf6f5c27033788eff83fb8a2fc4e3d441446e40f",
+        "bytes": 2172,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      },
+      "candidate_text_archive": {
+        "path": "candidates/norway_candidate_promotion_20261025/Norway/no-03.md",
+        "sha256": "eed779dc1b1e0e5b90355bd6a78d9f7f86a8bea7f26402a1e60211bf4e61b3c1"
+      },
+      "changed_candidate_versions": [
+        {
+          "path": "candidates/norway_candidate_promotion_20261025/Norway/no-03-15abcf0dd7c97774.md",
+          "sha256": "fd55a8944b5ce9596bb92f75777d78360ed2e0c7cd14d6e20056158f0a018d71"
+        }
+      ]
+    },
+    {
+      "source_id": "no-04",
+      "title": "Norsk Lovtidend official publication register",
+      "url": "https://lovdata.no/register/lovtidend/",
+      "publisher": "lovdata.no",
+      "language": "no",
+      "checked_on": "2026-10-19",
+      "version_or_scope": "Includes official original enactments and amendments; Avdeling I covers nationwide instruments and Avdeling II regional/local regulations. Original publication text is not the same as current consolidated text.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "Includes official original enactments and amendments; Avdeling I covers nationwide instruments and Avdeling II regional/local regulations. Original publication text is not the same as current consolidated text.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official candidate/publisher record checked 2026-10-19; acceptance reviewed 2026-10-25.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-04-norsk-lovtidend-official-publication-register.md",
+        "sha256": "abcd07255ec7dcab8889f6114f74d347e00b53cde5788ac41c51ff6f343b2e8a",
+        "bytes": 1846,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      },
+      "candidate_text_archive": {
+        "path": "candidates/norway_candidate_promotion_20261025/Norway/no-04.md",
+        "sha256": "e7df3f22d40a1c278f6e86d89fb3967aa5523a660f6a87e3bbccff5ca4dbad84"
+      }
+    },
+    {
+      "source_id": "no-06",
+      "title": "Utlendingsloven, LOV-2008-05-15-35",
+      "url": "https://lovdata.no/dokument/NL/lov/2008-05-15-35",
+      "publisher": "lovdata.no",
+      "language": "no",
+      "checked_on": "2026-10-19",
+      "version_or_scope": "I kraft fra: 2010-01-01; Ikrafttredelse av siste endring: 2026-10-01; Ikrafttredelse av siste endring: 2026-10-01; Sist endret ved: lov/2025-06-20-82 fra 2026-10-01, lov/2026-06-19-50 fra 2026-07-01; package lastModified 2026-10-17T01:31:00Z.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "Result shows last amendment LOV-2026-06-12-31, effective 12 June 2026, and identifies EEA Agreement Article 28–39 and Annex VIII, including Directive 2004/38. Chapter 13 covers EEA/EFTA entry and residence. October text was not retrieved.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official candidate/publisher record checked 2026-10-19; acceptance reviewed 2026-10-25.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-06-utlendingsloven-lov-2008-05-15-35.md",
+        "sha256": "0c37b8bbcd2f0a8c9ba23f61f5e76ac8a6d1db0835aab309ded23eb894982fe6",
+        "bytes": 1923,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      },
+      "candidate_text_archive": {
+        "path": "candidates/norway_candidate_promotion_20261025/Norway/no-06.md",
+        "sha256": "c396e18ff7660b6e45a4740925f02c836dea88d170d9e0f67a7a074db8b367b1"
+      }
+    },
+    {
+      "source_id": "no-07",
+      "title": "Utlendingsforskriften, FOR-2009-10-15-1286",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2009-10-15-1286",
+      "publisher": "lovdata.no",
+      "language": "no",
+      "checked_on": "2026-10-19",
+      "version_or_scope": "I kraft fra: 2010-01-01; Ikrafttredelse av siste endring: 2026-10-01; Ikrafttredelse av siste endring: 2026-10-01; Sist endret ved: forskrift/2026-09-17-1834 fra 2026-10-01; package lastModified 2026-10-17T01:31:00Z.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "Result shows amendment FOR-2026-06-12-1060 effective 12 June 2026. It implements and supplements the Immigration Act; exact October text, exports, and article-level retrieval were not replayed.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official candidate/publisher record checked 2026-10-19; acceptance reviewed 2026-10-25.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-07-utlendingsforskriften-for-2009-10-15-1286.md",
+        "sha256": "1af856251f4ef580b516760900fb8c6036755319dfe003faf406f0baaeeed926",
+        "bytes": 1831,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      },
+      "candidate_text_archive": {
+        "path": "candidates/norway_candidate_promotion_20261025/Norway/no-07.md",
+        "sha256": "09d8883ce0a8b1bb91b8a18448d472da7129dba5f589018120b333286329d9ae"
+      }
+    },
+    {
+      "source_id": "no-08",
+      "title": "EØS-loven, LOV-1992-11-27-109",
+      "url": "https://lovdata.no/lov/1992-11-27-109",
+      "publisher": "lovdata.no",
+      "language": "no",
+      "checked_on": "2026-10-19",
+      "version_or_scope": "I kraft fra: 1994-01-01 samtidig med EØS-avtalen; Ikrafttredelse av siste endring: 2014-04-12; Ikrafttredelse av siste endring: 2014-04-12; Sist endret ved: lov/2014-04-11-11 fra 2014-04-12; package lastModified 2026-10-17T01:31:00Z.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "§1 makes the EEA Agreement main body Norwegian law and §2 sets a conflict rule for implementing measures. This does not make Norway an EU Member State or turn every EU act into directly applicable Norwegian law.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official candidate/publisher record checked 2026-10-19; acceptance reviewed 2026-10-25.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-08-e-s-loven-lov-1992-11-27-109.md",
+        "sha256": "5538d593a20a2905abb95d44dddc9368d99e02e4fbd7b56e910b06f3c72668c0",
+        "bytes": 1840,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      },
+      "candidate_text_archive": {
+        "path": "candidates/norway_candidate_promotion_20261025/Norway/no-08.md",
+        "sha256": "43af765a8cdedd3d9aaccfbbb59e0dd48f3772006423d2887fbfc42a2d4f7fac"
+      }
+    },
+    {
+      "source_id": "no-09",
+      "title": "EEA Legal Texts and updated annexes",
+      "url": "https://www.efta.int/about-efta/legal-documents/eea-legal-texts",
+      "publisher": "www.efta.int",
+      "language": "en",
+      "checked_on": "2026-10-25",
+      "version_or_scope": "EFTA publishes the Agreement, updated annexes/protocols, and joint committee decisions. Track Norway's EEA incorporation and adaptations separately from EU versions; source files and change notifications were not downloaded.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "EFTA publishes the Agreement, updated annexes/protocols, and joint committee decisions. Track Norway's EEA incorporation and adaptations separately from EU versions; source files and change notifications were not downloaded.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official page/search result checked at the named publisher route on 2026-10-25.",
+        "retrieval_status": "changed_review_candidate"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-09-eea-legal-texts-and-updated-annexes.md",
+        "sha256": "23b4d7255be625e723bd0d323adf7a3c5f1f695c35d955ddc874495224d51ad0",
+        "bytes": 1790,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      },
+      "candidate_text_archive": {
+        "path": "candidates/norway_candidate_promotion_20261025/Norway/no-09.md",
+        "sha256": "f7c1d6683169804c7a2e61614643a28ed1cde2901ed4d513368a956f473a21eb"
+      },
+      "changed_candidate_versions": [
+        {
+          "path": "candidates/norway_candidate_promotion_20261025/Norway/no-09-b10e2ac858da629e.md",
+          "sha256": "3cb81978afa72a93647dd170a8d4eb3c1f2612b4b275bd03ae540b6614762137"
+        }
+      ]
+    },
+    {
+      "source_id": "no-10",
+      "title": "EFTA Convention, including Annex K: Movement of Persons",
+      "url": "https://www.efta.int/about-efta/legal-documents/efta-convention",
+      "publisher": "www.efta.int",
+      "language": "en",
+      "checked_on": "2026-10-25",
+      "version_or_scope": "Revised Vaduz Convention includes movement of persons and applies in relations between Switzerland and the EEA EFTA States. This is a distinct Swiss/EFTA route, not the EEA Agreement. Annex text, reservations, and current Norwegian implementing details require per-record verification.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "Revised Vaduz Convention includes movement of persons and applies in relations between Switzerland and the EEA EFTA States. This is a distinct Swiss/EFTA route, not the EEA Agreement. Annex text, reservations, and current Norwegian implementing details require per-record verification.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official page/search result checked at the named publisher route on 2026-10-25.",
+        "retrieval_status": "changed_review_candidate"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-10-efta-convention-including-annex-k-movement-of-persons.md",
+        "sha256": "0911acd5e496f8b1cd96ce192ccb494bba2bcad860212d3d78ab7d039e74ed53",
+        "bytes": 2013,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      },
+      "candidate_text_archive": {
+        "path": "candidates/norway_candidate_promotion_20261025/Norway/no-10.md",
+        "sha256": "2c863117e9887fd37dcb2e8d02865c78bb7db2ea73e52a34f10ea379816371ae"
+      },
+      "changed_candidate_versions": [
+        {
+          "path": "candidates/norway_candidate_promotion_20261025/Norway/no-10-b24deee3647b2759.md",
+          "sha256": "e7a00204b7f7dd51a1c5b0bdb3d9a24f702247c07bd8f36fe3f57c2328cad024"
+        }
+      ]
+    },
+    {
+      "source_id": "no-11",
+      "title": "UDI 2010-025, Family immigration with an EEA citizen",
+      "url": "https://www.udiregelverk.no/rettskilder/udi-retningslinjer/udi-2010-025/",
+      "publisher": "www.udiregelverk.no",
+      "language": "no",
+      "checked_on": "2026-10-25",
+      "version_or_scope": "Record states it concerns family immigration under Immigration Act §110 and Immigration Regulations §19-7; change history includes 22 July 2026. Norwegian HTML with document ID and dated changes is promising; page history/version capture and body conversion remain unverified. Scope and status differ from the Danish rule.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "Record states it concerns family immigration under Immigration Act §110 and Immigration Regulations §19-7; change history includes 22 July 2026. Norwegian HTML with document ID and dated changes is promising; page history/version capture and body conversion remain unverified. Scope and status differ from the Danish rule.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official page/search result checked at the named publisher route on 2026-10-25.",
+        "retrieval_status": "retrieval_or_conversion_error"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-11-udi-2010-025-family-immigration-with-an-eea-citizen.md",
+        "sha256": "ad9e8bce5ab7cc0bbd61817dda6267f1b62c3e3d475518a884f7ba80acf7564b",
+        "bytes": 2085,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      }
+    },
+    {
+      "source_id": "no-12",
+      "title": "Repealed EØS-arbeidstakerloven, LOV-1992-11-27-112",
+      "url": "https://lovdata.no/lov/1992-11-27-112",
+      "publisher": "lovdata.no",
+      "language": "no",
+      "checked_on": "2026-10-19",
+      "version_or_scope": "The 2012 replacement identifies LOV-1992-11-27-112 as repealed upon the replacement act taking effect on 14 December 2012.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "Historical-only repealed text; not operative law.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official candidate/publisher record checked 2026-10-19; acceptance reviewed 2026-10-25.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-12-repealed-e-s-arbeidstakerloven-lov-1992-11-27-112.md",
+        "sha256": "d2d824a37d9c4fc6d573c7925a785b31ede1ed8c49d8bd5483fc011f7a010f84",
+        "bytes": 1424,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      },
+      "candidate_text_archive": {
+        "path": "candidates/norway_candidate_promotion_20261025/Norway/no-12.md",
+        "sha256": "1cd1c664a89f4f588c83bdf36626c476a1bf9d5edd43b696c69994636f178c94"
+      }
+    },
+    {
+      "source_id": "no-13",
+      "title": "Forvaltningsloven, LOV-1967-02-10",
+      "url": "https://lovdata.no/dokument/NL/lov/1967-02-10",
+      "publisher": "lovdata.no",
+      "language": "no",
+      "checked_on": "2026-10-19",
+      "version_or_scope": "I kraft fra: 1970-01-01; Ikrafttredelse av siste endring: 2026-01-01; Ikrafttredelse av siste endring: 2026-01-01; Sist endret ved: lov/2025-04-25-12 fra 2026-01-01; package lastModified 2026-10-17T01:31:00Z.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "The 1967 Act remains operative until the 2025 replacement commences; monitor the commencement decision and transitional provisions.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official candidate/publisher record checked 2026-10-19; acceptance reviewed 2026-10-25.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-13-forvaltningsloven-lov-1967-02-10.md",
+        "sha256": "88991bf6defafa155a6db2ed5bcf8dd75e2325538c515064acdb5897a543169a",
+        "bytes": 1663,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      },
+      "candidate_text_archive": {
+        "path": "candidates/norway_candidate_promotion_20261025/Norway/no-13.md",
+        "sha256": "7a568566dda6abd32dac001f8885fb53a902e808cc692097589570580c270698"
+      }
+    },
+    {
+      "source_id": "no-14",
+      "title": "Offentleglova, LOV-2006-05-19-16",
+      "url": "https://lovdata.no/dokument/NL/lov/2006-05-19-16",
+      "publisher": "lovdata.no",
+      "language": "no",
+      "checked_on": "2026-10-19",
+      "version_or_scope": "Ikrafttreding av siste endring: 2026-07-01; Sist endra ved: lov/2026-05-29-20 fra 2026-07-01; package lastModified 2026-10-17T01:31:00Z.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "Governs access to government records and reuse/access context; privacy/confidentiality exceptions are material in individual immigration matters. Do not use it as a blanket reuse license for every content type.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official candidate/publisher record checked 2026-10-19; acceptance reviewed 2026-10-25.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-14-offentleglova-lov-2006-05-19-16.md",
+        "sha256": "f2a8bc89beb5b8834f8369aede4c18232c8c18e2019371de3a9668177f8810f5",
+        "bytes": 1739,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      },
+      "candidate_text_archive": {
+        "path": "candidates/norway_candidate_promotion_20261025/Norway/no-14.md",
+        "sha256": "c818611f5b9a906bd5e27f3080cf1b7553571f524a3212dbcb2ce1c2358bb9d0"
+      }
+    },
+    {
+      "source_id": "no-15",
+      "title": "Offentlegforskrifta, FOR-2008-10-17-1119",
+      "url": "https://lovdata.no/forskrift/2008-10-17-1119",
+      "publisher": "lovdata.no",
+      "language": "no",
+      "checked_on": "2026-10-19",
+      "version_or_scope": "I kraft fra: 2009-01-01, departementet fastset; Ikrafttredelse av siste endring: 2022-12-09; Ikrafttredelse av siste endring: 2022-12-09; Sist endret ved: forskrift/2022-12-09-2106; package lastModified 2026-10-17T01:31:00Z.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "Candidate for public-journal/eInnsyn scope and access workflow; current text, amendments, and applicable exceptions not inspected.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official candidate/publisher record checked 2026-10-19; acceptance reviewed 2026-10-25.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-15-offentlegforskrifta-for-2008-10-17-1119.md",
+        "sha256": "5c727d42c9b98e8387b07ffae0a21e18c3e27d1e0f0aced58074a6d968a91355",
+        "bytes": 1691,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      },
+      "candidate_text_archive": {
+        "path": "candidates/norway_candidate_promotion_20261025/Norway/no-15.md",
+        "sha256": "69b990a1c0b54406f3a5726e40b606c00ac1cd60473b9cab6d472614db12248c"
+      }
+    },
+    {
+      "source_id": "no-16",
+      "title": "Personopplysningsloven, LOV-2018-06-15-38",
+      "url": "https://lovdata.no/dokument/NL/lov/2018-06-15-38",
+      "publisher": "lovdata.no",
+      "language": "no",
+      "checked_on": "2026-10-19",
+      "version_or_scope": "I kraft fra: 2018-07-20; Ikrafttredelse av siste endring: 2022-01-01; Ikrafttredelse av siste endring: 2022-01-01; Sist endret ved: lov/2021-06-18-124 fra 2022-01-01; package lastModified 2026-10-17T01:31:00Z.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "Norwegian Personal Data Act/GDPR source candidate; EU/EEA information-system instruments and Immigration Act special provisions need distinct treatment. Current text and reuse route unverified.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official candidate/publisher record checked 2026-10-19; acceptance reviewed 2026-10-25.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-16-personopplysningsloven-lov-2018-06-15-38.md",
+        "sha256": "1e16817ab815b27c6ecbf0d0d331ea4234bb35917db3214930794b0f4acf11ed",
+        "bytes": 1798,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      },
+      "candidate_text_archive": {
+        "path": "candidates/norway_candidate_promotion_20261025/Norway/no-16.md",
+        "sha256": "aaf0d63c306ba38780dc3066e463d91c76463cb2deb3153a573cd22f49cfbe3b"
+      }
+    },
+    {
+      "source_id": "no-17",
+      "title": "Dataforvaltningsloven, LOV-2026-06-19-36",
+      "url": "https://lovdata.no/dokument/NL/lov/2026-06-19-36",
+      "publisher": "lovdata.no",
+      "language": "no",
+      "checked_on": "2026-10-19",
+      "version_or_scope": "I kraft fra: Kongen bestemmer; package lastModified 2026-10-17T01:31:00Z.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "Enacted source; publisher metadata says commencement is to be determined. Do not treat as operative without a commencement decision.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official candidate/publisher record checked 2026-10-19; acceptance reviewed 2026-10-25.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-17-dataforvaltningsloven-lov-2026-06-19-36.md",
+        "sha256": "ecc4bb14c58132fde26d01df0b5785e4ca51912864c04f9553a37a08be55aa2b",
+        "bytes": 1558,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      },
+      "candidate_text_archive": {
+        "path": "candidates/norway_candidate_promotion_20261025/Norway/no-17.md",
+        "sha256": "46a3a298f4b3e599cc73a5e880fdefe0d016841fd3572ebfe3c8a892b65ae5df"
+      }
+    },
+    {
+      "source_id": "no-18",
+      "title": "Immigration Act English translation",
+      "url": "https://www.regjeringen.no/en/documents/immigration-act/id585772/",
+      "publisher": "www.regjeringen.no",
+      "language": "en",
+      "checked_on": "2026-10-25",
+      "version_or_scope": "The ministry explicitly says this translation was updated only to 1 April 2014, has no legal status, and is not continuously updated. Discovery aid only; use Norwegian current text and verify every provision.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "Government-published English translation locator only; currency is not established and Norwegian text controls.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official page/search result checked at the named publisher route on 2026-10-25.",
+        "retrieval_status": "retrieval_or_conversion_error"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-18-immigration-act-english-translation.md",
+        "sha256": "5fa6a47dcbb122d651fe0fe7fa82761e42ec5d3321d7ea3c09d4947d96c94a11",
+        "bytes": 1697,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      }
+    },
+    {
+      "source_id": "no-19",
+      "title": "UDI Regelverk portal",
+      "url": "https://www.udiregelverk.no/en/",
+      "publisher": "www.udiregelverk.no",
+      "language": "en",
+      "checked_on": "2026-10-19",
+      "version_or_scope": "Portal lists laws/regulations, UDI guidelines, Supreme Court decisions, ministry circulars/instructions and international sources, with a recent-changes area. Dynamic search and record pagination not checked.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "Portal lists laws/regulations, UDI guidelines, Supreme Court decisions, ministry circulars/instructions and international sources, with a recent-changes area. Dynamic search and record pagination not checked.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official candidate/publisher record checked 2026-10-19; acceptance reviewed 2026-10-25.",
+        "retrieval_status": "retrieval_or_conversion_error"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-19-udi-regelverk-portal.md",
+        "sha256": "af50fb9b0210cc473c4c77760466d238ea4bdef2caf7e6cce302986b76c83542",
+        "bytes": 1609,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      }
+    },
+    {
+      "source_id": "no-20",
+      "title": "UDI EEA/EU residence guidance hub",
+      "url": "https://www.udi.no/en/want-to-apply/residence-under-the-eueeu-regulations/",
+      "publisher": "www.udi.no",
+      "language": "en",
+      "checked_on": "2026-10-25",
+      "version_or_scope": "Dynamic parent route links registration, family members, permanent residence, Norwegian returners and other situations. Preserve parent-child link discovery and country-selector state; page content and update marker need live replay.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "Dynamic parent route links registration, family members, permanent residence, Norwegian returners and other situations. Preserve parent-child link discovery and country-selector state; page content and update marker need live replay.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official page/search result checked at the named publisher route on 2026-10-25.",
+        "retrieval_status": "retrieval_or_conversion_error"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-20-udi-eea-eu-residence-guidance-hub.md",
+        "sha256": "6fb9f51569cb417638ff51551ff4677d8ce6ef8162c83a5b938678384f386a3e",
+        "bytes": 1776,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      }
+    },
+    {
+      "source_id": "no-21",
+      "title": "UDI EEA regulations frequently asked questions",
+      "url": "https://www.udi.no/en/answer-pages/answers-eueea/",
+      "publisher": "www.udi.no",
+      "language": "en",
+      "checked_on": "2026-10-25",
+      "version_or_scope": "Explains registration vs residence card, derived residence, returning Norwegians and evidence; expressly says a registration certificate/card does not itself confirm the underlying right. Frequently maintained operational guidance, not primary law.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "Explains registration vs residence card, derived residence, returning Norwegians and evidence; expressly says a registration certificate/card does not itself confirm the underlying right. Frequently maintained operational guidance, not primary law.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official page/search result checked at the named publisher route on 2026-10-25.",
+        "retrieval_status": "retrieval_or_conversion_error"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-21-udi-eea-regulations-frequently-asked-questions.md",
+        "sha256": "29a54301802a1b9914a850a25b5f4496255c82d0834057ca73dbd68c5f07cc57",
+        "bytes": 1825,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      }
+    },
+    {
+      "source_id": "no-22",
+      "title": "UDI residence card for family members of EU/EEA nationals",
+      "url": "https://www.udi.no/en/want-to-apply/family-immigration/residence-card-for-family-members-of-eueea-nationals-/",
+      "publisher": "www.udi.no",
+      "language": "en",
+      "checked_on": "2026-10-25",
+      "version_or_scope": "Dynamic questions and citizenship query parameters affect content; includes family categories and application links. Swiss sponsors are surfaced by UDI as a personalized case, but must remain legally distinguished from EEA nationals. No page state or attachment was captured.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "Dynamic questions and citizenship query parameters affect content; includes family categories and application links. Swiss sponsors are surfaced by UDI as a personalized case, but must remain legally distinguished from EEA nationals. No page state or attachment was captured.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official page/search result checked at the named publisher route on 2026-10-25.",
+        "retrieval_status": "retrieval_or_conversion_error"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-22-udi-residence-card-for-family-members-of-eu-eea-nationals.md",
+        "sha256": "9bc11297861dbe7374493ba1d98e6ba67736798bf4a75a545bb5dc1931485dea",
+        "bytes": 1967,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      }
+    },
+    {
+      "source_id": "no-23",
+      "title": "UDI family member of a returning Norwegian under EEA rules",
+      "url": "https://www.udi.no/en/want-to-apply/family-immigration/residence-card-for-family-members-of-eueea-nationals-/?c=ind&e=y&f=nor",
+      "publisher": "www.udi.no",
+      "language": "en",
+      "checked_on": "2026-10-19",
+      "version_or_scope": "Page requires Norwegian sponsor to have exercised free movement and moved/reunited in Norway; this is not ordinary domestic Norwegian family immigration. Parameterized route and evolving page state require rediscovery.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "Page requires Norwegian sponsor to have exercised free movement and moved/reunited in Norway; this is not ordinary domestic Norwegian family immigration. Parameterized route and evolving page state require rediscovery.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official candidate/publisher record checked 2026-10-19; acceptance reviewed 2026-10-25.",
+        "retrieval_status": "retrieval_or_conversion_error"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-23-udi-family-member-of-a-returning-norwegian-under-eea-rules.md",
+        "sha256": "2508a4f6466779e5f7b6aa1c2a5f269f46f91d98b6c503a8624283c3a5f7398d",
+        "bytes": 1813,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      }
+    },
+    {
+      "source_id": "no-24",
+      "title": "UDI permanent right of residence for EU/EEA nationals",
+      "url": "https://www.udi.no/en/want-to-apply/permanent-residence/permanent-right-of-residence-for-eueea-nationals/",
+      "publisher": "www.udi.no",
+      "language": "en",
+      "checked_on": "2026-10-25",
+      "version_or_scope": "Describes five-year residence and qualifying categories. UDI states Swiss citizens have the same rights in Norway despite Switzerland not being EU/EEA; preserve that separate EFTA route and verify law/policy basis. Dynamic language/content incomplete in English.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "Describes five-year residence and qualifying categories. UDI states Swiss citizens have the same rights in Norway despite Switzerland not being EU/EEA; preserve that separate EFTA route and verify law/policy basis. Dynamic language/content incomplete in English.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official page/search result checked at the named publisher route on 2026-10-25.",
+        "retrieval_status": "retrieval_or_conversion_error"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-24-udi-permanent-right-of-residence-for-eu-eea-nationals.md",
+        "sha256": "23d92d82c866369bb85d08ee32ac253a1ddab399f61d59954a42fefa00d7d90f",
+        "bytes": 1912,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      }
+    },
+    {
+      "source_id": "no-25",
+      "title": "UDI family immigration hub",
+      "url": "https://www.udi.no/en/want-to-apply/family-immigration/",
+      "publisher": "www.udi.no",
+      "language": "en",
+      "checked_on": "2026-10-25",
+      "version_or_scope": "Parent page distinguishes ordinary permits, EU/EEA family residence cards and registration. Country-based wizard choices affect output; do not treat ordinary Norwegian sponsor permit as the free-movement route.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "Parent page distinguishes ordinary permits, EU/EEA family residence cards and registration. Country-based wizard choices affect output; do not treat ordinary Norwegian sponsor permit as the free-movement route.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official page/search result checked at the named publisher route on 2026-10-25.",
+        "retrieval_status": "retrieval_or_conversion_error"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-25-udi-family-immigration-hub.md",
+        "sha256": "01d72cdaca53348488c36806a131b8d1ee6367f2a3a46d56e2f1f7a913f88963",
+        "bytes": 1642,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      }
+    },
+    {
+      "source_id": "no-26",
+      "title": "UDI difference between family immigration permit and residence card",
+      "url": "https://www.udi.no/en/word-definitions/the-difference-between-a-family-immigration-permit-and-a-residence-card",
+      "publisher": "www.udi.no",
+      "language": "en",
+      "checked_on": "2026-10-25",
+      "version_or_scope": "UDI says some applicants may choose between routes, with different fees, residence entitlements, and integration-law consequences. Dynamic comparison conditions and volatile economic thresholds need update monitoring.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "UDI says some applicants may choose between routes, with different fees, residence entitlements, and integration-law consequences. Dynamic comparison conditions and volatile economic thresholds need update monitoring.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official page/search result checked at the named publisher route on 2026-10-25.",
+        "retrieval_status": "retrieval_or_conversion_error"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-26-udi-difference-between-family-immigration-permit-and-residence-ca.md",
+        "sha256": "494053bbaf050a616c0f51b96433e55815b2744b70d8d8834660154e65633f9e",
+        "bytes": 1776,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      }
+    },
+    {
+      "source_id": "no-27",
+      "title": "UDI Swiss-person EU/EEA route selector",
+      "url": "https://www.udi.no/en/want-to-apply/residence-under-the-eueeu-regulations/?c=che",
+      "publisher": "www.udi.no",
+      "language": "en",
+      "checked_on": "2026-10-25",
+      "version_or_scope": "UDI explicitly says Switzerland is not EU/EEA but Swiss nationals have the same rights in Norway. Verify the EFTA Convention and Norwegian implementation independently; do not generalize EU/EEA family-card wording to every Swiss family member.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "UDI explicitly says Switzerland is not EU/EEA but Swiss nationals have the same rights in Norway. Verify the EFTA Convention and Norwegian implementation independently; do not generalize EU/EEA family-card wording to every Swiss family member.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official page/search result checked at the named publisher route on 2026-10-25.",
+        "retrieval_status": "retrieval_or_conversion_error"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-27-udi-swiss-person-eu-eea-route-selector.md",
+        "sha256": "720b655b21778ea6ef25f327a5ca9292be09c942d3e11952285019ae8a3745b7",
+        "bytes": 1797,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      }
+    },
+    {
+      "source_id": "no-28",
+      "title": "UDI visitor visa, including travel with or visit to an EU/EEA family member",
+      "url": "https://www.udi.no/en/want-to-apply/visit-and-holiday/visitors-visa-to-norway/",
+      "publisher": "www.udi.no",
+      "language": "en",
+      "checked_on": "2026-10-25",
+      "version_or_scope": "Identifies fee-free/priority visa situation for certain close family members and a linked checklist. Criteria are narrower than long-term residence; country-specific document submission remains mission-dependent.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "Identifies fee-free/priority visa situation for certain close family members and a linked checklist. Criteria are narrower than long-term residence; country-specific document submission remains mission-dependent.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official page/search result checked at the named publisher route on 2026-10-25.",
+        "retrieval_status": "retrieval_or_conversion_error"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-28-udi-visitor-visa-including-travel-with-or-visit-to-an-eu-eea-fami.md",
+        "sha256": "7bd309d1c5b5df6b661e65c4f4c7f88a060ac5778e255e315ff58bfb217d126f",
+        "bytes": 1733,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      }
+    },
+    {
+      "source_id": "no-29",
+      "title": "UDI application checklists",
+      "url": "https://www.udi.no/en/checklists/",
+      "publisher": "www.udi.no",
+      "language": "en",
+      "checked_on": "2026-10-25",
+      "version_or_scope": "Index lists multiple EEA family and returning-Norwegian checklists; personalized checklist follows electronic application. Attachment identity/version and dynamic membership require monitoring.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "Index lists multiple EEA family and returning-Norwegian checklists; personalized checklist follows electronic application. Attachment identity/version and dynamic membership require monitoring.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official page/search result checked at the named publisher route on 2026-10-25.",
+        "retrieval_status": "retrieval_or_conversion_error"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-29-udi-application-checklists.md",
+        "sha256": "21d4d964f9cf4003a2c7762c4342c028552aaceb282444413dcbbe85ad417678",
+        "bytes": 1547,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      }
+    },
+    {
+      "source_id": "no-31",
+      "title": "UDI self-service / application workflow",
+      "url": "https://selfservice.udi.no/",
+      "publisher": "selfservice.udi.no",
+      "language": "no",
+      "checked_on": "2026-10-19",
+      "version_or_scope": "Authentication, personalization and applicant data make this a workflow lead, not a source for harvesting or storing individual case records. Route/forms need public parent-page rediscovery.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "Authentication, personalization and applicant data make this a workflow lead, not a source for harvesting or storing individual case records. Route/forms need public parent-page rediscovery.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official candidate/publisher record checked 2026-10-19; acceptance reviewed 2026-10-25.",
+        "retrieval_status": "retrieval_or_conversion_error"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-31-udi-self-service-application-workflow.md",
+        "sha256": "d7c3acb30b0b3720c20756b8fcc28859688fd9b2481fd49dd03ebf500fa07117",
+        "bytes": 1625,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      }
+    },
+    {
+      "source_id": "no-32",
+      "title": "Police residence-card information",
+      "url": "https://www.politiet.no/en/english/residence-permits-and-protection/residence-cards",
+      "publisher": "www.politiet.no",
+      "language": "en",
+      "checked_on": "2026-10-25",
+      "version_or_scope": "Describes card issuance, replacement and appointments; operational service updates may differ from UDI legal guidance. Separate EU/EEA registration from residence-card production.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "Describes card issuance, replacement and appointments; operational service updates may differ from UDI legal guidance. Separate EU/EEA registration from residence-card production.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official page/search result checked at the named publisher route on 2026-10-25.",
+        "retrieval_status": "changed_review_candidate"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-32-police-residence-card-information.md",
+        "sha256": "3403099b699e3cc0d1ef0c4d030580bf1f56cfbd155a12b7cd2bf4067a0e0ce8",
+        "bytes": 1698,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      },
+      "candidate_text_archive": {
+        "path": "candidates/norway_candidate_promotion_20261025/Norway/no-32.md",
+        "sha256": "ab59a5391e99be93e833e799e960f7eba868137b6c54f8002e643268fa96ee6e"
+      },
+      "changed_candidate_versions": [
+        {
+          "path": "candidates/norway_candidate_promotion_20261025/Norway/no-32-fc13dd91ac154eb9.md",
+          "sha256": "13ef3737e18f1fc8ff8afc848630b99aaf472f2ac89c46c07e35abb5a7b100e1"
+        }
+      ]
+    },
+    {
+      "source_id": "no-33",
+      "title": "UDI EEA/Brexit waiting times",
+      "url": "https://www.udi.no/en/waiting-time/residency-according-to-the-eueea-and-brexit-regulations/",
+      "publisher": "www.udi.no",
+      "language": "en",
+      "checked_on": "2026-10-25",
+      "version_or_scope": "UDI says figures are regularly updated and gives a dated next-update field. Volatile operational statistic; monitor only if desired, not part of a legal rule.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "Volatile waiting-time information; values must be checked live.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official page/search result checked at the named publisher route on 2026-10-25.",
+        "retrieval_status": "retrieval_or_conversion_error"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-33-udi-eea-brexit-waiting-times.md",
+        "sha256": "98098e033e25ddb9178720f500063ba2f38e73e1616efcd78dd6bbf773a3f579",
+        "bytes": 1525,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      }
+    },
+    {
+      "source_id": "no-34",
+      "title": "UDI appeal guidance, klage på vedtak",
+      "url": "https://www.udi.no/ord-og-begreper/klage-pa-et-vedtak/",
+      "publisher": "www.udi.no",
+      "language": "no",
+      "checked_on": "2026-10-25",
+      "version_or_scope": "Appeal path/deadline is decision-specific and follows UDI/mission reconsideration, then UNE or another designated body depending on legal source. Maintain separately from the general Public Administration Act.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "Appeal path/deadline is decision-specific and follows UDI/mission reconsideration, then UNE or another designated body depending on legal source. Maintain separately from the general Public Administration Act.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official page/search result checked at the named publisher route on 2026-10-25.",
+        "retrieval_status": "retrieval_or_conversion_error"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-34-udi-appeal-guidance-klage-pa-vedtak.md",
+        "sha256": "c825c02e44871573d836e532a8e0b233f8a0958c140d2d6bb01b291b8f3db83a",
+        "bytes": 1703,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      }
+    },
+    {
+      "source_id": "no-35",
+      "title": "UDI access to documents in an individual case",
+      "url": "https://www.udi.no/en/contact-us/people-who-wish-to-request-access-to-information-about-themselves/?innsyn=sakenmin",
+      "publisher": "www.udi.no",
+      "language": "en",
+      "checked_on": "2026-10-25",
+      "version_or_scope": "Page routes a party's access request through a contact form. This is individual information; do not automate case requests or retain case contents in the source library.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "Page routes a party's access request through a contact form. This is individual information; do not automate case requests or retain case contents in the source library.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official page/search result checked at the named publisher route on 2026-10-25.",
+        "retrieval_status": "retrieval_or_conversion_error"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-35-udi-access-to-documents-in-an-individual-case.md",
+        "sha256": "45cd3236d819724d6983994f037d49423e11041e417e5cd95fe1335d54aecea5",
+        "bytes": 1597,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      }
+    },
+    {
+      "source_id": "no-36",
+      "title": "UDI request for access to personal data",
+      "url": "https://www.udi.no/en/contact-us/people-who-wish-to-request-access-to-information-about-themselves/?innsyn=person",
+      "publisher": "www.udi.no",
+      "language": "en",
+      "checked_on": "2026-10-25",
+      "version_or_scope": "Describes access to UDB and the immigration registers, with identity verification and a normal response period. Sensitive personal data and forms are explicitly outside collection scope.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "Describes access to UDB and the immigration registers, with identity verification and a normal response period. Sensitive personal data and forms are explicitly outside collection scope.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official page/search result checked at the named publisher route on 2026-10-25.",
+        "retrieval_status": "retrieval_or_conversion_error"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-36-udi-request-for-access-to-personal-data.md",
+        "sha256": "25e6487275ccaa107a97f4cbb92834fb90df257fa33ab033bba6d78ac83ad554",
+        "bytes": 1641,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      }
+    },
+    {
+      "source_id": "no-37",
+      "title": "UDI privacy declaration",
+      "url": "https://www.udi.no/en/about-the-udi/the-norwegian-directorate-of-immigrations-udi-privacy-declaration/",
+      "publisher": "www.udi.no",
+      "language": "en",
+      "checked_on": "2026-10-25",
+      "version_or_scope": "Explains UDB and access/processing roles. Page text and controller details can change; monitor the public notice only, never individual applicant records.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "Explains UDB and access/processing roles. Page text and controller details can change; monitor the public notice only, never individual applicant records.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official page/search result checked at the named publisher route on 2026-10-25.",
+        "retrieval_status": "retrieval_or_conversion_error"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-37-udi-privacy-declaration.md",
+        "sha256": "7a58efaf785ad11f8a3ccf24571eb6dcb7fb0c3e47fa4f742159d7d81dd46500",
+        "bytes": 1492,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      }
+    },
+    {
+      "source_id": "no-38",
+      "title": "UNE EEA cases",
+      "url": "https://www.une.no/en/case-types-and-countries/eea-cases/",
+      "publisher": "www.une.no",
+      "language": "en",
+      "checked_on": "2026-10-25",
+      "version_or_scope": "Defines EEA case scope, review types and applicable Immigration Act chapter 13; page says last updated 1 November 2024. UNE's phrasing “EU or EFTA state” should not be taken to mean Switzerland is in the EEA Agreement.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "Defines EEA case scope, review types and applicable Immigration Act chapter 13; page says last updated 1 November 2024. UNE's phrasing “EU or EFTA state” should not be taken to mean Switzerland is in the EEA Agreement.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official page/search result checked at the named publisher route on 2026-10-25.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-38-une-eea-cases.md",
+        "sha256": "ea2bd57083e04b07822afbaf932ec14a690964d624cab79195b0439e744886fe",
+        "bytes": 1779,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      },
+      "candidate_text_archive": {
+        "path": "candidates/norway_candidate_promotion_20261025/Norway/no-38.md",
+        "sha256": "4aed8648ccf2b81e14072ceb0fe17c920de3480cfe3ab2010dd85e7e9cc1df51"
+      }
+    },
+    {
+      "source_id": "no-39",
+      "title": "UNE practice base and source collection",
+      "url": "https://www.une.no/kildesamling/",
+      "publisher": "www.une.no",
+      "language": "no",
+      "checked_on": "2026-10-19",
+      "version_or_scope": "UNE describes a searchable base of summaries of a representative selection, not all decisions; records are anonymized and selected. Coverage, search paging and update signal are incomplete for an exhaustive case-law monitor.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "UNE labels the practice base as a representative selection, not a complete decision corpus.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official candidate/publisher record checked 2026-10-19; acceptance reviewed 2026-10-25.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-39-une-practice-base-and-source-collection.md",
+        "sha256": "b7a3d20f3dc652bd5c1fbfbc339385c31189604c283f06bd2633271c7c325615",
+        "bytes": 1794,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      },
+      "candidate_text_archive": {
+        "path": "candidates/norway_candidate_promotion_20261025/Norway/no-39.md",
+        "sha256": "f79e9166f05e31cb78304d4a0f7c9fcfb2f2aa76f7b7b459fd61f61cf67194ef"
+      }
+    },
+    {
+      "source_id": "no-40",
+      "title": "UNE Grand Board decisions",
+      "url": "https://www.une.no/en/sources/grand-board-decisions/",
+      "publisher": "www.une.no",
+      "language": "en",
+      "checked_on": "2026-10-25",
+      "version_or_scope": "UNE says Grand Board decisions have precedent effect for UDI/UNE until changed through law or practice. Page and linked PDFs require per-item identity/version checks.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "UNE says Grand Board decisions have precedent effect for UDI/UNE until changed through law or practice. Page and linked PDFs require per-item identity/version checks.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official page/search result checked at the named publisher route on 2026-10-25.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-40-une-grand-board-decisions.md",
+        "sha256": "b2bbdc54b3524dfe82ef86011fd98b8ed6f297e2f042a47c7733e9aa28ccedac",
+        "bytes": 1612,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      },
+      "candidate_text_archive": {
+        "path": "candidates/norway_candidate_promotion_20261025/Norway/no-40.md",
+        "sha256": "1530b33ceeae30b72077085e0eacb2beb613b66d6bc4f906ed6b923ea76ded1e"
+      }
+    },
+    {
+      "source_id": "no-41",
+      "title": "UNE processing times",
+      "url": "https://www.une.no/en/case-processing-times/",
+      "publisher": "www.une.no",
+      "language": "en",
+      "checked_on": "2026-10-25",
+      "version_or_scope": "Dated estimates are updated regularly. A volatile operational source with no legal-content role; treat as a separate optional monitoring class.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "Volatile processing-time information; values must be checked live.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official page/search result checked at the named publisher route on 2026-10-25.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-41-une-processing-times.md",
+        "sha256": "0b5fd0c39a0ae848c1a43259250421d515b1902757949496687a7f17a6e1c4f7",
+        "bytes": 1506,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      },
+      "candidate_text_archive": {
+        "path": "candidates/norway_candidate_promotion_20261025/Norway/no-41.md",
+        "sha256": "8ec137dd9d229de7f080d6d8ab4aff7d5fc76f8675ef825ac7bb1dabb50c51ee"
+      }
+    },
+    {
+      "source_id": "no-42",
+      "title": "Sivilombudet immigration statements archive",
+      "url": "https://www.sivilombudet.no/uttalelser/?case_type=utlendingssaker",
+      "publisher": "www.sivilombudet.no",
+      "language": "no",
+      "checked_on": "2026-10-19",
+      "version_or_scope": "Search results include recent immigration matters, including family-immigration delay and EEA expulsion. Filtered archive is a dynamic search interface; coverage/pagination and a complete feed remain unverified.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "Dynamic archive; pagination and complete coverage are not established.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official candidate/publisher record checked 2026-10-19; acceptance reviewed 2026-10-25.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-42-sivilombudet-immigration-statements-archive.md",
+        "sha256": "b1769f0d47fd57f2d6bc9083e65d1e2f0870cedc6a5726192194b8b3d00485dc",
+        "bytes": 1796,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      },
+      "candidate_text_archive": {
+        "path": "candidates/norway_candidate_promotion_20261025/Norway/no-42.md",
+        "sha256": "85fcdc9e75899f63bad8887223cd41defaaf3611c74680ccabe4d709920f5c50"
+      }
+    },
+    {
+      "source_id": "no-43",
+      "title": "Sivilombudet complaint route",
+      "url": "https://www.sivilombudet.no/en/about-us/contact/",
+      "publisher": "www.sivilombudet.no",
+      "language": "en",
+      "checked_on": "2026-10-25",
+      "version_or_scope": "Complaint workflow uses a personal login or form and ordinarily follows the authority's own complaint process. Keep it distinct from immigration appeal remedies and exclude submissions/personal files.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "Complaint workflow uses a personal login or form and ordinarily follows the authority's own complaint process. Keep it distinct from immigration appeal remedies and exclude submissions/personal files.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official page/search result checked at the named publisher route on 2026-10-25.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-43-sivilombudet-complaint-route.md",
+        "sha256": "aee87ef5b3f3c34ac4fabaa3ead66611af3c207cb9cfb6e019b394b5c656313a",
+        "bytes": 1719,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      },
+      "candidate_text_archive": {
+        "path": "candidates/norway_candidate_promotion_20261025/Norway/no-43.md",
+        "sha256": "ec8df66347caf6f159b52efc4b3f830b94e331f5d42ae9526334be4e59623866"
+      }
+    },
+    {
+      "source_id": "no-44",
+      "title": "Supreme Court family immigration ruling HR-2022-2329-A",
+      "url": "https://www.domstol.no/en/supremecourt/rulings/rulings-2022/supreme-court-civil-cases/HR-2022-2329-A/",
+      "publisher": "www.domstol.no",
+      "language": "en",
+      "checked_on": "2026-10-25",
+      "version_or_scope": "Illustrates judicial review in family immigration; it concerns a domestic family-establishment age requirement, not the EEA route. One sample is not a complete case-law source.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "One domestic family-establishment decision; not an EEA-route authority or a comprehensive case-law source.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official page/search result checked at the named publisher route on 2026-10-25.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-44-supreme-court-family-immigration-ruling-hr-2022-2329-a.md",
+        "sha256": "ef5f7bdb7552a59cb676be87d3729eee940d63ac0c6c3dba8649ad363d52f303",
+        "bytes": 1747,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      },
+      "candidate_text_archive": {
+        "path": "candidates/norway_candidate_promotion_20261025/Norway/no-44.md",
+        "sha256": "5eb9e6c78373a35a957bbde11d01f7cbe85236da940830cf165b755566c15945"
+      }
+    },
+    {
+      "source_id": "no-45",
+      "title": "Supreme Court rulings index",
+      "url": "https://www.domstol.no/en/supremecourt/rulings/",
+      "publisher": "www.domstol.no",
+      "language": "en",
+      "checked_on": "2026-10-19",
+      "version_or_scope": "Published Supreme Court rulings are searchable by date/ID; lower courts and unpublished decisions need separate scope and source discovery. No feed, pagination, or completeness claim verified.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "Published Supreme Court rulings are searchable by date/ID; lower courts and unpublished decisions need separate scope and source discovery. No feed, pagination, or completeness claim verified.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official candidate/publisher record checked 2026-10-19; acceptance reviewed 2026-10-25.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-45-supreme-court-rulings-index.md",
+        "sha256": "96040a5d2b949f5ade6f5c946a3a1bde4527431f7c73f49efc2eba5aed64c23b",
+        "bytes": 1685,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      },
+      "candidate_text_archive": {
+        "path": "candidates/norway_candidate_promotion_20261025/Norway/no-45.md",
+        "sha256": "7a113b30ba6d832f7f907b0e1a67cf9d47d7e0f554b9c2a4b159f57fb8403188"
+      }
+    },
+    {
+      "source_id": "no-46",
+      "title": "UDI public journal in eInnsyn",
+      "url": "https://www.udi.no/presse/innsyn-i-saker/innsyn-i-udis-postjournal/",
+      "publisher": "www.udi.no",
+      "language": "no",
+      "checked_on": "2026-10-25",
+      "version_or_scope": "UDI says it uses eInnsyn and joined from 8 April 2011; immigration-case confidentiality frequently removes or withholds document content. Searchability and bulk access were not checked.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "UDI says it uses eInnsyn and joined from 8 April 2011; immigration-case confidentiality frequently removes or withholds document content. Searchability and bulk access were not checked.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official page/search result checked at the named publisher route on 2026-10-25.",
+        "retrieval_status": "retrieval_or_conversion_error"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-46-udi-public-journal-in-einnsyn.md",
+        "sha256": "f6ad75488f6c6a08fd2011492269664efe934d5c85f54e73fe1d00d64582d12a",
+        "bytes": 1586,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      }
+    },
+    {
+      "source_id": "no-47",
+      "title": "eInnsyn public journal service",
+      "url": "https://www.einnsyn.no/",
+      "publisher": "www.einnsyn.no",
+      "language": "no",
+      "checked_on": "2026-10-25",
+      "version_or_scope": "Shared journal search for public bodies. It is not a consolidated legal source; journal coverage, retention/search behavior, API availability and confidentiality filters require separate validation.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "Shared journal search for public bodies. It is not a consolidated legal source; journal coverage, retention/search behavior, API availability and confidentiality filters require separate validation.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official page/search result checked at the named publisher route on 2026-10-25.",
+        "retrieval_status": "discovery_surface_no_text"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-47-einnsyn-public-journal-service.md",
+        "sha256": "1619e6d073ae356fb9e132d115c3b9ef95617dc3981f433a326f0d267c39dccc",
+        "bytes": 1611,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      }
+    },
+    {
+      "source_id": "no-48",
+      "title": "Legal Aid Act, LOV-1980-06-13-35",
+      "url": "https://lovdata.no/dokument/NL/lov/1980-06-13-35",
+      "publisher": "lovdata.no",
+      "language": "no",
+      "checked_on": "2026-10-19",
+      "version_or_scope": "I kraft fra: 1981-01-01; Ikrafttredelse av siste endring: 2026-10-01; Ikrafttredelse av siste endring: 2026-10-01; Sist endret ved: lov/2025-06-20-82 fra 2026-10-01; package lastModified 2026-10-17T01:31:00Z.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "Immigration Act §92 separately lists some no-means-test counsel entitlements, but this is not a general guarantee of funded help for every residence-card appeal. Reforms effective 15 October 2025 make stale English summaries especially risky.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official candidate/publisher record checked 2026-10-19; acceptance reviewed 2026-10-25.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-48-legal-aid-act-lov-1980-06-13-35.md",
+        "sha256": "79950fd79beee28e8fe911d49dd5b873dd4748fddc95cafe74f98980e15a71d1",
+        "bytes": 1873,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      },
+      "candidate_text_archive": {
+        "path": "candidates/norway_candidate_promotion_20261025/Norway/no-48.md",
+        "sha256": "14b4315ffe89873a271a1fce2f2b5aa135505b6c7e00293d9768affb6de0efd4"
+      }
+    },
+    {
+      "source_id": "no-49",
+      "title": "County Governor legal aid guidance (current Vestfold and Telemark page)",
+      "url": "https://www.statsforvalteren.no/nb/vestfold-og-telemark/privatperson/fri-rettshjelp/",
+      "publisher": "www.statsforvalteren.no",
+      "language": "en",
+      "checked_on": "2026-10-25",
+      "version_or_scope": "Captured current regional page shows an update stamp of 6 July (year not displayed) and describes the post-15 October 2025 payment-ability model. It is county service guidance, not a national legal authority.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "One county service description only; not national legal-aid rules.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official page/search result checked at the named publisher route on 2026-10-25.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-49-county-governor-legal-aid-guidance-current-vestfold-and-telemark-.md",
+        "sha256": "a75b12c2c299614292126491eac1d3a6a4d3d6cf31478c8cc23f31120ed221da",
+        "bytes": 1756,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      },
+      "candidate_text_archive": {
+        "path": "candidates/norway_candidate_promotion_20261025/Norway/no-49.md",
+        "sha256": "9f6a88bbac356ae0175355d51bb28d44da9c9630100812e97f6ef93319ea9932"
+      }
+    },
+    {
+      "source_id": "no-50",
+      "title": "County Governor apostille service (current Vestfold and Telemark page)",
+      "url": "https://www.statsforvalteren.no/nb/vestfold-og-telemark/privatperson/apostille/",
+      "publisher": "www.statsforvalteren.no",
+      "language": "no",
+      "checked_on": "2026-10-25",
+      "version_or_scope": "Current official regional page captured; it shows a 16 June update stamp without a year and gives service, document and appointment information.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "One county apostille route only; no national procedure claim.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official page/search result checked at the named publisher route on 2026-10-25.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-50-county-governor-apostille-service-current-vestfold-and-telemark-p.md",
+        "sha256": "bd68910d6aa46eaadbb76caf26069e87109bfb27f6c0d3b95e445eca9605642c",
+        "bytes": 1666,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      },
+      "candidate_text_archive": {
+        "path": "candidates/norway_candidate_promotion_20261025/Norway/no-50.md",
+        "sha256": "c81042c136c83dafed7a84356aecb6b083dae19e2ce9a017af0ae19723d18fee"
+      }
+    },
+    {
+      "source_id": "no-51",
+      "title": "Norway.no residence permit and foreign-service routing",
+      "url": "https://www.norway.no/en/central-content/en/service-info/visitors-visa-res-permit/res-permit/",
+      "publisher": "www.norway.no",
+      "language": "en",
+      "checked_on": "2026-10-25",
+      "version_or_scope": "General page routes to UDI and checklists; individual missions publish country-specific appointment, representation and document steps. Discover from the mission's current parent page, not a copied fixed PDF URL.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "General page routes to UDI and checklists; individual missions publish country-specific appointment, representation and document steps. Discover from the mission's current parent page, not a copied fixed PDF URL.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official page/search result checked at the named publisher route on 2026-10-25.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-51-norway-no-residence-permit-and-foreign-service-routing.md",
+        "sha256": "0429a665dfdf0f4919b04293b295ee995eb12df702c9898ba2a5fb98369395b2",
+        "bytes": 1860,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      },
+      "candidate_text_archive": {
+        "path": "candidates/norway_candidate_promotion_20261025/Norway/no-51.md",
+        "sha256": "b0441d890d10c92795683ae9164aec0860d38b4f7e8f644eab5295444bccd544"
+      }
+    },
+    {
+      "source_id": "no-52",
+      "title": "Norwegian Data Protection Authority",
+      "url": "https://www.datatilsynet.no/",
+      "publisher": "www.datatilsynet.no",
+      "language": "no",
+      "checked_on": "2026-10-25",
+      "version_or_scope": "Oversight source for complaints about personal-data processing, with separate special rules for SIS/VIS/police records. Confirm mandate and process for UDI/UDB before treating as the direct remedy.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "General oversight portal only; mandate for a particular UDI/register complaint remains to be verified.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official page/search result checked at the named publisher route on 2026-10-25.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-52-norwegian-data-protection-authority.md",
+        "sha256": "15120cd2f02a45458457bc85528d93ec6a377366fb9b84126d95684ece565c98",
+        "bytes": 1747,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      },
+      "candidate_text_archive": {
+        "path": "candidates/norway_candidate_promotion_20261025/Norway/no-52.md",
+        "sha256": "0fc698bf45a19d04a3b0b9d62bb29342e91e6ee6bb9af9fc3176f689ceaee1ba"
+      }
+    },
+    {
+      "source_id": "no-53",
+      "title": "New Public Administration Act, LOV-2025-06-20-81",
+      "url": "https://lovdata.no/dokument/NL/lov/2025-06-20-81",
+      "publisher": "lovdata.no",
+      "language": "no",
+      "checked_on": "2026-10-19",
+      "version_or_scope": "I kraft fra: Kongen bestemmer; package lastModified 2026-10-17T01:31:00Z.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "Replacement for the 1967 Public Administration Act; publisher metadata says commencement is set by the King, so do not treat as operative before commencement.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official candidate/publisher record checked 2026-10-19; acceptance reviewed 2026-10-25.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-53-new-public-administration-act-lov-2025-06-20-81.md",
+        "sha256": "b09cd9eeca8484c7e08fc2c287be468503e18ddbd10aad11538feae77a53b151",
+        "bytes": 1632,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      },
+      "candidate_text_archive": {
+        "path": "candidates/norway_candidate_promotion_20261025/Norway/no-53.md",
+        "sha256": "f14ab04f866f12f3c6d6681863f7802d19f10cb7dbe6ecbb02122a27208e383c"
+      }
+    },
+    {
+      "source_id": "no-54",
+      "title": "Current EØS Worker Mobility Act, LOV-2012-12-14-81",
+      "url": "https://lovdata.no/lov/2012-12-14-81",
+      "publisher": "lovdata.no",
+      "language": "nn",
+      "checked_on": "2026-10-19",
+      "version_or_scope": "Ikrafttreding av siste endring: 2025-04-10; Sist endra ved: lov/2025-04-10-8; package lastModified 2026-10-17T01:31:00Z.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "limitations": [
+        "Current EØS worker-mobility implementing statute. The 1992 predecessor is repealed; preserve this record’s Nynorsk text and EEA adaptations.",
+        "A link does not establish topic coverage, current legal effect, or country completion."
+      ],
+      "evidence": {
+        "source_record_note": "Official candidate/publisher record checked 2026-10-19; acceptance reviewed 2026-10-25.",
+        "retrieval_status": "converted_review_candidate"
+      },
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-54-current-e-s-worker-mobility-act-lov-2012-12-14-81.md",
+        "sha256": "9c8ea9c2cc295f40228d08510ef3e8040fdc263d3ca86831a25785efefbed0ad",
+        "bytes": 1619,
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      },
+      "candidate_text_archive": {
+        "path": "candidates/norway_candidate_promotion_20261025/Norway/no-54.md",
+        "sha256": "4fd4c0fa60eac9d3627f49f5e1238d19054c6711cf9384f948cb70318732bc4c"
+      }
+    }
+  ],
+  "pending_references": [
+    {
+      "source_id": "no-30",
+      "title": "UDI EU/EEA family visa checklist PDF",
+      "url": "https://www.udi.no/globalassets/global/skjemaer/checklist-visa-eu-eea-family-members.pdf",
+      "publisher": "www.udi.no",
+      "language": "no",
+      "checked_on": "2026-10-19",
+      "decision": "pending_reference_verification",
+      "reason": "The exact fixed PDF revision was not confirmed from the live UDI checklist parent. The parent directs electronic applicants to a personalized checklist; the general checklist page no-29 is accepted separately.",
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-30-udi-eu-eea-family-visa-checklist-pdf.md",
+        "sha256": "550be5d5fcf8b7094c3f6d452819670513feabe46daa8dd099e81f932c4dfaa2",
+        "bytes": 1798,
+        "kind": "disposition_note",
+        "reproduces_source_text": false
+      }
+    }
+  ],
+  "not_relied_upon_references": [
+    {
+      "source_id": "no-05",
+      "title": "Norsk Lovtidend Avdeling II and local/regional regulations",
+      "url": "https://lovdata.no/register/lovtidend/",
+      "publisher": "lovdata.no",
+      "language": "no",
+      "checked_on": "2026-10-19",
+      "decision": "not_relied_upon",
+      "reason": "No separate Avdeling II/local-regulation source was retrieved. This repeats the publication-register URL for no-04; absence from the publicData package list is a retrieval/coverage gap, not a finding that local regulations do not exist.",
+      "local_copy_accepted": false,
+      "source_document": {
+        "path": "documents/references/no-05-norsk-lovtidend-avdeling-ii-and-local-regional-regulations.md",
+        "sha256": "fdbba77bd3db9c0cc515e2afa7240d209ce47cb0b83bf448f451542b19643f80",
+        "bytes": 1767,
+        "kind": "disposition_note",
+        "reproduces_source_text": false
+      }
+    }
+  ],
+  "whole_site_human_review_offers": [],
+  "local_copy_reviews": [
+    {
+      "decision": "no_local_copy_accepted",
+      "review_date": "2026-10-25",
+      "replay_clean_candidate_ids": [
+        "no-01",
+        "no-02",
+        "no-04",
+        "no-06",
+        "no-07",
+        "no-08",
+        "no-13",
+        "no-14",
+        "no-15",
+        "no-16",
+        "no-17",
+        "no-44",
+        "no-45",
+        "no-48",
+        "no-53",
+        "no-54"
+      ],
+      "replay_mismatch_candidate_ids": [
+        "no-03",
+        "no-09",
+        "no-10",
+        "no-12",
+        "no-32",
+        "no-38",
+        "no-39",
+        "no-40",
+        "no-41",
+        "no-42",
+        "no-43",
+        "no-49",
+        "no-50",
+        "no-51",
+        "no-52"
+      ],
+      "reason": "Sixteen outputs replayed deterministically and fifteen did not. Neither result proves complete legal extraction or reuse permission. Five newer variants are preserved but not promoted."
+    }
+  ],
+  "research_archive": {
+    "origin": "norway_candidate_promotion_20261025",
+    "jurisdiction": "Norway",
+    "archived_candidate_markdown_count": 31,
+    "archived_changed_candidate_versions": 5,
+    "candidate_manifest": {
+      "archive_path": "candidates/norway_candidate_promotion_20261025/Norway/candidate-manifest.json",
+      "sha256": "784d90e6d1a2fb247eb4a2c184bafa6c46c8016d13d2dfdbb18323b536ded23c",
+      "bytes": 99454
+    },
+    "retrieval_manifest": {
+      "archive_path": "captures/norway_candidate_promotion_20261025/Norway/retrieval-manifest.json",
+      "sha256": "b0d65addb40bc622a380bfc829d1ac8acce7402317077c7855a25caede7997d3",
+      "bytes": 47906
+    },
+    "candidate_records_preserved": true,
+    "raw_capture_archive_status": "Raw response files remain in local temporary storage and were not migrated to the Monitor archive in this promotion. They were not accepted or published as source texts; archive the needed raw bytes before any later offline text-copy review."
+  },
+  "promotion_review": {
+    "final_document_count": 54,
+    "accepted_reference_notes": 52,
+    "disposition_notes": 2,
+    "accepted_local_copies": 0,
+    "accepted_topics": 0,
+    "coverage_register_status": "not created",
+    "dependency_register_status": "not created",
+    "country_review_complete": false,
+    "monitor_capability": "No Norway-specific pack action is registered; all six national completion gates are unsupported.",
+    "remaining_work": [
+      "Verify or retire the exact UDI checklist PDF lead.",
+      "Archive raw captures through Monitor before later offline semantic review.",
+      "Build evidence-backed coverage, dependency, continuing-discovery and operational registers."
+    ]
+  }
+}

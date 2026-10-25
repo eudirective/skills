@@ -1,6 +1,6 @@
 # Slovenia proposed-route sustainability assessment
 
-Reviewed: 21 October 2026. The 42-candidate pack has 42 captured responses, 23 replay-verified text conversions, 19 shell/discovery responses, seven accepted GOV.SI links, and 0 local copies or topics accepted. The 23 local conversions remain unaccepted; semantic review is needed only if they are to be retained as trusted copies. That does not block ordinary use of official links. Use PISRS/GOV.SI manually; no custom currentness adapter or full amendment history is required. This remains a bounded source review, not a country-completeness certification.
+Reviewed: 25 October 2026. The 42-record inventory has 42 prior captured responses, 23 replay-verified text conversions, 19 shell/discovery responses, 17 accepted link-only official references, and 0 local copies or topics accepted. The candidate captures and tracking files are now held only in the Monitor archive. The 23 local conversions remain unaccepted; semantic review is needed only if they are to be retained as trusted copies. That does not block ordinary use of official links. Use PISRS/GOV.SI manually; no custom currentness adapter or full amendment history is required. This remains a bounded source review, not a country-completeness certification.
 
 ## PISRS and official legal publication
 
@@ -22,7 +22,7 @@ The English Schengen privacy notice was available as an official PDF and identif
 
 GOV.SI expressly says that Foreigners Act provisions used for EU citizens also apply to EEA member-state citizens and their family members. The same central page and service inventory present Swiss nationals separately, and the Swiss service explicitly cites the EU–Swiss Agreement on Free Movement of Persons. Keep those as distinct legal routes. A shared GOV.SI page or form directory is not evidence that all detailed rules, family definitions, or remedies are the same.
 
-The EU-family service for non-EU relatives groups EU citizens and Slovenian citizens on one page. Its two legal bases may differ, so the source record must retain that distinction. The directly linked permanent-family service timed out in the research client; the central page exposes a five-year general threshold, but detailed conditions and form links remain unverified. Family-status evidence, recognition, translation and authentication were only partially searched.
+The EU-family service for non-EU relatives groups EU citizens and Slovenian citizens on one page. Its two legal bases may differ, so the source record must retain that distinction. The directly linked permanent-family service is now accessible and accepted as a dated official link; its legal conditions and form links still require a provision-level crosswalk. Family-status evidence, recognition, translation and authentication were only partially searched.
 
 ## Procedure, remedies, privacy, legal aid and courts
 
@@ -32,7 +32,7 @@ The PISRS advanced search offers selected Supreme Court, higher-court, labour/so
 
 ## Practical next steps
 
-- Use the seven accepted GOV.SI references within their displayed dates and scopes; follow their parent pages for current attachments.
+- Use the 17 accepted official references within their displayed dates and scopes; follow parent pages for current attachments.
 - Offer the whole PISRS site for human review of the 17 listed legal/search records. The API authorization gate does not block public link use.
 - For mission-specific questions, review the relevant GOV.SI mission page for the applicant location; one mission does not represent all posts.
 - Check only a specific later legal change when it may materially affect the issue. Do not reconstruct Gazette histories as a routine prerequisite.
@@ -40,4 +40,4 @@ The PISRS advanced search offers selected Supreme Court, higher-court, labour/so
 
 ## Disposition
 
-Seven official GOV.SI links are accepted for dated external reference use. PISRS consolidated-law records are offered for human review through the official site because this review client cannot render their JavaScript pages. No local copy, topic, or country review is accepted. The API remains unused; API authorization is not a condition for ordinary source-link use. See [source-acceptance.json](source-acceptance.json) and [coverage-register.md](coverage-register.md).
+Seventeen official references are accepted for dated link-only use; this count includes the metadata-only OPSI catalogue record. PISRS consolidated-law records are offered for human review through the official site because this review client cannot render their JavaScript pages. No local source copy or topic is accepted, and country review remains incomplete. The API remains unused; API authorization is not a condition for ordinary source-link use. See [source-acceptance.json](source-acceptance.json) and [coverage-register.md](coverage-register.md).

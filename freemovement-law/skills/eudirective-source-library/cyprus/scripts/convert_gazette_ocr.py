@@ -21,9 +21,6 @@ except ImportError as exc:  # pragma: no cover - environment-specific message
     raise SystemExit("Install the pinned dependency: pip install -r source-library/cyprus/requirements.txt") from exc
 
 PACK = Path(__file__).resolve().parents[1]
-OCR_PDF = PACK / "captures/derived/cy-free-movement-gazette-2007-ocr.pdf"
-SOURCE_PDF = PACK / "captures/raw/cy-free-movement-gazette-2007-5956804c60b7979588fb7016109ef76e43d927aeeabcc8444e13d49374f30d50.pdf"
-OUTPUT = PACK / "candidates/legislation/cy-free-movement-gazette-2007.md"
 REVIEW = PACK / "references/gazette-ocr-review.json"
 EXPECTED_PYPDF = "6.21.1"
 EXPECTED_SOURCE_SHA256 = "5956804c60b7979588fb7016109ef76e43d927aeeabcc8444e13d49374f30d50"
@@ -41,8 +38,8 @@ def sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
-def load_correction_patches() -> list[dict[str, object]]:
-    review = json.loads(REVIEW.read_text(encoding="utf-8"))
+def load_correction_patches(review_path: Path) -> list[dict[str, object]]:
+    review = json.loads(review_path.read_text(encoding="utf-8"))
     patches = review["semantic_comparison"]["correction_overlay"]["patches"]
     if not patches:
         raise ValueError("The Gazette correction overlay is empty")
@@ -66,21 +63,21 @@ def apply_page_corrections(text: str, pdf_page: int, patches: list[dict[str, obj
     return text
 
 
-def build_candidate() -> tuple[str, list[int]]:
+def build_candidate(source_pdf: Path, ocr_pdf: Path, review_path: Path) -> tuple[str, list[int]]:
     if pypdf.__version__ != EXPECTED_PYPDF:
         raise ValueError(f"Expected pypdf {EXPECTED_PYPDF}; found {pypdf.__version__}")
-    if sha256(SOURCE_PDF) != EXPECTED_SOURCE_SHA256:
+    if sha256(source_pdf) != EXPECTED_SOURCE_SHA256:
         raise ValueError("The preserved original Gazette PDF hash does not match the reviewed source")
-    if sha256(OCR_PDF) != EXPECTED_OCR_SHA256:
+    if sha256(ocr_pdf) != EXPECTED_OCR_SHA256:
         raise ValueError("The saved OCR derivative hash does not match the reviewed OCR output")
 
-    reader = PdfReader(str(OCR_PDF))
+    reader = PdfReader(str(ocr_pdf))
     if len(reader.pages) != 71:
         raise ValueError(f"Expected a 71-page OCR derivative; found {len(reader.pages)} pages")
 
     sections: list[str] = []
     empty_pages: list[int] = []
-    patches = load_correction_patches()
+    patches = load_correction_patches(review_path)
     replacement_count = sum(int(patch["expected_occurrences"]) for patch in patches)
     for pdf_page in range(FIRST_PDF_PAGE, LAST_PDF_PAGE + 1):
         text = reader.pages[pdf_page - 1].extract_text() or ""
@@ -98,8 +95,8 @@ def build_candidate() -> tuple[str, list[int]]:
         raise ValueError(f"OCR text is empty on original PDF pages: {empty_pages}")
 
     body = "\n\n".join(sections)
-    original_hash = sha256(SOURCE_PDF)
-    ocr_hash = sha256(OCR_PDF)
+    original_hash = sha256(source_pdf)
+    ocr_hash = sha256(ocr_pdf)
     document = f"""# Original promulgation: Law 7(I)/2007
 
 > **OCR review candidate — not accepted.** This text is extracted from the saved OCR derivative with only the page-specific corrections listed in `references/gazette-ocr-review.json` applied. The original OCR PDF is preserved. Other recognition errors may remain; this is not an authoritative or exhaustively validated transcription.
@@ -108,12 +105,12 @@ def build_candidate() -> tuple[str, list[int]]:
 
 - Publisher: Government Printing Office of the Republic of Cyprus.
 - Official source: [Gazette issue 4110, 9 February 2007]({{source_url}})
-- Original PDF: `source-library/cyprus/captures/raw/cy-free-movement-gazette-2007-5956804c60b7979588fb7016109ef76e43d927aeeabcc8444e13d49374f30d50.pdf`
+- Original PDF: retained in the EU Source Update Monitor local-only captures archive.
 - Original PDF SHA-256: `{original_hash}`.
-- OCR derivative: `source-library/cyprus/captures/derived/cy-free-movement-gazette-2007-ocr.pdf`.
+- OCR derivative: retained in the EU Source Update Monitor local-only captures archive.
 - OCR derivative SHA-256: `{ocr_hash}`.
 - OCR service: Adobe Acrobat PDF OCR, Greek locale (`el-GR`); output tracking ID `3ff01392-1297-4979-8314-7d9f7e8b6b1c-pdf_service-9c4612ed`.
-- Markdown extraction: `pypdf {pypdf.__version__}`; replay with `python source-library/cyprus/scripts/convert_gazette_ocr.py --check`.
+- Markdown extraction: `pypdf {pypdf.__version__}`; replay requires retrieving the exact archive inputs and passing them from the temporary workspace.
 - Manual correction overlay: `{len(patches)}` page-scoped exact-text rules, `{replacement_count}` replacements, driven by the visual-review ledger in `references/gazette-ocr-review.json`. Replay aborts if any expected text or occurrence count changes.
 - Scope: printed Gazette pages 112–167, original issue PDF pages 16–71 (56 pages). The issue's other pages are excluded.
 - Review completed: 2026-10-19. Every page in the 56-page run was visually checked for page presence, order, orientation, visible headings and body/form content. The 26 logged discrepancies were corrected with page-scoped rules. This is not an exhaustive word-level or article-by-article validation.
@@ -129,21 +126,29 @@ def build_candidate() -> tuple[str, list[int]]:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     action = parser.add_mutually_exclusive_group(required=True)
-    action.add_argument("--write", action="store_true", help="write the deterministic candidate Markdown")
-    action.add_argument("--check", action="store_true", help="verify the candidate matches replay output")
+    action.add_argument("--write", action="store_true", help="write the deterministic review text to the temporary workspace")
+    action.add_argument("--check", action="store_true", help="compare a temporary review text with replay output")
+    parser.add_argument("--source-pdf", type=Path, required=True, help="exact original Gazette PDF retrieved from the Monitor archive")
+    parser.add_argument("--ocr-pdf", type=Path, required=True, help="exact OCR derivative retrieved from the Monitor archive")
+    parser.add_argument("--output", type=Path, required=True, help="temporary output or comparison text")
+    parser.add_argument("--review", type=Path, default=REVIEW, help="pack review ledger containing the page-scoped corrections")
     args = parser.parse_args()
 
-    candidate, pages = build_candidate()
+    try:
+        candidate, pages = build_candidate(args.source_pdf, args.ocr_pdf, args.review)
+    except (OSError, ValueError, json.JSONDecodeError) as exc:
+        print(f"replay failed: {exc}", file=sys.stderr)
+        return 2
     if args.write:
-        OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-        OUTPUT.write_text(candidate, encoding="utf-8")
-        print(f"Wrote {OUTPUT.relative_to(PACK.parent.parent)} from {len(pages)} OCR pages")
+        args.output.parent.mkdir(parents=True, exist_ok=True)
+        args.output.write_text(candidate, encoding="utf-8")
+        print(f"Wrote temporary review text from {len(pages)} OCR pages: {args.output}")
     else:
-        if not OUTPUT.is_file():
-            print(f"Missing candidate: {OUTPUT}", file=sys.stderr)
+        if not args.output.is_file():
+            print(f"Missing comparison text: {args.output}", file=sys.stderr)
             return 1
-        if OUTPUT.read_text(encoding="utf-8") != candidate:
-            print("Candidate does not match deterministic OCR replay", file=sys.stderr)
+        if args.output.read_text(encoding="utf-8") != candidate:
+            print("Temporary text does not match deterministic OCR replay", file=sys.stderr)
             return 1
         print(f"Replay matches {len(pages)} pages (PDF {FIRST_PDF_PAGE}–{LAST_PDF_PAGE}; Gazette {FIRST_GAZETTE_PAGE}–{FIRST_GAZETTE_PAGE + len(pages) - 1})")
     return 0

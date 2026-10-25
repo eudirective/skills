@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "review_date": "2026-10-21",
+  "review_date": "2026-10-24",
   "jurisdiction": "IT",
   "status": "partial",
   "publisher_assessment": {
     "publisher": "Normattiva and the named Italian government departments, courts, authorities, and EU discovery service.",
-    "decision": "Accept 35 distinct official source records through 37 official link URLs, each within its recorded scope and date. This includes 32 records from the 42-entry monitor inventory and three additional priority sources. No local copy or legal topic is accepted.",
-    "basis": "Normattiva identifies itself as the Italian legal-text service and describes persistent URNs and original, current-at-consultation, date-selected, and multivigent views. The reviewed current records provide consolidated government texts for the main free-movement, immigration, administrative-procedure, and judicial-procedure acts. Current MAECI and authority pages can be human-reviewed in the official web view even where direct capture clients receive a security challenge.",
+    "decision": "Accept the 35 distinct official source records through 37 official links within recorded scopes, and accept three reviewed Normattiva local statutory representations. No legal topic or country review is accepted or complete.",
+    "basis": "Normattiva identifies itself as the Italian legal-text service and describes persistent URNs and original, current-at-consultation, date-selected, and multivigent views. The reviewed current records provide consolidated government texts for the main free-movement, immigration, administrative-procedure, and judicial-procedure acts. Current MAECI and authority pages can be human-reviewed in the official web view even where direct capture clients receive a security challenge. On 24 October 2026, complete article-level current-text captures of D.Lgs. 30/2007 (28 article records), Law 218/1995 (80), and Law 184/1983 (92) were replay-verified against official Normattiva responses. All article identifiers and order matched the live current-text pages; all extracted sections were non-empty. Comparing the previous and fresh captures found no wording changes after whitespace normalization; Law 184/1983 had one paragraph-break-only serialization change. The 2026-10-24 as-of date is the capture date; Law 184/1983 did not expose an ELI version date. The 24 October migration archived 42 candidate/inventory artifacts and 205 capture artifacts (203 Normattiva raw responses plus two retrieval manifests) in the Monitor local-only archive. The duplicate pack-local Normattiva capture-manifest alias had the same SHA-256 as the retrieval manifest and was removed after comparison; only one canonical archive record remains.",
     "limitation": "External-link acceptance means that the named official page is a usable reference within its exact role, wording, language and date. It does not accept a local conversion, establish full topic coverage, resolve every legal dependency, or complete Italy review. Several links are dated, discovery-only, operational examples or live pages without a publication date.",
     "whole_site_review_options": [
       {
@@ -62,7 +62,7 @@
     "pending_external_references": 4,
     "not_relied_upon_optional_or_superseded": 5,
     "duplicate_candidate_records": 3,
-    "accepted_local_copies": 0,
+    "accepted_local_copies": 3,
     "accepted_topics": 0,
     "country_review_complete": false,
     "distinct_source_records_after_deduplication": 44,
@@ -72,21 +72,21 @@
   },
   "inventory_decisions": [
     {
-      "manifest": "references/candidate-manifest.json",
+      "manifest": "candidates/italy-priority-manifest-2026-10-24/IT/priority/candidate-manifest.json",
       "candidate_records": 5,
       "accepted_external_references": 5,
-      "local_copies_accepted": 0,
-      "note": "Priority pack; two links duplicate accepted references in the expanded monitor list."
+      "local_copies_accepted": 3,
+      "note": "Five prioritized source records are archived in the Monitor local-only candidate inventory. Three complete current Normattiva texts were accepted under documents/legislation; the two MAECI guidance records remain external-only."
     },
     {
-      "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+      "manifest": "candidates/italy-expanded-manifest-2026-10-18/IT/expanded/candidate-manifest.json",
       "candidate_records": 42,
       "accepted_external_references": 32,
       "pending_external_references": 4,
       "not_relied_upon_optional_or_superseded": 5,
       "duplicate_candidate_records": 1,
       "local_copies_accepted": 0,
-      "note": "One N-Lex country-information record is duplicated as it-42; API/Open Data notes are optional technical leads, not barriers to official link use."
+      "note": "Expanded 42-record inventory retained in the Monitor local-only candidate archive. Accepted official links, pending leads, superseded items and duplicate records remain separately classified; saved page extracts were not promoted merely because a capture existed."
     }
   ],
   "accepted_references": [
@@ -102,7 +102,7 @@
       "limitations": "N-Lex reports gaps including excluded ministerial decrees and incomplete dynamic amendment links; it is not Italy’s legal publisher and does not establish completeness.",
       "candidate_records": [
         {
-          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "manifest": "candidates/italy-expanded-manifest-2026-10-18/IT/expanded/candidate-manifest.json",
           "id": "it-01"
         }
       ],
@@ -126,7 +126,7 @@
       "limitations": "Portal acceptance does not validate every individual record or establish complete national legal coverage. Confirm the act identity and displayed version on the record used.",
       "candidate_records": [
         {
-          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "manifest": "candidates/italy-expanded-manifest-2026-10-18/IT/expanded/candidate-manifest.json",
           "id": "it-03"
         }
       ],
@@ -144,25 +144,33 @@
       "url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.codiceRedazionale=007G0033&atto.dataPubblicazioneGazzetta=2007-03-27&bloccoAggiornamentoBreadCrumb=true&classica=true&dataVigenza=&generaTabId=true&qId=&tabID=0.5763913696950262&tipoDettaglio=vigente&title=lbl.dettaglioAtto",
       "publisher": "Normattiva / Italian government legal-text service",
       "language": "it",
-      "checked_on": "2026-10-18",
+      "checked_on": "2026-10-24",
       "version": "Page reported current on 2026-10-18; record displays a last amendment publication in 2023 and current/original/historical variants.",
-      "acceptance_scope": "Current Normattiva text of Legislative Decree 30/2007, the national free-movement framework implementing Directive 2004/38, as displayed in the 18 October 2026 review.",
-      "limitations": "External link only. The local conversion is not accepted. Article 23 distinguishes mobile and non-mobile Italian sponsors; EEA, Swiss and UK routes need separate treatment.",
+      "acceptance_scope": "Full current Normattiva text of Legislative Decree 30/2007, the national free-movement framework implementing Directive 2004/38, as displayed on 24 October 2026, retained in a reviewed local article-level representation.",
+      "limitations": "The retained copy represents the current-text selector viewed on 24 October 2026. Article 23 distinguishes mobile and non-mobile Italian sponsors; EEA, Swiss and UK routes need separate treatment. Recheck the official current-text view before later reliance.",
       "candidate_records": [
         {
-          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "manifest": "candidates/italy-expanded-manifest-2026-10-18/IT/expanded/candidate-manifest.json",
           "id": "it-04"
         },
         {
-          "manifest": "references/candidate-manifest.json",
+          "manifest": "candidates/italy-priority-manifest-2026-10-24/IT/priority/candidate-manifest.json",
           "id": "it-01-legislative-decree-no.-30-2007-implementing-free-movement-and-residence-rig"
         }
       ],
       "evidence": {
         "official_source_url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.codiceRedazionale=007G0033&atto.dataPubblicazioneGazzetta=2007-03-27&bloccoAggiornamentoBreadCrumb=true&classica=true&dataVigenza=&generaTabId=true&qId=&tabID=0.5763913696950262&tipoDettaglio=vigente&title=lbl.dettaglioAtto",
         "verified_content": "Official Normattiva record inspected in search results; identifies D.Lgs 30 of 6 February 2007 as implementing Directive 2004/38 and exposes a current-law view.",
-        "source_record_note": "External-link acceptance only. Local Markdown/PDF captures and conversions remain unaccepted.",
-        "retrieval_status": "converted_review_candidate"
+        "source_record_note": "Accepted official external reference and reviewed local copy; acceptance does not certify topic coverage or present legal effect.",
+        "retrieval_status": "converted_review_candidate",
+        "local_copy_review": "Official current-text article links, identifiers and ordering were checked against the captured Normattiva landing page; every article response was identified by its article number and extracted from Normattiva’s bodyTesto legal-text region. Deterministic replay passed. Previous and fresh article text matched after whitespace normalization.",
+        "local_copy_path": "documents/legislation/it-01-dlgs-30-2007-current.md",
+        "local_copy_sha256": "4cf6d4af8a7faaf0bf7e5197c8456fe3c7c80f93a7fb7a8bebf8be0996e63556",
+        "source_bundle_sha256": "5915557a80ea1a0b0d9119a4ea40647a316f518caecc0e083a8d4a692736ba4e",
+        "article_count": 28,
+        "checked_on": "2026-10-24",
+        "local_copy_retrieval_manifest_archive": "captures/normattiva-2026-10-24/IT/normattiva/2026-10-24/retrieval-manifest.json",
+        "local_copy_candidate_archive": "candidates/normattiva-2026-10-24/IT/normattiva/2026-10-24/it-01-legislative-decree-no-30-2007.md"
       },
       "decision": "accepted_with_narrow_external_scope",
       "alternative_official_urls": [
@@ -170,7 +178,14 @@
           "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2007-02-06;30~vig=",
           "role": "Persistent Normattiva URN used by the priority source list; resolves the act in the version current at consultation."
         }
-      ]
+      ],
+      "local_copy_accepted": true,
+      "local_copy_path": "documents/legislation/it-01-dlgs-30-2007-current.md",
+      "local_copy_sha256": "4cf6d4af8a7faaf0bf7e5197c8456fe3c7c80f93a7fb7a8bebf8be0996e63556",
+      "local_copy_source_bundle_sha256": "5915557a80ea1a0b0d9119a4ea40647a316f518caecc0e083a8d4a692736ba4e",
+      "local_copy_checked_on": "2026-10-24",
+      "local_copy_retrieval_manifest_archive": "captures/normattiva-2026-10-24/IT/normattiva/2026-10-24/retrieval-manifest.json",
+      "local_copy_candidate_archive": "candidates/normattiva-2026-10-24/IT/normattiva/2026-10-24/it-01-legislative-decree-no-30-2007.md"
     },
     {
       "source_id": "monitor-it-05",
@@ -184,7 +199,7 @@
       "limitations": "This is the original text, not current consolidated law. Use the current Normattiva view for operative provisions.",
       "candidate_records": [
         {
-          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "manifest": "candidates/italy-expanded-manifest-2026-10-18/IT/expanded/candidate-manifest.json",
           "id": "it-05"
         }
       ],
@@ -208,7 +223,7 @@
       "limitations": "External link only. The old local capture is an Article 40 page and is not accepted as a transcription or full-act copy. Confirm the displayed current version again when relying on a provision.",
       "candidate_records": [
         {
-          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "manifest": "candidates/italy-expanded-manifest-2026-10-18/IT/expanded/candidate-manifest.json",
           "id": "it-06"
         }
       ],
@@ -232,7 +247,7 @@
       "limitations": "The previously captured 20 June 2024 consolidation is not accepted as current. External reference only; recheck the displayed version when using a provision.",
       "candidate_records": [
         {
-          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "manifest": "candidates/italy-expanded-manifest-2026-10-18/IT/expanded/candidate-manifest.json",
           "id": "it-07"
         }
       ],
@@ -256,7 +271,7 @@
       "limitations": "The record establishes the ratifying act only; it does not by itself establish which EU free-movement provisions apply to EEA nationals.",
       "candidate_records": [
         {
-          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "manifest": "candidates/italy-expanded-manifest-2026-10-18/IT/expanded/candidate-manifest.json",
           "id": "it-11"
         }
       ],
@@ -280,7 +295,7 @@
       "limitations": "Switzerland is not part of the EEA. Agreement scope, protocols and later changes require separate review for a particular issue.",
       "candidate_records": [
         {
-          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "manifest": "candidates/italy-expanded-manifest-2026-10-18/IT/expanded/candidate-manifest.json",
           "id": "it-12"
         }
       ],
@@ -304,7 +319,7 @@
       "limitations": "No current consolidation is demonstrated. Do not use this PDF in place of the current Normattiva text.",
       "candidate_records": [
         {
-          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "manifest": "candidates/italy-expanded-manifest-2026-10-18/IT/expanded/candidate-manifest.json",
           "id": "it-14"
         }
       ],
@@ -328,7 +343,7 @@
       "limitations": "Rome-area example only, not national guidance; content is dated and may have changed.",
       "candidate_records": [
         {
-          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "manifest": "candidates/italy-expanded-manifest-2026-10-18/IT/expanded/candidate-manifest.json",
           "id": "it-15"
         }
       ],
@@ -352,11 +367,11 @@
       "limitations": "The page has no dependable revision date. This is operational guidance only, not legislation or mission-specific instructions. Check the page again for live use.",
       "candidate_records": [
         {
-          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "manifest": "candidates/italy-expanded-manifest-2026-10-18/IT/expanded/candidate-manifest.json",
           "id": "it-17"
         },
         {
-          "manifest": "references/candidate-manifest.json",
+          "manifest": "candidates/italy-priority-manifest-2026-10-24/IT/priority/candidate-manifest.json",
           "id": "it-05-maeci-entry-and-visa-guidance-for-family-members-of-eu-citizens"
         }
       ],
@@ -387,7 +402,7 @@
       "limitations": "The result is dynamic and has no stable version date. It is scoped to the selected EU-citizen route; do not generalize it to EEA or Swiss routes.",
       "candidate_records": [
         {
-          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "manifest": "candidates/italy-expanded-manifest-2026-10-18/IT/expanded/candidate-manifest.json",
           "id": "it-18"
         }
       ],
@@ -411,7 +426,7 @@
       "limitations": "A directory is not mission-specific visa guidance. Appointment channels, checklists and outsourcing arrangements must be checked on the responsible mission’s own official site.",
       "candidate_records": [
         {
-          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "manifest": "candidates/italy-expanded-manifest-2026-10-18/IT/expanded/candidate-manifest.json",
           "id": "it-20"
         }
       ],
@@ -435,7 +450,7 @@
       "limitations": "External link only. It is a procedural baseline; exceptions, deadlines and sector-specific rules must be matched to the matter.",
       "candidate_records": [
         {
-          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "manifest": "candidates/italy-expanded-manifest-2026-10-18/IT/expanded/candidate-manifest.json",
           "id": "it-21"
         }
       ],
@@ -459,7 +474,7 @@
       "limitations": "Accepted as that official text and date only. Check later changes and the competent authority’s rules for the current procedure.",
       "candidate_records": [
         {
-          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "manifest": "candidates/italy-expanded-manifest-2026-10-18/IT/expanded/candidate-manifest.json",
           "id": "it-22"
         }
       ],
@@ -483,7 +498,7 @@
       "limitations": "This dated consolidation is not a 2026 snapshot. It concerns civic access and must not be confused with access to an individual case file or the applicable appeal route.",
       "candidate_records": [
         {
-          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "manifest": "candidates/italy-expanded-manifest-2026-10-18/IT/expanded/candidate-manifest.json",
           "id": "it-23"
         }
       ],
@@ -507,7 +522,7 @@
       "limitations": "The displayed selected-decision archive covers 2013–2019. The Commission is not the only route; local and regional authorities have separate review channels.",
       "candidate_records": [
         {
-          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "manifest": "candidates/italy-expanded-manifest-2026-10-18/IT/expanded/candidate-manifest.json",
           "id": "it-25"
         }
       ],
@@ -531,7 +546,7 @@
       "limitations": "Jurisdiction depends on the authority involved; local and regional access disputes follow a different route.",
       "candidate_records": [
         {
-          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "manifest": "candidates/italy-expanded-manifest-2026-10-18/IT/expanded/candidate-manifest.json",
           "id": "it-26"
         }
       ],
@@ -555,7 +570,7 @@
       "limitations": "This is general administrative court procedure, not a complete immigration-remedy crosswalk. Confirm applicable deadlines and jurisdiction for the challenged measure.",
       "candidate_records": [
         {
-          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "manifest": "candidates/italy-expanded-manifest-2026-10-18/IT/expanded/candidate-manifest.json",
           "id": "it-27"
         }
       ],
@@ -579,7 +594,7 @@
       "limitations": "Accepted as a discovery tool only. This review does not establish corpus completeness, reproducible queries or coverage of all relevant decisions.",
       "candidate_records": [
         {
-          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "manifest": "candidates/italy-expanded-manifest-2026-10-18/IT/expanded/candidate-manifest.json",
           "id": "it-28"
         }
       ],
@@ -603,7 +618,7 @@
       "limitations": "Accepted as a discovery lead only; no case-law corpus completeness or particular holding is accepted.",
       "candidate_records": [
         {
-          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "manifest": "candidates/italy-expanded-manifest-2026-10-18/IT/expanded/candidate-manifest.json",
           "id": "it-29"
         }
       ],
@@ -627,7 +642,7 @@
       "limitations": "This is not a 2026 version. The financial eligibility threshold is changeable and must be checked from current official guidance before use.",
       "candidate_records": [
         {
-          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "manifest": "candidates/italy-expanded-manifest-2026-10-18/IT/expanded/candidate-manifest.json",
           "id": "it-30"
         }
       ],
@@ -651,7 +666,7 @@
       "limitations": "Use for the general route only. The displayed income threshold may be stale and eligibility for a particular immigration proceeding needs separate review.",
       "candidate_records": [
         {
-          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "manifest": "candidates/italy-expanded-manifest-2026-10-18/IT/expanded/candidate-manifest.json",
           "id": "it-31"
         }
       ],
@@ -675,7 +690,7 @@
       "limitations": "Court filing routes and transitional notices can change and may be court- or application-specific; this is not a substantive appeal rule.",
       "candidate_records": [
         {
-          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "manifest": "candidates/italy-expanded-manifest-2026-10-18/IT/expanded/candidate-manifest.json",
           "id": "it-32"
         }
       ],
@@ -699,7 +714,7 @@
       "limitations": "The exact current edition was not pinned in this review. No local copy or issue-specific privacy analysis is accepted.",
       "candidate_records": [
         {
-          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "manifest": "candidates/italy-expanded-manifest-2026-10-18/IT/expanded/candidate-manifest.json",
           "id": "it-33"
         }
       ],
@@ -723,7 +738,7 @@
       "limitations": "Operational guidance only; complaint submissions involve personal data. Check the live instructions before filing.",
       "candidate_records": [
         {
-          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "manifest": "candidates/italy-expanded-manifest-2026-10-18/IT/expanded/candidate-manifest.json",
           "id": "it-34"
         }
       ],
@@ -747,7 +762,7 @@
       "limitations": "No dated version marker was observed. This general rights page is not itself a complaint decision or individualized legal assessment.",
       "candidate_records": [
         {
-          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "manifest": "candidates/italy-expanded-manifest-2026-10-18/IT/expanded/candidate-manifest.json",
           "id": "it-35"
         }
       ],
@@ -771,7 +786,7 @@
       "limitations": "Fees and procedures may change; EU Regulation 2016/1191 and bilateral exemptions can remove formalities for some public documents.",
       "candidate_records": [
         {
-          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "manifest": "candidates/italy-expanded-manifest-2026-10-18/IT/expanded/candidate-manifest.json",
           "id": "it-36"
         }
       ],
@@ -795,7 +810,7 @@
       "limitations": "This is not a nationwide rule or a substitute for the competent consulate’s own current checklist and appointment route.",
       "candidate_records": [
         {
-          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "manifest": "candidates/italy-expanded-manifest-2026-10-18/IT/expanded/candidate-manifest.json",
           "id": "it-37"
         }
       ],
@@ -819,7 +834,7 @@
       "limitations": "This covers the described adoption route, not every foreign-adoption recognition scenario or residence-document rule.",
       "candidate_records": [
         {
-          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "manifest": "candidates/italy-expanded-manifest-2026-10-18/IT/expanded/candidate-manifest.json",
           "id": "it-38"
         }
       ],
@@ -843,7 +858,7 @@
       "limitations": "The current consolidated version was not pinned in this review. Foreign civil-status documents may follow separate rules.",
       "candidate_records": [
         {
-          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "manifest": "candidates/italy-expanded-manifest-2026-10-18/IT/expanded/candidate-manifest.json",
           "id": "it-39"
         }
       ],
@@ -867,7 +882,7 @@
       "limitations": "This identifies regional coverage but is not a national complaint service or a complete directory of current submission routes.",
       "candidate_records": [
         {
-          "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+          "manifest": "candidates/italy-expanded-manifest-2026-10-18/IT/expanded/candidate-manifest.json",
           "id": "it-41"
         }
       ],
@@ -885,22 +900,37 @@
       "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1995-05-31;218~vig=",
       "publisher": "Normattiva / Italian government legal-text service",
       "language": "it",
-      "checked_on": "2026-10-19",
-      "version": "Current text displayed and captured 2026-10-19; official page had ELI version evidence dated 2026-10-19.",
-      "acceptance_scope": "The current Normattiva full act text for Law 218/1995, within the version displayed on 19 October 2026, for applicable law and foreign judgments/acts.",
-      "limitations": "External link only. The retained article conversion is not accepted. Apply EU instruments where they govern, and review the relevant provision and effective date for the issue.",
+      "checked_on": "2026-10-24",
+      "version": "Current text displayed and captured 2026-10-24; the official page exposed ELI version evidence dated 2026-10-24.",
+      "acceptance_scope": "The current Normattiva full act text for Law 218/1995, within the version displayed on 24 October 2026, for applicable law and foreign judgments/acts; retained as a reviewed local article-level representation.",
+      "limitations": "The retained copy represents the version displayed on 24 October 2026. Apply EU instruments where they govern, and review the relevant provision and effective date for the issue. Recheck the official current-text view before later reliance.",
       "candidate_records": [
         {
-          "manifest": "references/candidate-manifest.json",
+          "manifest": "candidates/italy-priority-manifest-2026-10-24/IT/priority/candidate-manifest.json",
           "id": "it-02-law-no.-218-1995-reforming-italian-private-international-law"
         }
       ],
       "evidence": {
         "official_source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1995-05-31;218~vig=",
         "verified_content": "Current text displayed and captured 2026-10-19; official page had ELI version evidence dated 2026-10-19.",
-        "source_record_note": "Human-reviewed official external link only; no local copy or conversion accepted."
+        "source_record_note": "Accepted official external reference and reviewed local copy; acceptance does not certify topic coverage or present legal effect.",
+        "local_copy_review": "Official current-text article links, identifiers and ordering were checked against the captured Normattiva landing page; every article response was identified by its article number and extracted from Normattiva’s bodyTesto legal-text region. Deterministic replay passed. Previous and fresh article text matched after whitespace normalization.",
+        "local_copy_path": "documents/legislation/it-02-law-218-1995-current.md",
+        "local_copy_sha256": "99c3b594ef8ba1827d41b648288918dfefcaa46cb0674e50b70e49396c65382d",
+        "source_bundle_sha256": "0a8b128be16b821b49268452a82ab203a8f654f895ca01a03f3ba3007fec4e52",
+        "article_count": 80,
+        "checked_on": "2026-10-24",
+        "local_copy_retrieval_manifest_archive": "captures/normattiva-2026-10-24/IT/normattiva/2026-10-24/retrieval-manifest.json",
+        "local_copy_candidate_archive": "candidates/normattiva-2026-10-24/IT/normattiva/2026-10-24/it-02-law-no-218-1995-reforming-italian-private-international-law-0a8b128be16b821b.md"
       },
-      "decision": "accepted_with_narrow_external_scope"
+      "decision": "accepted_with_narrow_external_scope",
+      "local_copy_accepted": true,
+      "local_copy_path": "documents/legislation/it-02-law-218-1995-current.md",
+      "local_copy_sha256": "99c3b594ef8ba1827d41b648288918dfefcaa46cb0674e50b70e49396c65382d",
+      "local_copy_source_bundle_sha256": "0a8b128be16b821b49268452a82ab203a8f654f895ca01a03f3ba3007fec4e52",
+      "local_copy_checked_on": "2026-10-24",
+      "local_copy_retrieval_manifest_archive": "captures/normattiva-2026-10-24/IT/normattiva/2026-10-24/retrieval-manifest.json",
+      "local_copy_candidate_archive": "candidates/normattiva-2026-10-24/IT/normattiva/2026-10-24/it-02-law-no-218-1995-reforming-italian-private-international-law-0a8b128be16b821b.md"
     },
     {
       "source_id": "priority-law-184-1983",
@@ -908,22 +938,37 @@
       "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1983;184!vig=",
       "publisher": "Normattiva / Italian government legal-text service",
       "language": "it",
-      "checked_on": "2026-10-19",
-      "version": "Current-text selector and full act reviewed 2026-10-19; no ELI version date was displayed.",
-      "acceptance_scope": "Official current-text selector for Law 184/1983, checked 19 October 2026, for the domestic adoption and foster-care provisions within its scope.",
-      "limitations": "No publisher ELI version date was visible; recheck the current selector when relying on a provision. The retained conversion is not accepted; separate domestic adoption from cross-border recognition.",
+      "checked_on": "2026-10-24",
+      "version": "Current-text selector and full act reviewed 2026-10-24; no ELI version date was displayed.",
+      "acceptance_scope": "Official current-text selector for Law 184/1983, checked 24 October 2026, for domestic adoption and foster-care provisions within scope; retained as a reviewed local article-level representation.",
+      "limitations": "The official page exposed an in-force selector but no publisher ELI version date. Recheck the current selector when relying on a provision. Separate domestic adoption from cross-border recognition.",
       "candidate_records": [
         {
-          "manifest": "references/candidate-manifest.json",
+          "manifest": "candidates/italy-priority-manifest-2026-10-24/IT/priority/candidate-manifest.json",
           "id": "it-03-law-no.-184-1983-on-adoption-and-foster-care"
         }
       ],
       "evidence": {
         "official_source_url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1983;184!vig=",
         "verified_content": "Current-text selector and full act reviewed 2026-10-19; no ELI version date was displayed.",
-        "source_record_note": "Human-reviewed official external link only; no local copy or conversion accepted."
+        "source_record_note": "Accepted official external reference and reviewed local copy; acceptance does not certify topic coverage or present legal effect.",
+        "local_copy_review": "Official current-text article links, identifiers and ordering were checked against the captured Normattiva landing page; every article response was identified by its article number and extracted from Normattiva’s bodyTesto legal-text region. Deterministic replay passed. Previous and fresh article text matched after whitespace normalization.",
+        "local_copy_path": "documents/legislation/it-03-law-184-1983-current.md",
+        "local_copy_sha256": "874ef1c8437e7c9bc7e844db2b70bb2a70ce9ba6c4aeaa862121b96c13a17263",
+        "source_bundle_sha256": "ddfc72c6595d3f23fa0c4ab488b43343606b4f5ec82e02b1d233259746c445c9",
+        "article_count": 92,
+        "checked_on": "2026-10-24",
+        "local_copy_retrieval_manifest_archive": "captures/normattiva-2026-10-24/IT/normattiva/2026-10-24/retrieval-manifest.json",
+        "local_copy_candidate_archive": "candidates/normattiva-2026-10-24/IT/normattiva/2026-10-24/it-03-law-no-184-1983-on-adoption-and-foster-care-ddfc72c6595d3f23.md"
       },
-      "decision": "accepted_with_narrow_external_scope"
+      "decision": "accepted_with_narrow_external_scope",
+      "local_copy_accepted": true,
+      "local_copy_path": "documents/legislation/it-03-law-184-1983-current.md",
+      "local_copy_sha256": "874ef1c8437e7c9bc7e844db2b70bb2a70ce9ba6c4aeaa862121b96c13a17263",
+      "local_copy_source_bundle_sha256": "ddfc72c6595d3f23fa0c4ab488b43343606b4f5ec82e02b1d233259746c445c9",
+      "local_copy_checked_on": "2026-10-24",
+      "local_copy_retrieval_manifest_archive": "captures/normattiva-2026-10-24/IT/normattiva/2026-10-24/retrieval-manifest.json",
+      "local_copy_candidate_archive": "candidates/normattiva-2026-10-24/IT/normattiva/2026-10-24/it-03-law-no-184-1983-on-adoption-and-foster-care-ddfc72c6595d3f23.md"
     },
     {
       "source_id": "priority-maeci-recognition",
@@ -937,7 +982,7 @@
       "limitations": "Direct HTTP retrieval returned the publisher security challenge; link acceptance is based on the human-reviewed official page, not a raw capture. The page is not law and does not cover every judgment type or competent authority.",
       "candidate_records": [
         {
-          "manifest": "references/candidate-manifest.json",
+          "manifest": "candidates/italy-priority-manifest-2026-10-24/IT/priority/candidate-manifest.json",
           "id": "it-04-ministry-of-foreign-affairs-guidance-on-recognition-of-foreign-judgments"
         }
       ],
@@ -996,33 +1041,33 @@
   "duplicates": [
     {
       "candidate_record": {
-        "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+        "manifest": "candidates/italy-expanded-manifest-2026-10-18/IT/expanded/candidate-manifest.json",
         "id": "it-42"
       },
       "duplicate_of": {
-        "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+        "manifest": "candidates/italy-expanded-manifest-2026-10-18/IT/expanded/candidate-manifest.json",
         "id": "it-01"
       },
       "reason": "Exact duplicate URL and source page; keep one record."
     },
     {
       "candidate_record": {
-        "manifest": "references/candidate-manifest.json",
+        "manifest": "candidates/italy-priority-manifest-2026-10-24/IT/priority/candidate-manifest.json",
         "id": "it-01-legislative-decree-no.-30-2007-implementing-free-movement-and-residence-rig"
       },
       "duplicate_of": {
-        "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+        "manifest": "candidates/italy-expanded-manifest-2026-10-18/IT/expanded/candidate-manifest.json",
         "id": "it-04"
       },
       "reason": "Same D.Lgs 30/2007 source record in the priority and monitor inventories; both official links are retained as accepted aliases."
     },
     {
       "candidate_record": {
-        "manifest": "references/candidate-manifest.json",
+        "manifest": "candidates/italy-priority-manifest-2026-10-24/IT/priority/candidate-manifest.json",
         "id": "it-05-maeci-entry-and-visa-guidance-for-family-members-of-eu-citizens"
       },
       "duplicate_of": {
-        "manifest": "references/monitor-candidate-manifest-2026-10-18.json",
+        "manifest": "candidates/italy-expanded-manifest-2026-10-18/IT/expanded/candidate-manifest.json",
         "id": "it-17"
       },
       "reason": "Same live MAECI visa FAQ source record in the priority and monitor inventories; Italian and English page URLs are both accepted as language alternatives."

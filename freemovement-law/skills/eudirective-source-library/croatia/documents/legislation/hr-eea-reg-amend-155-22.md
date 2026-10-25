@@ -1,9 +1,9 @@
 # Amendment NN 155/22
 
 - Jurisdiction: croatia
-- Candidate ID: `hr-eea-reg-amend-155-22`
+- Source ID: `hr-eea-reg-amend-155-22`
 - Source type: `amending_regulation`
-- Candidate URL: https://narodne-novine.nn.hr/clanci/sluzbeni/2022_12_155_2448.html
+- Official source URL: https://narodne-novine.nn.hr/clanci/sluzbeni/2022_12_155_2448.html
 - Resolved URL: https://narodne-novine.nn.hr/clanci/sluzbeni/2022_12_155_2448.html
 - Retrieved: 2026-10-19T02:21:27+00:00
 - Media type: `text/html`

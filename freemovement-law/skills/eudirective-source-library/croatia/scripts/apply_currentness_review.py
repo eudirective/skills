@@ -21,8 +21,7 @@ def write(name: str, value: dict) -> None:
 def main() -> int:
     review = read("currentness-review.json")
     acceptance = read("source-acceptance.json")
-    manifest = read("candidate-manifest.json")
-    known = {row["id"] for row in manifest.get("documents", [])}
+    known = set(acceptance.get("records", {}))
     missing: list[str] = []
     applied: list[str] = []
     stale_conflict_ids = {x["id"] for x in review.get("conflicts", [])}
@@ -62,14 +61,14 @@ def main() -> int:
             "review_date": review["reviewed_on"],
             "evidence_url": review["authority"]["index_url"],
             "evidence": (
-                "Live official MUP Propisi index inspected on 2026-10-19; the current page lists the EEA, Foreigners Act, "
+                f"Live official MUP Propisi index inspected on {review['reviewed_on']}; the current page lists the EEA, Foreigners Act, "
                 "third-country residence, and third-country procedure chains. A separate older MUP page is stale for two chains."
             ),
         }
         applied.append(mup_index_id)
 
     if missing:
-        raise SystemExit("Missing manifest/acceptance records: " + ", ".join(sorted(set(missing))))
+        raise SystemExit("Missing source-acceptance records: " + ", ".join(sorted(set(missing))))
 
     acceptance["currentness_review_file"] = "references/currentness-review.json"
     write("source-acceptance.json", acceptance)

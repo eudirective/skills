@@ -1,21 +1,26 @@
 {
   "schema_version": "1.0.0",
   "jurisdiction": "HR",
-  "as_of": "2026-10-19",
+  "as_of": "2026-10-25",
   "policy": {
     "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
-    "as_of": "2026-10-19",
+    "as_of": "2026-10-24",
     "status": "official_text_copyright_basis_verified",
     "basis_url": "https://narodne-novine.nn.hr/clanci/sluzbeni/2021_10_111_1941.html",
     "basis": "Copyright and Related Rights Act NN 111/21, Article 18(3): officially published legal, administrative, and judicial texts (including statutes, regulations, and court decisions) cease to be protected by copyright when published for official public information.",
     "currentness_evidence_url": "https://www.dziv.hr/hr/intelektualno-vlasnistvo/autorsko-pravo/zakonodavstvo/",
-    "scope": "Only the text of the individually identified official act published in the Narodne novine official part, after publication for official public information.",
-    "retention_rule": "Store a source-bound text fragment from .sl-content .doc. Keep official citation, stable URL, capture date and hashes as factual provenance. Exclude the Narodne novine page shell and unrelated page content.",
+    "scope": "Individually identified official legislative texts published in the Narodne novine official part, including the four NN 86/21 Form 4b and Form 11b images independently reviewed as integral legal annexes on 2026-10-25; the four unchanged MUP EEA forms and three unchanged MUP SIS forms; the identified MUP EEA guidance article body with attribution under MUP Terms of Use; the individual blank MVEP VIS administrative form under a narrow Article 18(3) assessment; the static AZOP complaint-route article body and the selected SIS data-subject-rights subsection with attribution under AZOP Terms of Use; and the individually identified MVEP family-member, visa-application, visa-overview and Croatian appeal articles and Ombudsman complaint article under source-specific inferences that the named pages meet the official-publication conditions in Copyright Act NN 111/21 Article 18(3), with Article 15(3) applied only where a named official translation is published for public information. These page assessments are limited to the named official article text and attribution; they do not create a site-wide licence. Excludes publisher shells, third-party page content, other unreviewed website content, live or downloadable forms not separately accepted, and bulk/database-wide reuse. The MVEP legacy FAQ body and the Information Commissioner English “Right to access information” section are additionally retained as historical-only official public-information excerpts under separate source-specific Article 18(3) and, for the official English versions, Article 15(3) inferences; neither may be used as current guidance.",
+    "retention_rule": "Retain official Narodne novine text fragments and the four individually reviewed NN 86/21 card-specimen JPEG annexes with their accepted parent act; the seven unchanged MUP form PDFs with MUP attribution; the identified MUP EEA guidance article body; the one MVEP VIS form under the narrow Article 18(3) assessment; and the nine named authority article bodies or subsections accepted on 2026-10-25 (the seven existing AZOP, MVEP and Ombudsman records, plus the historical MVEP FAQ and Commissioner section). Keep publisher, official URL, language, review date, version/cutoff, source-response evidence where archived, local hash and reuse basis. For pages without a saved raw response, retain the candidate note’s historical hashes and record that limitation. Exclude site navigation/shell, other pages, third-party content, live forms, optional DOCX/PDFs, user submissions and unrelated linked materials. Preserve original wording and identify any omitted dynamic or unverified links. For the two historical-only excerpts, retain the prominent warning, exact archived response hash, page date/currentness evidence and the source boundaries; do not use them as current process instructions.",
     "not_covered": [
       "full publisher HTML responses and page-shell text",
-      "website design, navigation, interface text, and publisher-authored explanatory material",
-      "third-party materials, non-text attachments, images, and logos unless independently reviewed",
-      "bulk extraction or reuse of the database as a whole, including any separate database right or technical conditions"
+      "website design, navigation and interface text; only the individually identified MUP, AZOP, MVEP and Ombudsman article bodies and forms named in scope are retained",
+      "third-party materials, non-text attachments, images and logos unless independently reviewed as individual official source documents",
+      "bulk extraction or reuse of any publisher database as a whole, including separate database rights or technical conditions",
+      "general MVEP website content: the page labelled “Terms of use” inspected is a personal-data notice and is not a general reuse grant; each retained MVEP page is assessed individually under the identified statutory text basis",
+      "other Ombudsman pages and linked complaint forms not separately reviewed and accepted",
+      "the AZOP optional downloadable complaint-form DOCX and live data-bearing online form; neither is retained or relied upon here",
+      "the AZOP SIS/VIS article beyond the accepted SIS data-subject-rights subsection; its other SIS II descriptions and VIS section are not retained or covered by this source-specific permission review",
+      "The contents of the separate MVEP visa-fee link in the legacy FAQ; other Commissioner page sections and linked publications; neither is retained or assessed here."
     ],
     "retrieval_constraints": {
       "individual_official_record_urls": "use the stable Narodne novine/ELI record URL, not the metadata API as a full-text endpoint",
@@ -46,6 +51,10 @@
     "hr-foreigners-amend-151-22",
     "hr-foreigners-amend-40-25",
     "hr-foreigners-amend-55-26",
+    "hr-form-1b",
+    "hr-form-2b",
+    "hr-form-3b",
+    "hr-form-6b",
     "hr-general-admin-act",
     "hr-general-admin-amend",
     "hr-judicial-fees-act",
@@ -68,6 +77,9 @@
     "hr-vis-decree",
     "hr-vis-decree-amend-105-17",
     "hr-visa-ordinance",
-    "hr-visa-system-decree"
+    "hr-visa-system-decree",
+    "hr-mvep-vis-rights-form",
+    "hr-mvep-stale-faq",
+    "hr-access-info-commissioner"
   ]
 }

@@ -1,9 +1,9 @@
 # EEA citizens and family members Act, NN 66/19
 
 - Jurisdiction: croatia
-- Candidate ID: `hr-eea-act`
+- Source ID: `hr-eea-act`
 - Source type: `national_act`
-- Candidate URL: https://narodne-novine.nn.hr/clanci/sluzbeni/2019_07_66_1288.html
+- Official source URL: https://narodne-novine.nn.hr/clanci/sluzbeni/2019_07_66_1288.html
 - Resolved URL: https://narodne-novine.nn.hr/clanci/sluzbeni/2019_07_66_1288.html
 - Retrieved: 2026-10-19T02:21:13+00:00
 - Media type: `text/html`

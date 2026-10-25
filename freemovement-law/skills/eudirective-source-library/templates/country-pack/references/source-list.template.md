@@ -2,7 +2,7 @@
 
 Research date: <YYYY-MM-DD>
 
-This list is the human-readable view of `candidate-manifest.json`; keep the two inventories synchronized.
+This list is the human-readable view of `candidate-manifest.json`; keep both source inventories synchronized.
 
 | ID | Source class | Title | Official publisher | Official source URL | Version/date | Retrieval/conversion status | Review status |
 |---|---|---|---|---|---|---|---|

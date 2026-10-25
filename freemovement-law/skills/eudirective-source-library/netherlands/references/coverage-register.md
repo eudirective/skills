@@ -2,7 +2,7 @@
 
 **Review date:** 21 October 2026
 
-**Status:** 59 official external references accepted within scope; 3 exact routes not relied upon; no local copies or topics accepted; the Netherlands review is incomplete.
+**Status:** 60 official external references accepted within scope; 3 exact routes not relied upon; 10 local text copies accepted; 0 topics accepted as adequate; the Netherlands review is incomplete.
 
 This register asks whether the source set addresses the issues a person may need to understand or challenge a residence, visa, or administrative decision. It does not treat a collected-source count as proof of legal sufficiency.
 

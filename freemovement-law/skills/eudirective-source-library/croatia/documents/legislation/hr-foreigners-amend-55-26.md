@@ -1,9 +1,9 @@
 # Foreigners Act amendment NN 55/26
 
 - Jurisdiction: croatia
-- Candidate ID: `hr-foreigners-amend-55-26`
+- Source ID: `hr-foreigners-amend-55-26`
 - Source type: `amending_act`
-- Candidate URL: https://narodne-novine.nn.hr/clanci/sluzbeni/2026_05_55_692.html
+- Official source URL: https://narodne-novine.nn.hr/clanci/sluzbeni/2026_05_55_692.html
 - Resolved URL: https://narodne-novine.nn.hr/clanci/sluzbeni/2026_05_55_692.html
 - Retrieved: 2026-10-19T02:21:37+00:00
 - Media type: `text/html`

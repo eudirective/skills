@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "jurisdiction": "HR",
-  "as_of": "2026-10-19",
+  "as_of": "2026-10-25",
   "policy": "Rules may group sources and describe optional retrieval/conversion for retained local artifacts. A human-reviewed official reference may be used within the publisher, identity, language, version, passage, and caveats actually checked without capture, conversion, hashes, replay, or reproduction permission. Prefer a usable government-published consolidation; otherwise use the closest government-published version and record its cutoff and limits. Do not reconstruct a full Gazette chain by default. Semantic and reuse checks apply to retained copies, not ordinary link use. Neither reference use nor local-copy acceptance alone establishes topic or country completion.",
   "rules": [
     {
@@ -12,7 +12,7 @@
       "retrieval": "GET stable official ELI/Gazette HTML URL; record final URL and metadata; do not use metadata API as full-text source.",
       "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
       "selector": ".sl-content .doc",
-      "status": "replayable_dom_fragment; manual_legal_review_pending",
+      "status": "replayable_dom_fragment; source_accepted",
       "semantic_checks": [
         "title and Gazette number match requested act",
         "all headings/article numbers and paragraph/list boundaries retained",
@@ -20,11 +20,11 @@
         "links/annexes inventoried",
         "current version checked against responsible authority index",
         "official text only; publisher shell excluded",
-        "fragment is stored in the repository with a source hash for deterministic replay",
+        "fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay"
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash"
       ],
-      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+      "acceptance_policy": "A human-reviewed official link is usable within its checked scope; this rule governs optional local-copy review only. Check material changes and relied-on attachments, not a full amendment chain by default."
     },
     {
       "rule_id": "hr-access-info-amend-69-22-nn-eli-v1",
@@ -42,7 +42,7 @@
         "links/annexes inventoried",
         "current version checked against responsible authority index",
         "official text only; publisher shell excluded",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately"
       ],
       "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
@@ -63,7 +63,7 @@
         "links/annexes inventoried",
         "current version checked against responsible authority index",
         "official text only; publisher shell excluded",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately"
       ],
       "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
@@ -73,16 +73,16 @@
       "source_ids": [
         "hr-access-info-commissioner"
       ],
-      "retrieval": "GET the public official URL only; record redirects, final publisher host, content type, version/update date and response hash.",
-      "conversion": "Inspect the publisher DOM and register a stable main-content selector with exclusions before conversion. Never fall back to body.",
-      "selector": "source_specific_selector_pending",
-      "status": "rule_not_yet_executable",
+      "retrieval": "Official Commissioner English page and the archived 2026-10-19 response checked on 2026-10-25; its displayed update date is 2019-04-04.",
+      "conversion": "Accepted only as the historical “Right to access information” section in documents/guidance/hr-access-info-commissioner-2019-historical.md. Exclude page shell, other sections and linked publications; do not use its procedure or deadlines as current.",
+      "selector": "manual_visible_section_from_right_to_access_information_heading_to_before_publications_list",
+      "status": "excluded_stale_comparator",
       "semantic_checks": [
-        "verify official publisher and page identity",
-        "register selector and exclusion list",
-        "compare heading, complete substantive sections and links with original"
+        "archived section matched the visible official English section on 2026-10-25",
+        "the excerpt displays NN 25/13 and 85/15; current official legal framework also lists NN 69/22",
+        "historical text accepted for recordkeeping only; current procedure and deadlines excluded"
       ],
-      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+      "acceptance_policy": "Retain only the explicitly scoped historical page section with its date and currentness warning. Use the official Act and amendments for current procedure; local-copy acceptance is not a currentness conclusion."
     },
     {
       "rule_id": "hr-admin-disputes-act-nn-eli-v1",
@@ -100,9 +100,9 @@
         "links/annexes inventoried",
         "current version checked against responsible authority index",
         "official text only; publisher shell excluded",
-        "fragment is stored in the repository with a source hash for deterministic replay",
+        "fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay"
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash"
       ],
       "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
     },
@@ -111,16 +111,18 @@
       "source_ids": [
         "hr-azop-complaint"
       ],
-      "retrieval": "GET the public official URL only; record redirects, final publisher host, content type, version/update date and response hash.",
-      "conversion": "Inspect the publisher DOM and register a stable main-content selector with exclusions before conversion. Never fall back to body.",
-      "selector": "source_specific_selector_pending",
-      "status": "rule_not_yet_executable",
+      "retrieval": "Extract the static AZOP complaint article and optional-form notice from the archived official response; re-open the live page for current links. Never capture submissions or personal data.",
+      "conversion": "The raw article block is compared with the live visible article. Exclude shell, DOCX, interactive form and user data.",
+      "selector": "#content .et_pb_text_inner (static complaint article only; exclude embedded form)",
+      "status": "source_accepted_manual_article_text",
       "semantic_checks": [
-        "verify official publisher and page identity",
-        "register selector and exclusion list",
-        "compare heading, complete substantive sections and links with original"
+        "official publisher, exact page identity, language and URL checked 2026-10-25",
+        "the locally retained article scope was compared with the current visible official page",
+        "publisher shell and unrelated page content are excluded; page-specific dynamic forms and linked files are not retained",
+        "AZOP Terms of Use allow attributed republication without changing meaning; this is a text-only scoped copy.",
+        "local-copy acceptance does not certify topic coverage or country completion"
       ],
-      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+      "acceptance_policy": "A reviewed official link remains usable within its recorded scope. Local retention is limited to the accepted article body and its source-specific reuse basis; recheck undated or operational details on the live page. This rule does not establish legal-topic sufficiency."
     },
     {
       "rule_id": "hr-azop-vis-sis-publisher-selector-pending-v1",
@@ -128,13 +130,12 @@
         "hr-azop-vis-sis"
       ],
       "retrieval": "GET the public official URL only; record redirects, final publisher host, content type, version/update date and response hash.",
-      "conversion": "Inspect the publisher DOM and register a stable main-content selector with exclusions before conversion. Never fall back to body.",
-      "selector": "source_specific_selector_pending",
-      "status": "rule_not_yet_executable",
+      "conversion": "No local copy is accepted. Preserve the original candidate only in the Monitor archive; do not use as current procedure.",
+      "selector": "not_applicable_excluded_lead",
+      "status": "excluded_stale_source_lead",
       "semantic_checks": [
-        "verify official publisher and page identity",
-        "register selector and exclusion list",
-        "compare heading, complete substantive sections and links with original"
+        "live page reviewed 2026-10-24; disposition recorded: The live page mixes current citations to Regulations (EU) 2018/1861 and 2018/1862 with extended legacy SIS II descriptions and an obsolete 25-EU-state count. Excluded as a whole-page current operational guide; use the direct MUP SIS and MVEP VIS pages/forms for present authority routes.",
+        "use the separately recorded official source IDs for current procedural routes"
       ],
       "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
     },
@@ -169,7 +170,7 @@
         "links/annexes inventoried",
         "current version checked against responsible authority index",
         "official text only; publisher shell excluded",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately"
       ],
       "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
@@ -204,9 +205,9 @@
         "links/annexes inventoried",
         "current version checked against responsible authority index",
         "official text only; publisher shell excluded",
-        "fragment is stored in the repository with a source hash for deterministic replay",
+        "fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay"
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash"
       ],
       "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
     },
@@ -226,9 +227,9 @@
         "links/annexes inventoried",
         "current version checked against responsible authority index",
         "official text only; publisher shell excluded",
-        "fragment is stored in the repository with a source hash for deterministic replay",
+        "fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay"
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash"
       ],
       "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
     },
@@ -248,9 +249,9 @@
         "links/annexes inventoried",
         "current version checked against responsible authority index",
         "official text only; publisher shell excluded",
-        "fragment is stored in the repository with a source hash for deterministic replay",
+        "fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay"
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash"
       ],
       "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
     },
@@ -270,9 +271,9 @@
         "links/annexes inventoried",
         "current version checked against responsible authority index",
         "official text only; publisher shell excluded",
-        "fragment is stored in the repository with a source hash for deterministic replay",
+        "fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay"
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash"
       ],
       "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
     },
@@ -284,7 +285,7 @@
       "retrieval": "GET stable official ELI/Gazette HTML URL; record final URL and metadata; do not use metadata API as full-text source.",
       "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
       "selector": ".sl-content .doc",
-      "status": "replayable_dom_fragment; manual_legal_review_pending",
+      "status": "replayable_dom_fragment; source_accepted",
       "semantic_checks": [
         "title and Gazette number match requested act",
         "all headings/article numbers and paragraph/list boundaries retained",
@@ -292,11 +293,11 @@
         "links/annexes inventoried",
         "current version checked against responsible authority index",
         "official text only; publisher shell excluded",
-        "fragment is stored in the repository with a source hash for deterministic replay",
+        "fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay"
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash"
       ],
-      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+      "acceptance_policy": "A human-reviewed official link is usable within its checked scope; this rule governs optional local-copy review only. Check material changes and relied-on attachments, not a full amendment chain by default."
     },
     {
       "rule_id": "hr-eea-reg-amend-155-22-nn-eli-v1",
@@ -314,9 +315,9 @@
         "links/annexes inventoried",
         "current version checked against responsible authority index",
         "official text only; publisher shell excluded",
-        "fragment is stored in the repository with a source hash for deterministic replay",
+        "fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay"
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash"
       ],
       "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
     },
@@ -328,7 +329,7 @@
       "retrieval": "GET stable official ELI/Gazette HTML URL; record final URL and metadata; do not use metadata API as full-text source.",
       "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
       "selector": ".sl-content .doc",
-      "status": "replayable_dom_fragment; manual_legal_review_pending",
+      "status": "replayable_dom_fragment; source_accepted",
       "semantic_checks": [
         "title and Gazette number match requested act",
         "all headings/article numbers and paragraph/list boundaries retained",
@@ -336,11 +337,11 @@
         "links/annexes inventoried",
         "current version checked against responsible authority index",
         "official text only; publisher shell excluded",
-        "fragment is stored in the repository with a source hash for deterministic replay",
+        "fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay"
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash"
       ],
-      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+      "acceptance_policy": "A human-reviewed official link is usable within its checked scope; this rule governs optional local-copy review only. Check material changes and relied-on attachments, not a full amendment chain by default."
     },
     {
       "rule_id": "hr-eea-reg-nn-eli-v1",
@@ -350,7 +351,7 @@
       "retrieval": "GET stable official ELI/Gazette HTML URL; record final URL and metadata; do not use metadata API as full-text source.",
       "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
       "selector": ".sl-content .doc",
-      "status": "replayable_dom_fragment; manual_legal_review_pending",
+      "status": "replayable_dom_fragment; source_accepted",
       "semantic_checks": [
         "title and Gazette number match requested act",
         "all headings/article numbers and paragraph/list boundaries retained",
@@ -358,11 +359,11 @@
         "links/annexes inventoried",
         "current version checked against responsible authority index",
         "official text only; publisher shell excluded",
-        "fragment is stored in the repository with a source hash for deterministic replay",
+        "fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay"
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash"
       ],
-      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+      "acceptance_policy": "A human-reviewed official link is usable within its checked scope; this rule governs optional local-copy review only. Check material changes and relied-on attachments, not a full amendment chain by default."
     },
     {
       "rule_id": "hr-foreigners-act-nn-eli-v1",
@@ -380,7 +381,7 @@
         "links/annexes inventoried",
         "current version checked against responsible authority index",
         "official text only; publisher shell excluded",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately"
       ],
       "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
@@ -401,7 +402,7 @@
         "links/annexes inventoried",
         "current version checked against responsible authority index",
         "official text only; publisher shell excluded",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately"
       ],
       "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
@@ -422,7 +423,7 @@
         "links/annexes inventoried",
         "current version checked against responsible authority index",
         "official text only; publisher shell excluded",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately"
       ],
       "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
@@ -443,7 +444,7 @@
         "links/annexes inventoried",
         "current version checked against responsible authority index",
         "official text only; publisher shell excluded",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately"
       ],
       "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
@@ -464,9 +465,9 @@
         "links/annexes inventoried",
         "current version checked against responsible authority index",
         "official text only; publisher shell excluded",
-        "fragment is stored in the repository with a source hash for deterministic replay",
+        "fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay"
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash"
       ],
       "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
     },
@@ -476,9 +477,9 @@
         "hr-form-1b"
       ],
       "retrieval": "Follow the live link from the current official parent page; GET PDF bytes; record final URL, media type, length, SHA-256 and page count.",
-      "conversion": "Retain/inspect the native PDF only if reuse permits; OCR or text extraction is auxiliary, never a substitute for visual page review.",
+      "conversion": "Retain the unmodified native PDF under documents/forms/ after the recorded publisher, date/cutoff, visual-completeness, legal-classification and Article 18(3) checks pass. Do not treat empty text extraction or OCR as a substitute for the PDF page images; record its SHA-256 and page count.",
       "selector": "native_pdf_bytes; no HTML selector",
-      "status": "planned_visual_review_required",
+      "status": "official_mup_form_current_index_and_visual_reviewed; source_accepted",
       "semantic_checks": [
         "publisher and form title",
         "all page images visually reviewed",
@@ -486,7 +487,7 @@
         "revision/version and linked statutory authority",
         "fields and attachments inventory"
       ],
-      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+      "acceptance_policy": "The official MUP link is usable within its reviewed scope; the local PDF is retained byte-for-byte unchanged under the individually reviewed official-administrative-text basis. No revision date is displayed; confirm the current link before filing."
     },
     {
       "rule_id": "hr-form-2b-pdf-v1",
@@ -494,9 +495,9 @@
         "hr-form-2b"
       ],
       "retrieval": "Follow the live link from the current official parent page; GET PDF bytes; record final URL, media type, length, SHA-256 and page count.",
-      "conversion": "Retain/inspect the native PDF only if reuse permits; OCR or text extraction is auxiliary, never a substitute for visual page review.",
+      "conversion": "Retain the unmodified native PDF under documents/forms/ after the recorded publisher, date/cutoff, visual-completeness, legal-classification and Article 18(3) checks pass. Do not treat empty text extraction or OCR as a substitute for the PDF page images; record its SHA-256 and page count.",
       "selector": "native_pdf_bytes; no HTML selector",
-      "status": "planned_visual_review_required",
+      "status": "official_mup_form_current_index_and_visual_reviewed; source_accepted",
       "semantic_checks": [
         "publisher and form title",
         "all page images visually reviewed",
@@ -504,7 +505,7 @@
         "revision/version and linked statutory authority",
         "fields and attachments inventory"
       ],
-      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+      "acceptance_policy": "The official MUP link is usable within its reviewed scope; the local PDF is retained byte-for-byte unchanged under the individually reviewed official-administrative-text basis. No revision date is displayed; confirm the current link before filing."
     },
     {
       "rule_id": "hr-form-3b-pdf-v1",
@@ -512,9 +513,9 @@
         "hr-form-3b"
       ],
       "retrieval": "Follow the live link from the current official parent page; GET PDF bytes; record final URL, media type, length, SHA-256 and page count.",
-      "conversion": "Retain/inspect the native PDF only if reuse permits; OCR or text extraction is auxiliary, never a substitute for visual page review.",
+      "conversion": "Retain the unmodified native PDF under documents/forms/ after the recorded publisher, date/cutoff, visual-completeness, legal-classification and Article 18(3) checks pass. Do not treat empty text extraction or OCR as a substitute for the PDF page images; record its SHA-256 and page count.",
       "selector": "native_pdf_bytes; no HTML selector",
-      "status": "planned_visual_review_required",
+      "status": "official_mup_form_current_index_and_visual_reviewed; source_accepted",
       "semantic_checks": [
         "publisher and form title",
         "all page images visually reviewed",
@@ -522,7 +523,7 @@
         "revision/version and linked statutory authority",
         "fields and attachments inventory"
       ],
-      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+      "acceptance_policy": "The official MUP link is usable within its reviewed scope; the local PDF is retained byte-for-byte unchanged under the individually reviewed official-administrative-text basis. No revision date is displayed; confirm the current link before filing."
     },
     {
       "rule_id": "hr-form-6b-pdf-v1",
@@ -530,9 +531,9 @@
         "hr-form-6b"
       ],
       "retrieval": "Follow the live link from the current official parent page; GET PDF bytes; record final URL, media type, length, SHA-256 and page count.",
-      "conversion": "Retain/inspect the native PDF only if reuse permits; OCR or text extraction is auxiliary, never a substitute for visual page review.",
+      "conversion": "Retain the unmodified native PDF under documents/forms/ after the recorded publisher, date/cutoff, visual-completeness, legal-classification and Article 18(3) checks pass. Do not treat empty text extraction or OCR as a substitute for the PDF page images; record its SHA-256 and page count.",
       "selector": "native_pdf_bytes; no HTML selector",
-      "status": "planned_visual_review_required",
+      "status": "official_mup_form_current_index_and_visual_reviewed; source_accepted",
       "semantic_checks": [
         "publisher and form title",
         "all page images visually reviewed",
@@ -540,7 +541,7 @@
         "revision/version and linked statutory authority",
         "fields and attachments inventory"
       ],
-      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+      "acceptance_policy": "The official MUP link is usable within its reviewed scope; the local PDF is retained byte-for-byte unchanged under the individually reviewed official-administrative-text basis. No revision date is displayed; confirm the current link before filing."
     },
     {
       "rule_id": "hr-general-admin-act-nn-eli-v1",
@@ -558,9 +559,9 @@
         "links/annexes inventoried",
         "current version checked against responsible authority index",
         "official text only; publisher shell excluded",
-        "fragment is stored in the repository with a source hash for deterministic replay",
+        "fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay"
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash"
       ],
       "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
     },
@@ -580,9 +581,9 @@
         "links/annexes inventoried",
         "current version checked against responsible authority index",
         "official text only; publisher shell excluded",
-        "fragment is stored in the repository with a source hash for deterministic replay",
+        "fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay"
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash"
       ],
       "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
     },
@@ -620,7 +621,7 @@
         "links/annexes inventoried",
         "current version checked against responsible authority index",
         "official text only; publisher shell excluded",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately"
       ],
       "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
@@ -641,9 +642,9 @@
         "links/annexes inventoried",
         "current version checked against responsible authority index",
         "official text only; publisher shell excluded",
-        "fragment is stored in the repository with a source hash for deterministic replay",
+        "fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay"
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash"
       ],
       "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
     },
@@ -663,9 +664,9 @@
         "links/annexes inventoried",
         "current version checked against responsible authority index",
         "official text only; publisher shell excluded",
-        "fragment is stored in the repository with a source hash for deterministic replay",
+        "fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay"
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash"
       ],
       "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
     },
@@ -691,16 +692,19 @@
       "source_ids": [
         "hr-mup-eea-guidance"
       ],
-      "retrieval": "For ordinary use, open the live MUP EEA-family page and record its displayed update date, check date, relevant procedure and current linked forms. Recheck the parent page on refresh.",
-      "conversion": "Not needed for ordinary link use. If a local copy is retained, use a validated page-specific selector and compare only the relevant procedure with current primary law.",
-      "selector": "not_required_for_link_use; validate #content .page_content only if local capture is chosen",
-      "status": "official_link_reviewed_local_capture_optional",
+      "retrieval": "Open the live MUP EEA-family page and current Propisi index; record the visible page-update date, check date, procedures, relevant legal chains and current linked forms. Recheck the parent page on refresh.",
+      "conversion": "For a retained local text, select #content .page_content, preserve the visible Croatian article body, exclude navigation/site shell, and compare relevant sections and link targets against the live page. Cross-check the page’s legal references against the current official MUP Propisi index; displayed fees require separate verification.",
+      "selector": "#content .page_content",
+      "status": "official_link_and_article_body_accepted_with_limitations",
       "semantic_checks": [
-        "publisher and page identity confirmed",
-        "page updated 2025-10-09; reviewed 2026-10-21",
-        "Form 2b route and eight-day filing point recorded within page scope",
-        "displayed fee is not independently verified",
-        "no claim of regional practice or topic completeness"
+        "publisher and exact page identity confirmed on 2026-10-24",
+        "page displays update date 2025-10-09; live article compared with archived response",
+        "EEA Act and implementing regulation chains checked on current MUP Propisi index",
+        "Form 1b, 2b, 3b and 6b links lead to separately accepted MUP form records",
+        "eight-day filing point and family/residence sections retained in Croatian",
+        "displayed €13.27 fee not independently verified",
+        "operational guidance is not treated as law or local-practice evidence",
+        "local article-body copy uses MUP attribution terms; shell and third-party material excluded"
       ],
       "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
     },
@@ -726,19 +730,18 @@
       "source_ids": [
         "hr-mvep-family-visas"
       ],
-      "retrieval": "Discover the current family-member page from MVEP visa navigation; follow the page label in the relevant language, record resolved URL/page ID and capture date. Do not reuse retired page ID 180456 or assume its mission-specific text remains current.",
-      "conversion": "Use scripts/capture_mvep_page.py with the observed div#content .page_content article selector and expected heading. Require one match; retain hashes/metadata and paraphrased findings only pending a guidance reuse basis.",
-      "selector": "div#content .page_content",
-      "status": "live_selector_hash_capture_verified_2026-10-19",
+      "retrieval": "Open the official English MVEP page and verify title/page ID; compare visible article text. No raw bytes were stored by the historic capture.",
+      "conversion": "The current page is undated and includes an obsolete HTTP Directive link; exclude navigation and shell. Check the live page for current links and mission practice.",
+      "selector": "manual visible article text; historic selector `div#content .page_content` was recorded with the 2026-10-19 article hash",
+      "status": "source_accepted_manual_article_text",
       "semantic_checks": [
-        "heading and page ID match the family-member guidance",
-        "source-specific article excludes navigation/footer and matches visible substantive content",
-        "record no displayed revision date and flag obsolete embedded HTTP Directive link",
-        "check exemption, no-fee/expedited route and minimum evidence against Directive and EEA Act",
-        "discover mission-specific routes and instructions separately",
-        "do not retain full guidance text without reuse basis"
+        "official publisher, exact page identity, language and URL checked 2026-10-25",
+        "the locally retained article scope was compared with the current visible official page",
+        "publisher shell and unrelated page content are excluded; page-specific dynamic forms and linked files are not retained",
+        "Use the source-specific Article 15(3)/18(3) assessment recorded in source-acceptance.json; no site-wide licence is inferred.",
+        "local-copy acceptance does not certify topic coverage or country completion"
       ],
-      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+      "acceptance_policy": "A reviewed official link remains usable within its recorded scope. Local retention is limited to the accepted article body and its source-specific reuse basis; recheck undated or operational details on the live page. This rule does not establish legal-topic sufficiency."
     },
     {
       "rule_id": "hr-mvep-missions-ministry-page-v1",
@@ -762,17 +765,17 @@
       "source_ids": [
         "hr-mvep-stale-faq"
       ],
-      "retrieval": "GET public parent/current page; follow current official links rather than stale embedded direct files; record final URL and update date.",
-      "conversion": "Select #content .page_content. Preserve headings, links, list structure, dates and warnings; exclude navigation and footer.",
-      "selector": "#content .page_content",
-      "status": "selector_observed_on_seed_pages_or_planned",
+      "retrieval": "Official MVEP page identity checked 2026-10-25; the exact 2026-10-19 raw response remains in the Monitor archive. No current-use retrieval rule is accepted for this known stale page.",
+      "conversion": "Accepted only as the historical FAQ body, questions 1–17, in documents/guidance/hr-mvep-stale-faq-historical.md. Exclude navigation, footer, and the separate fee page; do not use the content as current guidance.",
+      "selector": "manual_visible_article_boundary_from_frequently_asked_questions_heading_through_question_17",
+      "status": "monitor_only_known_stale_page",
       "semantic_checks": [
-        "heading matches record",
-        "all substantive content and outgoing links retained",
-        "update/version date recorded",
-        "links and amounts/deadlines verified against current primary law"
+        "official MVEP page and archived response matched on 2026-10-25",
+        "all 17 visible FAQ entries retained; Q6 fee link content excluded",
+        "the non-Schengen statement conflicts with current MVEP material effective 2023-01-01",
+        "historical document is accepted for page identity and extraction only; excluded from current legal/procedural use"
       ],
-      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+      "acceptance_policy": "Retain only the named historical article body with its stale-use warning and source-specific reuse basis. A human-reviewed official link remains usable within its checked scope; neither the live page nor this historical copy establishes current visa rules."
     },
     {
       "rule_id": "hr-mvep-visa-appeal-ministry-page-v1",
@@ -796,34 +799,36 @@
       "source_ids": [
         "hr-mvep-visa-application"
       ],
-      "retrieval": "GET public parent/current page; follow current official links rather than stale embedded direct files; record final URL and update date.",
-      "conversion": "Select #content .page_content. Preserve headings, links, list structure, dates and warnings; exclude navigation and footer.",
-      "selector": "#content .page_content",
-      "status": "selector_observed_on_seed_pages_or_planned",
+      "retrieval": "Use the recorded official English MVEP URL; inspect the archived raw response and re-open the live page before relying on provider or mission details.",
+      "conversion": "Extract the primary article column only; preserve visible headings and text. Exclude navigation/footer; no third-party site content or application data is copied.",
+      "selector": "#content .article_left",
+      "status": "source_accepted_manual_article_text",
       "semantic_checks": [
-        "heading matches record",
-        "all substantive content and outgoing links retained",
-        "update/version date recorded",
-        "links and amounts/deadlines verified against current primary law"
+        "official publisher, exact page identity, language and URL checked 2026-10-25",
+        "the locally retained article scope was compared with the current visible official page",
+        "publisher shell and unrelated page content are excluded; page-specific dynamic forms and linked files are not retained",
+        "Use the source-specific Article 15(3)/18(3) assessment recorded in source-acceptance.json; provider destinations are volatile.",
+        "local-copy acceptance does not certify topic coverage or country completion"
       ],
-      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+      "acceptance_policy": "A reviewed official link remains usable within its recorded scope. Local retention is limited to the accepted article body and its source-specific reuse basis; recheck undated or operational details on the live page. This rule does not establish legal-topic sufficiency."
     },
     {
       "rule_id": "hr-mvep-visa-overview-ministry-page-v1",
       "source_ids": [
         "hr-mvep-visa-overview"
       ],
-      "retrieval": "GET public parent/current page; follow current official links rather than stale embedded direct files; record final URL and update date.",
-      "conversion": "Select #content .page_content. Preserve headings, links, list structure, dates and warnings; exclude navigation and footer.",
-      "selector": "#content .page_content",
-      "status": "selector_observed_on_seed_pages_or_planned",
+      "retrieval": "Use the recorded official English MVEP URL; inspect the archived raw response and re-open the live page before relying on the overview.",
+      "conversion": "Extract the primary article column only; exclude shell and footer. Retain the SIS statement as published with its recorded limitation.",
+      "selector": "#content .article_left",
+      "status": "source_accepted_manual_article_text",
       "semantic_checks": [
-        "heading matches record",
-        "all substantive content and outgoing links retained",
-        "update/version date recorded",
-        "links and amounts/deadlines verified against current primary law"
+        "official publisher, exact page identity, language and URL checked 2026-10-25",
+        "the locally retained article scope was compared with the current visible official page",
+        "publisher shell and unrelated page content are excluded; page-specific dynamic forms and linked files are not retained",
+        "Use the source-specific Article 15(3)/18(3) assessment recorded in source-acceptance.json; no general MVEP reuse licence is inferred.",
+        "local-copy acceptance does not certify topic coverage or country completion"
       ],
-      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+      "acceptance_policy": "A reviewed official link remains usable within its recorded scope. Local retention is limited to the accepted article body and its source-specific reuse basis; recheck undated or operational details on the live page. This rule does not establish legal-topic sufficiency."
     },
     {
       "rule_id": "hr-mvep-visa-regulations-ministry-page-v1",
@@ -896,7 +901,7 @@
       "retrieval": "GET stable official ELI/Gazette HTML URL; record final URL and metadata; do not use metadata API as full-text source.",
       "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
       "selector": ".sl-content .doc",
-      "status": "replayable_dom_fragment; manual_legal_review_pending",
+      "status": "replayable_dom_fragment; source_accepted",
       "semantic_checks": [
         "title and Gazette number match requested act",
         "all headings/article numbers and paragraph/list boundaries retained",
@@ -904,27 +909,29 @@
         "links/annexes inventoried",
         "current version checked against responsible authority index",
         "official text only; publisher shell excluded",
-        "fragment is stored in the repository with a source hash for deterministic replay",
+        "fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay"
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash"
       ],
-      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+      "acceptance_policy": "A human-reviewed official link is usable within its checked scope; this rule governs optional local-copy review only. Check material changes and relied-on attachments, not a full amendment chain by default."
     },
     {
       "rule_id": "hr-ombudsman-complaints-publisher-selector-pending-v1",
       "source_ids": [
         "hr-ombudsman-complaints"
       ],
-      "retrieval": "GET the public official URL only; record redirects, final publisher host, content type, version/update date and response hash.",
-      "conversion": "Inspect the publisher DOM and register a stable main-content selector with exclusions before conversion. Never fall back to body.",
-      "selector": "source_specific_selector_pending",
-      "status": "rule_not_yet_executable",
+      "retrieval": "Use the official Ombudsman page; compare the archived main-article response with the current page. The `/en/` path currently serves Croatian.",
+      "conversion": "Extract the primary complaint article and linked-form titles only; exclude navigation, sidebar, other site sections and actual form files.",
+      "selector": "#content.site-main .elementor-section (primary complaint article only)",
+      "status": "source_accepted_manual_article_text",
       "semantic_checks": [
-        "verify official publisher and page identity",
-        "register selector and exclusion list",
-        "compare heading, complete substantive sections and links with original"
+        "official publisher, exact page identity, language and URL checked 2026-10-25",
+        "the locally retained article scope was compared with the current visible official page",
+        "publisher shell and unrelated page content are excluded; page-specific dynamic forms and linked files are not retained",
+        "Use the source-specific Article 18(3) assessment recorded in source-acceptance.json; no general site reuse grant is inferred.",
+        "local-copy acceptance does not certify topic coverage or country completion"
       ],
-      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+      "acceptance_policy": "A reviewed official link remains usable within its recorded scope. Local retention is limited to the accepted article body and its source-specific reuse basis; recheck undated or operational details on the live page. This rule does not establish legal-topic sufficiency."
     },
     {
       "rule_id": "hr-personal-data-act-publisher-selector-pending-v1",
@@ -958,7 +965,7 @@
         "links/annexes inventoried",
         "current version checked against responsible authority index",
         "official text only; publisher shell excluded",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately"
       ],
       "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
@@ -979,7 +986,7 @@
         "links/annexes inventoried",
         "current version checked against responsible authority index",
         "official text only; publisher shell excluded",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately"
       ],
       "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
@@ -1000,7 +1007,7 @@
         "links/annexes inventoried",
         "current version checked against responsible authority index",
         "official text only; publisher shell excluded",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately"
       ],
       "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
@@ -1013,7 +1020,7 @@
       "retrieval": "GET stable official ELI/Gazette HTML URL; record final URL and metadata; do not use metadata API as full-text source.",
       "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
       "selector": ".sl-content .doc",
-      "status": "replayable_dom_fragment; manual_legal_review_pending",
+      "status": "replayable_dom_fragment; source_accepted",
       "semantic_checks": [
         "title and Gazette number match requested act",
         "all headings/article numbers and paragraph/list boundaries retained",
@@ -1021,11 +1028,11 @@
         "links/annexes inventoried",
         "current version checked against responsible authority index",
         "official text only; publisher shell excluded",
-        "fragment is stored in the repository with a source hash for deterministic replay",
+        "fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay"
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash"
       ],
-      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+      "acceptance_policy": "A human-reviewed official link is usable within its checked scope; this rule governs optional local-copy review only. Check material changes and relied-on attachments, not a full amendment chain by default."
     },
     {
       "rule_id": "hr-third-country-residence-amend-155-22-nn-eli-v1",
@@ -1043,7 +1050,7 @@
         "links/annexes inventoried",
         "current version checked against responsible authority index",
         "official text only; publisher shell excluded",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately"
       ],
       "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
@@ -1064,7 +1071,7 @@
         "links/annexes inventoried",
         "current version checked against responsible authority index",
         "official text only; publisher shell excluded",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately"
       ],
       "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
@@ -1077,7 +1084,7 @@
       "retrieval": "GET stable official ELI/Gazette HTML URL; record final URL and metadata; do not use metadata API as full-text source.",
       "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
       "selector": ".sl-content .doc",
-      "status": "replayable_dom_fragment; manual_legal_review_pending",
+      "status": "replayable_dom_fragment; source_accepted",
       "semantic_checks": [
         "title and Gazette number match requested act",
         "all headings/article numbers and paragraph/list boundaries retained",
@@ -1085,11 +1092,11 @@
         "links/annexes inventoried",
         "current version checked against responsible authority index",
         "official text only; publisher shell excluded",
-        "fragment is stored in the repository with a source hash for deterministic replay",
+        "fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay"
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash"
       ],
-      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+      "acceptance_policy": "A human-reviewed official link is usable within its checked scope; this rule governs optional local-copy review only. Check material changes and relied-on attachments, not a full amendment chain by default."
     },
     {
       "rule_id": "hr-vis-decree-amend-105-17-nn-eli-v1",
@@ -1107,7 +1114,7 @@
         "links/annexes inventoried",
         "current version checked against responsible authority index",
         "official text only; publisher shell excluded",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately"
       ],
       "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
@@ -1128,7 +1135,7 @@
         "links/annexes inventoried",
         "current version checked against responsible authority index",
         "official text only; publisher shell excluded",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately"
       ],
       "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
@@ -1141,7 +1148,7 @@
       "retrieval": "GET stable official ELI/Gazette HTML URL; record final URL and metadata; do not use metadata API as full-text source.",
       "conversion": "Select .sl-content .doc; exclude the site shell and embedded styles. This selector has been observed on representative Narodne novine legal records; validate it on this exact record and preserve original Croatian wording and all structural boundaries.",
       "selector": ".sl-content .doc",
-      "status": "replayable_dom_fragment; manual_legal_review_pending",
+      "status": "replayable_dom_fragment; source_accepted",
       "semantic_checks": [
         "title and Gazette number match requested act",
         "all headings/article numbers and paragraph/list boundaries retained",
@@ -1149,11 +1156,11 @@
         "links/annexes inventoried",
         "current version checked against responsible authority index",
         "official text only; publisher shell excluded",
-        "fragment is stored in the repository with a source hash for deterministic replay",
+        "fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay"
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash"
       ],
-      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+      "acceptance_policy": "A human-reviewed official link is usable within its checked scope; this rule governs optional local-copy review only. Check material changes and relied-on attachments, not a full amendment chain by default."
     },
     {
       "rule_id": "hr-visa-system-decree-nn-eli-v1",
@@ -1171,7 +1178,7 @@
         "links/annexes inventoried",
         "current version checked against responsible authority index",
         "official text only; publisher shell excluded",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately"
       ],
       "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
@@ -1192,7 +1199,7 @@
         "all attachments and external files inventoried",
         "currentness and transition status checked against official index",
         "official text only; publisher shell excluded",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately"
       ],
       "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
@@ -1213,7 +1220,7 @@
         "all attachments and external files inventoried",
         "currentness and transition status checked against official index",
         "official text only; publisher shell excluded",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately"
       ],
       "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
@@ -1234,7 +1241,7 @@
         "all attachments and external files inventoried",
         "currentness and transition status checked against official index",
         "official text only; publisher shell excluded",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately"
       ],
       "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
@@ -1255,7 +1262,7 @@
         "all attachments and external files inventoried",
         "currentness and transition status checked against official index",
         "official text only; publisher shell excluded",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately"
       ],
       "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
@@ -1276,7 +1283,7 @@
         "all attachments and external files inventoried",
         "currentness and transition status checked against official index",
         "official text only; publisher shell excluded",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately"
       ],
       "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
@@ -1297,7 +1304,7 @@
         "all attachments and external files inventoried",
         "currentness and transition status checked against official index",
         "official text only; publisher shell excluded",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately"
       ],
       "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
@@ -1318,7 +1325,7 @@
         "all attachments and external files inventoried",
         "currentness and transition status checked against official index",
         "official text only; publisher shell excluded",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately"
       ],
       "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
@@ -1339,7 +1346,7 @@
         "all attachments and external files inventoried",
         "currentness and transition status checked against official index",
         "official text only; publisher shell excluded",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately"
       ],
       "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
@@ -1349,19 +1356,18 @@
       "source_ids": [
         "hr-mvep-visa-appeal-current"
       ],
-      "retrieval": "Discover from current MVEP visa navigation and record language, final URL/page ID and retrieval date; restrict redirects and links to official publisher domains. Do not handle appeal submissions or applicant data.",
-      "conversion": "Use scripts/capture_mvep_page.py with the observed div#content .page_content article selector and expected Croatian heading. Require one match; retain hashes/metadata and paraphrased findings only pending a guidance reuse basis.",
-      "selector": "div#content .page_content",
-      "status": "live_selector_hash_capture_verified_2026-10-19",
+      "retrieval": "Open the current Croatian MVEP appeal page; compare the complete visible article with the local text. The historic capture did not store raw bytes.",
+      "conversion": "Exclude navigation and shell. Preserve the page’s stated deadlines, fee, route and the inconsistent court-email line; recheck before use.",
+      "selector": "manual visible Croatian article text; historic selector `div#content .page_content` was recorded with the 2026-10-19 article hash",
+      "status": "source_accepted_manual_article_text",
       "semantic_checks": [
-        "visible fee, currency, filing route, language and 15-day deadline match the current page",
-        "60-day authority decision and 30-day court route are retained",
-        "Foreigners Act/GAPA chain checked against the current MUP index",
-        "€130 fee cross-checked against Gazette NN 130/25; family-member applicability stays unresolved",
-        "record absence of a displayed revision date and any stale duplicate",
-        "do not retain appeal submissions or applicant personal data"
+        "official publisher, exact page identity, language and URL checked 2026-10-25",
+        "the locally retained article scope was compared with the current visible official page",
+        "publisher shell and unrelated page content are excluded; page-specific dynamic forms and linked files are not retained",
+        "Use the source-specific Article 18(3) assessment recorded in source-acceptance.json; this is not a general MVEP reuse licence.",
+        "local-copy acceptance does not certify topic coverage or country completion"
       ],
-      "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
+      "acceptance_policy": "A reviewed official link remains usable within its recorded scope. Local retention is limited to the accepted article body and its source-specific reuse basis; recheck undated or operational details on the live page. This rule does not establish legal-topic sufficiency."
     },
     {
       "rule_id": "hr-legal-aid-tariff-2025-nn-eli-v1",
@@ -1369,7 +1375,7 @@
         "hr-legal-aid-tariff-2025"
       ],
       "retrieval": "GET the exact Narodne novine ELI page for NN 142/25 item 2106. Validate publisher host, record ID, title, issuance and source date; retain only the official document fragment.",
-      "conversion": "Capture the observed `.sl-content .doc` fragment and render source text with the established Croatia Narodne novine replay utility. Inspect title, Article 7 administrative-dispute compensation rules, operative year, effective clause, attachments and publisher-shell exclusion.",
+      "conversion": "Capture the observed `.sl-content .doc` fragment and render source text with the source-specific review of the Monitor-archived .sl-content .doc fragment. Inspect title, Article 7 administrative-dispute compensation rules, operative year, effective clause, attachments and publisher-shell exclusion.",
       "selector": ".sl-content .doc",
       "status": "replayable_dom_fragment; source_accepted",
       "semantic_checks": [
@@ -1379,7 +1385,7 @@
         "distinguish provider remuneration from applicant legal-aid eligibility and court-fee exemption",
         "reconcile the current annual instrument against the ministry index; do not infer a 2026 rate from a 2026 consultation plan",
         "official text only; publisher shell excluded",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately"
       ],
       "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
@@ -1465,7 +1471,7 @@
         "inventory links/attachments",
         "trace Free Legal Aid Act Article 4(15) reference and avoid treating an arithmetic derivation as quoted statutory text",
         "official text only; publisher shell excluded",
-        "if captured, fragment is stored in the repository with a source hash for deterministic replay",
+        "if captured, fragment is retained in the Monitor local-only archive with a verified source hash",
         "current legal effect and legal-topic sufficiency are assessed separately"
       ],
       "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only. For legislation, use a government consolidation or closest government-published version; consult a Gazette act only for a material gap."
@@ -1487,6 +1493,122 @@
         "leave exact effect timing and application to individual proceedings open unless independently verified"
       ],
       "acceptance_policy": "A human-reviewed official link may be used within its checked identity, language, date/cutoff, relevant content, and limitations; capture and conversion are not prerequisites. This rule governs optional local-copy work only."
+    },
+    {
+      "rule_id": "hr-mup-sis-rights-guidance-v1",
+      "source_ids": [
+        "hr-mup-sis-rights-guidance"
+      ],
+      "retrieval": "Open the live official page at https://mup.gov.hr/sis/292915?big=1; record final URL, displayed date if any, checked date, scope and the linked official form targets. Re-resolve the form links from the parent page on each manual refresh; do not collect submissions or personal data.",
+      "conversion": "Not applicable for ordinary link use. If future page capture is justified, define and validate a page-specific article/body selector first; do not retain the publisher shell.",
+      "selector": "not_applicable_link_only",
+      "status": "official_link_reviewed_local_capture_optional",
+      "semantic_checks": [
+        "publisher/page identity verified",
+        "scoped visible rights and authority route checked on 2026-10-24",
+        "linked official form targets recorded as separate source records",
+        "date/currentness limits and any content defect recorded",
+        "reference use does not establish topic coverage or country completion"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used only within its checked scope, date, identity and limitations. No local page copy is retained; linked forms have separate acceptance records."
+    },
+    {
+      "rule_id": "hr-mvep-vis-rights-guidance-v1",
+      "source_ids": [
+        "hr-mvep-vis-rights-guidance"
+      ],
+      "retrieval": "Open the live official page at https://mvep.gov.hr/consular-information-130483/visas-180450/visa-information-system-vis-and-processing-of-personal-data-257756/257756; record final URL, displayed date if any, checked date, scope and the linked official form targets. Re-resolve the form links from the parent page on each manual refresh; do not collect submissions or personal data.",
+      "conversion": "Not applicable for ordinary link use. If future page capture is justified, define and validate a page-specific article/body selector first; do not retain the publisher shell.",
+      "selector": "not_applicable_link_only",
+      "status": "official_link_reviewed_local_capture_optional",
+      "semantic_checks": [
+        "publisher/page identity verified",
+        "scoped visible rights and authority route checked on 2026-10-24",
+        "linked official form targets recorded as separate source records",
+        "date/currentness limits and any content defect recorded",
+        "reference use does not establish topic coverage or country completion"
+      ],
+      "acceptance_policy": "A human-reviewed official link may be used only within its checked scope, date, identity and limitations. No local page copy is retained; linked forms have separate acceptance records."
+    },
+    {
+      "rule_id": "hr-mup-sis-access-form-official-pdf-v1",
+      "source_ids": [
+        "hr-mup-sis-access-form"
+      ],
+      "retrieval": "Open https://mup.gov.hr/sis/292915?big=1 and resolve the current official PDF link for this form; record final URL, retrieval date, response status, content type, byte count and SHA-256. Do not infer currency from the PDF metadata date.",
+      "conversion": "Keep the original PDF unchanged under documents/forms/. Use text extraction only for review; do not replace the native form with OCR or reflowed text. Do not store completed forms or personal data.",
+      "selector": "not_applicable_native_pdf",
+      "status": "accepted_official_pdf_manual_refresh",
+      "semantic_checks": [
+        "official parent page links exact PDF",
+        "title, requested right and legal references checked in extracted PDF text",
+        "page count and PDF properties recorded",
+        "native bytes match raw archive and accepted local-file hash",
+        "no embedded file or encryption detected",
+        "visual page-image review remains a documented limitation",
+        "check the live parent link again before relying on the form"
+      ],
+      "acceptance_policy": "Accepted unchanged as an individually identified blank official form within the recorded scope. MUP forms carry the MUP source-attribution reuse permission; the MVEP form relies on a narrow individual-form application of Copyright Act Article 18(3). No general guidance/page reuse is inferred."
+    },
+    {
+      "rule_id": "hr-mup-sis-erasure-form-official-pdf-v1",
+      "source_ids": [
+        "hr-mup-sis-erasure-form"
+      ],
+      "retrieval": "Open https://mup.gov.hr/sis/292915?big=1 and resolve the current official PDF link for this form; record final URL, retrieval date, response status, content type, byte count and SHA-256. Do not infer currency from the PDF metadata date.",
+      "conversion": "Keep the original PDF unchanged under documents/forms/. Use text extraction only for review; do not replace the native form with OCR or reflowed text. Do not store completed forms or personal data.",
+      "selector": "not_applicable_native_pdf",
+      "status": "accepted_official_pdf_manual_refresh",
+      "semantic_checks": [
+        "official parent page links exact PDF",
+        "title, requested right and legal references checked in extracted PDF text",
+        "page count and PDF properties recorded",
+        "native bytes match raw archive and accepted local-file hash",
+        "no embedded file or encryption detected",
+        "visual page-image review remains a documented limitation",
+        "check the live parent link again before relying on the form"
+      ],
+      "acceptance_policy": "Accepted unchanged as an individually identified blank official form within the recorded scope. MUP forms carry the MUP source-attribution reuse permission; the MVEP form relies on a narrow individual-form application of Copyright Act Article 18(3). No general guidance/page reuse is inferred."
+    },
+    {
+      "rule_id": "hr-mup-sis-correction-form-official-pdf-v1",
+      "source_ids": [
+        "hr-mup-sis-correction-form"
+      ],
+      "retrieval": "Open https://mup.gov.hr/sis/292915?big=1 and resolve the current official PDF link for this form; record final URL, retrieval date, response status, content type, byte count and SHA-256. Do not infer currency from the PDF metadata date.",
+      "conversion": "Keep the original PDF unchanged under documents/forms/. Use text extraction only for review; do not replace the native form with OCR or reflowed text. Do not store completed forms or personal data.",
+      "selector": "not_applicable_native_pdf",
+      "status": "accepted_official_pdf_manual_refresh",
+      "semantic_checks": [
+        "official parent page links exact PDF",
+        "title, requested right and legal references checked in extracted PDF text",
+        "page count and PDF properties recorded",
+        "native bytes match raw archive and accepted local-file hash",
+        "no embedded file or encryption detected",
+        "visual page-image review remains a documented limitation",
+        "check the live parent link again before relying on the form"
+      ],
+      "acceptance_policy": "Accepted unchanged as an individually identified blank official form within the recorded scope. MUP forms carry the MUP source-attribution reuse permission; the MVEP form relies on a narrow individual-form application of Copyright Act Article 18(3). No general guidance/page reuse is inferred."
+    },
+    {
+      "rule_id": "hr-mvep-vis-rights-form-official-pdf-v1",
+      "source_ids": [
+        "hr-mvep-vis-rights-form"
+      ],
+      "retrieval": "Open https://mvep.gov.hr/consular-information-130483/visas-180450/visa-information-system-vis-and-processing-of-personal-data-257756/257756 and resolve the current official PDF link for this form; record final URL, retrieval date, response status, content type, byte count and SHA-256. Do not infer currency from the PDF metadata date.",
+      "conversion": "Keep the original PDF unchanged under documents/forms/. Use text extraction only for review; do not replace the native form with OCR or reflowed text. Do not store completed forms or personal data.",
+      "selector": "not_applicable_native_pdf",
+      "status": "accepted_official_pdf_manual_refresh",
+      "semantic_checks": [
+        "official parent page links exact PDF",
+        "title, requested right and legal references checked in extracted PDF text",
+        "page count and PDF properties recorded",
+        "native bytes match raw archive and accepted local-file hash",
+        "no embedded file or encryption detected",
+        "visual page-image review remains a documented limitation",
+        "check the live parent link again before relying on the form"
+      ],
+      "acceptance_policy": "Accepted unchanged as an individually identified blank official form within the recorded scope. MUP forms carry the MUP source-attribution reuse permission; the MVEP form relies on a narrow individual-form application of Copyright Act Article 18(3). No general guidance/page reuse is inferred."
     }
   ],
   "reference_use_policy": "For every source type, prefer the responsible official publisher. Prefer a usable government-published consolidation for national legislation and the responsible EU publisher consolidation for EU legislation; if none is usable, use the closest government-published or official-service version and record its language, displayed date/cutoff, scope, and limits. A human-reviewed official link is enough for ordinary research; a custom capture/conversion rule, local copy, API, replay check, or updater is optional. Use Gazette fragments only to resolve a material question; do not reconstruct a full chain by default. Keep reference use, local-copy acceptance, topic coverage, and country completion separate."

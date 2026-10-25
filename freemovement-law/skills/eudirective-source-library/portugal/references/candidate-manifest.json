@@ -1,200 +1,2322 @@
 {
-  "manifest_version": "0.1.0-candidate",
-  "pack": "portugal-national-source-library",
-  "inventory_source": "references/source-list.md",
-  "inventory_research_date": "2026-10-16",
-  "status": "partially_retrieved_review_candidates",
-  "retrieval_status": "One AIMA conversion remains a local review candidate; six DRE HTTP responses returned a JavaScript shell. The six legal-source links have separate narrow decisions; AIMA is offered for whole-site review. Accepted local copies: 0.",
+  "manifest_version": "0.2.0-candidate",
+  "pack": "portugal-national-source-candidates",
+  "jurisdiction": "PT",
+  "inventory_research_date": "2026-10-24",
+  "scope": "Bounded cross-jurisdiction discovery from Danish EU free-movement residence law and official guidance, carrying prior country-pack and taxonomy findings forward as search leads. Covers Portugal legal publication/version/reuse, Law 37/2006 and related EEA/Swiss/Andorra routes, general immigration and family procedures, forms, visas/missions, administrative procedure/remedies, public access, privacy, oversight, legal aid, civil-status evidence, and administrative case-law discovery. Portugal is an EU Member State. No legal equivalence or exhaustive inventory is asserted.",
+  "status": "external_reference_reviewed_with_narrow_scopes; local_copies_topics_and_country_review_incomplete",
+  "retrieval_status": "The 19 October retrieval pass saved 46 exact responses; 19 converted review artifacts remain unaccepted and are being moved to the Monitor archive. As of 24 October, 61 official links are accepted within narrow scopes, three Gov.pt pages are not relied upon for current procedures, and four AIMA routes remain under human review. No local copies or topics are accepted.",
   "accepted_source_count": 0,
-  "candidate_source_count": 7,
-  "retrieved_review_candidate_count": 7,
-  "documents": [
+  "candidate_source_count": 68,
+  "official_hosts": [
+    "aima.gov.pt",
+    "diariodarepublica.pt",
+    "irn.justica.gov.pt",
+    "justica.gov.pt",
+    "n-lex.europa.eu",
+    "pedidodevistos.mne.gov.pt",
+    "portaldascomunidades.mne.gov.pt",
+    "vistos.mne.gov.pt",
+    "www.cada.pt",
+    "www.cnpd.pt",
+    "www.dgsi.pt",
+    "www.gov.pt",
+    "www.provedor-jus.pt"
+  ],
+  "secondary_hosts": [],
+  "comparison_seed": {
+    "jurisdiction": "Denmark",
+    "source": "Danish EU free-movement residence law and official guidance",
+    "relationship_note": "Portugal Law 37/2006 has a close functional relationship to the Danish seed because it transposes Directive 2004/38 and regulates EU-citizen/family entry and residence. Its express EEA/Swiss provisions, Portuguese-national family extension, municipal registration, AIMA card route and separate Portugal-Andorra treaty must be preserved. The general Foreigners Act is only a partial match and serves distinct routes. No legal equivalence is asserted."
+  },
+  "previous_findings_carried_forward": [
+    "Prior Denmark, Sweden, Czechia, Hungary, Romania and other jurisdiction packs are search leads only; verify each Portugal candidate at its first-party publisher.",
+    "N-Lex is a national-law discovery lead, not a Portuguese publisher, complete source-class inventory or monitored legal record.",
+    "A documented data/API format, general open-data law or reuse notice does not by itself establish API registration requirements, endpoint access, unrestricted reuse, or conversion permission.",
+    "Keep EU, EEA EFTA, Swiss, Andorran, UK Withdrawal Agreement, Portuguese-family and general third-country routes distinct, even where operational guidance groups categories.",
+    "Consolidated texts, article change histories and legal-analysis pages aid discovery; DRE says they have no legal value, so preserve original acts, amendments, corrections and commencement.",
+    "Dynamic agency pages, portals, forms, fees, mission instructions and document checklists require current parent-page rediscovery.",
+    "Court and oversight databases may be selected; state dates, search filters and publication limits and do not infer absence from zero results."
+  ],
+  "search_coverage": [
     {
-      "id": "pt-01-lei-n.º-37-2006-on-free-movement-and-residence-of-eu-citizens-and-family-me",
-      "title": "Lei n.º 37/2006 on free movement and residence of EU citizens and family members (DRE consolidated record)",
+      "source_class": "Official legal publication, legal versioning and reuse",
+      "search_outcome": "DRE portal, original and consolidated records, publisher help, N-Lex discovery route, access/reuse law and open-data law were checked. No official API documentation was found in this bounded search. DRE expressly says consolidated texts and legal analysis have no legal value.",
+      "official_channels": [
+        "Diário da República",
+        "N-Lex (discovery only)"
+      ],
+      "query_terms": [
+        "Lei 37/2006 versão consolidada Diário da República",
+        "Lei 23/2007 estrangeiros DRE",
+        "Diário da República API dados reutilização",
+        "versão consolidada DRE valor legal",
+        "Lei 26/2016 reutilização documentos Lei 68/2021"
+      ],
+      "languages": [
+        "pt",
+        "en"
+      ],
+      "coverage_limit": "No API absence claim: only targeted public searches and DRE help were checked. Reuse legislation does not itself prove a DRE API, API terms, unrestricted bulk use, or permission to convert every item. DRE consolidated texts are non-authoritative; reconcile original publications, amendments and commencement."
+    },
+    {
+      "source_class": "EU free movement, family, EEA/Swiss and Andorra routes",
+      "search_outcome": "Law 37/2006, its DRE consolidated record and amendments, AIMA EU/family pages, municipal registration guidance, permanent-document pages and the distinct Portugal-Andorra treaty route were identified.",
+      "official_channels": [
+        "Diário da República",
+        "AIMA",
+        "N-Lex discovery route"
+      ],
+      "query_terms": [
+        "Lei 37/2006 livre circulação residência cidadãos União familiares",
+        "certificado registo cidadão UE Câmara Municipal AIMA Portugal",
+        "cartão residência familiar cidadão UE AIMA",
+        "Andorra Lei 37/2006 Portugal acordo"
+      ],
+      "languages": [
+        "pt",
+        "en"
+      ],
+      "coverage_limit": "AIMA guidance groups EU, EEA, Swiss and Andorra in places; it does not make their legal instruments identical. Direct AIMA page access was intermittent in this research client. Local municipal forms/fees and practice were not surveyed nationwide."
+    },
+    {
+      "source_class": "General immigration, visas and forms",
+      "search_outcome": "Law 23/2007, its implementing regulation, AIMA guidance, MNE visa hub, e-Konsulado, gov.pt services and changing portal notices were identified. National family reunification under the Foreigners Act is recorded separately from EU-family rights.",
+      "official_channels": [
+        "Diário da República",
+        "AIMA",
+        "MNE",
+        "gov.pt"
+      ],
+      "query_terms": [
+        "Lei 23/2007 regime entrada permanência estrangeiros DRE",
+        "Decreto Regulamentar 84/2007 última alteração",
+        "vistos familiares cidadãos UE Portugal MNE",
+        "documentos familiares cidadão UE AIMA 2026"
+      ],
+      "languages": [
+        "pt",
+        "en"
+      ],
+      "coverage_limit": "Law 23/2007 and Decree Regulation 84/2007 current DRE consolidation links were located and accepted as government-published working references within their displayed dates/status. Law 23/2007 displays “Em atualização”; current AIMA/visa and mission checklists remain human-review items, and the Foreigners Act is not a substitute for the EU-family route."
+    },
+    {
+      "source_class": "Administrative procedure, remedies, public access and legal aid",
+      "search_outcome": "CPA and CPTA records, Law 26/2016 and Law 34/2004 routes, Justice.gov.pt legal protection guidance, CADA and Provedor complaint routes were identified.",
+      "official_channels": [
+        "Diário da República",
+        "Justice.gov.pt",
+        "CADA",
+        "Provedor de Justiça"
+      ],
+      "query_terms": [
+        "Código do Procedimento Administrativo Decreto-Lei 4/2015 DRE",
+        "CPTA versão atualizada DRE 2026",
+        "Lei 26/2016 CADA queixa acesso documentos",
+        "proteção jurídica Lei 34/2004 Portugal estrangeiros"
+      ],
+      "languages": [
+        "pt",
+        "en"
+      ],
+      "coverage_limit": "This pass did not resolve specialized immigration deadlines. Use the latest available government-published consolidation for public-access and legal-aid provisions, record its cutoff, and check only a known later change relevant to eligibility or procedure; service pages remain operational guidance, not legal text."
+    },
+    {
+      "source_class": "Privacy, SIS/VIS and oversight",
+      "search_outcome": "CNPD data-access, SIS and VIS rights, complaint channels, and Provedor oversight guidance were identified.",
+      "official_channels": [
+        "CNPD",
+        "Provedor de Justiça"
+      ],
+      "query_terms": [
+        "CNPD direito de acesso dados pessoais Portugal",
+        "CNPD direitos SIS Gabinete Nacional SIRENE Decreto-Lei 122/2021",
+        "CNPD direitos VIS Portugal",
+        "Provedor Justiça estrangeiros apresentar queixa"
+      ],
+      "languages": [
+        "pt",
+        "en"
+      ],
+      "coverage_limit": "SIS and VIS have different responsible authorities and request procedures. Individual records are personal data, not public monitoring material. The CNPD and Ombudsman sites are mutable and should be rediscovered through current parent pages."
+    },
+    {
+      "source_class": "Civil-status evidence and courts",
+      "search_outcome": "IRN/Justice birth, marriage and translation guidance, DRE decisions linked to the Foreigners Act, and the STA DGSI database information and one case sample were identified.",
+      "official_channels": [
+        "IRN / Justice.gov.pt",
+        "Diário da República",
+        "DGSI / Supreme Administrative Court"
+      ],
+      "query_terms": [
+        "registar nascimento estrangeiro tradução documentos IRN Portugal",
+        "tradução documentos certidão estado civil IRN",
+        "decisões judiciais Lei 23/2007 Diário da República",
+        "Supremo Tribunal Administrativo base dados decisões seleção"
+      ],
+      "languages": [
+        "pt",
+        "en"
+      ],
+      "coverage_limit": "Civil-status evidence differs by document and route. DRE currently showed 25 of 230 decision results for Law 23/2007; STA describes selected case-law coverage. No-result searches cannot prove absence and the court lane is not complete."
+    }
+  ],
+  "sources": [
+    {
+      "id": "pt-01",
+      "title": "Diário da República portal",
+      "source_type": "official_legal_publication_portal",
+      "language": "pt",
+      "url": "https://diariodarepublica.pt/",
+      "publisher_identifier": {
+        "system": "diariodarepublica.pt",
+        "record": "Diário da República portal"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official source inspected",
+      "retrieval_status": "discovery_surface_no_text",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. The official Portuguese Gazette portal is the primary publication surface. Stable record pages are available, but no API documentation was found in the bounded search.",
+      "version_evidence": "The official Portuguese Gazette portal is the primary publication surface. Stable record pages are available, but no API documentation was found in the bounded search.",
+      "note": "The official Portuguese Gazette portal is the primary publication surface. Stable record pages are available, but no API documentation was found in the bounded search.",
+      "topic_ids": [
+        "legislation",
+        "publisher"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "0794abe5f8088cfd34e8e50bb5f9f7828b20a3c505f702e4b51be3bbb0631b57",
+      "source_bytes": 2346,
+      "resolved_url": "https://diariodarepublica.pt/dr/home",
+      "retrieval_note": "Public HTML response contained no sufficiently long extractable source body.",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-01",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted"
+    },
+    {
+      "id": "pt-02",
+      "title": "DRE help: consolidated versions",
+      "source_type": "official_consolidation_policy",
+      "language": "pt",
+      "url": "https://diariodarepublica.pt/dr/geral/ajuda/versao-consolidada",
+      "publisher_identifier": {
+        "system": "diariodarepublica.pt",
+        "record": "DRE help: consolidated versions"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official source inspected",
+      "retrieval_status": "discovery_surface_no_text",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. DRE says consolidated texts are not official and have no legal value; use them for discovery/version comparison and preserve original acts and amendments as legal authority. The date slider and article-level change trail are useful monitoring signals.",
+      "version_evidence": "DRE says consolidated texts are not official and have no legal value; use them for discovery/version comparison and preserve original acts and amendments as legal authority. The date slider and article-level change trail are useful monitoring signals.",
+      "note": "DRE says consolidated texts are not official and have no legal value; use them for discovery/version comparison and preserve original acts and amendments as legal authority. The date slider and article-level change trail are useful monitoring signals.",
+      "topic_ids": [
+        "legislation",
+        "versioning"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "0794abe5f8088cfd34e8e50bb5f9f7828b20a3c505f702e4b51be3bbb0631b57",
+      "source_bytes": 2346,
+      "resolved_url": "https://diariodarepublica.pt/dr/geral/ajuda/versao-consolidada",
+      "retrieval_note": "Public HTML response contained no sufficiently long extractable source body.",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-02",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted"
+    },
+    {
+      "id": "pt-03",
+      "title": "DRE overview of the official gazette",
+      "source_type": "official_publisher_policy",
+      "language": "pt",
+      "url": "https://diariodarepublica.pt/dr/geral/ajuda/sobre-dr",
+      "publisher_identifier": {
+        "system": "diariodarepublica.pt",
+        "record": "DRE overview of the official gazette"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official source inspected",
+      "retrieval_status": "discovery_surface_no_text",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. DRE identifies the Gazette as the official publisher and says consolidated texts, summaries and legal analysis have no legal value. The page did not expose an API contract.",
+      "version_evidence": "DRE identifies the Gazette as the official publisher and says consolidated texts, summaries and legal analysis have no legal value. The page did not expose an API contract.",
+      "note": "DRE identifies the Gazette as the official publisher and says consolidated texts, summaries and legal analysis have no legal value. The page did not expose an API contract.",
+      "topic_ids": [
+        "publisher",
+        "reuse"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "0794abe5f8088cfd34e8e50bb5f9f7828b20a3c505f702e4b51be3bbb0631b57",
+      "source_bytes": 2346,
+      "resolved_url": "https://diariodarepublica.pt/dr/geral/ajuda/sobre-dr",
+      "retrieval_note": "Public HTML response contained no sufficiently long extractable source body.",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-03",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted"
+    },
+    {
+      "id": "pt-04",
+      "title": "N-Lex Portugal legal-search route",
+      "source_type": "cross_border_law_discovery_catalogue",
+      "language": "pt",
+      "url": "https://n-lex.europa.eu/n-lex/legis_po/digesto_form?lang=pt",
+      "publisher_identifier": {
+        "system": "n-lex.europa.eu",
+        "record": "N-Lex Portugal legal-search route"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official source inspected",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. Discovery lead to Portuguese legal-information services only. N-Lex is not the Portuguese publisher, does not cover guidance/courts/oversight comprehensively, and must not be monitored as the legal record.",
+      "version_evidence": "Discovery lead to Portuguese legal-information services only. N-Lex is not the Portuguese publisher, does not cover guidance/courts/oversight comprehensively, and must not be monitored as the legal record.",
+      "note": "Discovery lead to Portuguese legal-information services only. N-Lex is not the Portuguese publisher, does not cover guidance/courts/oversight comprehensively, and must not be monitored as the legal record.",
+      "topic_ids": [
+        "discovery",
+        "legislation"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "802d894a1a4b4d3601700a66f45e9b5d1b6e33ff6fbbaa1242c61158dce282b3",
+      "converted_sha256": "8f63ff9891d1d3fad70995164b140e082594eea6a0196573ea89a116595584ff",
+      "source_bytes": 79392,
+      "resolved_url": "https://n-lex.europa.eu/n-lex/legis_po/digesto_form?lang=pt",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-04",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted",
+      "monitor_candidate_archive_path": "candidates/public-data/portugal/monitor-candidates/pt-04.md",
+      "monitor_candidate_archive_sha256": "cb340a63b7b2b6c9f8d332f7efc417880dd23b5bb1d8a9b341c4ab507708fa9b",
+      "monitor_candidate_archive_bytes": 2174,
+      "review_artifact_status": "archived_unaccepted"
+    },
+    {
+      "id": "pt-05",
+      "title": "Law 37/2006, original official record",
       "source_type": "free_movement_primary_legislation",
       "language": "pt",
-      "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2006-128792849",
+      "url": "https://diariodarepublica.pt/dr/detalhe/lei/37-2006-538604",
+      "publisher_identifier": {
+        "system": "diariodarepublica.pt",
+        "record": "Law 37/2006, original official record"
+      },
+      "functional_relationship": "close_functional_match",
+      "verification_status": "Official source inspected",
+      "retrieval_status": "discovery_surface_no_text",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. Transposes Directive 2004/38. Articles 1 and 3 extend parts of the regime to EEA and Swiss nationals and their family; article 3(5) extends family provisions to Portuguese nationals. Registration over three months is a municipal route; family cards are issued under a separate route. Article 21 says documents are not a precondition to exercising the right.",
+      "version_evidence": "Transposes Directive 2004/38. Articles 1 and 3 extend parts of the regime to EEA and Swiss nationals and their family; article 3(5) extends family provisions to Portuguese nationals. Registration over three months is a municipal route; family cards are issued under a separate route. Article 21 says documents are not a precondition to exercising the right.",
+      "note": "Transposes Directive 2004/38. Articles 1 and 3 extend parts of the regime to EEA and Swiss nationals and their family; article 3(5) extends family provisions to Portuguese nationals. Registration over three months is a municipal route; family cards are issued under a separate route. Article 21 says documents are not a precondition to exercising the right.",
+      "topic_ids": [
+        "free_movement",
+        "family",
+        "law"
+      ],
       "retrieved": true,
       "accepted": false,
-      "retrieval_status": "discovery_surface_no_text",
-      "topic_ids": [
-        "RESIDENCE-01",
-        "FAMILY-01",
-        "FAMILY-04",
-        "VISA-01"
-      ],
-      "scope_note": "Main national implementation of Directive 2004/38; link review in monitor register pt-06. DRE displayed in-force status and last alteration 2023-06-02; see the dated decision and limits.",
       "source_sha256": "0794abe5f8088cfd34e8e50bb5f9f7828b20a3c505f702e4b51be3bbb0631b57",
       "source_bytes": 2346,
-      "source_content_type": "text/html",
-      "raw_source_path": "temp/portugal/raw/pt-01-lei-n-37-2006-on-free-movement-and-residence-of-eu-citizens-and-family-me-0794abe5f8088cfd34e8e50bb5f9f7828b20a3c505f702e4b51be3bbb0631b57.html",
       "resolved_url": "https://diariodarepublica.pt/dr/detalhe/lei/37-2006-538604",
       "retrieval_note": "Public HTML response contained no sufficiently long extractable source body.",
-      "retrieved_at": "2026-10-19T03:50:57+00:00",
       "official_reference_status": "usable_official_reference",
-      "official_reference_decision": "pt-06"
+      "official_reference_decision": "pt-05",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted"
     },
     {
-      "id": "pt-02-lei-n.º-143-2015-adoption-regime",
-      "title": "Lei n.º 143/2015, adoption regime",
-      "source_type": "adoption_primary_legislation",
+      "id": "pt-06",
+      "title": "Law 37/2006, DRE consolidated record",
+      "source_type": "free_movement_consolidated_text_discovery",
       "language": "pt",
-      "url": "https://diariodarepublica.pt/dr/detalhe/lei/143-2015-70215247",
+      "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2006-128792849",
+      "publisher_identifier": {
+        "system": "diariodarepublica.pt",
+        "record": "Law 37/2006, DRE consolidated record"
+      },
+      "functional_relationship": "close_functional_match",
+      "verification_status": "Official source inspected",
+      "retrieval_status": "discovery_surface_no_text",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. DRE publishes this as an in-force consolidated record with date selection; the last listed change is 2 June 2023. Use it as the closest government-published working text and preserve the DRE disclaimer that the wording has no legal value. Check for a later DRE edition; do not require retaining and applying the full amendment chain.",
+      "version_evidence": "DRE publishes this as an in-force consolidated record with date selection; the last listed change is 2 June 2023. Use it as the closest government-published working text and preserve the DRE disclaimer that the wording has no legal value. Check for a later DRE edition; do not require retaining and applying the full amendment chain.",
+      "note": "DRE publishes this as an in-force consolidated record with date selection; the last listed change is 2 June 2023. Use it as the closest government-published working text and preserve the DRE disclaimer that the wording has no legal value. Check for a later DRE edition; do not require retaining and applying the full amendment chain.",
+      "topic_ids": [
+        "free_movement",
+        "versioning"
+      ],
       "retrieved": true,
       "accepted": false,
-      "retrieval_status": "discovery_surface_no_text",
-      "topic_ids": [
-        "FAMILY-11",
-        "FAMILY-12",
-        "FAMILY-13",
-        "FAMILY-15"
-      ],
-      "scope_note": "DRE marks the original act in force; it includes the RJPA annex and amends the Civil/Registry Codes. Accepted as an official original-act link, not a current provision-level consolidation.",
       "source_sha256": "0794abe5f8088cfd34e8e50bb5f9f7828b20a3c505f702e4b51be3bbb0631b57",
       "source_bytes": 2346,
-      "source_content_type": "text/html",
-      "raw_source_path": "temp/portugal/raw/pt-02-lei-n-143-2015-adoption-regime-0794abe5f8088cfd34e8e50bb5f9f7828b20a3c505f702e4b51be3bbb0631b57.html",
-      "resolved_url": "https://diariodarepublica.pt/dr/detalhe/lei/143-2015-70215247",
+      "resolved_url": "https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2006-128792849",
       "retrieval_note": "Public HTML response contained no sufficiently long extractable source body.",
-      "retrieved_at": "2026-10-19T03:50:58+00:00",
       "official_reference_status": "usable_official_reference",
-      "official_reference_decision": "pt-66"
+      "official_reference_decision": "pt-06",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted"
     },
     {
-      "id": "pt-03-código-do-registo-civil-(decreto-lei-n.º-131-95)-consolidated-provisions",
-      "title": "Código do Registo Civil (Decreto-Lei n.º 131/95), consolidated provisions",
-      "source_type": "civil_status_primary_legislation",
+      "id": "pt-07",
+      "title": "Decree-Law 41/2023, AIMA and amendment trail",
+      "source_type": "immigration_and_authority_amending_legislation",
       "language": "pt",
-      "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/1995-34525275",
+      "url": "https://diariodarepublica.pt/dr/detalhe/decreto-lei/41-2023-213881448",
+      "publisher_identifier": {
+        "system": "diariodarepublica.pt",
+        "record": "Decree-Law 41/2023, AIMA and amendment trail"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official search result only",
+      "retrieval_status": "discovery_surface_no_text",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. Establishes AIMA and changes institutional responsibility, including the EU-family card route. Reconcile its commencement and provisions with the original Law 37/2006 and later organizational acts.",
+      "version_evidence": "Establishes AIMA and changes institutional responsibility, including the EU-family card route. Reconcile its commencement and provisions with the original Law 37/2006 and later organizational acts.",
+      "note": "Establishes AIMA and changes institutional responsibility, including the EU-family card route. Reconcile its commencement and provisions with the original Law 37/2006 and later organizational acts.",
+      "topic_ids": [
+        "authority",
+        "amendment"
+      ],
       "retrieved": true,
       "accepted": false,
-      "retrieval_status": "discovery_surface_no_text",
-      "topic_ids": [
-        "FAMILY-04",
-        "FAMILY-09",
-        "FAMILY-27",
-        "FAMILY-28"
-      ],
-      "scope_note": "DRE shows in-force status and last alteration 2025-04-01. Replaces the stale version-suffixed URL; DRE says consolidations have no legal value.",
       "source_sha256": "0794abe5f8088cfd34e8e50bb5f9f7828b20a3c505f702e4b51be3bbb0631b57",
       "source_bytes": 2346,
-      "source_content_type": "text/html",
-      "raw_source_path": "temp/portugal/raw/pt-03-c-digo-do-registo-civil-decreto-lei-n-131-95-consolidated-provisions-0794abe5f8088cfd34e8e50bb5f9f7828b20a3c505f702e4b51be3bbb0631b57.html",
-      "resolved_url": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/1995-34525275-47397275",
+      "resolved_url": "https://diariodarepublica.pt/dr/detalhe/decreto-lei/41-2023-213881448",
       "retrieval_note": "Public HTML response contained no sufficiently long extractable source body.",
-      "retrieved_at": "2026-10-19T03:50:59+00:00",
       "official_reference_status": "usable_official_reference",
-      "official_reference_decision": "pt-67"
+      "official_reference_decision": "pt-07",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted"
     },
     {
-      "id": "pt-04-código-civil-private-international-law-provisions",
-      "title": "Código Civil, private-international-law provisions",
-      "source_type": "private_international_law_primary_legislation",
-      "language": "pt",
-      "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/1966-34509075-49754075",
-      "retrieved": true,
-      "accepted": false,
-      "retrieval_status": "discovery_surface_no_text",
-      "topic_ids": [
-        "FAMILY-01",
-        "FAMILY-03",
-        "FAMILY-05",
-        "FAMILY-06",
-        "FAMILY-15"
-      ],
-      "scope_note": "Corrected from an erroneous 1993 URL to Civil Code Chapter III on rights of foreigners/conflicts of laws; DRE last alteration 2026-06-23.",
-      "source_sha256": "0794abe5f8088cfd34e8e50bb5f9f7828b20a3c505f702e4b51be3bbb0631b57",
-      "source_bytes": 2346,
-      "source_content_type": "text/html",
-      "raw_source_path": "temp/portugal/raw/pt-04-c-digo-civil-private-international-law-provisions-0794abe5f8088cfd34e8e50bb5f9f7828b20a3c505f702e4b51be3bbb0631b57.html",
-      "resolved_url": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/1993-34509075",
-      "retrieval_note": "Public HTML response contained no sufficiently long extractable source body.",
-      "retrieved_at": "2026-10-19T03:51:00+00:00",
-      "official_reference_status": "usable_official_reference",
-      "official_reference_decision": "pt-68"
-    },
-    {
-      "id": "pt-05-aima-information-for-eu-citizens-and-their-family-members",
-      "title": "AIMA information for EU citizens and their family members",
-      "source_type": "official_guidance",
-      "language": "pt",
-      "url": "https://aima.gov.pt/en/nacionais-ue-e-familiares",
-      "retrieved": true,
-      "accepted": false,
-      "retrieval_status": "converted_review_candidate",
-      "topic_ids": [
-        "RESIDENCE-01",
-        "RESIDENCE-08",
-        "VISA-01",
-        "ADMIN-04"
-      ],
-      "scope_note": "Current administrative overview, evidence routes, and distinctions between EU nationals and family members; check linked application channels and dates.",
-      "document_path": "../candidates/pt-aima-eu-family-card.md",
-      "official_reference_status": "offered_for_human_site_review",
-      "human_review_site_offer": "pt-review-aima"
-    },
-    {
-      "id": "pt-06-portaria-n.º-1334-d-2010-as-amended-by-portaria-n.º-13-2024:-eu-registratio",
-      "title": "Portaria n.º 1334-D/2010, consolidated EU registration and family residence-card models and fees",
+      "id": "pt-08",
+      "title": "Portaria 1334-D/2010, DRE consolidated record",
       "source_type": "free_movement_forms_implementing_legislation",
       "language": "pt",
       "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/portaria/2010-107034650",
+      "publisher_identifier": {
+        "system": "diariodarepublica.pt",
+        "record": "Portaria 1334-D/2010, residence-document models and fees"
+      },
+      "functional_relationship": "close_functional_match",
+      "verification_status": "Official source inspected",
+      "retrieval_status": "discovery_surface_no_text",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. Approves certificate/card models and fees under Law 37/2006. DRE modification history lists Portaria 164/2017, 225/2020 and 13/2024; fixed annexes must be reconciled to current forms.",
+      "version_evidence": "Approves certificate/card models and fees under Law 37/2006. DRE modification history lists Portaria 164/2017, 225/2020 and 13/2024; fixed annexes must be reconciled to current forms.",
+      "note": "Approves certificate/card models and fees under Law 37/2006. DRE modification history lists Portaria 164/2017, 225/2020 and 13/2024; fixed annexes must be reconciled to current forms.",
+      "topic_ids": [
+        "forms",
+        "fees",
+        "free_movement"
+      ],
       "retrieved": true,
       "accepted": false,
-      "retrieval_status": "discovery_surface_no_text",
-      "topic_ids": [
-        "RESIDENCE-08",
-        "ADMIN-04",
-        "DATA-01"
-      ],
-      "scope_note": "Government-published DRE consolidation; see dated monitor-register decision pt-08. Annex specimens were not visually reviewed, and Article 2 retains a Regulation 2019/1157 cross-reference requiring a current EU-law check.",
       "source_sha256": "0794abe5f8088cfd34e8e50bb5f9f7828b20a3c505f702e4b51be3bbb0631b57",
       "source_bytes": 2346,
-      "source_content_type": "text/html",
-      "raw_source_path": "temp/portugal/raw/pt-06-portaria-n-1334-d-2010-as-amended-by-portaria-n-13-2024-eu-registratio-0794abe5f8088cfd34e8e50bb5f9f7828b20a3c505f702e4b51be3bbb0631b57.html",
       "resolved_url": "https://diariodarepublica.pt/dr/detalhe/portaria/1334-d-2010-344939",
       "retrieval_note": "Public HTML response contained no sufficiently long extractable source body.",
-      "retrieved_at": "2026-10-19T03:51:02+00:00",
       "official_reference_status": "usable_official_reference",
-      "official_reference_decision": "pt-08"
+      "official_reference_decision": "pt-08",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted"
     },
     {
-      "id": "pt-07-código-do-procedimento-administrativo-(decreto-lei-n.º-4-2015)",
-      "title": "Código do Procedimento Administrativo (Decreto-Lei n.º 4/2015)",
-      "source_type": "administrative_procedure_legislation",
+      "id": "pt-09",
+      "title": "Portaria 13/2024, EU residence-document models",
+      "source_type": "free_movement_forms_amending_legislation",
       "language": "pt",
-      "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2015-105602322",
+      "url": "https://diariodarepublica.pt/dr/detalhe/portaria/13-2024-838326047",
+      "publisher_identifier": {
+        "system": "diariodarepublica.pt",
+        "record": "Portaria 13/2024, EU residence-document models"
+      },
+      "functional_relationship": "close_functional_match",
+      "verification_status": "Official source inspected",
+      "retrieval_status": "discovery_surface_no_text",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. Published 22 January 2024 and updates EU-citizen registration/permanent-certificate models. The DRE modification trail records staged effects in January/February 2024.",
+      "version_evidence": "Published 22 January 2024 and updates EU-citizen registration/permanent-certificate models. The DRE modification trail records staged effects in January/February 2024.",
+      "note": "Published 22 January 2024 and updates EU-citizen registration/permanent-certificate models. The DRE modification trail records staged effects in January/February 2024.",
+      "topic_ids": [
+        "forms",
+        "amendment"
+      ],
       "retrieved": true,
       "accepted": false,
-      "retrieval_status": "discovery_surface_no_text",
-      "topic_ids": [
-        "ADMIN-01",
-        "ADMIN-04",
-        "REMEDY-01",
-        "REMEDY-12"
-      ],
-      "scope_note": "Official consolidated working text; see dated monitor-register decision pt-13. DRE displayed in-force status and last alteration 2023-02-28; individual immigration applicability remains to be mapped.",
       "source_sha256": "0794abe5f8088cfd34e8e50bb5f9f7828b20a3c505f702e4b51be3bbb0631b57",
       "source_bytes": 2346,
-      "source_content_type": "text/html",
-      "raw_source_path": "temp/portugal/raw/pt-07-c-digo-do-procedimento-administrativo-decreto-lei-n-4-2015-0794abe5f8088cfd34e8e50bb5f9f7828b20a3c505f702e4b51be3bbb0631b57.html",
+      "resolved_url": "https://diariodarepublica.pt/dr/detalhe/portaria/13-2024-838326047",
+      "retrieval_note": "Public HTML response contained no sufficiently long extractable source body.",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-09",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted"
+    },
+    {
+      "id": "pt-10",
+      "title": "Law 23/2007, DRE consolidated record",
+      "source_type": "general_immigration_primary_legislation",
+      "language": "pt",
+      "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2007-67564445",
+      "publisher_identifier": {
+        "system": "diariodarepublica.pt",
+        "record": "Law 23/2007, foreign nationals regime"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official source inspected",
+      "retrieval_status": "discovery_surface_no_text",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. Broad entry, stay, removal and long-term-resident statute; it excludes EU/EEA and certain free-movement family cases except where expressly or subsidiarily applicable. Do not treat it as the Law 37/2006 route. A current full consolidated expression was not resolved in this pass. A DRE consolidated record was subsequently located and reviewed on 2026-10-21; see official reference decision pt-10. The original capture pass itself did not resolve this link.",
+      "version_evidence": "Broad entry, stay, removal and long-term-resident statute; it excludes EU/EEA and certain free-movement family cases except where expressly or subsidiarily applicable. Do not treat it as the Law 37/2006 route. A current full consolidated expression was not resolved in this pass. A DRE consolidated record was subsequently located and reviewed on 2026-10-21; see official reference decision pt-10. The original capture pass itself did not resolve this link.",
+      "note": "Broad entry, stay, removal and long-term-resident statute; it excludes EU/EEA and certain free-movement family cases except where expressly or subsidiarily applicable. Do not treat it as the Law 37/2006 route. A current full consolidated expression was not resolved in this pass. A DRE consolidated record was subsequently located and reviewed on 2026-10-21; see official reference decision pt-10. The original capture pass itself did not resolve this link.",
+      "topic_ids": [
+        "immigration",
+        "law",
+        "scope"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "0794abe5f8088cfd34e8e50bb5f9f7828b20a3c505f702e4b51be3bbb0631b57",
+      "source_bytes": 2346,
+      "resolved_url": "https://diariodarepublica.pt/dr/detalhe/lei/23-2007-635814",
+      "retrieval_note": "Public HTML response contained no sufficiently long extractable source body.",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-10",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted"
+    },
+    {
+      "id": "pt-11",
+      "title": "Decree Regulation 84/2007, DRE consolidated record",
+      "source_type": "general_immigration_implementing_regulation",
+      "language": "pt",
+      "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-regulamentar/2007-116373592",
+      "publisher_identifier": {
+        "system": "diariodarepublica.pt",
+        "record": "Decree Regulation 84/2007, current DRE consolidated record"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official source inspected",
+      "retrieval_status": "discovery_surface_no_text",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. Implements parts of Law 23/2007, including visas, residence permits, family reunification and procedural safeguards; DRE lists latest amendment 17 January 2024. Consolidated wording is not legally authoritative under DRE policy. The current consolidated URL was subsequently browser-reviewed on 2026-10-21 and is recorded as an accepted external reference; this original capture URL remains historical.",
+      "version_evidence": "Implements parts of Law 23/2007, including visas, residence permits, family reunification and procedural safeguards; DRE lists latest amendment 17 January 2024. Consolidated wording is not legally authoritative under DRE policy.",
+      "note": "Implements parts of Law 23/2007, including visas, residence permits, family reunification and procedural safeguards; DRE lists latest amendment 17 January 2024. Consolidated wording is not legally authoritative under DRE policy.",
+      "topic_ids": [
+        "immigration",
+        "regulation",
+        "versioning"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "0794abe5f8088cfd34e8e50bb5f9f7828b20a3c505f702e4b51be3bbb0631b57",
+      "source_bytes": 2346,
+      "resolved_url": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-regulamentar/2007-116373592-116371297",
+      "retrieval_note": "Public HTML response contained no sufficiently long extractable source body.",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-11",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted"
+    },
+    {
+      "id": "pt-12",
+      "title": "Decree-Law 4/2015, Administrative Procedure Code original",
+      "source_type": "administrative_procedure_primary_legislation",
+      "language": "pt",
+      "url": "https://diariodarepublica.pt/dr/detalhe/decreto-lei/4-2015-66041468",
+      "publisher_identifier": {
+        "system": "diariodarepublica.pt",
+        "record": "Decree-Law 4/2015, Administrative Procedure Code original"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official source inspected",
+      "retrieval_status": "discovery_surface_no_text",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. General administrative procedure, hearing, reasons, access and administrative review; special immigration rules may modify it. Preserve original publication and amendments.",
+      "version_evidence": "General administrative procedure, hearing, reasons, access and administrative review; special immigration rules may modify it. Preserve original publication and amendments.",
+      "note": "General administrative procedure, hearing, reasons, access and administrative review; special immigration rules may modify it. Preserve original publication and amendments.",
+      "topic_ids": [
+        "procedure",
+        "law"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "0794abe5f8088cfd34e8e50bb5f9f7828b20a3c505f702e4b51be3bbb0631b57",
+      "source_bytes": 2346,
       "resolved_url": "https://diariodarepublica.pt/dr/detalhe/decreto-lei/4-2015-66041468",
       "retrieval_note": "Public HTML response contained no sufficiently long extractable source body.",
-      "retrieved_at": "2026-10-19T03:51:03+00:00",
       "official_reference_status": "usable_official_reference",
-      "official_reference_decision": "pt-13"
+      "official_reference_decision": "pt-12",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted"
+    },
+    {
+      "id": "pt-13",
+      "title": "Administrative Procedure Code consolidated record",
+      "source_type": "administrative_procedure_consolidated_text",
+      "language": "pt",
+      "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2015-105602322",
+      "publisher_identifier": {
+        "system": "diariodarepublica.pt",
+        "record": "Administrative Procedure Code consolidated record"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official search result only",
+      "retrieval_status": "discovery_surface_no_text",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. Official DRE consolidated route identified. Capture the current edition and its cutoff; preserve DRE’s no-legal-value disclaimer. Check for a later consolidated edition, without reconstructing every amendment.",
+      "version_evidence": "Official DRE consolidated route identified. Capture the current edition and its cutoff; preserve DRE’s no-legal-value disclaimer. Check for a later consolidated edition, without reconstructing every amendment.",
+      "note": "Official DRE consolidated route identified. Capture the current edition and its cutoff; preserve DRE’s no-legal-value disclaimer. Check for a later consolidated edition, without reconstructing every amendment.",
+      "topic_ids": [
+        "procedure",
+        "versioning"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "0794abe5f8088cfd34e8e50bb5f9f7828b20a3c505f702e4b51be3bbb0631b57",
+      "source_bytes": 2346,
+      "resolved_url": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2015-105602322",
+      "retrieval_note": "Public HTML response contained no sufficiently long extractable source body.",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-13",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted"
+    },
+    {
+      "id": "pt-14",
+      "title": "Code of Procedure in Administrative Courts consolidated record",
+      "source_type": "administrative_court_procedure_legislation",
+      "language": "pt",
+      "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2002-34464475",
+      "publisher_identifier": {
+        "system": "diariodarepublica.pt",
+        "record": "Code of Procedure in Administrative Courts consolidated record"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official search result only",
+      "retrieval_status": "discovery_surface_no_text",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. CPTA provides judicial review and urgent proceedings. DRE search reports a later alteration on 6 August 2026; reconcile original acts, commencement and the current text.",
+      "version_evidence": "CPTA provides judicial review and urgent proceedings. DRE search reports a later alteration on 6 August 2026; reconcile original acts, commencement and the current text.",
+      "note": "CPTA provides judicial review and urgent proceedings. DRE search reports a later alteration on 6 August 2026; reconcile original acts, commencement and the current text.",
+      "topic_ids": [
+        "remedies",
+        "courts",
+        "versioning"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "0794abe5f8088cfd34e8e50bb5f9f7828b20a3c505f702e4b51be3bbb0631b57",
+      "source_bytes": 2346,
+      "resolved_url": "https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2002-34464475",
+      "retrieval_note": "Public HTML response contained no sufficiently long extractable source body.",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-14",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted"
+    },
+    {
+      "id": "pt-15",
+      "title": "Law 26/2016, access and reuse of administrative documents",
+      "source_type": "public_access_and_reuse_primary_legislation",
+      "language": "pt",
+      "url": "https://diariodarepublica.pt/dr/detalhe/lei/26-2016-75177807",
+      "publisher_identifier": {
+        "system": "diariodarepublica.pt",
+        "record": "Law 26/2016, access and reuse of administrative documents"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official source inspected",
+      "retrieval_status": "discovery_surface_no_text",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. Governs public access and reuse, with privacy, copyright and other exceptions. Online reuse generally does not need permission absent a contrary indication or clear copyright protection; attribution and no distortion conditions apply. This is not an API specification.",
+      "version_evidence": "Governs public access and reuse, with privacy, copyright and other exceptions. Online reuse generally does not need permission absent a contrary indication or clear copyright protection; attribution and no distortion conditions apply. This is not an API specification.",
+      "note": "Governs public access and reuse, with privacy, copyright and other exceptions. Online reuse generally does not need permission absent a contrary indication or clear copyright protection; attribution and no distortion conditions apply. This is not an API specification.",
+      "topic_ids": [
+        "access",
+        "reuse",
+        "law"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "0794abe5f8088cfd34e8e50bb5f9f7828b20a3c505f702e4b51be3bbb0631b57",
+      "source_bytes": 2346,
+      "resolved_url": "https://diariodarepublica.pt/dr/detalhe/lei/26-2016-75177807",
+      "retrieval_note": "Public HTML response contained no sufficiently long extractable source body.",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-15",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted"
+    },
+    {
+      "id": "pt-16",
+      "title": "Law 26/2016 consolidated record",
+      "source_type": "public_access_and_reuse_consolidated_text",
+      "language": "pt",
+      "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2016-106603618",
+      "publisher_identifier": {
+        "system": "diariodarepublica.pt",
+        "record": "Law 26/2016 consolidated record"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official source inspected",
+      "retrieval_status": "discovery_surface_no_text",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. DRE shows last alteration 26 August 2021. Reuse terms are constrained by data protection, copyright and publisher-specific notices; consolidated text is not legally authoritative under DRE policy.",
+      "version_evidence": "DRE shows last alteration 26 August 2021. Reuse terms are constrained by data protection, copyright and publisher-specific notices; consolidated text is not legally authoritative under DRE policy.",
+      "note": "DRE shows last alteration 26 August 2021. Reuse terms are constrained by data protection, copyright and publisher-specific notices; consolidated text is not legally authoritative under DRE policy.",
+      "topic_ids": [
+        "access",
+        "reuse",
+        "versioning"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "0794abe5f8088cfd34e8e50bb5f9f7828b20a3c505f702e4b51be3bbb0631b57",
+      "source_bytes": 2346,
+      "resolved_url": "https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2016-106603618",
+      "retrieval_note": "Public HTML response contained no sufficiently long extractable source body.",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-16",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted"
+    },
+    {
+      "id": "pt-17",
+      "title": "Law 68/2021, open data and public-sector information reuse",
+      "source_type": "open_data_and_reuse_legislation",
+      "language": "pt",
+      "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2021-170221049",
+      "publisher_identifier": {
+        "system": "diariodarepublica.pt",
+        "record": "Law 68/2021, open data and public-sector information reuse"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official source inspected",
+      "retrieval_status": "discovery_surface_no_text",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. Amends the national open-data/reuse framework. It supports a general reuse analysis but does not establish a DRE API, endpoint, schema, or unrestricted rights for every source.",
+      "version_evidence": "Amends the national open-data/reuse framework. It supports a general reuse analysis but does not establish a DRE API, endpoint, schema, or unrestricted rights for every source.",
+      "note": "Amends the national open-data/reuse framework. It supports a general reuse analysis but does not establish a DRE API, endpoint, schema, or unrestricted rights for every source.",
+      "topic_ids": [
+        "open_data",
+        "reuse"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "0794abe5f8088cfd34e8e50bb5f9f7828b20a3c505f702e4b51be3bbb0631b57",
+      "source_bytes": 2346,
+      "resolved_url": "https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2021-170221049",
+      "retrieval_note": "Public HTML response contained no sufficiently long extractable source body.",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-17",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted"
+    },
+    {
+      "id": "pt-18",
+      "title": "Law 34/2004, DRE consolidated record",
+      "source_type": "legal_aid_primary_legislation",
+      "language": "pt",
+      "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2004-34520575",
+      "publisher_identifier": {
+        "system": "diariodarepublica.pt",
+        "record": "Law 34/2004, access to law and courts"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official source inspected",
+      "retrieval_status": "discovery_surface_no_text",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. Primary legal-aid/access-to-justice statute, including cross-border legal-aid implementation. Current consolidated text and eligibility details need checking before operational use.",
+      "version_evidence": "Primary legal-aid/access-to-justice statute, including cross-border legal-aid implementation. Current consolidated text and eligibility details need checking before operational use.",
+      "note": "Primary legal-aid/access-to-justice statute, including cross-border legal-aid implementation. Current consolidated text and eligibility details need checking before operational use.",
+      "topic_ids": [
+        "legal_aid",
+        "remedies"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "0794abe5f8088cfd34e8e50bb5f9f7828b20a3c505f702e4b51be3bbb0631b57",
+      "source_bytes": 2346,
+      "resolved_url": "https://diariodarepublica.pt/dr/detalhe/lei/34-2004-502394",
+      "retrieval_note": "Public HTML response contained no sufficiently long extractable source body.",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-18",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted"
+    },
+    {
+      "id": "pt-19",
+      "title": "Portaria 10/2008, legal-aid implementation",
+      "source_type": "legal_aid_implementing_legislation",
+      "language": "pt",
+      "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/portaria/2008-70861360-71064175",
+      "publisher_identifier": {
+        "system": "diariodarepublica.pt",
+        "record": "Portaria 10/2008, legal-aid implementation"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official search result only",
+      "retrieval_status": "discovery_surface_no_text",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. Regulates Law 34/2004; DRE consolidated page identifies appointment and payment rules. Verify the current version and amendments against original acts.",
+      "version_evidence": "Regulates Law 34/2004; DRE consolidated page identifies appointment and payment rules. Verify the current version and amendments against original acts.",
+      "note": "Regulates Law 34/2004; DRE consolidated page identifies appointment and payment rules. Verify the current version and amendments against original acts.",
+      "topic_ids": [
+        "legal_aid",
+        "versioning"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "0794abe5f8088cfd34e8e50bb5f9f7828b20a3c505f702e4b51be3bbb0631b57",
+      "source_bytes": 2346,
+      "resolved_url": "https://diariodarepublica.pt/dr/legislacao-consolidada/portaria/2008-70861360-71064175",
+      "retrieval_note": "Public HTML response contained no sufficiently long extractable source body.",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-19",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted"
+    },
+    {
+      "id": "pt-20",
+      "title": "Resolution of Parliament 28/2008, Portugal-Andorra agreement",
+      "source_type": "bilateral_free_movement_treaty",
+      "language": "pt",
+      "url": "https://diariodarepublica.pt/dr/detalhe/resolucao-assembleia-republica/28-2008-456788",
+      "publisher_identifier": {
+        "system": "diariodarepublica.pt",
+        "record": "Resolution of Parliament 28/2008, Portugal-Andorra agreement"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official search result only",
+      "retrieval_status": "discovery_surface_no_text",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. Ratifies a bilateral Portugal-Andorra movement agreement. AIMA groups Andorra with EU/EEA/Swiss users operationally, but this is a separate legal basis and must not be mislabelled as EEA membership.",
+      "version_evidence": "Ratifies a bilateral Portugal-Andorra movement agreement. AIMA groups Andorra with EU/EEA/Swiss users operationally, but this is a separate legal basis and must not be mislabelled as EEA membership.",
+      "note": "Ratifies a bilateral Portugal-Andorra movement agreement. AIMA groups Andorra with EU/EEA/Swiss users operationally, but this is a separate legal basis and must not be mislabelled as EEA membership.",
+      "topic_ids": [
+        "andorra",
+        "scope",
+        "treaty"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "0794abe5f8088cfd34e8e50bb5f9f7828b20a3c505f702e4b51be3bbb0631b57",
+      "source_bytes": 2346,
+      "resolved_url": "https://diariodarepublica.pt/dr/detalhe/resolucao-assembleia-republica/28-2008-456788",
+      "retrieval_note": "Public HTML response contained no sufficiently long extractable source body.",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-20",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted"
+    },
+    {
+      "id": "pt-21",
+      "title": "AIMA EU nationals and family hub",
+      "source_type": "immigration_authority_guidance_index",
+      "language": "pt",
+      "url": "https://aima.gov.pt/pt/nacionais-ue-e-familiares",
+      "publisher_identifier": {
+        "system": "aima.gov.pt",
+        "record": "AIMA EU nationals and family hub"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official search result only",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. Current parent index for EU-national and family routes. Use it to rediscover subpages and portal instructions; direct AIMA pages were intermittently inaccessible in the research client.",
+      "version_evidence": "Current parent index for EU-national and family routes. Use it to rediscover subpages and portal instructions; direct AIMA pages were intermittently inaccessible in the research client.",
+      "note": "Current parent index for EU-national and family routes. Use it to rediscover subpages and portal instructions; direct AIMA pages were intermittently inaccessible in the research client.",
+      "topic_ids": [
+        "guidance",
+        "discovery"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_note": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>",
+      "human_review_site_offers": [
+        "pt-review-aima"
+      ],
+      "official_reference_status": "offered_for_human_site_review"
+    },
+    {
+      "id": "pt-22",
+      "title": "AIMA EU national registration certificate",
+      "source_type": "eu_citizen_residence_guidance",
+      "language": "pt",
+      "url": "https://aima.gov.pt/pt/nacionais-ue-e-familiares/nacionais-ue/certificado-de-registo-para-nacionais-ue",
+      "publisher_identifier": {
+        "system": "aima.gov.pt",
+        "record": "AIMA EU national registration certificate"
+      },
+      "functional_relationship": "close_functional_match",
+      "verification_status": "Official search result only",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. Describes registration after three months through the local Câmara Municipal, with a 30-day application window after the first three months. Current AIMA wording groups EEA, Swiss and Andorra; legal basis and treaty route differ.",
+      "version_evidence": "Describes registration after three months through the local Câmara Municipal, with a 30-day application window after the first three months. Current AIMA wording groups EEA, Swiss and Andorra; legal basis and treaty route differ.",
+      "note": "Describes registration after three months through the local Câmara Municipal, with a 30-day application window after the first three months. Current AIMA wording groups EEA, Swiss and Andorra; legal basis and treaty route differ.",
+      "topic_ids": [
+        "registration",
+        "municipal",
+        "guidance"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_note": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>",
+      "human_review_site_offers": [
+        "pt-review-aima"
+      ],
+      "official_reference_status": "offered_for_human_site_review"
+    },
+    {
+      "id": "pt-23",
+      "title": "AIMA residence card for non-EU family of EU national",
+      "source_type": "third_country_eu_family_residence_guidance",
+      "language": "pt",
+      "url": "https://aima.gov.pt/pt/nacionais-ue-e-familiares/familiares-de-nacionais-ue/cartao-de-residencia-para-familiares-de-nacionais-ue",
+      "publisher_identifier": {
+        "system": "aima.gov.pt",
+        "record": "AIMA residence card for non-EU family of EU national"
+      },
+      "functional_relationship": "close_functional_match",
+      "verification_status": "Official search result only",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. AIMA describes the third-country family residence card for stays beyond three months. Keep its application and appointment route distinct from a Union citizen’s municipal registration.",
+      "version_evidence": "AIMA describes the third-country family residence card for stays beyond three months. Keep its application and appointment route distinct from a Union citizen’s municipal registration.",
+      "note": "AIMA describes the third-country family residence card for stays beyond three months. Keep its application and appointment route distinct from a Union citizen’s municipal registration.",
+      "topic_ids": [
+        "family",
+        "residence_card",
+        "guidance"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_note": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-23",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted",
+      "monitor_candidate_archive_path": "candidates/public-data/portugal/candidates/pt-aima-eu-family-card.md",
+      "monitor_candidate_archive_sha256": "2dbe5fd6f4f74d6118ad2f3de4fa1fef85275b57e75e7dc1b7cee9c9a545c4ae"
+    },
+    {
+      "id": "pt-24",
+      "title": "AIMA permanent residence certificate for EU nationals",
+      "source_type": "eu_permanent_residence_guidance",
+      "language": "pt",
+      "url": "https://aima.gov.pt/pt/nacionais-ue-e-familiares/nacionais-ue/certificado-de-residencia-permanente-para-nacionais-ue",
+      "publisher_identifier": {
+        "system": "aima.gov.pt",
+        "record": "AIMA permanent residence certificate for EU nationals"
+      },
+      "functional_relationship": "close_functional_match",
+      "verification_status": "Official source inspected",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. AIMA says the certificate is available after five years of legal residence and current submissions go through the Portal de Renovações; contact-form requests through 30 June 2026 remain valid.",
+      "version_evidence": "AIMA says the certificate is available after five years of legal residence and current submissions go through the Portal de Renovações; contact-form requests through 30 June 2026 remain valid.",
+      "note": "AIMA says the certificate is available after five years of legal residence and current submissions go through the Portal de Renovações; contact-form requests through 30 June 2026 remain valid.",
+      "topic_ids": [
+        "permanent_residence",
+        "portal"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_note": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-24",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted"
+    },
+    {
+      "id": "pt-25",
+      "title": "AIMA permanent residence card for third-country EU family",
+      "source_type": "third_country_family_permanent_residence_guidance",
+      "language": "pt",
+      "url": "https://aima.gov.pt/pt/nacionais-ue-e-familiares/familiares-de-nacionais-ue/cartao-de-residencia-permanente-para-familiares-de-nacionais-da-ue",
+      "publisher_identifier": {
+        "system": "aima.gov.pt",
+        "record": "AIMA permanent residence card for third-country EU family"
+      },
+      "functional_relationship": "close_functional_match",
+      "verification_status": "Official source inspected",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. AIMA says this card is for third-country family members after five consecutive years and directs applications to the renewals portal from 1 July 2026.",
+      "version_evidence": "AIMA says this card is for third-country family members after five consecutive years and directs applications to the renewals portal from 1 July 2026.",
+      "note": "AIMA says this card is for third-country family members after five consecutive years and directs applications to the renewals portal from 1 July 2026.",
+      "topic_ids": [
+        "permanent_residence",
+        "family",
+        "portal"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_note": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-25",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted"
+    },
+    {
+      "id": "pt-26",
+      "title": "AIMA Portal de Renovações notice, permanent EU certificates/cards",
+      "source_type": "operational_channel_change_notice",
+      "language": "pt",
+      "url": "https://aima.gov.pt/pt/noticias/portal-de-renovacoes-certificados-e-cartoes-de-residencia-permanentes-de-nacionais-ue-e-familiares",
+      "publisher_identifier": {
+        "system": "aima.gov.pt",
+        "record": "AIMA Portal de Renovações notice, permanent EU certificates/cards"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official source inspected",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. AIMA says the portal channel began 1 July 2026, replacing the similar contact-form options for these permanent documents; previously submitted requests remain valid. Dated notice should be monitored with the current service pages.",
+      "version_evidence": "AIMA says the portal channel began 1 July 2026, replacing the similar contact-form options for these permanent documents; previously submitted requests remain valid. Dated notice should be monitored with the current service pages.",
+      "note": "AIMA says the portal channel began 1 July 2026, replacing the similar contact-form options for these permanent documents; previously submitted requests remain valid. Dated notice should be monitored with the current service pages.",
+      "topic_ids": [
+        "portal",
+        "channel_change"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_note": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-26",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted"
+    },
+    {
+      "id": "pt-27",
+      "title": "AIMA Portal de Renovações September update",
+      "source_type": "operational_portal_update",
+      "language": "pt",
+      "url": "https://aima.gov.pt/pt/noticias/portal-de-renovacoes-atualizado-para-nacionais-da-uniao-europeia-ue-e-familiares",
+      "publisher_identifier": {
+        "system": "aima.gov.pt",
+        "record": "AIMA Portal de Renovações September update"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official search result only",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. AIMA notice dated 15 September 2026 describes updated portal guidance for EU nationals and family. Portal behavior is mutable; parent-page rediscovery and direct recheck are required.",
+      "version_evidence": "AIMA notice dated 15 September 2026 describes updated portal guidance for EU nationals and family. Portal behavior is mutable; parent-page rediscovery and direct recheck are required.",
+      "note": "AIMA notice dated 15 September 2026 describes updated portal guidance for EU nationals and family. Portal behavior is mutable; parent-page rediscovery and direct recheck are required.",
+      "topic_ids": [
+        "portal",
+        "update"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_note": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>",
+      "human_review_site_offers": [
+        "pt-review-aima"
+      ],
+      "official_reference_status": "offered_for_human_site_review"
+    },
+    {
+      "id": "pt-28",
+      "title": "Gov.pt report of AIMA family-document requirements, 18 August 2026",
+      "source_type": "family_document_checklist_notice",
+      "language": "pt",
+      "url": "https://www.gov.pt/noticias/documentos-necessarios-para-familiares-de-cidadaos-da-ue",
+      "publisher_identifier": {
+        "system": "www.gov.pt",
+        "record": "Gov.pt report of AIMA family-document requirements, 18 August 2026"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official source inspected",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. Government news relays AIMA requirements for proof of family relationship and minors. It is a dated notice, not a complete or permanent checklist; verify current AIMA requirements before use.",
+      "version_evidence": "Government news relays AIMA requirements for proof of family relationship and minors. It is a dated notice, not a complete or permanent checklist; verify current AIMA requirements before use.",
+      "note": "Government news relays AIMA requirements for proof of family relationship and minors. It is a dated notice, not a complete or permanent checklist; verify current AIMA requirements before use.",
+      "topic_ids": [
+        "family",
+        "documents",
+        "dated_notice"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "2509af77f75d8b1fc9bcca1e8e7fadb0d111626a0966c7b9f50dbd9b4099d781",
+      "converted_sha256": "3b8c85548c3918fcdd81194a234f9179d89c4b72cb0bbf9f95211e5a83a2319e",
+      "source_bytes": 32977,
+      "resolved_url": "https://www.gov.pt/noticias/documentos-necessarios-para-familiares-de-cidadaos-da-ue",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-28",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted",
+      "monitor_candidate_archive_path": "candidates/public-data/portugal/monitor-candidates/pt-28.md",
+      "monitor_candidate_archive_sha256": "32f503d0d54d193e006818ee1bf0cc14a1d7bf3656cdfc7eafc281e886a51eec",
+      "monitor_candidate_archive_bytes": 2874,
+      "review_artifact_status": "archived_unaccepted"
+    },
+    {
+      "id": "pt-29",
+      "title": "Gov.pt EU registration service page (warns it may be outdated)",
+      "source_type": "legacy_service_page",
+      "language": "en",
+      "url": "https://www.gov.pt/en/servicos/pedir-o-certificado-de-registo-para-cidadao-da-ue-eee-suica",
+      "publisher_identifier": {
+        "system": "www.gov.pt",
+        "record": "Gov.pt EU registration service page (warns it may be outdated)"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official source inspected",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. The service page explicitly warns that it may be outdated and directs users to AIMA. It groups UE/EEA/Swiss/Andorra and has a 1 June 2026 update stamp; use only as a stale-route comparison.",
+      "version_evidence": "The service page explicitly warns that it may be outdated and directs users to AIMA. It groups UE/EEA/Swiss/Andorra and has a 1 June 2026 update stamp; use only as a stale-route comparison.",
+      "note": "The service page explicitly warns that it may be outdated and directs users to AIMA. It groups UE/EEA/Swiss/Andorra and has a 1 June 2026 update stamp; use only as a stale-route comparison.",
+      "topic_ids": [
+        "stale_guidance",
+        "registration"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_note": "TimeoutError: The read operation timed out",
+      "official_reference_status": "not_relied_upon_for_current_procedure",
+      "official_reference_decision": null,
+      "not_relied_upon_reason": "The page itself warns it may be outdated and directs users to AIMA. Retained only as a legacy-route record.",
+      "accepted_external_reference": false,
+      "local_copy_status": "unaccepted"
+    },
+    {
+      "id": "pt-30",
+      "title": "Gov.pt permanent EU residence certificate page (warns it may be outdated)",
+      "source_type": "legacy_service_page",
+      "language": "pt",
+      "url": "https://www.gov.pt/servicos/pedir-o-certificado-de-residencia-permanente-para-cidadao-da-ue-eee-suica",
+      "publisher_identifier": {
+        "system": "www.gov.pt",
+        "record": "Gov.pt permanent EU residence certificate page (warns it may be outdated)"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official source inspected",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. The page warns it may be out of date and redirects users to AIMA despite a June 2026 stamp. Current route is Portal de Renovações; retain as a stale-source detection example.",
+      "version_evidence": "The page warns it may be out of date and redirects users to AIMA despite a June 2026 stamp. Current route is Portal de Renovações; retain as a stale-source detection example.",
+      "note": "The page warns it may be out of date and redirects users to AIMA despite a June 2026 stamp. Current route is Portal de Renovações; retain as a stale-source detection example.",
+      "topic_ids": [
+        "stale_guidance",
+        "permanent_residence"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_note": "TimeoutError: The read operation timed out",
+      "official_reference_status": "not_relied_upon_for_current_procedure",
+      "official_reference_decision": null,
+      "not_relied_upon_reason": "The page itself warns it may be outdated and directs users to AIMA. Retained only as a legacy-route comparison; do not rely on contact or submission instructions.",
+      "accepted_external_reference": false,
+      "local_copy_status": "unaccepted"
+    },
+    {
+      "id": "pt-31",
+      "title": "Gov.pt EU-family residence card service",
+      "source_type": "third_country_family_service_page",
+      "language": "pt",
+      "url": "https://www.gov.pt/servicos/pedir-o-cartao-de-residencia-para-o-cidadao-de-estado-terceiro-familiar-de-nacional-da-ue-eee-suica",
+      "publisher_identifier": {
+        "system": "www.gov.pt",
+        "record": "Gov.pt EU-family residence card service"
+      },
+      "functional_relationship": "close_functional_match",
+      "verification_status": "Official search result only",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. Service page outlines the third-country family card after more than three months. Check AIMA for current forms, contact/portal steps and country-specific legal scope.",
+      "version_evidence": "Service page outlines the third-country family card after more than three months. Check AIMA for current forms, contact/portal steps and country-specific legal scope.",
+      "note": "Service page outlines the third-country family card after more than three months. Check AIMA for current forms, contact/portal steps and country-specific legal scope.",
+      "topic_ids": [
+        "family",
+        "service"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "25abc73ecdfc6393a31107c54ce0743832507ebae1ad5128b246a51b5c3d2168",
+      "converted_sha256": "a29a780f69d34b37abf3f5bf5f6220b8f7bfaaab3e2651659258580e1492fc29",
+      "source_bytes": 37557,
+      "resolved_url": "https://www.gov.pt/servicos/pedir-o-cartao-de-residencia-para-o-cidadao-de-estado-terceiro-familiar-de-nacional-da-ue-eee-suica",
+      "official_reference_status": "not_relied_upon_for_current_procedure",
+      "official_reference_decision": null,
+      "not_relied_upon_reason": "The service page explicitly says it may be outdated and directs readers to AIMA. Retain only as a legacy-route comparison; the current AIMA residence-card page is the accepted locator for that service. Do not rely on the Gov.pt page for current forms, contact, appointment or filing instructions.",
+      "accepted_external_reference": false,
+      "local_copy_status": "unaccepted",
+      "monitor_candidate_archive_path": "candidates/public-data/portugal/monitor-candidates/pt-31.md",
+      "monitor_candidate_archive_sha256": "e1d4392ed6cf3f20e3852b79ad3c7a10c46eb3d2d31d21794cefc7171ed4b62b",
+      "monitor_candidate_archive_bytes": 3504,
+      "review_artifact_status": "archived_unaccepted"
+    },
+    {
+      "id": "pt-32",
+      "title": "Gov.pt guide: entering and leaving Portugal",
+      "source_type": "entry_and_family_visa_guidance",
+      "language": "pt",
+      "url": "https://www.gov.pt/guias/entrar-e-sair-de-portugal",
+      "publisher_identifier": {
+        "system": "www.gov.pt",
+        "record": "Gov.pt guide: entering and leaving Portugal"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Official source inspected",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. Updated 30 April 2026. Covers EU citizens and third-country family entry, including visa facilitation and valid residence cards; it is entry guidance, not the residence-registration procedure.",
+      "version_evidence": "Updated 30 April 2026. Covers EU citizens and third-country family entry, including visa facilitation and valid residence cards; it is entry guidance, not the residence-registration procedure.",
+      "note": "Updated 30 April 2026. Covers EU citizens and third-country family entry, including visa facilitation and valid residence cards; it is entry guidance, not the residence-registration procedure.",
+      "topic_ids": [
+        "entry",
+        "visa",
+        "family"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "5e9976fb5d3443d12d3a3deefbe826e41ea56cb223124322d0cdfb832328def3",
+      "converted_sha256": "740d27cd4f01a3a00f893fb841bedf9245c0bfd9da71bb3ca69dc0d3e007d9e4",
+      "source_bytes": 37913,
+      "resolved_url": "https://www.gov.pt/guias/entrar-e-sair-de-portugal",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-32",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted",
+      "monitor_candidate_archive_path": "candidates/public-data/portugal/monitor-candidates/pt-32.md",
+      "monitor_candidate_archive_sha256": "00d546419d761e979ad63bddaa68d74daaee3479e044e4f805893d77828320c4",
+      "monitor_candidate_archive_bytes": 5568,
+      "review_artifact_status": "archived_unaccepted"
+    },
+    {
+      "id": "pt-33",
+      "title": "Gov.pt short-stay Schengen visa service",
+      "source_type": "short_stay_visa_service",
+      "language": "pt",
+      "url": "https://www.gov.pt/servicos/pedir-um-visto-schengen-de-curta-duracao",
+      "publisher_identifier": {
+        "system": "www.gov.pt",
+        "record": "Gov.pt short-stay Schengen visa service"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official source inspected",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. Updated 21 May 2026. General Schengen visa service with an EU/EEA/Swiss exclusion; identify any derivative-family facilitation separately from standard visa applicants.",
+      "version_evidence": "Updated 21 May 2026. General Schengen visa service with an EU/EEA/Swiss exclusion; identify any derivative-family facilitation separately from standard visa applicants.",
+      "note": "Updated 21 May 2026. General Schengen visa service with an EU/EEA/Swiss exclusion; identify any derivative-family facilitation separately from standard visa applicants.",
+      "topic_ids": [
+        "visa",
+        "short_stay"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_note": "TimeoutError: The read operation timed out",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-33",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted"
+    },
+    {
+      "id": "pt-34",
+      "title": "Gov.pt family reunification residence visa service",
+      "source_type": "national_family_reunification_service",
+      "language": "pt",
+      "url": "https://www.gov.pt/servicos/pedir-um-visto-de-residencia-para-reagrupamento-familiar",
+      "publisher_identifier": {
+        "system": "www.gov.pt",
+        "record": "Gov.pt family reunification residence visa service"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official source inspected",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. This is the national family-reunification route for families of residents with a national residence permit, not the Law 37/2006 EU-family route. The page itself warns it may be outdated and points to MNE.",
+      "version_evidence": "This is the national family-reunification route for families of residents with a national residence permit, not the Law 37/2006 EU-family route. The page itself warns it may be outdated and points to MNE.",
+      "note": "This is the national family-reunification route for families of residents with a national residence permit, not the Law 37/2006 EU-family route. The page itself warns it may be outdated and points to MNE.",
+      "topic_ids": [
+        "family",
+        "visa",
+        "route_boundary"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_note": "TimeoutError: The read operation timed out",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-34",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted"
+    },
+    {
+      "id": "pt-35",
+      "title": "MNE visa guidance: family members of Portuguese/EU/EEA/Swiss citizens",
+      "source_type": "consular_family_visa_guidance",
+      "language": "en",
+      "url": "https://vistos.mne.gov.pt/en/short-stay-visas-schengen/family-members-of-portuguese-citizens-eu-eee-switzerland",
+      "publisher_identifier": {
+        "system": "vistos.mne.gov.pt",
+        "record": "MNE visa guidance: family members of Portuguese/EU/EEA/Swiss citizens"
+      },
+      "functional_relationship": "close_functional_match",
+      "verification_status": "Official search result only",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. MNE route is separately linked from mission application guidance; verify current nationality/mission requirements and free-movement scope at the MNE parent before relying on it.",
+      "version_evidence": "MNE route is separately linked from mission application guidance; verify current nationality/mission requirements and free-movement scope at the MNE parent before relying on it.",
+      "note": "MNE route is separately linked from mission application guidance; verify current nationality/mission requirements and free-movement scope at the MNE parent before relying on it.",
+      "topic_ids": [
+        "visa",
+        "family",
+        "consular"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "be52e3d76c90a9278bb463b913d7e198ea4662323fede40dd2ea5b39be6543df",
+      "converted_sha256": "d4c63bc23c74b91a83e106f278e90193cc0e946465c70af88a20f5d7620e60b3",
+      "source_bytes": 44436,
+      "resolved_url": "https://vistos.mne.gov.pt/en/short-stay-visas-schengen/family-members-of-portuguese-citizens-eu-eee-switzerland",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-35",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted",
+      "monitor_candidate_archive_path": "candidates/public-data/portugal/monitor-candidates/pt-35.md",
+      "monitor_candidate_archive_sha256": "ddeada23bed2ac59f9d0521bd7f5996f8e7c8526e2b258a3116f1c050ec6eea8",
+      "monitor_candidate_archive_bytes": 6016,
+      "review_artifact_status": "archived_unaccepted"
+    },
+    {
+      "id": "pt-36",
+      "title": "MNE national visa information portal",
+      "source_type": "visa_authority_guidance_index",
+      "language": "pt",
+      "url": "https://vistos.mne.gov.pt/en/",
+      "publisher_identifier": {
+        "system": "vistos.mne.gov.pt",
+        "record": "MNE national visa information portal"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official source inspected",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. Central MNE visa portal for category guidance. Mission-specific instructions and representation arrangements can differ and should be discovered from current parent pages.",
+      "version_evidence": "Central MNE visa portal for category guidance. Mission-specific instructions and representation arrangements can differ and should be discovered from current parent pages.",
+      "note": "Central MNE visa portal for category guidance. Mission-specific instructions and representation arrangements can differ and should be discovered from current parent pages.",
+      "topic_ids": [
+        "visa",
+        "discovery"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "59818360cdfbfd37b16a682299c28797939b25d81189e728a6fda3796db7f585",
+      "converted_sha256": "afd82d9c1b681b724167cbac91ef0196fdcb0d40a8d1fd98ce253154e14a6f2d",
+      "source_bytes": 45169,
+      "resolved_url": "https://vistos.mne.gov.pt/en/",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-36",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted",
+      "monitor_candidate_archive_path": "candidates/public-data/portugal/monitor-candidates/pt-36.md",
+      "monitor_candidate_archive_sha256": "82bf831c50834e75726de0f2bd5f25d6c73544b390567016eb06e837ca9a3e27",
+      "monitor_candidate_archive_bytes": 4655,
+      "review_artifact_status": "archived_unaccepted"
+    },
+    {
+      "id": "pt-37",
+      "title": "MNE e-Konsulado visa application service",
+      "source_type": "consular_application_service",
+      "language": "pt",
+      "url": "https://pedidodevistos.mne.gov.pt/VistosOnline/",
+      "publisher_identifier": {
+        "system": "pedidodevistos.mne.gov.pt",
+        "record": "MNE e-Konsulado visa application service"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official source inspected",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. Interactive application/appointment service; workflow and eligibility are dynamic and should not be scraped as a fixed legal text. Route to the responsible mission and current checklist.",
+      "version_evidence": "Interactive application/appointment service; workflow and eligibility are dynamic and should not be scraped as a fixed legal text. Route to the responsible mission and current checklist.",
+      "note": "Interactive application/appointment service; workflow and eligibility are dynamic and should not be scraped as a fixed legal text. Route to the responsible mission and current checklist.",
+      "topic_ids": [
+        "visa",
+        "application"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-37",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted"
+    },
+    {
+      "id": "pt-38",
+      "title": "MNE consular network directory",
+      "source_type": "consular_mission_directory",
+      "language": "pt",
+      "url": "https://portaldascomunidades.mne.gov.pt/pt/rede-consular",
+      "publisher_identifier": {
+        "system": "portaldascomunidades.mne.gov.pt",
+        "record": "MNE consular network directory"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official search result only",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. Parent directory for consular posts. Mission-level jurisdiction, appointment channels, local document rules and external service providers vary; directory alone does not prove complete mission practice.",
+      "version_evidence": "Parent directory for consular posts. Mission-level jurisdiction, appointment channels, local document rules and external service providers vary; directory alone does not prove complete mission practice.",
+      "note": "Parent directory for consular posts. Mission-level jurisdiction, appointment channels, local document rules and external service providers vary; directory alone does not prove complete mission practice.",
+      "topic_ids": [
+        "missions",
+        "discovery"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "dd1f6ad178e30e66f712c058e79e0dc4e91459c691d74e6f7a87ac2c3bd09e46",
+      "converted_sha256": "157ac9ea158585c58b9e37056f805add5938136c3c7b2649b69c95ea2d3f1636",
+      "source_bytes": 134031,
+      "resolved_url": "https://portaldascomunidades.mne.gov.pt/pt/rede-consular",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-38",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted",
+      "monitor_candidate_archive_path": "candidates/public-data/portugal/monitor-candidates/pt-38.md",
+      "monitor_candidate_archive_sha256": "df9af59d0359eb1ef649d3fdfca9e1cd45bb9423db478b1aba8d6cf3113cfb39",
+      "monitor_candidate_archive_bytes": 9460,
+      "review_artifact_status": "archived_unaccepted"
+    },
+    {
+      "id": "pt-39",
+      "title": "AIMA clarification: EU registration vs family cards",
+      "source_type": "authority_route_clarification",
+      "language": "pt",
+      "url": "https://aima.gov.pt/pt/noticias/esclarecimento-2",
+      "publisher_identifier": {
+        "system": "aima.gov.pt",
+        "record": "AIMA clarification: EU registration vs family cards"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official search result only",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. AIMA clarification dated 24 October 2025 states EU-national certificates are issued by municipalities and third-country family residence cards are handled by AIMA. Recheck against 2026 portal notices.",
+      "version_evidence": "AIMA clarification dated 24 October 2025 states EU-national certificates are issued by municipalities and third-country family residence cards are handled by AIMA. Recheck against 2026 portal notices.",
+      "note": "AIMA clarification dated 24 October 2025 states EU-national certificates are issued by municipalities and third-country family residence cards are handled by AIMA. Recheck against 2026 portal notices.",
+      "topic_ids": [
+        "registration",
+        "authority",
+        "route_boundary"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_note": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>",
+      "human_review_site_offers": [
+        "pt-review-aima"
+      ],
+      "official_reference_status": "offered_for_human_site_review"
+    },
+    {
+      "id": "pt-40",
+      "title": "CNPD right of access to personal data",
+      "source_type": "data_protection_rights_guidance",
+      "language": "pt",
+      "url": "https://www.cnpd.pt/cidadaos/direitos/direito-de-acesso-aos-dados/",
+      "publisher_identifier": {
+        "system": "www.cnpd.pt",
+        "record": "CNPD right of access to personal data"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official source inspected",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. Explains access rights under GDPR and Law 59/2019, response timing, and complaint route when rights are not respected. Data-subject material is not public bulk data.",
+      "version_evidence": "Explains access rights under GDPR and Law 59/2019, response timing, and complaint route when rights are not respected. Data-subject material is not public bulk data.",
+      "note": "Explains access rights under GDPR and Law 59/2019, response timing, and complaint route when rights are not respected. Data-subject material is not public bulk data.",
+      "topic_ids": [
+        "privacy",
+        "access"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "84134b5c5f5d8b7b0cb85d5a2cf606265863a48d0b79ffb558d425c992c9f296",
+      "converted_sha256": "05ff44e771f9551e82fb54929221cfc54ea607ec881a095d0cd4e862afafc0ae",
+      "source_bytes": 23466,
+      "resolved_url": "https://www.cnpd.pt/cidadaos/direitos/direito-de-acesso-aos-dados/",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-40",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted",
+      "monitor_candidate_archive_path": "candidates/public-data/portugal/monitor-candidates/pt-40.md",
+      "monitor_candidate_archive_sha256": "d3e813935e03b391e7b6f8498c7325ce2868adba4ac0c64df0af56fe953bd871",
+      "monitor_candidate_archive_bytes": 5118,
+      "review_artifact_status": "archived_unaccepted"
+    },
+    {
+      "id": "pt-41",
+      "title": "CNPD Schengen Information System rights",
+      "source_type": "sis_rights_and_remedy_guidance",
+      "language": "pt",
+      "url": "https://www.cnpd.pt/cidadaos/direitos/direitos-schengen/",
+      "publisher_identifier": {
+        "system": "www.cnpd.pt",
+        "record": "CNPD Schengen Information System rights"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official source inspected",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. Portugal routes SIS access/rectification/erasure through Gabinete Nacional SIRENE under Decree-Law 122/2021; CNPD receives complaints if rights were not secured. Different from VIS procedures.",
+      "version_evidence": "Portugal routes SIS access/rectification/erasure through Gabinete Nacional SIRENE under Decree-Law 122/2021; CNPD receives complaints if rights were not secured. Different from VIS procedures.",
+      "note": "Portugal routes SIS access/rectification/erasure through Gabinete Nacional SIRENE under Decree-Law 122/2021; CNPD receives complaints if rights were not secured. Different from VIS procedures.",
+      "topic_ids": [
+        "privacy",
+        "sis",
+        "remedies"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "a30655edac27f46db0acbb42fffec06e1fa304ccc524a9db2368b692c10354cc",
+      "converted_sha256": "9fb34b011c8f55404d72c3ccb035be3c7f2b4fabecea042269d86d94fc4eefa9",
+      "source_bytes": 25710,
+      "resolved_url": "https://www.cnpd.pt/cidadaos/direitos/direitos-schengen/",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-41",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted",
+      "monitor_candidate_archive_path": "candidates/public-data/portugal/monitor-candidates/pt-41.md",
+      "monitor_candidate_archive_sha256": "7a3838dec4ab9a8e32e6c7081feb2beed092332ed398df88d2a048feeedfd2e4",
+      "monitor_candidate_archive_bytes": 5829,
+      "review_artifact_status": "archived_unaccepted"
+    },
+    {
+      "id": "pt-42",
+      "title": "CNPD Visa Information System rights",
+      "source_type": "vis_rights_guidance",
+      "language": "pt",
+      "url": "https://www.cnpd.pt/cidadaos/direitos/direitos-do-vis/",
+      "publisher_identifier": {
+        "system": "www.cnpd.pt",
+        "record": "CNPD Visa Information System rights"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official source inspected",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. Describes VIS rights and identifies multiple competent Portuguese authorities. Keep this distinct from the SIS/SIRENE route; forms and authority assignments need periodic review.",
+      "version_evidence": "Describes VIS rights and identifies multiple competent Portuguese authorities. Keep this distinct from the SIS/SIRENE route; forms and authority assignments need periodic review.",
+      "note": "Describes VIS rights and identifies multiple competent Portuguese authorities. Keep this distinct from the SIS/SIRENE route; forms and authority assignments need periodic review.",
+      "topic_ids": [
+        "privacy",
+        "vis",
+        "visa"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "cb9c2c6aa13ebfa3e2e4c735062a1d24424f1b88d1be883bd386fbcf1f57e34b",
+      "converted_sha256": "e0099459b9a449d2526934dad1e3619658c55b0b4733299e89022917dd996cae",
+      "source_bytes": 25081,
+      "resolved_url": "https://www.cnpd.pt/cidadaos/direitos/direitos-do-vis/",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-42",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted",
+      "monitor_candidate_archive_path": "candidates/public-data/portugal/monitor-candidates/pt-42.md",
+      "monitor_candidate_archive_sha256": "fa026cc8af3ead9c6bb3265672f63cdbdd776fe17fd4f843f9a7eb36a0ece987",
+      "monitor_candidate_archive_bytes": 5590,
+      "review_artifact_status": "archived_unaccepted"
+    },
+    {
+      "id": "pt-43",
+      "title": "CNPD public service and complaint channel",
+      "source_type": "data_protection_complaint_channel",
+      "language": "pt",
+      "url": "https://www.cnpd.pt/cnpd/atendimento-ao-publico/",
+      "publisher_identifier": {
+        "system": "www.cnpd.pt",
+        "record": "CNPD public service and complaint channel"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official source inspected",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. Current CNPD public atendimento/complaint parent. It directs users to a form and describes limited in-person exceptions; forms/channels can change.",
+      "version_evidence": "Current CNPD public atendimento/complaint parent. It directs users to a form and describes limited in-person exceptions; forms/channels can change.",
+      "note": "Current CNPD public atendimento/complaint parent. It directs users to a form and describes limited in-person exceptions; forms/channels can change.",
+      "topic_ids": [
+        "privacy",
+        "complaints"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "d9d90472e3bd7d9f0f82707ee3e94999808aa8c466d9520196277620f4875f48",
+      "converted_sha256": "762450327a7390503556bc2f62033ece45cce931bbc1b77ea2df90a552aff58f",
+      "source_bytes": 18784,
+      "resolved_url": "https://www.cnpd.pt/cnpd/atendimento-ao-publico/",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-43",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted",
+      "monitor_candidate_archive_path": "candidates/public-data/portugal/monitor-candidates/pt-43.md",
+      "monitor_candidate_archive_sha256": "0d59054abc915aaf6d3dd33e9f53a13fc51e3844ae4deb4140a6ee117ca1efe0",
+      "monitor_candidate_archive_bytes": 3284,
+      "review_artifact_status": "archived_unaccepted"
+    },
+    {
+      "id": "pt-44",
+      "title": "Provedor de Justiça FAQ: who may complain",
+      "source_type": "ombudsman_complaint_guidance",
+      "language": "pt",
+      "url": "https://www.provedor-jus.pt/quem-somos/perguntas-frequentes/",
+      "publisher_identifier": {
+        "system": "www.provedor-jus.pt",
+        "record": "Provedor de Justiça FAQ: who may complain"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official source inspected",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. States Portuguese, foreign and stateless persons can complain about public-authority acts or omissions; free and no lawyer required. Ombudsman recommendations are not binding judgments.",
+      "version_evidence": "States Portuguese, foreign and stateless persons can complain about public-authority acts or omissions; free and no lawyer required. Ombudsman recommendations are not binding judgments.",
+      "note": "States Portuguese, foreign and stateless persons can complain about public-authority acts or omissions; free and no lawyer required. Ombudsman recommendations are not binding judgments.",
+      "topic_ids": [
+        "ombudsman",
+        "remedies"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "908d99221f375a69ec9dfe61cf0d1ed33e00bd98eb966215771c1beb9e9faaa2",
+      "converted_sha256": "6f0a732ae63ece7317a5197068715ce9dee3558f0f9316bf33bdd8e5ec12820f",
+      "source_bytes": 122852,
+      "resolved_url": "https://www.provedor-jus.pt/quem-somos/perguntas-frequentes/",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-44",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted",
+      "monitor_candidate_archive_path": "candidates/public-data/portugal/monitor-candidates/pt-44.md",
+      "monitor_candidate_archive_sha256": "ef4f8581637afb2c1394793e8d2270de96c3fcab2b02dea211f06a1c4cdecc16",
+      "monitor_candidate_archive_bytes": 8145,
+      "review_artifact_status": "archived_unaccepted"
+    },
+    {
+      "id": "pt-45",
+      "title": "Provedor de Justiça: how to submit a complaint",
+      "source_type": "ombudsman_complaint_channel",
+      "language": "pt",
+      "url": "https://www.provedor-jus.pt/quem-somos/perguntas-frequentes/como-apresentar-queixa/",
+      "publisher_identifier": {
+        "system": "www.provedor-jus.pt",
+        "record": "Provedor de Justiça: how to submit a complaint"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official source inspected",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. Lists written/oral and online contact routes and what a complaint should contain. Check the live form link and channel at submission time.",
+      "version_evidence": "Lists written/oral and online contact routes and what a complaint should contain. Check the live form link and channel at submission time.",
+      "note": "Lists written/oral and online contact routes and what a complaint should contain. Check the live form link and channel at submission time.",
+      "topic_ids": [
+        "ombudsman",
+        "complaints"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "bdd295a218326526e1b3eaa73fda50069e76d6fccab943a3f1f9933de5d66f4e",
+      "converted_sha256": "cfe5f3eb470f16c625b0f734b9fad218cb11d2b244e7063477e845b88cc9b9a8",
+      "source_bytes": 110934,
+      "resolved_url": "https://www.provedor-jus.pt/quem-somos/perguntas-frequentes/como-apresentar-queixa/",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-45",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted",
+      "monitor_candidate_archive_path": "candidates/public-data/portugal/monitor-candidates/pt-45.md",
+      "monitor_candidate_archive_sha256": "6ebc89a497156e0081be50f7cb90460b7249654ac5ebea485c12a1a9cc62137d",
+      "monitor_candidate_archive_bytes": 5578,
+      "review_artifact_status": "archived_unaccepted"
+    },
+    {
+      "id": "pt-46",
+      "title": "Provedor de Justiça statute and remit",
+      "source_type": "ombudsman_oversight_legislation",
+      "language": "pt",
+      "url": "https://www.provedor-jus.pt/quem-somos/legislacao-base/estatuto-do-provedor-de-justica/",
+      "publisher_identifier": {
+        "system": "www.provedor-jus.pt",
+        "record": "Provedor de Justiça statute and remit"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official source inspected",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. Official statutory page states broad public-administration oversight, citizen complaints and no direct decision-making power. Preserve the enacted statute and amendments as legal authority.",
+      "version_evidence": "Official statutory page states broad public-administration oversight, citizen complaints and no direct decision-making power. Preserve the enacted statute and amendments as legal authority.",
+      "note": "Official statutory page states broad public-administration oversight, citizen complaints and no direct decision-making power. Preserve the enacted statute and amendments as legal authority.",
+      "topic_ids": [
+        "ombudsman",
+        "law"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "51bf26bae90f74c1569655580afb28b43fc030a3ea322ef7dfb0120230567a16",
+      "converted_sha256": "47e70ebe44883734bc11fd99467b5a280f50453629af5d03e636092b0f0e5f56",
+      "source_bytes": 139290,
+      "resolved_url": "https://www.provedor-jus.pt/quem-somos/legislacao-base/estatuto-do-provedor-de-justica/",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-46",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted",
+      "monitor_candidate_archive_path": "candidates/public-data/portugal/monitor-candidates/pt-46.md",
+      "monitor_candidate_archive_sha256": "6fd642dd989cfaacb373d51547b657802b283a01cd0ebc3b2065fcc693198817",
+      "monitor_candidate_archive_bytes": 28031,
+      "review_artifact_status": "archived_unaccepted"
+    },
+    {
+      "id": "pt-47",
+      "title": "CADA official portal",
+      "source_type": "administrative_access_oversight_portal",
+      "language": "pt",
+      "url": "https://www.cada.pt/",
+      "publisher_identifier": {
+        "system": "www.cada.pt",
+        "record": "CADA official portal"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official source inspected",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. CADA publishes legislation, opinions, case law, FAQs and contact routes for access/reuse matters. Opinions are selected oversight outputs, not a complete source of administrative practice.",
+      "version_evidence": "CADA publishes legislation, opinions, case law, FAQs and contact routes for access/reuse matters. Opinions are selected oversight outputs, not a complete source of administrative practice.",
+      "note": "CADA publishes legislation, opinions, case law, FAQs and contact routes for access/reuse matters. Opinions are selected oversight outputs, not a complete source of administrative practice.",
+      "topic_ids": [
+        "access",
+        "oversight"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "11aa6b33fea57963813a5e83d86ce2322a6776f33b63f1c78d203e81a31f057e",
+      "converted_sha256": "77e180939ac7f55e0638fa7825b0208f50a4372810a0811feedca4a8820f8fb2",
+      "source_bytes": 33691,
+      "resolved_url": "https://www.cada.pt/",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-47",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted",
+      "monitor_candidate_archive_path": "candidates/public-data/portugal/monitor-candidates/pt-47.md",
+      "monitor_candidate_archive_sha256": "f3623c1ba427204b46518f7c1840c686ef23c4cb7565607b30314b0d95c7f669",
+      "monitor_candidate_archive_bytes": 1384,
+      "review_artifact_status": "archived_unaccepted"
+    },
+    {
+      "id": "pt-48",
+      "title": "CADA contact route",
+      "source_type": "administrative_access_complaint_channel",
+      "language": "pt",
+      "url": "https://www.cada.pt/contactos",
+      "publisher_identifier": {
+        "system": "www.cada.pt",
+        "record": "CADA contact route"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official source inspected",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. Official contact page is a parent route; the applicable complaint process depends on a written LADA access request or written refusal and the statutory procedure.",
+      "version_evidence": "Official contact page is a parent route; the applicable complaint process depends on a written LADA access request or written refusal and the statutory procedure.",
+      "note": "Official contact page is a parent route; the applicable complaint process depends on a written LADA access request or written refusal and the statutory procedure.",
+      "topic_ids": [
+        "access",
+        "complaints"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "6bcfa670f2d28fa9967bd8649b65e0b069f79542a0f715a31a51dcfa51bb67b2",
+      "converted_sha256": "e4813992021c77f32328765cf44639fe627e819e00e59c16f092dcca69b260a3",
+      "source_bytes": 28392,
+      "resolved_url": "https://www.cada.pt/contactos",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-48",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted",
+      "monitor_candidate_archive_path": "candidates/public-data/portugal/monitor-candidates/pt-48.md",
+      "monitor_candidate_archive_sha256": "fbd4854cd61719234e155eb30bfb90a356fcc77b67535ea1aa5ccb938306a99a",
+      "monitor_candidate_archive_bytes": 1355,
+      "review_artifact_status": "archived_unaccepted"
+    },
+    {
+      "id": "pt-49",
+      "title": "CADA opinions search index",
+      "source_type": "administrative_access_selected_decisions",
+      "language": "pt",
+      "url": "https://www.cada.pt/pareceres",
+      "publisher_identifier": {
+        "system": "www.cada.pt",
+        "record": "CADA opinions search index"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official source inspected",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. Searchable selected opinions; use as a dated oversight lane only. Publication is not established as complete and personal data may be redacted.",
+      "version_evidence": "Searchable selected opinions; use as a dated oversight lane only. Publication is not established as complete and personal data may be redacted.",
+      "note": "Searchable selected opinions; use as a dated oversight lane only. Publication is not established as complete and personal data may be redacted.",
+      "topic_ids": [
+        "access",
+        "case_law",
+        "selected"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "b9de7c431750d5335f416d19ef5403ba2fb8f0ab3bc3f61a221e92f5f7799886",
+      "converted_sha256": "8bbc3a54eb5487af6ceeb970ea775931662cc1dc1b553a209d0b3aac40bad7bc",
+      "source_bytes": 35473,
+      "resolved_url": "https://www.cada.pt/pareceres",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-49",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted",
+      "monitor_candidate_archive_path": "candidates/public-data/portugal/monitor-candidates/pt-49.md",
+      "monitor_candidate_archive_sha256": "65b671b217ca8e7fdbb45cfb8dc965faaed44d5a33a9577ce82c8dd180d0202f",
+      "monitor_candidate_archive_bytes": 1443,
+      "review_artifact_status": "archived_unaccepted"
+    },
+    {
+      "id": "pt-50",
+      "title": "Justice.gov.pt legal protection service",
+      "source_type": "legal_aid_operational_guidance",
+      "language": "pt",
+      "url": "https://justica.gov.pt/Servicos/Protecao-juridica",
+      "publisher_identifier": {
+        "system": "justica.gov.pt",
+        "record": "Justice.gov.pt legal protection service"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official source inspected",
+      "retrieval_status": "discovery_surface_no_text",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. Explains legal consultation and assistance, application channels, 30-day stated response period and eligibility groups, including EU citizens and specified third-country residents. Verify current consolidated eligibility law.",
+      "version_evidence": "Explains legal consultation and assistance, application channels, 30-day stated response period and eligibility groups, including EU citizens and specified third-country residents. Verify current consolidated eligibility law.",
+      "note": "Explains legal consultation and assistance, application channels, 30-day stated response period and eligibility groups, including EU citizens and specified third-country residents. Verify current consolidated eligibility law.",
+      "topic_ids": [
+        "legal_aid",
+        "procedure"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "95e517a825c746ca286def94a04343b71e9da8f8f47229a1664a1683f78a4d2a",
+      "source_bytes": 72276,
+      "resolved_url": "https://justica.gov.pt/Servicos/Protecao-juridica",
+      "retrieval_note": "Public HTML response contained no sufficiently long extractable source body.",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-50",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted"
+    },
+    {
+      "id": "pt-51",
+      "title": "Civil registry overview",
+      "source_type": "civil_status_authority_index",
+      "language": "pt",
+      "url": "https://justica.gov.pt/Registos/Civil",
+      "publisher_identifier": {
+        "system": "justica.gov.pt",
+        "record": "Civil registry overview"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official source inspected",
+      "retrieval_status": "discovery_surface_no_text",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. IRN overview covers birth, marriage, civil-status acts and online/in-person registry routes; useful for foreign family-status documents but not a free-movement eligibility rule.",
+      "version_evidence": "IRN overview covers birth, marriage, civil-status acts and online/in-person registry routes; useful for foreign family-status documents but not a free-movement eligibility rule.",
+      "note": "IRN overview covers birth, marriage, civil-status acts and online/in-person registry routes; useful for foreign family-status documents but not a free-movement eligibility rule.",
+      "topic_ids": [
+        "civil_status",
+        "discovery"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "614ab5426549eb92abb9ec6bc09eb80590ed56613af640c8c9864284d0045cb9",
+      "source_bytes": 67643,
+      "resolved_url": "https://justica.gov.pt/Registos/Civil",
+      "retrieval_note": "Public HTML response contained no sufficiently long extractable source body.",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-51",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted"
+    },
+    {
+      "id": "pt-52",
+      "title": "Register a birth, including a foreign-born child",
+      "source_type": "foreign_birth_registration_guidance",
+      "language": "pt",
+      "url": "https://justica.gov.pt/servicos/registar-nascimento",
+      "publisher_identifier": {
+        "system": "justica.gov.pt",
+        "record": "Register a birth, including a foreign-born child"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official source inspected",
+      "retrieval_status": "discovery_surface_no_text",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. Updated 12 June 2026. Describes foreign-issued birth evidence and translation options, including multilingual forms; this is Portuguese civil registration, not a general EU-family card checklist.",
+      "version_evidence": "Updated 12 June 2026. Describes foreign-issued birth evidence and translation options, including multilingual forms; this is Portuguese civil registration, not a general EU-family card checklist.",
+      "note": "Updated 12 June 2026. Describes foreign-issued birth evidence and translation options, including multilingual forms; this is Portuguese civil registration, not a general EU-family card checklist.",
+      "topic_ids": [
+        "civil_status",
+        "birth",
+        "documents"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "79c85d92a9c430987622e9a0a27aaab91210005d25ba115f39f700542cf3ed66",
+      "source_bytes": 88288,
+      "resolved_url": "https://justica.gov.pt/servicos/registar-nascimento",
+      "retrieval_note": "Public HTML response contained no sufficiently long extractable source body.",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-52",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted"
+    },
+    {
+      "id": "pt-53",
+      "title": "IRN guidance on translation of documents",
+      "source_type": "civil_status_document_translation_guidance",
+      "language": "pt",
+      "url": "https://irn.justica.gov.pt/Traducao-de-documentos",
+      "publisher_identifier": {
+        "system": "irn.justica.gov.pt",
+        "record": "IRN guidance on translation of documents"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official search result only",
+      "retrieval_status": "discovery_surface_no_text",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. Explains translation exemptions for specified EU public documents and other translation/legalization requirements. Verify the page and Regulation 2016/1191 scope for the document type.",
+      "version_evidence": "Explains translation exemptions for specified EU public documents and other translation/legalization requirements. Verify the page and Regulation 2016/1191 scope for the document type.",
+      "note": "Explains translation exemptions for specified EU public documents and other translation/legalization requirements. Verify the page and Regulation 2016/1191 scope for the document type.",
+      "topic_ids": [
+        "civil_status",
+        "translation"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "b2f4095b788b8726d5c1899144cb70f53b6a2545ae5314d106b0e40a3f358d4d",
+      "source_bytes": 97689,
+      "resolved_url": "https://irn.justica.gov.pt/Traducao-de-documentos",
+      "retrieval_note": "Public HTML response contained no sufficiently long extractable source body.",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-53",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted"
+    },
+    {
+      "id": "pt-54",
+      "title": "IRN guidance: organizing a marriage",
+      "source_type": "civil_status_marriage_document_guidance",
+      "language": "pt",
+      "url": "https://irn.justica.gov.pt/Servicos/Cidadao/Casamento/Organizar-o-casamento",
+      "publisher_identifier": {
+        "system": "irn.justica.gov.pt",
+        "record": "IRN guidance: organizing a marriage"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official source inspected",
+      "retrieval_status": "discovery_surface_no_text",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. Includes requirements for foreign fiancé(e) evidence and certified translation, as well as registration of a marriage performed abroad. Individual mission practice may differ.",
+      "version_evidence": "Includes requirements for foreign fiancé(e) evidence and certified translation, as well as registration of a marriage performed abroad. Individual mission practice may differ.",
+      "note": "Includes requirements for foreign fiancé(e) evidence and certified translation, as well as registration of a marriage performed abroad. Individual mission practice may differ.",
+      "topic_ids": [
+        "civil_status",
+        "marriage"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "41c31e436256c697ccc8d5ca40944ea728b62d031dae2612fc71c831e36170b8",
+      "source_bytes": 102549,
+      "resolved_url": "https://irn.justica.gov.pt/Servicos/Cidadao/Casamento/Organizar-o-casamento",
+      "retrieval_note": "Public HTML response contained no sufficiently long extractable source body.",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-54",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted"
+    },
+    {
+      "id": "pt-55",
+      "title": "DRE judicial decisions linked to Law 23/2007",
+      "source_type": "immigration_case_law_search_index",
+      "language": "pt",
+      "url": "https://diariodarepublica.pt/dr/decisoes-judiciais/lei/23-2007-635814",
+      "publisher_identifier": {
+        "system": "diariodarepublica.pt",
+        "record": "DRE judicial decisions linked to Law 23/2007"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official source inspected",
+      "retrieval_status": "discovery_surface_no_text",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. DRE page showed 25 of 230 selected decisions in its current result view. It is a discovery surface, not a complete judgment corpus or proof that no other cases exist.",
+      "version_evidence": "DRE page showed 25 of 230 selected decisions in its current result view. It is a discovery surface, not a complete judgment corpus or proof that no other cases exist.",
+      "note": "DRE page showed 25 of 230 selected decisions in its current result view. It is a discovery surface, not a complete judgment corpus or proof that no other cases exist.",
+      "topic_ids": [
+        "courts",
+        "immigration",
+        "selected"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "0794abe5f8088cfd34e8e50bb5f9f7828b20a3c505f702e4b51be3bbb0631b57",
+      "source_bytes": 2346,
+      "resolved_url": "https://diariodarepublica.pt/dr/decisoes-judiciais/lei/23-2007-635814",
+      "retrieval_note": "Public HTML response contained no sufficiently long extractable source body.",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-55",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted"
+    },
+    {
+      "id": "pt-56",
+      "title": "DGSI Supreme Administrative Court database information",
+      "source_type": "administrative_court_database_scope_note",
+      "language": "pt",
+      "url": "https://www.dgsi.pt/jsta.nsf/ins",
+      "publisher_identifier": {
+        "system": "www.dgsi.pt",
+        "record": "DGSI Supreme Administrative Court database information"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official source inspected",
+      "retrieval_status": "discovery_surface_no_text",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. STA database describes a selected jurisprudence collection and warns that, at least for early coverage, omissions cannot be ruled out. Case-law monitoring must state date/filters and coverage limits.",
+      "version_evidence": "STA database describes a selected jurisprudence collection and warns that, at least for early coverage, omissions cannot be ruled out. Case-law monitoring must state date/filters and coverage limits.",
+      "note": "STA database describes a selected jurisprudence collection and warns that, at least for early coverage, omissions cannot be ruled out. Case-law monitoring must state date/filters and coverage limits.",
+      "topic_ids": [
+        "courts",
+        "case_law",
+        "coverage"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "825ad25bb801c78bd8e16813ef3491bd173635af3cbe3e1e1ca0f29b6a1e8d6e",
+      "source_bytes": 255397,
+      "resolved_url": "https://www.dgsi.pt/jsta.nsf/ins",
+      "retrieval_note": "Public HTML response contained no sufficiently long extractable source body.",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-56",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted"
+    },
+    {
+      "id": "pt-57",
+      "title": "Selected Supreme Administrative Court decision on residence delay",
+      "source_type": "administrative_case_law_sample",
+      "language": "pt",
+      "url": "https://www.dgsi.pt/jsta.nsf/35fbbbf22e1bb1e680256f8e003ea931/0fc9d3bd4dd13ac480258b5700649b69",
+      "publisher_identifier": {
+        "system": "www.dgsi.pt",
+        "record": "Selected Supreme Administrative Court decision on residence delay"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official search result only",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. A dated selected case discusses urgent administrative protection in a non-EU residence-title context. It is an illustration of procedural jurisprudence, not an EU-family precedent or complete case-law lane.",
+      "version_evidence": "A dated selected case discusses urgent administrative protection in a non-EU residence-title context. It is an illustration of procedural jurisprudence, not an EU-family precedent or complete case-law lane.",
+      "note": "A dated selected case discusses urgent administrative protection in a non-EU residence-title context. It is an illustration of procedural jurisprudence, not an EU-family precedent or complete case-law lane.",
+      "topic_ids": [
+        "courts",
+        "remedies",
+        "selected"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "8a4ffd6e6134cda0292d23862f3b7bdf9eba9078aa721393ba4fd4a7eb6a6e2e",
+      "converted_sha256": "c916e77f309d533b82164fb7c6154a96e53d69aaa334f9b5f826b39b6b686502",
+      "source_bytes": 8081,
+      "resolved_url": "https://www.dgsi.pt/jsta.nsf/35fbbbf22e1bb1e680256f8e003ea931/0fc9d3bd4dd13ac480258b5700649b69",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-57",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted",
+      "monitor_candidate_archive_path": "candidates/public-data/portugal/monitor-candidates/pt-57.md",
+      "monitor_candidate_archive_sha256": "93e91e4a77fbe85f80dc302330f6784844ec2c1c18730a7cb62044954bbb2efb",
+      "monitor_candidate_archive_bytes": 3133,
+      "review_artifact_status": "archived_unaccepted"
+    },
+    {
+      "id": "pt-58",
+      "title": "DRE legal analysis and amendment-history help",
+      "source_type": "official_legislation_change_history_documentation",
+      "language": "pt",
+      "url": "https://diariodarepublica.pt/dr/geral/ajuda/analise-juridica",
+      "publisher_identifier": {
+        "system": "diariodarepublica.pt",
+        "record": "DRE legal analysis and amendment-history help"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official source inspected",
+      "retrieval_status": "discovery_surface_no_text",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. DRE describes legal-analysis fields for effective dates, validity, regulations, changes and corrections. Treat the analysis as a discovery aid; preserve original enactments and verify legal effect independently.",
+      "version_evidence": "DRE describes legal-analysis fields for effective dates, validity, regulations, changes and corrections. Treat the analysis as a discovery aid; preserve original enactments and verify legal effect independently.",
+      "note": "DRE describes legal-analysis fields for effective dates, validity, regulations, changes and corrections. Treat the analysis as a discovery aid; preserve original enactments and verify legal effect independently.",
+      "topic_ids": [
+        "legislation",
+        "amendments",
+        "metadata"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "source_sha256": "0794abe5f8088cfd34e8e50bb5f9f7828b20a3c505f702e4b51be3bbb0631b57",
+      "source_bytes": 2346,
+      "resolved_url": "https://diariodarepublica.pt/dr/geral/ajuda/analise-juridica",
+      "retrieval_note": "Public HTML response contained no sufficiently long extractable source body.",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-58",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted"
+    },
+    {
+      "id": "pt-59",
+      "title": "Portugal public access to DRE editions",
+      "source_type": "official_gazette_access_service",
+      "language": "pt",
+      "url": "https://www.gov.pt/servicos/consultar-o-diario-da-republica",
+      "publisher_identifier": {
+        "system": "www.gov.pt",
+        "record": "Portugal public access to DRE editions"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official source inspected",
+      "retrieval_status": "retrieval_or_conversion_error",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. Gov.pt states DRE access is free and explains the publication schedule. This is not evidence of a documented API or automated-use permission.",
+      "version_evidence": "Gov.pt states DRE access is free and explains the publication schedule. This is not evidence of a documented API or automated-use permission.",
+      "note": "Gov.pt states DRE access is free and explains the publication schedule. This is not evidence of a documented API or automated-use permission.",
+      "topic_ids": [
+        "publisher",
+        "access"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "retrieval_note": "TimeoutError: The read operation timed out",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-59",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted"
+    },
+    {
+      "id": "pt-60",
+      "title": "CADA sample opinion under Law 26/2016",
+      "source_type": "administrative_access_decision_sample",
+      "language": "pt",
+      "url": "https://www.cada.pt/files/pareceres/2026/096.pdf",
+      "publisher_identifier": {
+        "system": "www.cada.pt",
+        "record": "CADA sample opinion under Law 26/2016"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official search result only",
+      "retrieval_status": "converted_review_candidate",
+      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. A current selected CADA opinion illustrates LADA access/complaint procedure. It concerns a distinct public-record issue and is a process example, not a migration-rights interpretation.",
+      "version_evidence": "A current selected CADA opinion illustrates LADA access/complaint procedure. It concerns a distinct public-record issue and is a process example, not a migration-rights interpretation.",
+      "note": "A current selected CADA opinion illustrates LADA access/complaint procedure. It concerns a distinct public-record issue and is a process example, not a migration-rights interpretation.",
+      "topic_ids": [
+        "access",
+        "oversight",
+        "selected"
+      ],
+      "retrieved": true,
+      "accepted": false,
+      "candidate_source_path": "temp/portugal/pdf/pt-60-592b639248e8627b8cfea0ce8a4c7ccfac272f736ff6752df6708ab568ee8af0.pdf",
+      "source_sha256": "592b639248e8627b8cfea0ce8a4c7ccfac272f736ff6752df6708ab568ee8af0",
+      "source_bytes": 55703,
+      "resolved_url": "https://www.cada.pt/files/pareceres/2026/096.pdf",
+      "converted_sha256": "edb6db15b9e0de835ac91be89690e7a81a5b6b05a314cdc2a65856395de67e1a",
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-60",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted",
+      "monitor_candidate_archive_path": "candidates/public-data/portugal/monitor-candidates/pt-60.md",
+      "monitor_candidate_archive_sha256": "e5a717b4fb8f16328aa785c146d13cad3de18a038165312a73e8ff6482bcb70e",
+      "monitor_candidate_archive_bytes": 9433,
+      "review_artifact_status": "archived_unaccepted"
+    },
+    {
+      "id": "pt-61",
+      "title": "Constitution of the Portuguese Republic, DRE consolidated record",
+      "source_type": "constitutional_primary_legislation",
+      "language": "pt",
+      "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-aprovacao-constituicao/1976-34520775",
+      "publisher_identifier": {
+        "system": "diariodarepublica.pt",
+        "record": "Constitution of the Portuguese Republic, DRE consolidated record"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official DRE source inspected; link accepted within stated cutoff/scope.",
+      "retrieval_status": "link_reviewed_no_local_copy",
+      "retrieval_shape": "Official government page accepted as an external link; no source bytes or converted copy retained.",
+      "version_evidence": "DRE showed the Constitution in force, last alteration 2005-08-12, and version selector 2026-09-05 when checked 2026-10-21.",
+      "note": "Use as the constitutional framework with applicable statutes and remedies. DRE says consolidated texts have no legal value and do not replace original acts.",
+      "topic_ids": [
+        "constitutional_rights",
+        "administrative_remedies",
+        "oversight"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-61",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted"
+    },
+    {
+      "id": "pt-62",
+      "title": "Law 58/2019 implementing the GDPR in Portuguese law",
+      "source_type": "data_protection_primary_legislation",
+      "language": "pt",
+      "url": "https://diariodarepublica.pt/dr/detalhe/lei/58-2019-123815982",
+      "publisher_identifier": {
+        "system": "diariodarepublica.pt",
+        "record": "Law 58/2019 implementing the GDPR in Portuguese law"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official DRE source inspected; link accepted within stated cutoff/scope.",
+      "retrieval_status": "link_reviewed_no_local_copy",
+      "retrieval_shape": "Official government page accepted as an external link; no source bytes or converted copy retained.",
+      "version_evidence": "Official DRE original act published 2019-08-08; it ensures GDPR implementation in Portugal and identifies CNPD oversight. A current consolidated text was not established in this review.",
+      "note": "Accepted as the official original act only; do not infer current wording from the 2019 publication alone. Check a material later amendment when relevant and keep ordinary processing separate from law-enforcement processing.",
+      "topic_ids": [
+        "data_protection",
+        "oversight",
+        "administrative_processing"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-62",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted"
+    },
+    {
+      "id": "pt-63",
+      "title": "Law 59/2019 on law-enforcement personal-data processing",
+      "source_type": "law_enforcement_data_protection_primary_legislation",
+      "language": "pt",
+      "url": "https://diariodarepublica.pt/dr/detalhe/lei/59-2019-123815983",
+      "publisher_identifier": {
+        "system": "diariodarepublica.pt",
+        "record": "Law 59/2019 on law-enforcement personal-data processing"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official DRE source inspected; link accepted within stated cutoff/scope.",
+      "retrieval_status": "link_reviewed_no_local_copy",
+      "retrieval_shape": "Official government page accepted as an external link; no source bytes or converted copy retained.",
+      "version_evidence": "Official DRE original act published 2019-08-08; Article 1 covers competent-authority processing for criminal/public-safety purposes and Article 43 identifies CNPD. A current consolidated text was not established in this review.",
+      "note": "Original-act reference only. Do not apply this criminal/public-safety lane to ordinary administrative processing; current amendments and case-specific applicability remain to be checked.",
+      "topic_ids": [
+        "law_enforcement_data",
+        "SIS",
+        "oversight"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-63",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted"
+    },
+    {
+      "id": "pt-64",
+      "title": "Decree-Law 122/2021, National SIRENE office organization",
+      "source_type": "SIS_SIRENE_organizational_legislation",
+      "language": "pt",
+      "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2021-176811871",
+      "publisher_identifier": {
+        "system": "diariodarepublica.pt",
+        "record": "Decree-Law 122/2021, National SIRENE office organization"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official DRE source inspected; link accepted within stated cutoff/scope.",
+      "retrieval_status": "link_reviewed_no_local_copy",
+      "retrieval_shape": "Official government page accepted as an external link; no source bytes or converted copy retained.",
+      "version_evidence": "DRE showed in-force status, last alteration 2023-06-02, and version selector 2026-09-01 when checked 2026-10-21.",
+      "note": "Organizational/competence source only; it does not by itself establish the complete SIS request, correction/deletion, or complaint procedure. DRE says consolidations have no legal value.",
+      "topic_ids": [
+        "SIS",
+        "competent_authority",
+        "data_protection"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-64",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted"
+    },
+    {
+      "id": "pt-65",
+      "title": "Law 9/91, Statute of the Ombudsman, DRE consolidated record",
+      "source_type": "ombudsman_primary_legislation",
+      "language": "pt",
+      "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/lei/1991-34552275-45426275",
+      "publisher_identifier": {
+        "system": "diariodarepublica.pt",
+        "record": "Law 9/91, Statute of the Ombudsman, DRE consolidated record"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official DRE source inspected; link accepted within stated cutoff/scope.",
+      "retrieval_status": "link_reviewed_no_local_copy",
+      "retrieval_shape": "Official government page accepted as an external link; no source bytes or converted copy retained.",
+      "version_evidence": "DRE marked the consolidated record in force and showed amendments including Lei 52-A/2005 and Lei 17/2013 when checked 2026-10-21.",
+      "note": "The statute describes oversight and a complaint route without power to decide the underlying case. DRE says consolidations have no legal value; retain the original act as legal authority.",
+      "topic_ids": [
+        "ombudsman",
+        "oversight",
+        "administrative_complaints"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-65",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted"
+    },
+    {
+      "id": "pt-66",
+      "title": "Law 143/2015, Portuguese adoption procedure regime",
+      "source_type": "adoption_primary_legislation",
+      "language": "pt",
+      "url": "https://diariodarepublica.pt/dr/detalhe/lei/143-2015-70215247",
+      "publisher_identifier": {
+        "system": "diariodarepublica.pt",
+        "record": "Law 143/2015, Portuguese adoption procedure regime"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official DRE source inspected; link accepted within stated cutoff/scope.",
+      "retrieval_status": "link_reviewed_no_local_copy",
+      "retrieval_shape": "Official government page accepted as an external link; no source bytes or converted copy retained.",
+      "version_evidence": "DRE marked the original act in force; published 2015-09-08. Its title and Article 1 identify changes to the Civil Code and Civil Registry Code and the RJPA annex.",
+      "note": "Accepts the official promulgated act and stated adoption-regime content. It does not establish current consolidation of each provision; check a later change only where material.",
+      "topic_ids": [
+        "adoption",
+        "civil_status",
+        "family_evidence"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-66",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted"
+    },
+    {
+      "id": "pt-67",
+      "title": "Civil Registry Code, DRE consolidated record",
+      "source_type": "civil_status_primary_legislation",
+      "language": "pt",
+      "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/1995-34525275",
+      "publisher_identifier": {
+        "system": "diariodarepublica.pt",
+        "record": "Civil Registry Code, DRE consolidated record"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official DRE source inspected; link accepted within stated cutoff/scope.",
+      "retrieval_status": "link_reviewed_no_local_copy",
+      "retrieval_shape": "Official government page accepted as an external link; no source bytes or converted copy retained.",
+      "version_evidence": "DRE showed in-force status and last alteration 2025-04-01, introduced by Lei 39/2025; checked 2026-10-21.",
+      "note": "Use within the displayed cutoff. DRE says consolidations have no legal value; check a later material amendment if the provision in use requires it.",
+      "topic_ids": [
+        "civil_status",
+        "family_evidence",
+        "adoption"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-67",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted"
+    },
+    {
+      "id": "pt-68",
+      "title": "Civil Code, Chapter III: rights of foreigners and conflict of laws",
+      "source_type": "private_international_law_primary_legislation",
+      "language": "pt",
+      "url": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/1966-34509075-49754075",
+      "publisher_identifier": {
+        "system": "diariodarepublica.pt",
+        "record": "Civil Code, Chapter III: rights of foreigners and conflict of laws"
+      },
+      "functional_relationship": "related_source",
+      "verification_status": "Official DRE source inspected; link accepted within stated cutoff/scope.",
+      "retrieval_status": "link_reviewed_no_local_copy",
+      "retrieval_shape": "Official government page accepted as an external link; no source bytes or converted copy retained.",
+      "version_evidence": "DRE identifies Chapter III as rights of foreigners/conflicts of laws, beginning at Article 14; it showed in-force status and last alteration 2026-06-23.",
+      "note": "This chapter-specific link replaces the erroneous 1993 URL and is not the whole Civil Code. DRE says consolidations have no legal value.",
+      "topic_ids": [
+        "private_international_law",
+        "family_status",
+        "civil_status"
+      ],
+      "retrieved": false,
+      "accepted": false,
+      "official_reference_status": "usable_official_reference",
+      "official_reference_decision": "pt-68",
+      "accepted_external_reference": true,
+      "local_copy_status": "unaccepted"
     }
   ],
-  "converted_review_candidate_count": 1,
-  "scoped_retrieval_pass": {
-    "capture_manifest": "references/retrieval-pass-2026-10-19-capture-results.json",
-    "exact_response_count": 6,
-    "converted_text_count": 0,
-    "discovery_shell_count": 6,
-    "accepted_source_count": 0
-  },
-  "accepted_external_reference_count": 6,
-  "remaining_candidate_reference_count": 0,
-  "reference_review_note": "Six of seven focused sources have narrow official-link decisions: Law 37/2006 -> pt-06; adoption -> pt-66; Civil Registry Code -> pt-67; Civil Code conflicts chapter -> pt-68; Portaria 1334-D/2010 -> pt-08; CPA -> pt-13. AIMA is covered by a whole-site human-review offer. The seven retrieved conversions remain unaccepted as local copies."
+  "retrieved_review_candidate_count": 46,
+  "converted_review_candidate_count": 19,
+  "accepted_external_reference_count": 61,
+  "remaining_candidate_reference_count": 4,
+  "reference_review_status": "61 dated official links accepted within narrow scopes; 3 pages not relied upon for current procedure; 4 AIMA references remain under a whole-site human-review offer; local copies accepted: 0; topics accepted: 0; country review complete: false.",
+  "not_relied_upon_reference_count": 3,
+  "canonical_manifest_note": "This is the canonical 68-source inventory. Official link acceptance is separate from local-copy acceptance, freshness, topic coverage, dependencies, and country completion. Unaccepted converted artifacts use the Monitor local-only archive."
 }

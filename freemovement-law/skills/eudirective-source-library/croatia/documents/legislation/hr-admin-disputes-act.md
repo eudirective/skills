@@ -1,9 +1,9 @@
 # Administrative Disputes Act NN 36/24
 
 - Jurisdiction: croatia
-- Candidate ID: `hr-admin-disputes-act`
+- Source ID: `hr-admin-disputes-act`
 - Source type: `administrative_remedies_act`
-- Candidate URL: https://narodne-novine.nn.hr/clanci/sluzbeni/2024_03_36_564.html
+- Official source URL: https://narodne-novine.nn.hr/clanci/sluzbeni/2024_03_36_564.html
 - Resolved URL: https://narodne-novine.nn.hr/clanci/sluzbeni/2024_03_36_564.html
 - Retrieved: 2026-10-19T02:21:56+00:00
 - Media type: `text/html`

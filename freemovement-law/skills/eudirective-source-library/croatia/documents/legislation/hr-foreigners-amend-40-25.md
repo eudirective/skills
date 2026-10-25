@@ -1,9 +1,9 @@
 # Foreigners Act amendment NN 40/25
 
 - Jurisdiction: croatia
-- Candidate ID: `hr-foreigners-amend-40-25`
+- Source ID: `hr-foreigners-amend-40-25`
 - Source type: `amending_act`
-- Candidate URL: https://narodne-novine.nn.hr/clanci/sluzbeni/2025_03_40_545.html
+- Official source URL: https://narodne-novine.nn.hr/clanci/sluzbeni/2025_03_40_545.html
 - Resolved URL: https://narodne-novine.nn.hr/clanci/sluzbeni/2025_03_40_545.html
 - Retrieved: 2026-10-19T14:02:25+00:00
 - Media type: `text/html`

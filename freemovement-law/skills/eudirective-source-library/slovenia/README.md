@@ -1,18 +1,21 @@
-# Slovenia national-source candidates
+# Slovenia national-source pack
 
-Inventory dated 2026-10-18; capture state updated 2026-10-19. It contains 42 official-source candidates across national law and publication, EU/EEA/Swiss residence routes, visas and mission practice, administrative procedure and remedies, family-status evidence, privacy, oversight, legal aid and selected case-law discovery. The shared bounded capture saved 42 responses and converted 23; 19 pages were interactive or discovery shells. All 23 local conversions replay offline and remain unaccepted as local copies. Seven official GOV.SI references are accepted for dated link use; PISRS legal records are offered for human review. No topics are complete.
+This pack contains a bounded inventory of 42 official source leads across immigration and free movement, visas, administrative procedure and remedies, family status, privacy, oversight, legal aid and case-law discovery. The inventory is not a complete national source review.
 
-- Candidate register and search evidence: [`references/source-list.md`](references/source-list.md)
-- Machine-readable candidate metadata: [`references/candidate-manifest.json`](references/candidate-manifest.json)
-- Capture ledger: [`references/slovenia-capture-results.json`](references/slovenia-capture-results.json)
-- Shared capture/replay rule: [`../sync_candidate_pages.py`](../sync_candidate_pages.py)
-- Official source decisions and human-review offers: [`references/source-acceptance.json`](references/source-acceptance.json)
-- Issue-led coverage register: [`references/coverage-register.md`](references/coverage-register.md)
-- Proposed-route sustainability assessment: [`references/sustainability-assessment.md`](references/sustainability-assessment.md)
-- Country sequence and prior findings: [`../references/eea-switzerland-country-expansion.md`](../references/eea-switzerland-country-expansion.md)
+As of 25 October 2026, 17 official references have link-only records in `documents/`; this includes an OPSI reference limited to regulation metadata. No local publisher copy or derived text is accepted, no topic is complete, and country review remains open.
 
-Comparison seed: Denmark's EU free-movement residence regulation and official guidance. The GOV.SI parent page expressly extends relevant EU-citizen Foreigners Act provisions to EEA nationals and their family members, while Switzerland is described under a separate EU–Swiss agreement route. These are documented scope differences, not an assertion of legal equivalence.
+The 23 former public candidate captures, candidate manifest and capture ledger are preserved in the EU Source Update Monitor local-only archive and have been removed from the country pack. They are research artifacts, not accepted sources. The source list records the disposition of every inventory row.
 
-Use PISRS consolidated texts as government-published working versions, retaining the displayed edition and informational label. No Gazette-by-Gazette reconstruction is required; check a specific Gazette item only for a material later change or commencement question. The PISRS API authorization gate does not block ordinary public link use and was not used. The 42-record capture remains a bounded inventory, with 19 pages that yielded shells or discovery content. The local capture and replay scripts are optional maintenance for retained copies, not prerequisites for using official links; copying terms matter only if copies are retained or redistributed.
+- [Source inventory and dispositions](references/source-list.md)
+- [Source acceptance and human-review decisions](references/source-acceptance.json)
+- [Issue-led coverage register](references/coverage-register.md)
+- [Sustainability assessment](references/sustainability-assessment.md)
+- [Country sequence and prior findings](../references/eea-switzerland-country-expansion.md)
 
-Optional local-copy maintenance: `python source-library/sync_candidate_pages.py slovenia sync`; replay verification: `python source-library/sync_candidate_pages.py slovenia verify`. These steps do not gate reference use of the accepted GOV.SI links or human-reviewed PISRS pages.
+The shared `sync_candidate_pages.py` helper remains for other packs. Do not run it to publish Slovenia captures; candidate and capture material belongs only in the Monitor archive.
+
+## Scope notes
+
+The GOV.SI parent page states that relevant Foreigners Act provisions applying to EU citizens also apply to EEA citizens and their family members. Switzerland is described under a separate EU–Swiss agreement route. These distinctions are recorded as source scope, not as an assertion of legal equivalence.
+
+For legal text, use the official PISRS consolidated record as a working reference with its displayed edition and informational label. A specific Gazette item is linked only where it resolves an identified publication or commencement issue. PISRS API authorization is not required for ordinary manual link use; no API access was used.

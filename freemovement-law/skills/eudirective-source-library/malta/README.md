@@ -1,13 +1,25 @@
-# Malta source candidates
+# Malta national source pack
 
-This 55-record inventory covers national legislation, EU/EEA/Swiss and mobile-Maltese family routes, third-country family reunification, visas, procedure and appeals, oversight, legal aid, civil-status evidence and case-law discovery.
+**Source-reference review:** 21 October 2026. **Local-copy disposition:** 25 October 2026.
 
-As of 21 October 2026, 41 official external references are accepted within stated scope, 11 remain pending human/currentness review, and three duplicate or misleading candidate routes are not relied upon. No local copy, legal topic or country review is accepted complete. See [source acceptance](references/source-acceptance.json), [issue coverage](references/coverage-register.md), and [dependency register](references/dependency-register.json).
+**Status:** 41 official external references accepted within recorded scopes; 11 pending human or currentness review; 3 not relied upon. No local source copies or topics are accepted, and the country review remains incomplete.
 
-The review found two missing national sources: Identità’s current Form F.01 new-application form and the official English consolidation of Immigration Regulations S.L. 217.04, which lists amendments through 2026. It also added EU dependencies for the 2025 residence-card regulation, CJEU Case C-61/22, the Commission residence-permit list and the Visa Code. The current Identità family page links Form F.01 and F.02, both of which cite S.L. 460.17 and S.L. 217.04.
+## What is in the pack
 
-A legal crosswalk remains necessary: Identità’s family-category and EEA descriptions need comparison with S.L. 460.17, S.L. 217.04 and Directive 2004/38. Current Maltese residence-card specimens, visa representation agreements, legal-aid eligibility for immigration appeals, FOI/IDPC current procedures and public court-decision coverage also remain open. The whole relevant official websites are offered for human review in the acceptance register.
+- The source register contains 55 identified records. Every record has an acceptance, pending-review, or not-relied-upon disposition in the [source acceptance register](references/source-acceptance.json).
+- The accepted set is link-only. No local text copy is accepted. The former full-text conversion files and link notes have been removed from the published pack; the source list retains their official source IDs, URLs, scopes, and limits.
+- The review identified Identità’s July 2026 Form F.01 and the English government consolidation of Immigration Regulations S.L. 217.04, including 2026 amendments. Both are recorded as official references.
+- A legal crosswalk remains necessary for family categories and EEA/Swiss/Maltese routes. Current Maltese residence-card specimens, visa representations, legal-aid eligibility for immigration appeals, FOI/IDPC procedures, and public court-decision coverage also remain open.
 
-The earlier 47 local conversions are historical unaccepted artifacts. `sync_malta.py`, capture, PDF conversion, hash replay and scheduled updates are optional; none gates use of an official link. Do not reconstruct Gazette amendment chains by default. Check a particular amendment only when it could affect the legal issue or a chosen retained-copy/monitoring purpose.
+## Local-copy and reuse limits
 
-Skill: eudirective-source-library v1.0.12.
+Article 13 of the [Statute Law Revision Act, 2021 (Act XL of 2021)](https://legislation.mt/eli/slra/eng) restricts reproducing a revised edition without Government permission. Its exception for publishing law does not permit using a scan or electronic reproduction of the revised edition as the reproduction base. The earlier statutory PDFs and their text conversions were extracted from those editions, so they are not retained as local source documents. Item-specific republication permission was not established for the guidance pages and forms either. The official links remain usable within the scopes recorded in the source register.
+
+Use the [source list](references/source-list.md), [source acceptance register](references/source-acceptance.json), [coverage register](references/coverage-register.md), [dependency register](references/dependency-register.json), and [sustainability assessment](references/sustainability-assessment.md). Link acceptance is separate from local-copy acceptance, topic coverage, and country completion.
+
+## Key limits
+
+- The official English Immigration Regulations S.L. 217.04 page records amendments through Legal Notices 183 and 204 of 2026; check the displayed edition for the relevant issue.
+- Identità’s current forms cite S.L. 460.17 and S.L. 217.04. The forms do not resolve their distinct legal scope or family-category questions.
+- The EU, EEA/EFTA, Swiss, mobile-Maltese, UK Withdrawal Agreement, and third-country family routes remain distinct.
+- Topic-level provision mapping, visa and mission operations, remedies, and continuing court discovery remain open. The Monitor has no Malta runtime action; runtime-only checks are unsupported, not completed.

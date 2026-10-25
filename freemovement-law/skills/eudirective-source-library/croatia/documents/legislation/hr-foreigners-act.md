@@ -1,9 +1,9 @@
 # Foreigners Act NN 133/20
 
 - Jurisdiction: croatia
-- Candidate ID: `hr-foreigners-act`
+- Source ID: `hr-foreigners-act`
 - Source type: `national_act`
-- Candidate URL: https://narodne-novine.nn.hr/clanci/sluzbeni/2020_12_133_2520.html
+- Official source URL: https://narodne-novine.nn.hr/clanci/sluzbeni/2020_12_133_2520.html
 - Resolved URL: https://narodne-novine.nn.hr/clanci/sluzbeni/2020_12_133_2520.html
 - Retrieved: 2026-10-19T14:02:25+00:00
 - Media type: `text/html`

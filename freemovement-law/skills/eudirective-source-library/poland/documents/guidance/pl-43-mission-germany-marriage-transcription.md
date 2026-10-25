@@ -1,0 +1,162 @@
+# Foreign marriage transcription example from Polish mission in Germany
+
+Jurisdiction: Poland
+
+Source ID: pl-43
+
+Source class: civil_status_transcription_guidance
+
+Official publisher: Ministry of Foreign Affairs / Polish diplomatic mission
+
+Official source record: [https://www.gov.pl/web/niemcy/transkrypcja-zagranicznego-aktu-malzenstwa](https://www.gov.pl/web/niemcy/transkrypcja-zagranicznego-aktu-malzenstwa)
+
+Official text/content URL: [https://www.gov.pl/web/niemcy/transkrypcja-zagranicznego-aktu-malzenstwa](https://www.gov.pl/web/niemcy/transkrypcja-zagranicznego-aktu-malzenstwa)
+
+Language: pl
+
+Version evidence: Mission/country-specific explanatory page. Use as a lead to national civil-status rules only; its local logistics and documents do not establish a universal Polish process.
+
+Retrieved: 2026-10-19T01:53:26+00:00
+
+Source response SHA-256: 04cf5c18fd5dabac12bd349d8ad6684c6a9c21dcd39a7c74aef1b2e81906f1b7
+
+Monitor candidate archive SHA-256: 4bb8f95d85af29826bbf3abc9e6056bf220951bfe1a9413e909aa5211370292e; archive path candidates/poland_candidate_promotion_20261025/Poland/pl-43.md
+
+Conversion review: HTML body extraction from archived official response; body-only replay against original response verified. HTML layout and whitespace normalized to Markdown; linked attachments not copied.
+
+Local-copy basis: The retained material is textual content from gov.pl. Its footer states that textual content, excluding audiovisual material, is made available under CC BY-SA 4.0. Source, retrieval time and Markdown transformation are recorded. Images, audio/video and linked attachments are excluded.
+
+## Source role and scope
+
+Use the official page or instrument only for its stated identity and scope: Foreign marriage transcription example from Polish mission in Germany. Source-specific limits: Mission/country-specific explanatory page. Use as a lead to national civil-status rules only; its local logistics and documents do not establish a universal Polish process. Link acceptance does not accept a local copy, legal topic, or country completeness.
+
+This is a Germany-mission example for foreign marriage transcription; it does not establish practice at every mission or civil registry.
+
+## Limits
+
+This is a dated source snapshot, not a legal conclusion. Recheck the official record for later amendments, page changes, eligibility, filing channel and case-specific applicability. Local-copy acceptance does not accept any topic or certify country completion. The retained page does not replace governing law, an individual decision or route-specific authority instructions.
+
+## Source text
+
+Administracyjna zmiana imienia i nazwiska
+
+Odtworzenie treści zagranicznego aktu stanu cywilnego
+
+Powrót do nazwiska noszonego przed zawarciem małżeństwa
+
+Rejestracja urodzenia lub zgonu, dla którego nie został sporządzony akt stanu cywilnego
+
+Uznanie wyroku rozwodowego wydanego przez sąd zagraniczny
+
+Transkrypcja (rejestracja) zagranicznego aktu małżeństwa w polskim rejestrze stanu cywilnego
+
+Transkrypcja (rejestracja) zagranicznego aktu urodzenia w polskim rejestrze stanu cywilnego
+
+Transkrypcja (rejestracja) zagranicznego aktu zgonu w polskim rejestrze stanu cywilnego
+
+Uznanie ojcostwa
+
+Uzupełnienie i sprostowanie aktu stanu cywilnego
+
+Uzyskanie (wydobycie) odpisów akt stanu cywilnego i zaświadczeń o stanie cywilnym z urzędu stanu cywilnego w Polsce
+
+Uzyskanie (wydobycie) odpisów akt stanu cywilnego z urzędu stanu cywilnego za granicą
+
+Uzyskanie (wydobycie) zaświadczenia, że zgodnie z prawem polskim można zawrzeć małżeństwo, na potrzeby małżeństwa w państwie trzecim
+
+Wydanie zaświadczenia, że zgodnie z prawem polskim można zawrzeć małżeństwo
+
+Zawarcie małżeństwa przed konsulem
+
+Składanie zapewnienia o nieistnieniu okoliczności wyłączających zawarcie małżeństwa
+
+Transkrypcja (rejestracja) zagranicznego aktu małżeństwa w polskim rejestrze stanu cywilnego
+
+Gdzie załatwisz sprawę?
+Wniosek można złożyć we właściwym terytorialnie urzędzie konsularnym RP lub bezpośrednio w Polsce - w dowolnym USC.
+Czy musisz składać dokumenty osobiście?
+Nie, dokumenty można złożyć osobiście albo listownie.
+Jak umówisz się na spotkanie?
+Na wizytę umówić się trzeba za pomocą systemu e-Konsulat.
+Jakie dokumenty musisz złożyć?
+
+wniosek o transkrypcję (dostępny w urzędzie konsularnym),
+
+oryginał zagranicznego aktu małżeństwa,
+
+tłumaczenie zagranicznego aktu małżeństwa dokonane przez tłumacza przysięgłego lub konsula (w krajach UE akt małżeństwa wydany na druku międzynarodowym nie wymaga tłumaczenia!),
+
+w przypadku jeżeli jeden z małżonków posiada zagraniczny akt urodzenia i nie posiada polskiego aktu urodzenia – oryginał aktu urodzenia tego małżonka (może być wymagana apostille lub legalizacja, o ile nic innego nie wynika z odrębnych przepisów) wraz z tłumaczeniem dokonanym przez tłumacza przysięgłego lub konsula.
+
+​​​​​
+
+Pamiętaj!
+
+Dokumenty sporządzone w języku obcym musisz złożyć wraz z urzędowym tłumaczeniem na język polski dokonywanym przez:
+
+tłumacza przysięgłego wpisanego na listę prowadzoną przez Ministra Sprawiedliwości,
+
+tłumacz przysięgłego uprawnionego do dokonywania takich tłumaczeń w państwach członkowskich Unii Europejskiej lub Europejskiego Obszaru Gospodarczego (EOG),
+
+konsula.
+
+​​​​​​
+
+Pamiętaj!
+
+Jeżeli w zagranicznym akcie małżeństwa nie ma informacji na temat nazwiska noszonego przez małżonków po zawarciu małżeństwa oraz na temat nazwisk noszonych przez dzieci zrodzone z tego związku małżeńskiego – możesz, przy składaniu wniosku o transkrypcję, zawrzeć także oświadczenia w tej sprawie albo złożyć przed konsulem oświadczenie do protokołu.
+Ile zapłacisz?
+Opłata wynosi 60,00 EUR.
+
+Opłata pobierana jest w gotówce lub kartą EC (ale nie kartą kredytową).
+Jaki jest termin realizacji?
+Konsul niezwłocznie przekaże Twój wniosek do wskazanego przez Państwa kierownika urzędu stanu cywilnego.
+Jak odbierzesz dokumenty?
+Polski odpis aktu można odebrać osobiście w konsulacie albo otrzymać pocztą.
+Jak możesz się odwołać?
+Kierownik USC odmawia dokonania przeniesienia zagranicznego aktu stanu cywilnego (transkrypcji), jeżeli:
+
+dokument w państwie wystawienia nie jest uznawany za dokument stanu cywilnego,
+
+dokument nie ma mocy dokumentu urzędowego,
+
+dokument nie został wydany przez właściwy organ, albo są wątpliwości co do jego autentyczności,
+
+dokument potwierdza zdarzenie inne niż urodzenie, małżeństwo lub zgon,
+
+dokument powstał w wyniku transkrypcji w państwie innym niż państwo zdarzenia,
+
+byłoby to sprzeczne z podstawowymi zasadami porządku prawnego Rzeczypospolitej Polskiej.
+
+Odmowa dokonania przeniesienia zagranicznego aktu stanu cywilnego nastąpi w formie decyzji administracyjnej, od której przysługuje odwołanie do właściwego miejscowo wojewody.
+Najczęściej zadawane pytania
+Co to jest transkrypcja (rejestracja) zagranicznego aktu małżeństwa?
+
+Transkrypcja aktu małżeństwa jest to wierne i literalne przeniesienie treści zagranicznego aktu małżeństwa do polskich ksiąg stanu cywilnego. Po dokonanej transkrypcji kierownik urzędu stanu cywilnego wydaje odpis zupełny polskiego aktu małżeństwa, który zawiera adnotację o dokonanej transkrypcji.
+
+Czy muszę dokonać transkrypcji (rejestracji) zagranicznego aktu małżeństwa?
+
+Transkrypcja (rejestracja) zagranicznego dokumentu stanu cywilnego jest obowiązkowa, jeżeli posiadają Państwo akt stanu cywilnego potwierdzający zdarzenie wcześniejsze (np. akty urodzenia, akty wcześniejszego małżeństwa), sporządzony na terytorium RP i wnioskują o dokonanie czynności z zakresu rejestracji stanu cywilnego, lub ubiegają się o polski dokument tożsamośc, albo nadanie numeru PESEL.
+
+Czy do złożenia wniosku o transkrypcję konieczna jest obecność obojga małżonków?
+
+Wniosek o transkrypcję aktu małżeństwa może złożyć jeden z małżonków, ale w takim wypadku będzie mógł złożyć oświadczenie o wyborze nazwiska tylko dla siebie – pozostać przy dotychczasowym nazwisku, utworzyć nazwisko dwuczłonowe lub przyjąć nazwisko drugiego małżonka. Małżonek, który nie składa wniosku o transkrypcję pozostanie przy dotychczasowym nazwisku, a dzieci zrodzone z takiego związku będą nosić nazwisko dwuczłonowe składające się z nazwiska matki i dodanego do niego nazwiska męża. Oczywiście to ograniczenie nie będzie miało zastosowania, jeżeli informacja o wyborze nazwiska została zawarta w treści zagranicznego aktu małżeństwa.
+
+Nasze dane w zagranicznym akcie małżeństwa zostały zapisane bez polskich znaków diakrytycznych. Jak to się ma do wniosku o transkrypcję?
+
+W takim wypadku mogą Państwo (razem z wnioskiem o transkrypcję) złożyć wniosek o dostosowanie pisowni w polskim akcie małżeństwa do reguł pisowni polskiej lub wniosek o sprostowanie danych w oparciu o Wasze akty urodzenia.
+
+Jak długo, po sporządzeniu polskiego aktu małżeństwa i przyjęciu nowego nazwiska, mogę się posługiwać dokumentami wystawionymi na dotychczasowe dane (paszportem i dowodem osobistym)?
+
+Powinni Państwo niezwłocznie wystąpić o wymianę dotychczasowych dokumentów tożsamości. W przypadku obywateli polskich przebywających za granicą dokumenty zachowują ważność przez cztery miesiące od dnia sporządzenia aktu małżeństwa stwierdzającego zmianę nazwiska, a w przypadku małżeństwa zawartego przed konsulem lub za granicą – od dnia doręczenia odpisu polskiego aktu małżeństwa .
+
+Materiały
+
+Wniosek o transkrypcję aktu małżeństwa
+wniosek-transkrypcja-AM.doc0.05MB
+
+Podstawa prawna
+
+Ustawa z dnia 28 listopada 2014 roku Prawo o aktach stanu cywilnego http://prawo.sejm.gov.pl/isap.nsf/download.xsp/WDU20180002224/U/D20182224Lj.pdf
+
+Ustawa z dnia 25 lutego 1964 roku Kodeks rodzinny i opiekuńczy http://prawo.sejm.gov.pl/isap.nsf/download.xsp/WDU19640090059/U/D19640059Lj.pdf

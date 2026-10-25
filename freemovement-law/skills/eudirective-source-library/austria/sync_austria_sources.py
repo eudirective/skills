@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Check the bounded Austria source list and stage changed review candidates.
+"""Legacy Austria updater helpers; its repository-writing entry point is retired.
 
-Network policy: ordinary, serial HTTPS GETs to manifest allowlisted official
-hosts only. No RIS OGD/API, login, challenge bypass, or automatic acceptance.
+Use the EU Source Update Monitor's registered Austria actions for checks and
+captures so raw and candidate material stays in the indexed local-only archive.
 """
 from __future__ import annotations
 
@@ -335,109 +335,12 @@ def write_once(path: Path, payload: bytes) -> bool:
 
 
 def main() -> int:
-    manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
-    hosts = {host.lower() for host in manifest.get("official_hosts", [])}
-    if not hosts:
-        raise ValueError("manifest contains no official host allowlist")
-    documents = manifest.get("documents", [])
-    errors: list[dict] = []
-    changes: list[dict] = []
-    created: list[str] = []
-    checked_at = datetime.now(timezone.utc).isoformat(timespec="seconds")
-    raw_dir = PACK / "pending-updates" / "raw"
-
-    for index, record in enumerate(documents):
-        candidate_id = record["id"]
-        try:
-            if record.get("native_source_path"):
-                raw, resolved, media_type, landing = expected_pdf(record, hosts)
-                raw_hash = sha(raw)
-                observed_hash = raw_hash
-            else:
-                raw, resolved, media_type = fetch(record["url"], hosts)
-                landing = None
-                raw_hash = sha(raw)
-                observed_hash = raw_hash
-            prior_hash = record.get("source_sha256")
-            if prior_hash and prior_hash == observed_hash:
-                print(f"unchanged {candidate_id} {observed_hash}")
-            else:
-                if media_type == "application/pdf":
-                    ext = "pdf"
-                    candidate, selector = extract(record, raw, media_type, resolved)
-                else:
-                    if media_type not in {"text/html", "application/xhtml+xml"}:
-                        raise ValueError(f"unexpected media type: {media_type}")
-                    candidate, selector = extract(record, raw, media_type, resolved)
-                    ext = "md"
-                item_name = safe_name(candidate_id)
-                pending_rel = f"source-library/austria/pending-updates/{item_name}-{observed_hash[:16]}.{ext}"
-                candidate_path = repo_path(pending_rel)
-                if write_once(candidate_path, candidate):
-                    created.append(pending_rel)
-                raw_ext = "pdf" if media_type == "application/pdf" else "html"
-                raw_path = raw_dir / f"{item_name}-{observed_hash}.{raw_ext}"
-                raw_path.parent.mkdir(parents=True, exist_ok=True)
-                if not raw_path.exists():
-                    raw_path.write_bytes(raw)
-                raw_rel = raw_path.relative_to(ROOT).as_posix()
-                if landing is not None:
-                    landing_path = raw_dir / f"{item_name}-{observed_hash}-landing.html"
-                    if not landing_path.exists():
-                        landing_path.write_bytes(landing)
-                    landing_rel = landing_path.relative_to(ROOT).as_posix()
-                else:
-                    landing_rel = None
-                changes.append({
-                    "candidate_id": candidate_id,
-                    "source_url": record["url"],
-                    "resolved_url": resolved,
-                    "previous_sha256": prior_hash,
-                    "observed_sha256": observed_hash,
-                    "media_type": media_type,
-                    "conversion_selector": selector,
-                    "pending_candidate": pending_rel,
-                    "raw_capture": raw_rel,
-                    "landing_capture": landing_rel,
-                    "review_required": True,
-                })
-                print(f"changed {candidate_id} {prior_hash or 'unrecorded'} -> {observed_hash}; staged {pending_rel}")
-        except Exception as exc:  # One broken publisher must not discard other observations.
-            error = {"candidate_id": candidate_id, "url": record.get("url"), "error": f"{type(exc).__name__}: {exc}"}
-            errors.append(error)
-            print(f"review-required {candidate_id}: {error['error']}")
-        if index < len(documents) - 1:
-            time.sleep(DELAY_SECONDS)
-
-    report = {
-        "jurisdiction": "AT",
-        "checked_at": checked_at,
-        "records_checked": len(documents),
-        "changed_records": changes,
-        "retrieval_or_identity_failures": errors,
-        "accepted_source_count": 0,
-        "notes": [
-            "Changed captures are staged for human review and never replace prior candidate content automatically.",
-            "This run checks only the manifest's fixed records; it does not run broad case-law searches or discover all mission/Land sources.",
-            "RIS OGD/API is not used.",
-        ],
-    }
-    print(json.dumps(report, ensure_ascii=False, indent=2))
-    summary_path = os.environ.get("GITHUB_STEP_SUMMARY")
-    if summary_path:
-        with open(summary_path, "a", encoding="utf-8") as summary:
-            summary.write("## Austria source monitor\n\n")
-            summary.write(f"Checked {len(documents)} manifest records at {checked_at}. Staged {len(changes)} changed records; {len(errors)} retrieval/identity issues. No source was accepted.\n\n")
-            for change in changes:
-                summary.write(f"- **{change['candidate_id']}**: `{change['previous_sha256'] or 'unrecorded'}` → `{change['observed_sha256']}`; [review candidate](../../{change['pending_candidate']})\n")
-            for error in errors:
-                summary.write(f"- **Review required — {error['candidate_id']}**: {error['error']}\n")
-    output_path = os.environ.get("GITHUB_OUTPUT")
-    if output_path:
-        with open(output_path, "a", encoding="utf-8") as output:
-            output.write(f"created={'true' if created else 'false'}\n")
-            output.write(f"pending={'true' if changes else 'false'}\n")
-    return 0
+    print(
+        "This standalone updater is retired. Use the EU Source Update Monitor's registered "
+        "Austria check/capture actions; captures and candidates are kept in its indexed local-only archive.",
+        file=sys.stderr,
+    )
+    return 2
 
 
 if __name__ == "__main__":

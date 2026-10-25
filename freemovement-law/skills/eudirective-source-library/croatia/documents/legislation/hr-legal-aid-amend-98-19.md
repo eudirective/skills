@@ -1,9 +1,9 @@
 # Amendment to Free Legal Aid Act NN 98/19
 
 - Jurisdiction: croatia
-- Candidate ID: `hr-legal-aid-amend-98-19`
+- Source ID: `hr-legal-aid-amend-98-19`
 - Source type: `amending_act`
-- Candidate URL: https://narodne-novine.nn.hr/clanci/sluzbeni/full/2019_10_98_1920.html
+- Official source URL: https://narodne-novine.nn.hr/clanci/sluzbeni/full/2019_10_98_1920.html
 - Resolved URL: https://narodne-novine.nn.hr/clanci/sluzbeni/full/2019_10_98_1920.html
 - Retrieved: 2026-10-19T02:22:18+00:00
 - Media type: `text/html`

@@ -1,9 +1,9 @@
 # Amendment NN 53/20
 
 - Jurisdiction: croatia
-- Candidate ID: `hr-eea-act-amend-53-20`
+- Source ID: `hr-eea-act-amend-53-20`
 - Source type: `amending_act`
-- Candidate URL: https://narodne-novine.nn.hr/clanci/sluzbeni/2020_04_53_1060.html
+- Official source URL: https://narodne-novine.nn.hr/clanci/sluzbeni/2020_04_53_1060.html
 - Resolved URL: https://narodne-novine.nn.hr/clanci/sluzbeni/2020_04_53_1060.html
 - Retrieved: 2026-10-19T02:21:15+00:00
 - Media type: `text/html`

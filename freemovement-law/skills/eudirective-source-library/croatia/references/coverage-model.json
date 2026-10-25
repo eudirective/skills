@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "jurisdiction": "HR",
   "review_scope": "EU free movement and third-country family-member visa, entry, residence, procedure, remedies, oversight, and operational practice",
-  "as_of": "2026-10-19",
+  "as_of": "2026-10-24",
   "completion_rule": "Country review is complete only when every required topic has all required layers covered by an accepted local artifact or a separately recorded usable official reference, or a reasoned not-applicable entry; every applicable Directive article has verified mapping or reasoned non-transposition status; every resolved dependency has current official evidence; applicable local-copy semantic/reuse checks pass; a case-law batch is fully screened; all operational discovery tasks have evidence-backed disposition; and no critical issue remains unresolved.",
   "required_layers": [
     "primary_law",
@@ -102,7 +102,7 @@
           "required_evidence": "At least one accepted local artifact or separately reviewed official reference within scope, or an explicit reasoned not-applicable conclusion."
         },
         "implementing_rule": {
-          "status": "candidate_only",
+          "status": "partially_supported",
           "source_ids": [
             "hr-visa-system-decree",
             "hr-visa-ordinance",
@@ -111,7 +111,7 @@
             "hr-admin-fees-tariff",
             "hr-admin-fees-tariff-amend-130-25"
           ],
-          "note": "New official fee sources identified; current text, exemptions, source acceptance and issue-level legal effect remain open.",
+          "note": "The accepted local Visa Rulebook and link-reviewed original Visa System Decree NN 92/21 support parts of the national implementing-rule layer. The 2021 decree states the visa-system and means-of-maintenance subject matter, implements Regulation (EU) 2018/1806, and repeals NN 55/15. Its current amendment chain and amounts are not verified; EEA-family exemption/facilitation, current procedures and issue-specific legal effect remain open. Partial support only.",
           "required_evidence": "Accept the applicable fee-law sources; map exact fee, exemption, refund/legal-aid route and procedural stage; then verify compatibility and practical route."
         },
         "procedure": {
@@ -730,36 +730,40 @@
       "status": "incomplete",
       "layers": {
         "primary_law": {
-          "status": "candidate_only",
+          "status": "partially_supported",
           "source_ids": [
             "hr-access-info-act",
             "hr-data-protection-act",
             "hr-law-enforcement-data-act",
-            "hr-ombudsman-act"
+            "hr-ombudsman-act",
+            "hr-access-info-amend-85-15",
+            "hr-access-info-amend-69-22"
           ],
-          "note": "Only located/captured leads; no source is accepted. Required legal provisions and operative version remain unverified.",
+          "note": "The accepted local Access to Information and Ombudsman Acts, the link-reviewed original GDPR implementation Act NN 42/18, the separately link-reviewed original law-enforcement data Act NN 68/18, and the two link-reviewed Access to Information Act amendments support parts of the national-law layer. Neither data-protection enactment is a verified consolidation. Law-enforcement applicability to any immigration/VIS/SIS operation, currentness and provision-level rights/remedy crosswalk remain open; this is partial support only.",
           "required_evidence": "At least one accepted local artifact or separately reviewed official reference within scope, or an explicit reasoned not-applicable conclusion."
         },
         "implementing_rule": {
-          "status": "candidate_only",
+          "status": "partially_supported",
           "source_ids": [
-            "hr-access-info-amend-85-15",
-            "hr-access-info-amend-69-22",
             "hr-vis-decree",
             "hr-vis-decree-amend-105-17"
           ],
-          "note": "Only located/captured leads; no source is accepted. Required legal provisions and operative version remain unverified.",
+          "note": "The current MUP and MVEP indexes list the Croatian VIS regulation NN 36/13 and amendment NN 105/17. The link-reviewed original text has Articles 35–37 on notices, access/correction/deletion and AZOP oversight; the amendment changes Article 21(3) access by MUP border officers. This is partial source support only. Current consolidated wording, the effect of later EU VIS law, processing-purpose/controller mapping, and current routes and remedies remain open.",
           "required_evidence": "At least one accepted local artifact or separately reviewed official reference within scope, or an explicit reasoned not-applicable conclusion."
         },
         "procedure": {
-          "status": "candidate_only",
+          "status": "partially_supported",
           "source_ids": [
-            "hr-access-info-commissioner",
-            "hr-azop-vis-sis",
+            "hr-mup-sis-rights-guidance",
+            "hr-mup-sis-access-form",
+            "hr-mup-sis-erasure-form",
+            "hr-mup-sis-correction-form",
+            "hr-mvep-vis-rights-guidance",
+            "hr-mvep-vis-rights-form",
             "hr-azop-complaint",
             "hr-ombudsman-complaints"
           ],
-          "note": "Only located/captured leads; no source is accepted. Required legal provisions and operative version remain unverified.",
+          "note": "The live MUP and MVEP references and their blank SIS/VIS forms support parts of the displayed request procedure and complaint route. The AZOP complaint article and Ombudsman complaint article are accepted local text copies checked on 2026-10-25; their interactive or linked forms are not retained. Restriction requests, authority competence across processing regimes, current contact details, statutory implementation and remedy effectiveness remain unresolved; this is partial support only.",
           "required_evidence": "At least one accepted local artifact or separately reviewed official reference within scope, or an explicit reasoned not-applicable conclusion."
         },
         "remedy_or_practice": {
@@ -774,7 +778,7 @@
       },
       "open_issues": [
         "Separate administrative-file access from information requests; map appeal/review, GDPR versus LED processing, controller, VIS/SIS routes, complaint forms and oversight competence.",
-        "No cited local artifact is accepted; separately reviewed official references may support their stated scope, but source presence is not proof of adequate legal coverage."
+        "The accepted SIS/VIS forms document current published request channels only; restriction-of-processing, law-enforcement processing, data-subject exceptions, authority competence, current contact details, complaint review and judicial remedies need provision-level verification. Visual layout review of the four new forms remains open."
       ],
       "coverage_questions": [
         "Separate administrative-file access from information requests; map appeal/review, GDPR versus LED processing, controller, VIS/SIS routes, complaint forms and oversight competence."
@@ -783,7 +787,7 @@
   ],
   "country_review_status": "incomplete",
   "topic_coverage_complete": false,
-  "last_review": "2026-10-21; four Croatian official links were reviewed within declared scopes (three MUP sources and one Constitutional Court decision); 17 local artifacts remain accepted; no topic promoted to complete.",
+  "last_review": "2026-10-25; seven archived authority article bodies or scoped excerpts are accepted as local guidance documents and two stale page leads remain excluded; 41 local artifacts are accepted; no topic promoted to complete.",
   "review_tracks_outside_four_layer_topic_map": [
     {
       "id": "case_law_discovery_and_analysis",
@@ -799,8 +803,7 @@
     }
   ],
   "source_acceptance_status": "partial",
-  "accepted_source_count": 17,
-  "manifest_source_count": 76,
+  "accepted_source_count": 43,
   "national_provision_crosswalk": {
     "path": "references/procedural-crosswalk.md",
     "status": "preliminary_primary_text_reviewed_immigration_application_open",
@@ -815,5 +818,6 @@
       "hr-admin-disputes-act"
     ],
     "policy": "A national provision crosswalk is evidence for issue-led mapping only. It cannot move a topic to covered or a country review to complete until special-law application, implementing rules, authority practice, remedies and open questions are resolved."
-  }
+  },
+  "source_record_count": 82
 }

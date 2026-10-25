@@ -1,0 +1,86 @@
+# PMLP: Declaration of place of residence
+
+- Jurisdiction: Latvia
+- Source ID: `lv-25`
+- Source type: `official_agency_guidance`
+- Official source: https://www.pmlp.gov.lv/en/declaration-residence-place
+- Publisher: www.pmlp.gov.lv
+- Language: `en`
+- Publisher/version evidence: Publisher/version note recorded during source review: Updated 03.06.2025; explains municipal/e-service/PMLP channels for persons with residence documents. Captured 2026-10-19; verify against any later publisher update.
+- Captured: 2026-10-19
+- Accepted local-copy scope: official official agency guidance reference: PMLP residence-declaration information updated 3 June 2025, accepted only as auxiliary residence-address guidance within that date; it does not determine the free-movement right or current local authority practice.
+- Text extraction: `class=block--system-main`; replayed from saved source bytes on 2026-10-24.
+- Source-response SHA-256: `d5f462899e55c764b4fec711e3d64e92c9adfe8282522ce8aea6a97a0e61aac1`
+- Original conversion SHA-256: `788108ce1eeab2b402d00cd2694dec9f8ad18c84019e3f48c70be11b3c92e242`
+- Final document SHA-256: recorded in the Latvia source-acceptance register.
+
+- Extraction limit: this is a text-only snapshot of the selected publisher content region. Page chrome, link destinations, embedded attachments, interactive behavior, images, and later updates are not reproduced; use the official URL for those items.
+- Review: official identity, displayed scope/version, source region, language, and legal/source classification were checked against the accepted-reference record. The pack’s deterministic replay check passed.
+- Additional limits:
+  - PMLP residence-declaration information updated 3 June 2025, accepted only as auxiliary residence-address guidance within that date; it does not determine the free-movement right or current local authority practice.
+  - Auxiliary operational obligation; validate law changes and Latvija.lv login/service route.
+
+> This local text acceptance is separate from current legal effect, topic coverage, and country-review completion.
+
+## Official source text
+
+
+Published: 06.10.2020.
+
+Updated: 03.06.2025.
+
+E-service "Declaration or designation of residence"
+
+Persons declared on my property and listed as additional address
+
+Check that the person has been declared at the specified address
+
+In accordance with the provisions of Declaration of Place of Residence Law, the following persons have a duty to declare a place of residence:
+
+a Latvian citizen;
+
+non-citizen;
+
+a citizen of the Member State of the European Union, European Economic Area State and Swiss Confederation and his or her family members who has received a registration certificate or permanent residence certificate issued in the Republic of Latvia;
+
+a foreigner who has received a residence permit issued in the Republic of Latvia;
+
+a stateless person who has received a residence permit issued in the Republic of Latvia.
+
+A person may declare the place of residence:
+
+in the local institution, where the new place of residence of the person is located;
+
+electronically on the portal www.latvija.lv, by using the e-service “Submission of the declaration of the place of residence”, the service is available, when authorisingthrough online banking authentication means (Swedbank, SEB banka, Citadele banka, Norvik banka, Meridian Trade Bank, Luminor, PrivatBank , Rietumu banka), personal identity card (eID) or safe electronic signature smart card (the relevant card and smart card reading device shall be required);
+
+In the Office of Citizenship and Migration Affairs - a citizen of the Member State of the European Union, the European Economic Area and Swiss Confederation and his or her family members, who have received a certificate of registration or permanent residence certificate issued in the Republic of Latvia, a foreigner, who has received a residence permit issued in the Republic of Latvia, a stateless person, who has received a residence permit issued in the Republic of Latvia, as well as a person in relation to whomthe Office of Citizenship and Migration Affairs has adopted a decision regarding determination of the legal status or issue of the residence permit, certificate of registration or permanent residence certificate.
+
+When declaring the place of residence with the Office of Citizenship and Migration Affairs or the relevant local declaration institution, a person shall pay the State fee in the amount of 4.27 euro, if the person is not exempted from payment of the State fee. If a person declared the place of residence electronically on the portal www.latvija.lv, the State fee for declaration of the place of residence shall not be paid.
+
+In accordance with the provisions of the Declaration of the Place of Residence Law, in case of change of the place of residence the person shall have a dutywithinone month, since the person habitually lives at the new place of residence, to declare it in the institution of declaration of the place of residence.
+
+When declaring the place of residence, a person:
+
+shall present a personal identity document - a passport, personal identity card (for the legal or authorised representative of a person in addition to the personal identity document - a document, confirming the right to operate on behalf of another person; a lawful representative shall not present a document confirming representation, if the relevant information is included in the Register of Natural Persons);
+
+shall submit a form for declaration of the place ofresidence. If a person has submitted an application for requesting a residence permit, certificate of registration or a permanent residence certificate or determination of the legal status thereof and the information specified in this application contains the information necessary for declaration, it shall be considered as the declaration of the place of residence;
+
+shall pay the State fee in the amount of 4.27 euro, if the person is not exempted from payment of the State fee.
+
+In accordance with the provisions of the Administrative Violations Code, for failure to declare the place of residence a warning shall be made to the person(Section 186, Paragraph two) or a fine shall be impose up to 350 euro, for knowingly giving untrue information to the institutions of declaration of the place of residence , when declaring the place of residence (Section 19010), a fine shall be imposed to the person from 70 to 500 euro, while for failure to notify the information to be included in the Register of Natural Persons in a timely manner to the territorial units of the Office of Citizenship and Migration Affairs, a fine shall be imposed to the person from 15 to 35 euro (Section 190³).
+
+On July 1, 2021, amendments to the Residence Declaration Law come into force, which stipulate that a person has the right to indicate one additional address in Latvia or abroad when declaring a place of residence. The mentioned amendments also provide that if a person has already declared a place of residence and it does not change, then he or she has the right to indicate or change information about an additional address in Latvia or abroad without submitting a new declaration of residence. On the other hand, if a person has indicated a place of residence abroad, this person has the right to indicate or change information regarding an additional address in Latvia or abroad.
+
+Quality feedback
+
+View more
+
+Print page
+
+Share
+
+Share this page content!
+
+Choose a social network where you want to share the content of this page.
+
+FacebookX / TwitterLinkedinThreads

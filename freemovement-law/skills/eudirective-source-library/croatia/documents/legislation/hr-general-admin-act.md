@@ -1,9 +1,9 @@
 # General Administrative Procedure Act NN 47/09
 
 - Jurisdiction: croatia
-- Candidate ID: `hr-general-admin-act`
+- Source ID: `hr-general-admin-act`
 - Source type: `general_procedure_act`
-- Candidate URL: https://narodne-novine.nn.hr/clanci/sluzbeni/2009_04_47_1065.html
+- Official source URL: https://narodne-novine.nn.hr/clanci/sluzbeni/2009_04_47_1065.html
 - Resolved URL: https://narodne-novine.nn.hr/clanci/sluzbeni/2009_04_47_1065.html
 - Retrieved: 2026-10-19T02:21:52+00:00
 - Media type: `text/html`

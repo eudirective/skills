@@ -1,20 +1,20 @@
 {
   "schema_version": "1.0",
-  "review_date": "2026-10-21",
+  "review_date": "2026-10-24",
   "jurisdiction": "BE",
   "status": "partial",
   "publisher_assessment": {
     "publisher": "Belgian federal, regional, community and municipal authorities, official legal databases and competent oversight bodies; N-Lex is an EU discovery service.",
-    "decision": "Accept 47 official links within their recorded source, date, language, institutional and procedural limits. One superseded IBZ route is not relied upon. No local copy or legal topic is accepted; Belgium review remains incomplete.",
-    "basis": "First-party Justel, IBZ, Foreign Affairs, regional/community legal services and official oversight pages provide usable human-reviewed links. Official consolidated texts are used where available. Where the exact current consolidated record is unclear or a site denies automated display, the complete official legal service is offered for human review.",
-    "limitation": "Link acceptance does not approve a local conversion, establish legal topic completeness, validate every linked form or case, or mark the country review complete. The Ostbelgien legal database expressly warns that only the original Gazette publication is legally binding."
+    "decision": "Accept 47 official links within their recorded scope and 30 local copies after separate review. One superseded IBZ route is not relied upon. No legal topic is accepted as adequately covered; Belgium review remains incomplete.",
+    "basis": "Accepted local copies have separate evidence for publisher identity, version/freshness limits, extraction completeness or native-file integrity, attachment scope and legal classification. Exact raw capture hashes were verified where retained; the current Codex source is a newly captured publisher response. Dynamic guidance and process pages retain date and scope caveats. External-link acceptance, local-copy acceptance and topic coverage remain separate. The Federal Justice adoption-abroad article was reviewed as a dated official guidance snapshot through its accessible www.justice.belgium.be route; it has no displayed update date and remains related guidance only. The Federal Justice guidance and the French APD complaint page have dated local snapshots accepted within recorded limits. Direct APD access returned maintenance text on 2026-10-24, so its currentness remains unresolved.",
+    "limitation": "Acceptance of official links and the accepted local source texts does not establish legal topic completeness, validate every linked form or case, or mark Belgium review complete. The Ostbelgien legal database expressly warns that only the original Gazette publication is legally binding."
   },
   "counts": {
     "candidate_records_reviewed": 48,
     "accepted_external_references": 47,
     "pending_external_references": 0,
     "not_relied_upon_superseded": 1,
-    "accepted_local_copies": 0,
+    "accepted_local_copies": 30,
     "accepted_topics": 0,
     "country_review_complete": false
   },
@@ -132,7 +132,7 @@
     },
     {
       "source_id": "be-annex-19ter-fr",
-      "decision": "Accept as the official-index-linked specimen only; confirm revision and classification before operational use."
+      "decision": "The current IBZ index links a 2015-named, image-only Annexe 19ter PDF with a prominent SPECIMEN watermark. The local file is accepted as that official-index-linked specimen only; confirm its revision and legal classification before operational use. It is not accepted as a blank current application form."
     },
     {
       "source_id": "be-rvv-case-sample-320874",
@@ -160,16 +160,475 @@
     }
   ],
   "coverage_gaps": [
-    "No legal topic is marked adequately covered.",
+    "No legal topic is marked adequately covered; accepted local copies are source acceptance only.",
     "Mission-specific instructions and local appointment/provider routes for applicant residence countries remain incomplete.",
     "Local residence procedures and competent authorities across Belgium remain incomplete.",
     "Broader RvV/CCE and other relevant court-case discovery and validation remain incomplete.",
     "The exact current DG public-documents decree and its 2022 amendment record remain to be located in the official DG law database.",
     "The Family Reunification page is incomplete/work in progress; legislation-based scope and procedure cross-check remains open.",
-    "Annex 19ter form revision/classification and the status of the older Annex 19ter file link need review against the current IBZ parent index.",
+    "Annex 19ter is stored only as the current-index-linked SPECIMEN; locate a blank operational form and verify its current revision and card-format classification before use.",
     "Access-to-records law and remedies need mapping by authority across federal, regional, community, provincial and municipal levels.",
     "Legal aid, local forms and procedural deadlines need issue-led review.",
-    "The current use and legal effect of the selected court cases remain unverified."
+    "The January 2025 RvV/CCE monthly selection is stored, but its featured item is not treated as a full judgment; broader case-law discovery and holding-level review remain open."
   ],
-  "policy": "A trustworthy official government consolidated text or clearly identified official page may be accepted as an external reference within its displayed status, version, language, date and subject. If authority, version or content is unclear, offer the whole official government website/service for human review. A human-reviewed link is sufficient for ordinary source use; a local copy, custom retrieval/conversion rule, API, full Gazette amendment chain, hash, replay or scheduled update is not a blanket prerequisite. External-link acceptance is separate from local-copy acceptance, issue/topic coverage and country review completion."
+  "policy": "A trustworthy official government consolidated text or clearly identified official page may be accepted as an external reference within its displayed status, version, language, date and subject. If authority, version or content is unclear, offer the whole official government website/service for human review. A human-reviewed link is sufficient for ordinary source use; a local copy, custom retrieval/conversion rule, API, full Gazette amendment chain, hash, replay or scheduled update is not a blanket prerequisite. External-link acceptance is separate from local-copy acceptance, issue/topic coverage and country review completion.",
+  "accepted_local_copy_ids": [
+    "be-law-1980-fr",
+    "be-law-1980-nl",
+    "be-rd-1981-fr",
+    "be-rd-1981-nl",
+    "be-administrative-motivation-act",
+    "be-publicity-act-1994",
+    "be-code-pil",
+    "be-01-law-of-16-july-2004-establishing-the-code-of-private-international-law",
+    "be-council-state-laws",
+    "be-eu-entry-residence",
+    "be-registration-certificate-change",
+    "be-visa-gdpr",
+    "be-federal-ombudsman-filing",
+    "be-federal-ombudsman-process",
+    "be-brussels-cada-guidance",
+    "be-visa-hub",
+    "be-uk-mission-eu-family-visa",
+    "be-uae-mission-eu-family-visa",
+    "be-annex-19-fr",
+    "be-annex-20-fr",
+    "be-visa-competence-matrix",
+    "be-d-visa-article9",
+    "be-federal-cada-appeal",
+    "be-dpa-complaint-nl",
+    "be-wallonia-publicity-decree",
+    "be-flanders-bestuursdecreet",
+    "be-rvv-case-sample-320874",
+    "be-annex-19ter-fr",
+    "be-05-federal-justice-guidance-recognition-registration-foreign-adoptions",
+    "be-dpa-complaint-fr"
+  ],
+  "local_copy_decisions": [
+    {
+      "source_id": "be-law-1980-fr",
+      "decision": "accepted",
+      "local_path": "source-library/belgium/documents/legislation/be-law-1980-fr.md",
+      "review_date": "2026-10-24",
+      "official_url": "https://www.ejustice.just.fgov.be/eli/loi/1980/12/15/1980121550/justel",
+      "evidence": {
+        "publisher_identity": "The official Justel ELI resolves to the Belgian Official Gazette legal database and displays NUMAC 1980121550.",
+        "version_currentness": "The publisher states that the text is updated through 2026-06-24. The same displayed date and 136 archived versions/331 implementing decrees were checked on 2026-10-24.",
+        "extraction_completeness": "Raw HTML SHA-256 matches the retained 2026-10-19 capture record. A fresh main-content extraction includes the full table of contents and consolidated text; Articles 40bis, 40ter, 42 and 62 were checked against current Justel page text. The original candidate conversion did not replay to its stored conversion hash and was superseded by this extraction.",
+        "attachments": "Justel separately links an official-publication image and a consolidated-PDF view, plus historical versions and implementing instruments. These are alternative representations or separate records and are not included in this local HTML text. The captured main content was reviewed for embedded payloads.",
+        "legal_classification": "Primary Belgian national immigration legislation; these are separate French and Dutch official representations of the same NUMAC instrument."
+      },
+      "scope_limit": "The record is accepted as the current publisher consolidation shown through 2026-06-24, within this language representation. It does not establish adequate coverage of any legal topic or completion of Belgium review."
+    },
+    {
+      "source_id": "be-law-1980-nl",
+      "decision": "accepted",
+      "local_path": "source-library/belgium/documents/legislation/be-law-1980-nl.md",
+      "review_date": "2026-10-24",
+      "official_url": "https://www.ejustice.just.fgov.be/eli/wet/1980/12/15/1980121550/justel",
+      "evidence": {
+        "publisher_identity": "The official Justel ELI resolves to the Belgian Official Gazette legal database and displays NUMAC 1980121550.",
+        "version_currentness": "The publisher states that the text is updated through 2026-06-24. The same displayed date and 136 archived versions/331 implementing decrees were checked on 2026-10-24.",
+        "extraction_completeness": "Raw HTML SHA-256 matches the retained 2026-10-19 capture record. A fresh main-content extraction includes the full table of contents and consolidated text; Articles 40bis, 40ter, 42 and 62 were checked against current Justel page text. The original candidate conversion did not replay to its stored conversion hash and was superseded by this extraction.",
+        "attachments": "Justel separately links an official-publication image and a consolidated-PDF view, plus historical versions and implementing instruments. These are alternative representations or separate records and are not included in this local HTML text. The captured main content was reviewed for embedded payloads.",
+        "legal_classification": "Primary Belgian national immigration legislation; these are separate French and Dutch official representations of the same NUMAC instrument."
+      },
+      "scope_limit": "The record is accepted as the current publisher consolidation shown through 2026-06-24, within this language representation. It does not establish adequate coverage of any legal topic or completion of Belgium review."
+    },
+    {
+      "source_id": "be-rd-1981-fr",
+      "decision": "accepted",
+      "local_path": "documents/legislation/be-rd-1981-fr.md",
+      "review_date": "2026-10-24",
+      "official_url": "https://www.ejustice.just.fgov.be/eli/arrete/1981/10/08/1981001949/justel",
+      "evidence": {
+        "publisher_identity": "Official French Justel ELI identifies Royal Decree NUMAC 1981001949, published 1981-10-27, and links this French consolidation.",
+        "version_currentness": "The official publisher page captured 2026-10-19 states that the consolidated text was updated through 2026-08-17. Acceptance is scoped to that observed publisher version; no fresh 2026-10-24 consolidation check is claimed.",
+        "extraction_completeness": "The captured HTML hash matches the saved source record. Re-extraction from the official main region retains the title, version notes, table of contents, full text and amendment notes; 40ter, the 39–42 articles heading and Annex 19 were checked.",
+        "attachments": "The page separately offers publication-image and consolidated-PDF views, 90 archived versions and 135 implementing decrees. Annexes omitted for technical reasons are identified in the retained source. Separate representations are not implied to be included.",
+        "legal_classification": "Federal implementing legislation for access, residence, forms and procedures. Topic tags are leads only; source acceptance does not establish coverage or compatibility with later EU law."
+      }
+    },
+    {
+      "source_id": "be-rd-1981-nl",
+      "decision": "accepted",
+      "local_path": "documents/legislation/be-rd-1981-nl.md",
+      "review_date": "2026-10-24",
+      "official_url": "https://www.ejustice.just.fgov.be/eli/besluit/1981/10/08/1981001949/justel",
+      "evidence": {
+        "publisher_identity": "Official Dutch Justel ELI identifies Royal Decree NUMAC 1981001949, published 1981-10-27, and links this Dutch consolidation.",
+        "version_currentness": "The official publisher page captured 2026-10-19 states that the consolidated text was updated through 2026-08-17. Acceptance is scoped to that observed publisher version; no fresh 2026-10-24 consolidation check is claimed.",
+        "extraction_completeness": "The captured HTML hash matches the saved source record. Re-extraction from the official main region retains the title, version notes, table of contents, full text and amendment notes; 40ter, the 39–42 articles heading and Bijlage 19 were checked.",
+        "attachments": "The page separately offers publication-image and consolidated-PDF views, 90 archived versions and 135 implementing decrees. Annexes omitted for technical reasons are identified in the retained source. Separate representations are not implied to be included.",
+        "legal_classification": "Federal implementing legislation for access, residence, forms and procedures. Topic tags are leads only; source acceptance does not establish coverage or compatibility with later EU law."
+      }
+    },
+    {
+      "source_id": "be-administrative-motivation-act",
+      "decision": "accepted",
+      "local_path": "documents/legislation/be-administrative-motivation-act.md",
+      "review_date": "2026-10-24",
+      "official_url": "https://www.ejustice.just.fgov.be/eli/loi/1991/07/29/1991000416/justel",
+      "evidence": {
+        "publisher_identity": "Official Justel record identifies the Law of 29 July 1991 by NUMAC 1991000416, published 1991-09-12 and effective 1992-01-01.",
+        "version_currentness": "The official Justel record was checked 2026-10-24. It shows the seven-article text but no consolidated-version date. This is the current publisher record observed on that date; it is not an immigration-specific appeals code.",
+        "extraction_completeness": "Captured HTML hash matches the source record. Main-region extraction includes all seven articles, legal text and publisher metadata; Articles 1–7 and Articles 2–4 were checked against the official page.",
+        "attachments": "The page separately links the official publication image and lists nine implementing decrees; these are not embedded in the retained text.",
+        "legal_classification": "General federal reason-giving law relevant to administrative decisions. It does not replace sector-specific procedures or remedies."
+      }
+    },
+    {
+      "source_id": "be-publicity-act-1994",
+      "decision": "accepted",
+      "local_path": "documents/legislation/be-publicity-act-1994.md",
+      "review_date": "2026-10-24",
+      "official_url": "https://www.ejustice.just.fgov.be/eli/loi/1994/04/11/1994000357/justel",
+      "evidence": {
+        "publisher_identity": "Official Justel ELI identifies the Law of 11 April 1994 by NUMAC 1994000357 and its federal publicity-of-administration subject.",
+        "version_currentness": "The official page checked 2026-10-24 states that the consolidation was updated through 2024-06-06. The same date appears in the 2026-10-19 capture; no later publisher date was shown.",
+        "extraction_completeness": "Captured HTML hash matches the source record. Main-region extraction includes the full table of contents, Articles 1–14, amendment notes and version data. Article 1 confirms federal scope and limited application to other bodies acting under federal competence.",
+        "attachments": "The record offers publication-image and consolidated-PDF views and lists six archived versions and 16 implementing decrees. Linked representations are not included in the local HTML text.",
+        "legal_classification": "Federal access-to-records statute. It does not set general procedures for regional, community, provincial or municipal authorities."
+      }
+    },
+    {
+      "source_id": "be-code-pil",
+      "decision": "accepted",
+      "local_path": "documents/legislation/be-code-pil-fr.md",
+      "review_date": "2026-10-24",
+      "official_url": "https://www.ejustice.just.fgov.be/eli/loi/2004/07/16/2004009511/justel",
+      "evidence": {
+        "publisher_identity": "Official French Justel ELI identifies the Law of 16 July 2004 containing the Code of Private International Law by NUMAC 2004009511.",
+        "version_currentness": "The official page checked 2026-10-24 states that the consolidated text was updated through 2026-06-12; the same date appears in the capture.",
+        "extraction_completeness": "Captured HTML hash matches the source record. Main-region extraction retains the full text and amendment notes. Articles 27, 30 and 31 on foreign authentic acts and civil-status matters were checked against the official page.",
+        "attachments": "The page separately offers publication-image and consolidated-PDF views and lists 20 archived versions and seven implementing decrees; they are separate records.",
+        "legal_classification": "National conflict-of-laws and recognition legislation relevant to foreign public documents and civil status. Apply with later EU instruments and dependencies; no legal equivalence is inferred."
+      }
+    },
+    {
+      "source_id": "be-01-law-of-16-july-2004-establishing-the-code-of-private-international-law",
+      "decision": "accepted",
+      "local_path": "documents/legislation/be-code-pil-nl.md",
+      "review_date": "2026-10-24",
+      "official_url": "https://www.ejustice.just.fgov.be/eli/wet/2004/07/16/2004009511/justel",
+      "evidence": {
+        "publisher_identity": "Official Dutch Justel ELI identifies the Law of 16 July 2004 containing the Code of Private International Law by NUMAC 2004009511.",
+        "version_currentness": "The official page checked 2026-10-24 states that the consolidated text was updated through 2026-06-12; the same date appears in the Dutch capture.",
+        "extraction_completeness": "Captured Dutch HTML hash matches the source record. Main-region extraction retains the full text and amendment notes. NUMAC and version date match the French record; Articles 27, 30 and 31 were checked in Dutch.",
+        "attachments": "The page separately offers publication-image and consolidated-PDF views and lists 20 archived versions and seven implementing decrees; they are separate records.",
+        "legal_classification": "National conflict-of-laws and recognition legislation relevant to foreign public documents and civil status. Apply with later EU instruments and dependencies; no legal equivalence is inferred."
+      }
+    },
+    {
+      "source_id": "be-council-state-laws",
+      "decision": "accepted",
+      "local_path": "documents/legislation/be-council-state-laws.md",
+      "review_date": "2026-10-24",
+      "official_url": "https://www.ejustice.just.fgov.be/eli/loi/1973/01/12/1973011250/justel",
+      "evidence": {
+        "publisher_identity": "Official French Justel ELI identifies the coordinated laws on the Council of State by NUMAC 1973011250.",
+        "version_currentness": "The official page checked 2026-10-24 states that the consolidated text was updated through 2026-06-24; that date appears in the capture.",
+        "extraction_completeness": "Captured HTML hash matches the source record. Main-region extraction retains title, consolidated text, table of contents and amendment notes. Articles 14 and 19 and the annulment/suspension procedure titles were checked against the official page.",
+        "attachments": "The page separately offers publication-image and consolidated-PDF views and lists 40 archived versions and 2,679 implementing decrees; they are not included in the retained HTML text.",
+        "legal_classification": "National procedural legislation governing the Council of State, relevant to judicial remedies. It alone does not establish admissibility, deadlines or the complete appeal route for a case."
+      }
+    },
+    {
+      "source_id": "be-eu-entry-residence",
+      "decision": "accepted",
+      "local_path": "documents/guidance/be-eu-entry-residence.md",
+      "review_date": "2026-10-24",
+      "official_url": "https://dofi.ibz.be/en/themes/citizens-european-union/right-entry-and-residence",
+      "evidence": {
+        "publisher_identity": "Official page opened 2026-10-24; no update date is displayed. It includes the 2026-08-03 MRZ rule and address-reporting application available since 2026-04-10. The exact local snapshot was captured 2026-10-19.",
+        "version_currentness": "Extraction retains entry, short-stay, long-stay, Annex 19, evidence and decision-period sections; these were checked against the official page. Its “EU citizen” wording includes associated-state nationals; preserve the wording, but do not treat it as a treaty classification.",
+        "extraction_completeness": "Linked legislation, Annexes and other guidance are separate records; no form is embedded or accepted with this file.",
+        "attachments": "Official administrative guidance, not primary law. Nationality and evidence propositions require cross-checking against the Immigration Law, Royal Decree and applicable EU/EEA law."
+      }
+    },
+    {
+      "source_id": "be-registration-certificate-change",
+      "decision": "accepted",
+      "local_path": "documents/procedure/be-registration-certificate-change.md",
+      "review_date": "2026-10-24",
+      "official_url": "https://dofi.ibz.be/en/news/registration-certificate-change-28-september-2026",
+      "evidence": {
+        "publisher_identity": "Official notice dated 2026-08-17, opened 2026-10-24; it describes the new model introduced from 2026-09-28. No later update date is shown.",
+        "version_currentness": "Extraction includes the model change, old-model validity, no replacement requirement and statement that conditions and rights do not change. Those points were checked against the official page.",
+        "extraction_completeness": "No technical model specification or model image is embedded in the notice.",
+        "attachments": "Dated operational notice on document format, not a change to residence rights or legal conditions."
+      }
+    },
+    {
+      "source_id": "be-visa-gdpr",
+      "decision": "accepted",
+      "local_path": "documents/guidance/be-visa-gdpr.md",
+      "review_date": "2026-10-24",
+      "official_url": "https://diplomatie.belgium.be/en/travel-belgium/visa-belgium/general-data-protection-regulation-gdpr",
+      "evidence": {
+        "publisher_identity": "The official page shows “Last updated on February 24, 2026”; the same date appeared when opened 2026-10-24 and in the 2026-10-19 capture.",
+        "version_currentness": "Extraction includes purpose, controllers and DPO contacts, legal bases, VIS retention/access, rights and complaint route; sections were compared with the official page.",
+        "extraction_completeness": "The page links to EU legal instruments and competent-authority information; separate legal texts are not part of this copy.",
+        "attachments": "Official privacy guidance for visa applicants, not a substitute for the GDPR, VIS Regulation, Visa Code, national implementation or a remedy decision."
+      }
+    },
+    {
+      "source_id": "be-federal-ombudsman-filing",
+      "decision": "accepted",
+      "local_path": "documents/oversight/be-federal-ombudsman-filing.md",
+      "review_date": "2026-10-24",
+      "official_url": "https://www.federalombudsman.be/en/filing-a-complaint",
+      "evidence": {
+        "publisher_identity": "No update date is displayed. The official public page was reopened in this review; Monitor has no registered Belgium runtime action. The capture is dated 2026-10-19; recheck operational routes before relying on them.",
+        "version_currentness": "Extraction includes federal jurisdiction, prior-contact step, confidentiality, online/email/post/in-person routes and postal address; these were compared with the official public page.",
+        "extraction_completeness": "Online and printable complaint forms are linked separately and were not submitted or retained here.",
+        "attachments": "Official federal oversight guidance, limited to federal public services. It does not replace statutory appeals or suspend deadlines."
+      }
+    },
+    {
+      "source_id": "be-federal-ombudsman-process",
+      "decision": "accepted",
+      "local_path": "documents/oversight/be-federal-ombudsman-process.md",
+      "review_date": "2026-10-24",
+      "official_url": "https://www.federalombudsman.be/en/complaints-process",
+      "evidence": {
+        "publisher_identity": "The official page has no update date. Its live public page was retrieved in this review; the source capture is dated 2026-10-19. It describes current intake and investigation sequence but says no deadline for the complaint itself.",
+        "version_currentness": "Raw HTML hash matches the source record. Main-region extraction includes acknowledgement/file number within five working days, federal-jurisdiction screening, investigation and possible mediation; these were compared with the official page.",
+        "extraction_completeness": "Related complaint forms and appointment pages are linked separately and are not included in this copy.",
+        "attachments": "Official federal oversight process guidance. It is not a statutory appeal route and does not displace deadlines."
+      }
+    },
+    {
+      "source_id": "be-brussels-cada-guidance",
+      "decision": "accepted",
+      "local_path": "documents/oversight/be-brussels-cada-guidance.md",
+      "review_date": "2026-10-24",
+      "official_url": "https://be.brussels/fr/propos-de-la-region/structure-et-organisation/administrations-et-institutions-de-la-region/commission-dacces-aux-documents-administratifs-cada",
+      "evidence": {
+        "publisher_identity": "No page-update date is displayed. The official page states that the displayed CADA composition applies from 2026-06-01; the 2026-10-19 local capture and 2026-10-24 official page show that same date.",
+        "version_currentness": "Raw HTML hash matches. Main-region extraction covers the joint 2019 decree/ordinance scope, active/passive publicity, CADA composition, contact details and further-information route; these items were compared with the official page.",
+        "extraction_completeness": "The page links to Editoria for detailed opinions and decisions; that separate database is not embedded.",
+        "attachments": "Regional/community procedural guidance for covered Brussels institutions; it is not a general Brussels remedy for every authority. Roster entries are date-bounded."
+      }
+    },
+    {
+      "source_id": "be-visa-hub",
+      "decision": "accepted",
+      "local_path": "documents/guidance/be-visa-hub.md",
+      "review_date": "2026-10-24",
+      "official_url": "https://diplomatie.belgium.be/en/travel-belgium/visa-belgium",
+      "evidence": {
+        "publisher_identity": "The FPS page states “Last updated on October 12, 2026”; the same date appeared on the capture and official page checked 2026-10-24.",
+        "version_currentness": "Raw HTML hash matches. Main-region extraction retains the Immigration Office authority link, mission competence and representation limits, current matrix links, privacy links and consular-service notes; key routing statements were checked against the official page.",
+        "extraction_completeness": "The competence matrix, country-code PDF, privacy documents and mission-specific instructions are separate linked sources, not embedded in this copy.",
+        "attachments": "Official consular navigation and routing guidance. It does not replace the relevant mission’s local process or the Immigration Office’s legal guidance."
+      }
+    },
+    {
+      "source_id": "be-uk-mission-eu-family-visa",
+      "decision": "accepted",
+      "local_path": "documents/guidance/be-uk-mission-eu-family-visa.md",
+      "review_date": "2026-10-24",
+      "official_url": "https://unitedkingdom.diplomatie.belgium.be/en/travel-belgium/visa-belgium/third-country-family-members-eu-citizens-and-eu-directive",
+      "evidence": {
+        "publisher_identity": "No page-update date is displayed. The official mission page was opened 2026-10-24; its current appointment constraint and TLScontact route match the 2026-10-19 local capture. Appointment capacity is volatile.",
+        "version_currentness": "Raw HTML hash matches. Main-region extraction includes direct, no-fee consular filing for qualifying Directive 2004/38 applicants, appointment requirement, TLScontact alternative and extra-service fees; those points were compared with the official page.",
+        "extraction_completeness": "The TLScontact instructions and application checklist are linked separately and may change; they are not embedded in this copy.",
+        "attachments": "Mission-specific guidance for the United Kingdom only. It is a dated operational snapshot and not a rule for other missions or all applicants."
+      }
+    },
+    {
+      "source_id": "be-uae-mission-eu-family-visa",
+      "decision": "accepted",
+      "local_path": "documents/guidance/be-uae-mission-eu-family-visa.md",
+      "review_date": "2026-10-24",
+      "official_url": "https://unitedarabemirates.diplomatie.belgium.be/en/travel-belgium/visa-belgium/schengen-visa-family-member-belgian-or-eu-national",
+      "evidence": {
+        "publisher_identity": "The official mission page displays “Last updated on May 21, 2026”; the same date appeared on the 2026-10-19 capture and page checked 2026-10-24.",
+        "version_currentness": "Raw HTML hash matches. Main-region extraction includes VFS submission, walk-in conditions for spouses/children, and separate treatment for mobile and non-mobile Belgian nationals; these were checked against the official page.",
+        "extraction_completeness": "VFS, Visa on Web and required-document links are separate and not included in this page copy.",
+        "attachments": "Mission-specific guidance for UAE applications only. It is not a general consular rule and its legal conditions should be checked against primary EU and Belgian law."
+      }
+    },
+    {
+      "source_id": "be-annex-19-fr",
+      "decision": "accepted",
+      "local_path": "source-library/belgium/documents/forms/be-annex-19-fr.pdf",
+      "review_date": "2026-10-24",
+      "official_url": "https://dofi.ibz.be/sites/default/files/2025-09/Annexe%2019_2025_0.pdf",
+      "evidence": {
+        "publisher_identity": "The current official IBZ French annex index links the PDF; the first page identifies Annexe 19 as an annex to the Royal Decree of 8 October 1981.",
+        "version_currentness": "The publisher-linked filename is 2025 and was linked from the annex index observed on 2026-10-24. Acceptance is limited to that specimen; no claim is made that the file itself states a consolidated legal-version date.",
+        "extraction_completeness": "The one-page official PDF text was checked through the publisher PDF viewer, including its statutory references, applicant categories, and statement that the paper does not itself confer identity, nationality, or a right to stay over three months. The local file SHA-256 and byte count match the downloaded source exactly. No conversion was used. Visual screenshot was unavailable.",
+        "attachments": "The one-page PDF is the form itself; no separately linked attachment is included.",
+        "legal_classification": "Official administrative form specimen for an application for an attestation of registration; not the governing legal text or proof of substantive entitlement."
+      },
+      "scope_limit": "Accepted as the exact French specimen linked from the official IBZ index on 2026-10-24. Recheck the index for later revisions before operational use; acceptance does not establish topic coverage or Belgium completion."
+    },
+    {
+      "source_id": "be-annex-20-fr",
+      "decision": "accepted",
+      "local_path": "source-library/belgium/documents/forms/be-annex-20-fr.pdf",
+      "review_date": "2026-10-24",
+      "official_url": "https://dofi.ibz.be/sites/default/files/2025-09/Annexe%2020_2025_0.pdf",
+      "evidence": {
+        "publisher_identity": "The current official IBZ French annex index links the PDF; the first page identifies Annexe 20 as an annex to the Royal Decree of 8 October 1981.",
+        "version_currentness": "The publisher-linked filename is 2025 and was linked from the annex index observed on 2026-10-24. Acceptance is limited to that specimen.",
+        "extraction_completeness": "Official PDF text was checked on both pages, including the refusal form and notification. The notice states a 30-day annulment appeal period and cites the relevant Immigration Law provisions. The local file SHA-256 and byte count match the downloaded source exactly. No conversion was used. Visual screenshot was unavailable.",
+        "attachments": "The two-page PDF includes both the decision and notification text; no separately linked attachment is included.",
+        "legal_classification": "Official administrative refusal/notification form under the Royal Decree of 8 October 1981; it is not a substitute for the governing law or case-specific deadline review."
+      },
+      "scope_limit": "Accepted as the exact French specimen linked from the official IBZ index on 2026-10-24. Recheck the index for later revisions; the form text does not determine an individual case deadline or legal outcome."
+    },
+    {
+      "source_id": "be-visa-competence-matrix",
+      "decision": "accepted",
+      "local_path": "source-library/belgium/documents/guidance/be-visa-competence-matrix-en.pdf",
+      "review_date": "2026-10-24",
+      "official_url": "https://diplomatie.belgium.be/sites/default/files/2026-10/Visa_Competence_and_Representation_EN_12102026.pdf",
+      "evidence": {
+        "publisher_identity": "The PDF is published by FPS Foreign Affairs and linked from the official central visa hub.",
+        "version_currentness": "The matrix is dated 2026-10-12 and was linked from the central hub observed on 2026-10-24. It is a dated routing snapshot; subsequent changes are possible.",
+        "extraction_completeness": "The official viewer identifies a 16-page PDF with country, competent mission, representation and VAC/provider columns. Table structure and sample routing rows, including UK and UAE, were checked. No all-row review or visual screenshot is claimed. The native local file SHA-256 and byte count match the downloaded PDF exactly; no conversion was used.",
+        "attachments": "The PDF contains the routing table itself; no separate attachment is included.",
+        "legal_classification": "Official consular operations routing aid for visa competence, representation and outsourced application centres; it is not legislation and does not replace current mission-specific instructions."
+      },
+      "scope_limit": "Accepted as the 2026-10-12 matrix linked from the central hub on 2026-10-24. Applicants and caseworkers must confirm the relevant mission and provider route on current official pages."
+    },
+    {
+      "source_id": "be-d-visa-article9",
+      "decision": "accepted",
+      "local_path": "source-library/belgium/documents/guidance/be-d-visa-article9.md",
+      "review_date": "2026-10-24",
+      "official_url": "https://dofi.ibz.be/en/themes/third-country-nationals/residence-permit-9bis-9ter/d-visa-application-article-9",
+      "evidence": {
+        "publisher_identity": "The official page is hosted by the named Belgian federal authority and the official route was opened in this review.",
+        "version_currentness": "The live official page was opened on 2026-10-24. It states the usual abroad application route, type D visa, arrival registration within 8 days, and ordinary renewal window 60 to 30 days before expiry.",
+        "extraction_completeness": "The full official page body was captured 2026-10-19 and re-extracted from its main region. The key application, arrival-registration and renewal passages were checked against the live official page on 2026-10-24. The raw SHA-256 matches the manifest. Raw capture SHA-256 matches the manifest. The accepted document is a cleaned main-region text extraction, not a legal consolidation.",
+        "attachments": "The page links separately to mission instructions and extension guidance; those pages are not embedded in this local copy.",
+        "legal_classification": "Official Immigration Office operational guidance for general Article 9 national long-stay D-visa applications and residence-permit renewal; not the Visa Code process for short stays or the EU-family free-movement procedure."
+      },
+      "scope_limit": "General Article 9 D-visa guidance only. Competent missions, supporting documents, fees/appointments and any special regime must be checked on the applicable official mission page."
+    },
+    {
+      "source_id": "be-federal-cada-appeal",
+      "decision": "accepted",
+      "local_path": "source-library/belgium/documents/oversight/be-federal-cada-appeal-fr.md",
+      "review_date": "2026-10-24",
+      "official_url": "https://www.ibz.rrn.fgov.be/fr/commissions/publicite-de-ladministration/le-recours-administratif",
+      "evidence": {
+        "publisher_identity": "The official page is hosted by the named Belgian federal authority and the official route was opened in this review.",
+        "version_currentness": "The official French page was opened on 2026-10-24. It states that both requests must be sent simultaneously, lists documents to attach to an opinion request, and describes the authority’s final decision within 15 days after the Commission opinion.",
+        "extraction_completeness": "The full page body was captured 2026-10-19 and re-extracted; the paired-request, attachment and 15-day passages were checked against the official page opened on 2026-10-24. The raw SHA-256 matches the manifest. Raw capture SHA-256 matches the manifest. The accepted document is a cleaned main-region text extraction, not a legal consolidation.",
+        "attachments": "Commission opinions and the referenced Council of State procedural page are separate records and are not embedded here.",
+        "legal_classification": "Official Federal CADA process guidance for federal access-to-administrative-documents requests; it is not the appeal route for regional or community CADA bodies."
+      },
+      "scope_limit": "Federal administrative-reconsideration / opinion-request route only. It does not establish the substantive rule for non-federal records or remove any separate judicial filing requirements."
+    },
+    {
+      "source_id": "be-dpa-complaint-nl",
+      "decision": "accepted",
+      "local_path": "source-library/belgium/documents/oversight/be-dpa-complaint-nl.md",
+      "review_date": "2026-10-24",
+      "official_url": "https://dataprotectionauthority.be/burger/acties/klacht-indienen",
+      "evidence": {
+        "publisher_identity": "The official page is hosted by the named Belgian federal authority and the official route was opened in this review.",
+        "version_currentness": "The official Dutch page describes information, mediation and formal complaint routes and states that first-line mediation may be used where appropriate under the policy effective 2026-03-01.",
+        "extraction_completeness": "The main-content extraction from the 2026-10-19 official capture was checked against the official page text exposed in the browser review. The browser returned a cached crawl from about two weeks earlier, so this remains a dated snapshot, not a claim of fresh server retrieval. The raw SHA-256 matches the manifest. Raw capture SHA-256 matches the manifest. The accepted document is a cleaned main-region text extraction, not a legal consolidation.",
+        "attachments": "The online portal, mediation policy, complaint forms and detailed dismissal criteria are linked separately and not included.",
+        "legal_classification": "Official Dutch-language complaint-procedure guidance from the Belgian Data Protection Authority. It is a procedural locator and is not itself the Federal Data Protection Act or an individual decision."
+      },
+      "scope_limit": "Dutch page snapshot from 2026-10-19. The page’s stated policy date is 2026-03-01; check the live Dutch page and portal for current procedural requirements before filing."
+    },
+    {
+      "source_id": "be-wallonia-publicity-decree",
+      "decision": "accepted",
+      "local_path": "source-library/belgium/documents/legislation/be-wallonia-publicity-decree-2026-04-01-fr.pdf",
+      "review_date": "2026-10-24",
+      "official_url": "https://wallex.wallonie.be/eli/loi-decret/1995/03/30/1995027312",
+      "evidence": {
+        "publisher_identity": "Official WALLEX ELI 19975 identifies the Walloon Decree of 30 March 1995 on publicity of administration; its Download link served the native PDF.",
+        "version_currentness": "Publisher PDF states it is in force from 2026-04-01 and identifies the Decree-programme of 26 March 2026 among amendments. Live ELI and PDF reviewed 2026-10-24.",
+        "extraction_completeness": "Eight-page native PDF preserved byte-for-byte; browser PDF text extraction checked the title, scope, Articles 1, 3, 5–8quinquies and in-force date. Local hash and byte count match the downloaded official response. No text conversion; visual screenshot unavailable.",
+        "attachments": "All eight pages are part of the consolidated PDF; no separate attachment included.",
+        "legal_classification": "Primary Walloon regional decree on active/passive publicity of administration, request procedure, exceptions and regional appeal route."
+      },
+      "scope_limit": "Accepted as the WALLEX edition in force from 2026-04-01 and observed 2026-10-24. It applies only within statutory Walloon scope and is not a nationwide Belgian rule."
+    },
+    {
+      "source_id": "be-flanders-bestuursdecreet",
+      "decision": "accepted",
+      "local_path": "source-library/belgium/documents/legislation/be-flanders-bestuursdecreet-2018-nl.md",
+      "review_date": "2026-10-24",
+      "official_url": "https://codex.vlaanderen.be/PrintDocument.ashx?geannoteerd=false&id=1030009",
+      "evidence": {
+        "publisher_identity": "Official Vlaamse Codex print record 1030009 identifies the Bestuursdecreet of 7 December 2018; publisher identifier NUMAC 2018032457.",
+        "version_currentness": "Full unannotated HTML was newly downloaded from the publisher on 2026-10-24. Current page records article-level effective dates. The older 2026-10-19 candidate capture differed and was not reused.",
+        "extraction_completeness": "Full main text and contents were extracted from the official unannotated print HTML. The Title II Chapter 3 access-to-documents provisions, request procedure, correction process and appeal procedure were checked in the current page. Raw current response SHA-256 is recorded in the manifest; final text file has its own hash and byte count.",
+        "attachments": "The Codex page includes the legal text and article version annotations; linked amendment instruments and other Codex records are separate.",
+        "legal_classification": "Primary Flemish decree governing public-administration matters, including access to administrative documents and related appeals within its scope."
+      },
+      "scope_limit": "Accepted as the full unannotated Codex text downloaded 2026-10-24, with article-level dates reproduced. Applies to Flemish authorities and other entities in its defined scope; it is not a nationwide Belgian access rule."
+    },
+    {
+      "source_id": "be-rvv-case-sample-320874",
+      "decision": "accepted",
+      "local_path": "source-library/belgium/documents/case_law/be-rvv-selected-jurisprudence-2025-01-fr.pdf",
+      "review_date": "2026-10-24",
+      "official_url": "https://www.rvv-cce.be/sites/default/files/mr-arr/sel-arr-202501-f.pdf",
+      "evidence": {
+        "publisher_identity": "The PDF first page identifies the Council for Alien Law Litigation and the French selected-judgments publication. The official source URL and captured PDF response are retained in the manifest.",
+        "version_currentness": "This is the historical January 2025 issue. It was captured from the official French PDF route on 2026-10-19; that URL returned 403 on 2026-10-24. The official Dutch-language parallel issue is indexed and its extracted text contains the same judgment 320874. No claim is made that the French PDF endpoint is currently downloadable.",
+        "extraction_completeness": "The exact native PDF SHA-256 and byte count match the captured source. The archived PDF text extraction identifies the 116-page issue, report period, judgment 320874, selected synopsis, reasoning and disposition. No conversion is used in the final file. Visual inspection was unavailable.",
+        "attachments": "The monthly selected-jurisprudence PDF is the document itself; it does not include an independently linked full case file.",
+        "legal_classification": "Official selected-case publication, not legislation or an exhaustive case-law collection. The item for case 320874 is a selected presentation and is not relied on as a substitute for the complete judgment."
+      },
+      "scope_limit": "Accepted only as the native January 2025 French selected-jurisprudence issue. It does not establish the complete text of judgment 320874, the current rule, or general RvV/CCE case-law coverage."
+    },
+    {
+      "source_id": "be-annex-19ter-fr",
+      "decision": "accepted",
+      "local_path": "source-library/belgium/documents/forms/be-annex-19ter-fr-specimen.pdf",
+      "review_date": "2026-10-24",
+      "official_url": "https://dofi.ibz.be/sites/default/files/2021-12/Annexe%2019ter_2015.pdf",
+      "evidence": {
+        "publisher_identity": "The current French IBZ annex index lists Annexe 19ter with a download labeled 628.66 KB; the direct download is served from the official dofi.ibz.be domain. The PDF title metadata and page heading identify Annexe 19ter to the Royal Decree of 8 October 1981.",
+        "version_currentness": "The index checked 2026-10-24 continues to link the file named Annexe 19ter_2015.pdf. This is accepted only as the index-linked specimen, not as proof of a currently usable blank form or current revision.",
+        "extraction_completeness": "The official two-page PDF is image-only. Both pages were visually rendered and inspected: the first identifies the family-member residence-card application and applicable legal references; the second contains the remainder of the form and a statement that the document is not proof of identity or nationality. A red SPECIMEN watermark crosses both pages. The file SHA-256 and bytes exactly match the original downloaded PDF and archived capture.",
+        "attachments": "The two-page PDF is the specimen itself; no separate attachment is included.",
+        "legal_classification": "Official form specimen for a family member’s residence-card application under the 1981 Royal Decree; not a blank operational form, legislation, or proof of residence entitlement."
+      },
+      "scope_limit": "Accepted only as the two-page specimen linked from the current French IBZ annex index on 2026-10-24. Its SPECIMEN watermark and 2015 filename limit operational use; confirm current blank form and legal/card-format status separately."
+    },
+    {
+      "source_id": "be-05-federal-justice-guidance-recognition-registration-foreign-adoptions",
+      "decision": "accepted",
+      "local_path": "documents/guidance/be-justice-international-adoption.md",
+      "review_date": "2026-10-24",
+      "official_url": "https://www.justice.belgium.be/fr/themes_et_dossiers/personnes_et_familles/adoption/adoption_a_letranger",
+      "evidence": {
+        "publisher_identity": "The official page identifies the Belgian Federal Public Service Justice and is hosted under the official justice.belgium.be domain.",
+        "version_currentness": "The visible official page was reviewed on 2026-10-24 through the www subdomain; the web index reported a crawl about five days earlier. No article publication or update date is displayed. The snapshot preserves this limit and is not treated as current legal text.",
+        "extraction_completeness": "The visible article body and seven-step process, including recognition and municipal registration, were compared against the official page. Navigation, footer, service-wide notice, and the “Simple Doormat” template label were excluded. Linked forms and subpages are not included.",
+        "attachments": "The page links to separate recognition steps and a form; these remain separate records and are not embedded attachments.",
+        "legal_classification": "Federal Justice administrative guidance on recognition and registration of foreign adoption decisions. It is related background only, not primary legislation or a free-movement rule."
+      },
+      "scope_limit": "Dated snapshot with no displayed update date. Use the governing Civil Code and competent Community authorities for legal requirements; this record does not establish topic coverage or Belgium completion."
+    },
+    {
+      "source_id": "be-dpa-complaint-fr",
+      "decision": "accepted",
+      "local_path": "source-library/belgium/documents/oversight/be-dpa-complaint-fr.md",
+      "review_date": "2026-10-24",
+      "official_url": "https://www.dataprotectionauthority.be/citoyen/agir/introduire-une-plainte",
+      "evidence": {
+        "publisher_identity": "The candidate capture and current official search-index result identify the Belgian Data Protection Authority (APD/GBA) and the French complaint-route page.",
+        "version_currentness": "The snapshot is dated 2026-10-19 and says the first-line mediation policy applies from 2026-03-01. Direct page access returned a maintenance page on 2026-10-24. A recent official search-index copy showed the article but is not treated as live access; currentness remains unresolved.",
+        "extraction_completeness": "The archived main article was compared with the official search-index text for information, mediation and complaint choices, the one-month wait after exercising data rights, admissibility conditions, portal and paper routes, and special police/intelligence oversight. Two merged-word spacing defects were corrected. The original raw response is not retained; acceptance is date-bound.",
+        "attachments": "The APD portal, paper forms, login help, mediation policy, and detailed dismissal criteria are linked separately and not included.",
+        "legal_classification": "Official APD procedural guidance. It is not the Federal Data Protection Act, an immigration appeal procedure, or a guarantee that a complaint will be examined on its merits."
+      },
+      "scope_limit": "Dated snapshot only; direct page was under maintenance on 2026-10-24. Confirm the restored official page before relying on current filing steps. No topic coverage or Belgium completion is established."
+    }
+  ]
 }

@@ -1,9 +1,9 @@
 # Free Legal Aid Act NN 143/13
 
 - Jurisdiction: croatia
-- Candidate ID: `hr-legal-aid-act`
+- Source ID: `hr-legal-aid-act`
 - Source type: `legal_aid_act`
-- Candidate URL: https://narodne-novine.nn.hr/clanci/sluzbeni/2013_12_143_3064.html
+- Official source URL: https://narodne-novine.nn.hr/clanci/sluzbeni/2013_12_143_3064.html
 - Resolved URL: https://narodne-novine.nn.hr/clanci/sluzbeni/2013_12_143_3064.html
 - Retrieved: 2026-10-19T02:22:16+00:00
 - Media type: `text/html`

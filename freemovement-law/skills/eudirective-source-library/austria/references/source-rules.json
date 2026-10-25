@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "jurisdiction": "AT",
-  "updated": "2026-10-19",
+  "updated": "2026-10-24",
   "policy": {
     "scope": "The 74-record manifest contains 73 accepted sources, no captured pending-review candidates, and one discovery-only index. It is a bounded inventory, not an exhaustive country review. The fixed monitor checks registered records; separate manual discovery plans address missing cases, missions, and Länder practice.",
     "retrieval": "Use only the official URLs and hosts in the manifest. Make ordinary public HTTPS requests to one record at a time. Do not use RIS OGD/API, registration, parallel requests, authentication, browser challenge bypass, or undocumented bulk exports. If OGD is introduced later, first follow the current RIS OGD FAQ notice, timing, rate, and attribution requirements.",
@@ -239,7 +239,7 @@
           "scheduled-filtered-body-review-v1"
         ]
       },
-      "sustainability": "The fixed BMEIA directory page is checked monthly for change and identity, and changed captures are staged for review. Following the current directory entries to mission-specific pages remains a separate location-dependent discovery task."
+      "sustainability": "The registered Austria check action can check the fixed BMEIA directory page for changes and identity; raw responses remain in the monitor local-only archive. Following current directory entries to mission-specific pages remains a separate location-dependent discovery task."
     },
     {
       "id": "ris-annex-pdf-v1",
@@ -399,13 +399,13 @@
     }
   ],
   "monitor": {
-    "script": "source-library/austria/sync_austria_sources.py",
-    "workflow": ".github/workflows/austria-source-monitor.yml",
-    "schedule_utc": "37 3 1 * *",
+    "script": null,
+    "workflow": null,
+    "schedule_utc": null,
     "scope": "Only fixed records in references/candidate-manifest.json; no broad RIS search, mission-page discovery, or Land-practice discovery. Separate discover and discover-operations actions create repeatable manual research queues; they do not run searches or accept sources.",
-    "change_output": "Changed raw captures and derived review candidates are staged under source-library/austria/pending-updates/ and proposed through a pull request. The workflow never accepts or overwrites candidate content.",
+    "change_output": "Changed raw responses and derived review candidates belong in the EU Source Update Monitor local-only archive, indexed through its archive index. Do not store them under the country pack or publish them in a pull request.",
     "network": "Ordinary serial HTTPS GETs to manifest allowlisted official hosts; no RIS OGD/API, authentication, challenge bypass, or parallel retrieval.",
-    "activation": "The workflow file and monthly schedule are present in eudirective/public-data. On 2026-10-19, the GitHub run-list query could not connect to api.github.com; successful execution and Actions enablement therefore remain unverified. Do not describe scheduled monitoring as operational until a successful run is recorded.",
+    "activation": "The repository GitHub Actions workflow was retired on 2026-10-24 because it published raw captures and pending candidates in the country pack. Use the registered EU Source Update Monitor Austria check/capture actions. No successful run or schedule is asserted here.",
     "selectors": {
       "at-guidance-family-card": "main",
       "at-guidance-family-index": "main",
@@ -416,7 +416,8 @@
       "at-guidance-visa-application": "main",
       "at-bmeia-representation-directory": "filtered body fallback; human review remains mandatory",
       "at-lvwg-wien-2022-6086": "div.contentBlock"
-    }
+    },
+    "action": "EU Source Update Monitor: austria/check and austria/capture"
   },
   "reference_use_policy": "For every source type, prefer the responsible official publisher. Prefer a usable government-published consolidation for national legislation and the responsible EU publisher consolidation for EU legislation; if none is usable, use the closest government-published or official-service version and record its language, displayed date/cutoff, scope, and limits. A human-reviewed official link is enough for ordinary research; a custom capture/conversion rule, local copy, API, replay check, or updater is optional. Use Gazette fragments only to resolve a material question; do not reconstruct a full chain by default. Keep reference use, local-copy acceptance, topic coverage, and country completion separate. The acquisition and change-handling rules below describe the optional local monitor; they do not gate manual use of a reviewed official reference."
 }

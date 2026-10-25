@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Retrieve Latvian official pages and preserve current review candidates."""
+"""Retrieve Latvian official pages into temp and verify reviewed local copies."""
 from __future__ import annotations
 
 import hashlib
@@ -99,7 +99,7 @@ def pdf_markdown(item: dict, record: dict, raw: bytes) -> tuple[bytes, dict[str,
         f"- Official source page: {page_url}",
         f"- PDF URL: {record.get('resolved_url') or record.get('source_url')}",
         f"- Retrieved: {record.get('retrieved_at', 'date not recorded')}",
-        f"- Original PDF path: `{record.get('candidate_source_path', record.get('raw_path'))}`",
+        f"- Original PDF path: `{record.get('candidate_source_path') or record.get('pdf_capture_original_path') or record.get('local_source_path') or record.get('raw_path')}`",
         f"- Original PDF SHA-256: `{record['source_sha256']}`",
         f"- Original PDF bytes: {record['source_bytes']}",
         f"- Conversion rule: `{PDF_CONVERSION_VERSION}` using `pypdf=={PDF_LIBRARY_VERSION}`",
@@ -130,6 +130,13 @@ def html_change_hash(data: bytes) -> str:
     return sha256(stable)
 
 
+def source_body(content: str) -> str | None:
+    for marker in ("## Official source text\n", "## Text extracted by page\n"):
+        if marker in content:
+            return content.split(marker, 1)[1].strip()
+    return None
+
+
 def candidate_body(path: str | None) -> str | None:
     if not path:
         return None
@@ -137,8 +144,7 @@ def candidate_body(path: str | None) -> str | None:
         content = inside_root(path).read_text(encoding="utf-8")
     except (OSError, UnicodeDecodeError):
         return None
-    marker = "## Official source text\n"
-    return content.split(marker, 1)[1].strip() if marker in content else None
+    return source_body(content)
 
 
 def atomic_write(path: Path, data: bytes) -> None:
@@ -420,7 +426,7 @@ def changed_output_path(candidate_id: str, source_hash: str, previous: dict | No
             path = f"temp/latvia/pending/{slug(candidate_id)}-{source_hash[:16]}.{suffix}"
         return path, "changed_review_candidate", previous_path
     suffix = "pdf" if kind == "pdf" else "md"
-    path = f"source-library/latvia/candidates/{slug(candidate_id)}.{suffix}"
+    path = f"temp/latvia/pending/{slug(candidate_id)}-{source_hash[:16]}.{suffix}"
     return path, "source_pdf_review_candidate_not_text_extracted" if kind == "pdf" else "converted_review_candidate", None
 
 
@@ -544,12 +550,13 @@ def update_manifest(manifest: dict, results: list[dict]) -> None:
     retrieved = sum(bool(x.get("retrieved")) for x in by_id.values())
     converted = sum(x.get("retrieval_status") in {"converted_review_candidate", "changed_review_candidate"} for x in by_id.values())
     binaries = sum(x.get("retrieval_status") == "source_pdf_review_candidate_not_text_extracted" for x in by_id.values())
-    manifest["status"] = "partially_retrieved_review_candidates"
+    manifest["status"] = "partial_local_copy_acceptance_with_new_review_outputs"
     captures = results
     html_texts = sum(bool(x.get("candidate_text_path")) and x.get("source_content_type") != "application/pdf" for x in captures)
     pdf_texts = sum(bool(x.get("candidate_text_path")) and x.get("source_content_type") == "application/pdf" for x in captures)
-    manifest["retrieval_status"] = f"{converted} texts converted ({html_texts} HTML, {pdf_texts} PDF); {binaries} official PDFs remain without text extraction; repository/database leads remain monitor-only; publisher terms and source coverage remain under review"
-    manifest["accepted_source_count"] = 0
+    accepted_local = sum(bool(x.get("local_copy_accepted")) for x in by_id.values())
+    manifest["retrieval_status"] = f"{accepted_local} local text copies remain separately accepted; {converted} newly retrieved texts are staged for review ({html_texts} HTML, {pdf_texts} PDF); {binaries} official PDFs remain without text extraction; repository/database leads remain monitor-only"
+    manifest["accepted_source_count"] = accepted_local
     manifest["retrieved_review_candidate_count"] = retrieved
     manifest["converted_review_candidate_count"] = converted
     manifest["preserved_pdf_candidate_count"] = sum(bool(x.get("candidate_source_path")) for x in captures)
@@ -576,6 +583,19 @@ def sync() -> None:
             })
         if index < len(manifest.get("documents", [])) - 1:
             time.sleep(REQUEST_DELAY_SECONDS)
+    previous_by_id = {x.get("candidate_id"): x for x in prior.get("records", [])}
+    preserve_keys = (
+        "local_copy_path", "local_copy_sha256", "local_copy_reviewed_on", "local_copy_archive_path",
+        "local_copy_accepted", "local_source_path", "local_source_sha256", "source_pdf_archive_path",
+        "candidate_archive_path", "candidate_source_archive_path",
+    )
+    for result in results:
+        previous = previous_by_id.get(result.get("candidate_id"), {})
+        for key in preserve_keys:
+            if key in previous:
+                result[key] = previous[key]
+        if previous.get("local_copy_accepted"):
+            result["accepted"] = True
     finalize(results)
     retrieval = {
         "manifest_version": 1,
@@ -583,10 +603,12 @@ def sync() -> None:
         "as_of_date": as_of,
         "method": "Retrieve candidate pages with ordinary HTTPS GET and no account/API registration. Redirects remain on allowlisted official hosts. Likumi.lv acts are extracted from doc-body; identified Drupal guidance pages use block--system-main; other official pages use their configured main-content container. Official PDFs are retained byte-for-byte and page-text extracted with pinned pypdf 6.21.1; cryptographic signature validation and reconstruction of interactive form behavior are not performed.",
         "request_policy": {"timeout_seconds": TIMEOUT, "max_response_bytes": MAX_BYTES, "delay_seconds": REQUEST_DELAY_SECONDS},
-        "change_detection": "Preserve and record the exact response hash. For HTML comparison, ignore script elements, Drupal js-view-dom-id hashes, and the rotating csrf-token value identified in repeated captures; retain all other markup and links in the comparison digest. A remaining response change stages a new review candidate under temp/latvia/pending. PDFs use exact-byte hashes. Prior candidates are preserved for review and no source is automatically accepted.",
-        "publisher_terms": "Likumi.lv terms allow reuse of systematised acts only under the information-access laws and applicable fees; the keeper organises reuse. Latvijas Vēstnesis says reuse must be coordinated in writing with the intended purpose and product/service, and its public interface currently supports grouped official-notice reuse. Confirm in writing whether a recurring legal-text monitor is covered and what fee applies; no crawler rate limit was found. All captures remain unaccepted.",
+        "change_detection": "Preserve and record the exact response hash. For HTML comparison, ignore script elements, Drupal js-view-dom-id hashes, and the rotating csrf-token value identified in repeated captures; retain all other markup and links in the comparison digest. A remaining response change stages a new review candidate under temp/latvia/pending. PDFs use exact-byte hashes. Prior accepted local copies remain separate; new retrievals are staged under temp/latvia/pending for manual review and Monitor archiving. No source is automatically accepted.",
+        "publisher_terms": "Likumi.lv terms allow reuse of systematised acts only under the information-access laws and applicable fees; the keeper organises reuse. Latvijas Vēstnesis says reuse must be coordinated in writing with the intended purpose and product/service, and its public interface currently supports grouped official-notice reuse. Confirm in writing whether a recurring legal-text monitor is covered and what fee applies; no crawler rate limit was found. New captures remain unaccepted until manual review; prior accepted local snapshots retain their separate decisions.",
         "records": results,
-        "accepted_source_count": 0,
+        "accepted_source_count": sum(bool(x.get("local_copy_accepted")) for x in results),
+        "promotion_review_date": prior.get("promotion_review_date"),
+        "promotion_summary": prior.get("promotion_summary"),
     }
     update_manifest(manifest, results)
     atomic_write(CANDIDATES, (json.dumps(manifest, ensure_ascii=False, indent=2) + "\n").encode("utf-8"))
@@ -599,7 +621,7 @@ def reconvert() -> None:
     captures = json.loads(CAPTURES.read_text(encoding="utf-8"))
     documents = {x["id"]: x for x in manifest.get("documents", [])}
     for record in captures.get("records", []):
-        if not record.get("candidate_text_path"):
+        if record.get("local_copy_accepted") or not record.get("candidate_text_path"):
             continue
         raw = inside_root(record["raw_path"]).read_bytes()
         if sha256(raw) != record["source_sha256"]:
@@ -638,23 +660,26 @@ def reconvert() -> None:
 
 
 def convert_pdfs() -> None:
-    """Convert preserved PDFs without fetching or modifying the source bytes."""
+    """Convert unaccepted preserved PDFs into the temp review area only."""
     manifest = json.loads(CANDIDATES.read_text(encoding="utf-8"))
     captures = json.loads(CAPTURES.read_text(encoding="utf-8"))
     documents = {x["id"]: x for x in manifest.get("documents", [])}
     for record in captures.get("records", []):
         if record.get("source_content_type") != "application/pdf" or not record.get("raw_path"):
             continue
+        if record.get("local_copy_accepted"):
+            continue
         raw = inside_root(record["raw_path"]).read_bytes()
         if sha256(raw) != record.get("source_sha256"):
             raise ValueError(f"raw PDF hash mismatch for {record['candidate_id']}")
-        if record.get("candidate_source_path"):
-            original_copy = inside_root(record["candidate_source_path"]).read_bytes()
+        source_path = record.get("candidate_source_path") or record.get("local_source_path")
+        if source_path:
+            original_copy = inside_root(source_path).read_bytes()
             if sha256(original_copy) != record["source_sha256"]:
-                raise ValueError(f"preserved candidate PDF hash mismatch for {record['candidate_id']}")
+                raise ValueError(f"preserved PDF hash mismatch for {record['candidate_id']}")
         item = documents[record["candidate_id"]]
         content, info = pdf_markdown(item, record, raw)
-        output_path = record.get("candidate_text_path") or str(Path(record["candidate_source_path"]).with_suffix(".md"))
+        output_path = record.get("candidate_text_path") or f"temp/latvia/pending/{slug(record['candidate_id'])}-{record['source_sha256'][:16]}.md"
         digest = sha256(content)
         atomic_write(inside_root(output_path), content)
         record.update(info)
@@ -707,11 +732,13 @@ def verify() -> None:
                 page = inside_root(record["publisher_page_raw_path"]).read_bytes()
                 if sha256(page) != record["publisher_page_sha256"]:
                     raise ValueError("publisher page hash mismatch")
-            if record.get("candidate_source_path"):
-                source_copy = inside_root(record["candidate_source_path"]).read_bytes()
+            source_copy_path = record.get("candidate_source_path") or record.get("local_source_path")
+            if source_copy_path:
+                source_copy = inside_root(source_copy_path).read_bytes()
                 if sha256(source_copy) != record["source_sha256"]:
-                    raise ValueError("candidate PDF hash mismatch")
-            if record.get("candidate_text_path"):
+                    raise ValueError("PDF source-copy hash mismatch")
+            text_path = record.get("candidate_text_path") or record.get("local_copy_path")
+            if text_path:
                 raw = inside_root(record["raw_path"]).read_bytes()
                 if record.get("source_content_type") == "application/pdf":
                     content, info = pdf_markdown(documents[record["candidate_id"]], record, raw)
@@ -728,11 +755,27 @@ def verify() -> None:
                                        record["retrieved_at"], version, record["source_sha256"], selector, body)
                 if selector != record["content_selector"] or sha256(content) != record["converted_sha256"]:
                     raise ValueError("deterministic extraction replay mismatch")
-                if sha256(inside_root(record["candidate_text_path"]).read_bytes()) != record["converted_sha256"]:
+                saved = inside_root(text_path).read_bytes()
+                if record.get("local_copy_accepted") and record.get("local_copy_path") == text_path:
+                    if candidate_body(text_path) != source_body(content.decode("utf-8")):
+                        raise ValueError("accepted local source text differs from deterministic replay")
+                    if record.get("local_copy_sha256") and sha256(saved) != record["local_copy_sha256"]:
+                        raise ValueError("accepted local document hash mismatch")
+                    print(f"verified accepted local copy {record['candidate_id']}")
+                elif sha256(saved) != record["converted_sha256"]:
                     raise ValueError("candidate Markdown hash mismatch")
-                print(f"verified {record['candidate_id']}")
-            elif record.get("candidate_source_path"):
-                print(f"verified {record['candidate_id']} (PDF source preserved)")
+                else:
+                    print(f"verified review output {record['candidate_id']}")
+                if record.get("local_copy_accepted") and record.get("local_copy_path") != text_path:
+                    accepted_path = record["local_copy_path"]
+                    accepted_bytes = inside_root(accepted_path).read_bytes()
+                    if source_body(accepted_bytes.decode("utf-8")) != source_body(content.decode("utf-8")):
+                        raise ValueError("accepted local source text differs from deterministic replay")
+                    if record.get("local_copy_sha256") and sha256(accepted_bytes) != record["local_copy_sha256"]:
+                        raise ValueError("accepted local document hash mismatch")
+                    print(f"verified accepted local copy {record['candidate_id']}")
+            elif source_copy_path:
+                print(f"verified source PDF {record['candidate_id']}")
         except Exception as exc:
             errors.append(f"{record.get('candidate_id', 'unknown')}: {type(exc).__name__}: {exc}")
     if errors:

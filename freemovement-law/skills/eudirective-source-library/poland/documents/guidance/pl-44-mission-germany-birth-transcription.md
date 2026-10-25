@@ -1,0 +1,165 @@
+# Foreign birth registration example from Polish mission in Germany
+
+Jurisdiction: Poland
+
+Source ID: pl-44
+
+Source class: civil_status_transcription_guidance
+
+Official publisher: Ministry of Foreign Affairs / Polish diplomatic mission
+
+Official source record: [https://www.gov.pl/web/niemcy/transkrypcja-rejestracja-zagranicznego-aktu-urodzenia-w-polskim-rejestrze-stanu-cywilnego](https://www.gov.pl/web/niemcy/transkrypcja-rejestracja-zagranicznego-aktu-urodzenia-w-polskim-rejestrze-stanu-cywilnego)
+
+Official text/content URL: [https://www.gov.pl/web/niemcy/transkrypcja-rejestracja-zagranicznego-aktu-urodzenia-w-polskim-rejestrze-stanu-cywilnego](https://www.gov.pl/web/niemcy/transkrypcja-rejestracja-zagranicznego-aktu-urodzenia-w-polskim-rejestrze-stanu-cywilnego)
+
+Language: pl
+
+Version evidence: Country-specific mission instructions for foreign birth records. Parent discovery and locally applicable supporting documents must be checked; not a nationwide consular rule.
+
+Retrieved: 2026-10-19T01:53:27+00:00
+
+Source response SHA-256: cbc21049d2a8bc8809e4a6ef89c432ad09618191c44b2aa230fc3e604ee38a41
+
+Monitor candidate archive SHA-256: 4dc48ef4a3bb98da502700c5434f2e31a1e8c1e27f024e2dc9b46558dbcfd9b8; archive path candidates/poland_candidate_promotion_20261025/Poland/pl-44.md
+
+Conversion review: HTML body extraction from archived official response; body-only replay against original response verified. HTML layout and whitespace normalized to Markdown; linked attachments not copied.
+
+Local-copy basis: The retained material is textual content from gov.pl. Its footer states that textual content, excluding audiovisual material, is made available under CC BY-SA 4.0. Source, retrieval time and Markdown transformation are recorded. Images, audio/video and linked attachments are excluded.
+
+## Source role and scope
+
+Use the official page or instrument only for its stated identity and scope: Foreign birth registration example from Polish mission in Germany. Source-specific limits: Country-specific mission instructions for foreign birth records. Parent discovery and locally applicable supporting documents must be checked; not a nationwide consular rule. Link acceptance does not accept a local copy, legal topic, or country completeness.
+
+This is a Germany-mission example for foreign birth transcription/registration; it does not establish practice at every mission or civil registry.
+
+## Limits
+
+This is a dated source snapshot, not a legal conclusion. Recheck the official record for later amendments, page changes, eligibility, filing channel and case-specific applicability. Local-copy acceptance does not accept any topic or certify country completion. The retained page does not replace governing law, an individual decision or route-specific authority instructions.
+
+## Source text
+
+Administracyjna zmiana imienia i nazwiska
+
+Odtworzenie treści zagranicznego aktu stanu cywilnego
+
+Powrót do nazwiska noszonego przed zawarciem małżeństwa
+
+Rejestracja urodzenia lub zgonu, dla którego nie został sporządzony akt stanu cywilnego
+
+Uznanie wyroku rozwodowego wydanego przez sąd zagraniczny
+
+Transkrypcja (rejestracja) zagranicznego aktu małżeństwa w polskim rejestrze stanu cywilnego
+
+Transkrypcja (rejestracja) zagranicznego aktu urodzenia w polskim rejestrze stanu cywilnego
+
+Transkrypcja (rejestracja) zagranicznego aktu zgonu w polskim rejestrze stanu cywilnego
+
+Uznanie ojcostwa
+
+Uzupełnienie i sprostowanie aktu stanu cywilnego
+
+Uzyskanie (wydobycie) odpisów akt stanu cywilnego i zaświadczeń o stanie cywilnym z urzędu stanu cywilnego w Polsce
+
+Uzyskanie (wydobycie) odpisów akt stanu cywilnego z urzędu stanu cywilnego za granicą
+
+Uzyskanie (wydobycie) zaświadczenia, że zgodnie z prawem polskim można zawrzeć małżeństwo, na potrzeby małżeństwa w państwie trzecim
+
+Wydanie zaświadczenia, że zgodnie z prawem polskim można zawrzeć małżeństwo
+
+Zawarcie małżeństwa przed konsulem
+
+Składanie zapewnienia o nieistnieniu okoliczności wyłączających zawarcie małżeństwa
+
+Transkrypcja (rejestracja) zagranicznego aktu urodzenia w polskim rejestrze stanu cywilnego
+
+Gdzie załatwisz sprawę?
+Wniosek można złożyć we właściwym terytorialnie urzędzie konsularnym RP lub bezpośrednio w Polsce - w dowolnym USC.
+Czy musisz składać dokumenty osobiście?
+Nie, dokumenty można złożyć osobiście albo listownie.
+Jak umówisz się na spotkanie?
+Na wizytę umówić się trzeba za pomocą systemu e-Konsulat.
+Jakie dokumenty musisz złożyć?
+
+wniosek o transkrypcję (dostępny w urzędzie konsularnym),
+
+oryginał zagranicznego aktu urodzenia dziecka, zawierający imiona i nazwiska rodziców,
+
+tłumaczenie zagranicznego aktu urodzenia dokonane przez tłumacza przysięgłego lub konsula (w krajach UE akt urodzenia wydany na druku międzynarodowym nie wymaga tłumaczenia!),
+
+w przypadku małżeństw – akt małżeństwa rodziców,
+
+ponadto w przypadku jeżeli jeden z rodziców nie posiada polskiego aktu urodzenia, a w Polsce nie zostało zarejestrowane małżeństwo rodziców dziecka, rekomendujemy złożenie oryginału aktu urodzenia tego rodzica (może być wymagane apostille lub legalizacja, o ile nic innego nie wynika z odrębnych przepisów) – wraz z tłumaczeniem dokonanym przez tłumacza przysięgłego lub konsula. Bez złożenia powyższego dokumentu trankrypcja może zostać dokonana, jednakże transkrybowany akt nie będzie posiadał wszystkich danych i może nie być możliwe nadanie numeru PESEL oraz wyrobienie dokumentu paszportowego.
+
+Pamiętaj!
+
+Dokumenty sporządzone w języku obcym musisz złożyć wraz z urzędowym tłumaczeniem na język polski dokonywanym przez:
+
+tłumacza przysięgłego wpisanego na listę prowadzoną przez Ministra Sprawiedliwości,
+
+tłumacz przysięgłego uprawnionego do dokonywania takich tłumaczeń w państwach członkowskich Unii Europejskiej lub Europejskiego Obszaru Gospodarczego (EOG),
+
+konsula.
+
+Ile zapłacisz?
+Opłata wynosi 60,00 EUR​​.
+
+Opłata pobierana jest w gotówce lub kartą EC (ale nie kartą kredytową).
+Jaki jest termin realizacji?
+Konsul niezwłocznie przekaże Twój wniosek do wskazanego przez Państwa kierownika urzędu stanu cywilnego.
+Jak odbierzesz dokumenty?
+Polski odpis aktu urodzenia można odebrać osobiście w konsulacie albo otrzymać pocztą.
+Jak możesz się odwołać?
+Kierownik USC odmawia dokonania przeniesienia zagranicznego aktu stanu cywilnego (transkrypcji), jeżeli:
+
+dokument w państwie wystawienia nie jest uznawany za dokument stanu cywilnego,
+
+dokument nie ma mocy dokumentu urzędowego,
+
+dokument nie został wydany przez właściwy organ, albo są wątpliwości co do jego autentyczności,
+
+dokument potwierdza zdarzenie inne niż urodzenie, małżeństwo lub zgon,
+
+dokument powstał w wyniku transkrypcji w państwie innym niż państwo zdarzenia,
+
+byłoby to sprzeczne z podstawowymi zasadami porządku prawnego Rzeczypospolitej Polskiej.
+
+Odmowa dokonania przeniesienia zagranicznego aktu stanu cywilnego nastąpi w formie decyzji administracyjnej, od której przysługuje odwołanie do właściwego miejscowo wojewody.
+Najczęściej zadawane pytania
+Co to jest transkrypcja (rejestracja) zagranicznego aktu urodzenia?
+
+Transkrypcja aktu urodzenia jest to wierne i literalne przeniesienie treści zagranicznego aktu urodzenia do polskich ksiąg stanu cywilnego. Po dokonanej transkrypcji kierownik urzędu stanu cywilnego wydaje odpis zupełny polskiego aktu urodzenia, który zawiera adnotację o dokonanej transkrypcji.
+
+Czy muszę dokonać transkrypcji (rejestracji) zagranicznego aktu urodzenia?
+
+Transkrypcja zagranicznego aktu urodzenia jest obowiązkowa, jeżeli wnioskują Państwo o dokonanie czynności z zakresu rejestracji stanu cywilnego, lub ubiegają się Państwo o polski dokument tożsamości albo nadanie numeru PESEL dla siebie lub dziecka.
+
+Czy do złożenia wniosku o transkrypcję konieczna jest obecność obojga rodziców?
+
+Nie, obecność obojga rodziców nie jest konieczna przy składaniu wniosku o transkrypcję aktu urodzenia ich dziecka. Wniosek do wybranego kierownika urzędu stanu cywilnego o dokonanie transkrypcji może złożyć osoba, której dotyczy zdarzenie podlegające transkrypcji lub inna osoba, która wykaże interes prawny w transkrypcji.
+
+Czy wniosek o transkrypcję może złożyć osoba inna niż rodzic?
+
+Wniosek o dokonanie transkrypcji może złożyć osoba „która wykaże interes prawny w transkrypcji”. W związku z tym przypadki składania wniosków np. przez osoby niespokrewnione lub instytucje miejscowe są oceniane indywidualnie.
+
+Moja partnerka urodziła dziecko w Niemczech. Na akcie urodzenia naszego dziecka są wskazane moje dane jako ojca dziecka. Ale w Polsce wciąż toczy się sprawa rozwodowa partnerki. Czy w przypadku transkrypcji do polskiego aktu urodzenia zostaną wpisane dane jej męża jako ojca dziecka?
+
+Nie, dane ojca dziecka będą takie jak w zagranicznym akcie urodzenia. W czasie wizyty zostaną Państwo poproszeni o wskazanie adresu zamieszkania męża partnerki. Po dokonaniu transkrypcji kierownik urzędu stanu cywilnego zawiadomi jej męża o zarejestrowaniu aktu urodzenia dziecka i wpisaniu Pana danych jako ojca dziecka. Poinformuje także męża partnerki, że jeżeli on sam poczuwa się do ojcostwa, może wnieść do sądu sprawę o zaprzeczenie ojcostwa.
+
+Czy sporządzenie polskiego aktu urodzenia wiąże się z nadaniem numeru PESEL?
+
+Nie do końca. W przypadku osób urodzonych za granicą i nieposiadających zameldowania w Polsce sporządzenie (w wyniku transkrypcji) polskiego aktu urodzenia jest warunkiem koniecznym do nadania numeru PESEL. Ale wniosek o nadanie tego numeru dziecku składa się dopiero w czasie wizyty paszportowej. W przypadku osób, które dokonały transkrypcji w związku z toczącym się postępowaniem o potwierdzenie posiadania obywatelstwa polskiego warunkiem dodatkowym przyjęcia wniosku paszportowego (i nadania numeru PESEL) będzie uzyskanie pozytywnej decyzji wojewody w sprawie posiadania polskiego obywatelstwa.
+
+Dane w zagranicznym akcie urodzenia naszego dziecka zostały zapisane bez polskich znaków diakrytycznych. Jak to się ma do wniosku o transkrypcję?
+
+W takim wypadku mogą Państwo złożyć wniosek o dostosowanie pisowni w akcie sporządzonym w wyniku transkrypcji do reguł pisowni polskiej lub wniosek o sprostowanie danych w oparciu o Wasz akt małżeństwa lub Wasze akty urodzenia. O ile jednak urzędy stanu cywilnego w Polsce dokonują sprostowania na takiej podstawie danych rodziców w akcie urodzenia ich dziecka (jako osoby posiadające już akta stanu cywilnego w Polsce), to nie zawsze dokonują sprostowania danych samego dziecka. Może to prowadzić do sytuacji, w której dane rodziców zostaną zapisane zgodnie z regułami pisowni polskiej, a dane dziecka bez polskich znaków diakrytycznych.
+
+Materiały
+
+Wniosek o transkrypcję aktu urodzenia
+wniosek​_o​_transkrypcję​_aktu​_urodzenia.pdf0.43MB
+
+Podstawa prawna
+
+Ustawa z dnia 28 listopada 2014 roku Prawo o aktach stanu cywilnego http://prawo.sejm.gov.pl/isap.nsf/download.xsp/WDU20180002224/U/D20182224Lj.pdf
+
+Ustawa z dnia 25 lutego 1964 r. Kodeks rodzinny i opiekuńczy http://prawo.sejm.gov.pl/isap.nsf/download.xsp/WDU19640090059/U/D19640059Lj.pdf

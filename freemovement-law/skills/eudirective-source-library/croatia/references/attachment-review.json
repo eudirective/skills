@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "jurisdiction": "HR",
-  "checked_on": "2026-10-19",
-  "policy": "Official-document fragments are scanned for embedded image and linked-file references. The inventory identifies candidates only; it does not establish visual completeness, legal classification, or current use. A source with no embedded image/file references is marked attachment-not-applicable for that captured document body.",
+  "checked_on": "2026-10-25",
+  "policy": "This register inventories image and linked-file attachments in accepted source fragments. A visual_review_status of reviewed records what the retained image content shows; it does not establish that the image is the current issued form. Currentness and applicability are recorded separately.",
   "records": [
     {
       "id": "hr-eea-card-specimen-4b",
@@ -11,24 +11,62 @@
       "official_locator": "https://narodne-novine.nn.hr/clanci/sluzbeni/2021_07_86_1596.html",
       "attachment_locator": "Narodne Novine NN 86/21 page, Article 11, embedded Form 4b recto/verso images",
       "classification": "residence-card specimen; not an application form",
-      "visual_review_status": "not_reviewed",
+      "visual_review_status": "reviewed",
       "currentness_status": "unresolved",
       "legal_dependencies": [
         "Regulation (EU) 2025/1208",
         "Directive 2004/38/EC"
       ],
       "required_checks": [
-        "inspect both sides at readable resolution",
-        "map each printed data field to Article 7/8 and Annex requirements",
         "verify the current MUP-issued EEA-national card and any replacement template",
-        "distinguish this document from the residence-card application Form 2b"
+        "compare current issuance with Regulation (EU) 2025/1208 Article 6 requirements"
       ],
       "image_source_urls": [
         "https://narodne-novine.nn.hr/files/_web/sluzbeni-dio/2021/132118/images/6946.jpg",
         "https://narodne-novine.nn.hr/files/_web/sluzbeni-dio/2021/132118/images/6939.jpg"
       ],
       "image_count": 2,
-      "source_fragment_sha256": "b37de8bfbb98ee7fa6ca29191dc2be180d9444d4e9a3c5ef9d7123a46dd231f6"
+      "source_fragment_sha256": "b37de8bfbb98ee7fa6ca29191dc2be180d9444d4e9a3c5ef9d7123a46dd231f6",
+      "reviewed_on": "2026-10-25",
+      "review_method": "Manually inspected each official JPEG at original pixel dimensions; verified the publisher page identifies both sides as the named form; compared field labels with the operative text of NN 86/21 and the relevant EU requirement.",
+      "visual_review_evidence": "Both official sides were visually inspected at native resolution. The front shows the bilingual residence-card title and blank fields for number, holder name, sex, nationality, date of birth, permit type, expiry, remarks, signature and card access number. The back shows issuing authority, place of birth, optional fields and the machine-readable zone. The Gazette text separately states the HR flag treatment and permit wording. This is a blank statutory specimen, not proof of the current issued card.",
+      "completed_checks": [
+        "inspect both sides at readable resolution",
+        "confirm specimen identity and distinguish card specimen from application Form 2b"
+      ],
+      "retained_image_assets": [
+        {
+          "role": "Form 4b — EEA national residence-card specimen, front",
+          "official_url": "https://narodne-novine.nn.hr/files/_web/sluzbeni-dio/2021/132118/images/6946.jpg",
+          "local_path": "documents/legislation/attachments/hr-eea-reg-amend-86-21/form-4b-front.jpg",
+          "archive_path": "captures/eudirective-public-data/HR/raw/official-annexes/nn-86-2021-1596/form-4b-front-6946.jpg",
+          "sha256": "ccda7e8dfe1a71a1219d7bd6fe2cd1c64fdff1e4430d2e2828822a24a34a6cee",
+          "bytes": 55301,
+          "pixel_dimensions": [
+            654,
+            362
+          ]
+        },
+        {
+          "role": "Form 4b — EEA national residence-card specimen, back",
+          "official_url": "https://narodne-novine.nn.hr/files/_web/sluzbeni-dio/2021/132118/images/6939.jpg",
+          "local_path": "documents/legislation/attachments/hr-eea-reg-amend-86-21/form-4b-back.jpg",
+          "archive_path": "captures/eudirective-public-data/HR/raw/official-annexes/nn-86-2021-1596/form-4b-back-6939.jpg",
+          "sha256": "34bac15ebb43f073b86864bcafe26855265fd6d0e217df95d1051d093300de3c",
+          "bytes": 50530,
+          "pixel_dimensions": [
+            654,
+            352
+          ]
+        }
+      ],
+      "currentness_evidence": {
+        "checked_on": "2026-10-25",
+        "mup_legislation_index": "https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652",
+        "mup_forms_index": "https://mup.gov.hr/obrasci-281565/281565",
+        "mup_guidance": "https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/boravak-i-rad-drzavljana-drzava-clanica-egp-a-i-clanova-njihovih-obitelji/282191",
+        "result": "MUP’s current legal index lists NN 107/20, 148/20, 86/21 and 155/22 for the EEA residence rule. The forms index lists application/registration Forms 1b, 2b, 3b and 6b, not card specimens. The MUP guidance page last states an issue process but provides no specimen and predates the 2026 transition. Actual current card design/field encoding remains unverified. Regulation (EU) 2025/1208 Article 6 sets minimum information for residence documents issued to Union citizens, while Article 8’s phase-out provisions concern non-EU family-member residence cards. No conclusion is drawn here about applying Article 6 to every EEA nationality covered by the national Form 4b rule, and no current MUP-issued Form 4b specimen was found."
+      }
     },
     {
       "id": "hr-eea-card-specimen-11b",
@@ -37,7 +75,7 @@
       "official_locator": "https://narodne-novine.nn.hr/clanci/sluzbeni/2021_07_86_1596.html",
       "attachment_locator": "Narodne Novine NN 86/21 page, Article 11, embedded Form 11b recto/verso images",
       "classification": "residence-card specimen; not an application form",
-      "visual_review_status": "not_reviewed",
+      "visual_review_status": "reviewed",
       "currentness_status": "urgent_post_transition_check",
       "legal_dependencies": [
         "Regulation (EU) 2025/1208 Articles 7 and 8",
@@ -45,17 +83,57 @@
         "Directive 2004/38/EC"
       ],
       "required_checks": [
-        "inspect both sides and map Croatian rule field labels to the EU standardised data-field code",
-        "verify card format and code used in cards issued after 3 August 2026",
-        "check any applicable transitional exception",
-        "record a supported compliance finding or unresolved question without altering Croatian source wording"
+        "verify the actual post-transition card issued by MUP and any replacement specimen",
+        "verify whether the actual card carries the Croatian standardized Article 10 or Article 20 code in data field [10]; the blank specimen cannot establish this",
+        "apply Article 8 transition only where the card’s security/MRZ status and the specified Annex conditions are evidenced"
       ],
       "image_source_urls": [
         "https://narodne-novine.nn.hr/files/_web/sluzbeni-dio/2021/132118/images/6933.jpg",
         "https://narodne-novine.nn.hr/files/_web/sluzbeni-dio/2021/132118/images/6922.jpg"
       ],
       "image_count": 2,
-      "source_fragment_sha256": "b37de8bfbb98ee7fa6ca29191dc2be180d9444d4e9a3c5ef9d7123a46dd231f6"
+      "source_fragment_sha256": "b37de8bfbb98ee7fa6ca29191dc2be180d9444d4e9a3c5ef9d7123a46dd231f6",
+      "reviewed_on": "2026-10-25",
+      "review_method": "Manually inspected each official JPEG at original pixel dimensions; verified the publisher page identifies both sides as the named form; compared field labels with the operative text of NN 86/21 and the relevant EU requirement.",
+      "visual_review_evidence": "Both official sides were visually inspected at native resolution. The front shows bilingual temporary/permanent residence-card titles and blank fields including permit type; the back shows issuing authority, place of birth, optional fields and the machine-readable zone. The blank specimen does not show an actual value in data field [10]. NN 86/21 Article 27a(5) and Regulation (EU) 2025/1208 Article 7(2) in the official Croatian text prescribe the same Article 10 code, “Član obitelji EU čl. 10. DIR 2004/38/EZ”, and the corresponding Article 20 alternative. This resolves the textual wording comparison, not whether MUP’s current card places the code in data field [10] or meets the applicable card-format requirements.",
+      "completed_checks": [
+        "inspect both sides at readable resolution",
+        "confirm specimen identity and distinguish card specimen from application Form 2b",
+        "compare the Croatian standardized code wording in Regulation (EU) 2025/1208 Article 7(2) with NN 86/21 Article 27a(5)"
+      ],
+      "retained_image_assets": [
+        {
+          "role": "Form 11b — non-EEA family-member residence-card specimen, front",
+          "official_url": "https://narodne-novine.nn.hr/files/_web/sluzbeni-dio/2021/132118/images/6933.jpg",
+          "local_path": "documents/legislation/attachments/hr-eea-reg-amend-86-21/form-11b-front.jpg",
+          "archive_path": "captures/eudirective-public-data/HR/raw/official-annexes/nn-86-2021-1596/form-11b-front-6933.jpg",
+          "sha256": "96f801f291631d1f494982f16a85b3fe0dcb532b48ad4658884b9627d13a125c",
+          "bytes": 79750,
+          "pixel_dimensions": [
+            665,
+            375
+          ]
+        },
+        {
+          "role": "Form 11b — non-EEA family-member residence-card specimen, back",
+          "official_url": "https://narodne-novine.nn.hr/files/_web/sluzbeni-dio/2021/132118/images/6922.jpg",
+          "local_path": "documents/legislation/attachments/hr-eea-reg-amend-86-21/form-11b-back.jpg",
+          "archive_path": "captures/eudirective-public-data/HR/raw/official-annexes/nn-86-2021-1596/form-11b-back-6922.jpg",
+          "sha256": "97305e6163883210033d11d02258b24d936fd5d94be9cf9edd61379a33cbe3be",
+          "bytes": 58139,
+          "pixel_dimensions": [
+            665,
+            403
+          ]
+        }
+      ],
+      "currentness_evidence": {
+        "checked_on": "2026-10-25",
+        "mup_legislation_index": "https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652",
+        "mup_forms_index": "https://mup.gov.hr/obrasci-281565/281565",
+        "mup_guidance": "https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/boravak-i-rad-drzavljana-drzava-clanica-egp-a-i-clanova-njihovih-obitelji/282191",
+        "result": "MUP’s current legal index lists NN 107/20, 148/20, 86/21 and 155/22 for the EEA residence rule. The forms index lists application/registration Forms 1b, 2b, 3b and 6b, not card specimens. MUP guidance updated 2025-10-09 describes card issuance but predates the 2026 transition. The official Croatian text of Regulation (EU) 2025/1208 Article 7(2) gives the standardized Article 10/20 Croatian wording, matching NN 86/21 Article 27a(5); actual placement in data field [10] on the card issued by MUP remains unverified. Under Article 8, nonconforming cards generally cease at expiry or 3 August 2026; cards failing Article 7 but meeting ICAO minimum security standards and Annex points (c) and (g) conditions may continue until expiry or 3 August 2031, while cards lacking minimum security or a functional MRZ are not valid. The blank 2021 specimen establishes none of those technical conditions or the current issuance format."
+      }
     },
     {
       "id": "hr-eea-reg-amend-148-20-embedded-annex-inventory",

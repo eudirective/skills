@@ -19,18 +19,37 @@ from pathlib import Path
 PACK = Path(__file__).resolve().parent
 ROOT = PACK.parents[1]
 REFS = PACK / "references"
-CANDIDATES = REFS / "candidate-manifest.json"
-CAPTURES = REFS / "normattiva-captures.json"
-RETRIEVAL = REFS / "normattiva-retrieval-manifest.json"
+ACCEPTANCE = REFS / "source-acceptance.json"
+RETRIEVAL = ROOT / "temp/italy/retrieval-manifest.json"
 HOST = "www.normattiva.it"
 UA = "eudirective-source-library/1.0 (public official law text retrieval; eudirective@proton.me)"
 MAX_BYTES = 16 * 1024 * 1024
 TIMEOUT = 30
 REQUEST_DELAY_SECONDS = 0.25
-TARGET_IDS = {
-    "it-01-legislative-decree-no.-30-2007-implementing-free-movement-and-residence-rig",
-    "it-02-law-no.-218-1995-reforming-italian-private-international-law",
-    "it-03-law-no.-184-1983-on-adoption-and-foster-care",
+TARGET_RECORDS = [
+    {
+        "id": "it-01-legislative-decree-no.-30-2007-implementing-free-movement-and-residence-rig",
+        "title": "Legislative Decree No. 30/2007 implementing free movement and residence rights of EU citizens and family members",
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2007-02-06;30~vig=",
+        "accepted": False,
+    },
+    {
+        "id": "it-02-law-no.-218-1995-reforming-italian-private-international-law",
+        "title": "Law No. 218/1995 reforming Italian private international law",
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1995-05-31;218~vig=",
+        "accepted": False,
+    },
+    {
+        "id": "it-03-law-no.-184-1983-on-adoption-and-foster-care",
+        "title": "Law No. 184/1983 on adoption and foster care",
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1983;184!vig=",
+        "accepted": False,
+    },
+]
+ACCEPTANCE_SOURCE_IDS = {
+    TARGET_RECORDS[0]["id"]: "monitor-it-04",
+    TARGET_RECORDS[1]["id"]: "priority-law-218-1995",
+    TARGET_RECORDS[2]["id"]: "priority-law-184-1983",
 }
 EXPECTED = {
     "it-01-legislative-decree-no.-30-2007-implementing-free-movement-and-residence-rig": ("30", "DECRETO LEGISLATIVO"),
@@ -348,7 +367,7 @@ def capture_record(record: dict, as_of: str, previous: dict | None = None) -> di
         else:
             out_path = f"temp/italy/pending/{slug}-{source_sha[:16]}.md"
     else:
-        out_path = f"source-library/italy/candidates/{slug}.md"
+        out_path = f"temp/italy/candidates/{slug}-{source_sha[:16]}.md"
     content = markdown_content(record, title, landing_url, as_of, version, retrieved_at, content_type,
                                source_sha, landing_sha, article_records, initial_preamble(landing_raw))
     converted_sha = sha256(content)
@@ -367,28 +386,6 @@ def capture_record(record: dict, as_of: str, previous: dict | None = None) -> di
         "review_state": review_state, "accepted": bool(record.get("accepted", False)),
         **({"previous_candidate_text_path": previous_candidate_path} if review_state == "changed_pending_review" and previous_candidate_path else {}),
     }
-
-
-def update_manifest(results: list[dict]) -> None:
-    manifest = json.loads(CANDIDATES.read_text(encoding="utf-8"))
-    by_id = {x["id"]: x for x in manifest.get("documents", [])}
-    for rec in results:
-        item = by_id[rec["candidate_id"]]
-        status = rec["retrieval_status"]
-        item.update({
-            "retrieved": status in {"converted_review_candidate", "changed_review_candidate", "converted_review_candidate_currentness_unverified"},
-            "retrieval_status": status,
-        })
-        for key in ("candidate_text_path", "previous_candidate_text_path", "resolved_url", "browser_view_url", "alternate_language_url", "retrieval_checked_at", "source_sha256", "converted_sha256", "publisher_version_evidence", "retrieval_note", "article_count"):
-            if key in rec:
-                item[key] = rec[key]
-    count = sum(x.get("retrieval_status") in {"converted_review_candidate", "changed_review_candidate", "converted_review_candidate_currentness_unverified"} for x in by_id.values())
-    manifest["candidate_source_count"] = len(manifest.get("documents", []))
-    manifest["accepted_source_count"] = 0
-    manifest["retrieved_review_candidate_count"] = count
-    manifest["status"] = "partially_retrieved_review_candidates"
-    manifest["retrieval_status"] = "Three current Normattiva statutes captured article by article; any later changed source bundle is staged for review; one earlier MAECI candidate has unverified currentness; a second guidance page returned a publisher security challenge; no source accepted"
-    atomic_write(CANDIDATES, (json.dumps(manifest, ensure_ascii=False, indent=2) + "\n").encode("utf-8"))
 
 
 def finalize_staged_documents(results: list[dict]) -> None:
@@ -413,54 +410,43 @@ def finalize_staged_documents(results: list[dict]) -> None:
 
 def sync() -> None:
     as_of = date.today().isoformat()
-    manifest = json.loads(CANDIDATES.read_text(encoding="utf-8"))
-    prior_capture = json.loads(CAPTURES.read_text(encoding="utf-8")) if CAPTURES.exists() else {"records": []}
+    prior_capture = json.loads(RETRIEVAL.read_text(encoding="utf-8")) if RETRIEVAL.exists() else {"records": []}
     previous_by_id = {x["candidate_id"]: x for x in prior_capture.get("records", []) if x.get("articles")}
+    if not previous_by_id:
+        acceptance = json.loads(ACCEPTANCE.read_text(encoding="utf-8"))
+        accepted = {x["source_id"]: x for x in acceptance.get("accepted_references", [])}
+        for record in TARGET_RECORDS:
+            reference = accepted.get(ACCEPTANCE_SOURCE_IDS[record["id"]], {})
+            baseline = reference.get("local_copy_source_bundle_sha256")
+            if baseline:
+                previous_by_id[record["id"]] = {
+                    "source_sha256": baseline,
+                    "review_state": "accepted_baseline",
+                    "candidate_text_path": None,
+                }
     results: list[dict] = []
-    for record in manifest.get("documents", []):
-        if record["id"] in TARGET_IDS:
-            print(f"retrieving {record['id']}", flush=True)
-            results.append(capture_record(record, as_of, previous_by_id.get(record["id"])))
-    prior_maeci = next((x for x in manifest.get("documents", []) if x["id"].startswith("it-05-")), None)
-    if prior_maeci:
-        results.append({
-            "candidate_id": prior_maeci["id"], "title": prior_maeci["title"], "source_url": prior_maeci["url"],
-            "resolved_url": "https://validate.perfdrive.com/ (official host redirects to publisher security challenge)",
-            "retrieval_status": "converted_review_candidate_currentness_unverified", "accepted": False,
-            "browser_view_url": prior_maeci.get("browser_view_url", prior_maeci["url"]),
-            "alternate_language_url": prior_maeci.get("alternate_language_url"),
-            "retrieval_checked_at": as_of,
-            "retrieval_note": "Prior 15 October 2026 English review candidate retained without raw HTML for replay. Current page is visible in the standard web view, but direct HTTP retrieval returns a publisher security challenge and no dependable version date is exposed; currentness remains unverified. No challenge bypass was attempted.",
-        })
-    guidance = next((x for x in manifest.get("documents", []) if x["id"].startswith("it-04-")), None)
-    if guidance:
-        results.append({
-            "candidate_id": guidance["id"], "title": guidance["title"], "source_url": guidance["url"],
-            "resolved_url": "https://validate.perfdrive.com/ (official host redirects to publisher security challenge)",
-            "retrieval_status": "publisher_security_challenge", "accepted": False,
-            "browser_view_url": guidance.get("browser_view_url", guidance["url"]),
-            "retrieval_checked_at": as_of,
-            "retrieval_note": "The current official page is visible in the standard web view, but direct HTTP retrieval returned the publisher security challenge, so no local raw capture or conversion is available. No challenge bypass was attempted. Official embassy pages also publish related guidance, but their local scope differs.",
-        })
+    for record in TARGET_RECORDS:
+        print(f"retrieving {record['id']}", flush=True)
+        results.append(capture_record(record, as_of, previous_by_id.get(record["id"])))
     retrieval = {
-        "manifest_version": 2, "jurisdiction": "Italy", "as_of_date": as_of,
-        "method": "For three Normattiva acts, use each stable URN page with its current-text selector, retain the session cookie from that public page, collect the article links published by the page, and request each linked article through the site's own XHR page flow. The site states in its page markup that article content is loaded dynamically. This requires no account or email registration, but the article endpoint is an undocumented page interface and is rated fragile. The two MAECI pages are readable in the standard web view but redirect direct HTTP requests to the publisher's security challenge; no challenge bypass is used.",
+        "manifest_version": 3,
+        "jurisdiction": "Italy",
+        "as_of_date": as_of,
+        "method": "For three Normattiva acts, use each stable URN page with its current-text selector, retain the session cookie from that public page, collect the article links published by the page, and request each linked article through the site's own XHR page flow. The article endpoint is an undocumented page interface and is rated fragile. Requests stay on the allowlisted host and are spaced by 0.25 seconds.",
         "open_data_documentation": "https://dati.normattiva.it/Come-scaricare-i-dati",
         "normattiva_versioning_documentation": "https://www.normattiva.it/staticPage/utilita",
-        "article_endpoint_note": "The article URLs are extracted from the current official HTML page's showArticle links. Requests are limited to the allowlisted Normattiva host and article path, reuse the page session, include the page as Referer and the X-Requested-With header, and are spaced by 0.25 seconds.",
-        "change_detection": "Compare the bundle hash over the landing page and ordered article responses with the last capture. If changed, save the new conversion under temp/italy/pending and mark changed_review_candidate; do not overwrite the prior candidate. Repeated syncs keep the pending review state until a reviewer resolves it.",
-        "maeci_access_note": "Direct HTTP requests to canonical Italian and English MAECI pages returned Radware security challenge content. The pages are readable in the standard web view, but no raw response was available for offline replay. No challenge bypass was attempted.",
-        "accepted_source_count": 0, "records": results,
+        "article_endpoint_note": "Article URLs are extracted from the official HTML page's showArticle links. Requests are limited to the allowlisted Normattiva host and article path, reuse the page session, include the page as Referer and the X-Requested-With header, and are spaced by 0.25 seconds.",
+        "change_detection": "Compare the landing-page and ordered-article bundle hash with the last temporary retrieval or accepted local-copy baseline. Keep new conversions and raw responses in the configured temporary path until archived through EU Source Update Monitor local_research_write and reviewed. Do not write candidate, capture or retrieval files into the country pack.",
+        "accepted_source_count": 0,
+        "records": results,
     }
     finalize_staged_documents(results)
-    atomic_write(CAPTURES, (json.dumps(retrieval, ensure_ascii=False, indent=2) + "\n").encode("utf-8"))
     atomic_write(RETRIEVAL, (json.dumps(retrieval, ensure_ascii=False, indent=2) + "\n").encode("utf-8"))
-    update_manifest(results)
 
 
 def verify() -> None:
-    captures = json.loads(CAPTURES.read_text(encoding="utf-8"))
-    documents = {x["id"]: x for x in json.loads(CANDIDATES.read_text(encoding="utf-8"))["documents"]}
+    captures = json.loads(RETRIEVAL.read_text(encoding="utf-8"))
+    documents = {x["id"]: x for x in TARGET_RECORDS}
     errors: list[str] = []
     for rec in (x for x in captures.get("records", []) if x.get("articles")):
         try:

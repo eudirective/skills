@@ -4,8 +4,7 @@
 
 This pack covers <defined legal and administrative scope>. It does not claim exhaustive national-law coverage.
 
-- EU-language core (optional; remove if this pack has no localized core files): [core/README.md](core/README.md)
-- National source inventory: [candidate manifest](references/candidate-manifest.json)
+- Machine-readable source inventory: [source manifest](references/candidate-manifest.json)
 - Optional local-copy and monitoring rules: [source rules](references/source-rules.json)
 - Human-readable source list: [source list](references/source-list.md)
 - Optional local-copy or updater evidence: [capture ledger](references/capture-ledger.json) <!-- remove when not used -->

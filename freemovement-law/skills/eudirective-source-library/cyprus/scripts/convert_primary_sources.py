@@ -3,8 +3,6 @@
 from __future__ import annotations
 
 import argparse
-import hashlib
-import json
 from html.parser import HTMLParser
 from pathlib import Path
 import re
@@ -25,10 +23,6 @@ PDF_PAGES = {
     "cy-free-movement-amendment-96i-2023": 7,
     "cy-directive-2004-38-original-el-op": 47,
 }
-
-PACK_ROOT = Path(__file__).resolve().parents[1]
-REPOSITORY_ROOT = Path(__file__).resolve().parents[3]
-
 
 class LegalBodyParser(HTMLParser):
     """Extract only the EUR-Lex legal body in div#TexteOnly."""
@@ -206,69 +200,15 @@ def convert(source_id: str, source: Path) -> str:
 
 
 def verify_saved_conversions() -> int:
-    """Replay every source-specific capture and compare its tracked candidate."""
-    capture_file = PACK_ROOT / "references" / "cyprus-capture-results.json"
-    try:
-        capture = json.loads(capture_file.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError) as exc:
-        print(f"cannot read capture ledger: {exc}", file=sys.stderr)
-        return 2
-
-    expected_ids = HTML_SOURCES | set(PDF_PAGES)
-    records = {
-        row.get("candidate_id"): row
-        for row in capture.get("records", [])
-        if isinstance(row, dict) and row.get("candidate_id") in expected_ids
-    }
-    missing = sorted(expected_ids - set(records))
-    if missing:
-        print(f"capture ledger is missing source-specific records: {', '.join(missing)}", file=sys.stderr)
-        return 2
-
-    for source_id in sorted(expected_ids):
-        record = records[source_id]
-        raw_rel = record.get("raw_path")
-        candidate_rel = record.get("candidate_text_path")
-        expected_hash = record.get("converted_sha256")
-        if not raw_rel or not candidate_rel or not expected_hash:
-            print(f"{source_id}: capture ledger lacks raw/candidate path or conversion hash", file=sys.stderr)
-            return 2
-        raw_path = (REPOSITORY_ROOT / raw_rel).resolve()
-        candidate_path = (REPOSITORY_ROOT / candidate_rel).resolve()
-        if not raw_path.is_relative_to(REPOSITORY_ROOT) or not candidate_path.is_relative_to(REPOSITORY_ROOT):
-            print(f"{source_id}: capture path escapes repository", file=sys.stderr)
-            return 2
-        try:
-            raw = raw_path.read_bytes()
-            candidate = candidate_path.read_bytes()
-        except OSError as exc:
-            print(f"{source_id}: cannot read captured source or candidate: {exc}", file=sys.stderr)
-            return 2
-        source_hash = hashlib.sha256(raw).hexdigest()
-        if source_hash != record.get("source_sha256"):
-            print(f"{source_id}: captured source hash mismatch", file=sys.stderr)
-            return 1
-        try:
-            replay = convert(source_id, raw_path).encode("utf-8")
-        except (OSError, ValueError) as exc:
-            print(f"{source_id}: conversion replay failed: {exc}", file=sys.stderr)
-            return 1
-        candidate_hash = hashlib.sha256(candidate).hexdigest()
-        replay_hash = hashlib.sha256(replay).hexdigest()
-        if candidate_hash != expected_hash or replay_hash != expected_hash or candidate != replay:
-            print(f"{source_id}: converted candidate differs from deterministic replay", file=sys.stderr)
-            return 1
-        preserved = record.get("candidate_source_path")
-        if preserved:
-            preserved_path = (REPOSITORY_ROOT / preserved).resolve()
-            if not preserved_path.is_relative_to(REPOSITORY_ROOT) or not preserved_path.is_file():
-                print(f"{source_id}: preserved source path is missing or escapes repository", file=sys.stderr)
-                return 1
-            if hashlib.sha256(preserved_path.read_bytes()).hexdigest() != source_hash:
-                print(f"{source_id}: preserved source hash mismatch", file=sys.stderr)
-                return 1
-        print(f"verified {source_id}: source and conversion hashes match")
-    return 0
+    """Report that pack-wide replay needs files from the Monitor archive."""
+    print(
+        "Replay check unsupported from the checkout: source and candidate artifacts "
+        "are retained in the EU Source Update Monitor local-only archive. Retrieve "
+        "the exact files with local_research_read, then replay one source with "
+        "--source-id, --input and --output in the temporary workspace.",
+        file=sys.stderr,
+    )
+    return 2
 
 
 def main() -> int:

@@ -1,9 +1,9 @@
 # Amendment NN 110/21
 
 - Jurisdiction: croatia
-- Candidate ID: `hr-general-admin-amend`
+- Source ID: `hr-general-admin-amend`
 - Source type: `amending_act`
-- Candidate URL: https://narodne-novine.nn.hr/clanci/sluzbeni/2021_10_110_1930.html
+- Official source URL: https://narodne-novine.nn.hr/clanci/sluzbeni/2021_10_110_1930.html
 - Resolved URL: https://narodne-novine.nn.hr/clanci/sluzbeni/2021_10_110_1930.html
 - Retrieved: 2026-10-19T02:21:54+00:00
 - Media type: `text/html`

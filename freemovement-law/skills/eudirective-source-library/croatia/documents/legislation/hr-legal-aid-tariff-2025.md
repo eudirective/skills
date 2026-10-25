@@ -1,9 +1,9 @@
 # Secondary Legal Aid Compensation Regulation for 2025 NN 142/25
 
 - Jurisdiction: croatia
-- Candidate ID: `hr-legal-aid-tariff-2025`
+- Source ID: `hr-legal-aid-tariff-2025`
 - Source type: `implementing_regulation`
-- Candidate URL: https://narodne-novine.nn.hr/clanci/sluzbeni/2025_11_142_2106.html
+- Official source URL: https://narodne-novine.nn.hr/clanci/sluzbeni/2025_11_142_2106.html
 - Resolved URL: https://narodne-novine.nn.hr/clanci/sluzbeni/2025_11_142_2106.html
 - Retrieved: 2026-10-19T16:44:17.247195+03:00
 - Media type: `text/html; charset=utf-8`

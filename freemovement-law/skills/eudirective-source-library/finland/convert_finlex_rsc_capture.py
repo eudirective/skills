@@ -19,7 +19,8 @@ from html.parser import HTMLParser
 from pathlib import Path
 
 PACK = Path(__file__).resolve().parent
-ROOT = PACK.parents[1]
+PROJECT_ROOT = PACK.parents[1]
+TEMP_ROOT = Path(os.environ.get("PUBLIC_DATA_TEMP_ROOT", str(PROJECT_ROOT))).resolve()
 CAPTURE_LIST = PACK / "references" / "finlex-rsc-captures.json"
 OUTPUT_MANIFEST = PACK / "references" / "finlex-rsc-retrieval-manifest.json"
 ALLOWED_HOSTS = {"www.finlex.fi", "finlex.fi"}
@@ -27,6 +28,16 @@ RSC_REF = re.compile(r"^\$L([0-9a-f]+)$")
 ELI_PATTERN = re.compile(r"http://data\.finlex\.fi/eli/sd/(\d{4}/\d+)/ajantasa/(\d{4}-\d{2}-\d{2})/fin(?:\\\\?/|[\"'<>\s])")
 SECTION_NUMBER = re.compile(r"^\s*\d+[a-z]?\s*§", re.IGNORECASE)
 CHAPTER_NUMBER = re.compile(r"^\s*\d+\s+luku\b", re.IGNORECASE)
+
+
+def local_path(relative_path: str) -> Path:
+    """Resolve source-library files in the checkout and temp files in the configured scratch root."""
+    relative = Path(relative_path)
+    base = TEMP_ROOT if relative.parts and relative.parts[0] == "temp" else PROJECT_ROOT
+    output = (base / relative).resolve()
+    if not output.is_relative_to(base.resolve()):
+        raise ValueError(f"refused path outside its root: {relative_path}")
+    return output
 
 
 def sha256(data: bytes) -> str:
@@ -299,15 +310,21 @@ def update_inventories(record: dict) -> None:
             if item.get("id") != record["id"]:
                 continue
             item["retrieved"] = True
-            item["accepted"] = False
-            item["retrieval_status"] = "converted_review_candidate"
+            if not item.get("local_copy_accepted"):
+                item["accepted"] = False
+                item["retrieval_status"] = "converted_review_candidate"
             item["retrieval_shape"] = "Finlex current-text HTML page with full Finnish law body embedded in a Next.js RSC stream"
             item["publisher_identifier"]["record"] = f"{record['act_number']}; current ELI: {record['current_eli']}"
-            item["verification_status"] = "Official current Finlex page, exact act title, Finnish ELI date, enacting formula, section headings, paragraph count and full-body threshold validated; conversion remains a review candidate."
-            item["document_path"] = "../candidates/" + record["output_path"].split("/")[-1]
+            if not item.get("local_copy_accepted"):
+                item["verification_status"] = "Official current Finlex page, exact act title, Finnish ELI date, enacting formula, section headings, paragraph count and full-body threshold validated; conversion remains a review candidate."
+            item["latest_conversion_candidate_path"] = record["output_path"]
+            if record.get("monitor_archive_path"):
+                item["monitor_archive_path"] = record["monitor_archive_path"]
             item["raw_capture_path"] = record["raw_html_path"]
             break
-        data["accepted_source_count"] = 0
+        accepted_local = sum(bool(item.get("local_copy_accepted")) for item in entries)
+        data["accepted_source_count"] = accepted_local
+        data["accepted_local_copy_count"] = accepted_local
         data["retrieved_review_candidate_count"] = sum("review_candidate" in x.get("retrieval_status", "") for x in entries)
         data["converted_review_candidate_count"] = data["retrieved_review_candidate_count"]
         atomic_write(path, (json.dumps(data, ensure_ascii=False, indent=2) + "\n").encode("utf-8"))
@@ -346,9 +363,7 @@ def sync() -> None:
                     raise ValueError("empty response")
                 digest = sha256(body)
                 path = f"temp/finland/raw/{record['id']}-{digest}.html"
-                output = (ROOT / path).resolve()
-                if not output.is_relative_to(ROOT):
-                    raise ValueError("refused output path outside project root")
+                output = local_path(path)
                 if output.exists() and sha256(output.read_bytes()) != digest:
                     raise ValueError("hash-named raw snapshot has conflicting content")
                 if not output.exists():
@@ -378,14 +393,10 @@ def run(mode: str) -> None:
     errors = []
     for record in captures["records"]:
         try:
-            raw_path = (ROOT / record["raw_html_path"]).resolve()
-            if not raw_path.is_relative_to(ROOT):
-                raise ValueError("raw path escapes project root")
+            raw_path = local_path(record["raw_html_path"])
             raw_html = raw_path.read_bytes()
             markdown, metadata = render(record, raw_html)
-            out_path = (ROOT / record["output_path"]).resolve()
-            if not out_path.is_relative_to(ROOT):
-                raise ValueError("output path escapes project root")
+            out_path = local_path(record["output_path"])
             if mode == "verify":
                 expected = old_by_id.get(record["id"])
                 if not expected:
@@ -404,6 +415,8 @@ def run(mode: str) -> None:
                 metadata["output_path"] = record["output_path"]
                 metadata["raw_html_path"] = record["raw_html_path"]
                 metadata["response_url"] = record.get("response_url", record["page_url"])
+                if record.get("monitor_archive_path"):
+                    metadata["monitor_archive_path"] = record["monitor_archive_path"]
                 results.append(metadata)
                 update_inventories(metadata)
                 print(f"converted {record['id']} -> {record['output_path']}")

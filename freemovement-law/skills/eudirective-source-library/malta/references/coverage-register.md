@@ -4,7 +4,7 @@ Review date: 21 October 2026
 
 Status: country review incomplete; no topic is accepted as adequately covered.
 
-The register has 55 candidate records: 41 official external links are accepted within scope, 11 are pending human/currentness review, and 3 duplicate or misleading routes are not relied upon. No local copy, legal topic, or country review is accepted complete.
+The source register has 55 records: 41 official external links are accepted within scope, 11 are pending human/currentness review, and 3 duplicate or misleading routes are not relied upon. No local copy, legal topic, or country review is accepted complete.
 
 | Issue area | Status | Source leads | Work still needed |
 |---|---|---|---|

@@ -26,8 +26,8 @@ PACK = Path(__file__).resolve().parents[1]
 ROOT = PACK.parents[1]
 PROJECT_TEMP = ROOT / "temp"
 REFERENCES = PACK / "references"
-SOURCE_MANIFEST = REFERENCES / "candidate-manifest.json"
-CAPTURE_MANIFEST = REFERENCES / "esbirka-open-data-captures.json"
+SOURCE_MANIFEST = REFERENCES / "source-register.json"
+CAPTURE_MANIFEST = PROJECT_TEMP / PACK.relative_to(ROOT) / "work" / "retrieval-manifest.json"
 HOST = "e-sbirka.gov.cz"
 BASE = f"https://{HOST}/sbr-externi"
 USER_AGENT = "eudirective-source-library/1.0 (bounded official text retrieval; eudirective@proton.me)"
@@ -342,9 +342,22 @@ def capture_entry(entry: dict, previous: dict | None) -> tuple[dict, bytes]:
             rec["retrieval_status"] = "converted_review_candidate"
             rec["review_state"] = "review_candidate"
             return rec, markdown
+        accepted_path_value = previous.get("document_path")
+        if previous.get("accepted") and isinstance(accepted_path_value, str):
+            accepted_path = inside_pack(accepted_path_value)
+            marker = b"## Official text\n"
+            if accepted_path.is_file() and sha256(accepted_path.read_bytes()) == previous.get("accepted_document_sha256"):
+                accepted_bytes = accepted_path.read_bytes()
+                if marker in accepted_bytes and marker in markdown and accepted_bytes.split(marker, 1)[1] == markdown.split(marker, 1)[1]:
+                    rec["accepted"] = True
+                    rec["document_path"] = accepted_path_value
+                    rec["accepted_document_sha256"] = previous["accepted_document_sha256"]
+                    rec["retrieval_status"] = "accepted_local_copy"
+                    rec["local_copy_status"] = "accepted"
+                    return rec, markdown
     changed = bool(previous and previous.get("source_sha256") and previous.get("source_sha256") != source_hash)
-    normal_rel = f"candidates/legislation/{entry['id']}.md"
-    normal_path = inside_pack(normal_rel)
+    normal_rel = f"work/pending/legislation/{entry['id']}.md"
+    normal_path = artifact_path(normal_rel)
     if changed or (normal_path.exists() and sha256(normal_path.read_bytes()) != sha256(markdown)):
         target = f"work/pending/{entry['id']}-{metadata['datumUcinnostiZneniOd']}-{source_hash[:16]}.md"
         rec["retrieval_status"] = "changed_review_candidate"
@@ -365,24 +378,51 @@ def update_manifests(manifest: dict, capture: dict) -> None:
         if not item:
             continue
         item["retrieved"] = bool(rec.get("source_sha256"))
-        item["accepted"] = False
         item["retrieval_status"] = rec.get("retrieval_status", "retrieval_or_conversion_error")
         item["retrieval_method"] = "esbirka_public_current_version_fragment_service"
-        for key in ("candidate_text_path", "source_sha256", "converted_sha256", "resolved_url", "version_effective_from", "publisher_citation", "retrieval_note"):
+        for key in ("source_sha256", "converted_sha256", "resolved_url", "version_effective_from", "publisher_citation", "retrieval_note"):
             if key in rec:
                 item[key] = rec[key]
             else:
                 item.pop(key, None)
+        if rec.get("retrieval_status") == "accepted_local_copy":
+            item["accepted"] = True
+            item["document_path"] = rec["document_path"]
+            item["accepted_local_copy_sha256"] = rec["accepted_document_sha256"]
+            item["local_copy_status"] = "accepted"
+            item.pop("candidate_text_path", None)
+        else:
+            item.pop("candidate_text_path", None)
+            if rec.get("candidate_text_path"):
+                item["accepted"] = bool(item.get("accepted") and item.get("document_path"))
+                item["local_copy_status"] = "accepted_prior_version_new_capture" if item["accepted"] else "temporary_capture_pending_review"
+            elif rec.get("retrieval_status") == "retrieval_or_conversion_error":
+                item["accepted"] = bool(item.get("accepted") and item.get("document_path"))
     entries = legal_entries(manifest)
     all_documents = manifest.get("documents", [])
     legal_retrieved = sum(bool(item.get("retrieved")) for item in entries)
     legal_converted = sum(item.get("retrieval_status") in {"converted_review_candidate", "changed_review_candidate"} for item in entries)
     legal_blocked = sum(item.get("retrieval_status") == "retrieval_or_conversion_error" for item in entries)
-    manifest["accepted_source_count"] = 0
+    accepted_local = sum(bool(item.get("accepted") and item.get("document_path")) for item in all_documents)
+    pending_candidates = sum(bool(item.get("candidate_text_path")) for item in capture.get("records", []))
+    manifest["accepted_source_count"] = accepted_local
+    manifest["source_record_count"] = len(all_documents)
+    manifest.pop("candidate_source_count", None)
+    manifest["pending_review_artifact_count"] = pending_candidates
+    manifest.pop("candidate_artifact_count", None)
     manifest["retrieved_source_count"] = sum(bool(item.get("retrieved")) for item in all_documents)
-    manifest["retrieved_review_candidate_count"] = manifest["retrieved_source_count"]
-    manifest["converted_review_candidate_count"] = sum(item.get("retrieval_status") in {"converted_review_candidate", "changed_review_candidate"} for item in all_documents)
+    manifest["retrieved_review_artifact_count"] = sum(item.get("retrieval_status") in {"converted_review_candidate", "changed_review_candidate"} for item in capture.get("records", []))
+    manifest["converted_review_artifact_count"] = manifest["retrieved_review_artifact_count"]
+    manifest.pop("retrieved_review_candidate_count", None)
+    manifest.pop("converted_review_candidate_count", None)
     manifest["blocked_source_count"] = sum(item.get("retrieval_status") == "retrieval_or_conversion_error" for item in all_documents)
+    manifest["accepted_current_law_source_count"] = sum(bool(item.get("accepted") and item.get("document_path")) for item in entries)
+    manifest["accepted_derived_text_count"] = accepted_local
+    manifest["status"] = (
+        f"{len(all_documents)} source records; {manifest.get('accepted_external_reference_count', 0)} scoped official external references; "
+        f"{accepted_local} accepted dated local source copies; {pending_candidates} temporary captures await review; "
+        "Decree 429/2010 remains pending whole-portal human review; topic coverage and country review remain incomplete"
+    )
     guidance_count = sum(item.get("retrieval_method") == "czech_official_guidance_html_adapter" for item in all_documents)
     monitor_count = sum(item.get("retrieval_method") == "bounded_official_https_capture" for item in all_documents)
     manifest["legal_retrieval"] = {
@@ -392,23 +432,23 @@ def update_manifests(manifest: dict, capture: dict) -> None:
         "version_evidence": "Publisher response fields typZneni=AKTUALNI, staleUrl, datumUcinnostiZneniOd, and citation are captured for each act",
         "retrieved_source_count": legal_retrieved,
         "converted_review_candidate_count": legal_converted,
+        "accepted_local_copy_count": sum(bool(item.get("accepted") and item.get("document_path")) for item in entries),
         "blocked_source_count": legal_blocked,
-        "status": f"{legal_converted} current Czech legal texts converted as review candidates; {legal_blocked} retrieval failures; none accepted",
-        "capture_manifest": "references/esbirka-open-data-captures.json",
+        "status": f"{sum(bool(item.get('accepted') and item.get('document_path')) for item in entries)} dated Czech legal text copies accepted; {legal_converted} new or changed copies await review; {legal_blocked} retrieval failures; e-Sbírka informative-text caveat retained",
+        "capture_manifest": "Monitor local research archive: captures/czechia-candidate-promotion-2026-10-25/Czechia/czechia/e-sbirka/retrieval-manifest.json",
     }
     manifest["guidance_retrieval"] = {
         "captured_count": guidance_count,
-                "method": "Official-page HTML adapter, exact response and conversion hashes retained in project temp storage and references; all remain review-only candidates.",
+        "method": "Official-page HTML adapter, exact response and conversion hashes retained in project temp storage and references; accepted pages remain dated copies, and changed captures require review.",
     }
     manifest["monitor_capture"] = {
         "captured_count": monitor_count,
         "method": "Bounded allowlisted official HTTPS capture; exact response hashes and deterministic conversions are replay-verified. Parent-index/currentness review remains required for forms and mission/court/oversight discovery pages.",
-        "capture_manifest": "references/monitor-pass-2026-10-19-capture-results.json",
+        "capture_manifest": "Monitor local research archive: captures/czechia-candidate-promotion-2026-10-25/Czechia/czechia/monitor-pass-2026-10-19/retrieval-manifest.json",
     }
     manifest["retrieval_status"] = (
-        f"{legal_converted} current Czech legal texts, {guidance_count} official guidance/index pages, and "
-        f"{monitor_count} monitor/discovery pages converted as review candidates; "
-        f"{manifest['blocked_source_count']} retrieval failures; none accepted"
+        f"{accepted_local} accepted local source copies; {pending_candidates} new or changed temporary review artifacts; "
+        f"{legal_blocked} e-Sbírka retrieval failures; external references, topic coverage, and country-review status remain separately registered"
     )
 
 
@@ -448,10 +488,11 @@ def sync(selected_ids: set[str] | None = None) -> None:
     capture = {
         "jurisdiction": "czechia",
         "as_of_date": datetime.now(timezone.utc).date().isoformat(),
-        "method": "Ordinary unauthenticated HTTPS requests to the public e-Sbírka page-data route; no account, API key, challenge bypass, or form submission. Current-version metadata and each exact JSON fragment-page response are saved and hash-pinned. All outputs remain unaccepted review candidates.",
+        "method": "Ordinary unauthenticated HTTPS requests to the public e-Sbírka page-data route; no account, API key, challenge bypass, or form submission. Current-version metadata and each exact JSON fragment-page response are saved and hash-pinned. Unchanged accepted document copies remain under documents/; new or changed copies are staged for review.",
         "request_policy": {"timeout_seconds": TIMEOUT, "max_response_bytes": MAX_RESPONSE_BYTES, "delay_seconds": REQUEST_DELAY, "official_host": HOST},
         "records": records,
-        "accepted_source_count": 0,
+        "accepted_source_count": sum(record.get("retrieval_status") == "accepted_local_copy" for record in records),
+        "promotion_review_date": old_capture.get("promotion_review_date"),
     }
     update_manifests(manifest, capture)
     atomic_write(CAPTURE_MANIFEST, (json.dumps(capture, ensure_ascii=False, indent=2) + "\n").encode("utf-8"))
@@ -467,7 +508,7 @@ def verify() -> None:
     for record in capture.get("records", []):
         candidate_id = record.get("candidate_id", "unknown")
         try:
-            if record.get("retrieval_status") not in {"converted_review_candidate", "changed_review_candidate"}:
+            if record.get("retrieval_status") not in {"converted_review_candidate", "changed_review_candidate", "accepted_local_copy"}:
                 continue
             entry = entries[candidate_id]
             meta_raw = in_project_temp(record["metadata_raw_path"]).read_bytes()
@@ -493,10 +534,24 @@ def verify() -> None:
             markdown = render_markdown(entry, metadata, all_fragments, record)
             if sha256(markdown) != record["converted_sha256"]:
                 raise ValueError("offline conversion replay mismatch")
-            candidate = artifact_path(record["candidate_text_path"]).read_bytes()
-            if sha256(candidate) != record["converted_sha256"]:
-                raise ValueError("saved candidate hash mismatch")
-            print(f"verified {candidate_id}: {record['version_effective_from']}, {record['fragment_count']} fragments", flush=True)
+            if record.get("retrieval_status") == "accepted_local_copy":
+                document_path = record.get("document_path")
+                if not document_path:
+                    raise ValueError("accepted local copy has no document_path")
+                document = inside_pack(document_path).read_bytes()
+                if sha256(document) != record.get("accepted_document_sha256"):
+                    raise ValueError("accepted document hash mismatch")
+                marker = b"## Official text\n"
+                if marker not in markdown or marker not in document:
+                    raise ValueError("official-text boundary missing from replay or accepted document")
+                if document.split(marker, 1)[1] != markdown.split(marker, 1)[1]:
+                    raise ValueError("accepted document text does not match offline conversion replay")
+                print(f"verified accepted copy {candidate_id}: {record['version_effective_from']}, {record['fragment_count']} fragments", flush=True)
+            else:
+                candidate = artifact_path(record["candidate_text_path"]).read_bytes()
+                if sha256(candidate) != record["converted_sha256"]:
+                    raise ValueError("saved candidate hash mismatch")
+                print(f"verified candidate {candidate_id}: {record['version_effective_from']}, {record['fragment_count']} fragments", flush=True)
         except Exception as exc:
             errors.append(f"{candidate_id}: {type(exc).__name__}: {exc}")
     if errors:

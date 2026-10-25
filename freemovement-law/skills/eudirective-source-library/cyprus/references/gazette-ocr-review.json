@@ -7,13 +7,13 @@
   "source": {
     "publisher": "Government Printing Office of the Republic of Cyprus",
     "instrument": "Law 7(I)/2007, Gazette issue 4110, 9 February 2007",
-    "path": "source-library/cyprus/captures/raw/cy-free-movement-gazette-2007-5956804c60b7979588fb7016109ef76e43d927aeeabcc8444e13d49374f30d50.pdf",
+    "raw_archive_path": "captures/public-data/CY/raw/cy-free-movement-gazette-2007-5956804c60b7979588fb7016109ef76e43d927aeeabcc8444e13d49374f30d50.pdf",
     "sha256": "5956804c60b7979588fb7016109ef76e43d927aeeabcc8444e13d49374f30d50",
     "bytes": 2512620,
     "page_count": 71
   },
   "ocr_derivative": {
-    "path": "source-library/cyprus/captures/derived/cy-free-movement-gazette-2007-ocr.pdf",
+    "derived_archive_path": "captures/public-data/CY/derived/cy-free-movement-gazette-2007-ocr.pdf",
     "sha256": "fb105540b4d679811f9769cd9b4ca443f594fd29ce6d4bba3df6d7a1a3ba397e",
     "bytes": 2043581,
     "page_count": 71,
@@ -23,10 +23,10 @@
     "text_extractor": "pypdf 6.21.1"
   },
   "candidate": {
-    "path": "source-library/cyprus/candidates/legislation/cy-free-movement-gazette-2007.md",
+    "candidate_archive_path": "candidates/public-data/CY/legislation/cy-free-movement-gazette-2007.md",
     "sha256": "83423608040e794859f9a10d21f80ddd03182b5538b0f2fe1704a42cde6978ff",
     "bytes": 135809,
-    "replay_command": "python -m pip install -r source-library/cyprus/requirements.txt && python source-library/cyprus/scripts/convert_gazette_ocr.py --check"
+    "replay_command": "Retrieve the exact original and OCR PDFs from the Monitor local-only archive, then run convert_gazette_ocr.py with --source-pdf, --ocr-pdf, --output and the temporary workspace paths."
   },
   "scope": {
     "source_pdf_pages": [
@@ -1067,7 +1067,7 @@
     {
       "passage_id": "law7-2007-art4-2-extended-family",
       "source_id": "cy-free-movement-gazette-2007",
-      "artifact_path": "source-library/cyprus/candidates/legislation/cy-free-movement-gazette-2007.md",
+      "artifact_archive_path": "candidates/public-data/CY/legislation/cy-free-movement-gazette-2007.md",
       "artifact_sha256": "83423608040e794859f9a10d21f80ddd03182b5538b0f2fe1704a42cde6978ff",
       "raw_source_sha256": "5956804c60b7979588fb7016109ef76e43d927aeeabcc8444e13d49374f30d50",
       "language": "el",

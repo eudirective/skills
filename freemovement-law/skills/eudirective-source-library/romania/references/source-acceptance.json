@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "jurisdiction": "RO",
-  "as_of": "2026-10-23",
+  "as_of": "2026-10-24",
   "accepted_source_count": 0,
   "accepted_current_law_source_count": 0,
   "accepted_derived_text_count": 0,
@@ -14,9 +14,9 @@
     "national_monitor_only_targets": 8,
     "additional_guidance_targets": 10,
     "local_document_files": 81,
-    "local_acceptance_note": "The existing local conversions remain unaccepted. This manual review confirmed the manifest paths resolve but found no retained raw-source snapshots or Romanian replay helper in this checkout. A read-only inspection of the sibling /tmp/public-data checkout found its Romanian sync script and converted documents but no captures/raw directory or captured source bytes, so a source-specific repair could not be reproduced or validated. No local file is newly accepted. Source Monitor runtime checks are unsupported."
+    "local_acceptance_note": "The existing local conversions remain unaccepted. The 2026-10-24 Source Monitor sync retrieved 83 of 84 targets and generated 72 Markdown candidates. All 71 registered document candidates matched their existing document text after normalizing only the converter-version line (0.2.1); no substantive text difference was found. The additional Portal Legislativ candidate OUG nr. 32/2026 (record 309832) has no document path in the manifest and remains archived for scope review; it has not been promoted or accepted. The one failed target was an unlisted FreeWebService WSDL URL: it returned an HTML-formatted service description with a text/xml content type, so the sync’s HTML content-type check rejected it. The sync report, the inspected FreeWebService response, and the two reviewed candidates are archived in the Monitor local research archive under romania-monitor-sync-2026-10-24. This check does not establish later legal currentness or topic coverage. No local file is newly accepted."
   },
-  "policy": "A human-reviewed official link is usable for ordinary research within the identified publisher, instrument, language, displayed date or cutoff, reviewed content, and limitations. A government-published consolidated text is preferred when available. No Gazette-fragment reconstruction, local capture, hash, replay, conversion, API access, or copying permission is required for link use. Check a specific later amendment only when it may materially affect the issue. Link acceptance is separate from local-copy acceptance, topic coverage, and country completion. Manual conversion review on 2026-10-23 did not establish a reproducible Romanian local-copy repair because this batch checkout lacks retained raw source bytes and replay tooling; the sibling /tmp/public-data checkout has a sync helper but no raw captures. Local artifacts remain unaccepted.",
+  "policy": "A human-reviewed official link is usable for ordinary research within the identified publisher, instrument, language, displayed date or cutoff, reviewed content, and limitations. A government-published consolidated text is preferred when available. No Gazette-fragment reconstruction, local capture, hash, replay, conversion, API access, or copying permission is required for link use. Check a specific later amendment only when it may materially affect the issue. Link acceptance is separate from local-copy acceptance, topic coverage, and country completion.",
   "official_reference_reviews": {
     "ro-portal-208825": {
       "status": "usable_official_reference",
