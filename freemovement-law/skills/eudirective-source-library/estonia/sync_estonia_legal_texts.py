@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Capture exact Estonian Riigi Teataja legal texts and replay them offline."""
+"""Replay accepted Estonian Riigi Teataja legal texts against saved responses."""
 from __future__ import annotations
 
 import json
+import os
 import re
 import sys
 import time
@@ -15,8 +16,10 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 import convert_riigiteataja as rt
 
 PACK = Path(__file__).resolve().parent
-MANIFEST = PACK / "references" / "candidate-manifest.json"
-CAPTURES = PACK / "references" / "estonia-legal-text-captures.json"
+TEMP_ROOT = Path(os.environ.get("PUBLIC_DATA_TEMP_ROOT", "/tmp/public-data"))
+TEMP_ESTONIA = TEMP_ROOT / "temp" / "estonia"
+MANIFEST = TEMP_ESTONIA / "candidate-manifest.json"
+CAPTURES = TEMP_ESTONIA / "retrieval-manifest.json"
 HOST = "www.riigiteataja.ee"
 MAX_BODY_CHARS = 500
 
@@ -426,9 +429,10 @@ def verify() -> None:
     by_id = entries_by_id(manifest)
     captures = json.loads(CAPTURES.read_text(encoding="utf-8"))
     errors: list[str] = []
-    for record in captures.get("records", []):
+    capture_ledger = captures.get("legal_text_capture_ledger", captures)
+    for record in capture_ledger.get("records", []):
         try:
-            raw = (rt.ROOT / record["raw_path"]).read_bytes()
+            raw = (TEMP_ROOT / record["raw_path"]).read_bytes()
             if rt.sha256(raw) != record["source_sha256"]:
                 raise ValueError("raw source hash mismatch")
             entry = by_id[record["candidate_id"]]
@@ -436,6 +440,7 @@ def verify() -> None:
                 converted, metadata, body = html_markdown(entry, record, raw)
                 if metadata != record.get("publisher_metadata"):
                     raise ValueError("publisher metadata replay mismatch")
+                section = "Captured official English text"
             else:
                 root = rt.ET.fromstring(raw)
                 if record["artifact_type"] == "current_xml":
@@ -457,12 +462,18 @@ def verify() -> None:
                     if field in record:
                         descriptor[field] = record[field]
                 converted = rt.render_document(root, descriptor)
+                section = "Consolidated statutory text (Estonian)"
             if rt.sha256(converted) != record["converted_sha256"]:
                 raise ValueError("deterministic conversion hash differs from capture ledger")
-            saved = (rt.ROOT / record["candidate_text_path"]).read_bytes()
-            if rt.sha256(saved) != record["converted_sha256"]:
-                raise ValueError("saved candidate text differs from conversion replay")
-            print(f"verified {record['candidate_id']} ({record['representation']})")
+            saved = (PACK / record["document_path"]).read_bytes()
+            if rt.sha256(saved) != record.get("accepted_artifact_sha256"):
+                raise ValueError("accepted document hash differs from acceptance register")
+            marker = f"## {section}\n"
+            replay_body = converted.decode("utf-8").split(marker, 1)[1].strip()
+            accepted_body = saved.decode("utf-8").split(marker, 1)[1].strip()
+            if replay_body != accepted_body:
+                raise ValueError("accepted legal text differs from deterministic replay")
+            print(f"verified accepted local copy {record['candidate_id']} ({record['representation']})")
         except Exception as exc:
             errors.append(f"{record.get('candidate_id')} {record.get('representation')}: {type(exc).__name__}: {exc}")
     if errors:
@@ -471,9 +482,9 @@ def verify() -> None:
 
 if __name__ == "__main__":
     mode = sys.argv[1] if len(sys.argv) > 1 else ""
-    if mode == "sync":
-        sync()
-    elif mode == "verify":
+    if mode == "verify":
         verify()
+    elif mode == "sync":
+        raise SystemExit("Capture is handled through EU Source Update Monitor local research. The legacy sync mode is retired after promotion.")
     else:
         raise SystemExit("usage: sync_estonia_legal_texts.py sync|verify")

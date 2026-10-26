@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 import re
 import ssl
 import sys
@@ -19,9 +20,11 @@ from pathlib import Path
 PACK = Path(__file__).resolve().parent
 ROOT = PACK.parents[1]
 REFS = PACK / "references"
-CANDIDATES = REFS / "candidate-manifest.json"
-CAPTURES = REFS / "riigiteataja-captures.json"
-RETRIEVAL = REFS / "riigiteataja-retrieval-manifest.json"
+TEMP_ROOT = Path(os.environ.get("PUBLIC_DATA_TEMP_ROOT", "/tmp/public-data"))
+TEMP_ESTONIA = TEMP_ROOT / "temp" / "estonia"
+CANDIDATES = TEMP_ESTONIA / "candidate-manifest.json"
+CAPTURES = TEMP_ESTONIA / "capture-manifest.json"
+RETRIEVAL = TEMP_ESTONIA / "retrieval-manifest.json"
 HOST = "www.riigiteataja.ee"
 USER_AGENT = "eudirective-source-library/1.0 (bounded official law retrieval; eudirective@proton.me)"
 MAX_BYTES = 16 * 1024 * 1024
@@ -274,6 +277,12 @@ def render_document(root: ET.Element, descriptor: dict) -> bytes:
 
     def render_misc(node: ET.Element, depth: int) -> None:
         tag = local_name(node)
+        # Riigi Teataja may wrap all article and chapter nodes in an ``osa``
+        # element. Keep those legal headings by sending structural containers
+        # back through the document walker instead of flattening them as text.
+        if tag in {"osa", "peatykk", "jagu", "jaotis", "alljaotis", "paragrahv"}:
+            walk(node, depth)
+            return
         if tag in {"sisuTekst", "tavatekst"}:
             value = text_of(node)
             if value:
@@ -470,13 +479,10 @@ def process(mode: str) -> None:
 
 
 def main() -> None:
-    mode = sys.argv[1] if len(sys.argv) > 1 else ""
-    if mode == "sync":
-        sync()
-    elif mode in {"convert", "verify"}:
-        process(mode)
-    else:
-        raise SystemExit("usage: convert_riigiteataja.py [sync|convert|verify]")
+    raise SystemExit(
+        "The legacy capture CLI is retired. Use EU Source Update Monitor local research "
+        "for new captures, and sync_estonia_legal_texts.py verify for accepted-text replay."
+    )
 
 
 if __name__ == "__main__":
