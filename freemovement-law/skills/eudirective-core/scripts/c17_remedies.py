@@ -14,13 +14,12 @@ from pathlib import Path
 from contract_validate import load_json, validate_obj
 from module_conformance import validate_pair
 from c17_applicant_drafts import generate as old_generate, digest
-from source_library_paths import compatibility_root, module_notes_root
+from source_library_paths import compatibility_root, module_notes_root, module_record, module_skill_for, module_skill_root
 
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG_PINS = ROOT / 'references/c17/catalog-pins.json'
 CATALOG_PINS_SHA256 = 'ee850583ff97fe2f467c7f32cdcc7c575a7e36c63483283c181ca7281d2c08cd'
 ALLOWED_CASES = set(range(1, 9))
-COUNTRIES = {'SE': 'eudirective-ms-sweden', 'TR': 'eudirective-ac-turkiye'}
 FAMILY = {'EU': 'core', 'SE': 'member_state', 'TR': 'applicant_country'}
 OWNER_NAMESPACE = {'EU': 'eu:', 'SE': 'se:', 'TR': 'tr:'}
 
@@ -38,21 +37,23 @@ def safe_file(root, rel):
     return p
 
 
-def verify_module_notes(module_root, export):
+def verify_module_notes(module_root, export, enforce_registered_root=False):
+    module = module_record(export['module_id'])
+    if enforce_registered_root and module_root.resolve() != module_skill_root(export['module_id']).resolve():
+        raise ValueError('c17_module_root_not_registered_for_export')
     for src in export['source_records']:
         if src.get('content_kind') != 'verified_source_note' or src.get('authenticity_state') != 'verified_identity_version':
             raise ValueError('c17_unenrolled_source_class')
         src_id = src['source_id']
         if ':src:' not in src_id:
             raise ValueError('c17_bad_source_namespace')
-        country = 'sweden' if module_root.name == 'eudirective-ms-sweden' else 'turkiye'
         local_note = module_root / 'references' / 'source-notes' / (src_id.split(':src:')[1] + '.md')
-        path = local_note if local_note.is_file() else module_notes_root(country) / (src_id.split(':src:')[1] + '.md')
+        path = local_note if local_note.is_file() else module_notes_root(module['notes_directory'], module['module_id']) / (src_id.split(':src:')[1] + '.md')
         if sha_file(path) != src['content_sha256']:
             raise ValueError('c17_module_source_note_tampered:' + src_id)
 
 
-def load_catalogs(sweden_root, turkiye_root):
+def load_catalogs(sweden_root, turkiye_root, enforce_registered_roots=False):
     """Cross-package composition: country catalogues remain physically country-owned."""
     if sha_file(CATALOG_PINS) != CATALOG_PINS_SHA256:
         raise ValueError('c17_catalog_pin_manifest_modified')
@@ -87,7 +88,7 @@ def load_catalogs(sweden_root, turkiye_root):
                 raise ValueError('c17_country_module_release_mismatch:' + jurisdiction)
             manifest, export = load_json(mpath), load_json(epath)
             validate_pair(manifest, export)
-            verify_module_notes(root, export)
+            verify_module_notes(root, export, enforce_registered_roots)
             if ((manifest['module_family'], manifest['jurisdiction']) != (FAMILY[jurisdiction], jurisdiction) or
                     jurisdiction == 'TR' and 'SE' not in manifest['destination_state_profiles_available']):
                 raise ValueError('c17_wrong_module_competence:' + jurisdiction)
@@ -316,13 +317,13 @@ def render(plan):
 
 def main():
     p=argparse.ArgumentParser()
-    p.add_argument('--sweden-module',type=Path,required=True)
-    p.add_argument('--turkiye-module',type=Path,required=True)
     p.add_argument('--output-dir',type=Path,required=True)
     p.add_argument('--case',type=int,action='append',choices=range(1,9))
     p.add_argument('--c6-evidence-root',type=Path,help='Directory with already released C6 workdirs L1 ... L8; each is independently replay-verified')
     args=p.parse_args()
-    catalogs,digests=load_catalogs(args.sweden_module,args.turkiye_module)
+    sweden_root = module_skill_for('SE', 'member_state')
+    turkiye_root = module_skill_for('TR', 'applicant_country')
+    catalogs,digests=load_catalogs(sweden_root,turkiye_root,enforce_registered_roots=True)
     args.output_dir.mkdir(parents=True,exist_ok=True)
     for n in args.case or range(1,9):
         data=build(n,catalogs,digests)

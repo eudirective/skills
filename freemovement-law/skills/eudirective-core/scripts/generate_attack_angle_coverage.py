@@ -11,15 +11,11 @@ from pathlib import Path
 from attack_angle_synthesis import SUPPORTED_SIGNAL_KINDS
 from contract_validate import ContractError, digest_obj, load_json, validate_obj
 from module_conformance import ConformanceError, validate_paths
-from source_library_paths import compatibility_root
+from source_library_paths import compatibility_root, operational_module_roots
 import consultation_issue_selection as issue_selection
 
 CORE_ROOT = Path(__file__).resolve().parents[1]
 PLUGIN_ROOT = CORE_ROOT.parents[1]
-MODULES = (
-    PLUGIN_ROOT / "skills" / "eudirective-ms-sweden",
-    PLUGIN_ROOT / "skills" / "eudirective-ac-turkiye",
-)
 ALLOWED_CAPABILITIES = {"deterministic", "model_led", "synthetic_only", "not_implemented", "unavailable"}
 
 
@@ -36,7 +32,15 @@ def read_json(path: Path) -> dict:
 
 
 def source_record(path: Path) -> dict:
-    return {"path": path.relative_to(PLUGIN_ROOT).as_posix(), "sha256": file_sha(path)}
+    if path.is_relative_to(PLUGIN_ROOT):
+        relative = path.relative_to(PLUGIN_ROOT).as_posix()
+    else:
+        roots = operational_module_roots()
+        skill_root = next((root for root in roots if path.is_relative_to(root)), None)
+        if skill_root is None:
+            raise InventoryError(f"module_source_outside_registered_package:{path}")
+        relative = f"{skill_root.parents[1].name}/{path.relative_to(skill_root.parents[1]).as_posix()}"
+    return {"path": relative, "sha256": file_sha(path)}
 
 
 def source_pack_index() -> dict:
@@ -242,7 +246,7 @@ def load_inputs() -> tuple[dict, list[dict]]:
     module_outputs = []
     module_files: list[Path] = [registry_path, catalog_path, stratagem_path,
                                 compatibility_root() / "core-source-pack-manifest-0.6.1.json"]
-    for module_root in MODULES:
+    for module_root in operational_module_roots():
         manifest_path = module_root / "references/module-manifest.json"
         export_path = module_root / "references/module-export.json"
         sidecar_path = module_root / "references/c12-rule-extension.json"
