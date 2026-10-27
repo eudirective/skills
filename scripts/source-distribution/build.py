@@ -202,9 +202,19 @@ def registry_countries(registry: dict[str, Any]) -> list[dict[str, Any]]:
         raise ValueError("Country registry must contain exactly 31 countries")
     codes = [c.get("iso_country_code") for c in countries]
     plugins = [c.get("plugin_name") for c in countries]
+    directories = [c.get("plugin_directory") for c in countries]
     skills = [c.get("skill_name") for c in countries]
-    if len(set(codes)) != 31 or len(set(plugins)) != 31 or len(set(skills)) != 31:
-        raise ValueError("Country, plugin, and skill identities must be unique")
+    if len(set(codes)) != 31 or len(set(plugins)) != 31 or len(set(directories)) != 31 or len(set(skills)) != 31:
+        raise ValueError("Country, plugin, package-directory, and skill identities must be unique")
+    for country in countries:
+        slug = re.sub(r"[^a-z0-9]+", "-", country.get("country_name", "").casefold()).strip("-")
+        if country.get("plugin_name") != f"fm-{slug}":
+            raise ValueError(f"Plugin identity does not match country name: {country.get('iso_country_code')}")
+        directory = country.get("plugin_directory")
+        if not isinstance(directory, str) or Path(directory).is_absolute() or ".." in Path(directory).parts:
+            raise ValueError(f"Unsafe country package directory: {directory}")
+        if directory != f"freemovement-law-{country['iso_country_code'].lower()}":
+            raise ValueError(f"Country package directory changed unexpectedly: {country['iso_country_code']}")
     module_ids: list[str] = []
     for country in countries:
         modules = country.get("related_operational_modules", [])
@@ -684,10 +694,10 @@ def build(
     component_manifests: dict[str, dict[str, Any]] = {}
     migration_rows: list[dict[str, Any]] = []
 
-    def choose_versions(package_name: str, manifest_rel: str, input_fingerprint: str,
+    def choose_versions(package_name: str, package_directory: str, manifest_rel: str, input_fingerprint: str,
                         skill_fingerprints: dict[str, str], initial_plugin: str,
                         initial_skills: dict[str, str]) -> tuple[str, dict[str, str]]:
-        old_path = previous_root / package_name / manifest_rel
+        old_path = previous_root / package_directory / manifest_rel
         old = load_json(old_path) if old_path.is_file() else None
         return choose_component_versions(
             old, input_fingerprint, skill_fingerprints, initial_plugin, initial_skills
@@ -718,7 +728,16 @@ def build(
         if prior and prior != plugin_name:
             raise ValueError(f"Conflicting module-note ownership for {directory}: {prior} / {plugin_name}")
         notes_plugin_by_directory[directory] = plugin_name
-    module_notes_by_plugin: dict[str, list[Path]] = {name: [] for name in {registry["core_plugin"], *(c["plugin_name"] for c in countries)}}
+    package_directory_by_plugin = {registry["core_plugin"]: "."}
+    package_directory_by_plugin.update({country["plugin_name"]: country["plugin_directory"] for country in countries})
+    for module in operational_modules:
+        package_name = module["plugin_name"]
+        package_directory = "." if package_name == registry["core_plugin"] else module["package_directory"]
+        previous_directory = package_directory_by_plugin.get(package_name)
+        if previous_directory is not None and previous_directory != package_directory:
+            raise ValueError(f"Package-directory mapping conflict for {package_name}")
+        package_directory_by_plugin[package_name] = package_directory
+    module_notes_by_plugin: dict[str, list[Path]] = {name: [] for name in package_directory_by_plugin}
     for note in sorted(module_notes_root.rglob("*")):
         if not note.is_file() or any(part in SKIP_DIRS for part in note.relative_to(module_notes_root).parts):
             continue
@@ -873,6 +892,7 @@ def build(
             "country_name": c["country_name"],
             "jurisdiction_class": c["jurisdiction_class"],
             "plugin_name": c["plugin_name"],
+            "package_directory": c["plugin_directory"],
             "skill_name": c["skill_name"],
             "source_library_directory": c["upstream_source_directory"],
             "official_languages": c.get("official_languages", []),
@@ -882,6 +902,7 @@ def build(
                 "module_id": module["module_id"],
                 "module_family": module["module_family"],
                 "plugin_name": module["plugin_name"],
+                "package_directory": module["package_directory"],
                 "skill_name": module["skill_name"],
                 "skill_directory": module["skill_directory"],
                 "skill_version": module["skill_version"],
@@ -910,6 +931,7 @@ def build(
         "module_notes_ownership": [{
             "notes_directory": directory,
             "plugin_name": plugin_name,
+            "package_directory": package_directory_by_plugin[plugin_name],
             "ownership_basis": (
                 "core_owned_operational_module_no_country_package"
                 if plugin_name == registry["core_plugin"] and directory not in {c["upstream_source_directory"] for c in countries}
@@ -956,12 +978,29 @@ def routing_registry() -> dict:
         raise ValueError("Generated operational module registry is malformed.")
     return data
 
+def _package_directory_for_plugin(data: dict, plugin_name: str) -> str:
+    if plugin_name == data["core_plugin"]:
+        return "."
+    matches = [item for item in data["countries"] if item["plugin_name"] == plugin_name]
+    if len(matches) != 1:
+        raise ValueError(f"Plugin identity is not registered exactly once: {plugin_name}")
+    directory = matches[0].get("package_directory")
+    if not isinstance(directory, str) or Path(directory).is_absolute() or ".." in Path(directory).parts:
+        raise ValueError(f"Registered package directory is unsafe: {plugin_name}")
+    return directory
+
+def _package_root(data: dict, plugin_name: str, package_directory: str) -> Path:
+    expected = _package_directory_for_plugin(data, plugin_name)
+    if package_directory != expected:
+        raise ValueError(f"Registered package directory mismatch for {plugin_name}")
+    return PLUGIN_ROOT if plugin_name == data["core_plugin"] else PLUGIN_ROOT.parent / package_directory
+
 def country_plugin_root(country: str) -> Path:
     data = routing_registry()
     row = next((item for item in data["countries"] if item["source_library_directory"] == country or item["iso_country_code"].lower() == country.lower()), None)
     if row is None:
         raise ValueError(f"Country is not registered: {country}")
-    root = PLUGIN_ROOT.parent / row["plugin_name"]
+    root = PLUGIN_ROOT.parent / row["package_directory"]
     if root.is_dir():
         return root
     raise FileNotFoundError(f"Country plugin is not available beside the core package: {row['plugin_name']}")
@@ -971,7 +1010,7 @@ def module_skill_root(module_id: str) -> Path:
     row = next((item for item in data["operational_modules"] if item["module_id"] == module_id), None)
     if row is None:
         raise ValueError(f"Operational module is not registered: {module_id}")
-    package = PLUGIN_ROOT if row["plugin_name"] == data["core_plugin"] else PLUGIN_ROOT.parent / row["plugin_name"]
+    package = _package_root(data, row["plugin_name"], row["package_directory"])
     root = package / row["skill_directory"]
     if not root.is_dir():
         raise FileNotFoundError(f"Registered module package is unavailable: {row['plugin_name']} / {row['skill_directory']}")
@@ -986,8 +1025,9 @@ def module_record(module_id: str) -> dict:
 
 def module_record_for_root(module_root: Path) -> dict:
     root = module_root.resolve()
-    for row in routing_registry()["operational_modules"]:
-        package = PLUGIN_ROOT if row["plugin_name"] == routing_registry()["core_plugin"] else PLUGIN_ROOT.parent / row["plugin_name"]
+    data = routing_registry()
+    for row in data["operational_modules"]:
+        package = _package_root(data, row["plugin_name"], row["package_directory"])
         if (package / row["skill_directory"]).resolve() == root:
             return row
     raise ValueError(f"Module package is not registered: {module_root}")
@@ -1025,7 +1065,8 @@ def module_notes_root(country: str, module_id: str | None = None) -> Path:
     )
     if owner is None:
         raise ValueError(f"Module-note owner is not registered: {notes_directory}")
-    package = PLUGIN_ROOT if owner == data["core_plugin"] else PLUGIN_ROOT.parent / owner
+    package_directory = _package_directory_for_plugin(data, owner)
+    package = PLUGIN_ROOT if owner == data["core_plugin"] else PLUGIN_ROOT.parent / package_directory
     library = package / "skills" / "eudirective-core" / "references" / "source-library" if owner == data["core_plugin"] else package / "references" / "source-library"
     root = library / "module-notes" / notes_directory
     if root.is_dir():
@@ -1080,7 +1121,8 @@ def module_notes_root(country: str, module_id: str | None = None) -> Path:
     for country in countries:
         code = country["iso_country_code"]
         name = country["plugin_name"]
-        plugin_dir = output_root / country["plugin_directory"]
+        package_directory = country["plugin_directory"]
+        plugin_dir = output_root / package_directory
         skill_rel = country["skill_directory"].removeprefix("skills/")
         skill_file = plugin_dir / "skills" / skill_rel / "SKILL.md"
         skill_file.parent.mkdir(parents=True, exist_ok=True)
@@ -1177,14 +1219,14 @@ def module_notes_root(country: str, module_id: str | None = None) -> Path:
                     module_sha = sha256(source)
                 migration_rows.append({
                     "source_path": f"{template_rel}/{relative.as_posix()}",
-                    "target_path": f"{name}/{module['skill_directory']}/{relative.as_posix()}",
+                    "target_path": f"{package_directory}/{module['skill_directory']}/{relative.as_posix()}",
                     "classification": "country_owned_operational_module",
                     "sha256": module_sha,
                 })
             if module["skill_name"] not in module_fingerprints:
                 raise ValueError(f"Operational module template lacks SKILL.md: {module['skill_name']}")
             country_skill_dir = country["skill_directory"].removeprefix("skills/")
-            module_manifest_path = previous_root / name / f"skills/{country_skill_dir}/references/component-manifest.json"
+            module_manifest_path = previous_root / package_directory / f"skills/{country_skill_dir}/references/component-manifest.json"
             previous_manifest = load_json(module_manifest_path) if module_manifest_path.is_file() else None
             if previous_manifest and module["skill_name"] not in previous_manifest.get("skill_versions", {}):
                 old_core_manifest_path = previous_root / registry["core_plugin"] / "skills/eudirective-core/references/component-manifest.json"
@@ -1203,7 +1245,7 @@ def module_notes_root(country: str, module_id: str | None = None) -> Path:
             inputs[source_path] = sha256(note)
             migration_rows.append({
                 "source_path": source_path,
-                "target_path": f"{name}/{target_note.as_posix()}",
+                "target_path": f"{package_directory}/{target_note.as_posix()}",
                 "classification": "operational_module_note", "sha256": sha256(note),
             })
         pack = source_root / country["upstream_source_directory"]
@@ -1222,7 +1264,7 @@ def module_notes_root(country: str, module_id: str | None = None) -> Path:
                 inputs[f"source-library/{source_rel}"] = sha256(source)
                 source_targets.add(source_rel)
                 migration_rows.append({
-                    "source_path": source_rel, "target_path": f"{name}/{target_rel.as_posix()}",
+                    "source_path": source_rel, "target_path": f"{package_directory}/{target_rel.as_posix()}",
                     "classification": "national_source_metadata", "sha256": sha256(source),
                 })
             elif rel_parts[0] == "documents":
@@ -1241,7 +1283,7 @@ def module_notes_root(country: str, module_id: str | None = None) -> Path:
                 source_targets.add(source_rel)
                 classification = "accepted_national_source_attachment" if "attachments" in rel_parts else "accepted_national_source_text"
                 migration_rows.append({
-                    "source_path": source_rel, "target_path": f"{name}/{target_rel.as_posix()}",
+                    "source_path": source_rel, "target_path": f"{package_directory}/{target_rel.as_posix()}",
                     "classification": classification, "sha256": sha256(source),
                 })
             elif source.name in {"README.md", "SKILL.md"}:
@@ -1272,7 +1314,7 @@ def module_notes_root(country: str, module_id: str | None = None) -> Path:
                 source_targets.add(rel_source.as_posix())
                 migration_rows.append({
                     "source_path": f"source-library/{rel_source.as_posix()}",
-                    "target_path": f"{name}/{target_rel.as_posix()}",
+                    "target_path": f"{package_directory}/{target_rel.as_posix()}",
                     "classification": "shared_non_english_eu_text", "sha256": expected,
                 })
             national_idx = lang_input.get("national_language_index")
@@ -1315,7 +1357,7 @@ def module_notes_root(country: str, module_id: str | None = None) -> Path:
         input_fingerprint = fingerprint_inputs(inputs)
         manifest_rel = f"skills/{skill_rel}/references/component-manifest.json"
         plugin_version, skill_versions = choose_versions(
-            name, manifest_rel, input_fingerprint, skill_fingerprints, "0.1.0",
+            name, country["plugin_directory"], manifest_rel, input_fingerprint, skill_fingerprints, "0.1.0",
             {skill_name: "0.1.0", **{module["skill_name"]: module["skill_version"] for module in operational_modules if module["plugin_name"] == name}},
         )
         for module in operational_modules:
@@ -1378,7 +1420,7 @@ def module_notes_root(country: str, module_id: str | None = None) -> Path:
             raise ValueError(f"Skill version missing from core component: {skill_name}")
         initial_core_skill_versions[skill_name] = match.group(1)
     core_plugin_version, core_skill_versions = choose_versions(
-        registry["core_plugin"], core_manifest_rel, core_input_fingerprint, core_skill_fingerprints,
+        registry["core_plugin"], registry["core_plugin"], core_manifest_rel, core_input_fingerprint, core_skill_fingerprints,
         "0.60.0", initial_core_skill_versions,
     )
     write_core_source_skill(core, core_skill_versions["eudirective-source-library"])
@@ -1403,10 +1445,12 @@ def module_notes_root(country: str, module_id: str | None = None) -> Path:
     component_manifests[registry["core_plugin"]] = core_manifest
 
     for package_name, manifest in component_manifests.items():
-        package_root = output_root / package_name
-        manifest_rel = "skills/eudirective-core/references/component-manifest.json" if package_name == registry["core_plugin"] else next(
-            f"skills/{country['skill_directory'].removeprefix('skills/')}/references/component-manifest.json"
-            for country in countries if country["plugin_name"] == package_name
+        country = next((item for item in countries if item["plugin_name"] == package_name), None)
+        package_directory = registry["core_plugin"] if country is None else country["plugin_directory"]
+        package_root = output_root / package_directory
+        manifest_rel = "skills/eudirective-core/references/component-manifest.json" if country is None else next(
+            f"skills/{item['skill_directory'].removeprefix('skills/')}/references/component-manifest.json"
+            for item in countries if item["plugin_name"] == package_name
         )
         actual_outputs = file_hashes(package_root, {manifest_rel})
         if actual_outputs != manifest["distributed_files"]:
@@ -1461,6 +1505,7 @@ def module_notes_root(country: str, module_id: str | None = None) -> Path:
         component_index["components"].append({
             "component_id": manifest["component_id"],
             "plugin_name": name,
+            "package_directory": registry["core_plugin"] if country is None else country["plugin_directory"],
             "plugin_version": manifest["plugin_version"],
             "skill_versions": manifest["skill_versions"],
             "source_contract_version": manifest["source_contract_version"],
@@ -1475,8 +1520,21 @@ def module_notes_root(country: str, module_id: str | None = None) -> Path:
 
     marketplace_path = plugin_root.parent / ".agents/plugins/marketplace.json"
     marketplace = load_json(marketplace_path)
-    generated_names = {registry["core_plugin"], *(country["plugin_name"] for country in countries)}
-    plugins = [entry for entry in marketplace.get("plugins", []) if entry.get("name") not in generated_names]
+    generated_names = {
+        registry["core_plugin"],
+        *(country["plugin_name"] for country in countries),
+        *(f"freemovement-law-{country['iso_country_code'].lower()}" for country in countries),
+    }
+    generated_paths = {f"./{country['plugin_directory']}" for country in countries}
+    def entry_source_path(entry: dict[str, Any]) -> str | None:
+        source = entry.get("source")
+        if isinstance(source, dict):
+            return source.get("path")
+        return source if isinstance(source, str) else None
+    plugins = [
+        entry for entry in marketplace.get("plugins", [])
+        if entry.get("name") not in generated_names and entry_source_path(entry) not in generated_paths
+    ]
     plugins.append({
         "name": registry["core_plugin"],
         "source": {"source": "local", "path": f"./{registry['core_plugin']}"},
@@ -1501,7 +1559,8 @@ def module_notes_root(country: str, module_id: str | None = None) -> Path:
         raise ValueError("Historical C1/C18 compatibility fixture was removed")
     if (core / "skills/eudirective-ms-sweden").exists():
         raise ValueError("Sweden operational module leaked into the shared core package")
-    if not (output_root / "freemovement-law-se/skills/eudirective-ms-sweden/SKILL.md").is_file():
+    sweden = next(country for country in countries if country["iso_country_code"] == "SE")
+    if not (output_root / sweden["plugin_directory"] / "skills/eudirective-ms-sweden/SKILL.md").is_file():
         raise ValueError("Sweden operational module is missing from its country package")
     if not (core / "skills/eudirective-ac-turkiye/SKILL.md").is_file():
         raise ValueError("The existing Türkiye applicant-country module was removed")
