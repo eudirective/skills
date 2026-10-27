@@ -5,8 +5,8 @@ description: "Use for read-only, source-grounded EU free-movement and EU-family-
 
 # eudirective-core
 
-- Current version: `0.58.4`
-- Plugin version: `0.59.4`
+- Current version: `0.59.1`
+- Plugin version: `0.60.4`
 - Last updated: `2026-10-25`
 
 This skill provides read-only, source-grounded guidance and maintains a separate synthetic-engine lane. Real applicant facts may be discussed in chat; they must never be sent to synthetic-only scripts or copied into distributable assets.
@@ -21,9 +21,9 @@ Treat use as non-personal only when the prompt clearly indicates professional or
 
 For personal, ordinary personal, or unspecified use, do not mention licensing or the email address. Do not infer non-personal use from the legal subject, a job title, or help with a family member's personal case. Ask a neutral clarification only when use is genuinely ambiguous and the distinction is necessary to answer. Never contact anyone or claim to know licensing status. Repeat the notice only if the use context materially changes. These are skill instructions, not a host-level chat-start guarantee.
 
-On the first freemovement-law invocation in each conversation, read eudirective-core/references/session-version-check.md and perform its read-only version comparison before substantive work. On a verified mismatch, report affected components and exact values and tell the user to check for an update through the same plugin source or manager used to install it; do not guess installation steps. If the check fails, say update availability could not be confirmed. Continue the request. Do not claim a successful match without evidence, repeat the check in the same conversation, or imply that it updates or installs the plugin. The check concerns package versions and source-data fingerprints, not legal-source validity.
+On the first freemovement-law invocation in each conversation, read eudirective-core/references/session-version-check.md and perform the core package's read-only version comparison before substantive work. For each materially relevant national plugin shown as available by a sufficiently complete host catalog, also compare that package's manifest using its own `scripts/session_version_check.mjs` against the same published component index. A registry entry or a partial catalog does not prove installation. If the host cannot expose the package manifest or execute its checker, report the state as discovery_unknown or the currentness check as unavailable; continue with EU sources and official-source research. On a verified mismatch, report affected components and exact values and tell the user to check for an update through the same plugin source or manager used to install it; do not guess installation steps. If a check fails, say update availability could not be confirmed. Do not claim a successful match without evidence, repeat a package check in the same conversation, or imply that it updates or installs a plugin. These checks concern package versions and source-data fingerprints, not legal-source validity.
 
-For each visible answer or report produced with this skill, identify near the top: **Skill: eudirective-core v0.58.4**. On the first response, put it after the required disclaimer and any applicable license note.
+For each visible answer or report produced with this skill, identify near the top: **Skill: eudirective-core v0.59.1**. On the first response, put it after the required disclaimer and any applicable license note.
 
 ## Ordinary applicant consultations
 
@@ -72,13 +72,17 @@ A local Codex shell may use the existing consultation_route_gate.py with --dashb
 
 ## Source selection and currentness
 
-Use the freemovement-law eudirective-source-library skill to locate the bundled, externally maintained source library. It is a versioned package snapshot and does not refresh after installation. Use its records and country-module notes as scoped summaries, never as full authoritative text.
+Use the eudirective-source-library skill to locate the core-owned EU corpus and generated national source routing registry. It is a versioned package snapshot and does not refresh after installation. Use its records and country-module notes as scoped summaries, never as full authoritative text.
 
 For material legal propositions, prefer the responsible official publisher: legislation publisher for laws, court service for decisions, and competent authority or official service for guidance, forms, mission instructions, procedures, remedies, complaints and oversight. Prefer the latest government-published consolidation. A clear publisher role, instrument identity and consolidation status, with no concrete warning, is a practical basis to use it; this is not a mechanical certification checklist. If no usable consolidation exists, use the closest government-published version and state its language, publisher label, date/cutoff and limits. A human-reviewed official link is enough for ordinary source use. Do not crawl whole sites, reconstruct every Gazette fragment, or require capture, hashes, conversion or APIs unless a retained copy or recurring monitor needs them. Check a later act or commencement only when it may affect the question.
 
 State publisher and version/date checked, distinguish live review from the bundled snapshot, and state when currentness could not be verified. Do not infer web search from an external official URL. Offer the whole government legal-text service for human review when source trust is unclear, including its authority/versioning, relevant text and visible caveats. See the shared [source edition and review policy](../eudirective-source-library/references/legal-text-edition-policy.md).
 
 For material questions dependent on current, multiple-source, disputed or incomplete law/procedure, read references/research-control.md and use its applicable quick, case or deep profile and source-owner route. Keep urgent qualified answers useful while research remains incomplete. A source gap is not a legal finding. Research plans/evidence bundles are optional source-research artifacts, not case files or controller stages; if created, they may contain only generalized, non-identifying legal/source questions. Use research_gate.py and issue_source_preflight.py only for their defined validation purposes. Neither authenticates sources or reviewers nor proves legal entailment or final prose. A material source gap remains visible; do not reroute it silently.
+
+## National plugin discovery
+
+Use the generated references/national-source-routing.json after C3 classifies a materially relevant national jurisdiction and role. Check the host's available-skill catalog for the exact registered plugin and compatibility contract; a registry entry proves identity, not installation. Record available_compatible, available_outdated, available_incompatible, unavailable, discovery_unknown, or not_required only when supported by the available catalog and package manifests. If discovery is unavailable or partial, report discovery_unknown, continue with EU law and responsible official-source research, and state the exact national-source limitation. For Malta, separately report plugin availability, language representation availability, edition alignment, and whether the relevant provisions were compared. Do not block an ordinary consultation solely because a country plugin is absent.
 
 ## Conditional legal and research workflows
 

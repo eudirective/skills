@@ -1,4 +1,4 @@
-name: Mirror source library and module notes
+name: Build and sync FreeMovement source packages
 
 on:
   workflow_dispatch:
@@ -7,7 +7,9 @@ on:
   push:
     paths:
       - '.github/workflows/mirror-source-library.yml'
-      - 'freemovement-law/scripts/version_manifest.mjs'
+      - 'scripts/source-distribution/**'
+      - 'freemovement-law/**'
+      - '.agents/plugins/marketplace.json'
 
 permissions:
   contents: write
@@ -17,8 +19,8 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  mirror:
-    name: Sync public-data/source-library
+  distribute:
+    name: Build and sync source packages
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
 
@@ -34,75 +36,95 @@ jobs:
           repository: eudirective/public-data
           ref: main
           path: public-data
-          sparse-checkout: |
-            source-library
-            module-notes
           persist-credentials: false
 
-      - uses: actions/setup-node@v7
+      - uses: actions/setup-python@v6
         with:
-          node-version: '22'
+          python-version: '3.12'
 
-      - name: Mirror source library and stamp its exact upstream tree version
+      - name: Build and validate all packages
+        id: build
         shell: bash
         run: |
           set -euo pipefail
+          upstream_revision="$(git -C public-data rev-parse HEAD)"
+          [[ "$upstream_revision" =~ ^[0-9a-f]{40}$ ]]
+          python3 -m py_compile skills/scripts/source-distribution/build.py
+          python3 skills/scripts/source-distribution/build.py \
+            --source-root public-data/source-library \
+            --module-notes-root public-data/module-notes \
+            --registry skills/scripts/source-distribution/country-registry.json \
+            --upstream-revision "$upstream_revision" \
+            --plugin-root skills/freemovement-law \
+            --previous-root skills \
+            --output-root "$RUNNER_TEMP/fm-source-stage"
 
-          source_dir="public-data/source-library"
-          module_notes_dir="public-data/module-notes"
-          destination_dir="skills/freemovement-law/skills/eudirective-source-library"
+      - name: Commit and push directly to main
+        shell: bash
+        run: |
+          set -euo pipefail
           max_attempts=3
-          upstream_tree_sha="$(git -C public-data rev-parse HEAD:source-library)"
-          upstream_module_notes_tree_sha="$(git -C public-data rev-parse HEAD:module-notes)"
-
-          test -d "$source_dir"
-          test -d "$module_notes_dir/sweden"
-          test -d "$module_notes_dir/turkiye"
-          test -f "$destination_dir/SKILL.md"
-          [[ "$upstream_tree_sha" =~ ^[0-9a-f]{40}$ ]]
-          [[ "$upstream_module_notes_tree_sha" =~ ^[0-9a-f]{40}$ ]]
-
           git -C skills config user.name "eudirective"
           git -C skills config user.email "eudirective@proton.me"
 
           for attempt in $(seq 1 "$max_attempts"); do
-            echo "Mirror update attempt $attempt of $max_attempts"
-
-            # Rebuild from the latest main after each rejected concurrent update.
+            # Rebuild against the latest main after every rejected concurrent update.
             git -C skills fetch --no-tags origin main
             git -C skills reset --hard origin/main
+            upstream_revision="$(git -C public-data rev-parse HEAD)"
+            rm -rf "$RUNNER_TEMP/fm-source-stage"
+            python3 skills/scripts/source-distribution/build.py \
+              --source-root public-data/source-library \
+              --module-notes-root public-data/module-notes \
+              --registry skills/scripts/source-distribution/country-registry.json \
+              --upstream-revision "$upstream_revision" \
+              --plugin-root skills/freemovement-law \
+              --previous-root skills \
+              --output-root "$RUNNER_TEMP/fm-source-stage"
 
-            # SKILL.md belongs to the skill and must never be deleted or replaced.
-            rsync -a --delete --exclude='/SKILL.md' \
-              "$source_dir/" "$destination_dir/"
-            rsync -a --delete \
-              "$module_notes_dir/" "$destination_dir/module-notes/"
+            stage="$RUNNER_TEMP/fm-source-stage"
+            # Remove obsolete generated country packages after each main refresh.
+            for old in skills/freemovement-law-[a-z][a-z]; do
+              if [ -d "$old" ] && [ ! -d "$stage/$(basename "$old")" ]; then
+                rm -rf "$old"
+              fi
+            done
 
-            node skills/freemovement-law/scripts/version_manifest.mjs --stamp \
-              --library-tree "$upstream_tree_sha" \
-              --module-notes-tree "$upstream_module_notes_tree_sha"
-            node skills/freemovement-law/scripts/version_manifest.mjs --verify \
-              --library-tree "$upstream_tree_sha" \
-              --module-notes-tree "$upstream_module_notes_tree_sha"
+            # Apply the complete validated stage, keeping SKILL.md out of bulk replacement.
+            for package in "$stage"/freemovement-law "$stage"/freemovement-law-[a-z][a-z]; do
+              test -d "$package"
+              package_name="$(basename "$package")"
+              destination="skills/$package_name"
+              mkdir -p "$destination"
+              rsync -a --delete --exclude='SKILL.md' "$package/" "$destination/"
+              while IFS= read -r -d '' generated_skill; do
+                relative="${generated_skill#"$package/"}"
+                install -D -m 0644 "$generated_skill" "$destination/$relative"
+              done < <(find "$package" -type f -name SKILL.md -print0)
+              while IFS= read -r -d '' old_skill; do
+                relative="${old_skill#"$destination/"}"
+                if [ ! -f "$package/$relative" ]; then rm -f "$old_skill"; fi
+              done < <(find "$destination" -type f -name SKILL.md -print0)
+            done
+            install -D -m 0644 "$stage/component-index.json" skills/component-index.json
+            install -D -m 0644 "$stage/source-inventory.json" skills/source-inventory.json
+            install -D -m 0644 "$stage/migration-map.json" skills/migration-map.json
+            install -D -m 0644 "$stage/marketplace.json" skills/.agents/plugins/marketplace.json
 
-            git -C skills add -A -- freemovement-law/skills/eudirective-source-library \
-              freemovement-law/skills/eudirective-core/references/session-version-manifest.json
+            git -C skills add -A -- freemovement-law freemovement-law-?? component-index.json source-inventory.json migration-map.json .agents/plugins/marketplace.json
             if git -C skills diff --cached --quiet; then
-              echo "Already synchronized"
+              echo "Generated packages already match main"
               exit 0
             fi
-
-            git -C skills commit -m "Sync source library and module notes"
+            git -C skills commit -m "Distribute national source plugins"
             if git -C skills push origin HEAD:refs/heads/main; then
-              echo "Source library and module notes synchronized directly to main"
+              echo "Source packages synchronized directly to main"
               exit 0
             fi
-
             if [ "$attempt" -lt "$max_attempts" ]; then
-              echo "Push failed; refreshing main and rebuilding the synchronization commit"
+              echo "Push failed; refreshing main and rebuilding the distribution"
               sleep "$attempt"
             fi
           done
-
-          echo "Failed to synchronize source library after $max_attempts attempts"
+          echo "Failed to synchronize source packages after $max_attempts attempts"
           exit 1

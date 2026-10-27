@@ -1,0 +1,964 @@
+{
+  "core_compatibility_contract": {
+    "c3_inter_skill_contract": "0.2.0",
+    "conformance_profile": "0.2.0",
+    "controller_protocol": "0.3.0",
+    "element_model": "0.2.0"
+  },
+  "core_plugin": "freemovement-law",
+  "countries": [
+    {
+      "core_compatibility_contract": {
+        "c3_inter_skill_contract": "0.2.0",
+        "conformance_profile": "0.2.0",
+        "controller_protocol": "0.3.0",
+        "element_model": "0.2.0"
+      },
+      "country_name": "Austria",
+      "iso_country_code": "AT",
+      "jurisdiction_class": "eu_member_state",
+      "official_languages": [
+        {
+          "availability": "check_source_index",
+          "code": "de",
+          "eu_official": true,
+          "name": "German",
+          "national_language_index": "national-language-index-DE.json",
+          "shared_core_index": "shared-core-index-DE.json",
+          "status": "nationwide"
+        }
+      ],
+      "plugin_name": "freemovement-law-at",
+      "related_operational_modules": [],
+      "skill_name": "eudirective-library-at",
+      "verification_profile": "national_source_review"
+    },
+    {
+      "core_compatibility_contract": {
+        "c3_inter_skill_contract": "0.2.0",
+        "conformance_profile": "0.2.0",
+        "controller_protocol": "0.3.0",
+        "element_model": "0.2.0"
+      },
+      "country_name": "Belgium",
+      "iso_country_code": "BE",
+      "jurisdiction_class": "eu_member_state",
+      "official_languages": [
+        {
+          "availability": "check_source_index",
+          "code": "nl",
+          "eu_official": true,
+          "name": "Dutch",
+          "national_language_index": "national-language-index-NL.json",
+          "shared_core_index": "shared-core-index-NL.json",
+          "status": "official"
+        },
+        {
+          "availability": "check_source_index",
+          "code": "fr",
+          "eu_official": true,
+          "name": "French",
+          "national_language_index": "national-language-index-FR.json",
+          "shared_core_index": "shared-core-index-FR.json",
+          "status": "official"
+        },
+        {
+          "availability": "check_source_index",
+          "code": "de",
+          "eu_official": true,
+          "name": "German",
+          "national_language_index": "national-language-index-DE.json",
+          "shared_core_index": "shared-core-index-DE.json",
+          "status": "official"
+        }
+      ],
+      "plugin_name": "freemovement-law-be",
+      "related_operational_modules": [],
+      "skill_name": "eudirective-library-be",
+      "verification_profile": "national_source_review"
+    },
+    {
+      "core_compatibility_contract": {
+        "c3_inter_skill_contract": "0.2.0",
+        "conformance_profile": "0.2.0",
+        "controller_protocol": "0.3.0",
+        "element_model": "0.2.0"
+      },
+      "country_name": "Bulgaria",
+      "iso_country_code": "BG",
+      "jurisdiction_class": "eu_member_state",
+      "official_languages": [
+        {
+          "availability": "check_source_index",
+          "code": "bg",
+          "eu_official": true,
+          "name": "Bulgarian",
+          "national_language_index": "national-language-index-BG.json",
+          "shared_core_index": "shared-core-index-BG.json",
+          "status": "nationwide"
+        }
+      ],
+      "plugin_name": "freemovement-law-bg",
+      "related_operational_modules": [],
+      "skill_name": "eudirective-library-bg",
+      "verification_profile": "national_source_review"
+    },
+    {
+      "core_compatibility_contract": {
+        "c3_inter_skill_contract": "0.2.0",
+        "conformance_profile": "0.2.0",
+        "controller_protocol": "0.3.0",
+        "element_model": "0.2.0"
+      },
+      "country_name": "Switzerland",
+      "iso_country_code": "CH",
+      "jurisdiction_class": "switzerland",
+      "official_languages": [
+        {
+          "availability": "check_source_index",
+          "code": "de",
+          "eu_official": true,
+          "name": "German",
+          "national_language_index": "national-language-index-DE.json",
+          "shared_core_index": "shared-core-index-DE.json",
+          "status": "national"
+        },
+        {
+          "availability": "check_source_index",
+          "code": "fr",
+          "eu_official": true,
+          "name": "French",
+          "national_language_index": "national-language-index-FR.json",
+          "shared_core_index": "shared-core-index-FR.json",
+          "status": "national"
+        },
+        {
+          "availability": "check_source_index",
+          "code": "it",
+          "eu_official": true,
+          "name": "Italian",
+          "national_language_index": "national-language-index-IT.json",
+          "shared_core_index": "shared-core-index-IT.json",
+          "status": "national"
+        },
+        {
+          "availability": "not_in_upstream_index",
+          "code": "rm",
+          "eu_official": false,
+          "name": "Romansh",
+          "national_language_index": null,
+          "shared_core_index": null,
+          "status": "national"
+        }
+      ],
+      "plugin_name": "freemovement-law-ch",
+      "related_operational_modules": [],
+      "skill_name": "eudirective-library-ch",
+      "verification_profile": "national_source_review"
+    },
+    {
+      "core_compatibility_contract": {
+        "c3_inter_skill_contract": "0.2.0",
+        "conformance_profile": "0.2.0",
+        "controller_protocol": "0.3.0",
+        "element_model": "0.2.0"
+      },
+      "country_name": "Cyprus",
+      "iso_country_code": "CY",
+      "jurisdiction_class": "eu_member_state",
+      "official_languages": [
+        {
+          "availability": "check_source_index",
+          "code": "el",
+          "eu_official": true,
+          "name": "Greek",
+          "national_language_index": "national-language-index-EL.json",
+          "shared_core_index": "shared-core-index-EL.json",
+          "status": "official"
+        },
+        {
+          "availability": "not_in_upstream_index",
+          "code": "tr",
+          "eu_official": false,
+          "name": "Turkish",
+          "national_language_index": null,
+          "shared_core_index": null,
+          "status": "official"
+        }
+      ],
+      "plugin_name": "freemovement-law-cy",
+      "related_operational_modules": [],
+      "skill_name": "eudirective-library-cy",
+      "verification_profile": "national_source_review"
+    },
+    {
+      "core_compatibility_contract": {
+        "c3_inter_skill_contract": "0.2.0",
+        "conformance_profile": "0.2.0",
+        "controller_protocol": "0.3.0",
+        "element_model": "0.2.0"
+      },
+      "country_name": "Czechia",
+      "iso_country_code": "CZ",
+      "jurisdiction_class": "eu_member_state",
+      "official_languages": [
+        {
+          "availability": "check_source_index",
+          "code": "cs",
+          "eu_official": true,
+          "name": "Czech",
+          "national_language_index": "national-language-index-CS.json",
+          "shared_core_index": "shared-core-index-CS.json",
+          "status": "nationwide"
+        }
+      ],
+      "plugin_name": "freemovement-law-cz",
+      "related_operational_modules": [],
+      "skill_name": "eudirective-library-cz",
+      "verification_profile": "national_source_review"
+    },
+    {
+      "core_compatibility_contract": {
+        "c3_inter_skill_contract": "0.2.0",
+        "conformance_profile": "0.2.0",
+        "controller_protocol": "0.3.0",
+        "element_model": "0.2.0"
+      },
+      "country_name": "Germany",
+      "iso_country_code": "DE",
+      "jurisdiction_class": "eu_member_state",
+      "official_languages": [
+        {
+          "availability": "check_source_index",
+          "code": "de",
+          "eu_official": true,
+          "name": "German",
+          "national_language_index": "national-language-index-DE.json",
+          "shared_core_index": "shared-core-index-DE.json",
+          "status": "nationwide"
+        }
+      ],
+      "plugin_name": "freemovement-law-de",
+      "related_operational_modules": [],
+      "skill_name": "eudirective-library-de",
+      "verification_profile": "national_source_review"
+    },
+    {
+      "core_compatibility_contract": {
+        "c3_inter_skill_contract": "0.2.0",
+        "conformance_profile": "0.2.0",
+        "controller_protocol": "0.3.0",
+        "element_model": "0.2.0"
+      },
+      "country_name": "Denmark",
+      "iso_country_code": "DK",
+      "jurisdiction_class": "eu_member_state",
+      "official_languages": [
+        {
+          "availability": "check_source_index",
+          "code": "da",
+          "eu_official": true,
+          "name": "Danish",
+          "national_language_index": "national-language-index-DA.json",
+          "shared_core_index": "shared-core-index-DA.json",
+          "status": "nationwide"
+        }
+      ],
+      "plugin_name": "freemovement-law-dk",
+      "related_operational_modules": [],
+      "skill_name": "eudirective-library-dk",
+      "verification_profile": "national_source_review"
+    },
+    {
+      "core_compatibility_contract": {
+        "c3_inter_skill_contract": "0.2.0",
+        "conformance_profile": "0.2.0",
+        "controller_protocol": "0.3.0",
+        "element_model": "0.2.0"
+      },
+      "country_name": "Estonia",
+      "iso_country_code": "EE",
+      "jurisdiction_class": "eu_member_state",
+      "official_languages": [
+        {
+          "availability": "check_source_index",
+          "code": "et",
+          "eu_official": true,
+          "name": "Estonian",
+          "national_language_index": "national-language-index-ET.json",
+          "shared_core_index": "shared-core-index-ET.json",
+          "status": "nationwide"
+        }
+      ],
+      "plugin_name": "freemovement-law-ee",
+      "related_operational_modules": [],
+      "skill_name": "eudirective-library-ee",
+      "verification_profile": "national_source_review"
+    },
+    {
+      "core_compatibility_contract": {
+        "c3_inter_skill_contract": "0.2.0",
+        "conformance_profile": "0.2.0",
+        "controller_protocol": "0.3.0",
+        "element_model": "0.2.0"
+      },
+      "country_name": "Spain",
+      "iso_country_code": "ES",
+      "jurisdiction_class": "eu_member_state",
+      "official_languages": [
+        {
+          "availability": "check_source_index",
+          "code": "es",
+          "eu_official": true,
+          "name": "Spanish",
+          "national_language_index": "national-language-index-ES.json",
+          "shared_core_index": "shared-core-index-ES.json",
+          "status": "statewide"
+        },
+        {
+          "availability": "not_in_upstream_index",
+          "code": "ca",
+          "eu_official": false,
+          "name": "Catalan/Valencian",
+          "national_language_index": null,
+          "shared_core_index": null,
+          "status": "co_official_in_regions"
+        },
+        {
+          "availability": "not_in_upstream_index",
+          "code": "eu",
+          "eu_official": false,
+          "name": "Basque",
+          "national_language_index": null,
+          "shared_core_index": null,
+          "status": "co_official_in_regions"
+        },
+        {
+          "availability": "not_in_upstream_index",
+          "code": "gl",
+          "eu_official": false,
+          "name": "Galician",
+          "national_language_index": null,
+          "shared_core_index": null,
+          "status": "co_official_in_regions"
+        },
+        {
+          "availability": "not_in_upstream_index",
+          "code": "oc",
+          "eu_official": false,
+          "name": "Aranese/Occitan",
+          "national_language_index": null,
+          "shared_core_index": null,
+          "status": "co_official_in_Aran"
+        }
+      ],
+      "plugin_name": "freemovement-law-es",
+      "related_operational_modules": [],
+      "skill_name": "eudirective-library-es",
+      "verification_profile": "national_source_review"
+    },
+    {
+      "core_compatibility_contract": {
+        "c3_inter_skill_contract": "0.2.0",
+        "conformance_profile": "0.2.0",
+        "controller_protocol": "0.3.0",
+        "element_model": "0.2.0"
+      },
+      "country_name": "Finland",
+      "iso_country_code": "FI",
+      "jurisdiction_class": "eu_member_state",
+      "official_languages": [
+        {
+          "availability": "check_source_index",
+          "code": "fi",
+          "eu_official": true,
+          "name": "Finnish",
+          "national_language_index": "national-language-index-FI.json",
+          "shared_core_index": "shared-core-index-FI.json",
+          "status": "official"
+        },
+        {
+          "availability": "check_source_index",
+          "code": "sv",
+          "eu_official": true,
+          "name": "Swedish",
+          "national_language_index": "national-language-index-SV.json",
+          "shared_core_index": "shared-core-index-SV.json",
+          "status": "official"
+        }
+      ],
+      "plugin_name": "freemovement-law-fi",
+      "related_operational_modules": [],
+      "skill_name": "eudirective-library-fi",
+      "verification_profile": "national_source_review"
+    },
+    {
+      "core_compatibility_contract": {
+        "c3_inter_skill_contract": "0.2.0",
+        "conformance_profile": "0.2.0",
+        "controller_protocol": "0.3.0",
+        "element_model": "0.2.0"
+      },
+      "country_name": "France",
+      "iso_country_code": "FR",
+      "jurisdiction_class": "eu_member_state",
+      "official_languages": [
+        {
+          "availability": "check_source_index",
+          "code": "fr",
+          "eu_official": true,
+          "name": "French",
+          "national_language_index": "national-language-index-FR.json",
+          "shared_core_index": "shared-core-index-FR.json",
+          "status": "nationwide"
+        }
+      ],
+      "plugin_name": "freemovement-law-fr",
+      "related_operational_modules": [],
+      "skill_name": "eudirective-library-fr",
+      "verification_profile": "national_source_review"
+    },
+    {
+      "core_compatibility_contract": {
+        "c3_inter_skill_contract": "0.2.0",
+        "conformance_profile": "0.2.0",
+        "controller_protocol": "0.3.0",
+        "element_model": "0.2.0"
+      },
+      "country_name": "Greece",
+      "iso_country_code": "GR",
+      "jurisdiction_class": "eu_member_state",
+      "official_languages": [
+        {
+          "availability": "check_source_index",
+          "code": "el",
+          "eu_official": true,
+          "name": "Greek",
+          "national_language_index": "national-language-index-EL.json",
+          "shared_core_index": "shared-core-index-EL.json",
+          "status": "nationwide"
+        }
+      ],
+      "plugin_name": "freemovement-law-gr",
+      "related_operational_modules": [],
+      "skill_name": "eudirective-library-gr",
+      "verification_profile": "national_source_review"
+    },
+    {
+      "core_compatibility_contract": {
+        "c3_inter_skill_contract": "0.2.0",
+        "conformance_profile": "0.2.0",
+        "controller_protocol": "0.3.0",
+        "element_model": "0.2.0"
+      },
+      "country_name": "Croatia",
+      "iso_country_code": "HR",
+      "jurisdiction_class": "eu_member_state",
+      "official_languages": [
+        {
+          "availability": "check_source_index",
+          "code": "hr",
+          "eu_official": true,
+          "name": "Croatian",
+          "national_language_index": "national-language-index-HR.json",
+          "shared_core_index": "shared-core-index-HR.json",
+          "status": "nationwide"
+        }
+      ],
+      "plugin_name": "freemovement-law-hr",
+      "related_operational_modules": [],
+      "skill_name": "eudirective-library-hr",
+      "verification_profile": "national_source_review"
+    },
+    {
+      "core_compatibility_contract": {
+        "c3_inter_skill_contract": "0.2.0",
+        "conformance_profile": "0.2.0",
+        "controller_protocol": "0.3.0",
+        "element_model": "0.2.0"
+      },
+      "country_name": "Hungary",
+      "iso_country_code": "HU",
+      "jurisdiction_class": "eu_member_state",
+      "official_languages": [
+        {
+          "availability": "check_source_index",
+          "code": "hu",
+          "eu_official": true,
+          "name": "Hungarian",
+          "national_language_index": "national-language-index-HU.json",
+          "shared_core_index": "shared-core-index-HU.json",
+          "status": "nationwide"
+        }
+      ],
+      "plugin_name": "freemovement-law-hu",
+      "related_operational_modules": [],
+      "skill_name": "eudirective-library-hu",
+      "verification_profile": "national_source_review"
+    },
+    {
+      "core_compatibility_contract": {
+        "c3_inter_skill_contract": "0.2.0",
+        "conformance_profile": "0.2.0",
+        "controller_protocol": "0.3.0",
+        "element_model": "0.2.0"
+      },
+      "country_name": "Ireland",
+      "iso_country_code": "IE",
+      "jurisdiction_class": "eu_member_state",
+      "official_languages": [
+        {
+          "availability": "not_in_upstream_index",
+          "code": "ga",
+          "eu_official": true,
+          "name": "Irish",
+          "national_language_index": null,
+          "shared_core_index": null,
+          "status": "official"
+        },
+        {
+          "availability": "core_english_only",
+          "code": "en",
+          "eu_official": false,
+          "name": "English",
+          "national_language_index": null,
+          "shared_core_index": null,
+          "status": "official"
+        }
+      ],
+      "plugin_name": "freemovement-law-ie",
+      "related_operational_modules": [],
+      "skill_name": "eudirective-library-ie",
+      "verification_profile": "national_source_review"
+    },
+    {
+      "core_compatibility_contract": {
+        "c3_inter_skill_contract": "0.2.0",
+        "conformance_profile": "0.2.0",
+        "controller_protocol": "0.3.0",
+        "element_model": "0.2.0"
+      },
+      "country_name": "Iceland",
+      "iso_country_code": "IS",
+      "jurisdiction_class": "eea_efta_state",
+      "official_languages": [
+        {
+          "availability": "not_in_upstream_index",
+          "code": "is",
+          "eu_official": false,
+          "name": "Icelandic",
+          "national_language_index": null,
+          "shared_core_index": null,
+          "status": "nationwide"
+        }
+      ],
+      "plugin_name": "freemovement-law-is",
+      "related_operational_modules": [],
+      "skill_name": "eudirective-library-is",
+      "verification_profile": "national_source_review"
+    },
+    {
+      "core_compatibility_contract": {
+        "c3_inter_skill_contract": "0.2.0",
+        "conformance_profile": "0.2.0",
+        "controller_protocol": "0.3.0",
+        "element_model": "0.2.0"
+      },
+      "country_name": "Italy",
+      "iso_country_code": "IT",
+      "jurisdiction_class": "eu_member_state",
+      "official_languages": [
+        {
+          "availability": "check_source_index",
+          "code": "it",
+          "eu_official": true,
+          "name": "Italian",
+          "national_language_index": "national-language-index-IT.json",
+          "shared_core_index": "shared-core-index-IT.json",
+          "status": "nationwide"
+        }
+      ],
+      "plugin_name": "freemovement-law-it",
+      "related_operational_modules": [],
+      "skill_name": "eudirective-library-it",
+      "verification_profile": "national_source_review"
+    },
+    {
+      "core_compatibility_contract": {
+        "c3_inter_skill_contract": "0.2.0",
+        "conformance_profile": "0.2.0",
+        "controller_protocol": "0.3.0",
+        "element_model": "0.2.0"
+      },
+      "country_name": "Liechtenstein",
+      "iso_country_code": "LI",
+      "jurisdiction_class": "eea_efta_state",
+      "official_languages": [
+        {
+          "availability": "check_source_index",
+          "code": "de",
+          "eu_official": true,
+          "name": "German",
+          "national_language_index": "national-language-index-DE.json",
+          "shared_core_index": "shared-core-index-DE.json",
+          "status": "nationwide"
+        }
+      ],
+      "plugin_name": "freemovement-law-li",
+      "related_operational_modules": [],
+      "skill_name": "eudirective-library-li",
+      "verification_profile": "national_source_review"
+    },
+    {
+      "core_compatibility_contract": {
+        "c3_inter_skill_contract": "0.2.0",
+        "conformance_profile": "0.2.0",
+        "controller_protocol": "0.3.0",
+        "element_model": "0.2.0"
+      },
+      "country_name": "Lithuania",
+      "iso_country_code": "LT",
+      "jurisdiction_class": "eu_member_state",
+      "official_languages": [
+        {
+          "availability": "check_source_index",
+          "code": "lt",
+          "eu_official": true,
+          "name": "Lithuanian",
+          "national_language_index": "national-language-index-LT.json",
+          "shared_core_index": "shared-core-index-LT.json",
+          "status": "nationwide"
+        }
+      ],
+      "plugin_name": "freemovement-law-lt",
+      "related_operational_modules": [],
+      "skill_name": "eudirective-library-lt",
+      "verification_profile": "national_source_review"
+    },
+    {
+      "core_compatibility_contract": {
+        "c3_inter_skill_contract": "0.2.0",
+        "conformance_profile": "0.2.0",
+        "controller_protocol": "0.3.0",
+        "element_model": "0.2.0"
+      },
+      "country_name": "Luxembourg",
+      "iso_country_code": "LU",
+      "jurisdiction_class": "eu_member_state",
+      "official_languages": [
+        {
+          "availability": "not_in_upstream_index",
+          "code": "lb",
+          "eu_official": false,
+          "name": "Luxembourgish",
+          "national_language_index": null,
+          "shared_core_index": null,
+          "status": "official"
+        },
+        {
+          "availability": "check_source_index",
+          "code": "fr",
+          "eu_official": true,
+          "name": "French",
+          "national_language_index": "national-language-index-FR.json",
+          "shared_core_index": "shared-core-index-FR.json",
+          "status": "official"
+        },
+        {
+          "availability": "check_source_index",
+          "code": "de",
+          "eu_official": true,
+          "name": "German",
+          "national_language_index": "national-language-index-DE.json",
+          "shared_core_index": "shared-core-index-DE.json",
+          "status": "official"
+        }
+      ],
+      "plugin_name": "freemovement-law-lu",
+      "related_operational_modules": [],
+      "skill_name": "eudirective-library-lu",
+      "verification_profile": "national_source_review"
+    },
+    {
+      "core_compatibility_contract": {
+        "c3_inter_skill_contract": "0.2.0",
+        "conformance_profile": "0.2.0",
+        "controller_protocol": "0.3.0",
+        "element_model": "0.2.0"
+      },
+      "country_name": "Latvia",
+      "iso_country_code": "LV",
+      "jurisdiction_class": "eu_member_state",
+      "official_languages": [
+        {
+          "availability": "check_source_index",
+          "code": "lv",
+          "eu_official": true,
+          "name": "Latvian",
+          "national_language_index": "national-language-index-LV.json",
+          "shared_core_index": "shared-core-index-LV.json",
+          "status": "nationwide"
+        }
+      ],
+      "plugin_name": "freemovement-law-lv",
+      "related_operational_modules": [],
+      "skill_name": "eudirective-library-lv",
+      "verification_profile": "national_source_review"
+    },
+    {
+      "core_compatibility_contract": {
+        "c3_inter_skill_contract": "0.2.0",
+        "conformance_profile": "0.2.0",
+        "controller_protocol": "0.3.0",
+        "element_model": "0.2.0"
+      },
+      "country_name": "Malta",
+      "iso_country_code": "MT",
+      "jurisdiction_class": "eu_member_state",
+      "official_languages": [
+        {
+          "availability": "check_source_index",
+          "code": "mt",
+          "eu_official": true,
+          "name": "Maltese",
+          "national_language_index": "national-language-index-MT.json",
+          "shared_core_index": "shared-core-index-MT.json",
+          "status": "official"
+        },
+        {
+          "availability": "core_english_only",
+          "code": "en",
+          "eu_official": false,
+          "name": "English",
+          "national_language_index": null,
+          "shared_core_index": null,
+          "status": "official"
+        }
+      ],
+      "plugin_name": "freemovement-law-mt",
+      "related_operational_modules": [],
+      "skill_name": "eudirective-library-mt",
+      "verification_profile": "malta_bilingual"
+    },
+    {
+      "core_compatibility_contract": {
+        "c3_inter_skill_contract": "0.2.0",
+        "conformance_profile": "0.2.0",
+        "controller_protocol": "0.3.0",
+        "element_model": "0.2.0"
+      },
+      "country_name": "Netherlands",
+      "iso_country_code": "NL",
+      "jurisdiction_class": "eu_member_state",
+      "official_languages": [
+        {
+          "availability": "check_source_index",
+          "code": "nl",
+          "eu_official": true,
+          "name": "Dutch",
+          "national_language_index": "national-language-index-NL.json",
+          "shared_core_index": "shared-core-index-NL.json",
+          "status": "nationwide"
+        }
+      ],
+      "plugin_name": "freemovement-law-nl",
+      "related_operational_modules": [],
+      "skill_name": "eudirective-library-nl",
+      "verification_profile": "national_source_review"
+    },
+    {
+      "core_compatibility_contract": {
+        "c3_inter_skill_contract": "0.2.0",
+        "conformance_profile": "0.2.0",
+        "controller_protocol": "0.3.0",
+        "element_model": "0.2.0"
+      },
+      "country_name": "Norway",
+      "iso_country_code": "NO",
+      "jurisdiction_class": "eea_efta_state",
+      "official_languages": [
+        {
+          "availability": "check_source_index",
+          "code": "nb",
+          "eu_official": false,
+          "name": "Norwegian Bokmål",
+          "national_language_index": "national-language-index-NO.json",
+          "shared_core_index": "shared-core-index-NO.json",
+          "status": "written_standard"
+        },
+        {
+          "availability": "not_in_upstream_index",
+          "code": "nn",
+          "eu_official": false,
+          "name": "Norwegian Nynorsk",
+          "national_language_index": null,
+          "shared_core_index": null,
+          "status": "written_standard"
+        }
+      ],
+      "plugin_name": "freemovement-law-no",
+      "related_operational_modules": [],
+      "skill_name": "eudirective-library-no",
+      "verification_profile": "national_source_review"
+    },
+    {
+      "core_compatibility_contract": {
+        "c3_inter_skill_contract": "0.2.0",
+        "conformance_profile": "0.2.0",
+        "controller_protocol": "0.3.0",
+        "element_model": "0.2.0"
+      },
+      "country_name": "Poland",
+      "iso_country_code": "PL",
+      "jurisdiction_class": "eu_member_state",
+      "official_languages": [
+        {
+          "availability": "check_source_index",
+          "code": "pl",
+          "eu_official": true,
+          "name": "Polish",
+          "national_language_index": "national-language-index-PL.json",
+          "shared_core_index": "shared-core-index-PL.json",
+          "status": "nationwide"
+        }
+      ],
+      "plugin_name": "freemovement-law-pl",
+      "related_operational_modules": [],
+      "skill_name": "eudirective-library-pl",
+      "verification_profile": "national_source_review"
+    },
+    {
+      "core_compatibility_contract": {
+        "c3_inter_skill_contract": "0.2.0",
+        "conformance_profile": "0.2.0",
+        "controller_protocol": "0.3.0",
+        "element_model": "0.2.0"
+      },
+      "country_name": "Portugal",
+      "iso_country_code": "PT",
+      "jurisdiction_class": "eu_member_state",
+      "official_languages": [
+        {
+          "availability": "check_source_index",
+          "code": "pt",
+          "eu_official": true,
+          "name": "Portuguese",
+          "national_language_index": "national-language-index-PT.json",
+          "shared_core_index": "shared-core-index-PT.json",
+          "status": "nationwide"
+        }
+      ],
+      "plugin_name": "freemovement-law-pt",
+      "related_operational_modules": [],
+      "skill_name": "eudirective-library-pt",
+      "verification_profile": "national_source_review"
+    },
+    {
+      "core_compatibility_contract": {
+        "c3_inter_skill_contract": "0.2.0",
+        "conformance_profile": "0.2.0",
+        "controller_protocol": "0.3.0",
+        "element_model": "0.2.0"
+      },
+      "country_name": "Romania",
+      "iso_country_code": "RO",
+      "jurisdiction_class": "eu_member_state",
+      "official_languages": [
+        {
+          "availability": "check_source_index",
+          "code": "ro",
+          "eu_official": true,
+          "name": "Romanian",
+          "national_language_index": "national-language-index-RO.json",
+          "shared_core_index": "shared-core-index-RO.json",
+          "status": "nationwide"
+        }
+      ],
+      "plugin_name": "freemovement-law-ro",
+      "related_operational_modules": [],
+      "skill_name": "eudirective-library-ro",
+      "verification_profile": "national_source_review"
+    },
+    {
+      "core_compatibility_contract": {
+        "c3_inter_skill_contract": "0.2.0",
+        "conformance_profile": "0.2.0",
+        "controller_protocol": "0.3.0",
+        "element_model": "0.2.0"
+      },
+      "country_name": "Sweden",
+      "iso_country_code": "SE",
+      "jurisdiction_class": "eu_member_state",
+      "official_languages": [
+        {
+          "availability": "check_source_index",
+          "code": "sv",
+          "eu_official": true,
+          "name": "Swedish",
+          "national_language_index": "national-language-index-SV.json",
+          "shared_core_index": "shared-core-index-SV.json",
+          "status": "nationwide"
+        }
+      ],
+      "plugin_name": "freemovement-law-se",
+      "related_operational_modules": [
+        "eudirective-ms-sweden"
+      ],
+      "skill_name": "eudirective-library-se",
+      "verification_profile": "national_source_review"
+    },
+    {
+      "core_compatibility_contract": {
+        "c3_inter_skill_contract": "0.2.0",
+        "conformance_profile": "0.2.0",
+        "controller_protocol": "0.3.0",
+        "element_model": "0.2.0"
+      },
+      "country_name": "Slovenia",
+      "iso_country_code": "SI",
+      "jurisdiction_class": "eu_member_state",
+      "official_languages": [
+        {
+          "availability": "check_source_index",
+          "code": "sl",
+          "eu_official": true,
+          "name": "Slovene",
+          "national_language_index": "national-language-index-SL.json",
+          "shared_core_index": "shared-core-index-SL.json",
+          "status": "nationwide"
+        }
+      ],
+      "plugin_name": "freemovement-law-si",
+      "related_operational_modules": [],
+      "skill_name": "eudirective-library-si",
+      "verification_profile": "national_source_review"
+    },
+    {
+      "core_compatibility_contract": {
+        "c3_inter_skill_contract": "0.2.0",
+        "conformance_profile": "0.2.0",
+        "controller_protocol": "0.3.0",
+        "element_model": "0.2.0"
+      },
+      "country_name": "Slovakia",
+      "iso_country_code": "SK",
+      "jurisdiction_class": "eu_member_state",
+      "official_languages": [
+        {
+          "availability": "check_source_index",
+          "code": "sk",
+          "eu_official": true,
+          "name": "Slovak",
+          "national_language_index": "national-language-index-SK.json",
+          "shared_core_index": "shared-core-index-SK.json",
+          "status": "nationwide"
+        }
+      ],
+      "plugin_name": "freemovement-law-sk",
+      "related_operational_modules": [],
+      "skill_name": "eudirective-library-sk",
+      "verification_profile": "national_source_review"
+    }
+  ],
+  "schema_version": "1.0.0"
+}

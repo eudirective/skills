@@ -1,14 +1,47 @@
 #!/usr/bin/env node
-import {readFileSync,readdirSync,existsSync,writeFileSync} from 'node:fs';
-import {resolve,join,dirname} from 'node:path';
+import {readFileSync, readdirSync, statSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+import {resolve, join, dirname, relative, sep} from 'node:path';
 import {fileURLToPath} from 'node:url';
-const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');const json=p=>JSON.parse(readFileSync(p,'utf8'));
-const p=json(join(root,'plugin.json')),legacy=json(join(root,'.codex-plugin/plugin.json'));
-if(p.version!==legacy.version||p.name!==legacy.name)throw Error('plugin metadata mismatch');
-const skills={};for(const ent of readdirSync(join(root,'skills'),{withFileTypes:true})){const f=join(root,'skills',ent.name,'SKILL.md');if(!ent.isDirectory()||!existsSync(f))continue;const s=readFileSync(f,'utf8');const match=s.match(/^- Current version: `(\d+\.\d+\.\d+)`/m)||s.match(/Skill version: [^\s]+ v(\d+\.\d+\.\d+)/);if(!match)throw Error('skill version missing: '+ent.name);skills[ent.name]=match[1]}
-const f=join(root,'skills/eudirective-core/references/session-version-manifest.json');const old=json(f);const idx=process.argv.indexOf('--library-tree');const sha=idx>=0?process.argv[idx+1]:old.library.tree_sha;const notesIdx=process.argv.indexOf('--module-notes-tree');const notesSha=notesIdx>=0?process.argv[notesIdx+1]:old.library.module_notes_tree_sha;
-if(!/^[0-9a-f]{40}$/.test(sha)||!/^[0-9a-f]{40}$/.test(notesSha))throw Error('invalid source-data tree SHA');
-const dir=join(root,'skills/eudirective-source-library');const names=readdirSync(dir).filter(n=>/^core-source-pack-manifest-\d+\.\d+\.\d+\.json$/.test(n)).sort((a,b)=>a.localeCompare(b,undefined,{numeric:true}));const pack=json(join(dir,names.at(-1))).pack_version;
-const sorted=Object.fromEntries(Object.entries(skills).sort(([a],[b])=>a.localeCompare(b)));
-const result={schema_version:1,plugin:{name:p.name,version:p.version},skills:sorted,library:{repository:'eudirective/public-data',path:'source-library',tree_sha:sha,module_notes_path:'module-notes',module_notes_tree_sha:notesSha,core_pack_version:pack}};
-if(process.argv.includes('--stamp')){writeFileSync(f,JSON.stringify(result,null,2)+'\n');console.log('Stamped freemovement-law versions')}else if(process.argv.includes('--verify')){if(JSON.stringify(old)!==JSON.stringify(result))throw Error('installed version manifest not synchronized');console.log('Verified freemovement-law versions')}else throw Error('expected --stamp or --verify');
+
+const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
+const manifestRel = 'skills/eudirective-core/references/component-manifest.json';
+const manifest = JSON.parse(readFileSync(join(root, manifestRel), 'utf8'));
+const plugin = JSON.parse(readFileSync(join(root, 'plugin.json'), 'utf8'));
+const legacy = JSON.parse(readFileSync(join(root, '.codex-plugin/plugin.json'), 'utf8'));
+const fail = message => { throw Error(message); };
+if (plugin.name !== 'freemovement-law' || plugin.version !== legacy.version || manifest.plugin_version !== plugin.version) {
+  fail('plugin metadata and component manifest disagree');
+}
+if (manifest.component_id !== 'eu-core' || !manifest.skill_versions || !manifest.distributed_files) {
+  fail('invalid EU-core component manifest');
+}
+const skills = {};
+for (const entry of readdirSync(join(root, 'skills'), {withFileTypes: true})) {
+  if (!entry.isDirectory()) continue;
+  const skillFile = join(root, 'skills', entry.name, 'SKILL.md');
+  let content;
+  try { content = readFileSync(skillFile, 'utf8'); } catch { continue; }
+  const version = content.match(/^- Current version: `(\d+\.\d+\.\d+)`/m)?.[1]
+    ?? content.match(/^\*\*Skill version:\*\* (\d+\.\d+\.\d+)/m)?.[1]
+    ?? content.match(/^Skill version: (\d+\.\d+\.\d+)/m)?.[1];
+  if (version) skills[entry.name] = version;
+}
+for (const [name, version] of Object.entries(manifest.skill_versions)) {
+  if (skills[name] !== version) fail('skill version mismatch: ' + name);
+}
+if (Object.keys(skills).length !== Object.keys(manifest.skill_versions).length) fail('component manifest skill list is incomplete');
+const expected = manifest.distributed_files;
+if (!expected || typeof expected !== 'object' || !/^[a-f0-9]{64}$/.test(manifest.distributed_fingerprint ?? '')) {
+  fail('invalid distributed-file manifest');
+}
+for (const [rel, digest] of Object.entries(expected)) {
+  if (typeof rel !== 'string' || rel.startsWith('/') || rel.split('/').includes('..')) fail('unsafe manifest path');
+  if (!/^[a-f0-9]{64}$/.test(digest)) fail('invalid manifest digest: ' + rel);
+  let bytes;
+  try { bytes = readFileSync(join(root, rel)); } catch { fail('distributed file missing: ' + rel); }
+  const actualDigest = createHash('sha256').update(bytes).digest('hex');
+  if (actualDigest !== digest) fail('distributed file mismatch: ' + rel);
+}
+if (process.argv.includes('--verify')) console.log('Verified freemovement-law component manifest');
+else fail('expected --verify');

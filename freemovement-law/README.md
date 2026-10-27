@@ -1,7 +1,8 @@
 # freemovement-law
 
-This package provides the eudirective skills and an externally maintained EU
-and national legal-source library, mirrored into the plugin package.
+This repository distributes the freemovement-law EU core and 31 separately
+installable country source plugins. Install the core for EU-level work and add
+only the national plugins relevant to your consultations.
 
 ## Requirements
 
@@ -12,10 +13,11 @@ and national legal-source library, mirrored into the plugin package.
 
 This plugin is intended for personal use. Non-personal use includes explicit professional or organizational use for an employer, business, organization, client, customer, or other third party; paid services; or deploying the plugin for others. Non-personal use requires a license. Request one at eudirective@proton.me.
 
-The source library is maintained in `eudirective/public-data` and mirrored into
-`skills/eudirective-source-library/` by the repository's scheduled workflow.
-Installed copies contain the corpus version present when they were packaged;
-they do not synchronize source changes after installation. For a legal claim
+The canonical source records are maintained in `eudirective/public-data`.
+The repository workflow builds the EU core and country packages from a pinned
+upstream revision and publishes a component index. Installed packages contain
+their recorded snapshot; they do not synchronize source changes after
+installation. For a legal claim
 that depends on currentness, check the responsible official publisher directly
 and report the publication/version date checked.
 For ordinary research, a human-reviewed official link is enough within its
@@ -72,8 +74,9 @@ for a deferred manual review plan.
 
 ## Personal installation
 
-Copy this plugin folder to `~/.codex/plugins/freemovement-law` and add an entry
-like this to `~/.agents/plugins/marketplace.json`:
+Copy the EU core folder to `~/.codex/plugins/freemovement-law`. When a
+national jurisdiction is relevant, also copy that country's `freemovement-law-xx`
+folder and add each installed package to `~/.agents/plugins/marketplace.json`:
 
 ```json
 {
@@ -99,9 +102,10 @@ Restart the desktop app and install the plugin from that personal marketplace.
 
 ## Bundled source library
 
-The current source corpus, manifests, module notes, and source-maintenance material are
-under `skills/eudirective-source-library/`. The historical C1 compatibility test fixture
-is under `skills/eudirective-core/tests/fixtures/core-source-pack-0.6.1/`. The core
-skill resolves the fixture there; core, Sweden, and Türkiye resolve current source and
-module notes from the bundled source-library directory. The corpus is maintained upstream; source changes arrive through the
-repository mirror and a refreshed plugin package.
+The shared English EU corpus and operational module notes are bundled at
+`skills/eudirective-core/references/source-library/`. Country source records and
+permitted local texts are bundled only in their matching country packages. The
+historical C1 compatibility fixture remains under
+`skills/eudirective-core/tests/fixtures/core-source-pack-0.6.1/`. The runtime
+version check compares the installed core manifest with the published component
+index and separately reports when the public-data repository has advanced.

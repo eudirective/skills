@@ -1,9 +1,21 @@
 # P0 consultation routing: independent legal and privacy review packet
 
-**Prepared:** 2026-10-23
-**Candidate:** `freemovement-law` 0.58.1 / `eudirective-core` 0.57.1; strict consultation receipt 0.5.0
+**Prepared:** 2026-10-27
+**Candidate:** `freemovement-law` 0.60.4 / `eudirective-core` 0.59.1; strict consultation receipt 0.6.0; national-source-routing 1.0.0
 **Review state:** `pending_independent_review`
 **Reviewer / date / decision:** not completed
+
+## Candidate identity and review hashes
+
+The source snapshot is `eudirective/public-data` commit `a9e15985c87b50c113f10f028b5e06049fe076df` (source-library tree `43aa7b44fae78687b6d6293069f3077e32b4997a`; module-notes tree `97a3a13d074af7b8630326099270655f52a658ea`). Review these exact metadata files; SHA-256 values identify bytes and do not imply approval:
+
+- Issue routing: `1c2f665930e2768ee08c3e06d28a63930c408f1b959c6e805031f1443080df26`
+- Source-class policy: `ce41de5b7716cb3644d6317417bc7984d6ce8d7f0a61c9723450d3a1b8a1a853`
+- Attack-screen pathways: `e87699646f85c809a1902a5a05884736ece7afc1bf7e8ac6ae539406502b8da5`
+- National source routing: `529b69a4a444827ecc1a6b40b747ae3979ec2cf9763af59cf7318e485ba84d33`
+- Country distribution registry: `bb4ccbb2f70cf770cbe1964ce46525047695b028925d1651c62f140102f61ab0`
+
+The package-to-country mapping is also published in the generated component index; its exact final hash is recorded in the private release review record because that index is regenerated with the candidate. The issue-routing, source-class and attack-screen production review states remain `pending_independent_review`.
 
 ## Purpose and boundary
 
@@ -104,7 +116,7 @@ For each route, review whether its trigger signals are sufficiently narrow, the 
     - Conditional (formal_refusal_issued): case_law — national_decision_or_remedy_triggered
     - Conditional (formal_refusal_issued): contrary_authority — adverse_or_remedy_issue_triggered
     - Explicit exclusions: eu_binding_law — eu_common_law_belongs_to_core_owner
-- **Source references:** Official EU–Swiss Agreement on the Free Movement of Persons text at EUR-Lex or Fedlex; ../eudirective-source-library/switzerland/README.md; ../eudirective-source-library/references/eea-switzerland-country-expansion.md
+- **Source references:** Official EU–Swiss Agreement on the Free Movement of Persons text at EUR-Lex or Fedlex; references/national-source-routing.json; references/eea-switzerland-country-expansion.md
 - **Attack-screen review topics:** Directive versus bilateral-agreement legal basis; personal and material scope of the agreement; Swiss domestic implementation and available remedy
 - **Negative applicability:** Do not select this route solely because a Swiss location or a generic European free-movement question is mentioned.
 - **Related separate issues:** prior_refusal_and_legal_status_change; remedy_or_supervisory_track

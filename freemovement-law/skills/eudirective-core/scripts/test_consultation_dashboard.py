@@ -236,23 +236,15 @@ class ConsultationDashboardTests(unittest.TestCase):
         with self.assertRaisesRegex(DashboardError, "duplicate_logical_source"):
             self.report(route)
 
-    def test_national_library_sections_are_grouped_from_manifests(self):
-        ids = [
-            "it-01-legislative-decree-no.-30-2007-implementing-free-movement-and-residence-rig",
-            "ch-04",
-            "fi-aliens-act-fi",
-        ]
-        route = make_route(sources=[source_record(source_id) for source_id in ids])
-        report = self.report(route)
-        self.assertEqual(report["source_metrics"]["response"]["count"], 3)
-        self.assertEqual(report["source_metrics"]["response"]["sections"], {
-            "Italy": 1, "Switzerland": 1, "Finland": 1,
-        })
-        for country in ("Italy", "Switzerland", "Finland"):
-            self.assertIn(country, report["preview"])
+    def test_country_source_records_are_not_misreported_as_core_library_matches(self):
+        catalog = _load_catalog()
+        self.assertTrue(catalog)
+        self.assertTrue(all(item["jurisdiction"] == "EU" for item in catalog.values()))
+        for source_id in ("it-01-legislative-decree-no.-30-2007-implementing-free-movement-and-residence-rig", "ch-04", "fi-aliens-act-fi"):
+            self.assertNotIn(source_id, catalog)
 
-    def test_candidate_source_read_is_counted_and_labelled_unaccepted(self):
-        item = source_record("it-01-legislative-decree-no.-30-2007-implementing-free-movement-and-residence-rig")
+    def test_candidate_core_source_read_is_counted_and_labelled_unaccepted(self):
+        item = source_record("eu:32008r0767")
         route = make_route(sources=[item])
         report = self.report(route)
         self.assertEqual(report["source_metrics"]["response"]["count"], 1)
@@ -267,42 +259,41 @@ class ConsultationDashboardTests(unittest.TestCase):
         self.assertIn("Directive 2004/38/EC", report["preview"])
         self.assertEqual(report["preview"].count("candidate unaccepted"), 1)
 
-    def test_national_manifest_acceptance_overrides_unrecorded_index_state(self):
-        item = source_record("fi-migri-family-residence-card")
-        self.assertEqual(item["library_state"], "candidate_unaccepted")
-        preview = self.report(make_route(sources=[item]))["preview"]
-        self.assertIn("candidate unaccepted", preview)
+    def test_country_manifest_records_are_not_assumed_to_be_installed_in_core(self):
+        catalog = _load_catalog()
+        self.assertNotIn("fi-migri-family-residence-card", catalog)
+        self.assertNotIn("ie-31", catalog)
 
-    def test_all_owner_matched_manifest_acceptance_states_reconcile(self):
+    def test_all_owner_matched_core_manifest_completeness_states_reconcile(self):
         catalog = _load_catalog()
         checked = 0
-        for manifest_path in source_library_root().glob("*/**/*manifest*.json"):
-            if any(token in manifest_path.name for token in ("capture-results", "monitor-candidate")):
-                continue
+        for manifest_path in source_library_root().glob("core-source-pack-manifest-*.json"):
             try:
                 data = json.loads(manifest_path.read_text(encoding="utf-8"))
             except (OSError, json.JSONDecodeError):
                 continue
-            country = manifest_path.relative_to(source_library_root()).parts[0].casefold()
-            jurisdiction = (
-                "EU" if country == "references" and data.get("pack") == "eu-guidance"
-                else COUNTRY_CODES.get(country, country.upper())
-            )
-            records = []
-            for key in ("sources", "documents", "source_records", "entries"):
-                if isinstance(data, dict) and isinstance(data.get(key), list):
-                    records.extend(data[key])
-            for item in records:
-                if not isinstance(item, dict) or not isinstance(item.get("accepted"), bool):
+            for item in data.get("sources", []):
+                if not isinstance(item, dict):
                     continue
                 source_id = item.get("source_id") or item.get("id")
                 metadata = catalog.get(source_id)
-                if not metadata or metadata["jurisdiction"] != jurisdiction:
+                if not metadata or metadata["jurisdiction"] != "EU":
                     continue
-                expected = "registered_record" if item["accepted"] else "candidate_unaccepted"
+                completeness = item.get("text_completeness_state")
+                expected = {
+                    "bundled_verified": "registered_record",
+                    "retrieved_full_text_candidate_not_trust_promoted": "candidate_unaccepted",
+                    "candidate_unverified": "candidate_unaccepted",
+                    "verified_source_note": "source_note_only",
+                    "reference_only": "not_recorded",
+                }.get(completeness)
+                if expected is None:
+                    continue
                 self.assertEqual(metadata["library_state"], expected, source_id)
                 checked += 1
-        self.assertGreater(checked, 1000)
+        self.assertGreater(checked, 0)
+        self.assertLess(checked, 1000, "national records must remain in their separate country plugins")
+        self.assertTrue(all(item["jurisdiction"] == "EU" for item in catalog.values()))
 
     def test_eu_guidance_manifest_uses_eu_core_ownership_and_guidance_category(self):
         source = _load_catalog()["eu-edpb-guidelines-01-2022-access"]
@@ -312,30 +303,14 @@ class ConsultationDashboardTests(unittest.TestCase):
         preview = self.report(make_route(sources=[source_record("eu-edpb-guidelines-01-2022-access")]))["preview"]
         self.assertIn("EU core · EU · Official guidance", preview)
 
-    def test_title_fallback_classifies_manifest_guidance_and_procedure(self):
+    def test_country_guidance_and_procedure_records_are_not_claimed_by_core(self):
         catalog = _load_catalog()
-        guidance = catalog["dk-omb-02"]
-        visa_guidance = catalog["dk-nyidanmark-visa-after-eu-rules"]
-        appeal = catalog["dk-nyidanmark-no-visa"]
-        procedure = catalog["se-jo-complaint-form"]
-        self.assertEqual(_category(guidance["source_type"], guidance["section"], guidance["title"]), "official_guidance")
-        self.assertEqual(_category(visa_guidance["source_type"], visa_guidance["section"], visa_guidance["title"]), "official_guidance")
-        self.assertEqual(_category(appeal["source_type"], appeal["section"], appeal["title"]), "procedural_rule")
-        self.assertEqual(_category(procedure["source_type"], procedure["section"], procedure["title"]), "procedural_rule")
-
-    def test_title_fallback_classifies_remaining_guidance_and_access_procedures(self):
-        catalog = _load_catalog()
-        guidance_ids = ("ro-eviza-faq-ro", "se-lifos-rs-030-2021-v5", "se-lifos-rs-008-2022-v6")
-        procedure_ids = (
-            "ro-igi-petitions", "ro-igi-central-administration", "se-mig-public-documents",
-            "se-mig-own-case-documents",
+        country_records = (
+            "dk-omb-02", "dk-nyidanmark-visa-after-eu-rules", "dk-nyidanmark-no-visa",
+            "se-jo-complaint-form", "ro-eviza-faq-ro", "ro-igi-petitions",
         )
-        for source_id in guidance_ids:
-            item = catalog[source_id]
-            self.assertEqual(_category(item["source_type"], item["section"], item["title"]), "official_guidance")
-        for source_id in procedure_ids:
-            item = catalog[source_id]
-            self.assertEqual(_category(item["source_type"], item["section"], item["title"]), "procedural_rule")
+        for source_id in country_records:
+            self.assertNotIn(source_id, catalog)
 
     def test_source_type_taxonomy_keeps_nonlegal_records_out_of_legal_text_categories(self):
         expected = {
@@ -355,14 +330,7 @@ class ConsultationDashboardTests(unittest.TestCase):
 
     def test_canonical_problem_records_have_independently_expected_categories(self):
         catalog = _load_catalog()
-        expected = {
-            "ie-31": "publisher_portal",
-            "ie-05": "source_note",
-            "bg-eu-free-movement-act": "national_legislation",
-            "mig:UM-7584-08": "case_law",
-            "eu:c-2023-1392": "commission_guidance",
-            "fi-finlex-integration-guide": "source_note",
-        }
+        expected = {"eu:c-2023-1392": "commission_guidance"}
         for source_id, category in expected.items():
             with self.subTest(source_id=source_id):
                 metadata = catalog[source_id]
@@ -370,6 +338,8 @@ class ConsultationDashboardTests(unittest.TestCase):
                     _category(metadata["source_type"], metadata["section"], metadata["title"]),
                     category,
                 )
+        for country_source in ("ie-31", "ie-05", "bg-eu-free-movement-act", "mig:UM-7584-08", "fi-finlex-integration-guide"):
+            self.assertNotIn(country_source, catalog)
 
     def test_mission_directory_and_retrieval_documentation_are_not_counted_as_legal_texts(self):
         records = [
