@@ -17,7 +17,7 @@ For personal, ordinary personal, or unspecified use, do not mention licensing or
 
 ## Scope and version
 
-- Skill version: `1.0.0`
+- Skill version: `1.0.1`
 - Use this module only when Sweden is materially relevant as the deciding, residence, intended-residence, or challenged-authority state.
 - Use `eudirective-core` for shared C3 routing, legal reasoning, issue selection, evidence handling, and completeness controls. This module supplies Sweden-owned source records and review-only national procedure data.
 - Use `eudirective-library-se` for the Sweden-owned source library. Its acceptance records and source notes are versioned snapshots, not proof of current law.
@@ -27,7 +27,7 @@ For personal, ordinary personal, or unspecified use, do not mention licensing or
 
 Read `references/module-manifest.json` and `references/module-export.json` with the applicable generic C3 contract in `eudirective-core`. Use `references/c12-rule-extension.json` as a separate, data-only list of review topics. Use `references/c17-remedy-catalog.json` only to identify possible Swedish review routes and questions for human verification.
 
-In the `freemovement-law-se` package, Swedish module notes are at `references/source-library/module-notes/sweden/`, at package level outside this skill directory. They are source identity and scope notes, not full official texts. A matching hash confirms local bytes only. Check the current official publisher for material law, procedure, competence, exceptions, and deadlines. Keep the recorded status `baseline_verified_not_live_rechecked` until currentness is actually checked.
+In the `fm-sweden` plugin (package directory `freemovement-law-se`), Swedish module notes are at `references/source-library/module-notes/sweden/`, at package level outside this skill directory. They are source identity and scope notes, not full official texts. A matching hash confirms local bytes only. Check the current official publisher for material law, procedure, competence, exceptions, and deadlines. Keep the recorded status `baseline_verified_not_live_rechecked` until currentness is actually checked.
 
 Do not turn `candidate_interpretation` into direct statutory text, a possible attack angle into an established violation, or a catalog entry into an individual entitlement. Do not calculate an exact appeal deadline without the operative decision, service evidence, applicable rule, and human review. A supervisory complaint does not replace or extend an appeal. Do not prepare or send legal correspondence as approved for filing.
 

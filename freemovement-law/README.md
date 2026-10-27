@@ -75,7 +75,7 @@ for a deferred manual review plan.
 ## Personal installation
 
 Copy the EU core folder to `~/.codex/plugins/freemovement-law`. When a
-national jurisdiction is relevant, also copy that country's `freemovement-law-xx`
+national jurisdiction is relevant, install that country's `fm-<country-name>` plugin from its stable `freemovement-law-xx`
 folder and add each installed package to `~/.agents/plugins/marketplace.json`:
 
 ```json

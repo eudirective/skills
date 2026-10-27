@@ -34,12 +34,29 @@ def routing_registry() -> dict:
         raise ValueError("Generated operational module registry is malformed.")
     return data
 
+def _package_directory_for_plugin(data: dict, plugin_name: str) -> str:
+    if plugin_name == data["core_plugin"]:
+        return "."
+    matches = [item for item in data["countries"] if item["plugin_name"] == plugin_name]
+    if len(matches) != 1:
+        raise ValueError(f"Plugin identity is not registered exactly once: {plugin_name}")
+    directory = matches[0].get("package_directory")
+    if not isinstance(directory, str) or Path(directory).is_absolute() or ".." in Path(directory).parts:
+        raise ValueError(f"Registered package directory is unsafe: {plugin_name}")
+    return directory
+
+def _package_root(data: dict, plugin_name: str, package_directory: str) -> Path:
+    expected = _package_directory_for_plugin(data, plugin_name)
+    if package_directory != expected:
+        raise ValueError(f"Registered package directory mismatch for {plugin_name}")
+    return PLUGIN_ROOT if plugin_name == data["core_plugin"] else PLUGIN_ROOT.parent / package_directory
+
 def country_plugin_root(country: str) -> Path:
     data = routing_registry()
     row = next((item for item in data["countries"] if item["source_library_directory"] == country or item["iso_country_code"].lower() == country.lower()), None)
     if row is None:
         raise ValueError(f"Country is not registered: {country}")
-    root = PLUGIN_ROOT.parent / row["plugin_name"]
+    root = PLUGIN_ROOT.parent / row["package_directory"]
     if root.is_dir():
         return root
     raise FileNotFoundError(f"Country plugin is not available beside the core package: {row['plugin_name']}")
@@ -49,7 +66,7 @@ def module_skill_root(module_id: str) -> Path:
     row = next((item for item in data["operational_modules"] if item["module_id"] == module_id), None)
     if row is None:
         raise ValueError(f"Operational module is not registered: {module_id}")
-    package = PLUGIN_ROOT if row["plugin_name"] == data["core_plugin"] else PLUGIN_ROOT.parent / row["plugin_name"]
+    package = _package_root(data, row["plugin_name"], row["package_directory"])
     root = package / row["skill_directory"]
     if not root.is_dir():
         raise FileNotFoundError(f"Registered module package is unavailable: {row['plugin_name']} / {row['skill_directory']}")
@@ -64,8 +81,9 @@ def module_record(module_id: str) -> dict:
 
 def module_record_for_root(module_root: Path) -> dict:
     root = module_root.resolve()
-    for row in routing_registry()["operational_modules"]:
-        package = PLUGIN_ROOT if row["plugin_name"] == routing_registry()["core_plugin"] else PLUGIN_ROOT.parent / row["plugin_name"]
+    data = routing_registry()
+    for row in data["operational_modules"]:
+        package = _package_root(data, row["plugin_name"], row["package_directory"])
         if (package / row["skill_directory"]).resolve() == root:
             return row
     raise ValueError(f"Module package is not registered: {module_root}")
@@ -103,7 +121,8 @@ def module_notes_root(country: str, module_id: str | None = None) -> Path:
     )
     if owner is None:
         raise ValueError(f"Module-note owner is not registered: {notes_directory}")
-    package = PLUGIN_ROOT if owner == data["core_plugin"] else PLUGIN_ROOT.parent / owner
+    package_directory = _package_directory_for_plugin(data, owner)
+    package = PLUGIN_ROOT if owner == data["core_plugin"] else PLUGIN_ROOT.parent / package_directory
     library = package / "skills" / "eudirective-core" / "references" / "source-library" if owner == data["core_plugin"] else package / "references" / "source-library"
     root = library / "module-notes" / notes_directory
     if root.is_dir():
