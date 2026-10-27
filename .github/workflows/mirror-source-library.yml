@@ -49,7 +49,7 @@ jobs:
           set -euo pipefail
           upstream_revision="$(git -C public-data rev-parse HEAD)"
           [[ "$upstream_revision" =~ ^[0-9a-f]{40}$ ]]
-          python3 -m py_compile skills/scripts/source-distribution/build.py
+          python3 -c 'from pathlib import Path; p=Path("skills/scripts/source-distribution/build.py"); compile(p.read_text(encoding="utf-8"), str(p), "exec")'
           python3 skills/scripts/source-distribution/build.py \
             --source-root public-data/source-library \
             --module-notes-root public-data/module-notes \
@@ -71,6 +71,7 @@ jobs:
             # Rebuild against the latest main after every rejected concurrent update.
             git -C skills fetch --no-tags origin main
             git -C skills reset --hard origin/main
+            rm -rf skills/scripts/source-distribution/__pycache__
             upstream_revision="$(git -C public-data rev-parse HEAD)"
             rm -rf "$RUNNER_TEMP/fm-source-stage"
             python3 skills/scripts/source-distribution/build.py \
