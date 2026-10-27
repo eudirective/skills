@@ -111,7 +111,8 @@ jobs:
             install -D -m 0644 "$stage/migration-map.json" skills/migration-map.json
             install -D -m 0644 "$stage/marketplace.json" skills/.agents/plugins/marketplace.json
 
-            git -C skills add -A -- freemovement-law freemovement-law-?? component-index.json source-inventory.json migration-map.json .agents/plugins/marketplace.json
+            # This attempt starts from a clean main checkout; stage the generated distribution as a whole.
+            git -C skills add -A
             if git -C skills diff --cached --quiet; then
               echo "Generated packages already match main"
               exit 0
