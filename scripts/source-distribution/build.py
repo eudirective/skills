@@ -566,7 +566,13 @@ def country_skill(country: dict[str, Any], maltese: bool = False) -> str:
     code = country["iso_country_code"]
     if maltese:
         return f'''---\nname: {country['skill_name']}\ndescription: Use when FreeMovement consultation requires Malta national sources. Apply the Malta bilingual verification profile for material Maltese national law.\n---\n\n# Malta national source library\n\nUse this skill alongside `eudirective-core`; it supplies Malta-owned sources and language checks, not a separate legal-reasoning engine.\n\n- Determine whether a source is Maltese national law, a judgment, official guidance, or an EU instrument before applying language rules.\n- For national statutes, seek the official English and Maltese versions under the same ELI identity. Preserve both official representations and align their editions before comparing relevant provisions.\n- Apply Maltese statutory-text precedence only where Article 74 of the Constitution governs, after checking for a specific statutory exception. Do not apply that rule automatically to judgments, proceedings, or EU law.\n- Identify the language actually used in judicial records and check the applicable court-language provisions separately.\n- If a counterpart, edition, exception, or comparison is unverified, name the exact gap and its effect while continuing useful research.\n- Follow `references/source-library/malta/references/source-acceptance.json` for accepted official links and local-copy restrictions. No national-law local copies are currently accepted; do not treat an EU Maltese-language source as Malta national law.\n- See `references/source-library/malta/references/language-pairs.json` and `references/malta-bilingual-verification.md` for the instrument register and detailed workflow.\n- Check this package's component version with `scripts/session_version_check.mjs` when the host can execute Node; otherwise disclose that package currentness is unknown.\n'''
-    return f'''---\nname: {country['skill_name']}\ndescription: Use when FreeMovement consultation requires {name} national sources. Read with eudirective-core; this skill provides source records and country-specific verification limits, not a separate legal-reasoning engine.\n---\n\n# {name} national source library\n\nUse this skill with `eudirective-core` when {name} is a materially relevant jurisdiction.\n\n- Determine the source's publisher, instrument or record identity, language, displayed version/date, scope, and limitations from the official publisher.\n- Treat the bundled source records as a versioned snapshot. Check the official publisher for material current-law questions when available.\n- Keep external-reference acceptance, local-copy acceptance, topic coverage, and country-review completion separate.\n- Use local texts only where the source acceptance record explicitly accepts that exact representation; its hash confirms bytes, not legal meaning or currentness.\n- If a source is absent, outdated, link-only, or outside its recorded scope, say what is missing and its effect, and continue with available official-source research.\n- Country acceptance and index records are under `references/source-library/{country['upstream_source_directory']}/references/`.\n- Compare this package's component manifest with the published component index using `scripts/session_version_check.mjs` when Node is available. If execution is unavailable, report package currentness as unknown; do not claim the package is current.\n'''
+    content = f'''---\nname: {country['skill_name']}\ndescription: Use when FreeMovement consultation requires {name} national sources. Read with eudirective-core; this skill provides source records and country-specific verification limits, not a separate legal-reasoning engine.\n---\n\n# {name} national source library\n\nUse this skill with `eudirective-core` when {name} is a materially relevant jurisdiction.\n\n- Determine the source's publisher, instrument or record identity, language, displayed version/date, scope, and limitations from the official publisher.\n- Treat the bundled source records as a versioned snapshot. Check the official publisher for material current-law questions when available.\n- Keep external-reference acceptance, local-copy acceptance, topic coverage, and country-review completion separate.\n- Use local texts only where the source acceptance record explicitly accepts that exact representation; its hash confirms bytes, not legal meaning or currentness.\n- If a source is absent, outdated, link-only, or outside its recorded scope, say what is missing and its effect, and continue with available official-source research.\n- Country acceptance and index records are under `references/source-library/{country['upstream_source_directory']}/references/`.\n- Compare this package's component manifest with the published component index using `scripts/session_version_check.mjs` when Node is available. If execution is unavailable, report package currentness as unknown; do not claim the package is current.\n'''
+    if code == "CZ":
+        content = content.replace(
+            "- Country acceptance and index records are under",
+            "- For Czech EU-family short-stay visa procedures, read `references/eu-family-short-stay-visa.md`; keep its neutral procedural-friction review separate from any finding of applicant-specific misconduct or illegality.\n- Country acceptance and index records are under",
+        )
+    return content
 
 
 def classify_inventory(root: Path, registry: dict[str, Any], accepted: set[str], language_paths: set[str], english_paths: set[str]) -> list[dict[str, Any]]:
@@ -1129,6 +1135,15 @@ def module_notes_root(country: str, module_id: str | None = None) -> Path:
         is_malta = code == "MT"
         skill_content = country_skill(country, is_malta)
         skill_file.write_text(skill_content, encoding="utf-8", newline="\n")
+        country_reference: Path | None = None
+        country_reference_sha: str | None = None
+        if code == "CZ":
+            country_reference = Path(__file__).with_name("templates") / "czechia-eu-family-short-stay-visa.md"
+            if not country_reference.is_file():
+                raise FileNotFoundError(f"Required Czech procedure reference template is missing: {country_reference}")
+            country_reference_sha = sha256(country_reference)
+            reference_target = plugin_dir / "skills" / skill_rel / "references/eu-family-short-stay-visa.md"
+            copy_exact(country_reference, reference_target, {})
         if is_malta:
             verification = plugin_dir / "skills" / skill_rel / "references/malta-bilingual-verification.md"
             verification.parent.mkdir(parents=True, exist_ok=True)
@@ -1175,6 +1190,8 @@ def module_notes_root(country: str, module_id: str | None = None) -> Path:
             "distributor/build.py": generator_hash,
             "core-tool/session_version_check.mjs": sha256(checker_source),
         }
+        if code == "CZ" and country_reference_sha is not None:
+            inputs["country-skill-template/references/eu-family-short-stay-visa.md"] = country_reference_sha
         module_fingerprints: dict[str, str] = {}
         for module in operational_modules:
             if module["plugin_name"] != name:
@@ -1347,9 +1364,11 @@ def module_notes_root(country: str, module_id: str | None = None) -> Path:
                 raise ValueError(f"Inventory marks a source for distribution but package omitted it: {name}:{rel}")
 
         skill_name = "eudirective-library-" + code.lower()
-        skill_fingerprint = hashlib.sha256(
-            skill_content.replace("Skill version: 0.1.0", "Skill version: <version>").encode("utf-8")
-        ).hexdigest()
+        normalized_skill_content = skill_content.replace("Skill version: 0.1.0", "Skill version: <version>")
+        skill_fingerprint_source = normalized_skill_content.encode("utf-8")
+        if code == "CZ" and country_reference is not None:
+            skill_fingerprint_source += b"\0references/eu-family-short-stay-visa.md\0" + country_reference.read_bytes()
+        skill_fingerprint = hashlib.sha256(skill_fingerprint_source).hexdigest()
         skill_fingerprints = {skill_name: skill_fingerprint}
         skill_fingerprints.update(module_fingerprints)
         inputs[f"skill-template/{skill_name}"] = skill_fingerprint

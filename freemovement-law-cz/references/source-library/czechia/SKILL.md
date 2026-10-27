@@ -2,13 +2,13 @@
 name: czechia-legal-source-system
 description: Maintain the Czech national legal-source pack for EU free movement, EU-family residence, visa procedure, civil-status evidence, and administrative remedies.
 metadata:
-  version: 0.4.5
+  version: 0.4.6
   short-description: Czechia legal-source acquisition pack
 ---
 
 # Czechia legal-source system
 
-Pack version 0.4.5, updated 25 October 2026. The [source list](references/source-list.md) and [source register](references/source-register.json) contain 63 records. Forty-one dated local source copies are accepted within recorded limits: 17 legal texts, 13 guidance pages, 6 forms with native PDF companions, and 5 discovery/index snapshots. Two incomplete captures have locator notes only. All 43 former candidate records are dispositioned; their pre-promotion files and capture ledgers are indexed in Monitor's local research archive under origin `czechia-candidate-promotion-2026-10-25`. The country pack has no candidate or capture-result files. The official-reference register still has 62 scoped links, one Decree 429/2010 reference pending whole-portal human review, zero accepted topics, and an incomplete country review. See the [source acceptance register](references/source-acceptance.json), [coverage model](references/coverage-model.json), and [dependency register](references/source-dependencies.json).
+Pack version 0.4.6, updated 28 October 2026. The [source list](references/source-list.md) and [source register](references/source-register.json) contain 63 records. Forty-one dated local source copies are accepted within recorded limits: 17 legal texts, 13 guidance pages, 6 forms with native PDF companions, and 5 discovery/index snapshots. Two incomplete captures have locator notes only. All 43 former candidate records are dispositioned; their pre-promotion files and capture ledgers are indexed in Monitor's local research archive under origin `czechia-candidate-promotion-2026-10-25`. The country pack has no candidate or capture-result files. The official-reference register still has 62 scoped links, one Decree 429/2010 reference pending whole-portal human review, zero accepted topics, and an incomplete country review. See the [source acceptance register](references/source-acceptance.json), [coverage model](references/coverage-model.json), and [dependency register](references/source-dependencies.json).
 
 ## Scope
 

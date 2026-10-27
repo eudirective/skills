@@ -12,5 +12,6 @@ Use this skill with `eudirective-core` when Czechia is a materially relevant jur
 - Keep external-reference acceptance, local-copy acceptance, topic coverage, and country-review completion separate.
 - Use local texts only where the source acceptance record explicitly accepts that exact representation; its hash confirms bytes, not legal meaning or currentness.
 - If a source is absent, outdated, link-only, or outside its recorded scope, say what is missing and its effect, and continue with available official-source research.
+- For Czech EU-family short-stay visa procedures, read `references/eu-family-short-stay-visa.md`; keep its neutral procedural-friction review separate from any finding of applicant-specific misconduct or illegality.
 - Country acceptance and index records are under `references/source-library/czechia/references/`.
 - Compare this package's component manifest with the published component index using `scripts/session_version_check.mjs` when Node is available. If execution is unavailable, report package currentness as unknown; do not claim the package is current.

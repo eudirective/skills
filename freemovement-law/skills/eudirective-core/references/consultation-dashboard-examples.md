@@ -1,5 +1,7 @@
 # Consultation dashboard
 
+Use this full diagnostic board only when the user explicitly requests an audit, maintenance review, dashboard, or detailed verification report. Ordinary consultations use a concise answer and coverage note; a material source or module change may warrant a short plain-language status, not this full board. The examples do not change the underlying C27, source, or execution review duties.
+
 Use this as the visual pattern for a full consultation board. It is ordinary Markdown: status icons and structure help scanning, but do not imply custom colors, CSS, interactivity, or host verification. Keep the answer itself first. Avoid wide tables and code-like dumps; the small three-column metric row below is the only table in the board.
 
 ## Full consultation review
