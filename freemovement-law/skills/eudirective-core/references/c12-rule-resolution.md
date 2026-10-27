@@ -5,7 +5,7 @@
 ## Modules and boundaries
 
 - EU predicates: `references/legal-assessment/c12-eu-rules.json`; source IDs must belong to EU catalogue. No Swedish or Turkish legal conditions belong here.
-- Swedish national predicates: `eudirective-ms-sweden/references/c12-rule-extension.json`.
+- Swedish national predicates: resolve the `member_state` module registered for `SE` in `references/national-source-routing.json`; the module package and exact skill path are stated in that registry.
 - Turkish application-context predicates: `eudirective-ac-turkiye/references/c12-rule-extension.json`. This module does not exercise Turkish authority over a Swedish visa decision.
 - The extension binds `producer_module_id`, family, jurisdiction and exact canonical SHA-256 of the corresponding unchanged C3 `module-export.json`. Cross-owner source citations are rejected.
 - To keep C7's approved-fiction-only intake, distribute exact extension snapshots under `references/fixtures/c12/` as **test enrollment copies**. The primary source-of-authoring is each country skill, not the core. Both source files must be byte-identical JSON objects at release.

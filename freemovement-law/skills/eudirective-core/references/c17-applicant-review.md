@@ -7,23 +7,23 @@ Milestone date: 2026-10-10. **Developer-only synthetic integration. Not an appli
 ## Ownership and prerequisites
 
 - EU and Union-level routes: `eudirective-core/references/c17-remedy-catalog.json`.
-- Swedish visa refusals, appeal, administrative access and JO oversight: `eudirective-ms-sweden/references/c17-remedy-catalog.json`.
+- Swedish visa refusals, appeal, administrative access and JO oversight: resolve the `member_state` module registered for `SE` in `references/national-source-routing.json` and read its registered C17 catalogue path.
 - Swedish mission access in Türkiye and Turkish civil-record acquisition: `eudirective-ac-turkiye/references/c17-remedy-catalog.json`. **This does not grant Turkish authorities Swedish visa-appeal competence.**
 - Both country catalogues remain in their own independently installable skills, never imported as national legal rules into the core. The core separately pins the identities and hashes of each country module/export/catalogue. Source-note hashes, country-conformance contracts and C12 sidecars are checked. A missing, mismatched, cross-country, unapproved or altered component fails closed.
 - Require approved fictional C7 case/elements/fact and C13 document inputs; recompute source/passage-anchored C12/C13 review questions before linking routes. No private applicant files, ad hoc country rules or new C7 run IDs.
 
-Run from a folder containing the **three separately extracted skills**:
+Run from an extracted core package with the registered country packages available beside it:
 
 ```bash
 cd eudirective-core
 python scripts/test_c17_remedies.py
-python scripts/c17_remedies.py --sweden-module ../eudirective-ms-sweden --turkiye-module ../eudirective-ac-turkiye --output-dir /tmp/c17-drafts
+python scripts/c17_remedies.py --output-dir /tmp/c17-drafts
 ```
 
 Optionally bind each draft to an **already-released, verified C6/C7 synthetic** workdir (`L1` through `L8`):
 
 ```bash
-python scripts/c17_remedies.py --sweden-module ../eudirective-ms-sweden --turkiye-module ../eudirective-ac-turkiye --c6-evidence-root /path/to/previously-released-C6-workdirs --output-dir /tmp/c17-bound
+python scripts/c17_remedies.py --c6-evidence-root /path/to/previously-released-C6-workdirs --output-dir /tmp/c17-bound
 ```
 
 C6 verification reruns its complete controlled replay and checks C12/C13 digests against the C17 output. This is a provenance/engineering link; C17 outputs are **not** controller-released findings and no correspondence is approved to send. No C6 binding is claimed if the optional workdirs are omitted. A modified previous C6 workdir blocks this path.

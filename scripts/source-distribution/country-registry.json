@@ -10,6 +10,18 @@
     "controller_protocol": "0.3.0",
     "element_model": "0.2.0"
   },
+  "additional_operational_modules": [
+    {
+      "module_id": "applicant-country-tr-sweden-pilot",
+      "module_family": "applicant_country",
+      "jurisdiction": "TR",
+      "plugin_name": "freemovement-law",
+      "skill_directory": "skills/eudirective-ac-turkiye",
+      "skill_version": "0.6.4",
+      "notes_directory": "turkiye",
+      "destination_state_profiles_available": ["SE"]
+    }
+  ],
   "countries": [
     {
       "iso_country_code": "AT",
@@ -1388,7 +1400,17 @@
         "element_model": "0.2.0"
       },
       "related_operational_modules": [
-        "eudirective-ms-sweden"
+        {
+          "module_id": "member-state-se-source-pilot",
+          "module_family": "member_state",
+          "jurisdiction": "SE",
+          "plugin_name": "freemovement-law-se",
+          "skill_name": "eudirective-ms-sweden",
+          "skill_directory": "skills/eudirective-ms-sweden",
+          "notes_directory": "sweden",
+          "template_directory": "scripts/source-distribution/country-modules/sweden/eudirective-ms-sweden",
+          "skill_version": "1.0.0"
+        }
       ],
       "verification_profile": "national_source_review"
     },

@@ -1,0 +1,432 @@
+{
+  "bound_export_sha256": "5713d8698bb1a664724bf091fea2e6f2709e83a5dd3b1bb955a834da13e7ea56",
+  "deferred_rule_ids": [
+    "se:reasons-for-refusal"
+  ],
+  "extension_version": "0.2.0",
+  "jurisdiction": "SE",
+  "producer_module_family": "member_state",
+  "producer_module_id": "member-state-se-source-pilot",
+  "rules": [
+    {
+      "attack_angle_id": "se:attack:administrative-access",
+      "conditions": [
+        {
+          "expected_values": [
+            "denied",
+            "refused",
+            "lodgement_prevented",
+            "blocked"
+          ],
+          "fact_key": "element:procedure.access_state",
+          "operator": "one_of"
+        },
+        {
+          "expected_values": [
+            "direct_appointment_email",
+            "direct_consulate",
+            "consulate_direct"
+          ],
+          "fact_key": "element:procedure.channel",
+          "operator": "one_of"
+        },
+        {
+          "expected_values": [
+            true
+          ],
+          "fact_key": "fact:mission_requires_vfs_only",
+          "operator": "one_of"
+        }
+      ],
+      "exception_questions": [
+        "The Swedish consular channel may require an appointment, and a refusal of walk-in service alone may not establish illegality."
+      ],
+      "label": "Swedish published direct application route: reported exclusion",
+      "limitations": [
+        "Predicate sufficiency is not a determination of legal infringement."
+      ],
+      "procedure_types": [
+        "entry_visa"
+      ],
+      "rule_id": "se:c12:direct-access",
+      "source_citations": [
+        {
+          "pinpoint_hint": "Sweden Abroad Istanbul EU/EEA family-member direct submission information.",
+          "source_id": "se:src:family-visa-istanbul"
+        },
+        {
+          "pinpoint_hint": "General administrative accessibility; check special immigration procedure.",
+          "source_id": "se:src:admin-act"
+        }
+      ]
+    },
+    {
+      "attack_angle_id": null,
+      "conditions": [
+        {
+          "expected_values": [
+            "appeal"
+          ],
+          "fact_key": "case:procedure_stage",
+          "operator": "one_of"
+        },
+        {
+          "expected_values": [
+            true
+          ],
+          "fact_key": "fact:visa_refusal_exists",
+          "operator": "one_of"
+        },
+        {
+          "expected_values": [],
+          "fact_key": "fact:decision_notice_date",
+          "operator": "date"
+        },
+        {
+          "expected_values": [],
+          "fact_key": "fact:appeal_submission_date",
+          "operator": "date"
+        },
+        {
+          "expected_values": [
+            true
+          ],
+          "fact_key": "fact:appeal_received_by_correct_authority",
+          "operator": "one_of"
+        }
+      ],
+      "exception_questions": [
+        "Confirm the operative notification/service event, exceptional extensions, governing appeal period, holidays and the decision-maker; no legal expiry is computed."
+      ],
+      "label": "Swedish visa refusal: notice and filing-event review",
+      "limitations": [
+        "Predicate sufficiency is not a determination of legal infringement."
+      ],
+      "procedure_types": [
+        "visa_appeal"
+      ],
+      "rule_id": "se:c12:visa-appeal-timing",
+      "source_citations": [
+        {
+          "pinpoint_hint": "Published appeal delivery guidance and three-week ordinary time reference; special-rule assessment required.",
+          "source_id": "se:src:appeal-istanbul"
+        },
+        {
+          "pinpoint_hint": "Applicable appeal, timing and service provisions subject to special law.",
+          "source_id": "se:src:admin-act"
+        }
+      ]
+    },
+    {
+      "attack_angle_id": "se:attack:hearing-and-file",
+      "conditions": [
+        {
+          "expected_values": [
+            "residence_card_retention",
+            "residence_card_decision"
+          ],
+          "fact_key": "element:procedure.stage",
+          "operator": "one_of"
+        },
+        {
+          "expected_values": [
+            true
+          ],
+          "fact_key": "fact:authority_possesses_information",
+          "operator": "one_of"
+        },
+        {
+          "expected_values": [
+            true
+          ],
+          "fact_key": "fact:information_requested_predecision",
+          "operator": "one_of"
+        }
+      ],
+      "exception_questions": [
+        "Apply the national statute and the precise scope of CJEU case law independently."
+      ],
+      "label": "Swedish administrative file communication in retained residence-card decision",
+      "limitations": [
+        "Predicate sufficiency is not a determination of legal infringement."
+      ],
+      "procedure_types": [
+        "residence_card"
+      ],
+      "rule_id": "se:c12:retention-file-access",
+      "source_citations": [
+        {
+          "pinpoint_hint": "Party communication/access rules; check confidentiality and immigration special provisions.",
+          "source_id": "se:src:admin-act"
+        }
+      ]
+    },
+    {
+      "activation": {
+        "expected_values": [
+          true
+        ],
+        "fact_key": "fact:vfs_service_charge_recorded",
+        "operator": "one_of"
+      },
+      "attack_angle_id": null,
+      "conditions": [
+        {
+          "expected_values": [
+            true
+          ],
+          "fact_key": "fact:vfs_service_charge_recorded",
+          "operator": "one_of"
+        },
+        {
+          "expected_values": [
+            false
+          ],
+          "fact_key": "fact:consular_visa_fee_collected",
+          "operator": "one_of"
+        },
+        {
+          "expected_values": [
+            true
+          ],
+          "fact_key": "fact:vfs_route_optional",
+          "operator": "one_of"
+        }
+      ],
+      "exception_questions": [
+        "Test the actual fee payer, purpose, provider choice and whether a no-charge direct route existed."
+      ],
+      "label": "Swedish mission waiver and VFS service-charge distinction",
+      "limitations": [
+        "This synthetic predicate set identifies a review topic; legal entitlement, infringement, authenticity and timing remain undetermined."
+      ],
+      "procedure_types": [
+        "entry_visa"
+      ],
+      "rule_id": "se:c16:istanbul-service-fee",
+      "source_citations": [
+        {
+          "pinpoint_hint": "Sweden Abroad Istanbul fee guidance, EU-family visa fee waiver and separate VFS service charge.",
+          "source_id": "se:src:fees-istanbul"
+        }
+      ]
+    },
+    {
+      "activation": {
+        "expected_values": [
+          true
+        ],
+        "fact_key": "fact:exclusive_checklist_claimed",
+        "operator": "one_of"
+      },
+      "attack_angle_id": null,
+      "conditions": [
+        {
+          "expected_values": [
+            true
+          ],
+          "fact_key": "fact:exclusive_checklist_claimed",
+          "operator": "one_of"
+        },
+        {
+          "expected_values": [
+            true
+          ],
+          "fact_key": "fact:alternate_evidence_offered",
+          "operator": "one_of"
+        },
+        {
+          "expected_values": [
+            true
+          ],
+          "fact_key": "fact:alternate_evidence_excluded",
+          "operator": "one_of"
+        }
+      ],
+      "exception_questions": [
+        "Check actual refusal/rejection reasons and any lawful specific-document requirement; distinguish translation/authentication issues."
+      ],
+      "label": "Swedish Istanbul family-visa documentary checklist treatment",
+      "limitations": [
+        "This synthetic predicate set identifies a review topic; legal entitlement, infringement, authenticity and timing remain undetermined."
+      ],
+      "procedure_types": [
+        "entry_visa"
+      ],
+      "rule_id": "se:c16:document-list-review",
+      "source_citations": [
+        {
+          "pinpoint_hint": "Published EU-family visa evidence guidance; operational, not exhaustive statutory text.",
+          "source_id": "se:src:family-visa-istanbul"
+        },
+        {
+          "pinpoint_hint": "General Swedish administrative duty to investigate; special visa rules may displace.",
+          "source_id": "se:src:admin-act"
+        }
+      ]
+    },
+    {
+      "activation": {
+        "expected_values": [
+          true
+        ],
+        "fact_key": "fact:residence_card_demanded_before_visa",
+        "operator": "one_of"
+      },
+      "attack_angle_id": null,
+      "conditions": [
+        {
+          "expected_values": [
+            true
+          ],
+          "fact_key": "fact:residence_card_demanded_before_visa",
+          "operator": "one_of"
+        },
+        {
+          "expected_values": [
+            true
+          ],
+          "fact_key": "fact:entry_visa_route_requested",
+          "operator": "one_of"
+        }
+      ],
+      "exception_questions": [
+        "Determine whether consular communication describes a prerequisite, exemption evidence or a different procedure."
+      ],
+      "label": "Swedish visa route versus EU-family residence-card requirement",
+      "limitations": [
+        "This synthetic predicate set identifies a review topic; legal entitlement, infringement, authenticity and timing remain undetermined."
+      ],
+      "procedure_types": [
+        "entry_visa"
+      ],
+      "rule_id": "se:c16:visa-card-route",
+      "source_citations": [
+        {
+          "pinpoint_hint": "Utlänningslag visa exemptions and EU-family residence cards; verify operative wording and special rules.",
+          "source_id": "se:src:foreigners-act"
+        },
+        {
+          "pinpoint_hint": "Direct EU-family visa application practice in Istanbul.",
+          "source_id": "se:src:family-visa-istanbul"
+        }
+      ]
+    },
+    {
+      "activation": {
+        "expected_values": [
+          "ombudsman_complaint"
+        ],
+        "fact_key": "element:procedure.stage",
+        "operator": "one_of"
+      },
+      "attack_angle_id": null,
+      "conditions": [
+        {
+          "expected_values": [
+            "ombudsman_complaint"
+          ],
+          "fact_key": "element:procedure.stage",
+          "operator": "one_of"
+        },
+        {
+          "expected_values": [
+            true
+          ],
+          "fact_key": "fact:jo_complaint_route_invoked",
+          "operator": "one_of"
+        },
+        {
+          "expected_values": [
+            true
+          ],
+          "fact_key": "fact:decision_overturn_requested",
+          "operator": "one_of"
+        },
+        {
+          "expected_values": [
+            false
+          ],
+          "fact_key": "fact:appeal_route_explained",
+          "operator": "one_of"
+        }
+      ],
+      "exception_questions": [
+        "Do not assert JO can annul consular decisions; check competent appeal body, appeal clock, public record and data minimisation."
+      ],
+      "label": "JO supervision is distinct from appeal and decision annulment",
+      "limitations": [
+        "This synthetic predicate set identifies a review topic; legal entitlement, infringement, authenticity and timing remain undetermined."
+      ],
+      "procedure_types": [
+        "supervisory_complaint"
+      ],
+      "rule_id": "se:c16:jo-supervision-boundary",
+      "source_citations": [
+        {
+          "pinpoint_hint": "JO may criticise but does not change/annul decisions; complaint public-record and timeliness cautions.",
+          "source_id": "se:src:jo-guidance-en"
+        },
+        {
+          "pinpoint_hint": "Administrative remedies and appeal require the applicable specific legal route.",
+          "source_id": "se:src:admin-act"
+        }
+      ]
+    },
+    {
+      "activation": {
+        "expected_values": [
+          true
+        ],
+        "fact_key": "fact:paper_original_only_requested",
+        "operator": "one_of"
+      },
+      "attack_angle_id": null,
+      "conditions": [
+        {
+          "expected_values": [
+            true
+          ],
+          "fact_key": "fact:paper_original_only_requested",
+          "operator": "one_of"
+        },
+        {
+          "expected_values": [
+            true
+          ],
+          "fact_key": "fact:electronic_register_extract_offered",
+          "operator": "one_of"
+        },
+        {
+          "expected_values": [
+            true
+          ],
+          "fact_key": "fact:format_rejection_claimed",
+          "operator": "one_of"
+        }
+      ],
+      "exception_questions": [
+        "Obtain a specific reason for requiring a paper original; Turkish domestic validity is a different legal question."
+      ],
+      "label": "Swedish handling of electronically issued foreign civil records",
+      "limitations": [
+        "This synthetic predicate set identifies a review topic; legal entitlement, infringement, authenticity and timing remain undetermined."
+      ],
+      "procedure_types": [
+        "entry_visa"
+      ],
+      "rule_id": "se:c16:electronic-format-review",
+      "source_citations": [
+        {
+          "pinpoint_hint": "Mission-published identity and relationship evidence categories; not acceptance of any foreign electronic record.",
+          "source_id": "se:src:family-visa-istanbul"
+        },
+        {
+          "pinpoint_hint": "Assess investigation, proportionality and applicable immigration exceptions.",
+          "source_id": "se:src:admin-act"
+        }
+      ]
+    }
+  ],
+  "scope": "synthetic_c12_pilot_only"
+}

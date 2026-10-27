@@ -20,7 +20,7 @@ import verify_bundled_source_pack as source_pack_gate
 from contract_validate import ContractError, digest_obj, load_json, validate_obj
 from module_conformance import ConformanceError, validate_paths
 from research_gate import ResearchGateError, validate_research
-from source_library_paths import source_library_root
+from source_library_paths import operational_module_roots, source_library_root
 import topology_engine
 
 
@@ -148,9 +148,7 @@ def _registered_source_record(source_id: str, evidence_source: dict) -> dict:
         hashes = {item["sha256"] for item in entry["representations"]}
     elif owner["family"] in {"member_state", "applicant_country"}:
         entry = None
-        module_skills_root = source_pack_gate.ROOT.parent
-        for module_name in ("eudirective-ms-sweden", "eudirective-ac-turkiye"):
-            module_root = module_skills_root / module_name
+        for module_root in operational_module_roots():
             manifest_path = module_root / "references/module-manifest.json"
             export_path = module_root / "references/module-export.json"
             manifest = load_json(manifest_path)

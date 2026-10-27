@@ -6,7 +6,7 @@ description: "Use for read-only, source-grounded EU free-movement and EU-family-
 # eudirective-core
 
 - Current version: `0.59.1`
-- Plugin version: `0.60.4`
+- Plugin version: `0.60.5`
 - Last updated: `2026-10-25`
 
 This skill provides read-only, source-grounded guidance and maintains a separate synthetic-engine lane. Real applicant facts may be discussed in chat; they must never be sent to synthetic-only scripts or copied into distributable assets.
