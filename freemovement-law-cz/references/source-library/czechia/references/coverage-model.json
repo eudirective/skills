@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "jurisdiction": "CZ",
-  "as_of": "2026-10-21",
+  "as_of": "2026-10-28",
   "policy": "Coverage is issue-led and separate from source-link acceptance. A topic is not adequate merely because a source is accepted. Each layer must have accepted source IDs and evidence before it can be marked covered; all gaps remain explicit.",
   "required_layers": [
     "primary_law",
@@ -37,9 +37,10 @@
           "status": "partial",
           "accepted_source_ids": [
             "cz-ipc-eu-family-index-cs",
-            "cz-ipc-eu-category-definitions"
+            "cz-ipc-eu-category-definitions",
+            "cz-mzv-eu-family-visa"
           ],
-          "open_gap": "The layer has official link evidence but is not comprehensively mapped; No complete issue-led review of all family categories or UK Withdrawal Agreement cases."
+          "open_gap": "The layer has official link evidence but is not comprehensively mapped; No complete issue-led review of all family categories or UK Withdrawal Agreement cases. Central guidance and an accepted MOI category page do not complete the provision-level EU/national family-category crosswalk."
         },
         {
           "layer": "remedies_and_oversight",
@@ -48,7 +49,7 @@
           "open_gap": "No complete issue-led review of all family categories or UK Withdrawal Agreement cases."
         }
       ],
-      "open_gap": "No complete issue-led review of all family categories or UK Withdrawal Agreement cases."
+      "open_gap": "No complete issue-led review of all family categories or UK Withdrawal Agreement cases. Targeted review on 2026-10-28 checked the accepted central MFA guidance and MOI category guidance; provision-level comparison of every Czech category with Directive Articles 2(2), 3(2), derived-rights cases and UK Withdrawal Agreement beneficiaries remains incomplete."
     },
     {
       "topic_id": "SHORT_STAY_VISA",
@@ -74,21 +75,23 @@
           "status": "partial",
           "accepted_source_ids": [
             "cz-mzv-eu-family-visa-cs",
-            "cz-mzv-visa-refusal-cs"
+            "cz-mzv-visa-refusal-cs",
+            "cz-mzv-eu-family-visa"
           ],
-          "open_gap": "The layer has official link evidence but is not comprehensively mapped; The special-family reconsideration route has not been cross-walked to general MFA refusal guidance; Decree 429/2010 scope is pending."
+          "open_gap": "The layer has official link evidence but is not comprehensively mapped; The special-family reconsideration route has not been cross-walked to general MFA refusal guidance; Decree 429/2010 scope is pending. The 14/45-day period is verified as published guidance, not as a fully established statutory deadline or justified extension in every category."
         },
         {
           "layer": "remedies_and_oversight",
           "status": "partial",
           "accepted_source_ids": [
             "cz-mzv-visa-refusal-cs",
-            "cz-nss-10-azs-93-2026-44"
+            "cz-nss-10-azs-93-2026-44",
+            "cz-mzv-eu-family-visa"
           ],
           "open_gap": "The layer has official link evidence but is not comprehensively mapped; The special-family reconsideration route has not been cross-walked to general MFA refusal guidance; Decree 429/2010 scope is pending."
         }
       ],
-      "open_gap": "The special-family reconsideration route has not been cross-walked to general MFA refusal guidance; Decree 429/2010 scope is pending."
+      "open_gap": "The special-family reconsideration route has not been cross-walked to general MFA refusal guidance; Decree 429/2010 scope is pending. The accepted English central MFA page was rechecked on 2026-10-28 and publishes 14 days with a possible 45-day extension. The statutory basis, applicable categories, extension grounds and complete special-family refusal/reconsideration crosswalk remain unresolved; Decree 429/2010 scope remains pending."
     },
     {
       "topic_id": "EU_CITIZEN_REGISTRATION",
@@ -341,9 +344,10 @@
           "layer": "procedure_and_practice",
           "status": "partial",
           "accepted_source_ids": [
-            "cz-mzv-visa-refusal-cs"
+            "cz-mzv-visa-refusal-cs",
+            "cz-mzv-eu-family-visa"
           ],
-          "open_gap": "The layer has official link evidence but is not comprehensively mapped; No exhaustive remedy/deadline crosswalk or repeatable court-search batch is recorded."
+          "open_gap": "The layer has official link evidence but is not comprehensively mapped; No exhaustive remedy/deadline crosswalk or repeatable court-search batch is recorded. The central MFA summary does not resolve the exact statutory reconsideration route or the remedy for pre-lodging obstruction."
         },
         {
           "layer": "remedies_and_oversight",
@@ -357,7 +361,7 @@
           "open_gap": "The layer has official link evidence but is not comprehensively mapped; No exhaustive remedy/deadline crosswalk or repeatable court-search batch is recorded."
         }
       ],
-      "open_gap": "No exhaustive remedy/deadline crosswalk or repeatable court-search batch is recorded."
+      "open_gap": "No exhaustive remedy/deadline crosswalk or repeatable court-search batch is recorded. The central MFA page was checked for its refusal/reconsideration summary, but the exact statutory §20/§180e route, judicial-review venue and deadline crosswalk, and remedies for obstruction before lodging remain incomplete."
     },
     {
       "topic_id": "FORMS_FEES_SUBMISSION",
@@ -421,9 +425,10 @@
             "cz-mzv-missions-directory",
             "cz-mzv-eu-family-visa-cs",
             "cz-mzv-mission-ankara-visas",
-            "cz-mzv-mission-los-angeles-requirements"
+            "cz-mzv-mission-los-angeles-requirements",
+            "cz-mzv-eu-family-visa"
           ],
-          "open_gap": "The layer has official link evidence but is not comprehensively mapped; Only two mission examples exist; no repeatable all-mission routing search or current local-practice matrix is recorded."
+          "open_gap": "The layer has official link evidence but is not comprehensively mapped; Only two mission examples exist; no repeatable all-mission routing search or current local-practice matrix is recorded. Central guidance and a parent directory do not establish an effective direct route or current arrangements at every mission."
         },
         {
           "layer": "remedies_and_oversight",
@@ -432,7 +437,7 @@
           "open_gap": "Only two mission examples exist; no repeatable all-mission routing search or current local-practice matrix is recorded."
         }
       ],
-      "open_gap": "Only two mission examples exist; no repeatable all-mission routing search or current local-practice matrix is recorded."
+      "open_gap": "Only two mission examples exist; no repeatable all-mission routing search or current local-practice matrix is recorded. The accepted central MFA page directs applicants to missions, but no all-mission competence, appointment, direct-access, provider-fee or current local-practice matrix has been established; only two mission examples are recorded."
     },
     {
       "topic_id": "CIVIL_STATUS_AND_FAMILY_EVIDENCE",
@@ -458,8 +463,10 @@
         {
           "layer": "procedure_and_practice",
           "status": "unresolved",
-          "accepted_source_ids": [],
-          "open_gap": "Specific EU-family evidence rules, translations, legalization and authority practice require issue-led review."
+          "accepted_source_ids": [
+            "cz-mzv-eu-family-visa"
+          ],
+          "open_gap": "Specific EU-family evidence rules, translations, legalization and authority practice require issue-led review. The central MFA page is one accepted guidance source; all-mission proof practice and translation/authenticity rules remain unmapped."
         },
         {
           "layer": "remedies_and_oversight",
@@ -468,7 +475,7 @@
           "open_gap": "Specific EU-family evidence rules, translations, legalization and authority practice require issue-led review."
         }
       ],
-      "open_gap": "Specific EU-family evidence rules, translations, legalization and authority practice require issue-led review."
+      "open_gap": "Specific EU-family evidence rules, translations, legalization and authority practice require issue-led review. The central MFA page identifies relationship evidence and allows other evidence in its stated route. Alternative proof, translation, legalisation, authenticity concerns and mission-specific demands have not been mapped across relevant categories and missions."
     },
     {
       "topic_id": "DATA_PROTECTION",

@@ -1202,6 +1202,157 @@
       "when_any_signal": [
         "withdrawal_or_transfer_event"
       ]
+    },
+    {
+      "route_id": "eu_family_visa_general_procedure",
+      "when_any_signal": [
+        "eu_family_visa_procedure_enquiry"
+      ],
+      "triggering_conditions": [
+        "The user asks how an EU-family entry or short-stay visa procedure works in a Member State, including required documents, access, fees, processing time or the competent authority.",
+        "The question may be prospective; no application, delay, refusal, fee charge, appointment obstruction or other adverse event is required."
+      ],
+      "neutral_description": "Review the applicable EU-family category and the national visa procedure together, proactively comparing material published requirements with the relevant EU safeguards.",
+      "mandatory_checks": [
+        "case_intake.application_type",
+        "case_intake.actor_roles",
+        "case_intake.relationship_basis",
+        "case_intake.geographic_roles",
+        "lifecycle.enquiry_state",
+        "lifecycle.appointment_request",
+        "lifecycle.lodgement_attempted",
+        "lifecycle.lodgement_confirmed",
+        "lifecycle.receipt_evidence",
+        "eu_scope.directive_scope",
+        "eu_scope.movement_exercised",
+        "eu_scope.accompany_or_join",
+        "eu_scope.family_recognition",
+        "eu_scope.domestic_extension",
+        "eu_scope.residence_card_entry_exemption",
+        "eu_scope.visa_code_lex_specialis",
+        "eu_scope.schengen_borders",
+        "country.multiple_jurisdictions",
+        "authority.competence",
+        "access.direct_access",
+        "access.appointment_wait",
+        "access.fee_waiver",
+        "access.outsourcing_fees",
+        "access.service_provider_accountability",
+        "documents.requested_item",
+        "documents.requested_legal_basis",
+        "documents.ordinary_checklist_scope",
+        "documents.mandatory_vs_optional",
+        "documents.alternative_proof",
+        "documents.translations",
+        "proof.proof_freedom",
+        "timing.applicable_rule",
+        "timing.accelerated_processing",
+        "timing.pre_lodgement_delay",
+        "timing.exceptions_and_extension",
+        "timing.clock_start",
+        "timing.lodgement_trigger"
+      ],
+      "conditional_checks": [
+        {
+          "when_any_signal": [
+            "formal_refusal_issued",
+            "prior_refusal_or_status_change"
+          ],
+          "check_ids": [
+            "authority.actual_ground",
+            "remedies.competent_authority",
+            "remedies.formal_appeal",
+            "timing.appeal_limit"
+          ],
+          "reason": "A formal or prior refusal activates the separate refusal-ground and remedy review; do not infer a refusal from a general procedure enquiry."
+        },
+        {
+          "when_any_signal": [
+            "returnee_context"
+          ],
+          "check_ids": [
+            "eu_scope.returnee_derived_rights",
+            "country.national_extension"
+          ],
+          "reason": "Returning Union citizens and domestic extensions require distinct analysis."
+        },
+        {
+          "when_any_signal": [
+            "external_service_provider_used"
+          ],
+          "check_ids": [
+            "access.service_provider_accountability",
+            "access.direct_access",
+            "access.outsourcing_fees",
+            "access.fee_waiver"
+          ],
+          "reason": "When a provider is actually part of the described route, distinguish optional provider services from visa fees and test whether direct consular access is genuine and effective."
+        },
+        {
+          "when_any_signal": [
+            "ordinary_document_list_or_eu_family_document_question",
+            "document_demand"
+          ],
+          "check_ids": [
+            "documents.family_status_records",
+            "documents.legalisation_apostille",
+            "documents.provider_document_rules",
+            "proof.proof_freedom"
+          ],
+          "reason": "A specific checklist or proof question requires a closer review of acceptable alternatives, translation, authentication and the legal source of each item."
+        },
+        {
+          "when_any_signal": [
+            "appointment_delay",
+            "pre_lodgement_access_obstruction",
+            "formal_lodgement_confirmed"
+          ],
+          "check_ids": [
+            "lifecycle.appointment_request",
+            "lifecycle.lodgement_attempted",
+            "lifecycle.lodgement_confirmed",
+            "lifecycle.receipt_evidence",
+            "timing.pre_lodgement_delay",
+            "timing.clock_start",
+            "timing.lodgement_trigger",
+            "timing.exceptions_and_extension"
+          ],
+          "reason": "Distinguish enquiry, appointment wait, attempted submission and formal lodging before identifying a processing-clock start or an access barrier."
+        }
+      ],
+      "negative_applicability": [
+        "The neutral signal selects review only; it does not establish Directive applicability, a specific family category, an application event, an authority practice, an adverse fact or an infringement.",
+        "Do not apply Directive 2004/38 merely because the EU citizen is a national of the destination state; assess movement, returning-citizen or other derived-rights rules separately.",
+        "Do not apply ordinary Visa Code requirements to a qualifying EU-family route without first checking the relevant EU-family derogations and category."
+      ],
+      "potential_attack_angle_review": {
+        "required": true,
+        "review_topics": [
+          "EU-family proof and ordinary Schengen checklist",
+          "Appointment access and processing clock"
+        ]
+      },
+      "source_owner_ids": [
+        "eu_common_core",
+        "member_state_law",
+        "applicant_country_operations"
+      ],
+      "source_references": [
+        "eu:32004l0038",
+        "eu:visa-code-handbook-i-2024",
+        "references/c23-applicant-case-guidance.md",
+        "references/consultation-procedural-friction.md",
+        "references/c5a-topology-applicability.md",
+        "references/c5b-hierarchy-principles.md",
+        "references/c5c-evidence-deadlines-authority.md"
+      ],
+      "related_independent_issues": [
+        "eu_citizen_accompanying_or_joining",
+        "ordinary_document_list_or_eu_family_requirements",
+        "external_service_provider_and_fees",
+        "processing_delay_or_clock_trigger",
+        "remedy_or_supervisory_track"
+      ]
     }
   ],
   "routing_review_scope": "Review signal selection, source-owner routing, source-class assumptions and attack-screen false-positive boundaries before comprehensive strict releases.",
@@ -1349,6 +1500,10 @@
     {
       "neutral_description": "Withdrawal, closure or transfer may have ended or changed a proceeding.",
       "signal_id": "withdrawal_or_transfer_event"
+    },
+    {
+      "signal_id": "eu_family_visa_procedure_enquiry",
+      "neutral_description": "A user asks for the general procedure for an entry or short-stay visa as a family member of an EU citizen, without necessarily reporting an adverse event."
     }
   ],
   "source_owners": {

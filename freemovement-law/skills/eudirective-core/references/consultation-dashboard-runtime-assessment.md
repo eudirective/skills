@@ -2,9 +2,11 @@
 
 ## Decision
 
-The requested in-chat display is a visually organized consultation board in the assistant's ordinary Markdown response. It does not require an MCP tool, hosted service, or custom UI. A plugin skill can specify this layout and ask ChatGPT to assemble it from the current conversation and recorded checks. A local Codex shell can also run the existing receipt gate and renderer when the exact plugin bundle and Python are available; this is a manual local path, not automatic ordinary-ChatGPT integration.
+The full in-chat consultation board is an explicit audit and maintenance presentation. Ordinary applicant answers use concise prose and a short coverage note; material source or module changes may be reported briefly. The board remains native Markdown and does not require an MCP tool, hosted service, or custom UI. A skill can request that ChatGPT assemble it from the current conversation and recorded checks, but cannot force presentation or verify that every check ran. A local Codex shell can run the existing receipt gate and renderer when the exact plugin bundle and Python are available; this is a manual local path, not automatic ChatGPT integration.
 
 ## Layout supported by this package
+
+The following layout applies only to an explicitly requested audit, maintenance review, dashboard, or detailed verification report. It is not required after each skill invocation or routine change in consultation variables.
 
 The canonical board uses a clear case title and jurisdiction/proceeding subtitle, an overall status callout, three metrics (**Issues reviewed**, **Supported / conditionally closed**, **Partial / open**), an issue-disposition bar with exact counts and percentages when all dispositions are recorded and there are at most 20 issues, readable issue cards, a separate execution/verification section, then sources, module use, and provenance limits. Direct-supported and conditionally-closed counts are split in the distribution legend even though the top metric combines them. Above 20 issues the renderer gives exact counts and percentages without the bar; if dispositions are incomplete it gives unknown counts and explains why the bar is unavailable. A short three-column Markdown table is the only permitted table; it can fall back to stacked metric lines on narrow clients. Every partial or open issue names the missing information and its effect.
 

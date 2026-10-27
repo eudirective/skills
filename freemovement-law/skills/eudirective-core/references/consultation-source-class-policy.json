@@ -1417,6 +1417,100 @@
           "reason_code": "source_class_owned_by_another_route_owner"
         }
       ]
+    },
+    {
+      "route_id": "eu_family_visa_general_procedure",
+      "owner_id": "eu_common_core",
+      "required_classes": [
+        "eu_binding_law",
+        "official_guidance"
+      ],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "returnee_context",
+            "family_relationship_question"
+          ],
+          "require_classes": [
+            "case_law"
+          ],
+          "reason_code": "derived_right_or_category_requires_judicial_context"
+        }
+      ],
+      "excluded_classes": [
+        {
+          "source_class": "national_binding_law",
+          "reason_code": "national_law_belongs_to_member_state_owner"
+        },
+        {
+          "source_class": "procedural_rule",
+          "reason_code": "national_procedure_belongs_to_member_state_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "eu_family_visa_general_procedure",
+      "owner_id": "member_state_law",
+      "required_classes": [
+        "national_binding_law",
+        "procedural_rule",
+        "official_guidance"
+      ],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "returnee_context"
+          ],
+          "require_classes": [
+            "case_law"
+          ],
+          "reason_code": "national_returnee_or_derived_right_context"
+        }
+      ],
+      "excluded_classes": [
+        {
+          "source_class": "eu_binding_law",
+          "reason_code": "eu_common_law_belongs_to_core_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "eu_family_visa_general_procedure",
+      "owner_id": "applicant_country_operations",
+      "required_classes": [
+        "official_guidance"
+      ],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "eu_family_visa_procedure_enquiry",
+            "external_service_provider_used",
+            "appointment_delay"
+          ],
+          "require_classes": [
+            "procedural_rule"
+          ],
+          "reason_code": "current_mission_access_and_lodgement_arrangement"
+        }
+      ],
+      "excluded_classes": [
+        {
+          "source_class": "eu_binding_law",
+          "reason_code": "eu_common_law_belongs_to_core_owner"
+        },
+        {
+          "source_class": "national_binding_law",
+          "reason_code": "national_law_belongs_to_member_state_owner"
+        },
+        {
+          "source_class": "case_law",
+          "reason_code": "legal_interpretation_belongs_to_legal_source_owner"
+        },
+        {
+          "source_class": "contrary_authority",
+          "reason_code": "legal_interpretation_belongs_to_legal_source_owner"
+        }
+      ]
     }
   ]
 }
