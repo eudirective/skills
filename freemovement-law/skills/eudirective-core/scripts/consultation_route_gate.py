@@ -63,7 +63,8 @@ OPERATION_EVIDENCE_KINDS = {
 CLOSED_C27_STATUSES = {"assessed", "not_applicable"}
 ISSUE_MATRIX_PATH = ROOT / "references" / "consultation-issue-routing.json"
 ISSUE_REGISTRY_PATH = ROOT / "references" / "state-engine" / "check-registry.json"
-ROUTE_GATE_VERSION = "0.6.0"
+ROUTE_GATE_VERSION = "0.7.0"
+TYPED_RECEIPT_SCHEMAS = {"0.6.0", "0.7.0"}
 INFORMATIONAL_ROUTE_SCOPE_STATUSES = {
     "not_selected_outcome_mismatch", "not_selected_no_formal_outcome",
     "not_selected_outcome_unverified", "not_selected_signal_missing",
@@ -74,9 +75,135 @@ class RouteGateError(ValueError):
     pass
 
 
+STRATEGY_TRIGGER_IDS = {
+    "adverse_decision_or_denial",
+    "urgent_deadline_or_clock",
+    "procedural_access_or_lodgement_problem",
+    "source_supported_preventive_opportunity",
+    "user_requested_strategy",
+}
+STRATEGY_TRIGGER_SIGNALS = {
+    "adverse_decision_or_denial": {
+        "formal_refusal_issued", "outcome_article18_not_competent",
+        "outcome_article19_inadmissible", "outcome_article32_substantive_refusal",
+        "prior_refusal_or_status_change",
+    },
+    "urgent_deadline_or_clock": {
+        "appeal_deadline_risk", "processing_delay_or_deadline_question",
+    },
+    "procedural_access_or_lodgement_problem": {
+        "pre_lodgement_access_obstruction", "appointment_delay", "lodgement_disputed",
+        "physical_exclusion_or_staff_treatment", "digital_only_access_requirement",
+        "mandatory_provider_pre_screening",
+    },
+    "user_requested_strategy": {"preventive_strategy_requested"},
+}
+GENERIC_STRATEGY_TEXT = {
+    "unknown", "unclear", "not enough information", "not enough info",
+    "more information is needed", "more research is needed", "cannot determine",
+    "unable to assess", "n/a", "not applicable",
+}
+
+
+def _require_specific_strategy_text(value: str, label: str) -> None:
+    normalized = " ".join(value.casefold().split()).strip(" .;:")
+    if normalized in GENERIC_STRATEGY_TEXT or len(set(re.findall(r"[a-z0-9]+", normalized))) < 5:
+        raise RouteGateError(f"strategy_{label}_too_generic")
+    if any(phrase in normalized for phrase in (
+        "more information is needed", "more research is needed", "not enough information",
+        "not enough info", "cannot determine from the information provided",
+    )):
+        raise RouteGateError(f"strategy_{label}_too_generic")
+
+
+def check_strategy_assessment(route: dict, evidence_index: dict[str, dict], gaps: list[str]) -> str | None:
+    """Check the consultation strategy screen against the shared issue/evidence record."""
+    if route.get("schema_version") != "0.7.0":
+        return None
+    strategy = route.get("strategy_assessment")
+    if not isinstance(strategy, dict):
+        raise RouteGateError("strategy_assessment_missing")
+
+    reviews = strategy["trigger_reviews"]
+    by_id = {item["trigger_id"]: item for item in reviews}
+    if len(by_id) != len(reviews) or set(by_id) != STRATEGY_TRIGGER_IDS:
+        raise RouteGateError("strategy_trigger_review_set_incomplete_or_duplicate")
+    signal_evidence: dict[str, set[str]] = {trigger: set() for trigger in STRATEGY_TRIGGER_IDS}
+    declared_signals: set[str] = set()
+    for issue in route.get("issues", []):
+        issue_signals = set(issue.get("signal_ids", []))
+        declared_signals.update(issue_signals)
+        for trigger_id, signal_ids in STRATEGY_TRIGGER_SIGNALS.items():
+            if signal_ids.intersection(issue_signals):
+                signal_evidence[trigger_id].add(issue["evidence_ref"])
+
+    for trigger_id, review in by_id.items():
+        _require_specific_strategy_text(review["reason"], f"trigger_reason:{trigger_id}")
+        refs = review["evidence_refs"]
+        if any(ref not in evidence_index for ref in refs):
+            raise RouteGateError(f"strategy_trigger_evidence_dangling:{trigger_id}")
+        required_refs = signal_evidence[trigger_id]
+        if required_refs and review["status"] != "triggered":
+            raise RouteGateError(f"strategy_trigger_signal_not_screened_as_triggered:{trigger_id}")
+        if required_refs and not required_refs.issubset(set(refs)):
+            raise RouteGateError(f"strategy_trigger_signal_evidence_missing:{trigger_id}")
+        if review["status"] == "triggered" and not refs:
+            raise RouteGateError(f"strategy_trigger_evidence_missing:{trigger_id}")
+        if trigger_id == "source_supported_preventive_opportunity" and review["status"] == "triggered":
+            if not any(evidence_index[ref].get("kind") == "source_record" for ref in refs):
+                raise RouteGateError("strategy_source_supported_trigger_requires_source_evidence")
+        if trigger_id == "user_requested_strategy" and "preventive_strategy_requested" in declared_signals:
+            if not any(evidence_index[ref].get("kind") == "conversation_record" for ref in refs):
+                raise RouteGateError("strategy_user_request_requires_conversation_evidence")
+
+    mode = strategy["mode"]
+    statuses = {item["status"] for item in reviews}
+    triggered = any(item["status"] == "triggered" for item in reviews)
+    unknown = any(item["status"] == "unknown" for item in reviews)
+    if route["request_kind"] == "source_research":
+        if mode != "not_applicable" or statuses != {"not_applicable"}:
+            raise RouteGateError("strategy_not_applicable_required_for_source_research")
+        _require_specific_strategy_text(strategy["summary"], "summary")
+        _require_specific_strategy_text(strategy["not_applicable_reason"], "not_applicable_reason")
+        return mode
+    if mode == "not_applicable":
+        raise RouteGateError("strategy_not_applicable_for_applicant_guidance")
+
+    action_fields = ("first_step", "purpose", "reassess_when")
+    if triggered:
+        if mode not in {"full", "limited"}:
+            raise RouteGateError("strategy_triggered_without_actionable_mode")
+        for field in action_fields:
+            value = strategy.get(field)
+            if not isinstance(value, str):
+                raise RouteGateError(f"strategy_action_field_missing:{field}")
+            _require_specific_strategy_text(value, field)
+        if len(strategy["alternatives_considered"]) < 2:
+            raise RouteGateError("strategy_action_alternatives_insufficient")
+    if unknown and mode != "limited":
+        raise RouteGateError("strategy_unknown_trigger_requires_limited_mode")
+    if mode == "full" and (not triggered or unknown or "limitation" in strategy):
+        raise RouteGateError("strategy_full_mode_inconsistent_with_trigger_review")
+    if mode == "not_triggered":
+        if triggered or unknown or statuses - {"not_triggered", "not_applicable"}:
+            raise RouteGateError("strategy_not_triggered_mode_inconsistent_with_trigger_review")
+        _require_specific_strategy_text(strategy["no_trigger_reason"], "no_trigger_reason")
+    if mode == "limited":
+        if not (triggered or unknown):
+            raise RouteGateError("strategy_limited_mode_without_open_trigger")
+        limitation = strategy["limitation"]
+        for field in ("missing", "effect"):
+            _require_specific_strategy_text(limitation[field], f"limitation_{field}")
+        if any(ref not in evidence_index for ref in limitation["evidence_refs"]):
+            raise RouteGateError("strategy_limitation_evidence_dangling")
+        gaps.append(f"strategy_assessment:limited:{limitation['reason_code']}")
+    _require_specific_strategy_text(strategy["summary"], "summary")
+    return mode
+
+
 def required_operations_for(route: dict) -> tuple[str, ...]:
     required = list(REQUIRED_OPERATIONS[route["request_kind"]])
-    if route.get("schema_version") in {"0.4.0", "0.5.0", "0.6.0"} and route["request_kind"] in {
+    if route.get("schema_version") in {"0.4.0", "0.5.0", "0.6.0", "0.7.0"} and route["request_kind"] in {
         "applicant_guidance", "source_research",
     }:
         for operation_id in ("research_gate", "source_preflight", "attack_angle_screen"):
@@ -107,7 +234,7 @@ def safe_relative_file(base: Path, value: str, label: str) -> Path:
 
 
 def strict_receipt(route: dict) -> bool:
-    return route.get("schema_version") in {"0.5.0", "0.6.0"}
+    return route.get("schema_version") in {"0.5.0", "0.6.0", "0.7.0"}
 
 
 def check_c27_records(route: dict, registry: dict, gaps: list[str]) -> int:
@@ -119,7 +246,7 @@ def check_c27_records(route: dict, registry: dict, gaps: list[str]) -> int:
     typed_scopes = {
         item["scope_ref"]: item
         for item in route.get("proceedings", [])
-    } if route.get("schema_version") == "0.6.0" else {}
+    } if route.get("schema_version") in TYPED_RECEIPT_SCHEMAS else {}
     check_specs = {item["check_id"]: item for item in registry["checks"]}
     procedure_scopes = {
         item["scope_id"]: set(item["procedure_types"])
@@ -133,9 +260,9 @@ def check_c27_records(route: dict, registry: dict, gaps: list[str]) -> int:
         validate_route_check_record(record, registry)
         check_id = record["check_id"]
         check_scope_id = check_specs[check_id].get("procedure_scope_id")
-        if check_scope_id and route.get("schema_version") != "0.6.0":
+        if check_scope_id and route.get("schema_version") not in TYPED_RECEIPT_SCHEMAS:
             raise RouteGateError("c27_procedure_scope_requires_receipt_0_6")
-        if route.get("schema_version") == "0.6.0":
+        if route.get("schema_version") in TYPED_RECEIPT_SCHEMAS:
             scope_ref = item["scope_ref"]
             context = typed_scopes.get(scope_ref)
             if context is None:
@@ -579,13 +706,13 @@ def validate_abstract_revision(route: dict, gaps: list[str]) -> set[str]:
     declared = {}
     typed_scopes = {
         item["scope_ref"]: item for item in route.get("proceedings", [])
-    } if route.get("schema_version") == "0.6.0" else {}
+    } if route.get("schema_version") in TYPED_RECEIPT_SCHEMAS else {}
     for issue in route["issues"]:
         item = {
             "scope_ref": issue["scope_ref"],
             "signal_ids": sorted(issue["signal_ids"]),
         }
-        if route.get("schema_version") == "0.6.0":
+        if route.get("schema_version") in TYPED_RECEIPT_SCHEMAS:
             context = typed_scopes.get(issue["scope_ref"])
             if context is None:
                 raise RouteGateError("abstract_state_issue_scope_undeclared")
@@ -735,8 +862,8 @@ def check_declared_issues(route: dict, evidence_index: dict[str, dict],
     }
 
     version = route.get("schema_version")
-    strict = version in {"0.4.0", "0.5.0", "0.6.0"}
-    v05 = version in {"0.5.0", "0.6.0"}
+    strict = version in {"0.4.0", "0.5.0", "0.6.0", "0.7.0"}
+    v05 = version in {"0.5.0", "0.6.0", "0.7.0"}
     if (version == "0.4.0" and route.get("revision_control") is not None
             and route.get("invocation", {}).get("material_change") is not True):
         raise RouteGateError("revision_control_without_material_change")
@@ -759,7 +886,7 @@ def check_declared_issues(route: dict, evidence_index: dict[str, dict],
         actual_by_scope.setdefault(item["scope_ref"], set()).add(item["record"]["check_id"])
     issue_by_ref = {item["issue_ref"]: item for item in issues}
     typed_scopes: dict[str, dict] = {}
-    if version == "0.6.0":
+    if version in TYPED_RECEIPT_SCHEMAS:
         for proceeding in route["proceedings"]:
             scope_ref = proceeding["scope_ref"]
             if scope_ref in typed_scopes:
@@ -815,7 +942,7 @@ def check_declared_issues(route: dict, evidence_index: dict[str, dict],
         "outcome_article32_substantive_refusal", "mandatory_provider_pre_screening",
         "lodgement_disputed", "post_issuance_event", "withdrawal_or_transfer_event",
     }
-    if version != "0.6.0" and any(
+    if version not in TYPED_RECEIPT_SCHEMAS and any(
         scoped_signals.intersection(item.get("signal_ids", [])) for item in issues
     ):
         raise RouteGateError("outcome_routing_requires_receipt_0_6")
@@ -1008,7 +1135,7 @@ def check_declared_issues(route: dict, evidence_index: dict[str, dict],
             "attack_angle_topic_count": len(requirements["attack_angle_topics"]),
             "attack_angle_topics": requirements["attack_angle_topics"],
         }
-        if version == "0.6.0":
+        if version in TYPED_RECEIPT_SCHEMAS:
             issue_report["procedure_type"] = procedure_type
             raw_outcome = issue.get("administrative_outcome") or {}
             issue_report["administrative_outcome_classification"] = raw_outcome.get("classification")
@@ -1396,6 +1523,7 @@ def validate_route(path: Path) -> dict:
     check_operation_evidence(route, evidence_index, gaps)
     issue_routing_reports = check_declared_issues(
         route, evidence_index, source_preflight_reports, gaps)
+    strategy_mode = check_strategy_assessment(route, evidence_index, gaps)
 
     try:
         dashboard_report = validate_dashboard_receipt(
@@ -1452,6 +1580,7 @@ def validate_route(path: Path) -> dict:
         "research_reports": research_reports,
         "source_preflight_reports": source_preflight_reports,
         "issue_routing_reports": issue_routing_reports,
+        "strategy_mode": strategy_mode,
         "dashboard_required": dashboard_report["required"],
         "dashboard_preview": dashboard_preview,
         "source_metrics": dashboard_report["source_metrics"],

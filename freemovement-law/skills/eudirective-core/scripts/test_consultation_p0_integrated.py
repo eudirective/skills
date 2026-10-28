@@ -668,7 +668,7 @@ class IntegratedControlledReleaseTests(unittest.TestCase):
         blocked = self.run_release()
         self.assertEqual(blocked.returncode, 2)
         self.assertEqual(blocked.stdout, b"")
-        self.assertIn(b"controlled_release_requires_receipt_0_5_or_0_6", blocked.stderr)
+        self.assertIn(b"controlled_release_requires_receipt_0_5_or_later", blocked.stderr)
 
     def assert_no_fixture_or_path_leak(self, result, *markers: bytes):
         combined = result.stdout + result.stderr

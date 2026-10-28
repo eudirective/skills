@@ -69,8 +69,7 @@ widget, and it does not require an MCP tool or hosted service. Source and module
 use remain model-reported, and the skill cannot force the board to appear or
 block an answer from release. See
 `skills/eudirective-core/references/consultation-dashboard-examples.md` for the
-display format and `skills/eudirective-core/references/consultation-dashboard-live-test-plan.md`
-for a deferred manual review plan.
+display format. Live behavioral review remains unexecuted; its synthetic scenarios and grading plan are kept privately in fm-maintenance.
 
 ## Personal installation
 

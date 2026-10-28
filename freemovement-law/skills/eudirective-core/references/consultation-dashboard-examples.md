@@ -1,16 +1,36 @@
 # Consultation dashboard
 
-Use this full diagnostic board only when the user explicitly requests an audit, maintenance review, dashboard, or detailed verification report. Ordinary consultations use a concise answer and coverage note; a material source or module change may warrant a short plain-language status, not this full board. The examples do not change the underlying C27, source, or execution review duties.
+Append a fresh board like this to every substantive legal consultation. Use Full mode only when all declared required work is recorded without gaps and declared coverage is comprehensive. Otherwise use Limited mode and name each missing item and its effect. The examples do not change the underlying C27, source, or execution review duties.
 
-Use this as the visual pattern for a full consultation board. It is ordinary Markdown: status icons and structure help scanning, but do not imply custom colors, CSS, interactivity, or host verification. Keep the answer itself first. Avoid wide tables and code-like dumps; the small three-column metric row below is the only table in the board.
+Use this as the visual pattern for a consultation board. It is ordinary Markdown: status icons and structure help scanning, but do not imply custom colors, CSS, interactivity, or host verification. Keep the answer itself first. Avoid wide tables and code-like dumps; the small three-column metric row below is the only table in the board.
 
-## Full consultation review
+## Limited consultation review
 
 # EU-family visa and residence review
 
 *Application in Türkiye · intended residence in Spain · EU citizen moving with a spouse*
 
 > 🟠 **PARTIAL REVIEW** — The EU route and residence-card entry rule were assessed. Formal visa lodging, authority classification, and the processing-clock start remain unresolved.
+
+### Output coverage: 🟠 Limited board
+
+One or more recorded checks remain open. This describes the recorded review, not a percentage of legal completeness.
+
+### Strategy review
+
+**Limited strategy review.** Appointment delay creates a preventive opportunity, while formal lodging and the clock start remain unconfirmed.
+
+- **Not triggered — Adverse decision or denial:** No written refusal or other formal adverse decision is recorded.
+- **Unknown — Urgent deadline or processing clock:** The formal lodging date has not been established.
+- **Triggered — Access or lodging problem:** The reported appointment delay may affect access to the application process.
+- **Triggered — Source-supported preventive step:** The accelerated-processing safeguard is relevant to the stated EU-family visa route.
+- **Not triggered — User requested strategy:** The request asks for the route and next steps, not a separate strategy review.
+
+**First step:** Preserve the appointment, submission, and authority-response records and ask for written confirmation of the lodging date and applicable processing route.
+**Purpose:** Establish the procedural position and the point from which any processing period runs.
+**Reassess if:** The authority confirms a different classification, refuses access, issues a decision, or leaves a properly lodged application without an adequate response.
+**Alternatives considered:** cooperation; targeted clarification; waiting or taking no extra action.
+**Missing:** The formal receipt and written classification have not been inspected. **Effect:** The clock start and any escalation route remain qualified.
 
 ### At a glance
 

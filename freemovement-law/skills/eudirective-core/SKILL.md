@@ -5,9 +5,9 @@ description: "Use for read-only, source-grounded EU free-movement and EU-family-
 
 # eudirective-core
 
-- Current version: `0.59.4`
-- Plugin version: `0.60.18`
-- Last updated: `2026-10-25`
+- Current version: `0.60.0`
+- Plugin version: `0.61.1`
+- Last updated: `2026-10-28`
 
 This skill provides read-only, source-grounded guidance and maintains a separate synthetic-engine lane. Real applicant facts may be discussed in chat; they must never be sent to synthetic-only scripts or copied into distributable assets.
 
@@ -23,7 +23,7 @@ For personal, ordinary personal, or unspecified use, do not mention licensing or
 
 On the first freemovement-law invocation in each conversation, read eudirective-core/references/session-version-check.md and perform the core package's read-only version comparison before substantive work. For each materially relevant national plugin shown as available by a sufficiently complete host catalog, also compare that package's manifest using its own `scripts/session_version_check.mjs` against the same published component index. A registry entry or a partial catalog does not prove installation. If the host cannot expose the package manifest or execute its checker, report the state as discovery_unknown or the currentness check as unavailable; continue with EU sources and official-source research. On a verified mismatch, report affected components and exact values and tell the user to check for an update through the same plugin source or manager used to install it; do not guess installation steps. If a check fails, say update availability could not be confirmed. Do not claim a successful match without evidence, repeat a package check in the same conversation, or imply that it updates or installs a plugin. These checks concern package versions and source-data fingerprints, not legal-source validity.
 
-For each visible answer or report produced with this skill, identify near the top: **Skill: eudirective-core v0.59.4**. On the first response, put it after the required disclaimer and any applicable license note.
+For each visible answer or report produced with this skill, identify near the top: **Skill: eudirective-core v0.60.0**. On the first response, put it after the required disclaimer and any applicable license note.
 
 ## Ordinary applicant consultations
 
@@ -57,13 +57,15 @@ The C23/C24/C25 questions and constraints apply to model-led guidance. Their Pyt
 
 ## Applicant-facing output and diagnostic dashboard
 
-In an ordinary consultation, answer the request directly and concisely. Include applicable EU safeguards and any material, source-supported procedural-friction warning near the relevant step. End with a short coverage note when an unresolved fact, source, country module, or currentness check materially limits the answer; name what is missing and its effect. Do not routinely display C27 identifiers, validator names, manifests, operation ledgers, provenance counts, or the full dashboard.
+In every substantive legal consultation, answer the request directly and concisely, then show a fresh native-Markdown consultation board in the same response. Use receipt contract 0.7.0. Show a **Full** board only when the recorded required and triggered work has no validation gaps and coverage is declared comprehensive. Otherwise show a **Limited** board and identify each missing fact, source, module check, operation, or review and its effect. “Full” describes the recorded board and declared checks; it does not establish legal completeness, accuracy, or that no issue was omitted. Greetings, unrelated development tasks, and direct plugin mentions without a case assessment do not need a case board.
 
-For a material visa-processing question, distinguish Directive 2004/38 Article 5(2)'s accelerated "as soon as possible" duty from ordinary Visa Code Article 23(2)'s 45-day extension. Check whether Article 5(2) applies and the national legal basis; the matching 45-day figure is a reason to ask, not proof of misclassification. Do not treat an outer period as a default wait where a lawful decision is ready sooner; a one-day example is not a statutory one-day deadline. When a preventive step would help, include a short **"How to avoid this problem"** action with the risk, why it matters, the first step and purpose, and the event that warrants reassessment. Use `references/consultation-preventive-strategy.md` for proportionate conditional sequencing and verified escalation limits.
+For every substantive consultation, screen for an adverse decision or denial, an urgent deadline or processing clock, an access or lodging problem, a source-supported preventive opportunity, and a user request for strategy. Record each as triggered, not triggered, unknown, or not applicable, with a reason and evidence reference where available. If any trigger is present, give a case-specific first step, its purpose, a reassessment event, and proportionate alternatives; do not omit useful prevention until an adverse event occurs. If no trigger is present, say why no separate preventive step is indicated. If key facts, source text, the authority's position, or an urgent route are unavailable, use limited strategy mode and state exactly what is missing and how it affects the next step. Do not use generic limitations to avoid analysis. For a material visa-processing question, distinguish Directive 2004/38 Article 5(2)'s accelerated "as soon as possible" duty from ordinary Visa Code Article 23(2)'s 45-day extension. A matching 45-day figure is a reason to ask, not proof of misclassification. Do not treat an outer period as a default wait where a lawful decision is ready sooner; a one-day example is not a statutory one-day deadline. Use `references/consultation-preventive-strategy.md` for proportionate conditional sequencing and verified escalation limits.
 
 Maintain the underlying issue, source, check, and execution distinctions required by C23, C27, and the research-control references. When a material jurisdiction, proceeding/stage, source, module, or execution variable changes, briefly say which relevant module or source informed the answer, which relevant module was not used, and the consequence of that gap. A skill being present or read does not prove that source text was consulted. Report an engine or tool as executed only when an observed result exists; distinguish model-led review from actual execution.
 
-Show the full native-Markdown consultation dashboard only when the user explicitly requests an audit, maintenance review, dashboard, or detailed verification report. A mere mention is not a request. For a direct invocation unrelated to legal consultation, do not produce a case dashboard. Use `references/consultation-dashboard-examples.md` and `references/consultation-routing.md` for the full audit layout, exact statuses, provenance, execution records, and missing-item effects. This presentation rule does not remove any review obligation or make a partial assessment comprehensive.
+The board follows the substantive answer and reports its output mode, issue coverage, source matches versus web-search discoveries, operation results, selected case-state checks, and relevant modules used or not used. Every partial, unavailable, or not-run item names what is missing and its effect. Use `references/consultation-dashboard-examples.md` and `references/consultation-routing.md` for the layout and plain-language status rules. Preserve C27 IDs, validator names, manifests, and detailed provenance in the board where the audit layout requires them; do not replace missing work with an unexplained percentage.
+
+For direct invocations unrelated to legal consultation, do not produce a case board. A mere mention is not a case assessment. The route receipt and local checker are model-declared artifacts. No installed plugin hook intercepts ordinary ChatGPT output; do not claim that the contract independently guarantees board display or blocks release.
 
 ## Source selection and currentness
 

@@ -23,7 +23,7 @@ The C17 module-note consumers now follow the public-data `module-notes/{sweden,t
 
 The C6 reviewer fixtures were refreshed against the current deterministic C5D and C5E output, then re-enrolled in the code-pinned C7 trust policy. The C7 maintenance regression now opts into the validator's narrow internal issue-code allowance when reading a generated issue index. No external or personal inputs were added.
 
-The private fm-maintenance regression suite passed all 41 scripts after these changes. This is local deterministic testing, not live ChatGPT behavior testing or independent legal review. The live check remains documented in `references/consultation-dashboard-live-test-plan.md` and was not run.
+The private fm-maintenance regression suite passed all 41 scripts after these changes. This is local deterministic testing, not live ChatGPT behavior testing or independent legal review. The live check remains documented in private fm-maintenance plan and was not run.
 
 Core advances from `0.58.0` to `0.58.1`; plugin advances from `0.59.0` to `0.59.1`. Sweden, Türkiye, and source-library skill versions advance by one patch.
 
@@ -40,7 +40,7 @@ routes are included or unresolved. The local controlled-release command
 accepts receipts 0.5.0 and 0.6.0. This adds no ChatGPT host release hook.
 
 The live behavior check for typed outcome cards is documented in
-`references/consultation-dashboard-live-test-plan.md` and remains deferred.
+private fm-maintenance plan and remains deferred.
 Focused local regressions passed: 120 tests across the C27 case-state,
 outcome-routing, route-gate, dashboard-format, and topic-review scripts.
 PyMuPDF-dependent checks were not run because PyMuPDF is not installed in
@@ -62,7 +62,7 @@ assuming that an external official source came from search. All counts remain
 model-reported; no host-authenticated retrieval or release gate was added.
 
 The live ChatGPT display review is deferred. Use the source-accounting case in
-`references/consultation-dashboard-live-test-plan.md` after the package is
+private fm-maintenance plan after the package is
 installed. Local regression tests and live consultation tests were not run in
 this maintenance session.
 
@@ -83,7 +83,7 @@ release. Core advances from `0.53.3` to `0.54.0`; plugin advances from
 `0.54.3` to `0.55.0`.
 
 Live ChatGPT display review is deferred by design. Follow
-`references/consultation-dashboard-live-test-plan.md` after the package is
+private fm-maintenance plan after the package is
 installed; do not require live consultation tests during maintenance sessions.
 
 ## Plugin v0.54.3 / core v0.53.3 full dashboard and receipt-validation binding
@@ -152,7 +152,7 @@ invoke it automatically and there is no host release gate. Core advances from
 
 Offline validation includes dashboard unit/receipt cases and existing route
 gate tests. The hosted ChatGPT invocation/rendering checks are documented in
-`references/consultation-dashboard-live-test-plan.md` and are not executed in
+private fm-maintenance plan and are not executed in
 the local development session.
 
 ## Plugin v0.53.0 / core v0.52.0 issue-led routing and concise response default

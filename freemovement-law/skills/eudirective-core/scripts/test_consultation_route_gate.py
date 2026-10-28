@@ -404,9 +404,18 @@ class RouteGateTests(unittest.TestCase):
         self.assertEqual(released.stdout, answer.read_bytes())
 
         answer.write_text("Changed synthetic summary\n", encoding="utf-8")
-        rejected = self.run_controlled_release(answer=answer)
-        self.assertEqual(rejected.returncode, 2)
-        self.assertEqual(rejected.stdout, b"")
+        original_answer = answer.read_bytes()
+        repaired = self.run_controlled_release(answer=answer)
+        self.assertEqual(repaired.returncode, 0, repaired.stderr.decode())
+        self.assertTrue(repaired.stdout.startswith(original_answer.rstrip()))
+        self.assertTrue(repaired.stdout.endswith(preview.encode("utf-8")))
+        self.assertEqual(answer.read_bytes(), original_answer)
+
+        answer.write_text("Changed summary\n\n## freemovement-law — Consultation Review\n\nWrong board\n", encoding="utf-8")
+        malformed = self.run_controlled_release(answer=answer)
+        self.assertEqual(malformed.returncode, 2)
+        self.assertIn(b"dashboard_present_but_invalid_cannot_be_repaired", malformed.stderr)
+        self.assertEqual(malformed.stdout, b"")
 
     def test_controlled_release_detects_answer_change_between_validation_passes(self):
         receipt = make_strict_controlled_receipt(coverage="partial")
@@ -439,7 +448,7 @@ class RouteGateTests(unittest.TestCase):
         answer.write_text("Synthetic answer\n", encoding="utf-8")
         rejected = self.run_controlled_release(answer=answer)
         self.assertEqual(rejected.returncode, 2)
-        self.assertIn(b"controlled_release_requires_receipt_0_5_or_0_6", rejected.stderr)
+        self.assertIn(b"controlled_release_requires_receipt_0_5_or_later", rejected.stderr)
         self.assertEqual(rejected.stdout, b"")
 
     def test_priority_pathway_is_bound_to_c27_checks_and_c5d_catalogue(self):

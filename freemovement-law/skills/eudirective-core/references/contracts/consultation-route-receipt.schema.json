@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Consultation route receipt 0.6.0 (legacy 0.1.0-0.5.0 readable)",
+  "title": "Consultation route receipt 0.7.0 (legacy 0.1.0-0.6.0 readable)",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -24,7 +24,8 @@
         "0.3.0",
         "0.4.0",
         "0.5.0",
-        "0.6.0"
+        "0.6.0",
+        "0.7.0"
       ]
     },
     "route_ref": {
@@ -153,6 +154,9 @@
       "items": {
         "$ref": "#/$defs/proceeding_scope"
       }
+    },
+    "strategy_assessment": {
+      "$ref": "#/$defs/strategy_assessment"
     }
   },
   "allOf": [
@@ -624,6 +628,158 @@
               "removed_issue_refs",
               "changed_issue_refs",
               "removed_issue_reviews"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "schema_version": {
+            "const": "0.7.0"
+          },
+          "request_kind": {
+            "enum": [
+              "applicant_guidance",
+              "source_research"
+            ]
+          }
+        },
+        "required": [
+          "schema_version",
+          "request_kind"
+        ]
+      },
+      "then": {
+        "required": [
+          "invocation",
+          "source_ledger",
+          "issues",
+          "dashboard",
+          "revision_control",
+          "proceedings",
+          "strategy_assessment"
+        ],
+        "properties": {
+          "invocation": {
+            "required": [
+              "material_change"
+            ]
+          },
+          "source_ledger": {
+            "properties": {
+              "sources": {
+                "items": {
+                  "required": [
+                    "response_discovery_method",
+                    "conversation_discovery_method"
+                  ]
+                }
+              }
+            }
+          },
+          "c27_checks": {
+            "items": {
+              "required": [
+                "assessment_ref",
+                "binding_kind",
+                "bound_issue_refs"
+              ],
+              "allOf": [
+                {
+                  "if": {
+                    "properties": {
+                      "binding_kind": {
+                        "const": "issue_specific"
+                      }
+                    },
+                    "required": [
+                      "binding_kind"
+                    ]
+                  },
+                  "then": {
+                    "properties": {
+                      "bound_issue_refs": {
+                        "minItems": 1,
+                        "maxItems": 1
+                      }
+                    },
+                    "not": {
+                      "required": [
+                        "shared_basis"
+                      ]
+                    }
+                  }
+                },
+                {
+                  "if": {
+                    "properties": {
+                      "binding_kind": {
+                        "const": "proceeding_shared"
+                      }
+                    },
+                    "required": [
+                      "binding_kind"
+                    ]
+                  },
+                  "then": {
+                    "required": [
+                      "shared_basis"
+                    ],
+                    "properties": {
+                      "bound_issue_refs": {
+                        "minItems": 2
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "issues": {
+            "items": {
+              "required": [
+                "source_obligations",
+                "attack_angle_reviews",
+                "c27_assessment_refs",
+                "conditional_closure",
+                "source_owner_exclusions"
+              ],
+              "properties": {
+                "source_obligations": {
+                  "items": {
+                    "required": [
+                      "policy_excluded_source_classes"
+                    ]
+                  }
+                },
+                "attack_angle_reviews": {
+                  "items": {
+                    "required": [
+                      "screening",
+                      "trigger_any_signal_ids",
+                      "trigger_all_signal_ids"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "revision_control": {
+            "required": [
+              "change_detection_status",
+              "current_abstract_state",
+              "previous_abstract_state",
+              "added_issue_refs",
+              "removed_issue_refs",
+              "changed_issue_refs",
+              "removed_issue_reviews"
+            ]
+          },
+          "dashboard": {
+            "required": [
+              "mode"
             ]
           }
         }
@@ -1296,6 +1452,12 @@
           "items": {
             "$ref": "#/$defs/module_use"
           }
+        },
+        "mode": {
+          "enum": [
+            "full",
+            "limited"
+          ]
         }
       }
     },
@@ -2690,6 +2852,266 @@
         },
         "evidence_ref": {
           "$ref": "#/$defs/opaque_ref"
+        }
+      }
+    },
+    "strategy_assessment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "mode",
+        "summary",
+        "trigger_reviews"
+      ],
+      "properties": {
+        "mode": {
+          "enum": [
+            "full",
+            "limited",
+            "not_triggered",
+            "not_applicable"
+          ]
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 20,
+          "maxLength": 800
+        },
+        "trigger_reviews": {
+          "type": "array",
+          "minItems": 5,
+          "maxItems": 5,
+          "items": {
+            "$ref": "#/$defs/strategy_trigger_review"
+          }
+        },
+        "first_step": {
+          "type": "string",
+          "minLength": 20,
+          "maxLength": 500
+        },
+        "purpose": {
+          "type": "string",
+          "minLength": 20,
+          "maxLength": 400
+        },
+        "reassess_when": {
+          "type": "string",
+          "minLength": 20,
+          "maxLength": 400
+        },
+        "alternatives_considered": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 4,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "cooperation",
+              "targeted_clarification",
+              "wait_or_no_extra_action",
+              "escalation_if_supported"
+            ]
+          }
+        },
+        "no_trigger_reason": {
+          "type": "string",
+          "minLength": 20,
+          "maxLength": 400
+        },
+        "not_applicable_reason": {
+          "type": "string",
+          "minLength": 20,
+          "maxLength": 400
+        },
+        "limitation": {
+          "$ref": "#/$defs/strategy_limitation"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "mode": {
+                "const": "full"
+              }
+            },
+            "required": [
+              "mode"
+            ]
+          },
+          "then": {
+            "required": [
+              "first_step",
+              "purpose",
+              "reassess_when",
+              "alternatives_considered"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "mode": {
+                "const": "limited"
+              }
+            },
+            "required": [
+              "mode"
+            ]
+          },
+          "then": {
+            "required": [
+              "limitation"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "mode": {
+                "const": "not_triggered"
+              }
+            },
+            "required": [
+              "mode"
+            ]
+          },
+          "then": {
+            "required": [
+              "no_trigger_reason"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "mode": {
+                "const": "not_applicable"
+              }
+            },
+            "required": [
+              "mode"
+            ]
+          },
+          "then": {
+            "required": [
+              "not_applicable_reason"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "mode": {
+                "const": "limited"
+              },
+              "trigger_reviews": {
+                "contains": {
+                  "properties": {
+                    "status": {
+                      "const": "triggered"
+                    }
+                  },
+                  "required": [
+                    "status"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "mode",
+              "trigger_reviews"
+            ]
+          },
+          "then": {
+            "required": [
+              "first_step",
+              "purpose",
+              "reassess_when",
+              "alternatives_considered"
+            ]
+          }
+        }
+      ]
+    },
+    "strategy_trigger_review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "trigger_id",
+        "status",
+        "reason",
+        "evidence_refs"
+      ],
+      "properties": {
+        "trigger_id": {
+          "enum": [
+            "adverse_decision_or_denial",
+            "urgent_deadline_or_clock",
+            "procedural_access_or_lodgement_problem",
+            "source_supported_preventive_opportunity",
+            "user_requested_strategy"
+          ]
+        },
+        "status": {
+          "enum": [
+            "triggered",
+            "not_triggered",
+            "unknown",
+            "not_applicable"
+          ]
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 20,
+          "maxLength": 400
+        },
+        "evidence_refs": {
+          "type": "array",
+          "maxItems": 10,
+          "items": {
+            "$ref": "#/$defs/opaque_ref"
+          }
+        }
+      }
+    },
+    "strategy_limitation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "reason_code",
+        "missing",
+        "effect",
+        "evidence_refs"
+      ],
+      "properties": {
+        "reason_code": {
+          "enum": [
+            "critical_fact_unavailable",
+            "source_unavailable",
+            "authority_position_unverified",
+            "urgent_route_unverified",
+            "other_specific"
+          ]
+        },
+        "missing": {
+          "type": "string",
+          "minLength": 25,
+          "maxLength": 400
+        },
+        "effect": {
+          "type": "string",
+          "minLength": 25,
+          "maxLength": 400
+        },
+        "evidence_refs": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 10,
+          "items": {
+            "$ref": "#/$defs/opaque_ref"
+          }
         }
       }
     }

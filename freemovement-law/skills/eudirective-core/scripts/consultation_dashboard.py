@@ -39,7 +39,7 @@ LEGAL_CATEGORIES = {
     "official_guidance", "procedural_rule", "other_legal_text",
 }
 UNRESOLVED_ISSUES = {"answered_conditionally", "source_missing", "fact_missing"}
-ISSUE_ROUTE_SCHEMAS = {"0.5.0", "0.6.0"}
+ISSUE_ROUTE_SCHEMAS = {"0.5.0", "0.6.0", "0.7.0"}
 OPAQUE_REF = re.compile(r"^r_[a-f0-9]{12,32}$")
 SECTION_LABELS = {
     "eu": "EU core", "at": "Austria", "be": "Belgium", "bg": "Bulgaria",
@@ -734,6 +734,12 @@ def _gap_work(gap: str) -> dict | None:
             "missing": "Response-level source tracking is unavailable.",
             "effect": "The dashboard reports an unknown total and cannot confirm complete source accounting.",
         }
+    if gap.startswith("strategy_assessment:limited"):
+        return {
+            "title": "Preventive strategy",
+            "missing": "A required fact, source or route detail is unavailable for a complete strategy assessment.",
+            "effect": "Any proposed step remains qualified; the strategy section below names the specific gap and its effect.",
+        }
     return {
         "title": "Open validation item",
         "missing": f"{_humanize(gap).capitalize()} remains unresolved.",
@@ -752,6 +758,62 @@ def _open_work(route_gaps: list[str]) -> list[dict]:
         if item is not None:
             result.append(item)
     return result
+
+
+def strategy_dashboard_lines(strategy: dict) -> list[str]:
+    """Render the route receipt's shared strategy assessment in plain language."""
+    mode_labels = {
+        "full": "Full strategy review",
+        "limited": "Limited strategy review",
+        "not_triggered": "No separate preventive step indicated",
+        "not_applicable": "Not applicable to this request",
+    }
+    trigger_labels = {
+        "adverse_decision_or_denial": "Adverse decision or denial",
+        "urgent_deadline_or_clock": "Urgent deadline or processing clock",
+        "procedural_access_or_lodgement_problem": "Access or lodging problem",
+        "source_supported_preventive_opportunity": "Source-supported preventive step",
+        "user_requested_strategy": "User requested strategy",
+    }
+    status_labels = {
+        "triggered": "Triggered",
+        "not_triggered": "Not triggered",
+        "unknown": "Unknown",
+        "not_applicable": "Not applicable",
+    }
+    mode = strategy.get("mode", "not recorded")
+    lines = ["### Strategy review", "", f"**{mode_labels.get(mode, _humanize(mode))}.** {strategy.get('summary', 'No summary recorded')}", ""]
+    for item in strategy.get("trigger_reviews", []):
+        label = trigger_labels.get(item.get("trigger_id"), _humanize(item.get("trigger_id", "trigger")))
+        status = status_labels.get(item.get("status"), _humanize(item.get("status", "unknown")))
+        lines.append(f"- **{status} — {label}:** {item.get('reason', 'Reason not recorded')}")
+    if strategy.get("first_step"):
+        lines.extend([
+            "",
+            f"**First step:** {strategy['first_step']}",
+            f"**Purpose:** {strategy['purpose']}",
+            f"**Reassess if:** {strategy['reassess_when']}",
+        ])
+        alternatives = strategy.get("alternatives_considered", [])
+        if alternatives:
+            labels = {
+                "cooperation": "cooperation",
+                "targeted_clarification": "targeted clarification",
+                "wait_or_no_extra_action": "waiting or taking no extra action",
+                "escalation_if_supported": "escalation if its route is supported",
+            }
+            lines.append("**Alternatives considered:** " + "; ".join(labels[item] for item in alternatives) + ".")
+    elif mode == "not_triggered":
+        lines.append(f"**Why no separate step is indicated:** {strategy.get('no_trigger_reason', 'Reason not recorded')}")
+    elif mode == "not_applicable":
+        lines.append(f"**Reason:** {strategy.get('not_applicable_reason', 'Reason not recorded')}")
+    limitation = strategy.get("limitation")
+    if isinstance(limitation, dict):
+        lines.extend([
+            "",
+            f"**Missing:** {limitation.get('missing', 'Not recorded')} **Effect:** {limitation.get('effect', 'Not recorded')}",
+        ])
+    return lines
 
 
 def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
@@ -976,6 +1038,19 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
         f"Declared coverage: **{value_status(route['coverage_claim'])}**."
     )
     lines.append("")
+    if route.get("schema_version") == "0.7.0":
+        mode = dashboard.get("mode")
+        if mode == "full":
+            mode_label = "🟢 Full board"
+            mode_note = "All declared required sections passed structural checks; this does not establish legal completeness."
+        else:
+            mode_label = "🟠 Limited board"
+            mode_note = "One or more declared checks remain limited; the missing item and effect are shown below."
+        lines.extend([f"### Output coverage: {mode_label}", "", mode_note, ""])
+        strategy = route.get("strategy_assessment")
+        if isinstance(strategy, dict):
+            lines.extend(strategy_dashboard_lines(strategy))
+            lines.append("")
     lines.extend([
         "### Issue summary",
         "",
@@ -1249,7 +1324,7 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
                 scoped_evidence("Evidence", [issue["evidence_ref"]]),
             ])
             route_record = issue_routing_by_ref.get(issue["issue_ref"], {})
-            if route.get("schema_version") == "0.6.0":
+            if route.get("schema_version") in {"0.6.0", "0.7.0"}:
                 lines.extend(typed_issue_route_lines(route_record))
             if unresolved_mandatory_screen and primary_assessment:
                 lines.append(
@@ -1597,8 +1672,13 @@ def validate_dashboard_receipt(route: dict, evidence_index: dict[str, dict], rou
     if state == "unknown" and basis != "unavailable":
         raise DashboardError("unknown_invocation_basis_invalid")
     dashboard = route.get("dashboard")
+    substantive_v07 = (
+        route.get("schema_version") == "0.7.0"
+        and route.get("request_kind") in {"applicant_guidance", "source_research"}
+    )
     required = (
-        state == "explicit"
+        substantive_v07
+        or state == "explicit"
         or invocation.get("dashboard_requested") is True
         or invocation.get("material_change") is True
         or dashboard is not None
@@ -1683,6 +1763,10 @@ def validate_dashboard_receipt(route: dict, evidence_index: dict[str, dict], rou
     )
     if dashboard["assessment_status"] != expected_status:
         raise DashboardError("dashboard_assessment_status_mismatch")
+    if substantive_v07:
+        expected_mode = "full" if expected_status == "reviewed" else "limited"
+        if dashboard.get("mode") != expected_mode:
+            raise DashboardError("dashboard_mode_does_not_match_recorded_coverage")
     if dashboard["assessment_status"] == "partial" and not dashboard["issue_summaries"] and not _open_work(route_gaps):
         raise DashboardError("partial_assessment_without_explained_open_work")
     preview = render_dashboard(route, metrics, route_gaps, required_operation_ids)

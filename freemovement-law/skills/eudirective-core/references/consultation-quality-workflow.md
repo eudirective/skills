@@ -36,6 +36,6 @@ Compare the draft against the original questions and issue list. Check for unans
 
 ## G. Deliver the answer and coverage note
 
-Follow `references/consultation-answer-contract.md`: answer the request directly, include any material and source-supported procedural-friction warning near the relevant step, then end with a concise coverage note naming open issues and their effect. When a material jurisdiction, proceeding/stage, source, module, or execution variable changes, briefly report relevant module/source use and material gaps. Do not routinely display technical check IDs, operation ledgers, source accounting tables, or a dashboard. Show the full diagnostic dashboard only when the user explicitly requests an audit, maintenance review, dashboard, or detailed verification report; see `references/consultation-routing.md` for its contents and limits.
+Follow `references/consultation-answer-contract.md`: answer the request directly, include any material and source-supported procedural-friction warning near the relevant step, then append the required Full or Limited board. When a material jurisdiction, proceeding/stage, source, module, or execution variable changes, refresh the board and report relevant module/source use and material gaps. Every limited item names what is missing and its effect. See `references/consultation-routing.md` for contents and limits.
 
 These are stages of one model-led review. Do not describe them as independent reviews or claim that a stage executed a Python engine.
