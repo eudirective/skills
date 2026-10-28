@@ -3,19 +3,25 @@
 from __future__ import annotations
 
 import argparse
+import base64
 import hashlib
 import json
 import os
 import re
 import shutil
+import struct
 import sys
 import subprocess
 import tempfile
+import xml.etree.ElementTree as ET
+import zlib
 from pathlib import Path, PurePosixPath
 from typing import Any
 
 SCHEMA = "1.0.0"
 AUTHOR = {"name": "eudirective", "email": "eudirective@proton.me"}
+FLAG_ICONS_VERSION = "7.6.0"
+COUNTRY_ICON_LAYOUT_VERSION = "4"
 ACCEPTED_COPY_STATUS = re.compile(r"^(accepted($|_)|accepted\b|passed$)", re.I)
 PATH_FIELDS = {"path", "local_path", "local_copy_path", "document_path", "artifact_path", "local_file_path", "local_document_path"}
 HASH_FIELDS = ("sha256", "local_sha256", "local_copy_sha256", "artifact_sha256", "document_sha256", "local_file_sha256", "local_document_sha256", "final_document_sha256")
@@ -36,6 +42,178 @@ def json_bytes(value: Any) -> bytes:
 
 def load_json(path: Path) -> Any:
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def resize_rgba_png(data: bytes, size: int = 128) -> bytes:
+    """Resize the core logo with only Python's standard library."""
+    signature = b"\x89PNG\r\n\x1a\n"
+    if not data.startswith(signature):
+        raise ValueError("The eudirective logo is not a PNG")
+    offset = len(signature)
+    chunks: list[tuple[bytes, bytes]] = []
+    while offset < len(data):
+        length = struct.unpack(">I", data[offset:offset + 4])[0]
+        kind = data[offset + 4:offset + 8]
+        value = data[offset + 8:offset + 8 + length]
+        chunks.append((kind, value))
+        offset += 12 + length
+        if kind == b"IEND":
+            break
+    header = next((value for kind, value in chunks if kind == b"IHDR"), None)
+    if header is None:
+        raise ValueError("The eudirective logo PNG has no IHDR")
+    width, height, bit_depth, color_type, compression, filtering, interlace = struct.unpack(">IIBBBBB", header)
+    if (bit_depth, color_type, compression, filtering, interlace) != (8, 6, 0, 0, 0):
+        raise ValueError("The logo PNG must be non-interlaced 8-bit RGBA")
+    compressed = b"".join(value for kind, value in chunks if kind == b"IDAT")
+    raw = zlib.decompress(compressed)
+    stride = width * 4
+    rows: list[bytearray] = []
+    pos = 0
+    for y in range(height):
+        filter_type = raw[pos]
+        pos += 1
+        row = bytearray(raw[pos:pos + stride])
+        pos += stride
+        previous = rows[y - 1] if y else bytearray(stride)
+        for i in range(stride):
+            left = row[i - 4] if i >= 4 else 0
+            above = previous[i]
+            upper_left = previous[i - 4] if i >= 4 else 0
+            if filter_type == 1:
+                row[i] = (row[i] + left) & 255
+            elif filter_type == 2:
+                row[i] = (row[i] + above) & 255
+            elif filter_type == 3:
+                row[i] = (row[i] + ((left + above) // 2)) & 255
+            elif filter_type == 4:
+                estimate = left + above - upper_left
+                distances = (abs(estimate - left), abs(estimate - above), abs(estimate - upper_left))
+                predictor = left if distances[0] <= distances[1] and distances[0] <= distances[2] else (
+                    above if distances[1] <= distances[2] else upper_left
+                )
+                row[i] = (row[i] + predictor) & 255
+            elif filter_type != 0:
+                raise ValueError(f"Unsupported PNG row filter: {filter_type}")
+        rows.append(row)
+
+    def sample(x: float, y: float) -> tuple[int, int, int, int]:
+        x = max(0.0, min(width - 1.0, x))
+        y = max(0.0, min(height - 1.0, y))
+        x0, y0 = int(x), int(y)
+        x1, y1 = min(width - 1, x0 + 1), min(height - 1, y0 + 1)
+        fx, fy = x - x0, y - y0
+        neighbors = (
+            (rows[y0], x0, (1 - fx) * (1 - fy)),
+            (rows[y0], x1, fx * (1 - fy)),
+            (rows[y1], x0, (1 - fx) * fy),
+            (rows[y1], x1, fx * fy),
+        )
+        alpha = sum(row[xi * 4 + 3] * weight for row, xi, weight in neighbors)
+        if alpha <= 0:
+            return (0, 0, 0, 0)
+        rgb = tuple(
+            round(sum(row[xi * 4 + channel] * row[xi * 4 + 3] * weight for row, xi, weight in neighbors) / alpha)
+            for channel in range(3)
+        )
+        return (*rgb, round(alpha))
+
+    scanlines = bytearray()
+    for y in range(size):
+        scanlines.append(0)
+        source_y = (y + 0.5) * height / size - 0.5
+        for x in range(size):
+            scanlines.extend(sample((x + 0.5) * width / size - 0.5, source_y))
+
+    def chunk(kind: bytes, value: bytes) -> bytes:
+        body = kind + value
+        return struct.pack(">I", len(value)) + body + struct.pack(">I", zlib.crc32(body) & 0xffffffff)
+
+    return (
+        signature
+        + chunk(b"IHDR", struct.pack(">IIBBBBB", size, size, 8, 6, 0, 0, 0))
+        + chunk(b"IDAT", zlib.compress(bytes(scanlines), 9))
+        + chunk(b"IEND", b"")
+    )
+
+
+def country_flag_icon_assets(country: dict[str, Any], plugin_dir: Path, plugin_root: Path) -> dict[str, str]:
+    """Write a self-contained country flag icon with the exact core logo overlaid."""
+    code = country["iso_country_code"].lower()
+    flag_path = Path(__file__).with_name("assets") / f"flag-icons-v{FLAG_ICONS_VERSION}" / "flags" / "4x3" / f"{code}.svg"
+    license_path = flag_path.parents[2] / "LICENSE.txt"
+    logo_path = plugin_root / "assets" / "eudirective-logo.png"
+    for path in (flag_path, license_path, logo_path):
+        if not path.is_file():
+            raise FileNotFoundError(f"Member-state icon input is missing: {path}")
+
+    flag_root = ET.parse(flag_path).getroot()
+    if flag_root.tag.rsplit("}", 1)[-1] != "svg" or flag_root.attrib.get("viewBox") != "0 0 640 480":
+        raise ValueError(f"Unexpected flag SVG root or viewBox for {code.upper()}")
+    allowed_tags = {"svg", "g", "path", "rect", "circle", "ellipse", "polygon", "polyline", "line", "defs", "clipPath", "use"}
+    for element in flag_root.iter():
+        if element.tag.rsplit("}", 1)[-1] not in allowed_tags:
+            raise ValueError(f"Unexpected element in flag SVG {flag_path}: {element.tag}")
+        for attribute, value in element.attrib.items():
+            attribute_name = attribute.rsplit("}", 1)[-1].lower()
+            if attribute_name.startswith("on"):
+                raise ValueError(f"Event handler found in flag SVG {flag_path}")
+            if attribute_name == "href" and not value.startswith("#"):
+                raise ValueError(f"External reference found in flag SVG {flag_path}")
+            if "url(" in value and not re.fullmatch(r"url\(#[A-Za-z0-9_.:-]+\)", value):
+                raise ValueError(f"External URL reference found in flag SVG {flag_path}")
+
+    svg_ns = "http://www.w3.org/2000/svg"
+    ET.register_namespace("", svg_ns)
+    flag_contents = "".join(ET.tostring(child, encoding="unicode") for child in flag_root)
+    logo_thumbnail = resize_rgba_png(logo_path.read_bytes())
+    logo_data = base64.b64encode(logo_thumbnail).decode("ascii")
+    country_name = country["country_name"]
+    icon_svg = (
+        f'<svg xmlns="{svg_ns}" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title">\n'
+        f'  <title id="title">{country_name} flag with eudirective logo</title>\n'
+        '  <rect width="512" height="512" rx="40" fill="#f5f7fb"/>\n'
+        '  <defs><clipPath id="eudirective-member-state-flag"><rect x="16" y="68" width="480" height="360" rx="24"/></clipPath></defs>\n'
+        f'  <svg x="16" y="68" width="480" height="360" viewBox="0 0 640 480" preserveAspectRatio="none" clip-path="url(#eudirective-member-state-flag)">{flag_contents}</svg>\n'
+        '  <rect x="16" y="68" width="480" height="360" rx="24" fill="none" stroke="#d9e0eb" stroke-width="4"/>\n'
+        '  <circle cx="352" cy="352" r="148" fill="#ffffff" stroke="#d9e0eb" stroke-width="2"/>\n'
+        f'  <image x="236" y="236" width="232" height="232" href="data:image/png;base64,{logo_data}" preserveAspectRatio="xMidYMid meet"/>\n'
+        '</svg>\n'
+    )
+    assets = plugin_dir / "assets"
+    assets.mkdir(parents=True, exist_ok=True)
+    (assets / "eudirective-flag-icon.svg").write_text(icon_svg, encoding="utf-8", newline="\n")
+    shutil.copyfile(license_path, assets / "flag-icons-LICENSE.txt")
+    attribution = (
+        "This icon incorporates the " + code.upper() + " flag SVG from lipis/flag-icons v" + FLAG_ICONS_VERSION + ".\n"
+        "Source: https://github.com/lipis/flag-icons/tree/v" + FLAG_ICONS_VERSION + "/flags/4x3\n"
+        "The flag artwork is distributed under the MIT license in flag-icons-LICENSE.txt.\n"
+        "The overlaid eudirective emblem is the core plugin's eudirective-logo.png.\n"
+    )
+    (assets / "flag-icons-ATTRIBUTION.txt").write_text(attribution, encoding="utf-8", newline="\n")
+    return {
+        f"branding/flag-icons-v{FLAG_ICONS_VERSION}/flags/4x3/{code}.svg": sha256(flag_path),
+        f"branding/flag-icons-v{FLAG_ICONS_VERSION}/LICENSE.txt": sha256(license_path),
+        "branding/core-logo": sha256(logo_path),
+        "branding/country-flag-icon-layout": hashlib.sha256(COUNTRY_ICON_LAYOUT_VERSION.encode("ascii")).hexdigest(),
+    }
+
+
+def country_flag_icon_interface(country: dict[str, Any]) -> dict[str, Any]:
+    country_name = country["country_name"]
+    return {
+        "capabilities": [],
+        "category": "Other",
+        "composerIcon": "./assets/eudirective-flag-icon.svg",
+        "developerName": AUTHOR["name"],
+        "displayName": country["plugin_name"],
+        "logo": "./assets/eudirective-flag-icon.svg",
+        "longDescription": (
+            f"{country_name} national source records for use with freemovement-law. "
+            "Official publishers remain the primary source for current-law checks."
+        ),
+        "shortDescription": f"{country_name} national sources",
+    }
 
 
 def safe_source_path(root: Path, raw: str, pack: Path) -> Path:
@@ -1135,6 +1313,7 @@ def module_notes_root(country: str, module_id: str | None = None) -> Path:
         is_malta = code == "MT"
         skill_content = country_skill(country, is_malta)
         skill_file.write_text(skill_content, encoding="utf-8", newline="\n")
+        country_icon_inputs = country_flag_icon_assets(country, plugin_dir, plugin_root)
         country_reference: Path | None = None
         country_reference_sha: str | None = None
         if code == "CZ":
@@ -1174,11 +1353,15 @@ def module_notes_root(country: str, module_id: str | None = None) -> Path:
             "author": AUTHOR,
             "keywords": ["eu-free-movement", "national-source-library", code.lower()],
         }
+        interface = country_flag_icon_interface(country)
+        meta["extensions"] = {"com.openai": {"interface": interface}}
         write_json(plugin_dir / "plugin.json", meta, {})
-        write_json(plugin_dir / ".codex-plugin/plugin.json", {
+        codex_meta = {
             "name": name, "version": "0.1.0", "skills": "./skills", "author": AUTHOR,
             "description": f"{country['country_name']} national source library for FreeMovement consultations.",
-        }, {})
+        }
+        codex_meta["interface"] = interface
+        write_json(plugin_dir / ".codex-plugin/plugin.json", codex_meta, {})
 
         checker_source = plugin_root / "skills/eudirective-core/scripts/session_version_check.mjs"
         if not checker_source.is_file():
@@ -1190,6 +1373,7 @@ def module_notes_root(country: str, module_id: str | None = None) -> Path:
             "distributor/build.py": generator_hash,
             "core-tool/session_version_check.mjs": sha256(checker_source),
         }
+        inputs.update(country_icon_inputs)
         if code == "CZ" and country_reference_sha is not None:
             inputs["country-skill-template/references/eu-family-short-stay-visa.md"] = country_reference_sha
         module_fingerprints: dict[str, str] = {}

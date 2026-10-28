@@ -5,11 +5,25 @@
     "name": "eudirective"
   },
   "description": "Ireland national source library for FreeMovement consultations.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [],
+        "category": "Other",
+        "composerIcon": "./assets/eudirective-flag-icon.svg",
+        "developerName": "eudirective",
+        "displayName": "fm-ireland",
+        "logo": "./assets/eudirective-flag-icon.svg",
+        "longDescription": "Ireland national source records for use with freemovement-law. Official publishers remain the primary source for current-law checks.",
+        "shortDescription": "Ireland national sources"
+      }
+    }
+  },
   "keywords": [
     "eu-free-movement",
     "national-source-library",
     "ie"
   ],
   "name": "fm-ireland",
-  "version": "0.1.6"
+  "version": "0.1.10"
 }

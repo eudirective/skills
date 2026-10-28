@@ -5,11 +5,25 @@
     "name": "eudirective"
   },
   "description": "Denmark national source library for FreeMovement consultations.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [],
+        "category": "Other",
+        "composerIcon": "./assets/eudirective-flag-icon.svg",
+        "developerName": "eudirective",
+        "displayName": "fm-denmark",
+        "logo": "./assets/eudirective-flag-icon.svg",
+        "longDescription": "Denmark national source records for use with freemovement-law. Official publishers remain the primary source for current-law checks.",
+        "shortDescription": "Denmark national sources"
+      }
+    }
+  },
   "keywords": [
     "eu-free-movement",
     "national-source-library",
     "dk"
   ],
   "name": "fm-denmark",
-  "version": "0.1.6"
+  "version": "0.1.10"
 }
