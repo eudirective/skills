@@ -1,6 +1,12 @@
 # C25 - Grievance completeness, authority position and applicant strategy
 
-**Normal-use, read-only guidance.** Use with C23/C24 whenever a real or fictional applicant describes an EU free-movement or family-visa dispute. Preserve their first-hand account as working facts for advice; distinguish that from what a court or authority will accept as proved. Keep all analysis and drafts in the conversation unless the user explicitly authorizes another action. No C6/C7/C17/C21 private-data intake, tracking or sending is enabled.
+**Normal-use, read-only guidance.** Use with C23/C24 for EU free-movement or family-visa matters, including prospective procedure questions where prevention is useful. Preserve a first-hand account as working facts for advice; distinguish that from what a court or authority will accept as proved. Keep all analysis and drafts in the conversation unless the user explicitly authorizes another action. No C6/C7/C17/C21 private-data intake, tracking or sending is enabled.
+
+## Prospective prevention branch
+
+When a source-supported procedural risk is foreseeable, the user asks for preventive planning, or a future decision could materially affect EU rights, read and apply `references/consultation-preventive-strategy.md`. This branch is available before an application, adverse act, delay, demand, grievance, or established infringement. It does not create a fictional authority event, grievance, C5d attack-angle predicate, or C5e promotion prerequisite. Keep the existing event register and remedies below for events that have actually occurred; if none exists, do not manufacture one.
+
+Use C5e/C5f principles only as model-led conversational methodology—generate feasible alternatives, compare them proportionately, include direct cooperation/clarification and waiting/no-action baselines, and sequence any next step conditionally. C25 owns the ordinary applicant-facing strategy. Do not execute their synthetic scripts on applicant facts or report their engines as run.
 
 ## 1. First reconstruct the authority's acts, not a theoretical immigration-law exam
 

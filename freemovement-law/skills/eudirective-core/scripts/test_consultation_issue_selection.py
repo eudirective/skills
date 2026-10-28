@@ -173,6 +173,69 @@ class ConsultationIssueSelectionTests(unittest.TestCase):
         with self.assertRaisesRegex(selector.SelectionError, "signal_unknown"):
             selector.select_check_ids(["unknown_signal"])
 
+    def test_prospective_strategy_route_is_conditional_and_does_not_need_an_adverse_event(self) -> None:
+        for signal in ("eu_family_visa_procedure_enquiry", "preventive_strategy_requested"):
+            with self.subTest(signal=signal):
+                requirements = selector.select_issue_requirements([signal])
+                self.assertIn("eu_family_visa_general_procedure", requirements["route_ids"])
+                self.assertEqual(len(requirements["conditional_workflow_reviews"]), 1)
+                workflow = requirements["conditional_workflow_reviews"][0]
+                self.assertEqual(workflow["workflow_id"], "c25_preventive_strategy")
+                self.assertEqual(workflow["owner"], "c25")
+                self.assertEqual(
+                    workflow["activation_status"],
+                    "awaiting_model_condition_assessment",
+                )
+                self.assertFalse(workflow["adverse_event_required"])
+                result = selector.select_checks(fixture(("p_1", [signal])))
+                issue_route = next(
+                    item for item in result["proceedings"][0]["issue_routes"]
+                    if item["route_id"] == "eu_family_visa_general_procedure"
+                )
+                self.assertEqual(
+                    issue_route["conditional_workflow_reviews"][0]["workflow_id"],
+                    "c25_preventive_strategy",
+                )
+                self.assertNotIn("formal_refusal_issued", result["proceedings"][0]["declared_signal_ids"])
+                self.assertNotIn("pre_lodgement_access_obstruction", result["proceedings"][0]["declared_signal_ids"])
+
+    def test_preventive_workflow_metadata_fails_closed_on_bad_contract(self) -> None:
+        invalid = copy.deepcopy(MATRIX)
+        route = next(
+            item for item in invalid["routes"]
+            if item["route_id"] == "eu_family_visa_general_procedure"
+        )
+        route["conditional_workflows"][0]["adverse_event_required"] = True
+        with self.assertRaisesRegex(selector.SelectionError, "conditional_workflow_adverse_event_required"):
+            selector.validate_configuration(invalid, REGISTRY)
+
+        invalid = copy.deepcopy(MATRIX)
+        route = next(
+            item for item in invalid["routes"]
+            if item["route_id"] == "eu_family_visa_general_procedure"
+        )
+        route["conditional_workflows"][0]["activation_conditions"].append("unknown_trigger")
+        with self.assertRaisesRegex(selector.SelectionError, "conditional_workflow_conditions_invalid"):
+            selector.validate_configuration(invalid, REGISTRY)
+
+    def test_preventive_workflow_cannot_move_to_an_unrelated_route(self) -> None:
+        invalid = copy.deepcopy(MATRIX)
+        general = next(
+            item for item in invalid["routes"]
+            if item["route_id"] == "eu_family_visa_general_procedure"
+        )
+        unrelated = next(
+            item for item in invalid["routes"]
+            if item["route_id"] == "directive_personal_and_territorial_applicability"
+        )
+        unrelated["conditional_workflows"] = [general["conditional_workflows"].pop()]
+        with self.assertRaisesRegex(selector.SelectionError, "conditional_workflow_route_invalid"):
+            selector.validate_configuration(invalid, REGISTRY)
+
+    def test_unrelated_route_does_not_emit_preventive_workflow(self) -> None:
+        requirements = selector.select_issue_requirements(["remedy_or_solvit_or_supervisory_complaint"])
+        self.assertEqual(requirements["conditional_workflow_reviews"], [])
+
     def test_route_id_api_and_full_requirement_api_distinguish_scope_fallbacks(self) -> None:
         signals = ["outcome_article32_substantive_refusal"]
         direct = selector.select_check_ids(signals)
