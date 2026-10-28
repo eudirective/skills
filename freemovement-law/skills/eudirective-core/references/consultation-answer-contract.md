@@ -18,6 +18,8 @@ Do not use a generic `partial` label in place of the issue's disposition. Distin
 
 When a source-supported prospective friction point has a feasible preventive response, include it near the related procedure step. Concisely state the foreseeable risk, why it matters under the applicable EU safeguard, the recommended initial action and its purpose, and what authority response or later event would justify reassessment or escalation. Compare proportionate alternatives, including cooperation, targeted clarification, waiting/no extra action, and escalation only where its route and value are supported. Do not require an adverse event before offering useful prevention, and do not turn a normal procedure answer into a litigation manual.
 
+For a substantive procedure question, make that prevention easy to act on: use a short **“How to avoid this problem”** step when it would materially help, naming the risk, the EU-rights significance, the first step and its purpose, and the trigger for reassessment. For Czech 14/45-day guidance, flag that 45 days resembles ordinary Visa Code Article 23(2) as a legal-basis question, not proof of misclassification. Explain that a decision should be made as soon as lawfully possible; any one-day illustration is not a statutory deadline.
+
 ## Authority position and remedies
 
 Describe an authority's actual position only when the record supports it. Keep oral reports, written decisions, stated reasons, disclosed facts, and independent inference separate. Do not attribute a hypothetical defence to an authority or decision. A missing written decision may limit the verified grounds without preventing analysis of the conduct actually reported.

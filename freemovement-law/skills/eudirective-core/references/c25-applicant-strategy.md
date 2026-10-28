@@ -6,6 +6,8 @@
 
 When a source-supported procedural risk is foreseeable, the user asks for preventive planning, or a future decision could materially affect EU rights, read and apply `references/consultation-preventive-strategy.md`. This branch is available before an application, adverse act, delay, demand, grievance, or established infringement. It does not create a fictional authority event, grievance, C5d attack-angle predicate, or C5e promotion prerequisite. Keep the existing event register and remedies below for events that have actually occurred; if none exists, do not manufacture one.
 
+When a preventive step is useful in an ordinary procedure answer, place a brief **“How to avoid this problem”** action next to the relevant risk. State what could go wrong, why it matters to the EU right, the first proportionate step and its purpose, and what response or event changes the advice. Keep escalation conditional; distinguish informal administrative correction from formal national remedies and EU problem-solving, and verify each route and deadline before naming it.
+
 Use C5e/C5f principles only as model-led conversational methodology—generate feasible alternatives, compare them proportionately, include direct cooperation/clarification and waiting/no-action baselines, and sequence any next step conditionally. C25 owns the ordinary applicant-facing strategy. Do not execute their synthetic scripts on applicant facts or report their engines as run.
 
 ## 1. First reconstruct the authority's acts, not a theoretical immigration-law exam
