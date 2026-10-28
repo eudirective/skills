@@ -5,8 +5,8 @@ description: "Use for read-only, source-grounded EU free-movement and EU-family-
 
 # eudirective-core
 
-- Current version: `0.59.3`
-- Plugin version: `0.60.12`
+- Current version: `0.59.4`
+- Plugin version: `0.60.13`
 - Last updated: `2026-10-25`
 
 This skill provides read-only, source-grounded guidance and maintains a separate synthetic-engine lane. Real applicant facts may be discussed in chat; they must never be sent to synthetic-only scripts or copied into distributable assets.
@@ -23,7 +23,7 @@ For personal, ordinary personal, or unspecified use, do not mention licensing or
 
 On the first freemovement-law invocation in each conversation, read eudirective-core/references/session-version-check.md and perform the core package's read-only version comparison before substantive work. For each materially relevant national plugin shown as available by a sufficiently complete host catalog, also compare that package's manifest using its own `scripts/session_version_check.mjs` against the same published component index. A registry entry or a partial catalog does not prove installation. If the host cannot expose the package manifest or execute its checker, report the state as discovery_unknown or the currentness check as unavailable; continue with EU sources and official-source research. On a verified mismatch, report affected components and exact values and tell the user to check for an update through the same plugin source or manager used to install it; do not guess installation steps. If a check fails, say update availability could not be confirmed. Do not claim a successful match without evidence, repeat a package check in the same conversation, or imply that it updates or installs a plugin. These checks concern package versions and source-data fingerprints, not legal-source validity.
 
-For each visible answer or report produced with this skill, identify near the top: **Skill: eudirective-core v0.59.3**. On the first response, put it after the required disclaimer and any applicable license note.
+For each visible answer or report produced with this skill, identify near the top: **Skill: eudirective-core v0.59.4**. On the first response, put it after the required disclaimer and any applicable license note.
 
 ## Ordinary applicant consultations
 
@@ -58,6 +58,8 @@ The C23/C24/C25 questions and constraints apply to model-led guidance. Their Pyt
 ## Applicant-facing output and diagnostic dashboard
 
 In an ordinary consultation, answer the request directly and concisely. Include applicable EU safeguards and any material, source-supported procedural-friction warning near the relevant step. End with a short coverage note when an unresolved fact, source, country module, or currentness check materially limits the answer; name what is missing and its effect. Do not routinely display C27 identifiers, validator names, manifests, operation ledgers, provenance counts, or the full dashboard.
+
+For a material visa-processing question, distinguish Directive 2004/38 Article 5(2)'s accelerated "as soon as possible" duty from ordinary Visa Code Article 23(2)'s 45-day extension. Check whether Article 5(2) applies and the national legal basis; the matching 45-day figure is a reason to ask, not proof of misclassification. Do not treat an outer period as a default wait where a lawful decision is ready sooner; a one-day example is not a statutory one-day deadline. When a preventive step would help, include a short **"How to avoid this problem"** action with the risk, why it matters, the first step and purpose, and the event that warrants reassessment. Use `references/consultation-preventive-strategy.md` for proportionate conditional sequencing and verified escalation limits.
 
 Maintain the underlying issue, source, check, and execution distinctions required by C23, C27, and the research-control references. When a material jurisdiction, proceeding/stage, source, module, or execution variable changes, briefly say which relevant module or source informed the answer, which relevant module was not used, and the consequence of that gap. A skill being present or read does not prove that source text was consulted. Report an engine or tool as executed only when an observed result exists; distinguish model-led review from actual execution.
 
