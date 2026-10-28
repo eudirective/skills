@@ -1206,11 +1206,13 @@
     {
       "route_id": "eu_family_visa_general_procedure",
       "when_any_signal": [
-        "eu_family_visa_procedure_enquiry"
+        "eu_family_visa_procedure_enquiry",
+        "preventive_strategy_requested"
       ],
       "triggering_conditions": [
         "The user asks how an EU-family entry or short-stay visa procedure works in a Member State, including required documents, access, fees, processing time or the competent authority.",
-        "The question may be prospective; no application, delay, refusal, fee charge, appointment obstruction or other adverse event is required."
+        "The question may be prospective; no application, delay, refusal, fee charge, appointment obstruction or other adverse event is required.",
+        "The user expressly requests preventive planning or strategy concerning an EU-family visa procedure."
       ],
       "neutral_description": "Review the applicable EU-family category and the national visa procedure together, proactively comparing material published requirements with the relevant EU safeguards.",
       "mandatory_checks": [
@@ -1341,10 +1343,31 @@
         "eu:32004l0038",
         "eu:visa-code-handbook-i-2024",
         "references/c23-applicant-case-guidance.md",
+        "references/consultation-preventive-strategy.md",
+        "references/c25-applicant-strategy.md",
         "references/consultation-procedural-friction.md",
         "references/c5a-topology-applicability.md",
         "references/c5b-hierarchy-principles.md",
         "references/c5c-evidence-deadlines-authority.md"
+      ],
+      "conditional_workflows": [
+        {
+          "workflow_id": "c25_preventive_strategy",
+          "owner": "c25",
+          "activation_conditions": [
+            "material_friction_candidate_supported",
+            "preventive_strategy_requested",
+            "foreseeable_rights_affecting_decision"
+          ],
+          "references": [
+            "references/consultation-preventive-strategy.md",
+            "references/c25-applicant-strategy.md",
+            "references/c5e-suggestion-generation.md",
+            "references/c5f-ranking-sequencing.md"
+          ],
+          "execution_mode": "model_led",
+          "adverse_event_required": false
+        }
       ],
       "related_independent_issues": [
         "eu_citizen_accompanying_or_joining",
@@ -1357,7 +1380,7 @@
   ],
   "routing_review_scope": "Review signal selection, source-owner routing, source-class assumptions and attack-screen false-positive boundaries before comprehensive strict releases.",
   "routing_review_status": "pending_independent_review",
-  "schema": "freemovement-consultation-issue-routing/0.3.0",
+  "schema": "freemovement-consultation-issue-routing/0.4.0",
   "signal_catalog": [
     {
       "neutral_description": "Personal, material, or territorial scope of a claimed Directive-based family route is in issue.",
@@ -1504,6 +1527,10 @@
     {
       "signal_id": "eu_family_visa_procedure_enquiry",
       "neutral_description": "A user asks for the general procedure for an entry or short-stay visa as a family member of an EU citizen, without necessarily reporting an adverse event."
+    },
+    {
+      "signal_id": "preventive_strategy_requested",
+      "neutral_description": "The user expressly asks for prevention, planning, or strategy concerning an EU-family visa procedure; this does not imply an adverse event or infringement."
     }
   ],
   "source_owners": {

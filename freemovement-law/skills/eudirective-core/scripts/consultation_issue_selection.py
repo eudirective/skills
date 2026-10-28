@@ -26,6 +26,11 @@ SOURCE_CLASS_POLICY_PATH = ROOT / "references" / "consultation-source-class-poli
 ATTACK_CATALOG_PATH = ROOT / "references" / "attack-angles" / "core-attack-angle-catalog.json"
 FIXTURE_KIND = "synthetic_abstract"
 PROCEEDING_ID_PATTERN = re.compile(r"^p_[1-9][0-9]{0,2}$")
+WORKFLOW_ACTIVATION_CONDITIONS = {
+    "material_friction_candidate_supported",
+    "preventive_strategy_requested",
+    "foreseeable_rights_affecting_decision",
+}
 
 
 class SelectionError(ValueError):
@@ -99,6 +104,7 @@ def validate_configuration(
         "freemovement-consultation-issue-routing/0.1.0",
         "freemovement-consultation-issue-routing/0.2.0",
         "freemovement-consultation-issue-routing/0.3.0",
+        "freemovement-consultation-issue-routing/0.4.0",
     }:
         raise SelectionError("unsupported_matrix_schema")
     signal_defs = signal_catalog(matrix)
@@ -245,6 +251,65 @@ def validate_configuration(
             for check_id in check_ids:
                 if check_id not in valid_checks:
                     raise SelectionError(f"check_id_unknown:{route_id}:{check_id}")
+
+        workflows = route.get("conditional_workflows", [])
+        if not isinstance(workflows, list):
+            raise SelectionError(f"conditional_workflows_must_be_array:{route_id}")
+        workflow_ids: set[str] = set()
+        for workflow in workflows:
+            expected_fields = {
+                "workflow_id", "owner", "activation_conditions", "references",
+                "execution_mode", "adverse_event_required",
+            }
+            if not isinstance(workflow, dict) or set(workflow) != expected_fields:
+                raise SelectionError(f"conditional_workflow_invalid:{route_id}")
+            workflow_id = workflow.get("workflow_id")
+            if workflow_id != "c25_preventive_strategy" or workflow_id in workflow_ids:
+                raise SelectionError(f"conditional_workflow_id_invalid:{route_id}")
+            if route_id != "eu_family_visa_general_procedure":
+                raise SelectionError(f"conditional_workflow_route_invalid:{route_id}:{workflow_id}")
+            workflow_ids.add(workflow_id)
+            if workflow.get("owner") != "c25":
+                raise SelectionError(f"conditional_workflow_owner_invalid:{route_id}:{workflow_id}")
+            conditions = _as_id_list(
+                workflow.get("activation_conditions"),
+                f"{route_id}.{workflow_id}.activation_conditions",
+                False,
+            )
+            if set(conditions) != WORKFLOW_ACTIVATION_CONDITIONS:
+                raise SelectionError(f"conditional_workflow_conditions_invalid:{route_id}:{workflow_id}")
+            references = workflow.get("references")
+            if (not isinstance(references, list) or not references
+                    or any(not isinstance(reference, str) or not reference for reference in references)):
+                raise SelectionError(f"conditional_workflow_references_invalid:{route_id}:{workflow_id}")
+            required_references = {
+                "references/consultation-preventive-strategy.md",
+                "references/c25-applicant-strategy.md",
+                "references/c5e-suggestion-generation.md",
+                "references/c5f-ranking-sequencing.md",
+            }
+            if not required_references <= set(references):
+                raise SelectionError(f"conditional_workflow_references_incomplete:{route_id}:{workflow_id}")
+            for reference in references:
+                if not isinstance(reference, str) or not reference.startswith("references/"):
+                    raise SelectionError(f"conditional_workflow_reference_invalid:{route_id}:{workflow_id}")
+                candidate = (root / reference).resolve()
+                try:
+                    candidate.relative_to(root.resolve())
+                except ValueError as error:
+                    raise SelectionError(f"conditional_workflow_reference_unsafe:{route_id}:{workflow_id}") from error
+                if not candidate.is_file():
+                    raise SelectionError(
+                        f"conditional_workflow_reference_missing:{route_id}:{workflow_id}:{reference}"
+                    )
+            if workflow.get("execution_mode") != "model_led":
+                raise SelectionError(f"conditional_workflow_execution_mode_invalid:{route_id}:{workflow_id}")
+            if workflow.get("adverse_event_required") is not False:
+                raise SelectionError(f"conditional_workflow_adverse_event_required:{route_id}:{workflow_id}")
+            if not set(route.get("when_any_signal", [])) & {
+                "eu_family_visa_procedure_enquiry", "preventive_strategy_requested",
+            }:
+                raise SelectionError(f"conditional_workflow_route_signal_missing:{route_id}:{workflow_id}")
         post_issuance_conditions = route.get("conditional_post_issuance_checks", [])
         if not isinstance(post_issuance_conditions, list):
             raise SelectionError(f"conditional_post_issuance_checks_must_be_array:{route_id}")
@@ -713,6 +778,7 @@ def select_issue_requirements(
     route_scopes: list[dict[str, Any]] = []
     selected_direct_checks: set[str] = set()
     source_route_ids: set[str] = set()
+    conditional_workflow_reviews: list[dict[str, Any]] = []
     scope_map = {
         item["scope_id"]: set(item["procedure_types"])
         for item in registry.get("procedure_scopes", [])
@@ -738,6 +804,12 @@ def select_issue_requirements(
         if scope_status != "procedure_scope_mismatch":
             source_route_ids.add(route_id)
             owners.update(route["source_owner_ids"])
+            for workflow in route.get("conditional_workflows", []):
+                conditional_workflow_reviews.append({
+                    **workflow,
+                    "route_id": route_id,
+                    "activation_status": "awaiting_model_condition_assessment",
+                })
             for condition in route.get("conditional_source_owner_ids", []):
                 if set(condition["when_any_signal"]) & signals:
                     owners.update(condition["source_owner_ids"])
@@ -905,6 +977,10 @@ def select_issue_requirements(
             "review_status", "pending_independent_review"
         ),
         "attack_angle_topics": [topics[key] for key in sorted(topics)],
+        "conditional_workflow_reviews": sorted(
+            conditional_workflow_reviews,
+            key=lambda item: (item["route_id"], item["workflow_id"]),
+        ),
         "routing_review_status": matrix.get("routing_review_status", "pending_independent_review"),
         "pathway_review_status": load_json(PATHWAY_PATH).get(
             "consultation_binding_review_status", "pending_independent_review"
@@ -945,6 +1021,7 @@ def select_checks(
                     "route_id": route["route_id"],
                     "trigger_signal_ids": matched,
                     "check_ids": [],
+                    "conditional_workflow_reviews": [],
                     "scope_status": scope_status,
                 })
                 fallback_checks = set()
@@ -1010,6 +1087,14 @@ def select_checks(
                     "route_id": route["route_id"],
                     "trigger_signal_ids": matched,
                     "check_ids": route_check_ids,
+                    "conditional_workflow_reviews": [
+                        {
+                            **workflow,
+                            "route_id": route["route_id"],
+                            "activation_status": "awaiting_model_condition_assessment",
+                        }
+                        for workflow in route.get("conditional_workflows", [])
+                    ],
                     "scope_status": scope_status,
                 }
             )
@@ -1029,7 +1114,7 @@ def select_checks(
             }
         )
     return {
-        "schema": "freemovement-synthetic-issue-selection/0.2.0",
+        "schema": "freemovement-synthetic-issue-selection/0.3.0",
         "fixture_kind": FIXTURE_KIND,
         "selection_limit": "Declared abstract signals only; not issue extraction, legal assessment, source verification, or proof of engine execution.",
         "proceedings": selected_proceedings,

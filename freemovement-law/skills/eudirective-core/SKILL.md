@@ -5,8 +5,8 @@ description: "Use for read-only, source-grounded EU free-movement and EU-family-
 
 # eudirective-core
 
-- Current version: `0.59.2`
-- Plugin version: `0.60.8`
+- Current version: `0.59.3`
+- Plugin version: `0.60.11`
 - Last updated: `2026-10-25`
 
 This skill provides read-only, source-grounded guidance and maintains a separate synthetic-engine lane. Real applicant facts may be discussed in chat; they must never be sent to synthetic-only scripts or copied into distributable assets.
@@ -23,7 +23,7 @@ For personal, ordinary personal, or unspecified use, do not mention licensing or
 
 On the first freemovement-law invocation in each conversation, read eudirective-core/references/session-version-check.md and perform the core package's read-only version comparison before substantive work. For each materially relevant national plugin shown as available by a sufficiently complete host catalog, also compare that package's manifest using its own `scripts/session_version_check.mjs` against the same published component index. A registry entry or a partial catalog does not prove installation. If the host cannot expose the package manifest or execute its checker, report the state as discovery_unknown or the currentness check as unavailable; continue with EU sources and official-source research. On a verified mismatch, report affected components and exact values and tell the user to check for an update through the same plugin source or manager used to install it; do not guess installation steps. If a check fails, say update availability could not be confirmed. Do not claim a successful match without evidence, repeat a package check in the same conversation, or imply that it updates or installs a plugin. These checks concern package versions and source-data fingerprints, not legal-source validity.
 
-For each visible answer or report produced with this skill, identify near the top: **Skill: eudirective-core v0.59.2**. On the first response, put it after the required disclaimer and any applicable license note.
+For each visible answer or report produced with this skill, identify near the top: **Skill: eudirective-core v0.59.3**. On the first response, put it after the required disclaimer and any applicable license note.
 
 ## Ordinary applicant consultations
 
@@ -49,8 +49,8 @@ C27 is a model-led case-state review, not permission to put real cases into scri
 | When the issue arises | Read and apply | Role and limit |
 | --- | --- | --- |
 | Real or fictional applicant describes an EU-family visa, consular-access, or remedy problem | references/c23-applicant-case-guidance.md; read references/c24-fact-rule-revision.md with it | Read-only, source-grounded guidance. Keep ordinary Schengen document lists distinct from EU-family requirements; distinguish an expired local residence document from proved unlawful presence. C24 links each material conclusion to facts, current law, scope, counterarguments, exceptions, and remedy; in follow-ups, correct only affected conclusions and retain unaffected ones. |
-| User asks how an EU-family entry or short-stay visa procedure works, including a prospective or general question | references/consultation-procedural-friction.md and the exact registered national module/source route | Select the neutral procedure-enquiry route without requiring an adverse event. Check visa exemption before application steps, then compare material national requirements with applicable EU safeguards. Keep a rule-level warning separate from an applicant-specific adverse fact or infringement finding. |
-| Substantive dispute with an authority, staff conduct, non-response, disputed grounds, records, or evidence-preservation need | references/c25-applicant-strategy.md and references/c25-evidence-acquisition.md | Track each materially reported event and independent grievance. Separate grounds actually invoked from possible or uninvoked grounds. Consider GDPR personal-data access, administrative-file access, complaint investigation, and urgent preservation separately. Verify scope, controller, exemptions, powers and deadlines; do not promise records or infer an automatic preservation right. These references do not authorize scripts or external action. |
+| User asks how an EU-family entry or short-stay visa procedure works, including a prospective or general question | references/consultation-procedural-friction.md, the exact registered national module/source route, and—when activated—references/consultation-preventive-strategy.md with references/c25-applicant-strategy.md | Select the neutral procedure-enquiry route without requiring an adverse event. Compare material national requirements with applicable EU safeguards. Activate C25's preventive branch when a material friction candidate is source-supported, the user asks for prevention/planning/strategy, or a foreseeable decision could materially affect rights. Keep a rule-level warning separate from an applicant-specific adverse fact or infringement finding. |
+| Substantive dispute with an authority, staff conduct, non-response, disputed grounds, records, or evidence-preservation need | references/c25-applicant-strategy.md and references/c25-evidence-acquisition.md | Use C25's dispute branch to track each materially reported event and independent grievance. Separate grounds actually invoked from possible or uninvoked grounds. Consider GDPR personal-data access, administrative-file access, complaint investigation, and urgent preservation separately. Verify scope, controller, exemptions, powers and deadlines; do not promise records or infer an automatic preservation right. These references do not authorize scripts or external action. |
 | Follow-up changes a strategy or a claimed ground/record disposition | Apply the event-by-event C25 references above | Attribute the source of each claimed authority ground, update the affected event and evidence plan, and preserve all unaffected analysis. Do not let one weak claim erase an independent grievance. |
 
 The C23/C24/C25 questions and constraints apply to model-led guidance. Their Python fixtures and evaluators remain synthetic-only and are maintained privately.

@@ -76,6 +76,8 @@ For a general Czech EU-family visa timing question, when the relevant route and 
 
 Do not call the 14-day period a statutory deadline unless its national legal basis has been verified. Do not treat Commission guidance as a binding absolute deadline. Include the issue even if no application has yet been lodged or no delay has occurred.
 
+When this potential friction is material and a proportionate step is feasible, do not leave the warning alone: apply C25's prospective-prevention method in `references/consultation-preventive-strategy.md`. For the Czech example, consider a cooperative request to confirm the correct EU-family category and appropriate mission route before lodging, then targeted clarification if the 45-day period is later invoked. This is conditional guidance, not a finding that a Czech authority has misclassified an applicant; check the responsible mission's current instructions before giving mission-specific channels or escalation routes.
+
 The Czech country reference is `freemovement-law-cz/skills/eudirective-library-cz/references/eu-family-short-stay-visa.md`. It records Czech Act 326/1999 §§15a, 20 and 180e, the central MFA page, accepted-source limits, and the still-partial national coverage. Use the exact installed Czech module and its `source-library/czechia/references/source-acceptance.json`; absence of the module or a source read remains reportable.
 
 ## 6. Rule-level review versus attack-angle or infringement findings

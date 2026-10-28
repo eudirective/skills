@@ -54,6 +54,8 @@ The Czech MFA central page currently publishes 14 days from submission and says 
 
 Directive Article 5(2) requires necessary visas to be issued free of charge as soon as possible through an accelerated procedure. The Commission Visa Code Handbook (C(2024) 4319 final, Part III, section 4.4) says processing beyond 15 days should be exceptional and duly justified and delays beyond four weeks are not reasonable. It is interpretive operational guidance and does not create an absolute statutory 15-day deadline. The published Czech 45-day extension therefore raises a potential compatibility question requiring a case-specific explanation; it is not automatically unlawful in every case. Record the actual lodging date, any extension ground, category, processing steps and explanation separately from pre-lodging appointment delay.
 
+Treat the published 14/45-day instruction as a prospective risk signal for EU-core's C25 strategy review, not evidence that a particular mission has used the extension, assigned an ordinary visa category, or misapplied EU law. This source note does not provide an all-mission appointment or supervisory-channel matrix; verify the responsible mission's current official procedure before recommending a specific contact or escalation route.
+
 ## 9. Refusal grounds
 
 Act 326/1999, §20(5), lists grounds for refusing a short-stay visa application by a family member described in §15a(1) or (2), including specified document, health, security/public-order, abuse/fraud and relationship/accompanying-or-joining grounds. The central MFA page summarizes these grounds and says a decision is not automatic. Read the current text and identify the precise written ground; do not attribute a hypothetical ground to an authority.
