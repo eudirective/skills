@@ -51,6 +51,7 @@ jobs:
           upstream_revision="$(git -C public-data rev-parse HEAD)"
           [[ "$upstream_revision" =~ ^[0-9a-f]{40}$ ]]
           python3 -c 'from pathlib import Path; p=Path("skills/scripts/source-distribution/build.py"); compile(p.read_text(encoding="utf-8"), str(p), "exec")'
+          python3 -m unittest discover -s skills/scripts/source-distribution -p 'test_*.py'
           python3 skills/scripts/source-distribution/build.py \
             --source-root public-data/source-library \
             --module-notes-root public-data/module-notes \

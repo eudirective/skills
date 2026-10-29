@@ -261,7 +261,15 @@ def accepted_paths(acceptance: Any, root: Path, pack: Path) -> list[tuple[Path, 
             record_status = str(obj.get("status") or "")
             explicit_status = bool(ACCEPTED_COPY_STATUS.search(local_status) or ACCEPTED_COPY_STATUS.search(record_status) or obj.get("local_copy_accepted") is True)
             explicit_local = field_context in local_fields
-            context = accepted_context or explicit_local or explicit_status
+            # An explicit rejection of a local copy overrides a broad source
+            # disposition such as ``accepted_with_narrow_external_scope``.
+            # Such a disposition may accept the official source as a link or
+            # identity record while separately retaining a third-party
+            # snapshot path as provenance only.
+            if obj.get("local_copy_accepted") is False:
+                context = False
+            else:
+                context = accepted_context or explicit_local or explicit_status
             for key, value in obj.items():
                 if key in PATH_FIELDS and isinstance(value, str):
                     local_marked = context
