@@ -39,7 +39,7 @@ LEGAL_CATEGORIES = {
     "official_guidance", "procedural_rule", "other_legal_text",
 }
 UNRESOLVED_ISSUES = {"answered_conditionally", "source_missing", "fact_missing"}
-ISSUE_ROUTE_SCHEMAS = {"0.5.0", "0.6.0", "0.7.0"}
+ISSUE_ROUTE_SCHEMAS = {"0.5.0", "0.6.0", "0.7.0", "0.8.0"}
 OPAQUE_REF = re.compile(r"^r_[a-f0-9]{12,32}$")
 SECTION_LABELS = {
     "eu": "EU core", "at": "Austria", "be": "Belgium", "bg": "Bulgaria",
@@ -480,6 +480,7 @@ OPERATION_LABELS = {
     "source_preflight": "Source-coverage check",
     "c3_module_pair_conformance": "Country-module conformance",
     "c3_case_geography_match": "Country-to-case match",
+    "consultation_finalisation": "Core consultation finalisation",
 }
 CLASSIFICATION_LABELS = {
     "jurisdictions_by_role": "Jurisdiction roles",
@@ -760,6 +761,10 @@ def _open_work(route_gaps: list[str]) -> list[dict]:
     return result
 
 
+def _issue_refs_text(values: list[str]) -> str:
+    return ", ".join(f"`{value}`" for value in values) if values else "none recorded"
+
+
 def strategy_dashboard_lines(strategy: dict) -> list[str]:
     """Render the route receipt's shared strategy assessment in plain language."""
     mode_labels = {
@@ -786,7 +791,11 @@ def strategy_dashboard_lines(strategy: dict) -> list[str]:
     for item in strategy.get("trigger_reviews", []):
         label = trigger_labels.get(item.get("trigger_id"), _humanize(item.get("trigger_id", "trigger")))
         status = status_labels.get(item.get("status"), _humanize(item.get("status", "unknown")))
-        lines.append(f"- **{status} — {label}:** {item.get('reason', 'Reason not recorded')}")
+        issue_refs = item.get("issue_refs", [])
+        linked = f" Linked issue(s): {_issue_refs_text(issue_refs)}." if issue_refs else ""
+        lines.append(f"- **{status} — {label}:** {item.get('reason', 'Reason not recorded')}{linked}")
+    if strategy.get("issue_refs"):
+        lines.append(f"**Strategy applies to issue(s):** {_issue_refs_text(strategy['issue_refs'])}.")
     if strategy.get("first_step"):
         lines.extend([
             "",
@@ -813,6 +822,8 @@ def strategy_dashboard_lines(strategy: dict) -> list[str]:
             "",
             f"**Missing:** {limitation.get('missing', 'Not recorded')} **Effect:** {limitation.get('effect', 'Not recorded')}",
         ])
+        if limitation.get("issue_refs"):
+            lines.append(f"**Limitation applies to issue(s):** {_issue_refs_text(limitation['issue_refs'])}.")
     return lines
 
 
@@ -1047,6 +1058,16 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
             mode_label = "🟠 Limited board"
             mode_note = "One or more declared checks remain limited; the missing item and effect are shown below."
         lines.extend([f"### Output coverage: {mode_label}", "", mode_note, ""])
+    elif route.get("schema_version") == "0.8.0":
+        mode = route["consultation_mode"]
+        mode_label = "🟢 Full consultation review" if mode == "full" else "🟠 Limited consultation review"
+        mode_note = (
+            "The full consultation review format was used. Declared coverage and open items are shown separately."
+            if mode == "full" else
+            "This response used a limited consultation review. Declared coverage and open items are shown separately."
+        )
+        lines.extend([f"### Consultation mode: {mode_label}", "", mode_note, ""])
+    if route.get("schema_version") in {"0.7.0", "0.8.0"}:
         strategy = route.get("strategy_assessment")
         if isinstance(strategy, dict):
             lines.extend(strategy_dashboard_lines(strategy))
@@ -1324,7 +1345,7 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
                 scoped_evidence("Evidence", [issue["evidence_ref"]]),
             ])
             route_record = issue_routing_by_ref.get(issue["issue_ref"], {})
-            if route.get("schema_version") in {"0.6.0", "0.7.0"}:
+            if route.get("schema_version") in {"0.6.0", "0.7.0", "0.8.0"}:
                 lines.extend(typed_issue_route_lines(route_record))
             if unresolved_mandatory_screen and primary_assessment:
                 lines.append(
@@ -1672,12 +1693,12 @@ def validate_dashboard_receipt(route: dict, evidence_index: dict[str, dict], rou
     if state == "unknown" and basis != "unavailable":
         raise DashboardError("unknown_invocation_basis_invalid")
     dashboard = route.get("dashboard")
-    substantive_v07 = (
-        route.get("schema_version") == "0.7.0"
+    substantive_v07_or_v08 = (
+        route.get("schema_version") in {"0.7.0", "0.8.0"}
         and route.get("request_kind") in {"applicant_guidance", "source_research"}
     )
     required = (
-        substantive_v07
+        substantive_v07_or_v08
         or state == "explicit"
         or invocation.get("dashboard_requested") is True
         or invocation.get("material_change") is True
@@ -1763,10 +1784,13 @@ def validate_dashboard_receipt(route: dict, evidence_index: dict[str, dict], rou
     )
     if dashboard["assessment_status"] != expected_status:
         raise DashboardError("dashboard_assessment_status_mismatch")
-    if substantive_v07:
+    if route.get("schema_version") == "0.7.0" and substantive_v07_or_v08:
         expected_mode = "full" if expected_status == "reviewed" else "limited"
         if dashboard.get("mode") != expected_mode:
             raise DashboardError("dashboard_mode_does_not_match_recorded_coverage")
+    if route.get("schema_version") == "0.8.0" and substantive_v07_or_v08:
+        if route.get("consultation_mode") not in {"full", "limited"}:
+            raise DashboardError("consultation_mode_missing_or_invalid")
     if dashboard["assessment_status"] == "partial" and not dashboard["issue_summaries"] and not _open_work(route_gaps):
         raise DashboardError("partial_assessment_without_explained_open_work")
     preview = render_dashboard(route, metrics, route_gaps, required_operation_ids)

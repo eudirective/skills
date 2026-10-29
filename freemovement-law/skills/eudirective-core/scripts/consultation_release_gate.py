@@ -164,7 +164,7 @@ def controlled_release(receipt_path: Path, answer_path: Path) -> bytes:
         receipt = json.loads(first_receipt.decode("utf-8"))
     except (UnicodeDecodeError, json.JSONDecodeError) as error:
         raise ReleaseBindingError("receipt_json_invalid") from error
-    if receipt.get("schema_version") not in {"0.5.0", "0.6.0", "0.7.0"} or receipt.get("request_kind") not in {
+    if receipt.get("schema_version") not in {"0.5.0", "0.6.0", "0.7.0", "0.8.0"} or receipt.get("request_kind") not in {
         "applicant_guidance", "source_research",
     }:
         raise ReleaseBindingError("controlled_release_requires_receipt_0_5_or_later")

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Consultation route receipt 0.7.0 (legacy 0.1.0-0.6.0 readable)",
+  "title": "Consultation route receipt 0.8.0 (legacy 0.1.0-0.7.0 readable)",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -25,7 +25,8 @@
         "0.4.0",
         "0.5.0",
         "0.6.0",
-        "0.7.0"
+        "0.7.0",
+        "0.8.0"
       ]
     },
     "route_ref": {
@@ -157,6 +158,13 @@
     },
     "strategy_assessment": {
       "$ref": "#/$defs/strategy_assessment"
+    },
+    "consultation_mode": {
+      "enum": [
+        "full",
+        "limited"
+      ],
+      "description": "Review mode for this consultation response. Independent of the separate coverage_claim."
     }
   },
   "allOf": [
@@ -780,6 +788,187 @@
           "dashboard": {
             "required": [
               "mode"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "schema_version": {
+            "const": "0.8.0"
+          },
+          "request_kind": {
+            "enum": [
+              "applicant_guidance",
+              "source_research"
+            ]
+          }
+        },
+        "required": [
+          "schema_version",
+          "request_kind"
+        ]
+      },
+      "then": {
+        "required": [
+          "consultation_mode",
+          "invocation",
+          "source_ledger",
+          "issues",
+          "dashboard",
+          "revision_control",
+          "proceedings",
+          "strategy_assessment"
+        ],
+        "properties": {
+          "consultation_mode": {
+            "enum": [
+              "full",
+              "limited"
+            ]
+          },
+          "dashboard": {
+            "not": {
+              "required": [
+                "mode"
+              ]
+            }
+          },
+          "strategy_assessment": {
+            "properties": {
+              "trigger_reviews": {
+                "items": {
+                  "allOf": [
+                    {
+                      "if": {
+                        "properties": {
+                          "status": {
+                            "enum": [
+                              "triggered",
+                              "unknown"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "status"
+                        ]
+                      },
+                      "then": {
+                        "required": [
+                          "issue_refs"
+                        ],
+                        "properties": {
+                          "issue_refs": {
+                            "minItems": 1
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "if": {
+                        "properties": {
+                          "status": {
+                            "enum": [
+                              "not_triggered",
+                              "not_applicable"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "status"
+                        ]
+                      },
+                      "then": {
+                        "required": [
+                          "issue_refs"
+                        ],
+                        "properties": {
+                          "issue_refs": {
+                            "maxItems": 0
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "allOf": [
+              {
+                "if": {
+                  "properties": {
+                    "mode": {
+                      "enum": [
+                        "full",
+                        "limited"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "mode"
+                  ]
+                },
+                "then": {
+                  "required": [
+                    "issue_refs"
+                  ],
+                  "properties": {
+                    "issue_refs": {
+                      "minItems": 1
+                    }
+                  }
+                }
+              },
+              {
+                "if": {
+                  "properties": {
+                    "mode": {
+                      "enum": [
+                        "not_triggered",
+                        "not_applicable"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "mode"
+                  ]
+                },
+                "then": {
+                  "properties": {
+                    "issue_refs": {
+                      "maxItems": 0
+                    }
+                  }
+                }
+              },
+              {
+                "if": {
+                  "properties": {
+                    "mode": {
+                      "const": "limited"
+                    }
+                  },
+                  "required": [
+                    "mode"
+                  ]
+                },
+                "then": {
+                  "properties": {
+                    "limitation": {
+                      "required": [
+                        "issue_refs"
+                      ],
+                      "properties": {
+                        "issue_refs": {
+                          "minItems": 1
+                        }
+                      }
+                    }
+                  }
+                }
+              }
             ]
           }
         }
@@ -2926,6 +3115,14 @@
         },
         "limitation": {
           "$ref": "#/$defs/strategy_limitation"
+        },
+        "issue_refs": {
+          "type": "array",
+          "maxItems": 100,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/opaque_ref"
+          }
         }
       },
       "allOf": [
@@ -3073,6 +3270,14 @@
           "items": {
             "$ref": "#/$defs/opaque_ref"
           }
+        },
+        "issue_refs": {
+          "type": "array",
+          "maxItems": 100,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/opaque_ref"
+          }
         }
       }
     },
@@ -3109,6 +3314,15 @@
           "type": "array",
           "minItems": 1,
           "maxItems": 10,
+          "items": {
+            "$ref": "#/$defs/opaque_ref"
+          }
+        },
+        "issue_refs": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 100,
+          "uniqueItems": true,
           "items": {
             "$ref": "#/$defs/opaque_ref"
           }

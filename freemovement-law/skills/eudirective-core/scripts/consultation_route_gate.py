@@ -23,7 +23,12 @@ from contract_validate import ContractError, validate_obj
 from module_conformance import ConformanceError, validate_paths
 from research_gate import ResearchGateError, validate_research
 from issue_source_preflight import SourcePreflightError, validate_source_preflight
-from consultation_dashboard import DashboardError, render_dashboard, validate_dashboard_receipt
+from consultation_dashboard import (
+    DashboardError,
+    render_dashboard,
+    unresolved_issue_refs,
+    validate_dashboard_receipt,
+)
 from consultation_issue_selection import (
     SelectionError as IssueSelectionError,
     load_json as load_issue_json,
@@ -59,12 +64,14 @@ OPERATION_EVIDENCE_KINDS = {
     "c3_case_geography_match": {"conversation_record"},
     "research_gate": {"research_gate"},
     "source_preflight": {"source_preflight"},
+    "consultation_finalisation": {"conversation_record", "local_artifact"},
 }
 CLOSED_C27_STATUSES = {"assessed", "not_applicable"}
 ISSUE_MATRIX_PATH = ROOT / "references" / "consultation-issue-routing.json"
 ISSUE_REGISTRY_PATH = ROOT / "references" / "state-engine" / "check-registry.json"
-ROUTE_GATE_VERSION = "0.7.0"
-TYPED_RECEIPT_SCHEMAS = {"0.6.0", "0.7.0"}
+ROUTE_GATE_VERSION = "0.8.0"
+TYPED_RECEIPT_SCHEMAS = {"0.6.0", "0.7.0", "0.8.0"}
+STRATEGY_RECEIPT_SCHEMAS = {"0.7.0", "0.8.0"}
 INFORMATIONAL_ROUTE_SCOPE_STATUSES = {
     "not_selected_outcome_mismatch", "not_selected_no_formal_outcome",
     "not_selected_outcome_unverified", "not_selected_signal_missing",
@@ -118,7 +125,9 @@ def _require_specific_strategy_text(value: str, label: str) -> None:
 
 def check_strategy_assessment(route: dict, evidence_index: dict[str, dict], gaps: list[str]) -> str | None:
     """Check the consultation strategy screen against the shared issue/evidence record."""
-    if route.get("schema_version") != "0.7.0":
+    version = route.get("schema_version")
+    if (version not in STRATEGY_RECEIPT_SCHEMAS
+            or route.get("request_kind") not in {"applicant_guidance", "source_research"}):
         return None
     strategy = route.get("strategy_assessment")
     if not isinstance(strategy, dict):
@@ -129,24 +138,48 @@ def check_strategy_assessment(route: dict, evidence_index: dict[str, dict], gaps
     if len(by_id) != len(reviews) or set(by_id) != STRATEGY_TRIGGER_IDS:
         raise RouteGateError("strategy_trigger_review_set_incomplete_or_duplicate")
     signal_evidence: dict[str, set[str]] = {trigger: set() for trigger in STRATEGY_TRIGGER_IDS}
+    signal_issue_refs: dict[str, set[str]] = {trigger: set() for trigger in STRATEGY_TRIGGER_IDS}
     declared_signals: set[str] = set()
+    issues_by_ref = {
+        issue["issue_ref"]: issue
+        for issue in route.get("issues", [])
+        if isinstance(issue.get("issue_ref"), str)
+    }
     for issue in route.get("issues", []):
         issue_signals = set(issue.get("signal_ids", []))
         declared_signals.update(issue_signals)
         for trigger_id, signal_ids in STRATEGY_TRIGGER_SIGNALS.items():
             if signal_ids.intersection(issue_signals):
                 signal_evidence[trigger_id].add(issue["evidence_ref"])
+                if isinstance(issue.get("issue_ref"), str):
+                    signal_issue_refs[trigger_id].add(issue["issue_ref"])
 
     for trigger_id, review in by_id.items():
         _require_specific_strategy_text(review["reason"], f"trigger_reason:{trigger_id}")
         refs = review["evidence_refs"]
         if any(ref not in evidence_index for ref in refs):
             raise RouteGateError(f"strategy_trigger_evidence_dangling:{trigger_id}")
+        linked_issue_refs = set(review.get("issue_refs", []))
+        if version == "0.8.0":
+            if any(ref not in issues_by_ref for ref in linked_issue_refs):
+                raise RouteGateError(f"strategy_issue_reference_dangling:{trigger_id}")
+            if review["status"] in {"triggered", "unknown"} and not linked_issue_refs:
+                raise RouteGateError(f"strategy_trigger_issue_link_missing:{trigger_id}")
+            if review["status"] not in {"triggered", "unknown"} and linked_issue_refs:
+                raise RouteGateError(f"strategy_issue_link_without_open_trigger:{trigger_id}")
+            if not {issues_by_ref[ref]["evidence_ref"] for ref in linked_issue_refs} <= set(refs):
+                raise RouteGateError(f"strategy_trigger_issue_evidence_mismatch:{trigger_id}")
         required_refs = signal_evidence[trigger_id]
         if required_refs and review["status"] != "triggered":
             raise RouteGateError(f"strategy_trigger_signal_not_screened_as_triggered:{trigger_id}")
         if required_refs and not required_refs.issubset(set(refs)):
             raise RouteGateError(f"strategy_trigger_signal_evidence_missing:{trigger_id}")
+        if version == "0.8.0" and review["status"] == "triggered":
+            if trigger_id == "source_supported_preventive_opportunity":
+                if not linked_issue_refs:
+                    raise RouteGateError(f"strategy_trigger_issue_link_missing:{trigger_id}")
+            elif linked_issue_refs != signal_issue_refs[trigger_id]:
+                raise RouteGateError(f"strategy_trigger_issue_link_mismatch:{trigger_id}")
         if review["status"] == "triggered" and not refs:
             raise RouteGateError(f"strategy_trigger_evidence_missing:{trigger_id}")
         if trigger_id == "source_supported_preventive_opportunity" and review["status"] == "triggered":
@@ -160,6 +193,16 @@ def check_strategy_assessment(route: dict, evidence_index: dict[str, dict], gaps
     statuses = {item["status"] for item in reviews}
     triggered = any(item["status"] == "triggered" for item in reviews)
     unknown = any(item["status"] == "unknown" for item in reviews)
+    if version == "0.8.0":
+        expected_strategy_issues = set().union(*(
+            set(item.get("issue_refs", []))
+            for item in reviews if item["status"] in {"triggered", "unknown"}
+        ))
+        declared_strategy_issues = set(strategy.get("issue_refs", []))
+        if any(ref not in issues_by_ref for ref in declared_strategy_issues):
+            raise RouteGateError("strategy_issue_reference_dangling")
+        if declared_strategy_issues != expected_strategy_issues:
+            raise RouteGateError("strategy_issue_link_reconciliation_mismatch")
     if route["request_kind"] == "source_research":
         if mode != "not_applicable" or statuses != {"not_applicable"}:
             raise RouteGateError("strategy_not_applicable_required_for_source_research")
@@ -196,6 +239,15 @@ def check_strategy_assessment(route: dict, evidence_index: dict[str, dict], gaps
             _require_specific_strategy_text(limitation[field], f"limitation_{field}")
         if any(ref not in evidence_index for ref in limitation["evidence_refs"]):
             raise RouteGateError("strategy_limitation_evidence_dangling")
+        if version == "0.8.0":
+            limitation_issues = set(limitation.get("issue_refs", []))
+            if not limitation_issues or not limitation_issues <= declared_strategy_issues:
+                raise RouteGateError("strategy_limitation_issue_link_invalid")
+            if not {issues_by_ref[ref]["evidence_ref"] for ref in limitation_issues} <= set(limitation["evidence_refs"]):
+                raise RouteGateError("strategy_limitation_issue_evidence_mismatch")
+            unresolved = unresolved_issue_refs(route)
+            if not limitation_issues <= unresolved:
+                raise RouteGateError("strategy_limitation_issue_not_open")
         gaps.append(f"strategy_assessment:limited:{limitation['reason_code']}")
     _require_specific_strategy_text(strategy["summary"], "summary")
     return mode
@@ -203,12 +255,16 @@ def check_strategy_assessment(route: dict, evidence_index: dict[str, dict], gaps
 
 def required_operations_for(route: dict) -> tuple[str, ...]:
     required = list(REQUIRED_OPERATIONS[route["request_kind"]])
-    if route.get("schema_version") in {"0.4.0", "0.5.0", "0.6.0", "0.7.0"} and route["request_kind"] in {
+    if route.get("schema_version") in {"0.4.0", "0.5.0", "0.6.0", "0.7.0", "0.8.0"} and route["request_kind"] in {
         "applicant_guidance", "source_research",
     }:
         for operation_id in ("research_gate", "source_preflight", "attack_angle_screen"):
             if operation_id not in required:
                 required.append(operation_id)
+    if route.get("schema_version") == "0.8.0" and route["request_kind"] in {
+        "applicant_guidance", "source_research",
+    }:
+        required.append("consultation_finalisation")
     return tuple(required)
 
 
@@ -234,7 +290,7 @@ def safe_relative_file(base: Path, value: str, label: str) -> Path:
 
 
 def strict_receipt(route: dict) -> bool:
-    return route.get("schema_version") in {"0.5.0", "0.6.0", "0.7.0"}
+    return route.get("schema_version") in {"0.5.0", "0.6.0", "0.7.0", "0.8.0"}
 
 
 def check_c27_records(route: dict, registry: dict, gaps: list[str]) -> int:
@@ -862,8 +918,8 @@ def check_declared_issues(route: dict, evidence_index: dict[str, dict],
     }
 
     version = route.get("schema_version")
-    strict = version in {"0.4.0", "0.5.0", "0.6.0", "0.7.0"}
-    v05 = version in {"0.5.0", "0.6.0", "0.7.0"}
+    strict = version in {"0.4.0", "0.5.0", "0.6.0", "0.7.0", "0.8.0"}
+    v05 = version in {"0.5.0", "0.6.0", "0.7.0", "0.8.0"}
     if (version == "0.4.0" and route.get("revision_control") is not None
             and route.get("invocation", {}).get("material_change") is not True):
         raise RouteGateError("revision_control_without_material_change")
@@ -1572,6 +1628,7 @@ def validate_route(path: Path) -> dict:
     return {
         "status": status,
         "route_ref": route["route_ref"],
+        "consultation_mode": route.get("consultation_mode"),
         "coverage_claim": route["coverage_claim"],
         "declared_plan_has_no_outstanding_gaps": not gaps,
         "outstanding": outstanding,
