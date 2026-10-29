@@ -5,8 +5,8 @@ description: "Use for read-only, source-grounded EU free-movement and EU-family-
 
 # eudirective-core
 
-- Current version: `0.60.1`
-- Plugin version: `0.61.3`
+- Current version: `0.60.2`
+- Plugin version: `0.61.4`
 - Last updated: `2026-10-29`
 
 This skill provides read-only, source-grounded guidance and maintains a separate synthetic-engine lane. Real applicant facts may be discussed in chat; they must never be sent to synthetic-only scripts or copied into distributable assets.
@@ -23,7 +23,7 @@ For personal, ordinary personal, or unspecified use, do not mention licensing or
 
 On the first freemovement-law invocation in each conversation, read eudirective-core/references/session-version-check.md and perform the core package's read-only version comparison before substantive work. For each materially relevant national plugin shown as available by a sufficiently complete host catalog, also compare that package's manifest using its own `scripts/session_version_check.mjs` against the same published component index. A registry entry or a partial catalog does not prove installation. If the host cannot expose the package manifest or execute its checker, report the state as discovery_unknown or the currentness check as unavailable; continue with EU sources and official-source research. On a verified mismatch, report affected components and exact values and tell the user to check for an update through the same plugin source or manager used to install it; do not guess installation steps. If a check fails, say update availability could not be confirmed. Do not claim a successful match without evidence, repeat a package check in the same conversation, or imply that it updates or installs a plugin. These checks concern package versions and source-data fingerprints, not legal-source validity.
 
-For each visible answer or report produced with this skill, identify near the top: **Skill: eudirective-core v0.60.1**. On the first response, put it after the required disclaimer and any applicable license note.
+For each visible answer or report produced with this skill, identify near the top: **Skill: eudirective-core v0.60.2**. On the first response, put it after the required disclaimer and any applicable license note.
 
 ## Ordinary applicant consultations
 
