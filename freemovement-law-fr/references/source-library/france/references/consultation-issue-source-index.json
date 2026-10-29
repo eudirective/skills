@@ -1,0 +1,149 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "schema_version": "1.0.0",
+  "title": "France issue-to-source candidate index",
+  "description": "Candidate locator only. Static presence does not mean a source was consulted in an applicant answer, applies to the facts, is binding, or is current.",
+  "jurisdiction": "FR",
+  "index_authoring_review_date": "2026-10-29",
+  "consultation_use_rule": {
+    "default_source_status": "not_consulted",
+    "runtime_must_record_per_source": [
+      "candidate_identified",
+      "official_link_reviewed",
+      "official_text_opened",
+      "bundled_accepted_text_read",
+      "not_consulted",
+      "publisher",
+      "edition_or_version_displayed",
+      "pinpoint_or_document_title"
+    ],
+    "currentness_rule": "Recheck the publisher and displayed version/date for the individual consultation; a candidate record, link review, package version, or stored snapshot does not establish currentness or consultation."
+  },
+  "issues": [
+    {
+      "issue_id": "eu_family_entry_visa_and_directive_refusal",
+      "candidate_source_ids": [
+        "fr-france-visas-family-eu",
+        "fr-ceseda-r221-2",
+        "fr-ta-nantes-2105915-2105917-2021"
+      ],
+      "relevance": "Use to identify French operational guidance and potentially relevant French national-law or decision candidates for a France EU-family entry-visa question. Assess legal scope and current text separately.",
+      "exclusions": [
+        "France-Visas guidance is operational guidance, not a substitute for Directive or statutory text.",
+        "The Nantes joined decision is a fact-specific first-instance decision from 2021 under pre-recodification law; do not automate precedent or applicability conclusions."
+      ]
+    },
+    {
+      "issue_id": "ordinary_short_stay_visa_refusal_and_rapo",
+      "candidate_source_ids": [
+        "fr-service-public-short-visa-refusal"
+      ],
+      "relevance": "Candidate for an ordinary short-stay Visa Code refusal and France RAPO route only.",
+      "exclusions": [
+        "Do not apply this route automatically to a Directive 2004/38 EU-family entry-visa refusal.",
+        "Check current official procedure, competent body, scope and time limits before advice."
+      ]
+    },
+    {
+      "issue_id": "interim_judicial_relief_after_refusal",
+      "candidate_source_ids": [
+        "fr-cja-l521-1",
+        "fr-ce-237376-2001"
+      ],
+      "relevance": "Candidate statutory and case-law materials for conditional interim-suspension screening when urgency and a serious legal doubt may be relevant.",
+      "exclusions": [
+        "Not an eligibility determination or guarantee of relief.",
+        "Verify the exact proceeding, national procedure, urgency, merits and any interaction with administrative appeal from current official sources.",
+        "Do not infer urgency from an appeal deadline alone."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "fr-service-public-short-visa-refusal",
+      "title": "Service Public, Appeal against a short-stay visa refusal (F16146)",
+      "publisher": "Direction de l’information légale et administrative (DILA), Service Public",
+      "official_url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16146?lang=fr",
+      "source_kind": "official_guidance",
+      "index_evidence": {
+        "official_link_reviewed": "2026-10-24; source-list states publisher verification date 2026-08-13",
+        "official_text_opened": "2026-10-24 per source-list record",
+        "bundled_accepted_text": "accepted local snapshot listed in France source inventory"
+      },
+      "consultation_status_default": "not_consulted",
+      "scope_caveat": "Ordinary short-stay visa RAPO only; not automatically the Directive EU-family route."
+    },
+    {
+      "source_id": "fr-france-visas-family-eu",
+      "inventory_record_id": "fr-05-france-visas-route-for-family-members-of-european-citizens",
+      "title": "France-Visas, Family members of EU/EEA/Swiss citizens",
+      "publisher": "Ministry for Europe and Foreign Affairs, France-Visas",
+      "official_url": "https://www.france-visas.gouv.fr/famille-de-citoyen-europeen",
+      "source_kind": "official_guidance",
+      "index_evidence": {
+        "official_link_reviewed": "2026-10-24 per France source-list",
+        "official_text_opened": "2026-10-24 per France source-list",
+        "bundled_accepted_text": "project-authored summary only; it is not a verbatim source capture"
+      },
+      "consultation_status_default": "not_consulted",
+      "scope_caveat": "Operational/public guidance; distinguish EU/EEA/Swiss route and consult controlling legal text. Recheck page and version."
+    },
+    {
+      "source_id": "fr-ta-nantes-2105915-2105917-2021",
+      "title": "Tribunal administratif de Nantes, joined judgments nos. 2105915, 2105916 and 2105917, 29 November 2021",
+      "publisher": "Tribunal administratif de Nantes",
+      "official_url": "https://nantes.tribunal-administratif.fr/decisions-de-justice/dernieres-decisions/refus-de-delivrance-de-visa-d-entree-en-france",
+      "official_document_url": "https://nantes.tribunal-administratif.fr/Media/mediatheque-ta-nantes/import/2105915-et-s.",
+      "source_kind": "case_law",
+      "index_evidence": {
+        "official_link_reviewed": "2026-10-29",
+        "official_text_opened": "2026-10-29; landing page and linked PDF verified by scoped source review",
+        "bundled_accepted_text": "no local copy"
+      },
+      "consultation_status_default": "not_consulted",
+      "scope_caveat": "Joined, fact-specific first-instance cases concerning short-stay visa appeals for family of a Luxembourg EU citizen residing in France; pre-recodification; no precedent automation; read current law."
+    },
+    {
+      "source_id": "fr-ceseda-r221-2",
+      "title": "CESEDA Article R. 221-2",
+      "publisher": "Légifrance / Direction de l’information légale et administrative",
+      "official_url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042808094/2026-02-13",
+      "source_kind": "national_binding_law",
+      "index_evidence": {
+        "official_link_reviewed": "2026-10-29",
+        "official_text_opened": "2026-10-29; current official article page checked by scoped source review",
+        "bundled_accepted_text": "link-only; no local legal-text copy"
+      },
+      "consultation_status_default": "not_consulted",
+      "scope_caveat": "Parent scoped review identifies the free/accelerated visa rule on proof of a qualifying link; verify displayed effective version and exact application in each consultation."
+    },
+    {
+      "source_id": "fr-cja-l521-1",
+      "title": "Code de justice administrative Article L. 521-1",
+      "publisher": "Légifrance / Direction de l’information légale et administrative",
+      "official_url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006449326/2026-07-18",
+      "source_kind": "national_binding_law",
+      "index_evidence": {
+        "official_link_reviewed": "2026-10-29",
+        "official_text_opened": "2026-10-29; official article page reviewed by scoped source review",
+        "bundled_accepted_text": "link-only; no local legal-text copy"
+      },
+      "consultation_status_default": "not_consulted",
+      "scope_caveat": "Generic interim suspension framework; current displayed version, procedural posture, urgency, serious doubt and applicable national route must be checked."
+    },
+    {
+      "source_id": "fr-ce-237376-2001",
+      "title": "Conseil d’État, Section, 12 October 2001, Société Produits Roche, no. 237376",
+      "publisher": "Conseil d’État / Légifrance",
+      "official_url": "https://www.legifrance.gouv.fr/ceta/id/CETATEXT000008068733",
+      "source_kind": "case_law",
+      "index_evidence": {
+        "official_link_reviewed": "2026-10-29",
+        "official_text_opened": "2026-10-29; official decision page reviewed by scoped source review",
+        "bundled_accepted_text": "link-only; no local case-text copy"
+      },
+      "consultation_status_default": "not_consulted",
+      "scope_caveat": "Candidate supports possible interim suspension while a non-suspensive RAPO is pending, subject to criteria; do not infer relief, urgency or applicability without current case-specific review."
+    }
+  ]
+}

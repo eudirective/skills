@@ -1511,6 +1511,74 @@
           "reason_code": "legal_interpretation_belongs_to_legal_source_owner"
         }
       ]
+    },
+    {
+      "route_id": "eu_family_entry_visa_formal_refusal",
+      "owner_id": "eu_common_core",
+      "required_classes": [
+        "eu_binding_law"
+      ],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "formal_refusal_issued"
+          ],
+          "require_classes": [
+            "case_law",
+            "contrary_authority"
+          ],
+          "reason_code": "refusal_interpretation_and_counterauthority"
+        }
+      ],
+      "excluded_classes": [
+        {
+          "source_class": "national_binding_law",
+          "reason_code": "national_law_belongs_to_member_state_owner"
+        },
+        {
+          "source_class": "procedural_rule",
+          "reason_code": "national_procedure_belongs_to_member_state_owner"
+        }
+      ]
+    },
+    {
+      "route_id": "eu_family_entry_visa_formal_refusal",
+      "owner_id": "member_state_law",
+      "required_classes": [],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "formal_refusal_issued"
+          ],
+          "require_classes": [
+            "national_binding_law",
+            "procedural_rule",
+            "case_law",
+            "contrary_authority"
+          ],
+          "reason_code": "national_refusal_remedy_and_interim_route_requires_review"
+        }
+      ],
+      "excluded_classes": []
+    },
+    {
+      "route_id": "submitted_original_document_custody",
+      "owner_id": "member_state_law",
+      "required_classes": [],
+      "conditional_rules": [
+        {
+          "when_any_signal": [
+            "submitted_originals_not_returned"
+          ],
+          "require_classes": [
+            "national_binding_law",
+            "procedural_rule",
+            "official_guidance"
+          ],
+          "reason_code": "custody_and_return_route_requires_source_review"
+        }
+      ],
+      "excluded_classes": []
     }
   ]
 }

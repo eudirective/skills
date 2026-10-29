@@ -379,6 +379,21 @@ class ConsultationDashboardTests(unittest.TestCase):
         ):
             self.report(route)
 
+    def test_external_official_candidate_found_via_plugin_library_is_counted_but_not_consulted(self):
+        item = source_record(
+            "fr-france-visas-family-eu", origin="external_official",
+            response_use="identified_not_read", conversation_use="identified_not_read",
+            source_type="official visa guidance",
+        )
+        item["response_discovery_method"] = "plugin_library"
+        item["conversation_discovery_method"] = "plugin_library"
+        route = make_route(sources=[item])
+        report = self.report(route)
+        self.assertEqual(report["source_metrics"]["response"]["count"], 0)
+        self.assertEqual(report["source_origin_metrics"]["response_origin"]["plugin_library_count"], 1)
+        self.assertEqual(report["source_origin_metrics"]["response_origin"]["matched_count"], 1)
+        self.assertIn("identified not read", report["preview"])
+
     def test_external_official_text_is_separate_from_library_sections(self):
         item = source_record("https://example.gov/law/1", origin="external_official")
         route = make_route(sources=[item])

@@ -20,3 +20,8 @@ The receipt format is for abstract, privacy-minimised records. Never send a real
 ## Migration to 0.9.0
 
 Use `--target-version 0.9.0` and supply an explicit `--consultation-mode`. For Limited, supply `--limitation-json` pointing to a privacy-minimised object containing `reason_code`, `missing`, `effect`, `issue_refs`, `evidence_refs`, and `review_ids`. Provide `--workflow-reviews-json` with explicit model-led review records and `--strategy-update-json` with an explicit strategy mode and disposition, including an objective or a no-action rationale where applicable. The migrator never invents these records or that explanation. A 0.7 receipt first passes through the existing 0.8 migration; finalisation remains unperformed. Migration validates structure and privacy only; run the route gate to reconcile model-led workflow reviews, execution records and evidence before controlled release. 0.8 receipts remain readable under their historical validation rules.
+
+
+## Additive receipt 0.10.0 signal support
+
+Receipt 0.10.0 adds issue-signal identifiers for independent submitted-original custody and conditional urgency screening. It preserves the 0.9.0 receipt structure and validators; existing 0.9.0 receipts remain directly readable and do not need migration. Use 0.10.0 when recording the new signals. The 0.10.0 addition does not convert a static source candidate into consultation evidence and does not establish that an interim remedy is available.

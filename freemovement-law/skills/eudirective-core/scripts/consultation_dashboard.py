@@ -42,7 +42,7 @@ LEGAL_CATEGORIES = {
     "official_guidance", "procedural_rule", "other_legal_text",
 }
 UNRESOLVED_ISSUES = {"answered_conditionally", "source_missing", "fact_missing"}
-ISSUE_ROUTE_SCHEMAS = {"0.5.0", "0.6.0", "0.7.0", "0.8.0", "0.9.0"}
+ISSUE_ROUTE_SCHEMAS = {"0.5.0", "0.6.0", "0.7.0", "0.8.0", "0.9.0", "0.10.0"}
 OPAQUE_REF = re.compile(r"^r_[a-f0-9]{12,32}$")
 SECTION_LABELS = {
     "eu": "EU core", "at": "Austria", "be": "Belgium", "bg": "Bulgaria",
@@ -383,8 +383,6 @@ def validate_source_ledger(ledger: dict) -> dict:
                 raise DashboardError(f"source_discovery_method_missing:{scope}:{logical_id}")
             if use == "not_referenced" and discovery_method != "not_applicable":
                 raise DashboardError(f"unused_source_has_discovery_method:{scope}:{logical_id}")
-            if item["origin"] == "external_official" and discovery_method == "plugin_library":
-                raise DashboardError(f"external_source_marked_plugin_discovered:{scope}:{logical_id}")
             provenance = item[f"{scope}_provenance"]
             evidence_ref = item.get(f"{scope}_evidence_ref")
             read_evidence = item.get(f"{scope}_read_evidence")
@@ -429,11 +427,15 @@ def _source_origin_counts(entries: list[dict], scope: str, tracking: str) -> dic
             "web_search_known_count": None, "unknown_discovery_count": None,
         }
     matched = [item for item in entries if item[f"{scope}_use"] != "not_referenced"]
-    plugin_count = sum(item["origin"] == "bundled_library" for item in matched)
+    plugin_count = 0
     web_search_known = 0
     unknown_discovery = 0
     for item in matched:
         method = item.get(f"{scope}_discovery_method", "unknown")
+        # Bundle membership and discovery method are distinct. A candidate from
+        # the plugin's source index may point to an external official source.
+        if item["origin"] == "bundled_library" or method == "plugin_library":
+            plugin_count += 1
         if method == "web_search":
             web_search_known += 1
         elif method == "unknown":
@@ -1065,7 +1067,7 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
             mode_label = "🟠 Limited board"
             mode_note = "One or more declared checks remain limited; the missing item and effect are shown below."
         lines.extend([f"### Output coverage: {mode_label}", "", mode_note, ""])
-    elif route.get("schema_version") in {"0.8.0", "0.9.0"}:
+    elif route.get("schema_version") in {"0.8.0", "0.9.0", "0.10.0"}:
         mode = route["consultation_mode"]
         mode_label = "🟢 Full consultation review" if mode == "full" else "🟠 Limited consultation review"
         mode_note = (
@@ -1074,17 +1076,17 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
             "This response used a limited consultation review. Declared coverage and open items are shown separately."
         )
         lines.extend([f"### Consultation mode: {mode_label}", "", mode_note, ""])
-        if route.get("schema_version") == "0.9.0":
+        if route.get("schema_version") in {"0.9.0", "0.10.0"}:
             lines.extend(["**Model-led workflow reviews:**", ""])
             for review in route["workflow_reviews"]:
                 source_note = f" ({_humanize(review['source_outcome'])})" if review.get("source_outcome") else ""
                 detail = f" — {review['reason']}" if review.get("reason") else ""
                 lines.append(f"- {_humanize(review['review_id'])}: {_humanize(review['status'])}{source_note}{detail}.")
             lines.append("")
-        if route.get("schema_version") == "0.9.0" and mode == "limited":
+        if route.get("schema_version") in {"0.9.0", "0.10.0"} and mode == "limited":
             limitation = route["consultation_limitation"]
             lines.extend([f"**Missing:** {limitation['missing']}", f"**Effect:** {limitation['effect']}", ""])
-    if route.get("schema_version") in {"0.7.0", "0.8.0", "0.9.0"}:
+    if route.get("schema_version") in {"0.7.0", "0.8.0", "0.9.0", "0.10.0"}:
         strategy = route.get("strategy_assessment")
         if isinstance(strategy, dict):
             lines.extend(strategy_dashboard_lines(strategy))
@@ -1362,7 +1364,7 @@ def render_dashboard(route: dict, source_report: dict, route_gaps: list[str],
                 scoped_evidence("Evidence", [issue["evidence_ref"]]),
             ])
             route_record = issue_routing_by_ref.get(issue["issue_ref"], {})
-            if route.get("schema_version") in {"0.6.0", "0.7.0", "0.8.0", "0.9.0"}:
+            if route.get("schema_version") in {"0.6.0", "0.7.0", "0.8.0", "0.9.0", "0.10.0"}:
                 lines.extend(typed_issue_route_lines(route_record))
             if unresolved_mandatory_screen and primary_assessment:
                 lines.append(
@@ -1711,7 +1713,7 @@ def validate_dashboard_receipt(route: dict, evidence_index: dict[str, dict], rou
         raise DashboardError("unknown_invocation_basis_invalid")
     dashboard = route.get("dashboard")
     substantive_v07_or_v08 = (
-        route.get("schema_version") in {"0.7.0", "0.8.0", "0.9.0"}
+        route.get("schema_version") in {"0.7.0", "0.8.0", "0.9.0", "0.10.0"}
         and route.get("request_kind") in {"applicant_guidance", "source_research"}
     )
     required = (
@@ -1805,7 +1807,7 @@ def validate_dashboard_receipt(route: dict, evidence_index: dict[str, dict], rou
         expected_mode = "full" if expected_status == "reviewed" else "limited"
         if dashboard.get("mode") != expected_mode:
             raise DashboardError("dashboard_mode_does_not_match_recorded_coverage")
-    if route.get("schema_version") in {"0.8.0", "0.9.0"} and substantive_v07_or_v08:
+    if route.get("schema_version") in {"0.8.0", "0.9.0", "0.10.0"} and substantive_v07_or_v08:
         if route.get("consultation_mode") not in {"full", "limited"}:
             raise DashboardError("consultation_mode_missing_or_invalid")
     if dashboard["assessment_status"] == "partial" and not dashboard["issue_summaries"] and not _open_work(route_gaps):

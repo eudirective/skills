@@ -105,6 +105,7 @@ def validate_configuration(
         "freemovement-consultation-issue-routing/0.2.0",
         "freemovement-consultation-issue-routing/0.3.0",
         "freemovement-consultation-issue-routing/0.4.0",
+        "freemovement-consultation-issue-routing/0.5.0",
     }:
         raise SelectionError("unsupported_matrix_schema")
     signal_defs = signal_catalog(matrix)

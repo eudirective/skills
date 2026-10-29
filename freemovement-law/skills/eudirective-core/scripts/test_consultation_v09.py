@@ -10,7 +10,7 @@ from pathlib import Path
 from test_consultation_route_gate import make_strict_controlled_receipt
 from test_consultation_p0_integrated import make_research_records, RESEARCH_REF, PREFLIGHT_REF
 from consultation_route_gate import validate_route, check_strategy_assessment, RouteGateError
-from consultation_release_gate import repair_dashboard_once, controlled_release, ReleaseBindingError
+from consultation_release_gate import BOARD_HEADING_PATTERN, _board_headings, repair_dashboard_once, controlled_release, ReleaseBindingError
 from migrate_consultation_receipt import migrate_08_to_09, MigrationError
 from contract_validate import validate_obj, ContractError
 
@@ -131,6 +131,15 @@ class V09Tests(unittest.TestCase):
         route["consultation_limitation"]["review_ids"] = ["research_review", "source_review"]
         route["consultation_limitation"]["missing"] = "More information is needed."
         with self.assertRaisesRegex(RouteGateError, "too_generic"): self.validate(route)
+
+    def test_receipt_010_accepts_additive_signals_and_v09_replay_remains_valid(self):
+        legacy = self.route()
+        self.assertEqual(legacy["schema_version"], "0.9.0")
+        self.assertTrue(validate_obj("consultation-route-receipt", legacy))
+        current = copy.deepcopy(legacy)
+        current["schema_version"] = "0.10.0"
+        current["issues"][0]["signal_ids"] = ["submitted_originals_not_returned"]
+        self.assertTrue(validate_obj("consultation-route-receipt", current))
 
     def test_legacy_migration_preserves_source_and_requires_operator_input(self):
         original = v08_receipt(); snapshot = copy.deepcopy(original)
@@ -310,5 +319,33 @@ class V09Tests(unittest.TestCase):
             with self.subTest(prefix=prefix), self.assertRaisesRegex(ReleaseBindingError, error): repair_dashboard_once(result, (prefix + preview).encode())
         for text in ("## freemovement-law — Case Review\ntruncated", "## Consultation dashboard\ntruncated", "## 6. C27 case-state dashboard\ntruncated", "### Consultation dashboard\ntruncated", preview + "\n\n" + preview):
             with self.subTest(text=text), self.assertRaises(ReleaseBindingError): repair_dashboard_once(result, text.encode())
+
+    def test_truncated_consultation_board_is_rejected_without_appending_a_second_board(self):
+        digest = "a" * 64
+        result = {
+            "dashboard_required": True,
+            "dashboard_preview": (
+                "## freemovement-law — Consultation Review\n\n"
+                f"Validation: limited · receipt `{digest}`"
+            ),
+            "validation_record": {"receipt_sha256": digest, "result": "limited"},
+        }
+        answer = b"Short answer.\n\n### Consultation board\nThis section was cut off."
+        with self.assertRaisesRegex(
+            ReleaseBindingError, "dashboard_present_but_invalid_cannot_be_repaired"
+        ):
+            repair_dashboard_once(result, answer)
+
+    def test_consultation_board_heading_detector_covers_review_variants(self):
+        for heading in (
+            "## Consultation board",
+            "### Limited consultation review — France",
+            "## freemovement-law — Consultation Review",
+        ):
+            with self.subTest(heading=heading):
+                self.assertTrue(BOARD_HEADING_PATTERN.search(heading))
+        self.assertEqual(_board_headings("Text mentioning a consultation board in prose."), [])
+        self.assertEqual(_board_headings("```md\n### Consultation board\n```"), [])
+        self.assertEqual(_board_headings("> ## Consultation board\nQuoted example."), [])
 
 if __name__ == "__main__": unittest.main()

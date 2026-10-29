@@ -15,12 +15,35 @@ import re
 import sys
 from pathlib import Path
 
-from consultation_dashboard import DASHBOARD_HEADING
 from consultation_route_gate import RouteGateError, validate_route
 from contract_validate import ContractError, load_json, validate_obj
 
 
-BOARD_HEADING_PATTERN = re.compile(r"(?im)^#{1,6}\s*(?:[0-9]+[.)]\s*)?(?:freemovement-law\s*[—–:-]\s*)?(?:(?:full|limited|c27)\s+)*(?:(?:case(?:[- ]state)?|consultation)\s+(?:review|dashboard)|dashboard)\b[^\n]*")
+BOARD_HEADING_PATTERN = re.compile(r"(?im)^#{1,6}\s*(?:[0-9]+[.)]\s*)?(?:freemovement-law\s*[—–:-]\s*)?(?:(?:full|limited|c27)\s+)*(?:(?:case(?:[- ]state)?|consultation)\s+(?:review|dashboard|board)|dashboard)\b[^\n]*")
+
+
+def _board_headings(markdown: str) -> list[str]:
+    """Find board headings in Markdown prose, excluding examples and nesting."""
+    visible: list[str] = []
+    fence: tuple[str, int] | None = None
+    for line in markdown.splitlines():
+        fence_match = re.match(r"^ {0,3}(`{3,}|~{3,})", line)
+        if fence is not None:
+            if (fence_match and fence_match.group(1)[0] == fence[0]
+                    and len(fence_match.group(1)) >= fence[1]
+                    and not line[fence_match.end():].strip()):
+                fence = None
+            continue
+        if fence_match:
+            marker = fence_match.group(1)
+            fence = (marker[0], len(marker))
+            continue
+        visible.append(line)
+    text = "\n".join(visible)
+    # A commented-out or blockquoted example is not the answer's consultation board.
+    text = re.sub(r"<!--.*?(?:-->|\Z)", "", text, flags=re.DOTALL)
+    text = re.sub(r"(?m)^ {0,3}>.*$", "", text)
+    return [match.group(0) for match in BOARD_HEADING_PATTERN.finditer(text)]
 
 
 class ReleaseBindingError(ValueError):
@@ -86,15 +109,10 @@ def validate_dashboard_rendered(result: dict, answer_bytes: bytes) -> None:
         answer = answer_bytes.decode("utf-8")
     except UnicodeDecodeError as error:
         raise ReleaseBindingError("answer_not_utf8_for_dashboard_check") from error
-    headings = BOARD_HEADING_PATTERN.findall(answer)
-    if len(headings) > 1:
-        raise ReleaseBindingError("duplicate_or_conflicting_dashboard")
     trimmed = answer.rstrip()
     if not trimmed.endswith(preview):
         raise ReleaseBindingError("mandatory_dashboard_missing_or_not_at_end_of_answer")
     start = len(trimmed) - len(preview)
-    if len(headings) != 1 or (start and trimmed[start - 1] != "\n"):
-        raise ReleaseBindingError("dashboard_heading_not_standalone")
     prefix = trimmed[:start]
     comment_open = False
     for token in re.findall(r"<!--|-->", prefix):
@@ -127,6 +145,11 @@ def validate_dashboard_rendered(result: dict, answer_bytes: bytes) -> None:
             fence = None
     if fence is not None:
         raise ReleaseBindingError("dashboard_inside_unclosed_code_fence")
+    headings = _board_headings(answer)
+    if len(headings) > 1:
+        raise ReleaseBindingError("duplicate_or_conflicting_dashboard")
+    if len(headings) != 1 or (start and trimmed[start - 1] != "\n"):
+        raise ReleaseBindingError("dashboard_heading_not_standalone")
 
 
 def repair_dashboard_once(result: dict, answer_bytes: bytes) -> tuple[bytes, bool]:
@@ -144,7 +167,7 @@ def repair_dashboard_once(result: dict, answer_bytes: bytes) -> tuple[bytes, boo
         answer = answer_bytes.decode("utf-8")
     except UnicodeDecodeError as error:
         raise ReleaseBindingError("answer_not_utf8_for_dashboard_repair") from error
-    if DASHBOARD_HEADING in answer or BOARD_HEADING_PATTERN.search(answer):
+    if _board_headings(answer):
         raise ReleaseBindingError("dashboard_present_but_invalid_cannot_be_repaired")
     separator = b"\n" if answer_bytes.endswith(b"\n") else b"\n\n"
     repaired = answer_bytes + separator + preview.encode("utf-8")
@@ -216,7 +239,7 @@ def controlled_release(receipt_path: Path, answer_path: Path) -> bytes:
         receipt = json.loads(first_receipt.decode("utf-8"))
     except (UnicodeDecodeError, json.JSONDecodeError) as error:
         raise ReleaseBindingError("receipt_json_invalid") from error
-    if receipt.get("schema_version") not in {"0.5.0", "0.6.0", "0.7.0", "0.8.0", "0.9.0"} or receipt.get("request_kind") not in {
+    if receipt.get("schema_version") not in {"0.5.0", "0.6.0", "0.7.0", "0.8.0", "0.9.0", "0.10.0"} or receipt.get("request_kind") not in {
         "applicant_guidance", "source_research",
     }:
         raise ReleaseBindingError("controlled_release_requires_receipt_0_5_or_later")

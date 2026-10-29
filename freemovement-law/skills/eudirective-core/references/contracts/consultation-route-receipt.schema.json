@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Consultation route receipt 0.9.0 (legacy 0.1.0-0.8.0 readable)",
+  "title": "Consultation route receipt 0.10.0 (0.1.0–0.10.0 readable)",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -27,7 +27,8 @@
         "0.6.0",
         "0.7.0",
         "0.8.0",
-        "0.9.0"
+        "0.9.0",
+        "0.10.0"
       ]
     },
     "route_ref": {
@@ -1122,7 +1123,10 @@
       "if": {
         "properties": {
           "schema_version": {
-            "const": "0.9.0"
+            "enum": [
+              "0.9.0",
+              "0.10.0"
+            ]
           },
           "request_kind": {
             "enum": [
@@ -1470,7 +1474,10 @@
       "if": {
         "properties": {
           "schema_version": {
-            "const": "0.9.0"
+            "enum": [
+              "0.9.0",
+              "0.10.0"
+            ]
           },
           "request_kind": {
             "enum": [
@@ -2608,7 +2615,11 @@
               "post_issuance_event",
               "withdrawal_or_transfer_event",
               "eu_family_visa_procedure_enquiry",
-              "preventive_strategy_requested"
+              "preventive_strategy_requested",
+              "submitted_originals_not_returned",
+              "all_submitted_originals_returned",
+              "routine_copy_or_translation_request",
+              "urgent_irreversible_harm"
             ]
           }
         },
@@ -3243,7 +3254,11 @@
         "post_issuance_event",
         "withdrawal_or_transfer_event",
         "eu_family_visa_procedure_enquiry",
-        "preventive_strategy_requested"
+        "preventive_strategy_requested",
+        "submitted_originals_not_returned",
+        "all_submitted_originals_returned",
+        "routine_copy_or_translation_request",
+        "urgent_irreversible_harm"
       ]
     },
     "evidence": {

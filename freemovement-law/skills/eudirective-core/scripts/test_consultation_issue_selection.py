@@ -478,6 +478,182 @@ class ConsultationIssueSelectionTests(unittest.TestCase):
         with self.assertRaisesRegex(selector.SelectionError, "proceeding_id_must_be_synthetic_sequence_id"):
             selector.select_checks(fixture(("actual-country-case", ["directive_scope_question"])))
 
+    def test_reported_eu_family_formal_refusal_selects_directive_route_not_article32(self) -> None:
+        result = selector.select_checks({
+            "fixture_kind": "synthetic_abstract",
+            "proceedings": [{
+                "proceeding_id": "p_1",
+                "procedure_type": "eu_family_entry_visa",
+                "signal_ids": ["formal_refusal_issued"],
+            }],
+        })
+        proceeding = result["proceedings"][0]
+        routes = {item["route_id"]: item for item in proceeding["issue_routes"]}
+        self.assertIn("eu_family_entry_visa_formal_refusal", routes)
+        self.assertEqual(routes["eu_family_entry_visa_formal_refusal"]["scope_status"], "applicable")
+        selected = selected_ids(result)
+        self.assertTrue({
+            "eu_scope.directive_scope",
+            "eu_scope.movement_exercised",
+            "eu_scope.family_recognition",
+            "authority.actual_ground",
+            "authority.position_provenance",
+            "authority.reasons_given",
+            "lifecycle.decision_notified",
+            "timing.service_date",
+            "remedies.formal_appeal",
+            "timing.appeal_limit",
+        } <= selected)
+        self.assertNotIn("authority.visa_code_article32_refusal_remedy", selected)
+
+    def test_eu_family_refusal_route_does_not_trigger_before_lodgement(self) -> None:
+        result = selector.select_checks({
+            "fixture_kind": "synthetic_abstract",
+            "proceedings": [{
+                "proceeding_id": "p_1",
+                "procedure_type": "eu_family_entry_visa",
+                "signal_ids": ["pre_lodgement_access_obstruction"],
+            }],
+        })
+        self.assertNotIn("eu_family_entry_visa_formal_refusal", route_ids(result))
+
+    def test_retained_originals_are_separate_from_gdpr_and_checklist_issues(self) -> None:
+        result = selector.select_checks({
+            "fixture_kind": "synthetic_abstract",
+            "proceedings": [{
+                "proceeding_id": "p_1",
+                "procedure_type": "eu_family_entry_visa",
+                "signal_ids": ["submitted_originals_not_returned"],
+            }],
+        })
+        proceeding = result["proceedings"][0]
+        self.assertIn("submitted_original_document_custody", route_ids(result))
+        self.assertTrue({
+            "lifecycle.documents_presented",
+            "documents.copy_original",
+            "documents.accepted_rejected_returned",
+            "access.service_provider_accountability",
+        } <= selected_ids(result))
+        self.assertNotIn("gdpr.lawful_basis", selected_ids(result))
+
+    def test_routine_copy_request_does_not_trigger_retained_originals_route(self) -> None:
+        result = selector.select_checks({
+            "fixture_kind": "synthetic_abstract",
+            "proceedings": [{
+                "proceeding_id": "p_1",
+                "procedure_type": "eu_family_entry_visa",
+                "signal_ids": ["routine_copy_or_translation_request"],
+            }],
+        })
+        self.assertNotIn("submitted_original_document_custody", route_ids(result))
+
+    def test_returned_originals_and_copies_do_not_trigger_retained_originals_route(self) -> None:
+        result = selector.select_checks({
+            "fixture_kind": "synthetic_abstract",
+            "proceedings": [{
+                "proceeding_id": "p_1",
+                "procedure_type": "eu_family_entry_visa",
+                "signal_ids": ["all_submitted_originals_returned"],
+            }],
+        })
+        self.assertNotIn("submitted_original_document_custody", route_ids(result))
+
+    def test_gdpr_request_is_a_separate_track_from_physical_document_return(self) -> None:
+        result = selector.select_checks({
+            "fixture_kind": "synthetic_abstract",
+            "proceedings": [{
+                "proceeding_id": "p_1",
+                "procedure_type": "eu_family_entry_visa",
+                "signal_ids": ["submitted_originals_not_returned", "personal_data_processing_question"],
+            }],
+        })
+        routes = route_ids(result)
+        self.assertIn("submitted_original_document_custody", routes)
+        self.assertIn("personal_data_protection", routes)
+        self.assertIn("gdpr.lawful_basis", selected_ids(result))
+        with self.assertRaisesRegex(selector.SelectionError, "contradictory_signals"):
+            selector.select_checks({
+                "fixture_kind": "synthetic_abstract",
+                "proceedings": [{
+                    "proceeding_id": "p_1",
+                    "procedure_type": "eu_family_entry_visa",
+                    "signal_ids": ["submitted_originals_not_returned", "all_submitted_originals_returned"],
+                }],
+            })
+
+    def test_interim_protection_is_conditional_on_urgent_irreversible_harm(self) -> None:
+        urgent = selector.select_checks({
+            "fixture_kind": "synthetic_abstract",
+            "proceedings": [{
+                "proceeding_id": "p_1",
+                "procedure_type": "eu_family_entry_visa",
+                "signal_ids": ["formal_refusal_issued", "urgent_irreversible_harm"],
+            }],
+        })
+        ordinary = selector.select_checks({
+            "fixture_kind": "synthetic_abstract",
+            "proceedings": [{
+                "proceeding_id": "p_1",
+                "procedure_type": "eu_family_entry_visa",
+                "signal_ids": ["formal_refusal_issued"],
+            }],
+        })
+        self.assertIn("remedies.interim_protection", selected_ids(urgent))
+        self.assertNotIn("remedies.interim_protection", selected_ids(ordinary))
+
+    def test_france_source_candidate_routing_resolves_ids_and_package_path(self) -> None:
+        repository_root = selector.ROOT.parents[2]
+        registry_path = selector.ROOT / "references/national-source-routing.json"
+        routing = json.loads(registry_path.read_text(encoding="utf-8"))
+        index_path = repository_root / "freemovement-law-fr/references/source-library/france/references/consultation-issue-source-index.json"
+        index = json.loads(index_path.read_text(encoding="utf-8"))
+        source_ids = {item["source_id"] for item in index["sources"]}
+        route_ids = {item["route_id"] for item in MATRIX["routes"]}
+        france_routes = [item for item in routing["topic_candidate_routing"] if item["country_code"] == "FR"]
+        self.assertEqual(len(france_routes), 2)
+        for item in france_routes:
+            with self.subTest(route_id=item["route_id"]):
+                self.assertEqual(item["country_plugin"], "fm-france")
+                self.assertIn(item["route_id"], route_ids)
+                self.assertTrue((repository_root / "freemovement-law-fr" / item["source_index"]).is_file())
+                self.assertTrue(set(item["candidate_source_ids"]) <= source_ids)
+        skill_path = repository_root / "freemovement-law-fr/skills/eudirective-library-fr/SKILL.md"
+        relative_index = repository_root / "freemovement-law-fr/skills/eudirective-library-fr/../../references/source-library/france/references/consultation-issue-source-index.json"
+        self.assertTrue(relative_index.resolve().is_file())
+        skill_text = skill_path.read_text(encoding="utf-8")
+        self.assertIn("../../references/source-library/france/references/consultation-issue-source-index.json", skill_text)
+        self.assertIn("../../references/source-library/france/references/", skill_text)
+        self.assertNotIn("`references/source-library/france/references/`", skill_text)
+
+    def test_interim_absence_is_explicitly_visible_as_not_applicable_or_unknown(self) -> None:
+        contract = (selector.ROOT / "references/consultation-routing.md").read_text(encoding="utf-8")
+        outcomes = (selector.ROOT / "references/consultation-outcomes-and-remedies.md").read_text(encoding="utf-8")
+        self.assertIn("use `not_applicable`", contract)
+        self.assertIn("use `unknown`", contract)
+        self.assertIn("potentially irreversible, time-sensitive harm", outcomes)
+
+    def test_interim_screen_is_not_selected_by_remedy_route_without_both_refusal_and_urgency(self) -> None:
+        for signals in (["formal_refusal_issued", "remedy_or_solvit_or_supervisory_complaint"], ["urgent_irreversible_harm", "remedy_or_solvit_or_supervisory_complaint"], ["urgent_irreversible_harm"]):
+            with self.subTest(signals=signals):
+                result = selector.select_checks(fixture(("p_1", list(signals))))
+                self.assertNotIn("remedies.interim_protection", selected_ids(result))
+
+    def test_each_ordinary_visa_code_refusal_route_has_conditional_interim_screen(self) -> None:
+        expected = {
+            "visa_code_article18_competence_outcome": ("outcome_article18_not_competent", "article18_not_competent"),
+            "visa_code_article19_inadmissibility_outcome": ("outcome_article19_inadmissible", "article19_inadmissible"),
+            "visa_code_article32_substantive_refusal_outcome": ("outcome_article32_substantive_refusal", "article32_substantive_refusal"),
+        }
+        routes = {route["route_id"]: route for route in MATRIX["routes"]}
+        for route_id, (signal, outcome) in expected.items():
+            route = routes[route_id]
+            self.assertEqual(route["required_outcome_classification"], outcome)
+            self.assertTrue(any(condition["when_any_signal"] == ["urgent_irreversible_harm"] and "remedies.interim_protection" in condition["check_ids"] for condition in route["conditional_checks"]))
+            urgent = selector.select_checks({"fixture_kind":"synthetic_abstract","proceedings":[{"proceeding_id":"p_1","procedure_type":"ordinary_short_stay_visa","administrative_outcome_classification":outcome,"signal_ids":[signal,"urgent_irreversible_harm"]}]})
+            ordinary = selector.select_checks({"fixture_kind":"synthetic_abstract","proceedings":[{"proceeding_id":"p_1","procedure_type":"ordinary_short_stay_visa","administrative_outcome_classification":outcome,"signal_ids":[signal]}]})
+            self.assertIn("remedies.interim_protection", selected_ids(urgent))
+            self.assertNotIn("remedies.interim_protection", selected_ids(ordinary))
+
 
 if __name__ == "__main__":
     unittest.main()

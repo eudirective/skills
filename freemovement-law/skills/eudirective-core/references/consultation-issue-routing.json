@@ -805,6 +805,15 @@
           "when_any_signal": [
             "appeal_deadline_risk"
           ]
+        },
+        {
+          "when_any_signal": [
+            "urgent_irreversible_harm"
+          ],
+          "check_ids": [
+            "remedies.interim_protection"
+          ],
+          "reason": "If the reported decision/outcome is connected to potentially irreversible, time-sensitive harm, screen conditional interim protection separately; urgency does not guarantee eligibility and does not replace the ordinary appeal."
         }
       ],
       "mandatory_checks": [
@@ -866,6 +875,15 @@
           "when_any_signal": [
             "appeal_deadline_risk"
           ]
+        },
+        {
+          "when_any_signal": [
+            "urgent_irreversible_harm"
+          ],
+          "check_ids": [
+            "remedies.interim_protection"
+          ],
+          "reason": "If the reported decision/outcome is connected to potentially irreversible, time-sensitive harm, screen conditional interim protection separately; urgency does not guarantee eligibility and does not replace the ordinary appeal."
         }
       ],
       "mandatory_checks": [
@@ -917,7 +935,17 @@
       ]
     },
     {
-      "conditional_checks": [],
+      "conditional_checks": [
+        {
+          "when_any_signal": [
+            "urgent_irreversible_harm"
+          ],
+          "check_ids": [
+            "remedies.interim_protection"
+          ],
+          "reason": "If the reported decision/outcome is connected to potentially irreversible, time-sensitive harm, screen conditional interim protection separately; urgency does not guarantee eligibility and does not replace the ordinary appeal."
+        }
+      ],
       "mandatory_checks": [
         "authority.administrative_outcome_classification",
         "authority.visa_code_article32_refusal_remedy",
@@ -1377,11 +1405,149 @@
         "processing_delay_or_clock_trigger",
         "remedy_or_supervisory_track"
       ]
+    },
+    {
+      "route_id": "eu_family_entry_visa_formal_refusal",
+      "neutral_description": "Review a reported formal refusal in a Directive 2004/38 EU-family entry-visa proceeding without treating it as an ordinary Visa Code Article 32 refusal.",
+      "when_any_signal": [
+        "formal_refusal_issued"
+      ],
+      "procedure_scope_id": "eu_family_entry_visa_formal_refusal",
+      "mandatory_checks": [
+        "eu_scope.directive_scope",
+        "eu_scope.movement_exercised",
+        "eu_scope.family_recognition",
+        "authority.actual_ground",
+        "authority.position_provenance",
+        "authority.reasons_given",
+        "lifecycle.decision_notified",
+        "proof.document_authenticity",
+        "timing.service_date",
+        "timing.appeal_limit",
+        "remedies.formal_appeal",
+        "remedies.competent_authority",
+        "eu_scope.visa_code_lex_specialis"
+      ],
+      "conditional_checks": [
+        {
+          "when_any_signal": [
+            "urgent_irreversible_harm"
+          ],
+          "check_ids": [
+            "remedies.interim_protection"
+          ],
+          "reason": "If potentially irreversible, time-sensitive harm is reported in connection with the refusal, screen interim protection conditionally; national court, procedure, criteria and interaction with any appeal require current official-source review."
+        }
+      ],
+      "triggering_conditions": [
+        "A formal refusal is reported within a typed EU-family entry-visa proceeding; distinguish reported information from an inspected notice and verified grounds."
+      ],
+      "negative_applicability": [
+        "A pre-lodgement access barrier without a formal refusal does not trigger this route.",
+        "A Type C label alone does not select the Article 32 substantive-refusal remedy.",
+        "Do not infer written reasons, service, appeal authority, deadline, or authenticity from a report of refusal."
+      ],
+      "related_independent_issues": [
+        "remedy_or_supervisory_track",
+        "submitted_original_document_custody"
+      ],
+      "source_owner_ids": [
+        "eu_common_core",
+        "member_state_law"
+      ],
+      "conditional_source_owner_ids": [],
+      "source_references": [
+        "eu:32004l0038",
+        "eu:32009r0810",
+        "references/consultation-outcomes-and-remedies.md",
+        "references/c5c-evidence-deadlines-authority.md"
+      ],
+      "potential_attack_angle_review": {
+        "required": true,
+        "review_topics": [
+          "EU-family Directive route versus Visa Code framework",
+          "scope and qualifying movement/family recognition",
+          "actual ground, notice and provenance",
+          "national appeal and interim-relief route",
+          "contrary authority and fact-specific exceptions"
+        ]
+      },
+      "regime_focus": [
+        "Directive 2004/38 EU-family entry facilitation",
+        "Visa Code interaction and lex specialis",
+        "national refusal remedies only after official-source review"
+      ],
+      "required_outcome_classification": null,
+      "accepted_outcome_classifications": [],
+      "requires_post_issuance_event_record": null
+    },
+    {
+      "route_id": "submitted_original_document_custody",
+      "neutral_description": "Handle an independently reported failure to return submitted original documents as a custody, accounting and safe-return issue.",
+      "when_any_signal": [
+        "submitted_originals_not_returned"
+      ],
+      "mandatory_checks": [
+        "case_intake.proceedings_identified",
+        "lifecycle.documents_presented",
+        "documents.already_possessed",
+        "documents.copy_original",
+        "documents.accepted_rejected_returned",
+        "access.service_provider_accountability",
+        "authority.position_provenance",
+        "authority.supervisory_path",
+        "remedies.competent_authority"
+      ],
+      "conditional_checks": [],
+      "triggering_conditions": [
+        "A submitted original is reported as still unreturned after the relevant process event. Identify inventory, actual custodian, current status and stated reason, request for accounting and safe return, submission/receipt trail, and follow-up trigger."
+      ],
+      "negative_applicability": [
+        {
+          "signal_id": "all_submitted_originals_returned",
+          "opposes_signal_id": "submitted_originals_not_returned",
+          "excluded_check_ids": [
+            "documents.accepted_rejected_returned",
+            "authority.supervisory_path",
+            "remedies.competent_authority"
+          ]
+        }
+      ],
+      "related_independent_issues": [
+        "remedy_or_supervisory_track",
+        "personal_data_protection"
+      ],
+      "source_owner_ids": [
+        "member_state_law"
+      ],
+      "conditional_source_owner_ids": [],
+      "source_references": [
+        "references/consultation-issue-model.md",
+        "references/consultation-outcomes-and-remedies.md"
+      ],
+      "potential_attack_angle_review": {
+        "required": true,
+        "review_topics": [
+          "whether originals were actually submitted and remain unreturned",
+          "identity of actual custodian and any handoff",
+          "stated legal or operational reason and available copy",
+          "safe return and independent grievance route",
+          "separate personal-data issue only where processing is raised"
+        ]
+      },
+      "regime_focus": [
+        "physical document custody and return",
+        "independent administrative/process grievance",
+        "separate GDPR track where triggered"
+      ],
+      "required_outcome_classification": null,
+      "accepted_outcome_classifications": [],
+      "requires_post_issuance_event_record": null
     }
   ],
   "routing_review_scope": "Review signal selection, source-owner routing, source-class assumptions and attack-screen false-positive boundaries before comprehensive strict releases.",
   "routing_review_status": "pending_independent_review",
-  "schema": "freemovement-consultation-issue-routing/0.4.0",
+  "schema": "freemovement-consultation-issue-routing/0.5.0",
   "signal_catalog": [
     {
       "neutral_description": "Personal, material, or territorial scope of a claimed Directive-based family route is in issue.",
@@ -1532,6 +1698,24 @@
     {
       "signal_id": "preventive_strategy_requested",
       "neutral_description": "The user expressly asks for prevention, planning, or strategy concerning an EU-family visa procedure; this does not imply an adverse event or infringement."
+    },
+    {
+      "signal_id": "submitted_originals_not_returned",
+      "neutral_description": "Submitted original documents are reported not returned after the relevant decision or process event."
+    },
+    {
+      "signal_id": "all_submitted_originals_returned",
+      "neutral_description": "The abstract record says all submitted originals have been returned; this opposes a report of unreturned originals.",
+      "polarity": "negative",
+      "opposes_signal_id": "submitted_originals_not_returned"
+    },
+    {
+      "signal_id": "routine_copy_or_translation_request",
+      "neutral_description": "The request concerns a copy or translation and does not report that a submitted original remains unreturned."
+    },
+    {
+      "signal_id": "urgent_irreversible_harm",
+      "neutral_description": "Potentially irreversible, time-sensitive harm is reported in connection with an otherwise applicable visa-refusal proceeding."
     }
   ],
   "source_owners": {
