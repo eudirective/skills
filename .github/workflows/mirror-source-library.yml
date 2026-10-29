@@ -15,19 +15,20 @@ permissions:
   contents: write
 
 concurrency:
-  group: mirror-source-library
+  group: mirror-source-library-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
   distribute:
     name: Build and sync source packages
-    if: github.ref == 'refs/heads/main'
+    if: github.ref_type == 'branch'
     runs-on: ubuntu-latest
 
     steps:
       - name: Check out skills
         uses: actions/checkout@v7
         with:
+          ref: ${{ github.ref }}
           path: skills
 
       - name: Check out public source data
@@ -59,18 +60,27 @@ jobs:
             --previous-root skills \
             --output-root "$RUNNER_TEMP/fm-source-stage"
 
-      - name: Commit and push directly to main
+      - name: Commit and push directly to triggering branch
         shell: bash
         run: |
           set -euo pipefail
+          if [[ "$GITHUB_REF" != refs/heads/* ]]; then
+            echo "::error::Expected a branch ref, got $GITHUB_REF"
+            exit 1
+          fi
+          target_branch="${GITHUB_REF#refs/heads/}"
+          if [[ -z "$target_branch" ]]; then
+            echo "::error::Could not determine the triggering branch"
+            exit 1
+          fi
           max_attempts=3
           git -C skills config user.name "eudirective"
           git -C skills config user.email "eudirective@proton.me"
 
           for attempt in $(seq 1 "$max_attempts"); do
-            # Rebuild against the latest main after every rejected concurrent update.
-            git -C skills fetch --no-tags origin main
-            git -C skills reset --hard origin/main
+            # Rebuild against the latest triggering branch after every rejected concurrent update.
+            git -C skills fetch --no-tags origin "refs/heads/$target_branch:refs/remotes/origin/$target_branch"
+            git -C skills reset --hard "refs/remotes/origin/$target_branch"
             rm -rf skills/scripts/source-distribution/__pycache__
             upstream_revision="$(git -C public-data rev-parse HEAD)"
             rm -rf "$RUNNER_TEMP/fm-source-stage"
@@ -112,15 +122,15 @@ jobs:
             install -D -m 0644 "$stage/migration-map.json" skills/migration-map.json
             install -D -m 0644 "$stage/marketplace.json" skills/.agents/plugins/marketplace.json
 
-            # This attempt starts from a clean main checkout; stage the generated distribution as a whole.
+            # This attempt starts from a clean checkout of the triggering branch; stage the generated distribution as a whole.
             git -C skills add -A
             if git -C skills diff --cached --quiet; then
-              echo "Generated packages already match main"
+              echo "Generated packages already match $target_branch"
               exit 0
             fi
             git -C skills commit -m "Distribute national source plugins"
-            if git -C skills push origin HEAD:refs/heads/main; then
-              echo "Source packages synchronized directly to main"
+            if git -C skills push origin "HEAD:refs/heads/$target_branch"; then
+              echo "Source packages synchronized directly to $target_branch"
               exit 0
             fi
             if [ "$attempt" -lt "$max_attempts" ]; then
