@@ -1,0 +1,3641 @@
+{
+  "schema_version": 1,
+  "jurisdiction": "BE",
+  "jurisdiction_name": "belgium",
+  "updated": "2026-10-29",
+  "identity_rule": "Existing catalogue IDs are preserved. Exact official URLs, CELEX and ELI identities are joined; language, edition, link and local-copy representations remain distinct. Potential cross-record matches are surfaced instead of silently merged.",
+  "source_count": 49,
+  "unique_identity_count": 43,
+  "unresolved_identity_entry_count": 3,
+  "unresolved_identity_matches": [
+    {
+      "official_url": "https://dofi.ibz.be/en/themes/citizens-european-union/family-reunification",
+      "entry_ids": [
+        "be-02-immigration-office-guidance-for-family-members-of-eu-citizens",
+        "be-eu-family-guidance"
+      ],
+      "reason": "same official URL is assigned to multiple differently titled catalogue entries"
+    },
+    {
+      "official_url": "https://ejustice.just.fgov.be/eli/loi/1997/11/12/1997000893/justel",
+      "entry_ids": [
+        "be-publicity-provinces-municipalities-1997-fr",
+        "be-publicity-provinces-municipalities-1997-fr / -nl"
+      ],
+      "reason": "same official URL is assigned to multiple differently titled catalogue entries"
+    }
+  ],
+  "source_list_file": "references/source-list.md",
+  "entries": [
+    {
+      "id": "be-01-law-of-16-july-2004-establishing-the-code-of-private-international-law",
+      "title": "Wet van 16 juli 2004 houdende het Wetboek van internationaal privaatrecht — Dutch Justel record",
+      "source_type": "national_legislation",
+      "official_urls": [
+        "https://ejustice.just.fgov.be/eli/wet/2004/07/16/2004009511/justel"
+      ],
+      "source_identity_id": "be:url:c0f05b0f292e4655da21",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "be:url:c0f05b0f292e4655da21#local:nl:639812004b02",
+        "be:url:c0f05b0f292e4655da21#url:nl:ce9c83c87607"
+      ],
+      "representations": [
+        {
+          "kind": "local_artifact",
+          "language": "nl",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/legislation/be-code-pil-nl.md",
+          "representation_id": "be:url:c0f05b0f292e4655da21#local:nl:639812004b02",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "nl",
+          "edition": "undated",
+          "url": "https://ejustice.just.fgov.be/eli/wet/2004/07/16/2004009511/justel",
+          "path": null,
+          "representation_id": "be:url:c0f05b0f292e4655da21#url:nl:ce9c83c87607",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/36"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 42,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and search outcome",
+            "Retrieval shape and material route constraint"
+          ],
+          "cells": [
+            "be-01-law-of-16-july-2004-establishing-the-code-of-private-international-law",
+            "[Private International Law Code, Dutch Justel](https://www.ejustice.just.fgov.be/eli/wet/2004/07/16/2004009511/justel) — partial functional match",
+            "Dutch consolidation checked 2026-10-24, updated through 2026-06-12; local copy accepted at [`documents/legislation/be-code-pil-nl.md`](../documents/legislation/be-code-pil-nl.md)",
+            "Separate Dutch representation of NUMAC 2004009511; Articles 27, 30 and 31 checked."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/local_copy_decisions/7",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-02-immigration-office-guidance-for-family-members-of-eu-citizens",
+      "title": "Immigration Office guidance for family members of EU citizens — prior family page",
+      "source_type": "official_guidance",
+      "official_urls": [
+        "https://dofi.ibz.be/en/themes/citizens-european-union/family",
+        "https://dofi.ibz.be/en/themes/citizens-european-union/family-reunification"
+      ],
+      "source_identity_id": "be:ambiguous:be-02-immigration-office-guidance-for-family-members-of-eu-citizens:983ddccbee96",
+      "identity_resolution_status": "unresolved",
+      "identity_resolution_basis": "official URL is shared by distinct catalogue IDs with different titles",
+      "status_categories": [
+        "pending",
+        "historical",
+        "not_relied_upon"
+      ],
+      "representation_ids": [
+        "be:ambiguous:be-02-immigration-office-guidance-for-family-members-of-eu-citizens:983ddccbee96#url:en:3ed44ba2d9ef",
+        "be:ambiguous:be-02-immigration-office-guidance-for-family-members-of-eu-citizens:983ddccbee96#url:en:99c088998cd2"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://dofi.ibz.be/en/themes/citizens-european-union/family-reunification",
+          "path": null,
+          "representation_id": "be:ambiguous:be-02-immigration-office-guidance-for-family-members-of-eu-citizens:983ddccbee96#url:en:3ed44ba2d9ef",
+          "acceptance_status": [
+            "pending",
+            "historical",
+            "not_relied_upon"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://dofi.ibz.be/en/themes/citizens-european-union/family",
+          "path": null,
+          "representation_id": "be:ambiguous:be-02-immigration-office-guidance-for-family-members-of-eu-citizens:983ddccbee96#url:en:99c088998cd2",
+          "acceptance_status": [
+            "pending",
+            "historical",
+            "not_relied_upon"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/37"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 43,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and search outcome",
+            "Retrieval shape and material route constraint"
+          ],
+          "cells": [
+            "be-02-immigration-office-guidance-for-family-members-of-eu-citizens",
+            "[Prior IBZ family route](https://dofi.ibz.be/en/themes/citizens-european-union/family) — superseded",
+            "Redirects to the current family-reunification route; old text is not retained as a final document",
+            "Already represented by the current route; that page itself remains incomplete and link-only."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/not_relied_upon/0",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-05-federal-justice-guidance-recognition-registration-foreign-adoptions",
+      "title": "Federal Justice guidance: recognition and registration of foreign adoptions",
+      "source_type": "official_guidance",
+      "official_urls": [
+        "https://justice.belgium.be/fr/themes_et_dossiers/personnes_et_familles/adoption/adoption_a_letranger"
+      ],
+      "source_identity_id": "be:url:501e41d6a36b80a7acd3",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "be:url:501e41d6a36b80a7acd3#local:fr:f7ea6a86e3a3",
+        "be:url:501e41d6a36b80a7acd3#url:fr:62c1e116a29a"
+      ],
+      "representations": [
+        {
+          "kind": "local_artifact",
+          "language": "fr",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/guidance/be-justice-international-adoption.md",
+          "representation_id": "be:url:501e41d6a36b80a7acd3#local:fr:f7ea6a86e3a3",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "fr",
+          "edition": "undated",
+          "url": "https://justice.belgium.be/fr/themes_et_dossiers/personnes_et_familles/adoption/adoption_a_letranger",
+          "path": null,
+          "representation_id": "be:url:501e41d6a36b80a7acd3#url:fr:62c1e116a29a",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/38"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 44,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and search outcome",
+            "Retrieval shape and material route constraint"
+          ],
+          "cells": [
+            "be-05-federal-justice-guidance-recognition-registration-foreign-adoptions",
+            "[Federal Justice guidance on adoption abroad](https://www.justice.belgium.be/fr/themes_et_dossiers/personnes_et_familles/adoption/adoption_a_letranger) — related source",
+            "Official page snapshot surfaced through the official `www` route (crawl reported about five days before 2026-10-24); dated snapshot accepted at [`documents/guidance/be-justice-international-adoption.md`](../documents/guidance/be-justice-international-adoption.md)",
+            "No publication/update date is displayed. Administrative guidance only; governing law and Community-level roles remain separate."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/local_copy_decisions/28",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-administrative-motivation-act",
+      "title": "Law of 29 July 1991 on the formal statement of reasons for administrative acts",
+      "source_type": "national_legislation",
+      "official_urls": [
+        "https://ejustice.just.fgov.be/eli/loi/1991/07/29/1991000416/justel"
+      ],
+      "source_identity_id": "be:url:5f70a53c3c749537880d",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "be:url:5f70a53c3c749537880d#local:fr:2592d8eea204",
+        "be:url:5f70a53c3c749537880d#local:nl:0c5f8bc4ac38",
+        "be:url:5f70a53c3c749537880d#url:fr:a09500f8a40f"
+      ],
+      "representations": [
+        {
+          "kind": "local_artifact",
+          "language": "fr",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/legislation/be-administrative-motivation-act.md",
+          "representation_id": "be:url:5f70a53c3c749537880d#local:fr:2592d8eea204",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "local_artifact",
+          "language": "nl",
+          "edition": "2018",
+          "url": null,
+          "path": "documents/legislation/be-flanders-bestuursdecreet-2018-nl.md",
+          "representation_id": "be:url:5f70a53c3c749537880d#local:nl:0c5f8bc4ac38",
+          "acceptance_status": [
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "fr",
+          "edition": "undated",
+          "url": "https://ejustice.just.fgov.be/eli/loi/1991/07/29/1991000416/justel",
+          "path": null,
+          "representation_id": "be:url:5f70a53c3c749537880d#url:fr:a09500f8a40f",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/23"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 35,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and search outcome",
+            "Retrieval shape and material route constraint"
+          ],
+          "cells": [
+            "be-administrative-motivation-act",
+            "[Law of 29 July 1991 on formal reasons for administrative acts](https://www.ejustice.just.fgov.be/eli/loi/1991/07/29/1991000416/justel) — related source",
+            "Current Justel record checked 2026-10-24; seven articles and publisher identity verified; local copy accepted at [`documents/legislation/be-administrative-motivation-act.md`](../documents/legislation/be-administrative-motivation-act.md)",
+            "General reason-giving statute; not an immigration-specific appeals code."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/local_copy_decisions/4",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-annex-19-fr",
+      "title": "Annexe 19 — application for registration certificate / Swiss national registration application",
+      "source_type": "official_form",
+      "official_urls": [
+        "https://dofi.ibz.be/sites/default/files/2025-09/Annexe%2019_2025_0.pdf"
+      ],
+      "source_identity_id": "be:url:44f7e051b553d7edbcef",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "be:url:44f7e051b553d7edbcef#local:fr:71c8b056f0a3",
+        "be:url:44f7e051b553d7edbcef#url:fr:1a00b9da141a"
+      ],
+      "representations": [
+        {
+          "kind": "local_artifact",
+          "language": "fr",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/forms/be-annex-19-fr.pdf",
+          "representation_id": "be:url:44f7e051b553d7edbcef#local:fr:71c8b056f0a3",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "fr",
+          "edition": "undated",
+          "url": "https://dofi.ibz.be/sites/default/files/2025-09/Annexe%2019_2025_0.pdf",
+          "path": null,
+          "representation_id": "be:url:44f7e051b553d7edbcef#url:fr:1a00b9da141a",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/8"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 20,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and search outcome",
+            "Retrieval shape and material route constraint"
+          ],
+          "cells": [
+            "be-annex-19-fr",
+            "[Annexe 19](https://dofi.ibz.be/sites/default/files/2025-09/Annexe%2019_2025_0.pdf) — partial functional match",
+            "Official one-page PDF reviewed and preserved byte-for-byte at [`documents/forms/be-annex-19-fr.pdf`](../documents/forms/be-annex-19-fr.pdf); it identifies the registration application and cites relevant Immigration Law articles",
+            "Versioned PDF; rediscover from the annex index rather than pinning the file URL"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/local_copy_decisions/18",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-annex-19ter-fr",
+      "title": "Annexe 19ter — application for a residence card by a family member of an EU citizen or Swiss national",
+      "source_type": "official_form",
+      "official_urls": [
+        "https://dofi.ibz.be/sites/default/files/2021-12/Annexe%2019ter_2015.pdf"
+      ],
+      "source_identity_id": "be:url:797eee1210c2154a3536",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy",
+        "not_relied_upon"
+      ],
+      "representation_ids": [
+        "be:url:797eee1210c2154a3536#local:fr:35ef70ed0336",
+        "be:url:797eee1210c2154a3536#url:fr:c4592ab938f6"
+      ],
+      "representations": [
+        {
+          "kind": "local_artifact",
+          "language": "fr",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/forms/be-annex-19ter-fr-specimen.pdf",
+          "representation_id": "be:url:797eee1210c2154a3536#local:fr:35ef70ed0336",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "fr",
+          "edition": "undated",
+          "url": "https://dofi.ibz.be/sites/default/files/2021-12/Annexe%2019ter_2015.pdf",
+          "path": null,
+          "representation_id": "be:url:797eee1210c2154a3536#url:fr:c4592ab938f6",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/9"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 21,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and search outcome",
+            "Retrieval shape and material route constraint"
+          ],
+          "cells": [
+            "be-annex-19ter-fr",
+            "[Annexe 19ter, family-member residence-card application](https://dofi.ibz.be/sites/default/files/2021-12/Annexe%2019ter_2015.pdf) — official specimen",
+            "Current French IBZ index checked 2026-10-24 still links the two-page 2015-named specimen; native copy at [`documents/forms/be-annex-19ter-fr-specimen.pdf`](../documents/forms/be-annex-19ter-fr-specimen.pdf), visually checked and hash-verified",
+            "Prominent SPECIMEN watermark; not a blank current operational form. Locate and verify the current application version before use."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/local_copy_decisions/27",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-annex-20-fr",
+      "title": "Annexe 20 — decision refusing residence longer than three months",
+      "source_type": "official_form",
+      "official_urls": [
+        "https://dofi.ibz.be/sites/default/files/2025-09/Annexe%2020_2025_0.pdf"
+      ],
+      "source_identity_id": "be:url:6f046059bed620fa6a87",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "be:url:6f046059bed620fa6a87#local:fr:f44b6f96fe6d",
+        "be:url:6f046059bed620fa6a87#url:fr:ce765c7162ad"
+      ],
+      "representations": [
+        {
+          "kind": "local_artifact",
+          "language": "fr",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/forms/be-annex-20-fr.pdf",
+          "representation_id": "be:url:6f046059bed620fa6a87#local:fr:f44b6f96fe6d",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "fr",
+          "edition": "undated",
+          "url": "https://dofi.ibz.be/sites/default/files/2025-09/Annexe%2020_2025_0.pdf",
+          "path": null,
+          "representation_id": "be:url:6f046059bed620fa6a87#url:fr:ce765c7162ad",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/10"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 22,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and search outcome",
+            "Retrieval shape and material route constraint"
+          ],
+          "cells": [
+            "be-annex-20-fr",
+            "[Annexe 20](https://dofi.ibz.be/sites/default/files/2025-09/Annexe%2020_2025_0.pdf) — related source",
+            "Official two-page PDF reviewed and preserved byte-for-byte at [`documents/forms/be-annex-20-fr.pdf`](../documents/forms/be-annex-20-fr.pdf); it includes the refusal decision, notification and stated 30-day appeal notice",
+            "Versioned PDF; rediscover and validate through its parent index"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/local_copy_decisions/19",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-annex-index-fr",
+      "title": "IBZ index of annexes to the Immigration Law and Royal Decree — French",
+      "source_type": "official_form_index",
+      "official_urls": [
+        "https://dofi.ibz.be/fr/documentation/legislation/liste-des-annexes-la-loi-du-15-decembre-1980-et-larrete-royal-du-8"
+      ],
+      "source_identity_id": "be:language-variant:be-annex-index:9b58ddf6af9c",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "paired catalogue IDs with explicit language suffixes",
+      "status_categories": [
+        "accepted_external_reference",
+        "pending",
+        "discovery"
+      ],
+      "representation_ids": [
+        "be:language-variant:be-annex-index:9b58ddf6af9c#url:fr:bb0c898eb526"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "fr",
+          "edition": "undated",
+          "url": "https://dofi.ibz.be/fr/documentation/legislation/liste-des-annexes-la-loi-du-15-decembre-1980-et-larrete-royal-du-8",
+          "path": null,
+          "representation_id": "be:language-variant:be-annex-index:9b58ddf6af9c#url:fr:bb0c898eb526",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "discovery",
+            "pending"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/6"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 18,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and search outcome",
+            "Retrieval shape and material route constraint"
+          ],
+          "cells": [
+            "be-annex-index-fr",
+            "[IBZ annex index, French](https://dofi.ibz.be/fr/documentation/legislation/liste-des-annexes-la-loi-du-15-decembre-1980-et-larrete-royal-du-8) — official form index",
+            "Current index checked 2026-10-24; linked Annex 19, 19ter specimen and Annex 20 are handled as separate records",
+            "Dynamic language-specific index; link retained, no duplicate index document."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-annex-index-nl",
+      "title": "IBZ list of annexes to the Immigration Law and Royal Decree — Dutch",
+      "source_type": "official_form_index",
+      "official_urls": [
+        "https://dofi.ibz.be/nl/documentation/legislation/lijst-van-de-bijlagen-bij-de-wet-van-15-december-1980-en-bij-het"
+      ],
+      "source_identity_id": "be:language-variant:be-annex-index:9b58ddf6af9c",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "paired catalogue IDs with explicit language suffixes",
+      "status_categories": [
+        "accepted_external_reference",
+        "pending",
+        "discovery"
+      ],
+      "representation_ids": [
+        "be:language-variant:be-annex-index:9b58ddf6af9c#url:nl:b68c72bf89c8"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "nl",
+          "edition": "undated",
+          "url": "https://dofi.ibz.be/nl/documentation/legislation/lijst-van-de-bijlagen-bij-de-wet-van-15-december-1980-en-bij-het",
+          "path": null,
+          "representation_id": "be:language-variant:be-annex-index:9b58ddf6af9c#url:nl:b68c72bf89c8",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "discovery",
+            "pending"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/7"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 19,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and search outcome",
+            "Retrieval shape and material route constraint"
+          ],
+          "cells": [
+            "be-annex-index-nl",
+            "[IBZ annex index, Dutch](https://dofi.ibz.be/nl/documentation/legislation/lijst-van-de-bijlagen-bij-de-wet-van-15-december-1980-en-bij-het) — official form index",
+            "Dutch language-specific official route accepted",
+            "Dynamic index; linked forms are separate records."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-brussels-cada-guidance",
+      "title": "Brussels-Capital Region Commission for Access to Administrative Documents (CADA) overview",
+      "source_type": "regional_administrative_guidance",
+      "official_urls": [
+        "https://be.brussels/fr/propos-de-la-region/structure-et-organisation/administrations-et-institutions-de-la-region/commission-dacces-aux-documents-administratifs-cada"
+      ],
+      "source_identity_id": "be:url:b2212126a0c645c2caf0",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "be:url:b2212126a0c645c2caf0#local:en:a4b001c7a393",
+        "be:url:b2212126a0c645c2caf0#local:fr:f4acb720c0a0",
+        "be:url:b2212126a0c645c2caf0#url:fr:1c97721e50dd"
+      ],
+      "representations": [
+        {
+          "kind": "local_artifact",
+          "language": "en",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/guidance/be-visa-competence-matrix-en.pdf",
+          "representation_id": "be:url:b2212126a0c645c2caf0#local:en:a4b001c7a393",
+          "acceptance_status": [
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "local_artifact",
+          "language": "fr",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/oversight/be-brussels-cada-guidance.md",
+          "representation_id": "be:url:b2212126a0c645c2caf0#local:fr:f4acb720c0a0",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "fr",
+          "edition": "undated",
+          "url": "https://be.brussels/fr/propos-de-la-region/structure-et-organisation/administrations-et-institutions-de-la-region/commission-dacces-aux-documents-administratifs-cada",
+          "path": null,
+          "representation_id": "be:url:b2212126a0c645c2caf0#url:fr:1c97721e50dd",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/35"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 50,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and search outcome",
+            "Retrieval shape and material route constraint"
+          ],
+          "cells": [
+            "be-brussels-cada-guidance",
+            "[Brussels CADA overview](https://be.brussels/fr/propos-de-la-region/structure-et-organisation/administrations-et-institutions-de-la-region/commission-dacces-aux-documents-administratifs-cada) — regional administrative guidance",
+            "Official page checked 2026-10-24; displayed roster effective 2026-06-01; local copy accepted at [`documents/oversight/be-brussels-cada-guidance.md`](../documents/oversight/be-brussels-cada-guidance.md)",
+            "Applies within the joint Brussels institutional scope; roster is date-bounded and detailed decisions are on Editoria."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/local_copy_decisions/14",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-brussels-joint-access-law-2019-fr",
+      "title": "Joint Brussels decree and ordinance of 16 May 2019 on publicity of administration in Brussels institutions — French official text",
+      "source_type": "regional_legislation",
+      "official_urls": [
+        "https://ejustice.just.fgov.be/cgi/api2.pl?lg=fr&numac=2019012673&pd=2019-06-07"
+      ],
+      "source_identity_id": "be:url:912a47f3651cc49d6ccf",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "be:url:912a47f3651cc49d6ccf#url:fr:a835cd84108e"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "fr",
+          "edition": "undated",
+          "url": "https://ejustice.just.fgov.be/cgi/api2.pl?lg=fr&numac=2019012673&pd=2019-06-07",
+          "path": null,
+          "representation_id": "be:url:912a47f3651cc49d6ccf#url:fr:a835cd84108e",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/47"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 63,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and decision",
+            "Scope limit or review route"
+          ],
+          "cells": [
+            "be-brussels-joint-access-law-2019-fr",
+            "[Joint Brussels decree and ordinance of 16 May 2019](https://www.ejustice.just.fgov.be/cgi/api2.pl?lg=fr&numac=2019012673&pd=2019-06-07) — primary legal source",
+            "Linked from the official Brussels government page; official Gazette text names regional, municipal, Joint Community Commission and French Community Commission scopes",
+            "Original publication view, not a verified current consolidation; use official Brussels/CADA pages for current route information"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-cocof-access-procedure",
+      "title": "French Community Commission (COCOF) access-to-administrative-documents procedure",
+      "source_type": "regional_administrative_guidance",
+      "official_urls": [
+        "https://ccf.brussels/qui-sommes-nous/acces-aux-documents-administratifs"
+      ],
+      "source_identity_id": "be:url:889c418d9fd725c44892",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "pending"
+      ],
+      "representation_ids": [
+        "be:url:889c418d9fd725c44892#local:en:a4b001c7a393",
+        "be:url:889c418d9fd725c44892#url:fr:c9ec36e93eea"
+      ],
+      "representations": [
+        {
+          "kind": "local_artifact",
+          "language": "en",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/guidance/be-visa-competence-matrix-en.pdf",
+          "representation_id": "be:url:889c418d9fd725c44892#local:en:a4b001c7a393",
+          "acceptance_status": [
+            "pending"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "fr",
+          "edition": "undated",
+          "url": "https://ccf.brussels/qui-sommes-nous/acces-aux-documents-administratifs",
+          "path": null,
+          "representation_id": "be:url:889c418d9fd725c44892#url:fr:c9ec36e93eea",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/46"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 62,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and decision",
+            "Scope limit or review route"
+          ],
+          "cells": [
+            "be-cocof-access-procedure",
+            "[COCOF access-to-documents procedure](https://ccf.brussels/qui-sommes-nous/acces-aux-documents-administratifs/) — operational guidance",
+            "Official page gives written request methods, an online form, and ordinary/urgent CADA routes",
+            "Applies to COCOF records and institutions, not all Brussels bodies"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-code-pil",
+      "title": "Code of Private International Law of 16 July 2004",
+      "source_type": "national_legislation",
+      "official_urls": [
+        "https://ejustice.just.fgov.be/eli/loi/2004/07/16/2004009511/justel"
+      ],
+      "source_identity_id": "be:url:4abd2b5105caf3c0552e",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "be:url:4abd2b5105caf3c0552e#local:fr:32eb1e6aadf0",
+        "be:url:4abd2b5105caf3c0552e#local:fr:71c8b056f0a3",
+        "be:url:4abd2b5105caf3c0552e#local:fr:e5304443989b",
+        "be:url:4abd2b5105caf3c0552e#local:fr:f44b6f96fe6d",
+        "be:url:4abd2b5105caf3c0552e#local:nl:5078068fa6ec",
+        "be:url:4abd2b5105caf3c0552e#local:nl:639812004b02",
+        "be:url:4abd2b5105caf3c0552e#url:fr:43c6039250ff"
+      ],
+      "representations": [
+        {
+          "kind": "local_artifact",
+          "language": "fr",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/legislation/be-law-1980-fr.md",
+          "representation_id": "be:url:4abd2b5105caf3c0552e#local:fr:32eb1e6aadf0",
+          "acceptance_status": [
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "local_artifact",
+          "language": "fr",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/forms/be-annex-19-fr.pdf",
+          "representation_id": "be:url:4abd2b5105caf3c0552e#local:fr:71c8b056f0a3",
+          "acceptance_status": [
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "local_artifact",
+          "language": "fr",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/legislation/be-code-pil-fr.md",
+          "representation_id": "be:url:4abd2b5105caf3c0552e#local:fr:e5304443989b",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "local_artifact",
+          "language": "fr",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/forms/be-annex-20-fr.pdf",
+          "representation_id": "be:url:4abd2b5105caf3c0552e#local:fr:f44b6f96fe6d",
+          "acceptance_status": [
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "local_artifact",
+          "language": "nl",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/legislation/be-law-1980-nl.md",
+          "representation_id": "be:url:4abd2b5105caf3c0552e#local:nl:5078068fa6ec",
+          "acceptance_status": [
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "local_artifact",
+          "language": "nl",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/legislation/be-code-pil-nl.md",
+          "representation_id": "be:url:4abd2b5105caf3c0552e#local:nl:639812004b02",
+          "acceptance_status": [
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "fr",
+          "edition": "undated",
+          "url": "https://ejustice.just.fgov.be/eli/loi/2004/07/16/2004009511/justel",
+          "path": null,
+          "representation_id": "be:url:4abd2b5105caf3c0552e#url:fr:43c6039250ff",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/29"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 41,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and search outcome",
+            "Retrieval shape and material route constraint"
+          ],
+          "cells": [
+            "be-code-pil",
+            "[Private International Law Code, French Justel](https://www.ejustice.just.fgov.be/eli/loi/2004/07/16/2004009511/justel) — partial functional match",
+            "Consolidation checked 2026-10-24, updated through 2026-06-12; local copy accepted at [`documents/legislation/be-code-pil-fr.md`](../documents/legislation/be-code-pil-fr.md)",
+            "Articles 27, 30 and 31 include foreign authentic acts and civil-status matters; apply with EU instruments."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/local_copy_decisions/6",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-council-state-laws",
+      "title": "Coordinated laws on the Council of State",
+      "source_type": "national_legislation",
+      "official_urls": [
+        "https://ejustice.just.fgov.be/eli/loi/1973/01/12/1973011250/justel"
+      ],
+      "source_identity_id": "be:url:faa63aa379cb854f26f4",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "be:url:faa63aa379cb854f26f4#local:fr:e1dbf8be44d8",
+        "be:url:faa63aa379cb854f26f4#url:fr:108fb913d0ca"
+      ],
+      "representations": [
+        {
+          "kind": "local_artifact",
+          "language": "fr",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/legislation/be-council-state-laws.md",
+          "representation_id": "be:url:faa63aa379cb854f26f4#local:fr:e1dbf8be44d8",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "fr",
+          "edition": "undated",
+          "url": "https://ejustice.just.fgov.be/eli/loi/1973/01/12/1973011250/justel",
+          "path": null,
+          "representation_id": "be:url:faa63aa379cb854f26f4#url:fr:108fb913d0ca",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/26"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 38,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and search outcome",
+            "Retrieval shape and material route constraint"
+          ],
+          "cells": [
+            "be-council-state-laws",
+            "[Coordinated laws on the Council of State](https://www.ejustice.just.fgov.be/eli/loi/1973/01/12/1973011250/justel) — partial functional match",
+            "Current consolidation checked 2026-10-24, updated through 2026-06-24; local copy accepted at [`documents/legislation/be-council-state-laws.md`](../documents/legislation/be-council-state-laws.md)",
+            "Procedural source; deadlines and case-specific admissibility still need separate review."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/local_copy_decisions/8",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-d-visa-article9",
+      "title": "D visa application under Article 9",
+      "source_type": "official_administrative_guidance",
+      "official_urls": [
+        "https://dofi.ibz.be/en/themes/third-country-nationals/residence-permit-9bis-9ter/d-visa-application-article-9",
+        "https://dofi.ibz.be/en/themes/third-country-nationals/residence-permit-articles-9-9bis-9ter/d-visa-application-article-9"
+      ],
+      "source_identity_id": "be:url:4f5f1d421f515a6b3a88",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "be:url:4f5f1d421f515a6b3a88#local:en:3ded8085397c",
+        "be:url:4f5f1d421f515a6b3a88#url:en:5e8b204a92b0",
+        "be:url:4f5f1d421f515a6b3a88#url:en:d8c5dd4a82b7"
+      ],
+      "representations": [
+        {
+          "kind": "local_artifact",
+          "language": "en",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/guidance/be-d-visa-article9.md",
+          "representation_id": "be:url:4f5f1d421f515a6b3a88#local:en:3ded8085397c",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://dofi.ibz.be/en/themes/third-country-nationals/residence-permit-9bis-9ter/d-visa-application-article-9",
+          "path": null,
+          "representation_id": "be:url:4f5f1d421f515a6b3a88#url:en:5e8b204a92b0",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://dofi.ibz.be/en/themes/third-country-nationals/residence-permit-articles-9-9bis-9ter/d-visa-application-article-9",
+          "path": null,
+          "representation_id": "be:url:4f5f1d421f515a6b3a88#url:en:d8c5dd4a82b7",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/14"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 26,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and search outcome",
+            "Retrieval shape and material route constraint"
+          ],
+          "cells": [
+            "be-d-visa-article9",
+            "[D visa application under Article 9](https://dofi.ibz.be/en/themes/third-country-nationals/residence-permit-9bis-9ter/d-visa-application-article-9) — related general long-stay source",
+            "Current official page checked 2026-10-24; local copy accepted at [`documents/guidance/be-d-visa-article9.md`](../documents/guidance/be-d-visa-article9.md)",
+            "General Article 9 national D-visa process only; use the locally competent mission’s current instructions and do not substitute for EU-family free movement routes."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/local_copy_decisions/21",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-data-protection-act-2018-fr",
+      "title": "Law of 30 July 2018 on the protection of natural persons with regard to personal-data processing — French Justel record",
+      "source_type": "national_legislation",
+      "official_urls": [
+        "https://ejustice.just.fgov.be/eli/loi/2018/07/30/2018040581/justel"
+      ],
+      "source_identity_id": "be:language-variant:be-data-protection-act-2018:6329594231c7",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "paired catalogue IDs with explicit language suffixes",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "be:language-variant:be-data-protection-act-2018:6329594231c7#url:fr:ff96133f1aed"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "fr",
+          "edition": "undated",
+          "url": "https://ejustice.just.fgov.be/eli/loi/2018/07/30/2018040581/justel",
+          "path": null,
+          "representation_id": "be:language-variant:be-data-protection-act-2018:6329594231c7#url:fr:ff96133f1aed",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/39"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 56,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and decision",
+            "Scope limit or review route"
+          ],
+          "cells": [
+            "be-data-protection-act-2018-fr",
+            "[Federal Data Protection Act of 30 July 2018, French Justel](https://www.ejustice.just.fgov.be/eli/loi/2018/07/30/2018040581/justel) — related source",
+            "Federal government pages identify NUMAC 2018040581 and link the Justel ELI; accepted as official locator",
+            "Offer the whole [Justel service](https://www.ejustice.just.fgov.be/) for current consolidated text review; does not resolve every visa-processing issue"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-data-protection-act-2018-nl",
+      "title": "Act of 30 July 2018 on protection of natural persons concerning personal-data processing — Dutch Justel record",
+      "source_type": "national_legislation",
+      "official_urls": [
+        "https://ejustice.just.fgov.be/eli/wet/2018/07/30/2018040581/justel"
+      ],
+      "source_identity_id": "be:language-variant:be-data-protection-act-2018:6329594231c7",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "paired catalogue IDs with explicit language suffixes",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "be:language-variant:be-data-protection-act-2018:6329594231c7#url:nl:ec2b36dfba4c"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "nl",
+          "edition": "undated",
+          "url": "https://ejustice.just.fgov.be/eli/wet/2018/07/30/2018040581/justel",
+          "path": null,
+          "representation_id": "be:language-variant:be-data-protection-act-2018:6329594231c7#url:nl:ec2b36dfba4c",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/40"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 57,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and decision",
+            "Scope limit or review route"
+          ],
+          "cells": [
+            "be-data-protection-act-2018-nl",
+            "[Federal Data Protection Act of 30 July 2018, Dutch Justel](https://www.ejustice.just.fgov.be/eli/wet/2018/07/30/2018040581/justel) — language alternative",
+            "Same official statute and NUMAC as the French record",
+            "Use the language-specific current Justel record; local text remains unaccepted"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-dg-legal-database",
+      "title": "German-speaking Community official legal database (DGlex)",
+      "source_type": "official_legal_database",
+      "official_urls": [
+        "https://ostbelgienlive.be/desktopdefault.aspx/tabid-340/desktopdefault.aspx/tabid-6055"
+      ],
+      "source_identity_id": "be:url:555f2ae58b8eed818684",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "discovery"
+      ],
+      "representation_ids": [
+        "be:url:555f2ae58b8eed818684#url:de:55a44cceeca6"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "de",
+          "edition": "undated",
+          "url": "https://ostbelgienlive.be/desktopdefault.aspx/tabid-340/desktopdefault.aspx/tabid-6055",
+          "path": null,
+          "representation_id": "be:url:555f2ae58b8eed818684#url:de:55a44cceeca6",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/43"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 59,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and decision",
+            "Scope limit or review route"
+          ],
+          "cells": [
+            "be-dg-legal-database",
+            "[German-speaking Community legal database](https://ostbelgienlive.be/desktopdefault.aspx/tabid-340/desktopdefault.aspx/tabid-6055/) — official discovery/current-text service",
+            "Ministry page states it provides coordinated valid DG decrees/orders and some federal texts in German; it warns that the Official Gazette original is legally binding",
+            "Offer the whole database for human review of the 1995 public-documents decree and 2022 information/complaints decree; exact current decree records remain to be located"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-dg-ombudsman",
+      "title": "Ombudsperson of the German-speaking Community — complaint route and online form",
+      "source_type": "official_oversight_guidance",
+      "official_urls": [
+        "https://dg-ombudsdienst.be/"
+      ],
+      "source_identity_id": "be:url:d803aa7932bc801aa98a",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "be:url:d803aa7932bc801aa98a#url:de:c8f4e4f1bb05"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "de",
+          "edition": "undated",
+          "url": "https://dg-ombudsdienst.be/",
+          "path": null,
+          "representation_id": "be:url:d803aa7932bc801aa98a#url:de:c8f4e4f1bb05",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/44"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 60,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and decision",
+            "Scope limit or review route"
+          ],
+          "cells": [
+            "be-dg-ombudsman",
+            "[German-speaking Community Ombudsperson](https://www.dg-ombudsdienst.be/) — oversight and complaint route",
+            "Official page describes covered DG/local bodies, excludes federal/regional bodies, and links its complaint form",
+            "Complaint route does not suspend statutory appeal deadlines"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-dpa-complaint-fr",
+      "title": "Belgian Data Protection Authority — introduce a complaint (French)",
+      "source_type": "official_data_protection_remedy",
+      "official_urls": [
+        "https://dataprotectionauthority.be/citoyen/agir/introduire-une-plainte"
+      ],
+      "source_identity_id": "be:language-variant:be-dpa-complaint:9bb46bdc7204",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "paired catalogue IDs with explicit language suffixes",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "be:language-variant:be-dpa-complaint:9bb46bdc7204#local:fr:97db9c89a922",
+        "be:language-variant:be-dpa-complaint:9bb46bdc7204#url:fr:2374351620cb"
+      ],
+      "representations": [
+        {
+          "kind": "local_artifact",
+          "language": "fr",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/oversight/be-dpa-complaint-fr.md",
+          "representation_id": "be:language-variant:be-dpa-complaint:9bb46bdc7204#local:fr:97db9c89a922",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "fr",
+          "edition": "undated",
+          "url": "https://dataprotectionauthority.be/citoyen/agir/introduire-une-plainte",
+          "path": null,
+          "representation_id": "be:language-variant:be-dpa-complaint:9bb46bdc7204#url:fr:2374351620cb",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/31"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 46,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and search outcome",
+            "Retrieval shape and material route constraint"
+          ],
+          "cells": [
+            "be-dpa-complaint-fr",
+            "[Belgian DPA complaint route, French](https://www.dataprotectionauthority.be/citoyen/agir/introduire-une-plainte) — official remedy route",
+            "The 2026-10-19 official snapshot is accepted at [`documents/oversight/be-dpa-complaint-fr.md`](../documents/oversight/be-dpa-complaint-fr.md); direct access returned maintenance text on 2026-10-24",
+            "Dated snapshot only; currentness remains open. The Dutch counterpart is a separate accepted document."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/local_copy_decisions/29",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-dpa-complaint-nl",
+      "title": "Belgian Data Protection Authority — submit a complaint (Dutch)",
+      "source_type": "official_data_protection_remedy",
+      "official_urls": [
+        "https://dataprotectionauthority.be/burger/acties/klacht-indienen"
+      ],
+      "source_identity_id": "be:language-variant:be-dpa-complaint:9bb46bdc7204",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "paired catalogue IDs with explicit language suffixes",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "be:language-variant:be-dpa-complaint:9bb46bdc7204#local:nl:26dac8ac9b39",
+        "be:language-variant:be-dpa-complaint:9bb46bdc7204#url:nl:bb3efa8f7f27"
+      ],
+      "representations": [
+        {
+          "kind": "local_artifact",
+          "language": "nl",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/oversight/be-dpa-complaint-nl.md",
+          "representation_id": "be:language-variant:be-dpa-complaint:9bb46bdc7204#local:nl:26dac8ac9b39",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "nl",
+          "edition": "undated",
+          "url": "https://dataprotectionauthority.be/burger/acties/klacht-indienen",
+          "path": null,
+          "representation_id": "be:language-variant:be-dpa-complaint:9bb46bdc7204#url:nl:bb3efa8f7f27",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/32"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 47,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and search outcome",
+            "Retrieval shape and material route constraint"
+          ],
+          "cells": [
+            "be-dpa-complaint-nl",
+            "[Belgian Data Protection Authority complaint route, Dutch](https://dataprotectionauthority.be/burger/acties/klacht-indienen) — related source",
+            "2026-10-19 main-content capture accepted as a dated local snapshot; browser text was a cached crawl, not a fresh server response; local copy at [`documents/oversight/be-dpa-complaint-nl.md`](../documents/oversight/be-dpa-complaint-nl.md)",
+            "Policy effective 2026-03-01; check current portal and page before filing. French page was under maintenance during this review."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/local_copy_decisions/23",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-embassy-directory",
+      "title": "Belgian embassies and consulates directory",
+      "source_type": "official_consular_directory",
+      "official_urls": [
+        "https://diplomatie.belgium.be/en/embassies-and-consulates"
+      ],
+      "source_identity_id": "be:url:f6e54761ddfbf1c19e86",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "pending"
+      ],
+      "representation_ids": [
+        "be:url:f6e54761ddfbf1c19e86#url:en:591aaad302a9"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://diplomatie.belgium.be/en/embassies-and-consulates",
+          "path": null,
+          "representation_id": "be:url:f6e54761ddfbf1c19e86#url:en:591aaad302a9",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "pending"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/18"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 30,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and search outcome",
+            "Retrieval shape and material route constraint"
+          ],
+          "cells": [
+            "be-embassy-directory",
+            "[Belgian embassies and consulates directory](https://diplomatie.belgium.be/en/embassies-and-consulates) — official dynamic directory",
+            "The page embeds the current mission-address application in an iframe",
+            "Keep as a live reference; a local text copy would be stale."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-eu-entry-residence",
+      "title": "Right of entry and residence — EU citizens",
+      "source_type": "official_administrative_guidance",
+      "official_urls": [
+        "https://dofi.ibz.be/en/themes/citizens-european-union/right-entry-and-residence"
+      ],
+      "source_identity_id": "be:url:415209d2493379c6ae91",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "be:url:415209d2493379c6ae91#local:en:460ef5f9ff6a",
+        "be:url:415209d2493379c6ae91#url:en:e9b3b90979b6"
+      ],
+      "representations": [
+        {
+          "kind": "local_artifact",
+          "language": "en",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/guidance/be-eu-entry-residence.md",
+          "representation_id": "be:url:415209d2493379c6ae91#local:en:460ef5f9ff6a",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://dofi.ibz.be/en/themes/citizens-european-union/right-entry-and-residence",
+          "path": null,
+          "representation_id": "be:url:415209d2493379c6ae91#url:en:e9b3b90979b6",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/11"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 23,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and search outcome",
+            "Retrieval shape and material route constraint"
+          ],
+          "cells": [
+            "be-eu-entry-residence",
+            "[Right of entry and residence — EU citizens](https://dofi.ibz.be/en/themes/citizens-european-union/right-entry-and-residence) — partial functional match",
+            "Official page checked 2026-10-24; local snapshot accepted at [`documents/guidance/be-eu-entry-residence.md`](../documents/guidance/be-eu-entry-residence.md)",
+            "Describes Annex 19, evidence and decision periods; its broad “EU citizen” glossary must not determine treaty scope."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/local_copy_decisions/9",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-eu-family-guidance",
+      "title": "Family reunification — EU and third-country family members",
+      "source_type": "official_administrative_guidance",
+      "official_urls": [
+        "https://dofi.ibz.be/en/themes/citizens-european-union/family-reunification"
+      ],
+      "source_identity_id": "be:ambiguous:be-eu-family-guidance:f2c3300647cb",
+      "identity_resolution_status": "unresolved",
+      "identity_resolution_basis": "official URL is shared by distinct catalogue IDs with different titles",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy",
+        "pending"
+      ],
+      "representation_ids": [
+        "be:ambiguous:be-eu-family-guidance:f2c3300647cb#local:en:f2600f9f7774",
+        "be:ambiguous:be-eu-family-guidance:f2c3300647cb#url:en:3ed44ba2d9ef"
+      ],
+      "representations": [
+        {
+          "kind": "local_artifact",
+          "language": "en",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/guidance/be-eu-family-guidance.md",
+          "representation_id": "be:ambiguous:be-eu-family-guidance:f2c3300647cb#local:en:f2600f9f7774",
+          "acceptance_status": [
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://dofi.ibz.be/en/themes/citizens-european-union/family-reunification",
+          "path": null,
+          "representation_id": "be:ambiguous:be-eu-family-guidance:f2c3300647cb#url:en:3ed44ba2d9ef",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "pending"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/12"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 24,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and search outcome",
+            "Retrieval shape and material route constraint"
+          ],
+          "cells": [
+            "be-eu-family-guidance",
+            "[IBZ EU-family guidance](https://dofi.ibz.be/en/themes/citizens-european-union/family-reunification) — related official route",
+            "[Maintained source note](../documents/guidance/be-eu-family-guidance.md)",
+            "Overview is incomplete; linked detailed page for third-country family members was readable but malformed; separate EU-citizen-family page not retrieved. Summary is narrowly scoped."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/local_copy_decisions/31",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-federal-cada-appeal",
+      "title": "Federal Commission for Access to and Re-use of Administrative Documents — administrative appeal route",
+      "source_type": "official_administrative_remedy_guidance",
+      "official_urls": [
+        "https://ibz.rrn.fgov.be/fr/commissions/publicite-de-ladministration/le-recours-administratif"
+      ],
+      "source_identity_id": "be:url:9217064b63ad1f6a1f29",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "be:url:9217064b63ad1f6a1f29#local:fr:a29efb77cb6e",
+        "be:url:9217064b63ad1f6a1f29#url:fr:843f6e0877b8"
+      ],
+      "representations": [
+        {
+          "kind": "local_artifact",
+          "language": "fr",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/oversight/be-federal-cada-appeal-fr.md",
+          "representation_id": "be:url:9217064b63ad1f6a1f29#local:fr:a29efb77cb6e",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "fr",
+          "edition": "undated",
+          "url": "https://ibz.rrn.fgov.be/fr/commissions/publicite-de-ladministration/le-recours-administratif",
+          "path": null,
+          "representation_id": "be:url:9217064b63ad1f6a1f29#url:fr:843f6e0877b8",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/25"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 37,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and search outcome",
+            "Retrieval shape and material route constraint"
+          ],
+          "cells": [
+            "be-federal-cada-appeal",
+            "[Federal CADA administrative appeal](https://www.ibz.rrn.fgov.be/fr/commissions/publicite-de-ladministration/le-recours-administratif) — related source",
+            "Official French page checked 2026-10-24; local text accepted at [`documents/oversight/be-federal-cada-appeal-fr.md`](../documents/oversight/be-federal-cada-appeal-fr.md)",
+            "Federal process pairs a reconsideration request with a Commission opinion request; keep distinct from regional/community CADA routes."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/local_copy_decisions/22",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-federal-ombudsman-filing",
+      "title": "Federal Ombudsman — filing a complaint",
+      "source_type": "official_oversight_guidance",
+      "official_urls": [
+        "https://federalombudsman.be/en/filing-a-complaint"
+      ],
+      "source_identity_id": "be:url:52db1fb986297fdcee54",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "be:url:52db1fb986297fdcee54#local:en:3d34d3b03794",
+        "be:url:52db1fb986297fdcee54#url:en:db62a54b5fba"
+      ],
+      "representations": [
+        {
+          "kind": "local_artifact",
+          "language": "en",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/oversight/be-federal-ombudsman-filing.md",
+          "representation_id": "be:url:52db1fb986297fdcee54#local:en:3d34d3b03794",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://federalombudsman.be/en/filing-a-complaint",
+          "path": null,
+          "representation_id": "be:url:52db1fb986297fdcee54#url:en:db62a54b5fba",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/27"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 39,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and search outcome",
+            "Retrieval shape and material route constraint"
+          ],
+          "cells": [
+            "be-federal-ombudsman-filing",
+            "[Federal Ombudsman — filing a complaint](https://www.federalombudsman.be/en/filing-a-complaint) — official oversight route",
+            "Official page has no update date; local snapshot accepted at [`documents/oversight/be-federal-ombudsman-filing.md`](../documents/oversight/be-federal-ombudsman-filing.md) with an operational-route freshness caveat",
+            "Federal jurisdiction only; first raise the problem with the service. Online/printable forms are separate records."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/local_copy_decisions/12",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-federal-ombudsman-process",
+      "title": "Federal Ombudsman — complaint process and federal jurisdiction",
+      "source_type": "official_oversight_guidance",
+      "official_urls": [
+        "https://federalombudsman.be/en/complaints-process"
+      ],
+      "source_identity_id": "be:url:dae09af99583983c2949",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "be:url:dae09af99583983c2949#local:en:16866c5af7ba",
+        "be:url:dae09af99583983c2949#url:en:2fdb157a23bd"
+      ],
+      "representations": [
+        {
+          "kind": "local_artifact",
+          "language": "en",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/oversight/be-federal-ombudsman-process.md",
+          "representation_id": "be:url:dae09af99583983c2949#local:en:16866c5af7ba",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://federalombudsman.be/en/complaints-process",
+          "path": null,
+          "representation_id": "be:url:dae09af99583983c2949#url:en:2fdb157a23bd",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/28"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 40,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and search outcome",
+            "Retrieval shape and material route constraint"
+          ],
+          "cells": [
+            "be-federal-ombudsman-process",
+            "[Federal Ombudsman — complaints process](https://www.federalombudsman.be/en/complaints-process) — official oversight guidance",
+            "Page reopened 2026-10-24; local snapshot accepted at [`documents/oversight/be-federal-ombudsman-process.md`](../documents/oversight/be-federal-ombudsman-process.md)",
+            "Federal-service screening, file number, investigation and mediation; not a statutory appeal."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/local_copy_decisions/13",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-flanders-bestuursdecreet",
+      "title": "Flemish Bestuursdecreet of 7 December 2018",
+      "source_type": "regional_legislation",
+      "official_urls": [
+        "https://codex.vlaanderen.be/PrintDocument.ashx?geannoteerd=false&id=1030009"
+      ],
+      "source_identity_id": "be:url:12f0eff487d5adafbc6d",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "be:url:12f0eff487d5adafbc6d#local:nl:0c5f8bc4ac38",
+        "be:url:12f0eff487d5adafbc6d#url:nl:6fdaf29526f4"
+      ],
+      "representations": [
+        {
+          "kind": "local_artifact",
+          "language": "nl",
+          "edition": "2018",
+          "url": null,
+          "path": "documents/legislation/be-flanders-bestuursdecreet-2018-nl.md",
+          "representation_id": "be:url:12f0eff487d5adafbc6d#local:nl:0c5f8bc4ac38",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "nl",
+          "edition": "undated",
+          "url": "https://codex.vlaanderen.be/PrintDocument.ashx?geannoteerd=false&id=1030009",
+          "path": null,
+          "representation_id": "be:url:12f0eff487d5adafbc6d#url:nl:6fdaf29526f4",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/34"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 49,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and search outcome",
+            "Retrieval shape and material route constraint"
+          ],
+          "cells": [
+            "be-flanders-bestuursdecreet",
+            "[Flemish Bestuursdecreet, Codex record 1030009](https://codex.vlaanderen.be/PrintDocument.ashx?geannoteerd=false&id=1030009) — regional legislation",
+            "Current unannotated Codex text captured 2026-10-24 and accepted at [`documents/legislation/be-flanders-bestuursdecreet-2018-nl.md`](../documents/legislation/be-flanders-bestuursdecreet-2018-nl.md); access, request and appeal provisions checked",
+            "Flemish statutory scope; article-level dates are retained; not a nationwide rule."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/local_copy_decisions/25",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-french-community-publicity-decree-1994",
+      "title": "French Community Decree of 22 December 1994 on publicity of administration — Gallilex record",
+      "source_type": "community_legislation",
+      "official_urls": [
+        "https://gallilex.cfwb.be/textes-normatifs/18673"
+      ],
+      "source_identity_id": "be:url:4e0fc42f769d63c1ed7e",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "be:url:4e0fc42f769d63c1ed7e#url:fr:aedf3ff240f2"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "fr",
+          "edition": "undated",
+          "url": "https://gallilex.cfwb.be/textes-normatifs/18673",
+          "path": null,
+          "representation_id": "be:url:4e0fc42f769d63c1ed7e#url:fr:aedf3ff240f2",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/45"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 61,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and decision",
+            "Scope limit or review route"
+          ],
+          "cells": [
+            "be-french-community-publicity-decree-1994",
+            "[French Community Decree of 22 December 1994 on publicity of administration](https://gallilex.cfwb.be/textes-normatifs/18673) — community legislation",
+            "Official Gallilex record identifies the decree and amendment/addendum links; accepted as a government legal-record locator",
+            "Offer the full [Gallilex database](https://gallilex.cfwb.be/) for current text and scope review"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-ibz-legislation-index",
+      "title": "Immigration Office legislation index",
+      "source_type": "official_authority_index",
+      "official_urls": [
+        "https://dofi.ibz.be/en/documentation/legislation"
+      ],
+      "source_identity_id": "be:url:6a62dcd9bc17142be523",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "pending",
+        "discovery"
+      ],
+      "representation_ids": [
+        "be:url:6a62dcd9bc17142be523#url:en:1ff4caa0d2f0"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://dofi.ibz.be/en/documentation/legislation",
+          "path": null,
+          "representation_id": "be:url:6a62dcd9bc17142be523#url:en:1ff4caa0d2f0",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "pending",
+            "discovery"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/5"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 17,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and search outcome",
+            "Retrieval shape and material route constraint"
+          ],
+          "cells": [
+            "be-ibz-legislation-index",
+            "[IBZ legislation index](https://dofi.ibz.be/en/documentation/legislation) — official authority index",
+            "Official route accepted; index links to Justel and current annex listings",
+            "Dynamic index, kept link-only; substantive records are separate documents."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-law-1980-fr",
+      "title": "Loi du 15 décembre 1980 sur l'accès au territoire, le séjour, l'établissement et l'éloignement des étrangers — French Justel record",
+      "source_type": "national_legislation",
+      "official_urls": [
+        "https://ejustice.just.fgov.be/eli/loi/1980/12/15/1980121550/justel"
+      ],
+      "source_identity_id": "be:language-variant:be-law-1980:6ed5adb25845",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "paired catalogue IDs with explicit language suffixes",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "be:language-variant:be-law-1980:6ed5adb25845#local:fr:32eb1e6aadf0",
+        "be:language-variant:be-law-1980:6ed5adb25845#url:fr:90a4930af968"
+      ],
+      "representations": [
+        {
+          "kind": "local_artifact",
+          "language": "fr",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/legislation/be-law-1980-fr.md",
+          "representation_id": "be:language-variant:be-law-1980:6ed5adb25845#local:fr:32eb1e6aadf0",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "fr",
+          "edition": "undated",
+          "url": "https://ejustice.just.fgov.be/eli/loi/1980/12/15/1980121550/justel",
+          "path": null,
+          "representation_id": "be:language-variant:be-law-1980:6ed5adb25845#url:fr:90a4930af968",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/1"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 13,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and search outcome",
+            "Retrieval shape and material route constraint"
+          ],
+          "cells": [
+            "be-law-1980-fr",
+            "[Immigration Law of 15 December 1980, French Justel](https://www.ejustice.just.fgov.be/eli/loi/1980/12/15/1980121550/justel) — partial functional match; carries forward legacy candidate ID be-03",
+            "Current consolidated record checked 2026-10-24; publisher states update through 2026-06-24; local text accepted at [`documents/legislation/be-law-1980-fr.md`](../documents/legislation/be-law-1980-fr.md)",
+            "Full French consolidated text; historical versions and 331 implementing instruments remain separate linked records"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/local_copy_decisions/0",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-law-1980-nl",
+      "title": "Wet van 15 december 1980 betreffende de toegang tot het grondgebied, het verblijf, de vestiging en de verwijdering van vreemdelingen — Dutch Justel record",
+      "source_type": "national_legislation",
+      "official_urls": [
+        "https://ejustice.just.fgov.be/eli/wet/1980/12/15/1980121550/justel"
+      ],
+      "source_identity_id": "be:language-variant:be-law-1980:6ed5adb25845",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "paired catalogue IDs with explicit language suffixes",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "be:language-variant:be-law-1980:6ed5adb25845#local:nl:5078068fa6ec",
+        "be:language-variant:be-law-1980:6ed5adb25845#url:nl:452a7d8f20c0"
+      ],
+      "representations": [
+        {
+          "kind": "local_artifact",
+          "language": "nl",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/legislation/be-law-1980-nl.md",
+          "representation_id": "be:language-variant:be-law-1980:6ed5adb25845#local:nl:5078068fa6ec",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "nl",
+          "edition": "undated",
+          "url": "https://ejustice.just.fgov.be/eli/wet/1980/12/15/1980121550/justel",
+          "path": null,
+          "representation_id": "be:language-variant:be-law-1980:6ed5adb25845#url:nl:452a7d8f20c0",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/2"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 14,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and search outcome",
+            "Retrieval shape and material route constraint"
+          ],
+          "cells": [
+            "be-law-1980-nl",
+            "[Immigration Law of 15 December 1980, Dutch Justel](https://www.ejustice.just.fgov.be/eli/wet/1980/12/15/1980121550/justel) — partial functional match",
+            "Current Dutch record checked 2026-10-24; publisher states update through 2026-06-24; local text accepted at [`documents/legislation/be-law-1980-nl.md`](../documents/legislation/be-law-1980-nl.md)",
+            "Separate Dutch representation; Article 62 preserves the captured source spacing anomaly, noted in the local copy"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/local_copy_decisions/1",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-mobile-belgian-40ter",
+      "title": "Family reunification with a Belgian who exercised free movement — Article 40ter §1 guidance",
+      "source_type": "official_administrative_guidance",
+      "official_urls": [
+        "https://dofi.ibz.be/nl/themes/ressortissants-dun-pays-tiers/regroupement-familial/avec-un-belge/gezinshereniging-met-een",
+        "https://dofi.ibz.be/nl/themes/ressortissants-dun-pays-tiers/regroupement-familial/avec-un-belge/gezinshereniging-met-een-0"
+      ],
+      "source_identity_id": "be:url:06c663981a4d9241de5a",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy",
+        "pending"
+      ],
+      "representation_ids": [
+        "be:url:06c663981a4d9241de5a#local:nl:d26f79f4af8b",
+        "be:url:06c663981a4d9241de5a#url:nl:18dc818b82cf",
+        "be:url:06c663981a4d9241de5a#url:nl:ee70e1b5e924"
+      ],
+      "representations": [
+        {
+          "kind": "local_artifact",
+          "language": "nl",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/guidance/be-mobile-belgian-40ter.md",
+          "representation_id": "be:url:06c663981a4d9241de5a#local:nl:d26f79f4af8b",
+          "acceptance_status": [
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "nl",
+          "edition": "undated",
+          "url": "https://dofi.ibz.be/nl/themes/ressortissants-dun-pays-tiers/regroupement-familial/avec-un-belge/gezinshereniging-met-een",
+          "path": null,
+          "representation_id": "be:url:06c663981a4d9241de5a#url:nl:18dc818b82cf",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "pending"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "nl",
+          "edition": "undated",
+          "url": "https://dofi.ibz.be/nl/themes/ressortissants-dun-pays-tiers/regroupement-familial/avec-un-belge/gezinshereniging-met-een-0",
+          "path": null,
+          "representation_id": "be:url:06c663981a4d9241de5a#url:nl:ee70e1b5e924",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "pending"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/13"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 25,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and search outcome",
+            "Retrieval shape and material route constraint"
+          ],
+          "cells": [
+            "`be-mobile-belgian-40ter`",
+            "[Family reunification with a Belgian who exercised free movement — Article 40ter §1](https://dofi.ibz.be/nl/themes/ressortissants-dun-pays-tiers/regroupement-familial/avec-un-belge/gezinshereniging-met-een)",
+            "Live Dutch IBZ page checked 2026-10-29; it cites the 10 March 2024 amendment effective 1 September 2024. Current Justel text updated through 24 June 2026 cross-checked.",
+            "Maintained factual summary at [documents/guidance/be-mobile-belgian-40ter.md](../documents/guidance/be-mobile-belgian-40ter.md). The rendered page interleaves generic text; no page prose is reproduced; the current statute controls."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/local_copy_decisions/30",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-nlex-discovery",
+      "title": "N-Lex national-law portal — Belgium discovery lead",
+      "source_type": "discovery_catalog",
+      "official_urls": [
+        "https://n-lex.europa.eu/n-lex"
+      ],
+      "source_identity_id": "be:url:71f156333ac2447aa523",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "pending",
+        "discovery"
+      ],
+      "representation_ids": [
+        "be:url:71f156333ac2447aa523#url:multilingual:7eebdd2e455f"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "multilingual",
+          "edition": "undated",
+          "url": "https://n-lex.europa.eu/n-lex",
+          "path": null,
+          "representation_id": "be:url:71f156333ac2447aa523#url:multilingual:7eebdd2e455f",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "pending",
+            "discovery"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/0"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 12,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and search outcome",
+            "Retrieval shape and material route constraint"
+          ],
+          "cells": [
+            "be-nlex-discovery",
+            "[N-Lex Belgium route](https://n-lex.europa.eu/n-lex/) — EU discovery catalog",
+            "Official discovery route accepted; no Belgian source inventory or local legal text is claimed",
+            "Use only to locate first-party publishers; no document retained."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-publicity-act-1994",
+      "title": "Law of 11 April 1994 on the publicity of administration — federal access to records",
+      "source_type": "national_legislation",
+      "official_urls": [
+        "https://ejustice.just.fgov.be/eli/loi/1994/04/11/1994000357/justel"
+      ],
+      "source_identity_id": "be:url:125be30f56c15b81ea81",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "be:url:125be30f56c15b81ea81#local:fr:995e1e35d847",
+        "be:url:125be30f56c15b81ea81#url:fr:cd1f8defd251"
+      ],
+      "representations": [
+        {
+          "kind": "local_artifact",
+          "language": "fr",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/legislation/be-publicity-act-1994.md",
+          "representation_id": "be:url:125be30f56c15b81ea81#local:fr:995e1e35d847",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "fr",
+          "edition": "undated",
+          "url": "https://ejustice.just.fgov.be/eli/loi/1994/04/11/1994000357/justel",
+          "path": null,
+          "representation_id": "be:url:125be30f56c15b81ea81#url:fr:cd1f8defd251",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/24"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 36,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and search outcome",
+            "Retrieval shape and material route constraint"
+          ],
+          "cells": [
+            "be-publicity-act-1994",
+            "[1994 federal publicity-of-administration law](https://www.ejustice.just.fgov.be/eli/loi/1994/04/11/1994000357/justel) — partial functional match",
+            "Justel consolidation checked 2026-10-24, updated through 2024-06-06; local copy accepted at [`documents/legislation/be-publicity-act-1994.md`](../documents/legislation/be-publicity-act-1994.md)",
+            "Article 1 limits the law to federal authorities and certain other bodies acting under federal competence."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/local_copy_decisions/5",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-publicity-provinces-municipalities-1997-fr",
+      "title": "Law of 12 November 1997 on the publicity of administration in provinces and municipalities — French Justel record",
+      "source_type": "national_legislation",
+      "official_urls": [
+        "https://ejustice.just.fgov.be/eli/loi/1997/11/12/1997000893/justel"
+      ],
+      "source_identity_id": "be:language-variant:be-publicity-provinces-municipalities-1997:0eae0465047c",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "paired catalogue IDs with explicit language suffixes",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "be:language-variant:be-publicity-provinces-municipalities-1997:0eae0465047c#url:fr:385b0d5a9440"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "fr",
+          "edition": "undated",
+          "url": "https://ejustice.just.fgov.be/eli/loi/1997/11/12/1997000893/justel",
+          "path": null,
+          "representation_id": "be:language-variant:be-publicity-provinces-municipalities-1997:0eae0465047c#url:fr:385b0d5a9440",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/41"
+        }
+      ],
+      "acceptance_references": [],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-publicity-provinces-municipalities-1997-fr / -nl",
+      "title": "Law of 12 November 1997 on publicity of administration in provinces and municipalities, Justel — related source",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://ejustice.just.fgov.be/eli/loi/1997/11/12/1997000893/justel"
+      ],
+      "source_identity_id": "be:ambiguous:be-publicity-provinces-municipalities-1997-fr-nl:5ff100917508",
+      "identity_resolution_status": "unresolved",
+      "identity_resolution_basis": "official URL is shared by distinct catalogue IDs with different titles",
+      "status_categories": [
+        "candidate"
+      ],
+      "representation_ids": [
+        "be:ambiguous:be-publicity-provinces-municipalities-1997-fr-nl:5ff100917508#url:nl:6e4dcaee78f0"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "nl",
+          "edition": "undated",
+          "url": "https://ejustice.just.fgov.be/eli/loi/1997/11/12/1997000893/justel",
+          "path": null,
+          "representation_id": "be:ambiguous:be-publicity-provinces-municipalities-1997-fr-nl:5ff100917508#url:nl:6e4dcaee78f0",
+          "acceptance_status": []
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 58,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and decision",
+            "Scope limit or review route"
+          ],
+          "cells": [
+            "be-publicity-provinces-municipalities-1997-fr / -nl",
+            "[Law of 12 November 1997 on publicity of administration in provinces and municipalities, Justel](https://www.ejustice.just.fgov.be/eli/loi/1997/11/12/1997000893/justel) — related source",
+            "Official ELI locator identified in French and Dutch; accepted as statute locator",
+            "Determine present territorial scope with applicable regional/community law before relying on it for any municipality"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-publicity-provinces-municipalities-1997-nl",
+      "title": "Act of 12 November 1997 on publicity of administration in provinces and municipalities — Dutch Justel record",
+      "source_type": "national_legislation",
+      "official_urls": [
+        "https://ejustice.just.fgov.be/eli/wet/1997/11/12/1997000893/justel"
+      ],
+      "source_identity_id": "be:language-variant:be-publicity-provinces-municipalities-1997:0eae0465047c",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "paired catalogue IDs with explicit language suffixes",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "be:language-variant:be-publicity-provinces-municipalities-1997:0eae0465047c#url:nl:ecbaf10d5710"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "nl",
+          "edition": "undated",
+          "url": "https://ejustice.just.fgov.be/eli/wet/1997/11/12/1997000893/justel",
+          "path": null,
+          "representation_id": "be:language-variant:be-publicity-provinces-municipalities-1997:0eae0465047c#url:nl:ecbaf10d5710",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/42"
+        }
+      ],
+      "acceptance_references": [],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-rd-1981-fr",
+      "title": "Arrêté royal du 8 octobre 1981 — implementing decree on access, residence, settlement and removal",
+      "source_type": "national_legislation",
+      "official_urls": [
+        "https://ejustice.just.fgov.be/eli/arrete/1981/10/08/1981001949/justel"
+      ],
+      "source_identity_id": "be:language-variant:be-rd-1981:aced8656fa79",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "paired catalogue IDs with explicit language suffixes",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "be:language-variant:be-rd-1981:aced8656fa79#local:fr:943a630cf412",
+        "be:language-variant:be-rd-1981:aced8656fa79#url:fr:8dc8d959ac53"
+      ],
+      "representations": [
+        {
+          "kind": "local_artifact",
+          "language": "fr",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/legislation/be-rd-1981-fr.md",
+          "representation_id": "be:language-variant:be-rd-1981:aced8656fa79#local:fr:943a630cf412",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "fr",
+          "edition": "undated",
+          "url": "https://ejustice.just.fgov.be/eli/arrete/1981/10/08/1981001949/justel",
+          "path": null,
+          "representation_id": "be:language-variant:be-rd-1981:aced8656fa79#url:fr:8dc8d959ac53",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/3"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 15,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and search outcome",
+            "Retrieval shape and material route constraint"
+          ],
+          "cells": [
+            "be-rd-1981-fr",
+            "[Royal Decree of 8 October 1981, French Justel](https://www.ejustice.just.fgov.be/eli/arrete/1981/10/08/1981001949/justel) — partial functional match; corrected NUMAC 1981001949 replaces legacy 1981001946",
+            "Official consolidation captured 2026-10-19, updated through 2026-08-17; local copy accepted at [`documents/legislation/be-rd-1981-fr.md`](../documents/legislation/be-rd-1981-fr.md)",
+            "Full French text; version scope is limited to publisher date at capture. Annexes, 90 archived versions and 135 implementing decrees remain separate."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/local_copy_decisions/2",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-rd-1981-nl",
+      "title": "Koninklijk besluit van 8 oktober 1981 — implementing decree on access, residence, settlement and removal",
+      "source_type": "national_legislation",
+      "official_urls": [
+        "https://ejustice.just.fgov.be/eli/besluit/1981/10/08/1981001949/justel"
+      ],
+      "source_identity_id": "be:language-variant:be-rd-1981:aced8656fa79",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "paired catalogue IDs with explicit language suffixes",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "be:language-variant:be-rd-1981:aced8656fa79#local:nl:c3de748b2e14",
+        "be:language-variant:be-rd-1981:aced8656fa79#url:nl:1ce60b8151ad"
+      ],
+      "representations": [
+        {
+          "kind": "local_artifact",
+          "language": "nl",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/legislation/be-rd-1981-nl.md",
+          "representation_id": "be:language-variant:be-rd-1981:aced8656fa79#local:nl:c3de748b2e14",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "nl",
+          "edition": "undated",
+          "url": "https://ejustice.just.fgov.be/eli/besluit/1981/10/08/1981001949/justel",
+          "path": null,
+          "representation_id": "be:language-variant:be-rd-1981:aced8656fa79#url:nl:1ce60b8151ad",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/4"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 16,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and search outcome",
+            "Retrieval shape and material route constraint"
+          ],
+          "cells": [
+            "be-rd-1981-nl",
+            "[Royal Decree of 8 October 1981, Dutch Justel](https://www.ejustice.just.fgov.be/eli/besluit/1981/10/08/1981001949/justel) — partial functional match",
+            "Official Dutch consolidation captured 2026-10-19, updated through 2026-08-17; local copy accepted at [`documents/legislation/be-rd-1981-nl.md`](../documents/legislation/be-rd-1981-nl.md)",
+            "Separate language representation of the same NUMAC record; annexes and implementing decrees remain separate."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/local_copy_decisions/3",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-registration-certificate-change",
+      "title": "Registration certificate format change from 28 September 2026",
+      "source_type": "official_operational_notice",
+      "official_urls": [
+        "https://dofi.ibz.be/en/news/registration-certificate-change-28-september-2026"
+      ],
+      "source_identity_id": "be:url:aa2e1a9bb657c031f099",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "be:url:aa2e1a9bb657c031f099#local:en:5c0de86fbab0",
+        "be:url:aa2e1a9bb657c031f099#url:en:c8ade0213099"
+      ],
+      "representations": [
+        {
+          "kind": "local_artifact",
+          "language": "en",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/procedure/be-registration-certificate-change.md",
+          "representation_id": "be:url:aa2e1a9bb657c031f099#local:en:5c0de86fbab0",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://dofi.ibz.be/en/news/registration-certificate-change-28-september-2026",
+          "path": null,
+          "representation_id": "be:url:aa2e1a9bb657c031f099#url:en:c8ade0213099",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/15"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 27,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and search outcome",
+            "Retrieval shape and material route constraint"
+          ],
+          "cells": [
+            "be-registration-certificate-change",
+            "[Registration Certificate format change from 28 September 2026](https://dofi.ibz.be/en/news/registration-certificate-change-28-september-2026) — related source",
+            "Official notice dated 2026-08-17 and checked 2026-10-24; local copy accepted at [`documents/procedure/be-registration-certificate-change.md`](../documents/procedure/be-registration-certificate-change.md)",
+            "Existing models remain valid until expiry; notice says conditions and rights do not change. It is not the technical model specification."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/local_copy_decisions/10",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-rvv-case-sample-320874",
+      "title": "RvV/CCE selected judgments, January 2025 — French monthly issue",
+      "source_type": "administrative_case_law_collection",
+      "official_urls": [
+        "https://rvv-cce.be/sites/default/files/mr-arr/sel-arr-202501-f.pdf"
+      ],
+      "source_identity_id": "be:url:1cdb3f2ffafc9cf3f7de",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "be:url:1cdb3f2ffafc9cf3f7de#local:en:a4b001c7a393",
+        "be:url:1cdb3f2ffafc9cf3f7de#local:fr:ea7bd6ebe1a5",
+        "be:url:1cdb3f2ffafc9cf3f7de#url:fr:08cd7cf72f20"
+      ],
+      "representations": [
+        {
+          "kind": "local_artifact",
+          "language": "en",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/guidance/be-visa-competence-matrix-en.pdf",
+          "representation_id": "be:url:1cdb3f2ffafc9cf3f7de#local:en:a4b001c7a393",
+          "acceptance_status": [
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "local_artifact",
+          "language": "fr",
+          "edition": "2025-01",
+          "url": null,
+          "path": "documents/case_law/be-rvv-selected-jurisprudence-2025-01-fr.pdf",
+          "representation_id": "be:url:1cdb3f2ffafc9cf3f7de#local:fr:ea7bd6ebe1a5",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "fr",
+          "edition": "undated",
+          "url": "https://rvv-cce.be/sites/default/files/mr-arr/sel-arr-202501-f.pdf",
+          "path": null,
+          "representation_id": "be:url:1cdb3f2ffafc9cf3f7de#url:fr:08cd7cf72f20",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/30"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 45,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and search outcome",
+            "Retrieval shape and material route constraint"
+          ],
+          "cells": [
+            "be-rvv-case-sample-320874",
+            "[RvV/CCE selected jurisprudence, January 2025, French](https://www.rvv-cce.be/sites/default/files/mr-arr/sel-arr-202501-f.pdf) — official monthly case-law selection",
+            "Native PDF captured 2026-10-19 and preserved at [`documents/case_law/be-rvv-selected-jurisprudence-2025-01-fr.pdf`](../documents/case_law/be-rvv-selected-jurisprudence-2025-01-fr.pdf); exact French endpoint returned 403 on 2026-10-24; official Dutch counterpart identifies the same selected judgment 320874",
+            "Historical, selective issue; the item is not accepted as the full individual judgment or broad case-law coverage."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/local_copy_decisions/26",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-uae-mission-eu-family-visa",
+      "title": "Schengen visa for a family member of a Belgian or EU national — Belgium in the United Arab Emirates",
+      "source_type": "mission_specific_consular_guidance",
+      "official_urls": [
+        "https://unitedarabemirates.diplomatie.belgium.be/en/travel-belgium/visa-belgium/schengen-visa-family-member-belgian-or-eu-national"
+      ],
+      "source_identity_id": "be:url:8b5c7965d77a65c9afa2",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "be:url:8b5c7965d77a65c9afa2#local:en:d58440202059",
+        "be:url:8b5c7965d77a65c9afa2#url:en:0ac5058f4f6f"
+      ],
+      "representations": [
+        {
+          "kind": "local_artifact",
+          "language": "en",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/guidance/be-uae-mission-eu-family-visa.md",
+          "representation_id": "be:url:8b5c7965d77a65c9afa2#local:en:d58440202059",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://unitedarabemirates.diplomatie.belgium.be/en/travel-belgium/visa-belgium/schengen-visa-family-member-belgian-or-eu-national",
+          "path": null,
+          "representation_id": "be:url:8b5c7965d77a65c9afa2#url:en:0ac5058f4f6f",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/20"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 32,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and search outcome",
+            "Retrieval shape and material route constraint"
+          ],
+          "cells": [
+            "be-uae-mission-eu-family-visa",
+            "[Belgium in the UAE — family-member visa guidance](https://unitedarabemirates.diplomatie.belgium.be/en/travel-belgium/visa-belgium/schengen-visa-family-member-belgian-or-eu-national) — mission-specific guidance",
+            "Page updated 2026-05-21 and checked 2026-10-24; local copy accepted at [`documents/guidance/be-uae-mission-eu-family-visa.md`](../documents/guidance/be-uae-mission-eu-family-visa.md)",
+            "UAE-specific VFS and walk-in process; mobile and non-mobile Belgian routes are distinct."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/local_copy_decisions/17",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-uk-mission-eu-family-visa",
+      "title": "Third-country family members of EU citizens and the EU directive — Belgium in the United Kingdom",
+      "source_type": "mission_specific_consular_guidance",
+      "official_urls": [
+        "https://unitedkingdom.diplomatie.belgium.be/en/travel-belgium/visa-belgium/third-country-family-members-eu-citizens-and-eu-directive"
+      ],
+      "source_identity_id": "be:url:49c962ae9127699a83c6",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "be:url:49c962ae9127699a83c6#local:en:04576db5cc07",
+        "be:url:49c962ae9127699a83c6#url:en:13a578154fb4"
+      ],
+      "representations": [
+        {
+          "kind": "local_artifact",
+          "language": "en",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/guidance/be-uk-mission-eu-family-visa.md",
+          "representation_id": "be:url:49c962ae9127699a83c6#local:en:04576db5cc07",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://unitedkingdom.diplomatie.belgium.be/en/travel-belgium/visa-belgium/third-country-family-members-eu-citizens-and-eu-directive",
+          "path": null,
+          "representation_id": "be:url:49c962ae9127699a83c6#url:en:13a578154fb4",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/19"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 31,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and search outcome",
+            "Retrieval shape and material route constraint"
+          ],
+          "cells": [
+            "be-uk-mission-eu-family-visa",
+            "[Belgium in the UK — EU-family visa instructions](https://unitedkingdom.diplomatie.belgium.be/en/travel-belgium/visa-belgium/third-country-family-members-eu-citizens-and-eu-directive) — mission-specific guidance",
+            "Official page checked 2026-10-24; local snapshot accepted at [`documents/guidance/be-uk-mission-eu-family-visa.md`](../documents/guidance/be-uk-mission-eu-family-visa.md)",
+            "Appointment capacity is volatile; page is UK-specific and must be rechecked before use."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/local_copy_decisions/16",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-visa-competence-matrix",
+      "title": "Visa for Belgium — competence and representation matrix dated 12 October 2026",
+      "source_type": "official_consular_directory",
+      "official_urls": [
+        "https://diplomatie.belgium.be/sites/default/files/2026-10/Visa_Competence_and_Representation_EN_12102026.pdf"
+      ],
+      "source_identity_id": "be:url:09c2dc97c98ded59bc53",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "be:url:09c2dc97c98ded59bc53#local:en:a4b001c7a393",
+        "be:url:09c2dc97c98ded59bc53#url:en:0600df9ec48c"
+      ],
+      "representations": [
+        {
+          "kind": "local_artifact",
+          "language": "en",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/guidance/be-visa-competence-matrix-en.pdf",
+          "representation_id": "be:url:09c2dc97c98ded59bc53#local:en:a4b001c7a393",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://diplomatie.belgium.be/sites/default/files/2026-10/Visa_Competence_and_Representation_EN_12102026.pdf",
+          "path": null,
+          "representation_id": "be:url:09c2dc97c98ded59bc53#url:en:0600df9ec48c",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/17"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 29,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and search outcome",
+            "Retrieval shape and material route constraint"
+          ],
+          "cells": [
+            "be-visa-competence-matrix",
+            "[Visa competence and representation matrix](https://diplomatie.belgium.be/sites/default/files/2026-10/Visa_Competence_and_Representation_EN_12102026.pdf) — related source",
+            "Official 16-page PDF dated 2026-10-12 is preserved byte-for-byte at [`documents/guidance/be-visa-competence-matrix-en.pdf`](../documents/guidance/be-visa-competence-matrix-en.pdf); structure and sampled UK/UAE rows checked",
+            "Dated PDF; rediscover via the hub and preserve country-to-mission rows"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/local_copy_decisions/20",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-visa-gdpr",
+      "title": "General Data Protection Regulation information for visa applicants",
+      "source_type": "official_privacy_guidance",
+      "official_urls": [
+        "https://diplomatie.belgium.be/en/travel-belgium/visa-belgium/general-data-protection-regulation-gdpr"
+      ],
+      "source_identity_id": "be:url:62fcefd691badc1118fb",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "be:url:62fcefd691badc1118fb#local:en:3177b7d89b40",
+        "be:url:62fcefd691badc1118fb#url:en:69b0386204fc"
+      ],
+      "representations": [
+        {
+          "kind": "local_artifact",
+          "language": "en",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/guidance/be-visa-gdpr.md",
+          "representation_id": "be:url:62fcefd691badc1118fb#local:en:3177b7d89b40",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://diplomatie.belgium.be/en/travel-belgium/visa-belgium/general-data-protection-regulation-gdpr",
+          "path": null,
+          "representation_id": "be:url:62fcefd691badc1118fb#url:en:69b0386204fc",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/21"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 33,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and search outcome",
+            "Retrieval shape and material route constraint"
+          ],
+          "cells": [
+            "be-visa-gdpr",
+            "[GDPR information for visa applicants](https://diplomatie.belgium.be/en/travel-belgium/visa-belgium/general-data-protection-regulation-gdpr) — related source",
+            "Official FPS page updated 2026-02-24 and checked 2026-10-24; local copy accepted at [`documents/guidance/be-visa-gdpr.md`](../documents/guidance/be-visa-gdpr.md)",
+            "Covers visa-processing data and VIS rights; distinct from the GDPR and VIS legal texts."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/local_copy_decisions/11",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-visa-hub",
+      "title": "Visa for Belgium — central FPS Foreign Affairs page",
+      "source_type": "official_consular_guidance",
+      "official_urls": [
+        "https://diplomatie.belgium.be/en/travel-belgium/visa-belgium"
+      ],
+      "source_identity_id": "be:url:20211610002bc7f30706",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "be:url:20211610002bc7f30706#local:en:3d5c4ca10cc6",
+        "be:url:20211610002bc7f30706#local:fr:32eb1e6aadf0",
+        "be:url:20211610002bc7f30706#local:fr:71c8b056f0a3",
+        "be:url:20211610002bc7f30706#local:fr:e5304443989b",
+        "be:url:20211610002bc7f30706#local:fr:f44b6f96fe6d",
+        "be:url:20211610002bc7f30706#local:nl:5078068fa6ec",
+        "be:url:20211610002bc7f30706#local:nl:639812004b02",
+        "be:url:20211610002bc7f30706#url:en:afb3cbaa1e18"
+      ],
+      "representations": [
+        {
+          "kind": "local_artifact",
+          "language": "en",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/guidance/be-visa-hub.md",
+          "representation_id": "be:url:20211610002bc7f30706#local:en:3d5c4ca10cc6",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "local_artifact",
+          "language": "fr",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/legislation/be-law-1980-fr.md",
+          "representation_id": "be:url:20211610002bc7f30706#local:fr:32eb1e6aadf0",
+          "acceptance_status": [
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "local_artifact",
+          "language": "fr",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/forms/be-annex-19-fr.pdf",
+          "representation_id": "be:url:20211610002bc7f30706#local:fr:71c8b056f0a3",
+          "acceptance_status": [
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "local_artifact",
+          "language": "fr",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/legislation/be-code-pil-fr.md",
+          "representation_id": "be:url:20211610002bc7f30706#local:fr:e5304443989b",
+          "acceptance_status": [
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "local_artifact",
+          "language": "fr",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/forms/be-annex-20-fr.pdf",
+          "representation_id": "be:url:20211610002bc7f30706#local:fr:f44b6f96fe6d",
+          "acceptance_status": [
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "local_artifact",
+          "language": "nl",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/legislation/be-law-1980-nl.md",
+          "representation_id": "be:url:20211610002bc7f30706#local:nl:5078068fa6ec",
+          "acceptance_status": [
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "local_artifact",
+          "language": "nl",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/legislation/be-code-pil-nl.md",
+          "representation_id": "be:url:20211610002bc7f30706#local:nl:639812004b02",
+          "acceptance_status": [
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://diplomatie.belgium.be/en/travel-belgium/visa-belgium",
+          "path": null,
+          "representation_id": "be:url:20211610002bc7f30706#url:en:afb3cbaa1e18",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/16"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 28,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and search outcome",
+            "Retrieval shape and material route constraint"
+          ],
+          "cells": [
+            "be-visa-hub",
+            "[Visa for Belgium — FPS Foreign Affairs](https://diplomatie.belgium.be/en/travel-belgium/visa-belgium) — consular routing guidance",
+            "Page updated 2026-10-12 and checked 2026-10-24; local copy accepted at [`documents/guidance/be-visa-hub.md`](../documents/guidance/be-visa-hub.md)",
+            "Routes to the competent post and representation matrix; local mission instructions and linked PDFs remain separate."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/local_copy_decisions/15",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-visa-privacy-statement",
+      "title": "Visa-application privacy statement",
+      "source_type": "official_privacy_notice",
+      "official_urls": [
+        "https://diplomatie.belgium.be/en/travel-belgium/visa-belgium/privacy-statement-visa"
+      ],
+      "source_identity_id": "be:url:1a01a567611f3946dc07",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "pending",
+        "historical"
+      ],
+      "representation_ids": [
+        "be:url:1a01a567611f3946dc07#local:en:a4b001c7a393",
+        "be:url:1a01a567611f3946dc07#url:en:da543076c0a5"
+      ],
+      "representations": [
+        {
+          "kind": "local_artifact",
+          "language": "en",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/guidance/be-visa-competence-matrix-en.pdf",
+          "representation_id": "be:url:1a01a567611f3946dc07#local:en:a4b001c7a393",
+          "acceptance_status": [
+            "pending"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://diplomatie.belgium.be/en/travel-belgium/visa-belgium/privacy-statement-visa",
+          "path": null,
+          "representation_id": "be:url:1a01a567611f3946dc07#url:en:da543076c0a5",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "pending"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/22"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 34,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and search outcome",
+            "Retrieval shape and material route constraint"
+          ],
+          "cells": [
+            "be-visa-privacy-statement",
+            "[Visa-application privacy statement](https://diplomatie.belgium.be/en/travel-belgium/visa-belgium/privacy-statement-visa) — historical notice",
+            "Official page is dated 2022-02-01; current visa GDPR page (2026-02-24) is separately accepted",
+            "Historical link only; no local copy because the newer official notice is represented."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [],
+      "status_record_ids": []
+    },
+    {
+      "id": "be-wallonia-publicity-decree",
+      "title": "Walloon Decree of 30 March 1995 on publicity of the Administration",
+      "source_type": "regional_legislation",
+      "official_urls": [
+        "https://wallex.wallonie.be/eli/loi-decret/1995/03/30/1995027312",
+        "https://wallex.wallonie.be/files/pdfs/23/19975_D%C3%A9cret_relatif_%C3%A0_la_publicit%C3%A9_de_l%27Administration_01-04-2026-.pdf"
+      ],
+      "source_identity_id": "be:url:e31bbbbe6669a49b5442",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "be:url:e31bbbbe6669a49b5442#local:fr:95152721df4a",
+        "be:url:e31bbbbe6669a49b5442#url:fr:738da8d6cca8",
+        "be:url:e31bbbbe6669a49b5442#url:fr:e06c735fdbec"
+      ],
+      "representations": [
+        {
+          "kind": "local_artifact",
+          "language": "fr",
+          "edition": "2026-04-01",
+          "url": null,
+          "path": "documents/legislation/be-wallonia-publicity-decree-2026-04-01-fr.pdf",
+          "representation_id": "be:url:e31bbbbe6669a49b5442#local:fr:95152721df4a",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "fr",
+          "edition": "undated",
+          "url": "https://wallex.wallonie.be/files/pdfs/23/19975_D%C3%A9cret_relatif_%C3%A0_la_publicit%C3%A9_de_l%27Administration_01-04-2026-.pdf",
+          "path": null,
+          "representation_id": "be:url:e31bbbbe6669a49b5442#url:fr:738da8d6cca8",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "fr",
+          "edition": "undated",
+          "url": "https://wallex.wallonie.be/eli/loi-decret/1995/03/30/1995027312",
+          "path": null,
+          "representation_id": "be:url:e31bbbbe6669a49b5442#url:fr:e06c735fdbec",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/33"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 48,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and search outcome",
+            "Retrieval shape and material route constraint"
+          ],
+          "cells": [
+            "be-wallonia-publicity-decree",
+            "[Walloon Publicity of Administration decree](https://wallex.wallonie.be/eli/loi-decret/1995/03/30/1995027312) — regional legislation",
+            "Current eight-page PDF edition in force from 2026-04-01 accepted at [`documents/legislation/be-wallonia-publicity-decree-2026-04-01-fr.pdf`](../documents/legislation/be-wallonia-publicity-decree-2026-04-01-fr.pdf); PDF identifies amendments through 2026-03-26",
+            "Walloon statutory scope only; not a nationwide access law. Rediscover later editions through WALLEX."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/local_copy_decisions/24",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    }
+  ]
+}

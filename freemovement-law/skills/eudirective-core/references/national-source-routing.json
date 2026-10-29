@@ -1263,31 +1263,5 @@
       "skill_version": "0.6.4"
     }
   ],
-  "schema_version": "1.0.0",
-  "topic_candidate_routing": [
-    {
-      "country_code": "FR",
-      "country_plugin": "fm-france",
-      "source_index": "references/source-library/france/references/consultation-issue-source-index.json",
-      "route_id": "eu_family_entry_visa_formal_refusal",
-      "candidate_source_ids": [
-        "fr-france-visas-family-eu",
-        "fr-ceseda-r221-2",
-        "fr-ta-nantes-2105915-2105917-2021",
-        "fr-cja-l521-1",
-        "fr-ce-237376-2001"
-      ],
-      "runtime_rule": "Identify these only as candidates. In a consultation, report each candidate separately as bundled accepted text read, official link reviewed, official text opened, or not consulted; determine relevance, currentness and remedy availability from current official-source review. Do not force Nantes or interim-relief conclusions for unrelated France questions."
-    },
-    {
-      "country_code": "FR",
-      "country_plugin": "fm-france",
-      "source_index": "references/source-library/france/references/consultation-issue-source-index.json",
-      "route_id": "visa_code_article32_substantive_refusal_outcome",
-      "candidate_source_ids": [
-        "fr-service-public-short-visa-refusal"
-      ],
-      "runtime_rule": "Candidate applies to ordinary short-stay refusal/RAPO route only; do not automatically map to Directive EU-family entry-visa refusal."
-    }
-  ]
+  "schema_version": "1.0.0"
 }

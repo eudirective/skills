@@ -68,10 +68,6 @@ The official Légifrance CESEDA Book II sections are usable directly as human-re
 | fr-prefecture-police-paris-prolongation-droit-au-sejour | [Paris Police Prefecture: extension of right to stay](https://www.prefecturedepolice.interieur.gouv.fr/demarches/prolongation_droit_au_sejour) | related_source | Official-host indexed content reviewed 2026-10-29; Paris-only scope and directs other departments to their prefectures; direct page access was blocked by JS/cookies | Last-known official link for specified extension/receipt procedures only; verify live; not an EU-family residence-card procedure or primary law |
 | fr-prefecture-police-2023-01288-immigration-familiale | [Paris Police Prefecture order no. 2023-01288, RAA 75-2023-604](https://www.prefectures-regions.gouv.fr/ile-de-france/irecontenu/telechargement/110298/828146/file/recueil-75-2023-604-recueil-des-actes-administratifs-special%20du%2023.10.2023.pdf) | related_source | Official RAA PDF reviewed 2026-10-29; Article 11 assigned specified EU-citizen/family residence matters to the then-named immigration-family division; later organization/delegation acts exist | Historical official link-only organizational reference; current assignment not established; check successor acts; not substantive residence law |
 
-| fr-ceseda-r221-2 | [Légifrance: CESEDA Article R. 221-2](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042808094/2026-02-13) | partial_functional_match | Official Légifrance article page checked 2026-10-29; scoped review identifies free and accelerated visa rule on proof of a qualifying link; verify displayed version for each consultation | Usable official link-only legal reference; exact eligibility and current displayed text must be checked in the consultation; no local copy |
-| fr-cja-l521-1 | [Légifrance: Code de justice administrative Article L. 521-1](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006449326/2026-07-18) | related_source | Official Légifrance article page checked 2026-10-29; generic interim suspension criteria reviewed; link uses dated version | Usable official link-only legal reference; recheck current displayed text and national procedural fit; no relief guarantee |
-| fr-ce-237376-2001 | [Conseil d’État, Sect., 12 Oct. 2001, Société Produits Roche, no. 237376](https://www.legifrance.gouv.fr/ceta/id/CETATEXT000008068733) | related_source | Official Légifrance decision page checked 2026-10-29; candidate concerns interim suspension with a non-suspensive administrative appeal pending | Usable official link-only case reference; assess currentness and fact-specific scope; no local copy or automatic eligibility conclusion |
-
 ## Search outcome and limits
 
 Official channels were searched separately for legal-source acquisition, residence and visa guidance, civil status/adoption, procedure/remedies, courts/case law, privacy/access/oversight, and legal aid. Candidate relationships are not legal-equivalence findings. Verification evidence and limits are recorded per row. No empty search outcome is treated as proof that a source does not exist.
@@ -103,3 +99,69 @@ The full 83-file Legalize France inventory was compared by `LEGITEXT` identity t
 The other Legalize files were not accepted as a batch. The pinned directory exposes each file identifier and its corresponding official Légifrance URL; the remaining records include many tax, transport, public-property, maritime, military, medals, pension, forestry/mining, historic/territorial and other specialized codes. They still require issue-led triage before inclusion; this scan does not claim provision-by-provision official verification for every out-of-scope file. Some codes among the 79 without local full-code copies already have scoped official references in the pack, and the five above now have full-code link-only references. The older Legalize snapshot for Code de la famille et de l'aide sociale (`LEGITEXT000006072637`, `last_updated: 2019-12-30`) is not substituted for the already accepted current CASF international-adoption section; its broader use requires a concrete issue and official currentness check.
 
 For the five new link-only records, use the official current Légifrance page directly. If a later task requires a retained local copy, apply the conversion rules above to a bounded, relevant section, compare the complete section and article anchors to the official current version, and attribute DILA/Légifrance plus Legalize France’s transformation and pinned commit. Do not convert or accept an entire code merely because a Legalize file exists.
+
+<!-- source-identity-inventory:start -->
+## Source identity crosswalk
+
+Canonical rows: **57**; provisional unique IDs: **57**; unresolved entries: **0**. This crosswalk preserves catalogue IDs, links external-reference and local-artifact representations to a source identity, and keeps acceptance status separate.
+
+| Existing entry ID | Canonical source identity | Resolution | Representations | Catalogued statuses | Status record IDs |
+|---|---|---|---|---|---|
+| `fr-01-ceseda-book-ii-eu-citizens-and-family-members-(including-articles-l.233-1-o` | `fr:url:58fdd8402156404e0510` | resolved | official_reference/fr/2026-10-29 | accepted_external_reference | fr-ceseda-book-ii-regulatory |
+| `fr-02-code-civil-international-adoption-(articles-370-2-to-370-5)` | `fr:url:28ee887f71d9e0d77d45` | resolved | official_reference/unspecified/undated | accepted_external_reference, accepted_local_copy | — |
+| `fr-03-code-civil-marriage-celebrated-abroad-(article-171-1-and-connected-provisio` | `fr:url:f4a6ee479bf43796ccf3` | resolved | official_reference/unspecified/undated | accepted_external_reference, accepted_local_copy | — |
+| `fr-04-code-de-l’action-sociale-et-des-familles-international-adoption-provisions` | `fr:url:3106743b0f35695708d9` | resolved | official_reference/unspecified/undated | accepted_external_reference, accepted_local_copy | — |
+| `fr-05-france-visas-route-for-family-members-of-european-citizens` | `fr:url:9d354dc95f3eb0f8115e` | resolved | official_reference/fr/2026-10-24 | accepted_local_copy | fr-france-visas-family-eu |
+| `fr-06-code-civil-article-47:-evidentiary-effect-and-verification-of-foreign-civil` | `fr:url:79e421e74588026ff69e` | resolved | official_reference/fr/2026-07-28 | accepted_external_reference, accepted_local_copy | — |
+| `fr-07-code-de-justice-administrative` | `fr:url:f68ad129d9913ddf1a12` | resolved | official_reference/fr/2026 | accepted_external_reference | — |
+| `fr-cada-access-portal` | `fr:url:3152e07f2028501a23a2` | resolved | local_artifact/unspecified/undated<br>official_reference/fr/2026-10-19 | accepted_local_copy | — |
+| `fr-cada-open-opinions-dataset` | `fr:url:8461c4f1644740568827` | resolved | official_reference/fr/2026-10-24<br>official_reference/unspecified/undated | accepted_external_reference | — |
+| `fr-cerfa-14076-eu-family-visa-form` | `fr:url:3c09b8ff0ea6d91aa222` | resolved | local_artifact/unspecified/undated<br>official_reference/en/2024-02-12<br>official_reference/fr/2024-02-12 | accepted_external_reference, accepted_local_copy | — |
+| `fr-ceseda-book-ii-legislative` | `fr:url:478a7064b9ff5f0f1b34` | resolved | official_reference/fr/2026-10-29<br>official_reference/fr/2026 | accepted_external_reference | — |
+| `fr-ceseda-l233-1` | `fr:url:46efd90b7aba6834f652` | resolved | official_reference/unspecified/undated | historical | — |
+| `fr-ceseda-r233-14` | `fr:url:4d4d9469649e9da8f611` | resolved | official_reference/unspecified/undated | candidate | — |
+| `fr-ceseda-r233-15` | `fr:url:38f0d7a2bdcaf042276d` | resolved | official_reference/unspecified/undated | candidate | — |
+| `fr-cja-r312-18-visa-jurisdiction` | `fr:url:424c641ef57bc6dcf597` | resolved | official_reference/fr/2022 | accepted_external_reference | — |
+| `fr-cja-r421-1-deadline` | `fr:url:7ef87c287048c059111e` | resolved | official_reference/fr/2026 | accepted_external_reference | — |
+| `fr-cnil-agdref-information` | `fr:url:f589fb46b6584d4166cf` | resolved | official_reference/fr/2026-10-24 | accepted_external_reference | — |
+| `fr-cnil-complaints` | `fr:url:560b8aae29ecc032f3d8` | resolved | local_artifact/unspecified/undated<br>official_reference/fr/2026-10-24 | accepted_local_copy | — |
+| `fr-code-education` | `fr:url:0aa2516dce99b7e09382` | resolved | official_reference/fr/2026-10-29 | accepted_external_reference | — |
+| `fr-code-procedure-civile` | `fr:url:ecc38235eb9f4ea1c978` | resolved | official_reference/fr/2026-10-29 | accepted_external_reference | — |
+| `fr-code-sante-publique` | `fr:url:83514114f393685c7a75` | resolved | official_reference/fr/2026-10-18 | accepted_external_reference | — |
+| `fr-code-securite-sociale` | `fr:url:0fee651cb51f5b94ed38` | resolved | official_reference/fr/2026-10-02 | accepted_external_reference | — |
+| `fr-code-travail` | `fr:url:a0541676533aa7fc6488` | resolved | official_reference/fr/2026-06-27 | accepted_external_reference | — |
+| `fr-conseil-etat-450285-450288-2022` | `fr:url:6bb06b3cebab74e84444` | resolved | official_reference/fr/2022 | accepted_external_reference | — |
+| `fr-conseil-etat-open-data-and-ariane` | `fr:url:92519c26e1a18537b2af` | resolved | local_artifact/unspecified/undated<br>official_reference/fr/2026-10-24 | accepted_local_copy | — |
+| `fr-crpa-code` | `fr:url:59230065e6fc85ffd4c2` | resolved | official_reference/fr/2026 | accepted_external_reference | — |
+| `fr-crpa-l411-1-appeals` | `fr:url:3469778c51c1248db0c1` | resolved | official_reference/fr/2016 | accepted_external_reference | — |
+| `fr-crrv-official-directory` | `fr:url:bec58a8a30291c49bb9f` | resolved | local_artifact/unspecified/undated<br>official_reference/fr/2026-01-05 | accepted_local_copy | — |
+| `fr-datagouv-legi-dataset` | `fr:url:6d05cb499a0cf5d01583` | resolved | official_reference/fr/2026-10-22 | accepted_external_reference | — |
+| `fr-defenseur-delays-titles-report-2026` | `fr:url:5d1bdc94db418e13e906` | resolved | official_reference/fr/2026-10-24 | accepted_external_reference | — |
+| `fr-defenseur-des-droits-portal` | `fr:url:58857299d95e0f872673` | resolved | official_reference/fr/2026-10-24 | accepted_external_reference | — |
+| `fr-dila-legi-bulk-directory` | `fr:url:179f131031d8b2c4efe8` | resolved | official_reference/fr/2026-10-24 | accepted_external_reference | — |
+| `fr-dila-legifrance-dtd` | `fr:url:c1bc381fdf92a964f519` | resolved | official_reference/fr/2018-10-17 | accepted_external_reference | — |
+| `fr-france-visas-family-french` | `fr:url:de58ea84f0e60a54f0a0` | resolved | local_artifact/unspecified/undated<br>official_reference/en/2026-10-29<br>official_reference/fr/2026-10-29 | accepted_external_reference, accepted_local_copy | — |
+| `fr-france-visas-family-motive` | `fr:url:1f0fc1af09f993534bd4` | resolved | official_reference/unspecified/undated | discovery | — |
+| `fr-france-visas-fees` | `fr:url:cd0b710c2145cce46125` | resolved | official_reference/fr/2026-10-24 | accepted_external_reference | — |
+| `fr-france-visas-long-stay` | `fr:url:42de353104fc7f65082d` | resolved | official_reference/fr/2026-10-24 | accepted_external_reference | — |
+| `fr-france-visas-main-service` | `fr:url:3370f3e0f1a913c65836` | resolved | official_reference/unspecified/undated | candidate | — |
+| `fr-france-visas-short-stay` | `fr:url:2e5dc2059d4213aab30f` | resolved | official_reference/fr/2026-10-24 | accepted_external_reference | — |
+| `fr-france-visas-submission-location-directory` | `fr:url:1171e00c855fe0fb9da0` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `fr-legal-aid-act-91-647` | `fr:url:e480e4e484200e17d9a9` | resolved | official_reference/fr/2026 | accepted_external_reference | — |
+| `fr-legifrance-api-faq` | `fr:url:9510ec2e3ef967774ff1` | resolved | official_reference/fr/2026-10-24 | accepted_external_reference | — |
+| `fr-legifrance-api-open-data-docs` | `fr:url:eec129b229ffa40d2188` | resolved | official_reference/fr/2026-10-24 | accepted_external_reference | — |
+| `fr-legifrance-portal` | `fr:url:a912150f6397bd37bdab` | resolved | official_reference/unspecified/undated | accepted_external_reference, discovery | — |
+| `fr-ministry-anef-overview` | `fr:url:b857aed113cecd61ec1d` | resolved | official_reference/fr/2026-10-24 | accepted_external_reference | — |
+| `fr-nlex-profile` | `fr:url:bc282abfed6a629de09f` | resolved | official_reference/en/2026-10-24<br>official_reference/fr/2026-10-24 | discovery | — |
+| `fr-prefecture-police-2023-01288-immigration-familiale` | `fr:url:9a15b7e46a398b27a213` | resolved | official_reference/fr/2023 | accepted_external_reference | — |
+| `fr-prefecture-police-paris-prolongation-droit-au-sejour` | `fr:url:970654d1df5989565b26` | resolved | official_reference/fr/undated | accepted_external_reference | — |
+| `fr-service-public-anef-task-r59398` | `fr:url:1a04b5a0194e5e2764ed` | resolved | local_artifact/unspecified/undated<br>official_reference/fr/2026-08-13 | accepted_local_copy | — |
+| `fr-service-public-eu-long-stay-f2651` | `fr:url:65354b5951d6314aae72` | resolved | local_artifact/unspecified/undated<br>official_reference/fr/2026-04-01 | accepted_local_copy | — |
+| `fr-service-public-family-card-f19315` | `fr:url:ebd705a0859432c0f6d9` | resolved | local_artifact/unspecified/undated<br>official_reference/fr/2024-02-02 | accepted_local_copy | — |
+| `fr-service-public-general-stay-f39` | `fr:url:d865744a9fe30fb3a6b5` | resolved | local_artifact/unspecified/undated<br>official_reference/fr/2026-07-08 | accepted_local_copy | — |
+| `fr-service-public-legal-aid-f18074` | `fr:url:142a644541bfe62b2da1` | resolved | local_artifact/unspecified/undated<br>official_reference/fr/2026-06-12 | accepted_local_copy | — |
+| `fr-service-public-long-visa-refusal` | `fr:url:b5ea51d8cbc0abd6038d` | resolved | local_artifact/unspecified/undated<br>official_reference/fr/2026-10-09 | accepted_local_copy | — |
+| `fr-service-public-short-visa-refusal` | `fr:url:e40f2031df77cd46a44b` | resolved | local_artifact/unspecified/undated<br>official_reference/fr/2026-08-13<br>official_reference/unspecified/undated | accepted_local_copy | — |
+| `fr-ta-nantes-2105915-2105917-2021` | `fr:url:3028af0923f4f724b57f` | resolved | official_reference/fr/2021 | accepted_external_reference | — |
+| `fr-ta-nantes-official-site` | `fr:url:2f0bc7475c9f2bd969ec` | resolved | local_artifact/unspecified/undated<br>official_reference/fr/2026-10-19 | accepted_local_copy | — |
+<!-- source-identity-inventory:end -->

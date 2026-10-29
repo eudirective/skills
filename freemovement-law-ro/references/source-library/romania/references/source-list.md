@@ -152,3 +152,101 @@ These rows document human-reviewed official links. They do not add download or c
 | HG nr. 1.441/2004 — [Portal Legislativ](https://legislatie.just.ro/Public/DetaliiDocument/55426) | Consolidated-form page states updated through 12 August 2016 | Official dated reference for authorization of foreign private organizations in international adoption, cited by Law nr. 273/2004 Article 64. The research viewer returned 502 and did not expose the full text; current criteria and authorized-organization list remain unverified. |
 | HG nr. 798/2021 — [Portal Legislativ](https://legislatie.just.ro/Public/FormaPrintabila/00000G3N1Q9WFHTXEJV139XT5WI0EGGP) | Replacement annex published 5 August 2021 | Official replacement text for the methodological-rules annex to HG nr. 579/2016, not a current consolidation of the whole decision; Article 83(1) was finally annulled. |
 | ÎCCJ Decision nr. 326/2025 — [Portal Legislativ](https://legislatie.just.ro/Public/DetaliiDocument/303954) | Decision of 22 September 2025 | Official confirmation of the Article 83(1) annulment status and its limited support-allowance context; not a general adoption-procedure holding. |
+
+<!-- source-identity-inventory:start -->
+## Source identity crosswalk
+
+Canonical rows: **89**; provisional unique IDs: **88**; unresolved entries: **0**. This crosswalk preserves catalogue IDs, links external-reference and local-artifact representations to a source identity, and keeps acceptance status separate.
+
+| Existing entry ID | Canonical source identity | Resolution | Representations | Catalogued statuses | Status record IDs |
+|---|---|---|---|---|---|
+| `ro-anspdcp-complaint-form` | `ro:url:6836a05b6747f6e89126` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | pending, candidate | — |
+| `ro-anspdcp-complaint-procedure` | `ro:url:5eb4da7ed894a6bc0049` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | pending, candidate | — |
+| `ro-apjgalati-ro-jurisprudenta-comunicare-informatii-de-interes-public-legea-nr-544-2001` | `ro:url:b723657c21bb06e59f41` | resolved | local_artifact/ro/2001<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-avp-petition` | `ro:url:8d9515b074aad40636dc` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | pending, candidate | — |
+| `ro-avp-ro-home` | `ro:url:6f185809a5846e8bc89a` | resolved | official_reference/ro/undated | candidate | — |
+| `ro-eviza-faq-en` | `ro:language-variant:ro-eviza-faq:8ab678e9d980` | resolved | local_artifact/en/undated<br>official_reference/en/undated | pending, candidate | — |
+| `ro-eviza-faq-ro` | `ro:language-variant:ro-eviza-faq:8ab678e9d980` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-eviza-mae-ro-home-specificrules` | `ro:url:6150aae638a294978d91` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-igi-central-administration` | `ro:url:44d6b83c74e81ae15e57` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | pending, candidate | — |
+| `ro-igi-information-request-form` | `ro:url:bb423414303d9c009148` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | pending, candidate | — |
+| `ro-igi-information-request-procedure` | `ro:url:ea1453ee5ad34509ab67` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | pending, candidate | — |
+| `ro-igi-mai-gov-ro-membrii-de-familie-ai-cetatenilor-ue-see` | `ro:url:757da276665e1bc53b17` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-igi-negative-information-response` | `ro:url:3eacf8aa738d02c33b72` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | pending, candidate | — |
+| `ro-igi-petitions` | `ro:url:0006868ff53d25812011` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | pending, candidate | — |
+| `ro-legeaz-net-spete-contencios-inalta-curte-iccj-2012-decizia-2236-2012` | `ro:url:6af7b7239ea21b1f955f` | resolved | local_artifact/ro/2012<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-legislatie-just-ro-home` | `ro:url:76fcf314d29f4056e987` | resolved | official_reference/ro/2004<br>official_reference/ro/2024<br>official_reference/ro/2021<br>official_reference/ro/2004<br>official_reference/ro/2024<br>official_reference/ro/2025<br>official_reference/ro/2025<br>official_reference/ro/2024<br>official_reference/ro/undated<br>official_reference/ro/2024<br>official_reference/ro/2025<br>official_reference/ro/2021 | accepted_external_reference, discovery | ro-portal-140280, ro-portal-232354, ro-portal-288410-adoption-rules, ro-portal-303954-adoption-rule-status, ro-portal-309058, ro-portal-55426-foreign-adoption-authorizations, ro-portal-798-2021-adoption-annex |
+| `ro-portal-101319` | `ro:url:e392274bf12397095989` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-106782` | `ro:url:890fde73e3a9e21ee2e0` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-112921` | `ro:url:8e4ae243f19369b10d00` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-120644` | `ro:url:275af6f2e5e412c5e5c0` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-130142` | `ro:url:b7ddccb18d9254974a9a` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-136986` | `ro:url:49a17326f55c4d05b02f` | resolved | local_artifact/ro/undated<br>official_reference/ro/2022<br>official_reference/ro/undated<br>official_reference/ro/2022 | accepted_external_reference, pending | — |
+| `ro-portal-136987` | `ro:url:0b80dc0cae805c23aac6` | resolved | local_artifact/ro/undated<br>official_reference/ro/2022<br>official_reference/ro/undated<br>official_reference/ro/2022 | accepted_external_reference, pending | — |
+| `ro-portal-149314` | `ro:url:736cc8d2d7658e87bd3e` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-175268` | `ro:url:cb712d3a697a86976640` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-185727` | `ro:url:822ab8e1b0d264ab6964` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-189428` | `ro:url:913f83869963b01a1cf4` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-198173` | `ro:url:2cbb7fdcff0d78fb2397` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-201568` | `ro:url:cf4491f510133f949bd8` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-203151` | `ro:url:3102b04ba88fdf8097c0` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-205439` | `ro:url:f238d9284b1639d08813` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-208825` | `ro:url:2954390380a1691637ad` | resolved | local_artifact/ro/undated<br>official_reference/ro/2024<br>official_reference/ro/undated<br>official_reference/ro/2024 | accepted_external_reference, pending | — |
+| `ro-portal-209627` | `ro:url:f314843968c0015a1f66` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-212917` | `ro:url:2255bb39d5474e77ad6d` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-215692` | `ro:url:509cf387a62bedc04018` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-223771` | `ro:url:ba7fe2e5b8417b21201e` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-227236` | `ro:url:0d958abcaeab5937d687` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-228250` | `ro:url:6f5af64b98e07db4f4a5` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-234297` | `ro:url:4d8b3892e3f214a59812` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-238318` | `ro:url:55398dc2d98c01741569` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-246015` | `ro:url:806a0ee115a42e8efe1e` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-247374` | `ro:url:04968e2aca4114f2b1bf` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-256871` | `ro:url:c0ddfc1e36c7c0b9ad44` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-278082` | `ro:url:e9f885f0f5ae109e80f5` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-280597` | `ro:url:109e333031e6bf355909` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-280598` | `ro:url:2dc69bc1829460f7e6c6` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-281920` | `ro:url:53a3bd396f6c1db45497` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-288614` | `ro:url:b4b37ad1b20348cdc66f` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-288849` | `ro:url:8e66546521bed2d6bfaf` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-292545` | `ro:url:0bc62e8405d33fd0afab` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-297292` | `ro:url:e597c77135cd0582aaba` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-298762` | `ro:url:b421d27dcd537143671b` | resolved | local_artifact/ro/undated<br>official_reference/ro/2025<br>official_reference/ro/undated<br>official_reference/ro/2025 | accepted_external_reference, pending | — |
+| `ro-portal-301121` | `ro:url:c05cf0a10bb9e5a70990` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-303040` | `ro:url:7f2f28911bea0e4c85ca` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-305877` | `ro:url:29109e49c9fbe96cc4dc` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-307794` | `ro:url:4d0caeba00bfb5ba32e0` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-309623` | `ro:url:b3ef27d6304de5f0f5fd` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-311166` | `ro:url:240fb84d5df2c12368c0` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-31413` | `ro:url:922d7629b389d5fc0b37` | resolved | local_artifact/ro/undated<br>official_reference/ro/2024<br>official_reference/ro/undated<br>official_reference/ro/2024 | accepted_external_reference, pending | — |
+| `ro-portal-33817` | `ro:url:84e9c32ae3b4e214fb26` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated<br>official_reference/ro/2024<br>official_reference/ro/2024 | accepted_external_reference, pending | — |
+| `ro-portal-34416` | `ro:url:06451d58eb6ffbfd3d11` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated<br>official_reference/ro/2022<br>official_reference/ro/2022 | accepted_external_reference, pending | — |
+| `ro-portal-35209` | `ro:url:52688893ba972ee741f5` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-37319` | `ro:url:fb642fdaae673f78ddef` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-41571` | `ro:url:e69498480833912c4d4d` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-47355` | `ro:url:8ce4c2d9f86604c93af4` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-50236` | `ro:url:e605f75625e920fad826` | resolved | local_artifact/ro/undated<br>official_reference/ro/2026<br>official_reference/ro/undated<br>official_reference/ro/2026 | accepted_external_reference, pending | — |
+| `ro-portal-53577` | `ro:url:aad05c03810772d4fd24` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-7937` | `ro:url:9511217dc00609992847` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-79377` | `ro:url:0def4c06250248662564` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-form-00000g1cnic5mt4ku6u1pei8z6djh26g` | `ro:url:b09c288efbc03ecab677` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portal-form-00000g1fazjktjyxd7r2p99rivao9381` | `ro:url:c88069e1643227f4d9d9` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-portalquery-just-ro-query-asmx` | `ro:url:4f26bab056c461c710f6` | resolved | official_reference/ro/undated | discovery | — |
+| `ro-rejust-ro-home` | `ro:url:e3559dfb3cc8e87e80ff` | resolved | official_reference/ro/undated | discovery | — |
+| `ro-scj-156624` | `ro:url:141c19c3c43001c9cc87` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-scj-183362` | `ro:url:d336ebb11919e52cf9e0` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-scj-187525` | `ro:url:1a891d0b8de76768c4ef` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-scj-195590` | `ro:url:7dc206b062d9e039c9b7` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-scj-224616` | `ro:url:c42a8b277d784e54c17e` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-scj-227409` | `ro:url:74148d18e27491ecd2d6` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-scj-228545` | `ro:url:e659bcab6a90f062c5df` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-scj-231772` | `ro:url:32685c85d19fe18ca7ac` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-scj-237168` | `ro:url:13cf48d8a59b22d1179a` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-scj-60414` | `ro:url:4f2121e047d5635e95fe` | resolved | local_artifact/en/undated<br>local_artifact/ro/undated<br>local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-www-ccr-ro-home` | `ro:url:5cf6981ca102b99abde0` | resolved | official_reference/ro/undated | discovery | — |
+| `ro-www-cncd-ro-home` | `ro:url:338960f70a721accce05` | resolved | official_reference/ro/undated | candidate | — |
+| `ro-www-dataprotection-ro-home` | `ro:url:a43b4ed818ef90968b75` | resolved | official_reference/ro/undated | candidate | — |
+| `ro-www-iccj-ro-home` | `ro:url:33f8bb8207d33ef39d8b` | resolved | official_reference/ro/undated | discovery | — |
+| `ro-www-jurisprudenta-com-jurisprudenta-speta-17vkqkup` | `ro:url:6ff6276f3e07776a1bc9` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+| `ro-www-politiadefrontiera-ro-ro-main-pg-petitii-171-html` | `ro:url:d98209fc7ee29bbb72fb` | resolved | local_artifact/ro/undated<br>official_reference/ro/undated | pending, candidate | — |
+<!-- source-identity-inventory:end -->

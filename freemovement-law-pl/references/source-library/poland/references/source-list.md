@@ -72,3 +72,75 @@ Skill: assess-source-rule-sustainability v0.2.0
 | `pl-61` | [Stamp Duty Act, consolidated announcement Dz.U. 2025 poz. 1154](https://eli.gov.pl/eli/DU/2025/1154/ogl) | `administrative_fees_legislation` | `related_legislation` | Official ELI record opened 2026-10-21 | ELI displays status obowiązujący, legal-status date 8 August 2025, and four later amendments. Use the consolidation within its cutoff; check a later amendment only if it may affect the fee or exemption at issue. Link accepted.  No candidate document; official reference remains link-only |
 | `pl-62` | [Ombudsman Act, consolidated announcement Dz.U. 2024 poz. 1264](https://eli.gov.pl/eli/DU/2024/1264/ogl) | `ombudsman_oversight_legislation` | `related_legislation` | Official ELI record reviewed 2026-10-21 | ELI displays status obowiązujący and legal-status date 14 August 2024. Defines the oversight role; an Ombudsman submission does not replace an appeal deadline. Link accepted.  No candidate document; official reference remains link-only |
 | `pl-63` | [Schengen and Visa Information Systems Act, consolidated announcement Dz.U. 2026 poz. 1061](https://eli.gov.pl/eli/DU/2026/1061/ogl) | `SIS_VIS_national_implementing_legislation` | `implementing_legislation` | ELI record and official PDF text checked 2026-10-29; retained dated Markdown copy | ELI displays status obowiązujący, announcement dated 31 July 2026, and legal-status date 20 July 2026. Full official PDF text is retained at [document](../documents/legislation/pl-63-sis-vis-act-consolidation-2026.md). Staged commencement and later EU decisions require provision-specific verification; no request channel is inferred.
+
+<!-- source-identity-inventory:start -->
+## Source identity crosswalk
+
+Canonical rows: **63**; provisional unique IDs: **63**; unresolved entries: **0**. This crosswalk preserves catalogue IDs, links external-reference and local-artifact representations to a source identity, and keeps acceptance status separate.
+
+| Existing entry ID | Canonical source identity | Resolution | Representations | Catalogued statuses | Status record IDs |
+|---|---|---|---|---|---|
+| `pl-01` | `pl:url:eb53f66ec2de108427b2` | resolved | local_artifact/pl/undated<br>official_reference/pl/undated | accepted_external_reference | — |
+| `pl-02` | `pl:url:96abbb877b2993252a6f` | resolved | local_artifact/pl/undated<br>official_reference/pl/undated | accepted_external_reference | — |
+| `pl-03` | `pl:url:e48464636f65f2162a67` | resolved | local_artifact/pl/undated<br>official_reference/pl/undated | accepted_external_reference, discovery | — |
+| `pl-04` | `pl:url:af25d77ad05cf4c3596d` | resolved | official_reference/pl/undated | discovery, not_relied_upon | — |
+| `pl-05` | `pl:url:33ab083ce188c5cf7aae` | resolved | local_artifact/pl/undated<br>official_reference/pl/undated | accepted_external_reference, discovery | — |
+| `pl-06` | `pl:url:4a4484c4c9d442b618a0` | resolved | local_artifact/pl/2025<br>local_artifact/unspecified/2025<br>official_reference/pl/undated | accepted_local_copy, historical | — |
+| `pl-06-current-2026` | `pl:url:cce8185d956aaff03f25` | resolved | local_artifact/pl/2026<br>local_artifact/unspecified/2026<br>official_reference/pl/2026-10-21<br>official_reference/pl/2026-10-21<br>official_reference/pl/undated | accepted_external_reference, accepted_local_copy | — |
+| `pl-07` | `pl:url:22c4215155d3cb44f812` | resolved | local_artifact/pl/2025<br>local_artifact/unspecified/2025<br>official_reference/pl/2025<br>official_reference/pl/2025<br>official_reference/pl/undated | accepted_external_reference, accepted_local_copy | — |
+| `pl-08` | `pl:url:ee3ccb0b72db9c19be35` | resolved | local_artifact/pl/2025<br>local_artifact/unspecified/2025<br>official_reference/pl/2026-10-21<br>official_reference/pl/2026-10-21<br>official_reference/pl/undated | accepted_external_reference, accepted_local_copy | — |
+| `pl-09` | `pl:url:8be7c7efa931b64827bf` | resolved | local_artifact/pl/2025<br>local_artifact/unspecified/2025<br>official_reference/pl/2026-10-21<br>official_reference/pl/2026-10-21<br>official_reference/pl/undated | accepted_external_reference, accepted_local_copy | — |
+| `pl-10` | `pl:url:553798f8ad8b6e2fd6ff` | resolved | local_artifact/pl/2021<br>local_artifact/unspecified/2021<br>official_reference/pl/2026-10-21<br>official_reference/pl/undated<br>official_reference/pl/2026-10-21 | accepted_external_reference, accepted_local_copy | — |
+| `pl-11` | `pl:url:61703e8c00c58aa92719` | resolved | local_artifact/pl/2022<br>local_artifact/unspecified/2022<br>official_reference/pl/2026-10-21<br>official_reference/pl/2026-10-21<br>official_reference/pl/undated | accepted_external_reference, accepted_local_copy | — |
+| `pl-12` | `pl:url:b3635176563a97caefce` | resolved | local_artifact/pl/undated<br>local_artifact/unspecified/undated<br>official_reference/pl/undated | accepted_external_reference, accepted_local_copy | — |
+| `pl-13` | `pl:url:d40e92cfca41e9308a7f` | resolved | local_artifact/pl/undated<br>local_artifact/unspecified/undated<br>official_reference/pl/undated | accepted_external_reference, accepted_local_copy | — |
+| `pl-14` | `pl:url:fd081938e9379e3db303` | resolved | local_artifact/pl/undated<br>local_artifact/unspecified/undated<br>official_reference/pl/undated | accepted_external_reference, accepted_local_copy | — |
+| `pl-15` | `pl:url:7b9e3c190c45380d0ce6` | resolved | local_artifact/pl/undated<br>local_artifact/unspecified/undated<br>official_reference/pl/undated | accepted_external_reference, accepted_local_copy | — |
+| `pl-16` | `pl:url:865f43073675d8528ccb` | resolved | local_artifact/pl/undated<br>local_artifact/unspecified/undated<br>official_reference/pl/undated | accepted_external_reference, accepted_local_copy | — |
+| `pl-17` | `pl:url:ea78cadfd095fb6cacb3` | resolved | local_artifact/pl/undated<br>official_reference/pl/undated | accepted_external_reference | — |
+| `pl-18` | `pl:url:fc283638ee1426720b74` | resolved | local_artifact/pl/2026<br>local_artifact/unspecified/2026<br>official_reference/pl/undated | accepted_local_copy, historical | — |
+| `pl-19` | `pl:url:60d4b8678ace62552a45` | resolved | local_artifact/pl/2021<br>local_artifact/unspecified/2021<br>official_reference/pl/undated | accepted_local_copy, discovery, historical | — |
+| `pl-20` | `pl:url:35a20c8772a78a596ea0` | resolved | local_artifact/pl/2026-10-29<br>official_reference/pl/undated | accepted_external_reference | — |
+| `pl-21` | `pl:url:29a0348423b1e7d8882f` | resolved | local_artifact/pl/undated<br>local_artifact/unspecified/undated<br>official_reference/pl/undated | accepted_external_reference, accepted_local_copy | — |
+| `pl-22` | `pl:url:b0c8c200554092dd8aba` | resolved | local_artifact/pl/undated<br>local_artifact/unspecified/undated<br>official_reference/pl/undated | accepted_external_reference, accepted_local_copy | — |
+| `pl-23` | `pl:url:9582d844d6e263f6a499` | resolved | local_artifact/pl/undated<br>local_artifact/unspecified/undated<br>official_reference/pl/undated | accepted_external_reference, accepted_local_copy | — |
+| `pl-24` | `pl:url:a26baa12236637c1a1c3` | resolved | local_artifact/pl/undated<br>official_reference/pl/undated | accepted_external_reference | — |
+| `pl-25` | `pl:url:2f3c1c175e2d2704c4d4` | resolved | local_artifact/en/undated<br>local_artifact/unspecified/undated<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `pl-26` | `pl:url:bb82eb909dfe0f2e7eac` | resolved | local_artifact/pl/2026-10-29<br>official_reference/pl/undated | accepted_external_reference, not_relied_upon | — |
+| `pl-27` | `pl:url:981979edf0369364ce81` | resolved | local_artifact/pl/undated<br>official_reference/pl/undated | accepted_external_reference | — |
+| `pl-28` | `pl:url:cce09454e6d7474787fc` | resolved | local_artifact/pl/undated<br>official_reference/pl/undated | accepted_external_reference | — |
+| `pl-29` | `pl:url:be51c0b07ceb2237d878` | resolved | local_artifact/pl/undated<br>official_reference/pl/undated | accepted_external_reference | — |
+| `pl-30` | `pl:url:ff2826afb8413df157e1` | resolved | local_artifact/pl/undated<br>official_reference/pl/undated | accepted_external_reference | — |
+| `pl-31` | `pl:url:043c4309cb607388624f` | resolved | local_artifact/pl/undated<br>official_reference/pl/undated | accepted_external_reference | — |
+| `pl-32` | `pl:url:61140c22f0b51290002c` | resolved | local_artifact/en/undated<br>official_reference/en/undated | accepted_external_reference | — |
+| `pl-33` | `pl:url:3e502b7eee3918505449` | resolved | local_artifact/en/undated<br>official_reference/en/undated | accepted_external_reference | — |
+| `pl-34` | `pl:url:8f06f1ec786f12ff31ab` | resolved | local_artifact/pl/undated<br>official_reference/pl/undated | accepted_external_reference | — |
+| `pl-35` | `pl:url:82502f828a5e7f9aa038` | resolved | local_artifact/pl/undated<br>official_reference/pl/undated | accepted_external_reference, discovery | — |
+| `pl-36` | `pl:url:06e0b679141a9bb7dc8b` | resolved | local_artifact/pl/undated<br>local_artifact/pl/2026-10-29<br>official_reference/pl/undated<br>official_reference/pl/2026-10-29<br>official_reference/pl/2026-10-29 | accepted_external_reference | — |
+| `pl-37` | `pl:url:2cfd343e06d3176746a4` | resolved | local_artifact/pl/undated<br>official_reference/pl/undated | accepted_external_reference | — |
+| `pl-38` | `pl:url:97f4f7308f2688914d25` | resolved | local_artifact/pl/undated<br>local_artifact/unspecified/undated<br>official_reference/pl/undated | accepted_external_reference, accepted_local_copy | — |
+| `pl-39` | `pl:url:667ee43714c0c7e3cfcd` | resolved | official_reference/pl/undated | discovery, not_relied_upon | — |
+| `pl-40` | `pl:url:dbde1dedc8b67266458b` | resolved | local_artifact/pl/undated<br>official_reference/pl/undated | accepted_external_reference | — |
+| `pl-41` | `pl:url:5bd40095cb405b5e61e3` | resolved | local_artifact/pl/undated<br>official_reference/pl/undated | accepted_external_reference | — |
+| `pl-42` | `pl:url:32d99f9fb717a097994d` | resolved | local_artifact/pl/undated<br>local_artifact/unspecified/undated<br>official_reference/pl/undated | accepted_external_reference, accepted_local_copy | — |
+| `pl-43` | `pl:url:fae330f4d37c5fa2067d` | resolved | local_artifact/pl/undated<br>local_artifact/unspecified/undated<br>official_reference/pl/undated | accepted_external_reference, accepted_local_copy | — |
+| `pl-44` | `pl:url:1075338a20bbba3b5cea` | resolved | local_artifact/pl/undated<br>local_artifact/unspecified/undated<br>official_reference/pl/undated | accepted_external_reference, accepted_local_copy | — |
+| `pl-45` | `pl:url:07def2166f80486b42f3` | resolved | local_artifact/pl/undated<br>official_reference/pl/undated | accepted_external_reference | — |
+| `pl-46` | `pl:url:61e6c2e81e303f47b3d7` | resolved | local_artifact/pl/undated<br>official_reference/pl/undated | accepted_external_reference | — |
+| `pl-47` | `pl:url:425f2b8af2e2a08d9e1f` | resolved | local_artifact/pl/undated<br>official_reference/pl/undated | accepted_external_reference | — |
+| `pl-48` | `pl:url:00e255853a00ebf607cd` | resolved | local_artifact/pl/undated<br>official_reference/pl/undated | accepted_external_reference | — |
+| `pl-49` | `pl:url:66513315d42c67839354` | resolved | local_artifact/pl/undated<br>local_artifact/unspecified/undated<br>official_reference/pl/undated | accepted_external_reference, accepted_local_copy | — |
+| `pl-50` | `pl:url:0acba7d139266a5ff021` | resolved | local_artifact/pl/2026<br>local_artifact/unspecified/2026<br>official_reference/pl/2026-10-21<br>official_reference/pl/undated<br>official_reference/pl/2026-10-21 | accepted_external_reference, accepted_local_copy | — |
+| `pl-51` | `pl:url:835e2d6511d29e388c47` | resolved | local_artifact/pl/2024<br>local_artifact/unspecified/2024<br>official_reference/pl/undated | accepted_local_copy, historical | — |
+| `pl-51-current-2026` | `pl:url:734890a2b87dac325141` | resolved | local_artifact/pl/2026<br>local_artifact/unspecified/2026<br>official_reference/pl/undated<br>official_reference/pl/2026-10-21<br>official_reference/pl/2026-10-21 | accepted_external_reference, accepted_local_copy | — |
+| `pl-52` | `pl:url:e8226f51dbda46950495` | resolved | local_artifact/pl/2019<br>local_artifact/unspecified/2019<br>official_reference/pl/2026-10-21<br>official_reference/pl/undated<br>official_reference/pl/2026-10-21 | accepted_external_reference, accepted_local_copy | — |
+| `pl-55` | `pl:url:23cf4c865449f8b73a31` | resolved | official_reference/pl/undated | accepted_external_reference | — |
+| `pl-56` | `pl:url:e5fb92f0ef91665fb595` | resolved | official_reference/pl/undated | accepted_external_reference, discovery | — |
+| `pl-57` | `pl:url:89c16631f32c1bd68ab8` | resolved | official_reference/en/undated | not_relied_upon | — |
+| `pl-58` | `pl:url:29f91e130db05615fd80` | resolved | local_artifact/pl/2021<br>local_artifact/unspecified/2021<br>official_reference/pl/undated | accepted_external_reference, accepted_local_copy | — |
+| `pl-59` | `pl:url:65752161b48f4d9c52e0` | resolved | official_reference/pl/undated | accepted_external_reference | — |
+| `pl-60` | `pl:url:c535347ceeeb7ef6fcd8` | resolved | official_reference/pl/undated | accepted_external_reference | — |
+| `pl-61` | `pl:url:788a6048eab8ed3162a0` | resolved | official_reference/pl/undated | accepted_external_reference | — |
+| `pl-62` | `pl:url:fd1495fe663b3c60ca39` | resolved | official_reference/pl/undated | accepted_external_reference | — |
+| `pl-63` | `pl:url:8f971292b9aee1bfe5db` | resolved | local_artifact/pl/2026<br>local_artifact/unspecified/2026<br>official_reference/pl/undated | accepted_external_reference, accepted_local_copy | — |
+<!-- source-identity-inventory:end -->

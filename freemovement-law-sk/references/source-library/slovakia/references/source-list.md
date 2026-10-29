@@ -75,3 +75,62 @@ The source notes preserve official routes and dated evidence, not copies of sour
 
 The legal scope remains nonuniform: Act 404/2011 generally defines “member state” to include EU, EEA, and Swiss states but narrows the term to EU Member States in §§30 and 51–57. Preserve that distinction and the separate route for returning Slovak nationals and UK Withdrawal Agreement cases.
 | SK-41 | [MFA Minsk EU-family visa rules](https://www.mzv.sk/web/minsk/services/information-for-foreigners/visa/family-members-of-union-citizens) — mission-specific EU-family visa instructions; related source | Page published and updated 2025-09-17; opened and reviewed 2026-10-29. Covers family categories, supporting evidence, form, fingerprints, 10-day deadline and no fee. | Accepted within Minsk-specific scope. Cross-checked Act 404/2011 and Directive 2004/38. Keep Switzerland separate from EEA status; UK Withdrawal Agreement scope is conditional. [Maintained note](../documents/references/sk-41-mfa-minsk-eu-family-visa-rules.md). Mission competence and channels remain volatile. |
+
+<!-- source-identity-inventory:start -->
+## Source identity crosswalk
+
+Canonical rows: **50**; provisional unique IDs: **50**; unresolved entries: **5**. This crosswalk preserves catalogue IDs, links external-reference and local-artifact representations to a source identity, and keeps acceptance status separate.
+
+| Existing entry ID | Canonical source identity | Resolution | Representations | Catalogued statuses | Status record IDs |
+|---|---|---|---|---|---|
+| `sk_04` | `sk:url:52b0888ca3fae485a531` | resolved | official_reference/sk/2018 | accepted_external_reference | — |
+| `sk_06` | `sk:url:132e5a3d47bdae669262` | resolved | official_reference/sk/2026 | accepted_external_reference | — |
+| `sk_07` | `sk:url:53d85799695479c8595d` | resolved | official_reference/sk/2019 | accepted_external_reference | — |
+| `sk_09` | `sk:url:35f328481041587f3e3a` | resolved | official_reference/sk/2026 | accepted_external_reference | — |
+| `sk_11` | `sk:url:fba29ffd5cf0e0e10c6a` | resolved | official_reference/sk/2026 | accepted_external_reference | — |
+| `sk_13` | `sk:url:c83520e59fee41e59bd6` | resolved | official_reference/sk/2026 | accepted_external_reference | — |
+| `sk_15` | `sk:url:c67acbbc98edf55b46a7` | resolved | official_reference/sk/2026 | accepted_external_reference | — |
+| `sk_41` | `sk:url:e55b3f32fe7c062443be` | resolved | official_reference/sk/2025-09-17 | accepted_external_reference | — |
+| `sk_mzv_supporting-documents` | `sk:ambiguous:sk-mzv-supporting-documents:d02e0f08bf15` | unresolved | official_reference/sk/2026<br>official_reference/sk/2026 | accepted_external_reference | — |
+| `sk_mzv-schengen-form` | `sk:ambiguous:sk-mzv-schengen-form:8d4e96b0f8a1` | unresolved | official_reference/sk/2026<br>official_reference/sk/2026 | accepted_external_reference | — |
+| `SK-01` | `sk:url:3fe731c1a91b1962a3b2` | resolved | official_reference/sk/1918 | accepted_external_reference | sk_01 |
+| `SK-02` | `sk:url:cb1fb403282e29b2e137` | resolved | official_reference/sk/2026 | accepted_external_reference | sk_02 |
+| `SK-03` | `sk:url:e2300a9523a087e8d858` | resolved | official_reference/sk/2026 | accepted_external_reference | sk_03 |
+| `SK-04` | `sk:url:fdcb666daf42c7b3892d` | resolved | official_reference/unspecified/undated | candidate | — |
+| `SK-05` | `sk:url:9ff44bc0d2127d3c87d0` | resolved | official_reference/sk/2026 | accepted_external_reference | sk_05 |
+| `SK-06` | `sk:url:0b7bfb5402ed7ac0b534` | resolved | official_reference/unspecified/undated | candidate | — |
+| `SK-07` | `sk:url:0860dae98cc8f1587e1a` | resolved | official_reference/unspecified/undated | candidate | — |
+| `SK-08` | `sk:url:bb963c9d3c061c4a861f` | resolved | official_reference/sk/2023 | accepted_external_reference | sk_08 |
+| `SK-09` | `sk:url:4bf3fe22deec9198bf00` | resolved | official_reference/unspecified/undated | candidate | — |
+| `SK-10` | `sk:url:1b503a9d6bdde284b125` | resolved | official_reference/sk/2026 | accepted_external_reference | sk_10 |
+| `SK-11` | `sk:url:8de7ff0131ff7a3b48cd` | resolved | official_reference/unspecified/undated | candidate | — |
+| `SK-12` | `sk:url:d4ca535926dfda8924cc` | resolved | official_reference/sk/2025 | accepted_external_reference | sk_12 |
+| `SK-13` | `sk:url:7f7c74c37a03b5de9989` | resolved | official_reference/unspecified/undated | candidate | — |
+| `SK-14` | `sk:url:73cf8a7f20941a875c6c` | resolved | official_reference/sk/2026 | accepted_external_reference | sk_14 |
+| `SK-15` | `sk:url:03196e32cdae78cdaf0d` | resolved | official_reference/unspecified/undated | candidate | — |
+| `SK-16` | `sk:url:702ad9135040992a2dde` | resolved | official_reference/sk/2026 | accepted_external_reference | sk_16 |
+| `SK-17` | `sk:url:91642b4d7e2efcb2c268` | resolved | official_reference/sk/1945 | accepted_external_reference | sk_17 |
+| `SK-18` | `sk:url:b74e4d3d5c9eb4f28c22` | resolved | official_reference/sk/undated | accepted_external_reference | sk_18 |
+| `SK-19` | `sk:url:071d1138297009a4fdbb` | resolved | official_reference/sk/2026 | accepted_external_reference | sk_19 |
+| `SK-20` | `sk:url:add6631ae2b9d4be5890` | resolved | official_reference/sk/undated | accepted_external_reference, discovery | sk_20 |
+| `SK-21` | `sk:url:d9259af25d64eee37d4c` | resolved | official_reference/sk/2025<br>official_reference/sk/2025 | accepted_external_reference | sk-minv-eu-registration-faq-2025 |
+| `SK-22` | `sk:url:f3e3989efd54b707c5fb` | resolved | official_reference/unspecified/undated | historical, not_relied_upon | — |
+| `SK-23` | `sk:url:80902efe054cd9dc39b3` | resolved | official_reference/unspecified/undated | candidate | — |
+| `SK-24` | `sk:ambiguous:sk-24:822061d8bbf4` | unresolved | official_reference/sk/2024 | accepted_external_reference | sk_24 |
+| `SK-25` | `sk:ambiguous:sk-25:d7b05ff68ff6` | unresolved | official_reference/unspecified/undated | candidate | — |
+| `SK-26` | `sk:url:2ab1e299e09c83d9497c` | resolved | official_reference/unspecified/undated | candidate | — |
+| `SK-27` | `sk:url:776f8f879c3723e14113` | resolved | official_reference/sk/2026<br>official_reference/sk/2026 | accepted_external_reference | sk_mzv-stay-guidance |
+| `SK-28` | `sk:url:f05f7ef55c1f57ba3b3a` | resolved | official_reference/sk/2026 | accepted_external_reference | sk_mzv-mission-directory |
+| `SK-29` | `sk:ambiguous:sk-29:5e1cbcfdedc8` | unresolved | official_reference/unspecified/undated | candidate | — |
+| `SK-30` | `sk:url:47e918d127bfa7b089d7` | resolved | official_reference/sk/2022-07-07 | accepted_external_reference, historical | sk_30 |
+| `SK-31` | `sk:url:b7e21a5e2210ad6154ed` | resolved | official_reference/sk/2026-02-12 | accepted_external_reference | sk_31 |
+| `SK-32` | `sk:url:4b35d17ad9d80fc6efdd` | resolved | official_reference/sk/2026 | accepted_external_reference | sk_32 |
+| `SK-33` | `sk:url:636ab1701c5297326e23` | resolved | official_reference/sk/2026 | accepted_external_reference | sk_33 |
+| `SK-34` | `sk:url:0e9eec8ce2739c40df54` | resolved | official_reference/sk/undated | accepted_external_reference | sk_34 |
+| `SK-35` | `sk:url:d41c279b895512ac7459` | resolved | official_reference/sk/2015 | accepted_external_reference | sk_35 |
+| `SK-36` | `sk:url:d49d2053b5e578eadf71` | resolved | official_reference/sk/undated | accepted_external_reference | sk_36 |
+| `SK-37` | `sk:url:d578c8b876c5ea7d813a` | resolved | official_reference/sk/undated | accepted_external_reference | sk_37 |
+| `SK-38` | `sk:url:4e7ae14b987a38d10c0a` | resolved | official_reference/sk/undated | accepted_external_reference | sk_38 |
+| `SK-39` | `sk:url:56d8b438e50a8d87ee44` | resolved | official_reference/sk/undated | accepted_external_reference | sk_39 |
+| `SK-40` | `sk:url:36eba1928bb6571e4584` | resolved | official_reference/sk/2026 | accepted_external_reference | sk_40 |
+<!-- source-identity-inventory:end -->

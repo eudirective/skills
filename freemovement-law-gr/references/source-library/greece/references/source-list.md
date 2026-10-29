@@ -296,3 +296,259 @@ The [source acceptance register](source-acceptance.json) records 212 official re
 | `gr-223` | [Ministry Circular No. 50/2011: evidence of EU citizens’ lawful residence in naturalisation cases](https://old.synigoros.gr/resources/docs/egkyklios50-2011.pdf) | `historical_naturalisation_guidance` | `related_source` | Full official 14-page circular dated 9 November 2011 (protocol F.130181/42077) reviewed. It says the EU registration certificate recorded, rather than created, an EU citizen’s residence right and that other evidence could establish the then-required three-year lawful residence for naturalisation. A separate section treated gaps under three months between prior residence titles as not breaking continuity for the specified historical calculation. | No automated rule; Ministry circular accepted link-only from the Ombudsman’s legacy archive. | Historical guidance under the 2011 citizenship framework, not current naturalisation eligibility or a current residence procedure. Its reproduced PD 106/2007 text is not consolidated. The distinction concerns EU-citizen applicants, not a TCN family-member card. Locator: [gr-223](../documents/guidance/gr-223-ministry-circular-50-2011-eu-residence-naturalisation-locator.md); no source text retained. |
 | `gr-224` | [Attica Decentralized Administration: Apostille service scope](https://apdattikis.gov.gr/episimeiosi-tis-chagis-sfragida-apostille/) | `official_operational_guidance` | `related_source` | The page distinguishes e-Apostille processing for eligible digitally issued records through gov.gr from the Attica office’s handling of physical originals bearing signatures of Attica municipalities or the Athens Special Registry Office. It describes the local office’s submission route and scope. | Official source page checked 2026-10-29; a project-authored structured summary is maintained at [gr-224 summary](../documents/guidance/gr-224-summary.md); no verbatim page capture is represented. | This is regional operational information, not a national statement that every document can be apostilled or that a destination state will accept it. The issuing authority, document form, territorial link and destination-country requirements matter. No service transaction was submitted. |
 | `gr-225` | [Government training portal: issuing civil registry records](https://howto.gov.gr/mod/book/view.php?id=266) | `official_operational_guidance` | `related_source` | The guide describes immediate electronic issuance through gov.gr for records issued from 2013 onward; older records amended or excerpted since 2018; and foreign events registered at the Athens Special Registry Office from 22 January 2018. If immediate issuance is unavailable, it describes a later KEP route and a myKEPlive video appointment where KEP cannot issue electronically. | Official source page checked 2026-10-29; a project-authored structured summary is maintained at [gr-225 summary](../documents/guidance/gr-225-summary.md); no verbatim page capture is represented. | This is a government training/workflow guide, not a legal determination of eligibility, authentication, translation or cross-border acceptance. Dynamic portal availability and individual record data were not tested. |
+
+<!-- source-identity-inventory:start -->
+## Source identity crosswalk
+
+Canonical rows: **247**; provisional unique IDs: **247**; unresolved entries: **113**. This crosswalk preserves catalogue IDs, links external-reference and local-artifact representations to a source identity, and keeps acceptance status separate.
+
+| Existing entry ID | Canonical source identity | Resolution | Representations | Catalogued statuses | Status record IDs |
+|---|---|---|---|---|---|
+| `gr-01` | `gr:ambiguous:gr-01:3f8cd67731d8` | unresolved | local_artifact/unspecified/2019<br>official_reference/el/2020<br>official_reference/el/2018<br>official_reference/el/2019<br>official_reference/el/2018<br>official_reference/el/2020<br>official_reference/el/2019<br>official_reference/el/2021<br>official_reference/el/2020<br>official_reference/el/2021<br>official_reference/el/2021<br>official_reference/el/2021<br>official_reference/en/2026 | accepted_external_reference, accepted_local_copy | gr-law4611-2019-art92-social-investigations, gr-law4704-2020-art23-art24-adoption-connection, gr-law4764-2020-art120-foster-documents, gr-law4808-2021-art137-foster-benefits, gr-law4837-2021-art24-30-adoption-and-foster-amendments, gr-law4865-2021-art43-adoption-health-conditions, gr-nph-legislation-search-locator, gr-ya-57758-2018-esany-operating-rules |
+| `gr-02` | `gr:ambiguous:gr-02:2c18b722611d` | unresolved | official_reference/el/2014<br>official_reference/el/2024<br>official_reference/el/2024<br>official_reference/el/2014<br>official_reference/el/2005<br>official_reference/el/2005<br>official_reference/en/2026 | accepted_external_reference | gr-kya-272153-2024-athlete-amendment, gr-law4251-2014-art139-2, gr-nph-gazette-search-locator, gr-ya-7004-3-40-kth-2005 |
+| `gr-03` | `gr:url:7744d5b8bae5de35e1d7` | resolved | official_reference/en/2026 | accepted_external_reference | gr-nph-advanced-search-locator |
+| `gr-04` | `gr:url:311be17c4caebbc1713a` | resolved | official_reference/el/2026<br>official_reference/en/2026 | accepted_external_reference | gr-nlex-greece-legislation-locator |
+| `gr-05` | `gr:ambiguous:gr-05:8b8facf82abf` | unresolved | local_artifact/unspecified/2007<br>official_reference/el/2007<br>official_reference/el/2007 | accepted_external_reference, accepted_local_copy | gr-pd106-2007-original |
+| `gr-06` | `gr:url:f112cf2227c4d285b587` | resolved | official_reference/unspecified/undated | discovery | — |
+| `gr-07` | `gr:ambiguous:gr-07:27651ab962f7` | unresolved | local_artifact/unspecified/2012<br>official_reference/el/2012<br>official_reference/el/2012 | accepted_external_reference, accepted_local_copy | gr-law4071-2012-art42 |
+| `gr-08` | `gr:ambiguous:gr-08:39eb1096c4d8` | unresolved | local_artifact/unspecified/2018<br>official_reference/el/2018<br>official_reference/el/2018 | accepted_external_reference, accepted_local_copy | gr-law4540-2018-art32 |
+| `gr-09` | `gr:ambiguous:gr-09:5b2d169354b3` | unresolved | official_reference/el/2023<br>official_reference/el/2023 | accepted_external_reference, accepted_local_copy | gr-law5038-2023-tcn-family-reunification |
+| `gr-10` | `gr:ambiguous:gr-10:e9b7ecd06780` | unresolved | local_artifact/unspecified/2024<br>local_artifact/unspecified/2024<br>official_reference/el/2024<br>official_reference/el/2024<br>official_reference/el/2023<br>official_reference/el/2026<br>official_reference/el/2024<br>official_reference/el/2023<br>official_reference/el/2021<br>official_reference/el/2020<br>official_reference/el/2021<br>official_reference/el/2020<br>official_reference/en/2026 | accepted_external_reference, accepted_local_copy | gr-kya-225679-2024-family-income, gr-law4652-2020-art10, gr-law5162-2024-art43-investor-family, gr-ministry-legal-index-locator, gr-ministry-ya-374365-2021-electronic-renewal, gr-ministry-ya-423840-2023-electronic-filing-amendment |
+| `gr-11` | `gr:ambiguous:gr-11:1aeeda7b8090` | unresolved | official_reference/el/2024<br>official_reference/en/2024 | accepted_external_reference | gr-national-codification-portal-status |
+| `gr-12` | `gr:url:cc038c96abcc1fd3a22d` | resolved | local_artifact/unspecified/2026<br>official_reference/el/2026<br>official_reference/el/2026<br>official_reference/unspecified/2026 | accepted_external_reference, accepted_local_copy | gr-mitos-gr-12 |
+| `gr-120` | `gr:url:1a21e1c1c76e5802f557` | resolved | official_reference/unspecified/2014 | accepted_local_copy | — |
+| `gr-121` | `gr:url:d3fa3c0566520f06c65f` | resolved | official_reference/unspecified/2005 | accepted_local_copy | — |
+| `gr-123` | `gr:ambiguous:gr-123:ed13989b7427` | unresolved | local_artifact/unspecified/2026<br>official_reference/unspecified/2026 | accepted_local_copy | — |
+| `gr-13` | `gr:url:a8776b71407afec937d5` | resolved | local_artifact/unspecified/2026<br>official_reference/el/2026-09-28<br>official_reference/el/2026-09-28<br>official_reference/unspecified/2026 | accepted_external_reference, accepted_local_copy | gr-mitos-gr-13 |
+| `gr-130` | `gr:ambiguous:gr-130:17c5b72e701b` | unresolved | local_artifact/unspecified/2026<br>official_reference/unspecified/2026 | accepted_local_copy | — |
+| `gr-134` | `gr:ambiguous:gr-134:b58e5ccea9b4` | unresolved | official_reference/unspecified/2019 | accepted_local_copy | — |
+| `gr-135` | `gr:ambiguous:gr-135:168012f7c1dd` | unresolved | local_artifact/unspecified/2023<br>official_reference/unspecified/2023 | accepted_local_copy | — |
+| `gr-136` | `gr:ambiguous:gr-136:80db181635d8` | unresolved | official_reference/unspecified/2025 | accepted_local_copy | — |
+| `gr-139` | `gr:url:620c651a7eb511dd85c1` | resolved | local_artifact/unspecified/2024<br>official_reference/unspecified/2024 | accepted_local_copy | — |
+| `gr-14` | `gr:url:d025fb78343511611a6b` | resolved | local_artifact/unspecified/2026<br>official_reference/el/2026-09-28<br>official_reference/el/2026-09-28<br>official_reference/unspecified/2026 | accepted_external_reference, accepted_local_copy | gr-mitos-gr-14 |
+| `gr-140` | `gr:ambiguous:gr-140:4a8c58cf70bc` | unresolved | official_reference/unspecified/2024 | accepted_local_copy | — |
+| `gr-141` | `gr:ambiguous:gr-141:6939d86f7b71` | unresolved | official_reference/unspecified/2025 | accepted_local_copy | — |
+| `gr-144` | `gr:ambiguous:gr-144:8592333316de` | unresolved | official_reference/unspecified/2021 | accepted_local_copy | — |
+| `gr-147` | `gr:ambiguous:gr-147:e7a0f8dbd8b9` | unresolved | official_reference/unspecified/2015 | accepted_local_copy | — |
+| `gr-148` | `gr:ambiguous:gr-148:89ffaf1bd585` | unresolved | official_reference/unspecified/2016 | accepted_local_copy | — |
+| `gr-149` | `gr:ambiguous:gr-149:fa32cd55fa19` | unresolved | official_reference/unspecified/2024 | accepted_local_copy | — |
+| `gr-15` | `gr:url:e35d62892819cc96a49b` | resolved | local_artifact/unspecified/2026<br>official_reference/el/2026-09-21<br>official_reference/el/2026-09-21<br>official_reference/unspecified/2026 | accepted_external_reference, accepted_local_copy | gr-mitos-gr-15 |
+| `gr-150` | `gr:ambiguous:gr-150:77d93abf9253` | unresolved | official_reference/unspecified/2025 | accepted_local_copy | — |
+| `gr-151` | `gr:ambiguous:gr-151:97f7e9649b33` | unresolved | official_reference/unspecified/2026 | accepted_local_copy | — |
+| `gr-152` | `gr:ambiguous:gr-152:e9a50ef31d73` | unresolved | official_reference/unspecified/2026 | accepted_local_copy | — |
+| `gr-153` | `gr:ambiguous:gr-153:5388c08e92f5` | unresolved | official_reference/unspecified/2026 | accepted_local_copy | — |
+| `gr-159` | `gr:ambiguous:gr-159:1288eacdf75a` | unresolved | official_reference/unspecified/2020 | accepted_local_copy | — |
+| `gr-16` | `gr:url:36e12a623faab9ac1cc1` | resolved | local_artifact/unspecified/2026<br>official_reference/el/2026-09-21<br>official_reference/el/2026-09-21<br>official_reference/unspecified/2026 | accepted_external_reference, accepted_local_copy | gr-mitos-gr-16 |
+| `gr-160` | `gr:ambiguous:gr-160:c43470dcb92e` | unresolved | official_reference/unspecified/2021-06-24 | accepted_local_copy | — |
+| `gr-17` | `gr:url:4d0c1cba956689b290d4` | resolved | local_artifact/unspecified/2026<br>official_reference/el/2026<br>official_reference/el/2026<br>official_reference/en/2026<br>official_reference/en/2026 | accepted_external_reference, accepted_local_copy | gr-mitos-gr-17 |
+| `gr-175` | `gr:ambiguous:gr-175:110a0f8ffa0c` | unresolved | official_reference/unspecified/2008 | accepted_local_copy | — |
+| `gr-176` | `gr:url:6d15eabcca432b6bce68` | resolved | official_reference/unspecified/2018 | accepted_local_copy | — |
+| `gr-18` | `gr:url:4b6fa68cbe8989a9f004` | resolved | official_reference/el/2021<br>official_reference/el/2021<br>official_reference/en/2021<br>official_reference/en/2021 | accepted_external_reference | gr-ministry-eu-family-guidance-historical |
+| `gr-19` | `gr:url:1e6c389317c814e79fd1` | resolved | official_reference/el/2026<br>official_reference/el/2026<br>official_reference/en/2026<br>official_reference/en/2026 | accepted_external_reference | gr-ministry-tcn-family-guidance-locator |
+| `gr-191` | `gr:ambiguous:gr-191:e918f234869e` | unresolved | official_reference/unspecified/2008 | accepted_local_copy | — |
+| `gr-192` | `gr:ambiguous:gr-192:cd265051885b` | unresolved | official_reference/unspecified/2024 | accepted_local_copy | — |
+| `gr-194` | `gr:ambiguous:gr-194:7740282b9647` | unresolved | local_artifact/unspecified/2025<br>official_reference/unspecified/2025 | accepted_local_copy | — |
+| `gr-196` | `gr:ambiguous:gr-196:27a2227c1ba0` | unresolved | official_reference/unspecified/2024 | accepted_local_copy | — |
+| `gr-197` | `gr:ambiguous:gr-197:e6d9386530a3` | unresolved | official_reference/unspecified/2025 | accepted_local_copy | — |
+| `gr-20` | `gr:ambiguous:gr-20:abe976a8c9ce` | unresolved | official_reference/el/2026<br>official_reference/el/2026<br>official_reference/en/2026<br>official_reference/en/2026 | accepted_external_reference | gr-attica-residence-documents-index |
+| `gr-2022-parliamentary-answer-2655-2022` | `gr:url:38b5ddece810b2ae2807` | resolved | official_reference/el/2022<br>official_reference/el/2022 | accepted_external_reference | — |
+| `gr-207` | `gr:url:0fb0490d7ff02533fe1a` | resolved | official_reference/unspecified/2020 | accepted_local_copy | — |
+| `gr-209` | `gr:ambiguous:gr-209:34ded9a1c799` | unresolved | official_reference/unspecified/2025 | accepted_local_copy | — |
+| `gr-21` | `gr:ambiguous:gr-21:b09602708dff` | unresolved | official_reference/unspecified/undated | candidate | — |
+| `gr-210` | `gr:ambiguous:gr-210:cb3eb9f45a7c` | unresolved | official_reference/unspecified/2025 | accepted_local_copy | — |
+| `gr-211` | `gr:ambiguous:gr-211:df72f0c3bf25` | unresolved | local_artifact/unspecified/2026<br>official_reference/unspecified/2026 | accepted_local_copy | — |
+| `gr-212` | `gr:url:964f0ff171c808750bc6` | resolved | official_reference/unspecified/2021 | accepted_local_copy | — |
+| `gr-213` | `gr:url:59757b63c412a688cce3` | resolved | official_reference/unspecified/2023 | accepted_local_copy | — |
+| `gr-22` | `gr:ambiguous:gr-22:8fd8eb337532` | unresolved | official_reference/en/2026 | accepted_external_reference | gr-mfa-visa-for-foreigners-gateway |
+| `gr-224` | `gr:url:fc7527781bc6f375d682` | resolved | official_reference/el/2026-10-29 | accepted_external_reference | — |
+| `gr-225` | `gr:url:602fa4d3c73141584733` | resolved | official_reference/el/2026-10-29 | accepted_external_reference | — |
+| `gr-23` | `gr:url:0f6c80ee37e0ce1a8c37` | resolved | official_reference/en/2026<br>official_reference/en/2026 | accepted_external_reference | gr-mfa-schengen-visas-hub, gr-mfa-visa-fees-2026 |
+| `gr-24` | `gr:url:170e4abc477a21fd3fd7` | resolved | official_reference/en/2025<br>official_reference/en/2026<br>official_reference/en/2025 | accepted_external_reference | gr-mfa-national-d-type-docx-locator, gr-mfa-national-visas-hub |
+| `gr-25` | `gr:ambiguous:gr-25:0c5c864bb13a` | unresolved | official_reference/unspecified/undated | candidate | — |
+| `gr-26` | `gr:ambiguous:gr-26:62dbf7a1e83c` | unresolved | official_reference/unspecified/undated | candidate | — |
+| `gr-27` | `gr:url:cf3e3e1554b4b0f19d06` | resolved | official_reference/en/2019<br>official_reference/en/2019 | accepted_external_reference | gr-mfa-china-eu-family-visa-guidance-2019 |
+| `gr-28` | `gr:url:59d16acbc49439bf364b` | resolved | official_reference/en/undated<br>official_reference/en/undated | accepted_external_reference | gr-mfa-lebanon-visa-checklist-undated |
+| `gr-29` | `gr:url:3b548eba4bd038ec448f` | resolved | official_reference/el/2026-09-02<br>official_reference/en/2026-09-02 | accepted_external_reference | gr-mitos-gr-29 |
+| `gr-30` | `gr:url:9236cf1e60762a0f685f` | resolved | official_reference/en/2026<br>official_reference/en/2026 | accepted_external_reference | gr-gov-gr-marriage-registration-certificate |
+| `gr-31` | `gr:url:073a05a7f3a9459998e0` | resolved | official_reference/en/2023<br>official_reference/en/2023 | accepted_external_reference | gr-gov-gr-birth-registration-service |
+| `gr-32` | `gr:url:66bd6cbff1dfc831b9ca` | resolved | official_reference/en/2026<br>official_reference/en/2026 | accepted_external_reference | gr-gov-gr-family-services-category |
+| `gr-33` | `gr:url:b7bd964519de121dfae5` | resolved | local_artifact/unspecified/2026<br>official_reference/el/2026-09-29 | accepted_external_reference, accepted_local_copy | gr-mitos-gr-33 |
+| `gr-34` | `gr:url:6d1fed04e38e92dab76c` | resolved | official_reference/en/2013 | accepted_external_reference | gr-ministry-international-civil-judicial-cooperation |
+| `gr-35` | `gr:url:d1e8dc310c3d33883336` | resolved | local_artifact/unspecified/2026<br>official_reference/el/2026 | accepted_external_reference, accepted_local_copy | gr-mitos-gr-35 |
+| `gr-36` | `gr:url:b775aaaf4d60bf7d8115` | resolved | official_reference/el/1999 | accepted_external_reference | gr-law2690-1999-original |
+| `gr-37` | `gr:url:e6674f01ef301e802a1c` | resolved | local_artifact/unspecified/2024<br>official_reference/el/2024 | accepted_external_reference, accepted_local_copy | gr-law5143-2024-art59 |
+| `gr-38` | `gr:url:b95399c77cba812fbaf9` | resolved | official_reference/el/2026-10-25<br>official_reference/en/2026-10-25 | accepted_external_reference | gr-diavgeia-portal |
+| `gr-39` | `gr:ambiguous:gr-39:c608eb2c2f95` | unresolved | official_reference/en/2026-10-25 | accepted_external_reference | gr-ombudsman-portal |
+| `gr-40` | `gr:url:599e45be5e8022f1232b` | resolved | official_reference/en/2026-10-25 | accepted_external_reference | gr-ombudsman-complaint |
+| `gr-41` | `gr:ambiguous:gr-41:92ee6158c49c` | unresolved | official_reference/unspecified/undated | candidate | — |
+| `gr-42` | `gr:url:a66d109614b1efc3068f` | resolved | official_reference/en/2026-10-25 | accepted_external_reference | gr-fro-complaints |
+| `gr-43` | `gr:url:6e0448b2b4eadaf451ab` | resolved | official_reference/en/2024 | accepted_external_reference | gr-gov-gr-fundamental-rights-officer-complaint-route |
+| `gr-44` | `gr:url:4621278d7368622a1374` | resolved | official_reference/en/2026-10-25 | accepted_external_reference | gr-dpa-complaint |
+| `gr-45` | `gr:url:aa0eda36a7046e16241d` | resolved | official_reference/en/2026-10-25 | accepted_external_reference | gr-dpa-rights |
+| `gr-46` | `gr:url:38bda341e66fbe956af2` | resolved | official_reference/en/2026<br>official_reference/en/2026 | accepted_external_reference | gr-hdpa-sis-rights-historical |
+| `gr-47` | `gr:url:cc54223049141e97f37c` | resolved | official_reference/en/2026 | accepted_external_reference | gr-national-transparency-authority-complaints-page |
+| `gr-48` | `gr:url:bb476dfa62b6db620c5a` | resolved | official_reference/en/2026 | accepted_external_reference | gr-nta-contact-and-complaint-routing |
+| `gr-49` | `gr:url:f2d15799b841b1d3f19d` | resolved | official_reference/en/2026-10-25 | accepted_external_reference | gr-ethemisid-services |
+| `gr-50` | `gr:url:128bcd9d860bb2df4f51` | resolved | official_reference/el/2023<br>official_reference/el/2023<br>official_reference/en/2023<br>official_reference/en/2023 | accepted_external_reference | gr-gov-gr-50-case-law-discovery |
+| `gr-51` | `gr:url:1d07af41874a235629a1` | resolved | official_reference/en/2026 | accepted_external_reference | gr-gov-gr-council-of-state-bulletin-search |
+| `gr-52` | `gr:url:d64ec2159dce0759399b` | resolved | local_artifact/unspecified/2026<br>official_reference/el/2026 | accepted_external_reference, accepted_local_copy | gr-mitos-gr-52 |
+| `gr-53` | `gr:url:64084a017f0ff6fbb0c3` | resolved | official_reference/el/1984 | accepted_external_reference, accepted_local_copy | gr-pd456-1984-original |
+| `gr-54` | `gr:url:6d071c7ca6ec610163c5` | resolved | local_artifact/unspecified/2026<br>official_reference/el/2026 | accepted_external_reference, accepted_local_copy | gr-mitos-gr-54 |
+| `gr-55` | `gr:url:61fb328aef39d0255c30` | resolved | local_artifact/unspecified/2026<br>official_reference/el/2026-10-27<br>official_reference/en/2026-10-27 | accepted_external_reference, accepted_local_copy | gr-mitos-gr-55 |
+| `gr-56` | `gr:ambiguous:gr-56:7bfe339486d0` | unresolved | official_reference/unspecified/undated | candidate | — |
+| `gr-57` | `gr:ambiguous:gr-57:d08868400640` | unresolved | official_reference/el/2026<br>official_reference/el/2026 | accepted_external_reference, accepted_local_copy | gr-law5275-2026-art53 |
+| `gr-58` | `gr:ambiguous:gr-58:9efb3c98b75f` | unresolved | official_reference/el/2020<br>official_reference/el/2020 | accepted_external_reference, accepted_local_copy | gr-95, gr-law4686-2020-art43 |
+| `gr-59` | `gr:ambiguous:gr-59:8b985546c1ea` | unresolved | official_reference/el/2025<br>official_reference/el/2025 | accepted_external_reference, accepted_local_copy | gr-law5226-2025-art28 |
+| `gr-60` | `gr:url:fc11e6173ada9669c56c` | resolved | local_artifact/unspecified/2022<br>official_reference/el/2022<br>official_reference/el/2022<br>official_reference/en/2022<br>official_reference/en/2022 | accepted_external_reference, accepted_local_copy | gr-gov-gr-60-residence-locator |
+| `gr-61` | `gr:url:9c5157f8025e2aad43b1` | resolved | official_reference/el/2022<br>official_reference/el/2022 | accepted_external_reference | gr-gov-gr-61-other-family-index |
+| `gr-62` | `gr:ambiguous:gr-62:db87b2858501` | unresolved | official_reference/unspecified/undated | candidate | — |
+| `gr-63` | `gr:ambiguous:gr-63:615693864b9a` | unresolved | official_reference/el/2024<br>official_reference/el/2024 | accepted_external_reference, accepted_local_copy | gr-kya-95391-2024-tcn-family-documents |
+| `gr-64` | `gr:ambiguous:gr-64:acd5de7fc68e` | unresolved | official_reference/el/2024<br>official_reference/el/2024 | accepted_external_reference, accepted_local_copy | gr-ya-118654-2024-electronic-residence-applications |
+| `gr-65` | `gr:url:b72bc7fb60bdfeba62c2` | resolved | official_reference/el/2025 | accepted_external_reference | gr-ypes-weekly-legislation-bulletin-39-2025 |
+| `gr-66` | `gr:url:a46db123a1b2e0a4ec80` | resolved | official_reference/en/1993<br>official_reference/en/1993<br>official_reference/fr/1993<br>official_reference/fr/1993 | accepted_external_reference | gr-hcch-1993-adoption-convention |
+| `gr-67` | `gr:ambiguous:gr-67:966bff55f930` | unresolved | official_reference/en/2025<br>official_reference/en/2025 | accepted_external_reference | gr-hcch-gr-1993-status |
+| `gr-68` | `gr:ambiguous:gr-68:2053ad6bd9a5` | unresolved | official_reference/unspecified/undated | candidate | — |
+| `gr-69` | `gr:url:6e6f09b0324478e3b97d` | resolved | official_reference/en/2025<br>official_reference/en/2025 | accepted_external_reference | gr-hcch-gr-central-authority |
+| `gr-70` | `gr:url:613d943a3bfbd8e66a87` | resolved | official_reference/en/2021<br>official_reference/en/2021 | accepted_external_reference | gr-hcch-gr-art23-competent-court |
+| `gr-71` | `gr:url:dede86881ccae62a9861` | resolved | official_reference/el/2026<br>official_reference/el/2026<br>official_reference/el/2026<br>official_reference/el/2026<br>official_reference/el/2026 | accepted_external_reference | gr-anynet-adoption-information-page, gr-anynet-adoption-information-system, gr-minscfa-adoption-overview, gr-minscfa-adoption-timeline-statement-2026 |
+| `gr-72` | `gr:url:86b9b2fc733bff654393` | resolved | official_reference/el/2009<br>official_reference/el/2009<br>official_reference/en/2009<br>official_reference/en/2009 | accepted_external_reference | gr-law3765-2009-ratification |
+| `gr-73` | `gr:url:baeea9ccfcfc715d3607` | resolved | official_reference/el/1996<br>official_reference/el/1996 | accepted_external_reference | gr-law2447-1996-original |
+| `gr-74` | `gr:url:b83678115bebb15a4887` | resolved | official_reference/el/2011 | accepted_external_reference | gr-kady-circular-2011-hague-adoption |
+| `gr-75` | `gr:url:f8c3d9c6597ac7a5c27d` | resolved | official_reference/el/2018<br>official_reference/el/2018 | accepted_external_reference, accepted_local_copy | gr-law4538-2018-original |
+| `gr-76` | `gr:url:86c13421798f38a915fa` | resolved | official_reference/el/2024<br>official_reference/el/2024 | accepted_external_reference, accepted_local_copy | gr-law5089-2024-foreign-parentage-adoption |
+| `gr-77` | `gr:url:322be6767e90704b62b1` | resolved | official_reference/el/2019<br>official_reference/el/2019 | accepted_external_reference, accepted_local_copy | gr-law4604-2019-art117-adoption |
+| `gr-78` | `gr:url:00433aa1232dfeb05dae` | resolved | official_reference/el/2022<br>official_reference/el/2022<br>official_reference/unspecified/undated | accepted_external_reference, accepted_local_copy | gr-law4997-2022-art58-adoption |
+| `gr-79` | `gr:url:bb738178fd9db1bab99e` | resolved | official_reference/el/2024<br>official_reference/el/2024 | accepted_external_reference, accepted_local_copy | gr-law5107-2024-issue-locator |
+| `gr-80` | `gr:url:4e692d2cbd90148a5286` | resolved | official_reference/el/2019<br>official_reference/el/2019 | accepted_external_reference, accepted_local_copy | gr-civil-code-adoption-chapter-2019 |
+| `gr-81` | `gr:url:50d8e83c6b7b9702e2b9` | resolved | official_reference/el/2018<br>official_reference/el/2018 | accepted_external_reference | gr-ministry-circular-2018-intercountry-adoption-process |
+| `gr-83` | `gr:ambiguous:gr-83:ee50bd3de8fb` | unresolved | local_artifact/unspecified/2026<br>official_reference/unspecified/2026 | accepted_local_copy | — |
+| `gr-84` | `gr:ambiguous:gr-84:c8dfebcbadc4` | unresolved | local_artifact/unspecified/2026<br>official_reference/unspecified/2026 | accepted_local_copy | — |
+| `gr-adjustice-bulletin-29-eu-family-residence-abstract` | `gr:ambiguous:gr-adjustice-bulletin-29-eu-family-residence-abstract:21be6de7901b` | unresolved | official_reference/el/2024<br>official_reference/el/2024 | accepted_external_reference | — |
+| `gr-adoption-system-report-2025` | `gr:url:5997bdf5c6d683d721e3` | resolved | official_reference/el/2025<br>official_reference/el/2025 | accepted_external_reference | — |
+| `gr-ap-1099-2023-surrogacy-parentage-recognition` | `gr:url:f25347df6d9595d47b5b` | resolved | official_reference/el/2023 | accepted_external_reference | — |
+| `gr-ap-1517-2023-foreign-paternity-recognition` | `gr:url:21630aa456e3b6557685` | resolved | official_reference/el/2023 | accepted_external_reference | — |
+| `gr-ap-1564-2023-adult-adoption-recognition` | `gr:url:3fbfb06821ce7962d8fc` | resolved | official_reference/el/2023 | accepted_external_reference | — |
+| `gr-ap-17-2008-foreign-adoption-plenary` | `gr:url:380bfce1842fb8d30312` | resolved | official_reference/el/2008 | accepted_external_reference | — |
+| `gr-ap-170-2023-austrian-paternity-recognition` | `gr:url:670afcbecc034b521ffd` | resolved | official_reference/el/2023 | accepted_external_reference | — |
+| `gr-ap-1862-2025-foreign-divorce-recognition` | `gr:url:1a58792b1fbc57c0e503` | resolved | official_reference/el/2025 | accepted_external_reference | — |
+| `gr-ap-1956-2009-foreign-adoption-followup` | `gr:url:65c113a4af9d0a534237` | resolved | official_reference/el/1956 | accepted_external_reference | — |
+| `gr-ap-2035-2009-legacy-adoption-inheritance` | `gr:url:51504a0624d43d29cdb6` | resolved | official_reference/el/2035 | accepted_external_reference | — |
+| `gr-ap-2083-2014-legacy-adoption-inheritance` | `gr:url:aa3ded135679042e46e9` | resolved | official_reference/el/2083 | accepted_external_reference | — |
+| `gr-ap-2197-2013-legacy-adoption-inheritance` | `gr:url:72aea73a0767533c2948` | resolved | official_reference/el/2013 | accepted_external_reference | — |
+| `gr-ap-451-2011-legacy-adoption-inheritance` | `gr:url:f0c6a2a20a475851bd56` | resolved | official_reference/el/2011 | accepted_external_reference | — |
+| `gr-ap-491-2020-eaw-residence-evidence` | `gr:url:3acce3de7d96986f690a` | resolved | official_reference/el/2020 | accepted_external_reference | — |
+| `gr-ap-802-2019-sham-marriage-facilitation` | `gr:url:f0257aa8545446ff4a2c` | resolved | official_reference/el/2019 | accepted_external_reference | — |
+| `gr-ap-868-2013-legacy-adoption-inheritance` | `gr:url:e67dec3df1f29f6dc60e` | resolved | official_reference/el/2013 | accepted_external_reference | — |
+| `gr-astynomia-eea-swiss-guide` | `gr:url:f44e21397518cbbb8e4e` | resolved | official_reference/en/2025<br>official_reference/en/2025 | accepted_external_reference | — |
+| `gr-astynomia-eu-short-stay-faq-2020` | `gr:url:cf7559e9603b686202d5` | resolved | official_reference/el/2020 | accepted_external_reference | — |
+| `gr-astynomia-permanent-residence-faq-2020` | `gr:url:e920f39178dfcc983ae3` | resolved | official_reference/el/2020 | accepted_external_reference | — |
+| `gr-astynomia-self-sufficient-registration-faq-2020` | `gr:url:118c6c05e29cc737b0e0` | resolved | official_reference/el/2020 | accepted_external_reference | — |
+| `gr-astynomia-sis-rights-recast` | `gr:url:8a4f8b770ee1f554fea1` | resolved | official_reference/el/2022<br>official_reference/el/2022<br>official_reference/en/2022<br>official_reference/en/2022 | accepted_external_reference | — |
+| `gr-astynomia-wa-article18-format-2024` | `gr:url:b5f8a819408731cd1eb4` | resolved | official_reference/el/2024 | accepted_external_reference | — |
+| `gr-attica-other-eu-family-procedure-2023` | `gr:ambiguous:gr-attica-other-eu-family-procedure-2023:d2cb91c895d6` | unresolved | official_reference/en/2023<br>official_reference/en/2023 | accepted_external_reference | — |
+| `gr-circular-50-2011-naturalisation-eu-residence` | `gr:url:584fdf02d150d5325516` | resolved | official_reference/el/2011 | accepted_external_reference | — |
+| `gr-cjeu-c-162-09-lassal` | `eu:celex:62009cj0162` | resolved | official_reference/en/2010-10-07<br>official_reference/en/2010-10-07 | accepted_external_reference | — |
+| `gr-cjeu-c-200-02-zhu-chen` | `eu:celex:62002cj0200` | resolved | official_reference/en/2004-10-19<br>official_reference/en/2004-10-19 | accepted_external_reference | — |
+| `gr-cjeu-c-256-11-dereci` | `eu:celex:62011cj0256` | resolved | official_reference/en/2011-11-15<br>official_reference/en/2011-11-15 | accepted_external_reference | — |
+| `gr-cjeu-c-325-09-dias` | `eu:celex:62009cj0325` | resolved | official_reference/en/2011-07-21<br>official_reference/en/2011-07-21 | accepted_external_reference | — |
+| `gr-cjeu-c-34-09-ruiz-zambrano` | `eu:celex:62009cj0034` | resolved | official_reference/en/2011-03-08<br>official_reference/en/2011-03-08 | accepted_external_reference | — |
+| `gr-cjeu-c-86-12-alokpa` | `eu:celex:62012cj0086` | resolved | official_reference/en/2013-10-10<br>official_reference/en/2013-10-10 | accepted_external_reference | — |
+| `gr-crete-intercountry-adoption-consultation-service` | `gr:url:c6c3b6587f26bf6a7602` | resolved | official_reference/el/2026<br>official_reference/el/2026 | accepted_external_reference | — |
+| `gr-dpa-decision-125-2014` | `gr:url:a8cf8af84b85f289a47c` | resolved | official_reference/el/2014 | accepted_external_reference | — |
+| `gr-dpa-schengen-vis-complaint-2026` | `gr:url:291b912f67daef9825b8` | resolved | official_reference/el/2026 | accepted_external_reference | — |
+| `gr-dpa-sis-access-form-2021` | `gr:url:886e3b2f969caef7d53e` | resolved | official_reference/el/2021<br>official_reference/en/2021 | accepted_external_reference | — |
+| `gr-dpa-vis-access-form-2021` | `gr:url:250e5fc896921ec59e47` | resolved | official_reference/el/2021<br>official_reference/en/2021 | accepted_external_reference | — |
+| `gr-dpa-vis-correction-form-2021` | `gr:url:b9af58fa2ab3e84d9024` | resolved | official_reference/el/2021<br>official_reference/en/2021 | accepted_external_reference | — |
+| `gr-dpa-vis-overview-2026` | `gr:url:82ae9a6710009a806957` | resolved | official_reference/el/2026 | accepted_external_reference | — |
+| `gr-dpa-vis-rights-2026` | `gr:url:128b0d13535560a994cf` | resolved | official_reference/en/2026 | accepted_external_reference | — |
+| `gr-eea-agreement-text` | `gr:ambiguous:gr-eea-agreement-text:4dde7d15eb60` | unresolved | official_reference/multilingual/1994<br>official_reference/multilingual/1994 | accepted_external_reference | — |
+| `gr-eea-jcd-158-2007` | `eu:celex:32007d0158` | resolved | official_reference/multilingual/2007<br>official_reference/multilingual/2007 | accepted_external_reference | — |
+| `gr-govgr-adoption-service` | `gr:url:f9eb3335e9d2cf5d3e64` | resolved | official_reference/el/2023 | accepted_external_reference | — |
+| `gr-hcch-gr-1993-declarations` | `gr:ambiguous:gr-hcch-gr-1993-declarations:4221146593fd` | unresolved | official_reference/en/undated<br>official_reference/en/undated | accepted_external_reference | — |
+| `gr-immigration-portal-registration-help` | `gr:url:3b86170e10b9fa89da5e` | resolved | official_reference/el/2026<br>official_reference/el/2026 | accepted_external_reference | — |
+| `gr-immigration-public-initial-application-menu` | `gr:ambiguous:gr-immigration-public-initial-application-menu:e2d9a09530af` | unresolved | official_reference/el/2026<br>official_reference/el/2026 | accepted_external_reference | — |
+| `gr-kya-19333-2023-professional-foster` | `gr:url:2671dda4d99faf57e011` | resolved | official_reference/el/2023<br>official_reference/el/2023 | accepted_external_reference | — |
+| `gr-kya-21797-2024-fek-b7302-reference` | `gr:ambiguous:gr-kya-21797-2024-fek-b7302-reference:4a7f08accb6e` | unresolved | official_reference/el/2024<br>official_reference/el/2024 | accepted_external_reference | — |
+| `gr-kya-22785-2019-certified-social-workers` | `gr:ambiguous:gr-kya-22785-2019-certified-social-workers:5428566b3778` | unresolved | official_reference/el/2019<br>official_reference/el/2019 | accepted_external_reference, accepted_local_copy | — |
+| `gr-kya-31931-2020-adoption-matching-issue-locator` | `gr:url:f73464bf638949bef7db` | resolved | official_reference/el/2020<br>official_reference/el/2020 | accepted_external_reference, accepted_local_copy | — |
+| `gr-kya-4000-1-113a-2020` | `gr:ambiguous:gr-kya-4000-1-113a-2020:2877c6ffd3d0` | unresolved | official_reference/el/2020<br>official_reference/el/2020 | accepted_external_reference, accepted_local_copy | — |
+| `gr-kya-45927-2021` | `gr:ambiguous:gr-kya-45927-2021:f1763041b7a9` | unresolved | official_reference/el/2021-06-24 | accepted_external_reference | — |
+| `gr-kya120961-2026-legal-guidance` | `gr:url:0fc9618bfd5bec92207d` | resolved | official_reference/el/2026 | accepted_external_reference, accepted_local_copy | — |
+| `gr-law2447-1996-parliament-record` | `gr:url:33c03edac01cb526d697` | resolved | official_reference/el/1996 | accepted_external_reference | — |
+| `gr-law3226-2004-original` | `gr:url:70e2ed1d7e3725e2492d` | resolved | local_artifact/unspecified/2004<br>official_reference/el/2004 | accepted_external_reference, accepted_local_copy | — |
+| `gr-law3719-2008-adoption-amendments` | `gr:ambiguous:gr-law3719-2008-adoption-amendments:b4f501ef569b` | unresolved | official_reference/el/2008<br>official_reference/el/2008 | accepted_external_reference | — |
+| `gr-law3907-2011-original` | `gr:ambiguous:gr-law3907-2011-original:2aba3db2c994` | unresolved | official_reference/el/2011<br>official_reference/el/2011 | accepted_external_reference | — |
+| `gr-law4335-2015-art800-adoption-procedure` | `gr:ambiguous:gr-law4335-2015-art800-adoption-procedure:6d1585c37954` | unresolved | official_reference/el/2015 | accepted_external_reference | — |
+| `gr-law4446-2016-art117-adoption-procedure` | `gr:ambiguous:gr-law4446-2016-art117-adoption-procedure:64f46a4177cc` | unresolved | official_reference/el/2016 | accepted_external_reference | — |
+| `gr-law4585-2018-article30-parliament-record` | `gr:url:1a4b22b3a55622137e03` | resolved | official_reference/el/2018 | accepted_external_reference | — |
+| `gr-law4624-2019-gazette` | `gr:ambiguous:gr-law4624-2019-gazette:c3d5e78cb3d6` | unresolved | official_reference/el/2019 | accepted_external_reference | — |
+| `gr-law4624-2019-hdpa-consolidated` | `gr:ambiguous:gr-law4624-2019-hdpa-consolidated:997980e11e0b` | unresolved | official_reference/el/2023 | accepted_external_reference | — |
+| `gr-law4674-2020-articles-30-31` | `gr:ambiguous:gr-law4674-2020-articles-30-31:fd76c1db0a7c` | unresolved | official_reference/el/2020 | accepted_external_reference | — |
+| `gr-law4686-2020-art51-law3907` | `gr:ambiguous:gr-law4686-2020-art51-law3907:c0713365b3af` | unresolved | official_reference/el/2020<br>official_reference/el/2020 | accepted_external_reference | — |
+| `gr-law4686-2020-art62-4652-art10` | `gr:ambiguous:gr-law4686-2020-art62-4652-art10:f94155a65c21` | unresolved | official_reference/el/2020<br>official_reference/el/2020 | accepted_external_reference | — |
+| `gr-law4689-2020-legal-aid-amendments` | `gr:url:07e5d832883ecbe21c08` | resolved | official_reference/el/2020<br>official_reference/unspecified/undated | accepted_external_reference, accepted_local_copy | — |
+| `gr-law5023-2023-legal-aid-accessibility` | `gr:url:5d1d7b583dea7cfc0148` | resolved | official_reference/el/2023 | accepted_external_reference, accepted_local_copy | — |
+| `gr-law5089-2024-parliament-scientific-report` | `gr:url:765b89184743fddbaadf` | resolved | official_reference/el/2024<br>official_reference/el/2024 | accepted_external_reference | — |
+| `gr-law5095-2024-legal-aid-payments` | `gr:url:2656884ad9efe0ac55f5` | resolved | official_reference/el/2024 | accepted_external_reference, accepted_local_copy | — |
+| `gr-law5107-2024-parliament-record` | `gr:url:fbd88c9a484ae5357936` | resolved | official_reference/el/2024 | accepted_external_reference | — |
+| `gr-law5134-2024-art33-voluntary-jurisdiction` | `gr:ambiguous:gr-law5134-2024-art33-voluntary-jurisdiction:7e3a7cad2916` | unresolved | official_reference/el/2024 | accepted_external_reference | — |
+| `gr-law5197-2025-parliament-metadata` | `gr:url:cebfd2e5003eca4ff6ff` | resolved | official_reference/el/2026 | accepted_external_reference | — |
+| `gr-law5221-2025-art154-hdpa` | `gr:ambiguous:gr-law5221-2025-art154-hdpa:3978982de00e` | unresolved | official_reference/el/2025 | accepted_external_reference | — |
+| `gr-law5221-2025-art76-83-voluntary-jurisdiction` | `gr:ambiguous:gr-law5221-2025-art76-83-voluntary-jurisdiction:08bfa78c46f9` | unresolved | official_reference/el/2025<br>official_reference/el/2025 | accepted_external_reference | — |
+| `gr-law5225-2025-art94-civil-register` | `gr:ambiguous:gr-law5225-2025-art94-civil-register:60fb9a0ff952` | unresolved | official_reference/el/2025 | accepted_external_reference | — |
+| `gr-law5275-bill-parliament-draft` | `gr:url:e684732b787eae19ee3d` | resolved | official_reference/el/2026<br>official_reference/el/2026 | accepted_external_reference | — |
+| `gr-law5282-2026-gazette-art13-27` | `gr:ambiguous:gr-law5282-2026-gazette-art13-27:aa9edac75545` | unresolved | official_reference/el/2026<br>official_reference/el/2026 | accepted_external_reference | — |
+| `gr-law5307-2026-asylum-legal-assistance` | `gr:url:c12a6832e77329191575` | resolved | official_reference/el/2026 | accepted_external_reference, accepted_local_copy | — |
+| `gr-law5326-2026-gazette-art14-recognition` | `gr:ambiguous:gr-law5326-2026-gazette-art14-recognition:3344d265dc03` | unresolved | official_reference/el/2026 | accepted_external_reference | — |
+| `gr-law5344-2026-gazette-art178-183-187` | `gr:ambiguous:gr-law5344-2026-gazette-art178-183-187:269a0323b683` | unresolved | official_reference/el/2026 | accepted_external_reference | — |
+| `gr-mfa-certified-translator-register` | `gr:ambiguous:gr-mfa-certified-translator-register:bcd0c95493c8` | unresolved | official_reference/en/2026 | accepted_external_reference | — |
+| `gr-mfa-foreign-document-authentication-guidance-2026` | `gr:url:98daf00ba48d3ea3f881` | resolved | official_reference/en/2026 | accepted_external_reference | — |
+| `gr-mfa-ireland-mission-visas` | `gr:ambiguous:gr-mfa-ireland-mission-visas:e0a439f81c41` | unresolved | official_reference/en/2026<br>official_reference/en/2026 | accepted_external_reference | — |
+| `gr-mfa-law3386-2011-compilation` | `gr:url:56d4b43ef1cbcf459de8` | resolved | official_reference/el/2005 | accepted_external_reference | — |
+| `gr-mfa-national-d-visa-application-form` | `gr:url:baab2cc7acb4e43ce27d` | resolved | official_reference/en/2026 | accepted_external_reference | — |
+| `gr-mfa-national-d-visa-medical-certificate-form` | `gr:url:1e9580846e63f3887d10` | resolved | official_reference/el/2026<br>official_reference/en/2026 | accepted_external_reference | — |
+| `gr-mfa-visa-issuing-missions-directory` | `gr:ambiguous:gr-mfa-visa-issuing-missions-directory:bf9d3c3835f0` | unresolved | official_reference/en/2026<br>official_reference/en/2026 | accepted_external_reference | — |
+| `gr-migration-ministry-electronic-residence-permit-2020` | `gr:ambiguous:gr-migration-ministry-electronic-residence-permit-2020:44c311cf2787` | unresolved | official_reference/el/2020<br>official_reference/el/2020 | accepted_external_reference | — |
+| `gr-ministry-asylum-appeals-5307` | `gr:url:e22bcd1544ab8c4da9c8` | resolved | official_reference/el/2026<br>official_reference/en/2026 | accepted_external_reference | — |
+| `gr-ministry-circular-33-2006` | `gr:url:6dac11b285804bbe062d` | resolved | official_reference/el/2006 | accepted_external_reference | — |
+| `gr-ministry-codes-index-161` | `gr:url:c2d0ad591c30a954785f` | resolved | official_reference/el/2019 | accepted_external_reference | — |
+| `gr-ministry-data-protection-policy-2024` | `gr:url:466f4141b9f4db1021c7` | resolved | official_reference/el/2024 | accepted_external_reference | — |
+| `gr-ministry-eea-swiss-application` | `gr:ambiguous:gr-ministry-eea-swiss-application:08de480a4771` | unresolved | official_reference/el/2021<br>official_reference/el/2021<br>official_reference/en/2021<br>official_reference/en/2021 | accepted_external_reference | — |
+| `gr-ministry-gr-167-historical-checklist` | `gr:ambiguous:gr-ministry-gr-167-historical-checklist:5c421d1025ed` | unresolved | official_reference/el/2020<br>official_reference/el/2020 | accepted_external_reference | — |
+| `gr-ministry-gr-168-historical-checklist` | `gr:ambiguous:gr-ministry-gr-168-historical-checklist:8b7565ff4c82` | unresolved | official_reference/el/2020<br>official_reference/el/2020 | accepted_external_reference | — |
+| `gr-ministry-gr-169-historical-checklist` | `gr:ambiguous:gr-ministry-gr-169-historical-checklist:bd4694576a2c` | unresolved | official_reference/el/2020<br>official_reference/el/2020 | accepted_external_reference | — |
+| `gr-ministry-gr-170-historical-checklist` | `gr:ambiguous:gr-ministry-gr-170-historical-checklist:f31d910a9416` | unresolved | official_reference/el/2020<br>official_reference/el/2020 | accepted_external_reference | — |
+| `gr-ministry-gr-171-historical-checklist` | `gr:ambiguous:gr-ministry-gr-171-historical-checklist:ee5b1896ff35` | unresolved | official_reference/el/2020<br>official_reference/el/2020 | accepted_external_reference | — |
+| `gr-ministry-justice-2024-case-law-sites-notice` | `gr:ambiguous:gr-ministry-justice-2024-case-law-sites-notice:77ae4c084217` | unresolved | official_reference/el/2024<br>official_reference/el/2024 | accepted_external_reference | — |
+| `gr-ministry-legal-migration-eapplications` | `gr:ambiguous:gr-ministry-legal-migration-eapplications:1c8e55a08a0a` | unresolved | official_reference/el/2026 | accepted_external_reference | — |
+| `gr-ministry-pd106-draft-revision-2020` | `gr:url:6e704e1f511779bbba9b` | resolved | official_reference/el/2021<br>official_reference/el/2021 | accepted_external_reference | — |
+| `gr-ministry-tcn-residence-category-index` | `gr:ambiguous:gr-ministry-tcn-residence-category-index:cd6e39937dae` | unresolved | official_reference/el/2026 | accepted_external_reference | — |
+| `gr-minscfa-anynet-q3-2026-report` | `gr:url:2eed9c47fed0027f6fb6` | resolved | official_reference/el/2026<br>official_reference/el/2026 | accepted_external_reference | — |
+| `gr-mitos-adoption-registration-after-judgment` | `gr:ambiguous:gr-mitos-adoption-registration-after-judgment:854e3ecaa386` | unresolved | official_reference/el/2026<br>official_reference/el/2026 | accepted_external_reference | — |
+| `gr-mitos-asylum-legal-assistance-906805` | `gr:ambiguous:gr-mitos-asylum-legal-assistance-906805:21b1bf8e6a26` | unresolved | official_reference/el/2026 | accepted_external_reference | — |
+| `gr-mitos-foreign-judgment-recognition-certificate` | `gr:ambiguous:gr-mitos-foreign-judgment-recognition-certificate:158e56adfcc9` | unresolved | official_reference/el/2026<br>official_reference/el/2026 | accepted_external_reference | — |
+| `gr-mitos-gr-158` | `gr:url:c5dca1089e554d164ba7` | resolved | official_reference/el/2026-10-14 | accepted_external_reference | — |
+| `gr-mitos-register-corrections-2026` | `gr:ambiguous:gr-mitos-register-corrections-2026:f6a605719155` | unresolved | official_reference/el/2026 | accepted_external_reference | — |
+| `gr-mitos-return-appeal-900331` | `gr:ambiguous:gr-mitos-return-appeal-900331:d90f744c15f4` | unresolved | official_reference/el/2026 | accepted_external_reference | — |
+| `gr-national-codification-editor-endpoint` | `gr:ambiguous:gr-national-codification-editor-endpoint:fa4dbc543f3d` | unresolved | official_reference/el/2024<br>official_reference/el/2024 | accepted_external_reference | — |
+| `gr-nph-terms-of-use` | `gr:ambiguous:gr-nph-terms-of-use:e662ca945024` | unresolved | official_reference/el/2026<br>official_reference/el/2026 | accepted_external_reference | — |
+| `gr-ombudsman-foreigners-citizenship-civil-status-index` | `gr:ambiguous:gr-ombudsman-foreigners-citizenship-civil-status-index:98d10749600d` | unresolved | official_reference/en/2018<br>official_reference/en/2018 | accepted_external_reference | — |
+| `gr-prado-grc-ho-04002` | `gr:url:f583c1dcdbc56c7012e2` | resolved | official_reference/el/2025 | accepted_external_reference | — |
+| `gr-swiss-afmp-2021` | `gr:ambiguous:gr-swiss-afmp-2021:438372540191` | unresolved | official_reference/multilingual/2021<br>official_reference/multilingual/2021 | accepted_external_reference | — |
+| `gr-uk-wa-final-text` | `gr:ambiguous:gr-uk-wa-final-text:e12865b92a51` | unresolved | official_reference/multilingual/2020<br>official_reference/multilingual/2020 | accepted_external_reference | — |
+| `gr-ya-13734-2019-adoption-information-system` | `gr:ambiguous:gr-ya-13734-2019-adoption-information-system:0c3299fb7913` | unresolved | official_reference/el/2019<br>official_reference/el/2019 | accepted_external_reference | — |
+| `gr-ya-144338-2025-app-filing-exception` | `gr:url:8b216254e4a8407c5a2b` | resolved | local_artifact/unspecified/2025<br>official_reference/el/2025<br>official_reference/el/2025 | accepted_external_reference, accepted_local_copy | — |
+| `gr-ya-22343-2024-general-d-visa` | `gr:ambiguous:gr-ya-22343-2024-general-d-visa:635f0b7c7d07` | unresolved | official_reference/el/2024<br>official_reference/el/2024 | accepted_external_reference | — |
+| `gr-ya-49074-2018-adoptive-parent-training` | `gr:ambiguous:gr-ya-49074-2018-adoptive-parent-training:331b813e08a1` | unresolved | official_reference/el/2066<br>official_reference/el/2066 | accepted_external_reference | — |
+| `gr-ya-65381-2025-national-d-visa-amendment-locator` | `gr:ambiguous:gr-ya-65381-2025-national-d-visa-amendment-locator:ad6596a6921f` | unresolved | official_reference/el/2025 | accepted_external_reference | — |
+| `gr-ya-8229-2025-fek-b2601-reference` | `gr:ambiguous:gr-ya-8229-2025-fek-b2601-reference:d34f66fd89de` | unresolved | official_reference/el/2025<br>official_reference/el/2025 | accepted_external_reference | — |
+| `gr-ya-p23met-34908-2021-certified-translator-register` | `gr:ambiguous:gr-ya-p23met-34908-2021-certified-translator-register:17e0928e3000` | unresolved | official_reference/el/2021<br>official_reference/el/2021 | accepted_external_reference | — |
+| `gr-ypes-circular-10-2008-pd106` | `gr:ambiguous:gr-ypes-circular-10-2008-pd106:e5d468ccf627` | unresolved | official_reference/el/2008<br>official_reference/el/2008 | accepted_external_reference | — |
+| `gr-ypes-circular-10219-kya-8229-amendment` | `gr:ambiguous:gr-ypes-circular-10219-kya-8229-amendment:3c60730e9abc` | unresolved | official_reference/el/2025<br>official_reference/el/2025 | accepted_external_reference | — |
+| `gr-ypes-circular-10825-2026-access-questionnaire` | `gr:ambiguous:gr-ypes-circular-10825-2026-access-questionnaire:9129fa3c2f0c` | unresolved | official_reference/el/2026<br>official_reference/el/2026 | accepted_external_reference | — |
+| `gr-ypes-circular-17-2025-art43` | `gr:ambiguous:gr-ypes-circular-17-2025-art43:df94ccf52069` | unresolved | official_reference/el/2025 | accepted_external_reference | — |
+| `gr-ypes-circular-1884-kya-21797-locator` | `gr:ambiguous:gr-ypes-circular-1884-kya-21797-locator:02fdaaf16647` | unresolved | official_reference/el/2025<br>official_reference/el/2025 | accepted_external_reference | — |
+| `gr-ypes-circular-21821-access-documents` | `gr:ambiguous:gr-ypes-circular-21821-access-documents:d9d84b9dfe35` | unresolved | official_reference/el/2024<br>official_reference/el/2024 | accepted_external_reference | — |
+| `gr-ypes-circular-40-2015-pd106` | `gr:url:20ae9e13a5d0a7748554` | resolved | official_reference/el/2015<br>official_reference/el/2015 | accepted_external_reference | — |
+| `gr-ypes-migration-circular-archive` | `gr:ambiguous:gr-ypes-migration-circular-archive:29a7cd9b5c51` | unresolved | official_reference/el/2026<br>official_reference/el/2026 | accepted_external_reference | — |
+<!-- source-identity-inventory:end -->

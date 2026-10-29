@@ -87,3 +87,60 @@ The bounded search identified no standalone Lithuanian UK Withdrawal Agreement i
 ## Search interpretation
 
 The bounded search identified no standalone Lithuanian UK Withdrawal Agreement implementing statute. This is a search outcome, not a claim that no such instrument exists. EEA, Swiss, EU, mobile-Lithuanian, and UK Withdrawal Agreement routes remain distinct. Direct e-TAR requests sometimes returned 403 in the research client; this does not establish an e-TAR service outage.
+
+<!-- source-identity-inventory:start -->
+## Source identity crosswalk
+
+Canonical rows: **48**; provisional unique IDs: **48**; unresolved entries: **0**. This crosswalk preserves catalogue IDs, links external-reference and local-artifact representations to a source identity, and keeps acceptance status separate.
+
+| Existing entry ID | Canonical source identity | Resolution | Representations | Catalogued statuses | Status record IDs |
+|---|---|---|---|---|---|
+| `lt-01` | `lt:url:b3413d320132d4aa63bf` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `lt-02` | `lt:url:7012aa383602445a6d0d` | resolved | official_reference/lt/undated | accepted_external_reference | — |
+| `lt-03` | `lt:url:8b3c9175b6ae23d69f62` | resolved | official_reference/lt/undated | accepted_external_reference | — |
+| `lt-04` | `lt:url:6c726b6cae2f4e747b7a` | resolved | official_reference/unspecified/undated | pending | — |
+| `lt-05` | `lt:url:cece185ab7d273f26c31` | resolved | official_reference/lt/undated | accepted_external_reference, accepted_local_copy | — |
+| `lt-06` | `lt:url:c1820c7fe242d1816011` | resolved | official_reference/lt/undated | accepted_external_reference, accepted_local_copy | — |
+| `lt-07` | `lt:url:81b1466aaac00d7d34ef` | resolved | official_reference/lt/undated | accepted_external_reference | — |
+| `lt-08` | `lt:url:652714f55575000a4d83` | resolved | official_reference/lt/undated | accepted_external_reference, accepted_local_copy | — |
+| `lt-09` | `lt:url:180be678132360f6ba1e` | resolved | official_reference/lt/undated | accepted_external_reference, accepted_local_copy | — |
+| `lt-10` | `lt:url:200ff5a149b00a7a5183` | resolved | official_reference/lt/undated | accepted_external_reference, accepted_local_copy, historical | — |
+| `lt-11` | `lt:url:cc9efcf6ae2f2151990f` | resolved | official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `lt-12` | `lt:url:2168c663e6148745dbde` | resolved | official_reference/en/undated | accepted_external_reference, accepted_local_copy, historical | — |
+| `lt-13` | `lt:url:2c406dbad98bdffe68b6` | resolved | official_reference/en/undated | accepted_external_reference, accepted_local_copy, historical | — |
+| `lt-14` | `lt:url:9c913d567efad94afa5b` | resolved | official_reference/en/undated<br>official_reference/lt/undated | accepted_external_reference, accepted_local_copy, historical | — |
+| `lt-15` | `lt:url:7b1b86505f80cf10638b` | resolved | official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `lt-16` | `lt:url:a2b63b0f935122979bbd` | resolved | official_reference/lt/undated | accepted_external_reference | — |
+| `lt-17` | `lt:url:ac87d70e43e8d97cc815` | resolved | official_reference/lt/undated | accepted_external_reference, accepted_local_copy | — |
+| `lt-18` | `lt:url:53e7dd640d262ded6caa` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `lt-19` | `lt:url:9d6e93ce4702ae6f4ceb` | resolved | official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `lt-20` | `lt:url:0a89a876bee6f2fe3ddb` | resolved | official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `lt-21` | `lt:url:a64d1ed0233d3498ed39` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `lt-22` | `lt:url:0eb5d6052e9ffb57c5ff` | resolved | official_reference/unspecified/undated | pending | — |
+| `lt-23` | `lt:url:c6941199e6f7d69e01a9` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `lt-24` | `lt:url:60fab30a57ebbc91f687` | resolved | official_reference/unspecified/undated | pending | — |
+| `lt-25` | `lt:url:81e94610e52486008150` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `lt-26` | `lt:url:8e868e2dd47cf0618a7f` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `lt-27` | `lt:url:c0970b3437d8a81d099c` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `lt-28` | `lt:url:c86c3505bde6dcd25036` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `lt-29` | `lt:url:6c85501110a22a8347b0` | resolved | official_reference/unspecified/undated | pending | — |
+| `lt-30` | `lt:url:c3e5cef2000e029eb522` | resolved | official_reference/unspecified/undated | pending | — |
+| `lt-31` | `lt:url:7e9bff8e255a931e7c34` | resolved | official_reference/lt/undated | accepted_external_reference, accepted_local_copy | — |
+| `lt-32` | `lt:url:a2142aed659bd07b0eba` | resolved | official_reference/lt/undated | accepted_external_reference, accepted_local_copy | — |
+| `lt-33` | `lt:url:a288d479c0f26c93f905` | resolved | official_reference/lt/undated | accepted_external_reference, accepted_local_copy | — |
+| `lt-34` | `lt:url:5b3a20c206b3521cc404` | resolved | official_reference/lt/undated | accepted_external_reference, accepted_local_copy | — |
+| `lt-35` | `lt:url:8ee523e79925e962a20f` | resolved | official_reference/unspecified/undated | pending | — |
+| `lt-36` | `lt:url:f56396a1e0555e9a2345` | resolved | official_reference/lt/undated | accepted_external_reference, accepted_local_copy | — |
+| `lt-37` | `lt:url:113026437e9fdaab9e8d` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `lt-38` | `lt:url:6ec63d779fe367c2aea4` | resolved | official_reference/lt/undated | accepted_external_reference, accepted_local_copy | — |
+| `lt-39` | `lt:url:d3932b00c243dd5e5bcc` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `lt-40` | `lt:url:c75b64b54e6482e317a4` | resolved | official_reference/lt/undated | accepted_external_reference, accepted_local_copy | — |
+| `lt-41` | `lt:url:8c5305572a3c7f9d1024` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `lt-42` | `lt:url:974e20c5b3230657145a` | resolved | official_reference/lt/undated | accepted_external_reference, discovery | — |
+| `lt-43` | `lt:url:9789097945700ceca474` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `lt-44` | `lt:url:de7c426edbe63e78842a` | resolved | official_reference/lt/undated | accepted_external_reference | — |
+| `lt-45` | `lt:url:537bed23a4cbcb58514e` | resolved | official_reference/lt/undated | accepted_external_reference | — |
+| `lt-46` | `lt:url:c2e591106688674e369e` | resolved | official_reference/lt/undated | accepted_external_reference | — |
+| `lt-47` | `lt:url:75d9003eb20ede36ec2b` | resolved | official_reference/lt/undated | accepted_external_reference | — |
+| `lt-48` | `lt:url:583deecce2c9f5e86ae7` | resolved | official_reference/lt/undated | accepted_external_reference, accepted_local_copy, historical | — |
+<!-- source-identity-inventory:end -->

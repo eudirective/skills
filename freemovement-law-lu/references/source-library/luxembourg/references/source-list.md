@@ -62,3 +62,63 @@ For consolidated Legilux texts, preserve the documentary/no-legal-force notice. 
 | `lu-50` | [Council PRADO LUX-HO-11001: Luxembourg family-member residence document](https://www.consilium.europa.eu/prado/en/LUX-HO-11001/index.html) | `identity_document_reference` | Accepted external reference; source note promoted | PRADO record says CARTE DE SEJOUR; issuer Luxembourg; document valid, first issued 1 June 2021; maximum validity five years. Record generated 22 September 2023; newer card series not excluded. Document identification only, not residence eligibility or validation of a cardholder. Checked: 2026-10-29. Final document: [document](../documents/identity/lu-50-prado-family-member-residence-card.md). Independent source-reference note. |
 | `lu-51` | [Council PRADO LUX-HO-12001: Luxembourg family-member residence document](https://www.consilium.europa.eu/prado/en/LUX-HO-12001/index.html) | `identity_document_reference` | Accepted external reference; source note promoted | PRADO title is CARTE DE SEJOUR PERMANENT; current-valid flag and first issue 1 June 2021; maximum validity ten years. Page generated 22 September 2023. Description conflicts internally between third-country family member and Union-citizen permanent residence; do not infer holder status. Checked: 2026-10-29. Final document: [document](../documents/identity/lu-51-prado-permanent-residence-card.md). Independent source-reference note. |
 Review method: EU Source Update Monitor manual country-pack workflow. No topic or country review is complete.
+
+<!-- source-identity-inventory:start -->
+## Source identity crosswalk
+
+Canonical rows: **51**; provisional unique IDs: **51**; unresolved entries: **2**. This crosswalk preserves catalogue IDs, links external-reference and local-artifact representations to a source identity, and keeps acceptance status separate.
+
+| Existing entry ID | Canonical source identity | Resolution | Representations | Catalogued statuses | Status record IDs |
+|---|---|---|---|---|---|
+| `lu-01` | `lu:url:71f156333ac2447aa523` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `lu-02` | `lu:url:1b347e7d6ac2a9aefc8a` | resolved | official_reference/fr/undated | accepted_external_reference, discovery | — |
+| `lu-03` | `lu:url:5dff19184c6e9d369d50` | resolved | official_reference/fr/undated | accepted_external_reference, discovery | — |
+| `lu-04` | `lu:url:f9d65c4a16f696a217be` | resolved | official_reference/fr/undated | accepted_external_reference, discovery | — |
+| `lu-05` | `lu:url:68b5f931629158f26096` | resolved | local_artifact/unspecified/2026-06-12<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy | — |
+| `lu-06` | `lu:url:c0cbcc2cb44967b11159` | resolved | local_artifact/unspecified/2008<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy | — |
+| `lu-07` | `lu:url:38313e7543a85fdbc9ff` | resolved | local_artifact/unspecified/2008<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy | — |
+| `lu-08` | `lu:url:aaca19dc00f0a4524001` | resolved | local_artifact/unspecified/2024<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy | — |
+| `lu-09` | `lu:url:82aa87cbeb2e25724c4a` | resolved | official_reference/fr/undated | accepted_external_reference | — |
+| `lu-10` | `lu:url:eca262116e0a4f8dba47` | resolved | local_artifact/unspecified/2023-04-15<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy | — |
+| `lu-11` | `lu:url:5edd91ebc8992316d7fa` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `lu-12` | `lu:ambiguous:lu-12:d9c4eac4b4e4` | unresolved | official_reference/en/undated | accepted_external_reference | — |
+| `lu-13` | `lu:url:29be6ceb2a51b5675846` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `lu-14` | `lu:url:01a59293f7cbf9ef9330` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `lu-15` | `lu:url:c6f65619b54b645908ec` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `lu-16` | `lu:url:8edd5ee0ab1c93c8a8aa` | resolved | official_reference/fr/undated | accepted_external_reference | — |
+| `lu-17` | `lu:url:e325efd4db07a1fe239c` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `lu-18` | `lu:url:4918a78d51d462682ade` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `lu-19` | `lu:url:7d19982ea5431411f684` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `lu-20` | `lu:url:5dffa0599ce3425f7988` | resolved | official_reference/en/undated | not_relied_upon | — |
+| `lu-21` | `lu:url:bbadce147e8051caf993` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `lu-22` | `lu:url:eddcf9deefe128d82759` | resolved | official_reference/fr/undated | accepted_external_reference | — |
+| `lu-23` | `lu:url:0e6605c3f3bcc54750f1` | resolved | official_reference/fr/undated | accepted_external_reference | — |
+| `lu-24` | `lu:url:fb919c957536529936c1` | resolved | local_artifact/unspecified/undated<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy | — |
+| `lu-25` | `lu:url:47c3507b5235743b683f` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `lu-26` | `lu:url:b2eabb485c2f56bb5c02` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `lu-27` | `lu:url:a6bcd1d7f66cc9be7ea3` | resolved | local_artifact/unspecified/2023-09-16<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy | — |
+| `lu-28` | `lu:url:1c646fe53a0dca4a48ca` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `lu-29` | `lu:url:2abc029d2dfca3739322` | resolved | local_artifact/unspecified/2018<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy | — |
+| `lu-30` | `lu:url:e25c8646b055bb6d4678` | resolved | official_reference/fr/undated | accepted_external_reference | — |
+| `lu-31` | `lu:url:585edb26cee9059f035f` | resolved | official_reference/fr/undated | accepted_external_reference | — |
+| `lu-32` | `lu:url:9270e8201e1115430ade` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `lu-33` | `lu:url:b409cfe26cbeeb1eca23` | resolved | local_artifact/unspecified/2025-12-26<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy | — |
+| `lu-34` | `lu:url:27902be35226bbd87b3f` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `lu-35` | `lu:url:470b73c49f35f76ba52b` | resolved | official_reference/fr/undated | accepted_external_reference | — |
+| `lu-36` | `lu:url:9cb65461fee4bed402b5` | resolved | local_artifact/unspecified/2014<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy | — |
+| `lu-37` | `lu:url:a6e402b0344bde760454` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `lu-38` | `lu:url:b3693b39d1bd982767bf` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `lu-39` | `lu:url:76cd3aacbba5adcc57c9` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `lu-40` | `lu:url:59d778fe3da517384c6b` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `lu-41` | `lu:ambiguous:lu-41:01ef5a8bdf09` | unresolved | official_reference/en/undated | accepted_external_reference | — |
+| `lu-42` | `lu:url:43b95e75e98e3586c75e` | resolved | official_reference/en/undated | not_relied_upon | — |
+| `lu-43` | `lu:url:f160695a48f767727e5f` | resolved | official_reference/fr/undated | accepted_external_reference | — |
+| `lu-44` | `lu:url:d20a49516fd2160729d4` | resolved | official_reference/fr/undated | accepted_external_reference | — |
+| `lu-45` | `lu:url:4420983d93e00f3cd062` | resolved | official_reference/fr/undated | accepted_external_reference | — |
+| `lu-46` | `lu:url:e8001361d2b852aa76f7` | resolved | official_reference/fr/undated | pending | — |
+| `lu-47` | `lu:url:efb7aa4150bfe9d8016a` | resolved | official_reference/fr/undated | accepted_external_reference | — |
+| `lu-48` | `lu:url:149a6bfb21e71b4653d8` | resolved | official_reference/fr/undated | accepted_external_reference | — |
+| `lu-49` | `lu:url:311ae3f2be7dea1fe583` | resolved | official_reference/fr/undated | accepted_external_reference | — |
+| `lu-50` | `lu:url:2f99f392966d3afa21c4` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `lu-51` | `lu:url:dc1a108729027eb42f39` | resolved | official_reference/en/undated | accepted_external_reference | — |
+<!-- source-identity-inventory:end -->

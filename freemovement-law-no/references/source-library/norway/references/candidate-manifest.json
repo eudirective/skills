@@ -1,0 +1,3962 @@
+{
+  "schema_version": 1,
+  "jurisdiction": "NO",
+  "updated": "2026-10-29",
+  "inventory_scope": "Existing catalogued source records for norway; no acceptance or coverage decision is changed.",
+  "source_rules_file": null,
+  "official_hosts": [],
+  "discovery_hosts": [],
+  "discovery_surfaces": [],
+  "entries": [
+    {
+      "id": "no-01",
+      "title": "Lovdata public-data package list",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://api.lovdata.no/v1/publicData/list"
+      ],
+      "source_identity_id": "no:url:3f7d71cc0d2e3fe3f075",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:3f7d71cc0d2e3fe3f075#url:no:7c673ea6b57d"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "no",
+          "edition": "undated",
+          "url": "https://api.lovdata.no/v1/publicData/list",
+          "path": null,
+          "representation_id": "no:url:3f7d71cc0d2e3fe3f075#url:no:7c673ea6b57d",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:3f7d71cc0d2e3fe3f075",
+          "representation_ids": [
+            "no:url:3f7d71cc0d2e3fe3f075#url:no:7c673ea6b57d"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 13,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-01`",
+            "[Lovdata public-data package list](https://api.lovdata.no/v1/publicData/list)",
+            "`official_public_data_catalogue`",
+            "accepted official external reference; link only",
+            "Current public-data package catalogue from Lovdata's documented no-auth API; individual record pages are not scraped.",
+            "[no-01](../documents/references/no-01-lovdata-public-data-package-list.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:3f7d71cc0d2e3fe3f075",
+          "representation_ids": [
+            "no:url:3f7d71cc0d2e3fe3f075#url:no:7c673ea6b57d"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/0",
+          "category": "acceptance",
+          "source_identity_id": "no:url:3f7d71cc0d2e3fe3f075",
+          "representation_ids": [
+            "no:url:3f7d71cc0d2e3fe3f075#url:no:7c673ea6b57d"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-02",
+      "title": "Lovdata OpenAPI schema and public-data API",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://api.lovdata.no/swagger/api.json"
+      ],
+      "source_identity_id": "no:url:36591006013043c0c6bf",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:36591006013043c0c6bf#url:no:f39cb940424a"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "no",
+          "edition": "undated",
+          "url": "https://api.lovdata.no/swagger/api.json",
+          "path": null,
+          "representation_id": "no:url:36591006013043c0c6bf#url:no:f39cb940424a",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:36591006013043c0c6bf",
+          "representation_ids": [
+            "no:url:36591006013043c0c6bf#url:no:f39cb940424a"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 14,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-02`",
+            "[Lovdata OpenAPI schema and public-data API](https://api.lovdata.no/swagger/api.json)",
+            "`official_legal_data_api`",
+            "accepted official external reference; link only",
+            "OpenAPI schema for Lovdata routes; structuredRules endpoints require a key, while publicData list/get are documented as unauthenticated.",
+            "[no-02](../documents/references/no-02-lovdata-openapi-schema-and-public-data-api.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:36591006013043c0c6bf",
+          "representation_ids": [
+            "no:url:36591006013043c0c6bf#url:no:f39cb940424a"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/1",
+          "category": "acceptance",
+          "source_identity_id": "no:url:36591006013043c0c6bf",
+          "representation_ids": [
+            "no:url:36591006013043c0c6bf#url:no:f39cb940424a"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-03",
+      "title": "Norsk Lovtidend Avdeling I dataset metadata",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://data.norge.no/nb/datasets/c0c6a87c-f597-3735-965f-650be23426a0/norsk-lovtidend-avdeling-i"
+      ],
+      "source_identity_id": "no:url:dfe14bf9d5d3e7f03e23",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:dfe14bf9d5d3e7f03e23#url:no:33dd7fe3b16b"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "no",
+          "edition": "undated",
+          "url": "https://data.norge.no/nb/datasets/c0c6a87c-f597-3735-965f-650be23426a0/norsk-lovtidend-avdeling-i",
+          "path": null,
+          "representation_id": "no:url:dfe14bf9d5d3e7f03e23#url:no:33dd7fe3b16b",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:dfe14bf9d5d3e7f03e23",
+          "representation_ids": [
+            "no:url:dfe14bf9d5d3e7f03e23#url:no:33dd7fe3b16b"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 15,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-03`",
+            "[Norsk Lovtidend Avdeling I dataset metadata](https://data.norge.no/nb/datasets/c0c6a87c-f597-3735-965f-650be23426a0/norsk-lovtidend-avdeling-i)",
+            "`legislation_open_data_catalogue`",
+            "accepted official external reference; link only",
+            "Metadata says official national promulgations since 2001, XML in ZIP archives, daily updates for current-year content and an annual historical archive; routes to /list then /get. Open license is identified as NLOD. Metadata's latest catalog harvest is 2024, and exact current API contents were not verified.",
+            "[no-03](../documents/references/no-03-norsk-lovtidend-avdeling-i-dataset-metadata.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:dfe14bf9d5d3e7f03e23",
+          "representation_ids": [
+            "no:url:dfe14bf9d5d3e7f03e23#url:no:33dd7fe3b16b"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/2",
+          "category": "acceptance",
+          "source_identity_id": "no:url:dfe14bf9d5d3e7f03e23",
+          "representation_ids": [
+            "no:url:dfe14bf9d5d3e7f03e23#url:no:33dd7fe3b16b"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-04",
+      "title": "Norsk Lovtidend official publication register",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://lovdata.no/register/lovtidend"
+      ],
+      "source_identity_id": "no:ambiguous:no-04:646eb066904f",
+      "identity_resolution_status": "unresolved",
+      "identity_resolution_basis": "official URL is shared by distinct catalogue IDs with different titles",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:ambiguous:no-04:646eb066904f#url:no:7e31c9067d4b"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "no",
+          "edition": "undated",
+          "url": "https://lovdata.no/register/lovtidend",
+          "path": null,
+          "representation_id": "no:ambiguous:no-04:646eb066904f#url:no:7e31c9067d4b",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:ambiguous:no-04:646eb066904f",
+          "representation_ids": [
+            "no:ambiguous:no-04:646eb066904f#url:no:7e31c9067d4b"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 16,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-04`",
+            "[Norsk Lovtidend official publication register](https://lovdata.no/register/lovtidend/)",
+            "`official_gazette_portal`",
+            "accepted official external reference; link only",
+            "Includes official original enactments and amendments; Avdeling I covers nationwide instruments and Avdeling II regional/local regulations. Original publication text is not the same as current consolidated text.",
+            "[no-04](../documents/references/no-04-norsk-lovtidend-official-publication-register.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:ambiguous:no-04:646eb066904f",
+          "representation_ids": [
+            "no:ambiguous:no-04:646eb066904f#url:no:7e31c9067d4b"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/3",
+          "category": "acceptance",
+          "source_identity_id": "no:ambiguous:no-04:646eb066904f",
+          "representation_ids": [
+            "no:ambiguous:no-04:646eb066904f#url:no:7e31c9067d4b"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-05",
+      "title": "Norsk Lovtidend Avdeling II and local/regional regulations",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://lovdata.no/register/lovtidend"
+      ],
+      "source_identity_id": "no:ambiguous:no-05:61ad860bb480",
+      "identity_resolution_status": "unresolved",
+      "identity_resolution_basis": "official URL is shared by distinct catalogue IDs with different titles",
+      "status_categories": [
+        "not_relied_upon"
+      ],
+      "representation_ids": [
+        "no:ambiguous:no-05:61ad860bb480#url:no:7e31c9067d4b"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "no",
+          "edition": "undated",
+          "url": "https://lovdata.no/register/lovtidend",
+          "path": null,
+          "representation_id": "no:ambiguous:no-05:61ad860bb480#url:no:7e31c9067d4b",
+          "acceptance_status": [
+            "not_relied_upon"
+          ],
+          "source_identity_id": "no:ambiguous:no-05:61ad860bb480",
+          "representation_ids": [
+            "no:ambiguous:no-05:61ad860bb480#url:no:7e31c9067d4b"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 17,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-05`",
+            "[Norsk Lovtidend Avdeling II and local/regional regulations](https://lovdata.no/register/lovtidend/)",
+            "`local_regulation_publication`",
+            "not relied — Avdeling II retrieval/coverage gap",
+            "Separate local/regional source class. The public-data catalog page reviewed covers Avdeling I only; do not assume that it or its API supplies Avdeling II. Local-source coverage is outside this central first pass.",
+            "[no-05](../documents/references/no-05-norsk-lovtidend-avdeling-ii-and-local-regional-regulations.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:ambiguous:no-05:61ad860bb480",
+          "representation_ids": [
+            "no:ambiguous:no-05:61ad860bb480#url:no:7e31c9067d4b"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/not_relied_upon_references/0",
+          "category": "acceptance",
+          "source_identity_id": "no:ambiguous:no-05:61ad860bb480",
+          "representation_ids": [
+            "no:ambiguous:no-05:61ad860bb480#url:no:7e31c9067d4b"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-06",
+      "title": "Utlendingsloven, LOV-2008-05-15-35",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://lovdata.no/dokument/NL/lov/2008-05-15-35"
+      ],
+      "source_identity_id": "no:url:44c69f11d2a22523fb71",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:44c69f11d2a22523fb71#url:no:166812b3a15f"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "no",
+          "edition": "undated",
+          "url": "https://lovdata.no/dokument/NL/lov/2008-05-15-35",
+          "path": null,
+          "representation_id": "no:url:44c69f11d2a22523fb71#url:no:166812b3a15f",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:44c69f11d2a22523fb71",
+          "representation_ids": [
+            "no:url:44c69f11d2a22523fb71#url:no:166812b3a15f"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 18,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-06`",
+            "[Utlendingsloven, LOV-2008-05-15-35](https://lovdata.no/dokument/NL/lov/2008-05-15-35)",
+            "`immigration_primary_legislation`",
+            "accepted official external reference; link only",
+            "Result shows last amendment LOV-2026-06-12-31, effective 12 June 2026, and identifies EEA Agreement Article 28–39 and Annex VIII, including Directive 2004/38. Chapter 13 covers EEA/EFTA entry and residence. October text was not retrieved.",
+            "[no-06](../documents/references/no-06-utlendingsloven-lov-2008-05-15-35.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:44c69f11d2a22523fb71",
+          "representation_ids": [
+            "no:url:44c69f11d2a22523fb71#url:no:166812b3a15f"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/4",
+          "category": "acceptance",
+          "source_identity_id": "no:url:44c69f11d2a22523fb71",
+          "representation_ids": [
+            "no:url:44c69f11d2a22523fb71#url:no:166812b3a15f"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-07",
+      "title": "Utlendingsforskriften, FOR-2009-10-15-1286",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://lovdata.no/dokument/SF/forskrift/2009-10-15-1286"
+      ],
+      "source_identity_id": "no:url:024ca356091c41a78596",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "not_relied_upon"
+      ],
+      "representation_ids": [
+        "no:url:024ca356091c41a78596#url:no:e10a7675c350"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "no",
+          "edition": "undated",
+          "url": "https://lovdata.no/dokument/SF/forskrift/2009-10-15-1286",
+          "path": null,
+          "representation_id": "no:url:024ca356091c41a78596#url:no:e10a7675c350",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:024ca356091c41a78596",
+          "representation_ids": [
+            "no:url:024ca356091c41a78596#url:no:e10a7675c350"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 19,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-07`",
+            "[Utlendingsforskriften, FOR-2009-10-15-1286](https://lovdata.no/dokument/SF/forskrift/2009-10-15-1286)",
+            "`immigration_implementing_regulation`",
+            "accepted official external reference; link only",
+            "Result shows amendment FOR-2026-06-12-1060 effective 12 June 2026. It implements and supplements the Immigration Act; exact October text, exports, and article-level retrieval were not replayed.",
+            "[no-07](../documents/references/no-07-utlendingsforskriften-for-2009-10-15-1286.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:024ca356091c41a78596",
+          "representation_ids": [
+            "no:url:024ca356091c41a78596#url:no:e10a7675c350"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/5",
+          "category": "acceptance",
+          "source_identity_id": "no:url:024ca356091c41a78596",
+          "representation_ids": [
+            "no:url:024ca356091c41a78596#url:no:e10a7675c350"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-08",
+      "title": "EØS-loven, LOV-1992-11-27-109",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://lovdata.no/lov/1992-11-27-109"
+      ],
+      "source_identity_id": "no:url:40c31cc928a572d87768",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "candidate"
+      ],
+      "representation_ids": [
+        "no:url:40c31cc928a572d87768#url:no:cf837e9db494"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "no",
+          "edition": "undated",
+          "url": "https://lovdata.no/lov/1992-11-27-109",
+          "path": null,
+          "representation_id": "no:url:40c31cc928a572d87768#url:no:cf837e9db494",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:40c31cc928a572d87768",
+          "representation_ids": [
+            "no:url:40c31cc928a572d87768#url:no:cf837e9db494"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 20,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-08`",
+            "[EØS-loven, LOV-1992-11-27-109](https://lovdata.no/lov/1992-11-27-109)",
+            "`eea_treaty_implementation_legislation`",
+            "accepted official external reference; link only",
+            "§1 makes the EEA Agreement main body Norwegian law and §2 sets a conflict rule for implementing measures. This does not make Norway an EU Member State or turn every EU act into directly applicable Norwegian law.",
+            "[no-08](../documents/references/no-08-e-s-loven-lov-1992-11-27-109.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:40c31cc928a572d87768",
+          "representation_ids": [
+            "no:url:40c31cc928a572d87768#url:no:cf837e9db494"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/6",
+          "category": "acceptance",
+          "source_identity_id": "no:url:40c31cc928a572d87768",
+          "representation_ids": [
+            "no:url:40c31cc928a572d87768#url:no:cf837e9db494"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-09",
+      "title": "EEA Legal Texts and updated annexes",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://efta.int/about-efta/legal-documents/eea-legal-texts"
+      ],
+      "source_identity_id": "no:url:189c0b84546d476df180",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:189c0b84546d476df180#url:en:eb9ef85594a7"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://efta.int/about-efta/legal-documents/eea-legal-texts",
+          "path": null,
+          "representation_id": "no:url:189c0b84546d476df180#url:en:eb9ef85594a7",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:189c0b84546d476df180",
+          "representation_ids": [
+            "no:url:189c0b84546d476df180#url:en:eb9ef85594a7"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 21,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-09`",
+            "[EEA Legal Texts and updated annexes](https://www.efta.int/about-efta/legal-documents/eea-legal-texts)",
+            "`eea_treaty_and_annexes`",
+            "accepted official external reference; link only",
+            "EFTA publishes the Agreement, updated annexes/protocols, and joint committee decisions. Track Norway's EEA incorporation and adaptations separately from EU versions; source files and change notifications were not downloaded.",
+            "[no-09](../documents/references/no-09-eea-legal-texts-and-updated-annexes.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:189c0b84546d476df180",
+          "representation_ids": [
+            "no:url:189c0b84546d476df180#url:en:eb9ef85594a7"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/7",
+          "category": "acceptance",
+          "source_identity_id": "no:url:189c0b84546d476df180",
+          "representation_ids": [
+            "no:url:189c0b84546d476df180#url:en:eb9ef85594a7"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-10",
+      "title": "EFTA Convention, including Annex K: Movement of Persons",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://efta.int/about-efta/legal-documents/efta-convention"
+      ],
+      "source_identity_id": "no:url:e50cc885170d76a75d86",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:e50cc885170d76a75d86#url:en:9f4af43a8962"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://efta.int/about-efta/legal-documents/efta-convention",
+          "path": null,
+          "representation_id": "no:url:e50cc885170d76a75d86#url:en:9f4af43a8962",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:e50cc885170d76a75d86",
+          "representation_ids": [
+            "no:url:e50cc885170d76a75d86#url:en:9f4af43a8962"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 22,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-10`",
+            "[EFTA Convention, including Annex K: Movement of Persons](https://www.efta.int/about-efta/legal-documents/efta-convention)",
+            "`efta_persons_agreement`",
+            "accepted official external reference; link only",
+            "Revised Vaduz Convention includes movement of persons and applies in relations between Switzerland and the EEA EFTA States. This is a distinct Swiss/EFTA route, not the EEA Agreement. Annex text, reservations, and current Norwegian implementing details require per-record verification.",
+            "[no-10](../documents/references/no-10-efta-convention-including-annex-k-movement-of-persons.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:e50cc885170d76a75d86",
+          "representation_ids": [
+            "no:url:e50cc885170d76a75d86#url:en:9f4af43a8962"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/8",
+          "category": "acceptance",
+          "source_identity_id": "no:url:e50cc885170d76a75d86",
+          "representation_ids": [
+            "no:url:e50cc885170d76a75d86#url:en:9f4af43a8962"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-11",
+      "title": "UDI 2010-025, Family immigration with an EEA citizen",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://udiregelverk.no/rettskilder/udi-retningslinjer/udi-2010-025"
+      ],
+      "source_identity_id": "no:url:e3bfbf30a28fb6ee8518",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:e3bfbf30a28fb6ee8518#url:no:18316a5681a8"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "no",
+          "edition": "undated",
+          "url": "https://udiregelverk.no/rettskilder/udi-retningslinjer/udi-2010-025",
+          "path": null,
+          "representation_id": "no:url:e3bfbf30a28fb6ee8518#url:no:18316a5681a8",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:e3bfbf30a28fb6ee8518",
+          "representation_ids": [
+            "no:url:e3bfbf30a28fb6ee8518#url:no:18316a5681a8"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 23,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-11`",
+            "[UDI 2010-025, Family immigration with an EEA citizen](https://www.udiregelverk.no/rettskilder/udi-retningslinjer/udi-2010-025/)",
+            "`immigration_administrative_guideline`",
+            "accepted official external reference; link only",
+            "Record states it concerns family immigration under Immigration Act §110 and Immigration Regulations §19-7; change history includes 22 July 2026. Norwegian HTML with document ID and dated changes is promising; page history/version capture and body conversion remain unverified. Scope and status differ from the Danish rule.",
+            "[no-11](../documents/references/no-11-udi-2010-025-family-immigration-with-an-eea-citizen.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:e3bfbf30a28fb6ee8518",
+          "representation_ids": [
+            "no:url:e3bfbf30a28fb6ee8518#url:no:18316a5681a8"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/9",
+          "category": "acceptance",
+          "source_identity_id": "no:url:e3bfbf30a28fb6ee8518",
+          "representation_ids": [
+            "no:url:e3bfbf30a28fb6ee8518#url:no:18316a5681a8"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-12",
+      "title": "Repealed EØS-arbeidstakerloven, LOV-1992-11-27-112",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://lovdata.no/lov/1992-11-27-112"
+      ],
+      "source_identity_id": "no:url:7f1e72c2007edff9148d",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:7f1e72c2007edff9148d#url:no:025c6f3d8674"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "no",
+          "edition": "undated",
+          "url": "https://lovdata.no/lov/1992-11-27-112",
+          "path": null,
+          "representation_id": "no:url:7f1e72c2007edff9148d#url:no:025c6f3d8674",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:7f1e72c2007edff9148d",
+          "representation_ids": [
+            "no:url:7f1e72c2007edff9148d#url:no:025c6f3d8674"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 24,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-12`",
+            "[Repealed EØS-arbeidstakerloven, LOV-1992-11-27-112](https://lovdata.no/lov/1992-11-27-112)",
+            "`historical_eea_worker_mobility_legislation`",
+            "accepted official external reference; link only",
+            "Historical text only; repealed on 14 December 2012 by LOV-2012-12-14-81.",
+            "[no-12](../documents/references/no-12-repealed-e-s-arbeidstakerloven-lov-1992-11-27-112.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:7f1e72c2007edff9148d",
+          "representation_ids": [
+            "no:url:7f1e72c2007edff9148d#url:no:025c6f3d8674"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/10",
+          "category": "acceptance",
+          "source_identity_id": "no:url:7f1e72c2007edff9148d",
+          "representation_ids": [
+            "no:url:7f1e72c2007edff9148d#url:no:025c6f3d8674"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-13",
+      "title": "Forvaltningsloven, LOV-1967-02-10",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://lovdata.no/dokument/NL/lov/1967-02-10"
+      ],
+      "source_identity_id": "no:url:efb88945580fe6af04f8",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:efb88945580fe6af04f8#url:no:f7dc4261426f"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "no",
+          "edition": "undated",
+          "url": "https://lovdata.no/dokument/NL/lov/1967-02-10",
+          "path": null,
+          "representation_id": "no:url:efb88945580fe6af04f8#url:no:f7dc4261426f",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:efb88945580fe6af04f8",
+          "representation_ids": [
+            "no:url:efb88945580fe6af04f8#url:no:f7dc4261426f"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 25,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-13`",
+            "[Forvaltningsloven, LOV-1967-02-10](https://lovdata.no/dokument/NL/lov/1967-02-10)",
+            "`administrative_procedure_legislation`",
+            "accepted official external reference; link only",
+            "The 1967 Act remains operative until the 2025 replacement commences; monitor the commencement decision and transitional provisions.",
+            "[no-13](../documents/references/no-13-forvaltningsloven-lov-1967-02-10.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:efb88945580fe6af04f8",
+          "representation_ids": [
+            "no:url:efb88945580fe6af04f8#url:no:f7dc4261426f"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/11",
+          "category": "acceptance",
+          "source_identity_id": "no:url:efb88945580fe6af04f8",
+          "representation_ids": [
+            "no:url:efb88945580fe6af04f8#url:no:f7dc4261426f"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-14",
+      "title": "Offentleglova, LOV-2006-05-19-16",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://lovdata.no/dokument/NL/lov/2006-05-19-16"
+      ],
+      "source_identity_id": "no:url:59174e1e9f368eb1ba53",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:59174e1e9f368eb1ba53#url:no:29b0f0e771ea"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "no",
+          "edition": "undated",
+          "url": "https://lovdata.no/dokument/NL/lov/2006-05-19-16",
+          "path": null,
+          "representation_id": "no:url:59174e1e9f368eb1ba53#url:no:29b0f0e771ea",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:59174e1e9f368eb1ba53",
+          "representation_ids": [
+            "no:url:59174e1e9f368eb1ba53#url:no:29b0f0e771ea"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 26,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-14`",
+            "[Offentleglova, LOV-2006-05-19-16](https://lovdata.no/dokument/NL/lov/2006-05-19-16)",
+            "`public_access_legislation`",
+            "accepted official external reference; link only",
+            "Governs access to government records and reuse/access context; privacy/confidentiality exceptions are material in individual immigration matters. Do not use it as a blanket reuse license for every content type.",
+            "[no-14](../documents/references/no-14-offentleglova-lov-2006-05-19-16.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:59174e1e9f368eb1ba53",
+          "representation_ids": [
+            "no:url:59174e1e9f368eb1ba53#url:no:29b0f0e771ea"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/12",
+          "category": "acceptance",
+          "source_identity_id": "no:url:59174e1e9f368eb1ba53",
+          "representation_ids": [
+            "no:url:59174e1e9f368eb1ba53#url:no:29b0f0e771ea"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-15",
+      "title": "Offentlegforskrifta, FOR-2008-10-17-1119",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://lovdata.no/forskrift/2008-10-17-1119"
+      ],
+      "source_identity_id": "no:url:23d486ef21ee10ff20e2",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:23d486ef21ee10ff20e2#url:no:4eb58de47e0d"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "no",
+          "edition": "undated",
+          "url": "https://lovdata.no/forskrift/2008-10-17-1119",
+          "path": null,
+          "representation_id": "no:url:23d486ef21ee10ff20e2#url:no:4eb58de47e0d",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:23d486ef21ee10ff20e2",
+          "representation_ids": [
+            "no:url:23d486ef21ee10ff20e2#url:no:4eb58de47e0d"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 27,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-15`",
+            "[Offentlegforskrifta, FOR-2008-10-17-1119](https://lovdata.no/forskrift/2008-10-17-1119)",
+            "`public_access_implementing_regulation`",
+            "accepted official external reference; link only",
+            "Candidate for public-journal/eInnsyn scope and access workflow; current text, amendments, and applicable exceptions not inspected.",
+            "[no-15](../documents/references/no-15-offentlegforskrifta-for-2008-10-17-1119.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:23d486ef21ee10ff20e2",
+          "representation_ids": [
+            "no:url:23d486ef21ee10ff20e2#url:no:4eb58de47e0d"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/13",
+          "category": "acceptance",
+          "source_identity_id": "no:url:23d486ef21ee10ff20e2",
+          "representation_ids": [
+            "no:url:23d486ef21ee10ff20e2#url:no:4eb58de47e0d"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-16",
+      "title": "Personopplysningsloven, LOV-2018-06-15-38",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://lovdata.no/dokument/NL/lov/2018-06-15-38"
+      ],
+      "source_identity_id": "no:url:1828ba2d25af11ed0cc7",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:1828ba2d25af11ed0cc7#url:no:054414555306"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "no",
+          "edition": "undated",
+          "url": "https://lovdata.no/dokument/NL/lov/2018-06-15-38",
+          "path": null,
+          "representation_id": "no:url:1828ba2d25af11ed0cc7#url:no:054414555306",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:1828ba2d25af11ed0cc7",
+          "representation_ids": [
+            "no:url:1828ba2d25af11ed0cc7#url:no:054414555306"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 28,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-16`",
+            "[Personopplysningsloven, LOV-2018-06-15-38](https://lovdata.no/dokument/NL/lov/2018-06-15-38)",
+            "`data_protection_legislation`",
+            "accepted official external reference; link only",
+            "Norwegian Personal Data Act/GDPR source candidate; EU/EEA information-system instruments and Immigration Act special provisions need distinct treatment. Current text and reuse route unverified.",
+            "[no-16](../documents/references/no-16-personopplysningsloven-lov-2018-06-15-38.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:1828ba2d25af11ed0cc7",
+          "representation_ids": [
+            "no:url:1828ba2d25af11ed0cc7#url:no:054414555306"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/14",
+          "category": "acceptance",
+          "source_identity_id": "no:url:1828ba2d25af11ed0cc7",
+          "representation_ids": [
+            "no:url:1828ba2d25af11ed0cc7#url:no:054414555306"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-17",
+      "title": "Dataforvaltningsloven, LOV-2026-06-19-36",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://lovdata.no/dokument/NL/lov/2026-06-19-36"
+      ],
+      "source_identity_id": "no:url:9f6119082de680b5dd64",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:9f6119082de680b5dd64#url:no:0834763ecf8c"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "no",
+          "edition": "undated",
+          "url": "https://lovdata.no/dokument/NL/lov/2026-06-19-36",
+          "path": null,
+          "representation_id": "no:url:9f6119082de680b5dd64#url:no:0834763ecf8c",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:9f6119082de680b5dd64",
+          "representation_ids": [
+            "no:url:9f6119082de680b5dd64#url:no:0834763ecf8c"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 29,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-17`",
+            "[Dataforvaltningsloven, LOV-2026-06-19-36](https://lovdata.no/dokument/NL/lov/2026-06-19-36)",
+            "`public_data_reuse_context`",
+            "accepted official external reference; link only",
+            "The publisher metadata says commencement is set by the King; treat as enacted but not yet effective until a commencement decision is confirmed.",
+            "[no-17](../documents/references/no-17-dataforvaltningsloven-lov-2026-06-19-36.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:9f6119082de680b5dd64",
+          "representation_ids": [
+            "no:url:9f6119082de680b5dd64#url:no:0834763ecf8c"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/15",
+          "category": "acceptance",
+          "source_identity_id": "no:url:9f6119082de680b5dd64",
+          "representation_ids": [
+            "no:url:9f6119082de680b5dd64#url:no:0834763ecf8c"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-18",
+      "title": "Immigration Act English translation",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://regjeringen.no/en/documents/immigration-act/id585772"
+      ],
+      "source_identity_id": "no:url:d004859e59c7eadf3903",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:d004859e59c7eadf3903#url:en:dce5a36fc62f"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://regjeringen.no/en/documents/immigration-act/id585772",
+          "path": null,
+          "representation_id": "no:url:d004859e59c7eadf3903#url:en:dce5a36fc62f",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:d004859e59c7eadf3903",
+          "representation_ids": [
+            "no:url:d004859e59c7eadf3903#url:en:dce5a36fc62f"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 30,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-18`",
+            "[Immigration Act English translation](https://www.regjeringen.no/en/documents/immigration-act/id585772/)",
+            "`translated_legislation_reference`",
+            "accepted official external reference; link only",
+            "The ministry explicitly says this translation was updated only to 1 April 2014, has no legal status, and is not continuously updated. Discovery aid only; use Norwegian current text and verify every provision.",
+            "[no-18](../documents/references/no-18-immigration-act-english-translation.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:d004859e59c7eadf3903",
+          "representation_ids": [
+            "no:url:d004859e59c7eadf3903#url:en:dce5a36fc62f"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/16",
+          "category": "acceptance",
+          "source_identity_id": "no:url:d004859e59c7eadf3903",
+          "representation_ids": [
+            "no:url:d004859e59c7eadf3903#url:en:dce5a36fc62f"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-19",
+      "title": "UDI Regelverk portal",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://udiregelverk.no/en"
+      ],
+      "source_identity_id": "no:url:fe5270c23ac05736093e",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:fe5270c23ac05736093e#url:en:7b85752fa6d8"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://udiregelverk.no/en",
+          "path": null,
+          "representation_id": "no:url:fe5270c23ac05736093e#url:en:7b85752fa6d8",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:fe5270c23ac05736093e",
+          "representation_ids": [
+            "no:url:fe5270c23ac05736093e#url:en:7b85752fa6d8"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 31,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-19`",
+            "[UDI Regelverk portal](https://www.udiregelverk.no/en/)",
+            "`official_immigration_rulebook_index`",
+            "accepted official external reference; link only",
+            "Portal lists laws/regulations, UDI guidelines, Supreme Court decisions, ministry circulars/instructions and international sources, with a recent-changes area. Dynamic search and record pagination not checked.",
+            "[no-19](../documents/references/no-19-udi-regelverk-portal.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:fe5270c23ac05736093e",
+          "representation_ids": [
+            "no:url:fe5270c23ac05736093e#url:en:7b85752fa6d8"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/17",
+          "category": "acceptance",
+          "source_identity_id": "no:url:fe5270c23ac05736093e",
+          "representation_ids": [
+            "no:url:fe5270c23ac05736093e#url:en:7b85752fa6d8"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-20",
+      "title": "UDI EEA/EU residence guidance hub",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://udi.no/en/want-to-apply/residence-under-the-eueeu-regulations"
+      ],
+      "source_identity_id": "no:url:602afc24de87e76dac5f",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:602afc24de87e76dac5f#url:en:5b06c019838b"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://udi.no/en/want-to-apply/residence-under-the-eueeu-regulations",
+          "path": null,
+          "representation_id": "no:url:602afc24de87e76dac5f#url:en:5b06c019838b",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:602afc24de87e76dac5f",
+          "representation_ids": [
+            "no:url:602afc24de87e76dac5f#url:en:5b06c019838b"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 32,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-20`",
+            "[UDI EEA/EU residence guidance hub](https://www.udi.no/en/want-to-apply/residence-under-the-eueeu-regulations/)",
+            "`free_movement_guidance_index`",
+            "accepted official external reference; link only",
+            "Dynamic parent route links registration, family members, permanent residence, Norwegian returners and other situations. Preserve parent-child link discovery and country-selector state; page content and update marker need live replay.",
+            "[no-20](../documents/references/no-20-udi-eea-eu-residence-guidance-hub.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:602afc24de87e76dac5f",
+          "representation_ids": [
+            "no:url:602afc24de87e76dac5f#url:en:5b06c019838b"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/18",
+          "category": "acceptance",
+          "source_identity_id": "no:url:602afc24de87e76dac5f",
+          "representation_ids": [
+            "no:url:602afc24de87e76dac5f#url:en:5b06c019838b"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-21",
+      "title": "UDI EEA regulations frequently asked questions",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://udi.no/en/answer-pages/answers-eueea"
+      ],
+      "source_identity_id": "no:url:188f41e4b207062b3c50",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:188f41e4b207062b3c50#url:en:1cf2d7e7763a"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://udi.no/en/answer-pages/answers-eueea",
+          "path": null,
+          "representation_id": "no:url:188f41e4b207062b3c50#url:en:1cf2d7e7763a",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:188f41e4b207062b3c50",
+          "representation_ids": [
+            "no:url:188f41e4b207062b3c50#url:en:1cf2d7e7763a"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 33,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-21`",
+            "[UDI EEA regulations frequently asked questions](https://www.udi.no/en/answer-pages/answers-eueea/)",
+            "`free_movement_faq`",
+            "accepted official external reference; link only",
+            "Explains registration vs residence card, derived residence, returning Norwegians and evidence; expressly says a registration certificate/card does not itself confirm the underlying right. Frequently maintained operational guidance, not primary law.",
+            "[no-21](../documents/references/no-21-udi-eea-regulations-frequently-asked-questions.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:188f41e4b207062b3c50",
+          "representation_ids": [
+            "no:url:188f41e4b207062b3c50#url:en:1cf2d7e7763a"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/19",
+          "category": "acceptance",
+          "source_identity_id": "no:url:188f41e4b207062b3c50",
+          "representation_ids": [
+            "no:url:188f41e4b207062b3c50#url:en:1cf2d7e7763a"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-22",
+      "title": "UDI residence card for family members of EU/EEA nationals",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://udi.no/en/want-to-apply/family-immigration/residence-card-for-family-members-of-eueea-nationals-"
+      ],
+      "source_identity_id": "no:url:3e14149e4885f8aae603",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:3e14149e4885f8aae603#url:en:8bb24b95e628"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://udi.no/en/want-to-apply/family-immigration/residence-card-for-family-members-of-eueea-nationals-",
+          "path": null,
+          "representation_id": "no:url:3e14149e4885f8aae603#url:en:8bb24b95e628",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:3e14149e4885f8aae603",
+          "representation_ids": [
+            "no:url:3e14149e4885f8aae603#url:en:8bb24b95e628"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 34,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-22`",
+            "[UDI residence card for family members of EU/EEA nationals](https://www.udi.no/en/want-to-apply/family-immigration/residence-card-for-family-members-of-eueea-nationals-/)",
+            "`eea_family_residence_guidance`",
+            "accepted official external reference; link only",
+            "Dynamic questions and citizenship query parameters affect content; includes family categories and application links. Swiss sponsors are surfaced by UDI as a personalized case, but must remain legally distinguished from EEA nationals. No page state or attachment was captured.",
+            "[no-22](../documents/references/no-22-udi-residence-card-for-family-members-of-eu-eea-nationals.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:3e14149e4885f8aae603",
+          "representation_ids": [
+            "no:url:3e14149e4885f8aae603#url:en:8bb24b95e628"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/20",
+          "category": "acceptance",
+          "source_identity_id": "no:url:3e14149e4885f8aae603",
+          "representation_ids": [
+            "no:url:3e14149e4885f8aae603#url:en:8bb24b95e628"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-23",
+      "title": "UDI family member of a returning Norwegian under EEA rules",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://udi.no/en/want-to-apply/family-immigration/residence-card-for-family-members-of-eueea-nationals-?c=ind&e=y&f=nor"
+      ],
+      "source_identity_id": "no:url:cb1d7539105998955c42",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:cb1d7539105998955c42#url:en:24b6e00b4042"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://udi.no/en/want-to-apply/family-immigration/residence-card-for-family-members-of-eueea-nationals-?c=ind&e=y&f=nor",
+          "path": null,
+          "representation_id": "no:url:cb1d7539105998955c42#url:en:24b6e00b4042",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:cb1d7539105998955c42",
+          "representation_ids": [
+            "no:url:cb1d7539105998955c42#url:en:24b6e00b4042"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 35,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-23`",
+            "[UDI family member of a returning Norwegian under EEA rules](https://www.udi.no/en/want-to-apply/family-immigration/residence-card-for-family-members-of-eueea-nationals-/?c=ind&e=y&f=nor)",
+            "`returning_national_family_guidance`",
+            "accepted official external reference; link only",
+            "Page requires Norwegian sponsor to have exercised free movement and moved/reunited in Norway; this is not ordinary domestic Norwegian family immigration. Parameterized route and evolving page state require rediscovery.",
+            "[no-23](../documents/references/no-23-udi-family-member-of-a-returning-norwegian-under-eea-rules.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:cb1d7539105998955c42",
+          "representation_ids": [
+            "no:url:cb1d7539105998955c42#url:en:24b6e00b4042"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/21",
+          "category": "acceptance",
+          "source_identity_id": "no:url:cb1d7539105998955c42",
+          "representation_ids": [
+            "no:url:cb1d7539105998955c42#url:en:24b6e00b4042"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-24",
+      "title": "UDI permanent right of residence for EU/EEA nationals",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://udi.no/en/want-to-apply/permanent-residence/permanent-right-of-residence-for-eueea-nationals"
+      ],
+      "source_identity_id": "no:url:9d7434858d8898972103",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:9d7434858d8898972103#url:en:19b3e176f738"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://udi.no/en/want-to-apply/permanent-residence/permanent-right-of-residence-for-eueea-nationals",
+          "path": null,
+          "representation_id": "no:url:9d7434858d8898972103#url:en:19b3e176f738",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:9d7434858d8898972103",
+          "representation_ids": [
+            "no:url:9d7434858d8898972103#url:en:19b3e176f738"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 36,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-24`",
+            "[UDI permanent right of residence for EU/EEA nationals](https://www.udi.no/en/want-to-apply/permanent-residence/permanent-right-of-residence-for-eueea-nationals/)",
+            "`permanent_free_movement_guidance`",
+            "accepted official external reference; link only",
+            "Describes five-year residence and qualifying categories. UDI states Swiss citizens have the same rights in Norway despite Switzerland not being EU/EEA; preserve that separate EFTA route and verify law/policy basis. Dynamic language/content incomplete in English.",
+            "[no-24](../documents/references/no-24-udi-permanent-right-of-residence-for-eu-eea-nationals.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:9d7434858d8898972103",
+          "representation_ids": [
+            "no:url:9d7434858d8898972103#url:en:19b3e176f738"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/22",
+          "category": "acceptance",
+          "source_identity_id": "no:url:9d7434858d8898972103",
+          "representation_ids": [
+            "no:url:9d7434858d8898972103#url:en:19b3e176f738"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-25",
+      "title": "UDI family immigration hub",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://udi.no/en/want-to-apply/family-immigration"
+      ],
+      "source_identity_id": "no:url:85e13ad0c508d2d875b0",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:85e13ad0c508d2d875b0#url:en:2e30ef32b90c"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://udi.no/en/want-to-apply/family-immigration",
+          "path": null,
+          "representation_id": "no:url:85e13ad0c508d2d875b0#url:en:2e30ef32b90c",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:85e13ad0c508d2d875b0",
+          "representation_ids": [
+            "no:url:85e13ad0c508d2d875b0#url:en:2e30ef32b90c"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 37,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-25`",
+            "[UDI family immigration hub](https://www.udi.no/en/want-to-apply/family-immigration/)",
+            "`third_country_and_domestic_family_guidance`",
+            "accepted official external reference; link only",
+            "Parent page distinguishes ordinary permits, EU/EEA family residence cards and registration. Country-based wizard choices affect output; do not treat ordinary Norwegian sponsor permit as the free-movement route.",
+            "[no-25](../documents/references/no-25-udi-family-immigration-hub.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:85e13ad0c508d2d875b0",
+          "representation_ids": [
+            "no:url:85e13ad0c508d2d875b0#url:en:2e30ef32b90c"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/23",
+          "category": "acceptance",
+          "source_identity_id": "no:url:85e13ad0c508d2d875b0",
+          "representation_ids": [
+            "no:url:85e13ad0c508d2d875b0#url:en:2e30ef32b90c"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-26",
+      "title": "UDI difference between family immigration permit and residence card",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://udi.no/en/word-definitions/the-difference-between-a-family-immigration-permit-and-a-residence-card"
+      ],
+      "source_identity_id": "no:url:95794e8f31e96a52cd39",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:95794e8f31e96a52cd39#url:en:f56c74201fd3"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://udi.no/en/word-definitions/the-difference-between-a-family-immigration-permit-and-a-residence-card",
+          "path": null,
+          "representation_id": "no:url:95794e8f31e96a52cd39#url:en:f56c74201fd3",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:95794e8f31e96a52cd39",
+          "representation_ids": [
+            "no:url:95794e8f31e96a52cd39#url:en:f56c74201fd3"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 38,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-26`",
+            "[UDI difference between family immigration permit and residence card](https://www.udi.no/en/word-definitions/the-difference-between-a-family-immigration-permit-and-a-residence-card)",
+            "`route_comparison_guidance`",
+            "accepted official external reference; link only",
+            "UDI says some applicants may choose between routes, with different fees, residence entitlements, and integration-law consequences. Dynamic comparison conditions and volatile economic thresholds need update monitoring.",
+            "[no-26](../documents/references/no-26-udi-difference-between-family-immigration-permit-and-residence-ca.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:95794e8f31e96a52cd39",
+          "representation_ids": [
+            "no:url:95794e8f31e96a52cd39#url:en:f56c74201fd3"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/24",
+          "category": "acceptance",
+          "source_identity_id": "no:url:95794e8f31e96a52cd39",
+          "representation_ids": [
+            "no:url:95794e8f31e96a52cd39#url:en:f56c74201fd3"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-27",
+      "title": "UDI Swiss-person EU/EEA route selector",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://udi.no/en/want-to-apply/residence-under-the-eueeu-regulations?c=che"
+      ],
+      "source_identity_id": "no:url:420ba64bf2966a6c1713",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:420ba64bf2966a6c1713#url:en:7f60e5672195"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://udi.no/en/want-to-apply/residence-under-the-eueeu-regulations?c=che",
+          "path": null,
+          "representation_id": "no:url:420ba64bf2966a6c1713#url:en:7f60e5672195",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:420ba64bf2966a6c1713",
+          "representation_ids": [
+            "no:url:420ba64bf2966a6c1713#url:en:7f60e5672195"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 39,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-27`",
+            "[UDI Swiss-person EU/EEA route selector](https://www.udi.no/en/want-to-apply/residence-under-the-eueeu-regulations/?c=che)",
+            "`swiss_free_movement_guidance`",
+            "accepted official external reference; link only",
+            "UDI explicitly says Switzerland is not EU/EEA but Swiss nationals have the same rights in Norway. Verify the EFTA Convention and Norwegian implementation independently; do not generalize EU/EEA family-card wording to every Swiss family member.",
+            "[no-27](../documents/references/no-27-udi-swiss-person-eu-eea-route-selector.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:420ba64bf2966a6c1713",
+          "representation_ids": [
+            "no:url:420ba64bf2966a6c1713#url:en:7f60e5672195"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/25",
+          "category": "acceptance",
+          "source_identity_id": "no:url:420ba64bf2966a6c1713",
+          "representation_ids": [
+            "no:url:420ba64bf2966a6c1713#url:en:7f60e5672195"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-28",
+      "title": "UDI visitor visa, including travel with or visit to an EU/EEA family member",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://udi.no/en/want-to-apply/visit-and-holiday/visitors-visa-to-norway"
+      ],
+      "source_identity_id": "no:url:91ff409f1ab58662ba26",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:91ff409f1ab58662ba26#url:en:aaf3e1095bf7"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://udi.no/en/want-to-apply/visit-and-holiday/visitors-visa-to-norway",
+          "path": null,
+          "representation_id": "no:url:91ff409f1ab58662ba26#url:en:aaf3e1095bf7",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:91ff409f1ab58662ba26",
+          "representation_ids": [
+            "no:url:91ff409f1ab58662ba26#url:en:aaf3e1095bf7"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 40,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-28`",
+            "[UDI visitor visa, including travel with or visit to an EU/EEA family member](https://www.udi.no/en/want-to-apply/visit-and-holiday/visitors-visa-to-norway/)",
+            "`visa_guidance`",
+            "accepted official external reference; link only",
+            "Identifies fee-free/priority visa situation for certain close family members and a linked checklist. Criteria are narrower than long-term residence; country-specific document submission remains mission-dependent.",
+            "[no-28](../documents/references/no-28-udi-visitor-visa-including-travel-with-or-visit-to-an-eu-eea-fami.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:91ff409f1ab58662ba26",
+          "representation_ids": [
+            "no:url:91ff409f1ab58662ba26#url:en:aaf3e1095bf7"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/26",
+          "category": "acceptance",
+          "source_identity_id": "no:url:91ff409f1ab58662ba26",
+          "representation_ids": [
+            "no:url:91ff409f1ab58662ba26#url:en:aaf3e1095bf7"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-29",
+      "title": "UDI application checklists",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://udi.no/en/checklists"
+      ],
+      "source_identity_id": "no:url:70ca6eca40c349681cc5",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:70ca6eca40c349681cc5#url:en:69635b5a7965"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://udi.no/en/checklists",
+          "path": null,
+          "representation_id": "no:url:70ca6eca40c349681cc5#url:en:69635b5a7965",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:70ca6eca40c349681cc5",
+          "representation_ids": [
+            "no:url:70ca6eca40c349681cc5#url:en:69635b5a7965"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 41,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-29`",
+            "[UDI application checklists](https://www.udi.no/en/checklists/)",
+            "`application_checklist_index`",
+            "accepted official external reference; link only",
+            "Index lists multiple EEA family and returning-Norwegian checklists; personalized checklist follows electronic application. Attachment identity/version and dynamic membership require monitoring.",
+            "[no-29](../documents/references/no-29-udi-application-checklists.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:70ca6eca40c349681cc5",
+          "representation_ids": [
+            "no:url:70ca6eca40c349681cc5#url:en:69635b5a7965"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/27",
+          "category": "acceptance",
+          "source_identity_id": "no:url:70ca6eca40c349681cc5",
+          "representation_ids": [
+            "no:url:70ca6eca40c349681cc5#url:en:69635b5a7965"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-30",
+      "title": "UDI EU/EEA family visa checklist PDF",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://udi.no/globalassets/global/skjemaer/checklist-visa-eu-eea-family-members.pdf"
+      ],
+      "source_identity_id": "no:url:e7b8a9ec9eb31f2d7902",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "pending"
+      ],
+      "representation_ids": [
+        "no:url:e7b8a9ec9eb31f2d7902#url:no:479907b57947"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "no",
+          "edition": "undated",
+          "url": "https://udi.no/globalassets/global/skjemaer/checklist-visa-eu-eea-family-members.pdf",
+          "path": null,
+          "representation_id": "no:url:e7b8a9ec9eb31f2d7902#url:no:479907b57947",
+          "acceptance_status": [
+            "pending"
+          ],
+          "source_identity_id": "no:url:e7b8a9ec9eb31f2d7902",
+          "representation_ids": [
+            "no:url:e7b8a9ec9eb31f2d7902#url:no:479907b57947"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 42,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-30`",
+            "[UDI EU/EEA family visa checklist PDF](https://www.udi.no/globalassets/global/skjemaer/checklist-visa-eu-eea-family-members.pdf)",
+            "`visa_checklist_attachment`",
+            "pending — exact PDF revision unresolved",
+            "Legacy-looking fixed attachment URL; an official visitor-visa page links a checklist, but this exact PDF's latest revision was not confirmed. Do not accept without resolving the live parent link and PDF revision.",
+            "[no-30](../documents/references/no-30-udi-eu-eea-family-visa-checklist-pdf.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:e7b8a9ec9eb31f2d7902",
+          "representation_ids": [
+            "no:url:e7b8a9ec9eb31f2d7902#url:no:479907b57947"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/pending_references/0",
+          "category": "acceptance",
+          "source_identity_id": "no:url:e7b8a9ec9eb31f2d7902",
+          "representation_ids": [
+            "no:url:e7b8a9ec9eb31f2d7902#url:no:479907b57947"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-31",
+      "title": "UDI self-service / application workflow",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://selfservice.udi.no/"
+      ],
+      "source_identity_id": "no:url:f34925e77f3f7bc4d976",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:f34925e77f3f7bc4d976#url:no:c4aa1d2703a2"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "no",
+          "edition": "undated",
+          "url": "https://selfservice.udi.no/",
+          "path": null,
+          "representation_id": "no:url:f34925e77f3f7bc4d976#url:no:c4aa1d2703a2",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:f34925e77f3f7bc4d976",
+          "representation_ids": [
+            "no:url:f34925e77f3f7bc4d976#url:no:c4aa1d2703a2"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 43,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-31`",
+            "[UDI self-service / application workflow](https://selfservice.udi.no/)",
+            "`immigration_application_portal`",
+            "accepted official external reference; link only",
+            "Authentication, personalization and applicant data make this a workflow lead, not a source for harvesting or storing individual case records. Route/forms need public parent-page rediscovery.",
+            "[no-31](../documents/references/no-31-udi-self-service-application-workflow.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:f34925e77f3f7bc4d976",
+          "representation_ids": [
+            "no:url:f34925e77f3f7bc4d976#url:no:c4aa1d2703a2"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/28",
+          "category": "acceptance",
+          "source_identity_id": "no:url:f34925e77f3f7bc4d976",
+          "representation_ids": [
+            "no:url:f34925e77f3f7bc4d976#url:no:c4aa1d2703a2"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-32",
+      "title": "Police residence-card information",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://politiet.no/en/english/residence-permits-and-protection/residence-cards"
+      ],
+      "source_identity_id": "no:url:de90df1b03ab4af97df4",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:de90df1b03ab4af97df4#url:en:5281fa56a10a"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://politiet.no/en/english/residence-permits-and-protection/residence-cards",
+          "path": null,
+          "representation_id": "no:url:de90df1b03ab4af97df4#url:en:5281fa56a10a",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:de90df1b03ab4af97df4",
+          "representation_ids": [
+            "no:url:de90df1b03ab4af97df4#url:en:5281fa56a10a"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 44,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-32`",
+            "[Police residence-card information](https://www.politiet.no/en/english/residence-permits-and-protection/residence-cards)",
+            "`police_residence_card_guidance`",
+            "accepted official external reference; link only",
+            "Describes card issuance, replacement and appointments; operational service updates may differ from UDI legal guidance. Separate EU/EEA registration from residence-card production.",
+            "[no-32](../documents/references/no-32-police-residence-card-information.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:de90df1b03ab4af97df4",
+          "representation_ids": [
+            "no:url:de90df1b03ab4af97df4#url:en:5281fa56a10a"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/29",
+          "category": "acceptance",
+          "source_identity_id": "no:url:de90df1b03ab4af97df4",
+          "representation_ids": [
+            "no:url:de90df1b03ab4af97df4#url:en:5281fa56a10a"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-33",
+      "title": "UDI EEA/Brexit waiting times",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://udi.no/en/waiting-time/residency-according-to-the-eueea-and-brexit-regulations"
+      ],
+      "source_identity_id": "no:url:fe056f8d61191dee360d",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:fe056f8d61191dee360d#url:en:803482120448"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://udi.no/en/waiting-time/residency-according-to-the-eueea-and-brexit-regulations",
+          "path": null,
+          "representation_id": "no:url:fe056f8d61191dee360d#url:en:803482120448",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:fe056f8d61191dee360d",
+          "representation_ids": [
+            "no:url:fe056f8d61191dee360d#url:en:803482120448"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 45,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-33`",
+            "[UDI EEA/Brexit waiting times](https://www.udi.no/en/waiting-time/residency-according-to-the-eueea-and-brexit-regulations/)",
+            "`administrative_wait_time`",
+            "accepted official external reference; link only",
+            "UDI says figures are regularly updated and gives a dated next-update field. Volatile operational statistic; monitor only if desired, not part of a legal rule.",
+            "[no-33](../documents/references/no-33-udi-eea-brexit-waiting-times.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:fe056f8d61191dee360d",
+          "representation_ids": [
+            "no:url:fe056f8d61191dee360d#url:en:803482120448"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/30",
+          "category": "acceptance",
+          "source_identity_id": "no:url:fe056f8d61191dee360d",
+          "representation_ids": [
+            "no:url:fe056f8d61191dee360d#url:en:803482120448"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-34",
+      "title": "UDI appeal guidance, klage på vedtak",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://udi.no/ord-og-begreper/klage-pa-et-vedtak"
+      ],
+      "source_identity_id": "no:url:461b16ee9af81993a4c1",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:461b16ee9af81993a4c1#url:no:164446ae8ad9"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "no",
+          "edition": "undated",
+          "url": "https://udi.no/ord-og-begreper/klage-pa-et-vedtak",
+          "path": null,
+          "representation_id": "no:url:461b16ee9af81993a4c1#url:no:164446ae8ad9",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:461b16ee9af81993a4c1",
+          "representation_ids": [
+            "no:url:461b16ee9af81993a4c1#url:no:164446ae8ad9"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 46,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-34`",
+            "[UDI appeal guidance, klage på vedtak](https://www.udi.no/ord-og-begreper/klage-pa-et-vedtak/)",
+            "`administrative_appeal_guidance`",
+            "accepted official external reference; link only",
+            "Appeal path/deadline is decision-specific and follows UDI/mission reconsideration, then UNE or another designated body depending on legal source. Maintain separately from the general Public Administration Act.",
+            "[no-34](../documents/references/no-34-udi-appeal-guidance-klage-pa-vedtak.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:461b16ee9af81993a4c1",
+          "representation_ids": [
+            "no:url:461b16ee9af81993a4c1#url:no:164446ae8ad9"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/31",
+          "category": "acceptance",
+          "source_identity_id": "no:url:461b16ee9af81993a4c1",
+          "representation_ids": [
+            "no:url:461b16ee9af81993a4c1#url:no:164446ae8ad9"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-35",
+      "title": "UDI access to documents in an individual case",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://udi.no/en/contact-us/people-who-wish-to-request-access-to-information-about-themselves?innsyn=sakenmin"
+      ],
+      "source_identity_id": "no:url:1dbebab6ef847f2d3be1",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:1dbebab6ef847f2d3be1#url:en:d3b3801a2889"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://udi.no/en/contact-us/people-who-wish-to-request-access-to-information-about-themselves?innsyn=sakenmin",
+          "path": null,
+          "representation_id": "no:url:1dbebab6ef847f2d3be1#url:en:d3b3801a2889",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:1dbebab6ef847f2d3be1",
+          "representation_ids": [
+            "no:url:1dbebab6ef847f2d3be1#url:en:d3b3801a2889"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 47,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-35`",
+            "[UDI access to documents in an individual case](https://www.udi.no/en/contact-us/people-who-wish-to-request-access-to-information-about-themselves/?innsyn=sakenmin)",
+            "`party_access_guidance`",
+            "accepted official external reference; link only",
+            "Page routes a party's access request through a contact form. This is individual information; do not automate case requests or retain case contents in the source library.",
+            "[no-35](../documents/references/no-35-udi-access-to-documents-in-an-individual-case.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:1dbebab6ef847f2d3be1",
+          "representation_ids": [
+            "no:url:1dbebab6ef847f2d3be1#url:en:d3b3801a2889"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/32",
+          "category": "acceptance",
+          "source_identity_id": "no:url:1dbebab6ef847f2d3be1",
+          "representation_ids": [
+            "no:url:1dbebab6ef847f2d3be1#url:en:d3b3801a2889"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-36",
+      "title": "UDI request for access to personal data",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://udi.no/en/contact-us/people-who-wish-to-request-access-to-information-about-themselves?innsyn=person"
+      ],
+      "source_identity_id": "no:url:9332e4748d374cc9f86f",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:9332e4748d374cc9f86f#url:en:755a18226aa4"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://udi.no/en/contact-us/people-who-wish-to-request-access-to-information-about-themselves?innsyn=person",
+          "path": null,
+          "representation_id": "no:url:9332e4748d374cc9f86f#url:en:755a18226aa4",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:9332e4748d374cc9f86f",
+          "representation_ids": [
+            "no:url:9332e4748d374cc9f86f#url:en:755a18226aa4"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 48,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-36`",
+            "[UDI request for access to personal data](https://www.udi.no/en/contact-us/people-who-wish-to-request-access-to-information-about-themselves/?innsyn=person)",
+            "`data_subject_access_guidance`",
+            "accepted official external reference; link only",
+            "Describes access to UDB and the immigration registers, with identity verification and a normal response period. Sensitive personal data and forms are explicitly outside collection scope.",
+            "[no-36](../documents/references/no-36-udi-request-for-access-to-personal-data.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:9332e4748d374cc9f86f",
+          "representation_ids": [
+            "no:url:9332e4748d374cc9f86f#url:en:755a18226aa4"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/33",
+          "category": "acceptance",
+          "source_identity_id": "no:url:9332e4748d374cc9f86f",
+          "representation_ids": [
+            "no:url:9332e4748d374cc9f86f#url:en:755a18226aa4"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-37",
+      "title": "UDI privacy declaration",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://udi.no/en/about-the-udi/the-norwegian-directorate-of-immigrations-udi-privacy-declaration"
+      ],
+      "source_identity_id": "no:url:bd945b9d235388d40f02",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:bd945b9d235388d40f02#url:en:4c64f7d10132"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://udi.no/en/about-the-udi/the-norwegian-directorate-of-immigrations-udi-privacy-declaration",
+          "path": null,
+          "representation_id": "no:url:bd945b9d235388d40f02#url:en:4c64f7d10132",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:bd945b9d235388d40f02",
+          "representation_ids": [
+            "no:url:bd945b9d235388d40f02#url:en:4c64f7d10132"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 49,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-37`",
+            "[UDI privacy declaration](https://www.udi.no/en/about-the-udi/the-norwegian-directorate-of-immigrations-udi-privacy-declaration/)",
+            "`immigration_privacy_notice`",
+            "accepted official external reference; link only",
+            "Explains UDB and access/processing roles. Page text and controller details can change; monitor the public notice only, never individual applicant records.",
+            "[no-37](../documents/references/no-37-udi-privacy-declaration.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:bd945b9d235388d40f02",
+          "representation_ids": [
+            "no:url:bd945b9d235388d40f02#url:en:4c64f7d10132"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/34",
+          "category": "acceptance",
+          "source_identity_id": "no:url:bd945b9d235388d40f02",
+          "representation_ids": [
+            "no:url:bd945b9d235388d40f02#url:en:4c64f7d10132"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-38",
+      "title": "UNE EEA cases",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://une.no/en/case-types-and-countries/eea-cases"
+      ],
+      "source_identity_id": "no:url:2d68a053fb150fafd082",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:2d68a053fb150fafd082#url:en:ba28799b27cf"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://une.no/en/case-types-and-countries/eea-cases",
+          "path": null,
+          "representation_id": "no:url:2d68a053fb150fafd082#url:en:ba28799b27cf",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:2d68a053fb150fafd082",
+          "representation_ids": [
+            "no:url:2d68a053fb150fafd082#url:en:ba28799b27cf"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 50,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-38`",
+            "[UNE EEA cases](https://www.une.no/en/case-types-and-countries/eea-cases/)",
+            "`immigration_appeal_body_guidance`",
+            "accepted official external reference; link only",
+            "Defines EEA case scope, review types and applicable Immigration Act chapter 13; page says last updated 1 November 2024. UNE's phrasing “EU or EFTA state” should not be taken to mean Switzerland is in the EEA Agreement.",
+            "[no-38](../documents/references/no-38-une-eea-cases.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:2d68a053fb150fafd082",
+          "representation_ids": [
+            "no:url:2d68a053fb150fafd082#url:en:ba28799b27cf"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/35",
+          "category": "acceptance",
+          "source_identity_id": "no:url:2d68a053fb150fafd082",
+          "representation_ids": [
+            "no:url:2d68a053fb150fafd082#url:en:ba28799b27cf"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-39",
+      "title": "UNE practice base and source collection",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://une.no/kildesamling"
+      ],
+      "source_identity_id": "no:url:68aedfb3e18946e96428",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:68aedfb3e18946e96428#url:no:1d342595d466"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "no",
+          "edition": "undated",
+          "url": "https://une.no/kildesamling",
+          "path": null,
+          "representation_id": "no:url:68aedfb3e18946e96428#url:no:1d342595d466",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:68aedfb3e18946e96428",
+          "representation_ids": [
+            "no:url:68aedfb3e18946e96428#url:no:1d342595d466"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 51,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-39`",
+            "[UNE practice base and source collection](https://www.une.no/kildesamling/)",
+            "`appeal_decision_practice_search`",
+            "accepted official external reference; link only",
+            "UNE describes a searchable base of summaries of a representative selection, not all decisions; records are anonymized and selected. Coverage, search paging and update signal are incomplete for an exhaustive case-law monitor.",
+            "[no-39](../documents/references/no-39-une-practice-base-and-source-collection.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:68aedfb3e18946e96428",
+          "representation_ids": [
+            "no:url:68aedfb3e18946e96428#url:no:1d342595d466"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/36",
+          "category": "acceptance",
+          "source_identity_id": "no:url:68aedfb3e18946e96428",
+          "representation_ids": [
+            "no:url:68aedfb3e18946e96428#url:no:1d342595d466"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-40",
+      "title": "UNE Grand Board decisions",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://une.no/en/sources/grand-board-decisions"
+      ],
+      "source_identity_id": "no:url:41d9043deaed21288c7d",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:41d9043deaed21288c7d#url:en:868719a93308"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://une.no/en/sources/grand-board-decisions",
+          "path": null,
+          "representation_id": "no:url:41d9043deaed21288c7d#url:en:868719a93308",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:41d9043deaed21288c7d",
+          "representation_ids": [
+            "no:url:41d9043deaed21288c7d#url:en:868719a93308"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 52,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-40`",
+            "[UNE Grand Board decisions](https://www.une.no/en/sources/grand-board-decisions/)",
+            "`appeal_precedent_decisions`",
+            "accepted official external reference; link only",
+            "UNE says Grand Board decisions have precedent effect for UDI/UNE until changed through law or practice. Page and linked PDFs require per-item identity/version checks.",
+            "[no-40](../documents/references/no-40-une-grand-board-decisions.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:41d9043deaed21288c7d",
+          "representation_ids": [
+            "no:url:41d9043deaed21288c7d#url:en:868719a93308"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/37",
+          "category": "acceptance",
+          "source_identity_id": "no:url:41d9043deaed21288c7d",
+          "representation_ids": [
+            "no:url:41d9043deaed21288c7d#url:en:868719a93308"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-41",
+      "title": "UNE processing times",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://une.no/en/case-processing-times"
+      ],
+      "source_identity_id": "no:url:265f4aabd0fb61c2afd5",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:265f4aabd0fb61c2afd5#url:en:acb09af4785d"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://une.no/en/case-processing-times",
+          "path": null,
+          "representation_id": "no:url:265f4aabd0fb61c2afd5#url:en:acb09af4785d",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:265f4aabd0fb61c2afd5",
+          "representation_ids": [
+            "no:url:265f4aabd0fb61c2afd5#url:en:acb09af4785d"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 53,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-41`",
+            "[UNE processing times](https://www.une.no/en/case-processing-times/)",
+            "`administrative_appeal_wait_time`",
+            "accepted official external reference; link only",
+            "Dated estimates are updated regularly. A volatile operational source with no legal-content role; treat as a separate optional monitoring class.",
+            "[no-41](../documents/references/no-41-une-processing-times.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:265f4aabd0fb61c2afd5",
+          "representation_ids": [
+            "no:url:265f4aabd0fb61c2afd5#url:en:acb09af4785d"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/38",
+          "category": "acceptance",
+          "source_identity_id": "no:url:265f4aabd0fb61c2afd5",
+          "representation_ids": [
+            "no:url:265f4aabd0fb61c2afd5#url:en:acb09af4785d"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-42",
+      "title": "Sivilombudet immigration statements archive",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://sivilombudet.no/uttalelser?case_type=utlendingssaker"
+      ],
+      "source_identity_id": "no:url:7bfaa61fb3e21793820a",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:7bfaa61fb3e21793820a#url:no:6ad1421a4d17"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "no",
+          "edition": "undated",
+          "url": "https://sivilombudet.no/uttalelser?case_type=utlendingssaker",
+          "path": null,
+          "representation_id": "no:url:7bfaa61fb3e21793820a#url:no:6ad1421a4d17",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:7bfaa61fb3e21793820a",
+          "representation_ids": [
+            "no:url:7bfaa61fb3e21793820a#url:no:6ad1421a4d17"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 54,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-42`",
+            "[Sivilombudet immigration statements archive](https://www.sivilombudet.no/uttalelser/?case_type=utlendingssaker)",
+            "`ombudsman_case_archive`",
+            "accepted official external reference; link only",
+            "Search results include recent immigration matters, including family-immigration delay and EEA expulsion. Filtered archive is a dynamic search interface; coverage/pagination and a complete feed remain unverified.",
+            "[no-42](../documents/references/no-42-sivilombudet-immigration-statements-archive.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:7bfaa61fb3e21793820a",
+          "representation_ids": [
+            "no:url:7bfaa61fb3e21793820a#url:no:6ad1421a4d17"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/39",
+          "category": "acceptance",
+          "source_identity_id": "no:url:7bfaa61fb3e21793820a",
+          "representation_ids": [
+            "no:url:7bfaa61fb3e21793820a#url:no:6ad1421a4d17"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-43",
+      "title": "Sivilombudet complaint route",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://sivilombudet.no/en/about-us/contact"
+      ],
+      "source_identity_id": "no:url:e72bc38e0b9468617ebe",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:e72bc38e0b9468617ebe#url:en:47cddebeb875"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://sivilombudet.no/en/about-us/contact",
+          "path": null,
+          "representation_id": "no:url:e72bc38e0b9468617ebe#url:en:47cddebeb875",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:e72bc38e0b9468617ebe",
+          "representation_ids": [
+            "no:url:e72bc38e0b9468617ebe#url:en:47cddebeb875"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 55,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-43`",
+            "[Sivilombudet complaint route](https://www.sivilombudet.no/en/about-us/contact/)",
+            "`ombudsman_complaint_guidance`",
+            "accepted official external reference; link only",
+            "Complaint workflow uses a personal login or form and ordinarily follows the authority's own complaint process. Keep it distinct from immigration appeal remedies and exclude submissions/personal files.",
+            "[no-43](../documents/references/no-43-sivilombudet-complaint-route.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:e72bc38e0b9468617ebe",
+          "representation_ids": [
+            "no:url:e72bc38e0b9468617ebe#url:en:47cddebeb875"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/40",
+          "category": "acceptance",
+          "source_identity_id": "no:url:e72bc38e0b9468617ebe",
+          "representation_ids": [
+            "no:url:e72bc38e0b9468617ebe#url:en:47cddebeb875"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-44",
+      "title": "Supreme Court family immigration ruling HR-2022-2329-A",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://domstol.no/en/supremecourt/rulings/rulings-2022/supreme-court-civil-cases/HR-2022-2329-A"
+      ],
+      "source_identity_id": "no:url:31aa5599cf0999255153",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:31aa5599cf0999255153#url:en:a4b83b24fbc5"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://domstol.no/en/supremecourt/rulings/rulings-2022/supreme-court-civil-cases/HR-2022-2329-A",
+          "path": null,
+          "representation_id": "no:url:31aa5599cf0999255153#url:en:a4b83b24fbc5",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:31aa5599cf0999255153",
+          "representation_ids": [
+            "no:url:31aa5599cf0999255153#url:en:a4b83b24fbc5"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 56,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-44`",
+            "[Supreme Court family immigration ruling HR-2022-2329-A](https://www.domstol.no/en/supremecourt/rulings/rulings-2022/supreme-court-civil-cases/HR-2022-2329-A/)",
+            "`immigration_supreme_court_decision`",
+            "accepted official external reference; link only",
+            "Illustrates judicial review in family immigration; it concerns a domestic family-establishment age requirement, not the EEA route. One sample is not a complete case-law source.",
+            "[no-44](../documents/references/no-44-supreme-court-family-immigration-ruling-hr-2022-2329-a.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:31aa5599cf0999255153",
+          "representation_ids": [
+            "no:url:31aa5599cf0999255153#url:en:a4b83b24fbc5"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/41",
+          "category": "acceptance",
+          "source_identity_id": "no:url:31aa5599cf0999255153",
+          "representation_ids": [
+            "no:url:31aa5599cf0999255153#url:en:a4b83b24fbc5"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-45",
+      "title": "Supreme Court rulings index",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://domstol.no/en/supremecourt/rulings"
+      ],
+      "source_identity_id": "no:url:b372b68205f1f93c31b1",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:b372b68205f1f93c31b1#url:en:ee54a7550c0c"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://domstol.no/en/supremecourt/rulings",
+          "path": null,
+          "representation_id": "no:url:b372b68205f1f93c31b1#url:en:ee54a7550c0c",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:b372b68205f1f93c31b1",
+          "representation_ids": [
+            "no:url:b372b68205f1f93c31b1#url:en:ee54a7550c0c"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 57,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-45`",
+            "[Supreme Court rulings index](https://www.domstol.no/en/supremecourt/rulings/)",
+            "`official_case_law_index`",
+            "accepted official external reference; link only",
+            "Published Supreme Court rulings are searchable by date/ID; lower courts and unpublished decisions need separate scope and source discovery. No feed, pagination, or completeness claim verified.",
+            "[no-45](../documents/references/no-45-supreme-court-rulings-index.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:b372b68205f1f93c31b1",
+          "representation_ids": [
+            "no:url:b372b68205f1f93c31b1#url:en:ee54a7550c0c"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/42",
+          "category": "acceptance",
+          "source_identity_id": "no:url:b372b68205f1f93c31b1",
+          "representation_ids": [
+            "no:url:b372b68205f1f93c31b1#url:en:ee54a7550c0c"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-46",
+      "title": "UDI public journal in eInnsyn",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://udi.no/presse/innsyn-i-saker/innsyn-i-udis-postjournal"
+      ],
+      "source_identity_id": "no:url:882e8ca82745a7973018",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:882e8ca82745a7973018#url:no:8f7789aa3133"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "no",
+          "edition": "undated",
+          "url": "https://udi.no/presse/innsyn-i-saker/innsyn-i-udis-postjournal",
+          "path": null,
+          "representation_id": "no:url:882e8ca82745a7973018#url:no:8f7789aa3133",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:882e8ca82745a7973018",
+          "representation_ids": [
+            "no:url:882e8ca82745a7973018#url:no:8f7789aa3133"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 58,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-46`",
+            "[UDI public journal in eInnsyn](https://www.udi.no/presse/innsyn-i-saker/innsyn-i-udis-postjournal/)",
+            "`agency_public_record_journal`",
+            "accepted official external reference; link only",
+            "UDI says it uses eInnsyn and joined from 8 April 2011; immigration-case confidentiality frequently removes or withholds document content. Searchability and bulk access were not checked.",
+            "[no-46](../documents/references/no-46-udi-public-journal-in-einnsyn.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:882e8ca82745a7973018",
+          "representation_ids": [
+            "no:url:882e8ca82745a7973018#url:no:8f7789aa3133"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/43",
+          "category": "acceptance",
+          "source_identity_id": "no:url:882e8ca82745a7973018",
+          "representation_ids": [
+            "no:url:882e8ca82745a7973018#url:no:8f7789aa3133"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-47",
+      "title": "eInnsyn public journal service",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://einnsyn.no/"
+      ],
+      "source_identity_id": "no:url:f9be900ca9fd6206280f",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "discovery"
+      ],
+      "representation_ids": [
+        "no:url:f9be900ca9fd6206280f#url:no:609c844a7a4e"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "no",
+          "edition": "undated",
+          "url": "https://einnsyn.no/",
+          "path": null,
+          "representation_id": "no:url:f9be900ca9fd6206280f#url:no:609c844a7a4e",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:f9be900ca9fd6206280f",
+          "representation_ids": [
+            "no:url:f9be900ca9fd6206280f#url:no:609c844a7a4e"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 59,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-47`",
+            "[eInnsyn public journal service](https://www.einnsyn.no/)",
+            "`government_record_discovery_service`",
+            "accepted official external reference; link only",
+            "Shared journal search for public bodies. It is not a consolidated legal source; journal coverage, retention/search behavior, API availability and confidentiality filters require separate validation.",
+            "[no-47](../documents/references/no-47-einnsyn-public-journal-service.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:f9be900ca9fd6206280f",
+          "representation_ids": [
+            "no:url:f9be900ca9fd6206280f#url:no:609c844a7a4e"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/44",
+          "category": "acceptance",
+          "source_identity_id": "no:url:f9be900ca9fd6206280f",
+          "representation_ids": [
+            "no:url:f9be900ca9fd6206280f#url:no:609c844a7a4e"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-48",
+      "title": "Legal Aid Act, LOV-1980-06-13-35",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://lovdata.no/dokument/NL/lov/1980-06-13-35"
+      ],
+      "source_identity_id": "no:url:a0c5d355f1a9e3478a90",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:a0c5d355f1a9e3478a90#url:no:316a05690f13"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "no",
+          "edition": "undated",
+          "url": "https://lovdata.no/dokument/NL/lov/1980-06-13-35",
+          "path": null,
+          "representation_id": "no:url:a0c5d355f1a9e3478a90#url:no:316a05690f13",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:a0c5d355f1a9e3478a90",
+          "representation_ids": [
+            "no:url:a0c5d355f1a9e3478a90#url:no:316a05690f13"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 60,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-48`",
+            "[Legal Aid Act, LOV-1980-06-13-35](https://lovdata.no/dokument/NL/lov/1980-06-13-35)",
+            "`legal_aid_legislation`",
+            "accepted official external reference; link only",
+            "Immigration Act §92 separately lists some no-means-test counsel entitlements, but this is not a general guarantee of funded help for every residence-card appeal. Reforms effective 15 October 2025 make stale English summaries especially risky.",
+            "[no-48](../documents/references/no-48-legal-aid-act-lov-1980-06-13-35.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:a0c5d355f1a9e3478a90",
+          "representation_ids": [
+            "no:url:a0c5d355f1a9e3478a90#url:no:316a05690f13"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/45",
+          "category": "acceptance",
+          "source_identity_id": "no:url:a0c5d355f1a9e3478a90",
+          "representation_ids": [
+            "no:url:a0c5d355f1a9e3478a90#url:no:316a05690f13"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-49",
+      "title": "County Governor legal aid guidance (current Vestfold and Telemark page)",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://statsforvalteren.no/nb/vestfold-og-telemark/privatperson/fri-rettshjelp"
+      ],
+      "source_identity_id": "no:url:67f698be5fcd52927d0b",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:67f698be5fcd52927d0b#url:en:47fb823f2990"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://statsforvalteren.no/nb/vestfold-og-telemark/privatperson/fri-rettshjelp",
+          "path": null,
+          "representation_id": "no:url:67f698be5fcd52927d0b#url:en:47fb823f2990",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:67f698be5fcd52927d0b",
+          "representation_ids": [
+            "no:url:67f698be5fcd52927d0b#url:en:47fb823f2990"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 61,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-49`",
+            "[County Governor legal aid guidance (current Vestfold and Telemark page)](https://www.statsforvalteren.no/nb/vestfold-og-telemark/privatperson/fri-rettshjelp/)",
+            "`legal_aid_guidance`",
+            "accepted official external reference; link only",
+            "Regional process guidance only. Its visible update stamp omits the year; verify eligibility against current national law and Sivilrettsforvaltningen guidance.",
+            "[no-49](../documents/references/no-49-county-governor-legal-aid-guidance-current-vestfold-and-telemark-.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:67f698be5fcd52927d0b",
+          "representation_ids": [
+            "no:url:67f698be5fcd52927d0b#url:en:47fb823f2990"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/46",
+          "category": "acceptance",
+          "source_identity_id": "no:url:67f698be5fcd52927d0b",
+          "representation_ids": [
+            "no:url:67f698be5fcd52927d0b#url:en:47fb823f2990"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-50",
+      "title": "County Governor apostille service (current Vestfold and Telemark page)",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://statsforvalteren.no/nb/vestfold-og-telemark/privatperson/apostille"
+      ],
+      "source_identity_id": "no:url:0841c7d32f18e98e8137",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:0841c7d32f18e98e8137#url:no:02237083a7be"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "no",
+          "edition": "undated",
+          "url": "https://statsforvalteren.no/nb/vestfold-og-telemark/privatperson/apostille",
+          "path": null,
+          "representation_id": "no:url:0841c7d32f18e98e8137#url:no:02237083a7be",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:0841c7d32f18e98e8137",
+          "representation_ids": [
+            "no:url:0841c7d32f18e98e8137#url:no:02237083a7be"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 62,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-50`",
+            "[County Governor apostille service (current Vestfold and Telemark page)](https://www.statsforvalteren.no/nb/vestfold-og-telemark/privatperson/apostille/)",
+            "`civil_status_document_authentication`",
+            "accepted official external reference; link only",
+            "Regional service process only; confirm destination-specific legalisation requirements and do not generalize local opening hours nationwide.",
+            "[no-50](../documents/references/no-50-county-governor-apostille-service-current-vestfold-and-telemark-p.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:0841c7d32f18e98e8137",
+          "representation_ids": [
+            "no:url:0841c7d32f18e98e8137#url:no:02237083a7be"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/47",
+          "category": "acceptance",
+          "source_identity_id": "no:url:0841c7d32f18e98e8137",
+          "representation_ids": [
+            "no:url:0841c7d32f18e98e8137#url:no:02237083a7be"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-51",
+      "title": "Norway.no residence permit and foreign-service routing",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://norway.no/en/central-content/en/service-info/visitors-visa-res-permit/res-permit"
+      ],
+      "source_identity_id": "no:url:47d88fbb270816842bf0",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:47d88fbb270816842bf0#url:en:202a72a60429"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://norway.no/en/central-content/en/service-info/visitors-visa-res-permit/res-permit",
+          "path": null,
+          "representation_id": "no:url:47d88fbb270816842bf0#url:en:202a72a60429",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:47d88fbb270816842bf0",
+          "representation_ids": [
+            "no:url:47d88fbb270816842bf0#url:en:202a72a60429"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 63,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-51`",
+            "[Norway.no residence permit and foreign-service routing](https://www.norway.no/en/central-content/en/service-info/visitors-visa-res-permit/res-permit/)",
+            "`foreign_service_mission_guidance`",
+            "accepted official external reference; link only",
+            "General page routes to UDI and checklists; individual missions publish country-specific appointment, representation and document steps. Discover from the mission's current parent page, not a copied fixed PDF URL.",
+            "[no-51](../documents/references/no-51-norway-no-residence-permit-and-foreign-service-routing.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:47d88fbb270816842bf0",
+          "representation_ids": [
+            "no:url:47d88fbb270816842bf0#url:en:202a72a60429"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/48",
+          "category": "acceptance",
+          "source_identity_id": "no:url:47d88fbb270816842bf0",
+          "representation_ids": [
+            "no:url:47d88fbb270816842bf0#url:en:202a72a60429"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-52",
+      "title": "Norwegian Data Protection Authority",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://datatilsynet.no/"
+      ],
+      "source_identity_id": "no:url:fc62dd0c277e4792fa41",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:fc62dd0c277e4792fa41#url:no:c53c748df6f8"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "no",
+          "edition": "undated",
+          "url": "https://datatilsynet.no/",
+          "path": null,
+          "representation_id": "no:url:fc62dd0c277e4792fa41#url:no:c53c748df6f8",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:fc62dd0c277e4792fa41",
+          "representation_ids": [
+            "no:url:fc62dd0c277e4792fa41#url:no:c53c748df6f8"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 64,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-52`",
+            "[Norwegian Data Protection Authority](https://www.datatilsynet.no/)",
+            "`data_protection_oversight`",
+            "accepted official external reference; link only",
+            "Oversight source for complaints about personal-data processing, with separate special rules for SIS/VIS/police records. Confirm mandate and process for UDI/UDB before treating as the direct remedy.",
+            "[no-52](../documents/references/no-52-norwegian-data-protection-authority.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:fc62dd0c277e4792fa41",
+          "representation_ids": [
+            "no:url:fc62dd0c277e4792fa41#url:no:c53c748df6f8"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/49",
+          "category": "acceptance",
+          "source_identity_id": "no:url:fc62dd0c277e4792fa41",
+          "representation_ids": [
+            "no:url:fc62dd0c277e4792fa41#url:no:c53c748df6f8"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-53",
+      "title": "New Public Administration Act, LOV-2025-06-20-81",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://lovdata.no/dokument/NL/lov/2025-06-20-81"
+      ],
+      "source_identity_id": "no:url:f325aa184568318b2ff1",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "no:url:f325aa184568318b2ff1#url:no:cb43b247b20d"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "no",
+          "edition": "undated",
+          "url": "https://lovdata.no/dokument/NL/lov/2025-06-20-81",
+          "path": null,
+          "representation_id": "no:url:f325aa184568318b2ff1#url:no:cb43b247b20d",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:f325aa184568318b2ff1",
+          "representation_ids": [
+            "no:url:f325aa184568318b2ff1#url:no:cb43b247b20d"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 65,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-53`",
+            "[New Public Administration Act, LOV-2025-06-20-81](https://lovdata.no/dokument/NL/lov/2025-06-20-81)",
+            "`administrative_procedure_legislation_future_effective`",
+            "accepted official external reference; link only",
+            "Replacement for the 1967 Public Administration Act; publisher metadata says commencement is set by the King, so do not treat as operative before commencement.",
+            "[no-53](../documents/references/no-53-new-public-administration-act-lov-2025-06-20-81.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:f325aa184568318b2ff1",
+          "representation_ids": [
+            "no:url:f325aa184568318b2ff1#url:no:cb43b247b20d"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/50",
+          "category": "acceptance",
+          "source_identity_id": "no:url:f325aa184568318b2ff1",
+          "representation_ids": [
+            "no:url:f325aa184568318b2ff1#url:no:cb43b247b20d"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "no-54",
+      "title": "Current EØS Worker Mobility Act, LOV-2012-12-14-81",
+      "source_type": "unspecified",
+      "official_urls": [
+        "https://lovdata.no/lov/2012-12-14-81"
+      ],
+      "source_identity_id": "no:url:66a571558ab053f158bd",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "candidate"
+      ],
+      "representation_ids": [
+        "no:url:66a571558ab053f158bd#url:nn:7b64875d5e1f"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "nn",
+          "edition": "undated",
+          "url": "https://lovdata.no/lov/2012-12-14-81",
+          "path": null,
+          "representation_id": "no:url:66a571558ab053f158bd#url:nn:7b64875d5e1f",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ],
+          "source_identity_id": "no:url:66a571558ab053f158bd",
+          "representation_ids": [
+            "no:url:66a571558ab053f158bd#url:nn:7b64875d5e1f"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/source-list.md",
+          "line": 66,
+          "table_headers": [
+            "Source ID",
+            "Official source",
+            "Class",
+            "Reference disposition",
+            "Scope or remaining limit",
+            "Final document"
+          ],
+          "cells": [
+            "`no-54`",
+            "[Current EØS Worker Mobility Act, LOV-2012-12-14-81](https://lovdata.no/lov/2012-12-14-81)",
+            "`eea_worker_mobility_legislation`",
+            "accepted official external reference; link only",
+            "Current EØS worker-mobility implementing statute. The 1992 predecessor is repealed; preserve this record’s Nynorsk text and EEA adaptations.",
+            "[no-54](../documents/references/no-54-current-e-s-worker-mobility-act-lov-2012-12-14-81.md)"
+          ],
+          "category": "catalogue",
+          "source_identity_id": "no:url:66a571558ab053f158bd",
+          "representation_ids": [
+            "no:url:66a571558ab053f158bd#url:nn:7b64875d5e1f"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/51",
+          "category": "acceptance",
+          "source_identity_id": "no:url:66a571558ab053f158bd",
+          "representation_ids": [
+            "no:url:66a571558ab053f158bd#url:nn:7b64875d5e1f"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    }
+  ],
+  "source_identity_inventory_schema_version": 1,
+  "source_identity_inventory_file": "references/source-identity-inventory.json",
+  "identity_entry_pointer": "references/candidate-manifest.json#/entries",
+  "identity_inventory_generated_manifest": true
+}

@@ -2,9 +2,9 @@
   "schema_version": "1.0.0",
   "jurisdiction": "LI",
   "as_of": "2026-10-29",
-  "accepted_source_count": 21,
+  "accepted_source_count": 22,
   "accepted_local_copy_count": 11,
-  "accepted_external_reference_count": 21,
+  "accepted_external_reference_count": 22,
   "accepted_topic_count": 0,
   "country_review_complete": false,
   "policy": "A reviewed official source may be accepted within its publisher, identity, language, displayed version, scope, and stated limitations. The current Lilex consolidation is an informational working text, not the legally authentic publication. Local-copy acceptance is separate from topic coverage, legal equivalence, and country completion. Reuse acceptance for local laws, regulations, treaties and other official enactment text is limited to Liechtenstein URG Article 5(1)(a) and (2); it does not cover publisher site design, database-level or systematic reuse, or unrelated content.",
@@ -1151,6 +1151,42 @@
       "maintained_source_note_path": "documents/guidance/li-30-visa-guidance-and-representation.md",
       "maintained_source_note_checked_on": "2026-10-29",
       "maintained_source_note_status": "accepted_independent_source_reference_note_not_verbatim"
+    },
+    "li-41": {
+      "status": "accepted_with_narrow_external_scope",
+      "publisher": "Government Legal Services (Rechtsdienst der Regierung), Liechtenstein",
+      "url": "https://www.gesetze.li/konso/2020465000",
+      "checked_on": "2026-10-29",
+      "language": "German",
+      "version_or_scope": "LGBl 2020.465, adopted 15 December 2020 and published 18 December 2020. Official Lilex record identifies LR 170.511; the 2026 systematic register lists LGBl 2020.465. Checked 2026-10-29.",
+      "acceptance_scope": "Official external reference for the EWR-Register Regulation, within its source identity and index/publication function. It is a dependency for locating Liechtenstein-promulgated EEA measures, not evidence that any particular EEA act is operative.",
+      "reviewed_content": "Official Lilex identifies title, LGBl 2020.465 and LR 170.511; the 2026 systematic register lists the same regulation. The official EEA register page cites this instrument as its legal basis.",
+      "limitations": [
+        "Official Lilex consolidations are informational; the signed State Law Gazette is legally authentic.",
+        "Link-only source record; no statutory text copy, topic adequacy, or country completeness is accepted.",
+        "The EWR-Register is an index and does not establish each listed act's legal force or individual applicability.",
+        "Legalize-li is a third-party candidate-snapshot route; the official Lilex record remains primary."
+      ],
+      "evidence": {
+        "official_source_url": "https://www.gesetze.li/konso/2020465000",
+        "reviewed_on": "2026-10-29",
+        "publisher": "Government Legal Services (Rechtsdienst der Regierung), Liechtenstein",
+        "verified_content": "Title, LGBl number, LR number, relation to the official EWR-Register, and distinct index role. No provision-by-provision legal interpretation was made.",
+        "version": "Record identifies the 15 December 2020 regulation and LGBl 2020.465; official 2026 systematic-register entry lists it.",
+        "retrieval_status": "official_link_reviewed; no local text copied"
+      },
+      "local_copy_accepted": false,
+      "accepted_topics": [],
+      "decision": "accepted_with_narrow_external_scope",
+      "legalize_candidate_snapshot": {
+        "repository": "legalize-dev/legalize-li",
+        "revision": "1b19742b74b852c50b50bde418b8045db774b2ba",
+        "path": "li/LGBl-2020-465.md",
+        "status": "candidate_snapshot_method_only",
+        "metadata_last_updated": "2021-02-01",
+        "source": "Lilex official record",
+        "attribution_required": true
+      }
     }
   },
   "candidate_inventory_count": 40,
@@ -1165,5 +1201,201 @@
       "archived_candidate_path": "candidates/public-data/LI/liechtenstein/candidates/li-03.md",
       "archived_candidate_sha256": "961a3183ed0b2137723766bbd74eb1a0ef3fb5fbd2d85508f1466f7a7f1da96f"
     }
-  }
+  },
+  "legalize_crosswalk": {
+    "reviewed_on": "2026-10-29",
+    "repository": "https://github.com/legalize-dev/legalize-li",
+    "revision": "1b19742b74b852c50b50bde418b8045db774b2ba",
+    "files": [
+      {
+        "source_id": "li-41",
+        "path": "li/LGBl-2020-465.md",
+        "official_source": "https://www.gesetze.li/konso/2020465000",
+        "status": "identity_crosswalk_confirmed; not accepted as retained text"
+      }
+    ],
+    "method_limit": "Use Legalize only as an individually identified candidate snapshot. Compare its complete body to the exact Lilex version before any local copy is accepted. Attribute the official Lilex source and Legalize repository/revision. MIT applies to code, not the statutory text."
+  },
+  "identity_links": {
+    "li-01": {
+      "source_identity_id": "li:url:941cac1bbd7d36dcb9e9",
+      "representation_ids": [
+        "li:url:941cac1bbd7d36dcb9e9#url:de:1b6730fcc08e",
+        "li:url:941cac1bbd7d36dcb9e9#url:de:f560826fb04c"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "li-04": {
+      "source_identity_id": "li:url:d4725f5308e84afec2be",
+      "representation_ids": [
+        "li:url:d4725f5308e84afec2be#url:de:40107662b9c5",
+        "li:url:d4725f5308e84afec2be#url:de:e9f01a2f99d6",
+        "li:url:d4725f5308e84afec2be#url:en:23050ffd93ff",
+        "li:url:d4725f5308e84afec2be#url:en:fd426ea6f5e5"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "li-05": {
+      "source_identity_id": "li:url:9267181e123cf8cc0c86",
+      "representation_ids": [
+        "li:url:9267181e123cf8cc0c86#local:unspecified:9c28d71096df",
+        "li:url:9267181e123cf8cc0c86#url:en:efcbc6127f65"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "li-06": {
+      "source_identity_id": "li:url:3c63ac49067d45b3ca2e",
+      "representation_ids": [
+        "li:url:3c63ac49067d45b3ca2e#local:unspecified:dff4a1675f35",
+        "li:url:3c63ac49067d45b3ca2e#url:de:1ff6925065bc"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "li-07": {
+      "source_identity_id": "li:url:cdafa8be8b148d0a1e98",
+      "representation_ids": [
+        "li:url:cdafa8be8b148d0a1e98#local:unspecified:a8546570b340",
+        "li:url:cdafa8be8b148d0a1e98#url:de:57a6b64bf7f7"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "li-08": {
+      "source_identity_id": "li:url:4fb8704368cb86580291",
+      "representation_ids": [
+        "li:url:4fb8704368cb86580291#local:unspecified:8cb43e8abaab",
+        "li:url:4fb8704368cb86580291#url:de:fae18f20d1f6"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "li-09": {
+      "source_identity_id": "li:url:661576db2453109bba0f",
+      "representation_ids": [
+        "li:url:661576db2453109bba0f#local:unspecified:a859adfceceb",
+        "li:url:661576db2453109bba0f#url:de:809c4211296c"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "li-10": {
+      "source_identity_id": "li:url:353c4dbf8029359f5e34",
+      "representation_ids": [
+        "li:url:353c4dbf8029359f5e34#local:unspecified:f90a9ce5815e",
+        "li:url:353c4dbf8029359f5e34#url:de:f4f5f397ff76"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "li-11": {
+      "source_identity_id": "li:url:90698eabc7aa3ae471db",
+      "representation_ids": [
+        "li:url:90698eabc7aa3ae471db#local:unspecified:8eda87ed3a85",
+        "li:url:90698eabc7aa3ae471db#url:de:d7a6f8be9653"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "li-12": {
+      "source_identity_id": "li:url:aed48340875290b27da1",
+      "representation_ids": [
+        "li:url:aed48340875290b27da1#url:de:da0e88188fc7",
+        "li:url:aed48340875290b27da1#url:de:f822b904d68a"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "li-13": {
+      "source_identity_id": "li:url:f09799946115c9b249be",
+      "representation_ids": [
+        "li:url:f09799946115c9b249be#local:unspecified:eac338e28ce1",
+        "li:url:f09799946115c9b249be#url:en:cca4b5ac5770"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "li-14": {
+      "source_identity_id": "li:url:3aa1a3b33e17055bcb00",
+      "representation_ids": [
+        "li:url:3aa1a3b33e17055bcb00#local:unspecified:4d2f3df55eb4",
+        "li:url:3aa1a3b33e17055bcb00#url:de:0e5a9bede005"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "li-15": {
+      "source_identity_id": "li:url:471f591443b02df1f6d7",
+      "representation_ids": [
+        "li:url:471f591443b02df1f6d7#local:unspecified:037074b12898",
+        "li:url:471f591443b02df1f6d7#url:de:97dd3a63493e"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "li-16": {
+      "source_identity_id": "li:url:64ab8873b629b94a10cf",
+      "representation_ids": [
+        "li:url:64ab8873b629b94a10cf#local:unspecified:ab84aeedf05c",
+        "li:url:64ab8873b629b94a10cf#url:de:a03d339ff6d9"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "li-17": {
+      "source_identity_id": "li:url:7730ced76112dc359fca",
+      "representation_ids": [
+        "li:url:7730ced76112dc359fca#url:de:3d2370da07fd",
+        "li:url:7730ced76112dc359fca#url:de:cf033894edee"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "li-27": {
+      "source_identity_id": "li:url:fbe29e057e1fa2c75bc8",
+      "representation_ids": [
+        "li:url:fbe29e057e1fa2c75bc8#url:de:137143bec6bd",
+        "li:url:fbe29e057e1fa2c75bc8#url:de:72d50a93a9dc",
+        "li:url:fbe29e057e1fa2c75bc8#url:en:39968025d151",
+        "li:url:fbe29e057e1fa2c75bc8#url:en:f00a0df8dc2b"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "li-30": {
+      "source_identity_id": "li:url:4e497580941990f0eab9",
+      "representation_ids": [
+        "li:url:4e497580941990f0eab9#url:de:2bfa0bc2acf0"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "li-32": {
+      "source_identity_id": "li:url:b21a17407b55b85a3eaf",
+      "representation_ids": [
+        "li:url:b21a17407b55b85a3eaf#url:de:66f4bf7a7866",
+        "li:url:b21a17407b55b85a3eaf#url:de:b193803a16dd"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "li-36": {
+      "source_identity_id": "li:url:c4f46f61523b491732e3",
+      "representation_ids": [
+        "li:url:c4f46f61523b491732e3#url:de:7dc355b75ca1",
+        "li:url:c4f46f61523b491732e3#url:de:c1109bbd9c2d"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "li-37": {
+      "source_identity_id": "li:url:0b5a3d91ae58853a10ea",
+      "representation_ids": [
+        "li:url:0b5a3d91ae58853a10ea#url:de:3c3523acb69e",
+        "li:url:0b5a3d91ae58853a10ea#url:de:783541fccb45"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "li-40": {
+      "source_identity_id": "li:url:a2453db128668042ee17",
+      "representation_ids": [
+        "li:url:a2453db128668042ee17#url:de:5e0290fae142",
+        "li:url:a2453db128668042ee17#url:de:7fd41a332af7"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "li-41": {
+      "source_identity_id": "li:url:7c122246f54144234905",
+      "representation_ids": [
+        "li:url:7c122246f54144234905#url:de:0cc9c5f4c54f",
+        "li:url:7c122246f54144234905#url:de:688cc7751005"
+      ],
+      "identity_resolution_status": "resolved"
+    }
+  },
+  "identity_link_schema_version": 1
 }

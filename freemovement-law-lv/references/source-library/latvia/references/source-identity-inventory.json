@@ -1,0 +1,4021 @@
+{
+  "schema_version": 1,
+  "jurisdiction": "LV",
+  "jurisdiction_name": "latvia",
+  "updated": "2026-10-29",
+  "identity_rule": "Existing catalogue IDs are preserved. Exact official URLs, CELEX and ELI identities are joined; language, edition, link and local-copy representations remain distinct. Potential cross-record matches are surfaced instead of silently merged.",
+  "source_count": 52,
+  "unique_identity_count": 52,
+  "unresolved_identity_entry_count": 0,
+  "unresolved_identity_matches": [],
+  "source_list_file": "references/source-list.md",
+  "entries": [
+    {
+      "id": "lv-01",
+      "title": "N-Lex Latvia country information",
+      "source_type": "national_law_discovery",
+      "official_urls": [
+        "https://n-lex.europa.eu/n-lex/info/info-lv/index"
+      ],
+      "source_identity_id": "lv:url:8a608a8b81b3f46da940",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "discovery"
+      ],
+      "representation_ids": [
+        "lv:url:8a608a8b81b3f46da940#url:en:8500008accbd"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://n-lex.europa.eu/n-lex/info/info-lv/index",
+          "path": null,
+          "representation_id": "lv:url:8a608a8b81b3f46da940#url:en:8500008accbd",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "discovery"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/0"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 26,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-01",
+            "[N-Lex Latvia country information](https://n-lex.europa.eu/n-lex/info/info-lv/index)",
+            "related_source",
+            "Official N-Lex country information page inspected; its description of Latvijas Vēstnesis and Likumi.lv was checked.",
+            "N-Lex identifies Latvijas Vēstnesis as the official Gazette and Likumi.lv as publisher-managed systematic legislation access. Discovery lead only; N-Lex is not the national source publisher and does not cover all requested classes."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/0",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-02",
+      "title": "Likumi.lv official legislation portal — about and version information",
+      "source_type": "official_legislation_portal",
+      "official_urls": [
+        "https://likumi.lv/about.php"
+      ],
+      "source_identity_id": "lv:url:9b832823e9d0b70d7369",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy",
+        "discovery"
+      ],
+      "representation_ids": [
+        "lv:url:9b832823e9d0b70d7369#url:en:b1997fc7c71f"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://likumi.lv/about.php",
+          "path": null,
+          "representation_id": "lv:url:9b832823e9d0b70d7369#url:en:b1997fc7c71f",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy",
+            "discovery"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/1"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 32,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-02",
+            "[Likumi.lv official legislation portal — about and version information](https://likumi.lv/about.php)",
+            "related_source",
+            "Official Likumi.lv about page inspected.",
+            "Publisher says current, historic and future wording, validity status, related documents and English translations are provided. Systematised text is informational; the official Gazette prevails in case of discrepancy."
+          ],
+          "category": "catalogue"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 293,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Document"
+          ],
+          "cells": [
+            "lv-02",
+            "Likumi.lv official legislation portal — about and version information",
+            "[local copy](../documents/guidance/lv-likumi-about-and-version-information.md)"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/1",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-03",
+      "title": "Likumi.lv terms of service",
+      "source_type": "publisher_terms",
+      "official_urls": [
+        "https://likumi.lv/par-mums/portala-lietosanas-noteikumi"
+      ],
+      "source_identity_id": "lv:url:bd5e9259ad8f67b8e3d4",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "lv:url:bd5e9259ad8f67b8e3d4#url:lv:324ca681df18"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "lv",
+          "edition": "undated",
+          "url": "https://likumi.lv/par-mums/portala-lietosanas-noteikumi",
+          "path": null,
+          "representation_id": "lv:url:bd5e9259ad8f67b8e3d4#url:lv:324ca681df18",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/2"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 38,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-03",
+            "[Likumi.lv terms of service](https://likumi.lv/par-mums/portala-lietosanas-noteikumi)",
+            "related_source",
+            "Full official terms page fetched directly and converted in the capture pass; the earlier research-client open had timed out.",
+            "Section 6 says systematised acts are available for reuse under the public-information laws and applicable Cabinet-set fees, and the keeper organizes reuse. Links may be placed with attribution. This is a legal route, but does not itself confirm an unattended recurring monitor or its delivery method. See the [accepted local text snapshot](../documents/guidance/lv-likumi-terms-of-service.md), lv-47 to lv-49, and the sustainability assessment."
+          ],
+          "category": "catalogue"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 294,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Document"
+          ],
+          "cells": [
+            "lv-03",
+            "Likumi.lv terms of service",
+            "[local copy](../documents/guidance/lv-likumi-terms-of-service.md)"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/2",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-04",
+      "title": "Law on Official Publications and Legal Information",
+      "source_type": "legislation",
+      "official_urls": [
+        "https://likumi.lv/ta/en/en/id/249322"
+      ],
+      "source_identity_id": "lv:url:d0df0c91ec9b35197b8d",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "lv:url:d0df0c91ec9b35197b8d#url:en:dc7ef46b9252"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://likumi.lv/ta/en/en/id/249322",
+          "path": null,
+          "representation_id": "lv:url:d0df0c91ec9b35197b8d#url:en:dc7ef46b9252",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/3"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 44,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-04",
+            "[Law on Official Publications and Legal Information](https://likumi.lv/ta/en/en/id/249322)",
+            "related_source",
+            "Official Likumi.lv act page inspected in the bounded source review.",
+            "Act describes the official publisher role and the legal-publication framework for Latvijas Vēstnesis and systematised legal information. Use alongside the Gazette publication for legal force and the consolidated portal for version discovery."
+          ],
+          "category": "catalogue"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 295,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Document"
+          ],
+          "cells": [
+            "lv-04",
+            "Law on Official Publications and Legal Information",
+            "[local copy](../documents/legislation/lv-law-official-publications-and-legal-information-en.md)"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/3",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-05",
+      "title": "Latvijas Vēstnesis official publication security information",
+      "source_type": "official_publication_integrity",
+      "official_urls": [
+        "https://vestnesis.lv/informacijas-drosiba"
+      ],
+      "source_identity_id": "lv:url:f322a9b729fd6d535337",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "lv:url:f322a9b729fd6d535337#url:lv:d8aa36b3c70c"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "lv",
+          "edition": "undated",
+          "url": "https://vestnesis.lv/informacijas-drosiba",
+          "path": null,
+          "representation_id": "lv:url:f322a9b729fd6d535337#url:lv:d8aa36b3c70c",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/4"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 50,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-05",
+            "[Latvijas Vēstnesis official publication security information](https://www.vestnesis.lv/informacijas-drosiba)",
+            "related_source",
+            "Official publisher page directly fetched and converted.",
+            "Publisher states issue contents and each publication are also produced as PDF electronic documents, signed with the organisation electronic seal, with e-signature fallback. This describes the publisher's process; validate a specific file's seal only when authenticity of that exact PDF is material."
+          ],
+          "category": "catalogue"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 296,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Document"
+          ],
+          "cells": [
+            "lv-05",
+            "Latvijas Vēstnesis official publication security information",
+            "[local copy](../documents/guidance/lv-vestnesis-publication-security.md)"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/4",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-06",
+      "title": "EU, EEA and Swiss citizens and family members entry/residence law (Likumi.lv consolidated record)",
+      "source_type": "free_movement_legislation",
+      "official_urls": [
+        "https://likumi.lv/ta/id/369282"
+      ],
+      "source_identity_id": "lv:url:d23ac3a6db112a1a6366",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "lv:url:d23ac3a6db112a1a6366#url:lv:f40f259277a4"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "lv",
+          "edition": "undated",
+          "url": "https://likumi.lv/ta/id/369282",
+          "path": null,
+          "representation_id": "lv:url:d23ac3a6db112a1a6366#url:lv:f40f259277a4",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/5"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 56,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-06",
+            "[EU, EEA and Swiss citizens and family members entry/residence law (Likumi.lv consolidated record)](https://likumi.lv/ta/id/369282)",
+            "close_functional_match",
+            "Official current Likumi.lv act page inspected; scope, definitions, commencement and transition provisions checked.",
+            "Law 369282; adopted 11.06.2026, published 26.06.2026, effective 10.07.2026; page shows in force. Covers EU, EEA and Swiss citizens and family members, mobile Latvian citizens, and UK Withdrawal Agreement beneficiaries. Latvian-only substantive text; English page says State Language Centre has not officially translated it. Cabinet implementing rules are due by 01.12.2027."
+          ],
+          "category": "catalogue"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 297,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Document"
+          ],
+          "cells": [
+            "lv-06",
+            "EU, EEA and Swiss citizens and family members entry/residence law (Likumi.lv consolidated record)",
+            "[local copy](../documents/legislation/lv-law-369282-eu-eea-swiss-family-residence.md)"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/5",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-07",
+      "title": "Official Gazette publication OP 2026/119.1 — EU/EEA/Swiss residence law",
+      "source_type": "official_gazette_publication",
+      "official_urls": [
+        "https://vestnesis.lv/op/2026/119.1",
+        "https://vestnesis.lv/url/369282"
+      ],
+      "source_identity_id": "lv:url:3768a5218f6af3c3a260",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "lv:url:3768a5218f6af3c3a260#url:lv:9946a07e7437",
+        "lv:url:3768a5218f6af3c3a260#url:lv:f2764c96cef8"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "lv",
+          "edition": "undated",
+          "url": "https://vestnesis.lv/url/369282",
+          "path": null,
+          "representation_id": "lv:url:3768a5218f6af3c3a260#url:lv:9946a07e7437",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "lv",
+          "edition": "undated",
+          "url": "https://vestnesis.lv/op/2026/119.1",
+          "path": null,
+          "representation_id": "lv:url:3768a5218f6af3c3a260#url:lv:f2764c96cef8",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/6"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 62,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-07",
+            "[Official Gazette publication OP 2026/119.1 — EU/EEA/Swiss residence law](https://www.vestnesis.lv/op/2026/119.1)",
+            "close_functional_match",
+            "Official Latvijas Vēstnesis publication page and linked PDF directly fetched; exact PDF bytes and page-wise text replay verified.",
+            "Stable OP identifier 2026/119.1; issue 119, 26.06.2026. The original PDF is stored with the [accepted text extraction](../documents/legislation/lv-gazette-op-2026-119-1.md). The promulgated text is not a substitute for checking the current consolidated text after later amendments. The PDF signature field was not cryptographically validated; check its seal only if authenticity of that exact file is material."
+          ],
+          "category": "catalogue"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 298,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Document"
+          ],
+          "cells": [
+            "lv-07",
+            "Official Gazette publication OP 2026/119.1 — EU/EEA/Swiss residence law",
+            "[local copy](../documents/legislation/lv-gazette-op-2026-119-1.md)"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/6",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-08",
+      "title": "Cabinet Regulation No. 675 of 30 August 2011 — prior EU residence procedure",
+      "source_type": "historical_or_transitional_legislation",
+      "official_urls": [
+        "https://likumi.lv/ta/id/235499-kartiba-kada-savienibas-pilsoni-un-vinu-gimenes-locekli-iecelo-un-uzturas-latvijas-republika"
+      ],
+      "source_identity_id": "lv:url:aeecb215b0c2108dfda6",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "lv:url:aeecb215b0c2108dfda6#url:lv:96b3cecc23d3"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "lv",
+          "edition": "undated",
+          "url": "https://likumi.lv/ta/id/235499-kartiba-kada-savienibas-pilsoni-un-vinu-gimenes-locekli-iecelo-un-uzturas-latvijas-republika",
+          "path": null,
+          "representation_id": "lv:url:aeecb215b0c2108dfda6#url:lv:96b3cecc23d3",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/7"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 68,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-08",
+            "[Cabinet Regulation No. 675 of 30 August 2011 — prior EU residence procedure](https://likumi.lv/ta/id/235499-kartiba-kada-savienibas-pilsoni-un-vinu-gimenes-locekli-iecelo-un-uzturas-latvijas-republika)",
+            "related_source",
+            "Official Likumi.lv record inspected through the new law transition link.",
+            "The 2026 Act directs pre-commencement applications to Regulation 675. The regulation’s official record separately says it remains in force until 02.12.2027. Its application to post-10.07.2026 filings is unresolved; do not treat the MFA page's old citation as resolving that issue."
+          ],
+          "category": "catalogue"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 299,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Document"
+          ],
+          "cells": [
+            "lv-08",
+            "Cabinet Regulation No. 675 of 30 August 2011 — prior EU residence procedure",
+            "[local copy](../documents/legislation/lv-cabinet-regulation-675-historical.md)"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/7",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-09",
+      "title": "Immigration Law (new 2026 Act)",
+      "source_type": "third_country_immigration_legislation",
+      "official_urls": [
+        "https://likumi.lv/ta/id/370622-imigracijas-likums"
+      ],
+      "source_identity_id": "lv:url:4fe5180936d5a576646b",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "lv:url:4fe5180936d5a576646b#url:lv:51604146a2d7"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "lv",
+          "edition": "undated",
+          "url": "https://likumi.lv/ta/id/370622-imigracijas-likums",
+          "path": null,
+          "representation_id": "lv:url:4fe5180936d5a576646b#url:lv:51604146a2d7",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/8"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 74,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-09",
+            "[Immigration Law (new 2026 Act)](https://likumi.lv/ta/id/370622-imigracijas-likums)",
+            "related_source",
+            "Official current Likumi.lv act page inspected; document passport and commencement metadata checked.",
+            "Law adopted 20.08.2026, published 01.09.2026, effective 15.09.2026; record shows the current edition through 30.12.2027, with some provisions effective 31.12.2027. Separate this third-country route from EU/EEA/Swiss free movement."
+          ],
+          "category": "catalogue"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 300,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Document"
+          ],
+          "cells": [
+            "lv-09",
+            "Immigration Law (new 2026 Act)",
+            "[local copy](../documents/legislation/lv-immigration-law-2026.md)"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/8",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-10",
+      "title": "UK Withdrawal Agreement implementation law",
+      "source_type": "uk_withdrawal_agreement_legislation",
+      "official_urls": [
+        "https://likumi.lv/ta/id/305836"
+      ],
+      "source_identity_id": "lv:url:670e43a2bcb3cd9b2b11",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "lv:url:670e43a2bcb3cd9b2b11#url:lv:75b316313c4d"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "lv",
+          "edition": "undated",
+          "url": "https://likumi.lv/ta/id/305836",
+          "path": null,
+          "representation_id": "lv:url:670e43a2bcb3cd9b2b11#url:lv:75b316313c4d",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/9"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 80,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-10",
+            "[UK Withdrawal Agreement implementation law](https://likumi.lv/ta/id/305836)",
+            "related_source",
+            "Official Likumi.lv act page reached through the new EU residence law transition link.",
+            "The new 2026 free-movement law expressly applies to UK nationals/family members covered by this Act. UK Withdrawal Agreement beneficiary route remains distinct from EU/EEA/Swiss nationality routes."
+          ],
+          "category": "catalogue"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 301,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Document"
+          ],
+          "cells": [
+            "lv-10",
+            "UK Withdrawal Agreement implementation law",
+            "[local copy](../documents/legislation/lv-uk-withdrawal-agreement-implementation-law.md)"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/9",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-11",
+      "title": "Administrative Procedure Law",
+      "source_type": "administrative_procedure_legislation",
+      "official_urls": [
+        "https://likumi.lv/ta/id/55567-administrativa-procesa-likums"
+      ],
+      "source_identity_id": "lv:url:ae47a3d735002996dd39",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "lv:url:ae47a3d735002996dd39#url:lv:71ead5746b59"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "lv",
+          "edition": "undated",
+          "url": "https://likumi.lv/ta/id/55567-administrativa-procesa-likums",
+          "path": null,
+          "representation_id": "lv:url:ae47a3d735002996dd39#url:lv:71ead5746b59",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/10"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 86,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-11",
+            "[Administrative Procedure Law](https://likumi.lv/ta/id/55567-administrativa-procesa-likums)",
+            "related_source",
+            "Official current Likumi.lv act page inspected; current amendment history checked.",
+            "Current record includes amendment adopted 28.05.2026, effective 01.06.2026. Covers procedure, evidence, access, review and administrative-court process. A high-value general procedure source; map provisions to each decision type and special migration rules."
+          ],
+          "category": "catalogue"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 302,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Document"
+          ],
+          "cells": [
+            "lv-11",
+            "Administrative Procedure Law",
+            "[local copy](../documents/legislation/lv-administrative-procedure-law.md)"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/10",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-12",
+      "title": "Freedom of Information Law",
+      "source_type": "access_to_information_legislation",
+      "official_urls": [
+        "https://likumi.lv/ta/en/en/id/50601"
+      ],
+      "source_identity_id": "lv:url:62000112be3259d050e4",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "lv:url:62000112be3259d050e4#url:en:27d493b14a85"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://likumi.lv/ta/en/en/id/50601",
+          "path": null,
+          "representation_id": "lv:url:62000112be3259d050e4#url:en:27d493b14a85",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/11"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 92,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-12",
+            "[Freedom of Information Law](https://likumi.lv/ta/en/en/id/50601)",
+            "related_source",
+            "Official English act page inspected.",
+            "Official English version selected from 01.05.2023; records access and reuse of public-sector information. General public-information access differs from an applicant’s access to their own administrative file."
+          ],
+          "category": "catalogue"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 303,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Document"
+          ],
+          "cells": [
+            "lv-12",
+            "Freedom of Information Law",
+            "[local copy](../documents/legislation/lv-freedom-of-information-law-en.md)"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/11",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-13",
+      "title": "State-Provided Legal Aid Law",
+      "source_type": "legal_aid_legislation",
+      "official_urls": [
+        "https://likumi.lv/ta/id/104831-valsts-nodrosinatas-juridiskas-palidzibas-likums"
+      ],
+      "source_identity_id": "lv:url:3df616b43b18c5186c40",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "lv:url:3df616b43b18c5186c40#url:lv:ae15423c9153"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "lv",
+          "edition": "undated",
+          "url": "https://likumi.lv/ta/id/104831-valsts-nodrosinatas-juridiskas-palidzibas-likums",
+          "path": null,
+          "representation_id": "lv:url:3df616b43b18c5186c40#url:lv:ae15423c9153",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/12"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 98,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-13",
+            "[State-Provided Legal Aid Law](https://likumi.lv/ta/id/104831-valsts-nodrosinatas-juridiskas-palidzibas-likums)",
+            "related_source",
+            "Official current act page inspected; current text includes 2026 amendment history.",
+            "Amendments adopted 23.04.2026 have provisions effective 01.06.2026; links free legal aid eligibility and categories. Check applicability in each migration/court route; Immigration Law separately anticipates detention-extension legal aid provisions tied to future amendments."
+          ],
+          "category": "catalogue"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 304,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Document"
+          ],
+          "cells": [
+            "lv-13",
+            "State-Provided Legal Aid Law",
+            "[local copy](../documents/legislation/lv-state-provided-legal-aid-law.md)"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/12",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-14",
+      "title": "Ombudsman Law",
+      "source_type": "ombudsman_legislation",
+      "official_urls": [
+        "https://likumi.lv/ta/id/133535-tiesibsarga-likums"
+      ],
+      "source_identity_id": "lv:url:e23993fe1beedba80b8d",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "lv:url:e23993fe1beedba80b8d#url:lv:ec86ac6d795d"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "lv",
+          "edition": "undated",
+          "url": "https://likumi.lv/ta/id/133535-tiesibsarga-likums",
+          "path": null,
+          "representation_id": "lv:url:e23993fe1beedba80b8d#url:lv:ec86ac6d795d",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/13"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 104,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-14",
+            "[Ombudsman Law](https://likumi.lv/ta/id/133535-tiesibsarga-likums)",
+            "related_source",
+            "Official current act record inspected.",
+            "Law establishes national Ombudsman and individual submission/investigation powers; recent amendment effective 02.04.2025. General good-governance/human-rights oversight; not a substitute for statutory appeal deadlines."
+          ],
+          "category": "catalogue"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 305,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Document"
+          ],
+          "cells": [
+            "lv-14",
+            "Ombudsman Law",
+            "[local copy](../documents/legislation/lv-ombudsman-law.md)"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/13",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-15",
+      "title": "Personal Data Processing Law",
+      "source_type": "data_protection_legislation",
+      "official_urls": [
+        "https://likumi.lv/ta/id/300099"
+      ],
+      "source_identity_id": "lv:url:ed3f546890f74d89f64d",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "lv:url:ed3f546890f74d89f64d#url:lv:e4ba09b45dd4"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "lv",
+          "edition": "undated",
+          "url": "https://likumi.lv/ta/id/300099",
+          "path": null,
+          "representation_id": "lv:url:ed3f546890f74d89f64d#url:lv:e4ba09b45dd4",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/14"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 110,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-15",
+            "[Personal Data Processing Law](https://likumi.lv/ta/id/300099)",
+            "related_source",
+            "Official current act record inspected.",
+            "Current national data-protection law supporting GDPR implementation. Use with the DVI complaint procedure and GDPR; avoid personal case-data collection."
+          ],
+          "category": "catalogue"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 306,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Document"
+          ],
+          "cells": [
+            "lv-15",
+            "Personal Data Processing Law",
+            "[local copy](../documents/legislation/lv-personal-data-processing-law.md)"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/14",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-16",
+      "title": "Personal data processing in criminal and administrative offence proceedings law",
+      "source_type": "law_enforcement_data_legislation",
+      "official_urls": [
+        "https://likumi.lv/ta/id/308278"
+      ],
+      "source_identity_id": "lv:url:d8f00df66f239ce72754",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "lv:url:d8f00df66f239ce72754#url:lv:2b686fbfe632"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "lv",
+          "edition": "undated",
+          "url": "https://likumi.lv/ta/id/308278",
+          "path": null,
+          "representation_id": "lv:url:d8f00df66f239ce72754#url:lv:2b686fbfe632",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/15"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 116,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-16",
+            "[Personal data processing in criminal and administrative offence proceedings law](https://likumi.lv/ta/id/308278)",
+            "related_source",
+            "Official current act record inspected.",
+            "Separate Latvian act for processing by competent authorities for criminal and administrative offence purposes. Keep distinct from general GDPR and immigration/residence processing."
+          ],
+          "category": "catalogue"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 307,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Document"
+          ],
+          "cells": [
+            "lv-16",
+            "Personal data processing in criminal and administrative offence proceedings law",
+            "[local copy](../documents/legislation/lv-personal-data-processing-enforcement-law.md)"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/15",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-17",
+      "title": "Rules on publishing court information online and processing court decisions before release",
+      "source_type": "court_publication_rules",
+      "official_urls": [
+        "https://likumi.lv/ta/id/187832"
+      ],
+      "source_identity_id": "lv:url:cd1ca75adc201c9f6169",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "lv:url:cd1ca75adc201c9f6169#url:lv:50ce9b6284cb"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "lv",
+          "edition": "undated",
+          "url": "https://likumi.lv/ta/id/187832",
+          "path": null,
+          "representation_id": "lv:url:cd1ca75adc201c9f6169#url:lv:50ce9b6284cb",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/16"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 122,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-17",
+            "[Rules on publishing court information online and processing court decisions before release](https://likumi.lv/ta/id/187832)",
+            "related_source",
+            "Official current Likumi.lv result inspected; amendment dated 28.04.2026 identified.",
+            "Current rules direct court proceedings information to e-lieta and provide for public redaction; amended 28.04.2026. Court-publication regime changed in 2026; verify which decision classes are public and where before designing case-law monitoring."
+          ],
+          "category": "catalogue"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 308,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Document"
+          ],
+          "cells": [
+            "lv-17",
+            "Rules on publishing court information online and processing court decisions before release",
+            "[local copy](../documents/legislation/lv-court-publication-rules.md)"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/16",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-18",
+      "title": "PMLP: Entry of EU, EEA and Swiss citizens and family members",
+      "source_type": "official_agency_guidance",
+      "official_urls": [
+        "https://pmlp.gov.lv/en/entry-citizens-eu-eea-and-switzerland-and-their-family-members"
+      ],
+      "source_identity_id": "lv:url:83b48af644f8c3653028",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "lv:url:83b48af644f8c3653028#url:en:605236091338"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://pmlp.gov.lv/en/entry-citizens-eu-eea-and-switzerland-and-their-family-members",
+          "path": null,
+          "representation_id": "lv:url:83b48af644f8c3653028#url:en:605236091338",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/17"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 128,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-18",
+            "[PMLP: Entry of EU, EEA and Swiss citizens and family members](https://www.pmlp.gov.lv/en/entry-citizens-eu-eea-and-switzerland-and-their-family-members)",
+            "partial_functional_match",
+            "PMLP official page inspected; published/updated metadata and stated law references checked.",
+            "Updated 17.07.2026; after the new law took effect. It identifies current registration/permanent residence documents and non-EU family permits. Accepted local text snapshot of the current central overview. Reconcile linked document requirements/forms against the new law and outstanding Cabinet rules."
+          ],
+          "category": "catalogue"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 309,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Document"
+          ],
+          "cells": [
+            "lv-18",
+            "PMLP: Entry of EU, EEA and Swiss citizens and family members",
+            "[local copy](../documents/guidance/lv-pmlp-eu-eea-swiss-overview.md)"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/17",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-19",
+      "title": "PMLP: Documents required for EU citizen and family residence document",
+      "source_type": "official_agency_guidance",
+      "official_urls": [
+        "https://pmlp.gov.lv/en/what-documents-must-be-filed"
+      ],
+      "source_identity_id": "lv:url:4e34123fc81ea6638e95",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "pending",
+        "historical"
+      ],
+      "representation_ids": [
+        "lv:url:4e34123fc81ea6638e95#url:en:802f2b6967e7"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://pmlp.gov.lv/en/what-documents-must-be-filed",
+          "path": null,
+          "representation_id": "lv:url:4e34123fc81ea6638e95#url:en:802f2b6967e7",
+          "acceptance_status": [
+            "historical",
+            "pending"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/18"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 129,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-19",
+            "[PMLP: Documents required for EU citizen and family residence document](https://www.pmlp.gov.lv/en/what-documents-must-be-filed)",
+            "partial_functional_match",
+            "Official PMLP page and 24.07.2025 update date rechecked on 28.10.2026.",
+            "Accepted as a discovery/index route only. The extracted page shows “list” placeholders instead of linked checklists; no requirements text or local copy is accepted."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/36",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-20",
+      "title": "PMLP: Where can residence documents be filed?",
+      "source_type": "official_agency_guidance",
+      "official_urls": [
+        "https://pmlp.gov.lv/en/where-can-documents-be-filed"
+      ],
+      "source_identity_id": "lv:url:5f7b953d51359ea6ec2f",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy",
+        "pending"
+      ],
+      "representation_ids": [
+        "lv:url:5f7b953d51359ea6ec2f#url:en:d24e03b8382a"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://pmlp.gov.lv/en/where-can-documents-be-filed",
+          "path": null,
+          "representation_id": "lv:url:5f7b953d51359ea6ec2f#url:en:d24e03b8382a",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy",
+            "pending"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/19"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 130,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-20",
+            "[PMLP: Where can residence documents be filed?](https://www.pmlp.gov.lv/en/where-can-documents-be-filed)",
+            "partial_functional_match",
+            "Official page captured and deterministic replay passed on 28.10.2026.",
+            "Updated 05.02.2025. Local snapshot accepted as historical last-known filing guidance only; not current procedure under the Act effective 10.07.2026. Verify current PMLP and mission intake."
+          ],
+          "category": "catalogue"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 310,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Document"
+          ],
+          "cells": [
+            "lv-20",
+            "PMLP: Where can residence documents be filed?",
+            "[local copy](../documents/procedure/lv-pmlp-residence-filing-routes-historical.md)"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/40",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-21",
+      "title": "PMLP: Residence-permit application and form index",
+      "source_type": "official_forms_index",
+      "official_urls": [
+        "https://pmlp.gov.lv/en/application-requiring-residence-permit"
+      ],
+      "source_identity_id": "lv:url:2ac7ece7f39f45b4e664",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy",
+        "discovery"
+      ],
+      "representation_ids": [
+        "lv:url:2ac7ece7f39f45b4e664#url:en:3a1bc136718c"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://pmlp.gov.lv/en/application-requiring-residence-permit",
+          "path": null,
+          "representation_id": "lv:url:2ac7ece7f39f45b4e664#url:en:3a1bc136718c",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy",
+            "discovery"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/20"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 140,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-21",
+            "[PMLP: Residence-permit application and form index](https://www.pmlp.gov.lv/en/application-requiring-residence-permit)",
+            "partial_functional_match",
+            "Current official parent index captured 28.10.2026; deterministic replay passed.",
+            "Updated 23.10.2026. Current PMLP parent forms index and discovery route; the EU-family application attachment was also updated 23.10.2026 and is recorded separately as lv-22."
+          ],
+          "category": "catalogue"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 311,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Document"
+          ],
+          "cells": [
+            "lv-21",
+            "PMLP: Residence-permit application and form index",
+            "[local copy](../documents/guidance/lv-pmlp-residence-application-form-index.md)"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/47",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-22",
+      "title": "PMLP direct EU citizen/family residence application PDF",
+      "source_type": "application_form_pdf",
+      "official_urls": [
+        "https://pmlp.gov.lv/en/media/100/download",
+        "https://pmlp.gov.lv/en/media/1666/download?attachment="
+      ],
+      "source_identity_id": "lv:url:e8b5d14d411641e460ae",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy",
+        "not_relied_upon"
+      ],
+      "representation_ids": [
+        "lv:url:e8b5d14d411641e460ae#url:unspecified:2c7df221ed8a",
+        "lv:url:e8b5d14d411641e460ae#url:unspecified:7ff9ed49856d"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "unspecified",
+          "edition": "undated",
+          "url": "https://pmlp.gov.lv/en/media/1666/download?attachment=",
+          "path": null,
+          "representation_id": "lv:url:e8b5d14d411641e460ae#url:unspecified:2c7df221ed8a",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "unspecified",
+          "edition": "undated",
+          "url": "https://pmlp.gov.lv/en/media/100/download",
+          "path": null,
+          "representation_id": "lv:url:e8b5d14d411641e460ae#url:unspecified:7ff9ed49856d",
+          "acceptance_status": [
+            "not_relied_upon"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/21"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 147,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-22",
+            "[PMLP: EU/Union citizen and family residence-document application form](https://www.pmlp.gov.lv/en/media/1666/download?attachment=)",
+            "partial_functional_match",
+            "Exact PDF linked from the current PMLP parent index; source hash and page-wise conversion reviewed and replayed.",
+            "Parent index and attachment updated 23.10.2026. Original 8-page bilingual PDF is stored under documents/forms; it has zero interactive fields. The older /media/100/download file remains unaccepted."
+          ],
+          "category": "catalogue"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 312,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Document"
+          ],
+          "cells": [
+            "lv-22",
+            "PMLP: EU/Union citizen and family residence-document application form",
+            "[local copy](../documents/forms/lv-pmlp-eu-family-residence-application-form-2026-10-23.md)"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/45",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-23",
+      "title": "PMLP EU residence document types and explanation",
+      "source_type": "official_agency_guidance",
+      "official_urls": [
+        "https://pmlp.gov.lv/en/what-residence-documents-are-issued-union-citizens-and-their-family-members"
+      ],
+      "source_identity_id": "lv:url:6ab464d6f3be74825718",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy",
+        "pending"
+      ],
+      "representation_ids": [
+        "lv:url:6ab464d6f3be74825718#url:en:16c959e3c8be"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://pmlp.gov.lv/en/what-residence-documents-are-issued-union-citizens-and-their-family-members",
+          "path": null,
+          "representation_id": "lv:url:6ab464d6f3be74825718#url:en:16c959e3c8be",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy",
+            "pending"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/22"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 131,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-23",
+            "[PMLP EU residence document types and explanation](https://www.pmlp.gov.lv/en/what-residence-documents-are-issued-union-citizens-and-their-family-members)",
+            "partial_functional_match",
+            "Official page captured and deterministic replay passed on 28.10.2026.",
+            "Updated 24.07.2025. Local snapshot accepted as historical document-type guidance only; do not use its old criteria as current procedure under the 2026 Act."
+          ],
+          "category": "catalogue"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 313,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Document"
+          ],
+          "cells": [
+            "lv-23",
+            "PMLP EU residence document types and explanation",
+            "[local copy](../documents/guidance/lv-pmlp-eu-residence-document-types-historical.md)"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/41",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-24",
+      "title": "PMLP information for UK Withdrawal Agreement beneficiaries",
+      "source_type": "official_agency_guidance",
+      "official_urls": [
+        "https://pmlp.gov.lv/en/information-brexit"
+      ],
+      "source_identity_id": "lv:url:fafde495784e666c1053",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "pending"
+      ],
+      "representation_ids": [
+        "lv:url:fafde495784e666c1053#url:en:37e57bc78fbb"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://pmlp.gov.lv/en/information-brexit",
+          "path": null,
+          "representation_id": "lv:url:fafde495784e666c1053#url:en:37e57bc78fbb",
+          "acceptance_status": [
+            "pending"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/23"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 132,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-24",
+            "[PMLP information for UK Withdrawal Agreement beneficiaries](https://www.pmlp.gov.lv/en/information-brexit)",
+            "partial_functional_match",
+            "Official PMLP guidance page inspected in official search results.",
+            "Updated 24.07.2025; refers to WA residence rights and post-transition family procedures. Verify against the new law’s transition clause and the linked UK Act; distinguish protected beneficiaries from post-2020 entrants."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/pending_references/0",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-25",
+      "title": "PMLP: Declaration of place of residence",
+      "source_type": "official_agency_guidance",
+      "official_urls": [
+        "https://pmlp.gov.lv/en/declaration-residence-place"
+      ],
+      "source_identity_id": "lv:url:0e3d357191ac9142aa38",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "lv:url:0e3d357191ac9142aa38#url:en:e7ccb41d8b17"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://pmlp.gov.lv/en/declaration-residence-place",
+          "path": null,
+          "representation_id": "lv:url:0e3d357191ac9142aa38#url:en:e7ccb41d8b17",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/24"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 133,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-25",
+            "[PMLP: Declaration of place of residence](https://www.pmlp.gov.lv/en/declaration-residence-place)",
+            "related_source",
+            "Official PMLP page inspected; scope, channels and last-updated date checked.",
+            "Updated 03.06.2025; explains municipal/e-service/PMLP channels for persons with residence documents. Auxiliary operational obligation; validate law changes and Latvija.lv login/service route."
+          ],
+          "category": "catalogue"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 314,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Document"
+          ],
+          "cells": [
+            "lv-25",
+            "PMLP: Declaration of place of residence",
+            "[local copy](../documents/guidance/lv-pmlp-declaration-place-residence-snapshot.md)"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/18",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-26",
+      "title": "PMLP: State fees for residence permits",
+      "source_type": "official_fees_guidance",
+      "official_urls": [
+        "https://pmlp.gov.lv/en/state-fees-issuance-residence-permit"
+      ],
+      "source_identity_id": "lv:url:fc031531f9ebc8fd042f",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "lv:url:fc031531f9ebc8fd042f#url:en:fdc6617d651b"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://pmlp.gov.lv/en/state-fees-issuance-residence-permit",
+          "path": null,
+          "representation_id": "lv:url:fc031531f9ebc8fd042f#url:en:fdc6617d651b",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/25"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 153,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-26",
+            "[PMLP: State fees for residence permits](https://www.pmlp.gov.lv/en/state-fees-issuance-residence-permit)",
+            "related_source",
+            "Official PMLP page identified through current official search results.",
+            "Dynamic fees and processing-speed options; exact applicable EU-family fees need current route-specific confirmation. Fees change independently of core legislation and can vary by document/processing time; monitor the date and table identity."
+          ],
+          "category": "catalogue"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 315,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Document"
+          ],
+          "cells": [
+            "lv-26",
+            "PMLP: State fees for residence permits",
+            "[local copy](../documents/guidance/lv-pmlp-residence-fees-snapshot-2026-10-19.md)"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/19",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-27",
+      "title": "PMLP: Identity number and declared residence for EU citizens",
+      "source_type": "official_agency_guidance",
+      "official_urls": [
+        "https://pmlp.gov.lv/en/article/how-obtain-personal-identity-number-and-declared-place-residence-latvia"
+      ],
+      "source_identity_id": "lv:url:d4f62beee1cbc02949cb",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy",
+        "not_relied_upon"
+      ],
+      "representation_ids": [
+        "lv:url:d4f62beee1cbc02949cb#url:en:812a87ff78cc"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://pmlp.gov.lv/en/article/how-obtain-personal-identity-number-and-declared-place-residence-latvia",
+          "path": null,
+          "representation_id": "lv:url:d4f62beee1cbc02949cb#url:en:812a87ff78cc",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy",
+            "not_relied_upon"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/26"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 134,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-27",
+            "[PMLP: Identity number and declared residence for EU citizens](https://www.pmlp.gov.lv/en/article/how-obtain-personal-identity-number-and-declared-place-residence-latvia)",
+            "partial_functional_match",
+            "Official page captured and deterministic replay passed on 28.10.2026.",
+            "Published 31.01.2022. Local snapshot is historical only; verify registration eligibility and exemptions against sections 19 and 24 of the current Act and the current service route."
+          ],
+          "category": "catalogue"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 316,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Document"
+          ],
+          "cells": [
+            "lv-27",
+            "PMLP: Identity number and declared residence for EU citizens",
+            "[local copy](../documents/guidance/lv-pmlp-identity-number-and-residence-historical.md)"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/46",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-28",
+      "title": "MFA: Entry into Latvia by Union citizens and family members",
+      "source_type": "official_ministry_guidance",
+      "official_urls": [
+        "https://mfa.gov.lv/en/entry-latvia-citizens-union-and-their-family-members"
+      ],
+      "source_identity_id": "lv:url:ff815faeff1ad6373f95",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy",
+        "not_relied_upon"
+      ],
+      "representation_ids": [
+        "lv:url:ff815faeff1ad6373f95#url:en:bcbdc624cb93"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://mfa.gov.lv/en/entry-latvia-citizens-union-and-their-family-members",
+          "path": null,
+          "representation_id": "lv:url:ff815faeff1ad6373f95#url:en:bcbdc624cb93",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy",
+            "not_relied_upon"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/27"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 159,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-28",
+            "[MFA: Entry into Latvia by Union citizens and family members](https://www.mfa.gov.lv/en/entry-latvia-citizens-union-and-their-family-members)",
+            "partial_functional_match",
+            "Official page captured; its legal citation was reviewed on 28.10.2026.",
+            "Updated 17.06.2026 and still cites Cabinet Regulation 675, although the new Act took effect 10.07.2026. Local snapshot accepted as historical evidence of the conflict only."
+          ],
+          "category": "catalogue"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 317,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Document"
+          ],
+          "cells": [
+            "lv-28",
+            "MFA: Entry into Latvia by Union citizens and family members",
+            "[local copy](../documents/guidance/lv-mfa-union-entry-guidance-historical.md)"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/37",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-29",
+      "title": "MFA: Entry to Latvia information hub",
+      "source_type": "official_ministry_guidance",
+      "official_urls": [
+        "https://mfa.gov.lv/en/entry-latvia"
+      ],
+      "source_identity_id": "lv:url:498eaa364a0b091e0f1a",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "lv:url:498eaa364a0b091e0f1a#url:en:873c700f6b46"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://mfa.gov.lv/en/entry-latvia",
+          "path": null,
+          "representation_id": "lv:url:498eaa364a0b091e0f1a#url:en:873c700f6b46",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/28"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 160,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-29",
+            "[MFA: Entry to Latvia information hub](https://www.mfa.gov.lv/en/entry-latvia)",
+            "related_source",
+            "Official MFA hub captured and deterministic replay passed on 28.10.2026.",
+            "Updated 20.05.2026. Accepted as a navigation/discovery route only; the hub predates the new Act and linked child pages need their own currentness checks."
+          ],
+          "category": "catalogue"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 318,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Document"
+          ],
+          "cells": [
+            "lv-29",
+            "MFA: Entry to Latvia information hub",
+            "[local copy](../documents/guidance/lv-mfa-entry-information-hub-2026-10-28.md)"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/38",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-30",
+      "title": "MFA: Documents required to apply for a visa",
+      "source_type": "official_ministry_guidance",
+      "official_urls": [
+        "https://mfa.gov.lv/en/documents-required-apply-visa"
+      ],
+      "source_identity_id": "lv:url:74d910e95848f7896c62",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "lv:url:74d910e95848f7896c62#url:en:cf5c4cc410df"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://mfa.gov.lv/en/documents-required-apply-visa",
+          "path": null,
+          "representation_id": "lv:url:74d910e95848f7896c62#url:en:cf5c4cc410df",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/29"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 161,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-30",
+            "[MFA: Documents required to apply for a visa](https://www.mfa.gov.lv/en/documents-required-apply-visa)",
+            "related_source",
+            "Official MFA page identified in official search results.",
+            "Updated 17.06.2026. General Schengen visa source; EU-family visa exceptions under the new Act need a separate comparison."
+          ],
+          "category": "catalogue"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 319,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Document"
+          ],
+          "cells": [
+            "lv-30",
+            "MFA: Documents required to apply for a visa",
+            "[local copy](../documents/guidance/lv-mfa-ordinary-schengen-visa-document-list.md)"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/20",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-31",
+      "title": "PMLP: Visa-exempt nationalities and stay period",
+      "source_type": "official_visa_guidance",
+      "official_urls": [
+        "https://pmlp.gov.lv/en/list-countries-citizens-which-do-not-need-visas"
+      ],
+      "source_identity_id": "lv:url:eac4cae042b1aec3e25e",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "lv:url:eac4cae042b1aec3e25e#url:en:698c2c53d978"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://pmlp.gov.lv/en/list-countries-citizens-which-do-not-need-visas",
+          "path": null,
+          "representation_id": "lv:url:eac4cae042b1aec3e25e#url:en:698c2c53d978",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/30"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 167,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-31",
+            "[PMLP: Visa-exempt nationalities and stay period](https://www.pmlp.gov.lv/en/list-countries-citizens-which-do-not-need-visas)",
+            "related_source",
+            "Official PMLP page inspected in official search results.",
+            "Updated 16.03.2026; list reflects Regulation (EU) 2018/1806 and national/other categories. Nationality-based, change-sensitive table; distinguish visa exemption from residence rights."
+          ],
+          "category": "catalogue"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 320,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Document"
+          ],
+          "cells": [
+            "lv-31",
+            "PMLP: Visa-exempt nationalities and stay period",
+            "[local copy](../documents/guidance/lv-pmlp-visa-exemption-list-snapshot-2026-03-16.md)"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/21",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-32",
+      "title": "MFA: Latvia’s embassies and consulates directory",
+      "source_type": "consular_directory",
+      "official_urls": [
+        "https://mfa.gov.lv/en/latvias-embassies-and-consulates"
+      ],
+      "source_identity_id": "lv:url:c4d93dd5d6d70928f08e",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "lv:url:c4d93dd5d6d70928f08e#url:en:ad834af73a14"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://mfa.gov.lv/en/latvias-embassies-and-consulates",
+          "path": null,
+          "representation_id": "lv:url:c4d93dd5d6d70928f08e#url:en:ad834af73a14",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/31"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 173,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-32",
+            "[MFA: Latvia’s embassies and consulates directory](https://www.mfa.gov.lv/en/latvias-embassies-and-consulates)",
+            "related_source",
+            "Official MFA directory captured 28.10.2026; page published 25.10 and updated 26.10.",
+            "Current directory snapshot, with a notice that several embassy and permanent-representation websites were unavailable. Verify mission-specific services, hours, appointments and checklists directly."
+          ],
+          "category": "catalogue"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 321,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Document"
+          ],
+          "cells": [
+            "lv-32",
+            "MFA: Latvia’s embassies and consulates directory",
+            "[local copy](../documents/consular/lv-mfa-embassies-and-consulates-directory-2026-10-28.md)"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/39",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-33",
+      "title": "MFA: Other Schengen missions representing Latvia for visas",
+      "source_type": "consular_representation_directory",
+      "official_urls": [
+        "https://mfa.gov.lv/en/diplomatic-and-consular-missions-other-schengen-member-states-issuing-visas-enter-latvia"
+      ],
+      "source_identity_id": "lv:url:a7099208efb19b399bc2",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "lv:url:a7099208efb19b399bc2#url:en:9ec7811efa5d"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://mfa.gov.lv/en/diplomatic-and-consular-missions-other-schengen-member-states-issuing-visas-enter-latvia",
+          "path": null,
+          "representation_id": "lv:url:a7099208efb19b399bc2#url:en:9ec7811efa5d",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/32"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 179,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-33",
+            "[MFA: Other Schengen missions representing Latvia for visas](https://www.mfa.gov.lv/en/diplomatic-and-consular-missions-other-schengen-member-states-issuing-visas-enter-latvia)",
+            "related_source",
+            "Official MFA page captured and deterministic replay passed on 28.10.2026.",
+            "Updated 25.06.2026. Accepted as a dated representation directory; confirm the particular country, visa category, and mission’s current intake."
+          ],
+          "category": "catalogue"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 322,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Document"
+          ],
+          "cells": [
+            "lv-33",
+            "MFA: Other Schengen missions representing Latvia for visas",
+            "[local copy](../documents/consular/lv-mfa-schengen-missions-representing-latvia-2026-10-28.md)"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/42",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-34",
+      "title": "PMLP: Family unification under general immigration route",
+      "source_type": "third_country_family_guidance",
+      "official_urls": [
+        "https://pmlp.gov.lv/en/family-unification"
+      ],
+      "source_identity_id": "lv:url:ed33cef6da8e8d468463",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy",
+        "not_relied_upon"
+      ],
+      "representation_ids": [
+        "lv:url:ed33cef6da8e8d468463#url:en:ae76e504a05d"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://pmlp.gov.lv/en/family-unification",
+          "path": null,
+          "representation_id": "lv:url:ed33cef6da8e8d468463#url:en:ae76e504a05d",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy",
+            "not_relied_upon"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/33"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 185,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-34",
+            "[PMLP: Family unification under general immigration route](https://www.pmlp.gov.lv/en/family-unification)",
+            "related_source",
+            "Official page captured and deterministic replay passed on 28.10.2026.",
+            "Updated 22.04.2022. Local snapshot accepted as historical third-country family guidance only; it predates the Immigration Law effective 15.09.2026."
+          ],
+          "category": "catalogue"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 323,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Document"
+          ],
+          "cells": [
+            "lv-34",
+            "PMLP: Family unification under general immigration route",
+            "[local copy](../documents/guidance/lv-pmlp-family-unification-historical.md)"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/44",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-35",
+      "title": "State Border Guard official site — entry and border information",
+      "source_type": "border_authority_information",
+      "official_urls": [
+        "https://rs.gov.lv/en"
+      ],
+      "source_identity_id": "lv:url:2dc0a1230eba674227b9",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "lv:url:2dc0a1230eba674227b9#url:en:ef7583125b55"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://rs.gov.lv/en",
+          "path": null,
+          "representation_id": "lv:url:2dc0a1230eba674227b9#url:en:ef7583125b55",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/34"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 191,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-35",
+            "[State Border Guard official site — entry and border information](https://www.rs.gov.lv/en)",
+            "related_source",
+            "Official homepage captured on 28.10.2026; latest news items are dated that day.",
+            "Accepted as the authority homepage/navigation route only. Dynamic news does not establish border-refusal, complaint, or appeal procedure."
+          ],
+          "category": "catalogue"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 324,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Document"
+          ],
+          "cells": [
+            "lv-35",
+            "State Border Guard official site — entry and border information",
+            "[local copy](../documents/guidance/lv-state-border-guard-homepage-2026-10-28.md)"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/43",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-36",
+      "title": "Ombudsman of Latvia contact and submission channel",
+      "source_type": "oversight_complaint_route",
+      "official_urls": [
+        "https://tiesibsargs.lv/en/contacts"
+      ],
+      "source_identity_id": "lv:url:5b73c82071c265d94059",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "lv:url:5b73c82071c265d94059#url:en:6655141adf6c"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://tiesibsargs.lv/en/contacts",
+          "path": null,
+          "representation_id": "lv:url:5b73c82071c265d94059#url:en:6655141adf6c",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/35"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 197,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-36",
+            "[Ombudsman of Latvia contact and submission channel](https://www.tiesibsargs.lv/en/contacts/)",
+            "related_source",
+            "Official Ombudsman contacts page inspected.",
+            "Describes e-signed/e-address and paper submission routes; current contact details are exposed. National human-rights/good-administration oversight. Submission contains personal data; monitor only public instructions, not submissions."
+          ],
+          "category": "catalogue"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 325,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Document"
+          ],
+          "cells": [
+            "lv-36",
+            "Ombudsman of Latvia contact and submission channel",
+            "[local copy](../documents/oversight/lv-ombudsman-contact-and-submission-route.md)"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/22",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-37",
+      "title": "Data State Inspectorate: complaint about personal-data processing",
+      "source_type": "privacy_complaint_route",
+      "official_urls": [
+        "https://dvi.gov.lv/en/services/complaint-concerning-processing-personal-data"
+      ],
+      "source_identity_id": "lv:url:39d6e799aa26e9af3533",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "pending"
+      ],
+      "representation_ids": [
+        "lv:url:39d6e799aa26e9af3533#url:en:e7fb59884603"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://dvi.gov.lv/en/services/complaint-concerning-processing-personal-data",
+          "path": null,
+          "representation_id": "lv:url:39d6e799aa26e9af3533#url:en:e7fb59884603",
+          "acceptance_status": [
+            "pending"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/36"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 203,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-37",
+            "[Data State Inspectorate: complaint about personal-data processing](https://www.dvi.gov.lv/en/services/complaint-concerning-processing-personal-data)",
+            "related_source",
+            "Official DVI service page inspected in official search results.",
+            "GDPR complaint process and response time information exposed. Current procedural steps and electronic intake terms need direct inspection; do not process case submissions."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/pending_references/1",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-38",
+      "title": "Data State Inspectorate: complaint and request form examples",
+      "source_type": "official_forms_index",
+      "official_urls": [
+        "https://dvi.gov.lv/lv/iesniegumu-paraugi"
+      ],
+      "source_identity_id": "lv:url:a0bf1dd67558bc12e49a",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy",
+        "discovery"
+      ],
+      "representation_ids": [
+        "lv:url:a0bf1dd67558bc12e49a#url:lv:912e73e6f8b2"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "lv",
+          "edition": "undated",
+          "url": "https://dvi.gov.lv/lv/iesniegumu-paraugi",
+          "path": null,
+          "representation_id": "lv:url:a0bf1dd67558bc12e49a#url:lv:912e73e6f8b2",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy",
+            "discovery"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/37"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 141,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-38",
+            "[Data State Inspectorate: complaint and request form examples](https://www.dvi.gov.lv/lv/iesniegumu-paraugi)",
+            "related_source",
+            "Official DVI forms page inspected in official search results.",
+            "Complaint/request forms updated 11.02.2026; page sets secure e-signature/e-address routes. Attachment rediscovery and version identity should be parent-index based."
+          ],
+          "category": "catalogue"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 326,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Document"
+          ],
+          "cells": [
+            "lv-38",
+            "Data State Inspectorate: complaint and request form examples",
+            "[local copy](../documents/forms/lv-dvi-complaint-and-request-form-index.md)"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/23",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-39",
+      "title": "Court Administration: state-provided legal aid information",
+      "source_type": "official_legal_aid_guidance",
+      "official_urls": [
+        "https://tiesas.lv/lv/valsts-nodrosinata-juridiska-palidziba"
+      ],
+      "source_identity_id": "lv:url:8c1989c1806192426bdb",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "lv:url:8c1989c1806192426bdb#url:lv:767f78785e4c"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "lv",
+          "edition": "undated",
+          "url": "https://tiesas.lv/lv/valsts-nodrosinata-juridiska-palidziba",
+          "path": null,
+          "representation_id": "lv:url:8c1989c1806192426bdb#url:lv:767f78785e4c",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/38"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 209,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-39",
+            "[Court Administration: state-provided legal aid information](https://www.tiesas.lv/lv/valsts-nodrosinata-juridiska-palidziba)",
+            "related_source",
+            "Official Court Administration page inspected.",
+            "Page states eligibility, categories including certain administrative court proceedings, and application route. Current criteria depend on law and court decision; not every immigration matter qualifies."
+          ],
+          "category": "catalogue"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 327,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Document"
+          ],
+          "cells": [
+            "lv-39",
+            "Court Administration: state-provided legal aid information",
+            "[local copy](../documents/oversight/lv-court-administration-legal-aid-information.md)"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/24",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-40",
+      "title": "Court Administration: legal-aid application forms",
+      "source_type": "official_legal_aid_forms",
+      "official_urls": [
+        "https://ta.gov.lv/lv/juridiskas-palidzibas-sanemsanas-pieprasijuma-veidlapas"
+      ],
+      "source_identity_id": "lv:url:18e9ac5d9b3621b882e5",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "lv:url:18e9ac5d9b3621b882e5#url:lv:37cb2dfaf221"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "lv",
+          "edition": "undated",
+          "url": "https://ta.gov.lv/lv/juridiskas-palidzibas-sanemsanas-pieprasijuma-veidlapas",
+          "path": null,
+          "representation_id": "lv:url:18e9ac5d9b3621b882e5#url:lv:37cb2dfaf221",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/39"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 215,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-40",
+            "[Court Administration: legal-aid application forms](https://www.ta.gov.lv/lv/juridiskas-palidzibas-sanemsanas-pieprasijuma-veidlapas)",
+            "related_source",
+            "Official Court Administration forms page inspected; dates and special appendices checked.",
+            "Page updated 20.06.2026; forms updated 19.06.2026, with a special appendix for deportable foreigners/international cases. Good parent index for dynamic form downloads; confirm new legal aid amendments and attachment versions."
+          ],
+          "category": "catalogue"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 328,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Document"
+          ],
+          "cells": [
+            "lv-40",
+            "Court Administration: legal-aid application forms",
+            "[local copy](../documents/forms/lv-court-administration-legal-aid-forms-index.md)"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/25",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-41",
+      "title": "Court Administration: administrative cases and appeal process",
+      "source_type": "court_procedure_guidance",
+      "official_urls": [
+        "https://tiesas.lv/lv/administrativas-lietas"
+      ],
+      "source_identity_id": "lv:url:c84d1f42e986cd2df571",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "lv:url:c84d1f42e986cd2df571#url:lv:b7e639c2e5b2"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "lv",
+          "edition": "undated",
+          "url": "https://tiesas.lv/lv/administrativas-lietas",
+          "path": null,
+          "representation_id": "lv:url:c84d1f42e986cd2df571#url:lv:b7e639c2e5b2",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/40"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 221,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-41",
+            "[Court Administration: administrative cases and appeal process](https://www.tiesas.lv/lv/administrativas-lietas)",
+            "related_source",
+            "Official Court Administration procedure page inspected.",
+            "Updated 11.02.2026; addresses administrative claim venue, procedure and fees. Useful general appeal guidance; reconcile special-law deadlines and current court fees before relying on it."
+          ],
+          "category": "catalogue"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 329,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Document"
+          ],
+          "cells": [
+            "lv-41",
+            "Court Administration: administrative cases and appeal process",
+            "[local copy](../documents/procedure/lv-court-administration-administrative-cases.md)"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/26",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-42",
+      "title": "E-lieta anonymised court decisions and proceedings information",
+      "source_type": "court_decision_repository",
+      "official_urls": [
+        "https://elieta.lv/"
+      ],
+      "source_identity_id": "lv:url:03d44530dcda19393fd4",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "lv:url:03d44530dcda19393fd4#url:lv:c54d89f783a1"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "lv",
+          "edition": "undated",
+          "url": "https://elieta.lv/",
+          "path": null,
+          "representation_id": "lv:url:03d44530dcda19393fd4#url:lv:c54d89f783a1",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/41"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 227,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-42",
+            "[E-lieta anonymised court decisions and proceedings information](https://www.elieta.lv)",
+            "related_source",
+            "Official Court Administration FAQ and current court-publication rules identify e-lieta as the public route; the live database was not directly inspected.",
+            "Current rules amended 28.04.2026; public anonymised decisions are identified in the official FAQ. Search access, recurring discoverability, stable IDs, redaction, coverage and automated access limits remain unverified."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/27",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-43",
+      "title": "Supreme Court / Senate case-law archive",
+      "source_type": "supreme_court_case_law",
+      "official_urls": [
+        "https://at.gov.lv/lv/tiesu-prakse/judikaturas-nolemumu-arhivs"
+      ],
+      "source_identity_id": "lv:url:7abce59184770855c1c9",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "lv:url:7abce59184770855c1c9#url:lv:69050cc073eb"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "lv",
+          "edition": "undated",
+          "url": "https://at.gov.lv/lv/tiesu-prakse/judikaturas-nolemumu-arhivs",
+          "path": null,
+          "representation_id": "lv:url:7abce59184770855c1c9#url:lv:69050cc073eb",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/42"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 233,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-43",
+            "[Supreme Court / Senate case-law archive](https://www.at.gov.lv/lv/tiesu-prakse/judikaturas-nolemumu-arhivs)",
+            "related_source",
+            "Official Supreme Court case-law site and search guidance inspected in official results.",
+            "Senate archive has selected precedential decisions; official guidance distinguishes decisions in E-lieta and non-public/archive holdings. Selective corpus, multiple archive/search paths and historical coverage mean it is not a complete national case-law feed."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/28",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-44",
+      "title": "Constitutional Court case-law database",
+      "source_type": "constitutional_court_case_law",
+      "official_urls": [
+        "https://satversmestiesa.lv/en/data-base-case-law"
+      ],
+      "source_identity_id": "lv:url:8a458ae7cd74a277c875",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "pending"
+      ],
+      "representation_ids": [
+        "lv:url:8a458ae7cd74a277c875#url:lv:344ac619d1ef"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "lv",
+          "edition": "undated",
+          "url": "https://satversmestiesa.lv/en/data-base-case-law",
+          "path": null,
+          "representation_id": "lv:url:8a458ae7cd74a277c875#url:lv:344ac619d1ef",
+          "acceptance_status": [
+            "pending"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/43"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 239,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-44",
+            "[Constitutional Court case-law database](https://www.satversmestiesa.lv/en/data-base-case-law)",
+            "related_source",
+            "Official Constitutional Court database page inspected.",
+            "Page updated 19.01.2026; downloadable Citavi database file is dated 11.12.2023 and text is in Latvian. Material maintenance risk: parent page current but database file date is old; database requires external Citavi software. Court judgments are also separately published."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/pending_references/2",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-45",
+      "title": "Latvijas Vēstnesis daily issue archive and act publication pages",
+      "source_type": "official_gazette_archive",
+      "official_urls": [
+        "https://vestnesis.lv/"
+      ],
+      "source_identity_id": "lv:url:8541c8860f7042dd3f75",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "lv:url:8541c8860f7042dd3f75#url:lv:35aa429fd29e"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "lv",
+          "edition": "undated",
+          "url": "https://vestnesis.lv/",
+          "path": null,
+          "representation_id": "lv:url:8541c8860f7042dd3f75#url:lv:35aa429fd29e",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/44"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 245,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-45",
+            "[Latvijas Vēstnesis daily issue archive and act publication pages](https://www.vestnesis.lv/)",
+            "related_source",
+            "Official Gazette archive inspected through the 2026/119.1 publication.",
+            "Archive browses issues from 1993 onward; each target publication exposes its own OP identifier and PDF link. Accepted as an official source-of-record and discovery route; routine signature validation or replay is not required for use of current consolidated text links."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/29",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-46",
+      "title": "Likumi.lv “newly published acts” RSS discovery surface",
+      "source_type": "legislation_change_discovery",
+      "official_urls": [
+        "https://likumi.lv/"
+      ],
+      "source_identity_id": "lv:url:71104695a666c1fac8c2",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "pending",
+        "discovery"
+      ],
+      "representation_ids": [
+        "lv:url:71104695a666c1fac8c2#url:lv:bc01c4fe29bd"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "lv",
+          "edition": "undated",
+          "url": "https://likumi.lv/",
+          "path": null,
+          "representation_id": "lv:url:71104695a666c1fac8c2#url:lv:bc01c4fe29bd",
+          "acceptance_status": [
+            "pending",
+            "discovery"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/45"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 251,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-46",
+            "[Likumi.lv “newly published acts” RSS discovery surface](https://likumi.lv/)",
+            "related_source",
+            "Official page shows an RSS icon labelled “RSS Šodien publicēti tiesību akti”; the browser followed only the image asset, not the feed target.",
+            "Feed existence is suggested by official UI but feed URL, payload, coverage, retention and terms were not verified. Do not build a poller from the icon alone. Establish the actual feed target and compare its scope with Gazette issue search before use."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/pending_references/3",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-47",
+      "title": "Cabinet Regulation No. 536 — Official Publications Regulation (reuse fees)",
+      "source_type": "reuse_pricing_legislation",
+      "official_urls": [
+        "https://likumi.lv/ta/id/325308"
+      ],
+      "source_identity_id": "lv:url:680c864b3e66238df2f6",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "lv:url:680c864b3e66238df2f6#url:lv:71b30fbd8f2f"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "lv",
+          "edition": "undated",
+          "url": "https://likumi.lv/ta/id/325308",
+          "path": null,
+          "representation_id": "lv:url:680c864b3e66238df2f6#url:lv:71b30fbd8f2f",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/46"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 272,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-47",
+            "[Cabinet Regulation No. 536 — Official Publications Regulation](https://likumi.lv/ta/id/325308)",
+            "related_source",
+            "Official in-force regulation record fetched and converted.",
+            "Adopted 10.08.2021, effective 13.08.2021. Sets fees for re-use of official publications and Likumi.lv systematised acts: EUR 0.57 per document, EUR 21.34 per publication group/month, or EUR 128.06 for all groups/month. Confirm which fee and delivery scope applies to this library."
+          ],
+          "category": "catalogue"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 330,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Document"
+          ],
+          "cells": [
+            "lv-47",
+            "Cabinet Regulation No. 536 — Official Publications Regulation (reuse fees)",
+            "[local copy](../documents/legislation/lv-cabinet-regulation-536-reuse-fees.md)"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/30",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-48",
+      "title": "Latvijas Vēstnesis official-publication reuse procedure",
+      "source_type": "publisher_reuse_process",
+      "official_urls": [
+        "https://vestnesis.lv/atkalizmantosana"
+      ],
+      "source_identity_id": "lv:url:34cc8e51a1c9458ddb11",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "lv:url:34cc8e51a1c9458ddb11#url:lv:22d15bd9847a"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "lv",
+          "edition": "undated",
+          "url": "https://vestnesis.lv/atkalizmantosana",
+          "path": null,
+          "representation_id": "lv:url:34cc8e51a1c9458ddb11#url:lv:22d15bd9847a",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/47"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 273,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-48",
+            "[Latvijas Vēstnesis re-use procedure](https://www.vestnesis.lv/atkalizmantosana)",
+            "related_source",
+            "Official publisher page fetched and converted.",
+            "Re-use must be coordinated in writing; the request must state purpose and product/service. The page says the current interface supports grouped official notices. It does not establish that the interface supplies a recurring feed of consolidated legal acts."
+          ],
+          "category": "catalogue"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 331,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Document"
+          ],
+          "cells": [
+            "lv-48",
+            "Latvijas Vēstnesis official-publication reuse procedure",
+            "[local copy](../documents/guidance/lv-vestnesis-reuse-procedure.md)"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/31",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-49",
+      "title": "Latvijas Vēstnesis service directory — reuse and current fees",
+      "source_type": "publisher_service_and_fee_page",
+      "official_urls": [
+        "https://lv.lv/lv/pakalpojumi"
+      ],
+      "source_identity_id": "lv:url:7fb399bf10d6de2c0355",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "lv:url:7fb399bf10d6de2c0355#url:lv:d59341874b91"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "lv",
+          "edition": "undated",
+          "url": "https://lv.lv/lv/pakalpojumi",
+          "path": null,
+          "representation_id": "lv:url:7fb399bf10d6de2c0355#url:lv:d59341874b91",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/48"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 274,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-49",
+            "[Latvijas Vēstnesis services and re-use information](https://www.lv.lv/lv/pakalpojumi)",
+            "related_source",
+            "Official publisher service page fetched and converted.",
+            "Describes the re-use service, contact route, fee schedule and Regulation No. 536. Treat it and its linked tariff as parent routes for current service details; recheck fees before reuse."
+          ],
+          "category": "catalogue"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 332,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Document"
+          ],
+          "cells": [
+            "lv-49",
+            "Latvijas Vēstnesis service directory — reuse and current fees",
+            "[local copy](../documents/guidance/lv-vestnesis-service-directory-reuse-fees.md)"
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/32",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-50",
+      "title": "Declaration of Place of Residence Act",
+      "source_type": "residence_registration_legislation",
+      "official_urls": [
+        "https://likumi.lv/ta/id/64328"
+      ],
+      "source_identity_id": "lv:url:0f4e63c6804e957b0b16",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "lv:url:0f4e63c6804e957b0b16#url:lv:fb6d633ae41c"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "lv",
+          "edition": "undated",
+          "url": "https://likumi.lv/ta/id/64328",
+          "path": null,
+          "representation_id": "lv:url:0f4e63c6804e957b0b16#url:lv:fb6d633ae41c",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/49"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 280,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-50",
+            "[Declaration of Place of Residence Act](https://likumi.lv/ta/id/64328)",
+            "related_source",
+            "Official consolidated Latvian act page inspected on 21 October 2026; publisher metadata shows it in force.",
+            "Covers address declaration and competent-authority rules. It does not establish EU/EEA residence eligibility; read with Act No. 369282 and the Register of Natural Persons Act."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/33",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-51",
+      "title": "Law on the Register of Natural Persons",
+      "source_type": "population_register_legislation",
+      "official_urls": [
+        "https://likumi.lv/ta/id/296185"
+      ],
+      "source_identity_id": "lv:url:d3b6fd839e0aef062acf",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "lv:url:d3b6fd839e0aef062acf#url:lv:ee6b835299fd"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "lv",
+          "edition": "undated",
+          "url": "https://likumi.lv/ta/id/296185",
+          "path": null,
+          "representation_id": "lv:url:d3b6fd839e0aef062acf#url:lv:ee6b835299fd",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/50"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 281,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-51",
+            "[Law on the Register of Natural Persons](https://likumi.lv/ta/id/296185)",
+            "related_source",
+            "Official consolidated edition inspected; the selected edition is in force from 29 April 2026.",
+            "Section 4 includes foreigners holding or applying for listed EU registration/permanent-residence documents. The register law does not itself grant residence rights; read with the free-movement Act and data-protection rules."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/34",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
+      "id": "lv-52",
+      "title": "Civil Status Act",
+      "source_type": "civil_status_legislation",
+      "official_urls": [
+        "https://likumi.lv/ta/id/253442"
+      ],
+      "source_identity_id": "lv:url:08ec4d9a76dcc1d9639d",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference"
+      ],
+      "representation_ids": [
+        "lv:url:08ec4d9a76dcc1d9639d#url:lv:0d33a0178d48"
+      ],
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "lv",
+          "edition": "undated",
+          "url": "https://likumi.lv/ta/id/253442",
+          "path": null,
+          "representation_id": "lv:url:08ec4d9a76dcc1d9639d#url:lv:0d33a0178d48",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/51"
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 282,
+          "table_headers": [
+            "ID",
+            "Source",
+            "Relation",
+            "Verification",
+            "Route/version note"
+          ],
+          "cells": [
+            "lv-52",
+            "[Civil Status Act](https://likumi.lv/ta/id/253442)",
+            "related_source",
+            "Official consolidated Latvian act page inspected on 21 October 2026; publisher metadata shows it in force.",
+            "Relevant to civil-status registration and foreign marital-status documents for marriage registration in Latvia. It does not resolve recognition of every foreign family document in residence procedures; section 4(3) points to the Administrative Procedure Law for refusal appeals."
+          ],
+          "category": "catalogue"
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_references/35",
+          "category": "acceptance"
+        }
+      ],
+      "status_record_ids": []
+    }
+  ]
+}

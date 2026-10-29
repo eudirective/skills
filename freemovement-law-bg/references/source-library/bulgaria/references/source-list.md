@@ -114,3 +114,58 @@ See source-acceptance.json for individual decisions, source-dependencies.json fo
 ## Scope of conclusion
 
 Bulgaria now has a broader set of reviewed official links, including the dedicated EU free-movement Act, Foreigners Act and implementing rules, Civil Registration Act, general procedure, tariffs, identity-document legislation, forms, and a regional office directory. The pack has 16 accepted local documents and is not complete: case-law discovery, mission and regional practice, and issue-led legal coverage remain open. The dated MVR rules consolidation also needs human review for currentness.
+
+<!-- source-identity-inventory:start -->
+## Source identity crosswalk
+
+Canonical rows: **46**; provisional unique IDs: **46**; unresolved entries: **6**. This crosswalk preserves catalogue IDs, links external-reference and local-artifact representations to a source identity, and keeps acceptance status separate.
+
+| Existing entry ID | Canonical source identity | Resolution | Representations | Catalogued statuses | Status record IDs |
+|---|---|---|---|---|---|
+| `bg-access-info` | `bg:url:66185ea8e1b287c3dcd2` | resolved | official_reference/unspecified/undated | candidate | — |
+| `bg-admin-court-directory` | `bg:url:2ac85630c42573eb0e64` | resolved | official_reference/bg/2026 | accepted_external_reference | — |
+| `bg-annex-16-prior-consultations` | `bg:ambiguous:bg-annex-16-prior-consultations:e4ce7c707d1e` | unresolved | official_reference/en/2024<br>official_reference/en/2024 | accepted_external_reference | — |
+| `bg-apc` | `bg:url:8166d04f010930febd5e` | resolved | local_artifact/unspecified/undated<br>official_reference/bg/2026<br>official_reference/bg/2026 | accepted_external_reference, pending | — |
+| `bg-civil-registration-act` | `bg:url:411d3305f0cccd541ce6` | resolved | local_artifact/unspecified/undated<br>official_reference/bg/2024-10-08<br>official_reference/bg/2024-10-08 | accepted_external_reference, accepted_local_copy | — |
+| `bg-data-complaints` | `bg:url:779a76bfccd3dea3ddd7` | resolved | official_reference/unspecified/undated | candidate | — |
+| `bg-discrimination-act` | `bg:url:58c6dd8e08f4c15f6465` | resolved | local_artifact/unspecified/undated<br>official_reference/bg/2026 | accepted_external_reference, accepted_local_copy | — |
+| `bg-discrimination-complaint` | `bg:url:9d36e72876ff9632dc96` | resolved | official_reference/bg/2026<br>official_reference/unspecified/undated | accepted_external_reference | — |
+| `bg-dubai-eu-family` | `bg:url:9272cbd61a75b1c43877` | resolved | official_reference/unspecified/undated | candidate | — |
+| `bg-eu-act-en-translation` | `bg:url:12d674bffaa8ca3539b6` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | accepted_local_copy | — |
+| `bg-eu-act-state-gazette` | `bg:url:9a73979f4e25441ad1a4` | resolved | local_artifact/bg/undated<br>local_artifact/unspecified/2006<br>official_reference/unspecified/undated | accepted_local_copy | — |
+| `bg-eu-form-declaration` | `bg:url:9b145ff6a629a4bf09a2` | resolved | official_reference/bg/2026<br>official_reference/bg/2026 | accepted_external_reference | — |
+| `bg-eu-form-declaration-annex-6-2018-historical` | `bg:url:98a413e3a0c56b6e1e4a` | resolved | local_artifact/unspecified/2018<br>official_reference/unspecified/undated | accepted_local_copy, historical | — |
+| `bg-eu-form-extended` | `bg:url:aad0a9b63295627ca23e` | resolved | local_artifact/unspecified/2018<br>official_reference/bg/2026<br>official_reference/bg/2026<br>official_reference/en/2026<br>official_reference/en/2026<br>official_reference/unspecified/undated | accepted_external_reference, accepted_local_copy | — |
+| `bg-eu-form-other-articles` | `bg:url:3702038d87fed89a980d` | resolved | official_reference/bg/2026<br>official_reference/bg/2026 | accepted_external_reference | — |
+| `bg-eu-form-other-articles-iisda-2020` | `bg:record:bg-eu-form-other-articles-iisda-2020:22e6fe05df5a` | unresolved | local_artifact/unspecified/2020 | accepted_local_copy | — |
+| `bg-eu-form-permanent` | `bg:url:47cef17f27a415c2eb36` | resolved | local_artifact/unspecified/2018<br>official_reference/bg/2026<br>official_reference/bg/2026<br>official_reference/en/2026<br>official_reference/en/2026<br>official_reference/unspecified/undated | accepted_external_reference, accepted_local_copy | — |
+| `bg-eu-free-movement-act` | `bg:url:5c0f28ab971f2439245e` | resolved | local_artifact/bg/undated<br>local_artifact/unspecified/undated<br>official_reference/bg/2026<br>official_reference/bg/2026 | accepted_external_reference, accepted_local_copy | — |
+| `bg-eu-guidance-en` | `bg:url:be23a0a85fccb0c7f50c` | resolved | local_artifact/en/undated<br>official_reference/en/undated<br>official_reference/en/2026 | accepted_external_reference, accepted_local_copy | — |
+| `bg-eu-instruction` | `bg:url:d98d8058dc398bb8d21a` | resolved | local_artifact/unspecified/undated<br>official_reference/bg/2021<br>official_reference/bg/2021 | accepted_external_reference, accepted_local_copy | — |
+| `bg-eu-law-service` | `bg:ambiguous:bg-eu-law-service:3f2da5d47ed5` | unresolved | official_reference/bg/2026 | accepted_external_reference | — |
+| `bg-eu-notice-procedure` | `bg:url:6c1867546067c4731685` | resolved | official_reference/unspecified/undated | candidate | — |
+| `bg-foreigners-act` | `bg:url:0be72bfe01e825e76791` | resolved | local_artifact/unspecified/undated<br>official_reference/bg/2026<br>official_reference/bg/2026 | accepted_external_reference, accepted_local_copy | — |
+| `bg-foreigners-act-rules` | `bg:url:3e5eef755cffed947946` | resolved | local_artifact/bg/undated<br>local_artifact/unspecified/undated<br>official_reference/bg/2026<br>official_reference/bg/2026 | accepted_external_reference, pending | — |
+| `bg-legal-aid-act` | `bg:url:7e58fd428b416f004505` | resolved | official_reference/unspecified/undated | candidate | — |
+| `bg-mfa-missions` | `bg:url:4b59d30dbb3d0969f8bd` | resolved | official_reference/unspecified/undated | candidate | — |
+| `bg-mfa-tariff-3` | `bg:url:fe08bc6db1e6bd9fd5bf` | resolved | official_reference/bg/2026<br>official_reference/bg/2026 | accepted_external_reference | — |
+| `bg-mfa-visa-form` | `bg:url:406ea0028bd63a2264ca` | resolved | local_artifact/unspecified/undated<br>official_reference/bg/2026<br>official_reference/bg/2026 | accepted_external_reference, accepted_local_copy | — |
+| `bg-mfa-visa-hub` | `bg:ambiguous:bg-mfa-visa-hub:375463e3c71c` | unresolved | local_artifact/unspecified/undated<br>official_reference/en/2026 | accepted_external_reference, accepted_local_copy | — |
+| `bg-mfa-visa-ordinance-consolidated` | `bg:url:cdcb31bb19d33078e912` | resolved | local_artifact/unspecified/undated<br>official_reference/bg/2025<br>official_reference/bg/2025 | accepted_external_reference, accepted_local_copy | — |
+| `bg-mvr-legislation-index` | `bg:url:47bc62d57bf0d7703e66` | resolved | official_reference/bg/2026 | accepted_external_reference | — |
+| `bg-mvr-regional-offices` | `bg:ambiguous:bg-mvr-regional-offices:9f490a21d65d` | unresolved | local_artifact/bg/undated<br>official_reference/bg/2026<br>official_reference/bg/2026 | accepted_external_reference, pending | — |
+| `bg-mvr-tariff-4` | `bg:url:8952595df6bd9a95145f` | resolved | official_reference/bg/2026<br>official_reference/bg/2026 | accepted_external_reference | — |
+| `bg-nlex` | `bg:url:88132198973c405f2d14` | resolved | official_reference/bg/2026<br>official_reference/bg/2026<br>official_reference/en/2026<br>official_reference/en/2026 | accepted_external_reference, discovery | — |
+| `bg-ombudsman-act` | `bg:url:3b12c1d312799ccb9898` | resolved | official_reference/unspecified/undated | candidate | — |
+| `bg-ombudsman-complaints` | `bg:url:28ed99fe3c74f6b68406` | resolved | local_artifact/bg/undated<br>official_reference/bg/2026<br>official_reference/bg/2026 | accepted_external_reference, pending | — |
+| `bg-personal-data-act` | `bg:url:af99d6edaf97d88f04c0` | resolved | official_reference/unspecified/undated | candidate | — |
+| `bg-personal-documents-act` | `bg:url:1388e32a45cccc5645f6` | resolved | official_reference/bg/2025<br>official_reference/bg/2025 | accepted_external_reference | — |
+| `bg-personal-documents-rules` | `bg:url:aad6aa66fd1e5399ef83` | resolved | official_reference/bg/2024<br>official_reference/bg/2024 | accepted_external_reference | — |
+| `bg-pris-visa-ordinance` | `bg:url:0a509bc109f213502696` | resolved | official_reference/unspecified/undated | candidate | — |
+| `bg-vas-case-3002-2026` | `bg:url:8814d15dd5beeb40ee59` | resolved | local_artifact/unspecified/2026<br>official_reference/unspecified/undated | accepted_local_copy | — |
+| `bg-vas-case-search` | `bg:url:10d139158ecabd356e7c` | resolved | official_reference/bg/2026 | accepted_external_reference | — |
+| `bg-visa-amendment-221-2025` | `bg:url:2e525fc6d183bdc71734` | resolved | local_artifact/unspecified/2025<br>official_reference/bg/2025 | accepted_external_reference, accepted_local_copy | — |
+| `bg-visa-amendment-3-2025` | `bg:url:067a026ec575b0f8b4c4` | resolved | local_artifact/unspecified/2025<br>official_reference/unspecified/undated | accepted_local_copy | — |
+| `bg-visa-ordinance-mvr` | `bg:url:aea724b41456c7f92bc6` | resolved | local_artifact/unspecified/2019<br>official_reference/unspecified/undated | accepted_local_copy | — |
+| `candidate-manifest.json` | `bg:record:candidate-manifest-json:45a95fb2f8a4` | unresolved | local_artifact/bg/undated | pending, candidate | — |
+<!-- source-identity-inventory:end -->

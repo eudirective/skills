@@ -21,3 +21,20 @@ These are source locators, not full text copies or topic-coverage findings. The 
 The previous candidates and manifests are preserved in the EU Source Update Monitor local archive. Old converted bodies were not promoted as source text. Fifteen prior conversion outputs failed offline replay; sixteen replayed byte-for-byte, which does not establish legal sufficiency or reuse permission. Lovdata's terms were checked on 25 October: individual formal laws/central regulations have a copying route under NLOD 2.0 with attribution, but bulk copying/systematic extraction is restricted. This review therefore keeps only reference notes.
 
 No Norway-specific Source Monitor action is registered. The legacy updater has been disabled because it wrote candidate files and manifests into the pack. No Norway-specific replacement action is registered. National topic coverage, cross-reference dependencies, continuing case-law/mission discovery and operational evidence remain open.
+
+
+## Legalize-no crosswalk (29 October 2026)
+
+The following Legalize files were matched to official records already listed in this pack:
+
+| Existing source | Legalize candidate file | Crosswalk disposition |
+|---|---|---|
+| no-06 Utlendingsloven, LOV-2008-05-15-35 | [`no/LOV-2008-05-15-35.md`](https://github.com/legalize-dev/legalize-no/blob/729ce30333de9d6f9f1e5faf537999cf42bc2a2f/no/LOV-2008-05-15-35.md) | Identity confirmed. Candidate metadata names amendment LOV-2025-06-20-96; official Lovdata material also exposes later 2026 changes to the Act. Do not treat this file as the current consolidated text without an exact-version comparison. |
+| no-08 EØS-loven, LOV-1992-11-27-109 | [`no/LOV-1992-11-27-109.md`](https://github.com/legalize-dev/legalize-no/blob/729ce30333de9d6f9f1e5faf537999cf42bc2a2f/no/LOV-1992-11-27-109.md) | Identity confirmed. The Legalize file is a candidate snapshot; its `last_updated` field is the original 1994 date, not proof of present version status. |
+| no-54 EØS-arbeidstakarlova, LOV-2012-12-14-81 | [`no/LOV-2012-12-14-81.md`](https://github.com/legalize-dev/legalize-no/blob/729ce30333de9d6f9f1e5faf537999cf42bc2a2f/no/LOV-2012-12-14-81.md) | Identity confirmed as an EEA worker-mobility statute. Keep the EEA incorporation and the official current source record as the controlling version evidence. |
+
+Legalize-no's README states that its input is Lovdata's current-laws public-data package; central regulations are not included in that package, amendment history is not represented by the free-data extract, and images are omitted. Therefore the Legalize route does **not** fill the existing no-07 Utlendingsforskriften gap or no-05 Avdeling II/regional-regulation gap. It must not be described as a regulations retrieval method.
+
+**Use and attribution:** For an individual candidate, cite Lovdata's official law record and attribute the reused data to Stiftelsen Lovdata under NLOD 2.0, with the Legalize-no repository and pinned revision as the intermediary. Do not bulk-copy or systematically extract the dataset; Lovdata's terms distinguish single-law reuse from bulk extraction. The repo's MIT license covers pipeline code, not a separate content grant.
+
+**Conversion rules:** preserve Bokmål, formal identifiers, chapters/sections, lists, notes and footnotes; record the exact Legalize commit and source record; compare complete body and key EEA provisions against the same official Lovdata version; distinguish original publication date from amendment/effective dates; mark omitted images and attachments; never promote based on repository date or hash alone. No Legalize file is accepted as a retained source text in this review.

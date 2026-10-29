@@ -54,3 +54,48 @@
 - KNU decisions are published through the Government portal after the outcome is communicated to the appellant and are redacted. Their collection is selective; it does not establish complete administrative case-law coverage.
 
 Thirty-six official external references are accepted within their listed scopes. No local copies or topics are accepted, and Iceland is not marked complete. The capture/conversion workflow and SGML archive path are optional maintenance mechanisms, not prerequisites for source use.
+
+<!-- source-identity-inventory:start -->
+## Source identity crosswalk
+
+Canonical rows: **36**; provisional unique IDs: **36**; unresolved entries: **0**. This crosswalk preserves catalogue IDs, links external-reference and local-artifact representations to a source identity, and keeps acceptance status separate.
+
+| Existing entry ID | Canonical source identity | Resolution | Representations | Catalogued statuses | Status record IDs |
+|---|---|---|---|---|---|
+| `is-01` | `is:url:e5eb111f7154da163a04` | resolved | official_reference/is/undated | accepted_external_reference | — |
+| `is-02` | `is:url:7f8c00637aa823bde1a1` | resolved | official_reference/is/Lagasafn 158a | accepted_external_reference | — |
+| `is-03` | `is:url:716c0cb6fb1b04222ba1` | resolved | official_reference/is/Lagasafn 158a | accepted_external_reference | — |
+| `is-04` | `is:url:b7cfda53557f35fd9cac` | resolved | official_reference/is/Lagasafn 158a | accepted_external_reference | — |
+| `is-05` | `is:url:2bfdee90e64f06e4abf7` | resolved | local_artifact/unspecified/undated<br>official_reference/is/undated | accepted_external_reference, pending | — |
+| `is-06` | `is:url:40f93bbaf9d543e5b153` | resolved | official_reference/is/undated | accepted_external_reference | — |
+| `is-07` | `is:url:fe848b5932b0bd6d3b1c` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `is-08` | `is:url:b2026863c55f6ee47cd4` | resolved | local_artifact/unspecified/undated<br>official_reference/en/undated | accepted_external_reference, pending | — |
+| `is-09` | `is:url:c42a5ebf85bad985c756` | resolved | local_artifact/unspecified/undated<br>official_reference/en/undated | accepted_external_reference, pending | — |
+| `is-10` | `is:url:9beefac051c07e398197` | resolved | local_artifact/unspecified/undated<br>official_reference/en/undated | accepted_external_reference, pending | — |
+| `is-11` | `is:url:54d3385afc558478dda5` | resolved | local_artifact/unspecified/undated<br>official_reference/en/undated | accepted_external_reference, pending | — |
+| `is-12` | `is:url:616421fea0aa0d3c2bd5` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `is-13` | `is:url:304413837be9dc0f05d4` | resolved | local_artifact/unspecified/undated<br>official_reference/en/undated | accepted_external_reference, pending | — |
+| `is-14` | `is:url:b00e85cba6c91e19cf3a` | resolved | local_artifact/unspecified/undated<br>official_reference/en/undated | accepted_external_reference, pending | — |
+| `is-15` | `is:url:ea66a6d3f7bf1d9a5ea9` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `is-16` | `is:url:d6a02eb524ab4688c768` | resolved | local_artifact/unspecified/undated<br>official_reference/en/undated | accepted_external_reference, pending | — |
+| `is-17` | `is:url:16656e098d2be48bc8d7` | resolved | local_artifact/unspecified/undated<br>official_reference/en/undated | accepted_external_reference, pending | — |
+| `is-18` | `is:url:d1599447ea19e62a76cf` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `is-19` | `is:url:b6e7628afbe328f53fb5` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `is-20` | `is:url:68b55512448a662b44bf` | resolved | official_reference/is/undated | accepted_external_reference | — |
+| `is-21` | `is:url:281a9098b16dbb39ec72` | resolved | official_reference/is/undated | accepted_external_reference | — |
+| `is-22` | `is:url:af41e57a1aa5ba18e967` | resolved | official_reference/is/Lagasafn 158a | accepted_external_reference | — |
+| `is-23` | `is:url:15ed8269e05a6a7e6bc3` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `is-24` | `is:url:1013e0edd0e35198fff9` | resolved | official_reference/is/Lagasafn 158a | accepted_external_reference | — |
+| `is-25` | `is:url:a7c88af233297328abe2` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `is-26` | `is:url:6ea3e1e20ef6e7dbfdf6` | resolved | official_reference/is/undated | accepted_external_reference | — |
+| `is-27` | `is:url:a1f5517132ea960b158d` | resolved | official_reference/is/undated | accepted_external_reference | — |
+| `is-28` | `is:url:a7887defa5ecafde271f` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `is-29` | `is:url:4693db024b17aaa7cf84` | resolved | official_reference/is/undated | accepted_external_reference | — |
+| `is-30` | `is:url:067f3b40ccef54d6c000` | resolved | official_reference/is/undated | accepted_external_reference | — |
+| `is-31` | `is:url:fe85a811788e1c4c214e` | resolved | official_reference/is/undated | accepted_external_reference | — |
+| `is-32` | `is:url:ee67f636fae12a9ab4c4` | resolved | official_reference/is/undated | accepted_external_reference | — |
+| `is-33` | `is:url:57a93bad028b68faf6ed` | resolved | official_reference/is/Lagasafn 158a | accepted_external_reference | — |
+| `is-34` | `is:url:c6e3faee1573eb0b31dd` | resolved | official_reference/is/Lagasafn 158a | accepted_external_reference | — |
+| `is-35` | `is:url:c6eb672bab9b96a43d17` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `is-36` | `is:url:8aef7840dbf8395b9e26` | resolved | official_reference/is/undated | accepted_external_reference | — |
+<!-- source-identity-inventory:end -->

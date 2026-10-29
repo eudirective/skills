@@ -91,3 +91,86 @@ Accepted means the source passed per-record gates; it does not prove that all le
 - [Residence/removal crosswalk](procedural-crosswalk.md)
 - [Guidance/form/authority link audit](guidance-link-audit.json)
 - [Land and mission discovery queue](operational-discovery.json)
+
+<!-- source-identity-inventory:start -->
+## Source identity crosswalk
+
+Canonical rows: **74**; provisional unique IDs: **74**; unresolved entries: **0**. This crosswalk preserves catalogue IDs, links external-reference and local-artifact representations to a source identity, and keeps acceptance status separate.
+
+| Existing entry ID | Canonical source identity | Resolution | Representations | Catalogued statuses | Status record IDs |
+|---|---|---|---|---|---|
+| `at-avg-17` | `at:url:4413e7ae92db2e18b253` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-avg-73` | `at:url:140b55b805a59a331562` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-bfa-vg-10` | `at:url:9231d0ca17a30bb284e8` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-bfa-vg-9` | `at:url:34096c0beafd4a356e1b` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-bmeia-representation-directory` | `at:url:882639fe6a16b2278def` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-bmeia-settlement-residence` | `at:url:51983bc325a2b33bc8f0` | resolved | local_artifact/en/undated<br>official_reference/en/undated | accepted_local_copy | — |
+| `at-bmeia-visa` | `at:url:e766cdfd8ed942d02f5b` | resolved | local_artifact/en/undated<br>official_reference/en/undated | accepted_local_copy | — |
+| `at-bmi-eea-documentation-form` | `at:url:2aa818178d7ccc77ab59` | resolved | local_artifact/en/undated<br>official_reference/en/undated | accepted_local_copy | — |
+| `at-bmi-eea-documentation-form-explanation` | `at:url:3e79cef5fb2e5369f0a9` | resolved | local_artifact/en/undated<br>official_reference/en/undated | accepted_local_copy | — |
+| `at-bvwg-g306-2026-2325799` | `at:url:af3363a346293d18eecd` | resolved | local_artifact/de/2026<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-bvwg-w112-2246194-2-2023` | `at:url:0947e63962fa28b01896` | resolved | local_artifact/de/2023<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-dsb-complaint` | `at:url:d640fdcff529499424c5` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-dsb-online-complaint-form` | `at:url:377949277a100e5bb696` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-fpg-11` | `at:url:cddcde7ba05b80fe1665` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-fpg-11a` | `at:url:b8e110a13f446e5bd155` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-fpg-11b` | `at:url:2c10a6f135c5f2d2e13b` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-fpg-15a` | `at:url:b4b1c6303d32acb89395` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-fpg-15b` | `at:url:dcd6aa1d451e6f2b2d6a` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-fpg-2-4-11` | `at:url:8ebee2169901037ffb4f` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-fpg-66` | `at:url:12001c19d5586556f1f7` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-fpg-67` | `at:url:877c844d73ffc231e8f6` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-fpg-70` | `at:url:f76380048f83e3f8d4c1` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-guidance-family-card` | `at:url:5de244a9867758827ddd` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-guidance-family-index` | `at:url:dd9874ffa4bce618e7c8` | resolved | local_artifact/de/undated<br>official_reference/de/undated | pending, discovery | — |
+| `at-guidance-visa-application` | `at:url:951c686a9f44350ef8a3` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-ifg-1` | `at:url:c4a7a6f4079b654fae36` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-ifg-10` | `at:url:4c222a887223cb92448e` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-ifg-11` | `at:url:128efa3391d1015c420d` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-ifg-12` | `at:url:f82a81938d0af7ea71cf` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-ifg-13` | `at:url:9d2d41a46bec6b7bc9cb` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-ifg-14` | `at:url:1f559da613f1f47658c2` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-ifg-15` | `at:url:6e3137a55fd88516b6f4` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-ifg-16` | `at:url:595a60be97d9258b5f86` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-ifg-17` | `at:url:80bd76006c6e4273d204` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-ifg-18` | `at:url:25c5c44acf2d5320d167` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-ifg-19` | `at:url:647a502f6a6531661e69` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-ifg-2` | `at:url:823dc56d8f71dcb8b8ee` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-ifg-20` | `at:url:f4bdb3bbb14ccf115664` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-ifg-3` | `at:url:fea047633960d43736ff` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-ifg-4` | `at:url:3ad70af68a8f336882ec` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-ifg-5` | `at:url:0fb8802571b09f300ef1` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-ifg-6` | `at:url:4608e81717c7a8571087` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-ifg-7` | `at:url:cb8a061387cb6bcf79b1` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-ifg-8` | `at:url:09b4777cc9fc120232b4` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-ifg-9` | `at:url:88d1a1cacd4b0d7220d6` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-lvwg-ni-2019-518` | `at:url:3e8833f72dc8f59edab3` | resolved | local_artifact/de/2019<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-lvwg-wien-2022-6086` | `at:url:0c1e8513e3360312d540` | resolved | local_artifact/de/2022<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-nag-3-authority` | `at:url:2f70aa8ae9361ed4ab0f` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-nag-4-venue` | `at:url:3812001605ffb68f7f1e` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-nag-51` | `at:url:4872c9bd9009746c277a` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-nag-52` | `at:url:c8ec87ebc526c06d2843` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-nag-53` | `at:url:16ccb9f25f5f13503ce8` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-nag-53a` | `at:url:e5ad6c04815bb9f059e9` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-nag-54` | `at:url:66491cb0976d0a21a1d0` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-nag-54a` | `at:url:9501e85e4dcc81ee43ef` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-nag-55` | `at:url:effc79f577d24c7d8fb0` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-nag-56` | `at:url:2bf6d6bef81c5a28dfcb` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-nag-57` | `at:url:b3815a19d911fd010180` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-nag-dv-5` | `at:url:4b7862eb2fb9914f0615` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-nag-dv-anl-5` | `at:url:b644adf8e26d063c5835` | resolved | local_artifact/de/undated<br>official_reference/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-nag-dv-anl-6` | `at:url:e64d732630fb16d768ad` | resolved | local_artifact/de/undated<br>official_reference/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-oesterreich-schengen-visa-form` | `at:url:e7c10c05ad7eb72ee240` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-volksanwaltschaft-complaint` | `at:url:b73ebf88e18ada88b1d6` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-volksanwaltschaft-online-complaint-form` | `at:url:eebb57cfbbe2290ca4ae` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-volksanwaltschaft-pdf-complaint-form` | `at:url:8bdafb03f50440bf908d` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-vwgh-ra-2015-09-0137` | `at:url:7f88767e6a930554a214` | resolved | local_artifact/de/2015-09<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-vwgh-ra-2019-22-0177` | `at:url:395be0d61076e83d160c` | resolved | local_artifact/de/2019-22<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-vwgh-ra-2022-22-0149` | `at:url:eb6378a0fe312ab019ed` | resolved | local_artifact/de/2022-22<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-vwgh-ra-2023-22-0090-0091` | `at:url:242af3ec145ca40ada24` | resolved | local_artifact/de/2023-22<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-vwgh-ro-2020-09-0011` | `at:url:a690be1de13d571a9c1c` | resolved | local_artifact/de/2020-09<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-vwgh-ro-2020-22-0020` | `at:url:c3cb12dd96a8d1a34fbc` | resolved | local_artifact/de/2020-22<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-vwgh-ro-2021-22-0012` | `at:url:1c118b11ba085c300b19` | resolved | local_artifact/de/2021-22<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-vwgvg-7` | `at:url:510b26b34d8d59ef7ddb` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+| `at-vwgvg-8` | `at:url:9b637dfc21a2655d1125` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_local_copy | — |
+<!-- source-identity-inventory:end -->

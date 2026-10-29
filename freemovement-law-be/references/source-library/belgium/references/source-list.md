@@ -79,3 +79,61 @@ This is a bounded discovery register and partial local-text pack, not a complete
 The federal 1994 access-to-records law is not a nationwide answer. Wallonia, Flanders, Brussels institutions, the German-speaking Community, the French Community, and municipal/provincial authorities need scope-specific checks. The relevant official services are listed in `source-acceptance.json` for human review where current consolidated wording or institutional competence needs confirmation.
 
 No exhaustive query transcript or all-mission inventory exists. The source register does not establish complete law coverage, a complete remedies map, or a complete court corpus. It does establish that official links can be used without requiring a retained capture or custom automated pipeline.
+
+<!-- source-identity-inventory:start -->
+## Source identity crosswalk
+
+Canonical rows: **49**; provisional unique IDs: **43**; unresolved entries: **3**. This crosswalk preserves catalogue IDs, links external-reference and local-artifact representations to a source identity, and keeps acceptance status separate.
+
+| Existing entry ID | Canonical source identity | Resolution | Representations | Catalogued statuses | Status record IDs |
+|---|---|---|---|---|---|
+| `be-01-law-of-16-july-2004-establishing-the-code-of-private-international-law` | `be:url:c0f05b0f292e4655da21` | resolved | local_artifact/nl/undated<br>official_reference/nl/undated | accepted_external_reference, accepted_local_copy | — |
+| `be-02-immigration-office-guidance-for-family-members-of-eu-citizens` | `be:ambiguous:be-02-immigration-office-guidance-for-family-members-of-eu-citizens:983ddccbee96` | unresolved | official_reference/en/undated<br>official_reference/en/undated | pending, historical, not_relied_upon | — |
+| `be-05-federal-justice-guidance-recognition-registration-foreign-adoptions` | `be:url:501e41d6a36b80a7acd3` | resolved | local_artifact/fr/undated<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy | — |
+| `be-administrative-motivation-act` | `be:url:5f70a53c3c749537880d` | resolved | local_artifact/fr/undated<br>local_artifact/nl/2018<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy | — |
+| `be-annex-19-fr` | `be:url:44f7e051b553d7edbcef` | resolved | local_artifact/fr/undated<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy | — |
+| `be-annex-19ter-fr` | `be:url:797eee1210c2154a3536` | resolved | local_artifact/fr/undated<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy, not_relied_upon | — |
+| `be-annex-20-fr` | `be:url:6f046059bed620fa6a87` | resolved | local_artifact/fr/undated<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy | — |
+| `be-annex-index-fr` | `be:language-variant:be-annex-index:9b58ddf6af9c` | resolved | official_reference/fr/undated | accepted_external_reference, pending, discovery | — |
+| `be-annex-index-nl` | `be:language-variant:be-annex-index:9b58ddf6af9c` | resolved | official_reference/nl/undated | accepted_external_reference, pending, discovery | — |
+| `be-brussels-cada-guidance` | `be:url:b2212126a0c645c2caf0` | resolved | local_artifact/en/undated<br>local_artifact/fr/undated<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy | — |
+| `be-brussels-joint-access-law-2019-fr` | `be:url:912a47f3651cc49d6ccf` | resolved | official_reference/fr/undated | accepted_external_reference | — |
+| `be-cocof-access-procedure` | `be:url:889c418d9fd725c44892` | resolved | local_artifact/en/undated<br>official_reference/fr/undated | accepted_external_reference, pending | — |
+| `be-code-pil` | `be:url:4abd2b5105caf3c0552e` | resolved | local_artifact/fr/undated<br>local_artifact/fr/undated<br>local_artifact/fr/undated<br>local_artifact/fr/undated<br>local_artifact/nl/undated<br>local_artifact/nl/undated<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy | — |
+| `be-council-state-laws` | `be:url:faa63aa379cb854f26f4` | resolved | local_artifact/fr/undated<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy | — |
+| `be-d-visa-article9` | `be:url:4f5f1d421f515a6b3a88` | resolved | local_artifact/en/undated<br>official_reference/en/undated<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `be-data-protection-act-2018-fr` | `be:language-variant:be-data-protection-act-2018:6329594231c7` | resolved | official_reference/fr/undated | accepted_external_reference | — |
+| `be-data-protection-act-2018-nl` | `be:language-variant:be-data-protection-act-2018:6329594231c7` | resolved | official_reference/nl/undated | accepted_external_reference | — |
+| `be-dg-legal-database` | `be:url:555f2ae58b8eed818684` | resolved | official_reference/de/undated | accepted_external_reference, discovery | — |
+| `be-dg-ombudsman` | `be:url:d803aa7932bc801aa98a` | resolved | official_reference/de/undated | accepted_external_reference | — |
+| `be-dpa-complaint-fr` | `be:language-variant:be-dpa-complaint:9bb46bdc7204` | resolved | local_artifact/fr/undated<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy | — |
+| `be-dpa-complaint-nl` | `be:language-variant:be-dpa-complaint:9bb46bdc7204` | resolved | local_artifact/nl/undated<br>official_reference/nl/undated | accepted_external_reference, accepted_local_copy | — |
+| `be-embassy-directory` | `be:url:f6e54761ddfbf1c19e86` | resolved | official_reference/en/undated | accepted_external_reference, pending | — |
+| `be-eu-entry-residence` | `be:url:415209d2493379c6ae91` | resolved | local_artifact/en/undated<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `be-eu-family-guidance` | `be:ambiguous:be-eu-family-guidance:f2c3300647cb` | unresolved | local_artifact/en/undated<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy, pending | — |
+| `be-federal-cada-appeal` | `be:url:9217064b63ad1f6a1f29` | resolved | local_artifact/fr/undated<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy | — |
+| `be-federal-ombudsman-filing` | `be:url:52db1fb986297fdcee54` | resolved | local_artifact/en/undated<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `be-federal-ombudsman-process` | `be:url:dae09af99583983c2949` | resolved | local_artifact/en/undated<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `be-flanders-bestuursdecreet` | `be:url:12f0eff487d5adafbc6d` | resolved | local_artifact/nl/2018<br>official_reference/nl/undated | accepted_external_reference, accepted_local_copy | — |
+| `be-french-community-publicity-decree-1994` | `be:url:4e0fc42f769d63c1ed7e` | resolved | official_reference/fr/undated | accepted_external_reference | — |
+| `be-ibz-legislation-index` | `be:url:6a62dcd9bc17142be523` | resolved | official_reference/en/undated | accepted_external_reference, pending, discovery | — |
+| `be-law-1980-fr` | `be:language-variant:be-law-1980:6ed5adb25845` | resolved | local_artifact/fr/undated<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy | — |
+| `be-law-1980-nl` | `be:language-variant:be-law-1980:6ed5adb25845` | resolved | local_artifact/nl/undated<br>official_reference/nl/undated | accepted_external_reference, accepted_local_copy | — |
+| `be-mobile-belgian-40ter` | `be:url:06c663981a4d9241de5a` | resolved | local_artifact/nl/undated<br>official_reference/nl/undated<br>official_reference/nl/undated | accepted_external_reference, accepted_local_copy, pending | — |
+| `be-nlex-discovery` | `be:url:71f156333ac2447aa523` | resolved | official_reference/multilingual/undated | accepted_external_reference, pending, discovery | — |
+| `be-publicity-act-1994` | `be:url:125be30f56c15b81ea81` | resolved | local_artifact/fr/undated<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy | — |
+| `be-publicity-provinces-municipalities-1997-fr` | `be:language-variant:be-publicity-provinces-municipalities-1997:0eae0465047c` | resolved | official_reference/fr/undated | accepted_external_reference | — |
+| `be-publicity-provinces-municipalities-1997-fr / -nl` | `be:ambiguous:be-publicity-provinces-municipalities-1997-fr-nl:5ff100917508` | unresolved | official_reference/nl/undated | candidate | — |
+| `be-publicity-provinces-municipalities-1997-nl` | `be:language-variant:be-publicity-provinces-municipalities-1997:0eae0465047c` | resolved | official_reference/nl/undated | accepted_external_reference | — |
+| `be-rd-1981-fr` | `be:language-variant:be-rd-1981:aced8656fa79` | resolved | local_artifact/fr/undated<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy | — |
+| `be-rd-1981-nl` | `be:language-variant:be-rd-1981:aced8656fa79` | resolved | local_artifact/nl/undated<br>official_reference/nl/undated | accepted_external_reference, accepted_local_copy | — |
+| `be-registration-certificate-change` | `be:url:aa2e1a9bb657c031f099` | resolved | local_artifact/en/undated<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `be-rvv-case-sample-320874` | `be:url:1cdb3f2ffafc9cf3f7de` | resolved | local_artifact/en/undated<br>local_artifact/fr/2025-01<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy | — |
+| `be-uae-mission-eu-family-visa` | `be:url:8b5c7965d77a65c9afa2` | resolved | local_artifact/en/undated<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `be-uk-mission-eu-family-visa` | `be:url:49c962ae9127699a83c6` | resolved | local_artifact/en/undated<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `be-visa-competence-matrix` | `be:url:09c2dc97c98ded59bc53` | resolved | local_artifact/en/undated<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `be-visa-gdpr` | `be:url:62fcefd691badc1118fb` | resolved | local_artifact/en/undated<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `be-visa-hub` | `be:url:20211610002bc7f30706` | resolved | local_artifact/en/undated<br>local_artifact/fr/undated<br>local_artifact/fr/undated<br>local_artifact/fr/undated<br>local_artifact/fr/undated<br>local_artifact/nl/undated<br>local_artifact/nl/undated<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `be-visa-privacy-statement` | `be:url:1a01a567611f3946dc07` | resolved | local_artifact/en/undated<br>official_reference/en/undated | accepted_external_reference, pending, historical | — |
+| `be-wallonia-publicity-decree` | `be:url:e31bbbbe6669a49b5442` | resolved | local_artifact/fr/2026-04-01<br>official_reference/fr/undated<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy | — |
+<!-- source-identity-inventory:end -->

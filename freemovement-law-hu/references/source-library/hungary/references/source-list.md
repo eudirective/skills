@@ -40,3 +40,21 @@ The source archive's NAIH procedure guidance is pinned from official NAIH pages,
 ## Retrieval boundary
 
 The manifest keeps 58 existing Hungarian Acts, decrees, and ministerial instruments as manual NJT references and includes Act I of 2010 as link-only. The online updater excludes NJT law records, NJT catalogues, and the three accepted AJBH link-only documents. It maintains 41 non-link-only OIF/NAIH/AJBH records; newly found links remain separate candidates until reviewed. The saved state contains 99 records, matching the 58 historical NJT review captures plus 41 online sources. `manifest.json` maps supplied archive labels to official OIF records even where filenames differ.
+
+<!-- source-identity-inventory:start -->
+## Source identity crosswalk
+
+Canonical rows: **9**; provisional unique IDs: **9**; unresolved entries: **0**. This crosswalk preserves catalogue IDs, links external-reference and local-artifact representations to a source identity, and keeps acceptance status separate.
+
+| Existing entry ID | Canonical source identity | Resolution | Representations | Catalogued statuses | Status record IDs |
+|---|---|---|---|---|---|
+| `ajbh-equal-treatment-directorate` | `hu:url:99937eeb61dc1d88cde5` | resolved | official_reference/hu/undated | accepted_external_reference | — |
+| `ajbh-equal-treatment-request-procedure-2024` | `hu:url:aec7e13cc428212cf563` | resolved | official_reference/hu/2024 edition | accepted_external_reference | — |
+| `ajbh-public-interest-whistleblowing-guide-2025` | `hu:url:d27a8faf4680aeb15390` | resolved | official_reference/hu/2025 edition | accepted_external_reference | — |
+| `hu-act-2007-1` | `hu:url:53b9cf4bd18d970ee581` | resolved | local_artifact/hu/2007<br>official_reference/hu/2026 | accepted_external_reference, pending | — |
+| `hu-act-2010-1` | `hu:url:6b74c17906955984f831` | resolved | official_reference/hu/2026 | accepted_external_reference | — |
+| `hu-act-2016-150` | `hu:url:6546886af7b5e3f99d18` | resolved | local_artifact/hu/2016<br>official_reference/hu/2026 | accepted_external_reference, pending | — |
+| `hu-act-2017-1` | `hu:url:66d29db04361039d24b1` | resolved | local_artifact/hu/2017<br>official_reference/hu/2026 | accepted_external_reference, pending | — |
+| `hu-act-2023-25` | `hu:url:d2fd3841960b10d6d32f` | resolved | local_artifact/hu/2023-25<br>official_reference/hu/2026 | accepted_external_reference, pending | — |
+| `hu-gov-2007-113` | `hu:url:676251842e0b540668b9` | resolved | local_artifact/hu/2007<br>official_reference/hu/2026 | accepted_external_reference, pending | — |
+<!-- source-identity-inventory:end -->

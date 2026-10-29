@@ -2,7 +2,7 @@ Skill: author-source-pack-rules v1.0.1
 
 # Switzerland official-source discovery and link review
 
-**Inventory research:** 18 October 2026; link review updated through 29 October 2026. **Scope:** Swiss federal law and guidance on free movement, family reunification, visas and mission procedure, administrative procedure and remedies, courts, public access, privacy, oversight, and family-status evidence. **Status:** 44 bounded source leads; 26 official external references accepted within narrow scopes; 0 retained local source texts or topics accepted; country review incomplete. The 26 former candidate conversions and two tracking manifests are preserved only in the Monitor local-only archive.
+**Inventory research:** 18 October 2026; link review updated through 29 October 2026. **Scope:** Swiss federal law and guidance on free movement, family reunification, visas and mission procedure, administrative procedure and remedies, courts, public access, privacy, oversight, and family-status evidence. **Status:** 48 bounded source leads; 30 official external references from the bounded source leads accepted within narrow scopes; 0 retained local source texts or topics accepted; country review incomplete. The 26 former candidate conversions and two tracking manifests are preserved only in the Monitor local-only archive.
 
 Switzerland is included separately from the EEA jurisdictions. It is an EFTA and Schengen participant but is not an EEA Contracting Party. The comparison seed is the Danish free-movement source set, with earlier EEA/country findings used only as search leads. Functional relationships below do not establish legal equivalence. Searches were made on 18 October 2026 in English and German, with French and Turkish official pages inspected where available. The original discovery search was centrally scoped; it is not an exhaustive review of all 26 cantons, all official languages, or all Swiss missions. The 21 October link review is recorded separately in [source acceptance](source-acceptance.json), [issue-led coverage](coverage-register.md), and the [sustainability assessment](sustainability-assessment.md). Link acceptance does not accept a local conversion or establish topic or country completeness.
 
@@ -76,4 +76,80 @@ A supplemental [EFTA institutional reference](https://www.efta.int/eea-relations
 5. **Federal remedies do not cover every authority.** FDPIC explicitly excludes cantonal and municipal bodies; cantonal data-protection regulators and administrative remedies need separate research. FOJ reports no federal ombudsman office, but its 2004 local-office list needs current verification.
 6. **Court coverage is selective.** FAC publishes substantive judgments and only selected procedural rulings; the Federal Supreme Court database has its own historical and anonymisation boundaries. Do not label either corpus complete for migration matters.
 
-The 26 former candidate conversions are retained only in the Monitor local-only archive; no local source copy is accepted. Twenty-six official external references are accepted within narrow scopes; their status is recorded separately in [source-acceptance.json](source-acceptance.json). The Monitor archive preserves the original candidate files and capture metadata; each former candidate artifact has an accepted-link, duplicate, out-of-scope, or human-review disposition below. This register does not establish topic adequacy or country completion and does not implement an updater.
+The 26 former candidate conversions are retained only in the Monitor local-only archive; no local source copy is accepted. Thirty official external references from the source-lead inventory are accepted within narrow scopes, plus one supplemental EFTA status reference; their status is recorded separately in [source-acceptance.json](source-acceptance.json). The Monitor archive preserves the original candidate files and capture metadata; each former candidate artifact has an accepted-link, duplicate, out-of-scope, or human-review disposition below. This register does not establish topic adequacy or country completion and does not implement an updater.
+
+
+## Additional Legalize-ch crosswalk records
+
+| Source ID | Official record | Scope and review limit | Legalize candidate |
+|---|---|---|---|
+| ch-45 | [Swiss Civil Code, SR 210](../documents/legislation/ch-45-zgb-sr-210.md) · [Fedlex dated record](https://www.fedlex.admin.ch/eli/cc/24/233_245_233/de?version=20260701) | Civil-status and family-relationship framework; official Fedlex page returned a JavaScript shell, so body/currentness review remains open. Link only. | [cc-24-233_245_233.md](https://github.com/legalize-dev/legalize-ch/blob/bb25076ced856706100f601346a87764d8530630/ch/cc-24-233_245_233.md) |
+| ch-46 | [Federal Health Insurance Act (KVG), SR 832.10](../documents/legislation/ch-46-kvg-sr-832-10.md) · [Fedlex dated record](https://www.fedlex.admin.ch/eli/cc/1995/1328_1328_1328/de?version=20260701) | Current official consolidation listed as 1 July 2026. Individual insurance eligibility is not determined. Link only. | [cc-1995-1328_1328_1328.md](https://github.com/legalize-dev/legalize-ch/blob/bb25076ced856706100f601346a87764d8530630/ch/cc-1995-1328_1328_1328.md) |
+| ch-47 | [Health Insurance Ordinance (KVV), SR 832.102](../documents/legislation/ch-47-kvv-sr-832-102.md) · [Fedlex dated record](https://www.fedlex.admin.ch/eli/cc/1995/3867_3867_3867/de?version=20260701) | Dated official locator; page rendered a JavaScript shell, so latest-version and body review remain open. Link only. | [cc-1995-3867_3867_3867.md](https://github.com/legalize-dev/legalize-ch/blob/bb25076ced856706100f601346a87764d8530630/ch/cc-1995-3867_3867_3867.md) |
+| ch-48 | [Health-Care Benefits Ordinance (KLV), SR 832.112.31](../documents/legislation/ch-48-klv-sr-832-112-31.md) · [Fedlex dated record](https://www.fedlex.admin.ch/eli/cc/1995/4964_4964_4964/de?version=20260701) | Dated official locator for benefit-specific follow-up; Legalize candidate has a future 2027 applicability date. Link only. | [cc-1995-4964_4964_4964.md](https://github.com/legalize-dev/legalize-ch/blob/bb25076ced856706100f601346a87764d8530630/ch/cc-1995-4964_4964_4964.md) |
+
+## Legalize-ch crosswalk and newly identified statutes (29 October 2026)
+
+Four source records were added: **ZGB SR 210**, **KVG SR 832.10**, **KVV SR 832.102**, and **KLV SR 832.112.31**. Their official Fedlex records and scope limits are recorded in `source-acceptance.json` and `documents/legislation/`. They are link-only references and authored locator notes; no legal-text copy has been accepted.
+
+Legalize-ch files were confirmed for each new record. It is a German-language, partial Fedlex-derived corpus; its README describes XML coverage for about 5,139 of approximately 17,258 SR numbers, incomplete older history, and omitted images. The crosswalk found material date limits: Legalize's KVG and KVV files say 1 January 2026 while Fedlex lists KVG at 1 July 2026; Legalize's KLV date is 1 January 2027, future at this review; the AIG file also carries a future 1 January 2027 applicability date. A Legalize file is therefore a candidate retrieval route, not an accepted current-text method.
+
+For a future local copy, retain German wording, SR/ELI IDs, legal hierarchy, footnotes, tables and annexes; pin the repository commit; compare the complete body to the same dated official Fedlex version; record publication, effective and retrieval dates separately; inspect omitted images. Attribute Fedlex and Legalize-ch separately. Its MIT license is for pipeline code, while the repository describes official law text as public domain; no bulk database permission is inferred. No local statutory copy or topic has been accepted, and country review remains incomplete.
+
+<!-- source-identity-inventory:start -->
+## Source identity crosswalk
+
+Canonical rows: **49**; provisional unique IDs: **49**; unresolved entries: **12**. This crosswalk preserves catalogue IDs, links external-reference and local-artifact representations to a source identity, and keeps acceptance status separate.
+
+| Existing entry ID | Canonical source identity | Resolution | Representations | Catalogued statuses | Status record IDs |
+|---|---|---|---|---|---|
+| `ch-01` | `ch:ambiguous:ch-01:0a8ac50eedc0` | unresolved | official_reference/unspecified/undated | candidate | — |
+| `ch-02` | `ch:url:e5761802ad1c6079092f` | resolved | official_reference/unspecified/undated | candidate | — |
+| `ch-03` | `ch:url:269ac81a7a926412de9c` | resolved | official_reference/unspecified/undated | candidate | — |
+| `ch-04` | `ch:record:ch-04:7ae7324a72b7` | unresolved | local_artifact/en/2026<br>local_artifact/unspecified/undated<br>official_reference/en/2026<br>official_reference/en/2026 | accepted_external_reference | ch-04-aig-de-20231015 |
+| `ch-05` | `ch:url:9745f7a7a58816a64651` | resolved | official_reference/unspecified/undated | candidate | — |
+| `ch-06` | `ch:record:ch-06:45e3d8afcf30` | unresolved | local_artifact/fr/2026<br>local_artifact/unspecified/undated<br>official_reference/fr/2026<br>official_reference/fr/2026 | accepted_external_reference | ch-06-vfp-fr-20260101 |
+| `ch-07` | `ch:url:4bd6b3659b7054f1f08b` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | accepted_external_reference | ch-07-vev-de-20260612 |
+| `ch-08` | `ch:url:c2e011d08aa3ea7e90d9` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | accepted_external_reference | ch-08-fdfa-afmp-status-route |
+| `ch-09` | `ch:ambiguous:ch-09:88a4d9549f85` | unresolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | accepted_external_reference | ch-09-efta-eea-party-status |
+| `ch-10` | `ch:url:f815a11b109e72a982ee` | resolved | official_reference/unspecified/undated | candidate | — |
+| `ch-10-parliament-dossier-26-023` | `ch:record:ch-10-parliament-dossier-26-023:583f23eb4661` | unresolved | — | accepted_external_reference | — |
+| `ch-11` | `ch:url:e9319377d31ba42c4109` | resolved | official_reference/unspecified/undated | candidate | — |
+| `ch-12` | `ch:url:749da0550072718709fb` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | accepted_external_reference | ch-12-vwvg-de-20220701 |
+| `ch-13` | `ch:ambiguous:ch-13:c0b11fe66b41` | unresolved | official_reference/unspecified/undated | candidate | — |
+| `ch-14` | `ch:ambiguous:ch-14:e278e82dcd95` | unresolved | official_reference/unspecified/undated | candidate | — |
+| `ch-15` | `ch:ambiguous:ch-15:b47505aaea73` | unresolved | official_reference/unspecified/undated | candidate | — |
+| `ch-16` | `ch:ambiguous:ch-16:959e8b0e695f` | unresolved | official_reference/unspecified/undated | candidate | — |
+| `ch-17` | `ch:url:af8713be69a71c2f39cc` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | accepted_external_reference | ch-17-fdpic-foia-guidance-20261025 |
+| `ch-18` | `ch:url:da4ddad28a28d79e990d` | resolved | official_reference/unspecified/undated | candidate | — |
+| `ch-19` | `ch:ambiguous:ch-19:6f0b7b5ee4ab` | unresolved | official_reference/unspecified/undated | candidate | — |
+| `ch-20` | `ch:ambiguous:ch-20:31c16239eba0` | unresolved | official_reference/unspecified/undated | candidate | — |
+| `ch-21` | `ch:record:ch-21:499edd39ad94` | unresolved | — | candidate | — |
+| `ch-22` | `ch:url:21d391afd6d890e70c43` | resolved | local_artifact/de/2026<br>local_artifact/fr/2026<br>local_artifact/unspecified/undated<br>official_reference/de/2026<br>official_reference/fr/2026 | accepted_external_reference | ch-22-sem-family-reunification-procedure-20251204, ch_21 |
+| `ch-23` | `ch:url:1cdb6bd59adf7940ad08` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | accepted_external_reference | ch-23-sem-afmp-directives-index-20261025 |
+| `ch-24` | `ch:url:13a8378b0d607c71809e` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | accepted_external_reference | ch-24-sem-afmp-factsheet-20240207 |
+| `ch-25` | `ch:url:758eb135fd064a97ac8d` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | accepted_external_reference | ch-25-sem-eu-efta-permits |
+| `ch-26` | `ch:url:6b3904b2ac1196a056c5` | resolved | official_reference/unspecified/undated | candidate | — |
+| `ch-27` | `ch:url:290c009146d3d7821296` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | accepted_external_reference | ch-27-sem-entry-without-visa-20261025 |
+| `ch-28` | `ch:url:36b32056a7eaef13f004` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | accepted_external_reference | ch-28-sem-nationality-visa-list-20260403 |
+| `ch-29` | `ch:url:6d5cf16e0a26b71d5243` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | accepted_external_reference | ch-29-sem-visa-refusal-20260827 |
+| `ch-30` | `ch:url:91a23a3cc34afec5015e` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | accepted_external_reference | ch-30-sem-visa-index-20261025 |
+| `ch-31` | `ch:url:0742136c612dddfc3e64` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | accepted_external_reference | ch-31-sem-cantonal-authorities |
+| `ch-32` | `ch:url:94c4f0966f915b3c1fd6` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | accepted_external_reference | ch-32-sem-non-eu-residence-hub-20261025 |
+| `ch-33` | `ch:url:c0164bd4a0d3f42e8f31` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | accepted_external_reference | ch-33-fdfa-entry-residence-hub-20260201 |
+| `ch-34` | `ch:url:6954787385da33b855dc` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | accepted_external_reference | ch-34-fdfa-representation-directory-20260828 |
+| `ch-35` | `ch:url:2aca34a6e6d1d4010639` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | accepted_external_reference | ch-35-fdfa-istanbul-visa-route-20261025 |
+| `ch-36` | `ch:url:0ae4692a5e081554f9e7` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | accepted_external_reference | ch-36-fdfa-istanbul-national-visa-checklists-20261025 |
+| `ch-37` | `ch:url:943186ce88d98805e934` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | accepted_external_reference | ch-37-foj-marriage-faq-20260319 |
+| `ch-38` | `ch:url:752ba25d2b7a7e358673` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | accepted_external_reference | ch-38-fdpic-personal-data-complaints-20261025 |
+| `ch-39` | `ch:url:06ebcb54b609a5c28d72` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | accepted_external_reference | ch-39-foj-ombudsman-project-20040220 |
+| `ch-40` | `ch:url:9f19836bbb4f72269a25` | resolved | official_reference/unspecified/undated | candidate | — |
+| `ch-41` | `ch:url:6579a617b1f41d0aea79` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | accepted_external_reference | ch-41-fac-publication-practices |
+| `ch-42` | `ch:url:26abce1971dca366a846` | resolved | official_reference/unspecified/undated | candidate | — |
+| `ch-43` | `ch:url:2c5e930411bb8882eff6` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | accepted_external_reference | ch-43-foj-federal-council-complaints-20260205 |
+| `ch-44` | `ch:url:9e65fd02e3ee96375e4a` | resolved | official_reference/unspecified/undated | candidate | — |
+| `ch-45` | `ch:url:c391dce2592874f4b098` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | accepted_external_reference | ch-45-zgb-sr-210 |
+| `ch-46` | `ch:url:98bdfd8205d9e5149e0f` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | accepted_external_reference | ch-46-kvg-sr-832-10 |
+| `ch-47` | `ch:url:41b1af1080e0db7d5391` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | accepted_external_reference | ch-47-kvv-sr-832-102 |
+| `ch-48` | `ch:url:5cb2e79a89c2c516bc1e` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | accepted_external_reference | ch-48-klv-sr-832-112-31 |
+<!-- source-identity-inventory:end -->

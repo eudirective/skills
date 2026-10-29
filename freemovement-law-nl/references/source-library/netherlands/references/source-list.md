@@ -82,3 +82,75 @@ When direct page access, current version, court publication scope, appointment r
 ## Boundaries
 
 An accepted link is usable for the named source or service within its recorded scope. Local text copies have separate review and file records. Neither link nor copy acceptance establishes topic coverage or legal sufficiency, or marks the Netherlands review complete.
+
+<!-- source-identity-inventory:start -->
+## Source identity crosswalk
+
+Canonical rows: **63**; provisional unique IDs: **63**; unresolved entries: **0**. This crosswalk preserves catalogue IDs, links external-reference and local-artifact representations to a source identity, and keeps acceptance status separate.
+
+| Existing entry ID | Canonical source identity | Resolution | Representations | Catalogued statuses | Status record IDs |
+|---|---|---|---|---|---|
+| `nl-01` | `nl:url:71f156333ac2447aa523` | resolved | official_reference/en/undated | accepted_external_reference, discovery | — |
+| `nl-02` | `nl:url:4e5ce3bed8064378d566` | resolved | official_reference/nl/undated | accepted_external_reference, discovery | — |
+| `nl-03` | `nl:url:0cb09a75aff907de4024` | resolved | official_reference/nl/undated | accepted_external_reference, discovery | — |
+| `nl-04` | `nl:url:3816f609cacdcae72e6f` | resolved | official_reference/nl/undated | accepted_external_reference, discovery | — |
+| `nl-05` | `nl:url:09fcd35105d2c55ac65d` | resolved | official_reference/nl/undated | accepted_external_reference | — |
+| `nl-06` | `nl:url:b5c04f4bcae6c30664c7` | resolved | official_reference/nl/undated | accepted_external_reference | — |
+| `nl-07` | `nl:url:33b147c7858b63f881c8` | resolved | official_reference/nl/undated | accepted_external_reference | — |
+| `nl-08` | `nl:url:38c3f9ed81f8028fa0f0` | resolved | official_reference/nl/undated | accepted_external_reference | — |
+| `nl-09` | `nl:url:629a2e30ec12aa542601` | resolved | official_reference/nl/undated | accepted_external_reference | — |
+| `nl-10` | `nl:url:21770a997c37e7c7b39b` | resolved | local_artifact/nl/2000<br>official_reference/nl/undated | accepted_external_reference, accepted_local_copy | — |
+| `nl-11` | `nl:url:e0dcf4e5fc303c4fabca` | resolved | local_artifact/nl/2000<br>official_reference/nl/undated | accepted_external_reference, accepted_local_copy | — |
+| `nl-12` | `nl:url:02c90c7e0fa44c80ee20` | resolved | official_reference/nl/undated | accepted_external_reference | — |
+| `nl-13` | `nl:url:d1482fe5adba228e5ba8` | resolved | official_reference/nl/undated | accepted_external_reference | — |
+| `nl-14` | `nl:url:337ef49f342c6d572912` | resolved | local_artifact/nl/2026-08-15<br>official_reference/nl/undated | accepted_external_reference, accepted_local_copy | — |
+| `nl-15` | `nl:url:44f7d127029c16d6fa3e` | resolved | official_reference/en/undated | accepted_external_reference, discovery | — |
+| `nl-16` | `nl:url:92d69c4d3deafa5b4549` | resolved | local_artifact/en/2026-07-10<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `nl-17` | `nl:url:d663544e3b8b803911a5` | resolved | local_artifact/en/2026-10-08<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `nl-18` | `nl:url:4804812cd9d6aa484f30` | resolved | local_artifact/en/2026-09-25<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `nl-19` | `nl:url:d07b8d8661995377fc9e` | resolved | local_artifact/en/2026-10-07<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `nl-20` | `nl:url:f7ded2255bfae9ae9e08` | resolved | local_artifact/en/2026-05-20<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `nl-21` | `nl:url:55aa5e4e420b63ee1811` | resolved | local_artifact/en/2026-06-19<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `nl-22` | `nl:url:bf621ad1a5f4df528aa9` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-23` | `nl:url:34909310f5a1f6befb19` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-24` | `nl:url:468c2aec6ec6aa277770` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-25` | `nl:url:480e9e7c588412f71d52` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-26` | `nl:url:d0686edafe29dbedb5d4` | resolved | local_artifact/en/2026-08-10<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `nl-27` | `nl:url:95b05f9b2984ade11780` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-28` | `nl:url:13b0f1cec2746bb758d3` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-29` | `nl:url:a7df17600ba48a605889` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-30` | `nl:url:5be8959bbb0adfdae2a0` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-31` | `nl:url:41eae193797d4d05270f` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-32` | `nl:url:1be6eb895e34514025b8` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-33` | `nl:url:b10d6fef0e316eb8d89a` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-34` | `nl:url:962456c112996b0f08da` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-35` | `nl:url:8830ed85e99091aec981` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-36` | `nl:url:4a2f3b647fb74fee817b` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-37` | `nl:url:cbc2957413c94ccce634` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-38` | `nl:url:e0dca4007745dca904b8` | resolved | official_reference/en/undated | not_relied_upon | — |
+| `nl-39` | `nl:url:aa852b0dec7c1c5ea8a6` | resolved | official_reference/en/undated | not_relied_upon | — |
+| `nl-40` | `nl:url:2cb12430eb8e686fafda` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-41` | `nl:url:dc1e122a526f90e4a2b0` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-42` | `nl:url:097a920479ede620dced` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-43` | `nl:url:12b2eee2abdd91058056` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-44` | `nl:url:f859280fa3bb78bb4b86` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-45` | `nl:url:384c6b76a2cfb26b9afa` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-46` | `nl:url:d252cd709e605962bd84` | resolved | official_reference/nl/undated | accepted_external_reference | — |
+| `nl-47` | `nl:url:abd58427acc230157402` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-48` | `nl:url:2eace4a8fb65ac6e42a9` | resolved | official_reference/nl/undated | accepted_external_reference | — |
+| `nl-49` | `nl:url:e0c04fd42916d950dc2e` | resolved | official_reference/nl/undated | not_relied_upon | — |
+| `nl-50` | `nl:url:b9c52091f856c96b632b` | resolved | official_reference/nl/undated | accepted_external_reference | — |
+| `nl-51` | `nl:url:a60c5304b934840cb9a3` | resolved | official_reference/nl/undated | accepted_external_reference | — |
+| `nl-52` | `nl:url:66a03eb159db46688607` | resolved | official_reference/nl/undated | accepted_external_reference | — |
+| `nl-53` | `nl:url:42d975fc50c51ba6f2bf` | resolved | local_artifact/nl/2026-07-01<br>official_reference/nl/undated | accepted_external_reference, accepted_local_copy | — |
+| `nl-54` | `nl:url:7f344d693e1ba40fc7b3` | resolved | local_artifact/nl/2025-07-05<br>official_reference/nl/undated | accepted_external_reference, accepted_local_copy | — |
+| `nl-55` | `nl:url:cb893e4d40f614aa5a3e` | resolved | local_artifact/nl/2018-08-01<br>official_reference/nl/undated | accepted_external_reference, accepted_local_copy | — |
+| `nl-56` | `nl:url:c7adc6719971d8267325` | resolved | official_reference/nl/undated | accepted_external_reference | — |
+| `nl-57` | `nl:url:426b79f147e29e4c77b4` | resolved | official_reference/nl/undated | accepted_external_reference | — |
+| `nl-58` | `nl:url:855fbf5464e9a0b19ab9` | resolved | official_reference/nl/undated | accepted_external_reference | — |
+| `nl-59` | `nl:url:1af22e00cb91cb6fa695` | resolved | official_reference/nl/undated | accepted_external_reference | — |
+| `nl-60` | `nl:url:b328f217aaae9d6f808a` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-61` | `nl:url:3d087e5181c31a8b59bb` | resolved | official_reference/nl/undated | accepted_external_reference | — |
+| `nl-62` | `nl:url:afe90b56029485886e4b` | resolved | official_reference/nl/undated | accepted_external_reference | — |
+| `nl-63` | `nl:url:ec198ebbe485aaa180f2` | resolved | official_reference/en/undated | accepted_external_reference | — |
+<!-- source-identity-inventory:end -->

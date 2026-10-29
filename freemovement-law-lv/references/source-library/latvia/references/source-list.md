@@ -330,3 +330,64 @@ These dated snapshots preserve the selected publisher text region. Their recorde
 | lv-47 | Cabinet Regulation No. 536 — Official Publications Regulation (reuse fees) | [local copy](../documents/legislation/lv-cabinet-regulation-536-reuse-fees.md) |
 | lv-48 | Latvijas Vēstnesis official-publication reuse procedure | [local copy](../documents/guidance/lv-vestnesis-reuse-procedure.md) |
 | lv-49 | Latvijas Vēstnesis service directory — reuse and current fees | [local copy](../documents/guidance/lv-vestnesis-service-directory-reuse-fees.md) |
+
+<!-- source-identity-inventory:start -->
+## Source identity crosswalk
+
+Canonical rows: **52**; provisional unique IDs: **52**; unresolved entries: **0**. This crosswalk preserves catalogue IDs, links external-reference and local-artifact representations to a source identity, and keeps acceptance status separate.
+
+| Existing entry ID | Canonical source identity | Resolution | Representations | Catalogued statuses | Status record IDs |
+|---|---|---|---|---|---|
+| `lv-01` | `lv:url:8a608a8b81b3f46da940` | resolved | official_reference/en/undated | accepted_external_reference, discovery | — |
+| `lv-02` | `lv:url:9b832823e9d0b70d7369` | resolved | official_reference/en/undated | accepted_external_reference, accepted_local_copy, discovery | — |
+| `lv-03` | `lv:url:bd5e9259ad8f67b8e3d4` | resolved | official_reference/lv/undated | accepted_external_reference, accepted_local_copy | — |
+| `lv-04` | `lv:url:d0df0c91ec9b35197b8d` | resolved | official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `lv-05` | `lv:url:f322a9b729fd6d535337` | resolved | official_reference/lv/undated | accepted_external_reference, accepted_local_copy | — |
+| `lv-06` | `lv:url:d23ac3a6db112a1a6366` | resolved | official_reference/lv/undated | accepted_external_reference, accepted_local_copy | — |
+| `lv-07` | `lv:url:3768a5218f6af3c3a260` | resolved | official_reference/lv/undated<br>official_reference/lv/undated | accepted_external_reference, accepted_local_copy | — |
+| `lv-08` | `lv:url:aeecb215b0c2108dfda6` | resolved | official_reference/lv/undated | accepted_external_reference, accepted_local_copy | — |
+| `lv-09` | `lv:url:4fe5180936d5a576646b` | resolved | official_reference/lv/undated | accepted_external_reference, accepted_local_copy | — |
+| `lv-10` | `lv:url:670e43a2bcb3cd9b2b11` | resolved | official_reference/lv/undated | accepted_external_reference, accepted_local_copy | — |
+| `lv-11` | `lv:url:ae47a3d735002996dd39` | resolved | official_reference/lv/undated | accepted_external_reference, accepted_local_copy | — |
+| `lv-12` | `lv:url:62000112be3259d050e4` | resolved | official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `lv-13` | `lv:url:3df616b43b18c5186c40` | resolved | official_reference/lv/undated | accepted_external_reference, accepted_local_copy | — |
+| `lv-14` | `lv:url:e23993fe1beedba80b8d` | resolved | official_reference/lv/undated | accepted_external_reference, accepted_local_copy | — |
+| `lv-15` | `lv:url:ed3f546890f74d89f64d` | resolved | official_reference/lv/undated | accepted_external_reference, accepted_local_copy | — |
+| `lv-16` | `lv:url:d8f00df66f239ce72754` | resolved | official_reference/lv/undated | accepted_external_reference, accepted_local_copy | — |
+| `lv-17` | `lv:url:cd1ca75adc201c9f6169` | resolved | official_reference/lv/undated | accepted_external_reference, accepted_local_copy | — |
+| `lv-18` | `lv:url:83b48af644f8c3653028` | resolved | official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `lv-19` | `lv:url:4e34123fc81ea6638e95` | resolved | official_reference/en/undated | accepted_external_reference, pending, historical | — |
+| `lv-20` | `lv:url:5f7b953d51359ea6ec2f` | resolved | official_reference/en/undated | accepted_external_reference, accepted_local_copy, pending | — |
+| `lv-21` | `lv:url:2ac7ece7f39f45b4e664` | resolved | official_reference/en/undated | accepted_external_reference, accepted_local_copy, discovery | — |
+| `lv-22` | `lv:url:e8b5d14d411641e460ae` | resolved | official_reference/unspecified/undated<br>official_reference/unspecified/undated | accepted_external_reference, accepted_local_copy, not_relied_upon | — |
+| `lv-23` | `lv:url:6ab464d6f3be74825718` | resolved | official_reference/en/undated | accepted_external_reference, accepted_local_copy, pending | — |
+| `lv-24` | `lv:url:fafde495784e666c1053` | resolved | official_reference/en/undated | pending | — |
+| `lv-25` | `lv:url:0e3d357191ac9142aa38` | resolved | official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `lv-26` | `lv:url:fc031531f9ebc8fd042f` | resolved | official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `lv-27` | `lv:url:d4f62beee1cbc02949cb` | resolved | official_reference/en/undated | accepted_external_reference, accepted_local_copy, not_relied_upon | — |
+| `lv-28` | `lv:url:ff815faeff1ad6373f95` | resolved | official_reference/en/undated | accepted_external_reference, accepted_local_copy, not_relied_upon | — |
+| `lv-29` | `lv:url:498eaa364a0b091e0f1a` | resolved | official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `lv-30` | `lv:url:74d910e95848f7896c62` | resolved | official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `lv-31` | `lv:url:eac4cae042b1aec3e25e` | resolved | official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `lv-32` | `lv:url:c4d93dd5d6d70928f08e` | resolved | official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `lv-33` | `lv:url:a7099208efb19b399bc2` | resolved | official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `lv-34` | `lv:url:ed33cef6da8e8d468463` | resolved | official_reference/en/undated | accepted_external_reference, accepted_local_copy, not_relied_upon | — |
+| `lv-35` | `lv:url:2dc0a1230eba674227b9` | resolved | official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `lv-36` | `lv:url:5b73c82071c265d94059` | resolved | official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `lv-37` | `lv:url:39d6e799aa26e9af3533` | resolved | official_reference/en/undated | pending | — |
+| `lv-38` | `lv:url:a0bf1dd67558bc12e49a` | resolved | official_reference/lv/undated | accepted_external_reference, accepted_local_copy, discovery | — |
+| `lv-39` | `lv:url:8c1989c1806192426bdb` | resolved | official_reference/lv/undated | accepted_external_reference, accepted_local_copy | — |
+| `lv-40` | `lv:url:18e9ac5d9b3621b882e5` | resolved | official_reference/lv/undated | accepted_external_reference, accepted_local_copy | — |
+| `lv-41` | `lv:url:c84d1f42e986cd2df571` | resolved | official_reference/lv/undated | accepted_external_reference, accepted_local_copy | — |
+| `lv-42` | `lv:url:03d44530dcda19393fd4` | resolved | official_reference/lv/undated | accepted_external_reference | — |
+| `lv-43` | `lv:url:7abce59184770855c1c9` | resolved | official_reference/lv/undated | accepted_external_reference | — |
+| `lv-44` | `lv:url:8a458ae7cd74a277c875` | resolved | official_reference/lv/undated | pending | — |
+| `lv-45` | `lv:url:8541c8860f7042dd3f75` | resolved | official_reference/lv/undated | accepted_external_reference | — |
+| `lv-46` | `lv:url:71104695a666c1fac8c2` | resolved | official_reference/lv/undated | pending, discovery | — |
+| `lv-47` | `lv:url:680c864b3e66238df2f6` | resolved | official_reference/lv/undated | accepted_external_reference, accepted_local_copy | — |
+| `lv-48` | `lv:url:34cc8e51a1c9458ddb11` | resolved | official_reference/lv/undated | accepted_external_reference, accepted_local_copy | — |
+| `lv-49` | `lv:url:7fb399bf10d6de2c0355` | resolved | official_reference/lv/undated | accepted_external_reference, accepted_local_copy | — |
+| `lv-50` | `lv:url:0f4e63c6804e957b0b16` | resolved | official_reference/lv/undated | accepted_external_reference | — |
+| `lv-51` | `lv:url:d3b6fd839e0aef062acf` | resolved | official_reference/lv/undated | accepted_external_reference | — |
+| `lv-52` | `lv:url:08ec4d9a76dcc1d9639d` | resolved | official_reference/lv/undated | accepted_external_reference | — |
+<!-- source-identity-inventory:end -->

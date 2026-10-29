@@ -113,3 +113,102 @@ Ten additional source leads from the existing capped research run include Greek-
 | `cy-supreme-constitutional-court-decisions` | [Supreme Constitutional Court appellate decisions index](https://www.supremeconstitutionalcourt.gov.cy/Judicial/sc/scc.nsf/services05_el/services05_el?opendocument=) | `official appellate-decision listing directly reviewed; discovery scope accepted` | Official Greek index reviewed 21 October 2026; displays 2026 decisions through 5 October. No individual holding, complete case-law inventory, or first-instance coverage is accepted. |
 | `cy-supreme-court-decisions` | [Supreme Court of Cyprus decision listing](https://www.supremecourt.gov.cy/judicial/sc.nsf/DMLprint6g_gr/DMLprint6g_gr) | `discovery_surface_no_text` | Not established in this bounded review |
 | `cy-visa-application-form` | [Cyprus national visa application form](https://www.gov.cy/app/uploads/sites/113/2026/04/English-visa-application-3_11_2025-1.pdf) | `retrieval_or_conversion_error` | Not established in this bounded review |
+
+<!-- source-identity-inventory:start -->
+## Source identity crosswalk
+
+Canonical rows: **90**; provisional unique IDs: **89**; unresolved entries: **1**. This crosswalk preserves catalogue IDs, links external-reference and local-artifact representations to a source identity, and keeps acceptance status separate.
+
+| Existing entry ID | Canonical source identity | Resolution | Representations | Catalogued statuses | Status record IDs |
+|---|---|---|---|---|---|
+| `cy-access-info-code` | `cy:url:50db95f4d48505d14b5b` | resolved | official_reference/el/undated | candidate | — |
+| `cy-access-info-consolidation` | `cy:url:adb8c786bc0e63b0e49b` | resolved | official_reference/en/undated | candidate | — |
+| `cy-access-info-faq` | `cy:url:5ab88d134d5635b2d076` | resolved | official_reference/el/undated | candidate | — |
+| `cy-admin-court-acs-477-2022` | `cy:url:33c0950a7a05ef167648` | resolved | official_reference/el/undated | pending | — |
+| `cy-admin-court-amendment-142i-2025` | `cy:url:563c43513af2d4ea01fd` | resolved | official_reference/el/undated | accepted_external_reference | — |
+| `cy-admin-court-law-lead` | `cy:url:b804605e82dce2d31163` | resolved | local_artifact/el/undated<br>local_artifact/unspecified/2015<br>official_reference/el/undated | accepted_external_reference, accepted_local_copy | — |
+| `cy-admin-court-nurul-amin-1706-2017` | `cy:url:a90f45830d7af0736b0d` | resolved | official_reference/el/undated | pending | — |
+| `cy-admin-court-rules-index` | `cy:url:bcb18fe4834d26e1b027` | resolved | official_reference/el/undated | accepted_external_reference, discovery | — |
+| `cy-admin-law-office-art146` | `cy:url:e081323eb8d351875317` | resolved | official_reference/en/undated | discovery | — |
+| `cy-admin-law-office-art146-el` | `cy:url:ae9a1512892ece6d677a` | resolved | official_reference/el/undated | pending | — |
+| `cy-cap105-amendment-4i-2025` | `cy:url:fbbdb21685f655266bd8` | resolved | local_artifact/unspecified/2025<br>official_reference/el/undated | accepted_external_reference, accepted_local_copy | — |
+| `cy-cap105-olc-greek-consolidation` | `cy:url:be2427802663f6e4bf42` | resolved | official_reference/el/undated | candidate | — |
+| `cy-cap105-primary-law` | `cy:record:cy-cap105-primary-law:3c3415844c11` | unresolved | — | candidate | — |
+| `cy-case-law-ejustice-overview-el` | `cy:url:29bdd61c50bc7d9029f2` | resolved | official_reference/el/undated | accepted_external_reference, discovery | — |
+| `cy-constitution-amendment-130i-2025` | `cy:url:e602d32eed980edaace1` | resolved | official_reference/el/undated | accepted_external_reference | — |
+| `cy-cylaw-law7-greek-consolidation` | `cy:url:64bc5ffc011181538017` | resolved | official_reference/el/undated | candidate | — |
+| `cy-cypriot-family-employment-forms` | `cy:url:7bb7de5dac7971c16ae2` | resolved | local_artifact/en/undated<br>official_reference/el/undated<br>official_reference/en/undated | accepted_external_reference, pending | — |
+| `cy-cypriot-family-forms-index` | `cy:url:7b5e7407a4d657fcf269` | resolved | official_reference/en/undated | discovery | — |
+| `cy-cypriot-family-no-employment-forms` | `cy:url:3cd4d7afe572fd284f6c` | resolved | local_artifact/en/undated<br>official_reference/el/undated<br>official_reference/en/undated | accepted_external_reference, pending | — |
+| `cy-cypriot-family-route` | `cy:url:2e17fe58708d41b4154e` | resolved | local_artifact/el/undated<br>local_artifact/en/undated<br>official_reference/en/undated | accepted_external_reference, pending | — |
+| `cy-cypriot-family-route-el` | `cy:url:1aaf8ca67aec7c630f92` | resolved | local_artifact/el/undated<br>official_reference/el/undated | accepted_external_reference, pending | — |
+| `cy-data-protection-complaint` | `cy:url:bf7e462f8c6be96b069b` | resolved | official_reference/el/undated | candidate | — |
+| `cy-data-protection-law` | `cy:url:b1f72070fd6def19ec86` | resolved | official_reference/en/undated | candidate | — |
+| `cy-data-protection-law-greek-index` | `cy:url:50163f0a757cdc28fbce` | resolved | official_reference/el/undated | discovery | — |
+| `cy-document-ratification-guidance` | `cy:url:199d40fd4a7db6664e2e` | resolved | official_reference/en/undated | candidate | — |
+| `cy-eueea-registration-guidance` | `cy:url:5aded4490aefb3695eb5` | resolved | local_artifact/en/undated<br>official_reference/en/undated | accepted_external_reference, pending | — |
+| `cy-eures-meu1` | `cy:url:b5938d0a755065c08cf5` | resolved | official_reference/en/undated | candidate | — |
+| `cy-family-members-overview` | `cy:url:a9b5d0aad3149b2271d2` | resolved | official_reference/en/undated | discovery | — |
+| `cy-free-movement-amendment-181i-2011` | `cy:url:b4fe385ccd001e768045` | resolved | official_reference/el/undated | candidate | — |
+| `cy-free-movement-amendment-193i-2020` | `cy:url:2f7e58688c4a4b0ceb02` | resolved | official_reference/el/undated<br>official_reference/unspecified/undated | accepted_external_reference | — |
+| `cy-free-movement-amendment-28i-2017` | `cy:url:a98e6e21a677f2336e76` | resolved | official_reference/el/undated<br>official_reference/unspecified/undated | candidate | — |
+| `cy-free-movement-amendment-67i-2013` | `cy:url:db21d0b9ac3ccb79fbe7` | resolved | official_reference/el/undated | candidate | — |
+| `cy-free-movement-amendment-77i-2015` | `cy:url:c854e6c1d11b593abaa1` | resolved | official_reference/el/undated<br>official_reference/unspecified/undated | candidate | — |
+| `cy-free-movement-amendment-8i-2013` | `cy:url:b6eb18834f17d9be3cd8` | resolved | official_reference/el/undated | candidate | — |
+| `cy-free-movement-amendment-96i-2023` | `cy:url:072f64b547295feef2f9` | resolved | local_artifact/unspecified/2023<br>official_reference/el/undated<br>official_reference/unspecified/undated | accepted_external_reference, accepted_local_copy | — |
+| `cy-free-movement-consolidation` | `cy:url:98662788068601bedcbd` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `cy-free-movement-gazette-2007` | `cy:url:53ee3d6e18c588d99042` | resolved | local_artifact/unspecified/2007<br>official_reference/el/undated | accepted_local_copy, historical | — |
+| `cy-free-movement-olc-notice-2024` | `cy:url:532e3daf9772eefa777b` | resolved | official_reference/el/undated | pending | — |
+| `cy-gazette-law-23-2024-chain-reference` | `cy:url:c061a339a7ead2edf1dc` | resolved | official_reference/el/undated | accepted_external_reference | — |
+| `cy-general-admin-act-lead` | `cy:url:2740f2fa1ba93d0c4d3d` | resolved | local_artifact/unspecified/undated<br>official_reference/el/undated | accepted_external_reference, accepted_local_copy | — |
+| `cy-general-admin-law-amendment-28i-2020` | `cy:url:12481260e6639f5a0d26` | resolved | official_reference/el/undated | candidate | — |
+| `cy-gov-gazette-service` | `cy:url:c51d5323ca9e66798555` | resolved | official_reference/el/undated | discovery | — |
+| `cy-gpo-archive` | `cy:url:c490ec006e9ff226dec2` | resolved | official_reference/el/undated | discovery | — |
+| `cy-gpo-main` | `cy:url:f74fd659bc0e9de2c850` | resolved | official_reference/en/undated | discovery | — |
+| `cy-green-line-regulation-866-2004` | `eu:celex:32004r0866` | resolved | official_reference/en/undated<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `cy-green-line-regulation-866-2004-el` | `eu:celex:32004r0866` | resolved | local_artifact/el/2004<br>official_reference/el/undated<br>official_reference/el/undated | accepted_external_reference, accepted_local_copy | — |
+| `cy-information-commissioner-laws` | `cy:url:5d3ac4fce08893323126` | resolved | official_reference/el/undated<br>official_reference/en/undated | discovery | — |
+| `cy-law-commissioner-index` | `cy:url:499eb8ec72d0368eafe3` | resolved | official_reference/en/undated | discovery | — |
+| `cy-legal-aid-act-lead` | `cy:url:bd74647d1bef1b762198` | resolved | official_reference/el/undated | candidate | — |
+| `cy-legal-aid-official-consolidation` | `cy:url:e66f421c9fcf126f82fe` | resolved | official_reference/en/undated | candidate | — |
+| `cy-legal-aid-official-consolidation-greek` | `cy:url:37ff3f237e4f4256c66d` | resolved | official_reference/el/undated | discovery | — |
+| `cy-meu1-forms` | `cy:url:e43f874a3fcec637c43e` | resolved | official_reference/el/undated<br>official_reference/en/undated | candidate | — |
+| `cy-meu1-guidance` | `cy:url:0f4acdcee978e9f2546a` | resolved | local_artifact/en/undated<br>official_reference/en/undated | accepted_external_reference, pending | — |
+| `cy-meu2-forms` | `cy:url:bbdc892ad00332d640ce` | resolved | official_reference/el/undated<br>official_reference/en/undated | candidate | — |
+| `cy-meu2-forms-el` | `cy:url:ca9cf6ebefb7881256aa` | resolved | official_reference/el/undated | pending, discovery | — |
+| `cy-meu2-guidance` | `cy:url:728b8d591f1388d8306c` | resolved | local_artifact/en/undated<br>official_reference/en/undated | accepted_external_reference, pending | — |
+| `cy-meu2-guidance-el` | `cy:url:bfc849c5af5d99ca9440` | resolved | official_reference/el/undated | pending | — |
+| `cy-meu3-forms` | `cy:url:126ada529fa45cfc211e` | resolved | official_reference/el/undated<br>official_reference/en/undated | candidate | — |
+| `cy-meu3-guidance` | `cy:url:fa57f78d79324bd78e44` | resolved | official_reference/en/undated | candidate | — |
+| `cy-mfa-mission-beirut-visa-el` | `cy:url:4a9289a5df9591573539` | resolved | official_reference/el/undated | pending | — |
+| `cy-mfa-mission-paris-visa` | `cy:url:dd746b2c832fb4855d08` | resolved | official_reference/en/undated | candidate | — |
+| `cy-mfa-mission-vienna-visa` | `cy:url:82b8c7fb0f20a5e7921c` | resolved | official_reference/en/undated | candidate | — |
+| `cy-mfa-mission-washington-visa-el` | `cy:url:b094f9a16883d295b8ef` | resolved | official_reference/el/undated | pending | — |
+| `cy-mfa-mission-yerevan-visa-el` | `cy:url:a2cdb22815759f752861` | resolved | official_reference/el/undated | pending | — |
+| `cy-mfa-missions-directory` | `cy:url:cb933a0cf4a0a8c54787` | resolved | official_reference/en/undated | candidate | — |
+| `cy-mfa-national-visa-exemptions` | `cy:url:a8fc0cbf742b28c2eead` | resolved | official_reference/en/undated | pending | — |
+| `cy-mfa-visa-hub` | `cy:url:a890e1e40018bb641825` | resolved | official_reference/en/undated | candidate | — |
+| `cy-mfa-visa-overview` | `cy:url:8ab0f560ca7d3eef0d7d` | resolved | official_reference/en/undated | candidate | — |
+| `cy-migration-legislation-index` | `cy:url:5b27e2453a5f4378d5f1` | resolved | official_reference/el/undated | discovery | — |
+| `cy-migration-uk-withdrawal-guidance-el` | `cy:url:e0e291cb954eb6342af5` | resolved | official_reference/el/undated | candidate | — |
+| `cy-mission-athens-example` | `cy:url:2ee00d22dabaecef76cd` | resolved | official_reference/en/undated | candidate | — |
+| `cy-mission-yerevan-example` | `cy:url:6fa78296cec42ea9ac75` | resolved | official_reference/en/undated | candidate | — |
+| `cy-moi-residence-cards-legacy` | `cy:url:775ea80aa5650c497271` | resolved | official_reference/en/undated | candidate | — |
+| `cy-mvis8-criteria` | `cy:url:357eb20a47dc086195a2` | resolved | local_artifact/el/undated<br>local_artifact/en/undated<br>official_reference/en/undated | pending, candidate | — |
+| `cy-mvis8-form` | `cy:url:7c55b778c1167dd821a0` | resolved | official_reference/en/undated | candidate | — |
+| `cy-national-vis-pdf` | `cy:url:da69618d94a77ff86e5e` | resolved | official_reference/en/undated | candidate | — |
+| `cy-nlex` | `cy:url:b35be9211e76bb5077b7` | resolved | official_reference/en/undated | discovery | — |
+| `cy-ombudsman-amendment-127i-2022` | `cy:url:a20cbffa37b16be372d3` | resolved | official_reference/el/undated | candidate | — |
+| `cy-ombudsman-complaint-service` | `cy:url:4be66ef0e00db933bc2b` | resolved | official_reference/en/undated | candidate | — |
+| `cy-ombudsman-core` | `cy:url:74887816741e8f599953` | resolved | local_artifact/el/undated<br>local_artifact/en/undated<br>official_reference/en/undated | pending, candidate | — |
+| `cy-ombudsman-core-greek` | `cy:url:d78738691c19121b633b` | resolved | local_artifact/el/undated<br>official_reference/el/undated | pending, candidate | — |
+| `cy-ombudsman-form` | `cy:url:71d9a2aa6994b71a31d5` | resolved | local_artifact/el/undated<br>local_artifact/en/undated<br>official_reference/en/undated | pending, discovery | — |
+| `cy-ombudsman-laws-consolidation` | `cy:url:63f1ca16cead96202a2b` | resolved | official_reference/en/undated | candidate | — |
+| `cy-protocol-no-10` | `cy:url:1b26ea6f26e10bcd6766` | resolved | local_artifact/el/undated<br>local_artifact/en/undated<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `cy-protocol-no-10-el` | `cy:url:14093ec469a2767a7071` | resolved | local_artifact/el/undated<br>official_reference/el/undated | accepted_external_reference, accepted_local_copy | — |
+| `cy-scc-edd-215-19` | `cy:url:a1df544d2bf2860a7b24` | resolved | local_artifact/el/undated<br>local_artifact/en/undated<br>official_reference/el/undated | accepted_external_reference, accepted_local_copy | — |
+| `cy-schengen-status-pdf` | `cy:url:591110cc31ab163fbeee` | resolved | official_reference/en/undated | candidate | — |
+| `cy-supreme-constitutional-court-decisions` | `cy:url:ea2896646789f094b2db` | resolved | official_reference/el/undated<br>official_reference/el/undated | accepted_external_reference | — |
+| `cy-supreme-court-decisions` | `cy:url:88a3c2b6297d8e1a7e32` | resolved | official_reference/el/undated | discovery | — |
+| `cy-visa-application-form` | `cy:url:781980f8c2eeb90adaa0` | resolved | official_reference/en/undated | candidate | — |
+<!-- source-identity-inventory:end -->

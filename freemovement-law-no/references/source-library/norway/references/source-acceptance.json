@@ -1692,5 +1692,431 @@
       "Archive raw captures through Monitor before later offline semantic review.",
       "Build evidence-backed coverage, dependency, continuing-discovery and operational registers."
     ]
-  }
+  },
+  "legalize_crosswalk": {
+    "reviewed_on": "2026-10-29",
+    "repository": "https://github.com/legalize-dev/legalize-no",
+    "revision": "729ce30333de9d6f9f1e5faf537999cf42bc2a2f",
+    "confirmed_candidate_files": [
+      {
+        "source_id": "no-06",
+        "path": "no/LOV-2008-05-15-35.md",
+        "status": "identity confirmed; current-version mismatch/open comparison",
+        "official_source": "https://lovdata.no/dokument/NL/lov/2008-05-15-35"
+      },
+      {
+        "source_id": "no-08",
+        "path": "no/LOV-1992-11-27-109.md",
+        "status": "identity confirmed; candidate snapshot only",
+        "official_source": "https://lovdata.no/dokument/NL/lov/1992-11-27-109"
+      },
+      {
+        "source_id": "no-54",
+        "path": "no/LOV-2012-12-14-81.md",
+        "status": "identity confirmed; candidate snapshot only",
+        "official_source": "https://lovdata.no/dokument/NL/lov/2012-12-14-81"
+      }
+    ],
+    "excluded_source_classes": [
+      {
+        "source_id": "no-07",
+        "class": "central regulation",
+        "reason": "Legalize-no README says the free current-laws dataset does not include central regulations."
+      },
+      {
+        "source_id": "no-05",
+        "class": "regional/local Avdeling II rules",
+        "reason": "Not included in Legalize-no's described current-laws dataset; existing official retrieval gap remains open."
+      }
+    ],
+    "rights_and_attribution": "Individual law reuse requires attribution to Stiftelsen Lovdata under NLOD 2.0. Do not infer bulk/systematic extraction rights. Attribute Legalize-no and the pinned revision when it supplies a candidate.",
+    "conversion_rules": [
+      "Preserve Bokmål wording, hierarchy, formal legal identifiers, footnotes and source annotations.",
+      "Pin repository revision and source record; compare full body and anchors to the exact official Lovdata version.",
+      "Keep adoption, publication, amendment, effective and repository dates distinct; do not rely on last_updated.",
+      "Review image and attachment omissions; do not accept a candidate as current law based on its existence, hash, or status field."
+    ],
+    "accepted_local_source_copies": 0
+  },
+  "identity_links": {
+    "no-01": {
+      "source_identity_id": "no:url:3f7d71cc0d2e3fe3f075",
+      "representation_ids": [
+        "no:url:3f7d71cc0d2e3fe3f075#url:no:7c673ea6b57d"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-02": {
+      "source_identity_id": "no:url:36591006013043c0c6bf",
+      "representation_ids": [
+        "no:url:36591006013043c0c6bf#url:no:f39cb940424a"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-03": {
+      "source_identity_id": "no:url:dfe14bf9d5d3e7f03e23",
+      "representation_ids": [
+        "no:url:dfe14bf9d5d3e7f03e23#url:no:33dd7fe3b16b"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-04": {
+      "source_identity_id": "no:ambiguous:no-04:646eb066904f",
+      "representation_ids": [
+        "no:ambiguous:no-04:646eb066904f#url:no:7e31c9067d4b"
+      ],
+      "identity_resolution_status": "unresolved"
+    },
+    "no-05": {
+      "source_identity_id": "no:ambiguous:no-05:61ad860bb480",
+      "representation_ids": [
+        "no:ambiguous:no-05:61ad860bb480#url:no:7e31c9067d4b"
+      ],
+      "identity_resolution_status": "unresolved"
+    },
+    "no-06": {
+      "source_identity_id": "no:url:44c69f11d2a22523fb71",
+      "representation_ids": [
+        "no:url:44c69f11d2a22523fb71#url:no:166812b3a15f"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-07": {
+      "source_identity_id": "no:url:024ca356091c41a78596",
+      "representation_ids": [
+        "no:url:024ca356091c41a78596#url:no:e10a7675c350"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-08": {
+      "source_identity_id": "no:url:40c31cc928a572d87768",
+      "representation_ids": [
+        "no:url:40c31cc928a572d87768#url:no:cf837e9db494"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-09": {
+      "source_identity_id": "no:url:189c0b84546d476df180",
+      "representation_ids": [
+        "no:url:189c0b84546d476df180#url:en:eb9ef85594a7"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-10": {
+      "source_identity_id": "no:url:e50cc885170d76a75d86",
+      "representation_ids": [
+        "no:url:e50cc885170d76a75d86#url:en:9f4af43a8962"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-11": {
+      "source_identity_id": "no:url:e3bfbf30a28fb6ee8518",
+      "representation_ids": [
+        "no:url:e3bfbf30a28fb6ee8518#url:no:18316a5681a8"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-12": {
+      "source_identity_id": "no:url:7f1e72c2007edff9148d",
+      "representation_ids": [
+        "no:url:7f1e72c2007edff9148d#url:no:025c6f3d8674"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-13": {
+      "source_identity_id": "no:url:efb88945580fe6af04f8",
+      "representation_ids": [
+        "no:url:efb88945580fe6af04f8#url:no:f7dc4261426f"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-14": {
+      "source_identity_id": "no:url:59174e1e9f368eb1ba53",
+      "representation_ids": [
+        "no:url:59174e1e9f368eb1ba53#url:no:29b0f0e771ea"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-15": {
+      "source_identity_id": "no:url:23d486ef21ee10ff20e2",
+      "representation_ids": [
+        "no:url:23d486ef21ee10ff20e2#url:no:4eb58de47e0d"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-16": {
+      "source_identity_id": "no:url:1828ba2d25af11ed0cc7",
+      "representation_ids": [
+        "no:url:1828ba2d25af11ed0cc7#url:no:054414555306"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-17": {
+      "source_identity_id": "no:url:9f6119082de680b5dd64",
+      "representation_ids": [
+        "no:url:9f6119082de680b5dd64#url:no:0834763ecf8c"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-18": {
+      "source_identity_id": "no:url:d004859e59c7eadf3903",
+      "representation_ids": [
+        "no:url:d004859e59c7eadf3903#url:en:dce5a36fc62f"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-19": {
+      "source_identity_id": "no:url:fe5270c23ac05736093e",
+      "representation_ids": [
+        "no:url:fe5270c23ac05736093e#url:en:7b85752fa6d8"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-20": {
+      "source_identity_id": "no:url:602afc24de87e76dac5f",
+      "representation_ids": [
+        "no:url:602afc24de87e76dac5f#url:en:5b06c019838b"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-21": {
+      "source_identity_id": "no:url:188f41e4b207062b3c50",
+      "representation_ids": [
+        "no:url:188f41e4b207062b3c50#url:en:1cf2d7e7763a"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-22": {
+      "source_identity_id": "no:url:3e14149e4885f8aae603",
+      "representation_ids": [
+        "no:url:3e14149e4885f8aae603#url:en:8bb24b95e628"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-23": {
+      "source_identity_id": "no:url:cb1d7539105998955c42",
+      "representation_ids": [
+        "no:url:cb1d7539105998955c42#url:en:24b6e00b4042"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-24": {
+      "source_identity_id": "no:url:9d7434858d8898972103",
+      "representation_ids": [
+        "no:url:9d7434858d8898972103#url:en:19b3e176f738"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-25": {
+      "source_identity_id": "no:url:85e13ad0c508d2d875b0",
+      "representation_ids": [
+        "no:url:85e13ad0c508d2d875b0#url:en:2e30ef32b90c"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-26": {
+      "source_identity_id": "no:url:95794e8f31e96a52cd39",
+      "representation_ids": [
+        "no:url:95794e8f31e96a52cd39#url:en:f56c74201fd3"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-27": {
+      "source_identity_id": "no:url:420ba64bf2966a6c1713",
+      "representation_ids": [
+        "no:url:420ba64bf2966a6c1713#url:en:7f60e5672195"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-28": {
+      "source_identity_id": "no:url:91ff409f1ab58662ba26",
+      "representation_ids": [
+        "no:url:91ff409f1ab58662ba26#url:en:aaf3e1095bf7"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-29": {
+      "source_identity_id": "no:url:70ca6eca40c349681cc5",
+      "representation_ids": [
+        "no:url:70ca6eca40c349681cc5#url:en:69635b5a7965"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-30": {
+      "source_identity_id": "no:url:e7b8a9ec9eb31f2d7902",
+      "representation_ids": [
+        "no:url:e7b8a9ec9eb31f2d7902#url:no:479907b57947"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-31": {
+      "source_identity_id": "no:url:f34925e77f3f7bc4d976",
+      "representation_ids": [
+        "no:url:f34925e77f3f7bc4d976#url:no:c4aa1d2703a2"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-32": {
+      "source_identity_id": "no:url:de90df1b03ab4af97df4",
+      "representation_ids": [
+        "no:url:de90df1b03ab4af97df4#url:en:5281fa56a10a"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-33": {
+      "source_identity_id": "no:url:fe056f8d61191dee360d",
+      "representation_ids": [
+        "no:url:fe056f8d61191dee360d#url:en:803482120448"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-34": {
+      "source_identity_id": "no:url:461b16ee9af81993a4c1",
+      "representation_ids": [
+        "no:url:461b16ee9af81993a4c1#url:no:164446ae8ad9"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-35": {
+      "source_identity_id": "no:url:1dbebab6ef847f2d3be1",
+      "representation_ids": [
+        "no:url:1dbebab6ef847f2d3be1#url:en:d3b3801a2889"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-36": {
+      "source_identity_id": "no:url:9332e4748d374cc9f86f",
+      "representation_ids": [
+        "no:url:9332e4748d374cc9f86f#url:en:755a18226aa4"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-37": {
+      "source_identity_id": "no:url:bd945b9d235388d40f02",
+      "representation_ids": [
+        "no:url:bd945b9d235388d40f02#url:en:4c64f7d10132"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-38": {
+      "source_identity_id": "no:url:2d68a053fb150fafd082",
+      "representation_ids": [
+        "no:url:2d68a053fb150fafd082#url:en:ba28799b27cf"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-39": {
+      "source_identity_id": "no:url:68aedfb3e18946e96428",
+      "representation_ids": [
+        "no:url:68aedfb3e18946e96428#url:no:1d342595d466"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-40": {
+      "source_identity_id": "no:url:41d9043deaed21288c7d",
+      "representation_ids": [
+        "no:url:41d9043deaed21288c7d#url:en:868719a93308"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-41": {
+      "source_identity_id": "no:url:265f4aabd0fb61c2afd5",
+      "representation_ids": [
+        "no:url:265f4aabd0fb61c2afd5#url:en:acb09af4785d"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-42": {
+      "source_identity_id": "no:url:7bfaa61fb3e21793820a",
+      "representation_ids": [
+        "no:url:7bfaa61fb3e21793820a#url:no:6ad1421a4d17"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-43": {
+      "source_identity_id": "no:url:e72bc38e0b9468617ebe",
+      "representation_ids": [
+        "no:url:e72bc38e0b9468617ebe#url:en:47cddebeb875"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-44": {
+      "source_identity_id": "no:url:31aa5599cf0999255153",
+      "representation_ids": [
+        "no:url:31aa5599cf0999255153#url:en:a4b83b24fbc5"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-45": {
+      "source_identity_id": "no:url:b372b68205f1f93c31b1",
+      "representation_ids": [
+        "no:url:b372b68205f1f93c31b1#url:en:ee54a7550c0c"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-46": {
+      "source_identity_id": "no:url:882e8ca82745a7973018",
+      "representation_ids": [
+        "no:url:882e8ca82745a7973018#url:no:8f7789aa3133"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-47": {
+      "source_identity_id": "no:url:f9be900ca9fd6206280f",
+      "representation_ids": [
+        "no:url:f9be900ca9fd6206280f#url:no:609c844a7a4e"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-48": {
+      "source_identity_id": "no:url:a0c5d355f1a9e3478a90",
+      "representation_ids": [
+        "no:url:a0c5d355f1a9e3478a90#url:no:316a05690f13"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-49": {
+      "source_identity_id": "no:url:67f698be5fcd52927d0b",
+      "representation_ids": [
+        "no:url:67f698be5fcd52927d0b#url:en:47fb823f2990"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-50": {
+      "source_identity_id": "no:url:0841c7d32f18e98e8137",
+      "representation_ids": [
+        "no:url:0841c7d32f18e98e8137#url:no:02237083a7be"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-51": {
+      "source_identity_id": "no:url:47d88fbb270816842bf0",
+      "representation_ids": [
+        "no:url:47d88fbb270816842bf0#url:en:202a72a60429"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-52": {
+      "source_identity_id": "no:url:fc62dd0c277e4792fa41",
+      "representation_ids": [
+        "no:url:fc62dd0c277e4792fa41#url:no:c53c748df6f8"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-53": {
+      "source_identity_id": "no:url:f325aa184568318b2ff1",
+      "representation_ids": [
+        "no:url:f325aa184568318b2ff1#url:no:cb43b247b20d"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "no-54": {
+      "source_identity_id": "no:url:66a571558ab053f158bd",
+      "representation_ids": [
+        "no:url:66a571558ab053f158bd#url:nn:7b64875d5e1f"
+      ],
+      "identity_resolution_status": "resolved"
+    }
+  },
+  "identity_link_schema_version": 1
 }
