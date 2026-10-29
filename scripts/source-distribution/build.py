@@ -224,7 +224,12 @@ def safe_source_path(root: Path, raw: str, pack: Path) -> Path:
     if p.parts[0] == "source-library":
         candidates.append(root.parent.joinpath(*p.parts))
     else:
-        candidates.extend((pack.joinpath(*p.parts), pack / "references" / Path(*p.parts)))
+        relative_path = Path(*p.parts)
+        candidates.extend((
+            pack / relative_path,
+            pack / "references" / relative_path,
+            pack / "documents" / relative_path,
+        ))
     for candidate in candidates:
         resolved = candidate.resolve()
         if resolved.is_relative_to(root.resolve()) and resolved.is_file():
