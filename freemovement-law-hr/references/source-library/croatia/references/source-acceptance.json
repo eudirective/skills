@@ -815,7 +815,7 @@
     ],
     "note": "Record a human-reviewed official source link here when it supports a coverage layer without a retained local copy. This record does not change the local accepted-source count. Use version_or_cutoff='not displayed' and explain the limit when the publisher shows no version marker."
   },
-  "accepted_source_count": 49,
+  "accepted_source_count": 64,
   "records": {
     "hr-access-info-act": {
       "status": "accepted",
@@ -874,76 +874,114 @@
       "candidate_archive_path": "candidates/eudirective-public-data/HR/legislation/hr-access-info-act.md"
     },
     "hr-access-info-amend-69-22": {
-      "status": "located_not_captured",
+      "status": "accepted",
       "checks": {
         "publisher_identity": {
-          "status": "pending",
-          "evidence": "Not yet reviewed."
+          "status": "pass",
+          "evidence": "Official Narodne novine record identifies Access to Information Act amendment NN 69/22; item number and issuer appear in the selected official document text."
         },
         "current_legal_version": {
-          "status": "pending",
-          "evidence": "Not yet reviewed."
+          "status": "pass",
+          "review_date": "2026-10-28",
+          "evidence": "Official source opened from its exact Gazette URL on 2026-10-28; The official reference review and Commissioner-listed chain identify NN 69/22 as the later amendment to Act NN 25/13, following NN 85/15. This individual enactment is not a consolidation."
         },
         "extraction_completeness": {
-          "status": "pending",
-          "evidence": "Not yet reviewed."
+          "status": "pass",
+          "evidence": "Exactly one .sl-content .doc fragment replayed. Independent ordered visible-text comparison passed with 24404 normalized characters and hash 89281fbaa9e5b2024061618e54d20cde41ee067c9ce07e6ed97cbc06fa84134a. Source-specific anchor review: Official opening text identifies the NN 69/22 amendment; all 32 Article labels and closing promulgation details are retained. Embedded images: 0; linked files: 0; see attachments_review. Publisher shell excluded."
         },
         "attachments_review": {
-          "status": "pending",
-          "evidence": "Not yet reviewed."
+          "status": "not_applicable",
+          "evidence": "No embedded images or linked files were present in the selected official document fragment."
         },
         "legal_classification": {
-          "status": "pending",
-          "evidence": "Not yet reviewed."
+          "status": "pass",
+          "evidence": "amending_act; Official Narodne novine search result confirms NN 69/22 title/number and text; direct non-full route timed out, so the stable /full/ representation is the preferred retrieval URL. Full source capture and section review remain open."
         },
         "lawful_reuse": {
           "status": "pass",
           "scope": "official_text_only",
           "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
-          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) permits use of individually published official legislative, administrative and judicial texts for public information. This review covers only this exact source text, not the Gazette page shell, third-party material, embedded images, or database-wide/systematic reuse. Only this source-specific official text fragment is retained."
         }
       },
       "semantic_review": {
-        "status": "not_reviewed",
-        "method": null,
-        "evidence": "No source-level semantic comparison has been recorded."
-      }
+        "status": "passed",
+        "method": "independent_visible_text_equivalence_and_anchor_review",
+        "review_date": "2026-10-28",
+        "scope": "ordered_visible_text_in_selected_official_document_region",
+        "evidence": "Independent visible-text comparison passed: decoded text nodes in the retained fragment match the published text in order after NFC and whitespace normalization. Both contain 24404 normalized characters; SHA-256 89281fbaa9e5b2024061618e54d20cde41ee067c9ce07e6ed97cbc06fa84134a. Source-specific anchor review: Official opening text identifies the NN 69/22 amendment; all 32 Article labels and closing promulgation details are retained. 0 embedded images and 0 linked files are separately scoped in attachments_review.",
+        "source_fragment_sha256": "9b2a895416db46ab69a8314182397c3fe3e271af6daac10668282b0ce789ba9a",
+        "normalized_visible_text_sha256": "89281fbaa9e5b2024061618e54d20cde41ee067c9ce07e6ed97cbc06fa84134a",
+        "normalized_visible_characters": 24404,
+        "embedded_image_count": 0,
+        "linked_file_urls": [],
+        "source_fragment_archive_path": "captures/eudirective-public-data/HR/official-texts/hr-access-info-amend-69-22.html",
+        "raw_archive_path": "captures/eudirective-public-data/HR/raw/hr-access-info-amend-69-22-0cb4803dd073bbe364007eb40653d18ef3881f334a784b167e694a686f47b097.html"
+      },
+      "accepted_on": "2026-10-28",
+      "document_path": "source-library/croatia/documents/legislation/hr-access-info-amend-69-22.md",
+      "source_response_sha256": "0cb4803dd073bbe364007eb40653d18ef3881f334a784b167e694a686f47b097",
+      "source_response_bytes": 61304,
+      "raw_archive_path": "captures/eudirective-public-data/HR/raw/hr-access-info-amend-69-22-0cb4803dd073bbe364007eb40653d18ef3881f334a784b167e694a686f47b097.html",
+      "source_fragment_archive_path": "captures/eudirective-public-data/HR/official-texts/hr-access-info-amend-69-22.html",
+      "source_fragment_sha256": "9b2a895416db46ab69a8314182397c3fe3e271af6daac10668282b0ce789ba9a",
+      "local_file_sha256": "5cc7a90fc57615aeb1dc4b04920f561debd9aa30afec502ea29b6e86d32432dd",
+      "candidate_archive_path": "candidates/eudirective-public-data/HR/legislation/hr-access-info-amend-69-22.md"
     },
     "hr-access-info-amend-85-15": {
-      "status": "located_not_captured",
+      "status": "accepted",
       "checks": {
         "publisher_identity": {
-          "status": "pending",
-          "evidence": "Not yet reviewed."
+          "status": "pass",
+          "evidence": "Official Narodne novine record identifies Access to Information Act amendment NN 85/15; item number and issuer appear in the selected official document text."
         },
         "current_legal_version": {
-          "status": "pending",
-          "evidence": "Not yet reviewed."
+          "status": "pass",
+          "review_date": "2026-10-28",
+          "evidence": "Official source opened from its exact Gazette URL on 2026-10-28; The official reference review and Commissioner-listed chain identify NN 85/15 as an amendment to Act NN 25/13, alongside NN 69/22. This individual enactment is not a consolidation."
         },
         "extraction_completeness": {
-          "status": "pending",
-          "evidence": "Not yet reviewed."
+          "status": "pass",
+          "evidence": "Exactly one .sl-content .doc fragment replayed. Independent ordered visible-text comparison passed with 35396 normalized characters and hash ab1f5e2892fd4599a5ccda85c437b00b19bcb32085de1c7a698eaabb00985ac4. Source-specific anchor review: Official opening text identifies the NN 85/15 amendment; all 50 Article labels and closing promulgation details are retained. Embedded images: 0; linked files: 0; see attachments_review. Publisher shell excluded."
         },
         "attachments_review": {
-          "status": "pending",
-          "evidence": "Not yet reviewed."
+          "status": "not_applicable",
+          "evidence": "No embedded images or linked files were present in the selected official document fragment."
         },
         "legal_classification": {
-          "status": "pending",
-          "evidence": "Not yet reviewed."
+          "status": "pass",
+          "evidence": "amending_act; The existing act candidate cites NN 85/15 and 69/22; this record was missing."
         },
         "lawful_reuse": {
           "status": "pass",
           "scope": "official_text_only",
           "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
-          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) permits use of individually published official legislative, administrative and judicial texts for public information. This review covers only this exact source text, not the Gazette page shell, third-party material, embedded images, or database-wide/systematic reuse. Only this source-specific official text fragment is retained."
         }
       },
       "semantic_review": {
-        "status": "not_reviewed",
-        "method": null,
-        "evidence": "No source-level semantic comparison has been recorded."
-      }
+        "status": "passed",
+        "method": "independent_visible_text_equivalence_and_anchor_review",
+        "review_date": "2026-10-28",
+        "scope": "ordered_visible_text_in_selected_official_document_region",
+        "evidence": "Independent visible-text comparison passed: decoded text nodes in the retained fragment match the published text in order after NFC and whitespace normalization. Both contain 35396 normalized characters; SHA-256 ab1f5e2892fd4599a5ccda85c437b00b19bcb32085de1c7a698eaabb00985ac4. Source-specific anchor review: Official opening text identifies the NN 85/15 amendment; all 50 Article labels and closing promulgation details are retained. 0 embedded images and 0 linked files are separately scoped in attachments_review.",
+        "source_fragment_sha256": "d261cdcc3c78967fc2c23b40ab7685ada04e90ae424a1f08d95776ea603b3371",
+        "normalized_visible_text_sha256": "ab1f5e2892fd4599a5ccda85c437b00b19bcb32085de1c7a698eaabb00985ac4",
+        "normalized_visible_characters": 35396,
+        "embedded_image_count": 0,
+        "linked_file_urls": [],
+        "source_fragment_archive_path": "captures/eudirective-public-data/HR/official-texts/hr-access-info-amend-85-15.html",
+        "raw_archive_path": "captures/eudirective-public-data/HR/raw/hr-access-info-amend-85-15-05cdb898ff78e383c5601196f36afa78ab13c542f2b52d7ebe7c8344859488b5.html"
+      },
+      "accepted_on": "2026-10-28",
+      "document_path": "source-library/croatia/documents/legislation/hr-access-info-amend-85-15.md",
+      "source_response_sha256": "05cdb898ff78e383c5601196f36afa78ab13c542f2b52d7ebe7c8344859488b5",
+      "source_response_bytes": 71992,
+      "raw_archive_path": "captures/eudirective-public-data/HR/raw/hr-access-info-amend-85-15-05cdb898ff78e383c5601196f36afa78ab13c542f2b52d7ebe7c8344859488b5.html",
+      "source_fragment_archive_path": "captures/eudirective-public-data/HR/official-texts/hr-access-info-amend-85-15.html",
+      "source_fragment_sha256": "d261cdcc3c78967fc2c23b40ab7685ada04e90ae424a1f08d95776ea603b3371",
+      "local_file_sha256": "0a854fd495828ffcbeb1fba02943d2b6a1bc6f77b6f5aad9e9e89cdafd75a5f6",
+      "candidate_archive_path": "candidates/eudirective-public-data/HR/legislation/hr-access-info-amend-85-15.md"
     },
     "hr-access-info-commissioner": {
       "status": "accepted",
@@ -1222,40 +1260,59 @@
       "candidate_archive_path": "discovery/eudirective-public-data/HR/discovery/hr-court-decisions.md"
     },
     "hr-data-protection-act": {
-      "status": "located_not_captured",
+      "status": "accepted",
       "checks": {
         "publisher_identity": {
-          "status": "pending",
-          "evidence": "Not yet reviewed."
+          "status": "pass",
+          "evidence": "Official Narodne novine record identifies Personal Data Protection Implementation Act NN 42/18; item number and issuer appear in the selected official document text."
         },
         "current_legal_version": {
-          "status": "pending",
-          "evidence": "Not yet reviewed."
+          "status": "pass",
+          "review_date": "2026-10-28",
+          "evidence": "Official source opened from its exact Gazette URL on 2026-10-28; This is the original official NN 42/18 enactment identified by AZOP. A current consolidation and full amendment chain were not verified; accept only as the identified official text within that freshness limit. Article 1(2) separates law-enforcement processing."
         },
         "extraction_completeness": {
-          "status": "pending",
-          "evidence": "Not yet reviewed."
+          "status": "pass",
+          "evidence": "Exactly one .sl-content .doc fragment replayed. Independent ordered visible-text comparison passed with 36911 normalized characters and hash fe6942c455421fdcdb7b6d777cbd8806f623100c6aa751c26eb31c5903a7ad15. Source-specific anchor review: Official title, NN 42/18 item 805 and 57 Article labels are retained; this is the GDPR implementation statute, not a VIS/SIS-specific guide. Embedded images: 0; linked files: 0; see attachments_review. Publisher shell excluded."
         },
         "attachments_review": {
-          "status": "pending",
-          "evidence": "Not yet reviewed."
+          "status": "not_applicable",
+          "evidence": "No embedded images or linked files were present in the selected official document fragment."
         },
         "legal_classification": {
-          "status": "pending",
-          "evidence": "Not yet reviewed."
+          "status": "pass",
+          "evidence": "national_act; The existing AZOP candidate is only an index. This is the actual Croatian GDPR implementation statute; law-enforcement processing follows a separate regime."
         },
         "lawful_reuse": {
           "status": "pass",
           "scope": "official_text_only",
           "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
-          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) permits use of individually published official legislative, administrative and judicial texts for public information. This review covers only this exact source text, not the Gazette page shell, third-party material, embedded images, or database-wide/systematic reuse. Only this source-specific official text fragment is retained."
         }
       },
       "semantic_review": {
-        "status": "not_reviewed",
-        "method": null,
-        "evidence": "No source-level semantic comparison has been recorded."
-      }
+        "status": "passed",
+        "method": "independent_visible_text_equivalence_and_anchor_review",
+        "review_date": "2026-10-28",
+        "scope": "ordered_visible_text_in_selected_official_document_region",
+        "evidence": "Independent visible-text comparison passed: decoded text nodes in the retained fragment match the published text in order after NFC and whitespace normalization. Both contain 36911 normalized characters; SHA-256 fe6942c455421fdcdb7b6d777cbd8806f623100c6aa751c26eb31c5903a7ad15. Source-specific anchor review: Official title, NN 42/18 item 805 and 57 Article labels are retained; this is the GDPR implementation statute, not a VIS/SIS-specific guide. 0 embedded images and 0 linked files are separately scoped in attachments_review.",
+        "source_fragment_sha256": "b8512eaaacd26c3f7c8c44598875c93238ea2339c8b19bef76c0f8b0c469a28d",
+        "normalized_visible_text_sha256": "fe6942c455421fdcdb7b6d777cbd8806f623100c6aa751c26eb31c5903a7ad15",
+        "normalized_visible_characters": 36911,
+        "embedded_image_count": 0,
+        "linked_file_urls": [],
+        "source_fragment_archive_path": "captures/eudirective-public-data/HR/official-texts/hr-data-protection-act.html",
+        "raw_archive_path": "captures/eudirective-public-data/HR/raw/hr-data-protection-act-9b1315a2cf11d6fd02a8a298a87705b467104841c9bcc15f27268a442ed499a5.html"
+      },
+      "accepted_on": "2026-10-28",
+      "document_path": "source-library/croatia/documents/legislation/hr-data-protection-act.md",
+      "source_response_sha256": "9b1315a2cf11d6fd02a8a298a87705b467104841c9bcc15f27268a442ed499a5",
+      "source_response_bytes": 107991,
+      "raw_archive_path": "captures/eudirective-public-data/HR/raw/hr-data-protection-act-9b1315a2cf11d6fd02a8a298a87705b467104841c9bcc15f27268a442ed499a5.html",
+      "source_fragment_archive_path": "captures/eudirective-public-data/HR/official-texts/hr-data-protection-act.html",
+      "source_fragment_sha256": "b8512eaaacd26c3f7c8c44598875c93238ea2339c8b19bef76c0f8b0c469a28d",
+      "local_file_sha256": "32e9751f460aa4326949d4f3ecf08f1600f12f4c292dec99eaab66dbac644e39",
+      "candidate_archive_path": "candidates/eudirective-public-data/HR/legislation/hr-data-protection-act.md"
     },
     "hr-e-predmet": {
       "status": "discovery_surface_no_text",
@@ -3240,121 +3297,169 @@
       "candidate_archive_path": "discovery/eudirective-public-data/HR/discovery/hr-personal-data-act.md"
     },
     "hr-third-country-procedure-amend-102-25": {
-      "status": "located_not_captured",
+      "status": "accepted",
       "checks": {
         "publisher_identity": {
-          "status": "pending",
-          "evidence": "Not yet reviewed."
+          "status": "pass",
+          "evidence": "Official Narodne novine record identifies Third-country procedure regulation amendment NN 102/25; item number and issuer appear in the selected official document text."
         },
         "current_legal_version": {
           "status": "pass",
-          "chain_id": "hr-third-country-procedure-regulation-chain",
-          "review_date": "2026-10-19",
-          "evidence_url": "https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652",
-          "evidence": "MUP's current Propisi page lists the third-country procedure regulation as NN 136/21, 145/23, 102/25 and 116/26. No later amendment is listed on that page as of 2026-10-19. Official publisher index checked 2026-10-19 at https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652 (turn1078view0 lines 70-81). This confirms the listed chain only; it is not a consolidated-text or legal-topic-completeness review. A separate older MUP page omits the latest amendment for this chain; it is recorded as stale in currentness-review.json and does not override the current Propisi index."
+          "review_date": "2026-10-28",
+          "evidence": "Official source opened from its exact Gazette URL on 2026-10-28; The current MUP Propisi index checked 28 October 2026 lists NN 136/21, 145/23, 102/25 and 116/26. This is the NN 102/25 component, not consolidated text. https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652"
         },
         "extraction_completeness": {
-          "status": "pending",
-          "evidence": "Not yet reviewed."
+          "status": "pass",
+          "evidence": "Exactly one .sl-content .doc fragment replayed. Independent ordered visible-text comparison passed with 8817 normalized characters and hash 37d229eae31ed312ed8d9cb33c4b40ceb1c72171c14a7f8a671967bb2a8527fb. Source-specific anchor review: Official NN 102/25 item 1414; all 11 Article labels retained. Embedded images: 54; linked files: 0; see attachments_review. Publisher shell excluded."
         },
         "attachments_review": {
-          "status": "pending",
-          "evidence": "Not yet reviewed."
+          "status": "not_applicable",
+          "evidence": "This text-only representation omits 54 embedded images. They are not reproduced, visually reviewed or relied on; use the official Gazette URL for their content."
         },
         "legal_classification": {
-          "status": "pending",
-          "evidence": "Not yet reviewed."
+          "status": "pass",
+          "evidence": "amending_regulation; Intermediate amendment listed by MUP."
         },
         "lawful_reuse": {
           "status": "pass",
           "scope": "official_text_only",
           "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
-          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) permits use of individually published official legislative, administrative and judicial texts for public information. This review covers only this exact source text, not the Gazette page shell, third-party material, embedded images, or database-wide/systematic reuse. Only this source-specific official text fragment is retained."
         }
       },
       "semantic_review": {
-        "status": "not_reviewed",
-        "method": null,
-        "evidence": "No source-level semantic comparison has been recorded."
-      }
+        "status": "passed",
+        "method": "independent_visible_text_equivalence_and_anchor_review",
+        "review_date": "2026-10-28",
+        "scope": "ordered_visible_text_in_selected_official_document_region",
+        "evidence": "Independent visible-text comparison passed: decoded text nodes in the retained fragment match the published text in order after NFC and whitespace normalization. Both contain 8817 normalized characters; SHA-256 37d229eae31ed312ed8d9cb33c4b40ceb1c72171c14a7f8a671967bb2a8527fb. Source-specific anchor review: Official NN 102/25 item 1414; all 11 Article labels retained. 54 embedded images and 0 linked files are separately scoped in attachments_review.",
+        "source_fragment_sha256": "51b39667f2ad20709a0813839bec91bfc085c596203fe4440e750b1baae42cf2",
+        "normalized_visible_text_sha256": "37d229eae31ed312ed8d9cb33c4b40ceb1c72171c14a7f8a671967bb2a8527fb",
+        "normalized_visible_characters": 8817,
+        "embedded_image_count": 54,
+        "linked_file_urls": [],
+        "source_fragment_archive_path": "captures/eudirective-public-data/HR/official-texts/hr-third-country-procedure-amend-102-25.html",
+        "raw_archive_path": "captures/eudirective-public-data/HR/raw/hr-third-country-procedure-amend-102-25-d81bd9ff475eb6174cc3e1a57f89667ad7584af140249127774666bb98b6f085.html"
+      },
+      "accepted_on": "2026-10-28",
+      "document_path": "source-library/croatia/documents/legislation/hr-third-country-procedure-amend-102-25.md",
+      "source_response_sha256": "d81bd9ff475eb6174cc3e1a57f89667ad7584af140249127774666bb98b6f085",
+      "source_response_bytes": 63056,
+      "raw_archive_path": "captures/eudirective-public-data/HR/raw/hr-third-country-procedure-amend-102-25-d81bd9ff475eb6174cc3e1a57f89667ad7584af140249127774666bb98b6f085.html",
+      "source_fragment_archive_path": "captures/eudirective-public-data/HR/official-texts/hr-third-country-procedure-amend-102-25.html",
+      "source_fragment_sha256": "51b39667f2ad20709a0813839bec91bfc085c596203fe4440e750b1baae42cf2",
+      "local_file_sha256": "0043ee632859ad9bec67c2d1d56a871ea33c2f4b61011f500bd1e0d9b84b5670",
+      "candidate_archive_path": "candidates/eudirective-public-data/HR/legislation/hr-third-country-procedure-amend-102-25.md"
     },
     "hr-third-country-procedure-amend-145-23": {
-      "status": "located_not_captured",
+      "status": "accepted",
       "checks": {
         "publisher_identity": {
-          "status": "pending",
-          "evidence": "Not yet reviewed."
+          "status": "pass",
+          "evidence": "Official Narodne novine record identifies Third-country procedure regulation amendment NN 145/23; item number and issuer appear in the selected official document text."
         },
         "current_legal_version": {
           "status": "pass",
-          "chain_id": "hr-third-country-procedure-regulation-chain",
-          "review_date": "2026-10-19",
-          "evidence_url": "https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652",
-          "evidence": "MUP's current Propisi page lists the third-country procedure regulation as NN 136/21, 145/23, 102/25 and 116/26. No later amendment is listed on that page as of 2026-10-19. Official publisher index checked 2026-10-19 at https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652 (turn1078view0 lines 70-81). This confirms the listed chain only; it is not a consolidated-text or legal-topic-completeness review. A separate older MUP page omits the latest amendment for this chain; it is recorded as stale in currentness-review.json and does not override the current Propisi index."
+          "review_date": "2026-10-28",
+          "evidence": "Official source opened from its exact Gazette URL on 2026-10-28; The current MUP Propisi index checked 28 October 2026 lists NN 136/21, 145/23, 102/25 and 116/26. This is the NN 145/23 component, not consolidated text. https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652"
         },
         "extraction_completeness": {
-          "status": "pending",
-          "evidence": "Not yet reviewed."
+          "status": "pass",
+          "evidence": "Exactly one .sl-content .doc fragment replayed. Independent ordered visible-text comparison passed with 6617 normalized characters and hash f4c036c19bbb671113f3ebeaa646a54532fe1aa40cb3d76353e3edbbc6b1c0e2. Source-specific anchor review: Official NN 145/23 item 2004; all 10 Article labels retained. Embedded images: 49; linked files: 0; see attachments_review. Publisher shell excluded."
         },
         "attachments_review": {
-          "status": "pending",
-          "evidence": "Not yet reviewed."
+          "status": "not_applicable",
+          "evidence": "This text-only representation omits 49 embedded images. They are not reproduced, visually reviewed or relied on; use the official Gazette URL for their content."
         },
         "legal_classification": {
-          "status": "pending",
-          "evidence": "Not yet reviewed."
+          "status": "pass",
+          "evidence": "amending_regulation; Intermediate amendment listed by MUP."
         },
         "lawful_reuse": {
           "status": "pass",
           "scope": "official_text_only",
           "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
-          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) permits use of individually published official legislative, administrative and judicial texts for public information. This review covers only this exact source text, not the Gazette page shell, third-party material, embedded images, or database-wide/systematic reuse. Only this source-specific official text fragment is retained."
         }
       },
       "semantic_review": {
-        "status": "not_reviewed",
-        "method": null,
-        "evidence": "No source-level semantic comparison has been recorded."
-      }
+        "status": "passed",
+        "method": "independent_visible_text_equivalence_and_anchor_review",
+        "review_date": "2026-10-28",
+        "scope": "ordered_visible_text_in_selected_official_document_region",
+        "evidence": "Independent visible-text comparison passed: decoded text nodes in the retained fragment match the published text in order after NFC and whitespace normalization. Both contain 6617 normalized characters; SHA-256 f4c036c19bbb671113f3ebeaa646a54532fe1aa40cb3d76353e3edbbc6b1c0e2. Source-specific anchor review: Official NN 145/23 item 2004; all 10 Article labels retained. 49 embedded images and 0 linked files are separately scoped in attachments_review.",
+        "source_fragment_sha256": "038013269f58ec615101f0dc88d98d6dd872ce464f1386fb1b2134294fb14b2a",
+        "normalized_visible_text_sha256": "f4c036c19bbb671113f3ebeaa646a54532fe1aa40cb3d76353e3edbbc6b1c0e2",
+        "normalized_visible_characters": 6617,
+        "embedded_image_count": 49,
+        "linked_file_urls": [],
+        "source_fragment_archive_path": "captures/eudirective-public-data/HR/official-texts/hr-third-country-procedure-amend-145-23.html",
+        "raw_archive_path": "captures/eudirective-public-data/HR/raw/hr-third-country-procedure-amend-145-23-ad0a3c1cad536e171de70a67bc7233f13eaa27c4bc555b8f17ae40d7be30da8a.html"
+      },
+      "accepted_on": "2026-10-28",
+      "document_path": "source-library/croatia/documents/legislation/hr-third-country-procedure-amend-145-23.md",
+      "source_response_sha256": "ad0a3c1cad536e171de70a67bc7233f13eaa27c4bc555b8f17ae40d7be30da8a",
+      "source_response_bytes": 59140,
+      "raw_archive_path": "captures/eudirective-public-data/HR/raw/hr-third-country-procedure-amend-145-23-ad0a3c1cad536e171de70a67bc7233f13eaa27c4bc555b8f17ae40d7be30da8a.html",
+      "source_fragment_archive_path": "captures/eudirective-public-data/HR/official-texts/hr-third-country-procedure-amend-145-23.html",
+      "source_fragment_sha256": "038013269f58ec615101f0dc88d98d6dd872ce464f1386fb1b2134294fb14b2a",
+      "local_file_sha256": "fd69ba0696a5491d6d0ffac6610929e6797d3db1feec37aaa0bda8937c056064",
+      "candidate_archive_path": "candidates/eudirective-public-data/HR/legislation/hr-third-country-procedure-amend-145-23.md"
     },
     "hr-third-country-procedure-base": {
-      "status": "located_not_captured",
+      "status": "accepted",
       "checks": {
         "publisher_identity": {
-          "status": "pending",
-          "evidence": "Not yet reviewed."
+          "status": "pass",
+          "evidence": "Official Narodne novine record identifies Third-country procedure regulation NN 136/21; item number and issuer appear in the selected official document text."
         },
         "current_legal_version": {
           "status": "pass",
-          "chain_id": "hr-third-country-procedure-regulation-chain",
-          "review_date": "2026-10-19",
-          "evidence_url": "https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652",
-          "evidence": "MUP's current Propisi page lists the third-country procedure regulation as NN 136/21, 145/23, 102/25 and 116/26. No later amendment is listed on that page as of 2026-10-19. Official publisher index checked 2026-10-19 at https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652 (turn1078view0 lines 70-81). This confirms the listed chain only; it is not a consolidated-text or legal-topic-completeness review. A separate older MUP page omits the latest amendment for this chain; it is recorded as stale in currentness-review.json and does not override the current Propisi index."
+          "review_date": "2026-10-28",
+          "evidence": "Official source opened from its exact Gazette URL on 2026-10-28; The current MUP Propisi index checked 28 October 2026 lists this regulation as NN 136/21, 145/23, 102/25 and 116/26. This is the NN 136/21 component, not consolidated text; it belongs to the third-country procedure regime. https://mup.gov.hr/gradjani-281562/moji-dokumenti-281563/stranci-333/propisi-652/652"
         },
         "extraction_completeness": {
-          "status": "pending",
-          "evidence": "Not yet reviewed."
+          "status": "pass",
+          "evidence": "Exactly one .sl-content .doc fragment replayed. Independent ordered visible-text comparison passed with 74410 normalized characters and hash b508d4f55fec6698ebda6bb7228a51074e51893b7937993d77f8cae54471e455. Source-specific anchor review: Official NN 136/21 item 2244; all 84 Article labels retained. Embedded images: 16; linked files: 0; see attachments_review. Publisher shell excluded."
         },
         "attachments_review": {
-          "status": "pending",
-          "evidence": "Not yet reviewed."
+          "status": "not_applicable",
+          "evidence": "This text-only representation omits 16 embedded images. They are not reproduced, visually reviewed or relied on; use the official Gazette URL for their content."
         },
         "legal_classification": {
-          "status": "pending",
-          "evidence": "Not yet reviewed."
+          "status": "pass",
+          "evidence": "implementing_regulation; Base procedure instrument needed to interpret the existing NN 116/26 amendment record."
         },
         "lawful_reuse": {
           "status": "pass",
           "scope": "official_text_only",
           "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
-          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) permits use of individually published official legislative, administrative and judicial texts for public information. This review covers only this exact source text, not the Gazette page shell, third-party material, embedded images, or database-wide/systematic reuse. Only this source-specific official text fragment is retained."
         }
       },
       "semantic_review": {
-        "status": "not_reviewed",
-        "method": null,
-        "evidence": "No source-level semantic comparison has been recorded."
-      }
+        "status": "passed",
+        "method": "independent_visible_text_equivalence_and_anchor_review",
+        "review_date": "2026-10-28",
+        "scope": "ordered_visible_text_in_selected_official_document_region",
+        "evidence": "Independent visible-text comparison passed: decoded text nodes in the retained fragment match the published text in order after NFC and whitespace normalization. Both contain 74410 normalized characters; SHA-256 b508d4f55fec6698ebda6bb7228a51074e51893b7937993d77f8cae54471e455. Source-specific anchor review: Official NN 136/21 item 2244; all 84 Article labels retained. 16 embedded images and 0 linked files are separately scoped in attachments_review.",
+        "source_fragment_sha256": "42d3ce70e45b4eb077499f41a3387796f03d3b605adad60b48b7512242495e68",
+        "normalized_visible_text_sha256": "b508d4f55fec6698ebda6bb7228a51074e51893b7937993d77f8cae54471e455",
+        "normalized_visible_characters": 74410,
+        "embedded_image_count": 16,
+        "linked_file_urls": [],
+        "source_fragment_archive_path": "captures/eudirective-public-data/HR/official-texts/hr-third-country-procedure-base.html",
+        "raw_archive_path": "captures/eudirective-public-data/HR/raw/hr-third-country-procedure-base-c8f0ffc8ec1185ea783dce8f056ce7309d95a248ffdc870b0592190bf1d6a7bc.html"
+      },
+      "accepted_on": "2026-10-28",
+      "document_path": "source-library/croatia/documents/legislation/hr-third-country-procedure-base.md",
+      "source_response_sha256": "c8f0ffc8ec1185ea783dce8f056ce7309d95a248ffdc870b0592190bf1d6a7bc",
+      "source_response_bytes": 160232,
+      "raw_archive_path": "captures/eudirective-public-data/HR/raw/hr-third-country-procedure-base-c8f0ffc8ec1185ea783dce8f056ce7309d95a248ffdc870b0592190bf1d6a7bc.html",
+      "source_fragment_archive_path": "captures/eudirective-public-data/HR/official-texts/hr-third-country-procedure-base.html",
+      "source_fragment_sha256": "42d3ce70e45b4eb077499f41a3387796f03d3b605adad60b48b7512242495e68",
+      "local_file_sha256": "27d662f00f87f19886930027bc5ffea4bd7dcf39b4b73d935dc31230ebfe61b5",
+      "candidate_archive_path": "candidates/eudirective-public-data/HR/legislation/hr-third-country-procedure-base.md"
     },
     "hr-third-country-procedure-rule": {
       "status": "accepted",
@@ -3756,40 +3861,59 @@
       "local_file": "documents/legislation/hr-visa-system-decree.md"
     },
     "hr-law-enforcement-data-act": {
-      "status": "located_not_captured",
+      "status": "accepted",
       "checks": {
         "publisher_identity": {
           "status": "pass",
-          "evidence": "The official Narodne novine page identifies the Act as NN 68/2018, item 1391, enacted by Hrvatski sabor, and displays ELI /eli/sluzbeni/2018/68/1391. MUP’s official laws page links the same act under data protection and information security. Reviewed 2026-10-25."
+          "evidence": "Official Narodne novine record identifies Law Enforcement Data Protection Act NN 68/18; item number and issuer appear in the selected official document text."
         },
         "current_legal_version": {
-          "status": "pending",
-          "evidence": "The MUP official page lists the original NN 68/18 citation but supplies no consolidation or complete amendment/validity chain. Current consolidated text and subsequent legal-status changes remain unverified; retain link acceptance only within the original-enactment cutoff."
+          "status": "pass",
+          "review_date": "2026-10-28",
+          "evidence": "Official source opened from its exact Gazette URL on 2026-10-28; This is the original official NN 68/18 enactment, identified as implementing Directive (EU) 2016/680. A current consolidation and full amendment chain were not verified; application to specific VIS/SIS processing remains open."
         },
         "extraction_completeness": {
-          "status": "pending",
-          "evidence": "Not yet reviewed."
+          "status": "pass",
+          "evidence": "Exactly one .sl-content .doc fragment replayed. Independent ordered visible-text comparison passed with 58254 normalized characters and hash f2fddb9af9c0695161070db130b71569842ece72d0d0e3b2f8c4725d25755837. Source-specific anchor review: Official title, NN 68/18 item 1391 and 57 Article labels are retained; it concerns law-enforcement processing under a separate regime. Embedded images: 0; linked files: 0; see attachments_review. Publisher shell excluded."
         },
         "attachments_review": {
-          "status": "pending",
-          "evidence": "Not yet reviewed."
+          "status": "not_applicable",
+          "evidence": "No embedded images or linked files were present in the selected official document fragment."
         },
         "legal_classification": {
           "status": "pass",
-          "evidence": "The official title identifies a law-enforcement-purpose personal-data statute. Articles 1–3 state its purposes, expressly identify transposition of Directive (EU) 2016/680, and define scope and exclusions."
+          "evidence": "national_act; Official Gazette text located; implements Directive (EU) 2016/680 for competent-authority criminal-law/public-security processing, a separate regime from GDPR. Determine applicability to specific VIS/SIS processing and controller routes."
         },
         "lawful_reuse": {
           "status": "pass",
           "scope": "official_text_only",
           "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
-          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) permits use of individually published official legislative, administrative and judicial texts for public information. This review covers only this exact source text, not the Gazette page shell, third-party material, embedded images, or database-wide/systematic reuse. Only this source-specific official text fragment is retained."
         }
       },
       "semantic_review": {
-        "status": "not_reviewed",
-        "method": null,
-        "evidence": "No source-level semantic comparison has been recorded."
-      }
+        "status": "passed",
+        "method": "independent_visible_text_equivalence_and_anchor_review",
+        "review_date": "2026-10-28",
+        "scope": "ordered_visible_text_in_selected_official_document_region",
+        "evidence": "Independent visible-text comparison passed: decoded text nodes in the retained fragment match the published text in order after NFC and whitespace normalization. Both contain 58254 normalized characters; SHA-256 f2fddb9af9c0695161070db130b71569842ece72d0d0e3b2f8c4725d25755837. Source-specific anchor review: Official title, NN 68/18 item 1391 and 57 Article labels are retained; it concerns law-enforcement processing under a separate regime. 0 embedded images and 0 linked files are separately scoped in attachments_review.",
+        "source_fragment_sha256": "31054c7ace65238a7e9843cdd6165149d327c36ee8465aa6d26aa98d331e4a87",
+        "normalized_visible_text_sha256": "f2fddb9af9c0695161070db130b71569842ece72d0d0e3b2f8c4725d25755837",
+        "normalized_visible_characters": 58254,
+        "embedded_image_count": 0,
+        "linked_file_urls": [],
+        "source_fragment_archive_path": "captures/eudirective-public-data/HR/official-texts/hr-law-enforcement-data-act.html",
+        "raw_archive_path": "captures/eudirective-public-data/HR/raw/hr-law-enforcement-data-act-e3cb460731e1ab4a868dd98bc6a6e11e8dd89ed6558df37093ec734e8a89a57c.html"
+      },
+      "accepted_on": "2026-10-28",
+      "document_path": "source-library/croatia/documents/legislation/hr-law-enforcement-data-act.md",
+      "source_response_sha256": "e3cb460731e1ab4a868dd98bc6a6e11e8dd89ed6558df37093ec734e8a89a57c",
+      "source_response_bytes": 136483,
+      "raw_archive_path": "captures/eudirective-public-data/HR/raw/hr-law-enforcement-data-act-e3cb460731e1ab4a868dd98bc6a6e11e8dd89ed6558df37093ec734e8a89a57c.html",
+      "source_fragment_archive_path": "captures/eudirective-public-data/HR/official-texts/hr-law-enforcement-data-act.html",
+      "source_fragment_sha256": "31054c7ace65238a7e9843cdd6165149d327c36ee8465aa6d26aa98d331e4a87",
+      "local_file_sha256": "2f134bf0c418d841dd2013d213b671cdba2dfbd668fbc4837e59fce9588bc635",
+      "candidate_archive_path": "candidates/eudirective-public-data/HR/legislation/hr-law-enforcement-data-act.md"
     },
     "hr-mup-eea-forms-index": {
       "status": "located_not_captured",
@@ -3875,277 +3999,389 @@
       "document_path": "documents/guidance/hr-gov-hr-eea-residence-guidance.md"
     },
     "hr-admin-fees-act": {
-      "status": "located_not_captured",
+      "status": "accepted",
       "checks": {
         "publisher_identity": {
           "status": "pass",
-          "evidence": "Narodne novine official record at the exact official URL https://narodne-novine.nn.hr/clanci/sluzbeni/2016_12_115_2521.html; the official record/page title and publisher domain identify the listed instrument or procedure."
+          "evidence": "Official Narodne novine record identifies Administrative Fees Act NN 115/16; item number and issuer appear in the selected official document text."
         },
         "current_legal_version": {
           "status": "pass",
-          "review_date": "2026-10-19",
-          "evidence_url": "https://narodne-novine.nn.hr/clanci/sluzbeni/2016_12_115_2521.html",
-          "evidence": "Official Ministry source lists the Administrative Fees Act as NN 115/16 and amendment NN 114/22. The current-version chain is identified, not consolidated. See https://mpgi.gov.hr/?id=3228&url=print."
+          "review_date": "2026-10-28",
+          "evidence": "Official source opened from its exact Gazette URL on 2026-10-28; Official source review identifies NN 115/16 with amendment NN 114/22. This copy is the original Act, not consolidated wording; no EEA-family exemption or refund conclusion is made."
         },
         "extraction_completeness": {
-          "status": "pending",
-          "evidence": "Located; no source-specific capture or extraction comparison is recorded."
+          "status": "pass",
+          "evidence": "Exactly one .sl-content .doc fragment replayed. Independent ordered visible-text comparison passed with 29817 normalized characters and hash cb6aaff229858345759441dec2de344b704b1d25b9acf82d693692c026a0b362. Source-specific anchor review: Official NN 115/16 item 2521; all 33 Article labels retained. Embedded images: 0; linked files: 0; see attachments_review. Publisher shell excluded."
         },
         "attachments_review": {
-          "status": "pending",
-          "evidence": "No attachment inventory or source visual review has been recorded."
+          "status": "not_applicable",
+          "evidence": "No embedded images or linked files were present in the selected official document fragment."
         },
         "legal_classification": {
-          "status": "pending",
-          "evidence": "Located official record; verify exact instrument classification and role after capture."
+          "status": "pass",
+          "evidence": "national_act; Sets the statutory framework for administrative charges and expressly references the Visa Code; needed to identify who may be charged and exemptions/refunds."
         },
         "lawful_reuse": {
           "status": "pass",
           "scope": "official_text_only",
           "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
-          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) permits use of individually published official legislative, administrative and judicial texts for public information. This review covers only this exact source text, not the Gazette page shell, third-party material, embedded images, or database-wide/systematic reuse. Only this source-specific official text fragment is retained."
         }
       },
       "semantic_review": {
-        "status": "not_reviewed",
-        "method": null,
-        "evidence": "No source-specific semantic comparison has been recorded."
+        "status": "passed",
+        "method": "independent_visible_text_equivalence_and_anchor_review",
+        "review_date": "2026-10-28",
+        "scope": "ordered_visible_text_in_selected_official_document_region",
+        "evidence": "Independent visible-text comparison passed: decoded text nodes in the retained fragment match the published text in order after NFC and whitespace normalization. Both contain 29817 normalized characters; SHA-256 cb6aaff229858345759441dec2de344b704b1d25b9acf82d693692c026a0b362. Source-specific anchor review: Official NN 115/16 item 2521; all 33 Article labels retained. 0 embedded images and 0 linked files are separately scoped in attachments_review.",
+        "source_fragment_sha256": "474658f3f2de2d88a0e629e3fe0b201d9228944a7a0b65aeabd10c57997c8a4b",
+        "normalized_visible_text_sha256": "cb6aaff229858345759441dec2de344b704b1d25b9acf82d693692c026a0b362",
+        "normalized_visible_characters": 29817,
+        "embedded_image_count": 0,
+        "linked_file_urls": [],
+        "source_fragment_archive_path": "captures/eudirective-public-data/HR/official-texts/hr-admin-fees-act.html",
+        "raw_archive_path": "captures/eudirective-public-data/HR/raw/hr-admin-fees-act-bf04fc7bee8ae134b85be44c08bbec213b2183ed2d5745cb34849ec76b29155f.html"
       },
-      "discovery_note": "Sets the statutory framework for administrative charges and expressly references the Visa Code; needed to identify who may be charged and exemptions/refunds."
+      "accepted_on": "2026-10-28",
+      "document_path": "source-library/croatia/documents/legislation/hr-admin-fees-act.md",
+      "source_response_sha256": "bf04fc7bee8ae134b85be44c08bbec213b2183ed2d5745cb34849ec76b29155f",
+      "source_response_bytes": 96293,
+      "raw_archive_path": "captures/eudirective-public-data/HR/raw/hr-admin-fees-act-bf04fc7bee8ae134b85be44c08bbec213b2183ed2d5745cb34849ec76b29155f.html",
+      "source_fragment_archive_path": "captures/eudirective-public-data/HR/official-texts/hr-admin-fees-act.html",
+      "source_fragment_sha256": "474658f3f2de2d88a0e629e3fe0b201d9228944a7a0b65aeabd10c57997c8a4b",
+      "local_file_sha256": "d0056e900195670fc5207bd3f3f9b80c67e61f8eba8a183bd4b932ab88c4a40f",
+      "candidate_archive_path": "candidates/eudirective-public-data/HR/legislation/hr-admin-fees-act.md"
     },
     "hr-admin-fees-amend-114-22": {
-      "status": "located_not_captured",
+      "status": "accepted",
       "checks": {
         "publisher_identity": {
           "status": "pass",
-          "evidence": "Narodne novine official record at the exact official URL https://narodne-novine.nn.hr/clanci/sluzbeni/full/2022_10_114_1682.html; the official record/page title and publisher domain identify the listed instrument or procedure."
+          "evidence": "Official Narodne novine record identifies Administrative Fees Act amendment NN 114/22; item number and issuer appear in the selected official document text."
         },
         "current_legal_version": {
           "status": "pass",
-          "review_date": "2026-10-19",
-          "evidence_url": "https://narodne-novine.nn.hr/clanci/sluzbeni/full/2022_10_114_1682.html",
-          "evidence": "The official Ministry list states the Administrative Fees Act chain NN 115/16 and 114/22; NN 114/22 is the latest listed amendment. See https://mpgi.gov.hr/?id=3228&url=print."
+          "review_date": "2026-10-28",
+          "evidence": "Official source opened from its exact Gazette URL on 2026-10-28; Official source review identifies NN 114/22 as the amendment to Act NN 115/16. This is the individual amendment text."
         },
         "extraction_completeness": {
-          "status": "pending",
-          "evidence": "Located; no source-specific capture or extraction comparison is recorded."
+          "status": "pass",
+          "evidence": "Exactly one .sl-content .doc fragment replayed. Independent ordered visible-text comparison passed with 2233 normalized characters and hash 39a3f3d82108e8de523de07b86fb24eced61bf5f0df3ecae240a5ba0f1b2d7ea. Source-specific anchor review: Official NN 114/22 item 1682; all 6 Article labels retained. Embedded images: 0; linked files: 0; see attachments_review. Publisher shell excluded."
         },
         "attachments_review": {
-          "status": "pending",
-          "evidence": "No attachment inventory or source visual review has been recorded."
+          "status": "not_applicable",
+          "evidence": "No embedded images or linked files were present in the selected official document fragment."
         },
         "legal_classification": {
-          "status": "pending",
-          "evidence": "Located official record; verify exact instrument classification and role after capture."
+          "status": "pass",
+          "evidence": "amending_act; Latest amendment listed in official ministry sources; changed euro-denomination provisions."
         },
         "lawful_reuse": {
           "status": "pass",
           "scope": "official_text_only",
           "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
-          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) permits use of individually published official legislative, administrative and judicial texts for public information. This review covers only this exact source text, not the Gazette page shell, third-party material, embedded images, or database-wide/systematic reuse. Only this source-specific official text fragment is retained."
         }
       },
       "semantic_review": {
-        "status": "not_reviewed",
-        "method": null,
-        "evidence": "No source-specific semantic comparison has been recorded."
+        "status": "passed",
+        "method": "independent_visible_text_equivalence_and_anchor_review",
+        "review_date": "2026-10-28",
+        "scope": "ordered_visible_text_in_selected_official_document_region",
+        "evidence": "Independent visible-text comparison passed: decoded text nodes in the retained fragment match the published text in order after NFC and whitespace normalization. Both contain 2233 normalized characters; SHA-256 39a3f3d82108e8de523de07b86fb24eced61bf5f0df3ecae240a5ba0f1b2d7ea. Source-specific anchor review: Official NN 114/22 item 1682; all 6 Article labels retained. 0 embedded images and 0 linked files are separately scoped in attachments_review.",
+        "source_fragment_sha256": "48f7be47ee7f295214b5927412f7cae158711c7b55df9b59327783d5cdfb6fc8",
+        "normalized_visible_text_sha256": "39a3f3d82108e8de523de07b86fb24eced61bf5f0df3ecae240a5ba0f1b2d7ea",
+        "normalized_visible_characters": 2233,
+        "embedded_image_count": 0,
+        "linked_file_urls": [],
+        "source_fragment_archive_path": "captures/eudirective-public-data/HR/official-texts/hr-admin-fees-amend-114-22.html",
+        "raw_archive_path": "captures/eudirective-public-data/HR/raw/hr-admin-fees-amend-114-22-dbff0dfb7565fbe030c29c526b481051e08f35f15b292b12eaaff6919d55fa41.html"
       },
-      "discovery_note": "Latest amendment listed in official ministry sources; changed euro-denomination provisions."
+      "accepted_on": "2026-10-28",
+      "document_path": "source-library/croatia/documents/legislation/hr-admin-fees-amend-114-22.md",
+      "source_response_sha256": "dbff0dfb7565fbe030c29c526b481051e08f35f15b292b12eaaff6919d55fa41",
+      "source_response_bytes": 32987,
+      "raw_archive_path": "captures/eudirective-public-data/HR/raw/hr-admin-fees-amend-114-22-dbff0dfb7565fbe030c29c526b481051e08f35f15b292b12eaaff6919d55fa41.html",
+      "source_fragment_archive_path": "captures/eudirective-public-data/HR/official-texts/hr-admin-fees-amend-114-22.html",
+      "source_fragment_sha256": "48f7be47ee7f295214b5927412f7cae158711c7b55df9b59327783d5cdfb6fc8",
+      "local_file_sha256": "204ec06e558a52b8cd2261e2218f4c8af32fb4e0af497250a2d92f5a323d43e8",
+      "candidate_archive_path": "candidates/eudirective-public-data/HR/legislation/hr-admin-fees-amend-114-22.md"
     },
     "hr-admin-fees-tariff": {
-      "status": "located_not_captured",
+      "status": "accepted",
       "checks": {
         "publisher_identity": {
           "status": "pass",
-          "evidence": "Narodne novine official record at the exact official URL https://narodne-novine.nn.hr/clanci/sluzbeni/2022_12_156_2520.html; the official record/page title and publisher domain identify the listed instrument or procedure."
+          "evidence": "Official Narodne novine record identifies Tariff of Administrative Fees Regulation NN 156/22; item number and issuer appear in the selected official document text."
         },
         "current_legal_version": {
           "status": "pass",
-          "review_date": "2026-10-19",
-          "evidence_url": "https://narodne-novine.nn.hr/clanci/sluzbeni/2022_12_156_2520.html",
-          "evidence": "The Central Catalogue of Official Documents lists NN 156/22 as a valid instrument with amendment NN 130/25; DGU also lists the same chain. This verifies the current tariff identity, not a consolidated rendering. See https://sredisnjikatalogrh.gov.hr/sredisnji-katalog/pravni-propisi/detalji?id=3018443&st=1 and https://dgu.gov.hr/pristup-informacijama/zakoni-i-ostali-propisi/uredbe/96."
+          "review_date": "2026-10-28",
+          "evidence": "Official source opened from its exact Gazette URL on 2026-10-28; Official source review identifies NN 156/22 as the tariff and NN 130/25 as its later targeted amendment. This is the original tariff text."
         },
         "extraction_completeness": {
-          "status": "pending",
-          "evidence": "Located; no source-specific capture or extraction comparison is recorded."
+          "status": "pass",
+          "evidence": "Exactly one .sl-content .doc fragment replayed. Independent ordered visible-text comparison passed with 32504 normalized characters and hash 521b5f85edb46a746638b52fccd228e88258b245eee986f5bc2eea4fa5b1c17f. Source-specific anchor review: Official NN 156/22 item 2520; all 5 Article labels and table-cell boundaries retained. Embedded images: 0; linked files: 0; see attachments_review. Publisher shell excluded."
         },
         "attachments_review": {
-          "status": "pending",
-          "evidence": "No attachment inventory or source visual review has been recorded."
+          "status": "not_applicable",
+          "evidence": "No embedded images or linked files were present in the selected official document fragment."
         },
         "legal_classification": {
-          "status": "pending",
-          "evidence": "Located official record; verify exact instrument classification and role after capture."
+          "status": "pass",
+          "evidence": "implementing_regulation; Sets amounts and individual administrative fee items under the Administrative Fees Act, including visa-appeal and residence-document fees."
         },
         "lawful_reuse": {
           "status": "pass",
           "scope": "official_text_only",
           "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
-          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) permits use of individually published official legislative, administrative and judicial texts for public information. This review covers only this exact source text, not the Gazette page shell, third-party material, embedded images, or database-wide/systematic reuse. Only this source-specific official text fragment is retained."
         }
       },
       "semantic_review": {
-        "status": "not_reviewed",
-        "method": null,
-        "evidence": "No source-specific semantic comparison has been recorded."
+        "status": "passed",
+        "method": "independent_visible_text_equivalence_and_anchor_review",
+        "review_date": "2026-10-28",
+        "scope": "ordered_visible_text_in_selected_official_document_region",
+        "evidence": "Independent visible-text comparison passed: decoded text nodes in the retained fragment match the published text in order after NFC and whitespace normalization. Both contain 32504 normalized characters; SHA-256 521b5f85edb46a746638b52fccd228e88258b245eee986f5bc2eea4fa5b1c17f. Source-specific anchor review: Official NN 156/22 item 2520; all 5 Article labels and table-cell boundaries retained. 0 embedded images and 0 linked files are separately scoped in attachments_review.",
+        "source_fragment_sha256": "005da6a28dfd75107ba8626e563cf29d26137946d53b97dedb662d33bf3cd837",
+        "normalized_visible_text_sha256": "521b5f85edb46a746638b52fccd228e88258b245eee986f5bc2eea4fa5b1c17f",
+        "normalized_visible_characters": 32504,
+        "embedded_image_count": 0,
+        "linked_file_urls": [],
+        "source_fragment_archive_path": "captures/eudirective-public-data/HR/official-texts/hr-admin-fees-tariff.html",
+        "raw_archive_path": "captures/eudirective-public-data/HR/raw/hr-admin-fees-tariff-5e46ca4139c2f1dbf73211e557ed0b7e4f2921a8a191e642261da372a363120b.html"
       },
-      "discovery_note": "Sets amounts and individual administrative fee items under the Administrative Fees Act, including visa-appeal and residence-document fees."
+      "accepted_on": "2026-10-28",
+      "document_path": "source-library/croatia/documents/legislation/hr-admin-fees-tariff.md",
+      "source_response_sha256": "5e46ca4139c2f1dbf73211e557ed0b7e4f2921a8a191e642261da372a363120b",
+      "source_response_bytes": 98393,
+      "raw_archive_path": "captures/eudirective-public-data/HR/raw/hr-admin-fees-tariff-5e46ca4139c2f1dbf73211e557ed0b7e4f2921a8a191e642261da372a363120b.html",
+      "source_fragment_archive_path": "captures/eudirective-public-data/HR/official-texts/hr-admin-fees-tariff.html",
+      "source_fragment_sha256": "005da6a28dfd75107ba8626e563cf29d26137946d53b97dedb662d33bf3cd837",
+      "local_file_sha256": "00f729f89e54130d02a65253e1ec791acbfd10af988df3682fd3f67234f535d6",
+      "candidate_archive_path": "candidates/eudirective-public-data/HR/legislation/hr-admin-fees-tariff.md"
     },
     "hr-admin-fees-tariff-amend-130-25": {
-      "status": "located_not_captured",
+      "status": "accepted",
       "checks": {
         "publisher_identity": {
           "status": "pass",
-          "evidence": "Narodne novine official record at the exact official URL https://narodne-novine.nn.hr/clanci/sluzbeni/full/2025_10_130_1893.html; the official record/page title and publisher domain identify the listed instrument or procedure."
+          "evidence": "Official Narodne novine record identifies Administrative Fees Tariff amendment NN 130/25; item number and issuer appear in the selected official document text."
         },
         "current_legal_version": {
           "status": "pass",
-          "review_date": "2026-10-19",
-          "evidence_url": "https://narodne-novine.nn.hr/clanci/sluzbeni/full/2025_10_130_1893.html",
-          "evidence": "NN 130/25 expressly amends NN 156/22 and changes tariff item 30 to €130 for visa refusal/annulment/revocation appeals. Current government indexes list NN 156/22, 130/25."
+          "review_date": "2026-10-28",
+          "evidence": "Official source opened from its exact Gazette URL on 2026-10-28; Official source review identifies NN 130/25 as a targeted amendment to tariff NN 156/22; it amends item 30 to €130 for specified visa appeals. Application to qualifying Directive 2004/38 family members remains unresolved."
         },
         "extraction_completeness": {
-          "status": "pending",
-          "evidence": "Located; no source-specific capture or extraction comparison is recorded."
+          "status": "pass",
+          "evidence": "Exactly one .sl-content .doc fragment replayed. Independent ordered visible-text comparison passed with 1004 normalized characters and hash 59011370622c0a48fc3a07199a88a0498736f1f4dd9ed36857a1431274b5cf75. Source-specific anchor review: Official NN 130/25 item 1893; all 3 Article labels retained, including the €130 visa appeal tariff amendment. Embedded images: 0; linked files: 0; see attachments_review. Publisher shell excluded."
         },
         "attachments_review": {
-          "status": "pending",
-          "evidence": "No attachment inventory or source visual review has been recorded."
+          "status": "not_applicable",
+          "evidence": "No embedded images or linked files were present in the selected official document fragment."
         },
         "legal_classification": {
-          "status": "pending",
-          "evidence": "Located official record; verify exact instrument classification and role after capture."
+          "status": "pass",
+          "evidence": "amending_regulation; Amends tariff item 30 to set a €130 fee for appeal of visa refusal, annulment or revocation; effective eight days after publication."
         },
         "lawful_reuse": {
           "status": "pass",
           "scope": "official_text_only",
           "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
-          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) permits use of individually published official legislative, administrative and judicial texts for public information. This review covers only this exact source text, not the Gazette page shell, third-party material, embedded images, or database-wide/systematic reuse. Only this source-specific official text fragment is retained."
         }
       },
       "semantic_review": {
-        "status": "not_reviewed",
-        "method": null,
-        "evidence": "No source-specific semantic comparison has been recorded."
+        "status": "passed",
+        "method": "independent_visible_text_equivalence_and_anchor_review",
+        "review_date": "2026-10-28",
+        "scope": "ordered_visible_text_in_selected_official_document_region",
+        "evidence": "Independent visible-text comparison passed: decoded text nodes in the retained fragment match the published text in order after NFC and whitespace normalization. Both contain 1004 normalized characters; SHA-256 59011370622c0a48fc3a07199a88a0498736f1f4dd9ed36857a1431274b5cf75. Source-specific anchor review: Official NN 130/25 item 1893; all 3 Article labels retained, including the €130 visa appeal tariff amendment. 0 embedded images and 0 linked files are separately scoped in attachments_review.",
+        "source_fragment_sha256": "92fb238b40d42548e1a204ee4000b3f0200d7039a2f4425a0d6e8b5620ebb3ee",
+        "normalized_visible_text_sha256": "59011370622c0a48fc3a07199a88a0498736f1f4dd9ed36857a1431274b5cf75",
+        "normalized_visible_characters": 1004,
+        "embedded_image_count": 0,
+        "linked_file_urls": [],
+        "source_fragment_archive_path": "captures/eudirective-public-data/HR/official-texts/hr-admin-fees-tariff-amend-130-25.html",
+        "raw_archive_path": "captures/eudirective-public-data/HR/raw/hr-admin-fees-tariff-amend-130-25-fbfc8018c82b06a3735dee24a78120b3035f9276a6ad64abea70df98b924b982.html"
       },
-      "discovery_note": "Amends tariff item 30 to set a €130 fee for appeal of visa refusal, annulment or revocation; effective eight days after publication."
+      "accepted_on": "2026-10-28",
+      "document_path": "source-library/croatia/documents/legislation/hr-admin-fees-tariff-amend-130-25.md",
+      "source_response_sha256": "fbfc8018c82b06a3735dee24a78120b3035f9276a6ad64abea70df98b924b982",
+      "source_response_bytes": 31301,
+      "raw_archive_path": "captures/eudirective-public-data/HR/raw/hr-admin-fees-tariff-amend-130-25-fbfc8018c82b06a3735dee24a78120b3035f9276a6ad64abea70df98b924b982.html",
+      "source_fragment_archive_path": "captures/eudirective-public-data/HR/official-texts/hr-admin-fees-tariff-amend-130-25.html",
+      "source_fragment_sha256": "92fb238b40d42548e1a204ee4000b3f0200d7039a2f4425a0d6e8b5620ebb3ee",
+      "local_file_sha256": "4b2df715be39af8cd3c8c22567282a23ad8612c178291b50476cad86e0dc2348",
+      "candidate_archive_path": "candidates/eudirective-public-data/HR/legislation/hr-admin-fees-tariff-amend-130-25.md"
     },
     "hr-judicial-fees-act": {
-      "status": "located_not_captured",
+      "status": "accepted",
       "checks": {
         "publisher_identity": {
           "status": "pass",
-          "evidence": "Narodne novine official record at the exact official URL https://narodne-novine.nn.hr/clanci/sluzbeni/full/2018_12_118_2335.html; the official record/page title and publisher domain identify the listed instrument or procedure."
+          "evidence": "Official Narodne novine record identifies Court Fees Act NN 118/18; item number and issuer appear in the selected official document text."
         },
         "current_legal_version": {
           "status": "pass",
-          "review_date": "2026-10-19",
-          "evidence_url": "https://narodne-novine.nn.hr/clanci/sluzbeni/full/2018_12_118_2335.html",
-          "evidence": "The current NN 50/26 court tariff identifies its enabling statute as the Court Fees Act NN 118/18 and amendment NN 51/23. This confirms the chain referenced by the operative tariff."
+          "review_date": "2026-10-28",
+          "evidence": "Official source opened from its exact Gazette URL on 2026-10-28; The operative NN 50/26 tariff cites Act NN 118/18 and amendment NN 51/23. This is the original Act, not consolidated wording; read its payment-timing rule with the tariff and transition rule."
         },
         "extraction_completeness": {
-          "status": "pending",
-          "evidence": "Located; no source-specific capture or extraction comparison is recorded."
+          "status": "pass",
+          "evidence": "Exactly one .sl-content .doc fragment replayed. Independent ordered visible-text comparison passed with 24925 normalized characters and hash e8964cb0b473328a0b8fb8e4e6ae128e05098ef20ad0bfa03e3e0f5d8451efc8. Source-specific anchor review: Official NN 118/18 item 2335; all 42 Article labels retained. Embedded images: 0; linked files: 0; see attachments_review. Publisher shell excluded."
         },
         "attachments_review": {
-          "status": "pending",
-          "evidence": "No attachment inventory or source visual review has been recorded."
+          "status": "not_applicable",
+          "evidence": "No embedded images or linked files were present in the selected official document fragment."
         },
         "legal_classification": {
-          "status": "pending",
-          "evidence": "Located official record; verify exact instrument classification and role after capture."
+          "status": "pass",
+          "evidence": "national_act; Provides statutory basis for court fees, including administrative disputes and relief/exemptions."
         },
         "lawful_reuse": {
           "status": "pass",
           "scope": "official_text_only",
           "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
-          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) permits use of individually published official legislative, administrative and judicial texts for public information. This review covers only this exact source text, not the Gazette page shell, third-party material, embedded images, or database-wide/systematic reuse. Only this source-specific official text fragment is retained."
         }
       },
       "semantic_review": {
-        "status": "not_reviewed",
-        "method": null,
-        "evidence": "No source-specific semantic comparison has been recorded."
+        "status": "passed",
+        "method": "independent_visible_text_equivalence_and_anchor_review",
+        "review_date": "2026-10-28",
+        "scope": "ordered_visible_text_in_selected_official_document_region",
+        "evidence": "Independent visible-text comparison passed: decoded text nodes in the retained fragment match the published text in order after NFC and whitespace normalization. Both contain 24925 normalized characters; SHA-256 e8964cb0b473328a0b8fb8e4e6ae128e05098ef20ad0bfa03e3e0f5d8451efc8. Source-specific anchor review: Official NN 118/18 item 2335; all 42 Article labels retained. 0 embedded images and 0 linked files are separately scoped in attachments_review.",
+        "source_fragment_sha256": "1e9dfb8f8715633d95e3df5ea57fef8e9c68a7ddda0beca87e107879231b5d30",
+        "normalized_visible_text_sha256": "e8964cb0b473328a0b8fb8e4e6ae128e05098ef20ad0bfa03e3e0f5d8451efc8",
+        "normalized_visible_characters": 24925,
+        "embedded_image_count": 0,
+        "linked_file_urls": [],
+        "source_fragment_archive_path": "captures/eudirective-public-data/HR/official-texts/hr-judicial-fees-act.html",
+        "raw_archive_path": "captures/eudirective-public-data/HR/raw/hr-judicial-fees-act-77ee2fbc755e382f4959671f8469fa7a83f5e266451556c0ca197dc6eb612f58.html"
       },
-      "discovery_note": "Provides statutory basis for court fees, including administrative disputes and relief/exemptions."
+      "accepted_on": "2026-10-28",
+      "document_path": "source-library/croatia/documents/legislation/hr-judicial-fees-act.md",
+      "source_response_sha256": "77ee2fbc755e382f4959671f8469fa7a83f5e266451556c0ca197dc6eb612f58",
+      "source_response_bytes": 78505,
+      "raw_archive_path": "captures/eudirective-public-data/HR/raw/hr-judicial-fees-act-77ee2fbc755e382f4959671f8469fa7a83f5e266451556c0ca197dc6eb612f58.html",
+      "source_fragment_archive_path": "captures/eudirective-public-data/HR/official-texts/hr-judicial-fees-act.html",
+      "source_fragment_sha256": "1e9dfb8f8715633d95e3df5ea57fef8e9c68a7ddda0beca87e107879231b5d30",
+      "local_file_sha256": "b2d450fce70e8b3746d396b97f711fc9780ab54324c52f80418b8b0240a018c8",
+      "candidate_archive_path": "candidates/eudirective-public-data/HR/legislation/hr-judicial-fees-act.md"
     },
     "hr-judicial-fees-amend-51-23": {
-      "status": "located_not_captured",
+      "status": "accepted",
       "checks": {
         "publisher_identity": {
           "status": "pass",
-          "evidence": "Narodne novine official record at the exact official URL https://narodne-novine.nn.hr/clanci/sluzbeni/full/2023_05_51_840.html; the official record/page title and publisher domain identify the listed instrument or procedure."
+          "evidence": "Official Narodne novine record identifies Court Fees Act amendment NN 51/23; item number and issuer appear in the selected official document text."
         },
         "current_legal_version": {
           "status": "pass",
-          "review_date": "2026-10-19",
-          "evidence_url": "https://narodne-novine.nn.hr/clanci/sluzbeni/full/2023_05_51_840.html",
-          "evidence": "The current NN 50/26 court tariff identifies the Court Fees Act as NN 118/18 and 51/23; no later amendment is cited there."
+          "review_date": "2026-10-28",
+          "evidence": "Official source opened from its exact Gazette URL on 2026-10-28; The operative NN 50/26 tariff cites NN 51/23 as amendment to Act NN 118/18. This is the individual amendment text."
         },
         "extraction_completeness": {
-          "status": "pending",
-          "evidence": "Located; no source-specific capture or extraction comparison is recorded."
+          "status": "pass",
+          "evidence": "Exactly one .sl-content .doc fragment replayed. Independent ordered visible-text comparison passed with 4458 normalized characters and hash 738ca38850f1f4ebb2b09ec1446710395de3902b4f440cffcf53a9ae4f19d14e. Source-specific anchor review: Official NN 51/23 item 840; all 15 Article labels retained. Embedded images: 0; linked files: 0; see attachments_review. Publisher shell excluded."
         },
         "attachments_review": {
-          "status": "pending",
-          "evidence": "No attachment inventory or source visual review has been recorded."
+          "status": "not_applicable",
+          "evidence": "No embedded images or linked files were present in the selected official document fragment."
         },
         "legal_classification": {
-          "status": "pending",
-          "evidence": "Located official record; verify exact instrument classification and role after capture."
+          "status": "pass",
+          "evidence": "amending_act; Latest amendment referenced by the current 2026 court-fee tariff."
         },
         "lawful_reuse": {
           "status": "pass",
           "scope": "official_text_only",
           "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
-          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) permits use of individually published official legislative, administrative and judicial texts for public information. This review covers only this exact source text, not the Gazette page shell, third-party material, embedded images, or database-wide/systematic reuse. Only this source-specific official text fragment is retained."
         }
       },
       "semantic_review": {
-        "status": "not_reviewed",
-        "method": null,
-        "evidence": "No source-specific semantic comparison has been recorded."
+        "status": "passed",
+        "method": "independent_visible_text_equivalence_and_anchor_review",
+        "review_date": "2026-10-28",
+        "scope": "ordered_visible_text_in_selected_official_document_region",
+        "evidence": "Independent visible-text comparison passed: decoded text nodes in the retained fragment match the published text in order after NFC and whitespace normalization. Both contain 4458 normalized characters; SHA-256 738ca38850f1f4ebb2b09ec1446710395de3902b4f440cffcf53a9ae4f19d14e. Source-specific anchor review: Official NN 51/23 item 840; all 15 Article labels retained. 0 embedded images and 0 linked files are separately scoped in attachments_review.",
+        "source_fragment_sha256": "5f631881a2315917ec3a4b038dea2af57d9460ebfb601e7ca3e9b882a8b37238",
+        "normalized_visible_text_sha256": "738ca38850f1f4ebb2b09ec1446710395de3902b4f440cffcf53a9ae4f19d14e",
+        "normalized_visible_characters": 4458,
+        "embedded_image_count": 0,
+        "linked_file_urls": [],
+        "source_fragment_archive_path": "captures/eudirective-public-data/HR/official-texts/hr-judicial-fees-amend-51-23.html",
+        "raw_archive_path": "captures/eudirective-public-data/HR/raw/hr-judicial-fees-amend-51-23-439ced92b53682cfbf0d18dcf8d068e52839be57e0cfd74912f252afcdac5ac0.html"
       },
-      "discovery_note": "Latest amendment referenced by the current 2026 court-fee tariff."
+      "accepted_on": "2026-10-28",
+      "document_path": "source-library/croatia/documents/legislation/hr-judicial-fees-amend-51-23.md",
+      "source_response_sha256": "439ced92b53682cfbf0d18dcf8d068e52839be57e0cfd74912f252afcdac5ac0",
+      "source_response_bytes": 36336,
+      "raw_archive_path": "captures/eudirective-public-data/HR/raw/hr-judicial-fees-amend-51-23-439ced92b53682cfbf0d18dcf8d068e52839be57e0cfd74912f252afcdac5ac0.html",
+      "source_fragment_archive_path": "captures/eudirective-public-data/HR/official-texts/hr-judicial-fees-amend-51-23.html",
+      "source_fragment_sha256": "5f631881a2315917ec3a4b038dea2af57d9460ebfb601e7ca3e9b882a8b37238",
+      "local_file_sha256": "eff341c8b1d7edab60794c483925fc182e821bad5702fcd5ae72be9e9ca60486",
+      "candidate_archive_path": "candidates/eudirective-public-data/HR/legislation/hr-judicial-fees-amend-51-23.md"
     },
     "hr-judicial-fees-tariff": {
-      "status": "located_not_captured",
+      "status": "accepted",
       "checks": {
         "publisher_identity": {
           "status": "pass",
-          "evidence": "Narodne novine official record at the exact official URL https://narodne-novine.nn.hr/clanci/sluzbeni/2026_05_50_624.html; the official record/page title and publisher domain identify the listed instrument or procedure."
+          "evidence": "Official Narodne novine record identifies Tariff of Court Fees Regulation NN 50/26; item number and issuer appear in the selected official document text."
         },
         "current_legal_version": {
           "status": "pass",
-          "review_date": "2026-10-19",
-          "evidence_url": "https://narodne-novine.nn.hr/clanci/sluzbeni/2026_05_50_624.html",
-          "evidence": "NN 50/26 states that it applies from 1 June 2026, replaces NN 37/23 and preserves NN 37/23 rates for proceedings begun before that date."
+          "review_date": "2026-10-28",
+          "evidence": "Official source opened from its exact Gazette URL on 2026-10-28; NN 50/26 applies from 1 June 2026; Article 2 preserves NN 37/23 rates for earlier administrative disputes. The Act’s Article 22(1) payment-timing rule and exemptions remain separate."
         },
         "extraction_completeness": {
-          "status": "pending",
-          "evidence": "Located; no source-specific capture or extraction comparison is recorded."
+          "status": "pass",
+          "evidence": "Exactly one .sl-content .doc fragment replayed. Independent ordered visible-text comparison passed with 35611 normalized characters and hash 56ebc333e100572386202d2ef154a0e0c5ba7bd81e28fe32a8067e45f0863b4d. Source-specific anchor review: Official NN 50/26 item 624; all 4 Article labels and table-cell boundaries retained; it states €110 for an administrative claim and €140 for specified appeals. Embedded images: 0; linked files: 0; see attachments_review. Publisher shell excluded."
         },
         "attachments_review": {
-          "status": "pending",
-          "evidence": "No attachment inventory or source visual review has been recorded."
+          "status": "not_applicable",
+          "evidence": "No embedded images or linked files were present in the selected official document fragment."
         },
         "legal_classification": {
-          "status": "pending",
-          "evidence": "Located official record; verify exact instrument classification and role after capture."
+          "status": "pass",
+          "evidence": "implementing_regulation; Current tariff effective 1 June 2026: €110 for an administrative claim, €140 for appeals and High Administrative Court filings, and €560 for a general-act legality application."
         },
         "lawful_reuse": {
           "status": "pass",
           "scope": "official_text_only",
           "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
-          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) permits use of individually published official legislative, administrative and judicial texts for public information. This review covers only this exact source text, not the Gazette page shell, third-party material, embedded images, or database-wide/systematic reuse. Only this source-specific official text fragment is retained."
         }
       },
       "semantic_review": {
-        "status": "not_reviewed",
-        "method": null,
-        "evidence": "No source-specific semantic comparison has been recorded."
+        "status": "passed",
+        "method": "independent_visible_text_equivalence_and_anchor_review",
+        "review_date": "2026-10-28",
+        "scope": "ordered_visible_text_in_selected_official_document_region",
+        "evidence": "Independent visible-text comparison passed: decoded text nodes in the retained fragment match the published text in order after NFC and whitespace normalization. Both contain 35611 normalized characters; SHA-256 56ebc333e100572386202d2ef154a0e0c5ba7bd81e28fe32a8067e45f0863b4d. Source-specific anchor review: Official NN 50/26 item 624; all 4 Article labels and table-cell boundaries retained; it states €110 for an administrative claim and €140 for specified appeals. 0 embedded images and 0 linked files are separately scoped in attachments_review.",
+        "source_fragment_sha256": "002774e9d382acf6904073e9c40d998dca9c09607b8d7e5e84bf67fc9f96e427",
+        "normalized_visible_text_sha256": "56ebc333e100572386202d2ef154a0e0c5ba7bd81e28fe32a8067e45f0863b4d",
+        "normalized_visible_characters": 35611,
+        "embedded_image_count": 0,
+        "linked_file_urls": [],
+        "source_fragment_archive_path": "captures/eudirective-public-data/HR/official-texts/hr-judicial-fees-tariff.html",
+        "raw_archive_path": "captures/eudirective-public-data/HR/raw/hr-judicial-fees-tariff-a64da8ef7c4353381d99cb2ec514dc36bc103a95dc135603f0ef98fe9648183c.html"
       },
-      "discovery_note": "Current tariff effective 1 June 2026: €110 for an administrative claim, €140 for appeals and High Administrative Court filings, and €560 for a general-act legality application."
+      "accepted_on": "2026-10-28",
+      "document_path": "source-library/croatia/documents/legislation/hr-judicial-fees-tariff.md",
+      "source_response_sha256": "a64da8ef7c4353381d99cb2ec514dc36bc103a95dc135603f0ef98fe9648183c",
+      "source_response_bytes": 96461,
+      "raw_archive_path": "captures/eudirective-public-data/HR/raw/hr-judicial-fees-tariff-a64da8ef7c4353381d99cb2ec514dc36bc103a95dc135603f0ef98fe9648183c.html",
+      "source_fragment_archive_path": "captures/eudirective-public-data/HR/official-texts/hr-judicial-fees-tariff.html",
+      "source_fragment_sha256": "002774e9d382acf6904073e9c40d998dca9c09607b8d7e5e84bf67fc9f96e427",
+      "local_file_sha256": "a88419eee1196e3a9a0519a36231e64e9d63c9d5b549b1977b6eaa7e51f74b0d",
+      "candidate_archive_path": "candidates/eudirective-public-data/HR/legislation/hr-judicial-fees-tariff.md"
     },
     "hr-judicial-fees-tariff-transition-37-23": {
       "status": "located_not_captured",
@@ -4492,40 +4728,59 @@
       "local_file_sha256": "81607f84c2e2ea7ac2745e1a3c7a2dacf40f1be28ae38a79c7c286f8caced99d"
     },
     "hr-constitutional-court-zus-169-2-2026": {
-      "status": "located_not_captured",
+      "status": "accepted",
       "checks": {
         "publisher_identity": {
           "status": "pass",
-          "evidence": "Official Narodne novine record identifies Constitutional Court decision U-I-2767/2025 and U-I-2768/2025, NN 39/2026, item 485."
+          "evidence": "Official Narodne novine record identifies Constitutional Court decision on Administrative Disputes Act Article 169(2), NN 39/2026; item number and issuer appear in the selected official document text."
         },
         "current_legal_version": {
           "status": "pass",
-          "review_date": "2026-10-21",
-          "evidence": "The official published decision dated 2026-03-31 and publication date 2026-04-15 were checked. Its case-specific effect and timing remain open."
+          "review_date": "2026-10-28",
+          "evidence": "Official source opened from its exact Gazette URL on 2026-10-28; Official decision issued 31 March 2026 and published in NN 39/2026 on 15 April 2026. This is a narrow Administrative Disputes Act Article 169(2) transition dependency; case-specific effect and timing remain open."
         },
         "extraction_completeness": {
-          "status": "pending",
-          "evidence": "No local copy captured; source-specific extraction review is optional unless retaining a copy."
+          "status": "pass",
+          "evidence": "Exactly one .sl-content .doc fragment replayed. Independent ordered visible-text comparison passed with 22246 normalized characters and hash fadbe09fcaff6d6924ce7adb21ec16735303caa7ea41378108c675b769f732e5. Source-specific anchor review: Decision title, case identifiers, operative point I and final date/signature are retained. Point I concerns Article 169(2); no broader holding is claimed. Embedded images: 0; linked files: 0; see attachments_review. Publisher shell excluded."
         },
         "attachments_review": {
-          "status": "pending",
-          "evidence": "No local-copy attachment review performed."
+          "status": "not_applicable",
+          "evidence": "No embedded images or linked files were present in the selected official document fragment."
         },
         "legal_classification": {
           "status": "pass",
-          "evidence": "Constitutional Court decision affecting Administrative Disputes Act Article 169(2), a transitional litigation provision; it is not a general amendment to current EEA residence procedures."
+          "evidence": "constitutional_court_decision; Official decision dated 2026-03-31 and published NN 39/2026 on 2026-04-15. Operative point I starts constitutional review and repeals Administrative Disputes Act Article 169(2), a transitional provision; application-specific effect and timing are not assessed."
         },
         "lawful_reuse": {
-          "status": "pending",
-          "evidence": "No local copy retained; reuse review is not required for reference by official link."
+          "status": "pass",
+          "scope": "official_text_only",
+          "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
+          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) permits use of individually published official legislative, administrative and judicial texts for public information. This review covers only this exact source text, not the Gazette page shell, third-party material, embedded images, or database-wide/systematic reuse. Only this source-specific official text fragment is retained."
         }
       },
       "semantic_review": {
-        "status": "not_reviewed",
-        "method": null,
-        "evidence": "No local source-text extraction was performed."
+        "status": "passed",
+        "method": "independent_visible_text_equivalence_and_anchor_review",
+        "review_date": "2026-10-28",
+        "scope": "ordered_visible_text_in_selected_official_document_region",
+        "evidence": "Independent visible-text comparison passed: decoded text nodes in the retained fragment match the published text in order after NFC and whitespace normalization. Both contain 22246 normalized characters; SHA-256 fadbe09fcaff6d6924ce7adb21ec16735303caa7ea41378108c675b769f732e5. Source-specific anchor review: Decision title, case identifiers, operative point I and final date/signature are retained. Point I concerns Article 169(2); no broader holding is claimed. 0 embedded images and 0 linked files are separately scoped in attachments_review.",
+        "source_fragment_sha256": "f9bf9316ddb732a49c33c84d5be5d79f5aa7e2823b75a6406d05b2b737b3f11a",
+        "normalized_visible_text_sha256": "fadbe09fcaff6d6924ce7adb21ec16735303caa7ea41378108c675b769f732e5",
+        "normalized_visible_characters": 22246,
+        "embedded_image_count": 0,
+        "linked_file_urls": [],
+        "source_fragment_archive_path": "captures/eudirective-public-data/HR/official-texts/hr-constitutional-court-zus-169-2-2026.html",
+        "raw_archive_path": "captures/eudirective-public-data/HR/raw/hr-constitutional-court-zus-169-2-2026-f0e2a0cea6a26a4bafb84526e9a221b1de960073c3440ea48ac4a5148cc6b013.html"
       },
-      "discovery_note": "Reviewed as an official link for a narrow currentness dependency of Administrative Disputes Act Article 169(2)."
+      "accepted_on": "2026-10-28",
+      "document_path": "source-library/croatia/documents/case_law/hr-constitutional-court-zus-169-2-2026.md",
+      "source_response_sha256": "f0e2a0cea6a26a4bafb84526e9a221b1de960073c3440ea48ac4a5148cc6b013",
+      "source_response_bytes": 71552,
+      "raw_archive_path": "captures/eudirective-public-data/HR/raw/hr-constitutional-court-zus-169-2-2026-f0e2a0cea6a26a4bafb84526e9a221b1de960073c3440ea48ac4a5148cc6b013.html",
+      "source_fragment_archive_path": "captures/eudirective-public-data/HR/official-texts/hr-constitutional-court-zus-169-2-2026.html",
+      "source_fragment_sha256": "f9bf9316ddb732a49c33c84d5be5d79f5aa7e2823b75a6406d05b2b737b3f11a",
+      "local_file_sha256": "e81e7a97d28401673fb947f02f4e1af7cbe452dc040abe47a896b730e381f17c",
+      "candidate_archive_path": "candidates/eudirective-public-data/HR/case-law/hr-constitutional-court-zus-169-2-2026.md"
     },
     "hr-mup-sis-rights-guidance": {
       "status": "located_not_captured",

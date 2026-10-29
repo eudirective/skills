@@ -1,13 +1,14 @@
 # Latvia official-source discovery register
 
-Skill: author-source-pack-rules v1.0.1
+Skill: author-source-pack-rules v2.2.1
 
 Research date: 18 October 2026  
+Promotion review date: 28 October 2026
 State: EU Member State  
 Comparison seed: Denmark EU free-movement residence regulation and guidance  
 Scope: bounded discovery across official law/publication, free movement and immigration, forms, visa and consular routes, procedure/access, remedies, privacy/oversight, legal aid and courts. Prior country findings were carried forward as discovery leads and adapter lessons only.
 
-**External-reference review (29 October 2026):** 48 of 52 official source records are accepted as links within stated scope and date limits; 4 remain pending and 0 stale or unverified records are not relied upon. **Local-copy review (24 October 2026):** 30 source text snapshots are accepted under `documents/` after exact-capture replay and per-record scope review. Thirteen other converted candidate texts and the old PMLP PDF are preserved in the Monitor’s local-only archive and are not accepted. The two PDFs remain byte-for-byte preserved: OP 2026/119.1 is stored under `documents/` with its text extraction, while the PMLP form is archived as unaccepted. Six discovery/repository records have no individual text. Issue-led review added the Declaration of Place of Residence Act, Law on the Register of Natural Persons, and Civil Status Act as external-only references. These decisions do not establish topic coverage or country completion. See the [source acceptance register](source-acceptance.json), [issue-led coverage register](coverage-register.md), and [dependency register](dependency-register.json). The [source manifest](candidate-manifest.json) records each source and link decision; the [capture manifest](latvia-captures.json) records local paths, hashes, and archived candidate dispositions.
+**Source promotion review (28 October 2026):** 48 of 52 official source links are accepted within their recorded scopes; four remain pending and none are marked not relied upon. Forty dated local text snapshots are accepted after source-identity, scope, semantic, and deterministic-replay review. Ten local copies were added in this batch and the current PMLP parent forms index (lv-21) was refreshed. Old PMLP/MFA/immigration guidance is accepted only as historical evidence where it predates 2026 law changes. New raw and derived captures remain in the Monitor local-only archive. No topic is accepted as adequately covered, and Latvia’s country review remains incomplete. The source-acceptance register is authoritative for current status; the candidate manifest preserves discovery-stage inventory. See the [source acceptance register](source-acceptance.json), [issue-led coverage register](coverage-register.md), and [dependency register](dependency-register.json).
 
 ## Material 2026 status findings
 
@@ -125,25 +126,25 @@ Scope: bounded discovery across official law/publication, free movement and immi
 | ID | Source | Relation | Verification | Route/version note |
 |---|---|---|---|---|
 | lv-18 | [PMLP: Entry of EU, EEA and Swiss citizens and family members](https://www.pmlp.gov.lv/en/entry-citizens-eu-eea-and-switzerland-and-their-family-members) | partial_functional_match | PMLP official page inspected; published/updated metadata and stated law references checked. | Updated 17.07.2026; after the new law took effect. It identifies current registration/permanent residence documents and non-EU family permits. Accepted local text snapshot of the current central overview. Reconcile linked document requirements/forms against the new law and outstanding Cabinet rules. |
-| lv-19 | [PMLP: Documents required for EU citizen and family residence document](https://www.pmlp.gov.lv/en/what-documents-must-be-filed) | partial_functional_match | Main page and linked non-EU family-member list inspected 29.10.2026; date metadata and evidence categories checked. | Main page updated 24.07.2025; family-member page 19.06.2024; linked form 09.02.2026. See [maintained dated guidance](../documents/guidance/lv-19-pmlp-eu-family-documents.md). The detailed list predates the 10.07.2026 Act; post-commencement applicability is unresolved. |
-| lv-20 | [PMLP: Where can residence documents be filed?](https://www.pmlp.gov.lv/en/where-can-documents-be-filed) | partial_functional_match | Official PMLP page inspected; publication/update metadata and filing routes checked. | Updated 05.02.2025. Describes e-signature, post, in-person and some embassy/representative filing routes. Pre-2026 guidance; verify against the new act, Cabinet rules, actual e-address/form workflow and mission-specific intake. |
-| lv-23 | [PMLP EU residence document types and explanation](https://www.pmlp.gov.lv/en/what-residence-documents-are-issued-union-citizens-and-their-family-members) | related_source | Live English page and displayed dates checked 29.10.2026; maintained dated note at [lv-23](../documents/guidance/lv-23-pmlp-residence-document-types.md). | Published 23.01.2021; updated 24.07.2025. Accepted only as dated official guidance; its categories and conditions have not been reconciled against the Act effective 10.07.2026. |
+| lv-19 | [PMLP: Documents required for EU citizen and family residence document](https://www.pmlp.gov.lv/en/what-documents-must-be-filed) | partial_functional_match | Official PMLP page and 24.07.2025 update date rechecked on 28.10.2026. | Accepted as a discovery/index route only. The extracted page shows “list” placeholders instead of linked checklists; no requirements text or local copy is accepted. |
+| lv-20 | [PMLP: Where can residence documents be filed?](https://www.pmlp.gov.lv/en/where-can-documents-be-filed) | partial_functional_match | Official page captured and deterministic replay passed on 28.10.2026. | Updated 05.02.2025. Local snapshot accepted as historical last-known filing guidance only; not current procedure under the Act effective 10.07.2026. Verify current PMLP and mission intake. |
+| lv-23 | [PMLP EU residence document types and explanation](https://www.pmlp.gov.lv/en/what-residence-documents-are-issued-union-citizens-and-their-family-members) | partial_functional_match | Official page captured and deterministic replay passed on 28.10.2026. | Updated 24.07.2025. Local snapshot accepted as historical document-type guidance only; do not use its old criteria as current procedure under the 2026 Act. |
 | lv-24 | [PMLP information for UK Withdrawal Agreement beneficiaries](https://www.pmlp.gov.lv/en/information-brexit) | partial_functional_match | Official PMLP guidance page inspected in official search results. | Updated 24.07.2025; refers to WA residence rights and post-transition family procedures. Verify against the new law’s transition clause and the linked UK Act; distinguish protected beneficiaries from post-2020 entrants. |
 | lv-25 | [PMLP: Declaration of place of residence](https://www.pmlp.gov.lv/en/declaration-residence-place) | related_source | Official PMLP page inspected; scope, channels and last-updated date checked. | Updated 03.06.2025; explains municipal/e-service/PMLP channels for persons with residence documents. Auxiliary operational obligation; validate law changes and Latvija.lv login/service route. |
-| lv-27 | [PMLP: Identity number and declared residence for EU citizens](https://www.pmlp.gov.lv/en/article/how-obtain-personal-identity-number-and-declared-place-residence-latvia) | related_source | Live page and displayed date checked 29.10.2026; maintained dated note at [lv-27](../documents/guidance/lv-27-pmlp-personal-identity-number-and-residence.md). | Published 31.01.2022; no later update date displayed. Accepted as historical page content only. Do not rely on its 90-day registration statement; reconcile address/eID/citizenship links separately. |
+| lv-27 | [PMLP: Identity number and declared residence for EU citizens](https://www.pmlp.gov.lv/en/article/how-obtain-personal-identity-number-and-declared-place-residence-latvia) | partial_functional_match | Official page captured and deterministic replay passed on 28.10.2026. | Published 31.01.2022. Local snapshot is historical only; verify registration eligibility and exemptions against sections 19 and 24 of the current Act and the current service route. |
 
 ### Official Forms Index
 
 | ID | Source | Relation | Verification | Route/version note |
 |---|---|---|---|---|
-| lv-21 | [PMLP: Residence-permit application and form index](https://www.pmlp.gov.lv/en/application-requiring-residence-permit) | partial_functional_match | Official PMLP forms index inspected in official search results. | Updated 22.09.2026; list includes forms for third-country residence and the EU citizen/family residence document application. Parent index is preferable to a pinned file URL. Capture attachment label/date/hash and verify applicable form after the 2026 law. |
+| lv-21 | [PMLP: Residence-permit application and form index](https://www.pmlp.gov.lv/en/application-requiring-residence-permit) | partial_functional_match | Current official parent index captured 28.10.2026; deterministic replay passed. | Updated 23.10.2026. Current PMLP parent forms index and discovery route; the EU-family application attachment was also updated 23.10.2026 and is recorded separately as lv-22. |
 | lv-38 | [Data State Inspectorate: complaint and request form examples](https://www.dvi.gov.lv/lv/iesniegumu-paraugi) | related_source | Official DVI forms page inspected in official search results. | Complaint/request forms updated 11.02.2026; page sets secure e-signature/e-address routes. Attachment rediscovery and version identity should be parent-index based. |
 
 ### Application Form Pdf
 
 | ID | Source | Relation | Verification | Route/version note |
 |---|---|---|---|---|
-| lv-22 | [PMLP EU citizen/family residence application form](https://www.pmlp.gov.lv/en/media/1666/download) ([current forms index](https://www.pmlp.gov.lv/en/application-requiring-residence-permit)) | partial_functional_match | Current PMLP index links an 8-page bilingual PDF updated 23.10.2026; full PDF reviewed 29.10.2026. Maintained paraphrased field map: [lv-22 form guide](../documents/forms/lv-22-pmlp-eu-family-residence-application-form.md). | Use the official PDF to apply; the Markdown is a field map, not the fillable form. Earlier /media/100 candidate was not linked from the current index and remains unaccepted. Check current law and PMLP instructions. |
+| lv-22 | [PMLP: EU/Union citizen and family residence-document application form](https://www.pmlp.gov.lv/en/media/1666/download?attachment=) | partial_functional_match | Exact PDF linked from the current PMLP parent index; source hash and page-wise conversion reviewed and replayed. | Parent index and attachment updated 23.10.2026. Original 8-page bilingual PDF is stored under documents/forms; it has zero interactive fields. The older /media/100/download file remains unaccepted. |
 
 ### Official Fees Guidance
 
@@ -155,8 +156,8 @@ Scope: bounded discovery across official law/publication, free movement and immi
 
 | ID | Source | Relation | Verification | Route/version note |
 |---|---|---|---|---|
-| lv-28 | [MFA: Entry into Latvia by Union citizens and family members](https://www.mfa.gov.lv/en/entry-latvia-citizens-union-and-their-family-members) | related_source | Live page checked 29.10.2026; maintained stale-guidance note at [lv-28](../documents/guidance/lv-28-mfa-eu-family-entry-stale-guidance.md). | Published 05.07.2021; updated 17.06.2026. Cites Regulation 675 after the new Act took effect 10.07.2026; accepted only as historical evidence of the MFA's guidance, not current procedure. |
-| lv-29 | [MFA: Entry to Latvia information hub](https://www.mfa.gov.lv/en/entry-latvia) | related_source | Live hub and linked topic categories checked 29.10.2026; maintained index at [lv-29](../documents/guidance/lv-29-mfa-entry-hub.md). | Published 09.12.2024; updated 20.05.2026. Official navigation page only; child-page status is independent. EU-family link is covered by the lv-28 stale-guidance finding. |
+| lv-28 | [MFA: Entry into Latvia by Union citizens and family members](https://www.mfa.gov.lv/en/entry-latvia-citizens-union-and-their-family-members) | partial_functional_match | Official page captured; its legal citation was reviewed on 28.10.2026. | Updated 17.06.2026 and still cites Cabinet Regulation 675, although the new Act took effect 10.07.2026. Local snapshot accepted as historical evidence of the conflict only. |
+| lv-29 | [MFA: Entry to Latvia information hub](https://www.mfa.gov.lv/en/entry-latvia) | related_source | Official MFA hub captured and deterministic replay passed on 28.10.2026. | Updated 20.05.2026. Accepted as a navigation/discovery route only; the hub predates the new Act and linked child pages need their own currentness checks. |
 | lv-30 | [MFA: Documents required to apply for a visa](https://www.mfa.gov.lv/en/documents-required-apply-visa) | related_source | Official MFA page identified in official search results. | Updated 17.06.2026. General Schengen visa source; EU-family visa exceptions under the new Act need a separate comparison. |
 
 ### Official Visa Guidance
@@ -169,25 +170,25 @@ Scope: bounded discovery across official law/publication, free movement and immi
 
 | ID | Source | Relation | Verification | Route/version note |
 |---|---|---|---|---|
-| lv-32 | [MFA: Latvia’s embassies and consulates directory](https://www.mfa.gov.lv/en/latvias-embassies-and-consulates) | related_source | Official MFA page inspected through official search result. | Updated 09.06.2026; lists Latvia missions by country. Parent directory is a discovery route; individual mission rules and outsourced appointment services can differ and change. |
+| lv-32 | [MFA: Latvia’s embassies and consulates directory](https://www.mfa.gov.lv/en/latvias-embassies-and-consulates) | related_source | Official MFA directory captured 28.10.2026; page published 25.10 and updated 26.10. | Current directory snapshot, with a notice that several embassy and permanent-representation websites were unavailable. Verify mission-specific services, hours, appointments and checklists directly. |
 
 ### Consular Representation Directory
 
 | ID | Source | Relation | Verification | Route/version note |
 |---|---|---|---|---|
-| lv-33 | [MFA: Other Schengen missions representing Latvia for visas](https://www.mfa.gov.lv/en/diplomatic-and-consular-missions-other-schengen-member-states-issuing-visas-enter-latvia) | related_source | Official MFA page inspected in official search results. | Current list includes representation arrangements; page content varies by mission/country. Monitor by parent index and record each representative mission separately; do not assume all countries have a Latvian mission. |
+| lv-33 | [MFA: Other Schengen missions representing Latvia for visas](https://www.mfa.gov.lv/en/diplomatic-and-consular-missions-other-schengen-member-states-issuing-visas-enter-latvia) | related_source | Official MFA page captured and deterministic replay passed on 28.10.2026. | Updated 25.06.2026. Accepted as a dated representation directory; confirm the particular country, visa category, and mission’s current intake. |
 
 ### Third Country Family Guidance
 
 | ID | Source | Relation | Verification | Route/version note |
 |---|---|---|---|---|
-| lv-34 | [PMLP: Family unification under general immigration route](https://www.pmlp.gov.lv/en/family-unification) | related_source | Live page and displayed dates checked 29.10.2026; maintained historical note at [lv-34](../documents/guidance/lv-34-pmlp-family-unification-stale-guidance.md). | Published 14.10.2020; updated 22.04.2022. Accepted as dated page content only; its criteria and EUR 500/EUR 150 amounts are not verified under the Immigration Law effective 15.09.2026. |
+| lv-34 | [PMLP: Family unification under general immigration route](https://www.pmlp.gov.lv/en/family-unification) | related_source | Official page captured and deterministic replay passed on 28.10.2026. | Updated 22.04.2022. Local snapshot accepted as historical third-country family guidance only; it predates the Immigration Law effective 15.09.2026. |
 
 ### Border Authority Information
 
 | ID | Source | Relation | Verification | Route/version note |
 |---|---|---|---|---|
-| lv-35 | [State Border Guard official site — entry and border information](https://www.rs.gov.lv/en) | related_source | Homepage and five linked service pages reviewed 29.10.2026; maintained route map at [lv-35](../documents/guidance/lv-35-state-border-guard-entry-and-border-information.md). | Official authority/navigation reference only. Several linked pages cite superseded law or show historical content; no dedicated entry-refusal or appeal procedure was confirmed. |
+| lv-35 | [State Border Guard official site — entry and border information](https://www.rs.gov.lv/en) | related_source | Official homepage captured on 28.10.2026; latest news items are dated that day. | Accepted as the authority homepage/navigation route only. Dynamic news does not establish border-refusal, complaint, or appeal procedure. |
 
 ### Oversight Complaint Route
 
@@ -283,39 +284,49 @@ No discovered source or source class is declared absent. The search did not esta
 See [README.md](../README.md) and [sustainability-assessment.md](sustainability-assessment.md) for scope and proposed-route sustainability findings.
 
 
-## Accepted local text copies (30)
+## Accepted local text copies (40)
 
-These dated snapshots preserve the selected publisher text region. Their recorded limitations exclude page chrome, link targets, attached/interactive content, and later changes. Local acceptance does not establish legal currency or topic coverage.
+These dated snapshots preserve the selected publisher text region. Their recorded limitations exclude page chrome, link targets, attached/interactive content, and later changes. Historical snapshots are visibly marked and must not be used as current procedure. Local acceptance does not establish legal currency, topic coverage, or country completion.
 
 | ID | Source | Document |
 |---|---|---|
-| `lv-02` | Likumi.lv official legislation portal — about and version information | [local copy](../documents/guidance/lv-likumi-about-and-version-information.md) |
-| `lv-03` | Likumi.lv terms of service | [local copy](../documents/guidance/lv-likumi-terms-of-service.md) |
-| `lv-04` | Law on Official Publications and Legal Information | [local copy](../documents/legislation/lv-law-official-publications-and-legal-information-en.md) |
-| `lv-05` | Latvijas Vēstnesis official publication security information | [local copy](../documents/guidance/lv-vestnesis-publication-security.md) |
-| `lv-06` | EU, EEA and Swiss citizens and family members entry/residence law (Likumi.lv consolidated record) | [local copy](../documents/legislation/lv-law-369282-eu-eea-swiss-family-residence.md) |
-| `lv-07` | Official Gazette publication OP 2026/119.1 — EU/EEA/Swiss residence law | [local copy](../documents/legislation/lv-gazette-op-2026-119-1.md) |
-| `lv-08` | Cabinet Regulation No. 675 of 30 August 2011 — prior EU residence procedure | [local copy](../documents/legislation/lv-cabinet-regulation-675-historical.md) |
-| `lv-09` | Immigration Law (new 2026 Act) | [local copy](../documents/legislation/lv-immigration-law-2026.md) |
-| `lv-10` | UK Withdrawal Agreement implementation law | [local copy](../documents/legislation/lv-uk-withdrawal-agreement-implementation-law.md) |
-| `lv-11` | Administrative Procedure Law | [local copy](../documents/legislation/lv-administrative-procedure-law.md) |
-| `lv-12` | Freedom of Information Law | [local copy](../documents/legislation/lv-freedom-of-information-law-en.md) |
-| `lv-13` | State-Provided Legal Aid Law | [local copy](../documents/legislation/lv-state-provided-legal-aid-law.md) |
-| `lv-14` | Ombudsman Law | [local copy](../documents/legislation/lv-ombudsman-law.md) |
-| `lv-15` | Personal Data Processing Law | [local copy](../documents/legislation/lv-personal-data-processing-law.md) |
-| `lv-16` | Personal data processing in criminal and administrative offence proceedings law | [local copy](../documents/legislation/lv-personal-data-processing-enforcement-law.md) |
-| `lv-17` | Rules on publishing court information online and processing court decisions before release | [local copy](../documents/legislation/lv-court-publication-rules.md) |
-| `lv-18` | PMLP: Entry of EU, EEA and Swiss citizens and family members | [local copy](../documents/guidance/lv-pmlp-eu-eea-swiss-overview.md) |
-| `lv-21` | PMLP: Residence-permit application and form index | [local copy](../documents/guidance/lv-pmlp-residence-application-form-index.md) |
-| `lv-25` | PMLP: Declaration of place of residence | [local copy](../documents/guidance/lv-pmlp-declaration-place-residence-snapshot.md) |
-| `lv-26` | PMLP: State fees for residence permits | [local copy](../documents/guidance/lv-pmlp-residence-fees-snapshot-2026-10-19.md) |
-| `lv-30` | MFA: Documents required to apply for a visa | [local copy](../documents/guidance/lv-mfa-ordinary-schengen-visa-document-list.md) |
-| `lv-31` | PMLP: Visa-exempt nationalities and stay period | [local copy](../documents/guidance/lv-pmlp-visa-exemption-list-snapshot-2026-03-16.md) |
-| `lv-36` | Ombudsman of Latvia contact and submission channel | [local copy](../documents/oversight/lv-ombudsman-contact-and-submission-route.md) |
-| `lv-38` | Data State Inspectorate: complaint and request form examples | [local copy](../documents/forms/lv-dvi-complaint-and-request-form-index.md) |
-| `lv-39` | Court Administration: state-provided legal aid information | [local copy](../documents/oversight/lv-court-administration-legal-aid-information.md) |
-| `lv-40` | Court Administration: legal-aid application forms | [local copy](../documents/forms/lv-court-administration-legal-aid-forms-index.md) |
-| `lv-41` | Court Administration: administrative cases and appeal process | [local copy](../documents/procedure/lv-court-administration-administrative-cases.md) |
-| `lv-47` | Cabinet Regulation No. 536 — Official Publications Regulation (reuse fees) | [local copy](../documents/legislation/lv-cabinet-regulation-536-reuse-fees.md) |
-| `lv-48` | Latvijas Vēstnesis official-publication reuse procedure | [local copy](../documents/guidance/lv-vestnesis-reuse-procedure.md) |
-| `lv-49` | Latvijas Vēstnesis service directory — reuse and current fees | [local copy](../documents/guidance/lv-vestnesis-service-directory-reuse-fees.md) |
+| lv-02 | Likumi.lv official legislation portal — about and version information | [local copy](../documents/guidance/lv-likumi-about-and-version-information.md) |
+| lv-03 | Likumi.lv terms of service | [local copy](../documents/guidance/lv-likumi-terms-of-service.md) |
+| lv-04 | Law on Official Publications and Legal Information | [local copy](../documents/legislation/lv-law-official-publications-and-legal-information-en.md) |
+| lv-05 | Latvijas Vēstnesis official publication security information | [local copy](../documents/guidance/lv-vestnesis-publication-security.md) |
+| lv-06 | EU, EEA and Swiss citizens and family members entry/residence law (Likumi.lv consolidated record) | [local copy](../documents/legislation/lv-law-369282-eu-eea-swiss-family-residence.md) |
+| lv-07 | Official Gazette publication OP 2026/119.1 — EU/EEA/Swiss residence law | [local copy](../documents/legislation/lv-gazette-op-2026-119-1.md) |
+| lv-08 | Cabinet Regulation No. 675 of 30 August 2011 — prior EU residence procedure | [local copy](../documents/legislation/lv-cabinet-regulation-675-historical.md) |
+| lv-09 | Immigration Law (new 2026 Act) | [local copy](../documents/legislation/lv-immigration-law-2026.md) |
+| lv-10 | UK Withdrawal Agreement implementation law | [local copy](../documents/legislation/lv-uk-withdrawal-agreement-implementation-law.md) |
+| lv-11 | Administrative Procedure Law | [local copy](../documents/legislation/lv-administrative-procedure-law.md) |
+| lv-12 | Freedom of Information Law | [local copy](../documents/legislation/lv-freedom-of-information-law-en.md) |
+| lv-13 | State-Provided Legal Aid Law | [local copy](../documents/legislation/lv-state-provided-legal-aid-law.md) |
+| lv-14 | Ombudsman Law | [local copy](../documents/legislation/lv-ombudsman-law.md) |
+| lv-15 | Personal Data Processing Law | [local copy](../documents/legislation/lv-personal-data-processing-law.md) |
+| lv-16 | Personal data processing in criminal and administrative offence proceedings law | [local copy](../documents/legislation/lv-personal-data-processing-enforcement-law.md) |
+| lv-17 | Rules on publishing court information online and processing court decisions before release | [local copy](../documents/legislation/lv-court-publication-rules.md) |
+| lv-18 | PMLP: Entry of EU, EEA and Swiss citizens and family members | [local copy](../documents/guidance/lv-pmlp-eu-eea-swiss-overview.md) |
+| lv-20 | PMLP: Where can residence documents be filed? | [local copy](../documents/procedure/lv-pmlp-residence-filing-routes-historical.md) |
+| lv-21 | PMLP: Residence-permit application and form index | [local copy](../documents/guidance/lv-pmlp-residence-application-form-index.md) |
+| lv-22 | PMLP: EU/Union citizen and family residence-document application form | [local copy](../documents/forms/lv-pmlp-eu-family-residence-application-form-2026-10-23.md) |
+| lv-23 | PMLP EU residence document types and explanation | [local copy](../documents/guidance/lv-pmlp-eu-residence-document-types-historical.md) |
+| lv-25 | PMLP: Declaration of place of residence | [local copy](../documents/guidance/lv-pmlp-declaration-place-residence-snapshot.md) |
+| lv-26 | PMLP: State fees for residence permits | [local copy](../documents/guidance/lv-pmlp-residence-fees-snapshot-2026-10-19.md) |
+| lv-27 | PMLP: Identity number and declared residence for EU citizens | [local copy](../documents/guidance/lv-pmlp-identity-number-and-residence-historical.md) |
+| lv-28 | MFA: Entry into Latvia by Union citizens and family members | [local copy](../documents/guidance/lv-mfa-union-entry-guidance-historical.md) |
+| lv-29 | MFA: Entry to Latvia information hub | [local copy](../documents/guidance/lv-mfa-entry-information-hub-2026-10-28.md) |
+| lv-30 | MFA: Documents required to apply for a visa | [local copy](../documents/guidance/lv-mfa-ordinary-schengen-visa-document-list.md) |
+| lv-31 | PMLP: Visa-exempt nationalities and stay period | [local copy](../documents/guidance/lv-pmlp-visa-exemption-list-snapshot-2026-03-16.md) |
+| lv-32 | MFA: Latvia’s embassies and consulates directory | [local copy](../documents/consular/lv-mfa-embassies-and-consulates-directory-2026-10-28.md) |
+| lv-33 | MFA: Other Schengen missions representing Latvia for visas | [local copy](../documents/consular/lv-mfa-schengen-missions-representing-latvia-2026-10-28.md) |
+| lv-34 | PMLP: Family unification under general immigration route | [local copy](../documents/guidance/lv-pmlp-family-unification-historical.md) |
+| lv-35 | State Border Guard official site — entry and border information | [local copy](../documents/guidance/lv-state-border-guard-homepage-2026-10-28.md) |
+| lv-36 | Ombudsman of Latvia contact and submission channel | [local copy](../documents/oversight/lv-ombudsman-contact-and-submission-route.md) |
+| lv-38 | Data State Inspectorate: complaint and request form examples | [local copy](../documents/forms/lv-dvi-complaint-and-request-form-index.md) |
+| lv-39 | Court Administration: state-provided legal aid information | [local copy](../documents/oversight/lv-court-administration-legal-aid-information.md) |
+| lv-40 | Court Administration: legal-aid application forms | [local copy](../documents/forms/lv-court-administration-legal-aid-forms-index.md) |
+| lv-41 | Court Administration: administrative cases and appeal process | [local copy](../documents/procedure/lv-court-administration-administrative-cases.md) |
+| lv-47 | Cabinet Regulation No. 536 — Official Publications Regulation (reuse fees) | [local copy](../documents/legislation/lv-cabinet-regulation-536-reuse-fees.md) |
+| lv-48 | Latvijas Vēstnesis official-publication reuse procedure | [local copy](../documents/guidance/lv-vestnesis-reuse-procedure.md) |
+| lv-49 | Latvijas Vēstnesis service directory — reuse and current fees | [local copy](../documents/guidance/lv-vestnesis-service-directory-reuse-fees.md) |

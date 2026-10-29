@@ -6,7 +6,7 @@
   "accepted_external_reference_count": 48,
   "pending_external_reference_count": 4,
   "not_relied_upon_reference_count": 0,
-  "accepted_local_copy_count": 30,
+  "accepted_local_copy_count": 40,
   "accepted_topic_count": 0,
   "country_review_complete": false,
   "policy": "A trustworthy government-published consolidated text or clearly identified official page may be accepted as an external reference within its displayed identity, status, version, language, date and subject. If authority, version or content is unclear, offer the whole official website/service for human review. A reviewed official link is sufficient for ordinary source use; a local copy, custom retrieval/conversion rule, API, full Gazette-chain reconstruction, hash, replay or scheduled update is not a blanket prerequisite. External-link acceptance is separate from local-copy acceptance, topic coverage and country review completion.",
@@ -14,7 +14,7 @@
     "decision": "Likumi.lv is accepted as a trustworthy official publisher-managed source of consolidated legislation for ordinary reference use within each page’s displayed version and status. The official portal says the Latvijas Vēstnesis publisher maintains it, provides current/historical/future versions and validity status, and that the content is informational with the official Gazette prevailing in a discrepancy.",
     "basis": "The official Likumi.lv About page and Act record identify the public legal-text service and publisher; the new EU-family Act record displays its issuer, current status, commencement date and official Gazette publication. Latvijas Vēstnesis provides the publication record and OP identifier.",
     "limits": "Latvian is the controlling text for the new free-movement Act; the official English record says it has not been translated by the State Language Centre. A legal link does not confirm every linked operational instruction or establish coverage completeness.",
-    "local_copy_and_reuse": "Thirty selected local text copies have been accepted in their recorded per-source scope after official identity/version review and deterministic replay. Four accepted references remain link-only navigation or homepage routes; thirteen converted candidate texts remain archived but unaccepted (five pending references, four not-relied-upon records, and four link-only navigation/homepage copies). The OP 2026/119.1 original PDF is stored with its reviewed text extraction; the old PMLP PDF (lv-22) remains unaccepted in the Monitor archive. Publisher reuse terms concern recurring retention/retrieval, not ordinary linking. No scheduled updater is proposed by this local-copy review."
+    "local_copy_and_reuse": "Forty selected local text copies are accepted within their per-source scope after official identity, version, semantic review, and deterministic replay. Four link-only references remain navigation or homepage routes. The current PMLP EU-family form linked from its parent index on 23.10.2026 is retained as the original PDF with a page-wise Markdown extraction; the former /media/100 PDF remains unaccepted. Raw and derived promotion captures remain in the Monitor local-only archive. Publisher reuse terms concern recurring retention/retrieval, not ordinary linking. No scheduled updater is proposed by this local-copy review."
   },
   "accepted_references": [
     {
@@ -755,48 +755,6 @@
       }
     },
     {
-      "source_id": "lv-21",
-      "title": "PMLP: Residence-permit application and form index",
-      "url": "https://www.pmlp.gov.lv/en/application-requiring-residence-permit",
-      "publisher": "Office of Citizenship and Migration Affairs (PMLP)",
-      "language": "en",
-      "checked_on": "2026-10-19",
-      "version_or_scope": "Updated 22.09.2026; list includes forms for third-country residence and the EU citizen/family residence document application.",
-      "acceptance_scope": "official official forms index reference: PMLP application and form index updated 22 September 2026. Accepted as the official parent index and discovery route; each attachment still needs confirmation against the particular application and current law.",
-      "limitations": [
-        "PMLP application and form index updated 22 September 2026. Accepted as the official parent index and discovery route; each attachment still needs confirmation against the particular application and current law.",
-        "This decision accepts the external link only. It does not accept a saved conversion, establish legal-topic coverage, or complete Latvia’s source review.",
-        "Parent index is preferable to a pinned file URL. Capture attachment label/date/hash and verify applicable form after the 2026 law."
-      ],
-      "candidate_record": {
-        "manifest": "references/candidate-manifest.json",
-        "id": "lv-21"
-      },
-      "evidence": {
-        "official_source_url": "https://www.pmlp.gov.lv/en/application-requiring-residence-permit",
-        "verified_content": "Official PMLP forms index inspected in official search results.",
-        "source_record_note": "Parent index is preferable to a pinned file URL. Capture attachment label/date/hash and verify applicable form after the 2026 law.",
-        "retrieval_status": "converted_review_candidate"
-      },
-      "local_copy_accepted": true,
-      "decision": "accepted_with_narrow_external_scope",
-      "local_path": "source-library/latvia/documents/guidance/lv-pmlp-residence-application-form-index.md",
-      "local_copy_sha256": "4e6db55179900584bf2aae10bee2e541ffc5219f567c597d57a9b7ff89647fe1",
-      "local_copy_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-21.md",
-      "local_copy_reviewed_on": "2026-10-24",
-      "local_copy_review": {
-        "reviewed_on": "2026-10-24",
-        "source_response_sha256": "9bc31026aac8592584be3f21c5081494cf4cc619d9ff5e46d860740388517a15",
-        "source_text_conversion_sha256": "93bd064e5d14a6ad02dd870df109e84d89018f24276750d7006c9271fa77e3cf",
-        "final_document_sha256": "4e6db55179900584bf2aae10bee2e541ffc5219f567c597d57a9b7ff89647fe1",
-        "content_selector": "class=block--system-main",
-        "review_method": "Official source identity and displayed version/scope were checked against accepted-reference evidence. The exact captured source bytes were replayed with the pack converter; the source-text conversion hash matched. The local document preserves that source text and adds only separate editorial metadata.",
-        "accepted_content_scope": "official official forms index reference: PMLP application and form index updated 22 September 2026. Accepted as the official parent index and discovery route; each attachment still needs confirmation against the particular application and current law.",
-        "excluded_content": "HTML interface, link destinations, embedded attachments, interactive fields, images, and content published after capture are outside this text-only copy.",
-        "classification": "official_forms_index"
-      }
-    },
-    {
       "source_id": "lv-25",
       "title": "PMLP: Declaration of place of residence",
       "url": "https://www.pmlp.gov.lv/en/declaration-residence-place",
@@ -881,37 +839,6 @@
       }
     },
     {
-      "source_id": "lv-29",
-      "title": "MFA: Entry to Latvia information hub",
-      "url": "https://www.mfa.gov.lv/en/entry-latvia",
-      "publisher": "Ministry of Foreign Affairs of Latvia",
-      "language": "en",
-      "checked_on": "2026-10-29",
-      "version_or_scope": "MFA entry hub published 9 December 2024; updated 20 May 2026. Current observed index covers EES, electronic travel declaration, visa and entry routes.",
-      "acceptance_scope": "Official MFA navigation and discovery page for the listed entry, visa and border-information topics; the hub is not accepted as substantive law or proof that individual child pages are current.",
-      "limitations": [
-        "The hub was last updated 20 May 2026, before the new free-movement Act took effect on 10 July 2026. Its Union-citizen/family-member child page still cites Cabinet Regulation No. 675; see the lv-28 stale-guidance record.",
-        "The child pages have separate publisher dates, scope, and legal status; this hub decision does not validate their substantive instructions.",
-        "This decision accepts the external link only. It does not accept a saved conversion, establish legal-topic coverage, or complete Latvia's source review."
-      ],
-      "candidate_record": {
-        "manifest": "references/candidate-manifest.json",
-        "id": "lv-29"
-      },
-      "evidence": {
-        "official_source_url": "https://www.mfa.gov.lv/en/entry-latvia",
-        "verified_content": "Live MFA English hub opened 29 October 2026. Displayed publication and update dates were checked. Current topic links reviewed: EES, electronic travel declaration and comparison, Russian/Belarus entry, visa waiver countries, visa legal framework/application/documents/processing/appeals, and Union-citizen/family entry. The EU-family child page's stale Regulation 675 citation was separately confirmed.",
-        "source_record_note": "Accepted as an official navigation page only. A maintained Markdown topic index records the current hub scope; child pages remain independent sources.",
-        "retrieval_status": "human_reviewed_live_page"
-      },
-      "local_copy_accepted": false,
-      "decision": "accepted_with_narrow_external_scope",
-      "candidate_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-29.md",
-      "maintained_source_note_path": "documents/guidance/lv-29-mfa-entry-hub.md",
-      "maintained_source_note_checked_on": "2026-10-29",
-      "maintained_source_note_status": "accepted_official_navigation_record"
-    },
-    {
       "source_id": "lv-30",
       "title": "MFA: Documents required to apply for a visa",
       "url": "https://www.mfa.gov.lv/en/documents-required-apply-visa",
@@ -994,94 +921,6 @@
         "excluded_content": "HTML interface, link destinations, embedded attachments, interactive fields, images, and content published after capture are outside this text-only copy.",
         "classification": "official_visa_guidance"
       }
-    },
-    {
-      "source_id": "lv-32",
-      "title": "MFA: Latvia’s embassies and consulates directory",
-      "url": "https://www.mfa.gov.lv/en/latvias-embassies-and-consulates",
-      "publisher": "Ministry of Foreign Affairs of Latvia",
-      "language": "en",
-      "checked_on": "2026-10-19",
-      "version_or_scope": "Updated 09.06.2026; lists Latvia missions by country.",
-      "acceptance_scope": "official consular directory reference: MFA missions directory accepted as a parent directory checked 9 June 2026; current appointments, local checklists and outsourcing must be checked on the relevant post page.",
-      "limitations": [
-        "MFA missions directory accepted as a parent directory checked 9 June 2026; current appointments, local checklists and outsourcing must be checked on the relevant post page.",
-        "This decision accepts the external link only. It does not accept a saved conversion, establish legal-topic coverage, or complete Latvia’s source review.",
-        "Parent directory is a discovery route; individual mission rules and outsourced appointment services can differ and change."
-      ],
-      "candidate_record": {
-        "manifest": "references/candidate-manifest.json",
-        "id": "lv-32"
-      },
-      "evidence": {
-        "official_source_url": "https://www.mfa.gov.lv/en/latvias-embassies-and-consulates",
-        "verified_content": "Official MFA page inspected through official search result.",
-        "source_record_note": "Parent directory is a discovery route; individual mission rules and outsourced appointment services can differ and change.",
-        "retrieval_status": "converted_review_candidate"
-      },
-      "local_copy_accepted": false,
-      "decision": "accepted_with_narrow_external_scope",
-      "candidate_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-32.md"
-    },
-    {
-      "source_id": "lv-33",
-      "title": "MFA: Other Schengen missions representing Latvia for visas",
-      "url": "https://www.mfa.gov.lv/en/diplomatic-and-consular-missions-other-schengen-member-states-issuing-visas-enter-latvia",
-      "publisher": "Ministry of Foreign Affairs of Latvia",
-      "language": "en",
-      "checked_on": "2026-10-19",
-      "version_or_scope": "Current list includes representation arrangements; page content varies by mission/country.",
-      "acceptance_scope": "official consular representation directory reference: MFA directory of Schengen states representing Latvia for visa applications, accepted only as a dynamic directory; verify the specific country and application category at use.",
-      "limitations": [
-        "MFA directory of Schengen states representing Latvia for visa applications, accepted only as a dynamic directory; verify the specific country and application category at use.",
-        "This decision accepts the external link only. It does not accept a saved conversion, establish legal-topic coverage, or complete Latvia’s source review.",
-        "Monitor by parent index and record each representative mission separately; do not assume all countries have a Latvian mission."
-      ],
-      "candidate_record": {
-        "manifest": "references/candidate-manifest.json",
-        "id": "lv-33"
-      },
-      "evidence": {
-        "official_source_url": "https://www.mfa.gov.lv/en/diplomatic-and-consular-missions-other-schengen-member-states-issuing-visas-enter-latvia",
-        "verified_content": "Official MFA page inspected in official search results.",
-        "source_record_note": "Monitor by parent index and record each representative mission separately; do not assume all countries have a Latvian mission.",
-        "retrieval_status": "converted_review_candidate"
-      },
-      "local_copy_accepted": false,
-      "decision": "accepted_with_narrow_external_scope",
-      "candidate_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-33.md"
-    },
-    {
-      "source_id": "lv-35",
-      "title": "State Border Guard official site — entry and border information",
-      "url": "https://www.rs.gov.lv/en",
-      "publisher": "State Border Guard of Latvia",
-      "language": "en",
-      "checked_on": "2026-10-29",
-      "version_or_scope": "State Border Guard homepage is a dated operational-information and service-navigation route; linked person, vehicle, borderland, visa and travel-document pages are distinct sources.",
-      "acceptance_scope": "Official State Border Guard homepage and its visible service links as an authority/navigation reference only. Detailed child-page instructions are not accepted as current through this homepage review.",
-      "limitations": [
-        "The homepage is not a complete border-refusal or appeal procedure; no dedicated refusal/appeal guide was confirmed in this review.",
-        "The person-border-crossing child page still cites Regulation No. 675 for EU citizens after the new free-movement Act took effect; travel-document guidance cites the former Immigration Law; other child pages show 2020 dates or historical fee data.",
-        "Each child page has separate content, version and legal scope. This homepage decision does not validate its substantive instructions.",
-        "This decision accepts the external link only. It does not accept a saved conversion, establish legal-topic coverage, or complete Latvia's source review."
-      ],
-      "candidate_record": {
-        "manifest": "references/candidate-manifest.json",
-        "id": "lv-35"
-      },
-      "evidence": {
-        "official_source_url": "https://www.rs.gov.lv/en",
-        "verified_content": "Live official English homepage opened 29 October 2026. Confirmed authority identity, current October 2026 news listings and five entry/border service routes. Opened all five linked service pages: person crossing updated 2 September 2025; vehicle crossing and borderland pages published 19 August 2020; visa requirements published 19 August 2020 with obsolete Schengen count and legacy fees; travel documents updated 9 December 2024 but cites former Immigration Law. No dedicated entry refusal or appeal procedure was confirmed.",
-        "source_record_note": "Accepted as an official authority/navigation reference only. The maintained Markdown note records service links and child-page currentness limits; do not treat the hub as complete border-law coverage.",
-        "retrieval_status": "human_reviewed_live_page"
-      },
-      "local_copy_accepted": false,
-      "decision": "accepted_with_narrow_external_scope",
-      "candidate_archive_path": "candidates/latvia_candidate_promotion_20261024/Latvia/lv-35.md",
-      "maintained_source_note_path": "documents/guidance/lv-35-state-border-guard-entry-and-border-information.md",
-      "maintained_source_note_checked_on": "2026-10-29",
-      "maintained_source_note_status": "accepted_official_navigation_record"
     },
     {
       "source_id": "lv-36",
@@ -1608,143 +1447,18 @@
       "maintained_source_note_status": "accepted_dated_paraphrased_source_note"
     },
     {
-      "source_id": "lv-20",
-      "title": "PMLP: Where can residence documents be filed?",
-      "url": "https://www.pmlp.gov.lv/en/where-documents-may-be-filed",
-      "publisher": "Office of Citizenship and Migration Affairs (PMLP)",
-      "language": "en",
-      "checked_on": "2026-10-29",
-      "version_or_scope": "Page published 23 January 2021 and updated 24 July 2025; live English version reviewed 29 October 2026.",
-      "acceptance_scope": "PMLP’s published filing routes for first-time registration/residence-document requests and duplicate-document requests, within the content and date displayed by the official page.",
-      "limitations": [
-        "This page predates the EU/EEA/Swiss residence Act effective 10 July 2026; link acceptance and the maintained note do not establish that its filing routes govern every post-commencement application.",
-        "The page is administrative guidance, not legislation. Verify current rules, PMLP instructions and mission intake for the application type and date.",
-        "The page describes electronic and postal channels and a specific embassy route; it does not describe in-person submission for the listed request types."
-      ],
-      "candidate_record": {
-        "manifest": "references/candidate-manifest.json",
-        "id": "lv-20"
-      },
-      "evidence": {
-        "official_source_url": "https://www.pmlp.gov.lv/en/where-documents-may-be-filed",
-        "verified_content": "Live page opened. Published 23 January 2021, updated 24 July 2025. It describes e-signature and postal filing at any territorial division for applicants in Latvia, the abroad embassy route for non-EU family members not residing in Latvia, and duplicate-document requests from inside or outside Latvia.",
-        "source_record_note": "Accepted as a dated official procedural statement and maintained paraphrased note; no current-law conclusion or verbatim local copy is claimed.",
-        "retrieval_status": "human_reviewed_live_page"
-      },
-      "decision": "accepted_with_narrow_dated_procedural_scope",
-      "local_copy_accepted": false,
-      "maintained_source_note_path": "documents/guidance/lv-20-pmlp-document-filing-channels.md",
-      "maintained_source_note_checked_on": "2026-10-29",
-      "maintained_source_note_status": "accepted_dated_paraphrased_source_note"
-    },
-    {
-      "source_id": "lv-22",
-      "title": "PMLP EU citizen/family residence application form (current linked version)",
-      "url": "https://www.pmlp.gov.lv/en/media/1666/download",
-      "publisher": "Office of Citizenship and Migration Affairs (PMLP)",
-      "language": "lv/en",
-      "checked_on": "2026-10-29",
-      "version_or_scope": "Eight-page bilingual PDF linked from PMLP’s residence application index; the index and attachment display Updated 23.10.2026. Current attachment path is /en/media/1666/download.",
-      "acceptance_scope": "PMLP’s currently linked application form for a residence document of a Union citizen or a Union citizen’s family member, within the identity and version linked by the parent index on 29 October 2026. A full structured Markdown field map is retained.",
-      "limitations": [
-        "The Markdown file is a paraphrased field map, not a fillable form or verbatim transcription; use the linked official PDF for application.",
-        "No open reuse licence is identified. The PMLP site reserves rights to its published content.",
-        "The old direct URL /en/media/100/download was not linked from the current form index and is not accepted; do not rely on that older candidate PDF.",
-        "The form is an administrative document and does not determine current legal eligibility or all evidentiary requirements. Check applicable law and current PMLP instructions."
-      ],
-      "candidate_record": {
-        "manifest": "references/candidate-manifest.json",
-        "id": "lv-22"
-      },
-      "evidence": {
-        "official_source_url": "https://www.pmlp.gov.lv/en/media/1666/download",
-        "parent_index": "https://www.pmlp.gov.lv/en/application-requiring-residence-permit",
-        "verified_content": "PMLP parent index opened 29 October 2026 and linked current eight-page bilingual EU-citizen/family form, both updated 23 October 2026. The complete PDF opened and all pages were reviewed. Its sections cover purpose, identity, birth/kinship evidence, address, travel document, non-EU family member’s residence status, marital/partner details, relatives, emergency contacts and applicant declarations.",
-        "source_record_note": "Current linked PDF identity confirmed. Maintained Markdown field map is paraphrased; the live PDF remains the actual fillable application.",
-        "retrieval_status": "human_reviewed_pdf"
-      },
-      "decision": "accepted_with_narrow_current_form_scope",
-      "local_copy_accepted": false,
-      "maintained_source_note_path": "documents/forms/lv-22-pmlp-eu-family-residence-application-form.md",
-      "maintained_source_note_checked_on": "2026-10-29",
-      "maintained_source_note_status": "accepted_paraphrased_full_field_map",
-      "previous_candidate_url": "https://www.pmlp.gov.lv/en/media/100/download",
-      "previous_candidate_disposition": "not relied upon; not linked from current PMLP index"
-    },
-    {
-      "source_id": "lv-23",
-      "title": "PMLP EU residence document types and explanation",
-      "url": "https://www.pmlp.gov.lv/en/what-residence-documents-are-issued-union-citizens-and-their-family-members",
-      "publisher": "Office of Citizenship and Migration Affairs (PMLP)",
-      "language": "en",
-      "checked_on": "2026-10-29",
-      "version_or_scope": "Published 23 January 2021; updated 24 July 2025. Describes registration and permanent-residence documents and several residence categories.",
-      "acceptance_scope": "Official dated explanation of residence-document types and conditions exactly within the page version displayed on 24 July 2025; accepted as historical PMLP guidance, not as a verified statement of current post-10 July 2026 procedure.",
-      "limitations": [
-        "The page predates the free-movement Act effective 10 July 2026. Its categories, thresholds, exceptions and document durations have not been reconciled item-by-item with that Act and current PMLP procedures.",
-        "The relationship among the new Act, transitional rules and Cabinet Regulation 675 for post-commencement applications remains unresolved; do not use this page alone to assess current eligibility or filing requirements.",
-        "This is non-binding agency guidance. Consult current legislation and the updated central PMLP entry page."
-      ],
-      "candidate_record": {
-        "manifest": "references/candidate-manifest.json",
-        "id": "lv-23"
-      },
-      "evidence": {
-        "official_source_url": "https://www.pmlp.gov.lv/en/what-residence-documents-are-issued-union-citizens-and-their-family-members",
-        "verified_content": "Live English PMLP page opened 29 October 2026. It displays publication date 23 January 2021 and update date 24 July 2025. The page's registration-card categories, non-registration situations, permanent-residence categories including worker exceptions, family-member permanent-residence routes and described residence-permit durations were reviewed. The updated central PMLP EU/EEA/Swiss entry page (17 July 2026) was also checked and refers to the new Act.",
-        "source_record_note": "Accepted as an official dated guidance source and paraphrased maintained Markdown note. New-Act applicability is unresolved.",
-        "retrieval_status": "human_reviewed_live_page"
-      },
-      "decision": "accepted_with_narrow_historical_and_operational_scope",
-      "local_copy_accepted": false,
-      "maintained_source_note_path": "documents/guidance/lv-23-pmlp-residence-document-types.md",
-      "maintained_source_note_checked_on": "2026-10-29",
-      "maintained_source_note_status": "accepted_dated_paraphrased_source_note"
-    },
-    {
-      "source_id": "lv-27",
-      "title": "PMLP: Identity number and declared residence for EU citizens",
-      "url": "https://www.pmlp.gov.lv/en/article/how-obtain-personal-identity-number-and-declared-place-residence-latvia",
-      "publisher": "Office of Citizenship and Migration Affairs (PMLP)",
-      "language": "en",
-      "checked_on": "2026-10-29",
-      "version_or_scope": "Page published 31 January 2022; no later update date displayed. Covers personal identity numbers, a Union-citizen registration statement, eID, address declaration, and Latvian citizenship registration for a child born abroad.",
-      "acceptance_scope": "Accepted only as an official record of the PMLP page's displayed 2022 guidance and linked-route descriptions; not accepted as current procedure or as authority for the present Union-citizen registration threshold.",
-      "limitations": [
-        "The page's statement that Union citizens planning to stay over 90 days should request registration is not relied on as the current threshold. The new free-movement Act took effect 10 July 2026; current registration rules and exceptions must be checked against the Act and current PMLP procedures.",
-        "The page is dated 2022 and has no later update date displayed. It does not establish that its residence-permit, eID, address-declaration, or child-citizenship instructions remain current.",
-        "Address-declaration statements are framed for a foreigner with a residence permit and should not be generalized to all Union-citizen situations.",
-        "Linked services are separate sources and require their own currentness checks."
-      ],
-      "candidate_record": {
-        "manifest": "references/candidate-manifest.json",
-        "id": "lv-27"
-      },
-      "evidence": {
-        "official_source_url": "https://www.pmlp.gov.lv/en/article/how-obtain-personal-identity-number-and-declared-place-residence-latvia",
-        "verified_content": "Live official English PMLP page opened 29 October 2026. Displayed publication date is 31 January 2022. Reviewed its statements on foreigner identity numbers and visas, Union-citizen registration, foreigner eID, address-declaration channels, and Latvian citizenship registration for a child born abroad. The current central PMLP EU/EEA/Swiss page was separately checked and points to Law No. 369282 effective 10 July 2026.",
-        "source_record_note": "Promoted as a dated paraphrased note. The page is retained as historical official guidance, while its 90-day statement is expressly not relied upon for current rules.",
-        "retrieval_status": "human_reviewed_live_page"
-      },
-      "decision": "accepted_with_historical_scope_current_threshold_not_relied_upon",
-      "local_copy_accepted": false,
-      "maintained_source_note_path": "documents/guidance/lv-27-pmlp-personal-identity-number-and-residence.md",
-      "maintained_source_note_checked_on": "2026-10-29",
-      "maintained_source_note_status": "accepted_dated_paraphrased_source_note"
-    },
-    {
       "source_id": "lv-28",
       "title": "MFA: Entry into Latvia by Union citizens and family members",
       "url": "https://www.mfa.gov.lv/en/entry-latvia-citizens-union-and-their-family-members",
       "publisher": "Ministry of Foreign Affairs of Latvia",
       "language": "en",
-      "checked_on": "2026-10-29",
-      "version_or_scope": "Published 5 July 2021; updated 17 June 2026. Briefly identifies the legal instrument the MFA page says governs EU/EEA/Swiss citizens and family members entering and residing in Latvia, with links to PMLP and visa-facilitation pages.",
-      "acceptance_scope": "Accepted as evidence of the MFA's published guidance within the page version dated 17 June 2026 and as a record of its legal citation; not accepted as current procedure after the new law took effect.",
+      "checked_on": "2026-10-28",
+      "version_or_scope": "Published 05.07.2021; updated 17.06.2026. Captured 2026-10-28. The page still cites Cabinet Regulation No. 675.",
+      "acceptance_scope": "Official MFA page accepted only as a dated record of the Ministry’s entry guidance and its legal citation as of 17 June 2026.",
       "limitations": [
-        "The page was updated 17 June 2026 and still cites Cabinet Regulation No. 675 after the replacement free-movement Act took effect on 10 July 2026. Do not rely on it to determine current procedure.",
-        "The applicability of Regulation No. 675 to applications filed on or after 10 July 2026 remains unresolved; this page does not resolve the conflict.",
-        "The linked PMLP and visa-facilitation pages are separate sources and are not covered by this acceptance."
+        "Official MFA page accepted only as a dated record of the Ministry’s entry guidance and its legal citation as of 17 June 2026.",
+        "This decision does not establish topic coverage or complete Latvia’s source review.",
+        "The cited Regulation 675 conflicts with the free-movement Act effective 10 July 2026. Do not use this page’s old legal citation as current procedure; use the current Act and verify any subsequent official guidance."
       ],
       "candidate_record": {
         "manifest": "references/candidate-manifest.json",
@@ -1752,15 +1466,335 @@
       },
       "evidence": {
         "official_source_url": "https://www.mfa.gov.lv/en/entry-latvia-citizens-union-and-their-family-members",
-        "verified_content": "Live official English MFA page opened 29 October 2026. It displays publication date 5 July 2021 and update date 17 June 2026; its substantive statement cites Cabinet Regulation No. 675 as governing EU/EEA/Swiss citizens and their family members. The current PMLP overview page (updated 17 July 2026) refers instead to the new free-movement law. The conflict is confirmed.",
-        "source_record_note": "Promoted as a maintained dated note documenting the MFA's published citation and its known staleness, not as current procedural advice.",
-        "retrieval_status": "human_reviewed_live_page"
+        "verified_content": "Official source identity and displayed scope/date checked. Published 05.07.2021; updated 17.06.2026. Captured 2026-10-28. The page still cites Cabinet Regulation No. 675.",
+        "source_record_note": "The cited Regulation 675 conflicts with the free-movement Act effective 10 July 2026. Do not use this page’s old legal citation as current procedure; use the current Act and verify any subsequent official guidance.",
+        "retrieval_status": "deterministic source replay passed; raw response and conversion archived in the Monitor local-only archive",
+        "source_response_sha256": "26aa0e632e54cfe016cfb28af1b2b485e7eac474668ef6c237f7eb3d469c280d",
+        "source_text_conversion_sha256": "967c05a14c480c9926aa2663bbffc3c0213ba536784e46472f098555661cb334",
+        "raw_capture_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/raw/lv-28-26aa0e632e54cfe0.html.gz",
+        "raw_capture_archive_sha256": "9176ec21c9e1878683ce50925e169c09ac4f1035cddbc864e0b420f8836acbc7",
+        "derived_capture_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/derived/lv-28-967c05a14c480c99.md",
+        "derived_capture_archive_sha256": "967c05a14c480c9926aa2663bbffc3c0213ba536784e46472f098555661cb334"
       },
-      "decision": "accepted_with_historical_scope_stale_current_procedure_not_relied_upon",
-      "local_copy_accepted": false,
-      "maintained_source_note_path": "documents/guidance/lv-28-mfa-eu-family-entry-stale-guidance.md",
-      "maintained_source_note_checked_on": "2026-10-29",
-      "maintained_source_note_status": "accepted_dated_paraphrased_source_note"
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_external_scope",
+      "local_path": "source-library/latvia/documents/guidance/lv-mfa-union-entry-guidance-historical.md",
+      "local_copy_sha256": "424edcba0468b308edbadf9ca557da81ff40c3c2ce2cf2489e7f8658f74a371f",
+      "local_copy_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/derived/lv-28-967c05a14c480c99.md",
+      "local_copy_reviewed_on": "2026-10-28",
+      "local_copy_review": {
+        "reviewed_on": "2026-10-28",
+        "source_response_sha256": "26aa0e632e54cfe016cfb28af1b2b485e7eac474668ef6c237f7eb3d469c280d",
+        "source_text_conversion_sha256": "967c05a14c480c9926aa2663bbffc3c0213ba536784e46472f098555661cb334",
+        "final_document_sha256": "424edcba0468b308edbadf9ca557da81ff40c3c2ce2cf2489e7f8658f74a371f",
+        "content_selector": "class=block--system-main",
+        "review_method": "Official publisher identity, URL, displayed version, source scope, and rendered text were reviewed. The exact response was replayed with source-library/latvia/sync_latvia.py verify; converted source-text bytes matched. The published document preserves that source body and adds only separate editorial metadata. The website HTML language attribute says lv while the /en route and captured prose are English.",
+        "accepted_content_scope": "Official MFA page accepted only as a dated record of the Ministry’s entry guidance and its legal citation as of 17 June 2026.",
+        "excluded_content": "HTML interface, link destinations, embedded files/forms unless separately preserved, interactive fields, images, and content published after capture are outside this text-only copy.",
+        "classification": "historical_ministry_guidance",
+        "monitor_raw_capture_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/raw/lv-28-26aa0e632e54cfe0.html.gz",
+        "monitor_derived_text_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/derived/lv-28-967c05a14c480c99.md"
+      }
+    },
+    {
+      "source_id": "lv-29",
+      "title": "MFA: Entry to Latvia information hub",
+      "url": "https://www.mfa.gov.lv/en/entry-latvia",
+      "publisher": "Ministry of Foreign Affairs of Latvia",
+      "language": "en",
+      "checked_on": "2026-10-28",
+      "version_or_scope": "Published 09.12.2024; updated 20.05.2026. Captured 2026-10-28.",
+      "acceptance_scope": "Official MFA entry-information hub accepted as a navigation and discovery page only.",
+      "limitations": [
+        "Official MFA entry-information hub accepted as a navigation and discovery page only.",
+        "This decision does not establish topic coverage or complete Latvia’s source review.",
+        "The hub predates commencement of the new free-movement Act; linked child pages can contain outdated guidance. Confirm the legal basis and route on the current source page."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lv-29"
+      },
+      "evidence": {
+        "official_source_url": "https://www.mfa.gov.lv/en/entry-latvia",
+        "verified_content": "Official source identity and displayed scope/date checked. Published 09.12.2024; updated 20.05.2026. Captured 2026-10-28.",
+        "source_record_note": "The hub predates commencement of the new free-movement Act; linked child pages can contain outdated guidance. Confirm the legal basis and route on the current source page.",
+        "retrieval_status": "deterministic source replay passed; raw response and conversion archived in the Monitor local-only archive",
+        "source_response_sha256": "f71d8384acc7a4e3245920ef1e705cd3a13ef16deea349310fb3bcd8baddde5b",
+        "source_text_conversion_sha256": "12d743c1abb5653d95effe2099085aa437e95b6089f5fd9b0717289acfbceace",
+        "raw_capture_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/raw/lv-29-f71d8384acc7a4e3.html.gz",
+        "raw_capture_archive_sha256": "d171511ab5346f1a3e2bb2d357e84b74f43b1822f95a3221dc8d261c84e22e2c",
+        "derived_capture_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/derived/lv-29-12d743c1abb5653d.md",
+        "derived_capture_archive_sha256": "12d743c1abb5653d95effe2099085aa437e95b6089f5fd9b0717289acfbceace"
+      },
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_external_scope",
+      "local_path": "source-library/latvia/documents/guidance/lv-mfa-entry-information-hub-2026-10-28.md",
+      "local_copy_sha256": "6e00c0e403ba4bcaf7c23e34acaf453a0250c236600c760875af714f721211a0",
+      "local_copy_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/derived/lv-29-12d743c1abb5653d.md",
+      "local_copy_reviewed_on": "2026-10-28",
+      "local_copy_review": {
+        "reviewed_on": "2026-10-28",
+        "source_response_sha256": "f71d8384acc7a4e3245920ef1e705cd3a13ef16deea349310fb3bcd8baddde5b",
+        "source_text_conversion_sha256": "12d743c1abb5653d95effe2099085aa437e95b6089f5fd9b0717289acfbceace",
+        "final_document_sha256": "6e00c0e403ba4bcaf7c23e34acaf453a0250c236600c760875af714f721211a0",
+        "content_selector": "class=block--system-main",
+        "review_method": "Official publisher identity, URL, displayed version, source scope, and rendered text were reviewed. The exact response was replayed with source-library/latvia/sync_latvia.py verify; converted source-text bytes matched. The published document preserves that source body and adds only separate editorial metadata. The website HTML language attribute says lv while the /en route and captured prose are English.",
+        "accepted_content_scope": "Official MFA entry-information hub accepted as a navigation and discovery page only.",
+        "excluded_content": "HTML interface, link destinations, embedded files/forms unless separately preserved, interactive fields, images, and content published after capture are outside this text-only copy.",
+        "classification": "official_information_hub",
+        "monitor_raw_capture_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/raw/lv-29-f71d8384acc7a4e3.html.gz",
+        "monitor_derived_text_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/derived/lv-29-12d743c1abb5653d.md"
+      }
+    },
+    {
+      "source_id": "lv-32",
+      "title": "MFA: Latvia’s embassies and consulates directory",
+      "url": "https://www.mfa.gov.lv/en/latvias-embassies-and-consulates",
+      "publisher": "Ministry of Foreign Affairs of Latvia",
+      "language": "en",
+      "checked_on": "2026-10-28",
+      "version_or_scope": "Page published 25.10.2026 and updated 26.10.2026. Captured 2026-10-28; it displayed a notice that several embassy and permanent-representation websites were unavailable.",
+      "acceptance_scope": "Official MFA directory snapshot for discovering Latvian embassies and consulates as of 28 October 2026.",
+      "limitations": [
+        "Official MFA directory snapshot for discovering Latvian embassies and consulates as of 28 October 2026.",
+        "This decision does not establish topic coverage or complete Latvia’s source review.",
+        "The page itself warned that several mission websites were unavailable. Do not infer current appointment availability, local requirements, fees, or service hours from the directory; verify the relevant mission directly."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lv-32"
+      },
+      "evidence": {
+        "official_source_url": "https://www.mfa.gov.lv/en/latvias-embassies-and-consulates",
+        "verified_content": "Official source identity and displayed scope/date checked. Page published 25.10.2026 and updated 26.10.2026. Captured 2026-10-28; it displayed a notice that several embassy and permanent-representation websites were unavailable.",
+        "source_record_note": "The page itself warned that several mission websites were unavailable. Do not infer current appointment availability, local requirements, fees, or service hours from the directory; verify the relevant mission directly.",
+        "retrieval_status": "deterministic source replay passed; raw response and conversion archived in the Monitor local-only archive",
+        "source_response_sha256": "1a06773d728c2e32d34266345ec27241e6f63086e89716bfe168064571862522",
+        "source_text_conversion_sha256": "242839f0041a93af92c89726d850a307bb4f48967b8df9106e23d84783f93741",
+        "raw_capture_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/raw/lv-32-1a06773d728c2e32.html.gz",
+        "raw_capture_archive_sha256": "5b33434fe919a72e398a4c55d7cd6ef791e5ff6075cd0d582ffa8b6e55e1e3e9",
+        "derived_capture_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/derived/lv-32-242839f0041a93af.md",
+        "derived_capture_archive_sha256": "242839f0041a93af92c89726d850a307bb4f48967b8df9106e23d84783f93741"
+      },
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_external_scope",
+      "local_path": "source-library/latvia/documents/consular/lv-mfa-embassies-and-consulates-directory-2026-10-28.md",
+      "local_copy_sha256": "d7ea7afbc492f545462b700c086f227b892bee887bc563250a35c8fba71f0e3b",
+      "local_copy_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/derived/lv-32-242839f0041a93af.md",
+      "local_copy_reviewed_on": "2026-10-28",
+      "local_copy_review": {
+        "reviewed_on": "2026-10-28",
+        "source_response_sha256": "1a06773d728c2e32d34266345ec27241e6f63086e89716bfe168064571862522",
+        "source_text_conversion_sha256": "242839f0041a93af92c89726d850a307bb4f48967b8df9106e23d84783f93741",
+        "final_document_sha256": "d7ea7afbc492f545462b700c086f227b892bee887bc563250a35c8fba71f0e3b",
+        "content_selector": "class=block--system-main",
+        "review_method": "Official publisher identity, URL, displayed version, source scope, and rendered text were reviewed. The exact response was replayed with source-library/latvia/sync_latvia.py verify; converted source-text bytes matched. The published document preserves that source body and adds only separate editorial metadata. The website HTML language attribute says lv while the /en route and captured prose are English.",
+        "accepted_content_scope": "Official MFA directory snapshot for discovering Latvian embassies and consulates as of 28 October 2026.",
+        "excluded_content": "HTML interface, link destinations, embedded files/forms unless separately preserved, interactive fields, images, and content published after capture are outside this text-only copy.",
+        "classification": "official_consular_directory",
+        "monitor_raw_capture_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/raw/lv-32-1a06773d728c2e32.html.gz",
+        "monitor_derived_text_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/derived/lv-32-242839f0041a93af.md"
+      }
+    },
+    {
+      "source_id": "lv-20",
+      "title": "PMLP: Where can residence documents be filed?",
+      "url": "https://www.pmlp.gov.lv/en/where-can-documents-be-filed",
+      "publisher": "Office of Citizenship and Migration Affairs (PMLP)",
+      "language": "en",
+      "checked_on": "2026-10-28",
+      "version_or_scope": "Published 14.10.2020; updated 05.02.2025. Captured 2026-10-28.",
+      "acceptance_scope": "Official PMLP snapshot of filing channels as last updated 5 February 2025; accepted as historical last-known guidance only.",
+      "limitations": [
+        "Official PMLP snapshot of filing channels as last updated 5 February 2025; accepted as historical last-known guidance only.",
+        "This decision does not establish topic coverage or complete Latvia’s source review.",
+        "Not current filing procedure under the free-movement Act effective 10 July 2026. Verify the current PMLP workflow, form, electronic address/signature route, and mission intake."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lv-20"
+      },
+      "evidence": {
+        "official_source_url": "https://www.pmlp.gov.lv/en/where-can-documents-be-filed",
+        "verified_content": "Official source identity and displayed scope/date checked. Published 14.10.2020; updated 05.02.2025. Captured 2026-10-28.",
+        "source_record_note": "Not current filing procedure under the free-movement Act effective 10 July 2026. Verify the current PMLP workflow, form, electronic address/signature route, and mission intake.",
+        "retrieval_status": "deterministic source replay passed; raw response and conversion archived in the Monitor local-only archive",
+        "source_response_sha256": "918fce44848ca503bf2aaddefdb6881e631a14a3099783d2a0bc33f9b335abe8",
+        "source_text_conversion_sha256": "3c85b944e1c84240aa20250472ef9d66441ef33bf83515a84c27540a766a618f",
+        "raw_capture_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/raw/lv-20-918fce44848ca503.html.gz",
+        "raw_capture_archive_sha256": "07e70c63ba47fd1085f0cbc6e15c00fe5b8b8dfba98ddf538866b07c599e5c49",
+        "derived_capture_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/derived/lv-20-3c85b944e1c84240.md",
+        "derived_capture_archive_sha256": "3c85b944e1c84240aa20250472ef9d66441ef33bf83515a84c27540a766a618f"
+      },
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_external_scope",
+      "local_path": "source-library/latvia/documents/procedure/lv-pmlp-residence-filing-routes-historical.md",
+      "local_copy_sha256": "009434aa9ccf945b152860b01022a31f3a1426fe78e0e08232310fc467fc65b2",
+      "local_copy_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/derived/lv-20-3c85b944e1c84240.md",
+      "local_copy_reviewed_on": "2026-10-28",
+      "local_copy_review": {
+        "reviewed_on": "2026-10-28",
+        "source_response_sha256": "918fce44848ca503bf2aaddefdb6881e631a14a3099783d2a0bc33f9b335abe8",
+        "source_text_conversion_sha256": "3c85b944e1c84240aa20250472ef9d66441ef33bf83515a84c27540a766a618f",
+        "final_document_sha256": "009434aa9ccf945b152860b01022a31f3a1426fe78e0e08232310fc467fc65b2",
+        "content_selector": "class=block--system-main",
+        "review_method": "Official publisher identity, URL, displayed version, source scope, and rendered text were reviewed. The exact response was replayed with source-library/latvia/sync_latvia.py verify; converted source-text bytes matched. The published document preserves that source body and adds only separate editorial metadata. The website HTML language attribute says lv while the /en route and captured prose are English.",
+        "accepted_content_scope": "Official PMLP snapshot of filing channels as last updated 5 February 2025; accepted as historical last-known guidance only.",
+        "excluded_content": "HTML interface, link destinations, embedded files/forms unless separately preserved, interactive fields, images, and content published after capture are outside this text-only copy.",
+        "classification": "historical_filing_guidance",
+        "monitor_raw_capture_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/raw/lv-20-918fce44848ca503.html.gz",
+        "monitor_derived_text_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/derived/lv-20-3c85b944e1c84240.md"
+      }
+    },
+    {
+      "source_id": "lv-23",
+      "title": "PMLP EU residence document types and explanation",
+      "url": "https://www.pmlp.gov.lv/en/what-residence-documents-are-issued-union-citizens-and-their-family-members",
+      "publisher": "Office of Citizenship and Migration Affairs (PMLP)",
+      "language": "en",
+      "checked_on": "2026-10-28",
+      "version_or_scope": "Published 23.01.2021; updated 24.07.2025. Captured 2026-10-28.",
+      "acceptance_scope": "Official PMLP snapshot of residence-document categories and explanations as last updated 24 July 2025; accepted as historical reference only.",
+      "limitations": [
+        "Official PMLP snapshot of residence-document categories and explanations as last updated 24 July 2025; accepted as historical reference only.",
+        "This decision does not establish topic coverage or complete Latvia’s source review.",
+        "Predates the 2026 free-movement Act and includes old eligibility and registration explanations. It is not current procedure; confirm current document categories and criteria against the Act and current PMLP material."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lv-23"
+      },
+      "evidence": {
+        "official_source_url": "https://www.pmlp.gov.lv/en/what-residence-documents-are-issued-union-citizens-and-their-family-members",
+        "verified_content": "Official source identity and displayed scope/date checked. Published 23.01.2021; updated 24.07.2025. Captured 2026-10-28.",
+        "source_record_note": "Predates the 2026 free-movement Act and includes old eligibility and registration explanations. It is not current procedure; confirm current document categories and criteria against the Act and current PMLP material.",
+        "retrieval_status": "deterministic source replay passed; raw response and conversion archived in the Monitor local-only archive",
+        "source_response_sha256": "e9e24ee77d87c515b75717a61e1d2b50a3019f9ca2b7ec0af72aed52c5ed6702",
+        "source_text_conversion_sha256": "9075fc59ebccf1f2c2cd6b1c88c6b2bb8d5765f170445f6b1eade1f1e41a86cf",
+        "raw_capture_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/raw/lv-23-e9e24ee77d87c515.html.gz",
+        "raw_capture_archive_sha256": "4929b30cb9945f4e2d70d264d4ecb7a942c832d3f75b6b3be7935e5ee20ada97",
+        "derived_capture_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/derived/lv-23-9075fc59ebccf1f2.md",
+        "derived_capture_archive_sha256": "9075fc59ebccf1f2c2cd6b1c88c6b2bb8d5765f170445f6b1eade1f1e41a86cf"
+      },
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_external_scope",
+      "local_path": "source-library/latvia/documents/guidance/lv-pmlp-eu-residence-document-types-historical.md",
+      "local_copy_sha256": "a37fa3d24018beb5e53d1a49301f60d7d4680ff8e692e784406aab112bf9a7fb",
+      "local_copy_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/derived/lv-23-9075fc59ebccf1f2.md",
+      "local_copy_reviewed_on": "2026-10-28",
+      "local_copy_review": {
+        "reviewed_on": "2026-10-28",
+        "source_response_sha256": "e9e24ee77d87c515b75717a61e1d2b50a3019f9ca2b7ec0af72aed52c5ed6702",
+        "source_text_conversion_sha256": "9075fc59ebccf1f2c2cd6b1c88c6b2bb8d5765f170445f6b1eade1f1e41a86cf",
+        "final_document_sha256": "a37fa3d24018beb5e53d1a49301f60d7d4680ff8e692e784406aab112bf9a7fb",
+        "content_selector": "class=block--system-main",
+        "review_method": "Official publisher identity, URL, displayed version, source scope, and rendered text were reviewed. The exact response was replayed with source-library/latvia/sync_latvia.py verify; converted source-text bytes matched. The published document preserves that source body and adds only separate editorial metadata. The website HTML language attribute says lv while the /en route and captured prose are English.",
+        "accepted_content_scope": "Official PMLP snapshot of residence-document categories and explanations as last updated 24 July 2025; accepted as historical reference only.",
+        "excluded_content": "HTML interface, link destinations, embedded files/forms unless separately preserved, interactive fields, images, and content published after capture are outside this text-only copy.",
+        "classification": "historical_residence_guidance",
+        "monitor_raw_capture_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/raw/lv-23-e9e24ee77d87c515.html.gz",
+        "monitor_derived_text_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/derived/lv-23-9075fc59ebccf1f2.md"
+      }
+    },
+    {
+      "source_id": "lv-33",
+      "title": "MFA: Other Schengen missions representing Latvia for visas",
+      "url": "https://www.mfa.gov.lv/en/diplomatic-and-consular-missions-other-schengen-member-states-issuing-visas-enter-latvia",
+      "publisher": "Ministry of Foreign Affairs of Latvia",
+      "language": "en",
+      "checked_on": "2026-10-28",
+      "version_or_scope": "Published 07.06.2023; updated 25.06.2026. Captured 2026-10-28.",
+      "acceptance_scope": "Official MFA list of other Schengen-state missions representing Latvia for visa applications; accepted as a dated discovery directory.",
+      "limitations": [
+        "Official MFA list of other Schengen-state missions representing Latvia for visa applications; accepted as a dated discovery directory.",
+        "This decision does not establish topic coverage or complete Latvia’s source review.",
+        "Representation arrangements can change and vary by application category and country. Confirm the particular mission’s current authority and intake route before applying."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lv-33"
+      },
+      "evidence": {
+        "official_source_url": "https://www.mfa.gov.lv/en/diplomatic-and-consular-missions-other-schengen-member-states-issuing-visas-enter-latvia",
+        "verified_content": "Official source identity and displayed scope/date checked. Published 07.06.2023; updated 25.06.2026. Captured 2026-10-28.",
+        "source_record_note": "Representation arrangements can change and vary by application category and country. Confirm the particular mission’s current authority and intake route before applying.",
+        "retrieval_status": "deterministic source replay passed; raw response and conversion archived in the Monitor local-only archive",
+        "source_response_sha256": "216398fbbd71ebb7d0c822f5a3973b0f44aebdaddc059cb5d56c079c2f377b1a",
+        "source_text_conversion_sha256": "8b78d678f9173189c55ff3304fda6fe75e56196340f0456e14ccd2a9b1c09e23",
+        "raw_capture_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/raw/lv-33-216398fbbd71ebb7.html.gz",
+        "raw_capture_archive_sha256": "033a3b28892867cd9f30417f90480412f8250746366c2f584f0204e58ac3698e",
+        "derived_capture_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/derived/lv-33-8b78d678f9173189.md",
+        "derived_capture_archive_sha256": "8b78d678f9173189c55ff3304fda6fe75e56196340f0456e14ccd2a9b1c09e23"
+      },
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_external_scope",
+      "local_path": "source-library/latvia/documents/consular/lv-mfa-schengen-missions-representing-latvia-2026-10-28.md",
+      "local_copy_sha256": "ac88746d73e365fc3d1fcbf4bc0fdcb63989f28ebed2ccc27981d6a687579c8b",
+      "local_copy_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/derived/lv-33-8b78d678f9173189.md",
+      "local_copy_reviewed_on": "2026-10-28",
+      "local_copy_review": {
+        "reviewed_on": "2026-10-28",
+        "source_response_sha256": "216398fbbd71ebb7d0c822f5a3973b0f44aebdaddc059cb5d56c079c2f377b1a",
+        "source_text_conversion_sha256": "8b78d678f9173189c55ff3304fda6fe75e56196340f0456e14ccd2a9b1c09e23",
+        "final_document_sha256": "ac88746d73e365fc3d1fcbf4bc0fdcb63989f28ebed2ccc27981d6a687579c8b",
+        "content_selector": "class=block--system-main",
+        "review_method": "Official publisher identity, URL, displayed version, source scope, and rendered text were reviewed. The exact response was replayed with source-library/latvia/sync_latvia.py verify; converted source-text bytes matched. The published document preserves that source body and adds only separate editorial metadata. The website HTML language attribute says lv while the /en route and captured prose are English.",
+        "accepted_content_scope": "Official MFA list of other Schengen-state missions representing Latvia for visa applications; accepted as a dated discovery directory.",
+        "excluded_content": "HTML interface, link destinations, embedded files/forms unless separately preserved, interactive fields, images, and content published after capture are outside this text-only copy.",
+        "classification": "official_consular_representation_directory",
+        "monitor_raw_capture_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/raw/lv-33-216398fbbd71ebb7.html.gz",
+        "monitor_derived_text_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/derived/lv-33-8b78d678f9173189.md"
+      }
+    },
+    {
+      "source_id": "lv-35",
+      "title": "State Border Guard official site — entry and border information",
+      "url": "https://www.rs.gov.lv/en",
+      "publisher": "State Border Guard of Latvia",
+      "language": "en",
+      "checked_on": "2026-10-28",
+      "version_or_scope": "Dynamic homepage captured 2026-10-28; latest news items were dated 28.10.2026.",
+      "acceptance_scope": "Official State Border Guard homepage and navigation route snapshot only.",
+      "limitations": [
+        "Official State Border Guard homepage and navigation route snapshot only.",
+        "This decision does not establish topic coverage or complete Latvia’s source review.",
+        "The page is a dynamic homepage with dated operational news. It does not establish a complete border-refusal, complaint, or appeal procedure; consult the relevant law and dedicated current service page."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lv-35"
+      },
+      "evidence": {
+        "official_source_url": "https://www.rs.gov.lv/en",
+        "verified_content": "Official source identity and displayed scope/date checked. Dynamic homepage captured 2026-10-28; latest news items were dated 28.10.2026.",
+        "source_record_note": "The page is a dynamic homepage with dated operational news. It does not establish a complete border-refusal, complaint, or appeal procedure; consult the relevant law and dedicated current service page.",
+        "retrieval_status": "deterministic source replay passed; raw response and conversion archived in the Monitor local-only archive",
+        "source_response_sha256": "9f2d7446ddc72d2279939786716572d1b9d360c36e132a6128c982e40f5e58ff",
+        "source_text_conversion_sha256": "d2d60227327683cb0844068abaa3696c8cda70b213e155e8aeb1f11c7bea46a4",
+        "raw_capture_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/raw/lv-35-9f2d7446ddc72d22.html.gz",
+        "raw_capture_archive_sha256": "baef9c25f0e2fd5826c19d39866996505662df54bcbf278e53bba2b702932d34",
+        "derived_capture_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/derived/lv-35-d2d60227327683cb.md",
+        "derived_capture_archive_sha256": "d2d60227327683cb0844068abaa3696c8cda70b213e155e8aeb1f11c7bea46a4"
+      },
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_external_scope",
+      "local_path": "source-library/latvia/documents/guidance/lv-state-border-guard-homepage-2026-10-28.md",
+      "local_copy_sha256": "146e764b6a591f1a32807d847cd2f810cd11db7a08788a616b1ff764ac1c6723",
+      "local_copy_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/derived/lv-35-d2d60227327683cb.md",
+      "local_copy_reviewed_on": "2026-10-28",
+      "local_copy_review": {
+        "reviewed_on": "2026-10-28",
+        "source_response_sha256": "9f2d7446ddc72d2279939786716572d1b9d360c36e132a6128c982e40f5e58ff",
+        "source_text_conversion_sha256": "d2d60227327683cb0844068abaa3696c8cda70b213e155e8aeb1f11c7bea46a4",
+        "final_document_sha256": "146e764b6a591f1a32807d847cd2f810cd11db7a08788a616b1ff764ac1c6723",
+        "content_selector": "class=block--system-main",
+        "review_method": "Official publisher identity, URL, displayed version, source scope, and rendered text were reviewed. The exact response was replayed with source-library/latvia/sync_latvia.py verify; converted source-text bytes matched. The published document preserves that source body and adds only separate editorial metadata. The website HTML language attribute says lv while the /en route and captured prose are English.",
+        "accepted_content_scope": "Official State Border Guard homepage and navigation route snapshot only.",
+        "excluded_content": "HTML interface, link destinations, embedded files/forms unless separately preserved, interactive fields, images, and content published after capture are outside this text-only copy.",
+        "classification": "official_authority_homepage",
+        "monitor_raw_capture_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/raw/lv-35-9f2d7446ddc72d22.html.gz",
+        "monitor_derived_text_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/derived/lv-35-d2d60227327683cb.md"
+      }
     },
     {
       "source_id": "lv-34",
@@ -1768,14 +1802,13 @@
       "url": "https://www.pmlp.gov.lv/en/family-unification",
       "publisher": "Office of Citizenship and Migration Affairs (PMLP)",
       "language": "en",
-      "checked_on": "2026-10-29",
-      "version_or_scope": "Published 14 October 2020; updated 22 April 2022. Describes an extended-relative family-unification residence-permit route and supporting documents.",
-      "acceptance_scope": "Accepted as the content of the official PMLP page within its displayed 22 April 2022 version only; not accepted as a current third-country family application checklist.",
+      "checked_on": "2026-10-28",
+      "version_or_scope": "Published 14.10.2020; updated 22.04.2022. Captured 2026-10-28.",
+      "acceptance_scope": "Official PMLP description of third-country family unification under the general immigration route, accepted as historical guidance only.",
       "limitations": [
-        "The page was last updated 22 April 2022. A new Immigration Law took effect 15 September 2026 and PMLP announced material changes to residence-permit requirements. The page's relative categories, evidence list, invitation steps and financial thresholds have not been reconciled with current rules.",
-        "Do not rely on the EUR 500 adult / EUR 150 minor monthly figures as current subsistence thresholds without checking current legislation and PMLP procedure.",
-        "This is a general third-country immigration route, distinct from EU free-movement family rights.",
-        "The linked application form and other linked pages are separate sources and are not covered by this acceptance."
+        "Official PMLP description of third-country family unification under the general immigration route, accepted as historical guidance only.",
+        "This decision does not establish topic coverage or complete Latvia’s source review.",
+        "This page predates the Immigration Law effective 15 September 2026 and includes older conditions and subsistence amounts. It is not current procedure; reconcile every requirement with the new Act and current Cabinet rules."
       ],
       "candidate_record": {
         "manifest": "references/candidate-manifest.json",
@@ -1783,15 +1816,191 @@
       },
       "evidence": {
         "official_source_url": "https://www.pmlp.gov.lv/en/family-unification",
-        "verified_content": "Live official English PMLP page opened 29 October 2026. It displays publication date 14 October 2020 and update date 22 April 2022. Reviewed its stated eligible relationships, passport/form/photo/criminal-record/subsistence/fee/kinship documents, invitation approval, and requirements for accompanying children. Separately checked the official record for the new Immigration Law (adopted 20 August 2026; effective 15 September 2026) and PMLP's 15 September 2026 announcement that the new law changes residence-permit requirements.",
-        "source_record_note": "Promoted as a dated historical guidance note. Its listed criteria and amounts are not current-verified.",
-        "retrieval_status": "human_reviewed_live_page"
+        "verified_content": "Official source identity and displayed scope/date checked. Published 14.10.2020; updated 22.04.2022. Captured 2026-10-28.",
+        "source_record_note": "This page predates the Immigration Law effective 15 September 2026 and includes older conditions and subsistence amounts. It is not current procedure; reconcile every requirement with the new Act and current Cabinet rules.",
+        "retrieval_status": "deterministic source replay passed; raw response and conversion archived in the Monitor local-only archive",
+        "source_response_sha256": "61a186104b635becb9fb300142f8a4a3770af4a626a6f98e3775ca056e4b1728",
+        "source_text_conversion_sha256": "0f5f19b23db47b4d2366dbc3731662f490f3d84dcc53ff9ed90b60995701e664",
+        "raw_capture_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/raw/lv-34-61a186104b635bec.html.gz",
+        "raw_capture_archive_sha256": "80f8c57343ed675c32ef7a2d22a2e6aaaf41fd768aee5bd05f24d63eeb550228",
+        "derived_capture_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/derived/lv-34-0f5f19b23db47b4d.md",
+        "derived_capture_archive_sha256": "0f5f19b23db47b4d2366dbc3731662f490f3d84dcc53ff9ed90b60995701e664"
       },
-      "decision": "accepted_with_historical_scope_current_requirements_not_relied_upon",
-      "local_copy_accepted": false,
-      "maintained_source_note_path": "documents/guidance/lv-34-pmlp-family-unification-stale-guidance.md",
-      "maintained_source_note_checked_on": "2026-10-29",
-      "maintained_source_note_status": "accepted_dated_paraphrased_source_note"
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_external_scope",
+      "local_path": "source-library/latvia/documents/guidance/lv-pmlp-family-unification-historical.md",
+      "local_copy_sha256": "9f951e7a5c7809da6fef7004438552a01b93ab8ce35fc2605c49bdf5846ee1f9",
+      "local_copy_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/derived/lv-34-0f5f19b23db47b4d.md",
+      "local_copy_reviewed_on": "2026-10-28",
+      "local_copy_review": {
+        "reviewed_on": "2026-10-28",
+        "source_response_sha256": "61a186104b635becb9fb300142f8a4a3770af4a626a6f98e3775ca056e4b1728",
+        "source_text_conversion_sha256": "0f5f19b23db47b4d2366dbc3731662f490f3d84dcc53ff9ed90b60995701e664",
+        "final_document_sha256": "9f951e7a5c7809da6fef7004438552a01b93ab8ce35fc2605c49bdf5846ee1f9",
+        "content_selector": "class=block--system-main",
+        "review_method": "Official publisher identity, URL, displayed version, source scope, and rendered text were reviewed. The exact response was replayed with source-library/latvia/sync_latvia.py verify; converted source-text bytes matched. The published document preserves that source body and adds only separate editorial metadata. The website HTML language attribute says lv while the /en route and captured prose are English.",
+        "accepted_content_scope": "Official PMLP description of third-country family unification under the general immigration route, accepted as historical guidance only.",
+        "excluded_content": "HTML interface, link destinations, embedded files/forms unless separately preserved, interactive fields, images, and content published after capture are outside this text-only copy.",
+        "classification": "historical_third_country_family_guidance",
+        "monitor_raw_capture_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/raw/lv-34-61a186104b635bec.html.gz",
+        "monitor_derived_text_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/derived/lv-34-0f5f19b23db47b4d.md"
+      }
+    },
+    {
+      "source_id": "lv-22",
+      "title": "PMLP: EU/Union citizen and family residence-document application form",
+      "url": "https://www.pmlp.gov.lv/en/media/1666/download?attachment=",
+      "publisher": "Office of Citizenship and Migration Affairs (PMLP)",
+      "language": "lv_en",
+      "checked_on": "2026-10-28",
+      "version_or_scope": "Current PMLP parent index updated 23.10.2026 and links this EU-family application attachment, also marked updated 23.10.2026. PDF metadata records creation on 17.09.2026.",
+      "acceptance_scope": "Exact EU/Union citizen and family residence-document form linked from the current PMLP forms index as of 23 October 2026. The original PDF is accepted with a page-wise text extraction for search.",
+      "limitations": [
+        "Exact EU/Union citizen and family residence-document form linked from the current PMLP forms index as of 23 October 2026. The original PDF is accepted with a page-wise text extraction for search.",
+        "This decision does not establish topic coverage or complete Latvia’s source review.",
+        "Use the original PDF; the Markdown is a text extraction and does not preserve layout. The PDF has no interactive fields. This establishes attachment identity on the current parent page, not the substantive eligibility rules or the correct form for every route. The former /media/100/download URL is an older, unaccepted file."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lv-22"
+      },
+      "evidence": {
+        "official_source_url": "https://www.pmlp.gov.lv/en/media/1666/download?attachment=",
+        "verified_content": "Official source identity and displayed scope/date checked. Current PMLP parent index updated 23.10.2026 and links this EU-family application attachment, also marked updated 23.10.2026. PDF metadata records creation on 17.09.2026.",
+        "source_record_note": "Use the original PDF; the Markdown is a text extraction and does not preserve layout. The PDF has no interactive fields. This establishes attachment identity on the current parent page, not the substantive eligibility rules or the correct form for every route. The former /media/100/download URL is an older, unaccepted file.",
+        "retrieval_status": "deterministic source replay passed; raw response and conversion archived in the Monitor local-only archive",
+        "source_response_sha256": "49f617e5ab8e9f606f22cc28f7bd316f801b737298f6381de1fad0394f35690e",
+        "source_text_conversion_sha256": "3291304a10e471efe013c2d9de6e9a19c723003746651890f6e0709f4a40ed7a",
+        "derived_capture_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/derived/lv-22-3291304a10e471ef.md",
+        "derived_capture_archive_sha256": "3291304a10e471efe013c2d9de6e9a19c723003746651890f6e0709f4a40ed7a",
+        "parent_index_url": "https://www.pmlp.gov.lv/en/application-requiring-residence-permit",
+        "parent_index_updated": "2026-10-23",
+        "pdf_pages": 8,
+        "interactive_field_count": 0,
+        "superseded_url_not_relied_upon": "https://www.pmlp.gov.lv/en/media/100/download"
+      },
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_external_scope",
+      "local_path": "source-library/latvia/documents/forms/lv-pmlp-eu-family-residence-application-form-2026-10-23.md",
+      "local_copy_sha256": "6958fda76dda32bf87f00c255383a95ae982f2701e33b1669ced84ef6e55fa8d",
+      "local_copy_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/derived/lv-22-3291304a10e471ef.md",
+      "local_copy_reviewed_on": "2026-10-28",
+      "local_copy_review": {
+        "reviewed_on": "2026-10-28",
+        "source_response_sha256": "49f617e5ab8e9f606f22cc28f7bd316f801b737298f6381de1fad0394f35690e",
+        "source_text_conversion_sha256": "3291304a10e471efe013c2d9de6e9a19c723003746651890f6e0709f4a40ed7a",
+        "final_document_sha256": "6958fda76dda32bf87f00c255383a95ae982f2701e33b1669ced84ef6e55fa8d",
+        "content_selector": "PDF text extraction; 8 pages",
+        "review_method": "Official publisher identity, current parent-index link, attachment label, displayed update date, and bilingual PDF content were reviewed. The exact PDF bytes and page-wise pypdf conversion were replayed with the source-pack converter; metadata and extracted source-text bytes matched. The published document preserves that exact page-wise text extraction and adds only separate editorial metadata.",
+        "accepted_content_scope": "Exact EU/Union citizen and family residence-document form linked from the current PMLP forms index as of 23 October 2026. The original PDF is accepted with a page-wise text extraction for search.",
+        "excluded_content": "HTML interface, link destinations, embedded files/forms unless separately preserved, interactive fields, images, and content published after capture are outside this text-only copy.",
+        "classification": "application_form_pdf",
+        "monitor_derived_text_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/derived/lv-22-3291304a10e471ef.md",
+        "original_pdf_path": "source-library/latvia/documents/forms/lv-pmlp-eu-family-residence-application-2026-10-23.pdf",
+        "pdf_pages": 8,
+        "interactive_field_count": 0,
+        "conversion_library": "pypdf==6.21.1"
+      }
+    },
+    {
+      "source_id": "lv-27",
+      "title": "PMLP: Identity number and declared residence for EU citizens",
+      "url": "https://www.pmlp.gov.lv/en/article/how-obtain-personal-identity-number-and-declared-place-residence-latvia",
+      "publisher": "Office of Citizenship and Migration Affairs (PMLP)",
+      "language": "en",
+      "checked_on": "2026-10-28",
+      "version_or_scope": "Published 31.01.2022. Captured 2026-10-28.",
+      "acceptance_scope": "Official PMLP explanatory page about personal identity numbers and declared residence, accepted as historical last-known explanation only.",
+      "limitations": [
+        "Official PMLP explanatory page about personal identity numbers and declared residence, accepted as historical last-known explanation only.",
+        "This decision does not establish topic coverage or complete Latvia’s source review.",
+        "Its over-90-day registration explanation predates the 2026 Act and its registration exemptions. Check current eligibility under the Act, including sections 19 and 24, and confirm the current identity-number and declaration workflow."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lv-27"
+      },
+      "evidence": {
+        "official_source_url": "https://www.pmlp.gov.lv/en/article/how-obtain-personal-identity-number-and-declared-place-residence-latvia",
+        "verified_content": "Official source identity and displayed scope/date checked. Published 31.01.2022. Captured 2026-10-28.",
+        "source_record_note": "Its over-90-day registration explanation predates the 2026 Act and its registration exemptions. Check current eligibility under the Act, including sections 19 and 24, and confirm the current identity-number and declaration workflow.",
+        "retrieval_status": "deterministic source replay passed; raw response and conversion archived in the Monitor local-only archive",
+        "source_response_sha256": "358e69aebfcd2e1fb60adcdda6d192748d4a51ecd6ec1960e307b60c45726c2d",
+        "source_text_conversion_sha256": "95f445b207c8e3ef21f491efb56ab81b04586b51d9d5f67faf8449e66476d6de",
+        "raw_capture_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/raw/lv-27-358e69aebfcd2e1f.html.gz",
+        "raw_capture_archive_sha256": "52425ce6c0791ffc2b43564149271219e1ef913d73fe18e6910e89c8d720e0f3",
+        "derived_capture_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/derived/lv-27-95f445b207c8e3ef.md",
+        "derived_capture_archive_sha256": "95f445b207c8e3ef21f491efb56ab81b04586b51d9d5f67faf8449e66476d6de"
+      },
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_external_scope",
+      "local_path": "source-library/latvia/documents/guidance/lv-pmlp-identity-number-and-residence-historical.md",
+      "local_copy_sha256": "364924887df1ee03ed39468a6e5450ed3b05c73b2503214ec011ada01e2e7993",
+      "local_copy_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/derived/lv-27-95f445b207c8e3ef.md",
+      "local_copy_reviewed_on": "2026-10-28",
+      "local_copy_review": {
+        "reviewed_on": "2026-10-28",
+        "source_response_sha256": "358e69aebfcd2e1fb60adcdda6d192748d4a51ecd6ec1960e307b60c45726c2d",
+        "source_text_conversion_sha256": "95f445b207c8e3ef21f491efb56ab81b04586b51d9d5f67faf8449e66476d6de",
+        "final_document_sha256": "364924887df1ee03ed39468a6e5450ed3b05c73b2503214ec011ada01e2e7993",
+        "content_selector": "class=block--system-main",
+        "review_method": "Official publisher identity, URL, displayed version, source scope, and rendered text were reviewed. The exact response was replayed with source-library/latvia/sync_latvia.py verify; converted source-text bytes matched. The published document preserves that source body and adds only separate editorial metadata. The website HTML language attribute says lv while the /en route and captured prose are English.",
+        "accepted_content_scope": "Official PMLP explanatory page about personal identity numbers and declared residence, accepted as historical last-known explanation only.",
+        "excluded_content": "HTML interface, link destinations, embedded files/forms unless separately preserved, interactive fields, images, and content published after capture are outside this text-only copy.",
+        "classification": "historical_registration_guidance",
+        "monitor_raw_capture_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/raw/lv-27-358e69aebfcd2e1f.html.gz",
+        "monitor_derived_text_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/derived/lv-27-95f445b207c8e3ef.md"
+      }
+    },
+    {
+      "source_id": "lv-21",
+      "title": "PMLP: Residence-permit application and form index",
+      "url": "https://www.pmlp.gov.lv/en/application-requiring-residence-permit",
+      "publisher": "Office of Citizenship and Migration Affairs (PMLP)",
+      "language": "en",
+      "checked_on": "2026-10-28",
+      "version_or_scope": "Parent index published 11.10.2020; updated 23.10.2026. The current EU-family residence-document application is linked from the index and marked updated 23.10.2026.",
+      "acceptance_scope": "Current official PMLP parent forms index and attachment-discovery route as captured 28 October 2026. Each attachment still needs separate review for the particular application and legal route.",
+      "limitations": [
+        "Current official PMLP parent forms index and attachment-discovery route as captured 28 October 2026. Each attachment still needs separate review for the particular application and legal route.",
+        "This decision does not establish topic coverage or complete Latvia’s source review.",
+        "This is a text-only snapshot: it does not preserve link behavior or attached PDFs. The EU-family application is accepted separately under lv-22; confirm applicability to the particular route and use the original PDF."
+      ],
+      "candidate_record": {
+        "manifest": "references/candidate-manifest.json",
+        "id": "lv-21"
+      },
+      "evidence": {
+        "official_source_url": "https://www.pmlp.gov.lv/en/application-requiring-residence-permit",
+        "verified_content": "Official source identity and displayed scope/date checked. Parent index published 11.10.2020; updated 23.10.2026. The current EU-family residence-document application is linked from the index and marked updated 23.10.2026.",
+        "source_record_note": "This is a text-only snapshot: it does not preserve link behavior or attached PDFs. The EU-family application is accepted separately under lv-22; confirm applicability to the particular route and use the original PDF.",
+        "retrieval_status": "deterministic source replay passed; raw response and conversion archived in the Monitor local-only archive",
+        "source_response_sha256": "026414094a5284d78f6bcb21fced93ca6cc03434cdcdf6ff344b5d1ab5ecf9b9",
+        "source_text_conversion_sha256": "6982130ef087d1875c7b17d5d37dc704732438ba1d40def505cfab49cdc7014a",
+        "raw_capture_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/raw/lv-21-026414094a5284d7.html.gz",
+        "raw_capture_archive_sha256": "9ef795d886b35fbb5afb80e8309d64e7d7c6de69d93464c6a0ae8c68bc814dbb",
+        "derived_capture_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/derived/lv-21-6982130ef087d187.md",
+        "derived_capture_archive_sha256": "6982130ef087d1875c7b17d5d37dc704732438ba1d40def505cfab49cdc7014a"
+      },
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_external_scope",
+      "local_path": "source-library/latvia/documents/guidance/lv-pmlp-residence-application-form-index.md",
+      "local_copy_sha256": "b63619b4bb1437cabdbd4e55e7064a11b29e4896bf268a3277583f9eea15d932",
+      "local_copy_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/derived/lv-21-6982130ef087d187.md",
+      "local_copy_reviewed_on": "2026-10-28",
+      "local_copy_review": {
+        "reviewed_on": "2026-10-28",
+        "source_response_sha256": "026414094a5284d78f6bcb21fced93ca6cc03434cdcdf6ff344b5d1ab5ecf9b9",
+        "source_text_conversion_sha256": "6982130ef087d1875c7b17d5d37dc704732438ba1d40def505cfab49cdc7014a",
+        "final_document_sha256": "b63619b4bb1437cabdbd4e55e7064a11b29e4896bf268a3277583f9eea15d932",
+        "content_selector": "class=block--system-main",
+        "review_method": "Official publisher identity, URL, displayed version, source scope, and rendered text were reviewed. The exact response was replayed with source-library/latvia/sync_latvia.py verify; converted source-text bytes matched. The published document preserves that source body and adds only separate editorial metadata. The website HTML language attribute says lv while the /en route and captured prose are English.",
+        "accepted_content_scope": "Current official PMLP parent forms index and attachment-discovery route as captured 28 October 2026. Each attachment still needs separate review for the particular application and legal route.",
+        "excluded_content": "HTML interface, link destinations, embedded files/forms unless separately preserved, interactive fields, images, and content published after capture are outside this text-only copy.",
+        "classification": "official_forms_index",
+        "monitor_raw_capture_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/raw/lv-21-026414094a5284d7.html.gz",
+        "monitor_derived_text_archive_path": "captures/latvia_source_promotion_20261028/Latvia/latvia/derived/lv-21-6982130ef087d187.md"
+      }
     }
   ],
   "pending_references": [
@@ -1892,6 +2101,6 @@
     }
   ],
   "currentness_and_dependency_note": "The new free-movement Act took effect on 10 July 2026 and sets 1 December 2027 deadlines for specified Cabinet regulations. Its transitional text says applications filed before commencement are handled under Regulation 675. The official Regulation 675 record, however, says it remains in force until 2 December 2027. This review records the regulation as an official legal reference but leaves its applicability to applications filed on or after 10 July 2026 unresolved; the stale MFA guidance is not used to resolve that conflict. The new Immigration Law is a separate third-country regime effective 15 September 2026; certain provisions take effect on 31 December 2027. Issue-led discovery also added the Residence Declaration Act, Register of Natural Persons Act (selected edition from 29 April 2026), and Civil Status Act as current official references for address registration, population-register records, and civil-status evidence. They do not resolve local implementation or all foreign-document recognition questions.",
-  "count_note": "The 52 source records comprise 48 accepted external references, 4 pending references, and 0 not-relied-upon references. Thirty records also have an accepted dated local text copy. Maintained paraphrased source notes are tracked separately from verbatim local copies. External-reference acceptance, local-copy acceptance, maintained source notes, topic coverage, and country-review completion are separate.",
+  "count_note": "The 52 source records comprise 48 accepted external references, 4 pending references, and 0 not-relied-upon references. Forty records also have an accepted dated local text copy. Maintained paraphrased source notes are tracked separately from verbatim local copies. External-reference acceptance, local-copy acceptance, maintained source notes, topic coverage, and country-review completion are separate.",
   "local_copy_review_policy": "Accepted local copies are dated text-only snapshots of the identified official source region. Acceptance does not include page chrome, link destinations, embedded files/forms, interactive fields, images, subsequent updates, legal-currentness certification, topic coverage, or country completion. Each local path, final-document hash, source-response hash, conversion hash, review date, and source-specific scope is recorded with its accepted reference."
 }

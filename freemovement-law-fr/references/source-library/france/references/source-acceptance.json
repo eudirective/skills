@@ -504,6 +504,81 @@
         "Documents internal assignment, not substantive residence rights or individual outcomes.",
         "Link-only reference; verify current RAA and prefecture organization before date-sensitive use."
       ]
+    },
+    "fr-code-travail": {
+      "status": "usable_official_reference",
+      "publisher": "Direction de l’information légale et administrative (DILA), Légifrance",
+      "url": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006072050",
+      "checked_on": "2026-10-29",
+      "language": "French",
+      "version_or_cutoff": "Official full-code link is unpinned. The official Book II employment-contract section displayed a version in force at 2026-06-27; separately indexed official sections displayed versions in force at 2026-09-27.",
+      "scope": "Full Code du travail; potentially relevant to worker status and employment rights under free-movement routes.",
+      "reviewed_content": "Official code identity and title confirmed; official Légifrance section and current-version evidence reviewed. No full-code content extraction or provision-by-provision review was performed.",
+      "limitations": [
+        "Full-code link-only reference; use provision-level current text for a concrete issue.",
+        "This record does not establish immigration status, work authorization, or eligibility under EU law.",
+        "No Legalize Markdown copy is accepted."
+      ]
+    },
+    "fr-code-securite-sociale": {
+      "status": "usable_official_reference",
+      "publisher": "Direction de l’information légale et administrative (DILA), Légifrance",
+      "url": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006073189",
+      "checked_on": "2026-10-29",
+      "language": "French",
+      "version_or_cutoff": "Official code record displayed data last updated 2026-10-02; official provisions reviewed in search results were current through September 2026.",
+      "scope": "Full Code de la sécurité sociale; potentially relevant to social-insurance, health-coverage and benefit dependencies.",
+      "reviewed_content": "Official code identity, title and the current official code/provision pages were confirmed. This is a code-level reference, not a review of entitlement provisions.",
+      "limitations": [
+        "Full-code link-only reference; identify and check the exact provisions and EU coordination rules before applying it.",
+        "No benefits or residence entitlement is inferred.",
+        "No Legalize Markdown copy is accepted."
+      ]
+    },
+    "fr-code-education": {
+      "status": "usable_official_reference",
+      "publisher": "Direction de l’information légale et administrative (DILA), Légifrance",
+      "url": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006071191",
+      "checked_on": "2026-10-29",
+      "language": "French",
+      "version_or_cutoff": "Official code page displayed version in force at 2026-10-29 and code data last updated 2026-10-16.",
+      "scope": "Full Code de l’éducation; potentially relevant to student-route status and education dependencies.",
+      "reviewed_content": "The official full-code page was opened and its title, code identity, current-version date and data-update date confirmed.",
+      "limitations": [
+        "Full-code link-only reference; student-route provisions have not been mapped article by article.",
+        "Does not establish a student’s immigration or residence rights by itself.",
+        "No Legalize Markdown copy is accepted."
+      ]
+    },
+    "fr-code-sante-publique": {
+      "status": "usable_official_reference",
+      "publisher": "Direction de l’information légale et administrative (DILA), Légifrance",
+      "url": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006072665",
+      "checked_on": "2026-10-29",
+      "language": "French",
+      "version_or_cutoff": "Official sections inspected displayed versions in force at 2026-10-18 and 2026-10-21.",
+      "scope": "Full Code de la santé publique; potentially relevant to public-health and health-service dependencies.",
+      "reviewed_content": "Official code identity and title, plus live current-version Légifrance sections, were confirmed; the full code page exceeded the retrieval display limit.",
+      "limitations": [
+        "Full-code link-only reference; no full-code extraction or provision-by-provision review was performed.",
+        "Use the relevant official current section for a concrete question; no health-entitlement conclusion is inferred.",
+        "No Legalize Markdown copy is accepted."
+      ]
+    },
+    "fr-code-procedure-civile": {
+      "status": "usable_official_reference",
+      "publisher": "Direction de l’information légale et administrative (DILA), Légifrance",
+      "url": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006070716",
+      "checked_on": "2026-10-29",
+      "language": "French",
+      "version_or_cutoff": "Official code page displayed version in force at 2026-10-29 and data last updated 2026-10-01.",
+      "scope": "Full Code de procédure civile; potentially relevant to civil-status and family proceedings.",
+      "reviewed_content": "The official full-code page was opened and its identity, title, current-version date and data-update date confirmed.",
+      "limitations": [
+        "Full-code link-only reference; exact procedural routes still require issue-specific review.",
+        "Special procedures and administrative jurisdiction may be governed elsewhere, including the CJA.",
+        "No Legalize Markdown copy is accepted."
+      ]
     }
   },
   "official_reference_review_schema": {
@@ -885,6 +960,30 @@
         "Read L. 233-1 and L. 233-2 with Conseil d'État decisions nos. 450285/450288 and the 2024 follow-up after CJEU C-143/22.",
         "Use the regulatory Book II, applicable EU instruments and cross-referenced procedural codes for implementation.",
         "The section URL is unpinned; confirm current section and article-level dates before date-sensitive use."
+      ]
+    }
+  },
+  "retrieval_method_reviews": {
+    "legalize-fr": {
+      "status": "discovery_and_dated_snapshot_method_only",
+      "repository": "https://github.com/legalize-dev/legalize-fr",
+      "reviewed_commit": "e38417fd7b982b2df02fbe01f2960127a7bf9031",
+      "checked_on": "2026-10-29",
+      "inventory": "83 Markdown code files under fr/; 4 code identifiers overlap the current France pack; 79 lack a same-code local document. This is a filename crosswalk, not a topic-relevance finding.",
+      "official_validation": {
+        "LEGITEXT000006070158": "Légifrance CESEDA page verified; current version shown as of 2026-10-28 and data last updated 2026-10-24.",
+        "LEGITEXT000006070721": "Légifrance Code civil page verified; current version shown as of 2026-10-29 and data last updated 2026-07-29.",
+        "LEGITEXT000006070933": "Légifrance CJA page verified; current version shown as of 2026-10-29 and data last updated 2026-09-01.",
+        "LEGITEXT000031366350": "Légifrance CRPA page verified; current version shown as of 2026-10-08 and data last updated 2026-05-28."
+      },
+      "disposition": "The repository files checked were dated 2026-04-03 and lagged the official consolidated pages. Confirmed only as a third-party discovery and dated snapshot route; not accepted as authoritative or current-version retrieval. No Legalize text was copied into documents/.",
+      "attribution_and_rights": "Attribute legal text to DILA/Légifrance under Licence Ouverte 2.0 and attribute the Markdown transformation to Legalize France at the pinned commit. The repository's MIT license covers software, not the statutory text. Recheck notices before reuse.",
+      "conversion_rules": [
+        "Preserve LEGITEXT ID, title, official URL, repository commit/path, snapshot date, status and language.",
+        "Preserve source hierarchy, article numbering, full wording, amendment/effective-date notes, cross-references, footnotes and links; do not silently rewrite, translate, reorder or omit content.",
+        "Compare all retained content and article anchors with the official Légifrance version; record official cutoff separately from snapshot date.",
+        "Review image/attachment omissions; mark incomplete when material cannot be recovered.",
+        "Store hashes and both source and transformation attribution; label every retained copy as dated and subordinate to the official Légifrance record."
       ]
     }
   }

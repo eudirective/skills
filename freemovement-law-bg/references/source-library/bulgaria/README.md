@@ -1,6 +1,6 @@
 # Bulgaria national source pack
 
-Status updated 29 October 2026: the register contains 42 source records. Twenty-nine official references are usable by link within their reviewed scope and stated cutoffs, and twenty local source documents have been accepted in `documents/`. The pack remains a bounded inventory, not a complete legal coverage review.
+Status updated 29 October 2026: the register contains 42 source records. Twenty-nine official references are usable by link within their reviewed scope and stated cutoffs, and twenty-one local source documents have been accepted in `documents/`. The pack remains a bounded inventory, not a complete legal coverage review.
 
 The source register and dated evidence are in [references/source-list.md](references/source-list.md). Link decisions and accepted local-copy paths are in [references/source-acceptance.json](references/source-acceptance.json), cross-instrument dependencies are in [references/source-dependencies.json](references/source-dependencies.json), and remaining source-route issues are in [references/sustainability-assessment.md](references/sustainability-assessment.md). Disposition, discovery, retrieval, and capture working files are held in the EU Source Update Monitor's local-only archive and are not stored in this country pack.
 

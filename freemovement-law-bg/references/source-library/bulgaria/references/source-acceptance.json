@@ -752,7 +752,7 @@
     ],
     "note": "Record a human-reviewed official link when it supports a source area without retaining a local copy. This does not change the accepted local-source count."
   },
-  "accepted_source_count": 20,
+  "accepted_source_count": 21,
   "records": {
     "bg-eu-free-movement-act": {
       "status": "accepted",
@@ -1624,6 +1624,48 @@
       "accepted_on": "2026-10-29",
       "document_path": "documents/procedure/bg-foreigners-act-rules.md",
       "scope_limit": "Maintained locator and limited source-scope note only. Recheck the MVR Migration index and current PDF; do not use the older indexed 2023 PDF as the 2026 text."
+    },
+    "bg-vas-case-3002-2026": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "The official VAS case page identifies administrative case № 983/2026 and its 17 March 2026 decision № 3002. The court page generated and downloaded the PDF from its official EDIS document endpoint (act ID 2609047, VAS code, GUID 1277406293). PDF metadata identifies sac.justice.bg as creator and the Supreme Administrative Court as author."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "review_date": "2026-10-25",
+          "evidence": "This is a fixed, final judgment dated 17 March 2026, not a statutory consolidation. The accepted record is limited to the law applied and facts reviewed by that court; no claim is made that it is the latest or controlling decision on every public-policy restriction."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "The official page exposed the complete judgment text (17,341 characters) and its PDF download control for the same EDIS act ID. The native six-page PDF downloaded from that control is retained unchanged; the PDF file is recognized as version 1.4 with six pages. Its SHA-256 is recorded in semantic_review."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "The reviewed case page presents the decision text and PDF and no separate judicial attachment. The retained file is the judgment PDF only."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Final cassation judgment of the Supreme Administrative Court, Fourth Chamber, in an administrative-law case applying the dedicated Bulgarian EU free-movement Act. It is case law, not legislation or general administrative guidance."
+        },
+        "lawful_reuse": {
+          "status": "pass",
+          "evidence": "The unchanged PDF was obtained through the official VAS public case page’s own download control and is retained for source-reference use. No names or personal facts from the decision are copied into the source register or derived notes."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "complete_official_html_text_review_and_native_pdf_identity_check",
+        "review_date": "2026-10-25",
+        "scope": "Final six-page VAS cassation judgment № 3002/17.03.2026, administrative case № 983/2026; public-policy entry ban under Articles 26(1) and 26(3) of the Bulgarian EU free-movement Act.",
+        "evidence": "Reviewed the case posture, facts, lower-court reasoning, VAS analysis, holding and final order in the complete official online text. The Migration Directorate’s cassation appeal was rejected and the Sofia City Administrative Court judgment annulling the five-year entry ban was left in force. The VAS required the authority to establish all relevant facts and specify individual conduct showing a genuine, present and sufficiently serious threat under Article 27 of Directive 2004/38. It found the record did not establish that the EU citizen helped transport irregular migrants; the evidence showed he had called 112 about people in distress. NGO membership or volunteering alone was insufficient. The decision is final and fact-specific.",
+        "source_sha256": "3480776b547c46ac24b7502767d0b4179179eb42c063606ab609c7291aa12a9f",
+        "source_text_sha256": null,
+        "document_sha256": "3480776b547c46ac24b7502767d0b4179179eb42c063606ab609c7291aa12a9f"
+      },
+      "accepted_on": "2026-10-25",
+      "document_path": "documents/case_law/bg-vas-decision-3002-2026.pdf"
     }
   },
   "required_checks_scope": "local_copy_required_checks applies only before accepting a retained local artifact. Official link acceptance uses official_reference_review_schema and does not require retrieval, conversion, extraction, hashes, replay, or copy/republication permission.",
