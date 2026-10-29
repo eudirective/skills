@@ -1,13 +1,13 @@
 {
   "schema_version": "1.4.0",
   "jurisdiction": "PT",
-  "as_of": "2026-10-24",
-  "accepted_source_count": 0,
+  "as_of": "2026-10-29",
+  "accepted_source_count": 3,
   "accepted_current_law_source_count": 0,
-  "accepted_derived_text_count": 0,
+  "accepted_derived_text_count": 3,
   "accepted_topic_count": 0,
   "country_review_complete": false,
-  "accepted_external_reference_count": 61,
+  "accepted_external_reference_count": 66,
   "external_reference_decisions": [
     {
       "source_id": "pt-02",
@@ -1010,12 +1010,16 @@
       ],
       "evidence": {
         "official_source_url": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/1966-34509075-49754075",
-        "checked_on": "2026-10-21",
+        "checked_on": "2026-10-29",
         "language": "Portuguese",
-        "version": "DRE identifies Chapter III as rights of foreigners/conflicts of laws, beginning at Article 14; it showed in-force status and last alteration 2026-06-23.",
-        "verified_content": "Civil Code, Chapter III: rights of foreigners and conflict of laws",
-        "limitations": "This chapter-specific link replaces the erroneous 1993 URL and is not the whole Civil Code. DRE says consolidations have no legal value."
-      }
+        "version": "DRE search output checked 2026-10-29 identifies the consolidated Código Civil as in force and shows last alteration 2026-06-23. DRE consolidated texts integrate changes/corrections but have no legal value and do not replace original acts, according to DRE's consolidated-version policy.",
+        "verified_content": "Civil Code, Book I, Chapter III (Articles 14 onward): rights of foreigners and conflict of laws; relevant provisions mapped in the maintained note.",
+        "limitations": "The overall last-alteration date does not establish a change to each provision in Chapter III. DRE consolidation is a working reference only. The selected candidate pt-04-código-civil-private-international-law-provisions is the same instrument and is not a second source. No local legal text is accepted."
+      },
+      "document_path": "documents/legislation/pt-68-codigo-civil-conflict-of-laws-2026-10-29.md",
+      "candidate_aliases": [
+        "pt-04-código-civil-private-international-law-provisions"
+      ]
     },
     {
       "source_id": "pt-23",
@@ -1109,6 +1113,111 @@
         "verified_content": "The opinion concerns a municipal information request. It explains that the general LADA access route may be used by an elected local member, distinguishes access to existing documents from requests to create explanations, and describes partial disclosure where protected material can be removed.",
         "limitations": "A selected opinion about a local-government records request, not migration procedure. Do not generalize beyond its facts and cited law; check current legislation and the live CADA channel."
       }
+    },
+    {
+      "source_id": "pt-01-lei-n.º-37-2006-on-free-movement-and-residence-of-eu-citizens-and-family-me",
+      "decision": "accepted_with_narrow_external_scope",
+      "accepted_role": "Official DRE consolidated record and dated text, for working-reference use within its stated version and legal-status caveats.",
+      "not_accepted": [
+        "A consolidated text with legal force; DRE explicitly says the consolidation has no legal value.",
+        "A guarantee of no later amendment beyond the date selector 2026-08-24.",
+        "Complete operational procedures, current forms, topic coverage, or country completion."
+      ],
+      "evidence": {
+        "official_source_url": "https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2006-128792849",
+        "checked_on": "2026-10-29",
+        "language": "Portuguese",
+        "version": "DRE version selector displays 24 August 2026; last alteration displayed 2 June 2023; status Em vigor.",
+        "verified_content": "Full visible consolidated statutory text, Articles 1–34, retrieved and transcribed to Markdown; the source page says consolidated versions have no legal value and do not replace the acts from which the consolidation derives.",
+        "limitations": "Consult original enactments and later amendments if exact legal force, commencement or conflict matters. Recheck the date selector and amendment history."
+      }
+    },
+    {
+      "source_id": "pt-02-lei-n.º-143-2015-adoption-regime",
+      "decision": "accepted_with_narrow_external_scope",
+      "accepted_role": "Official DRE consolidated record and dated text for the adoption regime within the displayed version and legal-status caveats.",
+      "not_accepted": [
+        "A consolidated text with legal force; DRE explicitly states consolidations have no legal value.",
+        "No later changes after the 16 October 2026 selector date.",
+        "Individual adoption eligibility or country completion."
+      ],
+      "evidence": {
+        "official_source_url": "https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2015-70208248",
+        "checked_on": "2026-10-29",
+        "language": "Portuguese",
+        "version": "DRE view selector displays 16 October 2026; last alteration shown 17 August 2023; status Em vigor.",
+        "verified_content": "The visible consolidated text includes Lei 143/2015 and annexed Regime Jurídico do Processo de Adoção through Article 90 and the consolidation caveat.",
+        "limitations": "Recheck current DRE date selector and the source enactments/amendments for legal force and commencement."
+      }
+    },
+    {
+      "source_id": "pt-03-código-do-registo-civil-decreto-lei-n.º-131-95-consolidated-provisions",
+      "decision": "accepted_with_narrow_external_scope",
+      "accepted_role": "Official DRE consolidated civil-registration code, as a dated working reference within its displayed status and no-legal-value caveat.",
+      "not_accepted": [
+        "A consolidated text with legal value; DRE expressly says consolidations do not replace source acts.",
+        "No changes after 6 September 2026 or complete current operational practice.",
+        "Topic adequacy or country completion."
+      ],
+      "evidence": {
+        "official_source_url": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/1995-34525275",
+        "checked_on": "2026-10-29",
+        "language": "Portuguese",
+        "version": "Displayed version selector 6 September 2026; last alteration 1 April 2025; status Em vigor.",
+        "verified_content": "Full visible consolidated code through Article 305, alteration notes, and DRE consolidation warning were opened and retained.",
+        "limitations": "The consolidated view has no legal value and does not replace the originating acts. Recheck later amendments and any applicable regulations."
+      }
+    },
+    {
+      "source_id": "pt-05-aima-overview",
+      "decision": "accepted_with_narrow_external_scope",
+      "accepted_role": "Accepted as an official navigation and orientation reference for AIMA's EU-national and family-service routes, represented by a maintained note.",
+      "not_accepted": [
+        "The page as an accepted local source-text copy.",
+        "Complete Portuguese law, operational procedure, or topic coverage.",
+        "Currentness of specific forms, fees, appointment channels, or evidence lists beyond the dated checks recorded below."
+      ],
+      "evidence": {
+        "official_source_url": "https://aima.gov.pt/en/nacionais-ue-e-familiares",
+        "checked_on": "2026-10-29",
+        "language": "Portuguese content at English-path URL",
+        "version": "No page version displayed in the indexed content reviewed.",
+        "verified_content": "Official indexed AIMA hub content and linked current service pages for EU registration, family-member residence cards, and permanent residence. AIMA says EU citizens staying over three months register at the relevant municipality; third-country family members have an AIMA residence-card route; permanent applications are routed through the Portal de Renovações from 1 July 2026. General framework cross-checked against the Diário da República consolidated Lei n.º 37/2006 record.",
+        "limitations": "Direct browser retrieval of the English-path hub timed out. Indexed official page content and linked service pages were available. The hub content is Portuguese despite the English URL. Service details are changeable; verify current linked page, municipality/AIMA channel and applicable law before operational reliance."
+      },
+      "maintained_note": {
+        "path": "documents/guidance/pt-05-aima-eu-citizens-family-hub-2026-10-29.md",
+        "sha256": "ed1f22025d69b12bd3e29e451626dbbc4ef0b03a9b9962b4f4732e446c3a5c18",
+        "role": "maintained_official_reference_note_not_source_text_copy"
+      },
+      "local_copy_accepted": false,
+      "topic_accepted": false
+    },
+    {
+      "source_id": "pt-06-portaria-models-fees",
+      "decision": "accepted_with_narrow_external_scope",
+      "accepted_role": "Accepted as a government-published working consolidation for the identified document models, Article 3 fee schedule, procedural cost allocations, and issuer responsibilities.",
+      "not_accepted": [
+        "DRE consolidation as legally authoritative wording; DRE expressly says it has no legal value and does not replace the originating acts.",
+        "A retained local source-text copy or reproduction of the annex form images.",
+        "A fee quotation for a particular municipality, procedure or applicant without checking local and case-specific charges.",
+        "Complete Portuguese free-movement legal or procedural coverage."
+      ],
+      "evidence": {
+        "official_source_url": "https://diariodarepublica.pt/dr/legislacao-consolidada/portaria/2010-107034650",
+        "checked_on": "2026-10-29",
+        "language": "Portuguese",
+        "version": "DRE status Em vigor; last alteration 2024-01-31; version selector displayed 2026-08-24.",
+        "verified_content": "Consolidated Portaria n.º 1334-D/2010, Articles 1-7, annex and modification notes. Cross-checked Portaria n.º 13/2024 and Portaria n.º 32/2024 for the model, fee and commencement changes.",
+        "limitations": "DRE warns the consolidation has no legal value. Fee totals can include a municipality-specific component; annex images may need to be inspected in the official publication. The note is a summary, not source-text copy."
+      },
+      "maintained_note": {
+        "path": "documents/guidance/pt-06-portaria-1334-d-2010-models-fees-2026-10-29.md",
+        "sha256": "871daa1fb89d55e20f3adcdad5b4542c70bb98be3f37ddc17ff46073cefc022c",
+        "role": "maintained_official_reference_note_not_source_text_copy"
+      },
+      "local_copy_accepted": false,
+      "topic_accepted": false
     }
   ],
   "policy": "DRE states that its consolidated pages are government-produced working references but have no legal value and do not replace the original enacted acts. Under the repository source policy, a clearly identified official consolidated page may be used directly within its displayed status/date, subject and caveats; no Gazette-chain reconstruction or local copy is a prerequisite for link use. Original enactments/amendments remain the legal authority if a discrepancy matters.",
@@ -1127,7 +1236,7 @@
       "review_scope": "Confirm parent-page links, service authority, municipality/AIMA division, current forms, appointment and submission channels, and effective dates."
     }
   ],
-  "count_note": "61 official external-reference decisions cover links only; they do not count as local copies, accepted topics, or country completion. Three Gov.pt pages are not relied upon for current procedure. Four unresolved AIMA routes remain under a whole-site human-review offer.",
+  "count_note": "66 official external-reference decisions cover links within scope; they do not count as accepted topics or country completion. Three dated derived text copies are retained: full visible DRE consolidated texts for Lei 37/2006, Lei 143/2015 and the Civil Registration Code, each with the publisher’s no-legal-value caveat. Three Gov.pt pages are not relied upon for current procedure. Four unresolved AIMA routes remain under a whole-site human-review offer.",
   "not_relied_upon_reference_count": 3,
   "not_relied_upon_references": [
     {
@@ -1152,5 +1261,43 @@
       "checked_on": "2026-10-24"
     }
   ],
-  "human_review_pending_reference_count": 4
+  "human_review_pending_reference_count": 4,
+  "accepted_derived_texts": [
+    {
+      "source_id": "pt-01-lei-n.º-37-2006-on-free-movement-and-residence-of-eu-citizens-and-family-me",
+      "path": "documents/legislation/pt-01-lei-37-2006-free-movement-consolidation-2026-08-24.md",
+      "sha256": "cb0a6e9788181b28557a47a7c69a538a851700e0d0bf27423e4022d6a6fa684b",
+      "bytes": 40393,
+      "source_url": "https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2006-128792849",
+      "reviewed_on": "2026-10-29",
+      "decision": "accepted_dated_derived_text",
+      "reuse_basis": "Portuguese CDADC Article 8 states compiled or annotated official texts do not benefit from protection; DRE is the official publisher. Portal interface, branding and unrelated copyrighted material are excluded.",
+      "verification": "All visible statutory text from Article 1 through Article 34 and the publisher’s consolidation caveat were retained; DRE status and version fields were checked.",
+      "limitations": "DRE explicitly states consolidated text is not legally valid and does not replace originating acts. Version selector is dated 2026-08-24; this copy is not a consolidated legal instrument."
+    },
+    {
+      "source_id": "pt-02-lei-n.º-143-2015-adoption-regime",
+      "path": "documents/legislation/pt-02-lei-143-2015-adoption-regime-consolidation-2026-10-16.md",
+      "sha256": "3ac558a670a18f464b073a02bc0c3e0b3993f697abbf964506405b1f6fab8e31",
+      "bytes": 95322,
+      "source_url": "https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2015-70208248",
+      "reviewed_on": "2026-10-29",
+      "decision": "accepted_dated_derived_text",
+      "reuse_basis": "Portuguese CDADC Article 8 states compiled or annotated official texts do not benefit from protection; DRE is the official publisher. Portal interface, branding and unrelated material are excluded.",
+      "verification": "All 668 visible statutory-body lines were retained from the DRE consolidated view, including the annexed adoption procedure statute and the DRE consolidation warning; current displayed status and version selector were checked.",
+      "limitations": "The consolidated text has no legal value and does not replace originating acts. Displayed version cutoff 2026-10-16. Not an authoritative consolidated instrument."
+    },
+    {
+      "source_id": "pt-03-código-do-registo-civil-decreto-lei-n.º-131-95-consolidated-provisions",
+      "path": "documents/legislation/pt-03-codigo-registo-civil-consolidation-2026-09-06.md",
+      "sha256": "ef54dbbebd614873b6591a9f5686793e36890c0edc91278c4f9571b3e0c65e6b",
+      "bytes": 283553,
+      "source_url": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/1995-34525275",
+      "reviewed_on": "2026-10-29",
+      "decision": "accepted_dated_derived_text",
+      "reuse_basis": "Portuguese CDADC Article 8 states compiled or annotated official texts do not benefit from protection. Only the official statutory text and necessary provenance are retained; portal interface and unrelated material are excluded.",
+      "verification": "All 3,565 visible lines from the statutory body through Article 305 and DRE consolidation disclaimer were retained; source page displays Em vigor, version selector 2026-09-06, last alteration 2025-04-01.",
+      "limitations": "DRE states consolidation has no legal value and does not replace source acts. Dated version 2026-09-06; check later changes and applicable regulations. Not operational practice."
+    }
+  ]
 }

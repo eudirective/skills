@@ -1,18 +1,18 @@
 {
   "schema_version": "1.0",
-  "review_date": "2026-10-24",
+  "review_date": "2026-10-29",
   "jurisdiction": "IE",
   "status": "partial_scoped_official_references_and_accepted_local_texts",
   "publisher_assessment": {
     "publisher": "Irish Statute Book (eISB), Immigration Service Delivery, Courts Service, Department of Foreign Affairs, Legal Aid Board, Ombudsman, Data Protection Commission, FOI service, and other named Irish public authorities.",
-    "decision": "All 51 candidate rows now have an accepted official-reference disposition within recorded scope. Eleven eISB legislative texts are accepted as local source documents. Other captured page conversions remain only in the Monitor local-only archive; 0 topics and whole-country completion remain accepted.",
-    "basis": "The candidate records were reconciled against official publisher links, recorded source identity evidence, the 26 hash-verified captures, the current ISD Treaty Rights and appeal guidance, the Legal Aid Board replacement leaflet, the Courts.ie HC140 direction, and the eISB/LRC version references. Currentness is recorded separately from source identity and local-copy status.",
-    "limitation": "Made/enacted laws are exact instruments, not consolidated texts. Current page guidance, annual indexes, search portals, checklists, office directories and court search tools have only their named narrow role. No accepted reference or local text establishes topic coverage or country completion."
+    "decision": "All 51 candidate rows have scoped official-reference dispositions. Eleven eISB legislative texts and eight independently authored current guidance/procedure summaries are accepted as local source documents. Captured page conversions remain in the Monitor local-only archive as provenance and are not copied into the repository. Topic coverage and whole-country completion remain open.",
+    "basis": "The candidate records were reconciled against official publisher links, recorded source identity evidence, the 26 hash-verified captures, the current ISD Treaty Rights and appeal guidance, the Legal Aid Board replacement leaflet, the Courts.ie HC140 direction, and the eISB/LRC version references. Currentness is recorded separately from source identity and local-copy status. Four selected official pages were reopened on 29 October 2026 and summarized as maintained Markdown source records. Four additional ISD guidance pages were reopened on 29 October 2026 and summarized. The Department short-stay appeals announcement could not be directly retrieved (HTTP 403), so its dated summary is limited to the rule corroborated by live ISD operational guidance.",
+    "limitation": "Made/enacted laws are exact instruments, not consolidated texts. Current page guidance, annual indexes, search portals, checklists, office directories and court search tools have only their named narrow role. The eight local guidance/procedure records are independent summaries, not reproductions or legal determinations; ie-25 and ie-27 have the specific currency/access limitations recorded in their entries. No accepted reference or local text establishes topic coverage or country completion."
   },
   "counts": {
     "candidate_records": 51,
     "accepted_external_references": 51,
-    "accepted_local_copies": 11,
+    "accepted_local_copies": 19,
     "remaining_candidate_records": 0,
     "accepted_topics": 0,
     "country_review_complete": false
@@ -474,17 +474,25 @@
       "url": "https://www.irishimmigration.ie/coming-to-join-family-in-ireland/joining-an-eea-or-swiss-national/",
       "publisher": "Immigration Service Delivery (ISD)",
       "language": "en",
-      "checked_on": "2026-10-24",
-      "version": "Current web page; page/date signals need capture in any future monitor.",
+      "checked_on": "2026-10-29",
+      "version": "Live ISD page inspected 2026-10-29; mutable service guidance.",
       "acceptance_scope": "Official ISD guidance for entry by non-EEA family members under Directive 2004/38/EC, including visa-required cases and the published checklist; it does not replace the legal instrument or cover every mission procedure.",
       "limitations": "External-reference acceptance confirms the official source and the stated scope only. A link is not a local copy, a consolidated current law, adequate topic coverage, or a completed country review.",
       "evidence": {
         "official_source_url": "https://www.irishimmigration.ie/coming-to-join-family-in-ireland/joining-an-eea-or-swiss-national/",
         "candidate_id": "ie-19",
-        "verified_content": "Official ISD page inspected; distinguishes family members relying on Directive 2004/38 and short-stay entry visa rules.",
-        "source_record_note": "Any saved conversion is preserved only in the Monitor local-only research archive; no pack-local candidate copy remains."
+        "verified_content": "Live ISD page reopened 29 October 2026; current guidance for Directive 2004/38 family members, visa/stay routes, eligibility checklist and document requirements.",
+        "source_record_note": "Accepted maintained independent summary at documents/guidance/ie-19.md; prior Monitor capture remains local-only provenance."
       },
-      "reviewed_on": "2026-10-24"
+      "reviewed_on": "2026-10-29",
+      "accepted_local_summary": {
+        "status": "accepted_project_authored_source_summary",
+        "path": "documents/guidance/ie-19.md",
+        "checked_on": "2026-10-29",
+        "language": "English",
+        "scope": "Distinct EEA/Swiss family route; entry visa distinctions, 90-day travel, Irish residence card for longer stays, fees and evidence categories.",
+        "limits": "Service guidance only; Directive, Irish implementation and individual route control."
+      }
     },
     {
       "source_id": "ie-20",
@@ -528,17 +536,25 @@
       "url": "https://www.irishimmigration.ie/coming-to-join-family-in-ireland/",
       "publisher": "Immigration Service Delivery (ISD)",
       "language": "en",
-      "checked_on": "2026-10-24",
-      "version": "Content changed for the 2026 International Protection Act and is a mutable service page.",
+      "checked_on": "2026-10-29",
+      "version": "Live ISD page inspected 2026-10-29; mutable service guidance.",
       "acceptance_scope": "Official ISD family-route selector; route navigation only and not substantive eligibility criteria.",
       "limitations": "External-reference acceptance confirms the official source and the stated scope only. A link is not a local copy, a consolidated current law, adequate topic coverage, or a completed country review.",
       "evidence": {
         "official_source_url": "https://www.irishimmigration.ie/coming-to-join-family-in-ireland/",
         "candidate_id": "ie-22",
-        "verified_content": "Official ISD route hub inspected; separates Irish, UK, EU/EEA/Swiss, refugee and non-EEA sponsor routes.",
-        "source_record_note": "Any saved conversion is preserved only in the Monitor local-only research archive; no pack-local candidate copy remains."
+        "verified_content": "Live ISD family route hub reopened 29 October 2026. Page says last updated 12 June 2026 and includes new International Protection Act 2026 route notice.",
+        "source_record_note": "Accepted maintained independent summary at documents/guidance/ie-22.md; prior Monitor capture remains local-only provenance."
       },
-      "reviewed_on": "2026-10-24"
+      "reviewed_on": "2026-10-29",
+      "accepted_local_summary": {
+        "status": "accepted_project_authored_source_summary",
+        "path": "documents/guidance/ie-22.md",
+        "checked_on": "2026-10-29",
+        "language": "English",
+        "scope": "Sponsor-based route selector separating Irish, UK, EEA/Swiss, non-EEA, protection-beneficiary and other pathways.",
+        "limits": "Navigation hub, not substantive eligibility rules; follow current route-specific policy and statute."
+      }
     },
     {
       "source_id": "ie-23",
@@ -564,17 +580,25 @@
       "url": "https://www.irishimmigration.ie/coming-to-join-family-in-ireland/joining-an-irish-national/join-family-visa/",
       "publisher": "Immigration Service Delivery (ISD)",
       "language": "en",
-      "checked_on": "2026-10-24",
-      "version": "Current page; linked policy and application routes can change independently.",
+      "checked_on": "2026-10-29",
+      "version": "Live ISD page inspected 2026-10-29; mutable service guidance.",
       "acceptance_scope": "Official ISD instructions for the long-stay join-family visa for an Irish-national sponsor; route-specific and subject to the linked policy and current checklist.",
       "limitations": "External-reference acceptance confirms the official source and the stated scope only. A link is not a local copy, a consolidated current law, adequate topic coverage, or a completed country review.",
       "evidence": {
         "official_source_url": "https://www.irishimmigration.ie/coming-to-join-family-in-ireland/joining-an-irish-national/join-family-visa/",
         "candidate_id": "ie-24",
-        "verified_content": "Official ISD page inspected; states long-stay visa requirements and explicitly excludes Directive 2004/38 applications from the general policy.",
-        "source_record_note": "Any saved conversion is preserved only in the Monitor local-only research archive; no pack-local candidate copy remains."
+        "verified_content": "Live ISD Irish-national join-family page reopened 29 October 2026; includes current processing-model transition and special Critical Skills stream notice.",
+        "source_record_note": "Accepted maintained independent summary at documents/guidance/ie-24.md; prior Monitor capture remains local-only provenance."
       },
-      "reviewed_on": "2026-10-24"
+      "reviewed_on": "2026-10-29",
+      "accepted_local_summary": {
+        "status": "accepted_project_authored_source_summary",
+        "path": "documents/guidance/ie-24.md",
+        "checked_on": "2026-10-29",
+        "language": "English",
+        "scope": "Long-stay visa route for Irish-national sponsor, visa-required distinction, exclusions from other schemes, AVATS route and policy links.",
+        "limits": "Route-specific guidance; policy, processing arrangements, fees and document list may change; no eligibility decision."
+      }
     },
     {
       "source_id": "ie-25",
@@ -583,16 +607,25 @@
       "publisher": "Immigration Service Delivery (ISD)",
       "language": "en",
       "checked_on": "2026-10-24",
-      "version": "Page contains dated, temporary nationality and document notices; volatile.",
-      "acceptance_scope": "Official ISD visa-required nationality list; dynamic and subject to temporary changes. Recheck before travel or application.",
+      "version": "Live ISD page inspected 2026-10-29; page states last updated 2025-03-14 and retains a May 2018 Libya notice.",
+      "acceptance_scope": "Official ISD visa-required nationality rule and specified exemptions; temporary refugee travel-document notice; nationality schedule must be checked separately.",
       "limitations": "External-reference acceptance confirms the official source and the stated scope only. A link is not a local copy, a consolidated current law, adequate topic coverage, or a completed country review.",
       "evidence": {
         "official_source_url": "https://www.irishimmigration.ie/visa-non-visa-required-nationalities/",
         "candidate_id": "ie-25",
-        "verified_content": "Official ISD page inspected; includes Article 10 family-member residence-card visa exception.",
-        "source_record_note": "Any saved conversion is preserved only in the Monitor local-only research archive; no pack-local candidate copy remains."
+        "verified_content": "Live page reopened 2026-10-29. It sets nationality/issuing-country basis, Article 10 card exemption, and temporary refugee document notice; page footer says last updated 2025-03-14. Historical Libya notice remains on page.",
+        "source_record_note": "Accepted maintained independent summary at documents/guidance/ie-25.md; page conversions remain in Monitor local-only provenance.",
+        "limitations": "Page currency concerns: its 12-month suspension notice is stale or requires current-status confirmation; Libya notice dates to May 2018. No individual visa determination."
       },
-      "reviewed_on": "2026-10-24"
+      "reviewed_on": "2026-10-29",
+      "accepted_local_summary": {
+        "status": "accepted_project_authored_source_summary",
+        "path": "documents/guidance/ie-25.md",
+        "checked_on": "2026-10-29",
+        "language": "English",
+        "scope": "Nationality/issuing-document rule and specified exemptions; refugee travel-document notice; historical notices called out.",
+        "limits": "Mutable page reports last updated 14 March 2025; confirm temporary policy and nationality schedule; May 2018 Libya notice is not treated as current."
+      }
     },
     {
       "source_id": "ie-26",
@@ -601,16 +634,25 @@
       "publisher": "Immigration Service Delivery (ISD)",
       "language": "en",
       "checked_on": "2026-10-24",
-      "version": "From 1 June 2026 most short-stay C visa refusals are not appealable; Directive categories remain exceptions.",
-      "acceptance_scope": "Official ISD visa-refusal appeal instructions. The page states that most short-stay refusal appeals ended 1 June 2026 but retains appeal routes for EU Free Movement Directive cases; follow the individual refusal letter and current page.",
+      "version": "Live ISD page inspected 2026-10-29; current operational appeal guidance.",
+      "acceptance_scope": "Official administrative process for appealable visa refusals, including 2026 short-stay change and stated Free Movement Directive exception.",
       "limitations": "External-reference acceptance confirms the official source and the stated scope only. A link is not a local copy, a consolidated current law, adequate topic coverage, or a completed country review.",
       "evidence": {
         "official_source_url": "https://www.irishimmigration.ie/appeal-a-negative-decision/",
         "candidate_id": "ie-26",
-        "verified_content": "Official ISD page inspected; sets deadlines and preserves short-stay appeals for EU Free Movement Directive family categories.",
-        "source_record_note": "Any saved conversion is preserved only in the Monitor local-only research archive; no pack-local candidate copy remains."
+        "verified_content": "Live ISD appeal page reopened 2026-10-29. It states 1 June 2026 short-stay change, specified Directive 2004/38 categories, two-month deadline, no fee, original-document and postal rules.",
+        "source_record_note": "Accepted maintained independent summary at documents/guidance/ie-26.md; page conversions remain in Monitor local-only provenance.",
+        "limitations": "Refusal letter controls eligibility; administrative appeal process only, not judicial review or all legal remedies."
       },
-      "reviewed_on": "2026-10-24"
+      "reviewed_on": "2026-10-29",
+      "accepted_local_summary": {
+        "status": "accepted_project_authored_source_summary",
+        "path": "documents/guidance/ie-26.md",
+        "checked_on": "2026-10-29",
+        "language": "English",
+        "scope": "Eligibility warning and scope; two-month deadline; no fee; postal/original-document requirements.",
+        "limits": "Refusal letter controls; check live instructions; does not describe all remedies."
+      }
     },
     {
       "source_id": "ie-27",
@@ -619,16 +661,25 @@
       "publisher": "Department of Justice, Home Affairs and Migration",
       "language": "en",
       "checked_on": "2026-10-21",
-      "version": "Published 29 May 2026 and updated 3 June 2026; change effective 1 June 2026.",
-      "acceptance_scope": "Official Department announcement describing the 2026 change to short-stay visa appeals; historical explanatory announcement only. The current ISD appeal page controls current public instructions.",
+      "version": "Department announcement identified; direct page returned HTTP 403 on 2026-10-29. Current rule cross-checked against live ISD guidance.",
+      "acceptance_scope": "Department announcement of 2026 removal of certain short-stay refusal appeals, cross-checked against ISD operational guidance.",
       "limitations": "External-reference acceptance confirms the official source and the stated scope only. A link is not a local copy, a consolidated current law, adequate topic coverage, or a completed country review.",
       "evidence": {
         "official_source_url": "https://www.gov.ie/en/department-of-justice-home-affairs-and-migration/news/removal-of-appeals-for-certain-short-stay-visa-refusals/",
         "candidate_id": "ie-27",
-        "verified_content": "Official Department announcement inspected; explains the 2026 appeal change and Directive exception.",
-        "source_record_note": "Any saved conversion is preserved only in the Monitor local-only research archive; no pack-local candidate copy remains."
+        "verified_content": "gov.ie announcement direct retrieval returned 403. Live ISD appeal page reopened 2026-10-29 and confirms 1 June 2026 change and exceptions for listed Directive 2004/38 short-stay categories.",
+        "source_record_note": "Accepted maintained independent summary at documents/guidance/ie-27.md; page conversions remain in Monitor local-only provenance.",
+        "limitations": "The Department announcement itself was inaccessible during review; the local record summarizes only the scope confirmed by current ISD guidance."
       },
-      "reviewed_on": "2026-10-24"
+      "reviewed_on": "2026-10-29",
+      "accepted_local_summary": {
+        "status": "accepted_project_authored_source_summary",
+        "path": "documents/guidance/ie-27.md",
+        "checked_on": "2026-10-29",
+        "language": "English",
+        "scope": "Narrow account of the 2026 change and exceptions as confirmed by ISD.",
+        "limits": "Announcement direct page inaccessible (HTTP 403); verify individual appeal rights from refusal letter and live ISD page."
+      }
     },
     {
       "source_id": "ie-28",
@@ -637,16 +688,25 @@
       "publisher": "Immigration Service Delivery (ISD)",
       "language": "en",
       "checked_on": "2026-10-24",
-      "version": "Dynamic application guidance and external AVATS service.",
-      "acceptance_scope": "Official ISD public instructions for entering information in AVATS. Workflow guidance only; do not automate submissions or store applicant data.",
+      "version": "Live ISD AVATS instructions inspected 2026-10-29; mutable procedural guidance.",
+      "acceptance_scope": "Official instructions for completing AVATS visa/preclearance details and generating application form; route-specific requirements remain separate.",
       "limitations": "External-reference acceptance confirms the official source and the stated scope only. A link is not a local copy, a consolidated current law, adequate topic coverage, or a completed country review.",
       "evidence": {
         "official_source_url": "https://www.irishimmigration.ie/coming-to-visit-ireland/giving-your-details-on-avats-for-a-visa-preclearance-application/",
         "candidate_id": "ie-28",
-        "verified_content": "Official instructions inspected; say AVATS requires acceptance of terms/privacy notice and collects applicant and family details.",
-        "source_record_note": "Any saved conversion is preserved only in the Monitor local-only research archive; no pack-local candidate copy remains."
+        "verified_content": "Live AVATS guide reopened 2026-10-29; checked nationality routing, C/D definitions and exceptions, data entry, false-information warning and output/submission steps.",
+        "source_record_note": "Accepted maintained independent summary at documents/guidance/ie-28.md; page conversions remain in Monitor local-only provenance.",
+        "limitations": "English-only system and route/mission-specific requirements may change; no decision on correct route or eligibility."
       },
-      "reviewed_on": "2026-10-24"
+      "reviewed_on": "2026-10-29",
+      "accepted_local_summary": {
+        "status": "accepted_project_authored_source_summary",
+        "path": "documents/guidance/ie-28.md",
+        "checked_on": "2026-10-29",
+        "language": "English",
+        "scope": "AVATS workflow; nationality and travel reason category selection; C/D rules including Free Movement exception; form completion and warnings.",
+        "limits": "Mutable instructions, route- and mission-specific documents; not eligibility determination."
+      }
     },
     {
       "source_id": "ie-29",
@@ -1048,18 +1108,26 @@
       "url": "https://www.courts.ie/practice-directions/full-practice-direction?url=asylum--immigration-and-citizenship-list-2026",
       "publisher": "Courts Service",
       "language": "en",
-      "checked_on": "2026-10-21",
-      "version": "HC140 effective 2026-06-03; checked 2026-10-21; the direction revokes HC81.",
+      "checked_on": "2026-10-29",
+      "version": "HC140 effective 2026-06-03; inspected 2026-10-29.",
       "acceptance_scope": "Official High Court Practice Direction HC140, effective 3 June 2026, applying to specified asylum, immigration, freedom-of-movement, citizenship and related EU-law proceedings and revoking HC81.",
       "limitations": "The direction governs the stated High Court list and procedure; it is not a general statutory source or an exhaustive account of available remedies.",
       "evidence": {
         "official_source_url": "https://www.courts.ie/practice-directions/full-practice-direction?url=asylum--immigration-and-citizenship-list-2026",
         "candidate_id": "ie-48",
-        "verified_content": "Official Courts.ie practice direction inspected; applies to immigration, freedom-of-movement and related EU-law cases.",
-        "source_record_note": "Any saved conversion is preserved only in the Monitor local-only research archive; no pack-local candidate copy remains.",
+        "verified_content": "Official Courts Service practice direction HC140 effective 3 June 2026; page reopened 29 October. Confirms scope, revocation of HC81 and procedural requirements for named High Court list.",
+        "source_record_note": "Accepted maintained independent summary at documents/guidance/ie-48.md; prior Monitor capture remains local-only provenance.",
         "limitations": "The direction governs the stated High Court list and procedure; it is not a general statutory source or an exhaustive account of available remedies."
       },
-      "reviewed_on": "2026-10-24"
+      "reviewed_on": "2026-10-29",
+      "accepted_local_summary": {
+        "status": "accepted_project_authored_source_summary",
+        "path": "documents/guidance/ie-48.md",
+        "checked_on": "2026-10-29",
+        "language": "English",
+        "scope": "Regional High Court procedural summary; key duties, pleading/evidence, leave and service steps.",
+        "limits": "Only the named High Court list and procedure; not substantive immigration law or exhaustive remedies."
+      }
     },
     {
       "source_id": "ie-49",
@@ -1218,6 +1286,6 @@
       "reason": "Accepted gov.ie page was last updated 11 April 2025 and states 12 months, conflicting with current ISD guidance of up to six months. Retain only as a dated historical page; do not use the estimate as current."
     }
   ],
-  "completion_note": "All 51 source-candidate rows have a scoped external-reference acceptance; 11 eISB texts are accepted local copies. Topic coverage remains 0 and the national review remains incomplete. Link acceptance, source identity, exact local text, currentness, topic coverage, retrieval sustainability and country completion remain distinct.",
-  "count_note": "accepted_local_copies counts the 11 reviewed local legislative text files. accepted_external_references separately counts official link references (including sources with an accepted local copy). Neither count establishes topic coverage or country completion."
+  "completion_note": "All 51 source-candidate rows have scoped external-reference acceptance; 11 eISB texts and 8 maintained guidance/procedure summaries are accepted local source documents. Topic coverage remains 0 and national review remains incomplete. Link acceptance, source identity, local document scope, currentness, topic coverage, retrieval sustainability and country completion remain distinct.",
+  "count_note": "accepted_local_copies counts 19 reviewed local source documents: 11 legislative texts and 8 maintained guidance/procedure summaries. accepted_external_references separately counts official link references, including sources with accepted local documents. Neither count establishes topic coverage or country completion."
 }

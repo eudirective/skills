@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0.0",
   "jurisdiction": "LU",
-  "review_date": "2026-10-25",
-  "candidate_record_count": 49,
-  "accepted_external_reference_count": 44,
-  "pending_external_reference_count": 2,
-  "not_relied_upon_reference_count": 3,
+  "review_date": "2026-10-29",
+  "candidate_record_count": 51,
+  "accepted_external_reference_count": 48,
+  "pending_external_reference_count": 1,
+  "not_relied_upon_reference_count": 2,
   "accepted_local_copy_count": 10,
   "accepted_topic_count": 0,
   "country_review_complete": false,
@@ -14,7 +14,7 @@
     "decision": "Legilux is accepted as the official publisher for Luxembourg legislation and government consolidations within each displayed edition and caveat. Guichet and ministry pages are accepted only for the official service content reviewed.",
     "basis": "Official Legilux ELI/LegalDocML records and Casemates release text under CC BY 4.0; Luxembourg Ministry visa lists verified as current attachments from visa pages last updated 2026-10-23; Guichet pages remain accepted only within individually recorded scopes.",
     "limits": "Legilux consolidated texts are documentary and without legal force. Several promoted local texts are original acts or dated snapshots only. The 2023 court-procedure consolidation has unresolved post-cutoff currentness; the 2023 coordinated formalities PDF predates later 2024 amendments and the separate A283 rectification. Visa PDFs are unversioned mutable attachments. No topic or country completeness is claimed. LU-10 is a coordinated text applicable from 2023-04-15; later amendments are outside its text. Reference notes do not certify current application.",
-    "local_copy_and_reuse": "Ten exact legal-text copies are accepted: nine Legilux texts under Casemates CC BY 4.0 and LU-10, a dated coordinated regulation text. Article 10, point 8, of the amended 18 April 2001 copyright law identifies official acts of the authority and official translations among permitted uses; that basis is applied only to the legal instrument text, not the Ministry page or surrounding website content. The other final files from this batch are independently written source-reference notes, not copies of website page bodies, forms, directories or search interfaces. No blanket webpage license is inferred."
+    "local_copy_and_reuse": "Ten exact legal-text copies are accepted: nine Legilux texts under Casemates CC BY 4.0 and LU-10, a dated coordinated regulation text. Article 10, point 8, of the amended 18 April 2001 copyright law identifies official acts of the authority and official translations among permitted uses; that basis is applied only to the legal instrument text, not the Ministry page or surrounding website content. The other final files from this batch are independently written source-reference notes, not copies of website page bodies, forms, directories or search interfaces. No blanket webpage license is inferred. LU-11 is an independently written source-reference note and does not reproduce the Guichet page or linked forms. LU-19 is an independently written note; the Guichet page and form are not reproduced."
   },
   "accepted_references": [
     {
@@ -1355,21 +1355,22 @@
       "url": "https://legilux.public.lu/eli/etat/leg/loi/1978/12/01/n1/jo",
       "publisher": "legilux.public.lu",
       "language": "fr",
-      "checked_on": "2026-10-21",
-      "version_or_scope": "Original promulgated act; current consolidated edition and later amendments were not checked.",
+      "checked_on": "2026-10-29",
+      "version_or_scope": "Original promulgated act, Mémorial A No. 87/1978, p. 2486, in force from 1978-12-31. Current consolidation and later amendment status were not established; Legilux page requires JavaScript.",
       "decision": "accepted_with_narrow_external_scope",
       "acceptance_scope": "Use the official external reference for Law of 1 December 1978 on non-contentious administrative procedure only, within its recorded publisher, language, date/version and stated subject. Original publication only; current consolidation and amendments remain open.",
-      "reviewed_content": "Official ELI identifies the promulgated 1978 administrative-procedure law.",
+      "reviewed_content": "Official Legilux ELI identifies the promulgated act. Official Ombudsman and government pages corroborate its identity, subject and relationship to the 8 June 1979 implementing regulation. Article 4 is quoted in an official Ministry of Home Affairs circular.",
       "limitations": [
-        "Use the official external reference for Law of 1 December 1978 on non-contentious administrative procedure only, within its recorded publisher, language, date/version and stated subject. Original publication only; current consolidation and amendments remain open.",
-        "This accepts the external link only; it does not accept the saved conversion, establish topic adequacy, or complete Luxembourg’s review.",
-        "No copying or republication permission is inferred."
+        "Acceptance covers the original promulgated act as an external reference; the current consolidated text and post-1978 amendment status remain unverified.",
+        "The Legilux record page requires a JavaScript-capable browser; the act body was not exposed by this retrieval view.",
+        "Consult the implementing regulation and any special procedure; the general rules may yield to procedures providing at least equivalent safeguards.",
+        "This accepts the external link and an independently authored source-reference note only; no legal-text reuse permission is inferred."
       ],
       "evidence": {
         "official_source_url": "https://legilux.public.lu/eli/etat/leg/loi/1978/12/01/n1/jo",
-        "verified_content": "Official ELI identifies the promulgated 1978 administrative-procedure law.",
-        "source_record_note": "Original publication only; current consolidation and amendments remain open.",
-        "retrieval_status": "not_retrieved_link_review_only"
+        "verified_content": "Legilux identifies the original act. Official Ombudsman and government commissioner pages corroborate identity and relation to the 1979 implementing regulation; the Ministry of Home Affairs quotes Article 4.",
+        "source_record_note": "Checked 2026-10-29. Current consolidation and amendment status not established.",
+        "retrieval_status": "official_identity_corroborated_body_not_retrieved"
       },
       "local_copy_accepted": false,
       "archived_candidate_record": {
@@ -1377,7 +1378,12 @@
         "id": "lu-43",
         "manifest_sha256": "493ad79375983bb78217e36ede350f0be319a35b7f604636d298c43912054a02"
       },
-      "local_copy_disposition": "not_promoted_reference_or_candidate_only"
+      "local_copy_disposition": "promoted_independent_source_reference_note_not_verbatim_source_copy",
+      "source_document": {
+        "path": "documents/legislation/lu-43-law-non-contentious-administrative-procedure-reference.md",
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      }
     },
     {
       "source_id": "lu-44",
@@ -1743,28 +1749,153 @@
         "kind": "independent_source_reference_note",
         "reproduces_source_text": false
       }
-    }
-  ],
-  "pending_references": [
+    },
     {
       "source_id": "lu-11",
       "title": "EU/EEA/Swiss citizen residence and work over three months",
-      "url": "https://guichet.public.lu/content/guichet/en/citoyens/immigration/plus-3-mois/citoyen-UE/conditions-entree/sejour-travail.html",
+      "url": "https://guichet.public.lu/en/citoyens/immigration/vivre/non-luxembourg/immigration/union-euro/travail/sejour-travail.html",
       "publisher": "guichet.public.lu",
       "language": "en",
-      "checked_on": "2026-10-21",
-      "version_or_scope": "Observed 2026-10-18; page date and linked forms need capture during runtime.",
-      "decision": "pending_human_review",
-      "reason": "The old page route and current service text need rediscovery from the current parent page; offer the whole Guichet site for human review.",
-      "whole_site_review_url": "https://guichet.public.lu/en/",
+      "checked_on": "2026-10-29",
+      "version_or_scope": "Current page last updated 2026-10-01 and expressly marked as being updated. The prior candidate route is stale; the current official service page was confirmed at this replacement URL.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official administrative guidance for EU/EEA/Swiss citizen residence and work beyond 90 days, within the page's displayed scope and 2026-10-01 version; linked legal requirements and forms are date-sensitive.",
+      "reviewed_content": "The page describes residence categories, commune registration within three months, category-specific evidence, registration certificates, permanent residence after five years, durable-partner recognition and withdrawal procedure. Reviewed financial-support and durable-relationship forms dated 2026-10-19 and a power-of-attorney form dated 2023-10-18.",
+      "limitations": [
+        "Official service guidance, not controlling legislation or an adjudication of individual eligibility.",
+        "Page expressly says it is being updated; verify current legislation and forms before relying on requirements that may have changed.",
+        "Linked forms are separate date-sensitive documents; durable-relationship form is French and power-of-attorney form is dated 2023.",
+        "No blanket webpage or form reuse permission is inferred."
+      ],
+      "evidence": {
+        "official_source_url": "https://guichet.public.lu/en/citoyens/immigration/vivre/non-luxembourg/immigration/union-euro/travail/sejour-travail.html",
+        "verified_content": "Current official Guichet page reviewed; update date 2026-10-01 and in-update notice observed; linked forms and dates recorded.",
+        "source_record_note": "Old candidate route was stale; current replacement confirmed and checked 2026-10-29.",
+        "retrieval_status": "official_reference_rechecked_and_source_note_promoted"
+      },
+      "local_copy_accepted": false,
+      "local_copy_disposition": "promoted_independent_source_reference_note_not_verbatim_source_copy",
       "archived_candidate_record": {
         "archive_path": "candidates/luxembourg_promotion_20261025/Luxembourg/candidate-manifest.json",
         "id": "lu-11",
         "manifest_sha256": "493ad79375983bb78217e36ede350f0be319a35b7f604636d298c43912054a02"
       },
-      "local_copy_accepted": false,
-      "local_copy_disposition": "not_promoted_reference_or_candidate_only"
+      "source_document": {
+        "path": "documents/guidance/lu-11-eu-citizen-residence-over-90-days.md",
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      }
     },
+    {
+      "source_id": "lu-19",
+      "title": "Short-stay visa entry guidance",
+      "url": "https://guichet.public.lu/en/citoyens/immigration/vivre/non-luxembourg/autres/entree-visa.html",
+      "publisher": "guichet.public.lu",
+      "language": "en",
+      "checked_on": "2026-10-29",
+      "version_or_scope": "Current English page last updated 2026-10-01; linked Schengen visa application form last updated 2023-10-18. Previous candidate route is stale.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official administrative overview for third-country nationals subject to Schengen visa requirements, including airport-transit and short-stay procedures, within the displayed scope and date; verify variable requirements against current EU and official country-list sources.",
+      "reviewed_content": "Current page reviewed for visa categories, visa jurisdiction, application timing and supporting documents, fees as displayed, application processing, extension and refusal routes, paid-activity/work-permit distinctions and linked form.",
+      "limitations": [
+        "Administrative guidance only; the Visa Code, current nationality list and other controlling law must be checked for legal requirements.",
+        "Fees, exemptions, mission representation, forms, deadlines and appeal routes are date-sensitive; linked application form dates from 2023.",
+        "A visa does not guarantee border entry or independently authorize paid work.",
+        "Keep separate from EU-family facilitated short-stay rules and residence over 90 days.",
+        "This accepts the external reference and independent note only; no webpage/form reuse permission is inferred."
+      ],
+      "evidence": {
+        "official_source_url": "https://guichet.public.lu/en/citoyens/immigration/vivre/non-luxembourg/autres/entree-visa.html",
+        "verified_content": "Current Guichet page last updated 2026-10-01 and linked Schengen visa application form date 2023-10-18 were reviewed.",
+        "source_record_note": "Replacement for the stale prior candidate route confirmed 2026-10-29.",
+        "retrieval_status": "official_reference_rechecked_and_source_note_promoted"
+      },
+      "local_copy_accepted": false,
+      "local_copy_disposition": "promoted_independent_source_reference_note_not_verbatim_source_copy",
+      "archived_candidate_record": {
+        "archive_path": "candidates/luxembourg_promotion_20261025/Luxembourg/candidate-manifest.json",
+        "id": "lu-19",
+        "manifest_sha256": "493ad79375983bb78217e36ede350f0be319a35b7f604636d298c43912054a02"
+      },
+      "source_document": {
+        "path": "documents/guidance/lu-19-short-stay-entry-visa.md",
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      }
+    },
+    {
+      "source_id": "lu-50",
+      "title": "Council PRADO LUX-HO-11001: Luxembourg family-member residence document",
+      "url": "https://www.consilium.europa.eu/prado/en/LUX-HO-11001/index.html",
+      "publisher": "Council of the European Union, General Secretariat; record compiled from information supplied by Luxembourg document experts",
+      "language": "en",
+      "checked_on": "2026-10-29",
+      "version_or_scope": "PRADO document code LUX-HO-11001; record generated 2023-09-22, currently marked valid; first issued 2021-06-01.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official EU document-identification record for the stated Luxembourg residence document and its stated purpose, issue date, format and maximum validity. Not a source of eligibility rules or proof that an individual document is valid.",
+      "reviewed_content": "PRADO identifies the document as CARTE DE SEJOUR, issued by Luxembourg, for a third-country family member of an EU/EEA-EFTA citizen exercising free-movement rights; record states maximum validity five years and no extension.",
+      "limitations": [
+        "PRADO record generated 2023-09-22; current status says valid, but a newer document series/design may exist.",
+        "The record describes document identity and security features, not immigration eligibility or the authenticity/validity of any individual card.",
+        "Check current card forms and residence rules with Luxembourg authorities and applicable legislation.",
+        "This accepts the EU external reference and an independent summary only; no document images or source-page text are reproduced."
+      ],
+      "evidence": {
+        "official_source_url": "https://www.consilium.europa.eu/prado/en/LUX-HO-11001/index.html",
+        "verified_content": "Council PRADO page gives issuer, document code, stated purpose, validity status, first issue date, physical format and maximum validity; generation date shown 2023-09-22.",
+        "source_record_note": "Checked 2026-10-29; document design currency remains uncertain.",
+        "retrieval_status": "official_prado_record_reviewed_and_source_note_promoted"
+      },
+      "local_copy_accepted": false,
+      "local_copy_disposition": "promoted_independent_source_reference_note_not_verbatim_source_copy",
+      "source_document": {
+        "path": "documents/identity/lu-50-prado-family-member-residence-card.md",
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      },
+      "selection_record": {
+        "archive_path": "candidates/source-promotion-targets-150-non-malta-2026-10-29/multi-jurisdiction/source-promotion-targets-150-non-malta-2026-10-29/candidate-manifest.json",
+        "sequence": 103
+      }
+    },
+    {
+      "source_id": "lu-51",
+      "title": "Council PRADO LUX-HO-12001: Luxembourg family-member permanent residence document",
+      "url": "https://www.consilium.europa.eu/prado/en/LUX-HO-12001/index.html",
+      "publisher": "Council of the European Union, General Secretariat; record compiled from information supplied by Luxembourg document experts",
+      "language": "en",
+      "checked_on": "2026-10-29",
+      "version_or_scope": "PRADO document code LUX-HO-12001; generated 2023-09-22; currently marked valid; first issued 2021-06-01.",
+      "decision": "accepted_with_narrow_external_scope",
+      "acceptance_scope": "Official EU document-identification record for the stated Luxembourg residence document and its displayed metadata only. The record contains an unresolved category inconsistency; do not treat it as determining the holder's legal status.",
+      "reviewed_content": "PRADO title is CARTE DE SEJOUR PERMANENT; it describes a third-country family-member residence document and separately states the document certifies permanent residence for a Union citizen under Directive 2004/38/EC. Maximum validity is ten years, with no extension.",
+      "limitations": [
+        "The page's family-member description conflicts with its separate Union-citizen permanent-residence statement; source-level ambiguity is preserved, not resolved.",
+        "PRADO record generated 2023-09-22; current valid flag does not prove no newer series/design exists.",
+        "The entry describes a document record, not residence eligibility or validation of an individual's card.",
+        "Check the document category and applicable law with Luxembourg authorities before relying on it.",
+        "This accepts the EU external reference and an independent summary only; no document images or source-page text are reproduced."
+      ],
+      "evidence": {
+        "official_source_url": "https://www.consilium.europa.eu/prado/en/LUX-HO-12001/index.html",
+        "verified_content": "Council PRADO page reviewed for issuer, document code/title, stated purpose, validity status, first issue date, 10-year maximum validity, and its two differing category descriptions; generated 2023-09-22.",
+        "source_record_note": "Checked 2026-10-29; category ambiguity and design currency remain unresolved.",
+        "retrieval_status": "official_prado_record_reviewed_and_source_note_promoted"
+      },
+      "local_copy_accepted": false,
+      "local_copy_disposition": "promoted_independent_source_reference_note_not_verbatim_source_copy",
+      "source_document": {
+        "path": "documents/identity/lu-51-prado-permanent-residence-card.md",
+        "kind": "independent_source_reference_note",
+        "reproduces_source_text": false
+      },
+      "selection_record": {
+        "archive_path": "candidates/source-promotion-targets-150-non-malta-2026-10-29/multi-jurisdiction/source-promotion-targets-150-non-malta-2026-10-29/candidate-manifest.json",
+        "sequence": 104
+      }
+    }
+  ],
+  "pending_references": [
     {
       "source_id": "lu-46",
       "title": "Law of 19 June 2013 on identification and the national register of natural persons",
@@ -1786,24 +1917,6 @@
     }
   ],
   "not_relied_upon_references": [
-    {
-      "source_id": "lu-19",
-      "title": "Short-stay visa entry guidance",
-      "url": "https://guichet.public.lu/en/citoyens/immigration/moins-3-mois/ressortissant-tiers/entree-visa.html",
-      "publisher": "guichet.public.lu",
-      "language": "en",
-      "checked_on": "2026-10-21",
-      "version_or_scope": "English page last updated 17 November 2025; French version shows a later update in 2026.",
-      "decision": "not_relied_upon",
-      "reason": "The old candidate URL returned 404 and no current replacement for this exact source purpose was verified. Do not rely on the stale route; use current official parent pages and the whole-site review offers.",
-      "archived_candidate_record": {
-        "archive_path": "candidates/luxembourg_promotion_20261025/Luxembourg/candidate-manifest.json",
-        "id": "lu-19",
-        "manifest_sha256": "493ad79375983bb78217e36ede350f0be319a35b7f604636d298c43912054a02"
-      },
-      "local_copy_accepted": false,
-      "local_copy_disposition": "not_promoted_reference_or_candidate_only"
-    },
     {
       "source_id": "lu-20",
       "title": "Short stay for third-country nationals",

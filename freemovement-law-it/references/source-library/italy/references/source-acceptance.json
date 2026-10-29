@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "review_date": "2026-10-24",
+  "review_date": "2026-10-29",
   "jurisdiction": "IT",
   "status": "partial",
   "publisher_assessment": {
@@ -68,7 +68,8 @@
     "distinct_source_records_after_deduplication": 44,
     "accepted_source_records": 35,
     "accepted_official_link_urls": 37,
-    "pending_source_records": 4
+    "pending_source_records": 4,
+    "maintained_source_notes": 2
   },
   "inventory_decisions": [
     {
@@ -361,10 +362,10 @@
       "url": "https://www.esteri.it/it/ministero/sportello_info/domandefrequenti/sezione_visti_entrare_in_italia/",
       "publisher": "Italian Ministry of Foreign Affairs and International Cooperation (MAECI)",
       "language": "it",
-      "checked_on": "2026-10-21",
-      "version": "Mutable FAQ with no stable version history exposed in the reviewed page.",
-      "acceptance_scope": "The live Italian MAECI FAQ on entering Italy and visas, including its displayed information about EU/EEA family members, checked 21 October 2026.",
-      "limitations": "The page has no dependable revision date. This is operational guidance only, not legislation or mission-specific instructions. Check the page again for live use.",
+      "checked_on": "2026-10-29",
+      "version": "Live English page reviewed 2026-10-29; no dependable revision date or stable version identifier displayed.",
+      "acceptance_scope": "The live MAECI Entry into Italy FAQ, within its published general visa and entry guidance, including its stated EU/EEA family-member visa document list, processing summaries and refusal-remedy descriptions.",
+      "limitations": "Mutable FAQ, not legislation; page exposes no reliable revision date. The maintained Markdown is a structured paraphrase of the reviewed English page, not a verbatim or complete transcript. Verify mission-specific instructions, current law, and sponsor/nationality route. Italian counterpart not independently reconciled in this review.",
       "candidate_records": [
         {
           "manifest": "candidates/italy-expanded-manifest-2026-10-18/IT/expanded/candidate-manifest.json",
@@ -376,9 +377,9 @@
         }
       ],
       "evidence": {
-        "official_source_url": "https://www.esteri.it/it/ministero/sportello_info/domandefrequenti/sezione_visti_entrare_in_italia/",
-        "verified_content": "Official MFA FAQ inspected; covers family members of EU/EEA citizens and cites Article 2 D.Lgs 30/2007.",
-        "source_record_note": "External-link acceptance only. Local Markdown/PDF captures and conversions remain unaccepted.",
+        "official_source_url": "https://www.esteri.it/en/ministero/sportello_info/domandefrequenti/sezione_visti_entrare_in_italia/",
+        "verified_content": "The live English page was opened and reviewed in full on 2026-10-29. Relevant content includes the EU/EEA family-member list, visa application timings and processing estimates, additional-document possibility, short-stay extension authority and refusal appeal summaries.",
+        "source_record_note": "External link acceptance retained; a maintained Markdown source note is accepted as a paraphrased representation. No open licence was identified; no verbatim page copy is retained.",
         "retrieval_status": "converted_review_candidate"
       },
       "decision": "accepted_with_narrow_external_scope",
@@ -388,7 +389,10 @@
           "language": "en",
           "role": "English alternative to the Italian live FAQ; checked 2026-10-21."
         }
-      ]
+      ],
+      "maintained_source_note_path": "documents/guidance/it-maeci-entry-and-visa-faq.md",
+      "maintained_source_note_checked_on": "2026-10-29",
+      "maintained_source_note_status": "accepted_paraphrased_source_note"
     },
     {
       "source_id": "monitor-it-18",
@@ -976,10 +980,10 @@
       "url": "https://www.esteri.it/it/servizi-opportunita/italiani-all-estero/stato-civile/riconoscimento-di-sentenze-straniere/",
       "publisher": "Italian Ministry of Foreign Affairs and International Cooperation (MAECI)",
       "language": "it",
-      "checked_on": "2026-10-21",
-      "version": "Live official page content checked through the standard web view on 2026-10-21; no reliable revision date displayed.",
-      "acceptance_scope": "The current MAECI page as a practical guide to registration/recognition of foreign civil judgments and its reference to Law 218/1995 and applicable EU rules.",
-      "limitations": "Direct HTTP retrieval returned the publisher security challenge; link acceptance is based on the human-reviewed official page, not a raw capture. The page is not law and does not cover every judgment type or competent authority.",
+      "checked_on": "2026-10-29",
+      "version": "Live Italian and English MAECI pages opened 2026-10-29; no reliable revision date displayed. The Italian page cites Regulation (EU) 2019/1111; the English page still cites Regulation (EC) 2201/2003.",
+      "acceptance_scope": "MAECI central guidance on general registration of foreign judgments and its document checklist, with an explicit warning that its two language versions disagree on the current EU divorce instrument.",
+      "limitations": "Mutable guidance, not law. English language page contains stale EU divorce instrument reference. The Italian page's Regulation 2019/1111 summary also requires application of the instrument's temporal provisions; adoption matters are routed separately. Verify current law and competent authority requirements.",
       "candidate_records": [
         {
           "manifest": "candidates/italy-priority-manifest-2026-10-24/IT/priority/candidate-manifest.json",
@@ -988,10 +992,13 @@
       ],
       "evidence": {
         "official_source_url": "https://www.esteri.it/it/servizi-opportunita/italiani-all-estero/stato-civile/riconoscimento-di-sentenze-straniere/",
-        "verified_content": "Live official page content checked through the standard web view on 2026-10-21; no reliable revision date displayed.",
-        "source_record_note": "Human-reviewed official external link only; no local copy or conversion accepted."
+        "verified_content": "Both official language pages opened and compared 2026-10-29. Italian page describes general requirements, transmission routes and documents and cites Regulation (EU) 2019/1111 with Annex II/VIII. English page retains Regulation (EC) 2201/2003/Article 22. EUR-Lex Regulation (EU) 2019/1111 Articles 100, 104 and 105 confirm temporal application and repeal.",
+        "source_record_note": "Maintained paraphrased Markdown note captures both language versions and discrepancy. No verbatim copy or open licence asserted."
       },
-      "decision": "accepted_with_narrow_external_scope"
+      "decision": "accepted_with_narrow_external_scope",
+      "maintained_source_note_path": "documents/guidance/it-maeci-foreign-judgment-recognition.md",
+      "maintained_source_note_checked_on": "2026-10-29",
+      "maintained_source_note_status": "accepted_paraphrased_source_note"
     }
   ],
   "pending_references": [

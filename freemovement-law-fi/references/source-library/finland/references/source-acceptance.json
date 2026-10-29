@@ -1,23 +1,25 @@
 {
   "schema_version": "1.0",
-  "review_date": "2026-10-24",
+  "review_date": "2026-10-29",
   "jurisdiction": "FI",
   "status": "partial",
   "publisher_assessment": {
     "publisher": "Finlex",
     "owner": "Ministry of Justice of Finland",
     "maintainer": "Legal Register Centre",
-    "decision": "Thirty-four official external references are accepted with item-specific scope limits, including current Finnish statutes, official agency guidance, discovery and service locators, court information and oversight material. Two Finnish current-law text conversions are accepted as dated local copies after source and replay checks. One obsolete Migri route is dispositioned as already represented by a current EU-family page and wrong-scope for EU free movement. Two official oversight sites remain under human review. No topic or whole-country completion is accepted.",
+    "decision": "Thirty-five official external references are accepted with item-specific scope limits, including current Finnish statutes, official agency guidance, discovery and service locators, court information and oversight material. Two Finnish current-law text conversions are accepted as dated local copies after source and replay checks. One obsolete Migri route is dispositioned as already represented by a current EU-family page and wrong-scope for EU free movement. Two official oversight sites remain under human review. No topic or whole-country completion is accepted.",
     "basis": "The Finlex site identifies its government ownership and maintenance, labels consolidated laws as current, and exposes versioned ELI identifiers. Direct page links provide a usable government-published text without requiring API registration, a local conversion pipeline, or a reconstruction of Gazette fragments.",
     "limitation": "External-reference acceptance is limited to the listed page identities and item scopes; it does not certify every statement on dynamic guidance pages or establish topic coverage. Several Migri and DVV pages were confirmed through official-site search results or official links after the research viewer returned 403. The Parliamentary Ombudsman English brochure was identified on its official domain, but the site root was not accessible. The two accepted local Finnish copies are dated captures and were not independently compared clause by clause with publisher pages."
   },
   "counts": {
     "candidate_records": 37,
-    "accepted_external_references": 34,
-    "accepted_local_copies": 2,
+    "accepted_external_references": 35,
+    "accepted_local_copies": 4,
     "remaining_candidate_records": 2,
     "accepted_topics": 0,
-    "country_review_complete": false
+    "country_review_complete": false,
+    "maintained_locator_notes": 2,
+    "maintained_markdown_records": 5
   },
   "accepted_references": [
     {
@@ -246,14 +248,18 @@
       "translation_completed": "2023-12-20",
       "amendment_cutoff": "389/2023",
       "checked_at": "2026-10-24",
-      "acceptance_scope": "External Finlex translation-history page accepted as a language aid for navigating the Aliens Act; not accepted as current English legal text or as a local copy.",
+      "acceptance_scope": "Accepted dated local English language-aid copy only; not current English legal text. Use the current Finnish consolidated text for legal wording.",
       "limitations": "Finlex labels translations unofficial; only Finnish and Swedish are legally binding. The page states the translation was completed 20 December 2023 and tracks amendments through 389/2023. Verify the accepted current Finnish/Swedish text for legal wording and later changes.",
       "language_versions": {
         "en": {
           "url": "https://www.finlex.fi/en/legislation/translations/2004/eng/301",
-          "status": "accepted external reference only; unofficial translation; amendments through 389/2023"
+          "status": "Accepted dated local language-aid copy; unofficial; amendments through 389/2023 only; not current English legal text."
         }
-      }
+      },
+      "local_path": "documents/legislation/fi-aliens-act-301-2004-english-translation.md",
+      "local_sha256": "70e06dca202dad0eb39c59840ad4a84191d7801e1821173be83f44dd7540383b",
+      "local_copy_checked_at": "2026-10-29",
+      "local_copy_status": "Accepted dated reflow of the complete 188-page Finlex translation PDF; 4,542 extracted lines, full Section 1–215 transition text; source marks it unofficial and binding only in Finnish and Swedish; translation completed 2023-12-20 and incorporates amendments through 389/2023. Current Finnish Aliens Act copy is separately accepted at consolidation date 2026-06-26. Finlex page-break markers and source attribution retained; clause-by-clause legal currentness is not claimed."
     },
     {
       "source_id": "fi-administrative-procedure-act-en",
@@ -264,14 +270,18 @@
       "translation_completed": "2019-01-07",
       "amendment_cutoff": "893/2015",
       "checked_at": "2026-10-24",
-      "acceptance_scope": "External Finlex translation-history page accepted as a language aid for the Administrative Procedure Act; not accepted as current English legal text or as a local copy.",
+      "acceptance_scope": "Accepted dated local English language-aid copy only; not current English legal text. Use the current Finnish consolidated text for legal wording.",
       "limitations": "Finlex labels translations unofficial; only Finnish and Swedish are legally binding. The page states the translation was completed 7 January 2019 and tracks amendments through 893/2015. Verify the current Finnish/Swedish text and any later amendments.",
       "language_versions": {
         "en": {
           "url": "https://finlex.fi/en/legislation/translations/2003/eng/434",
-          "status": "accepted external reference only; unofficial translation; amendments through 893/2015"
+          "status": "Accepted dated local language-aid copy; unofficial; amendments through 893/2015 only; not current English legal text."
         }
-      }
+      },
+      "local_path": "documents/legislation/fi-administrative-procedure-act-434-2003-english-translation.md",
+      "local_sha256": "c9387476dea547662fe0ac724bd80e5044bc9e4e0b1ee5fe63774637825d4c2d",
+      "local_copy_checked_at": "2026-10-29",
+      "local_copy_status": "Accepted dated reflow of the complete 34-page Finlex translation PDF; 804 extracted lines with page breaks preserved. Finlex marks the English version unofficial and legally binding only in Finnish and Swedish; it was completed 7 January 2019 and incorporates amendments through 893/2015. Current Finnish consolidated version is separately listed at 27 June 2025. Not current English legal wording."
     },
     {
       "source_id": "fi-administrative-judicial-act-en",
@@ -336,20 +346,22 @@
       "title": "Application for a municipality of residence in Finland",
       "url": "https://lomakkeet.dvv.fi/lomakkeet/6889/lomake.html?rinnakkaislomake=en",
       "language": "en",
-      "checked_at": "2026-10-24",
-      "acceptance_scope": "Official Digital and Population Data Services Agency (DVV) form locator.",
-      "limitations": "Accepted as a locator and page-identity reference only; the form requires a Finnish personal identity code and a planned stay over one year. Do not automate submission or store applicant personal data. Follow current DVV instructions.",
-      "verification_basis": "The live DVV form identifies its purpose, eligibility conditions and follow-up visit instructions."
+      "checked_at": "2026-10-29",
+      "acceptance_scope": "Official DVV dynamic form's complete rendered instruction and field schema, directly reviewed 2026-10-29. Maintained structured transcription: documents/forms/fi-dvv-municipality-form.md.",
+      "limitations": "The reviewed rendering exposes instructions and field schema but does not preserve raw HTML, client-side validation, selector choices, dynamic behavior, or exact layout. An earlier Monitor capture contained only a JavaScript fallback shell and remains unaccepted. This note is not a legal eligibility determination; do not automate submission or store personal data.",
+      "verification_basis": "Official rendered DVV form directly reviewed 2026-10-29; purpose, eligibility, follow-up visit rules, all field groups, address date rules, and contact/submission information were examined. A maintained Markdown transcription is at documents/forms/fi-dvv-municipality-form.md."
     },
     {
       "source_id": "fi-mfa-visa-guide",
       "title": "A visa to visit Finland",
       "url": "https://um.fi/visa-to%20visit-finland",
       "language": "en-fi-sv",
-      "checked_at": "2026-10-24",
+      "checked_at": "2026-10-29",
       "acceptance_scope": "Ministry for Foreign Affairs guidance on visas, visa review and EU free-movement family visas.",
       "limitations": "Accepted as public administrative guidance, including the stated EU-free-movement family visa route. Fees, deadlines, mission channels and national instructions can change; check the live page and the individual decision.",
-      "verification_basis": "The live MFA page distinguishes mobile EU citizen family-member cases, describes no-fee visa applications for covered family members, and states review and appeal routes."
+      "verification_basis": "The live English MFA page was reopened on 29 October 2026 and its identity and official route confirmed. The MFA's About the sites page confirms UM.fi is maintained by the Ministry and copyright in page text/images belongs to the Ministry, missions, or named providers. No page revision date was displayed. A maintained locator was added without retaining page content.",
+      "maintained_markdown_path": "documents/guidance/fi-mfa-visa-guide.md",
+      "local_copy_status": "No page-text copy accepted. Independently authored maintained locator at documents/guidance/fi-mfa-visa-guide.md; no source text, screenshot, HTML, or response is retained."
     },
     {
       "source_id": "fi-mfa-visa-faq",
@@ -366,10 +378,10 @@
       "title": "Appealing against the decision of an authority",
       "url": "https://www.oikeus.fi/en/themes/appealing-against-the-decision-of-an-authority/",
       "language": "en-fi",
-      "checked_at": "2026-10-24",
-      "acceptance_scope": "Oikeus.fi general public guidance on administrative rectification and appeal routes.",
-      "limitations": "General procedural guidance only; use the decision-specific appeal instructions, deadlines and competent authority for an individual matter.",
-      "verification_basis": "Live Ministry of Justice public guidance page describes administrative appeal and time-limit information."
+      "checked_at": "2026-10-29",
+      "acceptance_scope": "Oikeus.fi general public guidance on administrative rectification, court appeals, enforcement, further review and selected authority-specific routes; complete substantive English page directly reviewed 2026-10-29 and summarized at documents/guidance/fi-oikeus-appeal-guidance.md.",
+      "limitations": "General procedural guidance only; use the decision-specific appeal instructions, deadlines, competent authority and applicable statute. The traffic-fine time limits are examples for those decision types only.",
+      "verification_basis": "Direct review of official page content from title through authority-specific appeal channel links. Page identifies Ministry of Justice responsibility for maintaining Oikeus.fi."
     },
     {
       "source_id": "fi-oikeus-public-access",
@@ -436,22 +448,22 @@
       "title": "Registration of the right of residence of a citizen of the European Union",
       "url": "https://migri.fi/en/registration-of-right-of-residence",
       "language": "en-fi",
-      "page_status": "Current Migri guidance page identified through official-site search; direct viewer request had returned 403",
-      "checked_at": "2026-10-24",
-      "acceptance_scope": "External link to Migri guidance for registration of EU, Liechtenstein and Swiss citizens staying in Finland over three months.",
-      "limitations": "Accepted as the official page locator and stated process only. Fees and processing estimates change; verify the live page and applicable law. Nordic registration rules differ. No local copy or legal topic is accepted.",
-      "verification_basis": "Official-domain search result identifies the exact current page, title and scope; current fee and processing pages link this route."
+      "page_status": "Current Migri guidance page identified by exact title and URL through official-domain indexed text; direct research-viewer request returned HTTP 403",
+      "checked_at": "2026-10-29",
+      "acceptance_scope": "External official reference for EU, Liechtenstein and Swiss citizens registering a right of residence after over three months, including published eligibility, attachment categories, application steps, Nordic distinction, Finnish-citizen cross-border route and appeal information.",
+      "limitations": "A maintained summary of the official indexed rendering is accepted; direct page body was not retrievable and the indexed content was crawled about three weeks before this review. Fees and processing times are dynamic and must be checked live. Nordic registration is distinct. This guidance does not establish legal topic coverage or replace the Aliens Act and Directive 2004/38.",
+      "verification_basis": "Official-domain indexed result at the exact URL exposes the page title and substantive requirements, document lists, application steps and appeal section. It was crawled about three weeks before review; direct open returned 403."
     },
     {
-      "source_id": "fi-migri-eu-family-guidance",
+      "source_id": "fi-migri-eu-family-finder-step",
       "title": "I am a family member of an EU citizen",
       "url": "https://migri.fi/en/i-am-a-family-member-of-an-eu-citizen",
       "language": "en-fi",
-      "page_status": "Current Migri family-member guidance page identified through official-site search",
-      "checked_at": "2026-10-24",
-      "acceptance_scope": "External link for the family-member residence-card route and application finder for EU, EEA and Swiss citizen family members.",
-      "limitations": "Public agency guidance only; family-member definitions and Finnish citizen cross-border cases must be checked against the Directive and applicable Finnish law. Do not use the superseded candidate URL for an EU free-movement claim. No local copy or topic is accepted.",
-      "verification_basis": "Official-domain result identifies the page, residence-card application route and family-member categories."
+      "page_status": "Current Migri family-member application-finder step identified through official-site search; direct page request returned HTTP 403",
+      "checked_at": "2026-10-29",
+      "acceptance_scope": "External link for the family-member application-finder step under Migri's EU free-movement routes.",
+      "limitations": "This is a dynamic application-finder step, not the broad landing page or detailed residence-card requirements. Verify the live route and applicable law. No local text copy or legal topic is accepted.",
+      "verification_basis": "Official indexed page identifies its title, residence-card route and family-member categories; the current EU/family landing page links to this step."
     },
     {
       "source_id": "fi-migri-family-residence-card",
@@ -491,11 +503,13 @@
       "title": "Foreigner registration at the Digital and Population Data Services Agency",
       "url": "https://dvv.fi/en/foreigner-registration",
       "language": "en-fi-sv",
-      "page_status": "Official DVV English guidance locator linked from its current municipality-of-residence form; direct page request returned 403",
-      "checked_at": "2026-10-24",
-      "acceptance_scope": "External official locator for DVV foreigner-registration instructions referred to by the DVV form when a person does not yet have a Finnish personal identity code.",
-      "limitations": "Accepted as a linked locator only; the guidance page itself was not readable in the research viewer. DVV population-registration procedures remain distinct from Migri EU residence-right registration. No local copy or topic is accepted.",
-      "verification_basis": "The official DVV municipality form links to this exact English guidance URL for users without a Finnish personal identity code."
+      "page_status": "Exact English DVV guidance route was still inaccessible (HTTP 403). The official municipality and identity-code forms link to this route and expose the scoped process summarized in the maintained note.",
+      "checked_at": "2026-10-29",
+      "acceptance_scope": "Accept the exact DVV guidance locator as the official route for foreigner registration only, and the linked current DVV forms for the exposed identity-code and municipality-of-residence process summarized in the maintained note. The inaccessible page body is not treated as reviewed or accepted.",
+      "limitations": "Direct page body returned 403 and browser retrieval could not complete; current official DVV forms link to the guidance route and were reviewed for the limited process summary. No full-page content, client-side behavior or complete eligibility rules are accepted. DVV population registration remains distinct from Migri residence permits and EU right-of-residence registration. The note does not copy the forms.",
+      "verification_basis": "Current official English municipality-of-residence and identity-code forms on lomakkeet.dvv.fi link to the exact foreigner-registration guidance route and specify its applicability: applicants without a Finnish personal identity code must use DVV's in-person route; the general municipality form requires an identity code and intended stay over one year.",
+      "maintained_source_note_path": "documents/guidance/fi-dvv-foreign-registration.md",
+      "maintained_source_note_checked_at": "2026-10-29"
     },
     {
       "source_id": "fi-finlandvisa-portal",
@@ -518,6 +532,17 @@
       "acceptance_scope": "External reference for the Ombudsman’s complaint method, submission channels and general complaint information only.",
       "limitations": "The direct site root could not be fetched. The official brochure search result states complaint submission details; check the current official site and complaint form before filing. This is an oversight complaint, not an appeal, and does not establish topic coverage. No local copy is accepted.",
       "verification_basis": "Official-site search result identifies the Ombudsman complaint brochure, written/form filing routes, language access and contact process."
+    },
+    {
+      "source_id": "fi-migri-eu-family-guidance",
+      "title": "I am an EU citizen or a family member",
+      "url": "https://migri.fi/en/i-am-an-eu-citizen-or-a-family-member",
+      "language": "en",
+      "page_status": "Current Migri English landing page; official-domain indexed text reviewed 2026-10-29; direct research-viewer request returned 403",
+      "checked_at": "2026-10-29",
+      "acceptance_scope": "Landing-page identity, stated residence-permit exemption for covered EEA/Swiss-related nationalities, registration threshold, and links to three application-finder routes.",
+      "limitations": "Accepted only as a scoped maintained summary of the indexed landing page. It does not establish detailed family-member definitions, documents, Finnish-citizen cross-border cases, fees, processing times, or legal topic coverage. Recheck dynamic instructions live.",
+      "verification_basis": "Official-domain indexed page matches exact title and URL, states the three-month registration requirement, links the EU citizen, EU family member and permanent-residence finder steps, and describes the finder and Enter Finland route."
     }
   ],
   "related_instruments": [
@@ -610,6 +635,43 @@
       "name": "N-Lex",
       "url": "https://n-lex.europa.eu/n-lex/",
       "note": "Discovery directory for national legal databases; verify sources at the responsible first-party publisher."
+    }
+  ],
+  "maintained_markdown_records": [
+    {
+      "source_id": "fi-dvv-municipality-form",
+      "path": "documents/forms/fi-dvv-municipality-form.md",
+      "status": "accepted_maintained_form_transcription",
+      "checked_at": "2026-10-29",
+      "source_representation": "complete rendered instruction and field schema; dynamic behavior/raw HTML not retained"
+    },
+    {
+      "source_id": "fi-oikeus-appeal-guidance",
+      "path": "documents/guidance/fi-oikeus-appeal-guidance.md",
+      "status": "accepted_maintained_source_summary",
+      "checked_at": "2026-10-29",
+      "source_representation": "complete substantive page summarized; raw HTML and verbatim conversion not retained"
+    },
+    {
+      "source_id": "fi-migri-eu-family-guidance",
+      "path": "documents/guidance/fi-migri-eu-family-guidance.md",
+      "status": "accepted_maintained_source_summary",
+      "checked_at": "2026-10-29",
+      "source_representation": "Scoped summary of current official indexed landing-page text; direct research-viewer request returned 403; not a verbatim copy"
+    },
+    {
+      "source_id": "fi-migri-eu-registration",
+      "path": "documents/guidance/fi-migri-eu-registration-guidance.md",
+      "status": "accepted_maintained_source_summary",
+      "checked_at": "2026-10-29",
+      "source_representation": "Detailed summary of the official indexed page's eligibility, evidence categories and application/appeal flow; direct research-viewer request returned 403; not a verbatim copy"
+    },
+    {
+      "source_id": "fi-dvv-foreign-registration",
+      "path": "documents/guidance/fi-dvv-foreign-registration.md",
+      "status": "accepted_maintained_source_summary_with_locator_limits",
+      "checked_at": "2026-10-29",
+      "source_representation": "Independent summary of the exact official DVV locator and current linked identity-code and municipality forms; parent pages returned 403 and are explicitly not treated as fully reviewed."
     }
   ]
 }

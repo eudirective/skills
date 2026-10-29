@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0.0",
   "jurisdiction": "LT",
-  "review_date": "2026-10-21",
-  "accepted_external_reference_count": 37,
-  "pending_external_reference_count": 11,
+  "review_date": "2026-10-29",
+  "accepted_external_reference_count": 42,
+  "pending_external_reference_count": 6,
   "not_relied_upon_reference_count": 0,
-  "accepted_local_copy_count": 13,
+  "accepted_local_copy_count": 20,
   "accepted_topic_count": 0,
   "country_review_complete": false,
   "policy": "Official links may be accepted within their checked identity, status, version, language, date and subject. Selected local TAR dataset texts are accepted only as dated source snapshots with attribution under the dataset CC BY 4.0 licence; they do not establish currentness. Prefer the government-published e-TAR consolidated edition for current-law questions. External-link acceptance, local-copy acceptance, topic coverage and country review completion are separate decisions.",
@@ -193,21 +193,25 @@
       "url": "https://www.e-tar.lt/portal/lt/legalAct/e1cacab099a811e9ae2e9d61b1f977b3/asr",
       "publisher": "Ministry of the Interior / Register of Legal Acts",
       "language": "lt",
-      "checked_on": "2026-10-25",
-      "version_or_scope": "Order 1V-594 covers both temporary and permanent family residence cards; e-TAR shows its current consolidated version effective from 2023-04-05 with no end date as checked 2026-10-25.",
-      "acceptance_scope": "Current e-TAR consolidated record for Order 1V-594, effective 2023-04-05 onward at the time checked; covers temporary and permanent family residence cards.",
+      "checked_on": "2026-10-29",
+      "version_or_scope": "Official e-TAR marks Order 1V-594 in force and shows the current consolidated edition effective 2023-04-05 onward, with no end date, as checked 2026-10-29.",
+      "acceptance_scope": "Current official e-TAR record and its displayed consolidation metadata for Order 1V-594, which the title identifies as covering temporary and permanent residence cards for a family member of a Union citizen.",
       "limitations": [
-        "Accepted as the current official order link within the version and subject scope recorded here; no current full local copy is retained.",
+        "Accepted as the official order link and a maintained authored version/scope summary; the complete legal text has not been copied or accepted locally.",
+        "The e-TAR page and edition PDF were not directly retrieved in this review client; version metadata and front matter were confirmed from official indexed e-TAR records.",
         "The former temporary and permanent procedure orders 1V-290 and 1V-369 are separate historical sources, each repealed effective 2019-07-01.",
-        "Verify the Aliens Law, current official application forms, and any later order amendments for the decision date. No topic adequacy or country completion is implied."
+        "Verify the Aliens Law, current official application forms, and any later order amendments for the decision date. The record does not establish route equivalence or country/topic completeness."
       ],
       "evidence": {
         "official_source_url": "https://www.e-tar.lt/portal/lt/legalAct/e1cacab099a811e9ae2e9d61b1f977b3/asr",
-        "verified_content": "Official e-TAR identifies Order 1V-594 and shows its current consolidated version from 2023-04-05; the title covers temporary or permanent family residence cards.",
-        "source_record_note": "Current combined card procedure; it superseded the separate 1V-290 and 1V-369 procedures from 2019-07-01.",
-        "retrieval_status": "current_official_external_reference_only"
+        "verified_content": "Official e-TAR identifies Order 1V-594 as in force, current consolidated version effective 2023-04-05 onward, original TAR publication 2019-06-28 No. 2019-10583, and chronology: amended by 1V-630 on 2020-06-23, 1V-702 on 2022-11-18 and 1V-192 on 2023-04-04. Official consolidated PDF search output confirms title, issuer, date and Directive 2004/38/EC reference.",
+        "source_record_note": "Current combined temporary/permanent card procedure; it superseded the separate 1V-290 and 1V-369 procedures from 2019-07-01. Edition status was refreshed 2026-10-29.",
+        "retrieval_status": "official_indexed_record_and_pdf_metadata_reviewed_with_maintained_scoped_summary",
+        "local_document_path": "documents/legislation/lt-order-1v-594-eu-family-card-procedure-2023-04-05.md",
+        "local_document_blob_sha": "4f9bb3cede320801e8e6f4a278f6fec317d60d75",
+        "local_document_kind": "authored_maintained_summary"
       },
-      "local_copy_accepted": false,
+      "local_copy_accepted": true,
       "decision": "accepted_with_narrow_external_scope"
     },
     {
@@ -314,21 +318,25 @@
       "url": "https://keliauk.urm.lt/en/entry-to-lithuania/visas/list-of-countries-whose-citizens-do-not-require-visas-to-enter-the-republic-of-lithuania",
       "publisher": "Ministry of Foreign Affairs of Lithuania (URM / Keliauk)",
       "language": "en",
-      "checked_on": "2026-10-21",
-      "version_or_scope": "Page crawled 2026-10-18; a page-level update date was not recorded.",
-      "acceptance_scope": "Page crawled 2026-10-18; a page-level update date was not recorded.",
+      "checked_on": "2026-10-29",
+      "version_or_scope": "Official English dynamic nationality lookup. The page says created 2015-09-09 and renewed 2026-09-09 13:34.",
+      "acceptance_scope": "MFA nationality-based lookup route and its visible selector/navigation only. No individual country result is accepted or cached by this review.",
       "limitations": [
-        "This decision accepts the official external link only. It does not accept a saved conversion, establish legal-topic adequacy, or complete Lithuania’s source review.",
-        "Use only the instrument, page, language, and displayed version/date stated here. Check a later edition only when it may materially affect the provision or operational instruction being relied on."
+        "The dynamic country selector is official, but the text rendering does not expose a selected-country result. Query a nationality directly on the live page and record the result and date.",
+        "This summary does not state whether any nationality is visa-exempt or visa-required.",
+        "Visa requirement alone does not determine work/residence rights, permitted purpose or duration, border admission, or individual eligibility."
       ],
       "evidence": {
         "official_source_url": "https://keliauk.urm.lt/en/entry-to-lithuania/visas/list-of-countries-whose-citizens-do-not-require-visas-to-enter-the-republic-of-lithuania",
-        "verified_content": "Official dynamic list opened from the MFA visa hub.",
-        "source_record_note": "Nationality-specific facts and exemptions change; retrieve only through the parent hub and preserve the dated page state.",
-        "retrieval_status": "retrieval_or_conversion_error"
+        "verified_content": "Live official MFA page opened 2026-10-29. It identifies the MFA/URM Keliauk consular-information site, a country selector and alphabetical nationality labels; it exposes linked visa types, authorities, application, fee, prior consultation, decision, provider, EU/EFTA-family, complaint, visa-holder and data-protection guidance. The page displays Created 2015-09-09 / Renewed 2026-09-09 13:34. The text renderer showed no selected-country result.",
+        "source_record_note": "Dynamic lookup route accepted; no nationality result is inferred from a selector item. Use live page for each dated query.",
+        "retrieval_status": "live_official_dynamic_lookup_reviewed; country_specific_result_not_rendered",
+        "local_document_path": "documents/guidance/lt-mfa-visa-nationality-lookup.md",
+        "local_document_blob_sha": "8266b916e455b4b57626f0759dadedf5353e2522",
+        "local_document_kind": "authored_maintained_lookup_route_note"
       },
-      "local_copy_accepted": false,
-      "decision": "accepted_with_narrow_external_scope"
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_dynamic_route_scope"
     },
     {
       "source_id": "lt-20",
@@ -336,21 +344,25 @@
       "url": "https://keliauk.urm.lt/en/entry-to-lithuania/visas/types-of-visa",
       "publisher": "Ministry of Foreign Affairs of Lithuania (URM / Keliauk)",
       "language": "en",
-      "checked_on": "2026-10-21",
-      "version_or_scope": "Renewed 2025-07-24.",
-      "acceptance_scope": "Renewed 2025-07-24.",
+      "checked_on": "2026-10-29",
+      "version_or_scope": "Official English MFA page; publisher displays Created 2015-09-09 / Renewed 2026-09-09 13:34.",
+      "acceptance_scope": "Official page identity, its A/C/D category descriptions, 90/180 and maximum 12-month durations, and broad national-visa decision/submission route as displayed on 2026-10-29.",
       "limitations": [
-        "This decision accepts the official external link only. It does not accept a saved conversion, establish legal-topic adequacy, or complete Lithuania’s source review.",
-        "Use only the instrument, page, language, and displayed version/date stated here. Check a later edition only when it may materially affect the provision or operational instruction being relied on."
+        "The page gives only an overview of visa categories; it does not enumerate all national-visa grounds or complete filing conditions.",
+        "For national-visa applications from abroad, the live external-provider route, available locations and applicant restrictions may change. Consult current Migration Department instructions.",
+        "Do not conflate Schengen visas, national visas and residence permits."
       ],
       "evidence": {
         "official_source_url": "https://keliauk.urm.lt/en/entry-to-lithuania/visas/types-of-visa",
-        "verified_content": "Official MFA page inspected; distinguishes Schengen A/C visas from national D visas and links national applications to external-provider/Migration Department routes.",
-        "source_record_note": "Refresh from the visa hub; accompanying 2023 Migration Department news is a historical route explanation, not current law.",
-        "retrieval_status": "retrieval_or_conversion_error"
+        "verified_content": "Live official MFA page opened 2026-10-29; it displays renewal date 2026-09-09 at 13:34, defines airport-transit A and short-stay C visas, states the C 90-days-in-any-180 rule, gives a 12-month maximum for national D visas, identifies Migration Department decisions, links the online form and describes external-provider routing for applicants abroad. Cross-checked the undated 1 July sentence against the linked Migration Department 2023-06-14 announcement and the current services-for-persons-abroad page.",
+        "source_record_note": "Official overview accepted with dated scope. Current service-provider details are dynamic and are recorded in the maintained note as a dependency, not frozen as a list.",
+        "retrieval_status": "live_official_page_and_current_route_crosscheck_reviewed",
+        "local_document_path": "documents/guidance/lt-mfa-visa-types-national-route.md",
+        "local_document_blob_sha": "f7062e4266d82539f7e80d06686c139f67f298f5",
+        "local_document_kind": "authored_maintained_summary"
       },
-      "local_copy_accepted": false,
-      "decision": "accepted_with_narrow_external_scope"
+      "local_copy_accepted": true,
+      "decision": "accepted_with_dated_scope_and_dynamic_route_dependency"
     },
     {
       "source_id": "lt-21",
@@ -897,6 +909,145 @@
       },
       "local_copy_accepted": true,
       "decision": "accepted_with_historical_external_scope"
+    },
+    {
+      "source_id": "lt-12",
+      "title": "Certificate of the Right of Residence 2022 guidance",
+      "url": "https://migracija.lrv.lt/en/activities/identity-documents/certificate-of-the-right-of-residence/certificate-of-the-right-of-residence-2022/",
+      "publisher": "Migration Department under the Ministry of the Interior of the Republic of Lithuania",
+      "language": "en",
+      "checked_on": "2026-10-29",
+      "version_or_scope": "Official English page; publisher displays last updated 2025-10-09. Historical document-identification information about the certificate format announced from 2022-11-08.",
+      "acceptance_scope": "Dated document-identification guidance and the official page's linked temporary/permanent certificate specimen image references only.",
+      "limitations": [
+        "The page cites Regulation (EU) 2019/1157, which EUR-Lex records as invalidated in Case C-61/22 and no longer in force from 2025-07-09, replaced by Regulation (EU) 2025/1208 applying from 2025-07-10.",
+        "The page describes the permanent-residence certificate as granting a temporary right; this apparent publisher wording error is preserved and flagged in the maintained summary.",
+        "The page does not establish current eligibility, procedure, fees, validity, or the equivalence of EU and EFTA rights.",
+        "No source images are reproduced in the local Markdown file; image contents were not independently assessed."
+      ],
+      "evidence": {
+        "official_source_url": "https://migracija.lrv.lt/en/activities/identity-documents/certificate-of-the-right-of-residence/certificate-of-the-right-of-residence-2022/",
+        "verified_content": "Live official page identifies the Migration Department, the certificate categories, biometric-document description, issue start date 2022-11-08, four linked specimen image references, an additional Migris link, and publisher update date 2025-10-09. Its permanent-certificate text says 'temporarily reside', which is flagged rather than corrected.",
+        "source_record_note": "Accepted only as dated official document-identification guidance. The page's Regulation (EU) 2019/1157 citation is stale; the maintained note links the EUR-Lex status record, Case C-61/22, and successor Regulation (EU) 2025/1208.",
+        "retrieval_status": "live_official_page_reviewed_with_maintained_scoped_summary",
+        "local_document_path": "documents/guidance/lt-certificate-right-of-residence-2022.md",
+        "local_document_blob_sha": "1d4587215fbea6725988b3f242286b95aa6f9a0d",
+        "local_document_kind": "authored_maintained_summary"
+      },
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_historical_scope"
+    },
+    {
+      "source_id": "lt-13",
+      "title": "Residence-permit and family-card identity-document guide",
+      "url": "https://migracija.lrv.lt/en/activities/identity-documents/residence-permits-documents/residence-permits-since-2020/",
+      "publisher": "Migration Department under the Ministry of the Interior of the Republic of Lithuania",
+      "language": "en",
+      "checked_on": "2026-10-29",
+      "version_or_scope": "Official English page last updated 2025-10-09. Dated document-identification information for formats introduced from 2020-09-17; page links a two-page bilingual 2020 leaflet.",
+      "acceptance_scope": "Historical identification of the document groups, dated specimen links, and contents of the linked 2020 leaflet only.",
+      "limitations": [
+        "The page cites Regulation (EU) 2019/1157 for the EU-family card naming rule; EUR-Lex records it as no longer in force from 2025-07-09, declared invalid in C-61/22, and replaced by Regulation (EU) 2025/1208 applying from 2025-07-10.",
+        "The page and leaflet are dated; specimen links do not establish present card design or validity.",
+        "The page does not establish current eligibility, entitlement, issuance procedure, fees, processing time, remedies, or UK Withdrawal Agreement status.",
+        "EU/EEA/EFTA, Swiss and third-country routes are distinct. Regulation (EC) No 1030/2002 excludes EU free-movement family members from its scope.",
+        "The summary does not reproduce or embed the linked leaflet or specimen images; images were not visually assessed."
+      ],
+      "evidence": {
+        "official_source_url": "https://migracija.lrv.lt/en/activities/identity-documents/residence-permits-documents/residence-permits-since-2020/",
+        "verified_content": "The live official page identifies the Migration Department, says the Identity Documents Personalisation Centre began issuing a new permit form on 2020-09-17, describes temporary permits, EU-family residence cards, long-term resident and permanent residence documents, gives specimen image links, and displays last updated 2025-10-09. Its linked two-page 2020 bilingual leaflet was opened and checked for publisher/date, document categories and security-description sections.",
+        "source_record_note": "Accepted as dated document-identification evidence only. Stale reference to Regulation (EU) 2019/1157 and current legal status are distinguished in the maintained summary.",
+        "retrieval_status": "live_official_page_and_linked_leaflet_reviewed_with_maintained_scoped_summary",
+        "local_document_path": "documents/guidance/lt-residence-permits-since-2020.md",
+        "local_document_blob_sha": "0a81c0697684702ae0a1a5c29c4c74dd2005802e",
+        "local_document_kind": "authored_maintained_summary",
+        "linked_attachment": "https://migracija.lrv.lt/public/canonical/1736247902/1159/LG%202020%20Lankstinukas.pdf",
+        "linked_attachment_review": "Two pages; © Identity Documents Personalisation Centre, 2020; bilingual Lithuanian/English descriptions of the temporary residence permit, long-term resident permit, EU-citizen family-member card and 2020 card security features."
+      },
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_historical_scope"
+    },
+    {
+      "source_id": "lt-14",
+      "title": "Official bilingual application form for a family member's temporary or permanent residence card",
+      "url": "https://migracija.lrv.lt/uploads/migracija/documents/files/Paslaugos/Pra%C5%A1ym%C5%B3%20formos/LLG%20ir%20LNG/Pra%C5%A1ymas%20i%C5%A1duoti%20ar%20pakeisti%20S%C4%85jungos%20pilie%C4%8Dio%20šeimos%20nario%20leidimo%20laikinai%20ar%20nuolat%20gyventi%20šalyje%20kortelę%20pdf.pdf",
+      "publisher": "Migration Department under the Ministry of the Interior of the Republic of Lithuania",
+      "language": "Lithuanian and English",
+      "checked_on": "2026-10-29",
+      "version_or_scope": "Six-page PDF identifying itself as Annex 9 to Migration Department Director Order No. 3K-92 of 2019-06-28. Its current service-specific status is unconfirmed.",
+      "acceptance_scope": "Official dated form-version identity and its fields/options only; not accepted as a current filing form.",
+      "limitations": [
+        "The combined form is dated 2019 and has not been confirmed as the current attachment for either separate temporary- or permanent-card service.",
+        "The English title says temporary even though the Lithuanian title and body cover temporary and permanent cards; some English wording is awkward or ambiguous.",
+        "A separate three-page Lithuanian-language permanent-card application form was opened on the official Ministry domain on 2026-10-29; that different form does not establish which temporary-card form is currently required.",
+        "No current legal eligibility, complete evidence list, fee, submission channel, processing time or remedy is established by this archived form."
+      ],
+      "evidence": {
+        "official_source_url": "https://migracija.lrv.lt/uploads/migracija/documents/files/Paslaugos/Pra%C5%A1ym%C5%B3%20formos/LLG%20ir%20LNG/Pra%C5%A1ymas%20i%C5%Ašduoti%20ar%20pakeisti%20Sąjungos%20piliečio%20šeimos%20nario%20leidimo%20laikinai%20ar%20nuolat%20gyventi%20šalyje%20kortelę%20pdf.pdf",
+        "verified_content": "The live official-domain PDF was opened as a six-page document. Its first page identifies Annex 9 to Director Order No. 3K-92 dated 2019-06-28. All six pages were reviewed for bilingual headings, applicant categories, grounds/period options, personal and travel-document fields, declarations, representative submission and official decision sections. The current official service list separates temporary- and permanent-card services; a separate three-page permanent-card form was opened on the same official domain.",
+        "source_record_note": "Accepted as a dated official form version and maintained summary. The combined PDF's current operational use remains unconfirmed and is expressly not accepted.",
+        "retrieval_status": "live_official_pdf_reviewed; current_service_specific_form_unconfirmed",
+        "local_document_path": "documents/forms/lt-eu-family-card-application-form-2019-annex-9-summary.md",
+        "local_document_blob_sha": "473c10fc63732b1d0e833df4a734c80f6c1e2b36",
+        "local_document_kind": "authored_maintained_summary",
+        "pdf_page_count": 6,
+        "authority_on_pdf": "Migration Department Director Order No. 3K-92 of 2019-06-28, Annex 9"
+      },
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_historical_scope"
+    },
+    {
+      "source_id": "lt-15",
+      "title": "Migration Department residence-document state fees",
+      "url": "https://migracija.lrv.lt/en/services/state-fees-for-services/residence-permits/",
+      "publisher": "Migration Department under the Ministry of the Interior of the Republic of Lithuania",
+      "language": "en",
+      "checked_on": "2026-10-29",
+      "version_or_scope": "Dynamic English fee page; publisher displays last updated 2026-10-13. Values and categories are recorded in a dated maintained summary.",
+      "acceptance_scope": "Official page identity, displayed fee categories and amounts, stated code 5740/payment-recipient route, and fee-exemption headings as checked 2026-10-29.",
+      "limitations": [
+        "Fees, exemption rules and payment instructions may change; re-open the page and service-specific instructions before payment.",
+        "The page's exemption lists are under temporary and permanent residence-permit sections; it does not expressly provide a separate EU-family-card exemption list.",
+        "This page does not establish eligibility, filing requirements, processing times or appeal rights."
+      ],
+      "evidence": {
+        "official_source_url": "https://migracija.lrv.lt/en/services/state-fees-for-services/residence-permits/",
+        "verified_content": "Live page identifies the Migration Department, displays last updated 2026-10-13, lists fee code 5740 and payment to the State Tax Inspectorate, and provides separate fee rows for temporary permits, permanent permits, EU-family residence cards, Union-citizen certificates and employer/job-function changes. Exemption headings and current amounts were reviewed.",
+        "source_record_note": "Rates were recorded as displayed on 2026-10-29; the page is dynamic and the captured Markdown is an authored summary, not a fee authority or payment instruction.",
+        "retrieval_status": "live_official_dynamic_page_reviewed_with_dated_maintained_summary",
+        "local_document_path": "documents/guidance/lt-residence-document-state-fees.md",
+        "local_document_blob_sha": "7714c66fb115ad09dcf386de18ea902f4be763fc",
+        "local_document_kind": "authored_maintained_summary"
+      },
+      "local_copy_accepted": true,
+      "decision": "accepted_with_dated_dynamic_scope"
+    },
+    {
+      "source_id": "lt-11",
+      "title": "Migration Department free movement in the EU guidance",
+      "url": "https://migracija.lrv.lt/en/activities/free-movement-of-persons-in-the-eu/",
+      "publisher": "Migration Department under the Ministry of the Interior of the Republic of Lithuania",
+      "language": "en",
+      "checked_on": "2026-10-29",
+      "version_or_scope": "English page last updated 2023-10-09; official page identity and short institutional description rechecked on 2026-10-29.",
+      "acceptance_scope": "Dated high-level description of the Migration Department's stated role in issuing and withdrawing temporary and permanent EU-citizen/family-member residence documents.",
+      "limitations": [
+        "This is a dated institutional overview, not current applicant procedure, eligibility guidance, checklist, fee schedule, processing-time statement, or remedy.",
+        "The publisher's displayed update date is 2023-10-09. Current rules and practice must be checked against the live Lithuanian legal text and current ministerial procedure.",
+        "No source text was copied and no reuse licence was displayed; the retained Markdown is an authored, source-specific summary note.",
+        "No topic adequacy or country completion is implied."
+      ],
+      "evidence": {
+        "official_source_url": "https://migracija.lrv.lt/en/activities/free-movement-of-persons-in-the-eu/",
+        "verified_content": "The live official English page identifies the Migration Department, states that territorial migration divisions of police institutions issue temporary or permanent residence documents to EU citizens and family members, and says the Department withdraws such residence rights. Publisher display says last updated 09-10-2023.",
+        "source_record_note": "Only the page's institutional role and stated scope are accepted. The page does not supply detailed current steps or requirements. The authored maintained note preserves the 2023 date and freshness limit.",
+        "retrieval_status": "accepted_dated_official_guidance_with_maintained_source_note",
+        "local_document_path": "documents/guidance/lt-free-movement-eu-2023.md",
+        "local_document_blob_sha": "8fb19cd8e3ad278aa3f19e5a60fea741284238de",
+        "local_document_kind": "authored_maintained_source_note"
+      },
+      "local_copy_accepted": true,
+      "decision": "accepted_with_narrow_external_scope"
     }
   ],
   "pending_references": [
@@ -905,36 +1056,6 @@
       "title": "TARIS system and data-reuse rules, Seimas Chancellor Order 400-ĮVK-229",
       "url": "https://www.e-tar.lt/portal/lt/legalAct/b7a2a862746711f1b53dfa020e517810",
       "reason": "Important source for registry roles, data supply, reuse and protection constraints. Exact clauses and their interaction with dataset licensing need direct legal-text review before automation."
-    },
-    {
-      "source_id": "lt-11",
-      "title": "Migration Department free movement in the EU guidance",
-      "url": "https://migracija.lrv.lt/en/activities/free-movement-of-persons-in-the-eu/",
-      "reason": "Stale relative to 2026 law and newer linked guidance. Preserve as a verified freshness warning, not current procedure."
-    },
-    {
-      "source_id": "lt-12",
-      "title": "Certificate of the Right of Residence 2022 guidance",
-      "url": "https://migracija.lrv.lt/en/activities/identity-documents/certificate-of-the-right-of-residence/certificate-of-the-right-of-residence-2022/",
-      "reason": "This official page still describes certificates by reference to Regulation (EU) 2019/1157. The CJEU declared that regulation invalid in C-61/22 and Regulation (EU) 2025/1208 is its successor. Pending current specimen and wording review."
-    },
-    {
-      "source_id": "lt-13",
-      "title": "Residence-permit and family-card identity-document guide",
-      "url": "https://migracija.lrv.lt/en/activities/identity-documents/residence-permits-documents/residence-permits-since-2020/",
-      "reason": "This official page still attributes family-card format to Regulation (EU) 2019/1157, which the CJEU declared invalid in C-61/22 and which was replaced by Regulation (EU) 2025/1208. Pending human review of updated card specimens and terminology; preserve the page only as a dated warning."
-    },
-    {
-      "source_id": "lt-14",
-      "title": "Official bilingual application form for a family member's temporary or permanent residence card",
-      "url": "https://migracija.lrv.lt/uploads/migracija/documents/files/Paslaugos/Pra%C5%A1ym%C5%B3%20formos/LLG%20ir%20LNG/Pra%C5%A1ymas%20i%C5%A1duoti%20ar%20pakeisti%20S%C4%85jungos%20pilie%C4%8Dio%20%C5%A1eimos%20nario%20leidimo%20laikinai%20ar%20nuolat%20gyventi%20%C5%A1alyje%20kortel%C4%99%20pdf.pdf",
-      "reason": "The linked form identifies a 2019 Director Order and has not been verified as the current parent-page attachment after the 2025/1208 card-format transition. Do not rely on it as the current form until the official service page is reviewed."
-    },
-    {
-      "source_id": "lt-15",
-      "title": "Migration Department residence-document state fees",
-      "url": "https://migracija.lrv.lt/en/services/state-fees-for-services/residence-permits/",
-      "reason": "Fee amounts and exemptions are dynamic. Refresh against the current fee act and payment instructions."
     },
     {
       "source_id": "lt-22",
@@ -1010,7 +1131,7 @@
       "review_for": "Current application and complaint forms, eligibility and administrative/court case guidance."
     }
   ],
-  "currentness_and_dependency_note": "The Aliens Law’s current edition on the review date is 2026-07-01 through 2026-10-31; the captured TAR API copy is from 2026-01-01 and is not current. The Public Administration Law’s current edition is 2026-10-01 through 2026-12-31; the API capture begins 2024-01-01. Preserve the statutory reference to Regulation (EU) 2019/1157, but mark it as invalidated in CJEU judgment C-61/22 and replaced by Regulation (EU) 2025/1208; family-card requirements and old specimens need review against the successor regulation, whose 3 August 2026 transition date has passed.",
-  "count_note": "There are 37 accepted external references and 11 pending; 13 local text snapshots and 0 topics are accepted. The source register has 48 official references after adding the historical predecessor of Order 1V-594. Lithuania remains incomplete.",
-  "source_reference_count": 48
+  "currentness_and_dependency_note": "The Aliens Law’s current edition on the review date is 2026-07-01 through 2026-10-31; the captured TAR API copy is from 2026-01-01 and is not current. The Public Administration Law’s current edition is 2026-10-01 through 2026-12-31; the API capture begins 2024-01-01. Preserve the statutory reference to Regulation (EU) 2019/1157, but mark it as invalidated in CJEU judgment C-61/22 and replaced by Regulation (EU) 2025/1208; family-card requirements and old specimens need review against the successor regulation, whose 3 August 2026 transition date has passed. The lt-12 certificate page is retained only as dated 2022 format-identification guidance: its 2019/1157 citation is stale, and its English permanent-certificate description contains an apparent wording error. See its maintained record. The lt-13 page and its 2020 leaflet are accepted as dated document-identification material only; the page's 2019/1157 family-card citation is stale. See the maintained record. The lt-14 combined bilingual form is accepted only as a dated 2019 form version; the current temporary-card attachment is unconfirmed and a separate permanent-card form has since been directly reviewed. See its maintained record. The lt-15 fee page displayed update date 2026-10-13 and was captured on 2026-10-29. Treat its rates and payment instructions as dynamic; its permit exemption lists are not assumed to apply to EU-family card fees.",
+  "count_note": "There are 42 accepted external references and 6 pending; 13 dated Lithuanian statutory text snapshots and seven maintained English guidance/form notes are accepted locally, and 0 topics are accepted. The source register has 49 official references. Lithuania remains incomplete.",
+  "source_reference_count": 49
 }

@@ -1,0 +1,218 @@
+# IND: Returning with a Dutch national from another EU/EEA country or Switzerland
+
+- Source ID: `nl-19`
+- Jurisdiction: Netherlands
+- Source type: `mobile_national_family_guidance`
+- Language: English
+- Official publisher: Immigration and Naturalisation Service (IND), Ministry of Justice and Security
+- Official page: https://ind.nl/en/residence-permits/eu-eea-or-swiss-citizens/returning-with-a-dutch-national-from-another-eueea-country-or-switzerland
+- Publisher update displayed: 7 October 2026
+- Official page checked and body retrieved: 29 October 2026
+- Reuse: IND permits reuse of website content if the source is mentioned; see [IND Proclaimer](https://ind.nl/en/proclaimer). Attribution is retained here.
+- Representation: Full visible English page text as rendered on the check date. The child pages and linked PDF forms are separate sources and are not included in this page copy.
+
+## Source status and limits
+
+This is IND guidance for the stated return route. It presents the EU-law route for a non-EU family member returning to the Netherlands with a Dutch citizen after residence together in another EU/EEA state or Switzerland, and a separate UK route tied to the 31 December 2020 transition date. It is not the governing legislation.
+
+The page's displayed fees and procedures are date-sensitive. Check the live page and its linked fee/form pages before applying. The linked forms B10003E/2 and B10006E/2 were opened on 29 October 2026 and identified as separate official PDFs (15 and 13 pages respectively); they are not part of this copy or acceptance decision. The page refers to Articles 8.7, 8.9 and 8.13 of the Vreemdelingenbesluit 2000 and section B10/2 of the Vreemdelingencirculaire 2000. The related law and policy records are maintained separately.
+
+## Full visible page text
+
+# Returning with a Dutch national from another EU/EEA country or Switzerland
+
+Last update: 7 October 2026
+You live with a Dutch national in another country of the European Union (EU), European Economic Area (EEA), or Switzerland with a Family Member EU/EEA residence document. Or you moved to the United Kingdom (UK) before 31 December 2020. You now want to return to the Netherlands together. To do so, you apply for EU verification. Read what the conditions are and how to apply for EU verification.
+## For whom is the application for verification against EU law?
+
+You can apply for EU verification if you are going to live in the Netherlands as a family member of a Dutch citizen to whom EU law applies.
+A Dutch citizen comes under EU law only if the Dutch citizen has lived in another EU/EEA country or Switzerland. The Dutch citizen then exercised the right to free movement of persons within the European Union (EU). When you apply for verification against EU law, the IND assesses whether you, as a family member, come under EU law.
+Under requirements, you can read when you and the Dutch citizen come under EU law. You can also read what requirements apply if you have lived with a Dutch citizen in the United Kingdom (UK).
+## Requirements, process and costs
+
+###
+
+The application process for EU verification consists of the following steps:
+
+Show details Hide details
+
+  * 1. Check requirements
+
+#### Valid travel document
+
+You have a valid passport.
+
+#### No danger to public order or national security
+
+You are not a danger to public order or national security.
+
+#### No nationality EU/EEA country or Switzerland
+
+You yourself are not a national of an EU/EEA country or Switzerland.
+#### You and the Dutch national have complied with EU law in the other country
+
+You resided in the other EU/EEA country or Switzerland pursuant to EU law. You must prove that you have met those requirements.
+#### Dutch citizen returns with partner or family member from other EU/EEA country or Switzerland
+
+You and your Dutch partner or Dutch family member meet the following requirements:
+    * You lived with the Dutch citizen in the other EU/EEA Member State or Switzerland.
+    * You had a family life with your Dutch partner or family member during that stay.
+    * You and your Dutch partner or family member met the residence requirements under EU law for at least 3 consecutive months during that stay because
+      * Your Dutch partner or family member and you had enough money of your own there.
+      * Your Dutch partner or family member was looking for a job or student there, or worked as an employee or self-employed person.
+##### Dutch citizen returns from United Kingdom (UK) with partner or family member
+
+If you lived with the Dutch citizen in the UK, the following requirements apply:
+    * Your partner or family member, as a Dutch citizen, started living in the UK on or before 31 December 2020.
+    * You and your Dutch partner or family member had a family relationship on or before 31 December 2020. The family relationship still exists.
+    * You had actual residence with your Dutch partner or family member in the UK.
+    * You had a family life with your partner or family member during that stay in the UK.
+    * You and your Dutch partner or family member met the residence requirements under EU law for at least 3 consecutive months (Brexit Withdrawal Agreement). Residence requirements include:
+      * You had enough of your own money there.
+      * You had a job there or worked as a self-employed person.
+#### You still meet the conditions that apply as a family member of an EU citizen
+
+You must demonstrate that you still meet the conditions for residence as a family member of an EU citizen. This means:
+    * That you are still in a relationship with your spouse or (registered) partner. If you are unmarried, you must also continue to live together in the Netherlands.
+    * That, as a child, (great)grandchild, or adopted child aged 21 or older, you are still financially dependent on the EU citizen or on the spouse or registered partner of the EU citizen.
+    * That you are still the caring parent of a minor EU citizen.
+    * That, as a parent or (great)grandparent, you are still financially dependent on an EU citizen, or the spouse or registered partner of that EU citizen.
+    * That at least 1 of the following conditions still applies to you as another family member of the EU citizen, or of the spouse or registered partner of that EU citizen:
+      * You are financially dependent on the Union citizen. And you were already financially supported by this family member in your country of origin. Without money from this family member, you cannot pay for your basic needs, such as food and drink. You have already received money regularly from this family member for at least one year, for example every month.
+      * You were already living together with the Union citizen in your country of origin. Or with the spouse or registered partner of the Union citizen.
+      * You need care from the Union citizen. Or from the spouse or registered partner of the Union citizen. You need this care due to serious health problems. There are no family members in the country of origin who can take on this care.
+#### Dutch citizen is living in the Netherlands
+
+You return with the Dutch citizen to the Netherlands from another EU/EEA country, Switzerland or the UK.
+#### Dutch citizen can rely on EU law
+
+The Dutch citizen can no longer rely on EU law in the following cases:
+    * The Dutch citizen has stayed outside the EUEEA or Switzerland for more than 6 months in a year after the stay in that EU/EEA country or Switzerland.
+    * The Dutch citizen has stayed outside the EUEEA or Switzerland for more than 12 consecutive months for important reasons after the stay in that EU/EEA country or Switzerland. Important reasons might include, for example, pregnancy, serious illness, study, or work.
+    * The Dutch citizen had permanent residence in that EU/EEA country or Switzerland. And resided outside that member state for more than 2 years after that residence.
+##### Dutch citizen has lived in the UK
+
+Has the Dutch citizen lived in the UK? Then the right to rely on EU law lapses in one of the following cases:
+    * The Dutch citizen has stayed outside the UK for more than 6 months in a year following their stay in the UK.
+    * The Dutch citizen has stayed outside the UK for important reasons for more than 12 consecutive months following their stay in the UK. Important reasons might include, for example, pregnancy, serious illness, study, or work.
+    * The Dutch national had permanent residence in the UK under EU law (Brexit Withdrawal Agreement) and has stayed outside the UK for more than 5 years.
+  * 2. Collect documents
+
+Do you want to know which documents you need in your situation to make the application? Then answer a few questions to get your document overview.
+
+Go to questions for your document overview
+
+Have official foreign documents legalised and translated into Dutch, English, French or German.
+
+  * 3. Travel to the Netherlands
+
+You can apply for EU verification only in the Netherlands. That means you have to travel to the Netherlands first.
+To travel to the Netherlands you will need the following documents:
+
+    * A valid passport.
+    * Documents proving that you are going to live with a Dutch citizen in the Netherlands as a family member.
+
+  * 4. Pay for application
+
+The application costs € 85,00. You must pay € 46,00 for a minor. For all fees and exceptions, visit our web page Fees: application costs.
+
+  * 5. Wait for decision on application
+
+The IND must make a decision within 6 months. This is called the decision period.
+#### Residence endorsement
+You will receive a letter saying how you can make an appointment for a residence endorsement sticker. This sticker will be placed in your passport. On this sticker, it says that the law allows you to stay in the Netherlands during the process (legal residency). On this sticker, it also says whether or not you are allowed to work during the process. As long as you have not received a decision on your application, this sticker and your passport together are proof of your legal residency.
+For example for government agencies and employers.
+Is the validity of the residence endorsement sticker about to expire? And have you not yet received a decision on your application? Then make an appointment for a new residence endorsement sticker.
+#### Taking biometrics
+
+The letter also states how you can make an appointment at an IND desk to have your biometrics taken. We will take your fingerprints and your picture during the appointment at an IND desk.
+#### What if the IND decides late
+
+Has the decision period expired? And do you still not have a decision on your application? Find out what you can do if the IND is late with its decision.
+
+Follow the application in My IND.
+
+  * 6. Decision on application
+
+You will receive the decision in a letter. The decision will be positive or negative.
+    * Positive decision: you will get a residence document.
+    * Negative decision: you will not get a residence document. You can object to this decision.
+
+  * 7. Collect residence document
+
+When the residence document is ready at an IND desk, you will receive a letter. You must make an appointment to collect it. Make an appointment to collect your residence document.
+## Application forms
+
+###
+
+Download the form. Fill in the form and send it by post.
+### Written application forms
+
+Use this form for the first application and for renewal of the document in unchanged situation.
+
+Application residence document: residence with Dutch EU family member B10003E (PDF, 373.28 KB)
+
+Use this form if you want to do a follow-up application and your situation with the EU citizen has changed.
+
+Follow up application residence document: after residence with EU family member B10006E (PDF, 364.96 KB)
+## The residence document
+
+Find out what else you need to know about the residence document.
+
+### Working with the residence document
+
+The family member EU/EEA residence document allows you to work. You do not need a work permit (for non-EU subjects) for this.
+
+### Validity of residence document
+
+The residence document is valid for 5 years.
+
+### Type of residence document
+
+The residence document is type Family members EU/EEA, residence document for family members of Community nationals.
+### Other applications
+
+#### Replacement of the residence document
+
+Has the residence document been damaged, lost or stolen? Then have the residence document replaced. Visit the web page residence permit damaged or change details or residence permit lost or stolen.
+
+#### Apply for EU verification again
+
+Will the residence document expire soon? This document cannot be extended. However, you can apply for verification against EU law again.
+#### Staying in the Netherlands if your situation with EU citizen has changed
+
+Has your situation with the Dutch EU citizen changed? In the following cases you may still stay in the Netherlands:
+
+  * You have been in the Netherlands for 5 years or longer.
+  * The Dutch EU citizen has died.
+  * Your are the child of the Dutch citizen. And the Dutch citizen has left or died.
+  * The marriage or relationship with the Dutch EU citizen has ended.
+Additional requirements apply. Find out more on the page Staying the Netherlands if your situation with the EU citizen has changed.
+#### Residence document for permanent residency
+
+Have you met the requirements for residency for 5 continuous years? Then you can apply for permanent residency.
+
+## See also
+
+Living in the Netherlands
+
+Staying in the Netherlands if you situation with the EU citizen has changed
+
+Travelling with a residence permit and return visa
+
+Verification against EU law for Union citizen family members
+
+Permanent residency for Union citizens and their family
+### Rules and regulations
+
+Article 8.7 Aliens Decree (Vreemdelingenbesluit 2000)
+
+Article 8.9 Aliens Decree (Vreemdelingenbesluit 2000)
+
+Article 8.13 Aliens Decree (Vreemdelingenbesluit 2000)
+
+B10/2 Aliens Act Implementation Guidelines (Vreemdelingencirculaire 2000)
+
+## Capture notes
+
+The page text above preserves the visible body, headings, numbered steps and link labels. The official page is the authoritative route to live forms, linked guidance, interactive document overview, and current content. This Markdown copy does not include those separate linked pages or PDF bytes. Recheck the official page when relying on a specific condition, amount, application route, or deadline.

@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0.0",
   "jurisdiction": "LI",
-  "as_of": "2026-10-25",
-  "accepted_source_count": 18,
+  "as_of": "2026-10-29",
+  "accepted_source_count": 21,
   "accepted_local_copy_count": 11,
-  "accepted_external_reference_count": 18,
+  "accepted_external_reference_count": 21,
   "accepted_topic_count": 0,
   "country_review_complete": false,
   "policy": "A reviewed official source may be accepted within its publisher, identity, language, displayed version, scope, and stated limitations. The current Lilex consolidation is an informational working text, not the legally authentic publication. Local-copy acceptance is separate from topic coverage, legal equivalence, and country completion. Reuse acceptance for local laws, regulations, treaties and other official enactment text is limited to Liechtenstein URG Article 5(1)(a) and (2); it does not cover publisher site design, database-level or systematic reuse, or unrelated content.",
@@ -1053,11 +1053,109 @@
       "local_copy_accepted": false,
       "accepted_topics": [],
       "decision": "accepted_with_narrow_external_scope"
+    },
+    "li-27": {
+      "status": "accepted_with_narrow_external_scope",
+      "publisher": "Migration and Passport Office (Ausländer- und Passamt, APA), Liechtenstein",
+      "url": "https://formulare.llv.li/formserver_APA/start.do?generalid=APA_FN",
+      "checked_on": "2026-10-29",
+      "language": "German; English option displayed, but English form view not verified",
+      "version_or_scope": "Interactive family-reunification form APA_FN. The public initial page displayed a five-step progress indicator; no publication or revision date was shown.",
+      "acceptance_scope": "Official APA online form entry point and first step only. The maintained Markdown record summarizes the verified initial screen. The remaining steps and complete application requirements are not accepted as reviewed.",
+      "reviewed_content": "The initial page names the Migration and Passport Office, says a separate application is required for each family member seeking a permit, and shows a required family-relationship choice with spouse/registered partner, child, parents, life partner, and other eligible persons. It offers German and English language options and save/end controls. No data was entered and no form was submitted.",
+      "limitations": [
+        "Only the public initial step was verified. Fields, eligibility, supporting documents, validation and requirements on steps 2–5 remain unverified.",
+        "The parent forms index was not resolved; this is an interactive application route rather than a static form document.",
+        "The English option is displayed, but the English-language form view was not verified.",
+        "Do not treat the Markdown field map as a complete application checklist. Use the live form for its full workflow and do not enter applicant data into the library."
+      ],
+      "candidate_record": {
+        "manifest_archive_path": "candidates/public-data/liechtenstein/references/candidate-manifest.json",
+        "id": "li-27",
+        "source_sha256": "fccf8355c4b100c1d28f91f5ff45cd2751abb2232632274b427cdfc41ee80a66"
+      },
+      "evidence": {
+        "official_source_url": "https://formulare.llv.li/formserver_APA/start.do?generalid=APA_FN",
+        "verified_content": "Live public first step opened on 2026-10-29. Form title, provider, addressee, introductory separate-application instruction, five-step indicator and relationship choices reviewed.",
+        "retrieval_status": "interactive_form_initial_step_only"
+      },
+      "local_copy_accepted": false,
+      "accepted_topics": [],
+      "decision": "accepted_with_narrow_external_scope",
+      "maintained_source_note_path": "documents/forms/li-27-family-reunification-online-form.md",
+      "maintained_source_note_checked_on": "2026-10-29",
+      "maintained_source_note_status": "accepted_field_map_initial_step_only"
+    },
+    "li-12": {
+      "status": "accepted_with_narrow_external_scope",
+      "publisher": "Government Legal Services (Rechtsdienst der Regierung), Liechtenstein",
+      "url": "https://www.gesetze.li/konso/2009217000",
+      "checked_on": "2026-10-29",
+      "language": "German",
+      "version_or_scope": "LGBl 2009.217 / LR 0.369.101.3, concluded 3 December 2008; entered into force for Liechtenstein 19 December 2011. Official consolidated PDF reviewed 2026-10-29 displays Fassung 19.12.2011.",
+      "acceptance_scope": "Official bilateral framework treaty reference, with a maintained article map of the reviewed 22-article consolidated text. The Markdown note is not a verbatim local copy or authenticated Gazette publication.",
+      "reviewed_content": "The official Lilex PDF identifies the instrument, Gazette publication and effective-date notes, and contains Articles 1–22. Reviewed scope covers visa issuance and decision/appeal allocation, residence and cross-border services, border-area police cooperation, data exchange, coordination, preserved treaty obligations, term and commencement.",
+      "limitations": [
+        "The official legal-database notice says consolidated text is informational and has no legal effect; the signed State Law Gazette publication is legally authentic.",
+        "The PDF displays Fassung 19.12.2011. This review did not independently exclude later legal changes or a termination notice.",
+        "The instrument relies on separate implementing agreements and applicable Schengen rules; current Swiss mission intake is not established.",
+        "No legal equivalence between Liechtenstein and Swiss or EEA immigration routes is implied.",
+        "The article map is not a verbatim local source copy; local_copy_accepted remains false.",
+        "Source acceptance is separate from topic coverage and country completion."
+      ],
+      "candidate_record": {
+        "manifest_archive_path": "candidates/public-data/liechtenstein/references/candidate-manifest.json",
+        "id": "li-12"
+      },
+      "evidence": {
+        "official_source_url": "https://www.gesetze.li/konso/2009217000",
+        "official_pdf_url": "https://www.gesetze.li/konso/pdf/2009217000?version=2",
+        "verified_content": "Official Lilex current-text page and consolidated 11-page PDF opened 2026-10-29. Checked LR/LGBl identity, agreement dates, displayed consolidation date, and all 22 articles; official Lilex notice states consolidated texts are informational and have no legal effect.",
+        "retrieval_status": "official_consolidated_pdf_reviewed_maintained_article_map"
+      },
+      "local_copy_accepted": false,
+      "accepted_topics": [],
+      "decision": "accepted_with_narrow_external_scope",
+      "maintained_source_note_path": "documents/treaties/li-liechtenstein-switzerland-visa-residence-framework.md",
+      "maintained_source_note_checked_on": "2026-10-29",
+      "maintained_source_note_status": "accepted_article_map_not_verbatim"
+    },
+    "li-30": {
+      "status": "accepted_with_narrow_external_scope",
+      "publisher": "Liechtenstein National Administration, Migration and Passport Office (Ausländer- und Passamt)",
+      "url": "https://www.llv.li/de/landesverwaltung/auslaender-und-passamt/visum",
+      "checked_on": "2026-10-29",
+      "language": "German",
+      "version_or_scope": "Current APA visa guidance page checked 2026-10-29; page did not display a clear revision date.",
+      "acceptance_scope": "Official Liechtenstein entry-visa guidance for Swiss and other Schengen representation routes and allocation of decision authority. Use SEM and the Liechtenstein VEV to check visa obligation; verify the competent post for each application location.",
+      "reviewed_content": "Page says Liechtenstein and Switzerland generally apply the same entry rules, with bilateral/multilateral exceptions; visa-required applicants generally apply at a Swiss representation, while some locations are assigned to Austrian, Hungarian or Lithuanian representations. Decision authority is divided between Swiss authorities and the APA.",
+      "limitations": [
+        "Visa obligation should be checked against current SEM information and Liechtenstein VEV, LR 152.204; this guidance is a route and authority overview.",
+        "Representation arrangements and the location-specific table can change; verify current intake with the competent post.",
+        "Page is in German and has no clear revision date in the reviewed view.",
+        "Entry visas are distinct from residence, family-reunification and EEA free-movement procedures.",
+        "The maintained note is independently authored and is not a copy of the source page or regulation."
+      ],
+      "candidate_record": {
+        "manifest_archive_path": "candidates/liechtenstein_candidate_promotion_20261025/Liechtenstein/candidate-manifest.json",
+        "id": "li-30"
+      },
+      "evidence": {
+        "official_source_url": "https://www.llv.li/de/landesverwaltung/auslaender-und-passamt/visum",
+        "verified_content": "Live APA visa page opened 2026-10-29 and substantive content reviewed: Swiss/Liechtenstein alignment with caveat, Swiss representation as general route, divided decision authority, exceptions table, links to SEM and Liechtenstein VEV.",
+        "retrieval_status": "official_guidance_page_reviewed_and_maintained_note_promoted"
+      },
+      "local_copy_accepted": false,
+      "accepted_topics": [],
+      "decision": "accepted_with_narrow_external_scope",
+      "maintained_source_note_path": "documents/guidance/li-30-visa-guidance-and-representation.md",
+      "maintained_source_note_checked_on": "2026-10-29",
+      "maintained_source_note_status": "accepted_independent_source_reference_note_not_verbatim"
     }
   },
   "candidate_inventory_count": 40,
   "dispositioned_candidate_count": 1,
-  "open_candidate_count": 21,
+  "open_candidate_count": 18,
   "dispositions": {
     "li-03": {
       "status": "already_represented_duplicate",

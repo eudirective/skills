@@ -1,7 +1,7 @@
 # Croatia national-source review
 
-**Review date:** 25 October 2026
-**State:** incomplete; 82 source records, 43 accepted local documents (25 Croatian legal-text documents, eight MUP/MVEP form PDFs, and ten guidance article texts), and 41 official references reviewed for link use within their recorded scopes. Fourteen legal topics are mapped and none is complete. NN 86/21’s four Form 4b/11b statutory card images are now retained as native attachments after visual review; their current issuance remains unverified. Form 11b transition treatment depends on actual security and MRZ evidence. The 42-article Directive map remains preliminary; the case-law plan has 40 searches and no completed batch.
+**Review date:** 29 October 2026
+**State:** incomplete; 82 source records, 49 accepted local documents (30 Croatian legal-text documents, eight MUP/MVEP form PDFs, ten guidance article texts and one gov.hr locator summary), and 42 official references reviewed for link use within their recorded scopes. Fourteen legal topics are mapped and none is complete. NN 86/21’s four Form 4b/11b statutory card images are now retained as native attachments after visual review; their current issuance remains unverified. Form 11b transition treatment depends on actual security and MRZ evidence. The 42-article Directive map remains preliminary; the case-law plan has 40 searches and no completed batch.
 
 Source-reference usability, local-document acceptance, topic coverage and country completion remain separate. The current MUP index links EEA Forms 1b, 2b, 3b and 6b; all four PDFs were visually reviewed page by page on 24 October and retained unchanged. MUP’s Terms of Use permit reproduction and use with source attribution. The PDFs have no displayed revision date, and the current MUP Propisi index remains the version source for the EEA rules. Form 2b is a residence-card application, not a card specimen. The Form 4b/11b specimens are now visually reviewed and retained under their accepted parent law. The official Croatian Article 7(2) code wording matches NN 86/21, but current Form 11b code placement/issuance and Form 4b applicability across EEA nationalities remain open. Nine AZOP, MVEP, Ombudsman and Commissioner article bodies or scoped excerpts from the archived Croatia page candidates are now accepted, including two historical-only records under `documents/guidance/`; the AZOP form, live page forms, linked form files and page shells are excluded. The seven MVEP/Ombudsman/Commissioner page assessments are source-specific statutory inferences under the official-publication clause, not site-wide licences. Seven raw snapshots matching their reviewed page URLs are archived; the family page also has an earlier raw snapshot for retired ID 180456, while its later current-ID response and the appeal response are hash-only.
 
@@ -45,3 +45,18 @@ No country-complete conclusion is supported. Empty folders or placeholders are n
 
 
 The current MUP SIS page links three bilingual request forms; the MVEP VIS page links a bilingual rights form. Their exact source bytes are archived in the Monitor and match the accepted PDFs. Text extraction, page count and file properties were reviewed, but page-image layout was not independently inspected. The MUP SIS page contains a regulation-number typo and unverified contact details; the MVEP page describes restriction rights that the linked form does not include. These references support only partial privacy/oversight procedure coverage.
+
+
+The NN 20/22 third-country residence regulation is retained as a text-only Markdown copy of Articles 1–99. MUP's current index lists amendments NN 155/22 and 43/26; the Markdown is not consolidated. Its 48 embedded form images are excluded, including forms identified by Article 96, and are not accepted by this text copy. The source-specific text and scope are recorded in `documents/legislation/hr-third-country-residence-base.md` and `references/source-acceptance.json`.
+
+
+The NN 155/22 amending instrument for the third-country residence regulation is retained as a source-specific text copy at `documents/legislation/hr-third-country-residence-amend-155-22.md`. MUP currently lists NN 20/22, 155/22 and 43/26 in the regulation chain; this amendment file is not a consolidated text.
+
+
+The original Uredba o Hrvatskom viznom informacijskom sustavu, NN 36/13, is retained at `documents/legislation/hr-vis-decree.md`. MUP and MVEP list NN 105/17 as a later amendment; this Markdown preserves the original text and is not consolidated. Later EU VIS legislation also requires separate current-law review.
+
+
+The Government's Uredba o viznom sustavu, NN 92/21, is retained at `documents/legislation/hr-visa-system-decree.md`. The current MVEP visa-regulations page lists NN 92/21; this copy preserves the official enactment and does not consolidate other national or EU visa rules.
+
+
+The Government's amendment NN 105/17 to the Croatian HVIS regulation is retained at `documents/legislation/hr-vis-decree-amend-105-17.md`. The MUP/MVEP version chain lists NN 36/13 and 105/17; this file contains the amending instrument only, not a consolidation.

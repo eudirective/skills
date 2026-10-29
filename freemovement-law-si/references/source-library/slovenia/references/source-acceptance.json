@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0.0",
   "jurisdiction": "SI",
-  "as_of": "2026-10-25",
+  "as_of": "2026-10-29",
   "accepted_source_count": 0,
   "accepted_current_law_source_count": 0,
   "accepted_derived_text_count": 0,
   "accepted_topic_count": 0,
   "country_review_complete": false,
-  "accepted_external_reference_count": 17,
+  "accepted_external_reference_count": 18,
   "legacy_inventory": {
     "candidate_records": 42,
     "retrieved_responses": 42,
     "candidate_texts_converted_and_replay_verified": 23,
     "discovery_or_application_shells": 19,
-    "local_acceptance_note": "The 23 converted candidate captures were replay-verified as historical research artifacts and are now retained only in the Monitor local-only archive. Seventeen official references are accepted for their stated link-only scopes, including one metadata-only catalogue reference; no local source copy, derived text, topic, or country review is accepted."
+    "local_acceptance_note": "The 23 converted candidate captures were replay-verified as historical research artifacts and are now retained only in the Monitor local-only archive. Eighteen official references are accepted for their stated link-only scopes, including one metadata-only catalogue reference; no local source copy, derived text, topic, or country review is accepted."
   },
   "policy": "Official GOV.SI service pages are usable links within their displayed dates and stated scopes. PISRS is the official national legal-information portal; its government-published consolidated texts are suitable working references with the displayed edition and informational label. Because this review client receives only a JavaScript shell for the PISRS records, offer the whole official PISRS site for human review of the listed records. API authorization applies only to automated API access; no API call, Gazette-fragment reconstruction, local capture, hash, replay, conversion, or copying permission is required for ordinary link use. Check a specific later amendment only when it may materially affect the issue. Link acceptance is separate from local-copy acceptance, topic coverage, and country completion.",
   "official_reference_reviews": {
@@ -22,15 +22,15 @@
       "publisher": "GOV.SI, Government of the Republic of Slovenia; page content assigned to the Ministry of the Interior and the Ministry of Foreign and European Affairs",
       "url": "https://www.gov.si/teme/vstop-in-prebivanje/",
       "rediscovery_url": "https://www.gov.si/",
-      "checked_on": "2026-10-25",
+      "checked_on": "2026-10-29",
       "language": "Slovenian",
       "version_or_cutoff": "Page displays last change 12 June 2026.",
       "scope": "Central official guidance and discovery page for entry, residence, EU/EEA nationals, Swiss nationals, visas, and related services.",
-      "reviewed_content": "The page separates EU citizens, their family members, EEA extension, Swiss nationals, and third-country nationals, and links to residence, visa, privacy, and service pages.",
+      "reviewed_content": "Opened the Slovenian page and checked EU entry and three-month/longer-stay service routes, non-EU family-member 90-day route, separate Swiss section, third-country visa C/D sections, mission and document links, local registration and legislation links; page displays last change 12 June 2026.",
       "limitations": [
-        "Guidance and linked pages are not a substitute for the law. Keep the EU/EEA route distinct from the separately described Swiss Agreement route.",
-        "The page and its attachments change; rediscover current services and forms from this parent when needed.",
-        "This link decision accepts reference use only, not a local copy or topic coverage."
+        "Guidance and linked pages are not a substitute for the law; verify current rules and deadlines against the linked service and governing instruments.",
+        "The page and its attachments change; rediscover current services, mission channels, visa checklists and forms from this parent when needed.",
+        "This decision accepts reference use only, not a local source-text copy or complete topic coverage."
       ],
       "document_path": "documents/guidance/si-entry-residence-guidance.md"
     },
@@ -226,14 +226,14 @@
       "publisher": "Embassy of the Republic of Slovenia in Copenhagen, published on GOV.SI",
       "url": "https://www.gov.si/predstavnistva/veleposlanistvo-kobenhavn/vizumske-informacije-veleposlanistva-kobenhavn/",
       "rediscovery_url": "https://www.gov.si/predstavnistva/",
-      "checked_on": "2026-10-25",
+      "checked_on": "2026-10-29",
       "language": "Slovenian",
       "version_or_cutoff": "Page last changed 12 March 2026.",
       "scope": "Dated sample of Copenhagen mission-specific visa information, including location-specific applicability and links.",
-      "reviewed_content": "The current page was opened and its embassy identity, accreditation context and visa-information links were confirmed.",
+      "reviewed_content": "Reopened the official Slovenian GOV.SI mission page. Confirmed visa-exempt nationalities listed (Denmark, Finland, Iceland, Norway, Sweden), third-country lawful-resident route to EC visa checker, link to central entry/residence guidance, mission contact/appointment section, and the 2026 closure list. Page displays last change 12 March 2026.",
       "limitations": [
         "One mission page does not establish the requirements of other posts or a complete mission network.",
-        "Recheck the competent mission, checklist, appointment, fee and filing route for the applicant's location.",
+        "Recheck competent mission, residence/accreditation, Schengen representation, checklist, appointment, fee and filing route for the applicant's location.",
         "No local page or attachment is accepted."
       ],
       "document_path": "documents/guidance/si-copenhagen-visa-information.md"
@@ -305,6 +305,110 @@
         "No local page copy is accepted."
       ],
       "document_path": "documents/oversight/si-equality-advocate.md"
+    },
+    "si_02": {
+      "status": "usable_official_reference",
+      "publisher": "Government Office for Legislation of the Republic of Slovenia, PISRS",
+      "url": "https://pisrs.si/pregledPredpisa?id=ZAKO5761",
+      "rediscovery_url": "https://pisrs.si/",
+      "checked_on": "2026-10-29",
+      "language": "Slovenian",
+      "version_or_cutoff": "Official PISRS search output identifies unofficial consolidated text no. 20 (NPB 20), start of use 24 June 2025, based on UPB15 and Official Gazette RS 46/2025.",
+      "scope": "Official consolidated statutory reference for Slovenia's Foreigners Act (ZTuj-2), covering entry, departure and residence of foreign nationals.",
+      "reviewed_content": "Opened the official PISRS record URL, which returned a JavaScript shell in this review client. Official PISRS search output exposed the act title, NPB 20 label, start-of-use date and act provisions. GOV.SI reported on 22 October 2026 that the Government adopted a proposal to amend ZTuj-2; the proposal is not treated as enacted law.",
+      "limitations": [
+        "PISRS consolidated legal text is informational; retain its displayed edition and verify material commencement or transitional questions against the official publication.",
+        "The current consolidated text was not fully rendered in this client and no legal text is copied or accepted.",
+        "The 22 October 2026 amendment announcement concerns a proposal; verify enactment and commencement before applying proposed changes.",
+        "Do not conflate EU, EEA, Swiss, Slovenian-national-family and third-country routes."
+      ],
+      "document_path": "documents/legislation/si-foreigners-act-ztuj-2.md"
+    },
+    "si_03": {
+      "status": "usable_official_reference_with_maintained_reference_note",
+      "publisher": "PISRS, Legal Information System of the Republic of Slovenia; amendments promulgated in the Official Gazette of the Republic of Slovenia",
+      "url": "https://pisrs.si/Pis.web/pregledPredpisa?sop=1999-01-3777",
+      "rediscovery_url": "https://pisrs.si/",
+      "checked_on": "2026-10-29",
+      "language": "Slovenian",
+      "version_or_cutoff": "PISRS record ZAKO1603 / SOP 1999-01-3777 identifies unofficial consolidated text NPB 14, amendments through ZUP-I (Official Gazette RS 85/2025), and date of use 7 February 2026.",
+      "scope": "General administrative procedure for public bodies deciding administrative matters; special statutes may displace or supplement ZUP for the issues they govern.",
+      "reviewed_content": "PISRS official indexed record and integration text were checked for title, record ID, NPB 14, amendment history, date of use, scope and informational disclaimer. Official Gazette item 3046 (ZUP-I) was checked for publication and commencement/transitional provisions.",
+      "limitations": [
+        "PISRS labels its consolidated text unofficial and informational; consult promulgated Gazette acts where exact wording or legal effect matters.",
+        "Special statutes may provide different procedural rules; verify the applicable proceeding and version for each matter.",
+        "The PISRS record route rendered as a JavaScript shell in this review client; no local source-text copy was accepted.",
+        "This is link-only legal-reference acceptance and does not establish topic coverage or country-pack completeness."
+      ],
+      "document_path": "documents/references/si-03-general-administrative-procedure-act-zup-2026-10-29.md",
+      "maintained_note_sha256": "7be3190f0505c69194a29398560e388edb0c094b9a6fb962d09c0a56b1bd2d73",
+      "maintained_note_role": "maintained_official_reference_note_not_source_text_copy",
+      "related_official_references": [
+        "https://pisrs.si/Pis.web/pregledPredpisa?id=ZAKO1603",
+        "https://pisrs.si/api/datoteke/integracije/555241903",
+        "https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2025-01-3046"
+      ]
+    },
+    "si_11": {
+      "status": "usable_official_reference_with_maintained_reference_note",
+      "publisher": "PISRS, Legal Information System of the Republic of Slovenia; promulgated acts and Constitutional Court decisions appear in the Official Gazette",
+      "url": "https://pisrs.si/pregledPredpisa?id=ZAKO7556",
+      "rediscovery_url": "https://pisrs.si/",
+      "checked_on": "2026-10-29",
+      "language": "Slovenian",
+      "version_or_cutoff": "Record ZAKO7556 / SOP 2017-01-0729; PISRS displays unofficial consolidated text NPB 8 with use date 19 April 2024 and listed materials through UL RS 34/2024.",
+      "scope": "Family Code covering family relationships, marriage and non-marital partnership, parent-child relations, child-protection measures, maintenance, adoption, foster care and guardianship.",
+      "reviewed_content": "Official PISRS record and integrated NPB 8 text checked for identity, status dates, scope, consolidation, incorporated instruments, use date and disclaimer.",
+      "limitations": [
+        "PISRS labels NPB 8 an informational unofficial consolidation; consult promulgated acts and operative Constitutional Court decisions where exact wording or effect matters.",
+        "Civil-status registration, procedural steps, cross-border law and immigration consequences may depend on other statutes, EU instruments, treaties or the competent authority.",
+        "This is reference-note acceptance only; no local statutory text copy, topic completeness or country-pack completion is accepted."
+      ],
+      "document_path": "documents/legislation/si-11-family-code-dz-2026-10-29.md",
+      "maintained_note_sha256": "1d2fbb6aff7a23e7b40bdb10d3818012381405283471d6d701c454382b302a4f",
+      "maintained_note_role": "maintained_official_reference_note_not_source_text_copy",
+      "integrated_text_url": "https://pisrs.si/api/datoteke/integracije/358638238"
+    },
+    "si_12": {
+      "status": "usable_official_reference_with_maintained_reference_note",
+      "publisher": "PISRS, Legal Information System of the Republic of Slovenia; promulgated acts appear in the Official Gazette",
+      "url": "https://pisrs.si/pregledPredpisa?id=ZAKO3354",
+      "rediscovery_url": "https://pisrs.si/",
+      "checked_on": "2026-10-29",
+      "language": "Slovenian",
+      "version_or_cutoff": "Record ZAKO3354 / SOP 2003-01-1720. PISRS indexed record displays NPB 5; separate indexed integration endpoint displays NPB 4. Version mismatch remains unresolved.",
+      "scope": "Civil-status register and entries of legally specified events, including events occurring abroad, register administration, extracts/certificates, correction and information access.",
+      "reviewed_content": "PISRS record and indexed texts checked for identity, Gazette references, subject structure and version metadata. Record-page NPB 5 and integration NPB 4 mismatch recorded explicitly.",
+      "limitations": [
+        "PISRS public surfaces disagree on NPB edition; verify current record and integrated text before relying on consolidated wording.",
+        "PISRS consolidations are informational working aids; consult promulgated acts for authoritative wording and effect.",
+        "A register-entry statute does not alone determine validity or recognition of a foreign civil-status act or associated nationality/residence consequences.",
+        "Reference note only; no local statutory text copy or topic completeness accepted."
+      ],
+      "document_path": "documents/legislation/si-12-civil-status-registry-act-zmatr-2026-10-29.md",
+      "maintained_note_sha256": "e2e871552bea50e9ea582ec04503f7cf9255d9126ded05e3b32934329044e6e3",
+      "maintained_note_role": "maintained_official_reference_note_not_source_text_copy",
+      "integration_text_url": "https://pisrs.si/api/datoteke/integracije/356693895"
+    },
+    "si_13": {
+      "status": "usable_official_reference_with_maintained_reference_note",
+      "publisher": "PISRS, Legal Information System of the Republic of Slovenia; promulgated acts appear in the Official Gazette",
+      "url": "https://pisrs.si/Pis.web/pregledPredpisa?id=ZAKO6046",
+      "rediscovery_url": "https://pisrs.si/",
+      "checked_on": "2026-10-29",
+      "language": "Slovenian",
+      "version_or_cutoff": "Record ZAKO6046 / SOP 2016-01-2294; PISRS displays NPB 3 with use date 25 October 2024 and lists materials through UL RS 62/2024.",
+      "scope": "Residence/address registration and deregistration, register administration, temporary accommodation and guest records.",
+      "reviewed_content": "Official PISRS record and integrated text checked for identity, status dates, NPB 3, use date, amendment list, statutory scope and disclaimer.",
+      "limitations": [
+        "PISRS labels NPB 3 an informational, unofficial consolidation; consult promulgated acts where exact wording or legal effect matters.",
+        "Address registration under this Act is distinct from immigration or free-movement entitlement to reside.",
+        "This is reference-note acceptance only; no local statutory copy, topic coverage or country completion accepted."
+      ],
+      "document_path": "documents/legislation/si-13-residence-registration-act-zppreb-1-2026-10-29.md",
+      "maintained_note_sha256": "d14f5ced9c760338f8fe5d7d83638853f50618585caffecdf7f091c2a6d3b91d",
+      "maintained_note_role": "maintained_official_reference_note_not_source_text_copy",
+      "integrated_text_url": "https://pisrs.si/api/datoteke/integracije/358969199"
     }
   },
   "historical_or_not_current_references": [
@@ -314,7 +418,10 @@
         "si_36"
       ],
       "status": "not_accepted_as_current_guidance",
-      "reason": "The official eUprava pages state that they have not yet been renewed and will redirect to the old eUprava site. Keep as dated navigation/eligibility leads only; do not use them alone for current legal-aid eligibility. Check the current ZBPP text and live service."
+      "reason": "The official eUprava FAQ opened on 29 October 2026 still displays its foreign-national eligibility answer and says the page has not yet been renewed and may redirect to the old eUprava site. Preserve it only as a historical official FAQ summary; do not use it alone for current eligibility. Check the current ZBPP and application route.",
+      "reviewed_on": "2026-10-29",
+      "document_path": "documents/guidance/si-legal-aid-foreigners-faq-historical.md",
+      "verified_content": "Page lists permit-holding residents in Slovenia, stateless persons lawfully residing in Slovenia, and persons lawfully residing in another EU Member State; other foreigners may qualify through reciprocity or an international treaty. No revision date exposed."
     },
     {
       "candidate_ids": [

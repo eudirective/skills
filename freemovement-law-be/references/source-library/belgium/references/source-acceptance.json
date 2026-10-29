@@ -1,20 +1,20 @@
 {
   "schema_version": "1.0",
-  "review_date": "2026-10-24",
+  "review_date": "2026-10-29",
   "jurisdiction": "BE",
   "status": "partial",
   "publisher_assessment": {
     "publisher": "Belgian federal, regional, community and municipal authorities, official legal databases and competent oversight bodies; N-Lex is an EU discovery service.",
-    "decision": "Accept 47 official links within their recorded scope and 30 local copies after separate review. One superseded IBZ route is not relied upon. No legal topic is accepted as adequately covered; Belgium review remains incomplete.",
-    "basis": "Accepted local copies have separate evidence for publisher identity, version/freshness limits, extraction completeness or native-file integrity, attachment scope and legal classification. Exact raw capture hashes were verified where retained; the current Codex source is a newly captured publisher response. Dynamic guidance and process pages retain date and scope caveats. External-link acceptance, local-copy acceptance and topic coverage remain separate. The Federal Justice adoption-abroad article was reviewed as a dated official guidance snapshot through its accessible www.justice.belgium.be route; it has no displayed update date and remains related guidance only. The Federal Justice guidance and the French APD complaint page have dated local snapshots accepted within recorded limits. Direct APD access returned maintenance text on 2026-10-24, so its currentness remains unresolved.",
-    "limitation": "Acceptance of official links and the accepted local source texts does not establish legal topic completeness, validate every linked form or case, or mark Belgium review complete. The Ostbelgien legal database expressly warns that only the original Gazette publication is legally binding."
+    "decision": "Accept 47 official links within their recorded scope and 32 local copies after separate review. One superseded IBZ route is not relied upon. No legal topic is accepted as adequately covered; Belgium review remains incomplete.",
+    "basis": "Accepted local copies have separate evidence for publisher identity, version/freshness limits, extraction completeness or native-file integrity, attachment scope and legal classification. Exact raw capture hashes were verified where retained; the current Codex source is a newly captured publisher response. Dynamic guidance and process pages retain date and scope caveats. External-link acceptance, local-copy acceptance and topic coverage remain separate. The Federal Justice adoption-abroad article was reviewed as a dated official guidance snapshot through its accessible www.justice.belgium.be route; it has no displayed update date and remains related guidance only. The Federal Justice guidance and the French APD complaint page have dated local snapshots accepted within recorded limits. Direct APD access returned maintenance text on 2026-10-24, so its currentness remains unresolved. The EU-family overview candidate was reopened on 2026-10-29. Although the overview remains incomplete, its linked detailed page for third-country family members was readable enough for an independently written, tightly scoped maintained source note; the separate page for family members who are themselves EU citizens was not retrieved.",
+    "limitation": "Acceptance of official links and the accepted local source texts does not establish legal topic completeness, validate every linked form or case, or mark Belgium review complete. The Ostbelgien legal database expressly warns that only the original Gazette publication is legally binding. The be-eu-family-guidance note covers only readable linked guidance for third-country family members; the overview remains incomplete and the separate EU-citizen-family page could not be retrieved."
   },
   "counts": {
     "candidate_records_reviewed": 48,
     "accepted_external_references": 47,
     "pending_external_references": 0,
     "not_relied_upon_superseded": 1,
-    "accepted_local_copies": 30,
+    "accepted_local_copies": 32,
     "accepted_topics": 0,
     "country_review_complete": false
   },
@@ -128,7 +128,7 @@
   "scope_decisions": [
     {
       "source_id": "be-eu-family-guidance",
-      "decision": "Accept official route only; rendered page is incomplete/work in progress and does not prove EU/EEA/Swiss scope."
+      "decision": "Accept official route at a narrow scope; current overview is incomplete, but the linked detailed guidance for third-country family members was readable and independently summarized. The page for family members who are themselves EU citizens was not retrieved."
     },
     {
       "source_id": "be-annex-19ter-fr",
@@ -202,7 +202,9 @@
     "be-rvv-case-sample-320874",
     "be-annex-19ter-fr",
     "be-05-federal-justice-guidance-recognition-registration-foreign-adoptions",
-    "be-dpa-complaint-fr"
+    "be-dpa-complaint-fr",
+    "be-mobile-belgian-40ter",
+    "be-eu-family-guidance"
   ],
   "local_copy_decisions": [
     {
@@ -629,6 +631,39 @@
         "legal_classification": "Official APD procedural guidance. It is not the Federal Data Protection Act, an immigration appeal procedure, or a guarantee that a complaint will be examined on its merits."
       },
       "scope_limit": "Dated snapshot only; direct page was under maintenance on 2026-10-24. Confirm the restored official page before relying on current filing steps. No topic coverage or Belgium completion is established."
+    },
+    {
+      "source_id": "be-mobile-belgian-40ter",
+      "decision": "accepted_scoped_source_note",
+      "local_path": "source-library/belgium/documents/guidance/be-mobile-belgian-40ter.md",
+      "review_date": "2026-10-29",
+      "official_url": "https://dofi.ibz.be/nl/themes/ressortissants-dun-pays-tiers/regroupement-familial/avec-un-belge/gezinshereniging-met-een",
+      "evidence": {
+        "publisher_identity": "The live Dutch IBZ/Dofi page was opened on 2026-10-29; its title and route identify family reunification with a Belgian returnee under Article 40ter §1.",
+        "version_currentness": "The page cites the Law of 10 March 2024, effective 1 September 2024, and has no displayed update date. The official Justel consolidation is updated through 2026-06-24; its Article 40ter §1 matches the described returnee route and three conditions.",
+        "extraction_completeness": "The captured page rendering interleaves the target Article 40ter text with unrelated generic EU-family text, so that capture was not promoted. The accepted Markdown is complete for its narrower scope as an independently written, dated source locator and provision summary.",
+        "attachments": "No linked form or payload is included or relied upon by this source note.",
+        "legal_classification": "Official IBZ/Dofi administrative guidance on Article 40ter §1; the Law of 15 December 1980 remains controlling.",
+        "lawful_reuse": "No page prose or layout is copied and no IBZ licence is asserted. The Markdown contains source-identifying facts and an independently worded summary only."
+      },
+      "scope_limit": "Accepted as a maintained factual locator/summary of the specific official page and provision. Not a verbatim transcription, not individualized legal advice, and not a substitute for current Justel legislation.",
+      "document_sha256": "a1246ba543bfb20f0d4e5aeca48825fe8425cc318b095f7a34a800b4972187f8"
+    },
+    {
+      "source_id": "be-eu-family-guidance",
+      "decision": "accepted_scoped_source_note",
+      "local_path": "source-library/belgium/documents/guidance/be-eu-family-guidance.md",
+      "review_date": "2026-10-29",
+      "official_url": "https://dofi.ibz.be/en/themes/citizens-european-union/family-reunification",
+      "evidence": {
+        "publisher_identity": "The live overview is hosted on the official Belgian IBZ/Dofi site. Its linked detailed page identifies the Immigration Office and the Law of 15 December 1980.",
+        "version_currentness": "Both pages were opened on 2026-10-29. The overview has no displayed update date; detailed guidance cites the Law of 10 March 2024, effective 1 September 2024. No claim is made that the guidance itself is fully current.",
+        "extraction_completeness": "The overview's rendered text is incomplete and the detailed linked page contains malformed terms/cross-references. The Markdown is an independently worded narrow summary of readable route distinctions; it is not a full page conversion.",
+        "attachments": "No forms or linked attachments are included. Separate EU-citizen-family guidance link failed to retrieve during this review.",
+        "legal_classification": "Official administrative guidance related to Articles 40bis and 47/2 of the Belgian Law of 15 December 1980 and Directive 2004/38/EC. The legislation remains controlling.",
+        "lawful_reuse": "No publisher prose or layout is reproduced and no reuse licence is asserted. The file contains source-identifying facts and an independently worded summary only."
+      },
+      "scope_limit": "Accepted as a maintained locator and limited source summary for third-country family members of EU/associated-country citizens. Not a complete account of the page or law; the separate EU-family-member page was inaccessible. Recheck the current law and pages before reliance."
     }
   ]
 }

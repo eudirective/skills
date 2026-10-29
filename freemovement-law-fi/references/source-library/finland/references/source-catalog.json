@@ -1,12 +1,12 @@
 {
   "catalog_version": 1,
-  "catalog_date": "2026-10-24",
+  "catalog_date": "2026-10-29",
   "catalog_status": "partial_retrieval_review_candidates",
   "jurisdiction": "Finland (FI)",
   "scope": "Official Finnish sources related to EU, EEA and Swiss free movement; third-country family members; visa and consular routes; administrative procedure, access to information, remedies, oversight, privacy, legal aid and administrative courts. This is a bounded discovery register, not a statement of legal equivalence or complete coverage.",
   "accepted_source_count": 2,
   "candidate_source_count": 37,
-  "acquisition_rule_status": "Thirty-four official external references are accepted with item-specific limits; two Finnish current-law conversions are accepted as dated local copies. One obsolete Migri route is dispositioned as already represented and wrong scope. Two oversight sites remain under human review. Unaccepted page/text conversions stay in the Monitor local-only archive; source acceptance, local copies, topic coverage and completion remain separate.",
+  "acquisition_rule_status": "Thirty-five official external references are accepted with item-specific limits; two Finnish current-law conversions are accepted as dated local copies. Two maintained source locator notes record the Ministry for Foreign Affairs visa guidance and DVV foreigner-registration routes without copying page content; the DVV summary is limited to current linked form instructions because its parent pages returned 403. One obsolete Migri route is dispositioned as already represented and wrong scope. Two oversight sites remain under human review. Unaccepted converted page and text artifacts remain local-only.",
   "official_change_channels": {
     "national_legal_database": "https://www.finlex.fi/",
     "open_data_documentation": "https://www.finlex.fi/en/open-data",
@@ -695,14 +695,19 @@
         "record": "EU citizen registration guidance"
       },
       "functional_relationship": "close_functional_match",
-      "verification_status": "Official Migri page identity and scope verified through official-domain search on 2026-10-24; link accepted without a local copy. Dynamic instructions remain subject to live recheck.",
+      "verification_status": "Exact current Migri page title, URL and substantive English indexed text confirmed on 2026-10-29; direct page request returned HTTP 403; an attributed maintained summary is now recorded.",
       "retrieval_status": "official_locator_only",
-      "retrieval_shape": "Official HTML guidance with links to forms and Enter Finland; direct inspection blocked",
+      "retrieval_shape": "Official HTML guidance page with requirements, attachment categories, Enter Finland and paper application instructions; indexed text accessible, direct viewer fetch blocked.",
       "seed_status": "candidate",
-      "check_note": "Search evidence describes registration after three months, family routes, service channels and appeal; Nordic citizens use a different registration route.",
+      "check_note": "Official indexed content states EU/Liechtenstein/Swiss registration after over three months, distinguishes Nordic DVV registration, lists work/study/family grounds and documents, and includes Finnish-citizen cross-border conditions and appeal route. Fees/estimates are dynamic.",
       "monitor_retrieval_status": "retrieval_or_conversion_error",
       "monitor_retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
-      "accepted": false
+      "accepted": false,
+      "external_reference_accepted": true,
+      "external_reference_checked_at": "2026-10-29",
+      "maintained_markdown_path": "documents/guidance/fi-migri-eu-registration-guidance.md",
+      "maintained_markdown_blob_sha": "4b4eb63054c7f0f91a966b88c74593a103c9ba7a",
+      "local_copy_status": "No verbatim copy accepted; maintained summary of official indexed rendering recorded in documents/guidance/fi-migri-eu-registration-guidance.md. Direct viewer request returned 403."
     },
     {
       "id": "fi-migri-eu-family-guidance",
@@ -710,22 +715,24 @@
       "authority": "Migri",
       "class": "immigration_authority_guidance",
       "language": "en-fi-sv",
-      "official_url": "https://migri.fi/en/i-am-a-family-member-of-an-eu-citizen",
+      "official_url": "https://migri.fi/en/i-am-an-eu-citizen-or-a-family-member",
       "publisher_identifier": {
         "system": "Migri",
         "record": "EU citizen and family member landing page"
       },
-      "functional_relationship": "partial_functional_match",
-      "verification_status": "Official Migri page identity and scope verified through official-domain search on 2026-10-24; link accepted without a local copy. Dynamic instructions remain subject to live recheck.",
+      "functional_relationship": "related_source",
+      "verification_status": "Current official landing page identity and indexed substantive text confirmed 2026-10-29; direct viewer request returned HTTP 403. A scoped maintained summary records the indexed rendering.",
       "retrieval_status": "official_locator_only",
       "retrieval_shape": "HTML topic landing page and application-finder links",
       "seed_status": "candidate",
-      "check_note": "Search snippet includes EU, Icelandic, Liechtenstein, Norwegian and Swiss nationals, while Nordic citizens follow a distinct procedure.",
+      "check_note": "Landing page states residence-permit exemption for EU, Icelandic, Liechtenstein, Norwegian and Swiss citizens and registration after three months; detailed family-member requirements are in separate routes.",
       "monitor_retrieval_status": "retrieval_or_conversion_error",
       "monitor_retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
       "external_reference_accepted": true,
       "external_reference_checked_at": "2026-10-24",
-      "accepted": false
+      "accepted": false,
+      "maintained_markdown_path": "documents/guidance/fi-migri-eu-family-guidance.md",
+      "maintained_markdown_sha": "5e26603fb2357a6eb40d56edd2ab861c7691639b"
     },
     {
       "id": "fi-migri-family-residence-card",
@@ -828,16 +835,19 @@
         "record": "International moving and registration information"
       },
       "functional_relationship": "partial_functional_match",
-      "verification_status": "The exact English route is linked from the official DVV municipality form; direct page access returned 403. Accepted as a locator only, not as reviewed guidance.",
-      "retrieval_status": "official_locator_only",
+      "verification_status": "Exact DVV English guidance route remains inaccessible (403); current official DVV forms link to it and were reviewed for limited identity-code and municipality-of-residence procedure.",
+      "retrieval_status": "official_locator_with_scoped_linked_form_review",
       "retrieval_shape": "HTML guidance with service and appointment links",
       "seed_status": "candidate",
       "check_note": "Municipality-of-residence registration is separate from registration of an EU citizen's right of residence. Nordic nationals use a distinct route.",
       "monitor_retrieval_status": "retrieval_or_conversion_error",
-      "monitor_retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "monitor_retrieval_note": "Direct target HTTP 403; official linked DVV forms reviewed 2026-10-29 for scoped procedure only.",
       "external_reference_accepted": true,
       "external_reference_checked_at": "2026-10-24",
-      "accepted": false
+      "accepted": false,
+      "checked_at": "2026-10-29",
+      "maintained_note_path": "documents/guidance/fi-dvv-foreign-registration.md",
+      "maintained_note_status": "accepted_scoped_summary_with_page_access_limit"
     },
     {
       "id": "fi-dvv-municipality-form",
@@ -851,8 +861,8 @@
         "record": "Municipality of residence application form 6889"
       },
       "functional_relationship": "related_source",
-      "verification_status": "Official form search result inspected; identity and personal-data fields visible in page output",
-      "retrieval_status": "changed_review_candidate",
+      "verification_status": "Official DVV dynamic form fully reviewed in its rendered English form on 2026-10-29. Instructions and field schema are maintained at documents/forms/fi-dvv-municipality-form.md; raw HTML and client-side validation are not preserved.",
+      "retrieval_status": "maintained_markdown_transcription",
       "retrieval_shape": "Dynamic web form; manual applicant submission",
       "seed_status": "candidate",
       "check_note": "Monitor public form identity and linked instructions only; do not automate submission or retain personal data.",
@@ -868,8 +878,12 @@
       "retrieval_note": "A changed official response was saved for manual review; the new version is staged under temp/finland/pending.",
       "external_reference_accepted": true,
       "external_reference_checked_at": "2026-10-24",
-      "local_copy_status": "no local copy accepted; captured page conversion archived in Monitor local-only archive",
-      "monitor_archive_path": "candidates/public-data/finland/monitor-candidates/fi-dvv-municipality-form.md"
+      "local_copy_status": "Maintained Markdown transcription of complete rendered instructions and field schema; raw HTML, selector values, and dynamic behavior not retained. Earlier captured JavaScript fallback remains unaccepted.",
+      "monitor_archive_path": "candidates/public-data/finland/monitor-candidates/fi-dvv-municipality-form.md",
+      "maintained_markdown_path": "documents/forms/fi-dvv-municipality-form.md",
+      "maintained_markdown_checked_at": "2026-10-29",
+      "exact_source_copy_accepted": false,
+      "maintained_markdown_note_accepted": true
     },
     {
       "id": "fi-mfa-visa-guide",
@@ -900,8 +914,9 @@
       "monitor_converted_sha256": "e8fc8182d87b4cdee81b39045c26d0b7e4d03a396c98e89b7583eb72fb0c08b4",
       "monitor_archive_path": "candidates/public-data/finland/monitor-candidates/fi-mfa-visa-guide.md",
       "external_reference_accepted": true,
-      "external_reference_checked_at": "2026-10-24",
-      "local_copy_status": "no local copy accepted; captured page conversion archived in Monitor local-only archive"
+      "external_reference_checked_at": "2026-10-29",
+      "local_copy_status": "No source page copy accepted; independently authored maintained locator at documents/guidance/fi-mfa-visa-guide.md; no page content retained.",
+      "maintained_locator_path": "documents/guidance/fi-mfa-visa-guide.md"
     },
     {
       "id": "fi-mfa-visa-faq",
@@ -971,9 +986,9 @@
         "record": "Appealing against authority decision"
       },
       "functional_relationship": "related_source",
-      "verification_status": "Official Ministry of Justice judicial website page inspected; general administrative appeal process described",
-      "retrieval_status": "converted_review_candidate",
-      "retrieval_shape": "official candidate page -> exact response -> deterministic text conversion",
+      "verification_status": "Official Oikeus.fi page directly reviewed in full substantive form on 2026-10-29; Ministry of Justice maintains the portal. Maintained summary: documents/guidance/fi-oikeus-appeal-guidance.md.",
+      "retrieval_status": "maintained_markdown_summary",
+      "retrieval_shape": "complete substantive official page directly reviewed; structured summary",
       "seed_status": "candidate",
       "check_note": "General route information; it does not replace the time limit and filing instructions attached to a specific authority decision.",
       "retrieved": true,
@@ -989,7 +1004,11 @@
       "monitor_archive_path": "candidates/public-data/finland/monitor-candidates/fi-oikeus-appeal-guidance.md",
       "external_reference_accepted": true,
       "external_reference_checked_at": "2026-10-24",
-      "local_copy_status": "no local copy accepted; captured page conversion archived in Monitor local-only archive"
+      "local_copy_status": "Maintained Markdown summary; raw HTML and verbatim conversion not retained.",
+      "maintained_markdown_path": "documents/guidance/fi-oikeus-appeal-guidance.md",
+      "maintained_markdown_checked_at": "2026-10-29",
+      "maintained_markdown_note_accepted": true,
+      "exact_source_copy_accepted": false
     },
     {
       "id": "fi-oikeus-public-access",
@@ -1266,11 +1285,36 @@
       "retrieved": false,
       "accepted": false,
       "external_reference_accepted": true
+    },
+    {
+      "id": "fi-migri-eu-family-finder-step",
+      "title": "I am a family member of an EU citizen",
+      "authority": "Migri",
+      "class": "immigration_authority_guidance",
+      "language": "en-fi-sv",
+      "official_url": "https://migri.fi/en/i-am-a-family-member-of-an-eu-citizen",
+      "publisher_identifier": {
+        "system": "Migri",
+        "record": "EU citizen and family member landing page"
+      },
+      "functional_relationship": "partial_functional_match",
+      "verification_status": "Current Migri application-finder step identified through official-domain search; direct viewer request returned HTTP 403.",
+      "retrieval_status": "official_locator_only",
+      "retrieval_shape": "HTML topic landing page and application-finder links",
+      "seed_status": "candidate",
+      "check_note": "Separate family-member application-finder route linked from the EU/family landing page; not the landing page and not the detailed residence-card guidance.",
+      "monitor_retrieval_status": "retrieval_or_conversion_error",
+      "monitor_retrieval_note": "HTTPError: HTTP Error 403: Forbidden",
+      "external_reference_accepted": true,
+      "external_reference_checked_at": "2026-10-24",
+      "accepted": false
     }
   ],
   "retrieved_review_candidate_count": 23,
   "converted_review_candidate_count": 21,
-  "accepted_external_reference_count": 34,
+  "accepted_external_reference_count": 35,
   "accepted_local_copy_count": 2,
-  "retrieval_status": null
+  "retrieval_status": null,
+  "maintained_locator_note_count": 2,
+  "maintained_markdown_record_count": 5
 }

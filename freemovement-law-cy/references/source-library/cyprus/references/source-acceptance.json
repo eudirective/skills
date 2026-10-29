@@ -1,13 +1,13 @@
 {
   "schema_version": "1.3.0",
   "jurisdiction": "CY",
-  "as_of": "2026-10-21",
+  "as_of": "2026-10-29",
   "accepted_source_count": 10,
   "accepted_current_law_source_count": 2,
   "accepted_derived_text_count": 2,
   "accepted_topic_count": 0,
   "country_review_complete": false,
-  "accepted_external_reference_count": 17,
+  "accepted_external_reference_count": 24,
   "external_reference_decisions": [
     {
       "source_id": "cy-admin-court-amendment-142i-2025",
@@ -168,7 +168,7 @@
       "decision": "accepted_with_narrow_external_scope",
       "accepted_role": "Official OLC English translation/consolidation publication metadata for Law 7(I)/2007, its stated May 2024 publication date and listed cutoff through 96(I)/2023.",
       "not_accepted": [
-        "A locally stored artifact; the PDF response bytes and hash remain pending.",
+        "A locally stored artifact; PDF response bytes and hash remain pending.",
         "Any complete statutory provision text or the authentic Greek text.",
         "The complete or current consolidated Law 7(I)/2007, or absence of amendments after 96(I)/2023.",
         "The current commencement or legal effect of provisions listed in the consolidation."
@@ -176,13 +176,15 @@
       "evidence": {
         "official_index_url": "https://www.gov.cy/officelawcommissioner/en/documents/competences-of-the-law-commissioner/translations-consolidations/",
         "official_pdf_url": "https://www.olc.gov.cy/olc/olc.nsf/DB4EF1023FE5BB54C2258B2D001FE738/%24file/The%20right%20of%20citizens.pdf",
-        "retrieved_at": "2026-10-19T22:35:06Z",
+        "retrieved_at": "2026-10-29",
         "language": "en",
         "version": "Official OLC English translation/consolidation, Laws 2007 to 2023; front matter dated May 2024; listed amendments through 96(I)/2023.",
         "verified_locations": "OLC translations index entry for Law 7(I)/2007 (27 MB PDF); PDF front matter publication title, date and amendment list.",
-        "retrieval_limit": "Direct PDF open returned HTTP 500; no local response bytes or hash.",
-        "research_finding": "R-20261019T144048Z-b92d10fc / F1"
-      }
+        "retrieval_limit": "Direct OLC PDF and Gov.cy index opens returned access/server errors in this review environment. Official search output exposed the PDF front matter and index entries; no local PDF bytes, hash, page count or full text were verified.",
+        "research_finding": "R-20261019T144048Z-b92d10fc / F1",
+        "current_index_evidence": "The Migration Department legislation page published 2025-12-19 continues to list Law 7(I)/2007 and describes linked consolidations as unofficial; this does not establish the English PDF's post-2023 currency."
+      },
+      "maintained_note_path": "source-library/cyprus/documents/legislation/cy-law-7i-2007-olc-english-consolidation.md"
     },
     {
       "source_id": "cy-gazette-law-23-2024-chain-reference",
@@ -329,6 +331,132 @@
         "verified_locations": "Page heading identifies appellate decisions under section 23 of Law 33/64; the 2026 list includes entries dated through 5 October 2026.",
         "retrieval_limit": "The official index was directly reopened; no individual decisions were screened in this review. The saved dynamic-query response remains text-poor and does not constitute an accepted local text copy."
       }
+    },
+    {
+      "source_id": "cy-cypriot-family-employment-forms",
+      "decision": "accepted_with_narrow_external_scope",
+      "accepted_role": "Official CYE page index for employment-category forms and listed file types/names only. Maintained project-authored note at source-library/cyprus/documents/forms/cy-cypriot-family-employment-forms.md records that scope and the access limitation.",
+      "not_accepted": [
+        "Contents, completeness, current version or field sequence of any attached form.",
+        "Eligibility or legal requirements for family members of Cypriot citizens."
+      ],
+      "evidence": {
+        "official_source_url": "https://www.gov.cy/mip-md/en/documents/cypriots-family-members-with-employment-cye/",
+        "publisher": "Migration Department, Republic of Cyprus",
+        "indexed_posting_date": "2025-12-29",
+        "checked_on": "2026-10-29",
+        "language": "English",
+        "reviewed_content": "Official gov.cy search index identifies the CYE bundle, posting date, MCYE application, parent/spouse checklist, and common support forms. Direct page fetch returned HTTP 403 on 2026-10-29.",
+        "retrieval_limit": "Direct browser access returned HTTP 403. Evidence is the official gov.cy search-index text crawled on 28–29 October 2026; attachment bodies were not retrieved."
+      }
+    },
+    {
+      "source_id": "cy-cypriot-family-no-employment-forms",
+      "decision": "accepted_with_narrow_external_scope",
+      "accepted_role": "Official CYV page index for no-employment-category forms and listed file types/names only. Maintained project-authored note at source-library/cyprus/documents/forms/cy-cypriot-family-no-employment-forms.md records that scope and the access limitation.",
+      "not_accepted": [
+        "Contents, completeness, current version or field sequence of any attached form.",
+        "Whether a specific applicant belongs in CYV or is permitted to work."
+      ],
+      "evidence": {
+        "official_source_url": "https://www.gov.cy/mip-md/en/documents/cypriots-family-members-without-employment-cyv/",
+        "publisher": "Migration Department, Republic of Cyprus",
+        "indexed_posting_date": "2025-12-29",
+        "checked_on": "2026-10-29",
+        "language": "English",
+        "reviewed_content": "Official gov.cy search index identifies the CYV bundle, posting date, MCYV application and dependent ascendant/parent/spouse/minor checklists, affidavit and common support forms. Direct page fetch returned HTTP 403 on 2026-10-29.",
+        "retrieval_limit": "Direct browser access returned HTTP 403. Evidence is the official gov.cy search-index text crawled on 28–29 October 2026; attachment bodies were not retrieved."
+      }
+    },
+    {
+      "source_id": "cy-cypriot-family-route",
+      "decision": "accepted_with_narrow_external_scope",
+      "accepted_role": "Official Migration Department administrative guidance on entry/residence and application route for third-country family members of Cypriot citizens, as reflected in the current official indexed page. Maintained project-authored note at source-library/cyprus/documents/guidance/cy-cypriot-family-route.md records that scope and the access limitation.",
+      "not_accepted": [
+        "Current statutory text or complete legal conditions under Cap. 105.",
+        "Individual eligibility or the separate EU/EEA/UK family routes."
+      ],
+      "evidence": {
+        "official_source_url": "https://www.gov.cy/mip-md/en/documents/temporary-residence/family-members-of-cypriots/",
+        "publisher": "Migration Department, Republic of Cyprus",
+        "indexed_posting_date": "2025-12-30",
+        "checked_on": "2026-10-29",
+        "language": "English",
+        "reviewed_content": "Official gov.cy index identifies the guidance page and displays the described family categories, entry/re-entry, application, fee and processing information. Direct page fetch returned HTTP 403 on 2026-10-29.",
+        "retrieval_limit": "Direct browser access returned HTTP 403. Evidence is the official gov.cy search-index text crawled on 28–29 October 2026; attachment bodies were not retrieved."
+      }
+    },
+    {
+      "source_id": "cy-cypriot-family-route-el",
+      "decision": "accepted_with_narrow_external_scope",
+      "accepted_role": "Official Greek Migration Department guidance on entry and residence of third-country family members of Cypriot citizens, as reflected in the official indexed page. A maintained Greek-language project note records the verified scope and retrieval limit.",
+      "not_accepted": [
+        "The statutory text or complete current requirements under Cap. 105.",
+        "Individual eligibility determinations or the separate EU/EEA and UK free-movement family routes.",
+        "A complete operational application route or current linked-form inventory."
+      ],
+      "evidence": {
+        "official_source_url": "https://www.gov.cy/mip-md/documents/prosorini-diamoni/meli-oikogeneias-kyprion/",
+        "publisher": "Migration Department, Republic of Cyprus",
+        "indexed_posting_date": "2025-12-30",
+        "checked_on": "2026-10-29",
+        "language": "Greek",
+        "reviewed_content": "Official gov.cy indexed page identifies Cap.105 as the governing law with a facilitation policy; lists eligible third-country family categories; and summarizes retention, permit duration, residence, and labour-market information.",
+        "retrieval_limit": "Direct page fetch returned HTTP 403. Review used the official gov.cy indexed text crawled 28–29 October 2026; the full page response and linked materials were not captured."
+      }
+    },
+    {
+      "source_id": "cy-eueea-registration-guidance",
+      "decision": "accepted_with_narrow_external_scope",
+      "accepted_role": "Official navigation page identifying MEU1 registration for EU/EEA citizens and family members who are also EU/EEA citizens, MEU3 permanent residence, and a separate route for family members of EU/EEA citizens.",
+      "not_accepted": [
+        "Substantive MEU1 or MEU3 eligibility, requirements, procedures, or current law.",
+        "The separate third-country family-member route."
+      ],
+      "evidence": {
+        "official_source_url": "https://www.gov.cy/mip-md/en/documents/e-u-e-e-a-citizens-and-family-members-2/e-u-e-e-a-citizens-family-member/",
+        "publisher": "Migration Department, Republic of Cyprus",
+        "checked_on": "2026-10-29",
+        "language": "English",
+        "reviewed_content": "The official page is titled E.U./E.E.A. Citizens and lists MEU1 and MEU3 as content links; it directs family members to a separate page.",
+        "retrieval_limit": "Direct page fetch returned HTTP 403 on 2026-10-29. Review used official gov.cy search-index text crawled 28–29 October 2026; the full page response and linked documents were not captured."
+      }
+    },
+    {
+      "source_id": "cy-meu1-guidance",
+      "decision": "accepted_with_narrow_external_scope",
+      "accepted_role": "Official indexed guidance on registration certificates for EU/EEA and Swiss nationals and qualifying family members who are themselves in the Union grouping.",
+      "not_accepted": [
+        "Complete text of Law 7(I)/2007 or Directive 2004/38.",
+        "All qualifications, exceptions, supporting-document requirements, and application details not present in the indexed text.",
+        "The separate MEU2 third-country family route or UK Withdrawal Agreement route."
+      ],
+      "evidence": {
+        "official_source_url": "https://www.gov.cy/mip-md/en/documents/e-u-e-e-a-citizens-and-family-members-2/e-u-e-e-a-citizens-family-member/registration-of-e-u-citizens-and-members-of-their-families-who-are-also-e-u-e-e-a-citizens-meu1/",
+        "publisher": "Migration Department, Republic of Cyprus",
+        "checked_on": "2026-10-29",
+        "language": "English",
+        "reviewed_content": "The page describes up-to-three-month residence, longer-stay categories as indexed, MEU1 filing within four months, fee and decision timing, certificate term, employment access and a penalty for non-application.",
+        "retrieval_limit": "Direct page fetch returned HTTP 403 on 2026-10-29. Review used official gov.cy search-index text crawled 28–29 October 2026; the full page response and linked documents were not captured."
+      }
+    },
+    {
+      "source_id": "cy-meu2-guidance",
+      "decision": "accepted_with_narrow_external_scope",
+      "accepted_role": "Official indexed Migration Department guidance on entry and residence of third-country family members of EU/EEA and Swiss citizens, summarized within the indexed text only.",
+      "not_accepted": [
+        "Complete current statutory requirements or individual eligibility under Law 7(I)/2007 and Directive 2004/38.",
+        "Complete linked MEU2 form or supporting-document requirements.",
+        "Resolution of the page's inconsistent “Registration Certificate” and “Residence Card (MEU2)” wording."
+      ],
+      "evidence": {
+        "official_source_url": "https://www.gov.cy/mip-md/en/documents/e-u-e-e-a-citizens-and-family-members-2/e-u-e-e-a-citizens-family-member-2/entry-and-residence-of-third-country-nationals-who-are-family-members-of-an-e-u-e-e-a-citizen-meu2/",
+        "publisher": "Migration Department, Republic of Cyprus",
+        "checked_on": "2026-10-29",
+        "language": "English",
+        "reviewed_content": "Official indexed page lists third-country family categories, entry/visa rules, residence periods, MEU2 application, fees, biometrics, examination time, card duration, employment and retention headings/content.",
+        "retrieval_limit": "Direct page fetch returned HTTP 403 on 2026-10-29. The review used official gov.cy search-index text crawled 28–29 October 2026; the full page and linked files were not captured."
+      }
     }
   ],
   "local_copy_status_counts": {
@@ -339,8 +467,8 @@
   },
   "external_reference_status_counts": {
     "route_verified": 22,
-    "not_assessed": 49,
-    "accepted": 17,
+    "not_assessed": 45,
+    "accepted": 24,
     "unavailable": 2
   },
   "source_disposition_policy": {
@@ -1105,6 +1233,122 @@
       "replay_candidate_path": "source-library/cyprus/documents/legislation/cy-protocol-no-10-el.md",
       "candidate_archive_path": "candidates/public-data/CY/legislation/cy-protocol-no-10-el.md",
       "candidate_archive_sha256": "40a5e9cba3053fe5e225aef7b5eb9ec7d298f4efc63d20f0b99859b7cc6a737f"
+    }
+  ],
+  "accepted_maintained_source_note_count": 9,
+  "maintained_source_notes": [
+    {
+      "source_id": "cy-cypriot-family-employment-forms",
+      "status": "accepted_project_authored_source_note",
+      "document_path": "source-library/cyprus/documents/forms/cy-cypriot-family-employment-forms.md",
+      "checked_on": "2026-10-29",
+      "scope": "Official CYE page index for employment-category forms and listed file types/names only.",
+      "limits": [
+        "Contents, completeness, current version or field sequence of any attached form.",
+        "Eligibility or legal requirements for family members of Cypriot citizens."
+      ],
+      "source_url": "https://www.gov.cy/mip-md/en/documents/cypriots-family-members-with-employment-cye/"
+    },
+    {
+      "source_id": "cy-cypriot-family-no-employment-forms",
+      "status": "accepted_project_authored_source_note",
+      "document_path": "source-library/cyprus/documents/forms/cy-cypriot-family-no-employment-forms.md",
+      "checked_on": "2026-10-29",
+      "scope": "Official CYV page index for no-employment-category forms and listed file types/names only.",
+      "limits": [
+        "Contents, completeness, current version or field sequence of any attached form.",
+        "Whether a specific applicant belongs in CYV or is permitted to work."
+      ],
+      "source_url": "https://www.gov.cy/mip-md/en/documents/cypriots-family-members-without-employment-cyv/"
+    },
+    {
+      "source_id": "cy-cypriot-family-route",
+      "status": "accepted_project_authored_source_note",
+      "document_path": "source-library/cyprus/documents/guidance/cy-cypriot-family-route.md",
+      "checked_on": "2026-10-29",
+      "scope": "Official Migration Department administrative guidance on entry/residence and application route for third-country family members of Cypriot citizens, as reflected in the current official indexed page.",
+      "limits": [
+        "Current statutory text or complete legal conditions under Cap. 105.",
+        "Individual eligibility or the separate EU/EEA/UK family routes."
+      ],
+      "source_url": "https://www.gov.cy/mip-md/en/documents/temporary-residence/family-members-of-cypriots/"
+    },
+    {
+      "source_id": "cy-cypriot-family-route-el",
+      "status": "accepted_project_authored_source_note",
+      "document_path": "source-library/cyprus/documents/guidance/cy-cypriot-family-route-el.md",
+      "checked_on": "2026-10-29",
+      "scope": "Official Greek Migration Department guidance on family members of Cypriot citizens, summarized only within the current indexed text.",
+      "limits": [
+        "Direct page fetch returned HTTP 403; the full page and linked materials were not captured.",
+        "Not statutory text, complete current eligibility rules, or individual legal advice.",
+        "EU/EEA and UK free-movement routes remain distinct."
+      ],
+      "source_url": "https://www.gov.cy/mip-md/documents/prosorini-diamoni/meli-oikogeneias-kyprion/"
+    },
+    {
+      "source_id": "cy-eueea-registration-guidance",
+      "status": "accepted_project_authored_source_note",
+      "document_path": "source-library/cyprus/documents/guidance/cy-eueea-registration-guidance.md",
+      "checked_on": "2026-10-29",
+      "scope": "Official index for MEU1 and MEU3 information routes and separate EU/EEA family route.",
+      "limits": [
+        "Navigation page only; not substantive eligibility or procedure.",
+        "Direct page fetch returned HTTP 403; only official indexed text was reviewed."
+      ],
+      "source_url": "https://www.gov.cy/mip-md/en/documents/e-u-e-e-a-citizens-and-family-members-2/e-u-e-e-a-citizens-family-member/"
+    },
+    {
+      "source_id": "cy-meu1-guidance",
+      "status": "accepted_project_authored_source_note",
+      "document_path": "source-library/cyprus/documents/guidance/cy-meu1-guidance.md",
+      "checked_on": "2026-10-29",
+      "scope": "Official indexed guidance on MEU1 registration for EU/EEA and Swiss citizens and qualifying family members who are themselves Union citizens.",
+      "limits": [
+        "Direct page fetch returned HTTP 403; full guidance and linked attachments were not captured.",
+        "Summary does not replace current Law 7(I)/2007 or give complete eligibility requirements.",
+        "Separate from MEU2, third-country family-member guidance, and UK routes."
+      ],
+      "source_url": "https://www.gov.cy/mip-md/en/documents/e-u-e-e-a-citizens-and-family-members-2/e-u-e-e-a-citizens-family-member/registration-of-e-u-citizens-and-members-of-their-families-who-are-also-e-u-e-e-a-citizens-meu1/"
+    },
+    {
+      "source_id": "cy-meu2-guidance",
+      "status": "accepted_project_authored_source_note",
+      "document_path": "source-library/cyprus/documents/guidance/cy-meu2-guidance.md",
+      "checked_on": "2026-10-29",
+      "scope": "Official indexed MEU2 guidance for third-country family members of EU/EEA and Swiss sponsors; summary only.",
+      "limits": [
+        "Direct page returned HTTP 403; full text and linked forms were not retrieved.",
+        "The indexed text inconsistently calls MEU2 a Registration Certificate and a Residence Card; legal significance unresolved.",
+        "Not a full statement of current law or individual eligibility."
+      ],
+      "source_url": "https://www.gov.cy/mip-md/en/documents/e-u-e-e-a-citizens-and-family-members-2/e-u-e-e-a-citizens-family-member-2/entry-and-residence-of-third-country-nationals-who-are-family-members-of-an-e-u-e-e-a-citizen-meu2/"
+    },
+    {
+      "source_id": "cy-cap105-olc-greek-consolidation",
+      "status": "accepted_project_authored_source_note",
+      "document_path": "source-library/cyprus/documents/legislation/cy-cap105-olc-greek-consolidation-gen-n72.md",
+      "checked_on": "2026-10-29",
+      "scope": "Official OLC Greek GEN-N.72 Cap. 105 consolidation identity and 2024 publication, with version/currentness limit and link to the official 2025 amending Act section 29 record.",
+      "limits": [
+        "Full OLC PDF could not be retrieved and validated page by page; no full text or provision wording is accepted.",
+        "The 2024 consolidation predates Law 4(I)/2025; commencement notice and operative status remain unresolved.",
+        "This note is not a current consolidated text or legal advice."
+      ],
+      "source_url": "https://www.olc.gov.cy/olc/olc.nsf/6104940C95908049C2258B7200330D64/$file/%CE%9F%20%CF%80%CE%B5%CF%81%CE%AF%20%CE%91%CE%BB%CE%BB%CE%BF%CE%B4%CE%B1%CF%80%CF%8E%CE%BD%20%CE%BA%CE%B1%CE%B9%20%CE%9C%CE%B5%CF%84%CE%B1%CE%BD%CE%B1%CF%83%CF%84%CE%B5%CF%8D%CF%83%CE%B5%CF%89%CF%82%20%CE%9D%CF%8C%CE%BC%CE%BF%CF%82%2C%20%CE%9A%CE%B5%CF%86.105%20%282%29.pdf"
+    },
+    {
+      "source_id": "cy-free-movement-consolidation",
+      "status": "accepted_project_authored_source_note",
+      "document_path": "source-library/cyprus/documents/legislation/cy-law-7i-2007-olc-english-consolidation.md",
+      "checked_on": "2026-10-29",
+      "scope": "OLC English translation/consolidation publication identity, May 2024 publication date and listed amendment cutoff through Law 96(I)/2023; currentness and retrieval limits.",
+      "limits": [
+        "No local PDF bytes, page count, hash or complete law text accepted; direct retrieval failed.",
+        "Post-2023 amendment status is unresolved; do not infer that the cutoff is current.",
+        "English translation/consolidation is not authentic Gazette text; current legal effect and commencement remain separate."
+      ],
+      "source_url": "https://www.olc.gov.cy/olc/olc.nsf/DB4EF1023FE5BB54C2258B2D001FE738/$file/The%20right%20of%20citizens.pdf"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1.0",
   "jurisdiction": "PL",
-  "as_of": "2026-10-25",
+  "as_of": "2026-10-29",
   "source_review_manifest": "source-review-manifest.json",
   "required_checks": [
     "publisher_identity",
@@ -24,10 +24,10 @@
   "policy": "For ordinary research, accept a trustworthy official link when publisher, exact instrument/page, language, scope, displayed status or version/cutoff, legal classification and material caveats are clear. Prefer a government-published consolidated text. If exact identity, scope or a material currentness question cannot be established confidently, offer the whole relevant official website or portal for human review. Review linked attachments when they are relied upon. Extraction, integrity and retention/reuse checks apply only when accepting a retained local copy or planning copying/republication. API access, registration, retrieval, conversion, hashes and replay are not prerequisites for link use. Link acceptance, local-copy acceptance, topic adequacy and country completion are separate decisions.",
   "counts": {
     "reviewed_source_references": 63,
-    "accepted_external_references": 54,
+    "accepted_external_references": 56,
     "historical_reference_only": 4,
-    "not_relied_upon_or_human_review_offered": 5,
-    "accepted_local_copies": 26,
+    "not_relied_upon_or_human_review_offered": 3,
+    "accepted_local_copies": 29,
     "accepted_topics": 0,
     "country_review_complete": false,
     "source_records": 63
@@ -37,7 +37,7 @@
     "owner": "Polish public authorities; legal publication records are published through ELI by the Chancellery of the Sejm",
     "decision": "Accept clear official references within the source-specific scope recorded in source-review-manifest.json; offer whole-site review for routes whose current content or operation was not directly established.",
     "basis": "Official ELI metadata identifies consolidated instruments, publication records, status dates and later-amendment markers. Captured official pages identify the responsible agencies and stated operational topics. The 2026 review added official ELI links for e-delivery, SIS/VIS implementation, constitutional remedies, fees, Ombudsman oversight, complaint handling, and permanent-residence forms.",
-    "limitation": "A link is not a legal conclusion. Dated legal texts and government guidance must be rechecked for later amendments, page changes and applicability. Twenty-six source-text copies are accepted under documents/ with source-specific version, extraction and reuse limits. Twenty-four other candidate captures are dispositioned as official-link locator notes; their captured page text is not accepted as source copies. Dynamic forms, appointments and operational pages may change. No topic or country-completion finding is accepted."
+    "limitation": "A link is not a legal conclusion. Dated legal texts and government guidance must be rechecked for later amendments, page changes and applicability. Twenty-six source-text copies are accepted under documents/ with source-specific version, extraction and reuse limits. Twenty-three other candidate captures are dispositioned as official-link locator notes; their captured page text is not accepted as source copies. Dynamic forms, appointments and operational pages may change. No topic or country-completion finding is accepted."
   },
   "detailed_review_note": "official_reference_reviews contains selected detailed instrument reviews. source-review-manifest.json records the link decision and scope for all 63 references.",
   "official_reference_reviews": {
@@ -209,17 +209,36 @@
       "rediscovery_url": "https://eli.gov.pl/",
       "checked_on": "2026-10-25",
       "local_copy_review": "Accepted local statutory text at `documents/legislation/pl-52-personal-data-protection-act-2019.md`; file SHA-256 `3964512a2eb3b8062bc8ff138630c42aeae45e5b5c2d78b4ab309e52c96ba035`. This is separate from topic acceptance."
+    },
+    "pl-36": {
+      "title": "Free legal aid and citizen advice for foreigners",
+      "publisher": "Ministry of Justice, Republic of Poland (gov.pl)",
+      "url": "https://www.gov.pl/web/nieodplatna-pomoc/pomoc-dla-cudzoziemcow",
+      "language": "Polish",
+      "version_or_cutoff": "Live page opened 2026-10-29; no page revision date exposed; dynamic directory displayed 2,959 numbered entries.",
+      "scope": "Official Ministry of Justice service information that the public free-assistance system is open to foreigners in Poland, does not require a prior protection application, and provides in-person/remote access and specialist points.",
+      "reviewed_content": "Page states free legal aid and free citizen advice are available to all persons staying in Poland, including foreigners, without first applying for temporary or international protection; describes specialist migration/refugee-law points and a filterable provider directory with language filters including English, Ukrainian and Russian.",
+      "limitations": [
+        "Not the legal basis for eligibility and not a guarantee every listed point handles immigration matters.",
+        "The provider directory, contacts, schedules and language availability are dynamic; consult the live directory at use.",
+        "No full page or directory retained as source text; official footer states textual web content CC BY-SA 4.0, while this note does not make a separate database-rights claim."
+      ],
+      "status": "usable_official_reference",
+      "rediscovery_url": "https://www.gov.pl/web/nieodplatna-pomoc",
+      "checked_on": "2026-10-29",
+      "local_copy_review": "Maintained summary note only; the dynamic 2,959-row directory is not copied.",
+      "document_path": "documents/guidance/pl-36-foreigners-legal-aid-directory-locator.md"
     }
   },
   "not_accepted_or_still_under_review": [
-    "Twenty-six source-specific local text copies are listed in accepted_local_copy_reviews. The other 24 former candidate records have final official-link locator/disposition notes under documents/; their captured response text is not accepted as a local source copy. Official-link status and locator-note status remain distinct.",
+    "Twenty-six source-specific local text copies are listed in accepted_local_copy_reviews. The other 23 former candidate records have final official-link locator/disposition notes under documents/; their captured response text is not accepted as a local source copy. Official-link status and locator-note status remain distinct.",
     "No legal topic is accepted as adequately covered; issue and remedy crosswalks remain open.",
     "The exact procedural effect of the ePUAP instruction on UODO SIS pages remains unresolved under the Electronic Delivery Act and special-law exceptions.",
     "The exact current Polish residence-card specimen and the legal transition for each document class remain unverified.",
     "Voivodeship-local procedures, mission-specific services, case-law discovery completeness and country completion remain open."
   ],
-  "reviewed_on": "2026-10-25",
-  "status": "54_scoped_official_links_accepted; 26_local_source_text_copies_accepted; 24_locator_disposition_notes; 4_historical_only; 5_routes_not_relied_on; topic_coverage_incomplete",
+  "reviewed_on": "2026-10-29",
+  "status": "55_scoped_official_links_accepted; 29_local_source_text_copies_accepted; 23_locator_disposition_notes; 4_historical_only; 4_routes_not_relied_on; topic_coverage_incomplete",
   "accepted_external_reference_ids": [
     "pl-01",
     "pl-02",
@@ -237,6 +256,7 @@
     "pl-15",
     "pl-16",
     "pl-17",
+    "pl-20",
     "pl-21",
     "pl-22",
     "pl-23",
@@ -284,7 +304,6 @@
   ],
   "not_relied_upon_ids": [
     "pl-04",
-    "pl-20",
     "pl-26",
     "pl-39",
     "pl-57"
@@ -358,7 +377,7 @@
       "limit": "The legal rule differs for EU-citizen residence documents and third-country-family residence cards. No Polish card specimen was visually verified."
     }
   ],
-  "content_reuse": "For the 11 accepted legal/instrument texts, Article 4(1)(1) and (2) of the Polish Copyright and Related Rights Act addresses normative acts, official drafts, official documents and materials. For the 15 gov.pl textual snapshots, the gov.pl footer states textual content excluding audiovisual material is available under CC BY-SA 4.0; each document identifies source, retrieval time and Markdown transformation. Images, audiovisual material and linked attachments are excluded. The Open Data Act permits reuse subject to its conditions and limits, including third-party rights, privacy and personal-data restrictions; see Articles 5, 6, 14 and 15. These bases are source-specific and do not extend to unaccepted locator captures or dynamic external sources.",
+  "content_reuse": "For the 13 accepted legal/instrument texts, Article 4(1)(1) and (2) of the Polish Copyright and Related Rights Act addresses normative acts, official drafts, official documents and materials. For the 16 gov.pl textual snapshots, the gov.pl footer states textual content excluding audiovisual material is available under CC BY-SA 4.0; each document identifies source, retrieval time and Markdown transformation. Images, audiovisual material and linked attachments are excluded. The Open Data Act permits reuse subject to its conditions and limits, including third-party rights, privacy and personal-data restrictions; see Articles 5, 6, 14 and 15. These bases are source-specific and do not extend to unaccepted locator captures or dynamic external sources.",
   "accepted_local_copy_reviews": {
     "pl-06-current-2026": {
       "decision": "accepted_local_official_text",
@@ -832,7 +851,92 @@
       "semantic_check": "Official source identity and named page/instrument checked against source register; body-only replay from raw response matched archived candidate. Captured version evidence: Official consolidated text governing general free legal aid and civic advice. It does not establish the separate asylum-specific route; check the relevant eligibility provisions and related Ministry guidance without reconstructing a full amendment history. No later-currentness or topic-completeness claim is made.",
       "reuse_basis": "The retained material is official normative text/publication material. Article 4(1)(1) and (2) of the Polish Copyright and Related Rights Act addresses normative acts, official drafts, official documents and materials. Only official text and necessary publication metadata are included.",
       "limitations": "This is a dated source snapshot, not a legal conclusion. Recheck the official record for later amendments, page changes, eligibility, filing channel and case-specific applicability. Local-copy acceptance does not accept any topic or certify country completion. This source is historical or transitional and must not be presented as current guidance."
+    },
+    "pl-58": {
+      "decision": "accepted_local_official_text",
+      "path": "documents/legislation/pl-58-permanent-residence-applications-regulation-2021.md",
+      "sha256": "47ba96d389e656643936542268cfde1583002d39750d977d105cab0ff3fe3755",
+      "bytes": 13521,
+      "source_url": "https://eli.gov.pl/eli/DU/2021/1391/ogl",
+      "text_url": "https://eli.gov.pl/api/acts/DU/2021/1391/text.html",
+      "reviewed_on": "2026-10-29",
+      "conversion_method": "Full visible ELI HTML text body transcribed from official HTML to Markdown with headings and body lines retained.",
+      "semantic_check": "ELI record shows the MSWiA regulation of 26 July 2021, publication 30 July 2021, in force from 2 August 2021 and status obowiązujący. The complete 228-line visible HTML response was retained; the HTML page lists ten annexes as linked originals. Companion instrument Dz.U. 2021 poz. 1392 is separately retained.",
+      "reuse_basis": "Official Polish normative text and publication material; Article 4(1)(1) and (2) of the Polish Copyright and Related Rights Act addresses normative acts, official drafts, official documents and materials. ELI attribution and record/text links are preserved.",
+      "limitations": "Local copy reproduces the complete visible HTML text body but not the ten annex specimen images/forms linked by ELI. Use official attachments for their exact layout/content. Dated snapshot; recheck ELI for amendments and displayed status. Not a conclusion on eligibility or topic adequacy."
+    },
+    "pl-63": {
+      "decision": "accepted_local_official_text",
+      "path": "documents/legislation/pl-63-sis-vis-act-consolidation-2026.md",
+      "sha256": "ad5ce98070653a284dce146bea93dd5c511a7fcbf4559f2a16d1beb9c390039b",
+      "bytes": 81709,
+      "source_url": "https://eli.gov.pl/eli/DU/2026/1061/ogl",
+      "text_url": "https://api.sejm.gov.pl/eli/acts/DU/2026/1061/text.pdf",
+      "reviewed_on": "2026-10-29",
+      "conversion_method": "20-page official PDF text extracted into Markdown; all 829 numbered extracted lines retained, with PDF page layout normalized and PDF extraction control characters removed.",
+      "semantic_check": "ELI record opened and displayed status obowiązujący, announcement 31 July 2026, publication 6 August 2026 and legal-status cutoff 20 July 2026. The official PDF states the consolidation cutoff, identifies amendments and flags provisions/exceptions with staged commencement. The full 829-line text extraction was retained.",
+      "reuse_basis": "Official Polish normative text and publication material; Article 4(1)(1) and (2) of the Polish Copyright and Related Rights Act addresses normative acts, official drafts, official documents and materials. ELI record and official PDF links are preserved; no portal UI or third-party material is included.",
+      "limitations": "Dated consolidated text only through 20 July 2026. Staged commencement and provisions tied to later EU Commission decisions must be checked before asserting current effect. This copy does not establish the applicable SIS/VIS data-subject request route, filing channel or topic adequacy."
+    },
+    "pl-16": {
+      "decision": "accepted_local_official_text",
+      "path": "documents/guidance/pl-16-mswia-other-member-state-page-locator.md",
+      "sha256": "cff698d6f55be0105f0ee050e8c6e746d6ac82a9dac28fdf4258028ab66fdcb1",
+      "bytes": 2188,
+      "source_url": "https://www.gov.pl/web/mswia/pobyt-w-innym-panstwie-czlonkowskim-",
+      "reviewed_on": "2026-10-29",
+      "conversion_method": "Complete visible main-content section transcribed to Markdown; the page’s six official child-link destinations were resolved.",
+      "semantic_check": "Live official parent page checked 2026-10-29. It is a navigational index with six child pages; no standalone substantive rule or displayed update date. The title alone does not establish outbound residence or Polish-return scope.",
+      "reuse_basis": "gov.pl footer says text, excluding audiovisual material, is made available under CC BY-SA 4.0. Source URL, retrieval date and Markdown transformation are retained; imagery and audiovisual content excluded.",
+      "limitations": "Navigation index only. Each child page and governing law requires separate review. Not substantive cross-border legal guidance and not a topic-coverage finding."
     }
   },
-  "count_note": "accepted_local_copies counts 26 retained source-text copies: 11 official legal/instrument texts (including two historical copies) and 15 dated gov.pl text snapshots. The other 24 former candidate records have source-specific locator/disposition documents under documents/; those notes are not accepted copies of the underlying pages. External-reference status is recorded separately. No topic is accepted and country_review_complete remains false."
+  "count_note": "accepted_local_copies counts 29 retained source-text copies: 13 official legal/instrument texts (including two historical copies) and 16 dated gov.pl text snapshots. The other 23 former candidate records have source-specific locator/disposition documents under documents/; those notes are not accepted copies of the underlying pages. External-reference status is recorded separately. No topic is accepted and country_review_complete remains false.",
+  "maintained_reference_note_reviews": [
+    {
+      "source_id": "pl-17",
+      "path": "documents/guidance/pl-17-udsc-eu-residence-guidance-locator.md",
+      "sha256": "c7f7226c8007054d96d9d96f806e1317386972871b7a4615250643323979fd3b",
+      "reviewed_on": "2026-10-29",
+      "status": "maintained_authored_reference_note; underlying_source_text_not_accepted",
+      "evidence": "Official Gov.pl search index returned the exact UDSC page title and bounded summary; direct opening redirected to generic Gov.pl homepage. The note separates index evidence from a live page capture.",
+      "limits": "Displayed modification date, current live body, attachments, page completeness and full procedural rules remain unverified. Does not increase accepted_local_copies or accepted_topics."
+    },
+    {
+      "source_id": "pl-41",
+      "path": "documents/guidance/pl-41-kazakhstan-mission-guidance-locator.md",
+      "sha256": "fa98d8766afd51ff8e9a6f76b7dc9975dae428f9742632813b920f8d651c99f6",
+      "reviewed_on": "2026-10-29",
+      "status": "maintained_authored_reference_note; underlying_source_text_not_accepted",
+      "evidence": "Official Gov.pl index returned the exact mission page and its visa checklist. Direct opening redirected to generic Gov.pl homepage. Note includes mission scope, indexed requirements and statutory-scope caution.",
+      "limits": "Index crawl about one month old; live page body, displayed modification date, appointments, current consular district and current operational details unverified. The mission page's family categories are not accepted as a definitive statutory definition. Does not increase accepted_local_copies or accepted_topics."
+    },
+    {
+      "source_id": "pl-20",
+      "path": "documents/guidance/pl-20-mos-eu-family-residence-card-guide-2026-10-29.md",
+      "sha256": "9df74648c37677c988e50eaf888b1b227e739677afc140e613291892d380e4b0",
+      "reviewed_on": "2026-10-29",
+      "status": "accepted_external_reference_with_narrow_scope; maintained_authored_reference_note; source_text_not_accepted",
+      "evidence": "Official MOS search index returned current procedural sections for the exact target and was crawled on review date. The official MSWiA search result independently corroborated core steps. Direct MOS open returned HTTP 502.",
+      "limits": "No full live MOS body or displayed modification date; verify statutory conditions, form, attachments and voivodeship instructions. This note does not increase accepted_local_copies or accepted_topics."
+    },
+    {
+      "source_id": "pl-26",
+      "title": "MOS administrative appeal guidance",
+      "publisher": "Office for Foreigners (Urząd do Spraw Cudzoziemców), Poland",
+      "url": "https://www.mos.cudzoziemcy.gov.pl/najczesciej-pope-niane-b-edy/postepowanie-odwolawcze/",
+      "language": "Polish",
+      "checked_on": "2026-10-29",
+      "decision": "Accepted as a narrowly scoped official reference and represented by a maintained Markdown note.",
+      "reviewed_content": "The current official indexed page describes the addressee and filing route for residence-case appeals, the 14-day period, restoration of a missed deadline, required identifying information, and representative authority. The official KPA consolidated text corroborates the general appeal framework. The page distinguishes this procedure from the MOS online application portal.",
+      "limitations": [
+        "Direct MOS page retrieval returned HTTP 502; current indexed page content and official sitemap entry were available.",
+        "Check the decision's own appeal instructions and applicable special legislation for individual cases and any different deadline.",
+        "This maintained note summarizes official guidance and is not a reproduction of source text or legal advice."
+      ],
+      "document_path": "documents/guidance/pl-26-mos-residence-appeal-guidance-2026-10-29.md",
+      "document_sha256": "42de32c102ed1e96b35dfecf6dd81cbff506759b515264c3f5fecee0d7932661",
+      "document_role": "maintained_official_reference_note_not_source_text_copy"
+    }
+  ]
 }

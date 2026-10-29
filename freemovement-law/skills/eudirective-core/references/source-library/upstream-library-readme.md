@@ -2,7 +2,7 @@
 
 Library release version: 0.15.0
 
-The reusable national-pack layout is documented in [the country-pack template](templates/country-pack/LAYOUT.md). The latest structural inventory is in [the folder audit](references/library-folder-audit-2026-10-19.md). The shared English EU corpus serves every pack; country-level `core/` folders are kept only when they contain actual official EU-language files. Ireland and Malta use that shared corpus for English instead of duplicating English files.
+The reusable national-pack layout is documented in [the country-pack template](templates/country-pack/LAYOUT.md). The latest structural inventory is in [the folder audit](references/library-folder-audit-2026-10-19.md). The current cross-country accepted-reference and local-artifact counts are in the [country source acceptance overview](references/source-acceptance-overview-2026-10-28.md); this derived report does not replace any pack inventory or acceptance register. The shared English EU corpus serves every pack; country-level `core/` folders are kept only when they contain actual official EU-language files. Ireland and Malta use that shared corpus for English instead of duplicating English files.
 
 ### Source edition and review policy
 
