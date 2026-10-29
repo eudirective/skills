@@ -73,3 +73,5 @@ Lead with **time-sensitive records preservation** and **verified formal deadline
 ## 6. Runtime and evaluation boundary
 
 If available, `scripts/c25_strategy_gate.py` is a **synthetic categorical review aid**, not an extractor of narratives, independent law validator, legal strategist or privacy system. Its output flags incomplete modeled grievance/evidence coverage; the reviewer is responsible for mapping real events and interpreting law. Do **not** feed real narratives, names, concrete dates, case IDs or identifying combinations into its fixtures. Never claim this gate ran when it did not. Real-case legal guidance is available conversationally even without Python. Perform fresh, independently graded ChatGPT first-response and multi-turn tests before asserting user-facing reliability.
+
+Strategy review mode is independent of consultation mode. Screen all five trigger categories. Unknown facts can be addressed in a Full review with conditional alternatives. Use Limited when an essential strategic assessment cannot be performed; identify the missing item, effect, and relevant issue and evidence. Explain a recommendation to take no additional action.

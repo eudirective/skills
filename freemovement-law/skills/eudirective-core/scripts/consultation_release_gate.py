@@ -11,11 +11,16 @@ import argparse
 import hashlib
 import json
 import os
+import re
 import sys
 from pathlib import Path
 
+from consultation_dashboard import DASHBOARD_HEADING
 from consultation_route_gate import RouteGateError, validate_route
 from contract_validate import ContractError, load_json, validate_obj
+
+
+BOARD_HEADING_PATTERN = re.compile(r"(?im)^#{1,6}\s*(?:[0-9]+[.)]\s*)?(?:freemovement-law\s*[—–:-]\s*)?(?:(?:full|limited|c27)\s+)*(?:(?:case(?:[- ]state)?|consultation)\s+(?:review|dashboard)|dashboard)\b[^\n]*")
 
 
 class ReleaseBindingError(ValueError):
@@ -69,12 +74,59 @@ def validate_dashboard_rendered(result: dict, answer_bytes: bytes) -> None:
         raise ReleaseBindingError("dashboard_receipt_fingerprint_missing")
     if str(validation_record.get("result", "")).replace("_", " ") not in preview:
         raise ReleaseBindingError("dashboard_validation_result_missing")
+    if (re.search(r"(?m)^ {0,3}(?:`{3,}|~{3,})", preview)
+            or "<!--" in preview or "-->" in preview
+            or re.search(r"(?i)</?(?:pre|script|style|textarea|div|table|details)(?=[\s>])", preview)):
+        raise ReleaseBindingError("dashboard_contains_unsafe_markdown_block")
+    table = [line for line in preview.splitlines() if line.startswith("|")]
+    if table and (len(table) != 3 or any(line.count("|") != 4 for line in table)
+                  or not re.fullmatch(r"\|(?:\s*:?-{3,}:?\s*\|){3}", table[1])):
+        raise ReleaseBindingError("dashboard_metrics_table_invalid")
     try:
         answer = answer_bytes.decode("utf-8")
     except UnicodeDecodeError as error:
         raise ReleaseBindingError("answer_not_utf8_for_dashboard_check") from error
-    if not answer.rstrip().endswith(preview):
+    headings = BOARD_HEADING_PATTERN.findall(answer)
+    if len(headings) > 1:
+        raise ReleaseBindingError("duplicate_or_conflicting_dashboard")
+    trimmed = answer.rstrip()
+    if not trimmed.endswith(preview):
         raise ReleaseBindingError("mandatory_dashboard_missing_or_not_at_end_of_answer")
+    start = len(trimmed) - len(preview)
+    if len(headings) != 1 or (start and trimmed[start - 1] != "\n"):
+        raise ReleaseBindingError("dashboard_heading_not_standalone")
+    prefix = trimmed[:start]
+    comment_open = False
+    for token in re.findall(r"<!--|-->", prefix):
+        if token == "<!--":
+            comment_open = True
+        elif comment_open:
+            comment_open = False
+    if comment_open:
+        raise ReleaseBindingError("dashboard_inside_unclosed_html_comment")
+    html_stack = []
+    for match in re.finditer(r"(?is)<(/?)(pre|script|style|textarea|div|table|details)(?=[\s>])[^>]*>", prefix):
+        closing, name = match.group(1), match.group(2).casefold()
+        if closing:
+            if name in html_stack:
+                html_stack = html_stack[:len(html_stack) - 1 - html_stack[::-1].index(name)]
+        elif not match.group(0).rstrip().endswith("/>"):
+            html_stack.append(name)
+    if html_stack:
+        raise ReleaseBindingError("dashboard_inside_unclosed_html_block")
+    fence = None
+    for line in prefix.splitlines():
+        nested = re.sub(r"^(?: {0,3}>[ \t]?)+", "", line)
+        match = re.match(r"^ {0,3}(`{3,}|~{3,})(.*)$", nested)
+        if not match:
+            continue
+        token, rest = match.groups()
+        if fence is None:
+            fence = token
+        elif token[0] == fence[0] and len(token) >= len(fence) and not rest.strip():
+            fence = None
+    if fence is not None:
+        raise ReleaseBindingError("dashboard_inside_unclosed_code_fence")
 
 
 def repair_dashboard_once(result: dict, answer_bytes: bytes) -> tuple[bytes, bool]:
@@ -92,10 +144,10 @@ def repair_dashboard_once(result: dict, answer_bytes: bytes) -> tuple[bytes, boo
         answer = answer_bytes.decode("utf-8")
     except UnicodeDecodeError as error:
         raise ReleaseBindingError("answer_not_utf8_for_dashboard_repair") from error
-    marker = "## freemovement-law — Consultation Review"
-    if marker in answer:
+    if DASHBOARD_HEADING in answer or BOARD_HEADING_PATTERN.search(answer):
         raise ReleaseBindingError("dashboard_present_but_invalid_cannot_be_repaired")
-    repaired = answer.rstrip().encode("utf-8") + b"\n\n" + preview.encode("utf-8")
+    separator = b"\n" if answer_bytes.endswith(b"\n") else b"\n\n"
+    repaired = answer_bytes + separator + preview.encode("utf-8")
     validate_dashboard_rendered(result, repaired)
     return repaired, True
 
@@ -164,7 +216,7 @@ def controlled_release(receipt_path: Path, answer_path: Path) -> bytes:
         receipt = json.loads(first_receipt.decode("utf-8"))
     except (UnicodeDecodeError, json.JSONDecodeError) as error:
         raise ReleaseBindingError("receipt_json_invalid") from error
-    if receipt.get("schema_version") not in {"0.5.0", "0.6.0", "0.7.0", "0.8.0"} or receipt.get("request_kind") not in {
+    if receipt.get("schema_version") not in {"0.5.0", "0.6.0", "0.7.0", "0.8.0", "0.9.0"} or receipt.get("request_kind") not in {
         "applicant_guidance", "source_research",
     }:
         raise ReleaseBindingError("controlled_release_requires_receipt_0_5_or_later")

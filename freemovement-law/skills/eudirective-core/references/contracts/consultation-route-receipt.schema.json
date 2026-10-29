@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Consultation route receipt 0.8.0 (legacy 0.1.0-0.7.0 readable)",
+  "title": "Consultation route receipt 0.9.0 (legacy 0.1.0-0.8.0 readable)",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -26,7 +26,8 @@
         "0.5.0",
         "0.6.0",
         "0.7.0",
-        "0.8.0"
+        "0.8.0",
+        "0.9.0"
       ]
     },
     "route_ref": {
@@ -165,6 +166,149 @@
         "limited"
       ],
       "description": "Review mode for this consultation response. Independent of the separate coverage_claim."
+    },
+    "consultation_limitation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "reason_code",
+        "missing",
+        "effect",
+        "issue_refs",
+        "evidence_refs",
+        "review_ids"
+      ],
+      "properties": {
+        "reason_code": {
+          "enum": [
+            "narrowed_scope",
+            "required_workflow_unperformed"
+          ]
+        },
+        "missing": {
+          "type": "string",
+          "minLength": 25,
+          "maxLength": 400
+        },
+        "effect": {
+          "type": "string",
+          "minLength": 25,
+          "maxLength": 400
+        },
+        "issue_refs": {
+          "type": "array",
+          "maxItems": 100,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/opaque_ref"
+          }
+        },
+        "evidence_refs": {
+          "type": "array",
+          "maxItems": 100,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/opaque_ref"
+          }
+        },
+        "review_ids": {
+          "type": "array",
+          "maxItems": 100,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]{1,63}$"
+          }
+        }
+      }
+    },
+    "workflow_reviews": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 100,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "review_id",
+          "status",
+          "evidence_refs"
+        ],
+        "properties": {
+          "review_id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]{1,63}$"
+          },
+          "status": {
+            "enum": [
+              "completed",
+              "partial",
+              "not_checked",
+              "blocked",
+              "unavailable"
+            ]
+          },
+          "evidence_refs": {
+            "type": "array",
+            "maxItems": 30,
+            "uniqueItems": true,
+            "items": {
+              "$ref": "#/$defs/opaque_ref"
+            }
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 20,
+            "maxLength": 400
+          },
+          "source_outcome": {
+            "enum": [
+              "reviewed",
+              "no_source_available"
+            ]
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "status": {
+                  "const": "completed"
+                }
+              },
+              "required": [
+                "status"
+              ]
+            },
+            "then": {
+              "properties": {
+                "evidence_refs": {
+                  "minItems": 1
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "status": {
+                  "not": {
+                    "const": "completed"
+                  }
+                }
+              },
+              "required": [
+                "status"
+              ]
+            },
+            "then": {
+              "required": [
+                "reason"
+              ]
+            }
+          }
+        ]
+      }
     }
   },
   "allOf": [
@@ -970,6 +1114,561 @@
                 }
               }
             ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "schema_version": {
+            "const": "0.9.0"
+          },
+          "request_kind": {
+            "enum": [
+              "applicant_guidance",
+              "source_research"
+            ]
+          }
+        },
+        "required": [
+          "schema_version",
+          "request_kind"
+        ]
+      },
+      "then": {
+        "required": [
+          "consultation_mode",
+          "invocation",
+          "source_ledger",
+          "issues",
+          "dashboard",
+          "revision_control",
+          "proceedings",
+          "strategy_assessment",
+          "workflow_reviews"
+        ],
+        "properties": {
+          "consultation_mode": {
+            "enum": [
+              "full",
+              "limited"
+            ]
+          },
+          "dashboard": {
+            "not": {
+              "required": [
+                "mode"
+              ]
+            }
+          },
+          "strategy_assessment": {
+            "properties": {
+              "trigger_reviews": {
+                "items": {
+                  "allOf": [
+                    {
+                      "if": {
+                        "properties": {
+                          "status": {
+                            "enum": [
+                              "triggered",
+                              "unknown"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "status"
+                        ]
+                      },
+                      "then": {
+                        "required": [
+                          "issue_refs"
+                        ],
+                        "properties": {
+                          "issue_refs": {
+                            "minItems": 1
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "if": {
+                        "properties": {
+                          "status": {
+                            "enum": [
+                              "not_triggered",
+                              "not_applicable"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "status"
+                        ]
+                      },
+                      "then": {
+                        "required": [
+                          "issue_refs"
+                        ],
+                        "properties": {
+                          "issue_refs": {
+                            "maxItems": 0
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "allOf": [
+              {
+                "if": {
+                  "properties": {
+                    "mode": {
+                      "enum": [
+                        "full",
+                        "limited"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "mode"
+                  ]
+                },
+                "then": {
+                  "required": [
+                    "issue_refs"
+                  ],
+                  "properties": {
+                    "issue_refs": {
+                      "minItems": 0
+                    }
+                  }
+                }
+              },
+              {
+                "if": {
+                  "properties": {
+                    "mode": {
+                      "enum": [
+                        "not_triggered",
+                        "not_applicable"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "mode"
+                  ]
+                },
+                "then": {
+                  "properties": {
+                    "issue_refs": {
+                      "maxItems": 0
+                    }
+                  }
+                }
+              },
+              {
+                "if": {
+                  "properties": {
+                    "mode": {
+                      "const": "limited"
+                    }
+                  },
+                  "required": [
+                    "mode"
+                  ]
+                },
+                "then": {
+                  "properties": {
+                    "limitation": {
+                      "required": [
+                        "issue_refs"
+                      ],
+                      "properties": {
+                        "issue_refs": {
+                          "minItems": 1
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "if": {
+                  "properties": {
+                    "disposition": {
+                      "const": "action"
+                    }
+                  },
+                  "required": [
+                    "disposition"
+                  ]
+                },
+                "then": {
+                  "required": [
+                    "objective",
+                    "first_step",
+                    "purpose",
+                    "reassess_when",
+                    "alternatives_considered"
+                  ]
+                }
+              },
+              {
+                "if": {
+                  "properties": {
+                    "disposition": {
+                      "const": "no_action"
+                    }
+                  },
+                  "required": [
+                    "disposition"
+                  ]
+                },
+                "then": {
+                  "required": [
+                    "no_action_reason"
+                  ],
+                  "not": {
+                    "anyOf": [
+                      {
+                        "required": [
+                          "objective"
+                        ]
+                      },
+                      {
+                        "required": [
+                          "first_step"
+                        ]
+                      },
+                      {
+                        "required": [
+                          "purpose"
+                        ]
+                      },
+                      {
+                        "required": [
+                          "reassess_when"
+                        ]
+                      },
+                      {
+                        "required": [
+                          "alternatives_considered"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "required": [
+              "disposition"
+            ]
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "consultation_mode": {
+                  "const": "limited"
+                }
+              },
+              "required": [
+                "consultation_mode"
+              ]
+            },
+            "then": {
+              "required": [
+                "consultation_limitation"
+              ]
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "consultation_mode": {
+                  "const": "full"
+                }
+              },
+              "required": [
+                "consultation_mode"
+              ]
+            },
+            "then": {
+              "not": {
+                "required": [
+                  "consultation_limitation"
+                ]
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "request_kind": {
+                  "const": "applicant_guidance"
+                }
+              },
+              "required": [
+                "request_kind"
+              ]
+            },
+            "then": {
+              "properties": {
+                "strategy_assessment": {
+                  "properties": {
+                    "mode": {
+                      "enum": [
+                        "full",
+                        "limited"
+                      ]
+                    },
+                    "disposition": {
+                      "enum": [
+                        "action",
+                        "no_action"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "request_kind": {
+                  "const": "source_research"
+                }
+              },
+              "required": [
+                "request_kind"
+              ]
+            },
+            "then": {
+              "properties": {
+                "strategy_assessment": {
+                  "properties": {
+                    "mode": {
+                      "const": "not_applicable"
+                    },
+                    "disposition": {
+                      "const": "not_applicable"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "schema_version": {
+            "const": "0.9.0"
+          },
+          "request_kind": {
+            "enum": [
+              "applicant_guidance",
+              "source_research"
+            ]
+          }
+        },
+        "required": [
+          "schema_version",
+          "request_kind"
+        ]
+      },
+      "then": {
+        "required": [
+          "invocation",
+          "source_ledger",
+          "issues",
+          "dashboard",
+          "revision_control",
+          "proceedings",
+          "strategy_assessment"
+        ],
+        "properties": {
+          "invocation": {
+            "required": [
+              "material_change"
+            ]
+          },
+          "source_ledger": {
+            "properties": {
+              "sources": {
+                "items": {
+                  "required": [
+                    "response_discovery_method",
+                    "conversation_discovery_method"
+                  ]
+                }
+              }
+            }
+          },
+          "c27_checks": {
+            "items": {
+              "required": [
+                "assessment_ref",
+                "binding_kind",
+                "bound_issue_refs"
+              ],
+              "allOf": [
+                {
+                  "if": {
+                    "properties": {
+                      "binding_kind": {
+                        "const": "issue_specific"
+                      }
+                    },
+                    "required": [
+                      "binding_kind"
+                    ]
+                  },
+                  "then": {
+                    "properties": {
+                      "bound_issue_refs": {
+                        "minItems": 1,
+                        "maxItems": 1
+                      }
+                    },
+                    "not": {
+                      "required": [
+                        "shared_basis"
+                      ]
+                    }
+                  }
+                },
+                {
+                  "if": {
+                    "properties": {
+                      "binding_kind": {
+                        "const": "proceeding_shared"
+                      }
+                    },
+                    "required": [
+                      "binding_kind"
+                    ]
+                  },
+                  "then": {
+                    "required": [
+                      "shared_basis"
+                    ],
+                    "properties": {
+                      "bound_issue_refs": {
+                        "minItems": 2
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "issues": {
+            "items": {
+              "required": [
+                "source_obligations",
+                "attack_angle_reviews",
+                "c27_assessment_refs",
+                "conditional_closure",
+                "source_owner_exclusions"
+              ],
+              "properties": {
+                "source_obligations": {
+                  "items": {
+                    "required": [
+                      "policy_excluded_source_classes"
+                    ]
+                  }
+                },
+                "attack_angle_reviews": {
+                  "items": {
+                    "required": [
+                      "screening",
+                      "trigger_any_signal_ids",
+                      "trigger_all_signal_ids"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "revision_control": {
+            "required": [
+              "change_detection_status",
+              "current_abstract_state",
+              "previous_abstract_state",
+              "added_issue_refs",
+              "removed_issue_refs",
+              "changed_issue_refs",
+              "removed_issue_reviews"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "schema_version": {
+            "enum": [
+              "0.1.0",
+              "0.2.0",
+              "0.3.0",
+              "0.4.0",
+              "0.5.0",
+              "0.6.0",
+              "0.7.0",
+              "0.8.0"
+            ]
+          }
+        },
+        "required": [
+          "schema_version"
+        ]
+      },
+      "then": {
+        "not": {
+          "anyOf": [
+            {
+              "required": [
+                "workflow_reviews"
+              ]
+            },
+            {
+              "required": [
+                "consultation_limitation"
+              ]
+            }
+          ]
+        },
+        "properties": {
+          "strategy_assessment": {
+            "not": {
+              "anyOf": [
+                {
+                  "required": [
+                    "objective"
+                  ]
+                },
+                {
+                  "required": [
+                    "disposition"
+                  ]
+                },
+                {
+                  "required": [
+                    "no_action_reason"
+                  ]
+                }
+              ]
+            }
           }
         }
       }
@@ -3123,18 +3822,60 @@
           "items": {
             "$ref": "#/$defs/opaque_ref"
           }
+        },
+        "objective": {
+          "type": "string",
+          "minLength": 20,
+          "maxLength": 400
+        },
+        "disposition": {
+          "enum": [
+            "action",
+            "no_action",
+            "not_applicable"
+          ]
+        },
+        "no_action_reason": {
+          "type": "string",
+          "minLength": 20,
+          "maxLength": 400
         }
       },
       "allOf": [
         {
           "if": {
-            "properties": {
-              "mode": {
-                "const": "full"
+            "allOf": [
+              {
+                "properties": {
+                  "mode": {
+                    "const": "full"
+                  }
+                },
+                "required": [
+                  "mode"
+                ]
+              },
+              {
+                "anyOf": [
+                  {
+                    "not": {
+                      "required": [
+                        "disposition"
+                      ]
+                    }
+                  },
+                  {
+                    "properties": {
+                      "disposition": {
+                        "const": "action"
+                      }
+                    },
+                    "required": [
+                      "disposition"
+                    ]
+                  }
+                ]
               }
-            },
-            "required": [
-              "mode"
             ]
           },
           "then": {
@@ -3219,6 +3960,29 @@
             "required": [
               "mode",
               "trigger_reviews"
+            ],
+            "allOf": [
+              {
+                "anyOf": [
+                  {
+                    "not": {
+                      "required": [
+                        "disposition"
+                      ]
+                    }
+                  },
+                  {
+                    "properties": {
+                      "disposition": {
+                        "const": "action"
+                      }
+                    },
+                    "required": [
+                      "disposition"
+                    ]
+                  }
+                ]
+              }
             ]
           },
           "then": {

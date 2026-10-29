@@ -1,20 +1,22 @@
 # Consultation dashboard
 
-Append a fresh board like this to every substantive legal consultation. Use Full mode only when all declared required work is recorded without gaps and declared coverage is comprehensive. Otherwise use Limited mode and name each missing item and its effect. The examples do not change the underlying C27, source, or execution review duties.
+Append a fresh board like this to every substantive legal consultation. Use Full mode when the required review workflow was performed, including when assessed findings remain unresolved or coverage is partial. Use Limited mode when the workflow was deliberately narrowed or a material required review step was not performed; name what is missing and its effect. The examples do not change the underlying C27, source, or execution review duties.
 
 Use this as the visual pattern for a consultation board. It is ordinary Markdown: status icons and structure help scanning, but do not imply custom colors, CSS, interactivity, or host verification. Keep the answer itself first. Avoid wide tables and code-like dumps; the small three-column metric row below is the only table in the board.
 
-## Limited consultation review
+### Example: Limited consultation review
 
-# EU-family visa and residence review
+## freemovement-law — Consultation Review
+
+**EU-family visa and residence review**
 
 *Application in Türkiye · intended residence in Spain · EU citizen moving with a spouse*
 
 > 🟠 **PARTIAL REVIEW** — The EU route and residence-card entry rule were assessed. Formal visa lodging, authority classification, and the processing-clock start remain unresolved.
 
-### Output coverage: 🟠 Limited board
+### Consultation mode: 🟠 Limited consultation review
 
-One or more recorded checks remain open. This describes the recorded review, not a percentage of legal completeness.
+The national urgent-remedy procedure has not been reviewed. This limits the ability to recommend or exclude an urgent national remedy; the visa-processing and access reviews are reported separately.
 
 ### Strategy review
 
@@ -223,3 +225,22 @@ If the same outcome is only orally reported or its record cannot be inspected, l
 - **Invocation:** explicit only when established by a host signal or visible plugin-selection marker; otherwise `unknown`.
 - **Applicant guidance, issues, C27 checks, sources, and country modules:** not assessed or not recorded.
 - Do not invent zero counts, issue statuses, source totals, module use, or execution results.
+
+
+### Example excerpt: Full consultation review with unresolved facts
+
+This excerpt illustrates mode and partial findings. A complete board must also include every required strategy trigger, issue-specific C27 assessment, source and operation ledger, and module-use record as shown in the full layout above.
+
+## freemovement-law — Consultation Review
+
+> 🟠 **PARTIAL COVERAGE** — The required review workflow was performed. The lodging date and the authority’s internal classification remain unverified.
+
+### Consultation mode: 🟢 Full consultation review
+
+The review addressed the available evidence and relevant questions; unresolved findings are listed individually.
+
+### Strategy review: Full
+
+The authority’s position is unknown. Preserve the submission records and request written confirmation of the lodging date and applicable route. Reassess if a decision arrives or a deadline becomes apparent. Consider ordinary cooperation, targeted clarification, and waiting where proportionate.
+
+**Lodging date:** Partial — the exact receipt has not been inspected; the start of any processing clock remains uncertain.

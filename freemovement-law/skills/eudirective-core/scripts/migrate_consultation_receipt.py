@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Conservatively migrate a privacy-minimised consultation receipt 0.7.0 to 0.8.0.
+"""Conservatively migrate privacy-minimised consultation receipts to 0.8.0 or 0.9.0.
 
 The required Full/Limited consultation mode is an explicit operator input. The
 migrator never infers it from the older dashboard mode or from coverage.
@@ -100,18 +100,68 @@ def migrate_receipt(receipt: dict, consultation_mode: str) -> dict:
     return result
 
 
+def migrate_08_to_09(receipt: dict, consultation_mode: str, limitation: dict | None = None, workflow_reviews: list | None = None, strategy_update: dict | None = None) -> dict:
+    """Require an explicit mode and, for Limited, an operator-supplied explanation."""
+    if not isinstance(receipt, dict) or receipt.get("schema_version") != "0.8.0":
+        raise MigrationError("migration_requires_receipt_0_8_0")
+    if receipt.get("request_kind") not in {"applicant_guidance", "source_research"}:
+        raise MigrationError("migration_requires_in_scope_consultation")
+    if consultation_mode not in {"full", "limited"}:
+        raise MigrationError("consultation_mode_must_be_full_or_limited")
+    if consultation_mode == "limited" and not isinstance(limitation, dict):
+        raise MigrationError("limited_consultation_requires_explicit_limitation")
+    if consultation_mode == "full" and limitation is not None:
+        raise MigrationError("full_consultation_must_not_have_limitation")
+    validate_obj("consultation-route-receipt", receipt)
+    validate_privacy_minimisation(receipt)
+    result = copy.deepcopy(receipt)
+    result["schema_version"] = "0.9.0"
+    result["consultation_mode"] = consultation_mode
+    if not isinstance(workflow_reviews, list):
+        raise MigrationError("migration_requires_explicit_workflow_reviews")
+    result["workflow_reviews"] = copy.deepcopy(workflow_reviews)
+    if not isinstance(strategy_update, dict):
+        raise MigrationError("migration_requires_explicit_strategy_update")
+    allowed = {"mode", "disposition", "objective", "no_action_reason"}
+    if set(strategy_update) - allowed:
+        raise MigrationError("strategy_update_contains_unsupported_fields")
+    result["strategy_assessment"].update(copy.deepcopy(strategy_update))
+    if strategy_update.get("disposition") == "no_action":
+        for field in ("objective", "first_step", "purpose", "reassess_when", "alternatives_considered"):
+            result["strategy_assessment"].pop(field, None)
+    if limitation is not None:
+        result["consultation_limitation"] = copy.deepcopy(limitation)
+    validate_obj("consultation-route-receipt", result)
+    validate_privacy_minimisation(result)
+    return result
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--input", required=True, type=Path)
     parser.add_argument("--output", required=True, type=Path)
     parser.add_argument("--consultation-mode", required=True, choices=("full", "limited"))
+    parser.add_argument("--target-version", choices=("0.8.0", "0.9.0"), default="0.8.0")
+    parser.add_argument("--limitation-json", type=Path, help="Explicit privacy-minimised 0.9 Limited mode explanation")
+    parser.add_argument("--workflow-reviews-json", type=Path, help="Explicit privacy-minimised 0.9 workflow review records")
+    parser.add_argument("--strategy-update-json", type=Path, help="Explicit privacy-minimised 0.9 strategy mode, disposition and objective or no-action reason")
     args = parser.parse_args(argv)
     try:
         source = args.input.read_bytes()
         if len(source) > 2_000_000:
             raise MigrationError("receipt_too_large")
         receipt = json.loads(source.decode("utf-8"))
-        migrated = migrate_receipt(receipt, args.consultation_mode)
+        if args.target_version == "0.8.0":
+            if args.limitation_json:
+                raise MigrationError("limitation_only_supported_for_0_9_0")
+            migrated = migrate_receipt(receipt, args.consultation_mode)
+        else:
+            if receipt.get("schema_version") == "0.7.0":
+                receipt = migrate_receipt(receipt, args.consultation_mode)
+            limitation = json.loads(args.limitation_json.read_text(encoding="utf-8")) if args.limitation_json else None
+            workflow_reviews = json.loads(args.workflow_reviews_json.read_text(encoding="utf-8")) if args.workflow_reviews_json else None
+            strategy_update = json.loads(args.strategy_update_json.read_text(encoding="utf-8")) if args.strategy_update_json else None
+            migrated = migrate_08_to_09(receipt, args.consultation_mode, limitation, workflow_reviews, strategy_update)
         payload = (json.dumps(migrated, ensure_ascii=False, sort_keys=True, indent=2) + "\n").encode("utf-8")
         args.output.parent.mkdir(parents=True, exist_ok=True)
         with args.output.open("xb") as handle:
@@ -124,8 +174,8 @@ def main(argv: list[str] | None = None) -> int:
         "schema_version": migrated["schema_version"],
         "consultation_mode": migrated["consultation_mode"],
         "finalisation_status": next(
-            item["status"] for item in migrated["operations"]
-            if item["operation_id"] == "consultation_finalisation"
+            (item["status"] for item in migrated["operations"]
+             if item["operation_id"] == "consultation_finalisation"), "missing"
         ),
     }, sort_keys=True))
     return 0

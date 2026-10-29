@@ -69,9 +69,9 @@ OPERATION_EVIDENCE_KINDS = {
 CLOSED_C27_STATUSES = {"assessed", "not_applicable"}
 ISSUE_MATRIX_PATH = ROOT / "references" / "consultation-issue-routing.json"
 ISSUE_REGISTRY_PATH = ROOT / "references" / "state-engine" / "check-registry.json"
-ROUTE_GATE_VERSION = "0.8.0"
-TYPED_RECEIPT_SCHEMAS = {"0.6.0", "0.7.0", "0.8.0"}
-STRATEGY_RECEIPT_SCHEMAS = {"0.7.0", "0.8.0"}
+ROUTE_GATE_VERSION = "0.9.0"
+TYPED_RECEIPT_SCHEMAS = {"0.6.0", "0.7.0", "0.8.0", "0.9.0"}
+STRATEGY_RECEIPT_SCHEMAS = {"0.7.0", "0.8.0", "0.9.0"}
 INFORMATIONAL_ROUTE_SCOPE_STATUSES = {
     "not_selected_outcome_mismatch", "not_selected_no_formal_outcome",
     "not_selected_outcome_unverified", "not_selected_signal_missing",
@@ -160,7 +160,7 @@ def check_strategy_assessment(route: dict, evidence_index: dict[str, dict], gaps
         if any(ref not in evidence_index for ref in refs):
             raise RouteGateError(f"strategy_trigger_evidence_dangling:{trigger_id}")
         linked_issue_refs = set(review.get("issue_refs", []))
-        if version == "0.8.0":
+        if version in {"0.8.0", "0.9.0"}:
             if any(ref not in issues_by_ref for ref in linked_issue_refs):
                 raise RouteGateError(f"strategy_issue_reference_dangling:{trigger_id}")
             if review["status"] in {"triggered", "unknown"} and not linked_issue_refs:
@@ -174,7 +174,7 @@ def check_strategy_assessment(route: dict, evidence_index: dict[str, dict], gaps
             raise RouteGateError(f"strategy_trigger_signal_not_screened_as_triggered:{trigger_id}")
         if required_refs and not required_refs.issubset(set(refs)):
             raise RouteGateError(f"strategy_trigger_signal_evidence_missing:{trigger_id}")
-        if version == "0.8.0" and review["status"] == "triggered":
+        if version in {"0.8.0", "0.9.0"} and review["status"] == "triggered":
             if trigger_id == "source_supported_preventive_opportunity":
                 if not linked_issue_refs:
                     raise RouteGateError(f"strategy_trigger_issue_link_missing:{trigger_id}")
@@ -193,7 +193,7 @@ def check_strategy_assessment(route: dict, evidence_index: dict[str, dict], gaps
     statuses = {item["status"] for item in reviews}
     triggered = any(item["status"] == "triggered" for item in reviews)
     unknown = any(item["status"] == "unknown" for item in reviews)
-    if version == "0.8.0":
+    if version in {"0.8.0", "0.9.0"}:
         expected_strategy_issues = set().union(*(
             set(item.get("issue_refs", []))
             for item in reviews if item["status"] in {"triggered", "unknown"}
@@ -213,7 +213,10 @@ def check_strategy_assessment(route: dict, evidence_index: dict[str, dict], gaps
         raise RouteGateError("strategy_not_applicable_for_applicant_guidance")
 
     action_fields = ("first_step", "purpose", "reassess_when")
-    if triggered:
+    intervention = strategy.get("disposition") == "action" if version == "0.9.0" else triggered
+    if intervention:
+        if version == "0.9.0":
+            _require_specific_strategy_text(strategy["objective"], "objective")
         if mode not in {"full", "limited"}:
             raise RouteGateError("strategy_triggered_without_actionable_mode")
         for field in action_fields:
@@ -223,10 +226,12 @@ def check_strategy_assessment(route: dict, evidence_index: dict[str, dict], gaps
             _require_specific_strategy_text(value, field)
         if len(strategy["alternatives_considered"]) < 2:
             raise RouteGateError("strategy_action_alternatives_insufficient")
-    if unknown and mode != "limited":
+    if version != "0.9.0" and unknown and mode != "limited":
         raise RouteGateError("strategy_unknown_trigger_requires_limited_mode")
-    if mode == "full" and (not triggered or unknown or "limitation" in strategy):
+    if mode == "full" and ((version != "0.9.0" and (not triggered or unknown)) or "limitation" in strategy):
         raise RouteGateError("strategy_full_mode_inconsistent_with_trigger_review")
+    if version == "0.9.0" and strategy.get("disposition") == "no_action":
+        _require_specific_strategy_text(strategy["no_action_reason"], "no_action_reason")
     if mode == "not_triggered":
         if triggered or unknown or statuses - {"not_triggered", "not_applicable"}:
             raise RouteGateError("strategy_not_triggered_mode_inconsistent_with_trigger_review")
@@ -239,7 +244,7 @@ def check_strategy_assessment(route: dict, evidence_index: dict[str, dict], gaps
             _require_specific_strategy_text(limitation[field], f"limitation_{field}")
         if any(ref not in evidence_index for ref in limitation["evidence_refs"]):
             raise RouteGateError("strategy_limitation_evidence_dangling")
-        if version == "0.8.0":
+        if version in {"0.8.0", "0.9.0"}:
             limitation_issues = set(limitation.get("issue_refs", []))
             if not limitation_issues or not limitation_issues <= declared_strategy_issues:
                 raise RouteGateError("strategy_limitation_issue_link_invalid")
@@ -255,13 +260,13 @@ def check_strategy_assessment(route: dict, evidence_index: dict[str, dict], gaps
 
 def required_operations_for(route: dict) -> tuple[str, ...]:
     required = list(REQUIRED_OPERATIONS[route["request_kind"]])
-    if route.get("schema_version") in {"0.4.0", "0.5.0", "0.6.0", "0.7.0", "0.8.0"} and route["request_kind"] in {
+    if route.get("schema_version") in {"0.4.0", "0.5.0", "0.6.0", "0.7.0", "0.8.0", "0.9.0"} and route["request_kind"] in {
         "applicant_guidance", "source_research",
     }:
         for operation_id in ("research_gate", "source_preflight", "attack_angle_screen"):
             if operation_id not in required:
                 required.append(operation_id)
-    if route.get("schema_version") == "0.8.0" and route["request_kind"] in {
+    if route.get("schema_version") in {"0.8.0", "0.9.0"} and route["request_kind"] in {
         "applicant_guidance", "source_research",
     }:
         required.append("consultation_finalisation")
@@ -290,7 +295,7 @@ def safe_relative_file(base: Path, value: str, label: str) -> Path:
 
 
 def strict_receipt(route: dict) -> bool:
-    return route.get("schema_version") in {"0.5.0", "0.6.0", "0.7.0", "0.8.0"}
+    return route.get("schema_version") in {"0.5.0", "0.6.0", "0.7.0", "0.8.0", "0.9.0"}
 
 
 def check_c27_records(route: dict, registry: dict, gaps: list[str]) -> int:
@@ -876,6 +881,7 @@ def validate_privacy_minimisation(route: dict) -> None:
     """Reject a small set of obvious identifiers in strict free-text fields."""
     if not strict_receipt(route):
         return
+    privacy_keys = _PRIVACY_TEXT_KEYS | ({"objective", "no_action_reason", "summary", "first_step", "purpose", "reassess_when", "no_trigger_reason", "not_applicable_reason"} if route.get("schema_version") == "0.9.0" else set())
     def walk(value, path=()):
         if isinstance(value, dict):
             for key, child in value.items():
@@ -883,7 +889,7 @@ def validate_privacy_minimisation(route: dict) -> None:
         elif isinstance(value, list):
             for index, child in enumerate(value):
                 yield from walk(child, path + (str(index),))
-        elif isinstance(value, str) and path and path[-1] in _PRIVACY_TEXT_KEYS:
+        elif isinstance(value, str) and path and path[-1] in privacy_keys:
             for label, pattern in _PII_PATTERNS:
                 if pattern.search(value):
                     raise RouteGateError(
@@ -918,8 +924,8 @@ def check_declared_issues(route: dict, evidence_index: dict[str, dict],
     }
 
     version = route.get("schema_version")
-    strict = version in {"0.4.0", "0.5.0", "0.6.0", "0.7.0", "0.8.0"}
-    v05 = version in {"0.5.0", "0.6.0", "0.7.0", "0.8.0"}
+    strict = version in {"0.4.0", "0.5.0", "0.6.0", "0.7.0", "0.8.0", "0.9.0"}
+    v05 = version in {"0.5.0", "0.6.0", "0.7.0", "0.8.0", "0.9.0"}
     if (version == "0.4.0" and route.get("revision_control") is not None
             and route.get("invocation", {}).get("material_change") is not True):
         raise RouteGateError("revision_control_without_material_change")
@@ -1580,6 +1586,71 @@ def validate_route(path: Path) -> dict:
     issue_routing_reports = check_declared_issues(
         route, evidence_index, source_preflight_reports, gaps)
     strategy_mode = check_strategy_assessment(route, evidence_index, gaps)
+
+    if route.get("schema_version") == "0.9.0" and route["request_kind"] in {"applicant_guidance", "source_research"}:
+        # A model-led review and deterministic execution are distinct records.
+        # Unavailable Python validation is still shown in the operation ledger.
+        names = {"research_gate": "research_review", "source_preflight": "source_review",
+                 "c3_module_pair_conformance": "country_module_review"}
+        selected_operations = set(required_operation_ids) | {op_id for op_id, operation in operations.items() if operation["applicability"] == "triggered"}
+        required_reviews = {names.get(op_id, op_id) for op_id in selected_operations}
+        reviews = {}
+        for review in route["workflow_reviews"]:
+            review_id = review["review_id"]
+            if review_id in reviews:
+                raise RouteGateError("workflow_review_duplicate:" + review_id)
+            reviews[review_id] = review
+            for ref in review["evidence_refs"]:
+                if ref not in evidence_index:
+                    raise RouteGateError("workflow_review_evidence_dangling:" + review_id)
+                if evidence_index[ref]["kind"] not in {"conversation_record", "source_record", "local_artifact"}:
+                    raise RouteGateError("workflow_review_evidence_kind_invalid:" + review_id)
+            if review["status"] != "completed":
+                _require_specific_strategy_text(review["reason"], "workflow_review_" + review_id)
+            elif review_id in {"research_review", "source_review"}:
+                outcome = review.get("source_outcome")
+                if outcome not in {"reviewed", "no_source_available"}:
+                    raise RouteGateError("workflow_source_outcome_missing:" + review_id)
+                kinds = {evidence_index[ref]["kind"] for ref in review["evidence_refs"]}
+                if outcome == "reviewed" and not kinds.intersection({"source_record", "local_artifact"}):
+                    raise RouteGateError("workflow_source_review_evidence_missing:" + review_id)
+                if outcome == "no_source_available":
+                    reason = review.get("reason")
+                    if not isinstance(reason, str):
+                        raise RouteGateError("workflow_source_unavailability_reason_missing:" + review_id)
+                    _require_specific_strategy_text(reason, "workflow_source_unavailable_" + review_id)
+                    gaps.append("workflow_review:" + review_id + ":no_source_available")
+        incomplete = {review_id for review_id in required_reviews
+                      if review_id not in reviews or reviews[review_id]["status"] != "completed"}
+        incomplete.update(review_id for review_id, review in reviews.items() if review["status"] != "completed")
+        c27_incomplete = any(item["record"]["status"] in {"not_checked", "blocked", "unavailable"} for item in route["c27_checks"]) or any(":c27_required_check_missing:" in gap or gap == "c27:no_selected_checks_recorded" for gap in gaps)
+        if c27_incomplete:
+            incomplete.add("c27_reconciliation")
+            if reviews.get("c27_reconciliation", {}).get("status") == "completed":
+                raise RouteGateError("workflow_review_c27_conflicts_with_unperformed_check")
+        if route["conditional_review"]["status"] != "reviewed":
+            incomplete.add("conditional_workflow_review")
+        mode = route["consultation_mode"]
+        if mode == "full" and incomplete:
+            raise RouteGateError("full_consultation_with_unperformed_required_work:" + ",".join(sorted(incomplete)))
+        if mode == "limited":
+            limitation = route["consultation_limitation"]
+            for field in ("missing", "effect"):
+                _require_specific_strategy_text(limitation[field], "consultation_limitation_" + field)
+            issue_index = {issue["issue_ref"]: issue for issue in route.get("issues", [])}
+            if any(ref not in issue_index for ref in limitation["issue_refs"]):
+                raise RouteGateError("consultation_limitation_issue_reference_dangling")
+            if any(ref not in evidence_index for ref in limitation["evidence_refs"]):
+                raise RouteGateError("consultation_limitation_evidence_reference_dangling")
+            if not {issue_index[ref]["evidence_ref"] for ref in limitation["issue_refs"]} <= set(limitation["evidence_refs"]):
+                raise RouteGateError("consultation_limitation_issue_evidence_mismatch")
+            declared = set(limitation["review_ids"])
+            if not declared <= set(reviews) | required_reviews | {"conditional_workflow_review"}:
+                raise RouteGateError("consultation_limitation_review_reference_invalid")
+            if incomplete and not incomplete <= declared:
+                raise RouteGateError("consultation_limitation_missing_required_reviews")
+            if not incomplete and limitation["reason_code"] != "narrowed_scope":
+                raise RouteGateError("consultation_limitation_unsubstantiated")
 
     try:
         dashboard_report = validate_dashboard_receipt(

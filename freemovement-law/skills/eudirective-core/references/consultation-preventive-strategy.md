@@ -44,3 +44,5 @@ An appointment/access problem is not itself a formal refusal. Keep pre-lodging a
 ## Reuse and boundaries
 
 Reuse C5e's option-generation principles and C5f's comparison and conditional-sequencing principles conversationally: include direct cooperation and clarification baselines, consider delay/inaction risks, compare burden and evidence, sequence conditionally, and allow no action. C25 remains the owner of ordinary applicant-facing strategy. Do not create C5d attack-angle findings to unlock strategy, run C5e/C5f scripts on applicant facts, describe a synthetic engine as executed, or present C5e/C5f IDs, scorecards, or synthetic records to applicants. If an adverse event later occurs, reassess using the actual response and transition to C25's existing grievance/remedy branch.
+
+Strategy review mode is independent of consultation mode. Screen all five trigger categories. Unknown facts can be addressed in a Full review with conditional alternatives. Use Limited when an essential strategic assessment cannot be performed; identify the missing item, effect, and relevant issue and evidence. Explain a recommendation to take no additional action.

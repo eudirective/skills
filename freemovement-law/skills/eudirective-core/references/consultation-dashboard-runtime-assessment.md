@@ -2,7 +2,7 @@
 
 ## Decision
 
-The consultation board is required by the core instructions after every substantive legal consultation, in Full or Limited mode. It remains native Markdown and does not require an MCP tool, hosted service, or custom UI. A skill can instruct ChatGPT to assemble it from the current conversation and recorded checks, but cannot force presentation or verify that every check ran. A local Codex shell can run the version 0.8.0 receipt gate and renderer when the exact plugin bundle and Python are available; the controlled-release command can append a wholly omitted board once in memory. This is a manual local path, not automatic ChatGPT integration.
+The consultation board is required by the core instructions after every substantive legal consultation, in Full or Limited mode. It remains native Markdown and does not require an MCP tool, hosted service, or custom UI. A skill can instruct ChatGPT to assemble it from the current conversation and recorded checks, but cannot force presentation or verify that every check ran. A local Codex shell can run the version 0.9.0 receipt gate and renderer when the exact plugin bundle and Python are available; the controlled-release command can append a wholly omitted board once in memory. This is a manual local path, not automatic ChatGPT integration.
 
 ## Layout supported by this package
 
@@ -25,12 +25,12 @@ A skill instruction cannot force ChatGPT to include the board, authenticate repo
 ## Implementation status
 
 - In-chat Full/Limited native Markdown board layout: specified in the core skill, routing guidance, and examples; not enforceable by an ordinary ChatGPT host hook.
-- Receipt schema 0.8.0 requires a top-level Full/Limited consultation mode, independent coverage status, a new board on each substantive applicant-guidance or source-research response, and an issue-linked strategy assessment in the same record.
+- Receipt schema 0.9.0 requires a top-level Full/Limited consultation mode, independent coverage status, a new board on each substantive applicant-guidance or source-research response, and an issue-linked strategy assessment in the same record.
 - Strategy screen: five trigger groups, evidence references, actionable next step for triggered cases, and a specific missing/effect explanation for limited cases; model-declared and not proof that no trigger was omitted.
 - Local bounded repair: the opt-in controlled-release command may append the canonical board once only when it is entirely absent; malformed or conflicting board text blocks that local path.
 - Issue metrics and status bar: one three-column contract, four recorded disposition groups, and explicit unknown/out-of-scope handling; not a legal-completeness score.
 - Readable issue cards with missing-item/effect text: specified for both board modes.
-- Local Codex rendering: the route gate exposes rendered Markdown through `--dashboard-only`; schema 0.8.0 supplies the top-level Full/Limited mode, independent coverage status, and strategy section. The local controlled-release command can append the canonical board once only when the answer omitted it entirely.
+- Local Codex rendering: the route gate exposes rendered Markdown through `--dashboard-only`; schema 0.9.0 supplies the top-level Full/Limited mode, independent coverage status, and strategy section. The local controlled-release command can append the canonical board once only when the answer omitted it entirely.
 - Separate execution/verification ledger: specified; model-led assessments remain distinct from observed runs.
 - Bundled-library matches, web-search discoveries, and module use: shown separately with overlap and unknown provenance handled explicitly.
 - Custom graphical renderer, hosted service, MCP UI, and host-enforced release gate: not provided.
