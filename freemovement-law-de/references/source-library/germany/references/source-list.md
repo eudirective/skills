@@ -79,39 +79,39 @@ Canonical rows: **47**; provisional unique IDs: **47**; unresolved entries: **0*
 | `de-03` | `de:url:8a0627bcc3e8cb47ef3c` | resolved | official_reference/de/undated | discovery | — |
 | `de-04` | `de:url:af098dd3377863f7ad14` | resolved | official_reference/de/undated<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy, discovery | — |
 | `de-05` | `de:url:b0b57e0ffe971054e54f` | resolved | official_reference/de/undated | accepted_external_reference, accepted_local_copy | — |
-| `de-06` | `de:url:379838b1f31cc0b8235a` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_external_reference, accepted_local_copy, pending | — |
+| `de-06` | `de:url:379838b1f31cc0b8235a` | resolved | local_artifact/de/undated (`documents/legislation/de-06-freizuegg-eu.md`)<br>official_reference/de/undated | accepted_external_reference, accepted_local_copy, pending | — |
 | `de-07` | `de:url:c441782be8747749d7a0` | resolved | official_reference/de/undated | accepted_external_reference, accepted_local_copy, discovery | — |
-| `de-08` | `de:url:37447dcc5597b7b30d68` | resolved | local_artifact/de/undated<br>local_artifact/en/undated<br>official_reference/de/undated<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy, pending | — |
-| `de-09` | `de:url:d47133d576470a877fd8` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_external_reference, accepted_local_copy, pending | — |
-| `de-10` | `de:url:defcafd9cc2ac2e68239` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_external_reference, accepted_local_copy | — |
-| `de-11` | `de:url:17991c693db3aadcd626` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_external_reference, accepted_local_copy, pending | — |
-| `de-12` | `de:url:33cd52d67b942e8be80a` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_external_reference, accepted_local_copy, pending | — |
-| `de-13` | `de:url:0a7c6eee2cdc6c017f27` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_external_reference, accepted_local_copy, pending | — |
-| `de-14` | `de:url:9f499b9c54c6234fb191` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_external_reference, accepted_local_copy, pending | — |
-| `de-15` | `de:url:a317f54e76f37c6aa9ee` | resolved | local_artifact/de/undated<br>local_artifact/en/undated<br>official_reference/de/undated<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy, pending | — |
-| `de-16` | `de:url:4c420567fc1510667b0c` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_external_reference, accepted_local_copy, pending | — |
-| `de-17` | `de:url:3adb4140f4cce3817126` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_external_reference, accepted_local_copy, pending | — |
-| `de-18` | `de:url:1fe26748a7ee235fe678` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_external_reference, accepted_local_copy, pending | — |
-| `de-19` | `de:url:e21140571d7073db3a55` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_external_reference, accepted_local_copy, pending | — |
-| `de-20` | `de:url:e09fbc76ee3b6f0ba3bc` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_external_reference, accepted_local_copy, pending | — |
-| `de-21` | `de:url:8bef677eccf28ec55078` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_external_reference, accepted_local_copy, pending | — |
-| `de-22` | `de:url:41d71602743099c97c8d` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_external_reference, accepted_local_copy, pending | — |
-| `de-23` | `de:url:3c4c2a24cb9b3331e9ed` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_external_reference, accepted_local_copy, pending | — |
-| `de-24` | `de:url:aedc36045c75ebde23d1` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_external_reference, accepted_local_copy, pending | — |
-| `de-25` | `de:url:f34f314c4582a69b7210` | resolved | local_artifact/en/undated<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
-| `de-26` | `de:url:f056571ef985e0a1be5e` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_external_reference, accepted_local_copy | — |
-| `de-27` | `de:url:c87559e509f6f2d3cdda` | resolved | local_artifact/en/undated<br>official_reference/de/undated<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `de-08` | `de:url:37447dcc5597b7b30d68` | resolved | local_artifact/de/undated (`documents/legislation/de-08-aufenthg.md`)<br>local_artifact/en/undated (`documents/legislation/de-08-aufenthg.md`)<br>official_reference/de/undated<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy, pending | — |
+| `de-09` | `de:url:d47133d576470a877fd8` | resolved | local_artifact/de/undated (`documents/legislation/de-09-aufenthv.md`)<br>official_reference/de/undated | accepted_external_reference, accepted_local_copy, pending | — |
+| `de-10` | `de:url:defcafd9cc2ac2e68239` | resolved | local_artifact/de/undated (`documents/legislation/de-09-aufenthv.md`)<br>official_reference/de/undated | accepted_external_reference, accepted_local_copy | — |
+| `de-11` | `de:url:17991c693db3aadcd626` | resolved | local_artifact/de/undated (`documents/legislation/de-11-gad.md`)<br>official_reference/de/undated | accepted_external_reference, accepted_local_copy, pending | — |
+| `de-12` | `de:url:33cd52d67b942e8be80a` | resolved | local_artifact/de/undated (`documents/legislation/de-12-konsg.md`)<br>official_reference/de/undated | accepted_external_reference, accepted_local_copy, pending | — |
+| `de-13` | `de:url:0a7c6eee2cdc6c017f27` | resolved | local_artifact/de/undated (`documents/legislation/de-13-vwvfg-section-2.md`)<br>official_reference/de/undated | accepted_external_reference, accepted_local_copy, pending | — |
+| `de-14` | `de:url:9f499b9c54c6234fb191` | resolved | local_artifact/de/undated (`documents/legislation/de-14-ifg.md`)<br>official_reference/de/undated | accepted_external_reference, accepted_local_copy, pending | — |
+| `de-15` | `de:url:a317f54e76f37c6aa9ee` | resolved | local_artifact/de/undated (`documents/legislation/de-15-vwgo.md`)<br>local_artifact/en/undated (`documents/legislation/de-15-vwgo.md`)<br>official_reference/de/undated<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy, pending | — |
+| `de-16` | `de:url:4c420567fc1510667b0c` | resolved | local_artifact/de/undated (`documents/legislation/de-16-aabgebv.md`)<br>official_reference/de/undated | accepted_external_reference, accepted_local_copy, pending | — |
+| `de-17` | `de:url:3adb4140f4cce3817126` | resolved | local_artifact/de/undated (`documents/legislation/de-17-azrg.md`)<br>official_reference/de/undated | accepted_external_reference, accepted_local_copy, pending | — |
+| `de-18` | `de:url:1fe26748a7ee235fe678` | resolved | local_artifact/de/undated (`documents/legislation/de-18-pstg-section-34.md`)<br>official_reference/de/undated | accepted_external_reference, accepted_local_copy, pending | — |
+| `de-19` | `de:url:e21140571d7073db3a55` | resolved | local_artifact/de/undated (`documents/legislation/de-19-pstv.md`)<br>official_reference/de/undated | accepted_external_reference, accepted_local_copy, pending | — |
+| `de-20` | `de:url:e09fbc76ee3b6f0ba3bc` | resolved | local_artifact/de/undated (`documents/legislation/de-20-adwirkg.md`)<br>official_reference/de/undated | accepted_external_reference, accepted_local_copy, pending | — |
+| `de-21` | `de:url:8bef677eccf28ec55078` | resolved | local_artifact/de/undated (`documents/legislation/de-21-advermig.md`)<br>official_reference/de/undated | accepted_external_reference, accepted_local_copy, pending | — |
+| `de-22` | `de:url:41d71602743099c97c8d` | resolved | local_artifact/de/undated (`documents/legislation/de-22-aduebag.md`)<br>official_reference/de/undated | accepted_external_reference, accepted_local_copy, pending | — |
+| `de-23` | `de:url:3c4c2a24cb9b3331e9ed` | resolved | local_artifact/de/undated (`documents/legislation/de-23-egbgb.md`)<br>official_reference/de/undated | accepted_external_reference, accepted_local_copy, pending | — |
+| `de-24` | `de:url:aedc36045c75ebde23d1` | resolved | local_artifact/de/undated (`documents/legislation/de-24-famfg.md`)<br>official_reference/de/undated | accepted_external_reference, accepted_local_copy, pending | — |
+| `de-25` | `de:url:f34f314c4582a69b7210` | resolved | local_artifact/en/undated (`documents/guidance/de-25.md`)<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `de-26` | `de:url:f056571ef985e0a1be5e` | resolved | local_artifact/de/undated (`documents/guidance/de-26.md`)<br>official_reference/de/undated | accepted_external_reference, accepted_local_copy | — |
+| `de-27` | `de:url:c87559e509f6f2d3cdda` | resolved | local_artifact/en/undated (`documents/guidance/de-27.md`)<br>official_reference/de/undated<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
 | `de-28` | `de:url:2e3e0879d25eaaeb5ab8` | resolved | official_reference/de/undated<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy, discovery | — |
 | `de-29` | `de:url:f2109e7f45b4abc6d0a0` | resolved | official_reference/de/undated<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
 | `de-30` | `de:url:b537dcec457805399112` | resolved | official_reference/de/undated<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
-| `de-31` | `de:url:081987c856ecf7ee1b9a` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_external_reference, accepted_local_copy, pending | — |
-| `de-32` | `de:url:5759aabefd3d960eee79` | resolved | local_artifact/en/undated<br>official_reference/en/undated<br>official_reference/unspecified/undated | accepted_external_reference, accepted_local_copy | — |
+| `de-31` | `de:url:081987c856ecf7ee1b9a` | resolved | local_artifact/de/undated (`documents/guidance/de-31.md`)<br>official_reference/de/undated | accepted_external_reference, accepted_local_copy, pending | — |
+| `de-32` | `de:url:5759aabefd3d960eee79` | resolved | local_artifact/en/undated (`documents/guidance/de-32.md`)<br>official_reference/en/undated<br>official_reference/unspecified/undated | accepted_external_reference, accepted_local_copy | — |
 | `de-33` | `de:url:f461b70b175611a39650` | resolved | official_reference/de/undated<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy, discovery | — |
 | `de-34` | `de:url:716f28f9df15c815c5e9` | resolved | official_reference/de/undated<br>official_reference/en/undated | candidate | — |
 | `de-35` | `de:url:1979256dd89e18b46828` | resolved | official_reference/de/undated | accepted_external_reference, accepted_local_copy | — |
 | `de-36` | `de:url:238ed153b92ea313d162` | resolved | official_reference/de/undated | candidate | — |
-| `de-37` | `de:url:6a0933be8b128a452cb2` | resolved | local_artifact/de/undated<br>official_reference/de/undated | accepted_external_reference, accepted_local_copy | — |
-| `de-38` | `de:url:86fd9171e8532d707fb2` | resolved | local_artifact/en/undated<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `de-37` | `de:url:6a0933be8b128a452cb2` | resolved | local_artifact/de/undated (`documents/procedure/de-37.md`)<br>official_reference/de/undated | accepted_external_reference, accepted_local_copy | — |
+| `de-38` | `de:url:86fd9171e8532d707fb2` | resolved | local_artifact/en/undated (`documents/guidance/de-38.md`)<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
 | `de-39` | `de:url:54e047b9d57cb1c18b62` | resolved | official_reference/de/undated | accepted_external_reference, accepted_local_copy | — |
 | `de-40` | `de:url:67ee4da293e3e521bca2` | resolved | official_reference/de/undated | accepted_external_reference, accepted_local_copy | — |
 | `de-41` | `de:url:bbe1f6846bab993f653d` | resolved | official_reference/de/undated<br>official_reference/en/undated | candidate | — |
@@ -119,6 +119,6 @@ Canonical rows: **47**; provisional unique IDs: **47**; unresolved entries: **0*
 | `de-43` | `de:url:c69eea2da5386ef20aad` | resolved | official_reference/en/undated | accepted_external_reference, accepted_local_copy, pending, historical | — |
 | `de-44` | `de:url:975abd35534477ceeab8` | resolved | official_reference/de/undated | accepted_external_reference, accepted_local_copy | — |
 | `de-45` | `de:url:69f7b5a8ea65f5e54b31` | resolved | official_reference/de/undated | accepted_external_reference, accepted_local_copy | — |
-| `de-46` | `de:url:8da9fb2398c1c0c3af7f` | resolved | local_artifact/en/undated<br>official_reference/de/undated<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy, pending | — |
+| `de-46` | `de:url:8da9fb2398c1c0c3af7f` | resolved | local_artifact/en/undated (`documents/guidance/de-46.md`)<br>official_reference/de/undated<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy, pending | — |
 | `de-47` | `de:url:17deed9d7ec57bb2c07f` | resolved | official_reference/de/undated<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy, pending | — |
 <!-- source-identity-inventory:end -->

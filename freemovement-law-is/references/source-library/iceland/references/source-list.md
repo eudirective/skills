@@ -66,19 +66,19 @@ Canonical rows: **36**; provisional unique IDs: **36**; unresolved entries: **0*
 | `is-02` | `is:url:7f8c00637aa823bde1a1` | resolved | official_reference/is/Lagasafn 158a | accepted_external_reference | — |
 | `is-03` | `is:url:716c0cb6fb1b04222ba1` | resolved | official_reference/is/Lagasafn 158a | accepted_external_reference | — |
 | `is-04` | `is:url:b7cfda53557f35fd9cac` | resolved | official_reference/is/Lagasafn 158a | accepted_external_reference | — |
-| `is-05` | `is:url:2bfdee90e64f06e4abf7` | resolved | local_artifact/unspecified/undated<br>official_reference/is/undated | accepted_external_reference, pending | — |
+| `is-05` | `is:url:2bfdee90e64f06e4abf7` | resolved | local_artifact/unspecified/undated (`documents/guidance/is-05.md`)<br>official_reference/is/undated | accepted_external_reference, pending | — |
 | `is-06` | `is:url:40f93bbaf9d543e5b153` | resolved | official_reference/is/undated | accepted_external_reference | — |
 | `is-07` | `is:url:fe848b5932b0bd6d3b1c` | resolved | official_reference/en/undated | accepted_external_reference | — |
-| `is-08` | `is:url:b2026863c55f6ee47cd4` | resolved | local_artifact/unspecified/undated<br>official_reference/en/undated | accepted_external_reference, pending | — |
-| `is-09` | `is:url:c42a5ebf85bad985c756` | resolved | local_artifact/unspecified/undated<br>official_reference/en/undated | accepted_external_reference, pending | — |
-| `is-10` | `is:url:9beefac051c07e398197` | resolved | local_artifact/unspecified/undated<br>official_reference/en/undated | accepted_external_reference, pending | — |
-| `is-11` | `is:url:54d3385afc558478dda5` | resolved | local_artifact/unspecified/undated<br>official_reference/en/undated | accepted_external_reference, pending | — |
+| `is-08` | `is:url:b2026863c55f6ee47cd4` | resolved | local_artifact/unspecified/undated (`documents/guidance/is-08.md`)<br>official_reference/en/undated | accepted_external_reference, pending | — |
+| `is-09` | `is:url:c42a5ebf85bad985c756` | resolved | local_artifact/unspecified/undated (`documents/guidance/is-09.md`)<br>official_reference/en/undated | accepted_external_reference, pending | — |
+| `is-10` | `is:url:9beefac051c07e398197` | resolved | local_artifact/unspecified/undated (`documents/guidance/is-10.md`)<br>official_reference/en/undated | accepted_external_reference, pending | — |
+| `is-11` | `is:url:54d3385afc558478dda5` | resolved | local_artifact/unspecified/undated (`documents/guidance/is-11.md`)<br>official_reference/en/undated | accepted_external_reference, pending | — |
 | `is-12` | `is:url:616421fea0aa0d3c2bd5` | resolved | official_reference/en/undated | accepted_external_reference | — |
-| `is-13` | `is:url:304413837be9dc0f05d4` | resolved | local_artifact/unspecified/undated<br>official_reference/en/undated | accepted_external_reference, pending | — |
-| `is-14` | `is:url:b00e85cba6c91e19cf3a` | resolved | local_artifact/unspecified/undated<br>official_reference/en/undated | accepted_external_reference, pending | — |
+| `is-13` | `is:url:304413837be9dc0f05d4` | resolved | local_artifact/unspecified/undated (`documents/guidance/is-13.md`)<br>official_reference/en/undated | accepted_external_reference, pending | — |
+| `is-14` | `is:url:b00e85cba6c91e19cf3a` | resolved | local_artifact/unspecified/undated (`documents/guidance/is-14.md`)<br>official_reference/en/undated | accepted_external_reference, pending | — |
 | `is-15` | `is:url:ea66a6d3f7bf1d9a5ea9` | resolved | official_reference/en/undated | accepted_external_reference | — |
-| `is-16` | `is:url:d6a02eb524ab4688c768` | resolved | local_artifact/unspecified/undated<br>official_reference/en/undated | accepted_external_reference, pending | — |
-| `is-17` | `is:url:16656e098d2be48bc8d7` | resolved | local_artifact/unspecified/undated<br>official_reference/en/undated | accepted_external_reference, pending | — |
+| `is-16` | `is:url:d6a02eb524ab4688c768` | resolved | local_artifact/unspecified/undated (`documents/guidance/is-16.md`)<br>official_reference/en/undated | accepted_external_reference, pending | — |
+| `is-17` | `is:url:16656e098d2be48bc8d7` | resolved | local_artifact/unspecified/undated (`documents/guidance/is-17.md`)<br>official_reference/en/undated | accepted_external_reference, pending | — |
 | `is-18` | `is:url:d1599447ea19e62a76cf` | resolved | official_reference/en/undated | accepted_external_reference | — |
 | `is-19` | `is:url:b6e7628afbe328f53fb5` | resolved | official_reference/en/undated | accepted_external_reference | — |
 | `is-20` | `is:url:68b55512448a662b44bf` | resolved | official_reference/is/undated | accepted_external_reference | — |

@@ -82,18 +82,18 @@ Canonical rows: **53**; provisional unique IDs: **53**; unresolved entries: **32
 
 | Existing entry ID | Canonical source identity | Resolution | Representations | Catalogued statuses | Status record IDs |
 |---|---|---|---|---|---|
-| `si_02` | `si:ambiguous:si-02:6ca91c36e5b9` | unresolved | local_artifact/sl/2025<br>official_reference/sl/2025<br>official_reference/sl/2025 | accepted_external_reference | — |
-| `si_04` | `si:ambiguous:si-04:e9ba3690aacf` | unresolved | local_artifact/sl/2025<br>official_reference/sl/2025<br>official_reference/sl/2025 | accepted_external_reference | — |
-| `si_22` | `si:ambiguous:si-22:3d746b612ff9` | unresolved | local_artifact/sl/2026<br>official_reference/sl/2026<br>official_reference/sl/2026 | accepted_external_reference | — |
-| `si_23` | `si:ambiguous:si-23:ebe95946642e` | unresolved | local_artifact/sl/2026<br>official_reference/sl/2026<br>official_reference/sl/2026 | accepted_external_reference | — |
-| `si_24` | `si:ambiguous:si-24:0fa530836882` | unresolved | local_artifact/sl/2026<br>official_reference/sl/2026<br>official_reference/sl/2026 | accepted_external_reference | — |
-| `si_25` | `si:ambiguous:si-25:3273d02fdb5e` | unresolved | local_artifact/sl/2026<br>official_reference/sl/2026<br>official_reference/sl/2026 | accepted_external_reference | — |
-| `si_26` | `si:ambiguous:si-26:475f056948ad` | unresolved | local_artifact/sl/2026<br>official_reference/sl/2026<br>official_reference/sl/2026 | accepted_external_reference | — |
-| `si_27` | `si:ambiguous:si-27:a29aca37acce` | unresolved | local_artifact/sl/2026<br>official_reference/sl/2026<br>official_reference/sl/2026 | accepted_external_reference | — |
-| `si_31` | `si:ambiguous:si-31:640a3297c469` | unresolved | local_artifact/en/undated<br>official_reference/en/undated<br>official_reference/en/undated | accepted_external_reference | — |
-| `si_32` | `si:ambiguous:si-32:3b5f356058c8` | unresolved | local_artifact/sl/undated<br>official_reference/sl/undated<br>official_reference/sl/undated | accepted_external_reference | — |
-| `si_34` | `si:ambiguous:si-34:4c3951533ecf` | unresolved | local_artifact/sl/2026<br>official_reference/sl/2026<br>official_reference/sl/2026 | accepted_external_reference | — |
-| `SI-01` | `si:ambiguous:si-01:1291dd99a782` | unresolved | local_artifact/sl/1999<br>local_artifact/sl/2016<br>local_artifact/sl/2003<br>local_artifact/sl/2017<br>official_reference/sl/2003<br>official_reference/sl/2017<br>official_reference/sl/2016<br>official_reference/sl/2017<br>official_reference/sl/1999<br>official_reference/sl/2016<br>official_reference/sl/2003<br>official_reference/sl/1999 | accepted_external_reference | si_03, si_11, si_12, si_13 |
+| `si_02` | `si:ambiguous:si-02:6ca91c36e5b9` | unresolved | local_artifact/sl/2025 (`documents/legislation/si-foreigners-act-ztuj-2.md`)<br>official_reference/sl/2025<br>official_reference/sl/2025 | accepted_external_reference | — |
+| `si_04` | `si:ambiguous:si-04:e9ba3690aacf` | unresolved | local_artifact/sl/2025 (`documents/legislation/si-zup-i-official-gazette-85-2025.md`)<br>official_reference/sl/2025<br>official_reference/sl/2025 | accepted_external_reference | — |
+| `si_22` | `si:ambiguous:si-22:3d746b612ff9` | unresolved | local_artifact/sl/2026 (`documents/guidance/si-entry-residence-guidance.md`)<br>official_reference/sl/2026<br>official_reference/sl/2026 | accepted_external_reference | — |
+| `si_23` | `si:ambiguous:si-23:ebe95946642e` | unresolved | local_artifact/sl/2026 (`documents/guidance/si-eu-residence-registration.md`)<br>official_reference/sl/2026<br>official_reference/sl/2026 | accepted_external_reference | — |
+| `si_24` | `si:ambiguous:si-24:0fa530836882` | unresolved | local_artifact/sl/2026 (`documents/guidance/si-third-country-eu-family-residence.md`)<br>official_reference/sl/2026<br>official_reference/sl/2026 | accepted_external_reference | — |
+| `si_25` | `si:ambiguous:si-25:3273d02fdb5e` | unresolved | local_artifact/sl/2026 (`documents/guidance/si-eu-permanent-residence.md`)<br>official_reference/sl/2026<br>official_reference/sl/2026 | accepted_external_reference | — |
+| `si_26` | `si:ambiguous:si-26:475f056948ad` | unresolved | local_artifact/sl/2026 (`documents/guidance/si-non-eu-family-permanent-residence.md`)<br>official_reference/sl/2026<br>official_reference/sl/2026 | accepted_external_reference | — |
+| `si_27` | `si:ambiguous:si-27:a29aca37acce` | unresolved | local_artifact/sl/2026 (`documents/guidance/si-swiss-residence-service.md`)<br>official_reference/sl/2026<br>official_reference/sl/2026 | accepted_external_reference | — |
+| `si_31` | `si:ambiguous:si-31:640a3297c469` | unresolved | local_artifact/en/undated (`documents/guidance/si-schengen-visa-data-protection-notice.md`)<br>official_reference/en/undated<br>official_reference/en/undated | accepted_external_reference | — |
+| `si_32` | `si:ambiguous:si-32:3b5f356058c8` | unresolved | local_artifact/sl/undated (`documents/guidance/si-vis-data-rights-service.md`)<br>official_reference/sl/undated<br>official_reference/sl/undated | accepted_external_reference | — |
+| `si_34` | `si:ambiguous:si-34:4c3951533ecf` | unresolved | local_artifact/sl/2026 (`documents/guidance/si-copenhagen-visa-information.md`)<br>official_reference/sl/2026<br>official_reference/sl/2026 | accepted_external_reference | — |
+| `SI-01` | `si:ambiguous:si-01:1291dd99a782` | unresolved | local_artifact/sl/1999 (`documents/references/si-03-general-administrative-procedure-act-zup-2026-10-29.md`)<br>local_artifact/sl/2016 (`documents/legislation/si-13-residence-registration-act-zppreb-1-2026-10-29.md`)<br>local_artifact/sl/2003 (`documents/legislation/si-12-civil-status-registry-act-zmatr-2026-10-29.md`)<br>local_artifact/sl/2017 (`documents/legislation/si-11-family-code-dz-2026-10-29.md`)<br>official_reference/sl/2003<br>official_reference/sl/2017<br>official_reference/sl/2016<br>official_reference/sl/2017<br>official_reference/sl/1999<br>official_reference/sl/2016<br>official_reference/sl/2003<br>official_reference/sl/1999 | accepted_external_reference | si_03, si_11, si_12, si_13 |
 | `SI-02` | `si:ambiguous:si-02:ab46252b4a68` | unresolved | official_reference/unspecified/undated | candidate | — |
 | `SI-03` | `si:record:si-03:de40f0332c0b` | unresolved | — | candidate | — |
 | `SI-04` | `si:ambiguous:si-04:b12e21920be6` | unresolved | official_reference/unspecified/undated | candidate | — |
@@ -112,7 +112,7 @@ Canonical rows: **53**; provisional unique IDs: **53**; unresolved entries: **32
 | `SI-17` | `si:url:da3673f16df2e8ac1994` | resolved | official_reference/unspecified/undated | candidate | — |
 | `SI-18` | `si:ambiguous:si-18:0cfaf0610a43` | unresolved | official_reference/unspecified/undated | candidate | — |
 | `SI-19` | `si:url:e7295a2aed8340c3cbe0` | resolved | official_reference/unspecified/undated | candidate | — |
-| `SI-20` | `si:url:e9c8c0875cf9d76ef71a` | resolved | local_artifact/sl/2025<br>official_reference/sl/2025<br>official_reference/sl/2025 | candidate | si_20 |
+| `SI-20` | `si:url:e9c8c0875cf9d76ef71a` | resolved | local_artifact/sl/2025 (`documents/guidance/si-opsi-regulation-metadata.md`)<br>official_reference/sl/2025<br>official_reference/sl/2025 | candidate | si_20 |
 | `SI-21` | `si:url:9a99f02d46f5782b96bb` | resolved | official_reference/unspecified/undated | candidate | — |
 | `SI-22` | `si:ambiguous:si-22:44a6c4ca9e3e` | unresolved | official_reference/unspecified/undated | candidate | — |
 | `SI-23` | `si:ambiguous:si-23:2c0d33f608ad` | unresolved | official_reference/unspecified/undated | candidate | — |
@@ -120,19 +120,19 @@ Canonical rows: **53**; provisional unique IDs: **53**; unresolved entries: **32
 | `SI-25` | `si:ambiguous:si-25:8fb5aab782b9` | unresolved | official_reference/unspecified/undated | candidate | — |
 | `SI-26` | `si:ambiguous:si-26:8ff49c1846ed` | unresolved | official_reference/unspecified/undated | candidate | — |
 | `SI-27` | `si:ambiguous:si-27:d6c8e7729bfb` | unresolved | official_reference/unspecified/undated | candidate | — |
-| `SI-28` | `si:url:39916e99a36bc2a14512` | resolved | local_artifact/sl/2026<br>official_reference/sl/2026<br>official_reference/sl/2026 | accepted_external_reference | si_28 |
+| `SI-28` | `si:url:39916e99a36bc2a14512` | resolved | local_artifact/sl/2026 (`documents/guidance/si-administrative-procedure-guidance.md`)<br>official_reference/sl/2026<br>official_reference/sl/2026 | accepted_external_reference | si_28 |
 | `SI-29` | `si:ambiguous:si-29:16c704508258` | unresolved | official_reference/unspecified/undated | candidate | — |
 | `SI-30` | `si:ambiguous:si-30:144972e9716e` | unresolved | official_reference/unspecified/undated | candidate | — |
 | `SI-31` | `si:ambiguous:si-31:1ebdb8619acb` | unresolved | official_reference/unspecified/undated | candidate | — |
 | `SI-32` | `si:ambiguous:si-32:9f6c2dd05a5b` | unresolved | official_reference/unspecified/undated | candidate | — |
-| `SI-33` | `si:ambiguous:si-33:98cb86774586` | unresolved | local_artifact/sl/2026<br>official_reference/sl/2026<br>official_reference/sl/2026 | accepted_external_reference | si_33 |
+| `SI-33` | `si:ambiguous:si-33:98cb86774586` | unresolved | local_artifact/sl/2026 (`documents/guidance/si-missions-directory.md`)<br>official_reference/sl/2026<br>official_reference/sl/2026 | accepted_external_reference | si_33 |
 | `SI-34` | `si:ambiguous:si-34:419f2f873ee1` | unresolved | official_reference/unspecified/undated | candidate | — |
 | `SI-35` | `si:url:a7a658d07565187c91c3` | resolved | official_reference/unspecified/undated | candidate | — |
 | `SI-36` | `si:url:389791ed84d46d858a1b` | resolved | official_reference/unspecified/undated | candidate | — |
-| `SI-37` | `si:url:4119f632629fafce9628` | resolved | local_artifact/sl/2026<br>official_reference/sl/2026<br>official_reference/sl/2026 | accepted_external_reference | si_37 |
-| `SI-38` | `si:url:c0712f52ce496c08a229` | resolved | local_artifact/en/undated<br>official_reference/en/undated<br>official_reference/en/undated | accepted_external_reference | si_38 |
-| `SI-39` | `si:url:899204ad4b919dc581fb` | resolved | local_artifact/sl/2026<br>official_reference/sl/2026<br>official_reference/sl/2026 | accepted_external_reference | si_39 |
-| `SI-40` | `si:url:b288bcbfbaf1c8722bee` | resolved | local_artifact/en/2026<br>official_reference/en/2026<br>official_reference/en/2026 | accepted_external_reference | si_40 |
+| `SI-37` | `si:url:4119f632629fafce9628` | resolved | local_artifact/sl/2026 (`documents/oversight/si-human-rights-ombudsman.md`)<br>official_reference/sl/2026<br>official_reference/sl/2026 | accepted_external_reference | si_37 |
+| `SI-38` | `si:url:c0712f52ce496c08a229` | resolved | local_artifact/en/undated (`documents/oversight/si-information-commissioner.md`)<br>official_reference/en/undated<br>official_reference/en/undated | accepted_external_reference | si_38 |
+| `SI-39` | `si:url:899204ad4b919dc581fb` | resolved | local_artifact/sl/2026 (`documents/guidance/si-euprava-personal-data-rights.md`)<br>official_reference/sl/2026<br>official_reference/sl/2026 | accepted_external_reference | si_39 |
+| `SI-40` | `si:url:b288bcbfbaf1c8722bee` | resolved | local_artifact/en/2026 (`documents/oversight/si-equality-advocate.md`)<br>official_reference/en/2026<br>official_reference/en/2026 | accepted_external_reference | si_40 |
 | `SI-41` | `si:url:57b89b9092baf0d87b7a` | resolved | official_reference/unspecified/undated | candidate | — |
 | `SI-42` | `si:ambiguous:si-42:ac20cf2ee7eb` | unresolved | official_reference/unspecified/undated | candidate | — |
 <!-- source-identity-inventory:end -->

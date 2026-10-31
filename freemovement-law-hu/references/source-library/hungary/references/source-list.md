@@ -51,10 +51,10 @@ Canonical rows: **9**; provisional unique IDs: **9**; unresolved entries: **0**.
 | `ajbh-equal-treatment-directorate` | `hu:url:99937eeb61dc1d88cde5` | resolved | official_reference/hu/undated | accepted_external_reference | — |
 | `ajbh-equal-treatment-request-procedure-2024` | `hu:url:aec7e13cc428212cf563` | resolved | official_reference/hu/2024 edition | accepted_external_reference | — |
 | `ajbh-public-interest-whistleblowing-guide-2025` | `hu:url:d27a8faf4680aeb15390` | resolved | official_reference/hu/2025 edition | accepted_external_reference | — |
-| `hu-act-2007-1` | `hu:url:53b9cf4bd18d970ee581` | resolved | local_artifact/hu/2007<br>official_reference/hu/2026 | accepted_external_reference, pending | — |
+| `hu-act-2007-1` | `hu:url:53b9cf4bd18d970ee581` | resolved | local_artifact/hu/2007 (`documents/laws/free-movement-core/hu-act-2007-1.md`)<br>official_reference/hu/2026 | accepted_external_reference, pending | — |
 | `hu-act-2010-1` | `hu:url:6b74c17906955984f831` | resolved | official_reference/hu/2026 | accepted_external_reference | — |
-| `hu-act-2016-150` | `hu:url:6546886af7b5e3f99d18` | resolved | local_artifact/hu/2016<br>official_reference/hu/2026 | accepted_external_reference, pending | — |
-| `hu-act-2017-1` | `hu:url:66d29db04361039d24b1` | resolved | local_artifact/hu/2017<br>official_reference/hu/2026 | accepted_external_reference, pending | — |
-| `hu-act-2023-25` | `hu:url:d2fd3841960b10d6d32f` | resolved | local_artifact/hu/2023-25<br>official_reference/hu/2026 | accepted_external_reference, pending | — |
-| `hu-gov-2007-113` | `hu:url:676251842e0b540668b9` | resolved | local_artifact/hu/2007<br>official_reference/hu/2026 | accepted_external_reference, pending | — |
+| `hu-act-2016-150` | `hu:url:6546886af7b5e3f99d18` | resolved | local_artifact/hu/2016 (`documents/laws/administrative-procedure/hu-act-2016-150.md`)<br>official_reference/hu/2026 | accepted_external_reference, pending | — |
+| `hu-act-2017-1` | `hu:url:66d29db04361039d24b1` | resolved | local_artifact/hu/2017 (`documents/laws/administrative-court-procedure/hu-act-2017-1.md`)<br>official_reference/hu/2026 | accepted_external_reference, pending | — |
+| `hu-act-2023-25` | `hu:url:d2fd3841960b10d6d32f` | resolved | local_artifact/hu/2023-25 (`documents/laws/complaints/hu-act-2023-25.md`)<br>official_reference/hu/2026 | accepted_external_reference, pending | — |
+| `hu-gov-2007-113` | `hu:url:676251842e0b540668b9` | resolved | local_artifact/hu/2007 (`documents/laws/free-movement-core/hu-gov-2007-113.md`)<br>official_reference/hu/2026 | accepted_external_reference, pending | — |
 <!-- source-identity-inventory:end -->

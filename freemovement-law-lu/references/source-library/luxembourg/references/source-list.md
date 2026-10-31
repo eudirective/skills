@@ -74,12 +74,12 @@ Canonical rows: **51**; provisional unique IDs: **51**; unresolved entries: **2*
 | `lu-02` | `lu:url:1b347e7d6ac2a9aefc8a` | resolved | official_reference/fr/undated | accepted_external_reference, discovery | — |
 | `lu-03` | `lu:url:5dff19184c6e9d369d50` | resolved | official_reference/fr/undated | accepted_external_reference, discovery | — |
 | `lu-04` | `lu:url:f9d65c4a16f696a217be` | resolved | official_reference/fr/undated | accepted_external_reference, discovery | — |
-| `lu-05` | `lu:url:68b5f931629158f26096` | resolved | local_artifact/unspecified/2026-06-12<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy | — |
-| `lu-06` | `lu:url:c0cbcc2cb44967b11159` | resolved | local_artifact/unspecified/2008<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy | — |
-| `lu-07` | `lu:url:38313e7543a85fdbc9ff` | resolved | local_artifact/unspecified/2008<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy | — |
-| `lu-08` | `lu:url:aaca19dc00f0a4524001` | resolved | local_artifact/unspecified/2024<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy | — |
+| `lu-05` | `lu:url:68b5f931629158f26096` | resolved | local_artifact/unspecified/2026-06-12 (`documents/legislation/lu-05-law-free-movement-immigration-consolidation-2026-06-12.md`)<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy | — |
+| `lu-06` | `lu:url:c0cbcc2cb44967b11159` | resolved | local_artifact/unspecified/2008 (`documents/legislation/lu-06-law-free-movement-immigration-original-2008.md`)<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy | — |
+| `lu-07` | `lu:url:38313e7543a85fdbc9ff` | resolved | local_artifact/unspecified/2008 (`documents/legislation/lu-07-regulation-immigration-formalities-original-2008.md`)<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy | — |
+| `lu-08` | `lu:url:aaca19dc00f0a4524001` | resolved | local_artifact/unspecified/2024 (`documents/legislation/lu-08-regulation-immigration-amendment-memorial-a262-2024.md`)<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy | — |
 | `lu-09` | `lu:url:82aa87cbeb2e25724c4a` | resolved | official_reference/fr/undated | accepted_external_reference | — |
-| `lu-10` | `lu:url:eca262116e0a4f8dba47` | resolved | local_artifact/unspecified/2023-04-15<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy | — |
+| `lu-10` | `lu:url:eca262116e0a4f8dba47` | resolved | local_artifact/unspecified/2023-04-15 (`documents/legislation/lu-10-regulation-immigration-formalities-coordinated-2023-04-15.md`)<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy | — |
 | `lu-11` | `lu:url:5edd91ebc8992316d7fa` | resolved | official_reference/en/undated | accepted_external_reference | — |
 | `lu-12` | `lu:ambiguous:lu-12:d9c4eac4b4e4` | unresolved | official_reference/en/undated | accepted_external_reference | — |
 | `lu-13` | `lu:url:29be6ceb2a51b5675846` | resolved | official_reference/en/undated | accepted_external_reference | — |
@@ -93,19 +93,19 @@ Canonical rows: **51**; provisional unique IDs: **51**; unresolved entries: **2*
 | `lu-21` | `lu:url:bbadce147e8051caf993` | resolved | official_reference/en/undated | accepted_external_reference | — |
 | `lu-22` | `lu:url:eddcf9deefe128d82759` | resolved | official_reference/fr/undated | accepted_external_reference | — |
 | `lu-23` | `lu:url:0e6605c3f3bcc54750f1` | resolved | official_reference/fr/undated | accepted_external_reference | — |
-| `lu-24` | `lu:url:fb919c957536529936c1` | resolved | local_artifact/unspecified/undated<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy | — |
+| `lu-24` | `lu:url:fb919c957536529936c1` | resolved | local_artifact/unspecified/undated (`documents/legislation/lu-24-regulation-non-contentious-administrative-procedure-original-1979.md`)<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy | — |
 | `lu-25` | `lu:url:47c3507b5235743b683f` | resolved | official_reference/en/undated | accepted_external_reference | — |
 | `lu-26` | `lu:url:b2eabb485c2f56bb5c02` | resolved | official_reference/en/undated | accepted_external_reference | — |
-| `lu-27` | `lu:url:a6bcd1d7f66cc9be7ea3` | resolved | local_artifact/unspecified/2023-09-16<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy | — |
+| `lu-27` | `lu:url:a6bcd1d7f66cc9be7ea3` | resolved | local_artifact/unspecified/2023-09-16 (`documents/legislation/lu-27-law-administrative-court-procedure-consolidation-2023-09-16.md`)<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy | — |
 | `lu-28` | `lu:url:1c646fe53a0dca4a48ca` | resolved | official_reference/en/undated | accepted_external_reference | — |
-| `lu-29` | `lu:url:2abc029d2dfca3739322` | resolved | local_artifact/unspecified/2018<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy | — |
+| `lu-29` | `lu:url:2abc029d2dfca3739322` | resolved | local_artifact/unspecified/2018 (`documents/legislation/lu-29-law-transparent-open-administration-original-2018.md`)<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy | — |
 | `lu-30` | `lu:url:e25c8646b055bb6d4678` | resolved | official_reference/fr/undated | accepted_external_reference | — |
 | `lu-31` | `lu:url:585edb26cee9059f035f` | resolved | official_reference/fr/undated | accepted_external_reference | — |
 | `lu-32` | `lu:url:9270e8201e1115430ade` | resolved | official_reference/en/undated | accepted_external_reference | — |
-| `lu-33` | `lu:url:b409cfe26cbeeb1eca23` | resolved | local_artifact/unspecified/2025-12-26<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy | — |
+| `lu-33` | `lu:url:b409cfe26cbeeb1eca23` | resolved | local_artifact/unspecified/2025-12-26 (`documents/legislation/lu-33-law-data-protection-consolidation-2025-12-26.md`)<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy | — |
 | `lu-34` | `lu:url:27902be35226bbd87b3f` | resolved | official_reference/en/undated | accepted_external_reference | — |
 | `lu-35` | `lu:url:470b73c49f35f76ba52b` | resolved | official_reference/fr/undated | accepted_external_reference | — |
-| `lu-36` | `lu:url:9cb65461fee4bed402b5` | resolved | local_artifact/unspecified/2014<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy | — |
+| `lu-36` | `lu:url:9cb65461fee4bed402b5` | resolved | local_artifact/unspecified/2014 (`documents/legislation/lu-36-law-civil-status-marriage-reform-original-2014.md`)<br>official_reference/fr/undated | accepted_external_reference, accepted_local_copy | — |
 | `lu-37` | `lu:url:a6e402b0344bde760454` | resolved | official_reference/en/undated | accepted_external_reference | — |
 | `lu-38` | `lu:url:b3693b39d1bd982767bf` | resolved | official_reference/en/undated | accepted_external_reference | — |
 | `lu-39` | `lu:url:76cd3aacbba5adcc57c9` | resolved | official_reference/en/undated | accepted_external_reference | — |

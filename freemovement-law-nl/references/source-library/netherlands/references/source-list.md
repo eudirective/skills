@@ -99,23 +99,23 @@ Canonical rows: **63**; provisional unique IDs: **63**; unresolved entries: **0*
 | `nl-07` | `nl:url:33b147c7858b63f881c8` | resolved | official_reference/nl/undated | accepted_external_reference | — |
 | `nl-08` | `nl:url:38c3f9ed81f8028fa0f0` | resolved | official_reference/nl/undated | accepted_external_reference | — |
 | `nl-09` | `nl:url:629a2e30ec12aa542601` | resolved | official_reference/nl/undated | accepted_external_reference | — |
-| `nl-10` | `nl:url:21770a997c37e7c7b39b` | resolved | local_artifact/nl/2000<br>official_reference/nl/undated | accepted_external_reference, accepted_local_copy | — |
-| `nl-11` | `nl:url:e0dcf4e5fc303c4fabca` | resolved | local_artifact/nl/2000<br>official_reference/nl/undated | accepted_external_reference, accepted_local_copy | — |
+| `nl-10` | `nl:url:21770a997c37e7c7b39b` | resolved | local_artifact/nl/2000 (`documents/legislation/nl-vreemdelingenwet-2000-2026-09-01.md`)<br>official_reference/nl/undated | accepted_external_reference, accepted_local_copy | — |
+| `nl-11` | `nl:url:e0dcf4e5fc303c4fabca` | resolved | local_artifact/nl/2000 (`documents/legislation/nl-vreemdelingenbesluit-2000-2026-09-25.md`)<br>official_reference/nl/undated | accepted_external_reference, accepted_local_copy | — |
 | `nl-12` | `nl:url:02c90c7e0fa44c80ee20` | resolved | official_reference/nl/undated | accepted_external_reference | — |
 | `nl-13` | `nl:url:d1482fe5adba228e5ba8` | resolved | official_reference/nl/undated | accepted_external_reference | — |
-| `nl-14` | `nl:url:337ef49f342c6d572912` | resolved | local_artifact/nl/2026-08-15<br>official_reference/nl/undated | accepted_external_reference, accepted_local_copy | — |
+| `nl-14` | `nl:url:337ef49f342c6d572912` | resolved | local_artifact/nl/2026-08-15 (`documents/legislation/nl-algemene-wet-bestuursrecht-2026-08-15.md`)<br>official_reference/nl/undated | accepted_external_reference, accepted_local_copy | — |
 | `nl-15` | `nl:url:44f7d127029c16d6fa3e` | resolved | official_reference/en/undated | accepted_external_reference, discovery | — |
-| `nl-16` | `nl:url:92d69c4d3deafa5b4549` | resolved | local_artifact/en/2026-07-10<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
-| `nl-17` | `nl:url:d663544e3b8b803911a5` | resolved | local_artifact/en/2026-10-08<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
-| `nl-18` | `nl:url:4804812cd9d6aa484f30` | resolved | local_artifact/en/2026-09-25<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
-| `nl-19` | `nl:url:d07b8d8661995377fc9e` | resolved | local_artifact/en/2026-10-07<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
-| `nl-20` | `nl:url:f7ded2255bfae9ae9e08` | resolved | local_artifact/en/2026-05-20<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
-| `nl-21` | `nl:url:55aa5e4e420b63ee1811` | resolved | local_artifact/en/2026-06-19<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `nl-16` | `nl:url:92d69c4d3deafa5b4549` | resolved | local_artifact/en/2026-07-10 (`documents/guidance/nl-ind-staying-eu-eea-swiss-2026-07-10.md`)<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `nl-17` | `nl:url:d663544e3b8b803911a5` | resolved | local_artifact/en/2026-10-08 (`documents/guidance/nl-ind-register-eu-eea-swiss-2026-10-08.md`)<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `nl-18` | `nl:url:4804812cd9d6aa484f30` | resolved | local_artifact/en/2026-09-25 (`documents/guidance/nl-ind-eu-family-verification-2026-09-25.md`)<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `nl-19` | `nl:url:d07b8d8661995377fc9e` | resolved | local_artifact/en/2026-10-07 (`documents/guidance/nl-ind-return-dutch-national-2026-10-07.md`)<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `nl-20` | `nl:url:f7ded2255bfae9ae9e08` | resolved | local_artifact/en/2026-05-20 (`documents/guidance/nl-ind-permanent-residency-2026-05-20.md`)<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `nl-21` | `nl:url:55aa5e4e420b63ee1811` | resolved | local_artifact/en/2026-06-19 (`documents/guidance/nl-ind-retained-family-residence-2026-06-19.md`)<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
 | `nl-22` | `nl:url:bf621ad1a5f4df528aa9` | resolved | official_reference/en/undated | accepted_external_reference | — |
 | `nl-23` | `nl:url:34909310f5a1f6befb19` | resolved | official_reference/en/undated | accepted_external_reference | — |
 | `nl-24` | `nl:url:468c2aec6ec6aa277770` | resolved | official_reference/en/undated | accepted_external_reference | — |
 | `nl-25` | `nl:url:480e9e7c588412f71d52` | resolved | official_reference/en/undated | accepted_external_reference | — |
-| `nl-26` | `nl:url:d0686edafe29dbedb5d4` | resolved | local_artifact/en/2026-08-10<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `nl-26` | `nl:url:d0686edafe29dbedb5d4` | resolved | local_artifact/en/2026-08-10 (`documents/guidance/nl-ind-object-appeal-decision-2026-08-10.md`)<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
 | `nl-27` | `nl:url:95b05f9b2984ade11780` | resolved | official_reference/en/undated | accepted_external_reference | — |
 | `nl-28` | `nl:url:13b0f1cec2746bb758d3` | resolved | official_reference/en/undated | accepted_external_reference | — |
 | `nl-29` | `nl:url:a7df17600ba48a605889` | resolved | official_reference/en/undated | accepted_external_reference | — |
@@ -142,9 +142,9 @@ Canonical rows: **63**; provisional unique IDs: **63**; unresolved entries: **0*
 | `nl-50` | `nl:url:b9c52091f856c96b632b` | resolved | official_reference/nl/undated | accepted_external_reference | — |
 | `nl-51` | `nl:url:a60c5304b934840cb9a3` | resolved | official_reference/nl/undated | accepted_external_reference | — |
 | `nl-52` | `nl:url:66a03eb159db46688607` | resolved | official_reference/nl/undated | accepted_external_reference | — |
-| `nl-53` | `nl:url:42d975fc50c51ba6f2bf` | resolved | local_artifact/nl/2026-07-01<br>official_reference/nl/undated | accepted_external_reference, accepted_local_copy | — |
-| `nl-54` | `nl:url:7f344d693e1ba40fc7b3` | resolved | local_artifact/nl/2025-07-05<br>official_reference/nl/undated | accepted_external_reference, accepted_local_copy | — |
-| `nl-55` | `nl:url:cb893e4d40f614aa5a3e` | resolved | local_artifact/nl/2018-08-01<br>official_reference/nl/undated | accepted_external_reference, accepted_local_copy | — |
+| `nl-53` | `nl:url:42d975fc50c51ba6f2bf` | resolved | local_artifact/nl/2026-07-01 (`documents/legislation/nl-burgerlijk-wetboek-boek-10-2026-07-01.md`)<br>official_reference/nl/undated | accepted_external_reference, accepted_local_copy | — |
+| `nl-54` | `nl:url:7f344d693e1ba40fc7b3` | resolved | local_artifact/nl/2025-07-05 (`documents/legislation/nl-burgerlijk-wetboek-boek-1-2025-07-05.md`)<br>official_reference/nl/undated | accepted_external_reference, accepted_local_copy | — |
+| `nl-55` | `nl:url:cb893e4d40f614aa5a3e` | resolved | local_artifact/nl/2018-08-01 (`documents/legislation/nl-wet-opneming-buitenlandse-kinderen-ter-adoptie-2018-08-01.md`)<br>official_reference/nl/undated | accepted_external_reference, accepted_local_copy | — |
 | `nl-56` | `nl:url:c7adc6719971d8267325` | resolved | official_reference/nl/undated | accepted_external_reference | — |
 | `nl-57` | `nl:url:426b79f147e29e4c77b4` | resolved | official_reference/nl/undated | accepted_external_reference | — |
 | `nl-58` | `nl:url:855fbf5464e9a0b19ab9` | resolved | official_reference/nl/undated | accepted_external_reference | — |

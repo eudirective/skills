@@ -159,5 +159,5 @@ Canonical rows: **73**; provisional unique IDs: **73**; unresolved entries: **6*
 | `pt-65` | `pt:url:e1075aadab76cc10a4a7` | resolved | official_reference/pt/undated | accepted_external_reference, pending | — |
 | `pt-66` | `pt:url:a121a4ec7ba5045834f9` | resolved | official_reference/pt/undated | accepted_external_reference, pending | — |
 | `pt-67` | `pt:ambiguous:pt-67:ca6d6bd1d796` | unresolved | official_reference/pt/undated | accepted_external_reference, pending | — |
-| `pt-68` | `pt:url:8240035951bdccc96304` | resolved | local_artifact/unspecified/2026-10-29<br>official_reference/pt/undated<br>official_reference/unspecified/undated | accepted_external_reference, pending | — |
+| `pt-68` | `pt:url:8240035951bdccc96304` | resolved | local_artifact/unspecified/2026-10-29 (`documents/legislation/pt-68-codigo-civil-conflict-of-laws-2026-10-29.md`)<br>official_reference/pt/undated<br>official_reference/unspecified/undated | accepted_external_reference, pending | — |
 <!-- source-identity-inventory:end -->

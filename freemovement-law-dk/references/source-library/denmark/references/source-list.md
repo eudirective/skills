@@ -23,20 +23,20 @@ Canonical rows: **59**; provisional unique IDs: **59**; unresolved entries: **6*
 | `data-protection-act-2024-289` | `dk:identity:https-www-retsinformation-dk-eli-lta-2024-289:372acb2a2985` | resolved | official_reference/unspecified/LBK nr 289 af 08/03/2024 | pending | — |
 | `denmark-protocol-22` | `dk:url:b4b766d7ba07815830ac` | resolved | official_reference/unspecified/undated | candidate | — |
 | `directive-2004-38` | `eu:celex:32004l0038` | resolved | official_reference/unspecified/undated | candidate | — |
-| `dk-mfa-visa-complaint` | `dk:url:100c7c91d1d01e3b4d6e` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | pending, candidate | — |
-| `dk-nyidanmark-eu-family-residence` | `dk:url:05c66011cf3664104d8d` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | pending, candidate | — |
-| `dk-nyidanmark-no-visa` | `dk:ambiguous:dk-nyidanmark-no-visa:cc098b146ab2` | unresolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | pending, candidate | — |
-| `dk-nyidanmark-visa-after-eu-rules` | `dk:ambiguous:dk-nyidanmark-visa-after-eu-rules:05e1490fe778` | unresolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | pending, candidate | — |
-| `dk-omb-02` | `dk:url:901857361e8f3921a3bc` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | pending, candidate | — |
-| `dk-omb-03` | `dk:url:e22232bbab69bbb2bd19` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | pending, candidate | — |
-| `dk-omb-05` | `dk:url:9c6f91ad99fa441871c8` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | pending, candidate | — |
-| `dk-omb-06` | `dk:url:05ebb9dadf25c4d083d6` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | pending, candidate | — |
-| `dk-omb-08` | `dk:url:893509a43cd6d496e55e` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | pending, candidate | — |
-| `dk-omb-09` | `dk:url:c77177c777f8ab480bb2` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | pending, candidate | — |
-| `dk-omb-10` | `dk:url:fe7489d347ee82e71b57` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | pending, candidate | — |
-| `dk-omb-11` | `dk:ambiguous:dk-omb-11:8a0ef3e07f6a` | unresolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | pending, candidate | — |
-| `dk-omb-12` | `dk:url:a7f134c1c77009027a84` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | pending, candidate | — |
-| `dk-omb-23` | `dk:url:dd04edf95ad522b9d0b8` | resolved | local_artifact/unspecified/undated<br>official_reference/unspecified/undated | pending, candidate | — |
+| `dk-mfa-visa-complaint` | `dk:url:100c7c91d1d01e3b4d6e` | resolved | local_artifact/unspecified/undated (`documents/guidance/dk-mfa-visa-complaint.md`)<br>official_reference/unspecified/undated | pending, candidate | — |
+| `dk-nyidanmark-eu-family-residence` | `dk:url:05c66011cf3664104d8d` | resolved | local_artifact/unspecified/undated (`documents/guidance/dk-nyidanmark-eu-family-residence.md`)<br>official_reference/unspecified/undated | pending, candidate | — |
+| `dk-nyidanmark-no-visa` | `dk:ambiguous:dk-nyidanmark-no-visa:cc098b146ab2` | unresolved | local_artifact/unspecified/undated (`documents/guidance/dk-nyidanmark-no-visa.md`)<br>official_reference/unspecified/undated | pending, candidate | — |
+| `dk-nyidanmark-visa-after-eu-rules` | `dk:ambiguous:dk-nyidanmark-visa-after-eu-rules:05e1490fe778` | unresolved | local_artifact/unspecified/undated (`documents/guidance/dk-nyidanmark-visa-after-eu-rules.md`)<br>official_reference/unspecified/undated | pending, candidate | — |
+| `dk-omb-02` | `dk:url:901857361e8f3921a3bc` | resolved | local_artifact/unspecified/undated (`documents/guidance/dk-omb-02.md`)<br>official_reference/unspecified/undated | pending, candidate | — |
+| `dk-omb-03` | `dk:url:e22232bbab69bbb2bd19` | resolved | local_artifact/unspecified/undated (`documents/guidance/dk-omb-03.md`)<br>official_reference/unspecified/undated | pending, candidate | — |
+| `dk-omb-05` | `dk:url:9c6f91ad99fa441871c8` | resolved | local_artifact/unspecified/undated (`documents/guidance/dk-omb-05.md`)<br>official_reference/unspecified/undated | pending, candidate | — |
+| `dk-omb-06` | `dk:url:05ebb9dadf25c4d083d6` | resolved | local_artifact/unspecified/undated (`documents/guidance/dk-omb-06.md`)<br>official_reference/unspecified/undated | pending, candidate | — |
+| `dk-omb-08` | `dk:url:893509a43cd6d496e55e` | resolved | local_artifact/unspecified/undated (`documents/guidance/dk-omb-08.md`)<br>official_reference/unspecified/undated | pending, candidate | — |
+| `dk-omb-09` | `dk:url:c77177c777f8ab480bb2` | resolved | local_artifact/unspecified/undated (`documents/guidance/dk-omb-09.md`)<br>official_reference/unspecified/undated | pending, candidate | — |
+| `dk-omb-10` | `dk:url:fe7489d347ee82e71b57` | resolved | local_artifact/unspecified/undated (`documents/guidance/dk-omb-10.md`)<br>official_reference/unspecified/undated | pending, candidate | — |
+| `dk-omb-11` | `dk:ambiguous:dk-omb-11:8a0ef3e07f6a` | unresolved | local_artifact/unspecified/undated (`documents/guidance/dk-omb-11.md`)<br>official_reference/unspecified/undated | pending, candidate | — |
+| `dk-omb-12` | `dk:url:a7f134c1c77009027a84` | resolved | local_artifact/unspecified/undated (`documents/guidance/dk-omb-12.md`)<br>official_reference/unspecified/undated | pending, candidate | — |
+| `dk-omb-23` | `dk:url:dd04edf95ad522b9d0b8` | resolved | local_artifact/unspecified/undated (`documents/guidance/dk-omb-23.md`)<br>official_reference/unspecified/undated | pending, candidate | — |
 | `eu-charter` | `eu:celex:12012p` | resolved | official_reference/unspecified/undated | candidate | — |
 | `eu-family-visa-guidance` | `dk:ambiguous:eu-family-visa-guidance:59d0eb58120d` | unresolved | official_reference/unspecified/undated | pending | — |
 | `eu-residence-regulation-2020-1457` | `dk:identity:https-www-retsinformation-dk-eli-lta-2020-1457:3ebdddac82b3` | resolved | official_reference/unspecified/BEK nr 1457 af 06/10/2020 | accepted_external_reference | — |

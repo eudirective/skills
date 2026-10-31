@@ -22,7 +22,7 @@ Canonical rows: **44**; provisional unique IDs: **44**; unresolved entries: **9*
 | `monitor-it-01` | `it:url:fad95101e0696d6b6ffe` | resolved | official_reference/en/1946 | accepted_external_reference | — |
 | `monitor-it-02` | `it:record:monitor-it-02:4086ca77f206` | unresolved | — | not_relied_upon | — |
 | `monitor-it-03` | `it:url:a6a18f234c14ad6a9bdb` | resolved | official_reference/it/undated | accepted_external_reference | — |
-| `monitor-it-04` | `it:url:4d1f6e33418dd40eed1c` | resolved | local_artifact/it/2026-10-18<br>official_reference/it/2026-10-18 | accepted_external_reference, accepted_local_copy | — |
+| `monitor-it-04` | `it:url:4d1f6e33418dd40eed1c` | resolved | local_artifact/it/2026-10-18 (`documents/legislation/it-01-dlgs-30-2007-current.md`)<br>official_reference/it/2026-10-18 | accepted_external_reference, accepted_local_copy | — |
 | `monitor-it-05` | `it:url:d567fbfd7400c7cb7313` | resolved | official_reference/it/2007 | accepted_external_reference | — |
 | `monitor-it-06` | `it:url:8eab904a1e6f3e31eb35` | resolved | official_reference/it/2026-10-19 | accepted_external_reference | — |
 | `monitor-it-07` | `it:url:914ba289458c84e1b02f` | resolved | official_reference/it/2026-09-30 | accepted_external_reference | — |
@@ -60,7 +60,7 @@ Canonical rows: **44**; provisional unique IDs: **44**; unresolved entries: **9*
 | `monitor-it-39` | `it:url:b26292ae86125ea28931` | resolved | official_reference/it/undated | accepted_external_reference | — |
 | `monitor-it-40` | `it:record:monitor-it-40:2018c68d0443` | unresolved | — | pending | — |
 | `monitor-it-41` | `it:url:24cba92ddd9836f6d9ca` | resolved | official_reference/it/2026 | accepted_external_reference | — |
-| `priority-law-184-1983` | `it:url:c7d867444dda3ab80a17` | resolved | local_artifact/it/2026-10-24<br>official_reference/it/2026-10-24 | accepted_external_reference, accepted_local_copy | — |
-| `priority-law-218-1995` | `it:url:5b780b97dc801fd3eb64` | resolved | local_artifact/it/2026-10-24<br>official_reference/it/2026-10-24 | accepted_external_reference, accepted_local_copy | — |
+| `priority-law-184-1983` | `it:url:c7d867444dda3ab80a17` | resolved | local_artifact/it/2026-10-24 (`documents/legislation/it-03-law-184-1983-current.md`)<br>official_reference/it/2026-10-24 | accepted_external_reference, accepted_local_copy | — |
+| `priority-law-218-1995` | `it:url:5b780b97dc801fd3eb64` | resolved | local_artifact/it/2026-10-24 (`documents/legislation/it-02-law-218-1995-current.md`)<br>official_reference/it/2026-10-24 | accepted_external_reference, accepted_local_copy | — |
 | `priority-maeci-recognition` | `it:url:8e1c8ee3f5d0313eb74d` | resolved | official_reference/it/2026-10-29 | accepted_external_reference | — |
 <!-- source-identity-inventory:end -->
