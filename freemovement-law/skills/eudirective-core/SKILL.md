@@ -5,8 +5,8 @@ description: "Use for read-only, source-grounded EU free-movement and EU-family-
 
 # eudirective-core
 
-- Current version: `0.61.3`
-- Plugin version: `0.62.6`
+- Current version: `0.61.4`
+- Plugin version: `0.62.8`
 - Last updated: `2026-10-30`
 
 This skill provides read-only, source-grounded guidance and maintains a separate synthetic-engine lane. Real applicant facts may be discussed in chat; they must never be sent to synthetic-only scripts or copied into distributable assets.
@@ -27,9 +27,9 @@ Treat use as non-personal only when the prompt clearly indicates professional or
 
 For personal, ordinary personal, or unspecified use, do not mention licensing or the email address. Do not infer non-personal use from the legal subject, a job title, or help with a family member's personal case. Ask a neutral clarification only when use is genuinely ambiguous and the distinction is necessary to answer. Never contact anyone or claim to know licensing status. Display the notice once per conversation; repeat it only if the use context materially changes. These are skill instructions, not a host-level chat-start guarantee.
 
-On the first freemovement-law invocation in each conversation, read eudirective-core/references/session-version-check.md and perform the core package's read-only version comparison before substantive work. For each materially relevant national plugin shown as available by a sufficiently complete host catalog, also compare that package's manifest using its own `scripts/session_version_check.mjs` against the same published component index. A registry entry or a partial catalog does not prove installation. If the host cannot expose the package manifest or execute its checker, report the state as discovery_unknown or the currentness check as unavailable; continue with EU sources and official-source research. On a verified mismatch, report affected components and exact values and tell the user to check for an update through the same plugin source or manager used to install it; do not guess installation steps. If a check fails, say update availability could not be confirmed. Do not claim a successful match without evidence, repeat a package check in the same conversation, or imply that it updates or installs a plugin. These checks concern package versions and source-data fingerprints, not legal-source validity.
+On the first freemovement-law invocation in each conversation, read `eudirective-core/references/session-version-check.md` and perform the core package's read-only version comparison before substantive work. For each materially relevant national plugin shown as available by a sufficiently complete host catalog, compare that package's manifest with the published component index using its own `scripts/session_version_check.mjs`. A registry entry or partial catalog does not prove installation. If installation cannot be determined, report availability as unknown; if the installed manifest or comparison inputs are unavailable, report package status as unknown and currentness as not verified. Continue with EU sources and official-source research. Use the checker status and exact installed/published values when reporting older, ahead-of-release, incompatible, drift, or upstream-only results; never describe an ahead-of-release build as outdated. Do not claim an exact match without evidence, repeat the check in the same conversation, or imply that it installs or updates a package. These checks concern package metadata and source-data fingerprints, not legal-source validity.
 
-For each visible answer or report produced with this skill, identify near the top: **Skill: eudirective-core v0.61.3**. On the first response, put it after the required disclaimer and any applicable license note.
+For each visible answer or report, read the installed component manifest and identify the core skill using its `skill_versions.eudirective-core` value. If that installed value is unavailable, say the skill version is unknown; never infer it from the published index. On the first response, put the identification after the required disclaimer and any applicable license note.
 
 ## Ordinary applicant consultations
 
@@ -91,7 +91,7 @@ For material questions dependent on current, multiple-source, disputed or incomp
 
 ## National plugin discovery
 
-Use the generated references/national-source-routing.json after C3 classifies a materially relevant national jurisdiction and role. Check the host's available-skill catalog for the exact registered plugin and compatibility contract; a registry entry proves identity, not installation. Record available_compatible, available_outdated, available_incompatible, unavailable, discovery_unknown, or not_required only when supported by the available catalog and package manifests. If discovery is unavailable or partial, report discovery_unknown, continue with EU law and responsible official-source research, and state the exact national-source limitation. For Malta, separately report plugin availability, language representation availability, edition alignment, and whether the relevant provisions were compared. Do not block an ordinary consultation solely because a country plugin is absent.
+Use the generated references/national-source-routing.json after C3 classifies a materially relevant national jurisdiction and role. Check the host's available-skill catalog for the exact registered plugin and compatibility contract; a registry entry proves identity, not installation. Report only the checker status supported by the installed manifest and published index: exact_match, older_release_available, ahead_of_release, incompatible, drift, upstream_only, or unknown. If discovery is unavailable or partial, report unknown, continue with EU law and responsible official-source research, and state the exact national-source limitation. For Malta, separately report plugin availability, language representation availability, edition alignment, and whether the relevant provisions were compared. Do not block an ordinary consultation solely because a country plugin is absent.
 
 ## Conditional legal and research workflows
 

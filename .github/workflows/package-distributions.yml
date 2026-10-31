@@ -38,6 +38,12 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Validate generated component versions
+        run: >-
+          python3 scripts/source-distribution/validate_versions.py
+          --root .
+          --registry scripts/source-distribution/country-registry.json
+
       - name: Run distribution regression tests
         run: python3 scripts/package-distributions/test_build.py
 

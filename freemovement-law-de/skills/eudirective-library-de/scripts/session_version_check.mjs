@@ -12,6 +12,7 @@ const indexUrl = 'https://raw.githubusercontent.com/eudirective/skills/main/comp
 const listingUrl = 'https://api.github.com/repos/eudirective/public-data/contents?ref=main';
 const SHA40 = /^[a-f0-9]{40}$/;
 const SHA64 = /^[a-f0-9]{64}$/;
+const SEMVER = /^\d+\.\d+\.\d+$/;
 
 async function get(url) {
   const controller = new AbortController();
@@ -38,12 +39,27 @@ function canonical(value) {
 
 function validateInstalled(installed) {
   if (!installed || installed.schema_version !== '1.0.0' || !installed.component_id ||
-      !/^\d+\.\d+\.\d+$/.test(installed.plugin_version) ||
+      !SEMVER.test(installed.plugin_version) ||
       !installed.skill_versions || typeof installed.skill_versions !== 'object' ||
       !installed.upstream_trees || !SHA64.test(installed.input_fingerprint ?? '') ||
       !SHA64.test(installed.distributed_fingerprint ?? '') || !installed.compatibility) {
     throw Error('invalid installed component manifest');
   }
+  for (const [name, version] of Object.entries(installed.skill_versions)) {
+    if (!name || typeof version !== 'string' || !SEMVER.test(version)) {
+      throw Error('invalid installed skill version: ' + name);
+    }
+  }
+}
+
+function versionOrder(left, right) {
+  const a = left.split('.').map(Number);
+  const b = right.split('.').map(Number);
+  for (let i = 0; i < 3; i += 1) {
+    if (a[i] < b[i]) return -1;
+    if (a[i] > b[i]) return 1;
+  }
+  return 0;
 }
 
 function publishedComponent(index, name, componentId) {
@@ -57,6 +73,15 @@ function publishedComponent(index, name, componentId) {
   if (published.component_id !== componentId) throw Error('published component identity mismatch: ' + name);
   for (const field of ['plugin_version', 'skill_versions', 'source_contract_version', 'input_fingerprint', 'distributed_fingerprint', 'compatibility']) {
     if (published[field] === undefined) throw Error('published component is missing ' + field);
+  }
+  if (!SEMVER.test(published.plugin_version) || !published.skill_versions ||
+      typeof published.skill_versions !== 'object' || Array.isArray(published.skill_versions)) {
+    throw Error('published component has invalid version metadata: ' + name);
+  }
+  for (const [skill, version] of Object.entries(published.skill_versions)) {
+    if (!skill || typeof version !== 'string' || !SEMVER.test(version)) {
+      throw Error('published component has an invalid skill version: ' + name + ':' + skill);
+    }
   }
   return published;
 }
@@ -92,15 +117,41 @@ export function compare(installed, index, liveTrees, name = pluginName) {
 
 export function availabilityStatus(installed, index, differences, name = pluginName) {
   const selected = publishedComponent(index, name, installed.component_id);
+  const core = publishedComponent(index, 'freemovement-law', 'eu-core');
   if (name !== 'freemovement-law') {
-    const core = publishedComponent(index, 'freemovement-law', 'eu-core');
     if (canonical(selected.compatibility) !== canonical(core.compatibility) ||
         canonical(installed.compatibility) !== canonical(core.compatibility)) {
-      return 'available_incompatible';
+      return 'incompatible';
     }
   }
-  const packageDifferences = differences.filter(item => !item.component.startsWith('github:upstream-mirror:'));
-  return packageDifferences.length ? 'available_outdated' : 'available_compatible';
+  if (canonical(installed.compatibility) !== canonical(selected.compatibility) ||
+      installed.source_contract_version !== selected.source_contract_version) {
+    return 'incompatible';
+  }
+
+  const publishedVersions = [selected.plugin_version,
+    ...[...new Set([...Object.keys(installed.skill_versions), ...Object.keys(selected.skill_versions)])]
+      .map(skill => selected.skill_versions[skill])];
+  const installedVersions = [installed.plugin_version,
+    ...[...new Set([...Object.keys(installed.skill_versions), ...Object.keys(selected.skill_versions)])]
+      .map(skill => installed.skill_versions[skill])];
+  const directions = [];
+  for (let i = 0; i < publishedVersions.length; i += 1) {
+    const localVersion = installedVersions[i];
+    const publicVersion = publishedVersions[i];
+    if (!localVersion || !publicVersion) return 'drift';
+    directions.push(versionOrder(localVersion, publicVersion));
+  }
+  if (directions.includes(-1) && directions.includes(1)) return 'drift';
+  if (directions.includes(-1)) return 'older_release_available';
+  if (directions.includes(1)) return 'ahead_of_release';
+
+  const packageDifferences = differences.filter(item =>
+    !item.component.startsWith('github:upstream-mirror:'));
+  if (packageDifferences.length) return 'drift';
+  const upstreamDifferences = differences.filter(item =>
+    item.component.startsWith('github:upstream-mirror:'));
+  return upstreamDifferences.length ? 'upstream_only' : 'exact_match';
 }
 
 export async function run(read = get, options = {}) {
@@ -117,14 +168,10 @@ export async function run(read = get, options = {}) {
       liveTrees[tree] = item.sha;
     }
     const differences = compare(installed, index, liveTrees, name);
-    const availability = availabilityStatus(installed, index, differences, name);
-    const packageDifferences = differences.filter(item => !item.component.startsWith('github:upstream-mirror:'));
-    const upstreamDifferences = differences.filter(item => item.component.startsWith('github:upstream-mirror:'));
-    const status = availability === 'available_incompatible' ? 'incompatible' :
-      packageDifferences.length ? 'mismatch' : upstreamDifferences.length ? 'upstream_mismatch' : 'current';
-    return {status, availability, plugin_name: name, differences};
+    const status = availabilityStatus(installed, index, differences, name);
+    return {status, plugin_name: name, differences};
   } catch (error) {
-    return {status: 'check_failed', availability: 'discovery_unknown', plugin_name: name,
+    return {status: 'unknown', plugin_name: name,
       reason: String(error?.message ?? error)};
   }
 }
@@ -132,9 +179,11 @@ export async function run(read = get, options = {}) {
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const result = await run();
   if (process.argv.includes('--json')) console.log(JSON.stringify(result, null, 2));
-  else if (result.status === 'current') console.log('Verified ' + pluginName + ' package and source fingerprints.');
-  else if (result.status === 'mismatch') console.log(pluginName + ' differs from its published component. Check the listed package differences and available update.');
+  else if (result.status === 'exact_match') console.log('Verified ' + pluginName + ' package and source fingerprints.');
+  else if (result.status === 'older_release_available') console.log(pluginName + ' is older than the published component. Check the listed differences and available update.');
+  else if (result.status === 'ahead_of_release') console.log(pluginName + ' is ahead of the published release; this build is not an outdated package.');
   else if (result.status === 'incompatible') console.log(pluginName + ' does not meet the published core compatibility contract.');
-  else if (result.status === 'upstream_mismatch') console.log('The published package snapshot differs from current public-data; this alone does not establish that a newer package is available.');
-  else console.log('FreeMovement version check for ' + pluginName + ' unsuccessful: ' + result.reason + '. Update availability could not be confirmed.');
+  else if (result.status === 'drift') console.log(pluginName + ' has inconsistent package versions or fingerprints; currentness is not verified.');
+  else if (result.status === 'upstream_only') console.log('The published package matches, but public-data has advanced beyond its snapshot; this alone does not establish that a newer package is available.');
+  else console.log('FreeMovement version check for ' + pluginName + ' is unknown: ' + result.reason + '. Update availability could not be confirmed.');
 }

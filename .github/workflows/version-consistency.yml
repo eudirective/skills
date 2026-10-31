@@ -1,0 +1,36 @@
+name: Validate FreeMovement version consistency
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate generated component versions
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+
+      - name: Compile source distributor
+        run: python3 -c 'from pathlib import Path; p=Path("scripts/source-distribution/build.py"); compile(p.read_text(encoding="utf-8"), str(p), "exec")'
+
+      - name: Run source-distribution tests
+        run: python3 -m unittest discover -s scripts/source-distribution -p 'test_*.py'
+
+      - name: Validate every generated package and published version
+        run: >-
+          python3 scripts/source-distribution/validate_versions.py
+          --root .
+          --registry scripts/source-distribution/country-registry.json
