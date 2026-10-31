@@ -110,6 +110,8 @@ def make_research_records():
             "task_id": TASK_ID,
             "relation": "supports",
             "directness": "direct",
+            "inspection_status": "synthetic_fixture_only",
+            "source_access": {"channel": "synthetic_fixture", "status": "accessible"},
             "source": source,
             "pinpoint": f"Synthetic fixture marker {index}",
             "accessed_at": STAMP,
@@ -142,7 +144,7 @@ def make_research_records():
             "exceptions_note": "Fixture limitations explicitly retained.",
         })
     bundle = {
-        "contract_version": "0.1.0",
+        "contract_version": "0.4.0",
         "research_id": RESEARCH_ID,
         "plan_sha256": digest_obj(plan),
         "mode": "case",

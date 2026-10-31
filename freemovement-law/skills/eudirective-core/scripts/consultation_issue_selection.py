@@ -775,6 +775,7 @@ def select_issue_requirements(
     owners: set[str] = set()
     topics: dict[tuple[str, str], dict[str, Any]] = {}
     routes: list[str] = []
+    route_requirements: list[dict[str, Any]] = []
     route_checks: dict[str, set[str]] = {}
     route_scopes: list[dict[str, Any]] = []
     selected_direct_checks: set[str] = set()
@@ -791,6 +792,14 @@ def select_issue_requirements(
             continue
         route_id = route["route_id"]
         routes.append(route_id)
+        route_relevant_signals = set(matched)
+        for condition in route.get("conditional_checks", []):
+            route_relevant_signals.update(set(condition.get("when_any_signal", [])) & signals)
+            route_relevant_signals.update(set(condition.get("unless_any_signal", [])) & signals)
+        for condition in route.get("conditional_source_owner_ids", []):
+            route_relevant_signals.update(set(condition.get("when_any_signal", [])) & signals)
+        for workflow in route.get("conditional_workflows", []):
+            route_relevant_signals.update(set(workflow.get("when_any_signal", [])) & signals)
         scope_status = route_scope_status(
             route, procedure_type, registry,
             administrative_outcome_classification=administrative_outcome_classification,
@@ -802,9 +811,11 @@ def select_issue_requirements(
             "procedure_type": procedure_type,
             "status": scope_status,
         })
+        route_owner_ids: set[str] = set()
         if scope_status != "procedure_scope_mismatch":
             source_route_ids.add(route_id)
             owners.update(route["source_owner_ids"])
+            route_owner_ids.update(route["source_owner_ids"])
             for workflow in route.get("conditional_workflows", []):
                 conditional_workflow_reviews.append({
                     **workflow,
@@ -814,6 +825,7 @@ def select_issue_requirements(
             for condition in route.get("conditional_source_owner_ids", []):
                 if set(condition["when_any_signal"]) & signals:
                     owners.update(condition["source_owner_ids"])
+                    route_owner_ids.update(condition["source_owner_ids"])
             attack_review = route["potential_attack_angle_review"]
             if attack_review["required"]:
                 for topic in attack_review["review_topics"]:
@@ -831,29 +843,42 @@ def select_issue_requirements(
             "administrative_outcome_classification_mismatch",
             "post_issuance_event_unverified",
         }:
-            selected_direct_checks.add("case_intake.application_type")
+            route_check_ids = {"case_intake.application_type"}
             if scope_status in {
                 "administrative_outcome_unverified",
                 "administrative_outcome_classification_mismatch",
             }:
-                selected_direct_checks.update({
+                route_check_ids.update({
                     "authority.administrative_outcome_classification",
                     "authority.position_provenance",
                     "lifecycle.decision_notified",
                 })
             if scope_status == "post_issuance_event_unverified":
-                selected_direct_checks.update({
+                route_check_ids.update({
                     "authority.post_issuance_event", "lifecycle.decision_notified",
                 })
             if scope_status == "visa_framework_unresolved":
-                selected_direct_checks.update({
+                route_check_ids.update({
                     "eu_scope.visa_code_lex_specialis", "eu_scope.directive_scope",
                 })
             elif scope_status == "underlying_application_proceeding_required":
-                selected_direct_checks.add("case_intake.linked_proceedings")
+                route_check_ids.add("case_intake.linked_proceedings")
+            selected_direct_checks.update(route_check_ids)
+            route_requirements.append({
+                "route_id": route_id, "trigger_signal_ids": matched,
+                "relevant_signal_ids": sorted(route_relevant_signals),
+                "check_ids": sorted(route_check_ids), "source_owner_ids": sorted(route_owner_ids),
+                "scope_status": scope_status,
+            })
             continue
         if scope_status == "procedure_scope_mismatch":
             selected_direct_checks.add("case_intake.application_type")
+            route_requirements.append({
+                "route_id": route_id, "trigger_signal_ids": matched,
+                "relevant_signal_ids": sorted(route_relevant_signals),
+                "check_ids": ["case_intake.application_type"], "source_owner_ids": [],
+                "scope_status": scope_status,
+            })
             continue
         checks = set(route["mandatory_checks"])
         for condition in route["conditional_checks"]:
@@ -871,6 +896,12 @@ def select_issue_requirements(
         }
         selected_direct_checks.update(checks)
         route_checks[route_id] = checks
+        route_requirements.append({
+            "route_id": route_id, "trigger_signal_ids": matched,
+            "relevant_signal_ids": sorted(route_relevant_signals),
+            "check_ids": sorted(checks), "source_owner_ids": sorted(route_owner_ids),
+            "scope_status": scope_status,
+        })
 
     # Show why an Article 18/19/32 sibling route was not selected when the
     # declared proceeding is an ordinary short-stay application. These are
@@ -969,6 +1000,7 @@ def select_issue_requirements(
     return {
         "check_ids": sorted(selected_direct_checks),
         "route_ids": sorted(routes),
+        "route_requirements": sorted(route_requirements, key=lambda item: item["route_id"]),
         "route_scope_statuses": sorted(route_scopes, key=lambda item: item["route_id"]),
         "source_owner_ids": sorted(owners),
         "strict_source_owner_ids": active_owners,

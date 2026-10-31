@@ -2,7 +2,9 @@
 
 Append a fresh board like this to every substantive legal consultation. Use Full mode when the required review workflow was performed, including when assessed findings remain unresolved or coverage is partial. Use Limited mode when the workflow was deliberately narrowed or a material required review step was not performed; name what is missing and its effect. The examples do not change the underlying C27, source, or execution review duties.
 
-Use this as the visual pattern for a consultation board. It is ordinary Markdown: status icons and structure help scanning, but do not imply custom colors, CSS, interactivity, or host verification. Keep the answer itself first. Avoid wide tables and code-like dumps; the small three-column metric row below is the only table in the board.
+Use this as the visual pattern for an expanded consultation board. It is ordinary Markdown: status icons and structure help scanning, but do not imply custom colors, CSS, interactivity, or host verification. Keep the answer itself first. Use headings, status cards, and short lists; avoid tables and code-like dumps. The ordinary board can be shorter, but must retain every material gap and its effect.
+
+Formatting examples only; these are not a case assessment, execution record, legal finding, or evaluation result.
 
 ### Example: Limited consultation review
 
@@ -36,9 +38,9 @@ The national urgent-remedy procedure has not been reviewed. This limits the abil
 
 ### At a glance
 
-| **Issues reviewed** | **Supported / conditionally closed** | **Partial / open** |
-| :---: | :---: | :---: |
-| **6** | **3** | **3** |
+**Issues reviewed:** 6
+**Supported / conditionally closed:** 3
+**Partial / open:** 3
 
 **Recorded issue outcomes · 6 issues**
 

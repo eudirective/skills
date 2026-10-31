@@ -41,7 +41,7 @@ The C2 element model (`0.2.0`) and frozen C3 inter-skill contract (`0.2.0`), con
 
 Use the local controlled workflow only when a maintained host or operator explicitly routes the answer through it. Keep ordinary ChatGPT guidance model-led and describe its checks as model-reported. Do not describe ordinary ChatGPT output as release-gated.
 
-A production host veto requires a supported host integration and a target-deployment test showing that the host withholds the exact answer when validation fails. Platform documentation review or a local script test is not that evidence. The manual ChatGPT dashboard display plan is maintained in private fm-maintenance records; the host release-veto plan is at `references/consultation-controlled-release-live-test-plan.md`. Neither has been performed or assigned as a user task. Reopen them only when the required host/runtime capability is verified or the requested scope changes.
+A production host veto requires a supported host integration and a target-deployment test showing that the host withholds the exact answer when validation fails. Platform documentation review or a local script test is not that evidence. Consultation behavior and any future host release-veto checks are maintained privately in fm-maintenance; `references/consultation-controlled-release-live-test-plan.md` records only this plugin's current capability boundary. No live test has been performed or assigned to the user. Reopen behavioral testing only when an agent-controlled target runtime is verified or the requested scope changes.
 
 ## Review required
 

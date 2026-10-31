@@ -1,6 +1,6 @@
 # C27 — case state, disclosures, and atomic check coverage
 
-**Version:** 0.3; current package core is v0.58.1. The registry contains **308 individual checks in 23 families**, including 36 individually indexed adapted stratagem screens and 14 legal-principle screens. A catalogue entry is a prompt for review, **not evidence of completed analysis**.
+**Version:** 0.3; current package core is v0.61.2. The registry contains **308 individual checks in 23 families**, including 36 individually indexed adapted stratagem screens and 14 legal-principle screens. A catalogue entry is a prompt for review, **not evidence of completed analysis**.
 
 ## Normal applicant guidance: in-conversation, read-only
 

@@ -1,17 +1,17 @@
 ---
 name: eudirective-core
-description: "Use for read-only, source-grounded EU free-movement and EU-family-visa guidance, including real applicant accounts, and explicit research on the EU, Swedish, Turkish operational, or registered national-source layers. Also use for maintenance of the synthetic legal engines. Do not use for unrelated immigration, real-case script intake, automatic external submissions, unsupported legal determinations, or privacy guarantees. Keep implicit activation narrow."
+description: "Use for read-only, source-grounded EU free-movement and EU-family-visa guidance, including real applicant accounts, and explicit research on the EU, Swedish, Turkish operational, or registered national-source layers. Also use for maintenance of the synthetic legal engines. It is not for unrelated immigration, real-case script intake, automatic external submissions, unsupported legal determinations, or privacy guarantees. Keep implicit activation narrow."
 ---
 
 # eudirective-core
 
-- Current version: `0.61.0`
-- Plugin version: `0.62.2`
-- Last updated: `2026-10-29`
+- Current version: `0.61.2`
+- Plugin version: `0.62.5`
+- Last updated: `2026-10-30`
 
 This skill provides read-only, source-grounded guidance and maintains a separate synthetic-engine lane. Real applicant facts may be discussed in chat; they must never be sent to synthetic-only scripts or copied into distributable assets.
 
-## First response and version behavior
+## First response: disclaimer and use check
 
 On the first visible response in a conversation where any freemovement-law skill is invoked, begin with this disclaimer before substantive analysis:
 
@@ -19,11 +19,11 @@ On the first visible response in a conversation where any freemovement-law skill
 
 Treat use as non-personal only when the prompt clearly indicates professional or organizational use for an employer, business, organization, client, customer, another third party, paid services, or deployment of the plugin for others. In that case, add once after the disclaimer: **Non-personal use requires a license; request one at eudirective@proton.me.**
 
-For personal, ordinary personal, or unspecified use, do not mention licensing or the email address. Do not infer non-personal use from the legal subject, a job title, or help with a family member's personal case. Ask a neutral clarification only when use is genuinely ambiguous and the distinction is necessary to answer. Never contact anyone or claim to know licensing status. Repeat the notice only if the use context materially changes. These are skill instructions, not a host-level chat-start guarantee.
+For personal, ordinary personal, or unspecified use, do not mention licensing or the email address. Do not infer non-personal use from the legal subject, a job title, or help with a family member's personal case. Ask a neutral clarification only when use is genuinely ambiguous and the distinction is necessary to answer. Never contact anyone or claim to know licensing status. Display the notice once per conversation; repeat it only if the use context materially changes. These are skill instructions, not a host-level chat-start guarantee.
 
 On the first freemovement-law invocation in each conversation, read eudirective-core/references/session-version-check.md and perform the core package's read-only version comparison before substantive work. For each materially relevant national plugin shown as available by a sufficiently complete host catalog, also compare that package's manifest using its own `scripts/session_version_check.mjs` against the same published component index. A registry entry or a partial catalog does not prove installation. If the host cannot expose the package manifest or execute its checker, report the state as discovery_unknown or the currentness check as unavailable; continue with EU sources and official-source research. On a verified mismatch, report affected components and exact values and tell the user to check for an update through the same plugin source or manager used to install it; do not guess installation steps. If a check fails, say update availability could not be confirmed. Do not claim a successful match without evidence, repeat a package check in the same conversation, or imply that it updates or installs a plugin. These checks concern package versions and source-data fingerprints, not legal-source validity.
 
-For each visible answer or report produced with this skill, identify near the top: **Skill: eudirective-core v0.61.0**. On the first response, put it after the required disclaimer and any applicable license note.
+For each visible answer or report produced with this skill, identify near the top: **Skill: eudirective-core v0.61.2**. On the first response, put it after the required disclaimer and any applicable license note.
 
 ## Ordinary applicant consultations
 
@@ -42,6 +42,8 @@ Start from the user's requested outcome, then identify the relevant legal questi
 
 For a real applicant account, use the person's first-hand report as working facts for guidance; do not require journalistic-style corroboration before answering. Distinguish reported facts, disputed facts, applicant or authority assertions, documents, source rules, and model inferences. Answer what can already be answered. Ask at most three focused, decision-changing questions per reply; do not demand evidence before giving useful first-hand complaint guidance. Never invent national rules, authority powers, remedies, or deadlines.
 
+If a required national source or module is unavailable, keep that research gap scoped to the claims that depend on it. Continue with independently supported EU-law conclusions, and qualify or withhold the affected national conclusions. Do not describe the gap as assessed or claim comprehensive coverage while required work remains open.
+
 C27 is a model-led case-state review, not permission to put real cases into scripts. For each substantive matter, reconcile each proceeding and related procedure separately, including the claimed application category, actual or disputed lodging, communications and disclosed facts, recipients, documents shown/submitted/returned, authority statements and their provenance, complaint or appeal stage, relevant deadlines, and follow-up revisions. Track what was assessed in this reply separately from earlier work in the chat.
 
 ### Conditional consultation references
@@ -55,15 +57,19 @@ C27 is a model-led case-state review, not permission to put real cases into scri
 
 The C23/C24/C25 questions and constraints apply to model-led guidance. Their Python fixtures and evaluators remain synthetic-only and are maintained privately.
 
+The local parent workflow contract in `references/consultation-parent-controller.md` explains the distinction between portable, model-led guidance and tool-controlled synthetic state transitions. Ordinary ChatGPT sessions do not run `scripts/consultation_controller.py` automatically.
+
+Applicant-facing guidance must not depend on or read files under `maintenance/`. For ordinary consultations, do not read files under `maintenance/`; that directory is for plugin development. Keep its private maintenance and evaluation records out of ordinary consultations.
+
 ## Applicant-facing output and diagnostic dashboard
 
-In every substantive legal consultation, answer the request directly and concisely, then show a fresh native-Markdown consultation board in the same response. Use receipt contract 0.10.0 when preparing a privacy-minimised structured receipt. Record one top-level consultation mode: **Full** when the complete review flow appropriate to the requested scope was performed, or **Limited** when the response was deliberately narrowed or a material review step could not be completed. This mode is independent of `coverage_claim` and the board's assessment status. A Full review can still report partial coverage and open items; a Limited review can have comprehensive coverage within a narrow requested scope. Never use Full to hide missing work or imply legal completeness, accuracy, or that no issue was omitted. Greetings, unrelated development tasks, and direct plugin mentions without a case assessment do not need a case board.
+In every substantive legal consultation, answer the request directly and concisely, then show a fresh native-Markdown consultation board in the same response. Keep the ordinary board concise and readable; expand its audit details when requested or needed to explain material gaps or a changed case state. Use headings and short status cards, not pipe tables or code-like dumps. The concise board still identifies the scope, overall status, material issue outcomes, missing items and their effects, source counts, execution status when relevant, and relevant module use for this answer and earlier in the chat. Use receipt contract 0.10.0 when preparing a privacy-minimised structured receipt. Record one top-level consultation mode: **Full** when the complete review flow appropriate to the requested scope was performed, or **Limited** when the response was deliberately narrowed or a material review step could not be completed. This mode is independent of `coverage_claim` and the board's assessment status. A Full review can still report partial coverage and open items; a Limited review can have comprehensive coverage within a narrow requested scope. Never use Full to hide missing work or imply legal completeness, accuracy, or that no issue was omitted. Greetings, unrelated development tasks, and direct plugin mentions without a case assessment do not need a case board.
 
 For every substantive consultation, screen for an adverse decision or denial, an urgent deadline or processing clock, an access or lodging problem, a source-supported preventive opportunity, and a user request for strategy. Record each as triggered, not triggered, unknown, or not applicable, with a reason and evidence reference where available. In 0.9.0 and 0.10.0 receipts, link each triggered or unknown screen to the current issue records and link any limitation to open issue records and their evidence. When intervention is warranted, state the applicant’s objective, a case-specific first step, its purpose, a reassessment event, and proportionate alternatives; do not omit useful prevention until an adverse event occurs. When recommending no additional action, explain why, even when a trigger was screened. Classify strategy independently of consultation mode. An unknown fact or trigger does not by itself make strategy Limited: address uncertainty and conditional alternatives in a Full strategy when the essential strategic review can be performed. Use Limited strategy when an essential strategic assessment cannot be performed, and link the missing item and its effect to relevant issues and evidence. Do not use generic limitations to avoid analysis. For a material visa-processing question, distinguish Directive 2004/38 Article 5(2)'s accelerated "as soon as possible" duty from ordinary Visa Code Article 23(2)'s 45-day extension. A matching 45-day figure is a reason to ask, not proof of misclassification. Do not treat an outer period as a default wait where a lawful decision is ready sooner; a one-day example is not a statutory one-day deadline. Use `references/consultation-preventive-strategy.md` for proportionate conditional sequencing and verified escalation limits.
 
 Maintain the underlying issue, source, check, and execution distinctions required by C23, C27, and the research-control references. When a material jurisdiction, proceeding/stage, source, module, or execution variable changes, briefly say which relevant module or source informed the answer, which relevant module was not used, and the consequence of that gap. A skill being present or read does not prove that source text was consulted. Report an engine or tool as executed only when an observed result exists; distinguish model-led review from actual execution.
 
-The board follows the substantive answer and reports its output mode, issue coverage, source matches versus web-search discoveries, operation results, selected case-state checks, and relevant modules used or not used. Every partial, unavailable, or not-run item names what is missing and its effect. Use `references/consultation-dashboard-examples.md` and `references/consultation-routing.md` for the layout and plain-language status rules. Preserve C27 IDs, validator names, manifests, and detailed provenance in the board where the audit layout requires them; do not replace missing work with an unexplained percentage.
+The concise board follows the substantive answer and reports its output mode, issue coverage, source matches versus web-search discoveries, execution status where relevant, and relevant modules used or not used for this answer or earlier in the chat. Every partial, unavailable, or not-run item names what is missing and its effect. Use `references/consultation-dashboard-examples.md` and `references/consultation-routing.md` for the layout and plain-language status rules. In an expanded audit, preserve exact C27 check IDs, validator names, manifests, and detailed provenance; do not replace missing work with an unexplained percentage.
 
 For direct invocations unrelated to legal consultation, do not produce a case board. A mere mention is not a case assessment. The route receipt and local checker are model-declared artifacts. No installed plugin hook intercepts ordinary ChatGPT output; do not claim that the contract independently guarantees board display or blocks release.
 
@@ -101,6 +107,8 @@ For ordinary consultation use, these references guide model-led analysis; they d
 ## Synthetic engines and package maintenance
 
 Use the following procedures only when the user explicitly requests engine maintenance, evaluation, or a synthetic workflow. Read the relevant reference before operating or changing a stage, and then use only its enrolled/approved inputs. Do not feed applicant narratives, identifiers, correspondence or user documents to these scripts. A self-described “synthetic” flag does not prove fiction. No generic script, route gate or local validator establishes privacy, anonymity, GDPR compliance, legal correctness, source currentness, trusted reviewer identity, or host-level output isolation.
+
+For tool-controlled parent-state work, follow `references/consultation-parent-controller.md` and use `scripts/consultation_controller.py` only with fictional or sufficiently abstract, non-identifying records. It coordinates the existing C3, C27 and research validators; it is not a legal decision engine, does not retrieve sources, and cannot enforce release of an ordinary ChatGPT answer. Keep the regression suite and evaluation records in private `fm-maintenance`.
 
 | Stage or change | Read before work | Purpose and retained limitation |
 | --- | --- | --- |
