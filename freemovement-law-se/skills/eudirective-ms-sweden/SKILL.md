@@ -17,7 +17,7 @@ For personal, ordinary personal, or unspecified use, do not mention licensing or
 
 ## Scope and version
 
-- Skill version: `1.0.1`
+- Skill version: `1.0.2`
 - Use this module only when Sweden is materially relevant as the deciding, residence, intended-residence, or challenged-authority state.
 - Use `eudirective-core` for shared C3 routing, legal reasoning, issue selection, evidence handling, and completeness controls. This module supplies Sweden-owned source records and review-only national procedure data.
 - Use `eudirective-library-se` for the Sweden-owned source library. Its acceptance records and source notes are versioned snapshots, not proof of current law.
@@ -33,4 +33,4 @@ Do not turn `candidate_interpretation` into direct statutory text, a possible at
 
 Do not run contributor validation scripts or synthetic evaluations during an ordinary consultation. Module authoring, repair, package validation, and private regression work belong in `fm-maintenance`.
 
-For visible responses that use this module, identify it as **Skill: eudirective-ms-sweden v1.0.0**. If the host cannot establish that this module package is installed and compatible, disclose that limitation and continue useful EU-law and official-source research through the core.
+For visible responses that use this module, read the installed `fm-sweden` component manifest and identify this skill using its `skill_versions.eudirective-ms-sweden` value. If that installed value is unavailable, say the skill version is unknown; never infer it from the published index. If the host cannot establish that this module package is installed and compatible, disclose that limitation and continue useful EU-law and official-source research through the core.

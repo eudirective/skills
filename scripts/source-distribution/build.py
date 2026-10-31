@@ -18,6 +18,8 @@ import zlib
 from pathlib import Path, PurePosixPath
 from typing import Any
 
+from validate_versions import validate_distribution
+
 SCHEMA = "1.0.0"
 AUTHOR = {"name": "eudirective", "email": "eudirective@proton.me"}
 FLAG_ICONS_VERSION = "7.6.0"
@@ -667,7 +669,13 @@ def file_hashes(root: Path, exclude: set[str] | None = None) -> dict[str, str]:
     }
 
 
-def update_plugin_version(plugin_dir: Path, version: str, core_skill_version: str, source_skill_version: str) -> None:
+def update_plugin_version(
+    plugin_dir: Path,
+    version: str,
+    skill_versions: dict[str, str],
+    upstream_trees: dict[str, str],
+    core_pack_version: str,
+) -> None:
     for rel in ("plugin.json", ".codex-plugin/plugin.json"):
         path = plugin_dir / rel
         if not path.is_file():
@@ -684,13 +692,38 @@ def update_plugin_version(plugin_dir: Path, version: str, core_skill_version: st
         raise FileNotFoundError("Core template is missing eudirective-core/SKILL.md")
     text = core_skill.read_text(encoding="utf-8")
     quote = chr(96)
+    core_skill_version = skill_versions["eudirective-core"]
     text = re.sub(r"(?m)^- Current version: .*?$", f"- Current version: {quote}{core_skill_version}{quote}", text, count=1)
     text = re.sub(r"(?m)^- Plugin version: .*?$", f"- Plugin version: {quote}{version}{quote}", text, count=1)
     text = re.sub(
-        r"(?m)^(For each visible answer or report produced with this skill, identify near the top: \*\*Skill: eudirective-core v)\d+\.\d+\.\d+(\*\*.*)$",
-        rf"\g<1>{core_skill_version}\g<2>", text, count=1,
+        r"(?m)^For each visible answer or report produced with this skill, identify near the top: \*\*Skill: eudirective-core v\d+\.\d+\.\d+\*\*.*$",
+        "For each visible answer or report, read the installed component manifest and identify the core skill using its `skill_versions.eudirective-core` value. If that installed value is unavailable, say the skill version is unknown; never infer it from the published index.", text, count=1,
     )
+    if "skill_versions.eudirective-core" not in text:
+        raise ValueError("Core skill must derive its visible version from installed component metadata")
     core_skill.write_text(text, encoding="utf-8", newline="\n")
+
+    session_manifest_path = plugin_dir / "skills/eudirective-core/references/session-version-manifest.json"
+    if not session_manifest_path.is_file():
+        raise FileNotFoundError("Core template is missing session-version-manifest.json")
+    session_manifest = load_json(session_manifest_path)
+    if (session_manifest.get("schema_version") != 1 or
+            session_manifest.get("plugin", {}).get("name") != "freemovement-law" or
+            not isinstance(session_manifest.get("skills"), dict)):
+        raise ValueError("Core session-version manifest has an invalid shape or plugin identity")
+    session_manifest["plugin"]["version"] = version
+    for skill_name, skill_version in skill_versions.items():
+        if skill_name in session_manifest["skills"]:
+            session_manifest["skills"][skill_name] = skill_version
+    if set(session_manifest["skills"]) != set(skill_versions):
+        raise ValueError("Session-version manifest skill inventory differs from generated core skills")
+    library = session_manifest.get("library")
+    if not isinstance(library, dict):
+        raise ValueError("Core session-version manifest has no library metadata")
+    library["core_pack_version"] = core_pack_version
+    library["tree_sha"] = upstream_trees["source-library"]
+    library["module_notes_tree_sha"] = upstream_trees["module-notes"]
+    session_manifest_path.write_bytes(json_bytes(session_manifest))
 
 
 def prune_monolithic_source_skill(plugin_dir: Path) -> None:
@@ -916,6 +949,16 @@ def build(
         raise ValueError("Could not resolve exact upstream tree fingerprints") from exc
     if not re.fullmatch(r"[0-9a-f]{40}", source_tree_sha) or not re.fullmatch(r"[0-9a-f]{40}", module_notes_tree_sha):
         raise ValueError("Invalid upstream tree fingerprint")
+    core_pack_manifests = []
+    for path in source_root.glob("core-source-pack-manifest-*.json"):
+        pack = load_json(path)
+        version = str(pack.get("pack_version", ""))
+        if pack.get("pack_name") == "eudirective-core-source-pack" and re.fullmatch(r"\d+\.\d+\.\d+", version):
+            core_pack_manifests.append((tuple(map(int, version.split("."))), version))
+    if not core_pack_manifests:
+        raise ValueError("No versioned eudirective-core source-pack manifest was found")
+    core_pack_version = max(core_pack_manifests)[1]
+    upstream_trees = {"source-library": source_tree_sha, "module-notes": module_notes_tree_sha}
 
     notes_plugin_by_directory = {c["upstream_source_directory"]: c["plugin_name"] for c in countries}
     for module in operational_modules:
@@ -1021,6 +1064,7 @@ def build(
     generated_exact = {
         "skills/eudirective-core/references/national-source-routing.json",
         "skills/eudirective-core/references/component-manifest.json",
+        "skills/eudirective-core/references/session-version-manifest.json",
         "skills/eudirective-core/scripts/source_library_paths.py",
         "skills/eudirective-ac-turkiye/scripts/source_library_paths.py",
     }
@@ -1293,8 +1337,8 @@ def module_notes_root(country: str, module_id: str | None = None) -> Path:
         "\n## National plugin discovery\n\n"
         "Use the generated references/national-source-routing.json after C3 classifies a materially relevant national jurisdiction and role. "
         "Check the host's available-skill catalog for the exact registered plugin and compatibility contract; a registry entry proves identity, not installation. "
-        "Record available_compatible, available_outdated, available_incompatible, unavailable, discovery_unknown, or not_required only when supported by the available catalog and package manifests. "
-        "If discovery is unavailable or partial, report discovery_unknown, continue with EU law and responsible official-source research, and state the exact national-source limitation. "
+        "Record exact_match, older_release_available, ahead_of_release, incompatible, drift, upstream_only, or unknown only when supported by the installed component manifest and published component index. "
+        "If installation discovery is unavailable or partial, report that availability is unknown; if comparison inputs are missing or malformed, report package status as unknown and not verified. Continue with EU law and responsible official-source research, and state the exact national-source limitation. "
         "For Malta, separately report plugin availability, language representation availability, edition alignment, and whether the relevant provisions were compared. "
         "Do not block an ordinary consultation solely because a country plugin is absent.\n"
     )
@@ -1313,7 +1357,11 @@ def module_notes_root(country: str, module_id: str | None = None) -> Path:
             meta["interface"]["developerName"] = AUTHOR["name"]
             meta["interface"]["displayName"] = "freemovement-law"
         meta_path.write_bytes(json_bytes(meta))
-    update_plugin_version(core, "0.60.0", "0.59.0", "1.1.0")
+    update_plugin_version(core, "0.60.0", {
+        "eudirective-core": "0.59.0",
+        "eudirective-source-library": "1.1.0",
+        "eudirective-ac-turkiye": "0.6.4",
+    }, upstream_trees, core_pack_version)
 
     for country in countries:
         code = country["iso_country_code"]
@@ -1439,18 +1487,6 @@ def module_notes_root(country: str, module_id: str | None = None) -> Path:
                 })
             if module["skill_name"] not in module_fingerprints:
                 raise ValueError(f"Operational module template lacks SKILL.md: {module['skill_name']}")
-            country_skill_dir = country["skill_directory"].removeprefix("skills/")
-            module_manifest_path = previous_root / package_directory / f"skills/{country_skill_dir}/references/component-manifest.json"
-            previous_manifest = load_json(module_manifest_path) if module_manifest_path.is_file() else None
-            if previous_manifest and module["skill_name"] not in previous_manifest.get("skill_versions", {}):
-                old_core_manifest_path = previous_root / registry["core_plugin"] / "skills/eudirective-core/references/component-manifest.json"
-                if old_core_manifest_path.is_file():
-                    previous_manifest = load_json(old_core_manifest_path)
-            if previous_manifest:
-                previous_version = previous_manifest.get("skill_versions", {}).get(module["skill_name"])
-                previous_fingerprint = previous_manifest.get("skill_fingerprints", {}).get(module["skill_name"])
-                if previous_version and previous_fingerprint != module_fingerprints[module["skill_name"]] and previous_version == module["skill_version"]:
-                    raise ValueError(f"Operational module changed without a skill version update: {module['skill_name']}")
         for note in module_notes_by_plugin[name]:
             rel_note = note.relative_to(module_notes_root)
             target_note = Path("references/source-library/module-notes") / rel_note
@@ -1577,8 +1613,21 @@ def module_notes_root(country: str, module_id: str | None = None) -> Path:
             {skill_name: "0.1.0", **{module["skill_name"]: module["skill_version"] for module in operational_modules if module["plugin_name"] == name}},
         )
         for module in operational_modules:
-            if module["plugin_name"] == name:
-                skill_versions[module["skill_name"]] = module["skill_version"]
+            if module["plugin_name"] != name:
+                continue
+            module_skill_file = plugin_dir / module["skill_directory"] / "SKILL.md"
+            module_skill_text = module_skill_file.read_text(encoding="utf-8")
+            module_skill_text, count = re.subn(
+                r"(?m)^- Skill version: `\d+\.\d+\.\d+`$",
+                f"- Skill version: `{skill_versions[module['skill_name']]}`", module_skill_text, count=1,
+            )
+            if count != 1:
+                raise ValueError(f"Operational module skill version line is missing: {module['skill_name']}")
+            module_skill_file.write_text(module_skill_text, encoding="utf-8", newline="\n")
+            generated_module_skill_path = module_skill_file.relative_to(output_root).as_posix()
+            for migration in migration_rows:
+                if migration["target_path"] == generated_module_skill_path:
+                    migration["sha256"] = sha256(module_skill_file)
         skill_file.write_text(
             skill_content.replace("Skill version: 0.1.0", f"Skill version: {skill_versions[skill_name]}"),
             encoding="utf-8", newline="\n",
@@ -1640,8 +1689,7 @@ def module_notes_root(country: str, module_id: str | None = None) -> Path:
         "0.60.0", initial_core_skill_versions,
     )
     write_core_source_skill(core, core_skill_versions["eudirective-source-library"])
-    update_plugin_version(core, core_plugin_version, core_skill_versions["eudirective-core"],
-                          core_skill_versions["eudirective-source-library"])
+    update_plugin_version(core, core_plugin_version, core_skill_versions, upstream_trees, core_pack_version)
     for skill_name, skill_path in module_skill_paths.items():
         content = skill_path.read_text(encoding="utf-8")
         content, count = re.subn(
@@ -1780,6 +1828,8 @@ def module_notes_root(country: str, module_id: str | None = None) -> Path:
         raise ValueError("Sweden operational module is missing from its country package")
     if not (core / "skills/eudirective-ac-turkiye/SKILL.md").is_file():
         raise ValueError("The existing Türkiye applicant-country module was removed")
+
+    validate_distribution(output_root, registry_path)
 
     return {
         "country_count": len(countries),
