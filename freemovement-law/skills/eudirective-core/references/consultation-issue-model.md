@@ -38,6 +38,10 @@ Distinguish, where relevant:
 
 In particular, refusal to receive or lodge an application is not the same event as a formal visa refusal after examination. Visa Code Article 18 competence, Article 19 inadmissibility and Article 32 substantive refusal are separate outcome routes for an ordinary short-stay visa application. Keep the access-obstruction issue and any later visa decision in separate records, even if they concern the same application. A visa appeal is a linked, separate proceeding; record the underlying application separately. See `references/consultation-outcomes-and-remedies.md`.
 
+## Submitted original documents not returned
+
+Treat a report that submitted originals remain unreturned as a separate custody and safe-return issue, even if the visa refusal challenge is weak or the originals are not necessary to prove another claim. Record a submission inventory, the actual custodian (consulate, service provider, another body, or unknown), the stated retention reason and current status, any request for accounting and safe return, submission/receipt and handoff evidence, and a concrete follow-up trigger. Do not assume the documents remain withheld, that retention is unlawful, or which body is responsible without evidence. A request for a copy or translation alone does not trigger this issue. GDPR access or processing questions are separate; they do not recover physical originals, and physical custody alone does not automatically trigger a GDPR claim.
+
 ## Independent conclusions and missing documents
 
 Assess each legal question on its own available facts and sources. A missing document may leave a fact unproved or an evidentiary step unresolved; it does not automatically prevent a legal conclusion that can already be reached from the applicable rule and known facts. State the remaining evidentiary limitation precisely and continue with independently answerable issues.

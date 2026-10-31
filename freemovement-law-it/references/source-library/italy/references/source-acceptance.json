@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "review_date": "2026-10-24",
+  "review_date": "2026-10-29",
   "jurisdiction": "IT",
   "status": "partial",
   "publisher_assessment": {
@@ -68,7 +68,8 @@
     "distinct_source_records_after_deduplication": 44,
     "accepted_source_records": 35,
     "accepted_official_link_urls": 37,
-    "pending_source_records": 4
+    "pending_source_records": 4,
+    "maintained_source_notes": 2
   },
   "inventory_decisions": [
     {
@@ -361,10 +362,10 @@
       "url": "https://www.esteri.it/it/ministero/sportello_info/domandefrequenti/sezione_visti_entrare_in_italia/",
       "publisher": "Italian Ministry of Foreign Affairs and International Cooperation (MAECI)",
       "language": "it",
-      "checked_on": "2026-10-21",
-      "version": "Mutable FAQ with no stable version history exposed in the reviewed page.",
-      "acceptance_scope": "The live Italian MAECI FAQ on entering Italy and visas, including its displayed information about EU/EEA family members, checked 21 October 2026.",
-      "limitations": "The page has no dependable revision date. This is operational guidance only, not legislation or mission-specific instructions. Check the page again for live use.",
+      "checked_on": "2026-10-29",
+      "version": "Live English page reviewed 2026-10-29; no dependable revision date or stable version identifier displayed.",
+      "acceptance_scope": "The live MAECI Entry into Italy FAQ, within its published general visa and entry guidance, including its stated EU/EEA family-member visa document list, processing summaries and refusal-remedy descriptions.",
+      "limitations": "Mutable FAQ, not legislation; page exposes no reliable revision date. The maintained Markdown is a structured paraphrase of the reviewed English page, not a verbatim or complete transcript. Verify mission-specific instructions, current law, and sponsor/nationality route. Italian counterpart not independently reconciled in this review.",
       "candidate_records": [
         {
           "manifest": "candidates/italy-expanded-manifest-2026-10-18/IT/expanded/candidate-manifest.json",
@@ -376,9 +377,9 @@
         }
       ],
       "evidence": {
-        "official_source_url": "https://www.esteri.it/it/ministero/sportello_info/domandefrequenti/sezione_visti_entrare_in_italia/",
-        "verified_content": "Official MFA FAQ inspected; covers family members of EU/EEA citizens and cites Article 2 D.Lgs 30/2007.",
-        "source_record_note": "External-link acceptance only. Local Markdown/PDF captures and conversions remain unaccepted.",
+        "official_source_url": "https://www.esteri.it/en/ministero/sportello_info/domandefrequenti/sezione_visti_entrare_in_italia/",
+        "verified_content": "The live English page was opened and reviewed in full on 2026-10-29. Relevant content includes the EU/EEA family-member list, visa application timings and processing estimates, additional-document possibility, short-stay extension authority and refusal appeal summaries.",
+        "source_record_note": "External link acceptance retained; a maintained Markdown source note is accepted as a paraphrased representation. No open licence was identified; no verbatim page copy is retained.",
         "retrieval_status": "converted_review_candidate"
       },
       "decision": "accepted_with_narrow_external_scope",
@@ -388,7 +389,10 @@
           "language": "en",
           "role": "English alternative to the Italian live FAQ; checked 2026-10-21."
         }
-      ]
+      ],
+      "maintained_source_note_path": "documents/guidance/it-maeci-entry-and-visa-faq.md",
+      "maintained_source_note_checked_on": "2026-10-29",
+      "maintained_source_note_status": "accepted_paraphrased_source_note"
     },
     {
       "source_id": "monitor-it-18",
@@ -976,10 +980,10 @@
       "url": "https://www.esteri.it/it/servizi-opportunita/italiani-all-estero/stato-civile/riconoscimento-di-sentenze-straniere/",
       "publisher": "Italian Ministry of Foreign Affairs and International Cooperation (MAECI)",
       "language": "it",
-      "checked_on": "2026-10-21",
-      "version": "Live official page content checked through the standard web view on 2026-10-21; no reliable revision date displayed.",
-      "acceptance_scope": "The current MAECI page as a practical guide to registration/recognition of foreign civil judgments and its reference to Law 218/1995 and applicable EU rules.",
-      "limitations": "Direct HTTP retrieval returned the publisher security challenge; link acceptance is based on the human-reviewed official page, not a raw capture. The page is not law and does not cover every judgment type or competent authority.",
+      "checked_on": "2026-10-29",
+      "version": "Live Italian and English MAECI pages opened 2026-10-29; no reliable revision date displayed. The Italian page cites Regulation (EU) 2019/1111; the English page still cites Regulation (EC) 2201/2003.",
+      "acceptance_scope": "MAECI central guidance on general registration of foreign judgments and its document checklist, with an explicit warning that its two language versions disagree on the current EU divorce instrument.",
+      "limitations": "Mutable guidance, not law. English language page contains stale EU divorce instrument reference. The Italian page's Regulation 2019/1111 summary also requires application of the instrument's temporal provisions; adoption matters are routed separately. Verify current law and competent authority requirements.",
       "candidate_records": [
         {
           "manifest": "candidates/italy-priority-manifest-2026-10-24/IT/priority/candidate-manifest.json",
@@ -988,10 +992,13 @@
       ],
       "evidence": {
         "official_source_url": "https://www.esteri.it/it/servizi-opportunita/italiani-all-estero/stato-civile/riconoscimento-di-sentenze-straniere/",
-        "verified_content": "Live official page content checked through the standard web view on 2026-10-21; no reliable revision date displayed.",
-        "source_record_note": "Human-reviewed official external link only; no local copy or conversion accepted."
+        "verified_content": "Both official language pages opened and compared 2026-10-29. Italian page describes general requirements, transmission routes and documents and cites Regulation (EU) 2019/1111 with Annex II/VIII. English page retains Regulation (EC) 2201/2003/Article 22. EUR-Lex Regulation (EU) 2019/1111 Articles 100, 104 and 105 confirm temporal application and repeal.",
+        "source_record_note": "Maintained paraphrased Markdown note captures both language versions and discrepancy. No verbatim copy or open licence asserted."
       },
-      "decision": "accepted_with_narrow_external_scope"
+      "decision": "accepted_with_narrow_external_scope",
+      "maintained_source_note_path": "documents/guidance/it-maeci-foreign-judgment-recognition.md",
+      "maintained_source_note_checked_on": "2026-10-29",
+      "maintained_source_note_status": "accepted_paraphrased_source_note"
     }
   ],
   "pending_references": [
@@ -1089,5 +1096,301 @@
       "checked_on": "2026-10-21"
     }
   ],
-  "policy": "A trustworthy official government consolidated text or clearly identified official page may be accepted as an external reference within its displayed status, version, language, date and subject. If authority, version or content is unclear, offer the whole official government website/service for human review. A human-reviewed link is sufficient for ordinary source use; a local copy, custom retrieval/conversion rule, API, full Gazette amendment chain, hash, replay or scheduled update is not a blanket prerequisite. External-link acceptance is separate from local-copy acceptance, issue/topic coverage and country review completion."
+  "policy": "A trustworthy official government consolidated text or clearly identified official page may be accepted as an external reference within its displayed status, version, language, date and subject. If authority, version or content is unclear, offer the whole official government website/service for human review. A human-reviewed link is sufficient for ordinary source use; a local copy, custom retrieval/conversion rule, API, full Gazette amendment chain, hash, replay or scheduled update is not a blanket prerequisite. External-link acceptance is separate from local-copy acceptance, issue/topic coverage and country review completion.",
+  "identity_links": {
+    "monitor-it-01": {
+      "source_identity_id": "it:url:fad95101e0696d6b6ffe",
+      "representation_ids": [
+        "it:url:fad95101e0696d6b6ffe#url:en:54c0b8d135ab"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "monitor-it-02": {
+      "source_identity_id": "it:record:monitor-it-02:4086ca77f206",
+      "representation_ids": [],
+      "identity_resolution_status": "unresolved"
+    },
+    "monitor-it-03": {
+      "source_identity_id": "it:url:a6a18f234c14ad6a9bdb",
+      "representation_ids": [
+        "it:url:a6a18f234c14ad6a9bdb#url:it:b25b4cca5eb3"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "monitor-it-04": {
+      "source_identity_id": "it:url:4d1f6e33418dd40eed1c",
+      "representation_ids": [
+        "it:url:4d1f6e33418dd40eed1c#local:it:a4d309f6689d",
+        "it:url:4d1f6e33418dd40eed1c#url:it:943634eabdf3"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "monitor-it-05": {
+      "source_identity_id": "it:url:d567fbfd7400c7cb7313",
+      "representation_ids": [
+        "it:url:d567fbfd7400c7cb7313#url:it:486d8a1cf203"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "monitor-it-06": {
+      "source_identity_id": "it:url:8eab904a1e6f3e31eb35",
+      "representation_ids": [
+        "it:url:8eab904a1e6f3e31eb35#url:it:8e39a2182653"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "monitor-it-07": {
+      "source_identity_id": "it:url:914ba289458c84e1b02f",
+      "representation_ids": [
+        "it:url:914ba289458c84e1b02f#url:it:5442a60dce20"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "monitor-it-08": {
+      "source_identity_id": "it:record:monitor-it-08:d0f73fc6ed59",
+      "representation_ids": [],
+      "identity_resolution_status": "unresolved"
+    },
+    "monitor-it-09": {
+      "source_identity_id": "it:record:monitor-it-09:00e55a663905",
+      "representation_ids": [],
+      "identity_resolution_status": "unresolved"
+    },
+    "monitor-it-10": {
+      "source_identity_id": "it:record:monitor-it-10:5d5534d3211d",
+      "representation_ids": [],
+      "identity_resolution_status": "unresolved"
+    },
+    "monitor-it-11": {
+      "source_identity_id": "it:url:912930dda7bdb5a13600",
+      "representation_ids": [
+        "it:url:912930dda7bdb5a13600#url:it:420bccb9f1ee"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "monitor-it-12": {
+      "source_identity_id": "it:url:10be02dc5bf43ca3a353",
+      "representation_ids": [
+        "it:url:10be02dc5bf43ca3a353#url:it:0eaf69a7b826"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "monitor-it-13": {
+      "source_identity_id": "it:record:monitor-it-13:b682d4683e1e",
+      "representation_ids": [],
+      "identity_resolution_status": "unresolved"
+    },
+    "monitor-it-14": {
+      "source_identity_id": "it:url:e83f7b4f5ffe17c52491",
+      "representation_ids": [
+        "it:url:e83f7b4f5ffe17c52491#url:it:3f258a29aaea"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "monitor-it-15": {
+      "source_identity_id": "it:url:eaed85647cfa0df436e4",
+      "representation_ids": [
+        "it:url:eaed85647cfa0df436e4#url:it:781eb8eef39f"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "monitor-it-16": {
+      "source_identity_id": "it:record:monitor-it-16:fc88028f0b5f",
+      "representation_ids": [],
+      "identity_resolution_status": "unresolved"
+    },
+    "monitor-it-17": {
+      "source_identity_id": "it:url:72db65f45e0cba77043f",
+      "representation_ids": [
+        "it:url:72db65f45e0cba77043f#url:it:456c72259354"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "monitor-it-18": {
+      "source_identity_id": "it:url:d8d3e9b4cf91dc6e6524",
+      "representation_ids": [
+        "it:url:d8d3e9b4cf91dc6e6524#url:it:8193c7cd2936"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "monitor-it-19": {
+      "source_identity_id": "it:record:monitor-it-19:5dfce5470834",
+      "representation_ids": [],
+      "identity_resolution_status": "unresolved"
+    },
+    "monitor-it-20": {
+      "source_identity_id": "it:url:e6b71b36f25333b0b15a",
+      "representation_ids": [
+        "it:url:e6b71b36f25333b0b15a#url:it:2a79ff5696ec"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "monitor-it-21": {
+      "source_identity_id": "it:url:03ee28e11661913e65a3",
+      "representation_ids": [
+        "it:url:03ee28e11661913e65a3#url:it:b4d680e446ec"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "monitor-it-22": {
+      "source_identity_id": "it:url:2786c8549ec2cddbdfe3",
+      "representation_ids": [
+        "it:url:2786c8549ec2cddbdfe3#url:it:f20842f88818"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "monitor-it-23": {
+      "source_identity_id": "it:url:06ed43fcab75089a05a5",
+      "representation_ids": [
+        "it:url:06ed43fcab75089a05a5#url:it:d409f5b4efcc"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "monitor-it-24": {
+      "source_identity_id": "it:record:monitor-it-24:0fd83b04ea72",
+      "representation_ids": [],
+      "identity_resolution_status": "unresolved"
+    },
+    "monitor-it-25": {
+      "source_identity_id": "it:url:9fba39396fd9cdd59aac",
+      "representation_ids": [
+        "it:url:9fba39396fd9cdd59aac#url:it:8542b5f26340"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "monitor-it-26": {
+      "source_identity_id": "it:url:f21da4b8d6b31413391d",
+      "representation_ids": [
+        "it:url:f21da4b8d6b31413391d#url:it:9877900a0ebf"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "monitor-it-27": {
+      "source_identity_id": "it:url:9e763934fb17e1748ea7",
+      "representation_ids": [
+        "it:url:9e763934fb17e1748ea7#url:it:318458108291"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "monitor-it-28": {
+      "source_identity_id": "it:url:30b63ca3c86bad1266ea",
+      "representation_ids": [
+        "it:url:30b63ca3c86bad1266ea#url:it:f01df1c4d260"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "monitor-it-29": {
+      "source_identity_id": "it:url:96850924c8eae2f32677",
+      "representation_ids": [
+        "it:url:96850924c8eae2f32677#url:it:4cbdb77fc9d1"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "monitor-it-30": {
+      "source_identity_id": "it:url:9815ea60ccbe3ffef6e2",
+      "representation_ids": [
+        "it:url:9815ea60ccbe3ffef6e2#url:it:e644a8d8f902"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "monitor-it-31": {
+      "source_identity_id": "it:url:aeff32f460baef7d5814",
+      "representation_ids": [
+        "it:url:aeff32f460baef7d5814#url:it:74e91de62639"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "monitor-it-32": {
+      "source_identity_id": "it:url:d1ba2c1063a698c72674",
+      "representation_ids": [
+        "it:url:d1ba2c1063a698c72674#url:it:881b8ab3f2f4"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "monitor-it-33": {
+      "source_identity_id": "it:url:b657f71c84d7a9334692",
+      "representation_ids": [
+        "it:url:b657f71c84d7a9334692#url:it:80bf0f4af693"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "monitor-it-34": {
+      "source_identity_id": "it:url:66578b8a28a2b653c3cf",
+      "representation_ids": [
+        "it:url:66578b8a28a2b653c3cf#url:it:1530e9cff62d"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "monitor-it-35": {
+      "source_identity_id": "it:url:ac32ade08d30ddc56891",
+      "representation_ids": [
+        "it:url:ac32ade08d30ddc56891#url:it:17e07227a060"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "monitor-it-36": {
+      "source_identity_id": "it:url:499f0ad7306ef13a3ea8",
+      "representation_ids": [
+        "it:url:499f0ad7306ef13a3ea8#url:it:11be389a4711"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "monitor-it-37": {
+      "source_identity_id": "it:url:be6f5d0e5d7e7cd47f7e",
+      "representation_ids": [
+        "it:url:be6f5d0e5d7e7cd47f7e#url:it:1939cce67b27"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "monitor-it-38": {
+      "source_identity_id": "it:url:144f055c1bbefb2e7459",
+      "representation_ids": [
+        "it:url:144f055c1bbefb2e7459#url:it:4d5359b39993"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "monitor-it-39": {
+      "source_identity_id": "it:url:b26292ae86125ea28931",
+      "representation_ids": [
+        "it:url:b26292ae86125ea28931#url:it:6c542d0dc719"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "monitor-it-40": {
+      "source_identity_id": "it:record:monitor-it-40:2018c68d0443",
+      "representation_ids": [],
+      "identity_resolution_status": "unresolved"
+    },
+    "monitor-it-41": {
+      "source_identity_id": "it:url:24cba92ddd9836f6d9ca",
+      "representation_ids": [
+        "it:url:24cba92ddd9836f6d9ca#url:it:787ece404ef5"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "priority-law-184-1983": {
+      "source_identity_id": "it:url:c7d867444dda3ab80a17",
+      "representation_ids": [
+        "it:url:c7d867444dda3ab80a17#local:it:afdb169effb8",
+        "it:url:c7d867444dda3ab80a17#url:it:335d0312bc93"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "priority-law-218-1995": {
+      "source_identity_id": "it:url:5b780b97dc801fd3eb64",
+      "representation_ids": [
+        "it:url:5b780b97dc801fd3eb64#local:it:c5a6727468d9",
+        "it:url:5b780b97dc801fd3eb64#url:it:3a8e28fc31cf"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "priority-maeci-recognition": {
+      "source_identity_id": "it:url:8e1c8ee3f5d0313eb74d",
+      "representation_ids": [
+        "it:url:8e1c8ee3f5d0313eb74d#url:it:9124ff1cd6ad"
+      ],
+      "identity_resolution_status": "resolved"
+    }
+  },
+  "identity_link_schema_version": 1
 }

@@ -2,12 +2,15 @@
 
 **Scope:** official Portuguese source and service locators related to EU, EEA, Swiss, and distinct Andorra free movement; third-country family and immigration procedures; forms, visas, missions, administrative procedure, remedies, access, privacy, oversight, legal aid, civil status, and case-law discovery. Similarity is not legal equivalence.
 
-**Inventory (24 October 2026):** 68 unique official-source references; 61 links accepted within narrow dated scopes; 3 Gov.pt pages not relied upon for current procedures; 4 AIMA routes remain under human review; 0 local copies or legal topics accepted. The 19 October retrieval pass produced 19 converted review artifacts, now indexed in the Monitor local-only archive and still unaccepted as local copies. Capture results do not block link use. See the [canonical candidate manifest](candidate-manifest.json), [source acceptance register](source-acceptance.json), [coverage register](coverage-register.md), and [dependency register](source-dependencies.json).
+**Inventory (29 October 2026):** 73 unique official-source references; 66 links accepted within narrow dated scopes; 3 Gov.pt pages not relied upon for current procedures; 4 AIMA routes remain under human review; 1 dated derived text copy; 0 legal topics accepted. The 19 October retrieval pass produced 19 converted review artifacts, now indexed in the Monitor local-only archive and still unaccepted as local copies. Capture results do not block link use. See the [canonical candidate manifest](candidate-manifest.json), [source acceptance register](source-acceptance.json), [coverage register](coverage-register.md), and [dependency register](source-dependencies.json).
 
 | Candidate ID | Official source | Source class | Functional relationship | Verification status | Retrieval/version note |
 |---|---|---|---|---|---|
+| `pt-01-lei-n.º-37-2006-on-free-movement-and-residence-of-eu-citizens-and-family-me` | [Lei n.º 37/2006 consolidated record](https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2006-128792849) | `free_movement_primary_legislation` | `close_functional_match` | DRE page and full visible text checked 2026-10-29; dated derived Markdown retained | DRE shows “Em vigor,” date selector 2026-08-24, and last alteration 2023-06-02. Full visible Articles 1–34 are retained in [document](../documents/legislation/pt-01-lei-37-2006-free-movement-consolidation-2026-08-24.md). DRE says the consolidation has no legal value and does not replace source acts; check later amendments and commencement. |
 | `pt-01` | [Diário da República portal](https://diariodarepublica.pt/) | `official_legal_publication_portal` | `related_source` | Accepted external reference (narrow scope) | The official Portuguese Gazette portal is the primary publication surface. Stable record pages are available, but no API documentation was found in the bounded search. |
+| `pt-02-lei-n.º-143-2015-adoption-regime` | [Lei n.º 143/2015 consolidated adoption regime](https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2015-70208248) | `adoption_primary_legislation` | `close_functional_match` | DRE record and full visible consolidated text checked 2026-10-29; dated derived Markdown retained | DRE shows “Em vigor,” version date 2026-10-16, last alteration 2023-08-17. Full visible statutory body including annexed adoption regime is retained in [document](../documents/legislation/pt-02-lei-143-2015-adoption-regime-consolidation-2026-10-16.md). DRE says the consolidation has no legal value; check source acts and later amendments. |
 | `pt-02` | [DRE help: consolidated versions](https://diariodarepublica.pt/dr/geral/ajuda/versao-consolidada) | `official_consolidation_policy` | `related_source` | Accepted external reference (narrow scope) | DRE says consolidated texts are not official and have no legal value; use them for discovery/version comparison and preserve original acts and amendments as legal authority. The date slider and article-level change trail are useful monitoring signals. |
+| `pt-03-código-do-registo-civil-decreto-lei-n.º-131-95-consolidated-provisions` | [Código do Registo Civil (DRE consolidated record)](https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/1995-34525275) | `civil_registration_primary_legislation` | `related_source` | DRE record and complete visible consolidated text checked 2026-10-29; dated derived Markdown retained | DRE displays “Em vigor,” version selector 2026-09-06, last alteration 2025-04-01. Full text through Article 305 is retained at [document](../documents/legislation/pt-03-codigo-registo-civil-consolidation-2026-09-06.md). The consolidation has no legal value; check originating acts, later changes and applicable regulations. |
 | `pt-03` | [DRE overview of the official gazette](https://diariodarepublica.pt/dr/geral/ajuda/sobre-dr) | `official_publisher_policy` | `related_source` | Accepted external reference (narrow scope) | DRE identifies the Gazette as the official publisher and says consolidated texts, summaries and legal analysis have no legal value. The page did not expose an API contract. |
 | `pt-04` | [N-Lex Portugal legal-search route](https://n-lex.europa.eu/n-lex/legis_po/digesto_form?lang=pt) | `cross_border_law_discovery_catalogue` | `related_source` | Accepted external reference (narrow scope) | Discovery lead to Portuguese legal-information services only. N-Lex is not the Portuguese publisher, does not cover guidance/courts/oversight comprehensively, and must not be monitored as the legal record. |
 | `pt-05` | [Law 37/2006, original official record](https://diariodarepublica.pt/dr/detalhe/lei/37-2006-538604) | `free_movement_primary_legislation` | `close_functional_match` | Accepted external reference (narrow scope) | Transposes Directive 2004/38. Articles 1 and 3 extend parts of the regime to EEA and Swiss nationals and their family; article 3(5) extends family provisions to Portuguese nationals. Registration over three months is a municipal route; family cards are issued under a separate route. Article 21 says documents are not a precondition to exercising the right. |
@@ -73,4 +76,88 @@
 | `pt-65` | [Law 9/91, Statute of the Ombudsman, DRE consolidated record](https://diariodarepublica.pt/dr/legislacao-consolidada/lei/1991-34552275-45426275) | `ombudsman_primary_legislation` | `related_source` | Accepted external reference (narrow scope) | DRE marked the consolidated record in force and showed amendments including Lei 52-A/2005 and Lei 17/2013 when checked 2026-10-21. |
 | `pt-66` | [Law 143/2015, Portuguese adoption procedure regime](https://diariodarepublica.pt/dr/detalhe/lei/143-2015-70215247) | `adoption_primary_legislation` | `related_source` | Accepted external reference (narrow scope) | DRE marked the original act in force; published 2015-09-08. Its title and Article 1 identify changes to the Civil Code and Civil Registry Code and the RJPA annex. |
 | `pt-67` | [Civil Registry Code, DRE consolidated record](https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/1995-34525275) | `civil_status_primary_legislation` | `related_source` | Accepted external reference (narrow scope) | DRE showed in-force status and last alteration 2025-04-01, introduced by Lei 39/2025; checked 2026-10-21. |
-| `pt-68` | [Civil Code, Chapter III: rights of foreigners and conflict of laws](https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/1966-34509075-49754075) | `private_international_law_primary_legislation` | `related_source` | Accepted external reference (narrow scope) | DRE identifies Chapter III as rights of foreigners/conflicts of laws, beginning at Article 14; it showed in-force status and last alteration 2026-06-23. |
+| `pt-68` | [Civil Code, Chapter III: rights of foreigners and conflict of laws](https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/1966-34509075) | `private_international_law_primary_legislation` | `related_source` | Accepted external reference (narrow scope); maintained locator/version note | DRE record is marked in force and showed last alteration 2026-06-23 when checked 2026-10-29. The selected candidate `pt-04-código-civil-private-international-law-provisions` resolves to this same Civil Code instrument. Maintained article map and update procedure: [pt-68 Civil Code conflict-of-laws note](../documents/legislation/pt-68-codigo-civil-conflict-of-laws-2026-10-29.md). Date does not establish that each chapter provision changed; DRE consolidations have no legal value. |
+| `pt-05-aima-overview` | [AIMA information for EU citizens and their family members](https://aima.gov.pt/en/nacionais-ue-e-familiares) | `official_service_hub` | `related_source` | Accepted as a narrow official reference; maintained note | English-path hub content is Portuguese. Summarizes routes for EU registration, non-EU family-member cards, and permanent residence. Direct browser retrieval timed out; indexed AIMA hub and linked service pages checked 2026-10-29. See [maintained AIMA hub note](../documents/guidance/pt-05-aima-eu-citizens-family-hub-2026-10-29.md). Not accepted as local source text or topic evidence. |
+| `pt-06-portaria-models-fees` | [Portaria n.º 1334-D/2010: EU residence-document models and fees](https://diariodarepublica.pt/dr/legislacao-consolidada/portaria/2010-107034650) | `EU_residence_document_models_and_fees` | `related_source` | Accepted as a narrow official reference; maintained note | DRE displayed in-force status, last alteration 2024-01-31 and consolidation view 2026-08-24. Cross-checked Portarias 13/2024 and 32/2024. DRE says the consolidation has no legal value; local municipal fee component and annex image require direct checking. See [maintained models and fees note](../documents/guidance/pt-06-portaria-1334-d-2010-models-fees-2026-10-29.md). Not accepted as retained source text or topic evidence. |
+
+<!-- source-identity-inventory:start -->
+## Source identity crosswalk
+
+Canonical rows: **73**; provisional unique IDs: **73**; unresolved entries: **6**. This crosswalk preserves catalogue IDs, links external-reference and local-artifact representations to a source identity, and keeps acceptance status separate.
+
+| Existing entry ID | Canonical source identity | Resolution | Representations | Catalogued statuses | Status record IDs |
+|---|---|---|---|---|---|
+| `pt-01` | `pt:url:b633b1d83f4cbd53a16c` | resolved | official_reference/pt/undated<br>official_reference/pt/undated | accepted_external_reference, pending, discovery | — |
+| `pt-01-lei-n.º-37-2006-on-free-movement-and-residence-of-eu-citizens-and-family-me` | `pt:ambiguous:pt-01-lei-n-o-37-2006-on-free-movement-and-residence-of-eu-citizens-and-family-me:b4b28580370a` | unresolved | official_reference/unspecified/undated | accepted_external_reference | — |
+| `pt-02` | `pt:url:cff8d39acc09106bba99` | resolved | official_reference/pt/undated | accepted_external_reference, pending, discovery | — |
+| `pt-02-lei-n.º-143-2015-adoption-regime` | `pt:url:9b456d5be06090c80f05` | resolved | official_reference/unspecified/undated | accepted_external_reference | — |
+| `pt-03` | `pt:url:ea2fac825a895c1bbd87` | resolved | official_reference/pt/undated | accepted_external_reference, pending, discovery | — |
+| `pt-03-código-do-registo-civil-decreto-lei-n.º-131-95-consolidated-provisions` | `pt:ambiguous:pt-03-codigo-do-registo-civil-decreto-lei-n-o-131-95-consolidated-provisions:9f2fda4cf75a` | unresolved | official_reference/unspecified/undated | accepted_external_reference | — |
+| `pt-04` | `pt:url:d1602c54fd4212d23907` | resolved | official_reference/pt/undated | accepted_external_reference, pending, discovery | — |
+| `pt-05` | `pt:url:422df2c3e9341aa7c93e` | resolved | official_reference/pt/undated | accepted_external_reference, pending, discovery | — |
+| `pt-05-aima-overview` | `pt:url:2f612c62712b3fbd9cb8` | resolved | official_reference/unspecified/undated | accepted_external_reference | — |
+| `pt-06` | `pt:ambiguous:pt-06:ceda7018c751` | unresolved | official_reference/pt/undated | accepted_external_reference, pending, discovery | — |
+| `pt-06-portaria-models-fees` | `pt:ambiguous:pt-06-portaria-models-fees:36c5a1fda89a` | unresolved | official_reference/unspecified/undated | accepted_external_reference | — |
+| `pt-07` | `pt:url:3f6cefbb93e3ad3dc11f` | resolved | official_reference/pt/undated | accepted_external_reference, pending, discovery | — |
+| `pt-08` | `pt:ambiguous:pt-08:d8ee4dea8874` | unresolved | official_reference/pt/undated<br>official_reference/pt/undated | accepted_external_reference, pending, discovery | — |
+| `pt-09` | `pt:url:5396c512030f0358fb33` | resolved | official_reference/pt/undated | accepted_external_reference, pending, discovery | — |
+| `pt-10` | `pt:url:5652171b3f5c2e4647ef` | resolved | official_reference/pt/undated<br>official_reference/pt/undated | accepted_external_reference, pending, discovery | — |
+| `pt-11` | `pt:url:7107e7693c0e9b8bde94` | resolved | official_reference/pt/undated<br>official_reference/pt/undated | accepted_external_reference, pending, discovery | — |
+| `pt-12` | `pt:url:a2a685667903be125a60` | resolved | official_reference/pt/undated | accepted_external_reference, pending, discovery | — |
+| `pt-13` | `pt:url:99bc261b12b7d42755b8` | resolved | official_reference/pt/undated | accepted_external_reference, pending, discovery | — |
+| `pt-14` | `pt:url:b55283164196336939d9` | resolved | official_reference/pt/undated | accepted_external_reference, pending, discovery | — |
+| `pt-15` | `pt:url:579896a4d904b9c70cd7` | resolved | official_reference/pt/undated | accepted_external_reference, pending, discovery | — |
+| `pt-16` | `pt:url:37695212cbe59d45b3f3` | resolved | official_reference/pt/undated | accepted_external_reference, pending, discovery | — |
+| `pt-17` | `pt:url:af0db7e22d699cdc7ebc` | resolved | official_reference/pt/undated | accepted_external_reference, pending, discovery | — |
+| `pt-18` | `pt:url:399a1d343298cdcf3cf6` | resolved | official_reference/pt/undated<br>official_reference/pt/undated | accepted_external_reference, pending, discovery | — |
+| `pt-19` | `pt:url:4ec2ec0b0de4ff83c691` | resolved | official_reference/pt/undated | accepted_external_reference, pending, discovery | — |
+| `pt-20` | `pt:url:ec45ee80e00f732587a0` | resolved | official_reference/pt/undated | accepted_external_reference, pending, discovery | — |
+| `pt-21` | `pt:url:eac56633abb6398f53ce` | resolved | official_reference/pt/undated | discovery | — |
+| `pt-22` | `pt:url:e531f450e04ced53e1f8` | resolved | official_reference/pt/undated | candidate | — |
+| `pt-23` | `pt:url:44057ad3e426d915b0f3` | resolved | official_reference/pt/undated | accepted_external_reference, pending | — |
+| `pt-24` | `pt:url:de23f8f8b75e062a9c8c` | resolved | official_reference/pt/undated | accepted_external_reference, pending | — |
+| `pt-25` | `pt:url:f96bb7f4ace2c16f9e37` | resolved | official_reference/pt/undated | accepted_external_reference, pending | — |
+| `pt-26` | `pt:url:fb676f25628b8819a37a` | resolved | official_reference/pt/undated | accepted_external_reference, pending | — |
+| `pt-27` | `pt:url:d91e91ac4c4ef6b6ca86` | resolved | official_reference/pt/undated | discovery | — |
+| `pt-28` | `pt:url:3c88ca538bf5bbdfa24f` | resolved | official_reference/pt/undated | accepted_external_reference, pending | — |
+| `pt-29` | `pt:url:e01b910d9ed64f757d9a` | resolved | official_reference/en/undated | pending, not_relied_upon | — |
+| `pt-30` | `pt:url:2c87ecb11d9912ccb747` | resolved | official_reference/pt/undated | pending, not_relied_upon | — |
+| `pt-31` | `pt:url:f89806b750b5ce1962f4` | resolved | official_reference/pt/undated | pending, not_relied_upon | — |
+| `pt-32` | `pt:url:92b7477d1143f51ddcfb` | resolved | official_reference/pt/undated | accepted_external_reference, pending | — |
+| `pt-33` | `pt:url:4587e40e833e88030544` | resolved | official_reference/pt/undated | accepted_external_reference, pending | — |
+| `pt-34` | `pt:url:7d644672a980fdfddf42` | resolved | official_reference/pt/undated | accepted_external_reference, pending | — |
+| `pt-35` | `pt:url:d40b9a317923bd4cbf3d` | resolved | official_reference/en/undated | accepted_external_reference, pending | — |
+| `pt-36` | `pt:url:a6472d6597f5858851b0` | resolved | official_reference/pt/undated | accepted_external_reference, pending, discovery | — |
+| `pt-37` | `pt:url:016a4fc92fb12b187f2c` | resolved | official_reference/pt/undated | accepted_external_reference, pending | — |
+| `pt-38` | `pt:url:1eb9cbfe5c879f935c51` | resolved | official_reference/pt/undated | accepted_external_reference, pending | — |
+| `pt-39` | `pt:url:03968fe84e8f39b60468` | resolved | official_reference/pt/undated | candidate | — |
+| `pt-40` | `pt:url:a345ee7e84dd13f8da79` | resolved | official_reference/pt/undated | accepted_external_reference, pending | — |
+| `pt-41` | `pt:url:e30c2f7418bc6148934c` | resolved | official_reference/pt/undated | accepted_external_reference, pending | — |
+| `pt-42` | `pt:url:8c7e4d10edbf032070bb` | resolved | official_reference/pt/undated | accepted_external_reference, pending | — |
+| `pt-43` | `pt:url:0a6909403cf037676f4a` | resolved | official_reference/pt/undated | accepted_external_reference, pending | — |
+| `pt-44` | `pt:url:c9417250c9c73d39b6b1` | resolved | official_reference/pt/undated | accepted_external_reference, pending | — |
+| `pt-45` | `pt:url:dbb2894cf8005529be2e` | resolved | official_reference/pt/undated | accepted_external_reference, pending | — |
+| `pt-46` | `pt:url:3e4b3912daeec04b412c` | resolved | official_reference/pt/undated | accepted_external_reference, pending | — |
+| `pt-47` | `pt:url:55a3411184a3fde57928` | resolved | official_reference/pt/undated | accepted_external_reference, pending, discovery | — |
+| `pt-48` | `pt:url:69df26326096d107aa54` | resolved | official_reference/pt/undated | accepted_external_reference, pending | — |
+| `pt-49` | `pt:url:1767148dd7b511d72379` | resolved | official_reference/pt/undated | accepted_external_reference, pending | — |
+| `pt-50` | `pt:url:034011166366f56f2686` | resolved | official_reference/pt/undated | accepted_external_reference, pending, discovery | — |
+| `pt-51` | `pt:url:fe9e5fee838853fdfca9` | resolved | official_reference/pt/undated | accepted_external_reference, pending, discovery | — |
+| `pt-52` | `pt:url:26d094312ae57a41a628` | resolved | official_reference/pt/undated | accepted_external_reference, pending, discovery | — |
+| `pt-53` | `pt:url:2b1cf285addd53e3ca68` | resolved | official_reference/pt/undated | accepted_external_reference, pending, discovery | — |
+| `pt-54` | `pt:url:1df1dfe033aefa274b8a` | resolved | official_reference/pt/undated | accepted_external_reference, pending, discovery | — |
+| `pt-55` | `pt:url:696f470ca32ce4c07c38` | resolved | official_reference/pt/undated | accepted_external_reference, pending, discovery | — |
+| `pt-56` | `pt:url:52ce37ea4d87f5cd5a85` | resolved | official_reference/pt/undated | accepted_external_reference, pending, discovery | — |
+| `pt-57` | `pt:url:9d35c2c58d260afd6349` | resolved | official_reference/pt/undated | accepted_external_reference, pending | — |
+| `pt-58` | `pt:url:7ec7eeec944172e409d3` | resolved | official_reference/pt/undated | accepted_external_reference, pending, discovery | — |
+| `pt-59` | `pt:url:99b4e4ae3ce8e539ab1f` | resolved | official_reference/pt/undated | accepted_external_reference, pending | — |
+| `pt-60` | `pt:url:0413964bd7214b82c131` | resolved | official_reference/pt/undated | accepted_external_reference, pending | — |
+| `pt-61` | `pt:url:8e276e40fca199725199` | resolved | official_reference/pt/undated | accepted_external_reference, pending | — |
+| `pt-62` | `pt:url:60bcf178988f17fa416b` | resolved | official_reference/pt/undated | accepted_external_reference, pending | — |
+| `pt-63` | `pt:url:69786ea7550c987505f6` | resolved | official_reference/pt/undated | accepted_external_reference, pending | — |
+| `pt-64` | `pt:url:0e1207f127597f9ba410` | resolved | official_reference/pt/undated | accepted_external_reference, pending | — |
+| `pt-65` | `pt:url:e1075aadab76cc10a4a7` | resolved | official_reference/pt/undated | accepted_external_reference, pending | — |
+| `pt-66` | `pt:url:a121a4ec7ba5045834f9` | resolved | official_reference/pt/undated | accepted_external_reference, pending | — |
+| `pt-67` | `pt:ambiguous:pt-67:ca6d6bd1d796` | unresolved | official_reference/pt/undated | accepted_external_reference, pending | — |
+| `pt-68` | `pt:url:8240035951bdccc96304` | resolved | local_artifact/unspecified/2026-10-29 (`documents/legislation/pt-68-codigo-civil-conflict-of-laws-2026-10-29.md`)<br>official_reference/pt/undated<br>official_reference/unspecified/undated | accepted_external_reference, pending | — |
+<!-- source-identity-inventory:end -->

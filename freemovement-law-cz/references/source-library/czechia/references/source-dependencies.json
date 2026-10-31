@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0.0",
   "jurisdiction": "CZ",
-  "as_of": "2026-10-21",
+  "as_of": "2026-10-28",
   "review_status": "partial",
-  "source_record_count": 63,
-  "sources_reviewed_selectively": 7,
+  "source_record_count": 64,
+  "sources_reviewed_selectively": 8,
   "sources_not_yet_reviewed": 56,
   "policy": "Record material statutory, EU-law, procedural and judicial dependencies without paraphrasing national text. A dependency is resolved only with evidence for identity, current version and applicability. This register is partial; it does not imply a complete citation graph.",
   "dependencies": [
@@ -46,7 +46,7 @@
       "to_source_id": "cz-decree-429-2010",
       "dependency_type": "mission-jurisdiction exception",
       "status": "pending_whole_portal_human_review",
-      "evidence": "Mission-jurisdiction exception and Decree 429/2010 require a current-text and applicability review; applicability to EU-family short-stay and residence routes is unresolved."
+      "evidence": "Act 326/1999 §§ 169g(3), 182(1)(e) and the official MFA page identify a mission-jurisdiction connection. The decree is accepted only as an official locator; current consolidated text and applicability to EU-family short-stay and residence routes remain unresolved."
     },
     {
       "from_source_id": "cz-mzv-visa-refusal-cs",
@@ -86,7 +86,31 @@
       "to_source_id": "cz-esbirka-1999-326",
       "dependency_type": "implementing/mission procedure",
       "status": "pending_whole_portal_human_review",
-      "evidence": "Current consolidated text, effective cutoff and applicability to EU-family routes are unresolved."
+      "evidence": "The decree locator is accepted, but current consolidated text, effective cutoff and applicability to EU-family routes remain unresolved."
+    },
+    {
+      "from_source_id": "cz-mzv-local-consular-competence",
+      "from_provision": "Page cites Act No. 326/1999, § 169g",
+      "to_source_id": "cz-esbirka-1999-326",
+      "dependency_type": "statutory basis for consular-locality guidance",
+      "status": "current_version_not_checked",
+      "evidence": "The official MFA page cites § 169g. This page review records the citation only; it does not recheck the Act version or determine application to short-stay or EU-family routes."
+    },
+    {
+      "from_source_id": "cz-mzv-local-consular-competence",
+      "from_provision": "Page cites Act No. 150/2017, § 4",
+      "to_source_id": "cz-esbirka-2017-150",
+      "dependency_type": "foreign-service and mission organization",
+      "status": "current_version_not_checked",
+      "evidence": "The official MFA page cites § 4. This page review records the citation only; the current Act version and full legal effect were not rechecked."
+    },
+    {
+      "from_source_id": "cz-mzv-local-consular-competence",
+      "from_provision": "Page cites Decree No. 429/2010 Coll.",
+      "to_source_id": "cz-decree-429-2010",
+      "dependency_type": "consular-locality exceptions",
+      "status": "pending_whole_portal_human_review",
+      "evidence": "The official MFA page cites the decree for long-term visa and residence locality guidance. The decree is accepted as an official locator only; its current text/cutoff and legal applicability remain unresolved."
     }
   ],
   "source_reviews": [
@@ -465,8 +489,14 @@
     {
       "source_id": "cz-decree-429-2010",
       "scan_status": "selective_dependency_review_recorded",
-      "reviewed_on": "2026-10-21",
-      "note": "Only the material dependency stated in the dependency list is recorded; this is not an exhaustive citation scan."
+      "reviewed_on": "2026-10-28",
+      "note": "The official e-Sbírka link and PSP metadata were rechecked; the decree is accepted as an instrument locator only. Current version/cutoff and EU-family route applicability remain open. Dependency scan is selective, not exhaustive."
+    },
+    {
+      "source_id": "cz-mzv-local-consular-competence",
+      "scan_status": "selective_dependency_review_recorded",
+      "reviewed_on": "2026-10-28",
+      "note": "The MFA page citations to Acts 326/1999 and 150/2017 and Decree 429/2010 are recorded. Currentness and legal applicability were not exhaustively checked; this is not a complete citation scan."
     }
   ]
 }

@@ -1,22 +1,46 @@
 # Consultation dashboard
 
-Use this full diagnostic board only when the user explicitly requests an audit, maintenance review, dashboard, or detailed verification report. Ordinary consultations use a concise answer and coverage note; a material source or module change may warrant a short plain-language status, not this full board. The examples do not change the underlying C27, source, or execution review duties.
+Append a fresh board like this to every substantive legal consultation. Use Full mode when the required review workflow was performed, including when assessed findings remain unresolved or coverage is partial. Use Limited mode when the workflow was deliberately narrowed or a material required review step was not performed; name what is missing and its effect. The examples do not change the underlying C27, source, or execution review duties.
 
-Use this as the visual pattern for a full consultation board. It is ordinary Markdown: status icons and structure help scanning, but do not imply custom colors, CSS, interactivity, or host verification. Keep the answer itself first. Avoid wide tables and code-like dumps; the small three-column metric row below is the only table in the board.
+Use this as the visual pattern for an expanded consultation board. It is ordinary Markdown: status icons and structure help scanning, but do not imply custom colors, CSS, interactivity, or host verification. Keep the answer itself first. Use headings, status cards, and short lists; avoid tables and code-like dumps. The ordinary board can be shorter, but must retain every material gap and its effect.
 
-## Full consultation review
+Formatting examples only; these are not a case assessment, execution record, legal finding, or evaluation result.
 
-# EU-family visa and residence review
+### Example: Limited consultation review
+
+## freemovement-law — Consultation Review
+
+**EU-family visa and residence review**
 
 *Application in Türkiye · intended residence in Spain · EU citizen moving with a spouse*
 
 > 🟠 **PARTIAL REVIEW** — The EU route and residence-card entry rule were assessed. Formal visa lodging, authority classification, and the processing-clock start remain unresolved.
 
+### Consultation mode: 🟠 Limited consultation review
+
+The national urgent-remedy procedure has not been reviewed. This limits the ability to recommend or exclude an urgent national remedy; the visa-processing and access reviews are reported separately.
+
+### Strategy review
+
+**Limited strategy review.** Appointment delay creates a preventive opportunity, while formal lodging and the clock start remain unconfirmed.
+
+- **Not triggered — Adverse decision or denial:** No written refusal or other formal adverse decision is recorded.
+- **Unknown — Urgent deadline or processing clock:** The formal lodging date has not been established.
+- **Triggered — Access or lodging problem:** The reported appointment delay may affect access to the application process.
+- **Triggered — Source-supported preventive step:** The accelerated-processing safeguard is relevant to the stated EU-family visa route.
+- **Not triggered — User requested strategy:** The request asks for the route and next steps, not a separate strategy review.
+
+**First step:** Preserve the appointment, submission, and authority-response records and ask for written confirmation of the lodging date and applicable processing route.
+**Purpose:** Establish the procedural position and the point from which any processing period runs.
+**Reassess if:** The authority confirms a different classification, refuses access, issues a decision, or leaves a properly lodged application without an adequate response.
+**Alternatives considered:** cooperation; targeted clarification; waiting or taking no extra action.
+**Missing:** The formal receipt and written classification have not been inspected. **Effect:** The clock start and any escalation route remain qualified.
+
 ### At a glance
 
-| **Issues reviewed** | **Supported / conditionally closed** | **Partial / open** |
-| :---: | :---: | :---: |
-| **6** | **3** | **3** |
+**Issues reviewed:** 6
+**Supported / conditionally closed:** 3
+**Partial / open:** 3
 
 **Recorded issue outcomes · 6 issues**
 
@@ -203,3 +227,22 @@ If the same outcome is only orally reported or its record cannot be inspected, l
 - **Invocation:** explicit only when established by a host signal or visible plugin-selection marker; otherwise `unknown`.
 - **Applicant guidance, issues, C27 checks, sources, and country modules:** not assessed or not recorded.
 - Do not invent zero counts, issue statuses, source totals, module use, or execution results.
+
+
+### Example excerpt: Full consultation review with unresolved facts
+
+This excerpt illustrates mode and partial findings. A complete board must also include every required strategy trigger, issue-specific C27 assessment, source and operation ledger, and module-use record as shown in the full layout above.
+
+## freemovement-law — Consultation Review
+
+> 🟠 **PARTIAL COVERAGE** — The required review workflow was performed. The lodging date and the authority’s internal classification remain unverified.
+
+### Consultation mode: 🟢 Full consultation review
+
+The review addressed the available evidence and relevant questions; unresolved findings are listed individually.
+
+### Strategy review: Full
+
+The authority’s position is unknown. Preserve the submission records and request written confirmation of the lodging date and applicable route. Reassess if a decision arrives or a deadline becomes apparent. Consider ordinary cooperation, targeted clarification, and waiting where proportionate.
+
+**Lodging date:** Partial — the exact receipt has not been inspected; the start of any processing clock remains uncertain.

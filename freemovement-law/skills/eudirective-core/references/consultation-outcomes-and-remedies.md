@@ -15,3 +15,10 @@ Apply the Article 18, 19 and 32 routes only when the proceeding is classified as
 The route selector and consultation receipt are structural checks. They validate declared proceeding types, source references and selected check IDs; they do not authenticate a decision notice or establish that a national remedy or deadline is legally available. If a required type, outcome record or link is missing, record the resulting scope or evidence gap and keep the conclusion partial.
 
 Primary legal text: [Regulation (EC) No 810/2009 (Visa Code), official EUR-Lex text](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A32009R0810).
+
+
+## Directive EU-family refusal and conditional interim screen
+
+A reported formal refusal in a typed Directive 2004/38 EU-family entry-visa proceeding has a separate refusal-review route. Recheck Directive scope, movement and family status, the actual ground and its provenance, reasons and notification, the relevant proof, dates, competent appeal authority, deadline, and interaction with the Visa Code. A report can justify conditional review without being treated as an inspected decision. Do not select the ordinary Article 32 remedy solely because a document says “Type C”; keep the ordinary Article 18/19/32 routes scoped to their typed ordinary short-stay application.
+
+For every in-scope adverse decision/outcome route, explicitly record the interim-protection screen in the consultation board: use not_applicable with the reason when no potentially irreversible, time-sensitive harm is reported; use unknown with the specific missing assessment when urgency was not established. Select the existing `remedies.interim_protection` C27 check only when the refusal route is in scope and such harm is reported. Urgency does not establish eligibility or guarantee relief. Identify a national court or remedy only after current official-source review, and keep any appeal, interim application, and physical document-return clocks separate. A deadline alone is not proof of urgency for interim relief. SOLVIT or an informal request does not suspend a formal appeal deadline by assumption.

@@ -2,8 +2,10 @@
 
 `scripts/consultation_route_gate.py` is a portable structural check for a
 runtime or host that can call a local plugin script before rendering or
-releasing an answer. For an explicit invocation it returns a full deterministic
-dashboard preview and a validation record bound to the receipt SHA-256. It
+releasing an answer. For a 0.9.0 or 0.10.0 substantive consultation it returns a
+deterministic Full or Limited board preview and a validation record bound to
+the receipt SHA-256. Board mode is independent of the declared coverage claim
+and assessment status. It
 returns a non-zero result when a route labelled `comprehensive` still has
 declared work open. The skills-only plugin has no ChatGPT host hook, so the
 script is not automatically invoked in hosted ChatGPT and cannot itself block
@@ -17,9 +19,14 @@ and conversation source-discovery methods; 0.4.0 adds issue records and a
 dashboard; strict 0.5.0 adds per-issue C27 assessment bindings, policy-derived
 source classes, attack-screen predicate traces, abstract revision comparison,
 and strict provenance requirements; strict 0.6.0 adds typed proceeding scopes
-and source-attributed outcome/post-issuance routing. Receipts 0.1.0–0.4.0
+and source-attributed outcome/post-issuance routing; strict 0.7.0 requires
+Full/Limited output mode and a case-specific strategy trigger screen; strict
+0.8.0 separates Full/Limited consultation mode from coverage and binds strategy
+triggers and limitations to current issue and evidence records. Receipts 0.1.0–0.4.0
 remain readable for historical replay but are not accepted by the strict
-controlled-release path. That command accepts 0.5.0 and 0.6.0. It records classification states, workflow
+controlled-release path. That command accepts 0.5.0–0.10.0. Version 0.8.0
+requires a fresh board for each substantive applicant-guidance or source-research
+response. It records classification states, workflow
 IDs, C27 check IDs/statuses, reason codes, and generated opaque references
 (`r_` followed by 12–32 lowercase hex characters). It also carries constrained
 relative paths and digests needed to run local validators. Keep actual
@@ -27,6 +34,11 @@ jurisdictions, proceeding facts, legal questions, case narratives, identities,
 dates, and document contents in the conversation, not in the receipt. The
 receipt can record that a classification is `recorded`, `unknown`, or
 `not_applicable` without copying its value.
+
+Use `references/consultation-receipt-migration.md` to migrate a 0.7.0 receipt.
+The migrator requires an explicit new consultation mode, refuses ambiguous
+issue/evidence links, and leaves the new core-finalisation operation open as
+`not_checked`.
 
 Free-text receipt fields such as missing/effect explanations, operation
 reasons and source-read notes can accidentally contain personal or identifying
@@ -52,7 +64,9 @@ text-field heuristic.
 - Requires explicit records for the applicant-guidance entry workflows: route
   classification, C23 guidance, C27 reconciliation, attack-angle screening,
   and requested output. Source-research routes also require the existing
-  research gate and requested output.
+  research gate and requested output. In 0.8.0 and 0.9.0 both in-scope request kinds
+  require a core `consultation_finalisation` record; this receipt operation is
+  model-declared unless a trusted runtime supplies observed execution evidence.
 - Validates each selected C27 check against the current atomic registry and
   applies C27's shared status, method, reason, and trace rules through
   `c27_case_state.py`; it does not substitute the unrelated generic C5
@@ -81,12 +95,12 @@ text-field heuristic.
   `source_missing` and `fact_missing` dispositions remain open for a
   comprehensive claim. This is additive: older 0.1 receipts without `issues`
   retain their prior validation behavior.
-- For strict 0.5.0 and 0.6.0, every C27 occurrence has an opaque assessment reference and
+- For strict 0.5.0–0.10.0, every C27 occurrence has an opaque assessment reference and
   is bound either to exactly one issue or to an explicitly shared proceeding
   set. Duplicate `(scope, check, issue)` occurrences are rejected even when
   they use different assessment references. Issue-specific checks cannot be
   borrowed from a separate issue in the same proceeding.
-- For strict 0.5.0 and 0.6.0, derives required C27 check IDs, source-owner IDs,
+- For strict 0.5.0–0.10.0, derives required C27 check IDs, source-owner IDs,
   source-class requirements, exclusions and attack-review topics from each
   declared issue's route/signal predicates using the existing routing matrix
   and the versioned `consultation-source-class-policy.json`. Conditional
@@ -98,7 +112,7 @@ text-field heuristic.
   validated 0.3.0 source preflight. Missing or open source work, unresolved
   attack topics, unlinked candidate issues, or missing routed checks block
   `comprehensive` and remain visible in the dashboard.
-- Every strict 0.5.0 and 0.6.0 attack-topic record repeats selector-derived route
+- Every strict 0.5.0–0.10.0 attack-topic record repeats selector-derived route
   triggers and records their states separately from adverse predicates. A
   route trigger selects review; it does not prove the adverse condition. For
   a mapped pathway, `adverse_predicate_states` must bind to the pathway's
@@ -171,23 +185,26 @@ text-field heuristic.
   artifact does not prove that a legal text was opened. A future host
   integration must validate its own trusted event before claiming independent
   source-read provenance.
-- Returns a full deterministic Markdown dashboard and a validation record only
+- Returns the deterministic Markdown board and a validation record only
   after route, source, C27, module, research, preflight, and dashboard checks
   finish. The board includes every declared source, check, issue, module, and
   operation; no compact rendering limit applies. If receipt validation fails,
   no successful dashboard result is emitted.
 - For an explicit local answer binding, `consultation_release_gate.py` requires
-  the exact full dashboard and its validation record at the end of the answer.
+  the exact validated board and its validation record at the end of the answer.
   It binds the receipt bytes, answer bytes, and validation-record digest, then
   rechecks those exact bytes before release. This is a local controller path,
   not a host release gate.
-- `consultation_release_gate.py controlled-release` is the strict one-call
-  path for 0.5.0 and 0.6.0 applicant-guidance or source-research artifacts. It requires a
-  validated full dashboard, rechecks receipt and answer bytes immediately
-  before output, and emits no answer bytes when validation fails. A partial
-  answer can pass with open work shown; an unsupported comprehensive claim is
-  withheld. The older `prepare`/`release` commands remain compatibility helpers
-  and do not qualify as the strict P0 path.
+- `consultation_release_gate.py controlled-release` is an opt-in local path
+  for 0.5.0–0.10.0 applicant-guidance or source-research artifacts. For 0.8.0 and 0.9.0
+  it requires the top-level consultation mode and issue-linked strategy in the
+  validated board. If the board is wholly
+  absent, it may append the canonical preview once in memory; if a board is
+  present but malformed or conflicting, release is blocked. It rechecks the
+  receipt and answer bytes immediately before output. A limited answer can
+  pass with missing items and effects shown; an unsupported comprehensive
+  claim is withheld. The older `prepare`/`release` commands remain
+  compatibility helpers.
 
 Run it locally with:
 
@@ -195,8 +212,7 @@ Run it locally with:
 python scripts/consultation_route_gate.py route-receipt.json
 ```
 
-For a strict one-call local release, place the answer and exact validated full
-dashboard in `answer.md`, then run:
+For a strict one-call local release, place the answer in `answer.md` and run:
 
 ```bash
 python scripts/consultation_release_gate.py controlled-release \
@@ -206,7 +222,7 @@ python scripts/consultation_release_gate.py controlled-release \
 An exit status of `3` rejects a `comprehensive` claim; `2` means the receipt or
 an artifact is invalid. The controlled command uses exit `2` and writes no
 answer to stdout when release is blocked. A valid partial route returns `0`,
-lists every open work item, and includes its full board and validation record.
+lists every open work item, and includes its Limited board and validation record.
 
 ## Assurance limit
 
@@ -219,7 +235,7 @@ required check selection for each declared issue/scope. It cannot determine
 whether the model omitted an issue, chose an incomplete signal set, or attached
 an accurate disposition.
 
-For 0.5.0 and 0.6.0 it derives declared source-owner and source-class coverage from the
+For 0.5.0–0.10.0 it derives declared source-owner and source-class coverage from the
 versioned policy and checks every topic named by the existing routing matrix.
 This does not prove that the policy or declared signal set includes every
 legally relevant source class or issue. The attack screen remains
@@ -247,3 +263,5 @@ through other channels. Genuine host release enforcement requires a supported
 host integration that calls the gate, fails closed, and binds the checked
 receipt to the exact answer it releases. No such host integration is
 established by this plugin package.
+
+Version 0.9.0 requires a specific reason, missing work, effect and relevant references for Limited consultation mode. A Full claim requires applicable required and triggered model-led workflow reviews to be completed with acceptable recorded evidence. Deterministic operations have their own execution statuses and may be unavailable. An unknown strategy trigger can be addressed in a Full conditional strategy; the legacy 0.8.0 replay rules are preserved. These checks concern declared evidence and cannot verify that ordinary ChatGPT executed the work.

@@ -1,6 +1,6 @@
 # Spain national source pack
 
-**Status (25 October 2026):** 54 official references are accepted within their reviewed scopes and mapped to 54 final records under `documents/`. Twenty-two local source artifacts are accepted: 15 BOE legal texts, three Ministry forms, three BOE technical/reuse texts, and the signed SEM 2/2025 instruction. No topic is accepted and the national review remains incomplete.
+**Status (29 October 2026):** 54 official references are accepted within their reviewed scopes and mapped to 54 final records under `documents/`. Twenty-three local source artifacts are accepted: 15 BOE legal texts, one authored family private-international-law summary of the Código Civil, three Ministry forms, three BOE technical/reuse texts, and the signed SEM 2/2025 instruction. No topic is accepted and the national review remains incomplete.
 
 - [Original source list](references/source-list.md)
 - [Expanded monitor source list](references/monitor-source-list-2026-10-18.md)

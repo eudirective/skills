@@ -65,3 +65,67 @@ Official links are sufficient for ordinary research when the publisher, instrume
 | `mt-55` | [Visa Code, Regulation (EC) No 810/2009, EUR-Lex consolidation dated 28 June 2024](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02009R0810-20240628) | Accepted within scope | Use the official EUR-Lex Visa Code consolidation dated 2024-06-28 within that cutoff. Check later amendments for a current question and distinguish Type C from Type D and EU-family facilitation. |
 
 The former local conversions are not accepted or retained as Malta source documents. Article 13 of the [Statute Law Revision Act, 2021 (Act XL of 2021)](https://legislation.mt/eli/slra/eng) restricts reproducing revised editions without Government permission and excludes scanned or electronic reproductions from its publication exception. Item-specific republication permission was not established for the captured guidance pages and forms. The [source acceptance register](source-acceptance.json) records the separate link, local-copy, topic, and country-review decisions.
+
+<!-- source-identity-inventory:start -->
+## Source identity crosswalk
+
+Canonical rows: **55**; provisional unique IDs: **55**; unresolved entries: **6**. This crosswalk preserves catalogue IDs, links external-reference and local-artifact representations to a source identity, and keeps acceptance status separate.
+
+| Existing entry ID | Canonical source identity | Resolution | Representations | Catalogued statuses | Status record IDs |
+|---|---|---|---|---|---|
+| `mt-01` | `mt:url:71f156333ac2447aa523` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `mt-02` | `mt:url:551647b965cc3f39b699` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `mt-03` | `mt:url:d895da6479915f7cebd5` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `mt-04` | `mt:url:bd1b56d1271b8f79ddfe` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `mt-05` | `mt:url:0f4fde256b304c2b5d6b` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `mt-06` | `mt:url:69196ef2c1ea8d5b3a24` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `mt-07` | `mt:url:ed9d07c8539e18d12d6e` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `mt-08` | `mt:url:76091f6b8a479850d278` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `mt-09` | `mt:url:4d1426fa33cd27d9be7f` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `mt-10` | `mt:url:a5b4fc9ae2d778f82ab6` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `mt-11` | `mt:url:a5ec13021d99ec58a940` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `mt-12` | `mt:url:44b481778b5cc87d2c6e` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `mt-13` | `mt:url:c38c445d7d0f4a8cd91b` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `mt-14` | `mt:url:c0f0da1e7510e2c6461f` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `mt-15` | `mt:url:7300f9845b0dc0032a7a` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `mt-16` | `mt:url:5ef810564b50cabab51b` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `mt-17` | `mt:url:d75370b6af1dbe886bae` | resolved | official_reference/unspecified/undated | pending | — |
+| `mt-18` | `mt:ambiguous:mt-18:520451ca74d4` | unresolved | official_reference/en/undated | accepted_external_reference | — |
+| `mt-19` | `mt:url:9c62032a89f43ef0b3fd` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `mt-20` | `mt:url:6e3fd86ce1822180bf62` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `mt-21` | `mt:url:f78a17b5c1c5fa450733` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `mt-22` | `mt:url:1e0130af279e1f7a9bf1` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `mt-23` | `mt:url:1cbe525912edcba623dc` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `mt-24` | `mt:url:6de364ee2e54d0904b7a` | resolved | official_reference/unspecified/undated | pending | — |
+| `mt-25` | `mt:ambiguous:mt-25:b21fdea51b31` | unresolved | official_reference/unspecified/undated | pending | — |
+| `mt-26` | `mt:url:101bf3a42bd94b268f27` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `mt-27` | `mt:url:72fb8afe109c87d2e2d0` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `mt-28` | `mt:url:63d981a3fafafb185890` | resolved | official_reference/unspecified/undated | pending | — |
+| `mt-29` | `mt:url:18a91d56161b02922d94` | resolved | official_reference/unspecified/undated | pending | — |
+| `mt-30` | `mt:url:b3c81073fbf227dd9555` | resolved | official_reference/unspecified/undated | pending | — |
+| `mt-31` | `mt:url:ac0cb81772abc355c3c8` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `mt-32` | `mt:url:030646812c67bccfc365` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `mt-33` | `mt:url:da8c00767cb295003e08` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `mt-34` | `mt:url:e615c5a0fa0b82eedb68` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `mt-35` | `mt:url:7b4929341e57d7c61de4` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `mt-36` | `mt:url:9b9cad8148266c545fb0` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `mt-37` | `mt:url:4bd1b42633cec2abfe22` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `mt-38` | `mt:url:dcb87426f0782383f306` | resolved | official_reference/unspecified/undated | pending | — |
+| `mt-39` | `mt:url:dd23318634c6e588f938` | resolved | official_reference/unspecified/undated | pending | — |
+| `mt-40` | `mt:url:48ac7f4edfb2d3a14502` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `mt-41` | `mt:ambiguous:mt-41:af254c1db4c7` | unresolved | official_reference/en/undated | accepted_external_reference | — |
+| `mt-42` | `mt:url:c781726383ac9da5f3c9` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `mt-43` | `mt:ambiguous:mt-43:c25d841f5eff` | unresolved | official_reference/unspecified/undated | not_relied_upon | — |
+| `mt-44` | `mt:url:a777eeb10749bd5c18db` | resolved | official_reference/unspecified/undated | pending | — |
+| `mt-45` | `mt:url:dd9decf2d0f50594a7bc` | resolved | official_reference/unspecified/undated | pending | — |
+| `mt-46` | `mt:url:85622e5fbe4a18c8ddcb` | resolved | official_reference/unspecified/undated | pending | — |
+| `mt-47` | `mt:ambiguous:mt-47:fb7a957de68a` | unresolved | official_reference/unspecified/undated | not_relied_upon | — |
+| `mt-48` | `mt:ambiguous:mt-48:605c9dc9276a` | unresolved | official_reference/unspecified/undated | not_relied_upon | — |
+| `mt-49` | `mt:url:d952a485791338e2763b` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `mt-50` | `mt:url:0a36a114d5c14d67c749` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `mt-51` | `mt:url:f8f5ff757b1077e23f23` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `mt-52` | `eu:celex:32025r1208` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `mt-53` | `eu:celex:62022cj0061` | resolved | official_reference/en/undated<br>official_reference/unspecified/undated | accepted_external_reference | — |
+| `mt-54` | `eu:celex:52025xc06217` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `mt-55` | `eu:celex:02009r0810` | resolved | official_reference/en/undated | accepted_external_reference | — |
+<!-- source-identity-inventory:end -->

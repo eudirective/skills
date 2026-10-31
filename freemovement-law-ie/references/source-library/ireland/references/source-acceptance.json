@@ -1,18 +1,18 @@
 {
   "schema_version": "1.0",
-  "review_date": "2026-10-24",
+  "review_date": "2026-10-29",
   "jurisdiction": "IE",
   "status": "partial_scoped_official_references_and_accepted_local_texts",
   "publisher_assessment": {
     "publisher": "Irish Statute Book (eISB), Immigration Service Delivery, Courts Service, Department of Foreign Affairs, Legal Aid Board, Ombudsman, Data Protection Commission, FOI service, and other named Irish public authorities.",
-    "decision": "All 51 candidate rows now have an accepted official-reference disposition within recorded scope. Eleven eISB legislative texts are accepted as local source documents. Other captured page conversions remain only in the Monitor local-only archive; 0 topics and whole-country completion remain accepted.",
-    "basis": "The candidate records were reconciled against official publisher links, recorded source identity evidence, the 26 hash-verified captures, the current ISD Treaty Rights and appeal guidance, the Legal Aid Board replacement leaflet, the Courts.ie HC140 direction, and the eISB/LRC version references. Currentness is recorded separately from source identity and local-copy status.",
-    "limitation": "Made/enacted laws are exact instruments, not consolidated texts. Current page guidance, annual indexes, search portals, checklists, office directories and court search tools have only their named narrow role. No accepted reference or local text establishes topic coverage or country completion."
+    "decision": "All 51 candidate rows have scoped official-reference dispositions. Eleven eISB legislative texts and eight independently authored current guidance/procedure summaries are accepted as local source documents. Captured page conversions remain in the Monitor local-only archive as provenance and are not copied into the repository. Topic coverage and whole-country completion remain open.",
+    "basis": "The candidate records were reconciled against official publisher links, recorded source identity evidence, the 26 hash-verified captures, the current ISD Treaty Rights and appeal guidance, the Legal Aid Board replacement leaflet, the Courts.ie HC140 direction, and the eISB/LRC version references. Currentness is recorded separately from source identity and local-copy status. Four selected official pages were reopened on 29 October 2026 and summarized as maintained Markdown source records. Four additional ISD guidance pages were reopened on 29 October 2026 and summarized. The Department short-stay appeals announcement could not be directly retrieved (HTTP 403), so its dated summary is limited to the rule corroborated by live ISD operational guidance.",
+    "limitation": "Made/enacted laws are exact instruments, not consolidated texts. Current page guidance, annual indexes, search portals, checklists, office directories and court search tools have only their named narrow role. The eight local guidance/procedure records are independent summaries, not reproductions or legal determinations; ie-25 and ie-27 have the specific currency/access limitations recorded in their entries. No accepted reference or local text establishes topic coverage or country completion."
   },
   "counts": {
     "candidate_records": 51,
     "accepted_external_references": 51,
-    "accepted_local_copies": 11,
+    "accepted_local_copies": 19,
     "remaining_candidate_records": 0,
     "accepted_topics": 0,
     "country_review_complete": false
@@ -474,17 +474,25 @@
       "url": "https://www.irishimmigration.ie/coming-to-join-family-in-ireland/joining-an-eea-or-swiss-national/",
       "publisher": "Immigration Service Delivery (ISD)",
       "language": "en",
-      "checked_on": "2026-10-24",
-      "version": "Current web page; page/date signals need capture in any future monitor.",
+      "checked_on": "2026-10-29",
+      "version": "Live ISD page inspected 2026-10-29; mutable service guidance.",
       "acceptance_scope": "Official ISD guidance for entry by non-EEA family members under Directive 2004/38/EC, including visa-required cases and the published checklist; it does not replace the legal instrument or cover every mission procedure.",
       "limitations": "External-reference acceptance confirms the official source and the stated scope only. A link is not a local copy, a consolidated current law, adequate topic coverage, or a completed country review.",
       "evidence": {
         "official_source_url": "https://www.irishimmigration.ie/coming-to-join-family-in-ireland/joining-an-eea-or-swiss-national/",
         "candidate_id": "ie-19",
-        "verified_content": "Official ISD page inspected; distinguishes family members relying on Directive 2004/38 and short-stay entry visa rules.",
-        "source_record_note": "Any saved conversion is preserved only in the Monitor local-only research archive; no pack-local candidate copy remains."
+        "verified_content": "Live ISD page reopened 29 October 2026; current guidance for Directive 2004/38 family members, visa/stay routes, eligibility checklist and document requirements.",
+        "source_record_note": "Accepted maintained independent summary at documents/guidance/ie-19.md; prior Monitor capture remains local-only provenance."
       },
-      "reviewed_on": "2026-10-24"
+      "reviewed_on": "2026-10-29",
+      "accepted_local_summary": {
+        "status": "accepted_project_authored_source_summary",
+        "path": "documents/guidance/ie-19.md",
+        "checked_on": "2026-10-29",
+        "language": "English",
+        "scope": "Distinct EEA/Swiss family route; entry visa distinctions, 90-day travel, Irish residence card for longer stays, fees and evidence categories.",
+        "limits": "Service guidance only; Directive, Irish implementation and individual route control."
+      }
     },
     {
       "source_id": "ie-20",
@@ -528,17 +536,25 @@
       "url": "https://www.irishimmigration.ie/coming-to-join-family-in-ireland/",
       "publisher": "Immigration Service Delivery (ISD)",
       "language": "en",
-      "checked_on": "2026-10-24",
-      "version": "Content changed for the 2026 International Protection Act and is a mutable service page.",
+      "checked_on": "2026-10-29",
+      "version": "Live ISD page inspected 2026-10-29; mutable service guidance.",
       "acceptance_scope": "Official ISD family-route selector; route navigation only and not substantive eligibility criteria.",
       "limitations": "External-reference acceptance confirms the official source and the stated scope only. A link is not a local copy, a consolidated current law, adequate topic coverage, or a completed country review.",
       "evidence": {
         "official_source_url": "https://www.irishimmigration.ie/coming-to-join-family-in-ireland/",
         "candidate_id": "ie-22",
-        "verified_content": "Official ISD route hub inspected; separates Irish, UK, EU/EEA/Swiss, refugee and non-EEA sponsor routes.",
-        "source_record_note": "Any saved conversion is preserved only in the Monitor local-only research archive; no pack-local candidate copy remains."
+        "verified_content": "Live ISD family route hub reopened 29 October 2026. Page says last updated 12 June 2026 and includes new International Protection Act 2026 route notice.",
+        "source_record_note": "Accepted maintained independent summary at documents/guidance/ie-22.md; prior Monitor capture remains local-only provenance."
       },
-      "reviewed_on": "2026-10-24"
+      "reviewed_on": "2026-10-29",
+      "accepted_local_summary": {
+        "status": "accepted_project_authored_source_summary",
+        "path": "documents/guidance/ie-22.md",
+        "checked_on": "2026-10-29",
+        "language": "English",
+        "scope": "Sponsor-based route selector separating Irish, UK, EEA/Swiss, non-EEA, protection-beneficiary and other pathways.",
+        "limits": "Navigation hub, not substantive eligibility rules; follow current route-specific policy and statute."
+      }
     },
     {
       "source_id": "ie-23",
@@ -564,17 +580,25 @@
       "url": "https://www.irishimmigration.ie/coming-to-join-family-in-ireland/joining-an-irish-national/join-family-visa/",
       "publisher": "Immigration Service Delivery (ISD)",
       "language": "en",
-      "checked_on": "2026-10-24",
-      "version": "Current page; linked policy and application routes can change independently.",
+      "checked_on": "2026-10-29",
+      "version": "Live ISD page inspected 2026-10-29; mutable service guidance.",
       "acceptance_scope": "Official ISD instructions for the long-stay join-family visa for an Irish-national sponsor; route-specific and subject to the linked policy and current checklist.",
       "limitations": "External-reference acceptance confirms the official source and the stated scope only. A link is not a local copy, a consolidated current law, adequate topic coverage, or a completed country review.",
       "evidence": {
         "official_source_url": "https://www.irishimmigration.ie/coming-to-join-family-in-ireland/joining-an-irish-national/join-family-visa/",
         "candidate_id": "ie-24",
-        "verified_content": "Official ISD page inspected; states long-stay visa requirements and explicitly excludes Directive 2004/38 applications from the general policy.",
-        "source_record_note": "Any saved conversion is preserved only in the Monitor local-only research archive; no pack-local candidate copy remains."
+        "verified_content": "Live ISD Irish-national join-family page reopened 29 October 2026; includes current processing-model transition and special Critical Skills stream notice.",
+        "source_record_note": "Accepted maintained independent summary at documents/guidance/ie-24.md; prior Monitor capture remains local-only provenance."
       },
-      "reviewed_on": "2026-10-24"
+      "reviewed_on": "2026-10-29",
+      "accepted_local_summary": {
+        "status": "accepted_project_authored_source_summary",
+        "path": "documents/guidance/ie-24.md",
+        "checked_on": "2026-10-29",
+        "language": "English",
+        "scope": "Long-stay visa route for Irish-national sponsor, visa-required distinction, exclusions from other schemes, AVATS route and policy links.",
+        "limits": "Route-specific guidance; policy, processing arrangements, fees and document list may change; no eligibility decision."
+      }
     },
     {
       "source_id": "ie-25",
@@ -583,16 +607,25 @@
       "publisher": "Immigration Service Delivery (ISD)",
       "language": "en",
       "checked_on": "2026-10-24",
-      "version": "Page contains dated, temporary nationality and document notices; volatile.",
-      "acceptance_scope": "Official ISD visa-required nationality list; dynamic and subject to temporary changes. Recheck before travel or application.",
+      "version": "Live ISD page inspected 2026-10-29; page states last updated 2025-03-14 and retains a May 2018 Libya notice.",
+      "acceptance_scope": "Official ISD visa-required nationality rule and specified exemptions; temporary refugee travel-document notice; nationality schedule must be checked separately.",
       "limitations": "External-reference acceptance confirms the official source and the stated scope only. A link is not a local copy, a consolidated current law, adequate topic coverage, or a completed country review.",
       "evidence": {
         "official_source_url": "https://www.irishimmigration.ie/visa-non-visa-required-nationalities/",
         "candidate_id": "ie-25",
-        "verified_content": "Official ISD page inspected; includes Article 10 family-member residence-card visa exception.",
-        "source_record_note": "Any saved conversion is preserved only in the Monitor local-only research archive; no pack-local candidate copy remains."
+        "verified_content": "Live page reopened 2026-10-29. It sets nationality/issuing-country basis, Article 10 card exemption, and temporary refugee document notice; page footer says last updated 2025-03-14. Historical Libya notice remains on page.",
+        "source_record_note": "Accepted maintained independent summary at documents/guidance/ie-25.md; page conversions remain in Monitor local-only provenance.",
+        "limitations": "Page currency concerns: its 12-month suspension notice is stale or requires current-status confirmation; Libya notice dates to May 2018. No individual visa determination."
       },
-      "reviewed_on": "2026-10-24"
+      "reviewed_on": "2026-10-29",
+      "accepted_local_summary": {
+        "status": "accepted_project_authored_source_summary",
+        "path": "documents/guidance/ie-25.md",
+        "checked_on": "2026-10-29",
+        "language": "English",
+        "scope": "Nationality/issuing-document rule and specified exemptions; refugee travel-document notice; historical notices called out.",
+        "limits": "Mutable page reports last updated 14 March 2025; confirm temporary policy and nationality schedule; May 2018 Libya notice is not treated as current."
+      }
     },
     {
       "source_id": "ie-26",
@@ -601,16 +634,25 @@
       "publisher": "Immigration Service Delivery (ISD)",
       "language": "en",
       "checked_on": "2026-10-24",
-      "version": "From 1 June 2026 most short-stay C visa refusals are not appealable; Directive categories remain exceptions.",
-      "acceptance_scope": "Official ISD visa-refusal appeal instructions. The page states that most short-stay refusal appeals ended 1 June 2026 but retains appeal routes for EU Free Movement Directive cases; follow the individual refusal letter and current page.",
+      "version": "Live ISD page inspected 2026-10-29; current operational appeal guidance.",
+      "acceptance_scope": "Official administrative process for appealable visa refusals, including 2026 short-stay change and stated Free Movement Directive exception.",
       "limitations": "External-reference acceptance confirms the official source and the stated scope only. A link is not a local copy, a consolidated current law, adequate topic coverage, or a completed country review.",
       "evidence": {
         "official_source_url": "https://www.irishimmigration.ie/appeal-a-negative-decision/",
         "candidate_id": "ie-26",
-        "verified_content": "Official ISD page inspected; sets deadlines and preserves short-stay appeals for EU Free Movement Directive family categories.",
-        "source_record_note": "Any saved conversion is preserved only in the Monitor local-only research archive; no pack-local candidate copy remains."
+        "verified_content": "Live ISD appeal page reopened 2026-10-29. It states 1 June 2026 short-stay change, specified Directive 2004/38 categories, two-month deadline, no fee, original-document and postal rules.",
+        "source_record_note": "Accepted maintained independent summary at documents/guidance/ie-26.md; page conversions remain in Monitor local-only provenance.",
+        "limitations": "Refusal letter controls eligibility; administrative appeal process only, not judicial review or all legal remedies."
       },
-      "reviewed_on": "2026-10-24"
+      "reviewed_on": "2026-10-29",
+      "accepted_local_summary": {
+        "status": "accepted_project_authored_source_summary",
+        "path": "documents/guidance/ie-26.md",
+        "checked_on": "2026-10-29",
+        "language": "English",
+        "scope": "Eligibility warning and scope; two-month deadline; no fee; postal/original-document requirements.",
+        "limits": "Refusal letter controls; check live instructions; does not describe all remedies."
+      }
     },
     {
       "source_id": "ie-27",
@@ -619,16 +661,25 @@
       "publisher": "Department of Justice, Home Affairs and Migration",
       "language": "en",
       "checked_on": "2026-10-21",
-      "version": "Published 29 May 2026 and updated 3 June 2026; change effective 1 June 2026.",
-      "acceptance_scope": "Official Department announcement describing the 2026 change to short-stay visa appeals; historical explanatory announcement only. The current ISD appeal page controls current public instructions.",
+      "version": "Department announcement identified; direct page returned HTTP 403 on 2026-10-29. Current rule cross-checked against live ISD guidance.",
+      "acceptance_scope": "Department announcement of 2026 removal of certain short-stay refusal appeals, cross-checked against ISD operational guidance.",
       "limitations": "External-reference acceptance confirms the official source and the stated scope only. A link is not a local copy, a consolidated current law, adequate topic coverage, or a completed country review.",
       "evidence": {
         "official_source_url": "https://www.gov.ie/en/department-of-justice-home-affairs-and-migration/news/removal-of-appeals-for-certain-short-stay-visa-refusals/",
         "candidate_id": "ie-27",
-        "verified_content": "Official Department announcement inspected; explains the 2026 appeal change and Directive exception.",
-        "source_record_note": "Any saved conversion is preserved only in the Monitor local-only research archive; no pack-local candidate copy remains."
+        "verified_content": "gov.ie announcement direct retrieval returned 403. Live ISD appeal page reopened 2026-10-29 and confirms 1 June 2026 change and exceptions for listed Directive 2004/38 short-stay categories.",
+        "source_record_note": "Accepted maintained independent summary at documents/guidance/ie-27.md; page conversions remain in Monitor local-only provenance.",
+        "limitations": "The Department announcement itself was inaccessible during review; the local record summarizes only the scope confirmed by current ISD guidance."
       },
-      "reviewed_on": "2026-10-24"
+      "reviewed_on": "2026-10-29",
+      "accepted_local_summary": {
+        "status": "accepted_project_authored_source_summary",
+        "path": "documents/guidance/ie-27.md",
+        "checked_on": "2026-10-29",
+        "language": "English",
+        "scope": "Narrow account of the 2026 change and exceptions as confirmed by ISD.",
+        "limits": "Announcement direct page inaccessible (HTTP 403); verify individual appeal rights from refusal letter and live ISD page."
+      }
     },
     {
       "source_id": "ie-28",
@@ -637,16 +688,25 @@
       "publisher": "Immigration Service Delivery (ISD)",
       "language": "en",
       "checked_on": "2026-10-24",
-      "version": "Dynamic application guidance and external AVATS service.",
-      "acceptance_scope": "Official ISD public instructions for entering information in AVATS. Workflow guidance only; do not automate submissions or store applicant data.",
+      "version": "Live ISD AVATS instructions inspected 2026-10-29; mutable procedural guidance.",
+      "acceptance_scope": "Official instructions for completing AVATS visa/preclearance details and generating application form; route-specific requirements remain separate.",
       "limitations": "External-reference acceptance confirms the official source and the stated scope only. A link is not a local copy, a consolidated current law, adequate topic coverage, or a completed country review.",
       "evidence": {
         "official_source_url": "https://www.irishimmigration.ie/coming-to-visit-ireland/giving-your-details-on-avats-for-a-visa-preclearance-application/",
         "candidate_id": "ie-28",
-        "verified_content": "Official instructions inspected; say AVATS requires acceptance of terms/privacy notice and collects applicant and family details.",
-        "source_record_note": "Any saved conversion is preserved only in the Monitor local-only research archive; no pack-local candidate copy remains."
+        "verified_content": "Live AVATS guide reopened 2026-10-29; checked nationality routing, C/D definitions and exceptions, data entry, false-information warning and output/submission steps.",
+        "source_record_note": "Accepted maintained independent summary at documents/guidance/ie-28.md; page conversions remain in Monitor local-only provenance.",
+        "limitations": "English-only system and route/mission-specific requirements may change; no decision on correct route or eligibility."
       },
-      "reviewed_on": "2026-10-24"
+      "reviewed_on": "2026-10-29",
+      "accepted_local_summary": {
+        "status": "accepted_project_authored_source_summary",
+        "path": "documents/guidance/ie-28.md",
+        "checked_on": "2026-10-29",
+        "language": "English",
+        "scope": "AVATS workflow; nationality and travel reason category selection; C/D rules including Free Movement exception; form completion and warnings.",
+        "limits": "Mutable instructions, route- and mission-specific documents; not eligibility determination."
+      }
     },
     {
       "source_id": "ie-29",
@@ -1048,18 +1108,26 @@
       "url": "https://www.courts.ie/practice-directions/full-practice-direction?url=asylum--immigration-and-citizenship-list-2026",
       "publisher": "Courts Service",
       "language": "en",
-      "checked_on": "2026-10-21",
-      "version": "HC140 effective 2026-06-03; checked 2026-10-21; the direction revokes HC81.",
+      "checked_on": "2026-10-29",
+      "version": "HC140 effective 2026-06-03; inspected 2026-10-29.",
       "acceptance_scope": "Official High Court Practice Direction HC140, effective 3 June 2026, applying to specified asylum, immigration, freedom-of-movement, citizenship and related EU-law proceedings and revoking HC81.",
       "limitations": "The direction governs the stated High Court list and procedure; it is not a general statutory source or an exhaustive account of available remedies.",
       "evidence": {
         "official_source_url": "https://www.courts.ie/practice-directions/full-practice-direction?url=asylum--immigration-and-citizenship-list-2026",
         "candidate_id": "ie-48",
-        "verified_content": "Official Courts.ie practice direction inspected; applies to immigration, freedom-of-movement and related EU-law cases.",
-        "source_record_note": "Any saved conversion is preserved only in the Monitor local-only research archive; no pack-local candidate copy remains.",
+        "verified_content": "Official Courts Service practice direction HC140 effective 3 June 2026; page reopened 29 October. Confirms scope, revocation of HC81 and procedural requirements for named High Court list.",
+        "source_record_note": "Accepted maintained independent summary at documents/guidance/ie-48.md; prior Monitor capture remains local-only provenance.",
         "limitations": "The direction governs the stated High Court list and procedure; it is not a general statutory source or an exhaustive account of available remedies."
       },
-      "reviewed_on": "2026-10-24"
+      "reviewed_on": "2026-10-29",
+      "accepted_local_summary": {
+        "status": "accepted_project_authored_source_summary",
+        "path": "documents/guidance/ie-48.md",
+        "checked_on": "2026-10-29",
+        "language": "English",
+        "scope": "Regional High Court procedural summary; key duties, pleading/evidence, leave and service steps.",
+        "limits": "Only the named High Court list and procedure; not substantive immigration law or exhaustive remedies."
+      }
     },
     {
       "source_id": "ie-49",
@@ -1218,6 +1286,460 @@
       "reason": "Accepted gov.ie page was last updated 11 April 2025 and states 12 months, conflicting with current ISD guidance of up to six months. Retain only as a dated historical page; do not use the estimate as current."
     }
   ],
-  "completion_note": "All 51 source-candidate rows have a scoped external-reference acceptance; 11 eISB texts are accepted local copies. Topic coverage remains 0 and the national review remains incomplete. Link acceptance, source identity, exact local text, currentness, topic coverage, retrieval sustainability and country completion remain distinct.",
-  "count_note": "accepted_local_copies counts the 11 reviewed local legislative text files. accepted_external_references separately counts official link references (including sources with an accepted local copy). Neither count establishes topic coverage or country completion."
+  "completion_note": "All 51 source-candidate rows have scoped external-reference acceptance; 11 eISB texts and 8 maintained guidance/procedure summaries are accepted local source documents. Topic coverage remains 0 and national review remains incomplete. Link acceptance, source identity, local document scope, currentness, topic coverage, retrieval sustainability and country completion remain distinct.",
+  "count_note": "accepted_local_copies counts 19 reviewed local source documents: 11 legislative texts and 8 maintained guidance/procedure summaries. accepted_external_references separately counts official link references, including sources with accepted local documents. Neither count establishes topic coverage or country completion.",
+  "identity_links": {
+    "ie-01": {
+      "source_identity_id": "ie:url:f87fdeb46557352633c1",
+      "representation_ids": [
+        "ie:url:f87fdeb46557352633c1#url:en:32767a838422",
+        "ie:url:f87fdeb46557352633c1#url:en:50a925316d50"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-02": {
+      "source_identity_id": "ie:url:acbcb4d0320bcc26b26e",
+      "representation_ids": [
+        "ie:url:acbcb4d0320bcc26b26e#url:en:4fcaada29382",
+        "ie:url:acbcb4d0320bcc26b26e#url:en:7ca935334239",
+        "ie:url:acbcb4d0320bcc26b26e#url:ga:9be43411892f",
+        "ie:url:acbcb4d0320bcc26b26e#url:ga:9e6ff91e6633"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-03": {
+      "source_identity_id": "ie:url:44d59013e0ccfabe8a38",
+      "representation_ids": [
+        "ie:url:44d59013e0ccfabe8a38#url:en:cabf75064b80",
+        "ie:url:44d59013e0ccfabe8a38#url:ga:589bc49da262"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-04": {
+      "source_identity_id": "ie:url:50357faa82a07e6700d3",
+      "representation_ids": [
+        "ie:url:50357faa82a07e6700d3#url:en:368578b1ebb2",
+        "ie:url:50357faa82a07e6700d3#url:en:fd71271bbc33",
+        "ie:url:50357faa82a07e6700d3#url:ga:667ee1318770",
+        "ie:url:50357faa82a07e6700d3#url:ga:77396fdd8b39"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-05": {
+      "source_identity_id": "ie:url:3165da0264852d11441c",
+      "representation_ids": [
+        "ie:url:3165da0264852d11441c#url:en:26dec91bb8c9",
+        "ie:url:3165da0264852d11441c#url:en:7b061f380c1d",
+        "ie:url:3165da0264852d11441c#url:ga:0925028db35e",
+        "ie:url:3165da0264852d11441c#url:ga:295f0edd9be5"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-06": {
+      "source_identity_id": "ie:url:efd61c834c621af4f683",
+      "representation_ids": [
+        "ie:url:efd61c834c621af4f683#url:en:1a8262388961",
+        "ie:url:efd61c834c621af4f683#url:en:31b156568f4c",
+        "ie:url:efd61c834c621af4f683#url:ga:2a2cc68b8197",
+        "ie:url:efd61c834c621af4f683#url:ga:514061411997"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-07": {
+      "source_identity_id": "ie:url:35fcad4909851c282d22",
+      "representation_ids": [
+        "ie:url:35fcad4909851c282d22#url:en:2bbafadbe68f",
+        "ie:url:35fcad4909851c282d22#url:en:de0ef35e9b77",
+        "ie:url:35fcad4909851c282d22#url:ga:0cdd16c34ac2",
+        "ie:url:35fcad4909851c282d22#url:ga:2ba61d2c28ec"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-08": {
+      "source_identity_id": "ie:url:76864f9e26449db5190a",
+      "representation_ids": [
+        "ie:url:76864f9e26449db5190a#local:en:5e284e1e362c",
+        "ie:url:76864f9e26449db5190a#local:ga:5e284e1e362c",
+        "ie:url:76864f9e26449db5190a#url:en:30f69b72fe8a",
+        "ie:url:76864f9e26449db5190a#url:en:6f60e456489c",
+        "ie:url:76864f9e26449db5190a#url:ga:817b6a27cafe",
+        "ie:url:76864f9e26449db5190a#url:ga:b0426c78274c"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-09": {
+      "source_identity_id": "ie:url:57d5828b1c42cd9c7ba5",
+      "representation_ids": [
+        "ie:url:57d5828b1c42cd9c7ba5#local:en:ecdccf61af9f",
+        "ie:url:57d5828b1c42cd9c7ba5#local:ga:ecdccf61af9f",
+        "ie:url:57d5828b1c42cd9c7ba5#url:en:9346154d0e83",
+        "ie:url:57d5828b1c42cd9c7ba5#url:en:c3582e4127fb",
+        "ie:url:57d5828b1c42cd9c7ba5#url:ga:6c602fd7d52c",
+        "ie:url:57d5828b1c42cd9c7ba5#url:ga:e5677558af65"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-10": {
+      "source_identity_id": "ie:url:b838ea9df610d5dc6ca8",
+      "representation_ids": [
+        "ie:url:b838ea9df610d5dc6ca8#local:en:0c42a36b4a72",
+        "ie:url:b838ea9df610d5dc6ca8#local:ga:0c42a36b4a72",
+        "ie:url:b838ea9df610d5dc6ca8#url:en:0df0528f9177",
+        "ie:url:b838ea9df610d5dc6ca8#url:en:1d55742cde16",
+        "ie:url:b838ea9df610d5dc6ca8#url:ga:2525c7ed1d25",
+        "ie:url:b838ea9df610d5dc6ca8#url:ga:36f16e7c382b"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-11": {
+      "source_identity_id": "ie:url:a340a97c04f48ee11dee",
+      "representation_ids": [
+        "ie:url:a340a97c04f48ee11dee#local:en:4543882a3628",
+        "ie:url:a340a97c04f48ee11dee#local:ga:4543882a3628",
+        "ie:url:a340a97c04f48ee11dee#url:en:7c0fb2693aac",
+        "ie:url:a340a97c04f48ee11dee#url:ga:97ea4bb64da3"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-12": {
+      "source_identity_id": "ie:url:56e3ad33e3e925144906",
+      "representation_ids": [
+        "ie:url:56e3ad33e3e925144906#local:en:f8b780f2994e",
+        "ie:url:56e3ad33e3e925144906#local:ga:f8b780f2994e",
+        "ie:url:56e3ad33e3e925144906#url:en:39a8d0291e6a",
+        "ie:url:56e3ad33e3e925144906#url:ga:7b12c257239a"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-13": {
+      "source_identity_id": "ie:url:c340db7abf0a925b8fc2",
+      "representation_ids": [
+        "ie:url:c340db7abf0a925b8fc2#local:en:0d02731632a8",
+        "ie:url:c340db7abf0a925b8fc2#local:ga:0d02731632a8",
+        "ie:url:c340db7abf0a925b8fc2#url:en:97b24054d02a",
+        "ie:url:c340db7abf0a925b8fc2#url:en:f121418c4b2c",
+        "ie:url:c340db7abf0a925b8fc2#url:ga:92b14d6ab700",
+        "ie:url:c340db7abf0a925b8fc2#url:ga:96222ff0b118"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-14": {
+      "source_identity_id": "ie:url:719542510a88d47bf0fa",
+      "representation_ids": [
+        "ie:url:719542510a88d47bf0fa#local:en:eb76f71b2fae",
+        "ie:url:719542510a88d47bf0fa#local:ga:eb76f71b2fae",
+        "ie:url:719542510a88d47bf0fa#url:en:62659ef45955",
+        "ie:url:719542510a88d47bf0fa#url:en:8bd573595ef2",
+        "ie:url:719542510a88d47bf0fa#url:ga:0a1b8ed3d0a5",
+        "ie:url:719542510a88d47bf0fa#url:ga:79814f9fda51"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-15": {
+      "source_identity_id": "ie:url:26fdaca7f22890b04c75",
+      "representation_ids": [
+        "ie:url:26fdaca7f22890b04c75#local:en:d603e3724484",
+        "ie:url:26fdaca7f22890b04c75#local:ga:d603e3724484",
+        "ie:url:26fdaca7f22890b04c75#url:en:16f9583665e3",
+        "ie:url:26fdaca7f22890b04c75#url:en:929afaa6bdbc",
+        "ie:url:26fdaca7f22890b04c75#url:ga:3e50b5c268bf",
+        "ie:url:26fdaca7f22890b04c75#url:ga:7551fff49485"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-16": {
+      "source_identity_id": "ie:url:877a0921d70baa1f983d",
+      "representation_ids": [
+        "ie:url:877a0921d70baa1f983d#local:en:bf57182300c9",
+        "ie:url:877a0921d70baa1f983d#local:ga:bf57182300c9",
+        "ie:url:877a0921d70baa1f983d#url:en:3bc0bb60806d",
+        "ie:url:877a0921d70baa1f983d#url:ga:2d8f30128eec"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-17": {
+      "source_identity_id": "ie:url:195ec21943c5d9946090",
+      "representation_ids": [
+        "ie:url:195ec21943c5d9946090#url:en:42b0532586c9",
+        "ie:url:195ec21943c5d9946090#url:en:49370b3fda76"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-18": {
+      "source_identity_id": "ie:url:eeea4c9aa9e05f14afff",
+      "representation_ids": [
+        "ie:url:eeea4c9aa9e05f14afff#url:en:085da8a7ce77",
+        "ie:url:eeea4c9aa9e05f14afff#url:en:1c957a634a53"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-19": {
+      "source_identity_id": "ie:url:e28d5306d32ed1526bb1",
+      "representation_ids": [
+        "ie:url:e28d5306d32ed1526bb1#local:en:ce5f1b5245a3",
+        "ie:url:e28d5306d32ed1526bb1#url:en:3c64b021cbc0",
+        "ie:url:e28d5306d32ed1526bb1#url:en:c790fa1ea20b"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-20": {
+      "source_identity_id": "ie:url:e08bbaf3701145731ba4",
+      "representation_ids": [
+        "ie:url:e08bbaf3701145731ba4#url:en:7d17e9c2b262",
+        "ie:url:e08bbaf3701145731ba4#url:en:ecf694ba56ac"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-21": {
+      "source_identity_id": "ie:url:80d7d04b6121bb0698f6",
+      "representation_ids": [
+        "ie:url:80d7d04b6121bb0698f6#url:en:86219273b70f",
+        "ie:url:80d7d04b6121bb0698f6#url:en:b5c2554c5e15"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-22": {
+      "source_identity_id": "ie:url:2bfc8ec59cf28b878ca2",
+      "representation_ids": [
+        "ie:url:2bfc8ec59cf28b878ca2#local:en:a97785992314",
+        "ie:url:2bfc8ec59cf28b878ca2#url:en:04b0549bf921",
+        "ie:url:2bfc8ec59cf28b878ca2#url:en:79f3508799b2"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-23": {
+      "source_identity_id": "ie:url:e67340085bba4a3c244b",
+      "representation_ids": [
+        "ie:url:e67340085bba4a3c244b#url:en:a7e03a507808",
+        "ie:url:e67340085bba4a3c244b#url:en:b8901a38095f"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-24": {
+      "source_identity_id": "ie:url:3cdb1076b4b62ca819ad",
+      "representation_ids": [
+        "ie:url:3cdb1076b4b62ca819ad#local:en:81d9b4174265",
+        "ie:url:3cdb1076b4b62ca819ad#url:en:09159869136e",
+        "ie:url:3cdb1076b4b62ca819ad#url:en:69e80a992bd2"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-25": {
+      "source_identity_id": "ie:url:1c92f2ec62972091fe62",
+      "representation_ids": [
+        "ie:url:1c92f2ec62972091fe62#local:en:12c317cfb56d",
+        "ie:url:1c92f2ec62972091fe62#url:en:286bf949d448",
+        "ie:url:1c92f2ec62972091fe62#url:en:9cd0a3e8923b"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-26": {
+      "source_identity_id": "ie:url:a25be1d119e249ee0a6d",
+      "representation_ids": [
+        "ie:url:a25be1d119e249ee0a6d#local:en:11a340e039bc",
+        "ie:url:a25be1d119e249ee0a6d#url:en:8637ff2b3d6b",
+        "ie:url:a25be1d119e249ee0a6d#url:en:e3dc1725bbe4"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-27": {
+      "source_identity_id": "ie:url:7e2606d5183be9c4e90a",
+      "representation_ids": [
+        "ie:url:7e2606d5183be9c4e90a#local:en:90ab88c6013f",
+        "ie:url:7e2606d5183be9c4e90a#url:en:03db4a4762a9",
+        "ie:url:7e2606d5183be9c4e90a#url:en:cab007cb6b2e"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-28": {
+      "source_identity_id": "ie:url:1ad75a55952e77c58eaa",
+      "representation_ids": [
+        "ie:url:1ad75a55952e77c58eaa#local:en:0bb24bb79605",
+        "ie:url:1ad75a55952e77c58eaa#url:en:bbd192563002",
+        "ie:url:1ad75a55952e77c58eaa#url:en:d25af3f00a56"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-29": {
+      "source_identity_id": "ie:url:a1afc251e2560f332457",
+      "representation_ids": [
+        "ie:url:a1afc251e2560f332457#url:en:94a9b67dcbf9",
+        "ie:url:a1afc251e2560f332457#url:en:fdc0136269a8"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-30": {
+      "source_identity_id": "ie:url:842a50720625c74cbf4e",
+      "representation_ids": [
+        "ie:url:842a50720625c74cbf4e#url:en:bc0209435e2a",
+        "ie:url:842a50720625c74cbf4e#url:en:e5aa7e10d338"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-31": {
+      "source_identity_id": "ie:url:018e7eea784fa382ed8f",
+      "representation_ids": [
+        "ie:url:018e7eea784fa382ed8f#url:en:05a4a1c81ed1"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-32": {
+      "source_identity_id": "ie:url:7cb5b5da446f644cb1dd",
+      "representation_ids": [
+        "ie:url:7cb5b5da446f644cb1dd#url:en:4ad8e242862d",
+        "ie:url:7cb5b5da446f644cb1dd#url:en:ba1d7ee06e48"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-33": {
+      "source_identity_id": "ie:url:ca2e0f7234fb39968b13",
+      "representation_ids": [
+        "ie:url:ca2e0f7234fb39968b13#url:en:7d50c3a1b6ae",
+        "ie:url:ca2e0f7234fb39968b13#url:en:b49690fd8ab1"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-34": {
+      "source_identity_id": "ie:url:548c6bd1067acc0bd464",
+      "representation_ids": [
+        "ie:url:548c6bd1067acc0bd464#url:en:0e7171c64fe9",
+        "ie:url:548c6bd1067acc0bd464#url:en:731fe9d99864"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-35": {
+      "source_identity_id": "ie:url:1373bc3813f9881e274d",
+      "representation_ids": [
+        "ie:url:1373bc3813f9881e274d#url:en:6a73cca3b63a",
+        "ie:url:1373bc3813f9881e274d#url:en:ad6e22f30775"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-36": {
+      "source_identity_id": "ie:url:e65edca5ba6862a1a46a",
+      "representation_ids": [
+        "ie:url:e65edca5ba6862a1a46a#local:en:01572f357ed6",
+        "ie:url:e65edca5ba6862a1a46a#local:ga:01572f357ed6",
+        "ie:url:e65edca5ba6862a1a46a#url:en:eb6ac5a902b5",
+        "ie:url:e65edca5ba6862a1a46a#url:ga:299b56940a72"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-37": {
+      "source_identity_id": "ie:url:717d76f6752979abcebf",
+      "representation_ids": [
+        "ie:url:717d76f6752979abcebf#url:en:2340f5408c63"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-38": {
+      "source_identity_id": "ie:url:773e2f1bd38d88a35301",
+      "representation_ids": [
+        "ie:url:773e2f1bd38d88a35301#url:en:8977a2fe004b"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-39": {
+      "source_identity_id": "ie:url:8a5eb8d13a3b262f7e08",
+      "representation_ids": [
+        "ie:url:8a5eb8d13a3b262f7e08#url:en:7a0849dd9636"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-40": {
+      "source_identity_id": "ie:url:397b8d71fdfbb75f4634",
+      "representation_ids": [
+        "ie:url:397b8d71fdfbb75f4634#url:en:0464d1fb9c8e"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-41": {
+      "source_identity_id": "ie:url:4f60629dab5d14a82acb",
+      "representation_ids": [
+        "ie:url:4f60629dab5d14a82acb#local:en:1adb7632e3f3",
+        "ie:url:4f60629dab5d14a82acb#local:ga:1adb7632e3f3",
+        "ie:url:4f60629dab5d14a82acb#url:en:8535197347b8",
+        "ie:url:4f60629dab5d14a82acb#url:ga:7e88944e2519"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-42": {
+      "source_identity_id": "ie:url:48e9f3942092d67627da",
+      "representation_ids": [
+        "ie:url:48e9f3942092d67627da#url:en:43b9651c3f49"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-43": {
+      "source_identity_id": "ie:url:2c202cef714612cf8403",
+      "representation_ids": [
+        "ie:url:2c202cef714612cf8403#url:en:cb7b850a2196"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-44": {
+      "source_identity_id": "ie:url:d5586b0ee0eee191559c",
+      "representation_ids": [
+        "ie:url:d5586b0ee0eee191559c#url:en:8061ebbe4078"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-45": {
+      "source_identity_id": "ie:url:781782cb0e746aa7c036",
+      "representation_ids": [
+        "ie:url:781782cb0e746aa7c036#url:en:13faa48aec3b",
+        "ie:url:781782cb0e746aa7c036#url:en:b1ea8cbed6e1"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-46": {
+      "source_identity_id": "ie:url:7d06aef1bf7b3935b281",
+      "representation_ids": [
+        "ie:url:7d06aef1bf7b3935b281#url:en:0b633789260e"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-47": {
+      "source_identity_id": "ie:url:82bcfa5a56d1125c42b1",
+      "representation_ids": [
+        "ie:url:82bcfa5a56d1125c42b1#url:en:6c669fca77e6",
+        "ie:url:82bcfa5a56d1125c42b1#url:en:9e6804a85204"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-48": {
+      "source_identity_id": "ie:url:c581f98c7fc67af44fef",
+      "representation_ids": [
+        "ie:url:c581f98c7fc67af44fef#local:en:853b547c6d34",
+        "ie:url:c581f98c7fc67af44fef#url:en:6f01900b72d7",
+        "ie:url:c581f98c7fc67af44fef#url:en:e243a6cbe4c6"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-49": {
+      "source_identity_id": "ie:url:ffce52219c6781a6f99e",
+      "representation_ids": [
+        "ie:url:ffce52219c6781a6f99e#url:en:54ad55f07bb6",
+        "ie:url:ffce52219c6781a6f99e#url:en:ca699847d50f"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-50": {
+      "source_identity_id": "ie:url:f3a58f41a357b3dda06f",
+      "representation_ids": [
+        "ie:url:f3a58f41a357b3dda06f#url:en:294e3ec98415",
+        "ie:url:f3a58f41a357b3dda06f#url:en:9c29e43e25e4"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "ie-51": {
+      "source_identity_id": "ie:url:9cfe451a7a1f21b759e2",
+      "representation_ids": [
+        "ie:url:9cfe451a7a1f21b759e2#url:en:38436acd3e71",
+        "ie:url:9cfe451a7a1f21b759e2#url:en:e84f135ae904"
+      ],
+      "identity_resolution_status": "resolved"
+    }
+  },
+  "identity_link_schema_version": 1
 }

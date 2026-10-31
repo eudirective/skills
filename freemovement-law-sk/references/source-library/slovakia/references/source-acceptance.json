@@ -1,42 +1,46 @@
 {
   "schema_version": "1.0.0",
   "jurisdiction": "SK",
-  "as_of": "2026-10-25",
-  "accepted_source_count": 0,
-  "accepted_current_law_source_count": 0,
+  "as_of": "2026-10-29",
+  "accepted_source_count": 4,
+  "accepted_current_law_source_count": 4,
   "accepted_derived_text_count": 0,
   "accepted_topic_count": 0,
   "country_review_complete": false,
-  "accepted_external_reference_count": 36,
+  "accepted_external_reference_count": 38,
   "legacy_inventory": {
     "candidate_records": 40,
     "candidate_texts_converted_and_replay_verified": 31,
-    "local_acceptance_note": "All 40 source leads now have final source-reference or disposition notes under documents/references/. Thirty-six official external references are usable only within their recorded scopes; four leads are not accepted or remain pending verification. The 31 converted candidate files and captured inputs remain in the EU Source Update Monitor local-only archive. No local source text, topic coverage, or country completion is accepted."
+    "local_acceptance_note": "The 40 original source leads have final source-reference or disposition notes; batch target SK-41 has been added as a further maintained reference. Thirty-eight external official references are usable within recorded scope. Four local statutory transcriptions are accepted: Acts 71/1967, 404/2011, 365/2004 and 36/2005; 36 other lead records have no accepted local source-text copy. Thirty-one converted candidate texts and inputs remain in the Monitor archive; no topic or country completion is accepted."
   },
-  "policy": "A human-reviewed official link is usable for ordinary research within the identified publisher, instrument, language, displayed date or cutoff, reviewed content, and limitations. Slov-Lex, the Ministry of Foreign Affairs, and the Ministry of Interior are clearly identifiable official government sources. Use their government-published current or date-bound versions directly. No Gazette-fragment reconstruction, local capture, hash, replay, conversion, API access, or copying permission is required for link use. Check a later amendment only when it may materially affect the issue. Link acceptance is separate from local-copy acceptance, topic coverage, and country completion.",
+  "policy": "A human-reviewed official link is usable for ordinary research within the identified publisher, instrument, language, displayed date or cutoff, reviewed content, and limitations. Slov-Lex, the Ministry of Foreign Affairs, and the Ministry of Interior are clearly identifiable official government sources. Use their government-published current or date-bound versions directly. No Gazette-fragment reconstruction, local capture, hash, replay, conversion, API access, or copying permission is required for link use. Check a later amendment only when it may materially affect the issue. Link acceptance is separate from local-copy acceptance, topic coverage, and country completion. Local statutory transcription acceptance requires a verified official dated version, complete captured body, explicit authority caveat, and applicable reuse basis; link acceptance remains separate from local-copy acceptance.",
   "official_reference_reviews": {
     "sk_02": {
-      "status": "usable_official_reference",
+      "status": "usable_official_reference_with_accepted_local_text",
       "publisher": "Slov-Lex, electronic Collection of Laws of the Slovak Republic",
       "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2011/404/20261001",
       "binding_pdf_url": "https://static.slov-lex.sk/pdf/SK/ZZ/2011/404/ZZ_2011_404_20261001.pdf",
       "version_history_url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2011/404/",
-      "checked_on": "2026-10-21",
+      "checked_on": "2026-10-29",
       "language": "Slovak",
-      "version_or_cutoff": "Version effective from 1 October 2026; Slov-Lex history page showed it as the current open-ended version.",
+      "version_or_cutoff": "Version effective from 1 October 2026; rechecked on 29 October 2026 and still displayed as current.",
       "scope": "Act 404/2011 on Residence of Foreigners, including entry, residence, residence documents, removal, and EU-family provisions.",
-      "reviewed_content": "The official act history and binding PDF identify the act, version, and effective date. The act is a broad immigration statute and only a partial functional match for Directive 2004/38. Its general member-state definition includes EU, EEA, and Swiss states, while §§30 and 51–57 narrow the term to EU Member States.",
+      "reviewed_content": "The official Slov-Lex date-bound print page was opened on 29 October 2026 and identifies the version effective 2026-10-01, amendment 128/2026. The complete captured HTML body from 19 October 2026 was promoted as a searchable transcription; Slov-Lex warns the binding text is in the PDF.",
       "limitations": [
+        "The Markdown file is a searchable transcription of informative Slov-Lex HTML, not the binding legal text; consult the official PDF and live version history.",
         "The EEA, Swiss, EU, Slovak-return, and UK Withdrawal Agreement routes must be kept distinct where the act or another instrument does not expressly group them.",
         "No article-by-article coverage or procedural completeness finding is made; see the coverage register.",
         "The link does not accept a locally converted copy."
       ],
       "source_document": {
-        "path": "source-library/slovakia/documents/references/sk-02-act-404-2011-on-residence-of-foreigners.md",
-        "sha256": "b306cfe09ae119dc482ba9a988ef939d3574990c6a80c2cc3d18e93b37a4ba53",
-        "bytes": 2657,
-        "kind": "independently_prepared_source_reference_note",
-        "reproduces_source_text": false
+        "path": "source-library/slovakia/documents/legislation/sk-02-act-404-2011-residence-of-foreigners-consolidated-2026-10-01.md",
+        "sha256": "f9c700c6825ea79932e7a8c7733b9e4acc2871192caa69b04a9c7225b7ec1aad",
+        "bytes": 493120,
+        "kind": "complete_official_html_text_transcription",
+        "reproduces_source_text": true,
+        "reuse_basis": "Slovak Copyright Act 185/2015 §5(b); the text of legislation is not subject to copyright.",
+        "captured_on": "2026-10-19",
+        "rechecked_on": "2026-10-29"
       }
     },
     "sk_03": {
@@ -63,26 +67,29 @@
       }
     },
     "sk_04": {
-      "status": "usable_official_reference",
+      "status": "usable_official_reference_with_accepted_local_text",
       "publisher": "Slov-Lex, electronic Collection of Laws of the Slovak Republic",
       "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1967/71/20180901",
       "binding_pdf_url": "https://static.slov-lex.sk/pdf/SK/ZZ/1967/71/ZZ_1967_71_20180901.pdf",
       "version_history_url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1967/71/",
-      "checked_on": "2026-10-21",
+      "checked_on": "2026-10-29",
       "language": "Slovak",
-      "version_or_cutoff": "Version effective from 1 September 2018; the official history showed it as the current version.",
+      "version_or_cutoff": "Version effective from 1 September 2018; rechecked on 29 October 2026 and still displayed by Slov-Lex as the current open-ended version.",
       "scope": "Act 71/1967 on Administrative Procedure.",
-      "reviewed_content": "The Slov-Lex history and binding PDF identify the act and version effective date.",
+      "reviewed_content": "The official Slov-Lex date-bound print page was opened on 29 October 2026 and still identifies the 2018-09-01 version. The complete captured HTML body from 19 October 2026 was promoted as a searchable transcription; the official page warns that the legally binding text is in the PDF.",
       "limitations": [
-        "Special statutory procedures may displace or modify general procedure; no issue-specific remedy or deadline is established here.",
-        "No local copy or topic coverage is accepted."
+        "The Markdown file is a searchable transcription of informative Slov-Lex HTML, not the binding legal text; consult the official PDF and live version history.",
+        "Special statutory procedures may displace or modify general procedure; no issue-specific remedy or deadline is established here."
       ],
       "source_document": {
-        "path": "source-library/slovakia/documents/references/sk-04-act-71-1967-administrative-procedure-act.md",
-        "sha256": "74d6b3d0bbfa829ffa9a22c6708ca3c77e4a8a92b756cb30253f9d604f0bb96d",
-        "bytes": 2136,
-        "kind": "independently_prepared_source_reference_note",
-        "reproduces_source_text": false
+        "path": "source-library/slovakia/documents/legislation/sk-04-act-71-1967-administrative-procedure-consolidated-2018-09-01.md",
+        "sha256": "194fe826df1f30bc771842dfdf4f0982b50373b139d9b95a42e0b08438ead681",
+        "bytes": 63743,
+        "kind": "complete_official_html_text_transcription",
+        "reproduces_source_text": true,
+        "reuse_basis": "Slovak Copyright Act 185/2015 §5(b); the text of legislation is not subject to copyright.",
+        "captured_on": "2026-10-19",
+        "rechecked_on": "2026-10-29"
       }
     },
     "sk_05": {
@@ -247,26 +254,29 @@
       }
     },
     "sk_12": {
-      "status": "usable_official_reference",
+      "status": "usable_official_reference_with_accepted_local_text",
       "publisher": "Slov-Lex, electronic Collection of Laws of the Slovak Republic",
       "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2004/365/20250701",
       "binding_pdf_url": "https://static.slov-lex.sk/pdf/SK/ZZ/2004/365/ZZ_2004_365_20250701.pdf",
       "version_history_url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2004/365/",
-      "checked_on": "2026-10-21",
+      "checked_on": "2026-10-29",
       "language": "Slovak",
-      "version_or_cutoff": "Version effective from 1 July 2025; official history showed it as current.",
+      "version_or_cutoff": "Version effective from 1 July 2025; rechecked on 29 October 2026 and still displayed as current.",
       "scope": "Act 365/2004 on Equal Treatment and Protection against Discrimination.",
-      "reviewed_content": "The official history and binding PDF identify the act and version effective date.",
+      "reviewed_content": "The official Slov-Lex print page opened on 29 October 2026 confirms the version effective from 2025-07-01 remains open-ended/current. Complete captured HTML body from 19 October 2026 promoted as a searchable transcription; Slov-Lex states the binding text is in the PDF.",
       "limitations": [
-        "The applicable protected ground, competent body, evidentiary rule, and remedy require issue-specific review.",
-        "No local copy or topic coverage is accepted."
+        "The Markdown file is a searchable transcription of informative Slov-Lex HTML, not the binding legal text; consult the official PDF and live version history.",
+        "The applicable protected ground, competent body, evidentiary rule, and remedy require issue-specific review."
       ],
       "source_document": {
-        "path": "source-library/slovakia/documents/references/sk-12-act-365-2004-equal-treatment-act.md",
-        "sha256": "45767a907c446cd66c656969673d70ba3e176429deb4f8c5bcc5c73d57143ab8",
-        "bytes": 2104,
-        "kind": "independently_prepared_source_reference_note",
-        "reproduces_source_text": false
+        "path": "source-library/slovakia/documents/legislation/sk-12-act-365-2004-equal-treatment-consolidated-2025-07-01.md",
+        "sha256": "4adbbda5c5cfd04f030866a846389553fedeb136297baca3678a80f22f037c5d",
+        "bytes": 61407,
+        "kind": "complete_official_html_text_transcription",
+        "reproduces_source_text": true,
+        "reuse_basis": "Slovak Copyright Act 185/2015 §5(b); the text of legislation is not subject to copyright.",
+        "captured_on": "2026-10-19",
+        "rechecked_on": "2026-10-29"
       }
     },
     "sk_13": {
@@ -293,27 +303,30 @@
       }
     },
     "sk_14": {
-      "status": "usable_official_reference",
+      "status": "usable_official_reference_with_accepted_local_text",
       "publisher": "Slov-Lex, electronic Collection of Laws of the Slovak Republic",
       "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2005/36/20260901",
       "binding_pdf_url": "https://static.slov-lex.sk/pdf/SK/ZZ/2005/36/ZZ_2005_36_20260901.pdf",
       "version_history_url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2005/36/",
-      "checked_on": "2026-10-21",
+      "checked_on": "2026-10-29",
       "language": "Slovak",
-      "version_or_cutoff": "Version effective 1 September through 31 December 2026; a future version begins 1 January 2027.",
+      "version_or_cutoff": "Version effective from 1 September through 31 December 2026; Slov-Lex history already lists a successor effective 1 January 2027.",
       "scope": "Act 36/2005 on the Family.",
-      "reviewed_content": "The official history and binding PDF identify the act and dated version.",
+      "reviewed_content": "The official Slov-Lex print page opened on 29 October 2026 confirms the 2026-09-01 version ends 2026-12-31 and identifies the announced 2027-01-01 successor (Acts 244/2026 and 245/2026). Complete captured HTML body from 19 October 2026 promoted as a searchable transcription; Slov-Lex states the binding text is in the PDF.",
       "limitations": [
+        "The Markdown file is a searchable transcription of informative Slov-Lex HTML, not the binding legal text; consult the official PDF and live version history.",
         "This version has a known end date; use the next official version for events from 1 January 2027.",
-        "It does not replace immigration-law definitions of family members or establish document-recognition procedure.",
-        "No local copy or topic coverage is accepted."
+        "It does not replace immigration-law definitions of family members or establish document-recognition procedure."
       ],
       "source_document": {
-        "path": "source-library/slovakia/documents/references/sk-14-act-36-2005-on-the-family.md",
-        "sha256": "08a521226ce37a96d94e8bae063df8f20d8650c90cfc940fe411576073a1daee",
-        "bytes": 2135,
-        "kind": "independently_prepared_source_reference_note",
-        "reproduces_source_text": false
+        "path": "source-library/slovakia/documents/legislation/sk-14-act-36-2005-family-consolidated-2026-09-01.md",
+        "sha256": "5637c7a64fabf1c4d278a16e8b9f14b1904e2ef13e1efd8946dc46738e07d183",
+        "bytes": 130604,
+        "kind": "complete_official_html_text_transcription",
+        "reproduces_source_text": true,
+        "reuse_basis": "Slovak Copyright Act 185/2015 §5(b); the text of legislation is not subject to copyright.",
+        "captured_on": "2026-10-19",
+        "rechecked_on": "2026-10-29"
       }
     },
     "sk_15": {
@@ -608,24 +621,25 @@
       }
     },
     "sk_31": {
-      "status": "usable_official_reference",
+      "status": "usable_official_reference_with_maintained_local_summary",
       "publisher": "Ministry of Foreign and European Affairs of the Slovak Republic, Embassy in Minsk",
       "url": "https://www.mzv.sk/sk/web/minsk/sluzby/viza-a-pobyty/schengenske-viza/doklady-k-ziadosti-o-viza",
-      "checked_on": "2026-10-25",
+      "checked_on": "2026-10-29",
       "language": "Slovak",
-      "version_or_cutoff": "Official page updated 12 February 2026 says the general document list does not apply to EU/EEA/Swiss family members, with Slovak-national family treated separately subject to legal exceptions.",
-      "scope": "Minsk mission's local Schengen evidence and EU-family guidance only.",
-      "reviewed_content": "Official page updated 12 February 2026 says the general document list does not apply to EU/EEA/Swiss family members, with Slovak-national family treated separately subject to legal exceptions.",
+      "version_or_cutoff": "Page states updated 2026-02-12; opened and rechecked 2026-10-29.",
+      "scope": "Minsk mission's general Schengen evidence and application-channel guidance, with the page's separate exclusion and simplified-route statement for EU/EEA/Swiss family members.",
+      "reviewed_content": "The updated page says its general checklist does not apply to EU/EEA/Swiss family members, who are processed under a simplified regime. It separately notes the Slovak-citizen family exception subject to law. The general page describes standard evidence, additional requests/interviews, Minsk booking providers, biometric requirements and the Belarusian police-verified-invitation instruction. These general checklist details are not attributed to EU-family applicants.",
       "limitations": [
-        "Do not generalize local details to other missions or applicant locations.",
-        "Check current law and applicant's competent mission.",
-        "Network-wide location-specific review remains open."
+        "Mission-specific only; do not generalize to other missions or applicant locations.",
+        "Operational provider links and appointment conditions must be checked when used.",
+        "Read EU-family eligibility and evidence with current Act 404/2011 §§2, 7 and 16(17); do not apply the general checklist where the page expressly excludes EU-family applicants.",
+        "Network-wide mission competence and live process remain open."
       ],
       "source_document": {
         "path": "source-library/slovakia/documents/references/sk-31-mfa-minsk-visa-evidence-and-eu-family-instructions.md",
-        "sha256": "1da440f94fe25aafe4cd134b163624377f88fadcaa9e63508dc97336e9c21031",
-        "bytes": 1578,
-        "kind": "independently_prepared_source_reference_note",
+        "sha256": "60b634baa251ef3889a1401a25383e951489db0b569aedf79cee9a8a287aec50",
+        "bytes": 5518,
+        "kind": "maintained_official_reference_note",
         "reproduces_source_text": false
       }
     },
@@ -821,15 +835,78 @@
         "kind": "independently_prepared_source_reference_note",
         "reproduces_source_text": false
       }
+    },
+    "sk_30": {
+      "status": "usable_official_reference_for_dated_historical_mission_page_only",
+      "publisher": "Ministry of Foreign and European Affairs of the Slovak Republic, Embassy in Hanoi",
+      "url": "https://www.mzv.sk/web/hanoj/sluzby/pomoc-v-nudzi-v-zahranici/viza/rodinni-prislusnici-obcanov-unie",
+      "checked_on": "2026-10-29",
+      "language": "Slovak",
+      "version_or_cutoff": "Page says published 2022-07-07; no later page revision date displayed. Reviewed against Slov-Lex Act 404/2011 version effective 2026-10-01.",
+      "scope": "Evidence of the information the Slovak Embassy in Hanoi published on 2022-07-07 about EU/EEA/Swiss-family entry and visa applications. Not accepted as current operational guidance.",
+      "reviewed_content": "The mission page lists categories of family members, identity/relationship/dependency evidence, and states that visa applications are free and processed within 10 working days. It cites Regulation (EC) No 562/2006, since repealed. Current Act 404/2011 §7(17) requires a valid travel document, family-link proof and dependency evidence where required, and gives a maximum decision period of 10 days. Directive 2004/38 Article 5(2) supports the no-visa-fee/accelerated-treatment statement for qualifying family members.",
+      "limitations": [
+        "The page is dated 2022 and cites repealed Regulation (EC) No 562/2006; current Schengen Borders Code is Regulation (EU) 2016/399.",
+        "Its 10-working-day wording does not match current Act 404/2011 §7(17), which states 10 days. Do not rely on the mission page for the deadline.",
+        "No current Hanoi appointment channel, competent-mission determination, outsourcing arrangement or current checklist was established.",
+        "The page is a historical official page, not law, current operational guidance, a local source-text copy or topic coverage."
+      ],
+      "source_document": {
+        "path": "source-library/slovakia/documents/references/sk-30-mfa-hanoi-eu-family-mission-instructions.md",
+        "sha256": "b3634b0a2c14db1827861305da29ec576663e346e7320d026047ef0d95db7c72",
+        "kind": "maintained_official_historical_reference_note",
+        "reproduces_source_text": false
+      },
+      "cross_checks": [
+        {
+          "title": "Act 404/2011 version effective 2026-10-01",
+          "url": "https://static.slov-lex.sk/static/SK/ZZ/2011/404/20261001.print.html",
+          "sections": "§§2, 7, 16(17)"
+        },
+        {
+          "title": "Directive 2004/38/EC",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32004L0038",
+          "sections": "Article 5(2)"
+        },
+        {
+          "title": "Regulation (EU) 2016/399",
+          "url": "https://eur-lex.europa.eu/eli/reg/2016/399/oj/eng",
+          "sections": "Repeals Regulation (EC) No 562/2006"
+        }
+      ]
+    },
+    "sk_41": {
+      "status": "usable_official_reference_with_maintained_local_summary",
+      "publisher": "Ministry of Foreign and European Affairs of the Slovak Republic, Embassy in Minsk",
+      "url": "https://www.mzv.sk/web/minsk/services/information-for-foreigners/visa/family-members-of-union-citizens",
+      "checked_on": "2026-10-29",
+      "language": "Slovak",
+      "version_or_cutoff": "Page states published and updated 2025-09-17; directly opened and reviewed 2026-10-29.",
+      "scope": "Minsk mission's instructions for qualifying EU-family Schengen visa applicants, including limited returning-Slovak and UK Withdrawal Agreement references described by the page.",
+      "reviewed_content": "The page gives family-member categories, form and identity/family-link/dependency evidence, biometric requirements, a 10-day maximum, and free application. Cross-checked statutory documentation and deadline against Slovak Act 404/2011 §§2, 7 and 16(17), effective 2026-10-01; fee treatment against Directive 2004/38 Article 5(2). Corrected the page's EEA grouping in the maintained note: Switzerland is separately included in Slovak law but is not an EEA contracting party.",
+      "limitations": [
+        "Minsk mission-specific; do not generalize to other locations or assume it is the competent mission for a particular applicant.",
+        "Online form, fingerprint arrangements and submission channels can change.",
+        "The page's Switzerland placement under an EFTA heading within an EEA list is imprecise; keep the legal categories distinct.",
+        "UK Withdrawal Agreement route applies only where its legal conditions are met.",
+        "Slov-Lex warns that the displayed HTML version is informative; consult its binding PDF and current history if exact legal wording matters.",
+        "No topic or country completion is accepted."
+      ],
+      "source_document": {
+        "path": "source-library/slovakia/documents/references/sk-41-mfa-minsk-eu-family-visa-rules.md",
+        "sha256": "889782644806eed674877b9e85c9eb8acede64b7d9297b6da83f82cf64cb36af",
+        "bytes": 6110,
+        "kind": "maintained_official_reference_note",
+        "reproduces_source_text": false
+      }
     }
   },
   "not_accepted_candidate_notes": [
     {
       "candidate_ids": [
-        "SK-26",
-        "SK-30"
+        "SK-26"
       ],
-      "reason": "The 2022 English EU-family page has a statutory-number error; the 2022 Hanoi instructions cite repealed Regulation 562/2006. Keep as stale discovery material, not current operative guidance."
+      "reason": "The 2022 English EU-family page has an incorrect statutory number; retain as stale discovery material, not current operative guidance."
     },
     {
       "candidate_ids": [
@@ -851,10 +928,622 @@
         "SK-28",
         "SK-29",
         "SK-30",
-        "SK-31"
+        "SK-31",
+        "SK-41"
       ],
       "offer": "Offer the official MZV mission directory and linked mission websites as a whole-site human review source for current visa and consular practice. The central pages and directory are usable as scoped official references, but local missions may set different checklists, appointments, submission channels, and outsourcing arrangements. Older pages found in the same official network are visibly stale and should not be treated as current rules.",
       "review_scope": "For relevant applicant locations, identify the competent mission, current EU-family instructions, required documents, fee exemptions, appointment route, provider or outsourcing arrangement, and current forms. Record the page's date or version evidence and retain any inaccessible route as a human-review offer; do not infer that one mission's practice applies network-wide."
     }
-  ]
+  ],
+  "identity_links": {
+    "sk_04": {
+      "source_identity_id": "sk:url:52b0888ca3fae485a531",
+      "representation_ids": [
+        "sk:url:52b0888ca3fae485a531#url:sk:f3a2c0c65113"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "sk_06": {
+      "source_identity_id": "sk:url:132e5a3d47bdae669262",
+      "representation_ids": [
+        "sk:url:132e5a3d47bdae669262#url:sk:180345a14201"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "sk_07": {
+      "source_identity_id": "sk:url:53d85799695479c8595d",
+      "representation_ids": [
+        "sk:url:53d85799695479c8595d#url:sk:54bcd5529dc2"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "sk_09": {
+      "source_identity_id": "sk:url:35f328481041587f3e3a",
+      "representation_ids": [
+        "sk:url:35f328481041587f3e3a#url:sk:29f98a54535f"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "sk_11": {
+      "source_identity_id": "sk:url:fba29ffd5cf0e0e10c6a",
+      "representation_ids": [
+        "sk:url:fba29ffd5cf0e0e10c6a#url:sk:f5e955c26d0d"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "sk_13": {
+      "source_identity_id": "sk:url:c83520e59fee41e59bd6",
+      "representation_ids": [
+        "sk:url:c83520e59fee41e59bd6#url:sk:009409b5843a"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "sk_15": {
+      "source_identity_id": "sk:url:c67acbbc98edf55b46a7",
+      "representation_ids": [
+        "sk:url:c67acbbc98edf55b46a7#url:sk:4e761e51f4d5"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "sk_41": {
+      "source_identity_id": "sk:url:e55b3f32fe7c062443be",
+      "representation_ids": [
+        "sk:url:e55b3f32fe7c062443be#url:sk:69702fcd240a"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "sk_mzv_supporting-documents": {
+      "source_identity_id": "sk:ambiguous:sk-mzv-supporting-documents:d02e0f08bf15",
+      "representation_ids": [
+        "sk:ambiguous:sk-mzv-supporting-documents:d02e0f08bf15#url:sk:06cfcd0693f8",
+        "sk:ambiguous:sk-mzv-supporting-documents:d02e0f08bf15#url:sk:7c1a25310cc4"
+      ],
+      "identity_resolution_status": "unresolved"
+    },
+    "sk_mzv-schengen-form": {
+      "source_identity_id": "sk:ambiguous:sk-mzv-schengen-form:8d4e96b0f8a1",
+      "representation_ids": [
+        "sk:ambiguous:sk-mzv-schengen-form:8d4e96b0f8a1#url:sk:7c1a25310cc4",
+        "sk:ambiguous:sk-mzv-schengen-form:8d4e96b0f8a1#url:sk:bb807afe1326"
+      ],
+      "identity_resolution_status": "unresolved"
+    },
+    "SK-01": {
+      "source_identity_id": "sk:url:3fe731c1a91b1962a3b2",
+      "representation_ids": [
+        "sk:url:3fe731c1a91b1962a3b2#url:sk:4ada83f3e6ee"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "SK-02": {
+      "source_identity_id": "sk:url:cb1fb403282e29b2e137",
+      "representation_ids": [
+        "sk:url:cb1fb403282e29b2e137#url:sk:58c1dc2a32ac"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "SK-03": {
+      "source_identity_id": "sk:url:e2300a9523a087e8d858",
+      "representation_ids": [
+        "sk:url:e2300a9523a087e8d858#url:sk:90b59d0a677d"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "SK-04": {
+      "source_identity_id": "sk:url:fdcb666daf42c7b3892d",
+      "representation_ids": [
+        "sk:url:fdcb666daf42c7b3892d#url:unspecified:c7bdf3a3c469"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "SK-05": {
+      "source_identity_id": "sk:url:9ff44bc0d2127d3c87d0",
+      "representation_ids": [
+        "sk:url:9ff44bc0d2127d3c87d0#url:sk:378913ac8c79"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "SK-06": {
+      "source_identity_id": "sk:url:0b7bfb5402ed7ac0b534",
+      "representation_ids": [
+        "sk:url:0b7bfb5402ed7ac0b534#url:unspecified:02be8f849a41"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "SK-07": {
+      "source_identity_id": "sk:url:0860dae98cc8f1587e1a",
+      "representation_ids": [
+        "sk:url:0860dae98cc8f1587e1a#url:unspecified:7625a5618a41"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "SK-08": {
+      "source_identity_id": "sk:url:bb963c9d3c061c4a861f",
+      "representation_ids": [
+        "sk:url:bb963c9d3c061c4a861f#url:sk:eb93e2ac4dac"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "SK-09": {
+      "source_identity_id": "sk:url:4bf3fe22deec9198bf00",
+      "representation_ids": [
+        "sk:url:4bf3fe22deec9198bf00#url:unspecified:1ee780a4f938"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "SK-10": {
+      "source_identity_id": "sk:url:1b503a9d6bdde284b125",
+      "representation_ids": [
+        "sk:url:1b503a9d6bdde284b125#url:sk:87db7743c004"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "SK-11": {
+      "source_identity_id": "sk:url:8de7ff0131ff7a3b48cd",
+      "representation_ids": [
+        "sk:url:8de7ff0131ff7a3b48cd#url:unspecified:edd9c09218de"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "SK-12": {
+      "source_identity_id": "sk:url:d4ca535926dfda8924cc",
+      "representation_ids": [
+        "sk:url:d4ca535926dfda8924cc#url:sk:cccf5da25eb7"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "SK-13": {
+      "source_identity_id": "sk:url:7f7c74c37a03b5de9989",
+      "representation_ids": [
+        "sk:url:7f7c74c37a03b5de9989#url:unspecified:1ef3169a9100"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "SK-14": {
+      "source_identity_id": "sk:url:73cf8a7f20941a875c6c",
+      "representation_ids": [
+        "sk:url:73cf8a7f20941a875c6c#url:sk:e8d72879922e"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "SK-15": {
+      "source_identity_id": "sk:url:03196e32cdae78cdaf0d",
+      "representation_ids": [
+        "sk:url:03196e32cdae78cdaf0d#url:unspecified:ca4ec8efdd91"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "SK-16": {
+      "source_identity_id": "sk:url:702ad9135040992a2dde",
+      "representation_ids": [
+        "sk:url:702ad9135040992a2dde#url:sk:83a4f089110c"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "SK-17": {
+      "source_identity_id": "sk:url:91642b4d7e2efcb2c268",
+      "representation_ids": [
+        "sk:url:91642b4d7e2efcb2c268#url:sk:c599da4f29ac"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "SK-18": {
+      "source_identity_id": "sk:url:b74e4d3d5c9eb4f28c22",
+      "representation_ids": [
+        "sk:url:b74e4d3d5c9eb4f28c22#url:sk:79e341625a98"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "SK-19": {
+      "source_identity_id": "sk:url:071d1138297009a4fdbb",
+      "representation_ids": [
+        "sk:url:071d1138297009a4fdbb#url:sk:ae7691a31e87"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "SK-20": {
+      "source_identity_id": "sk:url:add6631ae2b9d4be5890",
+      "representation_ids": [
+        "sk:url:add6631ae2b9d4be5890#url:sk:189a2f2ee744"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "SK-21": {
+      "source_identity_id": "sk:url:d9259af25d64eee37d4c",
+      "representation_ids": [
+        "sk:url:d9259af25d64eee37d4c#url:sk:0c16e2debe18",
+        "sk:url:d9259af25d64eee37d4c#url:sk:1622e7a4892a"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "SK-22": {
+      "source_identity_id": "sk:url:f3e3989efd54b707c5fb",
+      "representation_ids": [
+        "sk:url:f3e3989efd54b707c5fb#url:unspecified:f517f962f596"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "SK-23": {
+      "source_identity_id": "sk:url:80902efe054cd9dc39b3",
+      "representation_ids": [
+        "sk:url:80902efe054cd9dc39b3#url:unspecified:53dcc472d4c0"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "SK-24": {
+      "source_identity_id": "sk:ambiguous:sk-24:822061d8bbf4",
+      "representation_ids": [
+        "sk:ambiguous:sk-24:822061d8bbf4#url:sk:3131795b1428"
+      ],
+      "identity_resolution_status": "unresolved"
+    },
+    "SK-25": {
+      "source_identity_id": "sk:ambiguous:sk-25:d7b05ff68ff6",
+      "representation_ids": [
+        "sk:ambiguous:sk-25:d7b05ff68ff6#url:unspecified:d9661d25805c"
+      ],
+      "identity_resolution_status": "unresolved"
+    },
+    "SK-26": {
+      "source_identity_id": "sk:url:2ab1e299e09c83d9497c",
+      "representation_ids": [
+        "sk:url:2ab1e299e09c83d9497c#url:unspecified:855b32451f3d"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "SK-27": {
+      "source_identity_id": "sk:url:776f8f879c3723e14113",
+      "representation_ids": [
+        "sk:url:776f8f879c3723e14113#url:sk:18797d548f7d",
+        "sk:url:776f8f879c3723e14113#url:sk:79c462aa093f"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "SK-28": {
+      "source_identity_id": "sk:url:f05f7ef55c1f57ba3b3a",
+      "representation_ids": [
+        "sk:url:f05f7ef55c1f57ba3b3a#url:sk:c10054a468db"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "SK-29": {
+      "source_identity_id": "sk:ambiguous:sk-29:5e1cbcfdedc8",
+      "representation_ids": [
+        "sk:ambiguous:sk-29:5e1cbcfdedc8#url:unspecified:d14700ab084d"
+      ],
+      "identity_resolution_status": "unresolved"
+    },
+    "SK-30": {
+      "source_identity_id": "sk:url:47e918d127bfa7b089d7",
+      "representation_ids": [
+        "sk:url:47e918d127bfa7b089d7#url:sk:c725041a1e96"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "SK-31": {
+      "source_identity_id": "sk:url:b7e21a5e2210ad6154ed",
+      "representation_ids": [
+        "sk:url:b7e21a5e2210ad6154ed#url:sk:646a9205f787"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "SK-32": {
+      "source_identity_id": "sk:url:4b35d17ad9d80fc6efdd",
+      "representation_ids": [
+        "sk:url:4b35d17ad9d80fc6efdd#url:sk:21f878b50546"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "SK-33": {
+      "source_identity_id": "sk:url:636ab1701c5297326e23",
+      "representation_ids": [
+        "sk:url:636ab1701c5297326e23#url:sk:dda688e88a6b"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "SK-34": {
+      "source_identity_id": "sk:url:0e9eec8ce2739c40df54",
+      "representation_ids": [
+        "sk:url:0e9eec8ce2739c40df54#url:sk:3c4b7fbb00f5"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "SK-35": {
+      "source_identity_id": "sk:url:d41c279b895512ac7459",
+      "representation_ids": [
+        "sk:url:d41c279b895512ac7459#url:sk:e7c248646286"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "SK-36": {
+      "source_identity_id": "sk:url:d49d2053b5e578eadf71",
+      "representation_ids": [
+        "sk:url:d49d2053b5e578eadf71#url:sk:bac284356131"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "SK-37": {
+      "source_identity_id": "sk:url:d578c8b876c5ea7d813a",
+      "representation_ids": [
+        "sk:url:d578c8b876c5ea7d813a#url:sk:ed917ea355cf"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "SK-38": {
+      "source_identity_id": "sk:url:4e7ae14b987a38d10c0a",
+      "representation_ids": [
+        "sk:url:4e7ae14b987a38d10c0a#url:sk:c5d1ecfb6c1a"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "SK-39": {
+      "source_identity_id": "sk:url:56d8b438e50a8d87ee44",
+      "representation_ids": [
+        "sk:url:56d8b438e50a8d87ee44#url:sk:5d633f6e2ec5"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "SK-40": {
+      "source_identity_id": "sk:url:36eba1928bb6571e4584",
+      "representation_ids": [
+        "sk:url:36eba1928bb6571e4584#url:sk:d67661df5a6b"
+      ],
+      "identity_resolution_status": "resolved"
+    },
+    "sk_02": {
+      "source_identity_id": "sk:url:cb1fb403282e29b2e137",
+      "representation_ids": [
+        "sk:url:cb1fb403282e29b2e137#url:sk:58c1dc2a32ac"
+      ],
+      "identity_resolution_status": "resolved",
+      "linked_source_entry_id": "SK-02",
+      "status_record": true
+    },
+    "sk_03": {
+      "source_identity_id": "sk:url:e2300a9523a087e8d858",
+      "representation_ids": [
+        "sk:url:e2300a9523a087e8d858#url:sk:90b59d0a677d"
+      ],
+      "identity_resolution_status": "resolved",
+      "linked_source_entry_id": "SK-03",
+      "status_record": true
+    },
+    "sk_05": {
+      "source_identity_id": "sk:url:9ff44bc0d2127d3c87d0",
+      "representation_ids": [
+        "sk:url:9ff44bc0d2127d3c87d0#url:sk:378913ac8c79"
+      ],
+      "identity_resolution_status": "resolved",
+      "linked_source_entry_id": "SK-05",
+      "status_record": true
+    },
+    "sk_08": {
+      "source_identity_id": "sk:url:bb963c9d3c061c4a861f",
+      "representation_ids": [
+        "sk:url:bb963c9d3c061c4a861f#url:sk:eb93e2ac4dac"
+      ],
+      "identity_resolution_status": "resolved",
+      "linked_source_entry_id": "SK-08",
+      "status_record": true
+    },
+    "sk_10": {
+      "source_identity_id": "sk:url:1b503a9d6bdde284b125",
+      "representation_ids": [
+        "sk:url:1b503a9d6bdde284b125#url:sk:87db7743c004"
+      ],
+      "identity_resolution_status": "resolved",
+      "linked_source_entry_id": "SK-10",
+      "status_record": true
+    },
+    "sk_12": {
+      "source_identity_id": "sk:url:d4ca535926dfda8924cc",
+      "representation_ids": [
+        "sk:url:d4ca535926dfda8924cc#url:sk:cccf5da25eb7"
+      ],
+      "identity_resolution_status": "resolved",
+      "linked_source_entry_id": "SK-12",
+      "status_record": true
+    },
+    "sk_14": {
+      "source_identity_id": "sk:url:73cf8a7f20941a875c6c",
+      "representation_ids": [
+        "sk:url:73cf8a7f20941a875c6c#url:sk:e8d72879922e"
+      ],
+      "identity_resolution_status": "resolved",
+      "linked_source_entry_id": "SK-14",
+      "status_record": true
+    },
+    "sk_16": {
+      "source_identity_id": "sk:url:702ad9135040992a2dde",
+      "representation_ids": [
+        "sk:url:702ad9135040992a2dde#url:sk:83a4f089110c"
+      ],
+      "identity_resolution_status": "resolved",
+      "linked_source_entry_id": "SK-16",
+      "status_record": true
+    },
+    "sk_mzv-stay-guidance": {
+      "source_identity_id": "sk:url:776f8f879c3723e14113",
+      "representation_ids": [
+        "sk:url:776f8f879c3723e14113#url:sk:18797d548f7d",
+        "sk:url:776f8f879c3723e14113#url:sk:79c462aa093f"
+      ],
+      "identity_resolution_status": "resolved",
+      "linked_source_entry_id": "SK-27",
+      "status_record": true
+    },
+    "sk_mzv-mission-directory": {
+      "source_identity_id": "sk:url:f05f7ef55c1f57ba3b3a",
+      "representation_ids": [
+        "sk:url:f05f7ef55c1f57ba3b3a#url:sk:c10054a468db"
+      ],
+      "identity_resolution_status": "resolved",
+      "linked_source_entry_id": "SK-28",
+      "status_record": true
+    },
+    "sk-minv-eu-registration-faq-2025": {
+      "source_identity_id": "sk:url:d9259af25d64eee37d4c",
+      "representation_ids": [
+        "sk:url:d9259af25d64eee37d4c#url:sk:0c16e2debe18",
+        "sk:url:d9259af25d64eee37d4c#url:sk:1622e7a4892a"
+      ],
+      "identity_resolution_status": "resolved",
+      "linked_source_entry_id": "SK-21",
+      "status_record": true
+    },
+    "sk_01": {
+      "source_identity_id": "sk:url:3fe731c1a91b1962a3b2",
+      "representation_ids": [
+        "sk:url:3fe731c1a91b1962a3b2#url:sk:4ada83f3e6ee"
+      ],
+      "identity_resolution_status": "resolved",
+      "linked_source_entry_id": "SK-01",
+      "status_record": true
+    },
+    "sk_17": {
+      "source_identity_id": "sk:url:91642b4d7e2efcb2c268",
+      "representation_ids": [
+        "sk:url:91642b4d7e2efcb2c268#url:sk:c599da4f29ac"
+      ],
+      "identity_resolution_status": "resolved",
+      "linked_source_entry_id": "SK-17",
+      "status_record": true
+    },
+    "sk_18": {
+      "source_identity_id": "sk:url:b74e4d3d5c9eb4f28c22",
+      "representation_ids": [
+        "sk:url:b74e4d3d5c9eb4f28c22#url:sk:79e341625a98"
+      ],
+      "identity_resolution_status": "resolved",
+      "linked_source_entry_id": "SK-18",
+      "status_record": true
+    },
+    "sk_19": {
+      "source_identity_id": "sk:url:071d1138297009a4fdbb",
+      "representation_ids": [
+        "sk:url:071d1138297009a4fdbb#url:sk:ae7691a31e87"
+      ],
+      "identity_resolution_status": "resolved",
+      "linked_source_entry_id": "SK-19",
+      "status_record": true
+    },
+    "sk_20": {
+      "source_identity_id": "sk:url:add6631ae2b9d4be5890",
+      "representation_ids": [
+        "sk:url:add6631ae2b9d4be5890#url:sk:189a2f2ee744"
+      ],
+      "identity_resolution_status": "resolved",
+      "linked_source_entry_id": "SK-20",
+      "status_record": true
+    },
+    "sk_24": {
+      "source_identity_id": "sk:ambiguous:sk-24:822061d8bbf4",
+      "representation_ids": [
+        "sk:ambiguous:sk-24:822061d8bbf4#url:sk:3131795b1428"
+      ],
+      "identity_resolution_status": "unresolved",
+      "linked_source_entry_id": "SK-24",
+      "status_record": true
+    },
+    "sk_31": {
+      "source_identity_id": "sk:url:b7e21a5e2210ad6154ed",
+      "representation_ids": [
+        "sk:url:b7e21a5e2210ad6154ed#url:sk:646a9205f787"
+      ],
+      "identity_resolution_status": "resolved",
+      "linked_source_entry_id": "SK-31",
+      "status_record": true
+    },
+    "sk_32": {
+      "source_identity_id": "sk:url:4b35d17ad9d80fc6efdd",
+      "representation_ids": [
+        "sk:url:4b35d17ad9d80fc6efdd#url:sk:21f878b50546"
+      ],
+      "identity_resolution_status": "resolved",
+      "linked_source_entry_id": "SK-32",
+      "status_record": true
+    },
+    "sk_33": {
+      "source_identity_id": "sk:url:636ab1701c5297326e23",
+      "representation_ids": [
+        "sk:url:636ab1701c5297326e23#url:sk:dda688e88a6b"
+      ],
+      "identity_resolution_status": "resolved",
+      "linked_source_entry_id": "SK-33",
+      "status_record": true
+    },
+    "sk_34": {
+      "source_identity_id": "sk:url:0e9eec8ce2739c40df54",
+      "representation_ids": [
+        "sk:url:0e9eec8ce2739c40df54#url:sk:3c4b7fbb00f5"
+      ],
+      "identity_resolution_status": "resolved",
+      "linked_source_entry_id": "SK-34",
+      "status_record": true
+    },
+    "sk_35": {
+      "source_identity_id": "sk:url:d41c279b895512ac7459",
+      "representation_ids": [
+        "sk:url:d41c279b895512ac7459#url:sk:e7c248646286"
+      ],
+      "identity_resolution_status": "resolved",
+      "linked_source_entry_id": "SK-35",
+      "status_record": true
+    },
+    "sk_36": {
+      "source_identity_id": "sk:url:d49d2053b5e578eadf71",
+      "representation_ids": [
+        "sk:url:d49d2053b5e578eadf71#url:sk:bac284356131"
+      ],
+      "identity_resolution_status": "resolved",
+      "linked_source_entry_id": "SK-36",
+      "status_record": true
+    },
+    "sk_37": {
+      "source_identity_id": "sk:url:d578c8b876c5ea7d813a",
+      "representation_ids": [
+        "sk:url:d578c8b876c5ea7d813a#url:sk:ed917ea355cf"
+      ],
+      "identity_resolution_status": "resolved",
+      "linked_source_entry_id": "SK-37",
+      "status_record": true
+    },
+    "sk_38": {
+      "source_identity_id": "sk:url:4e7ae14b987a38d10c0a",
+      "representation_ids": [
+        "sk:url:4e7ae14b987a38d10c0a#url:sk:c5d1ecfb6c1a"
+      ],
+      "identity_resolution_status": "resolved",
+      "linked_source_entry_id": "SK-38",
+      "status_record": true
+    },
+    "sk_39": {
+      "source_identity_id": "sk:url:56d8b438e50a8d87ee44",
+      "representation_ids": [
+        "sk:url:56d8b438e50a8d87ee44#url:sk:5d633f6e2ec5"
+      ],
+      "identity_resolution_status": "resolved",
+      "linked_source_entry_id": "SK-39",
+      "status_record": true
+    },
+    "sk_40": {
+      "source_identity_id": "sk:url:36eba1928bb6571e4584",
+      "representation_ids": [
+        "sk:url:36eba1928bb6571e4584#url:sk:d67661df5a6b"
+      ],
+      "identity_resolution_status": "resolved",
+      "linked_source_entry_id": "SK-40",
+      "status_record": true
+    },
+    "sk_30": {
+      "source_identity_id": "sk:url:47e918d127bfa7b089d7",
+      "representation_ids": [
+        "sk:url:47e918d127bfa7b089d7#url:sk:c725041a1e96"
+      ],
+      "identity_resolution_status": "resolved",
+      "linked_source_entry_id": "SK-30",
+      "status_record": true
+    }
+  },
+  "identity_link_schema_version": 1
 }

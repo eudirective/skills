@@ -64,3 +64,83 @@ For Lovdata, the accepted items are references to specific official records and 
 | `no-52` | [Norwegian Data Protection Authority](https://www.datatilsynet.no/) | `data_protection_oversight` | accepted official external reference; link only | Oversight source for complaints about personal-data processing, with separate special rules for SIS/VIS/police records. Confirm mandate and process for UDI/UDB before treating as the direct remedy. | [no-52](../documents/references/no-52-norwegian-data-protection-authority.md) |
 | `no-53` | [New Public Administration Act, LOV-2025-06-20-81](https://lovdata.no/dokument/NL/lov/2025-06-20-81) | `administrative_procedure_legislation_future_effective` | accepted official external reference; link only | Replacement for the 1967 Public Administration Act; publisher metadata says commencement is set by the King, so do not treat as operative before commencement. | [no-53](../documents/references/no-53-new-public-administration-act-lov-2025-06-20-81.md) |
 | `no-54` | [Current EØS Worker Mobility Act, LOV-2012-12-14-81](https://lovdata.no/lov/2012-12-14-81) | `eea_worker_mobility_legislation` | accepted official external reference; link only | Current EØS worker-mobility implementing statute. The 1992 predecessor is repealed; preserve this record’s Nynorsk text and EEA adaptations. | [no-54](../documents/references/no-54-current-e-s-worker-mobility-act-lov-2012-12-14-81.md) |
+
+
+## Legalize-no crosswalk (29 October 2026)
+
+The following Legalize files were matched to official records already listed in this pack:
+
+| Existing source | Legalize candidate file | Crosswalk disposition |
+|---|---|---|
+| no-06 Utlendingsloven, LOV-2008-05-15-35 | [`no/LOV-2008-05-15-35.md`](https://github.com/legalize-dev/legalize-no/blob/729ce30333de9d6f9f1e5faf537999cf42bc2a2f/no/LOV-2008-05-15-35.md) | Identity confirmed. Candidate metadata names amendment LOV-2025-06-20-96; official Lovdata material also exposes later 2026 changes to the Act. Do not treat this file as the current consolidated text without an exact-version comparison. |
+| no-08 EØS-loven, LOV-1992-11-27-109 | [`no/LOV-1992-11-27-109.md`](https://github.com/legalize-dev/legalize-no/blob/729ce30333de9d6f9f1e5faf537999cf42bc2a2f/no/LOV-1992-11-27-109.md) | Identity confirmed. The Legalize file is a candidate snapshot; its `last_updated` field is the original 1994 date, not proof of present version status. |
+| no-54 EØS-arbeidstakarlova, LOV-2012-12-14-81 | [`no/LOV-2012-12-14-81.md`](https://github.com/legalize-dev/legalize-no/blob/729ce30333de9d6f9f1e5faf537999cf42bc2a2f/no/LOV-2012-12-14-81.md) | Identity confirmed as an EEA worker-mobility statute. Keep the EEA incorporation and the official current source record as the controlling version evidence. |
+
+Legalize-no's README states that its input is Lovdata's current-laws public-data package; central regulations are not included in that package, amendment history is not represented by the free-data extract, and images are omitted. Therefore the Legalize route does **not** fill the existing no-07 Utlendingsforskriften gap or no-05 Avdeling II/regional-regulation gap. It must not be described as a regulations retrieval method.
+
+**Use and attribution:** For an individual candidate, cite Lovdata's official law record and attribute the reused data to Stiftelsen Lovdata under NLOD 2.0, with the Legalize-no repository and pinned revision as the intermediary. Do not bulk-copy or systematically extract the dataset; Lovdata's terms distinguish single-law reuse from bulk extraction. The repo's MIT license covers pipeline code, not a separate content grant.
+
+**Conversion rules:** preserve Bokmål, formal identifiers, chapters/sections, lists, notes and footnotes; record the exact Legalize commit and source record; compare complete body and key EEA provisions against the same official Lovdata version; distinguish original publication date from amendment/effective dates; mark omitted images and attachments; never promote based on repository date or hash alone. No Legalize file is accepted as a retained source text in this review.
+
+<!-- source-identity-inventory:start -->
+## Source identity crosswalk
+
+Canonical rows: **54**; provisional unique IDs: **54**; unresolved entries: **2**. This crosswalk preserves catalogue IDs, links external-reference and local-artifact representations to a source identity, and keeps acceptance status separate.
+
+| Existing entry ID | Canonical source identity | Resolution | Representations | Catalogued statuses | Status record IDs |
+|---|---|---|---|---|---|
+| `no-01` | `no:url:3f7d71cc0d2e3fe3f075` | resolved | official_reference/no/undated | accepted_external_reference | — |
+| `no-02` | `no:url:36591006013043c0c6bf` | resolved | official_reference/no/undated | accepted_external_reference | — |
+| `no-03` | `no:url:dfe14bf9d5d3e7f03e23` | resolved | official_reference/no/undated | accepted_external_reference | — |
+| `no-04` | `no:ambiguous:no-04:646eb066904f` | unresolved | official_reference/no/undated | accepted_external_reference | — |
+| `no-05` | `no:ambiguous:no-05:61ad860bb480` | unresolved | official_reference/no/undated | not_relied_upon | — |
+| `no-06` | `no:url:44c69f11d2a22523fb71` | resolved | official_reference/no/undated | accepted_external_reference | — |
+| `no-07` | `no:url:024ca356091c41a78596` | resolved | official_reference/no/undated | accepted_external_reference, not_relied_upon | — |
+| `no-08` | `no:url:40c31cc928a572d87768` | resolved | official_reference/no/undated | accepted_external_reference, candidate | — |
+| `no-09` | `no:url:189c0b84546d476df180` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `no-10` | `no:url:e50cc885170d76a75d86` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `no-11` | `no:url:e3bfbf30a28fb6ee8518` | resolved | official_reference/no/undated | accepted_external_reference | — |
+| `no-12` | `no:url:7f1e72c2007edff9148d` | resolved | official_reference/no/undated | accepted_external_reference | — |
+| `no-13` | `no:url:efb88945580fe6af04f8` | resolved | official_reference/no/undated | accepted_external_reference | — |
+| `no-14` | `no:url:59174e1e9f368eb1ba53` | resolved | official_reference/no/undated | accepted_external_reference | — |
+| `no-15` | `no:url:23d486ef21ee10ff20e2` | resolved | official_reference/no/undated | accepted_external_reference | — |
+| `no-16` | `no:url:1828ba2d25af11ed0cc7` | resolved | official_reference/no/undated | accepted_external_reference | — |
+| `no-17` | `no:url:9f6119082de680b5dd64` | resolved | official_reference/no/undated | accepted_external_reference | — |
+| `no-18` | `no:url:d004859e59c7eadf3903` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `no-19` | `no:url:fe5270c23ac05736093e` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `no-20` | `no:url:602afc24de87e76dac5f` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `no-21` | `no:url:188f41e4b207062b3c50` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `no-22` | `no:url:3e14149e4885f8aae603` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `no-23` | `no:url:cb1d7539105998955c42` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `no-24` | `no:url:9d7434858d8898972103` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `no-25` | `no:url:85e13ad0c508d2d875b0` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `no-26` | `no:url:95794e8f31e96a52cd39` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `no-27` | `no:url:420ba64bf2966a6c1713` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `no-28` | `no:url:91ff409f1ab58662ba26` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `no-29` | `no:url:70ca6eca40c349681cc5` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `no-30` | `no:url:e7b8a9ec9eb31f2d7902` | resolved | official_reference/no/undated | pending | — |
+| `no-31` | `no:url:f34925e77f3f7bc4d976` | resolved | official_reference/no/undated | accepted_external_reference | — |
+| `no-32` | `no:url:de90df1b03ab4af97df4` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `no-33` | `no:url:fe056f8d61191dee360d` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `no-34` | `no:url:461b16ee9af81993a4c1` | resolved | official_reference/no/undated | accepted_external_reference | — |
+| `no-35` | `no:url:1dbebab6ef847f2d3be1` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `no-36` | `no:url:9332e4748d374cc9f86f` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `no-37` | `no:url:bd945b9d235388d40f02` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `no-38` | `no:url:2d68a053fb150fafd082` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `no-39` | `no:url:68aedfb3e18946e96428` | resolved | official_reference/no/undated | accepted_external_reference | — |
+| `no-40` | `no:url:41d9043deaed21288c7d` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `no-41` | `no:url:265f4aabd0fb61c2afd5` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `no-42` | `no:url:7bfaa61fb3e21793820a` | resolved | official_reference/no/undated | accepted_external_reference | — |
+| `no-43` | `no:url:e72bc38e0b9468617ebe` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `no-44` | `no:url:31aa5599cf0999255153` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `no-45` | `no:url:b372b68205f1f93c31b1` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `no-46` | `no:url:882e8ca82745a7973018` | resolved | official_reference/no/undated | accepted_external_reference | — |
+| `no-47` | `no:url:f9be900ca9fd6206280f` | resolved | official_reference/no/undated | accepted_external_reference, discovery | — |
+| `no-48` | `no:url:a0c5d355f1a9e3478a90` | resolved | official_reference/no/undated | accepted_external_reference | — |
+| `no-49` | `no:url:67f698be5fcd52927d0b` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `no-50` | `no:url:0841c7d32f18e98e8137` | resolved | official_reference/no/undated | accepted_external_reference | — |
+| `no-51` | `no:url:47d88fbb270816842bf0` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `no-52` | `no:url:fc62dd0c277e4792fa41` | resolved | official_reference/no/undated | accepted_external_reference | — |
+| `no-53` | `no:url:f325aa184568318b2ff1` | resolved | official_reference/no/undated | accepted_external_reference | — |
+| `no-54` | `no:url:66a571558ab053f158bd` | resolved | official_reference/nn/undated | accepted_external_reference, candidate | — |
+<!-- source-identity-inventory:end -->

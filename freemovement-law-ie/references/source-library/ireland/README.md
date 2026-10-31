@@ -1,13 +1,14 @@
 # Ireland national source pack
 
-**Review date:** 24 October 2026
+**Review date:** 29 October 2026
 
 **State:** scoped official references accepted; selected local statutory texts accepted; topic and country completion remain open.
 
 ## What is in the pack
 
 - The register contains 51 official source references, each accepted only for its recorded purpose and scope.
-- Eleven reviewed eISB legal texts are stored under `documents/legislation/`. They are exact made/enacted versions, not a reconstructed current code.
+- Eleven reviewed eISB legal texts are stored under `documents/legislation/`; they are exact made/enacted versions, not a reconstructed current code. Eight maintained Markdown guidance/procedure summaries are stored under `documents/guidance/` (19 accepted local source documents total).
+- Eight maintained source summaries are stored under `documents/guidance/`: EEA/Swiss family entry (ie-19), family route selection (ie-22), Irish-national join-family visa (ie-24), visa-required nationality guidance (ie-25), visa appeal guidance (ie-26), the 2026 short-stay appeal change (ie-27), AVATS application instructions (ie-28), and High Court Practice Direction HC140 (ie-48).
 - Current Law Reform Commission Revised Act links are separately recorded for the Immigration Act 2004, Freedom of Information Act 2014 and Data Protection Act 2018. Each is an administrative consolidation with its own stated cutoff and disclaimer.
 - Fifteen other page conversions are retained as private research provenance in the EU Source Update Monitor archive; 25 references are link-only. No candidate, capture or retrieval-manifest copies remain in this pack.
 - Topic coverage accepted: 0. Ireland review complete: no.
@@ -20,7 +21,7 @@ Use the [source list](references/source-list.md), [candidate/source register](re
 - S.I. No. 548/2015 is held as made, with its 2021 and 2025 amendments separately held. The files do not assert a consolidated current text.
 - The static EUTR1 PDF and 2025 explanatory leaflet are dated. Current ISD instructions use the Customer Service Portal and permit applicants to request paper forms there.
 - Current ISD guidance says an EU Treaty Rights decision can take up to six months. The gov.ie page updated 11 April 2025 says 12 months; that discrepancy remains recorded for human review.
-- Current short-stay visa appeal instructions include the 1 June 2026 change and its EU Free Movement Directive exception.
+- Current short-stay visa appeal instructions include the 1 June 2026 change and its EU Free Movement Directive exception. The gov.ie announcement URL returned HTTP 403 on 29 October 2026; the summary records only the rule corroborated by ISD. ISD's nationality page also retains a March 2025 update date and a May 2018 Libya notice, so check current status before relying on it.
 
 ## Captures and replay
 

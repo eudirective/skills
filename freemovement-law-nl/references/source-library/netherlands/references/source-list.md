@@ -1,6 +1,6 @@
-# Netherlands official source list (source review 21 October 2026; additional review and local-copy disposition 25 October 2026)
+# Netherlands official source list (source review 21 October 2026; additional review and local-copy disposition 29 October 2026)
 
-**Status:** 63 unique source records; 60 official external references accepted within scope; 3 obsolete or unavailable exact routes not relied upon; 10 accepted local texts; 0 topics accepted as adequate; country review incomplete.
+**Status:** 63 unique source records; 60 official external references accepted within scope; 3 obsolete or unavailable exact routes not relied upon; 13 accepted local texts; 0 topics accepted as adequate; country review incomplete.
 
 The wider 52-record inventory and earlier eight-record focused inventory are reconciled here. Five records overlap; three focused-only records and seven issue-led sources formed the 62-source inventory. The IND Proclaimer is an additional source record (nl-63). The Monitor archive retains the earlier inventories and raw captures as provenance. Ten reviewed source texts were promoted under `documents/`. Of the 13 archived candidate-inventory records, 10 now have accepted document dispositions, two are duplicates or superseded, and the candidate manifest is provenance only.
 
@@ -17,16 +17,16 @@ The wider 52-record inventory and earlier eight-record focused inventory are rec
 | `nl-09` | [Regeling elektronische publicaties (BWBR0045086)](https://wetten.overheid.nl/BWBR0045086/) | `electronic_publication_legislation` | Accepted link | Indexed result reports version current from 1 January 2026 and XML/publication standards references. |
 | `nl-10` | [Vreemdelingenwet 2000 (BWBR0011823)](https://wetten.overheid.nl/BWBR0011823/) ([local text](../documents/legislation/nl-vreemdelingenwet-2000-2026-09-01.md)) | `immigration_primary_legislation` | Accepted link; local text accepted | Local copy accepted: publisher canonical version from 1 September 2026; page metadata modified 17 October 2026; 219 article headings matched. The 25 October live recheck returned HTTP 429, so latest status is unconfirmed. |
 | `nl-11` | [Vreemdelingenbesluit 2000 (BWBR0011825)](https://wetten.overheid.nl/BWBR0011825/) ([local text](../documents/legislation/nl-vreemdelingenbesluit-2000-2026-09-25.md)) | `immigration_implementing_regulation` | Accepted link; local text accepted | Local copy accepted: publisher canonical version from 25 September 2026; page metadata modified 16 October 2026; 413 article headings matched. The 25 October live recheck returned HTTP 429, so latest status is unconfirmed. |
-| `nl-12` | [Voorschrift Vreemdelingen 2000 (BWBR0012002)](https://wetten.overheid.nl/BWBR0012002/) | `immigration_implementing_rule` | Accepted link | An indexed result inspected in April 2026 reported effect from 1 April 2026 and a future change from 1 June 2026; October state is unconfirmed. |
-| `nl-13` | [Vreemdelingencirculaire 2000 (C) (BWBR0012288)](https://wetten.overheid.nl/BWBR0012288/) | `immigration_policy_circular` | Accepted link | An indexed result inspected in April 2026 reported the text current from 4 April 2026; IND points EU citizens to section B10/2. October text is not confirmed. |
+| `nl-12` | [Voorschrift Vreemdelingen 2000 (BWBR0012002)](https://wetten.overheid.nl/BWBR0012002/) ([maintained source note](../documents/legislation/nl-voorschrift-vreemdelingen-2000-maintained-2026-10-29.md)) | `immigration_implementing_rule` | Accepted link; maintained official reference note | Official Staatscourant 2026, 35717 is the 205th amendment, published 14 October and effective 15 October 2026; it replaces Annex 1. Current consolidated edition and complete amendment history were not verified because Wetten.nl was inaccessible. |
+| `nl-13` | [Vreemdelingencirculaire 2000 (C) (BWBR0012288)](https://wetten.overheid.nl/BWBR0012288/) ([maintained source note](../documents/legislation/nl-vreemdelingencirculaire-2000-maintained-2026-10-29.md)) | `immigration_policy_circular` | Accepted link; maintained official reference note | Latest located amendment: WBV 2026/21, signed 30 September, published 2 October and effective 1 October 2026. Consolidated Wetten.nl edition and later amendments were not independently verified. |
 | `nl-14` | [Algemene wet bestuursrecht (BWBR0005537)](https://wetten.overheid.nl/BWBR0005537/) ([local text](../documents/legislation/nl-algemene-wet-bestuursrecht-2026-08-15.md)) | `administrative_procedure_legislation` | Accepted link; local text accepted | Local copy accepted: publisher canonical version from 15 August 2026; page metadata modified 16 October 2026; 584 article headings matched. The 25 October live recheck returned HTTP 429, so latest status is unconfirmed. |
 | `nl-15` | [IND EU, EEA or Swiss citizens parent hub](https://ind.nl/en/residence-permits/eu-eea-or-swiss-citizens) | `official_residence_guidance_index` | Accepted link | Current hub links separate stay, family, Dutch-return, permanent-residence, UK agreement and registration pages. |
 | `nl-16` | [Staying in the Netherlands as an EU, EEA or Swiss citizen](https://ind.nl/en/residence-permits/eu-eea-or-swiss-citizens/staying-in-the-netherlands-as-an-eu-eea-or-swiss-citizen) ([local text](../documents/guidance/nl-ind-staying-eu-eea-swiss-2026-07-10.md)) | `free_movement_guidance` | Accepted link; local text accepted | Local copy accepted under the IND Proclaimer: last update 10 July 2026; 20 page headings present; official page result rechecked 25 October. |
 | `nl-17` | [Registering with the IND as an EU, EEA or Swiss citizen](https://ind.nl/en/residence-permits/eu-eea-or-swiss-citizens/registering-with-the-ind-as-an-eu-eea-or-swiss-citizen) ([local text](../documents/guidance/nl-ind-register-eu-eea-swiss-2026-10-08.md)) | `free_movement_registration_guidance` | Accepted link; local text accepted | Accepted under the IND Proclaimer. The archived raw page and body show 8 October 2026; the candidate header’s 17 June date was incorrect. The live page checked 25 October confirms 8 October. Linked PDFs are not included in the local text. |
 | `nl-18` | [Verification against EU law for Union citizen family members](https://ind.nl/en/residence-permits/family-and-partner/verification-against-eu-law-for-union-citizen-family-members) ([local text](../documents/guidance/nl-ind-eu-family-verification-2026-09-25.md)) | `eu_family_residence_guidance` | Accepted link; local text accepted | Local copy accepted under the IND Proclaimer: last update 25 September 2026; 44 page headings present; official page result rechecked 25 October. |
-| `nl-19` | [Returning with a Dutch national from another EU/EEA country or Switzerland](https://ind.nl/en/residence-permits/eu-eea-or-swiss-citizens/returning-with-a-dutch-national-from-another-eueea-country-or-switzerland) | `mobile_national_family_guidance` | Accepted link | Last updated 7 October 2026; describes EU-law return conditions and separately the pre-cutoff UK route. |
-| `nl-20` | [Permanent residency for Union citizens and their family](https://ind.nl/en/residence-permits/eu-eea-or-swiss-citizens/permanent-residency-for-union-citizens-and-their-family) | `permanent_free_movement_guidance` | Accepted link | Last updated 20 May 2026; includes EU/EEA/Swiss citizens, family members and qualifying Dutch-family cases. |
-| `nl-21` | [Staying in the Netherlands if situation with the EU citizen has changed](https://ind.nl/en/replace-extend-renew-and-change/change/staying-in-the-netherlands-if-your-situation-with-the-eu-citizen-has-changed) | `retained_family_residence_guidance` | Accepted link | Last updated 19 June 2026; cites Aliens Decree Articles 8.14 and 8.15 and Directive 2004/38 Articles 12 and 13. |
+| `nl-19` | [Returning with a Dutch national from another EU/EEA country or Switzerland](https://ind.nl/en/residence-permits/eu-eea-or-swiss-citizens/returning-with-a-dutch-national-from-another-eueea-country-or-switzerland) | `mobile_national_family_guidance` | Accepted link; full visible English text retained locally | Last updated 7 October 2026; full visible English page text checked and retained 29 October 2026 under the IND Proclaimer. Linked forms remain separate. |
+| `nl-20` | [Permanent residency for Union citizens and their family](https://ind.nl/en/residence-permits/eu-eea-or-swiss-citizens/permanent-residency-for-union-citizens-and-their-family) | `permanent_free_movement_guidance` | Accepted link; full visible English text retained locally | Last updated 20 May 2026; full visible page checked and retained 29 October 2026 under the IND Proclaimer. Form 8004-2026/1 remains separate. |
+| `nl-21` | [Staying in the Netherlands if situation with the EU citizen has changed](https://ind.nl/en/replace-extend-renew-and-change/change/staying-in-the-netherlands-if-your-situation-with-the-eu-citizen-has-changed) | `retained_family_residence_guidance` | Accepted link; full visible English text retained locally | Last updated 19 June 2026; full visible page text checked and retained 29 October under the IND Proclaimer. Linked forms remain separate. |
 | `nl-22` | [Temporary residency based on Brexit Withdrawal Agreement](https://ind.nl/en/residence-permits/withdrawal-agreement-brexit/temporary-residency-based-on-withdrawal-agreement) | `withdrawal_agreement_guidance` | Accepted link | Last updated 20 May 2026; describes residence/family criteria tied to pre-2021 facts. |
 | `nl-23` | [Residence permit for partner (ordinary third-country route)](https://ind.nl/en/residence-permits/family-and-partner/residence-permit-for-partner) | `third_country_family_residence_guidance` | Accepted link | Current page result observed 18 October 2026; visible update date not captured. |
 | `nl-24` | [Residence permit for minor child to stay with parent](https://ind.nl/en/residence-permits/family-and-partner/residence-permit-for-minor-child-to-stay-with-parent) | `third_country_child_residence_guidance` | Accepted link | Parent hub reviewed 18 October 2026; child page date not captured. |
@@ -82,3 +82,75 @@ When direct page access, current version, court publication scope, appointment r
 ## Boundaries
 
 An accepted link is usable for the named source or service within its recorded scope. Local text copies have separate review and file records. Neither link nor copy acceptance establishes topic coverage or legal sufficiency, or marks the Netherlands review complete.
+
+<!-- source-identity-inventory:start -->
+## Source identity crosswalk
+
+Canonical rows: **63**; provisional unique IDs: **63**; unresolved entries: **0**. This crosswalk preserves catalogue IDs, links external-reference and local-artifact representations to a source identity, and keeps acceptance status separate.
+
+| Existing entry ID | Canonical source identity | Resolution | Representations | Catalogued statuses | Status record IDs |
+|---|---|---|---|---|---|
+| `nl-01` | `nl:url:71f156333ac2447aa523` | resolved | official_reference/en/undated | accepted_external_reference, discovery | — |
+| `nl-02` | `nl:url:4e5ce3bed8064378d566` | resolved | official_reference/nl/undated | accepted_external_reference, discovery | — |
+| `nl-03` | `nl:url:0cb09a75aff907de4024` | resolved | official_reference/nl/undated | accepted_external_reference, discovery | — |
+| `nl-04` | `nl:url:3816f609cacdcae72e6f` | resolved | official_reference/nl/undated | accepted_external_reference, discovery | — |
+| `nl-05` | `nl:url:09fcd35105d2c55ac65d` | resolved | official_reference/nl/undated | accepted_external_reference | — |
+| `nl-06` | `nl:url:b5c04f4bcae6c30664c7` | resolved | official_reference/nl/undated | accepted_external_reference | — |
+| `nl-07` | `nl:url:33b147c7858b63f881c8` | resolved | official_reference/nl/undated | accepted_external_reference | — |
+| `nl-08` | `nl:url:38c3f9ed81f8028fa0f0` | resolved | official_reference/nl/undated | accepted_external_reference | — |
+| `nl-09` | `nl:url:629a2e30ec12aa542601` | resolved | official_reference/nl/undated | accepted_external_reference | — |
+| `nl-10` | `nl:url:21770a997c37e7c7b39b` | resolved | local_artifact/nl/2000 (`documents/legislation/nl-vreemdelingenwet-2000-2026-09-01.md`)<br>official_reference/nl/undated | accepted_external_reference, accepted_local_copy | — |
+| `nl-11` | `nl:url:e0dcf4e5fc303c4fabca` | resolved | local_artifact/nl/2000 (`documents/legislation/nl-vreemdelingenbesluit-2000-2026-09-25.md`)<br>official_reference/nl/undated | accepted_external_reference, accepted_local_copy | — |
+| `nl-12` | `nl:url:02c90c7e0fa44c80ee20` | resolved | official_reference/nl/undated | accepted_external_reference | — |
+| `nl-13` | `nl:url:d1482fe5adba228e5ba8` | resolved | official_reference/nl/undated | accepted_external_reference | — |
+| `nl-14` | `nl:url:337ef49f342c6d572912` | resolved | local_artifact/nl/2026-08-15 (`documents/legislation/nl-algemene-wet-bestuursrecht-2026-08-15.md`)<br>official_reference/nl/undated | accepted_external_reference, accepted_local_copy | — |
+| `nl-15` | `nl:url:44f7d127029c16d6fa3e` | resolved | official_reference/en/undated | accepted_external_reference, discovery | — |
+| `nl-16` | `nl:url:92d69c4d3deafa5b4549` | resolved | local_artifact/en/2026-07-10 (`documents/guidance/nl-ind-staying-eu-eea-swiss-2026-07-10.md`)<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `nl-17` | `nl:url:d663544e3b8b803911a5` | resolved | local_artifact/en/2026-10-08 (`documents/guidance/nl-ind-register-eu-eea-swiss-2026-10-08.md`)<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `nl-18` | `nl:url:4804812cd9d6aa484f30` | resolved | local_artifact/en/2026-09-25 (`documents/guidance/nl-ind-eu-family-verification-2026-09-25.md`)<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `nl-19` | `nl:url:d07b8d8661995377fc9e` | resolved | local_artifact/en/2026-10-07 (`documents/guidance/nl-ind-return-dutch-national-2026-10-07.md`)<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `nl-20` | `nl:url:f7ded2255bfae9ae9e08` | resolved | local_artifact/en/2026-05-20 (`documents/guidance/nl-ind-permanent-residency-2026-05-20.md`)<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `nl-21` | `nl:url:55aa5e4e420b63ee1811` | resolved | local_artifact/en/2026-06-19 (`documents/guidance/nl-ind-retained-family-residence-2026-06-19.md`)<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `nl-22` | `nl:url:bf621ad1a5f4df528aa9` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-23` | `nl:url:34909310f5a1f6befb19` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-24` | `nl:url:468c2aec6ec6aa277770` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-25` | `nl:url:480e9e7c588412f71d52` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-26` | `nl:url:d0686edafe29dbedb5d4` | resolved | local_artifact/en/2026-08-10 (`documents/guidance/nl-ind-object-appeal-decision-2026-08-10.md`)<br>official_reference/en/undated | accepted_external_reference, accepted_local_copy | — |
+| `nl-27` | `nl:url:95b05f9b2984ade11780` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-28` | `nl:url:13b0f1cec2746bb758d3` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-29` | `nl:url:a7df17600ba48a605889` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-30` | `nl:url:5be8959bbb0adfdae2a0` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-31` | `nl:url:41eae193797d4d05270f` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-32` | `nl:url:1be6eb895e34514025b8` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-33` | `nl:url:b10d6fef0e316eb8d89a` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-34` | `nl:url:962456c112996b0f08da` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-35` | `nl:url:8830ed85e99091aec981` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-36` | `nl:url:4a2f3b647fb74fee817b` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-37` | `nl:url:cbc2957413c94ccce634` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-38` | `nl:url:e0dca4007745dca904b8` | resolved | official_reference/en/undated | not_relied_upon | — |
+| `nl-39` | `nl:url:aa852b0dec7c1c5ea8a6` | resolved | official_reference/en/undated | not_relied_upon | — |
+| `nl-40` | `nl:url:2cb12430eb8e686fafda` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-41` | `nl:url:dc1e122a526f90e4a2b0` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-42` | `nl:url:097a920479ede620dced` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-43` | `nl:url:12b2eee2abdd91058056` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-44` | `nl:url:f859280fa3bb78bb4b86` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-45` | `nl:url:384c6b76a2cfb26b9afa` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-46` | `nl:url:d252cd709e605962bd84` | resolved | official_reference/nl/undated | accepted_external_reference | — |
+| `nl-47` | `nl:url:abd58427acc230157402` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-48` | `nl:url:2eace4a8fb65ac6e42a9` | resolved | official_reference/nl/undated | accepted_external_reference | — |
+| `nl-49` | `nl:url:e0c04fd42916d950dc2e` | resolved | official_reference/nl/undated | not_relied_upon | — |
+| `nl-50` | `nl:url:b9c52091f856c96b632b` | resolved | official_reference/nl/undated | accepted_external_reference | — |
+| `nl-51` | `nl:url:a60c5304b934840cb9a3` | resolved | official_reference/nl/undated | accepted_external_reference | — |
+| `nl-52` | `nl:url:66a03eb159db46688607` | resolved | official_reference/nl/undated | accepted_external_reference | — |
+| `nl-53` | `nl:url:42d975fc50c51ba6f2bf` | resolved | local_artifact/nl/2026-07-01 (`documents/legislation/nl-burgerlijk-wetboek-boek-10-2026-07-01.md`)<br>official_reference/nl/undated | accepted_external_reference, accepted_local_copy | — |
+| `nl-54` | `nl:url:7f344d693e1ba40fc7b3` | resolved | local_artifact/nl/2025-07-05 (`documents/legislation/nl-burgerlijk-wetboek-boek-1-2025-07-05.md`)<br>official_reference/nl/undated | accepted_external_reference, accepted_local_copy | — |
+| `nl-55` | `nl:url:cb893e4d40f614aa5a3e` | resolved | local_artifact/nl/2018-08-01 (`documents/legislation/nl-wet-opneming-buitenlandse-kinderen-ter-adoptie-2018-08-01.md`)<br>official_reference/nl/undated | accepted_external_reference, accepted_local_copy | — |
+| `nl-56` | `nl:url:c7adc6719971d8267325` | resolved | official_reference/nl/undated | accepted_external_reference | — |
+| `nl-57` | `nl:url:426b79f147e29e4c77b4` | resolved | official_reference/nl/undated | accepted_external_reference | — |
+| `nl-58` | `nl:url:855fbf5464e9a0b19ab9` | resolved | official_reference/nl/undated | accepted_external_reference | — |
+| `nl-59` | `nl:url:1af22e00cb91cb6fa695` | resolved | official_reference/nl/undated | accepted_external_reference | — |
+| `nl-60` | `nl:url:b328f217aaae9d6f808a` | resolved | official_reference/en/undated | accepted_external_reference | — |
+| `nl-61` | `nl:url:3d087e5181c31a8b59bb` | resolved | official_reference/nl/undated | accepted_external_reference | — |
+| `nl-62` | `nl:url:afe90b56029485886e4b` | resolved | official_reference/nl/undated | accepted_external_reference | — |
+| `nl-63` | `nl:url:ec198ebbe485aaa180f2` | resolved | official_reference/en/undated | accepted_external_reference | — |
+<!-- source-identity-inventory:end -->

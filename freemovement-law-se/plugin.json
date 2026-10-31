@@ -5,11 +5,25 @@
     "name": "eudirective"
   },
   "description": "Sweden national source library for FreeMovement consultations.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [],
+        "category": "Other",
+        "composerIcon": "./assets/eudirective-flag-icon.svg",
+        "developerName": "eudirective",
+        "displayName": "fm-sweden",
+        "logo": "./assets/eudirective-flag-icon.svg",
+        "longDescription": "Sweden national source records for use with freemovement-law. Official publishers remain the primary source for current-law checks.",
+        "shortDescription": "Sweden national sources"
+      }
+    }
+  },
   "keywords": [
     "eu-free-movement",
     "national-source-library",
     "se"
   ],
   "name": "fm-sweden",
-  "version": "0.1.6"
+  "version": "0.1.13"
 }

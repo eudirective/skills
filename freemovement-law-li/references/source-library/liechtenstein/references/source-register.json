@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "jurisdiction": "LI",
-  "updated": "2026-10-25",
+  "updated": "2026-10-29",
   "inventory_scope": "Reviewed official sources concerning Liechtenstein residence and free movement, related procedure and remedies, and official operational guidance. EEA, Swiss, and third-country legal routes remain distinct.",
   "source_rules_file": null,
   "official_hosts": [
@@ -185,6 +185,26 @@
       ]
     },
     {
+      "id": "li-12",
+      "class": "bilateral_visa_framework",
+      "title": "Framework agreement between Liechtenstein and Switzerland on visa procedures, entry, residence, and border-area police cooperation",
+      "publisher": "Government Legal Services (Rechtsdienst der Regierung), Liechtenstein",
+      "url": "https://www.gesetze.li/konso/2009217000",
+      "language": "German",
+      "version": "LGBl 2009.217; concluded 3 December 2008; entered into force for Liechtenstein 19 December 2011; Lilex consolidated PDF reviewed 2026-10-29 displays Fassung 19.12.2011.",
+      "scope": "Bilateral framework for visa procedure, entry, residence, and specified border-area police cooperation. Switzerland issues visas on Liechtenstein's behalf under the stated allocation; detailed procedures are supplemented by separate agreements. It preserves EEA and EU–Swiss free-movement obligations and does not make Liechtenstein and Swiss immigration rules identical.",
+      "status": "accepted_external_reference_only",
+      "checked_on": "2026-10-29",
+      "local_path": null,
+      "limitations": [
+        "Lilex consolidated text is informational and has no legal effect; the signed State Law Gazette publication is legally authentic.",
+        "A maintained article map is available at documents/treaties/li-liechtenstein-switzerland-visa-residence-framework.md; this is not a verbatim local copy of the treaty.",
+        "The displayed consolidation is dated 19 December 2011. Later legal changes or a termination notice were not independently ruled out.",
+        "Implementing agreements, current Schengen rules, and Swiss mission-specific procedures require separate review.",
+        "Source acceptance is separate from topic coverage and country completion."
+      ]
+    },
+    {
       "id": "li-13",
       "class": "swiss_liechtenstein_free_movement_treaty",
       "title": "Protocol regarding free movement of persons between Switzerland and Liechtenstein",
@@ -250,6 +270,19 @@
       "local_path": null
     },
     {
+      "id": "li-27",
+      "class": "immigration_application_form",
+      "title": "Migration and Passport Office family-reunification online form",
+      "publisher": "Migration and Passport Office (Ausländer- und Passamt, APA), Liechtenstein",
+      "url": "https://formulare.llv.li/formserver_APA/start.do?generalid=APA_FN",
+      "language": "German; English option displayed but English form view not verified",
+      "version": "Interactive form initial step checked 2026-10-29; no publication or revision date shown; five-step indicator displayed.",
+      "scope": "Official interactive family-reunification application entry point. Maintained Markdown note maps the verified initial step only; later screens and all submission requirements remain unverified.",
+      "status": "accepted_external_reference_only",
+      "checked_on": "2026-10-29",
+      "local_path": null
+    },
+    {
       "id": "li-32",
       "class": "judicial_structure",
       "title": "Oberster Gerichtshof — institutional and decision-publication information",
@@ -300,6 +333,33 @@
       "status": "accepted_external_reference_only",
       "checked_on": "2026-10-25",
       "local_path": null
+    },
+    {
+      "id": "li-41",
+      "class": "eea_register_implementing_regulation",
+      "title": "Verordnung vom 15. Dezember 2020 über das EWR-Register (EWR-RegV), LR 170.511",
+      "publisher": "Government Legal Services (Rechtsdienst der Regierung), Liechtenstein",
+      "url": "https://www.gesetze.li/konso/2020465000",
+      "language": "de",
+      "version": "LGBl 2020.465, adopted 15 December 2020 and published 18 December 2020. Official Lilex record identifies LR 170.511; the 2026 systematic register lists LGBl 2020.465. Checked 2026-10-29.",
+      "scope": "Official Liechtenstein regulation governing the EWR-Register, a cross-reference and publication dependency for the pack's EEA-law records. It does not itself establish the current incorporation or applicability of each EEA act.",
+      "status": "accepted_external_reference_only",
+      "checked_on": "2026-10-29",
+      "local_path": null,
+      "limitations": [
+        "Official Lilex consolidations are informational; the signed State Law Gazette is legally authentic.",
+        "Link-only source record; no statutory text copy, topic adequacy, or country completeness is accepted.",
+        "The EWR-Register is an index and does not establish each listed act's legal force or individual applicability.",
+        "Legalize-li is a third-party candidate-snapshot route; the official Lilex record remains primary."
+      ],
+      "legalize_candidate_snapshot": {
+        "repository": "legalize-dev/legalize-li",
+        "revision": "1b19742b74b852c50b50bde418b8045db774b2ba",
+        "path": "li/LGBl-2020-465.md",
+        "metadata_last_updated": "2021-02-01",
+        "accepted_as_current_text": false,
+        "attribution": "Government Legal Services/Lilex official text; Legalize-li repository and pinned revision"
+      }
     }
   ]
 }

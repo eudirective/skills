@@ -110,6 +110,8 @@ def make_research_records():
             "task_id": TASK_ID,
             "relation": "supports",
             "directness": "direct",
+            "inspection_status": "synthetic_fixture_only",
+            "source_access": {"channel": "synthetic_fixture", "status": "accessible"},
             "source": source,
             "pinpoint": f"Synthetic fixture marker {index}",
             "accessed_at": STAMP,
@@ -142,7 +144,7 @@ def make_research_records():
             "exceptions_note": "Fixture limitations explicitly retained.",
         })
     bundle = {
-        "contract_version": "0.1.0",
+        "contract_version": "0.4.0",
         "research_id": RESEARCH_ID,
         "plan_sha256": digest_obj(plan),
         "mode": "case",
@@ -668,7 +670,7 @@ class IntegratedControlledReleaseTests(unittest.TestCase):
         blocked = self.run_release()
         self.assertEqual(blocked.returncode, 2)
         self.assertEqual(blocked.stdout, b"")
-        self.assertIn(b"controlled_release_requires_receipt_0_5_or_0_6", blocked.stderr)
+        self.assertIn(b"controlled_release_requires_receipt_0_5_or_later", blocked.stderr)
 
     def assert_no_fixture_or_path_leak(self, result, *markers: bytes):
         combined = result.stdout + result.stderr

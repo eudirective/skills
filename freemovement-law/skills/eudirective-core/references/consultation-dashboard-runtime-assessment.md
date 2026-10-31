@@ -2,11 +2,11 @@
 
 ## Decision
 
-The full in-chat consultation board is an explicit audit and maintenance presentation. Ordinary applicant answers use concise prose and a short coverage note; material source or module changes may be reported briefly. The board remains native Markdown and does not require an MCP tool, hosted service, or custom UI. A skill can request that ChatGPT assemble it from the current conversation and recorded checks, but cannot force presentation or verify that every check ran. A local Codex shell can run the existing receipt gate and renderer when the exact plugin bundle and Python are available; this is a manual local path, not automatic ChatGPT integration.
+The consultation board is required by the core instructions after every substantive legal consultation, in Full or Limited mode. It remains native Markdown and does not require an MCP tool, hosted service, or custom UI. A skill can instruct ChatGPT to assemble it from the current conversation and recorded checks, but cannot force presentation or verify that every check ran. A local Codex shell can run the version 0.10.0 receipt gate and renderer when the exact plugin bundle and Python are available; the controlled-release command can append a wholly omitted board once in memory. This is a manual local path, not automatic ChatGPT integration.
 
 ## Layout supported by this package
 
-The following layout applies only to an explicitly requested audit, maintenance review, dashboard, or detailed verification report. It is not required after each skill invocation or routine change in consultation variables.
+The layout applies after every substantive legal consultation. It is refreshed when material case, proceeding, source, module or execution variables change; unrelated plugin mentions and non-case work do not need a case board.
 
 The canonical board uses a clear case title and jurisdiction/proceeding subtitle, an overall status callout, three metrics (**Issues reviewed**, **Supported / conditionally closed**, **Partial / open**), an issue-disposition bar with exact counts and percentages when all dispositions are recorded and there are at most 20 issues, readable issue cards, a separate execution/verification section, then sources, module use, and provenance limits. Direct-supported and conditionally-closed counts are split in the distribution legend even though the top metric combines them. Above 20 issues the renderer gives exact counts and percentages without the bar; if dispositions are incomplete it gives unknown counts and explains why the bar is unavailable. A short three-column Markdown table is the only permitted table; it can fall back to stacked metric lines on narrow clients. Every partial or open issue names the missing information and its effect.
 
@@ -24,11 +24,15 @@ A skill instruction cannot force ChatGPT to include the board, authenticate repo
 
 ## Implementation status
 
-- In-chat native Markdown board layout: specified in the core skill, routing guidance, and examples.
+- In-chat Full/Limited native Markdown board layout: specified in the core skill, routing guidance, and examples; not enforceable by an ordinary ChatGPT host hook.
+- Receipt schema 0.9.0 and additive 0.10.0 require a top-level Full/Limited consultation mode, independent coverage status, a new board on each substantive applicant-guidance or source-research response, and an issue-linked strategy assessment in the same record.
+- Strategy screen: five trigger groups, evidence references, actionable next step for triggered cases, and a specific missing/effect explanation for limited cases; model-declared and not proof that no trigger was omitted.
+- Local bounded repair: the opt-in controlled-release command may append the canonical board once only when it is entirely absent; malformed or conflicting board text blocks that local path.
 - Issue metrics and status bar: one three-column contract, four recorded disposition groups, and explicit unknown/out-of-scope handling; not a legal-completeness score.
-- Readable issue cards with missing-item/effect text: specified for the full board.
-- Local Codex rendering: existing route gate exposes the rendered Markdown directly through `--dashboard-only`; it reuses the current receipt schema and renderer.
+- Readable issue cards with missing-item/effect text: specified for both board modes.
+- Local Codex rendering: the route gate exposes rendered Markdown through `--dashboard-only`; schema 0.9.0 and 0.10.0 supply the top-level Full/Limited mode, independent coverage status, and strategy section. The local controlled-release command can append the canonical board once only when the answer omitted it entirely.
 - Separate execution/verification ledger: specified; model-led assessments remain distinct from observed runs.
 - Bundled-library matches, web-search discoveries, and module use: shown separately with overlap and unknown provenance handled explicitly.
 - Custom graphical renderer, hosted service, MCP UI, and host-enforced release gate: not provided.
-- Fresh-chat visual review: not performed. The historical test design is preserved at `consultation-dashboard-live-test-plan.md`, but is not a user task or maintenance prerequisite. Reopen only when a verified agent-controlled runtime is available or the requested scope changes.
+- Local synthetic regressions passed: strategy contract 10, dashboard 54, route gate 24, integrated release 12, P0 regressions 17, and issue selection 26; the component manifest also verified. These results cover declared structure and renderer behavior, not live model behavior or visual display in ChatGPT.
+- Fresh-chat behavioral and visual review: not executed because no agent-controlled runtime is available. Its exact synthetic scenarios and independent-grading plan are kept privately in fm-maintenance; this is not a user task. Keep behavior `not_feasible_current_runtime` / `not_executed`.

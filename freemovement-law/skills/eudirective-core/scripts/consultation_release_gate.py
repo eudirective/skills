@@ -11,11 +11,39 @@ import argparse
 import hashlib
 import json
 import os
+import re
 import sys
 from pathlib import Path
 
 from consultation_route_gate import RouteGateError, validate_route
 from contract_validate import ContractError, load_json, validate_obj
+
+
+BOARD_HEADING_PATTERN = re.compile(r"(?im)^#{1,6}\s*(?:[0-9]+[.)]\s*)?(?:freemovement-law\s*[—–:-]\s*)?(?:(?:full|limited|c27)\s+)*(?:(?:case(?:[- ]state)?|consultation)\s+(?:review|dashboard|board)|dashboard)\b[^\n]*")
+
+
+def _board_headings(markdown: str) -> list[str]:
+    """Find board headings in Markdown prose, excluding examples and nesting."""
+    visible: list[str] = []
+    fence: tuple[str, int] | None = None
+    for line in markdown.splitlines():
+        fence_match = re.match(r"^ {0,3}(`{3,}|~{3,})", line)
+        if fence is not None:
+            if (fence_match and fence_match.group(1)[0] == fence[0]
+                    and len(fence_match.group(1)) >= fence[1]
+                    and not line[fence_match.end():].strip()):
+                fence = None
+            continue
+        if fence_match:
+            marker = fence_match.group(1)
+            fence = (marker[0], len(marker))
+            continue
+        visible.append(line)
+    text = "\n".join(visible)
+    # A commented-out or blockquoted example is not the answer's consultation board.
+    text = re.sub(r"<!--.*?(?:-->|\Z)", "", text, flags=re.DOTALL)
+    text = re.sub(r"(?m)^ {0,3}>.*$", "", text)
+    return [match.group(0) for match in BOARD_HEADING_PATTERN.finditer(text)]
 
 
 class ReleaseBindingError(ValueError):
@@ -69,12 +97,82 @@ def validate_dashboard_rendered(result: dict, answer_bytes: bytes) -> None:
         raise ReleaseBindingError("dashboard_receipt_fingerprint_missing")
     if str(validation_record.get("result", "")).replace("_", " ") not in preview:
         raise ReleaseBindingError("dashboard_validation_result_missing")
+    if (re.search(r"(?m)^ {0,3}(?:`{3,}|~{3,})", preview)
+            or "<!--" in preview or "-->" in preview
+            or re.search(r"(?i)</?(?:pre|script|style|textarea|div|table|details)(?=[\s>])", preview)):
+        raise ReleaseBindingError("dashboard_contains_unsafe_markdown_block")
+    table = [line for line in preview.splitlines() if line.startswith("|")]
+    if table and (len(table) != 3 or any(line.count("|") != 4 for line in table)
+                  or not re.fullmatch(r"\|(?:\s*:?-{3,}:?\s*\|){3}", table[1])):
+        raise ReleaseBindingError("dashboard_metrics_table_invalid")
     try:
         answer = answer_bytes.decode("utf-8")
     except UnicodeDecodeError as error:
         raise ReleaseBindingError("answer_not_utf8_for_dashboard_check") from error
-    if not answer.rstrip().endswith(preview):
+    trimmed = answer.rstrip()
+    if not trimmed.endswith(preview):
         raise ReleaseBindingError("mandatory_dashboard_missing_or_not_at_end_of_answer")
+    start = len(trimmed) - len(preview)
+    prefix = trimmed[:start]
+    comment_open = False
+    for token in re.findall(r"<!--|-->", prefix):
+        if token == "<!--":
+            comment_open = True
+        elif comment_open:
+            comment_open = False
+    if comment_open:
+        raise ReleaseBindingError("dashboard_inside_unclosed_html_comment")
+    html_stack = []
+    for match in re.finditer(r"(?is)<(/?)(pre|script|style|textarea|div|table|details)(?=[\s>])[^>]*>", prefix):
+        closing, name = match.group(1), match.group(2).casefold()
+        if closing:
+            if name in html_stack:
+                html_stack = html_stack[:len(html_stack) - 1 - html_stack[::-1].index(name)]
+        elif not match.group(0).rstrip().endswith("/>"):
+            html_stack.append(name)
+    if html_stack:
+        raise ReleaseBindingError("dashboard_inside_unclosed_html_block")
+    fence = None
+    for line in prefix.splitlines():
+        nested = re.sub(r"^(?: {0,3}>[ \t]?)+", "", line)
+        match = re.match(r"^ {0,3}(`{3,}|~{3,})(.*)$", nested)
+        if not match:
+            continue
+        token, rest = match.groups()
+        if fence is None:
+            fence = token
+        elif token[0] == fence[0] and len(token) >= len(fence) and not rest.strip():
+            fence = None
+    if fence is not None:
+        raise ReleaseBindingError("dashboard_inside_unclosed_code_fence")
+    headings = _board_headings(answer)
+    if len(headings) > 1:
+        raise ReleaseBindingError("duplicate_or_conflicting_dashboard")
+    if len(headings) != 1 or (start and trimmed[start - 1] != "\n"):
+        raise ReleaseBindingError("dashboard_heading_not_standalone")
+
+
+def repair_dashboard_once(result: dict, answer_bytes: bytes) -> tuple[bytes, bool]:
+    """Append one canonical validated board when the answer omitted it entirely."""
+    try:
+        validate_dashboard_rendered(result, answer_bytes)
+        return answer_bytes, False
+    except ReleaseBindingError as error:
+        if str(error) != "mandatory_dashboard_missing_or_not_at_end_of_answer":
+            raise
+    preview = result.get("dashboard_preview")
+    if not isinstance(preview, str) or not preview:
+        raise ReleaseBindingError("mandatory_dashboard_preview_missing")
+    try:
+        answer = answer_bytes.decode("utf-8")
+    except UnicodeDecodeError as error:
+        raise ReleaseBindingError("answer_not_utf8_for_dashboard_repair") from error
+    if _board_headings(answer):
+        raise ReleaseBindingError("dashboard_present_but_invalid_cannot_be_repaired")
+    separator = b"\n" if answer_bytes.endswith(b"\n") else b"\n\n"
+    repaired = answer_bytes + separator + preview.encode("utf-8")
+    validate_dashboard_rendered(result, repaired)
+    return repaired, True
 
 
 def prepare(receipt_path: Path, answer_path: Path, binding_path: Path) -> dict:
@@ -132,27 +230,29 @@ def controlled_release(receipt_path: Path, answer_path: Path) -> bytes:
     """Validate and emit one strict-version answer through this local process.
 
     This is an opt-in local release path for the versioned consultation
-    contract. It is not a ChatGPT host veto or an authenticated approval.
+    contract. It may append the canonical dashboard once when entirely absent.
+    It is not a ChatGPT host veto or an authenticated approval.
     """
     first_result, first_receipt = validate_exact_receipt(receipt_path)
-    answer = read_regular_file(answer_path, "answer")
+    source_answer = read_regular_file(answer_path, "answer")
     try:
         receipt = json.loads(first_receipt.decode("utf-8"))
     except (UnicodeDecodeError, json.JSONDecodeError) as error:
         raise ReleaseBindingError("receipt_json_invalid") from error
-    if receipt.get("schema_version") not in {"0.5.0", "0.6.0"} or receipt.get("request_kind") not in {
+    if receipt.get("schema_version") not in {"0.5.0", "0.6.0", "0.7.0", "0.8.0", "0.9.0", "0.10.0"} or receipt.get("request_kind") not in {
         "applicant_guidance", "source_research",
     }:
-        raise ReleaseBindingError("controlled_release_requires_receipt_0_5_or_0_6")
+        raise ReleaseBindingError("controlled_release_requires_receipt_0_5_or_later")
     if not first_result.get("dashboard_required"):
         raise ReleaseBindingError("controlled_release_requires_validated_dashboard")
-    validate_dashboard_rendered(first_result, answer)
+    answer, _repaired = repair_dashboard_once(first_result, source_answer)
 
     # Revalidate and reread immediately before output; only the exact checked
     # receipt, validation result and answer bytes may pass through this call.
     second_result, second_receipt = validate_exact_receipt(receipt_path)
-    second_answer = read_regular_file(answer_path, "answer")
-    if (first_receipt != second_receipt or answer != second_answer or
+    second_source_answer = read_regular_file(answer_path, "answer")
+    second_answer, _second_repaired = repair_dashboard_once(second_result, second_source_answer)
+    if (first_receipt != second_receipt or source_answer != second_source_answer or answer != second_answer or
             validation_digest(first_result["validation_record"]) !=
             validation_digest(second_result["validation_record"])):
         raise ReleaseBindingError("controlled_release_artifact_changed_during_validation")
