@@ -11,6 +11,12 @@ description: "Use for read-only, source-grounded EU free-movement and EU-family-
 
 This skill provides read-only, source-grounded guidance and maintains a separate synthetic-engine lane. Real applicant facts may be discussed in chat; they must never be sent to synthetic-only scripts or copied into distributable assets.
 
+## Default consultation output — mandatory
+
+For every substantive EU free-movement or family-visa consultation, include the full native-Markdown consultation board automatically in the same answer, without waiting for a dashboard request. This applies to first replies and substantive follow-ups, including short or urgent answers. Lead with the requested legal answer; append the board as the final section. Greetings, maintenance work, and non-case mentions are exempt.
+
+Before ending the reply, inspect the visible draft, not just the intended workflow: it must contain `## freemovement-law — Consultation Review` and the required strategy screen, issue dispositions, selected C27 checks, execution/verification, sources and modules, and provenance limits. A `## Consultation review` issue table or a one-line `Consultation mode` note is not the board. Replace such shorthand with the full layout in `references/consultation-dashboard-examples.md`; do not add a conflicting second board. Place follow-up questions before the board. Mark unknown or unperformed steps explicitly rather than omitting the board or inventing execution.
+
 ## First response: disclaimer and use check
 
 On the first visible response in a conversation where any freemovement-law skill is invoked, begin with this disclaimer before substantive analysis:
