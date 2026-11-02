@@ -4,7 +4,13 @@ from __future__ import annotations
 
 import unittest
 
-from release_notes import ChangelogError, latest_entry, render_release_notes, validate_changelog
+from release_notes import (
+    ChangelogError,
+    latest_entry,
+    render_latest_pointer_notes,
+    render_release_notes,
+    validate_changelog,
+)
 
 
 SAMPLE_CHANGELOG = """# FreeMovement package changelog
@@ -32,12 +38,18 @@ class ReleaseNotesTests(unittest.TestCase):
         self.assertNotIn("older feature", entry)
         self.assertEqual(len(validate_changelog(SAMPLE_CHANGELOG)), 2)
 
-    def test_release_notes_include_exact_revision_and_distribution_links(self) -> None:
+    def test_revision_notes_include_exact_revision_assets(self) -> None:
         notes = render_release_notes(SAMPLE_CHANGELOG, REVISION)
         self.assertIn(f"at [{REVISION}](https://github.com/eudirective/skills/commit/{REVISION})", notes)
         self.assertIn("https://github.com/eudirective/skills/blob/main/CHANGELOG.md", notes)
-        self.assertIn("https://github.com/eudirective/skills/releases/download/freemovement-latest/packages.json", notes)
-        self.assertIn("https://github.com/eudirective/skills/releases/download/freemovement-latest/SHA256SUMS", notes)
+        self.assertIn(f"/releases/download/freemovement-{REVISION}/packages.json", notes)
+        self.assertIn(f"/releases/download/freemovement-{REVISION}/SHA256SUMS", notes)
+
+    def test_latest_notes_point_to_revision_release_without_latest_asset_urls(self) -> None:
+        notes = render_latest_pointer_notes(REVISION)
+        self.assertIn(f"/releases/tag/freemovement-{REVISION}", notes)
+        self.assertIn(f"/releases/download/freemovement-{REVISION}/packages.json", notes)
+        self.assertNotIn("/releases/download/freemovement-latest/", notes)
 
     def test_rejects_missing_versioned_entry(self) -> None:
         with self.assertRaisesRegex(ChangelogError, "no versioned release entries"):

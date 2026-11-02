@@ -1,36 +1,26 @@
 name: Package FreeMovement distributions
 
 on:
-  push:
-    branches:
-      - main
-  workflow_run:
-    workflows:
-      - Build and sync FreeMovement source packages
-    types:
-      - completed
-    branches:
-      - main
-  workflow_dispatch:
+  workflow_call:
+    inputs:
+      final_revision:
+        description: Exact synchronized and validated main commit to package
+        required: true
+        type: string
 
 permissions:
   contents: write
 
-concurrency:
-  group: package-distributions-main
-  cancel-in-progress: true
-
 jobs:
   build-and-publish:
     name: Build, verify, and publish packages
-    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check out the current main snapshot
+      - name: Check out the exact validated main snapshot
         uses: actions/checkout@v7
         with:
-          ref: refs/heads/main
+          ref: ${{ inputs.final_revision }}
           fetch-depth: 0
 
       - name: Set up Python
@@ -38,21 +28,36 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Install consultation test dependencies
+        run: python3 -m pip install -r freemovement-law/requirements-test.txt
+
       - name: Validate generated component versions
         run: >-
           python3 scripts/source-distribution/validate_versions.py
           --root .
           --registry scripts/source-distribution/country-registry.json
 
+      - name: Run consultation core self-test on publisher revision
+        run: python3 freemovement-law/skills/eudirective-core/scripts/run_selftest.py
+
+      - name: Run consultation unittest suite on publisher revision
+        run: >-
+          python3 -m unittest discover
+          -s freemovement-law/skills/eudirective-core/scripts
+          -p 'test_*.py'
+
       - name: Run distribution regression tests
         run: python3 -m unittest discover -s scripts/package-distributions -p 'test_*.py'
 
       - name: Build twice and verify reproducibility
         id: build
+        env:
+          FINAL_REVISION: ${{ inputs.final_revision }}
         shell: bash
         run: |
           set -euo pipefail
           revision="$(git rev-parse HEAD)"
+          [[ "$revision" = "$FINAL_REVISION" ]]
           [[ "$revision" =~ ^[0-9a-f]{40,64}$ ]]
           output_one="$RUNNER_TEMP/freemovement-distributions"
           output_two="$RUNNER_TEMP/freemovement-distributions-repeat"
@@ -97,74 +102,26 @@ jobs:
           fi
           echo "revision=$current_revision" >> "$GITHUB_OUTPUT"
 
-      - name: Prepare rolling release notes
-        id: notes
-        env:
-          SOURCE_REVISION: ${{ steps.current.outputs.revision }}
-        shell: bash
-        run: |
-          set -euo pipefail
-          notes_file="$RUNNER_TEMP/freemovement-release-notes.md"
-          python3 scripts/package-distributions/release_notes.py \
-            --changelog CHANGELOG.md \
-            --revision "$SOURCE_REVISION" \
-            --output "$notes_file"
-          echo "path=$notes_file" >> "$GITHUB_OUTPUT"
-
-      - name: Publish rolling prerelease
+      - name: Publish immutable revision and promote verified latest pointer
+        id: publish
         env:
           GH_TOKEN: ${{ github.token }}
-          GH_REPO: eudirective/skills
-          RELEASE_TAG: freemovement-latest
+          FINAL_REVISION: ${{ steps.current.outputs.revision }}
           DIST_DIR: ${{ steps.build.outputs.output_dir }}
-          SOURCE_REVISION: ${{ steps.current.outputs.revision }}
-          RELEASE_NOTES_FILE: ${{ steps.notes.outputs.path }}
-        shell: bash
-        run: |
-          set -euo pipefail
-          # The rolling tag is intentionally moved to the exact main snapshot being released.
-          if gh api "repos/$GH_REPO/git/ref/tags/$RELEASE_TAG" >/dev/null 2>&1; then
-            gh api --method PATCH "repos/$GH_REPO/git/refs/tags/$RELEASE_TAG" \
-              --field sha="$SOURCE_REVISION" --field force=true >/dev/null
-          else
-            gh api --method POST "repos/$GH_REPO/git/refs" \
-              --field ref="refs/tags/$RELEASE_TAG" --field sha="$SOURCE_REVISION" >/dev/null
-          fi
+          STATE_FILE: ${{ runner.temp }}/freemovement-release-state.json
+        run: >-
+          python3 scripts/package-distributions/publish_release.py
+          --repo eudirective/skills
+          --revision "$FINAL_REVISION"
+          --distribution-dir "$DIST_DIR"
+          --changelog CHANGELOG.md
+          --state-output "$STATE_FILE"
 
-          if gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
-            gh release edit "$RELEASE_TAG" \
-              --target "$SOURCE_REVISION" \
-              --title "FreeMovement distributions (rolling)" \
-              --notes-file "$RELEASE_NOTES_FILE" \
-              --prerelease
-          else
-            gh release create "$RELEASE_TAG" --target "$SOURCE_REVISION" --prerelease \
-              --title "FreeMovement distributions (rolling)" \
-              --notes-file "$RELEASE_NOTES_FILE"
-          fi
-
-          gh release upload "$RELEASE_TAG" "$DIST_DIR"/*.zip \
-            "$DIST_DIR/packages.json" "$DIST_DIR/SHA256SUMS" --clobber
-
-          release_id="$(gh release view "$RELEASE_TAG" --json databaseId --jq .databaseId)"
-          mapfile -t expected_assets < <(find "$DIST_DIR" -maxdepth 1 -type f \
-            \( -name '*.zip' -o -name packages.json -o -name SHA256SUMS \) -printf '%f\n' | sort)
-          while IFS=$'\t' read -r asset_id asset_name; do
-            [[ -n "$asset_id" ]] || continue
-            if ! printf '%s\n' "${expected_assets[@]}" | grep -Fxq -- "$asset_name"; then
-              gh api --method DELETE "repos/$GH_REPO/releases/assets/$asset_id" >/dev/null
-            fi
-          done < <(gh api --paginate "repos/$GH_REPO/releases/$release_id/assets" \
-            --jq '.[] | "\(.id)\t\(.name)"')
-
-          downloaded="$RUNNER_TEMP/freemovement-release-download"
-          mkdir -p "$downloaded"
-          gh release download "$RELEASE_TAG" --dir "$downloaded"
-          (cd "$downloaded" && sha256sum -c SHA256SUMS)
-          cmp "$DIST_DIR/packages.json" "$downloaded/packages.json"
-          downloaded_count="$(find "$downloaded" -maxdepth 1 -type f -name '*.zip' | wc -l | tr -d ' ')"
-          expected_zip_count="$(python3 -c 'import json,sys; print(len(json.load(open(sys.argv[1], encoding="utf-8"))["packages"]))' "$DIST_DIR/packages.json")"
-          if [[ "$downloaded_count" -ne "$expected_zip_count" ]]; then
-            echo "::error::Expected $expected_zip_count downloadable ZIPs, found $downloaded_count"
-            exit 1
-          fi
+      - name: Save release verification state
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: freemovement-release-state-${{ steps.build.outputs.revision }}
+          path: ${{ runner.temp }}/freemovement-release-state.json
+          if-no-files-found: error
+          retention-days: 90

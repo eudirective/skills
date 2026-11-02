@@ -1,10 +1,11 @@
 from __future__ import annotations
 
 import tempfile
+import json
 import unittest
 from pathlib import Path
 
-from build import accepted_paths
+from build import accepted_paths, build_marketplace
 
 
 class AcceptedPathsTests(unittest.TestCase):
@@ -50,6 +51,41 @@ class AcceptedPathsTests(unittest.TestCase):
 
             result = accepted_paths(acceptance, source_root, pack)
             self.assertEqual([item[0] for item in result], [document.resolve()])
+
+
+class MarketplaceGenerationTests(unittest.TestCase):
+    def test_adds_current_countries_removes_retired_countries_and_keeps_custom_entries(self) -> None:
+        existing = {"name": "FreeMovement", "plugins": [
+            {"name": "freemovement-law", "source": {"source": "local", "path": "./freemovement-law"}},
+            {"name": "freemovement-law-be", "source": {"source": "local", "path": "./freemovement-law-be"}},
+            {"name": "freemovement-law-xx", "source": {"source": "local", "path": "./freemovement-law-xx"}},
+            {"name": "custom-tool", "source": {"source": "local", "path": "./custom-tool"}},
+        ]}
+        registry = {"core_plugin": "freemovement-law"}
+        countries = [
+            {"iso_country_code": "BE", "plugin_name": "freemovement-law-be", "plugin_directory": "freemovement-law-be"},
+            {"iso_country_code": "SE", "plugin_name": "freemovement-law-se", "plugin_directory": "freemovement-law-se"},
+        ]
+        generated = build_marketplace(existing, registry, countries)
+        entries = {entry["name"]: entry for entry in generated["plugins"]}
+        self.assertEqual(set(entries), {"freemovement-law", "freemovement-law-be", "freemovement-law-se", "custom-tool"})
+        self.assertEqual(entries["freemovement-law-se"]["source"]["path"], "./freemovement-law-se")
+        self.assertEqual(entries["custom-tool"], existing["plugins"][-1])
+        self.assertEqual(existing["plugins"][2]["name"], "freemovement-law-xx")
+
+    def test_one_generated_artifact_can_be_applied_to_both_marketplace_paths(self) -> None:
+        generated = build_marketplace({"plugins": [{"name": "custom-tool"}]},
+                                      {"core_plugin": "freemovement-law"}, [])
+        encoded = json.dumps(generated, ensure_ascii=False, indent=2) + "\n"
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            nested = root / ".agents/plugins/marketplace.json"
+            nested.parent.mkdir(parents=True)
+            (root / "marketplace.json").write_text(encoded, encoding="utf-8")
+            nested.write_text(encoded, encoding="utf-8")
+            self.assertEqual((root / "marketplace.json").read_bytes(), nested.read_bytes())
+            nested.write_text(encoded + " ", encoding="utf-8")
+            self.assertNotEqual((root / "marketplace.json").read_bytes(), nested.read_bytes())
 
 
 if __name__ == "__main__":

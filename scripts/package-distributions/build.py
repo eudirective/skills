@@ -198,10 +198,20 @@ def discover_plugins(repository_root: Path) -> list[Plugin]:
     return sorted(plugins, key=lambda plugin: plugin.name.casefold())
 
 
+def _archive_root(plugin: Plugin) -> str:
+    """Return the registered source directory used as the plugin ZIP root."""
+    source_path = _relative_path(plugin.source_path, f"source path for {plugin.name}")
+    prefix = source_path.name
+    if not prefix or not PLUGIN_NAME_RE.fullmatch(prefix) or plugin.root.name != prefix:
+        raise PackageBuildError(f"plugin source directory does not match its registered path: {plugin.name}")
+    return prefix
+
+
 def _plugin_entries(plugin: Plugin) -> list[tuple[str, Path, bool]]:
     """Return deterministic archive names, paths, and directory flags."""
-    entries: list[tuple[str, Path, bool]] = [(f"{plugin.name}/", plugin.root, True)]
-    seen: set[str] = {f"{plugin.name}/".casefold()}
+    prefix = _archive_root(plugin)
+    entries: list[tuple[str, Path, bool]] = [(f"{prefix}/", plugin.root, True)]
+    seen: set[str] = {f"{prefix}/".casefold()}
     for current, directory_names, file_names in os.walk(plugin.root, topdown=True, followlinks=False):
         current_path = Path(current)
         directory_names.sort(key=str.casefold)
@@ -214,7 +224,7 @@ def _plugin_entries(plugin: Plugin) -> list[tuple[str, Path, bool]]:
             if source.is_symlink() or not source.is_dir():
                 raise PackageBuildError(f"plugin tree contains a non-regular directory: {source}")
             kept_directories.append(name)
-            archive_name = f"{plugin.name}/{source.relative_to(plugin.root).as_posix()}/"
+            archive_name = f"{prefix}/{source.relative_to(plugin.root).as_posix()}/"
             folded = archive_name.casefold()
             if folded in seen:
                 raise PackageBuildError(f"case-insensitive duplicate ZIP path: {archive_name}")
@@ -234,7 +244,7 @@ def _plugin_entries(plugin: Plugin) -> list[tuple[str, Path, bool]]:
                 raise PackageBuildError(f"could not inspect plugin file: {source}") from exc
             if not stat.S_ISREG(mode):
                 raise PackageBuildError(f"plugin tree contains a non-regular file: {source}")
-            archive_name = f"{plugin.name}/{source.relative_to(plugin.root).as_posix()}"
+            archive_name = f"{prefix}/{source.relative_to(plugin.root).as_posix()}"
             folded = archive_name.casefold()
             if folded in seen:
                 raise PackageBuildError(f"case-insensitive duplicate ZIP path: {archive_name}")
@@ -794,6 +804,7 @@ def verify_distribution(repository_root: Path, distribution_dir: Path) -> int:
         if record.get("name") != plugin.name or record.get("version") != plugin.version:
             raise PackageBuildError(f"plugin archive catalog identity/version mismatch: {plugin.name}")
         expected_entries = _plugin_entries(plugin)
+        prefix = _archive_root(plugin)
         expected = {name for name, _, _ in expected_entries}
         archive_path = output / record["path"]
         with zipfile.ZipFile(archive_path) as archive:
@@ -802,7 +813,7 @@ def verify_distribution(repository_root: Path, distribution_dir: Path) -> int:
             for name, source, is_directory in expected_entries:
                 if not is_directory and archive.read(name) != source.read_bytes():
                     raise PackageBuildError(f"plugin archive file differs from source: {plugin.name}/{name}")
-            for metadata_path in (f"{plugin.name}/plugin.json", f"{plugin.name}/.codex-plugin/plugin.json"):
+            for metadata_path in (f"{prefix}/plugin.json", f"{prefix}/.codex-plugin/plugin.json"):
                 try:
                     metadata = json.loads(archive.read(metadata_path))
                 except (KeyError, UnicodeError, json.JSONDecodeError) as exc:

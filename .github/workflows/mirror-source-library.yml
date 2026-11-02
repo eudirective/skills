@@ -1,28 +1,28 @@
 name: Build and sync FreeMovement source packages
 
 on:
+  push:
+    branches: [testing, main]
   workflow_dispatch:
   schedule:
     - cron: '17 3 * * 1'
-  push:
-    paths:
-      - '.github/workflows/mirror-source-library.yml'
-      - 'scripts/source-distribution/**'
-      - 'freemovement-law/**'
-      - '.agents/plugins/marketplace.json'
 
 permissions:
   contents: write
 
 concurrency:
-  group: mirror-source-library-${{ github.ref }}
+  group: freemovement-distribution-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
-  distribute:
+  synchronize:
     name: Build and sync source packages
     if: github.ref_type == 'branch'
     runs-on: ubuntu-latest
+    outputs:
+      final_revision: ${{ steps.sync.outputs.final_revision }}
+      upstream_revision: ${{ steps.sync.outputs.upstream_revision }}
+      commit_state: ${{ steps.sync.outputs.commit_state }}
     env:
       PYTHONDONTWRITEBYTECODE: "1"
 
@@ -64,6 +64,7 @@ jobs:
             --output-root "$RUNNER_TEMP/fm-source-stage"
 
       - name: Commit and push directly to triggering branch
+        id: sync
         shell: bash
         run: |
           set -euo pipefail
@@ -79,11 +80,13 @@ jobs:
           max_attempts=3
           git -C skills config user.name "eudirective"
           git -C skills config user.email "eudirective@proton.me"
+          commit_state="unchanged"
 
           for attempt in $(seq 1 "$max_attempts"); do
             # Rebuild against the latest triggering branch after every rejected concurrent update.
             git -C skills fetch --no-tags origin "refs/heads/$target_branch:refs/remotes/origin/$target_branch"
             git -C skills reset --hard "refs/remotes/origin/$target_branch"
+            commit_state="unchanged"
             upstream_revision="$(git -C public-data rev-parse HEAD)"
             rm -rf "$RUNNER_TEMP/fm-source-stage"
             python3 skills/scripts/source-distribution/build.py \
@@ -122,23 +125,113 @@ jobs:
             install -D -m 0644 "$stage/component-index.json" skills/component-index.json
             install -D -m 0644 "$stage/source-inventory.json" skills/source-inventory.json
             install -D -m 0644 "$stage/migration-map.json" skills/migration-map.json
+            install -D -m 0644 "$stage/marketplace.json" skills/marketplace.json
             install -D -m 0644 "$stage/marketplace.json" skills/.agents/plugins/marketplace.json
+
+            # Validate the fully applied checkout on every retry before it can
+            # be committed. The generated marketplace is the single source for
+            # both tracked copies.
+            cmp skills/marketplace.json skills/.agents/plugins/marketplace.json
+            python3 -m pip install -r skills/freemovement-law/requirements-test.txt
+            python3 skills/scripts/source-distribution/validate_versions.py \
+              --root skills \
+              --registry skills/scripts/source-distribution/country-registry.json
+            PYTHONPATH=skills/scripts/package-distributions python3 -c \
+              'from pathlib import Path; from build import discover_plugins; print("Validated", len(discover_plugins(Path("skills"))), "registered plugins")'
+            python3 skills/freemovement-law/skills/eudirective-core/scripts/run_selftest.py
+            python3 -m unittest discover \
+              -s skills/freemovement-law/skills/eudirective-core/scripts \
+              -p 'test_*.py'
 
             # This attempt starts from a clean checkout of the triggering branch; stage the generated distribution as a whole.
             git -C skills add -A
             if git -C skills diff --cached --quiet; then
               echo "Generated packages already match $target_branch"
-              exit 0
+              commit_state="unchanged"
+              break
             fi
             git -C skills commit -m "Distribute national source plugins"
+            commit_state="pending"
             if git -C skills push origin "HEAD:refs/heads/$target_branch"; then
               echo "Source packages synchronized directly to $target_branch"
-              exit 0
+              commit_state="generated"
+              break
             fi
             if [ "$attempt" -lt "$max_attempts" ]; then
               echo "Push failed; refreshing main and rebuilding the distribution"
               sleep "$attempt"
             fi
           done
-          echo "Failed to synchronize source packages after $max_attempts attempts"
-          exit 1
+          if [ "$commit_state" = "pending" ]; then
+            echo "Failed to synchronize source packages after $max_attempts attempts"
+            exit 1
+          fi
+          final_revision="$(git -C skills rev-parse HEAD)"
+          upstream_revision="$(git -C public-data rev-parse HEAD)"
+          echo "final_revision=$final_revision" >> "$GITHUB_OUTPUT"
+          echo "upstream_revision=$upstream_revision" >> "$GITHUB_OUTPUT"
+          echo "commit_state=$commit_state" >> "$GITHUB_OUTPUT"
+
+  validate_exact_revision:
+    name: Validate synchronized revision
+    needs: [synchronize]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out exact synchronized revision
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ needs.synchronize.outputs.final_revision }}
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+
+      - name: Install consultation test dependencies
+        run: python3 -m pip install -r freemovement-law/requirements-test.txt
+
+      - name: Verify exact revision and applied manifests
+        env:
+          EXPECTED_REVISION: ${{ needs.synchronize.outputs.final_revision }}
+          EXPECTED_BRANCH: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          [[ "$(git rev-parse HEAD)" = "$EXPECTED_REVISION" ]]
+          git fetch --no-tags origin "refs/heads/$EXPECTED_BRANCH"
+          [[ "$(git rev-parse FETCH_HEAD)" = "$EXPECTED_REVISION" ]]
+          cmp marketplace.json .agents/plugins/marketplace.json
+
+      - name: Validate generated package versions
+        run: >-
+          python3 scripts/source-distribution/validate_versions.py
+          --root .
+          --registry scripts/source-distribution/country-registry.json
+
+      - name: Validate registered package roots
+        run: >-
+          PYTHONPATH=scripts/package-distributions python3 -c
+          'from pathlib import Path; from build import discover_plugins; print("Validated", len(discover_plugins(Path("."))), "registered plugins")'
+
+      - name: Run consultation core self-test
+        run: python3 freemovement-law/skills/eudirective-core/scripts/run_selftest.py
+
+      - name: Run consultation unittest suite
+        run: >-
+          python3 -m unittest discover
+          -s freemovement-law/skills/eudirective-core/scripts
+          -p 'test_*.py'
+
+      - name: Run source-distribution and package-distribution tests
+        run: |
+          python3 -m unittest discover -s scripts/source-distribution -p 'test_*.py'
+          python3 -m unittest discover -s scripts/package-distributions -p 'test_*.py'
+
+  build_release:
+    name: Build and publish verified main revision
+    if: github.ref == 'refs/heads/main'
+    needs: [synchronize, validate_exact_revision]
+    permissions:
+      contents: write
+    uses: ./.github/workflows/package-distributions.yml
+    with:
+      final_revision: ${{ needs.synchronize.outputs.final_revision }}

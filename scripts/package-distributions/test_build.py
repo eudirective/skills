@@ -86,22 +86,28 @@ class PluginArchiveBuildTests(unittest.TestCase):
             "freemovement-law-1.2.3.zip",
         ])
         for result in archives:
+            registered_path = next(
+                row["source"]["path"][2:]
+                for row in json.loads((self.root / "marketplace.json").read_text())["plugins"]
+                if row["name"] == result.name
+            )
+            archive_root = Path(registered_path).name
             plugin_root = self.root / next(
                 row["source"]["path"][2:]
                 for row in json.loads((self.root / "marketplace.json").read_text())["plugins"]
                 if row["name"] == result.name
             )
-            expected_entries = {f"{result.name}/"}
+            expected_entries = {f"{archive_root}/"}
             expected_entries.update(
-                f"{result.name}/{path.relative_to(plugin_root).as_posix()}{'/' if path.is_dir() else ''}"
+                f"{archive_root}/{path.relative_to(plugin_root).as_posix()}{'/' if path.is_dir() else ''}"
                 for path in plugin_root.rglob("*")
             )
             with zipfile.ZipFile(result.path) as archive:
                 self.assertIsNone(archive.testzip())
                 self.assertEqual(set(archive.namelist()), expected_entries)
-                self.assertIn(f"{result.name}/plugin.json", archive.namelist())
-                self.assertIn(f"{result.name}/.codex-plugin/plugin.json", archive.namelist())
-                self.assertIn(f"{result.name}/skills/{result.name}-skill/SKILL.md", archive.namelist())
+                self.assertIn(f"{archive_root}/plugin.json", archive.namelist())
+                self.assertIn(f"{archive_root}/.codex-plugin/plugin.json", archive.namelist())
+                self.assertIn(f"{archive_root}/skills/{result.name}-skill/SKILL.md", archive.namelist())
             self.assertEqual(result.sha256, hashlib.sha256(result.path.read_bytes()).hexdigest())
 
     def test_build_is_reproducible_and_replaces_only_managed_plugin_archives(self) -> None:
