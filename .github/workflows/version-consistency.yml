@@ -1,9 +1,10 @@
 name: Validate FreeMovement version consistency
 
+# Push validation runs in the ordered mirror-source-library pipeline after
+# generated packages are applied; a standalone push gate would inspect stale
+# fingerprints before synchronization completes.
 on:
   pull_request:
-    branches: [main, testing]
-  push:
     branches: [main, testing]
   workflow_dispatch:
 
