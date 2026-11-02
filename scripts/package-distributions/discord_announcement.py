@@ -101,7 +101,13 @@ def post_webhook(webhook_url: str, payload: dict[str, object]) -> None:
     request = Request(
         webhook_url_with_wait(webhook_url),
         data=json.dumps(payload, ensure_ascii=False).encode("utf-8"),
-        headers={"Content-Type": "application/json"},
+        headers={
+            "Content-Type": "application/json",
+            "User-Agent": (
+                "FreeMovement-Release-Announcer/1.0 "
+                "(+https://github.com/eudirective/skills)"
+            ),
+        },
         method="POST",
     )
     try:
@@ -128,8 +134,9 @@ def _discord_http_error(exc: HTTPError, webhook_url: str) -> str:
     if not isinstance(response, dict):
         return detail
 
-    message = response.get("message")
-    code = response.get("code")
+    message = response.get("message", response.get("detail"))
+    code = response.get("code", response.get("error_code"))
+    name = response.get("error_name")
     if not isinstance(message, str):
         return detail
 
@@ -141,6 +148,11 @@ def _discord_http_error(exc: HTTPError, webhook_url: str) -> str:
         if secret:
             message = message.replace(secret, "[redacted]")
     message = " ".join(message.split())[:240]
+    if isinstance(name, str):
+        name = " ".join(name.split())[:80]
+        if isinstance(code, int) and not isinstance(code, bool):
+            return f"{detail} ({name} {code}: {message})"
+        return f"{detail} ({name}: {message})"
     if isinstance(code, int) and not isinstance(code, bool):
         return f"{detail} (Discord error {code}: {message})"
     return f"{detail} ({message})"
