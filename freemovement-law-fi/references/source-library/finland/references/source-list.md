@@ -18,7 +18,7 @@ Canonical rows: **38**; provisional unique IDs: **37**; unresolved entries: **2*
 | `fi-aliens-act-en` | `fi:language-variant:fi-aliens-act:325e615cad2f` | resolved | local_artifact/en/2004 (`documents/legislation/fi-aliens-act-301-2004-english-translation.md`)<br>official_reference/en/undated | accepted_external_reference, pending, not_relied_upon | — |
 | `fi-aliens-act-fi` | `fi:language-variant:fi-aliens-act:325e615cad2f` | resolved | local_artifact/fi/2004 (`documents/legislation/fi-aliens-act-301-2004-current-fi.md`)<br>official_reference/fi/undated | accepted_external_reference, accepted_local_copy, pending | — |
 | `fi-chancellor-of-justice` | `fi:url:da992eefadf5175cb683` | resolved | official_reference/en/undated<br>official_reference/fi/undated<br>official_reference/sv/undated | discovery | — |
-| `fi-data-protection-act` | `fi:url:fafd4c3a8d75662ae785` | resolved | official_reference/fi/undated | accepted_external_reference | — |
+| `fi-data-protection-act` | `fi:url:fafd4c3a8d75662ae785` | resolved | local_artifact/fi/2026-05-22 (`documents/legislation/fi-data-protection-act-1050-2018-current-fi.md`)<br>official_reference/fi/2026-05-22 | accepted_external_reference, accepted_local_copy | — |
 | `fi-data-protection-ombudsman` | `fi:url:42e1d429d374814ac73d` | resolved | official_reference/en/undated<br>official_reference/fi/undated<br>official_reference/sv/undated | discovery | — |
 | `fi-dvv-foreign-registration` | `fi:url:a125d052a6047db9e347` | resolved | local_artifact/fi/undated (`documents/guidance/fi-dvv-foreign-registration.md`)<br>official_reference/en/undated<br>official_reference/fi/undated<br>official_reference/sv/undated | accepted_external_reference, pending | — |
 | `fi-dvv-municipality-form` | `fi:url:eec6211792870c9e981d` | resolved | local_artifact/en/undated (`documents/forms/fi-dvv-municipality-form.md`)<br>official_reference/en/undated<br>official_reference/fi/undated<br>official_reference/sv/undated | accepted_external_reference, pending | — |
@@ -46,5 +46,5 @@ Canonical rows: **38**; provisional unique IDs: **37**; unresolved entries: **2*
 | `fi-openness-act` | `fi:url:ee8a5257665cc1517fb9` | resolved | official_reference/fi/undated | accepted_external_reference | — |
 | `fi-parliamentary-ombudsman` | `fi:url:f6e2c42676e9aec8745d` | resolved | official_reference/en/undated<br>official_reference/fi/undated<br>official_reference/sv/undated | accepted_external_reference | — |
 | `fi-police-communications-order-2025` | `fi:url:6f54bcb17c8b443a1333` | resolved | official_reference/fi/undated | accepted_external_reference | — |
-| `fi-police-personal-data-act` | `fi:url:651d9576b87a816ddadb` | resolved | official_reference/fi/undated | accepted_external_reference | — |
+| `fi-police-personal-data-act` | `fi:url:651d9576b87a816ddadb` | resolved | local_artifact/fi/2019 (`documents/legislation/fi-police-personal-data-act-616-2019-current-fi.md`)<br>official_reference/fi/undated | accepted_external_reference, accepted_local_copy, pending | — |
 <!-- source-identity-inventory:end -->

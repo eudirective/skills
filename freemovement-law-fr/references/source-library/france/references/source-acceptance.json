@@ -5,7 +5,7 @@
   "acceptance_is_distinct_from_coverage": true,
   "policy": {
     "official_reference_use": "Official URLs may be retained as provenance, publisher identity, navigation, and version-check metadata. A locator is not retained legal source text and does not satisfy local-text acceptance. When a local text copy is required, accept the text file only after official-source identity, exact scope/version, body comparison, rights, attribution, conversion, and limitations are recorded.",
-    "local_artifact_acceptance": "Twenty-nine accepted local Markdown records are maintained under documents/: twenty-two retained source texts (eight Service Public/DILA guidance and procedure items, twelve DILA LEGI statutory texts, one CNIL text, and one Conseil d’État case-source guide) and seven project-authored maintained summaries. Every retained copy has its own publisher, source identity, version, extraction, retrieval method, reuse basis, and limitation record.",
+    "local_artifact_acceptance": "Thirty-three accepted local Markdown copies are maintained under documents/: twenty-six retained source texts (eight Service Public/DILA guidance and procedure items, sixteen DILA LEGI statutory texts, one CNIL text, and one Conseil d’État case-source guide) and seven project-authored maintained summaries. Every retained copy has its own publisher, source identity, version, extraction, retrieval method, reuse basis, and limitation record.",
     "coverage": "Usable official references do not by themselves establish adequate topic coverage or country completion."
   },
   "official_reference_reviews": {
@@ -509,15 +509,15 @@
       "status": "usable_official_reference",
       "publisher": "Direction de l’information légale et administrative (DILA), Légifrance",
       "url": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006072050",
-      "checked_on": "2026-10-29",
+      "checked_on": "2026-10-31",
       "language": "French",
       "version_or_cutoff": "Official section version displayed in force at 2026-10-28; checked 2026-10-30. Article L5221-10 is repealed and is not transcribed.",
       "scope": "Full Code du travail; potentially relevant to worker status and employment rights under free-movement routes.",
-      "reviewed_content": "Official full-code identity and title confirmed; full-code text is not retained. A separately scoped official text copy is accepted at documents/legislation/fr-code-travail-articles-l5221-5-to-l5221-11.md.",
+      "reviewed_content": "Official full-code identity and title confirmed; full-code text is not retained. Separate bounded local copies preserve Articles L5221-5 to L5221-9 and L5221-11, and Articles R5221-17 and R5221-19; these are not a complete-code text or complete work-authorisation decision-review route.",
       "limitations": [
-        "Full-code link-only reference; use provision-level current text for a concrete issue.",
+        "Full-code reference record; only provision-level text listed in separate accepted local copies is retained.",
         "This record does not establish immigration status, work authorization, or eligibility under EU law.",
-        "No complete-code Legalize Markdown copy is accepted; the bounded text copy is recorded separately at documents/legislation/fr-code-travail-articles-l5221-5-to-l5221-11.md."
+        "No complete-code Legalize Markdown copy is accepted; bounded text copies are recorded at documents/legislation/fr-code-travail-articles-l5221-5-to-l5221-11.md and documents/legislation/fr-r5221-17-and-r5221-19-decision-appeal.md."
       ]
     },
     "fr-code-securite-sociale": {
@@ -595,7 +595,7 @@
     ],
     "note": "Use provenance_locator_only when the URL is retained to identify or verify a separately accepted local text. A URL record is not a retained legal source. Use usable_official_reference only for a documented reference-use decision; it does not count as a local source text."
   },
-  "accepted_source_count": 29,
+  "accepted_source_count": 32,
   "records": {
     "fr-service-public-eu-long-stay-f2651": {
       "status": "accepted_local_copy",
@@ -966,24 +966,128 @@
       "status": "accepted_local_copy",
       "publisher": "Direction de l’information légale et administrative (DILA), Légifrance",
       "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072050/LEGISCTA000006189813/",
-      "checked_on": "2026-10-30",
+      "checked_on": "2026-10-31",
       "language": "French",
-      "version_or_cutoff": "Official section version displayed in force at 2026-10-28; checked 2026-10-30. Article L5221-10 is repealed and is not transcribed.",
+      "version_or_cutoff": "Articles L5221-5 to L5221-9 and L5221-11: selected Section 3 version displayed in force at 2026-10-28, checked 2026-10-30. Articles R5221-17 and R5221-19: latest dated Section 3 display retrieved was in force at 2026-10-04; R5221-17 has been in force since 2021-04-01 and R5221-19 since 2016-11-01; live article records rechecked 2026-10-31. Article R5221-2: current consolidated article displayed in force since 2026-10-30, checked 2026-10-31. Article L5221-10 is repealed and is not transcribed.",
       "local_path": "documents/legislation/fr-code-travail-articles-l5221-5-to-l5221-11.md",
-      "scope": "Current text of Code du travail Articles L5221-5 to L5221-9 and L5221-11 in the selected Section 3; L5221-10 is identified as repealed but historical wording is omitted.",
-      "reviewed_content": "The complete retained article bodies and their notes were checked against the current official Légifrance section. L5221-5 was supplemented from DILA's 2026-10-29 LEGI delta because the Legalize snapshot omitted its applicability note; a duplicated L5221-8 block was excluded.",
+      "scope": "Three separate bounded text copies from Code du travail LEGITEXT000006072050: (1) current Articles L5221-5 to L5221-9 and L5221-11; (2) current Articles R5221-17 and R5221-19 covering the prefect decision/notice and hierarchical appeal authority; (3) current Article R5221-2 with 22 work-authorisation exemptions. L5221-10 is identified as repealed but historical wording is omitted.",
+      "reviewed_content": "For the L articles, the complete retained article bodies and notes were checked against the current official Légifrance section; L5221-5 was supplemented from DILA's 2026-10-29 LEGI delta and a duplicated L5221-8 block was excluded. For the R articles, the complete operative body of R5221-17 and its commencement note and the R5221-19 body were checked against official Légifrance records. Legalize's R5221-17 block omitted the commencement note, which was restored from the official article record. R5221-19 states no filing deadline. For R5221-2, the full current 22-item body and version note were compared with the official Légifrance display and Article 13 of Decree No. 2026-1001; the pinned Legalize candidate ends at item 20 and contains repeated/historical variants, so official text was used for the retained current body.",
       "reuse": "DILA LEGI consolidated statutory text reused with attribution under Licence Ouverte / Open Licence 2.0. The Legalize France MIT licence covers its software, not statutory wording; source attribution and official locator are retained.",
-      "retrieval_method": "Legalize France, pinned source commit e38417fd7b982b2df02fbe01f2960127a7bf9031; used as a retrieval input and checked provision by provision against official DILA/Légifrance text. Different, duplicated, or missing wording was corrected from the official current record or DILA LEGI delta.",
-      "retrieval_evidence": "captures/article-scoped-source-conversion-20261030/France/france-legalize-official-verification-2026-10-30/France/derived/fr-code-travail-title-ii-articles-l5221-5-to-l5221-11.md (Monitor local-only archive, SHA-256 1b9a2103aeb9e557b4e337146396edde7320d4ad73d99e9c08e668783b44649b)",
+      "retrieval_method": "Legalize France at pinned commit e38417fd7b982b2df02fbe01f2960127a7bf9031 was used only as a retrieval input for the separately scoped L and R article copies. Each selected provision was checked against official DILA/Légifrance text; missing or different wording was corrected from the official current record or DILA LEGI delta. For Article R5221-2, the pinned Legalize candidate was comparison input only; its incomplete/stale body was replaced by the complete current wording transcribed from the official Légifrance article display and checked against the Gazette amendment.",
+      "retrieval_evidence": "captures/article-scoped-source-conversion-20261030/France/france-legalize-official-verification-2026-10-30/France/derived/fr-code-travail-title-ii-articles-l5221-5-to-l5221-11.md (Monitor local-only archive, SHA-256 1b9a2103aeb9e557b4e337146396edde7320d4ad73d99e9c08e668783b44649b); live official article-by-article verification 2026-10-31 recorded in local-only archive captures/legifrance/France/official-verification/fr-code-travail-l5221-5-to-l5221-11-2026-10-31.json (SHA-256 400a25b65db37c47c447e40db8e3e33404dc816cf1aaa8de955b7cf39dfdebeb)",
       "conversion_rule": "references/legalize-france-markdown-conversion.md",
       "attachments": "Not applicable: the retained statutory section/article is text-only; no source attachment belongs to this scoped record.",
       "limitations": [
         "This is a bounded section extract, not the Code du travail. The full-code locator is not a retained text. Check the official section for later amendments before date-sensitive use.",
-        "The live official Légifrance page is the authority for later versions."
+        "The live official Légifrance page is the authority for later versions.",
+        "The separate R5221-17/R5221-19 copy is limited to decision/notice and hierarchical appeal authority; R5221-19 states no filing deadline, and judicial remedies and deadlines are not covered.",
+        "The Code candidate has other repeated/versioned provisions. These bounded copies make no claim about whole-candidate completeness or currentness.",
+        "The Article R5221-2 copy is one exemption-list article and does not establish a broader employment-access topic or whole-code completeness."
       ],
       "source_document_kind": "official_statutory_text_copy",
-      "local_copy_sha256": "1b9a2103aeb9e557b4e337146396edde7320d4ad73d99e9c08e668783b44649b",
-      "local_copy_bytes": 5879
+      "local_copy_sha256": "105b4c514ef084af25a483cff59033b8981ce700a86492c7bd8d166920fe1785",
+      "local_copy_bytes": 6589,
+      "additional_local_copies": [
+        {
+          "path": "documents/legislation/fr-r5221-17-and-r5221-19-decision-appeal.md",
+          "checked_on": "2026-10-31",
+          "version_or_cutoff": "Latest dated Section 3 display retrieved showed a version in force at 2026-10-04; R5221-17 has been in force since 2021-04-01 and R5221-19 since 2016-11-01; live article records were rechecked on 2026-10-31.",
+          "scope": "Current text of Code du travail Articles R5221-17 and R5221-19 only: prefect decision and notice, and hierarchical appeal authority.",
+          "reviewed_content": "The full operative body of R5221-17 and its commencement note were compared with the official article record. The Legalize R5221-17 block matches the operative body but omits the commencement note; the official note is included here. The R5221-19 body matches the current official article. R5221-19 states no filing deadline.",
+          "reuse": "DILA LEGI statutory text reused with attribution under Licence Ouverte / Open Licence 2.0. Attribute DILA/Légifrance and the update/version date actually used; identify Legalize as the Markdown retrieval input; do not imply government endorsement. Legalize MIT covers software, not statutory wording.",
+          "retrieval_method": "Legalize France at pinned commit e38417fd7b982b2df02fbe01f2960127a7bf9031 supplied these bounded article bodies as retrieval input only. Both were compared with current official Légifrance records; the omitted R5221-17 commencement note was restored from the official record.",
+          "retrieval_evidence": "captures/official-publisher/FR/captures/france-code-travail-r5221-17-r5221-19-official-2026-10-31.md (Monitor local-only archive, SHA-256 25448fb067817bcf5dfe3ee8a7c59ba6b28de949485eaf9b536b5c11f36d8a76)",
+          "conversion_rule": "references/legalize-france-markdown-conversion.md",
+          "attachments": "Not applicable: the retained statutory articles are text-only; no source attachment belongs to this scope.",
+          "limitations": [
+            "This is a two-article copy, not the Code du travail or a complete work-authorisation decision review route.",
+            "R5221-19 identifies the hierarchical appeal authority but states no filing deadline; judicial remedies and deadlines are outside this copy.",
+            "The Code candidate has other repeated/versioned provisions. This accepted copy makes no claim about whole-candidate completeness or currentness.",
+            "The live official Légifrance article pages remain authoritative for later versions."
+          ],
+          "source_document_kind": "official_statutory_text_copy",
+          "local_copy_sha256": "1d570773a1ec4e96890cd9584c493cfa2e63bd23cdc0ea755a5f77481d7238ee",
+          "local_copy_bytes": 3117
+        },
+        {
+          "path": "documents/legislation/fr-code-travail-article-r5221-2-work-authorization-exemptions.md",
+          "checked_on": "2026-10-31",
+          "version_or_cutoff": "Article R5221-2 displayed by Légifrance as in force since 2026-10-30, modified by Decree No. 2026-1001 of 2026-10-26, Article 13; Gazette decree published 2026-10-29.",
+          "scope": "Complete current body of Code du travail Article R5221-2: all 22 enumerated exemptions from the work authorisation under Article R5221-1.",
+          "official_article_url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000055027103",
+          "official_chapter_url": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000018525800/",
+          "official_amendment_url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000055023061",
+          "reviewed_content": "The complete retained body, article identifier, 22 numbered items and version note were compared with the dated official Légifrance consolidated article display checked 2026-10-31; normalized body comparison matched exactly. Decree No. 2026-1001, Article 13, confirms insertion of item 22 and the official current article page displays the effective date 2026-10-30. The pinned Legalize France candidate contains repeated/historical R5221-2 variants and its latest-looking body ends at item 20; items 21 and 22 are absent. The candidate was retrieval/comparison input only; the current wording was retained from the official publisher display.",
+          "reuse": "DILA/Légifrance statutory text reused with attribution under Licence Ouverte / Open Licence 2.0. Attribute DILA/Légifrance and the version/update date used; do not imply government endorsement. Legalize France’s MIT licence applies to software, not statutory wording.",
+          "retrieval_method": "Legalize France at pinned commit e38417fd7b982b2df02fbe01f2960127a7bf9031, file fr/LEGITEXT000006072050.md, was used only to identify and compare the bounded article candidate. Because the snapshot is stale/incomplete and contains repeated variants, the retained current body was transcribed from the official Légifrance article display and checked against the official Gazette amendment.",
+          "retrieval_evidence": "Monitor local-only dated official capture captures/official-publisher/FR/captures/france-code-travail-r5221-2-official-2026-10-31.md (SHA-256 ffd0ab36c8957248c5838de7d5293533c2c43ced47db37740fc12748957ab697); discovery runs discovery/search-discovery-runs/france/fr-r5221-2-current-consolidated-2026-10-31.json (SHA-256 fa82f04e4e6be249a7d6d045037dacc6238a20b708b77430566c5536ebedf168) and discovery/search-discovery-runs/france/fr-r5221-2-amendment-decree-2026-10-31.json (SHA-256 b64c743e384556d3c073d82ed1a4c0ed4502f4021905e3d4df4469c03fe0c741). Search records document research execution only; the official capture and Gazette are the verification evidence.",
+          "conversion_rule": "references/legalize-france-markdown-conversion.md",
+          "attachments": "Not applicable: the retained statutory article is text-only; no source attachment belongs to this scope.",
+          "limitations": [
+            "This is one article, not the Code du travail or a complete work-authorisation process.",
+            "The excerpt is a route-specific anchor for conditional N04/P04 review of a registered French work-authorisation decision; it does not establish a broader employment-access topic or determine whether an exemption applies to a person.",
+            "Related CESEDA provisions and the decision-specific administrative/judicial review route require separate verification.",
+            "The full Legalize candidate remains unaccepted; repeated historical variants and whole-code completeness/currentness have not been resolved.",
+            "Check the live official article for later versions before date-sensitive use."
+          ],
+          "source_document_kind": "official_statutory_text_copy",
+          "local_copy_sha256": "9a445326e7b280ca8a1ca5ad25e950d375991db591874c9ccd29890fbec5b94b",
+          "local_copy_bytes": 10873
+        }
+      ],
+      "official_section_url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072050/LEGISCTA000018495598/2026-10-04/",
+      "official_article_urls": [
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043320719",
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033333034",
+        "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000055027103"
+      ],
+      "representations": [
+        {
+          "kind": "local_artifact",
+          "language": "fr",
+          "edition": "2026-10-04",
+          "path": "documents/legislation/fr-r5221-17-and-r5221-19-decision-appeal.md",
+          "acceptance_status": [
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "fr",
+          "edition": "2026-10-04",
+          "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072050/LEGISCTA000018495598/2026-10-04/",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "fr",
+          "edition": "2021-04-01",
+          "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043320719",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "fr",
+          "edition": "2016-11-01",
+          "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033333034",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ]
+        },
+        {
+          "kind": "local_artifact",
+          "language": "fr",
+          "edition": "2026-10-30",
+          "path": "documents/legislation/fr-code-travail-article-r5221-2-work-authorization-exemptions.md",
+          "acceptance_status": [
+            "accepted_local_copy"
+          ]
+        }
+      ]
     },
     "fr-code-securite-sociale": {
       "status": "accepted_local_copy",
@@ -1150,6 +1254,57 @@
       "source_document_kind": "official_statutory_text_copy",
       "local_copy_sha256": "c115d6ac7a24af3dfe916b6f26a2f9633d9a0d41c57cc17c820286d97b24aec0",
       "local_copy_bytes": 2233
+    },
+    "fr-ceseda-book-ii-legislative-selected-text": {
+      "status": "accepted_local_copy",
+      "publisher": "Direction de l’information légale et administrative (DILA), Légifrance",
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070158/LEGISCTA000042770930",
+      "checked_on": "2026-10-31",
+      "language": "French",
+      "version_or_cutoff": "Légifrance displayed the legislative CESEDA Book II in force as of 2026-08-24; rechecked 2026-10-31. Selected articles individually displayed as in force since 2021-05-01.",
+      "local_path": "documents/legislation/fr-ceseda-book-ii-legislative-eu-family-selected-text-2026-10-31.md",
+      "scope": "Selected full statutory texts for Articles L200-1 to L200-5, L221-1, L221-2, L231-1, L231-2, L232-1, L233-1, L233-2, L233-3, L233-5, L234-1 and L234-2: status and family categories, entry, short/long stay, residence and permanent residence. Does not cover the entire legislative Book II.",
+      "reviewed_content": "All 16 complete selected article bodies, identifiers and current-version displays were compared article by article with the official Légifrance legislative section on 2026-10-31. The selected bodies matched the pinned Legalize France input after display-only links and Markdown spacing were normalized. The Légifrance partial-annulment annotation for L233-1/L233-2 is separately reproduced; it is absent from the Legalize input and is not part of either statutory body.",
+      "reuse": "DILA LEGI statutory text reused with attribution to DILA/Légifrance under Licence Ouverte / Open Licence 2.0. The dataset record lists this licence and the licence requires source and last-update attribution. Legalize France’s MIT licence covers software, not statutory wording.",
+      "retrieval_method": "Legalize France pinned file at commit e38417fd7b982b2df02fbe01f2960127a7bf9031, used only as the retrieval input; the current DILA/Légifrance display is the authority for identity, version and comparison.",
+      "retrieval_evidence": "Monitor local-only archive: official legislative capture captures/legifrance-official-display/france/france/ceseda-book-ii-legislative-2026-10-31.md (SHA-256 60a3f73d7e17551959a9fe2940fe813a03301ea900f071944a4269adf05c8789); pinned Legalize selection candidates/legalize-france-e38417fd7b982b2df02fbe01f2960127a7bf9031/france/france/ceseda-book-ii-selected-input-v1.0.0.md (SHA-256 efee5aafb0af6448801e2691639ac4b2e875ab9385d9db457266885d9068f5a5); comparison manifest captures/legalize-france-official-comparison/france/france/ceseda-book-ii-retrieval-manifest.json (SHA-256 639aef050e4749d5ecd911e569bff6e43c3c739164447f5bdf1450651387f879).",
+      "conversion_rule": "references/legalize-france-markdown-conversion.md",
+      "attachments": "Not applicable: the selected legal text contains no source attachment.",
+      "limitations": [
+        "This is a selected-text copy, not a full code or complete Book II copy.",
+        "Does not cover public-order restrictions, refusal/removal provisions, remedies, territory-specific adaptations, or related EU instruments and case law.",
+        "The unpinned Légifrance section and article-level effective dates must be rechecked for date-sensitive use.",
+        "The Article L233-1/L233-2 publisher annotation records a partial annulment and must be read with the cited Conseil d’Etat decision.",
+        "The Légifrance URL is provenance/version metadata; the accepted legal text is the local Markdown document."
+      ],
+      "source_document_kind": "official_statutory_text_copy",
+      "local_copy_sha256": "eb4e0d574a737d2319ecaaa7d8348ab29a25be24d7f9c8ade9ac83089aae2273",
+      "local_copy_bytes": 11535
+    },
+    "fr-ceseda-book-ii-regulatory-selected-text": {
+      "status": "accepted_local_copy",
+      "publisher": "Direction de l’information légale et administrative (DILA), Légifrance",
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070158/LEGISCTA000042800206",
+      "checked_on": "2026-10-31",
+      "language": "French",
+      "version_or_cutoff": "Légifrance displayed the regulatory CESEDA Book II in force as of 2026-09-09; rechecked 2026-10-31. Selected articles individually displayed as in force since 2021-05-01.",
+      "local_path": "documents/legislation/fr-ceseda-book-ii-regulatory-eu-family-selected-text-2026-10-31.md",
+      "scope": "Selected full statutory texts for Articles R221-1, R221-2, R233-14, R233-15, R233-16, R233-17, R233-18 and R234-1: entry documents, visa facilitation, residence-card applications and issue, renewal timing and permanent-residence documentation. Does not cover the entire regulatory Book II.",
+      "reviewed_content": "All eight complete selected article bodies, identifiers and current-version displays were compared article by article with the official Légifrance regulatory section on 2026-10-31. The selected bodies matched the pinned Legalize France input after display-only links and Markdown spacing were normalized.",
+      "reuse": "DILA LEGI statutory text reused with attribution to DILA/Légifrance under Licence Ouverte / Open Licence 2.0. The dataset record lists this licence and the licence requires source and last-update attribution. Legalize France’s MIT licence covers software, not statutory wording.",
+      "retrieval_method": "Legalize France pinned file at commit e38417fd7b982b2df02fbe01f2960127a7bf9031, used only as the retrieval input; the current DILA/Légifrance display is the authority for identity, version and comparison.",
+      "retrieval_evidence": "Monitor local-only archive: official regulatory capture captures/legifrance-official-display/france/france/ceseda-book-ii-regulatory-2026-10-31.md (SHA-256 49cfca0a571ae5492a8162efa504d5f6fea631e34b8fa326692033bc340d58b6); pinned Legalize selection candidates/legalize-france-e38417fd7b982b2df02fbe01f2960127a7bf9031/france/france/ceseda-book-ii-selected-input-v1.0.0.md (SHA-256 efee5aafb0af6448801e2691639ac4b2e875ab9385d9db457266885d9068f5a5); comparison manifest captures/legalize-france-official-comparison/france/france/ceseda-book-ii-retrieval-manifest.json (SHA-256 639aef050e4749d5ecd911e569bff6e43c3c739164447f5bdf1450651387f879).",
+      "conversion_rule": "references/legalize-france-markdown-conversion.md",
+      "attachments": "Not applicable: the selected legal text contains no source attachment.",
+      "limitations": [
+        "This is a selected-text copy, not a full code or complete Book II copy.",
+        "Does not cover refusal/removal provisions, remedies, territory-specific adaptations, every residence-document category, or related EU instruments and case law.",
+        "The unpinned Légifrance section and article-level effective dates must be rechecked for date-sensitive use.",
+        "The Légifrance URL is provenance/version metadata; the accepted legal text is the local Markdown document."
+      ],
+      "source_document_kind": "official_statutory_text_copy",
+      "local_copy_sha256": "a3dc162003786673086923f6b97c2aea365ea63a76a6b855fd97ff7eeb505b50",
+      "local_copy_bytes": 7869
     }
   },
   "retrieval_method_reviews": {
@@ -1157,15 +1312,16 @@
       "status": "discovery_and_dated_snapshot_method_only",
       "repository": "https://github.com/legalize-dev/legalize-fr",
       "reviewed_commit": "e38417fd7b982b2df02fbe01f2960127a7bf9031",
-      "checked_on": "2026-10-29",
+      "checked_on": "2026-10-31",
       "inventory": "83 Markdown code files under fr/; 4 code identifiers overlap the current France pack; 79 lack a same-code local document. This is a filename crosswalk, not a topic-relevance finding.",
       "official_validation": {
         "LEGITEXT000006070158": "Légifrance CESEDA page verified; current version shown as of 2026-10-28 and data last updated 2026-10-24.",
         "LEGITEXT000006070721": "Légifrance Code civil page verified; current version shown as of 2026-10-29 and data last updated 2026-07-29.",
         "LEGITEXT000006070933": "Légifrance CJA page verified; current version shown as of 2026-10-29 and data last updated 2026-09-01.",
-        "LEGITEXT000031366350": "Légifrance CRPA page verified; current version shown as of 2026-10-08 and data last updated 2026-05-28."
+        "LEGITEXT000031366350": "Légifrance CRPA page verified; current version shown as of 2026-10-08 and data last updated 2026-05-28.",
+        "LEGITEXT000006072050": "For Code du travail Articles R5221-17 and R5221-19, live official article records were checked on 2026-10-31; the latest dated Section 3 display retrieved showed a version in force at 2026-10-04."
       },
-      "disposition": "The repository files checked were dated 2026-04-03 and lagged the official consolidated pages. Confirmed only as a third-party discovery and dated snapshot route; not accepted as authoritative or current-version retrieval. No Legalize text was copied into documents/.",
+      "disposition": "Legalize France remains a third-party discovery and dated Markdown retrieval method, not an authority or guaranteed current-version retriever. The pinned full Code du travail candidate is not accepted because it contains repeated/historical variants and its R5221-2 copy omits current items 21° and 22°. Three bounded Article L and R text copies are proposed after item-level comparison with official DILA/Légifrance records; they do not establish whole-code completeness or currentness.",
       "attribution_and_rights": "Attribute legal text to DILA/Légifrance under Licence Ouverte 2.0 and attribute the Markdown transformation to Legalize France at the pinned commit. The repository's MIT license covers software, not the statutory text. Recheck notices before reuse.",
       "conversion_rules": [
         "Preserve LEGITEXT ID, title, official URL, repository commit/path, snapshot date, status and language.",
@@ -1180,7 +1336,9 @@
     "fr-01-ceseda-book-ii-eu-citizens-and-family-members-(including-articles-l.233-1-o": {
       "source_identity_id": "fr:url:58fdd8402156404e0510",
       "representation_ids": [
-        "fr:url:58fdd8402156404e0510#url:fr:7135fe3bd1af"
+        "fr:url:58fdd8402156404e0510#local:fr:b921d097a3e1",
+        "fr:url:58fdd8402156404e0510#url:fr:7135fe3bd1af",
+        "fr:url:58fdd8402156404e0510#url:fr:d007e703fb8e"
       ],
       "identity_resolution_status": "resolved"
     },
@@ -1260,8 +1418,10 @@
       "source_identity_id": "fr:url:478a7064b9ff5f0f1b34",
       "representation_ids": [
         "fr:url:478a7064b9ff5f0f1b34#local:fr:626d23131dfc",
+        "fr:url:478a7064b9ff5f0f1b34#local:fr:784a50bd444a",
         "fr:url:478a7064b9ff5f0f1b34#url:fr:b5356f5dcc99",
-        "fr:url:478a7064b9ff5f0f1b34#url:fr:d6cb3198a2cf"
+        "fr:url:478a7064b9ff5f0f1b34#url:fr:d6cb3198a2cf",
+        "fr:url:478a7064b9ff5f0f1b34#url:fr:fa1965f3c441"
       ],
       "identity_resolution_status": "resolved"
     },
@@ -1359,8 +1519,13 @@
     "fr-code-travail": {
       "source_identity_id": "fr:url:a0541676533aa7fc6488",
       "representation_ids": [
+        "fr:url:a0541676533aa7fc6488#local:fr:1af159dff2e6",
+        "fr:url:a0541676533aa7fc6488#local:fr:2cebf1f153de",
         "fr:url:a0541676533aa7fc6488#local:fr:b66007ad41fa",
+        "fr:url:a0541676533aa7fc6488#url:fr:27bbd46ed37e",
         "fr:url:a0541676533aa7fc6488#url:fr:4da560fa9384",
+        "fr:url:a0541676533aa7fc6488#url:fr:9e8b05c717cc",
+        "fr:url:a0541676533aa7fc6488#url:fr:ba3416ed02a3",
         "fr:url:a0541676533aa7fc6488#url:fr:bc73bb32b3fc"
       ],
       "identity_resolution_status": "resolved"
@@ -1634,7 +1799,9 @@
     "fr-ceseda-book-ii-regulatory": {
       "source_identity_id": "fr:url:58fdd8402156404e0510",
       "representation_ids": [
-        "fr:url:58fdd8402156404e0510#url:fr:7135fe3bd1af"
+        "fr:url:58fdd8402156404e0510#local:fr:b921d097a3e1",
+        "fr:url:58fdd8402156404e0510#url:fr:7135fe3bd1af",
+        "fr:url:58fdd8402156404e0510#url:fr:d007e703fb8e"
       ],
       "identity_resolution_status": "resolved",
       "linked_source_entry_id": "fr-01-ceseda-book-ii-eu-citizens-and-family-members-(including-articles-l.233-1-o",
@@ -1648,6 +1815,30 @@
       ],
       "identity_resolution_status": "resolved",
       "linked_source_entry_id": "fr-05-france-visas-route-for-family-members-of-european-citizens",
+      "status_record": true
+    },
+    "fr-ceseda-book-ii-legislative-selected-text": {
+      "source_identity_id": "fr:url:478a7064b9ff5f0f1b34",
+      "representation_ids": [
+        "fr:url:478a7064b9ff5f0f1b34#local:fr:626d23131dfc",
+        "fr:url:478a7064b9ff5f0f1b34#local:fr:784a50bd444a",
+        "fr:url:478a7064b9ff5f0f1b34#url:fr:b5356f5dcc99",
+        "fr:url:478a7064b9ff5f0f1b34#url:fr:d6cb3198a2cf",
+        "fr:url:478a7064b9ff5f0f1b34#url:fr:fa1965f3c441"
+      ],
+      "identity_resolution_status": "resolved",
+      "linked_source_entry_id": "fr-ceseda-book-ii-legislative",
+      "status_record": true
+    },
+    "fr-ceseda-book-ii-regulatory-selected-text": {
+      "source_identity_id": "fr:url:58fdd8402156404e0510",
+      "representation_ids": [
+        "fr:url:58fdd8402156404e0510#local:fr:b921d097a3e1",
+        "fr:url:58fdd8402156404e0510#url:fr:7135fe3bd1af",
+        "fr:url:58fdd8402156404e0510#url:fr:d007e703fb8e"
+      ],
+      "identity_resolution_status": "resolved",
+      "linked_source_entry_id": "fr-01-ceseda-book-ii-eu-citizens-and-family-members-(including-articles-l.233-1-o",
       "status_record": true
     }
   },

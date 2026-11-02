@@ -3257,7 +3257,7 @@
     },
     {
       "id": "no-54",
-      "title": "Current EØS Worker Mobility Act, LOV-2012-12-14-81",
+      "title": "Lovdata LOV-2012-12-14-81 (official locator)",
       "source_type": "unspecified",
       "official_urls": [
         "https://lovdata.no/lov/2012-12-14-81"
@@ -3267,21 +3267,37 @@
       "identity_resolution_basis": "catalogued official URL",
       "status_categories": [
         "accepted_external_reference",
-        "candidate"
+        "accepted_local_copy",
+        "candidate",
+        "not_relied_upon"
       ],
       "representation_ids": [
-        "no:url:66a571558ab053f158bd#url:nn:7b64875d5e1f"
+        "no:url:66a571558ab053f158bd#local:nn:3d27a1bac61e",
+        "no:url:66a571558ab053f158bd#url:nn:a789f8499445"
       ],
       "representations": [
         {
+          "kind": "local_artifact",
+          "language": "nn",
+          "edition": "2025-04-10",
+          "url": null,
+          "path": "documents/legislation/no-54-e-s-worker-mobility-act-lov-2012-12-14-81.md",
+          "representation_id": "no:url:66a571558ab053f158bd#local:nn:3d27a1bac61e",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ]
+        },
+        {
           "kind": "official_reference",
           "language": "nn",
-          "edition": "undated",
+          "edition": "2025-04-10",
           "url": "https://lovdata.no/lov/2012-12-14-81",
           "path": null,
-          "representation_id": "no:url:66a571558ab053f158bd#url:nn:7b64875d5e1f",
+          "representation_id": "no:url:66a571558ab053f158bd#url:nn:a789f8499445",
           "acceptance_status": [
-            "accepted_external_reference"
+            "accepted_external_reference",
+            "accepted_local_copy"
           ]
         }
       ],
@@ -3299,16 +3315,21 @@
           ],
           "cells": [
             "`no-54`",
-            "[Current EØS Worker Mobility Act, LOV-2012-12-14-81](https://lovdata.no/lov/2012-12-14-81)",
+            "[Lovdata LOV-2012-12-14-81](https://lovdata.no/lov/2012-12-14-81) (official locator)",
             "`eea_worker_mobility_legislation`",
-            "accepted official external reference; link only",
-            "Current EØS worker-mobility implementing statute. The 1992 predecessor is repealed; preserve this record’s Nynorsk text and EEA adaptations.",
-            "[no-54](../documents/references/no-54-current-e-s-worker-mobility-act-lov-2012-12-14-81.md)"
+            "accepted official current-law text retained",
+            "Nynorsk text retained at `documents/legislation/no-54-e-s-worker-mobility-act-lov-2012-12-14-81.md`; last changed by LOV-2025-04-10-8. One law only; zero topics accepted.",
+            "[no-54 legal text](../documents/legislation/no-54-e-s-worker-mobility-act-lov-2012-12-14-81.md) and [review note](../documents/references/no-54-current-e-s-worker-mobility-act-lov-2012-12-14-81.md)"
           ],
           "category": "catalogue"
         }
       ],
       "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/local_copy_reviews/1",
+          "category": "acceptance"
+        },
         {
           "path": "references/source-acceptance.json",
           "json_pointer": "/accepted_references/51",

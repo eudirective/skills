@@ -4,9 +4,9 @@
   "jurisdiction": "PT",
   "inventory_research_date": "2026-10-24",
   "scope": "Bounded cross-jurisdiction discovery from Danish EU free-movement residence law and official guidance, carrying prior country-pack and taxonomy findings forward as search leads. Covers Portugal legal publication/version/reuse, Law 37/2006 and related EEA/Swiss/Andorra routes, general immigration and family procedures, forms, visas/missions, administrative procedure/remedies, public access, privacy, oversight, legal aid, civil-status evidence, and administrative case-law discovery. Portugal is an EU Member State. No legal equivalence or exhaustive inventory is asserted.",
-  "status": "external_reference_reviewed_with_narrow_scopes; local_copies_topics_and_country_review_incomplete",
-  "retrieval_status": "The 19 October retrieval pass saved 46 exact responses; 19 converted review artifacts remain unaccepted and are being moved to the Monitor archive. As of 24 October, 61 official links are accepted within narrow scopes, three Gov.pt pages are not relied upon for current procedures, and four AIMA routes remain under human review. No local copies or topics are accepted.",
-  "accepted_source_count": 0,
+  "status": "native_primary_act_artifacts_accepted; dated_derived_texts_retained; topic_coverage_and_country_review_incomplete",
+  "retrieval_status": "As of 2026-10-31, two native official Gazette act PDFs are accepted locally (Law 37/2006 original and Decreto-Lei 41/2023); three dated DRE consolidated texts remain accepted as derived working copies, not legally valid consolidated acts. Official record URLs are provenance/version metadata, not source documents. No topic is accepted.",
+  "accepted_source_count": 2,
   "candidate_source_count": 68,
   "official_hosts": [
     "aima.gov.pt",
@@ -335,33 +335,39 @@
         "record": "Law 37/2006, original official record",
         "source_identity_id": "pt:url:422df2c3e9341aa7c93e",
         "representation_ids": [
-          "pt:url:422df2c3e9341aa7c93e#url:pt:2e45bf74d9c7"
+          "pt:url:422df2c3e9341aa7c93e#local:pt:7c1e70e855cd",
+          "pt:url:422df2c3e9341aa7c93e#url:pt:235c06dd7e55",
+          "pt:url:422df2c3e9341aa7c93e#url:pt:2e45bf74d9c7",
+          "pt:url:422df2c3e9341aa7c93e#url:pt:6bc0816fdb49"
         ]
       },
       "functional_relationship": "close_functional_match",
-      "verification_status": "Official source inspected",
-      "retrieval_status": "discovery_surface_no_text",
-      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. Transposes Directive 2004/38. Articles 1 and 3 extend parts of the regime to EEA and Swiss nationals and their family; article 3(5) extends family provisions to Portuguese nationals. Registration over three months is a municipal route; family cards are issued under a separate route. Article 21 says documents are not a precondition to exercising the right.",
-      "version_evidence": "Transposes Directive 2004/38. Articles 1 and 3 extend parts of the regime to EEA and Swiss nationals and their family; article 3(5) extends family provisions to Portuguese nationals. Registration over three months is a municipal route; family cards are issued under a separate route. Article 21 says documents are not a precondition to exercising the right.",
-      "note": "Transposes Directive 2004/38. Articles 1 and 3 extend parts of the regime to EEA and Swiss nationals and their family; article 3(5) extends family provisions to Portuguese nationals. Registration over three months is a municipal route; family cards are issued under a separate route. Article 21 says documents are not a precondition to exercising the right.",
+      "verification_status": "Official gazette record and native act PDF verified; exact bytes retained",
+      "retrieval_status": "native_official_gazette_pdf_retained",
+      "retrieval_shape": "Native official Gazette PDF retained byte-for-byte without conversion.",
+      "version_evidence": "Original official enactment published 2006-08-09. DRE currently marks the law in force; its consolidated selector is 2026-08-24 and last alteration is 2023-06-02. Later Article 25 of Decreto-Lei 41/2023 amended Articles 14–17, 29 and 30 effective 2023-10-29.",
+      "note": "The 8-page original Gazette PDF is retained as the actual primary-source file; Article 1 is present in full. The PDF alone does not represent later amendments. The separate DRE consolidated Markdown remains a dated derived text with the publisher’s no-legal-value caveat.",
       "topic_ids": [
         "free_movement",
         "family",
         "law"
       ],
       "retrieved": true,
-      "accepted": false,
-      "source_sha256": "0794abe5f8088cfd34e8e50bb5f9f7828b20a3c505f702e4b51be3bbb0631b57",
-      "source_bytes": 2346,
-      "resolved_url": "https://diariodarepublica.pt/dr/detalhe/lei/37-2006-538604",
-      "retrieval_note": "Public HTML response contained no sufficiently long extractable source body.",
+      "accepted": true,
+      "source_sha256": "e327ca4c5974dbb5151a4af4b51ac760fa2bc948be65f03eed6f5c845b79884d",
+      "source_bytes": 137363,
+      "resolved_url": "https://files.diariodarepublica.pt/1s/2006/08/15300/57175724.pdf",
+      "retrieval_note": "The official PDF bytes were downloaded from files.diariodarepublica.pt and independently retrieved again on 2026-10-31; SHA-256 and byte count match. The official HTML/PDF publisher text was checked for the recorded provisions.",
       "official_reference_status": "usable_official_reference",
       "official_reference_decision": "pt-05",
       "accepted_external_reference": true,
-      "local_copy_status": "unaccepted",
+      "local_copy_status": "accepted",
       "source_identity_id": "pt:url:422df2c3e9341aa7c93e",
       "representation_ids": [
-        "pt:url:422df2c3e9341aa7c93e#url:pt:2e45bf74d9c7"
+        "pt:url:422df2c3e9341aa7c93e#local:pt:7c1e70e855cd",
+        "pt:url:422df2c3e9341aa7c93e#url:pt:235c06dd7e55",
+        "pt:url:422df2c3e9341aa7c93e#url:pt:2e45bf74d9c7",
+        "pt:url:422df2c3e9341aa7c93e#url:pt:6bc0816fdb49"
       ]
     },
     {
@@ -414,32 +420,38 @@
         "record": "Decree-Law 41/2023, AIMA and amendment trail",
         "source_identity_id": "pt:url:3f6cefbb93e3ad3dc11f",
         "representation_ids": [
-          "pt:url:3f6cefbb93e3ad3dc11f#url:pt:081feb02267d"
+          "pt:url:3f6cefbb93e3ad3dc11f#local:pt:8082529c09ed",
+          "pt:url:3f6cefbb93e3ad3dc11f#url:pt:081feb02267d",
+          "pt:url:3f6cefbb93e3ad3dc11f#url:pt:724edfce6ab9",
+          "pt:url:3f6cefbb93e3ad3dc11f#url:pt:ccdcf066d349"
         ]
       },
       "functional_relationship": "related_source",
-      "verification_status": "Official search result only",
-      "retrieval_status": "discovery_surface_no_text",
-      "retrieval_shape": "Candidate locator only; no source bytes saved or converted. Establishes AIMA and changes institutional responsibility, including the EU-family card route. Reconcile its commencement and provisions with the original Law 37/2006 and later organizational acts.",
-      "version_evidence": "Establishes AIMA and changes institutional responsibility, including the EU-family card route. Reconcile its commencement and provisions with the original Law 37/2006 and later organizational acts.",
-      "note": "Establishes AIMA and changes institutional responsibility, including the EU-family card route. Reconcile its commencement and provisions with the original Law 37/2006 and later organizational acts.",
+      "verification_status": "Official gazette record and native act PDF verified; exact bytes retained",
+      "retrieval_status": "native_official_gazette_pdf_retained",
+      "retrieval_shape": "Native official Gazette PDF retained byte-for-byte without conversion.",
+      "version_evidence": "DRE marks Decreto-Lei 41/2023 in force; its Article 49 sets commencement on 2023-10-29, subject to Article 50. Article 25 amends Lei 37/2006 Articles 14–17, 29 and 30.",
+      "note": "The complete 87-page Gazette publication PDF is retained as the actual primary-source file. Its Article 25 text and commencement provision were compared with the current DRE Lei 37/2006 consolidation. Later organizational acts and live service routes remain separate.",
       "topic_ids": [
         "authority",
         "amendment"
       ],
       "retrieved": true,
-      "accepted": false,
-      "source_sha256": "0794abe5f8088cfd34e8e50bb5f9f7828b20a3c505f702e4b51be3bbb0631b57",
-      "source_bytes": 2346,
-      "resolved_url": "https://diariodarepublica.pt/dr/detalhe/decreto-lei/41-2023-213881448",
-      "retrieval_note": "Public HTML response contained no sufficiently long extractable source body.",
+      "accepted": true,
+      "source_sha256": "a1574c42ad79526f888881706e0f8ffdd93b9ac56b19dbefbc0dd8a3044942b4",
+      "source_bytes": 7758812,
+      "resolved_url": "https://files.diariodarepublica.pt/1s/2023/06/10700/0002000106.pdf",
+      "retrieval_note": "The official PDF bytes were downloaded from files.diariodarepublica.pt and independently retrieved again on 2026-10-31; SHA-256 and byte count match. The official HTML/PDF publisher text was checked for the recorded provisions.",
       "official_reference_status": "usable_official_reference",
       "official_reference_decision": "pt-07",
       "accepted_external_reference": true,
-      "local_copy_status": "unaccepted",
+      "local_copy_status": "accepted",
       "source_identity_id": "pt:url:3f6cefbb93e3ad3dc11f",
       "representation_ids": [
-        "pt:url:3f6cefbb93e3ad3dc11f#url:pt:081feb02267d"
+        "pt:url:3f6cefbb93e3ad3dc11f#local:pt:8082529c09ed",
+        "pt:url:3f6cefbb93e3ad3dc11f#url:pt:081feb02267d",
+        "pt:url:3f6cefbb93e3ad3dc11f#url:pt:724edfce6ab9",
+        "pt:url:3f6cefbb93e3ad3dc11f#url:pt:ccdcf066d349"
       ]
     },
     {
@@ -2872,11 +2884,11 @@
   ],
   "retrieved_review_candidate_count": 46,
   "converted_review_candidate_count": 19,
-  "accepted_external_reference_count": 61,
+  "accepted_external_reference_count": 66,
   "remaining_candidate_reference_count": 4,
-  "reference_review_status": "61 dated official links accepted within narrow scopes; 3 pages not relied upon for current procedure; 4 AIMA references remain under a whole-site human-review offer; local copies accepted: 0; topics accepted: 0; country review complete: false.",
+  "reference_review_status": "66 official links accepted within narrow scopes; 3 Gov.pt pages not relied upon for current procedure; 4 AIMA references remain under a whole-site human-review offer; two native primary act PDFs accepted locally; three dated derived texts retained; topics accepted: 0; country review complete: false.",
   "not_relied_upon_reference_count": 3,
-  "canonical_manifest_note": "This is the canonical 68-source inventory. Official link acceptance is separate from local-copy acceptance, freshness, topic coverage, dependencies, and country completion. Unaccepted converted artifacts use the Monitor local-only archive.",
+  "canonical_manifest_note": "The 68-row candidate input remains distinct from the 73-row identity catalogue. Official URLs are locator/provenance metadata only. Actual accepted primary act source files are local native documents; dated DRE consolidations remain derived copies with the publisher’s no-legal-value caveat. Candidate, link, local-text, topic, dependency, and country-review states are separate.",
   "schema_version": 1,
   "source_identity_inventory_schema_version": 1,
   "source_identity_inventory_file": "references/source-identity-inventory.json",
@@ -3464,20 +3476,55 @@
       "title": "Law 37/2006, original official record",
       "source_type": "free_movement_primary_legislation",
       "official_urls": [
-        "https://diariodarepublica.pt/dr/detalhe/lei/37-2006-538604"
+        "https://diariodarepublica.pt/dr/detalhe/lei/37-2006-538604",
+        "https://files.diariodarepublica.pt/1s/2006/08/15300/57175724.pdf"
       ],
       "source_identity_id": "pt:url:422df2c3e9341aa7c93e",
       "identity_resolution_status": "resolved",
       "identity_resolution_basis": "catalogued official URL",
       "status_categories": [
         "accepted_external_reference",
-        "pending",
-        "discovery"
+        "accepted_local_copy"
       ],
       "representation_ids": [
-        "pt:url:422df2c3e9341aa7c93e#url:pt:2e45bf74d9c7"
+        "pt:url:422df2c3e9341aa7c93e#local:pt:7c1e70e855cd",
+        "pt:url:422df2c3e9341aa7c93e#url:pt:235c06dd7e55",
+        "pt:url:422df2c3e9341aa7c93e#url:pt:2e45bf74d9c7",
+        "pt:url:422df2c3e9341aa7c93e#url:pt:6bc0816fdb49"
       ],
       "representations": [
+        {
+          "kind": "local_artifact",
+          "language": "pt",
+          "edition": "2006-08-09",
+          "url": null,
+          "path": "documents/legislation/pt-05-law-37-2006-official-gazette-2006-08-09.pdf",
+          "representation_id": "pt:url:422df2c3e9341aa7c93e#local:pt:7c1e70e855cd",
+          "acceptance_status": [],
+          "source_identity_id": "pt:url:422df2c3e9341aa7c93e",
+          "representation_ids": [
+            "pt:url:422df2c3e9341aa7c93e#local:pt:7c1e70e855cd",
+            "pt:url:422df2c3e9341aa7c93e#url:pt:235c06dd7e55",
+            "pt:url:422df2c3e9341aa7c93e#url:pt:2e45bf74d9c7",
+            "pt:url:422df2c3e9341aa7c93e#url:pt:6bc0816fdb49"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "pt",
+          "edition": "2006-08-09",
+          "url": "https://files.diariodarepublica.pt/1s/2006/08/15300/57175724.pdf",
+          "path": null,
+          "representation_id": "pt:url:422df2c3e9341aa7c93e#url:pt:235c06dd7e55",
+          "acceptance_status": [],
+          "source_identity_id": "pt:url:422df2c3e9341aa7c93e",
+          "representation_ids": [
+            "pt:url:422df2c3e9341aa7c93e#local:pt:7c1e70e855cd",
+            "pt:url:422df2c3e9341aa7c93e#url:pt:235c06dd7e55",
+            "pt:url:422df2c3e9341aa7c93e#url:pt:2e45bf74d9c7",
+            "pt:url:422df2c3e9341aa7c93e#url:pt:6bc0816fdb49"
+          ]
+        },
         {
           "kind": "official_reference",
           "language": "pt",
@@ -3487,12 +3534,33 @@
           "representation_id": "pt:url:422df2c3e9341aa7c93e#url:pt:2e45bf74d9c7",
           "acceptance_status": [
             "accepted_external_reference",
-            "pending",
-            "discovery"
+            "accepted_local_copy"
           ],
           "source_identity_id": "pt:url:422df2c3e9341aa7c93e",
           "representation_ids": [
-            "pt:url:422df2c3e9341aa7c93e#url:pt:2e45bf74d9c7"
+            "pt:url:422df2c3e9341aa7c93e#local:pt:7c1e70e855cd",
+            "pt:url:422df2c3e9341aa7c93e#url:pt:235c06dd7e55",
+            "pt:url:422df2c3e9341aa7c93e#url:pt:2e45bf74d9c7",
+            "pt:url:422df2c3e9341aa7c93e#url:pt:6bc0816fdb49"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "pt",
+          "edition": "undated",
+          "url": "https://files.diariodarepublica.pt/1s/2006/08/15300/57175724.pdf",
+          "path": null,
+          "representation_id": "pt:url:422df2c3e9341aa7c93e#url:pt:6bc0816fdb49",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ],
+          "source_identity_id": "pt:url:422df2c3e9341aa7c93e",
+          "representation_ids": [
+            "pt:url:422df2c3e9341aa7c93e#local:pt:7c1e70e855cd",
+            "pt:url:422df2c3e9341aa7c93e#url:pt:235c06dd7e55",
+            "pt:url:422df2c3e9341aa7c93e#url:pt:2e45bf74d9c7",
+            "pt:url:422df2c3e9341aa7c93e#url:pt:6bc0816fdb49"
           ]
         }
       ],
@@ -3502,7 +3570,10 @@
           "json_pointer": "/sources/4",
           "source_identity_id": "pt:url:422df2c3e9341aa7c93e",
           "representation_ids": [
-            "pt:url:422df2c3e9341aa7c93e#url:pt:2e45bf74d9c7"
+            "pt:url:422df2c3e9341aa7c93e#local:pt:7c1e70e855cd",
+            "pt:url:422df2c3e9341aa7c93e#url:pt:235c06dd7e55",
+            "pt:url:422df2c3e9341aa7c93e#url:pt:2e45bf74d9c7",
+            "pt:url:422df2c3e9341aa7c93e#url:pt:6bc0816fdb49"
           ]
         },
         {
@@ -3521,24 +3592,42 @@
             "[Law 37/2006, original official record](https://diariodarepublica.pt/dr/detalhe/lei/37-2006-538604)",
             "`free_movement_primary_legislation`",
             "`close_functional_match`",
-            "Accepted external reference (narrow scope)",
-            "Transposes Directive 2004/38. Articles 1 and 3 extend parts of the regime to EEA and Swiss nationals and their family; article 3(5) extends family provisions to Portuguese nationals. Registration over three months is a municipal route; family cards are issued under a separate route. Article 21 says documents are not a precondition to exercising the right."
+            "Accepted native primary-act PDF and narrow official reference",
+            "Actual source file: [original 8-page Gazette PDF](../documents/legislation/pt-05-law-37-2006-official-gazette-2006-08-09.pdf), SHA-256 `e327ca4c5974dbb5151a4af4b51ac760fa2bc948be65f03eed6f5c845b79884d`, 137,363 bytes; retained byte-for-byte without conversion. Official PDF text confirms the complete Article 1, which the Legalize transcription omits. The act is in force but has later amendments; read with pt-07 and the dated DRE-derived consolidation. EEA/Swiss and Portuguese-family extensions remain distinct provisions."
           ],
           "category": "catalogue",
           "source_identity_id": "pt:url:422df2c3e9341aa7c93e",
           "representation_ids": [
-            "pt:url:422df2c3e9341aa7c93e#url:pt:2e45bf74d9c7"
+            "pt:url:422df2c3e9341aa7c93e#local:pt:7c1e70e855cd",
+            "pt:url:422df2c3e9341aa7c93e#url:pt:235c06dd7e55",
+            "pt:url:422df2c3e9341aa7c93e#url:pt:2e45bf74d9c7",
+            "pt:url:422df2c3e9341aa7c93e#url:pt:6bc0816fdb49"
           ]
         }
       ],
       "acceptance_references": [
         {
           "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_local_copy_reviews/0",
+          "category": "acceptance",
+          "source_identity_id": "pt:url:422df2c3e9341aa7c93e",
+          "representation_ids": [
+            "pt:url:422df2c3e9341aa7c93e#local:pt:7c1e70e855cd",
+            "pt:url:422df2c3e9341aa7c93e#url:pt:235c06dd7e55",
+            "pt:url:422df2c3e9341aa7c93e#url:pt:2e45bf74d9c7",
+            "pt:url:422df2c3e9341aa7c93e#url:pt:6bc0816fdb49"
+          ]
+        },
+        {
+          "path": "references/source-acceptance.json",
           "json_pointer": "/external_reference_decisions/22",
           "category": "acceptance",
           "source_identity_id": "pt:url:422df2c3e9341aa7c93e",
           "representation_ids": [
-            "pt:url:422df2c3e9341aa7c93e#url:pt:2e45bf74d9c7"
+            "pt:url:422df2c3e9341aa7c93e#local:pt:7c1e70e855cd",
+            "pt:url:422df2c3e9341aa7c93e#url:pt:235c06dd7e55",
+            "pt:url:422df2c3e9341aa7c93e#url:pt:2e45bf74d9c7",
+            "pt:url:422df2c3e9341aa7c93e#url:pt:6bc0816fdb49"
           ]
         }
       ],
@@ -3776,20 +3865,39 @@
       "title": "Decree-Law 41/2023, AIMA and amendment trail",
       "source_type": "immigration_and_authority_amending_legislation",
       "official_urls": [
-        "https://diariodarepublica.pt/dr/detalhe/decreto-lei/41-2023-213881448"
+        "https://diariodarepublica.pt/dr/detalhe/decreto-lei/41-2023-213881448",
+        "https://files.diariodarepublica.pt/1s/2023/06/10700/0002000106.pdf"
       ],
       "source_identity_id": "pt:url:3f6cefbb93e3ad3dc11f",
       "identity_resolution_status": "resolved",
       "identity_resolution_basis": "catalogued official URL",
       "status_categories": [
         "accepted_external_reference",
-        "pending",
-        "discovery"
+        "accepted_local_copy"
       ],
       "representation_ids": [
-        "pt:url:3f6cefbb93e3ad3dc11f#url:pt:081feb02267d"
+        "pt:url:3f6cefbb93e3ad3dc11f#local:pt:8082529c09ed",
+        "pt:url:3f6cefbb93e3ad3dc11f#url:pt:081feb02267d",
+        "pt:url:3f6cefbb93e3ad3dc11f#url:pt:724edfce6ab9",
+        "pt:url:3f6cefbb93e3ad3dc11f#url:pt:ccdcf066d349"
       ],
       "representations": [
+        {
+          "kind": "local_artifact",
+          "language": "pt",
+          "edition": "2023-06-02",
+          "url": null,
+          "path": "documents/legislation/pt-07-decree-law-41-2023-official-gazette-2023-06-02.pdf",
+          "representation_id": "pt:url:3f6cefbb93e3ad3dc11f#local:pt:8082529c09ed",
+          "acceptance_status": [],
+          "source_identity_id": "pt:url:3f6cefbb93e3ad3dc11f",
+          "representation_ids": [
+            "pt:url:3f6cefbb93e3ad3dc11f#local:pt:8082529c09ed",
+            "pt:url:3f6cefbb93e3ad3dc11f#url:pt:081feb02267d",
+            "pt:url:3f6cefbb93e3ad3dc11f#url:pt:724edfce6ab9",
+            "pt:url:3f6cefbb93e3ad3dc11f#url:pt:ccdcf066d349"
+          ]
+        },
         {
           "kind": "official_reference",
           "language": "pt",
@@ -3799,12 +3907,49 @@
           "representation_id": "pt:url:3f6cefbb93e3ad3dc11f#url:pt:081feb02267d",
           "acceptance_status": [
             "accepted_external_reference",
-            "pending",
-            "discovery"
+            "accepted_local_copy"
           ],
           "source_identity_id": "pt:url:3f6cefbb93e3ad3dc11f",
           "representation_ids": [
-            "pt:url:3f6cefbb93e3ad3dc11f#url:pt:081feb02267d"
+            "pt:url:3f6cefbb93e3ad3dc11f#local:pt:8082529c09ed",
+            "pt:url:3f6cefbb93e3ad3dc11f#url:pt:081feb02267d",
+            "pt:url:3f6cefbb93e3ad3dc11f#url:pt:724edfce6ab9",
+            "pt:url:3f6cefbb93e3ad3dc11f#url:pt:ccdcf066d349"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "pt",
+          "edition": "2023-06-02",
+          "url": "https://files.diariodarepublica.pt/1s/2023/06/10700/0002000106.pdf",
+          "path": null,
+          "representation_id": "pt:url:3f6cefbb93e3ad3dc11f#url:pt:724edfce6ab9",
+          "acceptance_status": [],
+          "source_identity_id": "pt:url:3f6cefbb93e3ad3dc11f",
+          "representation_ids": [
+            "pt:url:3f6cefbb93e3ad3dc11f#local:pt:8082529c09ed",
+            "pt:url:3f6cefbb93e3ad3dc11f#url:pt:081feb02267d",
+            "pt:url:3f6cefbb93e3ad3dc11f#url:pt:724edfce6ab9",
+            "pt:url:3f6cefbb93e3ad3dc11f#url:pt:ccdcf066d349"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "pt",
+          "edition": "undated",
+          "url": "https://files.diariodarepublica.pt/1s/2023/06/10700/0002000106.pdf",
+          "path": null,
+          "representation_id": "pt:url:3f6cefbb93e3ad3dc11f#url:pt:ccdcf066d349",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ],
+          "source_identity_id": "pt:url:3f6cefbb93e3ad3dc11f",
+          "representation_ids": [
+            "pt:url:3f6cefbb93e3ad3dc11f#local:pt:8082529c09ed",
+            "pt:url:3f6cefbb93e3ad3dc11f#url:pt:081feb02267d",
+            "pt:url:3f6cefbb93e3ad3dc11f#url:pt:724edfce6ab9",
+            "pt:url:3f6cefbb93e3ad3dc11f#url:pt:ccdcf066d349"
           ]
         }
       ],
@@ -3814,7 +3959,10 @@
           "json_pointer": "/sources/6",
           "source_identity_id": "pt:url:3f6cefbb93e3ad3dc11f",
           "representation_ids": [
-            "pt:url:3f6cefbb93e3ad3dc11f#url:pt:081feb02267d"
+            "pt:url:3f6cefbb93e3ad3dc11f#local:pt:8082529c09ed",
+            "pt:url:3f6cefbb93e3ad3dc11f#url:pt:081feb02267d",
+            "pt:url:3f6cefbb93e3ad3dc11f#url:pt:724edfce6ab9",
+            "pt:url:3f6cefbb93e3ad3dc11f#url:pt:ccdcf066d349"
           ]
         },
         {
@@ -3833,24 +3981,42 @@
             "[Decree-Law 41/2023, AIMA and amendment trail](https://diariodarepublica.pt/dr/detalhe/decreto-lei/41-2023-213881448)",
             "`immigration_and_authority_amending_legislation`",
             "`related_source`",
-            "Accepted external reference (narrow scope)",
-            "Establishes AIMA and changes institutional responsibility, including the EU-family card route. Reconcile its commencement and provisions with the original Law 37/2006 and later organizational acts."
+            "Accepted native primary-act PDF and narrow official reference",
+            "Actual source file: [official 87-page Gazette PDF](../documents/legislation/pt-07-decree-law-41-2023-official-gazette-2023-06-02.pdf), SHA-256 `a1574c42ad79526f888881706e0f8ffdd93b9ac56b19dbefbc0dd8a3044942b4`, 7,758,812 bytes; retained byte-for-byte without conversion. Article 25 amends Law 37/2006 Articles 14–17, 29 and 30; DRE gives its effective date as 2023-10-29. The changed clauses match the current DRE consolidation selector 2026-08-24. Attribute to Diário da República/INCM; no standalone Creative Commons licence or database/bulk permission is claimed. Later institutional changes and operational routes remain open."
           ],
           "category": "catalogue",
           "source_identity_id": "pt:url:3f6cefbb93e3ad3dc11f",
           "representation_ids": [
-            "pt:url:3f6cefbb93e3ad3dc11f#url:pt:081feb02267d"
+            "pt:url:3f6cefbb93e3ad3dc11f#local:pt:8082529c09ed",
+            "pt:url:3f6cefbb93e3ad3dc11f#url:pt:081feb02267d",
+            "pt:url:3f6cefbb93e3ad3dc11f#url:pt:724edfce6ab9",
+            "pt:url:3f6cefbb93e3ad3dc11f#url:pt:ccdcf066d349"
           ]
         }
       ],
       "acceptance_references": [
         {
           "path": "references/source-acceptance.json",
+          "json_pointer": "/accepted_local_copy_reviews/1",
+          "category": "acceptance",
+          "source_identity_id": "pt:url:3f6cefbb93e3ad3dc11f",
+          "representation_ids": [
+            "pt:url:3f6cefbb93e3ad3dc11f#local:pt:8082529c09ed",
+            "pt:url:3f6cefbb93e3ad3dc11f#url:pt:081feb02267d",
+            "pt:url:3f6cefbb93e3ad3dc11f#url:pt:724edfce6ab9",
+            "pt:url:3f6cefbb93e3ad3dc11f#url:pt:ccdcf066d349"
+          ]
+        },
+        {
+          "path": "references/source-acceptance.json",
           "json_pointer": "/external_reference_decisions/23",
           "category": "acceptance",
           "source_identity_id": "pt:url:3f6cefbb93e3ad3dc11f",
           "representation_ids": [
-            "pt:url:3f6cefbb93e3ad3dc11f#url:pt:081feb02267d"
+            "pt:url:3f6cefbb93e3ad3dc11f#local:pt:8082529c09ed",
+            "pt:url:3f6cefbb93e3ad3dc11f#url:pt:081feb02267d",
+            "pt:url:3f6cefbb93e3ad3dc11f#url:pt:724edfce6ab9",
+            "pt:url:3f6cefbb93e3ad3dc11f#url:pt:ccdcf066d349"
           ]
         }
       ],

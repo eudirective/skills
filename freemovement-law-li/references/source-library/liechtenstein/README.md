@@ -22,5 +22,11 @@ The 40-lead inventory now records 19 accepted references, one duplicate disposit
 
 See the [reviewed source list](references/source-list.md), [source register](references/source-register.json), [acceptance record](references/source-acceptance.json), and [sustainability assessment](references/sustainability-assessment.md).
 
+## Topic coverage and dependencies (31 October 2026)
+
+The [coverage register](references/coverage-register.md) and [machine-readable coverage model](references/coverage-model.json) apply the owner-approved EEA scope map v1.0.0 to the six core review pathways. The [dependency register](references/source-dependencies.json) tracks measure-specific EEA incorporation, Liechtenstein's special movement-of-persons solution, Schengen, the Swiss route and data-protection law. All six pathways remain incomplete; zero topics are accepted and country review is incomplete.
+
+The retained JCD 191/1999 copy contains its own conditional-entry and time-limited adaptation language; this register does not treat it alone as proof of today's quota or residence rules. Accepted local legal texts are distinct from source-register URLs, locator notes and dynamic public forms.
+
 
 The Legalize-li crosswalk added the official EWR-RegV (LR 170.511) locator and an authored source note. Legalize-li's `LGBl-2020-465.md` is recorded only as an individually retrieved candidate snapshot; it is not accepted statutory text. Source attribution and German conversion rules are documented in the source list. Counts remain 11 accepted local legal-text copies, 11 link-only references, 0 accepted topics, and an incomplete country review.

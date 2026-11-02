@@ -60,7 +60,7 @@ Canonical rows: **22**; provisional unique IDs: **22**; unresolved entries: **0*
 | `li-16` | `li:url:64ab8873b629b94a10cf` | resolved | local_artifact/de/2026-10-19 (`documents/legislation/li-informationsweiterverwendungsgesetz-iwg.md`)<br>local_artifact/unspecified/undated (`documents/legislation/li-informationsweiterverwendungsgesetz-iwg.md`)<br>official_reference/de/2026-10-19 | accepted_external_reference, accepted_local_copy | — |
 | `li-17` | `li:url:7730ced76112dc359fca` | resolved | official_reference/de/2026-10-25<br>official_reference/de/undated | accepted_external_reference | — |
 | `li-27` | `li:url:fbe29e057e1fa2c75bc8` | resolved | official_reference/de/undated<br>official_reference/de/2026-10-29<br>official_reference/en/undated<br>official_reference/en/2026-10-29 | accepted_external_reference | — |
-| `li-30` | `li:url:4e497580941990f0eab9` | resolved | official_reference/de/undated | accepted_external_reference | — |
+| `li-30` | `li:url:4e497580941990f0eab9` | resolved | official_reference/de/undated<br>official_reference/de/2026-10-29 | accepted_external_reference | — |
 | `li-32` | `li:url:b21a17407b55b85a3eaf` | resolved | official_reference/de/2026-10-25<br>official_reference/de/undated | accepted_external_reference | — |
 | `li-36` | `li:url:c4f46f61523b491732e3` | resolved | official_reference/de/2026-10-25<br>official_reference/de/undated | accepted_external_reference | — |
 | `li-37` | `li:url:0b5a3d91ae58853a10ea` | resolved | official_reference/de/undated<br>official_reference/de/2026-10-25 | accepted_external_reference | — |

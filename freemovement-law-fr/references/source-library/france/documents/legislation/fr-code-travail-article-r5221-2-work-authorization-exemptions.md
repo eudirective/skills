@@ -1,0 +1,71 @@
+# Code du travail, Article R5221-2 — retained official text
+
+**Publisher:** Direction de l’information légale et administrative (DILA), Légifrance.
+
+**Code identifier:** `LEGITEXT000006072050`  
+**Scope retained:** Article R5221-2, all 22 enumerated exemptions from the work authorisation required under Article R5221-1.  
+**Official version observed:** The current Légifrance article display checked 2026-10-31 says the provision has been in force since 2026-10-30 and was modified by Decree No. 2026-1001 of 2026-10-26, Article 13.
+
+**Official article locator (provenance/version check only):** https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000055027103  
+**Official chapter locator:** https://www.legifrance.gouv.fr/codes/id/LEGISCTA000018525800/  
+**Official Gazette amendment:** [Decree No. 2026-1001, Article 13](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000055023061).
+
+**Retrieval and comparison:** The pinned Legalize France file `fr/LEGITEXT000006072050.md` at commit `e38417fd7b982b2df02fbe01f2960127a7bf9031` was a retrieval input only. Its represented R5221-2 text stops at item 20 and includes repeated/historical variants. The current full article body below was compared directly with Légifrance's consolidated article display; items 21 and 22 are present in the official text. Article 13 of Decree No. 2026-1001 inserts item 22, and the decree's entry-into-force rule together with the official article display gives 2026-10-30 as its effective date. The dated comparison capture and the bounded search records are indexed in Monitor local-only storage; their paths and hashes are recorded in the source acceptance register.
+
+**Reuse:** DILA/Légifrance legal text reused with attribution under Licence Ouverte / Open Licence 2.0. Attribute DILA/Légifrance and the version/update date actually used; do not imply government endorsement. Legalize's MIT licence applies to its software, not statutory wording.
+
+**Limits:** This is one article, not the Code du travail or a complete work-authorisation process. The exemption list is retained only as a route-specific anchor for the conditional N04/P04 review of a registered French work-authorisation decision. It does not establish a broader employment-access topic, an applicant's route, or whether an exemption applies to a particular person. Verify connected CESEDA provisions and any decision-specific review path separately. The full Legalize candidate remains unaccepted and no whole-code completeness or currentness claim is made. Check the official article page for later versions before date-sensitive use.
+
+The locator links above are provenance and version metadata, not source documents. The French statutory text is retained below.
+
+## Official text
+
+##### Article R5221-2
+
+**Note officielle de version:** En vigueur depuis le 30 octobre 2026. Modifié par le décret n° 2026-1001 du 26 octobre 2026, article 13.
+
+Sont dispensés de l'autorisation de travail prévue à l'article R. 5221-1 :
+
+1° Les ressortissants des Etats membres de l'Union européenne, des autres Etats parties à l'accord sur l'Espace économique européen et de la Confédération suisse, dans les conditions prévues aux articles L. 233-1 et L. 233-4 du code de l'entrée et du séjour des étrangers et du droit d'asile, ainsi que les membres de leur famille titulaires d'une carte de séjour portant la mention "membre de la famille d'un citoyen de l'Union", en application de l'article L. 233-5 du même code ;
+
+2° Le salarié, détaché dans les conditions prévues aux articles L. 1262-1 et L. 1262-2 du présent code et travaillant de façon régulière et habituelle pour le compte d'un employeur établi sur le territoire d'un Etat membre de l'Union européenne, d'un autre Etat partie à l'accord sur l'Espace économique européen ou de la Confédération suisse ;
+
+3° Le titulaire de la carte de résident mentionnée à l'article L. 414-10 du code de l'entrée et du séjour des étrangers et du droit d'asile ;
+
+4° Le titulaire de la carte de séjour temporaire ou pluriannuelle portant la mention "vie privée et familiale", délivrée en application des articles L. 423-1, L. 423-2, L. 423-7, L. 423-13, L. 423-14, L. 423-15, L. 423-21, L. 423-22, L. 423-23, L. 425-1, L. 425-6, L. 425-9, L. 426-5, L. 433-4, L. 433-5 et L. 433-6 du même code ou du visa de long séjour valant titre de séjour mentionné aux 6° et 15° de l'article R. 431-16 du même code ;
+
+5° Le titulaire de la carte de séjour temporaire portant la mention "vie privée et familiale", délivrée en application de l'article L. 426-12 du même code à compter du premier jour de la deuxième année suivant sa délivrance, ou en application de l'article L. 426-13 à condition qu'il séjourne en France depuis au moins un an ;
+
+6° Le titulaire de la carte de séjour pluriannuelle portant la mention "talent" délivrée en application des articles L. 421-9, L. 421-11, L. 421-13-1, L. 421-14, L. 421-15, L. 421-20 et L. 421-21 du même code ou du visa de long séjour valant titre de séjour mentionné au 10° de l'article R. 431-16 du même code ;
+
+7° Le titulaire de la carte de séjour pluriannuelle portant la mention "talent (famille)" délivrée en application des articles L. 421-22 et L. 421-23 du même code ou du visa de long séjour valant titre de séjour mentionné au 10° de l'article R. 431-16 du même code ;
+
+8° Le titulaire de la carte de séjour pluriannuelle portant la mention "salarié détaché ICT" ou "salarié détaché mobile ICT" délivrée respectivement en application des articles L. 421-26 et L. 421-27 du même code ou du visa de long séjour valant titre de séjour mentionné au 11° de l'article R. 431-16 du même code ;
+
+9° Le titulaire de la carte de séjour portant la mention "salarié détaché ICT (famille)" ou "salarié détaché mobile ICT (famille)", délivrée respectivement en application des articles L. 421-28 et L. 421-29 du même code ou du visa de long séjour valant titre de séjour mentionné au 11° de l'article R. 431-16 du même code ;
+
+10° Le titulaire de la carte de séjour temporaire portant la mention "stagiaire ICT (famille)" délivrée en application de l'article L. 421-32 du même code ou du visa de long séjour valant titre de séjour mentionné au 12° de l'article R. 431-16 du même code ;
+
+11° Le titulaire de la carte de séjour temporaire ou pluriannuelle portant la mention "étudiant" ou "étudiant-programme de mobilité", ainsi que lorsqu'il a été admis dans un autre Etat membre de l'Union européenne, le titulaire de la notification de mobilité, délivrées en application des articles L. 422-1, L. 422-2, L. 422-5, L. 422-6 et L. 433-4 du même code ou le visa de long séjour valant titre de séjour portant la mention "étudiant" ou "étudiant-programme de mobilité" mentionné au 13° de l'article R. 431-16 du même code, pour une activité professionnelle salariée accessoire, dans la limite de 60 % de la durée annuelle de travail (964 heures) ;
+
+12° Le titulaire d'une carte de séjour temporaire ou pluriannuelle "étudiant" relevant des articles L. 422-1, L. 422-2, L. 422-5, L. 422-6 et L. 433-4 du même code ou le visa de long séjour valant titre de séjour portant la mention "étudiant" ou "étudiant-programme de mobilité" mentionné au 13° de l'article R. 431-16 du même code qui, dans le cadre de son cursus, a conclu un contrat d'apprentissage validé par le service compétent ;
+
+13° Le titulaire de la carte de séjour temporaire "recherche d'emploi ou création d'entreprise" délivrée en application des articles L. 422-10 et L. 422-14 du même code ou le visa de long séjour valant titre de séjour portant la même mention, mentionné au 14° de l'article R. 431-16 du même code ;
+
+14° Le titulaire de la carte de séjour pluriannuelle portant la mention "bénéficiaire de la protection subsidiaire" ou "membre de la famille d'un bénéficiaire de la protection subsidiaire", délivrée en application des articles L. 424-9 et L. 424-11 du même code ;
+
+15° Le titulaire de la carte de séjour pluriannuelle portant la mention "bénéficiaire du statut d'apatride "ou" membre de la famille d'un bénéficiaire du statut d'apatride" délivrée en application des articles L. 424-18 et L. 424-19 du même code ;
+
+16° Le titulaire d'une autorisation provisoire de séjour ou d'un document provisoire de séjour portant la mention "autorise son titulaire à travailler" ;
+
+17° Le titulaire du visa d'une durée supérieure à trois mois mentionné au 4° de l'article R. 431-16 du même code ;
+
+18° L'étranger, entré en France pour exercer une activité professionnelle salariée pour une durée inférieure ou égale à trois mois, dans les conditions prévues au 1° de l'article L. 5221-2-1 du présent code ;
+
+19° Le praticien étranger répondant aux conditions mentionnées au 2° de l'article L. 5221-2-1 ;
+
+20° Le salarié ressortissant d'un Etat membre de l'Union européenne, pendant la période d'application des mesures transitoires dans les conditions prévues au dernier alinéa de l'article L. 233-4 du code de l'entrée et du séjour des étrangers et du droit d'asile ;
+
+21° Le titulaire d'une carte bleue européenne ou d'une carte de résident de longue durée-UE portant la mention “Ancien titulaire d'une carte bleue européenne”, prévues par les dispositions de la directive (UE) 2021/1883 du Parlement européen et du Conseil du 20 octobre 2021 établissant les conditions d'entrée et de séjour des ressortissants de pays tiers aux fins d'un emploi hautement qualifié et accordées dans un autre Etat membre de l'Union européenne, qui entre en France afin d'y exercer une activité salariée pour une durée maximale de quatre-vingt-dix jours sur toute période de cent quatre-vingts jours ;
+
+22° Le salarié qui, travaillant de façon régulière et habituelle pour le compte d'un employeur établi sur le territoire du Royaume-Uni de Grande-Bretagne et d'Irlande du Nord, est détaché en France dans les conditions prévues au 1° de l'article L. 1262-1, pour une durée maximale de douze mois cumulés, en vue de la fourniture de services contractuels dans les domaines d'activité fixés par un arrêté du ministre chargé de l'immigration et du ministre chargé du travail. Le salarié doit avoir accompli le même type de services en tant que salarié de cet employeur pendant au moins un an immédiatement avant la date de la demande d'entrée sur le territoire français et justifier à cette fin d'une expérience professionnelle d'au moins trois ans dans le secteur d'activité objet du contrat, d'un diplôme universitaire ou d'un titre attestant de connaissances d'un niveau équivalent et des qualifications professionnelles légalement et réglementairement requises pour l'exercice de l'activité considérée.

@@ -1,0 +1,405 @@
+{
+  "schema_version": "1.0.0",
+  "jurisdiction": "LI",
+  "as_of": "2026-10-31",
+  "path_base": "repository_root",
+  "scope_map": {
+    "version": "1.0.0",
+    "approval_status": "owner_approved",
+    "approval_scope": "scope framework only; it does not accept sources, topics, or country completion",
+    "sha256": "8705c0b379adb10143c0a45349f0533c075b29420f4b2848422c3e18d4aa8544"
+  },
+  "coverage_status": "initial_issue_map_with_eea_dependencies_open",
+  "adequately_covered_topic_count": 0,
+  "country_review_complete": false,
+  "required_layers": [
+    "primary_law",
+    "implementing_rules",
+    "procedure_and_practice",
+    "remedies_and_oversight"
+  ],
+  "policy": "Coverage is issue-led and separate from source acceptance. Evidence points to accepted local legal text, official reference notes, or guidance/form notes and labels the representation. An official URL, EWR Register entry, source-reference note, or dynamic form is not by itself retained legal text. A pathway remains incomplete until the applicable EEA measure/adaptation, Liechtenstein publication and effective date, national legal text, route-specific procedure and remedies are mapped. Acceptance of local legal text does not accept a FreeMovement topic.",
+  "topics": [
+    {
+      "topic_id": "P01",
+      "label": "Access blocked before formal lodging",
+      "status": "incomplete",
+      "layers": [
+        {
+          "layer": "primary_law",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": ["li-07", "li-08"],
+              "representation": "accepted local PFZG and PFZV legal-text copies; version/date and Liechtenstein-specific EEA adaptations remain relevant",
+              "local_artifact_paths": [
+                "source-library/liechtenstein/documents/legislation/li-personenfreizuegigkeitsgesetz-pfzg.md",
+                "source-library/liechtenstein/documents/legislation/li-personenfreizuegigkeitsverordnung-pfzv.md"
+              ]
+            },
+            {
+              "source_ids": ["li-05", "li-06"],
+              "representation": "accepted local EEA decision text and national EEA implementation/publication law; current JCD 191/1999 effect is not established by the historical decision alone",
+              "local_artifact_paths": [
+                "source-library/liechtenstein/documents/treaties/li-eea-joint-committee-decision-191-1999.md",
+                "source-library/liechtenstein/documents/legislation/li-gesetz-umsetzung-kundmachung-ewr-rechtsvorschriften.md"
+              ]
+            }
+          ],
+          "open_gap": "No complete provision map identifies formal lodging, appointment prerequisites, refusal to accept an application, responsible authority, or the current EEA special-solution conditions. JCD 191/1999 contains conditional and transitional wording; its current status and later amendments need confirmation from the Liechtenstein Gazette/EWR Register."
+        },
+        {
+          "layer": "implementing_rules",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": ["li-08", "li-10", "li-11"],
+              "representation": "accepted local PFZV, ZAV and VEV legal-text copies, with distinct EEA/Swiss, third-country and Schengen roles",
+              "local_artifact_paths": [
+                "source-library/liechtenstein/documents/legislation/li-personenfreizuegigkeitsverordnung-pfzv.md",
+                "source-library/liechtenstein/documents/legislation/li-verordnung-zulassung-aufenthalt-auslaender-zav.md",
+                "source-library/liechtenstein/documents/legislation/li-verordnung-einreise-visumerteilung-vev.md"
+              ]
+            }
+          ],
+          "open_gap": "Reconcile the current PFZV text with the EWR Register and Gazette, map any route-specific entry/lodging rules, and distinguish EEA/Swiss permits from third-country and Schengen visa rules."
+        },
+        {
+          "layer": "procedure_and_practice",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": ["li-27", "li-30"],
+              "representation": "official first-step online family-reunification form map and visa/representation guidance note; later form screens are not verified",
+              "local_artifact_paths": [
+                "source-library/liechtenstein/documents/forms/li-27-family-reunification-online-form.md",
+                "source-library/liechtenstein/documents/guidance/li-30-visa-guidance-and-representation.md"
+              ]
+            }
+          ],
+          "open_gap": "The form note maps only the verified initial step. Current appointment, territorial responsibility, submission method, required evidence, accessibility, accommodation and service-provider steps remain unverified."
+        },
+        {
+          "layer": "remedies_and_oversight",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": ["li-14", "li-32", "li-40"],
+              "representation": "accepted local general administrative-procedure law plus official court and limited legal-advice reference notes",
+              "local_artifact_paths": [
+                "source-library/liechtenstein/documents/legislation/li-landesverwaltungspflegegesetz-lvg.md",
+                "source-library/liechtenstein/documents/guidance/li-oberster-gerichtshof.md",
+                "source-library/liechtenstein/documents/guidance/li-unentgeltliche-rechtsberatung.md"
+              ]
+            }
+          ],
+          "open_gap": "No decision-specific route connects blocked intake to a reviewable decision, reasons, administrative appeal, court, deadline, urgent relief and legal aid."
+        }
+      ],
+      "open_gap": "Identify the deciding authority and route (EEA, Swiss, ordinary Schengen, or third-country) and distinguish a service/appointment barrier from refusal to accept a formal application."
+    },
+    {
+      "topic_id": "P02",
+      "label": "Digital-only or service-provider access requirement",
+      "status": "incomplete",
+      "layers": [
+        {
+          "layer": "primary_law",
+          "status": "unresolved",
+          "evidence": [],
+          "open_gap": "No mapped statutory provision establishes a digital-only requirement, a duty to offer an alternative, or the legal status of the online form as the exclusive channel."
+        },
+        {
+          "layer": "implementing_rules",
+          "status": "unresolved",
+          "evidence": [],
+          "open_gap": "Accessibility, assisted filing, exceptions, delegation and service-provider rules have not been mapped to a current official text."
+        },
+        {
+          "layer": "procedure_and_practice",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": ["li-27", "li-30"],
+              "representation": "official interactive form and visa-guidance reference notes; form note verifies the initial screen only",
+              "local_artifact_paths": [
+                "source-library/liechtenstein/documents/forms/li-27-family-reunification-online-form.md",
+                "source-library/liechtenstein/documents/guidance/li-30-visa-guidance-and-representation.md"
+              ]
+            }
+          ],
+          "open_gap": "Later form screens, account/identity prerequisites, alternatives, assistance, service providers, and failure-handling are not recorded."
+        },
+        {
+          "layer": "remedies_and_oversight",
+          "status": "unresolved",
+          "evidence": [],
+          "open_gap": "No verified remedy or accommodation route is linked to digital exclusion or a failed online application."
+        }
+      ],
+      "open_gap": "The online form is an operational lead, not proof of a digital-only legal rule or a complete application route."
+    },
+    {
+      "topic_id": "P03",
+      "label": "EU-family proof and ordinary Schengen checklist",
+      "status": "incomplete",
+      "layers": [
+        {
+          "layer": "primary_law",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": ["li-05", "li-06", "li-07"],
+              "representation": "accepted local JCD 191/1999, EEA implementation law and PFZG text; JCD 158/2007/Directive 2004/38 is identified by the official EEA register route but not retained as a Liechtenstein-adapted text here",
+              "local_artifact_paths": [
+                "source-library/liechtenstein/documents/treaties/li-eea-joint-committee-decision-191-1999.md",
+                "source-library/liechtenstein/documents/legislation/li-gesetz-umsetzung-kundmachung-ewr-rechtsvorschriften.md",
+                "source-library/liechtenstein/documents/legislation/li-personenfreizuegigkeitsgesetz-pfzg.md"
+              ]
+            },
+            {
+              "source_ids": ["li-13"],
+              "representation": "accepted EFTA-hosted Swiss/Liechtenstein protocol copy; its present legal status was not independently established",
+              "local_artifact_paths": ["source-library/liechtenstein/documents/treaties/li-switzerland-free-movement-protocol.md"]
+            }
+          ],
+          "open_gap": "PFZG Article 1 identifies Directive 2004/38, the special EEA solution and a Swiss framework; map the EEA adaptation, current special conditions, family/partner/other-beneficiary categories and current protocol status. Do not infer identical EU, EEA and Swiss regimes."
+        },
+        {
+          "layer": "implementing_rules",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": ["li-08", "li-09", "li-10", "li-11"],
+              "representation": "accepted local PFZV, AuG, ZAV and VEV texts; their routes and source versions differ",
+              "local_artifact_paths": [
+                "source-library/liechtenstein/documents/legislation/li-personenfreizuegigkeitsverordnung-pfzv.md",
+                "source-library/liechtenstein/documents/legislation/li-auslaendergesetz-aug.md",
+                "source-library/liechtenstein/documents/legislation/li-verordnung-zulassung-aufenthalt-auslaender-zav.md",
+                "source-library/liechtenstein/documents/legislation/li-verordnung-einreise-visumerteilung-vev.md"
+              ]
+            }
+          ],
+          "open_gap": "PFZV's checked consolidation is dated 2024; verify current amendments, Gazettes and EEA adaptations before treating its procedures or documentary list as current."
+        },
+        {
+          "layer": "procedure_and_practice",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": ["li-12", "li-27", "li-30"],
+              "representation": "bilateral visa-framework locator, first-step online form map and official visa/representation guidance; the treaty is not copied and later form screens are unverified",
+              "local_artifact_paths": [
+                "source-library/liechtenstein/documents/treaties/li-liechtenstein-switzerland-visa-residence-framework.md",
+                "source-library/liechtenstein/documents/forms/li-27-family-reunification-online-form.md",
+                "source-library/liechtenstein/documents/guidance/li-30-visa-guidance-and-representation.md"
+              ]
+            }
+          ],
+          "open_gap": "Map civil-status and relationship proof, translation/authentication, family route, representation agreement, exact checklist and competent mission. Separate the ordinary Schengen checklist from EEA-family facilitation."
+        },
+        {
+          "layer": "remedies_and_oversight",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": ["li-14", "li-32", "li-40"],
+              "representation": "accepted general procedure law and official court/legal-advice references",
+              "local_artifact_paths": [
+                "source-library/liechtenstein/documents/legislation/li-landesverwaltungspflegegesetz-lvg.md",
+                "source-library/liechtenstein/documents/guidance/li-oberster-gerichtshof.md",
+                "source-library/liechtenstein/documents/guidance/li-unentgeltliche-rechtsberatung.md"
+              ]
+            }
+          ],
+          "open_gap": "No person/category- and decision-specific review route for denial of a document, visa, residence permit or family-reunification application is complete."
+        }
+      ],
+      "open_gap": "Map EEA-incorporated rights, Liechtenstein's special solution, Schengen short-stay rules, third-country national rules and the separate Swiss route by person category and document type."
+    },
+    {
+      "topic_id": "P04",
+      "label": "Complaint, appeal, or review-path information",
+      "status": "incomplete",
+      "layers": [
+        {
+          "layer": "primary_law",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": ["li-14"],
+              "representation": "accepted local LVG administrative-procedure and appeals text; date and cross-references must be checked against authentic Gazette publication",
+              "local_artifact_paths": ["source-library/liechtenstein/documents/legislation/li-landesverwaltungspflegegesetz-lvg.md"]
+            }
+          ],
+          "open_gap": "The special immigration/EEA and Schengen appeal provisions and their priority over general procedure are not mapped by decision type."
+        },
+        {
+          "layer": "implementing_rules",
+          "status": "unresolved",
+          "evidence": [],
+          "open_gap": "Current service, reasons, notification and appeal-time rules for visa, free-movement, residence and digital-form decisions are not cross-referenced."
+        },
+        {
+          "layer": "procedure_and_practice",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": ["li-32", "li-37", "li-40"],
+              "representation": "official court, data-protection complaint and limited legal-advice service reference notes",
+              "local_artifact_paths": [
+                "source-library/liechtenstein/documents/guidance/li-oberster-gerichtshof.md",
+                "source-library/liechtenstein/documents/guidance/li-datenschutzstelle-beschwerderecht.md",
+                "source-library/liechtenstein/documents/guidance/li-unentgeltliche-rechtsberatung.md"
+              ]
+            }
+          ],
+          "open_gap": "General portals and help pages do not establish standing, authority, stage, deadline, interim effect, or remedy for a particular immigration decision."
+        },
+        {
+          "layer": "remedies_and_oversight",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": ["li-14", "li-32", "li-40"],
+              "representation": "accepted local general procedure statute plus official court and legal-advice references",
+              "local_artifact_paths": [
+                "source-library/liechtenstein/documents/legislation/li-landesverwaltungspflegegesetz-lvg.md",
+                "source-library/liechtenstein/documents/guidance/li-oberster-gerichtshof.md",
+                "source-library/liechtenstein/documents/guidance/li-unentgeltliche-rechtsberatung.md"
+              ]
+            }
+          ],
+          "open_gap": "Build the authority-to-complaint-to-administrative/judicial review path, including reasons, deadlines, urgent relief and legal aid, from current official texts."
+        }
+      ],
+      "open_gap": "No complete decision-specific remedy map is accepted; the LVG and guidance sources do not by themselves establish a route for each immigration, visa, data or EEA decision."
+    },
+    {
+      "topic_id": "P05",
+      "label": "Appointment access and processing clock",
+      "status": "incomplete",
+      "layers": [
+        {
+          "layer": "primary_law",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": ["li-08", "li-10", "li-11"],
+              "representation": "accepted legal texts contain residence/visa application procedures but are not mapped to a complete clock",
+              "local_artifact_paths": [
+                "source-library/liechtenstein/documents/legislation/li-personenfreizuegigkeitsverordnung-pfzv.md",
+                "source-library/liechtenstein/documents/legislation/li-verordnung-zulassung-aufenthalt-auslaender-zav.md",
+                "source-library/liechtenstein/documents/legislation/li-verordnung-einreise-visumerteilung-vev.md"
+              ]
+            }
+          ],
+          "open_gap": "No route-specific map identifies the legally relevant filing/receipt event, deadline, suspension, extension or decision period."
+        },
+        {
+          "layer": "implementing_rules",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": ["li-08", "li-10", "li-11"],
+              "representation": "accepted PFZV, ZAV and VEV legal-text copies with different applicant and route scopes",
+              "local_artifact_paths": [
+                "source-library/liechtenstein/documents/legislation/li-personenfreizuegigkeitsverordnung-pfzv.md",
+                "source-library/liechtenstein/documents/legislation/li-verordnung-zulassung-aufenthalt-auslaender-zav.md",
+                "source-library/liechtenstein/documents/legislation/li-verordnung-einreise-visumerteilung-vev.md"
+              ]
+            }
+          ],
+          "open_gap": "Check exact current deadlines and filing triggers against authentic Gazette measures and any EEA/Schengen adaptations."
+        },
+        {
+          "layer": "procedure_and_practice",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": ["li-27", "li-30"],
+              "representation": "official first-step family-reunification form map and visa/representation guidance note",
+              "local_artifact_paths": [
+                "source-library/liechtenstein/documents/forms/li-27-family-reunification-online-form.md",
+                "source-library/liechtenstein/documents/guidance/li-30-visa-guidance-and-representation.md"
+              ]
+            }
+          ],
+          "open_gap": "Appointment availability, current processing-time service, mission/provider routing and actual application clock trigger remain unverified."
+        },
+        {
+          "layer": "remedies_and_oversight",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": ["li-14", "li-32"],
+              "representation": "general administrative procedure text and court reference note",
+              "local_artifact_paths": [
+                "source-library/liechtenstein/documents/legislation/li-landesverwaltungspflegegesetz-lvg.md",
+                "source-library/liechtenstein/documents/guidance/li-oberster-gerichtshof.md"
+              ]
+            }
+          ],
+          "open_gap": "No appointment-delay or overdue-decision remedy has been connected to the trigger and route for a specific application."
+        }
+      ],
+      "open_gap": "Separate appointment delay from a legal decision clock; establish the event that starts and pauses each period and the available remedy."
+    },
+    {
+      "topic_id": "P06",
+      "label": "Personal-data access, minimisation, and separate preservation request",
+      "status": "incomplete",
+      "layers": [
+        {
+          "layer": "primary_law",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": ["li-15"],
+              "representation": "accepted local public-information law, distinct from personal-data rights; GDPR is separately incorporated in the EEA",
+              "local_artifact_paths": ["source-library/liechtenstein/documents/legislation/li-informationsgesetz.md"]
+            }
+          ],
+          "open_gap": "The source pack identifies the separate Data Protection Act as an open source gap; no local copy or article map states the controller-specific access, correction, restriction, retention or exception rules."
+        },
+        {
+          "layer": "implementing_rules",
+          "status": "unresolved",
+          "evidence": [],
+          "open_gap": "GDPR/JCD 154/2018 is identified at EEA level, but local data-protection implementation and any immigration or law-enforcement processing regime are not retained or mapped."
+        },
+        {
+          "layer": "procedure_and_practice",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": ["li-36", "li-37"],
+              "representation": "official Data Protection Office and complaint guidance reference notes; no Data Protection Act or data-request procedure text is retained",
+              "local_artifact_paths": [
+                "source-library/liechtenstein/documents/guidance/li-datenschutzstelle.md",
+                "source-library/liechtenstein/documents/guidance/li-datenschutzstelle-beschwerderecht.md"
+              ]
+            }
+          ],
+          "open_gap": "Identify controller, purpose, data store, request channel, response time, form, preservation option and applicable exception for each relevant immigration system."
+        },
+        {
+          "layer": "remedies_and_oversight",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": ["li-14", "li-37"],
+              "representation": "accepted local general procedure law and official DPA complaint-route guidance note",
+              "local_artifact_paths": [
+                "source-library/liechtenstein/documents/legislation/li-landesverwaltungspflegegesetz-lvg.md",
+                "source-library/liechtenstein/documents/guidance/li-datenschutzstelle-beschwerderecht.md"
+              ]
+            }
+          ],
+          "open_gap": "No current source-backed path maps complaint, response deadline, supervisory review and court challenge for a specific data-access decision."
+        }
+      ],
+      "open_gap": "Keep public-information access, public-sector information reuse, administrative-file access and GDPR personal-data rights separate. The IWG is a reuse statute, not an access right."
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 {
   "schema_version": "1.4.0",
   "jurisdiction": "PT",
-  "as_of": "2026-10-29",
-  "accepted_source_count": 3,
+  "as_of": "2026-10-31",
+  "accepted_source_count": 5,
   "accepted_current_law_source_count": 0,
   "accepted_derived_text_count": 3,
   "accepted_topic_count": 0,
@@ -1236,7 +1236,7 @@
       "review_scope": "Confirm parent-page links, service authority, municipality/AIMA division, current forms, appointment and submission channels, and effective dates."
     }
   ],
-  "count_note": "66 official external-reference decisions cover links within scope; they do not count as accepted topics or country completion. Three dated derived text copies are retained: full visible DRE consolidated texts for Lei 37/2006, Lei 143/2015 and the Civil Registration Code, each with the publisher’s no-legal-value caveat. Three Gov.pt pages are not relied upon for current procedure. Four unresolved AIMA routes remain under a whole-site human-review offer.",
+  "count_note": "Five accepted local artifacts comprise two native official primary-act Gazette PDFs (Lei 37/2006 original and Decreto-Lei 41/2023 amending act) and three dated derived DRE consolidated-text copies. The PDFs are authentic act publications, not a consolidated current text; the three DRE consolidations remain non-authoritative working copies. URLs are provenance/version metadata, not source documents. No topic is accepted. Sixty-six official external-reference decisions remain narrow link/reference decisions; three Gov.pt pages are not relied upon for current procedure; four AIMA routes remain under whole-site human review.",
   "not_relied_upon_reference_count": 3,
   "not_relied_upon_references": [
     {
@@ -1354,7 +1354,10 @@
     "pt-05": {
       "source_identity_id": "pt:url:422df2c3e9341aa7c93e",
       "representation_ids": [
-        "pt:url:422df2c3e9341aa7c93e#url:pt:2e45bf74d9c7"
+        "pt:url:422df2c3e9341aa7c93e#local:pt:7c1e70e855cd",
+        "pt:url:422df2c3e9341aa7c93e#url:pt:235c06dd7e55",
+        "pt:url:422df2c3e9341aa7c93e#url:pt:2e45bf74d9c7",
+        "pt:url:422df2c3e9341aa7c93e#url:pt:6bc0816fdb49"
       ],
       "identity_resolution_status": "resolved"
     },
@@ -1382,7 +1385,10 @@
     "pt-07": {
       "source_identity_id": "pt:url:3f6cefbb93e3ad3dc11f",
       "representation_ids": [
-        "pt:url:3f6cefbb93e3ad3dc11f#url:pt:081feb02267d"
+        "pt:url:3f6cefbb93e3ad3dc11f#local:pt:8082529c09ed",
+        "pt:url:3f6cefbb93e3ad3dc11f#url:pt:081feb02267d",
+        "pt:url:3f6cefbb93e3ad3dc11f#url:pt:724edfce6ab9",
+        "pt:url:3f6cefbb93e3ad3dc11f#url:pt:ccdcf066d349"
       ],
       "identity_resolution_status": "resolved"
     },
@@ -1820,5 +1826,54 @@
       "identity_resolution_status": "resolved"
     }
   },
-  "identity_link_schema_version": 1
+  "identity_link_schema_version": 1,
+  "accepted_primary_act_artifact_count": 2,
+  "accepted_local_copy_reviews": [
+    {
+      "source_id": "pt-05",
+      "decision": "accepted",
+      "local_path": "documents/legislation/pt-05-law-37-2006-official-gazette-2006-08-09.pdf",
+      "review_date": "2026-10-31",
+      "official_url": "https://files.diariodarepublica.pt/1s/2006/08/15300/57175724.pdf",
+      "evidence": {
+        "publisher_identity": "The official DRE record names Lei n.º 37/2006, the Assembleia da República, and publication in Diário da República n.º 153/2006, Série I, on 2006-08-09. The PDF header matches the issue and act.",
+        "version_currentness": "This is the authentic original enactment, not a consolidated current text. DRE currently marks the law in force and displays a consolidated selector dated 2026-08-24; Article 25 of Decreto-Lei n.º 41/2023 later amended Articles 14–17, 29 and 30 from 2023-10-29.",
+        "extraction_completeness": "The official Gazette PDF contains 8 pages and the law through Articles 1–34. Browser PDF text extraction confirms the full Article 1, including both paragraphs, on printed page 5717. The downloaded bytes match a second direct retrieval from the official PDF URL: SHA-256 e327ca4c5974dbb5151a4af4b51ac760fa2bc948be65f03eed6f5c845b79884d; 137363 bytes. The native PDF is retained without conversion; no visual inspection is claimed.",
+        "attachments": "The published law is contained in the retained 8-page PDF; no separate attachment is identified.",
+        "legal_classification": "Original promulgated primary legislation. This original edition alone does not express later amendments.",
+        "reuse_basis": "Attribution is to Diário da República / INCM and the Portuguese Republic. The existing Portugal rights screen relies on the statutory treatment of official legal texts; no standalone Creative Commons licence is claimed, and no database or bulk-extraction permission is inferred."
+      },
+      "scope_limit": "Authentic original text of Lei n.º 37/2006 only. Read with the separately retained amending act and the explicitly non-authoritative dated DRE consolidation when the operative wording is needed.",
+      "language": "pt",
+      "sha256": "e327ca4c5974dbb5151a4af4b51ac760fa2bc948be65f03eed6f5c845b79884d",
+      "bytes": 137363,
+      "media_type": "application/pdf",
+      "edition": "2006-08-09",
+      "page_count": 8,
+      "official_issue_page_range": "Diário da República n.º 153/2006, Série I, pp. 5717–5724"
+    },
+    {
+      "source_id": "pt-07",
+      "decision": "accepted",
+      "local_path": "documents/legislation/pt-07-decree-law-41-2023-official-gazette-2023-06-02.pdf",
+      "review_date": "2026-10-31",
+      "official_url": "https://files.diariodarepublica.pt/1s/2023/06/10700/0002000106.pdf",
+      "evidence": {
+        "publisher_identity": "The official DRE record names Decreto-Lei n.º 41/2023, the Presidência do Conselho de Ministros, and publication in Diário da República n.º 107/2023, Série I, on 2023-06-02. The retained official PDF header identifies the same issue and act.",
+        "version_currentness": "DRE marks the act in force. Its Article 49 sets entry into force on 2023-10-29, subject to Article 50. The retained full act includes Article 25, which amends Lei n.º 37/2006 Articles 14–17, 29 and 30.",
+        "extraction_completeness": "The official publication PDF contains 87 pages. Browser PDF text extraction reviewed Article 25 on PDF pages 17–19 / printed pages 37–39 and the commencement provision on printed page 97. Its changed clauses for Articles 14(3), 15(1)–(2), 16(1)–(2), 17(1)–(2), 29(1)–(3), and 30(5)–(6) match the corresponding wording in DRE’s current Lei 37/2006 consolidation. Unchanged portions are represented as [...] in the amending act and were not inferred from that excerpt. Downloaded bytes match a second direct retrieval from the official PDF URL: SHA-256 a1574c42ad79526f888881706e0f8ffdd93b9ac56b19dbefbc0dd8a3044942b4; 7758812 bytes. The native PDF is retained without conversion; no visual inspection is claimed.",
+        "attachments": "The full 87-page published act and its AIMA organic annex are in the retained PDF; no separate attachment is identified.",
+        "legal_classification": "Promulgated primary amending legislation. Article 25 is a partial amendment excerpt within the complete act, not a new standalone consolidated text.",
+        "reuse_basis": "Attribution is to Diário da República / INCM and the Portuguese Republic. The existing Portugal rights screen relies on the statutory treatment of official legal texts; no standalone Creative Commons licence is claimed, and no database or bulk-extraction permission is inferred."
+      },
+      "scope_limit": "Accepted as the complete official Decreto-Lei n.º 41/2023 publication artifact; the checked relationship to Lei n.º 37/2006 is limited to Article 25. Later organizational acts and operational service routes require separate review.",
+      "language": "pt",
+      "sha256": "a1574c42ad79526f888881706e0f8ffdd93b9ac56b19dbefbc0dd8a3044942b4",
+      "bytes": 7758812,
+      "media_type": "application/pdf",
+      "edition": "2023-06-02",
+      "page_count": 87,
+      "official_issue_page_range": "Diário da República n.º 107/2023, Série I, pp. 20–106"
+    }
+  ]
 }

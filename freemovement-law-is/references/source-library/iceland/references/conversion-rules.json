@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0.0",
+  "jurisdiction": "IS",
+  "conversion_id": "iceland-reglugerdasafn-html-to-markdown-v1",
+  "status": "accepted_for_listed_instruments",
+  "review_date": "2026-10-31",
+  "applies_to": [
+    {
+      "source_id": "is-30",
+      "url": "https://www.reglugerd.is/reglugerdir/allar/nr/0669-2026",
+      "official_instrument": "669/2026",
+      "captured_html": "captures/reglugerd.is/iceland/reglugerd-2026-10-31/is-30-669-2026.html",
+      "captured_html_sha256": "1879f030aa8ffed02c992cbe7e503c479d533f2b80c93d8c49eec62ff3903ada",
+      "local_text": "documents/legislation/is-30-669-2026-amendment.md"
+    },
+    {
+      "source_id": "is-31",
+      "url": "https://www.reglugerd.is/reglugerdir/eftir-raduneytum/dmr/nr/25017",
+      "official_instrument": "724/2026",
+      "captured_html": "captures/reglugerd.is/iceland/reglugerd-2026-10-31/is-31-724-2026.html",
+      "captured_html_sha256": "8f9a59024b0eaf0c21097de47f3d4b9b9b00ce3322acc90fa26a742bf0992254",
+      "local_text": "documents/legislation/is-31-724-2026-amendment.md"
+    },
+    {
+      "source_id": "is-32",
+      "url": "https://www.reglugerd.is/reglugerdir/eftir-raduneytum/dmr/nr/25018",
+      "official_instrument": "725/2026",
+      "captured_html": "captures/reglugerd.is/iceland/reglugerd-2026-10-31/is-32-725-2026.html",
+      "captured_html_sha256": "bec07705789b91b1ad9c51b58410cec932a6e5043b3f933ce6fef62a4874d62e",
+      "local_text": "documents/legislation/is-32-725-2026-amendment.md"
+    }
+  ],
+  "retrieval": {
+    "method": "Direct retrieval from the official Icelandic Ministry of Justice Reglugerðasafn instrument pages; exact response bytes are retained in the Monitor local research archive at the paths above.",
+    "retained_source": "Official Icelandic legal text in full, not a link-only source and not an independently authored summary.",
+    "copyright_basis": {
+      "law": "Copyright Act No. 73/1972",
+      "article": "9",
+      "official_url": "https://www.althingi.is/lagas/nuna/1972073.html",
+      "scope": "Article 9 excludes laws, regulations, government instructions, judgments and similar official documents, including official translations, from protection under the Act. This conversion applies that rule only to the official legal text; it does not assert reuse rights for the publisher website, interface, database, or unrelated content."
+    }
+  },
+  "conversion": {
+    "script": "scripts/convert_reglugerd_html.py",
+    "method": "Python standard-library HTMLParser builds a DOM-like tree and selects the official .boxbody. It records the source instrument number, then converts the title, article headings, paragraphs, ordered lists and signature paragraphs in document order.",
+    "preserved": [
+      "All Icelandic words, punctuation, numerals and paragraph order in the published instrument text.",
+      "Article headings and the title as headings.",
+      "Emphasis and strong emphasis as Markdown emphasis.",
+      "Ordered-list markers as shown by the source HTML list-style type and start attributes, including lower-alpha markers.",
+      "Signature date, signatory names and Gazette publication date.",
+      "Source URL, publisher attribution, publication date, retrieval date, legal-text reuse basis, source-byte SHA-256 and text status in a clearly separate provenance header."
+    ],
+    "normalization": [
+      "HTML character references are decoded to Unicode.",
+      "Runs of layout whitespace inside a text line are collapsed to one space; leading and trailing layout whitespace is removed.",
+      "HTML paragraph and heading boundaries become Markdown block boundaries; br elements become line breaks.",
+      "Source page navigation, record metadata chrome, related-instrument links, PDF download links, scripts, print controls and footer boilerplate are excluded."
+    ],
+    "not_performed": [
+      "No translation, paraphrase, substantive correction, or amendment integration into Regulation 540/2017.",
+      "No claim that these three amendment instruments constitute a current consolidated Regulation 540/2017."
+    ],
+    "replay": "Run the script with each source id and its archived captured HTML; generated text must match the committed Markdown byte-for-byte apart from the unchanged checked_at value."
+  },
+  "known_limitations": [
+    "These are three specific 2026 amendment instruments. Older amendments and a current full consolidation of Regulation 540/2017 have not been locally reproduced here.",
+    "The underlying captured HTML is stored in the Monitor local-only research archive, not copied into this source pack. The source pack retains the complete legal text and hashes both captured HTML and converted Markdown in source-acceptance.json.",
+    "The source page displays both an instrument date and a Gazette publication date; each is preserved as shown where available. The distinction is not silently harmonized."
+  ]
+}

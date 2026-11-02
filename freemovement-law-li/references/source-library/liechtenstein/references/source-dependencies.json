@@ -1,0 +1,221 @@
+{
+  "schema_version": "1.0.0",
+  "jurisdiction": "LI",
+  "as_of": "2026-10-31",
+  "path_base": "repository_root",
+  "scope_map_version": "1.0.0",
+  "review_status": "initial_dependency_map; current_measure_and_route_mapping_open",
+  "policy": "External URLs are official-authority locators only; retained legal texts are identified by local artifact paths and the source-acceptance record. For Liechtenstein, verify each EU act's EEA Joint Committee Decision, specific adaptations, constitutional approval, Gazette promulgation and entry into force. Keep the EEA special movement solution, Schengen acquis and Swiss/EFTA route distinct.",
+  "unresolved_dependency_checks": [
+    "Use LR 170.51, the current Liechtenstein EWR Register and signed State Law Gazette to establish the exact JCD, national publication, adaptations and entry-into-force state for each measure; the accepted li-04 and li-41 records are locators, not a complete retained register or regulation text.",
+    "Reconcile JCD 191/1999's conditional-entry and transitional wording with later EEA enlargement/special-solution decisions and current Gazette entries before relying on quotas, permit availability or residence conditions.",
+    "Map Directive 2004/38/JCD 158/2007 together with Liechtenstein-specific sectoral adaptations, PFZG/PFZV, relevant person categories and procedural/remedy rules.",
+    "Recheck the official EEA-Lex status of Regulation (EU) 2025/1208. On 31 October 2026 it is listed with a draft JCD under consideration for Iceland, Liechtenstein and Norway; do not treat the EU compliance/application date as Liechtenstein EEA law.",
+    "For GDPR/JCD 154/2018, locate and verify Liechtenstein's Data Protection Act and implementation, controller, purpose, processing regime, exceptions, response periods, retention and remedies for each relevant immigration system.",
+    "Map the current Schengen Visa Code and other applicable Schengen/Dublin acquis against VEV, the specific Swiss/foreign representation agreements and the actual mission route; these are not EEA-incorporation measures.",
+    "Verify current legal status and implementation of the EFTA Annex K protocol and the Liechtenstein–Switzerland framework treaty; PFZG's Swiss category does not establish that every Swiss provision is identical to the EEA route.",
+    "Verify the current PFZV and LVG against authentic Gazette history; PFZV's accepted local copy is based on a 2024 consolidation and LVG's captured frame is not a confirmed current consolidated date.",
+    "Identify the exact UDI/Migration and Passport Office family form version and later screens, mission-specific proof requirements, appointment route, filing trigger and remedy before using dynamic guidance as procedure evidence."
+  ],
+  "e01_disposition": "conditional_for_Liechtenstein_as_an_EEA_EFTA_state; every EU measure requires the identified EEA JCD/adaptation, Liechtenstein constitutional approval where required, Gazette promulgation, entry into force and applicable national implementation. The special Liechtenstein movement solution must also be checked. This does not accept any source or pathway.",
+  "dependencies": [
+    {
+      "dependency_id": "LI-EEA-INCORPORATION-PUBLICATION-REGISTER",
+      "instrument": "EEA Agreement, applicable Annexes and Joint Committee Decisions; LR 170.51 and EWR Register / EWR-RegV publication framework",
+      "route": "EEA-EFTA incorporation and Liechtenstein publication/effective-date verification",
+      "linked_pathways": ["P01", "P03", "P04", "P05", "P06"],
+      "local_source_ids": ["li-04", "li-05", "li-06", "li-41"],
+      "local_artifact_paths": [
+        "source-library/liechtenstein/documents/treaties/li-eea-joint-committee-decision-191-1999.md",
+        "source-library/liechtenstein/documents/legislation/li-gesetz-umsetzung-kundmachung-ewr-rechtsvorschriften.md",
+        "source-library/liechtenstein/documents/legislation/li-41-ewr-register-regulation.md"
+      ],
+      "official_authority_locators": [
+        "https://www.llv.li/en/business/register-cadastre/eea-registry",
+        "https://www.efta.int/about-efta/legal-documents/eea-legal-texts",
+        "https://www.efta.int/eealaw"
+      ],
+      "relationship": "LR 170.51 Article 4 ties applicable EEA legal rules to the Agreement and the promulgation of JCDs in the Liechtenstein Gazette; Article 5 provides for an electronic EWR Register. Liechtenstein Parliament approval and a national publication/effective-date check can be necessary. li-04 is an external register locator, and li-41 is a note for EWR-RegV, not its full text.",
+      "status": "national incorporation/publication framework retained; current register snapshot and measure-specific JCD/Gazette chronology not captured",
+      "retained_current_register_snapshot": false,
+      "next_checks": [
+        "Retrieve the current official EWR Register export and the Gazette publication for each relevant JCD.",
+        "Record the act's EEA adaptation, Liechtenstein constitutional approval, national publication and entry-into-force date separately.",
+        "Obtain the EWR-RegV legal text if it is needed to establish register operation or publication requirements."
+      ]
+    },
+    {
+      "dependency_id": "LI-DIR-2004-38-EEA-JCD-158-2007",
+      "instrument": "Directive 2004/38/EC and Joint Committee Decision 158/2007 amending EEA Annexes V and VIII",
+      "route": "EEA free-movement framework with Liechtenstein sectoral adaptations",
+      "linked_pathways": ["P01", "P03", "P04", "P05"],
+      "local_source_ids": ["li-05", "li-06", "li-07", "li-08"],
+      "local_artifact_paths": [
+        "source-library/liechtenstein/documents/treaties/li-eea-joint-committee-decision-191-1999.md",
+        "source-library/liechtenstein/documents/legislation/li-gesetz-umsetzung-kundmachung-ewr-rechtsvorschriften.md",
+        "source-library/liechtenstein/documents/legislation/li-personenfreizuegigkeitsgesetz-pfzg.md",
+        "source-library/liechtenstein/documents/legislation/li-personenfreizuegigkeitsverordnung-pfzv.md"
+      ],
+      "shared_eu_text_path": "source-library/core/eu/eu_32004l0038_EN.md",
+      "official_authority_locators": [
+        "https://www.efta.int/eea-lex/32004l0038",
+        "https://www.efta.int/sites/default/files/documents/legal-texts/eea/other-legal-documents/adopted-joint-committee-decisions/2007%20-%20English/158-2007.pdf"
+      ],
+      "relationship": "EFTA EEA-Lex identifies JCD 158/2007 as in force from 1 March 2009 and records Liechtenstein's constitutional requirements as fulfilled on 9 June 2008. The JCD states that incorporation of Directive 2004/38 does not prejudice Liechtenstein's sectoral adaptations. PFZG Article 1 identifies the Directive and the special EEA solution. The shared EU text is not the Liechtenstein-adapted EEA measure or a substitute for the national PFZG/PFZV texts.",
+      "status": "eea incorporation and liechtenstein implementation identified; current adaptations, person-category and route-specific provision map incomplete",
+      "retained_jcd_158_text_in_liechtenstein_pack": false,
+      "next_checks": [
+        "Retrieve JCD 158/2007 and all relevant Liechtenstein adaptations from EFTA/Liechtenstein official publication records.",
+        "Map the current special EEA solution against PFZG/PFZV for EEA citizens, specified family members, partners and other beneficiaries.",
+        "Verify current PFZV and remedies before asserting an application or residence entitlement."
+      ]
+    },
+    {
+      "dependency_id": "LI-SPECIAL-MOVEMENT-SOLUTION-JCD-191-1999",
+      "instrument": "JCD 191/1999, subsequent EEA enlargement/special-solution decisions, Liechtenstein Gazette acts, and current PFZG/PFZV",
+      "route": "Liechtenstein-specific EEA movement-of-persons arrangements",
+      "linked_pathways": ["P01", "P03", "P04", "P05"],
+      "local_source_ids": ["li-04", "li-05", "li-06", "li-07", "li-08", "li-41"],
+      "local_artifact_paths": [
+        "source-library/liechtenstein/documents/treaties/li-eea-joint-committee-decision-191-1999.md",
+        "source-library/liechtenstein/documents/legislation/li-gesetz-umsetzung-kundmachung-ewr-rechtsvorschriften.md",
+        "source-library/liechtenstein/documents/legislation/li-personenfreizuegigkeitsgesetz-pfzg.md",
+        "source-library/liechtenstein/documents/legislation/li-personenfreizuegigkeitsverordnung-pfzv.md",
+        "source-library/liechtenstein/documents/legislation/li-41-ewr-register-regulation.md"
+      ],
+      "official_authority_locators": [
+        "https://www.efta.int/sites/default/files/documents/legal-texts/eea/other-legal-documents/adopted-joint-committee-decisions/1999%20-%20English/191-1999.pdf",
+        "https://www.llv.li/en/business/register-cadastre/eea-registry"
+      ],
+      "relationship": "The retained JCD 191/1999 copy amends Annexes V and VIII and includes conditional-entry language and transitional adaptations with a 2006 review date. PFZG/PFZV identify Liechtenstein's special solution, but the old decision is not by itself proof of current quota, permit or residence conditions. The later amendment and review sequence has not been reconstructed from the current Gazette/EWR Register.",
+      "status": "historical official decision copy retained; current sequence, quota conditions and later amendments unresolved",
+      "next_checks": [
+        "Retrieve each later JCD/enlargement instrument and the current Liechtenstein State Law Gazette notice that governs the special movement solution.",
+        "Confirm whether and how the Article 3 entry condition and post-2006 review language in JCD 191/1999 were superseded or maintained.",
+        "Map permit allocation and family rules only from the current adapted EEA and national texts."
+      ]
+    },
+    {
+      "dependency_id": "LI-RESIDENCE-DOCUMENTS-REG-2025-1208",
+      "instrument": "Council Regulation (EU) 2025/1208 on identity cards and residence documents for free-movement beneficiaries",
+      "route": "Potential EEA Annex V incorporation; Liechtenstein-specific JCD status check required",
+      "linked_pathways": ["P03"],
+      "local_source_ids": ["li-04", "li-06", "li-07", "li-08"],
+      "local_artifact_paths": [
+        "source-library/liechtenstein/documents/legislation/li-gesetz-umsetzung-kundmachung-ewr-rechtsvorschriften.md",
+        "source-library/liechtenstein/documents/legislation/li-personenfreizuegigkeitsgesetz-pfzg.md",
+        "source-library/liechtenstein/documents/legislation/li-personenfreizuegigkeitsverordnung-pfzv.md"
+      ],
+      "shared_eu_text_path": null,
+      "official_authority_locators": [
+        "https://www.efta.int/eea-lex/32025r1208",
+        "https://eur-lex.europa.eu/eli/reg/2025/1208/oj"
+      ],
+      "relationship": "As checked on 31 October 2026, EFTA EEA-Lex lists a draft JCD under consideration by the EU and EFTA States, including Liechtenstein. The EU compliance date does not itself make the Regulation applicable in Liechtenstein under the EEA Agreement. The shared source-library EU-core folder does not currently retain this act.",
+      "status": "draft_eea_incorporation_under_consideration_as_of_2026-10-31; not treated as liechtenstein law",
+      "next_checks": [
+        "Refresh EFTA EEA-Lex and the Liechtenstein Gazette/EWR Register before use.",
+        "Identify any JCD, adaptations, approval, publication and Liechtenstein entry-into-force date before mapping identity/residence-document rules.",
+        "Compare the successor with the previous EU act and the currently applicable national document rules; do not infer a gap or applicability from the EU status alone."
+      ]
+    },
+    {
+      "dependency_id": "LI-SCHENGEN-VISA-CODE-AND-REPRESENTATION",
+      "instrument": "Visa Code (Regulation (EC) No 810/2009), applicable Schengen acquis, VEV, and current representation agreements",
+      "route": "Schengen association and national visa/representation procedure; separate from EEA incorporation",
+      "linked_pathways": ["P01", "P02", "P03", "P05"],
+      "local_source_ids": ["li-11", "li-12", "li-27", "li-30"],
+      "local_artifact_paths": [
+        "source-library/liechtenstein/documents/legislation/li-verordnung-einreise-visumerteilung-vev.md",
+        "source-library/liechtenstein/documents/treaties/li-liechtenstein-switzerland-visa-residence-framework.md",
+        "source-library/liechtenstein/documents/forms/li-27-family-reunification-online-form.md",
+        "source-library/liechtenstein/documents/guidance/li-30-visa-guidance-and-representation.md"
+      ],
+      "shared_eu_text_path": "source-library/core/eu/eu_32009r0810_EN.md",
+      "official_authority_locators": [
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32009R0810",
+        "https://www.gesetze.li/konso/2020042000"
+      ],
+      "relationship": "VEV Article 1 states that the national visa regulation applies insofar as the Schengen acquis applicable to Liechtenstein does not provide otherwise and lists representation arrangements. The local text and representation notes do not establish every current Schengen measure or mission workflow. Ordinary short-stay visa procedure is separate from EEA-family facilitation and longer-stay residence under PFZG/AuG.",
+      "status": "national visa text and route identified; Schengen act/version, mission-specific process and EEA-family interaction incomplete",
+      "next_checks": [
+        "Map current Schengen acquis and amendments applicable to Liechtenstein against VEV and the relevant representation agreement.",
+        "Verify who decides and accepts the application at the actual represented mission, including appointment, channel and exception route.",
+        "Keep ordinary third-country Schengen checklist separate from EEA/Swiss free-movement residence and family categories."
+      ]
+    },
+    {
+      "dependency_id": "LI-SWISS-ANNEX-K-AND-BILATERAL-ROUTE",
+      "instrument": "PFZG Swiss-person provisions, Liechtenstein–Switzerland visa/residence framework, and EFTA Convention Annex K protocol",
+      "route": "Separate Swiss free-movement and bilateral visa/representation route",
+      "linked_pathways": ["P01", "P03", "P04", "P05"],
+      "local_source_ids": ["li-07", "li-08", "li-12", "li-13"],
+      "local_artifact_paths": [
+        "source-library/liechtenstein/documents/legislation/li-personenfreizuegigkeitsgesetz-pfzg.md",
+        "source-library/liechtenstein/documents/legislation/li-personenfreizuegigkeitsverordnung-pfzv.md",
+        "source-library/liechtenstein/documents/treaties/li-switzerland-free-movement-protocol.md",
+        "source-library/liechtenstein/documents/treaties/li-liechtenstein-switzerland-visa-residence-framework.md"
+      ],
+      "official_authority_locators": [
+        "https://www.efta.int/about-efta/legal-documents/efta-convention",
+        "https://www.efta.int/sites/default/files/uploads/2024-04/ProtocolSwissLiecht.pdf",
+        "https://www.gesetze.li/konso/2009217000"
+      ],
+      "relationship": "PFZG names Swiss nationals and a bilateral framework; an EFTA-hosted Annex K protocol is retained as text, but the source review did not establish its present legal status. Switzerland's visa representation and Swiss movement-of-persons arrangements are not the EEA free-movement route and do not make Liechtenstein and Swiss immigration law identical.",
+      "status": "distinct local legal route identified; current protocol status and instrument-by-instrument scope unresolved",
+      "next_checks": [
+        "Verify protocol legal status, publication, amendments and entry into force from current EFTA and Liechtenstein records.",
+        "Map Swiss applicants/family members and represented-visa procedures separately from EEA and ordinary Schengen routes.",
+        "Confirm whether each right is based on PFZG, Annex K, bilateral framework or Schengen representation before relying on it."
+      ]
+    },
+    {
+      "dependency_id": "LI-GDPR-EEA-JCD-154-2018-AND-NATIONAL-DATA-LAW",
+      "instrument": "GDPR (Regulation (EU) 2016/679) as incorporated by JCD 154/2018, Liechtenstein Data Protection Act, and relevant sectoral processing law",
+      "route": "EEA data-protection framework and Liechtenstein implementation",
+      "linked_pathways": ["P06"],
+      "local_source_ids": ["li-14", "li-15", "li-36", "li-37"],
+      "local_artifact_paths": [
+        "source-library/liechtenstein/documents/legislation/li-landesverwaltungspflegegesetz-lvg.md",
+        "source-library/liechtenstein/documents/legislation/li-informationsgesetz.md",
+        "source-library/liechtenstein/documents/guidance/li-datenschutzstelle.md",
+        "source-library/liechtenstein/documents/guidance/li-datenschutzstelle-beschwerderecht.md"
+      ],
+      "shared_eu_text_path": "source-library/core/eu/eu_32016r0679_EN.md",
+      "official_authority_locators": [
+        "https://www.efta.int/eea-lex/32016r0679",
+        "https://www.datenschutzstelle.li/"
+      ],
+      "relationship": "EFTA EEA-Lex identifies GDPR/JCD 154/2018 as in force in the EEA from 20 July 2018 and records Liechtenstein's constitutional requirements as fulfilled on 19 July 2018. The Liechtenstein source-pack review explicitly leaves the Data Protection Act text open. The Information Act covers public information, not all personal-data access, and DPA guidance notes are not the statute.",
+      "status": "eea GDPR incorporation identified; national Data Protection Act, controller, processing-regime and remedy map missing",
+      "retained_liechtenstein_data_protection_act": false,
+      "next_checks": [
+        "Find and verify the current Liechtenstein Data Protection Act and any immigration/law-enforcement processing provisions.",
+        "Identify the controller, purpose, system, request route, retention rule and exception for the particular data issue.",
+        "Map access/correction/restriction, response deadlines, DPA complaint, administrative/judicial review and any separate preservation request."
+      ]
+    },
+    {
+      "dependency_id": "LI-NATIONAL-IMMIGRATION-AND-ADMINISTRATIVE-PROCEDURE",
+      "instrument": "PFZG/PFZV, AuG/ZAV, VEV, and LVG, with authentic Gazette amendments",
+      "route": "Liechtenstein national law and procedure, applied only after identifying the person and issue route",
+      "linked_pathways": ["P01", "P02", "P03", "P04", "P05", "P06"],
+      "local_source_ids": ["li-07", "li-08", "li-09", "li-10", "li-11", "li-14"],
+      "local_artifact_paths": [
+        "source-library/liechtenstein/documents/legislation/li-personenfreizuegigkeitsgesetz-pfzg.md",
+        "source-library/liechtenstein/documents/legislation/li-personenfreizuegigkeitsverordnung-pfzv.md",
+        "source-library/liechtenstein/documents/legislation/li-auslaendergesetz-aug.md",
+        "source-library/liechtenstein/documents/legislation/li-verordnung-zulassung-aufenthalt-auslaender-zav.md",
+        "source-library/liechtenstein/documents/legislation/li-verordnung-einreise-visumerteilung-vev.md",
+        "source-library/liechtenstein/documents/legislation/li-landesverwaltungspflegegesetz-lvg.md"
+      ],
+      "relationship": "The source pack retains 11 accepted local legal-text copies. PFZG/PFZV govern the EEA/Swiss free-movement route; AuG/ZAV govern their defined third-country scope; VEV operates subject to applicable Schengen rules; LVG is the general administrative-procedure source. Version observations differ: PFZV is dated 2024; PFZG 1 January 2026; AuG/ZAV June 2026; VEV October 2025; LVG's captured current consolidation date was not established.",
+      "status": "national source texts identified; currentness, route-specific provision map and cross-instrument remedy map incomplete",
+      "next_checks": [
+        "Recheck each local text against current signed Gazette acts and amendment history; Lilex compilations are informational.",
+        "Map special-rule precedence, application, data, notice, appeal and deadline provisions by route and decision.",
+        "Do not treat the IWG public-sector information-reuse law as an access or personal-data right."
+      ]
+    }
+  ]
+}

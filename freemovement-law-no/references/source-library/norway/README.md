@@ -2,7 +2,7 @@
 
 This is a bounded source-reference review, not a complete Norway legal pack. Norway is an EEA EFTA State, not an EU Member State. Keep Norwegian implementation, EEA incorporation and distinct EFTA/Swiss routes separate.
 
-Reviewed 25 October 2026: **52 official external references accepted within recorded scope; 1 exact attachment pending; 1 Avdeling II retrieval/coverage gap; 0 local source-text copies accepted; 0 topics accepted; country review incomplete.** The 54 former candidate IDs each have a final source-reference or disposition note under [documents/references](documents/references/). The [source list](references/source-list.md) is the index; [source acceptance](references/source-acceptance.json) records status and evidence.
+Reviewed 31 October 2026: **52 official external references accepted within recorded scope; 1 exact attachment pending; 1 Avdeling II retrieval/coverage gap; 1 local current-law text copy accepted (no-54); 0 topics accepted; country review incomplete.** The 54 former candidate IDs each have a final source-reference or disposition note under [documents/references](documents/references/). The [source list](references/source-list.md) is the index; [source acceptance](references/source-acceptance.json) records status and evidence.
 
 ## Priority official references
 
@@ -14,13 +14,19 @@ Reviewed 25 October 2026: **52 official external references accepted within reco
 - [UNE EEA case route (no-38)](documents/references/no-38-une-eea-cases.md)
 - [Supreme Court HR-2022-2329-A (no-44)](documents/references/no-44-supreme-court-family-immigration-ruling-hr-2022-2329-a.md)
 - [Legal Aid Act (no-48)](documents/references/no-48-legal-aid-act-lov-1980-06-13-35.md)
-- [Current EØS Worker Mobility Act (no-54)](documents/references/no-54-current-e-s-worker-mobility-act-lov-2012-12-14-81.md)
+- [Current EØS Worker Mobility Act (no-54)](documents/legislation/no-54-e-s-worker-mobility-act-lov-2012-12-14-81.md) — retained Nynorsk text; locator and review note at [no-54](documents/references/no-54-current-e-s-worker-mobility-act-lov-2012-12-14-81.md)
 
-These are source locators, not full text copies or topic-coverage findings. The exact UDI visa checklist PDF (no-30) is pending verification of its current parent route and revision. The Avdeling II/local-regulation lead (no-05) remains an open retrieval gap; no missing law is inferred from the lack of a publicData package.
+Except for the retained current legal text for no-54, the listed records are source locators and do not establish topic coverage. The exact UDI visa checklist PDF (no-30) is pending verification of its current parent route and revision. The Avdeling II/local-regulation lead (no-05) remains an open retrieval gap; no missing law is inferred from the lack of a publicData package.
 
-The previous candidates and manifests are preserved in the EU Source Update Monitor local archive. Old converted bodies were not promoted as source text. Fifteen prior conversion outputs failed offline replay; sixteen replayed byte-for-byte, which does not establish legal sufficiency or reuse permission. Lovdata's terms were checked on 25 October: individual formal laws/central regulations have a copying route under NLOD 2.0 with attribution, but bulk copying/systematic extraction is restricted. This review therefore keeps only reference notes.
+The previous candidates and manifests are preserved in the EU Source Update Monitor local archive. Old converted bodies were not promoted as source text. Fifteen prior conversion outputs failed offline replay; sixteen replayed byte-for-byte, which does not establish legal sufficiency or reuse permission. Lovdata's terms were rechecked on 31 October: individual formal laws/central regulations have a copying route under NLOD 2.0 with attribution, but bulk copying/systematic extraction is restricted. The no-54 current-law page is now retained as one text copy under the individual-law NLOD 2.0 route; this does not authorize mass or systematic page extraction. The Legalize-no candidate was not copied because its comparison found 17 empty article bodies, boundary and footnote differences, and list-layout defects. No other local text copy is accepted.
 
 No Norway-specific Source Monitor action is registered. The legacy updater has been disabled because it wrote candidate files and manifests into the pack. No Norway-specific replacement action is registered. National topic coverage, cross-reference dependencies, continuing case-law/mission discovery and operational evidence remain open.
+
+## Topic coverage and dependencies (31 October 2026)
+
+The [coverage register](references/coverage-register.md) and [machine-readable coverage model](references/coverage-model.json) apply the owner-approved EEA scope map v1.0.0 to the six core review pathways. The [dependency register](references/source-dependencies.json) keeps EEA incorporation/adaptations, Norwegian implementation, the Schengen visa route, and the separate EFTA/Swiss route distinct. All six pathways remain incomplete; zero topics are accepted and country review is incomplete.
+
+These registers distinguish retained text from official-reference notes. An official URL or source locator is metadata, not a retained legal source. The no-54 text shown in the current PR branch is proposed in open PR #167 and is not present on `main` until that PR is merged.
 
 
 ## Legalize-no crosswalk (29 October 2026)
