@@ -45,7 +45,7 @@ jobs:
           --registry scripts/source-distribution/country-registry.json
 
       - name: Run distribution regression tests
-        run: python3 scripts/package-distributions/test_build.py
+        run: python3 -m unittest discover -s scripts/package-distributions -p 'test_*.py'
 
       - name: Build twice and verify reproducibility
         id: build
@@ -97,6 +97,20 @@ jobs:
           fi
           echo "revision=$current_revision" >> "$GITHUB_OUTPUT"
 
+      - name: Prepare rolling release notes
+        id: notes
+        env:
+          SOURCE_REVISION: ${{ steps.current.outputs.revision }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          notes_file="$RUNNER_TEMP/freemovement-release-notes.md"
+          python3 scripts/package-distributions/release_notes.py \
+            --changelog CHANGELOG.md \
+            --revision "$SOURCE_REVISION" \
+            --output "$notes_file"
+          echo "path=$notes_file" >> "$GITHUB_OUTPUT"
+
       - name: Publish rolling prerelease
         env:
           GH_TOKEN: ${{ github.token }}
@@ -104,6 +118,7 @@ jobs:
           RELEASE_TAG: freemovement-latest
           DIST_DIR: ${{ steps.build.outputs.output_dir }}
           SOURCE_REVISION: ${{ steps.current.outputs.revision }}
+          RELEASE_NOTES_FILE: ${{ steps.notes.outputs.path }}
         shell: bash
         run: |
           set -euo pipefail
@@ -120,12 +135,12 @@ jobs:
             gh release edit "$RELEASE_TAG" \
               --target "$SOURCE_REVISION" \
               --title "FreeMovement distributions (rolling)" \
-              --notes "Generated from eudirective/skills main at $SOURCE_REVISION. See packages.json and SHA256SUMS." \
+              --notes-file "$RELEASE_NOTES_FILE" \
               --prerelease
           else
             gh release create "$RELEASE_TAG" --target "$SOURCE_REVISION" --prerelease \
               --title "FreeMovement distributions (rolling)" \
-              --notes "Generated from eudirective/skills main at $SOURCE_REVISION. See packages.json and SHA256SUMS."
+              --notes-file "$RELEASE_NOTES_FILE"
           fi
 
           gh release upload "$RELEASE_TAG" "$DIST_DIR"/*.zip \
