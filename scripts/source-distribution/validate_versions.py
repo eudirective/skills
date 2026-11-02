@@ -187,7 +187,7 @@ def validate_distribution(root: Path, registry_path: Path) -> dict[str, int]:
         files = {
             path.relative_to(package).as_posix(): sha256(path)
             for path in sorted(package.rglob("*"))
-            if path.is_file() and path != manifest_path
+            if path.is_file() and path != manifest_path and "__pycache__" not in path.relative_to(package).parts
         }
         _require(manifest.get("distributed_files") == files,
                  f"Distributed file hash mismatch for {name}; rerun the source distributor")
