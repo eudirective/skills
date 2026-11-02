@@ -82,7 +82,17 @@ class GhClient:
                     pages = json.loads(raw)
                 except (TypeError, json.JSONDecodeError) as parse_exc:
                     raise PublishError("GitHub returned an invalid release list") from parse_exc
-                releases = [item for page in pages if isinstance(page, list) for item in page]
+                # gh versions have returned both a page-wrapped array
+                # (with --slurp) and a flattened array here. Normalize both
+                # shapes, while ignoring any unexpected non-release values.
+                def release_records(value):
+                    if isinstance(value, dict):
+                        yield value
+                    elif isinstance(value, list):
+                        for child in value:
+                            yield from release_records(child)
+
+                releases = list(release_records(pages))
                 release = next((item for item in releases if isinstance(item, dict)
                                 and item.get("tag_name") == tag), None)
                 if release is None:
