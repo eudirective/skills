@@ -6,6 +6,13 @@ on:
       - main
     paths:
       - CHANGELOG.md
+  workflow_dispatch:
+    inputs:
+      retry_latest:
+        description: Retry the latest changelog announcement, even if it is unchanged
+        required: true
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -30,4 +37,5 @@ jobs:
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           BEFORE_SHA: ${{ github.event.before }}
+          FORCE_ANNOUNCEMENT: ${{ inputs.retry_latest }}
         run: python3 scripts/package-distributions/discord_announcement.py

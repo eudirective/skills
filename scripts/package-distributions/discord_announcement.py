@@ -111,9 +111,39 @@ def post_webhook(webhook_url: str, payload: dict[str, object]) -> None:
                     f"Discord webhook returned HTTP {response.status}"
                 )
     except HTTPError as exc:
-        raise DiscordAnnouncementError(f"Discord webhook returned HTTP {exc.code}") from None
+        raise DiscordAnnouncementError(
+            _discord_http_error(exc, webhook_url)
+        ) from None
     except URLError:
         raise DiscordAnnouncementError("Could not reach the Discord webhook") from None
+
+
+def _discord_http_error(exc: HTTPError, webhook_url: str) -> str:
+    """Return Discord's useful error fields without exposing webhook credentials."""
+    detail = f"Discord webhook returned HTTP {exc.code}"
+    try:
+        response = json.loads(exc.read().decode("utf-8"))
+    except (OSError, UnicodeDecodeError, json.JSONDecodeError):
+        return detail
+    if not isinstance(response, dict):
+        return detail
+
+    message = response.get("message")
+    code = response.get("code")
+    if not isinstance(message, str):
+        return detail
+
+    # Error messages are normally fixed Discord text. Redact URL credentials in
+    # case an intermediary echoes request details back in its response.
+    parts = urlsplit(webhook_url)
+    secrets = [webhook_url, parts.path.rsplit("/", 1)[-1]]
+    for secret in secrets:
+        if secret:
+            message = message.replace(secret, "[redacted]")
+    message = " ".join(message.split())[:240]
+    if isinstance(code, int) and not isinstance(code, bool):
+        return f"{detail} (Discord error {code}: {message})"
+    return f"{detail} ({message})"
 
 
 def main() -> int:
@@ -129,7 +159,8 @@ def main() -> int:
         plugin_metadata = json.loads(args.plugin_manifest.read_text(encoding="utf-8"))
         entry, version, content = release_metadata(changelog, plugin_metadata)
         previous = _previous_changelog(os.environ.get("BEFORE_SHA", ""), args.changelog)
-        if not should_announce(changelog, previous):
+        force_announcement = os.environ.get("FORCE_ANNOUNCEMENT", "").lower() == "true"
+        if not force_announcement and not should_announce(changelog, previous):
             print("Latest changelog entry is unchanged; skipping Discord announcement.")
             return 0
         payload = payload_for(content)
