@@ -84,7 +84,6 @@ jobs:
             # Rebuild against the latest triggering branch after every rejected concurrent update.
             git -C skills fetch --no-tags origin "refs/heads/$target_branch:refs/remotes/origin/$target_branch"
             git -C skills reset --hard "refs/remotes/origin/$target_branch"
-            rm -rf skills/scripts/source-distribution/__pycache__
             upstream_revision="$(git -C public-data rev-parse HEAD)"
             rm -rf "$RUNNER_TEMP/fm-source-stage"
             python3 skills/scripts/source-distribution/build.py \
