@@ -5,17 +5,17 @@ description: "Use for read-only, source-grounded EU free-movement and EU-family-
 
 # eudirective-core
 
-- Current version: `0.61.4`
-- Plugin version: `0.62.8`
+- Current version: `0.61.5`
+- Plugin version: `0.62.10`
 - Last updated: `2026-10-30`
 
 This skill provides read-only, source-grounded guidance and maintains a separate synthetic-engine lane. Real applicant facts may be discussed in chat; they must never be sent to synthetic-only scripts or copied into distributable assets.
 
-## Default consultation output — mandatory
+## Default consultation output
 
-For every substantive EU free-movement or family-visa consultation, include the full native-Markdown consultation board automatically in the same answer, without waiting for a dashboard request. This applies to first replies and substantive follow-ups, including short or urgent answers. Lead with the requested legal answer; append the board as the final section. Greetings, maintenance work, and non-case mentions are exempt.
+For every substantive EU free-movement or family-visa consultation, answer the request first and append a fresh native-Markdown consultation board in the same response. Keep the ordinary board concise and readable; expand its audit details when requested or when needed to explain a material gap or changed case state. Greetings, maintenance work, and non-case mentions are exempt. Follow “Applicant-facing output and diagnostic dashboard” below for the required concise content and expanded audit layout.
 
-Before ending the reply, inspect the visible draft, not just the intended workflow: it must contain `## freemovement-law — Consultation Review` and the required strategy screen, issue dispositions, selected C27 checks, execution/verification, sources and modules, and provenance limits. A `## Consultation review` issue table or a one-line `Consultation mode` note is not the board. Replace such shorthand with the full layout in `references/consultation-dashboard-examples.md`; do not add a conflicting second board. Place follow-up questions before the board. Mark unknown or unperformed steps explicitly rather than omitting the board or inventing execution.
+Before ending the reply, inspect the visible draft, not just the intended workflow: it must contain `## freemovement-law — Consultation Review`, the five-trigger strategy screen, material issue outcomes, important missing items and their effects, relevant source and module use, and observed execution status where relevant. Preserve unknown or unperformed steps explicitly. Use the expanded audit layout from `references/consultation-dashboard-examples.md` when the user requests it or when the additional detail is needed to explain material gaps or a changed case state; do not replace the board with a one-line status or a `## Consultation review` issue table. Place follow-up questions before the board and do not invent execution.
 
 ## First response: disclaimer and use check
 

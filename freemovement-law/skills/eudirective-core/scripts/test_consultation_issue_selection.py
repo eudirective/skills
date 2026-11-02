@@ -601,29 +601,36 @@ class ConsultationIssueSelectionTests(unittest.TestCase):
         self.assertIn("remedies.interim_protection", selected_ids(urgent))
         self.assertNotIn("remedies.interim_protection", selected_ids(ordinary))
 
-    def test_france_source_candidate_routing_resolves_ids_and_package_path(self) -> None:
+    def test_france_source_package_registration_and_index_paths_resolve(self) -> None:
         repository_root = selector.ROOT.parents[2]
         registry_path = selector.ROOT / "references/national-source-routing.json"
         routing = json.loads(registry_path.read_text(encoding="utf-8"))
-        index_path = repository_root / "freemovement-law-fr/references/source-library/france/references/consultation-issue-source-index.json"
-        index = json.loads(index_path.read_text(encoding="utf-8"))
-        source_ids = {item["source_id"] for item in index["sources"]}
-        route_ids = {item["route_id"] for item in MATRIX["routes"]}
-        france_routes = [item for item in routing["topic_candidate_routing"] if item["country_code"] == "FR"]
-        self.assertEqual(len(france_routes), 2)
-        for item in france_routes:
-            with self.subTest(route_id=item["route_id"]):
-                self.assertEqual(item["country_plugin"], "fm-france")
-                self.assertIn(item["route_id"], route_ids)
-                self.assertTrue((repository_root / "freemovement-law-fr" / item["source_index"]).is_file())
-                self.assertTrue(set(item["candidate_source_ids"]) <= source_ids)
-        skill_path = repository_root / "freemovement-law-fr/skills/eudirective-library-fr/SKILL.md"
-        relative_index = repository_root / "freemovement-law-fr/skills/eudirective-library-fr/../../references/source-library/france/references/consultation-issue-source-index.json"
-        self.assertTrue(relative_index.resolve().is_file())
+        france_packages = [item for item in routing["countries"] if item["iso_country_code"] == "FR"]
+        self.assertEqual(len(france_packages), 1)
+        france = france_packages[0]
+        self.assertEqual(france["plugin_name"], "fm-france")
+        self.assertEqual(france["package_directory"], "freemovement-law-fr")
+        self.assertEqual(france["skill_name"], "eudirective-library-fr")
+        self.assertEqual(france["source_library_directory"], "france")
+
+        france_root = repository_root / france["package_directory"]
+        metadata = json.loads((france_root / "plugin.json").read_text(encoding="utf-8"))
+        self.assertEqual(metadata["name"], france["plugin_name"])
+        references = france_root / "references/source-library/france/references"
+        acceptance = json.loads((references / "source-acceptance.json").read_text(encoding="utf-8"))
+        source_index = json.loads((references / "source-identity-inventory.json").read_text(encoding="utf-8"))
+        candidate_manifest = json.loads((references / "candidate-manifest.json").read_text(encoding="utf-8"))
+        self.assertGreater(len(acceptance["records"]), 0)
+        self.assertEqual(source_index["source_count"], len(source_index["entries"]))
+        self.assertEqual(
+            {item["id"] for item in source_index["entries"]},
+            {item["id"] for item in candidate_manifest["entries"]},
+        )
+
+        skill_path = france_root / "skills" / france["skill_name"] / "SKILL.md"
         skill_text = skill_path.read_text(encoding="utf-8")
-        self.assertIn("../../references/source-library/france/references/consultation-issue-source-index.json", skill_text)
-        self.assertIn("../../references/source-library/france/references/", skill_text)
-        self.assertNotIn("`references/source-library/france/references/`", skill_text)
+        self.assertIn("Country acceptance and index records are under `references/source-library/france/references/`.", skill_text)
+        self.assertNotIn("../../references/source-library/france/references/", skill_text)
 
     def test_interim_absence_is_explicitly_visible_as_not_applicable_or_unknown(self) -> None:
         contract = (selector.ROOT / "references/consultation-routing.md").read_text(encoding="utf-8")
