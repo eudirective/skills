@@ -34,6 +34,14 @@ For each potentially adverse rule or defense, classify separately:
 
 Keep **legal importance**, **evidential support**, **authority reliance**, **relief relevance** and **strategic priority** separate. No single automated scalar score substitutes for judgment.
 
+### Drafting safeguard: no unsolicited applicant self-defence
+
+When drafting or revising correspondence to an authority, start with the authority's **actual** questions, demands, statements and allegations. For drafting purposes, treat applicant conduct, credibility, intentions, cooperation and compliance **not challenged by the authority as not in dispute**, rather than as points needing anticipatory defence. This is not a finding that the authority approved the conduct, waived a legal condition or cannot question it later.
+
+Keep hypothetical applicant-side weaknesses and possible authority objections in the **internal** risk/contingency analysis. Do not volunteer denials, excuses, apologies, reassurance about good intentions, or statements such as "I remain willing to cooperate" simply to pre-empt an allegation not raised. Confirming attendance, providing evidence, or describing prior participation does not itself call for an additional declaration of cooperation. Such additions may create an unnecessary issue, imply that the applicant's conduct requires defence, or divert attention from the authority's obligations.
+
+Include applicant-conduct statements only when they (1) answer an objection or relevant question actually raised by the authority; (2) provide a fact or document legally required for the entitlement, competence, procedure or requested remedy; or (3) serve an explicit, specific and justified objective requested by the applicant. Keep them factual, proportionate and confined to that purpose. **Distinguish proving an entitlement from defending against an unraised allegation.** Do not omit legally required information, misstate facts, evade lawful checks, or treat the authority's silence as acceptance. Preserve the applicant's intended firmness in a fact-supported challenge; do not add conciliatory language as a supposed safeguard against hypothetical criticism.
+
 ## 3. Choose remedy actions issue by issue, not a generic escalation list
 
 For each viable grievance, connect: applicant fact -> precise applicable provision/scope -> the conduct complained of -> desired practical outcome -> actual competent route and its powers -> documentary requirements -> deadline or trigger if verified -> foreseeable downside. Distinguish:
