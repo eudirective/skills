@@ -54,6 +54,23 @@ class GhClientTests(unittest.TestCase):
             self.assertEqual(client.resolve_tag("freemovement-" + "a" * 40), "a" * 40)
         self.assertEqual(api_json.call_count, 2)
 
+    def test_draft_lookup_falls_back_to_release_list(self):
+        client = GhClient("eudirective/skills")
+        draft = {"id": 42, "tag_name": "freemovement-" + "a" * 40, "draft": True,
+                 "target_commitish": "a" * 40}
+        with (patch.object(client, "api_json", side_effect=PublishError("HTTP 404")),
+              patch.object(client, "_run", return_value=json.dumps([[draft]])) as run):
+            self.assertEqual(client.get_release(draft["tag_name"]), draft)
+        self.assertEqual(run.call_args.args,
+                         ("api", "--paginate", "--slurp", "repos/eudirective/skills/releases?per_page=100"))
+
+    def test_missing_draft_and_release_returns_none(self):
+        client = GhClient("eudirective/skills")
+        with (patch.object(client, "api_json", side_effect=PublishError("HTTP 404")),
+              patch.object(client, "_run", return_value="[[]]") as run):
+            self.assertIsNone(client.get_release("freemovement-" + "a" * 40))
+        run.assert_called_once()
+
 
 def make_distribution(root: Path, revision: str = REVISION) -> dict[str, bytes]:
     root.mkdir(parents=True, exist_ok=True)

@@ -74,8 +74,21 @@ class GhClient:
             release = self.api_json(f"repos/{self.repository}/releases/tags/{tag}")
         except PublishError as exc:
             if "HTTP 404" in str(exc):
-                return None
-            raise
+                # GitHub's release-by-tag endpoint omits drafts whose tag has
+                # not been created yet. Drafts still appear in the release list.
+                raw = self._run("api", "--paginate", "--slurp",
+                                f"repos/{self.repository}/releases?per_page=100")
+                try:
+                    pages = json.loads(raw)
+                except (TypeError, json.JSONDecodeError) as parse_exc:
+                    raise PublishError("GitHub returned an invalid release list") from parse_exc
+                releases = [item for page in pages if isinstance(page, list) for item in page]
+                release = next((item for item in releases if isinstance(item, dict)
+                                and item.get("tag_name") == tag), None)
+                if release is None:
+                    return None
+            else:
+                raise
         if not isinstance(release, dict) or not isinstance(release.get("id"), int):
             raise PublishError(f"GitHub returned a malformed release record for {tag}")
         return release
