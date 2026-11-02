@@ -64,6 +64,14 @@ class GhClientTests(unittest.TestCase):
         self.assertEqual(run.call_args.args,
                          ("api", "--paginate", "--slurp", "repos/eudirective/skills/releases?per_page=100"))
 
+    def test_draft_lookup_accepts_flat_release_list(self):
+        client = GhClient("eudirective/skills")
+        draft = {"id": 43, "tag_name": "freemovement-" + "b" * 40, "draft": True,
+                 "target_commitish": "b" * 40}
+        with (patch.object(client, "api_json", side_effect=PublishError("HTTP 404")),
+              patch.object(client, "_run", return_value=json.dumps([draft]))):
+            self.assertEqual(client.get_release(draft["tag_name"]), draft)
+
     def test_missing_draft_and_release_returns_none(self):
         client = GhClient("eudirective/skills")
         with (patch.object(client, "api_json", side_effect=PublishError("HTTP 404")),
