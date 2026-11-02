@@ -205,7 +205,9 @@ class ReleasePublisher:
         release = self.client.get_release(self.tag)
         if release is not None:
             if target is None or target != self.revision:
-                raise PublishError("existing release has no matching immutable revision tag")
+                if (not release.get("draft", False)
+                        or release.get("target_commitish") != self.revision):
+                    raise PublishError("existing release has no matching immutable revision target")
             if not release.get("draft", False):
                 self.state.status = "published_existing"
                 self._verify_remote(release, expected)
@@ -213,12 +215,10 @@ class ReleasePublisher:
                 return
         else:
             self.client.create_draft(self.tag, self.revision, notes_path)
-            target = self.client.resolve_tag(self.tag)
-            if target != self.revision:
-                raise PublishError("new revision tag does not point to the requested commit")
             release = self.client.get_release(self.tag)
-            if release is None or not release.get("draft", False):
-                raise PublishError("GitHub did not create the revision release as a draft")
+            if (release is None or not release.get("draft", False)
+                    or release.get("target_commitish") != self.revision):
+                raise PublishError("GitHub did not create a draft for the requested revision")
             self.state.status = "draft_created"
 
         for asset in self.client.assets(release["id"]):
