@@ -35,6 +35,21 @@ class GhClientTests(unittest.TestCase):
         self.assertEqual(commands[2], ["gh", "api", "repos/eudirective/skills/releases/assets/43",
                                        "-H", "Accept: application/octet-stream"])
 
+    def test_create_draft_returns_github_api_release_record(self):
+        client = GhClient("eudirective/skills")
+        release = {"id": 44, "tag_name": "freemovement-" + "c" * 40, "draft": True,
+                   "target_commitish": "c" * 40}
+        with tempfile.TemporaryDirectory() as temp_dir:
+            notes = Path(temp_dir) / "notes.md"
+            notes.write_text("release notes", encoding="utf-8")
+            with patch.object(client, "_run", return_value=json.dumps(release)) as run:
+                self.assertEqual(client.create_draft(release["tag_name"], "c" * 40, notes), release)
+        self.assertEqual(run.call_args.args, (
+            "api", "repos/eudirective/skills/releases", "--method", "POST",
+            "-f", f"tag_name={release['tag_name']}", "-f", f"target_commitish={'c' * 40}",
+            "-f", f"name=FreeMovement distributions {'c' * 40}", "-F", "draft=true",
+            "-F", f"body=@{notes}"))
+
     def test_missing_tag_ref_is_reported_as_absent(self):
         client = GhClient("eudirective/skills")
         with patch.object(client, "api_json", side_effect=PublishError("HTTP 404")):

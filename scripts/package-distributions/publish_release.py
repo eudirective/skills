@@ -103,10 +103,18 @@ class GhClient:
             raise PublishError(f"GitHub returned a malformed release record for {tag}")
         return release
 
-    def create_draft(self, tag: str, revision: str, notes_path: Path) -> None:
-        self._run("release", "create", tag, "--repo", self.repository,
-                  "--draft", "--target", revision, "--title", f"FreeMovement distributions {revision}",
-                  "--notes-file", str(notes_path))
+    def create_draft(self, tag: str, revision: str, notes_path: Path) -> dict | None:
+        raw = self._run("api", f"repos/{self.repository}/releases", "--method", "POST",
+                        "-f", f"tag_name={tag}", "-f", f"target_commitish={revision}",
+                        "-f", f"name=FreeMovement distributions {revision}",
+                        "-F", "draft=true", "-F", f"body=@{notes_path}")
+        try:
+            release = json.loads(raw)
+        except (TypeError, json.JSONDecodeError) as exc:
+            raise PublishError("GitHub returned an invalid newly created release") from exc
+        if not isinstance(release, dict) or not isinstance(release.get("id"), int):
+            raise PublishError("GitHub did not return the newly created release record")
+        return release
 
     def delete_asset(self, asset_id: int) -> None:
         self._run("api", "--method", "DELETE",
@@ -237,8 +245,9 @@ class ReleasePublisher:
                 self.state.status = "published_verified"
                 return
         else:
-            self.client.create_draft(self.tag, self.revision, notes_path)
-            release = self.client.get_release(self.tag)
+            release = self.client.create_draft(self.tag, self.revision, notes_path)
+            if release is None:
+                release = self.client.get_release(self.tag)
             if (release is None or not release.get("draft", False)
                     or release.get("target_commitish") != self.revision):
                 raise PublishError("GitHub did not create a draft for the requested revision")
