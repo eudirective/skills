@@ -30,17 +30,23 @@ For each potentially adverse rule or defense, classify separately:
 - **Legal role:** an actual threshold to the *relief requested*, a potential defense, an alternative administrative explanation, or peripheral background.
 - **Procedural impact:** recorded grounds for the decision, question affecting available relief, or a future contingency only.
 
-**Strategic proportionality:** An uninvoked potential defense goes in the *internal risk/contingency analysis*, not automatically into the first complaint or its headline. Consider raising it only if it is necessary for a requested remedy, an answer to an actual objection, or avoidance of a foreseeable procedural error. Do not suggest misrepresentation, false answers or withholding legally required information. An authority's silence does not waive mandatory statutory competence or bind the authority to accept an otherwise inadmissible case. If such competence conditions are prerequisites to the applicant's specific demand for relief, analyse them candidly without falsely attributing them to the authority.
+**Strategic proportionality:** An uninvoked potential defense goes in the *internal risk/contingency analysis*, not automatically into the first complaint or its headline. Consider raising it only if it is necessary for a requested remedy, to answer an objection actually raised, or to prevent a specific and reasonably foreseeable procedural error. Do not suggest misrepresentation, false answers or withholding legally required information. An authority's silence does not waive mandatory statutory competence or bind the authority to accept an otherwise inadmissible case. If such competence conditions are prerequisites to the applicant's specific demand for relief, analyse them candidly without falsely attributing them to the authority.
 
 Keep **legal importance**, **evidential support**, **authority reliance**, **relief relevance** and **strategic priority** separate. No single automated scalar score substitutes for judgment.
 
 ### Drafting safeguard: no unsolicited applicant self-defence
 
-When drafting or revising correspondence to an authority, start with the authority's **actual** questions, demands, statements and allegations. For drafting purposes, treat applicant conduct, credibility, intentions, cooperation and compliance **not challenged by the authority as not in dispute**, rather than as points needing anticipatory defence. This is not a finding that the authority approved the conduct, waived a legal condition or cannot question it later.
+When drafting correspondence to an authority, distinguish facts necessary to establish the applicant's legal position, objections actually raised by the authority, and hypothetical concerns considered during internal analysis.
 
-Keep hypothetical applicant-side weaknesses and possible authority objections in the **internal** risk/contingency analysis. Do not volunteer denials, excuses, apologies, reassurance about good intentions, or statements such as "I remain willing to cooperate" simply to pre-empt an allegation not raised. Confirming attendance, providing evidence, or describing prior participation does not itself call for an additional declaration of cooperation. Such additions may create an unnecessary issue, imply that the applicant's conduct requires defence, or divert attention from the authority's obligations.
+Do not introduce a defence against an allegation the authority has not made. In particular, do not volunteer denials, excuses, apologies or assurances concerning the applicant's credibility, intentions, cooperation or compliance merely to anticipate possible criticism.
 
-Include applicant-conduct statements only when they (1) answer an objection or relevant question actually raised by the authority; (2) provide a fact or document legally required for the entitlement, competence, procedure or requested remedy; or (3) serve an explicit, specific and justified objective requested by the applicant. Keep them factual, proportionate and confined to that purpose. **Distinguish proving an entitlement from defending against an unraised allegation.** Do not omit legally required information, misstate facts, evade lawful checks, or treat the authority's silence as acceptance. Preserve the applicant's intended firmness in a fact-supported challenge; do not add conciliatory language as a supposed safeguard against hypothetical criticism.
+The absence of an allegation does not establish the underlying facts, remove applicable evidentiary requirements or imply that the authority has accepted the applicant's position.
+
+Statements concerning the applicant's conduct or circumstances may nevertheless be appropriate where they answer an actual question or objection, establish facts required by law, support the requested remedy, or prevent a specific and reasonably foreseeable procedural error. They may also be included for another clearly justified purpose requested by the applicant.
+
+Apply proportionality to disclosure, not merely to tone. Include what is needed for the identified purpose without introducing unnecessary issues or speculative defences. Preserve the applicant's intended firmness when challenging the authority's conduct.
+
+Never advise concealing legally required information, misrepresenting facts or evading lawful procedural obligations.
 
 ## 3. Choose remedy actions issue by issue, not a generic escalation list
 
