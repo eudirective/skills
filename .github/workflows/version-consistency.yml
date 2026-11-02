@@ -11,6 +11,23 @@ permissions:
   contents: read
 
 jobs:
+  consultation:
+    name: Validate consultation engine
+    runs-on: ubuntu-latest
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Install consultation test dependencies
+        run: python3 -m pip install -r freemovement-law/requirements-test.txt
+      - name: Run consultation regression tests
+        run: python3 -m unittest discover -s freemovement-law/skills/eudirective-core/scripts -p 'test_*.py'
+      - name: Run standalone engine self-test
+        run: python3 freemovement-law/skills/eudirective-core/scripts/run_selftest.py
+
   validate:
     name: Validate generated component versions
     runs-on: ubuntu-latest

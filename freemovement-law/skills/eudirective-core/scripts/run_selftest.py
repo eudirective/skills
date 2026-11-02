@@ -559,6 +559,9 @@ def main():
 
     # C5a topology preserves distinct state roles and creates only structural candidates.
     c5_frontier_case=cv.load_json(FX/'c5a'/'case-frontier.json')
+    unclassified_entry_case=copy.deepcopy(c5_frontier_case)
+    # The overlap chain requires an explicit C-visa procedure, not entry_visa.
+    c5_frontier_case['procedure_type']='short_stay_visa'
     c5_frontier_elements=cv.load_json(FX/'c5a'/'elements-frontier.json')
     topology=te.build_topology(c5_frontier_case,c5_frontier_elements)
     assert topology['resolution_status']=='ready'
@@ -614,7 +617,7 @@ def main():
     assert any(x['code']=='applicant_destination_topology_mismatch' and x['role']=='destination_state' and x['bound_value']=='SE' and x['conflicting_value']=='DE' for x in bad_destination_topology['conflicts'])
     results.append('c5a_applicant_destination_mismatch_blocks')
 
-    # Visa/Schengen candidates are generated without collapsing their interaction with free-movement law.
+    # Explicit short-stay classification permits candidates, not a legal determination.
     frontier_regimes=ra.build_candidates(c5_frontier_case,topology,c5_frontier_elements)
     cand={x['element_id']:x for x in frontier_regimes['candidates']}
     assert cand['legal_regime.directive_2004_38']['disposition']=='candidate'
@@ -623,6 +626,18 @@ def main():
     assert frontier_regimes['interactions'][0]['status']=='review_required'
     assert frontier_regimes['final_applicability']=='not_determined'
     results.append('c5a_visa_schengen_and_directive_candidates_preserved')
+
+    # Preserve the original fixture's ambiguity instead of inferring a C visa.
+    unclassified_topology=te.build_topology(unclassified_entry_case,c5_frontier_elements)
+    unclassified_regimes=ra.build_candidates(unclassified_entry_case,unclassified_topology,c5_frontier_elements)
+    unclassified_candidates={x['element_id']:x for x in unclassified_regimes['candidates']}
+    assert unclassified_candidates['legal_regime.directive_2004_38']['disposition']=='candidate'
+    assert unclassified_candidates['legal_regime.visa_code']['disposition']=='unknown'
+    assert unclassified_candidates['legal_regime.schengen']['disposition']=='unknown'
+    assert any(x['code']=='eu_family_visa_classification_unresolved' for x in unclassified_regimes['unresolved'])
+    assert unclassified_regimes['interactions'][0]['status']=='blocked'
+    assert unclassified_regimes['final_applicability']=='not_determined'
+    results.append('c5a_unclassified_entry_visa_preserves_framework_uncertainty')
 
     # Returnee context remains a downstream legal-review candidate and exposes the primary-source gap.
     c5_returnee_case=cv.load_json(FX/'c5a'/'case-returnee.json')

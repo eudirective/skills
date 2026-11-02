@@ -25,6 +25,8 @@ jobs:
     name: Build, verify, and publish packages
     if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
 
     steps:
       - name: Check out the current main snapshot
@@ -37,6 +39,15 @@ jobs:
         uses: actions/setup-python@v7
         with:
           python-version: '3.12'
+
+      - name: Install consultation test dependencies
+        run: python3 -m pip install -r freemovement-law/requirements-test.txt
+
+      - name: Run consultation regression tests
+        run: python3 -m unittest discover -s freemovement-law/skills/eudirective-core/scripts -p 'test_*.py'
+
+      - name: Run standalone engine self-test
+        run: python3 freemovement-law/skills/eudirective-core/scripts/run_selftest.py
 
       - name: Validate generated component versions
         run: >-
