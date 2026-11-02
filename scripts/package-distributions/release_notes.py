@@ -68,8 +68,8 @@ def latest_entry(changelog: str) -> str:
     return validate_changelog(changelog)[0]
 
 
-def render_release_notes(changelog: str, revision: str) -> str:
-    """Render the latest user-facing entry with exact snapshot and asset links."""
+def render_revision_release_notes(changelog: str, revision: str) -> str:
+    """Render notes for an immutable release built from one exact revision."""
     if REVISION.fullmatch(revision) is None:
         raise ChangelogError("source revision must be a 40- or 64-character lowercase Git hash")
     entry = latest_entry(changelog)
@@ -77,12 +77,31 @@ def render_release_notes(changelog: str, revision: str) -> str:
     notes = [
         entry,
         "---",
-        f"This rolling package snapshot was generated from `main` at [{revision}]({commit_url}).",
+        f"This immutable package snapshot was generated from `main` at [{revision}]({commit_url}).",
         f"See the [full changelog]({REPOSITORY_URL}/blob/main/CHANGELOG.md), "
-        f"[packages.json]({REPOSITORY_URL}/releases/download/freemovement-latest/packages.json), "
-        f"and [SHA256SUMS]({REPOSITORY_URL}/releases/download/freemovement-latest/SHA256SUMS).",
+        f"[packages.json]({REPOSITORY_URL}/releases/download/freemovement-{revision}/packages.json), "
+        f"and [SHA256SUMS]({REPOSITORY_URL}/releases/download/freemovement-{revision}/SHA256SUMS).",
     ]
     return "\n\n".join(notes) + "\n"
+
+
+def render_latest_pointer_notes(revision: str) -> str:
+    """Render pointer-only latest notes without moving its existing tag."""
+    if REVISION.fullmatch(revision) is None:
+        raise ChangelogError("source revision must be a 40- or 64-character lowercase Git hash")
+    release_tag = f"freemovement-{revision}"
+    release_url = f"{REPOSITORY_URL}/releases/tag/{release_tag}"
+    package_url = f"{REPOSITORY_URL}/releases/download/{release_tag}/packages.json"
+    sums_url = f"{REPOSITORY_URL}/releases/download/{release_tag}/SHA256SUMS"
+    return (
+        f"Latest verified FreeMovement distribution: [{revision}]({release_url}).\n\n"
+        f"Download the immutable [package catalog]({package_url}) and [checksums]({sums_url}).\n"
+    )
+
+
+def render_release_notes(changelog: str, revision: str) -> str:
+    """Compatibility wrapper for callers building revision-specific notes."""
+    return render_revision_release_notes(changelog, revision)
 
 
 def main() -> int:

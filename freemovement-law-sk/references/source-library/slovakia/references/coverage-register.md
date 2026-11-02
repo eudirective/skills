@@ -3,6 +3,8 @@
 **Reviewed:** 25 October 2026
 **Status:** 0 of 11 baseline topics complete. The 40 final source notes and 36 accepted official external references are research inputs, not a finding that Slovakia's rules are sufficient or fully mapped.
 
+The separate [Legalize archive scope crosswalk](legalize-archive-scope-crosswalk.md) classifies 26,377 pinned archive catalog records for product relevance. It is archive metadata, not a legal source or a topic-completion finding; source coverage remains 0 of 11 topics complete.
+
 | Topic / issue | Primary law and implementing rules identified | Procedures, remedies, and operational evidence | State and next work |
 |---|---|---|---|
 | EU citizen and family-member scope, including extended family, EEA, Swiss, return, and Withdrawal Agreement routes | Act 404/2011 and amendment 128/2026; Civil Registry Act 154/1994 and Family Act 36/2005 are linked | Central MZV pages and the application form offer limited family guidance | **Unresolved.** Map Directive 2004/38 issue by issue; preserve the Act 404 definition distinction and establish separate EEA, Swiss, Slovak-return, and Withdrawal Agreement bases. Identify implementing rules and document recognition. |

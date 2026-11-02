@@ -1,0 +1,197 @@
+{
+  "schema_version": "1.0.0",
+  "jurisdiction": "FR",
+  "as_of": "2026-10-31",
+  "review_status": "initial_dependency_map; route_and_article_mapping_open",
+  "policy": "Record material EU/shared and national instrument dependencies without changing or paraphrasing retained legal text. A shared-core text path identifies an actual retained copy; a source ID identifies a catalogued record. A locator alone is not a source document. Resolve a dependency only after official identity, applicable version, route, and national implementation are checked.",
+  "scope_map_version": "1.0.0",
+  "e01_disposition": "not_applicable_to_France_as_the_EEA_EFTA_national_incorporation_layer_only; this does not resolve the treatment in France of EEA EFTA nationals under the applicable host-country route.",
+  "dependencies": [
+    {
+      "dependency_id": "EU-DIR-2004-38",
+      "instrument": "Directive 2004/38/EC",
+      "linked_pathways": [
+        "P01",
+        "P03",
+        "P04",
+        "P05"
+      ],
+      "shared_core_text_path": "source-library/core/eu/eu_32004l0038_EN.md",
+      "linked_national_record_ids": [
+        "fr-ceseda-book-ii-legislative",
+        "fr-01-ceseda-book-ii-eu-citizens-and-family-members-(including-articles-l.233-1-o",
+        "fr-05-france-visas-route-for-family-members-of-european-citizens",
+        "fr-service-public-eu-long-stay-f2651",
+        "fr-service-public-family-card-f19315"
+      ],
+      "relationship": "Core mobile-EU-citizen and qualifying-family framework; French national provisions/guidance must be mapped by person category and decision type.",
+      "status": "identified; French article-by-article and remedy crosswalk incomplete",
+      "next_checks": [
+        "Map only provisions relevant to approved pathways; do not assume every national source implements every Directive article.",
+        "Keep EEA EFTA and Swiss routes separate from Directive 2004/38 unless a specific rule establishes the relation.",
+        "Check current national transposition and relevant court interpretation before accepting any pathway."
+      ]
+    },
+    {
+      "dependency_id": "EU-VISA-CODE-810-2009",
+      "instrument": "Regulation (EC) No 810/2009 (Visa Code)",
+      "linked_pathways": [
+        "P01",
+        "P03",
+        "P05"
+      ],
+      "shared_core_text_path": "source-library/core/eu/eu_32009r0810_EN.md",
+      "linked_national_record_ids": [
+        "fr-05-france-visas-route-for-family-members-of-european-citizens",
+        "fr-cerfa-14076-eu-family-visa-form",
+        "fr-service-public-short-visa-refusal",
+        "fr-service-public-long-visa-refusal",
+        "fr-france-visas-submission-location-directory"
+      ],
+      "relationship": "Potentially governs Schengen short-stay visa procedure; identify EU-family facilitation and route-specific derogations separately from ordinary checklists.",
+      "status": "shared text identified; France mission/provision mapping incomplete",
+      "next_checks": [
+        "Map applicable Visa Code articles to current national/mission procedure and the EU-family route.",
+        "Verify appointment, external-service-provider, fee, filing, refusal and appeal stages.",
+        "Do not count forms or service pages as the governing rule."
+      ]
+    },
+    {
+      "dependency_id": "EU-GDPR-2016-679",
+      "instrument": "Regulation (EU) 2016/679 (GDPR)",
+      "linked_pathways": [
+        "P06"
+      ],
+      "shared_core_text_path": "source-library/core/eu/eu_32016r0679_EN.md",
+      "linked_national_record_ids": [
+        "fr-cnil-complaints",
+        "fr-cnil-agdref-information",
+        "fr-cada-access-portal"
+      ],
+      "relationship": "Shared data-protection framework; controller, purpose, processing regime and applicable exceptions must be established for each French immigration data system.",
+      "status": "shared text identified; controller and France-specific implementation mapping unresolved",
+      "next_checks": [
+        "Identify the controller and applicable GDPR or law-enforcement regime for each system.",
+        "Map access, rectification, restriction, erasure/retention, response time, exception and review separately.",
+        "Keep CADA access to administrative documents distinct from personal-data rights and CNIL complaints."
+      ]
+    },
+    {
+      "dependency_id": "EU-CHARTER-ART-47",
+      "instrument": "Charter of Fundamental Rights of the European Union, Article 47",
+      "linked_pathways": [
+        "P04",
+        "P06"
+      ],
+      "shared_core_text_path": "source-library/core/eu/eu_12012p_EN.md",
+      "linked_national_record_ids": [
+        "fr-cja-r312-18-visa-jurisdiction",
+        "fr-cja-r421-1-deadline",
+        "fr-crpa-l411-1-appeals"
+      ],
+      "relationship": "Potential effective-judicial-protection dependency only within the Charter’s field of application.",
+      "status": "text identified; decision-specific field-of-application and remedy mapping open",
+      "next_checks": [
+        "Do not apply the Charter outside the scope of EU law.",
+        "Map the actual decision, court, time limit, interim relief and EU-law issue before relying on Article 47."
+      ]
+    },
+    {
+      "dependency_id": "EEA-AGREEMENT-FRANCE-HOST-ROUTE",
+      "instrument": "Agreement on the European Economic Area and applicable EEA incorporation/adaptation measures",
+      "linked_pathways": [
+        "P01",
+        "P03",
+        "P04",
+        "P05"
+      ],
+      "shared_core_text_path": null,
+      "linked_national_record_ids": [
+        "fr-05-france-visas-route-for-family-members-of-european-citizens",
+        "fr-service-public-eu-long-stay-f2651"
+      ],
+      "relationship": "Potential distinct route for EEA EFTA nationals/family members in France; do not infer that Directive 2004/38 itself is the governing basis. This is a host-route dependency, separate from the crosswalk E01 national-incorporation layer.",
+      "status": "unresolved; no France-specific EEA instrument/applicability map recorded",
+      "next_checks": [
+        "Identify the official EEA Agreement/JCD basis and any relevant adaptations for the specific right.",
+        "Map French implementation and entry into force for the measure at issue.",
+        "Separate EU, EEA EFTA and Swiss categories in guidance and remedies."
+      ]
+    },
+    {
+      "dependency_id": "EU-SWISS-FREE-MOVEMENT-FRANCE",
+      "instrument": "EU-Switzerland Agreement on the free movement of persons and relevant decisions",
+      "linked_pathways": [
+        "P01",
+        "P03",
+        "P04",
+        "P05"
+      ],
+      "shared_core_text_path": null,
+      "linked_national_record_ids": [
+        "fr-05-france-visas-route-for-family-members-of-european-citizens",
+        "fr-service-public-eu-long-stay-f2651"
+      ],
+      "relationship": "Potential distinct Swiss route in France; EU/EEA/Swiss groupings in operational guidance do not establish identical legal bases.",
+      "status": "unresolved; instrument, family scope, national procedure and remedy not mapped here",
+      "next_checks": [
+        "Identify the applicable official agreement/protocol and any relevant decision.",
+        "Map the specific Swiss/family route separately from Directive 2004/38 and EEA rights."
+      ]
+    },
+    {
+      "dependency_id": "EU-PUBLIC-DOCUMENTS-2016-1191",
+      "instrument": "Regulation (EU) 2016/1191 on public documents",
+      "linked_pathways": [
+        "P03"
+      ],
+      "shared_core_text_path": null,
+      "linked_national_record_ids": [
+        "fr-06-code-civil-article-47:-evidentiary-effect-and-verification-of-foreign-civil",
+        "fr-02-code-civil-international-adoption-(articles-370-2-to-370-5)",
+        "fr-03-code-civil-marriage-celebrated-abroad-(article-171-1-and-connected-provisio"
+      ],
+      "relationship": "Potential effect on the presentation/authentication of specified public documents; applicability depends on document type and issuing state.",
+      "status": "candidate dependency only; official identity, scope and French procedure not screened for this register",
+      "next_checks": [
+        "Check the official instrument and covered-document list.",
+        "Map translation, multilingual standard forms, exceptions and national acceptance rules before relying on it."
+      ]
+    },
+    {
+      "dependency_id": "FR-SPECIAL-AND-GENERAL-ADMINISTRATIVE-PROCEDURE",
+      "instrument": "French CRPA, CJA, CESEDA and route-specific procedural rules",
+      "linked_pathways": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05",
+        "P06"
+      ],
+      "shared_core_text_path": null,
+      "linked_national_record_ids": [
+        "fr-crpa-l411-1-appeals",
+        "fr-cja-r312-18-visa-jurisdiction",
+        "fr-cja-r421-1-deadline",
+        "fr-crpa-code",
+        "fr-07-code-de-justice-administrative"
+      ],
+      "relationship": "General administrative appeals, court jurisdiction/deadline and special immigration/visa rules interact; special-rule priority and decision-specific remedies require a per-route check.",
+      "status": "partial bounded excerpts only; no complete procedure hierarchy or remedy map",
+      "next_checks": [
+        "Identify decision-maker and decision type; compare special law with CRPA/CJA provisions.",
+        "Record notice/reasons, appeal body, deadline start, interruption/suspension, jurisdiction and interim relief.",
+        "Do not infer a decision deadline from CJA R. 421-1 or a filing deadline from Code du travail R5221-19."
+      ]
+    }
+  ],
+  "unresolved_dependency_checks": [
+    "No complete France article-level map for Directive 2004/38 is recorded.",
+    "EEA EFTA host route and Swiss route remain distinct and unverified in this register.",
+    "EU public-document rules and French authentication/translation practice are not mapped.",
+    "GDPR controller, law-enforcement boundary, retention, access and oversight routes remain incomplete.",
+    "Special and general French procedure, notices, deadlines and remedies remain decision-specific and open."
+  ],
+  "path_base": "repository_root"
+}

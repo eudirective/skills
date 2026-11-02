@@ -1,21 +1,23 @@
 {
   "schema_version": "1.0",
-  "review_date": "2026-10-29",
+  "review_date": "2026-10-31",
   "jurisdiction": "IS",
   "status": "partial",
   "publisher_assessment": {
     "publisher": "Alþingi (Icelandic Parliament) and official public authorities",
-    "decision": "Accept the listed government-published links for their stated, limited uses. The current Alþingi consolidated-law pages are accepted as external references in Icelandic.",
+    "decision": "Retain official URLs only as locators and provenance evidence within their stated limits; they are not retained legal source documents. Accept local text separately only when the specific file, publisher text, version, conversion and rights evidence are recorded.",
     "basis": "The publisher and instrument identities are clear. Alþingi current law pages display Lagasafn edition 158a dated 1 October 2026. The official Ministry of Justice immigration page links to Alþingi, Reglugerðasafn and published appeal decisions. The Courts Administration publishes Rules No. 3/2022 on its official court-service network and identifies its effective date and repeal of the 2019 rule. The official Directorate of Immigration processing page was checked on 24 October 2026 and states that its selected-type averages are based on applications approved so far in the year and do not predict an individual pending decision. Alþingi’s current consolidated Visa Act No. 37/2026 page identifies edition 158a dated 1 October 2026 and an effective date of 12 May 2026.",
-    "limitation": "All accepted external references retain their recorded narrow scopes. Nine locally maintained English summaries are accepted (is-05 and is-08 through is-17 as selected: is-08, is-09, is-10, is-11, is-13, is-14, is-16 and is-17); none is a full statutory text. No topics are accepted and the Iceland review remains incomplete. The linked Regulation 540/2017 base text predates listed amendments 669/2026, 724/2026 and 725/2026. The registration threshold conflict remains unresolved; court and appeals publications are not established as exhaustive."
+    "limitation": "All 36 accepted external references retain their recorded narrow scopes. Twelve local copies are accepted: nine maintained English summaries (is-05, is-08 through is-11, is-13, is-14, is-16 and is-17) and three complete Icelandic amendment instruments (is-30, is-31 and is-32). No current full consolidated statutory text is locally accepted. No topics are accepted and the Iceland review remains incomplete. The linked Regulation 540/2017 base PDF is stale and is not accepted as current consolidated text. The registration threshold conflict remains unresolved; court and appeals publications are not established as exhaustive."
   },
   "counts": {
     "candidate_records": 34,
     "accepted_external_references": 36,
-    "accepted_local_copies": 9,
+    "accepted_local_copies": 12,
     "remaining_candidate_records": 0,
     "accepted_topics": 0,
-    "country_review_complete": false
+    "country_review_complete": false,
+    "accepted_full_statutory_texts": 0,
+    "accepted_official_amendment_texts": 3
   },
   "accepted_references": [
     {
@@ -93,8 +95,34 @@
         "checked_at": "2026-10-29",
         "language": "English",
         "scope": "Instrument identity, displayed amendment chain, and scoped summary of the three listed 2026 amendments.",
-        "limits": "Not a full consolidated regulation or official translation. Older amendments not individually re-reviewed."
-      }
+        "limits": "Not a full consolidated regulation or official translation. Older amendments not individually re-reviewed.",
+        "sha256": "2c09b1a0e08168b46f943ad2be33a740e8a9aa7e12c6edc875f1ab6b1ac9ba7d",
+        "bytes": 4058
+      },
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "is",
+          "edition": "undated",
+          "url": "https://www.reglugerd.is/reglugerdir/eftir-raduneytum/domsmala--og-mannrettindaraduneyti/nr/20605",
+          "path": null,
+          "acceptance_status": [
+            "accepted_external_reference"
+          ]
+        },
+        {
+          "kind": "local_artifact",
+          "language": "English",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/guidance/is-05.md",
+          "acceptance_status": [
+            "accepted_local_copy"
+          ],
+          "artifact_role": "project_authored_source_summary",
+          "reproduces_official_source_text": false
+        }
+      ]
     },
     {
       "source_id": "is-07",
@@ -135,9 +163,49 @@
       "publisher": "Ministry of Justice / Reglugerðasafn",
       "language": "is",
       "publication_date": "2026-06-11",
-      "checked_at": "2026-10-21",
+      "checked_at": "2026-10-31",
       "acceptance_scope": "Official amendment text: repeals §41 and changes the terminology in §47; the §47 terminology change took effect 2026-07-01.",
-      "limitations": "Accepted as the published amendment, not a consolidated version of Regulation 540/2017."
+      "limitations": "Accepted as the published amendment, not a consolidated version of Regulation 540/2017.",
+      "accepted_local_copy": {
+        "status": "accepted",
+        "kind": "complete_official_amendment_text",
+        "path": "documents/legislation/is-30-669-2026-amendment.md",
+        "language": "is",
+        "publication_date": "2026-06-11",
+        "checked_at": "2026-10-31",
+        "source_html_sha256": "1879f030aa8ffed02c992cbe7e503c479d533f2b80c93d8c49eec62ff3903ada",
+        "source_html_bytes": 7668,
+        "converted_text_sha256": "2e9c0f76dcf3805072198d274c948040f80581cc32078fe7dd1537ffb372c48b",
+        "converted_text_bytes": 1609,
+        "conversion_rule_id": "iceland-reglugerdasafn-html-to-markdown-v1",
+        "scope": "Complete published Icelandic text of Regulation 669/2026, retained with attribution. It is an amendment instrument, not a consolidated copy of Regulation 540/2017.",
+        "limits": "Whitespace and HTML layout are normalized to Markdown; no translation or substantive edits. Current consolidation of Regulation 540/2017 is not established."
+      },
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "is",
+          "edition": "undated",
+          "url": "https://www.reglugerd.is/reglugerdir/allar/nr/0669-2026",
+          "path": null,
+          "acceptance_status": [
+            "accepted_external_reference"
+          ]
+        },
+        {
+          "kind": "local_artifact",
+          "language": "is",
+          "edition": "2026",
+          "url": null,
+          "path": "documents/legislation/is-30-669-2026-amendment.md",
+          "acceptance_status": [
+            "accepted_local_copy"
+          ],
+          "artifact_role": "complete_official_amendment_text",
+          "reproduces_official_source_text": true
+        }
+      ],
+      "source_type": "regulation_amendment"
     },
     {
       "source_id": "is-31",
@@ -146,9 +214,49 @@
       "publisher": "Ministry of Justice / Reglugerðasafn",
       "language": "is",
       "publication_date": "2026-06-26",
-      "checked_at": "2026-10-21",
+      "checked_at": "2026-10-31",
       "acceptance_scope": "Official amendment text: replaces §11, adds an exception to §13, inserts §38a on reliability assessment of documents, repeals §43b, and adds §52. It entered into force on publication/issuance as stated in the text.",
-      "limitations": "The text states immediate entry into force; it is dated 2026-06-11 and the record gives a 2026-06-26 publication date. Use both dates as displayed and resolve the exact effective date only if material to the issue."
+      "limitations": "The text states immediate entry into force; it is dated 2026-06-11 and the record gives a 2026-06-26 publication date. Use both dates as displayed and resolve the exact effective date only if material to the issue.",
+      "accepted_local_copy": {
+        "status": "accepted",
+        "kind": "complete_official_amendment_text",
+        "path": "documents/legislation/is-31-724-2026-amendment.md",
+        "language": "is",
+        "publication_date": "2026-06-26",
+        "checked_at": "2026-10-31",
+        "source_html_sha256": "8f9a59024b0eaf0c21097de47f3d4b9b9b00ce3322acc90fa26a742bf0992254",
+        "source_html_bytes": 11808,
+        "converted_text_sha256": "631fdc0e8114f7f935fcedb97e269085a33328784c16f4738c72acf593ffd5cb",
+        "converted_text_bytes": 5049,
+        "conversion_rule_id": "iceland-reglugerdasafn-html-to-markdown-v1",
+        "scope": "Complete published Icelandic text of Regulation 724/2026, retained with attribution. It is an amendment instrument, not a consolidated copy of Regulation 540/2017.",
+        "limits": "Whitespace and HTML layout are normalized to Markdown; no translation or substantive edits. Current consolidation of Regulation 540/2017 is not established."
+      },
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "is",
+          "edition": "undated",
+          "url": "https://www.reglugerd.is/reglugerdir/eftir-raduneytum/dmr/nr/25017",
+          "path": null,
+          "acceptance_status": [
+            "accepted_external_reference"
+          ]
+        },
+        {
+          "kind": "local_artifact",
+          "language": "is",
+          "edition": "2026",
+          "url": null,
+          "path": "documents/legislation/is-31-724-2026-amendment.md",
+          "acceptance_status": [
+            "accepted_local_copy"
+          ],
+          "artifact_role": "complete_official_amendment_text",
+          "reproduces_official_source_text": true
+        }
+      ],
+      "source_type": "regulation_amendment"
     },
     {
       "source_id": "is-32",
@@ -157,9 +265,49 @@
       "publisher": "Ministry of Justice / Reglugerðasafn",
       "language": "is",
       "publication_date": "2026-06-26",
-      "checked_at": "2026-10-21",
+      "checked_at": "2026-10-31",
       "acceptance_scope": "Official amendment text replacing Chapter II with short-term residence-permit provisions; the regulation states that it entered into force immediately.",
-      "limitations": "The text states immediate entry into force; it is dated 2026-06-11 and the record gives a 2026-06-26 publication date. Use both dates as displayed and resolve the exact effective date only if material to the issue."
+      "limitations": "The text states immediate entry into force; it is dated 2026-06-11 and the record gives a 2026-06-26 publication date. Use both dates as displayed and resolve the exact effective date only if material to the issue.",
+      "accepted_local_copy": {
+        "status": "accepted",
+        "kind": "complete_official_amendment_text",
+        "path": "documents/legislation/is-32-725-2026-amendment.md",
+        "language": "is",
+        "publication_date": "2026-06-26",
+        "checked_at": "2026-10-31",
+        "source_html_sha256": "bec07705789b91b1ad9c51b58410cec932a6e5043b3f933ce6fef62a4874d62e",
+        "source_html_bytes": 12465,
+        "converted_text_sha256": "058794f8e4c48d1b6968786ac69336da3798f9d1fbc4647ff51ecc8e47d6b4c2",
+        "converted_text_bytes": 5102,
+        "conversion_rule_id": "iceland-reglugerdasafn-html-to-markdown-v1",
+        "scope": "Complete published Icelandic text of Regulation 725/2026, retained with attribution. It is an amendment instrument, not a consolidated copy of Regulation 540/2017.",
+        "limits": "Whitespace and HTML layout are normalized to Markdown; no translation or substantive edits. Current consolidation of Regulation 540/2017 is not established."
+      },
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "is",
+          "edition": "undated",
+          "url": "https://www.reglugerd.is/reglugerdir/eftir-raduneytum/dmr/nr/25018",
+          "path": null,
+          "acceptance_status": [
+            "accepted_external_reference"
+          ]
+        },
+        {
+          "kind": "local_artifact",
+          "language": "is",
+          "edition": "2026",
+          "url": null,
+          "path": "documents/legislation/is-32-725-2026-amendment.md",
+          "acceptance_status": [
+            "accepted_local_copy"
+          ],
+          "artifact_role": "complete_official_amendment_text",
+          "reproduces_official_source_text": true
+        }
+      ],
+      "source_type": "regulation_amendment"
     },
     {
       "source_id": "is-33",
@@ -222,8 +370,34 @@
         "language": "English",
         "scope": "Eligibility categories, student-sponsor limits, Icelandic-return-route description, displayed paper procedure and fee.",
         "provenance": "Preserved candidate capture SHA-256: 56e1222305dfd35ae513c5b12b5e9077134a828c3a0d84a396092aa807a7d56d.",
-        "limits": "The page’s displayed three-month threshold is not accepted as a definitive legal threshold; reconcile against primary law and conflicting agency guidance."
-      }
+        "limits": "The page’s displayed three-month threshold is not accepted as a definitive legal threshold; reconcile against primary law and conflicting agency guidance.",
+        "sha256": "878f998a1e7dce1b666119415d49794957a4db2b0d91c1d0fc4a8b05d74bf927",
+        "bytes": 2438
+      },
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://island.is/en/residence-right-of-family-members-of-eea-efta-citizens",
+          "path": null,
+          "acceptance_status": [
+            "accepted_external_reference"
+          ]
+        },
+        {
+          "kind": "local_artifact",
+          "language": "English",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/guidance/is-08.md",
+          "acceptance_status": [
+            "accepted_local_copy"
+          ],
+          "artifact_role": "project_authored_source_summary",
+          "reproduces_official_source_text": false
+        }
+      ]
     },
     {
       "source_id": "is-09",
@@ -242,8 +416,34 @@
         "language": "English",
         "scope": "Independent outline of identity/family/dependency evidence, support evidence, authentication, certification and translation guidance.",
         "provenance": "Preserved candidate capture SHA-256: 89c2c9c1298024d4125e0be4d6d948e010af96ddd8151b9f9e847c3333fc1f1c.",
-        "limits": "Operational checklist may change; not complete legal requirements and not an individual evidence determination."
-      }
+        "limits": "Operational checklist may change; not complete legal requirements and not an individual evidence determination.",
+        "sha256": "d5318bf96af01c296c8ec46dff5319967519ee05b8cb18533003a61ece3bb2d9",
+        "bytes": 2607
+      },
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://island.is/en/residence-right-of-family-members-of-eea-efta-citizens/supporting-documents",
+          "path": null,
+          "acceptance_status": [
+            "accepted_external_reference"
+          ]
+        },
+        {
+          "kind": "local_artifact",
+          "language": "English",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/guidance/is-09.md",
+          "acceptance_status": [
+            "accepted_local_copy"
+          ],
+          "artifact_role": "project_authored_source_summary",
+          "reproduces_official_source_text": false
+        }
+      ]
     },
     {
       "source_id": "is-10",
@@ -262,8 +462,34 @@
         "language": "English",
         "scope": "Independent summary of stated card validity, absence, work and permanent-residence guidance.",
         "provenance": "Preserved candidate capture SHA-256: 46c47d6897572375111736459a2150a1bdbc33b89620262c87d1ab71ce475069.",
-        "limits": "General service guidance; route and entitlements must be checked against current law and individual circumstances."
-      }
+        "limits": "General service guidance; route and entitlements must be checked against current law and individual circumstances.",
+        "sha256": "000cb0f834e455aa73c2cc6e79917515aef589c7dcc280028d45cd954ed82936",
+        "bytes": 2193
+      },
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://island.is/en/residence-right-of-family-members-of-eea-efta-citizens/residence-card",
+          "path": null,
+          "acceptance_status": [
+            "accepted_external_reference"
+          ]
+        },
+        {
+          "kind": "local_artifact",
+          "language": "English",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/guidance/is-10.md",
+          "acceptance_status": [
+            "accepted_local_copy"
+          ],
+          "artifact_role": "project_authored_source_summary",
+          "reproduces_official_source_text": false
+        }
+      ]
     },
     {
       "source_id": "is-11",
@@ -282,8 +508,34 @@
         "language": "English",
         "scope": "Independent summary of five-year route, continuity, exceptions, application method, displayed fee and card replacement.",
         "provenance": "Preserved candidate capture SHA-256: 66cf68e61b1f292e9aee557716a226431d722918f47b1246838cfdb238a4a45f.",
-        "limits": "General service guidance; no individual continuity or exception determination; confirm current law and fee."
-      }
+        "limits": "General service guidance; no individual continuity or exception determination; confirm current law and fee.",
+        "sha256": "629e467729087be220529b9fad538f13c6920a85e40186551546f223d14f7183",
+        "bytes": 2285
+      },
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://island.is/en/permanent-residence-for-family-members-of-eea-efta-citizens",
+          "path": null,
+          "acceptance_status": [
+            "accepted_external_reference"
+          ]
+        },
+        {
+          "kind": "local_artifact",
+          "language": "English",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/guidance/is-11.md",
+          "acceptance_status": [
+            "accepted_local_copy"
+          ],
+          "artifact_role": "project_authored_source_summary",
+          "reproduces_official_source_text": false
+        }
+      ]
     },
     {
       "source_id": "is-12",
@@ -312,8 +564,34 @@
         "language": "English",
         "scope": "Historical page snapshot about status, document submissions and work while an application is pending; preserves 2025 average as historical only.",
         "provenance": "Preserved official-page capture SHA-256: 635c90153e41c0ff6e0966598fc23dc8dc51485a276a77b9cae1c4bc980f15bb.",
-        "limits": "Do not use 2025 average as current; current page content not independently refreshed. See current is-35 waiting-time page."
-      }
+        "limits": "Do not use 2025 average as current; current page content not independently refreshed. See current is-35 waiting-time page.",
+        "sha256": "a705056ef18c39669ac6c8e58de875b2e3fe94fda34e0f9d5b212184af1a55fd",
+        "bytes": 2397
+      },
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://island.is/en/o/directorate-of-immigration/have-applied-eea-efta",
+          "path": null,
+          "acceptance_status": [
+            "accepted_external_reference"
+          ]
+        },
+        {
+          "kind": "local_artifact",
+          "language": "English",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/guidance/is-13.md",
+          "acceptance_status": [
+            "accepted_local_copy"
+          ],
+          "artifact_role": "project_authored_source_summary",
+          "reproduces_official_source_text": false
+        }
+      ]
     },
     {
       "source_id": "is-14",
@@ -332,8 +610,34 @@
         "language": "English",
         "scope": "Records Registers Iceland scope and the unresolved three-month/six-month discrepancy without selecting a legal threshold.",
         "provenance": "Preserved official-page capture SHA-256: 549004b469867b0cb2000b2f522bc50a60fd3bc4638ce2778ea35f8263d6219c.",
-        "limits": "Discrepancy unresolved; consult current statute/regulations and authority before relying on a duration."
-      }
+        "limits": "Discrepancy unresolved; consult current statute/regulations and authority before relying on a duration.",
+        "sha256": "6d805b4245ad90d9437ac1b2953f73de712495af25e277079a11f222a0e14399",
+        "bytes": 2141
+      },
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://island.is/en/registration-of-eea-efta-foreign-nationals",
+          "path": null,
+          "acceptance_status": [
+            "accepted_external_reference"
+          ]
+        },
+        {
+          "kind": "local_artifact",
+          "language": "English",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/guidance/is-14.md",
+          "acceptance_status": [
+            "accepted_local_copy"
+          ],
+          "artifact_role": "project_authored_source_summary",
+          "reproduces_official_source_text": false
+        }
+      ]
     },
     {
       "source_id": "is-15",
@@ -362,8 +666,34 @@
         "language": "English",
         "scope": "General moving hub and return-registration route for Icelandic citizens; not a substantive immigration residence source.",
         "provenance": "Preserved official-page capture SHA-256: 18576ff856f23b2581b8c28b4a696e67c8e3fa83ab58dc24433fcc9baab4695d.",
-        "limits": "Navigation and practical registration only; separate nationality-based routes and immigration law control."
-      }
+        "limits": "Navigation and practical registration only; separate nationality-based routes and immigration law control.",
+        "sha256": "c36f0cf39410d516db25e9ddb0dc096c88416284fc681577e69701180429e18a",
+        "bytes": 1815
+      },
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://island.is/en/life-events/moving",
+          "path": null,
+          "acceptance_status": [
+            "accepted_external_reference"
+          ]
+        },
+        {
+          "kind": "local_artifact",
+          "language": "English",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/guidance/is-16.md",
+          "acceptance_status": [
+            "accepted_local_copy"
+          ],
+          "artifact_role": "project_authored_source_summary",
+          "reproduces_official_source_text": false
+        }
+      ]
     },
     {
       "source_id": "is-17",
@@ -382,8 +712,34 @@
         "language": "English",
         "scope": "Entry guidance by nationality and explicit six-month statement, recorded with conflict against is-14.",
         "provenance": "Preserved official-page capture SHA-256: b7808d3e60d12e307762879e88e66ed9f290b9a55561095635e7404585d0096a.",
-        "limits": "Does not resolve three-month/six-month official-page conflict; confirm primary law and current border/immigration rules."
-      }
+        "limits": "Does not resolve three-month/six-month official-page conflict; confirm primary law and current border/immigration rules.",
+        "sha256": "188ee7329522dc2aa5d66aaae9bba04f3b8415ff2ba51b3c42c332cf7595699e",
+        "bytes": 2233
+      },
+      "representations": [
+        {
+          "kind": "official_reference",
+          "language": "en",
+          "edition": "undated",
+          "url": "https://island.is/en/entry-requirements-to-iceland",
+          "path": null,
+          "acceptance_status": [
+            "accepted_external_reference"
+          ]
+        },
+        {
+          "kind": "local_artifact",
+          "language": "English",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/guidance/is-17.md",
+          "acceptance_status": [
+            "accepted_local_copy"
+          ],
+          "artifact_role": "project_authored_source_summary",
+          "reproduces_official_source_text": false
+        }
+      ]
     },
     {
       "source_id": "is-18",
@@ -544,8 +900,8 @@
       "reason": "Rules No. 3/2019 are superseded; Rules No. 3/2022 state they took effect on 2022-10-01 and repealed the 2019 rules."
     }
   ],
-  "completion_note": "Thirty-six official external references have scoped acceptance. Nine maintained source summaries are accepted (is-05, is-08, is-09, is-10, is-11, is-13, is-14, is-16 and is-17); no local full statutory text or topic is accepted, and Iceland is not complete. Open work includes resolving the three-month/six-month registration guidance conflict against primary law, verifying court-search coverage and continuing case-law discovery, mapping visa and immigration judicial remedies, checking current mission instructions, and completing operational and dependency review.",
-  "count_note": "The 34 candidate_records are the original discovery inventory; all have a documented disposition and accepted official external references, so remaining_candidate_records is 0. Two additional official references (is-35 and is-36) were added during this review. These counts do not accept local copies: accepted_local_copies is 9 (maintained summaries is-05, is-08 through is-11, is-13, is-14, is-16 and is-17; none is a full statutory text). Topic coverage and country completion remain separate and open.",
+  "completion_note": "Thirty-six official external references have scoped acceptance. Twelve local copies are accepted: nine maintained source summaries and the complete published Icelandic amendment texts for Regulations 669/2026, 724/2026 and 725/2026. No current full consolidated statutory text or topic is accepted, and Iceland is not complete. Open work includes resolving the three-month/six-month registration guidance conflict against primary law, verifying court-search coverage and continuing case-law discovery, mapping visa and immigration judicial remedies, checking current mission instructions, and completing operational and dependency review.",
+  "count_note": "The 34 candidate_records are the original discovery inventory; all have a documented disposition and accepted official external references, so remaining_candidate_records is 0. Two additional official references (is-35 and is-36) were added during review. Twelve accepted_local_copies comprise nine maintained English summaries and three complete official Icelandic amendment instruments (is-30 to is-32); accepted_full_statutory_texts is 0 because no current full consolidation is retained. Topic coverage and country completion remain separate and open.",
   "identity_links": {
     "is-01": {
       "source_identity_id": "is:url:e5eb111f7154da163a04",
@@ -578,8 +934,11 @@
     "is-05": {
       "source_identity_id": "is:url:2bfdee90e64f06e4abf7",
       "representation_ids": [
+        "is:url:2bfdee90e64f06e4abf7#local:en:eae0b40aea19",
+        "is:url:2bfdee90e64f06e4abf7#local:is:06144babb7c0",
         "is:url:2bfdee90e64f06e4abf7#local:unspecified:06144babb7c0",
-        "is:url:2bfdee90e64f06e4abf7#url:is:6e6b185ebf4e"
+        "is:url:2bfdee90e64f06e4abf7#url:en:fb38398fc06c",
+        "is:url:2bfdee90e64f06e4abf7#url:is:976a2b9daaf8"
       ],
       "identity_resolution_status": "resolved"
     },
@@ -600,32 +959,36 @@
     "is-08": {
       "source_identity_id": "is:url:b2026863c55f6ee47cd4",
       "representation_ids": [
+        "is:url:b2026863c55f6ee47cd4#local:en:bc4fcbbc2e40",
         "is:url:b2026863c55f6ee47cd4#local:unspecified:4193c959c9c2",
-        "is:url:b2026863c55f6ee47cd4#url:en:40602563d596"
+        "is:url:b2026863c55f6ee47cd4#url:en:04f70efcc7c6"
       ],
       "identity_resolution_status": "resolved"
     },
     "is-09": {
       "source_identity_id": "is:url:c42a5ebf85bad985c756",
       "representation_ids": [
+        "is:url:c42a5ebf85bad985c756#local:en:b2ef8b588da7",
         "is:url:c42a5ebf85bad985c756#local:unspecified:728e5d8e6c9b",
-        "is:url:c42a5ebf85bad985c756#url:en:2f9644efcf52"
+        "is:url:c42a5ebf85bad985c756#url:en:c8465fd232c2"
       ],
       "identity_resolution_status": "resolved"
     },
     "is-10": {
       "source_identity_id": "is:url:9beefac051c07e398197",
       "representation_ids": [
+        "is:url:9beefac051c07e398197#local:en:f5c7db28e530",
         "is:url:9beefac051c07e398197#local:unspecified:2725e220469a",
-        "is:url:9beefac051c07e398197#url:en:284fa099c295"
+        "is:url:9beefac051c07e398197#url:en:5969cf67f391"
       ],
       "identity_resolution_status": "resolved"
     },
     "is-11": {
       "source_identity_id": "is:url:54d3385afc558478dda5",
       "representation_ids": [
+        "is:url:54d3385afc558478dda5#local:en:3e1ac7a58f97",
         "is:url:54d3385afc558478dda5#local:unspecified:9cc498c3a4b8",
-        "is:url:54d3385afc558478dda5#url:en:0a2a7b876376"
+        "is:url:54d3385afc558478dda5#url:en:cd9a8effd103"
       ],
       "identity_resolution_status": "resolved"
     },
@@ -639,16 +1002,18 @@
     "is-13": {
       "source_identity_id": "is:url:304413837be9dc0f05d4",
       "representation_ids": [
+        "is:url:304413837be9dc0f05d4#local:en:0332874abf84",
         "is:url:304413837be9dc0f05d4#local:unspecified:61336559d53b",
-        "is:url:304413837be9dc0f05d4#url:en:8b3075965e4b"
+        "is:url:304413837be9dc0f05d4#url:en:2685e762e62a"
       ],
       "identity_resolution_status": "resolved"
     },
     "is-14": {
       "source_identity_id": "is:url:b00e85cba6c91e19cf3a",
       "representation_ids": [
+        "is:url:b00e85cba6c91e19cf3a#local:en:4a9ae343b915",
         "is:url:b00e85cba6c91e19cf3a#local:unspecified:392cf503796e",
-        "is:url:b00e85cba6c91e19cf3a#url:en:09bd25de347d"
+        "is:url:b00e85cba6c91e19cf3a#url:en:6ed8e1765ead"
       ],
       "identity_resolution_status": "resolved"
     },
@@ -662,16 +1027,18 @@
     "is-16": {
       "source_identity_id": "is:url:d6a02eb524ab4688c768",
       "representation_ids": [
+        "is:url:d6a02eb524ab4688c768#local:en:9d27fb85bb53",
         "is:url:d6a02eb524ab4688c768#local:unspecified:7f9c7442862e",
-        "is:url:d6a02eb524ab4688c768#url:en:caf0084cc78f"
+        "is:url:d6a02eb524ab4688c768#url:en:18edf00dfea7"
       ],
       "identity_resolution_status": "resolved"
     },
     "is-17": {
       "source_identity_id": "is:url:16656e098d2be48bc8d7",
       "representation_ids": [
+        "is:url:16656e098d2be48bc8d7#local:en:bd1dc4672615",
         "is:url:16656e098d2be48bc8d7#local:unspecified:508b3ba8c100",
-        "is:url:16656e098d2be48bc8d7#url:en:d4ce34d00118"
+        "is:url:16656e098d2be48bc8d7#url:en:6f204ca78cdc"
       ],
       "identity_resolution_status": "resolved"
     },
@@ -762,21 +1129,24 @@
     "is-30": {
       "source_identity_id": "is:url:067f3b40ccef54d6c000",
       "representation_ids": [
-        "is:url:067f3b40ccef54d6c000#url:is:deae35eb606c"
+        "is:url:067f3b40ccef54d6c000#local:is:7cd0a7479eec",
+        "is:url:067f3b40ccef54d6c000#url:is:81cdf9c94fdd"
       ],
       "identity_resolution_status": "resolved"
     },
     "is-31": {
       "source_identity_id": "is:url:fe85a811788e1c4c214e",
       "representation_ids": [
-        "is:url:fe85a811788e1c4c214e#url:is:ba680a2ab251"
+        "is:url:fe85a811788e1c4c214e#local:is:a01e6411a6aa",
+        "is:url:fe85a811788e1c4c214e#url:is:f74ab6b9a54f"
       ],
       "identity_resolution_status": "resolved"
     },
     "is-32": {
       "source_identity_id": "is:url:ee67f636fae12a9ab4c4",
       "representation_ids": [
-        "is:url:ee67f636fae12a9ab4c4#url:is:e9f959784edc"
+        "is:url:ee67f636fae12a9ab4c4#local:is:2e47a57cbc2b",
+        "is:url:ee67f636fae12a9ab4c4#url:is:bd24a7d79dc9"
       ],
       "identity_resolution_status": "resolved"
     },

@@ -21,12 +21,26 @@
       "identity_resolution_status": "resolved",
       "identity_resolution_basis": "catalogued official URL",
       "status_categories": [
-        "accepted_external_reference"
+        "accepted_external_reference",
+        "accepted_local_copy"
       ],
       "representation_ids": [
-        "fr:url:58fdd8402156404e0510#url:fr:7135fe3bd1af"
+        "fr:url:58fdd8402156404e0510#local:fr:b921d097a3e1",
+        "fr:url:58fdd8402156404e0510#url:fr:7135fe3bd1af",
+        "fr:url:58fdd8402156404e0510#url:fr:d007e703fb8e"
       ],
       "representations": [
+        {
+          "kind": "local_artifact",
+          "language": "fr",
+          "edition": "2026-09-09",
+          "url": null,
+          "path": "documents/legislation/fr-ceseda-book-ii-regulatory-eu-family-selected-text-2026-10-31.md",
+          "representation_id": "fr:url:58fdd8402156404e0510#local:fr:b921d097a3e1",
+          "acceptance_status": [
+            "accepted_local_copy"
+          ]
+        },
         {
           "kind": "official_reference",
           "language": "fr",
@@ -37,12 +51,23 @@
           "acceptance_status": [
             "accepted_external_reference"
           ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "fr",
+          "edition": "2026-09-09",
+          "url": "https://legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070158/LEGISCTA000042800206",
+          "path": null,
+          "representation_id": "fr:url:58fdd8402156404e0510#url:fr:d007e703fb8e",
+          "acceptance_status": [
+            "accepted_local_copy"
+          ]
         }
       ],
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 23,
+          "line": 25,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -54,8 +79,8 @@
             "fr-01-ceseda-book-ii-eu-citizens-and-family-members-(including-articles-l.233-1-o",
             "[CESEDA Book II, regulatory part (Articles R. 210-1 to R. 286-2)](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070158/LEGISCTA000042800206)",
             "partial_functional_match",
-            "Official Légifrance section rechecked 2026-10-29; version header displayed 09/09/2026; entry/visa, residence, removal and territorial-adaptation provisions reviewed",
-            "Maintained scoped summary at [documents/legislation/fr-ceseda-book-ii-regulatory-eu-citizens-family.md](../documents/legislation/fr-ceseda-book-ii-regulatory-eu-citizens-family.md); official text remains authoritative and no verbatim code copy is retained"
+            "Official Légifrance section rechecked 2026-10-31; version header displayed 09/09/2026; selected entry, visa and residence-card provisions compared article by article",
+            "Retained text for R221-1, R221-2, R233-14 to R233-18 and R234-1 at [selected regulatory text](../documents/legislation/fr-ceseda-book-ii-regulatory-eu-family-selected-text-2026-10-31.md), plus the separate maintained summary. The official URL is provenance/version metadata; no complete Book II copy is claimed."
           ],
           "category": "catalogue"
         }
@@ -66,10 +91,17 @@
           "json_pointer": "/official_reference_reviews/fr-ceseda-book-ii-regulatory",
           "status_record_id": "fr-ceseda-book-ii-regulatory",
           "category": "acceptance"
+        },
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/records/fr-ceseda-book-ii-regulatory-selected-text",
+          "status_record_id": "fr-ceseda-book-ii-regulatory-selected-text",
+          "category": "acceptance"
         }
       ],
       "status_record_ids": [
-        "fr-ceseda-book-ii-regulatory"
+        "fr-ceseda-book-ii-regulatory",
+        "fr-ceseda-book-ii-regulatory-selected-text"
       ]
     },
     {
@@ -103,7 +135,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 25,
+          "line": 27,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -155,7 +187,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 26,
+          "line": 28,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -207,7 +239,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 27,
+          "line": 29,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -272,7 +304,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 28,
+          "line": 30,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -348,7 +380,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 29,
+          "line": 31,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -412,7 +444,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 30,
+          "line": 32,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -495,7 +527,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 60,
+          "line": 62,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -564,7 +596,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 61,
+          "line": 63,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -673,7 +705,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 59,
+          "line": 61,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -716,12 +748,15 @@
       "identity_resolution_status": "resolved",
       "identity_resolution_basis": "catalogued official URL",
       "status_categories": [
-        "accepted_external_reference"
+        "accepted_external_reference",
+        "accepted_local_copy"
       ],
       "representation_ids": [
         "fr:url:478a7064b9ff5f0f1b34#local:fr:626d23131dfc",
+        "fr:url:478a7064b9ff5f0f1b34#local:fr:784a50bd444a",
         "fr:url:478a7064b9ff5f0f1b34#url:fr:b5356f5dcc99",
-        "fr:url:478a7064b9ff5f0f1b34#url:fr:d6cb3198a2cf"
+        "fr:url:478a7064b9ff5f0f1b34#url:fr:d6cb3198a2cf",
+        "fr:url:478a7064b9ff5f0f1b34#url:fr:fa1965f3c441"
       ],
       "representations": [
         {
@@ -732,6 +767,17 @@
           "path": "documents/legislation/fr-ceseda-book-ii-legislative-eu-citizens-family.md",
           "representation_id": "fr:url:478a7064b9ff5f0f1b34#local:fr:626d23131dfc",
           "acceptance_status": []
+        },
+        {
+          "kind": "local_artifact",
+          "language": "fr",
+          "edition": "2026-08-24",
+          "url": null,
+          "path": "documents/legislation/fr-ceseda-book-ii-legislative-eu-family-selected-text-2026-10-31.md",
+          "representation_id": "fr:url:478a7064b9ff5f0f1b34#local:fr:784a50bd444a",
+          "acceptance_status": [
+            "accepted_local_copy"
+          ]
         },
         {
           "kind": "official_reference",
@@ -752,12 +798,23 @@
           "path": null,
           "representation_id": "fr:url:478a7064b9ff5f0f1b34#url:fr:d6cb3198a2cf",
           "acceptance_status": []
+        },
+        {
+          "kind": "official_reference",
+          "language": "fr",
+          "edition": "2026-08-24",
+          "url": "https://legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070158/LEGISCTA000042770930",
+          "path": null,
+          "representation_id": "fr:url:478a7064b9ff5f0f1b34#url:fr:fa1965f3c441",
+          "acceptance_status": [
+            "accepted_local_copy"
+          ]
         }
       ],
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 24,
+          "line": 26,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -769,8 +826,8 @@
             "fr-ceseda-book-ii-legislative",
             "[CESEDA Book II, legislative part (Articles L. 200-1 to L. 286-2)](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070158/LEGISCTA000042770930)",
             "partial_functional_match",
-            "Official Légifrance section rechecked 2026-10-29; version header displayed 24/08/2026; statutory definitions, residence conditions, the 2022 L. 233-1/L. 233-2 partial-annulment annotation, removal and territorial provisions reviewed",
-            "Maintained scoped summary at [documents/legislation/fr-ceseda-book-ii-legislative-eu-citizens-family.md](../documents/legislation/fr-ceseda-book-ii-legislative-eu-citizens-family.md); read with the relevant Conseil d'État decisions and regulatory part"
+            "Official Légifrance section rechecked 2026-10-31; version header displayed 24/08/2026; selected status, entry, stay, residence and permanent-residence article bodies compared",
+            "Retained text for L200-1 to L200-5, L221-1, L221-2, L231-1, L231-2, L232-1, L233-1 to L233-3, L233-5, L234-1 and L234-2 at [selected legislative text](../documents/legislation/fr-ceseda-book-ii-legislative-eu-family-selected-text-2026-10-31.md), plus the separate maintained summary and official partial-annulment annotation. The official URL is provenance/version metadata; no complete Book II copy is claimed."
           ],
           "category": "catalogue"
         }
@@ -785,9 +842,17 @@
           "path": "references/source-acceptance.json",
           "json_pointer": "/records/fr-ceseda-book-ii-legislative",
           "category": "acceptance"
+        },
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/records/fr-ceseda-book-ii-legislative-selected-text",
+          "status_record_id": "fr-ceseda-book-ii-legislative-selected-text",
+          "category": "acceptance"
         }
       ],
-      "status_record_ids": []
+      "status_record_ids": [
+        "fr-ceseda-book-ii-legislative-selected-text"
+      ]
     },
     {
       "id": "fr-ceseda-l233-1",
@@ -821,7 +886,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 38,
+          "line": 40,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -872,7 +937,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 39,
+          "line": 41,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -923,7 +988,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 40,
+          "line": 42,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -1000,7 +1065,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 43,
+          "line": 45,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -1088,7 +1153,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 44,
+          "line": 46,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -1152,7 +1217,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 63,
+          "line": 65,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -1235,7 +1300,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 62,
+          "line": 64,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -1553,11 +1618,38 @@
         "accepted_local_copy"
       ],
       "representation_ids": [
+        "fr:url:a0541676533aa7fc6488#local:fr:1af159dff2e6",
+        "fr:url:a0541676533aa7fc6488#local:fr:2cebf1f153de",
         "fr:url:a0541676533aa7fc6488#local:fr:b66007ad41fa",
+        "fr:url:a0541676533aa7fc6488#url:fr:27bbd46ed37e",
         "fr:url:a0541676533aa7fc6488#url:fr:4da560fa9384",
+        "fr:url:a0541676533aa7fc6488#url:fr:9e8b05c717cc",
+        "fr:url:a0541676533aa7fc6488#url:fr:ba3416ed02a3",
         "fr:url:a0541676533aa7fc6488#url:fr:bc73bb32b3fc"
       ],
       "representations": [
+        {
+          "kind": "local_artifact",
+          "language": "fr",
+          "edition": "2026-10-30",
+          "url": null,
+          "path": "documents/legislation/fr-code-travail-article-r5221-2-work-authorization-exemptions.md",
+          "representation_id": "fr:url:a0541676533aa7fc6488#local:fr:1af159dff2e6",
+          "acceptance_status": [
+            "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "local_artifact",
+          "language": "fr",
+          "edition": "2026-10-04",
+          "url": null,
+          "path": "documents/legislation/fr-r5221-17-and-r5221-19-decision-appeal.md",
+          "representation_id": "fr:url:a0541676533aa7fc6488#local:fr:2cebf1f153de",
+          "acceptance_status": [
+            "accepted_local_copy"
+          ]
+        },
         {
           "kind": "local_artifact",
           "language": "fr",
@@ -1572,12 +1664,45 @@
         {
           "kind": "official_reference",
           "language": "fr",
+          "edition": "2016-11-01",
+          "url": "https://legifrance.gouv.fr/codes/article_lc/LEGIARTI000033333034",
+          "path": null,
+          "representation_id": "fr:url:a0541676533aa7fc6488#url:fr:27bbd46ed37e",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "fr",
           "edition": "2026-10-28",
           "url": "https://legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072050/LEGISCTA000006189813",
           "path": null,
           "representation_id": "fr:url:a0541676533aa7fc6488#url:fr:4da560fa9384",
           "acceptance_status": [
             "accepted_local_copy"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "fr",
+          "edition": "2026-10-04",
+          "url": "https://legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072050/LEGISCTA000018495598/2026-10-04",
+          "path": null,
+          "representation_id": "fr:url:a0541676533aa7fc6488#url:fr:9e8b05c717cc",
+          "acceptance_status": [
+            "accepted_external_reference"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "fr",
+          "edition": "2021-04-01",
+          "url": "https://legifrance.gouv.fr/codes/article_lc/LEGIARTI000043320719",
+          "path": null,
+          "representation_id": "fr:url:a0541676533aa7fc6488#url:fr:ba3416ed02a3",
+          "acceptance_status": [
+            "accepted_external_reference"
           ]
         },
         {
@@ -1639,7 +1764,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 67,
+          "line": 69,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -1722,7 +1847,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 68,
+          "line": 70,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -1781,7 +1906,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 41,
+          "line": 43,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -1864,7 +1989,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 42,
+          "line": 44,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -1952,7 +2077,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 58,
+          "line": 60,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -2011,7 +2136,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 33,
+          "line": 35,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -2070,7 +2195,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 65,
+          "line": 67,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -2129,7 +2254,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 64,
+          "line": 66,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -2188,7 +2313,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 34,
+          "line": 36,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -2247,7 +2372,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 35,
+          "line": 37,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -2356,7 +2481,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 48,
+          "line": 50,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -2420,7 +2545,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 49,
+          "line": 51,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -2473,7 +2598,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 52,
+          "line": 54,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -2532,7 +2657,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 51,
+          "line": 53,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -2589,7 +2714,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 53,
+          "line": 55,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -2642,7 +2767,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 50,
+          "line": 52,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -2740,7 +2865,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 70,
+          "line": 72,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -2799,7 +2924,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 37,
+          "line": 39,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -2858,7 +2983,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 36,
+          "line": 38,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -2919,7 +3044,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 32,
+          "line": 34,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -2972,7 +3097,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 54,
+          "line": 56,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -3043,7 +3168,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 31,
+          "line": 33,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -3204,7 +3329,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 55,
+          "line": 57,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -3287,7 +3412,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 45,
+          "line": 47,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -3370,7 +3495,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 46,
+          "line": 48,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -3453,7 +3578,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 47,
+          "line": 49,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -3536,7 +3661,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 69,
+          "line": 71,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -3619,7 +3744,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 57,
+          "line": 59,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -3712,7 +3837,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 56,
+          "line": 58,
           "table_headers": [
             "Candidate ID",
             "Official source",
@@ -3834,7 +3959,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 66,
+          "line": 68,
           "table_headers": [
             "Candidate ID",
             "Official source",

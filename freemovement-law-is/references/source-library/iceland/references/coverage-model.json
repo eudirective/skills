@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0.0",
+  "jurisdiction": "IS",
+  "review_scope": "Owner-approved EEA topic-scope crosswalk v1.0.0 applied to Iceland national-source families N01-N06 and the EEA-EFTA layer E01, for pathways P01-P06.",
+  "as_of": "2026-10-31",
+  "scope_map": {
+    "path": "prd/eea-legalize-archive/eea-topic-scope-crosswalk-draft.md",
+    "version": "1.0.0",
+    "sha256": "8705c0b379adb10143c0a45349f0533c075b29420f4b2848422c3e18d4aa8544",
+    "approval": "Owner approved 2026-10-31. This map applies scope only; it does not accept legal texts or topics."
+  },
+  "status": "incomplete",
+  "counts": {
+    "pathways": 6,
+    "pathways_incomplete": 6,
+    "topics_accepted": 0,
+    "country_review_complete": false,
+    "accepted_local_source_texts": 3,
+    "accepted_current_full_statutory_texts": 0
+  },
+  "completion_rule": "Do not mark a pathway or country complete from source count or link presence. Each route requires the controlling current primary text, applicable EEA layer, implementing rule, actual service procedure, decision-specific remedies, rights/attribution, and provision-level review; resolve critical open questions and report limits.",
+  "pathways": [
+    {
+      "pathway_id": "P01",
+      "core_topic": "pre_lodgement_obstruction",
+      "label": "Access blocked before formal lodging",
+      "scope_families": ["N01", "N03", "N04", "N06", "E01"],
+      "status": "incomplete",
+      "source_ids": ["is-02", "is-03", "is-06", "is-12", "is-18", "is-20", "is-29", "is-36"],
+      "local_text_ids": [],
+      "evidence_state": "Official national law, forms, visa locator and appeal-board references exist as locators; no controlling lodging/receipt text is locally retained.",
+      "open_questions": [
+        "Distinguish an appointment, inquiry or service-provider obstacle from refusal to accept a formal application.",
+        "Identify the deciding authority, mission, filing channel, timestamp that starts any statutory period, and available urgent review.",
+        "Map whether the EEA family route requires a visa application at all for the particular family member and facts."
+      ]
+    },
+    {
+      "pathway_id": "P02",
+      "core_topic": "digital_only_access",
+      "label": "Digital-only or service-provider access requirement",
+      "scope_families": ["N03", "N04", "N06"],
+      "status": "incomplete",
+      "source_ids": ["is-12", "is-16", "is-18", "is-28", "is-36"],
+      "local_text_ids": [],
+      "evidence_state": "The official forms index and portal terms are locator/service evidence only; no complete legal or procedural text establishes a digital-only requirement or its exceptions.",
+      "open_questions": [
+        "Determine which residence, visa and information requests are digital, paper-based, in-person, or delegated to a provider.",
+        "Verify accessibility, exception, proxy, support and alternative-submission routes from current official instructions and controlling rules.",
+        "Keep portal terms, forms, and the legal rule governing a particular process distinct."
+      ]
+    },
+    {
+      "pathway_id": "P03",
+      "core_topic": "eu_family_documentary_proof",
+      "label": "EEA family proof and ordinary Schengen checklist",
+      "scope_families": ["N01", "N02", "N03", "N06", "E01"],
+      "status": "incomplete",
+      "source_ids": ["is-02", "is-05", "is-07", "is-08", "is-09", "is-17", "is-19", "is-31", "is-36"],
+      "local_text_ids": ["is-31"],
+      "evidence_state": "The family-card and evidence summaries are accepted project-authored summaries. Regulation 724/2026 is retained as full Icelandic legal text and adds a general document-authenticity/risk-assessment provision, but the current Regulation 540/2017 consolidation and Directive-to-Iceland provision crosswalk are absent.",
+      "open_questions": [
+        "Map direct and extended family categories, dependency/durable relationship, entry documents and residence-card evidence under the EEA route.",
+        "Verify certified copies, translation, authentication/apostille, supplementary-document limits and alternate proof against current official law and service instructions.",
+        "Keep qualifying EEA family facilitation separate from ordinary Schengen C-visa requirements and national spouse/family-reunification routes."
+      ]
+    },
+    {
+      "pathway_id": "P04",
+      "core_topic": "complaint_and_review_path",
+      "label": "Complaint, appeal or review-path information",
+      "scope_families": ["N01", "N02", "N04", "N05", "E01"],
+      "status": "incomplete",
+      "source_ids": ["is-02", "is-03", "is-20", "is-21", "is-23", "is-26", "is-27", "is-33", "is-34", "is-36"],
+      "local_text_ids": [],
+      "evidence_state": "The national statutes, Immigration Appeals Board guidance, selected decision publication route, courts portal, Ombudsman and Visa Act are locator references; no current full procedure/remedy text or decision-type remedy matrix is retained.",
+      "open_questions": [
+        "For each decision type, identify the deciding body, appeal body, standing, operative deadline, notice/reasons, exhaustion rule, suspensive effect, interim measures and judicial route.",
+        "Keep the Visa Act complaint route, immigration appeals, administrative procedure, judicial review, Ombudsman and data-protection complaints separate.",
+        "Verify court and administrative decision-search scope, query dates and publication/redaction limits before describing precedent coverage."
+      ]
+    },
+    {
+      "pathway_id": "P05",
+      "core_topic": "appointment_and_processing_time",
+      "label": "Appointment access and processing clock",
+      "scope_families": ["N01", "N03", "N04", "N06", "E01"],
+      "status": "incomplete",
+      "source_ids": ["is-12", "is-13", "is-14", "is-17", "is-31", "is-35"],
+      "local_text_ids": ["is-31"],
+      "evidence_state": "Current aggregate waiting-time guidance and an older historical processing page are distinct. Regulation 724/2026 includes priority-processing rules but does not establish the individual EEA-family statutory decision clock. Official registration guidance conflicts on three versus six months.",
+      "open_questions": [
+        "Resolve the registration-threshold conflict against current primary law before reporting a settled duration.",
+        "Map appointment, submission, completeness, formal receipt, clock start, pauses/extensions, decision deadline, case status and escalation separately.",
+        "Report aggregate averages only with the authority's date, case category and denominator; do not present them as an individual estimate."
+      ]
+    },
+    {
+      "pathway_id": "P06",
+      "core_topic": "data_access_minimisation_and_preservation",
+      "label": "Personal-data access, minimisation and separate preservation request",
+      "scope_families": ["N04", "N05", "N06", "E01"],
+      "status": "incomplete",
+      "source_ids": ["is-03", "is-22", "is-24", "is-25", "is-27"],
+      "local_text_ids": [],
+      "evidence_state": "The Information Act, Data Protection Act and authority/portal references are accepted as external references only. No full national data-protection text, EEA GDPR/JCD text or controller-specific record-access procedure is locally retained.",
+      "open_questions": [
+        "Distinguish administrative case-file access from GDPR access, rectification, restriction, retention and supervisory complaint rights.",
+        "Identify the controller, record system, processing purpose, applicable GDPR/national provisions and any law-enforcement exception for the actual request.",
+        "Map a separate evidence-preservation request to the authority and procedure that control the relevant record."
+      ]
+    }
+  ],
+  "cross_cutting_limits": [
+    "All 36 external references retain scoped locator status; a URL is not a retained legal source text.",
+    "The three retained legal texts are complete amending instruments, not a current consolidated Foreign Nationals Regulation No. 540/2017.",
+    "The 2026 amendments concern Iceland's foreign-national rules; their application to an EEA/EFTA beneficiary must be checked provision by provision and against the EEA layer.",
+    "Icelandic EEA/EFTA, Swiss, Nordic, Icelandic-return and ordinary national family routes are distinct."
+  ]
+}

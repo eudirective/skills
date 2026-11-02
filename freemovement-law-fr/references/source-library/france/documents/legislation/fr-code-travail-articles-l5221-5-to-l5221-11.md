@@ -4,7 +4,7 @@
 
 **Code identifier:** `LEGITEXT000006072050`  
 **Scope retained:** Current text of Articles L5221-5 to L5221-9 and L5221-11. Article L5221-10 is marked repealed and not transcribed.  
-**Official current version observed:** Légifrance displayed “en vigueur au 28/10/2026”; checked 2026-10-30.
+**Official current version observed:** Légifrance displayed “en vigueur au 28/10/2026”; checked 2026-10-31.
 
 **Official locator (provenance/navigation only):** https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072050/LEGISCTA000006189813/
 
@@ -15,6 +15,8 @@
 **Limits:** This is a bounded section copy, not the complete Code du travail. It does not decide whether any individual is an “étranger” for a particular rule, establish an EU-law work-authorisation requirement, or establish immigration status.
 
 The locator above is not the source document. The retained source here is the French text below.
+
+**Article version metadata observed on Légifrance (checked 2026-10-31):** L5221-5 — in force since 2024-01-28; modified by Law n° 2024-42, Article 27 (V); applicable through 2026-12-31. L5221-6 — in force since 2021-05-01; modified by Ordinance n° 2020-1733, Article 16. L5221-7 — in force since 2024-01-28; modified by Law n° 2024-42, Article 34. L5221-8 — in force since 2008-05-01; modified by Law n° 2008-126, Article 16. L5221-9 — in force since 2021-05-01; modified by Ordinance n° 2020-1733, Article 16. L5221-10 — repealed effective 2008-12-29 by Law n° 2008-1425, Article 155. L5221-11 — in force since 2008-05-01. These are official article-history labels; Article L5221-10's historical wording remains excluded.
 
 ## Official text
 ##### Article L5221-5
@@ -61,6 +63,4 @@ L'embauche d'un salarié étranger titulaire de la carte de séjour temporaire p
 ##### Article L5221-11
 
 Un décret en Conseil d'Etat détermine les modalités d'application des articles L. 5221-3 et L. 5221-5 à L. 5221-8.
-
-#### Chapitre II : Interdictions.
 

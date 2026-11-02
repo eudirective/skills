@@ -1,20 +1,20 @@
 {
   "schema_version": "1.0.0",
   "jurisdiction": "NO",
-  "review_date": "2026-10-25",
+  "review_date": "2026-10-31",
   "candidate_record_count": 54,
   "accepted_external_reference_count": 52,
   "pending_external_reference_count": 1,
   "not_relied_upon_reference_count": 1,
-  "accepted_local_copy_count": 0,
+  "accepted_local_copy_count": 1,
   "accepted_topic_count": 0,
   "country_review_complete": false,
   "policy": "Accept official references only within the named publisher, record, language, version and scope. Link acceptance, local-copy acceptance, topic coverage and country completion are separate. Hash/replay success alone does not accept source text. Norway's EEA/EFTA status is distinct from EU membership.",
   "publisher_assessment": {
     "decision": "Lovdata is accepted for the identified Norwegian legal records and retrieval routes; other named publishers are accepted only for their individual official records.",
-    "basis": "Publisher identity is tied to the official domains and identified records. Lovdata terms checked 2026-10-25: single formal laws and central regulations can be copied with attribution under NLOD 2.0; mass downloads and systematic extraction are restricted. This promotion publishes no copied statutory or website text.",
-    "limits": "The publicData package list last reported modification 2026-10-17. Dynamic service pages can change. Future-commencement statutes remain non-operative until commencement is confirmed. No topic or country completeness is claimed.",
-    "local_copy_and_reuse": "Zero local copies accepted. Old converted candidates remain local-only review evidence. No blanket right to reproduce publisher pages or bulk package contents is inferred."
+    "basis": "Publisher identity is tied to official domains and identified records. On 2026-10-31, Lovdata terms (last changed 2025-10-31) were checked: an individual current formal law may be copied, used and shared with Lovdata attribution under NLOD 2.0. The no-54 text uses that single-law route; no mass download or systematic website extraction is accepted.",
+    "limits": "The publicData package list last reported modification 2026-10-17. Dynamic service pages can change. Future-commencement statutes remain non-operative until commencement is verified. The no-54 page represents this individual law only. No topic or country completeness is claimed.",
+    "local_copy_and_reuse": "One current formal law (no-54) is retained from its official record page with the NLOD 2.0 attribution, licence URL and source URL. This is not a blanket right to reproduce Lovdata pages or bulk/systematic extraction. Other prior converted candidates remain local-only review evidence."
   },
   "accepted_references": [
     {
@@ -1548,31 +1548,104 @@
       "source_id": "no-54",
       "title": "Current EØS Worker Mobility Act, LOV-2012-12-14-81",
       "url": "https://lovdata.no/lov/2012-12-14-81",
-      "publisher": "lovdata.no",
+      "publisher": "Stiftelsen Lovdata",
       "language": "nn",
-      "checked_on": "2026-10-19",
-      "version_or_scope": "Ikrafttreding av siste endring: 2025-04-10; Sist endra ved: lov/2025-04-10-8; package lastModified 2026-10-17T01:31:00Z.",
+      "checked_on": "2026-10-31",
+      "version_or_scope": "Official current-law page identifies LOV-2012-12-14-81 and last change LOV-2025-04-10-8; the amendment record reports effect from 2025-04-10. Page records a 2022-05-05 correction. Captured 2026-10-31.",
       "decision": "accepted_with_narrow_external_scope",
-      "acceptance_scope": "Official external reference only, within the source identity and limits recorded in the linked note; no source text or website body copied.",
+      "acceptance_scope": "Official current-law record and one retained Nynorsk legal-text representation under the single-current-formal-law route; the URL is locator/provenance metadata, and the local text is the source representation. No topic or country-completion claim.",
       "limitations": [
-        "Current EØS worker-mobility implementing statute. The 1992 predecessor is repealed; preserve this record’s Nynorsk text and EEA adaptations.",
-        "A link does not establish topic coverage, current legal effect, or country completion."
+        "The retained copy is the exact current-law page content captured 2026-10-31; recheck Lovdata before time-sensitive use.",
+        "This item is the individual LOV-2012-12-14-81 record. It does not establish that every separate EEA instrument referenced by section 1 is reproduced in this record.",
+        "Legalize-no was a candidate discovery method only. Its text has 17 empty article bodies and additional section-boundary, list-layout, amendment-note and footnote differences; it was not copied into the library.",
+        "No topic coverage or Norway pack completion is claimed."
       ],
       "evidence": {
-        "source_record_note": "Official candidate/publisher record checked 2026-10-19; acceptance reviewed 2026-10-25.",
-        "retrieval_status": "converted_review_candidate"
+        "source_record_note": "Official Lovdata current-law page captured and reviewed 2026-10-31; source page and exact conversion artifacts are preserved in the Monitor local-only archive.",
+        "retrieval_status": "official_page_captured_text_retained_and_converted",
+        "official_page_archive_path": "captures/lovdata-official-law-page/norway/2026-10-31/LOV-2012-12-14-81.html",
+        "official_page_sha256": "51530d4b9f44df1350f9a057be32374fac0db2441cc2504e7494c0ccb3d78d6b",
+        "api_member_corroboration_archive_path": "captures/lovdata-publicdata-current-laws-nlod-2.0/norway/norway-lovdata-current-laws-2026-10-31/nl/nl-20121214-081.xml",
+        "api_member_sha256": "25d587896a259b09ada9b34330ca843e8dc6d07cdaf6df521b59bed1cbbcbe7b",
+        "conversion_report": "captures/lovdata-official-page-conversion/norway/2026-10-31/retrieval-manifest.json",
+        "rights_evidence": [
+          "https://lovdata.no/artikkel/brukervilkar_for_lovdatas_tjenester/1319",
+          "https://lovdata.no/artikkel/lovdata_tilrettelegger_for_bruk_tilpasset_var_ki-hverdag_gjor_api_av_oppdatert_regelverk_gratis_tilgjengelig_for_alle/5277",
+          "https://data.norge.no/nlod/en/2.0"
+        ]
       },
-      "local_copy_accepted": false,
+      "local_copy_accepted": true,
       "source_document": {
         "path": "documents/references/no-54-current-e-s-worker-mobility-act-lov-2012-12-14-81.md",
-        "sha256": "9c8ea9c2cc295f40228d08510ef3e8040fdc263d3ca86831a25785efefbed0ad",
-        "bytes": 1619,
+        "sha256": "412a68485ed00f083c27cd17b15a3007fa11664b5fb2f8b981d7076d1254238f",
+        "bytes": 3027,
         "kind": "independent_source_reference_note",
         "reproduces_source_text": false
       },
       "candidate_text_archive": {
         "path": "candidates/norway_candidate_promotion_20261025/Norway/no-54.md",
         "sha256": "4fd4c0fa60eac9d3627f49f5e1238d19054c6711cf9384f948cb70318732bc4c"
+      },
+      "edition": "2025-04-10",
+      "local_copy_accepted_on": "2026-10-31",
+      "local_copy_status": "accepted",
+      "local_copy_path": "documents/legislation/no-54-e-s-worker-mobility-act-lov-2012-12-14-81.md",
+      "local_copy_sha256": "beb10b9e5347908daf32f6981b0a5d39bd71b283c0ebc1acb84241fc998754c6",
+      "local_copy_bytes": 78315,
+      "local_copy": {
+        "path": "documents/legislation/no-54-e-s-worker-mobility-act-lov-2012-12-14-81.md",
+        "sha256": "beb10b9e5347908daf32f6981b0a5d39bd71b283c0ebc1acb84241fc998754c6",
+        "bytes": 78315,
+        "kind": "official_current_law_text_copy",
+        "publisher": "Stiftelsen Lovdata",
+        "language": "nn",
+        "official_identifier": "LOV-2012-12-14-81",
+        "official_url": "https://lovdata.no/lov/2012-12-14-81",
+        "official_page_capture": "captures/lovdata-official-law-page/norway/2026-10-31/LOV-2012-12-14-81.html",
+        "official_page_sha256": "51530d4b9f44df1350f9a057be32374fac0db2441cc2504e7494c0ccb3d78d6b",
+        "version_or_scope": "Current law page retrieved 2026-10-31; last changed by LOV-2025-04-10-8, in force 2025-04-10; correction 2022-05-05.",
+        "license": "NLOD 2.0",
+        "license_url": "https://data.norge.no/nlod/en/2.0",
+        "attribution": "Contains data under the Norwegian licence for Open Government data (NLOD) distributed by Lovdata",
+        "rights_basis": "Lovdata terms section 2.3 permit an individual current formal law to be copied, used and shared with attribution under NLOD 2.0; mass downloads and systematic extraction from the web service remain prohibited.",
+        "conversion_rule": "references/conversion-rules/no-lovdata-official-page-to-markdown-v1.0.0.md",
+        "conversion_rule_sha256": "d8958de45fce1b8c5bc55b485c470cbf91b46d7bffeeb9974c4cf60f0dba78cb",
+        "converter": "references/conversion-rules/convert_lovdata_official_page_to_markdown.py",
+        "converter_sha256": "3db2703aab1c295cdbe3f5714ceab1c217fd5d41f656c3d7af7e6477019cb1ca",
+        "shared_renderer": "references/conversion-rules/convert_lovdata_html_to_markdown.py",
+        "shared_renderer_sha256": "02089c623200666729969edf08ce09e12289c0050d747de337e2754c32bd7b41",
+        "derived_input_archive_path": "captures/lovdata-official-page-conversion/norway/2026-10-31/no54-normalized-document-body.html",
+        "derived_input_sha256": "832bbe848fb63f0429bccd22f2c30792cb6280f8b1783a8659c5e7ff9c37edaa",
+        "converter_output_sha256_before_acceptance_stamp": "6c3ad9045cfba8e273a909b12f14f0e13ccf45f50cd17468fc579276a5753951",
+        "acceptance_status_stamp": "Only the frontmatter acceptance_status was changed after conversion review; legal body bytes and source structure were not changed.",
+        "verification": {
+          "replays": 2,
+          "replay_outputs_identical": true,
+          "article_count": 46,
+          "ordered_ids_preserved": true,
+          "source_page_visible_body_equal": true,
+          "visible_document_body_equal": true,
+          "article_body_mismatch_count": 0,
+          "unmatched_footnote_reference_count": 0,
+          "missing_or_unexpected_or_duplicate_ids": 0,
+          "official_page_and_api_member_article_count": 46,
+          "api_member_page_body_matches": 40,
+          "api_member_list_label_omissions": [
+            "Article 3",
+            "Article 13",
+            "Article 15",
+            "Article 19",
+            "Article 22",
+            "Article 30"
+          ],
+          "legalize_comparison": {
+            "ordered_heading_alignment": "46/46",
+            "body_exact_after_markup_whitespace_normalization": 24,
+            "empty_candidate_article_bodies": 17,
+            "other_body_residuals": 5,
+            "manual_review_required": 22
+          }
+        }
       }
     }
   ],
@@ -1657,6 +1730,28 @@
         "no-52"
       ],
       "reason": "Sixteen outputs replayed deterministically and fifteen did not. Neither result proves complete legal extraction or reuse permission. Five newer variants are preserved but not promoted."
+    },
+    {
+      "source_id": "no-54",
+      "title": "Current EØS Worker Mobility Act, LOV-2012-12-14-81",
+      "decision": "accepted_local_copy",
+      "status": "accepted_local_copy",
+      "review_date": "2026-10-31",
+      "publisher": "Stiftelsen Lovdata",
+      "official_url": "https://lovdata.no/lov/2012-12-14-81",
+      "language": "nn",
+      "edition": "2025-04-10",
+      "local_copy_path": "documents/legislation/no-54-e-s-worker-mobility-act-lov-2012-12-14-81.md",
+      "local_copy_sha256": "beb10b9e5347908daf32f6981b0a5d39bd71b283c0ebc1acb84241fc998754c6",
+      "local_copy_bytes": 78315,
+      "source_page_archive_path": "captures/lovdata-official-law-page/norway/2026-10-31/LOV-2012-12-14-81.html",
+      "source_page_sha256": "51530d4b9f44df1350f9a057be32374fac0db2441cc2504e7494c0ccb3d78d6b",
+      "conversion_rule": "references/conversion-rules/no-lovdata-official-page-to-markdown-v1.0.0.md",
+      "conversion_rule_sha256": "d8958de45fce1b8c5bc55b485c470cbf91b46d7bffeeb9974c4cf60f0dba78cb",
+      "license": "NLOD 2.0",
+      "reason": "One current formal law was copied from the official page under Lovdata terms section 2.3 and NLOD 2.0. The retained converted body passed two identical replays, exact visible-body checks, ordered identifier checks, 46 article checks and footnote pairing checks. The candidate archive copy was not used.",
+      "accepted_topic_count": 0,
+      "country_review_complete": false
     }
   ],
   "research_archive": {
@@ -1675,13 +1770,24 @@
       "bytes": 47906
     },
     "candidate_records_preserved": true,
-    "raw_capture_archive_status": "Raw response files remain in local temporary storage and were not migrated to the Monitor archive in this promotion. They were not accepted or published as source texts; archive the needed raw bytes before any later offline text-copy review."
+    "raw_capture_archive_status": "The no-54 official page, its normalized conversion input and output, the official API-member corroboration, and candidate comparison reports are retained in the Monitor local-only archive; other archive candidates still require capture review as applicable.",
+    "capture_records": [
+      "captures/lovdata-official-law-page/norway/2026-10-31/LOV-2012-12-14-81.html",
+      "captures/lovdata-official-page-conversion/norway/2026-10-31/no54-normalized-document-body.html",
+      "captures/lovdata-official-page-conversion/norway/2026-10-31/no54-converted-review-copy.md",
+      "captures/lovdata-official-page-conversion/norway/2026-10-31/no54-accepted-copy.md",
+      "captures/lovdata-publicdata-current-laws-nlod-2.0/norway/norway-lovdata-current-laws-2026-10-31/nl/nl-20121214-081.xml",
+      "captures/lovdata-official-page-conversion/norway/2026-10-31/no54-legalize-body-comparison.json",
+      "captures/lovdata-official-page-conversion/norway/2026-10-31/no54-legalize-section-comparison.json",
+      "captures/lovdata-official-page-conversion/norway/2026-10-31/no54-official-page-vs-api-member-comparison.json",
+      "captures/lovdata-official-page-conversion/norway/2026-10-31/retrieval-manifest.json"
+    ]
   },
   "promotion_review": {
     "final_document_count": 54,
     "accepted_reference_notes": 52,
     "disposition_notes": 2,
-    "accepted_local_copies": 0,
+    "accepted_local_copies": 1,
     "accepted_topics": 0,
     "coverage_register_status": "not created",
     "dependency_register_status": "not created",
@@ -1689,12 +1795,12 @@
     "monitor_capability": "No Norway-specific pack action is registered; all six national completion gates are unsupported.",
     "remaining_work": [
       "Verify or retire the exact UDI checklist PDF lead.",
-      "Archive raw captures through Monitor before later offline semantic review.",
+      "Archive other required raw captures through Monitor before later offline semantic review.",
       "Build evidence-backed coverage, dependency, continuing-discovery and operational registers."
     ]
   },
   "legalize_crosswalk": {
-    "reviewed_on": "2026-10-29",
+    "reviewed_on": "2026-10-31",
     "repository": "https://github.com/legalize-dev/legalize-no",
     "revision": "729ce30333de9d6f9f1e5faf537999cf42bc2a2f",
     "confirmed_candidate_files": [
@@ -1713,8 +1819,10 @@
       {
         "source_id": "no-54",
         "path": "no/LOV-2012-12-14-81.md",
-        "status": "identity confirmed; candidate snapshot only",
-        "official_source": "https://lovdata.no/dokument/NL/lov/2012-12-14-81"
+        "status": "identity confirmed; Legalize candidate not accepted; separately retained current text from Lovdata official page",
+        "official_source": "https://lovdata.no/lov/2012-12-14-81",
+        "source_text_path": "documents/legislation/no-54-e-s-worker-mobility-act-lov-2012-12-14-81.md",
+        "source_text_sha256": "beb10b9e5347908daf32f6981b0a5d39bd71b283c0ebc1acb84241fc998754c6"
       }
     ],
     "excluded_source_classes": [
@@ -1729,12 +1837,13 @@
         "reason": "Not included in Legalize-no's described current-laws dataset; existing official retrieval gap remains open."
       }
     ],
-    "rights_and_attribution": "Individual law reuse requires attribution to Stiftelsen Lovdata under NLOD 2.0. Do not infer bulk/systematic extraction rights. Attribute Legalize-no and the pinned revision when it supplies a candidate.",
+    "rights_and_attribution": "Legalize-no is recorded as the discovery/candidate route only; no Legalize body was copied. The retained no-54 legal text is sourced from Lovdata’s official current-law page under the individual-law exception in terms section 2.3 and NLOD 2.0, with Lovdata attribution.",
     "conversion_rules": [
-      "Preserve Bokmål wording, hierarchy, formal legal identifiers, footnotes and source annotations.",
-      "Pin repository revision and source record; compare full body and anchors to the exact official Lovdata version.",
-      "Keep adoption, publication, amendment, effective and repository dates distinct; do not rely on last_updated.",
-      "Review image and attachment omissions; do not accept a candidate as current law based on its existence, hash, or status field."
+      "Retain only the page-derived Lovdata text; the Legalize file is not a source representation.",
+      "Compare stable identity, current publisher status and complete visible text; do not infer content from the Legalize metadata or hash.",
+      "Preserve Nynorsk wording, section and article hierarchy, list enumerators, footnotes and source annotations.",
+      "Keep enactment, publication, last-amendment, effect, correction and retrieval dates distinct.",
+      "Review separate EEA instruments and national dependencies; this text does not establish topic coverage."
     ],
     "accepted_local_source_copies": 0
   },
@@ -2113,7 +2222,8 @@
     "no-54": {
       "source_identity_id": "no:url:66a571558ab053f158bd",
       "representation_ids": [
-        "no:url:66a571558ab053f158bd#url:nn:7b64875d5e1f"
+        "no:url:66a571558ab053f158bd#local:nn:3d27a1bac61e",
+        "no:url:66a571558ab053f158bd#url:nn:a789f8499445"
       ],
       "identity_resolution_status": "resolved"
     }

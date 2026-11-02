@@ -614,15 +614,39 @@ def main():
     assert any(x['code']=='applicant_destination_topology_mismatch' and x['role']=='destination_state' and x['bound_value']=='SE' and x['conflicting_value']=='DE' for x in bad_destination_topology['conflicts'])
     results.append('c5a_applicant_destination_mismatch_blocks')
 
-    # Visa/Schengen candidates are generated without collapsing their interaction with free-movement law.
+    # An EU-family entry-visa label alone does not classify the procedure under the
+    # Visa Code or Schengen rules. Preserve the fail-closed result and its reason.
     frontier_regimes=ra.build_candidates(c5_frontier_case,topology,c5_frontier_elements)
     cand={x['element_id']:x for x in frontier_regimes['candidates']}
     assert cand['legal_regime.directive_2004_38']['disposition']=='candidate'
-    assert cand['legal_regime.visa_code']['disposition']=='candidate'
-    assert cand['legal_regime.schengen']['disposition']=='candidate'
-    assert frontier_regimes['interactions'][0]['status']=='review_required'
+    assert cand['legal_regime.visa_code']['disposition']=='unknown'
+    assert cand['legal_regime.schengen']['disposition']=='unknown'
+    assert 'eu_family_visa_classification_unresolved' in cand['legal_regime.visa_code']['rationale_codes']
+    assert 'eu_family_visa_classification_unresolved' in cand['legal_regime.schengen']['rationale_codes']
+    assert frontier_regimes['interactions'][0]['status']=='blocked'
     assert frontier_regimes['final_applicability']=='not_determined'
-    results.append('c5a_visa_schengen_and_directive_candidates_preserved')
+    results.append('c5a_entry_visa_classification_fails_closed')
+
+    # Explicit short-stay procedure classification permits Visa Code and Schengen
+    # candidates, while retaining the required review of their interaction.
+    short_stay_case=cv.load_json(FX/'c5a'/'case-schengen-short-stay.json')
+    short_stay_topology=te.build_topology(short_stay_case,c5_frontier_elements)
+    short_stay_regimes=ra.build_candidates(short_stay_case,short_stay_topology,c5_frontier_elements)
+    short_stay={x['element_id']:x for x in short_stay_regimes['candidates']}
+    assert short_stay['legal_regime.visa_code']['disposition']=='candidate'
+    assert short_stay['legal_regime.schengen']['disposition']=='candidate'
+    assert short_stay_regimes['interactions'][0]['status']=='review_required'
+    results.append('c5a_explicit_schengen_short_stay_classification')
+
+    # National long-stay labels are engine scope markers only; they do not state
+    # a substantive legal conclusion about an individual application.
+    long_stay_case=cv.load_json(FX/'c5a'/'case-national-long-stay.json')
+    long_stay_topology=te.build_topology(long_stay_case,c5_frontier_elements)
+    long_stay_regimes=ra.build_candidates(long_stay_case,long_stay_topology,c5_frontier_elements)
+    long_stay={x['element_id']:x for x in long_stay_regimes['candidates']}
+    assert long_stay['legal_regime.visa_code']['disposition']=='not_indicated'
+    assert long_stay['legal_regime.schengen']['disposition']=='not_indicated'
+    results.append('c5a_national_long_stay_framework_scope_markers')
 
     # Returnee context remains a downstream legal-review candidate and exposes the primary-source gap.
     c5_returnee_case=cv.load_json(FX/'c5a'/'case-returnee.json')
@@ -708,10 +732,11 @@ def main():
     c5b_topology=te.build_topology(c5_frontier_case,c5b_elements)
     c5b_regimes=ra.build_candidates(c5_frontier_case,c5b_topology,c5b_elements)
 
-    # Coexisting Directive/Visa Code candidates stay an unresolved lex-specialis question; binding-force metadata is not an automatic winner rule.
+    # The bound C5a output has no simultaneous Directive/Visa Code candidates;
+    # C5b therefore records this hierarchy comparison as not indicated.
     c5b_base=hp.build(c5_frontier_case,c5b_regimes,c5b_elements)
     lex=next(x for x in c5b_base['hierarchy_relationships'] if x['relationship_id']=='directive_visa_code_lex_specialis')
-    assert lex['status']=='unresolved' and lex['review_required'] is True
+    assert lex['status']=='not_indicated' and lex['review_required'] is False
     cls={x['source_ref']:x for x in c5b_base['source_classifications']}
     assert cls['eu:32004l0038']['binding_force']=='binding_secondary_law'
     assert cls['eu:32009r0810']['binding_force']=='binding_secondary_law'
@@ -1056,7 +1081,7 @@ def main():
     results.append('c5d_unknown_authority_not_defect')
 
     # Unresolved Directive/Visa Code lex-specialis coexistence is not itself a contradiction/non-compliance attack angle.
-    assert any(x['relationship_id']=='directive_visa_code_lex_specialis' and x['status']=='unresolved' for x in c5d_c5b['hierarchy_relationships'])
+    assert any(x['relationship_id']=='directive_visa_code_lex_specialis' and x['status']=='not_indicated' for x in c5d_c5b['hierarchy_relationships'])
     assert not any(x['issue_type'] in {'lex_specialis','regime_contradiction'} for x in c5d_out['attack_angles'])
     results.append('c5d_unresolved_lex_specialis_not_attack')
 

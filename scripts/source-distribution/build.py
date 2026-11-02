@@ -848,6 +848,56 @@ def classify_inventory(root: Path, registry: dict[str, Any], accepted: set[str],
     return rows
 
 
+def build_marketplace(existing: dict[str, Any], registry: dict[str, Any],
+                     countries: list[dict[str, Any]]) -> dict[str, Any]:
+    """Replace generated marketplace registrations and preserve unrelated entries."""
+    marketplace = dict(existing)
+    generated_names = {
+        registry["core_plugin"],
+        *(country["plugin_name"] for country in countries),
+        *(f"freemovement-law-{country['iso_country_code'].lower()}" for country in countries),
+    }
+    generated_paths = {f"./{country['plugin_directory']}" for country in countries}
+    country_name = re.compile(r"^freemovement-law-[a-z]{2}$")
+    country_path = re.compile(r"^\./freemovement-law-[a-z]{2}$")
+
+    def entry_source_path(entry: dict[str, Any]) -> str | None:
+        source = entry.get("source")
+        if isinstance(source, dict):
+            return source.get("path")
+        return source if isinstance(source, str) else None
+
+    old_entries = marketplace.get("plugins", [])
+    if not isinstance(old_entries, list):
+        raise ValueError("Marketplace plugins must be a list")
+    plugins = []
+    for entry in old_entries:
+        if not isinstance(entry, dict):
+            raise ValueError("Marketplace plugin entries must be objects")
+        name = entry.get("name")
+        source_path = entry_source_path(entry)
+        if (name in generated_names or source_path in generated_paths
+                or isinstance(name, str) and country_name.fullmatch(name)
+                or isinstance(source_path, str) and country_path.fullmatch(source_path)):
+            continue
+        plugins.append(entry)
+
+    plugins.append({
+        "name": registry["core_plugin"],
+        "source": {"source": "local", "path": f"./{registry['core_plugin']}"},
+        "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
+        "category": "Productivity",
+    })
+    plugins.extend({
+        "name": country["plugin_name"],
+        "source": {"source": "local", "path": f"./{country['plugin_directory']}"},
+        "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
+        "category": "Productivity",
+    } for country in countries)
+    marketplace["plugins"] = plugins
+    return marketplace
+
+
 def build(
     source_root: Path,
     module_notes_root: Path,
@@ -1783,35 +1833,7 @@ def module_notes_root(country: str, module_id: str | None = None) -> Path:
     write_json(output_root / "migration-map.json", sorted(migration_rows, key=lambda x: (x["source_path"], x["target_path"])), {})
 
     marketplace_path = plugin_root.parent / ".agents/plugins/marketplace.json"
-    marketplace = load_json(marketplace_path)
-    generated_names = {
-        registry["core_plugin"],
-        *(country["plugin_name"] for country in countries),
-        *(f"freemovement-law-{country['iso_country_code'].lower()}" for country in countries),
-    }
-    generated_paths = {f"./{country['plugin_directory']}" for country in countries}
-    def entry_source_path(entry: dict[str, Any]) -> str | None:
-        source = entry.get("source")
-        if isinstance(source, dict):
-            return source.get("path")
-        return source if isinstance(source, str) else None
-    plugins = [
-        entry for entry in marketplace.get("plugins", [])
-        if entry.get("name") not in generated_names and entry_source_path(entry) not in generated_paths
-    ]
-    plugins.append({
-        "name": registry["core_plugin"],
-        "source": {"source": "local", "path": f"./{registry['core_plugin']}"},
-        "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
-        "category": "Productivity",
-    })
-    plugins.extend({
-        "name": country["plugin_name"],
-        "source": {"source": "local", "path": f"./{country['plugin_directory']}"},
-        "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
-        "category": "Productivity",
-    } for country in countries)
-    marketplace["plugins"] = plugins
+    marketplace = build_marketplace(load_json(marketplace_path), registry, countries)
     write_json(output_root / "marketplace.json", marketplace, {})
 
     old_tree = core / "skills/eudirective-source-library"

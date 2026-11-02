@@ -307,9 +307,9 @@
       "api_url": "https://opendata.finlex.fi/finlex/avoindata/v1/akn/fi/act/statute-consolidated/2019/616/fin%40",
       "retrieval_method": "finlex_akn_api",
       "retrieval_shape": "Finlex REST API Akoma Ntoso consolidated-statute XML",
-      "retrieved_at": "2026-10-19T03:36:55+00:00",
+      "retrieved_at": "2026-11-01T01:00:58+02:00",
       "output_path": "temp/finland/derived/fi-police-personal-data-act-review-candidate.md",
-      "verification_note": "Official Finlex open-data API returned an identity-matching Akoma Ntoso consolidation dated 9 October 2026. Use that government-published edition with its cutoff; the candidate remains subject to source-identity and proportionate text review. Do not require a full amendment-chain comparison.",
+      "verification_note": "Finlex API reports the 2026-10-09 consolidation. All 61 section bodies match the pinned Legalize candidate after formatting-only normalization; this checks the dated publisher edition only. Act 875/2026 was published after the consolidation and its decree-set commencement was not verified.",
       "expected_identity": {
         "number": "616",
         "doc_number": "616/2019",
@@ -322,14 +322,30 @@
         "min_chapters": 1,
         "min_sections": 10,
         "min_body_chars": 5000,
-        "version_caution": "Finlex API reports a consolidation date of 9 October 2026. Use the official Finlex consolidation dated 9 October 2026 within that cutoff and check for a later Finlex version when updating; no separate amendment-by-amendment comparison is required."
+        "version_caution": "The dated Finlex consolidation is 2026-10-09. A section-by-section comparison with the pinned Legalize candidate matched all 61 of 61 section bodies after formatting-only normalization; this verifies agreement with that dated Finlex edition, not later law. Act 875/2026 was published after the consolidation and sets the commencement of repeals to be fixed by Government Decree; that decree was not checked, so its commencement and effect remain unresolved."
       },
       "raw_xml_path": "temp/finland/raw/fi-police-personal-data-act-a052f857aee861690881e1f6aa7f548c15871699559e63263bf34dfbf1ed7b9f.xml",
-      "last_checked_at": "2026-10-19T03:36:55+00:00",
+      "last_checked_at": "2026-11-01T01:00:58+02:00",
       "retrieved_bytes": 182875,
       "response_content_type": "application/xml;charset=UTF-8",
       "response_url": "https://opendata.finlex.fi/finlex/avoindata/v1/akn/fi/act/statute-consolidated/2019/616/fin%40",
       "raw_xml_sha256": "a052f857aee861690881e1f6aa7f548c15871699559e63263bf34dfbf1ed7b9f",
+      "monitor_archive_path": "candidates/public-data/finland/candidates/fi-police-personal-data-act-616-2019-current.md",
+      "accepted_document_path": "source-library/finland/documents/legislation/fi-police-personal-data-act-616-2019-current-fi.md",
+      "accepted_document_sha256": "36864ea752df56cfbed2c4561694fa610171b5e69a4049632b1ee9892bd99e2b",
+      "local_copy_status": "Accepted dated Finlex text; source identity and XML conversion replay verified; all 61 section bodies compared with the pinned Legalize candidate and matched; Act 875/2026 decree-set commencement remains unverified.",
+      "text_comparison": {
+        "comparator": "legalize-dev/legalize-fi fi/2019-616.md at 32b646b1b1741d2f58b87f2e83d2968e03e98c75",
+        "comparator_sha256": "12ce1885e8d4c3eaa4d175e282b88d7479df2004529afc3404b987c2d6b0a9fb",
+        "compared_at": "2026-11-01",
+        "method": "Match statutory section identifiers, then compare complete section bodies after formatting-only normalization: Markdown links reduced to labels, emphasis/code markers removed, and whitespace collapsed.",
+        "sections_in_official_text": 61,
+        "sections_in_legalize_candidate": 61,
+        "matched_sections": 61,
+        "mismatched_sections": [],
+        "missing_from_candidate": [],
+        "extra_in_candidate": []
+      },
       "current_eli": "http://data.finlex.fi/eli/sd/2019/616/ajantasa/2026-10-09/fin",
       "expression_eli": "http://data.finlex.fi/eli/sd/2019/616/ajantasa/2019-05-10/fin",
       "date_consolidated": "2026-10-09",
@@ -337,13 +353,12 @@
       "source_title": "Laki henkilötietojen käsittelystä poliisitoimessa",
       "chapter_count": 8,
       "section_count": 61,
-      "converted_sha256": "1570fc5d912aba06c552f3cdbded229a3c0de1588cbae1fc354902d4e381200c",
-      "converted_bytes": 73731,
+      "converted_sha256": "edec5660157052bc7f99f4ce7e7e8ea0d4f631b4d462f6e0062c8c69a20efcd4",
+      "converted_bytes": 74065,
       "raw_xml_bytes": 182875,
       "retrieval_status": "converted_review_candidate",
-      "accepted": false,
-      "monitor_archive_path": "candidates/public-data/finland/candidates/fi-police-personal-data-act-616-2019-current.md"
+      "accepted": false
     }
   ],
-  "accepted_source_count": 0
+  "accepted_source_count": 3
 }

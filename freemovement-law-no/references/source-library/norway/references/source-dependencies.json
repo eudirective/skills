@@ -1,0 +1,210 @@
+{
+  "schema_version": "1.0.0",
+  "jurisdiction": "NO",
+  "as_of": "2026-10-31",
+  "path_base": "repository_root",
+  "scope_map_version": "1.0.0",
+  "review_status": "initial_dependency_map; measure_and_route_mapping_open",
+  "policy": "External URLs below are official-authority locators only, not retained sources. Source IDs point to independent source-reference notes or an identified local text. EU acts are not treated as Norwegian law without a specific EEA or Schengen route and its conditions. EEA-EFTA incorporation, Schengen association, and the separate EFTA/Swiss route remain distinct.",
+  "unresolved_dependency_checks": [
+    "Map each relevant EEA measure to its specific JCD, adaptations, Norway entry-into-force status, current consolidated EEA text, and Norwegian implementation; the generic EEA text catalogue no-09 is not a measure-by-measure map.",
+    "Verify the current Utlendingsloven and Utlendingsforskriften bodies after their recorded 2026-10-01 changes. Their Norway-pack entries are reference notes, not legal-text copies.",
+    "Apply Directive 2004/38/JCD 158/2007 only within its EEA scope and the Joint Declaration; map Norwegian provisions, person categories, procedures, and remedies before drawing a route conclusion.",
+    "For worker mobility, verify the operative EEA adaptations and the conditional relationship of LOV-2012-12-14-81 to an actual FreeMovement pathway; the proposed copy does not establish residence or visa coverage.",
+    "For GDPR/JCD 154/2018, identify each controller, purpose, data store, applicable GDPR/national or law-enforcement regime, Norwegian implementation, exception, deadline, and review route.",
+    "Keep Regulation 810/2009 on the Norway Schengen-association route, not the EEA Agreement; verify its Norway-specific procedure, mission practice, and EU/EEA-family exceptions.",
+    "Verify the current EFTA Convention Annex K text, reservations and Norwegian implementation for Swiss nationals separately from EEA and Schengen routes.",
+    "Verify exact UDI checklist attachment no-30 and its parent application route/current revision; do not treat the pending checklist locator as a source or complete procedure."
+  ],
+  "e01_disposition": "conditional_for_Norway_as_an_EEA_EFTA_state; applicability is measure-specific and requires an identified EEA incorporation/adaptation, entry into force for Norway, and Norwegian implementation. This disposition neither applies every EU act to Norway nor accepts any source or pathway.",
+  "dependencies": [
+    {
+      "dependency_id": "NO-EEA-AGREEMENT-AND-IMPLEMENTATION",
+      "instrument": "Agreement on the European Economic Area, current relevant Annexes and Protocol 1, applicable Joint Committee Decisions, and Norway's EØS Act",
+      "route": "EEA-EFTA national incorporation and implementation",
+      "linked_pathways": ["P01", "P03", "P04", "P05"],
+      "local_source_ids": ["no-06", "no-07", "no-08", "no-09", "no-11"],
+      "local_artifact_paths": [
+        "source-library/norway/documents/references/no-06-utlendingsloven-lov-2008-05-15-35.md",
+        "source-library/norway/documents/references/no-07-utlendingsforskriften-for-2009-10-15-1286.md",
+        "source-library/norway/documents/references/no-08-e-s-loven-lov-1992-11-27-109.md",
+        "source-library/norway/documents/references/no-09-eea-legal-texts-and-updated-annexes.md",
+        "source-library/norway/documents/references/no-11-udi-2010-025-family-immigration-with-an-eea-citizen.md"
+      ],
+      "official_authority_locators": [
+        "https://www.efta.int/about-efta/legal-documents/eea-legal-texts",
+        "https://lovdata.no/lov/1992-11-27-109"
+      ],
+      "relationship": "The EØS Act reference note records that the EEA Agreement main body is incorporated into Norwegian law and identifies a conflict rule for implementing measures. The EEA source note identifies the EFTA publication route for updated texts and JCDs. Neither identifies every applicable measure or makes all EU law directly applicable in Norway.",
+      "status": "framework identified; measure-specific JCD, adaptation, entry-into-force and national provision map open",
+      "retained_eea_text_in_norway_pack": false,
+      "next_checks": [
+        "Identify the exact EEA act and JCD for each issue and capture the official act, adaptation text, later changes, and Norway entry-into-force status.",
+        "Retrieve and compare the current Norwegian implementing law/regulation text; the listed files are locator notes.",
+        "Record which person category, procedure and decision stage each measure governs."
+      ]
+    },
+    {
+      "dependency_id": "NO-DIR-2004-38-EEA-JCD-158-2007",
+      "instrument": "Directive 2004/38/EC as incorporated into the EEA Agreement by Joint Committee Decision 158/2007, with the accompanying Joint Declaration",
+      "route": "EEA-EFTA free-movement framework; not a general immigration policy code",
+      "linked_pathways": ["P01", "P03", "P04", "P05"],
+      "local_source_ids": ["no-06", "no-07", "no-08", "no-09", "no-11", "no-20", "no-23"],
+      "local_artifact_paths": [
+        "source-library/norway/documents/references/no-06-utlendingsloven-lov-2008-05-15-35.md",
+        "source-library/norway/documents/references/no-07-utlendingsforskriften-for-2009-10-15-1286.md",
+        "source-library/norway/documents/references/no-08-e-s-loven-lov-1992-11-27-109.md",
+        "source-library/norway/documents/references/no-09-eea-legal-texts-and-updated-annexes.md",
+        "source-library/norway/documents/references/no-11-udi-2010-025-family-immigration-with-an-eea-citizen.md",
+        "source-library/norway/documents/references/no-20-udi-eea-eu-residence-guidance-hub.md",
+        "source-library/norway/documents/references/no-23-udi-family-member-of-a-returning-norwegian-under-eea-rules.md"
+      ],
+      "shared_eu_text_path": "source-library/core/eu/eu_32004l0038_EN.md",
+      "official_authority_locators": [
+        "https://www.efta.int/eea-lex/32004l0038",
+        "https://www.efta.int/sites/default/files/documents/legal-texts/eea/other-legal-documents/adopted-joint-committee-decisions/2007%20-%20English/158-2007.pdf",
+        "https://www.efta.int/sites/default/files/documents/legal-texts/eea/other-legal-documents/adopted-joint-committee-decisions/2007%20-%20English/158-2007-declaration.pdf"
+      ],
+      "relationship": "EFTA's EEA-Lex record identifies JCD 158/2007 and in-force status. The Joint Declaration states that immigration policy is outside the EEA Agreement except for specified derivative rights of third-country family members accompanying or joining an EEA national exercising free movement. The shared EU Directive text is not the EEA-adapted act or Norway's implementing text.",
+      "status": "EEA incorporation and JCD identified; Norway provision, person-category, procedure and remedy map incomplete",
+      "retained_norway_implementation_text": false,
+      "next_checks": [
+        "Retrieve the official JCD and declaration text and compare the current EEA-adapted measure, later amendments and Norway status.",
+        "Map the Norwegian Act and Regulations provisions for each route and person category, including third-country family members.",
+        "Do not transfer EU citizenship concepts or ordinary immigration rules without an applicable legal basis."
+      ]
+    },
+    {
+      "dependency_id": "NO-REG-492-2011-EEA-WORKER-MOBILITY",
+      "instrument": "Regulation (EU) No 492/2011 and the related EEA Annex V worker-mobility instruments as implemented by LOV-2012-12-14-81",
+      "route": "EEA-EFTA worker mobility; conditional relevance to a consultation topic only where worker status is material",
+      "linked_pathways": ["P03"],
+      "local_source_ids": ["no-08", "no-09", "no-54"],
+      "local_artifact_paths": [
+        "source-library/norway/documents/references/no-08-e-s-loven-lov-1992-11-27-109.md",
+        "source-library/norway/documents/references/no-09-eea-legal-texts-and-updated-annexes.md",
+        "source-library/norway/documents/references/no-54-current-e-s-worker-mobility-act-lov-2012-12-14-81.md",
+        "source-library/norway/documents/legislation/no-54-e-s-worker-mobility-act-lov-2012-12-14-81.md"
+      ],
+      "shared_eu_text_path": null,
+      "official_authority_locators": [
+        "https://lovdata.no/lov/2012-12-14-81",
+        "https://www.efta.int/about-efta/legal-documents/eea-legal-texts"
+      ],
+      "relationship": "The official Norwegian law text in the open PR states that Annex V points 2 and 9 and the named EU Regulations apply as Norwegian law with EEA adaptations. It is one worker-mobility instrument, not a visa, residence-card or family-document code. The shared EU-core folder does not currently contain a separate Regulation 492/2011 text.",
+      "status": "official Norwegian text proposed and accepted on open PR #167; not in main; pathway link conditional and unaccepted",
+      "retained_norway_text": {
+        "path": "source-library/norway/documents/legislation/no-54-e-s-worker-mobility-act-lov-2012-12-14-81.md",
+        "status_on_branch": "accepted_local_copy_in_open_pr_167",
+        "status_on_main": "absent_until_pr_167_is_merged"
+      },
+      "next_checks": [
+        "Review and merge PR #167 through the normal source acceptance process before treating the file as present on main.",
+        "Confirm the EEA-adapted text and each later relevant change against EFTA/Lovdata current records.",
+        "Establish whether worker status is relevant to a registered product issue before connecting this act to P03 coverage."
+      ]
+    },
+    {
+      "dependency_id": "NO-GDPR-EEA-JCD-154-2018",
+      "instrument": "Regulation (EU) 2016/679 (GDPR) as incorporated into the EEA Agreement by Joint Committee Decision 154/2018, and Norwegian implementing law",
+      "route": "EEA data-protection framework and Norwegian implementation",
+      "linked_pathways": ["P06"],
+      "local_source_ids": ["no-13", "no-16", "no-35", "no-36", "no-37", "no-52"],
+      "local_artifact_paths": [
+        "source-library/norway/documents/references/no-13-forvaltningsloven-lov-1967-02-10.md",
+        "source-library/norway/documents/references/no-16-personopplysningsloven-lov-2018-06-15-38.md",
+        "source-library/norway/documents/references/no-35-udi-access-to-documents-in-an-individual-case.md",
+        "source-library/norway/documents/references/no-36-udi-request-for-access-to-personal-data.md",
+        "source-library/norway/documents/references/no-37-udi-privacy-declaration.md",
+        "source-library/norway/documents/references/no-52-norwegian-data-protection-authority.md"
+      ],
+      "shared_eu_text_path": "source-library/core/eu/eu_32016r0679_EN.md",
+      "official_authority_locators": [
+        "https://www.efta.int/eea-lex/32016r0679",
+        "https://www.lovdata.no/lov/2018-06-15-38"
+      ],
+      "relationship": "EFTA's EEA-Lex record identifies JCD 154/2018 and in-force status. Norway's source notes identify the Personal Data Act and relevant public services, but do not reproduce their text or identify the controller, purpose or processing regime for a particular immigration system. Administrative-file access and public-journal services are separate from GDPR personal-data rights.",
+      "status": "EEA incorporation identified; Norwegian text, controller, processing regime, exceptions and remedies open",
+      "retained_norwegian_implementation_text": false,
+      "next_checks": [
+        "Retrieve current Norwegian Personal Data Act text and relevant sector rules, including any applicable law-enforcement regime.",
+        "Map the responsible controller and data store for each issue before applying an access, minimisation, retention or preservation rule.",
+        "Verify EEA adaptations, response periods, exceptions, supervisory review and court remedy."
+      ]
+    },
+    {
+      "dependency_id": "NO-SCHENGEN-VISA-CODE-ASSOCIATION",
+      "instrument": "Regulation (EC) No 810/2009 (Visa Code) as part of the Schengen acquis associated with Norway",
+      "route": "Schengen association; separate from the EEA Agreement",
+      "linked_pathways": ["P01", "P03", "P05"],
+      "local_source_ids": ["no-28", "no-29", "no-30", "no-31", "no-51"],
+      "local_artifact_paths": [
+        "source-library/norway/documents/references/no-28-udi-visitor-visa-including-travel-with-or-visit-to-an-eu-eea-fami.md",
+        "source-library/norway/documents/references/no-29-udi-application-checklists.md",
+        "source-library/norway/documents/references/no-30-udi-eu-eea-family-visa-checklist-pdf.md",
+        "source-library/norway/documents/references/no-31-udi-self-service-application-workflow.md",
+        "source-library/norway/documents/references/no-51-norway-no-residence-permit-and-foreign-service-routing.md"
+      ],
+      "shared_eu_text_path": "source-library/core/eu/eu_32009r0810_EN.md",
+      "official_authority_locators": [
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32009R0810",
+        "https://home-affairs.ec.europa.eu/policies/schengen/visa-policy_en"
+      ],
+      "relationship": "The Visa Code's own Norway recital connects the instrument to Norway's Schengen association, not to EEA incorporation. Its application to ordinary short-stay visa procedure must be distinguished from EU/EEA-family facilitation and national long-stay or residence procedures.",
+      "status": "Schengen route identified; Norway procedure, mission, checklist and family-route interaction incomplete",
+      "retained_norway_specific_procedure_text": false,
+      "next_checks": [
+        "Map Norway's association-based Visa Code procedure and current national implementation for the relevant mission and applicant route.",
+        "Verify which family-member rights or derogations affect a particular checklist before applying ordinary third-country requirements.",
+        "Resolve no-30 attachment identity, parent page, current revision and rights; it remains pending and is not a source copy."
+      ]
+    },
+    {
+      "dependency_id": "NO-EFTA-CONVENTION-ANNEX-K-SWISS-ROUTE",
+      "instrument": "Revised EFTA Convention, including Annex K on movement of persons, and Norway's related implementation",
+      "route": "Separate EFTA/Swiss free-movement route; not the EEA Agreement or the Schengen Visa Code",
+      "linked_pathways": ["P01", "P03", "P04", "P05"],
+      "local_source_ids": ["no-06", "no-07", "no-10", "no-27"],
+      "local_artifact_paths": [
+        "source-library/norway/documents/references/no-06-utlendingsloven-lov-2008-05-15-35.md",
+        "source-library/norway/documents/references/no-07-utlendingsforskriften-for-2009-10-15-1286.md",
+        "source-library/norway/documents/references/no-10-efta-convention-including-annex-k-movement-of-persons.md",
+        "source-library/norway/documents/references/no-27-udi-swiss-person-eu-eea-route-selector.md"
+      ],
+      "official_authority_locators": [
+        "https://www.efta.int/about-efta/legal-documents/efta-convention"
+      ],
+      "relationship": "The Norway source note identifies the revised Vaduz Convention and Annex K as a distinct movement-of-persons route involving Switzerland and the EEA EFTA States. It does not establish current reservations, a complete family scope, or the Norwegian procedural provisions for an individual issue.",
+      "status": "separate route identified by reference note; current text, reservations and Norwegian implementation unresolved",
+      "retained_text_in_norway_pack": false,
+      "next_checks": [
+        "Retrieve the current official Convention and Annex K version, reservations and relevant decisions.",
+        "Map the exact Swiss-person/family route to current Norwegian provisions and procedures.",
+        "Keep this route distinct from EEA EFTA nationals and ordinary Schengen short-stay visa rules."
+      ]
+    },
+    {
+      "dependency_id": "NO-IMMIGRATION-AND-ADMINISTRATIVE-PROCEDURE",
+      "instrument": "Norwegian Immigration Act (LOV-2008-05-15-35), Immigration Regulations (FOR-2009-10-15-1286), Public Administration Act, and decision-specific procedure",
+      "route": "Norwegian national implementation and procedure",
+      "linked_pathways": ["P01", "P02", "P03", "P04", "P05", "P06"],
+      "local_source_ids": ["no-06", "no-07", "no-13", "no-34", "no-35", "no-53"],
+      "local_artifact_paths": [
+        "source-library/norway/documents/references/no-06-utlendingsloven-lov-2008-05-15-35.md",
+        "source-library/norway/documents/references/no-07-utlendingsforskriften-for-2009-10-15-1286.md",
+        "source-library/norway/documents/references/no-13-forvaltningsloven-lov-1967-02-10.md",
+        "source-library/norway/documents/references/no-34-udi-appeal-guidance-klage-pa-vedtak.md",
+        "source-library/norway/documents/references/no-35-udi-access-to-documents-in-an-individual-case.md",
+        "source-library/norway/documents/references/no-53-new-public-administration-act-lov-2025-06-20-81.md"
+      ],
+      "relationship": "The current source pack identifies these official records but retains only reference notes for them. Its dated metadata records amendments to the Immigration Act and Regulations effective 2026-10-01; the full current text was not retrieved. The newer Public Administration Act is recorded as not yet in force, so its commencement must be rechecked before use.",
+      "status": "official reference records identified; current text and provision-by-pathway map open",
+      "retained_norwegian_text_in_main": false,
+      "next_checks": [
+        "Retrieve the current Immigration Act, Regulations and general procedure texts from official records and compare the full relevant provisions.",
+        "Map special-rule priority, service, reasons, filing, data access, appeal and deadline provisions by decision type.",
+        "Recheck commencement for new/repeal legislation and the current mission/authority instructions."
+      ]
+    }
+  ]
+}

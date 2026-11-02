@@ -1,12 +1,12 @@
 {
   "catalog_version": 1,
-  "catalog_date": "2026-10-29",
+  "catalog_date": "2026-10-31",
   "catalog_status": "partial_retrieval_review_candidates",
   "jurisdiction": "Finland (FI)",
   "scope": "Official Finnish sources related to EU, EEA and Swiss free movement; third-country family members; visa and consular routes; administrative procedure, access to information, remedies, oversight, privacy, legal aid and administrative courts. This is a bounded discovery register, not a statement of legal equivalence or complete coverage.",
-  "accepted_source_count": 2,
+  "accepted_source_count": 4,
   "candidate_source_count": 37,
-  "acquisition_rule_status": "Thirty-five official external references are accepted with item-specific limits; two Finnish current-law conversions are accepted as dated local copies. Two maintained source locator notes record the Ministry for Foreign Affairs visa guidance and DVV foreigner-registration routes without copying page content; the DVV summary is limited to current linked form instructions because its parent pages returned 403. One obsolete Migri route is dispositioned as already represented and wrong scope. Two oversight sites remain under human review. Unaccepted converted page and text artifacts remain local-only.",
+  "acquisition_rule_status": "Thirty-five official external references are accepted with item-specific limits; four Finnish current-law texts and two unofficial English translations are accepted as dated local copies. Two maintained source locator notes record the Ministry for Foreign Affairs visa guidance and DVV foreigner-registration routes without copying page content; the DVV summary is limited to current linked form instructions because its parent pages returned 403. One obsolete Migri route is dispositioned as already represented and wrong scope. Two oversight sites remain under human review. Unaccepted converted page and text artifacts remain local-only.",
   "official_change_channels": {
     "national_legal_database": "https://www.finlex.fi/",
     "open_data_documentation": "https://www.finlex.fi/en/open-data",
@@ -24,7 +24,7 @@
   "search_coverage": [
     {
       "source_class": "National legislation and legal-source discovery",
-      "search_outcome": "Eight current Finnish statutory pages are accepted as official external references; two Finnish texts are accepted as dated local copies. Three unofficial English translation pages are accepted as language aids with explicit cutoffs; the Finlex portal and N-Lex profile are accepted as discovery references.",
+      "search_outcome": "Eight current Finnish statutory pages are accepted as official external references; three Finnish texts are accepted as dated local copies. Three unofficial English translation pages are accepted as language aids with explicit cutoffs; the Finlex portal and N-Lex profile are accepted as discovery references.",
       "official_channels": [
         "Finlex",
         "N-Lex"
@@ -117,7 +117,7 @@
     },
     {
       "source_class": "Administrative procedure, evidence, language and file access",
-      "search_outcome": "Finlex current-law pages and language-specific references are accepted; two Finnish copies are locally accepted. General Oikeus.fi access guidance is accepted as external-only guidance.",
+      "search_outcome": "Finlex current-law pages and language-specific references are accepted; three Finnish copies are locally accepted. General Oikeus.fi access guidance is accepted as external-only guidance.",
       "official_channels": [
         "Finlex",
         "Oikeus.fi"
@@ -553,36 +553,53 @@
     },
     {
       "id": "fi-data-protection-act",
-      "title": "Tietosuojalaki (Data Protection Act), 1050/2018",
-      "authority": "Finlex ELI",
+      "title": "Tietosuojalaki (Data Protection Act), 1050/2018, current Finnish text",
+      "authority": "Finlex / Legal Register Centre",
       "class": "national_data_protection_statute",
-      "language": "fi-en",
-      "official_url": "https://finlex.fi/fi/lainsaadanto/2018/1050",
+      "language": "fi",
+      "official_url": "https://www.finlex.fi/fi/lainsaadanto/2018/1050",
       "publisher_identifier": {
         "system": "Finlex ELI",
         "record": "1050/2018; current ELI: http://data.finlex.fi/eli/sd/2018/1050/ajantasa/2026-05-22/fin"
       },
       "functional_relationship": "related_source",
-      "verification_status": "Official Finlex open-data API returned an identity-matching Akoma Ntoso consolidation dated 22 May 2026. Use the government-published edition with its cutoff; review source identity and the relevant text without requiring a full amendment-chain comparison.",
-      "retrieval_status": "converted_review_candidate",
-      "retrieval_shape": "Finlex REST API Akoma Ntoso consolidated-statute XML",
+      "verification_status": "Finlex official current page identity, title, Finnish ELI, full-body thresholds, 40 numbered section headings, 159 text paragraphs, raw-page hash and deterministic conversion replay verified. Section inventory found current §§18a and 36a missing from the earlier Legalize candidate and API-derived conversion. No clause-by-clause semantic comparison was performed.",
+      "retrieval_status": "accepted_local_copy",
+      "retrieval_shape": "Finlex current-text HTML page with full Finnish law body embedded in a Next.js RSC stream",
       "seed_status": "candidate",
-      "check_note": "Relevant to personal-data safeguards and national implementation; the EU GDPR and other sector laws also apply.",
+      "check_note": "Use as a dated Finnish national data-protection text for an identified personal-data issue only. Check the controller, system, purpose, authority, route and stage. The GDPR and sector laws also apply; this Act does not itself establish an immigration remedy, deadline or topic coverage.",
       "retrieved": true,
-      "accepted": false,
-      "source_sha256": "e7ca5ae102a6d9a3b0e441462a0bb93d5726a73a24c2e5f98db5ba1e2eddba48",
-      "converted_sha256": "8373f53f4ac338a8d4776b215ba7a72086d990577fbe24264387a68d51eedf45",
-      "source_bytes": 687201,
+      "accepted": true,
+      "source_sha256": "874dabb3f242550fb4800bd2bf632614f09c52982737282c065d6490afd86024",
+      "converted_sha256": "4610b29f05d2135482194896ddd8d6228d8923204d64aefd418ba07148b1bd2b",
+      "source_bytes": 687874,
       "monitor_retrieval_status": "discovery_surface_no_text",
       "monitor_source_sha256": "e7ca5ae102a6d9a3b0e441462a0bb93d5726a73a24c2e5f98db5ba1e2eddba48",
       "monitor_source_bytes": 687201,
       "monitor_resolved_url": "https://www.finlex.fi/fi/lainsaadanto/2018/1050",
       "monitor_converted_sha256": "8373f53f4ac338a8d4776b215ba7a72086d990577fbe24264387a68d51eedf45",
-      "raw_capture_path": "temp/finland/raw/fi-data-protection-act-8482195cf92e1e5ad946c8d1391cc31138c077e2ac49f531f239e3ce5283af6a.xml",
+      "raw_capture_path": "source-library/finland/references/captures/finlex-data-protection-act-1050-2018-current-2026-10-31.html",
       "monitor_conversion_note": "The broad HTML pass saved the official page response but its generic converter extracted only a portal shell; the full text is recorded separately in the source-specific Finlex capture lane.",
       "external_reference_accepted": true,
-      "monitor_archive_path": "candidates/public-data/finland/candidates/fi-data-protection-act-1050-2018-current.md",
-      "monitor_shell_archive_path": "candidates/public-data/finland/monitor-candidates/fi-data-protection-act.md"
+      "monitor_archive_path": "candidates/public-data/finland/candidates/fi-data-protection-act-1050-2018-current-rsc.md",
+      "monitor_shell_archive_path": "candidates/public-data/finland/monitor-candidates/fi-data-protection-act.md",
+      "latest_conversion_candidate_path": "temp/finland/derived/fi-data-protection-act-rsc-review-candidate.md",
+      "prior_api_candidate": {
+        "retrieval_shape": "Finlex REST API Akoma Ntoso consolidated-statute XML",
+        "raw_capture_path": "temp/finland/raw/fi-data-protection-act-8482195cf92e1e5ad946c8d1391cc31138c077e2ac49f531f239e3ce5283af6a.xml",
+        "raw_sha256": "e7ca5ae102a6d9a3b0e441462a0bb93d5726a73a24c2e5f98db5ba1e2eddba48",
+        "raw_bytes": 687201,
+        "converted_sha256": "8373f53f4ac338a8d4776b215ba7a72086d990577fbe24264387a68d51eedf45",
+        "status": "unaccepted candidate; section inventory omitted current §§18a and 36a"
+      },
+      "edition": "2026-05-22",
+      "document_path": "../documents/legislation/fi-data-protection-act-1050-2018-current-fi.md",
+      "local_path": "documents/legislation/fi-data-protection-act-1050-2018-current-fi.md",
+      "local_sha256": "e31abe6d330b6c6f651f34240b1d5ea47417fcdc89b79effca32d937988241e6",
+      "local_copy_accepted": true,
+      "local_copy_status": "accepted",
+      "local_candidate_status": "accepted_local_copy",
+      "local_copy_checked_at": "2026-10-31"
     },
     {
       "id": "fi-language-act",
@@ -662,16 +679,16 @@
         "record": "616/2019; current ELI: http://data.finlex.fi/eli/sd/2019/616/ajantasa/2026-10-09/fin"
       },
       "functional_relationship": "related_source",
-      "verification_status": "Official Finlex open-data API returned an identity-matching Akoma Ntoso consolidation dated 9 October 2026. Use the government-published edition with its cutoff; review source identity and the relevant text without requiring a full amendment-chain comparison.",
-      "retrieval_status": "converted_review_candidate",
+      "verification_status": "Finlex Akoma Ntoso XML identifies the 2026-10-09 Finnish consolidation. All 61 section bodies match the pinned Legalize candidate after formatting-only normalization. This verifies the dated consolidation; Act 875/2026 was published after it and its decree-set commencement remains unverified.",
+      "retrieval_status": "accepted_local_copy",
       "retrieval_shape": "Finlex REST API Akoma Ntoso consolidated-statute XML",
       "seed_status": "candidate",
       "check_note": "Potentially relevant to police processing in immigration and entry-ban matters; ancillary and subject to scope review.",
       "retrieved": true,
-      "accepted": false,
-      "source_sha256": "ede30b5b4570d29f1b58748fec32e4efce5d14dd6e4686331c76c9a483562424",
-      "converted_sha256": "6d88cebbbe6d2fcdbece1b3cd8492c99c0b95fba82fb091fd8db43dab7b77f0d",
-      "source_bytes": 1388533,
+      "accepted": true,
+      "source_sha256": "a052f857aee861690881e1f6aa7f548c15871699559e63263bf34dfbf1ed7b9f",
+      "converted_sha256": "edec5660157052bc7f99f4ce7e7e8ea0d4f631b4d462f6e0062c8c69a20efcd4",
+      "source_bytes": 182875,
       "monitor_retrieval_status": "discovery_surface_no_text",
       "monitor_source_sha256": "ede30b5b4570d29f1b58748fec32e4efce5d14dd6e4686331c76c9a483562424",
       "monitor_source_bytes": 1388533,
@@ -681,7 +698,17 @@
       "monitor_conversion_note": "The broad HTML pass saved the official page response but its generic converter extracted only a portal shell; the full text is recorded separately in the source-specific Finlex capture lane.",
       "external_reference_accepted": true,
       "monitor_archive_path": "candidates/public-data/finland/candidates/fi-police-personal-data-act-616-2019-current.md",
-      "monitor_shell_archive_path": "candidates/public-data/finland/monitor-candidates/fi-police-personal-data-act.md"
+      "monitor_shell_archive_path": "candidates/public-data/finland/monitor-candidates/fi-police-personal-data-act.md",
+      "accepted_local_copy_sha256": "36864ea752df56cfbed2c4561694fa610171b5e69a4049632b1ee9892bd99e2b",
+      "accepted_local_copy_path": "source-library/finland/documents/legislation/fi-police-personal-data-act-616-2019-current-fi.md",
+      "local_copy_accepted": true,
+      "local_candidate_status": "accepted_dated_local_copy",
+      "local_copy_status": "Accepted dated Finlex text; all 61 section bodies checked against the pinned Legalize candidate; API-to-Markdown conversion replay verified. Act 875/2026 commencement remains open.",
+      "source_identity_id": "fi:url:651d9576b87a816ddadb",
+      "representation_ids": [
+        "fi:url:651d9576b87a816ddadb#url:fi:b8df93a657ba"
+      ],
+      "latest_conversion_candidate_path": "temp/finland/derived/fi-police-personal-data-act-review-candidate.md"
     },
     {
       "id": "fi-migri-eu-registration",
@@ -1310,10 +1337,10 @@
       "accepted": false
     }
   ],
-  "retrieved_review_candidate_count": 23,
-  "converted_review_candidate_count": 21,
+  "retrieved_review_candidate_count": 17,
+  "converted_review_candidate_count": 18,
   "accepted_external_reference_count": 35,
-  "accepted_local_copy_count": 2,
+  "accepted_local_copy_count": 4,
   "retrieval_status": null,
   "maintained_locator_note_count": 2,
   "maintained_markdown_record_count": 5

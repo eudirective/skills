@@ -1,0 +1,404 @@
+{
+  "schema_version": "1.0.0",
+  "jurisdiction": "NO",
+  "as_of": "2026-10-31",
+  "path_base": "repository_root",
+  "scope_map": {
+    "version": "1.0.0",
+    "approval_status": "owner_approved",
+    "approval_scope": "scope framework only; it does not accept sources, topics, or country completion",
+    "sha256": "8705c0b379adb10143c0a45349f0533c075b29420f4b2848422c3e18d4aa8544"
+  },
+  "coverage_status": "initial_issue_map_with_eea_dependencies_open",
+  "adequately_covered_topic_count": 0,
+  "country_review_complete": false,
+  "required_layers": [
+    "primary_law",
+    "implementing_rules",
+    "procedure_and_practice",
+    "remedies_and_oversight"
+  ],
+  "policy": "Coverage is issue-led and separate from source acceptance. Each evidence item identifies local artifacts and labels whether it is retained law, an official-reference note, a guidance/procedure locator, or a project-authored summary. Reference notes and URLs do not count as legal text. A pathway remains incomplete until the applicable route, current legal text, implementing measures, operational process, and remedy layers are checked. The one no-54 text copy is proposal-only in open PR #167 and is not present on main.",
+  "topics": [
+    {
+      "topic_id": "P01",
+      "label": "Access blocked before formal lodging",
+      "status": "incomplete",
+      "layers": [
+        {
+          "layer": "primary_law",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": ["no-06", "no-08", "no-09"],
+              "representation": "official-reference notes only; no Immigration Act or EEA Agreement text is retained in the Norway pack",
+              "local_artifact_paths": [
+                "source-library/norway/documents/references/no-06-utlendingsloven-lov-2008-05-15-35.md",
+                "source-library/norway/documents/references/no-08-e-s-loven-lov-1992-11-27-109.md",
+                "source-library/norway/documents/references/no-09-eea-legal-texts-and-updated-annexes.md"
+              ]
+            }
+          ],
+          "open_gap": "No provision-level map identifies the right to submit, the responsible authority, formal lodging, refusal to accept an application, or the Norway-specific EEA/Schengen route and exceptions. The cited legal records are locators, not retained text."
+        },
+        {
+          "layer": "implementing_rules",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": ["no-07", "no-11"],
+              "representation": "official regulation and UDI guideline reference notes; no current bodies copied",
+              "local_artifact_paths": [
+                "source-library/norway/documents/references/no-07-utlendingsforskriften-for-2009-10-15-1286.md",
+                "source-library/norway/documents/references/no-11-udi-2010-025-family-immigration-with-an-eea-citizen.md"
+              ]
+            }
+          ],
+          "open_gap": "The current regulation text, EEA adaptations, formal filing rules, appointment prerequisites, and any alternative or accommodation route have not been compared provision by provision."
+        },
+        {
+          "layer": "procedure_and_practice",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": ["no-20", "no-29", "no-31", "no-51"],
+              "representation": "official UDI/Norway.no workflow and checklist reference notes; live operational surfaces are not captured here",
+              "local_artifact_paths": [
+                "source-library/norway/documents/references/no-20-udi-eea-eu-residence-guidance-hub.md",
+                "source-library/norway/documents/references/no-29-udi-application-checklists.md",
+                "source-library/norway/documents/references/no-31-udi-self-service-application-workflow.md",
+                "source-library/norway/documents/references/no-51-norway-no-residence-permit-and-foreign-service-routing.md"
+              ]
+            }
+          ],
+          "open_gap": "Mission-specific channel, territorial responsibility, appointment access, receipt of a formal application, and current provider practice need dated route-specific verification."
+        },
+        {
+          "layer": "remedies_and_oversight",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": ["no-34", "no-38", "no-43", "no-44", "no-48"],
+              "representation": "official appeal, tribunal, ombudsman, court and legal-aid reference notes",
+              "local_artifact_paths": [
+                "source-library/norway/documents/references/no-34-udi-appeal-guidance-klage-pa-vedtak.md",
+                "source-library/norway/documents/references/no-38-une-eea-cases.md",
+                "source-library/norway/documents/references/no-43-sivilombudet-complaint-route.md",
+                "source-library/norway/documents/references/no-44-supreme-court-family-immigration-ruling-hr-2022-2329-a.md",
+                "source-library/norway/documents/references/no-48-legal-aid-act-lov-1980-06-13-35.md"
+              ]
+            }
+          ],
+          "open_gap": "No decision-specific chain links refusal to lodge, written reasons, appeal body, filing deadline, judicial review, urgent relief, and legal aid."
+        }
+      ],
+      "open_gap": "Separate an inquiry, appointment or service-provider barrier from refusal to accept a formal filing; identify the deciding state, mission, route and applicable EEA or Schengen instrument."
+    },
+    {
+      "topic_id": "P02",
+      "label": "Digital-only or service-provider access requirement",
+      "status": "incomplete",
+      "layers": [
+        {
+          "layer": "primary_law",
+          "status": "unresolved",
+          "evidence": [],
+          "open_gap": "No retained provision or mapped official record establishes when a Norwegian visa or residence process may require online access or must offer an alternative channel."
+        },
+        {
+          "layer": "implementing_rules",
+          "status": "unresolved",
+          "evidence": [],
+          "open_gap": "Delegation, accessibility, exceptions, assisted filing and any mission/provider implementing rules have not been inventoried."
+        },
+        {
+          "layer": "procedure_and_practice",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": ["no-29", "no-31", "no-51"],
+              "representation": "official checklist, self-service and routing reference notes; no versioned workflow capture",
+              "local_artifact_paths": [
+                "source-library/norway/documents/references/no-29-udi-application-checklists.md",
+                "source-library/norway/documents/references/no-31-udi-self-service-application-workflow.md",
+                "source-library/norway/documents/references/no-51-norway-no-residence-permit-and-foreign-service-routing.md"
+              ]
+            }
+          ],
+          "open_gap": "The references do not establish mandatory digital steps, accessibility accommodations, an in-person alternative, delegation terms, or a remedy when the digital channel fails."
+        },
+        {
+          "layer": "remedies_and_oversight",
+          "status": "unresolved",
+          "evidence": [],
+          "open_gap": "No verified route connects digital exclusion to a formal complaint, reviewable decision, supervisory body, or urgent alternative filing."
+        }
+      ],
+      "open_gap": "The digital channel and its legal basis, accessibility exceptions, assisted route, and review path remain unverified."
+    },
+    {
+      "topic_id": "P03",
+      "label": "EU-family proof and ordinary Schengen checklist",
+      "status": "incomplete",
+      "layers": [
+        {
+          "layer": "primary_law",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": ["no-06", "no-08", "no-09", "no-54"],
+              "representation": "three official-reference notes; no-54 is a current worker-mobility law text proposed only in open PR #167",
+              "local_artifact_paths": [
+                "source-library/norway/documents/references/no-06-utlendingsloven-lov-2008-05-15-35.md",
+                "source-library/norway/documents/references/no-08-e-s-loven-lov-1992-11-27-109.md",
+                "source-library/norway/documents/references/no-09-eea-legal-texts-and-updated-annexes.md",
+                "source-library/norway/documents/references/no-54-current-e-s-worker-mobility-act-lov-2012-12-14-81.md",
+                "source-library/norway/documents/legislation/no-54-e-s-worker-mobility-act-lov-2012-12-14-81.md"
+              ],
+              "proposal_status": "no-54 text is not on main; it does not by itself establish family residence or visa-document requirements"
+            }
+          ],
+          "open_gap": "EFTA confirms Directive 2004/38/EC was incorporated by JCD 158/2007, with a joint declaration limiting the EEA basis. Map the relevant EEA provisions, adaptations, Norwegian implementation and each person category; do not apply Union citizenship concepts or general immigration rules by analogy."
+        },
+        {
+          "layer": "implementing_rules",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": ["no-07", "no-11"],
+              "representation": "official Norwegian regulation and UDI guideline locators only",
+              "local_artifact_paths": [
+                "source-library/norway/documents/references/no-07-utlendingsforskriften-for-2009-10-15-1286.md",
+                "source-library/norway/documents/references/no-11-udi-2010-025-family-immigration-with-an-eea-citizen.md"
+              ]
+            }
+          ],
+          "open_gap": "Current regulation and guideline text, EEA adaptations, amendment history and article-level relationship to Directive 2004/38/JCD 158/2007 are not retained or mapped."
+        },
+        {
+          "layer": "procedure_and_practice",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": ["no-20", "no-21", "no-22", "no-23", "no-27", "no-29"],
+              "representation": "official UDI route and checklist reference notes; no-27 is a separate Swiss-route selector",
+              "local_artifact_paths": [
+                "source-library/norway/documents/references/no-20-udi-eea-eu-residence-guidance-hub.md",
+                "source-library/norway/documents/references/no-21-udi-eea-regulations-frequently-asked-questions.md",
+                "source-library/norway/documents/references/no-22-udi-residence-card-for-family-members-of-eu-eea-nationals.md",
+                "source-library/norway/documents/references/no-23-udi-family-member-of-a-returning-norwegian-under-eea-rules.md",
+                "source-library/norway/documents/references/no-27-udi-swiss-person-eu-eea-route-selector.md",
+                "source-library/norway/documents/references/no-29-udi-application-checklists.md"
+              ]
+            }
+          ],
+          "open_gap": "Check current route-specific instructions and the exact checklist version. The ordinary short-stay Schengen checklist and EEA-family facilitation must remain separate; the exact EU/EEA-family checklist PDF no-30 is still pending identity/current-version review."
+        },
+        {
+          "layer": "remedies_and_oversight",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": ["no-34", "no-38", "no-44", "no-48"],
+              "representation": "official appeal, tribunal, court and legal-aid reference notes",
+              "local_artifact_paths": [
+                "source-library/norway/documents/references/no-34-udi-appeal-guidance-klage-pa-vedtak.md",
+                "source-library/norway/documents/references/no-38-une-eea-cases.md",
+                "source-library/norway/documents/references/no-44-supreme-court-family-immigration-ruling-hr-2022-2329-a.md",
+                "source-library/norway/documents/references/no-48-legal-aid-act-lov-1980-06-13-35.md"
+              ]
+            }
+          ],
+          "open_gap": "Map remedies to the exact EEA, ordinary visa, returning-national or other family route and decision type, including reasons, deadline and review body."
+        }
+      ],
+      "open_gap": "EEA free movement, ordinary Schengen short-stay visa, Norwegian immigration law, and the EFTA/Swiss route have different legal bases and person scopes; no complete article-to-procedure map is recorded."
+    },
+    {
+      "topic_id": "P04",
+      "label": "Complaint, appeal, or review-path information",
+      "status": "incomplete",
+      "layers": [
+        {
+          "layer": "primary_law",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": ["no-13", "no-48"],
+              "representation": "official administrative-procedure and legal-aid reference notes only",
+              "local_artifact_paths": [
+                "source-library/norway/documents/references/no-13-forvaltningsloven-lov-1967-02-10.md",
+                "source-library/norway/documents/references/no-48-legal-aid-act-lov-1980-06-13-35.md"
+              ]
+            }
+          ],
+          "open_gap": "Current retained procedural text and the special-rule interaction for each visa, residence and EEA decision are not established."
+        },
+        {
+          "layer": "implementing_rules",
+          "status": "unresolved",
+          "evidence": [],
+          "open_gap": "Decision-specific notice, reasons, service, administrative appeal, judicial route and any special immigration rules are not cross-referenced. The newer Public Administration Act no-53 is noted as not yet operative in the pack evidence."
+        },
+        {
+          "layer": "procedure_and_practice",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": ["no-34", "no-38", "no-39", "no-40", "no-42", "no-43"],
+              "representation": "official UDI/UNE/ombudsman practice, tribunal and complaint-route reference notes",
+              "local_artifact_paths": [
+                "source-library/norway/documents/references/no-34-udi-appeal-guidance-klage-pa-vedtak.md",
+                "source-library/norway/documents/references/no-38-une-eea-cases.md",
+                "source-library/norway/documents/references/no-39-une-practice-base-and-source-collection.md",
+                "source-library/norway/documents/references/no-40-une-grand-board-decisions.md",
+                "source-library/norway/documents/references/no-42-sivilombudet-immigration-statements-archive.md",
+                "source-library/norway/documents/references/no-43-sivilombudet-complaint-route.md"
+              ]
+            }
+          ],
+          "open_gap": "Practice summaries and case indexes do not establish the remedy for a particular decision. Check the responsible authority, review stage, standing, deadline, suspensive effect and urgent court remedy against current primary text."
+        },
+        {
+          "layer": "remedies_and_oversight",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": ["no-34", "no-38", "no-42", "no-43", "no-44", "no-48"],
+              "representation": "official reference notes for appeal, tribunal, ombudsman, court and legal aid; no procedural text retained",
+              "local_artifact_paths": [
+                "source-library/norway/documents/references/no-34-udi-appeal-guidance-klage-pa-vedtak.md",
+                "source-library/norway/documents/references/no-38-une-eea-cases.md",
+                "source-library/norway/documents/references/no-42-sivilombudet-immigration-statements-archive.md",
+                "source-library/norway/documents/references/no-43-sivilombudet-complaint-route.md",
+                "source-library/norway/documents/references/no-44-supreme-court-family-immigration-ruling-hr-2022-2329-a.md",
+                "source-library/norway/documents/references/no-48-legal-aid-act-lov-1980-06-13-35.md"
+              ]
+            }
+          ],
+          "open_gap": "No verified decision-specific route states which remedy applies, its deadline, and whether the result pauses removal or another adverse measure."
+        }
+      ],
+      "open_gap": "Reference-note existence is not remedy coverage. Build a decision-by-decision remedy map from current official text and identify the EEA and Schengen protections applicable to each route."
+    },
+    {
+      "topic_id": "P05",
+      "label": "Appointment access and processing clock",
+      "status": "incomplete",
+      "layers": [
+        {
+          "layer": "primary_law",
+          "status": "unresolved",
+          "evidence": [],
+          "open_gap": "No provision-level source map identifies the event that starts each statutory processing period or separates appointment delay from a decision deadline."
+        },
+        {
+          "layer": "implementing_rules",
+          "status": "unresolved",
+          "evidence": [],
+          "open_gap": "Route-specific rules for scheduling, incomplete applications, pauses, extensions, priority and remedies have not been reconciled."
+        },
+        {
+          "layer": "procedure_and_practice",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": ["no-29", "no-30", "no-31", "no-33", "no-51"],
+              "representation": "official application, checklist, waiting-time and routing reference notes; no-30 attachment remains pending",
+              "local_artifact_paths": [
+                "source-library/norway/documents/references/no-29-udi-application-checklists.md",
+                "source-library/norway/documents/references/no-30-udi-eu-eea-family-visa-checklist-pdf.md",
+                "source-library/norway/documents/references/no-31-udi-self-service-application-workflow.md",
+                "source-library/norway/documents/references/no-33-udi-eea-brexit-waiting-times.md",
+                "source-library/norway/documents/references/no-51-norway-no-residence-permit-and-foreign-service-routing.md"
+              ]
+            }
+          ],
+          "open_gap": "The exact checklist attachment, route-specific appointment channel, current waiting-time measure, and distinction between appointment and legal decision clocks are not verified."
+        },
+        {
+          "layer": "remedies_and_oversight",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": ["no-34", "no-38", "no-41", "no-43"],
+              "representation": "official appeal, tribunal, case-time and ombudsman reference notes",
+              "local_artifact_paths": [
+                "source-library/norway/documents/references/no-34-udi-appeal-guidance-klage-pa-vedtak.md",
+                "source-library/norway/documents/references/no-38-une-eea-cases.md",
+                "source-library/norway/documents/references/no-41-une-processing-times.md",
+                "source-library/norway/documents/references/no-43-sivilombudet-complaint-route.md"
+              ]
+            }
+          ],
+          "open_gap": "No deadline or escalation route is accepted until the governing clock, trigger, pause, responsible authority and decision type are verified."
+        }
+      ],
+      "open_gap": "Dynamic waiting-time pages and checklists are operational evidence only; verify the actual legal clock and its remedies independently."
+    },
+    {
+      "topic_id": "P06",
+      "label": "Personal-data access, minimisation, and separate preservation request",
+      "status": "incomplete",
+      "layers": [
+        {
+          "layer": "primary_law",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": ["no-16"],
+              "representation": "Norwegian Personal Data Act official-reference note; shared GDPR text exists in core but is not a Norway-specific implementation text",
+              "local_artifact_paths": [
+                "source-library/norway/documents/references/no-16-personopplysningsloven-lov-2018-06-15-38.md",
+                "source-library/core/eu/eu_32016r0679_EN.md"
+              ]
+            }
+          ],
+          "open_gap": "No current Norwegian text or article-level map identifies the controller, applicable processing regime, immigration-specific rules, access, correction, restriction, retention or exceptions."
+        },
+        {
+          "layer": "implementing_rules",
+          "status": "unresolved",
+          "evidence": [],
+          "open_gap": "The interaction of GDPR as incorporated by EEA JCD 154/2018, Norwegian implementing law, law-enforcement processing and immigration-system rules is not established for each data store."
+        },
+        {
+          "layer": "procedure_and_practice",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": ["no-35", "no-36", "no-37", "no-46", "no-47", "no-52"],
+              "representation": "official case-file, personal-data request, privacy, journal-service and regulator reference notes",
+              "local_artifact_paths": [
+                "source-library/norway/documents/references/no-35-udi-access-to-documents-in-an-individual-case.md",
+                "source-library/norway/documents/references/no-36-udi-request-for-access-to-personal-data.md",
+                "source-library/norway/documents/references/no-37-udi-privacy-declaration.md",
+                "source-library/norway/documents/references/no-46-udi-public-journal-in-einnsyn.md",
+                "source-library/norway/documents/references/no-47-einnsyn-public-journal-service.md",
+                "source-library/norway/documents/references/no-52-norwegian-data-protection-authority.md"
+              ]
+            }
+          ],
+          "open_gap": "These are locators, not retained forms or current service text. Separate administrative-file access from GDPR access, public journals, preservation, correction, deletion and supervisory complaints."
+        },
+        {
+          "layer": "remedies_and_oversight",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": ["no-36", "no-43", "no-52"],
+              "representation": "official data-access, ombudsman and data-protection-authority reference notes",
+              "local_artifact_paths": [
+                "source-library/norway/documents/references/no-36-udi-request-for-access-to-personal-data.md",
+                "source-library/norway/documents/references/no-43-sivilombudet-complaint-route.md",
+                "source-library/norway/documents/references/no-52-norwegian-data-protection-authority.md"
+              ]
+            }
+          ],
+          "open_gap": "No source-backed route maps response deadlines, lawful exceptions, controller review, supervisory complaint and judicial review for a specific immigration data system."
+        }
+      ],
+      "open_gap": "Map data rights to the actual authority, purpose, data store and processing regime. EEA incorporation of GDPR does not establish that every immigration system or processing purpose follows the same route."
+    }
+  ]
+}

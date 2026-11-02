@@ -151,6 +151,14 @@ class VersionConsistencyTests(unittest.TestCase):
             root, registry = self.make_distribution(Path(temporary))
             self.assertEqual(validate_distribution(root, registry), {"components": 2, "countries": 1})
 
+    def test_runtime_bytecode_does_not_change_distributed_file_hashes(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root, registry = self.make_distribution(Path(temporary))
+            bytecode = root / CORE_NAME / "skills/eudirective-core/scripts/__pycache__/runtime.cpython-312.pyc"
+            bytecode.parent.mkdir(parents=True)
+            bytecode.write_bytes(b"ephemeral runtime bytecode")
+            self.assertEqual(validate_distribution(root, registry), {"components": 2, "countries": 1})
+
     def test_stale_self_disclosure_fails_even_when_hashes_are_refreshed(self):
         with tempfile.TemporaryDirectory() as temporary:
             root, registry = self.make_distribution(Path(temporary))

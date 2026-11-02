@@ -1,20 +1,20 @@
 {
   "schema_version": "1.0",
-  "review_date": "2026-10-29",
+  "review_date": "2026-11-01",
   "jurisdiction": "FI",
   "status": "partial",
   "publisher_assessment": {
     "publisher": "Finlex",
     "owner": "Ministry of Justice of Finland",
     "maintainer": "Legal Register Centre",
-    "decision": "Thirty-five official external references are accepted with item-specific scope limits, including current Finnish statutes, official agency guidance, discovery and service locators, court information and oversight material. Two Finnish current-law text conversions are accepted as dated local copies after source and replay checks. One obsolete Migri route is dispositioned as already represented by a current EU-family page and wrong-scope for EU free movement. Two official oversight sites remain under human review. No topic or whole-country completion is accepted.",
+    "decision": "Thirty-five official external references are accepted with item-specific scope limits, including current Finnish statutes, official agency guidance, discovery and service locators, court information and oversight material. Four Finnish current-law text conversions are accepted as dated local copies after source and replay checks. Act 616/2019 has a 61-section comparison with the pinned Legalize candidate at the 2026-10-09 Finlex cutoff; the Data Protection Act 1050/2018 local text includes §§18a and 36a. One obsolete Migri route is dispositioned as already represented by a current EU-family page and wrong-scope for EU free movement. Two official oversight sites remain under human review. No topic or whole-country completion is accepted.",
     "basis": "The Finlex site identifies its government ownership and maintenance, labels consolidated laws as current, and exposes versioned ELI identifiers. Direct page links provide a usable government-published text without requiring API registration, a local conversion pipeline, or a reconstruction of Gazette fragments.",
-    "limitation": "External-reference acceptance is limited to the listed page identities and item scopes; it does not certify every statement on dynamic guidance pages or establish topic coverage. Several Migri and DVV pages were confirmed through official-site search results or official links after the research viewer returned 403. The Parliamentary Ombudsman English brochure was identified on its official domain, but the site root was not accessible. The two accepted local Finnish copies are dated captures and were not independently compared clause by clause with publisher pages."
+    "limitation": "External-reference acceptance is limited to the listed page identities and item scopes; it does not certify every statement on dynamic guidance pages or establish topic coverage. Several Migri and DVV pages were confirmed through official-site search results or official links after the research viewer returned 403. The Parliamentary Ombudsman English brochure was identified on its official domain, but the site root was not accessible. The four accepted Finnish legal local copies are dated captures; Act 616/2019 was compared section by section with the pinned Legalize candidate at the 2026-10-09 Finlex cutoff. This does not establish later currentness. The Aliens Act and Administrative Procedure Act captures have not been independently compared clause by clause with publisher pages. Act 875/2026 commencement remains unresolved."
   },
   "counts": {
     "candidate_records": 37,
     "accepted_external_references": 35,
-    "accepted_local_copies": 4,
+    "accepted_local_copies": 6,
     "remaining_candidate_records": 2,
     "accepted_topics": 0,
     "country_review_complete": false,
@@ -129,26 +129,32 @@
     {
       "source_id": "fi-data-protection-act",
       "title": "Tietosuojalaki, 1050/2018",
-      "url": "https://finlex.fi/fi/lainsaadanto/2018/1050",
+      "url": "https://www.finlex.fi/fi/lainsaadanto/2018/1050",
       "language": "fi",
       "page_status": "Ajantasainen",
       "current_consolidation_eli": "http://data.finlex.fi/eli/sd/2018/1050/ajantasa/2026-05-22/fin",
       "consolidation_date": "2026-05-22",
-      "checked_at": "2026-10-21",
-      "acceptance_scope": "Finnish national data-protection implementation.",
-      "limitations": "The Swedish parallel page surfaced as 2025-06-27 and requires a currentness check; English translation is not accepted as current.",
+      "checked_at": "2026-10-31",
+      "acceptance_scope": "Finnish national data-protection implementation, retained as the complete Finnish current-text edition displayed by Finlex on 2026-10-31. The local text is a dated snapshot; its use is limited to personal-data issues identified against the responsible controller, system, purpose, authority, route and procedural stage.",
+      "limitations": "The local text is a deterministic conversion from the Finnish current-text page and the ELI edition dated 2026-05-22. Hash-pinned capture and replay were checked; a section inventory confirmed §§18a and 36a absent from the earlier Legalize and API-derived candidates. No clause-by-clause semantic comparison was performed. The official Swedish page was dated 2025-06-27 and is older than the accepted Finnish edition; English is not accepted as current.",
       "language_versions": {
         "fi": {
           "url": "https://finlex.fi/fi/lainsaadanto/2018/1050",
           "consolidation_date": "2026-05-22",
-          "status": "accepted external reference"
+          "status": "accepted external reference; dated current Finnish text also retained locally"
         },
         "sv": {
           "url": "https://www.finlex.fi/sv/lagstiftning/2018/1050",
           "consolidation_date": "2025-06-27",
           "status": "official Swedish version is older than Finnish consolidation 2026-05-22; recheck before current-law reliance"
         }
-      }
+      },
+      "local_path": "documents/legislation/fi-data-protection-act-1050-2018-current-fi.md",
+      "local_sha256": "e31abe6d330b6c6f651f34240b1d5ea47417fcdc89b79effca32d937988241e6",
+      "local_copy_checked_at": "2026-10-31",
+      "local_copy_status": "accepted",
+      "edition": "2026-05-22",
+      "local_copy_note": "Accepted dated Finnish text capture. Official page identity and current ELI, raw-page SHA-256, deterministic conversion replay, extraction thresholds, and the 40-section inventory were verified. The text is the replayed statutory body with a separately hashed editorial acceptance note; clause-by-clause semantic comparison was not performed."
     },
     {
       "source_id": "fi-language-act",
@@ -206,21 +212,25 @@
       "page_status": "Ajantasainen",
       "current_consolidation_eli": "http://data.finlex.fi/eli/sd/2019/616/ajantasa/2026-10-09/fin",
       "consolidation_date": "2026-10-09",
-      "checked_at": "2026-10-21",
-      "acceptance_scope": "Sector-specific police data-processing rules; current Finnish Finlex consolidation dated 2026-10-09.",
-      "limitations": "The Swedish parallel page was dated 2026-09-04; the accepted Finnish consolidation dated 2026-10-09 is later and reflects amendments effective 2026-10-01.",
+      "checked_at": "2026-11-01",
+      "acceptance_scope": "Finnish current-law text for the Act on the Processing of Personal Data by the Police, as a dated Finlex consolidation with a 2026-10-09 cutoff; source use remains conditional on a concrete mapped migration/residence data issue.",
+      "limitations": "The XML is a Finlex publisher consolidation dated 2026-10-09 and marks the expression non-authoritative and non-prescriptive. All 61 section bodies were compared with the pinned Legalize candidate and matched. Act 875/2026 was published after the consolidation; its decree-set commencement was not verified. Consult a later Finlex version and the relevant commencement decree before relying on post-cutoff status.",
       "language_versions": {
         "fi": {
-          "url": "https://finlex.fi/fi/lainsaadanto/2019/616",
+          "url": "https://www.finlex.fi/fi/lainsaadanto/2019/616",
           "consolidation_date": "2026-10-09",
-          "status": "accepted external reference; current Finnish consolidation recorded in the Finlex API capture"
+          "status": "accepted external reference; dated Finlex local text is also retained"
         },
         "sv": {
           "url": "https://www.finlex.fi/sv/lagstiftning/2019/616",
           "consolidation_date": "2026-09-04",
           "status": "official Swedish current-law page; older than Finnish 2026-10-09 consolidation"
         }
-      }
+      },
+      "local_path": "documents/legislation/fi-police-personal-data-act-616-2019-current-fi.md",
+      "local_sha256": "36864ea752df56cfbed2c4561694fa610171b5e69a4049632b1ee9892bd99e2b",
+      "local_copy_checked_at": "2026-11-01",
+      "local_copy_status": "Accepted dated Finlex XML conversion. Source XML SHA-256 a052f857aee861690881e1f6aa7f548c15871699559e63263bf34dfbf1ed7b9f. Converter replay and retained document hash verified; all 61 section bodies match the pinned Legalize candidate after formatting-only normalization. Not current beyond the 2026-10-09 consolidation; Act 875/2026 decree-set commencement remains unverified."
     },
     {
       "source_id": "fi-police-communications-order-2025",
@@ -612,7 +622,7 @@
       "reason": "Official English translation tracks amendments through 639/2021; it predates amendment 213/2026."
     }
   ],
-  "completion_note": "Thirty-four external references and two dated local copies are accepted. Two source records remain open for human review: the Chancellor of Justice and Data Protection Ombudsman English routes could not be confirmed beyond their official landing URLs because direct requests returned 403. The old Migri family-application route was dispositioned as a wrong-scope Withdrawal Agreement/Brexit page; the current EU-family route is separately accepted. No topic is accepted and Finland is not complete.",
+  "completion_note": "Thirty-five external references and five dated local copies are accepted. Two source records remain open for human review: the Chancellor of Justice and Data Protection Ombudsman English routes could not be confirmed beyond their official landing URLs because direct requests returned 403. The old Migri family-application route was dispositioned as a wrong-scope Withdrawal Agreement/Brexit page; the current EU-family route is separately accepted. No topic is accepted and Finland is not complete.",
   "language_review": {
     "official_languages": [
       "Finnish",
@@ -749,7 +759,8 @@
     "fi-data-protection-act": {
       "source_identity_id": "fi:url:fafd4c3a8d75662ae785",
       "representation_ids": [
-        "fi:url:fafd4c3a8d75662ae785#url:fi:7681649a9812"
+        "fi:url:fafd4c3a8d75662ae785#local:fi:8ef268a0f093",
+        "fi:url:fafd4c3a8d75662ae785#url:fi:6a13dee6cd66"
       ],
       "identity_resolution_status": "resolved"
     },
@@ -978,6 +989,7 @@
     "fi-police-personal-data-act": {
       "source_identity_id": "fi:url:651d9576b87a816ddadb",
       "representation_ids": [
+        "fi:url:651d9576b87a816ddadb#local:fi:1af5b7981aa9",
         "fi:url:651d9576b87a816ddadb#url:fi:b8df93a657ba"
       ],
       "identity_resolution_status": "resolved"

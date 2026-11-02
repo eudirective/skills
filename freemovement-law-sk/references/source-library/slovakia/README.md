@@ -7,6 +7,7 @@ Reviewed 2026-10-29. The 40 bounded official-source leads now each have a final 
 - [Human-readable source register and search log](references/source-list.md)
 - [Official-reference decisions and note hashes](references/source-acceptance.json)
 - [Issue-led coverage register](references/coverage-register.md)
+- [Legalize archive scope crosswalk](references/legalize-archive-scope-crosswalk.md)
 - [Source-rule sustainability assessment](references/sustainability-assessment.md)
 
 The other 31 converted candidate texts and captured source inputs remain in the EU Source Update Monitor's indexed local-only archive. The Act 71/1967 transcription is linked from the source register and remains subordinate to Slov-Lex's binding PDF. Four outcomes remain open or not relied on: the older July 2024 Interior FAQ, the unverified Foreign Police contact route, the incorrect 2022 English MZV page, and the stale 2022 Hanoi instructions. The wider MZV mission network still needs location-specific human review when a particular applicant route is in scope.

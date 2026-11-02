@@ -1,0 +1,440 @@
+{
+  "schema_version": "1.0.0",
+  "jurisdiction": "FR",
+  "as_of": "2026-10-31",
+  "scope_map": {
+    "version": "1.0.0",
+    "approval_status": "owner_approved",
+    "approval_scope": "scope framework only; it does not accept sources, topics, or country completion",
+    "sha256": "8705c0b379adb10143c0a45349f0533c075b29420f4b2848422c3e18d4aa8544"
+  },
+  "policy": "Coverage is issue-led and separate from source acceptance. A topic remains incomplete until its required legal, implementing, procedure/practice and remedy layers have current, route-specific evidence. Each evidence record identifies real files under local_artifact_paths and labels whether it is statutory text, an official procedure artifact, or a project-authored summary. Source IDs are metadata keys; a URL or locator is not a source document. Files proposed in PR #168 remain proposal-only until merged.",
+  "required_layers": [
+    "primary_law",
+    "implementing_rules",
+    "procedure_and_practice",
+    "remedies_and_oversight"
+  ],
+  "adequately_covered_topic_count": 0,
+  "country_review_complete": false,
+  "coverage_status": "initial_issue_map_with_open_gaps",
+  "topics": [
+    {
+      "topic_id": "P01",
+      "label": "Access blocked before formal lodging",
+      "status": "incomplete",
+      "layers": [
+        {
+          "layer": "primary_law",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": [
+                "fr-01-ceseda-book-ii-eu-citizens-and-family-members-(including-articles-l.233-1-o"
+              ],
+              "representation": "official_reference plus project-authored summary",
+              "local_artifact_paths": [
+                "source-library/france/documents/legislation/fr-ceseda-book-ii-regulatory-eu-citizens-family.md"
+              ]
+            }
+          ],
+          "open_gap": "No complete provision map of formal visa application intake, EU-family facilitation, responsible authority, and refusal to accept lodging."
+        },
+        {
+          "layer": "implementing_rules",
+          "status": "unresolved",
+          "evidence": [],
+          "open_gap": "Mission/provider rules, appointment prerequisites, exception routes, and current implementing instruments are not inventoried by route."
+        },
+        {
+          "layer": "procedure_and_practice",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": [
+                "fr-05-france-visas-route-for-family-members-of-european-citizens",
+                "fr-cerfa-14076-eu-family-visa-form",
+                "fr-france-visas-submission-location-directory"
+              ],
+              "representation": "local project summary/form map and dynamic official-reference locator",
+              "local_artifact_paths": [
+                "source-library/france/documents/guidance/fr-france-visas-family-eu.md",
+                "source-library/france/documents/guidance/fr-cerfa-14076-eu-family-visa-form.md",
+                "source-library/france/documents/procedure/fr-crrv-official-directory.md"
+              ]
+            }
+          ],
+          "open_gap": "Mission-specific channel, jurisdiction, appointment, document, accommodation, and provider practice remains incomplete; dynamic pages require fresh review."
+        },
+        {
+          "layer": "remedies_and_oversight",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": [
+                "fr-service-public-short-visa-refusal",
+                "fr-service-public-long-visa-refusal",
+                "fr-cja-r312-18-visa-jurisdiction",
+                "fr-crpa-l411-1-appeals"
+              ],
+              "representation": "official guidance summaries and retained statutory excerpts",
+              "local_artifact_paths": [
+                "source-library/france/documents/guidance/fr-service-public-short-visa-refusal.md",
+                "source-library/france/documents/guidance/fr-service-public-long-visa-refusal.md",
+                "source-library/france/documents/legislation/fr-cja-r312-18-visa-jurisdiction.md",
+                "source-library/france/documents/legislation/fr-crpa-l411-1-appeals.md"
+              ]
+            }
+          ],
+          "open_gap": "A decision-specific route from blocked intake to notice, CRRV/administrative review, court jurisdiction, deadline, and urgent relief is not fully cross-referenced."
+        }
+      ],
+      "open_gap": "Separate formal lodging from appointment access, consular inquiry and provider workflow; verify route, authority, exceptions, and remedies for each relevant mission."
+    },
+    {
+      "topic_id": "P02",
+      "label": "Digital-only or service-provider access requirement",
+      "status": "incomplete",
+      "layers": [
+        {
+          "layer": "primary_law",
+          "status": "unresolved",
+          "evidence": [],
+          "open_gap": "No bounded national legal-text map establishes when an online-only route is required or when an alternative channel must be available."
+        },
+        {
+          "layer": "implementing_rules",
+          "status": "unresolved",
+          "evidence": [],
+          "open_gap": "The underlying current ANEF/France-Visas technical and procedural rules, exceptions, delegation, and accessibility duties have not been compared."
+        },
+        {
+          "layer": "procedure_and_practice",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": [
+                "fr-service-public-anef-task-r59398",
+                "fr-ministry-anef-overview"
+              ],
+              "representation": "dated Service Public task summary and official overview locator",
+              "local_artifact_paths": [
+                "source-library/france/documents/procedure/fr-service-public-anef-task-r59398.md"
+              ]
+            }
+          ],
+          "open_gap": "The retained ANEF task is a bounded dated summary. Verify the live process, assistance channel, outage path, accessibility and non-digital alternatives for each procedure."
+        },
+        {
+          "layer": "remedies_and_oversight",
+          "status": "unresolved",
+          "evidence": [],
+          "open_gap": "No route-specific complaint, accommodation, or review path for a digital-access failure is mapped."
+        }
+      ],
+      "open_gap": "Separate the legal rule from portal availability and provider practice; verify live service behavior and alternative channels."
+    },
+    {
+      "topic_id": "P03",
+      "label": "EU-family proof and ordinary Schengen documentary checklist",
+      "status": "incomplete",
+      "layers": [
+        {
+          "layer": "primary_law",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": [
+                "fr-ceseda-book-ii-legislative",
+                "fr-06-code-civil-article-47:-evidentiary-effect-and-verification-of-foreign-civil"
+              ],
+              "representation": "project-authored CESEDA summary and retained Code civil Article 47 text",
+              "local_artifact_paths": [
+                "source-library/france/documents/legislation/fr-ceseda-book-ii-legislative-eu-citizens-family.md",
+                "source-library/france/documents/legislation/fr-code-civil-article-47-foreign-civil-status-records.md"
+              ]
+            }
+          ],
+          "open_gap": "Map each EU-family route and documentary status rule; broader recognition, parentage, marriage, adoption, and alternative-proof rules remain separately scoped and incomplete."
+        },
+        {
+          "layer": "implementing_rules",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": [
+                "fr-01-ceseda-book-ii-eu-citizens-and-family-members-(including-articles-l.233-1-o"
+              ],
+              "representation": "official-reference locator plus project-authored regulatory summary",
+              "local_artifact_paths": [
+                "source-library/france/documents/legislation/fr-ceseda-book-ii-regulatory-eu-citizens-family.md"
+              ]
+            }
+          ],
+          "open_gap": "No complete current Article L/R and national/EU documentary crosswalk is maintained."
+        },
+        {
+          "layer": "procedure_and_practice",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": [
+                "fr-05-france-visas-route-for-family-members-of-european-citizens",
+                "fr-cerfa-14076-eu-family-visa-form",
+                "fr-service-public-family-card-f19315"
+              ],
+              "representation": "local summaries/form-field map with recorded freshness limits",
+              "local_artifact_paths": [
+                "source-library/france/documents/guidance/fr-france-visas-family-eu.md",
+                "source-library/france/documents/guidance/fr-cerfa-14076-eu-family-visa-form.md",
+                "source-library/france/documents/guidance/fr-service-public-family-card-f19315.md"
+              ]
+            }
+          ],
+          "open_gap": "Keep EU-family facilitation separate from ordinary Schengen routes; refresh current checklists, translation/authentication rules, and mission practice."
+        },
+        {
+          "layer": "remedies_and_oversight",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": [
+                "fr-cja-r312-18-visa-jurisdiction",
+                "fr-cja-r421-1-deadline",
+                "fr-crpa-l411-1-appeals"
+              ],
+              "representation": "retained statutory excerpts",
+              "local_artifact_paths": [
+                "source-library/france/documents/legislation/fr-cja-r312-18-visa-jurisdiction.md",
+                "source-library/france/documents/legislation/fr-cja-r421-1-deadline.md",
+                "source-library/france/documents/legislation/fr-crpa-l411-1-appeals.md"
+              ]
+            }
+          ],
+          "open_gap": "No route-specific remedy map links disputed identity/proof decisions to the competent authority, available review, deadline, and effect of pending proceedings."
+        }
+      ],
+      "open_gap": "Map relationship category, issuing/host route, evidence alternatives, translation/authentication, and decision-specific remedies; do not treat a form or guidance summary as controlling law."
+    },
+    {
+      "topic_id": "P04",
+      "label": "Complaint, appeal, or review-path information",
+      "status": "incomplete",
+      "layers": [
+        {
+          "layer": "primary_law",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": [
+                "fr-crpa-l411-1-appeals",
+                "fr-cja-r312-18-visa-jurisdiction",
+                "fr-cja-r421-1-deadline",
+                "fr-code-travail"
+              ],
+              "representation": "retained statutory excerpts; R5221-2/R5221-17/R5221-19 are proposed in draft PR #168",
+              "local_artifact_paths": [
+                "source-library/france/documents/legislation/fr-crpa-l411-1-appeals.md",
+                "source-library/france/documents/legislation/fr-cja-r312-18-visa-jurisdiction.md",
+                "source-library/france/documents/legislation/fr-cja-r421-1-deadline.md",
+                "source-library/france/documents/legislation/fr-code-travail-article-r5221-2-work-authorization-exemptions.md",
+                "source-library/france/documents/legislation/fr-r5221-17-and-r5221-19-decision-appeal.md"
+              ]
+            }
+          ],
+          "open_gap": "Only bounded provisions are represented. Special rules, reasons/notices, authority, deadlines, suspension, interim relief, and remedies vary by decision and route."
+        },
+        {
+          "layer": "implementing_rules",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": [
+                "fr-01-ceseda-book-ii-eu-citizens-and-family-members-(including-articles-l.233-1-o",
+                "fr-code-travail"
+              ],
+              "representation": "official-reference locator/project-authored summary; bounded work-authorisation text is in open PR #168",
+              "local_artifact_paths": [
+                "source-library/france/documents/legislation/fr-ceseda-book-ii-regulatory-eu-citizens-family.md",
+                "source-library/france/documents/legislation/fr-r5221-17-and-r5221-19-decision-appeal.md"
+              ]
+            }
+          ],
+          "open_gap": "No decision-type inventory or cross-code hierarchy check is complete; the PR #168 files are not yet on main."
+        },
+        {
+          "layer": "procedure_and_practice",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": [
+                "fr-service-public-short-visa-refusal",
+                "fr-service-public-long-visa-refusal",
+                "fr-service-public-legal-aid-f18074",
+                "fr-crrv-official-directory"
+              ],
+              "representation": "official guidance summaries and directory copy",
+              "local_artifact_paths": [
+                "source-library/france/documents/guidance/fr-service-public-short-visa-refusal.md",
+                "source-library/france/documents/guidance/fr-service-public-long-visa-refusal.md",
+                "source-library/france/documents/guidance/fr-service-public-legal-aid-f18074.md",
+                "source-library/france/documents/procedure/fr-crrv-official-directory.md"
+              ]
+            }
+          ],
+          "open_gap": "No case-specific route has been validated for every relevant decision-maker, appeal body, court, and procedural stage."
+        },
+        {
+          "layer": "remedies_and_oversight",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": [
+                "fr-cja-r312-18-visa-jurisdiction",
+                "fr-cja-r421-1-deadline",
+                "fr-crpa-l411-1-appeals",
+                "fr-service-public-legal-aid-f18074"
+              ],
+              "representation": "retained local text and official guidance summaries",
+              "local_artifact_paths": [
+                "source-library/france/documents/legislation/fr-cja-r312-18-visa-jurisdiction.md",
+                "source-library/france/documents/legislation/fr-cja-r421-1-deadline.md",
+                "source-library/france/documents/legislation/fr-crpa-l411-1-appeals.md",
+                "source-library/france/documents/guidance/fr-service-public-legal-aid-f18074.md"
+              ]
+            }
+          ],
+          "open_gap": "General procedure text does not establish a special deadline or complete remedy for any unreviewed decision; R5221-19 states no filing deadline."
+        }
+      ],
+      "open_gap": "For each route, identify decision authority, notice/reasons, administrative appeal, court jurisdiction, deadline, interim relief, legal aid, and EU-law scope."
+    },
+    {
+      "topic_id": "P05",
+      "label": "Appointment access and processing clock",
+      "status": "incomplete",
+      "layers": [
+        {
+          "layer": "primary_law",
+          "status": "unresolved",
+          "evidence": [],
+          "open_gap": "Statutory decision periods and their triggering events, pauses, extensions, and exceptions have not been mapped across visa and residence procedures."
+        },
+        {
+          "layer": "implementing_rules",
+          "status": "unresolved",
+          "evidence": [],
+          "open_gap": "No full inventory of special rules or measures governing appointment allocation and processing extensions is complete."
+        },
+        {
+          "layer": "procedure_and_practice",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": [
+                "fr-france-visas-submission-location-directory",
+                "fr-service-public-anef-task-r59398",
+                "fr-ministry-anef-overview"
+              ],
+              "representation": "dynamic official locator and dated ANEF task summary",
+              "local_artifact_paths": [
+                "source-library/france/documents/procedure/fr-service-public-anef-task-r59398.md",
+                "source-library/france/documents/procedure/fr-crrv-official-directory.md"
+              ]
+            }
+          ],
+          "open_gap": "Mission-specific appointment availability, booking channels, case-status systems, actual waits, and representative/provider rules remain unverified."
+        },
+        {
+          "layer": "remedies_and_oversight",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": [
+                "fr-cja-r421-1-deadline",
+                "fr-crpa-l411-1-appeals"
+              ],
+              "representation": "retained general statutory excerpts",
+              "local_artifact_paths": [
+                "source-library/france/documents/legislation/fr-cja-r421-1-deadline.md",
+                "source-library/france/documents/legislation/fr-crpa-l411-1-appeals.md"
+              ]
+            }
+          ],
+          "open_gap": "General court filing and appeal provisions do not establish the triggering event or remedy for a delayed decision or unavailable appointment."
+        }
+      ],
+      "open_gap": "Keep appointment delay separate from the legal decision clock; identify each trigger and the rule that pauses or extends the clock."
+    },
+    {
+      "topic_id": "P06",
+      "label": "Personal-data access, minimisation, and separate preservation request",
+      "status": "incomplete",
+      "layers": [
+        {
+          "layer": "primary_law",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": [
+                "fr-cnil-complaints",
+                "fr-cnil-agdref-information"
+              ],
+              "representation": "shared EU GDPR text plus France CNIL guidance/official locator",
+              "local_artifact_paths": [
+                "source-library/core/eu/eu_32016r0679_EN.md",
+                "source-library/france/documents/oversight/fr-cnil-complaints.md"
+              ]
+            }
+          ],
+          "open_gap": "French Law No. 78-17, controller-specific rules, law-enforcement processing, and the actual AGDREF controller/data scope are not mapped to retained national text."
+        },
+        {
+          "layer": "implementing_rules",
+          "status": "unresolved",
+          "evidence": [],
+          "open_gap": "No complete national implementing-rule, retention, restriction, and disclosure-exception map exists for the relevant immigration data systems."
+        },
+        {
+          "layer": "procedure_and_practice",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": [
+                "fr-cnil-complaints",
+                "fr-cada-access-portal",
+                "fr-cnil-agdref-information"
+              ],
+              "representation": "dated local CNIL/CADA summaries and official AGDREF locator",
+              "local_artifact_paths": [
+                "source-library/france/documents/oversight/fr-cnil-complaints.md",
+                "source-library/france/documents/oversight/fr-cada-access-portal.md"
+              ]
+            }
+          ],
+          "open_gap": "Identify the controller and data regime for each system; distinguish personal-data access from administrative-file access; current request channels and exceptions need verification."
+        },
+        {
+          "layer": "remedies_and_oversight",
+          "status": "partial",
+          "evidence": [
+            {
+              "source_ids": [
+                "fr-cnil-complaints",
+                "fr-cada-access-portal"
+              ],
+              "representation": "local procedural summaries, with CADA and CNIL roles kept distinct",
+              "local_artifact_paths": [
+                "source-library/france/documents/oversight/fr-cnil-complaints.md",
+                "source-library/france/documents/oversight/fr-cada-access-portal.md"
+              ]
+            }
+          ],
+          "open_gap": "No controller-specific request, response time, restriction/preservation step, CNIL/CADA route, or judicial remedy is cross-referenced; CADA access to administrative documents is not a substitute for GDPR rights."
+        }
+      ],
+      "open_gap": "Map controller, processing purpose, data regime, access/correction/retention path, exception, oversight body and separate preservation procedure."
+    }
+  ],
+  "path_base": "repository_root"
+}

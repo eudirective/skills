@@ -2,12 +2,12 @@
   "manifest_version": "0.1.0-candidate",
   "pack": "belgium-national-source-candidates",
   "jurisdiction": "BE",
-  "inventory_research_date": "2026-10-21",
+  "inventory_research_date": "2026-10-31",
   "scope": "A bounded discovery register of Belgian first-party sources relevant to free movement, third-country family members, visa and residence procedures, administrative process and remedies, cross-border civil-status evidence, privacy, and access to administrative records. It is not an exhaustive Belgian source inventory.",
-  "status": "official_links_and_thirty_local_copies_accepted_coverage_open",
-  "retrieval_status": "30 official-source local copies are accepted after separate review; 8 converted artifacts remain unaccepted review aids in the Monitor local-only archive; 9 official-link records have no local capture. One superseded IBZ route is not relied upon. Link acceptance, local-copy acceptance, freshness and topic coverage remain separate.",
-  "accepted_source_count": 30,
-  "candidate_source_count": 48,
+  "status": "official_links_and_thirty-three_local_copies_accepted_coverage_open",
+  "retrieval_status": "33 official-source local copies are accepted after separate review; 8 converted artifacts remain unaccepted review aids in the Monitor local-only archive; 9 official-link records have no local capture. One superseded IBZ route is not relied upon. Link acceptance, local-copy acceptance, freshness and topic coverage remain separate.",
+  "accepted_source_count": 33,
+  "candidate_source_count": 49,
   "official_hosts": [
     "n-lex.europa.eu",
     "ejustice.just.fgov.be",
@@ -188,6 +188,52 @@
         "be:language-variant:be-law-1980:6ed5adb25845#local:nl:5078068fa6ec",
         "be:language-variant:be-law-1980:6ed5adb25845#url:nl:452a7d8f20c0"
       ]
+    },
+    {
+      "id": "be-law-1991-fr",
+      "title": "Loi du 19 juillet 1991 relative aux registres de la population, aux cartes d’identité, aux cartes des étrangers et aux documents de séjour — French Justel record",
+      "source_type": "national_legislation",
+      "language": "fr",
+      "url": "https://www.ejustice.just.fgov.be/eli/loi/1991/07/19/1991000380/justel",
+      "publisher_identifier": {
+        "system": "Belgian Official Gazette / Justel",
+        "NUMAC": "1991000380",
+        "ELI": "https://www.ejustice.just.fgov.be/eli/loi/1991/07/19/1991000380/justel",
+        "source_identity_id": "be:url:f80df185f640b7f45d3a",
+        "representation_ids": [
+          "be:url:f80df185f640b7f45d3a#local:fr:79455996e2ac",
+          "be:url:f80df185f640b7f45d3a#url:fr:089d21f628d9"
+        ]
+      },
+      "functional_relationship": "conditional_national_source",
+      "verification_status": "Official Justel consolidation captured 2026-10-31, displaying update through 2026-08-05. The body contains 17 article headings; four articles differ materially from the Legalize candidate due to later amendments, confirmed against official amending laws. The Justel text is the retained current publisher consolidation, not the authentic Gazette reproduction.",
+      "retrieval_status": "accepted_source",
+      "retrieval_shape": "French current Justel HTML plain-text body, extracted to UTF-8 by the versioned Belgium conversion rule; Legalize BE candidate used as a discovery and retrieval trail only.",
+      "topic_ids": [],
+      "retrieval_method": "Legalize BE archive candidate legalize-dev/legalize-be@da37dfb18b17b06f8f8dc74c0d724cca22292bee:be/1991000380.md; text reconciled to current official Justel and rebuilt from the official page.",
+      "retrieved": true,
+      "accepted": true,
+      "source_sha256": "656a46afcd4ecc4edec858bd3424e72094438c82f93322590fe4a982b57ba141",
+      "converted_sha256": "4459150fe040807f1882887a8a460b61b2aac1e7a497ddbcf4372f5b83e04cd1",
+      "source_bytes": 118137,
+      "resolved_url": "https://www.ejustice.just.fgov.be/eli/loi/1991/07/19/1991000380/justel",
+      "external_reference_status": "accepted_with_narrow_external_scope",
+      "external_reference_scope": "Official source locator and retained current French consolidation shown through 2026-08-05 only; link acceptance does not establish topic coverage or Belgium completion.",
+      "source_status": "accepted",
+      "source_text_path": "source-library/belgium/documents/legislation/be-law-1991-fr.md",
+      "source_text_sha256": "4459150fe040807f1882887a8a460b61b2aac1e7a497ddbcf4372f5b83e04cd1",
+      "source_text_bytes": 71320,
+      "converted_bytes": 71320,
+      "content_selector": "Official HTML div#list-title-3.box.plain-text; visible page body only; presentation whitespace normalized; source notes retained; see references/conversion-rules/be-justel-html-to-markdown-v1.0.0.md.",
+      "review_state": "accepted",
+      "local_copy_status": "accepted",
+      "local_copy_review_date": "2026-10-31",
+      "source_identity_id": "be:url:f80df185f640b7f45d3a",
+      "representation_ids": [
+        "be:url:f80df185f640b7f45d3a#local:fr:79455996e2ac",
+        "be:url:f80df185f640b7f45d3a#url:fr:089d21f628d9"
+      ],
+      "publisher_consolidation_date": "2026-08-05"
     },
     {
       "id": "be-rd-1981-fr",
@@ -2433,14 +2479,14 @@
     "Mission-specific consular guidance, local residence procedures, legal-aid eligibility, and case-specific remedy/deadline mapping remain incomplete.",
     "Current Wallex and Flemish Codex editions were acquired as final documents on 2026-10-24; superseded captures remain non-authoritative review aids. The two regional decrees do not establish a nationwide access-to-records rule."
   ],
-  "retrieved_review_candidate_count": 8,
+  "retrieved_review_candidate_count": 9,
   "discovery_only_candidate_count": 40,
   "converted_review_candidate_count": 8,
-  "accepted_local_copy_count": 30,
-  "accepted_external_reference_count": 47,
+  "accepted_local_copy_count": 33,
+  "accepted_external_reference_count": 48,
   "link_only_candidate_count": 9,
   "coverage_gaps": [],
-  "local_copy_acceptance_note": "30 local source files passed separate review. 8 converted review artifacts remain nonterminal in the Monitor local-only archive; 9 other records have no local capture. No legal topic or country review is complete.",
+  "local_copy_acceptance_note": "33 local source files passed separate review. 8 converted review artifacts remain nonterminal in the Monitor local-only archive; 9 other records have no local capture. No legal topic or country review is complete.",
   "schema_version": 1,
   "source_identity_inventory_schema_version": 1,
   "source_identity_inventory_file": "references/source-identity-inventory.json",
@@ -2521,7 +2567,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/36",
+          "json_pointer": "/documents/37",
           "source_identity_id": "be:url:c0f05b0f292e4655da21",
           "representation_ids": [
             "be:url:c0f05b0f292e4655da21#local:nl:639812004b02",
@@ -2531,7 +2577,7 @@
         },
         {
           "path": "references/source-list.md",
-          "line": 42,
+          "line": 43,
           "table_headers": [
             "ID",
             "Official candidate and functional relationship",
@@ -2629,7 +2675,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/37",
+          "json_pointer": "/documents/38",
           "source_identity_id": "be:ambiguous:be-02-immigration-office-guidance-for-family-members-of-eu-citizens:983ddccbee96",
           "representation_ids": [
             "be:ambiguous:be-02-immigration-office-guidance-for-family-members-of-eu-citizens:983ddccbee96#url:en:3ed44ba2d9ef",
@@ -2638,7 +2684,7 @@
         },
         {
           "path": "references/source-list.md",
-          "line": 43,
+          "line": 44,
           "table_headers": [
             "ID",
             "Official candidate and functional relationship",
@@ -2748,7 +2794,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/38",
+          "json_pointer": "/documents/39",
           "source_identity_id": "be:url:501e41d6a36b80a7acd3",
           "representation_ids": [
             "be:url:501e41d6a36b80a7acd3#local:fr:f7ea6a86e3a3",
@@ -2758,7 +2804,7 @@
         },
         {
           "path": "references/source-list.md",
-          "line": 44,
+          "line": 45,
           "table_headers": [
             "ID",
             "Official candidate and functional relationship",
@@ -2870,7 +2916,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/23",
+          "json_pointer": "/documents/24",
           "source_identity_id": "be:url:5f70a53c3c749537880d",
           "representation_ids": [
             "be:url:5f70a53c3c749537880d#local:fr:2592d8eea204",
@@ -2880,7 +2926,7 @@
         },
         {
           "path": "references/source-list.md",
-          "line": 35,
+          "line": 36,
           "table_headers": [
             "ID",
             "Official candidate and functional relationship",
@@ -2974,7 +3020,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/8",
+          "json_pointer": "/documents/9",
           "source_identity_id": "be:url:44f7e051b553d7edbcef",
           "representation_ids": [
             "be:url:44f7e051b553d7edbcef#local:fr:71c8b056f0a3",
@@ -2983,7 +3029,7 @@
         },
         {
           "path": "references/source-list.md",
-          "line": 20,
+          "line": 21,
           "table_headers": [
             "ID",
             "Official candidate and functional relationship",
@@ -3076,7 +3122,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/9",
+          "json_pointer": "/documents/10",
           "source_identity_id": "be:url:797eee1210c2154a3536",
           "representation_ids": [
             "be:url:797eee1210c2154a3536#local:fr:35ef70ed0336",
@@ -3085,7 +3131,7 @@
         },
         {
           "path": "references/source-list.md",
-          "line": 21,
+          "line": 22,
           "table_headers": [
             "ID",
             "Official candidate and functional relationship",
@@ -3177,7 +3223,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/10",
+          "json_pointer": "/documents/11",
           "source_identity_id": "be:url:6f046059bed620fa6a87",
           "representation_ids": [
             "be:url:6f046059bed620fa6a87#local:fr:f44b6f96fe6d",
@@ -3186,7 +3232,7 @@
         },
         {
           "path": "references/source-list.md",
-          "line": 22,
+          "line": 23,
           "table_headers": [
             "ID",
             "Official candidate and functional relationship",
@@ -3261,7 +3307,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/6",
+          "json_pointer": "/documents/7",
           "source_identity_id": "be:language-variant:be-annex-index:9b58ddf6af9c",
           "representation_ids": [
             "be:language-variant:be-annex-index:9b58ddf6af9c#url:fr:bb0c898eb526"
@@ -3269,7 +3315,7 @@
         },
         {
           "path": "references/source-list.md",
-          "line": 18,
+          "line": 19,
           "table_headers": [
             "ID",
             "Official candidate and functional relationship",
@@ -3332,7 +3378,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/7",
+          "json_pointer": "/documents/8",
           "source_identity_id": "be:language-variant:be-annex-index:9b58ddf6af9c",
           "representation_ids": [
             "be:language-variant:be-annex-index:9b58ddf6af9c#url:nl:b68c72bf89c8"
@@ -3340,7 +3386,7 @@
         },
         {
           "path": "references/source-list.md",
-          "line": 19,
+          "line": 20,
           "table_headers": [
             "ID",
             "Official candidate and functional relationship",
@@ -3438,7 +3484,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/35",
+          "json_pointer": "/documents/36",
           "source_identity_id": "be:url:b2212126a0c645c2caf0",
           "representation_ids": [
             "be:url:b2212126a0c645c2caf0#local:fr:f4acb720c0a0",
@@ -3448,7 +3494,7 @@
         },
         {
           "path": "references/source-list.md",
-          "line": 50,
+          "line": 51,
           "table_headers": [
             "ID",
             "Official candidate and functional relationship",
@@ -3521,7 +3567,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/47",
+          "json_pointer": "/documents/48",
           "source_identity_id": "be:url:912a47f3651cc49d6ccf",
           "representation_ids": [
             "be:url:912a47f3651cc49d6ccf#url:fr:a835cd84108e"
@@ -3529,7 +3575,7 @@
         },
         {
           "path": "references/source-list.md",
-          "line": 63,
+          "line": 64,
           "table_headers": [
             "ID",
             "Official candidate and functional relationship",
@@ -3588,7 +3634,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/46",
+          "json_pointer": "/documents/47",
           "source_identity_id": "be:url:889c418d9fd725c44892",
           "representation_ids": [
             "be:url:889c418d9fd725c44892#url:fr:c9ec36e93eea"
@@ -3596,7 +3642,7 @@
         },
         {
           "path": "references/source-list.md",
-          "line": 62,
+          "line": 63,
           "table_headers": [
             "ID",
             "Official candidate and functional relationship",
@@ -3716,7 +3762,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/29",
+          "json_pointer": "/documents/30",
           "source_identity_id": "be:url:4abd2b5105caf3c0552e",
           "representation_ids": [
             "be:url:4abd2b5105caf3c0552e#local:fr:e5304443989b",
@@ -3727,7 +3773,7 @@
         },
         {
           "path": "references/source-list.md",
-          "line": 41,
+          "line": 42,
           "table_headers": [
             "ID",
             "Official candidate and functional relationship",
@@ -3841,7 +3887,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/26",
+          "json_pointer": "/documents/27",
           "source_identity_id": "be:url:faa63aa379cb854f26f4",
           "representation_ids": [
             "be:url:faa63aa379cb854f26f4#local:fr:e1dbf8be44d8",
@@ -3851,7 +3897,7 @@
         },
         {
           "path": "references/source-list.md",
-          "line": 38,
+          "line": 39,
           "table_headers": [
             "ID",
             "Official candidate and functional relationship",
@@ -3987,7 +4033,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/14",
+          "json_pointer": "/documents/15",
           "source_identity_id": "be:url:4f5f1d421f515a6b3a88",
           "representation_ids": [
             "be:url:4f5f1d421f515a6b3a88#local:en:3ded8085397c",
@@ -3998,7 +4044,7 @@
         },
         {
           "path": "references/source-list.md",
-          "line": 26,
+          "line": 27,
           "table_headers": [
             "ID",
             "Official candidate and functional relationship",
@@ -4073,7 +4119,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/39",
+          "json_pointer": "/documents/40",
           "source_identity_id": "be:language-variant:be-data-protection-act-2018:6329594231c7",
           "representation_ids": [
             "be:language-variant:be-data-protection-act-2018:6329594231c7#url:fr:ff96133f1aed"
@@ -4081,7 +4127,7 @@
         },
         {
           "path": "references/source-list.md",
-          "line": 56,
+          "line": 57,
           "table_headers": [
             "ID",
             "Official candidate and functional relationship",
@@ -4140,7 +4186,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/40",
+          "json_pointer": "/documents/41",
           "source_identity_id": "be:language-variant:be-data-protection-act-2018:6329594231c7",
           "representation_ids": [
             "be:language-variant:be-data-protection-act-2018:6329594231c7#url:nl:ec2b36dfba4c"
@@ -4148,7 +4194,7 @@
         },
         {
           "path": "references/source-list.md",
-          "line": 57,
+          "line": 58,
           "table_headers": [
             "ID",
             "Official candidate and functional relationship",
@@ -4208,7 +4254,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/43",
+          "json_pointer": "/documents/44",
           "source_identity_id": "be:url:555f2ae58b8eed818684",
           "representation_ids": [
             "be:url:555f2ae58b8eed818684#url:de:55a44cceeca6"
@@ -4216,7 +4262,7 @@
         },
         {
           "path": "references/source-list.md",
-          "line": 59,
+          "line": 60,
           "table_headers": [
             "ID",
             "Official candidate and functional relationship",
@@ -4275,7 +4321,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/44",
+          "json_pointer": "/documents/45",
           "source_identity_id": "be:url:d803aa7932bc801aa98a",
           "representation_ids": [
             "be:url:d803aa7932bc801aa98a#url:de:c8f4e4f1bb05"
@@ -4283,7 +4329,7 @@
         },
         {
           "path": "references/source-list.md",
-          "line": 60,
+          "line": 61,
           "table_headers": [
             "ID",
             "Official candidate and functional relationship",
@@ -4363,7 +4409,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/31",
+          "json_pointer": "/documents/32",
           "source_identity_id": "be:language-variant:be-dpa-complaint:9bb46bdc7204",
           "representation_ids": [
             "be:language-variant:be-dpa-complaint:9bb46bdc7204#local:fr:97db9c89a922",
@@ -4372,7 +4418,7 @@
         },
         {
           "path": "references/source-list.md",
-          "line": 46,
+          "line": 47,
           "table_headers": [
             "ID",
             "Official candidate and functional relationship",
@@ -4464,7 +4510,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/32",
+          "json_pointer": "/documents/33",
           "source_identity_id": "be:language-variant:be-dpa-complaint:9bb46bdc7204",
           "representation_ids": [
             "be:language-variant:be-dpa-complaint:9bb46bdc7204#local:nl:26dac8ac9b39",
@@ -4473,7 +4519,7 @@
         },
         {
           "path": "references/source-list.md",
-          "line": 47,
+          "line": 48,
           "table_headers": [
             "ID",
             "Official candidate and functional relationship",
@@ -4546,7 +4592,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/18",
+          "json_pointer": "/documents/19",
           "source_identity_id": "be:url:f6e54761ddfbf1c19e86",
           "representation_ids": [
             "be:url:f6e54761ddfbf1c19e86#url:en:591aaad302a9"
@@ -4554,7 +4600,7 @@
         },
         {
           "path": "references/source-list.md",
-          "line": 30,
+          "line": 31,
           "table_headers": [
             "ID",
             "Official candidate and functional relationship",
@@ -4652,7 +4698,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/11",
+          "json_pointer": "/documents/12",
           "source_identity_id": "be:url:415209d2493379c6ae91",
           "representation_ids": [
             "be:url:415209d2493379c6ae91#local:en:460ef5f9ff6a",
@@ -4662,7 +4708,7 @@
         },
         {
           "path": "references/source-list.md",
-          "line": 23,
+          "line": 24,
           "table_headers": [
             "ID",
             "Official candidate and functional relationship",
@@ -4774,7 +4820,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/12",
+          "json_pointer": "/documents/13",
           "source_identity_id": "be:ambiguous:be-eu-family-guidance:f2c3300647cb",
           "representation_ids": [
             "be:ambiguous:be-eu-family-guidance:f2c3300647cb#local:en:f2600f9f7774",
@@ -4784,7 +4830,7 @@
         },
         {
           "path": "references/source-list.md",
-          "line": 24,
+          "line": 25,
           "table_headers": [
             "ID",
             "Official candidate and functional relationship",
@@ -4896,7 +4942,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/25",
+          "json_pointer": "/documents/26",
           "source_identity_id": "be:url:9217064b63ad1f6a1f29",
           "representation_ids": [
             "be:url:9217064b63ad1f6a1f29#local:fr:a29efb77cb6e",
@@ -4906,7 +4952,7 @@
         },
         {
           "path": "references/source-list.md",
-          "line": 37,
+          "line": 38,
           "table_headers": [
             "ID",
             "Official candidate and functional relationship",
@@ -5018,7 +5064,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/27",
+          "json_pointer": "/documents/28",
           "source_identity_id": "be:url:52db1fb986297fdcee54",
           "representation_ids": [
             "be:url:52db1fb986297fdcee54#local:en:3d34d3b03794",
@@ -5028,7 +5074,7 @@
         },
         {
           "path": "references/source-list.md",
-          "line": 39,
+          "line": 40,
           "table_headers": [
             "ID",
             "Official candidate and functional relationship",
@@ -5140,7 +5186,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/28",
+          "json_pointer": "/documents/29",
           "source_identity_id": "be:url:dae09af99583983c2949",
           "representation_ids": [
             "be:url:dae09af99583983c2949#local:en:16866c5af7ba",
@@ -5150,7 +5196,7 @@
         },
         {
           "path": "references/source-list.md",
-          "line": 40,
+          "line": 41,
           "table_headers": [
             "ID",
             "Official candidate and functional relationship",
@@ -5262,7 +5308,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/34",
+          "json_pointer": "/documents/35",
           "source_identity_id": "be:url:12f0eff487d5adafbc6d",
           "representation_ids": [
             "be:url:12f0eff487d5adafbc6d#local:nl:0c5f8bc4ac38",
@@ -5272,7 +5318,7 @@
         },
         {
           "path": "references/source-list.md",
-          "line": 49,
+          "line": 50,
           "table_headers": [
             "ID",
             "Official candidate and functional relationship",
@@ -5345,7 +5391,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/45",
+          "json_pointer": "/documents/46",
           "source_identity_id": "be:url:4e0fc42f769d63c1ed7e",
           "representation_ids": [
             "be:url:4e0fc42f769d63c1ed7e#url:fr:aedf3ff240f2"
@@ -5353,7 +5399,7 @@
         },
         {
           "path": "references/source-list.md",
-          "line": 61,
+          "line": 62,
           "table_headers": [
             "ID",
             "Official candidate and functional relationship",
@@ -5416,7 +5462,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/5",
+          "json_pointer": "/documents/6",
           "source_identity_id": "be:url:6a62dcd9bc17142be523",
           "representation_ids": [
             "be:url:6a62dcd9bc17142be523#url:en:1ff4caa0d2f0"
@@ -5424,7 +5470,7 @@
         },
         {
           "path": "references/source-list.md",
-          "line": 17,
+          "line": 18,
           "table_headers": [
             "ID",
             "Official candidate and functional relationship",
@@ -5650,6 +5696,107 @@
       "status_record_ids": []
     },
     {
+      "id": "be-law-1991-fr",
+      "title": "Loi du 19 juillet 1991 relative aux registres de la population, aux cartes d’identité, aux cartes des étrangers et aux documents de séjour — French Justel record",
+      "source_type": "national_legislation",
+      "official_urls": [
+        "https://ejustice.just.fgov.be/eli/loi/1991/07/19/1991000380/justel"
+      ],
+      "source_identity_id": "be:url:f80df185f640b7f45d3a",
+      "identity_resolution_status": "resolved",
+      "identity_resolution_basis": "catalogued official URL",
+      "status_categories": [
+        "accepted_external_reference",
+        "accepted_local_copy"
+      ],
+      "representation_ids": [
+        "be:url:f80df185f640b7f45d3a#local:fr:79455996e2ac",
+        "be:url:f80df185f640b7f45d3a#url:fr:089d21f628d9"
+      ],
+      "representations": [
+        {
+          "kind": "local_artifact",
+          "language": "fr",
+          "edition": "undated",
+          "url": null,
+          "path": "documents/legislation/be-law-1991-fr.md",
+          "representation_id": "be:url:f80df185f640b7f45d3a#local:fr:79455996e2ac",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ],
+          "source_identity_id": "be:url:f80df185f640b7f45d3a",
+          "representation_ids": [
+            "be:url:f80df185f640b7f45d3a#local:fr:79455996e2ac",
+            "be:url:f80df185f640b7f45d3a#url:fr:089d21f628d9"
+          ]
+        },
+        {
+          "kind": "official_reference",
+          "language": "fr",
+          "edition": "undated",
+          "url": "https://ejustice.just.fgov.be/eli/loi/1991/07/19/1991000380/justel",
+          "path": null,
+          "representation_id": "be:url:f80df185f640b7f45d3a#url:fr:089d21f628d9",
+          "acceptance_status": [
+            "accepted_external_reference",
+            "accepted_local_copy"
+          ],
+          "source_identity_id": "be:url:f80df185f640b7f45d3a",
+          "representation_ids": [
+            "be:url:f80df185f640b7f45d3a#local:fr:79455996e2ac",
+            "be:url:f80df185f640b7f45d3a#url:fr:089d21f628d9"
+          ]
+        }
+      ],
+      "catalogue_references": [
+        {
+          "path": "references/candidate-manifest.json",
+          "json_pointer": "/documents/3",
+          "source_identity_id": "be:url:f80df185f640b7f45d3a",
+          "representation_ids": [
+            "be:url:f80df185f640b7f45d3a#local:fr:79455996e2ac",
+            "be:url:f80df185f640b7f45d3a#url:fr:089d21f628d9"
+          ]
+        },
+        {
+          "path": "references/source-list.md",
+          "line": 15,
+          "table_headers": [
+            "ID",
+            "Official candidate and functional relationship",
+            "Verification and search outcome",
+            "Retrieval shape and material route constraint"
+          ],
+          "cells": [
+            "be-law-1991-fr",
+            "[Population registers, identity cards and residence documents law of 19 July 1991, French Justel](https://www.ejustice.just.fgov.be/eli/loi/1991/07/19/1991000380/justel) — conditional national source; Legalize BE used as retrieval trail and current text independently checked",
+            "Current Justel page captured 2026-10-31; publisher states consolidation through 2026-08-05. Actual retained text at [`documents/legislation/be-law-1991-fr.md`](../documents/legislation/be-law-1991-fr.md) was rebuilt from the official HTML body; the Legalize candidate is stale after 2024-08-30.",
+            "Use provisions on population registration, residence documents and related register data only for a supported EU free-movement/EU-family issue. Current text includes 2026 amendments effective 2026-09-28; 27 archived versions and 92 execution instruments remain separate."
+          ],
+          "category": "catalogue",
+          "source_identity_id": "be:url:f80df185f640b7f45d3a",
+          "representation_ids": [
+            "be:url:f80df185f640b7f45d3a#local:fr:79455996e2ac",
+            "be:url:f80df185f640b7f45d3a#url:fr:089d21f628d9"
+          ]
+        }
+      ],
+      "acceptance_references": [
+        {
+          "path": "references/source-acceptance.json",
+          "json_pointer": "/local_copy_decisions/32",
+          "category": "acceptance",
+          "source_identity_id": "be:url:f80df185f640b7f45d3a",
+          "representation_ids": [
+            "be:url:f80df185f640b7f45d3a#local:fr:79455996e2ac",
+            "be:url:f80df185f640b7f45d3a#url:fr:089d21f628d9"
+          ]
+        }
+      ],
+      "status_record_ids": []
+    },
+    {
       "id": "be-mobile-belgian-40ter",
       "title": "Family reunification with a Belgian who exercised free movement — Article 40ter §1 guidance",
       "source_type": "official_administrative_guidance",
@@ -5748,7 +5895,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/13",
+          "json_pointer": "/documents/14",
           "source_identity_id": "be:url:06c663981a4d9241de5a",
           "representation_ids": [
             "be:url:06c663981a4d9241de5a#local:nl:d26f79f4af8b",
@@ -5759,7 +5906,7 @@
         },
         {
           "path": "references/source-list.md",
-          "line": 25,
+          "line": 26,
           "table_headers": [
             "ID",
             "Official candidate and functional relationship",
@@ -5944,7 +6091,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/24",
+          "json_pointer": "/documents/25",
           "source_identity_id": "be:url:125be30f56c15b81ea81",
           "representation_ids": [
             "be:url:125be30f56c15b81ea81#local:fr:995e1e35d847",
@@ -5954,7 +6101,7 @@
         },
         {
           "path": "references/source-list.md",
-          "line": 36,
+          "line": 37,
           "table_headers": [
             "ID",
             "Official candidate and functional relationship",
@@ -6027,7 +6174,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/41",
+          "json_pointer": "/documents/42",
           "source_identity_id": "be:language-variant:be-publicity-provinces-municipalities-1997:0eae0465047c",
           "representation_ids": [
             "be:language-variant:be-publicity-provinces-municipalities-1997:0eae0465047c#url:fr:385b0d5a9440"
@@ -6071,7 +6218,7 @@
       "catalogue_references": [
         {
           "path": "references/source-list.md",
-          "line": 58,
+          "line": 59,
           "table_headers": [
             "ID",
             "Official candidate and functional relationship",
@@ -6130,7 +6277,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/42",
+          "json_pointer": "/documents/43",
           "source_identity_id": "be:language-variant:be-publicity-provinces-municipalities-1997:0eae0465047c",
           "representation_ids": [
             "be:language-variant:be-publicity-provinces-municipalities-1997:0eae0465047c#url:nl:ecbaf10d5710"
@@ -6197,7 +6344,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/3",
+          "json_pointer": "/documents/4",
           "source_identity_id": "be:language-variant:be-rd-1981:aced8656fa79",
           "representation_ids": [
             "be:language-variant:be-rd-1981:aced8656fa79#local:fr:943a630cf412",
@@ -6206,7 +6353,7 @@
         },
         {
           "path": "references/source-list.md",
-          "line": 15,
+          "line": 16,
           "table_headers": [
             "ID",
             "Official candidate and functional relationship",
@@ -6298,7 +6445,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/4",
+          "json_pointer": "/documents/5",
           "source_identity_id": "be:language-variant:be-rd-1981:aced8656fa79",
           "representation_ids": [
             "be:language-variant:be-rd-1981:aced8656fa79#local:nl:c3de748b2e14",
@@ -6307,7 +6454,7 @@
         },
         {
           "path": "references/source-list.md",
-          "line": 16,
+          "line": 17,
           "table_headers": [
             "ID",
             "Official candidate and functional relationship",
@@ -6417,7 +6564,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/15",
+          "json_pointer": "/documents/16",
           "source_identity_id": "be:url:aa2e1a9bb657c031f099",
           "representation_ids": [
             "be:url:aa2e1a9bb657c031f099#local:en:5c0de86fbab0",
@@ -6427,7 +6574,7 @@
         },
         {
           "path": "references/source-list.md",
-          "line": 27,
+          "line": 28,
           "table_headers": [
             "ID",
             "Official candidate and functional relationship",
@@ -6539,7 +6686,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/30",
+          "json_pointer": "/documents/31",
           "source_identity_id": "be:url:1cdb3f2ffafc9cf3f7de",
           "representation_ids": [
             "be:url:1cdb3f2ffafc9cf3f7de#local:fr:ea7bd6ebe1a5",
@@ -6549,7 +6696,7 @@
         },
         {
           "path": "references/source-list.md",
-          "line": 45,
+          "line": 46,
           "table_headers": [
             "ID",
             "Official candidate and functional relationship",
@@ -6661,7 +6808,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/20",
+          "json_pointer": "/documents/21",
           "source_identity_id": "be:url:8b5c7965d77a65c9afa2",
           "representation_ids": [
             "be:url:8b5c7965d77a65c9afa2#local:en:d58440202059",
@@ -6671,7 +6818,7 @@
         },
         {
           "path": "references/source-list.md",
-          "line": 32,
+          "line": 33,
           "table_headers": [
             "ID",
             "Official candidate and functional relationship",
@@ -6783,7 +6930,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/19",
+          "json_pointer": "/documents/20",
           "source_identity_id": "be:url:49c962ae9127699a83c6",
           "representation_ids": [
             "be:url:49c962ae9127699a83c6#local:en:04576db5cc07",
@@ -6793,7 +6940,7 @@
         },
         {
           "path": "references/source-list.md",
-          "line": 31,
+          "line": 32,
           "table_headers": [
             "ID",
             "Official candidate and functional relationship",
@@ -6905,7 +7052,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/17",
+          "json_pointer": "/documents/18",
           "source_identity_id": "be:url:09c2dc97c98ded59bc53",
           "representation_ids": [
             "be:url:09c2dc97c98ded59bc53#local:en:a4b001c7a393",
@@ -6915,7 +7062,7 @@
         },
         {
           "path": "references/source-list.md",
-          "line": 29,
+          "line": 30,
           "table_headers": [
             "ID",
             "Official candidate and functional relationship",
@@ -7027,7 +7174,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/21",
+          "json_pointer": "/documents/22",
           "source_identity_id": "be:url:62fcefd691badc1118fb",
           "representation_ids": [
             "be:url:62fcefd691badc1118fb#local:en:3177b7d89b40",
@@ -7037,7 +7184,7 @@
         },
         {
           "path": "references/source-list.md",
-          "line": 33,
+          "line": 34,
           "table_headers": [
             "ID",
             "Official candidate and functional relationship",
@@ -7149,7 +7296,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/16",
+          "json_pointer": "/documents/17",
           "source_identity_id": "be:url:20211610002bc7f30706",
           "representation_ids": [
             "be:url:20211610002bc7f30706#local:en:3d5c4ca10cc6",
@@ -7159,7 +7306,7 @@
         },
         {
           "path": "references/source-list.md",
-          "line": 28,
+          "line": 29,
           "table_headers": [
             "ID",
             "Official candidate and functional relationship",
@@ -7235,7 +7382,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/22",
+          "json_pointer": "/documents/23",
           "source_identity_id": "be:url:1a01a567611f3946dc07",
           "representation_ids": [
             "be:url:1a01a567611f3946dc07#url:en:da543076c0a5"
@@ -7243,7 +7390,7 @@
         },
         {
           "path": "references/source-list.md",
-          "line": 34,
+          "line": 35,
           "table_headers": [
             "ID",
             "Official candidate and functional relationship",
@@ -7365,7 +7512,7 @@
       "catalogue_references": [
         {
           "path": "references/candidate-manifest.json",
-          "json_pointer": "/documents/33",
+          "json_pointer": "/documents/34",
           "source_identity_id": "be:url:e31bbbbe6669a49b5442",
           "representation_ids": [
             "be:url:e31bbbbe6669a49b5442#local:fr:95152721df4a",
@@ -7376,7 +7523,7 @@
         },
         {
           "path": "references/source-list.md",
-          "line": 48,
+          "line": 49,
           "table_headers": [
             "ID",
             "Official candidate and functional relationship",
