@@ -7,13 +7,33 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 
-from publish_release import PublishError, ReleasePublisher
+from publish_release import GhClient, PublishError, ReleasePublisher
 
 
 REVISION = "a" * 40
 OLD_REVISION = "b" * 40
 CHANGELOG = "## [1.2.0] - 2026-11-02\n\n**Packages:** core 1.2.0\n\n- Safer releases.\n"
+
+
+class GhClientTests(unittest.TestCase):
+    def test_api_commands_use_repository_in_endpoint_without_repo_flag(self):
+        client = GhClient("eudirective/skills")
+        with patch("publish_release.subprocess.run") as run:
+            run.return_value.returncode = 0
+            run.return_value.stdout = b"{}"
+            run.return_value.stderr = b""
+            client.api_json("repos/eudirective/skills/commits/main")
+            client.delete_asset(42)
+            client.download_asset(43)
+
+        commands = [call.args[0] for call in run.call_args_list]
+        self.assertEqual(commands[0], ["gh", "api", "repos/eudirective/skills/commits/main"])
+        self.assertEqual(commands[1], ["gh", "api", "--method", "DELETE",
+                                       "repos/eudirective/skills/releases/assets/42"])
+        self.assertEqual(commands[2], ["gh", "api", "repos/eudirective/skills/releases/assets/43",
+                                       "-H", "Accept: application/octet-stream"])
 
 
 def make_distribution(root: Path, revision: str = REVISION) -> dict[str, bytes]:

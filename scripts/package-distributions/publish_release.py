@@ -39,7 +39,7 @@ class GhClient:
         return result.stdout if binary else result.stdout.decode("utf-8")
 
     def api_json(self, endpoint: str) -> object:
-        raw = self._run("api", endpoint, "--repo", self.repository)
+        raw = self._run("api", endpoint)
         try:
             return json.loads(raw)
         except (TypeError, json.JSONDecodeError) as exc:
@@ -74,7 +74,7 @@ class GhClient:
 
     def delete_asset(self, asset_id: int) -> None:
         self._run("api", "--method", "DELETE",
-                  f"repos/{self.repository}/releases/assets/{asset_id}", "--repo", self.repository)
+                  f"repos/{self.repository}/releases/assets/{asset_id}")
 
     def upload(self, tag: str, paths: list[Path]) -> None:
         self._run("release", "upload", tag, *(str(path) for path in paths), "--repo", self.repository)
@@ -87,7 +87,7 @@ class GhClient:
 
     def download_asset(self, asset_id: int) -> bytes:
         raw = self._run("api", f"repos/{self.repository}/releases/assets/{asset_id}",
-                        "--repo", self.repository, "-H", "Accept: application/octet-stream", binary=True)
+                        "-H", "Accept: application/octet-stream", binary=True)
         return raw
 
     def publish(self, tag: str) -> None:
