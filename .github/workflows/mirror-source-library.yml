@@ -122,7 +122,14 @@ jobs:
             install -D -m 0644 "$stage/component-index.json" skills/component-index.json
             install -D -m 0644 "$stage/source-inventory.json" skills/source-inventory.json
             install -D -m 0644 "$stage/migration-map.json" skills/migration-map.json
+            install -D -m 0644 "$stage/marketplace.json" skills/marketplace.json
             install -D -m 0644 "$stage/marketplace.json" skills/.agents/plugins/marketplace.json
+
+            # Both entry points must describe the same applied distribution before committing.
+            cmp skills/marketplace.json skills/.agents/plugins/marketplace.json
+            python3 skills/scripts/source-distribution/validate_versions.py \
+              --root skills \
+              --registry skills/scripts/source-distribution/country-registry.json
 
             # This attempt starts from a clean checkout of the triggering branch; stage the generated distribution as a whole.
             git -C skills add -A
