@@ -47,14 +47,27 @@ class GhClient:
 
     def resolve_tag(self, tag: str) -> str | None:
         try:
-            commit = self.api_json(f"repos/{self.repository}/commits/{tag}")
+            reference = self.api_json(f"repos/{self.repository}/git/ref/tags/{tag}")
         except PublishError as exc:
             if "HTTP 404" in str(exc):
                 return None
             raise
-        if not isinstance(commit, dict) or not isinstance(commit.get("sha"), str):
-            raise PublishError(f"GitHub did not resolve tag {tag} to a commit")
-        return commit["sha"]
+        if not isinstance(reference, dict) or not isinstance(reference.get("object"), dict):
+            raise PublishError(f"GitHub returned a malformed tag reference for {tag}")
+        target = reference["object"]
+        sha, object_type = target.get("sha"), target.get("type")
+        if not isinstance(sha, str):
+            raise PublishError(f"GitHub did not resolve tag {tag} to an object")
+        if object_type == "commit":
+            return sha
+        if object_type != "tag":
+            raise PublishError(f"Tag {tag} points to {object_type}, not a commit")
+        annotated = self.api_json(f"repos/{self.repository}/git/tags/{sha}")
+        if (not isinstance(annotated, dict) or not isinstance(annotated.get("object"), dict)
+                or annotated["object"].get("type") != "commit"
+                or not isinstance(annotated["object"].get("sha"), str)):
+            raise PublishError(f"GitHub did not resolve annotated tag {tag} to a commit")
+        return annotated["object"]["sha"]
 
     def get_release(self, tag: str) -> dict | None:
         try:

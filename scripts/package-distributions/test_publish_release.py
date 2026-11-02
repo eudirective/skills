@@ -35,6 +35,25 @@ class GhClientTests(unittest.TestCase):
         self.assertEqual(commands[2], ["gh", "api", "repos/eudirective/skills/releases/assets/43",
                                        "-H", "Accept: application/octet-stream"])
 
+    def test_missing_tag_ref_is_reported_as_absent(self):
+        client = GhClient("eudirective/skills")
+        with patch.object(client, "api_json", side_effect=PublishError("HTTP 404")):
+            self.assertIsNone(client.resolve_tag("freemovement-" + "a" * 40))
+
+    def test_lightweight_tag_ref_resolves_to_commit(self):
+        client = GhClient("eudirective/skills")
+        with patch.object(client, "api_json", return_value={"object": {"sha": "a" * 40, "type": "commit"}}):
+            self.assertEqual(client.resolve_tag("freemovement-" + "a" * 40), "a" * 40)
+
+    def test_annotated_tag_ref_resolves_to_commit(self):
+        client = GhClient("eudirective/skills")
+        with patch.object(client, "api_json", side_effect=[
+            {"object": {"sha": "b" * 40, "type": "tag"}},
+            {"object": {"sha": "a" * 40, "type": "commit"}},
+        ]) as api_json:
+            self.assertEqual(client.resolve_tag("freemovement-" + "a" * 40), "a" * 40)
+        self.assertEqual(api_json.call_count, 2)
+
 
 def make_distribution(root: Path, revision: str = REVISION) -> dict[str, bytes]:
     root.mkdir(parents=True, exist_ok=True)
