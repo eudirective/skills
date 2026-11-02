@@ -97,8 +97,7 @@ class FakeGitHub:
         return self.releases.get(tag)
 
     def create_draft(self, tag, revision, notes_path):
-        self.tags[tag] = revision
-        self.releases[tag] = {"id": self.next_id, "draft": True, "assets": []}
+        self.releases[tag] = {"id": self.next_id, "draft": True, "target_commitish": revision, "assets": []}
         self.next_id += 1
 
     def delete_asset(self, asset_id):
@@ -126,6 +125,7 @@ class FakeGitHub:
 
     def publish(self, tag):
         self.releases[tag]["draft"] = False
+        self.tags[tag] = self.releases[tag]["target_commitish"]
         self.published.append(tag)
 
     def branch_sha(self, branch):
@@ -169,6 +169,12 @@ class PublishReleaseTests(unittest.TestCase):
         self.assertEqual(state.latest_asset_retirement, "retired")
         self.assertEqual(self.client.releases["freemovement-latest"]["assets"], [])
 
+    def test_new_draft_is_bound_to_revision_before_github_creates_its_tag(self):
+        self.assertNotIn("freemovement-" + REVISION, self.client.tags)
+        state = self.publisher().publish()
+        self.assertEqual(state.status, "promoted")
+        self.assertEqual(self.client.tags["freemovement-" + REVISION], REVISION)
+
     def test_half_upload_failure_keeps_draft_and_does_not_change_latest(self):
         self.client.upload_failure = True
         with self.assertRaisesRegex(PublishError, "upload interruption"):
@@ -178,7 +184,8 @@ class PublishReleaseTests(unittest.TestCase):
         self.assertEqual(self.client.tags["freemovement-latest"], OLD_REVISION)
 
     def test_retry_resets_incomplete_draft_assets_and_finishes(self):
-        draft = {"id": 4, "draft": True, "assets": [{"id": 5, "name": "stale.zip", "data": b"stale"}]}
+        draft = {"id": 4, "draft": True, "target_commitish": REVISION,
+                 "assets": [{"id": 5, "name": "stale.zip", "data": b"stale"}]}
         self.client.tags["freemovement-" + REVISION] = REVISION
         self.client.releases["freemovement-" + REVISION] = draft
         state = self.publisher().publish()
