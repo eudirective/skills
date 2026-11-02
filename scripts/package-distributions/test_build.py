@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import hashlib
+import importlib.util
+import shutil
 import json
 from pathlib import Path
 import tempfile
@@ -91,18 +93,54 @@ class PluginArchiveBuildTests(unittest.TestCase):
                 for row in json.loads((self.root / "marketplace.json").read_text())["plugins"]
                 if row["name"] == result.name
             )
-            expected_entries = {f"{result.name}/"}
+            archive_root = plugin_root.relative_to(self.root).as_posix()
+            expected_entries = {f"{archive_root}/"}
             expected_entries.update(
-                f"{result.name}/{path.relative_to(plugin_root).as_posix()}{'/' if path.is_dir() else ''}"
+                f"{archive_root}/{path.relative_to(plugin_root).as_posix()}{'/' if path.is_dir() else ''}"
                 for path in plugin_root.rglob("*")
             )
             with zipfile.ZipFile(result.path) as archive:
                 self.assertIsNone(archive.testzip())
                 self.assertEqual(set(archive.namelist()), expected_entries)
-                self.assertIn(f"{result.name}/plugin.json", archive.namelist())
-                self.assertIn(f"{result.name}/.codex-plugin/plugin.json", archive.namelist())
-                self.assertIn(f"{result.name}/skills/{result.name}-skill/SKILL.md", archive.namelist())
+                self.assertIn(f"{archive_root}/plugin.json", archive.namelist())
+                self.assertIn(f"{archive_root}/.codex-plugin/plugin.json", archive.namelist())
+                self.assertIn(f"{archive_root}/skills/{result.name}-skill/SKILL.md", archive.namelist())
             self.assertEqual(result.sha256, hashlib.sha256(result.path.read_bytes()).hexdigest())
+
+    def test_extracted_plugins_resolve_country_modules_and_notes(self) -> None:
+        core_skill = self.root / "freemovement-law/skills/eudirective-core"
+        resolver = core_skill / "scripts/source_library_paths.py"
+        resolver.parent.mkdir(parents=True)
+        repository = Path(__file__).resolve().parents[2]
+        shutil.copyfile(repository / "freemovement-law/skills/eudirective-core/scripts/source_library_paths.py", resolver)
+        country_root = self.root / "country-plugin"
+        module_root = country_root / "skills/test-module"
+        module_root.mkdir(parents=True)
+        notes_root = country_root / "references/source-library/module-notes/test-country"
+        notes_root.mkdir(parents=True)
+        registry = {
+            "core_plugin": "freemovement-law",
+            "countries": [{"plugin_name": "fm-test", "package_directory": "country-plugin",
+                           "source_library_directory": "test-country", "iso_country_code": "XX"}],
+            "operational_modules": [{"module_id": "test-module", "plugin_name": "fm-test",
+                                     "package_directory": "country-plugin", "skill_directory": "skills/test-module",
+                                     "jurisdiction": "XX", "module_family": "member_state",
+                                     "notes_directory": "test-country"}],
+            "module_notes_ownership": [{"notes_directory": "test-country", "plugin_name": "fm-test"}],
+        }
+        (core_skill / "references").mkdir()
+        (core_skill / "references/national-source-routing.json").write_text(json.dumps(registry), encoding="utf-8")
+        installed = Path(self.temp.name).resolve() / "installed"
+        for archive in build_plugin_archives(self.root, self.output):
+            with zipfile.ZipFile(archive.path) as package:
+                package.extractall(installed)
+        installed_resolver = installed / resolver.relative_to(self.root)
+        spec = importlib.util.spec_from_file_location("installed_source_library_paths", installed_resolver)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        self.assertEqual(module.country_plugin_root("XX"), installed / "country-plugin")
+        self.assertEqual(module.module_skill_for("XX", "member_state"), installed / "country-plugin/skills/test-module")
+        self.assertEqual(module.module_notes_root("XX"), installed / "country-plugin/references/source-library/module-notes/test-country")
 
     def test_build_is_reproducible_and_replaces_only_managed_plugin_archives(self) -> None:
         first = build_plugin_archives(self.root, self.output)
