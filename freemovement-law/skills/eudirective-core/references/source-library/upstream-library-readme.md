@@ -1,5 +1,7 @@
 # EU source retrieval library
 
+**Licensing:** [Original Source Library material and third-party sources](LICENSING.md).
+
 Library release version: 0.15.0
 
 The reusable national-pack layout is documented in [the country-pack template](templates/country-pack/LAYOUT.md). The latest structural inventory is in [the folder audit](references/library-folder-audit-2026-10-19.md). The [country source acceptance overview](references/source-acceptance-overview-2026-10-28.md) remains a separate acceptance report; derived reports do not replace pack inventories or acceptance registers. The [cross-country source identity overview](references/source-identity-overview-2026-10-29.md) is a commit-stamped snapshot of library head `6d0b600e92930464a60855a3e685aa60e1b7d281`; its 1,945 total is provisional because 304 identities remain unresolved. The live Monitor report also shows the local archive count separately. The shared English EU corpus serves every pack; country-level `core/` folders are kept only when they contain actual official EU-language files. Ireland and Malta use that shared corpus for English instead of duplicating English files.

@@ -26,6 +26,11 @@ DIST_MARKER_CONTENT = {"kind": "freemovement-distribution", "format_version": 1}
 PACKAGES_FILE = "packages.json"
 CHECKSUMS_FILE = "SHA256SUMS"
 REPOSITORY = "eudirective/skills"
+SOURCE_LICENCE_FILES = (
+    "LICENSING.md",
+    "LICENSES/GPL-3.0-only.txt",
+    "LICENSES/CC-BY-SA-4.0.md",
+)
 ZIP_TIMESTAMP = (1980, 1, 1, 0, 0, 0)
 PLUGIN_NAME_RE = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]*$")
 SEMVER_RE = re.compile(
@@ -312,6 +317,8 @@ def build_plugin_archives(repository_root: Path, output_dir: Path) -> list[Plugi
     for plugin in plugins:
         if output == plugin.root or plugin.root in output.parents:
             raise PackageBuildError("output directory must not be inside a plugin source directory")
+    for plugin in plugins:
+        _require_licence_files(plugin, root)
 
     output.mkdir(parents=True, exist_ok=True)
     managed_output = output / PLUGIN_OUTPUT_DIR
@@ -482,6 +489,7 @@ def build_all_skills_archive(repository_root: Path, output_path: Path) -> BuiltA
     core = next((plugin for plugin in plugins if plugin.name == "freemovement-law"), None)
     if core is None:
         raise PackageBuildError("marketplace does not register freemovement-law")
+    entries.extend(_skill_licence_entries(root, plugins))
     manifest = {
         "format_version": 1,
         "kind": "aggregate-skills",
@@ -510,6 +518,43 @@ def _source_library_root(plugin: Plugin) -> Path:
     return roots[0]
 
 
+def _require_licence_files(plugin: Plugin, root: Path) -> None:
+    canonical = root / "LICENCE.md"
+    packaged = plugin.root / "LICENCE.md"
+    notice = plugin.root / "SOURCE-LIBRARY-NOTICE.md"
+    if not canonical.is_file() or not packaged.is_file() or packaged.read_bytes() != canonical.read_bytes():
+        raise PackageBuildError(f"EPIL licence missing or inconsistent: {plugin.name}")
+    if not notice.is_file() or "{{SOURCE_REVISION}}" in notice.read_text(encoding="utf-8"):
+        raise PackageBuildError(f"Source Library notice missing or unstamped: {plugin.name}")
+    library = _source_library_root(plugin)
+    for rel in SOURCE_LICENCE_FILES:
+        if not (library / rel).is_file():
+            raise PackageBuildError(f"Source Library licensing file missing: {plugin.name}/{rel}")
+
+
+def _skill_licence_entries(root: Path, plugins: list[Plugin]) -> list[tuple[str, Path, bool]]:
+    core = next((plugin for plugin in plugins if plugin.name == "freemovement-law"), None)
+    if core is None:
+        raise PackageBuildError("Cannot locate freemovement-law licence owner")
+    library = _source_library_root(core)
+    return [
+        ("LICENCE.md", root / "LICENCE.md", False),
+        ("SOURCE-LIBRARY-NOTICE.md", core.root / "SOURCE-LIBRARY-NOTICE.md", False),
+        *((f"source-licenses/{rel}", library / rel, False) for rel in SOURCE_LICENCE_FILES),
+    ]
+
+
+def _source_licence_entries(plugins: list[Plugin]) -> list[tuple[str, Path, bool]]:
+    core = next((plugin for plugin in plugins if plugin.name == "freemovement-law"), None)
+    if core is None:
+        raise PackageBuildError("Cannot locate freemovement-law source licence owner")
+    library = _source_library_root(core)
+    return [
+        ("SOURCE-LIBRARY-NOTICE.md", core.root / "SOURCE-LIBRARY-NOTICE.md", False),
+        *((rel, library / rel, False) for rel in SOURCE_LICENCE_FILES),
+    ]
+
+
 def _validate_source_provenance(repository_root: Path, plugins: list[Plugin]) -> dict[str, object]:
     """Check generated inventory records against the package snapshot before distribution."""
     component_index = _read_json_object(repository_root / "component-index.json", "component-index.json")
@@ -527,6 +572,18 @@ def _validate_source_provenance(repository_root: Path, plugins: list[Plugin]) ->
     expected = {plugin.name: plugin for plugin in plugins}
     if set(component_by_name) != set(expected):
         raise PackageBuildError("component-index.json plugin inventory does not match marketplace.json")
+    core = next((plugin for plugin in plugins if plugin.name == "freemovement-law"), None)
+    if core is None:
+        raise PackageBuildError("freemovement-law plugin is required")
+    reference_licences = _source_library_root(core)
+    upstream_revision = component_index.get("upstream_revision")
+    for plugin in plugins:
+        _require_licence_files(plugin, repository_root)
+        if not isinstance(upstream_revision, str) or upstream_revision not in (plugin.root / "SOURCE-LIBRARY-NOTICE.md").read_text(encoding="utf-8"):
+            raise PackageBuildError(f"Incorrect source revision in licensing notice: {plugin.name}")
+        for rel in SOURCE_LICENCE_FILES:
+            if (_source_library_root(plugin) / rel).read_bytes() != (reference_licences / rel).read_bytes():
+                raise PackageBuildError(f"Source Library licence differs across packages: {plugin.name}/{rel}")
     for name, plugin in expected.items():
         component = component_by_name[name]
         if component.get("plugin_version") != plugin.version or component.get("package_directory") != Path(plugin.source_path).as_posix().removeprefix("./"):
@@ -612,6 +669,7 @@ def build_source_library_archive(repository_root: Path, output_path: Path) -> Bu
         })
 
     provenance_names = ("component-index.json", "source-inventory.json", "migration-map.json")
+    entries.extend(_source_licence_entries(plugins))
     provenance_records: list[dict[str, object]] = []
     with tempfile.TemporaryDirectory(prefix=".source-provenance-", dir=output_path.parent) as temp_dir:
         temporary_root = Path(temp_dir)
@@ -849,7 +907,8 @@ def verify_distribution(repository_root: Path, distribution_dir: Path) -> int:
                     or item.get("file_count") != expected_skill_file_count):
                 raise PackageBuildError(f"aggregate skill provenance mismatch: {slug}")
         expected_entries = {"DISTRIBUTION.json"}
-        skill_sources: list[tuple[str, Path, bool]] = []
+        skill_sources: list[tuple[str, Path, bool]] = _skill_licence_entries(root, plugins)
+        expected_entries.update(name for name, _, _ in skill_sources)
         for _, skill_root in skill_roots:
             tree = _tree_entries(skill_root, f"skills/{skill_root.name}", skip_git=True)
             skill_sources.extend(tree)
@@ -872,7 +931,8 @@ def verify_distribution(repository_root: Path, distribution_dir: Path) -> int:
         if len(actual_libraries) != len(library_records or []) or set(actual_libraries) != set(expected_libraries):
             raise PackageBuildError("consolidated source archive does not cover all plugin source libraries")
         expected_entries = {"DISTRIBUTION.json"}
-        source_files: list[tuple[str, Path, bool]] = []
+        source_files: list[tuple[str, Path, bool]] = _source_licence_entries(plugins)
+        expected_entries.update(name for name, _, _ in source_files)
         for plugin in plugins:
             library_root = _source_library_root(plugin)
             tree = _tree_entries(library_root, f"source-libraries/{plugin.name}", skip_git=True)
