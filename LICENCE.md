@@ -1,6 +1,6 @@
 # eudirective Personal and Institutional Licence (EPIL)
 
-**Version 1.3 — Draft**
+**Version 1.3**
 
 Copyright © 2026 eudirective / freemovement law blog
 
