@@ -5,7 +5,7 @@ import json
 import unittest
 from pathlib import Path
 
-from build import accepted_paths, build_marketplace
+from build import SOURCE_LICENCE_FILES, accepted_paths, build_marketplace, classify_inventory
 
 
 class AcceptedPathsTests(unittest.TestCase):
@@ -51,6 +51,24 @@ class AcceptedPathsTests(unittest.TestCase):
 
             result = accepted_paths(acceptance, source_root, pack)
             self.assertEqual([item[0] for item in result], [document.resolve()])
+
+
+class SourceLicenceInventoryTests(unittest.TestCase):
+    def test_canonical_licence_files_are_marked_for_distribution(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            source_root = Path(temporary) / "source-library"
+            for rel in SOURCE_LICENCE_FILES:
+                destination = source_root / rel
+                destination.parent.mkdir(parents=True, exist_ok=True)
+                destination.write_text(f"Synthetic {rel}\n", encoding="utf-8")
+            rows = classify_inventory(source_root, {"countries": []}, set(), set(), set())
+            by_path = {row["source_path"]: row for row in rows}
+            self.assertEqual(set(by_path), set(SOURCE_LICENCE_FILES))
+            self.assertTrue(all(
+                row["classification"] == "canonical_source_licensing" and
+                row["distribution_action"] == "distributed_to_core_and_country_plugins"
+                for row in rows
+            ))
 
 
 class MarketplaceGenerationTests(unittest.TestCase):

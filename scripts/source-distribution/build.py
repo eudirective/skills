@@ -29,6 +29,12 @@ PATH_FIELDS = {"path", "local_path", "local_copy_path", "document_path", "artifa
 HASH_FIELDS = ("sha256", "local_sha256", "local_copy_sha256", "artifact_sha256", "document_sha256", "local_file_sha256", "local_document_sha256", "final_document_sha256")
 SKIP_DIRS = {".git", "__pycache__", "node_modules", "captures", "candidates", "candidate-archive", "archive", "archives", "tmp", "temp", "build", "dist"}
 
+SOURCE_LICENCE_FILES = (
+    "LICENSING.md",
+    "LICENSES/GPL-3.0-only.txt",
+    "LICENSES/CC-BY-SA-4.0.md",
+)
+
 
 def sha256(path: Path) -> str:
     h = hashlib.sha256()
@@ -807,6 +813,8 @@ def classify_inventory(root: Path, registry: dict[str, Any], accepted: set[str],
         parts = PurePosixPath(rel).parts
         if any(part in SKIP_DIRS for part in parts):
             category, action = "maintenance_or_candidate_material", "excluded_by_path_policy"
+        elif rel in SOURCE_LICENCE_FILES:
+            category, action = "canonical_source_licensing", "distributed_to_core_and_country_plugins"
         elif rel in english_paths:
             category, action = "core_english_eu_text", "distributed_to_core"
         elif rel in language_paths:
@@ -1010,6 +1018,37 @@ def build(
     core_pack_version = max(core_pack_manifests)[1]
     upstream_trees = {"source-library": source_tree_sha, "module-notes": module_notes_tree_sha}
 
+    epil_source = plugin_root.parent / "LICENCE.md"
+    notice_template_path = Path(__file__).with_name("templates") / "source-library-notice.md"
+    if not epil_source.is_file() or not notice_template_path.is_file():
+        raise FileNotFoundError("EPIL licence or source-library notice template is missing")
+    notice_template = notice_template_path.read_text(encoding="utf-8")
+    if "{{SOURCE_REVISION}}" not in notice_template:
+        raise ValueError("Source-library notice template has no revision placeholder")
+    for rel in SOURCE_LICENCE_FILES:
+        if not (source_root / rel).is_file():
+            raise FileNotFoundError(f"Source Library licence file is missing: {rel}")
+
+    def install_licensing(package_dir: Path, source_dir: Path, inputs: dict[str, str]) -> None:
+        copy_exact(epil_source, package_dir / "LICENCE.md", {})
+        inputs["plugin-template/LICENCE.md"] = sha256(epil_source)
+        notice = notice_template.replace("{{SOURCE_REVISION}}", upstream_revision)
+        notice_path = package_dir / "SOURCE-LIBRARY-NOTICE.md"
+        notice_path.write_text(notice, encoding="utf-8", newline="\n")
+        inputs["distributor/source-library-notice-template.md"] = sha256(notice_template_path)
+        inputs["generated/SOURCE-LIBRARY-NOTICE.md"] = sha256(notice_path)
+        for rel in SOURCE_LICENCE_FILES:
+            source = source_root / rel
+            target = source_dir / rel
+            copy_exact(source, target, {})
+            inputs[f"source-library/{rel}"] = sha256(source)
+            migration_rows.append({
+                "source_path": rel,
+                "target_path": target.relative_to(output_root).as_posix(),
+                "classification": "canonical_source_licensing",
+                "sha256": sha256(source),
+            })
+
     notes_plugin_by_directory = {c["upstream_source_directory"]: c["plugin_name"] for c in countries}
     for module in operational_modules:
         directory = module["notes_directory"]
@@ -1033,7 +1072,7 @@ def build(
             continue
         relative = note.relative_to(module_notes_root)
         owner = relative.parts[0] if relative.parts else ""
-        if relative == Path("README.md"):
+        if relative in {Path("README.md"), Path("LICENSING.md")}:
             continue
         if owner not in notes_plugin_by_directory:
             raise ValueError(f"Module note has no registered package owner: {relative.as_posix()}")
@@ -1067,6 +1106,7 @@ def build(
         "registry/country-registry.json": registry_hash,
         "distributor/build.py": generator_hash,
     }
+    install_licensing(core, core_data, core_input_files)
     module_notes_readme_text = (
         "# Module notes bundled with eudirective-core\n\n"
         "This directory contains source identity and scope notes for operational modules that the package registry assigns to the core package. "
@@ -1485,6 +1525,7 @@ def module_notes_root(country: str, module_id: str | None = None) -> Path:
             "core-tool/session_version_check.mjs": sha256(checker_source),
         }
         inputs.update(country_icon_inputs)
+        install_licensing(plugin_dir, plugin_dir / "references/source-library", inputs)
         if code == "CZ" and country_reference_sha is not None:
             inputs["country-skill-template/references/eu-family-short-stay-visa.md"] = country_reference_sha
         module_fingerprints: dict[str, str] = {}
@@ -1773,6 +1814,7 @@ def module_notes_root(country: str, module_id: str | None = None) -> Path:
     distributable_actions = {
         "distributed_to_core", "distributed_to_country_plugin",
         "distributed_to_registered_countries", "distributed_as_required_by_registry",
+        "distributed_to_core_and_country_plugins",
     }
     package_roots = [output_root / registry["core_plugin"]] + [output_root / c["plugin_directory"] for c in countries]
     output_index: dict[tuple[str, str], list[Path]] = {}

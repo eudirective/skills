@@ -12,6 +12,7 @@ import zipfile
 
 from build import (
     PackageBuildError,
+    SOURCE_LICENCE_FILES,
     build_distributions,
     build_plugin_archives,
     discover_plugins,
@@ -33,6 +34,7 @@ class PluginArchiveBuildTests(unittest.TestCase):
 
     def write_marketplace(self, plugins: list[dict[str, str]]) -> None:
         entries = []
+        (self.root / "LICENCE.md").write_text("Synthetic EPIL\n", encoding="utf-8")
         for plugin in plugins:
             plugin_root = self.root / plugin["path"]
             skills = plugin_root / "skills" / f"{plugin['name']}-skill"
@@ -51,6 +53,12 @@ class PluginArchiveBuildTests(unittest.TestCase):
             source_library = plugin_root / "references" / "source-library"
             source_library.mkdir(parents=True, exist_ok=True)
             (source_library / "source.md").write_text(f"source for {plugin['name']}\n", encoding="utf-8")
+            (plugin_root / "LICENCE.md").write_bytes((self.root / "LICENCE.md").read_bytes())
+            (plugin_root / "SOURCE-LIBRARY-NOTICE.md").write_text("Source revision test-revision\n", encoding="utf-8")
+            for name in SOURCE_LICENCE_FILES:
+                destination = source_library / name
+                destination.parent.mkdir(parents=True, exist_ok=True)
+                destination.write_text(f"Test {name}\n", encoding="utf-8")
             entries.append({
                 "name": plugin["name"],
                 "source": {"source": "local", "path": f"./{plugin['path']}"},
@@ -109,11 +117,27 @@ class PluginArchiveBuildTests(unittest.TestCase):
                 self.assertIn(f"{archive_root}/plugin.json", archive.namelist())
                 self.assertIn(f"{archive_root}/.codex-plugin/plugin.json", archive.namelist())
                 self.assertIn(f"{archive_root}/skills/{result.name}-skill/SKILL.md", archive.namelist())
+                self.assertIn(f"{archive_root}/LICENCE.md", archive.namelist())
+                self.assertIn(f"{archive_root}/SOURCE-LIBRARY-NOTICE.md", archive.namelist())
+                for name in SOURCE_LICENCE_FILES:
+                    self.assertIn(f"{archive_root}/references/source-library/{name}", archive.namelist())
             self.assertEqual(result.sha256, hashlib.sha256(result.path.read_bytes()).hexdigest())
+
+    def test_rejects_missing_licence(self) -> None:
+        (self.root / "country-plugin" / "LICENCE.md").unlink()
+        with self.assertRaisesRegex(PackageBuildError, "EPIL licence missing"):
+            build_plugin_archives(self.root, self.output)
+
+    def test_rejects_changed_source_licence(self) -> None:
+        country = self.root / "country-plugin" / "references" / "source-library"
+        (country / "LICENSING.md").write_text("Unexpected change\n", encoding="utf-8")
+        with self.assertRaisesRegex(PackageBuildError, "Source Library licence differs"):
+            build_distributions(self.root, self.output)
 
     def test_extracted_plugins_resolve_country_modules_and_notes(self) -> None:
         repo = Path(self.temp.name) / "resolver-repo"
         repo.mkdir()
+        (repo / "LICENCE.md").write_text("Synthetic EPIL\n", encoding="utf-8")
         core_path = "core-package"
         country_path = "freemovement-law-se"
         core = repo / core_path
@@ -129,6 +153,14 @@ class PluginArchiveBuildTests(unittest.TestCase):
                 json.dumps({**metadata, "skills": "./skills"}), encoding="utf-8"
             )
             (root / "skills").mkdir(exist_ok=True)
+            (root / "LICENCE.md").write_bytes((repo / "LICENCE.md").read_bytes())
+            (root / "SOURCE-LIBRARY-NOTICE.md").write_text("Source revision test-revision\n", encoding="utf-8")
+            source_library = root / "references" / "source-library"
+            source_library.mkdir(parents=True, exist_ok=True)
+            for name in SOURCE_LICENCE_FILES:
+                destination = source_library / name
+                destination.parent.mkdir(parents=True, exist_ok=True)
+                destination.write_text(f"Test {name}\n", encoding="utf-8")
 
         write_plugin(core, "freemovement-law", "1.0.0")
         write_plugin(country, "fm-sweden", "0.2.0")
@@ -304,9 +336,16 @@ class PluginArchiveBuildTests(unittest.TestCase):
             self.assertIn("skills/freemovement-law-skill/SKILL.md", names)
             manifest = json.loads(archive.read("DISTRIBUTION.json"))
             self.assertEqual(manifest["skill_count"], 2)
+            self.assertIn("LICENCE.md", names)
+            self.assertIn("SOURCE-LIBRARY-NOTICE.md", names)
+            for name in SOURCE_LICENCE_FILES:
+                self.assertIn(f"source-licenses/{name}", names)
         with zipfile.ZipFile(self.output / "freemovement-source-library.zip") as archive:
             self.assertIn("source-libraries/fm-test/source.md", archive.namelist())
             self.assertIn("provenance/component-index.json", archive.namelist())
+            self.assertIn("SOURCE-LIBRARY-NOTICE.md", archive.namelist())
+            for name in SOURCE_LICENCE_FILES:
+                self.assertIn(name, archive.namelist())
 
     def test_full_distribution_is_reproducible_and_does_not_modify_sources(self) -> None:
         before = {
