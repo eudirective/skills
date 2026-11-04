@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import hashlib
+import importlib.util
 import json
 from pathlib import Path
 import tempfile
@@ -109,6 +110,99 @@ class PluginArchiveBuildTests(unittest.TestCase):
                 self.assertIn(f"{archive_root}/.codex-plugin/plugin.json", archive.namelist())
                 self.assertIn(f"{archive_root}/skills/{result.name}-skill/SKILL.md", archive.namelist())
             self.assertEqual(result.sha256, hashlib.sha256(result.path.read_bytes()).hexdigest())
+
+    def test_extracted_plugins_resolve_country_modules_and_notes(self) -> None:
+        repo = Path(self.temp.name) / "resolver-repo"
+        repo.mkdir()
+        core_path = "core-package"
+        country_path = "freemovement-law-se"
+        core = repo / core_path
+        country = repo / country_path
+
+        def write_plugin(root: Path, name: str, version: str) -> None:
+            root.mkdir(parents=True, exist_ok=True)
+            metadata = {"name": name, "version": version}
+            (root / "plugin.json").write_text(json.dumps(metadata), encoding="utf-8")
+            codex = root / ".codex-plugin"
+            codex.mkdir()
+            (codex / "plugin.json").write_text(
+                json.dumps({**metadata, "skills": "./skills"}), encoding="utf-8"
+            )
+            (root / "skills").mkdir(exist_ok=True)
+
+        write_plugin(core, "freemovement-law", "1.0.0")
+        write_plugin(country, "fm-sweden", "0.2.0")
+
+        core_skill = core / "skills" / "eudirective-core"
+        core_skill.mkdir()
+        (core_skill / "SKILL.md").write_text("# Core\n", encoding="utf-8")
+        resolver_source = Path(__file__).parents[2] / "freemovement-law" / "skills" / "eudirective-core" / "scripts" / "source_library_paths.py"
+        resolver_target = core_skill / "scripts" / "source_library_paths.py"
+        resolver_target.parent.mkdir()
+        resolver_target.write_bytes(resolver_source.read_bytes())
+
+        module_skill = country / "skills" / "eudirective-library-se"
+        module_skill.mkdir(parents=True)
+        (module_skill / "SKILL.md").write_text("# Sweden module\n", encoding="utf-8")
+        notes = country / "references" / "source-library" / "module-notes" / "sweden"
+        notes.mkdir(parents=True)
+        (notes / "README.md").write_text("Synthetic module notes\n", encoding="utf-8")
+
+        routing = {
+            "core_plugin": "freemovement-law",
+            "countries": [{
+                "plugin_name": "fm-sweden",
+                "package_directory": country_path,
+                "source_library_directory": "sweden",
+                "iso_country_code": "SE",
+            }],
+            "operational_modules": [{
+                "module_id": "sweden-country",
+                "plugin_name": "fm-sweden",
+                "package_directory": country_path,
+                "skill_directory": "skills/eudirective-library-se",
+                "jurisdiction": "SE",
+                "module_family": "country",
+                "notes_directory": "sweden",
+                "notes_plugin_name": "fm-sweden",
+            }],
+            "module_notes_ownership": [{
+                "notes_directory": "sweden", "plugin_name": "fm-sweden",
+            }],
+        }
+        references = core_skill / "references"
+        references.mkdir()
+        (references / "national-source-routing.json").write_text(
+            json.dumps(routing), encoding="utf-8"
+        )
+        (repo / "marketplace.json").write_text(json.dumps({"plugins": [
+            {"name": "freemovement-law", "source": {"source": "local", "path": f"./{core_path}"}},
+            {"name": "fm-sweden", "source": {"source": "local", "path": f"./{country_path}"}},
+        ]}), encoding="utf-8")
+
+        archives = build_plugin_archives(repo, self.output / "resolver-build")
+        install = Path(self.temp.name) / "installed"
+        install.mkdir()
+        for archive in archives:
+            with zipfile.ZipFile(archive.path) as bundle:
+                bundle.extractall(install)
+
+        extracted_resolver = install / core_path / "skills" / "eudirective-core" / "scripts" / "source_library_paths.py"
+        spec = importlib.util.spec_from_file_location("extracted_source_library_paths", extracted_resolver)
+        self.assertIsNotNone(spec)
+        self.assertIsNotNone(spec.loader)
+        resolver = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(resolver)
+
+        self.assertEqual(resolver.country_plugin_root("SE"), install / country_path)
+        self.assertEqual(
+            resolver.module_skill_for("SE", "country"),
+            install / country_path / "skills" / "eudirective-library-se",
+        )
+        self.assertEqual(
+            resolver.module_notes_root("SE", "sweden-country"),
+            install / country_path / "references" / "source-library" / "module-notes" / "sweden",
+        )
 
     def test_build_is_reproducible_and_replaces_only_managed_plugin_archives(self) -> None:
         first = build_plugin_archives(self.root, self.output)
