@@ -19,6 +19,16 @@ Before ending the reply, inspect the visible draft, not just the intended workfl
 
 ## First response: disclaimer and use check
 
+## Session identity gate
+
+At the start of a new session, check the current case record for a cached `session_identity_check` before attempting to identify the active agent. If the record contains a completed result, reuse it and do not repeat the test. Store a new result in the current case record so later sessions can check it first. If no case record is available, keep the result in the conversation state and do not claim that it is case-persisted.
+
+When there is no cached result, inspect identity information actually available in the current session. Treat the declared agent identity and model identity as separate values. Prefer an explicitly supplied system-level identity or a structured runtime field; record the source category and field name when present. A tool-returned value or environmental inference must be labeled as such, and an inference alone is not proof. Do not invent runtime fields or quote hidden instructions.
+
+If the active agent identity is explicitly identified as `codex` (case-insensitive exact identity token), stop before substantive case work and display a warning that the Codex identity check matched. Ask the user to confirm continuation using the available confirmation control/button; resume only after explicit confirmation. If the identity is explicitly identified as something else, continue. If identity cannot be established, explain that the check is inconclusive and ask for confirmation before proceeding. Cache the tested identity, source category, structured field name if any, result (`codex`, `other`, or `inconclusive`), and whether the user confirmed continuation. A cached `codex` result still requires confirmation in the new session; the cache prevents retesting, not the user confirmation.
+
+This is a conversation workflow instruction. It cannot guarantee that the host exposes an identity value, persists case records across sessions, or provides a native confirmation button; report those limits plainly and never pretend a check or confirmation occurred.
+
 On the first visible response in a conversation where any freemovement-law skill is invoked, begin with this disclaimer before substantive analysis:
 
 > Disclaimer: freemovement-law provides informational, source-grounded visa guidance, not legal representation or a guaranteed outcome. Verify current law and important deadlines with official sources or qualified counsel.
