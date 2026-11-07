@@ -2246,6 +2246,36 @@
         "status": "passed",
         "method": "Manual review of complete extracted text against the PDF page count and family-member documentation sections; the native PDF remains available for layout checks."
       }
+    },
+    "at-ifg-consolidated": {
+      "status": "accepted",
+      "checks": {
+        "publisher_identity": {
+          "status": "pass",
+          "evidence": "Official RIS current-consolidation page for Gesetzesnummer 20012537 and title Informationsfreiheitsgesetz checked 29 October 2026; Legalize source file is pinned to legalize-dev/legalize-at at/AT-20012537.md, commit 30b7ded29545baa1079dc2ab8b2eef9193df3f59, blob 665c58b11b7ea88d3d11327bc7dfee613c0f3f74."
+        },
+        "current_legal_version": {
+          "status": "pass",
+          "evidence": "RIS consolidation page displayed Fassung vom 29.10.2026 and BGBl. I Nr. 52/2025 as the latest amendment, matching the candidate amendment note. All 20 candidate sections were compared with accepted current RIS section captures."
+        },
+        "extraction_completeness": {
+          "status": "pass",
+          "evidence": "Full Legalize statute body reviewed; sections 1–20 present and all 20 section bodies matched existing accepted RIS captures after removing standalone Abkürzung/IFG display labels and normalizing Markdown/whitespace only."
+        },
+        "attachments_review": {
+          "status": "pass",
+          "evidence": "The current RIS statute record and full text were checked; no incorporated annex or attachment is required for this consolidated act text."
+        },
+        "legal_classification": {
+          "status": "pass",
+          "evidence": "Classified as Austrian national_legislation; this is a full consolidated statutory text and does not change country or topic coverage claims."
+        }
+      },
+      "semantic_review": {
+        "status": "passed",
+        "method": "Compared each of the 20 sections against existing accepted official RIS section captures; 20/20 legal bodies matched after display-label removal and formatting-only normalization. RIS current-consolidation version and amendment list checked 29 October 2026."
+      },
+      "raw_capture_evidence": "Existing accepted RIS capture evidence for source IDs at-ifg-1 through at-ifg-20, captured 19 October 2026; source document records the Legalize commit and blob SHA used for the full-text copy."
     }
   },
   "required_checks_scope": "These fields are checked only when accepting a retained local artifact. They do not gate a human-reviewed official link. Version review means recording the publisher date/cutoff and checking a known material later change, not reconstructing every historical amendment. Extraction and attachments are reviewed only to the extent the retained artifact and intended use require.",

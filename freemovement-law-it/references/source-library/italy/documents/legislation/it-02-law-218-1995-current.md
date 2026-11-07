@@ -16,6 +16,7 @@
 
 > **Source copy accepted:** This complete current-text representation passed publisher, scope, article-inventory and extraction review on 24 October 2026. Acceptance describes the source copy as displayed on that date; it does not certify the present legal effect of every provision.
 > **Attribution:** Normattiva, Istituto Poligrafico e Zecca dello Stato.
+> **Publisher reproduction notice:** Reproduced from Normattiva; this electronic text is not authentic and is reproduced free of charge. In case of discrepancy, the text published in the Gazzetta Ufficiale della Repubblica Italiana is official and definitive.
 
 ## Official current statutory text (Italian)
 

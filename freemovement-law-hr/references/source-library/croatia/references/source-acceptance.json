@@ -815,7 +815,7 @@
     ],
     "note": "Record a human-reviewed official source link here when it supports a coverage layer without a retained local copy. This record does not change the local accepted-source count. Use version_or_cutoff='not displayed' and explain the limit when the publisher shows no version marker."
   },
-  "accepted_source_count": 64,
+  "accepted_source_count": 65,
   "records": {
     "hr-access-info-act": {
       "status": "accepted",
@@ -4389,43 +4389,54 @@
       "candidate_archive_path": "candidates/eudirective-public-data/HR/legislation/hr-judicial-fees-tariff.md"
     },
     "hr-judicial-fees-tariff-transition-37-23": {
-      "status": "located_not_captured",
+      "status": "accepted",
       "checks": {
         "publisher_identity": {
           "status": "pass",
-          "evidence": "Narodne novine official record at the exact official URL https://narodne-novine.nn.hr/clanci/sluzbeni/full/2023_03_37_621.html; the official record/page title and publisher domain identify the listed instrument or procedure."
+          "review_date": "2026-10-30",
+          "evidence_url": "https://narodne-novine.nn.hr/clanci/sluzbeni/2023_03_37_621.html",
+          "evidence": "The official Narodne novine HTML record identifies Uredba o Tarifi sudskih pristojbi, NN 37/2023, item 621, and the Government of the Republic of Croatia as issuer."
         },
         "current_legal_version": {
           "status": "pass",
-          "review_date": "2026-10-19",
-          "evidence_url": "https://narodne-novine.nn.hr/clanci/sluzbeni/full/2023_03_37_621.html",
-          "evidence": "NN 50/26 Article 2 keeps this superseded tariff applicable to administrative disputes begun before 1 June 2026. It is a transition-only rule, not the current general tariff."
+          "review_date": "2026-10-30",
+          "evidence_url": "https://narodne-novine.nn.hr/clanci/sluzbeni/2026_05_50_624.html",
+          "evidence": "NN 50/26 Article 2 preserves the NN 37/23 tariff for administrative disputes begun before 1 June 2026. NN 37/23 is accepted as a transition-only instrument, not the current general tariff."
         },
         "extraction_completeness": {
-          "status": "pending",
-          "evidence": "Located; no source-specific capture or extraction comparison is recorded."
+          "status": "pass",
+          "review_date": "2026-10-30",
+          "evidence": "Official HTML body lines 11–622 were reconstructed from overlapping visible-text windows without missing lines. The retained text contains Articles 1–3 and Tariff Nos. 1–35 in order. All three tables and their 11 data rows were retained with three cells per row. Only Markdown table delimiters and separator rows were added; source cell values and order were preserved. The visible-text capture is derived browser text, not raw HTML or response bytes."
         },
         "attachments_review": {
-          "status": "pending",
-          "evidence": "No attachment inventory or source visual review has been recorded."
+          "status": "not_applicable",
+          "review_date": "2026-10-30",
+          "evidence": "The official HTML presents the tariff annex inline and the complete retained text includes it. No image-based or separate attachment is relied upon. The official Gazette issue PDF is an alternate issue representation and was not used as the accepted source text."
         },
         "legal_classification": {
-          "status": "pending",
-          "evidence": "Located official record; verify exact instrument classification and role after capture."
+          "status": "pass",
+          "review_date": "2026-10-30",
+          "evidence": "Government regulation setting court-fee amounts under the Court Fees Act; Article 2 repeals the prior tariff on commencement. The 2026 tariff preserves this instrument only for defined earlier administrative disputes."
         },
         "lawful_reuse": {
           "status": "pass",
           "scope": "official_text_only",
           "basis_id": "hr-copyright-act-nn-111-2021-art-18-3",
-          "evidence": "Copyright and Related Rights Act NN 111/21 Article 18(3) provides that official legislative, administrative, and judicial texts cease to be protected by copyright once published for official public information. This pass covers only the individual official act text, not the Narodne novine page shell, third-party attachments, or database-wide/systematic reuse. Store only a source-specific text fragment and observe the publisher's stated maximum three automated queries per second."
+          "evidence": "The existing source-specific pass under Copyright and Related Rights Act NN 111/21 Article 18(3) covers the individually published official act text only. It does not extend to the Gazette page shell, other issue content or database-wide reuse."
         }
       },
       "semantic_review": {
-        "status": "not_reviewed",
-        "method": null,
-        "evidence": "No source-specific semantic comparison has been recorded."
+        "status": "passed",
+        "method": "official visible-text extraction and structural comparison",
+        "review_date": "2026-10-30",
+        "scope": "official_html_body_lines_11_622",
+        "evidence": "The archived official visible-text capture captures/eudirective-public-data/HR/official-texts/hr-judicial-fees-tariff-transition-37-23-visible-text.md (SHA-256 f6e50b08ded5531a5e100773c71390970bf206de2917c03bd1b3b60850b91566) contains the source page’s complete legal body. The accepted Markdown preserves the body, Tariff Nos. 1–35, and all three three-column tables. The Legalize-HR candidate for this same act flattens the tables and is recorded as a mismatch; it was not used as source text."
       },
-      "discovery_note": "The 2026 tariff preserves the earlier tariff for administrative disputes begun before 1 June 2026."
+      "accepted_on": "2026-10-30",
+      "document_path": "source-library/croatia/documents/legislation/hr-judicial-fees-tariff-transition-37-23.md",
+      "source_fragment_archive_path": "captures/eudirective-public-data/HR/official-texts/hr-judicial-fees-tariff-transition-37-23-visible-text.md",
+      "source_fragment_sha256": "f6e50b08ded5531a5e100773c71390970bf206de2917c03bd1b3b60850b91566",
+      "local_file_sha256": "648099bf965668d1c31a2721918bda886509f21e2d4306a427c9fc536b3f7710"
     },
     "hr-mvep-visa-appeal-current": {
       "status": "accepted",

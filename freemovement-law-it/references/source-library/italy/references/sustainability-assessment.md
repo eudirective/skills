@@ -1,12 +1,18 @@
 # Italy source-route and sustainability assessment
 
-Review date: 21 October 2026
+Review date: 31 October 2026
 
 ## Decision
 
-The five priority official links are accepted as external references. In the expanded 42-entry inventory, 32 links are accepted within stated limits, four remain pending, five are not relied upon, and one N-Lex record duplicates another. Across both registers, 35 distinct source records are accepted through 37 official links; no local copy, legal topic, or country review is accepted.
+The source pack has 44 canonical catalogue identities: 35 distinct source records are accepted through 37 official links, four records remain pending, five are not relied upon, and three candidate records are duplicates. Three complete Normattiva statutory representations—D.Lgs. 30/2007 (28 article records), Law 218/1995 (80), and Law 184/1983 (92)—were accepted on 29 October after identity, article-inventory, extraction, current-selector and deterministic replay review of the 24 October captures. No legal topic or country review is accepted or complete.
 
 The official Normattiva service is suitable for ordinary legal-text use: its versioning page explains persistent URNs and views for original, current, date-selected and multivigent texts. The workflow no longer requires its fragile article-by-article downloader, API registration or a retained conversion before a government text can be cited. For each issue, open the relevant act and check its identity and displayed version. Where a source’s status or contents are unclear, the full official service/site is listed in the acceptance register for human review.
+
+## Publisher reproduction conditions
+
+Normattiva's [FAQ](https://www.normattiva.it/staticPage/faq) permits reproduction of its electronic texts when Normattiva is identified as the source, the non-authentic character is stated, and reproduction is identified as free of charge. The three retained files now carry that notice outside the transcribed legal body. They also state that the Gazzetta Ufficiale text is official and definitive if there is a discrepancy. The consolidated copies remain dated representations of the 24 October 2026 selector, not claims of present legal effect or authentic Gazette status.
+
+The Monitor index contains 207 Italy capture records across origins: 203 raw Normattiva responses and four retrieval manifests. The `normattiva-2026-10-24` origin comprises 204 records (203 responses plus its manifest); the 24 October migration summary's 205 captures also counts the expanded-review manifest; the full inventory additionally includes two older legacy manifests.
 
 ## Current law links and dependencies
 
@@ -20,7 +26,7 @@ The official Normattiva service is suitable for ordinary legal-text use: its ver
 
 Normattiva is the primary legal-text reference. The Italian Gazette, ministries, administrative courts, Court of Cassation, Commission for Access, Data Protection Authority and consular pages are accepted where their publisher identity and bounded content are clear. The MAECI pages were reviewed in the standard web view despite direct HTTP retrieval returning a publisher challenge; acceptance is for the visible official page, not a saved copy.
 
-The broad local capture pass is a one-time review aid. It is not necessary for ordinary source use. Captures, conversions, hashes, replay, API clients and scheduled updates are optional unless the team later needs a retained copy or recurring monitor and confirms the publisher’s applicable conditions. No security challenge is bypassed.
+The optional `sync_italy.py` rule is inactive/manual and uses a session-bound, undocumented article interface; it is not registered as a Monitor action or scheduled check. Normattiva documents whole-act exports in HTML, XML, PDF and EPUB, but that route has not been tested here. If retained as a maintenance tool, compare the documented export with the existing capture and require identity, complete article coverage, raw hashes and deterministic replay. For ordinary issue-led work, a human-reviewed current Normattiva record remains sufficient; do not imply that the optional downloader is active or sustainable. No security challenge is bypassed.
 
 ## Pending and not-relied-upon records
 

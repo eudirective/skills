@@ -1,6 +1,6 @@
 # Austria national source pack
 
-**Review status (19 October 2026):** 73 of 74 retained source artifacts passed local-artifact acceptance; no captured sources remain pending review; one family-topic index is discovery-only. No official locator-only source remains uncaptured. A reviewed official reference can be used without a local capture; the counts below describe local artifacts. Legal topic coverage and country review remain incomplete.
+**Review status (29 October 2026):** 74 of 75 retained source artifacts passed local-artifact acceptance; no captured sources remain pending review; one family-topic index is discovery-only. No official locator-only source remains uncaptured. A reviewed official reference can be used without a local capture; the counts below describe local artifacts. Legal topic coverage and country review remain incomplete.
 
 This pack supports an issue-led review of EU free movement, privileged family-member visas, residence cards, administrative procedure, remedies, case law, oversight and local practice. Its source count is bounded; it is not an exhaustive inventory of Austrian law or practice.
 
@@ -33,3 +33,5 @@ The official BMI form A and its accompanying explanation are now captured and ac
 The 55-task RIS case-law plan covers VwGH, BVwG and all nine LVwG collections; no full discovery batch is recorded. Supplemental official RIS searching found several additional case leads, including VwGH Ra 2025/18/0038 and Ra 2025/22/0052–0054. They remain unaccepted until captured locally and semantically reviewed. The repository GitHub Actions workflow was retired on 24 October 2026 because it published raw captures and pending candidates in the country pack. Use the registered EU Source Update Monitor Austria check and capture actions for known sources; they do not discover new cases, missions or Land procedures. No successful run or schedule is asserted here.
 
 Use [coverage-register.md](references/coverage-register.md) for open gaps and [sustainability-assessment.md](references/sustainability-assessment.md) for rule-maintenance findings.
+
+**Legalize recovery (29 October 2026):** The dated full [IFG consolidation](documents/legislation/at-ifg-consolidated.md) supplements, but does not supersede, the 20 individually reviewed RIS sections. Its source-specific acceptance decision and provenance are recorded in `references/source-acceptance.json`; the country review remains incomplete.

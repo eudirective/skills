@@ -1,8 +1,8 @@
 # Austria source inventory
 
-As of 19 October 2026: 73 of 74 source records passed per-source acceptance; no captured sources remain pending review; one family-topic index is discovery-only; no official locator-only source remains uncaptured. Country review remains incomplete.
+As of 29 October 2026: 74 of 75 source records passed per-source acceptance; no captured sources remain pending review; one family-topic index is discovery-only; no official locator-only source remains uncaptured. Country review remains incomplete.
 
-Accepted means the source passed per-record gates; it does not prove that all legal topics or procedures are covered. The 74-record register is a bounded inventory, not a conclusion that the source set is sufficient.
+Accepted means the source passed per-record gates; it does not prove that all legal topics or procedures are covered. The 75-record register is a bounded inventory, not a conclusion that the source set is sufficient.
 
 | ID | Class | State | Title | Official source |
 |---|---|---|---|---|
@@ -31,6 +31,7 @@ Accepted means the source passed per-record gates; it does not prove that all le
 | at-guidance-family-card | official_guidance | accepted | Aufenthaltskarte und Daueraufenthaltskarte for third-country family members of EU/EEA/Swiss citizens | [Publisher](https://eausweise.oesterreich.gv.at/de/themen/menschen_aus_anderen_staaten/aufenthalt/1/Seite.120830) |
 | at-guidance-family-index | official_guidance_directory | discovery-only | Aufenthalt in Österreich for third-country family members of EU/EEA/Swiss citizens | [Publisher](https://www.oesterreich.gv.at/de/themen/menschen_aus_anderen_staaten/aufenthalt/1) |
 | at-guidance-visa-application | official_guidance | accepted | oesterreich.gv.at — Antrag auf Visum: consular competence and local evidence requirements | [Publisher](https://www.oesterreich.gv.at/de/themen/menschen_aus_anderen_staaten/visum_fuer_oesterreich/Seite.3550010) |
+| at-ifg-consolidated | national_legislation | accepted | Informationsfreiheitsgesetz — full consolidated text (dated 29 October 2026) | [RIS current consolidation](https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20012537); [retained document](../documents/legislation/at-ifg-consolidated.md) |
 | at-ifg-1 | national_legislation | accepted | Informationsfreiheitsgesetz § 1 — scope of information access | [Publisher](https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20012537&Paragraf=1) |
 | at-ifg-10 | national_legislation | accepted | Informationsfreiheitsgesetz § 10 — affected persons | [Publisher](https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20012537&Paragraf=10) |
 | at-ifg-11 | national_legislation | accepted | Informationsfreiheitsgesetz § 11 — formal decision and judicial remedy after refusal | [Publisher](https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20012537&Paragraf=11) |

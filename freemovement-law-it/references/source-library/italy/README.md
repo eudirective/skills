@@ -1,6 +1,6 @@
 # Italy national source pack
 
-**Review status (29 October 2026):** 35 distinct source records are accepted through 37 official links within recorded limits. Three full Normattiva statutory copies have passed source-identity, article-inventory and extraction review under `documents/legislation/`; two maintained paraphrased MAECI guidance notes are stored under `documents/guidance/`. Four external references remain pending; five leads are not relied upon and three records are duplicates. **No legal topic or country review is accepted or complete.**
+**Review status (29 October 2026; retained-copy notice update 31 October):** 35 distinct source records are accepted through 37 official links within recorded limits. Three full Normattiva statutory copies have passed source-identity, article-inventory and extraction review under `documents/legislation/`; each file carries Normattiva attribution, the non-authentic/free-of-charge reproduction notice, and the Gazzetta Ufficiale authenticity caveat. Two maintained paraphrased MAECI guidance notes are stored under `documents/guidance/`. Four external references remain pending; five leads are not relied upon and three records are duplicates. **No legal topic or country review is accepted or complete.**
 
 - [Priority source list](references/source-list.md)
 - [Source acceptance register](references/source-acceptance.json)
